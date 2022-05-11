@@ -202,30 +202,30 @@ async function generateMarketV3(market) {
     addressProviderV3ABI,
     provider
   );
-  const lendingPool = await contract.getPool();
-  const lendingPoolConfigurator = await contract.getPoolConfigurator();
+  const pool = await contract.getPool();
+  const poolConfigurator = await contract.getPoolConfigurator();
   const oracle = await contract.getPriceOracle();
   const admin = await contract.owner();
-  const emergencyAdmin = await contract.getACLAdmin();
+  const aclAdmin = await contract.getACLAdmin();
 
   // TODO: add v3 template
   const templateV2 = `// SPDX-License-Identifier: MIT
   pragma solidity ^0.8.0;
   
-  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
   
   
   library ${market.name} {
-      ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-          ILendingPoolAddressesProvider(
+      IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
+          IPoolAddressesProvider(
               ${addressProvider}
           );
   
-      ILendingPool internal constant POOL =
-          ILendingPool(${lendingPool});
+      IPool internal constant POOL =
+          IPool(${pool});
   
-      ILendingPoolConfigurator internal constant POOL_CONFIGURATOR =
-          ILendingPoolConfigurator(${lendingPoolConfigurator});
+      IPoolConfigurator internal constant POOL_CONFIGURATOR =
+          IPoolConfigurator(${poolConfigurator});
   
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
@@ -233,8 +233,8 @@ async function generateMarketV3(market) {
       address internal constant POOL_ADMIN =
           ${admin};
   
-      address internal constant EMERGENCY_ADMIN =
-          ${emergencyAdmin};
+      address internal constant ACL_ADMIN =
+          ${aclAdmin};
   }
     `;
   fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
