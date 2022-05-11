@@ -208,8 +208,7 @@ async function generateMarketV3(market) {
   const admin = await contract.owner();
   const aclAdmin = await contract.getACLAdmin();
 
-  // TODO: add v3 template
-  const templateV2 = `// SPDX-License-Identifier: MIT
+  const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity ^0.8.0;
   
   import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
@@ -237,7 +236,7 @@ async function generateMarketV3(market) {
           ${aclAdmin};
   }
     `;
-  fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
+  fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
 }
 
 async function generateMarkets() {
