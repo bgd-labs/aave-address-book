@@ -188,8 +188,7 @@ library ${market.name} {
 
     address internal constant EMERGENCY_ADMIN =
         ${emergencyAdmin};
-}
-  `;
+}\r\n`;
   fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
 }
 
@@ -234,8 +233,7 @@ library ${market.name} {
 
     address internal constant ACL_ADMIN =
         ${aclAdmin};
-}
-    `;
+}\r\n`;
   fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
 }
 

@@ -25,4 +25,3 @@ library AaveV2Avalanche {
     address internal constant EMERGENCY_ADMIN =
         0x01244E7842254e3FD229CD263472076B1439D1Cd;
 }
-  

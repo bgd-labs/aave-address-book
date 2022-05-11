@@ -25,4 +25,3 @@ library AaveV2Mumbai {
     address internal constant EMERGENCY_ADMIN =
         0x943E44157dC0302a5CEb172374d1749018a00994;
 }
-  

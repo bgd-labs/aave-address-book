@@ -25,4 +25,3 @@ library AaveV2Fuji {
     address internal constant EMERGENCY_ADMIN =
         0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e;
 }
-  

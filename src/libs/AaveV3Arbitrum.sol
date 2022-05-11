@@ -25,4 +25,3 @@ library AaveV3Arbitrum {
     address internal constant ACL_ADMIN =
         0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb;
 }
-    

@@ -25,4 +25,3 @@ library AaveV2EthAMM {
     address internal constant EMERGENCY_ADMIN =
         0xB9062896ec3A615a4e4444DF183F0531a77218AE;
 }
-  

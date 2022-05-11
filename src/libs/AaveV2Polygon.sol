@@ -25,4 +25,3 @@ library AaveV2Polygon {
     address internal constant EMERGENCY_ADMIN =
         0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;
 }
-  

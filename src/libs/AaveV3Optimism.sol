@@ -25,4 +25,3 @@ library AaveV3Optimism {
     address internal constant ACL_ADMIN =
         0xE50c8C619d05ff98b22Adf991F17602C774F785c;
 }
-    

@@ -25,4 +25,3 @@ library AaveV3Harmony {
     address internal constant ACL_ADMIN =
         0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;
 }
-    
