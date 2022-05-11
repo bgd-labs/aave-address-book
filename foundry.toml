@@ -1,0 +1,6 @@
+[default]
+ffi = false
+optimizer = true
+optimizer_runs = 1000000
+remappings = ["ds-test/=lib/ds-test/src/"]
+verbosity = 1
