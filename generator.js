@@ -209,32 +209,32 @@ async function generateMarketV3(market) {
   const aclAdmin = await contract.getACLAdmin();
 
   const templateV3 = `// SPDX-License-Identifier: MIT
-  pragma solidity ^0.8.0;
-  
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
-  
-  
-  library ${market.name} {
-      IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-          IPoolAddressesProvider(
-              ${addressProvider}
-          );
-  
-      IPool internal constant POOL =
-          IPool(${pool});
-  
-      IPoolConfigurator internal constant POOL_CONFIGURATOR =
-          IPoolConfigurator(${poolConfigurator});
-  
-      IAaveOracle internal constant ORACLE =
-          IAaveOracle(${oracle});
-  
-      address internal constant POOL_ADMIN =
-          ${admin};
-  
-      address internal constant ACL_ADMIN =
-          ${aclAdmin};
-  }
+pragma solidity ^0.8.0;
+
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
+
+
+library ${market.name} {
+    IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
+        IPoolAddressesProvider(
+            ${addressProvider}
+        );
+
+    IPool internal constant POOL =
+        IPool(${pool});
+
+    IPoolConfigurator internal constant POOL_CONFIGURATOR =
+        IPoolConfigurator(${poolConfigurator});
+
+    IAaveOracle internal constant ORACLE =
+        IAaveOracle(${oracle});
+
+    address internal constant POOL_ADMIN =
+        ${admin};
+
+    address internal constant ACL_ADMIN =
+        ${aclAdmin};
+}
     `;
   fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
 }
