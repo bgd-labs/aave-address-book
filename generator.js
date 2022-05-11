@@ -331,11 +331,19 @@ const ADDRESS_PROVIDER_ABI = [
   },
 ];
 
+const KOVAN_RPC = "https://kovan.poa.network";
 const MAINNET_RPC = "https://rpc.flashbots.net/";
+const MUMBAI_RPC = "https://polygon-mumbai.g.alchemy.com/v2/demo";
 const POLYGON_RPC = "https://polygon-rpc.com";
+const FUJI_RPC = "https://api.avax-test.network/ext/bc/C/rpc";
 const AVALANCHE_RPC = "https://api.avax.network/ext/bc/C/rpc";
 
 const markets = [
+  {
+    name: "AaveV2Kovan",
+    rpc: KOVAN_RPC,
+    addressProvider: "0x88757f2f99175387ab4c6a4b3067c77a695b0349",
+  },
   {
     name: "AaveV2Eth",
     rpc: MAINNET_RPC,
@@ -347,9 +355,19 @@ const markets = [
     addressProvider: "0xacc030ef66f9dfeae9cbb0cd1b25654b82cfa8d5",
   },
   {
+    name: "AaveV2Mumbai",
+    rpc: MUMBAI_RPC,
+    addressProvider: "0x178113104fEcbcD7fF8669a0150721e231F0FD4B",
+  },
+  {
     name: "AaveV2Polygon",
     rpc: POLYGON_RPC,
     addressProvider: "0xd05e3E715d945B59290df0ae8eF85c1BdB684744",
+  },
+  {
+    name: "AaveV2Fuji",
+    rpc: FUJI_RPC,
+    addressProvider: "0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C0f",
   },
   {
     name: "AaveV2Avalanche",
