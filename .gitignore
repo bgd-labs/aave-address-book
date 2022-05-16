@@ -7,3 +7,5 @@
 # Foundry
 out/
 cache/
+
+node_modules/
