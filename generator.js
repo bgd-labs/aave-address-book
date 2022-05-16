@@ -193,7 +193,7 @@ library ${market.name} {
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
 
     // Append the market to the addressBook
-    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "../libs/${market.name}.sol"\r\n`);
+    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "./libs/${market.name}.sol";\r\n`);
 
     // Create the test for the specified market
     const testTemplateV2 = `// SPDX-License-Identifier: MIT
@@ -281,7 +281,7 @@ library ${market.name} {
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
 
     // Append the market to the addressBook
-    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "../libs/${market.name}.sol"\r\n`);
+    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "./libs/${market.name}.sol";\r\n`);
 
     // Create the test for the specified market
     const testTemplateV3 = `// SPDX-License-Identifier: MIT
