@@ -249,9 +249,10 @@ async function generateMarkets() {
       } catch (e) {
         console.log(`couldn't generate lib for ${market.name}`);
         console.log(e);
+        process.exit(1);
       }
     })
   );
 }
 
-generateMarkets().then(() => console.log("markets generated"));
+generateMarkets().then(() => console.log("markets successfully generated"));
