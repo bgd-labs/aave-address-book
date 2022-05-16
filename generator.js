@@ -164,7 +164,7 @@ async function generateMarketV2(market) {
     const admin = await contract.owner();
     const emergencyAdmin = await contract.getEmergencyAdmin();
     const templateV2 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.13;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
 
@@ -191,6 +191,9 @@ library ${market.name} {
         ${emergencyAdmin};
 }\r\n`;
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
+
+    // Append the market to the addressBook
+    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "../libs/${market.name}.sol"\r\n`);
 
     // Create the test for the specified market
     const testTemplateV2 = `// SPDX-License-Identifier: MIT
@@ -249,7 +252,7 @@ async function generateMarketV3(market) {
     const aclAdmin = await contract.getACLAdmin();
 
     const templateV3 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.13;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
 
@@ -277,6 +280,10 @@ library ${market.name} {
 }\r\n`;
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
 
+    // Append the market to the addressBook
+    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "../libs/${market.name}.sol"\r\n`);
+
+    // Create the test for the specified market
     const testTemplateV3 = `// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
@@ -317,6 +324,11 @@ contract AaveAddressBookTest is Test {
 }
 
 async function generateMarkets() {
+  // Create the test for the specified market
+  const AaveAddressBookTemplate = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+\r\n`
+      fs.writeFileSync(`./src/AaveAddressBook.sol`, AaveAddressBookTemplate);
   const generatedMarkets = await Promise.allSettled(
     markets.map((market) => market.version === 2 ? generateMarketV2(market) : generateMarketV3(market))
   );
