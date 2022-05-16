@@ -239,9 +239,18 @@ library ${market.name} {
 
 async function generateMarkets() {
   await Promise.all(
-    markets.map((market) =>
-      market.version === 2 ? generateMarketV2(market) : generateMarketV3(market)
-    )
+    markets.map(async (market) => {
+      try {
+        if (market.version === 2) {
+          await generateMarketV2(market);
+        } else if (market.version === 3) {
+          await generateMarketV3(market);
+        }
+      } catch (e) {
+        console.log(`couldn't generate lib for ${market.name}`);
+        console.log(e);
+      }
+    })
   );
 }
 
