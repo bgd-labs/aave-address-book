@@ -247,7 +247,7 @@ async function generateMarkets() {
           await generateMarketV3(market);
         }
       } catch (e) {
-        console.log(`couldn't generate lib for ${market.name}`);
+        console.log(`couldn't generate lib for ${market.name}, aborting`);
         console.log(e);
         process.exit(1);
       }
