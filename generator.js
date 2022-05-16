@@ -191,6 +191,42 @@ library ${market.name} {
         ${emergencyAdmin};
 }\r\n`;
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
+
+    // Create the test for the specified market
+    const testTemplateV2 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import "forge-std/Test.sol";
+import {${market.name}} from "../libs/${market.name}.sol";
+
+contract AaveAddressBookTest is Test {
+    function setUp() public {}
+
+    function testFailPoolAddressProviderIs0Address() public {
+        assertEq(address(${market.name}.POOL_ADDRESSES_PROVIDER), address(0));
+    }
+
+    function testFailPoolAddressIs0Address() public {
+        assertEq(address(${market.name}.POOL), address(0));
+    }
+
+    function testFailPoolConfiguratorIs0Address() public {
+        assertEq(address(${market.name}.POOL_CONFIGURATOR), address(0));
+    }
+
+    function testFailOracleIs0Address() public {
+        assertEq(address(${market.name}.ORACLE), address(0));
+    }
+
+    function testFailPoolAdminIs0Address() public {
+        assertEq(${market.name}.POOL_ADMIN, address(0));
+    }
+
+    function testFailEmergencyAdminIs0Address() public {
+        assertEq(${market.name}.EMERGENCY_ADMIN, address(0));
+    }
+}\r\n`
+    fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV2);
   } catch (error) {
     throw new Error(JSON.stringify({message: error.message, market, stack: error.stack}));
   }
@@ -240,6 +276,41 @@ library ${market.name} {
         ${aclAdmin};
 }\r\n`;
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
+
+    const testTemplateV3 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import "forge-std/Test.sol";
+import {${market.name}} from "../libs/${market.name}.sol";
+
+contract AaveAddressBookTest is Test {
+    function setUp() public {}
+
+    function testFailPoolAddressProviderIs0Address() public {
+        assertEq(address(${market.name}.POOL_ADDRESSES_PROVIDER), address(0));
+    }
+
+    function testFailPoolAddressIs0Address() public {
+        assertEq(address(${market.name}.POOL), address(0));
+    }
+
+    function testFailPoolConfiguratorIs0Address() public {
+        assertEq(address(${market.name}.POOL_CONFIGURATOR), address(0));
+    }
+
+    function testFailOracleIs0Address() public {
+        assertEq(address(${market.name}.ORACLE), address(0));
+    }
+
+    function testFailPoolAdminIs0Address() public {
+        assertEq(${market.name}.POOL_ADMIN, address(0));
+    }
+
+    function testFailACLAdminIs0Address() public {
+        assertEq(${market.name}.ACL_ADMIN, address(0));
+    }
+}\r\n`
+    fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV3);
   } catch (error) {
     throw new Error(JSON.stringify({message: error.message, market, stack: error.stack}));
   }
