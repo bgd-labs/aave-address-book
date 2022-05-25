@@ -161,7 +161,7 @@ library AaveAddressBookV3 {
                 0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                 0x77c45699A715A64A7a7796d5CEe884cf617D5254
             );
-        } else (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Optimism)))) {
+        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Optimism)))) {
             return Market(
                 IPoolAddressesProvider(
                     0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
@@ -172,6 +172,6 @@ library AaveAddressBookV3 {
                 0xE50c8C619d05ff98b22Adf991F17602C774F785c,
                 0xE50c8C619d05ff98b22Adf991F17602C774F785c
             );
-        }
+        } else revert('Market does not exist');
     }
 }

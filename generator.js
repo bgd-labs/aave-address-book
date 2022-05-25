@@ -146,7 +146,11 @@ const markets = [
     addressProvider: "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
     version: 3,
   },
-];
+].map((m) => ({
+  ...m,
+  // fix checksum
+  addressProvider: ethers.utils.getAddress(m.addressProvider),
+}));
 
 async function generateMarketV2(market) {
   const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
@@ -246,6 +250,52 @@ contract AaveAddressBookTest is Test {
       JSON.stringify({ message: error.message, market, stack: error.stack })
     );
   }
+}
+
+async function generateIndexFileV2(markets) {
+  const templateV3 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
+
+library AaveAddressBookV2 {
+${markets.reduce((acc, market) => {
+  acc += `    string public constant ${market.name} = '${market.name}';\n`;
+  return acc;
+}, "")}
+
+    struct Market {
+        ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
+        ILendingPool POOL;
+        ILendingPoolConfigurator POOL_CONFIGURATOR;
+        IAaveOracle ORACLE;
+        address POOL_ADMIN;
+        address EMERGENCY_ADMIN;
+    }
+
+    function getMarket(string calldata market) public pure returns(Market memory m) {
+${markets.reduce((acc, market, ix) => {
+  const isLast = ix === markets.length - 1;
+  const start = ix === 0 ? "        if" : " else if";
+  acc += `${start} (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((${
+    market.name
+  })))) {
+            return Market(
+                ILendingPoolAddressesProvider(
+                    ${market.addressProvider}
+                ),
+                ILendingPool(${market.lendingPool}),
+                ILendingPoolConfigurator(${market.lendingPoolConfigurator}),
+                IAaveOracle(${market.oracle}),
+                ${market.admin},
+                ${market.emergencyAdmin}
+            );
+        }${isLast ? ` else revert('Market does not exist');` : ""}`;
+  return acc;
+}, "")}
+    }
+}\r\n`;
+  fs.writeFileSync(`./src/libs/AaveAddressBookV2.sol`, templateV3);
 }
 
 async function generateMarketV3(market) {
@@ -366,9 +416,11 @@ ${markets.reduce((acc, market) => {
 
     function getMarket(string calldata market) public pure returns(Market memory m) {
 ${markets.reduce((acc, market, ix) => {
-  const start =
-    ix === 0 ? "        if" : ix === markets.length - 1 ? " else" : " else if";
-  acc += `${start} (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((${market.name})))) {
+  const isLast = ix === markets.length - 1;
+  const start = ix === 0 ? "        if" : " else if";
+  acc += `${start} (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((${
+    market.name
+  })))) {
             return Market(
                 IPoolAddressesProvider(
                     ${market.addressProvider}
@@ -379,7 +431,7 @@ ${markets.reduce((acc, market, ix) => {
                 ${market.admin},
                 ${market.aclAdmin}
             );
-        }`;
+        }${isLast ? ` else revert('Market does not exist');` : ""}`;
   return acc;
 }, "")}
     }
@@ -420,6 +472,9 @@ pragma solidity ^0.8.13;
 
   await generateIndexFileV3(
     generatedMarkets.filter((m) => m.value.version === 3).map((m) => m.value)
+  );
+  await generateIndexFileV2(
+    generatedMarkets.filter((m) => m.value.version === 2).map((m) => m.value)
   );
 }
 
