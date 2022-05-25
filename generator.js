@@ -193,7 +193,10 @@ library ${market.name} {
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
 
     // Append the market to the addressBook
-    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "./libs/${market.name}.sol";\r\n`);
+    fs.appendFileSync(
+      `./src/AaveAddressBook.sol`,
+      `import {${market.name}} from "./libs/${market.name}.sol";\r\n`
+    );
 
     // Create the test for the specified market
     const testTemplateV2 = `// SPDX-License-Identifier: MIT
@@ -228,10 +231,20 @@ contract AaveAddressBookTest is Test {
     function testFailEmergencyAdminIs0Address() public {
         assertEq(${market.name}.EMERGENCY_ADMIN, address(0));
     }
-}\r\n`
+}\r\n`;
     fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV2);
+    return {
+      lendingPool,
+      lendingPoolConfigurator,
+      oracle,
+      admin,
+      emergencyAdmin,
+      ...market,
+    };
   } catch (error) {
-    throw new Error(JSON.stringify({message: error.message, market, stack: error.stack}));
+    throw new Error(
+      JSON.stringify({ message: error.message, market, stack: error.stack })
+    );
   }
 }
 
@@ -281,7 +294,10 @@ library ${market.name} {
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
 
     // Append the market to the addressBook
-    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "./libs/${market.name}.sol";\r\n`);
+    fs.appendFileSync(
+      `./src/AaveAddressBook.sol`,
+      `import {${market.name}} from "./libs/${market.name}.sol";\r\n`
+    );
 
     // Create the test for the specified market
     const testTemplateV3 = `// SPDX-License-Identifier: MIT
@@ -316,27 +332,79 @@ contract AaveAddressBookTest is Test {
     function testFailACLAdminIs0Address() public {
         assertEq(${market.name}.ACL_ADMIN, address(0));
     }
-}\r\n`
+}\r\n`;
     fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV3);
+
+    return { pool, poolConfigurator, oracle, admin, aclAdmin, ...market };
   } catch (error) {
-    throw new Error(JSON.stringify({message: error.message, market, stack: error.stack}));
+    throw new Error(
+      JSON.stringify({ message: error.message, market, stack: error.stack })
+    );
   }
+}
+
+async function generateIndexFileV3(markets) {
+  const templateV3 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
+
+library AaveAddressBookV3 {
+${markets.reduce((acc, market) => {
+  acc += `    string public constant ${market.name} = '${market.name}';\n`;
+  return acc;
+}, "")}
+
+    struct Market {
+        IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
+        IPool POOL;
+        IPoolConfigurator POOL_CONFIGURATOR;
+        IAaveOracle ORACLE;
+        address POOL_ADMIN;
+        address ACL_ADMIN;
+    }
+
+    function getMarket(string calldata market) public pure returns(Market memory m) {
+${markets.reduce((acc, market, ix) => {
+  const start =
+    ix === 0 ? "        if" : ix === markets.length - 1 ? " else" : " else if";
+  acc += `${start} (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((${market.name})))) {
+            return Market(
+                IPoolAddressesProvider(
+                    ${market.addressProvider}
+                ),
+                IPool(${market.pool}),
+                IPoolConfigurator(${market.poolConfigurator}),
+                IAaveOracle(${market.oracle}),
+                ${market.admin},
+                ${market.aclAdmin}
+            );
+        }`;
+  return acc;
+}, "")}
+    }
+}\r\n`;
+  fs.writeFileSync(`./src/libs/AaveAddressBookV3.sol`, templateV3);
 }
 
 async function generateMarkets() {
   // Create the test for the specified market
   const AaveAddressBookTemplate = `// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
-\r\n`
-      fs.writeFileSync(`./src/AaveAddressBook.sol`, AaveAddressBookTemplate);
+\r\n`;
+  fs.writeFileSync(`./src/AaveAddressBook.sol`, AaveAddressBookTemplate);
   const generatedMarkets = await Promise.allSettled(
-    markets.map((market) => market.version === 2 ? generateMarketV2(market) : generateMarketV3(market))
+    markets.map((market) =>
+      market.version === 2 ? generateMarketV2(market) : generateMarketV3(market)
+    )
   );
 
-  const failedMarkets = generatedMarkets.filter(promise => promise.status === 'rejected');
+  const failedMarkets = generatedMarkets.filter(
+    (promise) => promise.status === "rejected"
+  );
 
   if (failedMarkets.length > 0) {
-    failedMarkets.forEach(failedMarket => {
+    failedMarkets.forEach((failedMarket) => {
       const error = JSON.parse(failedMarket.reason.message);
       console.log(`
         Could not generate market for:
@@ -345,16 +413,22 @@ pragma solidity ^0.8.13;
         - network rpc: ${error.market.rpc}
         - trace: ${error.stack}
       `);
-    })
+    });
 
-    throw new Error('Some markets where not properly generated');
+    throw new Error("Some markets where not properly generated");
   }
+
+  await generateIndexFileV3(
+    generatedMarkets.filter((m) => m.value.version === 3).map((m) => m.value)
+  );
 }
 
-generateMarkets().then(() => {
-  console.log("markets successfully generated")
-  process.exit(0);
-}).catch((error) => {
-  console.log(error);
-  process.exit(1);
-});
+generateMarkets()
+  .then(() => {
+    console.log("markets successfully generated");
+    process.exit(0);
+  })
+  .catch((error) => {
+    console.log(error);
+    process.exit(1);
+  });
