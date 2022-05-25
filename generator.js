@@ -157,13 +157,14 @@ async function generateMarketV2(market) {
     addressProviderV2ABI,
     provider
   );
-  const lendingPool = await contract.getLendingPool();
-  const lendingPoolConfigurator = await contract.getLendingPoolConfigurator();
-  const oracle = await contract.getPriceOracle();
-  const admin = await contract.owner();
-  const emergencyAdmin = await contract.getEmergencyAdmin();
-  const templateV2 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+  try {
+    const lendingPool = await contract.getLendingPool();
+    const lendingPoolConfigurator = await contract.getLendingPoolConfigurator();
+    const oracle = await contract.getPriceOracle();
+    const admin = await contract.owner();
+    const emergencyAdmin = await contract.getEmergencyAdmin();
+    const templateV2 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
 
@@ -189,7 +190,49 @@ library ${market.name} {
     address internal constant EMERGENCY_ADMIN =
         ${emergencyAdmin};
 }\r\n`;
-  fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
+    fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
+
+    // Append the market to the addressBook
+    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "./libs/${market.name}.sol";\r\n`);
+
+    // Create the test for the specified market
+    const testTemplateV2 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import "forge-std/Test.sol";
+import {${market.name}} from "../libs/${market.name}.sol";
+
+contract AaveAddressBookTest is Test {
+    function setUp() public {}
+
+    function testFailPoolAddressProviderIs0Address() public {
+        assertEq(address(${market.name}.POOL_ADDRESSES_PROVIDER), address(0));
+    }
+
+    function testFailPoolAddressIs0Address() public {
+        assertEq(address(${market.name}.POOL), address(0));
+    }
+
+    function testFailPoolConfiguratorIs0Address() public {
+        assertEq(address(${market.name}.POOL_CONFIGURATOR), address(0));
+    }
+
+    function testFailOracleIs0Address() public {
+        assertEq(address(${market.name}.ORACLE), address(0));
+    }
+
+    function testFailPoolAdminIs0Address() public {
+        assertEq(${market.name}.POOL_ADMIN, address(0));
+    }
+
+    function testFailEmergencyAdminIs0Address() public {
+        assertEq(${market.name}.EMERGENCY_ADMIN, address(0));
+    }
+}\r\n`
+    fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV2);
+  } catch (error) {
+    throw new Error(JSON.stringify({message: error.message, market, stack: error.stack}));
+  }
 }
 
 async function generateMarketV3(market) {
@@ -201,14 +244,15 @@ async function generateMarketV3(market) {
     addressProviderV3ABI,
     provider
   );
-  const pool = await contract.getPool();
-  const poolConfigurator = await contract.getPoolConfigurator();
-  const oracle = await contract.getPriceOracle();
-  const admin = await contract.owner();
-  const aclAdmin = await contract.getACLAdmin();
+  try {
+    const pool = await contract.getPool();
+    const poolConfigurator = await contract.getPoolConfigurator();
+    const oracle = await contract.getPriceOracle();
+    const admin = await contract.owner();
+    const aclAdmin = await contract.getACLAdmin();
 
-  const templateV3 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+    const templateV3 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
 
@@ -234,25 +278,83 @@ library ${market.name} {
     address internal constant ACL_ADMIN =
         ${aclAdmin};
 }\r\n`;
-  fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
+    fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
+
+    // Append the market to the addressBook
+    fs.appendFileSync(`./src/AaveAddressBook.sol`, `import {${market.name}} from "./libs/${market.name}.sol";\r\n`);
+
+    // Create the test for the specified market
+    const testTemplateV3 = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+import "forge-std/Test.sol";
+import {${market.name}} from "../libs/${market.name}.sol";
+
+contract AaveAddressBookTest is Test {
+    function setUp() public {}
+
+    function testFailPoolAddressProviderIs0Address() public {
+        assertEq(address(${market.name}.POOL_ADDRESSES_PROVIDER), address(0));
+    }
+
+    function testFailPoolAddressIs0Address() public {
+        assertEq(address(${market.name}.POOL), address(0));
+    }
+
+    function testFailPoolConfiguratorIs0Address() public {
+        assertEq(address(${market.name}.POOL_CONFIGURATOR), address(0));
+    }
+
+    function testFailOracleIs0Address() public {
+        assertEq(address(${market.name}.ORACLE), address(0));
+    }
+
+    function testFailPoolAdminIs0Address() public {
+        assertEq(${market.name}.POOL_ADMIN, address(0));
+    }
+
+    function testFailACLAdminIs0Address() public {
+        assertEq(${market.name}.ACL_ADMIN, address(0));
+    }
+}\r\n`
+    fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV3);
+  } catch (error) {
+    throw new Error(JSON.stringify({message: error.message, market, stack: error.stack}));
+  }
 }
 
 async function generateMarkets() {
-  await Promise.all(
-    markets.map(async (market) => {
-      try {
-        if (market.version === 2) {
-          await generateMarketV2(market);
-        } else if (market.version === 3) {
-          await generateMarketV3(market);
-        }
-      } catch (e) {
-        console.log(`couldn't generate lib for ${market.name}, aborting`);
-        console.log(e);
-        process.exit(1);
-      }
-    })
+  // Create the test for the specified market
+  const AaveAddressBookTemplate = `// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+\r\n`
+      fs.writeFileSync(`./src/AaveAddressBook.sol`, AaveAddressBookTemplate);
+  const generatedMarkets = await Promise.allSettled(
+    markets.map((market) => market.version === 2 ? generateMarketV2(market) : generateMarketV3(market))
   );
+
+  const failedMarkets = generatedMarkets.filter(promise => promise.status === 'rejected');
+
+  if (failedMarkets.length > 0) {
+    failedMarkets.forEach(failedMarket => {
+      const error = JSON.parse(failedMarket.reason.message);
+      console.log(`
+        Could not generate market for:
+        - market: ${error.market.name}
+        - market version: ${error.market.version}
+        - network rpc: ${error.market.rpc}
+        - trace: ${error.stack}
+      `);
+    })
+
+    throw new Error('Some markets where not properly generated');
+  }
 }
 
-generateMarkets().then(() => console.log("markets successfully generated"));
+generateMarkets().then(() => {
+  console.log("markets successfully generated")
+  process.exit(0);
+}).catch((error) => {
+  console.log(error);
+  process.exit(1);
+});
