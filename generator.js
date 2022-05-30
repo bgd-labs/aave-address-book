@@ -168,7 +168,7 @@ async function generateMarketV2(market) {
     const admin = await contract.owner();
     const emergencyAdmin = await contract.getEmergencyAdmin();
     const templateV2 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
 
@@ -204,7 +204,7 @@ library ${market.name} {
 
     // Create the test for the specified market
     const testTemplateV2 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 
 import "forge-std/Test.sol";
 import {${market.name}} from "../libs/${market.name}.sol";
@@ -254,7 +254,7 @@ contract AaveAddressBookTest is Test {
 
 async function generateIndexFileV2(markets) {
   const templateV3 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
 
@@ -315,7 +315,7 @@ async function generateMarketV3(market) {
     const aclAdmin = await contract.getACLAdmin();
 
     const templateV3 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
 
@@ -351,7 +351,7 @@ library ${market.name} {
 
     // Create the test for the specified market
     const testTemplateV3 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 
 import "forge-std/Test.sol";
 import {${market.name}} from "../libs/${market.name}.sol";
@@ -395,7 +395,7 @@ contract AaveAddressBookTest is Test {
 
 async function generateIndexFileV3(markets) {
   const templateV3 = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
 
@@ -442,7 +442,7 @@ ${markets.reduce((acc, market, ix) => {
 async function generateMarkets() {
   // Create the test for the specified market
   const AaveAddressBookTemplate = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 \r\n`;
   fs.writeFileSync(`./src/AaveAddressBook.sol`, AaveAddressBookTemplate);
   const generatedMarkets = await Promise.allSettled(

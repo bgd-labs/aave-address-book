@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity >=0.6.0;
 
 import "forge-std/Test.sol";
 import {AaveV2KovanAMM} from "../libs/AaveV2KovanAMM.sol";
