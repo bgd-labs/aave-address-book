@@ -3,12 +3,9 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
 
-
 library AaveV3Optimism {
     IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-        IPoolAddressesProvider(
-            0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
-        );
+        IPoolAddressesProvider(0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb);
 
     IPool internal constant POOL =
         IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);

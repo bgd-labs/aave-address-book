@@ -3,6 +3,8 @@ const fs = require("fs");
 const addressProviderV2ABI = require("./address_provider_v2_abi.json");
 const lendingPoolV2ABI = require("./lending_pool_v2_abi.json");
 const addressProviderV3ABI = require("./address_provider_v3_abi.json");
+const erc20ABI = require("./erc20_abi.json");
+const { createCipheriv } = require("crypto");
 
 const KOVAN_RPC = "https://kovan.poa.network";
 const RINKEBY_RPC = "https://rinkeby-light.eth.linkpool.io/";
@@ -21,12 +23,12 @@ const FANTOM_TESTNET_RPC = "https://rpc.testnet.fantom.network";
 const FANTOM_RPC = "https://rpc.ftm.tools";
 
 const markets = [
-  {
-    name: "AaveV2Kovan",
-    rpc: KOVAN_RPC,
-    addressProvider: "0x88757f2f99175387ab4c6a4b3067c77a695b0349",
-    version: 2,
-  },
+  // { deprecated
+  //   name: "AaveV2Kovan",
+  //   rpc: KOVAN_RPC,
+  //   addressProvider: "0x88757f2f99175387ab4c6a4b3067c77a695b0349",
+  //   version: 2,
+  // },
   {
     name: "AaveV3Rinkeby",
     rpc: RINKEBY_RPC,
@@ -39,12 +41,12 @@ const markets = [
     addressProvider: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5",
     version: 2,
   },
-  {
-    name: "AaveV2KovanAMM",
-    rpc: KOVAN_RPC,
-    addressProvider: "0x67FB118A780fD740C8936511947cC4bE7bb7730c",
-    version: 2,
-  },
+  // {
+  //   name: "AaveV2KovanAMM",
+  //   rpc: KOVAN_RPC,
+  //   addressProvider: "0x67FB118A780fD740C8936511947cC4bE7bb7730c",
+  //   version: 2,
+  // },
   {
     name: "AaveV2EthAMM",
     rpc: MAINNET_RPC,
@@ -141,12 +143,12 @@ const markets = [
     addressProvider: "0xD15d36975A0200D11B8a8964F4F267982D2a1cFe",
     version: 3,
   },
-  {
-    name: "AaveV3Optimism",
-    rpc: OPTIMISM_RPC,
-    addressProvider: "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
-    version: 3,
-  },
+  // {
+  //   name: "AaveV3Optimism",
+  //   rpc: OPTIMISM_RPC,
+  //   addressProvider: "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
+  //   version: 3,
+  // },
 ].map((m) => ({
   ...m,
   // fix checksum
@@ -180,7 +182,13 @@ async function generateMarketV2(market) {
     const tokenList = await Promise.all(
       reserves.map(async (reserve) => {
         const data = await lendingPoolContract.getReserveData(reserve);
+        const erc20Contract = new ethers.Contract(reserve, erc20ABI, provider);
+        const symbol =
+          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
+            ? "MKR"
+            : await erc20Contract.symbol();
         return {
+          symbol,
           underlyingAsset: reserve,
           aTokenAddress: data.aTokenAddress,
           stableDebtTokenAddress: data.stableDebtTokenAddress,
@@ -189,13 +197,10 @@ async function generateMarketV2(market) {
       })
     );
 
-    console.log(tokenList);
-
     const templateV2 = `// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
-
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Token} from "./AaveV2.sol";
 
 library ${market.name} {
     ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -217,6 +222,24 @@ library ${market.name} {
 
     address internal constant EMERGENCY_ADMIN =
         ${emergencyAdmin};
+    
+    function getToken(string calldata token) public pure returns(Token memory m) {
+${tokenList.reduce((acc, token, ix) => {
+  const isLast = ix === tokenList.length - 1;
+  const start = ix === 0 ? "        if" : " else if";
+  acc += `${start} (keccak256(abi.encodePacked((token))) == keccak256(abi.encodePacked(("${
+    token.symbol
+  }")))) {
+            return Token(
+              ${token.underlyingAsset},
+              ${token.aTokenAddress},
+              ${token.stableDebtTokenAddress},
+              ${token.variableDebtTokenAddress}
+            );
+        }${isLast ? ` else revert('Token does not exist');` : ""}`;
+  return acc;
+}, "")}
+    }
 }\r\n`;
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
 
@@ -267,6 +290,7 @@ contract AaveAddressBookTest is Test {
       oracle,
       admin,
       emergencyAdmin,
+      tokenList,
       ...market,
     };
   } catch (error) {
@@ -280,7 +304,7 @@ async function generateIndexFileV2(markets) {
   const templateV3 = `// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle} from "./AaveV2.sol";
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Market, Token} from "./AaveV2.sol";
 
 library AaveAddressBookV2 {
 ${markets.reduce((acc, market) => {
@@ -288,22 +312,13 @@ ${markets.reduce((acc, market) => {
   return acc;
 }, "")}
 
-    struct Market {
-        ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-        ILendingPool POOL;
-        ILendingPoolConfigurator POOL_CONFIGURATOR;
-        IAaveOracle ORACLE;
-        address POOL_ADMIN;
-        address EMERGENCY_ADMIN;
-    }
-
     function getMarket(string calldata market) public pure returns(Market memory m) {
 ${markets.reduce((acc, market, ix) => {
   const isLast = ix === markets.length - 1;
   const start = ix === 0 ? "        if" : " else if";
-  acc += `${start} (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((${
+  acc += `${start} (keccak256(abi.encodePacked(market)) == keccak256(abi.encodePacked(${
     market.name
-  })))) {
+  }))) {
             return Market(
                 ILendingPoolAddressesProvider(
                     ${market.addressProvider}
@@ -314,6 +329,33 @@ ${markets.reduce((acc, market, ix) => {
                 ${market.admin},
                 ${market.emergencyAdmin}
             );
+        }${isLast ? ` else revert('Market does not exist');` : ""}`;
+  return acc;
+}, "")}
+    }
+
+    function getToken(string calldata market, string calldata token) public pure returns(Token memory m) {
+${markets.reduce((acc, market, ix) => {
+  const isLast = ix === markets.length - 1;
+  const start = ix === 0 ? "        if" : " else if";
+  acc += `${start} (keccak256(abi.encodePacked(market)) == keccak256(abi.encodePacked(${
+    market.name
+  }))) {
+    ${market.tokenList.reduce((acc, token, ix) => {
+      const isLast = ix === market.tokenList.length - 1;
+      const start = ix === 0 ? "        if" : " else if";
+      acc += `${start} (keccak256(abi.encodePacked(token)) == keccak256(abi.encodePacked("${
+        token.symbol
+      }"))) {
+                return Token(
+                  ${token.underlyingAsset},
+                  ${token.aTokenAddress},
+                  ${token.stableDebtTokenAddress},
+                  ${token.variableDebtTokenAddress}
+                );
+            }${isLast ? ` else revert('Token does not exist');` : ""}`;
+      return acc;
+    }, "")}
         }${isLast ? ` else revert('Market does not exist');` : ""}`;
   return acc;
 }, "")}
@@ -338,10 +380,35 @@ async function generateMarketV3(market) {
     const admin = await contract.owner();
     const aclAdmin = await contract.getACLAdmin();
 
+    const lendingPoolContract = new ethers.Contract(
+      pool,
+      lendingPoolV2ABI,
+      provider
+    );
+
+    const reserves = await lendingPoolContract.getReservesList();
+    const tokenList = await Promise.all(
+      reserves.map(async (reserve) => {
+        const data = await lendingPoolContract.getReserveData(reserve);
+        const erc20Contract = new ethers.Contract(reserve, erc20ABI, provider);
+        const symbol =
+          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
+            ? "MKR"
+            : await erc20Contract.symbol();
+        return {
+          symbol,
+          underlyingAsset: reserve,
+          aTokenAddress: data.aTokenAddress,
+          stableDebtTokenAddress: data.stableDebtTokenAddress,
+          variableDebtTokenAddress: data.variableDebtTokenAddress,
+        };
+      })
+    );
+
     const templateV3 = `// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, Token} from "./AaveV3.sol";
 
 
 library ${market.name} {
@@ -364,6 +431,24 @@ library ${market.name} {
 
     address internal constant ACL_ADMIN =
         ${aclAdmin};
+
+    function getToken(string calldata token) public pure returns(Token memory m) {
+      ${tokenList.reduce((acc, token, ix) => {
+        const isLast = ix === tokenList.length - 1;
+        const start = ix === 0 ? "        if" : " else if";
+        acc += `${start} (keccak256(abi.encodePacked(token)) == keccak256(abi.encodePacked("${
+          token.symbol
+        }"))) {
+                  return Token(
+                    ${token.underlyingAsset},
+                    ${token.aTokenAddress},
+                    ${token.stableDebtTokenAddress},
+                    ${token.variableDebtTokenAddress}
+                  );
+              }${isLast ? ` else revert('Token does not exist');` : ""}`;
+        return acc;
+      }, "")}
+    }
 }\r\n`;
     fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
 
@@ -409,7 +494,15 @@ contract AaveAddressBookTest is Test {
 }\r\n`;
     fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV3);
 
-    return { pool, poolConfigurator, oracle, admin, aclAdmin, ...market };
+    return {
+      pool,
+      poolConfigurator,
+      oracle,
+      admin,
+      aclAdmin,
+      tokenList,
+      ...market,
+    };
   } catch (error) {
     throw new Error(
       JSON.stringify({ message: error.message, market, stack: error.stack })
@@ -421,22 +514,13 @@ async function generateIndexFileV3(markets) {
   const templateV3 = `// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, Token, Market} from "./AaveV3.sol";
 
 library AaveAddressBookV3 {
 ${markets.reduce((acc, market) => {
   acc += `    string public constant ${market.name} = '${market.name}';\n`;
   return acc;
 }, "")}
-
-    struct Market {
-        IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-        IPool POOL;
-        IPoolConfigurator POOL_CONFIGURATOR;
-        IAaveOracle ORACLE;
-        address POOL_ADMIN;
-        address ACL_ADMIN;
-    }
 
     function getMarket(string calldata market) public pure returns(Market memory m) {
 ${markets.reduce((acc, market, ix) => {
@@ -459,6 +543,33 @@ ${markets.reduce((acc, market, ix) => {
   return acc;
 }, "")}
     }
+
+    function getToken(string calldata market, string calldata token) public pure returns(Token memory m) {
+      ${markets.reduce((acc, market, ix) => {
+        const isLast = ix === markets.length - 1;
+        const start = ix === 0 ? "        if" : " else if";
+        acc += `${start} (keccak256(abi.encodePacked(market)) == keccak256(abi.encodePacked(${
+          market.name
+        }))) {
+          ${market.tokenList.reduce((acc, token, ix) => {
+            const isLast = ix === market.tokenList.length - 1;
+            const start = ix === 0 ? "        if" : " else if";
+            acc += `${start} (keccak256(abi.encodePacked(token)) == keccak256(abi.encodePacked("${
+              token.symbol
+            }"))) {
+                      return Token(
+                        ${token.underlyingAsset},
+                        ${token.aTokenAddress},
+                        ${token.stableDebtTokenAddress},
+                        ${token.variableDebtTokenAddress}
+                      );
+                  }${isLast ? ` else revert('Token does not exist');` : ""}`;
+            return acc;
+          }, "")}
+              }${isLast ? ` else revert('Market does not exist');` : ""}`;
+        return acc;
+      }, "")}
+          }
 }\r\n`;
   fs.writeFileSync(`./src/libs/AaveAddressBookV3.sol`, templateV3);
 }
