@@ -1,6 +1,7 @@
 const ethers = require("ethers");
 const fs = require("fs");
 const addressProviderV2ABI = require("./address_provider_v2_abi.json");
+const lendingPoolV2ABI = require("./lending_pool_v2_abi.json");
 const addressProviderV3ABI = require("./address_provider_v3_abi.json");
 
 const KOVAN_RPC = "https://kovan.poa.network";
@@ -156,17 +157,40 @@ async function generateMarketV2(market) {
   const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
   // using getAddress to get correct checksum in case the one in config isn't correct
   const addressProvider = ethers.utils.getAddress(market.addressProvider);
-  const contract = new ethers.Contract(
-    addressProvider,
-    addressProviderV2ABI,
-    provider
-  );
   try {
-    const lendingPool = await contract.getLendingPool();
-    const lendingPoolConfigurator = await contract.getLendingPoolConfigurator();
-    const oracle = await contract.getPriceOracle();
-    const admin = await contract.owner();
-    const emergencyAdmin = await contract.getEmergencyAdmin();
+    const addressProviderContract = new ethers.Contract(
+      addressProvider,
+      addressProviderV2ABI,
+      provider
+    );
+    const lendingPool = await addressProviderContract.getLendingPool();
+    const lendingPoolConfigurator =
+      await addressProviderContract.getLendingPoolConfigurator();
+    const oracle = await addressProviderContract.getPriceOracle();
+    const admin = await addressProviderContract.owner();
+    const emergencyAdmin = await addressProviderContract.getEmergencyAdmin();
+
+    const lendingPoolContract = new ethers.Contract(
+      lendingPool,
+      lendingPoolV2ABI,
+      provider
+    );
+
+    const reserves = await lendingPoolContract.getReservesList();
+    const tokenList = await Promise.all(
+      reserves.map(async (reserve) => {
+        const data = await lendingPoolContract.getReserveData(reserve);
+        return {
+          underlyingAsset: reserve,
+          aTokenAddress: data.aTokenAddress,
+          stableDebtTokenAddress: data.stableDebtTokenAddress,
+          variableDebtTokenAddress: data.variableDebtTokenAddress,
+        };
+      })
+    );
+
+    console.log(tokenList);
+
     const templateV2 = `// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
