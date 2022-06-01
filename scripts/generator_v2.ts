@@ -4,6 +4,7 @@ import fs from "fs";
 import addressProviderV2ABI from "../address_provider_v2_abi.json";
 import lendingPoolV2ABI from "../lending_pool_v2_abi.json";
 import erc20ABI from "../erc20_abi.json";
+import prettier from "prettier";
 
 export async function generateMarketV2(market: Market) {
   const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
@@ -91,7 +92,10 @@ export async function generateMarketV2(market: Market) {
   }, "")}
       }
   }\r\n`;
-    fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV2);
+    fs.writeFileSync(
+      `./src/libs/${market.name}.sol`,
+      prettier.format(templateV2, { filepath: `./src/libs/${market.name}.sol` })
+    );
 
     // Append the market to the addressBook
     fs.appendFileSync(
@@ -163,12 +167,12 @@ export async function generateIndexFileV2(
   markets: MarketV2[],
   testnet?: boolean
 ) {
-  const templateV3 = `// SPDX-License-Identifier: MIT
+  const templateV2 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
   import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Market, Token} from "./AaveV2.sol";
   
-  library AaveAddressBookV2 {
+  library AaveAddressBookV2${testnet ? "Testnet" : ""} {
   ${markets.reduce((acc, market) => {
     acc += `    string public constant ${market.name} = '${market.name}';\n`;
     return acc;
@@ -226,5 +230,8 @@ export async function generateIndexFileV2(
   const fileName = testnet
     ? `./src/libs/AaveAddressBookV2Testnet.sol`
     : `./src/libs/AaveAddressBookV2.sol`;
-  fs.writeFileSync(fileName, templateV3);
+  fs.writeFileSync(
+    fileName,
+    prettier.format(templateV2, { filepath: fileName })
+  );
 }

@@ -4,6 +4,7 @@ import fs from "fs";
 import addressProviderV3ABI from "../address_provider_v3_abi.json";
 import lendingPoolV2ABI from "../lending_pool_v2_abi.json";
 import erc20ABI from "../erc20_abi.json";
+import prettier from "prettier";
 
 export async function generateMarketV3(market: Market) {
   const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
@@ -91,7 +92,10 @@ export async function generateMarketV3(market: Market) {
         }, "")}
       }
   }\r\n`;
-    fs.writeFileSync(`./src/libs/${market.name}.sol`, templateV3);
+    fs.writeFileSync(
+      `./src/libs/${market.name}.sol`,
+      prettier.format(templateV3, { filepath: `./src/libs/${market.name}.sol` })
+    );
 
     // Append the market to the addressBook
     fs.appendFileSync(
@@ -169,7 +173,7 @@ export async function generateIndexFileV3(
   
   import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, Token, Market} from "./AaveV3.sol";
   
-  library AaveAddressBookV3 {
+  library AaveAddressBookV3${testnet ? "Testnet" : ""} {
   ${markets.reduce((acc, market) => {
     acc += `    string public constant ${market.name} = '${market.name}';\n`;
     return acc;
@@ -227,5 +231,8 @@ export async function generateIndexFileV3(
   const fileName = testnet
     ? `./src/libs/AaveAddressBookV3Testnet.sol`
     : `./src/libs/AaveAddressBookV3.sol`;
-  fs.writeFileSync(fileName, templateV3);
+  fs.writeFileSync(
+    fileName,
+    prettier.format(templateV3, { filepath: fileName })
+  );
 }
