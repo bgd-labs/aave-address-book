@@ -2,7 +2,7 @@
   pragma solidity >=0.6.0;
   
   import "forge-std/Test.sol";
-  import {AaveV2Mumbai} from "../libs/AaveV2Mumbai.sol";
+  import {AaveV2Mumbai} from "../AaveV2Mumbai.sol";
   
   contract AaveAddressBookTest is Test {
       function setUp() public {}

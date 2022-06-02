@@ -2,7 +2,7 @@
   pragma solidity >=0.6.0;
   
   import "forge-std/Test.sol";
-  import {AaveV3OptimismKovan} from "../libs/AaveV3OptimismKovan.sol";
+  import {AaveV3OptimismKovan} from "../AaveV3OptimismKovan.sol";
   
   contract AaveAddressBookTest is Test {
       function setUp() public {}

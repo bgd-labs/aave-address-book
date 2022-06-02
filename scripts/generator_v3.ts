@@ -94,14 +94,14 @@ export async function generateMarketV3(market: Market) {
       }
   }\r\n`;
     fs.writeFileSync(
-      `./src/libs/${market.name}.sol`,
-      prettier.format(templateV3, { filepath: `./src/libs/${market.name}.sol` })
+      `./src/${market.name}.sol`,
+      prettier.format(templateV3, { filepath: `./src/${market.name}.sol` })
     );
 
     // Append the market to the addressBook
     fs.appendFileSync(
       `./src/AaveAddressBook.sol`,
-      `import {${market.name}} from "./libs/${market.name}.sol";\r\n`
+      `import {${market.name}} from "./${market.name}.sol";\r\n`
     );
 
     // Create the test for the specified market
@@ -109,7 +109,7 @@ export async function generateMarketV3(market: Market) {
   pragma solidity >=0.6.0;
   
   import "forge-std/Test.sol";
-  import {${market.name}} from "../libs/${market.name}.sol";
+  import {${market.name}} from "../${market.name}.sol";
   
   contract AaveAddressBookTest is Test {
       function setUp() public {}
@@ -233,8 +233,8 @@ export async function generateIndexFileV3(
             }
   }\r\n`;
   const fileName = testnet
-    ? `./src/libs/AaveAddressBookV3Testnet.sol`
-    : `./src/libs/AaveAddressBookV3.sol`;
+    ? `./src/AaveAddressBookV3Testnet.sol`
+    : `./src/AaveAddressBookV3.sol`;
   fs.writeFileSync(
     fileName,
     prettier.format(templateV3, { filepath: fileName })
