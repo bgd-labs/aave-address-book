@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, Token, Market} from "./AaveV3.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token, Market} from "./AaveV3.sol";
 
 library AaveAddressBookV3 {
     string public constant AaveV3Polygon = "AaveV3Polygon";
@@ -30,6 +30,9 @@ library AaveAddressBookV3 {
                         0x8145eddDf43f50276641b55bd3AD95944510021E
                     ),
                     IAaveOracle(0xb023e699F5a33916Ea823A16485e259257cA8Bd1),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
                     0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
                     0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
                 );
@@ -47,6 +50,9 @@ library AaveAddressBookV3 {
                         0x8145eddDf43f50276641b55bd3AD95944510021E
                     ),
                     IAaveOracle(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
                     0xa35b76E4935449E33C56aB24b23fcd3246f13470,
                     0xa35b76E4935449E33C56aB24b23fcd3246f13470
                 );
@@ -64,6 +70,9 @@ library AaveAddressBookV3 {
                         0x8145eddDf43f50276641b55bd3AD95944510021E
                     ),
                     IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
                     0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb,
                     0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb
                 );
@@ -81,6 +90,9 @@ library AaveAddressBookV3 {
                         0x8145eddDf43f50276641b55bd3AD95944510021E
                     ),
                     IAaveOracle(0xfd6f3c1845604C8AE6c6E402ad17fb9885160754),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
                     0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949,
                     0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949
                 );
@@ -98,6 +110,9 @@ library AaveAddressBookV3 {
                         0x8145eddDf43f50276641b55bd3AD95944510021E
                     ),
                     IAaveOracle(0x3C90887Ede8D65ccb2777A5d577beAb2548280AD),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
                     0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D,
                     0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D
                 );
@@ -115,6 +130,9 @@ library AaveAddressBookV3 {
                         0x8145eddDf43f50276641b55bd3AD95944510021E
                     ),
                     IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
                     0xE50c8C619d05ff98b22Adf991F17602C774F785c,
                     0xE50c8C619d05ff98b22Adf991F17602C774F785c
                 );

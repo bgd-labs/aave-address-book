@@ -22,6 +22,9 @@ export async function generateMarketV2(market: Market) {
     const oracle = await addressProviderContract.getPriceOracle();
     const admin = await addressProviderContract.owner();
     const emergencyAdmin = await addressProviderContract.getEmergencyAdmin();
+    const poolDataProvider = await addressProviderContract.getAddress(
+      "0x0100000000000000000000000000000000000000000000000000000000000000"
+    );
 
     const lendingPoolContract = new ethers.Contract(
       lendingPool,
@@ -51,7 +54,7 @@ export async function generateMarketV2(market: Market) {
     const templateV2 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Token} from "./AaveV2.sol";
+  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token} from "./AaveV2.sol";
   
   library ${market.name} {
       ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -67,12 +70,12 @@ export async function generateMarketV2(market: Market) {
   
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
+
+      IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider(${poolDataProvider});
   
-      address internal constant POOL_ADMIN =
-          ${admin};
+      address internal constant POOL_ADMIN = ${admin};
   
-      address internal constant EMERGENCY_ADMIN =
-          ${emergencyAdmin};
+      address internal constant EMERGENCY_ADMIN = ${emergencyAdmin};
       
       function getToken(string calldata token) public pure returns(Token memory m) {
   ${tokenList.reduce((acc, token, ix) => {
@@ -140,6 +143,7 @@ export async function generateMarketV2(market: Market) {
     fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV2);
     return {
       lendingPool,
+      poolDataProvider,
       lendingPoolConfigurator,
       oracle,
       admin,
@@ -160,6 +164,7 @@ interface MarketV2 extends Market {
   oracle: string;
   admin: string;
   emergencyAdmin: string;
+  poolDataProvider: string;
   tokenList: Token[];
 }
 
@@ -170,7 +175,7 @@ export async function generateIndexFileV2(
   const templateV2 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Market, Token} from "./AaveV2.sol";
+  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Market, Token} from "./AaveV2.sol";
   
   library AaveAddressBookV2${testnet ? "Testnet" : ""} {
   ${markets.reduce((acc, market) => {
@@ -192,6 +197,7 @@ export async function generateIndexFileV2(
                   ILendingPool(${market.lendingPool}),
                   ILendingPoolConfigurator(${market.lendingPoolConfigurator}),
                   IAaveOracle(${market.oracle}),
+                  IAaveProtocolDataProvider(${market.poolDataProvider}),
                   ${market.admin},
                   ${market.emergencyAdmin}
               );

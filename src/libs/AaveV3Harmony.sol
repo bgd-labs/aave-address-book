@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, Token} from "./AaveV3.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token} from "./AaveV3.sol";
 
 library AaveV3Harmony {
     IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -15,6 +15,9 @@ library AaveV3Harmony {
 
     IAaveOracle internal constant ORACLE =
         IAaveOracle(0x3C90887Ede8D65ccb2777A5d577beAb2548280AD);
+
+    IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+        IAaveProtocolDataProvider(0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654);
 
     address internal constant POOL_ADMIN =
         0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;

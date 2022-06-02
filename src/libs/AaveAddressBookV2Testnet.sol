@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Market, Token} from "./AaveV2.sol";
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Market, Token} from "./AaveV2.sol";
 
 library AaveAddressBookV2Testnet {
     string public constant AaveV2Mumbai = "AaveV2Mumbai";
@@ -26,6 +26,9 @@ library AaveAddressBookV2Testnet {
                         0xc3c37E2aA3dc66464fa3C29ce2a6EC85beFC45e1
                     ),
                     IAaveOracle(0xC365C653f7229894F93994CD0b30947Ab69Ff1D5),
+                    IAaveProtocolDataProvider(
+                        0xFA3bD19110d986c5e5E9DD5F69362d05035D045B
+                    ),
                     0x943E44157dC0302a5CEb172374d1749018a00994,
                     0x943E44157dC0302a5CEb172374d1749018a00994
                 );
@@ -43,6 +46,9 @@ library AaveAddressBookV2Testnet {
                         0x4ceBAFAAcc6Cb26FD90E4cDe138Eb812442bb5f3
                     ),
                     IAaveOracle(0xfa4f5B081632c4709667D467F817C09d9008A46A),
+                    IAaveProtocolDataProvider(
+                        0x0668EDE013c1c475724523409b8B6bE633469585
+                    ),
                     0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e,
                     0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e
                 );

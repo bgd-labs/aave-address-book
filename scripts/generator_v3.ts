@@ -21,6 +21,7 @@ export async function generateMarketV3(market: Market) {
     const oracle = await contract.getPriceOracle();
     const admin = await contract.owner();
     const aclAdmin = await contract.getACLAdmin();
+    const poolDataProvider = await contract.getPoolDataProvider();
 
     const lendingPoolContract = new ethers.Contract(
       pool,
@@ -50,7 +51,7 @@ export async function generateMarketV3(market: Market) {
     const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, Token} from "./AaveV3.sol";
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token} from "./AaveV3.sol";
   
   
   library ${market.name} {
@@ -67,12 +68,12 @@ export async function generateMarketV3(market: Market) {
   
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
+
+      IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider(${poolDataProvider});
   
-      address internal constant POOL_ADMIN =
-          ${admin};
+      address internal constant POOL_ADMIN = ${admin};
   
-      address internal constant ACL_ADMIN =
-          ${aclAdmin};
+      address internal constant ACL_ADMIN = ${aclAdmin};
   
       function getToken(string calldata token) public pure returns(Token memory m) {
         ${tokenList.reduce((acc, token, ix) => {
@@ -146,6 +147,7 @@ export async function generateMarketV3(market: Market) {
       admin,
       aclAdmin,
       tokenList,
+      poolDataProvider,
       ...market,
     };
   } catch (error: any) {
@@ -160,6 +162,7 @@ interface MarketV3 extends Market {
   poolConfigurator: string;
   oracle: string;
   admin: string;
+  poolDataProvider: string;
   aclAdmin: string;
   tokenList: Token[];
 }
@@ -171,7 +174,7 @@ export async function generateIndexFileV3(
   const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, Token, Market} from "./AaveV3.sol";
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token, Market} from "./AaveV3.sol";
   
   library AaveAddressBookV3${testnet ? "Testnet" : ""} {
   ${markets.reduce((acc, market) => {
@@ -193,6 +196,7 @@ export async function generateIndexFileV3(
                   IPool(${market.pool}),
                   IPoolConfigurator(${market.poolConfigurator}),
                   IAaveOracle(${market.oracle}),
+                  IAaveProtocolDataProvider(${market.poolDataProvider}),
                   ${market.admin},
                   ${market.aclAdmin}
               );

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Market, Token} from "./AaveV2.sol";
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Market, Token} from "./AaveV2.sol";
 
 library AaveAddressBookV2 {
     string public constant AaveV2Eth = "AaveV2Eth";
@@ -28,6 +28,9 @@ library AaveAddressBookV2 {
                         0x311Bb771e4F8952E6Da169b425E7e92d6Ac45756
                     ),
                     IAaveOracle(0xA50ba011c48153De246E5192C8f9258A2ba79Ca9),
+                    IAaveProtocolDataProvider(
+                        0x057835Ad21a177dbdd3090bB1CAE03EaCF78Fc6d
+                    ),
                     0xEE56e2B3D491590B5b31738cC34d5232F378a8D5,
                     0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633
                 );
@@ -45,6 +48,9 @@ library AaveAddressBookV2 {
                         0x23A875eDe3F1030138701683e42E9b16A7F87768
                     ),
                     IAaveOracle(0xA50ba011c48153De246E5192C8f9258A2ba79Ca9),
+                    IAaveProtocolDataProvider(
+                        0x0000000000000000000000000000000000000000
+                    ),
                     0xEE56e2B3D491590B5b31738cC34d5232F378a8D5,
                     0xB9062896ec3A615a4e4444DF183F0531a77218AE
                 );
@@ -62,6 +68,9 @@ library AaveAddressBookV2 {
                         0x26db2B833021583566323E3b8985999981b9F1F3
                     ),
                     IAaveOracle(0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d),
+                    IAaveProtocolDataProvider(
+                        0x7551b5D2763519d4e37e8B81929D336De671d46d
+                    ),
                     0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
                     0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58
                 );
@@ -79,6 +88,9 @@ library AaveAddressBookV2 {
                         0x230B618aD4C475393A7239aE03630042281BD86e
                     ),
                     IAaveOracle(0xdC336Cd4769f4cC7E9d726DA53e6d3fC710cEB89),
+                    IAaveProtocolDataProvider(
+                        0x65285E9dfab318f57051ab2b139ccCf232945451
+                    ),
                     0x01244E7842254e3FD229CD263472076B1439D1Cd,
                     0x01244E7842254e3FD229CD263472076B1439D1Cd
                 );

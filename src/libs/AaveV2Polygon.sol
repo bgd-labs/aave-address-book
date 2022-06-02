@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, Token} from "./AaveV2.sol";
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token} from "./AaveV2.sol";
 
 library AaveV2Polygon {
     ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -17,6 +17,9 @@ library AaveV2Polygon {
 
     IAaveOracle internal constant ORACLE =
         IAaveOracle(0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d);
+
+    IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+        IAaveProtocolDataProvider(0x7551b5D2763519d4e37e8B81929D336De671d46d);
 
     address internal constant POOL_ADMIN =
         0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
