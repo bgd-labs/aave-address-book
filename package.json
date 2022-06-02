@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "generate": "node generator.js",
+    "prettier": "prettier --write 'src/**/*.sol'",
+    "generate": "ts-node scripts/generator.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,12 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "dependencies": {
-    "ethers": "^5.6.5"
+    "ethers": "^5.6.5",
+    "ts-node": "^10.8.0"
+  },
+  "devDependencies": {
+    "@types/prettier": "^2.6.3",
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19"
   }
 }

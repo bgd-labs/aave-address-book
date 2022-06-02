@@ -1,177 +1,817 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle} from "./AaveV3.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token, Market} from "./AaveV3.sol";
 
 library AaveAddressBookV3 {
-    string public constant AaveV3Rinkeby = 'AaveV3Rinkeby';
-    string public constant AaveV3Mumbai = 'AaveV3Mumbai';
-    string public constant AaveV3Polygon = 'AaveV3Polygon';
-    string public constant AaveV3Fuji = 'AaveV3Fuji';
-    string public constant AaveV3Avalanche = 'AaveV3Avalanche';
-    string public constant AaveV3ArbitrumRinkeby = 'AaveV3ArbitrumRinkeby';
-    string public constant AaveV3Arbitrum = 'AaveV3Arbitrum';
-    string public constant AaveV3FantomTestnet = 'AaveV3FantomTestnet';
-    string public constant AaveV3Fantom = 'AaveV3Fantom';
-    string public constant AaveV3HarmonyTestnet = 'AaveV3HarmonyTestnet';
-    string public constant AaveV3Harmony = 'AaveV3Harmony';
-    string public constant AaveV3OptimismKovan = 'AaveV3OptimismKovan';
-    string public constant AaveV3Optimism = 'AaveV3Optimism';
+    string public constant AaveV3Polygon = "AaveV3Polygon";
+    string public constant AaveV3Avalanche = "AaveV3Avalanche";
+    string public constant AaveV3Arbitrum = "AaveV3Arbitrum";
+    string public constant AaveV3Fantom = "AaveV3Fantom";
+    string public constant AaveV3Harmony = "AaveV3Harmony";
+    string public constant AaveV3Optimism = "AaveV3Optimism";
 
-
-    struct Market {
-        IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-        IPool POOL;
-        IPoolConfigurator POOL_CONFIGURATOR;
-        IAaveOracle ORACLE;
-        address POOL_ADMIN;
-        address ACL_ADMIN;
+    function getMarket(string calldata market)
+        public
+        pure
+        returns (Market memory m)
+    {
+        if (
+            keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3Polygon)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
+                    ),
+                    IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
+                    IPoolConfigurator(
+                        0x8145eddDf43f50276641b55bd3AD95944510021E
+                    ),
+                    IAaveOracle(0xb023e699F5a33916Ea823A16485e259257cA8Bd1),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
+                    0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
+                    0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
+                );
+        } else if (
+            keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3Avalanche)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
+                    ),
+                    IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
+                    IPoolConfigurator(
+                        0x8145eddDf43f50276641b55bd3AD95944510021E
+                    ),
+                    IAaveOracle(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
+                    0xa35b76E4935449E33C56aB24b23fcd3246f13470,
+                    0xa35b76E4935449E33C56aB24b23fcd3246f13470
+                );
+        } else if (
+            keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3Arbitrum)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
+                    ),
+                    IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
+                    IPoolConfigurator(
+                        0x8145eddDf43f50276641b55bd3AD95944510021E
+                    ),
+                    IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
+                    0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb,
+                    0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb
+                );
+        } else if (
+            keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3Fantom)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
+                    ),
+                    IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
+                    IPoolConfigurator(
+                        0x8145eddDf43f50276641b55bd3AD95944510021E
+                    ),
+                    IAaveOracle(0xfd6f3c1845604C8AE6c6E402ad17fb9885160754),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
+                    0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949,
+                    0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949
+                );
+        } else if (
+            keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3Harmony)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
+                    ),
+                    IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
+                    IPoolConfigurator(
+                        0x8145eddDf43f50276641b55bd3AD95944510021E
+                    ),
+                    IAaveOracle(0x3C90887Ede8D65ccb2777A5d577beAb2548280AD),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
+                    0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D,
+                    0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D
+                );
+        } else if (
+            keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3Optimism)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
+                    ),
+                    IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
+                    IPoolConfigurator(
+                        0x8145eddDf43f50276641b55bd3AD95944510021E
+                    ),
+                    IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77),
+                    IAaveProtocolDataProvider(
+                        0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+                    ),
+                    0xE50c8C619d05ff98b22Adf991F17602C774F785c,
+                    0xE50c8C619d05ff98b22Adf991F17602C774F785c
+                );
+        } else revert("Market does not exist");
     }
 
-    function getMarket(string calldata market) public pure returns(Market memory m) {
-        if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Rinkeby)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xBA6378f1c1D046e9EB0F538560BA7558546edF3C
-                ),
-                IPool(0xE039BdF1d874d27338e09B55CB09879Dedca52D8),
-                IPoolConfigurator(0x11E9F019FCC15AccB472Aa49C8fc0c61949c86d5),
-                IAaveOracle(0xA323726989db5708B19EAd4A494dDe09F3cEcc69),
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Mumbai)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0x5343b5bA672Ae99d627A1C87866b8E53F47Db2E6
-                ),
-                IPool(0x6C9fB0D5bD9429eb9Cd96B85B81d872281771E6B),
-                IPoolConfigurator(0x7b47e727eC539CB74A744ae5259ef26743294fca),
-                IAaveOracle(0x520D14AE678b41067f029Ad770E2870F85E76588),
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Polygon)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
-                ),
-                IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
-                IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E),
-                IAaveOracle(0xb023e699F5a33916Ea823A16485e259257cA8Bd1),
-                0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
-                0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Fuji)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0x1775ECC8362dB6CaB0c7A9C0957cF656A5276c29
-                ),
-                IPool(0xb47673b7a73D78743AFF1487AF69dBB5763F00cA),
-                IPoolConfigurator(0x01743372F0F0318AaDF690f960A4c6c4eab58782),
-                IAaveOracle(0xAc6D153BF94aFBdC296e72163735B0f94581F736),
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Avalanche)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
-                ),
-                IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
-                IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E),
-                IAaveOracle(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C),
-                0xa35b76E4935449E33C56aB24b23fcd3246f13470,
-                0xa35b76E4935449E33C56aB24b23fcd3246f13470
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3ArbitrumRinkeby)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xF7158D1412Bdc8EAfc6BF97DB4e2178379c9521c
-                ),
-                IPool(0x9C55a3C34de5fd46004Fa44a55490108f7cE388F),
-                IPoolConfigurator(0xCf7e77c25e04d5F44AA20C505fbda04BFCF60c0b),
-                IAaveOracle(0x2560A04c24E8870bB12eE7A9E2DcC4186362F3A1),
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Arbitrum)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
-                ),
-                IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
-                IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E),
-                IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7),
-                0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb,
-                0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3FantomTestnet)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xE339D30cBa24C70dCCb82B234589E3C83249e658
-                ),
-                IPool(0x771A45a19cE333a19356694C5fc80c76fe9bc741),
-                IPoolConfigurator(0x59B84a6C943dD655D9E3B4024fC6AdC0E3f4Ff60),
-                IAaveOracle(0xA840C768f7143495790eC8dc2D5f32B71B6Dc113),
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Fantom)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
-                ),
-                IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
-                IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E),
-                IAaveOracle(0xfd6f3c1845604C8AE6c6E402ad17fb9885160754),
-                0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949,
-                0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3HarmonyTestnet)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xd19443202328A66875a51560c28276868B8C61C2
-                ),
-                IPool(0x85C1F3f1bB439180f7Bfda9DFD61De82e10bD554),
-                IPoolConfigurator(0xdb903B5a28260E87cF1d8B56740a90Dba1c8fe15),
-                IAaveOracle(0x29Ff3c19C6853A0b6544b3CC241c360f422aBaD1),
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Harmony)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
-                ),
-                IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
-                IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E),
-                IAaveOracle(0x3C90887Ede8D65ccb2777A5d577beAb2548280AD),
-                0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D,
-                0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3OptimismKovan)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xD15d36975A0200D11B8a8964F4F267982D2a1cFe
-                ),
-                IPool(0x139d8F557f70D1903787e929D7C42165c4667229),
-                IPoolConfigurator(0x12F6E19b968e34fEE34763469c7EAf902Af6914B),
-                IAaveOracle(0xce87225e5A0ABFe6241C6A60158840d509a84B47),
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                0x77c45699A715A64A7a7796d5CEe884cf617D5254
-            );
-        } else if (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((AaveV3Optimism)))) {
-            return Market(
-                IPoolAddressesProvider(
-                    0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
-                ),
-                IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD),
-                IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E),
-                IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77),
-                0xE50c8C619d05ff98b22Adf991F17602C774F785c,
-                0xE50c8C619d05ff98b22Adf991F17602C774F785c
-            );
-        } else revert('Market does not exist');
+    function getToken(string calldata market, string calldata token)
+        public
+        pure
+        returns (Token memory m)
+    {
+        if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV3Polygon))
+        ) {
+            if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("DAI"))
+            ) {
+                return
+                    Token(
+                        0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063,
+                        0x0000000000000000000000000000000000000000,
+                        0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE,
+                        0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("LINK"))
+            ) {
+                return
+                    Token(
+                        0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39,
+                        0x0000000000000000000000000000000000000001,
+                        0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530,
+                        0x89D976629b7055ff1ca02b927BA3e020F22A44e4
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDC"))
+            ) {
+                return
+                    Token(
+                        0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174,
+                        0x0000000000000000000000000000000000000002,
+                        0x625E7708f30cA75bfd92586e17077590C60eb4cD,
+                        0x307ffe186F84a3bc2613D1eA417A5737D69A7007
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WBTC"))
+            ) {
+                return
+                    Token(
+                        0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6,
+                        0x0000000000000000000000000000000000000003,
+                        0x078f358208685046a11C85e8ad32895DED33A249,
+                        0x633b207Dd676331c413D4C013a6294B0FE47cD0e
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WETH"))
+            ) {
+                return
+                    Token(
+                        0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619,
+                        0x0000000000000000000000000000000000000004,
+                        0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8,
+                        0xD8Ad37849950903571df17049516a5CD4cbE55F6
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDT"))
+            ) {
+                return
+                    Token(
+                        0xc2132D05D31c914a87C6611C10748AEb04B58e8F,
+                        0x0000000000000000000000000000000000000005,
+                        0x6ab707Aca953eDAeFBc4fD23bA73294241490620,
+                        0x70eFfc565DB6EEf7B927610155602d31b670e802
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("AAVE"))
+            ) {
+                return
+                    Token(
+                        0xD6DF932A45C0f255f85145f286eA0b292B21C90B,
+                        0x0000000000000000000000000000000000000006,
+                        0xf329e36C7bF6E5E86ce2150875a84Ce77f477375,
+                        0xfAeF6A702D15428E588d4C0614AEFb4348D83D48
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WMATIC"))
+            ) {
+                return
+                    Token(
+                        0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270,
+                        0x0000000000000000000000000000000000000007,
+                        0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97,
+                        0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("CRV"))
+            ) {
+                return
+                    Token(
+                        0x172370d5Cd63279eFa6d502DAB29171933a610AF,
+                        0x0000000000000000000000000000000000000008,
+                        0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf,
+                        0x08Cb71192985E936C7Cd166A8b268035e400c3c3
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("SUSHI"))
+            ) {
+                return
+                    Token(
+                        0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a,
+                        0x0000000000000000000000000000000000000009,
+                        0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA,
+                        0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("GHST"))
+            ) {
+                return
+                    Token(
+                        0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7,
+                        0x000000000000000000000000000000000000000A,
+                        0x8Eb270e296023E9D92081fdF967dDd7878724424,
+                        0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("BAL"))
+            ) {
+                return
+                    Token(
+                        0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3,
+                        0x000000000000000000000000000000000000000b,
+                        0x8ffDf2DE812095b1D19CB146E4c004587C0A0692,
+                        0xa5e408678469d23efDB7694b1B0A85BB0669e8bd
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("DPI"))
+            ) {
+                return
+                    Token(
+                        0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369,
+                        0x000000000000000000000000000000000000000C,
+                        0x724dc807b04555b71ed48a6896b6F41593b8C637,
+                        0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("EURS"))
+            ) {
+                return
+                    Token(
+                        0xE111178A87A3BFf0c8d18DECBa5798827539Ae99,
+                        0x000000000000000000000000000000000000000d,
+                        0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5,
+                        0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("jEUR"))
+            ) {
+                return
+                    Token(
+                        0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c,
+                        0x000000000000000000000000000000000000000E,
+                        0x6533afac2E7BCCB20dca161449A13A32D391fb00,
+                        0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("agEUR"))
+            ) {
+                return
+                    Token(
+                        0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4,
+                        0x000000000000000000000000000000000000000F,
+                        0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77,
+                        0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF
+                    );
+            } else revert("Token does not exist");
+        } else if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV3Avalanche))
+        ) {
+            if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("DAI.e"))
+            ) {
+                return
+                    Token(
+                        0xd586E7F844cEa2F87f50152665BCbc2C279D8d70,
+                        0x0000000000000000000000000000000000000000,
+                        0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE,
+                        0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("LINK.e"))
+            ) {
+                return
+                    Token(
+                        0x5947BB275c521040051D82396192181b413227A3,
+                        0x0000000000000000000000000000000000000001,
+                        0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530,
+                        0x89D976629b7055ff1ca02b927BA3e020F22A44e4
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDC"))
+            ) {
+                return
+                    Token(
+                        0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E,
+                        0x0000000000000000000000000000000000000002,
+                        0x625E7708f30cA75bfd92586e17077590C60eb4cD,
+                        0x307ffe186F84a3bc2613D1eA417A5737D69A7007
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WBTC.e"))
+            ) {
+                return
+                    Token(
+                        0x50b7545627a5162F82A992c33b87aDc75187B218,
+                        0x0000000000000000000000000000000000000003,
+                        0x078f358208685046a11C85e8ad32895DED33A249,
+                        0x633b207Dd676331c413D4C013a6294B0FE47cD0e
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WETH.e"))
+            ) {
+                return
+                    Token(
+                        0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB,
+                        0x0000000000000000000000000000000000000004,
+                        0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8,
+                        0xD8Ad37849950903571df17049516a5CD4cbE55F6
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDt"))
+            ) {
+                return
+                    Token(
+                        0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7,
+                        0x0000000000000000000000000000000000000005,
+                        0x6ab707Aca953eDAeFBc4fD23bA73294241490620,
+                        0x70eFfc565DB6EEf7B927610155602d31b670e802
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("AAVE.e"))
+            ) {
+                return
+                    Token(
+                        0x63a72806098Bd3D9520cC43356dD78afe5D386D9,
+                        0x0000000000000000000000000000000000000006,
+                        0xf329e36C7bF6E5E86ce2150875a84Ce77f477375,
+                        0xfAeF6A702D15428E588d4C0614AEFb4348D83D48
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WAVAX"))
+            ) {
+                return
+                    Token(
+                        0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7,
+                        0x0000000000000000000000000000000000000007,
+                        0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97,
+                        0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E
+                    );
+            } else revert("Token does not exist");
+        } else if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV3Arbitrum))
+        ) {
+            if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("DAI"))
+            ) {
+                return
+                    Token(
+                        0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1,
+                        0x0000000000000000000000000000000000000000,
+                        0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE,
+                        0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("LINK"))
+            ) {
+                return
+                    Token(
+                        0xf97f4df75117a78c1A5a0DBb814Af92458539FB4,
+                        0x0000000000000000000000000000000000000001,
+                        0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530,
+                        0x89D976629b7055ff1ca02b927BA3e020F22A44e4
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDC"))
+            ) {
+                return
+                    Token(
+                        0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8,
+                        0x0000000000000000000000000000000000000002,
+                        0x625E7708f30cA75bfd92586e17077590C60eb4cD,
+                        0x307ffe186F84a3bc2613D1eA417A5737D69A7007
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WBTC"))
+            ) {
+                return
+                    Token(
+                        0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f,
+                        0x0000000000000000000000000000000000000003,
+                        0x078f358208685046a11C85e8ad32895DED33A249,
+                        0x633b207Dd676331c413D4C013a6294B0FE47cD0e
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WETH"))
+            ) {
+                return
+                    Token(
+                        0x82aF49447D8a07e3bd95BD0d56f35241523fBab1,
+                        0x0000000000000000000000000000000000000004,
+                        0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8,
+                        0xD8Ad37849950903571df17049516a5CD4cbE55F6
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDT"))
+            ) {
+                return
+                    Token(
+                        0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9,
+                        0x0000000000000000000000000000000000000005,
+                        0x6ab707Aca953eDAeFBc4fD23bA73294241490620,
+                        0x70eFfc565DB6EEf7B927610155602d31b670e802
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("AAVE"))
+            ) {
+                return
+                    Token(
+                        0xba5DdD1f9d7F570dc94a51479a000E3BCE967196,
+                        0x0000000000000000000000000000000000000006,
+                        0xf329e36C7bF6E5E86ce2150875a84Ce77f477375,
+                        0xfAeF6A702D15428E588d4C0614AEFb4348D83D48
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("EURS"))
+            ) {
+                return
+                    Token(
+                        0xD22a58f79e9481D1a88e00c343885A588b34b68B,
+                        0x0000000000000000000000000000000000000007,
+                        0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97,
+                        0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E
+                    );
+            } else revert("Token does not exist");
+        } else if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV3Fantom))
+        ) {
+            if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("DAI"))
+            ) {
+                return
+                    Token(
+                        0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E,
+                        0x0000000000000000000000000000000000000000,
+                        0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE,
+                        0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("LINK"))
+            ) {
+                return
+                    Token(
+                        0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8,
+                        0x0000000000000000000000000000000000000001,
+                        0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530,
+                        0x89D976629b7055ff1ca02b927BA3e020F22A44e4
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDC"))
+            ) {
+                return
+                    Token(
+                        0x04068DA6C83AFCFA0e13ba15A6696662335D5B75,
+                        0x0000000000000000000000000000000000000002,
+                        0x625E7708f30cA75bfd92586e17077590C60eb4cD,
+                        0x307ffe186F84a3bc2613D1eA417A5737D69A7007
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("BTC"))
+            ) {
+                return
+                    Token(
+                        0x321162Cd933E2Be498Cd2267a90534A804051b11,
+                        0x0000000000000000000000000000000000000003,
+                        0x078f358208685046a11C85e8ad32895DED33A249,
+                        0x633b207Dd676331c413D4C013a6294B0FE47cD0e
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("ETH"))
+            ) {
+                return
+                    Token(
+                        0x74b23882a30290451A17c44f4F05243b6b58C76d,
+                        0x0000000000000000000000000000000000000004,
+                        0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8,
+                        0xD8Ad37849950903571df17049516a5CD4cbE55F6
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("fUSDT"))
+            ) {
+                return
+                    Token(
+                        0x049d68029688eAbF473097a2fC38ef61633A3C7A,
+                        0x0000000000000000000000000000000000000005,
+                        0x6ab707Aca953eDAeFBc4fD23bA73294241490620,
+                        0x70eFfc565DB6EEf7B927610155602d31b670e802
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("AAVE"))
+            ) {
+                return
+                    Token(
+                        0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B,
+                        0x0000000000000000000000000000000000000006,
+                        0xf329e36C7bF6E5E86ce2150875a84Ce77f477375,
+                        0xfAeF6A702D15428E588d4C0614AEFb4348D83D48
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WFTM"))
+            ) {
+                return
+                    Token(
+                        0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83,
+                        0x0000000000000000000000000000000000000007,
+                        0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97,
+                        0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("CRV"))
+            ) {
+                return
+                    Token(
+                        0x1E4F97b9f9F913c46F1632781732927B9019C68b,
+                        0x0000000000000000000000000000000000000008,
+                        0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf,
+                        0x08Cb71192985E936C7Cd166A8b268035e400c3c3
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("SUSHI"))
+            ) {
+                return
+                    Token(
+                        0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC,
+                        0x0000000000000000000000000000000000000009,
+                        0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA,
+                        0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841
+                    );
+            } else revert("Token does not exist");
+        } else if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV3Harmony))
+        ) {
+            if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("1DAI"))
+            ) {
+                return
+                    Token(
+                        0xEf977d2f931C1978Db5F6747666fa1eACB0d0339,
+                        0x0000000000000000000000000000000000000000,
+                        0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE,
+                        0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("LINK"))
+            ) {
+                return
+                    Token(
+                        0x218532a12a389a4a92fC0C5Fb22901D1c19198aA,
+                        0x0000000000000000000000000000000000000001,
+                        0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530,
+                        0x89D976629b7055ff1ca02b927BA3e020F22A44e4
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("1USDC"))
+            ) {
+                return
+                    Token(
+                        0x985458E523dB3d53125813eD68c274899e9DfAb4,
+                        0x0000000000000000000000000000000000000002,
+                        0x625E7708f30cA75bfd92586e17077590C60eb4cD,
+                        0x307ffe186F84a3bc2613D1eA417A5737D69A7007
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("1WBTC"))
+            ) {
+                return
+                    Token(
+                        0x3095c7557bCb296ccc6e363DE01b760bA031F2d9,
+                        0x0000000000000000000000000000000000000003,
+                        0x078f358208685046a11C85e8ad32895DED33A249,
+                        0x633b207Dd676331c413D4C013a6294B0FE47cD0e
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("1ETH"))
+            ) {
+                return
+                    Token(
+                        0x6983D1E6DEf3690C4d616b13597A09e6193EA013,
+                        0x0000000000000000000000000000000000000004,
+                        0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8,
+                        0xD8Ad37849950903571df17049516a5CD4cbE55F6
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("1USDT"))
+            ) {
+                return
+                    Token(
+                        0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f,
+                        0x0000000000000000000000000000000000000005,
+                        0x6ab707Aca953eDAeFBc4fD23bA73294241490620,
+                        0x70eFfc565DB6EEf7B927610155602d31b670e802
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("1AAVE"))
+            ) {
+                return
+                    Token(
+                        0xcF323Aad9E522B93F11c352CaA519Ad0E14eB40F,
+                        0x0000000000000000000000000000000000000006,
+                        0xf329e36C7bF6E5E86ce2150875a84Ce77f477375,
+                        0xfAeF6A702D15428E588d4C0614AEFb4348D83D48
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WONE"))
+            ) {
+                return
+                    Token(
+                        0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a,
+                        0x0000000000000000000000000000000000000007,
+                        0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97,
+                        0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E
+                    );
+            } else revert("Token does not exist");
+        } else if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV3Optimism))
+        ) {
+            if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("DAI"))
+            ) {
+                return
+                    Token(
+                        0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1,
+                        0x0000000000000000000000000000000000000000,
+                        0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE,
+                        0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("LINK"))
+            ) {
+                return
+                    Token(
+                        0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6,
+                        0x0000000000000000000000000000000000000001,
+                        0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530,
+                        0x89D976629b7055ff1ca02b927BA3e020F22A44e4
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDC"))
+            ) {
+                return
+                    Token(
+                        0x7F5c764cBc14f9669B88837ca1490cCa17c31607,
+                        0x0000000000000000000000000000000000000002,
+                        0x625E7708f30cA75bfd92586e17077590C60eb4cD,
+                        0x307ffe186F84a3bc2613D1eA417A5737D69A7007
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WBTC"))
+            ) {
+                return
+                    Token(
+                        0x68f180fcCe6836688e9084f035309E29Bf0A2095,
+                        0x0000000000000000000000000000000000000003,
+                        0x078f358208685046a11C85e8ad32895DED33A249,
+                        0x633b207Dd676331c413D4C013a6294B0FE47cD0e
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("WETH"))
+            ) {
+                return
+                    Token(
+                        0x4200000000000000000000000000000000000006,
+                        0x0000000000000000000000000000000000000004,
+                        0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8,
+                        0xD8Ad37849950903571df17049516a5CD4cbE55F6
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("USDT"))
+            ) {
+                return
+                    Token(
+                        0x94b008aA00579c1307B0EF2c499aD98a8ce58e58,
+                        0x0000000000000000000000000000000000000005,
+                        0x6ab707Aca953eDAeFBc4fD23bA73294241490620,
+                        0x70eFfc565DB6EEf7B927610155602d31b670e802
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("AAVE"))
+            ) {
+                return
+                    Token(
+                        0x76FB31fb4af56892A25e32cFC43De717950c9278,
+                        0x0000000000000000000000000000000000000006,
+                        0xf329e36C7bF6E5E86ce2150875a84Ce77f477375,
+                        0xfAeF6A702D15428E588d4C0614AEFb4348D83D48
+                    );
+            } else if (
+                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked("sUSD"))
+            ) {
+                return
+                    Token(
+                        0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9,
+                        0x0000000000000000000000000000000000000007,
+                        0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97,
+                        0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E
+                    );
+            } else revert("Token does not exist");
+        } else revert("Market does not exist");
     }
 }
