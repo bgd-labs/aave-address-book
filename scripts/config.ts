@@ -48,7 +48,7 @@ export const markets: Market[] = [
     testnet: true,
   },
   {
-    name: "AaveV2Eth",
+    name: "AaveV2Ethereum",
     rpc: MAINNET_RPC,
     addressProvider: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5",
     version: 2,
@@ -61,7 +61,7 @@ export const markets: Market[] = [
   //     testnet: true,
   //   },
   {
-    name: "AaveV2EthAMM",
+    name: "AaveV2EthereumAMM",
     rpc: MAINNET_RPC,
     addressProvider: "0xacc030ef66f9dfeae9cbb0cd1b25654b82cfa8d5",
     version: 2,

@@ -4,8 +4,8 @@ pragma solidity >=0.6.0;
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Market, Token} from "./AaveV2.sol";
 
 library AaveAddressBookV2 {
-    string public constant AaveV2Eth = "AaveV2Eth";
-    string public constant AaveV2EthAMM = "AaveV2EthAMM";
+    string public constant AaveV2Ethereum = "AaveV2Ethereum";
+    string public constant AaveV2EthereumAMM = "AaveV2EthereumAMM";
     string public constant AaveV2Polygon = "AaveV2Polygon";
     string public constant AaveV2Avalanche = "AaveV2Avalanche";
 
@@ -16,7 +16,7 @@ library AaveAddressBookV2 {
     {
         if (
             keccak256(abi.encodePacked(market)) ==
-            keccak256(abi.encodePacked(AaveV2Eth))
+            keccak256(abi.encodePacked(AaveV2Ethereum))
         ) {
             return
                 Market(
@@ -36,7 +36,7 @@ library AaveAddressBookV2 {
                 );
         } else if (
             keccak256(abi.encodePacked(market)) ==
-            keccak256(abi.encodePacked(AaveV2EthAMM))
+            keccak256(abi.encodePacked(AaveV2EthereumAMM))
         ) {
             return
                 Market(
@@ -104,7 +104,7 @@ library AaveAddressBookV2 {
     {
         if (
             keccak256(abi.encodePacked(market)) ==
-            keccak256(abi.encodePacked(AaveV2Eth))
+            keccak256(abi.encodePacked(AaveV2Ethereum))
         ) {
             if (
                 keccak256(abi.encodePacked(token)) ==
@@ -483,7 +483,7 @@ library AaveAddressBookV2 {
             } else revert("Token does not exist");
         } else if (
             keccak256(abi.encodePacked(market)) ==
-            keccak256(abi.encodePacked(AaveV2EthAMM))
+            keccak256(abi.encodePacked(AaveV2EthereumAMM))
         ) {
             if (
                 keccak256(abi.encodePacked(token)) ==

@@ -138,7 +138,11 @@ export async function generateMarketV3(market: Market) {
           assertEq(${market.name}.ACL_ADMIN, address(0));
       }
   }\r\n`;
-    fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV3);
+    const testPath = `./src/test/${market.name}.t.sol`;
+    fs.writeFileSync(
+      testPath,
+      prettier.format(testTemplateV3, { filepath: testPath })
+    );
 
     return {
       pool,
