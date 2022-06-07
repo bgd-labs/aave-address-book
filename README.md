@@ -20,15 +20,40 @@ You will be able to import on any Solidity file any collection of addresses per 
 import {AaveV2Ethereum} from "aave-address-book/AaveAddressBook.sol"
 ```
 
-You can use this library in two ways:
 
-### Testing
 
-In tests it's useful to have a generic way to import different markets and tokens across networks. Sometimes it also makes sense to fetch a specific token on a network. To streamline this process there is a generic `AaveAddressBookV2` and `AaveAddressBookV3` entrypoint which contains a `getMarket(marketName: string)` and a `getToken(marketName: string, token: string)` function allowing you to fetch any market and token. We don't recommend using these libraries in production code though as they are quite gas & code-size intensive.
+### Usage in production
 
-### Production
+For production code we recommend to use market specific libraries (`Aave[Version][Network][?SubMarket]`) exported from `AaveAddressBook` like `AaveV2Ethereum` for the `V2` `Ethereum` market. These entrypoints contain constants for all the immutable market specific addresses.
 
-For production code we recommend to use market specific entry-points (`Aave[Version][Network][?SubMarket]`) exported from `AaveAddressBook` like `AaveV2Ethereum` for the `V2` `Ethereum` market. These entrypoint contain constants for all the immutable market specific addresses.
+Each market consists of the following constants:
+
+```sh
+// v2 libraries
+POOL_ADDRESSES_PROVIDER = ILendingPoolAddressesProvider;
+POOL = ILendingPool;
+POOL_CONFIGURATOR = ILendingPoolConfigurator;
+ORACLE = IAaveOracle;
+AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider;
+POOL_ADMIN = address;
+EMERGENCY_ADMIN = address;
+```
+
+```sh
+// v3 libraries
+POOL_ADDRESSES_PROVIDER = IPoolAddressesProvider;
+POOL = IPool;
+POOL_CONFIGURATOR = IPoolConfigurator;
+ORACLE = IAaveOracle;
+AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider;
+POOL_ADMIN = address;
+ACL_ADMIN = address;
+```
+
+### Usage in tests
+
+In tests it's useful to have a generic way to import different markets and tokens across networks. Sometimes it also makes sense to fetch a specific token on a network. To streamline this process there is a generic `AaveAddressBookV2` and `AaveAddressBookV3` entrypoint which contains a `getMarket(marketName: string): Market` and a `getToken(marketName: string, symbol: string): Token` function allowing you to fetch any market and token. The returned `Market` is a struct following the same layout as the market specific libraries.
+**We don't recommend using these generic libraries in production code though as they are quite gas & code-size intensive.**
 
 ## Running this repository
 
