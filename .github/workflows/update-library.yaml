@@ -1,0 +1,49 @@
+name: Update library
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  push:
+    paths-ignore:
+      - "src/**"
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  check-proposals:
+    name: Check if library is up to date
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "yarn"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Generate library
+        run: yarn generate
+
+      - name: check diff and potentially commit
+        run: |
+          if [[ -z $(git status -s) ]]
+          then
+            echo "tree is clean"
+          else
+            git config --global user.name 'Cache bot'
+            git config --global user.email 'cache-bot@bgdlabs.com'
+            git pull origin main
+            git add reports
+            git commit -am "fix(cache): automated cache update"
+            git push
+          exit
+          fi
