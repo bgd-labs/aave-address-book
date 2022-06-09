@@ -52,8 +52,34 @@ ACL_ADMIN = address;
 
 ### Usage in tests
 
-In tests it's useful to have a generic way to import different markets and tokens across networks. Sometimes it also makes sense to fetch a specific token on a network. To streamline this process there is a generic `AaveAddressBookV2` and `AaveAddressBookV3` entrypoint which contains a `getMarket(marketName: string): Market` and a `getToken(marketName: string, symbol: string): Token` function allowing you to fetch any market and token. The returned `Market` is a struct following the same layout as the market specific libraries.
-**We don't recommend using these generic libraries in production code though as they are quite gas & code-size intensive.**
+In tests it's sometimes useful to have a generic way to import different markets across networks. Therefore the `address book` provides generic entrypoints allowing to access multiple markets and networks.
+```solidity
+Market memory v2market = AaveAddressBookV2.getMarket(marketName);
+Market memory v2testnetmarket = AaveAddressBookV2Testnet.getMarket(marketName);
+Market memory v3market = AaveAddressBookV3.getMarket(marketName);
+Market memory v3testnetmarket = AaveAddressBookV3Testnet.getMarket(marketName);
+```
+The returned `Market` is a struct following the same layout as the market specific libraries.  
+
+Sometimes it also makes sense to fetch a specific token on a network.
+To streamline this process there is a generic `getToken(marketName: string, symbol: string): Token` function allowing you to fetch any currently listed token from a market. 
+```solidity
+// struct Token {
+//   address underlyingAsset;
+//   address aTokenAddress;
+//   address stableDebtTokenAddress;
+//   address variableDebtTokenAddress;
+// }
+Token memory token = AaveAddressBookV2.getMarket(AaveAddressBookV2.AaveV2Ethereum, 'DAI');
+```
+
+On market specific library entry-points the `getToken` function doesn't require the `marketName` parameter.
+```solidity
+Token memory token = AaveV2Ethereum.getMarket('DAI');
+```
+
+**We don't recommend using these generic libraries in production code as they are quite gas & code-size intensive.**
+
 
 ## Running this repository
 
