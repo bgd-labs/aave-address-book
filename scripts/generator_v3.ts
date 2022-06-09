@@ -79,7 +79,7 @@ export async function generateMarketV3(market: Market) {
         ${tokenList.reduce((acc, token, ix) => {
           const isLast = ix === tokenList.length - 1;
           const start = ix === 0 ? "        if" : " else if";
-          acc += `${start} (keccak256(abi.encodePacked(token)) == keccak256(abi.encodePacked("${
+          acc += `${start} (keccak256(abi.encodePacked(symbol)) == keccak256(abi.encodePacked("${
             token.symbol
           }"))) {
                     return Token(

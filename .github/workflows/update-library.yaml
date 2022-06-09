@@ -42,7 +42,7 @@ jobs:
             git config --global user.name 'Cache bot'
             git config --global user.email 'cache-bot@bgdlabs.com'
             git pull origin main
-            git add reports
+            git add src
             git commit -am "fix(cache): automated cache update"
             git push
           exit
