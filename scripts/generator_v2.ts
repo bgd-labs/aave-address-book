@@ -77,11 +77,11 @@ export async function generateMarketV2(market: Market) {
   
       address internal constant EMERGENCY_ADMIN = ${emergencyAdmin};
       
-      function getToken(string calldata token) public pure returns(Token memory m) {
+      function getToken(string calldata symbol) public pure returns(Token memory m) {
   ${tokenList.reduce((acc, token, ix) => {
     const isLast = ix === tokenList.length - 1;
     const start = ix === 0 ? "        if" : " else if";
-    acc += `${start} (keccak256(abi.encodePacked((token))) == keccak256(abi.encodePacked(("${
+    acc += `${start} (keccak256(abi.encodePacked((symbol))) == keccak256(abi.encodePacked(("${
       token.symbol
     }")))) {
               return Token(
@@ -206,7 +206,7 @@ export async function generateIndexFileV2(
   }, "")}
       }
   
-      function getToken(string calldata market, string calldata token) public pure returns(Token memory m) {
+      function getToken(string calldata market, string calldata symbol) public pure returns(Token memory m) {
   ${markets.reduce((acc, market, ix) => {
     const isLast = ix === markets.length - 1;
     const start = ix === 0 ? "        if" : " else if";
@@ -216,7 +216,7 @@ export async function generateIndexFileV2(
       ${market.tokenList.reduce((acc, token, ix) => {
         const isLast = ix === market.tokenList.length - 1;
         const start = ix === 0 ? "        if" : " else if";
-        acc += `${start} (keccak256(abi.encodePacked(token)) == keccak256(abi.encodePacked("${
+        acc += `${start} (keccak256(abi.encodePacked(symbol)) == keccak256(abi.encodePacked("${
           token.symbol
         }"))) {
                   return Token(
