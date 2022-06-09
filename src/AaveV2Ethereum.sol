@@ -27,13 +27,13 @@ library AaveV2Ethereum {
     address internal constant EMERGENCY_ADMIN =
         0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;
 
-    function getToken(string calldata token)
+    function getToken(string calldata symbol)
         public
         pure
         returns (Token memory m)
     {
         if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDT")))
         ) {
             return
@@ -44,7 +44,7 @@ library AaveV2Ethereum {
                     0x531842cEbbdD378f8ee36D171d6cC9C4fcf475Ec
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WBTC")))
         ) {
             return
@@ -55,7 +55,7 @@ library AaveV2Ethereum {
                     0x9c39809Dec7F95F5e0713634a4D0701329B3b4d2
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WETH")))
         ) {
             return
@@ -66,7 +66,7 @@ library AaveV2Ethereum {
                     0xF63B34710400CAd3e044cFfDcAb00a0f32E33eCf
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("YFI")))
         ) {
             return
@@ -77,7 +77,7 @@ library AaveV2Ethereum {
                     0x7EbD09022Be45AD993BAA1CEc61166Fcc8644d97
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("ZRX")))
         ) {
             return
@@ -88,7 +88,7 @@ library AaveV2Ethereum {
                     0x85791D117A392097590bDeD3bD5abB8d5A20491A
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("UNI")))
         ) {
             return
@@ -99,7 +99,7 @@ library AaveV2Ethereum {
                     0x5BdB050A92CADcCfCDcCCBFC17204a1C9cC0Ab73
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("AAVE")))
         ) {
             return
@@ -110,7 +110,7 @@ library AaveV2Ethereum {
                     0xF7DBA49d571745D9d7fcb56225B05BEA803EBf3C
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("BAT")))
         ) {
             return
@@ -121,7 +121,7 @@ library AaveV2Ethereum {
                     0xfc218A6Dfe6901CB34B1a5281FC6f1b8e7E56877
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("BUSD")))
         ) {
             return
@@ -132,7 +132,7 @@ library AaveV2Ethereum {
                     0xbA429f7011c9fa04cDd46a2Da24dc0FF0aC6099c
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("DAI")))
         ) {
             return
@@ -143,7 +143,7 @@ library AaveV2Ethereum {
                     0x6C3c78838c761c6Ac7bE9F59fe808ea2A6E4379d
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("ENJ")))
         ) {
             return
@@ -154,7 +154,7 @@ library AaveV2Ethereum {
                     0x38995F292a6E31b78203254fE1cdd5Ca1010A446
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("KNC")))
         ) {
             return
@@ -165,7 +165,7 @@ library AaveV2Ethereum {
                     0x6B05D1c608015Ccb8e205A690cB86773A96F39f1
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("LINK")))
         ) {
             return
@@ -176,7 +176,7 @@ library AaveV2Ethereum {
                     0x0b8f12b1788BFdE65Aa1ca52E3e9F3Ba401be16D
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("MANA")))
         ) {
             return
@@ -187,7 +187,7 @@ library AaveV2Ethereum {
                     0x0A68976301e46Ca6Ce7410DB28883E309EA0D352
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("MKR")))
         ) {
             return
@@ -198,7 +198,7 @@ library AaveV2Ethereum {
                     0xba728eAd5e496BE00DCF66F650b6d7758eCB50f8
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("REN")))
         ) {
             return
@@ -209,7 +209,7 @@ library AaveV2Ethereum {
                     0xcd9D82d33bd737De215cDac57FE2F7f04DF77FE0
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("SNX")))
         ) {
             return
@@ -220,7 +220,7 @@ library AaveV2Ethereum {
                     0x267EB8Cf715455517F9BD5834AeAE3CeA1EBdbD8
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("sUSD")))
         ) {
             return
@@ -231,7 +231,7 @@ library AaveV2Ethereum {
                     0xdC6a3Ab17299D9C2A412B0e0a4C1f55446AE0817
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("TUSD")))
         ) {
             return
@@ -242,7 +242,7 @@ library AaveV2Ethereum {
                     0x01C0eb1f8c6F1C1bF74ae028697ce7AA2a8b0E92
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDC")))
         ) {
             return
@@ -253,7 +253,7 @@ library AaveV2Ethereum {
                     0x619beb58998eD2278e08620f97007e1116D5D25b
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("CRV")))
         ) {
             return
@@ -264,7 +264,7 @@ library AaveV2Ethereum {
                     0x00ad8eBF64F141f1C81e9f8f792d3d1631c6c684
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("GUSD")))
         ) {
             return
@@ -275,7 +275,7 @@ library AaveV2Ethereum {
                     0x279AF5b99540c1A3A7E3CDd326e19659401eF99e
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("BAL")))
         ) {
             return
@@ -286,7 +286,7 @@ library AaveV2Ethereum {
                     0x13210D4Fe0d5402bd7Ecbc4B5bC5cFcA3b71adB0
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("xSUSHI")))
         ) {
             return
@@ -297,7 +297,7 @@ library AaveV2Ethereum {
                     0xfAFEDF95E21184E3d880bd56D4806c4b8d31c69A
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("renFIL")))
         ) {
             return
@@ -308,7 +308,7 @@ library AaveV2Ethereum {
                     0x348e2eBD5E962854871874E444F4122399c02755
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("RAI")))
         ) {
             return
@@ -319,7 +319,7 @@ library AaveV2Ethereum {
                     0xB5385132EE8321977FfF44b60cDE9fE9AB0B4e6b
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("AMPL")))
         ) {
             return
@@ -330,7 +330,7 @@ library AaveV2Ethereum {
                     0xf013D90E4e4E3Baf420dFea60735e75dbd42f1e1
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDP")))
         ) {
             return
@@ -341,7 +341,7 @@ library AaveV2Ethereum {
                     0xFDb93B3b10936cf81FA59A02A7523B6e2149b2B7
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("DPI")))
         ) {
             return
@@ -352,7 +352,7 @@ library AaveV2Ethereum {
                     0x4dDff5885a67E4EffeC55875a3977D7E60F82ae0
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("FRAX")))
         ) {
             return
@@ -363,7 +363,7 @@ library AaveV2Ethereum {
                     0xfE8F19B17fFeF0fDbfe2671F248903055AFAA8Ca
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("FEI")))
         ) {
             return
@@ -374,7 +374,7 @@ library AaveV2Ethereum {
                     0xC2e10006AccAb7B45D9184FcF5b7EC7763f5BaAe
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("stETH")))
         ) {
             return
@@ -385,7 +385,7 @@ library AaveV2Ethereum {
                     0xA9DEAc9f00Dc4310c35603FCD9D34d1A750f81Db
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("ENS")))
         ) {
             return
@@ -396,7 +396,7 @@ library AaveV2Ethereum {
                     0x176808047cc9b7A2C9AE202c593ED42dDD7C0D13
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("UST")))
         ) {
             return

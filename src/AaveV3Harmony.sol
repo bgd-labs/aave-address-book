@@ -25,13 +25,13 @@ library AaveV3Harmony {
     address internal constant ACL_ADMIN =
         0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;
 
-    function getToken(string calldata token)
+    function getToken(string calldata symbol)
         public
         pure
         returns (Token memory m)
     {
         if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("1DAI"))
         ) {
             return
@@ -42,7 +42,7 @@ library AaveV3Harmony {
                     0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("LINK"))
         ) {
             return
@@ -53,7 +53,7 @@ library AaveV3Harmony {
                     0x89D976629b7055ff1ca02b927BA3e020F22A44e4
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("1USDC"))
         ) {
             return
@@ -64,7 +64,7 @@ library AaveV3Harmony {
                     0x307ffe186F84a3bc2613D1eA417A5737D69A7007
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("1WBTC"))
         ) {
             return
@@ -75,7 +75,7 @@ library AaveV3Harmony {
                     0x633b207Dd676331c413D4C013a6294B0FE47cD0e
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("1ETH"))
         ) {
             return
@@ -86,7 +86,7 @@ library AaveV3Harmony {
                     0xD8Ad37849950903571df17049516a5CD4cbE55F6
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("1USDT"))
         ) {
             return
@@ -97,7 +97,7 @@ library AaveV3Harmony {
                     0x70eFfc565DB6EEf7B927610155602d31b670e802
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("1AAVE"))
         ) {
             return
@@ -108,7 +108,7 @@ library AaveV3Harmony {
                     0xfAeF6A702D15428E588d4C0614AEFb4348D83D48
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("WONE"))
         ) {
             return

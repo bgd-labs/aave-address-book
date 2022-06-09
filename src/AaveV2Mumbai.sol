@@ -27,13 +27,13 @@ library AaveV2Mumbai {
     address internal constant EMERGENCY_ADMIN =
         0x943E44157dC0302a5CEb172374d1749018a00994;
 
-    function getToken(string calldata token)
+    function getToken(string calldata symbol)
         public
         pure
         returns (Token memory m)
     {
         if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("DAI")))
         ) {
             return
@@ -44,7 +44,7 @@ library AaveV2Mumbai {
                     0x6D29322ba6549B95e98E9B08033F5ffb857f19c5
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDC")))
         ) {
             return
@@ -55,7 +55,7 @@ library AaveV2Mumbai {
                     0x05771A896327ee702F965FB6E4A35A9A57C84a2a
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDT")))
         ) {
             return
@@ -66,7 +66,7 @@ library AaveV2Mumbai {
                     0x6C0a86573a63672D8a66C037036e441A59086d68
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WBTC")))
         ) {
             return
@@ -77,7 +77,7 @@ library AaveV2Mumbai {
                     0xc156967272b7177DcE40E3b3E7c4269f750F3160
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WETH")))
         ) {
             return
@@ -88,7 +88,7 @@ library AaveV2Mumbai {
                     0x0F2656e068b77cdA65213Ef25705B728d5C73340
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WMATIC")))
         ) {
             return
@@ -99,7 +99,7 @@ library AaveV2Mumbai {
                     0x11b884339E453E3d66A8E22246782D40E62cB5F2
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("AAVE")))
         ) {
             return

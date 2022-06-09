@@ -27,13 +27,13 @@ library AaveV2Polygon {
     address internal constant EMERGENCY_ADMIN =
         0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;
 
-    function getToken(string calldata token)
+    function getToken(string calldata symbol)
         public
         pure
         returns (Token memory m)
     {
         if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("DAI")))
         ) {
             return
@@ -44,7 +44,7 @@ library AaveV2Polygon {
                     0x75c4d1Fb84429023170086f06E682DcbBF537b7d
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDC")))
         ) {
             return
@@ -55,7 +55,7 @@ library AaveV2Polygon {
                     0x248960A9d75EdFa3de94F7193eae3161Eb349a12
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDT")))
         ) {
             return
@@ -66,7 +66,7 @@ library AaveV2Polygon {
                     0x8038857FD47108A07d1f6Bf652ef1cBeC279A2f3
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WBTC")))
         ) {
             return
@@ -77,7 +77,7 @@ library AaveV2Polygon {
                     0xF664F50631A6f0D72ecdaa0e49b0c019Fa72a8dC
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WETH")))
         ) {
             return
@@ -88,7 +88,7 @@ library AaveV2Polygon {
                     0xeDe17e9d79fc6f9fF9250D9EEfbdB88Cc18038b5
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WMATIC")))
         ) {
             return
@@ -99,7 +99,7 @@ library AaveV2Polygon {
                     0x59e8E9100cbfCBCBAdf86b9279fa61526bBB8765
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("AAVE")))
         ) {
             return
@@ -110,7 +110,7 @@ library AaveV2Polygon {
                     0x1c313e9d0d826662F5CE692134D938656F681350
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("GHST")))
         ) {
             return
@@ -121,7 +121,7 @@ library AaveV2Polygon {
                     0x36e988a38542C3482013Bb54ee46aC1fb1efedcd
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("BAL")))
         ) {
             return
@@ -132,7 +132,7 @@ library AaveV2Polygon {
                     0x773E0e32e7b6a00b7cA9daa85dfba9D61B7f2574
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("DPI")))
         ) {
             return
@@ -143,7 +143,7 @@ library AaveV2Polygon {
                     0x43150AA0B7e19293D935A412C8607f9172d3d3f3
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("CRV")))
         ) {
             return
@@ -154,7 +154,7 @@ library AaveV2Polygon {
                     0x780BbcBCda2cdb0d2c61fd9BC68c9046B18f3229
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("SUSHI")))
         ) {
             return
@@ -165,7 +165,7 @@ library AaveV2Polygon {
                     0x9CB9fEaFA73bF392C905eEbf5669ad3d073c3DFC
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("LINK")))
         ) {
             return

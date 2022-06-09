@@ -25,13 +25,13 @@ library AaveV3FantomTestnet {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
-    function getToken(string calldata token)
+    function getToken(string calldata symbol)
         public
         pure
         returns (Token memory m)
     {
         if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("DAI"))
         ) {
             return
@@ -42,7 +42,7 @@ library AaveV3FantomTestnet {
                     0x87d62612a58a806B926a0A1276DF5C9c6DbE8a5e
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("LINK"))
         ) {
             return
@@ -53,7 +53,7 @@ library AaveV3FantomTestnet {
                     0x475e4C43caE948578685462F17FB7fedB85E3F79
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("USDC"))
         ) {
             return
@@ -64,7 +64,7 @@ library AaveV3FantomTestnet {
                     0x7e90CE7a0463cc5656c38B5a85C33dF4C8F2523C
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("WBTC"))
         ) {
             return
@@ -75,7 +75,7 @@ library AaveV3FantomTestnet {
                     0x7e72682d8c90A1eeE1403730f31DCf81551C5aFA
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("WETH"))
         ) {
             return
@@ -86,7 +86,7 @@ library AaveV3FantomTestnet {
                     0xfD7D3f98aF173B18e5A98fE3b1aE530edab1a988
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("USDT"))
         ) {
             return
@@ -97,7 +97,7 @@ library AaveV3FantomTestnet {
                     0xCcE4E4c5327870EfD280645B5a24A50dC01125a4
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("AAVE"))
         ) {
             return
@@ -108,7 +108,7 @@ library AaveV3FantomTestnet {
                     0x460d55849094CDcc8c9582Cf4B58485C08405Ae7
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("WFTM"))
         ) {
             return
@@ -119,7 +119,7 @@ library AaveV3FantomTestnet {
                     0x67196249e5fE6c2f532ff456E342Abf8eE19D4E3
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("CRV"))
         ) {
             return
@@ -130,7 +130,7 @@ library AaveV3FantomTestnet {
                     0x48Cf4cA307f321f0FC24bfAe3119f9abF6B32Ff5
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("SUSHI"))
         ) {
             return

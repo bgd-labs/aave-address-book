@@ -27,13 +27,13 @@ library AaveV2Fuji {
     address internal constant EMERGENCY_ADMIN =
         0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e;
 
-    function getToken(string calldata token)
+    function getToken(string calldata symbol)
         public
         pure
         returns (Token memory m)
     {
         if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WETH")))
         ) {
             return
@@ -44,7 +44,7 @@ library AaveV2Fuji {
                     0xB61CC359E2133b8618cc0319F359F8CA1d3d2b33
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("USDT")))
         ) {
             return
@@ -55,7 +55,7 @@ library AaveV2Fuji {
                     0x6422A7C91A48dD211BF6BdE1Db14d7734f9cbD69
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WBTC")))
         ) {
             return
@@ -66,7 +66,7 @@ library AaveV2Fuji {
                     0xbd0601970fE5b35649Fb92f292cde21f0f52eAE9
                 );
         } else if (
-            keccak256(abi.encodePacked((token))) ==
+            keccak256(abi.encodePacked((symbol))) ==
             keccak256(abi.encodePacked(("WAVAX")))
         ) {
             return

@@ -160,7 +160,7 @@ library AaveAddressBookV3Testnet {
         } else revert("Market does not exist");
     }
 
-    function getToken(string calldata market, string calldata token)
+    function getToken(string calldata market, string calldata symbol)
         public
         pure
         returns (Token memory m)
@@ -170,7 +170,7 @@ library AaveAddressBookV3Testnet {
             keccak256(abi.encodePacked(AaveV3Rinkeby))
         ) {
             if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DAI"))
             ) {
                 return
@@ -181,7 +181,7 @@ library AaveAddressBookV3Testnet {
                         0x0F48c09701B6D24d6D9571637758EE06eeCb9630
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("LINK"))
             ) {
                 return
@@ -192,7 +192,7 @@ library AaveAddressBookV3Testnet {
                         0x4e63D3ff7Bca937FAD4e1b0e9aF4f946f2AAaE64
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDC"))
             ) {
                 return
@@ -203,7 +203,7 @@ library AaveAddressBookV3Testnet {
                         0xee3D33c0C779cAD53CAa496aa5a97D026D1218Ca
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WBTC"))
             ) {
                 return
@@ -214,7 +214,7 @@ library AaveAddressBookV3Testnet {
                         0x372C35caeED54907d694DF6229319779fbC79440
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WETH"))
             ) {
                 return
@@ -225,7 +225,7 @@ library AaveAddressBookV3Testnet {
                         0x7666ca6911bEcBA7d38Fa2da8278b82297EC7e6F
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDT"))
             ) {
                 return
@@ -236,7 +236,7 @@ library AaveAddressBookV3Testnet {
                         0xCC28d19D8e8A64D2Fc1709e8FE7b6139e25Fd524
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AAVE"))
             ) {
                 return
@@ -247,7 +247,7 @@ library AaveAddressBookV3Testnet {
                         0x951a8575A0b18A1180D5e8DD0e2e646E235b42bb
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("EURS"))
             ) {
                 return
@@ -263,7 +263,7 @@ library AaveAddressBookV3Testnet {
             keccak256(abi.encodePacked(AaveV3Mumbai))
         ) {
             if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DAI"))
             ) {
                 return
@@ -274,7 +274,7 @@ library AaveAddressBookV3Testnet {
                         0x333C04243D048836d53b4ACB3c9aE64875699375
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("LINK"))
             ) {
                 return
@@ -285,7 +285,7 @@ library AaveAddressBookV3Testnet {
                         0x27908f7216Efe649706B68b6a443623D9aaF16D0
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDC"))
             ) {
                 return
@@ -296,7 +296,7 @@ library AaveAddressBookV3Testnet {
                         0x01dBEdcb2437c79341cfeC4Cae765C53BE0E6EF7
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WBTC"))
             ) {
                 return
@@ -307,7 +307,7 @@ library AaveAddressBookV3Testnet {
                         0x5BcBF666e14eCFe6e21686601c5cA7c7fbe674Cf
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WETH"))
             ) {
                 return
@@ -318,7 +318,7 @@ library AaveAddressBookV3Testnet {
                         0xC9Ac53b6ae1C653A54ab0E9D44693E807429aF1F
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDT"))
             ) {
                 return
@@ -329,7 +329,7 @@ library AaveAddressBookV3Testnet {
                         0xc601b4d43aF91fE4EAe327a2d2B12f37a568E05B
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AAVE"))
             ) {
                 return
@@ -340,7 +340,7 @@ library AaveAddressBookV3Testnet {
                         0x26Df87542C50326A5085764b1F650EF2514776B6
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WMATIC"))
             ) {
                 return
@@ -351,7 +351,7 @@ library AaveAddressBookV3Testnet {
                         0xEC59F2FB4EF0C46278857Bf2eC5764485974D17B
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("CRV"))
             ) {
                 return
@@ -362,7 +362,7 @@ library AaveAddressBookV3Testnet {
                         0x4a6F74A19f05529aF7E7e9f00923FFB990aeBE7B
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("SUSHI"))
             ) {
                 return
@@ -373,7 +373,7 @@ library AaveAddressBookV3Testnet {
                         0x169E542d769137E82E704477aDdfFe89e7FB9b90
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("GHST"))
             ) {
                 return
@@ -384,7 +384,7 @@ library AaveAddressBookV3Testnet {
                         0x03d6be9Bc91956A0bc39f515CaA77C8C0f81c3fC
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("BAL"))
             ) {
                 return
@@ -395,7 +395,7 @@ library AaveAddressBookV3Testnet {
                         0xf28E16644C6389b1B6cF03b3120726b1FfAeDC6E
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DPI"))
             ) {
                 return
@@ -406,7 +406,7 @@ library AaveAddressBookV3Testnet {
                         0x2C64B0ef18bC0616291Dc636b1738DbC675C3f0d
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("EURS"))
             ) {
                 return
@@ -417,7 +417,7 @@ library AaveAddressBookV3Testnet {
                         0xaB7cDf4C6053873650695352634987BbEe472c05
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("JEUR"))
             ) {
                 return
@@ -428,7 +428,7 @@ library AaveAddressBookV3Testnet {
                         0xdAc793dc4A6850765F0f55224CC77425e67C2b6e
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AGEUR"))
             ) {
                 return
@@ -444,7 +444,7 @@ library AaveAddressBookV3Testnet {
             keccak256(abi.encodePacked(AaveV3Fuji))
         ) {
             if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DAI"))
             ) {
                 return
@@ -455,7 +455,7 @@ library AaveAddressBookV3Testnet {
                         0xf5934275da36A067CE00b415F0b876fA403A7198
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("LINK"))
             ) {
                 return
@@ -466,7 +466,7 @@ library AaveAddressBookV3Testnet {
                         0x0DDD3C8dfA22d4B5e5Dc086f87d94e4180dAC38D
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDC"))
             ) {
                 return
@@ -477,7 +477,7 @@ library AaveAddressBookV3Testnet {
                         0xC168dB86f93F97652462ded450B3Ad5eA9669df2
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WBTC"))
             ) {
                 return
@@ -488,7 +488,7 @@ library AaveAddressBookV3Testnet {
                         0xdfBa66e02c4915708e7Df3C26843D5A3492727d9
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WETH"))
             ) {
                 return
@@ -499,7 +499,7 @@ library AaveAddressBookV3Testnet {
                         0xBA932F4F400204c7a05bDF06c6fcA8c114e39d8c
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDT"))
             ) {
                 return
@@ -510,7 +510,7 @@ library AaveAddressBookV3Testnet {
                         0xB66d28fd0FF446aB504dEF6C2BCd0ef5c0AADdD3
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AAVE"))
             ) {
                 return
@@ -521,7 +521,7 @@ library AaveAddressBookV3Testnet {
                         0x118369DcFb3Dfaa36Ad424AF26247c2D91CA1262
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WAVAX"))
             ) {
                 return
@@ -537,7 +537,7 @@ library AaveAddressBookV3Testnet {
             keccak256(abi.encodePacked(AaveV3ArbitrumRinkeby))
         ) {
             if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DAI"))
             ) {
                 return
@@ -548,7 +548,7 @@ library AaveAddressBookV3Testnet {
                         0xa626040B7Ec7febdA5c4f470d88541Fcb9e465a9
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("LINK"))
             ) {
                 return
@@ -559,7 +559,7 @@ library AaveAddressBookV3Testnet {
                         0x60399941B74464eCe33cb681d830fa4e7370D3dc
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDC"))
             ) {
                 return
@@ -570,7 +570,7 @@ library AaveAddressBookV3Testnet {
                         0x057A698a4fD2C486dd269E285e1c4Cbfac2D0A4B
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WBTC"))
             ) {
                 return
@@ -581,7 +581,7 @@ library AaveAddressBookV3Testnet {
                         0x314EED755BD345029Eb6A42F1648f889bD7179f0
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WETH"))
             ) {
                 return
@@ -592,7 +592,7 @@ library AaveAddressBookV3Testnet {
                         0x84B63b4607E47Ae1E17907200690feFBFfF804aD
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDT"))
             ) {
                 return
@@ -603,7 +603,7 @@ library AaveAddressBookV3Testnet {
                         0x29E13C2B7B35B4FFf8d3323bC73b5D462d0f22c8
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AAVE"))
             ) {
                 return
@@ -614,7 +614,7 @@ library AaveAddressBookV3Testnet {
                         0x6895ACc82d5556e8289c65c1eA60D8E96D00a94B
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("EURS"))
             ) {
                 return
@@ -630,7 +630,7 @@ library AaveAddressBookV3Testnet {
             keccak256(abi.encodePacked(AaveV3FantomTestnet))
         ) {
             if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DAI"))
             ) {
                 return
@@ -641,7 +641,7 @@ library AaveAddressBookV3Testnet {
                         0x87d62612a58a806B926a0A1276DF5C9c6DbE8a5e
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("LINK"))
             ) {
                 return
@@ -652,7 +652,7 @@ library AaveAddressBookV3Testnet {
                         0x475e4C43caE948578685462F17FB7fedB85E3F79
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDC"))
             ) {
                 return
@@ -663,7 +663,7 @@ library AaveAddressBookV3Testnet {
                         0x7e90CE7a0463cc5656c38B5a85C33dF4C8F2523C
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WBTC"))
             ) {
                 return
@@ -674,7 +674,7 @@ library AaveAddressBookV3Testnet {
                         0x7e72682d8c90A1eeE1403730f31DCf81551C5aFA
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WETH"))
             ) {
                 return
@@ -685,7 +685,7 @@ library AaveAddressBookV3Testnet {
                         0xfD7D3f98aF173B18e5A98fE3b1aE530edab1a988
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDT"))
             ) {
                 return
@@ -696,7 +696,7 @@ library AaveAddressBookV3Testnet {
                         0xCcE4E4c5327870EfD280645B5a24A50dC01125a4
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AAVE"))
             ) {
                 return
@@ -707,7 +707,7 @@ library AaveAddressBookV3Testnet {
                         0x460d55849094CDcc8c9582Cf4B58485C08405Ae7
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WFTM"))
             ) {
                 return
@@ -718,7 +718,7 @@ library AaveAddressBookV3Testnet {
                         0x67196249e5fE6c2f532ff456E342Abf8eE19D4E3
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("CRV"))
             ) {
                 return
@@ -729,7 +729,7 @@ library AaveAddressBookV3Testnet {
                         0x48Cf4cA307f321f0FC24bfAe3119f9abF6B32Ff5
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("SUSHI"))
             ) {
                 return
@@ -745,7 +745,7 @@ library AaveAddressBookV3Testnet {
             keccak256(abi.encodePacked(AaveV3HarmonyTestnet))
         ) {
             if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DAI"))
             ) {
                 return
@@ -756,7 +756,7 @@ library AaveAddressBookV3Testnet {
                         0x88d8a116C758C782985DAD67798666e270F0F1a8
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("LINK"))
             ) {
                 return
@@ -767,7 +767,7 @@ library AaveAddressBookV3Testnet {
                         0xE052c9c02cd4949832cAC20A91B8cf7C59cDd93b
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDC"))
             ) {
                 return
@@ -778,7 +778,7 @@ library AaveAddressBookV3Testnet {
                         0x7C50b2Fb765D77547B7a9F44364308FeEE7526D6
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WBTC"))
             ) {
                 return
@@ -789,7 +789,7 @@ library AaveAddressBookV3Testnet {
                         0x478FE510965e607C95EB52c91FB711c8006483B9
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WETH"))
             ) {
                 return
@@ -800,7 +800,7 @@ library AaveAddressBookV3Testnet {
                         0x348d1F7BC7FF6803AB96e51B846069Fc1F74F8E5
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDT"))
             ) {
                 return
@@ -811,7 +811,7 @@ library AaveAddressBookV3Testnet {
                         0xd6D10CEfD2E8A94B5B4Bd3D7B3F2d1cE39c0508c
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AAVE"))
             ) {
                 return
@@ -822,7 +822,7 @@ library AaveAddressBookV3Testnet {
                         0xCd5327194e4e95C4AECf863904FA80a8522c7C97
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WONE"))
             ) {
                 return
@@ -838,7 +838,7 @@ library AaveAddressBookV3Testnet {
             keccak256(abi.encodePacked(AaveV3OptimismKovan))
         ) {
             if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("DAI"))
             ) {
                 return
@@ -849,7 +849,7 @@ library AaveAddressBookV3Testnet {
                         0xF7f1a6f7A614b12F2f3bcc8a2e0952B2c6bF283d
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("LINK"))
             ) {
                 return
@@ -860,7 +860,7 @@ library AaveAddressBookV3Testnet {
                         0x2074341b6880f6B7FC4f3B2B3B15ef91712182E6
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDC"))
             ) {
                 return
@@ -871,7 +871,7 @@ library AaveAddressBookV3Testnet {
                         0xE953b08a7908921e179187bAf7dFb4e36f9b40CA
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WBTC"))
             ) {
                 return
@@ -882,7 +882,7 @@ library AaveAddressBookV3Testnet {
                         0x4c9D6192E7920b2C56400aBFa8909EC7A572a315
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("WETH"))
             ) {
                 return
@@ -893,7 +893,7 @@ library AaveAddressBookV3Testnet {
                         0x52B61cD2CbC22A386a8F5d2Cec685e938A0379BB
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("USDT"))
             ) {
                 return
@@ -904,7 +904,7 @@ library AaveAddressBookV3Testnet {
                         0x1b187f0e91934c94aFb324cD9cd03FBa0C7a8B71
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("AAVE"))
             ) {
                 return
@@ -915,7 +915,7 @@ library AaveAddressBookV3Testnet {
                         0xBe7c6a35A2932411A379081a745bcb99d83574EC
                     );
             } else if (
-                keccak256(abi.encodePacked(token)) ==
+                keccak256(abi.encodePacked(symbol)) ==
                 keccak256(abi.encodePacked("SUSD"))
             ) {
                 return

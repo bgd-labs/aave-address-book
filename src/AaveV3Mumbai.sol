@@ -25,13 +25,13 @@ library AaveV3Mumbai {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
-    function getToken(string calldata token)
+    function getToken(string calldata symbol)
         public
         pure
         returns (Token memory m)
     {
         if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("DAI"))
         ) {
             return
@@ -42,7 +42,7 @@ library AaveV3Mumbai {
                     0x333C04243D048836d53b4ACB3c9aE64875699375
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("LINK"))
         ) {
             return
@@ -53,7 +53,7 @@ library AaveV3Mumbai {
                     0x27908f7216Efe649706B68b6a443623D9aaF16D0
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("USDC"))
         ) {
             return
@@ -64,7 +64,7 @@ library AaveV3Mumbai {
                     0x01dBEdcb2437c79341cfeC4Cae765C53BE0E6EF7
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("WBTC"))
         ) {
             return
@@ -75,7 +75,7 @@ library AaveV3Mumbai {
                     0x5BcBF666e14eCFe6e21686601c5cA7c7fbe674Cf
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("WETH"))
         ) {
             return
@@ -86,7 +86,7 @@ library AaveV3Mumbai {
                     0xC9Ac53b6ae1C653A54ab0E9D44693E807429aF1F
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("USDT"))
         ) {
             return
@@ -97,7 +97,7 @@ library AaveV3Mumbai {
                     0xc601b4d43aF91fE4EAe327a2d2B12f37a568E05B
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("AAVE"))
         ) {
             return
@@ -108,7 +108,7 @@ library AaveV3Mumbai {
                     0x26Df87542C50326A5085764b1F650EF2514776B6
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("WMATIC"))
         ) {
             return
@@ -119,7 +119,7 @@ library AaveV3Mumbai {
                     0xEC59F2FB4EF0C46278857Bf2eC5764485974D17B
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("CRV"))
         ) {
             return
@@ -130,7 +130,7 @@ library AaveV3Mumbai {
                     0x4a6F74A19f05529aF7E7e9f00923FFB990aeBE7B
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("SUSHI"))
         ) {
             return
@@ -141,7 +141,7 @@ library AaveV3Mumbai {
                     0x169E542d769137E82E704477aDdfFe89e7FB9b90
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("GHST"))
         ) {
             return
@@ -152,7 +152,7 @@ library AaveV3Mumbai {
                     0x03d6be9Bc91956A0bc39f515CaA77C8C0f81c3fC
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("BAL"))
         ) {
             return
@@ -163,7 +163,7 @@ library AaveV3Mumbai {
                     0xf28E16644C6389b1B6cF03b3120726b1FfAeDC6E
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("DPI"))
         ) {
             return
@@ -174,7 +174,7 @@ library AaveV3Mumbai {
                     0x2C64B0ef18bC0616291Dc636b1738DbC675C3f0d
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("EURS"))
         ) {
             return
@@ -185,7 +185,7 @@ library AaveV3Mumbai {
                     0xaB7cDf4C6053873650695352634987BbEe472c05
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("JEUR"))
         ) {
             return
@@ -196,7 +196,7 @@ library AaveV3Mumbai {
                     0xdAc793dc4A6850765F0f55224CC77425e67C2b6e
                 );
         } else if (
-            keccak256(abi.encodePacked(token)) ==
+            keccak256(abi.encodePacked(symbol)) ==
             keccak256(abi.encodePacked("AGEUR"))
         ) {
             return
