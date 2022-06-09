@@ -1,3 +1,6 @@
+<p align="center"><img width="200" src="./addressbook_logo.png" alt="Address book logo"></a></p>
+
+
 # Aave Address Book :book:
 
 This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.
