@@ -54,8 +54,9 @@ export async function generateMarketV2(market: Market) {
     const templateV2 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token} from "./AaveV2.sol";
-  
+  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
+  import {Token} from './Common.sol';
+
   library ${market.name} {
       ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
           ILendingPoolAddressesProvider(
@@ -169,13 +170,24 @@ export async function generateIndexFileV2(
   const templateV2 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Market, Token} from "./AaveV2.sol";
-  
+  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
+  import {Token} from './Common.sol';
+
   library AaveAddressBookV2${testnet ? "Testnet" : ""} {
   ${markets.reduce((acc, market) => {
     acc += `    string public constant ${market.name} = '${market.name}';\n`;
     return acc;
   }, "")}
+    
+      struct Market {
+        ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
+        ILendingPool POOL;
+        ILendingPoolConfigurator POOL_CONFIGURATOR;
+        IAaveOracle ORACLE;
+        IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
+        address POOL_ADMIN;
+        address EMERGENCY_ADMIN;
+      }
   
       function getMarket(string calldata market) public pure returns(Market memory m) {
   ${markets.reduce((acc, market, ix) => {

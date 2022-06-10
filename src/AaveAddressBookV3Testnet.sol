@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token, Market} from "./AaveV3.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV3.sol";
+import {Token} from "./Common.sol";
 
 library AaveAddressBookV3Testnet {
     string public constant AaveV3Rinkeby = "AaveV3Rinkeby";
@@ -11,6 +12,16 @@ library AaveAddressBookV3Testnet {
     string public constant AaveV3FantomTestnet = "AaveV3FantomTestnet";
     string public constant AaveV3HarmonyTestnet = "AaveV3HarmonyTestnet";
     string public constant AaveV3OptimismKovan = "AaveV3OptimismKovan";
+
+    struct Market {
+        IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
+        IPool POOL;
+        IPoolConfigurator POOL_CONFIGURATOR;
+        IAaveOracle ORACLE;
+        IAaveProtocolDataProvider POOL_DATA_PROVIDER;
+        address POOL_ADMIN;
+        address ACL_ADMIN;
+    }
 
     function getMarket(string calldata market)
         public
