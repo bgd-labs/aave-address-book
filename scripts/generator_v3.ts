@@ -51,7 +51,8 @@ export async function generateMarketV3(market: Market) {
     const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token} from "./AaveV3.sol";
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV3.sol";
+  import {Token} from './Common.sol';
   
   
   library ${market.name} {
@@ -172,13 +173,24 @@ export async function generateIndexFileV3(
   const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Token, Market} from "./AaveV3.sol";
-  
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV3.sol";
+  import {Token} from './Common.sol';
+
   library AaveAddressBookV3${testnet ? "Testnet" : ""} {
   ${markets.reduce((acc, market) => {
     acc += `    string public constant ${market.name} = '${market.name}';\n`;
     return acc;
   }, "")}
+
+      struct Market {
+        IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
+        IPool POOL;
+        IPoolConfigurator POOL_CONFIGURATOR;
+        IAaveOracle ORACLE;
+        IAaveProtocolDataProvider POOL_DATA_PROVIDER;
+        address POOL_ADMIN;
+        address ACL_ADMIN;
+      }
   
       function getMarket(string calldata market) public pure returns(Market memory m) {
   ${markets.reduce((acc, market, ix) => {

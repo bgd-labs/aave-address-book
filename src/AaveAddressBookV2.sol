@@ -1,13 +1,24 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, Market, Token} from "./AaveV2.sol";
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
+import {Token} from "./Common.sol";
 
 library AaveAddressBookV2 {
     string public constant AaveV2Ethereum = "AaveV2Ethereum";
     string public constant AaveV2EthereumAMM = "AaveV2EthereumAMM";
     string public constant AaveV2Polygon = "AaveV2Polygon";
     string public constant AaveV2Avalanche = "AaveV2Avalanche";
+
+    struct Market {
+        ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
+        ILendingPool POOL;
+        ILendingPoolConfigurator POOL_CONFIGURATOR;
+        IAaveOracle ORACLE;
+        IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
+        address POOL_ADMIN;
+        address EMERGENCY_ADMIN;
+    }
 
     function getMarket(string calldata market)
         public

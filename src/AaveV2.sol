@@ -1,23 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-struct Market {
-  ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-  ILendingPool POOL;
-  ILendingPoolConfigurator POOL_CONFIGURATOR;
-  IAaveOracle ORACLE;
-  IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
-  address POOL_ADMIN;
-  address EMERGENCY_ADMIN;
-}
-
-struct Token {
-  address underlyingAsset;
-  address aTokenAddress;
-  address stableDebtTokenAddress;
-  address variableDebtTokenAddress;
-}
-
 library DataTypes {
   // refer to the whitepaper, section 1.1 basic concepts for a formal description of these properties.
   struct ReserveData {
