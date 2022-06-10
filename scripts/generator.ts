@@ -1,4 +1,5 @@
 import fs from "fs";
+import prettier from "prettier";
 import { Market, markets } from "./config";
 import { generateIndexFileV2, generateMarketV2 } from "./generator_v2";
 import { generateIndexFileV3, generateMarketV3 } from "./generator_v3";
@@ -73,8 +74,18 @@ async function generateMarkets() {
   // Create the test for the specified market
   const AaveAddressBookTemplate = `// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
+
+${markets.reduce((acc, market) => {
+  acc += `import {${market.name}} from "./${market.name}.sol";\r\n`;
+  return acc;
+}, "")}
 \r\n`;
-  fs.writeFileSync(`./src/AaveAddressBook.sol`, AaveAddressBookTemplate);
+  fs.writeFileSync(
+    `./src/AaveAddressBook.sol`,
+    prettier.format(AaveAddressBookTemplate, {
+      filepath: `./src/AaveAddressBook.sol`,
+    })
+  );
   await generateV2Markets(markets.filter((market) => market.version === 2));
   await generateV3Markets(markets.filter((market) => market.version === 3));
 }

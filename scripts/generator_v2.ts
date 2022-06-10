@@ -1,9 +1,9 @@
 import { ethers } from "ethers";
 import { Market, Token } from "./config";
 import fs from "fs";
-import addressProviderV2ABI from "../address_provider_v2_abi.json";
-import lendingPoolV2ABI from "../lending_pool_v2_abi.json";
-import erc20ABI from "../erc20_abi.json";
+import addressProviderV2ABI from "../abi/address_provider_v2_abi.json";
+import lendingPoolV2ABI from "../abi/lending_pool_v2_abi.json";
+import erc20ABI from "../abi/erc20_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV2(market: Market) {
@@ -98,12 +98,6 @@ export async function generateMarketV2(market: Market) {
     fs.writeFileSync(
       `./src/${market.name}.sol`,
       prettier.format(templateV2, { filepath: `./src/${market.name}.sol` })
-    );
-
-    // Append the market to the addressBook
-    fs.appendFileSync(
-      `./src/AaveAddressBook.sol`,
-      `import {${market.name}} from "./${market.name}.sol";\r\n`
     );
 
     // Create the test for the specified market
