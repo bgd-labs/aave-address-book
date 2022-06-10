@@ -1,6 +1,5 @@
 import { ethers } from "ethers";
 
-const KOVAN_RPC = "https://kovan.poa.network";
 const RINKEBY_RPC = "https://rinkeby-light.eth.linkpool.io/";
 const MAINNET_RPC = "https://rpc.flashbots.net/";
 const MUMBAI_RPC = "https://polygon-mumbai.g.alchemy.com/v2/demo";
@@ -33,13 +32,6 @@ export interface Token {
 }
 
 export const markets: Market[] = [
-  //   {
-  //     name: "AaveV2Kovan",
-  //     rpc: KOVAN_RPC,
-  //     addressProvider: "0x88757f2f99175387ab4c6a4b3067c77a695b0349",
-  //     version: 2,
-  //     testnet: true,
-  //   },
   {
     name: "AaveV3Rinkeby",
     rpc: RINKEBY_RPC,
@@ -53,13 +45,6 @@ export const markets: Market[] = [
     addressProvider: "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5",
     version: 2,
   },
-  //   {
-  //     name: "AaveV2KovanAMM",
-  //     rpc: KOVAN_RPC,
-  //     addressProvider: "0x67FB118A780fD740C8936511947cC4bE7bb7730c",
-  //     version: 2,
-  //     testnet: true,
-  //   },
   {
     name: "AaveV2EthereumAMM",
     rpc: MAINNET_RPC,

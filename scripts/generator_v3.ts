@@ -1,9 +1,9 @@
 import { ethers } from "ethers";
 import { Market, Token } from "./config";
 import fs from "fs";
-import addressProviderV3ABI from "../abi/address_provider_v3_abi.json";
-import lendingPoolV2ABI from "../abi/lending_pool_v2_abi.json";
-import erc20ABI from "../abi/erc20_abi.json";
+import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
+import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
+import erc20ABI from "./abi/erc20_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV3(market: Market) {
