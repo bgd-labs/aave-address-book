@@ -2,7 +2,7 @@
 pragma solidity >=0.6.0;
 
 import "forge-std/Test.sol";
-import {AaveV3Harmony} from "../AaveV3Harmony.sol";
+import {AaveV3Harmony} from "../AaveAddressBook.sol";
 
 contract AaveAddressBookTest is Test {
     function setUp() public {}

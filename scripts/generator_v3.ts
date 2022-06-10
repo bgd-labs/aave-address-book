@@ -103,7 +103,7 @@ export async function generateMarketV3(market: Market) {
   pragma solidity >=0.6.0;
   
   import "forge-std/Test.sol";
-  import {${market.name}} from "../${market.name}.sol";
+  import {${market.name}} from "../AaveAddressBook.sol";
   
   contract AaveAddressBookTest is Test {
       function setUp() public {}

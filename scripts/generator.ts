@@ -79,6 +79,10 @@ ${markets.reduce((acc, market) => {
   acc += `import {${market.name}} from "./${market.name}.sol";\r\n`;
   return acc;
 }, "")}
+import {AaveAddressBookV2Testnet} from "./AaveAddressBookV2Testnet.sol";
+import {AaveAddressBookV2} from "./AaveAddressBookV2.sol";
+import {AaveAddressBookV3Testnet} from "./AaveAddressBookV3Testnet.sol";
+import {AaveAddressBookV3} from "./AaveAddressBookV3.sol";
 \r\n`;
   fs.writeFileSync(
     `./src/AaveAddressBook.sol`,

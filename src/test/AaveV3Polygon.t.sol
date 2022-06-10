@@ -2,7 +2,7 @@
 pragma solidity >=0.6.0;
 
 import "forge-std/Test.sol";
-import {AaveV3Polygon} from "../AaveV3Polygon.sol";
+import {AaveV3Polygon} from "../AaveAddressBook.sol";
 
 contract AaveAddressBookTest is Test {
     function setUp() public {}
