@@ -407,6 +407,17 @@ library AaveV2Ethereum {
                     0x7FDbfB0412700D94403c42cA3CAEeeA183F07B26,
                     0xaf32001cf2E66C4C3af4205F6EA77112AA4160FE
                 );
+        } else if (
+            keccak256(abi.encodePacked((symbol))) ==
+            keccak256(abi.encodePacked(("CVX")))
+        ) {
+            return
+                Token(
+                    0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B,
+                    0x952749E07d7157bb9644A894dFAF3Bad5eF6D918,
+                    0xB01Eb1cE1Da06179136D561766fc2d609C5F55Eb,
+                    0x4Ae5E4409C6Dbc84A00f9f89e4ba096603fb7d50
+                );
         } else revert("Token does not exist");
     }
 }
