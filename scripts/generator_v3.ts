@@ -21,6 +21,7 @@ export async function generateMarketV3(market: Market) {
     const oracle = await contract.getPriceOracle();
     const admin = await contract.owner();
     const aclAdmin = await contract.getACLAdmin();
+    const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
 
     const lendingPoolContract = new ethers.Contract(
@@ -75,6 +76,8 @@ export async function generateMarketV3(market: Market) {
       address internal constant POOL_ADMIN = ${admin};
   
       address internal constant ACL_ADMIN = ${aclAdmin};
+
+      address internal constant ACL_MANAGER = ${aclManager};
   
       function getToken(string calldata symbol) public pure returns(Token memory m) {
         ${tokenList.reduce((acc, token, ix) => {
@@ -145,6 +148,7 @@ export async function generateMarketV3(market: Market) {
       oracle,
       admin,
       aclAdmin,
+      aclManager,
       tokenList,
       poolDataProvider,
       ...market,
@@ -163,6 +167,7 @@ interface MarketV3 extends Market {
   admin: string;
   poolDataProvider: string;
   aclAdmin: string;
+  aclManager: string;
   tokenList: Token[];
 }
 
@@ -190,6 +195,7 @@ export async function generateIndexFileV3(
         IAaveProtocolDataProvider POOL_DATA_PROVIDER;
         address POOL_ADMIN;
         address ACL_ADMIN;
+        address ACL_MANAGER;
       }
   
       function getMarket(string calldata market) public pure returns(Market memory m) {
@@ -208,7 +214,8 @@ export async function generateIndexFileV3(
                   IAaveOracle(${market.oracle}),
                   IAaveProtocolDataProvider(${market.poolDataProvider}),
                   ${market.admin},
-                  ${market.aclAdmin}
+                  ${market.aclAdmin},
+                  ${market.aclManager}
               );
           }${isLast ? ` else revert('Market does not exist');` : ""}`;
     return acc;

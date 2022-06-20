@@ -26,6 +26,9 @@ library AaveV3ArbitrumRinkeby {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant ACL_MANAGER =
+        0x371cdFcbeA8f98e045184373d83c10762E193075;
+
     function getToken(string calldata symbol)
         public
         pure

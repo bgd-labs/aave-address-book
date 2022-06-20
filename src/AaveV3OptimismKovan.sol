@@ -26,6 +26,9 @@ library AaveV3OptimismKovan {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant ACL_MANAGER =
+        0x552626e2E6e35566d53CE0C5Ad97d72E95bC3fc3;
+
     function getToken(string calldata symbol)
         public
         pure

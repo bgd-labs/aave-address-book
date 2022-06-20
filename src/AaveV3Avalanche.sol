@@ -26,6 +26,9 @@ library AaveV3Avalanche {
     address internal constant ACL_ADMIN =
         0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 
+    address internal constant ACL_MANAGER =
+        0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B;
+
     function getToken(string calldata symbol)
         public
         pure

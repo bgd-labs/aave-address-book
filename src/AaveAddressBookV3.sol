@@ -20,6 +20,7 @@ library AaveAddressBookV3 {
         IAaveProtocolDataProvider POOL_DATA_PROVIDER;
         address POOL_ADMIN;
         address ACL_ADMIN;
+        address ACL_MANAGER;
     }
 
     function getMarket(string calldata market)
@@ -45,7 +46,8 @@ library AaveAddressBookV3 {
                         0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
                     ),
                     0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
-                    0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
+                    0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
+                    0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
@@ -65,7 +67,8 @@ library AaveAddressBookV3 {
                         0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
                     ),
                     0xa35b76E4935449E33C56aB24b23fcd3246f13470,
-                    0xa35b76E4935449E33C56aB24b23fcd3246f13470
+                    0xa35b76E4935449E33C56aB24b23fcd3246f13470,
+                    0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
@@ -85,7 +88,8 @@ library AaveAddressBookV3 {
                         0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
                     ),
                     0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb,
-                    0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb
+                    0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb,
+                    0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
@@ -105,7 +109,8 @@ library AaveAddressBookV3 {
                         0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
                     ),
                     0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949,
-                    0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949
+                    0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949,
+                    0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
@@ -125,7 +130,8 @@ library AaveAddressBookV3 {
                         0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
                     ),
                     0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D,
-                    0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D
+                    0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D,
+                    0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
@@ -145,7 +151,8 @@ library AaveAddressBookV3 {
                         0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
                     ),
                     0xE50c8C619d05ff98b22Adf991F17602C774F785c,
-                    0xE50c8C619d05ff98b22Adf991F17602C774F785c
+                    0xE50c8C619d05ff98b22Adf991F17602C774F785c,
+                    0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
                 );
         } else revert("Market does not exist");
     }

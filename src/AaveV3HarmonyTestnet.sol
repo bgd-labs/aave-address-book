@@ -26,6 +26,9 @@ library AaveV3HarmonyTestnet {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant ACL_MANAGER =
+        0x1758d4e6f68166C4B2d9d0F049F33dEB399Daa1F;
+
     function getToken(string calldata symbol)
         public
         pure
