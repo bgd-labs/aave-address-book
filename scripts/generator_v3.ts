@@ -2,8 +2,9 @@ import { ethers } from "ethers";
 import { Market, Token } from "./config";
 import fs from "fs";
 import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
-import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
+import poolV3ABI from "./abi/pool_v3_abi.json";
 import erc20ABI from "./abi/erc20_abi.json";
+import aTokenV3ABI from "./abi/aToken_v3_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV3(market: Market) {
@@ -21,13 +22,10 @@ export async function generateMarketV3(market: Market) {
     const oracle = await contract.getPriceOracle();
     const admin = await contract.owner();
     const aclAdmin = await contract.getACLAdmin();
+    const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
 
-    const lendingPoolContract = new ethers.Contract(
-      pool,
-      lendingPoolV2ABI,
-      provider
-    );
+    const lendingPoolContract = new ethers.Contract(pool, poolV3ABI, provider);
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const tokenList = await Promise.all(
@@ -38,12 +36,19 @@ export async function generateMarketV3(market: Market) {
           reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
             ? "MKR"
             : await erc20Contract.symbol();
+        // const aTokenContract = new ethers.Contract(
+        //   data.aTokenAddress,
+        //   aTokenV3ABI,
+        //   provider
+        // );
         return {
           symbol,
           underlyingAsset: reserve,
           aTokenAddress: data.aTokenAddress,
           stableDebtTokenAddress: data.stableDebtTokenAddress,
           variableDebtTokenAddress: data.variableDebtTokenAddress,
+          // reserveTreasuryAddress:
+          //   await aTokenContract.RESERVE_TREASURY_ADDRESS(),
         };
       })
     );
@@ -75,6 +80,8 @@ export async function generateMarketV3(market: Market) {
       address internal constant POOL_ADMIN = ${admin};
   
       address internal constant ACL_ADMIN = ${aclAdmin};
+
+      address internal constant ACL_MANAGER = ${aclManager};
   
       function getToken(string calldata symbol) public pure returns(Token memory m) {
         ${tokenList.reduce((acc, token, ix) => {
@@ -145,6 +152,7 @@ export async function generateMarketV3(market: Market) {
       oracle,
       admin,
       aclAdmin,
+      aclManager,
       tokenList,
       poolDataProvider,
       ...market,
@@ -163,6 +171,7 @@ interface MarketV3 extends Market {
   admin: string;
   poolDataProvider: string;
   aclAdmin: string;
+  aclManager: string;
   tokenList: Token[];
 }
 
@@ -190,6 +199,7 @@ export async function generateIndexFileV3(
         IAaveProtocolDataProvider POOL_DATA_PROVIDER;
         address POOL_ADMIN;
         address ACL_ADMIN;
+        address ACL_MANAGER;
       }
   
       function getMarket(string calldata market) public pure returns(Market memory m) {
@@ -208,7 +218,8 @@ export async function generateIndexFileV3(
                   IAaveOracle(${market.oracle}),
                   IAaveProtocolDataProvider(${market.poolDataProvider}),
                   ${market.admin},
-                  ${market.aclAdmin}
+                  ${market.aclAdmin},
+                  ${market.aclManager}
               );
           }${isLast ? ` else revert('Market does not exist');` : ""}`;
     return acc;
