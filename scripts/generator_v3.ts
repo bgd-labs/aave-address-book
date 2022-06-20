@@ -2,8 +2,9 @@ import { ethers } from "ethers";
 import { Market, Token } from "./config";
 import fs from "fs";
 import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
-import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
+import poolV3ABI from "./abi/pool_v3_abi.json";
 import erc20ABI from "./abi/erc20_abi.json";
+import aTokenV3ABI from "./abi/aToken_v3_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV3(market: Market) {
@@ -24,11 +25,7 @@ export async function generateMarketV3(market: Market) {
     const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
 
-    const lendingPoolContract = new ethers.Contract(
-      pool,
-      lendingPoolV2ABI,
-      provider
-    );
+    const lendingPoolContract = new ethers.Contract(pool, poolV3ABI, provider);
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const tokenList = await Promise.all(
@@ -39,12 +36,19 @@ export async function generateMarketV3(market: Market) {
           reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
             ? "MKR"
             : await erc20Contract.symbol();
+        // const aTokenContract = new ethers.Contract(
+        //   data.aTokenAddress,
+        //   aTokenV3ABI,
+        //   provider
+        // );
         return {
           symbol,
           underlyingAsset: reserve,
           aTokenAddress: data.aTokenAddress,
           stableDebtTokenAddress: data.stableDebtTokenAddress,
           variableDebtTokenAddress: data.variableDebtTokenAddress,
+          // reserveTreasuryAddress:
+          //   await aTokenContract.RESERVE_TREASURY_ADDRESS(),
         };
       })
     );
