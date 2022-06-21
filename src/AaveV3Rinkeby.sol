@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV3.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
 import {Token} from "./Common.sol";
 
 library AaveV3Rinkeby {
@@ -20,14 +20,14 @@ library AaveV3Rinkeby {
     IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
         IAaveProtocolDataProvider(0xBAB2E7afF5acea53a43aEeBa2BA6298D8056DcE5);
 
+    IACLManager internal constant ACL_MANAGER =
+        IACLManager(0x74E3445f239f9915D57715Efb810f67b2a7E5758);
+
     address internal constant POOL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
-
-    address internal constant ACL_MANAGER =
-        0x74E3445f239f9915D57715Efb810f67b2a7E5758;
 
     function getToken(string calldata symbol)
         public
