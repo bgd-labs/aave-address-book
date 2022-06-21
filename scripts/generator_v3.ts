@@ -56,7 +56,7 @@ export async function generateMarketV3(market: Market) {
     const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV3.sol";
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
   import {Token} from './Common.sol';
   
   
@@ -77,11 +77,11 @@ export async function generateMarketV3(market: Market) {
 
       IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider(${poolDataProvider});
   
+      IACLManager internal constant ACL_MANAGER = IACLManager(${aclManager});
+
       address internal constant POOL_ADMIN = ${admin};
   
       address internal constant ACL_ADMIN = ${aclAdmin};
-
-      address internal constant ACL_MANAGER = ${aclManager};
   
       function getToken(string calldata symbol) public pure returns(Token memory m) {
         ${tokenList.reduce((acc, token, ix) => {
@@ -182,7 +182,7 @@ export async function generateIndexFileV3(
   const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV3.sol";
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
   import {Token} from './Common.sol';
 
   library AaveAddressBookV3${testnet ? "Testnet" : ""} {
@@ -197,9 +197,9 @@ export async function generateIndexFileV3(
         IPoolConfigurator POOL_CONFIGURATOR;
         IAaveOracle ORACLE;
         IAaveProtocolDataProvider POOL_DATA_PROVIDER;
+        IACLManager ACL_MANAGER;
         address POOL_ADMIN;
         address ACL_ADMIN;
-        address ACL_MANAGER;
       }
   
       function getMarket(string calldata market) public pure returns(Market memory m) {
@@ -217,9 +217,9 @@ export async function generateIndexFileV3(
                   IPoolConfigurator(${market.poolConfigurator}),
                   IAaveOracle(${market.oracle}),
                   IAaveProtocolDataProvider(${market.poolDataProvider}),
+                  IACLManager(${market.aclManager}),
                   ${market.admin},
-                  ${market.aclAdmin},
-                  ${market.aclManager}
+                  ${market.aclAdmin}
               );
           }${isLast ? ` else revert('Market does not exist');` : ""}`;
     return acc;
