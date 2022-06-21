@@ -58,7 +58,6 @@ export async function generateMarketV3(market: Market) {
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
-    console.log(market.name, tokenList[0].aTokenAddress, collector);
     const collectorContract = new ethers.Contract(
       collector,
       collectorV3ABI,

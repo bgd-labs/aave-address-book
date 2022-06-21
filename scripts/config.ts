@@ -103,13 +103,15 @@ export const markets: Market[] = [
     addressProvider: "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
     version: 3,
   },
-  {
-    name: "AaveV3ArbitrumRinkeby",
-    rpc: ARBITRUM_RINKEBY_RPC,
-    addressProvider: "0xF7158D1412Bdc8EAfc6BF97DB4e2178379c9521c",
-    version: 3,
-    testnet: true,
-  },
+  // seems to be a non up-to-date v3 market, being not fully compatible with v3
+  // excluding it from the generator as it would make v3 markets inconsistent
+  // {
+  //   name: "AaveV3ArbitrumRinkeby",
+  //   rpc: ARBITRUM_RINKEBY_RPC,
+  //   addressProvider: "0xF7158D1412Bdc8EAfc6BF97DB4e2178379c9521c",
+  //   version: 3,
+  //   testnet: true,
+  // },
   {
     name: "AaveV3Arbitrum",
     rpc: ARBITRUM_RPC,
