@@ -29,6 +29,9 @@ library AaveV3ArbitrumRinkeby {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant RESERVE_TREASURY =
+        0xeC67987831C4278160D8e652d3edb0Fc45B3766d;
+
     function getToken(string calldata symbol)
         public
         pure

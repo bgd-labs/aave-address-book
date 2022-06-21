@@ -29,6 +29,12 @@ library AaveV3Polygon {
     address internal constant ACL_ADMIN =
         0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
 
+    address internal constant COLLECTOR =
+        0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0x73D435AFc15e35A9aC63B2a81B5AA54f974eadFe;
+
     function getToken(string calldata symbol)
         public
         pure

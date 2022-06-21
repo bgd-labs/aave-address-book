@@ -29,6 +29,12 @@ library AaveV3Optimism {
     address internal constant ACL_ADMIN =
         0xE50c8C619d05ff98b22Adf991F17602C774F785c;
 
+    address internal constant COLLECTOR =
+        0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0xA77E4A084d7d4f064E326C0F6c0aCefd47A5Cb21;
+
     function getToken(string calldata symbol)
         public
         pure

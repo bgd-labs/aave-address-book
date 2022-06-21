@@ -29,6 +29,12 @@ library AaveV3FantomTestnet {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant COLLECTOR =
+        0xF49dA7a22463D140f9f8dc7C91468C8721215496;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0x7aaB2c2CC186131851d6B1876D16eDc849846042;
+
     function getToken(string calldata symbol)
         public
         pure

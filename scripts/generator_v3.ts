@@ -5,6 +5,7 @@ import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
 import poolV3ABI from "./abi/pool_v3_abi.json";
 import erc20ABI from "./abi/erc20_abi.json";
 import aTokenV3ABI from "./abi/aToken_v3_abi.json";
+import collectorV3ABI from "./abi/collector_v3_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV3(market: Market) {
@@ -36,22 +37,35 @@ export async function generateMarketV3(market: Market) {
           reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
             ? "MKR"
             : await erc20Contract.symbol();
-        // const aTokenContract = new ethers.Contract(
-        //   data.aTokenAddress,
-        //   aTokenV3ABI,
-        //   provider
-        // );
         return {
           symbol,
           underlyingAsset: reserve,
           aTokenAddress: data.aTokenAddress,
           stableDebtTokenAddress: data.stableDebtTokenAddress,
           variableDebtTokenAddress: data.variableDebtTokenAddress,
-          // reserveTreasuryAddress:
-          //   await aTokenContract.RESERVE_TREASURY_ADDRESS(),
         };
       })
     );
+
+    /**
+     * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
+     */
+    const aTokenContract = new ethers.Contract(
+      tokenList[0].aTokenAddress,
+      aTokenV3ABI,
+      provider
+    );
+
+    const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
+
+    console.log(market.name, tokenList[0].aTokenAddress, collector);
+    const collectorContract = new ethers.Contract(
+      collector,
+      collectorV3ABI,
+      provider
+    );
+
+    const collectorController = await collectorContract.getFundsAdmin();
 
     const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
@@ -82,6 +96,10 @@ export async function generateMarketV3(market: Market) {
       address internal constant POOL_ADMIN = ${admin};
   
       address internal constant ACL_ADMIN = ${aclAdmin};
+
+      address internal constant COLLECTOR = ${collector};
+
+      address internal constant COLLECTOR_CONTROLLER = ${collectorController};
   
       function getToken(string calldata symbol) public pure returns(Token memory m) {
         ${tokenList.reduce((acc, token, ix) => {
@@ -155,6 +173,8 @@ export async function generateMarketV3(market: Market) {
       aclManager,
       tokenList,
       poolDataProvider,
+      collectorController,
+      collector,
       ...market,
     };
   } catch (error: any) {
@@ -172,6 +192,8 @@ interface MarketV3 extends Market {
   poolDataProvider: string;
   aclAdmin: string;
   aclManager: string;
+  collector: string;
+  collectorController: string;
   tokenList: Token[];
 }
 
@@ -200,6 +222,8 @@ export async function generateIndexFileV3(
         IACLManager ACL_MANAGER;
         address POOL_ADMIN;
         address ACL_ADMIN;
+        address COLLECTOR;
+        address COLLECTOR_CONTROLLER;
       }
   
       function getMarket(string calldata market) public pure returns(Market memory m) {
@@ -219,7 +243,9 @@ export async function generateIndexFileV3(
                   IAaveProtocolDataProvider(${market.poolDataProvider}),
                   IACLManager(${market.aclManager}),
                   ${market.admin},
-                  ${market.aclAdmin}
+                  ${market.aclAdmin},
+                  ${market.collector},
+                  ${market.collectorController}
               );
           }${isLast ? ` else revert('Market does not exist');` : ""}`;
     return acc;
