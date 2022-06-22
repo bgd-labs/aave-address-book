@@ -1917,8 +1917,54 @@ struct TokenData {
   address tokenAddress;
 }
 
-// TODO: incomplete interface
+// TODO: add better documentation
 interface IAaveProtocolDataProvider {
+  
+  function getAllReservesTokens() external view returns (TokenData[] memory);
+
+  function getAllATokens() external view returns (TokenData[] memory);
+
+  function getReserveConfigurationData(address asset)
+    external
+    view
+    returns (
+      uint256 decimals,
+      uint256 ltv,
+      uint256 liquidationThreshold,
+      uint256 liquidationBonus,
+      uint256 reserveFactor,
+      bool usageAsCollateralEnabled,
+      bool borrowingEnabled,
+      bool stableBorrowRateEnabled,
+      bool isActive,
+      bool isFrozen
+    );
+
+  function getReserveEModeCategory(address asset)
+    external
+    view
+    returns (uint256);
+
+  function getReserveCaps(address asset)
+    external
+    view
+    returns (uint256 borrowCap, uint256 supplyCap);
+
+  function getPaused(address asset) external view returns (bool isPaused);
+
+  function getSiloedBorrowing(address asset) external view returns (bool);
+
+  function getLiquidationProtocolFee(address asset)
+    external
+    view
+    returns (uint256);
+
+  function getUnbackedMintCap(address asset) external view returns (uint256);
+
+  function getDebtCeiling(address asset) external view returns (uint256);
+
+  function getDebtCeilingDecimals() external pure returns (uint256);
+
   /**
    * @notice Returns the reserve data
    * @param asset The address of the underlying asset of the reserve
@@ -1967,23 +2013,20 @@ interface IAaveProtocolDataProvider {
    **/
   function getTotalDebt(address asset) external view returns (uint256);
 
-  function getReserveConfigurationData(address asset)
+  function getUserReserveData(address asset, address user)
     external
     view
     returns (
-      uint256 decimals,
-      uint256 ltv,
-      uint256 liquidationThreshold,
-      uint256 liquidationBonus,
-      uint256 reserveFactor,
-      bool usageAsCollateralEnabled,
-      bool borrowingEnabled,
-      bool stableBorrowRateEnabled,
-      bool isActive,
-      bool isFrozen
+      uint256 currentATokenBalance,
+      uint256 currentStableDebt,
+      uint256 currentVariableDebt,
+      uint256 principalStableDebt,
+      uint256 scaledVariableDebt,
+      uint256 stableBorrowRate,
+      uint256 liquidityRate,
+      uint40 stableRateLastUpdated,
+      bool usageAsCollateralEnabled
     );
-
-  function getAllReservesTokens() external view returns (TokenData[] memory);
 
   function getReserveTokensAddresses(address asset)
     external
@@ -1993,6 +2036,11 @@ interface IAaveProtocolDataProvider {
       address stableDebtTokenAddress,
       address variableDebtTokenAddress
     );
+  
+    function getInterestRateStrategyAddress(address asset)
+      external
+      view
+      returns (address irStrategyAddress);
 }
 
 /**
