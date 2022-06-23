@@ -2311,29 +2311,29 @@ interface IInterestRateStrategy {
    * @dev This constant represents the usage ratio at which the pool aims to obtain most competitive borrow rates.
    * Expressed in ray
    */
-  function OPTIMAL_USAGE_RATIO() external returns (uint256);
+  function OPTIMAL_USAGE_RATIO() external view returns (uint256);
 
   /**
    * @dev This constant represents the optimal stable debt to total debt ratio of the reserve.
    * Expressed in ray
    */
-  function OPTIMAL_STABLE_TO_TOTAL_DEBT_RATIO() external returns (uint256);
+  function OPTIMAL_STABLE_TO_TOTAL_DEBT_RATIO() external view returns (uint256);
 
   /**
    * @dev This constant represents the excess usage ratio above the optimal. It's always equal to
    * 1-optimal usage ratio. Added as a constant here for gas optimizations.
    * Expressed in ray
    */
-  function MAX_EXCESS_USAGE_RATIO() external returns (uint256);
+  function MAX_EXCESS_USAGE_RATIO() external view returns (uint256);
 
   /**
    * @dev This constant represents the excess stable debt ratio above the optimal. It's always equal to
    * 1-optimal stable to total debt ratio. Added as a constant here for gas optimizations.
    * Expressed in ray
    */
-  function MAX_EXCESS_STABLE_TO_TOTAL_DEBT_RATIO() external returns (uint256);
+  function MAX_EXCESS_STABLE_TO_TOTAL_DEBT_RATIO() external view returns (uint256);
 
-  function ADDRESSES_PROVIDER() external returns (IPoolAddressesProvider);
+  function ADDRESSES_PROVIDER() external view returns (IPoolAddressesProvider);
 
   /**
    * @notice Returns the variable rate slope below optimal usage ratio
