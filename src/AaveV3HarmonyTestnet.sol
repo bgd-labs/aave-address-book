@@ -29,6 +29,12 @@ library AaveV3HarmonyTestnet {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant COLLECTOR =
+        0x9aa7fEc87CA69695Dd1f879567CcF49F3ba417E2;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0x85E44420b6137bbc75a85CAB5c9A3371af976FdE;
+
     function getToken(string calldata symbol)
         public
         pure

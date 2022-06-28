@@ -29,6 +29,12 @@ library AaveV3Fuji {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant COLLECTOR =
+        0xBaaCc99123133851Ba2D6d34952aa08CBDf5A4E4;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0xFCadBDefd30E11258559Ba239C8a5A8A8D28CB00;
+
     function getToken(string calldata symbol)
         public
         pure

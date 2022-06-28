@@ -29,6 +29,12 @@ library AaveV3Rinkeby {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant COLLECTOR =
+        0xD1D7347DC861A86Cb5ba39fdD7f8335aCa7bD81A;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0x45F1e6D6F206bBe33d495Ef94F64C1CF6e50D1BE;
+
     function getToken(string calldata symbol)
         public
         pure

@@ -29,6 +29,12 @@ library AaveV3Mumbai {
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
+    address internal constant COLLECTOR =
+        0x3B6E7a4750e478D7f7d6A5d464099A02ef164bCC;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0x810d913542D399F3680F0E806DEDf6EACf0e3383;
+
     function getToken(string calldata symbol)
         public
         pure

@@ -29,6 +29,12 @@ library AaveV3Fantom {
     address internal constant ACL_ADMIN =
         0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949;
 
+    address internal constant COLLECTOR =
+        0xBe85413851D195fC6341619cD68BfDc26a25b928;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0xc0F0cFBbd0382BcE3B93234E4BFb31b2aaBE36aD;
+
     function getToken(string calldata symbol)
         public
         pure
