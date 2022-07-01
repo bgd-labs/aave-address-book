@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {AaveV3Rinkeby} from "./AaveV3Rinkeby.sol";
 import {AaveV2Ethereum} from "./AaveV2Ethereum.sol";
 import {AaveV2EthereumAMM} from "./AaveV2EthereumAMM.sol";
 import {AaveV2Mumbai} from "./AaveV2Mumbai.sol";
@@ -26,3 +25,4 @@ import {AaveAddressBookV3Testnet} from "./AaveAddressBookV3Testnet.sol";
 import {AaveAddressBookV3} from "./AaveAddressBookV3.sol";
 
 import {Token} from "./Common.sol";
+import {AaveGovernanceV2} from "./AaveGovernanceV2.sol";
