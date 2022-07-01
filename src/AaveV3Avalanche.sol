@@ -128,6 +128,17 @@ library AaveV3Avalanche {
                     0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E,
                     0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8
                 );
+        } else if (
+            keccak256(abi.encodePacked(symbol)) ==
+            keccak256(abi.encodePacked("sAVAX"))
+        ) {
+            return
+                Token(
+                    0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE,
+                    0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf,
+                    0x08Cb71192985E936C7Cd166A8b268035e400c3c3,
+                    0x77CA01483f379E58174739308945f044e1a764dc
+                );
         } else revert("Token does not exist");
     }
 }
