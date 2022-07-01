@@ -9,13 +9,12 @@ import collectorV3ABI from "./abi/collector_v3_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV3(market: Market) {
-  const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
   // using getAddress to get correct checksum in case the one in config isn't correct
   const addressProvider = ethers.utils.getAddress(market.addressProvider);
   const contract = new ethers.Contract(
     addressProvider,
     addressProviderV3ABI,
-    provider
+    market.rpcProvider
   );
   try {
     const pool = await contract.getPool();
@@ -25,13 +24,21 @@ export async function generateMarketV3(market: Market) {
     const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
 
-    const lendingPoolContract = new ethers.Contract(pool, poolV3ABI, provider);
+    const lendingPoolContract = new ethers.Contract(
+      pool,
+      poolV3ABI,
+      market.rpcProvider
+    );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const tokenList = await Promise.all(
       reserves.map(async (reserve) => {
         const data = await lendingPoolContract.getReserveData(reserve);
-        const erc20Contract = new ethers.Contract(reserve, erc20ABI, provider);
+        const erc20Contract = new ethers.Contract(
+          reserve,
+          erc20ABI,
+          market.rpcProvider
+        );
         const symbol =
           reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
             ? "MKR"
@@ -52,7 +59,7 @@ export async function generateMarketV3(market: Market) {
     const aTokenContract = new ethers.Contract(
       tokenList[0].aTokenAddress,
       aTokenV3ABI,
-      provider
+      market.rpcProvider
     );
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
@@ -60,7 +67,7 @@ export async function generateMarketV3(market: Market) {
     const collectorContract = new ethers.Contract(
       collector,
       collectorV3ABI,
-      provider
+      market.rpcProvider
     );
 
     const collectorController = await collectorContract.getFundsAdmin();

@@ -1,24 +1,45 @@
 import { ethers } from "ethers";
 
-const MAINNET_RPC = "https://rpc.flashbots.net/";
-const MUMBAI_RPC = "https://polygon-mumbai.g.alchemy.com/v2/demo";
-const POLYGON_RPC = "https://polygon-rpc.com";
-const FUJI_RPC = "https://api.avax-test.network/ext/bc/C/rpc";
-const AVALANCHE_RPC = "https://api.avax.network/ext/bc/C/rpc";
-const ARBITRUM_RPC = "https://arb1.arbitrum.io/rpc";
-const HARMONY_RPC = "https://api.s0.t.hmny.io";
-const HARMONY_TESTNET_RPC = "https://api.s0.pops.one";
-const OPTIMISM_KOVAN = "https://kovan.optimism.io";
-const OPTIMISM_RPC = "https://mainnet.optimism.io";
-const FANTOM_TESTNET_RPC = "https://rpc.testnet.fantom.network";
-const FANTOM_RPC = "https://rpc.ftm.tools";
+const MAINNET_RPC = [
+  "https://eth-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  "https://rpc.flashbots.net/",
+  "https://cloudflare-eth.com",
+];
+const MUMBAI_RPC = ["https://polygon-mumbai.g.alchemy.com/v2/demo"];
+const POLYGON_RPC = [
+  "https://poly-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  "https://polygon-rpc.com",
+];
+const FUJI_RPC = ["https://api.avax-test.network/ext/bc/C/rpc"];
+const AVALANCHE_RPC = [
+  "https://avax-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca/ext/bc/C/rpc",
+  "https://api.avax.network/ext/bc/C/rpc",
+];
+const ARBITRUM_RPC = ["https://arb1.arbitrum.io/rpc"];
+const HARMONY_RPC = [
+  "https://harmony-0.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  "https://api.s0.t.hmny.io",
+  "https://api.harmony.one",
+];
+const HARMONY_TESTNET_RPC = ["https://api.s0.pops.one"];
+const OPTIMISM_KOVAN = ["https://kovan.optimism.io"];
+const OPTIMISM_RPC = [
+  "https://optimism-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  "https://mainnet.optimism.io",
+];
+const FANTOM_TESTNET_RPC = ["https://rpc.testnet.fantom.network"];
+const FANTOM_RPC = [
+  "https://fantom-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  "https://rpc.ftm.tools",
+];
 
 export interface Market {
   name: string;
-  rpc: string;
+  rpc: string[];
   addressProvider: string;
   version: number;
   testnet?: boolean;
+  rpcProvider: ethers.providers.FallbackProvider;
 }
 
 export interface Token {
@@ -158,4 +179,14 @@ export const markets: Market[] = [
   ...m,
   // fix checksum
   addressProvider: ethers.utils.getAddress(m.addressProvider),
+  rpcProvider: new ethers.providers.FallbackProvider(
+    m.rpc.map((rpc, ix) => {
+      return {
+        provider: new ethers.providers.StaticJsonRpcProvider(rpc),
+        priority: ix,
+        stallTimeout: 500,
+      };
+    }),
+    1
+  ),
 }));

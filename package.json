@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "dependencies": {
-    "ethers": "^5.6.5",
+    "ethers": "^5.6.9",
     "ts-node": "^10.8.0"
   },
   "devDependencies": {

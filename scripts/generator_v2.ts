@@ -9,14 +9,13 @@ import collectorV2ABI from "./abi/collector_v2_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV2(market: Market) {
-  const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
   // using getAddress to get correct checksum in case the one in config isn't correct
   const addressProvider = ethers.utils.getAddress(market.addressProvider);
   try {
     const addressProviderContract = new ethers.Contract(
       addressProvider,
       addressProviderV2ABI,
-      provider
+      market.rpcProvider
     );
     const lendingPool = await addressProviderContract.getLendingPool();
     const lendingPoolConfigurator =
@@ -32,14 +31,18 @@ export async function generateMarketV2(market: Market) {
     const lendingPoolContract = new ethers.Contract(
       lendingPool,
       lendingPoolV2ABI,
-      provider
+      market.rpcProvider
     );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const tokenList = await Promise.all(
       reserves.map(async (reserve) => {
         const data = await lendingPoolContract.getReserveData(reserve);
-        const erc20Contract = new ethers.Contract(reserve, erc20ABI, provider);
+        const erc20Contract = new ethers.Contract(
+          reserve,
+          erc20ABI,
+          market.rpcProvider
+        );
         const symbol =
           reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
             ? "MKR"
