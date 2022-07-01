@@ -25,4 +25,4 @@ import {AaveAddressBookV3Testnet} from "./AaveAddressBookV3Testnet.sol";
 import {AaveAddressBookV3} from "./AaveAddressBookV3.sol";
 
 import {Token} from "./Common.sol";
-import {AaveGovernanceV2} from "./AaveGovernanceV2.sol";
+import {AaveGovernanceV2, IAaveGovernanceV2, IExecutorWithTimelock, IGovernanceStrategy} from "./AaveGovernanceV2.sol";
