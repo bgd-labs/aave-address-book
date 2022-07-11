@@ -28,6 +28,12 @@ library AaveV2EthereumAMM {
     address internal constant EMERGENCY_ADMIN =
         0xB9062896ec3A615a4e4444DF183F0531a77218AE;
 
+    address internal constant COLLECTOR =
+        0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
+
+    address internal constant COLLECTOR_CONTROLLER =
+        0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
+
     function getToken(string calldata symbol)
         public
         pure

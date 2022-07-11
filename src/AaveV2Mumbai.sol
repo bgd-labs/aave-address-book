@@ -28,6 +28,11 @@ library AaveV2Mumbai {
     address internal constant EMERGENCY_ADMIN =
         0x943E44157dC0302a5CEb172374d1749018a00994;
 
+    address internal constant COLLECTOR =
+        0x943E44157dC0302a5CEb172374d1749018a00994;
+
+    address internal constant COLLECTOR_CONTROLLER = address(0);
+
     function getToken(string calldata symbol)
         public
         pure

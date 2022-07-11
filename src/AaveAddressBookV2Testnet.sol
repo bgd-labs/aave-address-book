@@ -16,6 +16,8 @@ library AaveAddressBookV2Testnet {
         IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
         address POOL_ADMIN;
         address EMERGENCY_ADMIN;
+        address COLLECTOR;
+        address COLLECTOR_CONTROLLER;
     }
 
     function getMarket(string calldata market)
@@ -41,7 +43,9 @@ library AaveAddressBookV2Testnet {
                         0xFA3bD19110d986c5e5E9DD5F69362d05035D045B
                     ),
                     0x943E44157dC0302a5CEb172374d1749018a00994,
-                    0x943E44157dC0302a5CEb172374d1749018a00994
+                    0x943E44157dC0302a5CEb172374d1749018a00994,
+                    0x943E44157dC0302a5CEb172374d1749018a00994,
+                    address(0)
                 );
         } else if (
             keccak256(abi.encodePacked(market)) ==
@@ -61,7 +65,9 @@ library AaveAddressBookV2Testnet {
                         0x0668EDE013c1c475724523409b8B6bE633469585
                     ),
                     0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e,
-                    0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e
+                    0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e,
+                    0xB45F5C501A22288dfdb897e5f73E189597e09288,
+                    address(0)
                 );
         } else revert("Market does not exist");
     }

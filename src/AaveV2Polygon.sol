@@ -28,6 +28,11 @@ library AaveV2Polygon {
     address internal constant EMERGENCY_ADMIN =
         0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;
 
+    address internal constant COLLECTOR =
+        0x7734280A4337F37Fbf4651073Db7c28C80B339e9;
+
+    address internal constant COLLECTOR_CONTROLLER = address(0);
+
     function getToken(string calldata symbol)
         public
         pure

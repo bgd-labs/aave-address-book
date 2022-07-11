@@ -23,9 +23,6 @@ library AaveV3Mumbai {
     IACLManager internal constant ACL_MANAGER =
         IACLManager(0x6437b6E14D7ECa1Fa9854df92eB067253D5f683A);
 
-    address internal constant POOL_ADMIN =
-        0x77c45699A715A64A7a7796d5CEe884cf617D5254;
-
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 

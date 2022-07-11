@@ -18,7 +18,6 @@ library AaveAddressBookV3Testnet {
         IAaveOracle ORACLE;
         IAaveProtocolDataProvider POOL_DATA_PROVIDER;
         IACLManager ACL_MANAGER;
-        address POOL_ADMIN;
         address ACL_ADMIN;
         address COLLECTOR;
         address COLLECTOR_CONTROLLER;
@@ -48,7 +47,6 @@ library AaveAddressBookV3Testnet {
                     ),
                     IACLManager(0x6437b6E14D7ECa1Fa9854df92eB067253D5f683A),
                     0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0x3B6E7a4750e478D7f7d6A5d464099A02ef164bCC,
                     0x810d913542D399F3680F0E806DEDf6EACf0e3383
                 );
@@ -70,7 +68,6 @@ library AaveAddressBookV3Testnet {
                         0x8e0988b28f9CdDe0134A206dfF94111578498C63
                     ),
                     IACLManager(0xAa6Fd640173bcA58e5a5CC373531F9038eF3F9e1),
-                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0xBaaCc99123133851Ba2D6d34952aa08CBDf5A4E4,
                     0xFCadBDefd30E11258559Ba239C8a5A8A8D28CB00
@@ -94,7 +91,6 @@ library AaveAddressBookV3Testnet {
                     ),
                     IACLManager(0x94f154aba287b3024fb32386463FC52d488bb09B),
                     0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0xF49dA7a22463D140f9f8dc7C91468C8721215496,
                     0x7aaB2c2CC186131851d6B1876D16eDc849846042
                 );
@@ -117,7 +113,6 @@ library AaveAddressBookV3Testnet {
                     ),
                     IACLManager(0x1758d4e6f68166C4B2d9d0F049F33dEB399Daa1F),
                     0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0x9aa7fEc87CA69695Dd1f879567CcF49F3ba417E2,
                     0x85E44420b6137bbc75a85CAB5c9A3371af976FdE
                 );
@@ -139,7 +134,6 @@ library AaveAddressBookV3Testnet {
                         0x2f733c0389bfF96a3f930Deb2f6DB1d767Cd3215
                     ),
                     IACLManager(0x552626e2E6e35566d53CE0C5Ad97d72E95bC3fc3),
-                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0x733DC8C72B189791B28Dc8c6Fb09D9201b01eF2f,
                     0x9b791f6A34B2C87c360902F050dA5e0075b7A567

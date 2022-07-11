@@ -23,10 +23,6 @@ contract AaveAddressBookTest is Test {
         assertEq(address(AaveV3Fantom.ORACLE), address(0));
     }
 
-    function testFailPoolAdminIs0Address() public {
-        assertEq(AaveV3Fantom.POOL_ADMIN, address(0));
-    }
-
     function testFailACLAdminIs0Address() public {
         assertEq(AaveV3Fantom.ACL_ADMIN, address(0));
     }

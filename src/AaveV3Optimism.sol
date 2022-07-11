@@ -23,9 +23,6 @@ library AaveV3Optimism {
     IACLManager internal constant ACL_MANAGER =
         IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-    address internal constant POOL_ADMIN =
-        0xE50c8C619d05ff98b22Adf991F17602C774F785c;
-
     address internal constant ACL_ADMIN =
         0xE50c8C619d05ff98b22Adf991F17602C774F785c;
 

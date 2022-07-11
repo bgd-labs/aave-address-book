@@ -28,6 +28,11 @@ library AaveV2Fuji {
     address internal constant EMERGENCY_ADMIN =
         0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e;
 
+    address internal constant COLLECTOR =
+        0xB45F5C501A22288dfdb897e5f73E189597e09288;
+
+    address internal constant COLLECTOR_CONTROLLER = address(0);
+
     function getToken(string calldata symbol)
         public
         pure

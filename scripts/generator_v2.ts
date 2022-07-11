@@ -4,6 +4,8 @@ import fs from "fs";
 import addressProviderV2ABI from "./abi/address_provider_v2_abi.json";
 import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
 import erc20ABI from "./abi/erc20_abi.json";
+import aTokenV2ABI from "./abi/aToken_v2_abi.json";
+import collectorV2ABI from "./abi/collector_v2_abi.json";
 import prettier from "prettier";
 
 export async function generateMarketV2(market: Market) {
@@ -21,6 +23,7 @@ export async function generateMarketV2(market: Market) {
       await addressProviderContract.getLendingPoolConfigurator();
     const oracle = await addressProviderContract.getPriceOracle();
     const admin = await addressProviderContract.getPoolAdmin();
+    // const owner = await addressProviderContract.owner();
     const emergencyAdmin = await addressProviderContract.getEmergencyAdmin();
     const poolDataProvider = await addressProviderContract.getAddress(
       "0x0100000000000000000000000000000000000000000000000000000000000000"
@@ -51,6 +54,31 @@ export async function generateMarketV2(market: Market) {
       })
     );
 
+    /**
+     * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
+     */
+    const aTokenContract = new ethers.Contract(
+      tokenList[0].aTokenAddress,
+      aTokenV2ABI,
+      provider
+    );
+
+    const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
+
+    const collectorContract = new ethers.Contract(
+      collector,
+      collectorV2ABI,
+      provider
+    );
+
+    let collectorController;
+
+    try {
+      collectorController = await collectorContract.getFundsAdmin();
+    } catch (e) {
+      collectorController = "address(0)";
+    }
+
     const templateV2 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
@@ -77,6 +105,10 @@ export async function generateMarketV2(market: Market) {
       address internal constant POOL_ADMIN = ${admin};
   
       address internal constant EMERGENCY_ADMIN = ${emergencyAdmin};
+
+      address internal constant COLLECTOR = ${collector};
+
+      address internal constant COLLECTOR_CONTROLLER = ${collectorController};
       
       function getToken(string calldata symbol) public pure returns(Token memory m) {
   ${tokenList.reduce((acc, token, ix) => {
@@ -143,6 +175,8 @@ export async function generateMarketV2(market: Market) {
       oracle,
       admin,
       emergencyAdmin,
+      collector,
+      collectorController,
       tokenList,
       ...market,
     };
@@ -160,6 +194,8 @@ interface MarketV2 extends Market {
   admin: string;
   emergencyAdmin: string;
   poolDataProvider: string;
+  collector: string;
+  collectorController: string;
   tokenList: Token[];
 }
 
@@ -187,6 +223,8 @@ export async function generateIndexFileV2(
         IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
         address POOL_ADMIN;
         address EMERGENCY_ADMIN;
+        address COLLECTOR;
+        address COLLECTOR_CONTROLLER;
       }
   
       function getMarket(string calldata market) public pure returns(Market memory m) {
@@ -205,7 +243,9 @@ export async function generateIndexFileV2(
                   IAaveOracle(${market.oracle}),
                   IAaveProtocolDataProvider(${market.poolDataProvider}),
                   ${market.admin},
-                  ${market.emergencyAdmin}
+                  ${market.emergencyAdmin},
+                  ${market.collector},
+                  ${market.collectorController}
               );
           }${isLast ? ` else revert('Market does not exist');` : ""}`;
     return acc;
