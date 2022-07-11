@@ -3,6 +3,7 @@ pragma solidity >=0.6.0;
 
 import {AaveV2Ethereum} from "./AaveV2Ethereum.sol";
 import {AaveV2EthereumAMM} from "./AaveV2EthereumAMM.sol";
+import {AaveV2EthereumArc} from "./AaveV2EthereumArc.sol";
 import {AaveV2Mumbai} from "./AaveV2Mumbai.sol";
 import {AaveV3Mumbai} from "./AaveV3Mumbai.sol";
 import {AaveV2Polygon} from "./AaveV2Polygon.sol";

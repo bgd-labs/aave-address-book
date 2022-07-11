@@ -21,7 +21,6 @@ export async function generateMarketV3(market: Market) {
     const pool = await contract.getPool();
     const poolConfigurator = await contract.getPoolConfigurator();
     const oracle = await contract.getPriceOracle();
-    const admin = await contract.owner();
     const aclAdmin = await contract.getACLAdmin();
     const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
@@ -91,8 +90,6 @@ export async function generateMarketV3(market: Market) {
       IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider(${poolDataProvider});
   
       IACLManager internal constant ACL_MANAGER = IACLManager(${aclManager});
-
-      address internal constant POOL_ADMIN = ${admin};
   
       address internal constant ACL_ADMIN = ${aclAdmin};
 
@@ -149,10 +146,6 @@ export async function generateMarketV3(market: Market) {
           assertEq(address(${market.name}.ORACLE), address(0));
       }
   
-      function testFailPoolAdminIs0Address() public {
-          assertEq(${market.name}.POOL_ADMIN, address(0));
-      }
-  
       function testFailACLAdminIs0Address() public {
           assertEq(${market.name}.ACL_ADMIN, address(0));
       }
@@ -167,7 +160,6 @@ export async function generateMarketV3(market: Market) {
       pool,
       poolConfigurator,
       oracle,
-      admin,
       aclAdmin,
       aclManager,
       tokenList,
@@ -187,7 +179,6 @@ interface MarketV3 extends Market {
   pool: string;
   poolConfigurator: string;
   oracle: string;
-  admin: string;
   poolDataProvider: string;
   aclAdmin: string;
   aclManager: string;
@@ -219,7 +210,6 @@ export async function generateIndexFileV3(
         IAaveOracle ORACLE;
         IAaveProtocolDataProvider POOL_DATA_PROVIDER;
         IACLManager ACL_MANAGER;
-        address POOL_ADMIN;
         address ACL_ADMIN;
         address COLLECTOR;
         address COLLECTOR_CONTROLLER;
@@ -241,7 +231,6 @@ export async function generateIndexFileV3(
                   IAaveOracle(${market.oracle}),
                   IAaveProtocolDataProvider(${market.poolDataProvider}),
                   IACLManager(${market.aclManager}),
-                  ${market.admin},
                   ${market.aclAdmin},
                   ${market.collector},
                   ${market.collectorController}

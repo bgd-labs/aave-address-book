@@ -7,6 +7,7 @@ import {Token} from "./Common.sol";
 library AaveAddressBookV2 {
     string public constant AaveV2Ethereum = "AaveV2Ethereum";
     string public constant AaveV2EthereumAMM = "AaveV2EthereumAMM";
+    string public constant AaveV2EthereumArc = "AaveV2EthereumArc";
     string public constant AaveV2Polygon = "AaveV2Polygon";
     string public constant AaveV2Avalanche = "AaveV2Avalanche";
 
@@ -18,6 +19,8 @@ library AaveAddressBookV2 {
         IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
         address POOL_ADMIN;
         address EMERGENCY_ADMIN;
+        address COLLECTOR;
+        address COLLECTOR_CONTROLLER;
     }
 
     function getMarket(string calldata market)
@@ -43,7 +46,9 @@ library AaveAddressBookV2 {
                         0x057835Ad21a177dbdd3090bB1CAE03EaCF78Fc6d
                     ),
                     0xEE56e2B3D491590B5b31738cC34d5232F378a8D5,
-                    0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633
+                    0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633,
+                    0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c,
+                    0x3d569673dAa0575c936c7c67c4E6AedA69CC630C
                 );
         } else if (
             keccak256(abi.encodePacked(market)) ==
@@ -63,7 +68,31 @@ library AaveAddressBookV2 {
                         0x0000000000000000000000000000000000000000
                     ),
                     0xEE56e2B3D491590B5b31738cC34d5232F378a8D5,
-                    0xB9062896ec3A615a4e4444DF183F0531a77218AE
+                    0xB9062896ec3A615a4e4444DF183F0531a77218AE,
+                    0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c,
+                    0x3d569673dAa0575c936c7c67c4E6AedA69CC630C
+                );
+        } else if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV2EthereumArc))
+        ) {
+            return
+                Market(
+                    ILendingPoolAddressesProvider(
+                        0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00
+                    ),
+                    ILendingPool(0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0),
+                    ILendingPoolConfigurator(
+                        0x4e1c7865e7BE78A7748724Fa0409e88dc14E67aA
+                    ),
+                    IAaveOracle(0xB8a7bc0d13B1f5460513040a97F404b4fea7D2f3),
+                    IAaveProtocolDataProvider(
+                        0x71B53fC437cCD988b1b89B1D4605c3c3d0C810ea
+                    ),
+                    0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218,
+                    0x33B09130b035d6D7e57d76fEa0873d9545FA7557,
+                    0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c,
+                    0x3d569673dAa0575c936c7c67c4E6AedA69CC630C
                 );
         } else if (
             keccak256(abi.encodePacked(market)) ==
@@ -83,7 +112,9 @@ library AaveAddressBookV2 {
                         0x7551b5D2763519d4e37e8B81929D336De671d46d
                     ),
                     0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
-                    0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58
+                    0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58,
+                    0x7734280A4337F37Fbf4651073Db7c28C80B339e9,
+                    address(0)
                 );
         } else if (
             keccak256(abi.encodePacked(market)) ==
@@ -103,7 +134,9 @@ library AaveAddressBookV2 {
                         0x65285E9dfab318f57051ab2b139ccCf232945451
                     ),
                     0x01244E7842254e3FD229CD263472076B1439D1Cd,
-                    0x01244E7842254e3FD229CD263472076B1439D1Cd
+                    0x01244E7842254e3FD229CD263472076B1439D1Cd,
+                    0x467b92aF281d14cB6809913AD016a607b5ba8A36,
+                    address(0)
                 );
         } else revert("Market does not exist");
     }
@@ -759,6 +792,55 @@ library AaveAddressBookV2 {
                         0xCa5DFDABBfFD58cfD49A9f78Ca52eC8e0591a3C5,
                         0xFEaeCde9Eb0cd43FDE13427C6C7ef406780a8136,
                         0x0B7c7d9c5548A23D0455d1edeC541cc2AD955a9d
+                    );
+            } else revert("Token does not exist");
+        } else if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV2EthereumArc))
+        ) {
+            if (
+                keccak256(abi.encodePacked(symbol)) ==
+                keccak256(abi.encodePacked("USDC"))
+            ) {
+                return
+                    Token(
+                        0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,
+                        0xd35f648C3C7f17cd1Ba92e5eac991E3EfcD4566d,
+                        0x2a278CDA70D2Fa3eC52B50D9cB84a309CE13A308,
+                        0xe8D876034F96081063cD57Cd87b94a156b4E03E1
+                    );
+            } else if (
+                keccak256(abi.encodePacked(symbol)) ==
+                keccak256(abi.encodePacked("WBTC"))
+            ) {
+                return
+                    Token(
+                        0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599,
+                        0xe6d6E7dA65A2C18109Ff56B7CBBdc7B706Fc13F8,
+                        0x8975Aa9d57a40796001Ae98d8C54336cA7Ebe7f1,
+                        0xc371FB4513c23Fc962fe23B12cFBD75E1D37ED91
+                    );
+            } else if (
+                keccak256(abi.encodePacked(symbol)) ==
+                keccak256(abi.encodePacked("WETH"))
+            ) {
+                return
+                    Token(
+                        0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2,
+                        0x319190E3Bbc595602A9E63B2bCfB61c6634355b1,
+                        0x1c2921BA94b8C15daa8458905460B70e41127296,
+                        0x932167279A4ed3b879bA7eDdC85Aa83551f3989D
+                    );
+            } else if (
+                keccak256(abi.encodePacked(symbol)) ==
+                keccak256(abi.encodePacked("AAVE"))
+            ) {
+                return
+                    Token(
+                        0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9,
+                        0x89eFaC495C65d43619c661df654ec64fc10C0A75,
+                        0x5166F949e8658d743D5b9fb1c5c61CDFd6398058,
+                        0x0ac4c7790BC96923b71BfCee44a6923fd085E0c8
                     );
             } else revert("Token does not exist");
         } else if (

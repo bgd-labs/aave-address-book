@@ -23,9 +23,6 @@ library AaveV3Avalanche {
     IACLManager internal constant ACL_MANAGER =
         IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-    address internal constant POOL_ADMIN =
-        0xa35b76E4935449E33C56aB24b23fcd3246f13470;
-
     address internal constant ACL_ADMIN =
         0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 

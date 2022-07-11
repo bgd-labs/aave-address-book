@@ -23,9 +23,6 @@ library AaveV3Harmony {
     IACLManager internal constant ACL_MANAGER =
         IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-    address internal constant POOL_ADMIN =
-        0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;
-
     address internal constant ACL_ADMIN =
         0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;
 

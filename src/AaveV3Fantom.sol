@@ -23,9 +23,6 @@ library AaveV3Fantom {
     IACLManager internal constant ACL_MANAGER =
         IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-    address internal constant POOL_ADMIN =
-        0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949;
-
     address internal constant ACL_ADMIN =
         0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949;
 

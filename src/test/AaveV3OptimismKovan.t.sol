@@ -26,10 +26,6 @@ contract AaveAddressBookTest is Test {
         assertEq(address(AaveV3OptimismKovan.ORACLE), address(0));
     }
 
-    function testFailPoolAdminIs0Address() public {
-        assertEq(AaveV3OptimismKovan.POOL_ADMIN, address(0));
-    }
-
     function testFailACLAdminIs0Address() public {
         assertEq(AaveV3OptimismKovan.ACL_ADMIN, address(0));
     }

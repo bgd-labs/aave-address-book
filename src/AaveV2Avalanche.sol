@@ -28,6 +28,11 @@ library AaveV2Avalanche {
     address internal constant EMERGENCY_ADMIN =
         0x01244E7842254e3FD229CD263472076B1439D1Cd;
 
+    address internal constant COLLECTOR =
+        0x467b92aF281d14cB6809913AD016a607b5ba8A36;
+
+    address internal constant COLLECTOR_CONTROLLER = address(0);
+
     function getToken(string calldata symbol)
         public
         pure

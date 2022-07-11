@@ -23,9 +23,6 @@ library AaveV3Fuji {
     IACLManager internal constant ACL_MANAGER =
         IACLManager(0xAa6Fd640173bcA58e5a5CC373531F9038eF3F9e1);
 
-    address internal constant POOL_ADMIN =
-        0x77c45699A715A64A7a7796d5CEe884cf617D5254;
-
     address internal constant ACL_ADMIN =
         0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
