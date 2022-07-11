@@ -43,6 +43,12 @@ export const markets: Market[] = [
     version: 2,
   },
   {
+    name: "AaveV2EthereumArc",
+    rpc: MAINNET_RPC,
+    addressProvider: "0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00",
+    version: 2,
+  },
+  {
     name: "AaveV2Mumbai",
     rpc: MUMBAI_RPC,
     addressProvider: "0x178113104fEcbcD7fF8669a0150721e231F0FD4B",
