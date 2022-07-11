@@ -543,4 +543,7 @@ library AaveGovernanceV2 {
 
   address public constant LONG_EXECUTOR =
     0x61910EcD7e8e942136CE7Fe7943f956cea1CC2f7;
+
+  address public constant ARC_TIMELOCK =
+    0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218;
 }
