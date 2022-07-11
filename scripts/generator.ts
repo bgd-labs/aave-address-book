@@ -85,6 +85,7 @@ import {AaveAddressBookV3Testnet} from "./AaveAddressBookV3Testnet.sol";
 import {AaveAddressBookV3} from "./AaveAddressBookV3.sol";
 
 import {Token} from './Common.sol';
+import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 \r\n`;
   fs.writeFileSync(
     `./src/AaveAddressBook.sol`,

@@ -1,12 +1,10 @@
 import { ethers } from "ethers";
 
-const RINKEBY_RPC = "https://rinkeby-light.eth.linkpool.io/";
 const MAINNET_RPC = "https://rpc.flashbots.net/";
 const MUMBAI_RPC = "https://polygon-mumbai.g.alchemy.com/v2/demo";
 const POLYGON_RPC = "https://polygon-rpc.com";
 const FUJI_RPC = "https://api.avax-test.network/ext/bc/C/rpc";
 const AVALANCHE_RPC = "https://api.avax.network/ext/bc/C/rpc";
-const ARBITRUM_RINKEBY_RPC = "https://rinkeby.arbitrum.io/rpc";
 const ARBITRUM_RPC = "https://arb1.arbitrum.io/rpc";
 const HARMONY_RPC = "https://api.s0.t.hmny.io";
 const HARMONY_TESTNET_RPC = "https://api.s0.pops.one";
@@ -32,13 +30,6 @@ export interface Token {
 }
 
 export const markets: Market[] = [
-  {
-    name: "AaveV3Rinkeby",
-    rpc: RINKEBY_RPC,
-    addressProvider: "0xBA6378f1c1D046e9EB0F538560BA7558546edF3C",
-    version: 3,
-    testnet: true,
-  },
   {
     name: "AaveV2Ethereum",
     rpc: MAINNET_RPC,
