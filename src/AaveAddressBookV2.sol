@@ -83,7 +83,7 @@ library AaveAddressBookV2 {
                     IAaveProtocolDataProvider(
                         0x71B53fC437cCD988b1b89B1D4605c3c3d0C810ea
                     ),
-                    0x23c155C1c1ecB18a86921Da29802292f1d282c68,
+                    0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218,
                     0x33B09130b035d6D7e57d76fEa0873d9545FA7557
                 );
         } else if (

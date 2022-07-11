@@ -20,7 +20,7 @@ export async function generateMarketV2(market: Market) {
     const lendingPoolConfigurator =
       await addressProviderContract.getLendingPoolConfigurator();
     const oracle = await addressProviderContract.getPriceOracle();
-    const admin = await addressProviderContract.owner();
+    const admin = await addressProviderContract.getPoolAdmin();
     const emergencyAdmin = await addressProviderContract.getEmergencyAdmin();
     const poolDataProvider = await addressProviderContract.getAddress(
       "0x0100000000000000000000000000000000000000000000000000000000000000"
