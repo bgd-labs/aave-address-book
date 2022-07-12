@@ -5,9 +5,6 @@ import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, I
 import {Token} from "./Common.sol";
 
 library AaveAddressBookV2Testnet {
-    string public constant AaveV2Mumbai = "AaveV2Mumbai";
-    string public constant AaveV2Fuji = "AaveV2Fuji";
-
     struct Market {
         ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
         ILendingPool POOL;
@@ -24,51 +21,5 @@ library AaveAddressBookV2Testnet {
         public
         pure
         returns (Market memory m)
-    {
-        if (
-            keccak256(abi.encodePacked(market)) ==
-            keccak256(abi.encodePacked(AaveV2Mumbai))
-        ) {
-            return
-                Market(
-                    ILendingPoolAddressesProvider(
-                        0x178113104fEcbcD7fF8669a0150721e231F0FD4B
-                    ),
-                    ILendingPool(0x9198F13B08E299d85E096929fA9781A1E3d5d827),
-                    ILendingPoolConfigurator(
-                        0xc3c37E2aA3dc66464fa3C29ce2a6EC85beFC45e1
-                    ),
-                    IAaveOracle(0xC365C653f7229894F93994CD0b30947Ab69Ff1D5),
-                    IAaveProtocolDataProvider(
-                        0xFA3bD19110d986c5e5E9DD5F69362d05035D045B
-                    ),
-                    0x943E44157dC0302a5CEb172374d1749018a00994,
-                    0x943E44157dC0302a5CEb172374d1749018a00994,
-                    0x943E44157dC0302a5CEb172374d1749018a00994,
-                    address(0)
-                );
-        } else if (
-            keccak256(abi.encodePacked(market)) ==
-            keccak256(abi.encodePacked(AaveV2Fuji))
-        ) {
-            return
-                Market(
-                    ILendingPoolAddressesProvider(
-                        0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C0f
-                    ),
-                    ILendingPool(0x76cc67FF2CC77821A70ED14321111Ce381C2594D),
-                    ILendingPoolConfigurator(
-                        0x4ceBAFAAcc6Cb26FD90E4cDe138Eb812442bb5f3
-                    ),
-                    IAaveOracle(0xfa4f5B081632c4709667D467F817C09d9008A46A),
-                    IAaveProtocolDataProvider(
-                        0x0668EDE013c1c475724523409b8B6bE633469585
-                    ),
-                    0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e,
-                    0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e,
-                    0xB45F5C501A22288dfdb897e5f73E189597e09288,
-                    address(0)
-                );
-        } else revert("Market does not exist");
-    }
+    {}
 }
