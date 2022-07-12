@@ -120,42 +120,6 @@ export async function generateMarketV3(market: Market) {
       prettier.format(templateV3, { filepath: `./src/${market.name}.sol` })
     );
 
-    // Create the test for the specified market
-    const testTemplateV3 = `// SPDX-License-Identifier: MIT
-  pragma solidity >=0.6.0;
-  
-  import "forge-std/Test.sol";
-  import {${market.name}} from "../AaveAddressBook.sol";
-  
-  contract AaveAddressBookTest is Test {
-      function setUp() public {}
-  
-      function testFailPoolAddressProviderIs0Address() public {
-          assertEq(address(${market.name}.POOL_ADDRESSES_PROVIDER), address(0));
-      }
-  
-      function testFailPoolAddressIs0Address() public {
-          assertEq(address(${market.name}.POOL), address(0));
-      }
-  
-      function testFailPoolConfiguratorIs0Address() public {
-          assertEq(address(${market.name}.POOL_CONFIGURATOR), address(0));
-      }
-  
-      function testFailOracleIs0Address() public {
-          assertEq(address(${market.name}.ORACLE), address(0));
-      }
-  
-      function testFailACLAdminIs0Address() public {
-          assertEq(${market.name}.ACL_ADMIN, address(0));
-      }
-  }\r\n`;
-    const testPath = `./src/test/${market.name}.t.sol`;
-    fs.writeFileSync(
-      testPath,
-      prettier.format(testTemplateV3, { filepath: testPath })
-    );
-
     return {
       pool,
       poolConfigurator,
