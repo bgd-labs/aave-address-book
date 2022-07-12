@@ -498,6 +498,10 @@ interface ILendingPool {
     address interestRateStrategyAddress
   ) external;
 
+  function batchInitReserve(
+    ConfiguratorInputTypes.InitReserveInput[] calldata input
+  ) external;
+
   function setReserveInterestRateStrategyAddress(
     address reserve,
     address rateStrategyAddress
