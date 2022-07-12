@@ -735,6 +735,10 @@ interface ILendingPoolConfigurator {
     address interestRateStrategyAddress
   ) external;
 
+  function batchInitReserve(
+    ConfiguratorInputTypes.InitReserveInput[] calldata input
+  ) external;
+
   /**
    * @dev Updates the aToken implementation for the reserve
    * @param asset The address of the underlying asset of the reserve to be updated
