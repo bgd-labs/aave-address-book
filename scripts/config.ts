@@ -1,35 +1,36 @@
 import { ethers } from "ethers";
 
+// pokt can't be used yet as collectors are not allow-listed, but required to fetch the manager
 const MAINNET_RPC = [
-  "https://eth-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  // "https://eth-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca", does not yet support rwa & arc
   "https://rpc.flashbots.net/",
   "https://cloudflare-eth.com",
 ];
 const MUMBAI_RPC = ["https://polygon-mumbai.g.alchemy.com/v2/demo"];
 const POLYGON_RPC = [
-  "https://poly-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  // "https://poly-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
   "https://polygon-rpc.com",
 ];
 const FUJI_RPC = ["https://api.avax-test.network/ext/bc/C/rpc"];
 const AVALANCHE_RPC = [
-  "https://avax-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca/ext/bc/C/rpc",
+  // "https://avax-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca/ext/bc/C/rpc",
   "https://api.avax.network/ext/bc/C/rpc",
 ];
 const ARBITRUM_RPC = ["https://arb1.arbitrum.io/rpc"];
 const HARMONY_RPC = [
-  "https://harmony-0.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  // "https://harmony-0.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
   "https://api.s0.t.hmny.io",
   "https://api.harmony.one",
 ];
 const HARMONY_TESTNET_RPC = ["https://api.s0.pops.one"];
 const OPTIMISM_KOVAN = ["https://kovan.optimism.io"];
 const OPTIMISM_RPC = [
-  "https://optimism-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  // "https://optimism-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
   "https://mainnet.optimism.io",
 ];
 const FANTOM_TESTNET_RPC = ["https://rpc.testnet.fantom.network"];
 const FANTOM_RPC = [
-  "https://fantom-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  // "https://fantom-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
   "https://rpc.ftm.tools",
 ];
 

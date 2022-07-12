@@ -31,33 +31,13 @@ export async function generateMarketV3(market: Market) {
     );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
-    const tokenList = await Promise.all(
-      reserves.map(async (reserve) => {
-        const data = await lendingPoolContract.getReserveData(reserve);
-        const erc20Contract = new ethers.Contract(
-          reserve,
-          erc20ABI,
-          market.rpcProvider
-        );
-        const symbol =
-          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
-            ? "MKR"
-            : await erc20Contract.symbol();
-        return {
-          symbol,
-          underlyingAsset: reserve,
-          aTokenAddress: data.aTokenAddress,
-          stableDebtTokenAddress: data.stableDebtTokenAddress,
-          variableDebtTokenAddress: data.variableDebtTokenAddress,
-        };
-      })
-    );
+    const data = await lendingPoolContract.getReserveData(reserves[0]);
 
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
     const aTokenContract = new ethers.Contract(
-      tokenList[0].aTokenAddress,
+      data.aTokenAddress,
       aTokenV3ABI,
       market.rpcProvider
     );
@@ -103,24 +83,6 @@ export async function generateMarketV3(market: Market) {
       address internal constant COLLECTOR = ${collector};
 
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
-  
-      function getToken(string calldata symbol) public pure returns(Token memory m) {
-        ${tokenList.reduce((acc, token, ix) => {
-          const isLast = ix === tokenList.length - 1;
-          const start = ix === 0 ? "        if" : " else if";
-          acc += `${start} (keccak256(abi.encodePacked(symbol)) == keccak256(abi.encodePacked("${
-            token.symbol
-          }"))) {
-                    return Token(
-                      ${token.underlyingAsset},
-                      ${token.aTokenAddress},
-                      ${token.stableDebtTokenAddress},
-                      ${token.variableDebtTokenAddress}
-                    );
-                }${isLast ? ` else revert('Token does not exist');` : ""}`;
-          return acc;
-        }, "")}
-      }
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,
@@ -169,7 +131,6 @@ export async function generateMarketV3(market: Market) {
       oracle,
       aclAdmin,
       aclManager,
-      tokenList,
       poolDataProvider,
       collectorController,
       collector,
@@ -191,7 +152,6 @@ interface MarketV3 extends Market {
   aclManager: string;
   collector: string;
   collectorController: string;
-  tokenList: Token[];
 }
 
 export async function generateIndexFileV3(
@@ -246,33 +206,6 @@ export async function generateIndexFileV3(
     return acc;
   }, "")}
       }
-  
-      function getToken(string calldata market, string calldata symbol) public pure returns(Token memory m) {
-        ${markets.reduce((acc, market, ix) => {
-          const isLast = ix === markets.length - 1;
-          const start = ix === 0 ? "        if" : " else if";
-          acc += `${start} (keccak256(abi.encodePacked(market)) == keccak256(abi.encodePacked(${
-            market.name
-          }))) {
-            ${market.tokenList.reduce((acc, token, ix) => {
-              const isLast = ix === market.tokenList.length - 1;
-              const start = ix === 0 ? "        if" : " else if";
-              acc += `${start} (keccak256(abi.encodePacked(symbol)) == keccak256(abi.encodePacked("${
-                token.symbol
-              }"))) {
-                        return Token(
-                          ${token.underlyingAsset},
-                          ${token.aTokenAddress},
-                          ${token.stableDebtTokenAddress},
-                          ${token.variableDebtTokenAddress}
-                        );
-                    }${isLast ? ` else revert('Token does not exist');` : ""}`;
-              return acc;
-            }, "")}
-                }${isLast ? ` else revert('Market does not exist');` : ""}`;
-          return acc;
-        }, "")}
-            }
   }\r\n`;
   const fileName = testnet
     ? `./src/AaveAddressBookV3Testnet.sol`
