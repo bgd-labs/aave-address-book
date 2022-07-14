@@ -92,7 +92,7 @@ library AaveAddressBookV2 {
                     0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218,
                     0x33B09130b035d6D7e57d76fEa0873d9545FA7557,
                     0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c,
-                    address(0)
+                    0x3d569673dAa0575c936c7c67c4E6AedA69CC630C
                 );
         } else if (
             keccak256(abi.encodePacked(market)) ==
