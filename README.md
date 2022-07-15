@@ -1,6 +1,5 @@
 <p align="center"><img width="200" src="./addressbook_logo.png" alt="Address book logo"></a></p>
 
-
 # Aave Address Book :book:
 
 This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.
@@ -22,8 +21,6 @@ You will be able to import on any Solidity file any collection of addresses per 
 ```
 import {AaveV2Ethereum} from "aave-address-book/AaveAddressBook.sol"
 ```
-
-
 
 ### Usage in production
 
@@ -56,33 +53,17 @@ ACL_ADMIN = address;
 ### Usage in tests
 
 In tests it's sometimes useful to have a generic way to import different markets across networks. Therefore the `address book` provides generic entrypoints allowing to access multiple markets and networks.
+
 ```solidity
 Market memory v2market = AaveAddressBookV2.getMarket(marketName);
 Market memory v2testnetmarket = AaveAddressBookV2Testnet.getMarket(marketName);
 Market memory v3market = AaveAddressBookV3.getMarket(marketName);
 Market memory v3testnetmarket = AaveAddressBookV3Testnet.getMarket(marketName);
 ```
-The returned `Market` is a struct following the same layout as the market specific libraries.  
 
-Sometimes it also makes sense to fetch a specific token on a network.
-To streamline this process there is a generic `getToken(marketName: string, symbol: string): Token` function allowing you to fetch any currently listed token from a market. 
-```solidity
-// struct Token {
-//   address underlyingAsset;
-//   address aTokenAddress;
-//   address stableDebtTokenAddress;
-//   address variableDebtTokenAddress;
-// }
-Token memory token = AaveAddressBookV2.getMarket(AaveAddressBookV2.AaveV2Ethereum, 'DAI');
-```
-
-On market specific library entry-points the `getToken` function doesn't require the `marketName` parameter.
-```solidity
-Token memory token = AaveV2Ethereum.getMarket('DAI');
-```
+The returned `Market` is a struct following the same layout as the market specific libraries.
 
 **We don't recommend using these generic libraries in production code as they are quite gas & code-size intensive.**
-
 
 ## Running this repository
 
