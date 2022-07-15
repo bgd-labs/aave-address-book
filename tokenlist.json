@@ -15,7 +15,7 @@
       "description": "Tokens that earn interest on the Aave Protocol V3"
     }
   },
-  "timestamp": "2020-12-11T17:08:18.941Z",
+  "timestamp": "2022-07-15T13:38:20.398Z",
   "version": { "major": 1, "minor": 0, "patch": 0 },
   "tokens": [
     {
@@ -27,7 +27,7 @@
       "chainId": 1
     },
     {
-      "symbol": "USDT",
+      "symbol": "aUSDT",
       "address": "0x3Ed3B47Dd13EC9a98b44e6204A523E766B225811",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -43,7 +43,7 @@
       "chainId": 1
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aWBTC",
       "address": "0x9ff58f4fFB29fA2266Ab25e75e2A8b3503311656",
       "tags": ["atokenv2"],
       "decimals": 8,
@@ -59,7 +59,7 @@
       "chainId": 1
     },
     {
-      "symbol": "WETH",
+      "symbol": "aWETH",
       "address": "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -75,7 +75,7 @@
       "chainId": 1
     },
     {
-      "symbol": "YFI",
+      "symbol": "aYFI",
       "address": "0x5165d24277cD063F5ac44Efd447B27025e888f37",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -91,7 +91,7 @@
       "chainId": 1
     },
     {
-      "symbol": "ZRX",
+      "symbol": "aZRX",
       "address": "0xDf7FF54aAcAcbFf42dfe29DD6144A69b629f8C9e",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -107,7 +107,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI",
+      "symbol": "aUNI",
       "address": "0xB9D7CB55f463405CDfBe4E90a6D2Df01C2B92BF1",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -123,7 +123,7 @@
       "chainId": 1
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aAAVE",
       "address": "0xFFC97d72E13E01096502Cb8Eb52dEe56f74DAD7B",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -139,7 +139,7 @@
       "chainId": 1
     },
     {
-      "symbol": "BAT",
+      "symbol": "aBAT",
       "address": "0x05Ec93c0365baAeAbF7AefFb0972ea7ECdD39CF1",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -155,7 +155,7 @@
       "chainId": 1
     },
     {
-      "symbol": "BUSD",
+      "symbol": "aBUSD",
       "address": "0xA361718326c15715591c299427c62086F69923D9",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -171,7 +171,7 @@
       "chainId": 1
     },
     {
-      "symbol": "DAI",
+      "symbol": "aDAI",
       "address": "0x028171bCA77440897B824Ca71D1c56caC55b68A3",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -187,7 +187,7 @@
       "chainId": 1
     },
     {
-      "symbol": "ENJ",
+      "symbol": "aENJ",
       "address": "0xaC6Df26a590F08dcC95D5a4705ae8abbc88509Ef",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -203,7 +203,7 @@
       "chainId": 1
     },
     {
-      "symbol": "KNC",
+      "symbol": "aKNC",
       "address": "0x39C6b3e42d6A679d7D776778Fe880BC9487C2EDA",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -219,7 +219,7 @@
       "chainId": 1
     },
     {
-      "symbol": "LINK",
+      "symbol": "aLINK",
       "address": "0xa06bC25B5805d5F8d82847D191Cb4Af5A3e873E0",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -235,7 +235,7 @@
       "chainId": 1
     },
     {
-      "symbol": "MANA",
+      "symbol": "aMANA",
       "address": "0xa685a61171bb30d4072B338c80Cb7b2c865c873E",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -251,7 +251,7 @@
       "chainId": 1
     },
     {
-      "symbol": "MKR",
+      "symbol": "aMKR",
       "address": "0xc713e5E149D5D0715DcD1c156a020976e7E56B88",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -267,7 +267,7 @@
       "chainId": 1
     },
     {
-      "symbol": "REN",
+      "symbol": "aREN",
       "address": "0xCC12AbE4ff81c9378D670De1b57F8e0Dd228D77a",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -283,7 +283,7 @@
       "chainId": 1
     },
     {
-      "symbol": "SNX",
+      "symbol": "aSNX",
       "address": "0x35f6B052C598d933D69A4EEC4D04c73A191fE6c2",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -299,7 +299,7 @@
       "chainId": 1
     },
     {
-      "symbol": "sUSD",
+      "symbol": "aSUSD",
       "address": "0x6C5024Cd4F8A59110119C56f8933403A539555EB",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -315,7 +315,7 @@
       "chainId": 1
     },
     {
-      "symbol": "TUSD",
+      "symbol": "aTUSD",
       "address": "0x101cc05f4A51C0319f570d5E146a8C625198e636",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -331,7 +331,7 @@
       "chainId": 1
     },
     {
-      "symbol": "USDC",
+      "symbol": "aUSDC",
       "address": "0xBcca60bB61934080951369a648Fb03DF4F96263C",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -347,7 +347,7 @@
       "chainId": 1
     },
     {
-      "symbol": "CRV",
+      "symbol": "aCRV",
       "address": "0x8dAE6Cb04688C62d939ed9B68d32Bc62e49970b1",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -363,7 +363,7 @@
       "chainId": 1
     },
     {
-      "symbol": "GUSD",
+      "symbol": "aGUSD",
       "address": "0xD37EE7e4f452C6638c96536e68090De8cBcdb583",
       "tags": ["atokenv2"],
       "decimals": 2,
@@ -379,7 +379,7 @@
       "chainId": 1
     },
     {
-      "symbol": "BAL",
+      "symbol": "aBAL",
       "address": "0x272F97b7a56a387aE942350bBC7Df5700f8a4576",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -395,7 +395,7 @@
       "chainId": 1
     },
     {
-      "symbol": "xSUSHI",
+      "symbol": "aXSUSHI",
       "address": "0xF256CC7847E919FAc9B808cC216cAc87CCF2f47a",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -411,7 +411,7 @@
       "chainId": 1
     },
     {
-      "symbol": "renFIL",
+      "symbol": "aRENFIL",
       "address": "0x514cd6756CCBe28772d4Cb81bC3156BA9d1744aa",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -427,7 +427,7 @@
       "chainId": 1
     },
     {
-      "symbol": "RAI",
+      "symbol": "aRAI",
       "address": "0xc9BC48c72154ef3e5425641a3c747242112a46AF",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -443,7 +443,7 @@
       "chainId": 1
     },
     {
-      "symbol": "AMPL",
+      "symbol": "aAMPL",
       "address": "0x1E6bb68Acec8fefBD87D192bE09bb274170a0548",
       "tags": ["atokenv2"],
       "decimals": 9,
@@ -459,7 +459,7 @@
       "chainId": 1
     },
     {
-      "symbol": "USDP",
+      "symbol": "aUSDP",
       "address": "0x2e8F4bdbE3d47d7d7DE490437AeA9915D930F1A3",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -475,7 +475,7 @@
       "chainId": 1
     },
     {
-      "symbol": "DPI",
+      "symbol": "aDPI",
       "address": "0x6F634c6135D2EBD550000ac92F494F9CB8183dAe",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -491,7 +491,7 @@
       "chainId": 1
     },
     {
-      "symbol": "FRAX",
+      "symbol": "aFRAX",
       "address": "0xd4937682df3C8aEF4FE912A96A74121C0829E664",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -507,7 +507,7 @@
       "chainId": 1
     },
     {
-      "symbol": "FEI",
+      "symbol": "aFEI",
       "address": "0x683923dB55Fead99A79Fa01A27EeC3cB19679cC3",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -523,7 +523,7 @@
       "chainId": 1
     },
     {
-      "symbol": "stETH",
+      "symbol": "aSTETH",
       "address": "0x1982b2F5814301d4e9a8b0201555376e62F82428",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -539,7 +539,7 @@
       "chainId": 1
     },
     {
-      "symbol": "ENS",
+      "symbol": "aENS",
       "address": "0x9a14e23A58edf4EFDcB360f68cd1b95ce2081a2F",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -555,7 +555,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UST",
+      "symbol": "aUST",
       "address": "0xc2e2152647F4C26028482Efaf64b2Aa28779EFC4",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -571,7 +571,7 @@
       "chainId": 1
     },
     {
-      "symbol": "CVX",
+      "symbol": "aCVX",
       "address": "0x952749E07d7157bb9644A894dFAF3Bad5eF6D918",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -587,7 +587,7 @@
       "chainId": 1
     },
     {
-      "symbol": "WETH",
+      "symbol": "aAmmWETH",
       "address": "0xf9Fb4AD91812b704Ba883B11d2B576E890a6730A",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -603,7 +603,7 @@
       "chainId": 1
     },
     {
-      "symbol": "DAI",
+      "symbol": "aAmmDAI",
       "address": "0x79bE75FFC64DD58e66787E4Eae470c8a1FD08ba4",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -619,7 +619,7 @@
       "chainId": 1
     },
     {
-      "symbol": "USDC",
+      "symbol": "aAmmUSDC",
       "address": "0xd24946147829DEaA935bE2aD85A3291dbf109c80",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -635,7 +635,7 @@
       "chainId": 1
     },
     {
-      "symbol": "USDT",
+      "symbol": "aAmmUSDT",
       "address": "0x17a79792Fe6fE5C95dFE95Fe3fCEE3CAf4fE4Cb7",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -651,7 +651,7 @@
       "chainId": 1
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aAmmWBTC",
       "address": "0x13B2f6928D7204328b0E8E4BCd0379aA06EA21FA",
       "tags": ["atokenv2"],
       "decimals": 8,
@@ -667,7 +667,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniDAIWETH",
       "address": "0x9303EabC860a743aABcc3A1629014CaBcc3F8D36",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -683,7 +683,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniWBTCWETH",
       "address": "0xc58F53A8adff2fB4eb16ED56635772075E2EE123",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -699,7 +699,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniAAVEWETH",
       "address": "0xe59d2FF6995a926A574390824a657eEd36801E55",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -715,7 +715,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniBATWETH",
       "address": "0xA1B0edF4460CC4d8bFAA18Ed871bFF15E5b57Eb4",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -731,7 +731,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniDAIUSDC",
       "address": "0xE340B25fE32B1011616bb8EC495A4d503e322177",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -747,7 +747,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniCRVWETH",
       "address": "0x0ea20e7fFB006d4Cfe84df2F72d8c7bD89247DB0",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -763,7 +763,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniLINKWETH",
       "address": "0xb8db81B84d30E2387de0FF330420A4AAA6688134",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -779,7 +779,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniMKRWETH",
       "address": "0x370adc71f67f581158Dc56f539dF5F399128Ddf9",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -795,7 +795,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniRENWETH",
       "address": "0xA9e201A4e269d6cd5E9F0FcbcB78520cf815878B",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -811,7 +811,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniSNXWETH",
       "address": "0x38E491A71291CD43E8DE63b7253E482622184894",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -827,7 +827,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniUNIWETH",
       "address": "0x3D26dcd840fCC8e4B2193AcE8A092e4a65832F9f",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -843,7 +843,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniUSDCWETH",
       "address": "0x391E86e2C002C70dEe155eAceB88F7A3c38f5976",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -859,7 +859,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniWBTCUSDC",
       "address": "0x2365a4890eD8965E564B7E2D27C38Ba67Fec4C6F",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -875,7 +875,7 @@
       "chainId": 1
     },
     {
-      "symbol": "UNI-V2",
+      "symbol": "aAmmUniYFIWETH",
       "address": "0x5394794Be8b6eD5572FCd6b27103F46b5F390E8f",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -891,7 +891,7 @@
       "chainId": 1
     },
     {
-      "symbol": "BPT",
+      "symbol": "aAmmBptWBTCWETH",
       "address": "0x358bD0d980E031E23ebA9AA793926857703783BD",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -907,7 +907,7 @@
       "chainId": 1
     },
     {
-      "symbol": "BPT",
+      "symbol": "aAmmBptBALWETH",
       "address": "0xd109b2A304587569c84308c55465cd9fF0317bFB",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -923,7 +923,7 @@
       "chainId": 1
     },
     {
-      "symbol": "G-UNI",
+      "symbol": "aAmmGUniDAIUSDC",
       "address": "0xd145c6ae8931ed5Bca9b5f5B7dA5991F5aB63B5c",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -939,7 +939,7 @@
       "chainId": 1
     },
     {
-      "symbol": "G-UNI",
+      "symbol": "aAmmGUniUSDCUSDT",
       "address": "0xCa5DFDABBfFD58cfD49A9f78Ca52eC8e0591a3C5",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -955,7 +955,7 @@
       "chainId": 1
     },
     {
-      "symbol": "USDC",
+      "symbol": "aUSDC",
       "address": "0xd35f648C3C7f17cd1Ba92e5eac991E3EfcD4566d",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -971,7 +971,7 @@
       "chainId": 1
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aWBTC",
       "address": "0xe6d6E7dA65A2C18109Ff56B7CBBdc7B706Fc13F8",
       "tags": ["atokenv2"],
       "decimals": 8,
@@ -987,7 +987,7 @@
       "chainId": 1
     },
     {
-      "symbol": "WETH",
+      "symbol": "aWETH",
       "address": "0x319190E3Bbc595602A9E63B2bCfB61c6634355b1",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1003,7 +1003,7 @@
       "chainId": 1
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aAAVE",
       "address": "0x89eFaC495C65d43619c661df654ec64fc10C0A75",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1019,7 +1019,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "DAI",
+      "symbol": "amDAI",
       "address": "0x639cB7b21ee2161DF9c882483C9D55c90c20Ca3e",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1035,7 +1035,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "USDC",
+      "symbol": "amUSDC",
       "address": "0x2271e3Fef9e15046d09E1d78a8FF038c691E9Cf9",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -1051,7 +1051,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "USDT",
+      "symbol": "amUSDT",
       "address": "0xF8744C0bD8C7adeA522d6DDE2298b17284A79D1b",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -1067,7 +1067,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "WBTC",
+      "symbol": "amWBTC",
       "address": "0xc9276ECa6798A14f64eC33a526b547DAd50bDa2F",
       "tags": ["atokenv2"],
       "decimals": 8,
@@ -1083,7 +1083,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "WETH",
+      "symbol": "amWETH",
       "address": "0x7aE20397Ca327721F013BB9e140C707F82871b56",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1099,7 +1099,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "WMATIC",
+      "symbol": "amWMATIC",
       "address": "0xF45444171435d0aCB08a8af493837eF18e86EE27",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1115,7 +1115,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "AAVE",
+      "symbol": "amAAVE",
       "address": "0x7ec62b6fC19174255335C8f4346E0C2fcf870a6B",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1131,7 +1131,7 @@
       "chainId": 137
     },
     {
-      "symbol": "DAI",
+      "symbol": "amDAI",
       "address": "0x27F8D03b3a2196956ED754baDc28D73be8830A6e",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1147,7 +1147,7 @@
       "chainId": 137
     },
     {
-      "symbol": "USDC",
+      "symbol": "amUSDC",
       "address": "0x1a13F4Ca1d028320A707D99520AbFefca3998b7F",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -1163,7 +1163,7 @@
       "chainId": 137
     },
     {
-      "symbol": "USDT",
+      "symbol": "amUSDT",
       "address": "0x60D55F02A771d515e077c9C2403a1ef324885CeC",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -1179,7 +1179,7 @@
       "chainId": 137
     },
     {
-      "symbol": "WBTC",
+      "symbol": "amWBTC",
       "address": "0x5c2ed810328349100A66B82b78a1791B101C9D61",
       "tags": ["atokenv2"],
       "decimals": 8,
@@ -1195,7 +1195,7 @@
       "chainId": 137
     },
     {
-      "symbol": "WETH",
+      "symbol": "amWETH",
       "address": "0x28424507fefb6f7f8E9D3860F56504E4e5f5f390",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1211,7 +1211,7 @@
       "chainId": 137
     },
     {
-      "symbol": "WMATIC",
+      "symbol": "amWMATIC",
       "address": "0x8dF3aad3a84da6b69A4DA8aeC3eA40d9091B2Ac4",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1227,7 +1227,7 @@
       "chainId": 137
     },
     {
-      "symbol": "AAVE",
+      "symbol": "amAAVE",
       "address": "0x1d2a0E5EC8E5bBDCA5CB219e649B565d8e5c3360",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1243,7 +1243,7 @@
       "chainId": 137
     },
     {
-      "symbol": "GHST",
+      "symbol": "amGHST",
       "address": "0x080b5BF8f360F624628E0fb961F4e67c9e3c7CF1",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1259,7 +1259,7 @@
       "chainId": 137
     },
     {
-      "symbol": "BAL",
+      "symbol": "amBAL",
       "address": "0xc4195D4060DaEac44058Ed668AA5EfEc50D77ff6",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1275,7 +1275,7 @@
       "chainId": 137
     },
     {
-      "symbol": "DPI",
+      "symbol": "amDPI",
       "address": "0x81fB82aAcB4aBE262fc57F06fD4c1d2De347D7B1",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1291,7 +1291,7 @@
       "chainId": 137
     },
     {
-      "symbol": "CRV",
+      "symbol": "amCRV",
       "address": "0x3Df8f92b7E798820ddcCA2EBEA7BAbda2c90c4aD",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1307,7 +1307,7 @@
       "chainId": 137
     },
     {
-      "symbol": "SUSHI",
+      "symbol": "amSUSHI",
       "address": "0x21eC9431B5B55c5339Eb1AE7582763087F98FAc2",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1323,7 +1323,7 @@
       "chainId": 137
     },
     {
-      "symbol": "LINK",
+      "symbol": "amLINK",
       "address": "0x0Ca2e42e8c21954af73Bc9af1213E4e81D6a669A",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1339,7 +1339,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "WETH",
+      "symbol": "aavaWETH",
       "address": "0x2B2927e26b433D92fC598EE79Fa351d6591B8F95",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1355,7 +1355,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "USDT",
+      "symbol": "aavaUSDT",
       "address": "0x5f049c41aF3856cBc171F61FB04D58C1e7445f5F",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -1371,7 +1371,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aavaWBTC",
       "address": "0xD5B516FDbfb7264676Fd4901B9dD3F707db68733",
       "tags": ["atokenv2"],
       "decimals": 8,
@@ -1387,7 +1387,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "WAVAX",
+      "symbol": "aavaWAVAX",
       "address": "0xf8C78Ba24DD965487f4472dfb280c46800a0c9B6",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1403,7 +1403,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "WETH.e",
+      "symbol": "avWETH",
       "address": "0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1419,7 +1419,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "DAI.e",
+      "symbol": "avDAI",
       "address": "0x47AFa96Cdc9fAb46904A55a6ad4bf6660B53c38a",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1435,7 +1435,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "USDT.e",
+      "symbol": "avUSDT",
       "address": "0x532E6537FEA298397212F09A61e03311686f548e",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -1451,7 +1451,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "USDC.e",
+      "symbol": "avUSDC",
       "address": "0x46A51127C3ce23fb7AB1DE06226147F446e4a857",
       "tags": ["atokenv2"],
       "decimals": 6,
@@ -1467,7 +1467,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "AAVE.e",
+      "symbol": "avAAVE",
       "address": "0xD45B7c061016102f9FA220502908f2c0f1add1D7",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1483,7 +1483,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "WBTC.e",
+      "symbol": "avWBTC",
       "address": "0x686bEF2417b6Dc32C50a3cBfbCC3bb60E1e9a15D",
       "tags": ["atokenv2"],
       "decimals": 8,
@@ -1499,7 +1499,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "WAVAX",
+      "symbol": "avWAVAX",
       "address": "0xDFE521292EcE2A4f44242efBcD66Bc594CA9714B",
       "tags": ["atokenv2"],
       "decimals": 18,
@@ -1515,7 +1515,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "DAI",
+      "symbol": "aPolDAI",
       "address": "0xDD4f3Ee61466C4158D394d57f3D4C397E91fBc51",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1531,7 +1531,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "LINK",
+      "symbol": "aPolLINK",
       "address": "0x3e1608F4Db4b37DDf86536ef441890fE3AA9F2Ea",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1547,7 +1547,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "USDC",
+      "symbol": "aPolUSDC",
       "address": "0xCdc2854e97798AfDC74BC420BD5060e022D14607",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -1563,7 +1563,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aPolWBTC",
       "address": "0xde230bC95a03b695be69C44b9AA6C0e9dAc1B143",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -1579,7 +1579,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "WETH",
+      "symbol": "aPolWETH",
       "address": "0x685bF4eab23993E94b4CFb9383599c926B66cF57",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1595,7 +1595,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "USDT",
+      "symbol": "aPolUSDT",
       "address": "0x6Ca4abE253bd510fCA862b5aBc51211C1E1E8925",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -1611,7 +1611,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aPolAAVE",
       "address": "0x50434C5Da807189622Db5fff66379808c58574aD",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1627,7 +1627,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "WMATIC",
+      "symbol": "aPolWMATIC",
       "address": "0x89a6AE840b3F8f489418933A220315eeA36d11fF",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1643,7 +1643,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "CRV",
+      "symbol": "aPolCRV",
       "address": "0x4e752fB98b0dCC90b6772f23C52aD33b795dc758",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1659,7 +1659,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "SUSHI",
+      "symbol": "aPolSUSHI",
       "address": "0xb7EA2d40B845A1B49E59c9a5f8B6F67b3c48fA04",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1675,7 +1675,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "GHST",
+      "symbol": "aPolGHST",
       "address": "0x128cB3720f5d220e1E35512917c3c7fFf064A858",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1691,7 +1691,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "BAL",
+      "symbol": "aPolBAL",
       "address": "0x6236bfBfB3b6CDBFC311399BE346d61Ab8ab1094",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1707,7 +1707,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "DPI",
+      "symbol": "aPolDPI",
       "address": "0xf815E724973ff3f5Eedc243eAE1a34D1f2a45e0C",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1723,7 +1723,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "EURS",
+      "symbol": "aPolEURS",
       "address": "0xf6AeDD279Aae7361e70030515f56c22A16d81433",
       "tags": ["atokenv3"],
       "decimals": 2,
@@ -1739,7 +1739,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "JEUR",
+      "symbol": "aPolJEUR",
       "address": "0x04cdAA74B111b49EF4044455324C0dDb1C2aa783",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1755,7 +1755,7 @@
       "chainId": 80001
     },
     {
-      "symbol": "AGEUR",
+      "symbol": "aPolAGEUR",
       "address": "0xbC456dc7E6F882DBc7b11da1048eD253F5DB021D",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1771,7 +1771,7 @@
       "chainId": 137
     },
     {
-      "symbol": "DAI",
+      "symbol": "aPolDAI",
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1787,7 +1787,7 @@
       "chainId": 137
     },
     {
-      "symbol": "LINK",
+      "symbol": "aPolLINK",
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1803,7 +1803,7 @@
       "chainId": 137
     },
     {
-      "symbol": "USDC",
+      "symbol": "aPolUSDC",
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -1819,7 +1819,7 @@
       "chainId": 137
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aPolWBTC",
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -1835,7 +1835,7 @@
       "chainId": 137
     },
     {
-      "symbol": "WETH",
+      "symbol": "aPolWETH",
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1851,7 +1851,7 @@
       "chainId": 137
     },
     {
-      "symbol": "USDT",
+      "symbol": "aPolUSDT",
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -1867,7 +1867,7 @@
       "chainId": 137
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aPolAAVE",
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1883,7 +1883,7 @@
       "chainId": 137
     },
     {
-      "symbol": "WMATIC",
+      "symbol": "aPolWMATIC",
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1899,7 +1899,7 @@
       "chainId": 137
     },
     {
-      "symbol": "CRV",
+      "symbol": "aPolCRV",
       "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1915,7 +1915,7 @@
       "chainId": 137
     },
     {
-      "symbol": "SUSHI",
+      "symbol": "aPolSUSHI",
       "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1931,7 +1931,7 @@
       "chainId": 137
     },
     {
-      "symbol": "GHST",
+      "symbol": "aPolGHST",
       "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1947,7 +1947,7 @@
       "chainId": 137
     },
     {
-      "symbol": "BAL",
+      "symbol": "aPolBAL",
       "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1963,7 +1963,7 @@
       "chainId": 137
     },
     {
-      "symbol": "DPI",
+      "symbol": "aPolDPI",
       "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -1979,7 +1979,7 @@
       "chainId": 137
     },
     {
-      "symbol": "EURS",
+      "symbol": "aPolEURS",
       "address": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
       "tags": ["atokenv3"],
       "decimals": 2,
@@ -1995,7 +1995,7 @@
       "chainId": 137
     },
     {
-      "symbol": "jEUR",
+      "symbol": "aPolJEUR",
       "address": "0x6533afac2E7BCCB20dca161449A13A32D391fb00",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2011,7 +2011,7 @@
       "chainId": 137
     },
     {
-      "symbol": "agEUR",
+      "symbol": "aPolAGEUR",
       "address": "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2027,7 +2027,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "DAI",
+      "symbol": "aAvaDAI",
       "address": "0xC42f40B7E22bcca66B3EE22F3ACb86d24C997CC2",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2043,7 +2043,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "LINK",
+      "symbol": "aAvaLINK",
       "address": "0x210a3f864812eAF7f89eE7337EAA1FeA1830C57e",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2059,7 +2059,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "USDC",
+      "symbol": "aAvaUSDC",
       "address": "0xA79570641bC9cbc6522aA80E2de03bF9F7fd123a",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2075,7 +2075,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aAvaWBTC",
       "address": "0x07B2C0b69c70e89C94A20A555Ab376E5a6181eE6",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -2091,7 +2091,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "WETH",
+      "symbol": "aAvaWETH",
       "address": "0x618922b15a1a92652818473741531eE255f68741",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2107,7 +2107,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "USDT",
+      "symbol": "aAvaUSDT",
       "address": "0x3a7e85a86F952CB61485e2D20BDDb6e15204744f",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2123,7 +2123,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aAvaAAVE",
       "address": "0xE9C1731e1186362E2ba233BC16614b2a53ecb3F2",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2139,7 +2139,7 @@
       "chainId": 43113
     },
     {
-      "symbol": "WAVAX",
+      "symbol": "aAvaWAVAX",
       "address": "0xC50E6F9E8e6CAd53c42ddCB7A42d616d7420fd3e",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2155,7 +2155,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "DAI.e",
+      "symbol": "aAvaDAI",
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2171,7 +2171,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "LINK.e",
+      "symbol": "aAvaLINK",
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2187,7 +2187,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "USDC",
+      "symbol": "aAvaUSDC",
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2203,7 +2203,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "WBTC.e",
+      "symbol": "aAvaWBTC",
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -2219,7 +2219,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "WETH.e",
+      "symbol": "aAvaWETH",
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2235,7 +2235,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "USDt",
+      "symbol": "aAvaUSDT",
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2251,7 +2251,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "AAVE.e",
+      "symbol": "aAvaAAVE",
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2267,7 +2267,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "WAVAX",
+      "symbol": "aAvaWAVAX",
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2283,7 +2283,7 @@
       "chainId": 43114
     },
     {
-      "symbol": "sAVAX",
+      "symbol": "aAvaSAVAX",
       "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2299,7 +2299,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "DAI",
+      "symbol": "aArbDAI",
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2315,7 +2315,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "LINK",
+      "symbol": "aArbLINK",
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2331,7 +2331,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "USDC",
+      "symbol": "aArbUSDC",
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2347,7 +2347,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aArbWBTC",
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -2363,7 +2363,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "WETH",
+      "symbol": "aArbWETH",
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2379,7 +2379,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "USDT",
+      "symbol": "aArbUSDT",
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2395,7 +2395,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aArbAAVE",
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2411,7 +2411,7 @@
       "chainId": 42161
     },
     {
-      "symbol": "EURS",
+      "symbol": "aArbEURS",
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "tags": ["atokenv3"],
       "decimals": 2,
@@ -2427,7 +2427,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "DAI",
+      "symbol": "aFanDAI",
       "address": "0xfb08e04E9c7AfFE693290F739d11D5C3Dd2e19B5",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2443,7 +2443,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "LINK",
+      "symbol": "aFanLINK",
       "address": "0x1A7e068f35B19Ff89B7d646D83Ae15C2Db1D93c5",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2459,7 +2459,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "USDC",
+      "symbol": "aFanUSDC",
       "address": "0xf1090cB4f56fDb659D24DDbC4972bE9D379A6E8c",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2475,7 +2475,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aFanWBTC",
       "address": "0xd2ecf7aA363A9dE20088eF1a92D76D4147828B58",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -2491,7 +2491,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "WETH",
+      "symbol": "aFanWETH",
       "address": "0xd29fF48d6Fc110fe227286D5A509a4CB6503732E",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2507,7 +2507,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "USDT",
+      "symbol": "aFanUSDT",
       "address": "0x1364B761d75E348B861D7EFaEB64A5b3a37965ec",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2523,7 +2523,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aFanAAVE",
       "address": "0xeCbA9a45fDb849548F3e7a621fcBa4f11b3BBDcF",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2539,7 +2539,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "WFTM",
+      "symbol": "aFanWFTM",
       "address": "0x22FDD5F19C49fe954847A6424E4a24C2742fD9EF",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2555,7 +2555,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "CRV",
+      "symbol": "aFanCRV",
       "address": "0x552f5C364090B954ADA025f0D7963D0a7A60d52b",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2571,7 +2571,7 @@
       "chainId": 4002
     },
     {
-      "symbol": "SUSHI",
+      "symbol": "aFanSUSHI",
       "address": "0x6cC739A29b8Eb06981B8bbF22464E4F3f082bBA5",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2587,7 +2587,7 @@
       "chainId": 250
     },
     {
-      "symbol": "DAI",
+      "symbol": "aFanDAI",
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2603,7 +2603,7 @@
       "chainId": 250
     },
     {
-      "symbol": "LINK",
+      "symbol": "aFanLINK",
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2619,7 +2619,7 @@
       "chainId": 250
     },
     {
-      "symbol": "USDC",
+      "symbol": "aFanUSDC",
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2635,7 +2635,7 @@
       "chainId": 250
     },
     {
-      "symbol": "BTC",
+      "symbol": "aFanWBTC",
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -2651,7 +2651,7 @@
       "chainId": 250
     },
     {
-      "symbol": "ETH",
+      "symbol": "aFanWETH",
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2667,7 +2667,7 @@
       "chainId": 250
     },
     {
-      "symbol": "fUSDT",
+      "symbol": "aFanUSDT",
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2683,7 +2683,7 @@
       "chainId": 250
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aFanAAVE",
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2699,7 +2699,7 @@
       "chainId": 250
     },
     {
-      "symbol": "WFTM",
+      "symbol": "aFanWFTM",
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2715,7 +2715,7 @@
       "chainId": 250
     },
     {
-      "symbol": "CRV",
+      "symbol": "aFanCRV",
       "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2731,7 +2731,7 @@
       "chainId": 250
     },
     {
-      "symbol": "SUSHI",
+      "symbol": "aFanSUSHI",
       "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2747,7 +2747,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "DAI",
+      "symbol": "aHarDAI",
       "address": "0xF5C62a60A2065D34b601CAfF8775F5A2857A9088",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2763,7 +2763,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "LINK",
+      "symbol": "aHarLINK",
       "address": "0xd5Bc03707A290BAaB91FeFBAf397Fe90EE48Cc39",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2779,7 +2779,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "USDC",
+      "symbol": "aHarUSDC",
       "address": "0xf58153a81DbC7118a8Ad128024996E68dcDEE8B2",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2795,7 +2795,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aHarWBTC",
       "address": "0x9D6a5051882C1DFA7d26Cb862a13843c1fe0EF0A",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -2811,7 +2811,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "WETH",
+      "symbol": "aHarWETH",
       "address": "0x7916c8E4d5B3C998B7e8d94bEE3625D0996dA3CC",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2827,7 +2827,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "USDT",
+      "symbol": "aHarUSDT",
       "address": "0xAe8c5CfF5D96c36372378A4eFEBcaE78e3552AD9",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2843,7 +2843,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aHarAAVE",
       "address": "0xAf16e6F087bb99aEf830409228CCcf8B039C758D",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2859,7 +2859,7 @@
       "chainId": 1666700000
     },
     {
-      "symbol": "WONE",
+      "symbol": "aHarWONE",
       "address": "0xA6a1ec235B90e0b5567521F52e5418B9BA189334",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2875,7 +2875,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "1DAI",
+      "symbol": "aHarDAI",
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2891,7 +2891,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "LINK",
+      "symbol": "aHarLINK",
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2907,7 +2907,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "1USDC",
+      "symbol": "aHarUSDC",
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2923,7 +2923,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "1WBTC",
+      "symbol": "aHarWBTC",
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -2939,7 +2939,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "1ETH",
+      "symbol": "aHarWETH",
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2955,7 +2955,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "1USDT",
+      "symbol": "aHarUSDT",
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -2971,7 +2971,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "1AAVE",
+      "symbol": "aHarAAVE",
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -2987,7 +2987,7 @@
       "chainId": 1666600000
     },
     {
-      "symbol": "WONE",
+      "symbol": "aHarWONE",
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3003,7 +3003,7 @@
       "chainId": 69
     },
     {
-      "symbol": "DAI",
+      "symbol": "aOptDAI",
       "address": "0x4cdb5D85687Fa162446c7Cf263f9be9614E6314B",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3019,7 +3019,7 @@
       "chainId": 69
     },
     {
-      "symbol": "LINK",
+      "symbol": "aOptLINK",
       "address": "0x70713F22F01f0053803F1520d526a2C7b26b318a",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3035,7 +3035,7 @@
       "chainId": 69
     },
     {
-      "symbol": "USDC",
+      "symbol": "aOptUSDC",
       "address": "0x0849Cd326DC590bF313a0b1E5a04790CBb4eE387",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -3051,7 +3051,7 @@
       "chainId": 69
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aOptWBTC",
       "address": "0x2D89bE7Cfbe21ed728A5AeDdA03cACFCAf04aA08",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -3067,7 +3067,7 @@
       "chainId": 69
     },
     {
-      "symbol": "WETH",
+      "symbol": "aOptWETH",
       "address": "0xCb5Df0b49BCa05B2478a606074ec39e3fa181a6f",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3083,7 +3083,7 @@
       "chainId": 69
     },
     {
-      "symbol": "USDT",
+      "symbol": "aOptUSDT",
       "address": "0x98A978662670A35cA2b4aD12319486a3F294a78b",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -3099,7 +3099,7 @@
       "chainId": 69
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aOptAAVE",
       "address": "0x5994ce8E7F595AFE3115D72854e0EAeCbD902ea7",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3115,7 +3115,7 @@
       "chainId": 69
     },
     {
-      "symbol": "SUSD",
+      "symbol": "aOptSUSD",
       "address": "0xE603E221fa3a858BdAE91FB51cE09BA6C53B19A5",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3131,7 +3131,7 @@
       "chainId": 10
     },
     {
-      "symbol": "DAI",
+      "symbol": "aOptDAI",
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3147,7 +3147,7 @@
       "chainId": 10
     },
     {
-      "symbol": "LINK",
+      "symbol": "aOptLINK",
       "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3163,7 +3163,7 @@
       "chainId": 10
     },
     {
-      "symbol": "USDC",
+      "symbol": "aOptUSDC",
       "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -3179,7 +3179,7 @@
       "chainId": 10
     },
     {
-      "symbol": "WBTC",
+      "symbol": "aOptWBTC",
       "address": "0x078f358208685046a11C85e8ad32895DED33A249",
       "tags": ["atokenv3"],
       "decimals": 8,
@@ -3195,7 +3195,7 @@
       "chainId": 10
     },
     {
-      "symbol": "WETH",
+      "symbol": "aOptWETH",
       "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3211,7 +3211,7 @@
       "chainId": 10
     },
     {
-      "symbol": "USDT",
+      "symbol": "aOptUSDT",
       "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
       "tags": ["atokenv3"],
       "decimals": 6,
@@ -3227,7 +3227,7 @@
       "chainId": 10
     },
     {
-      "symbol": "AAVE",
+      "symbol": "aOptAAVE",
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "tags": ["atokenv3"],
       "decimals": 18,
@@ -3243,7 +3243,7 @@
       "chainId": 10
     },
     {
-      "symbol": "sUSD",
+      "symbol": "aOptSUSD",
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "tags": ["atokenv3"],
       "decimals": 18,

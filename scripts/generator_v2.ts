@@ -21,6 +21,7 @@ export interface MarketV2WithAddresses extends Market {
     name: string;
     decimals: number;
     symbol: string;
+    aTokenSymbol: string;
     underlyingAsset: string;
     aTokenAddress: string;
     stableDebtTokenAddress: string;
@@ -77,10 +78,17 @@ export async function generateMarketV2(
             ? "Maker"
             : await erc20Contract.name();
         const decimals: number = await erc20Contract.decimals();
+        const aTokenContract = new ethers.Contract(
+          data.aTokenAddress,
+          erc20ABI,
+          market.provider
+        );
+        const aTokenSymbol: string = await aTokenContract.symbol();
         return {
           symbol,
           name,
           decimals,
+          aTokenSymbol,
           underlyingAsset: reserve,
           aTokenAddress: data.aTokenAddress as string,
           stableDebtTokenAddress: data.stableDebtTokenAddress as string,

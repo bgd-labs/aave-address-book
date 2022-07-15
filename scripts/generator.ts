@@ -1,19 +1,10 @@
 import fs from "fs";
 import prettier from "prettier";
-import { schema } from "@uniswap/token-lists";
-import Ajv from "ajv";
-import addFormats from "ajv-formats";
+
 import { Market, markets } from "./config";
-import {
-  generateIndexFileV2,
-  generateMarketV2,
-  MarketV2WithAddresses,
-} from "./generator_v2";
-import {
-  generateIndexFileV3,
-  generateMarketV3,
-  MarketV3WithAddresses,
-} from "./generator_v3";
+import { generateTokenList } from "./generator_tokenlist";
+import { generateIndexFileV2, generateMarketV2 } from "./generator_v2";
+import { generateIndexFileV3, generateMarketV3 } from "./generator_v3";
 
 async function generateV2Markets(markets: Market[]) {
   const generatedMarkets = await Promise.allSettled(
@@ -83,72 +74,6 @@ async function generateV3Markets(markets: Market[]) {
   );
 
   return generatedMarkets.map((m: any) => m.value);
-}
-
-function generateTokenList(
-  markets: (MarketV2WithAddresses | MarketV3WithAddresses)[]
-) {
-  const tokens = markets.reduce((acc, market) => {
-    market.tokenList.map((token) => {
-      acc.push({
-        symbol: token.symbol,
-        address: token.underlyingAsset,
-        tags: ["underlying"],
-        decimals: token.decimals,
-        name: token.name,
-        chainId: market.chainId,
-      });
-      acc.push({
-        symbol: token.symbol, // wrong
-        address: token.aTokenAddress,
-        tags: [market.version === 2 ? "atokenv2" : "atokenv3"],
-        decimals: token.decimals,
-        name: `Aave interest bearing ${token.symbol}`,
-        chainId: market.chainId,
-      });
-    });
-    return acc;
-  }, [] as { symbol: string; address: string; decimals: number; name: string; chainId: number; tags: string[] }[]);
-  const tokenList = {
-    name: "Aave Token and aToken List",
-    logoURI: "ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1",
-    tags: {
-      underlying: {
-        name: "underlyingAsset",
-        description:
-          "Tokens that are used as underlying assets in the aave protocol",
-      },
-      atokenv2: {
-        name: "aToken V2",
-        description: "Tokens that earn interest on the Aave Protocol V2",
-      },
-      atokenv3: {
-        name: "aToken V3",
-        description: "Tokens that earn interest on the Aave Protocol V3",
-      },
-    },
-    timestamp: "2020-12-11T17:08:18.941Z",
-    version: { major: 1, minor: 0, patch: 0 },
-    tokens,
-  };
-  const ajv = new Ajv({ allErrors: true, verbose: true });
-  addFormats(ajv);
-  const validator = ajv.compile(schema);
-  const valid = validator(tokenList);
-  if (valid) {
-    fs.writeFileSync(
-      "./tokenlist.json",
-      prettier.format(JSON.stringify(tokenList), {
-        filepath: "./tokenlist.json",
-      })
-    );
-  }
-  if (validator.errors) {
-    throw validator.errors.map((error) => {
-      delete error.data;
-      return error;
-    });
-  }
 }
 
 async function generateMarkets() {
