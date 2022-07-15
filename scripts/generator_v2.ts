@@ -8,48 +8,83 @@ import aTokenV2ABI from "./abi/aToken_v2_abi.json";
 import collectorV2ABI from "./abi/collector_v2_abi.json";
 import prettier from "prettier";
 
-export async function generateMarketV2(market: Market) {
-  const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
+export interface MarketV2WithAddresses extends Market {
+  lendingPool: string;
+  poolDataProvider: string;
+  lendingPoolConfigurator: string;
+  oracle: string;
+  admin: string;
+  emergencyAdmin: string;
+  collector: string;
+  collectorController: string;
+  tokenList: {
+    name: string;
+    decimals: number;
+    symbol: string;
+    underlyingAsset: string;
+    aTokenAddress: string;
+    stableDebtTokenAddress: string;
+    variableDebtTokenAddress: string;
+  }[];
+}
+
+export async function generateMarketV2(
+  market: Market
+): Promise<MarketV2WithAddresses> {
   // using getAddress to get correct checksum in case the one in config isn't correct
-  const addressProvider = ethers.utils.getAddress(market.addressProvider);
+  const addressProvider: string = ethers.utils.getAddress(
+    market.addressProvider
+  );
   try {
     const addressProviderContract = new ethers.Contract(
       addressProvider,
       addressProviderV2ABI,
-      provider
+      market.provider
     );
-    const lendingPool = await addressProviderContract.getLendingPool();
-    const lendingPoolConfigurator =
+    const lendingPool: string = await addressProviderContract.getLendingPool();
+    const lendingPoolConfigurator: string =
       await addressProviderContract.getLendingPoolConfigurator();
-    const oracle = await addressProviderContract.getPriceOracle();
-    const admin = await addressProviderContract.getPoolAdmin();
+    const oracle: string = await addressProviderContract.getPriceOracle();
+    const admin: string = await addressProviderContract.getPoolAdmin();
     // const owner = await addressProviderContract.owner();
-    const emergencyAdmin = await addressProviderContract.getEmergencyAdmin();
-    const poolDataProvider = await addressProviderContract.getAddress(
+    const emergencyAdmin: string =
+      await addressProviderContract.getEmergencyAdmin();
+    const poolDataProvider: string = await addressProviderContract.getAddress(
       "0x0100000000000000000000000000000000000000000000000000000000000000"
     );
 
     const lendingPoolContract = new ethers.Contract(
       lendingPool,
       lendingPoolV2ABI,
-      provider
+      market.provider
     );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const tokenList = await Promise.all(
       reserves.map(async (reserve) => {
         const data = await lendingPoolContract.getReserveData(reserve);
-        const erc20Contract = new ethers.Contract(reserve, erc20ABI, provider);
-        const symbol =
+        const erc20Contract = new ethers.Contract(
+          reserve,
+          erc20ABI,
+          market.provider
+        );
+        const symbol: string =
           reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
             ? "MKR"
             : await erc20Contract.symbol();
+        const name: string =
+          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
+            ? "Maker"
+            : await erc20Contract.name();
+        const decimals: number = await erc20Contract.decimals();
         return {
           symbol,
+          name,
+          decimals,
           underlyingAsset: reserve,
-          aTokenAddress: data.aTokenAddress,
-          stableDebtTokenAddress: data.stableDebtTokenAddress,
-          variableDebtTokenAddress: data.variableDebtTokenAddress,
+          aTokenAddress: data.aTokenAddress as string,
+          stableDebtTokenAddress: data.stableDebtTokenAddress as string,
+          variableDebtTokenAddress: data.variableDebtTokenAddress as string,
         };
       })
     );
@@ -60,7 +95,7 @@ export async function generateMarketV2(market: Market) {
     const aTokenContract = new ethers.Contract(
       tokenList[0].aTokenAddress,
       aTokenV2ABI,
-      provider
+      market.provider
     );
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
@@ -68,7 +103,7 @@ export async function generateMarketV2(market: Market) {
     const collectorContract = new ethers.Contract(
       collector,
       collectorV2ABI,
-      provider
+      market.provider
     );
 
     let collectorController;
