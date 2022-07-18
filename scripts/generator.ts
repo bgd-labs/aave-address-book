@@ -2,7 +2,6 @@ import fs from "fs";
 import prettier from "prettier";
 
 import { Market, markets } from "./config";
-import { generateTokenList } from "./generator_tokenlist";
 import { generateIndexFileV2, generateMarketV2 } from "./generator_v2";
 import { generateIndexFileV3, generateMarketV3 } from "./generator_v3";
 
@@ -99,14 +98,8 @@ import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
       filepath: `./src/AaveAddressBook.sol`,
     })
   );
-  const marketsV2 = await generateV2Markets(
-    markets.filter((market) => market.version === 2)
-  );
-  const marketsV3 = await generateV3Markets(
-    markets.filter((market) => market.version === 3)
-  );
-
-  generateTokenList([...marketsV2, ...marketsV3]);
+  await generateV2Markets(markets.filter((market) => market.version === 2));
+  await generateV3Markets(markets.filter((market) => market.version === 3));
 }
 
 generateMarkets()

@@ -3,7 +3,6 @@ import { Market, Token } from "./config";
 import fs from "fs";
 import addressProviderV2ABI from "./abi/address_provider_v2_abi.json";
 import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
-import erc20ABI from "./abi/erc20_abi.json";
 import aTokenV2ABI from "./abi/aToken_v2_abi.json";
 import collectorV2ABI from "./abi/collector_v2_abi.json";
 import prettier from "prettier";
@@ -17,16 +16,6 @@ export interface MarketV2WithAddresses extends Market {
   emergencyAdmin: string;
   collector: string;
   collectorController: string;
-  tokenList: {
-    name: string;
-    decimals: number;
-    symbol: string;
-    aTokenSymbol: string;
-    underlyingAsset: string;
-    aTokenAddress: string;
-    stableDebtTokenAddress: string;
-    variableDebtTokenAddress: string;
-  }[];
 }
 
 export async function generateMarketV2(
@@ -61,47 +50,13 @@ export async function generateMarketV2(
     );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
-    const tokenList = await Promise.all(
-      reserves.map(async (reserve) => {
-        const data = await lendingPoolContract.getReserveData(reserve);
-        const erc20Contract = new ethers.Contract(
-          reserve,
-          erc20ABI,
-          market.provider
-        );
-        const symbol: string =
-          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
-            ? "MKR"
-            : await erc20Contract.symbol();
-        const name: string =
-          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
-            ? "Maker"
-            : await erc20Contract.name();
-        const decimals: number = await erc20Contract.decimals();
-        const aTokenContract = new ethers.Contract(
-          data.aTokenAddress,
-          erc20ABI,
-          market.provider
-        );
-        const aTokenSymbol: string = await aTokenContract.symbol();
-        return {
-          symbol,
-          name,
-          decimals,
-          aTokenSymbol,
-          underlyingAsset: reserve,
-          aTokenAddress: data.aTokenAddress as string,
-          stableDebtTokenAddress: data.stableDebtTokenAddress as string,
-          variableDebtTokenAddress: data.variableDebtTokenAddress as string,
-        };
-      })
-    );
+    const data = await lendingPoolContract.getReserveData(reserves[0]);
 
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
     const aTokenContract = new ethers.Contract(
-      tokenList[0].aTokenAddress,
+      data.aTokenAddress,
       aTokenV2ABI,
       market.provider
     );
@@ -167,7 +122,6 @@ export async function generateMarketV2(
       emergencyAdmin,
       collector,
       collectorController,
-      tokenList,
       ...market,
     };
   } catch (error: any) {
