@@ -3,64 +3,62 @@ import { Market, Token } from "./config";
 import fs from "fs";
 import addressProviderV2ABI from "./abi/address_provider_v2_abi.json";
 import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
-import erc20ABI from "./abi/erc20_abi.json";
 import aTokenV2ABI from "./abi/aToken_v2_abi.json";
 import collectorV2ABI from "./abi/collector_v2_abi.json";
 import prettier from "prettier";
 
-export async function generateMarketV2(market: Market) {
-  const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
+export interface MarketV2WithAddresses extends Market {
+  lendingPool: string;
+  poolDataProvider: string;
+  lendingPoolConfigurator: string;
+  oracle: string;
+  admin: string;
+  emergencyAdmin: string;
+  collector: string;
+  collectorController: string;
+}
+
+export async function generateMarketV2(
+  market: Market
+): Promise<MarketV2WithAddresses> {
   // using getAddress to get correct checksum in case the one in config isn't correct
-  const addressProvider = ethers.utils.getAddress(market.addressProvider);
+  const addressProvider: string = ethers.utils.getAddress(
+    market.addressProvider
+  );
   try {
     const addressProviderContract = new ethers.Contract(
       addressProvider,
       addressProviderV2ABI,
-      provider
+      market.provider
     );
-    const lendingPool = await addressProviderContract.getLendingPool();
-    const lendingPoolConfigurator =
+    const lendingPool: string = await addressProviderContract.getLendingPool();
+    const lendingPoolConfigurator: string =
       await addressProviderContract.getLendingPoolConfigurator();
-    const oracle = await addressProviderContract.getPriceOracle();
-    const admin = await addressProviderContract.getPoolAdmin();
+    const oracle: string = await addressProviderContract.getPriceOracle();
+    const admin: string = await addressProviderContract.getPoolAdmin();
     // const owner = await addressProviderContract.owner();
-    const emergencyAdmin = await addressProviderContract.getEmergencyAdmin();
-    const poolDataProvider = await addressProviderContract.getAddress(
+    const emergencyAdmin: string =
+      await addressProviderContract.getEmergencyAdmin();
+    const poolDataProvider: string = await addressProviderContract.getAddress(
       "0x0100000000000000000000000000000000000000000000000000000000000000"
     );
 
     const lendingPoolContract = new ethers.Contract(
       lendingPool,
       lendingPoolV2ABI,
-      provider
+      market.provider
     );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
-    const tokenList = await Promise.all(
-      reserves.map(async (reserve) => {
-        const data = await lendingPoolContract.getReserveData(reserve);
-        const erc20Contract = new ethers.Contract(reserve, erc20ABI, provider);
-        const symbol =
-          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
-            ? "MKR"
-            : await erc20Contract.symbol();
-        return {
-          symbol,
-          underlyingAsset: reserve,
-          aTokenAddress: data.aTokenAddress,
-          stableDebtTokenAddress: data.stableDebtTokenAddress,
-          variableDebtTokenAddress: data.variableDebtTokenAddress,
-        };
-      })
-    );
+    const data = await lendingPoolContract.getReserveData(reserves[0]);
 
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
     const aTokenContract = new ethers.Contract(
-      tokenList[0].aTokenAddress,
+      data.aTokenAddress,
       aTokenV2ABI,
-      provider
+      market.provider
     );
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
@@ -68,7 +66,7 @@ export async function generateMarketV2(market: Market) {
     const collectorContract = new ethers.Contract(
       collector,
       collectorV2ABI,
-      provider
+      market.provider
     );
 
     let collectorController;
@@ -109,65 +107,12 @@ export async function generateMarketV2(market: Market) {
       address internal constant COLLECTOR = ${collector};
 
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
-      
-      function getToken(string calldata symbol) public pure returns(Token memory m) {
-  ${tokenList.reduce((acc, token, ix) => {
-    const isLast = ix === tokenList.length - 1;
-    const start = ix === 0 ? "        if" : " else if";
-    acc += `${start} (keccak256(abi.encodePacked((symbol))) == keccak256(abi.encodePacked(("${
-      token.symbol
-    }")))) {
-              return Token(
-                ${token.underlyingAsset},
-                ${token.aTokenAddress},
-                ${token.stableDebtTokenAddress},
-                ${token.variableDebtTokenAddress}
-              );
-          }${isLast ? ` else revert('Token does not exist');` : ""}`;
-    return acc;
-  }, "")}
-      }
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,
       prettier.format(templateV2, { filepath: `./src/${market.name}.sol` })
     );
 
-    // Create the test for the specified market
-    const testTemplateV2 = `// SPDX-License-Identifier: MIT
-  pragma solidity >=0.6.0;
-  
-  import "forge-std/Test.sol";
-  import {${market.name}} from "../AaveAddressBook.sol";
-  
-  contract AaveAddressBookTest is Test {
-      function setUp() public {}
-  
-      function testFailPoolAddressProviderIs0Address() public {
-          assertEq(address(${market.name}.POOL_ADDRESSES_PROVIDER), address(0));
-      }
-  
-      function testFailPoolAddressIs0Address() public {
-          assertEq(address(${market.name}.POOL), address(0));
-      }
-  
-      function testFailPoolConfiguratorIs0Address() public {
-          assertEq(address(${market.name}.POOL_CONFIGURATOR), address(0));
-      }
-  
-      function testFailOracleIs0Address() public {
-          assertEq(address(${market.name}.ORACLE), address(0));
-      }
-  
-      function testFailPoolAdminIs0Address() public {
-          assertEq(${market.name}.POOL_ADMIN, address(0));
-      }
-  
-      function testFailEmergencyAdminIs0Address() public {
-          assertEq(${market.name}.EMERGENCY_ADMIN, address(0));
-      }
-  }\r\n`;
-    fs.writeFileSync(`./src/test/${market.name}.t.sol`, testTemplateV2);
     return {
       lendingPool,
       poolDataProvider,
@@ -177,7 +122,6 @@ export async function generateMarketV2(market: Market) {
       emergencyAdmin,
       collector,
       collectorController,
-      tokenList,
       ...market,
     };
   } catch (error: any) {
@@ -250,35 +194,8 @@ export async function generateIndexFileV2(
           }${isLast ? ` else revert('Market does not exist');` : ""}`;
     return acc;
   }, "")}
-      }
-  
-      function getToken(string calldata market, string calldata symbol) public pure returns(Token memory m) {
-  ${markets.reduce((acc, market, ix) => {
-    const isLast = ix === markets.length - 1;
-    const start = ix === 0 ? "        if" : " else if";
-    acc += `${start} (keccak256(abi.encodePacked(market)) == keccak256(abi.encodePacked(${
-      market.name
-    }))) {
-      ${market.tokenList.reduce((acc, token, ix) => {
-        const isLast = ix === market.tokenList.length - 1;
-        const start = ix === 0 ? "        if" : " else if";
-        acc += `${start} (keccak256(abi.encodePacked(symbol)) == keccak256(abi.encodePacked("${
-          token.symbol
-        }"))) {
-                  return Token(
-                    ${token.underlyingAsset},
-                    ${token.aTokenAddress},
-                    ${token.stableDebtTokenAddress},
-                    ${token.variableDebtTokenAddress}
-                  );
-              }${isLast ? ` else revert('Token does not exist');` : ""}`;
-        return acc;
-      }, "")}
-          }${isLast ? ` else revert('Market does not exist');` : ""}`;
-    return acc;
-  }, "")}
-      }
-  }\r\n`;
+    }
+}\r\n`;
   const fileName = testnet
     ? `./src/AaveAddressBookV2Testnet.sol`
     : `./src/AaveAddressBookV2.sol`;

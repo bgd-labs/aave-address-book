@@ -1,5 +1,6 @@
 import fs from "fs";
 import prettier from "prettier";
+
 import { Market, markets } from "./config";
 import { generateIndexFileV2, generateMarketV2 } from "./generator_v2";
 import { generateIndexFileV3, generateMarketV3 } from "./generator_v3";
@@ -35,6 +36,8 @@ async function generateV2Markets(markets: Market[]) {
     generatedMarkets.map((m: any) => m.value).filter((m) => m.testnet),
     true
   );
+
+  return generatedMarkets.map((m: any) => m.value);
 }
 
 async function generateV3Markets(markets: Market[]) {
@@ -68,6 +71,8 @@ async function generateV3Markets(markets: Market[]) {
     generatedMarkets.map((m: any) => m.value).filter((m) => m.testnet),
     true
   );
+
+  return generatedMarkets.map((m: any) => m.value);
 }
 
 async function generateMarkets() {

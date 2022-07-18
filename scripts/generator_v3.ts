@@ -3,19 +3,30 @@ import { Market, Token } from "./config";
 import fs from "fs";
 import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
 import poolV3ABI from "./abi/pool_v3_abi.json";
-import erc20ABI from "./abi/erc20_abi.json";
 import aTokenV3ABI from "./abi/aToken_v3_abi.json";
 import collectorV3ABI from "./abi/collector_v3_abi.json";
 import prettier from "prettier";
 
-export async function generateMarketV3(market: Market) {
-  const provider = new ethers.providers.StaticJsonRpcProvider(market.rpc);
+export interface MarketV3WithAddresses extends Market {
+  pool: string;
+  poolDataProvider: string;
+  poolConfigurator: string;
+  oracle: string;
+  aclAdmin: string;
+  aclManager: string;
+  collector: string;
+  collectorController: string;
+}
+
+export async function generateMarketV3(
+  market: Market
+): Promise<MarketV3WithAddresses> {
   // using getAddress to get correct checksum in case the one in config isn't correct
   const addressProvider = ethers.utils.getAddress(market.addressProvider);
   const contract = new ethers.Contract(
     addressProvider,
     addressProviderV3ABI,
-    provider
+    market.provider
   );
   try {
     const pool = await contract.getPool();
@@ -25,34 +36,22 @@ export async function generateMarketV3(market: Market) {
     const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
 
-    const lendingPoolContract = new ethers.Contract(pool, poolV3ABI, provider);
+    const lendingPoolContract = new ethers.Contract(
+      pool,
+      poolV3ABI,
+      market.provider
+    );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
-    const tokenList = await Promise.all(
-      reserves.map(async (reserve) => {
-        const data = await lendingPoolContract.getReserveData(reserve);
-        const erc20Contract = new ethers.Contract(reserve, erc20ABI, provider);
-        const symbol =
-          reserve === "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2" // doesn't follow erc20 symbol
-            ? "MKR"
-            : await erc20Contract.symbol();
-        return {
-          symbol,
-          underlyingAsset: reserve,
-          aTokenAddress: data.aTokenAddress,
-          stableDebtTokenAddress: data.stableDebtTokenAddress,
-          variableDebtTokenAddress: data.variableDebtTokenAddress,
-        };
-      })
-    );
+    const data = await lendingPoolContract.getReserveData(reserves[0]);
 
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
     const aTokenContract = new ethers.Contract(
-      tokenList[0].aTokenAddress,
+      data.aTokenAddress,
       aTokenV3ABI,
-      provider
+      market.provider
     );
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
@@ -60,7 +59,7 @@ export async function generateMarketV3(market: Market) {
     const collectorContract = new ethers.Contract(
       collector,
       collectorV3ABI,
-      provider
+      market.provider
     );
 
     const collectorController = await collectorContract.getFundsAdmin();
@@ -96,64 +95,10 @@ export async function generateMarketV3(market: Market) {
       address internal constant COLLECTOR = ${collector};
 
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
-  
-      function getToken(string calldata symbol) public pure returns(Token memory m) {
-        ${tokenList.reduce((acc, token, ix) => {
-          const isLast = ix === tokenList.length - 1;
-          const start = ix === 0 ? "        if" : " else if";
-          acc += `${start} (keccak256(abi.encodePacked(symbol)) == keccak256(abi.encodePacked("${
-            token.symbol
-          }"))) {
-                    return Token(
-                      ${token.underlyingAsset},
-                      ${token.aTokenAddress},
-                      ${token.stableDebtTokenAddress},
-                      ${token.variableDebtTokenAddress}
-                    );
-                }${isLast ? ` else revert('Token does not exist');` : ""}`;
-          return acc;
-        }, "")}
-      }
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,
       prettier.format(templateV3, { filepath: `./src/${market.name}.sol` })
-    );
-
-    // Create the test for the specified market
-    const testTemplateV3 = `// SPDX-License-Identifier: MIT
-  pragma solidity >=0.6.0;
-  
-  import "forge-std/Test.sol";
-  import {${market.name}} from "../AaveAddressBook.sol";
-  
-  contract AaveAddressBookTest is Test {
-      function setUp() public {}
-  
-      function testFailPoolAddressProviderIs0Address() public {
-          assertEq(address(${market.name}.POOL_ADDRESSES_PROVIDER), address(0));
-      }
-  
-      function testFailPoolAddressIs0Address() public {
-          assertEq(address(${market.name}.POOL), address(0));
-      }
-  
-      function testFailPoolConfiguratorIs0Address() public {
-          assertEq(address(${market.name}.POOL_CONFIGURATOR), address(0));
-      }
-  
-      function testFailOracleIs0Address() public {
-          assertEq(address(${market.name}.ORACLE), address(0));
-      }
-  
-      function testFailACLAdminIs0Address() public {
-          assertEq(${market.name}.ACL_ADMIN, address(0));
-      }
-  }\r\n`;
-    const testPath = `./src/test/${market.name}.t.sol`;
-    fs.writeFileSync(
-      testPath,
-      prettier.format(testTemplateV3, { filepath: testPath })
     );
 
     return {
@@ -162,7 +107,6 @@ export async function generateMarketV3(market: Market) {
       oracle,
       aclAdmin,
       aclManager,
-      tokenList,
       poolDataProvider,
       collectorController,
       collector,
@@ -239,33 +183,6 @@ export async function generateIndexFileV3(
     return acc;
   }, "")}
       }
-  
-      function getToken(string calldata market, string calldata symbol) public pure returns(Token memory m) {
-        ${markets.reduce((acc, market, ix) => {
-          const isLast = ix === markets.length - 1;
-          const start = ix === 0 ? "        if" : " else if";
-          acc += `${start} (keccak256(abi.encodePacked(market)) == keccak256(abi.encodePacked(${
-            market.name
-          }))) {
-            ${market.tokenList.reduce((acc, token, ix) => {
-              const isLast = ix === market.tokenList.length - 1;
-              const start = ix === 0 ? "        if" : " else if";
-              acc += `${start} (keccak256(abi.encodePacked(symbol)) == keccak256(abi.encodePacked("${
-                token.symbol
-              }"))) {
-                        return Token(
-                          ${token.underlyingAsset},
-                          ${token.aTokenAddress},
-                          ${token.stableDebtTokenAddress},
-                          ${token.variableDebtTokenAddress}
-                        );
-                    }${isLast ? ` else revert('Token does not exist');` : ""}`;
-              return acc;
-            }, "")}
-                }${isLast ? ` else revert('Market does not exist');` : ""}`;
-          return acc;
-        }, "")}
-            }
   }\r\n`;
   const fileName = testnet
     ? `./src/AaveAddressBookV3Testnet.sol`
