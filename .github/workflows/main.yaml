@@ -9,4 +9,4 @@ on:
 
 jobs:
   test:
-    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml
+    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
