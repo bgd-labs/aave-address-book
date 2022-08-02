@@ -23,8 +23,7 @@ export enum ChainId {
 }
 
 const RPC_PROVIDERS = {
-  [ChainId.mainnet]:
-    "https://eth-mainnet.gateway.pokt.network/v1/lb/62b3314e123e6f00397f19ca",
+  [ChainId.mainnet]: "https://rpc.flashbots.net",
   [ChainId.mumbai]: "https://polygon-mumbai.g.alchemy.com/v2/demo",
   [ChainId.polygon]: "https://polygon-rpc.com",
   [ChainId.fuji]: "https://api.avax-test.network/ext/bc/C/rpc",
