@@ -14,4 +14,4 @@ jobs:
   test:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
   release:
-    uses: bgd-labs/github-workflows/.github/workflows/release.yml@69b7f9ab83d3a68d03d40dab09d1d20d0b29d243
+    uses: bgd-labs/github-workflows/.github/workflows/release.yml@main
