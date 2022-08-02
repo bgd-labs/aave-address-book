@@ -9,4 +9,4 @@ on:
 
 jobs:
   draft-release:
-    uses: bgd-labs/github-workflows/.github/workflows/draft-release.yml@9f94f3041673cd1615f3fbe97c60a55181d1bfc3
+    uses: bgd-labs/github-workflows/.github/workflows/draft-release.yml@966d4148c278844679de00d30393cff78b79c7dc
