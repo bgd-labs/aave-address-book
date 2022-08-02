@@ -1,6 +1,6 @@
 {
   "name": "aave-address-book",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.",
   "main": "index.js",
   "directories": {
