@@ -13,4 +13,5 @@ jobs:
   test:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
   release:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     uses: bgd-labs/github-workflows/.github/workflows/release.yml@9f94f3041673cd1615f3fbe97c60a55181d1bfc3
