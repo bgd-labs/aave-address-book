@@ -5,6 +5,7 @@ import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, I
 import {Token} from "./Common.sol";
 
 library AaveAddressBookV2Testnet {
+    string public constant AaveV2Goerli = "AaveV2Goerli";
     string public constant AaveV2Mumbai = "AaveV2Mumbai";
     string public constant AaveV2Fuji = "AaveV2Fuji";
 
@@ -26,6 +27,28 @@ library AaveAddressBookV2Testnet {
         returns (Market memory m)
     {
         if (
+            keccak256(abi.encodePacked(market)) ==
+            keccak256(abi.encodePacked(AaveV2Goerli))
+        ) {
+            return
+                Market(
+                    ILendingPoolAddressesProvider(
+                        0xa012e274b15B68abf26086591Cc0d2BB676c77C3
+                    ),
+                    ILendingPool(0x082307FbDEe3967141E96f9db16c4ea1f206F5A2),
+                    ILendingPoolConfigurator(
+                        0x9f7395123B05232E74B52D8368afb28C1ba7f86C
+                    ),
+                    IAaveOracle(0xD7f1238C02740A51A20f9857804B544C555a3802),
+                    IAaveProtocolDataProvider(
+                        0x0000000000000000000000000000000000000000
+                    ),
+                    0x4365F8e70CF38C6cA67DE41448508F2da8825500,
+                    0x4365F8e70CF38C6cA67DE41448508F2da8825500,
+                    0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c,
+                    address(0)
+                );
+        } else if (
             keccak256(abi.encodePacked(market)) ==
             keccak256(abi.encodePacked(AaveV2Mumbai))
         ) {
