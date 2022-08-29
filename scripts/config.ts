@@ -74,7 +74,7 @@ export const markets: Market[] = [
   {
     name: "AaveV2Goerli",
     chainId: ChainId.goerli,
-    addressProvider: "0xa012e274b15B68abf26086591Cc0d2BB676c77C3",
+    addressProvider: "0x5E52dEc931FFb32f609681B8438A51c675cc232d",
     version: 2,
     testnet: true,
   },

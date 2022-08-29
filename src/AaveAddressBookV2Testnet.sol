@@ -33,18 +33,18 @@ library AaveAddressBookV2Testnet {
             return
                 Market(
                     ILendingPoolAddressesProvider(
-                        0xa012e274b15B68abf26086591Cc0d2BB676c77C3
+                        0x5E52dEc931FFb32f609681B8438A51c675cc232d
                     ),
-                    ILendingPool(0x082307FbDEe3967141E96f9db16c4ea1f206F5A2),
+                    ILendingPool(0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210),
                     ILendingPoolConfigurator(
-                        0x9f7395123B05232E74B52D8368afb28C1ba7f86C
+                        0x88B1D3d97656De3Ec44FEDDfa109AF7fb8C2837D
                     ),
-                    IAaveOracle(0xD7f1238C02740A51A20f9857804B544C555a3802),
+                    IAaveOracle(0x2cb0d5755436ED904D7D0fbBACc6176286c55667),
                     IAaveProtocolDataProvider(
                         0x0000000000000000000000000000000000000000
                     ),
-                    0x4365F8e70CF38C6cA67DE41448508F2da8825500,
-                    0x4365F8e70CF38C6cA67DE41448508F2da8825500,
+                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
+                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c,
                     address(0)
                 );
