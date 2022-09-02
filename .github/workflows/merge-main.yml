@@ -12,6 +12,6 @@ on:
 
 jobs:
   test:
-    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@f74fa202fb42ada4a6b008dc64f82487c2fefb81
+    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
   release:
     uses: bgd-labs/github-workflows/.github/workflows/release.yml@main
