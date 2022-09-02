@@ -8,7 +8,6 @@ library AaveAddressBookV3Testnet {
     string public constant AaveV3Mumbai = "AaveV3Mumbai";
     string public constant AaveV3Fuji = "AaveV3Fuji";
     string public constant AaveV3FantomTestnet = "AaveV3FantomTestnet";
-    string public constant AaveV3HarmonyTestnet = "AaveV3HarmonyTestnet";
     string public constant AaveV3OptimismKovan = "AaveV3OptimismKovan";
 
     struct Market {
@@ -93,28 +92,6 @@ library AaveAddressBookV3Testnet {
                     0x77c45699A715A64A7a7796d5CEe884cf617D5254,
                     0xF49dA7a22463D140f9f8dc7C91468C8721215496,
                     0x7aaB2c2CC186131851d6B1876D16eDc849846042
-                );
-        } else if (
-            keccak256(abi.encodePacked((market))) ==
-            keccak256(abi.encodePacked((AaveV3HarmonyTestnet)))
-        ) {
-            return
-                Market(
-                    IPoolAddressesProvider(
-                        0xd19443202328A66875a51560c28276868B8C61C2
-                    ),
-                    IPool(0x85C1F3f1bB439180f7Bfda9DFD61De82e10bD554),
-                    IPoolConfigurator(
-                        0xdb903B5a28260E87cF1d8B56740a90Dba1c8fe15
-                    ),
-                    IAaveOracle(0x29Ff3c19C6853A0b6544b3CC241c360f422aBaD1),
-                    IAaveProtocolDataProvider(
-                        0xFc7215C9498Fc12b22Bc0ed335871Db4315f03d3
-                    ),
-                    IACLManager(0x1758d4e6f68166C4B2d9d0F049F33dEB399Daa1F),
-                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                    0x9aa7fEc87CA69695Dd1f879567CcF49F3ba417E2,
-                    0x85E44420b6137bbc75a85CAB5c9A3371af976FdE
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==

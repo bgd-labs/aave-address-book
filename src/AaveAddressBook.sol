@@ -15,7 +15,6 @@ import {AaveV3Avalanche} from "./AaveV3Avalanche.sol";
 import {AaveV3Arbitrum} from "./AaveV3Arbitrum.sol";
 import {AaveV3FantomTestnet} from "./AaveV3FantomTestnet.sol";
 import {AaveV3Fantom} from "./AaveV3Fantom.sol";
-import {AaveV3HarmonyTestnet} from "./AaveV3HarmonyTestnet.sol";
 import {AaveV3Harmony} from "./AaveV3Harmony.sol";
 import {AaveV3OptimismKovan} from "./AaveV3OptimismKovan.sol";
 import {AaveV3Optimism} from "./AaveV3Optimism.sol";

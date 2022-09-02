@@ -77,7 +77,7 @@ async function generateV3Markets(markets: Market[]) {
 
 async function generateMarkets() {
   // Create the test for the specified market
-  const AaveAddressBookTemplate = `// SPDX-License-Identifier: MIT
+  const AaveAddressBookSolidityTemplate = `// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
 ${markets.reduce((acc, market) => {
@@ -94,8 +94,19 @@ import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 \r\n`;
   fs.writeFileSync(
     `./src/AaveAddressBook.sol`,
-    prettier.format(AaveAddressBookTemplate, {
+    prettier.format(AaveAddressBookSolidityTemplate, {
       filepath: `./src/AaveAddressBook.sol`,
+    })
+  );
+
+  const AaveAddressBookJsTemplate = `${markets.reduce((acc, market) => {
+    acc += `export * as ${market.name} from "./${market.name}";\r\n`;
+    return acc;
+  }, "")}`;
+  fs.writeFileSync(
+    `./src/ts/AaveAddressBook.ts`,
+    prettier.format(AaveAddressBookJsTemplate, {
+      filepath: `./src/ts/AaveAddressBook.ts`,
     })
   );
   await generateV2Markets(markets.filter((market) => market.version === 2));
