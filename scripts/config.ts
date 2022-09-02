@@ -153,13 +153,14 @@ export const markets: Market[] = [
     addressProvider: "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb",
     version: 3,
   },
-  {
-    name: "AaveV3HarmonyTestnet",
-    chainId: ChainId.harmony_testnet,
-    addressProvider: "0xd19443202328A66875a51560c28276868B8C61C2",
-    version: 3,
-    testnet: true,
-  },
+  // RPC highly unreliable
+  // {
+  //   name: "AaveV3HarmonyTestnet",
+  //   chainId: ChainId.harmony_testnet,
+  //   addressProvider: "0xd19443202328A66875a51560c28276868B8C61C2",
+  //   version: 3,
+  //   testnet: true,
+  // },
   {
     name: "AaveV3Harmony",
     chainId: ChainId.harmony,
