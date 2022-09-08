@@ -123,7 +123,8 @@ export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
 export const POOL_ADMIN = "${admin}";
 export const EMERGENCY_ADMIN = "${emergencyAdmin}";
 export const COLLECTOR = "${collector}";
-export const COLLECTOR_CONTROLLER = "${collectorController}";`;
+export const COLLECTOR_CONTROLLER = "${collectorController}";
+export const CHAIN_ID = ${market.chainId};`;
     fs.writeFileSync(
       `./src/ts/${market.name}.ts`,
       prettier.format(templateV2Js, {

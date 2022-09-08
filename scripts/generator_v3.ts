@@ -109,7 +109,8 @@ export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
 export const ACL_MANAGER = "${aclManager}";
 export const ACL_ADMIN = "${aclAdmin}";
 export const COLLECTOR = "${collector}";
-export const COLLECTOR_CONTROLLER = "${collectorController}";`;
+export const COLLECTOR_CONTROLLER = "${collectorController}";
+export const CHAIN_ID = ${market.chainId};`;
     fs.writeFileSync(
       `./src/ts/${market.name}.ts`,
       prettier.format(templateV3Js, {
