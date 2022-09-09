@@ -1,15 +1,20 @@
 {
-  "name": "aave-address-book",
-  "version": "1.1.0",
+  "name": "@bgd-labs/aave-address-book",
+  "version": "1.2.1",
   "description": "This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.",
-  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
+  "private": false,
+  "main": "./dist/AaveAddressBook.js",
+  "types": "./dist/AaveAddressBook.d.ts",
+  "sideEffects": false,
   "scripts": {
     "prettier": "prettier --write 'src/**/*.sol'",
     "generate": "ts-node scripts/generator.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:typechain": "typechain --target ethers-v5 --out-dir dist './out/*/*.json'",
+    "build:js": "tsc --project tsconfig.json --outDir dist",
+    "publish": "npm publish --access=public"
   },
   "repository": {
     "type": "git",
@@ -21,15 +26,15 @@
     "url": "https://github.com/bgd-labs/aave-address-book/issues"
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
-  "dependencies": {
-    "ethers": "^5.6.5",
-    "ts-node": "^10.8.0"
-  },
   "devDependencies": {
+    "@typechain/ethers-v5": "^10.1.0",
     "@types/node": "^17.0.41",
     "@types/prettier": "^2.6.3",
+    "ethers": "^5.6.5",
     "prettier": "^2.6.2",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "ts-node": "^10.8.0",
+    "typechain": "^8.1.0",
     "typescript": "^4.7.3"
   }
 }

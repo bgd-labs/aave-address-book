@@ -77,7 +77,7 @@ export async function generateMarketV2(
       collectorController = "address(0)";
     }
 
-    const templateV2 = `// SPDX-License-Identifier: MIT
+    const templateV2Solidity = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
   
   import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
@@ -110,7 +110,26 @@ export async function generateMarketV2(
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,
-      prettier.format(templateV2, { filepath: `./src/${market.name}.sol` })
+      prettier.format(templateV2Solidity, {
+        filepath: `./src/${market.name}.sol`,
+      })
+    );
+
+    const templateV2Js = `export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
+export const POOL = "${lendingPool}";   
+export const POOL_CONFIGURATOR = "${lendingPoolConfigurator}";
+export const ORACLE = "${oracle}";
+export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
+export const POOL_ADMIN = "${admin}";
+export const EMERGENCY_ADMIN = "${emergencyAdmin}";
+export const COLLECTOR = "${collector}";
+export const COLLECTOR_CONTROLLER = "${collectorController}";
+export const CHAIN_ID = ${market.chainId};`;
+    fs.writeFileSync(
+      `./src/ts/${market.name}.ts`,
+      prettier.format(templateV2Js, {
+        filepath: `./src/ts/${market.name}.ts`,
+      })
     );
 
     return {

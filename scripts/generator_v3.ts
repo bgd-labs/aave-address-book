@@ -101,6 +101,23 @@ export async function generateMarketV3(
       prettier.format(templateV3, { filepath: `./src/${market.name}.sol` })
     );
 
+    const templateV3Js = `export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
+export const POOL = "${pool}";   
+export const POOL_CONFIGURATOR = "${poolConfigurator}";
+export const ORACLE = "${oracle}";
+export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
+export const ACL_MANAGER = "${aclManager}";
+export const ACL_ADMIN = "${aclAdmin}";
+export const COLLECTOR = "${collector}";
+export const COLLECTOR_CONTROLLER = "${collectorController}";
+export const CHAIN_ID = ${market.chainId};`;
+    fs.writeFileSync(
+      `./src/ts/${market.name}.ts`,
+      prettier.format(templateV3Js, {
+        filepath: `./src/ts/${market.name}.ts`,
+      })
+    );
+
     return {
       pool,
       poolConfigurator,
