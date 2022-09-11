@@ -5,10 +5,12 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProt
 import {Token} from "./Common.sol";
 
 library AaveAddressBookV3Testnet {
+    string public constant AaveV3Goerli = "AaveV3Goerli";
     string public constant AaveV3Mumbai = "AaveV3Mumbai";
     string public constant AaveV3Fuji = "AaveV3Fuji";
+    string public constant AaveV3ArbitrumGoerli = "AaveV3ArbitrumGoerli";
     string public constant AaveV3FantomTestnet = "AaveV3FantomTestnet";
-    string public constant AaveV3OptimismKovan = "AaveV3OptimismKovan";
+    string public constant AaveV3OptimismGoerli = "AaveV3OptimismGoerli";
 
     struct Market {
         IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
@@ -28,6 +30,28 @@ library AaveAddressBookV3Testnet {
         returns (Market memory m)
     {
         if (
+            keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3Goerli)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xc4dCB5126a3AfEd129BC3668Ea19285A9f56D15D
+                    ),
+                    IPool(0x368EedF3f56ad10b9bC57eed4Dac65B26Bb667f6),
+                    IPoolConfigurator(
+                        0x723d17Ee6a668C011F01553D19B850E425075665
+                    ),
+                    IAaveOracle(0x5bed0810073cc9f0DacF73C648202249E87eF6cB),
+                    IAaveProtocolDataProvider(
+                        0x9BE876c6DC42215B00d7efe892E2691C3bc35d10
+                    ),
+                    IACLManager(0x4c952A81A72A6BA2919a658feff1e7F023e4aadc),
+                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
+                    0xFbAF383eB6c757faCb8cb19B68d5131aEbc5c11e,
+                    0x5665007321915c8f0E72d041315bA1AD15065337
+                );
+        } else if (
             keccak256(abi.encodePacked((market))) ==
             keccak256(abi.encodePacked((AaveV3Mumbai)))
         ) {
@@ -73,6 +97,28 @@ library AaveAddressBookV3Testnet {
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
+            keccak256(abi.encodePacked((AaveV3ArbitrumGoerli)))
+        ) {
+            return
+                Market(
+                    IPoolAddressesProvider(
+                        0xF8aa90E66B8BAe13f2e4aDe6104abAb8eeDaBfdc
+                    ),
+                    IPool(0x6Cbb4E8eC402E07fDF96DbbC6c752aCfB0eB6075),
+                    IPoolConfigurator(
+                        0x279Dd50e124D45bDeDCF408849937A4985e56dD2
+                    ),
+                    IAaveOracle(0x86b4D2636EC473AC4A5dD83Fc2BEDa98845249A7),
+                    IAaveProtocolDataProvider(
+                        0xce3Aa85237C075d2102b7B35079d305307D745C8
+                    ),
+                    IACLManager(0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383),
+                    0x4365F8e70CF38C6cA67DE41448508F2da8825500,
+                    0xad848879F9Ac276BdB7D38123F381C692FD6D6dE,
+                    0xff01517f8811E532900a46e6AdB4484BDB3f2B8a
+                );
+        } else if (
+            keccak256(abi.encodePacked((market))) ==
             keccak256(abi.encodePacked((AaveV3FantomTestnet)))
         ) {
             return
@@ -95,25 +141,25 @@ library AaveAddressBookV3Testnet {
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
-            keccak256(abi.encodePacked((AaveV3OptimismKovan)))
+            keccak256(abi.encodePacked((AaveV3OptimismGoerli)))
         ) {
             return
                 Market(
                     IPoolAddressesProvider(
-                        0xD15d36975A0200D11B8a8964F4F267982D2a1cFe
+                        0x74a328ED938160D702378Daeb7aB2504714B4E4b
                     ),
-                    IPool(0x139d8F557f70D1903787e929D7C42165c4667229),
+                    IPool(0x4b529A5d8268d74B687aC3dbb00e1b85bF4BF0d4),
                     IPoolConfigurator(
-                        0x12F6E19b968e34fEE34763469c7EAf902Af6914B
+                        0x598fCb66f358d0C1396972a1BC30DeC2daB87E46
                     ),
-                    IAaveOracle(0xce87225e5A0ABFe6241C6A60158840d509a84B47),
+                    IAaveOracle(0x171Af9229972716f28DBB04DBFC712F05B45B021),
                     IAaveProtocolDataProvider(
-                        0x2f733c0389bfF96a3f930Deb2f6DB1d767Cd3215
+                        0x42BdE9c98B80e83F1B051B4bb11812aDa314213a
                     ),
-                    IACLManager(0x552626e2E6e35566d53CE0C5Ad97d72E95bC3fc3),
-                    0x77c45699A715A64A7a7796d5CEe884cf617D5254,
-                    0x733DC8C72B189791B28Dc8c6Fb09D9201b01eF2f,
-                    0x9b791f6A34B2C87c360902F050dA5e0075b7A567
+                    IACLManager(0x9B14C2DEe92CE731da32bf861Ca4Fb2202662248),
+                    0x4365F8e70CF38C6cA67DE41448508F2da8825500,
+                    0x8Ee63E24D91317f9DabFf3c5361d747244c0f16c,
+                    0xADDcE1e19761577d7FBB278B1b3158891679a066
                 );
         } else revert("Market does not exist");
     }
