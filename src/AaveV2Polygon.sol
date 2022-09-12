@@ -31,5 +31,6 @@ library AaveV2Polygon {
     address internal constant COLLECTOR =
         0x7734280A4337F37Fbf4651073Db7c28C80B339e9;
 
-    address internal constant COLLECTOR_CONTROLLER = address(0);
+    address internal constant COLLECTOR_CONTROLLER =
+        0xDB89487A449274478e984665b8692AfC67459deF;
 }

@@ -30,5 +30,5 @@ library AaveV3Polygon {
         0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383;
 
     address internal constant COLLECTOR_CONTROLLER =
-        0x73D435AFc15e35A9aC63B2a81B5AA54f974eadFe;
+        0xDB89487A449274478e984665b8692AfC67459deF;
 }

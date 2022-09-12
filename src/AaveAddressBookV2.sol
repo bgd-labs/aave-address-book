@@ -114,7 +114,7 @@ library AaveAddressBookV2 {
                     0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
                     0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58,
                     0x7734280A4337F37Fbf4651073Db7c28C80B339e9,
-                    address(0)
+                    0xDB89487A449274478e984665b8692AfC67459deF
                 );
         } else if (
             keccak256(abi.encodePacked(market)) ==

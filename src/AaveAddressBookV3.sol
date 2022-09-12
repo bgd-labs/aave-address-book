@@ -49,7 +49,7 @@ library AaveAddressBookV3 {
                     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B),
                     0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772,
                     0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383,
-                    0x73D435AFc15e35A9aC63B2a81B5AA54f974eadFe
+                    0xDB89487A449274478e984665b8692AfC67459deF
                 );
         } else if (
             keccak256(abi.encodePacked((market))) ==
