@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import "forge-std/Test.sol";
-import { AaveV2Avalanche, AaveV2Polygon, AaveV2EthereumArc } from "../AaveAddressBook.sol";
+import 'forge-std/Test.sol';
+import {AaveV2Avalanche, AaveV2Polygon, AaveV2EthereumArc} from '../AaveAddressBook.sol';
 
 /**
  * @dev This test contains regression tests for markets that are slightly different then the default.
@@ -16,7 +16,6 @@ contract AaveAddressMisfitsTest is Test {
    */
   function testCollectorControllerIs0Address() public {
     assertEq(address(AaveV2Avalanche.COLLECTOR_CONTROLLER), address(0));
-    assertEq(address(AaveV2Polygon.COLLECTOR_CONTROLLER), address(0));
   }
 
   /**
