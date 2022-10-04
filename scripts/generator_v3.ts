@@ -6,6 +6,7 @@ import poolV3ABI from "./abi/pool_v3_abi.json";
 import aTokenV3ABI from "./abi/aToken_v3_abi.json";
 import collectorV3ABI from "./abi/collector_v3_abi.json";
 import prettier from "prettier";
+import { getImplementationStorageSlot } from "./helpers";
 
 export interface MarketV3WithAddresses extends Market {
   pool: string;
@@ -56,7 +57,13 @@ export async function generateMarketV3(
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
-    const incentivesController = await aTokenContract.getIncentivesController();
+    const defaultIncentivesController =
+      await aTokenContract.getIncentivesController();
+
+    const defaultATokenImplementation = await getImplementationStorageSlot(
+      market.provider,
+      data.aTokenAddress
+    );
 
     const collectorContract = new ethers.Contract(
       collector,
@@ -98,7 +105,9 @@ export async function generateMarketV3(
 
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
 
-      address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${incentivesController};
+      address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
+
+      address internal constant DEFAULT_A_TOKEN_IMPLEMENTATION = ${defaultATokenImplementation};
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,
