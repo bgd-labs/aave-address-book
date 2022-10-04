@@ -31,4 +31,7 @@ library AaveV3Arbitrum {
 
     address internal constant COLLECTOR_CONTROLLER =
         0xC3301b30f4EcBfd59dE0d74e89690C1a70C6f21B;
+
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x929EC64c34a17401F460460D4B9390518E5B473e;
 }

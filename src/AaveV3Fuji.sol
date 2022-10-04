@@ -31,4 +31,7 @@ library AaveV3Fuji {
 
     address internal constant COLLECTOR_CONTROLLER =
         0xFCadBDefd30E11258559Ba239C8a5A8A8D28CB00;
+
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x58Cd851c28dF05Edc7F018B533C0257DE57673f7;
 }

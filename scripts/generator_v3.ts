@@ -56,6 +56,8 @@ export async function generateMarketV3(
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
+    const incentivesController = await aTokenContract.getIncentivesController();
+
     const collectorContract = new ethers.Contract(
       collector,
       collectorV3ABI,
@@ -95,6 +97,8 @@ export async function generateMarketV3(
       address internal constant COLLECTOR = ${collector};
 
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
+
+      address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${incentivesController};
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,

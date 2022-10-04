@@ -31,4 +31,7 @@ library AaveV3Polygon {
 
     address internal constant COLLECTOR_CONTROLLER =
         0xDB89487A449274478e984665b8692AfC67459deF;
+
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x929EC64c34a17401F460460D4B9390518E5B473e;
 }

@@ -31,4 +31,7 @@ library AaveV3Harmony {
 
     address internal constant COLLECTOR_CONTROLLER =
         0xeaC16519923774Fd7723d3D5E442a1e2E46BA962;
+
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x929EC64c34a17401F460460D4B9390518E5B473e;
 }

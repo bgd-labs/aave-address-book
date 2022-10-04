@@ -31,4 +31,7 @@ library AaveV3Goerli {
 
     address internal constant COLLECTOR_CONTROLLER =
         0x5665007321915c8f0E72d041315bA1AD15065337;
+
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x0C501fB73808e1BD73cBDdd0c99237bbc481Bb58;
 }

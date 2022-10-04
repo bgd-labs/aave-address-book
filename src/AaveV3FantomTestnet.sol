@@ -31,4 +31,7 @@ library AaveV3FantomTestnet {
 
     address internal constant COLLECTOR_CONTROLLER =
         0x7aaB2c2CC186131851d6B1876D16eDc849846042;
+
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x54Bc1D59873A5ABde98cf76B6EcF4075ff65d685;
 }
