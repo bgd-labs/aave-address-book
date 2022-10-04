@@ -4,6 +4,8 @@ import fs from "fs";
 import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
 import poolV3ABI from "./abi/pool_v3_abi.json";
 import aTokenV3ABI from "./abi/aToken_v3_abi.json";
+import stableDebtTokenV3ABI from "./abi/stableDebtToken_v3_abi.json";
+import variableDebtTokenV3ABI from "./abi/variableDebtToken_v3_abi.json";
 import collectorV3ABI from "./abi/collector_v3_abi.json";
 import prettier from "prettier";
 import { bytes32toAddress, getImplementationStorageSlot } from "./helpers";
@@ -45,7 +47,6 @@ export async function generateMarketV3(
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const data = await lendingPoolContract.getReserveData(reserves[0]);
-
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
@@ -63,6 +64,34 @@ export async function generateMarketV3(
     const defaultATokenImplementation = bytes32toAddress(
       await getImplementationStorageSlot(market.provider, data.aTokenAddress)
     );
+
+    const aTokenRevision = await aTokenContract.ATOKEN_REVISION();
+
+    const defaultVariableDebtTokenImplementation = bytes32toAddress(
+      await getImplementationStorageSlot(
+        market.provider,
+        data.variableDebtTokenAddress
+      )
+    );
+
+    const variableDebtTokenRevision = await new ethers.Contract(
+      data.variableDebtTokenAddress,
+      variableDebtTokenV3ABI,
+      market.provider
+    ).DEBT_TOKEN_REVISION();
+
+    const defaultStableDebtTokenImplementation = bytes32toAddress(
+      await getImplementationStorageSlot(
+        market.provider,
+        data.stableDebtTokenAddress
+      )
+    );
+
+    const stableDebtTokenRevision = await new ethers.Contract(
+      data.stableDebtTokenAddress,
+      stableDebtTokenV3ABI,
+      market.provider
+    ).DEBT_TOKEN_REVISION();
 
     const collectorContract = new ethers.Contract(
       collector,
@@ -106,7 +135,11 @@ export async function generateMarketV3(
 
       address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
 
-      address internal constant DEFAULT_A_TOKEN_IMPLEMENTATION = ${defaultATokenImplementation};
+      address internal constant DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = ${defaultATokenImplementation};
+
+      address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = ${defaultVariableDebtTokenImplementation};
+
+      address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = ${defaultStableDebtTokenImplementation};
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,

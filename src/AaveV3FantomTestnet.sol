@@ -35,6 +35,12 @@ library AaveV3FantomTestnet {
     address internal constant DEFAULT_INCENTIVES_CONTROLLER =
         0x54Bc1D59873A5ABde98cf76B6EcF4075ff65d685;
 
-    address internal constant DEFAULT_A_TOKEN_IMPLEMENTATION =
+    address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
         0xFc1Ab0379db4B6ad8Bf5Bc1382e108a341E2EaBb;
+
+    address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x981D8AcaF6af3a46785e7741d22fBE81B25Ebf1e;
+
+    address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0xc048C1b6ac47393F073dA2b3d5D1cc43b94891Fd;
 }

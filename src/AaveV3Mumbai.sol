@@ -35,6 +35,12 @@ library AaveV3Mumbai {
     address internal constant DEFAULT_INCENTIVES_CONTROLLER =
         0xFfaDa869df79320120dfFd6eeE8cF664Dba43146;
 
-    address internal constant DEFAULT_A_TOKEN_IMPLEMENTATION =
+    address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
         0x8017B7FC5473d05e67E617072fB237D24Add550b;
+
+    address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x08a917bbd0E22D496Ca9364B5D21311fe1D31637;
+
+    address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x651b8A8cA545b251a8f49B57D5838Da0a8DFbEF9;
 }

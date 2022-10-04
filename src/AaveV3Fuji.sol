@@ -35,6 +35,12 @@ library AaveV3Fuji {
     address internal constant DEFAULT_INCENTIVES_CONTROLLER =
         0x58Cd851c28dF05Edc7F018B533C0257DE57673f7;
 
-    address internal constant DEFAULT_A_TOKEN_IMPLEMENTATION =
+    address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
         0xA3a8697C4C6A7D9ccF9238cb567b122d53012ac9;
+
+    address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x651b8A8cA545b251a8f49B57D5838Da0a8DFbEF9;
+
+    address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x06Db7973d6D724Eb15404a0d178624f6e07834F9;
 }

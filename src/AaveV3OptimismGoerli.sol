@@ -35,6 +35,12 @@ library AaveV3OptimismGoerli {
     address internal constant DEFAULT_INCENTIVES_CONTROLLER =
         0x0C501fB73808e1BD73cBDdd0c99237bbc481Bb58;
 
-    address internal constant DEFAULT_A_TOKEN_IMPLEMENTATION =
+    address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
         0x08483a8d324C94942D9B9071e5e4aB6F28da0DF1;
+
+    address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0xC642A760bE9F04b453b899f7F454b2AFe21C1C61;
+
+    address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0xff01517f8811E532900a46e6AdB4484BDB3f2B8a;
 }

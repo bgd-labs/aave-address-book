@@ -35,6 +35,12 @@ library AaveV3ArbitrumGoerli {
     address internal constant DEFAULT_INCENTIVES_CONTROLLER =
         0xCf9C57744E10495490cB873612Db709417cFe4f4;
 
-    address internal constant DEFAULT_A_TOKEN_IMPLEMENTATION =
+    address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
         0x60bD8be38855AAd1459E958dC921ed5bbb5E3292;
+
+    address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x0aadeE9418641b5749e872eDEF9844200143865D;
+
+    address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x6A83d738fCBaB0c3973234AC7b7b4f7DDa2aD248;
 }
