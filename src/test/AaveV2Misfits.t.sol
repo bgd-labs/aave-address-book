@@ -29,10 +29,4 @@ contract AaveAddressMisfitsTest is Test {
       address(0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218)
     );
   }
-
-  function testOut() public {
-    emit log_bytes32(
-      bytes32(uint256(keccak256('eip1967.proxy.implementation')) - 1)
-    );
-  }
 }
