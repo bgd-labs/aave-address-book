@@ -2,8 +2,8 @@ import fs from "fs";
 import prettier from "prettier";
 
 import { Market, markets } from "./config";
-import { generateIndexFileV2, generateMarketV2 } from "./generator_v2";
-import { generateIndexFileV3, generateMarketV3 } from "./generator_v3";
+import { generateMarketV2 } from "./generator_v2";
+import { generateMarketV3 } from "./generator_v3";
 
 async function generateV2Markets(markets: Market[]) {
   const generatedMarkets = await Promise.allSettled(
@@ -28,14 +28,6 @@ async function generateV2Markets(markets: Market[]) {
 
     throw new Error("Some markets where not properly generated");
   }
-
-  await generateIndexFileV2(
-    generatedMarkets.map((m: any) => m.value).filter((m) => !m.testnet)
-  );
-  await generateIndexFileV2(
-    generatedMarkets.map((m: any) => m.value).filter((m) => m.testnet),
-    true
-  );
 
   return generatedMarkets.map((m: any) => m.value);
 }
@@ -63,14 +55,6 @@ async function generateV3Markets(markets: Market[]) {
 
     throw new Error("Some markets where not properly generated");
   }
-
-  await generateIndexFileV3(
-    generatedMarkets.map((m: any) => m.value).filter((m) => !m.testnet)
-  );
-  await generateIndexFileV3(
-    generatedMarkets.map((m: any) => m.value).filter((m) => m.testnet),
-    true
-  );
 
   return generatedMarkets.map((m: any) => m.value);
 }

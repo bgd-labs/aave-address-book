@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { Market, Token } from "./config";
+import { Market } from "./config";
 import fs from "fs";
 import addressProviderV2ABI from "./abi/address_provider_v2_abi.json";
 import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
@@ -79,7 +79,7 @@ export async function generateMarketV2(
 
     const templateV2Solidity = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
-  
+
   import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
   import {Token} from './Common.sol';
 
@@ -88,20 +88,20 @@ export async function generateMarketV2(
           ILendingPoolAddressesProvider(
               ${addressProvider}
           );
-  
+
       ILendingPool internal constant POOL =
           ILendingPool(${lendingPool});
-  
+
       ILendingPoolConfigurator internal constant POOL_CONFIGURATOR =
           ILendingPoolConfigurator(${lendingPoolConfigurator});
-  
+
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
 
       IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider(${poolDataProvider});
-  
+
       address internal constant POOL_ADMIN = ${admin};
-  
+
       address internal constant EMERGENCY_ADMIN = ${emergencyAdmin};
 
       address internal constant COLLECTOR = ${collector};
@@ -116,7 +116,7 @@ export async function generateMarketV2(
     );
 
     const templateV2Js = `export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
-export const POOL = "${lendingPool}";   
+export const POOL = "${lendingPool}";
 export const POOL_CONFIGURATOR = "${lendingPoolConfigurator}";
 export const ORACLE = "${oracle}";
 export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
@@ -148,78 +148,4 @@ export const CHAIN_ID = ${market.chainId};`;
       JSON.stringify({ message: error.message, market, stack: error.stack })
     );
   }
-}
-
-interface MarketV2 extends Market {
-  lendingPool: string;
-  lendingPoolConfigurator: string;
-  oracle: string;
-  admin: string;
-  emergencyAdmin: string;
-  poolDataProvider: string;
-  collector: string;
-  collectorController: string;
-  tokenList: Token[];
-}
-
-export async function generateIndexFileV2(
-  markets: MarketV2[],
-  testnet?: boolean
-) {
-  const templateV2 = `// SPDX-License-Identifier: MIT
-  pragma solidity >=0.6.0;
-  
-  import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
-  import {Token} from './Common.sol';
-
-  library AaveAddressBookV2${testnet ? "Testnet" : ""} {
-  ${markets.reduce((acc, market) => {
-    acc += `    string public constant ${market.name} = '${market.name}';\n`;
-    return acc;
-  }, "")}
-    
-      struct Market {
-        ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-        ILendingPool POOL;
-        ILendingPoolConfigurator POOL_CONFIGURATOR;
-        IAaveOracle ORACLE;
-        IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
-        address POOL_ADMIN;
-        address EMERGENCY_ADMIN;
-        address COLLECTOR;
-        address COLLECTOR_CONTROLLER;
-      }
-  
-      function getMarket(string calldata market) public pure returns(Market memory m) {
-  ${markets.reduce((acc, market, ix) => {
-    const isLast = ix === markets.length - 1;
-    const start = ix === 0 ? "        if" : " else if";
-    acc += `${start} (keccak256(abi.encodePacked(market)) == keccak256(abi.encodePacked(${
-      market.name
-    }))) {
-              return Market(
-                  ILendingPoolAddressesProvider(
-                      ${market.addressProvider}
-                  ),
-                  ILendingPool(${market.lendingPool}),
-                  ILendingPoolConfigurator(${market.lendingPoolConfigurator}),
-                  IAaveOracle(${market.oracle}),
-                  IAaveProtocolDataProvider(${market.poolDataProvider}),
-                  ${market.admin},
-                  ${market.emergencyAdmin},
-                  ${market.collector},
-                  ${market.collectorController}
-              );
-          }${isLast ? ` else revert('Market does not exist');` : ""}`;
-    return acc;
-  }, "")}
-    }
-}\r\n`;
-  const fileName = testnet
-    ? `./src/AaveAddressBookV2Testnet.sol`
-    : `./src/AaveAddressBookV2.sol`;
-  fs.writeFileSync(
-    fileName,
-    prettier.format(templateV2, { filepath: fileName })
-  );
 }
