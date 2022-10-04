@@ -1,4 +1,8 @@
-import { ethers } from "ethers";
+import { ethers, utils } from "ethers";
+
+export const bytes32toAddress = (bytes32: string) => {
+  return utils.getAddress(`0x${bytes32.slice(26)}`);
+};
 
 export const getImplementationStorageSlot = async (
   provider: ethers.providers.StaticJsonRpcProvider,
@@ -6,6 +10,6 @@ export const getImplementationStorageSlot = async (
 ) => {
   return await provider.getStorageAt(
     address,
-    "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103"
+    "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc"
   );
 };
