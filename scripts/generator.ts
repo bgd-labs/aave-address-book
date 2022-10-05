@@ -69,8 +69,8 @@ ${markets.reduce((acc, market) => {
   return acc;
 }, "")}
 
-import {Token} from './Common.sol';
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
+import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
 \r\n`;
   fs.writeFileSync(
     `./src/AaveAddressBook.sol`,

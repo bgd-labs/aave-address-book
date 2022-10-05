@@ -81,7 +81,6 @@ export async function generateMarketV2(
   pragma solidity >=0.6.0;
 
   import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
-  import {Token} from './Common.sol';
 
   library ${market.name} {
       ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

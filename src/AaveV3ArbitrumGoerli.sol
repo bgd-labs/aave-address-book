@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
-import {Token} from "./Common.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager, ICollector} from "./AaveV3.sol";
 
 library AaveV3ArbitrumGoerli {
     IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -29,8 +28,8 @@ library AaveV3ArbitrumGoerli {
     address internal constant COLLECTOR =
         0xad848879F9Ac276BdB7D38123F381C692FD6D6dE;
 
-    address internal constant COLLECTOR_CONTROLLER =
-        0xff01517f8811E532900a46e6AdB4484BDB3f2B8a;
+    ICollector internal constant COLLECTOR_CONTROLLER =
+        ICollector(0xff01517f8811E532900a46e6AdB4484BDB3f2B8a);
 
     address internal constant DEFAULT_INCENTIVES_CONTROLLER =
         0xCf9C57744E10495490cB873612Db709417cFe4f4;

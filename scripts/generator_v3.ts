@@ -104,9 +104,7 @@ export async function generateMarketV3(
     const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
 
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
-  import {Token} from './Common.sol';
-
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager, ICollector} from "./AaveV3.sol";
 
   library ${market.name} {
       IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -131,7 +129,7 @@ export async function generateMarketV3(
 
       address internal constant COLLECTOR = ${collector};
 
-      address internal constant COLLECTOR_CONTROLLER = ${collectorController};
+      ICollector internal constant COLLECTOR_CONTROLLER = ICollector(${collectorController});
 
       address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
 
