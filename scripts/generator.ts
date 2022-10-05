@@ -2,8 +2,8 @@ import fs from "fs";
 import prettier from "prettier";
 
 import { Market, markets } from "./config";
-import { generateIndexFileV2, generateMarketV2 } from "./generator_v2";
-import { generateIndexFileV3, generateMarketV3 } from "./generator_v3";
+import { generateMarketV2 } from "./generator_v2";
+import { generateMarketV3 } from "./generator_v3";
 
 async function generateV2Markets(markets: Market[]) {
   const generatedMarkets = await Promise.allSettled(
@@ -28,14 +28,6 @@ async function generateV2Markets(markets: Market[]) {
 
     throw new Error("Some markets where not properly generated");
   }
-
-  await generateIndexFileV2(
-    generatedMarkets.map((m: any) => m.value).filter((m) => !m.testnet)
-  );
-  await generateIndexFileV2(
-    generatedMarkets.map((m: any) => m.value).filter((m) => m.testnet),
-    true
-  );
 
   return generatedMarkets.map((m: any) => m.value);
 }
@@ -64,14 +56,6 @@ async function generateV3Markets(markets: Market[]) {
     throw new Error("Some markets where not properly generated");
   }
 
-  await generateIndexFileV3(
-    generatedMarkets.map((m: any) => m.value).filter((m) => !m.testnet)
-  );
-  await generateIndexFileV3(
-    generatedMarkets.map((m: any) => m.value).filter((m) => m.testnet),
-    true
-  );
-
   return generatedMarkets.map((m: any) => m.value);
 }
 
@@ -84,13 +68,9 @@ ${markets.reduce((acc, market) => {
   acc += `import {${market.name}} from "./${market.name}.sol";\r\n`;
   return acc;
 }, "")}
-import {AaveAddressBookV2Testnet} from "./AaveAddressBookV2Testnet.sol";
-import {AaveAddressBookV2} from "./AaveAddressBookV2.sol";
-import {AaveAddressBookV3Testnet} from "./AaveAddressBookV3Testnet.sol";
-import {AaveAddressBookV3} from "./AaveAddressBookV3.sol";
 
-import {Token} from './Common.sol';
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
+import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
 \r\n`;
   fs.writeFileSync(
     `./src/AaveAddressBook.sol`,

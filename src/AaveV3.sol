@@ -1919,7 +1919,6 @@ struct TokenData {
 
 // TODO: add better documentation
 interface IAaveProtocolDataProvider {
-  
   function getAllReservesTokens() external view returns (TokenData[] memory);
 
   function getAllATokens() external view returns (TokenData[] memory);
@@ -2036,11 +2035,11 @@ interface IAaveProtocolDataProvider {
       address stableDebtTokenAddress,
       address variableDebtTokenAddress
     );
-  
-    function getInterestRateStrategyAddress(address asset)
-      external
-      view
-      returns (address irStrategyAddress);
+
+  function getInterestRateStrategyAddress(address asset)
+    external
+    view
+    returns (address irStrategyAddress);
 }
 
 /**
@@ -2331,7 +2330,10 @@ interface IInterestRateStrategy {
    * 1-optimal stable to total debt ratio. Added as a constant here for gas optimizations.
    * Expressed in ray
    */
-  function MAX_EXCESS_STABLE_TO_TOTAL_DEBT_RATIO() external view returns (uint256);
+  function MAX_EXCESS_STABLE_TO_TOTAL_DEBT_RATIO()
+    external
+    view
+    returns (uint256);
 
   function ADDRESSES_PROVIDER() external view returns (IPoolAddressesProvider);
 
@@ -2395,7 +2397,9 @@ interface IInterestRateStrategy {
    * @return stableBorrowRate The stable borrow rate expressed in rays
    * @return variableBorrowRate The variable borrow rate expressed in rays
    */
-  function calculateInterestRates(DataTypes.CalculateInterestRatesParams memory params)
+  function calculateInterestRates(
+    DataTypes.CalculateInterestRatesParams memory params
+  )
     external
     view
     returns (
@@ -2403,4 +2407,62 @@ interface IInterestRateStrategy {
       uint256,
       uint256
     );
+}
+
+/**
+ * @title ICollector
+ * @notice Defines the interface of the Collector contract
+ * @author Aave
+ **/
+interface ICollector {
+  /**
+   * @dev Emitted during the transfer of ownership of the funds administrator address
+   * @param fundsAdmin The new funds administrator address
+   **/
+  event NewFundsAdmin(address indexed fundsAdmin);
+
+  /**
+   * @dev Retrieve the current implementation Revision of the proxy
+   * @return The revision version
+   */
+  function REVISION() external view returns (uint256);
+
+  /**
+   * @dev Retrieve the current funds administrator
+   * @return The address of the funds administrator
+   */
+  function getFundsAdmin() external view returns (address);
+
+  /**
+   * @dev Approve an amount of tokens to be pulled by the recipient.
+   * @param token The address of the asset
+   * @param recipient The address of the entity allowed to pull tokens
+   * @param amount The amount allowed to be pulled. If zero it will revoke the approval.
+   */
+  function approve(
+    // IERC20 token,
+    address token,
+    address recipient,
+    uint256 amount
+  ) external;
+
+  /**
+   * @dev Transfer an amount of tokens to the recipient.
+   * @param token The address of the asset
+   * @param recipient The address of the entity to transfer the tokens.
+   * @param amount The amount to be transferred.
+   */
+  function transfer(
+    // IERC20 token,
+    address token,
+    address recipient,
+    uint256 amount
+  ) external;
+
+  /**
+   * @dev Transfer the ownership of the funds administrator role.
+          This function should only be callable by the current funds administrator.
+   * @param admin The address of the new funds administrator
+   */
+  function setFundsAdmin(address admin) external;
 }

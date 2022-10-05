@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
-import {Token} from "./Common.sol";
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager, ICollector} from "./AaveV3.sol";
 
 library AaveV3FantomTestnet {
     IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -29,6 +28,18 @@ library AaveV3FantomTestnet {
     address internal constant COLLECTOR =
         0xF49dA7a22463D140f9f8dc7C91468C8721215496;
 
-    address internal constant COLLECTOR_CONTROLLER =
-        0x7aaB2c2CC186131851d6B1876D16eDc849846042;
+    ICollector internal constant COLLECTOR_CONTROLLER =
+        ICollector(0x7aaB2c2CC186131851d6B1876D16eDc849846042);
+
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x54Bc1D59873A5ABde98cf76B6EcF4075ff65d685;
+
+    address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
+        0xFc1Ab0379db4B6ad8Bf5Bc1382e108a341E2EaBb;
+
+    address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x981D8AcaF6af3a46785e7741d22fBE81B25Ebf1e;
+
+    address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0xc048C1b6ac47393F073dA2b3d5D1cc43b94891Fd;
 }

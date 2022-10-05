@@ -1,11 +1,14 @@
 import { ethers } from "ethers";
-import { Market, Token } from "./config";
+import { Market } from "./config";
 import fs from "fs";
 import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
 import poolV3ABI from "./abi/pool_v3_abi.json";
 import aTokenV3ABI from "./abi/aToken_v3_abi.json";
+import stableDebtTokenV3ABI from "./abi/stableDebtToken_v3_abi.json";
+import variableDebtTokenV3ABI from "./abi/variableDebtToken_v3_abi.json";
 import collectorV3ABI from "./abi/collector_v3_abi.json";
 import prettier from "prettier";
+import { bytes32toAddress, getImplementationStorageSlot } from "./helpers";
 
 export interface MarketV3WithAddresses extends Market {
   pool: string;
@@ -44,7 +47,6 @@ export async function generateMarketV3(
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const data = await lendingPoolContract.getReserveData(reserves[0]);
-
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
@@ -56,6 +58,41 @@ export async function generateMarketV3(
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
+    const defaultIncentivesController =
+      await aTokenContract.getIncentivesController();
+
+    const defaultATokenImplementation = bytes32toAddress(
+      await getImplementationStorageSlot(market.provider, data.aTokenAddress)
+    );
+
+    const aTokenRevision = await aTokenContract.ATOKEN_REVISION();
+
+    const defaultVariableDebtTokenImplementation = bytes32toAddress(
+      await getImplementationStorageSlot(
+        market.provider,
+        data.variableDebtTokenAddress
+      )
+    );
+
+    const variableDebtTokenRevision = await new ethers.Contract(
+      data.variableDebtTokenAddress,
+      variableDebtTokenV3ABI,
+      market.provider
+    ).DEBT_TOKEN_REVISION();
+
+    const defaultStableDebtTokenImplementation = bytes32toAddress(
+      await getImplementationStorageSlot(
+        market.provider,
+        data.stableDebtTokenAddress
+      )
+    );
+
+    const stableDebtTokenRevision = await new ethers.Contract(
+      data.stableDebtTokenAddress,
+      stableDebtTokenV3ABI,
+      market.provider
+    ).DEBT_TOKEN_REVISION();
+
     const collectorContract = new ethers.Contract(
       collector,
       collectorV3ABI,
@@ -66,35 +103,41 @@ export async function generateMarketV3(
 
     const templateV3 = `// SPDX-License-Identifier: MIT
   pragma solidity >=0.6.0;
-  
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
-  import {Token} from './Common.sol';
-  
-  
+
+  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager, ICollector} from "./AaveV3.sol";
+
   library ${market.name} {
       IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
           IPoolAddressesProvider(
               ${addressProvider}
           );
-  
+
       IPool internal constant POOL =
           IPool(${pool});
-  
+
       IPoolConfigurator internal constant POOL_CONFIGURATOR =
           IPoolConfigurator(${poolConfigurator});
-  
+
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
 
       IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider(${poolDataProvider});
-  
+
       IACLManager internal constant ACL_MANAGER = IACLManager(${aclManager});
-  
+
       address internal constant ACL_ADMIN = ${aclAdmin};
 
       address internal constant COLLECTOR = ${collector};
 
-      address internal constant COLLECTOR_CONTROLLER = ${collectorController};
+      ICollector internal constant COLLECTOR_CONTROLLER = ICollector(${collectorController});
+
+      address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
+
+      address internal constant DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = ${defaultATokenImplementation};
+
+      address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = ${defaultVariableDebtTokenImplementation};
+
+      address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = ${defaultStableDebtTokenImplementation};
   }\r\n`;
     fs.writeFileSync(
       `./src/${market.name}.sol`,
@@ -102,7 +145,7 @@ export async function generateMarketV3(
     );
 
     const templateV3Js = `export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
-export const POOL = "${pool}";   
+export const POOL = "${pool}";
 export const POOL_CONFIGURATOR = "${poolConfigurator}";
 export const ORACLE = "${oracle}";
 export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
@@ -134,78 +177,4 @@ export const CHAIN_ID = ${market.chainId};`;
       JSON.stringify({ message: error.message, market, stack: error.stack })
     );
   }
-}
-
-interface MarketV3 extends Market {
-  pool: string;
-  poolConfigurator: string;
-  oracle: string;
-  poolDataProvider: string;
-  aclAdmin: string;
-  aclManager: string;
-  collector: string;
-  collectorController: string;
-  tokenList: Token[];
-}
-
-export async function generateIndexFileV3(
-  markets: MarketV3[],
-  testnet?: boolean
-) {
-  const templateV3 = `// SPDX-License-Identifier: MIT
-  pragma solidity >=0.6.0;
-  
-  import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager} from "./AaveV3.sol";
-  import {Token} from './Common.sol';
-
-  library AaveAddressBookV3${testnet ? "Testnet" : ""} {
-  ${markets.reduce((acc, market) => {
-    acc += `    string public constant ${market.name} = '${market.name}';\n`;
-    return acc;
-  }, "")}
-
-      struct Market {
-        IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-        IPool POOL;
-        IPoolConfigurator POOL_CONFIGURATOR;
-        IAaveOracle ORACLE;
-        IAaveProtocolDataProvider POOL_DATA_PROVIDER;
-        IACLManager ACL_MANAGER;
-        address ACL_ADMIN;
-        address COLLECTOR;
-        address COLLECTOR_CONTROLLER;
-      }
-  
-      function getMarket(string calldata market) public pure returns(Market memory m) {
-  ${markets.reduce((acc, market, ix) => {
-    const isLast = ix === markets.length - 1;
-    const start = ix === 0 ? "        if" : " else if";
-    acc += `${start} (keccak256(abi.encodePacked((market))) == keccak256(abi.encodePacked((${
-      market.name
-    })))) {
-              return Market(
-                  IPoolAddressesProvider(
-                      ${market.addressProvider}
-                  ),
-                  IPool(${market.pool}),
-                  IPoolConfigurator(${market.poolConfigurator}),
-                  IAaveOracle(${market.oracle}),
-                  IAaveProtocolDataProvider(${market.poolDataProvider}),
-                  IACLManager(${market.aclManager}),
-                  ${market.aclAdmin},
-                  ${market.collector},
-                  ${market.collectorController}
-              );
-          }${isLast ? ` else revert('Market does not exist');` : ""}`;
-    return acc;
-  }, "")}
-      }
-  }\r\n`;
-  const fileName = testnet
-    ? `./src/AaveAddressBookV3Testnet.sol`
-    : `./src/AaveAddressBookV3.sol`;
-  fs.writeFileSync(
-    fileName,
-    prettier.format(templateV3, { filepath: fileName })
-  );
 }

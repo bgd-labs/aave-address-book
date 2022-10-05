@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import "forge-std/Test.sol";
-import { AaveV3Avalanche } from "../AaveAddressBook.sol";
+import 'forge-std/Test.sol';
+import {AaveV3Avalanche} from '../AaveAddressBook.sol';
 
 contract AaveAddressBookTest is Test {
   function setUp() public {}
@@ -58,7 +58,7 @@ contract AaveAddressBookTest is Test {
 
   function testCollectorControllerIsCorrect() public {
     assertEq(
-      AaveV3Avalanche.COLLECTOR_CONTROLLER,
+      address(AaveV3Avalanche.COLLECTOR_CONTROLLER),
       address(0xaCbE7d574EF8dC39435577eb638167Aca74F79f0)
     );
   }
