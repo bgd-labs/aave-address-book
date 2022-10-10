@@ -153,6 +153,10 @@ export const ACL_MANAGER = "${aclManager}";
 export const ACL_ADMIN = "${aclAdmin}";
 export const COLLECTOR = "${collector}";
 export const COLLECTOR_CONTROLLER = "${collectorController}";
+export const DEFAULT_INCENTIVES_CONTROLLER = "${defaultIncentivesController}";
+export const DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = "${defaultATokenImplementation}";
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = "${defaultVariableDebtTokenImplementation}";
+export const DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = "${defaultStableDebtTokenImplementation}";
 export const CHAIN_ID = ${market.chainId};`;
     fs.writeFileSync(
       `./src/ts/${market.name}.ts`,
