@@ -147,7 +147,7 @@ export async function generatePoolV3(pool: Pool): Promise<PoolV3WithAddresses> {
     );
 
     const templateV3Js = `export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
-export const POOL = "${pool}";
+export const POOL = "${poolAddress}";
 export const POOL_CONFIGURATOR = "${poolConfigurator}";
 export const ORACLE = "${oracle}";
 export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
