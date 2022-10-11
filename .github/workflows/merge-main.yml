@@ -17,3 +17,5 @@ jobs:
     uses: bgd-labs/github-workflows/.github/workflows/release.yml@main
   release-node:
     uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@2905e6ca55db412b4ce9ce77f3b35172476b1085
+    secrets:
+      NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
