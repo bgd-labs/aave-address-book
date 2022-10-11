@@ -16,14 +16,13 @@ export const getImplementationStorageSlot = async (
 };
 
 export const generateAdditionalAddresses = (pool: Pool): string => {
-  let text = "";
   if (pool.additionalAddresses) {
-    Object.keys(pool.additionalAddresses).reduce((acc, key) => {
+    return Object.keys(pool.additionalAddresses).reduce((acc, key) => {
       acc += `export const ${key} = "${
         pool.additionalAddresses![key as keyof typeof pool.additionalAddresses]
       }";\r\n`;
       return acc;
     }, "");
   }
-  return text;
+  return "";
 };
