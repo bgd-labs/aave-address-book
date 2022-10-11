@@ -97,7 +97,7 @@ npm i @bgd-labs/aave-address-book
 ### Usage
 
 ```js
-import * as markets from "@bgs-labs/aave-address-book"; // wildcard import
+import * as pools from "@bgs-labs/aave-address-book"; // wildcard import
 import { AaveV2Avalanche } from "@bgs-labs/aave-address-book"; // import specific pool
 
 // all variables available on solidity version are available in javascript as well

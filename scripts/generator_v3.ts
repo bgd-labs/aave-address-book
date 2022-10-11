@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { Market } from "./config";
+import { Pool } from "./config";
 import fs from "fs";
 import addressProviderV3ABI from "./abi/address_provider_v3_abi.json";
 import poolV3ABI from "./abi/pool_v3_abi.json";
@@ -8,9 +8,13 @@ import stableDebtTokenV3ABI from "./abi/stableDebtToken_v3_abi.json";
 import variableDebtTokenV3ABI from "./abi/variableDebtToken_v3_abi.json";
 import collectorV3ABI from "./abi/collector_v3_abi.json";
 import prettier from "prettier";
-import { bytes32toAddress, getImplementationStorageSlot } from "./helpers";
+import {
+  bytes32toAddress,
+  generateAdditionalAddresses,
+  getImplementationStorageSlot,
+} from "./helpers";
 
-export interface MarketV3WithAddresses extends Market {
+export interface PoolV3WithAddresses extends Pool {
   pool: string;
   poolDataProvider: string;
   poolConfigurator: string;
@@ -21,39 +25,37 @@ export interface MarketV3WithAddresses extends Market {
   collectorController: string;
 }
 
-export async function generateMarketV3(
-  market: Market
-): Promise<MarketV3WithAddresses> {
+export async function generatePoolV3(pool: Pool): Promise<PoolV3WithAddresses> {
   // using getAddress to get correct checksum in case the one in config isn't correct
-  const addressProvider = ethers.utils.getAddress(market.addressProvider);
+  const addressProvider = ethers.utils.getAddress(pool.addressProvider);
   const contract = new ethers.Contract(
     addressProvider,
     addressProviderV3ABI,
-    market.provider
+    pool.provider
   );
   try {
-    const pool = await contract.getPool();
+    const poolAddress = await contract.getPool();
     const poolConfigurator = await contract.getPoolConfigurator();
     const oracle = await contract.getPriceOracle();
     const aclAdmin = await contract.getACLAdmin();
     const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
-
     const lendingPoolContract = new ethers.Contract(
-      pool,
+      poolAddress,
       poolV3ABI,
-      market.provider
+      pool.provider
     );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const data = await lendingPoolContract.getReserveData(reserves[0]);
+
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
     const aTokenContract = new ethers.Contract(
       data.aTokenAddress,
       aTokenV3ABI,
-      market.provider
+      pool.provider
     );
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
@@ -62,14 +64,14 @@ export async function generateMarketV3(
       await aTokenContract.getIncentivesController();
 
     const defaultATokenImplementation = bytes32toAddress(
-      await getImplementationStorageSlot(market.provider, data.aTokenAddress)
+      await getImplementationStorageSlot(pool.provider, data.aTokenAddress)
     );
 
     const aTokenRevision = await aTokenContract.ATOKEN_REVISION();
 
     const defaultVariableDebtTokenImplementation = bytes32toAddress(
       await getImplementationStorageSlot(
-        market.provider,
+        pool.provider,
         data.variableDebtTokenAddress
       )
     );
@@ -77,12 +79,12 @@ export async function generateMarketV3(
     const variableDebtTokenRevision = await new ethers.Contract(
       data.variableDebtTokenAddress,
       variableDebtTokenV3ABI,
-      market.provider
+      pool.provider
     ).DEBT_TOKEN_REVISION();
 
     const defaultStableDebtTokenImplementation = bytes32toAddress(
       await getImplementationStorageSlot(
-        market.provider,
+        pool.provider,
         data.stableDebtTokenAddress
       )
     );
@@ -90,13 +92,13 @@ export async function generateMarketV3(
     const stableDebtTokenRevision = await new ethers.Contract(
       data.stableDebtTokenAddress,
       stableDebtTokenV3ABI,
-      market.provider
+      pool.provider
     ).DEBT_TOKEN_REVISION();
 
     const collectorContract = new ethers.Contract(
       collector,
       collectorV3ABI,
-      market.provider
+      pool.provider
     );
 
     const collectorController = await collectorContract.getFundsAdmin();
@@ -106,14 +108,14 @@ export async function generateMarketV3(
 
   import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, IACLManager, ICollector} from "./AaveV3.sol";
 
-  library ${market.name} {
+  library ${pool.name} {
       IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
           IPoolAddressesProvider(
               ${addressProvider}
           );
 
       IPool internal constant POOL =
-          IPool(${pool});
+          IPool(${poolAddress});
 
       IPoolConfigurator internal constant POOL_CONFIGURATOR =
           IPoolConfigurator(${poolConfigurator});
@@ -140,8 +142,8 @@ export async function generateMarketV3(
       address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = ${defaultStableDebtTokenImplementation};
   }\r\n`;
     fs.writeFileSync(
-      `./src/${market.name}.sol`,
-      prettier.format(templateV3, { filepath: `./src/${market.name}.sol` })
+      `./src/${pool.name}.sol`,
+      prettier.format(templateV3, { filepath: `./src/${pool.name}.sol` })
     );
 
     const templateV3Js = `export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
@@ -157,16 +159,17 @@ export const DEFAULT_INCENTIVES_CONTROLLER = "${defaultIncentivesController}";
 export const DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = "${defaultATokenImplementation}";
 export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = "${defaultVariableDebtTokenImplementation}";
 export const DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = "${defaultStableDebtTokenImplementation}";
-export const CHAIN_ID = ${market.chainId};`;
+export const CHAIN_ID = ${pool.chainId};
+${generateAdditionalAddresses(pool)}`;
     fs.writeFileSync(
-      `./src/ts/${market.name}.ts`,
+      `./src/ts/${pool.name}.ts`,
       prettier.format(templateV3Js, {
-        filepath: `./src/ts/${market.name}.ts`,
+        filepath: `./src/ts/${pool.name}.ts`,
       })
     );
 
     return {
-      pool,
+      pool: poolAddress,
       poolConfigurator,
       oracle,
       aclAdmin,
@@ -174,11 +177,11 @@ export const CHAIN_ID = ${market.chainId};`;
       poolDataProvider,
       collectorController,
       collector,
-      ...market,
+      ...pool,
     };
   } catch (error: any) {
     throw new Error(
-      JSON.stringify({ message: error.message, market, stack: error.stack })
+      JSON.stringify({ message: error.message, pool, stack: error.stack })
     );
   }
 }
