@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/bgd-labs/aave-address-book/compare/v1.2.0...v1.3.0) (2022-10-11)
+
+
+### Features
+
+* add chainId to node exports ([ec89bb7](https://github.com/bgd-labs/aave-address-book/commit/ec89bb72bc7c2585de0b0dff4677d5c233ed995e))
+* add incentives controller, a/s/v default implementations, ecosystem reserve & remove getMarket ([#33](https://github.com/bgd-labs/aave-address-book/issues/33)) ([f1f2abf](https://github.com/bgd-labs/aave-address-book/commit/f1f2abfd2dd919c1a5682f978824f3042abbf3fa))
+* try new release ci ([#36](https://github.com/bgd-labs/aave-address-book/issues/36)) ([7bf03ad](https://github.com/bgd-labs/aave-address-book/commit/7bf03ada7b18d9a322e1ce56d38834b9216b3097))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update ([9e5f793](https://github.com/bgd-labs/aave-address-book/commit/9e5f7938acbf9808e097e9c14aefd92b0a631272))
+
 ## [1.2.0](https://github.com/bgd-labs/aave-address-book/compare/v1.1.0...v1.2.0) (2022-09-02)
 
 
