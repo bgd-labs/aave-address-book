@@ -14,7 +14,7 @@
     "generate": "ts-node scripts/generator.ts",
     "build:typechain": "typechain --target ethers-v5 --out-dir dist './out/*/*.json'",
     "build:js": "tsc --project tsconfig.json --outDir dist",
-    "publish": "npm publish --access=public"
+    "ci:publish": "npm run build:js && npm publish --access=public"
   },
   "repository": {
     "type": "git",
