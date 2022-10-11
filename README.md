@@ -86,6 +86,29 @@ Foundry currently does not eliminate unused code for [verification](https://gith
 This results in rather gigantic verifications when using the index file import from [aave-address-book/AaveAddressBook.sol](./src/AaveAddressBook.sol).
 For production code we therefore recommend to use pool specific libraries (`Aave[Version][Network][?SubPool]`) exported from `aave-address-book` like `AaveV2Ethereum` for the `V2` `Ethereum` pool.
 
+## Usage with node
+
+### Install
+
+```sh
+npm i @bgd-labs/aave-address-book
+```
+
+### Usage
+
+```js
+import * as pools from "@bgs-labs/aave-address-book"; // wildcard import
+import { AaveV2Avalanche } from "@bgs-labs/aave-address-book"; // import specific pool
+
+// all variables available on solidity version are available in javascript as well
+console.log(AaveV2Avalanche.POOL_ADDRESSES_PROVIDER);
+// "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb"
+
+// in addition the chainId of the respecitve addresses is exported alongside
+console.log(AaveV2Avalanche.CHAIN_ID);
+// 43114
+```
+
 ## Running this repository
 
 ### Generate files

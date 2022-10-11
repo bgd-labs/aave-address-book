@@ -1,13 +1,14 @@
 import { ethers } from "ethers";
-import { Market } from "./config";
+import { Pool } from "./config";
 import fs from "fs";
 import addressProviderV2ABI from "./abi/address_provider_v2_abi.json";
 import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
 import aTokenV2ABI from "./abi/aToken_v2_abi.json";
 import collectorV2ABI from "./abi/collector_v2_abi.json";
 import prettier from "prettier";
+import { generateAdditionalAddresses } from "./helpers";
 
-export interface MarketV2WithAddresses extends Market {
+export interface PoolV2WithAddresses extends Pool {
   lendingPool: string;
   poolDataProvider: string;
   lendingPoolConfigurator: string;
@@ -18,18 +19,14 @@ export interface MarketV2WithAddresses extends Market {
   collectorController: string;
 }
 
-export async function generateMarketV2(
-  market: Market
-): Promise<MarketV2WithAddresses> {
+export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
   // using getAddress to get correct checksum in case the one in config isn't correct
-  const addressProvider: string = ethers.utils.getAddress(
-    market.addressProvider
-  );
+  const addressProvider: string = ethers.utils.getAddress(pool.addressProvider);
   try {
     const addressProviderContract = new ethers.Contract(
       addressProvider,
       addressProviderV2ABI,
-      market.provider
+      pool.provider
     );
     const lendingPool: string = await addressProviderContract.getLendingPool();
     const lendingPoolConfigurator: string =
@@ -46,7 +43,7 @@ export async function generateMarketV2(
     const lendingPoolContract = new ethers.Contract(
       lendingPool,
       lendingPoolV2ABI,
-      market.provider
+      pool.provider
     );
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
@@ -58,7 +55,7 @@ export async function generateMarketV2(
     const aTokenContract = new ethers.Contract(
       data.aTokenAddress,
       aTokenV2ABI,
-      market.provider
+      pool.provider
     );
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
@@ -66,7 +63,7 @@ export async function generateMarketV2(
     const collectorContract = new ethers.Contract(
       collector,
       collectorV2ABI,
-      market.provider
+      pool.provider
     );
 
     let collectorController;
@@ -82,7 +79,7 @@ export async function generateMarketV2(
 
   import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
 
-  library ${market.name} {
+  library ${pool.name} {
       ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
           ILendingPoolAddressesProvider(
               ${addressProvider}
@@ -108,9 +105,9 @@ export async function generateMarketV2(
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
   }\r\n`;
     fs.writeFileSync(
-      `./src/${market.name}.sol`,
+      `./src/${pool.name}.sol`,
       prettier.format(templateV2Solidity, {
-        filepath: `./src/${market.name}.sol`,
+        filepath: `./src/${pool.name}.sol`,
       })
     );
 
@@ -123,11 +120,12 @@ export const POOL_ADMIN = "${admin}";
 export const EMERGENCY_ADMIN = "${emergencyAdmin}";
 export const COLLECTOR = "${collector}";
 export const COLLECTOR_CONTROLLER = "${collectorController}";
-export const CHAIN_ID = ${market.chainId};`;
+export const CHAIN_ID = ${pool.chainId};
+${generateAdditionalAddresses(pool)}`;
     fs.writeFileSync(
-      `./src/ts/${market.name}.ts`,
+      `./src/ts/${pool.name}.ts`,
       prettier.format(templateV2Js, {
-        filepath: `./src/ts/${market.name}.ts`,
+        filepath: `./src/ts/${pool.name}.ts`,
       })
     );
 
@@ -140,11 +138,11 @@ export const CHAIN_ID = ${market.chainId};`;
       emergencyAdmin,
       collector,
       collectorController,
-      ...market,
+      ...pool,
     };
   } catch (error: any) {
     throw new Error(
-      JSON.stringify({ message: error.message, market, stack: error.stack })
+      JSON.stringify({ message: error.message, pool, stack: error.stack })
     );
   }
 }
