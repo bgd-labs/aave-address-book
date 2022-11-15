@@ -547,4 +547,21 @@ library AaveGovernanceV2 {
 
   address public constant ARC_TIMELOCK =
     0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218;
+
+  // https://github.com/aave/governance-crosschain-bridges
+  address internal constant POLYGON_BRIDGE_EXECUTOR =
+    0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
+
+  address internal constant OPTIMISM_BRIDGE_EXECUTOR =
+    0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
+
+  address internal constant ARBITRUM_BRIDGE_EXECUTOR =
+    0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
+
+  // https://github.com/bgd-labs/aave-v3-crosschain-listing-template/tree/master/src/contracts
+  address internal constant CROSSCHAIN_FORWARDER_POLYGON =
+    0x158a6bC04F0828318821baE797f50B0A1299d45b;
+
+  address internal constant CROSSCHAIN_FORWADER_OPTIMISM =
+    0x5f5C02875a8e9B5A26fbd09040ABCfDeb2AA6711;
 }
