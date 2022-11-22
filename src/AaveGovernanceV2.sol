@@ -562,6 +562,6 @@ library AaveGovernanceV2 {
   address internal constant CROSSCHAIN_FORWARDER_POLYGON =
     0x158a6bC04F0828318821baE797f50B0A1299d45b;
 
-  address internal constant CROSSCHAIN_FORWADER_OPTIMISM =
+  address internal constant CROSSCHAIN_FORWARDER_OPTIMISM =
     0x5f5C02875a8e9B5A26fbd09040ABCfDeb2AA6711;
 }
