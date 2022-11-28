@@ -133,6 +133,10 @@ forge build
 forge test
 ```
 
+### Adding a new Pool
+
+To list a new pool in the address book, you simply need to add a new pool in the [pools config](./scripts/config.ts) and run `yarn generate`.
+
 ## Sample projects
 
 - [aave v2 asset listing template](https://github.com/bgd-labs/example-aave-v2-listing)

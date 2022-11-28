@@ -12,7 +12,6 @@
   "scripts": {
     "prettier": "prettier --write 'src/**/*.sol'",
     "generate": "ts-node scripts/generator.ts",
-    "build:typechain": "typechain --target ethers-v5 --out-dir dist './out/*/*.json'",
     "build:js": "tsc --project tsconfig.json --outDir dist",
     "ci:publish": "npm run build:js && npm publish --access=public"
   },
@@ -27,14 +26,12 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
-    "@typechain/ethers-v5": "^10.1.0",
     "@types/node": "^17.0.41",
     "@types/prettier": "^2.6.3",
     "ethers": "^5.6.5",
     "prettier": "^2.6.2",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
     "ts-node": "^10.8.0",
-    "typechain": "^8.1.0",
     "typescript": "^4.7.3"
   }
 }
