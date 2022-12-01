@@ -7,6 +7,7 @@ import aTokenV3ABI from "./abi/aToken_v3_abi.json";
 import stableDebtTokenV3ABI from "./abi/stableDebtToken_v3_abi.json";
 import variableDebtTokenV3ABI from "./abi/variableDebtToken_v3_abi.json";
 import collectorV3ABI from "./abi/collector_v3_abi.json";
+import rewardsControllerABI from "./abi/rewardsController_v3_abi.json";
 import prettier from "prettier";
 import {
   bytes32toAddress,
@@ -101,6 +102,12 @@ export async function generatePoolV3(pool: Pool): Promise<PoolV3WithAddresses> {
       pool.provider
     );
 
+    const incentivesControllerContract = await new ethers.Contract(
+      defaultIncentivesController,
+      rewardsControllerABI,
+    pool.provider);
+    const emissionManager = await incentivesControllerContract.getEmissionManager();
+
     const collectorController = await collectorContract.getFundsAdmin();
 
     const templateV3 = `// SPDX-License-Identifier: MIT
@@ -140,6 +147,8 @@ export async function generatePoolV3(pool: Pool): Promise<PoolV3WithAddresses> {
       address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = ${defaultVariableDebtTokenImplementation};
 
       address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = ${defaultStableDebtTokenImplementation};
+
+      address internal constant EMISSION_MANAGER = ${emissionManager}
   }\r\n`;
     fs.writeFileSync(
       `./src/${pool.name}.sol`,
@@ -160,6 +169,7 @@ export const DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = "${defaultATokenImplem
 export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = "${defaultVariableDebtTokenImplementation}";
 export const DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = "${defaultStableDebtTokenImplementation}";
 export const CHAIN_ID = ${pool.chainId};
+export const EMISSION_MANAGER = ${emissionManager}
 ${generateAdditionalAddresses(pool)}`;
     fs.writeFileSync(
       `./src/ts/${pool.name}.ts`,
