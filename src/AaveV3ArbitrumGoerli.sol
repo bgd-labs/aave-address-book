@@ -42,4 +42,7 @@ library AaveV3ArbitrumGoerli {
 
     address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
         0x6A83d738fCBaB0c3973234AC7b7b4f7DDa2aD248;
+
+    address internal constant EMISSION_MANAGER =
+        0xb023e699F5a33916Ea823A16485e259257cA8Bd1;
 }
