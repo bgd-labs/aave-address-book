@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/bgd-labs/aave-address-book/compare/v1.3.0...v1.4.0) (2022-12-01)
+
+
+### Features
+
+* add bridge related addresses to address-book ([#41](https://github.com/bgd-labs/aave-address-book/issues/41)) ([e83e4ca](https://github.com/bgd-labs/aave-address-book/commit/e83e4ca9fcb9f1b36fa0fe83b1ff50086c47a21b))
+* added emission manager address to v3 pools ([#43](https://github.com/bgd-labs/aave-address-book/issues/43)) ([b4dd997](https://github.com/bgd-labs/aave-address-book/commit/b4dd997f8b6c8a086b360e56a89a5f88b30213b0))
+* update to use new long ([#38](https://github.com/bgd-labs/aave-address-book/issues/38)) ([9f85d42](https://github.com/bgd-labs/aave-address-book/commit/9f85d42abb2870db406e5c11effc2b0cd4effe41))
+
+
+### Bug Fixes
+
+* add pragma experimental to support 0.6.x builds ([#40](https://github.com/bgd-labs/aave-address-book/issues/40)) ([33934df](https://github.com/bgd-labs/aave-address-book/commit/33934dfdd7ec52487991fba477caf4e88fb8f178))
+* added abi coder v2 ([#39](https://github.com/bgd-labs/aave-address-book/issues/39)) ([b371604](https://github.com/bgd-labs/aave-address-book/commit/b3716047914f6acbc69421a3ff52d016d84bad65))
+* rename forwader -> forwarder ([acdb6c2](https://github.com/bgd-labs/aave-address-book/commit/acdb6c2a5d51b14bcbe35cfa1a597e8098ec1cca))
+
 ## [1.3.0](https://github.com/bgd-labs/aave-address-book/compare/v1.2.0...v1.3.0) (2022-10-11)
 
 
