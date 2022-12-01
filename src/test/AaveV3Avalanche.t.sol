@@ -62,4 +62,11 @@ contract AaveAddressBookTest is Test {
       address(0xaCbE7d574EF8dC39435577eb638167Aca74F79f0)
     );
   }
+
+  function testEmissionManagerIsCorrect() public {
+    assertEq(
+      address(AaveV3Avalanche.EMISSION_MANAGER),
+      address(0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73)
+    );
+  }
 }

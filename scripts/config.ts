@@ -29,10 +29,10 @@ const RPC_PROVIDERS = {
   [ChainId.arbitrum_one]: "https://arb1.arbitrum.io/rpc",
   [ChainId.arbitrum_goerli]: "https://goerli-rollup.arbitrum.io/rpc",
   [ChainId.harmony]: "https://api.s0.t.hmny.io",
-  [ChainId.optimism]: "https://mainnet.optimism.io",
+  [ChainId.optimism]: "https://opt-mainnet.g.alchemy.com/v2/demo",
   [ChainId.optimism_goerli]: "https://goerli.optimism.io",
   [ChainId.fantom]: "https://rpc.ftm.tools",
-  [ChainId.fantom_testnet]: "https://rpc.testnet.fantom.network",
+  [ChainId.fantom_testnet]: "https://rpc.ankr.com/fantom_testnet",
 } as const;
 
 export interface Pool {
