@@ -148,7 +148,7 @@ export async function generatePoolV3(pool: Pool): Promise<PoolV3WithAddresses> {
 
       address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = ${defaultStableDebtTokenImplementation};
 
-      address internal constant EMISSION_MANAGER = ${emissionManager}
+      address internal constant EMISSION_MANAGER = ${emissionManager};
   }\r\n`;
     fs.writeFileSync(
       `./src/${pool.name}.sol`,
@@ -169,7 +169,7 @@ export const DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = "${defaultATokenImplem
 export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = "${defaultVariableDebtTokenImplementation}";
 export const DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = "${defaultStableDebtTokenImplementation}";
 export const CHAIN_ID = ${pool.chainId};
-export const EMISSION_MANAGER = ${emissionManager}
+export const EMISSION_MANAGER = "${emissionManager}";
 ${generateAdditionalAddresses(pool)}`;
     fs.writeFileSync(
       `./src/ts/${pool.name}.ts`,
