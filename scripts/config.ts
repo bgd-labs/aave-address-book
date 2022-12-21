@@ -22,14 +22,14 @@ export enum ChainId {
 const RPC_PROVIDERS = {
   [ChainId.mainnet]: "https://rpc.flashbots.net",
   [ChainId.goerli]: "https://eth-goerli.public.blastapi.io",
-  [ChainId.mumbai]: "https://polygon-mumbai.g.alchemy.com/v2/demo",
+  [ChainId.mumbai]: "https://polygon-testnet.public.blastapi.io",
   [ChainId.polygon]: "https://polygon-rpc.com",
   [ChainId.fuji]: "https://api.avax-test.network/ext/bc/C/rpc",
   [ChainId.avalanche]: "https://api.avax.network/ext/bc/C/rpc",
   [ChainId.arbitrum_one]: "https://arb1.arbitrum.io/rpc",
   [ChainId.arbitrum_goerli]: "https://goerli-rollup.arbitrum.io/rpc",
   [ChainId.harmony]: "https://api.s0.t.hmny.io",
-  [ChainId.optimism]: "https://opt-mainnet.g.alchemy.com/v2/demo",
+  [ChainId.optimism]: "https://1rpc.io/op",
   [ChainId.optimism_goerli]: "https://goerli.optimism.io",
   [ChainId.fantom]: "https://rpc.ftm.tools",
   [ChainId.fantom_testnet]: "https://rpc.ankr.com/fantom_testnet",
@@ -244,7 +244,7 @@ export const pools: Pool[] = [
     version: 3,
     additionalAddresses: {
       WETH_GATEWAY: "0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f",
-      SWAP_COLLATERAL_ADAPTER: "0xe387c6053ce8ec9f8c3fa5ce085af73114a695d3",
+      SWAP_COLLATERAL_ADAPTER: "0xE387c6053CE8EC9f8C3fa5cE085Af73114a695d3",
       REPAY_WITH_COLLATERAL_ADAPTER:
         "0x1408401B2A7E28cB747b3e258D0831Fc926bAC51",
     },
@@ -287,6 +287,23 @@ export const pools: Pool[] = [
     additionalAddresses: {
       WETH_GATEWAY: "0x6f7f2440006221F893c587b88f01afc42B6F8d2e",
       FAUCET: "0xC52eA1F19C22E5a3725105BC0cf4988614e84D98",
+    },
+  },
+  {
+    name: "AaveV3EthereumDraft",
+    chainId: ChainId.mainnet,
+    addressProvider: "0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e",
+    version: 3,
+    additionalAddresses: {
+      WETH_GATEWAY: "0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2",
+      EMISSION_MANAGER: "0xcAA448c8066f741C3137cEa9758dF3fB377CBF4E",
+      COLLECTOR_CONTROLLER: "0x3d569673dAa0575c936c7c67c4E6AedA69CC630C",
+      COLLECTOR: "0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c",
+      DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1: "0x801934c604aBA0C8C46454c67F88A4a45a766a91",
+      DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1: "0x2688a209086Ae56e7b3598Ec68A0Cba3B965CD06",
+      DEFAULT_A_TOKEN_IMPL_REV_1: "0xca21517bac12053E7fD6C326EDF89C5cc60d813f",
+      DEFAULT_INCENTIVES_CONTROLLER: "0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb"
+
     },
   },
 ].map((m) => ({

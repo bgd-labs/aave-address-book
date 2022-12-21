@@ -32,4 +32,9 @@ library AaveV2Goerli {
         0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
 
     address internal constant COLLECTOR_CONTROLLER = address(0);
+
+    address internal constant WETH_GATEWAY =
+        0x3bd3a20Ac9Ff1dda1D99C0dFCE6D65C4960B3627;
+    address internal constant FAUCET =
+        0x681860075529352da2C94082Eb66c59dF958e89C;
 }

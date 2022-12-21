@@ -32,4 +32,9 @@ library AaveV2Fuji {
         0xB45F5C501A22288dfdb897e5f73E189597e09288;
 
     address internal constant COLLECTOR_CONTROLLER = address(0);
+
+    address internal constant WETH_GATEWAY =
+        0x1648C14DbB6ccdd5846969cE23DeEC4C66a03335;
+    address internal constant FAUCET =
+        0x90E5BAc5A98fff59617080848959f44eACB4Cd7B;
 }

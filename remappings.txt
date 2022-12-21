@@ -1,0 +1,6 @@
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+aave-v3-core/=lib/aave-v3-core/
+aave-v3-periphery/=lib/aave-v3-periphery/
+@aave/core-v3=lib/aave-v3-core/
+@aave/periphery-v3=lib/aave-v3-periphery/

@@ -32,4 +32,9 @@ library AaveV2Mumbai {
         0x943E44157dC0302a5CEb172374d1749018a00994;
 
     address internal constant COLLECTOR_CONTROLLER = address(0);
+
+    address internal constant WETH_GATEWAY =
+        0xee9eE614Ad26963bEc1Bec0D2c92879ae1F209fA;
+    address internal constant FAUCET =
+        0x0b3C23243106A69449e79C14c58BB49E358f9B10;
 }
