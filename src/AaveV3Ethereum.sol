@@ -33,7 +33,7 @@ library AaveV3Ethereum {
     address internal constant COLLECTOR_CONTROLLER =
         0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
     address internal constant COLLECTOR =
-        0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c;
+        0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
     address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
         0x801934c604aBA0C8C46454c67F88A4a45a766a91;
     address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
