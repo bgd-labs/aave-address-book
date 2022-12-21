@@ -20,7 +20,7 @@ export enum ChainId {
 }
 
 const RPC_PROVIDERS = {
-  [ChainId.mainnet]: "https://rpc.flashbots.net",
+  [ChainId.mainnet]: 'https://rpc.tenderly.co/fork/1e8e167f-4a45-4ac5-8ce1-4045b07a0faf',//"https://rpc.flashbots.net",
   [ChainId.goerli]: "https://eth-goerli.public.blastapi.io",
   [ChainId.mumbai]: "https://polygon-testnet.public.blastapi.io",
   [ChainId.polygon]: "https://polygon-rpc.com",
@@ -288,6 +288,15 @@ export const pools: Pool[] = [
       WETH_GATEWAY: "0x6f7f2440006221F893c587b88f01afc42B6F8d2e",
       FAUCET: "0xC52eA1F19C22E5a3725105BC0cf4988614e84D98",
     },
+  },
+  {
+    name: "AaveV3Ethereum",
+    chainId: ChainId.mainnet,
+    addressProvider: "0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e",
+    version: 3,
+    // additionalAddresses: {
+      // WETH_GATEWAY: "0x6f7f2440006221F893c587b88f01afc42B6F8d2e",
+    // },
   },
 ].map((m) => ({
   ...m,
