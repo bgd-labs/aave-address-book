@@ -4,7 +4,7 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager, ICollector} from "./AaveV3.sol";
 
-library AaveV3Ethereum {
+library AaveV3EthereumDraft {
     IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
         IPoolAddressesProvider(0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e);
 

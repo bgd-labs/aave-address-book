@@ -290,7 +290,7 @@ export const pools: Pool[] = [
     },
   },
   {
-    name: "AaveV3Ethereum",
+    name: "AaveV3EthereumDraft",
     chainId: ChainId.mainnet,
     addressProvider: "0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e",
     version: 3,
