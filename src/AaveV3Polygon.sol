@@ -46,4 +46,11 @@ library AaveV3Polygon {
 
     address internal constant EMISSION_MANAGER =
         0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
+
+    address internal constant WETH_GATEWAY =
+        0x1e4b7A6b903680eab0c5dAbcb8fD429cD2a9598c;
+    address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
+        0xA125561fca253f19eA93970534Bb0364ea74187a;
+    address internal constant SWAP_COLLATERAL_ADAPTER =
+        0x301F221bc732907E2da2dbBFaA8F8F6847c170c3;
 }

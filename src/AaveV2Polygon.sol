@@ -33,4 +33,11 @@ library AaveV2Polygon {
 
     address internal constant COLLECTOR_CONTROLLER =
         0xDB89487A449274478e984665b8692AfC67459deF;
+
+    address internal constant WETH_GATEWAY =
+        0xAeBF56223F044a73A513FAD7E148A9075227eD9b;
+    address internal constant SWAP_COLLATERAL_ADAPTER =
+        0x35784a624D4FfBC3594f4d16fA3801FeF063241c;
+    address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
+        0xE84cF064a0a65290Ae5673b500699f3753063936;
 }

@@ -46,4 +46,9 @@ library AaveV3Goerli {
 
     address internal constant EMISSION_MANAGER =
         0xefF40A6d9De203A8806F4F62D86d5C4c5856965E;
+
+    address internal constant WETH_GATEWAY =
+        0xd5B55D3Ed89FDa19124ceB5baB620328287b915d;
+    address internal constant FAUCET =
+        0x1ca525Cd5Cb77DB5Fa9cBbA02A0824e283469DBe;
 }

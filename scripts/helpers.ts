@@ -27,6 +27,18 @@ export const generateAdditionalAddresses = (pool: Pool): string => {
   return "";
 };
 
+export const generateAdditionalAddressesSol = (pool: Pool): string => {
+  if (pool.additionalAddresses) {
+    return Object.keys(pool.additionalAddresses).reduce((acc, key) => {
+      acc += `address internal constant ${key} = ${
+        pool.additionalAddresses![key as keyof typeof pool.additionalAddresses]
+      };\r\n`;
+      return acc;
+    }, "");
+  }
+  return "";
+};
+
 export async function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
