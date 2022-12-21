@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/bgd-labs/aave-address-book/compare/v1.5.0...v1.5.1) (2022-12-21)
+
+
+### Bug Fixes
+
+* add core as library ([#47](https://github.com/bgd-labs/aave-address-book/issues/47)) ([86c7b0e](https://github.com/bgd-labs/aave-address-book/commit/86c7b0ea366df8832cd420ae153b768871fd9d57)), closes [#49](https://github.com/bgd-labs/aave-address-book/issues/49)
+
 ## [1.5.0](https://github.com/bgd-labs/aave-address-book/compare/v1.4.0...v1.5.0) (2022-12-10)
 
 
