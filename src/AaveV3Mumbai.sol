@@ -46,4 +46,9 @@ library AaveV3Mumbai {
 
     address internal constant EMISSION_MANAGER =
         0x0000000000000000000000000000000000000000;
+
+    address internal constant WETH_GATEWAY =
+        0x2a58E9bbb5434FdA7FF78051a4B82cb0EF669C17;
+    address internal constant FAUCET =
+        0xc1eB89DA925cc2Ae8B36818d26E12DDF8F8601b0;
 }

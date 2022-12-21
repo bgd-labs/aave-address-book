@@ -46,4 +46,11 @@ library AaveV3Fantom {
 
     address internal constant EMISSION_MANAGER =
         0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
+
+    address internal constant WETH_GATEWAY =
+        0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f;
+    address internal constant SWAP_COLLATERAL_ADAPTER =
+        0xe387c6053ce8ec9f8c3fa5ce085af73114a695d3;
+    address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
+        0x1408401B2A7E28cB747b3e258D0831Fc926bAC51;
 }

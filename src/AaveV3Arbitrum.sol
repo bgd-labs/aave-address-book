@@ -46,4 +46,11 @@ library AaveV3Arbitrum {
 
     address internal constant EMISSION_MANAGER =
         0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
+
+    address internal constant WETH_GATEWAY =
+        0xB5Ee21786D28c5Ba61661550879475976B707099;
+    address internal constant SWAP_COLLATERAL_ADAPTER =
+        0xAE9f94BD98eC2831a1330e0418bE0fDb5C95C2B9;
+    address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
+        0x32FdC26aFFA1eB331263Bcdd59F2e46eCbCC2E24;
 }

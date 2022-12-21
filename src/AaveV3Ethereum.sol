@@ -25,4 +25,7 @@ library AaveV3Ethereum {
 
     address internal constant ACL_ADMIN =
         0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
+
+    address internal constant WETH_GATEWAY =
+        0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2;
 }

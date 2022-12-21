@@ -294,9 +294,9 @@ export const pools: Pool[] = [
     chainId: ChainId.mainnet,
     addressProvider: "0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e",
     version: 3,
-    // additionalAddresses: {
-      // WETH_GATEWAY: "0x6f7f2440006221F893c587b88f01afc42B6F8d2e",
-    // },
+    additionalAddresses: {
+      WETH_GATEWAY: "0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2",
+    },
   },
 ].map((m) => ({
   ...m,

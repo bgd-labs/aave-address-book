@@ -46,4 +46,9 @@ library AaveV3Fuji {
 
     address internal constant EMISSION_MANAGER =
         0x0000000000000000000000000000000000000000;
+
+    address internal constant WETH_GATEWAY =
+        0x8f57153F18b7273f9A814b93b31Cb3f9b035e7C2;
+    address internal constant FAUCET =
+        0x127277bF2F5fA186bfC6b3a0ca00baefB5472d3a;
 }
