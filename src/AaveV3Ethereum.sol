@@ -28,4 +28,18 @@ library AaveV3Ethereum {
 
     address internal constant WETH_GATEWAY =
         0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2;
+    address internal constant EMISSION_MANAGER =
+        0xcAA448c8066f741C3137cEa9758dF3fB377CBF4E;
+    address internal constant COLLECTOR_CONTROLLER =
+        0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
+    address internal constant COLLECTOR =
+        0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c;
+    address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x801934c604aBA0C8C46454c67F88A4a45a766a91;
+    address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+        0x2688a209086Ae56e7b3598Ec68A0Cba3B965CD06;
+    address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
+        0xca21517bac12053E7fD6C326EDF89C5cc60d813f;
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb;
 }
