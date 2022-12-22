@@ -15,11 +15,6 @@ import {IReserveInterestRateStrategy} from "aave-v3-core/contracts/interfaces/IR
 import {IDefaultInterestRateStrategy as IInterestRateStrategy} from "aave-v3-core/contracts/interfaces/IDefaultInterestRateStrategy.sol";
 import {IPoolDataProvider as IAaveProtocolDataProvider} from 'aave-v3-core/contracts/interfaces/IPoolDataProvider.sol';
 
-struct TokenData {
-  string symbol;
-  address tokenAddress;
-}
-
 /**
  * @title ICollector
  * @notice Defines the interface of the Collector contract
