@@ -6,3 +6,6 @@ ffi = false
 optimizer = true
 optimizer_runs = 1000000
 verbosity = 1
+remappings = [
+  '@aave/core-v3/=lib/aave-v3-core/'
+]

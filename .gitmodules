@@ -5,4 +5,4 @@
 [submodule "lib/aave-v3-core"]
 	path = lib/aave-v3-core
 	url = https://github.com/aave/aave-v3-core
-	branch = v1.16.2
+	branch = feat/3.0.1
