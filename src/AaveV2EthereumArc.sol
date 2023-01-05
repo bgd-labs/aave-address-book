@@ -33,4 +33,7 @@ library AaveV2EthereumArc {
 
     address internal constant COLLECTOR_CONTROLLER =
         0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
+
+    address internal constant PERMISSION_MANAGER =
+        0xF4a1F5fEA79C3609514A417425971FadC10eCfBE;
 }

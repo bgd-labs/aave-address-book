@@ -88,6 +88,9 @@ export const pools: Pool[] = [
     chainId: ChainId.mainnet,
     addressProvider: "0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00",
     version: 2,
+    additionalAddresses: {
+      PERMISSION_MANAGER: "0xF4a1F5fEA79C3609514A417425971FadC10eCfBE"
+    }
   },
   {
     name: "AaveV2Goerli",
