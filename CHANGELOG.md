@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/bgd-labs/aave-address-book/compare/v1.5.2...v1.6.0) (2023-01-05)
+
+
+### Features
+
+* added permission manager to arc pool ([#54](https://github.com/bgd-labs/aave-address-book/issues/54)) ([665e647](https://github.com/bgd-labs/aave-address-book/commit/665e647180b1a304048a57842cf0c83b0ba13168))
+
 ### [1.5.2](https://github.com/bgd-labs/aave-address-book/compare/v1.5.1...v1.5.2) (2022-12-22)
 
 ### [1.5.1](https://github.com/bgd-labs/aave-address-book/compare/v1.5.0...v1.5.1) (2022-12-21)
