@@ -26,6 +26,8 @@ library AaveV3Ethereum {
     address internal constant ACL_ADMIN =
         0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0xbaA999AC55EAce41CcAE355c77809e68Bb345170;
     address internal constant WETH_GATEWAY =
         0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C;
     address internal constant EMISSION_MANAGER =

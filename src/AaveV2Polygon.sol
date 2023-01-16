@@ -34,6 +34,8 @@ library AaveV2Polygon {
     address internal constant COLLECTOR_CONTROLLER =
         0xDB89487A449274478e984665b8692AfC67459deF;
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0x3ac4e9aa29940770aeC38fe853a4bbabb2dA9C19;
     address internal constant WETH_GATEWAY =
         0xAeBF56223F044a73A513FAD7E148A9075227eD9b;
     address internal constant SWAP_COLLATERAL_ADAPTER =

@@ -47,6 +47,8 @@ library AaveV3FantomTestnet {
     address internal constant EMISSION_MANAGER =
         0x0000000000000000000000000000000000000000;
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0xd79e25047CFD3e75b3Ae7D7AB4758CA315D9d0d1;
     address internal constant WETH_GATEWAY =
         0x87770f04Bbece8092d777860907798138825f303;
     address internal constant FAUCET =

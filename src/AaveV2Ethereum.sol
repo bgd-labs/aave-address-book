@@ -34,6 +34,8 @@ library AaveV2Ethereum {
     address internal constant COLLECTOR_CONTROLLER =
         0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0x52D306e36E3B6B02c153d0266ff0f85d18BCD413;
     address internal constant WETH_GATEWAY =
         0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31;
     address internal constant REPAY_WITH_COLLATERAL_ADAPTER =

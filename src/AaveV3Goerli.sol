@@ -47,6 +47,8 @@ library AaveV3Goerli {
     address internal constant EMISSION_MANAGER =
         0xefF40A6d9De203A8806F4F62D86d5C4c5856965E;
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0xC87385b5E62099f92d490750Fcd6C901a524BBcA;
     address internal constant WETH_GATEWAY =
         0xd5B55D3Ed89FDa19124ceB5baB620328287b915d;
     address internal constant FAUCET =

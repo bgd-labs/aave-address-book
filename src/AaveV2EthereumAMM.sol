@@ -34,6 +34,8 @@ library AaveV2EthereumAMM {
     address internal constant COLLECTOR_CONTROLLER =
         0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0x52D306e36E3B6B02c153d0266ff0f85d18BCD413;
     address internal constant WETH_GATEWAY =
         0x1C4a4e31231F71Fc34867D034a9E68f6fC798249;
     address internal constant WALLET_BALANCE_PROVIDER =

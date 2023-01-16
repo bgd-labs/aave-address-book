@@ -33,6 +33,8 @@ library AaveV2Avalanche {
 
     address internal constant COLLECTOR_CONTROLLER = address(0);
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0x4235E22d9C3f28DCDA82b58276cb6370B01265C2;
     address internal constant WETH_GATEWAY =
         0xC27d4dBefc2C0CE57916a699971b58a3BD9C7d5b;
     address internal constant SWAP_COLLATERAL_ADAPTER =
