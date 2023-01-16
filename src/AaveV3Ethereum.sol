@@ -40,6 +40,8 @@ library AaveV3Ethereum {
         0x15C5620dfFaC7c7366EED66C20Ad222DDbB1eD57;
     address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
         0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d;
+    address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+        0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb;
     address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
         0x1809f186D680f239420B56948C58F8DbbCdf1E18;
     address internal constant SWAP_COLLATERAL_ADAPTER =
