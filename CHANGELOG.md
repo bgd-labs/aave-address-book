@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/bgd-labs/aave-address-book/compare/v1.6.1...v1.7.0) (2023-01-16)
+
+
+### Features
+
+* added ethereum v3 addresses ([#58](https://github.com/bgd-labs/aave-address-book/issues/58)) ([4607fc2](https://github.com/bgd-labs/aave-address-book/commit/4607fc24663ee21405ca1be84fb0b19705dd1d47))
+
 ### [1.6.1](https://github.com/bgd-labs/aave-address-book/compare/v1.6.0...v1.6.1) (2023-01-05)
 
 ## [1.6.0](https://github.com/bgd-labs/aave-address-book/compare/v1.5.2...v1.6.0) (2023-01-05)
