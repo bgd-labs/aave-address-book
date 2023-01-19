@@ -10,7 +10,7 @@
   "types": "./dist/AaveAddressBook.d.ts",
   "sideEffects": false,
   "scripts": {
-    "prettier": "prettier --write 'src/**/*.sol'",
+    "prettier": "prettier --write 'src/**/*.{sol,ts}'",
     "generate": "ts-node scripts/generator.ts && npm run prettier",
     "build:js": "tsc --project tsconfig.json --outDir dist",
     "ci:publish": "npm run build:js && npm publish --access=public"
