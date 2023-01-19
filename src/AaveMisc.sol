@@ -71,10 +71,9 @@ interface IAaveEcosystemReserveController {
    * @param streamId The id of the stream to cancel
    * @return bool If the cancellation happened correctly
    **/
-  function cancelStream(
-    address collector,
-    uint256 streamId
-  ) external returns (bool);
+  function cancelStream(address collector, uint256 streamId)
+    external
+    returns (bool);
 }
 
 library AaveMisc {
