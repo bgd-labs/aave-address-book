@@ -48,7 +48,7 @@ export interface Pool {
     WETH_GATEWAY?: string;
     REPAY_WITH_COLLATERAL_ADAPTER?: string;
     SWAP_COLLATERAL_ADAPTER?: string;
-    POOL_ADDRESSES_PROVIDER_REGISTRY: string;
+    POOL_ADDRESSES_PROVIDER_REGISTRY?: string;
     LISTING_ENGINE?: string;
   };
 }
