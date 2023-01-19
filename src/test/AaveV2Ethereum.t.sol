@@ -15,10 +15,7 @@ contract AaveAddressBookTest is Test {
   }
 
   function testPoolAddressIsCorrect() public {
-    assertEq(
-      address(AaveV2Ethereum.POOL),
-      address(0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9)
-    );
+    assertEq(address(AaveV2Ethereum.POOL), address(0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9));
   }
 
   function testPoolConfiguratorIsCorrect() public {
@@ -29,10 +26,7 @@ contract AaveAddressBookTest is Test {
   }
 
   function testOracleIsCorrect() public {
-    assertEq(
-      address(AaveV2Ethereum.ORACLE),
-      address(0xA50ba011c48153De246E5192C8f9258A2ba79Ca9)
-    );
+    assertEq(address(AaveV2Ethereum.ORACLE), address(0xA50ba011c48153De246E5192C8f9258A2ba79Ca9));
   }
 
   function testAaveProtocolDataProviderIsCorrect() public {
@@ -43,24 +37,15 @@ contract AaveAddressBookTest is Test {
   }
 
   function testPoolAdminIsCorrect() public {
-    assertEq(
-      AaveV2Ethereum.POOL_ADMIN,
-      address(0xEE56e2B3D491590B5b31738cC34d5232F378a8D5)
-    );
+    assertEq(AaveV2Ethereum.POOL_ADMIN, address(0xEE56e2B3D491590B5b31738cC34d5232F378a8D5));
   }
 
   function testEmergencyAdminIsCorrect() public {
-    assertEq(
-      AaveV2Ethereum.EMERGENCY_ADMIN,
-      address(0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633)
-    );
+    assertEq(AaveV2Ethereum.EMERGENCY_ADMIN, address(0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633));
   }
 
   function testCollectorIsCorrect() public {
-    assertEq(
-      AaveV2Ethereum.COLLECTOR,
-      address(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c)
-    );
+    assertEq(AaveV2Ethereum.COLLECTOR, address(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c));
   }
 
   function testCollectorControllerIsCorrect() public {
