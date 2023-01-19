@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
-    "@types/node": "^17.0.41",
+    "@types/node": "^18.11.18",
     "@types/prettier": "^2.6.3",
-    "ethers": "^5.6.5",
+    "ethers": "^5.7.2",
     "prettier": "^2.6.2",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
-    "ts-node": "^10.8.0",
-    "typescript": "^4.7.3"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
   }
 }

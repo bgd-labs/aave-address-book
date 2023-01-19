@@ -26,26 +26,39 @@ library AaveV3Ethereum {
     address internal constant ACL_ADMIN =
         0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
 
+    address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+        0xbaA999AC55EAce41CcAE355c77809e68Bb345170;
+
     address internal constant WETH_GATEWAY =
         0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C;
+
     address internal constant EMISSION_MANAGER =
         0x223d844fc4B006D67c0cDbd39371A9F73f69d974;
+
     address internal constant COLLECTOR_CONTROLLER =
         0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
+
     address internal constant COLLECTOR =
         0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
+
     address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
         0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6;
+
     address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
         0x15C5620dfFaC7c7366EED66C20Ad222DDbB1eD57;
+
     address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 =
         0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d;
+
     address internal constant DEFAULT_INCENTIVES_CONTROLLER =
         0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb;
+
     address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
         0x1809f186D680f239420B56948C58F8DbbCdf1E18;
+
     address internal constant SWAP_COLLATERAL_ADAPTER =
         0x872fBcb1B582e8Cd0D0DD4327fBFa0B4C2730995;
+
     address internal constant LISTING_ENGINE =
         0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;
 }

@@ -6,7 +6,10 @@ import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
 import aTokenV2ABI from "./abi/aToken_v2_abi.json";
 import collectorV2ABI from "./abi/collector_v2_abi.json";
 import prettier from "prettier";
-import {generateAdditionalAddresses, generateAdditionalAddressesSol} from "./helpers";
+import {
+  generateAdditionalAddresses,
+  generateAdditionalAddressesSol,
+} from "./helpers";
 
 export interface PoolV2WithAddresses extends Pool {
   lendingPool: string;
@@ -22,7 +25,7 @@ export interface PoolV2WithAddresses extends Pool {
 export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
   console.time(pool.name);
   // using getAddress to get correct checksum in case the one in config isn't correct
-  const addressProvider: string = ethers.utils.getAddress(pool.addressProvider);
+  const addressProvider: string = pool.addressProvider;
   try {
     const addressProviderContract = new ethers.Contract(
       addressProvider,

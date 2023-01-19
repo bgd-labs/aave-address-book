@@ -3,7 +3,7 @@ pragma solidity >=0.6.0;
 
 import 'forge-std/Test.sol';
 import {AaveV3Avalanche} from '../AaveAddressBook.sol';
-import {IInterestRateStrategy, IAaveProtocolDataProvider, IPoolDataProvider, IDefaultInterestRateStrategy} from '../AaveV3.sol';
+import {IAaveProtocolDataProvider, IPoolDataProvider, IDefaultInterestRateStrategy} from '../AaveV3.sol';
 
 contract AaveAddressBookTest is Test {
   function setUp() public {}
