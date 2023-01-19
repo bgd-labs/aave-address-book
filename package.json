@@ -11,7 +11,7 @@
   "sideEffects": false,
   "scripts": {
     "prettier": "prettier --write 'src/**/*.sol'",
-    "generate": "ts-node scripts/generator.ts",
+    "generate": "ts-node scripts/generator.ts && npm run prettier",
     "build:js": "tsc --project tsconfig.json --outDir dist",
     "ci:publish": "npm run build:js && npm publish --access=public"
   },
