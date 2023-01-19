@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import "forge-std/Test.sol";
-import { AaveV2Ethereum } from "../AaveAddressBook.sol";
+import 'forge-std/Test.sol';
+import {AaveV2Ethereum} from '../AaveAddressBook.sol';
 
 contract AaveAddressBookTest is Test {
   function setUp() public {}

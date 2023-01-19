@@ -9,30 +9,28 @@ interface IGovernanceStrategy {
    * @param blockNumber Blocknumber at which to fetch Proposition Power
    * @return Power number
    **/
-  function getPropositionPowerAt(address user, uint256 blockNumber)
-    external
-    view
-    returns (uint256);
+  function getPropositionPowerAt(
+    address user,
+    uint256 blockNumber
+  ) external view returns (uint256);
 
   /**
    * @dev Returns the total supply of Outstanding Proposition Tokens
    * @param blockNumber Blocknumber at which to evaluate
    * @return total supply at blockNumber
    **/
-  function getTotalPropositionSupplyAt(uint256 blockNumber)
-    external
-    view
-    returns (uint256);
+  function getTotalPropositionSupplyAt(
+    uint256 blockNumber
+  ) external view returns (uint256);
 
   /**
    * @dev Returns the total supply of Outstanding Voting Tokens
    * @param blockNumber Blocknumber at which to evaluate
    * @return total supply at blockNumber
    **/
-  function getTotalVotingSupplyAt(uint256 blockNumber)
-    external
-    view
-    returns (uint256);
+  function getTotalVotingSupplyAt(
+    uint256 blockNumber
+  ) external view returns (uint256);
 
   /**
    * @dev Returns the Vote Power of a user at a specific block number.
@@ -40,10 +38,10 @@ interface IGovernanceStrategy {
    * @param blockNumber Blocknumber at which to fetch Vote Power
    * @return Vote number
    **/
-  function getVotingPowerAt(address user, uint256 blockNumber)
-    external
-    view
-    returns (uint256);
+  function getVotingPowerAt(
+    address user,
+    uint256 blockNumber
+  ) external view returns (uint256);
 }
 
 interface IExecutorWithTimelock {
@@ -507,10 +505,9 @@ interface IAaveGovernanceV2 {
    * @param proposalId id of the proposal to get
    * @return the proposal as ProposalWithoutVotes memory object
    **/
-  function getProposalById(uint256 proposalId)
-    external
-    view
-    returns (ProposalWithoutVotes memory);
+  function getProposalById(
+    uint256 proposalId
+  ) external view returns (ProposalWithoutVotes memory);
 
   /**
    * @dev Getter of the Vote of a voter about a proposal
@@ -519,20 +516,19 @@ interface IAaveGovernanceV2 {
    * @param voter address of the voter
    * @return The associated Vote memory object
    **/
-  function getVoteOnProposal(uint256 proposalId, address voter)
-    external
-    view
-    returns (Vote memory);
+  function getVoteOnProposal(
+    uint256 proposalId,
+    address voter
+  ) external view returns (Vote memory);
 
   /**
    * @dev Get the current state of a proposal
    * @param proposalId id of the proposal
    * @return The current state if the proposal
    **/
-  function getProposalState(uint256 proposalId)
-    external
-    view
-    returns (ProposalState);
+  function getProposalState(
+    uint256 proposalId
+  ) external view returns (ProposalState);
 }
 
 library AaveGovernanceV2 {

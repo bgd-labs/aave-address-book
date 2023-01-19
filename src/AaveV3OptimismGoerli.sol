@@ -49,8 +49,10 @@ library AaveV3OptimismGoerli {
 
     address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
         0xA33cB62d453891A1DC80F4A092F4990539e5FA07;
+
     address internal constant WETH_GATEWAY =
         0x6f7f2440006221F893c587b88f01afc42B6F8d2e;
+
     address internal constant FAUCET =
         0xC52eA1F19C22E5a3725105BC0cf4988614e84D98;
 }

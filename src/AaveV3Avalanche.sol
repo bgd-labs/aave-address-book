@@ -49,10 +49,13 @@ library AaveV3Avalanche {
 
     address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
         0x770ef9f4fe897e59daCc474EF11238303F9552b6;
+
     address internal constant WETH_GATEWAY =
         0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7;
+
     address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
         0x8a743090e9759E758d15a4CFd18408fb6332c625;
+
     address internal constant SWAP_COLLATERAL_ADAPTER =
         0xF7fC20D9D1D8DFE55F5F2c3180272a5747dD327F;
 }

@@ -35,8 +35,10 @@ library AaveV2Mumbai {
 
     address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
         0xE6ef11C967898F9525D550014FDEdCFAB63536B5;
+
     address internal constant WETH_GATEWAY =
         0xee9eE614Ad26963bEc1Bec0D2c92879ae1F209fA;
+
     address internal constant FAUCET =
         0x0b3C23243106A69449e79C14c58BB49E358f9B10;
 }

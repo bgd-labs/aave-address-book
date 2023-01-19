@@ -35,8 +35,10 @@ library AaveV2Fuji {
 
     address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
         0x04A6Fa9999E3C807Ee7b6Ca58eFAb93713d405BF;
+
     address internal constant WETH_GATEWAY =
         0x1648C14DbB6ccdd5846969cE23DeEC4C66a03335;
+
     address internal constant FAUCET =
         0x90E5BAc5A98fff59617080848959f44eACB4Cd7B;
 }

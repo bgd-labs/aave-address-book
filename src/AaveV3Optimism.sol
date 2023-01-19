@@ -49,10 +49,13 @@ library AaveV3Optimism {
 
     address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
         0x770ef9f4fe897e59daCc474EF11238303F9552b6;
+
     address internal constant WETH_GATEWAY =
         0x76D3030728e52DEB8848d5613aBaDE88441cbc59;
+
     address internal constant SWAP_COLLATERAL_ADAPTER =
         0xC7524B08101dBe695d7ad671a332760b5d967Cbd;
+
     address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
         0x70371a494f73A8Df658C5cd29E2C1601787e1009;
 }

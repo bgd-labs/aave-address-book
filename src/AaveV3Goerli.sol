@@ -49,8 +49,10 @@ library AaveV3Goerli {
 
     address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
         0xC87385b5E62099f92d490750Fcd6C901a524BBcA;
+
     address internal constant WETH_GATEWAY =
         0xd5B55D3Ed89FDa19124ceB5baB620328287b915d;
+
     address internal constant FAUCET =
         0x1ca525Cd5Cb77DB5Fa9cBbA02A0824e283469DBe;
 }

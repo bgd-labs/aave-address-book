@@ -20,7 +20,7 @@ export const generateAdditionalAddresses = (pool: Pool): string => {
     return Object.keys(pool.additionalAddresses).reduce((acc, key) => {
       acc += `export const ${key} = "${
         pool.additionalAddresses![key as keyof typeof pool.additionalAddresses]
-      }";\r\n`;
+      }";\n`;
       return acc;
     }, "");
   }
@@ -32,7 +32,7 @@ export const generateAdditionalAddressesSol = (pool: Pool): string => {
     return Object.keys(pool.additionalAddresses).reduce((acc, key) => {
       acc += `address internal constant ${key} = ${
         pool.additionalAddresses![key as keyof typeof pool.additionalAddresses]
-      };\r\n`;
+      };\n\n`;
       return acc;
     }, "");
   }
