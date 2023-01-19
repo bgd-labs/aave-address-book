@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/bgd-labs/aave-address-book/compare/v1.8.0...v1.9.0) (2023-01-19)
+
+
+### Features
+
+* added pool addresses provider registry contracts ([#60](https://github.com/bgd-labs/aave-address-book/issues/60)) ([ce15438](https://github.com/bgd-labs/aave-address-book/commit/ce154385d4827fb2f15742845e2e9eb39a0448fc))
+
 ## [1.8.0](https://github.com/bgd-labs/aave-address-book/compare/v1.7.0...v1.8.0) (2023-01-19)
 
 
