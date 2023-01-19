@@ -137,6 +137,15 @@ forge test
 
 To list a new pool in the address book, you simply need to add a new pool in the [pools config](./scripts/config.ts) and run `yarn generate`.
 
+### Adding new Addresses
+
+To add a new address to the address-book there are basically two relevant sections:
+
+1. adding an address that **can be optained via onchain calls** so it doesn't need to be hardcoded on the configs. To achieve an addition here you need to add the address to the respective [v2 type](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/generator_v2.ts#L11) and/or [v3 type](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/generator_v3.ts#L11) and adjust the generator scripts accordingly.
+2. adding an address that **cannot be optained via onchain calls** so it needs to be manually maintained. To achieve an addition here, you need to alter the [additionalAddresses section](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/config.ts#L46) on the pool type and add your address to the respecive pools.
+
+In any case you need to run `yarn generate` afterwards and commit the altered artifacts.
+
 ## Sample projects
 
 - [aave v2 asset listing template](https://github.com/bgd-labs/example-aave-v2-listing)
