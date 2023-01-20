@@ -16,10 +16,7 @@ contract AaveAddressBookTest is Test {
   }
 
   function testPoolAddressIsCorrect() public {
-    assertEq(
-      address(AaveV3Avalanche.POOL),
-      address(0x794a61358D6845594F94dc1DB02A252b5b4814aD)
-    );
+    assertEq(address(AaveV3Avalanche.POOL), address(0x794a61358D6845594F94dc1DB02A252b5b4814aD));
   }
 
   function testPoolConfiguratorIsCorrect() public {
@@ -30,10 +27,7 @@ contract AaveAddressBookTest is Test {
   }
 
   function testOracleIsCorrect() public {
-    assertEq(
-      address(AaveV3Avalanche.ORACLE),
-      address(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C)
-    );
+    assertEq(address(AaveV3Avalanche.ORACLE), address(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C));
   }
 
   function testACLManagerIsCorrect() public {
@@ -44,17 +38,11 @@ contract AaveAddressBookTest is Test {
   }
 
   function testACLAdminIsCorrect() public {
-    assertEq(
-      AaveV3Avalanche.ACL_ADMIN,
-      address(0xa35b76E4935449E33C56aB24b23fcd3246f13470)
-    );
+    assertEq(AaveV3Avalanche.ACL_ADMIN, address(0xa35b76E4935449E33C56aB24b23fcd3246f13470));
   }
 
   function testCollectorIsCorrect() public {
-    assertEq(
-      AaveV3Avalanche.COLLECTOR,
-      address(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0)
-    );
+    assertEq(AaveV3Avalanche.COLLECTOR, address(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0));
   }
 
   function testCollectorControllerIsCorrect() public {

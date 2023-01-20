@@ -71,16 +71,12 @@ interface IAaveEcosystemReserveController {
    * @param streamId The id of the stream to cancel
    * @return bool If the cancellation happened correctly
    **/
-  function cancelStream(address collector, uint256 streamId)
-    external
-    returns (bool);
+  function cancelStream(address collector, uint256 streamId) external returns (bool);
 }
 
 library AaveMisc {
-  address internal constant ECOSYSTEM_RESERVE =
-    0x25F2226B597E8F9514B3F68F00f494cF4f286491;
+  address internal constant ECOSYSTEM_RESERVE = 0x25F2226B597E8F9514B3F68F00f494cF4f286491;
 
-  IAaveEcosystemReserveController
-    internal constant AAVE_ECOSYSTEM_RESERVE_CONTROLLER =
+  IAaveEcosystemReserveController internal constant AAVE_ECOSYSTEM_RESERVE_CONTROLLER =
     IAaveEcosystemReserveController(0x3d569673dAa0575c936c7c67c4E6AedA69CC630C);
 }

@@ -168,12 +168,7 @@ interface ILendingPool {
    * @param to Address that will receive the underlying
    * @param amount The amount to be withdrawn
    **/
-  event Withdraw(
-    address indexed reserve,
-    address indexed user,
-    address indexed to,
-    uint256 amount
-  );
+  event Withdraw(address indexed reserve, address indexed user, address indexed to, uint256 amount);
 
   /**
    * @dev Emitted on borrow() and flashLoan() when debt needs to be opened
@@ -223,30 +218,21 @@ interface ILendingPool {
    * @param reserve The address of the underlying asset of the reserve
    * @param user The address of the user enabling the usage as collateral
    **/
-  event ReserveUsedAsCollateralEnabled(
-    address indexed reserve,
-    address indexed user
-  );
+  event ReserveUsedAsCollateralEnabled(address indexed reserve, address indexed user);
 
   /**
    * @dev Emitted on setUserUseReserveAsCollateral()
    * @param reserve The address of the underlying asset of the reserve
    * @param user The address of the user enabling the usage as collateral
    **/
-  event ReserveUsedAsCollateralDisabled(
-    address indexed reserve,
-    address indexed user
-  );
+  event ReserveUsedAsCollateralDisabled(address indexed reserve, address indexed user);
 
   /**
    * @dev Emitted on rebalanceStableBorrowRate()
    * @param reserve The address of the underlying asset of the reserve
    * @param user The address of the user for which the rebalance has been executed
    **/
-  event RebalanceStableBorrowRate(
-    address indexed reserve,
-    address indexed user
-  );
+  event RebalanceStableBorrowRate(address indexed reserve, address indexed user);
 
   /**
    * @dev Emitted on flashLoan()
@@ -331,12 +317,7 @@ interface ILendingPool {
    * @param referralCode Code used to register the integrator originating the operation, for potential rewards.
    *   0 if the action is executed directly by the user, without any middle-man
    **/
-  function deposit(
-    address asset,
-    uint256 amount,
-    address onBehalfOf,
-    uint16 referralCode
-  ) external;
+  function deposit(address asset, uint256 amount, address onBehalfOf, uint16 referralCode) external;
 
   /**
    * @dev Withdraws an `amount` of underlying asset from the reserve, burning the equivalent aTokens owned
@@ -349,11 +330,7 @@ interface ILendingPool {
    *   different wallet
    * @return The final amount withdrawn
    **/
-  function withdraw(
-    address asset,
-    uint256 amount,
-    address to
-  ) external returns (uint256);
+  function withdraw(address asset, uint256 amount, address to) external returns (uint256);
 
   /**
    * @dev Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower
@@ -420,8 +397,7 @@ interface ILendingPool {
    * @param asset The address of the underlying asset deposited
    * @param useAsCollateral `true` if the user wants to use the deposit as collateral, `false` otherwise
    **/
-  function setUserUseReserveAsCollateral(address asset, bool useAsCollateral)
-    external;
+  function setUserUseReserveAsCollateral(address asset, bool useAsCollateral) external;
 
   /**
    * @dev Function to liquidate a non-healthy position collateral-wise, with Health Factor below 1
@@ -479,7 +455,9 @@ interface ILendingPool {
    * @return ltv the loan to value of the user
    * @return healthFactor the current health factor of the user
    **/
-  function getUserAccountData(address user)
+  function getUserAccountData(
+    address user
+  )
     external
     view
     returns (
@@ -511,50 +489,39 @@ interface ILendingPool {
    * @param asset The address of the underlying asset of the reserve
    * @return The configuration of the reserve
    **/
-  function getConfiguration(address asset)
-    external
-    view
-    returns (DataTypes.ReserveConfigurationMap memory);
+  function getConfiguration(
+    address asset
+  ) external view returns (DataTypes.ReserveConfigurationMap memory);
 
   /**
    * @dev Returns the configuration of the user across all the reserves
    * @param user The user address
    * @return The configuration of the user
    **/
-  function getUserConfiguration(address user)
-    external
-    view
-    returns (DataTypes.UserConfigurationMap memory);
+  function getUserConfiguration(
+    address user
+  ) external view returns (DataTypes.UserConfigurationMap memory);
 
   /**
    * @dev Returns the normalized income normalized income of the reserve
    * @param asset The address of the underlying asset of the reserve
    * @return The reserve's normalized income
    */
-  function getReserveNormalizedIncome(address asset)
-    external
-    view
-    returns (uint256);
+  function getReserveNormalizedIncome(address asset) external view returns (uint256);
 
   /**
    * @dev Returns the normalized variable debt per unit of asset
    * @param asset The address of the underlying asset of the reserve
    * @return The reserve normalized variable debt
    */
-  function getReserveNormalizedVariableDebt(address asset)
-    external
-    view
-    returns (uint256);
+  function getReserveNormalizedVariableDebt(address asset) external view returns (uint256);
 
   /**
    * @dev Returns the state and configuration of the reserve
    * @param asset The address of the underlying asset of the reserve
    * @return The state of the reserve
    **/
-  function getReserveData(address asset)
-    external
-    view
-    returns (DataTypes.ReserveData memory);
+  function getReserveData(address asset) external view returns (DataTypes.ReserveData memory);
 
   function finalizeTransfer(
     address asset,
@@ -567,10 +534,7 @@ interface ILendingPool {
 
   function getReservesList() external view returns (address[] memory);
 
-  function getAddressesProvider()
-    external
-    view
-    returns (ILendingPoolAddressesProvider);
+  function getAddressesProvider() external view returns (ILendingPoolAddressesProvider);
 
   function setPause(bool val) external;
 
@@ -599,10 +563,7 @@ interface ILendingPoolConfigurator {
    * @param asset The address of the underlying asset of the reserve
    * @param stableRateEnabled True if stable rate borrowing is enabled, false otherwise
    **/
-  event BorrowingEnabledOnReserve(
-    address indexed asset,
-    bool stableRateEnabled
-  );
+  event BorrowingEnabledOnReserve(address indexed asset, bool stableRateEnabled);
 
   /**
    * @dev Emitted when borrowing is disabled on a reserve
@@ -679,10 +640,7 @@ interface ILendingPoolConfigurator {
    * @param asset The address of the underlying asset of the reserve
    * @param strategy The new address of the interest strategy contract
    **/
-  event ReserveInterestRateStrategyChanged(
-    address indexed asset,
-    address strategy
-  );
+  event ReserveInterestRateStrategyChanged(address indexed asset, address strategy);
 
   /**
    * @dev Emitted when an aToken implementation is upgraded
@@ -736,9 +694,7 @@ interface ILendingPoolConfigurator {
     address interestRateStrategyAddress
   ) external;
 
-  function batchInitReserve(
-    ConfiguratorInputTypes.InitReserveInput[] calldata input
-  ) external;
+  function batchInitReserve(ConfiguratorInputTypes.InitReserveInput[] calldata input) external;
 
   /**
    * @dev Updates the aToken implementation for the reserve
@@ -752,24 +708,21 @@ interface ILendingPoolConfigurator {
    * @param asset The address of the underlying asset of the reserve to be updated
    * @param implementation The address of the new aToken implementation
    **/
-  function updateStableDebtToken(address asset, address implementation)
-    external;
+  function updateStableDebtToken(address asset, address implementation) external;
 
   /**
    * @dev Updates the variable debt token implementation for the asset
    * @param asset The address of the underlying asset of the reserve to be updated
    * @param implementation The address of the new aToken implementation
    **/
-  function updateVariableDebtToken(address asset, address implementation)
-    external;
+  function updateVariableDebtToken(address asset, address implementation) external;
 
   /**
    * @dev Enables borrowing on a reserve
    * @param asset The address of the underlying asset of the reserve
    * @param stableBorrowRateEnabled True if stable borrow rate needs to be enabled by default on this reserve
    **/
-  function enableBorrowingOnReserve(address asset, bool stableBorrowRateEnabled)
-    external;
+  function enableBorrowingOnReserve(address asset, bool stableBorrowRateEnabled) external;
 
   /**
    * @dev Disables borrowing on a reserve
@@ -865,10 +818,7 @@ interface IAaveOracle {
   /// @notice External function called by the Aave governance to set or replace sources of assets
   /// @param assets The addresses of the assets
   /// @param sources The address of the source of each asset
-  function setAssetSources(
-    address[] calldata assets,
-    address[] calldata sources
-  ) external;
+  function setAssetSources(address[] calldata assets, address[] calldata sources) external;
 
   /// @notice Sets the fallbackOracle
   /// - Callable only by the Aave governance
@@ -881,10 +831,7 @@ interface IAaveOracle {
 
   /// @notice Gets a list of prices from a list of assets addresses
   /// @param assets The list of assets addresses
-  function getAssetsPrices(address[] calldata assets)
-    external
-    view
-    returns (uint256[] memory);
+  function getAssetsPrices(address[] calldata assets) external view returns (uint256[] memory);
 
   /// @notice Gets the address of the source for an asset address
   /// @param asset The address of the asset
@@ -903,7 +850,9 @@ struct TokenData {
 
 // TODO: incomplete interface
 interface IAaveProtocolDataProvider {
-  function getReserveConfigurationData(address asset)
+  function getReserveConfigurationData(
+    address asset
+  )
     external
     view
     returns (
@@ -921,7 +870,9 @@ interface IAaveProtocolDataProvider {
 
   function getAllReservesTokens() external view returns (TokenData[] memory);
 
-  function getReserveTokensAddresses(address asset)
+  function getReserveTokensAddresses(
+    address asset
+  )
     external
     view
     returns (
@@ -930,7 +881,10 @@ interface IAaveProtocolDataProvider {
       address variableDebtTokenAddress
     );
 
-  function getUserReserveData(address asset, address user)
+  function getUserReserveData(
+    address asset,
+    address user
+  )
     external
     view
     returns (
