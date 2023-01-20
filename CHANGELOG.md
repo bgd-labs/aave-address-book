@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.2](https://github.com/bgd-labs/aave-address-book/compare/v1.9.1...v1.9.2) (2023-01-20)
+
+
+### Bug Fixes
+
+* added renounceRole() to IACLManager (missed when change to import from v3-core) ([#69](https://github.com/bgd-labs/aave-address-book/issues/69)) ([0c07ee3](https://github.com/bgd-labs/aave-address-book/commit/0c07ee36d3512eca257ff3aadba36c8c1520e514))
+
 ### [1.9.1](https://github.com/bgd-labs/aave-address-book/compare/v1.9.0...v1.9.1) (2023-01-20)
 
 
