@@ -76,4 +76,6 @@ interface IACLManager is BasicIACLManager {
   function hasRole(bytes32 role, address account) external view returns (bool);
 
   function DEFAULT_ADMIN_ROLE() external pure returns (bytes32);
+
+  function renounceRole(bytes32 role, address account) external;
 }
