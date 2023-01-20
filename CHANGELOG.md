@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/bgd-labs/aave-address-book/compare/v1.9.0...v1.9.1) (2023-01-20)
+
+
+### Bug Fixes
+
+* added missing addresses to AaveGovernanceV2.ts ([#67](https://github.com/bgd-labs/aave-address-book/issues/67)) ([d560b55](https://github.com/bgd-labs/aave-address-book/commit/d560b55fefbc28b9626c1fe10d367a6ec0e970ad))
+
 ## [1.9.0](https://github.com/bgd-labs/aave-address-book/compare/v1.8.0...v1.9.0) (2023-01-19)
 
 
