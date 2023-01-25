@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/bgd-labs/aave-address-book/compare/v1.9.2...v1.10.0) (2023-01-25)
+
+
+### Features
+
+* added extra functions to extended IACLManager ([#71](https://github.com/bgd-labs/aave-address-book/issues/71)) ([99ef8a2](https://github.com/bgd-labs/aave-address-book/commit/99ef8a26feabcf4af275b543aa88d91e3afc149a))
+
 ### [1.9.2](https://github.com/bgd-labs/aave-address-book/compare/v1.9.1...v1.9.2) (2023-01-20)
 
 
