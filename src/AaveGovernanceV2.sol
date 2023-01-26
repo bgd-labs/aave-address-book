@@ -499,10 +499,6 @@ interface IAaveGovernanceV2 {
   function getProposalState(uint256 proposalId) external view returns (ProposalState);
 }
 
-interface IProposalGenericExecutor {
-  function execute() external;
-}
-
 library AaveGovernanceV2 {
   IAaveGovernanceV2 internal constant GOV =
     IAaveGovernanceV2(0xEC568fffba86c094cf06b22134B23074DFE2252c);
