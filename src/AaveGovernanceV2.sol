@@ -503,6 +503,9 @@ library AaveGovernanceV2 {
   IAaveGovernanceV2 internal constant GOV =
     IAaveGovernanceV2(0xEC568fffba86c094cf06b22134B23074DFE2252c);
 
+  IGovernanceStrategy public constant GOV_STRATEGY =
+    IGovernanceStrategy(0xb7e383ef9B1E9189Fc0F71fb30af8aa14377429e);
+
   address public constant SHORT_EXECUTOR = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
 
   address public constant LONG_EXECUTOR = 0x79426A1c24B2978D90d7A5070a46C65B07bC4299;
