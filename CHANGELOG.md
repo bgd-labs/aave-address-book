@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.1](https://github.com/bgd-labs/aave-address-book/compare/v1.10.0...v1.10.1) (2023-01-27)
+
+
+### Bug Fixes
+
+* add strategy & generic executor ([#73](https://github.com/bgd-labs/aave-address-book/issues/73)) ([43eac8d](https://github.com/bgd-labs/aave-address-book/commit/43eac8da34792ed859601dfdd6eab63445ecdc5a))
+* v3 ethereum ([#74](https://github.com/bgd-labs/aave-address-book/issues/74)) ([1b17fe0](https://github.com/bgd-labs/aave-address-book/commit/1b17fe0244ea39f63605473c0c789ad5b1b4c0a2))
+
 ## [1.10.0](https://github.com/bgd-labs/aave-address-book/compare/v1.9.2...v1.10.0) (2023-01-25)
 
 
