@@ -50,6 +50,7 @@ export interface Pool {
     SWAP_COLLATERAL_ADAPTER?: string;
     POOL_ADDRESSES_PROVIDER_REGISTRY?: string;
     LISTING_ENGINE?: string;
+    MIGRATION_HELPER?: string;
   };
 }
 

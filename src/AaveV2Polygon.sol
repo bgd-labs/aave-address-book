@@ -35,4 +35,6 @@ library AaveV2Polygon {
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xE84cF064a0a65290Ae5673b500699f3753063936;
+
+  address internal constant MIGRATION_HELPER = 0x3db487975aB1728DB5787b798866c2021B24ec52;
 }
