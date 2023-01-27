@@ -2,6 +2,7 @@
 pragma solidity >=0.6.0;
 
 import {AaveV2Ethereum} from './AaveV2Ethereum.sol';
+import {AaveV3Ethereum} from './AaveV3Ethereum.sol';
 import {AaveV2EthereumAMM} from './AaveV2EthereumAMM.sol';
 import {AaveV2EthereumArc} from './AaveV2EthereumArc.sol';
 import {AaveV2Goerli} from './AaveV2Goerli.sol';
@@ -21,7 +22,6 @@ import {AaveV3Fantom} from './AaveV3Fantom.sol';
 import {AaveV3Harmony} from './AaveV3Harmony.sol';
 import {AaveV3Optimism} from './AaveV3Optimism.sol';
 import {AaveV3OptimismGoerli} from './AaveV3OptimismGoerli.sol';
-import {AaveV3Ethereum} from './AaveV3Ethereum.sol';
 
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';

@@ -35,4 +35,6 @@ library AaveV2Avalanche {
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x935b362EE3E1f342cc48118C528AAbee5118F6e6;
+
+  address internal constant MIGRATION_HELPER = 0xf50a080aC535e531EC33cC05b227E910De2fb1fA;
 }
