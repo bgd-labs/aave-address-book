@@ -50,4 +50,6 @@ library AaveV3Arbitrum {
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x32FdC26aFFA1eB331263Bcdd59F2e46eCbCC2E24;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0x145dE30c929a065582da84Cf96F88460dB9745A7;
 }

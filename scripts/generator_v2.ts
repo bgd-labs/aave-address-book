@@ -1,15 +1,11 @@
-import { ethers } from "ethers";
-import { Pool } from "./config";
-import fs from "fs";
-import addressProviderV2ABI from "./abi/address_provider_v2_abi.json";
-import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
-import aTokenV2ABI from "./abi/aToken_v2_abi.json";
-import collectorV2ABI from "./abi/collector_v2_abi.json";
-import prettier from "prettier";
-import {
-  generateAdditionalAddresses,
-  generateAdditionalAddressesSol,
-} from "./helpers";
+import {ethers} from 'ethers';
+import {Pool} from './config';
+import fs from 'fs';
+import addressProviderV2ABI from './abi/address_provider_v2_abi.json';
+import lendingPoolV2ABI from './abi/lending_pool_v2_abi.json';
+import aTokenV2ABI from './abi/aToken_v2_abi.json';
+import collectorV2ABI from './abi/collector_v2_abi.json';
+import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers';
 
 export interface PoolV2WithAddresses extends Pool {
   lendingPool: string;
@@ -38,17 +34,12 @@ export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
     const oracle: string = await addressProviderContract.getPriceOracle();
     const admin: string = await addressProviderContract.getPoolAdmin();
     // const owner = await addressProviderContract.owner();
-    const emergencyAdmin: string =
-      await addressProviderContract.getEmergencyAdmin();
+    const emergencyAdmin: string = await addressProviderContract.getEmergencyAdmin();
     const poolDataProvider: string = await addressProviderContract.getAddress(
-      "0x0100000000000000000000000000000000000000000000000000000000000000"
+      '0x0100000000000000000000000000000000000000000000000000000000000000'
     );
 
-    const lendingPoolContract = new ethers.Contract(
-      lendingPool,
-      lendingPoolV2ABI,
-      pool.provider
-    );
+    const lendingPoolContract = new ethers.Contract(lendingPool, lendingPoolV2ABI, pool.provider);
 
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const data = await lendingPoolContract.getReserveData(reserves[0]);
@@ -56,26 +47,18 @@ export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
-    const aTokenContract = new ethers.Contract(
-      data.aTokenAddress,
-      aTokenV2ABI,
-      pool.provider
-    );
+    const aTokenContract = new ethers.Contract(data.aTokenAddress, aTokenV2ABI, pool.provider);
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
-    const collectorContract = new ethers.Contract(
-      collector,
-      collectorV2ABI,
-      pool.provider
-    );
+    const collectorContract = new ethers.Contract(collector, collectorV2ABI, pool.provider);
 
     let collectorController;
 
     try {
       collectorController = await collectorContract.getFundsAdmin();
     } catch (e) {
-      collectorController = "address(0)";
+      collectorController = 'address(0)';
     }
     console.timeEnd(pool.name);
 
@@ -110,7 +93,7 @@ export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
 
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
 
-      ${generateAdditionalAddressesSol(pool)}
+      ${generateAdditionalAddressesSol(pool.additionalAddresses)}
 
   }\r\n`;
     fs.writeFileSync(`./src/${pool.name}.sol`, templateV2Solidity);
@@ -126,7 +109,7 @@ export const EMERGENCY_ADMIN = "${emergencyAdmin}";
 export const COLLECTOR = "${collector}";
 export const COLLECTOR_CONTROLLER = "${collectorController}";
 export const CHAIN_ID = ${pool.chainId};
-${generateAdditionalAddresses(pool)}`;
+${generateAdditionalAddresses(pool.additionalAddresses)}`;
     fs.writeFileSync(`./src/ts/${pool.name}.ts`, templateV2Js);
 
     return {
@@ -141,8 +124,6 @@ ${generateAdditionalAddresses(pool)}`;
       ...pool,
     };
   } catch (error: any) {
-    throw new Error(
-      JSON.stringify({ message: error.message, pool, stack: error.stack })
-    );
+    throw new Error(JSON.stringify({message: error.message, pool, stack: error.stack}));
   }
 }

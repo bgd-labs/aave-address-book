@@ -37,4 +37,6 @@ library AaveV2Avalanche {
     0x935b362EE3E1f342cc48118C528AAbee5118F6e6;
 
   address internal constant MIGRATION_HELPER = 0xf50a080aC535e531EC33cC05b227E910De2fb1fA;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A;
 }

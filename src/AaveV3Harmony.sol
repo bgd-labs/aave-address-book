@@ -45,4 +45,6 @@ library AaveV3Harmony {
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
   address internal constant WETH_GATEWAY = 0xE387c6053CE8EC9f8C3fa5cE085Af73114a695d3;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f;
 }

@@ -50,4 +50,6 @@ library AaveV3Optimism {
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x70371a494f73A8Df658C5cd29E2C1601787e1009;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0xbd83DdBE37fc91923d59C8c1E0bDe0CccCa332d5;
 }

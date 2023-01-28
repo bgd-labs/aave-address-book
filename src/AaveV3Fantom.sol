@@ -50,4 +50,6 @@ library AaveV3Fantom {
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x1408401B2A7E28cB747b3e258D0831Fc926bAC51;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0xddf65434502E459C22263BE2ed7cF0f1FaFD44c0;
 }

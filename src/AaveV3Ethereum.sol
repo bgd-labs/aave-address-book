@@ -52,4 +52,6 @@ library AaveV3Ethereum {
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x872fBcb1B582e8Cd0D0DD4327fBFa0B4C2730995;
 
   address internal constant LISTING_ENGINE = 0xC51e6E38d406F98049622Ca54a6096a23826B426;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0x91c0eA31b49B69Ea18607702c5d9aC360bf3dE7d;
 }

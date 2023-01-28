@@ -33,5 +33,5 @@ library AaveV2EthereumAMM {
 
   address internal constant WALLET_BALANCE_PROVIDER = 0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922;
 
-  address internal constant UI_POOL_DATA_PROVIDER = 0x30375522F67a6308630d49A694ca1491fA2D3BC6;
+  address internal constant UI_POOL_DATA_PROVIDER = 0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A;
 }
