@@ -51,7 +51,7 @@ export interface Pool {
     POOL_ADDRESSES_PROVIDER_REGISTRY?: string;
     LISTING_ENGINE?: string;
     MIGRATION_HELPER?: string;
-    UI_POOL_DATA_PROVIDER: string;
+    UI_POOL_DATA_PROVIDER?: string;
   };
 }
 
