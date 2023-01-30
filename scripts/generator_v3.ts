@@ -76,21 +76,21 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
         }
       );
     }
-    const lendingPoolContract = new ethers.Contract(poolAddress, poolV3ABI, pool.provider);
-    const reserves: string[] = await lendingPoolContract.getReservesList();
-    const data = await lendingPoolContract.getReserveData(reserves[0]);
-
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
-    const aTokenContract = new ethers.Contract(data.aTokenAddress, aTokenV3ABI, pool.provider);
+    const aTokenContract = new ethers.Contract(
+      reservesData[0].aTokenAddress,
+      aTokenV3ABI,
+      pool.provider
+    );
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
     const defaultIncentivesController = await aTokenContract.getIncentivesController();
 
     const defaultATokenImplementation = bytes32toAddress(
-      await getImplementationStorageSlot(pool.provider, data.aTokenAddress)
+      await getImplementationStorageSlot(pool.provider, reservesData[0].aTokenAddress)
     );
 
     const aTokenRevision = await aTokenContract.ATOKEN_REVISION();
@@ -98,21 +98,21 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
     await sleep(1000);
 
     const defaultVariableDebtTokenImplementation = bytes32toAddress(
-      await getImplementationStorageSlot(pool.provider, data.variableDebtTokenAddress)
+      await getImplementationStorageSlot(pool.provider, reservesData[0].variableDebtTokenAddress)
     );
 
     const variableDebtTokenRevision = await new ethers.Contract(
-      data.variableDebtTokenAddress,
+      reservesData[0].variableDebtTokenAddress,
       variableDebtTokenV3ABI,
       pool.provider
     ).DEBT_TOKEN_REVISION();
 
     const defaultStableDebtTokenImplementation = bytes32toAddress(
-      await getImplementationStorageSlot(pool.provider, data.stableDebtTokenAddress)
+      await getImplementationStorageSlot(pool.provider, reservesData[0].stableDebtTokenAddress)
     );
 
     const stableDebtTokenRevision = await new ethers.Contract(
-      data.stableDebtTokenAddress,
+      reservesData[0].stableDebtTokenAddress,
       stableDebtTokenV3ABI,
       pool.provider
     ).DEBT_TOKEN_REVISION();

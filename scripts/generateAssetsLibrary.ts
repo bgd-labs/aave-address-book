@@ -16,6 +16,7 @@ export type ReserveData = {
  * `-` are replaced with `_`
  * `.` are removed
  * ` `(spaces) are replaced with `_`
+ * `1` are replaced with `ONE_`
  * There are certain assets with no proper symbol, so we fix it manually, based on underlying
  */
 function fixSymbol(symbol: string, _underlying: string) {
@@ -58,7 +59,7 @@ function fixSymbol(symbol: string, _underlying: string) {
     case '0x59a19d8c652fa0284f44113d0ff9aba70bd46fb4':
       return 'BPT_BAL_WETH';
   }
-  return symbol.replace('-', '_').replace('.', '').replace(' ', '_');
+  return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_');
 }
 
 export function appendAssetsLibrary(name: string, reserves: ReserveData[]) {
@@ -67,11 +68,11 @@ export function appendAssetsLibrary(name: string, reserves: ReserveData[]) {
       .map((reserve) => {
         const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
         return `address internal constant UNDERLYING_${symbol} = ${reserve.underlyingAsset};\n
-          address internal constant A_TOKEN_${symbol} = ${reserve.aTokenAddress};\n
-          address internal constant V_TOKEN_${symbol} = ${reserve.variableDebtTokenAddress};\n
-          address internal constant S_TOKEN_${symbol} = ${reserve.stableDebtTokenAddress};\n
-          address internal constant ORACLE_${symbol} = ${reserve.priceOracle};\n
-          address internal constant INTEREST_RATE_STRATEGY_${symbol} = ${reserve.interestRateStrategyAddress};\n\n`;
+          address internal constant ${symbol}_A_TOKEN = ${reserve.aTokenAddress};\n
+          address internal constant ${symbol}_V_TOKEN = ${reserve.variableDebtTokenAddress};\n
+          address internal constant ${symbol}_S_TOKEN = ${reserve.stableDebtTokenAddress};\n
+          address internal constant ${symbol}_ORACLE = ${reserve.priceOracle};\n
+          address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${reserve.interestRateStrategyAddress};\n\n`;
       })
       .join('')}
     }

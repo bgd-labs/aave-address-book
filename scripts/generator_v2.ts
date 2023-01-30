@@ -67,6 +67,7 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
       );
     }
 
+    // TODO: needed as i didn't find an upto date uipooldataprovider for arc
     const lendingPoolContract = new ethers.Contract(lendingPool, lendingPoolV2ABI, pool.provider);
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const data = await lendingPoolContract.getReserveData(reserves[0]);
