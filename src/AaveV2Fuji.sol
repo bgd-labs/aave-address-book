@@ -32,4 +32,10 @@ library AaveV2Fuji {
   address internal constant WETH_GATEWAY = 0x1648C14DbB6ccdd5846969cE23DeEC4C66a03335;
 
   address internal constant FAUCET = 0x90E5BAc5A98fff59617080848959f44eACB4Cd7B;
+
+  address internal constant WALLET_BALANCE_PROVIDER = 0x3f5A507B33260a3869878B31FB90F04F451d28e3;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0x88b4013f8C50e61ab027Cc253ab9a50663e2dF45;
+
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x9842E5B7b7C6cEDfB1952a388e050582Ff95645b;
 }

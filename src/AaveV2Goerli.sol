@@ -31,5 +31,11 @@ library AaveV2Goerli {
 
   address internal constant WETH_GATEWAY = 0x3bd3a20Ac9Ff1dda1D99C0dFCE6D65C4960B3627;
 
+  address internal constant WALLET_BALANCE_PROVIDER = 0xf1E4A6E7FA07421FD5139Ba0848290A27e22db7f;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0xaaa2872d1F7f5ceb630Cb736BcA34Ff1e121992b;
+
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xA2E05bE2090b3658A264bdf1C39387f5Dba367Ec;
+
   address internal constant FAUCET = 0x681860075529352da2C94082Eb66c59dF958e89C;
 }

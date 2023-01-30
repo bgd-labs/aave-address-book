@@ -46,5 +46,9 @@ library AaveV3Harmony {
 
   address internal constant WETH_GATEWAY = 0xE387c6053CE8EC9f8C3fa5cE085Af73114a695d3;
 
+  address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
+
   address internal constant UI_POOL_DATA_PROVIDER = 0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f;
+
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xf7a60467aBb8A3240A0382b22E1B03c7d4F59Da5;
 }

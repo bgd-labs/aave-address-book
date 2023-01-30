@@ -38,5 +38,9 @@ library AaveV2Polygon {
 
   address internal constant MIGRATION_HELPER = 0x3db487975aB1728DB5787b798866c2021B24ec52;
 
+  address internal constant WALLET_BALANCE_PROVIDER = 0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e;
+
   address internal constant UI_POOL_DATA_PROVIDER = 0x204f2Eb81D996729829debC819f7992DCEEfE7b1;
+
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x645654D59A5226CBab969b1f5431aA47CBf64ab8;
 }

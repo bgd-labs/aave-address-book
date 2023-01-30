@@ -6,45 +6,48 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 
 library AaveV3Goerli {
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-    IPoolAddressesProvider(0xc4dCB5126a3AfEd129BC3668Ea19285A9f56D15D);
+    IPoolAddressesProvider(0xC911B590248d127aD18546B186cC6B324e99F02c);
 
-  IPool internal constant POOL = IPool(0x368EedF3f56ad10b9bC57eed4Dac65B26Bb667f6);
+  IPool internal constant POOL = IPool(0x7b5C526B7F8dfdff278b4a3e045083FBA4028790);
 
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
-    IPoolConfigurator(0x723d17Ee6a668C011F01553D19B850E425075665);
+    IPoolConfigurator(0x3b35da485b4daceFf52d499aa6C14dFE233a51CD);
 
-  IAaveOracle internal constant ORACLE = IAaveOracle(0x5bed0810073cc9f0DacF73C648202249E87eF6cB);
+  IAaveOracle internal constant ORACLE = IAaveOracle(0x9F616c65b5298E24e155E4486e114516BC635b63);
 
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x9BE876c6DC42215B00d7efe892E2691C3bc35d10);
+    IPoolDataProvider(0xa41E284482F9923E265832bE59627d91432da76C);
 
   IACLManager internal constant ACL_MANAGER =
-    IACLManager(0x4c952A81A72A6BA2919a658feff1e7F023e4aadc);
+    IACLManager(0x30417E3105a111c4e8C697Df66d26fC68d43656F);
 
-  address internal constant ACL_ADMIN = 0x77c45699A715A64A7a7796d5CEe884cf617D5254;
+  address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
 
-  address internal constant COLLECTOR = 0xFbAF383eB6c757faCb8cb19B68d5131aEbc5c11e;
+  address internal constant COLLECTOR = 0xF45122b5fcfA72550B8Ed2D48f3aEeFcA1167415;
 
   ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0x5665007321915c8f0E72d041315bA1AD15065337);
+    ICollector(0x2DA49A23658d231b129F43bea4903C3682ab0Ed6);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0x0C501fB73808e1BD73cBDdd0c99237bbc481Bb58;
+    0xbE540b86E7b61624458ca928e9065e2133dBCA3a;
 
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xF2EBFA003f04f38Fc606a37ab8D1c015c015725c;
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x1a80eF9C6a2eAD07E8F42FB1CBb426587EEe0D7D;
 
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x1342dd8Ff58aee340e3C25268A4d08168cC5d990;
+    0xB5024bED4fb5ca8D9ea5E8b016FC4dbe50e94a32;
 
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x7D17eCD9fc4F64F180227216befb9d8E2c723135;
+    0xB8A83A393F08F35A65dF96B3Ca6b1B8841765c8A;
 
-  address internal constant EMISSION_MANAGER = 0xefF40A6d9De203A8806F4F62D86d5C4c5856965E;
+  address internal constant EMISSION_MANAGER = 0xF2F4146c7478f0B0285AdbcB4AcC1EfcAc7564C7;
 
-  address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
-    0xC87385b5E62099f92d490750Fcd6C901a524BBcA;
+  address internal constant WETH_GATEWAY = 0x2A498323aCaD2971a8b1936fD7540596dC9BBacD;
 
-  address internal constant WETH_GATEWAY = 0xd5B55D3Ed89FDa19124ceB5baB620328287b915d;
+  address internal constant FAUCET = 0xA70D8aD6d26931d0188c642A66de3B6202cDc5FA;
 
-  address internal constant FAUCET = 0x1ca525Cd5Cb77DB5Fa9cBbA02A0824e283469DBe;
+  address internal constant WALLET_BALANCE_PROVIDER = 0xe0bb4593f74B804B9aBd9a2Ec6C71663cEE64E29;
+
+  address internal constant UI_POOL_DATA_PROVIDER = 0xb00A75686293Fea5DA122E8361f6815A0B0AF48E;
+
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xf4Ce3624c8D047aF8b069D044f00bF6774B4dEc0;
 }

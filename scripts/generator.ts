@@ -1,11 +1,17 @@
 import fs from 'fs';
 
 import {Pool, pools} from './config';
-import {generatePoolV2} from './generator_v2';
+import {fetchPoolV2Addresses, writeV2Templates} from './generator_v2';
 import {fetchPoolV3Addresses, writeV3Templates} from './generator_v3';
 
 async function generateV2Pools(pools: Pool[]) {
-  const generatedPools = await Promise.allSettled(pools.map((pool) => generatePoolV2(pool)));
+  const generatedPools = await Promise.allSettled(
+    pools.map(async (pool) => {
+      const addresses = await fetchPoolV2Addresses(pool);
+      await writeV2Templates(addresses);
+      return addresses;
+    })
+  );
 
   const failedPools = generatedPools.filter((promise) => promise.status === 'rejected');
 
