@@ -1,18 +1,19 @@
-import fs from "fs";
-import prettier from "prettier";
+import fs from 'fs';
 
-import { Pool, pools } from "./config";
-import { generatePoolV2 } from "./generator_v2";
-import { generatePoolV3 } from "./generator_v3";
+import {Pool, pools} from './config';
+import {fetchPoolV2Addresses, writeV2Templates} from './generator_v2';
+import {fetchPoolV3Addresses, writeV3Templates} from './generator_v3';
 
 async function generateV2Pools(pools: Pool[]) {
   const generatedPools = await Promise.allSettled(
-    pools.map((pool) => generatePoolV2(pool))
+    pools.map(async (pool) => {
+      const addresses = await fetchPoolV2Addresses(pool);
+      await writeV2Templates(addresses);
+      return addresses;
+    })
   );
 
-  const failedPools = generatedPools.filter(
-    (promise) => promise.status === "rejected"
-  );
+  const failedPools = generatedPools.filter((promise) => promise.status === 'rejected');
 
   if (failedPools.length > 0) {
     failedPools.forEach((failedPool: any) => {
@@ -26,7 +27,7 @@ async function generateV2Pools(pools: Pool[]) {
       `);
     });
 
-    throw new Error("Some pools where not properly generated");
+    throw new Error('Some pools where not properly generated');
   }
 
   return generatedPools.map((m: any) => m.value);
@@ -34,12 +35,14 @@ async function generateV2Pools(pools: Pool[]) {
 
 async function generateV3Pools(pools: Pool[]) {
   const generatedPools = await Promise.allSettled(
-    pools.map((pool) => generatePoolV3(pool))
+    pools.map(async (pool) => {
+      const addresses = await fetchPoolV3Addresses(pool);
+      await writeV3Templates(addresses);
+      return addresses;
+    })
   );
 
-  const failedPools = generatedPools.filter(
-    (promise) => promise.status === "rejected"
-  );
+  const failedPools = generatedPools.filter((promise) => promise.status === 'rejected');
 
   if (failedPools.length > 0) {
     failedPools.forEach((failedPool: any) => {
@@ -53,7 +56,7 @@ async function generateV3Pools(pools: Pool[]) {
       `);
     });
 
-    throw new Error("Some pools where not properly generated");
+    throw new Error('Some pools where not properly generated');
   }
 
   return generatedPools.map((m: any) => m.value);
@@ -67,15 +70,12 @@ pragma solidity >=0.6.0;
 ${pools.reduce((acc, pool) => {
   acc += `import {${pool.name}} from "./${pool.name}.sol";\r\n`;
   return acc;
-}, "")}
+}, '')}
 
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
 \r\n`;
-  fs.writeFileSync(
-    `./src/AaveAddressBook.sol`,
-    aaveAddressBookSolidityTemplate
-  );
+  fs.writeFileSync(`./src/AaveAddressBook.sol`, aaveAddressBookSolidityTemplate);
 
   const aaveAddressBookJsTemplate = `export * as AaveGovernanceV2 from "./AaveGovernanceV2";
   export * as AaveSafetyModule from "./AaveSafetyModule";
@@ -83,7 +83,7 @@ import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
   ${pools.reduce((acc, pool) => {
     acc += `export * as ${pool.name} from "./${pool.name}";\r\n`;
     return acc;
-  }, "")}`;
+  }, '')}`;
   fs.writeFileSync(`./src/ts/AaveAddressBook.ts`, aaveAddressBookJsTemplate);
   await generateV2Pools(pools.filter((pool) => pool.version === 2));
   await generateV3Pools(pools.filter((pool) => pool.version === 3));
@@ -91,7 +91,7 @@ import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
 
 generatePools()
   .then(() => {
-    console.log("pools successfully generated");
+    console.log('pools successfully generated');
     process.exit(0);
   })
   .catch((error) => {

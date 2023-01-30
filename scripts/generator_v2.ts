@@ -1,15 +1,13 @@
-import { ethers } from "ethers";
-import { Pool } from "./config";
-import fs from "fs";
-import addressProviderV2ABI from "./abi/address_provider_v2_abi.json";
-import lendingPoolV2ABI from "./abi/lending_pool_v2_abi.json";
-import aTokenV2ABI from "./abi/aToken_v2_abi.json";
-import collectorV2ABI from "./abi/collector_v2_abi.json";
-import prettier from "prettier";
-import {
-  generateAdditionalAddresses,
-  generateAdditionalAddressesSol,
-} from "./helpers";
+import {ethers} from 'ethers';
+import {Pool} from './config';
+import fs from 'fs';
+import addressProviderV2ABI from './abi/address_provider_v2_abi.json';
+import lendingPoolV2ABI from './abi/lending_pool_v2_abi.json';
+import aTokenV2ABI from './abi/aToken_v2_abi.json';
+import collectorV2ABI from './abi/collector_v2_abi.json';
+import uipooldataProviderABI from './abi/uipooldata_provider.json';
+import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers';
+import {appendAssetsLibrary, ReserveData} from './generateAssetsLibrary';
 
 export interface PoolV2WithAddresses extends Pool {
   lendingPool: string;
@@ -20,9 +18,10 @@ export interface PoolV2WithAddresses extends Pool {
   emergencyAdmin: string;
   collector: string;
   collectorController: string;
+  reservesData: ReserveData[];
 }
 
-export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
+export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddresses> {
   console.time(pool.name);
   // using getAddress to get correct checksum in case the one in config isn't correct
   const addressProvider: string = pool.addressProvider;
@@ -38,54 +37,98 @@ export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
     const oracle: string = await addressProviderContract.getPriceOracle();
     const admin: string = await addressProviderContract.getPoolAdmin();
     // const owner = await addressProviderContract.owner();
-    const emergencyAdmin: string =
-      await addressProviderContract.getEmergencyAdmin();
+    const emergencyAdmin: string = await addressProviderContract.getEmergencyAdmin();
     const poolDataProvider: string = await addressProviderContract.getAddress(
-      "0x0100000000000000000000000000000000000000000000000000000000000000"
+      '0x0100000000000000000000000000000000000000000000000000000000000000'
     );
 
-    const lendingPoolContract = new ethers.Contract(
-      lendingPool,
-      lendingPoolV2ABI,
-      pool.provider
-    );
+    let reservesData: PoolV2WithAddresses['reservesData'] = [];
+    // workaround, fix before merge
+    // didn't find all the ui pool data provider addresses, so currently there are gaps
+    if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
+      const uiPoolDataProvider = new ethers.Contract(
+        pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
+        uipooldataProviderABI,
+        pool.provider
+      );
+      reservesData = (await uiPoolDataProvider.getReservesData(pool.addressProvider))[0].map(
+        (reserve: any) => {
+          return {
+            symbol: reserve.symbol,
+            underlyingAsset: reserve.underlyingAsset,
+            decimals: reserve.decimals,
+            aTokenAddress: reserve.aTokenAddress,
+            stableDebtTokenAddress: reserve.stableDebtTokenAddress,
+            variableDebtTokenAddress: reserve.variableDebtTokenAddress,
+            interestRateStrategyAddress: reserve.interestRateStrategyAddress,
+            priceOracle: reserve.priceOracle,
+          };
+        }
+      );
+    }
 
+    // TODO: needed as i didn't find an upto date uipooldataprovider for arc
+    const lendingPoolContract = new ethers.Contract(lendingPool, lendingPoolV2ABI, pool.provider);
     const reserves: string[] = await lendingPoolContract.getReservesList();
     const data = await lendingPoolContract.getReserveData(reserves[0]);
 
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
-    const aTokenContract = new ethers.Contract(
-      data.aTokenAddress,
-      aTokenV2ABI,
-      pool.provider
-    );
+    const aTokenContract = new ethers.Contract(data.aTokenAddress, aTokenV2ABI, pool.provider);
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
-    const collectorContract = new ethers.Contract(
-      collector,
-      collectorV2ABI,
-      pool.provider
-    );
+    const collectorContract = new ethers.Contract(collector, collectorV2ABI, pool.provider);
 
     let collectorController;
 
     try {
       collectorController = await collectorContract.getFundsAdmin();
     } catch (e) {
-      collectorController = "address(0)";
+      collectorController = 'address(0)';
     }
     console.timeEnd(pool.name);
 
-    const templateV2Solidity = `// SPDX-License-Identifier: MIT
+    return {
+      lendingPool,
+      poolDataProvider,
+      lendingPoolConfigurator,
+      oracle,
+      admin,
+      emergencyAdmin,
+      collector,
+      collectorController,
+      reservesData,
+      ...pool,
+    };
+  } catch (error: any) {
+    throw new Error(JSON.stringify({message: error.message, pool, stack: error.stack}));
+  }
+}
+
+export function writeV2Templates({
+  name,
+  addressProvider,
+  oracle,
+  poolDataProvider,
+  collector,
+  collectorController,
+  additionalAddresses,
+  chainId,
+  lendingPool,
+  lendingPoolConfigurator,
+  admin,
+  emergencyAdmin,
+  reservesData,
+}: PoolV2WithAddresses) {
+  const templateV2Solidity = `// SPDX-License-Identifier: MIT
   // AUTOGENERATED - DON'T MANUALLY CHANGE
   pragma solidity >=0.6.0;
 
   import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider} from "./AaveV2.sol";
 
-  library ${pool.name} {
+  library ${name} {
       ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
           ILendingPoolAddressesProvider(
               ${addressProvider}
@@ -110,12 +153,16 @@ export async function generatePoolV2(pool: Pool): Promise<PoolV2WithAddresses> {
 
       address internal constant COLLECTOR_CONTROLLER = ${collectorController};
 
-      ${generateAdditionalAddressesSol(pool)}
+      ${generateAdditionalAddressesSol(additionalAddresses)}
 
   }\r\n`;
-    fs.writeFileSync(`./src/${pool.name}.sol`, templateV2Solidity);
+  fs.writeFileSync(`./src/${name}.sol`, templateV2Solidity);
 
-    const templateV2Js = `// AUTOGENERATED - DON'T MANUALLY CHANGE
+  if (reservesData.length) {
+    appendAssetsLibrary(name, reservesData);
+  }
+
+  const templateV2Js = `// AUTOGENERATED - DON'T MANUALLY CHANGE
 export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
 export const POOL = "${lendingPool}";
 export const POOL_CONFIGURATOR = "${lendingPoolConfigurator}";
@@ -125,24 +172,7 @@ export const POOL_ADMIN = "${admin}";
 export const EMERGENCY_ADMIN = "${emergencyAdmin}";
 export const COLLECTOR = "${collector}";
 export const COLLECTOR_CONTROLLER = "${collectorController}";
-export const CHAIN_ID = ${pool.chainId};
-${generateAdditionalAddresses(pool)}`;
-    fs.writeFileSync(`./src/ts/${pool.name}.ts`, templateV2Js);
-
-    return {
-      lendingPool,
-      poolDataProvider,
-      lendingPoolConfigurator,
-      oracle,
-      admin,
-      emergencyAdmin,
-      collector,
-      collectorController,
-      ...pool,
-    };
-  } catch (error: any) {
-    throw new Error(
-      JSON.stringify({ message: error.message, pool, stack: error.stack })
-    );
-  }
+export const CHAIN_ID = ${chainId};
+${generateAdditionalAddresses(additionalAddresses)}`;
+  fs.writeFileSync(`./src/ts/${name}.ts`, templateV2Js);
 }
