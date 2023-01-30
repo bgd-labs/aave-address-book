@@ -67,7 +67,7 @@ export function appendAssetsLibrary(name: string, reserves: ReserveData[]) {
     ${reserves
       .map((reserve) => {
         const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
-        return `address internal constant UNDERLYING_${symbol} = ${reserve.underlyingAsset};\n
+        return `address internal constant ${symbol}_UNDERLYING = ${reserve.underlyingAsset};\n
           address internal constant ${symbol}_A_TOKEN = ${reserve.aTokenAddress};\n
           address internal constant ${symbol}_V_TOKEN = ${reserve.variableDebtTokenAddress};\n
           address internal constant ${symbol}_S_TOKEN = ${reserve.stableDebtTokenAddress};\n

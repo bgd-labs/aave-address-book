@@ -46,7 +46,7 @@ library AaveV2Avalanche {
 }
 
 library AaveV2AvalancheAssets {
-  address internal constant UNDERLYING_WETHe = 0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB;
+  address internal constant WETHe_UNDERLYING = 0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB;
 
   address internal constant WETHe_A_TOKEN = 0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21;
 
@@ -59,7 +59,7 @@ library AaveV2AvalancheAssets {
   address internal constant WETHe_INTEREST_RATE_STRATEGY =
     0x6724e923E4bb58fCdF7CEe7A5E7bBb47b99C2647;
 
-  address internal constant UNDERLYING_DAIe = 0xd586E7F844cEa2F87f50152665BCbc2C279D8d70;
+  address internal constant DAIe_UNDERLYING = 0xd586E7F844cEa2F87f50152665BCbc2C279D8d70;
 
   address internal constant DAIe_A_TOKEN = 0x47AFa96Cdc9fAb46904A55a6ad4bf6660B53c38a;
 
@@ -72,7 +72,7 @@ library AaveV2AvalancheAssets {
   address internal constant DAIe_INTEREST_RATE_STRATEGY =
     0xD96B68638bdbb625A49F5BAC0dC3B66764569d30;
 
-  address internal constant UNDERLYING_USDTe = 0xc7198437980c041c805A1EDcbA50c1Ce5db95118;
+  address internal constant USDTe_UNDERLYING = 0xc7198437980c041c805A1EDcbA50c1Ce5db95118;
 
   address internal constant USDTe_A_TOKEN = 0x532E6537FEA298397212F09A61e03311686f548e;
 
@@ -85,7 +85,7 @@ library AaveV2AvalancheAssets {
   address internal constant USDTe_INTEREST_RATE_STRATEGY =
     0xD96B68638bdbb625A49F5BAC0dC3B66764569d30;
 
-  address internal constant UNDERLYING_USDCe = 0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664;
+  address internal constant USDCe_UNDERLYING = 0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664;
 
   address internal constant USDCe_A_TOKEN = 0x46A51127C3ce23fb7AB1DE06226147F446e4a857;
 
@@ -98,7 +98,7 @@ library AaveV2AvalancheAssets {
   address internal constant USDCe_INTEREST_RATE_STRATEGY =
     0xD96B68638bdbb625A49F5BAC0dC3B66764569d30;
 
-  address internal constant UNDERLYING_AAVEe = 0x63a72806098Bd3D9520cC43356dD78afe5D386D9;
+  address internal constant AAVEe_UNDERLYING = 0x63a72806098Bd3D9520cC43356dD78afe5D386D9;
 
   address internal constant AAVEe_A_TOKEN = 0xD45B7c061016102f9FA220502908f2c0f1add1D7;
 
@@ -111,7 +111,7 @@ library AaveV2AvalancheAssets {
   address internal constant AAVEe_INTEREST_RATE_STRATEGY =
     0x6724e923E4bb58fCdF7CEe7A5E7bBb47b99C2647;
 
-  address internal constant UNDERLYING_WBTCe = 0x50b7545627a5162F82A992c33b87aDc75187B218;
+  address internal constant WBTCe_UNDERLYING = 0x50b7545627a5162F82A992c33b87aDc75187B218;
 
   address internal constant WBTCe_A_TOKEN = 0x686bEF2417b6Dc32C50a3cBfbCC3bb60E1e9a15D;
 
@@ -124,7 +124,7 @@ library AaveV2AvalancheAssets {
   address internal constant WBTCe_INTEREST_RATE_STRATEGY =
     0x6724e923E4bb58fCdF7CEe7A5E7bBb47b99C2647;
 
-  address internal constant UNDERLYING_WAVAX = 0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7;
+  address internal constant WAVAX_UNDERLYING = 0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7;
 
   address internal constant WAVAX_A_TOKEN = 0xDFE521292EcE2A4f44242efBcD66Bc594CA9714B;
 

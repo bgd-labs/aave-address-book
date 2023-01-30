@@ -59,7 +59,7 @@ library AaveV3Optimism {
 }
 
 library AaveV3OptimismAssets {
-  address internal constant UNDERLYING_DAI = 0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1;
+  address internal constant DAI_UNDERLYING = 0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1;
 
   address internal constant DAI_A_TOKEN = 0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE;
 
@@ -71,7 +71,7 @@ library AaveV3OptimismAssets {
 
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
-  address internal constant UNDERLYING_LINK = 0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6;
+  address internal constant LINK_UNDERLYING = 0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6;
 
   address internal constant LINK_A_TOKEN = 0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530;
 
@@ -84,7 +84,7 @@ library AaveV3OptimismAssets {
   address internal constant LINK_INTEREST_RATE_STRATEGY =
     0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C;
 
-  address internal constant UNDERLYING_USDC = 0x7F5c764cBc14f9669B88837ca1490cCa17c31607;
+  address internal constant USDC_UNDERLYING = 0x7F5c764cBc14f9669B88837ca1490cCa17c31607;
 
   address internal constant USDC_A_TOKEN = 0x625E7708f30cA75bfd92586e17077590C60eb4cD;
 
@@ -97,7 +97,7 @@ library AaveV3OptimismAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
 
-  address internal constant UNDERLYING_WBTC = 0x68f180fcCe6836688e9084f035309E29Bf0A2095;
+  address internal constant WBTC_UNDERLYING = 0x68f180fcCe6836688e9084f035309E29Bf0A2095;
 
   address internal constant WBTC_A_TOKEN = 0x078f358208685046a11C85e8ad32895DED33A249;
 
@@ -110,7 +110,7 @@ library AaveV3OptimismAssets {
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C;
 
-  address internal constant UNDERLYING_WETH = 0x4200000000000000000000000000000000000006;
+  address internal constant WETH_UNDERLYING = 0x4200000000000000000000000000000000000006;
 
   address internal constant WETH_A_TOKEN = 0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8;
 
@@ -123,7 +123,7 @@ library AaveV3OptimismAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C;
 
-  address internal constant UNDERLYING_USDT = 0x94b008aA00579c1307B0EF2c499aD98a8ce58e58;
+  address internal constant USDT_UNDERLYING = 0x94b008aA00579c1307B0EF2c499aD98a8ce58e58;
 
   address internal constant USDT_A_TOKEN = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
 
@@ -136,7 +136,7 @@ library AaveV3OptimismAssets {
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
 
-  address internal constant UNDERLYING_AAVE = 0x76FB31fb4af56892A25e32cFC43De717950c9278;
+  address internal constant AAVE_UNDERLYING = 0x76FB31fb4af56892A25e32cFC43De717950c9278;
 
   address internal constant AAVE_A_TOKEN = 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375;
 
@@ -149,7 +149,7 @@ library AaveV3OptimismAssets {
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C;
 
-  address internal constant UNDERLYING_sUSD = 0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9;
+  address internal constant sUSD_UNDERLYING = 0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9;
 
   address internal constant sUSD_A_TOKEN = 0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97;
 
@@ -162,7 +162,7 @@ library AaveV3OptimismAssets {
   address internal constant sUSD_INTEREST_RATE_STRATEGY =
     0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
-  address internal constant UNDERLYING_OP = 0x4200000000000000000000000000000000000042;
+  address internal constant OP_UNDERLYING = 0x4200000000000000000000000000000000000042;
 
   address internal constant OP_A_TOKEN = 0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf;
 

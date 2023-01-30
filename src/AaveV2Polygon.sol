@@ -46,7 +46,7 @@ library AaveV2Polygon {
 }
 
 library AaveV2PolygonAssets {
-  address internal constant UNDERLYING_DAI = 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063;
+  address internal constant DAI_UNDERLYING = 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063;
 
   address internal constant DAI_A_TOKEN = 0x27F8D03b3a2196956ED754baDc28D73be8830A6e;
 
@@ -58,7 +58,7 @@ library AaveV2PolygonAssets {
 
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xbE889f70c89f36eB34680b26162Fd84ffd6fE355;
 
-  address internal constant UNDERLYING_USDC = 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174;
+  address internal constant USDC_UNDERLYING = 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174;
 
   address internal constant USDC_A_TOKEN = 0x1a13F4Ca1d028320A707D99520AbFefca3998b7F;
 
@@ -71,7 +71,7 @@ library AaveV2PolygonAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0xe7a516f340a3f794a3B2fd0f74A7242b326b9f33;
 
-  address internal constant UNDERLYING_USDT = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
+  address internal constant USDT_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
 
   address internal constant USDT_A_TOKEN = 0x60D55F02A771d515e077c9C2403a1ef324885CeC;
 
@@ -84,7 +84,7 @@ library AaveV2PolygonAssets {
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0xe7a516f340a3f794a3B2fd0f74A7242b326b9f33;
 
-  address internal constant UNDERLYING_WBTC = 0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6;
+  address internal constant WBTC_UNDERLYING = 0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6;
 
   address internal constant WBTC_A_TOKEN = 0x5c2ed810328349100A66B82b78a1791B101C9D61;
 
@@ -97,7 +97,7 @@ library AaveV2PolygonAssets {
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0xD10e8A63EC6CfC6FE74B369d29D2765944d23505;
 
-  address internal constant UNDERLYING_WETH = 0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619;
+  address internal constant WETH_UNDERLYING = 0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619;
 
   address internal constant WETH_A_TOKEN = 0x28424507fefb6f7f8E9D3860F56504E4e5f5f390;
 
@@ -110,7 +110,7 @@ library AaveV2PolygonAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xcDAC94de1cf4e8E25B6C61Df6481C344c5E88f44;
 
-  address internal constant UNDERLYING_WMATIC = 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270;
+  address internal constant WMATIC_UNDERLYING = 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270;
 
   address internal constant WMATIC_A_TOKEN = 0x8dF3aad3a84da6b69A4DA8aeC3eA40d9091B2Ac4;
 
@@ -123,7 +123,7 @@ library AaveV2PolygonAssets {
   address internal constant WMATIC_INTEREST_RATE_STRATEGY =
     0x553b64567dE5392f6B189F6AC89581342DaD12F9;
 
-  address internal constant UNDERLYING_AAVE = 0xD6DF932A45C0f255f85145f286eA0b292B21C90B;
+  address internal constant AAVE_UNDERLYING = 0xD6DF932A45C0f255f85145f286eA0b292B21C90B;
 
   address internal constant AAVE_A_TOKEN = 0x1d2a0E5EC8E5bBDCA5CB219e649B565d8e5c3360;
 
@@ -136,7 +136,7 @@ library AaveV2PolygonAssets {
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0xae9b3Eb616ed753dcE96C75B6AE30A60Ff9290B4;
 
-  address internal constant UNDERLYING_GHST = 0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7;
+  address internal constant GHST_UNDERLYING = 0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7;
 
   address internal constant GHST_A_TOKEN = 0x080b5BF8f360F624628E0fb961F4e67c9e3c7CF1;
 
@@ -149,7 +149,7 @@ library AaveV2PolygonAssets {
   address internal constant GHST_INTEREST_RATE_STRATEGY =
     0xBb480ae4e2cf28FBE80C9b61ab075f6e7C4dB468;
 
-  address internal constant UNDERLYING_BAL = 0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3;
+  address internal constant BAL_UNDERLYING = 0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3;
 
   address internal constant BAL_A_TOKEN = 0xc4195D4060DaEac44058Ed668AA5EfEc50D77ff6;
 
@@ -161,7 +161,7 @@ library AaveV2PolygonAssets {
 
   address internal constant BAL_INTEREST_RATE_STRATEGY = 0x9025C2d672afA29f43cB59b3035CaCfC401F5D62;
 
-  address internal constant UNDERLYING_DPI = 0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369;
+  address internal constant DPI_UNDERLYING = 0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369;
 
   address internal constant DPI_A_TOKEN = 0x81fB82aAcB4aBE262fc57F06fD4c1d2De347D7B1;
 
@@ -173,7 +173,7 @@ library AaveV2PolygonAssets {
 
   address internal constant DPI_INTEREST_RATE_STRATEGY = 0x6405F880E431403588e92b241Ca15603047ef8a4;
 
-  address internal constant UNDERLYING_CRV = 0x172370d5Cd63279eFa6d502DAB29171933a610AF;
+  address internal constant CRV_UNDERLYING = 0x172370d5Cd63279eFa6d502DAB29171933a610AF;
 
   address internal constant CRV_A_TOKEN = 0x3Df8f92b7E798820ddcCA2EBEA7BAbda2c90c4aD;
 
@@ -185,7 +185,7 @@ library AaveV2PolygonAssets {
 
   address internal constant CRV_INTEREST_RATE_STRATEGY = 0xBD67eB7e00f43DAe9e3d51f7d509d4730Fe5988e;
 
-  address internal constant UNDERLYING_SUSHI = 0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a;
+  address internal constant SUSHI_UNDERLYING = 0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a;
 
   address internal constant SUSHI_A_TOKEN = 0x21eC9431B5B55c5339Eb1AE7582763087F98FAc2;
 
@@ -198,7 +198,7 @@ library AaveV2PolygonAssets {
   address internal constant SUSHI_INTEREST_RATE_STRATEGY =
     0x835699Bf98f6a7fDe5713c42c118Fb80fA059737;
 
-  address internal constant UNDERLYING_LINK = 0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39;
+  address internal constant LINK_UNDERLYING = 0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39;
 
   address internal constant LINK_A_TOKEN = 0x0Ca2e42e8c21954af73Bc9af1213E4e81D6a669A;
 

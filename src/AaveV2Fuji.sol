@@ -41,7 +41,7 @@ library AaveV2Fuji {
 }
 
 library AaveV2FujiAssets {
-  address internal constant UNDERLYING_WETH = 0x9668f5f55f2712Dd2dfa316256609b516292D554;
+  address internal constant WETH_UNDERLYING = 0x9668f5f55f2712Dd2dfa316256609b516292D554;
 
   address internal constant WETH_A_TOKEN = 0x2B2927e26b433D92fC598EE79Fa351d6591B8F95;
 
@@ -54,7 +54,7 @@ library AaveV2FujiAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0x79bA34079AA04E5d5b25C29df03A3736a8eC7817;
 
-  address internal constant UNDERLYING_USDT = 0x02823f9B469960Bb3b1de0B3746D4b95B7E35543;
+  address internal constant USDT_UNDERLYING = 0x02823f9B469960Bb3b1de0B3746D4b95B7E35543;
 
   address internal constant USDT_A_TOKEN = 0x5f049c41aF3856cBc171F61FB04D58C1e7445f5F;
 
@@ -67,7 +67,7 @@ library AaveV2FujiAssets {
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0xC49F727470A367f29Bf4F55B53b4531a26E61E05;
 
-  address internal constant UNDERLYING_WBTC = 0x9C1DCacB57ADa1E9e2D3a8280B7cfC7EB936186F;
+  address internal constant WBTC_UNDERLYING = 0x9C1DCacB57ADa1E9e2D3a8280B7cfC7EB936186F;
 
   address internal constant WBTC_A_TOKEN = 0xD5B516FDbfb7264676Fd4901B9dD3F707db68733;
 
@@ -80,7 +80,7 @@ library AaveV2FujiAssets {
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0xC58e46e20B11192Ecb90a8735362e3b633960bf5;
 
-  address internal constant UNDERLYING_WAVAX = 0xd00ae08403B9bbb9124bB305C09058E32C39A48c;
+  address internal constant WAVAX_UNDERLYING = 0xd00ae08403B9bbb9124bB305C09058E32C39A48c;
 
   address internal constant WAVAX_A_TOKEN = 0xf8C78Ba24DD965487f4472dfb280c46800a0c9B6;
 

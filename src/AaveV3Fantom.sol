@@ -59,7 +59,7 @@ library AaveV3Fantom {
 }
 
 library AaveV3FantomAssets {
-  address internal constant UNDERLYING_DAI = 0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E;
+  address internal constant DAI_UNDERLYING = 0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E;
 
   address internal constant DAI_A_TOKEN = 0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE;
 
@@ -71,7 +71,7 @@ library AaveV3FantomAssets {
 
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
-  address internal constant UNDERLYING_LINK = 0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8;
+  address internal constant LINK_UNDERLYING = 0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8;
 
   address internal constant LINK_A_TOKEN = 0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530;
 
@@ -84,7 +84,7 @@ library AaveV3FantomAssets {
   address internal constant LINK_INTEREST_RATE_STRATEGY =
     0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 
-  address internal constant UNDERLYING_USDC = 0x04068DA6C83AFCFA0e13ba15A6696662335D5B75;
+  address internal constant USDC_UNDERLYING = 0x04068DA6C83AFCFA0e13ba15A6696662335D5B75;
 
   address internal constant USDC_A_TOKEN = 0x625E7708f30cA75bfd92586e17077590C60eb4cD;
 
@@ -97,7 +97,7 @@ library AaveV3FantomAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
 
-  address internal constant UNDERLYING_BTC = 0x321162Cd933E2Be498Cd2267a90534A804051b11;
+  address internal constant BTC_UNDERLYING = 0x321162Cd933E2Be498Cd2267a90534A804051b11;
 
   address internal constant BTC_A_TOKEN = 0x078f358208685046a11C85e8ad32895DED33A249;
 
@@ -109,7 +109,7 @@ library AaveV3FantomAssets {
 
   address internal constant BTC_INTEREST_RATE_STRATEGY = 0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 
-  address internal constant UNDERLYING_ETH = 0x74b23882a30290451A17c44f4F05243b6b58C76d;
+  address internal constant ETH_UNDERLYING = 0x74b23882a30290451A17c44f4F05243b6b58C76d;
 
   address internal constant ETH_A_TOKEN = 0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8;
 
@@ -121,7 +121,7 @@ library AaveV3FantomAssets {
 
   address internal constant ETH_INTEREST_RATE_STRATEGY = 0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 
-  address internal constant UNDERLYING_fUSDT = 0x049d68029688eAbF473097a2fC38ef61633A3C7A;
+  address internal constant fUSDT_UNDERLYING = 0x049d68029688eAbF473097a2fC38ef61633A3C7A;
 
   address internal constant fUSDT_A_TOKEN = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
 
@@ -134,7 +134,7 @@ library AaveV3FantomAssets {
   address internal constant fUSDT_INTEREST_RATE_STRATEGY =
     0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
 
-  address internal constant UNDERLYING_AAVE = 0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B;
+  address internal constant AAVE_UNDERLYING = 0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B;
 
   address internal constant AAVE_A_TOKEN = 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375;
 
@@ -147,7 +147,7 @@ library AaveV3FantomAssets {
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 
-  address internal constant UNDERLYING_WFTM = 0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83;
+  address internal constant WFTM_UNDERLYING = 0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83;
 
   address internal constant WFTM_A_TOKEN = 0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97;
 
@@ -160,7 +160,7 @@ library AaveV3FantomAssets {
   address internal constant WFTM_INTEREST_RATE_STRATEGY =
     0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 
-  address internal constant UNDERLYING_CRV = 0x1E4F97b9f9F913c46F1632781732927B9019C68b;
+  address internal constant CRV_UNDERLYING = 0x1E4F97b9f9F913c46F1632781732927B9019C68b;
 
   address internal constant CRV_A_TOKEN = 0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf;
 
@@ -172,7 +172,7 @@ library AaveV3FantomAssets {
 
   address internal constant CRV_INTEREST_RATE_STRATEGY = 0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 
-  address internal constant UNDERLYING_SUSHI = 0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC;
+  address internal constant SUSHI_UNDERLYING = 0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC;
 
   address internal constant SUSHI_A_TOKEN = 0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA;
 

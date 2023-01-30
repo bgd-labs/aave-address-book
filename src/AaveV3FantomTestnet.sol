@@ -53,7 +53,7 @@ library AaveV3FantomTestnet {
 }
 
 library AaveV3FantomTestnetAssets {
-  address internal constant UNDERLYING_DAI = 0xe55C8c2c23Ad6953FD672b527b2A6d919Acf1834;
+  address internal constant DAI_UNDERLYING = 0xe55C8c2c23Ad6953FD672b527b2A6d919Acf1834;
 
   address internal constant DAI_A_TOKEN = 0x65501cE215b85373D41ad0E6ACA30610F00a6492;
 
@@ -65,7 +65,7 @@ library AaveV3FantomTestnetAssets {
 
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xF444aB2ecdF7267B2A179BD2e9291A6f09D0235F;
 
-  address internal constant UNDERLYING_LINK = 0x4Ba8C22516d707C0cf1aC8825fc0eD87e5D3A8D3;
+  address internal constant LINK_UNDERLYING = 0x4Ba8C22516d707C0cf1aC8825fc0eD87e5D3A8D3;
 
   address internal constant LINK_A_TOKEN = 0x40aA1a9eB67175148287F632264270de52fABf03;
 
@@ -78,7 +78,7 @@ library AaveV3FantomTestnetAssets {
   address internal constant LINK_INTEREST_RATE_STRATEGY =
     0x036cd658D892512d403bFB12b1E724e801D36888;
 
-  address internal constant UNDERLYING_USDC = 0x382E773695e6877B0BDc9d02DFe1594061879fE5;
+  address internal constant USDC_UNDERLYING = 0x382E773695e6877B0BDc9d02DFe1594061879fE5;
 
   address internal constant USDC_A_TOKEN = 0x8dAC4Da226Cc4569d47d0fB32bb4dF1CB21dbEA4;
 
@@ -91,7 +91,7 @@ library AaveV3FantomTestnetAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x6E93A90455ca48d673DC983fC15A7a9a18c57A9E;
 
-  address internal constant UNDERLYING_WBTC = 0xe981B1B879698E4Fc1ECcD0534cC1814e9D28A8E;
+  address internal constant WBTC_UNDERLYING = 0xe981B1B879698E4Fc1ECcD0534cC1814e9D28A8E;
 
   address internal constant WBTC_A_TOKEN = 0x73c882e0d7D70BCa0a3b8AE383521d9F87C55c05;
 
@@ -104,7 +104,7 @@ library AaveV3FantomTestnetAssets {
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0x036cd658D892512d403bFB12b1E724e801D36888;
 
-  address internal constant UNDERLYING_WETH = 0xF8069ef8a91c5a189b96B293eE4Fc4F9f6CC351b;
+  address internal constant WETH_UNDERLYING = 0xF8069ef8a91c5a189b96B293eE4Fc4F9f6CC351b;
 
   address internal constant WETH_A_TOKEN = 0x58f3B0F787b91b76CA6ae7c22D20C6c8D70356DA;
 
@@ -117,7 +117,7 @@ library AaveV3FantomTestnetAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0x036cd658D892512d403bFB12b1E724e801D36888;
 
-  address internal constant UNDERLYING_USDT = 0x6e642065B9976FbDF94aB373a4833A48F040BfF3;
+  address internal constant USDT_UNDERLYING = 0x6e642065B9976FbDF94aB373a4833A48F040BfF3;
 
   address internal constant USDT_A_TOKEN = 0x898c11bc7EdB1a65c34DC93EbB6E4083dF22070a;
 
@@ -130,7 +130,7 @@ library AaveV3FantomTestnetAssets {
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0x6E93A90455ca48d673DC983fC15A7a9a18c57A9E;
 
-  address internal constant UNDERLYING_AAVE = 0x84a38cc4B26238EAeDaCfE6AbB66d61631692Bad;
+  address internal constant AAVE_UNDERLYING = 0x84a38cc4B26238EAeDaCfE6AbB66d61631692Bad;
 
   address internal constant AAVE_A_TOKEN = 0x80777Cf31Db46A3e290424357ccAA1D4FC5FD354;
 
@@ -143,7 +143,7 @@ library AaveV3FantomTestnetAssets {
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x036cd658D892512d403bFB12b1E724e801D36888;
 
-  address internal constant UNDERLYING_WFTM = 0x654a628265B614E50BBd79a2FD8A804637DBedd8;
+  address internal constant WFTM_UNDERLYING = 0x654a628265B614E50BBd79a2FD8A804637DBedd8;
 
   address internal constant WFTM_A_TOKEN = 0xF98e0E2cd0FC052117ae33Bde94491657E51067A;
 
@@ -156,7 +156,7 @@ library AaveV3FantomTestnetAssets {
   address internal constant WFTM_INTEREST_RATE_STRATEGY =
     0x036cd658D892512d403bFB12b1E724e801D36888;
 
-  address internal constant UNDERLYING_CRV = 0x16606e1F5fCb4726C4f90eD45285ae46c828AE2F;
+  address internal constant CRV_UNDERLYING = 0x16606e1F5fCb4726C4f90eD45285ae46c828AE2F;
 
   address internal constant CRV_A_TOKEN = 0xc4C39544C18b021e41d9cbC1A455c00633a6d814;
 
@@ -168,7 +168,7 @@ library AaveV3FantomTestnetAssets {
 
   address internal constant CRV_INTEREST_RATE_STRATEGY = 0x036cd658D892512d403bFB12b1E724e801D36888;
 
-  address internal constant UNDERLYING_SUSHI = 0x09898A842B07A48dCfaA3D3D8BE6A229798b07C1;
+  address internal constant SUSHI_UNDERLYING = 0x09898A842B07A48dCfaA3D3D8BE6A229798b07C1;
 
   address internal constant SUSHI_A_TOKEN = 0xA17871b422c084669cf66f4F38F9Bf640Cac6d73;
 
