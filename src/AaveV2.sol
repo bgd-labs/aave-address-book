@@ -899,3 +899,44 @@ interface IAaveProtocolDataProvider {
       bool usageAsCollateralEnabled
     );
 }
+
+interface ILendingRateOracle {
+  /**
+    @dev returns the market borrow rate in ray
+    **/
+  function getMarketBorrowRate(address asset) external view returns (uint256);
+
+  /**
+    @dev sets the market borrow rate. Rate value must be in ray
+    **/
+  function setMarketBorrowRate(address asset, uint256 rate) external;
+}
+
+interface IDefaultInterestRateStrategy {
+  function EXCESS_UTILIZATION_RATE() external view returns (uint256);
+
+  function OPTIMAL_UTILIZATION_RATE() external view returns (uint256);
+
+  function addressesProvider() external view returns (address);
+
+  function baseVariableBorrowRate() external view returns (uint256);
+
+  function calculateInterestRates(
+    address reserve,
+    uint256 availableLiquidity,
+    uint256 totalStableDebt,
+    uint256 totalVariableDebt,
+    uint256 averageStableBorrowRate,
+    uint256 reserveFactor
+  ) external view returns (uint256, uint256, uint256);
+
+  function getMaxVariableBorrowRate() external view returns (uint256);
+
+  function stableRateSlope1() external view returns (uint256);
+
+  function stableRateSlope2() external view returns (uint256);
+
+  function variableRateSlope1() external view returns (uint256);
+
+  function variableRateSlope2() external view returns (uint256);
+}
