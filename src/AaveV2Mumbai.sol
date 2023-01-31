@@ -15,7 +15,7 @@ library AaveV2Mumbai {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xC365C653f7229894F93994CD0b30947Ab69Ff1D5);
 
-  ILendingRateOracle lendingRateOracle =
+  ILendingRateOracle internal constant lendingRateOracle =
     ILendingRateOracle(0xC661e1445F9a8E5FD3C3dbCa0A0A2e8CBc79725D);
 
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =

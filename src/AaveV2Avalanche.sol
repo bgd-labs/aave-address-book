@@ -15,7 +15,7 @@ library AaveV2Avalanche {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xdC336Cd4769f4cC7E9d726DA53e6d3fC710cEB89);
 
-  ILendingRateOracle lendingRateOracle =
+  ILendingRateOracle internal constant lendingRateOracle =
     ILendingRateOracle(0xc34254642B504484465F38Cb1CC396d45a9c7c80);
 
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =

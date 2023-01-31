@@ -15,7 +15,7 @@ library AaveV2EthereumAMM {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xA50ba011c48153De246E5192C8f9258A2ba79Ca9);
 
-  ILendingRateOracle lendingRateOracle =
+  ILendingRateOracle internal constant lendingRateOracle =
     ILendingRateOracle(0x8A32f49FFbA88aba6EFF96F45D8BD1D4b3f35c7D);
 
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
