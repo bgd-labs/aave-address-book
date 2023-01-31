@@ -172,6 +172,7 @@ export function writeV2Templates({
 export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
 export const POOL = "${lendingPool}";
 export const POOL_CONFIGURATOR = "${lendingPoolConfigurator}";
+export const LENDING_RATE_ORACLE = "${lendingRateOracle}";
 export const ORACLE = "${oracle}";
 export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
 export const POOL_ADMIN = "${admin}";
