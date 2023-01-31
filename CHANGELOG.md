@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/bgd-labs/aave-address-book/compare/v1.12.0...v1.13.0) (2023-01-31)
+
+
+### Features
+
+* add incentivecontroller & emissionmanager on v2 ([#80](https://github.com/bgd-labs/aave-address-book/issues/80)) ([5ae1ea2](https://github.com/bgd-labs/aave-address-book/commit/5ae1ea2213c6f4fd0028a5f8d57415ebf56426c8))
+
 ## [1.12.0](https://github.com/bgd-labs/aave-address-book/compare/v1.11.0...v1.12.0) (2023-01-31)
 
 
