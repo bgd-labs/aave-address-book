@@ -29,6 +29,11 @@ library AaveV2Fuji {
 
   address internal constant COLLECTOR_CONTROLLER = address(0);
 
+  address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+    0xa1EF206fb9a8D8186157FC817fCddcC47727ED55;
+
+  address internal constant EMISSION_MANAGER = 0x3b60cABB2C0e9ADe3e364b1F9752342A5D6079e2;
+
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x04A6Fa9999E3C807Ee7b6Ca58eFAb93713d405BF;
 
