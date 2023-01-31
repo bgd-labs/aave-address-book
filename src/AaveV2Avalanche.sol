@@ -29,6 +29,11 @@ library AaveV2Avalanche {
 
   address internal constant COLLECTOR_CONTROLLER = address(0);
 
+  address internal constant DEFAULT_INCENTIVES_CONTROLLER =
+    0x01D83Fe6A10D2f2B7AF17034343746188272cAc9;
+
+  address internal constant EMISSION_MANAGER = 0x5CfCd7E6D055Ba4f7B998914336254aDE3F69f26;
+
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x4235E22d9C3f28DCDA82b58276cb6370B01265C2;
 
