@@ -50,6 +50,8 @@ library AaveV3ArbitrumGoerli {
   address internal constant UI_POOL_DATA_PROVIDER = 0x583F04c0C4BDE3D7706e939F3Ea890Be9A20A5CF;
 
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xB9107870a2e22b9cd4B51ED5483212Cb9eAE0329;
+
+  address internal constant L2_ENCODER = 0xE8BA4db946a310A1Aca92571A53D3bdE834B5409;
 }
 
 library AaveV3ArbitrumGoerliAssets {

@@ -97,8 +97,8 @@ npm i @bgd-labs/aave-address-book
 ### Usage
 
 ```js
-import * as pools from "@bgs-labs/aave-address-book"; // wildcard import
-import { AaveV2Avalanche } from "@bgs-labs/aave-address-book"; // import specific pool
+import * as pools from "@bgd-labs/aave-address-book"; // wildcard import
+import { AaveV2Avalanche } from "@bgd-labs/aave-address-book"; // import specific pool
 
 // all variables available on solidity version are available in javascript as well
 console.log(AaveV2Avalanche.POOL_ADDRESSES_PROVIDER);
