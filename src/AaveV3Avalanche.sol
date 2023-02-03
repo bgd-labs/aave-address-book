@@ -56,6 +56,11 @@ library AaveV3Avalanche {
   address internal constant UI_POOL_DATA_PROVIDER = 0xF71DBe0FAEF1473ffC607d4c555dfF0aEaDb878d;
 
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x265d414f80b0fca9505710e6F16dB4b67555D365;
+
+  address internal constant PROOF_OF_RESERVE = 0xab22988D93d5F942fC6B6c6Ea285744809D1d9Cc;
+
+  address internal constant PROOF_OF_RESERVE_AGGREGATOR =
+    0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
 }
 
 library AaveV3AvalancheAssets {
