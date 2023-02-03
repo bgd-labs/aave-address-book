@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.14.0](https://github.com/bgd-labs/aave-address-book/compare/v1.13.1...v1.14.0) (2023-02-03)
+
+
+### Features
+
+* added proof of reserve for avax pools ([#84](https://github.com/bgd-labs/aave-address-book/issues/84)) ([bec56a5](https://github.com/bgd-labs/aave-address-book/commit/bec56a5be3e36e5f407fce0d4f4a7109c3479243))
+
 ### [1.13.1](https://github.com/bgd-labs/aave-address-book/compare/v1.13.0...v1.13.1) (2023-02-01)
 
 ## [1.13.0](https://github.com/bgd-labs/aave-address-book/compare/v1.12.0...v1.13.0) (2023-01-31)
