@@ -62,7 +62,7 @@ function fixSymbol(symbol: string, _underlying: string) {
   return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_');
 }
 
-export function appendAssetsLibrary(name: string, reserves: ReserveData[]) {
+export function appendAssetsLibrarySol(name: string, reserves: ReserveData[]) {
   const templateV3Assets = `\n\nlibrary ${name}Assets {
     ${reserves
       .map((reserve) => {

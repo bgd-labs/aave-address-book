@@ -150,4 +150,17 @@ library AaveV3EthereumAssets {
 
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
+
+  address internal constant cbETH_UNDERLYING = 0xBe9895146f7AF43049ca1c1AE358B0541Ea49704;
+
+  address internal constant cbETH_A_TOKEN = 0x977b6fc5dE62598B08C85AC8Cf2b745874E8b78c;
+
+  address internal constant cbETH_V_TOKEN = 0x0c91bcA95b5FE69164cE583A2ec9429A569798Ed;
+
+  address internal constant cbETH_S_TOKEN = 0x82bE6012cea6D147B968eBAea5ceEcF6A5b4F493;
+
+  address internal constant cbETH_ORACLE = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
+
+  address internal constant cbETH_INTEREST_RATE_STRATEGY =
+    0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
 }

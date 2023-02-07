@@ -339,7 +339,7 @@ library AaveV2EthereumAssets {
 
   address internal constant BAL_ORACLE = 0xC1438AA3823A6Ba0C159CfA8D98dF5A994bA120b;
 
-  address internal constant BAL_INTEREST_RATE_STRATEGY = 0xfC0Eace19AA7498e0f36eF1607D282a8d6debbDd;
+  address internal constant BAL_INTEREST_RATE_STRATEGY = 0x04c28D6fE897859153eA753f986cc249Bf064f71;
 
   address internal constant xSUSHI_UNDERLYING = 0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272;
 
