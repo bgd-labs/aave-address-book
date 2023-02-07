@@ -65,7 +65,7 @@ library AaveV2EthereumAssets {
   address internal constant USDT_ORACLE = 0xEe9F2375b4bdF6387aa8265dD4FB8F16512A1d46;
 
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x515E87cb3fec986050F202a2bbfa362A2188bc3F;
+    0x33DeAc0861FD6a9235b86172AA939E79085c6f52;
 
   address internal constant WBTC_UNDERLYING = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
 
@@ -289,7 +289,7 @@ library AaveV2EthereumAssets {
   address internal constant TUSD_ORACLE = 0x3886BA987236181D98F2401c507Fb8BeA7871dF2;
 
   address internal constant TUSD_INTEREST_RATE_STRATEGY =
-    0x0DdEC679166C367ae45036c8b2c169C5FB2dceE1;
+    0x6bcE15B789e537f3abA3C60CB183F0E8737f05eC;
 
   address internal constant USDC_UNDERLYING = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
 
