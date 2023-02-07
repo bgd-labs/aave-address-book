@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.15.0](https://github.com/bgd-labs/aave-address-book/compare/v1.14.0...v1.15.0) (2023-02-07)
+
+
+### Features
+
+* add cbETH ([#87](https://github.com/bgd-labs/aave-address-book/issues/87)) ([52f1986](https://github.com/bgd-labs/aave-address-book/commit/52f1986656b5898a7e9809a94ca5050a45daacca))
+
 ## [1.14.0](https://github.com/bgd-labs/aave-address-book/compare/v1.13.1...v1.14.0) (2023-02-03)
 
 
