@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.16.0](https://github.com/bgd-labs/aave-address-book/compare/v1.15.0...v1.16.0) (2023-02-10)
+
+
+### Features
+
+* add goerli gho V3 test market ([#89](https://github.com/bgd-labs/aave-address-book/issues/89)) ([e7f6bc1](https://github.com/bgd-labs/aave-address-book/commit/e7f6bc1f55fcddff6b94ec94540acccaaa3123fd))
+
 ## [1.15.0](https://github.com/bgd-labs/aave-address-book/compare/v1.14.0...v1.15.0) (2023-02-07)
 
 
