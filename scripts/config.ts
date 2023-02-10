@@ -151,6 +151,20 @@ export const pools: Pool[] = [
     },
   },
   {
+    name: 'AaveV3GoerliGho',
+    chainId: ChainId.goerli,
+    addressProvider: '0x4dd5ab8Fb385F2e12aDe435ba7AFA812F1d364D0',
+    version: 3,
+    testnet: true,
+    additionalAddresses: {
+      WETH_GATEWAY: '0x9c402E3b0D123323F0FCed781b8184Ec7E02Dd31',
+      FAUCET: '0x1265305F033156bbF8Ba54fE45DD5685BEc4Cc44',
+      WALLET_BALANCE_PROVIDER: '0x03C8d0c46834921c4468C15A03E5d76Ae5CA3133',
+      UI_POOL_DATA_PROVIDER: '0x3De59b6901e7Ad0A19621D49C5b52cC9a4977e52',
+      UI_INCENTIVE_DATA_PROVIDER: '0xF67B25977cEFf3563BF7F24A531D6CEAe6870a9d',
+    },
+  },
+  {
     name: 'AaveV2Mumbai',
     chainId: ChainId.mumbai,
     addressProvider: '0x178113104fEcbcD7fF8669a0150721e231F0FD4B',
