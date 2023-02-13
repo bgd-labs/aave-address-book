@@ -163,4 +163,30 @@ library AaveV3EthereumAssets {
 
   address internal constant cbETH_INTEREST_RATE_STRATEGY =
     0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
+
+  address internal constant USDT_UNDERLYING = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
+
+  address internal constant USDT_A_TOKEN = 0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a;
+
+  address internal constant USDT_V_TOKEN = 0x6df1C1E379bC5a00a7b4C6e67A203333772f45A8;
+
+  address internal constant USDT_S_TOKEN = 0x822Fa72Df1F229C3900f5AD6C3Fa2C424D691622;
+
+  address internal constant USDT_ORACLE = 0x3E7d1eAB13ad0104d2750B8863b489D65364e32D;
+
+  address internal constant USDT_INTEREST_RATE_STRATEGY =
+    0xdd1BAC6A713c5b0EC42bA39D0c5e4582975DE6D6;
+
+  address internal constant rETH_UNDERLYING = 0xae78736Cd615f374D3085123A210448E74Fc6393;
+
+  address internal constant rETH_A_TOKEN = 0xCc9EE9483f662091a1de4795249E24aC0aC2630f;
+
+  address internal constant rETH_V_TOKEN = 0xae8593DD575FE29A9745056aA91C4b746eee62C8;
+
+  address internal constant rETH_S_TOKEN = 0x1d1906f909CAe494c7441604DAfDDDbD0485A925;
+
+  address internal constant rETH_ORACLE = 0x05225Cd708bCa9253789C1374e4337a019e99D56;
+
+  address internal constant rETH_INTEREST_RATE_STRATEGY =
+    0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
 }
