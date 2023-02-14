@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.17.0](https://github.com/bgd-labs/aave-address-book/compare/v1.16.0...v1.17.0) (2023-02-14)
+
+
+### Features
+
+* add proxy admins & factories to AaveMisc ([#92](https://github.com/bgd-labs/aave-address-book/issues/92)) ([29aed74](https://github.com/bgd-labs/aave-address-book/commit/29aed742774c1e76815daeffb8822feef9b2e7d2))
+* listing engine of non-Ethereum instances ([#93](https://github.com/bgd-labs/aave-address-book/issues/93)) ([266c1cc](https://github.com/bgd-labs/aave-address-book/commit/266c1ccf9e68511edf2b0d90055718378ff21c62))
+
 ## [1.16.0](https://github.com/bgd-labs/aave-address-book/compare/v1.15.0...v1.16.0) (2023-02-10)
 
 
