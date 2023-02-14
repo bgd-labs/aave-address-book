@@ -21,7 +21,7 @@ library AaveV3Optimism {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  address internal constant ACL_ADMIN = 0xE50c8C619d05ff98b22Adf991F17602C774F785c;
+  address internal constant ACL_ADMIN = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
   address internal constant COLLECTOR = 0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf;
 
@@ -50,6 +50,8 @@ library AaveV3Optimism {
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x66d340EB9D3dCe0f78e813E2F991B7CE54a1a28c;
+
+  address internal constant LISTING_ENGINE = 0x7b8Fa4540246554e77FCFf140f9114de00F8bB8D;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
