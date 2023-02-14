@@ -147,10 +147,10 @@ interface IExecutorWithTimelock {
    * @param proposalId Id of the proposal against which to test
    * @return true of proposal is over grace period
    **/
-  function isProposalOverGracePeriod(
-    IAaveGovernanceV2 governance,
-    uint256 proposalId
-  ) external view returns (bool);
+  function isProposalOverGracePeriod(IAaveGovernanceV2 governance, uint256 proposalId)
+    external
+    view
+    returns (bool);
 
   /**
    * @dev Getter of grace period constant

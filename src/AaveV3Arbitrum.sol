@@ -21,7 +21,7 @@ library AaveV3Arbitrum {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  address internal constant ACL_ADMIN = 0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb;
+  address internal constant ACL_ADMIN = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
   address internal constant COLLECTOR = 0x053D55f9B5AF8694c503EB288a1B7E552f590710;
 
@@ -50,6 +50,8 @@ library AaveV3Arbitrum {
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xB0526BFb4047aE1147DC7caAF3F1653904C2D568;
+
+  address internal constant LISTING_ENGINE = 0x7b8Fa4540246554e77FCFf140f9114de00F8bB8D;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
