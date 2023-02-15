@@ -168,7 +168,7 @@ export function writeV2Templates({
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
 
-      ILendingRateOracle internal constant lendingRateOracle = ILendingRateOracle(${lendingRateOracle});
+      ILendingRateOracle internal constant LENDING_RATE_ORACLE = ILendingRateOracle(${lendingRateOracle});
 
       IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IAaveProtocolDataProvider(${poolDataProvider});
 
