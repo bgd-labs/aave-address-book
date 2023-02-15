@@ -15,7 +15,7 @@ library AaveV2EthereumArc {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xB8a7bc0d13B1f5460513040a97F404b4fea7D2f3);
 
-  ILendingRateOracle internal constant lendingRateOracle =
+  ILendingRateOracle internal constant LENDING_RATE_ORACLE =
     ILendingRateOracle(0xfA3c34d734fe0106C87917683ca45dffBe3b3B00);
 
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =

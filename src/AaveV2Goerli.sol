@@ -15,7 +15,7 @@ library AaveV2Goerli {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0x2cb0d5755436ED904D7D0fbBACc6176286c55667);
 
-  ILendingRateOracle internal constant lendingRateOracle =
+  ILendingRateOracle internal constant LENDING_RATE_ORACLE =
     ILendingRateOracle(0x76aFA2b6C29E1B277A3BB1CD320b2756c1674c91);
 
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =

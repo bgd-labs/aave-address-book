@@ -15,7 +15,7 @@ library AaveV2Polygon {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d);
 
-  ILendingRateOracle internal constant lendingRateOracle =
+  ILendingRateOracle internal constant LENDING_RATE_ORACLE =
     ILendingRateOracle(0x17F73aEaD876CC4059089ff815EDA37052960dFB);
 
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
