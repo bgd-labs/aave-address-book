@@ -189,4 +189,17 @@ library AaveV3EthereumAssets {
 
   address internal constant rETH_INTEREST_RATE_STRATEGY =
     0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
+
+  address internal constant LUSD_UNDERLYING = 0x5f98805A4E8be255a32880FDeC7F6728C6568bA0;
+
+  address internal constant LUSD_A_TOKEN = 0x3Fe6a295459FAe07DF8A0ceCC36F37160FE86AA9;
+
+  address internal constant LUSD_V_TOKEN = 0x33652e48e4B74D18520f11BfE58Edd2ED2cEc5A2;
+
+  address internal constant LUSD_S_TOKEN = 0x37A6B708FDB1483C231961b9a7F145261E815fc3;
+
+  address internal constant LUSD_ORACLE = 0x3D7aE7E594f2f2091Ad8798313450130d0Aba3a0;
+
+  address internal constant LUSD_INTEREST_RATE_STRATEGY =
+    0x349684Da30f8c9Affeaf21AfAB3a1Ad51f5d95A3;
 }

@@ -21,9 +21,9 @@ library AaveV2Avalanche {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x65285E9dfab318f57051ab2b139ccCf232945451);
 
-  address internal constant POOL_ADMIN = 0x01244E7842254e3FD229CD263472076B1439D1Cd;
+  address internal constant POOL_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 
-  address internal constant EMERGENCY_ADMIN = 0x01244E7842254e3FD229CD263472076B1439D1Cd;
+  address internal constant EMERGENCY_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 
   address internal constant COLLECTOR = 0x467b92aF281d14cB6809913AD016a607b5ba8A36;
 
