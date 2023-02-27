@@ -177,4 +177,17 @@ library AaveV3OptimismAssets {
   address internal constant OP_ORACLE = 0x0D276FC14719f9292D5C1eA2198673d1f4269246;
 
   address internal constant OP_INTEREST_RATE_STRATEGY = 0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C;
+
+  address internal constant wstETH_UNDERLYING = 0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb;
+
+  address internal constant wstETH_A_TOKEN = 0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA;
+
+  address internal constant wstETH_V_TOKEN = 0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907;
+
+  address internal constant wstETH_S_TOKEN = 0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841;
+
+  address internal constant wstETH_ORACLE = 0x698B585CbC4407e2D54aa898B2600B53C68958f7;
+
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x6BA97468e2e6a3711a6DD05F0075d48E878c910e;
 }
