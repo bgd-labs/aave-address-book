@@ -349,7 +349,7 @@ library AaveV2EthereumAssets {
 
   address internal constant xSUSHI_S_TOKEN = 0x73Bfb81D7dbA75C904f430eA8BAe82DB0D41187B;
 
-  address internal constant xSUSHI_ORACLE = 0x9b26214bEC078E68a394AaEbfbffF406Ce14893F;
+  address internal constant xSUSHI_ORACLE = 0xF05D9B6C08757EAcb1fbec18e36A1B7566a13DEB;
 
   address internal constant xSUSHI_INTEREST_RATE_STRATEGY =
     0xb49034Ada4BE5c6Bb3823A623C6250267110b06b;
