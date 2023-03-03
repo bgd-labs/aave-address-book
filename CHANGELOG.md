@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.19.0](https://github.com/bgd-labs/aave-address-book/compare/v1.18.0...v1.19.0) (2023-03-03)
+
+
+### Features
+
+* add sepolia ([#99](https://github.com/bgd-labs/aave-address-book/issues/99)) ([afd94d5](https://github.com/bgd-labs/aave-address-book/commit/afd94d54f7cd98e74dd6e9d5684efabbd1609b5f))
+
 ## [1.18.0](https://github.com/bgd-labs/aave-address-book/compare/v1.17.0...v1.18.0) (2023-02-27)
 
 
