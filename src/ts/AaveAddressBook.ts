@@ -6,6 +6,7 @@ export * as AaveV3Ethereum from './AaveV3Ethereum';
 export * as AaveV2EthereumAMM from './AaveV2EthereumAMM';
 export * as AaveV2EthereumArc from './AaveV2EthereumArc';
 export * as AaveV2Goerli from './AaveV2Goerli';
+export * as AaveV3Sepolia from './AaveV3Sepolia';
 export * as AaveV3Goerli from './AaveV3Goerli';
 export * as AaveV3GoerliGho from './AaveV3GoerliGho';
 export * as AaveV2Mumbai from './AaveV2Mumbai';
