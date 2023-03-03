@@ -17,6 +17,7 @@ export enum ChainId {
   optimism = 10,
   optimism_goerli = 420,
   harmony = 1666600000,
+  sepolia = 11155111,
 }
 
 const RPC_PROVIDERS = {
@@ -33,6 +34,7 @@ const RPC_PROVIDERS = {
   [ChainId.optimism_goerli]: 'https://goerli.optimism.io',
   [ChainId.fantom]: 'https://rpc.ftm.tools',
   [ChainId.fantom_testnet]: 'https://rpc.ankr.com/fantom_testnet',
+  [ChainId.sepolia]: 'https://rpc.sepolia.org/',
 } as const;
 
 export interface Pool {
@@ -134,6 +136,20 @@ export const pools: Pool[] = [
       UI_POOL_DATA_PROVIDER: '0xaaa2872d1F7f5ceb630Cb736BcA34Ff1e121992b',
       UI_INCENTIVE_DATA_PROVIDER: '0xA2E05bE2090b3658A264bdf1C39387f5Dba367Ec',
       FAUCET: '0x681860075529352da2C94082Eb66c59dF958e89C',
+    },
+  },
+  {
+    name: 'AaveV3Sepolia',
+    chainId: ChainId.sepolia,
+    addressProvider: '0x0496275d34753A48320CA58103d5220d394FF77F',
+    version: 3,
+    testnet: true,
+    additionalAddresses: {
+      WETH_GATEWAY: '0xe70cDC67C91d5519DD4682cA162E40480773255a',
+      FAUCET: '0x1f885520b7BD528E46b390040F12E753Dce43004',
+      WALLET_BALANCE_PROVIDER: '0x4f04218ECC7D2756f84836D2DC267293504cAbCc',
+      UI_POOL_DATA_PROVIDER: '0xe38c93180a6CE4173d88793c0671AD1Dd417c7d8',
+      UI_INCENTIVE_DATA_PROVIDER: '0x7cE1062e0688BC3D7699987A38bba84353F69881',
     },
   },
   {
@@ -269,7 +285,7 @@ export const pools: Pool[] = [
       UI_POOL_DATA_PROVIDER: '0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A',
       UI_INCENTIVE_DATA_PROVIDER: '0x11979886A6dBAE27D7a72c49fCF3F23240D647bF',
       PROOF_OF_RESERVE: '0x7fc3FCb14eF04A48Bb0c12f0c39CD74C249c37d8',
-      PROOF_OF_RESERVE_AGGREGATOR: '0x80f2c02224a2E548FC67c0bF705eBFA825dd5439'
+      PROOF_OF_RESERVE_AGGREGATOR: '0x80f2c02224a2E548FC67c0bF705eBFA825dd5439',
     },
   },
   {
@@ -287,7 +303,7 @@ export const pools: Pool[] = [
       UI_POOL_DATA_PROVIDER: '0xF71DBe0FAEF1473ffC607d4c555dfF0aEaDb878d',
       UI_INCENTIVE_DATA_PROVIDER: '0x265d414f80b0fca9505710e6F16dB4b67555D365',
       PROOF_OF_RESERVE: '0xab22988D93d5F942fC6B6c6Ea285744809D1d9Cc',
-      PROOF_OF_RESERVE_AGGREGATOR: '0x80f2c02224a2E548FC67c0bF705eBFA825dd5439'
+      PROOF_OF_RESERVE_AGGREGATOR: '0x80f2c02224a2E548FC67c0bF705eBFA825dd5439',
     },
   },
   {
