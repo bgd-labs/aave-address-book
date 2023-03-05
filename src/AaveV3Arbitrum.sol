@@ -165,4 +165,17 @@ library AaveV3ArbitrumAssets {
 
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    
+  address internal constant WSTETH_UNDERLYING = 0x5979D7b546E38E414F7E9822514be443A4800529;
+
+  address internal constant WSTETH_A_TOKEN = 0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf;
+
+  address internal constant WSTETH_V_TOKEN = 0x77CA01483f379E58174739308945f044e1a764dc;
+
+  address internal constant WSTETH_S_TOKEN = 0x08Cb71192985E936C7Cd166A8b268035e400c3c3;
+
+  address internal constant WSTETH_ORACLE = 0x230E0321Cf38F09e247e50Afc7801EA2351fe56F;
+
+  address internal constant WSTETH_INTEREST_RATE_STRATEGY =
+    0x4b8D3277d49E114C8F2D6E0B2eD310e29226fe16;
 }
