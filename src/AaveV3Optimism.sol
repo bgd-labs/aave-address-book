@@ -53,7 +53,7 @@ library AaveV3Optimism {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x66d340EB9D3dCe0f78e813E2F991B7CE54a1a28c;
 
-  address internal constant LISTING_ENGINE = 0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20;
+  address internal constant LISTING_ENGINE = 0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
