@@ -53,7 +53,7 @@ library AaveV3Avalanche {
 
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x00e39085C877328619FDB2a47d995c516a5fA869;
 
-  address internal constant LISTING_ENGINE = 0x165e90Bd0a41d08fA1891CcDCEe315D7b83B3419;
+  address internal constant LISTING_ENGINE = 0x246E20bF778b3e16cB71eca535f40f8C4E6c4185;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 

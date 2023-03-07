@@ -53,7 +53,7 @@ library AaveV3Arbitrum {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xB0526BFb4047aE1147DC7caAF3F1653904C2D568;
 
-  address internal constant LISTING_ENGINE = 0x7b8Fa4540246554e77FCFf140f9114de00F8bB8D;
+  address internal constant LISTING_ENGINE = 0xadB0F5453aFaf18E9e7bDe0129C71d7b0dC3EA67;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
