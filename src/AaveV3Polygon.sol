@@ -53,7 +53,7 @@ library AaveV3Polygon {
 
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x6a4b2b595d369c963493Fc704CF48e42FAd8260b;
 
-  address internal constant LISTING_ENGINE = 0xEDaD55FB5F4020bF51016614B3301B1FEff8BE46;
+  address internal constant LISTING_ENGINE = 0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
