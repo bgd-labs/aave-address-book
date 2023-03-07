@@ -46,6 +46,8 @@ library AaveV3Polygon {
 
   address internal constant WETH_GATEWAY = 0x1e4b7A6b903680eab0c5dAbcb8fD429cD2a9598c;
 
+  address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
+
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x10D2fA27166d94894d850a9a851EE06870F14b09;
 

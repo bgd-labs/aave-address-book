@@ -46,6 +46,8 @@ library AaveV3Avalanche {
 
   address internal constant WETH_GATEWAY = 0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7;
 
+  address internal constant RATES_FACTORY = 0xDd81E6F85358292075B78fc8D5830BE8434aF8BA;
+
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x4fB0Ba43a5415f312cf5FA10d16Ff6dbA697d9aA;
 

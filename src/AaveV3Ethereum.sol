@@ -46,6 +46,8 @@ library AaveV3Ethereum {
 
   address internal constant WETH_GATEWAY = 0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C;
 
+  address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
+
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x1809f186D680f239420B56948C58F8DbbCdf1E18;
 
