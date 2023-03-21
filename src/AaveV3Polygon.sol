@@ -176,7 +176,7 @@ library AaveV3PolygonAssets {
 
   address internal constant CRV_ORACLE = 0x336584C8E6Dc19637A5b36206B1c79923111b405;
 
-  address internal constant CRV_INTEREST_RATE_STRATEGY = 0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
+  address internal constant CRV_INTEREST_RATE_STRATEGY = 0xBefcd01681224555b74eAC87207eaF9Bc3361F59;
 
   address internal constant SUSHI_UNDERLYING = 0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a;
 
@@ -304,5 +304,5 @@ library AaveV3PolygonAssets {
   address internal constant MaticX_ORACLE = 0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403;
 
   address internal constant MaticX_INTEREST_RATE_STRATEGY =
-    0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
+    0x6B434652E4C4e3e972f9F267982F05ae0fcc24b6;
 }
