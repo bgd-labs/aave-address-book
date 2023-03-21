@@ -53,7 +53,7 @@ library AaveV3Ethereum {
 
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x872fBcb1B582e8Cd0D0DD4327fBFa0B4C2730995;
 
-  address internal constant LISTING_ENGINE = 0xC51e6E38d406F98049622Ca54a6096a23826B426;
+  address internal constant LISTING_ENGINE = 0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
 
@@ -204,4 +204,16 @@ library AaveV3EthereumAssets {
 
   address internal constant LUSD_INTEREST_RATE_STRATEGY =
     0x349684Da30f8c9Affeaf21AfAB3a1Ad51f5d95A3;
+
+  address internal constant CRV_UNDERLYING = 0xD533a949740bb3306d119CC777fa900bA034cd52;
+
+  address internal constant CRV_A_TOKEN = 0x7B95Ec873268a6BFC6427e7a28e396Db9D0ebc65;
+
+  address internal constant CRV_V_TOKEN = 0x1b7D3F4b3c032a5AE656e30eeA4e8E1Ba376068F;
+
+  address internal constant CRV_S_TOKEN = 0x90D9CD005E553111EB8C9c31Abe9706a186b6048;
+
+  address internal constant CRV_ORACLE = 0xCd627aA160A6fA45Eb793D19Ef54f5062F20f33f;
+
+  address internal constant CRV_INTEREST_RATE_STRATEGY = 0x76884cAFeCf1f7d4146DA6C4053B18B76bf6ED14;
 }

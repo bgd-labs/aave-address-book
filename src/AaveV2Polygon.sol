@@ -191,7 +191,7 @@ library AaveV2PolygonAssets {
 
   address internal constant CRV_ORACLE = 0x1CF68C76803c9A415bE301f50E82e44c64B7F1D4;
 
-  address internal constant CRV_INTEREST_RATE_STRATEGY = 0xBD67eB7e00f43DAe9e3d51f7d509d4730Fe5988e;
+  address internal constant CRV_INTEREST_RATE_STRATEGY = 0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F;
 
   address internal constant SUSHI_UNDERLYING = 0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a;
 
