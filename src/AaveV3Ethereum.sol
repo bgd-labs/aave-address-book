@@ -30,6 +30,9 @@ library AaveV3Ethereum {
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb;
+    
+  address internal constant DELEGATE_AWARE_A_TOKEN_IMPL_REV_1 = 
+    0x21714092d90c7265f52fdfdae068ec11a23c6248;
 
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d;
 
