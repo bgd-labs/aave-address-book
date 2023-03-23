@@ -60,6 +60,9 @@ library AaveV3Ethereum {
   address internal constant UI_POOL_DATA_PROVIDER = 0x91c0eA31b49B69Ea18607702c5d9aC360bf3dE7d;
 
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x162A7AC02f547ad796CA549f757e2b8d1D9b10a6;
+
+  address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
+    0x21714092D90c7265F52fdfDae068EC11a23C6248;
 }
 
 library AaveV3EthereumAssets {
