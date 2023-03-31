@@ -127,7 +127,7 @@ library AaveV3OptimismAssets {
   address internal constant WETH_ORACLE = 0x13e3Ee699D1909E989722E753853AE30b17e08c5;
 
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xeE1BAc9355EaAfCD1B68d272d640d870bC9b4b5C;
+    0xc76EF342898f1AE7E6C4632627Df683FAD8563DD;
 
   address internal constant USDT_UNDERLYING = 0x94b008aA00579c1307B0EF2c499aD98a8ce58e58;
 
@@ -140,7 +140,7 @@ library AaveV3OptimismAssets {
   address internal constant USDT_ORACLE = 0xECef79E109e997bCA29c1c0897ec9d7b03647F5E;
 
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   address internal constant AAVE_UNDERLYING = 0x76FB31fb4af56892A25e32cFC43De717950c9278;
 

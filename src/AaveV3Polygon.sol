@@ -125,7 +125,7 @@ library AaveV3PolygonAssets {
   address internal constant WETH_ORACLE = 0xF9680D99D6C9589e2a93a78A04A279e509205945;
 
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
+    0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
 
   address internal constant USDT_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
 
@@ -138,7 +138,7 @@ library AaveV3PolygonAssets {
   address internal constant USDT_ORACLE = 0x0A6513e40db6EB1b165753AD52E80663aeA50545;
 
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   address internal constant AAVE_UNDERLYING = 0xD6DF932A45C0f255f85145f286eA0b292B21C90B;
 
@@ -239,7 +239,7 @@ library AaveV3PolygonAssets {
   address internal constant EURS_ORACLE = 0x73366Fe0AA0Ded304479862808e02506FE556a98;
 
   address internal constant EURS_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   address internal constant jEUR_UNDERLYING = 0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c;
 
@@ -265,7 +265,7 @@ library AaveV3PolygonAssets {
   address internal constant agEUR_ORACLE = 0x73366Fe0AA0Ded304479862808e02506FE556a98;
 
   address internal constant agEUR_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   address internal constant miMATIC_UNDERLYING = 0xa3Fa99A148fA48D14Ed51d610c367C61876997F1;
 
@@ -278,7 +278,7 @@ library AaveV3PolygonAssets {
   address internal constant miMATIC_ORACLE = 0xd8d483d813547CfB624b8Dc33a00F2fcbCd2D428;
 
   address internal constant miMATIC_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   address internal constant stMATIC_UNDERLYING = 0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4;
 
