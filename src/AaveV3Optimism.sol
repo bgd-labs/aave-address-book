@@ -62,6 +62,8 @@ library AaveV3Optimism {
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7;
 
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
+
+  address internal constant STATIC_A_TOKEN_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
 }
 
 library AaveV3OptimismAssets {

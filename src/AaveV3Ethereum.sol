@@ -63,6 +63,8 @@ library AaveV3Ethereum {
 
   address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
     0x21714092D90c7265F52fdfDae068EC11a23C6248;
+
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x90b1255a76e847cC92d41C295DeD5Bf2D4F24B3d;
 }
 
 library AaveV3EthereumAssets {

@@ -65,6 +65,8 @@ library AaveV3Avalanche {
 
   address internal constant PROOF_OF_RESERVE_AGGREGATOR =
     0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
+
+  address internal constant STATIC_A_TOKEN_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
 }
 
 library AaveV3AvalancheAssets {
