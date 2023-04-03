@@ -62,6 +62,8 @@ library AaveV3Arbitrum {
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xDA67AF3403555Ce0AE3ffC22fDb7354458277358;
 
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
+
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x90b1255a76e847cC92d41C295DeD5Bf2D4F24B3d;
 }
 
 library AaveV3ArbitrumAssets {
