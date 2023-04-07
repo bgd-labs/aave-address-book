@@ -24,3 +24,4 @@ export * as AaveV3Fantom from './AaveV3Fantom';
 export * as AaveV3Harmony from './AaveV3Harmony';
 export * as AaveV3Optimism from './AaveV3Optimism';
 export * as AaveV3OptimismGoerli from './AaveV3OptimismGoerli';
+export * as AaveV3ScrollAlpha from './AaveV3ScrollAlpha';

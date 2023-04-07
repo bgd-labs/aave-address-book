@@ -18,6 +18,7 @@ export enum ChainId {
   optimism_goerli = 420,
   harmony = 1666600000,
   sepolia = 11155111,
+  scroll_alpha = 534353,
 }
 
 const RPC_PROVIDERS = {
@@ -35,6 +36,7 @@ const RPC_PROVIDERS = {
   [ChainId.fantom]: 'https://rpc.ftm.tools',
   [ChainId.fantom_testnet]: 'https://rpc.ankr.com/fantom_testnet',
   [ChainId.sepolia]: 'https://rpc.sepolia.org/',
+  [ChainId.scroll_alpha]: 'https://alpha-rpc.scroll.io/l2',
 } as const;
 
 export interface Pool {
@@ -425,6 +427,21 @@ export const pools: Pool[] = [
       UI_POOL_DATA_PROVIDER: '0x9277eFbB991536a98a1aA8b735E9D26d887104C1',
       UI_INCENTIVE_DATA_PROVIDER: '0x4157398c5abB5211F51F5B551E3e240c5568dbD4',
       L2_ENCODER: '0x14AA09449fac437b5c0110614be2C08610e38f62',
+    },
+  },
+  {
+    name: 'AaveV3ScrollAlpha',
+    chainId: ChainId.scroll_alpha,
+    addressProvider: '0xCA35Ae4cc948Dae8a1d3C77ed1C5CBC2e73b290D',
+    version: 3,
+    testnet: true,
+    additionalAddresses: {
+      WETH_GATEWAY: '0x410Fda971c841Aaf34be5F5539b40503c7F12AC2',
+      FAUCET: '0x55530C4E1ADFf14cB5760C6750FeBFbEB57E6753',
+      WALLET_BALANCE_PROVIDER: '0x2B45F4A959B5Fc8fc22b457424685f17eDae4592',
+      UI_POOL_DATA_PROVIDER: '0x45dFc7A61AD24918C9315733223fD1e55E9B2B59',
+      UI_INCENTIVE_DATA_PROVIDER: '0x109e475c0Bf9E525dABB65A4Aec07c1e65100a99',
+      L2_ENCODER: '0x997a8208902e1259dDf676Eb37FeD31A2f77110B',
     },
   },
 ].map((m) => ({
