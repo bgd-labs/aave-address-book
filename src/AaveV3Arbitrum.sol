@@ -62,6 +62,8 @@ library AaveV3Arbitrum {
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xDA67AF3403555Ce0AE3ffC22fDb7354458277358;
 
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
+
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x90b1255a76e847cC92d41C295DeD5Bf2D4F24B3d;
 }
 
 library AaveV3ArbitrumAssets {
@@ -127,7 +129,7 @@ library AaveV3ArbitrumAssets {
   address internal constant WETH_ORACLE = 0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612;
 
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0x9b34E3e183c9b0d1a08fF57a8fb59c821616295f;
+    0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
 
   address internal constant USDT_UNDERLYING = 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9;
 
@@ -140,7 +142,7 @@ library AaveV3ArbitrumAssets {
   address internal constant USDT_ORACLE = 0x3f3f5dF88dC9F13eac63DF89EC16ef6e7E25DdE7;
 
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   address internal constant AAVE_UNDERLYING = 0xba5DdD1f9d7F570dc94a51479a000E3BCE967196;
 
@@ -166,7 +168,7 @@ library AaveV3ArbitrumAssets {
   address internal constant EURS_ORACLE = 0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84;
 
   address internal constant EURS_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   address internal constant wstETH_UNDERLYING = 0x5979D7b546E38E414F7E9822514be443A4800529;
 
