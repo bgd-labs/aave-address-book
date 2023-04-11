@@ -194,4 +194,17 @@ library AaveV3OptimismAssets {
 
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0x6BA97468e2e6a3711a6DD05F0075d48E878c910e;
+
+  address internal constant LUSD_UNDERLYING = 0xc40F949F8a4e094D1b49a23ea9241D289B7b2819;
+
+  address internal constant LUSD_A_TOKEN = 0x8Eb270e296023E9D92081fdF967dDd7878724424;
+
+  address internal constant LUSD_V_TOKEN = 0xCE186F6Cccb0c955445bb9d10C59caE488Fea559;
+
+  address internal constant LUSD_S_TOKEN = 0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc;
+
+  address internal constant LUSD_ORACLE = 0x9dfc79Aaeb5bb0f96C6e9402671981CdFc424052;
+
+  address internal constant LUSD_INTEREST_RATE_STRATEGY =
+    0x271f5f8325051f22caDa18FfedD4a805584a232A;
 }

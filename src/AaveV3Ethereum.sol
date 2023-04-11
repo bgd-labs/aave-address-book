@@ -221,4 +221,52 @@ library AaveV3EthereumAssets {
   address internal constant CRV_ORACLE = 0xCd627aA160A6fA45Eb793D19Ef54f5062F20f33f;
 
   address internal constant CRV_INTEREST_RATE_STRATEGY = 0x76884cAFeCf1f7d4146DA6C4053B18B76bf6ED14;
+
+  address internal constant MKR_UNDERLYING = 0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2;
+
+  address internal constant MKR_A_TOKEN = 0x8A458A9dc9048e005d22849F470891b840296619;
+
+  address internal constant MKR_V_TOKEN = 0x6Efc73E54E41b27d2134fF9f98F15550f30DF9B1;
+
+  address internal constant MKR_S_TOKEN = 0x0496372BE7e426D28E89DEBF01f19F014d5938bE;
+
+  address internal constant MKR_ORACLE = 0xec1D1B3b0443256cc3860e24a46F108e699484Aa;
+
+  address internal constant MKR_INTEREST_RATE_STRATEGY = 0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
+
+  address internal constant SNX_UNDERLYING = 0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F;
+
+  address internal constant SNX_A_TOKEN = 0xC7B4c17861357B8ABB91F25581E7263E08DCB59c;
+
+  address internal constant SNX_V_TOKEN = 0x8d0de040e8aAd872eC3c33A3776dE9152D3c34ca;
+
+  address internal constant SNX_S_TOKEN = 0x478E1ec1A2BeEd94c1407c951E4B9e22d53b2501;
+
+  address internal constant SNX_ORACLE = 0xDC3EA94CD0AC27d9A86C180091e7f78C683d3699;
+
+  address internal constant SNX_INTEREST_RATE_STRATEGY = 0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E;
+
+  address internal constant BAL_UNDERLYING = 0xba100000625a3754423978a60c9317c58a424e3D;
+
+  address internal constant BAL_A_TOKEN = 0x2516E7B3F76294e03C42AA4c5b5b4DCE9C436fB8;
+
+  address internal constant BAL_V_TOKEN = 0x3D3efceb4Ff0966D34d9545D3A2fa2dcdBf451f2;
+
+  address internal constant BAL_S_TOKEN = 0xB368d45aaAa07ee2c6275Cb320D140b22dE43CDD;
+
+  address internal constant BAL_ORACLE = 0xdF2917806E30300537aEB49A7663062F4d1F2b5F;
+
+  address internal constant BAL_INTEREST_RATE_STRATEGY = 0xCbDC7D7984D7AD59434f0B1999D2006898C40f9A;
+
+  address internal constant UNI_UNDERLYING = 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984;
+
+  address internal constant UNI_A_TOKEN = 0xF6D2224916DDFbbab6e6bd0D1B7034f4Ae0CaB18;
+
+  address internal constant UNI_V_TOKEN = 0xF64178Ebd2E2719F2B1233bCb5Ef6DB4bCc4d09a;
+
+  address internal constant UNI_S_TOKEN = 0x2FEc76324A0463c46f32e74A86D1cf94C02158DC;
+
+  address internal constant UNI_ORACLE = 0x553303d460EE0afB37EdFf9bE42922D8FF63220e;
+
+  address internal constant UNI_INTEREST_RATE_STRATEGY = 0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
 }
