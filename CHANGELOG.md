@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.21.0](https://github.com/bgd-labs/aave-address-book/compare/v1.20.0...v1.21.0) (2023-04-11)
+
+
+### Features
+
+* add Scroll Alpha Testnet ([#112](https://github.com/bgd-labs/aave-address-book/issues/112)) ([8c44ce6](https://github.com/bgd-labs/aave-address-book/commit/8c44ce63d1fb20c7bf1bf37066521a16ed81076a))
+* static a token factories ([#114](https://github.com/bgd-labs/aave-address-book/issues/114)) ([b9be41e](https://github.com/bgd-labs/aave-address-book/commit/b9be41ea2d7c0fec4bf795de7a2fafa62856f2db))
+
+
+### Bug Fixes
+
+* update addresses ([a39f2bd](https://github.com/bgd-labs/aave-address-book/commit/a39f2bd3cf66ac4db1ada2fa961961e3ac4f570a))
+
 ## [1.20.0](https://github.com/bgd-labs/aave-address-book/compare/v1.19.0...v1.20.0) (2023-03-27)
 
 
