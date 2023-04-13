@@ -138,6 +138,12 @@ interface IStreamable {
   function cancelStream(uint256 streamId) external returns (bool);
 
   function initialize(address fundsAdmin) external;
+
+  /**
+   * @notice Returns the next available stream id
+   * @return nextStreamId Returns the stream id.
+   */
+  function getNextStreamId() external view returns (uint256);
 }
 
 library AaveMisc {
