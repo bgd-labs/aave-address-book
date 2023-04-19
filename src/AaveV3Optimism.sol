@@ -23,7 +23,7 @@ library AaveV3Optimism {
 
   address internal constant ACL_ADMIN = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
-  ICollector internal constant COLLECTOR = 0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf;
+  ICollector internal constant COLLECTOR = ICollector(0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;

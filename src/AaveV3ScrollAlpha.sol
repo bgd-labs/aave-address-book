@@ -23,7 +23,7 @@ library AaveV3ScrollAlpha {
 
   address internal constant ACL_ADMIN = 0x8A52430a0a83d2bA00A88758340e4b640BDfC4FC;
 
-  ICollector internal constant COLLECTOR = 0x500A5dc53fD22bdBBe37bE9cc00cB67F24e233d1;
+  ICollector internal constant COLLECTOR = ICollector(0x500A5dc53fD22bdBBe37bE9cc00cB67F24e233d1);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x318101F73b388C73b5A2Da39B4De54f335D77A0D;

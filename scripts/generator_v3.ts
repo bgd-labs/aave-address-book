@@ -201,7 +201,7 @@ export function writeV3Templates({
 
       address internal constant ACL_ADMIN = ${aclAdmin};
 
-      ICollector internal constant COLLECTOR = ${collector};
+      ICollector internal constant COLLECTOR = ICollector(${collector});
 
       address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
 

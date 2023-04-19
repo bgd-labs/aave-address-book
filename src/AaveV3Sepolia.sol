@@ -23,7 +23,7 @@ library AaveV3Sepolia {
 
   address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
 
-  ICollector internal constant COLLECTOR = 0x3246D6476dCc255b64342911D267F6CA3013068d;
+  ICollector internal constant COLLECTOR = ICollector(0x3246D6476dCc255b64342911D267F6CA3013068d);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x74269d0f5f1C2C44663f0214f2EE42c00a144460;

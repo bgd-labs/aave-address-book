@@ -23,7 +23,7 @@ library AaveV3Ethereum {
 
   address internal constant ACL_ADMIN = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
 
-  ICollector internal constant COLLECTOR = 0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
+  ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb;

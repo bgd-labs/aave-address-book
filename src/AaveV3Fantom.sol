@@ -23,7 +23,7 @@ library AaveV3Fantom {
 
   address internal constant ACL_ADMIN = 0x39CB97b105173b56b5a2b4b33AD25d6a50E6c949;
 
-  ICollector internal constant COLLECTOR = 0xBe85413851D195fC6341619cD68BfDc26a25b928;
+  ICollector internal constant COLLECTOR = ICollector(0xBe85413851D195fC6341619cD68BfDc26a25b928);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;
