@@ -27,8 +27,6 @@ library AaveV2Mumbai {
 
   address internal constant COLLECTOR = 0x943E44157dC0302a5CEb172374d1749018a00994;
 
-  address internal constant COLLECTOR_CONTROLLER = address(0);
-
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xd41aE58e803Edf4304334acCE4DC4Ec34a63C644;
 

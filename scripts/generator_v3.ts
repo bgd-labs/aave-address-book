@@ -2,11 +2,9 @@ import {ethers} from 'ethers';
 import {Pool} from './config';
 import fs from 'fs';
 import addressProviderV3ABI from './abi/address_provider_v3_abi.json';
-import poolV3ABI from './abi/pool_v3_abi.json';
 import aTokenV3ABI from './abi/aToken_v3_abi.json';
 import stableDebtTokenV3ABI from './abi/stableDebtToken_v3_abi.json';
 import variableDebtTokenV3ABI from './abi/variableDebtToken_v3_abi.json';
-import collectorV3ABI from './abi/collector_v3_abi.json';
 import rewardsControllerABI from './abi/rewardsController_v3_abi.json';
 import uipooldataProviderABI from './abi/uipooldata_provider.json';
 import {
@@ -26,7 +24,6 @@ export interface PoolV3WithAddresses extends Pool {
   aclAdmin: string;
   aclManager: string;
   collector: string;
-  collectorController: string;
   defaultATokenImplementation: string;
   aTokenRevision: string;
   defaultVariableDebtTokenImplementation: string;
@@ -117,8 +114,6 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       pool.provider
     ).DEBT_TOKEN_REVISION();
 
-    const collectorContract = new ethers.Contract(collector, collectorV3ABI, pool.provider);
-
     let emissionManager = '0x0000000000000000000000000000000000000000';
     try {
       const incentivesControllerContract = await new ethers.Contract(
@@ -131,8 +126,6 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
 
-    const collectorController = await collectorContract.getFundsAdmin();
-
     console.timeEnd(pool.name);
 
     return {
@@ -142,7 +135,6 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       aclAdmin,
       aclManager,
       poolDataProvider,
-      collectorController,
       collector,
       defaultATokenImplementation,
       aTokenRevision,
@@ -170,7 +162,6 @@ export function writeV3Templates({
   aclAdmin,
   aclManager,
   collector,
-  collectorController,
   additionalAddresses,
   chainId,
   defaultATokenImplementation,
@@ -210,9 +201,7 @@ export function writeV3Templates({
 
       address internal constant ACL_ADMIN = ${aclAdmin};
 
-      address internal constant COLLECTOR = ${collector};
-
-      ICollector internal constant COLLECTOR_CONTROLLER = ICollector(${collectorController});
+      ICollector internal constant COLLECTOR = ${collector};
 
       address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
 
@@ -242,7 +231,6 @@ export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
 export const ACL_MANAGER = "${aclManager}";
 export const ACL_ADMIN = "${aclAdmin}";
 export const COLLECTOR = "${collector}";
-export const COLLECTOR_CONTROLLER = "${collectorController}";
 export const DEFAULT_INCENTIVES_CONTROLLER = "${defaultIncentivesController}";
 export const DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = "${defaultATokenImplementation}";
 export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = "${defaultVariableDebtTokenImplementation}";

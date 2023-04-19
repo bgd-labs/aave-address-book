@@ -23,10 +23,7 @@ library AaveV3Goerli {
 
   address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
 
-  address internal constant COLLECTOR = 0xF45122b5fcfA72550B8Ed2D48f3aEeFcA1167415;
-
-  ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0x2DA49A23658d231b129F43bea4903C3682ab0Ed6);
+  ICollector internal constant COLLECTOR = 0xF45122b5fcfA72550B8Ed2D48f3aEeFcA1167415;
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xbE540b86E7b61624458ca928e9065e2133dBCA3a;

@@ -47,11 +47,4 @@ contract AaveAddressBookTest is Test {
   function testCollectorIsCorrect() public {
     assertEq(AaveV2Ethereum.COLLECTOR, address(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c));
   }
-
-  function testCollectorControllerIsCorrect() public {
-    assertEq(
-      AaveV2Ethereum.COLLECTOR_CONTROLLER,
-      address(0x3d569673dAa0575c936c7c67c4E6AedA69CC630C)
-    );
-  }
 }

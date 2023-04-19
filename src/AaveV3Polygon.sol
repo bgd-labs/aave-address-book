@@ -23,10 +23,7 @@ library AaveV3Polygon {
 
   address internal constant ACL_ADMIN = 0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
 
-  address internal constant COLLECTOR = 0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383;
-
-  ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0xDB89487A449274478e984665b8692AfC67459deF);
+  ICollector internal constant COLLECTOR = 0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383;
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;

@@ -27,8 +27,6 @@ library AaveV2Goerli {
 
   address internal constant COLLECTOR = 0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
 
-  address internal constant COLLECTOR_CONTROLLER = address(0);
-
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x0000000000000000000000000000000000000000;
 

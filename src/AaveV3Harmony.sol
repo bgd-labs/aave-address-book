@@ -23,10 +23,7 @@ library AaveV3Harmony {
 
   address internal constant ACL_ADMIN = 0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;
 
-  address internal constant COLLECTOR = 0x8A020d92D6B119978582BE4d3EdFdC9F7b28BF31;
-
-  ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0xeaC16519923774Fd7723d3D5E442a1e2E46BA962);
+  ICollector internal constant COLLECTOR = 0x8A020d92D6B119978582BE4d3EdFdC9F7b28BF31;
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;

@@ -23,10 +23,7 @@ library AaveV3Arbitrum {
 
   address internal constant ACL_ADMIN = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
-  address internal constant COLLECTOR = 0x053D55f9B5AF8694c503EB288a1B7E552f590710;
-
-  ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0xC3301b30f4EcBfd59dE0d74e89690C1a70C6f21B);
+  ICollector internal constant COLLECTOR = 0x053D55f9B5AF8694c503EB288a1B7E552f590710;
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;

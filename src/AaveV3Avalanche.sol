@@ -23,10 +23,7 @@ library AaveV3Avalanche {
 
   address internal constant ACL_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 
-  address internal constant COLLECTOR = 0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0;
-
-  ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0xaCbE7d574EF8dC39435577eb638167Aca74F79f0);
+  ICollector internal constant COLLECTOR = 0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0;
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;

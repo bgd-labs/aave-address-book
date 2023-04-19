@@ -23,10 +23,7 @@ library AaveV3Fuji {
 
   address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
 
-  address internal constant COLLECTOR = 0x7768248E1Ff75612c18324bad06bb393c1206980;
-
-  ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0xA63d1Ee9043Ba6Ae6608A87DaE082826b586eAE1);
+  ICollector internal constant COLLECTOR = 0x7768248E1Ff75612c18324bad06bb393c1206980;
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xe39e0498cB9df939b992f935f95936eAEdA7431c;

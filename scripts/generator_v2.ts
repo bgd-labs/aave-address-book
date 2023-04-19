@@ -4,7 +4,6 @@ import fs from 'fs';
 import addressProviderV2ABI from './abi/address_provider_v2_abi.json';
 import lendingPoolV2ABI from './abi/lending_pool_v2_abi.json';
 import aTokenV2ABI from './abi/aToken_v2_abi.json';
-import collectorV2ABI from './abi/collector_v2_abi.json';
 import uipooldataProviderABI from './abi/uipooldata_provider.json';
 import incentivesControllerABI from './abi/incentivesController_abi.json';
 import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers';
@@ -19,7 +18,6 @@ export interface PoolV2WithAddresses extends Pool {
   admin: string;
   emergencyAdmin: string;
   collector: string;
-  collectorController: string;
   defaultIncentivesController: string;
   emissionManager: string;
   reservesData: ReserveData[];
@@ -84,8 +82,6 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
 
     const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
 
-    const collectorContract = new ethers.Contract(collector, collectorV2ABI, pool.provider);
-
     const defaultIncentivesController = await aTokenContract.getIncentivesController();
 
     let emissionManager = '0x0000000000000000000000000000000000000000';
@@ -100,13 +96,6 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
       console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
 
-    let collectorController;
-
-    try {
-      collectorController = await collectorContract.getFundsAdmin();
-    } catch (e) {
-      collectorController = 'address(0)';
-    }
     console.timeEnd(pool.name);
 
     return {
@@ -118,7 +107,6 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
       admin,
       emergencyAdmin,
       collector,
-      collectorController,
       reservesData,
       defaultIncentivesController,
       emissionManager,
@@ -135,7 +123,6 @@ export function writeV2Templates({
   oracle,
   poolDataProvider,
   collector,
-  collectorController,
   additionalAddresses,
   chainId,
   lendingPool,
@@ -178,8 +165,6 @@ export function writeV2Templates({
 
       address internal constant COLLECTOR = ${collector};
 
-      address internal constant COLLECTOR_CONTROLLER = ${collectorController};
-
       address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
 
       address internal constant EMISSION_MANAGER = ${emissionManager};
@@ -203,7 +188,6 @@ export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
 export const POOL_ADMIN = "${admin}";
 export const EMERGENCY_ADMIN = "${emergencyAdmin}";
 export const COLLECTOR = "${collector}";
-export const COLLECTOR_CONTROLLER = "${collectorController}";
 export const DEFAULT_INCENTIVES_CONTROLLER = "${defaultIncentivesController}";
 export const EMISSION_MANAGER = "${emissionManager}";
 export const CHAIN_ID = ${chainId};

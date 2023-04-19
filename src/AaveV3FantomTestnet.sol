@@ -23,10 +23,7 @@ library AaveV3FantomTestnet {
 
   address internal constant ACL_ADMIN = 0xaDdfe0b2342800ebD67C30d1c2Bd479E4D498BD5;
 
-  address internal constant COLLECTOR = 0xE4A880b56B4790632753c7393cC51FefFd965678;
-
-  ICollector internal constant COLLECTOR_CONTROLLER =
-    ICollector(0x03766578530956F5f9d7726ED71d55277093cA20);
+  ICollector internal constant COLLECTOR = 0xE4A880b56B4790632753c7393cC51FefFd965678;
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xa45B99c552a2D576B272cc9bFbEB131427ae5148;

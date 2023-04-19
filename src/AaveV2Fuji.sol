@@ -27,8 +27,6 @@ library AaveV2Fuji {
 
   address internal constant COLLECTOR = 0xB45F5C501A22288dfdb897e5f73E189597e09288;
 
-  address internal constant COLLECTOR_CONTROLLER = address(0);
-
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xa1EF206fb9a8D8186157FC817fCddcC47727ED55;
 

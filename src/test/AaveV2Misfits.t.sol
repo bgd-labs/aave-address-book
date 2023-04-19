@@ -11,14 +11,6 @@ contract AaveAddressMisfitsTest is Test {
   function setUp() public {}
 
   /**
-   * @dev Only the v2 ethereum market has the new treasury version.
-   * To maintain interface compatibility the address-book contains 0 addresses for networks where it doesn't yet exist.
-   */
-  function testCollectorControllerIs0Address() public {
-    assertEq(address(AaveV2Avalanche.COLLECTOR_CONTROLLER), address(0));
-  }
-
-  /**
    * @dev This test tests against a bug that got visible after adding arc market.
    * The arc is the only market where owner != POOL_ADMIN right now.
    * So this test ensures we actually use the pool admin.
