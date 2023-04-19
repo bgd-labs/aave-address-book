@@ -19,6 +19,7 @@ export enum ChainId {
   harmony = 1666600000,
   sepolia = 11155111,
   scroll_alpha = 534353,
+  metis = 1088,
 }
 
 const RPC_PROVIDERS = {
@@ -37,6 +38,7 @@ const RPC_PROVIDERS = {
   [ChainId.fantom_testnet]: 'https://rpc.ankr.com/fantom_testnet',
   [ChainId.sepolia]: 'https://rpc.sepolia.org/',
   [ChainId.scroll_alpha]: 'https://alpha-rpc.scroll.io/l2',
+  [ChainId.metis]: 'https://andromeda.metis.io/?owner=1088',
 } as const;
 
 export interface Pool {
@@ -448,6 +450,18 @@ export const pools: Pool[] = [
       UI_POOL_DATA_PROVIDER: '0x45dFc7A61AD24918C9315733223fD1e55E9B2B59',
       UI_INCENTIVE_DATA_PROVIDER: '0x109e475c0Bf9E525dABB65A4Aec07c1e65100a99',
       L2_ENCODER: '0x997a8208902e1259dDf676Eb37FeD31A2f77110B',
+    },
+  },
+  {
+    name: 'AaveV3Metis',
+    chainId: ChainId.metis,
+    addressProvider: '0x632bf4054334F263F49a7039Cce25f0294f3f667',
+    version: 3,
+    additionalAddresses: {
+      WALLET_BALANCE_PROVIDER: '0x91b6C4ee40e6819Ea075712DB5A11459ded1b5fC',
+      UI_POOL_DATA_PROVIDER: '0xFF3a3E8112Da865CA669E61257E6C21AF6D9F586',
+      UI_INCENTIVE_DATA_PROVIDER: '0xB71eA83ee96246B3221bf7E8eaED737f126fc2AF',
+      L2_ENCODER: '0x57b1F9Fd95BB068784C10aDF6F0A49CB16c5E8C8',
     },
   },
 ].map((m) => ({
