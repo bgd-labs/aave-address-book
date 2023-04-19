@@ -45,6 +45,9 @@ contract AaveAddressBookTest is Test {
   }
 
   function testCollectorIsCorrect() public {
-    assertEq(AaveV2Ethereum.COLLECTOR, address(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c));
+    assertEq(
+      address(AaveV2Ethereum.COLLECTOR),
+      address(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c)
+    );
   }
 }

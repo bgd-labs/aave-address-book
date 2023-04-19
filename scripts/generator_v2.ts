@@ -139,6 +139,7 @@ export function writeV2Templates({
   pragma solidity >=0.6.0;
 
   import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from "./AaveV2.sol";
+  import {ICollector} from "./common/ICollector.sol";
 
   library ${name} {
       ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -163,7 +164,7 @@ export function writeV2Templates({
 
       address internal constant EMERGENCY_ADMIN = ${emergencyAdmin};
 
-      address internal constant COLLECTOR = ${collector};
+      ICollector internal constant COLLECTOR = ICollector(${collector});
 
       address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
 
