@@ -519,6 +519,8 @@ library AaveGovernanceV2 {
 
   address internal constant ARBITRUM_BRIDGE_EXECUTOR = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
+  address internal constant METIS_BRIDGE_EXECUTOR = 0x8EC77963068474a45016938Deb95E603Ca82a029;
+
   // https://github.com/bgd-labs/aave-v3-crosschain-listing-template/tree/master/src/contracts
   address internal constant CROSSCHAIN_FORWARDER_POLYGON =
     0x158a6bC04F0828318821baE797f50B0A1299d45b;
