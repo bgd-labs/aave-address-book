@@ -42,13 +42,9 @@ contract AaveAddressBookTest is Test {
   }
 
   function testCollectorIsCorrect() public {
-    assertEq(AaveV3Avalanche.COLLECTOR, address(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0));
-  }
-
-  function testCollectorControllerIsCorrect() public {
     assertEq(
-      address(AaveV3Avalanche.COLLECTOR_CONTROLLER),
-      address(0xaCbE7d574EF8dC39435577eb638167Aca74F79f0)
+      address(AaveV3Avalanche.COLLECTOR),
+      address(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0)
     );
   }
 
