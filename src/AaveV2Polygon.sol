@@ -26,7 +26,7 @@ library AaveV2Polygon {
 
   address internal constant EMERGENCY_ADMIN = 0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;
 
-  ICollector internal constant COLLECTOR = ICollector(0x7734280A4337F37Fbf4651073Db7c28C80B339e9);
+  ICollector internal constant COLLECTOR = ICollector(0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x357D51124f59836DeD84c8a1730D72B749d8BC23;

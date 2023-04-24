@@ -131,7 +131,7 @@ library AaveV3AvalancheAssets {
   address internal constant WETHe_ORACLE = 0x976B3D034E162d8bD72D6b9C989d545b839003b0;
 
   address internal constant WETHe_INTEREST_RATE_STRATEGY =
-    0x79a906e8c998d2fb5C5D66d23c4c5416Fe0168D6;
+    0x271f5f8325051f22caDa18FfedD4a805584a232A;
 
   address internal constant USDt_UNDERLYING = 0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7;
 
@@ -144,7 +144,7 @@ library AaveV3AvalancheAssets {
   address internal constant USDt_ORACLE = 0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a;
 
   address internal constant USDt_INTEREST_RATE_STRATEGY =
-    0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
+    0xfab05a6aF585da2F96e21452F91E812452996BD3;
 
   address internal constant AAVEe_UNDERLYING = 0x63a72806098Bd3D9520cC43356dD78afe5D386D9;
 
@@ -196,7 +196,7 @@ library AaveV3AvalancheAssets {
   address internal constant FRAX_ORACLE = 0xbBa56eF1565354217a3353a466edB82E8F25b08e;
 
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
-    0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
+    0xfab05a6aF585da2F96e21452F91E812452996BD3;
 
   address internal constant MAI_UNDERLYING = 0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b;
 
@@ -208,7 +208,7 @@ library AaveV3AvalancheAssets {
 
   address internal constant MAI_ORACLE = 0x5D1F504211c17365CA66353442a74D4435A8b778;
 
-  address internal constant MAI_INTEREST_RATE_STRATEGY = 0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
+  address internal constant MAI_INTEREST_RATE_STRATEGY = 0xfab05a6aF585da2F96e21452F91E812452996BD3;
 
   address internal constant BTCb_UNDERLYING = 0x152b9d0FdC40C096757F570A51E494bd4b943E50;
 
