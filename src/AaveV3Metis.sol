@@ -56,3 +56,15 @@ library AaveV3Metis {
 
   address internal constant LISTING_ENGINE = 0x857720ad258db0ACb180e76A5526c72CFCe6F8A7;
 }
+
+library AaveV3MetisAssets {
+  address internal constant METIS_UNDERLYING = 0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000;
+
+  address internal constant WETH_UNDERLYING = 0x420000000000000000000000000000000000000A;
+
+  address internal constant mDAI_UNDERLYING = 0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0;
+
+  address internal constant mUSDC_UNDERLYING = 0xEA32A96608495e54156Ae48931A7c20f0dcc1a21;
+
+  address internal constant mUSDT_UNDERLYING = 0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC;
+}
