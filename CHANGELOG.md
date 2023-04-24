@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.22.0](https://github.com/bgd-labs/aave-address-book/compare/v1.21.0...v1.22.0) (2023-04-24)
+
+
+### Features
+
+* add streamable interface ([#116](https://github.com/bgd-labs/aave-address-book/issues/116)) ([cdfdf4a](https://github.com/bgd-labs/aave-address-book/commit/cdfdf4ac688da9f90ceaeed3c8fa399a19dc1003))
+
+
+### Bug Fixes
+
+* add getNextStreamId ([ce1bf7b](https://github.com/bgd-labs/aave-address-book/commit/ce1bf7bea81d2670bb20c8f255eceeb8eae881fb))
+
 ## [1.21.0](https://github.com/bgd-labs/aave-address-book/compare/v1.20.0...v1.21.0) (2023-04-11)
 
 
