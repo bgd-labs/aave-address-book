@@ -16,6 +16,8 @@ library AaveV3FantomTestnet {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xDd6BCF7EF3dbA79b03D61De36Cc292661c664efD);
 
+  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x221b58772526669172acCA8B68f6905086c81569);
 

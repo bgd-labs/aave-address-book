@@ -16,6 +16,8 @@ library AaveV3Goerli {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0x9F616c65b5298E24e155E4486e114516BC635b63);
 
+  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xa41E284482F9923E265832bE59627d91432da76C);
 

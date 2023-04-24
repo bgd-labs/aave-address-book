@@ -23,6 +23,7 @@ export interface PoolV3WithAddresses extends Pool {
   poolDataProvider: string;
   poolConfigurator: string;
   oracle: string;
+  oracleSentinel: string;
   aclAdmin: string;
   aclManager: string;
   collector: string;
@@ -46,6 +47,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
     const poolAddress = await contract.getPool();
     const poolConfigurator = await contract.getPoolConfigurator();
     const oracle = await contract.getPriceOracle();
+    const oracleSentinel = await contract.getPriceOracleSentinel();
     const aclAdmin = await contract.getACLAdmin();
     const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
@@ -137,6 +139,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
         pool: poolAddress,
         poolConfigurator,
         oracle,
+        oracleSentinel,
         aclAdmin,
         aclManager,
         poolDataProvider,
@@ -158,6 +161,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
         pool: poolAddress,
         poolConfigurator,
         oracle,
+        oracleSentinel,
         aclAdmin,
         aclManager,
         poolDataProvider,
@@ -189,6 +193,7 @@ export function writeV3Templates({
   pool,
   poolConfigurator,
   oracle,
+  oracleSentinel,
   poolDataProvider,
   aclAdmin,
   aclManager,
@@ -227,6 +232,8 @@ export function writeV3Templates({
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
 
+      address internal constant PRICE_ORACLE_SENTINEL = ${oracleSentinel};
+
       IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IPoolDataProvider(${poolDataProvider});
 
       IACLManager internal constant ACL_MANAGER = IACLManager(${aclManager});
@@ -259,6 +266,7 @@ export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
 export const POOL = "${pool}";
 export const POOL_CONFIGURATOR = "${poolConfigurator}";
 export const ORACLE = "${oracle}";
+export const PRICE_ORACLE_SENTINEL = "${oracleSentinel}";
 export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
 export const ACL_MANAGER = "${aclManager}";
 export const ACL_ADMIN = "${aclAdmin}";

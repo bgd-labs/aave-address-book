@@ -16,6 +16,8 @@ library AaveV3Fuji {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xB9107870a2e22b9cd4B51ED5483212Cb9eAE0329);
 
+  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x0B59871DF373136bB7753A7A2675b47ffA0ccC86);
 
