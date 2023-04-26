@@ -46,3 +46,10 @@ export const generateAdditionalAddressesSol = (
 export async function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
+
+export function addressOrZero(address?: string) {
+  if (address) return address;
+  return ZERO_ADDRESS;
+}

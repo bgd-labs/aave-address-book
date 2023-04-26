@@ -8,6 +8,8 @@ import variableDebtTokenV3ABI from './abi/variableDebtToken_v3_abi.json';
 import rewardsControllerABI from './abi/rewardsController_v3_abi.json';
 import uipooldataProviderABI from './abi/uipooldata_provider.json';
 import {
+  ZERO_ADDRESS,
+  addressOrZero,
   bytes32toAddress,
   generateAdditionalAddresses,
   generateAdditionalAddressesSol,
@@ -21,6 +23,7 @@ export interface PoolV3WithAddresses extends Pool {
   poolDataProvider: string;
   poolConfigurator: string;
   oracle: string;
+  oracleSentinel: string;
   aclAdmin: string;
   aclManager: string;
   collector: string;
@@ -44,9 +47,26 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
     const poolAddress = await contract.getPool();
     const poolConfigurator = await contract.getPoolConfigurator();
     const oracle = await contract.getPriceOracle();
+    const oracleSentinel = await contract.getPriceOracleSentinel();
     const aclAdmin = await contract.getACLAdmin();
     const aclManager = await contract.getACLManager();
     const poolDataProvider = await contract.getPoolDataProvider();
+
+    const defaultIncentivesController = await contract.getAddress(
+      '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532'
+    );
+
+    let emissionManager = ZERO_ADDRESS;
+    try {
+      const incentivesControllerContract = await new ethers.Contract(
+        defaultIncentivesController,
+        rewardsControllerABI,
+        pool.provider
+      );
+      emissionManager = await incentivesControllerContract.getEmissionManager();
+    } catch (e) {
+      console.log(`old version of incentives controller deployed on ${pool.name}`);
+    }
 
     await sleep(1000);
     let reservesData: PoolV3WithAddresses['reservesData'] = [];
@@ -73,80 +93,95 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
         }
       );
     }
-    /**
-     * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
-     */
-    const aTokenContract = new ethers.Contract(
-      reservesData[0].aTokenAddress,
-      aTokenV3ABI,
-      pool.provider
-    );
-
-    const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
-
-    const defaultIncentivesController = await aTokenContract.getIncentivesController();
-
-    const defaultATokenImplementation = bytes32toAddress(
-      await getImplementationStorageSlot(pool.provider, reservesData[0].aTokenAddress)
-    );
-
-    const aTokenRevision = await aTokenContract.ATOKEN_REVISION();
-
-    await sleep(1000);
-
-    const defaultVariableDebtTokenImplementation = bytes32toAddress(
-      await getImplementationStorageSlot(pool.provider, reservesData[0].variableDebtTokenAddress)
-    );
-
-    const variableDebtTokenRevision = await new ethers.Contract(
-      reservesData[0].variableDebtTokenAddress,
-      variableDebtTokenV3ABI,
-      pool.provider
-    ).DEBT_TOKEN_REVISION();
-
-    const defaultStableDebtTokenImplementation = bytes32toAddress(
-      await getImplementationStorageSlot(pool.provider, reservesData[0].stableDebtTokenAddress)
-    );
-
-    const stableDebtTokenRevision = await new ethers.Contract(
-      reservesData[0].stableDebtTokenAddress,
-      stableDebtTokenV3ABI,
-      pool.provider
-    ).DEBT_TOKEN_REVISION();
-
-    let emissionManager = '0x0000000000000000000000000000000000000000';
-    try {
-      const incentivesControllerContract = await new ethers.Contract(
-        defaultIncentivesController,
-        rewardsControllerABI,
+    if (reservesData.length > 0) {
+      /**
+       * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
+       */
+      const aTokenContract = new ethers.Contract(
+        reservesData[0].aTokenAddress,
+        aTokenV3ABI,
         pool.provider
       );
-      emissionManager = await incentivesControllerContract.getEmissionManager();
-    } catch (e) {
-      console.log(`old version of incentives controller deployed on ${pool.name}`);
+
+      const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
+
+      const defaultATokenImplementation = bytes32toAddress(
+        await getImplementationStorageSlot(pool.provider, reservesData[0].aTokenAddress)
+      );
+
+      const aTokenRevision = await aTokenContract.ATOKEN_REVISION();
+
+      await sleep(1000);
+
+      const defaultVariableDebtTokenImplementation = bytes32toAddress(
+        await getImplementationStorageSlot(pool.provider, reservesData[0].variableDebtTokenAddress)
+      );
+
+      const variableDebtTokenRevision = await new ethers.Contract(
+        reservesData[0].variableDebtTokenAddress,
+        variableDebtTokenV3ABI,
+        pool.provider
+      ).DEBT_TOKEN_REVISION();
+
+      const defaultStableDebtTokenImplementation = bytes32toAddress(
+        await getImplementationStorageSlot(pool.provider, reservesData[0].stableDebtTokenAddress)
+      );
+
+      const stableDebtTokenRevision = await new ethers.Contract(
+        reservesData[0].stableDebtTokenAddress,
+        stableDebtTokenV3ABI,
+        pool.provider
+      ).DEBT_TOKEN_REVISION();
+
+      console.timeEnd(pool.name);
+
+      return {
+        pool: poolAddress,
+        poolConfigurator,
+        oracle,
+        oracleSentinel,
+        aclAdmin,
+        aclManager,
+        poolDataProvider,
+        collector,
+        defaultATokenImplementation,
+        aTokenRevision,
+        defaultVariableDebtTokenImplementation,
+        variableDebtTokenRevision,
+        defaultStableDebtTokenImplementation,
+        stableDebtTokenRevision,
+        emissionManager,
+        defaultIncentivesController,
+        reservesData,
+        ...pool,
+      };
+    } else {
+      console.timeEnd(pool.name);
+      return {
+        pool: poolAddress,
+        poolConfigurator,
+        oracle,
+        oracleSentinel,
+        aclAdmin,
+        aclManager,
+        poolDataProvider,
+        collector: addressOrZero(pool.initial?.COLLECTOR),
+        defaultATokenImplementation: addressOrZero(pool.initial?.DEFAULT_A_TOKEN_IMPL),
+        aTokenRevision: '1',
+        defaultVariableDebtTokenImplementation: addressOrZero(
+          pool.initial?.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL
+        ),
+        variableDebtTokenRevision: '1',
+        defaultStableDebtTokenImplementation: addressOrZero(
+          pool.initial?.DEFAULT_STABLE_DEBT_TOKEN_IMPL
+        ),
+        stableDebtTokenRevision: '1',
+        emissionManager,
+        defaultIncentivesController,
+        reservesData,
+        ...pool,
+      };
     }
-
-    console.timeEnd(pool.name);
-
-    return {
-      pool: poolAddress,
-      poolConfigurator,
-      oracle,
-      aclAdmin,
-      aclManager,
-      poolDataProvider,
-      collector,
-      defaultATokenImplementation,
-      aTokenRevision,
-      defaultVariableDebtTokenImplementation,
-      variableDebtTokenRevision,
-      defaultStableDebtTokenImplementation,
-      stableDebtTokenRevision,
-      emissionManager,
-      defaultIncentivesController,
-      reservesData,
-      ...pool,
-    };
   } catch (error: any) {
     throw new Error(JSON.stringify({message: error.message, pool, stack: error.stack}));
   }
@@ -158,6 +193,7 @@ export function writeV3Templates({
   pool,
   poolConfigurator,
   oracle,
+  oracleSentinel,
   poolDataProvider,
   aclAdmin,
   aclManager,
@@ -196,6 +232,8 @@ export function writeV3Templates({
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
 
+      address internal constant PRICE_ORACLE_SENTINEL = ${oracleSentinel};
+
       IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IPoolDataProvider(${poolDataProvider});
 
       IACLManager internal constant ACL_MANAGER = IACLManager(${aclManager});
@@ -228,6 +266,7 @@ export const POOL_ADDRESSES_PROVIDER = "${addressProvider}";
 export const POOL = "${pool}";
 export const POOL_CONFIGURATOR = "${poolConfigurator}";
 export const ORACLE = "${oracle}";
+export const PRICE_ORACLE_SENTINEL = "${oracleSentinel}";
 export const AAVE_PROTOCOL_DATA_PROVIDER = "${poolDataProvider}";
 export const ACL_MANAGER = "${aclManager}";
 export const ACL_ADMIN = "${aclAdmin}";

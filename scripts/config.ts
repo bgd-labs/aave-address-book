@@ -19,6 +19,7 @@ export enum ChainId {
   harmony = 1666600000,
   sepolia = 11155111,
   scroll_alpha = 534353,
+  metis = 1088,
 }
 
 const RPC_PROVIDERS = {
@@ -37,6 +38,7 @@ const RPC_PROVIDERS = {
   [ChainId.fantom_testnet]: 'https://rpc.ankr.com/fantom_testnet',
   [ChainId.sepolia]: 'https://rpc.sepolia.org/',
   [ChainId.scroll_alpha]: 'https://alpha-rpc.scroll.io/l2',
+  [ChainId.metis]: 'https://andromeda.metis.io/?owner=1088',
 } as const;
 
 export interface Pool {
@@ -61,6 +63,13 @@ export interface Pool {
     PROOF_OF_RESERVE_AGGREGATOR?: string;
     DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: string;
     STATIC_A_TOKEN_FACTORY?: string;
+  };
+  // will be used for pending pools where the impls can't be fetched yet
+  initial?: {
+    COLLECTOR?: string;
+    DEFAULT_A_TOKEN_IMPL?: string;
+    DEFAULT_VARIABLE_DEBT_TOKEN_IMPL?: string;
+    DEFAULT_STABLE_DEBT_TOKEN_IMPL?: string;
   };
 }
 
@@ -448,6 +457,27 @@ export const pools: Pool[] = [
       UI_POOL_DATA_PROVIDER: '0x45dFc7A61AD24918C9315733223fD1e55E9B2B59',
       UI_INCENTIVE_DATA_PROVIDER: '0x109e475c0Bf9E525dABB65A4Aec07c1e65100a99',
       L2_ENCODER: '0x997a8208902e1259dDf676Eb37FeD31A2f77110B',
+    },
+  },
+  {
+    name: 'AaveV3Metis',
+    chainId: ChainId.metis,
+    addressProvider: '0xB9FABd7500B2C6781c35Dd48d54f81fc2299D7AF',
+    version: 3,
+    additionalAddresses: {
+      POOL_ADDRESSES_PROVIDER_REGISTRY: '0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5',
+      WALLET_BALANCE_PROVIDER: '0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b',
+      UI_POOL_DATA_PROVIDER: '0x7dd60bd8507fDC3d300d53427b7AE566701a7320',
+      UI_INCENTIVE_DATA_PROVIDER: '0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927',
+      L2_ENCODER: '0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9',
+      RATES_FACTORY: '0x87Aaba7cf8e1F319d0E3402d68017171201dEcd5',
+      LISTING_ENGINE: '0x857720ad258db0ACb180e76A5526c72CFCe6F8A7',
+    },
+    initial: {
+      COLLECTOR: '0xB5b64c7E00374e766272f8B442Cd261412D4b118',
+      DEFAULT_A_TOKEN_IMPL: '0x246405C70461f93513C74606815615c24c5C8C79',
+      DEFAULT_VARIABLE_DEBT_TOKEN_IMPL: '0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f',
+      DEFAULT_STABLE_DEBT_TOKEN_IMPL: '0x52aC2476Fc6F788B4c5A9B12Cfcb7fDB163955f4',
     },
   },
 ].map((m) => ({

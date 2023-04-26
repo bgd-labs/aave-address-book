@@ -16,6 +16,8 @@ library AaveV3ScrollAlpha {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0x269D5C1854fcA3bede6BFc8935118c99020b13f0);
 
+  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x36002d10bB238594c58aec104620555a545D517C);
 

@@ -16,6 +16,8 @@ library AaveV3Sepolia {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0x132C06E86CcCf93Afef7B33f0FF3e2E97EECf8f6);
 
+  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xC7832d5ACDDbdA5a7c9d1Fa9F677f9a84b7a4125);
 

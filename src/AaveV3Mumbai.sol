@@ -16,6 +16,8 @@ library AaveV3Mumbai {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xf0E6744a59177014738e1eF920dc676fb3b8CB62);
 
+  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xacB5aDd3029C5004f726e8411033E6202Bc3dd01);
 
