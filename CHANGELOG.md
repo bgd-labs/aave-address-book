@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.23.0](https://github.com/bgd-labs/aave-address-book/compare/v1.22.0...v1.23.0) (2023-04-26)
+
+
+### Features
+
+* metis ([#120](https://github.com/bgd-labs/aave-address-book/issues/120)) ([9961128](https://github.com/bgd-labs/aave-address-book/commit/9961128857066c1cd1b5d906e7a334bd907e2729))
+
 ## [1.22.0](https://github.com/bgd-labs/aave-address-book/compare/v1.21.0...v1.22.0) (2023-04-24)
 
 
