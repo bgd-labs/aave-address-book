@@ -2,6 +2,61 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.23.0](https://github.com/bgd-labs/aave-address-book/compare/v1.22.0...v1.23.0) (2023-04-26)
+
+
+### Features
+
+* metis ([#120](https://github.com/bgd-labs/aave-address-book/issues/120)) ([9961128](https://github.com/bgd-labs/aave-address-book/commit/9961128857066c1cd1b5d906e7a334bd907e2729))
+
+## [1.22.0](https://github.com/bgd-labs/aave-address-book/compare/v1.21.0...v1.22.0) (2023-04-24)
+
+
+### Features
+
+* add streamable interface ([#116](https://github.com/bgd-labs/aave-address-book/issues/116)) ([cdfdf4a](https://github.com/bgd-labs/aave-address-book/commit/cdfdf4ac688da9f90ceaeed3c8fa399a19dc1003))
+
+
+### Bug Fixes
+
+* add getNextStreamId ([ce1bf7b](https://github.com/bgd-labs/aave-address-book/commit/ce1bf7bea81d2670bb20c8f255eceeb8eae881fb))
+
+## [1.21.0](https://github.com/bgd-labs/aave-address-book/compare/v1.20.0...v1.21.0) (2023-04-11)
+
+
+### Features
+
+* add Scroll Alpha Testnet ([#112](https://github.com/bgd-labs/aave-address-book/issues/112)) ([8c44ce6](https://github.com/bgd-labs/aave-address-book/commit/8c44ce63d1fb20c7bf1bf37066521a16ed81076a))
+* static a token factories ([#114](https://github.com/bgd-labs/aave-address-book/issues/114)) ([b9be41e](https://github.com/bgd-labs/aave-address-book/commit/b9be41ea2d7c0fec4bf795de7a2fafa62856f2db))
+
+
+### Bug Fixes
+
+* update addresses ([a39f2bd](https://github.com/bgd-labs/aave-address-book/commit/a39f2bd3cf66ac4db1ada2fa961961e3ac4f570a))
+
+## [1.20.0](https://github.com/bgd-labs/aave-address-book/compare/v1.19.0...v1.20.0) (2023-03-27)
+
+
+### Features
+
+* add delegation aware aToken ([#109](https://github.com/bgd-labs/aave-address-book/issues/109)) ([642dffd](https://github.com/bgd-labs/aave-address-book/commit/642dffde2456b04d2509a42391fddb622264aa09))
+* added rates factory ([#103](https://github.com/bgd-labs/aave-address-book/issues/103)) ([8982920](https://github.com/bgd-labs/aave-address-book/commit/89829205f87b8d570182158bdbcc04676ebcbd51))
+* auto redeem forwarder ([#107](https://github.com/bgd-labs/aave-address-book/issues/107)) ([9a64715](https://github.com/bgd-labs/aave-address-book/commit/9a64715cff37ff7ff9a7da3e3dd04a55cad78ccb))
+* reexport aggregator intreface ([#110](https://github.com/bgd-labs/aave-address-book/issues/110)) ([b2d4bde](https://github.com/bgd-labs/aave-address-book/commit/b2d4bdefa44099a672e5b3eab8ef06998bb2a5e1))
+* updated addresses of LISTING_ENGINE to new version (Ethereum missing) ([#104](https://github.com/bgd-labs/aave-address-book/issues/104)) ([751ffd0](https://github.com/bgd-labs/aave-address-book/commit/751ffd0affc9bd1609753ea47a7d9ac23f391dd8))
+
+
+### Bug Fixes
+
+* update listing engine ([#106](https://github.com/bgd-labs/aave-address-book/issues/106)) ([20637c9](https://github.com/bgd-labs/aave-address-book/commit/20637c98ebe52ff17b3e12592499af740619492d))
+
+## [1.19.0](https://github.com/bgd-labs/aave-address-book/compare/v1.18.0...v1.19.0) (2023-03-03)
+
+
+### Features
+
+* add sepolia ([#99](https://github.com/bgd-labs/aave-address-book/issues/99)) ([afd94d5](https://github.com/bgd-labs/aave-address-book/commit/afd94d54f7cd98e74dd6e9d5684efabbd1609b5f))
+
 ## [1.18.0](https://github.com/bgd-labs/aave-address-book/compare/v1.17.0...v1.18.0) (2023-02-27)
 
 

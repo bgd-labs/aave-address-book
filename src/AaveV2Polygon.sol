@@ -3,6 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
+import {ICollector} from './common/ICollector.sol';
 
 library AaveV2Polygon {
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -25,9 +26,7 @@ library AaveV2Polygon {
 
   address internal constant EMERGENCY_ADMIN = 0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;
 
-  address internal constant COLLECTOR = 0x7734280A4337F37Fbf4651073Db7c28C80B339e9;
-
-  address internal constant COLLECTOR_CONTROLLER = 0xDB89487A449274478e984665b8692AfC67459deF;
+  ICollector internal constant COLLECTOR = ICollector(0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x357D51124f59836DeD84c8a1730D72B749d8BC23;
@@ -191,7 +190,7 @@ library AaveV2PolygonAssets {
 
   address internal constant CRV_ORACLE = 0x1CF68C76803c9A415bE301f50E82e44c64B7F1D4;
 
-  address internal constant CRV_INTEREST_RATE_STRATEGY = 0xBD67eB7e00f43DAe9e3d51f7d509d4730Fe5988e;
+  address internal constant CRV_INTEREST_RATE_STRATEGY = 0xE4621DfD503A533f42bB5a45162eA3e5233Acd5F;
 
   address internal constant SUSHI_UNDERLYING = 0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a;
 

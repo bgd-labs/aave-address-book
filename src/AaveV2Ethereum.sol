@@ -3,6 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
+import {ICollector} from './common/ICollector.sol';
 
 library AaveV2Ethereum {
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -25,9 +26,7 @@ library AaveV2Ethereum {
 
   address internal constant EMERGENCY_ADMIN = 0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;
 
-  address internal constant COLLECTOR = 0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
-
-  address internal constant COLLECTOR_CONTROLLER = 0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
+  ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xd784927Ff2f95ba542BfC824c8a8a98F3495f6b5;
@@ -165,7 +164,7 @@ library AaveV2EthereumAssets {
   address internal constant BUSD_ORACLE = 0x614715d2Af89E6EC99A233818275142cE88d1Cfd;
 
   address internal constant BUSD_INTEREST_RATE_STRATEGY =
-    0x26D40544447F68a3De69005822195549934624B9;
+    0x67a81df2b7FAf4a324D94De9Cc778704F4500478;
 
   address internal constant DAI_UNDERLYING = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
 
@@ -314,7 +313,7 @@ library AaveV2EthereumAssets {
 
   address internal constant CRV_ORACLE = 0x8a12Be339B0cD1829b91Adc01977caa5E9ac121e;
 
-  address internal constant CRV_INTEREST_RATE_STRATEGY = 0xE3a3DE71B827cB73663A24cDB6243bA7F986cC3b;
+  address internal constant CRV_INTEREST_RATE_STRATEGY = 0xA4C2C730A4c01c64d54ce0165c27120989A3C743;
 
   address internal constant GUSD_UNDERLYING = 0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd;
 

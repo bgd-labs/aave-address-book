@@ -3,6 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
+import {ICollector} from './common/ICollector.sol';
 
 library AaveV2EthereumArc {
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -25,9 +26,7 @@ library AaveV2EthereumArc {
 
   address internal constant EMERGENCY_ADMIN = 0x33B09130b035d6D7e57d76fEa0873d9545FA7557;
 
-  address internal constant COLLECTOR = 0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c;
-
-  address internal constant COLLECTOR_CONTROLLER = 0x3d569673dAa0575c936c7c67c4E6AedA69CC630C;
+  ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x0000000000000000000000000000000000000000;
