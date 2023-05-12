@@ -18,6 +18,7 @@ export enum ChainId {
   optimism_goerli = 420,
   harmony = 1666600000,
   sepolia = 11155111,
+  wannsee = 5167003
 }
 
 const RPC_PROVIDERS = {
@@ -35,6 +36,7 @@ const RPC_PROVIDERS = {
   [ChainId.fantom]: 'https://rpc.ftm.tools',
   [ChainId.fantom_testnet]: 'https://rpc.ankr.com/fantom_testnet',
   [ChainId.sepolia]: 'https://rpc.sepolia.org/',
+  [ChainId.wannsee]: 'https://wannsee-rpc.mxc.com	'
 } as const;
 
 export interface Pool {
@@ -418,6 +420,19 @@ export const pools: Pool[] = [
       UI_POOL_DATA_PROVIDER: '0x9277eFbB991536a98a1aA8b735E9D26d887104C1',
       UI_INCENTIVE_DATA_PROVIDER: '0x4157398c5abB5211F51F5B551E3e240c5568dbD4',
       L2_ENCODER: '0x14AA09449fac437b5c0110614be2C08610e38f62',
+    },
+  },
+  {
+    name: 'AaveV3MXCWannsee',
+    chainId: ChainId.wannsee,
+    addressProvider: '0x1109db761Adf696c975A132dC390501548650c1B',
+    version: 3,
+    testnet: true,
+    additionalAddresses: {
+      WETH_GATEWAY: '0x69Cf989c740aD73b0F9d51c7C4281079ca1B9532',
+      FAUCET: '0xd49839fb19C42DFBB5D2F2Bf4F72097fEddb6fD2',
+      WALLET_BALANCE_PROVIDER: '0x858862aBbb1d9047E7b8Ab0da25275E1b4c85aEc',
+      UI_POOL_DATA_PROVIDER: '0x6807F4B0D75c59Ef89f0dbEF9841Fb23fFDF105D'
     },
   },
 ].map((m) => ({

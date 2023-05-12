@@ -24,6 +24,7 @@ import {AaveV3Fantom} from './AaveV3Fantom.sol';
 import {AaveV3Harmony} from './AaveV3Harmony.sol';
 import {AaveV3Optimism} from './AaveV3Optimism.sol';
 import {AaveV3OptimismGoerli} from './AaveV3OptimismGoerli.sol';
+import {AaveV3MXCWannsee} from './AaveV3MXCWannsee.sol';
 
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
