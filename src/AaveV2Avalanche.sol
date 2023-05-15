@@ -26,7 +26,7 @@ library AaveV2Avalanche {
 
   address internal constant EMERGENCY_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 
-  ICollector internal constant COLLECTOR = ICollector(0x467b92aF281d14cB6809913AD016a607b5ba8A36);
+  ICollector internal constant COLLECTOR = ICollector(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0);
 
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x01D83Fe6A10D2f2B7AF17034343746188272cAc9;
