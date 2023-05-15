@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.23.1](https://github.com/bgd-labs/aave-address-book/compare/v1.23.0...v1.23.1) (2023-05-15)
+
+
+### Bug Fixes
+
+* Scroll Alpha - fix faucets ([#124](https://github.com/bgd-labs/aave-address-book/issues/124)) ([bcd5dce](https://github.com/bgd-labs/aave-address-book/commit/bcd5dced2f5db37ce97cb0c58e806f0aec78a165))
+* update addresses ([#127](https://github.com/bgd-labs/aave-address-book/issues/127)) ([d09a7fb](https://github.com/bgd-labs/aave-address-book/commit/d09a7fb00735260e3eef4b06b14f0d524f19f7fd))
+
 ## [1.23.0](https://github.com/bgd-labs/aave-address-book/compare/v1.22.0...v1.23.0) (2023-04-26)
 
 
