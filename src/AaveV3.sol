@@ -13,7 +13,7 @@ import {IPoolDataProvider} from 'aave-v3-core/contracts/interfaces/IPoolDataProv
 import {IDefaultInterestRateStrategy} from 'aave-v3-core/contracts/interfaces/IDefaultInterestRateStrategy.sol';
 import {IReserveInterestRateStrategy} from 'aave-v3-core/contracts/interfaces/IReserveInterestRateStrategy.sol';
 import {IPoolDataProvider as IAaveProtocolDataProvider} from 'aave-v3-core/contracts/interfaces/IPoolDataProvider.sol';
-import {AggregatorInterface} from 'aave-v3-core/contracts/dependencies/chainlink/AggregatorInterface.sol';
+import {AggregatorInterface} from './common/AggregatorInterface.sol';
 
 interface IACLManager is BasicIACLManager {
   function hasRole(bytes32 role, address account) external view returns (bool);
