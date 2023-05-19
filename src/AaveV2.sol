@@ -2,7 +2,7 @@
 pragma solidity >=0.6.0;
 pragma experimental ABIEncoderV2;
 
-import {AggregatorInterface} from 'aave-v3-core/contracts/dependencies/chainlink/AggregatorInterface.sol';
+import {AggregatorInterface} from './common/AggregatorInterface.sol';
 
 library DataTypes {
   // refer to the whitepaper, section 1.1 basic concepts for a formal description of these properties.

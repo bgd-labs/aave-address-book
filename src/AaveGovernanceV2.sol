@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
-pragma abicoder v2;
+pragma experimental ABIEncoderV2;
 
 interface IGovernanceStrategy {
   /**
