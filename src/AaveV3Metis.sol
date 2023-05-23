@@ -55,6 +55,8 @@ library AaveV3Metis {
   address internal constant RATES_FACTORY = 0x87Aaba7cf8e1F319d0E3402d68017171201dEcd5;
 
   address internal constant LISTING_ENGINE = 0x857720ad258db0ACb180e76A5526c72CFCe6F8A7;
+
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
 }
 
 library AaveV3MetisAssets {

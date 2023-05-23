@@ -64,6 +64,8 @@ library AaveV3Optimism {
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
 
   address internal constant STATIC_A_TOKEN_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
+
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
 }
 
 library AaveV3OptimismAssets {

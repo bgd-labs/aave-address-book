@@ -62,6 +62,8 @@ library AaveV3Polygon {
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x874313A46e4957D29FAAC43BF5Eb2B144894f557;
 
   address internal constant STATIC_A_TOKEN_FACTORY = 0xFcd9720b0Ea09c70E53727E08Bc131d77800B112;
+
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0xc5de989E0D1BF605d19478Fdd32Aa827a10b464f;
 }
 
 library AaveV3PolygonAssets {
