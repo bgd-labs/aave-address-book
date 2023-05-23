@@ -64,7 +64,7 @@ library AaveV2EthereumAssets {
   address internal constant USDT_ORACLE = 0xEe9F2375b4bdF6387aa8265dD4FB8F16512A1d46;
 
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x33DeAc0861FD6a9235b86172AA939E79085c6f52;
+    0xF22c8255eA615b3Da6CA5CF5aeCc8956bfF07Aa8;
 
   address internal constant WBTC_UNDERLYING = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
 
@@ -77,7 +77,7 @@ library AaveV2EthereumAssets {
   address internal constant WBTC_ORACLE = 0xdeb288F737066589598e9214E782fa5A8eD689e8;
 
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
-    0xf41E8F817e6C399d1AdE102059c454093b24f35B;
+    0x32f3A6134590fc2d9440663d35a2F0a6265F04c4;
 
   address internal constant WETH_UNDERLYING = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
 
@@ -326,7 +326,7 @@ library AaveV2EthereumAssets {
   address internal constant GUSD_ORACLE = 0xEc6f4Cd64d28Ef32507e2dc399948aAe9Bbedd7e;
 
   address internal constant GUSD_INTEREST_RATE_STRATEGY =
-    0x2893405d64a7Bc8Db02Fa617351a5399d59eCf8D;
+    0x78Fe5d0427E669ba9F964C3495fF381a805a0487;
 
   address internal constant BAL_UNDERLYING = 0xba100000625a3754423978a60c9317c58a424e3D;
 
@@ -402,7 +402,7 @@ library AaveV2EthereumAssets {
   address internal constant USDP_ORACLE = 0x3a08ebBaB125224b7b6474384Ee39fBb247D2200;
 
   address internal constant USDP_INTEREST_RATE_STRATEGY =
-    0x404d396fc42e20d14585A1a10Cd64BDdC6C6574A;
+    0xaC63290BC16fBc33353b14f139cEf1c660ba56F0;
 
   address internal constant DPI_UNDERLYING = 0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b;
 
@@ -427,7 +427,7 @@ library AaveV2EthereumAssets {
   address internal constant FRAX_ORACLE = 0x14d04Fff8D21bd62987a5cE9ce543d2F1edF5D3E;
 
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
-    0xb0a73aC3B10980A598685d4631c83f5348F5D32c;
+    0x492dcEF1fc5253413fC5576B9522840a1A774DCe;
 
   address internal constant FEI_UNDERLYING = 0x956F47F50A910163D8BF957Cf5846D573E7f87CA;
 

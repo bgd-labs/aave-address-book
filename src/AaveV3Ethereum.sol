@@ -65,6 +65,8 @@ library AaveV3Ethereum {
     0x21714092D90c7265F52fdfDae068EC11a23C6248;
 
   address internal constant STATIC_A_TOKEN_FACTORY = 0x90b1255a76e847cC92d41C295DeD5Bf2D4F24B3d;
+
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778;
 }
 
 library AaveV3EthereumAssets {
@@ -105,7 +107,7 @@ library AaveV3EthereumAssets {
   address internal constant WBTC_ORACLE = 0x230E0321Cf38F09e247e50Afc7801EA2351fe56F;
 
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
-    0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
+    0x07Fa3744FeC271F80c2EA97679823F65c13CCDf4;
 
   address internal constant USDC_UNDERLYING = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
 
@@ -118,7 +120,7 @@ library AaveV3EthereumAssets {
   address internal constant USDC_ORACLE = 0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6;
 
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xD6293edBB2E5E0687a79F01BEcd51A778d59D1c5;
+    0x8F183Ee74C790CB558232a141099b316D6C8Ba6E;
 
   address internal constant DAI_UNDERLYING = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
 
@@ -182,7 +184,7 @@ library AaveV3EthereumAssets {
   address internal constant USDT_ORACLE = 0x3E7d1eAB13ad0104d2750B8863b489D65364e32D;
 
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0xdd1BAC6A713c5b0EC42bA39D0c5e4582975DE6D6;
+    0xC82dF96432346cFb632473eB619Db3B8AC280234;
 
   address internal constant rETH_UNDERLYING = 0xae78736Cd615f374D3085123A210448E74Fc6393;
 

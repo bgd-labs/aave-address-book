@@ -67,6 +67,8 @@ library AaveV3Avalanche {
     0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
 
   address internal constant STATIC_A_TOKEN_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
+
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5;
 }
 
 library AaveV3AvalancheAssets {
