@@ -105,7 +105,7 @@ library AaveV3ArbitrumAssets {
   address internal constant USDC_ORACLE = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
 
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+    0xd9d85499449f26d2A2c240defd75314f23920089;
 
   address internal constant WBTC_UNDERLYING = 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f;
 
@@ -118,7 +118,7 @@ library AaveV3ArbitrumAssets {
   address internal constant WBTC_ORACLE = 0x6ce185860a4963106506C203335A2910413708e9;
 
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
-    0x9b34E3e183c9b0d1a08fF57a8fb59c821616295f;
+    0x8F183Ee74C790CB558232a141099b316D6C8Ba6E;
 
   address internal constant WETH_UNDERLYING = 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1;
 
@@ -170,7 +170,7 @@ library AaveV3ArbitrumAssets {
   address internal constant EURS_ORACLE = 0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84;
 
   address internal constant EURS_INTEREST_RATE_STRATEGY =
-    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
+    0xCbDC7D7984D7AD59434f0B1999D2006898C40f9A;
 
   address internal constant wstETH_UNDERLYING = 0x5979D7b546E38E414F7E9822514be443A4800529;
 
