@@ -43,7 +43,7 @@ library AaveV3ScrollAlpha {
 
   address internal constant WETH_GATEWAY = 0x57ce905CfD7f986A929A26b006f797d181dB706e;
 
-  address internal constant FAUCET = 0x2F826FD1a0071476330a58dD1A9B36bcF7da832d;
+  address internal constant FAUCET = 0x357A307A8036D54b454BD15B3B1A0fE4B9e8A561;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0x6c68e975764a56e62AF3d1C8209F789779Eb763B;
 
