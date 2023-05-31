@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.24.0](https://github.com/bgd-labs/aave-address-book/compare/v1.23.1...v1.24.0) (2023-05-31)
+
+
+### Features
+
+* add stewards ([#130](https://github.com/bgd-labs/aave-address-book/issues/130)) ([12dd0be](https://github.com/bgd-labs/aave-address-book/commit/12dd0be929bed8023014aeeae9672ec840c69c99))
+* update Scroll Alpha faucet to fix mint bug ([#133](https://github.com/bgd-labs/aave-address-book/issues/133)) ([ae1c8df](https://github.com/bgd-labs/aave-address-book/commit/ae1c8dfdc6f560b03fce440082d7fcf895acf798))
+
+
+### Bug Fixes
+
+* aggregator interface ([#129](https://github.com/bgd-labs/aave-address-book/issues/129)) ([a32a855](https://github.com/bgd-labs/aave-address-book/commit/a32a855ede62b602063b81d6a68788bd86fd8f50))
+
 ### [1.23.1](https://github.com/bgd-labs/aave-address-book/compare/v1.23.0...v1.23.1) (2023-05-15)
 
 
