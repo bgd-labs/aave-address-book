@@ -109,7 +109,7 @@ library AaveV3AvalancheAssets {
   address internal constant USDC_ORACLE = 0xF096872672F44d6EBA71458D74fe67F9a77a23B9;
 
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
+    0xD624AFA34614B4fe7FEe7e1751a2E5E04fb47398;
 
   address internal constant WBTCe_UNDERLYING = 0x50b7545627a5162F82A992c33b87aDc75187B218;
 
@@ -122,7 +122,7 @@ library AaveV3AvalancheAssets {
   address internal constant WBTCe_ORACLE = 0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743;
 
   address internal constant WBTCe_INTEREST_RATE_STRATEGY =
-    0x79a906e8c998d2fb5C5D66d23c4c5416Fe0168D6;
+    0x354E84ec43aCD91e1C0135c3e691960E881DB4b7;
 
   address internal constant WETHe_UNDERLYING = 0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB;
 
