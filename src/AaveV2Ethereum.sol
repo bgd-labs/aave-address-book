@@ -78,7 +78,7 @@ library AaveV2EthereumAssets {
 
   address internal constant WBTC_S_TOKEN = 0x51B039b9AFE64B78758f8Ef091211b5387eA717c;
 
-  address internal constant WBTC_ORACLE = 0xdeb288F737066589598e9214E782fa5A8eD689e8;
+  address internal constant WBTC_ORACLE = 0xFD858c8bC5ac5e10f01018bC78471bb0DC392247;
 
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0x32f3A6134590fc2d9440663d35a2F0a6265F04c4;

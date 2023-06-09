@@ -16,7 +16,7 @@ library AaveV3Optimism {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77);
 
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+  address internal constant PRICE_ORACLE_SENTINEL = 0xB1ba0787Ca0A45f086F8CA03c97E7593636E47D5;
 
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xd9Ca4878dd38B021583c1B669905592EAe76E044);
@@ -192,7 +192,7 @@ library AaveV3OptimismAssets {
 
   address internal constant wstETH_S_TOKEN = 0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841;
 
-  address internal constant wstETH_ORACLE = 0x698B585CbC4407e2D54aa898B2600B53C68958f7;
+  address internal constant wstETH_ORACLE = 0x05225Cd708bCa9253789C1374e4337a019e99D56;
 
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0x6BA97468e2e6a3711a6DD05F0075d48E878c910e;

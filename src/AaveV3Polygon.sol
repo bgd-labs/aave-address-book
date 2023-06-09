@@ -292,7 +292,7 @@ library AaveV3PolygonAssets {
 
   address internal constant stMATIC_S_TOKEN = 0x1fFD28689DA7d0148ff0fCB669e9f9f0Fc13a219;
 
-  address internal constant stMATIC_ORACLE = 0x97371dF4492605486e23Da797fA68e55Fc38a13f;
+  address internal constant stMATIC_ORACLE = 0xEe96b77129cF54581B5a8FECCcC50A6A067034a1;
 
   address internal constant stMATIC_INTEREST_RATE_STRATEGY =
     0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
@@ -305,7 +305,7 @@ library AaveV3PolygonAssets {
 
   address internal constant MaticX_S_TOKEN = 0x62fC96b27a510cF4977B59FF952Dc32378Cc221d;
 
-  address internal constant MaticX_ORACLE = 0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403;
+  address internal constant MaticX_ORACLE = 0x0e1120524e14Bd7aD96Ea76A1b1dD699913e2a45;
 
   address internal constant MaticX_INTEREST_RATE_STRATEGY =
     0x6B434652E4C4e3e972f9F267982F05ae0fcc24b6;
