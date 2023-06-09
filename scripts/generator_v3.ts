@@ -16,7 +16,7 @@ import {
   getImplementationStorageSlot,
   sleep,
 } from './helpers';
-import {appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
+import {appendAssetsLibraryJs, appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
 
 export interface PoolV3WithAddresses extends Pool {
   pool: string;
@@ -279,4 +279,9 @@ export const CHAIN_ID = ${chainId};
 export const EMISSION_MANAGER = "${emissionManager}";
 ${generateAdditionalAddresses(additionalAddresses)}`;
   fs.writeFileSync(`./src/ts/${name}.ts`, templateV3Js);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}";\r\n`);
+
+  if (reservesData.length) {
+    appendAssetsLibraryJs(name, reservesData);
+  }
 }
