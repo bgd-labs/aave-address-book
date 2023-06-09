@@ -180,7 +180,7 @@ library AaveV3ArbitrumAssets {
 
   address internal constant wstETH_S_TOKEN = 0x08Cb71192985E936C7Cd166A8b268035e400c3c3;
 
-  address internal constant wstETH_ORACLE = 0x230E0321Cf38F09e247e50Afc7801EA2351fe56F;
+  address internal constant wstETH_ORACLE = 0x3105C276558Dd4cf7E7be71d73Be8D33bD18F211;
 
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0x4b8D3277d49E114C8F2D6E0B2eD310e29226fe16;
