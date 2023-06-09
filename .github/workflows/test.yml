@@ -1,4 +1,4 @@
-name: Head branch workflow
+name: Test
 
 concurrency:
   group: ${{ github.workflow }}

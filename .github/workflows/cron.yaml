@@ -42,7 +42,8 @@ jobs:
             git config --global user.name 'Cache bot'
             git config --global user.email 'cache-bot@bgdlabs.com'
             git add src
+            git checkout -b deps
             git commit -am "fix(cache): automated cache update"
-            git push
+            git push origin deps
           exit
           fi
