@@ -6,6 +6,9 @@
     "lib": "lib"
   },
   "private": false,
+  "files": [
+    "dist"
+  ],
   "main": "./dist/AaveAddressBook.js",
   "types": "./dist/AaveAddressBook.d.ts",
   "sideEffects": false,

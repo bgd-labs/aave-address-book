@@ -12,4 +12,5 @@ node_modules/
 # source
 scripts/
 .github/
+tsconfig.json
 # src/ not sure as for hardhat might be interesting
