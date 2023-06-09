@@ -67,6 +67,7 @@ library AaveV3MetisAssets {
   address internal constant mDAI_ORACLE = 0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1;
   address internal constant mDAI_INTEREST_RATE_STRATEGY =
     0x4a8de3E62B4a63905f62e56292ECdCfD3593d1c9;
+
   address internal constant Metis_UNDERLYING = 0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000;
   address internal constant Metis_A_TOKEN = 0x7314Ef2CA509490f65F52CC8FC9E0675C66390b8;
   address internal constant Metis_V_TOKEN = 0x0110174183e13D5Ea59D7512226c5D5A47bA2c40;
@@ -74,6 +75,7 @@ library AaveV3MetisAssets {
   address internal constant Metis_ORACLE = 0xD4a5Bb03B5D66d9bf81507379302Ac2C2DFDFa6D;
   address internal constant Metis_INTEREST_RATE_STRATEGY =
     0xfe8FF9a19E251fe6cf2e8cBf0959ACa9624A97d1;
+
   address internal constant mUSDC_UNDERLYING = 0xEA32A96608495e54156Ae48931A7c20f0dcc1a21;
   address internal constant mUSDC_A_TOKEN = 0x885C8AEC5867571582545F894A5906971dB9bf27;
   address internal constant mUSDC_V_TOKEN = 0x571171a7EF1e3c8c83d47EF1a50E225E9c351380;
@@ -81,6 +83,7 @@ library AaveV3MetisAssets {
   address internal constant mUSDC_ORACLE = 0x663855969c85F3BE415807250414Ca9129533a5f;
   address internal constant mUSDC_INTEREST_RATE_STRATEGY =
     0x3B88f83B2b0444F14B6fc904040F648206F551fc;
+
   address internal constant mUSDT_UNDERLYING = 0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC;
   address internal constant mUSDT_A_TOKEN = 0xd9fa75D14c26720d5ce7eE2530793a823e8f07b9;
   address internal constant mUSDT_V_TOKEN = 0x6B45DcE8aF4fE5Ab3bFCF030d8fB57718eAB54e5;
@@ -88,6 +91,7 @@ library AaveV3MetisAssets {
   address internal constant mUSDT_ORACLE = 0x51864b8948Aa5e35aace2BaDaF901D63418A3b9D;
   address internal constant mUSDT_INTEREST_RATE_STRATEGY =
     0x5A1bdAc4eBa2A70D465ef4aDd2f68dBBae183454;
+
   address internal constant WETH_UNDERLYING = 0x420000000000000000000000000000000000000A;
   address internal constant WETH_A_TOKEN = 0x8acAe35059C9aE27709028fF6689386a44c09f3a;
   address internal constant WETH_V_TOKEN = 0x8Bb19e3DD277a73D4A95EE434F14cE4B92898421;

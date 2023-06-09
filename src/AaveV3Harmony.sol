@@ -61,6 +61,7 @@ library AaveV3HarmonyAssets {
   address internal constant ONE_DAI_ORACLE = 0xF8326D22b2CaFF4880115E92161c324AbC5e0395;
   address internal constant ONE_DAI_INTEREST_RATE_STRATEGY =
     0xfab05a6aF585da2F96e21452F91E812452996BD3;
+
   address internal constant LINK_UNDERLYING = 0x218532a12a389a4a92fC0C5Fb22901D1c19198aA;
   address internal constant LINK_A_TOKEN = 0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530;
   address internal constant LINK_V_TOKEN = 0x953A573793604aF8d41F306FEb8274190dB4aE0e;
@@ -68,6 +69,7 @@ library AaveV3HarmonyAssets {
   address internal constant LINK_ORACLE = 0xD54F119D10901b4509610eA259A63169647800C4;
   address internal constant LINK_INTEREST_RATE_STRATEGY =
     0x145dE30c929a065582da84Cf96F88460dB9745A7;
+
   address internal constant ONE_USDC_UNDERLYING = 0x985458E523dB3d53125813eD68c274899e9DfAb4;
   address internal constant ONE_USDC_A_TOKEN = 0x625E7708f30cA75bfd92586e17077590C60eb4cD;
   address internal constant ONE_USDC_V_TOKEN = 0xFCCf3cAbbe80101232d343252614b6A3eE81C989;
@@ -75,6 +77,7 @@ library AaveV3HarmonyAssets {
   address internal constant ONE_USDC_ORACLE = 0xA45A41be2D8419B60A6CE2Bc393A0B086b8B3bda;
   address internal constant ONE_USDC_INTEREST_RATE_STRATEGY =
     0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
+
   address internal constant ONE_WBTC_UNDERLYING = 0x3095c7557bCb296ccc6e363DE01b760bA031F2d9;
   address internal constant ONE_WBTC_A_TOKEN = 0x078f358208685046a11C85e8ad32895DED33A249;
   address internal constant ONE_WBTC_V_TOKEN = 0x92b42c66840C7AD907b4BF74879FF3eF7c529473;
@@ -82,6 +85,7 @@ library AaveV3HarmonyAssets {
   address internal constant ONE_WBTC_ORACLE = 0x3C41439Eb1bF3BA3b2C3f8C921088b267f8d11f4;
   address internal constant ONE_WBTC_INTEREST_RATE_STRATEGY =
     0xb023e699F5a33916Ea823A16485e259257cA8Bd1;
+
   address internal constant ONE_ETH_UNDERLYING = 0x6983D1E6DEf3690C4d616b13597A09e6193EA013;
   address internal constant ONE_ETH_A_TOKEN = 0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8;
   address internal constant ONE_ETH_V_TOKEN = 0x0c84331e39d6658Cd6e6b9ba04736cC4c4734351;
@@ -89,6 +93,7 @@ library AaveV3HarmonyAssets {
   address internal constant ONE_ETH_ORACLE = 0xbaf7C8149D586055ed02c286367A41E0aDA96b7C;
   address internal constant ONE_ETH_INTEREST_RATE_STRATEGY =
     0xb023e699F5a33916Ea823A16485e259257cA8Bd1;
+
   address internal constant ONE_USDT_UNDERLYING = 0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f;
   address internal constant ONE_USDT_A_TOKEN = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
   address internal constant ONE_USDT_V_TOKEN = 0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7;
@@ -96,6 +101,7 @@ library AaveV3HarmonyAssets {
   address internal constant ONE_USDT_ORACLE = 0x5CaAeBE5C69a8287bffB9d00b5231bf7254145bf;
   address internal constant ONE_USDT_INTEREST_RATE_STRATEGY =
     0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
+
   address internal constant ONE_AAVE_UNDERLYING = 0xcF323Aad9E522B93F11c352CaA519Ad0E14eB40F;
   address internal constant ONE_AAVE_A_TOKEN = 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375;
   address internal constant ONE_AAVE_V_TOKEN = 0xE80761Ea617F66F96274eA5e8c37f03960ecC679;
@@ -103,6 +109,7 @@ library AaveV3HarmonyAssets {
   address internal constant ONE_AAVE_ORACLE = 0x6EE1EfCCe688D5B79CB8a400870AF471c5282992;
   address internal constant ONE_AAVE_INTEREST_RATE_STRATEGY =
     0xb023e699F5a33916Ea823A16485e259257cA8Bd1;
+
   address internal constant WONE_UNDERLYING = 0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a;
   address internal constant WONE_A_TOKEN = 0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97;
   address internal constant WONE_V_TOKEN = 0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8;

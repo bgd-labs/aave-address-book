@@ -6,6 +6,7 @@ export const AaveV3OptimismGoerliAssets_DAI_S_TOKEN = '0x68D2a5be0A4d0Fd6B4e3d2f
 export const AaveV3OptimismGoerliAssets_DAI_ORACLE = '0xfAe9463b2dEf2AbAF908d0697e7CCEe0407185f1';
 export const AaveV3OptimismGoerliAssets_DAI_INTEREST_RATE_STRATEGY =
   '0x62527eDa8EC3E3a0ff8DcbA4625fA2dce5829da6';
+
 export const AaveV3OptimismGoerliAssets_LINK_UNDERLYING =
   '0x14cd1A7b8c547bD4A2f531ba1BF11B6c4f2b96db';
 export const AaveV3OptimismGoerliAssets_LINK_A_TOKEN = '0x29C81A0F7791733E99EC723D30C4f5d77dd5740C';
@@ -14,6 +15,7 @@ export const AaveV3OptimismGoerliAssets_LINK_S_TOKEN = '0x540346baF4b1eBf176673a
 export const AaveV3OptimismGoerliAssets_LINK_ORACLE = '0x5A04220725D3479A910c9712159b576A19947eC9';
 export const AaveV3OptimismGoerliAssets_LINK_INTEREST_RATE_STRATEGY =
   '0x32BB31484151627da35C460c60f6Bb309cAdA06e';
+
 export const AaveV3OptimismGoerliAssets_USDC_UNDERLYING =
   '0xcbce2891F86b69b3eF61dF8CE69e3522a0483FB3';
 export const AaveV3OptimismGoerliAssets_USDC_A_TOKEN = '0x1FE5C2C6e1e0207D0Bd5Ee7B8C83b7c5e51D5e49';
@@ -22,6 +24,7 @@ export const AaveV3OptimismGoerliAssets_USDC_S_TOKEN = '0x80b54134B96C9C27169950
 export const AaveV3OptimismGoerliAssets_USDC_ORACLE = '0x6ADC023eEDbD7d55809b7f021425415FF7e4B3dB';
 export const AaveV3OptimismGoerliAssets_USDC_INTEREST_RATE_STRATEGY =
   '0x3A1ED60315BEF296ad37CcFc01fA4698C7F31f73';
+
 export const AaveV3OptimismGoerliAssets_WBTC_UNDERLYING =
   '0xe786Ce31c4c68B1aa004fCed5066775a788993CB';
 export const AaveV3OptimismGoerliAssets_WBTC_A_TOKEN = '0x1eEC581e03B87a1C1B2c2900d0d83FF39eA4e240';
@@ -30,6 +33,7 @@ export const AaveV3OptimismGoerliAssets_WBTC_S_TOKEN = '0xD32dFf72F217a56e2d1E36
 export const AaveV3OptimismGoerliAssets_WBTC_ORACLE = '0x3d14c2Bb0C02A992046217283768109d800a2423';
 export const AaveV3OptimismGoerliAssets_WBTC_INTEREST_RATE_STRATEGY =
   '0x32BB31484151627da35C460c60f6Bb309cAdA06e';
+
 export const AaveV3OptimismGoerliAssets_WETH_UNDERLYING =
   '0xc5Bf9eb35c7d3a90816436E2a124bdd136e09fFD';
 export const AaveV3OptimismGoerliAssets_WETH_A_TOKEN = '0xF8793d992E2f4De3Eaf7cE65c71e81Bcc0f235Af';
@@ -38,6 +42,7 @@ export const AaveV3OptimismGoerliAssets_WETH_S_TOKEN = '0xa9D767984631B9C3EE28b4
 export const AaveV3OptimismGoerliAssets_WETH_ORACLE = '0x22437f5745838DBea26Aa3c439cC137fc5C2E56F';
 export const AaveV3OptimismGoerliAssets_WETH_INTEREST_RATE_STRATEGY =
   '0x32BB31484151627da35C460c60f6Bb309cAdA06e';
+
 export const AaveV3OptimismGoerliAssets_USDT_UNDERLYING =
   '0x8a06022A41B6b64dAefC68260371472fcB351081';
 export const AaveV3OptimismGoerliAssets_USDT_A_TOKEN = '0x93439F0BF30Bd85385087068dd9D958Dcb9f32d5';
@@ -46,6 +51,7 @@ export const AaveV3OptimismGoerliAssets_USDT_S_TOKEN = '0x73b3AE5A8316223560E3dC
 export const AaveV3OptimismGoerliAssets_USDT_ORACLE = '0x0707F6C1B4281EB5580bec1dA1cEa2ddAb6E91e6';
 export const AaveV3OptimismGoerliAssets_USDT_INTEREST_RATE_STRATEGY =
   '0x3A1ED60315BEF296ad37CcFc01fA4698C7F31f73';
+
 export const AaveV3OptimismGoerliAssets_AAVE_UNDERLYING =
   '0x7B16EB8CE4143B1bEA183082E1D50e7519980F79';
 export const AaveV3OptimismGoerliAssets_AAVE_A_TOKEN = '0x3A94d605ebC265Aa57Ce6dD01dD532dceeb5Cd87';
@@ -54,6 +60,7 @@ export const AaveV3OptimismGoerliAssets_AAVE_S_TOKEN = '0xF133c5B244c95f108b549C
 export const AaveV3OptimismGoerliAssets_AAVE_ORACLE = '0x443C1A5D8d2C5E87d7d1Cc9BB21Dbb2787BE5dD0';
 export const AaveV3OptimismGoerliAssets_AAVE_INTEREST_RATE_STRATEGY =
   '0x32BB31484151627da35C460c60f6Bb309cAdA06e';
+
 export const AaveV3OptimismGoerliAssets_SUSD_UNDERLYING =
   '0x4f8758F0e15d62426D36cA6c08f6b30ab678cEC7';
 export const AaveV3OptimismGoerliAssets_SUSD_A_TOKEN = '0xDFABA2957a78f91dadd1F467059EaeaD01c0B0A7';

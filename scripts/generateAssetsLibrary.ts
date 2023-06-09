@@ -74,7 +74,7 @@ export function appendAssetsLibrarySol(name: string, reserves: ReserveData[]) {
           address internal constant ${symbol}_ORACLE = ${reserve.priceOracle};
           address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${reserve.interestRateStrategyAddress};`;
       })
-      .join('\n')}
+      .join('\n\n')}
     }
   `;
   fs.appendFileSync(`./src/${name}.sol`, templateV3Assets);
@@ -96,7 +96,7 @@ export function appendAssetsLibraryJs(name: string, reserves: ReserveData[]) {
           export const ${name}Assets_${symbol}_ORACLE = "${reserve.priceOracle}";
           export const ${name}Assets_${symbol}_INTEREST_RATE_STRATEGY = "${reserve.interestRateStrategyAddress}";`;
     })
-    .join('\n');
+    .join('\n\n');
   fs.writeFileSync(`./src/ts/${name}Assets.ts`, templateV3Assets);
   fs.appendFileSync(
     `./src/ts/AaveAddressBook.ts`,

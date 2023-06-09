@@ -6,6 +6,7 @@ export const AaveV3ArbitrumGoerliAssets_DAI_S_TOKEN = '0x2411E8B87BeC832a9ff3C65
 export const AaveV3ArbitrumGoerliAssets_DAI_ORACLE = '0x04dD9334B4Ad4d2F0b951f7f51fB109E7fB01f1d';
 export const AaveV3ArbitrumGoerliAssets_DAI_INTEREST_RATE_STRATEGY =
   '0x1Cec5527d9C7513a9e06BC54e107d286E62fa75F';
+
 export const AaveV3ArbitrumGoerliAssets_LINK_UNDERLYING =
   '0x56033E114c61183590d39BA847400F02022Ebe47';
 export const AaveV3ArbitrumGoerliAssets_LINK_A_TOKEN = '0x0da29C753f866f2E751167f38EE093C70fB1683C';
@@ -14,6 +15,7 @@ export const AaveV3ArbitrumGoerliAssets_LINK_S_TOKEN = '0x8E0aC61ad093555055d081
 export const AaveV3ArbitrumGoerliAssets_LINK_ORACLE = '0xEAFc1f877975232727a2775BfbDe9396891B67F7';
 export const AaveV3ArbitrumGoerliAssets_LINK_INTEREST_RATE_STRATEGY =
   '0x70488f326010c740f4DfAF4Fe1aD94969aCb7Af4';
+
 export const AaveV3ArbitrumGoerliAssets_USDC_UNDERLYING =
   '0x72A9c57cD5E2Ff20450e409cF6A542f1E6c710fc';
 export const AaveV3ArbitrumGoerliAssets_USDC_A_TOKEN = '0xd9933e10d6d9453FFaCF1236aF7ea1a61EA4D2c5';
@@ -22,6 +24,7 @@ export const AaveV3ArbitrumGoerliAssets_USDC_S_TOKEN = '0x51B9bb42Bebe98774277Bb
 export const AaveV3ArbitrumGoerliAssets_USDC_ORACLE = '0xA0b016F750490B91F5Ba7e31e6e7fcCd5aE6d42A';
 export const AaveV3ArbitrumGoerliAssets_USDC_INTEREST_RATE_STRATEGY =
   '0xEaC5EbD74Ff5111E18eBc0bbFCc8eA5786685D5A';
+
 export const AaveV3ArbitrumGoerliAssets_WBTC_UNDERLYING =
   '0xD2f5680976c86ADd3978b7ad3422Ee5c7690ddb4';
 export const AaveV3ArbitrumGoerliAssets_WBTC_A_TOKEN = '0xa6133BaA380826F716cAa419240a353B58d545A2';
@@ -30,6 +33,7 @@ export const AaveV3ArbitrumGoerliAssets_WBTC_S_TOKEN = '0xb2b7b68e4A69dBBD9e82fa
 export const AaveV3ArbitrumGoerliAssets_WBTC_ORACLE = '0x33243c56Da27b872Df10Ed25Bf7b19454daf492E';
 export const AaveV3ArbitrumGoerliAssets_WBTC_INTEREST_RATE_STRATEGY =
   '0x70488f326010c740f4DfAF4Fe1aD94969aCb7Af4';
+
 export const AaveV3ArbitrumGoerliAssets_WETH_UNDERLYING =
   '0xb83C277172198E8Ec6b841Ff9bEF2d7fa524f797';
 export const AaveV3ArbitrumGoerliAssets_WETH_A_TOKEN = '0xBA3a852aDB46C8AD31A03397CD22b2E896625548';
@@ -38,6 +42,7 @@ export const AaveV3ArbitrumGoerliAssets_WETH_S_TOKEN = '0xc33F04D3052808730b7D3a
 export const AaveV3ArbitrumGoerliAssets_WETH_ORACLE = '0xacc654E338cAd72475f6B1495D5C12A114F341fe';
 export const AaveV3ArbitrumGoerliAssets_WETH_INTEREST_RATE_STRATEGY =
   '0x70488f326010c740f4DfAF4Fe1aD94969aCb7Af4';
+
 export const AaveV3ArbitrumGoerliAssets_USDT_UNDERLYING =
   '0x8F30ec9Fb348513494cCC1710528E744Efa71003';
 export const AaveV3ArbitrumGoerliAssets_USDT_A_TOKEN = '0xF62eA0cAcbC414f0D442F98C850044Ece4c4b10A';
@@ -46,6 +51,7 @@ export const AaveV3ArbitrumGoerliAssets_USDT_S_TOKEN = '0x2aa9c410145CDb3c22A187
 export const AaveV3ArbitrumGoerliAssets_USDT_ORACLE = '0xe460babCe2c3B02364C1F1ec14bbA002860319F8';
 export const AaveV3ArbitrumGoerliAssets_USDT_INTEREST_RATE_STRATEGY =
   '0xEaC5EbD74Ff5111E18eBc0bbFCc8eA5786685D5A';
+
 export const AaveV3ArbitrumGoerliAssets_AAVE_UNDERLYING =
   '0xC481B290d55E4866DA8b543685deD142A6170636';
 export const AaveV3ArbitrumGoerliAssets_AAVE_A_TOKEN = '0x3DD09707E1017A449343120C6424B029CBC76356';
@@ -54,6 +60,7 @@ export const AaveV3ArbitrumGoerliAssets_AAVE_S_TOKEN = '0x568D3db42a5A4935cEF1a8
 export const AaveV3ArbitrumGoerliAssets_AAVE_ORACLE = '0xCDB7e57F7E2b6902A677315D8D4309A11631BbB8';
 export const AaveV3ArbitrumGoerliAssets_AAVE_INTEREST_RATE_STRATEGY =
   '0x70488f326010c740f4DfAF4Fe1aD94969aCb7Af4';
+
 export const AaveV3ArbitrumGoerliAssets_EURS_UNDERLYING =
   '0xe898C3C5185C35c00b5eaBea4713E2dBadD82879';
 export const AaveV3ArbitrumGoerliAssets_EURS_A_TOKEN = '0xb79438f6263a9f68BE57a7EDb0CD5AFC405bF80d';
