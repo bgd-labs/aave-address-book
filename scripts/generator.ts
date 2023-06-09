@@ -6,11 +6,7 @@ import {fetchPoolV3Addresses, writeV3Templates} from './generator_v3';
 
 async function generateV2Pools(pools: Pool[]) {
   const generatedPools = await Promise.allSettled(
-    pools.map(async (pool) => {
-      const addresses = await fetchPoolV2Addresses(pool);
-      await writeV2Templates(addresses);
-      return addresses;
-    })
+    pools.map(async (pool) => fetchPoolV2Addresses(pool))
   );
 
   const failedPools = generatedPools.filter((promise) => promise.status === 'rejected');
@@ -30,16 +26,12 @@ async function generateV2Pools(pools: Pool[]) {
     throw new Error('Some pools where not properly generated');
   }
 
-  return generatedPools.map((m: any) => m.value);
+  return generatedPools.map((m: any) => m.value).map((addresses) => writeV2Templates(addresses));
 }
 
 async function generateV3Pools(pools: Pool[]) {
   const generatedPools = await Promise.allSettled(
-    pools.map(async (pool) => {
-      const addresses = await fetchPoolV3Addresses(pool);
-      await writeV3Templates(addresses);
-      return addresses;
-    })
+    pools.map(async (pool) => fetchPoolV3Addresses(pool))
   );
 
   const failedPools = generatedPools.filter((promise) => promise.status === 'rejected');
@@ -59,7 +51,7 @@ async function generateV3Pools(pools: Pool[]) {
     throw new Error('Some pools where not properly generated');
   }
 
-  return generatedPools.map((m: any) => m.value);
+  generatedPools.map((m: any) => m.value).map((addresses) => writeV3Templates(addresses));
 }
 
 async function generatePools() {
