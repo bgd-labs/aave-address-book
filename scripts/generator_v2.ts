@@ -7,7 +7,7 @@ import aTokenV2ABI from './abi/aToken_v2_abi.json';
 import uipooldataProviderABI from './abi/uipooldata_provider.json';
 import incentivesControllerABI from './abi/incentivesController_abi.json';
 import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers';
-import {appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
+import {appendAssetsLibraryJs, appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
 
 export interface PoolV2WithAddresses extends Pool {
   lendingPool: string;
@@ -194,4 +194,9 @@ export const EMISSION_MANAGER = "${emissionManager}";
 export const CHAIN_ID = ${chainId};
 ${generateAdditionalAddresses(additionalAddresses)}`;
   fs.writeFileSync(`./src/ts/${name}.ts`, templateV2Js);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}";\r\n`);
+
+  if (reservesData.length) {
+    appendAssetsLibraryJs(name, reservesData);
+  }
 }

@@ -67,15 +67,39 @@ export function appendAssetsLibrarySol(name: string, reserves: ReserveData[]) {
     ${reserves
       .map((reserve) => {
         const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
-        return `address internal constant ${symbol}_UNDERLYING = ${reserve.underlyingAsset};\n
-          address internal constant ${symbol}_A_TOKEN = ${reserve.aTokenAddress};\n
-          address internal constant ${symbol}_V_TOKEN = ${reserve.variableDebtTokenAddress};\n
-          address internal constant ${symbol}_S_TOKEN = ${reserve.stableDebtTokenAddress};\n
-          address internal constant ${symbol}_ORACLE = ${reserve.priceOracle};\n
-          address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${reserve.interestRateStrategyAddress};\n\n`;
+        return `address internal constant ${symbol}_UNDERLYING = ${reserve.underlyingAsset};
+          address internal constant ${symbol}_A_TOKEN = ${reserve.aTokenAddress};
+          address internal constant ${symbol}_V_TOKEN = ${reserve.variableDebtTokenAddress};
+          address internal constant ${symbol}_S_TOKEN = ${reserve.stableDebtTokenAddress};
+          address internal constant ${symbol}_ORACLE = ${reserve.priceOracle};
+          address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${reserve.interestRateStrategyAddress};`;
       })
-      .join('')}
+      .join('\n')}
     }
   `;
   fs.appendFileSync(`./src/${name}.sol`, templateV3Assets);
+}
+
+/**
+ * While not necessarily pretty, the js exports are flat on purpose as tree-shaking doesn't work well with object properties
+ * @param name
+ * @param reserves
+ */
+export function appendAssetsLibraryJs(name: string, reserves: ReserveData[]) {
+  const templateV3Assets = reserves
+    .map((reserve) => {
+      const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
+      return `export const ${name}Assets_${symbol}_UNDERLYING = "${reserve.underlyingAsset}";
+          export const ${name}Assets_${symbol}_A_TOKEN = "${reserve.aTokenAddress}";
+          export const ${name}Assets_${symbol}_V_TOKEN = "${reserve.variableDebtTokenAddress}";
+          export const ${name}Assets_${symbol}_S_TOKEN = "${reserve.stableDebtTokenAddress}";
+          export const ${name}Assets_${symbol}_ORACLE = "${reserve.priceOracle}";
+          export const ${name}Assets_${symbol}_INTEREST_RATE_STRATEGY = "${reserve.interestRateStrategyAddress}";`;
+    })
+    .join('\n');
+  fs.writeFileSync(`./src/ts/${name}Assets.ts`, templateV3Assets);
+  fs.appendFileSync(
+    `./src/ts/AaveAddressBook.ts`,
+    `export * as ${name}Assets from "./${name}Assets";\r\n`
+  );
 }
