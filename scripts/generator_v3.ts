@@ -1,12 +1,12 @@
 import {ethers} from 'ethers';
-import {Pool} from './config';
+import {Pool} from './config.js';
 import fs from 'fs';
-import addressProviderV3ABI from './abi/address_provider_v3_abi.json';
-import aTokenV3ABI from './abi/aToken_v3_abi.json';
-import stableDebtTokenV3ABI from './abi/stableDebtToken_v3_abi.json';
-import variableDebtTokenV3ABI from './abi/variableDebtToken_v3_abi.json';
-import rewardsControllerABI from './abi/rewardsController_v3_abi.json';
-import uipooldataProviderABI from './abi/uipooldata_provider.json';
+import addressProviderV3ABI from './abi/address_provider_v3_abi.json' assert {type: 'json'};
+import aTokenV3ABI from './abi/aToken_v3_abi.json' assert {type: 'json'};
+import stableDebtTokenV3ABI from './abi/stableDebtToken_v3_abi.json' assert {type: 'json'};
+import variableDebtTokenV3ABI from './abi/variableDebtToken_v3_abi.json' assert {type: 'json'};
+import rewardsControllerABI from './abi/rewardsController_v3_abi.json' assert {type: 'json'};
+import uipooldataProviderABI from './abi/uipooldata_provider.json' assert {type: 'json'};
 import {
   ZERO_ADDRESS,
   addressOrZero,
@@ -15,8 +15,12 @@ import {
   generateAdditionalAddressesSol,
   getImplementationStorageSlot,
   sleep,
-} from './helpers';
-import {appendAssetsLibraryJs, appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
+} from './helpers.js';
+import {
+  appendAssetsLibraryJs,
+  appendAssetsLibrarySol,
+  ReserveData,
+} from './generateAssetsLibrary.js';
 
 export interface PoolV3WithAddresses extends Pool {
   pool: string;
@@ -279,7 +283,7 @@ export const CHAIN_ID = ${chainId};
 export const EMISSION_MANAGER = "${emissionManager}";
 ${generateAdditionalAddresses(additionalAddresses)}`;
   fs.writeFileSync(`./src/ts/${name}.ts`, templateV3Js);
-  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}";\r\n`);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}.js";\r\n`);
 
   if (reservesData.length) {
     appendAssetsLibraryJs(name, reservesData);

@@ -1,5 +1,5 @@
 import {ethers, utils} from 'ethers';
-import {Pool} from './config';
+import {Pool} from './config.js';
 
 export const bytes32toAddress = (bytes32: string) => {
   return utils.getAddress(`0x${bytes32.slice(26)}`);

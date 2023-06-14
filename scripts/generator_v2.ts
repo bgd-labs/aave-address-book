@@ -1,13 +1,17 @@
 import {ethers} from 'ethers';
-import {Pool} from './config';
+import {Pool} from './config.js';
 import fs from 'fs';
-import addressProviderV2ABI from './abi/address_provider_v2_abi.json';
-import lendingPoolV2ABI from './abi/lending_pool_v2_abi.json';
-import aTokenV2ABI from './abi/aToken_v2_abi.json';
-import uipooldataProviderABI from './abi/uipooldata_provider.json';
-import incentivesControllerABI from './abi/incentivesController_abi.json';
-import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers';
-import {appendAssetsLibraryJs, appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
+import addressProviderV2ABI from './abi/address_provider_v2_abi.json' assert {type: 'json'};
+import lendingPoolV2ABI from './abi/lending_pool_v2_abi.json' assert {type: 'json'};
+import aTokenV2ABI from './abi/aToken_v2_abi.json' assert {type: 'json'};
+import uipooldataProviderABI from './abi/uipooldata_provider.json' assert {type: 'json'};
+import incentivesControllerABI from './abi/incentivesController_abi.json' assert {type: 'json'};
+import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers.js';
+import {
+  appendAssetsLibraryJs,
+  appendAssetsLibrarySol,
+  ReserveData,
+} from './generateAssetsLibrary.js';
 
 export interface PoolV2WithAddresses extends Pool {
   lendingPool: string;
@@ -194,7 +198,7 @@ export const EMISSION_MANAGER = "${emissionManager}";
 export const CHAIN_ID = ${chainId};
 ${generateAdditionalAddresses(additionalAddresses)}`;
   fs.writeFileSync(`./src/ts/${name}.ts`, templateV2Js);
-  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}";\r\n`);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}.js";\r\n`);
 
   if (reservesData.length) {
     appendAssetsLibraryJs(name, reservesData);

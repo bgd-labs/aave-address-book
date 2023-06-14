@@ -23,18 +23,18 @@ export enum ChainId {
 }
 
 const RPC_PROVIDERS = {
-  [ChainId.mainnet]: 'https://rpc.flashbots.net',
+  [ChainId.mainnet]: 'https://eth.llamarpc.com',
   [ChainId.goerli]: 'https://eth-goerli.public.blastapi.io',
   [ChainId.mumbai]: 'https://polygon-testnet.public.blastapi.io',
-  [ChainId.polygon]: 'https://polygon-rpc.com',
-  [ChainId.fuji]: 'https://api.avax-test.network/ext/bc/C/rpc',
+  [ChainId.polygon]: 'https://rpc.ankr.com/polygon',
+  [ChainId.fuji]: 'https://endpoints.omniatech.io/v1/avax/fuji/public',
   [ChainId.avalanche]: 'https://api.avax.network/ext/bc/C/rpc',
   [ChainId.arbitrum_one]: 'https://arb1.arbitrum.io/rpc',
   [ChainId.arbitrum_goerli]: 'https://goerli-rollup.arbitrum.io/rpc',
   [ChainId.harmony]: 'https://api.s0.t.hmny.io',
   [ChainId.optimism]: 'https://optimism-mainnet.public.blastapi.io',
   [ChainId.optimism_goerli]: 'https://goerli.optimism.io',
-  [ChainId.fantom]: 'https://rpc.ftm.tools',
+  [ChainId.fantom]: 'https://1rpc.io/ftm',
   [ChainId.fantom_testnet]: 'https://rpc.ankr.com/fantom_testnet',
   [ChainId.sepolia]: 'https://rpc.sepolia.org/',
   [ChainId.scroll_alpha]: 'https://alpha-rpc.scroll.io/l2',
