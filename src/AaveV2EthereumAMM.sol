@@ -47,6 +47,8 @@ library AaveV2EthereumAMM {
   address internal constant UI_POOL_DATA_PROVIDER = 0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A;
 
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xD01ab9a6577E1D84F142e44D49380e23A340387d;
+
+  address internal constant MIGRATION_HELPER = 0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a;
 }
 
 library AaveV2EthereumAMMAssets {
