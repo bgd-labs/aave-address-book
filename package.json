@@ -23,7 +23,7 @@
     "prettier": "prettier --write 'src/**/*.{sol,ts}'",
     "generate": "ts-node scripts/generator.ts && npm run prettier",
     "build": "tsup",
-    "ci:publish": "npm run build:js && npm publish --access=public"
+    "ci:publish": "npm run build && npm publish --access=public"
   },
   "repository": {
     "type": "git",
