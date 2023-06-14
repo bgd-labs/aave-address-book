@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.25.0](https://github.com/bgd-labs/aave-address-book/compare/v1.24.0...v1.25.0) (2023-06-14)
+
+
+### Features
+
+* add amm migration helper ([#140](https://github.com/bgd-labs/aave-address-book/issues/140)) ([870947b](https://github.com/bgd-labs/aave-address-book/commit/870947b8e6f2826f0496d44828cf3ed96067aa18))
+* added v2 config engine and v2 rates factories ([#135](https://github.com/bgd-labs/aave-address-book/issues/135)) ([9c5828a](https://github.com/bgd-labs/aave-address-book/commit/9c5828aa6f428a40f3ff72be6399eca7575a3697))
+* js assets ([#137](https://github.com/bgd-labs/aave-address-book/issues/137)) ([f9e5726](https://github.com/bgd-labs/aave-address-book/commit/f9e572698a2b1881e4611fb1da2d3a9d6fca9b1b))
+
+
+### Bug Fixes
+
+* cron pr creation ([aa2fd17](https://github.com/bgd-labs/aave-address-book/commit/aa2fd17458eb832f64c20856aee9cb60f62051c5))
+* give content write permissions ([376f888](https://github.com/bgd-labs/aave-address-book/commit/376f888e055b02ce7b2e52acb25ef1da3d8f4e78))
+* make export order deterministic ([85811c7](https://github.com/bgd-labs/aave-address-book/commit/85811c7f67f90ac5f726da76aa80c3f08d77216f))
+* try to fix ci ([c89fdd5](https://github.com/bgd-labs/aave-address-book/commit/c89fdd5ba038ae96dec71d24f20fd31752a8dc5a))
+
 ## [1.24.0](https://github.com/bgd-labs/aave-address-book/compare/v1.23.1...v1.24.0) (2023-05-31)
 
 
