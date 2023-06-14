@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.26.1](https://github.com/bgd-labs/aave-address-book/compare/v1.26.0...v1.26.1) (2023-06-14)
+
+
+### Bug Fixes
+
+* properly emit js extensions ([#144](https://github.com/bgd-labs/aave-address-book/issues/144)) ([a7602cd](https://github.com/bgd-labs/aave-address-book/commit/a7602cdf84d4f54b345a382f5379f66f4dd1e91e))
+
 ## [1.26.0](https://github.com/bgd-labs/aave-address-book/compare/v1.25.0...v1.26.0) (2023-06-14)
 
 
