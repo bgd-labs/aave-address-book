@@ -12,10 +12,10 @@
   "main": "./dist/AaveAddressBook.js",
   "types": "./dist/AaveAddressBook.d.ts",
   "exports": {
-    "default": "./dist/AaveAddressBook.cjs",
     "require": "./dist/AaveAddressBook.cjs",
-    "node": "./dist/AaveAddressBook.cjs",
-    "imports": "./dist/AaveAddressBook.js"
+    "node": "./dist/AaveAddressBook.js",
+    "imports": "./dist/AaveAddressBook.js",
+    "default": "./dist/AaveAddressBook.cjs"
   },
   "sideEffects": false,
   "type": "module",
