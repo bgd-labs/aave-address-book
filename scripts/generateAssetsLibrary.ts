@@ -100,6 +100,6 @@ export function appendAssetsLibraryJs(name: string, reserves: ReserveData[]) {
   fs.writeFileSync(`./src/ts/${name}Assets.ts`, templateV3Assets);
   fs.appendFileSync(
     `./src/ts/AaveAddressBook.ts`,
-    `export * as ${name}Assets from "./${name}Assets";\r\n`
+    `export * as ${name}Assets from "./${name}Assets.js";\r\n`
   );
 }
