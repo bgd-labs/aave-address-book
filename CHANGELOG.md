@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.26.0](https://github.com/bgd-labs/aave-address-book/compare/v1.25.0...v1.26.0) (2023-06-14)
+
+
+### Features
+
+* provide 'iife', 'cjs', 'esm' module entry points ([#142](https://github.com/bgd-labs/aave-address-book/issues/142)) ([1c87b61](https://github.com/bgd-labs/aave-address-book/commit/1c87b618796b9c5db69b711e70e8364c3980c0e8))
+
 ## [1.25.0](https://github.com/bgd-labs/aave-address-book/compare/v1.24.0...v1.25.0) (2023-06-14)
 
 
