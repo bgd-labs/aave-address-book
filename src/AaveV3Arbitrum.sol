@@ -146,4 +146,12 @@ library AaveV3ArbitrumAssets {
   address internal constant MAI_S_TOKEN = 0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841;
   address internal constant MAI_ORACLE = 0x59644ec622243878d1464A9504F9e9a31294128a;
   address internal constant MAI_INTEREST_RATE_STRATEGY = 0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E;
+
+  address internal constant rETH_UNDERLYING = 0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8;
+  address internal constant rETH_A_TOKEN = 0x8Eb270e296023E9D92081fdF967dDd7878724424;
+  address internal constant rETH_V_TOKEN = 0xCE186F6Cccb0c955445bb9d10C59caE488Fea559;
+  address internal constant rETH_S_TOKEN = 0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc;
+  address internal constant rETH_ORACLE = 0x04c28D6fE897859153eA753f986cc249Bf064f71;
+  address internal constant rETH_INTEREST_RATE_STRATEGY =
+    0xC82dF96432346cFb632473eB619Db3B8AC280234;
 }
