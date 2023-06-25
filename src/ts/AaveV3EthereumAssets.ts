@@ -10,7 +10,7 @@ export const AaveV3EthereumAssets_wstETH_UNDERLYING = '0x7f39C581F595B53c5cb19bD
 export const AaveV3EthereumAssets_wstETH_A_TOKEN = '0x0B925eD163218f6662a35e0f0371Ac234f9E9371';
 export const AaveV3EthereumAssets_wstETH_V_TOKEN = '0xC96113eED8cAB59cD8A66813bCB0cEb29F06D2e4';
 export const AaveV3EthereumAssets_wstETH_S_TOKEN = '0x39739943199c0fBFe9E5f1B5B160cd73a64CB85D';
-export const AaveV3EthereumAssets_wstETH_ORACLE = '0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45';
+export const AaveV3EthereumAssets_wstETH_ORACLE = '0x8B6851156023f4f5A66F68BEA80851c3D905Ac93';
 export const AaveV3EthereumAssets_wstETH_INTEREST_RATE_STRATEGY =
   '0x7b8Fa4540246554e77FCFf140f9114de00F8bB8D';
 

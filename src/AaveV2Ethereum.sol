@@ -294,7 +294,7 @@ library AaveV2EthereumAssets {
   address internal constant stETH_A_TOKEN = 0x1982b2F5814301d4e9a8b0201555376e62F82428;
   address internal constant stETH_V_TOKEN = 0xA9DEAc9f00Dc4310c35603FCD9D34d1A750f81Db;
   address internal constant stETH_S_TOKEN = 0x66457616Dd8489dF5D0AFD8678F4A260088aAF55;
-  address internal constant stETH_ORACLE = 0x86392dC19c0b719886221c78AB11eb8Cf5c52812;
+  address internal constant stETH_ORACLE = 0xADE6CBA6c45aa8E9d0337cAc3D2619eabc39D901;
   address internal constant stETH_INTEREST_RATE_STRATEGY =
     0xff04ed5f7a6C3a0F1e5Ea20617F8C6f513D5A77c;
 
