@@ -74,7 +74,7 @@ export const AaveV3OptimismAssets_wstETH_UNDERLYING = '0x1F32b1c2345538c0c6f582f
 export const AaveV3OptimismAssets_wstETH_A_TOKEN = '0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA';
 export const AaveV3OptimismAssets_wstETH_V_TOKEN = '0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907';
 export const AaveV3OptimismAssets_wstETH_S_TOKEN = '0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841';
-export const AaveV3OptimismAssets_wstETH_ORACLE = '0x05225Cd708bCa9253789C1374e4337a019e99D56';
+export const AaveV3OptimismAssets_wstETH_ORACLE = '0x80f2c02224a2E548FC67c0bF705eBFA825dd5439';
 export const AaveV3OptimismAssets_wstETH_INTEREST_RATE_STRATEGY =
   '0x6BA97468e2e6a3711a6DD05F0075d48E878c910e';
 
