@@ -66,7 +66,7 @@ export const AaveV3ArbitrumAssets_wstETH_UNDERLYING = '0x5979D7b546E38E414F7E982
 export const AaveV3ArbitrumAssets_wstETH_A_TOKEN = '0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf';
 export const AaveV3ArbitrumAssets_wstETH_V_TOKEN = '0x77CA01483f379E58174739308945f044e1a764dc';
 export const AaveV3ArbitrumAssets_wstETH_S_TOKEN = '0x08Cb71192985E936C7Cd166A8b268035e400c3c3';
-export const AaveV3ArbitrumAssets_wstETH_ORACLE = '0x3105C276558Dd4cf7E7be71d73Be8D33bD18F211';
+export const AaveV3ArbitrumAssets_wstETH_ORACLE = '0x945fD405773973d286De54E44649cc0d9e264F78';
 export const AaveV3ArbitrumAssets_wstETH_INTEREST_RATE_STRATEGY =
   '0x4b8D3277d49E114C8F2D6E0B2eD310e29226fe16';
 
