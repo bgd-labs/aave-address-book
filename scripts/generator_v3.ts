@@ -84,8 +84,16 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       );
       reservesData = (await uiPoolDataProvider.getReservesData(pool.addressProvider))[0].map(
         (reserve: any) => {
+          let symbol = reserve.symbol;
+          // patch for
+          if (
+            reserve.symbol === 'USDC' &&
+            reserve.underlyingAsset === '0xaf88d065e77c8cC2239327C5EDb3A432268e5831'
+          ) {
+            symbol = 'USDCn';
+          }
           return {
-            symbol: reserve.symbol,
+            symbol,
             underlyingAsset: reserve.underlyingAsset,
             decimals: reserve.decimals,
             aTokenAddress: reserve.aTokenAddress,

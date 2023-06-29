@@ -163,11 +163,11 @@ library AaveV3ArbitrumAssets {
   address internal constant LUSD_INTEREST_RATE_STRATEGY =
     0x07Fa3744FeC271F80c2EA97679823F65c13CCDf4;
 
-  address internal constant USDC_UNDERLYING = 0xaf88d065e77c8cC2239327C5EDb3A432268e5831;
-  address internal constant USDC_A_TOKEN = 0x724dc807b04555b71ed48a6896b6F41593b8C637;
-  address internal constant USDC_V_TOKEN = 0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6;
-  address internal constant USDC_S_TOKEN = 0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a;
-  address internal constant USDC_ORACLE = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
-  address internal constant USDC_INTEREST_RATE_STRATEGY =
+  address internal constant USDCn_UNDERLYING = 0xaf88d065e77c8cC2239327C5EDb3A432268e5831;
+  address internal constant USDCn_A_TOKEN = 0x724dc807b04555b71ed48a6896b6F41593b8C637;
+  address internal constant USDCn_V_TOKEN = 0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6;
+  address internal constant USDCn_S_TOKEN = 0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a;
+  address internal constant USDCn_ORACLE = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
+  address internal constant USDCn_INTEREST_RATE_STRATEGY =
     0xf6733B9842883BFE0e0a940eA2F572676af31bde;
 }
