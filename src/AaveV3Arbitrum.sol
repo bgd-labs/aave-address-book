@@ -170,4 +170,12 @@ library AaveV3ArbitrumAssets {
   address internal constant USDCn_ORACLE = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
   address internal constant USDCn_INTEREST_RATE_STRATEGY =
     0xf6733B9842883BFE0e0a940eA2F572676af31bde;
+
+  address internal constant FRAX_UNDERLYING = 0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F;
+  address internal constant FRAX_A_TOKEN = 0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5;
+  address internal constant FRAX_V_TOKEN = 0x5D557B07776D12967914379C71a1310e917C7555;
+  address internal constant FRAX_S_TOKEN = 0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB;
+  address internal constant FRAX_ORACLE = 0x0809E3d38d1B4214958faf06D8b1B1a2b73f2ab8;
+  address internal constant FRAX_INTEREST_RATE_STRATEGY =
+    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 }
