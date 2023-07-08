@@ -213,4 +213,12 @@ library AaveV3EthereumAssets {
   address internal constant ONE_INCH_ORACLE = 0xc929ad75B72593967DE83E7F7Cda0493458261D9;
   address internal constant ONE_INCH_INTEREST_RATE_STRATEGY =
     0xf6733B9842883BFE0e0a940eA2F572676af31bde;
+
+  address internal constant FRAX_UNDERLYING = 0x853d955aCEf822Db058eb8505911ED77F175b99e;
+  address internal constant FRAX_A_TOKEN = 0xd4e245848d6E1220DBE62e155d89fa327E43CB06;
+  address internal constant FRAX_V_TOKEN = 0x88B8358F5BC87c2D7E116cCA5b65A9eEb2c5EA3F;
+  address internal constant FRAX_S_TOKEN = 0x219640546c0DFDDCb9ab3bcdA89B324e0a376367;
+  address internal constant FRAX_ORACLE = 0xB9E1E3A9feFf48998E45Fa90847ed4D467E8BcfD;
+  address internal constant FRAX_INTEREST_RATE_STRATEGY =
+    0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2;
 }
