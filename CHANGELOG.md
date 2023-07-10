@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.27.0](https://github.com/bgd-labs/aave-address-book/compare/v1.26.2...v1.27.0) (2023-07-10)
+
+
+### Features
+
+* add debt swap ([#160](https://github.com/bgd-labs/aave-address-book/issues/160)) ([0d42c96](https://github.com/bgd-labs/aave-address-book/commit/0d42c960c49bfc76a3a672f3d3b49860487204aa))
+
+
+### Bug Fixes
+
+* patch arbitrum USDC ([4be5fea](https://github.com/bgd-labs/aave-address-book/commit/4be5feacc0759751ffc2fb57c9ba90099ca2aaf5))
+* remove fantom addresses as they were not deployed ([#153](https://github.com/bgd-labs/aave-address-book/issues/153)) ([08851aa](https://github.com/bgd-labs/aave-address-book/commit/08851aa753de49e5227ffb696d828ad0bed11778))
+* typo in AaveV2.sol ([#157](https://github.com/bgd-labs/aave-address-book/issues/157)) ([5ef66e0](https://github.com/bgd-labs/aave-address-book/commit/5ef66e0767ca3813be781a82d69c589062349910))
+
 ### [1.26.2](https://github.com/bgd-labs/aave-address-book/compare/v1.26.1...v1.26.2) (2023-06-14)
 
 
