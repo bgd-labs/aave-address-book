@@ -841,7 +841,7 @@ interface IAaveOracle {
   function getSourceOfAsset(address asset) external view returns (address);
 
   /// @notice Gets the address of the fallback oracle
-  /// @return address The addres of the fallback oracle
+  /// @return address The address of the fallback oracle
   function getFallbackOracle() external view returns (address);
 }
 
