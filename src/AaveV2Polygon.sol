@@ -54,6 +54,8 @@ library AaveV2Polygon {
   address internal constant UI_POOL_DATA_PROVIDER = 0x204f2Eb81D996729829debC819f7992DCEEfE7b1;
 
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x645654D59A5226CBab969b1f5431aA47CBf64ab8;
+
+  address internal constant DEBT_SWAP_ADAPTER = 0xe9E52021f4e11DEAD8661812A0A6c8627abA2a54;
 }
 
 library AaveV2PolygonAssets {

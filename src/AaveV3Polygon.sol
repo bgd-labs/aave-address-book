@@ -64,6 +64,8 @@ library AaveV3Polygon {
   address internal constant STATIC_A_TOKEN_FACTORY = 0xFcd9720b0Ea09c70E53727E08Bc131d77800B112;
 
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xc5de989E0D1BF605d19478Fdd32Aa827a10b464f;
+
+  address internal constant DEBT_SWAP_ADAPTER = 0x2a6C8D620371AEc6bCA1d18AAaF96efE11Eb3d6c;
 }
 
 library AaveV3PolygonAssets {

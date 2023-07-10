@@ -48,6 +48,8 @@ library AaveV3Optimism {
 
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xBC2Ff189e0349Ca73D9b78c172FC2B40025abE2a;
 
+  address internal constant DEBT_SWAP_ADAPTER = 0xb77fc84a549ecc0b410d6fa15159C2df207545a3;
+
   address internal constant RATES_FACTORY = 0xDd81E6F85358292075B78fc8D5830BE8434aF8BA;
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
