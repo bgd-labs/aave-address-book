@@ -37,15 +37,24 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
       publicClient: pool.provider,
     });
 
-    const lendingPool = await addressProviderContract.read.getLendingPool();
-    const lendingRateOracle = await addressProviderContract.read.getLendingRateOracle();
-    const lendingPoolConfigurator = await addressProviderContract.read.getLendingPoolConfigurator();
-    const oracle = await addressProviderContract.read.getPriceOracle();
-    const admin = await addressProviderContract.read.getPoolAdmin();
-    // const owner = await addressProviderContract.owner();
-    const emergencyAdmin = await addressProviderContract.read.getEmergencyAdmin();
-    const poolDataProvider = await addressProviderContract.read.getAddress([
-      '0x0100000000000000000000000000000000000000000000000000000000000000',
+    const [
+      lendingPool,
+      lendingRateOracle,
+      lendingPoolConfigurator,
+      oracle,
+      admin,
+      emergencyAdmin,
+      poolDataProvider,
+    ] = await Promise.all([
+      addressProviderContract.read.getLendingPool(),
+      addressProviderContract.read.getLendingRateOracle(),
+      addressProviderContract.read.getLendingPoolConfigurator(),
+      addressProviderContract.read.getPriceOracle(),
+      addressProviderContract.read.getPoolAdmin(),
+      addressProviderContract.read.getEmergencyAdmin(),
+      addressProviderContract.read.getAddress([
+        '0x0100000000000000000000000000000000000000000000000000000000000000',
+      ]),
     ]);
 
     let reservesData: PoolV2WithAddresses['reservesData'] = [];

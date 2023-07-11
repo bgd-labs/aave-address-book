@@ -40,10 +40,6 @@ export const generateAdditionalAddressesSol = (
   return '';
 };
 
-export async function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 export const ZERO_ADDRESS: Hex = '0x0000000000000000000000000000000000000000';
 
 export function addressOrZero(address?: Hex) {
