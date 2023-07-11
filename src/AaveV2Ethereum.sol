@@ -43,6 +43,8 @@ library AaveV2Ethereum {
 
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x135896DE8421be2ec868E0b811006171D9df802A;
 
+  address internal constant DEBT_SWAP_ADAPTER = 0x97742240d6eBE32198B315d30C73c3D2FFC9cE21;
+
   address internal constant LISTING_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
 
   address internal constant RATES_FACTORY = 0xbD37610BBB1ddc2a22797F7e3f531B59902b7bA7;

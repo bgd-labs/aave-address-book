@@ -43,6 +43,8 @@ library AaveV2Avalanche {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x935b362EE3E1f342cc48118C528AAbee5118F6e6;
 
+  address internal constant DEBT_SWAP_ADAPTER = 0xc5de989E0D1BF605d19478Fdd32Aa827a10b464f;
+
   address internal constant LISTING_ENGINE = 0x7902F3c60f05b5A6b7e4Ce0Cac11Cb17bC8e607c;
 
   address internal constant RATES_FACTORY = 0x6e66E50870A93691C1b953788A3219e01fDdeDD7;
