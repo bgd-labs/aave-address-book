@@ -1,14 +1,15 @@
 import fs from 'fs';
+import {Hex} from 'viem';
 
 export type ReserveData = {
   symbol: string;
-  underlyingAsset: string;
+  underlyingAsset: Hex;
   decimals: number;
-  aTokenAddress: string;
-  stableDebtTokenAddress: string;
-  variableDebtTokenAddress: string;
-  interestRateStrategyAddress: string;
-  priceOracle: string;
+  aTokenAddress: Hex;
+  stableDebtTokenAddress: Hex;
+  variableDebtTokenAddress: Hex;
+  interestRateStrategyAddress: Hex;
+  priceOracle: Hex;
 };
 
 /**
