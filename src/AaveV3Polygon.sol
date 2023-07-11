@@ -221,7 +221,7 @@ library AaveV3PolygonAssets {
   address internal constant wstETH_A_TOKEN = 0xf59036CAEBeA7dC4b86638DFA2E3C97dA9FcCd40;
   address internal constant wstETH_V_TOKEN = 0x77fA66882a8854d883101Fb8501BD3CaD347Fc32;
   address internal constant wstETH_S_TOKEN = 0x173e54325AE58B072985DbF232436961981EA000;
-  address internal constant wstETH_ORACLE = 0xA2508729b1282Cc70dd33Ed311d4A9A37383035b;
+  address internal constant wstETH_ORACLE = 0xe34949A48cd2E6f5CD41753e449bd2d43993C9AC;
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E;
 }
