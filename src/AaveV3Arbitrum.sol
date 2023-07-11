@@ -48,6 +48,8 @@ library AaveV3Arbitrum {
 
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xb20bd14259089e63d1f49d8d887ABA783Ce5dAc2;
 
+  address internal constant DEBT_SWAP_ADAPTER = 0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE;
+
   address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =

@@ -51,6 +51,8 @@ library AaveV3Avalanche {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x4fB0Ba43a5415f312cf5FA10d16Ff6dbA697d9aA;
 
+  address internal constant DEBT_SWAP_ADAPTER = 0x4C0633Bf70fB2bB984A9eEC5d9052BdEA451C70A;
+
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x00e39085C877328619FDB2a47d995c516a5fA869;
 
   address internal constant LISTING_ENGINE = 0x49581e5575F49263f556b91daf8fb41D7854D94B;
