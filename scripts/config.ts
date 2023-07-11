@@ -1,4 +1,22 @@
-import {ethers} from 'ethers';
+import {getAddress, createPublicClient, http, PublicClient, Hex, fallback} from 'viem';
+import {
+  mainnet,
+  goerli,
+  polygonMumbai,
+  polygon,
+  avalancheFuji,
+  arbitrum,
+  arbitrumGoerli,
+  harmonyOne,
+  optimism,
+  optimismGoerli,
+  fantom,
+  fantomTestnet,
+  scrollTestnet,
+  metis,
+  sepolia,
+  avalanche,
+} from 'viem/chains';
 
 export enum ChainId {
   mainnet = 1,
@@ -23,67 +41,166 @@ export enum ChainId {
 }
 
 const RPC_PROVIDERS = {
-  [ChainId.mainnet]: 'https://eth.llamarpc.com',
-  [ChainId.goerli]: 'https://eth-goerli.public.blastapi.io',
-  [ChainId.mumbai]: 'https://polygon-testnet.public.blastapi.io',
-  [ChainId.polygon]: 'https://rpc.ankr.com/polygon',
-  [ChainId.fuji]: 'https://endpoints.omniatech.io/v1/avax/fuji/public',
-  [ChainId.avalanche]: 'https://api.avax.network/ext/bc/C/rpc',
-  [ChainId.arbitrum_one]: 'https://arb1.arbitrum.io/rpc',
-  [ChainId.arbitrum_goerli]: 'https://goerli-rollup.arbitrum.io/rpc',
-  [ChainId.harmony]: 'https://api.s0.t.hmny.io',
-  [ChainId.optimism]: 'https://optimism-mainnet.public.blastapi.io',
-  [ChainId.optimism_goerli]: 'https://goerli.optimism.io',
-  [ChainId.fantom]: 'https://1rpc.io/ftm',
-  [ChainId.fantom_testnet]: 'https://rpc.ankr.com/fantom_testnet',
-  [ChainId.sepolia]: 'https://rpc.sepolia.org/',
-  [ChainId.scroll_alpha]: 'https://alpha-rpc.scroll.io/l2',
-  [ChainId.metis]: 'https://andromeda.metis.io/?owner=1088',
+  [ChainId.mainnet]: createPublicClient({
+    chain: mainnet,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.goerli]: createPublicClient({
+    chain: goerli,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.mumbai]: createPublicClient({
+    chain: polygonMumbai,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.polygon]: createPublicClient({
+    chain: polygon,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.fuji]: createPublicClient({
+    chain: avalancheFuji,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.avalanche]: createPublicClient({
+    chain: avalanche,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.arbitrum_one]: createPublicClient({
+    chain: arbitrum,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.arbitrum_goerli]: createPublicClient({
+    chain: arbitrumGoerli,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.harmony]: createPublicClient({
+    chain: harmonyOne,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.optimism]: createPublicClient({
+    chain: optimism,
+    transport: fallback([
+      http('https://mainnet.optimism.io'),
+      http('https://optimism.publicnode.com'),
+    ]),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.optimism_goerli]: createPublicClient({
+    chain: optimismGoerli,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.fantom]: createPublicClient({
+    chain: fantom,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.fantom_testnet]: createPublicClient({
+    chain: fantomTestnet,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.sepolia]: createPublicClient({
+    chain: sepolia,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.scroll_alpha]: createPublicClient({
+    chain: scrollTestnet,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.metis]: createPublicClient({
+    chain: metis,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
 } as const;
 
 export interface Pool {
   name: string;
   chainId: ChainId;
-  addressProvider: string;
+  addressProvider: Hex;
   version: number;
   testnet?: boolean;
-  provider: ethers.providers.StaticJsonRpcProvider;
+  provider: PublicClient;
   // will be inlined in js pool export
   additionalAddresses: {
-    FAUCET?: string;
-    WETH_GATEWAY?: string;
-    REPAY_WITH_COLLATERAL_ADAPTER?: string;
-    SWAP_COLLATERAL_ADAPTER?: string;
-    DEBT_SWAP_ADAPTER?: string;
-    POOL_ADDRESSES_PROVIDER_REGISTRY?: string;
-    LISTING_ENGINE?: string;
-    MIGRATION_HELPER?: string;
-    UI_POOL_DATA_PROVIDER?: string;
-    L2_ENCODER?: string;
-    PROOF_OF_RESERVE?: string;
-    PROOF_OF_RESERVE_AGGREGATOR?: string;
-    DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: string;
-    STATIC_A_TOKEN_FACTORY?: string;
-    CAPS_PLUS_RISK_STEWARD?: string;
+    FAUCET?: Hex;
+    WETH_GATEWAY?: Hex;
+    REPAY_WITH_COLLATERAL_ADAPTER?: Hex;
+    SWAP_COLLATERAL_ADAPTER?: Hex;
+    DEBT_SWAP_ADAPTER?: Hex;
+    POOL_ADDRESSES_PROVIDER_REGISTRY?: Hex;
+    LISTING_ENGINE?: Hex;
+    MIGRATION_HELPER?: Hex;
+    UI_POOL_DATA_PROVIDER?: Hex;
+    L2_ENCODER?: Hex;
+    PROOF_OF_RESERVE?: Hex;
+    PROOF_OF_RESERVE_AGGREGATOR?: Hex;
+    DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: Hex;
+    STATIC_A_TOKEN_FACTORY?: Hex;
+    CAPS_PLUS_RISK_STEWARD?: Hex;
   };
   // will be used for pending pools where the impls can't be fetched yet
   initial?: {
-    COLLECTOR?: string;
-    DEFAULT_A_TOKEN_IMPL?: string;
-    DEFAULT_VARIABLE_DEBT_TOKEN_IMPL?: string;
-    DEFAULT_STABLE_DEBT_TOKEN_IMPL?: string;
+    COLLECTOR?: Hex;
+    DEFAULT_A_TOKEN_IMPL?: Hex;
+    DEFAULT_VARIABLE_DEBT_TOKEN_IMPL?: Hex;
+    DEFAULT_STABLE_DEBT_TOKEN_IMPL?: Hex;
   };
 }
 
 export interface Token {
   symbol: string;
-  underlyingAsset: string;
-  aTokenAddress: string;
-  stableDebtTokenAddress: string;
-  variableDebtTokenAddress: string;
+  underlyingAsset: Hex;
+  aTokenAddress: Hex;
+  stableDebtTokenAddress: Hex;
+  variableDebtTokenAddress: Hex;
 }
 
-export const pools: Pool[] = [
+export const pools = [
   {
     name: 'AaveV2Ethereum',
     chainId: ChainId.mainnet,
@@ -506,17 +623,11 @@ export const pools: Pool[] = [
   },
 ].map((m) => ({
   ...m,
-  provider: new ethers.providers.StaticJsonRpcProvider(
-    RPC_PROVIDERS[m.chainId as keyof typeof RPC_PROVIDERS],
-    m.chainId
-  ),
-  rpc: RPC_PROVIDERS[m.chainId as keyof typeof RPC_PROVIDERS],
+  provider: RPC_PROVIDERS[m.chainId as keyof typeof RPC_PROVIDERS] as unknown as PublicClient,
   // fix checksums
-  addressProvider: ethers.utils.getAddress(m.addressProvider),
+  addressProvider: getAddress(m.addressProvider),
   additionalAddresses: Object.keys(m.additionalAddresses).reduce((acc, key) => {
-    acc[key] = ethers.utils.getAddress(
-      m.additionalAddresses[key as keyof Pool['additionalAddresses']] as string
-    );
+    acc[key] = getAddress(m.additionalAddresses[key as keyof Pool['additionalAddresses']] as Hex);
     return acc;
-  }, {} as {[key: string]: string}) as Pool['additionalAddresses'],
-}));
+  }, {} as {[key: string]: Hex}) as Pool['additionalAddresses'],
+})) as Pool[];

@@ -1,69 +1,77 @@
-import {ethers} from 'ethers';
 import {Pool} from './config.js';
 import fs from 'fs';
-import addressProviderV2ABI from './abi/address_provider_v2_abi.json' assert {type: 'json'};
-import lendingPoolV2ABI from './abi/lending_pool_v2_abi.json' assert {type: 'json'};
-import aTokenV2ABI from './abi/aToken_v2_abi.json' assert {type: 'json'};
-import uipooldataProviderABI from './abi/uipooldata_provider.json' assert {type: 'json'};
-import incentivesControllerABI from './abi/incentivesController_abi.json' assert {type: 'json'};
+import {ADDRESS_PROVIDER_V2_ABI} from './abi/address_provider_v2_abi.js';
+import {LENDING_POOL_V2_ABI} from './abi/lending_pool_v2_abi.js';
+import {A_TOKEN_V2_ABI} from './abi/aToken_v2_abi.js';
+import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider.js';
+import {INCENTIVES_CONTROLLER_ABI} from './abi/incentivesController_abi.js';
 import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers.js';
 import {
   appendAssetsLibraryJs,
   appendAssetsLibrarySol,
   ReserveData,
 } from './generateAssetsLibrary.js';
+import {Hex, getContract} from 'viem';
 
 export interface PoolV2WithAddresses extends Pool {
-  lendingPool: string;
-  poolDataProvider: string;
-  lendingPoolConfigurator: string;
-  lendingRateOracle: string;
-  oracle: string;
-  admin: string;
-  emergencyAdmin: string;
-  collector: string;
-  defaultIncentivesController: string;
-  emissionManager: string;
+  lendingPool: Hex;
+  poolDataProvider: Hex;
+  lendingPoolConfigurator: Hex;
+  lendingRateOracle: Hex;
+  oracle: Hex;
+  admin: Hex;
+  emergencyAdmin: Hex;
+  collector: Hex;
+  defaultIncentivesController: Hex;
+  emissionManager: Hex;
   reservesData: ReserveData[];
 }
 
 export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddresses> {
   console.time(pool.name);
   // using getAddress to get correct checksum in case the one in config isn't correct
-  const addressProvider: string = pool.addressProvider;
   try {
-    const addressProviderContract = new ethers.Contract(
-      addressProvider,
-      addressProviderV2ABI,
-      pool.provider
-    );
-    const lendingPool: string = await addressProviderContract.getLendingPool();
-    const lendingRateOracle: string = await addressProviderContract.getLendingRateOracle();
-    const lendingPoolConfigurator: string =
-      await addressProviderContract.getLendingPoolConfigurator();
-    const oracle: string = await addressProviderContract.getPriceOracle();
-    const admin: string = await addressProviderContract.getPoolAdmin();
-    // const owner = await addressProviderContract.owner();
-    const emergencyAdmin: string = await addressProviderContract.getEmergencyAdmin();
-    const poolDataProvider: string = await addressProviderContract.getAddress(
-      '0x0100000000000000000000000000000000000000000000000000000000000000'
-    );
+    const addressProviderContract = getContract({
+      address: pool.addressProvider,
+      abi: ADDRESS_PROVIDER_V2_ABI,
+      publicClient: pool.provider,
+    });
+
+    const [
+      lendingPool,
+      lendingRateOracle,
+      lendingPoolConfigurator,
+      oracle,
+      admin,
+      emergencyAdmin,
+      poolDataProvider,
+    ] = await Promise.all([
+      addressProviderContract.read.getLendingPool(),
+      addressProviderContract.read.getLendingRateOracle(),
+      addressProviderContract.read.getLendingPoolConfigurator(),
+      addressProviderContract.read.getPriceOracle(),
+      addressProviderContract.read.getPoolAdmin(),
+      addressProviderContract.read.getEmergencyAdmin(),
+      addressProviderContract.read.getAddress([
+        '0x0100000000000000000000000000000000000000000000000000000000000000',
+      ]),
+    ]);
 
     let reservesData: PoolV2WithAddresses['reservesData'] = [];
     // workaround, fix before merge
     // didn't find all the ui pool data provider addresses, so currently there are gaps
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
-      const uiPoolDataProvider = new ethers.Contract(
-        pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-        uipooldataProviderABI,
-        pool.provider
-      );
-      reservesData = (await uiPoolDataProvider.getReservesData(pool.addressProvider))[0].map(
-        (reserve: any) => {
+      const uiPoolDataProvider = getContract({
+        address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
+        abi: UI_POOL_DATA_PROVIDER_ABI,
+        publicClient: pool.provider,
+      });
+      reservesData = (await uiPoolDataProvider.read.getReservesData([pool.addressProvider]))[0].map(
+        (reserve) => {
           return {
             symbol: reserve.symbol,
             underlyingAsset: reserve.underlyingAsset,
-            decimals: reserve.decimals,
+            decimals: Number(reserve.decimals),
             aTokenAddress: reserve.aTokenAddress,
             stableDebtTokenAddress: reserve.stableDebtTokenAddress,
             variableDebtTokenAddress: reserve.variableDebtTokenAddress,
@@ -74,28 +82,35 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
       );
     }
 
-    // TODO: needed as i didn't find an upto date uipooldataprovider for arc
-    const lendingPoolContract = new ethers.Contract(lendingPool, lendingPoolV2ABI, pool.provider);
-    const reserves: string[] = await lendingPoolContract.getReservesList();
-    const data = await lendingPoolContract.getReserveData(reserves[0]);
+    // Note: needed as i didn't find an upto date uipooldataprovider for arc
+    const lendingPoolContract = getContract({
+      address: lendingPool,
+      abi: LENDING_POOL_V2_ABI,
+      publicClient: pool.provider,
+    });
+    const reserves = await lendingPoolContract.read.getReservesList();
+    const data = await lendingPoolContract.read.getReserveData([reserves[0]]);
 
     /**
      * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
      */
-    const aTokenContract = new ethers.Contract(data.aTokenAddress, aTokenV2ABI, pool.provider);
+    const aTokenContract = getContract({
+      address: data.aTokenAddress,
+      abi: A_TOKEN_V2_ABI,
+      publicClient: pool.provider,
+    });
+    const collector = await aTokenContract.read.RESERVE_TREASURY_ADDRESS();
 
-    const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
+    const defaultIncentivesController = await aTokenContract.read.getIncentivesController();
 
-    const defaultIncentivesController = await aTokenContract.getIncentivesController();
-
-    let emissionManager = '0x0000000000000000000000000000000000000000';
+    let emissionManager: Hex = '0x0000000000000000000000000000000000000000';
     try {
-      const incentivesControllerContract = await new ethers.Contract(
-        defaultIncentivesController,
-        incentivesControllerABI,
-        pool.provider
-      );
-      emissionManager = await incentivesControllerContract.EMISSION_MANAGER();
+      const incentivesControllerContract = getContract({
+        address: defaultIncentivesController,
+        abi: INCENTIVES_CONTROLLER_ABI,
+        publicClient: pool.provider,
+      });
+      emissionManager = await incentivesControllerContract.read.EMISSION_MANAGER();
     } catch (e) {
       console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
