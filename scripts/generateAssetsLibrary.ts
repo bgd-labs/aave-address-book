@@ -10,6 +10,7 @@ export type ReserveData = {
   variableDebtTokenAddress: Hex;
   interestRateStrategyAddress: Hex;
   priceOracle: Hex;
+  staticATokenAddress?: Hex;
 };
 
 /**
@@ -68,12 +69,15 @@ export function appendAssetsLibrarySol(name: string, reserves: ReserveData[]) {
     ${reserves
       .map((reserve) => {
         const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
-        return `address internal constant ${symbol}_UNDERLYING = ${reserve.underlyingAsset};
+        let result = `address internal constant ${symbol}_UNDERLYING = ${reserve.underlyingAsset};
           address internal constant ${symbol}_A_TOKEN = ${reserve.aTokenAddress};
           address internal constant ${symbol}_V_TOKEN = ${reserve.variableDebtTokenAddress};
           address internal constant ${symbol}_S_TOKEN = ${reserve.stableDebtTokenAddress};
           address internal constant ${symbol}_ORACLE = ${reserve.priceOracle};
           address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${reserve.interestRateStrategyAddress};`;
+        if (reserve.staticATokenAddress)
+          result += `        address internal constant ${symbol}_STATA_TOKEN = ${reserve.staticATokenAddress};`;
+        return result;
       })
       .join('\n\n')}
     }
@@ -90,12 +94,15 @@ export function appendAssetsLibraryJs(name: string, reserves: ReserveData[]) {
   const templateV3Assets = reserves
     .map((reserve) => {
       const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
-      return `export const ${name}Assets_${symbol}_UNDERLYING = "${reserve.underlyingAsset}";
+      let result = `export const ${name}Assets_${symbol}_UNDERLYING = "${reserve.underlyingAsset}";
           export const ${name}Assets_${symbol}_A_TOKEN = "${reserve.aTokenAddress}";
           export const ${name}Assets_${symbol}_V_TOKEN = "${reserve.variableDebtTokenAddress}";
           export const ${name}Assets_${symbol}_S_TOKEN = "${reserve.stableDebtTokenAddress}";
           export const ${name}Assets_${symbol}_ORACLE = "${reserve.priceOracle}";
           export const ${name}Assets_${symbol}_INTEREST_RATE_STRATEGY = "${reserve.interestRateStrategyAddress}";`;
+      if (reserve.staticATokenAddress)
+        result += `      export const ${name}Assets_${symbol}_STATA_TOKEN = "${reserve.staticATokenAddress}";`;
+      return result;
     })
     .join('\n\n');
   fs.writeFileSync(`./src/ts/${name}Assets.ts`, templateV3Assets);

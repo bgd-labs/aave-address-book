@@ -6,6 +6,7 @@ import {STABLE_DEBT_TOKEN_ABI} from './abi/stableDebtToken_v3_abi.js';
 import {VARIABLE_DEBT_TOKEN_ABI} from './abi/variableDebtToken_v3_abi.js';
 import {REWARDS_CONTROLLER_ABI} from './abi/rewardsController_v3_abi.js';
 import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider.js';
+import {STATIC_A_TOKEN_FACTORY_ABI} from './abi/static_a_token_factory_abi.js';
 import {
   ZERO_ADDRESS,
   addressOrZero,
@@ -92,8 +93,16 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
         abi: UI_POOL_DATA_PROVIDER_ABI,
         publicClient: pool.provider,
       });
-      reservesData = (await uiPoolDataProvider.read.getReservesData([pool.addressProvider]))[0].map(
-        (reserve) => {
+      const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
+        ? getContract({
+            address: pool.additionalAddresses.STATIC_A_TOKEN_FACTORY,
+            abi: STATIC_A_TOKEN_FACTORY_ABI,
+            publicClient: pool.provider,
+          })
+        : null;
+      const data = (await uiPoolDataProvider.read.getReservesData([pool.addressProvider]))[0];
+      reservesData = await Promise.all(
+        data.map(async (reserve) => {
           let symbol = reserve.symbol;
           // patch for
           if (
@@ -102,7 +111,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
           ) {
             symbol = 'USDCn';
           }
-          return {
+          const result: ReserveData = {
             symbol,
             underlyingAsset: reserve.underlyingAsset,
             decimals: Number(reserve.decimals),
@@ -112,9 +121,15 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
             interestRateStrategyAddress: reserve.interestRateStrategyAddress,
             priceOracle: reserve.priceOracle,
           };
-        }
+          if (staticATokenFactoryContract)
+            result.staticATokenAddress = (await staticATokenFactoryContract.read.getStaticAToken([
+              reserve.underlyingAsset,
+            ])) as Hex;
+          return result;
+        })
       );
     }
+
     if (reservesData.length > 0) {
       /**
        * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
