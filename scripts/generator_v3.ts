@@ -1,12 +1,11 @@
-import {ethers} from 'ethers';
 import {Pool} from './config.js';
 import fs from 'fs';
-import addressProviderV3ABI from './abi/address_provider_v3_abi.json' assert {type: 'json'};
-import aTokenV3ABI from './abi/aToken_v3_abi.json' assert {type: 'json'};
-import stableDebtTokenV3ABI from './abi/stableDebtToken_v3_abi.json' assert {type: 'json'};
-import variableDebtTokenV3ABI from './abi/variableDebtToken_v3_abi.json' assert {type: 'json'};
-import rewardsControllerABI from './abi/rewardsController_v3_abi.json' assert {type: 'json'};
-import uipooldataProviderABI from './abi/uipooldata_provider.json' assert {type: 'json'};
+import {ADDRESS_PROVIDER_V3_ABI} from './abi/address_provider_v3_abi.js';
+import {A_TOKEN_V3_ABI} from './abi/aToken_v3_abi.js';
+import {STABLE_DEBT_TOKEN_ABI} from './abi/stableDebtToken_v3_abi.js';
+import {VARIABLE_DEBT_TOKEN_ABI} from './abi/variableDebtToken_v3_abi.js';
+import {REWARDS_CONTROLLER_ABI} from './abi/rewardsController_v3_abi.js';
+import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider.js';
 import {
   ZERO_ADDRESS,
   addressOrZero,
@@ -14,76 +13,87 @@ import {
   generateAdditionalAddresses,
   generateAdditionalAddressesSol,
   getImplementationStorageSlot,
-  sleep,
 } from './helpers.js';
 import {
   appendAssetsLibraryJs,
   appendAssetsLibrarySol,
   ReserveData,
 } from './generateAssetsLibrary.js';
+import {Hex, getContract} from 'viem';
 
 export interface PoolV3WithAddresses extends Pool {
-  pool: string;
-  poolDataProvider: string;
-  poolConfigurator: string;
-  oracle: string;
-  oracleSentinel: string;
-  aclAdmin: string;
-  aclManager: string;
-  collector: string;
-  defaultATokenImplementation: string;
-  aTokenRevision: string;
-  defaultVariableDebtTokenImplementation: string;
-  variableDebtTokenRevision: string;
-  defaultStableDebtTokenImplementation: string;
-  stableDebtTokenRevision: string;
-  emissionManager: string;
-  defaultIncentivesController: string;
+  pool: Hex;
+  poolDataProvider: Hex;
+  poolConfigurator: Hex;
+  oracle: Hex;
+  oracleSentinel: Hex;
+  aclAdmin: Hex;
+  aclManager: Hex;
+  collector: Hex;
+  defaultATokenImplementation: Hex;
+  aTokenRevision: number;
+  defaultVariableDebtTokenImplementation: Hex;
+  variableDebtTokenRevision: number;
+  defaultStableDebtTokenImplementation: Hex;
+  stableDebtTokenRevision: number;
+  emissionManager: Hex;
+  defaultIncentivesController: Hex;
   reservesData: ReserveData[];
 }
 
 export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddresses> {
   console.time(pool.name);
-  // using getAddress to get correct checksum in case the one in config isn't correct
-  const addressProvider = pool.addressProvider;
-  const contract = new ethers.Contract(addressProvider, addressProviderV3ABI, pool.provider);
+  const addressProviderContract = getContract({
+    address: pool.addressProvider,
+    abi: ADDRESS_PROVIDER_V3_ABI,
+    publicClient: pool.provider,
+  });
   try {
-    const poolAddress = await contract.getPool();
-    const poolConfigurator = await contract.getPoolConfigurator();
-    const oracle = await contract.getPriceOracle();
-    const oracleSentinel = await contract.getPriceOracleSentinel();
-    const aclAdmin = await contract.getACLAdmin();
-    const aclManager = await contract.getACLManager();
-    const poolDataProvider = await contract.getPoolDataProvider();
+    const [
+      poolAddress,
+      poolConfigurator,
+      oracle,
+      oracleSentinel,
+      aclAdmin,
+      aclManager,
+      poolDataProvider,
+    ] = await Promise.all([
+      addressProviderContract.read.getPool(),
+      addressProviderContract.read.getPoolConfigurator(),
+      addressProviderContract.read.getPriceOracle(),
+      addressProviderContract.read.getPriceOracleSentinel(),
+      addressProviderContract.read.getACLAdmin(),
+      addressProviderContract.read.getACLManager(),
+      addressProviderContract.read.getPoolDataProvider(),
+    ]);
 
-    const defaultIncentivesController = await contract.getAddress(
-      '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532'
-    );
+    const defaultIncentivesController = await addressProviderContract.read.getAddress([
+      '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532',
+    ]);
 
     let emissionManager = ZERO_ADDRESS;
     try {
-      const incentivesControllerContract = await new ethers.Contract(
-        defaultIncentivesController,
-        rewardsControllerABI,
-        pool.provider
-      );
-      emissionManager = await incentivesControllerContract.getEmissionManager();
+      const incentivesControllerContract = getContract({
+        address: defaultIncentivesController,
+        abi: REWARDS_CONTROLLER_ABI,
+        publicClient: pool.provider,
+      });
+      emissionManager = await incentivesControllerContract.read.getEmissionManager();
     } catch (e) {
       console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
 
-    await sleep(1000);
     let reservesData: PoolV3WithAddresses['reservesData'] = [];
     // workaround, fix before merge
     // didn't find all the ui pool data provider addresses, so currently there are gaps
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
-      const uiPoolDataProvider = new ethers.Contract(
-        pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-        uipooldataProviderABI,
-        pool.provider
-      );
-      reservesData = (await uiPoolDataProvider.getReservesData(pool.addressProvider))[0].map(
-        (reserve: any) => {
+      const uiPoolDataProvider = getContract({
+        address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
+        abi: UI_POOL_DATA_PROVIDER_ABI,
+        publicClient: pool.provider,
+      });
+      reservesData = (await uiPoolDataProvider.read.getReservesData([pool.addressProvider]))[0].map(
+        (reserve) => {
           let symbol = reserve.symbol;
           // patch for
           if (
@@ -95,7 +105,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
           return {
             symbol,
             underlyingAsset: reserve.underlyingAsset,
-            decimals: reserve.decimals,
+            decimals: Number(reserve.decimals),
             aTokenAddress: reserve.aTokenAddress,
             stableDebtTokenAddress: reserve.stableDebtTokenAddress,
             variableDebtTokenAddress: reserve.variableDebtTokenAddress,
@@ -109,41 +119,50 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       /**
        * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
        */
-      const aTokenContract = new ethers.Contract(
-        reservesData[0].aTokenAddress,
-        aTokenV3ABI,
-        pool.provider
+
+      const aTokenContract = getContract({
+        address: reservesData[0].aTokenAddress,
+        abi: A_TOKEN_V3_ABI,
+        publicClient: pool.provider,
+      });
+      const variableDebtTokenContract = getContract({
+        address: reservesData[0].variableDebtTokenAddress,
+        abi: VARIABLE_DEBT_TOKEN_ABI,
+        publicClient: pool.provider,
+      });
+      const stableDebtTokenContract = getContract({
+        address: reservesData[0].stableDebtTokenAddress,
+        abi: STABLE_DEBT_TOKEN_ABI,
+        publicClient: pool.provider,
+      });
+
+      const [collector, aTokenImplSlot, aTokenImplRevision, vTokenImplSlot, sTokenImplSlot] =
+        await Promise.all([
+          aTokenContract.read.RESERVE_TREASURY_ADDRESS(),
+          await getImplementationStorageSlot(pool.provider, reservesData[0].aTokenAddress),
+          await aTokenContract.read.ATOKEN_REVISION(),
+          await getImplementationStorageSlot(
+            pool.provider,
+            reservesData[0].variableDebtTokenAddress
+          ),
+          await getImplementationStorageSlot(pool.provider, reservesData[0].stableDebtTokenAddress),
+        ]);
+
+      const defaultATokenImplementation = bytes32toAddress(aTokenImplSlot);
+
+      const aTokenRevision = Number(aTokenImplRevision);
+
+      const defaultVariableDebtTokenImplementation = bytes32toAddress(vTokenImplSlot);
+
+      const variableDebtTokenRevision = Number(
+        await variableDebtTokenContract.read.DEBT_TOKEN_REVISION()
       );
 
-      const collector = await aTokenContract.RESERVE_TREASURY_ADDRESS();
+      const defaultStableDebtTokenImplementation = bytes32toAddress(sTokenImplSlot);
 
-      const defaultATokenImplementation = bytes32toAddress(
-        await getImplementationStorageSlot(pool.provider, reservesData[0].aTokenAddress)
+      const stableDebtTokenRevision = Number(
+        await stableDebtTokenContract.read.DEBT_TOKEN_REVISION()
       );
-
-      const aTokenRevision = await aTokenContract.ATOKEN_REVISION();
-
-      await sleep(1000);
-
-      const defaultVariableDebtTokenImplementation = bytes32toAddress(
-        await getImplementationStorageSlot(pool.provider, reservesData[0].variableDebtTokenAddress)
-      );
-
-      const variableDebtTokenRevision = await new ethers.Contract(
-        reservesData[0].variableDebtTokenAddress,
-        variableDebtTokenV3ABI,
-        pool.provider
-      ).DEBT_TOKEN_REVISION();
-
-      const defaultStableDebtTokenImplementation = bytes32toAddress(
-        await getImplementationStorageSlot(pool.provider, reservesData[0].stableDebtTokenAddress)
-      );
-
-      const stableDebtTokenRevision = await new ethers.Contract(
-        reservesData[0].stableDebtTokenAddress,
-        stableDebtTokenV3ABI,
-        pool.provider
-      ).DEBT_TOKEN_REVISION();
 
       console.timeEnd(pool.name);
 
@@ -179,15 +198,15 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
         poolDataProvider,
         collector: addressOrZero(pool.initial?.COLLECTOR),
         defaultATokenImplementation: addressOrZero(pool.initial?.DEFAULT_A_TOKEN_IMPL),
-        aTokenRevision: '1',
+        aTokenRevision: 1,
         defaultVariableDebtTokenImplementation: addressOrZero(
           pool.initial?.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL
         ),
-        variableDebtTokenRevision: '1',
+        variableDebtTokenRevision: 1,
         defaultStableDebtTokenImplementation: addressOrZero(
           pool.initial?.DEFAULT_STABLE_DEBT_TOKEN_IMPL
         ),
-        stableDebtTokenRevision: '1',
+        stableDebtTokenRevision: 1,
         emissionManager,
         defaultIncentivesController,
         reservesData,
