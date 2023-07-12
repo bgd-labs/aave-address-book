@@ -1,5 +1,5 @@
 import fs from 'fs';
-import {Hex} from 'viem';
+import {Hex, zeroAddress} from 'viem';
 
 export type ReserveData = {
   symbol: string;
@@ -75,7 +75,7 @@ export function appendAssetsLibrarySol(name: string, reserves: ReserveData[]) {
           address internal constant ${symbol}_S_TOKEN = ${reserve.stableDebtTokenAddress};
           address internal constant ${symbol}_ORACLE = ${reserve.priceOracle};
           address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${reserve.interestRateStrategyAddress};`;
-        if (reserve.staticATokenAddress)
+        if (reserve.staticATokenAddress && reserve.staticATokenAddress != zeroAddress)
           result += `        address internal constant ${symbol}_STATA_TOKEN = ${reserve.staticATokenAddress};`;
         return result;
       })
@@ -100,7 +100,7 @@ export function appendAssetsLibraryJs(name: string, reserves: ReserveData[]) {
           export const ${name}Assets_${symbol}_S_TOKEN = "${reserve.stableDebtTokenAddress}";
           export const ${name}Assets_${symbol}_ORACLE = "${reserve.priceOracle}";
           export const ${name}Assets_${symbol}_INTEREST_RATE_STRATEGY = "${reserve.interestRateStrategyAddress}";`;
-      if (reserve.staticATokenAddress)
+      if (reserve.staticATokenAddress && reserve.staticATokenAddress != zeroAddress)
         result += `      export const ${name}Assets_${symbol}_STATA_TOKEN = "${reserve.staticATokenAddress}";`;
       return result;
     })

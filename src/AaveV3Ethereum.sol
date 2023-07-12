@@ -86,7 +86,6 @@ library AaveV3EthereumAssets {
   address internal constant wstETH_ORACLE = 0x8B6851156023f4f5A66F68BEA80851c3D905Ac93;
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0x7b8Fa4540246554e77FCFf140f9114de00F8bB8D;
-  address internal constant wstETH_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant WBTC_UNDERLYING = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
   address internal constant WBTC_A_TOKEN = 0x5Ee5bf7ae06D1Be5997A1A72006FE6C607eC6DE8;
@@ -95,7 +94,6 @@ library AaveV3EthereumAssets {
   address internal constant WBTC_ORACLE = 0x230E0321Cf38F09e247e50Afc7801EA2351fe56F;
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0x07Fa3744FeC271F80c2EA97679823F65c13CCDf4;
-  address internal constant WBTC_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant USDC_UNDERLYING = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
   address internal constant USDC_A_TOKEN = 0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c;
@@ -121,7 +119,6 @@ library AaveV3EthereumAssets {
   address internal constant LINK_ORACLE = 0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c;
   address internal constant LINK_INTEREST_RATE_STRATEGY =
     0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
-  address internal constant LINK_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant AAVE_UNDERLYING = 0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9;
   address internal constant AAVE_A_TOKEN = 0xA700b4eB416Be35b2911fd5Dee80678ff64fF6C9;
@@ -130,7 +127,6 @@ library AaveV3EthereumAssets {
   address internal constant AAVE_ORACLE = 0x547a514d5e3769680Ce22B2361c10Ea13619e8a9;
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
-  address internal constant AAVE_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant cbETH_UNDERLYING = 0xBe9895146f7AF43049ca1c1AE358B0541Ea49704;
   address internal constant cbETH_A_TOKEN = 0x977b6fc5dE62598B08C85AC8Cf2b745874E8b78c;
@@ -139,7 +135,6 @@ library AaveV3EthereumAssets {
   address internal constant cbETH_ORACLE = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
   address internal constant cbETH_INTEREST_RATE_STRATEGY =
     0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
-  address internal constant cbETH_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant USDT_UNDERLYING = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
   address internal constant USDT_A_TOKEN = 0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a;
@@ -157,7 +152,6 @@ library AaveV3EthereumAssets {
   address internal constant rETH_ORACLE = 0x05225Cd708bCa9253789C1374e4337a019e99D56;
   address internal constant rETH_INTEREST_RATE_STRATEGY =
     0x24701A6368Ff6D2874d6b8cDadd461552B8A5283;
-  address internal constant rETH_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant LUSD_UNDERLYING = 0x5f98805A4E8be255a32880FDeC7F6728C6568bA0;
   address internal constant LUSD_A_TOKEN = 0x3Fe6a295459FAe07DF8A0ceCC36F37160FE86AA9;
@@ -166,7 +160,6 @@ library AaveV3EthereumAssets {
   address internal constant LUSD_ORACLE = 0x3D7aE7E594f2f2091Ad8798313450130d0Aba3a0;
   address internal constant LUSD_INTEREST_RATE_STRATEGY =
     0x349684Da30f8c9Affeaf21AfAB3a1Ad51f5d95A3;
-  address internal constant LUSD_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant CRV_UNDERLYING = 0xD533a949740bb3306d119CC777fa900bA034cd52;
   address internal constant CRV_A_TOKEN = 0x7B95Ec873268a6BFC6427e7a28e396Db9D0ebc65;
@@ -174,7 +167,6 @@ library AaveV3EthereumAssets {
   address internal constant CRV_S_TOKEN = 0x90D9CD005E553111EB8C9c31Abe9706a186b6048;
   address internal constant CRV_ORACLE = 0xCd627aA160A6fA45Eb793D19Ef54f5062F20f33f;
   address internal constant CRV_INTEREST_RATE_STRATEGY = 0x76884cAFeCf1f7d4146DA6C4053B18B76bf6ED14;
-  address internal constant CRV_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant MKR_UNDERLYING = 0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2;
   address internal constant MKR_A_TOKEN = 0x8A458A9dc9048e005d22849F470891b840296619;
@@ -182,7 +174,6 @@ library AaveV3EthereumAssets {
   address internal constant MKR_S_TOKEN = 0x0496372BE7e426D28E89DEBF01f19F014d5938bE;
   address internal constant MKR_ORACLE = 0xec1D1B3b0443256cc3860e24a46F108e699484Aa;
   address internal constant MKR_INTEREST_RATE_STRATEGY = 0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
-  address internal constant MKR_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant SNX_UNDERLYING = 0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F;
   address internal constant SNX_A_TOKEN = 0xC7B4c17861357B8ABB91F25581E7263E08DCB59c;
@@ -190,7 +181,6 @@ library AaveV3EthereumAssets {
   address internal constant SNX_S_TOKEN = 0x478E1ec1A2BeEd94c1407c951E4B9e22d53b2501;
   address internal constant SNX_ORACLE = 0xDC3EA94CD0AC27d9A86C180091e7f78C683d3699;
   address internal constant SNX_INTEREST_RATE_STRATEGY = 0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E;
-  address internal constant SNX_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant BAL_UNDERLYING = 0xba100000625a3754423978a60c9317c58a424e3D;
   address internal constant BAL_A_TOKEN = 0x2516E7B3F76294e03C42AA4c5b5b4DCE9C436fB8;
@@ -198,7 +188,6 @@ library AaveV3EthereumAssets {
   address internal constant BAL_S_TOKEN = 0xB368d45aaAa07ee2c6275Cb320D140b22dE43CDD;
   address internal constant BAL_ORACLE = 0xdF2917806E30300537aEB49A7663062F4d1F2b5F;
   address internal constant BAL_INTEREST_RATE_STRATEGY = 0xd9d85499449f26d2A2c240defd75314f23920089;
-  address internal constant BAL_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant UNI_UNDERLYING = 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984;
   address internal constant UNI_A_TOKEN = 0xF6D2224916DDFbbab6e6bd0D1B7034f4Ae0CaB18;
@@ -206,7 +195,6 @@ library AaveV3EthereumAssets {
   address internal constant UNI_S_TOKEN = 0x2FEc76324A0463c46f32e74A86D1cf94C02158DC;
   address internal constant UNI_ORACLE = 0x553303d460EE0afB37EdFf9bE42922D8FF63220e;
   address internal constant UNI_INTEREST_RATE_STRATEGY = 0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
-  address internal constant UNI_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant LDO_UNDERLYING = 0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32;
   address internal constant LDO_A_TOKEN = 0x9A44fd41566876A39655f74971a3A6eA0a17a454;
@@ -214,7 +202,6 @@ library AaveV3EthereumAssets {
   address internal constant LDO_S_TOKEN = 0xa0a5bF5781Aeb548db9d4226363B9e89287C5FD2;
   address internal constant LDO_ORACLE = 0xb01e6C9af83879B8e06a092f0DD94309c0D497E4;
   address internal constant LDO_INTEREST_RATE_STRATEGY = 0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
-  address internal constant LDO_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant ENS_UNDERLYING = 0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72;
   address internal constant ENS_A_TOKEN = 0x545bD6c032eFdde65A377A6719DEF2796C8E0f2e;
@@ -222,7 +209,6 @@ library AaveV3EthereumAssets {
   address internal constant ENS_S_TOKEN = 0x7617d02E311CdE347A0cb45BB7DF2926BBaf5347;
   address internal constant ENS_ORACLE = 0x5C00128d4d1c2F4f652C267d7bcdD7aC99C16E16;
   address internal constant ENS_INTEREST_RATE_STRATEGY = 0xf6733B9842883BFE0e0a940eA2F572676af31bde;
-  address internal constant ENS_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant ONE_INCH_UNDERLYING = 0x111111111117dC0aa78b770fA6A738034120C302;
   address internal constant ONE_INCH_A_TOKEN = 0x71Aef7b30728b9BB371578f36c5A1f1502a5723e;
@@ -231,7 +217,6 @@ library AaveV3EthereumAssets {
   address internal constant ONE_INCH_ORACLE = 0xc929ad75B72593967DE83E7F7Cda0493458261D9;
   address internal constant ONE_INCH_INTEREST_RATE_STRATEGY =
     0xf6733B9842883BFE0e0a940eA2F572676af31bde;
-  address internal constant ONE_INCH_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 
   address internal constant FRAX_UNDERLYING = 0x853d955aCEf822Db058eb8505911ED77F175b99e;
   address internal constant FRAX_A_TOKEN = 0xd4e245848d6E1220DBE62e155d89fa327E43CB06;
@@ -240,5 +225,4 @@ library AaveV3EthereumAssets {
   address internal constant FRAX_ORACLE = 0xB9E1E3A9feFf48998E45Fa90847ed4D467E8BcfD;
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
     0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2;
-  address internal constant FRAX_STATA_TOKEN = 0x0000000000000000000000000000000000000000;
 }

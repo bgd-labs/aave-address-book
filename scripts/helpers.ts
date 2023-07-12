@@ -1,5 +1,5 @@
 import {Pool} from './config.js';
-import {Hex, PublicClient, getAddress} from 'viem';
+import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
 
 export const bytes32toAddress = (bytes32: Hex) => {
   return getAddress(`0x${bytes32.slice(26)}`);
@@ -40,9 +40,7 @@ export const generateAdditionalAddressesSol = (
   return '';
 };
 
-export const ZERO_ADDRESS: Hex = '0x0000000000000000000000000000000000000000';
-
 export function addressOrZero(address?: Hex) {
   if (address) return address;
-  return ZERO_ADDRESS;
+  return zeroAddress;
 }

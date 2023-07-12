@@ -8,7 +8,6 @@ import {REWARDS_CONTROLLER_ABI} from './abi/rewardsController_v3_abi.js';
 import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider.js';
 import {STATIC_A_TOKEN_FACTORY_ABI} from './abi/static_a_token_factory_abi.js';
 import {
-  ZERO_ADDRESS,
   addressOrZero,
   bytes32toAddress,
   generateAdditionalAddresses,
@@ -20,7 +19,7 @@ import {
   appendAssetsLibrarySol,
   ReserveData,
 } from './generateAssetsLibrary.js';
-import {Hex, getContract} from 'viem';
+import {Hex, getContract, zeroAddress} from 'viem';
 
 export interface PoolV3WithAddresses extends Pool {
   pool: Hex;
@@ -72,7 +71,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532',
     ]);
 
-    let emissionManager = ZERO_ADDRESS;
+    let emissionManager: Hex = zeroAddress;
     try {
       const incentivesControllerContract = getContract({
         address: defaultIncentivesController,

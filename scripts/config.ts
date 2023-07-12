@@ -43,7 +43,11 @@ export enum ChainId {
 const RPC_PROVIDERS = {
   [ChainId.mainnet]: createPublicClient({
     chain: mainnet,
-    transport: http(),
+    transport: fallback([
+      http('https://eth.llamarpc.com'),
+      http('https://ethereum.publicnode.com'),
+      http('https://cloudflare-eth.com'),
+    ]),
     batch: {
       multicall: true,
     },
