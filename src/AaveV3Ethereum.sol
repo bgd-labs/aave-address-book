@@ -49,9 +49,9 @@ library AaveV3Ethereum {
   address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0x1809f186D680f239420B56948C58F8DbbCdf1E18;
+    0x02e7B8511831B1b02d9018215a0f8f500Ea5c6B3;
 
-  address internal constant SWAP_COLLATERAL_ADAPTER = 0x872fBcb1B582e8Cd0D0DD4327fBFa0B4C2730995;
+  address internal constant SWAP_COLLATERAL_ADAPTER = 0xADC0A53095A0af87F3aa29FE0715B5c28016364e;
 
   address internal constant LISTING_ENGINE = 0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07;
 
@@ -67,6 +67,10 @@ library AaveV3Ethereum {
   address internal constant STATIC_A_TOKEN_FACTORY = 0x17D0D723a6741C8E154594a8850D29D58Bcc9218;
 
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778;
+
+  address internal constant GHO_TOKEN = 0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f;
+
+  address internal constant UI_GHO_DATA_PROVIDER = 0x379c1EDD1A41218bdbFf960a9d5AD2818Bf61aE8;
 }
 
 library AaveV3EthereumAssets {
