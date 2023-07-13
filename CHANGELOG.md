@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.29.0](https://github.com/bgd-labs/aave-address-book/compare/v1.28.0...v1.29.0) (2023-07-13)
+
+
+### Features
+
+* gho addresses ([#170](https://github.com/bgd-labs/aave-address-book/issues/170)) ([9978900](https://github.com/bgd-labs/aave-address-book/commit/99789003b39d2ce5c04d9618199d1b737bc379d1))
+* migrate to viem ([#168](https://github.com/bgd-labs/aave-address-book/issues/168)) ([12e1dc0](https://github.com/bgd-labs/aave-address-book/commit/12e1dc086caca18e1b7e3d5d8ab4059151d53684))
+
+
+### Bug Fixes
+
+* Update addresses of paraswap adapters ([#169](https://github.com/bgd-labs/aave-address-book/issues/169)) ([d77c18d](https://github.com/bgd-labs/aave-address-book/commit/d77c18d577e3ce7a1de654c249fb9d3a51e066f9))
+
 ## [1.28.0](https://github.com/bgd-labs/aave-address-book/compare/v1.27.0...v1.28.0) (2023-07-11)
 
 
