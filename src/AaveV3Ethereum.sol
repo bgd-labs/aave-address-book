@@ -229,4 +229,11 @@ library AaveV3EthereumAssets {
   address internal constant FRAX_ORACLE = 0xB9E1E3A9feFf48998E45Fa90847ed4D467E8BcfD;
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
     0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2;
+
+  address internal constant GHO_UNDERLYING = 0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f;
+  address internal constant GHO_A_TOKEN = 0x00907f9921424583e7ffBfEdf84F92B7B2Be4977;
+  address internal constant GHO_V_TOKEN = 0x786dBff3f1292ae8F92ea68Cf93c30b34B1ed04B;
+  address internal constant GHO_S_TOKEN = 0x3f3DF7266dA30102344A813F1a3D07f5F041B5AC;
+  address internal constant GHO_ORACLE = 0xD110cac5d8682A3b045D5524a9903E031d70FCCd;
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x16E77D8a7192b65fEd49B3374417885Ff4421A74;
 }
