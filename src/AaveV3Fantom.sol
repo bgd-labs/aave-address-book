@@ -44,18 +44,18 @@ library AaveV3Fantom {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
-  address internal constant WETH_GATEWAY = 0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f;
-
-  address internal constant SWAP_COLLATERAL_ADAPTER = 0xE387c6053CE8EC9f8C3fa5cE085Af73114a695d3;
-
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x1408401B2A7E28cB747b3e258D0831Fc926bAC51;
 
-  address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
+  address internal constant SWAP_COLLATERAL_ADAPTER = 0xE387c6053CE8EC9f8C3fa5cE085Af73114a695d3;
+
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x67Da261c14fd94cE7fDd77a0A8476E5b244089A9;
 
   address internal constant UI_POOL_DATA_PROVIDER = 0xddf65434502E459C22263BE2ed7cF0f1FaFD44c0;
 
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x67Da261c14fd94cE7fDd77a0A8476E5b244089A9;
+  address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
+
+  address internal constant WETH_GATEWAY = 0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f;
 }
 
 library AaveV3FantomAssets {

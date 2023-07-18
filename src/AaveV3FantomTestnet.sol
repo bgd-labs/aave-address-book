@@ -41,15 +41,15 @@ library AaveV3FantomTestnet {
 
   address internal constant EMISSION_MANAGER = 0xAf2E5b5cf4aCae5E670eE9619eEd7B90669215f5;
 
-  address internal constant WETH_GATEWAY = 0x87770f04Bbece8092d777860907798138825f303;
-
   address internal constant FAUCET = 0x77523cB4402d241e324Bcf1EcEa91C4f63033B1b;
 
-  address internal constant WALLET_BALANCE_PROVIDER = 0x4E2e1F992A2ba1137fB6e1FcfbEdcaC95cA788e5;
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xFBBdDFfFFcFBD55a6DF325d2be47077875Ef9eB9;
 
   address internal constant UI_POOL_DATA_PROVIDER = 0x9a00043F98941DD4e02E1c7e78676df64F5e37a6;
 
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xFBBdDFfFFcFBD55a6DF325d2be47077875Ef9eB9;
+  address internal constant WALLET_BALANCE_PROVIDER = 0x4E2e1F992A2ba1137fB6e1FcfbEdcaC95cA788e5;
+
+  address internal constant WETH_GATEWAY = 0x87770f04Bbece8092d777860907798138825f303;
 }
 
 library AaveV3FantomTestnetAssets {
