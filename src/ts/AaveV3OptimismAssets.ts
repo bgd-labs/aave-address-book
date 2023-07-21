@@ -105,3 +105,11 @@ export const AaveV3OptimismAssets_MAI_ORACLE = '0x73A3919a69eFCd5b19df8348c6740b
 export const AaveV3OptimismAssets_MAI_INTEREST_RATE_STRATEGY =
   '0xD624AFA34614B4fe7FEe7e1751a2E5E04fb47398';
 export const AaveV3OptimismAssets_MAI_STATA_TOKEN = '0x1aF3854efe7CDece0fb95Bb3a597d0438f9ABB70';
+
+export const AaveV3OptimismAssets_rETH_UNDERLYING = '0x9Bcef72be871e61ED4fBbc7630889beE758eb81D';
+export const AaveV3OptimismAssets_rETH_A_TOKEN = '0x724dc807b04555b71ed48a6896b6F41593b8C637';
+export const AaveV3OptimismAssets_rETH_V_TOKEN = '0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6';
+export const AaveV3OptimismAssets_rETH_S_TOKEN = '0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a';
+export const AaveV3OptimismAssets_rETH_ORACLE = '0x52d5F9f884CA21C27E2100735d793C6771eAB793';
+export const AaveV3OptimismAssets_rETH_INTEREST_RATE_STRATEGY =
+  '0x3B57B081dA6Af5e2759A57bD3211932Cb6176997';
