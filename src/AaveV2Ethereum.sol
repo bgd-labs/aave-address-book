@@ -289,8 +289,8 @@ library AaveV2EthereumAssets {
   address internal constant FEI_A_TOKEN = 0x683923dB55Fead99A79Fa01A27EeC3cB19679cC3;
   address internal constant FEI_V_TOKEN = 0xC2e10006AccAb7B45D9184FcF5b7EC7763f5BaAe;
   address internal constant FEI_S_TOKEN = 0xd89cF9E8A858F8B4b31Faf793505e112d6c17449;
-  address internal constant FEI_ORACLE = 0x7F0D2c2838c6AC24443d13e23d99490017bDe370;
-  address internal constant FEI_INTEREST_RATE_STRATEGY = 0xF0bA2a8c12A2354c075b363765EAe825619bd490;
+  address internal constant FEI_ORACLE = 0xac3AF0f4A52C577Cc2C241dF51a01FDe3D06D93B;
+  address internal constant FEI_INTEREST_RATE_STRATEGY = 0x795dC59EA6472Dfa4298A454C6E8Dcb005643A13;
 
   address internal constant stETH_UNDERLYING = 0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84;
   address internal constant stETH_A_TOKEN = 0x1982b2F5814301d4e9a8b0201555376e62F82428;
