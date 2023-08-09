@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.31.0](https://github.com/bgd-labs/aave-address-book/compare/v1.30.0...v1.31.0) (2023-08-09)
+
+
+### Features
+
+* Add V2 and V3 aToken interfaces (with added nonce getter in V2) ([#182](https://github.com/bgd-labs/aave-address-book/issues/182)) ([908c7aa](https://github.com/bgd-labs/aave-address-book/commit/908c7aac7fcaa693c8be22d72b72b356d01ce5f2))
+
 ## [1.30.0](https://github.com/bgd-labs/aave-address-book/compare/v1.29.0...v1.30.0) (2023-07-18)
 
 
