@@ -50,3 +50,4 @@ export * as AaveV3ScrollAlpha from './AaveV3ScrollAlpha.js';
 export * as AaveV3ScrollAlphaAssets from './AaveV3ScrollAlphaAssets.js';
 export * as AaveV3Metis from './AaveV3Metis.js';
 export * as AaveV3MetisAssets from './AaveV3MetisAssets.js';
+export * as AaveV3Basenet from './AaveV3Basenet.js';
