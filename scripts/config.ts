@@ -16,6 +16,7 @@ import {
   metis,
   sepolia,
   avalanche,
+  base as basenet,
 } from 'viem/chains';
 
 export enum ChainId {
@@ -38,6 +39,7 @@ export enum ChainId {
   sepolia = 11155111,
   scroll_alpha = 534353,
   metis = 1088,
+  basenet = 8453,
 }
 
 const RPC_PROVIDERS = {
@@ -158,6 +160,13 @@ const RPC_PROVIDERS = {
   }),
   [ChainId.metis]: createPublicClient({
     chain: metis,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.basenet]: createPublicClient({
+    chain: basenet,
     transport: http(),
     batch: {
       multicall: true,
@@ -617,6 +626,19 @@ export const pools = [
       UI_INCENTIVE_DATA_PROVIDER: '0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927',
       UI_POOL_DATA_PROVIDER: '0x7dd60bd8507fDC3d300d53427b7AE566701a7320',
       WALLET_BALANCE_PROVIDER: '0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b',
+    },
+  },
+  {
+    name: 'AaveV3Basenet',
+    chainId: ChainId.basenet,
+    addressProvider: '0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D',
+    version: 3,
+    additionalAddresses: {
+      L2_ENCODER: '0x39e97c588B2907Fb67F44fea256Ae3BA064207C5',
+      POOL_ADDRESSES_PROVIDER_REGISTRY: '0x2f6571d3Eb9a4e350C68C36bCD2afe39530078E2',
+      UI_INCENTIVE_DATA_PROVIDER: '0xEdD3b4737C1a0011626631a977b91Cf3E944982d',
+      UI_POOL_DATA_PROVIDER: '0x174446a6741300cD2E7C1b1A636Fee99c8F83502',
+      WALLET_BALANCE_PROVIDER: '0x5779b29B0a34577d927E8D511B595ef9abbFAE82',
     },
   },
 ].map((m) => ({
