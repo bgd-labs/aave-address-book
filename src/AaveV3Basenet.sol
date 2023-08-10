@@ -43,9 +43,9 @@ library AaveV3Basenet {
 
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xbc47546dFb32Afe47640f74A10bC8EA04Cf953d8;
 
-  address internal constant LISTING_ENGINE = 0x6acCc155626E0CF8bFe97e68A17a567394D51238;
+  address internal constant LISTING_ENGINE = 0xdBb0236007FD3697B03A88b4B550b422F57894CF;
 
-  address internal constant RATES_FACTORY = 0xac3AF0f4A52C577Cc2C241dF51a01FDe3D06D93B;
+  address internal constant RATES_FACTORY = 0xC07226Cff8D032E9B20fBf1cEC437D4De5cf9655;
 
   address internal constant L2_ENCODER = 0x39e97c588B2907Fb67F44fea256Ae3BA064207C5;
 
