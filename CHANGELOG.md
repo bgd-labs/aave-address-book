@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.3](https://github.com/bgd-labs/aave-address-book/compare/v1.31.2...v1.31.3) (2023-08-10)
+
+
+### Bug Fixes
+
+* added basenet gov addresses to ts ([#190](https://github.com/bgd-labs/aave-address-book/issues/190)) ([45977b9](https://github.com/bgd-labs/aave-address-book/commit/45977b99b46927d0ec0ca200502903d074cc25c3))
+
 ### [1.31.2](https://github.com/bgd-labs/aave-address-book/compare/v1.31.1...v1.31.2) (2023-08-10)
 
 
