@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.2](https://github.com/bgd-labs/aave-address-book/compare/v1.31.1...v1.31.2) (2023-08-10)
+
+
+### Bug Fixes
+
+* change listing engine and rates factory addresses ([#188](https://github.com/bgd-labs/aave-address-book/issues/188)) ([2cd4c21](https://github.com/bgd-labs/aave-address-book/commit/2cd4c2199eff12dec9b7d3c0a5050d8504d8b4c6))
+
 ### [1.31.1](https://github.com/bgd-labs/aave-address-book/compare/v1.31.0...v1.31.1) (2023-08-10)
 
 ## [1.31.0](https://github.com/bgd-labs/aave-address-book/compare/v1.30.0...v1.31.0) (2023-08-09)
