@@ -41,6 +41,12 @@ library AaveV3Basenet {
 
   address internal constant EMISSION_MANAGER = 0x6533A273F3aC84Df91DCD654D6EBAbA73687e246;
 
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0xbc47546dFb32Afe47640f74A10bC8EA04Cf953d8;
+
+  address internal constant LISTING_ENGINE = 0x6acCc155626E0CF8bFe97e68A17a567394D51238;
+
+  address internal constant RATES_FACTORY = 0xac3AF0f4A52C577Cc2C241dF51a01FDe3D06D93B;
+
   address internal constant L2_ENCODER = 0x39e97c588B2907Fb67F44fea256Ae3BA064207C5;
 
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
