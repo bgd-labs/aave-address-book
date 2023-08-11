@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.4](https://github.com/bgd-labs/aave-address-book/compare/v1.31.3...v1.31.4) (2023-08-11)
+
+
+### Bug Fixes
+
+* updated basenet contracts with new proxy admin ([#192](https://github.com/bgd-labs/aave-address-book/issues/192)) ([8905a2e](https://github.com/bgd-labs/aave-address-book/commit/8905a2e88036434fc6e3b61c06406a4d8e103285))
+
 ### [1.31.3](https://github.com/bgd-labs/aave-address-book/compare/v1.31.2...v1.31.3) (2023-08-10)
 
 
