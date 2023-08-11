@@ -41,17 +41,17 @@ library AaveV3OptimismGoerli {
 
   address internal constant EMISSION_MANAGER = 0x936fF44bb41Fe8d6c3028A016D3255cB3296ECA0;
 
-  address internal constant WETH_GATEWAY = 0x6f7f2440006221F893c587b88f01afc42B6F8d2e;
-
   address internal constant FAUCET = 0x777A5810352302A2D6d79d5B7323237c467845d9;
 
-  address internal constant WALLET_BALANCE_PROVIDER = 0xb463057Eb60E1575e2a69aa17C63CCd2F3161a5f;
-
-  address internal constant UI_POOL_DATA_PROVIDER = 0x9277eFbB991536a98a1aA8b735E9D26d887104C1;
+  address internal constant L2_ENCODER = 0x14AA09449fac437b5c0110614be2C08610e38f62;
 
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x4157398c5abB5211F51F5B551E3e240c5568dbD4;
 
-  address internal constant L2_ENCODER = 0x14AA09449fac437b5c0110614be2C08610e38f62;
+  address internal constant UI_POOL_DATA_PROVIDER = 0x9277eFbB991536a98a1aA8b735E9D26d887104C1;
+
+  address internal constant WALLET_BALANCE_PROVIDER = 0xb463057Eb60E1575e2a69aa17C63CCd2F3161a5f;
+
+  address internal constant WETH_GATEWAY = 0x6f7f2440006221F893c587b88f01afc42B6F8d2e;
 }
 
 library AaveV3OptimismGoerliAssets {

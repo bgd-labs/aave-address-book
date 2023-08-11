@@ -41,33 +41,33 @@ library AaveV3Optimism {
 
   address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
-  address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
-    0x770ef9f4fe897e59daCc474EF11238303F9552b6;
-
-  address internal constant WETH_GATEWAY = 0x76D3030728e52DEB8848d5613aBaDE88441cbc59;
-
-  address internal constant SWAP_COLLATERAL_ADAPTER = 0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857;
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
 
   address internal constant DEBT_SWAP_ADAPTER = 0xb77fc84a549ecc0b410d6fa15159C2df207545a3;
+
+  address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
+
+  address internal constant LISTING_ENGINE = 0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3;
+
+  address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
+    0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
   address internal constant RATES_FACTORY = 0xDd81E6F85358292075B78fc8D5830BE8434aF8BA;
 
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xa12734e64417f61f8442E7D5132EdBFdbDDeF0fa;
 
-  address internal constant LISTING_ENGINE = 0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3;
+  address internal constant STATIC_A_TOKEN_FACTORY = 0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823;
 
-  address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
-
-  address internal constant UI_POOL_DATA_PROVIDER = 0xbd83DdBE37fc91923d59C8c1E0bDe0CccCa332d5;
+  address internal constant SWAP_COLLATERAL_ADAPTER = 0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857;
 
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7;
 
-  address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
+  address internal constant UI_POOL_DATA_PROVIDER = 0xbd83DdBE37fc91923d59C8c1E0bDe0CccCa332d5;
 
-  address internal constant STATIC_A_TOKEN_FACTORY = 0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823;
+  address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
+  address internal constant WETH_GATEWAY = 0x76D3030728e52DEB8848d5613aBaDE88441cbc59;
 }
 
 library AaveV3OptimismAssets {
@@ -175,4 +175,12 @@ library AaveV3OptimismAssets {
   address internal constant MAI_ORACLE = 0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0;
   address internal constant MAI_INTEREST_RATE_STRATEGY = 0xD624AFA34614B4fe7FEe7e1751a2E5E04fb47398;
   address internal constant MAI_STATA_TOKEN = 0x1aF3854efe7CDece0fb95Bb3a597d0438f9ABB70;
+
+  address internal constant rETH_UNDERLYING = 0x9Bcef72be871e61ED4fBbc7630889beE758eb81D;
+  address internal constant rETH_A_TOKEN = 0x724dc807b04555b71ed48a6896b6F41593b8C637;
+  address internal constant rETH_V_TOKEN = 0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6;
+  address internal constant rETH_S_TOKEN = 0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a;
+  address internal constant rETH_ORACLE = 0x52d5F9f884CA21C27E2100735d793C6771eAB793;
+  address internal constant rETH_INTEREST_RATE_STRATEGY =
+    0x3B57B081dA6Af5e2759A57bD3211932Cb6176997;
 }
