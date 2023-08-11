@@ -6,7 +6,7 @@ const config: Options = {
   clean: true,
   entry: ['src/ts/*.ts'],
   sourcemap: true,
-  format: ['iife', 'cjs', 'esm'],
+  format: ['cjs', 'esm'],
   dts: true,
 };
 
