@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.31.6](https://github.com/bgd-labs/aave-address-book/compare/v1.31.5...v1.31.6) (2023-08-11)
+
+
+### Bug Fixes
+
+* support cjs ([#197](https://github.com/bgd-labs/aave-address-book/issues/197)) ([6ff3a0d](https://github.com/bgd-labs/aave-address-book/commit/6ff3a0d6ee99bfb889a045942d48bd1e2cf83f92))
+
 ### [1.31.5](https://github.com/bgd-labs/aave-address-book/compare/v1.31.4...v1.31.5) (2023-08-11)
 
 ### [1.31.4](https://github.com/bgd-labs/aave-address-book/compare/v1.31.3...v1.31.4) (2023-08-11)
