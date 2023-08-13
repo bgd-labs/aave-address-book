@@ -16,7 +16,7 @@ import {
   metis,
   sepolia,
   avalanche,
-  base as basenet,
+  base,
 } from 'viem/chains';
 
 export enum ChainId {
@@ -39,7 +39,7 @@ export enum ChainId {
   sepolia = 11155111,
   scroll_alpha = 534353,
   metis = 1088,
-  basenet = 8453,
+  base = 8453,
 }
 
 const RPC_PROVIDERS = {
@@ -165,8 +165,8 @@ const RPC_PROVIDERS = {
       multicall: true,
     },
   }),
-  [ChainId.basenet]: createPublicClient({
-    chain: basenet,
+  [ChainId.base]: createPublicClient({
+    chain: base,
     transport: http(),
     batch: {
       multicall: true,
@@ -629,8 +629,8 @@ export const pools = [
     },
   },
   {
-    name: 'AaveV3Basenet',
-    chainId: ChainId.basenet,
+    name: 'AaveV3Base',
+    chainId: ChainId.base,
     addressProvider: '0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D',
     version: 3,
     additionalAddresses: {
