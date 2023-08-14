@@ -9,18 +9,24 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./dist/AaveAddressBook.cjs",
+  "main": "./dist/AaveAddressBook.js",
+  "module": "./dist/AaveAddressBook.mjs",
   "types": "./dist/AaveAddressBook.d.ts",
   "exports": {
-    "require": "./dist/AaveAddressBook.cjs",
-    "import": {
+    ".": {
+      "require": {
+        "types": "./dist/AaveAddressBook.d.ts",
+        "default": "./dist/AaveAddressBook.js"
+      },
+      "import": {
+        "types": "./dist/AaveAddressBook.mts",
+        "default": "./dist/AaveAddressBook.mjs"
+      },
       "types": "./dist/AaveAddressBook.d.ts",
       "default": "./dist/AaveAddressBook.js"
-    },
-    "default": "./dist/AaveAddressBook.js"
+    }
   },
   "sideEffects": false,
-  "type": "module",
   "scripts": {
     "prettier": "prettier --write 'src/**/*.{sol,ts}'",
     "generate": "node --loader ts-node/esm scripts/generator.ts && npm run prettier",
