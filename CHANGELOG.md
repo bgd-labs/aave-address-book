@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.32.0](https://github.com/bgd-labs/aave-address-book/compare/v1.31.7...v1.32.0) (2023-08-14)
+
+
+### Features
+
+* alpha releases ([#201](https://github.com/bgd-labs/aave-address-book/issues/201)) ([0b595f3](https://github.com/bgd-labs/aave-address-book/commit/0b595f30fb8f55585623c128a75ce00e7cb8c730))
+
 ### [1.31.7](https://github.com/bgd-labs/aave-address-book/compare/v1.31.6...v1.31.7) (2023-08-14)
 
 
