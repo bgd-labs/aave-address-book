@@ -3,6 +3,11 @@ import fs from 'fs';
 import {Pool, pools} from './config.js';
 import {PoolV2WithAddresses, fetchPoolV2Addresses, writeV2Templates} from './generator_v2.js';
 import {PoolV3WithAddresses, fetchPoolV3Addresses, writeV3Templates} from './generator_v3.js';
+import {
+  fetchV3ExecutorAddresses,
+  GovV3WithExecutors,
+  writeGovV3Templates,
+} from './generator_gov_v3';
 
 async function generateV2Pools(pools: Pool[]) {
   let generatedPools: PoolV2WithAddresses[] = [];
@@ -39,6 +44,22 @@ async function generateV3Pools(pools: Pool[]) {
   generatedPools.map((addresses) => writeV3Templates(addresses));
 }
 
+async function generateGovV3(pools: Pool[]) {
+  let generatedPools: GovV3WithExecutors[] = [];
+  for (let i = 0; i < pools.length; i++) {
+    if (pools[i].govV3Addresses) {
+      const executors = await fetchV3ExecutorAddresses(pools[i]);
+      generatedPools[i] = {
+        ...executors,
+        ...pools[i].govV3Addresses,
+        name: pools[i].name,
+      };
+    }
+  }
+
+  generatedPools.map((addresses) => writeGovV3Templates(addresses));
+}
+
 async function generatePools() {
   // Create the test for the specified pool
   const aaveAddressBookSolidityTemplate = `// SPDX-License-Identifier: MIT
@@ -61,6 +82,7 @@ import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
   await Promise.all([
     generateV2Pools(pools.filter((pool) => pool.version === 2)),
     generateV3Pools(pools.filter((pool) => pool.version === 3)),
+    generateGovV3(pools.filter((pool) => pool.version === 3)),
   ]);
 }
 

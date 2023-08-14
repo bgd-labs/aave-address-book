@@ -26,6 +26,20 @@ export const generateAdditionalAddresses = (
   return '';
 };
 
+export const generateAdditionalGovV3Addresses = (
+  govV3Addresses: Pool['govV3Addresses']
+): string => {
+  if (govV3Addresses) {
+    return Object.keys(govV3Addresses).reduce((acc, key) => {
+      acc += `export const ${key} = "${
+        govV3Addresses![key as keyof typeof govV3Addresses]
+      }";\n`;
+      return acc;
+    }, '');
+  }
+  return '';
+};
+
 export const generateAdditionalAddressesSol = (
   additionalAddresses: Pool['additionalAddresses']
 ): string => {
@@ -33,6 +47,20 @@ export const generateAdditionalAddressesSol = (
     return Object.keys(additionalAddresses).reduce((acc, key) => {
       acc += `address internal constant ${key} = ${
         additionalAddresses![key as keyof typeof additionalAddresses]
+      };\n\n`;
+      return acc;
+    }, '');
+  }
+  return '';
+};
+
+export const generateAdditionalGovV3AddressesSol = (
+  govV3Addresses: Pool['govV3Addresses']
+): string => {
+  if (govV3Addresses) {
+    return Object.keys(govV3Addresses).reduce((acc, key) => {
+      acc += `address internal constant ${key} = ${
+        govV3Addresses![key as keyof typeof govV3Addresses]
       };\n\n`;
       return acc;
     }, '');
