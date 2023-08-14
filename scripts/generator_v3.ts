@@ -1,24 +1,20 @@
-import {Pool} from './config.js';
+import {Pool} from './config';
 import fs from 'fs';
-import {ADDRESS_PROVIDER_V3_ABI} from './abi/address_provider_v3_abi.js';
-import {A_TOKEN_V3_ABI} from './abi/aToken_v3_abi.js';
-import {STABLE_DEBT_TOKEN_ABI} from './abi/stableDebtToken_v3_abi.js';
-import {VARIABLE_DEBT_TOKEN_ABI} from './abi/variableDebtToken_v3_abi.js';
-import {REWARDS_CONTROLLER_ABI} from './abi/rewardsController_v3_abi.js';
-import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider.js';
-import {STATIC_A_TOKEN_FACTORY_ABI} from './abi/static_a_token_factory_abi.js';
+import {ADDRESS_PROVIDER_V3_ABI} from './abi/address_provider_v3_abi';
+import {A_TOKEN_V3_ABI} from './abi/aToken_v3_abi';
+import {STABLE_DEBT_TOKEN_ABI} from './abi/stableDebtToken_v3_abi';
+import {VARIABLE_DEBT_TOKEN_ABI} from './abi/variableDebtToken_v3_abi';
+import {REWARDS_CONTROLLER_ABI} from './abi/rewardsController_v3_abi';
+import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider';
+import {STATIC_A_TOKEN_FACTORY_ABI} from './abi/static_a_token_factory_abi';
 import {
   addressOrZero,
   bytes32toAddress,
   generateAdditionalAddresses,
   generateAdditionalAddressesSol,
   getImplementationStorageSlot,
-} from './helpers.js';
-import {
-  appendAssetsLibraryJs,
-  appendAssetsLibrarySol,
-  ReserveData,
-} from './generateAssetsLibrary.js';
+} from './helpers';
+import {appendAssetsLibraryJs, appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
 import {Hex, getContract, zeroAddress} from 'viem';
 
 export interface PoolV3WithAddresses extends Pool {
@@ -324,7 +320,7 @@ export const CHAIN_ID = ${chainId};
 export const EMISSION_MANAGER = "${emissionManager}";
 ${generateAdditionalAddresses(additionalAddresses)}`;
   fs.writeFileSync(`./src/ts/${name}.ts`, templateV3Js);
-  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}.js";\r\n`);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}";\r\n`);
 
   if (reservesData.length) {
     appendAssetsLibraryJs(name, reservesData);

@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.32.0](https://github.com/bgd-labs/aave-address-book/compare/v1.31.7...v1.32.0) (2023-08-14)
+
+
+### Features
+
+* alpha releases ([#201](https://github.com/bgd-labs/aave-address-book/issues/201)) ([0b595f3](https://github.com/bgd-labs/aave-address-book/commit/0b595f30fb8f55585623c128a75ce00e7cb8c730))
+
+### [1.31.7](https://github.com/bgd-labs/aave-address-book/compare/v1.31.6...v1.31.7) (2023-08-14)
+
+
+### Bug Fixes
+
+* chain chain name from basenet to base ([#200](https://github.com/bgd-labs/aave-address-book/issues/200)) ([dc4a4de](https://github.com/bgd-labs/aave-address-book/commit/dc4a4dea4d703ab8d7c1908a0db89332f644e50d))
+
 ### [1.31.6](https://github.com/bgd-labs/aave-address-book/compare/v1.31.5...v1.31.6) (2023-08-11)
 
 

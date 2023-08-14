@@ -1,16 +1,12 @@
-import {Pool} from './config.js';
+import {Pool} from './config';
 import fs from 'fs';
-import {ADDRESS_PROVIDER_V2_ABI} from './abi/address_provider_v2_abi.js';
-import {LENDING_POOL_V2_ABI} from './abi/lending_pool_v2_abi.js';
-import {A_TOKEN_V2_ABI} from './abi/aToken_v2_abi.js';
-import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider.js';
-import {INCENTIVES_CONTROLLER_ABI} from './abi/incentivesController_abi.js';
-import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers.js';
-import {
-  appendAssetsLibraryJs,
-  appendAssetsLibrarySol,
-  ReserveData,
-} from './generateAssetsLibrary.js';
+import {ADDRESS_PROVIDER_V2_ABI} from './abi/address_provider_v2_abi';
+import {LENDING_POOL_V2_ABI} from './abi/lending_pool_v2_abi';
+import {A_TOKEN_V2_ABI} from './abi/aToken_v2_abi';
+import {UI_POOL_DATA_PROVIDER_ABI} from './abi/uipooldata_provider';
+import {INCENTIVES_CONTROLLER_ABI} from './abi/incentivesController_abi';
+import {generateAdditionalAddresses, generateAdditionalAddressesSol} from './helpers';
+import {appendAssetsLibraryJs, appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
 import {Hex, getContract} from 'viem';
 
 export interface PoolV2WithAddresses extends Pool {
@@ -213,7 +209,7 @@ export const EMISSION_MANAGER = "${emissionManager}";
 export const CHAIN_ID = ${chainId};
 ${generateAdditionalAddresses(additionalAddresses)}`;
   fs.writeFileSync(`./src/ts/${name}.ts`, templateV2Js);
-  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}.js";\r\n`);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as ${name} from "./${name}";\r\n`);
 
   if (reservesData.length) {
     appendAssetsLibraryJs(name, reservesData);
