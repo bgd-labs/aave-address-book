@@ -1,4 +1,4 @@
-import {Pool} from './config.js';
+import {Pool} from './config';
 import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
 
 export const bytes32toAddress = (bytes32: Hex) => {

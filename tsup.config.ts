@@ -1,13 +1,15 @@
-import type {Options} from 'tsup';
+import {defineConfig} from 'tsup';
+import {esbuildPluginFilePathExtensions} from 'esbuild-plugin-file-path-extensions';
 
-const config: Options = {
-  bundle: false,
-  splitting: false,
-  clean: true,
-  entry: ['src/ts/*.ts'],
-  sourcemap: true,
+// https://github.com/egoist/tsup/issues/953
+export default await defineConfig({
   format: ['cjs', 'esm'],
+  entry: ['src/ts/*.ts'],
+  outDir: './dist',
+  bundle: true,
+  sourcemap: true,
+  clean: true,
+  splitting: false,
   dts: true,
-};
-
-export default config;
+  esbuildPlugins: [esbuildPluginFilePathExtensions()],
+});

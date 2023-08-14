@@ -1,11 +1,10 @@
-name: Test
+name: Test & release
 
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
 
 on:
-  pull_request:
   push:
     branches:
       - main
@@ -15,7 +14,9 @@ jobs:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
   release:
     uses: bgd-labs/github-workflows/.github/workflows/release.yml@main
+    needs: test
   release-node:
     uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
+    needs: test
     secrets:
       NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
