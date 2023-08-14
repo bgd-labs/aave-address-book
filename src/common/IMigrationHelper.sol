@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
+import {IPool as IV3Pool} from '../AaveV3.sol';
+
 interface IMigrationHelper {
   struct PermitInput {
     address aToken;

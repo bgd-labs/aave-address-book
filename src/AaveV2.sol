@@ -3,7 +3,6 @@ pragma solidity >=0.6.0;
 pragma experimental ABIEncoderV2;
 
 import {AggregatorInterface} from './common/AggregatorInterface.sol';
-import {IPool as IV3Pool} from './AaveV3.sol';
 
 library DataTypes {
   // refer to the whitepaper, section 1.1 basic concepts for a formal description of these properties.
