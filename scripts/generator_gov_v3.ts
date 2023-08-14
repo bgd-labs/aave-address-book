@@ -13,7 +13,7 @@ export type ExecutorsV3 = {
   EXECUTOR_LVL_2: Hex;
 };
 
-export type GovV3WithExecutors = ExecutorsV3 & GovV3Addresses & {name: string};
+export type GovV3WithExecutors = ExecutorsV3 & GovV3Addresses;
 
 export async function fetchV3ExecutorAddresses(
   payloadsController: Hex,
@@ -43,16 +43,15 @@ export async function fetchV3ExecutorAddresses(
   return executors;
 }
 
-export function writeGovV3Templates(govV3Addresses: GovV3WithExecutors): void {
-  const templateGovV3Solidity = `\n\nlibrary ${govV3Addresses.name} {
+export function writeGovV3Templates(govV3Addresses: GovV3WithExecutors, name: string): void {
+  const templateGovV3Solidity = `\n\nlibrary ${name}GovV3 {
     ${generateAdditionalGovV3AddressesSol(govV3Addresses)}
   }
   `;
 
-  fs.appendFileSync(`./src/${govV3Addresses.name}.sol`, templateGovV3Solidity);
+  fs.appendFileSync(`./src/${name}.sol`, templateGovV3Solidity);
 
-  const templateGovV3Js = `
-${generateAdditionalGovV3Addresses(govV3Addresses)}`;
+  const templateGovV3Js = `${generateAdditionalGovV3Addresses(govV3Addresses)}`;
 
-  fs.appendFileSync(`./src/ts/${govV3Addresses.name}.ts`, templateGovV3Js);
+  fs.appendFileSync(`./src/ts/${name}.ts`, templateGovV3Js);
 }

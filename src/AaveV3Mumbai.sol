@@ -178,7 +178,7 @@ library AaveV3MumbaiAssets {
     0x03a06e4478b52cE3D378b8942712a623f06a4E8B;
 }
 
-library AaveV3Mumbai {
+library AaveV3MumbaiGovV3 {
   address internal constant EXECUTOR_LVL_1 = 0x858859CCDDa608941bB64D260a836298c49Ff0C7;
 
   address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
@@ -188,6 +188,4 @@ library AaveV3Mumbai {
   address internal constant VOTING_MACHINE = 0x05D0215cFC8D4B726085ADDb1ce43bC5C70f9D8f;
 
   address internal constant PAYLOADS_CONTROLLER = 0x92041C9904d1F0b8100D1d7e01B760d2cF1Fb426;
-
-  address internal constant name = AaveV3Mumbai;
 }

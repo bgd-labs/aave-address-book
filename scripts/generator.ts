@@ -47,20 +47,22 @@ async function generateV3Pools(pools: Pool[]) {
 }
 
 async function generateGovV3(pools: Pool[]) {
-  let generatedPools: GovV3WithExecutors[] = [];
+  let generatedPools: {addresses: GovV3WithExecutors; name: string}[] = [];
   for (let i = 0; i < pools.length; i++) {
     const payloadsController = pools[i].govV3Addresses?.PAYLOADS_CONTROLLER;
     if (payloadsController !== undefined) {
       const executors = await fetchV3ExecutorAddresses(payloadsController, pools[i].provider);
       generatedPools[i] = {
-        ...executors,
-        ...pools[i].govV3Addresses,
+        addresses: {
+          ...executors,
+          ...pools[i].govV3Addresses,
+        },
         name: pools[i].name,
       };
     }
   }
 
-  generatedPools.map((addresses) => writeGovV3Templates(addresses));
+  generatedPools.map(({addresses, name}) => writeGovV3Templates(addresses, name));
 }
 
 async function generatePools() {
