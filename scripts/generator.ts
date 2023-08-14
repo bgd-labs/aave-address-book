@@ -8,6 +8,7 @@ import {
   GovV3WithExecutors,
   writeGovV3Templates,
 } from './generator_gov_v3';
+import {addressOrZero} from './helpers';
 
 async function generateV2Pools(pools: Pool[]) {
   let generatedPools: PoolV2WithAddresses[] = [];
@@ -47,8 +48,9 @@ async function generateV3Pools(pools: Pool[]) {
 async function generateGovV3(pools: Pool[]) {
   let generatedPools: GovV3WithExecutors[] = [];
   for (let i = 0; i < pools.length; i++) {
-    if (pools[i].govV3Addresses) {
-      const executors = await fetchV3ExecutorAddresses(pools[i]);
+    const payloadsController = pools[i].govV3Addresses?.PAYLOADS_CONTROLLER;
+    if (payloadsController !== undefined) {
+      const executors = await fetchV3ExecutorAddresses(payloadsController, pools[i].provider);
       generatedPools[i] = {
         ...executors,
         ...pools[i].govV3Addresses,
