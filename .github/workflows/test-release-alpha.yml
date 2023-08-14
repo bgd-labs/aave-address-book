@@ -1,0 +1,16 @@
+name: Test
+
+concurrency:
+  group: ${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+
+jobs:
+  test:
+    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
+  release-node-alpha:
+    uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
+    secrets:
+      NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
