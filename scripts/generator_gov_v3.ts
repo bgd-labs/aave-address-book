@@ -48,7 +48,7 @@ export function writeGovV3Templates(govV3Addresses: GovV3WithExecutors): void {
     ${generateAdditionalGovV3AddressesSol(govV3Addresses)}
   }
   `;
-  console.log('----> ', govV3Addresses.name);
+
   fs.appendFileSync(`./src/${govV3Addresses.name}.sol`, templateGovV3Solidity);
 
   const templateGovV3Js = `
