@@ -116,3 +116,17 @@ library AaveV3FujiAssets {
   address internal constant WAVAX_INTEREST_RATE_STRATEGY =
     0x0C180A0174Bf93aa0FE70B7AA6dB536a87e74A20;
 }
+
+library AaveV3Fuji {
+  address internal constant EXECUTOR_LVL_1 = 0xACd2b1bA0B85FaF0f45D4974Ba8ee538E157fBc6;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant CROSS_CHAIN_CONTROLLER = 0x5488A48E5C22175548E8d68622211F5928cBbf23;
+
+  address internal constant VOTING_MACHINE = 0x79Edd77c76F95b6b69907CaD1d8241F9DB0e3FD0;
+
+  address internal constant PAYLOADS_CONTROLLER = 0xf1842f9D6C3D9ec1153d7afCBb9cDBC537Ea5d15;
+
+  address internal constant name = AaveV3Fuji;
+}

@@ -43,6 +43,7 @@ async function generateV3Pools(pools: Pool[]) {
   }
 
   generatedPools.map((addresses) => writeV3Templates(addresses));
+  await generateGovV3(pools);
 }
 
 async function generateGovV3(pools: Pool[]) {
@@ -50,6 +51,7 @@ async function generateGovV3(pools: Pool[]) {
   for (let i = 0; i < pools.length; i++) {
     const payloadsController = pools[i].govV3Addresses?.PAYLOADS_CONTROLLER;
     if (payloadsController !== undefined) {
+      console.log('-----------------------');
       const executors = await fetchV3ExecutorAddresses(payloadsController, pools[i].provider);
       generatedPools[i] = {
         ...executors,
@@ -84,7 +86,6 @@ import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
   await Promise.all([
     generateV2Pools(pools.filter((pool) => pool.version === 2)),
     generateV3Pools(pools.filter((pool) => pool.version === 3)),
-    generateGovV3(pools.filter((pool) => pool.version === 3)),
   ]);
 }
 
