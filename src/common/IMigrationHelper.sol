@@ -4,10 +4,11 @@ pragma solidity ^0.8.10;
 import {IPool as IV3Pool} from '../AaveV3.sol';
 import {ILendingPool as IV2Pool} from '../AaveV2.sol';
 import {ICreditDelegationToken} from 'aave-v3-core/contracts/interfaces/ICreditDelegationToken.sol';
+import {IERC20WithPermit} from 'aave-v3-core/contracts/interfaces/IERC20WithPermit.sol';
 
 interface IMigrationHelper {
   struct PermitInput {
-    address aToken;
+    IERC20WithPermit aToken;
     uint256 value;
     uint256 deadline;
     uint8 v;
