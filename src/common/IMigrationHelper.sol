@@ -2,7 +2,8 @@
 pragma solidity ^0.8.10;
 
 import {IPool as IV3Pool} from '../AaveV3.sol';
-import {ILendingPool} from '../AaveV2.sol';
+import {ILendingPool as IV2Pool} from '../AaveV2.sol';
+import {ICreditDelegationToken} from 'aave-v3-core/contracts/interfaces/ICreditDelegationToken.sol';
 
 interface IMigrationHelper {
   struct PermitInput {
@@ -15,7 +16,7 @@ interface IMigrationHelper {
   }
 
   struct CreditDelegationInput {
-    address debtToken;
+    ICreditDelegationToken debtToken;
     uint256 value;
     uint256 deadline;
     uint8 v;
@@ -92,7 +93,7 @@ interface IMigrationHelper {
   ) external view returns (address, uint256);
 
   /// @notice The source pool
-  function V2_POOL() external returns (ILendingPool);
+  function V2_POOL() external returns (IV2Pool);
 
   /// @notice The destination pool
   function V3_POOL() external returns (IV3Pool);
