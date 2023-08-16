@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.10;
+pragma solidity ^0.8.0;
 
 import {IPool as IV3Pool} from '../AaveV3.sol';
 import {ILendingPool as IV2Pool} from '../AaveV2.sol';
@@ -37,7 +37,7 @@ interface IMigrationHelper {
   }
 
   struct EmergencyTransferInput {
-    address asset;
+    IERC20WithPermit asset;
     uint256 amount;
     address to;
   }
