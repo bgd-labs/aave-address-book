@@ -246,3 +246,11 @@ library AaveV3EthereumAssets {
   address internal constant RPL_ORACLE = 0x4E155eD98aFE9034b7A5962f6C84c86d869daA9d;
   address internal constant RPL_INTEREST_RATE_STRATEGY = 0xD87974E8ED49AB16d5053ba793F4e17078Be0426;
 }
+
+library AaveV3EthereumGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant CROSS_CHAIN_CONTROLLER = 0x6aaD18a3cafB04b9a70761943796eCC179A1D933;
+}

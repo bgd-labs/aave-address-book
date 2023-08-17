@@ -118,3 +118,9 @@ library AaveV3ArbitrumGoerliAssets {
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0xEaC5EbD74Ff5111E18eBc0bbFCc8eA5786685D5A;
 }
+
+library AaveV3ArbitrumGoerliGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+}

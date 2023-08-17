@@ -118,3 +118,9 @@ library AaveV3ScrollAlphaAssets {
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0x9c41A3E545126Cc2c160634405E00461Ec30F709;
 }
+
+library AaveV3ScrollAlphaGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+}

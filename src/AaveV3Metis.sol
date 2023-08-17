@@ -100,3 +100,9 @@ library AaveV3MetisAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0x83e654d42f437915bf849dE04c19AAd8C5e8c01E;
 }
+
+library AaveV3MetisGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+}

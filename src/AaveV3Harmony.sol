@@ -118,3 +118,9 @@ library AaveV3HarmonyAssets {
   address internal constant WONE_INTEREST_RATE_STRATEGY =
     0x145dE30c929a065582da84Cf96F88460dB9745A7;
 }
+
+library AaveV3HarmonyGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+}

@@ -99,3 +99,9 @@ library AaveV3GoerliGhoAssets {
   address internal constant GHO_ORACLE = 0xDD714B0A68b9c81C6878688c5dc6238f8AC8eadD;
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0xa0b2a67C9AE5f52201DA9cBe03866D3f5cd725AF;
 }
+
+library AaveV3GoerliGhoGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+}

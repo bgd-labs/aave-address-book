@@ -131,3 +131,9 @@ library AaveV3FantomTestnetAssets {
   address internal constant SUSHI_INTEREST_RATE_STRATEGY =
     0x036cd658D892512d403bFB12b1E724e801D36888;
 }
+
+library AaveV3FantomTestnetGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+}

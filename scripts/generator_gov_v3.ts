@@ -4,7 +4,7 @@ import {
   generateAdditionalGovV3Addresses,
   generateAdditionalGovV3AddressesSol,
 } from './helpers';
-import {getContract, Hex, PublicClient} from 'viem';
+import {getContract, Hex, PublicClient, zeroAddress} from 'viem';
 import {PAYLOADS_CONTROLLER_ABI} from './abi/payloads_controller_abi';
 import {GovV3Addresses} from './config';
 
@@ -24,22 +24,24 @@ export async function fetchV3ExecutorAddresses(
     EXECUTOR_LVL_2: addressOrZero(),
   };
 
-  // executors
-  const payloadsControllerContract = getContract({
-    address: payloadsController,
-    abi: PAYLOADS_CONTROLLER_ABI,
-    publicClient: provider,
-  });
+  if (payloadsController !== zeroAddress) {
+    // executors
+    const payloadsControllerContract = getContract({
+      address: payloadsController,
+      abi: PAYLOADS_CONTROLLER_ABI,
+      publicClient: provider,
+    });
 
-  const executorLvl1 = await payloadsControllerContract.read.getExecutorSettingsByAccessControl([
-    1,
-  ]);
-  const executorLvl2 = await payloadsControllerContract.read.getExecutorSettingsByAccessControl([
-    2,
-  ]);
+    const executorLvl1 = await payloadsControllerContract.read.getExecutorSettingsByAccessControl([
+      1,
+    ]);
+    const executorLvl2 = await payloadsControllerContract.read.getExecutorSettingsByAccessControl([
+      2,
+    ]);
 
-  executors.EXECUTOR_LVL_1 = executorLvl1.executor;
-  executors.EXECUTOR_LVL_2 = executorLvl2.executor;
+    executors.EXECUTOR_LVL_1 = executorLvl1.executor;
+    executors.EXECUTOR_LVL_2 = executorLvl2.executor;
+  }
   return executors;
 }
 

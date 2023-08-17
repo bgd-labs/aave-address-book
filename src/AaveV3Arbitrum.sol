@@ -202,3 +202,11 @@ library AaveV3ArbitrumAssets {
   address internal constant ARB_ORACLE = 0xb2A824043730FE05F3DA2efaFa1CBbe83fa548D6;
   address internal constant ARB_INTEREST_RATE_STRATEGY = 0xD87974E8ED49AB16d5053ba793F4e17078Be0426;
 }
+
+library AaveV3ArbitrumGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant CROSS_CHAIN_CONTROLLER = 0x5DA7D1150e7dc6eE060c75c5BdE00Fa92Eb9a675;
+}

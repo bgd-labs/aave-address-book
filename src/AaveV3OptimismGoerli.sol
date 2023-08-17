@@ -118,3 +118,9 @@ library AaveV3OptimismGoerliAssets {
   address internal constant SUSD_INTEREST_RATE_STRATEGY =
     0x3A1ED60315BEF296ad37CcFc01fA4698C7F31f73;
 }
+
+library AaveV3OptimismGoerliGovV3 {
+  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+}
