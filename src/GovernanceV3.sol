@@ -42,11 +42,8 @@ interface IGovernancePowerStrategy {
    * @param user address where we want to get the power from
    * @return full proposition power of a user
    */
-  function getFullPropositionPower(
-    address user
-  ) external view returns (uint256);
+  function getFullPropositionPower(address user) external view returns (uint256);
 }
-
 
 interface IPayloadsControllerCore {
   /// @notice Enum indicating the possible payload states
@@ -214,18 +211,14 @@ interface IPayloadsControllerCore {
    * @param payloadId id of the payload to retrieve
    * @return payload information
    */
-  function getPayloadById(
-    uint40 payloadId
-  ) external view returns (Payload memory);
+  function getPayloadById(uint40 payloadId) external view returns (Payload memory);
 
   /**
    * @notice get the current state of a payload
    * @param payloadId id of the payload to retrieve the state from
    * @return payload state
    */
-  function getPayloadState(
-    uint40 payloadId
-  ) external view returns (PayloadState);
+  function getPayloadState(uint40 payloadId) external view returns (PayloadState);
 
   /**
    * @notice get the total count of payloads created
@@ -238,9 +231,7 @@ interface IPayloadsControllerCore {
    * @param actions array of actions which this proposal payload will contain
    * @return id of the created payload
    */
-  function createPayload(
-    ExecutionAction[] calldata actions
-  ) external returns (uint40);
+  function createPayload(ExecutionAction[] calldata actions) external returns (uint40);
 
   /**
    * @notice method to execute a payload
@@ -431,11 +422,7 @@ interface IGovernanceCore {
    * @param votesFor votes for proposal
    * @param votesAgainst votes against proposal
    */
-  event ProposalQueued(
-    uint256 indexed proposalId,
-    uint128 votesFor,
-    uint128 votesAgainst
-  );
+  event ProposalQueued(uint256 indexed proposalId, uint128 votesFor, uint128 votesAgainst);
 
   /**
    * @notice emitted when proposal change state to Executed
@@ -455,21 +442,14 @@ interface IGovernanceCore {
    * @param votesFor votes for proposal
    * @param votesAgainst votes against proposal
    */
-  event ProposalFailed(
-    uint256 indexed proposalId,
-    uint128 votesFor,
-    uint128 votesAgainst
-  );
+  event ProposalFailed(uint256 indexed proposalId, uint128 votesFor, uint128 votesAgainst);
 
   /**
    * @notice emitted when a voting machine gets updated
    * @param votingPortal address of the voting portal updated
    * @param approved boolean indicating if a voting portal has been added or removed
    */
-  event VotingPortalUpdated(
-    address indexed votingPortal,
-    bool indexed approved
-  );
+  event VotingPortalUpdated(address indexed votingPortal, bool indexed approved);
 
   /**
    * @notice emitted when a payload is successfully sent to the execution chain
@@ -579,9 +559,7 @@ interface IGovernanceCore {
    * @notice method to set the voting configuration for a determined access level
    * @param votingConfigs object containing configuration for an access level
    */
-  function setVotingConfigs(
-    SetVotingConfigInput[] calldata votingConfigs
-  ) external;
+  function setVotingConfigs(SetVotingConfigInput[] calldata votingConfigs) external;
 
   /**
    * @notice method to get the voting configuration from an access level
@@ -641,9 +619,7 @@ interface IGovernanceCore {
    * @param proposalId id of the proposal to get the information of
    * @return proposal object containing all the information
    */
-  function getProposal(
-    uint256 proposalId
-  ) external view returns (Proposal memory);
+  function getProposal(uint256 proposalId) external view returns (Proposal memory);
 
   /**
    * @notice address of the current voting strategy to use on the governance
@@ -662,9 +638,7 @@ interface IGovernanceCore {
    * @param votingPortal address of the voting portal to check if approved
    * @return flag indicating the approval status of the voting portal
    */
-  function isVotingPortalApproved(
-    address votingPortal
-  ) external view returns (bool);
+  function isVotingPortalApproved(address votingPortal) external view returns (bool);
 
   /**
    * @notice method to queue a proposal for execution
@@ -672,11 +646,7 @@ interface IGovernanceCore {
    * @param forVotes number of votes in favor of the proposal
    * @param againstVotes number of votes against of the proposal
    */
-  function queueProposal(
-    uint256 proposalId,
-    uint128 forVotes,
-    uint128 againstVotes
-  ) external;
+  function queueProposal(uint256 proposalId, uint128 forVotes, uint128 againstVotes) external;
 
   /**
    * @notice method to send proposal to votingMachine
