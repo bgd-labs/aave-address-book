@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.33.0](https://github.com/bgd-labs/aave-address-book/compare/v1.32.0...v1.33.0) (2023-08-18)
+
+
+### Features
+
+* Add IMigrationHelper interface ([#185](https://github.com/bgd-labs/aave-address-book/issues/185)) ([b87a51d](https://github.com/bgd-labs/aave-address-book/commit/b87a51d014167effaaa7f6f7e33562b223b3d6b2))
+
+
+### Bug Fixes
+
+* add weth gateway address to base ([#207](https://github.com/bgd-labs/aave-address-book/issues/207)) ([b37eb99](https://github.com/bgd-labs/aave-address-book/commit/b37eb991c690cf19dae7945baf139ce1fba5c36b))
+
 ## [1.32.0](https://github.com/bgd-labs/aave-address-book/compare/v1.31.7...v1.32.0) (2023-08-14)
 
 
