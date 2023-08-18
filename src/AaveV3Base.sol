@@ -57,4 +57,6 @@ library AaveV3Base {
   address internal constant UI_POOL_DATA_PROVIDER = 0x174446a6741300cD2E7C1b1A636Fee99c8F83502;
 
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;
+
+  address internal constant WETH_GATEWAY = 0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee;
 }
