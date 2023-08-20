@@ -125,7 +125,7 @@ library AaveV2EthereumAssets {
   address internal constant BUSD_S_TOKEN = 0x4A7A63909A72D268b1D8a93a9395d098688e0e5C;
   address internal constant BUSD_ORACLE = 0x614715d2Af89E6EC99A233818275142cE88d1Cfd;
   address internal constant BUSD_INTEREST_RATE_STRATEGY =
-    0xB28cA2760001c9837430F20c50fD89Ed56A449f0;
+    0xF1AafF9a4Da6Bf4Fb8fc18d39C8ffdafbAACce69;
 
   address internal constant DAI_UNDERLYING = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
   address internal constant DAI_A_TOKEN = 0x028171bCA77440897B824Ca71D1c56caC55b68A3;
@@ -199,7 +199,7 @@ library AaveV2EthereumAssets {
   address internal constant TUSD_S_TOKEN = 0x7f38d60D94652072b2C44a18c0e14A481EC3C0dd;
   address internal constant TUSD_ORACLE = 0x3886BA987236181D98F2401c507Fb8BeA7871dF2;
   address internal constant TUSD_INTEREST_RATE_STRATEGY =
-    0x67a81df2b7FAf4a324D94De9Cc778704F4500478;
+    0x531F1D684c35e570eE580D6881D0844caee682cd;
 
   address internal constant USDC_UNDERLYING = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
   address internal constant USDC_A_TOKEN = 0xBcca60bB61934080951369a648Fb03DF4F96263C;

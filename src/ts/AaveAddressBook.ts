@@ -48,5 +48,7 @@ export * as AaveV3OptimismGoerli from './AaveV3OptimismGoerli.js';
 export * as AaveV3OptimismGoerliAssets from './AaveV3OptimismGoerliAssets.js';
 export * as AaveV3ScrollAlpha from './AaveV3ScrollAlpha.js';
 export * as AaveV3ScrollAlphaAssets from './AaveV3ScrollAlphaAssets.js';
+export * as AaveV3ScrollSepolia from './AaveV3ScrollSepolia.js';
+export * as AaveV3ScrollSepoliaAssets from './AaveV3ScrollSepoliaAssets.js';
 export * as AaveV3Metis from './AaveV3Metis.js';
 export * as AaveV3MetisAssets from './AaveV3MetisAssets.js';
