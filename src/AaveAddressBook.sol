@@ -27,6 +27,7 @@ import {AaveV3OptimismGoerli} from './AaveV3OptimismGoerli.sol';
 import {AaveV3ScrollAlpha} from './AaveV3ScrollAlpha.sol';
 import {AaveV3ScrollSepolia} from './AaveV3ScrollSepolia.sol';
 import {AaveV3Metis} from './AaveV3Metis.sol';
+import {AaveV3Base} from './AaveV3Base.sol';
 
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';

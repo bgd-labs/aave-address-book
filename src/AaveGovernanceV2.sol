@@ -521,6 +521,8 @@ library AaveGovernanceV2 {
 
   address internal constant METIS_BRIDGE_EXECUTOR = 0x8EC77963068474a45016938Deb95E603Ca82a029;
 
+  address internal constant BASE_BRIDGE_EXECUTOR = 0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45;
+
   // https://github.com/bgd-labs/aave-v3-crosschain-listing-template/tree/master/src/contracts
   address internal constant CROSSCHAIN_FORWARDER_POLYGON =
     0x158a6bC04F0828318821baE797f50B0A1299d45b;
@@ -532,4 +534,6 @@ library AaveGovernanceV2 {
     0xd1B3E25fD7C8AE7CADDC6F71b461b79CD4ddcFa3;
 
   address internal constant CROSSCHAIN_FORWARDER_METIS = 0x2fE52eF191F0BE1D98459BdaD2F1d3160336C08f;
+
+  address internal constant CROSSCHAIN_FORWARDER_BASE = 0x3215225538da1546FE0DA88ee13019f402078942;
 }

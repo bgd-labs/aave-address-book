@@ -2,6 +2,71 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.33.0](https://github.com/bgd-labs/aave-address-book/compare/v1.32.0...v1.33.0) (2023-08-18)
+
+
+### Features
+
+* Add IMigrationHelper interface ([#185](https://github.com/bgd-labs/aave-address-book/issues/185)) ([b87a51d](https://github.com/bgd-labs/aave-address-book/commit/b87a51d014167effaaa7f6f7e33562b223b3d6b2))
+
+
+### Bug Fixes
+
+* add weth gateway address to base ([#207](https://github.com/bgd-labs/aave-address-book/issues/207)) ([b37eb99](https://github.com/bgd-labs/aave-address-book/commit/b37eb991c690cf19dae7945baf139ce1fba5c36b))
+
+## [1.32.0](https://github.com/bgd-labs/aave-address-book/compare/v1.31.7...v1.32.0) (2023-08-14)
+
+
+### Features
+
+* alpha releases ([#201](https://github.com/bgd-labs/aave-address-book/issues/201)) ([0b595f3](https://github.com/bgd-labs/aave-address-book/commit/0b595f30fb8f55585623c128a75ce00e7cb8c730))
+
+### [1.31.7](https://github.com/bgd-labs/aave-address-book/compare/v1.31.6...v1.31.7) (2023-08-14)
+
+
+### Bug Fixes
+
+* chain chain name from basenet to base ([#200](https://github.com/bgd-labs/aave-address-book/issues/200)) ([dc4a4de](https://github.com/bgd-labs/aave-address-book/commit/dc4a4dea4d703ab8d7c1908a0db89332f644e50d))
+
+### [1.31.6](https://github.com/bgd-labs/aave-address-book/compare/v1.31.5...v1.31.6) (2023-08-11)
+
+
+### Bug Fixes
+
+* support cjs ([#197](https://github.com/bgd-labs/aave-address-book/issues/197)) ([6ff3a0d](https://github.com/bgd-labs/aave-address-book/commit/6ff3a0d6ee99bfb889a045942d48bd1e2cf83f92))
+
+### [1.31.5](https://github.com/bgd-labs/aave-address-book/compare/v1.31.4...v1.31.5) (2023-08-11)
+
+### [1.31.4](https://github.com/bgd-labs/aave-address-book/compare/v1.31.3...v1.31.4) (2023-08-11)
+
+
+### Bug Fixes
+
+* updated basenet contracts with new proxy admin ([#192](https://github.com/bgd-labs/aave-address-book/issues/192)) ([8905a2e](https://github.com/bgd-labs/aave-address-book/commit/8905a2e88036434fc6e3b61c06406a4d8e103285))
+
+### [1.31.3](https://github.com/bgd-labs/aave-address-book/compare/v1.31.2...v1.31.3) (2023-08-10)
+
+
+### Bug Fixes
+
+* added basenet gov addresses to ts ([#190](https://github.com/bgd-labs/aave-address-book/issues/190)) ([45977b9](https://github.com/bgd-labs/aave-address-book/commit/45977b99b46927d0ec0ca200502903d074cc25c3))
+
+### [1.31.2](https://github.com/bgd-labs/aave-address-book/compare/v1.31.1...v1.31.2) (2023-08-10)
+
+
+### Bug Fixes
+
+* change listing engine and rates factory addresses ([#188](https://github.com/bgd-labs/aave-address-book/issues/188)) ([2cd4c21](https://github.com/bgd-labs/aave-address-book/commit/2cd4c2199eff12dec9b7d3c0a5050d8504d8b4c6))
+
+### [1.31.1](https://github.com/bgd-labs/aave-address-book/compare/v1.31.0...v1.31.1) (2023-08-10)
+
+## [1.31.0](https://github.com/bgd-labs/aave-address-book/compare/v1.30.0...v1.31.0) (2023-08-09)
+
+
+### Features
+
+* Add V2 and V3 aToken interfaces (with added nonce getter in V2) ([#182](https://github.com/bgd-labs/aave-address-book/issues/182)) ([908c7aa](https://github.com/bgd-labs/aave-address-book/commit/908c7aac7fcaa693c8be22d72b72b356d01ce5f2))
+
 ## [1.30.0](https://github.com/bgd-labs/aave-address-book/compare/v1.29.0...v1.30.0) (2023-07-18)
 
 
