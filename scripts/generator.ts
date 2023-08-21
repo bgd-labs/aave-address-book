@@ -1,8 +1,10 @@
 import fs from 'fs';
 
-import {Pool, pools} from './config';
+import {Pool, pools, governanceV2, GovernanceV2, misc, Misc} from './config';
 import {PoolV2WithAddresses, fetchPoolV2Addresses, writeV2Templates} from './generator_v2';
 import {PoolV3WithAddresses, fetchPoolV3Addresses, writeV3Templates} from './generator_v3';
+import {writeGovV2Templates} from './generator_gov_v2';
+import {writeMiscTemplates} from './generator_misc';
 
 async function generateV2Pools(pools: Pool[]) {
   let generatedPools: PoolV2WithAddresses[] = [];
@@ -36,7 +38,7 @@ async function generateV3Pools(pools: Pool[]) {
     });
   }
 
-  generatedPools.map((addresses) => writeV3Templates(addresses));
+  return generatedPools.map((addresses) => writeV3Templates(addresses));
 }
 
 async function generatePools() {
@@ -64,6 +66,14 @@ import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
   ]);
 }
 
+async function generateGovernanceV2(governanceV2: GovernanceV2) {
+  return writeGovV2Templates(governanceV2);
+}
+
+async function generateMisc(misc: Misc) {
+  return writeMiscTemplates(misc);
+}
+
 generatePools()
   .then(() => {
     console.log('pools successfully generated');
@@ -73,3 +83,23 @@ generatePools()
     console.log(error);
     process.exit(1);
   });
+
+generateGovernanceV2(governanceV2)
+.then(() => {
+  console.log('governance v2 successfully generated');
+  process.exit(0);
+})
+.catch((error) => {
+  console.log(error);
+  process.exit(1);
+});
+
+generateMisc(misc)
+.then(() => {
+  console.log('misc successfully generated');
+  process.exit(0);
+})
+.catch((error) => {
+  console.log(error);
+  process.exit(1);
+});
