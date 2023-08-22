@@ -25,4 +25,5 @@ export function writeGovV2Templates(govV2Addresses: GovernanceV2): void {
     ${generateGovV2Addresses(govV2Addresses)}`;
 
   fs.writeFileSync(`./src/ts/AaveGovernanceV2.ts`, templateGovV2Js);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as AaveGovernanceV2 from './AaveGovernanceV2';\r\n`);
 }

@@ -17,9 +17,9 @@ export const generateAdditionalAddresses = (
 ): string => {
   if (additionalAddresses) {
     return Object.keys(additionalAddresses).reduce((acc, key) => {
-      acc += `export const ${key} = "${
+      acc += `export const ${key} = '${
         additionalAddresses![key as keyof typeof additionalAddresses]
-      }";\n`;
+      }';\n`;
       return acc;
     }, '');
   }
@@ -92,9 +92,9 @@ export const generateGovV2Addresses = (
 ): string => {
   if (govV2Addresses) {
     return Object.keys(govV2Addresses).reduce((acc, key) => {
-      acc += `export const ${key} = "${
+      acc += `export const ${key} = '${
         govV2Addresses![key as keyof typeof govV2Addresses]
-      }";\n`;
+      }';\n`;
       return acc;
     }, '');
   }
@@ -106,9 +106,9 @@ export const generateMiscAddresses = (
 ): string => {
   if (misc) {
     return Object.keys(misc).reduce((acc, key) => {
-      acc += `export const ${key} = "${
+      acc += `export const ${key} = '${
         misc![key as keyof typeof misc]
-      }";\n`;
+      }';\n`;
       return acc;
     }, '');
   }

@@ -23,4 +23,5 @@ export function writeMiscTemplates(miscAddresses: Misc): void {
     ${generateMiscAddresses(miscAddresses)}`;
 
   fs.writeFileSync(`./src/ts/AaveMisc.ts`, templateGovV2Js);
+  fs.appendFileSync(`./src/ts/AaveAddressBook.ts`, `export * as AaveMisc from './AaveMisc';\r\n`);
 }
