@@ -51,3 +51,4 @@ export * as AaveV3ScrollAlphaAssets from './AaveV3ScrollAlphaAssets';
 export * as AaveV3Metis from './AaveV3Metis';
 export * as AaveV3MetisAssets from './AaveV3MetisAssets';
 export * as AaveV3Base from './AaveV3Base';
+export * as AaveV3BaseAssets from './AaveV3BaseAssets';
