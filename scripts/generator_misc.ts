@@ -11,6 +11,7 @@ export function writeMiscTemplates(miscAddresses: Misc): void {
   pragma solidity >=0.6.0;
 
   import {IAaveEcosystemReserveController} from './common/IAaveEcosystemReserveController.sol';
+  import {IStreamable} from './common/IStreamable.sol';
 
   library AaveMisc {
     ${generateMiscAddressesSol(miscAddresses)}

@@ -3,6 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {IAaveEcosystemReserveController} from './common/IAaveEcosystemReserveController.sol';
+import {IStreamable} from './common/IStreamable.sol';
 
 library AaveMisc {
   address internal constant ECOSYSTEM_RESERVE = 0x25F2226B597E8F9514B3F68F00f494cF4f286491;
