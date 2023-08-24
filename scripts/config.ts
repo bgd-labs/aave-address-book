@@ -225,7 +225,7 @@ export const pools = [
     addressProvider: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5',
     version: 2,
     additionalAddresses: {
-      DEBT_SWAP_ADAPTER: '0x97742240d6eBE32198B315d30C73c3D2FFC9cE21',
+      DEBT_SWAP_ADAPTER: '0x6A6FA664D4Fa49a6a780a1D6143f079f8dd7C33d',
       LISTING_ENGINE: '0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9',
       MIGRATION_HELPER: '0xb748952c7bc638f31775245964707bcc5ddfabfc',
       POOL_ADDRESSES_PROVIDER_REGISTRY: '0x52D306e36E3B6B02c153d0266ff0f85d18BCD413',
@@ -245,7 +245,7 @@ export const pools = [
     version: 3,
     additionalAddresses: {
       CAPS_PLUS_RISK_STEWARD: '0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778',
-      DEBT_SWAP_ADAPTER: '0x8f30ADaA6950b31f675bF8a709Bc23F55aa24735',
+      DEBT_SWAP_ADAPTER: '0x8761e0370f94f68Db8EaA731f4fC581f6AD0Bd68',
       DELEGATION_AWARE_A_TOKEN_IMPL_REV_1: '0x21714092D90c7265F52fdfDae068EC11a23C6248',
       GHO_TOKEN: '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
       LISTING_ENGINE: '0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07',
@@ -378,7 +378,7 @@ export const pools = [
     addressProvider: '0xd05e3E715d945B59290df0ae8eF85c1BdB684744',
     version: 2,
     additionalAddresses: {
-      DEBT_SWAP_ADAPTER: '0xe9E52021f4e11DEAD8661812A0A6c8627abA2a54',
+      DEBT_SWAP_ADAPTER: '0x1E623A311948b531B07B6EA7CC34a9A2bCADADd0',
       LISTING_ENGINE: '0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9',
       MIGRATION_HELPER: '0x3db487975aB1728DB5787b798866c2021B24ec52',
       POOL_ADDRESSES_PROVIDER_REGISTRY: '0x3ac4e9aa29940770aeC38fe853a4bbabb2dA9C19',
@@ -398,7 +398,7 @@ export const pools = [
     version: 3,
     additionalAddresses: {
       CAPS_PLUS_RISK_STEWARD: '0xc5de989E0D1BF605d19478Fdd32Aa827a10b464f',
-      DEBT_SWAP_ADAPTER: '0x2a6C8D620371AEc6bCA1d18AAaF96efE11Eb3d6c',
+      DEBT_SWAP_ADAPTER: '0xb58Fd91558fa213D97Ac94C97F831c7289278084',
       LISTING_ENGINE: '0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07',
       POOL_ADDRESSES_PROVIDER_REGISTRY: '0x770ef9f4fe897e59daCc474EF11238303F9552b6',
       RATES_FACTORY: '0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896',
@@ -446,7 +446,7 @@ export const pools = [
     addressProvider: '0xb6A86025F0FE1862B372cb0ca18CE3EDe02A318f',
     version: 2,
     additionalAddresses: {
-      DEBT_SWAP_ADAPTER: '0xc5de989E0D1BF605d19478Fdd32Aa827a10b464f',
+      DEBT_SWAP_ADAPTER: '0xc1D40f4cF36e4aE4108Ffa08818cD16c2d9aEF73',
       LISTING_ENGINE: '0x7902F3c60f05b5A6b7e4Ce0Cac11Cb17bC8e607c',
       MIGRATION_HELPER: '0xf50a080aC535e531EC33cC05b227E910De2fb1fA',
       POOL_ADDRESSES_PROVIDER_REGISTRY: '0x4235E22d9C3f28DCDA82b58276cb6370B01265C2',
@@ -468,7 +468,7 @@ export const pools = [
     version: 3,
     additionalAddresses: {
       CAPS_PLUS_RISK_STEWARD: '0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5',
-      DEBT_SWAP_ADAPTER: '0x4C0633Bf70fB2bB984A9eEC5d9052BdEA451C70A',
+      DEBT_SWAP_ADAPTER: '0x8A9b2c132EA7676EE267F5b97b622083d6E3a2d4',
       LISTING_ENGINE: '0x49581e5575F49263f556b91daf8fb41D7854D94B',
       POOL_ADDRESSES_PROVIDER_REGISTRY: '0x770ef9f4fe897e59daCc474EF11238303F9552b6',
       PROOF_OF_RESERVE: '0xab22988D93d5F942fC6B6c6Ea285744809D1d9Cc',
@@ -490,7 +490,7 @@ export const pools = [
     version: 3,
     additionalAddresses: {
       CAPS_PLUS_RISK_STEWARD: '0xADf86b537eF08591c2777E144322E8b0Ca7E82a7',
-      DEBT_SWAP_ADAPTER: '0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE',
+      DEBT_SWAP_ADAPTER: '0x9E8e9D6b0D24216F59043db68BDda1620892f549',
       L2_ENCODER: '0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC',
       LISTING_ENGINE: '0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20',
       POOL_ADDRESSES_PROVIDER_REGISTRY: '0x770ef9f4fe897e59daCc474EF11238303F9552b6',
@@ -568,7 +568,7 @@ export const pools = [
     version: 3,
     additionalAddresses: {
       CAPS_PLUS_RISK_STEWARD: '0x5E76E98E0963EcDC6A065d1435F84065b7523f39',
-      DEBT_SWAP_ADAPTER: '0xb77fc84a549ecc0b410d6fa15159C2df207545a3',
+      DEBT_SWAP_ADAPTER: '0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC',
       L2_ENCODER: '0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC',
       LISTING_ENGINE: '0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3',
       POOL_ADDRESSES_PROVIDER_REGISTRY: '0x770ef9f4fe897e59daCc474EF11238303F9552b6',
@@ -656,8 +656,11 @@ export const pools = [
   provider: RPC_PROVIDERS[m.chainId as keyof typeof RPC_PROVIDERS] as unknown as PublicClient,
   // fix checksums
   addressProvider: getAddress(m.addressProvider),
-  additionalAddresses: Object.keys(m.additionalAddresses).reduce((acc, key) => {
-    acc[key] = getAddress(m.additionalAddresses[key as keyof Pool['additionalAddresses']] as Hex);
-    return acc;
-  }, {} as {[key: string]: Hex}) as Pool['additionalAddresses'],
+  additionalAddresses: Object.keys(m.additionalAddresses).reduce(
+    (acc, key) => {
+      acc[key] = getAddress(m.additionalAddresses[key as keyof Pool['additionalAddresses']] as Hex);
+      return acc;
+    },
+    {} as {[key: string]: Hex},
+  ) as Pool['additionalAddresses'],
 })) as Pool[];
