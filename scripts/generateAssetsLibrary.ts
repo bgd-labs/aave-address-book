@@ -94,20 +94,20 @@ export function appendAssetsLibraryJs(name: string, reserves: ReserveData[]) {
   const templateV3Assets = reserves
     .map((reserve) => {
       const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
-      let result = `export const ${name}Assets_${symbol}_UNDERLYING = "${reserve.underlyingAsset}";
-          export const ${name}Assets_${symbol}_A_TOKEN = "${reserve.aTokenAddress}";
-          export const ${name}Assets_${symbol}_V_TOKEN = "${reserve.variableDebtTokenAddress}";
-          export const ${name}Assets_${symbol}_S_TOKEN = "${reserve.stableDebtTokenAddress}";
-          export const ${name}Assets_${symbol}_ORACLE = "${reserve.priceOracle}";
-          export const ${name}Assets_${symbol}_INTEREST_RATE_STRATEGY = "${reserve.interestRateStrategyAddress}";`;
+      let result = `export const ${name}Assets_${symbol}_UNDERLYING = '${reserve.underlyingAsset}';
+          export const ${name}Assets_${symbol}_A_TOKEN = '${reserve.aTokenAddress}';
+          export const ${name}Assets_${symbol}_V_TOKEN = '${reserve.variableDebtTokenAddress}';
+          export const ${name}Assets_${symbol}_S_TOKEN = '${reserve.stableDebtTokenAddress}';
+          export const ${name}Assets_${symbol}_ORACLE = '${reserve.priceOracle}';
+          export const ${name}Assets_${symbol}_INTEREST_RATE_STRATEGY = '${reserve.interestRateStrategyAddress}';`;
       if (reserve.staticATokenAddress && reserve.staticATokenAddress != zeroAddress)
-        result += `      export const ${name}Assets_${symbol}_STATA_TOKEN = "${reserve.staticATokenAddress}";`;
+        result += `      export const ${name}Assets_${symbol}_STATA_TOKEN = '${reserve.staticATokenAddress}';`;
       return result;
     })
     .join('\n\n');
   fs.writeFileSync(`./src/ts/${name}Assets.ts`, templateV3Assets);
   fs.appendFileSync(
     `./src/ts/AaveAddressBook.ts`,
-    `export * as ${name}Assets from "./${name}Assets";\r\n`
+    `export * as ${name}Assets from './${name}Assets';\r\n`
   );
 }
