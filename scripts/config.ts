@@ -13,6 +13,7 @@ import {
   fantom,
   fantomTestnet,
   scrollTestnet,
+  scrollSepolia,
   metis,
   sepolia,
   avalanche,
@@ -38,6 +39,7 @@ export enum ChainId {
   harmony = 1666600000,
   sepolia = 11155111,
   scroll_alpha = 534353,
+  scroll_sepolia = 534351,
   metis = 1088,
   base = 8453,
 }
@@ -153,6 +155,13 @@ const RPC_PROVIDERS = {
   }),
   [ChainId.scroll_alpha]: createPublicClient({
     chain: scrollTestnet,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.scroll_sepolia]: createPublicClient({
+    chain: scrollSepolia,
     transport: http(),
     batch: {
       multicall: true,
@@ -605,6 +614,21 @@ export const pools = [
     testnet: true,
     additionalAddresses: {
       FAUCET: '0x357A307A8036D54b454BD15B3B1A0fE4B9e8A561',
+      L2_ENCODER: '0x3Bb33c67908D0d58F8d7349cBe726ff3b059e0fC',
+      UI_INCENTIVE_DATA_PROVIDER: '0xBf67A725F976d4A7C1fa9ea5303FD57D13CA0A37',
+      UI_POOL_DATA_PROVIDER: '0xDC55BcFC0963608401A4bA6298624E5895f8250a',
+      WALLET_BALANCE_PROVIDER: '0x6c68e975764a56e62AF3d1C8209F789779Eb763B',
+      WETH_GATEWAY: '0x57ce905CfD7f986A929A26b006f797d181dB706e',
+    },
+  },
+  {
+    name: 'AaveV3ScrollSepolia',
+    chainId: ChainId.scroll_sepolia,
+    addressProvider: '0x52A27dC690F8652288194Dd2bc523863eBdEa236',
+    version: 3,
+    testnet: true,
+    additionalAddresses: {
+      FAUCET: '0x2F826FD1a0071476330a58dD1A9B36bcF7da832d',
       L2_ENCODER: '0x3Bb33c67908D0d58F8d7349cBe726ff3b059e0fC',
       UI_INCENTIVE_DATA_PROVIDER: '0xBf67A725F976d4A7C1fa9ea5303FD57D13CA0A37',
       UI_POOL_DATA_PROVIDER: '0xDC55BcFC0963608401A4bA6298624E5895f8250a',

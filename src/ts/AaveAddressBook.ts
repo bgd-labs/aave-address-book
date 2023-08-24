@@ -48,6 +48,8 @@ export * as AaveV3OptimismGoerli from './AaveV3OptimismGoerli';
 export * as AaveV3OptimismGoerliAssets from './AaveV3OptimismGoerliAssets';
 export * as AaveV3ScrollAlpha from './AaveV3ScrollAlpha';
 export * as AaveV3ScrollAlphaAssets from './AaveV3ScrollAlphaAssets';
+export * as AaveV3ScrollSepolia from './AaveV3ScrollSepolia';
+export * as AaveV3ScrollSepoliaAssets from './AaveV3ScrollSepoliaAssets';
 export * as AaveV3Metis from './AaveV3Metis';
 export * as AaveV3MetisAssets from './AaveV3MetisAssets';
 export * as AaveV3Base from './AaveV3Base';
