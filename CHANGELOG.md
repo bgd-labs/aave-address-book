@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.34.0](https://github.com/bgd-labs/aave-address-book/compare/v1.33.0...v1.34.0) (2023-08-24)
+
+
+### Features
+
+* aave misc js exports ([#210](https://github.com/bgd-labs/aave-address-book/issues/210)) ([4112844](https://github.com/bgd-labs/aave-address-book/commit/4112844dfc027fa538ba2cf2d8b97cd69f7c4903))
+* add Scroll Sepolia testnet ([#215](https://github.com/bgd-labs/aave-address-book/issues/215)) ([a220f6a](https://github.com/bgd-labs/aave-address-book/commit/a220f6afc7f85b6113f02e573007d4d22cee6c6c))
+
+
+### Bug Fixes
+
+* cleanup dependencies ([#213](https://github.com/bgd-labs/aave-address-book/issues/213)) ([815d1cc](https://github.com/bgd-labs/aave-address-book/commit/815d1cc59d671a23e95e3cf7479cf170ba9ddeba))
+
 ## [1.33.0](https://github.com/bgd-labs/aave-address-book/compare/v1.32.0...v1.33.0) (2023-08-18)
 
 
