@@ -12,7 +12,7 @@ export function writeGovV2Templates(govV2Addresses: GovernanceV2): void {
   pragma experimental ABIEncoderV2;
 
   import {IGovernanceStrategy} from './common/IGovernanceStrategy.sol';
-  import {IAaveGovernanceV2} from './common/IAaveGovernanceV2.sol';
+  import {IAaveGovernanceV2, IExecutorWithTimelock} from './common/IAaveGovernanceV2.sol';
 
   library AaveGovernanceV2 {
     ${generateGovV2AddressesSol(govV2Addresses)}
