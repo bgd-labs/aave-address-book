@@ -4,7 +4,7 @@ pragma solidity >=0.6.0;
 pragma experimental ABIEncoderV2;
 
 import {IGovernanceStrategy} from './common/IGovernanceStrategy.sol';
-import {IAaveGovernanceV2} from './common/IAaveGovernanceV2.sol';
+import {IAaveGovernanceV2, IExecutorWithTimelock} from './common/IAaveGovernanceV2.sol';
 
 library AaveGovernanceV2 {
   IAaveGovernanceV2 public constant GOV =
