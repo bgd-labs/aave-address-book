@@ -60,7 +60,7 @@ function fixSymbol(symbol: string, _underlying: string) {
       return 'BPT_WBTC_WETH';
     case '0x59a19d8c652fa0284f44113d0ff9aba70bd46fb4':
       return 'BPT_BAL_WETH';
-    case '0xaf88d065e77c8cC2239327C5EDb3A432268e5831':
+    case '0xaf88d065e77c8cc2239327c5edb3a432268e5831':
       return 'USDCn';
   }
   return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_');

@@ -132,7 +132,7 @@ library AaveV2EthereumAssets {
   address internal constant DAI_V_TOKEN = 0x6C3c78838c761c6Ac7bE9F59fe808ea2A6E4379d;
   address internal constant DAI_S_TOKEN = 0x778A13D3eeb110A4f7bb6529F99c000119a08E92;
   address internal constant DAI_ORACLE = 0x773616E4d11A78F511299002da57A0a94577F1f4;
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xfffE32106A68aA3eD39CcCE673B646423EEaB62a;
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xc6A068E321C83FEacc25C80118E2B1208c54B6ce;
 
   address internal constant ENJ_UNDERLYING = 0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c;
   address internal constant ENJ_A_TOKEN = 0xaC6Df26a590F08dcC95D5a4705ae8abbc88509Ef;
