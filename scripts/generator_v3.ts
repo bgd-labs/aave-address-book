@@ -99,13 +99,6 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       reservesData = await Promise.all(
         data.map(async (reserve) => {
           let symbol = reserve.symbol;
-          // patch for
-          if (
-            reserve.symbol === 'USDC' &&
-            reserve.underlyingAsset === '0xaf88d065e77c8cC2239327C5EDb3A432268e5831'
-          ) {
-            symbol = 'USDCn';
-          }
           const result: ReserveData = {
             symbol,
             underlyingAsset: reserve.underlyingAsset,
@@ -121,7 +114,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
               reserve.underlyingAsset,
             ])) as Hex;
           return result;
-        })
+        }),
       );
     }
 
@@ -153,7 +146,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
           await aTokenContract.read.ATOKEN_REVISION(),
           await getImplementationStorageSlot(
             pool.provider,
-            reservesData[0].variableDebtTokenAddress
+            reservesData[0].variableDebtTokenAddress,
           ),
           await getImplementationStorageSlot(pool.provider, reservesData[0].stableDebtTokenAddress),
         ]);
@@ -165,13 +158,13 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
       const defaultVariableDebtTokenImplementation = bytes32toAddress(vTokenImplSlot);
 
       const variableDebtTokenRevision = Number(
-        await variableDebtTokenContract.read.DEBT_TOKEN_REVISION()
+        await variableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
       );
 
       const defaultStableDebtTokenImplementation = bytes32toAddress(sTokenImplSlot);
 
       const stableDebtTokenRevision = Number(
-        await stableDebtTokenContract.read.DEBT_TOKEN_REVISION()
+        await stableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
       );
 
       console.timeEnd(pool.name);
@@ -210,11 +203,11 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
         defaultATokenImplementation: addressOrZero(pool.initial?.DEFAULT_A_TOKEN_IMPL),
         aTokenRevision: 1,
         defaultVariableDebtTokenImplementation: addressOrZero(
-          pool.initial?.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL
+          pool.initial?.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL,
         ),
         variableDebtTokenRevision: 1,
         defaultStableDebtTokenImplementation: addressOrZero(
-          pool.initial?.DEFAULT_STABLE_DEBT_TOKEN_IMPL
+          pool.initial?.DEFAULT_STABLE_DEBT_TOKEN_IMPL,
         ),
         stableDebtTokenRevision: 1,
         emissionManager,
