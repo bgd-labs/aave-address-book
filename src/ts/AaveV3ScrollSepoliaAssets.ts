@@ -1,4 +1,4 @@
-export const AaveV3ScrollAlphaAssets = {
+export const AaveV3ScrollSepoliaAssets = {
   DAI: {
     UNDERLYING: '0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40',
     A_TOKEN: '0x99Cb50E6bE36C8096e6731ED7738d93090B710DD',
