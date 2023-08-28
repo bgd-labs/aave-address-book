@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/bgd-labs/aave-address-book/compare/v1.34.0...v2.0.0) (2023-08-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* the format of assets in js was unnecessarily hard to consume, this pr changes it to a object like structure.
+
+### Features
+
+* js assets exports ([#219](https://github.com/bgd-labs/aave-address-book/issues/219)) ([cab5960](https://github.com/bgd-labs/aave-address-book/commit/cab5960b29ed6e20f5a760eef1a61765b7704b10))
+* testnet updates ([#218](https://github.com/bgd-labs/aave-address-book/issues/218)) ([456fab9](https://github.com/bgd-labs/aave-address-book/commit/456fab9620d573bf9ae03d753d0aa6c51f4b95c2))
+
 ## [1.34.0](https://github.com/bgd-labs/aave-address-book/compare/v1.33.0...v1.34.0) (2023-08-24)
 
 
