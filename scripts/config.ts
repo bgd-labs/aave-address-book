@@ -361,20 +361,6 @@ export const pools = [
     },
   },
   {
-    name: 'AaveV3Goerli',
-    chainId: ChainId.goerli,
-    addressProvider: '0xC911B590248d127aD18546B186cC6B324e99F02c',
-    version: 3,
-    testnet: true,
-    additionalAddresses: {
-      FAUCET: '0xA70D8aD6d26931d0188c642A66de3B6202cDc5FA',
-      UI_INCENTIVE_DATA_PROVIDER: '0xf4Ce3624c8D047aF8b069D044f00bF6774B4dEc0',
-      UI_POOL_DATA_PROVIDER: '0xb00A75686293Fea5DA122E8361f6815A0B0AF48E',
-      WALLET_BALANCE_PROVIDER: '0xe0bb4593f74B804B9aBd9a2Ec6C71663cEE64E29',
-      WETH_GATEWAY: '0x2A498323aCaD2971a8b1936fD7540596dC9BBacD',
-    },
-  },
-  {
     name: 'AaveV3GoerliGho',
     chainId: ChainId.goerli,
     addressProvider: '0x4dd5ab8Fb385F2e12aDe435ba7AFA812F1d364D0',
@@ -716,38 +702,37 @@ export const pools = [
   provider: RPC_PROVIDERS[m.chainId as keyof typeof RPC_PROVIDERS] as unknown as PublicClient,
   // fix checksums
   addressProvider: getAddress(m.addressProvider),
-  additionalAddresses: Object.keys(m.additionalAddresses).reduce((acc, key) => {
-    acc[key] = getAddress(m.additionalAddresses[key as keyof Pool['additionalAddresses']] as Hex);
-    return acc;
-  }, {} as {[key: string]: Hex}) as Pool['additionalAddresses'],
+  additionalAddresses: Object.keys(m.additionalAddresses).reduce(
+    (acc, key) => {
+      acc[key] = getAddress(m.additionalAddresses[key as keyof Pool['additionalAddresses']] as Hex);
+      return acc;
+    },
+    {} as {[key: string]: Hex},
+  ) as Pool['additionalAddresses'],
 })) as Pool[];
 
 export const governanceV2 = Object.fromEntries(
-  Object.entries(
-    {
-      GOV: '0xEC568fffba86c094cf06b22134B23074DFE2252c',
-      GOV_STRATEGY: '0xb7e383ef9B1E9189Fc0F71fb30af8aa14377429e',
-      SHORT_EXECUTOR: '0xEE56e2B3D491590B5b31738cC34d5232F378a8D5',
-      LONG_EXECUTOR: '0x79426A1c24B2978D90d7A5070a46C65B07bC4299',
-      ARC_TIMELOCK: '0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218',
-      POLYGON_BRIDGE_EXECUTOR: '0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772',
-      OPTIMISM_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
-      ARBITRUM_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
-      METIS_BRIDGE_EXECUTOR: '0x8EC77963068474a45016938Deb95E603Ca82a029',
-      BASE_BRIDGE_EXECUTOR: '0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45',
-      CROSSCHAIN_FORWARDER_POLYGON: '0x158a6bC04F0828318821baE797f50B0A1299d45b',
-      CROSSCHAIN_FORWARDER_OPTIMISM: '0x5f5C02875a8e9B5A26fbd09040ABCfDeb2AA6711',
-      CROSSCHAIN_FORWARDER_ARBITRUM: '0xd1B3E25fD7C8AE7CADDC6F71b461b79CD4ddcFa3',
-      CROSSCHAIN_FORWARDER_METIS: '0x2fE52eF191F0BE1D98459BdaD2F1d3160336C08f',
-      CROSSCHAIN_FORWARDER_BASE: '0x3215225538da1546FE0DA88ee13019f402078942'
-    } as GovernanceV2
-  ).map(
-    ([key, value]) => [key, getAddress(value)]
-  )
+  Object.entries({
+    GOV: '0xEC568fffba86c094cf06b22134B23074DFE2252c',
+    GOV_STRATEGY: '0xb7e383ef9B1E9189Fc0F71fb30af8aa14377429e',
+    SHORT_EXECUTOR: '0xEE56e2B3D491590B5b31738cC34d5232F378a8D5',
+    LONG_EXECUTOR: '0x79426A1c24B2978D90d7A5070a46C65B07bC4299',
+    ARC_TIMELOCK: '0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218',
+    POLYGON_BRIDGE_EXECUTOR: '0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772',
+    OPTIMISM_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
+    ARBITRUM_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
+    METIS_BRIDGE_EXECUTOR: '0x8EC77963068474a45016938Deb95E603Ca82a029',
+    BASE_BRIDGE_EXECUTOR: '0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45',
+    CROSSCHAIN_FORWARDER_POLYGON: '0x158a6bC04F0828318821baE797f50B0A1299d45b',
+    CROSSCHAIN_FORWARDER_OPTIMISM: '0x5f5C02875a8e9B5A26fbd09040ABCfDeb2AA6711',
+    CROSSCHAIN_FORWARDER_ARBITRUM: '0xd1B3E25fD7C8AE7CADDC6F71b461b79CD4ddcFa3',
+    CROSSCHAIN_FORWARDER_METIS: '0x2fE52eF191F0BE1D98459BdaD2F1d3160336C08f',
+    CROSSCHAIN_FORWARDER_BASE: '0x3215225538da1546FE0DA88ee13019f402078942',
+  } as GovernanceV2).map(([key, value]) => [key, getAddress(value)]),
 ) as unknown as GovernanceV2;
 
-export const misc = Object.fromEntries(Object.entries(
-  {
+export const misc = Object.fromEntries(
+  Object.entries({
     ECOSYSTEM_RESERVE: '0x25F2226B597E8F9514B3F68F00f494cF4f286491',
     AAVE_ECOSYSTEM_RESERVE_CONTROLLER: '0x3d569673dAa0575c936c7c67c4E6AedA69CC630C',
     TRANSPARENT_PROXY_FACTORY_ETHEREUM: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
@@ -765,5 +750,5 @@ export const misc = Object.fromEntries(Object.entries(
     PROXY_ADMIN_METIS: '0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97',
     TRANSPARENT_PROXY_FACTORY_BASE: '0x05225Cd708bCa9253789C1374e4337a019e99D56',
     PROXY_ADMIN_BASE: '0xc85b1E333aecc99340b2320493Fe2d22b8734795',
-  } as Misc
-).map(([key, value]) => [key, getAddress(value)])) as unknown as Misc;
+  } as Misc).map(([key, value]) => [key, getAddress(value)]),
+) as unknown as Misc;

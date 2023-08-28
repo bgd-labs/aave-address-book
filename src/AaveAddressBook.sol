@@ -7,7 +7,6 @@ import {AaveV2EthereumAMM} from './AaveV2EthereumAMM.sol';
 import {AaveV2EthereumArc} from './AaveV2EthereumArc.sol';
 import {AaveV2Goerli} from './AaveV2Goerli.sol';
 import {AaveV3Sepolia} from './AaveV3Sepolia.sol';
-import {AaveV3Goerli} from './AaveV3Goerli.sol';
 import {AaveV3GoerliGho} from './AaveV3GoerliGho.sol';
 import {AaveV2Mumbai} from './AaveV2Mumbai.sol';
 import {AaveV3Mumbai} from './AaveV3Mumbai.sol';

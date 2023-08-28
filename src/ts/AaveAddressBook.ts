@@ -21,8 +21,6 @@ export * as AaveV3Ethereum from './AaveV3Ethereum';
 export * as AaveV3EthereumAssets from './AaveV3EthereumAssets';
 export * as AaveV3Sepolia from './AaveV3Sepolia';
 export * as AaveV3SepoliaAssets from './AaveV3SepoliaAssets';
-export * as AaveV3Goerli from './AaveV3Goerli';
-export * as AaveV3GoerliAssets from './AaveV3GoerliAssets';
 export * as AaveV3GoerliGho from './AaveV3GoerliGho';
 export * as AaveV3GoerliGhoAssets from './AaveV3GoerliGhoAssets';
 export * as AaveV3Mumbai from './AaveV3Mumbai';
