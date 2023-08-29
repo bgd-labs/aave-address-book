@@ -33,28 +33,39 @@ library AaveV2Ethereum {
 
   address internal constant EMISSION_MANAGER = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
 
+  // https://etherscan.io/address/0x97742240d6eBE32198B315d30C73c3D2FFC9cE21
   address internal constant DEBT_SWAP_ADAPTER = 0x97742240d6eBE32198B315d30C73c3D2FFC9cE21;
 
+  // https://etherscan.io/address/0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9
   address internal constant LISTING_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
 
+  // https://etherscan.io/address/0xB748952c7BC638F31775245964707Bcc5DDFabFC
   address internal constant MIGRATION_HELPER = 0xB748952c7BC638F31775245964707Bcc5DDFabFC;
 
+  // https://etherscan.io/address/0x52D306e36E3B6B02c153d0266ff0f85d18BCD413
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x52D306e36E3B6B02c153d0266ff0f85d18BCD413;
 
+  // https://etherscan.io/address/0xbD37610BBB1ddc2a22797F7e3f531B59902b7bA7
   address internal constant RATES_FACTORY = 0xbD37610BBB1ddc2a22797F7e3f531B59902b7bA7;
 
+  // https://etherscan.io/address/0x80Aca0C645fEdABaa20fd2Bf0Daf57885A309FE6
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x80Aca0C645fEdABaa20fd2Bf0Daf57885A309FE6;
 
+  // https://etherscan.io/address/0x135896DE8421be2ec868E0b811006171D9df802A
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x135896DE8421be2ec868E0b811006171D9df802A;
 
+  // https://etherscan.io/address/0xD01ab9a6577E1D84F142e44D49380e23A340387d
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xD01ab9a6577E1D84F142e44D49380e23A340387d;
 
+  // https://etherscan.io/address/0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A
   address internal constant UI_POOL_DATA_PROVIDER = 0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A;
 
+  // https://etherscan.io/address/0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922
   address internal constant WALLET_BALANCE_PROVIDER = 0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922;
 
+  // https://etherscan.io/address/0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31
   address internal constant WETH_GATEWAY = 0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31;
 }
 

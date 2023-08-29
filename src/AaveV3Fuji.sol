@@ -6,49 +6,68 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3Fuji {
+  // https://testnet.snowtrace.io/address/0xfb87056c0587923f15EB0aABc7d0572450Cc8003
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0xfb87056c0587923f15EB0aABc7d0572450Cc8003);
 
+  // https://testnet.snowtrace.io/address/0xccEa5C65f6d4F465B71501418b88FBe4e7071283
   IPool internal constant POOL = IPool(0xccEa5C65f6d4F465B71501418b88FBe4e7071283);
 
+  // https://testnet.snowtrace.io/address/0x34b80e82dFa833D65ef7618Cfc22bb1F359adce7
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x34b80e82dFa833D65ef7618Cfc22bb1F359adce7);
 
+  // https://testnet.snowtrace.io/address/0x4DaE2f0f4Db78115eF114F1Dfef426ef2A4fC318
   IAaveOracle internal constant ORACLE = IAaveOracle(0x4DaE2f0f4Db78115eF114F1Dfef426ef2A4fC318);
 
+  // https://testnet.snowtrace.io/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
+  // https://testnet.snowtrace.io/address/0x544b4e38fC2E74DAd9a3C2f783A15776C0C25c51
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x544b4e38fC2E74DAd9a3C2f783A15776C0C25c51);
 
+  // https://testnet.snowtrace.io/address/0x4f2344ACBEfAe1aD87F41B84691E2552C719f723
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x4f2344ACBEfAe1aD87F41B84691E2552C719f723);
 
+  // https://testnet.snowtrace.io/address/0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8
   address internal constant ACL_ADMIN = 0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8;
 
+  // https://testnet.snowtrace.io/address/0xB847a72802E43dF643ceC66315B58832Af724Efa
   ICollector internal constant COLLECTOR = ICollector(0xB847a72802E43dF643ceC66315B58832Af724Efa);
 
+  // https://testnet.snowtrace.io/address/0x25f130Df328c8c2f2C0270377D0e7a984E96ce56
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x25f130Df328c8c2f2C0270377D0e7a984E96ce56;
 
+  // https://testnet.snowtrace.io/address/0xDB8266d95Bc9E1b4C1440501Fae90838381a9156
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xDB8266d95Bc9E1b4C1440501Fae90838381a9156;
 
+  // https://testnet.snowtrace.io/address/0x4e38efc0097D11bc2926b02D4d6D8FB7057EA7a2
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x4e38efc0097D11bc2926b02D4d6D8FB7057EA7a2;
 
+  // https://testnet.snowtrace.io/address/0x2Cc2d88880Bbc779bD31eC8c72f8f879f8046a80
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x2Cc2d88880Bbc779bD31eC8c72f8f879f8046a80;
 
+  // https://testnet.snowtrace.io/address/0x94D29389b874E6B5b7190dd891E7360827c0E3B4
   address internal constant EMISSION_MANAGER = 0x94D29389b874E6B5b7190dd891E7360827c0E3B4;
 
+  // https://testnet.snowtrace.io/address/0xBCcD21ae43139bEF545e72e20E78f039A3Ac1b96
   address internal constant FAUCET = 0xBCcD21ae43139bEF545e72e20E78f039A3Ac1b96;
 
+  // https://testnet.snowtrace.io/address/0x1EFf285a4E34217495b5531151bffa222A94A4F9
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x1EFf285a4E34217495b5531151bffa222A94A4F9;
 
+  // https://testnet.snowtrace.io/address/0x279c790Afcd547e2f20d896c5DDEe3846b9790B5
   address internal constant UI_POOL_DATA_PROVIDER = 0x279c790Afcd547e2f20d896c5DDEe3846b9790B5;
 
+  // https://testnet.snowtrace.io/address/0xfFE3778c51e93EBf68f5d0a83c794E7f623024dd
   address internal constant WALLET_BALANCE_PROVIDER = 0xfFE3778c51e93EBf68f5d0a83c794E7f623024dd;
 
+  // https://testnet.snowtrace.io/address/0x8A007E495449ffeda4C2d65f14eE31f8Bcb022CF
   address internal constant WETH_GATEWAY = 0x8A007E495449ffeda4C2d65f14eE31f8Bcb022CF;
 }
 

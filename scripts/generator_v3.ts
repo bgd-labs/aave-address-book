@@ -12,6 +12,7 @@ import {
   bytes32toAddress,
   generateAdditionalAddresses,
   generateAdditionalAddressesSol,
+  generateExplorerLinkComment,
   getImplementationStorageSlot,
 } from './helpers';
 import {appendAssetsLibraryJs, appendAssetsLibrarySol, ReserveData} from './generateAssetsLibrary';
@@ -222,6 +223,7 @@ export async function fetchPoolV3Addresses(pool: Pool): Promise<PoolV3WithAddres
 }
 
 export function writeV3Templates({
+  provider,
   name,
   addressProvider,
   pool,
@@ -252,41 +254,55 @@ export function writeV3Templates({
   import {ICollector} from './common/ICollector.sol';
 
   library ${name} {
+      ${generateExplorerLinkComment(provider, addressProvider)}
       IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
           IPoolAddressesProvider(
               ${addressProvider}
           );
 
+      ${generateExplorerLinkComment(provider, pool)}
       IPool internal constant POOL =
           IPool(${pool});
 
+      ${generateExplorerLinkComment(provider, poolConfigurator)}
       IPoolConfigurator internal constant POOL_CONFIGURATOR =
           IPoolConfigurator(${poolConfigurator});
 
+      ${generateExplorerLinkComment(provider, oracle)}
       IAaveOracle internal constant ORACLE =
           IAaveOracle(${oracle});
 
+      ${generateExplorerLinkComment(provider, oracleSentinel)}
       address internal constant PRICE_ORACLE_SENTINEL = ${oracleSentinel};
 
+      ${generateExplorerLinkComment(provider, poolDataProvider)}
       IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER = IPoolDataProvider(${poolDataProvider});
 
+      ${generateExplorerLinkComment(provider, aclManager)}
       IACLManager internal constant ACL_MANAGER = IACLManager(${aclManager});
 
+      ${generateExplorerLinkComment(provider, aclAdmin)}
       address internal constant ACL_ADMIN = ${aclAdmin};
 
+      ${generateExplorerLinkComment(provider, collector)}
       ICollector internal constant COLLECTOR = ICollector(${collector});
 
+      ${generateExplorerLinkComment(provider, defaultIncentivesController)}
       address internal constant DEFAULT_INCENTIVES_CONTROLLER = ${defaultIncentivesController};
 
+      ${generateExplorerLinkComment(provider, defaultATokenImplementation)}
       address internal constant DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision} = ${defaultATokenImplementation};
 
+      ${generateExplorerLinkComment(provider, defaultVariableDebtTokenImplementation)}
       address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision} = ${defaultVariableDebtTokenImplementation};
 
+      ${generateExplorerLinkComment(provider, defaultStableDebtTokenImplementation)}
       address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision} = ${defaultStableDebtTokenImplementation};
 
+      ${generateExplorerLinkComment(provider, emissionManager)}
       address internal constant EMISSION_MANAGER = ${emissionManager};
 
-      ${generateAdditionalAddressesSol(additionalAddresses)}
+      ${generateAdditionalAddressesSol(provider, additionalAddresses)}
 
   }\r\n`;
   fs.writeFileSync(`./src/${name}.sol`, templateV3Sol);

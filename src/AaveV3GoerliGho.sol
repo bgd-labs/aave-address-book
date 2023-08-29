@@ -6,49 +6,68 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3GoerliGho {
+  // https://goerli.etherscan.io/address/0x4dd5ab8Fb385F2e12aDe435ba7AFA812F1d364D0
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0x4dd5ab8Fb385F2e12aDe435ba7AFA812F1d364D0);
 
+  // https://goerli.etherscan.io/address/0x617Cf26407193E32a771264fB5e9b8f09715CdfB
   IPool internal constant POOL = IPool(0x617Cf26407193E32a771264fB5e9b8f09715CdfB);
 
+  // https://goerli.etherscan.io/address/0x04eA6B2a9E82Bd58bC95B8eA2b90496356dD969F
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x04eA6B2a9E82Bd58bC95B8eA2b90496356dD969F);
 
+  // https://goerli.etherscan.io/address/0xcb601629B36891c43943e3CDa2eB18FAc38B5c4e
   IAaveOracle internal constant ORACLE = IAaveOracle(0xcb601629B36891c43943e3CDa2eB18FAc38B5c4e);
 
+  // https://goerli.etherscan.io/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
+  // https://goerli.etherscan.io/address/0xB7d8ff9949dB06D8387C28332045b8F734641755
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xB7d8ff9949dB06D8387C28332045b8F734641755);
 
+  // https://goerli.etherscan.io/address/0x9C94757E231AdF6c90f89259DFA0841a1bf8172f
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x9C94757E231AdF6c90f89259DFA0841a1bf8172f);
 
+  // https://goerli.etherscan.io/address/0x2892e37624Ec31CC42502f297821109700270971
   address internal constant ACL_ADMIN = 0x2892e37624Ec31CC42502f297821109700270971;
 
+  // https://goerli.etherscan.io/address/0x1A47958e231848C664863D213bC27b018934477D
   ICollector internal constant COLLECTOR = ICollector(0x1A47958e231848C664863D213bC27b018934477D);
 
+  // https://goerli.etherscan.io/address/0x8688FEF353f4940061b4893d563de1C487Aa92Fd
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x8688FEF353f4940061b4893d563de1C487Aa92Fd;
 
+  // https://goerli.etherscan.io/address/0x877880d5E01b483add2f3223B709a26b622F0852
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x877880d5E01b483add2f3223B709a26b622F0852;
 
+  // https://goerli.etherscan.io/address/0x46Dbc9aeF756a594a61fcbB35902F24103044cBf
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x46Dbc9aeF756a594a61fcbB35902F24103044cBf;
 
+  // https://goerli.etherscan.io/address/0xAc08Af18C2E9b7B62facacd048d2F89a25024474
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xAc08Af18C2E9b7B62facacd048d2F89a25024474;
 
+  // https://goerli.etherscan.io/address/0xC9f3b10c05a3e2a49F8165AC29b9275f85DE06cD
   address internal constant EMISSION_MANAGER = 0xC9f3b10c05a3e2a49F8165AC29b9275f85DE06cD;
 
+  // https://goerli.etherscan.io/address/0x1265305F033156bbF8Ba54fE45DD5685BEc4Cc44
   address internal constant FAUCET = 0x1265305F033156bbF8Ba54fE45DD5685BEc4Cc44;
 
+  // https://goerli.etherscan.io/address/0xF67B25977cEFf3563BF7F24A531D6CEAe6870a9d
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xF67B25977cEFf3563BF7F24A531D6CEAe6870a9d;
 
+  // https://goerli.etherscan.io/address/0x3De59b6901e7Ad0A19621D49C5b52cC9a4977e52
   address internal constant UI_POOL_DATA_PROVIDER = 0x3De59b6901e7Ad0A19621D49C5b52cC9a4977e52;
 
+  // https://goerli.etherscan.io/address/0x03C8d0c46834921c4468C15A03E5d76Ae5CA3133
   address internal constant WALLET_BALANCE_PROVIDER = 0x03C8d0c46834921c4468C15A03E5d76Ae5CA3133;
 
+  // https://goerli.etherscan.io/address/0x9c402E3b0D123323F0FCed781b8184Ec7E02Dd31
   address internal constant WETH_GATEWAY = 0x9c402E3b0D123323F0FCed781b8184Ec7E02Dd31;
 }
 

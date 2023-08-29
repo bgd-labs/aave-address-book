@@ -33,28 +33,39 @@ library AaveV2Polygon {
 
   address internal constant EMISSION_MANAGER = 0x2bB25175d9B0F8965780209EB558Cc3b56cA6d32;
 
+  // https://polygonscan.com/address/0xe9E52021f4e11DEAD8661812A0A6c8627abA2a54
   address internal constant DEBT_SWAP_ADAPTER = 0xe9E52021f4e11DEAD8661812A0A6c8627abA2a54;
 
+  // https://polygonscan.com/address/0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9
   address internal constant LISTING_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
 
+  // https://polygonscan.com/address/0x3db487975aB1728DB5787b798866c2021B24ec52
   address internal constant MIGRATION_HELPER = 0x3db487975aB1728DB5787b798866c2021B24ec52;
 
+  // https://polygonscan.com/address/0x3ac4e9aa29940770aeC38fe853a4bbabb2dA9C19
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x3ac4e9aa29940770aeC38fe853a4bbabb2dA9C19;
 
+  // https://polygonscan.com/address/0xD05003a24A17d9117B11eC04cF9743b050779c08
   address internal constant RATES_FACTORY = 0xD05003a24A17d9117B11eC04cF9743b050779c08;
 
+  // https://polygonscan.com/address/0xE84cF064a0a65290Ae5673b500699f3753063936
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xE84cF064a0a65290Ae5673b500699f3753063936;
 
+  // https://polygonscan.com/address/0x35784a624D4FfBC3594f4d16fA3801FeF063241c
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x35784a624D4FfBC3594f4d16fA3801FeF063241c;
 
+  // https://polygonscan.com/address/0x645654D59A5226CBab969b1f5431aA47CBf64ab8
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x645654D59A5226CBab969b1f5431aA47CBf64ab8;
 
+  // https://polygonscan.com/address/0x204f2Eb81D996729829debC819f7992DCEEfE7b1
   address internal constant UI_POOL_DATA_PROVIDER = 0x204f2Eb81D996729829debC819f7992DCEEfE7b1;
 
+  // https://polygonscan.com/address/0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e
   address internal constant WALLET_BALANCE_PROVIDER = 0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e;
 
+  // https://polygonscan.com/address/0xAeBF56223F044a73A513FAD7E148A9075227eD9b
   address internal constant WETH_GATEWAY = 0xAeBF56223F044a73A513FAD7E148A9075227eD9b;
 }
 

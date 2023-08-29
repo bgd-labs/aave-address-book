@@ -6,49 +6,68 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3Mumbai {
+  // https://mumbai.polygonscan.com/address/0x4CeDCB57Af02293231BAA9D39354D6BFDFD251e0
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0x4CeDCB57Af02293231BAA9D39354D6BFDFD251e0);
 
+  // https://mumbai.polygonscan.com/address/0xcC6114B983E4Ed2737E9BD3961c9924e6216c704
   IPool internal constant POOL = IPool(0xcC6114B983E4Ed2737E9BD3961c9924e6216c704);
 
+  // https://mumbai.polygonscan.com/address/0x5C12526EaAc2637fEa2322ee4e389698dBFC3845
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x5C12526EaAc2637fEa2322ee4e389698dBFC3845);
 
+  // https://mumbai.polygonscan.com/address/0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8
   IAaveOracle internal constant ORACLE = IAaveOracle(0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8);
 
+  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
+  // https://mumbai.polygonscan.com/address/0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e);
 
+  // https://mumbai.polygonscan.com/address/0x9c2B4870C8ABA221DAe5c82e1a0f72D85e40C165
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x9c2B4870C8ABA221DAe5c82e1a0f72D85e40C165);
 
+  // https://mumbai.polygonscan.com/address/0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8
   address internal constant ACL_ADMIN = 0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8;
 
+  // https://mumbai.polygonscan.com/address/0x742fe7A795439006371705Ceb1c3B075a300ACFc
   ICollector internal constant COLLECTOR = ICollector(0x742fe7A795439006371705Ceb1c3B075a300ACFc);
 
+  // https://mumbai.polygonscan.com/address/0xBcEF55508Efb890C71c8a6211B3dE02B00430503
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xBcEF55508Efb890C71c8a6211B3dE02B00430503;
 
+  // https://mumbai.polygonscan.com/address/0x274032E998ea08EAE819E7985488AD54DC813b69
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x274032E998ea08EAE819E7985488AD54DC813b69;
 
+  // https://mumbai.polygonscan.com/address/0xf24dc19cFb9A25bbc4DDcaAdb116DfD17472207B
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xf24dc19cFb9A25bbc4DDcaAdb116DfD17472207B;
 
+  // https://mumbai.polygonscan.com/address/0xd2B0C9778d088Fc79C28Da719bC02158E64796bD
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xd2B0C9778d088Fc79C28Da719bC02158E64796bD;
 
+  // https://mumbai.polygonscan.com/address/0x9060C6E714BA5C3A46665599103989778a736D4B
   address internal constant EMISSION_MANAGER = 0x9060C6E714BA5C3A46665599103989778a736D4B;
 
+  // https://mumbai.polygonscan.com/address/0x2c95d10bA4BBEc79e562e8B3f48687751808C925
   address internal constant FAUCET = 0x2c95d10bA4BBEc79e562e8B3f48687751808C925;
 
+  // https://mumbai.polygonscan.com/address/0x322bCff7b69F832B1a1F56E6BC600C9229CFb907
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x322bCff7b69F832B1a1F56E6BC600C9229CFb907;
 
+  // https://mumbai.polygonscan.com/address/0xD64dDe119f11C88850FD596BE11CE398CC5893e6
   address internal constant UI_POOL_DATA_PROVIDER = 0xD64dDe119f11C88850FD596BE11CE398CC5893e6;
 
+  // https://mumbai.polygonscan.com/address/0xD8A70FC58BC069CFE6529EBF0c1Db067f2b5347E
   address internal constant WALLET_BALANCE_PROVIDER = 0xD8A70FC58BC069CFE6529EBF0c1Db067f2b5347E;
 
+  // https://mumbai.polygonscan.com/address/0x8dA9412AbB78db20d0B496573D9066C474eA21B8
   address internal constant WETH_GATEWAY = 0x8dA9412AbB78db20d0B496573D9066C474eA21B8;
 }
 

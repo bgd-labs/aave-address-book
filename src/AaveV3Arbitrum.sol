@@ -6,67 +6,94 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3Arbitrum {
+  // https://arbiscan.io/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb);
 
+  // https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
+  // https://arbiscan.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
 
+  // https://arbiscan.io/address/0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7
   IAaveOracle internal constant ORACLE = IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7);
 
+  // https://arbiscan.io/address/0xF876d26041a4Fdc7A787d209DC3D2795dDc74f1e
   address internal constant PRICE_ORACLE_SENTINEL = 0xF876d26041a4Fdc7A787d209DC3D2795dDc74f1e;
 
+  // https://arbiscan.io/address/0x6b4E260b765B3cA1514e618C0215A6B7839fF93e
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x6b4E260b765B3cA1514e618C0215A6B7839fF93e);
 
+  // https://arbiscan.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
+  // https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
   address internal constant ACL_ADMIN = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
+  // https://arbiscan.io/address/0x053D55f9B5AF8694c503EB288a1B7E552f590710
   ICollector internal constant COLLECTOR = ICollector(0x053D55f9B5AF8694c503EB288a1B7E552f590710);
 
+  // https://arbiscan.io/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;
 
+  // https://arbiscan.io/address/0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a;
 
+  // https://arbiscan.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
 
+  // https://arbiscan.io/address/0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_2 =
     0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7;
 
+  // https://arbiscan.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
   address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
+  // https://arbiscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
 
+  // https://arbiscan.io/address/0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE
   address internal constant DEBT_SWAP_ADAPTER = 0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE;
 
+  // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
 
+  // https://arbiscan.io/address/0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20
   address internal constant LISTING_ENGINE = 0x0EfdfC1A940DE4E7E6acC9Bb801481f81B17fd20;
 
+  // https://arbiscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
+  // https://arbiscan.io/address/0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896
   address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
 
+  // https://arbiscan.io/address/0x28201C152DC5B69A86FA54FCfd21bcA4C0eff3BA
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x28201C152DC5B69A86FA54FCfd21bcA4C0eff3BA;
 
+  // https://arbiscan.io/address/0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823
   address internal constant STATIC_A_TOKEN_FACTORY = 0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823;
 
+  // https://arbiscan.io/address/0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251;
 
+  // https://arbiscan.io/address/0xDA67AF3403555Ce0AE3ffC22fDb7354458277358
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xDA67AF3403555Ce0AE3ffC22fDb7354458277358;
 
+  // https://arbiscan.io/address/0x145dE30c929a065582da84Cf96F88460dB9745A7
   address internal constant UI_POOL_DATA_PROVIDER = 0x145dE30c929a065582da84Cf96F88460dB9745A7;
 
+  // https://arbiscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
+  // https://arbiscan.io/address/0xB5Ee21786D28c5Ba61661550879475976B707099
   address internal constant WETH_GATEWAY = 0xB5Ee21786D28c5Ba61661550879475976B707099;
 }
 

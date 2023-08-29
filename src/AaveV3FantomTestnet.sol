@@ -6,49 +6,68 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3FantomTestnet {
+  // https://testnet.ftmscan.com/address/0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24);
 
+  // https://testnet.ftmscan.com/address/0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8
   IPool internal constant POOL = IPool(0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8);
 
+  // https://testnet.ftmscan.com/address/0x257a6f06192D532e40F66b3DDfE2cBBaf8373822
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x257a6f06192D532e40F66b3DDfE2cBBaf8373822);
 
+  // https://testnet.ftmscan.com/address/0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4
   IAaveOracle internal constant ORACLE = IAaveOracle(0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4);
 
+  // https://testnet.ftmscan.com/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
+  // https://testnet.ftmscan.com/address/0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61);
 
+  // https://testnet.ftmscan.com/address/0xD5D4f4fe4BfC8e8193f38927EfafDbfbB66dd7e0
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xD5D4f4fe4BfC8e8193f38927EfafDbfbB66dd7e0);
 
+  // https://testnet.ftmscan.com/address/0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8
   address internal constant ACL_ADMIN = 0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8;
 
+  // https://testnet.ftmscan.com/address/0x445e52B0C18704448f4589C4304f63Ea287c2eb0
   ICollector internal constant COLLECTOR = ICollector(0x445e52B0C18704448f4589C4304f63Ea287c2eb0);
 
+  // https://testnet.ftmscan.com/address/0x9F749B597414eD4F53a0F23971327bb60f16ad94
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x9F749B597414eD4F53a0F23971327bb60f16ad94;
 
+  // https://testnet.ftmscan.com/address/0x6056C29483433A095eF98Fb0d01F2827F5FCeB99
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x6056C29483433A095eF98Fb0d01F2827F5FCeB99;
 
+  // https://testnet.ftmscan.com/address/0x67F50B454972F7557c359AfE2DD3caef9930d665
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x67F50B454972F7557c359AfE2DD3caef9930d665;
 
+  // https://testnet.ftmscan.com/address/0x979667835fE95F39609220C7582C7f21DaF1ce11
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x979667835fE95F39609220C7582C7f21DaF1ce11;
 
+  // https://testnet.ftmscan.com/address/0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155
   address internal constant EMISSION_MANAGER = 0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155;
 
+  // https://testnet.ftmscan.com/address/0x021BE22Bdfa497D6643D4035E530095E7b452967
   address internal constant FAUCET = 0x021BE22Bdfa497D6643D4035E530095E7b452967;
 
+  // https://testnet.ftmscan.com/address/0xf24dc19cFb9A25bbc4DDcaAdb116DfD17472207B
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xf24dc19cFb9A25bbc4DDcaAdb116DfD17472207B;
 
+  // https://testnet.ftmscan.com/address/0xC91dB4F736b6Acf5A2e379a58280D1b06BD24E7d
   address internal constant UI_POOL_DATA_PROVIDER = 0xC91dB4F736b6Acf5A2e379a58280D1b06BD24E7d;
 
+  // https://testnet.ftmscan.com/address/0x49cC86071dEcC7999BA656763b8389f23058bB34
   address internal constant WALLET_BALANCE_PROVIDER = 0x49cC86071dEcC7999BA656763b8389f23058bB34;
 
+  // https://testnet.ftmscan.com/address/0xd2B0C9778d088Fc79C28Da719bC02158E64796bD
   address internal constant WETH_GATEWAY = 0xd2B0C9778d088Fc79C28Da719bC02158E64796bD;
 }
 

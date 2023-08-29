@@ -33,5 +33,6 @@ library AaveV2EthereumArc {
 
   address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
 
+  // https://etherscan.io/address/0xF4a1F5fEA79C3609514A417425971FadC10eCfBE
   address internal constant PERMISSION_MANAGER = 0xF4a1F5fEA79C3609514A417425971FadC10eCfBE;
 }

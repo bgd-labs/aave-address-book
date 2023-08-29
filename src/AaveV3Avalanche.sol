@@ -6,70 +6,98 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3Avalanche {
+  // https://snowtrace.io/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb);
 
+  // https://snowtrace.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
+  // https://snowtrace.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
 
+  // https://snowtrace.io/address/0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C
   IAaveOracle internal constant ORACLE = IAaveOracle(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C);
 
+  // https://snowtrace.io/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
+  // https://snowtrace.io/address/0x50ddd0Cd4266299527d25De9CBb55fE0EB8dAc30
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x50ddd0Cd4266299527d25De9CBb55fE0EB8dAc30);
 
+  // https://snowtrace.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
+  // https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
   address internal constant ACL_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 
+  // https://snowtrace.io/address/0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0
   ICollector internal constant COLLECTOR = ICollector(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0);
 
+  // https://snowtrace.io/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;
 
+  // https://snowtrace.io/address/0x1E81af09001aD208BDa68FF022544dB2102A752d
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0x1E81af09001aD208BDa68FF022544dB2102A752d;
 
+  // https://snowtrace.io/address/0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24;
 
+  // https://snowtrace.io/address/0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_2 =
     0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9;
 
+  // https://snowtrace.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
   address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
+  // https://snowtrace.io/address/0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5;
 
+  // https://snowtrace.io/address/0x4C0633Bf70fB2bB984A9eEC5d9052BdEA451C70A
   address internal constant DEBT_SWAP_ADAPTER = 0x4C0633Bf70fB2bB984A9eEC5d9052BdEA451C70A;
 
+  // https://snowtrace.io/address/0x49581e5575F49263f556b91daf8fb41D7854D94B
   address internal constant LISTING_ENGINE = 0x49581e5575F49263f556b91daf8fb41D7854D94B;
 
+  // https://snowtrace.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
+  // https://snowtrace.io/address/0xab22988D93d5F942fC6B6c6Ea285744809D1d9Cc
   address internal constant PROOF_OF_RESERVE = 0xab22988D93d5F942fC6B6c6Ea285744809D1d9Cc;
 
+  // https://snowtrace.io/address/0x80f2c02224a2E548FC67c0bF705eBFA825dd5439
   address internal constant PROOF_OF_RESERVE_AGGREGATOR =
     0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
 
+  // https://snowtrace.io/address/0xDd81E6F85358292075B78fc8D5830BE8434aF8BA
   address internal constant RATES_FACTORY = 0xDd81E6F85358292075B78fc8D5830BE8434aF8BA;
 
+  // https://snowtrace.io/address/0x49F5B996814fEd1dd39285B92A59CFb2dfd8D4f9
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x49F5B996814fEd1dd39285B92A59CFb2dfd8D4f9;
 
+  // https://snowtrace.io/address/0xbD37610BBB1ddc2a22797F7e3f531B59902b7bA7
   address internal constant STATIC_A_TOKEN_FACTORY = 0xbD37610BBB1ddc2a22797F7e3f531B59902b7bA7;
 
+  // https://snowtrace.io/address/0x2Cf641F7C0eac2788A7924B82d6Ca8EB7bAa4E3A
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x2Cf641F7C0eac2788A7924B82d6Ca8EB7bAa4E3A;
 
+  // https://snowtrace.io/address/0x265d414f80b0fca9505710e6F16dB4b67555D365
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x265d414f80b0fca9505710e6F16dB4b67555D365;
 
+  // https://snowtrace.io/address/0xF71DBe0FAEF1473ffC607d4c555dfF0aEaDb878d
   address internal constant UI_POOL_DATA_PROVIDER = 0xF71DBe0FAEF1473ffC607d4c555dfF0aEaDb878d;
 
+  // https://snowtrace.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
+  // https://snowtrace.io/address/0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7
   address internal constant WETH_GATEWAY = 0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7;
 }
 

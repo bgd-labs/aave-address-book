@@ -33,17 +33,23 @@ library AaveV2Goerli {
 
   address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
 
+  // https://goerli.etherscan.io/address/0x681860075529352da2C94082Eb66c59dF958e89C
   address internal constant FAUCET = 0x681860075529352da2C94082Eb66c59dF958e89C;
 
+  // https://goerli.etherscan.io/address/0x3465454D658019f8A0eABD3bC61d2d1Dd3a0735F
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x3465454D658019f8A0eABD3bC61d2d1Dd3a0735F;
 
+  // https://goerli.etherscan.io/address/0xA2E05bE2090b3658A264bdf1C39387f5Dba367Ec
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xA2E05bE2090b3658A264bdf1C39387f5Dba367Ec;
 
+  // https://goerli.etherscan.io/address/0xaaa2872d1F7f5ceb630Cb736BcA34Ff1e121992b
   address internal constant UI_POOL_DATA_PROVIDER = 0xaaa2872d1F7f5ceb630Cb736BcA34Ff1e121992b;
 
+  // https://goerli.etherscan.io/address/0xf1E4A6E7FA07421FD5139Ba0848290A27e22db7f
   address internal constant WALLET_BALANCE_PROVIDER = 0xf1E4A6E7FA07421FD5139Ba0848290A27e22db7f;
 
+  // https://goerli.etherscan.io/address/0x3bd3a20Ac9Ff1dda1D99C0dFCE6D65C4960B3627
   address internal constant WETH_GATEWAY = 0x3bd3a20Ac9Ff1dda1D99C0dFCE6D65C4960B3627;
 }
 

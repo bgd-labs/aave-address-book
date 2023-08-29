@@ -74,7 +74,7 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
             interestRateStrategyAddress: reserve.interestRateStrategyAddress,
             priceOracle: reserve.priceOracle,
           };
-        }
+        },
       );
     }
 
@@ -133,6 +133,7 @@ export async function fetchPoolV2Addresses(pool: Pool): Promise<PoolV2WithAddres
 }
 
 export function writeV2Templates({
+  provider,
   name,
   addressProvider,
   oracle,
@@ -185,7 +186,7 @@ export function writeV2Templates({
 
       address internal constant EMISSION_MANAGER = ${emissionManager};
 
-      ${generateAdditionalAddressesSol(additionalAddresses)}
+      ${generateAdditionalAddressesSol(provider, additionalAddresses)}
 
   }\r\n`;
   fs.writeFileSync(`./src/${name}.sol`, templateV2Solidity);
