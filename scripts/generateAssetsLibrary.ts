@@ -1,5 +1,6 @@
 import fs from 'fs';
-import {Hex, zeroAddress} from 'viem';
+import {Hex, PublicClient, zeroAddress} from 'viem';
+import {generateExplorerLinkComment} from './helpers';
 
 export type ReserveData = {
   symbol: string;
@@ -66,19 +67,32 @@ function fixSymbol(symbol: string, _underlying: string) {
   return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_');
 }
 
-export function appendAssetsLibrarySol(name: string, reserves: ReserveData[]) {
+export function appendAssetsLibrarySol(
+  publicClient: PublicClient,
+  name: string,
+  reserves: ReserveData[],
+) {
   const templateV3Assets = `\n\nlibrary ${name}Assets {
     ${reserves
       .map((reserve) => {
         const symbol = fixSymbol(reserve.symbol, reserve.underlyingAsset);
-        let result = `address internal constant ${symbol}_UNDERLYING = ${reserve.underlyingAsset};
+        let result = `${generateExplorerLinkComment(publicClient, reserve.underlyingAsset)}
+          address internal constant ${symbol}_UNDERLYING = ${reserve.underlyingAsset};
+          ${generateExplorerLinkComment(publicClient, reserve.aTokenAddress)}
           address internal constant ${symbol}_A_TOKEN = ${reserve.aTokenAddress};
+          ${generateExplorerLinkComment(publicClient, reserve.variableDebtTokenAddress)}
           address internal constant ${symbol}_V_TOKEN = ${reserve.variableDebtTokenAddress};
+          ${generateExplorerLinkComment(publicClient, reserve.stableDebtTokenAddress)}
           address internal constant ${symbol}_S_TOKEN = ${reserve.stableDebtTokenAddress};
+          ${generateExplorerLinkComment(publicClient, reserve.priceOracle)}
           address internal constant ${symbol}_ORACLE = ${reserve.priceOracle};
-          address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${reserve.interestRateStrategyAddress};`;
+          ${generateExplorerLinkComment(publicClient, reserve.interestRateStrategyAddress)}
+          address internal constant ${symbol}_INTEREST_RATE_STRATEGY = ${
+            reserve.interestRateStrategyAddress
+          };`;
         if (reserve.staticATokenAddress && reserve.staticATokenAddress != zeroAddress)
-          result += `        address internal constant ${symbol}_STATA_TOKEN = ${reserve.staticATokenAddress};`;
+          result += `${generateExplorerLinkComment(publicClient, reserve.staticATokenAddress)}
+                address internal constant ${symbol}_STATA_TOKEN = ${reserve.staticATokenAddress};`;
         return result;
       })
       .join('\n\n')}
