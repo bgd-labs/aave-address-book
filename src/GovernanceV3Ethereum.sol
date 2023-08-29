@@ -1,4 +1,7 @@
-library AaveEthereumGovV3 {
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.0;
+
+library GovernanceV3Ethereum {
   // https://etherscan.io/address/0x4096461e8756f8ad1d06992B61d322aB29e73e21
   address internal constant GOVERNANCE = 0x4096461e8756f8ad1d06992B61d322aB29e73e21;
 

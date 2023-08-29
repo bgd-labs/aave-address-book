@@ -3,12 +3,27 @@ import {Hex, PublicClient, getContract} from 'viem';
 import {AddressInfo, GovernanceConfig} from '../configs/types';
 import {PAYLOADS_CONTROLLER_ABI} from '../abi/payloadsController';
 import {RPC_PROVIDERS} from './clients';
-import {generateJsLibrary, generateSolidityLibrary} from './utils';
+import {generateJsLibrary, generateSolidityLibrary, prefixWithPragma} from './utils';
 import {getChainName} from './chains';
 
+function enhanceGovernanceAddressesTypes<T extends {[key: string]: Hex}>(addresses: T) {
+  return Object.keys(addresses).reduce(
+    (acc, key) => {
+      console.log(typeof addresses[key], addresses[key]);
+      if (typeof addresses[key] === 'number') {
+        acc[key] = {value: addresses[key], type: 'uint256'};
+      } else {
+        acc[key] = {value: addresses[key], type: 'address'};
+      }
+      return acc;
+    },
+    {} as {[key: string]: AddressInfo},
+  );
+}
+
 type ExecutorsV3 = {
-  EXECUTOR_LVL_1: AddressInfo;
-  EXECUTOR_LVL_2: AddressInfo;
+  EXECUTOR_LVL_1: Hex;
+  EXECUTOR_LVL_2: Hex;
 };
 
 async function fetchV3ExecutorAddresses(
@@ -30,8 +45,8 @@ async function fetchV3ExecutorAddresses(
     2,
   ]);
   return {
-    EXECUTOR_LVL_1: {address: executorLvl1.executor},
-    EXECUTOR_LVL_2: {address: executorLvl2.executor},
+    EXECUTOR_LVL_1: executorLvl1.executor,
+    EXECUTOR_LVL_2: executorLvl2.executor,
   };
 }
 
@@ -39,7 +54,7 @@ async function getGovernanceV3Addresses({CHAIN_ID, ...config}: GovernanceConfig)
   if (config.PAYLOADS_CONTROLLER) {
     const executors = await fetchV3ExecutorAddresses(
       RPC_PROVIDERS[CHAIN_ID],
-      config.PAYLOADS_CONTROLLER.address,
+      config.PAYLOADS_CONTROLLER,
     );
     return {...config, ...executors};
   }
@@ -47,10 +62,14 @@ async function getGovernanceV3Addresses({CHAIN_ID, ...config}: GovernanceConfig)
 }
 
 export async function generateGovernanceLibrary(config: GovernanceConfig) {
-  const addresses = await getGovernanceV3Addresses(config);
-  const name = `Aave${getChainName(config.CHAIN_ID)}GovV3`;
+  const addresses = enhanceGovernanceAddressesTypes(await getGovernanceV3Addresses(config));
+  const name = `GovernanceV3${getChainName(config.CHAIN_ID)}`;
   const provider = RPC_PROVIDERS[config.CHAIN_ID];
 
-  writeFileSync(`./src/${name}.sol`, generateSolidityLibrary(provider, addresses, name));
+  writeFileSync(
+    `./src/${name}.sol`,
+    prefixWithPragma(generateSolidityLibrary(provider, addresses, name)),
+  );
   writeFileSync(`./src/ts/${name}.ts`, generateJsLibrary(provider, addresses));
+  return name;
 }

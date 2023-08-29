@@ -1,5 +1,4 @@
 import {createPublicClient, fallback, http} from 'viem';
-import {ChainId} from '../config';
 import {
   mainnet,
   goerli,
@@ -20,6 +19,7 @@ import {
   avalanche,
   base,
 } from 'viem/chains';
+import {ChainId} from '../config';
 
 export const RPC_PROVIDERS = {
   [ChainId.mainnet]: createPublicClient({
