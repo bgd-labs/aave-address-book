@@ -1,10 +1,6 @@
-import {Hex, PublicClient, getContract, zeroAddress} from 'viem';
+import {Hex, PublicClient, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
-import {ADDRESS_PROVIDER_V3_ABI} from '../abi/address_provider_v3_abi';
-import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
 import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
-import {STATIC_A_TOKEN_FACTORY_ABI} from '../abi/static_a_token_factory_abi';
-import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
 import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
 import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
 import {addressOrZero, bytes32toAddress, getImplementationStorageSlot} from '../helpers';
@@ -12,16 +8,20 @@ import {RPC_PROVIDERS} from './clients';
 import {getChainName} from './chains';
 import {writeFileSync} from 'fs';
 import {generateJsLibrary, generateSolidityLibrary, prefixWithPragma} from './utils';
+import {ADDRESS_PROVIDER_V2_ABI} from '../abi/address_provider_v2_abi';
+import {LENDING_POOL_V2_ABI} from '../abi/lending_pool_v2_abi';
+import {A_TOKEN_V2_ABI} from '../abi/aToken_v2_abi';
+import {INCENTIVES_CONTROLLER_ABI} from '../abi/incentivesController_abi';
 
-export interface PoolV3Addresses {
+export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
   POOL: AddressInfo;
   AAVE_PROTOCOL_DATA_PROVIDER: AddressInfo;
   POOL_CONFIGURATOR: AddressInfo;
   ORACLE: AddressInfo;
-  ORACLE_SENTINEL: AddressInfo;
-  ACL_ADMIN: AddressInfo;
-  ACL_MANAGER: AddressInfo;
+  LENDING_RATE_ORACLE: AddressInfo;
+  ADMIN: AddressInfo;
+  EMERGENCY_ADMIN: AddressInfo;
   COLLECTOR: AddressInfo;
   EMISSION_MANAGER: AddressInfo;
   DEFAULT_INCENTIVES_CONTROLLER: AddressInfo;
@@ -34,7 +34,7 @@ export interface PoolV3Addresses {
 async function getAdditionalTokenInfo(
   publicClient: PublicClient,
   pool: PoolConfig,
-  reservesData: PoolV3Addresses['reservesData'],
+  reservesData: PoolV2Addresses['reservesData'],
 ): Promise<{
   COLLECTOR: AddressInfo;
   [key: `DEFAULT_A_TOKEN_IMPL_REV_${number}`]: Hex;
@@ -44,9 +44,10 @@ async function getAdditionalTokenInfo(
   if (reservesData.length > 0) {
     const aTokenContract = getContract({
       address: reservesData[0].aTokenAddress,
-      abi: A_TOKEN_V3_ABI,
+      abi: A_TOKEN_V2_ABI,
       publicClient,
     });
+
     const variableDebtTokenContract = getContract({
       address: reservesData[0].variableDebtTokenAddress,
       abi: VARIABLE_DEBT_TOKEN_ABI,
@@ -104,49 +105,35 @@ async function getAdditionalTokenInfo(
   };
 }
 
-export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addresses> {
+export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addresses> {
   const publicClient = RPC_PROVIDERS[pool.chainId];
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
-    abi: ADDRESS_PROVIDER_V3_ABI,
+    abi: ADDRESS_PROVIDER_V2_ABI,
     publicClient,
   });
   try {
     const [
       POOL,
+      LENDING_RATE_ORACLE,
       POOL_CONFIGURATOR,
       ORACLE,
-      ORACLE_SENTINEL,
-      ACL_ADMIN,
-      ACL_MANAGER,
+      ADMIN,
+      EMERGENCY_ADMIN,
       AAVE_PROTOCOL_DATA_PROVIDER,
     ] = await Promise.all([
-      addressProviderContract.read.getPool(),
-      addressProviderContract.read.getPoolConfigurator(),
+      addressProviderContract.read.getLendingPool(),
+      addressProviderContract.read.getLendingRateOracle(),
+      addressProviderContract.read.getLendingPoolConfigurator(),
       addressProviderContract.read.getPriceOracle(),
-      addressProviderContract.read.getPriceOracleSentinel(),
-      addressProviderContract.read.getACLAdmin(),
-      addressProviderContract.read.getACLManager(),
-      addressProviderContract.read.getPoolDataProvider(),
+      addressProviderContract.read.getPoolAdmin(),
+      addressProviderContract.read.getEmergencyAdmin(),
+      addressProviderContract.read.getAddress([
+        '0x0100000000000000000000000000000000000000000000000000000000000000',
+      ]),
     ]);
 
-    const DEFAULT_INCENTIVES_CONTROLLER = await addressProviderContract.read.getAddress([
-      '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532',
-    ]);
-
-    let EMISSION_MANAGER: Hex = zeroAddress;
-    try {
-      const incentivesControllerContract = getContract({
-        address: DEFAULT_INCENTIVES_CONTROLLER,
-        abi: REWARDS_CONTROLLER_ABI,
-        publicClient,
-      });
-      EMISSION_MANAGER = await incentivesControllerContract.read.getEmissionManager();
-    } catch (e) {
-      console.log(`old version of incentives controller deployed on ${pool.name}`);
-    }
-
-    let reservesData: PoolV3Addresses['reservesData'] = [];
+    let reservesData: PoolV2Addresses['reservesData'] = [];
     // workaround, fix before merge
     // didn't find all the ui pool data provider addresses, so currently there are gaps
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
@@ -155,58 +142,74 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
         abi: UI_POOL_DATA_PROVIDER_ABI,
         publicClient,
       });
-      const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
-        ? getContract({
-            address: pool.additionalAddresses.STATIC_A_TOKEN_FACTORY,
-            abi: STATIC_A_TOKEN_FACTORY_ABI,
-            publicClient,
-          })
-        : null;
-      const data = (
+      reservesData = (
         await uiPoolDataProvider.read.getReservesData([pool.POOL_ADDRESSES_PROVIDER])
-      )[0];
-      reservesData = await Promise.all(
-        data.map(async (reserve) => {
-          let symbol = reserve.symbol;
-          const result: ReserveData = {
-            symbol,
-            underlyingAsset: reserve.underlyingAsset,
-            decimals: Number(reserve.decimals),
-            aTokenAddress: reserve.aTokenAddress,
-            stableDebtTokenAddress: reserve.stableDebtTokenAddress,
-            variableDebtTokenAddress: reserve.variableDebtTokenAddress,
-            interestRateStrategyAddress: reserve.interestRateStrategyAddress,
-            priceOracle: reserve.priceOracle,
-          };
-          if (staticATokenFactoryContract)
-            result.staticATokenAddress = (await staticATokenFactoryContract.read.getStaticAToken([
-              reserve.underlyingAsset,
-            ])) as Hex;
-          return result;
-        }),
-      );
+      )[0].map((reserve) => {
+        return {
+          symbol: reserve.symbol,
+          underlyingAsset: reserve.underlyingAsset,
+          decimals: Number(reserve.decimals),
+          aTokenAddress: reserve.aTokenAddress,
+          stableDebtTokenAddress: reserve.stableDebtTokenAddress,
+          variableDebtTokenAddress: reserve.variableDebtTokenAddress,
+          interestRateStrategyAddress: reserve.interestRateStrategyAddress,
+          priceOracle: reserve.priceOracle,
+        };
+      });
     }
 
     const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(publicClient, pool, reservesData);
 
+    // Note: needed as i didn't find an upto date uipooldataprovider for arc
+    const lendingPoolContract = getContract({
+      address: POOL,
+      abi: LENDING_POOL_V2_ABI,
+      publicClient,
+    });
+    const reserves = await lendingPoolContract.read.getReservesList();
+    const data = await lendingPoolContract.read.getReserveData([reserves[0]]);
+
+    /**
+     * While the reserve treasury address is per token in most cases it will be the same address, so for the sake of the address-book we assume it always is.
+     */
+    const aTokenContract = getContract({
+      address: data.aTokenAddress,
+      abi: A_TOKEN_V2_ABI,
+      publicClient,
+    });
+
+    const DEFAULT_INCENTIVES_CONTROLLER = await aTokenContract.read.getIncentivesController();
+
+    let EMISSION_MANAGER: Hex = '0x0000000000000000000000000000000000000000';
+    try {
+      const incentivesControllerContract = getContract({
+        address: DEFAULT_INCENTIVES_CONTROLLER,
+        abi: INCENTIVES_CONTROLLER_ABI,
+        publicClient,
+      });
+      EMISSION_MANAGER = await incentivesControllerContract.read.EMISSION_MANAGER();
+    } catch (e) {
+      console.log(`old version of incentives controller deployed on ${pool.name}`);
+    }
+
     return {
       POOL_ADDRESSES_PROVIDER: {
         value: pool.POOL_ADDRESSES_PROVIDER,
-        type: 'IPoolAddressesProvider',
+        type: 'ILendingPoolAddressesProvider',
       },
-      POOL: {value: POOL, type: 'IPool'},
+      POOL: {value: POOL, type: 'ILendingPool'},
       POOL_CONFIGURATOR: {
         value: POOL_CONFIGURATOR,
-        type: 'IPoolConfigurator',
+        type: 'ILendingPoolConfigurator',
       },
       ORACLE: {
         value: ORACLE,
         type: 'IAaveOracle',
       },
-      ORACLE_SENTINEL,
+      LENDING_RATE_ORACLE: {value: LENDING_RATE_ORACLE, type: 'ILendingRateOracle'},
       AAVE_PROTOCOL_DATA_PROVIDER: {value: AAVE_PROTOCOL_DATA_PROVIDER, type: 'IPoolDataProvider'},
-      ACL_MANAGER: {value: ACL_MANAGER, type: 'IACLManager'},
-      ACL_ADMIN,
+      ADMIN,
+      EMERGENCY_ADMIN,
       COLLECTOR,
       DEFAULT_INCENTIVES_CONTROLLER,
       ...rest,
@@ -218,9 +221,9 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
   }
 }
 
-export async function generateProtocolV3Library(config: PoolConfig) {
-  const {reservesData, ...addresses} = await getPoolV3Addresses(config);
-  const name = `AaveV3${getChainName(config.chainId)}`;
+export async function generateProtocolV2Library(config: PoolConfig) {
+  const {reservesData, ...addresses} = await getPoolV2Addresses(config);
+  const name = `AaveV2${getChainName(config.chainId)}`;
   const provider = RPC_PROVIDERS[config.chainId];
 
   writeFileSync(
