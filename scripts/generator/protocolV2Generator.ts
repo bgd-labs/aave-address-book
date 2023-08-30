@@ -18,7 +18,7 @@ export interface PoolV2Addresses {
   POOL_CONFIGURATOR: AddressInfo;
   ORACLE: AddressInfo;
   LENDING_RATE_ORACLE: AddressInfo;
-  ADMIN: AddressInfo;
+  POOL_ADMIN: AddressInfo;
   EMERGENCY_ADMIN: AddressInfo;
   COLLECTOR: AddressInfo;
   EMISSION_MANAGER: AddressInfo;
@@ -28,7 +28,7 @@ export interface PoolV2Addresses {
 
 async function getAdditionalTokenInfo(
   publicClient: PublicClient,
-  pool: PoolConfig,
+  pool: Hex,
   reservesData: PoolV2Addresses['reservesData'],
 ): Promise<{
   COLLECTOR: AddressInfo;
@@ -47,10 +47,24 @@ async function getAdditionalTokenInfo(
     return {
       COLLECTOR: {value: COLLECTOR, type: 'ICollector'},
     };
+  } else {
+    const lendingPoolContract = getContract({
+      address: pool,
+      abi: LENDING_POOL_V2_ABI,
+      publicClient,
+    });
+    const reserves = await lendingPoolContract.read.getReservesList();
+    const data = await lendingPoolContract.read.getReserveData([reserves[0]]);
+    const aTokenContract = getContract({
+      address: data.aTokenAddress,
+      abi: A_TOKEN_V2_ABI,
+      publicClient,
+    });
+    const collector = await aTokenContract.read.RESERVE_TREASURY_ADDRESS();
+    return {
+      COLLECTOR: {value: collector, type: 'ICollector'},
+    };
   }
-  return {
-    COLLECTOR: {value: addressOrZero(pool.initial?.COLLECTOR), type: 'ICollector'},
-  };
 }
 
 export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addresses> {
@@ -66,7 +80,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       LENDING_RATE_ORACLE,
       POOL_CONFIGURATOR,
       ORACLE,
-      ADMIN,
+      POOL_ADMIN,
       EMERGENCY_ADMIN,
       AAVE_PROTOCOL_DATA_PROVIDER,
     ] = await Promise.all([
@@ -106,7 +120,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       });
     }
 
-    const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(publicClient, pool, reservesData);
+    const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(publicClient, POOL, reservesData);
 
     // Note: needed as i didn't find an upto date uipooldataprovider for arc
     const lendingPoolContract = getContract({
@@ -161,7 +175,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
         value: AAVE_PROTOCOL_DATA_PROVIDER,
         type: 'IAaveProtocolDataProvider',
       },
-      ADMIN,
+      POOL_ADMIN,
       EMERGENCY_ADMIN,
       COLLECTOR,
       DEFAULT_INCENTIVES_CONTROLLER,

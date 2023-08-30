@@ -26,7 +26,7 @@ library AaveV2EthereumAMM {
     IAaveProtocolDataProvider(0x0000000000000000000000000000000000000000);
 
   // https://etherscan.io/address/0xEE56e2B3D491590B5b31738cC34d5232F378a8D5
-  address internal constant ADMIN = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
+  address internal constant POOL_ADMIN = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
 
   // https://etherscan.io/address/0xB9062896ec3A615a4e4444DF183F0531a77218AE
   address internal constant EMERGENCY_ADMIN = 0xB9062896ec3A615a4e4444DF183F0531a77218AE;
@@ -37,17 +37,6 @@ library AaveV2EthereumAMM {
   // https://etherscan.io/address/0x0000000000000000000000000000000000000000
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x0000000000000000000000000000000000000000;
-
-  // https://etherscan.io/address/0x517AD97cD3543eE616cDb3D7765b201D6c9dFFdd
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x517AD97cD3543eE616cDb3D7765b201D6c9dFFdd;
-
-  // https://etherscan.io/address/0x104e375E7A62ac88317b93A2288865513c1DC511
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x104e375E7A62ac88317b93A2288865513c1DC511;
-
-  // https://etherscan.io/address/0x135bb9dfd7880a53ef86b6f281AA4C3a9ADdB85c
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x135bb9dfd7880a53ef86b6f281AA4C3a9ADdB85c;
 
   // https://etherscan.io/address/0x0000000000000000000000000000000000000000
   address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
