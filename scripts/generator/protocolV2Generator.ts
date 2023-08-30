@@ -1,9 +1,7 @@
 import {Hex, PublicClient, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
 import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
-import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
-import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
-import {addressOrZero, bytes32toAddress, getImplementationStorageSlot} from '../helpers';
+import {addressOrZero} from '../helpers';
 import {RPC_PROVIDERS} from './clients';
 import {getChainName} from './chains';
 import {writeFileSync} from 'fs';
@@ -25,9 +23,6 @@ export interface PoolV2Addresses {
   COLLECTOR: AddressInfo;
   EMISSION_MANAGER: AddressInfo;
   DEFAULT_INCENTIVES_CONTROLLER: AddressInfo;
-  [key: `DEFAULT_A_TOKEN_IMPL_REV_${number}`]: AddressInfo;
-  [key: `DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
-  [key: `DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
   reservesData: ReserveData[];
 }
 
@@ -47,61 +42,14 @@ async function getAdditionalTokenInfo(
       abi: A_TOKEN_V2_ABI,
       publicClient,
     });
-
-    const variableDebtTokenContract = getContract({
-      address: reservesData[0].variableDebtTokenAddress,
-      abi: VARIABLE_DEBT_TOKEN_ABI,
-      publicClient,
-    });
-    const stableDebtTokenContract = getContract({
-      address: reservesData[0].stableDebtTokenAddress,
-      abi: STABLE_DEBT_TOKEN_ABI,
-      publicClient,
-    });
-
-    const [COLLECTOR, aTokenImplSlot, aTokenImplRevision, vTokenImplSlot, sTokenImplSlot] =
-      await Promise.all([
-        aTokenContract.read.RESERVE_TREASURY_ADDRESS(),
-        getImplementationStorageSlot(publicClient, reservesData[0].aTokenAddress),
-        aTokenContract.read.ATOKEN_REVISION(),
-        getImplementationStorageSlot(publicClient, reservesData[0].variableDebtTokenAddress),
-        getImplementationStorageSlot(publicClient, reservesData[0].stableDebtTokenAddress),
-      ]);
-
-    const defaultATokenImplementation = bytes32toAddress(aTokenImplSlot);
-
-    const aTokenRevision = Number(aTokenImplRevision);
-
-    const defaultVariableDebtTokenImplementation = bytes32toAddress(vTokenImplSlot);
-
-    const variableDebtTokenRevision = Number(
-      await variableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
-    );
-
-    const defaultStableDebtTokenImplementation = bytes32toAddress(sTokenImplSlot);
-
-    const stableDebtTokenRevision = Number(
-      await stableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
-    );
+    const COLLECTOR = await aTokenContract.read.RESERVE_TREASURY_ADDRESS();
 
     return {
       COLLECTOR: {value: COLLECTOR, type: 'ICollector'},
-      [`DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision}`]: defaultATokenImplementation,
-      [`DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision}`]:
-        defaultVariableDebtTokenImplementation,
-      [`DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision}`]:
-        defaultStableDebtTokenImplementation,
     };
   }
   return {
     COLLECTOR: {value: addressOrZero(pool.initial?.COLLECTOR), type: 'ICollector'},
-    DEFAULT_A_TOKEN_IMPL_REV_1: addressOrZero(pool.initial?.DEFAULT_A_TOKEN_IMPL),
-    DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1: addressOrZero(
-      pool.initial?.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL,
-    ),
-    DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1: addressOrZero(
-      pool.initial?.DEFAULT_STABLE_DEBT_TOKEN_IMPL,
-    ),
   };
 }
 
@@ -189,7 +137,9 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       });
       EMISSION_MANAGER = await incentivesControllerContract.read.EMISSION_MANAGER();
     } catch (e) {
-      console.log(`old version of incentives controller deployed on ${pool.name}`);
+      console.log(
+        `old version of incentives controller deployed on ${pool.chainId} ${pool.nameSuffix}`,
+      );
     }
 
     return {
