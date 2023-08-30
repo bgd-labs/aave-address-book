@@ -82,7 +82,7 @@ library AaveV3EthereumAssets {
   address internal constant WETH_S_TOKEN = 0x102633152313C81cD80419b6EcF66d14Ad68949A;
   address internal constant WETH_ORACLE = 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0x53F57eAAD604307889D87b747Fc67ea9DE430B01;
+    0xb02381b1d27aA9845e5012083CA288c1818884f0;
   address internal constant WETH_STATA_TOKEN = 0x03928473f25bb2da6Bc880b07eCBaDC636822264;
 
   address internal constant wstETH_UNDERLYING = 0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0;
@@ -115,7 +115,7 @@ library AaveV3EthereumAssets {
   address internal constant DAI_V_TOKEN = 0xcF8d0c70c850859266f5C338b38F9D663181C314;
   address internal constant DAI_S_TOKEN = 0x413AdaC9E2Ef8683ADf5DDAEce8f19613d60D1bb;
   address internal constant DAI_ORACLE = 0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9;
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x694d4cFdaeE639239df949b6E24Ff8576A00d1f2;
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3;
   address internal constant DAI_STATA_TOKEN = 0xEb708639E8e518B86a916db3685f90216b1C1c67;
 
   address internal constant LINK_UNDERLYING = 0x514910771AF9Ca656af840dff83E8264EcF986CA;
@@ -245,12 +245,28 @@ library AaveV3EthereumAssets {
   address internal constant RPL_S_TOKEN = 0x41e330fd8F7eA31E2e8F02cC0C9392D1403597B4;
   address internal constant RPL_ORACLE = 0x4E155eD98aFE9034b7A5962f6C84c86d869daA9d;
   address internal constant RPL_INTEREST_RATE_STRATEGY = 0xD87974E8ED49AB16d5053ba793F4e17078Be0426;
+
+  address internal constant sDAI_UNDERLYING = 0x83F20F44975D03b1b09e64809B757c47f942BEeA;
+  address internal constant sDAI_A_TOKEN = 0x4C612E3B15b96Ff9A6faED838F8d07d479a8dD4c;
+  address internal constant sDAI_V_TOKEN = 0x8Db9D35e117d8b93C6Ca9b644b25BaD5d9908141;
+  address internal constant sDAI_S_TOKEN = 0x48Bc45f084988bC01933EA93EeFfEBC0416534f6;
+  address internal constant sDAI_ORACLE = 0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B;
+  address internal constant sDAI_INTEREST_RATE_STRATEGY =
+    0xdef8F50155A6cf21181E29E400E8CffAE2d50968;
 }
 
 library AaveV3EthereumGovV3 {
-  address internal constant EXECUTOR_LVL_1 = 0x0000000000000000000000000000000000000000;
+  address internal constant EXECUTOR_LVL_1 = 0x95Fa2c817169E26956AB8795c84a225b55d7db5B;
 
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+  address internal constant EXECUTOR_LVL_2 = 0x3785149dC7B45a2383dFCf4bC78e44BFce474111;
 
   address internal constant CROSS_CHAIN_CONTROLLER = 0x6aaD18a3cafB04b9a70761943796eCC179A1D933;
+
+  address internal constant GOVERNANCE = 0x4096461e8756f8ad1d06992B61d322aB29e73e21;
+
+  address internal constant PAYLOADS_CONTROLLER = 0xf6FB2B1ab6EF8fb24F068229932e60276C9950AE;
+
+  address internal constant VOTING_MACHINE = 0x4D20436E4c6Fc1fF27312f4531112692bbdbC481;
+
+  address internal constant VOTING_PORTAL_ETH_ETH = 0x26B4f5FB207a2635bfEF11DFd86d862B93f85E5a;
 }

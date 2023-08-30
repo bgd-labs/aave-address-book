@@ -16,7 +16,7 @@ library AaveV3Base {
 
   IAaveOracle internal constant ORACLE = IAaveOracle(0x2Cc0Fc26eD4563A5ce5e8bdcfe1A2878676Ae156);
 
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
+  address internal constant PRICE_ORACLE_SENTINEL = 0xe34949A48cd2E6f5CD41753e449bd2d43993C9AC;
 
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x2d8A3C5677189723C4cB8873CfC9C8976FDF38Ac);
@@ -59,6 +59,32 @@ library AaveV3Base {
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;
 
   address internal constant WETH_GATEWAY = 0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee;
+}
+
+library AaveV3BaseAssets {
+  address internal constant WETH_UNDERLYING = 0x4200000000000000000000000000000000000006;
+  address internal constant WETH_A_TOKEN = 0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7;
+  address internal constant WETH_V_TOKEN = 0x24e6e0795b3c7c71D965fCc4f371803d1c1DcA1E;
+  address internal constant WETH_S_TOKEN = 0xaED3b56FeA82E809665f02AcBcDEc0816c75f4d9;
+  address internal constant WETH_ORACLE = 0x71041dddad3595F9CEd3DcCFBe3D1F4b0a16Bb70;
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0xC1F6588f4A1145D0B7F94c86a773bB47F0eC0759;
+
+  address internal constant cbETH_UNDERLYING = 0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22;
+  address internal constant cbETH_A_TOKEN = 0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad;
+  address internal constant cbETH_V_TOKEN = 0x1DabC36f19909425f654777249815c073E8Fd79F;
+  address internal constant cbETH_S_TOKEN = 0xa9dF5c62d16d3f496673F4d736852017b086eCA0;
+  address internal constant cbETH_ORACLE = 0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
+  address internal constant cbETH_INTEREST_RATE_STRATEGY =
+    0x05295489b6aE0d97ae7C49a42989497294F7F428;
+
+  address internal constant USDbC_UNDERLYING = 0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA;
+  address internal constant USDbC_A_TOKEN = 0x0a1d576f3eFeF75b330424287a95A366e8281D54;
+  address internal constant USDbC_V_TOKEN = 0x7376b2F323dC56fCd4C191B34163ac8a84702DAB;
+  address internal constant USDbC_S_TOKEN = 0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654;
+  address internal constant USDbC_ORACLE = 0x7e860098F58bBFC8648a4311b374B1D669a2bc6B;
+  address internal constant USDbC_INTEREST_RATE_STRATEGY =
+    0x8BAdED77793c340ab79848A09C7F5f7F16007Ab6;
 }
 
 library AaveV3BaseGovV3 {
