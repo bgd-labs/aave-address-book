@@ -6,117 +6,185 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3OptimismGoerli {
+  // https://goerli-optimism.etherscan.io/address/0xf3a4595bD9FBf129DEb80802a4785873F0ceB65c
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-    IPoolAddressesProvider(0x0b8FAe5f9Bf5a1a5867FB5b39fF4C028b1C2ebA9);
+    IPoolAddressesProvider(0xf3a4595bD9FBf129DEb80802a4785873F0ceB65c);
 
-  IPool internal constant POOL = IPool(0xCAd01dAdb7E97ae45b89791D986470F3dfC256f7);
+  // https://goerli-optimism.etherscan.io/address/0x52dCE39f4A3823b335732178364f5590bDacb25D
+  IPool internal constant POOL = IPool(0x52dCE39f4A3823b335732178364f5590bDacb25D);
 
+  // https://goerli-optimism.etherscan.io/address/0x54Ad998A389A82e4ACf9dC03A92512694EF25035
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
-    IPoolConfigurator(0x98EC9f3e5A0E5aDB16BAAdEB96a110BceeaC0067);
+    IPoolConfigurator(0x54Ad998A389A82e4ACf9dC03A92512694EF25035);
 
-  IAaveOracle internal constant ORACLE = IAaveOracle(0x2366d0cE3f44D81f7b2D40C64288b5eAA7593049);
+  // https://goerli-optimism.etherscan.io/address/0xFd8Ec04CeC4B1A734A58E4920f76baFa9a1326D8
+  IAaveOracle internal constant ORACLE = IAaveOracle(0xFd8Ec04CeC4B1A734A58E4920f76baFa9a1326D8);
 
+  // https://goerli-optimism.etherscan.io/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
+  // https://goerli-optimism.etherscan.io/address/0x586370F91E4a73659989a213C969487Cb2B2E7cD
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x861d7d4A46C63b92461631CC77a9f2aeAcFfA10d);
+    IPoolDataProvider(0x586370F91E4a73659989a213C969487Cb2B2E7cD);
 
+  // https://goerli-optimism.etherscan.io/address/0x00f7fecFAEbEd9499e1f3f9d04E755a21E5fc47C
   IACLManager internal constant ACL_MANAGER =
-    IACLManager(0x3e965db7b1BaA260B65208e3F508eD84344ebd75);
+    IACLManager(0x00f7fecFAEbEd9499e1f3f9d04E755a21E5fc47C);
 
-  address internal constant ACL_ADMIN = 0xaDdfe0b2342800ebD67C30d1c2Bd479E4D498BD5;
+  // https://goerli-optimism.etherscan.io/address/0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00
+  address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
 
-  ICollector internal constant COLLECTOR = ICollector(0x026E3e3363843e16e3D6d21e068c981A4F55e5d2);
+  // https://goerli-optimism.etherscan.io/address/0xd06dC54Fcc044A86D33454091b193B7E2104b50D
+  ICollector internal constant COLLECTOR = ICollector(0xd06dC54Fcc044A86D33454091b193B7E2104b50D);
 
+  // https://goerli-optimism.etherscan.io/address/0xF76301d2D80FE71314c8448E6FA4F4Ee2583046B
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0x062BB55A42875366DB1B7D227B73621C33a6cB6b;
+    0xF76301d2D80FE71314c8448E6FA4F4Ee2583046B;
 
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x7675E8C3e91A11D721D0292331c5ee28ed8996ee;
+  // https://goerli-optimism.etherscan.io/address/0xABa01108c4964731AAc2B6DA8d731A58c1DfA8cF
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xABa01108c4964731AAc2B6DA8d731A58c1DfA8cF;
 
+  // https://goerli-optimism.etherscan.io/address/0xCAeB08beA60BE1cA547cbD19A5bC9ba372AE9f0e
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0xF8707057529639A3da9D951054DE89f66d01B3e9;
+    0xCAeB08beA60BE1cA547cbD19A5bC9ba372AE9f0e;
 
+  // https://goerli-optimism.etherscan.io/address/0xd550780aaD654d03Cd355EAB6bB444BaF764Baae
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0xf12460DD042d7F143c6c5ab7A0C5CeA24F7a20b7;
+    0xd550780aaD654d03Cd355EAB6bB444BaF764Baae;
 
-  address internal constant EMISSION_MANAGER = 0x936fF44bb41Fe8d6c3028A016D3255cB3296ECA0;
+  // https://goerli-optimism.etherscan.io/address/0x69B9843A16a6E9933125EBD97659BA3CCbE2Ef8A
+  address internal constant EMISSION_MANAGER = 0x69B9843A16a6E9933125EBD97659BA3CCbE2Ef8A;
 
-  address internal constant FAUCET = 0x777A5810352302A2D6d79d5B7323237c467845d9;
+  // https://goerli-optimism.etherscan.io/address/0x387d311e47e80b498169e6fb51d3193167d89F7D
+  address internal constant FAUCET = 0x387d311e47e80b498169e6fb51d3193167d89F7D;
 
-  address internal constant L2_ENCODER = 0x14AA09449fac437b5c0110614be2C08610e38f62;
+  // https://goerli-optimism.etherscan.io/address/0x19cdecE64EDE475ba0EB114ff4E319d64Ef8ECCf
+  address internal constant L2_ENCODER = 0x19cdecE64EDE475ba0EB114ff4E319d64Ef8ECCf;
 
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x4157398c5abB5211F51F5B551E3e240c5568dbD4;
+  // https://goerli-optimism.etherscan.io/address/0x72A9c57cD5E2Ff20450e409cF6A542f1E6c710fc
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x72A9c57cD5E2Ff20450e409cF6A542f1E6c710fc;
 
-  address internal constant UI_POOL_DATA_PROVIDER = 0x9277eFbB991536a98a1aA8b735E9D26d887104C1;
+  // https://goerli-optimism.etherscan.io/address/0xD2f5680976c86ADd3978b7ad3422Ee5c7690ddb4
+  address internal constant UI_POOL_DATA_PROVIDER = 0xD2f5680976c86ADd3978b7ad3422Ee5c7690ddb4;
 
-  address internal constant WALLET_BALANCE_PROVIDER = 0xb463057Eb60E1575e2a69aa17C63CCd2F3161a5f;
+  // https://goerli-optimism.etherscan.io/address/0x56033E114c61183590d39BA847400F02022Ebe47
+  address internal constant WALLET_BALANCE_PROVIDER = 0x56033E114c61183590d39BA847400F02022Ebe47;
 
-  address internal constant WETH_GATEWAY = 0x6f7f2440006221F893c587b88f01afc42B6F8d2e;
+  // https://goerli-optimism.etherscan.io/address/0xf556C102F47d806E21E8E78438E58ac06A14A29E
+  address internal constant WETH_GATEWAY = 0xf556C102F47d806E21E8E78438E58ac06A14A29E;
 }
 
 library AaveV3OptimismGoerliAssets {
-  address internal constant DAI_UNDERLYING = 0xD9662ae38fB577a3F6843b6b8EB5af3410889f3A;
-  address internal constant DAI_A_TOKEN = 0x844f622596D061B8AeB0bf265bDfbdafd5Fb7856;
-  address internal constant DAI_V_TOKEN = 0x52FdB081Bba0B6Cf64AEC0fD78127EE07462B51e;
-  address internal constant DAI_S_TOKEN = 0x68D2a5be0A4d0Fd6B4e3d2ff7544BDc4B227717B;
-  address internal constant DAI_ORACLE = 0xfAe9463b2dEf2AbAF908d0697e7CCEe0407185f1;
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x62527eDa8EC3E3a0ff8DcbA4625fA2dce5829da6;
+  // https://goerli-optimism.etherscan.io/address/0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709
+  address internal constant DAI_UNDERLYING = 0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709;
+  // https://goerli-optimism.etherscan.io/address/0x25E84646dF74FB9BCa68Aa8d018F7883ecE4B307
+  address internal constant DAI_A_TOKEN = 0x25E84646dF74FB9BCa68Aa8d018F7883ecE4B307;
+  // https://goerli-optimism.etherscan.io/address/0x6048286Bd57Fc79b99758348bD0178e189760fe9
+  address internal constant DAI_V_TOKEN = 0x6048286Bd57Fc79b99758348bD0178e189760fe9;
+  // https://goerli-optimism.etherscan.io/address/0x1A644682E141bC41a9b7dE2fA902D9Dc061F89d3
+  address internal constant DAI_S_TOKEN = 0x1A644682E141bC41a9b7dE2fA902D9Dc061F89d3;
+  // https://goerli-optimism.etherscan.io/address/0x117B69220bFBA519A3f38a7e9b8529CA92A1A727
+  address internal constant DAI_ORACLE = 0x117B69220bFBA519A3f38a7e9b8529CA92A1A727;
+  // https://goerli-optimism.etherscan.io/address/0xFf04c1ccF076FDdEb1EE8b80Ef7d9E661A8c65c7
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xFf04c1ccF076FDdEb1EE8b80Ef7d9E661A8c65c7;
 
-  address internal constant LINK_UNDERLYING = 0x14cd1A7b8c547bD4A2f531ba1BF11B6c4f2b96db;
-  address internal constant LINK_A_TOKEN = 0x29C81A0F7791733E99EC723D30C4f5d77dd5740C;
-  address internal constant LINK_V_TOKEN = 0xd22D39EB883995964CaB0e7e1210c2A4310cd18f;
-  address internal constant LINK_S_TOKEN = 0x540346baF4b1eBf176673aeFc45a492F248B5613;
-  address internal constant LINK_ORACLE = 0x5A04220725D3479A910c9712159b576A19947eC9;
+  // https://goerli-optimism.etherscan.io/address/0xBA25de9a7DC623B30799F33B770d31B44c2C3b77
+  address internal constant LINK_UNDERLYING = 0xBA25de9a7DC623B30799F33B770d31B44c2C3b77;
+  // https://goerli-optimism.etherscan.io/address/0xEf51CEE544Dc4f2046da04656a19a28d5C83BB60
+  address internal constant LINK_A_TOKEN = 0xEf51CEE544Dc4f2046da04656a19a28d5C83BB60;
+  // https://goerli-optimism.etherscan.io/address/0xCa4f4e3F9CF9bc5E0CBdEd8104CEFee4138b6c23
+  address internal constant LINK_V_TOKEN = 0xCa4f4e3F9CF9bc5E0CBdEd8104CEFee4138b6c23;
+  // https://goerli-optimism.etherscan.io/address/0xf3642955986AC3D89Fce47e1c4a26923E201f3A0
+  address internal constant LINK_S_TOKEN = 0xf3642955986AC3D89Fce47e1c4a26923E201f3A0;
+  // https://goerli-optimism.etherscan.io/address/0x08fCD0348C30C80208db530719DF8b9E5AF8F3BA
+  address internal constant LINK_ORACLE = 0x08fCD0348C30C80208db530719DF8b9E5AF8F3BA;
+  // https://goerli-optimism.etherscan.io/address/0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6
   address internal constant LINK_INTEREST_RATE_STRATEGY =
-    0x32BB31484151627da35C460c60f6Bb309cAdA06e;
+    0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6;
 
-  address internal constant USDC_UNDERLYING = 0xcbce2891F86b69b3eF61dF8CE69e3522a0483FB3;
-  address internal constant USDC_A_TOKEN = 0x1FE5C2C6e1e0207D0Bd5Ee7B8C83b7c5e51D5e49;
-  address internal constant USDC_V_TOKEN = 0x45b3190E739E26f44cEB115558c08B76a6831fA5;
-  address internal constant USDC_S_TOKEN = 0x80b54134B96C9C2716995068c208Bf174b4116D1;
-  address internal constant USDC_ORACLE = 0x6ADC023eEDbD7d55809b7f021425415FF7e4B3dB;
+  // https://goerli-optimism.etherscan.io/address/0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE
+  address internal constant USDC_UNDERLYING = 0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE;
+  // https://goerli-optimism.etherscan.io/address/0x99A8acb66c7ED63141b868a603C2337B24f85B22
+  address internal constant USDC_A_TOKEN = 0x99A8acb66c7ED63141b868a603C2337B24f85B22;
+  // https://goerli-optimism.etherscan.io/address/0x19971adbB2F5d68aE3E7e09C9dF89751d9590ACC
+  address internal constant USDC_V_TOKEN = 0x19971adbB2F5d68aE3E7e09C9dF89751d9590ACC;
+  // https://goerli-optimism.etherscan.io/address/0x13FCf508A004f069ce43FA66367EdE8b0c666014
+  address internal constant USDC_S_TOKEN = 0x13FCf508A004f069ce43FA66367EdE8b0c666014;
+  // https://goerli-optimism.etherscan.io/address/0x33D8f262F4EaCf4124A06F0AE30Af5CFb3378f72
+  address internal constant USDC_ORACLE = 0x33D8f262F4EaCf4124A06F0AE30Af5CFb3378f72;
+  // https://goerli-optimism.etherscan.io/address/0xc2e90fd19999E7Bd8558Af9A96B88af2f320aBB6
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x3A1ED60315BEF296ad37CcFc01fA4698C7F31f73;
+    0xc2e90fd19999E7Bd8558Af9A96B88af2f320aBB6;
 
-  address internal constant WBTC_UNDERLYING = 0xe786Ce31c4c68B1aa004fCed5066775a788993CB;
-  address internal constant WBTC_A_TOKEN = 0x1eEC581e03B87a1C1B2c2900d0d83FF39eA4e240;
-  address internal constant WBTC_V_TOKEN = 0x2D8044e5A9CFB5b86f8a49823f84fe67AD7013b7;
-  address internal constant WBTC_S_TOKEN = 0xD32dFf72F217a56e2d1E36ac9e22052285aE3B2a;
-  address internal constant WBTC_ORACLE = 0x3d14c2Bb0C02A992046217283768109d800a2423;
+  // https://goerli-optimism.etherscan.io/address/0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692
+  address internal constant WBTC_UNDERLYING = 0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692;
+  // https://goerli-optimism.etherscan.io/address/0xa821B2BD2364194d24d3Cd92e0F450B0AD5823d0
+  address internal constant WBTC_A_TOKEN = 0xa821B2BD2364194d24d3Cd92e0F450B0AD5823d0;
+  // https://goerli-optimism.etherscan.io/address/0x8D420406187Dd7A6A82A07BE17da1f5894177736
+  address internal constant WBTC_V_TOKEN = 0x8D420406187Dd7A6A82A07BE17da1f5894177736;
+  // https://goerli-optimism.etherscan.io/address/0x53a2F2Ea5768Df4bB45b442F125AC4c52875D2bc
+  address internal constant WBTC_S_TOKEN = 0x53a2F2Ea5768Df4bB45b442F125AC4c52875D2bc;
+  // https://goerli-optimism.etherscan.io/address/0x774956E09C6725DB04a3C9742bC832cB390e3964
+  address internal constant WBTC_ORACLE = 0x774956E09C6725DB04a3C9742bC832cB390e3964;
+  // https://goerli-optimism.etherscan.io/address/0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
-    0x32BB31484151627da35C460c60f6Bb309cAdA06e;
+    0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6;
 
-  address internal constant WETH_UNDERLYING = 0xc5Bf9eb35c7d3a90816436E2a124bdd136e09fFD;
-  address internal constant WETH_A_TOKEN = 0xF8793d992E2f4De3Eaf7cE65c71e81Bcc0f235Af;
-  address internal constant WETH_V_TOKEN = 0x44c178F854738dAeE97CE3739060d8BFBf2d844c;
-  address internal constant WETH_S_TOKEN = 0xa9D767984631B9C3EE28b4568121fC70dC312883;
-  address internal constant WETH_ORACLE = 0x22437f5745838DBea26Aa3c439cC137fc5C2E56F;
+  // https://goerli-optimism.etherscan.io/address/0x4778caf7b5DBD3934c3906c2909653eB1e0E601f
+  address internal constant WETH_UNDERLYING = 0x4778caf7b5DBD3934c3906c2909653eB1e0E601f;
+  // https://goerli-optimism.etherscan.io/address/0x18c9297E82dEf404a9472e7F208840Ae8261DFe8
+  address internal constant WETH_A_TOKEN = 0x18c9297E82dEf404a9472e7F208840Ae8261DFe8;
+  // https://goerli-optimism.etherscan.io/address/0x3d40D0f10E1eC8f313b5D86D0bB6F362d39c16fC
+  address internal constant WETH_V_TOKEN = 0x3d40D0f10E1eC8f313b5D86D0bB6F362d39c16fC;
+  // https://goerli-optimism.etherscan.io/address/0xeF1494966E5694ba0e8Ce942fC2323D58F1dFb58
+  address internal constant WETH_S_TOKEN = 0xeF1494966E5694ba0e8Ce942fC2323D58F1dFb58;
+  // https://goerli-optimism.etherscan.io/address/0x59261Da4c82197D7D5EF10De6b6669d6F7AA11b7
+  address internal constant WETH_ORACLE = 0x59261Da4c82197D7D5EF10De6b6669d6F7AA11b7;
+  // https://goerli-optimism.etherscan.io/address/0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0x32BB31484151627da35C460c60f6Bb309cAdA06e;
+    0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6;
 
-  address internal constant USDT_UNDERLYING = 0x8a06022A41B6b64dAefC68260371472fcB351081;
-  address internal constant USDT_A_TOKEN = 0x93439F0BF30Bd85385087068dd9D958Dcb9f32d5;
-  address internal constant USDT_V_TOKEN = 0xdc22Bae995EFC48af7B364B672AdB02F6BD0F632;
-  address internal constant USDT_S_TOKEN = 0x73b3AE5A8316223560E3dC29ae97F19a402c3aa3;
-  address internal constant USDT_ORACLE = 0x0707F6C1B4281EB5580bec1dA1cEa2ddAb6E91e6;
+  // https://goerli-optimism.etherscan.io/address/0xf79129ae303764D79287FfF0c857003E95fC1506
+  address internal constant USDT_UNDERLYING = 0xf79129ae303764D79287FfF0c857003E95fC1506;
+  // https://goerli-optimism.etherscan.io/address/0x053Ac73bCD255525123872E2248a06C9794f29c7
+  address internal constant USDT_A_TOKEN = 0x053Ac73bCD255525123872E2248a06C9794f29c7;
+  // https://goerli-optimism.etherscan.io/address/0x9299Ae681F85cC9238542dD6445021A8cf6FE9D6
+  address internal constant USDT_V_TOKEN = 0x9299Ae681F85cC9238542dD6445021A8cf6FE9D6;
+  // https://goerli-optimism.etherscan.io/address/0xa1Ba2438620B24D2CEa57ee6b99045c083B1AcD9
+  address internal constant USDT_S_TOKEN = 0xa1Ba2438620B24D2CEa57ee6b99045c083B1AcD9;
+  // https://goerli-optimism.etherscan.io/address/0x96CE8a757B79509e9DCF934477E3E3e09Dbc104e
+  address internal constant USDT_ORACLE = 0x96CE8a757B79509e9DCF934477E3E3e09Dbc104e;
+  // https://goerli-optimism.etherscan.io/address/0xc2e90fd19999E7Bd8558Af9A96B88af2f320aBB6
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x3A1ED60315BEF296ad37CcFc01fA4698C7F31f73;
+    0xc2e90fd19999E7Bd8558Af9A96B88af2f320aBB6;
 
-  address internal constant AAVE_UNDERLYING = 0x7B16EB8CE4143B1bEA183082E1D50e7519980F79;
-  address internal constant AAVE_A_TOKEN = 0x3A94d605ebC265Aa57Ce6dD01dD532dceeb5Cd87;
-  address internal constant AAVE_V_TOKEN = 0x5a51cBAba718c5ad13A5BedAD096fc0E4414E7F5;
-  address internal constant AAVE_S_TOKEN = 0xF133c5B244c95f108b549C6eB768797e2Ea83605;
-  address internal constant AAVE_ORACLE = 0x443C1A5D8d2C5E87d7d1Cc9BB21Dbb2787BE5dD0;
+  // https://goerli-optimism.etherscan.io/address/0x20288ac1Ef7711448DF03283E6B580710E73393a
+  address internal constant AAVE_UNDERLYING = 0x20288ac1Ef7711448DF03283E6B580710E73393a;
+  // https://goerli-optimism.etherscan.io/address/0x79655b4d49d52fEDB9503A20a55ef5762dA17B18
+  address internal constant AAVE_A_TOKEN = 0x79655b4d49d52fEDB9503A20a55ef5762dA17B18;
+  // https://goerli-optimism.etherscan.io/address/0x5ba1a19f22f8fDC3B35Cc7435f1615215B19956A
+  address internal constant AAVE_V_TOKEN = 0x5ba1a19f22f8fDC3B35Cc7435f1615215B19956A;
+  // https://goerli-optimism.etherscan.io/address/0x3144b11E02eBD9f2843186d2c36f9c1C3606134B
+  address internal constant AAVE_S_TOKEN = 0x3144b11E02eBD9f2843186d2c36f9c1C3606134B;
+  // https://goerli-optimism.etherscan.io/address/0xB054425E0Eda0Fd52d08f0C817034Bc48B6d35EC
+  address internal constant AAVE_ORACLE = 0xB054425E0Eda0Fd52d08f0C817034Bc48B6d35EC;
+  // https://goerli-optimism.etherscan.io/address/0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
-    0x32BB31484151627da35C460c60f6Bb309cAdA06e;
+    0x3A2609560Deb92EAb6340DEad35CE6567F9C67B6;
 
-  address internal constant SUSD_UNDERLYING = 0x4f8758F0e15d62426D36cA6c08f6b30ab678cEC7;
-  address internal constant SUSD_A_TOKEN = 0xDFABA2957a78f91dadd1F467059EaeaD01c0B0A7;
-  address internal constant SUSD_V_TOKEN = 0x806ce529eECb69E09a365d2728793317644A23DD;
-  address internal constant SUSD_S_TOKEN = 0x51c0f4A1ED8C2986f29Ef853e60F493C872E701B;
-  address internal constant SUSD_ORACLE = 0x04d339Ac1A4A2e830ea54750c248e489b82C392D;
+  // https://goerli-optimism.etherscan.io/address/0xC21D17E8E839C1286BBaa297d932AE9b33d7985b
+  address internal constant SUSD_UNDERLYING = 0xC21D17E8E839C1286BBaa297d932AE9b33d7985b;
+  // https://goerli-optimism.etherscan.io/address/0xaf68aDbd3d8BBaC6c59c32490c01Cf8F6dB1adAE
+  address internal constant SUSD_A_TOKEN = 0xaf68aDbd3d8BBaC6c59c32490c01Cf8F6dB1adAE;
+  // https://goerli-optimism.etherscan.io/address/0xd9811Fd06C3b086314927272b72DbDd98AA9E6A5
+  address internal constant SUSD_V_TOKEN = 0xd9811Fd06C3b086314927272b72DbDd98AA9E6A5;
+  // https://goerli-optimism.etherscan.io/address/0xfb30ADd5184b79fDCF6f56a70d5A7899a3C77385
+  address internal constant SUSD_S_TOKEN = 0xfb30ADd5184b79fDCF6f56a70d5A7899a3C77385;
+  // https://goerli-optimism.etherscan.io/address/0x34A3919db9CFB2eD29Da9E76747e70449e138A69
+  address internal constant SUSD_ORACLE = 0x34A3919db9CFB2eD29Da9E76747e70449e138A69;
+  // https://goerli-optimism.etherscan.io/address/0xc2e90fd19999E7Bd8558Af9A96B88af2f320aBB6
   address internal constant SUSD_INTEREST_RATE_STRATEGY =
-    0x3A1ED60315BEF296ad37CcFc01fA4698C7F31f73;
+    0xc2e90fd19999E7Bd8558Af9A96B88af2f320aBB6;
 }
 
 library AaveV3OptimismGoerliGovV3 {

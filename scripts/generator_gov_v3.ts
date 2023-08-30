@@ -17,7 +17,7 @@ export type GovV3WithExecutors = ExecutorsV3 & GovV3Addresses;
 
 export async function fetchV3ExecutorAddresses(
   payloadsController: Hex,
-  provider: PublicClient
+  provider: PublicClient,
 ): Promise<ExecutorsV3> {
   const executors = {
     EXECUTOR_LVL_1: addressOrZero(),
