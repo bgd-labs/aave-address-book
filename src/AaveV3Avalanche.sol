@@ -100,6 +100,7 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7
   address internal constant WETH_GATEWAY = 0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7;
 
+  // https://snowtrace.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
 }
 
