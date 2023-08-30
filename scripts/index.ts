@@ -17,6 +17,8 @@ import {
   sepoliaProtoV3,
   goerliGHOV3Pool,
 } from './configs/pools/ethereum';
+import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
+import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
 import {
@@ -65,6 +67,9 @@ async function main() {
       optimismProtoV3,
       scrollAlphaProtoV3,
       scrollSepoliaProtoV3,
+      fantomTestnetProtoV3,
+      fantomProtoV3,
+      harmonyProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
 }
