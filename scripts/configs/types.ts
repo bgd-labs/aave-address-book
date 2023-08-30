@@ -1,11 +1,13 @@
 import {Hex} from 'viem';
 import {ChainId} from '../generator/chains';
 
-type KnownInterfaces = string;
+interface KnownInterfaces<T extends number | Hex = any> {
+  value: T;
+  type: T extends number ? 'uint256' : 'address' | string;
+  chainId?: T extends number ? never : ChainId;
+}
 
-export type AddressInfo =
-  | Hex
-  | {value: Hex; type: 'uint256' | 'address' | KnownInterfaces; chainId?: ChainId};
+export type AddressInfo = Hex | KnownInterfaces;
 
 export type Addresses = Record<Uppercase<string>, AddressInfo>;
 

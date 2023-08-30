@@ -251,7 +251,11 @@ export async function generateProtocolV3Library(config: PoolConfig) {
     prefixWithGeneratedWarning(
       generateJsConstants({
         chainId: config.chainId,
-        addresses: {...addresses, ...config.additionalAddresses},
+        addresses: {
+          ...addresses,
+          ...config.additionalAddresses,
+          CHAIN_ID: {value: config.chainId, type: 'uint256'},
+        },
       }).join('\n'),
     ),
   );
