@@ -34,3 +34,5 @@ import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';
 import {AaveMisc} from './AaveMisc.sol';
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 import {AaveGovernanceV2} from './AaveGovernanceV2.sol';
+import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
+import {AaveSafetyModule} from './AaveSafetyModule.sol';

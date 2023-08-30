@@ -1,13 +1,13 @@
 import * as fs from 'fs';
-import {AddressInfo} from './configs/types';
+import {AddressInfo} from '../configs/types';
 import {
   generateJsConstants,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './generator/utils';
-import {RPC_PROVIDERS} from './generator/clients';
+} from './utils';
+import {RPC_PROVIDERS} from './clients';
 
 const govV2Addresses: Record<Capitalize<string>, AddressInfo> = {
   GOV: '0xEC568fffba86c094cf06b22134B23074DFE2252c',
@@ -27,7 +27,7 @@ const govV2Addresses: Record<Capitalize<string>, AddressInfo> = {
   CROSSCHAIN_FORWARDER_BASE: '0x3215225538da1546FE0DA88ee13019f402078942',
 };
 
-export function writeGovV2Template() {
+export function generateGovV2() {
   const name = 'AaveGovernanceV2';
 
   fs.writeFileSync(

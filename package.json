@@ -30,7 +30,6 @@
   "scripts": {
     "prettier": "prettier --write 'src/**/*.{sol,ts}'",
     "start": "tsx scripts/index.ts  && npm run prettier",
-    "generate": "tsx scripts/generator.ts && npm run prettier",
     "build": "tsup",
     "ci:publish": "npm run build && npm publish --access=public"
   },

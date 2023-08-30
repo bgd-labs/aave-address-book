@@ -32,9 +32,10 @@ import {scrollAlphaProtoV3, scrollSepoliaProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
-import {writeMiscTemplate} from './generator_misc';
-import {writeGovV2Template} from './generator_gov_v2';
+import {generateMisc} from './generator/miscGenerator';
+import {generateGovV2} from './generator/governanceV2Generator';
 import {prefixWithGeneratedWarning, prefixWithPragma} from './generator/utils';
+import {generateSafetyModule} from './generator/safetyModuleGenerator';
 
 async function main() {
   // cleanup ts artifacts
@@ -84,24 +85,26 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
 
-  const miscImports = writeMiscTemplate();
+  const miscImports = generateMisc();
 
-  const govImports = writeGovV2Template();
+  const govImports = generateGovV2();
 
-  const jsExports = [governanceNames, v2LibraryNames, v3LibraryNames, miscImports, govImports]
-    .flat()
-    .map((f) => f.js)
-    .flat();
-  writeFileSync(
-    `./src/ts/AaveAddressBook.ts`,
-    prefixWithGeneratedWarning(`export * as AaveSafetyModule from './AaveSafetyModule';\n`),
-  );
+  const smImports = generateSafetyModule();
+
+  const imports = [
+    governanceNames,
+    v2LibraryNames,
+    v3LibraryNames,
+    miscImports,
+    govImports,
+    smImports,
+  ].flat();
+
+  const jsExports = imports.map((f) => f.js).flat();
+  writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
 
-  const solidityImports = [governanceNames, v2LibraryNames, v3LibraryNames, miscImports, govImports]
-    .flat()
-    .map((f) => f.solidity)
-    .flat();
+  const solidityImports = imports.map((f) => f.solidity).flat();
 
   writeFileSync(`./src/AaveAddressBook.sol`, prefixWithGeneratedWarning(prefixWithPragma('')));
   solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));

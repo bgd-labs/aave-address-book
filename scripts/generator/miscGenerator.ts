@@ -1,13 +1,13 @@
 import * as fs from 'fs';
-import {AddressInfo} from './configs/types';
+import {AddressInfo} from '../configs/types';
 import {
   generateJsConstants,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './generator/utils';
-import {RPC_PROVIDERS} from './generator/clients';
+} from './utils';
+import {RPC_PROVIDERS} from './clients';
 
 const miscAddresses: Record<Capitalize<string>, AddressInfo> = {
   ECOSYSTEM_RESERVE: '0x25F2226B597E8F9514B3F68F00f494cF4f286491',
@@ -32,7 +32,7 @@ const miscAddresses: Record<Capitalize<string>, AddressInfo> = {
   PROXY_ADMIN_BASE: '0xc85b1E333aecc99340b2320493Fe2d22b8734795',
 };
 
-export function writeMiscTemplate() {
+export function generateMisc() {
   const name = 'AaveMisc';
 
   fs.writeFileSync(
