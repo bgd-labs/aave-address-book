@@ -1,5 +1,5 @@
 import {Hex, PublicClient, getAddress} from 'viem';
-import {AddressInfo} from '../configs/types';
+import {AddressInfo, Addresses} from '../configs/types';
 
 function getExplorerLink(publicClient: PublicClient, address: Hex) {
   return `${publicClient.chain?.blockExplorers?.default.url}/address/${address}`;
@@ -17,22 +17,26 @@ export function addressInfoToSolidityLibraryConstant(
   key: string,
   entry: AddressInfo,
 ) {
-  if (entry.type === 'uint256') {
-    return `${entry.type} internal constant ${key} = ${entry.value};`;
+  if (typeof entry === 'object') {
+    if (entry.type === 'uint256') {
+      return `${entry.type} internal constant ${key} = ${entry.value};`;
+    }
+    const blockExplorerLinkComment = getExplorerLink(publicClient, entry.value);
+    if (entry.type === 'address')
+      return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(
+        entry.value,
+      )};`;
+    return `// ${blockExplorerLinkComment}\n${entry.type} internal constant ${key} = ${
+      entry.type
+    }(${getAddress(entry.value)});`;
   }
-  const blockExplorerLinkComment = getExplorerLink(publicClient, entry.value);
-  if (entry.type === 'address')
-    return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(
-      entry.value,
-    )};`;
-  return `// ${blockExplorerLinkComment}\n${entry.type} internal constant ${key} = ${
-    entry.type
-  }(${getAddress(entry.value)});`;
+  const blockExplorerLinkComment = getExplorerLink(publicClient, entry);
+  return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(entry)};`;
 }
 
-export function generateSolidityLibrary<T extends {[key: string]: AddressInfo}>(
+export function generateSolidityLibrary(
   publicClient: PublicClient,
-  addresses: T,
+  addresses: Addresses,
   name: string,
 ) {
   const solidityConstants = Object.keys(addresses).map((key) =>
@@ -44,19 +48,21 @@ export function generateSolidityLibrary<T extends {[key: string]: AddressInfo}>(
 }
 
 export function addressToJsConstant(publicClient: PublicClient, key: string, entry: AddressInfo) {
-  if (entry.type === 'uint256') {
-    return `const ${key} = ${entry.value};`;
+  if (typeof entry === 'object') {
+    if (entry.type === 'uint256') {
+      return `export const ${key} = ${entry.value};`;
+    }
+    const blockExplorerLinkComment = getExplorerLink(publicClient, entry.value);
+    return `// ${entry.type} ${blockExplorerLinkComment}\n export const ${key} = '${getAddress(
+      entry.value,
+    )}';`;
   }
 
-  const blockExplorerLinkComment = getExplorerLink(publicClient, entry.value);
-  if (entry.type === 'address')
-    return `// ${blockExplorerLinkComment}\nconst ${key} = '${getAddress(entry.value)}';`;
+  const blockExplorerLinkComment = getExplorerLink(publicClient, entry);
+  return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';`;
 }
 
-export function generateJsLibrary<T extends {[key: string]: AddressInfo}>(
-  publicClient: PublicClient,
-  addresses: T,
-) {
+export function generateJsLibrary(publicClient: PublicClient, addresses: Addresses) {
   const jsConstants = Object.keys(addresses).map((key) =>
     addressToJsConstant(publicClient, key, addresses[key]),
   );

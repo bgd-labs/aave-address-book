@@ -1,15 +1,11 @@
-import {Hex, PublicClient} from 'viem';
+import {Hex} from 'viem';
 import {ChainId} from '../generator/chains';
 
-type KnownInterfaces = 'yay' | 'wuhu';
+type KnownInterfaces = string;
 
-export type AddressInfo =
-  | {
-      value: Hex;
-      type: 'address';
-    }
-  | {value: number; type: 'uint256'}
-  | {value: Hex; type: KnownInterfaces};
+export type AddressInfo = Hex | {value: Hex; type: 'uint256' | 'address' | KnownInterfaces};
+
+export type Addresses = Record<Capitalize<string>, AddressInfo>;
 
 export interface GovernanceConfig {
   CHAIN_ID: ChainId;
@@ -25,8 +21,8 @@ export interface GovernanceConfig {
 export interface PoolConfig {
   name: string;
   chainId: ChainId;
-  addressProvider: Hex;
   version: number;
+  POOL_ADDRESSES_PROVIDER: Hex;
   // will be inlined in js pool export
   additionalAddresses: {
     FAUCET?: Hex;

@@ -1,25 +1,10 @@
 import {writeFileSync} from 'fs';
 import {Hex, PublicClient, getContract} from 'viem';
-import {AddressInfo, GovernanceConfig} from '../configs/types';
+import {GovernanceConfig} from '../configs/types';
 import {PAYLOADS_CONTROLLER_ABI} from '../abi/payloadsController';
 import {RPC_PROVIDERS} from './clients';
 import {generateJsLibrary, generateSolidityLibrary, prefixWithPragma} from './utils';
 import {getChainName} from './chains';
-
-function enhanceGovernanceAddressesTypes<T extends {[key: string]: Hex}>(addresses: T) {
-  return Object.keys(addresses).reduce(
-    (acc, key) => {
-      console.log(typeof addresses[key], addresses[key]);
-      if (typeof addresses[key] === 'number') {
-        acc[key] = {value: addresses[key], type: 'uint256'};
-      } else {
-        acc[key] = {value: addresses[key], type: 'address'};
-      }
-      return acc;
-    },
-    {} as {[key: string]: AddressInfo},
-  );
-}
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
@@ -62,7 +47,7 @@ async function getGovernanceV3Addresses({CHAIN_ID, ...config}: GovernanceConfig)
 }
 
 export async function generateGovernanceLibrary(config: GovernanceConfig) {
-  const addresses = enhanceGovernanceAddressesTypes(await getGovernanceV3Addresses(config));
+  const addresses = await getGovernanceV3Addresses(config);
   const name = `GovernanceV3${getChainName(config.CHAIN_ID)}`;
   const provider = RPC_PROVIDERS[config.CHAIN_ID];
 

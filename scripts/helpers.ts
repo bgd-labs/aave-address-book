@@ -1,3 +1,4 @@
+import {ToHexParameters} from 'viem/dist/types/utils/encoding/toHex';
 import {Pool, GovernanceV2, Misc} from './config';
 import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
 
@@ -101,7 +102,7 @@ export const generateMiscAddresses = (misc: Misc): string => {
   return '';
 };
 
-export function addressOrZero(address?: Hex) {
+export function addressOrZero(address?: Hex): Hex {
   if (address) return address;
   return zeroAddress;
 }

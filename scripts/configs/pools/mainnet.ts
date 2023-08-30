@@ -4,7 +4,7 @@ import {PoolConfig} from '../types';
 export const mainnetProtoV2Pool: PoolConfig = {
   name: 'AaveV2Ethereum',
   chainId: ChainId.mainnet,
-  addressProvider: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5',
+  POOL_ADDRESSES_PROVIDER: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5',
   version: 2,
   additionalAddresses: {
     DEBT_SWAP_ADAPTER: '0x97742240d6eBE32198B315d30C73c3D2FFC9cE21',
@@ -24,7 +24,7 @@ export const mainnetProtoV2Pool: PoolConfig = {
 export const mainnetAmmV2Pool: PoolConfig = {
   name: 'AaveV2EthereumAMM',
   chainId: ChainId.mainnet,
-  addressProvider: '0xacc030ef66f9dfeae9cbb0cd1b25654b82cfa8d5',
+  POOL_ADDRESSES_PROVIDER: '0xacc030ef66f9dfeae9cbb0cd1b25654b82cfa8d5',
   version: 2,
   additionalAddresses: {
     LISTING_ENGINE: '0xcfC26009618ec2Ca8787180116a37Caa354a465C',
@@ -41,7 +41,7 @@ export const mainnetAmmV2Pool: PoolConfig = {
 export const mainnetArcV2Pool: PoolConfig = {
   name: 'AaveV2EthereumArc',
   chainId: ChainId.mainnet,
-  addressProvider: '0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00',
+  POOL_ADDRESSES_PROVIDER: '0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00',
   version: 2,
   additionalAddresses: {
     PERMISSION_MANAGER: '0xF4a1F5fEA79C3609514A417425971FadC10eCfBE',
@@ -51,7 +51,7 @@ export const mainnetArcV2Pool: PoolConfig = {
 export const mainnetProtoV3Pool: PoolConfig = {
   name: 'AaveV3Ethereum',
   chainId: ChainId.mainnet,
-  addressProvider: '0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e',
+  POOL_ADDRESSES_PROVIDER: '0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e',
   version: 3,
   additionalAddresses: {
     CAPS_PLUS_RISK_STEWARD: '0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778',

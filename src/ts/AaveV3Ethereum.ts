@@ -1,44 +1,41 @@
-// https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2
-const pool = '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2';
+// IPoolAddressesProvider https://etherscan.io/address/0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e
+export const POOL_ADDRESSES_PROVIDER = '0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e';
 
-// https://etherscan.io/address/0x64b761D848206f447Fe2dd461b0c635Ec39EbB27
-const poolConfigurator = '0x64b761D848206f447Fe2dd461b0c635Ec39EbB27';
+// IPool https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2
+export const POOL = '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2';
 
-// https://etherscan.io/address/0x54586bE62E3c3580375aE3723C145253060Ca0C2
-const oracle = '0x54586bE62E3c3580375aE3723C145253060Ca0C2';
+// IPoolConfigurator https://etherscan.io/address/0x64b761D848206f447Fe2dd461b0c635Ec39EbB27
+export const POOL_CONFIGURATOR = '0x64b761D848206f447Fe2dd461b0c635Ec39EbB27';
+
+// IAaveOracle https://etherscan.io/address/0x54586bE62E3c3580375aE3723C145253060Ca0C2
+export const ORACLE = '0x54586bE62E3c3580375aE3723C145253060Ca0C2';
 
 // https://etherscan.io/address/0x0000000000000000000000000000000000000000
-const oracleSentinel = '0x0000000000000000000000000000000000000000';
+export const ORACLE_SENTINEL = '0x0000000000000000000000000000000000000000';
+
+// IPoolDataProvider https://etherscan.io/address/0x7B4EB56E7CD4b454BA8ff71E4518426369a138a3
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0x7B4EB56E7CD4b454BA8ff71E4518426369a138a3';
+
+// IACLManager https://etherscan.io/address/0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0
+export const ACL_MANAGER = '0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0';
 
 // https://etherscan.io/address/0xEE56e2B3D491590B5b31738cC34d5232F378a8D5
-const aclAdmin = '0xEE56e2B3D491590B5b31738cC34d5232F378a8D5';
+export const ACL_ADMIN = '0xEE56e2B3D491590B5b31738cC34d5232F378a8D5';
 
-// https://etherscan.io/address/0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0
-const aclManager = '0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0';
-
-// https://etherscan.io/address/0x7B4EB56E7CD4b454BA8ff71E4518426369a138a3
-const poolDataProvider = '0x7B4EB56E7CD4b454BA8ff71E4518426369a138a3';
-
-// https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
-const collector = '0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c';
-
-// https://etherscan.io/address/0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d
-const defaultATokenImplementation = '0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d';
-
-const aTokenRevision = 1;
-
-// https://etherscan.io/address/0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6
-const defaultVariableDebtTokenImplementation = '0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6';
-
-const variableDebtTokenRevision = 1;
-
-// https://etherscan.io/address/0x15C5620dfFaC7c7366EED66C20Ad222DDbB1eD57
-const defaultStableDebtTokenImplementation = '0x15C5620dfFaC7c7366EED66C20Ad222DDbB1eD57';
-
-const stableDebtTokenRevision = 1;
-
-// https://etherscan.io/address/0x223d844fc4B006D67c0cDbd39371A9F73f69d974
-const emissionManager = '0x223d844fc4B006D67c0cDbd39371A9F73f69d974';
+// ICollector https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
+export const COLLECTOR = '0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c';
 
 // https://etherscan.io/address/0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb
-const defaultIncentivesController = '0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb';
+export const DEFAULT_INCENTIVES_CONTROLLER = '0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb';
+
+// https://etherscan.io/address/0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d
+export const DEFAULT_A_TOKEN_IMPL_REV_1 = '0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d';
+
+// https://etherscan.io/address/0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 = '0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6';
+
+// https://etherscan.io/address/0x15C5620dfFaC7c7366EED66C20Ad222DDbB1eD57
+export const DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 = '0x15C5620dfFaC7c7366EED66C20Ad222DDbB1eD57';
+
+// https://etherscan.io/address/0x223d844fc4B006D67c0cDbd39371A9F73f69d974
+export const EMISSION_MANAGER = '0x223d844fc4B006D67c0cDbd39371A9F73f69d974';
