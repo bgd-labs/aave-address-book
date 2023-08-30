@@ -220,7 +220,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
 
 export async function generateProtocolV3Library(config: PoolConfig) {
   const {reservesData, ...addresses} = await getPoolV3Addresses(config);
-  const name = `AaveV3${getChainName(config.chainId)}`;
+  const name = `AaveV3${getChainName(config.chainId)}${config.nameSuffix}`;
   const provider = RPC_PROVIDERS[config.chainId];
 
   writeFileSync(

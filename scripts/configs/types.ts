@@ -19,7 +19,7 @@ export interface GovernanceConfig {
 }
 
 export interface PoolConfig {
-  name: string;
+  nameSuffix: string;
   chainId: ChainId;
   version: number;
   POOL_ADDRESSES_PROVIDER: Hex;

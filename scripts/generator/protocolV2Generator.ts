@@ -226,7 +226,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
 
 export async function generateProtocolV2Library(config: PoolConfig) {
   const {reservesData, ...addresses} = await getPoolV2Addresses(config);
-  const name = `AaveV2${getChainName(config.chainId)}`;
+  const name = `AaveV2${getChainName(config.chainId)}${config.nameSuffix}`;
   const provider = RPC_PROVIDERS[config.chainId];
 
   writeFileSync(

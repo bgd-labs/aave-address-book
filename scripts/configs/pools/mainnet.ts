@@ -2,7 +2,7 @@ import {ChainId} from '../../generator/chains';
 import {PoolConfig} from '../types';
 
 export const mainnetProtoV2Pool: PoolConfig = {
-  name: 'AaveV2Ethereum',
+  nameSuffix: '',
   chainId: ChainId.mainnet,
   POOL_ADDRESSES_PROVIDER: '0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5',
   version: 2,
@@ -22,7 +22,7 @@ export const mainnetProtoV2Pool: PoolConfig = {
 };
 
 export const mainnetAmmV2Pool: PoolConfig = {
-  name: 'AaveV2EthereumAMM',
+  nameSuffix: 'AMM',
   chainId: ChainId.mainnet,
   POOL_ADDRESSES_PROVIDER: '0xacc030ef66f9dfeae9cbb0cd1b25654b82cfa8d5',
   version: 2,
@@ -39,7 +39,7 @@ export const mainnetAmmV2Pool: PoolConfig = {
 };
 
 export const mainnetArcV2Pool: PoolConfig = {
-  name: 'AaveV2EthereumArc',
+  nameSuffix: 'Arc',
   chainId: ChainId.mainnet,
   POOL_ADDRESSES_PROVIDER: '0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00',
   version: 2,
@@ -49,7 +49,7 @@ export const mainnetArcV2Pool: PoolConfig = {
 };
 
 export const mainnetProtoV3Pool: PoolConfig = {
-  name: 'AaveV3Ethereum',
+  nameSuffix: '',
   chainId: ChainId.mainnet,
   POOL_ADDRESSES_PROVIDER: '0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e',
   version: 3,
