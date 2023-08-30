@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import {AddressInfo, Addresses} from '../configs/types';
+import {Addresses} from '../configs/types';
 import {
   generateJsConstants,
   generateSolidityConstants,
@@ -7,7 +7,6 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
-import {RPC_PROVIDERS} from './clients';
 import {ChainId} from './chains';
 
 const miscAddresses: Addresses = {
@@ -19,18 +18,66 @@ const miscAddresses: Addresses = {
   TRANSPARENT_PROXY_FACTORY_ETHEREUM: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
   PROXY_ADMIN_ETHEREUM: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
   PROXY_ADMIN_ETHEREUM_LONG: '0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517',
-  TRANSPARENT_PROXY_FACTORY_POLYGON: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
-  PROXY_ADMIN_POLYGON: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
-  TRANSPARENT_PROXY_FACTORY_AVALANCHE: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
-  PROXY_ADMIN_AVALANCHE: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
-  TRANSPARENT_PROXY_FACTORY_OPTIMISM: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
-  PROXY_ADMIN_OPTIMISM: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
-  TRANSPARENT_PROXY_FACTORY_ARBITRUM: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
-  PROXY_ADMIN_ARBITRUM: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
-  TRANSPARENT_PROXY_FACTORY_METIS: '0x1dad86dC5990BCE5bFe3A150A4E0ece990d6EBcB',
-  PROXY_ADMIN_METIS: '0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97',
-  TRANSPARENT_PROXY_FACTORY_BASE: '0x05225Cd708bCa9253789C1374e4337a019e99D56',
-  PROXY_ADMIN_BASE: '0xc85b1E333aecc99340b2320493Fe2d22b8734795',
+  TRANSPARENT_PROXY_FACTORY_POLYGON: {
+    chainId: ChainId.polygon,
+    type: 'address',
+    value: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
+  },
+  PROXY_ADMIN_POLYGON: {
+    chainId: ChainId.polygon,
+    type: 'address',
+    value: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
+  },
+  TRANSPARENT_PROXY_FACTORY_AVALANCHE: {
+    chainId: ChainId.avalanche,
+    type: 'address',
+    value: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
+  },
+  PROXY_ADMIN_AVALANCHE: {
+    chainId: ChainId.avalanche,
+    type: 'address',
+    value: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
+  },
+  TRANSPARENT_PROXY_FACTORY_OPTIMISM: {
+    chainId: ChainId.optimism,
+    type: 'address',
+    value: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
+  },
+  PROXY_ADMIN_OPTIMISM: {
+    chainId: ChainId.optimism,
+    type: 'address',
+    value: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
+  },
+  TRANSPARENT_PROXY_FACTORY_ARBITRUM: {
+    chainId: ChainId.arbitrum_one,
+    type: 'address',
+    value: '0xB4e496f70602fE2AC6Ae511D028BA4D194773B29',
+  },
+  PROXY_ADMIN_ARBITRUM: {
+    chainId: ChainId.arbitrum_one,
+    type: 'address',
+    value: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
+  },
+  TRANSPARENT_PROXY_FACTORY_METIS: {
+    chainId: ChainId.metis,
+    type: 'address',
+    value: '0x1dad86dC5990BCE5bFe3A150A4E0ece990d6EBcB',
+  },
+  PROXY_ADMIN_METIS: {
+    chainId: ChainId.metis,
+    type: 'address',
+    value: '0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97',
+  },
+  TRANSPARENT_PROXY_FACTORY_BASE: {
+    chainId: ChainId.base,
+    type: 'address',
+    value: '0x05225Cd708bCa9253789C1374e4337a019e99D56',
+  },
+  PROXY_ADMIN_BASE: {
+    chainId: ChainId.base,
+    type: 'address',
+    value: '0xc85b1E333aecc99340b2320493Fe2d22b8734795',
+  },
 };
 
 export function generateMisc() {

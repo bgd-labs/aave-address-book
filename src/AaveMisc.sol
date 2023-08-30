@@ -18,34 +18,34 @@ library AaveMisc {
   address internal constant PROXY_ADMIN_ETHEREUM = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
   // https://etherscan.io/address/0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517
   address internal constant PROXY_ADMIN_ETHEREUM_LONG = 0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517;
-  // https://etherscan.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
+  // https://polygonscan.com/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_POLYGON =
     0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
-  // https://etherscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
+  // https://polygonscan.com/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_POLYGON = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
-  // https://etherscan.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
+  // https://snowtrace.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_AVALANCHE =
     0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
-  // https://etherscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
+  // https://snowtrace.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_AVALANCHE = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
-  // https://etherscan.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
+  // https://explorer.optimism.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_OPTIMISM =
     0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
-  // https://etherscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
+  // https://explorer.optimism.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_OPTIMISM = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
-  // https://etherscan.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
+  // https://arbiscan.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_ARBITRUM =
     0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
-  // https://etherscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
+  // https://arbiscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_ARBITRUM = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
-  // https://etherscan.io/address/0x1dad86dC5990BCE5bFe3A150A4E0ece990d6EBcB
+  // https://andromeda-explorer.metis.io/address/0x1dad86dC5990BCE5bFe3A150A4E0ece990d6EBcB
   address internal constant TRANSPARENT_PROXY_FACTORY_METIS =
     0x1dad86dC5990BCE5bFe3A150A4E0ece990d6EBcB;
-  // https://etherscan.io/address/0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97
+  // https://andromeda-explorer.metis.io/address/0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97
   address internal constant PROXY_ADMIN_METIS = 0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97;
-  // https://etherscan.io/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
+  // https://basescan.org/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
   address internal constant TRANSPARENT_PROXY_FACTORY_BASE =
     0x05225Cd708bCa9253789C1374e4337a019e99D56;
-  // https://etherscan.io/address/0xc85b1E333aecc99340b2320493Fe2d22b8734795
+  // https://basescan.org/address/0xc85b1E333aecc99340b2320493Fe2d22b8734795
   address internal constant PROXY_ADMIN_BASE = 0xc85b1E333aecc99340b2320493Fe2d22b8734795;
 }
