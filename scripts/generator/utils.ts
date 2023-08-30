@@ -1,4 +1,4 @@
-import {Hex, PublicClient, getAddress} from 'viem';
+import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
 
 function getExplorerLink(publicClient: PublicClient, address: Hex) {
@@ -69,4 +69,20 @@ export function generateJsConstants(publicClient: PublicClient, addresses: Addre
   return Object.keys(addresses).map((key) =>
     addressToJsConstant(publicClient, key, addresses[key]),
   );
+}
+
+export const bytes32toAddress = (bytes32: Hex) => {
+  return getAddress(`0x${bytes32.slice(26)}`);
+};
+
+export const getImplementationStorageSlot = async (provider: PublicClient, address: Hex) => {
+  return (await provider.getStorageAt({
+    address,
+    slot: '0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc',
+  })) as Hex;
+};
+
+export function addressOrZero(address?: Hex): Hex {
+  if (address) return address;
+  return zeroAddress;
 }

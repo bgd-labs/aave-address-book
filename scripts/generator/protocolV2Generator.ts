@@ -2,7 +2,6 @@ import {Hex, PublicClient, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
 import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
 import {RPC_PROVIDERS} from './clients';
-import {getChainName} from './chains';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
   generateJsConstants,
@@ -157,9 +156,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       });
       EMISSION_MANAGER = await incentivesControllerContract.read.EMISSION_MANAGER();
     } catch (e) {
-      console.log(
-        `old version of incentives controller deployed on ${pool.chainId} ${pool.nameSuffix}`,
-      );
+      console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
 
     return {

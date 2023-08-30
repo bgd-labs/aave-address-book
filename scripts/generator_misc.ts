@@ -1,5 +1,4 @@
 import * as fs from 'fs';
-import {generateMiscAddressesSol, generateMiscAddresses} from './helpers';
 import {AddressInfo} from './configs/types';
 import {
   generateJsConstants,
@@ -52,6 +51,9 @@ export function writeMiscTemplate() {
   );
   return {
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
+    solidity: [
+      `import {IAaveEcosystemReserveController, AaveMisc} from './AaveMisc.sol';`,
+      `import {${name}} from './${name}.sol';`,
+    ],
   };
 }

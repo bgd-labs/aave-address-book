@@ -7,12 +7,14 @@ import {STATIC_A_TOKEN_FACTORY_ABI} from '../abi/static_a_token_factory_abi';
 import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
 import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
 import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
-import {addressOrZero, bytes32toAddress, getImplementationStorageSlot} from '../helpers';
 import {RPC_PROVIDERS} from './clients';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
+  addressOrZero,
+  bytes32toAddress,
   generateJsConstants,
   generateSolidityConstants,
+  getImplementationStorageSlot,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,

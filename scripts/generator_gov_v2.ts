@@ -1,5 +1,4 @@
 import * as fs from 'fs';
-import {generateGovV2Addresses, generateGovV2AddressesSol} from './helpers';
 import {AddressInfo} from './configs/types';
 import {
   generateJsConstants,
@@ -52,6 +51,9 @@ export function writeGovV2Template() {
 
   return {
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
+    solidity: [
+      `import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';`,
+      `import {${name}} from './${name}.sol';`,
+    ],
   };
 }

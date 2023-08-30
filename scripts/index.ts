@@ -1,4 +1,4 @@
-import {appendFileSync, existsSync, mkdirSync, rmdirSync} from 'fs';
+import {appendFileSync, existsSync, mkdirSync, rmdirSync, writeFileSync} from 'fs';
 import {governanceConfigMainnet} from './configs/governance/mainnet';
 import {governanceConfigSepolia} from './configs/governance/sepolia';
 import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
@@ -34,6 +34,7 @@ import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
 import {writeMiscTemplate} from './generator_misc';
 import {writeGovV2Template} from './generator_gov_v2';
+import {prefixWithGeneratedWarning, prefixWithPragma} from './generator/utils';
 
 async function main() {
   // cleanup ts artifacts
@@ -91,13 +92,19 @@ async function main() {
     .flat()
     .map((f) => f.js)
     .flat();
+  writeFileSync(
+    `./src/ts/AaveAddressBook.ts`,
+    prefixWithGeneratedWarning(`export * as AaveSafetyModule from './AaveSafetyModule';\n`),
+  );
+  jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
+
   const solidityImports = [governanceNames, v2LibraryNames, v3LibraryNames, miscImports, govImports]
     .flat()
     .map((f) => f.solidity)
     .flat();
 
-  jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
-  // solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
+  writeFileSync(`./src/AaveAddressBook.sol`, prefixWithGeneratedWarning(prefixWithPragma('')));
+  solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
 }
 
 main();
