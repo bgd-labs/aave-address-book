@@ -207,7 +207,10 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
         type: 'IAaveOracle',
       },
       LENDING_RATE_ORACLE: {value: LENDING_RATE_ORACLE, type: 'ILendingRateOracle'},
-      AAVE_PROTOCOL_DATA_PROVIDER: {value: AAVE_PROTOCOL_DATA_PROVIDER, type: 'IPoolDataProvider'},
+      AAVE_PROTOCOL_DATA_PROVIDER: {
+        value: AAVE_PROTOCOL_DATA_PROVIDER,
+        type: 'IAaveProtocolDataProvider',
+      },
       ADMIN,
       EMERGENCY_ADMIN,
       COLLECTOR,
@@ -228,8 +231,13 @@ export async function generateProtocolV2Library(config: PoolConfig) {
 
   writeFileSync(
     `./src/${name}.sol`,
-    prefixWithPragma(generateSolidityLibrary(provider, addresses, name)),
+    prefixWithPragma(
+      generateSolidityLibrary(provider, {...addresses, ...config.additionalAddresses}, name),
+    ),
   );
-  writeFileSync(`./src/ts/${name}.ts`, generateJsLibrary(provider, addresses));
+  writeFileSync(
+    `./src/ts/${name}.ts`,
+    generateJsLibrary(provider, {...addresses, ...config.additionalAddresses}),
+  );
   return name;
 }
