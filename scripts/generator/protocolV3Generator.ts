@@ -19,7 +19,7 @@ export interface PoolV3Addresses {
   AAVE_PROTOCOL_DATA_PROVIDER: AddressInfo;
   POOL_CONFIGURATOR: AddressInfo;
   ORACLE: AddressInfo;
-  ORACLE_SENTINEL: AddressInfo;
+  PRICE_ORACLE_SENTINEL: AddressInfo;
   ACL_ADMIN: AddressInfo;
   ACL_MANAGER: AddressInfo;
   COLLECTOR: AddressInfo;
@@ -116,7 +116,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
       POOL,
       POOL_CONFIGURATOR,
       ORACLE,
-      ORACLE_SENTINEL,
+      PRICE_ORACLE_SENTINEL,
       ACL_ADMIN,
       ACL_MANAGER,
       AAVE_PROTOCOL_DATA_PROVIDER,
@@ -203,7 +203,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
         value: ORACLE,
         type: 'IAaveOracle',
       },
-      ORACLE_SENTINEL,
+      PRICE_ORACLE_SENTINEL,
       AAVE_PROTOCOL_DATA_PROVIDER: {value: AAVE_PROTOCOL_DATA_PROVIDER, type: 'IPoolDataProvider'},
       ACL_MANAGER: {value: ACL_MANAGER, type: 'IACLManager'},
       ACL_ADMIN,
