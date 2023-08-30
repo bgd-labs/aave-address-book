@@ -1,6 +1,5 @@
 import {appendFileSync, existsSync, mkdirSync, rmdirSync, writeFileSync} from 'fs';
-import {governanceConfigMainnet} from './configs/governance/mainnet';
-import {governanceConfigSepolia} from './configs/governance/sepolia';
+import {governanceConfigMainnet, governanceConfigSepolia} from './configs/governance/mainnet';
 import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
@@ -36,6 +35,10 @@ import {generateMisc} from './generator/miscGenerator';
 import {generateGovV2} from './generator/governanceV2Generator';
 import {prefixWithGeneratedWarning, prefixWithPragma} from './generator/utils';
 import {generateSafetyModule} from './generator/safetyModuleGenerator';
+import {governanceConfigArbitrum} from './configs/governance/arbitrum';
+import {governanceConfigAvalanche, governanceConfigFuji} from './configs/governance/avalanche';
+import {governanceConfigOptimism} from './configs/governance/optimism';
+import {governanceConfigMumbai, governanceConfigPolygon} from './configs/governance/polygon';
 
 async function main() {
   // cleanup ts artifacts
@@ -46,9 +49,16 @@ async function main() {
 
   // generate files
   const governanceNames = await Promise.all(
-    [governanceConfigSepolia, governanceConfigMainnet].map((config) =>
-      generateGovernanceLibrary(config),
-    ),
+    [
+      governanceConfigSepolia,
+      governanceConfigMainnet,
+      governanceConfigArbitrum,
+      governanceConfigAvalanche,
+      governanceConfigFuji,
+      governanceConfigOptimism,
+      governanceConfigPolygon,
+      governanceConfigMumbai,
+    ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
     [

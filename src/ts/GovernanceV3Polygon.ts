@@ -1,0 +1,2 @@
+// https://polygonscan.com/address/0xFb79B297CF95d912Ace0eF41866691eE6aeA19E2
+export const CROSS_CHAIN_CONTROLLER = '0xFb79B297CF95d912Ace0eF41866691eE6aeA19E2';
