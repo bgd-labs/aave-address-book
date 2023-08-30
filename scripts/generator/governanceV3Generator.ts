@@ -10,7 +10,6 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
-import {getChainName} from './chains';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
@@ -41,7 +40,7 @@ async function fetchV3ExecutorAddresses(
   };
 }
 
-async function getGovernanceV3Addresses({CHAIN_ID, ...config}: GovernanceConfig) {
+async function getGovernanceV3Addresses({CHAIN_ID, name, ...config}: GovernanceConfig) {
   if (config.PAYLOADS_CONTROLLER) {
     const executors = await fetchV3ExecutorAddresses(
       RPC_PROVIDERS[CHAIN_ID],
@@ -54,16 +53,14 @@ async function getGovernanceV3Addresses({CHAIN_ID, ...config}: GovernanceConfig)
 
 export async function generateGovernanceLibrary(config: GovernanceConfig) {
   const addresses = await getGovernanceV3Addresses(config);
-  const name = `GovernanceV3${getChainName(config.CHAIN_ID)}`;
+  const name = `GovernanceV3${config.name}`;
   const provider = RPC_PROVIDERS[config.CHAIN_ID];
 
   writeFileSync(
     `./src/${name}.sol`,
     prefixWithPragma(
       prefixWithGeneratedWarning(
-        prefixWithPragma(
-          wrapIntoSolidityLibrary(generateSolidityConstants(provider, addresses), name),
-        ),
+        wrapIntoSolidityLibrary(generateSolidityConstants(provider, addresses), name),
       ),
     ),
   );

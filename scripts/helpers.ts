@@ -45,23 +45,6 @@ export const generateAdditionalAddressesSol = (
   return '';
 };
 
-export const generateMiscAddressesSol = (miscAddresses: Misc): string => {
-  if (miscAddresses) {
-    return Object.keys(miscAddresses).reduce((acc, key) => {
-      if (key == 'AAVE_ECOSYSTEM_RESERVE_CONTROLLER') {
-        acc += `IAaveEcosystemReserveController internal constant ${key} =
-        IAaveEcosystemReserveController(${miscAddresses![key as keyof typeof miscAddresses]});\n\n`;
-      } else {
-        acc += `address internal constant ${key} = ${
-          miscAddresses![key as keyof typeof miscAddresses]
-        };\n\n`;
-      }
-      return acc;
-    }, '');
-  }
-  return '';
-};
-
 export const generateGovV2AddressesSol = (govV2Addresses: GovernanceV2): string => {
   if (govV2Addresses) {
     return Object.keys(govV2Addresses).reduce((acc, key) => {

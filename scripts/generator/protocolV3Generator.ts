@@ -9,10 +9,8 @@ import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
 import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
 import {addressOrZero, bytes32toAddress, getImplementationStorageSlot} from '../helpers';
 import {RPC_PROVIDERS} from './clients';
-import {getChainName} from './chains';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
-  fixSymbol,
   generateJsConstants,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
@@ -151,7 +149,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
       });
       EMISSION_MANAGER = await incentivesControllerContract.read.getEmissionManager();
     } catch (e) {
-      console.log(`old version of incentives controller deployed on ${pool.nameSuffix}`);
+      console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
 
     let reservesData: PoolV3Addresses['reservesData'] = [];

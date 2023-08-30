@@ -1,5 +1,3 @@
-import {RPC_PROVIDERS} from './clients';
-
 export enum ChainId {
   mainnet = 1,
   ropsten = 3,
@@ -22,8 +20,4 @@ export enum ChainId {
   scroll_sepolia = 534351,
   metis = 1088,
   base = 8453,
-}
-
-export function getChainName(chainId: ChainId) {
-  return RPC_PROVIDERS[chainId].chain.name;
 }

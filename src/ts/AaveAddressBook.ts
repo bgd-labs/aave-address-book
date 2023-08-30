@@ -52,3 +52,5 @@ export * as AaveV3Fantom from './AaveV3Fantom';
 export {AaveV3FantomAssets} from './AaveV3FantomAssets';
 export * as AaveV3Harmony from './AaveV3Harmony';
 export {AaveV3HarmonyAssets} from './AaveV3HarmonyAssets';
+export * as AaveMisc from './AaveMisc';
+export * as AaveGovernanceV2 from './AaveGovernanceV2';

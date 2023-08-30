@@ -2,6 +2,7 @@ import {ChainId} from '../../generator/chains';
 import {GovernanceConfig} from '../types';
 
 export const governanceConfigMainnet: GovernanceConfig = {
+  name: 'Ethereum',
   CHAIN_ID: ChainId.mainnet,
   GOVERNANCE: '0x4096461e8756f8ad1d06992B61d322aB29e73e21',
   VOTING_MACHINE: '0x4D20436E4c6Fc1fF27312f4531112692bbdbC481',

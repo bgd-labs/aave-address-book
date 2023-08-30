@@ -32,6 +32,8 @@ import {scrollAlphaProtoV3, scrollSepoliaProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
+import {writeMiscTemplate} from './generator_misc';
+import {writeGovV2Template} from './generator_gov_v2';
 
 async function main() {
   // cleanup ts artifacts
@@ -81,11 +83,15 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
 
-  const jsExports = [governanceNames, v2LibraryNames, v3LibraryNames]
+  const miscImports = writeMiscTemplate();
+
+  const govImports = writeGovV2Template();
+
+  const jsExports = [governanceNames, v2LibraryNames, v3LibraryNames, miscImports, govImports]
     .flat()
     .map((f) => f.js)
     .flat();
-  const solidityImports = [governanceNames, v2LibraryNames, v3LibraryNames]
+  const solidityImports = [governanceNames, v2LibraryNames, v3LibraryNames, miscImports, govImports]
     .flat()
     .map((f) => f.solidity)
     .flat();

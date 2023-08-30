@@ -19,7 +19,7 @@ import {
   avalanche,
   base,
 } from 'viem/chains';
-import {ChainId} from '../config';
+import {ChainId} from './chains';
 
 export const RPC_PROVIDERS = {
   [ChainId.mainnet]: createPublicClient({

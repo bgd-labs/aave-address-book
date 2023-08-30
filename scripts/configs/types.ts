@@ -8,6 +8,7 @@ export type AddressInfo = Hex | {value: Hex; type: 'uint256' | 'address' | Known
 export type Addresses = Record<Capitalize<string>, AddressInfo>;
 
 export interface GovernanceConfig {
+  name: string;
   CHAIN_ID: ChainId;
   CROSS_CHAIN_CONTROLLER?: Hex;
   GOVERNANCE?: Hex;

@@ -2,6 +2,7 @@ import {ChainId} from '../../generator/chains';
 import {GovernanceConfig} from '../types';
 
 export const governanceConfigSepolia: GovernanceConfig = {
+  name: 'Sepolia',
   CHAIN_ID: ChainId.sepolia,
   CROSS_CHAIN_CONTROLLER: '0xF57D158aA44B95E657bA4697fD69A2B9037bd723',
   GOVERNANCE: '0x2B2fa1A67964613F8056FB8612494893A2B90DCa',
