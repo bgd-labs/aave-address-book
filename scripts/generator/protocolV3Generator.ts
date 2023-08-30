@@ -253,7 +253,7 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   const assetsLibraryName = name + 'Assets';
   const assetsLibrary = generateAssetsLibrary(provider, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
-  writeFileSync(`./src/${assetsLibraryName}.ts`, assetsLibrary.js);
+  writeFileSync(`./src/ts/${assetsLibraryName}.ts`, assetsLibrary.js);
   // appendFileSync(`./src/ts/AaveAddressBook.ts`, `export {${name}} from './${name}';\r\n`);
   // appendFileSync(
   //   `./src/ts/AaveAddressBook.ts`,
