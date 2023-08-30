@@ -10,8 +10,15 @@ import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
 import {addressOrZero, bytes32toAddress, getImplementationStorageSlot} from '../helpers';
 import {RPC_PROVIDERS} from './clients';
 import {getChainName} from './chains';
-import {writeFileSync} from 'fs';
-import {generateJsLibrary, generateSolidityLibrary, prefixWithPragma} from './utils';
+import {appendFileSync, writeFileSync} from 'fs';
+import {
+  fixSymbol,
+  generateJsConstants,
+  generateSolidityConstants,
+  prefixWithGeneratedWarning,
+  prefixWithPragma,
+  wrapIntoSolidityLibrary,
+} from './utils';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -43,17 +50,17 @@ async function getAdditionalTokenInfo(
 }> {
   if (reservesData.length > 0) {
     const aTokenContract = getContract({
-      address: reservesData[0].aTokenAddress,
+      address: reservesData[0].A_TOKEN,
       abi: A_TOKEN_V3_ABI,
       publicClient,
     });
     const variableDebtTokenContract = getContract({
-      address: reservesData[0].variableDebtTokenAddress,
+      address: reservesData[0].V_TOKEN,
       abi: VARIABLE_DEBT_TOKEN_ABI,
       publicClient,
     });
     const stableDebtTokenContract = getContract({
-      address: reservesData[0].stableDebtTokenAddress,
+      address: reservesData[0].S_TOKEN,
       abi: STABLE_DEBT_TOKEN_ABI,
       publicClient,
     });
@@ -61,10 +68,10 @@ async function getAdditionalTokenInfo(
     const [COLLECTOR, aTokenImplSlot, aTokenImplRevision, vTokenImplSlot, sTokenImplSlot] =
       await Promise.all([
         aTokenContract.read.RESERVE_TREASURY_ADDRESS(),
-        getImplementationStorageSlot(publicClient, reservesData[0].aTokenAddress),
+        getImplementationStorageSlot(publicClient, reservesData[0].A_TOKEN),
         aTokenContract.read.ATOKEN_REVISION(),
-        getImplementationStorageSlot(publicClient, reservesData[0].variableDebtTokenAddress),
-        getImplementationStorageSlot(publicClient, reservesData[0].stableDebtTokenAddress),
+        getImplementationStorageSlot(publicClient, reservesData[0].V_TOKEN),
+        getImplementationStorageSlot(publicClient, reservesData[0].S_TOKEN),
       ]);
 
     const defaultATokenImplementation = bytes32toAddress(aTokenImplSlot);
@@ -143,7 +150,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
       });
       EMISSION_MANAGER = await incentivesControllerContract.read.getEmissionManager();
     } catch (e) {
-      console.log(`old version of incentives controller deployed on ${pool.name}`);
+      console.log(`old version of incentives controller deployed on ${pool.nameSuffix}`);
     }
 
     let reservesData: PoolV3Addresses['reservesData'] = [];
@@ -169,17 +176,17 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
         data.map(async (reserve) => {
           let symbol = reserve.symbol;
           const result: ReserveData = {
-            symbol,
-            underlyingAsset: reserve.underlyingAsset,
+            symbol: fixSymbol(reserve.symbol, reserve.underlyingAsset),
             decimals: Number(reserve.decimals),
-            aTokenAddress: reserve.aTokenAddress,
-            stableDebtTokenAddress: reserve.stableDebtTokenAddress,
-            variableDebtTokenAddress: reserve.variableDebtTokenAddress,
-            interestRateStrategyAddress: reserve.interestRateStrategyAddress,
-            priceOracle: reserve.priceOracle,
+            UNDERLYING: reserve.underlyingAsset,
+            A_TOKEN: reserve.aTokenAddress,
+            S_TOKEN: reserve.stableDebtTokenAddress,
+            V_TOKEN: reserve.variableDebtTokenAddress,
+            INTEREST_RATE_STRATEGY: reserve.interestRateStrategyAddress,
+            ORACLE: reserve.priceOracle,
           };
           if (staticATokenFactoryContract)
-            result.staticATokenAddress = (await staticATokenFactoryContract.read.getStaticAToken([
+            result.STATA_TOKEN = (await staticATokenFactoryContract.read.getStaticAToken([
               reserve.underlyingAsset,
             ])) as Hex;
           return result;
@@ -223,10 +230,42 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   const name = `AaveV3${getChainName(config.chainId)}${config.nameSuffix}`;
   const provider = RPC_PROVIDERS[config.chainId];
 
+  // generate main library
   writeFileSync(
     `./src/${name}.sol`,
-    prefixWithPragma(generateSolidityLibrary(provider, addresses, name)),
+    prefixWithGeneratedWarning(
+      prefixWithPragma(
+        wrapIntoSolidityLibrary(
+          generateSolidityConstants(provider, {...addresses, ...config.additionalAddresses}),
+          name,
+        ),
+      ),
+    ),
   );
-  writeFileSync(`./src/ts/${name}.ts`, generateJsLibrary(provider, addresses));
+  writeFileSync(
+    `./src/ts/${name}.ts`,
+    prefixWithGeneratedWarning(
+      generateJsConstants(provider, {...addresses, ...config.additionalAddresses}).join('\n'),
+    ),
+  );
+
+  // generate assets library
+  const assetsLibraryName = name + 'Assets';
+  const formattedReservesData = reservesData.map(({symbol, ...rest}) => {
+    return {
+      [`${symbol}_UNDERLYING`]: rest.UNDERLYING,
+      [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint256'},
+      [`${symbol}_A_TOKEN`]: rest.A_TOKEN,
+      [`${symbol}_V_TOKEN`]: rest.V_TOKEN,
+      [`${symbol}_S_TOKEN`]: rest.S_TOKEN,
+    };
+  });
+  appendFileSync(
+    `./src/${name}.sol`,
+    wrapIntoSolidityLibrary(
+      formattedReservesData.map((r) => generateSolidityConstants(provider, r)).flat(),
+      assetsLibraryName,
+    ),
+  );
   return name;
 }

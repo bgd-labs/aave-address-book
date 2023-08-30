@@ -58,12 +58,12 @@ export interface PoolConfig {
 
 export type ReserveData = {
   symbol: string;
-  underlyingAsset: Hex;
+  UNDERLYING: Hex;
   decimals: number;
-  aTokenAddress: Hex;
-  stableDebtTokenAddress: Hex;
-  variableDebtTokenAddress: Hex;
-  interestRateStrategyAddress: Hex;
-  priceOracle: Hex;
-  staticATokenAddress?: Hex;
+  A_TOKEN: Hex;
+  S_TOKEN: Hex;
+  V_TOKEN: Hex;
+  INTEREST_RATE_STRATEGY: Hex;
+  ORACLE: Hex;
+  STATA_TOKEN?: Hex;
 };

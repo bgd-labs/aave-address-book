@@ -3,7 +3,13 @@ import {Hex, PublicClient, getContract} from 'viem';
 import {GovernanceConfig} from '../configs/types';
 import {PAYLOADS_CONTROLLER_ABI} from '../abi/payloadsController';
 import {RPC_PROVIDERS} from './clients';
-import {generateJsLibrary, generateSolidityLibrary, prefixWithPragma} from './utils';
+import {
+  generateJsConstants,
+  generateSolidityConstants,
+  prefixWithGeneratedWarning,
+  prefixWithPragma,
+  wrapIntoSolidityLibrary,
+} from './utils';
 import {getChainName} from './chains';
 
 type ExecutorsV3 = {
@@ -53,8 +59,14 @@ export async function generateGovernanceLibrary(config: GovernanceConfig) {
 
   writeFileSync(
     `./src/${name}.sol`,
-    prefixWithPragma(generateSolidityLibrary(provider, addresses, name)),
+    prefixWithPragma(
+      prefixWithGeneratedWarning(
+        prefixWithPragma(
+          wrapIntoSolidityLibrary(generateSolidityConstants(provider, addresses), name),
+        ),
+      ),
+    ),
   );
-  writeFileSync(`./src/ts/${name}.ts`, generateJsLibrary(provider, addresses));
+  writeFileSync(`./src/ts/${name}.ts`, generateJsConstants(provider, addresses).join('\n'));
   return name;
 }

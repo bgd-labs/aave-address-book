@@ -1,11 +1,16 @@
 import {Hex, PublicClient, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
 import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
-import {addressOrZero} from '../helpers';
 import {RPC_PROVIDERS} from './clients';
 import {getChainName} from './chains';
 import {writeFileSync} from 'fs';
-import {generateJsLibrary, generateSolidityLibrary, prefixWithPragma} from './utils';
+import {
+  generateJsConstants,
+  generateSolidityConstants,
+  prefixWithGeneratedWarning,
+  prefixWithPragma,
+  wrapIntoSolidityLibrary,
+} from './utils';
 import {ADDRESS_PROVIDER_V2_ABI} from '../abi/address_provider_v2_abi';
 import {LENDING_POOL_V2_ABI} from '../abi/lending_pool_v2_abi';
 import {A_TOKEN_V2_ABI} from '../abi/aToken_v2_abi';
@@ -38,7 +43,7 @@ async function getAdditionalTokenInfo(
 }> {
   if (reservesData.length > 0) {
     const aTokenContract = getContract({
-      address: reservesData[0].aTokenAddress,
+      address: reservesData[0].A_TOKEN,
       abi: A_TOKEN_V2_ABI,
       publicClient,
     });
@@ -109,13 +114,13 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       )[0].map((reserve) => {
         return {
           symbol: reserve.symbol,
-          underlyingAsset: reserve.underlyingAsset,
+          UNDERLYING: reserve.underlyingAsset,
           decimals: Number(reserve.decimals),
-          aTokenAddress: reserve.aTokenAddress,
-          stableDebtTokenAddress: reserve.stableDebtTokenAddress,
-          variableDebtTokenAddress: reserve.variableDebtTokenAddress,
-          interestRateStrategyAddress: reserve.interestRateStrategyAddress,
-          priceOracle: reserve.priceOracle,
+          A_TOKEN: reserve.aTokenAddress,
+          S_TOKEN: reserve.stableDebtTokenAddress,
+          V_TOKEN: reserve.variableDebtTokenAddress,
+          INTEREST_RATE_STRATEGY: reserve.interestRateStrategyAddress,
+          ORACLE: reserve.priceOracle,
         };
       });
     }
@@ -195,13 +200,20 @@ export async function generateProtocolV2Library(config: PoolConfig) {
 
   writeFileSync(
     `./src/${name}.sol`,
-    prefixWithPragma(
-      generateSolidityLibrary(provider, {...addresses, ...config.additionalAddresses}, name),
+    prefixWithGeneratedWarning(
+      prefixWithPragma(
+        wrapIntoSolidityLibrary(
+          generateSolidityConstants(provider, {...addresses, ...config.additionalAddresses}),
+          name,
+        ),
+      ),
     ),
   );
   writeFileSync(
     `./src/ts/${name}.ts`,
-    generateJsLibrary(provider, {...addresses, ...config.additionalAddresses}),
+    prefixWithGeneratedWarning(
+      generateJsConstants(provider, {...addresses, ...config.additionalAddresses}).join('\n'),
+    ),
   );
   return name;
 }
