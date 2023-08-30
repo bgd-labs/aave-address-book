@@ -47,4 +47,7 @@ library AaveMisc {
     0x05225Cd708bCa9253789C1374e4337a019e99D56;
 
   address internal constant PROXY_ADMIN_BASE = 0xc85b1E333aecc99340b2320493Fe2d22b8734795;
+
+  // https://etherscan.io/address/0x3ea64b1C0194524b48F9118462C8E9cd61a243c7
+  address internal constant AAVE_SWAPPER_ETHEREUM = 0x3ea64b1C0194524b48F9118462C8E9cd61a243c7;
 }

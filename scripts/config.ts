@@ -243,6 +243,7 @@ export interface Misc {
   PROXY_ADMIN_ARBITRUM: Hex;
   TRANSPARENT_PROXY_FACTORY_METIS: Hex;
   PROXY_ADMIN_METIS: Hex;
+  AAVE_SWAPPER_ETHEREUM: Hex;
 }
 
 export interface GovernanceV2 {
