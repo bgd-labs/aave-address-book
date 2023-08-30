@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV3Ethereum {
   // https://etherscan.io/address/0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

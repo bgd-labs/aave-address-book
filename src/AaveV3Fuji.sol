@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV3Fuji {
   // https://testnet.snowtrace.io/address/0xfb87056c0587923f15EB0aABc7d0572450Cc8003
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV3Metis {
   // https://andromeda-explorer.metis.io/address/0xB9FABd7500B2C6781c35Dd48d54f81fc2299D7AF
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

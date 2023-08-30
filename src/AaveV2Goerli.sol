@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV2Goerli {
   // https://goerli.etherscan.io/address/0x5E52dEc931FFb32f609681B8438A51c675cc232d
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

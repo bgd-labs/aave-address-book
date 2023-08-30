@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV3Arbitrum {
   // https://goerli.arbiscan.io//address/0xD64dDe119f11C88850FD596BE11CE398CC5893e6
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

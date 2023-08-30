@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV3Mumbai {
   // https://mumbai.polygonscan.com/address/0x4CeDCB57Af02293231BAA9D39354D6BFDFD251e0
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

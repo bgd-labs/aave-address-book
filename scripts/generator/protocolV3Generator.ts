@@ -235,10 +235,12 @@ export async function generateProtocolV3Library(config: PoolConfig) {
     `./src/${name}.sol`,
     prefixWithGeneratedWarning(
       prefixWithPragma(
-        wrapIntoSolidityLibrary(
-          generateSolidityConstants(provider, {...addresses, ...config.additionalAddresses}),
-          name,
-        ),
+        `import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';\n` +
+          `import {ICollector} from './common/ICollector.sol';` +
+          wrapIntoSolidityLibrary(
+            generateSolidityConstants(provider, {...addresses, ...config.additionalAddresses}),
+            name,
+          ),
       ),
     ),
   );

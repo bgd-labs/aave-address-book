@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV3OptimismGoerli {
   // https://goerli-optimism.etherscan.io/address/0xf3a4595bD9FBf129DEb80802a4785873F0ceB65c
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

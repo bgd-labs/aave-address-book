@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
+import {ICollector} from './common/ICollector.sol';
+
 library AaveV2Avalanche {
   // https://snowtrace.io/address/0xb6A86025F0FE1862B372cb0ca18CE3EDe02A318f
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

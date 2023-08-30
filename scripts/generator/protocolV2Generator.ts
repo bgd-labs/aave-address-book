@@ -203,10 +203,12 @@ export async function generateProtocolV2Library(config: PoolConfig) {
     `./src/${name}.sol`,
     prefixWithGeneratedWarning(
       prefixWithPragma(
-        wrapIntoSolidityLibrary(
-          generateSolidityConstants(provider, {...addresses, ...config.additionalAddresses}),
-          name,
-        ),
+        `import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';\n` +
+          `import {ICollector} from './common/ICollector.sol';` +
+          wrapIntoSolidityLibrary(
+            generateSolidityConstants(provider, {...addresses, ...config.additionalAddresses}),
+            name,
+          ),
       ),
     ),
   );
