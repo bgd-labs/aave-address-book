@@ -1,6 +1,7 @@
-import {Hex, PublicClient, zeroAddress} from 'viem';
+import {Hex, zeroAddress} from 'viem';
 import {ReserveData} from '../configs/types';
 import {generateSolidityConstants, wrapIntoSolidityLibrary} from './utils';
+import {ChainId} from './chains';
 
 /**
  * As symbols are used as variable name in Solidity and Javascript there are certain characters that are not allowed and should be replaced.
@@ -56,7 +57,7 @@ export function fixSymbol(symbol: string, _underlying: string) {
 }
 
 export function generateAssetsLibrary(
-  publicClient: PublicClient,
+  chainId: ChainId,
   reservesData: ReserveData[],
   libraryName: string,
 ) {
@@ -87,7 +88,9 @@ export function generateAssetsLibrary(
   let templateV3Assets = `export const ${libraryName} = ${JSON.stringify(innerObject, null, 2)}`;
   return {
     solidity: wrapIntoSolidityLibrary(
-      formattedReservesData.map((r) => generateSolidityConstants(publicClient, r)).flat(),
+      formattedReservesData
+        .map((addresses) => generateSolidityConstants({chainId, addresses}))
+        .flat(),
       libraryName,
     ),
     js: templateV3Assets,

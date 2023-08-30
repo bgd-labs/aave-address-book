@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import {AddressInfo} from '../configs/types';
+import {AddressInfo, Addresses} from '../configs/types';
 import {
   generateJsConstants,
   generateSolidityConstants,
@@ -8,8 +8,9 @@ import {
   wrapIntoSolidityLibrary,
 } from './utils';
 import {RPC_PROVIDERS} from './clients';
+import {ChainId} from './chains';
 
-const miscAddresses: Record<Capitalize<string>, AddressInfo> = {
+const miscAddresses: Addresses = {
   ECOSYSTEM_RESERVE: '0x25F2226B597E8F9514B3F68F00f494cF4f286491',
   AAVE_ECOSYSTEM_RESERVE_CONTROLLER: {
     value: '0x3d569673dAa0575c936c7c67c4E6AedA69CC630C',
@@ -41,13 +42,18 @@ export function generateMisc() {
       prefixWithPragma(
         `import {IAaveEcosystemReserveController} from './common/IAaveEcosystemReserveController.sol';\n` +
           `import {IStreamable} from './common/IStreamable.sol';\n` +
-          wrapIntoSolidityLibrary(generateSolidityConstants(RPC_PROVIDERS[1], miscAddresses), name),
+          wrapIntoSolidityLibrary(
+            generateSolidityConstants({chainId: ChainId.mainnet, addresses: miscAddresses}),
+            name,
+          ),
       ),
     ),
   );
   fs.writeFileSync(
     `./src/ts/AaveMisc.ts`,
-    prefixWithGeneratedWarning(generateJsConstants(RPC_PROVIDERS[1], miscAddresses).join('\n')),
+    prefixWithGeneratedWarning(
+      generateJsConstants({chainId: ChainId.mainnet, addresses: miscAddresses}).join('\n'),
+    ),
   );
   return {
     js: [`export * as ${name} from './${name}';`],

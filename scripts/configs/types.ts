@@ -3,9 +3,11 @@ import {ChainId} from '../generator/chains';
 
 type KnownInterfaces = string;
 
-export type AddressInfo = Hex | {value: Hex; type: 'uint256' | 'address' | KnownInterfaces};
+export type AddressInfo =
+  | Hex
+  | {value: Hex; type: 'uint256' | 'address' | KnownInterfaces; chainId?: ChainId};
 
-export type Addresses = Record<Capitalize<string>, AddressInfo>;
+export type Addresses = Record<Uppercase<string>, AddressInfo>;
 
 export interface GovernanceConfig {
   name: string;

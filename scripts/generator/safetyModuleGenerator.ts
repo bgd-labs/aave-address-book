@@ -1,5 +1,4 @@
 import fs from 'fs';
-import {RPC_PROVIDERS} from './clients';
 import {
   generateJsConstants,
   generateSolidityConstants,
@@ -7,6 +6,7 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
+import {ChainId} from './chains';
 
 const SAFETY_MODULE = {
   STK_AAVE: '0x4da27a545c0c5B758a6BA100e3a049001de870f5',
@@ -20,14 +20,19 @@ export function generateSafetyModule() {
     `./src/AaveSafetyModule.sol`,
     prefixWithGeneratedWarning(
       prefixWithPragma(
-        wrapIntoSolidityLibrary(generateSolidityConstants(RPC_PROVIDERS[1], SAFETY_MODULE), name),
+        wrapIntoSolidityLibrary(
+          generateSolidityConstants({chainId: ChainId.mainnet, addresses: SAFETY_MODULE}),
+          name,
+        ),
       ),
     ),
   );
 
   fs.writeFileSync(
     `./src/ts/AaveSafetyModule.ts`,
-    prefixWithGeneratedWarning(generateJsConstants(RPC_PROVIDERS[1], SAFETY_MODULE).join('\n')),
+    prefixWithGeneratedWarning(
+      generateJsConstants({chainId: ChainId.mainnet, addresses: SAFETY_MODULE}).join('\n'),
+    ),
   );
 
   return {

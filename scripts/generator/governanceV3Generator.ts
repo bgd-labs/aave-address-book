@@ -54,17 +54,22 @@ async function getGovernanceV3Addresses({CHAIN_ID, name, ...config}: GovernanceC
 export async function generateGovernanceLibrary(config: GovernanceConfig) {
   const addresses = await getGovernanceV3Addresses(config);
   const name = `GovernanceV3${config.name}`;
-  const provider = RPC_PROVIDERS[config.CHAIN_ID];
 
   writeFileSync(
     `./src/${name}.sol`,
     prefixWithPragma(
       prefixWithGeneratedWarning(
-        wrapIntoSolidityLibrary(generateSolidityConstants(provider, addresses), name),
+        wrapIntoSolidityLibrary(
+          generateSolidityConstants({chainId: config.CHAIN_ID, addresses}),
+          name,
+        ),
       ),
     ),
   );
-  writeFileSync(`./src/ts/${name}.ts`, generateJsConstants(provider, addresses).join('\n'));
+  writeFileSync(
+    `./src/ts/${name}.ts`,
+    generateJsConstants({chainId: config.CHAIN_ID, addresses}).join('\n'),
+  );
   return {
     js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],

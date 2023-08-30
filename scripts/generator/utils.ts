@@ -1,7 +1,10 @@
 import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
+import {ChainId} from './chains';
+import {RPC_PROVIDERS} from './clients';
 
-function getExplorerLink(publicClient: PublicClient, address: Hex) {
+function getExplorerLink(chainId: ChainId, address: Hex) {
+  const publicClient = RPC_PROVIDERS[chainId];
   return `${publicClient.chain?.blockExplorers?.default.url}/address/${getAddress(address)}`;
 }
 
@@ -23,7 +26,7 @@ export function wrapIntoSolidityLibrary(code: string[], libraryName: string) {
 }
 
 export function addressInfoToSolidityLibraryConstant(
-  publicClient: PublicClient,
+  chainId: ChainId,
   key: string,
   entry: AddressInfo,
 ) {
@@ -31,7 +34,7 @@ export function addressInfoToSolidityLibraryConstant(
     if (entry.type === 'uint256') {
       return `${entry.type} internal constant ${key} = ${entry.value};`;
     }
-    const blockExplorerLinkComment = getExplorerLink(publicClient, entry.value);
+    const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);
     if (entry.type === 'address')
       return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(
         entry.value,
@@ -40,35 +43,45 @@ export function addressInfoToSolidityLibraryConstant(
       entry.type
     }(${getAddress(entry.value)});`;
   }
-  const blockExplorerLinkComment = getExplorerLink(publicClient, entry);
+  const blockExplorerLinkComment = getExplorerLink(chainId, entry);
   return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(entry)};`;
 }
 
-export function generateSolidityConstants(publicClient: PublicClient, addresses: Addresses) {
+export function generateSolidityConstants({
+  chainId,
+  addresses,
+}: {
+  chainId: ChainId;
+  addresses: Addresses;
+}) {
   return Object.keys(addresses).map((key) =>
-    addressInfoToSolidityLibraryConstant(publicClient, key, addresses[key]),
+    addressInfoToSolidityLibraryConstant(chainId, key, addresses[key]),
   );
 }
 
-export function addressToJsConstant(publicClient: PublicClient, key: string, entry: AddressInfo) {
+export function addressToJsConstant(chainId: ChainId, key: string, entry: AddressInfo) {
   if (typeof entry === 'object') {
     if (entry.type === 'uint256') {
       return `export const ${key} = ${entry.value};`;
     }
-    const blockExplorerLinkComment = getExplorerLink(publicClient, entry.value);
+    const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);
     return `// ${entry.type} ${blockExplorerLinkComment}\n export const ${key} = '${getAddress(
       entry.value,
     )}';`;
   }
 
-  const blockExplorerLinkComment = getExplorerLink(publicClient, entry);
+  const blockExplorerLinkComment = getExplorerLink(chainId, entry);
   return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';`;
 }
 
-export function generateJsConstants(publicClient: PublicClient, addresses: Addresses) {
-  return Object.keys(addresses).map((key) =>
-    addressToJsConstant(publicClient, key, addresses[key]),
-  );
+export function generateJsConstants({
+  chainId,
+  addresses,
+}: {
+  chainId: ChainId;
+  addresses: Addresses;
+}) {
+  return Object.keys(addresses).map((key) => addressToJsConstant(chainId, key, addresses[key]));
 }
 
 export const bytes32toAddress = (bytes32: Hex) => {

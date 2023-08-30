@@ -194,7 +194,6 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
 export async function generateProtocolV2Library(config: PoolConfig) {
   const {reservesData, ...addresses} = await getPoolV2Addresses(config);
   const name = `AaveV2${config.name}`;
-  const provider = RPC_PROVIDERS[config.chainId];
 
   writeFileSync(
     `./src/${name}.sol`,
@@ -203,7 +202,10 @@ export async function generateProtocolV2Library(config: PoolConfig) {
         `import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';\n` +
           `import {ICollector} from './common/ICollector.sol';` +
           wrapIntoSolidityLibrary(
-            generateSolidityConstants(provider, {...addresses, ...config.additionalAddresses}),
+            generateSolidityConstants({
+              chainId: config.chainId,
+              addresses: {...addresses, ...config.additionalAddresses},
+            }),
             name,
           ),
       ),
@@ -212,13 +214,16 @@ export async function generateProtocolV2Library(config: PoolConfig) {
   writeFileSync(
     `./src/ts/${name}.ts`,
     prefixWithGeneratedWarning(
-      generateJsConstants(provider, {...addresses, ...config.additionalAddresses}).join('\n'),
+      generateJsConstants({
+        chainId: config.chainId,
+        addresses: {...addresses, ...config.additionalAddresses},
+      }).join('\n'),
     ),
   );
 
   // generate assets library
   const assetsLibraryName = name + 'Assets';
-  const assetsLibrary = generateAssetsLibrary(provider, reservesData, assetsLibraryName);
+  const assetsLibrary = generateAssetsLibrary(config.chainId, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
   writeFileSync(`./src/ts/${assetsLibraryName}.ts`, assetsLibrary.js);
   // appendFileSync(`./src/ts/AaveAddressBook.ts`, `export {${name}} from './${name}';\r\n`);
