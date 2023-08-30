@@ -1,11 +1,31 @@
 import {governanceConfigMainnet} from './configs/governance/mainnet';
 import {governanceConfigSepolia} from './configs/governance/sepolia';
+import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
+import {
+  avalancheProtoV2,
+  avalancheProtoV3,
+  fujiProtoV2,
+  fujiProtoV3,
+} from './configs/pools/avalanche';
+import {baseProtoV3} from './configs/pools/base';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
   mainnetArcV2Pool,
   mainnetProtoV2Pool,
-} from './configs/pools/mainnet';
+  goerliProtoV2Pool,
+  sepoliaProtoV3,
+  goerliGHOV3Pool,
+} from './configs/pools/ethereum';
+import {metisProtoV3} from './configs/pools/metis';
+import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
+import {
+  mumbaiProtoV2,
+  mumbaiProtoV3,
+  polygonProtoV2,
+  polygonProtoV3,
+} from './configs/pools/polygon';
+import {scrollAlphaProtoV3, scrollSepoliaProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -17,12 +37,35 @@ async function main() {
     ),
   );
   const v2LibraryNames = await Promise.all(
-    [mainnetAmmV2Pool, mainnetArcV2Pool, mainnetProtoV2Pool].map((config) =>
-      generateProtocolV2Library(config),
-    ),
+    [
+      mainnetAmmV2Pool,
+      mainnetArcV2Pool,
+      mainnetProtoV2Pool,
+      polygonProtoV2,
+      mumbaiProtoV2,
+      goerliProtoV2Pool,
+      fujiProtoV2,
+      avalancheProtoV2,
+    ].map((config) => generateProtocolV2Library(config)),
   );
   const v3LibraryNames = await Promise.all(
-    [mainnetProtoV3Pool].map((config) => generateProtocolV3Library(config)),
+    [
+      mainnetProtoV3Pool,
+      sepoliaProtoV3,
+      goerliGHOV3Pool,
+      polygonProtoV3,
+      mumbaiProtoV3,
+      avalancheProtoV3,
+      fujiProtoV3,
+      baseProtoV3,
+      metisProtoV3,
+      arbitrumGoerliProtoV3,
+      arbitrumProtoV3,
+      optimismGoerliProtoV3,
+      optimismProtoV3,
+      scrollAlphaProtoV3,
+      scrollSepoliaProtoV3,
+    ].map((config) => generateProtocolV3Library(config)),
   );
 }
 

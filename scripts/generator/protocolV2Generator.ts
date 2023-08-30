@@ -196,7 +196,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
 
 export async function generateProtocolV2Library(config: PoolConfig) {
   const {reservesData, ...addresses} = await getPoolV2Addresses(config);
-  const name = `AaveV2${getChainName(config.chainId)}${config.nameSuffix}`;
+  const name = `AaveV2${config.name}`;
   const provider = RPC_PROVIDERS[config.chainId];
 
   writeFileSync(
@@ -222,5 +222,10 @@ export async function generateProtocolV2Library(config: PoolConfig) {
   const assetsLibrary = generateAssetsLibrary(provider, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
   writeFileSync(`./src/${assetsLibraryName}.ts`, assetsLibrary.js);
+  // appendFileSync(`./src/ts/AaveAddressBook.ts`, `export {${name}} from './${name}';\r\n`);
+  // appendFileSync(
+  //   `./src/ts/AaveAddressBook.ts`,
+  //   `export {${assetsLibraryName}} from './${assetsLibraryName}';\r\n`,
+  // );
   return name;
 }

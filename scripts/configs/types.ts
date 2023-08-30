@@ -19,9 +19,8 @@ export interface GovernanceConfig {
 }
 
 export interface PoolConfig {
-  nameSuffix: string;
+  name: string;
   chainId: ChainId;
-  version: number;
   POOL_ADDRESSES_PROVIDER: Hex;
   // will be inlined in js pool export
   additionalAddresses: {
