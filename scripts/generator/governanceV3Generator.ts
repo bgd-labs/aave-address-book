@@ -68,5 +68,8 @@ export async function generateGovernanceLibrary(config: GovernanceConfig) {
     ),
   );
   writeFileSync(`./src/ts/${name}.ts`, generateJsConstants(provider, addresses).join('\n'));
-  return name;
+  return {
+    js: [`export * as ${name} from './${name}';`],
+    solidity: [`import {${name}} from './${name}.sol';`],
+  };
 }

@@ -1,3 +1,4 @@
+import {appendFileSync, existsSync, mkdirSync, rmdirSync} from 'fs';
 import {governanceConfigMainnet} from './configs/governance/mainnet';
 import {governanceConfigSepolia} from './configs/governance/sepolia';
 import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
@@ -33,6 +34,13 @@ import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
 
 async function main() {
+  // cleanup ts artifacts
+  if (existsSync('./src/ts')) {
+    rmdirSync('./src/ts', {recursive: true});
+  }
+  mkdirSync('./src/ts');
+
+  // generate files
   const governanceNames = await Promise.all(
     [governanceConfigSepolia, governanceConfigMainnet].map((config) =>
       generateGovernanceLibrary(config),
@@ -72,6 +80,18 @@ async function main() {
       harmonyProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
+
+  const jsExports = [governanceNames, v2LibraryNames, v3LibraryNames]
+    .flat()
+    .map((f) => f.js)
+    .flat();
+  const solidityImports = [governanceNames, v2LibraryNames, v3LibraryNames]
+    .flat()
+    .map((f) => f.solidity)
+    .flat();
+
+  jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
+  // solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
 }
 
 main();

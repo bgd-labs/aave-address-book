@@ -229,5 +229,11 @@ export async function generateProtocolV2Library(config: PoolConfig) {
   //   `./src/ts/AaveAddressBook.ts`,
   //   `export {${assetsLibraryName}} from './${assetsLibraryName}';\r\n`,
   // );
-  return name;
+  return {
+    js: [
+      `export * as ${name} from './${name}';`,
+      `export {${assetsLibraryName}} from './${assetsLibraryName}';`,
+    ],
+    solidity: [`import {${name}} from './${name}.sol';`],
+  };
 }

@@ -256,10 +256,11 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   const assetsLibrary = generateAssetsLibrary(provider, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
   writeFileSync(`./src/ts/${assetsLibraryName}.ts`, assetsLibrary.js);
-  // appendFileSync(`./src/ts/AaveAddressBook.ts`, `export {${name}} from './${name}';\r\n`);
-  // appendFileSync(
-  //   `./src/ts/AaveAddressBook.ts`,
-  //   `export {${assetsLibraryName}} from './${assetsLibraryName}';\r\n`,
-  // );
-  return name;
+  return {
+    js: [
+      `export * as ${name} from './${name}';`,
+      `export {${assetsLibraryName}} from './${assetsLibraryName}';`,
+    ],
+    solidity: [`import {${name}} from './${name}.sol';`],
+  };
 }
