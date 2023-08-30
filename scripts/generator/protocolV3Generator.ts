@@ -19,6 +19,7 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
+import {generateAssetsLibrary} from './assetsLibraryGenerator';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -174,9 +175,8 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
       )[0];
       reservesData = await Promise.all(
         data.map(async (reserve) => {
-          let symbol = reserve.symbol;
           const result: ReserveData = {
-            symbol: fixSymbol(reserve.symbol, reserve.underlyingAsset),
+            symbol: reserve.symbol,
             decimals: Number(reserve.decimals),
             UNDERLYING: reserve.underlyingAsset,
             A_TOKEN: reserve.aTokenAddress,
@@ -251,21 +251,8 @@ export async function generateProtocolV3Library(config: PoolConfig) {
 
   // generate assets library
   const assetsLibraryName = name + 'Assets';
-  const formattedReservesData = reservesData.map(({symbol, ...rest}) => {
-    return {
-      [`${symbol}_UNDERLYING`]: rest.UNDERLYING,
-      [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint256'},
-      [`${symbol}_A_TOKEN`]: rest.A_TOKEN,
-      [`${symbol}_V_TOKEN`]: rest.V_TOKEN,
-      [`${symbol}_S_TOKEN`]: rest.S_TOKEN,
-    };
-  });
-  appendFileSync(
-    `./src/${name}.sol`,
-    wrapIntoSolidityLibrary(
-      formattedReservesData.map((r) => generateSolidityConstants(provider, r)).flat(),
-      assetsLibraryName,
-    ),
-  );
+  const assetsLibrary = generateAssetsLibrary(provider, reservesData, assetsLibraryName);
+  appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
+  writeFileSync(`./src/${assetsLibraryName}.ts`, assetsLibrary.js);
   return name;
 }

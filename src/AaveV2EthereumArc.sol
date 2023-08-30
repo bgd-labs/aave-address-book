@@ -44,3 +44,5 @@ library AaveV2EthereumArc {
   // https://etherscan.io/address/0xF4a1F5fEA79C3609514A417425971FadC10eCfBE
   address internal constant PERMISSION_MANAGER = 0xF4a1F5fEA79C3609514A417425971FadC10eCfBE;
 }
+
+library AaveV2EthereumArcAssets {}

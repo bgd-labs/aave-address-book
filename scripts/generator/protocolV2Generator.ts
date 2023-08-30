@@ -3,7 +3,7 @@ import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
 import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
 import {RPC_PROVIDERS} from './clients';
 import {getChainName} from './chains';
-import {writeFileSync} from 'fs';
+import {appendFileSync, writeFileSync} from 'fs';
 import {
   generateJsConstants,
   generateSolidityConstants,
@@ -15,6 +15,7 @@ import {ADDRESS_PROVIDER_V2_ABI} from '../abi/address_provider_v2_abi';
 import {LENDING_POOL_V2_ABI} from '../abi/lending_pool_v2_abi';
 import {A_TOKEN_V2_ABI} from '../abi/aToken_v2_abi';
 import {INCENTIVES_CONTROLLER_ABI} from '../abi/incentivesController_abi';
+import {generateAssetsLibrary} from './assetsLibraryGenerator';
 
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -215,5 +216,11 @@ export async function generateProtocolV2Library(config: PoolConfig) {
       generateJsConstants(provider, {...addresses, ...config.additionalAddresses}).join('\n'),
     ),
   );
+
+  // generate assets library
+  const assetsLibraryName = name + 'Assets';
+  const assetsLibrary = generateAssetsLibrary(provider, reservesData, assetsLibraryName);
+  appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
+  writeFileSync(`./src/${assetsLibraryName}.ts`, assetsLibrary.js);
   return name;
 }
