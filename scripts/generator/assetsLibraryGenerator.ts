@@ -15,6 +15,8 @@ export function generateAssetsLibrary(
       [`${symbol}_A_TOKEN`]: rest.A_TOKEN,
       [`${symbol}_V_TOKEN`]: rest.V_TOKEN,
       [`${symbol}_S_TOKEN`]: rest.S_TOKEN,
+      [`${symbol}_ORACLE`]: rest.ORACLE,
+      [`${symbol}_INTEREST_RATE_STRATEGY`]: rest.INTEREST_RATE_STRATEGY,
     };
   });
 
