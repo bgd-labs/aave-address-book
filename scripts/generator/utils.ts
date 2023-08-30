@@ -18,7 +18,7 @@ export function prefixWithGeneratedWarning(code: string) {
 
 export function wrapIntoSolidityLibrary(code: string[], libraryName: string) {
   return `library ${libraryName} {
-    ${code.join('\n\n')}
+    ${code.join('\n')}
   }`;
 }
 

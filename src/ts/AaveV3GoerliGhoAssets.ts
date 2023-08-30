@@ -1,4 +1,4 @@
-export const AaveV3GeorliGhoAssets = {
+export const AaveV3GoerliGhoAssets = {
   AAVE: {
     decimals: 18,
     UNDERLYING: '0xE205181Eb3D7415f15377F79aA7769F846cE56DD',

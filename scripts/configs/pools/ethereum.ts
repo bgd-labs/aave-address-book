@@ -2,7 +2,7 @@ import {ChainId} from '../../generator/chains';
 import {PoolConfig} from '../types';
 
 export const goerliProtoV2Pool: PoolConfig = {
-  name: 'Georli',
+  name: 'Goerli',
   chainId: ChainId.goerli,
   POOL_ADDRESSES_PROVIDER: '0x5E52dEc931FFb32f609681B8438A51c675cc232d',
   additionalAddresses: {
@@ -16,7 +16,7 @@ export const goerliProtoV2Pool: PoolConfig = {
 };
 
 export const goerliGHOV3Pool: PoolConfig = {
-  name: 'GeorliGho',
+  name: 'GoerliGho',
   chainId: ChainId.goerli,
   POOL_ADDRESSES_PROVIDER: '0x4dd5ab8Fb385F2e12aDe435ba7AFA812F1d364D0',
   additionalAddresses: {
