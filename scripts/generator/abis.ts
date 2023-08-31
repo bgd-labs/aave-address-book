@@ -1,6 +1,7 @@
 import util from 'node:util';
 import {exec} from 'node:child_process';
 import {existsSync, mkdirSync, rmSync, writeFileSync} from 'node:fs';
+import {prefixWithGeneratedWarning} from './utils';
 
 const awaitableExec = util.promisify(exec);
 
@@ -20,7 +21,13 @@ export async function generateABIs() {
       const varName = `${INTERFACE}_ABI`;
       writeFileSync(
         `./src/ts/abis/${INTERFACE}.ts`,
-        `export const ${varName} = ${JSON.stringify(JSON.parse(stdout.trim()), null, 2)} as const;`,
+        prefixWithGeneratedWarning(
+          `export const ${varName} = ${JSON.stringify(
+            JSON.parse(stdout.trim()),
+            null,
+            2,
+          )} as const;`,
+        ),
       );
       return `export {${varName}} from './abis/${INTERFACE}';`;
     }),
