@@ -32,19 +32,21 @@ export function addressInfoToSolidityLibraryConstant(
 ) {
   if (typeof entry === 'object') {
     if (entry.type === 'uint256') {
-      return `${entry.type} internal constant ${key} = ${entry.value};`;
+      return `${entry.type} internal constant ${key} = ${entry.value};\n`;
     }
     const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);
     if (entry.type === 'address')
       return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(
         entry.value,
-      )};`;
+      )};\n`;
     return `// ${blockExplorerLinkComment}\n${entry.type} internal constant ${key} = ${
       entry.type
-    }(${getAddress(entry.value)});`;
+    }(${getAddress(entry.value)});\n`;
   }
   const blockExplorerLinkComment = getExplorerLink(chainId, entry);
-  return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(entry)};`;
+  return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(
+    entry,
+  )};\n`;
 }
 
 export function generateSolidityConstants({
@@ -62,16 +64,16 @@ export function generateSolidityConstants({
 export function addressToJsConstant(chainId: ChainId, key: string, entry: AddressInfo) {
   if (typeof entry === 'object') {
     if (entry.type === 'uint256') {
-      return `export const ${key} = ${entry.value};`;
+      return `export const ${key} = ${entry.value};\n`;
     }
     const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);
     return `// ${entry.type} ${blockExplorerLinkComment}\n export const ${key} = '${getAddress(
       entry.value,
-    )}';`;
+    )}';\n`;
   }
 
   const blockExplorerLinkComment = getExplorerLink(chainId, entry);
-  return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';`;
+  return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';\n`;
 }
 
 export function generateJsConstants({
