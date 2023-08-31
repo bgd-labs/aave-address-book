@@ -7,7 +7,7 @@ export enum ChainId {
   polygon = 137,
   mumbai = 80001,
   avalanche = 43114,
-  fuji = 43113, // avalanche test network
+  fuji = 43113,
   arbitrum_one = 42161,
   arbitrum_goerli = 421613,
   fantom = 250,
