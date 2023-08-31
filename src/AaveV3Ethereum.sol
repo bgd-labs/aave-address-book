@@ -102,9 +102,6 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C
   address internal constant WETH_GATEWAY = 0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C;
-
-  // https://etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
-  address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
 }
 
 library AaveV3EthereumAssets {

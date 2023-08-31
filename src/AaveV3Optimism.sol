@@ -95,9 +95,6 @@ library AaveV3Optimism {
 
   // https://explorer.optimism.io/address/0x76D3030728e52DEB8848d5613aBaDE88441cbc59
   address internal constant WETH_GATEWAY = 0x76D3030728e52DEB8848d5613aBaDE88441cbc59;
-
-  // https://explorer.optimism.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
-  address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
 }
 
 library AaveV3OptimismAssets {

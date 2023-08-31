@@ -95,9 +95,6 @@ library AaveV3Arbitrum {
 
   // https://arbiscan.io/address/0xB5Ee21786D28c5Ba61661550879475976B707099
   address internal constant WETH_GATEWAY = 0xB5Ee21786D28c5Ba61661550879475976B707099;
-
-  // https://arbiscan.io/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
-  address internal constant WITHDRAW_SWAP_ADAPTER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
 }
 
 library AaveV3ArbitrumAssets {
