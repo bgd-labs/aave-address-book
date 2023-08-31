@@ -4,7 +4,7 @@ import {esbuildPluginFilePathExtensions} from 'esbuild-plugin-file-path-extensio
 // https://github.com/egoist/tsup/issues/953
 export default await defineConfig({
   format: ['cjs', 'esm'],
-  entry: ['src/ts/*.ts'],
+  entry: ['src/**/*.ts'],
   outDir: './dist',
   bundle: true,
   sourcemap: true,
