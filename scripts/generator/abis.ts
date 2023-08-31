@@ -12,26 +12,21 @@ export async function generateABIs() {
     rmSync('./src/ts/abis', {recursive: true});
   }
   mkdirSync('./src/ts/abis');
-  const jsExports = await Promise.all(
-    INTERFACES.map(async (INTERFACE) => {
-      const {stdout, stderr} = await awaitableExec(`forge inspect ${INTERFACE} abi`);
-      if (stderr) {
-        throw new Error(`Failed to generate abi for ${INTERFACE}`);
-      }
-      const varName = `${INTERFACE}_ABI`;
-      writeFileSync(
-        `./src/ts/abis/${INTERFACE}.ts`,
-        prefixWithGeneratedWarning(
-          `export const ${varName} = ${JSON.stringify(
-            JSON.parse(stdout.trim()),
-            null,
-            2,
-          )} as const;`,
-        ),
-      );
-      return `export {${varName}} from './abis/${INTERFACE}';`;
-    }),
-  );
+  const jsExports: string[] = [];
+  for (const INTERFACE of INTERFACES) {
+    const {stdout, stderr} = await awaitableExec(`forge inspect ${INTERFACE} abi`);
+    if (stderr) {
+      throw new Error(`Failed to generate abi for ${INTERFACE}`);
+    }
+    const varName = `${INTERFACE}_ABI`;
+    writeFileSync(
+      `./src/ts/abis/${INTERFACE}.ts`,
+      prefixWithGeneratedWarning(
+        `export const ${varName} = ${JSON.stringify(JSON.parse(stdout.trim()), null, 2)} as const;`,
+      ),
+    );
+    jsExports.push(`export {${varName}} from './abis/${INTERFACE}';`);
+  }
   return {
     solidity: [],
     js: jsExports,
