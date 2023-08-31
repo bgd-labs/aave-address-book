@@ -74,7 +74,6 @@ async function getAdditionalTokenInfo(
         getImplementationStorageSlot(publicClient, reservesData[0].V_TOKEN),
         getImplementationStorageSlot(publicClient, reservesData[0].S_TOKEN),
       ]);
-
     const defaultATokenImplementation = bytes32toAddress(aTokenImplSlot);
 
     const aTokenRevision = Number(aTokenImplRevision);
