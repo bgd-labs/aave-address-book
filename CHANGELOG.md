@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/bgd-labs/aave-address-book/compare/v2.0.0...v2.1.0) (2023-08-31)
+
+
+### Features
+
+* add abis to js exports ([#229](https://github.com/bgd-labs/aave-address-book/issues/229)) ([bff33fc](https://github.com/bgd-labs/aave-address-book/commit/bff33fc65520796e2589554f0fd72c6aa8da93d0))
+* add explorer links ([#221](https://github.com/bgd-labs/aave-address-book/issues/221)) ([424d96d](https://github.com/bgd-labs/aave-address-book/commit/424d96df45bdb875946c3e9838e1ab8e2d3df611))
+* withdraw swap adapter addresses ([#224](https://github.com/bgd-labs/aave-address-book/issues/224)) ([cc08bf9](https://github.com/bgd-labs/aave-address-book/commit/cc08bf987fc10e45a0c71fec5f1ebb249ac9dbc4))
+
+
+### Bug Fixes
+
+* readd types to gov v2 ([#227](https://github.com/bgd-labs/aave-address-book/issues/227)) ([2a8da29](https://github.com/bgd-labs/aave-address-book/commit/2a8da29098d4bd007697e3464906861e0953fb1a))
+* resolve typo in arbitrum v3 ([#226](https://github.com/bgd-labs/aave-address-book/issues/226)) ([c739f31](https://github.com/bgd-labs/aave-address-book/commit/c739f315321270bf8f4be12908e152baef065c14))
+* update deps ([#230](https://github.com/bgd-labs/aave-address-book/issues/230)) ([6e54ce4](https://github.com/bgd-labs/aave-address-book/commit/6e54ce474886c29aa302f31581eceb22db3cc2b5))
+
 ## [2.0.0](https://github.com/bgd-labs/aave-address-book/compare/v1.34.0...v2.0.0) (2023-08-28)
 
 
