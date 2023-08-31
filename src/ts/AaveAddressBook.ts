@@ -62,3 +62,6 @@ export {AaveV3HarmonyAssets} from './AaveV3HarmonyAssets';
 export * as AaveMisc from './AaveMisc';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
+export {IAaveGovernanceV2_ABI} from './abis/IAaveGovernanceV2';
+export {ICollector_ABI} from './abis/ICollector';
+export {AggregatorInterface_ABI} from './abis/AggregatorInterface';

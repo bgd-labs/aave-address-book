@@ -39,6 +39,7 @@ import {governanceConfigArbitrum} from './configs/governance/arbitrum';
 import {governanceConfigAvalanche, governanceConfigFuji} from './configs/governance/avalanche';
 import {governanceConfigOptimism} from './configs/governance/optimism';
 import {governanceConfigMumbai, governanceConfigPolygon} from './configs/governance/polygon';
+import {generateABIs} from './generator/abis';
 
 async function main() {
   // cleanup ts artifacts
@@ -101,6 +102,8 @@ async function main() {
 
   const smImports = generateSafetyModule();
 
+  const abis = await generateABIs();
+
   const imports = [
     governanceNames,
     v2LibraryNames,
@@ -108,6 +111,7 @@ async function main() {
     miscImports,
     govImports,
     smImports,
+    abis,
   ].flat();
 
   const jsExports = imports.map((f) => f.js).flat();
