@@ -5,7 +5,16 @@ import {prefixWithGeneratedWarning} from './utils';
 
 const awaitableExec = util.promisify(exec);
 
-const INTERFACES = ['IAaveGovernanceV2', 'ICollector', 'AggregatorInterface'];
+const INTERFACES = [
+  'IAaveGovernanceV2',
+  'ICollector',
+  'AggregatorInterface',
+  'IPayloadsControllerCore',
+  'IVotingMachineWithProofs',
+  'IGovernanceCore',
+  'IVotingStrategy',
+  'IGovernancePowerStrategy',
+];
 
 export async function generateABIs() {
   if (existsSync('./src/ts/abis')) {
