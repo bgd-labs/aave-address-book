@@ -409,11 +409,7 @@ interface IVotingMachineWithProofs {
    * @param forVotes votes cast in favor of proposal
    * @param againstVotes votes cast against the proposal
    */
-  event ProposalResultsSent(
-    uint256 indexed proposalId,
-    uint256 forVotes,
-    uint256 againstVotes
-  );
+  event ProposalResultsSent(uint256 indexed proposalId, uint256 forVotes, uint256 againstVotes);
 
   /**
    * @notice emitted when a vote is registered
@@ -492,10 +488,7 @@ interface IVotingMachineWithProofs {
    * @notice method to get the vote submitted by representative type hash for permits digest
    * @return hash of vote submitted by representative string
    */
-  function VOTE_SUBMITTED_BY_REPRESENTATIVE_TYPEHASH()
-  external
-  view
-  returns (bytes32);
+  function VOTE_SUBMITTED_BY_REPRESENTATIVE_TYPEHASH() external view returns (bytes32);
 
   /**
    * @notice method to get the voting asset with slot type hash for permits digest
@@ -514,18 +507,14 @@ interface IVotingMachineWithProofs {
    * @param proposalId id of the proposal to retrieve
    * @return the proposal information without the users vote
    */
-  function getProposalById(
-    uint256 proposalId
-  ) external view returns (ProposalWithoutVotes memory);
+  function getProposalById(uint256 proposalId) external view returns (ProposalWithoutVotes memory);
 
   /**
    * @notice method to get the state of a proposal specified by its id
    * @param proposalId id of the proposal to retrieve the state of
    * @return the state of the proposal
    */
-  function getProposalState(
-    uint256 proposalId
-  ) external view returns (ProposalState);
+  function getProposalState(uint256 proposalId) external view returns (ProposalState);
 
   /**
    * @notice method to get the voting configuration of a proposal specified by its id
@@ -1052,19 +1041,13 @@ interface IVotingStrategy {
    * @notice method to get the exchange rate precision. Taken from stkTokenV3 contract
    * @return exchange rate precission
    */
-  function STK_AAVE_SLASHING_EXCHANGE_RATE_PRECISION()
-  external
-  view
-  returns (uint256);
+  function STK_AAVE_SLASHING_EXCHANGE_RATE_PRECISION() external view returns (uint256);
 
   /**
    * @notice method to get the slot of the stkAave exchange rate in the stkAave contract
    * @return stkAave exchange rate slot
    */
-  function STK_AAVE_SLASHING_EXCHANGE_RATE_SLOT()
-  external
-  view
-  returns (uint256);
+  function STK_AAVE_SLASHING_EXCHANGE_RATE_SLOT() external view returns (uint256);
 
   /**
    * @notice method to get the power scale factor of the delegated balances
@@ -1127,8 +1110,7 @@ library Errors {
   string public constant FAILED_ACTION_EXECUTION = '29'; // action failed to execute
   string public constant SHOULD_BE_AT_LEAST_ONE_EXECUTOR = '30'; // at least one executor is needed
   string public constant INVALID_EMPTY_TARGETS = '31'; // target of the payload execution must not be empty
-  string public constant EXECUTOR_WAS_NOT_SPECIFIED_FOR_REQUESTED_ACCESS_LEVEL =
-  '32'; // payload executor must be registered for the specified payload access level
+  string public constant EXECUTOR_WAS_NOT_SPECIFIED_FOR_REQUESTED_ACCESS_LEVEL = '32'; // payload executor must be registered for the specified payload access level
   string public constant PAYLOAD_NOT_IN_QUEUED_STATE = '33'; // payload must be en the queued state
   string public constant TIMELOCK_NOT_FINISHED = '34'; // delay has not passed before execution can be called
   string public constant PAYLOAD_NOT_IN_THE_CORRECT_STATE = '35'; // payload must be created but not executed yet to be able to be canceled
@@ -1194,4 +1176,103 @@ library Errors {
   string public constant MISSING_REPRESENTATION_ROOTS = '95'; // to represent a voter the representation roots need to be registered
   string public constant CALLER_IS_NOT_VOTER_REPRESENTATIVE = '96'; // to represent a voter, caller must be the stored representative
   string public constant VM_INVALID_GOVERNANCE_ADDRESS = '97'; // governance address can not be 0
+}
+
+interface IDataWarehouse {
+  struct SlotValue {
+    bool exists;
+    uint256 value;
+  }
+  /**
+   * @notice event emitted when a storage root has been processed successfully
+   * @param caller address that called the processStorageRoot method
+   * @param account address where the root is generated
+   * @param blockHash hash of the block where the root was generated
+   */
+  event StorageRootProcessed(
+    address indexed caller,
+    address indexed account,
+    bytes32 indexed blockHash
+  );
+
+  /**
+   * @notice event emitted when a storage root has been processed successfully
+   * @param caller address that called the processStorageSlot method
+   * @param account address where the slot is processed
+   * @param blockHash hash of the block where the storage proof was generated
+   * @param slot storage location to search
+   * @param value storage information on the specified location
+   */
+  event StorageSlotProcessed(
+    address indexed caller,
+    address indexed account,
+    bytes32 indexed blockHash,
+    bytes32 slot,
+    uint256 value
+  );
+
+  /**
+   * @notice method to get the storage roots of an account (token) in a certain block hash
+   * @param account address of the token to get the storage roots from
+   * @param blockHash hash of the block from where the roots are generated
+   * @return state root hash of the account on the block hash specified
+   */
+  function getStorageRoots(address account, bytes32 blockHash) external view returns (bytes32);
+
+  /**
+   * @notice method to process the storage root from an account on a block hash.
+   * @param account address of the token to get the storage roots from
+   * @param blockHash hash of the block from where the roots are generated
+   * @param blockHeaderRLP rlp encoded block header. At same block where the block hash was taken
+   * @param accountStateProofRLP rlp encoded account state proof, taken in same block as block hash
+   * @return the storage root
+   */
+  function processStorageRoot(
+    address account,
+    bytes32 blockHash,
+    bytes memory blockHeaderRLP,
+    bytes memory accountStateProofRLP
+  ) external returns (bytes32);
+
+  /**
+   * @notice method to get the storage value at a certain slot and block hash for a certain address
+   * @param account address of the token to get the storage roots from
+   * @param blockHash hash of the block from where the roots are generated
+   * @param slot hash of the explicit storage placement where the value to get is found.
+   * @param storageProof generated proof containing the storage, at block hash
+   * @return an object containing the slot value at the specified storage slot
+   */
+  function getStorage(
+    address account,
+    bytes32 blockHash,
+    bytes32 slot,
+    bytes memory storageProof
+  ) external view returns (SlotValue memory);
+
+  /**
+   * @notice method to register the storage value at a certain slot and block hash for a certain address
+   * @param account address of the token to get the storage roots from
+   * @param blockHash hash of the block from where the roots are generated
+   * @param slot hash of the explicit storage placement where the value to get is found.
+   * @param storageProof generated proof containing the storage, at block hash
+   */
+  function processStorageSlot(
+    address account,
+    bytes32 blockHash,
+    bytes32 slot,
+    bytes calldata storageProof
+  ) external;
+
+  /**
+   * @notice method to get the value from storage at a certain block hash, previously registered.
+   * @param blockHash hash of the block from where the roots are generated
+   * @param account address of the token to get the storage roots from
+   * @param slot hash of the explicit storage placement where the value to get is found.
+   * @return numeric slot value of the slot. The value must be decoded to get the actual stored information
+   */
+  function getRegisteredSlot(
+    bytes32 blockHash,
+    address account,
+    bytes32 slot
+  ) external view returns (uint256);
 }

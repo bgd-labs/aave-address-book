@@ -14,6 +14,7 @@ const INTERFACES = [
   'IGovernanceCore',
   'IVotingStrategy',
   'IGovernancePowerStrategy',
+  'IDataWarehouse',
 ];
 
 export async function generateABIs() {
