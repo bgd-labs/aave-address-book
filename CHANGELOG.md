@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/bgd-labs/aave-address-book/compare/v2.1.0...v2.2.0) (2023-09-05)
+
+
+### Features
+
+* added gov v3 interfaces and error lib ([#233](https://github.com/bgd-labs/aave-address-book/issues/233)) ([917bb9e](https://github.com/bgd-labs/aave-address-book/commit/917bb9ef1cc3a0c983d0c5883d3c6772a46cb43e))
+* Import Error Library ([#232](https://github.com/bgd-labs/aave-address-book/issues/232)) ([f17fa5f](https://github.com/bgd-labs/aave-address-book/commit/f17fa5f262d20262e6177ccdd79b0676851c6c28))
+
 ## [2.1.0](https://github.com/bgd-labs/aave-address-book/compare/v2.0.0...v2.1.0) (2023-08-31)
 
 
