@@ -10,6 +10,50 @@ export const IGovernanceCore_ABI = [
         type: 'uint256',
       },
       {
+        indexed: true,
+        internalType: 'address',
+        name: 'to',
+        type: 'address',
+      },
+      {
+        indexed: false,
+        internalType: 'uint256',
+        name: 'cancellationFee',
+        type: 'uint256',
+      },
+      {
+        indexed: true,
+        internalType: 'bool',
+        name: 'success',
+        type: 'bool',
+      },
+    ],
+    name: 'CancellationFeeRedeemed',
+    type: 'event',
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: false,
+        internalType: 'uint256',
+        name: 'cancellationFee',
+        type: 'uint256',
+      },
+    ],
+    name: 'CancellationFeeUpdated',
+    type: 'event',
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: 'uint256',
+        name: 'proposalId',
+        type: 'uint256',
+      },
+      {
         indexed: false,
         internalType: 'uint40',
         name: 'payloadId',
@@ -168,6 +212,31 @@ export const IGovernanceCore_ABI = [
     inputs: [
       {
         indexed: true,
+        internalType: 'address',
+        name: 'voter',
+        type: 'address',
+      },
+      {
+        indexed: true,
+        internalType: 'address',
+        name: 'representative',
+        type: 'address',
+      },
+      {
+        indexed: true,
+        internalType: 'uint256',
+        name: 'chainId',
+        type: 'uint256',
+      },
+    ],
+    name: 'RepresentativeUpdated',
+    type: 'event',
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
         internalType: 'uint256',
         name: 'proposalId',
         type: 'uint256',
@@ -301,6 +370,19 @@ export const IGovernanceCore_ABI = [
         internalType: 'uint256',
         name: '',
         type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'CANCELLATION_FEE_COLLECTOR',
+    outputs: [
+      {
+        internalType: 'address',
+        name: '',
+        type: 'address',
       },
     ],
     stateMutability: 'view',
@@ -471,7 +553,7 @@ export const IGovernanceCore_ABI = [
         type: 'uint256',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'payable',
     type: 'function',
   },
   {
@@ -485,6 +567,19 @@ export const IGovernanceCore_ABI = [
     name: 'executeProposal',
     outputs: [],
     stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'getCancellationFee',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
     type: 'function',
   },
   {
@@ -578,6 +673,11 @@ export const IGovernanceCore_ABI = [
             type: 'uint128',
           },
           {
+            internalType: 'uint256',
+            name: 'cancellationFee',
+            type: 'uint256',
+          },
+          {
             components: [
               {
                 internalType: 'uint256',
@@ -640,6 +740,54 @@ export const IGovernanceCore_ABI = [
         internalType: 'uint256',
         name: '',
         type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'address',
+        name: 'voter',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: 'chainId',
+        type: 'uint256',
+      },
+    ],
+    name: 'getRepresentativeByChain',
+    outputs: [
+      {
+        internalType: 'address',
+        name: '',
+        type: 'address',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
+        internalType: 'address',
+        name: 'representative',
+        type: 'address',
+      },
+      {
+        internalType: 'uint256',
+        name: 'chainId',
+        type: 'uint256',
+      },
+    ],
+    name: 'getRepresentedVotersByChain',
+    outputs: [
+      {
+        internalType: 'address[]',
+        name: '',
+        type: 'address[]',
       },
     ],
     stateMutability: 'view',
@@ -749,6 +897,19 @@ export const IGovernanceCore_ABI = [
   {
     inputs: [
       {
+        internalType: 'uint256[]',
+        name: 'proposalIds',
+        type: 'uint256[]',
+      },
+    ],
+    name: 'redeemCancellationFee',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [
+      {
         internalType: 'address[]',
         name: 'votingPortals',
         type: 'address[]',
@@ -834,33 +995,36 @@ export const IGovernanceCore_ABI = [
     inputs: [
       {
         internalType: 'uint256',
-        name: 'proposalId',
+        name: 'cancellationFee',
         type: 'uint256',
       },
-      {
-        internalType: 'bool',
-        name: 'support',
-        type: 'bool',
-      },
+    ],
+    name: 'updateCancellationFee',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [
       {
         components: [
           {
             internalType: 'address',
-            name: 'underlyingAsset',
+            name: 'representative',
             type: 'address',
           },
           {
-            internalType: 'uint128',
-            name: 'slot',
-            type: 'uint128',
+            internalType: 'uint256',
+            name: 'chainId',
+            type: 'uint256',
           },
         ],
-        internalType: 'struct IVotingMachineWithProofs.VotingAssetWithSlot[]',
-        name: 'votingAssetsWithSlot',
+        internalType: 'struct IGovernanceCore.RepresentativeInput[]',
+        name: 'representatives',
         type: 'tuple[]',
       },
     ],
-    name: 'voteViaPortal',
+    name: 'updateRepresentativesForChain',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',

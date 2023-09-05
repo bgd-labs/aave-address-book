@@ -638,6 +638,16 @@ interface IVotingMachineWithProofs {
 
 interface IGovernanceCore {
   /**
+   * @notice Object with the necessary information of a representative
+   * @param representative address that represents the voter
+   * @param chainId id of the chain where the representative is on
+   */
+  struct RepresentativeInput {
+    address representative;
+    uint256 chainId;
+  }
+
+  /**
    * @notice Object storing the vote configuration for a specific access level
    * @param coolDownBeforeVotingStart number of seconds indicating how much time should pass before proposal will be moved to vote
    * @param votingDuration number of seconds indicating the duration of a vote
@@ -684,6 +694,8 @@ interface IGovernanceCore {
 
   /**
    * @notice enum storing the different states of a proposal
+   * @dev State enum defines the state machine of a proposal so the order on which the state is defined is important.
+          Check logic correctness if new states are added / removed
    */
   enum State {
     Null, // proposal does not exists
@@ -711,6 +723,7 @@ interface IGovernanceCore {
    * @param ipfsHash ipfs has containing the proposal metadata information
    * @param forVotes number of votes in favor of the proposal
    * @param againstVotes number of votes against the proposal
+   * @param cancellationFee amount in eth that will be retained if proposal is cancelled
    * @param payloads list of objects containing the payload information necessary for execution
    */
   struct Proposal {
@@ -727,6 +740,7 @@ interface IGovernanceCore {
     bytes32 ipfsHash;
     uint128 forVotes;
     uint128 againstVotes;
+    uint256 cancellationFee;
     PayloadsControllerUtils.Payload[] payloads;
   }
 
@@ -847,6 +861,62 @@ interface IGovernanceCore {
   );
 
   /**
+   * @notice emitted when the cancellation fee is updated
+   * @param cancellationFee amount of the new cancellation fee
+   */
+  event CancellationFeeUpdated(uint256 cancellationFee);
+
+  /**
+   * @notice emitted when the cancellation fee is redeemed
+   * @param proposalId id of the proposal the fee was redeemed from
+   * @param to address that will receive the cancellation fee
+   * @param cancellationFee amount of the cancellation fee redeemed
+   * @param success flag indicating if the transfer was successful or not
+   */
+  event CancellationFeeRedeemed(
+    uint256 indexed proposalId,
+    address indexed to,
+    uint256 cancellationFee,
+    bool indexed success
+  );
+
+  /**
+   * @notice method to get the Cancellation Fee Collector address
+   * @return cancellation fee collector address
+   */
+  function CANCELLATION_FEE_COLLECTOR() external view returns (address);
+
+  /**
+   * @notice method to update the cancellation fee
+   * @param cancellationFee the fee amount to collateralize against a proposal cancellation
+   */
+  function updateCancellationFee(uint256 cancellationFee) external;
+
+  /**
+   * @notice method to get the cancellation fee
+   * @return cancellation fee amount
+   */
+  function getCancellationFee() external view returns (uint256);
+
+  /**
+   * @notice method to redeem the cancellation fee from a proposal
+   * @param proposalIds array of ids of the proposals to redeem the cancellation fee from
+   */
+  function redeemCancellationFee(uint256[] calldata proposalIds) external;
+
+  /**
+   * @notice emitted when a voter updates its representative
+   * @param voter address of the voter that updates
+   * @param representative address of the chosen representative
+   * @param chainId id of the chain where representative is representing the voter on
+   */
+  event RepresentativeUpdated(
+    address indexed voter,
+    address indexed representative,
+    uint256 indexed chainId
+  );
+
+  /**
    * @notice method to get the number of registered voting portals
    * @return number of registered voting portals
    */
@@ -888,7 +958,7 @@ interface IGovernanceCore {
     PayloadsControllerUtils.Payload[] calldata payloads,
     address votingPortal,
     bytes32 ipfsHash
-  ) external returns (uint256);
+  ) external payable returns (uint256);
 
   /**
    * @notice executes a proposal, can be called by anyone if proposal in Queued state
@@ -1018,16 +1088,28 @@ interface IGovernanceCore {
   function activateVoting(uint256 proposalId) external;
 
   /**
-   * @notice method that enables smart contracts that are on governance chain to vote on voting machine
-   * @param proposalId id of the proposal to vote of
-   * @param support boolean indicating if the vote is in favor or against the proposal
-   * @param votingAssetsWithSlot list of token addresses with the base storage slots the voter wants to vote with
+   * @notice method to get the representative of a voter on a chain
+   * @param voter address of the voter
+   * @param chainId id of the chain to get the representative from
+   * @return address of the representative of the voter on chainId
    */
-  function voteViaPortal(
-    uint256 proposalId,
-    bool support,
-    IVotingMachineWithProofs.VotingAssetWithSlot[] memory votingAssetsWithSlot
-  ) external;
+  function getRepresentativeByChain(address voter, uint256 chainId) external view returns (address);
+
+  /**
+   * @notice method to update the representative of a voter on certain chain.
+   * @param representatives Array of objects with the representative information
+   */
+  function updateRepresentativesForChain(RepresentativeInput[] calldata representatives) external;
+
+  /**
+   * @notice method to get the voters a representative is representing
+   * @param representative address of the representative
+   * @param chainId id of the chain to search for represented voters
+   */
+  function getRepresentedVotersByChain(
+    address representative,
+    uint256 chainId
+  ) external view returns (address[] memory);
 }
 
 interface IVotingStrategy {
