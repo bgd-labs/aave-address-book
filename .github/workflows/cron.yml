@@ -18,12 +18,21 @@ jobs:
   check-proposals:
     name: Check if library is up to date
     runs-on: ubuntu-latest
+    env:
+      FOUNDRY_PROFILE: ci
     permissions:
       pull-requests: write
       contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
 
       - uses: actions/setup-node@v3
         with:
@@ -34,7 +43,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Generate library
-        run: yarn generate
+        run: yarn start
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@712add83f26c1e359c046a6ca3dd677fb7017626

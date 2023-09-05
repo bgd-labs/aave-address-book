@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/bgd-labs/aave-address-book/compare/v2.1.0...v2.2.0) (2023-09-05)
+
+
+### Features
+
+* added gov v3 interfaces and error lib ([#233](https://github.com/bgd-labs/aave-address-book/issues/233)) ([917bb9e](https://github.com/bgd-labs/aave-address-book/commit/917bb9ef1cc3a0c983d0c5883d3c6772a46cb43e))
+* Import Error Library ([#232](https://github.com/bgd-labs/aave-address-book/issues/232)) ([f17fa5f](https://github.com/bgd-labs/aave-address-book/commit/f17fa5f262d20262e6177ccdd79b0676851c6c28))
+
+## [2.1.0](https://github.com/bgd-labs/aave-address-book/compare/v2.0.0...v2.1.0) (2023-08-31)
+
+
+### Features
+
+* add abis to js exports ([#229](https://github.com/bgd-labs/aave-address-book/issues/229)) ([bff33fc](https://github.com/bgd-labs/aave-address-book/commit/bff33fc65520796e2589554f0fd72c6aa8da93d0))
+* add explorer links ([#221](https://github.com/bgd-labs/aave-address-book/issues/221)) ([424d96d](https://github.com/bgd-labs/aave-address-book/commit/424d96df45bdb875946c3e9838e1ab8e2d3df611))
+* withdraw swap adapter addresses ([#224](https://github.com/bgd-labs/aave-address-book/issues/224)) ([cc08bf9](https://github.com/bgd-labs/aave-address-book/commit/cc08bf987fc10e45a0c71fec5f1ebb249ac9dbc4))
+
+
+### Bug Fixes
+
+* readd types to gov v2 ([#227](https://github.com/bgd-labs/aave-address-book/issues/227)) ([2a8da29](https://github.com/bgd-labs/aave-address-book/commit/2a8da29098d4bd007697e3464906861e0953fb1a))
+* resolve typo in arbitrum v3 ([#226](https://github.com/bgd-labs/aave-address-book/issues/226)) ([c739f31](https://github.com/bgd-labs/aave-address-book/commit/c739f315321270bf8f4be12908e152baef065c14))
+* update deps ([#230](https://github.com/bgd-labs/aave-address-book/issues/230)) ([6e54ce4](https://github.com/bgd-labs/aave-address-book/commit/6e54ce474886c29aa302f31581eceb22db3cc2b5))
+
+## [2.0.0](https://github.com/bgd-labs/aave-address-book/compare/v1.34.0...v2.0.0) (2023-08-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* the format of assets in js was unnecessarily hard to consume, this pr changes it to a object like structure.
+
+### Features
+
+* js assets exports ([#219](https://github.com/bgd-labs/aave-address-book/issues/219)) ([cab5960](https://github.com/bgd-labs/aave-address-book/commit/cab5960b29ed6e20f5a760eef1a61765b7704b10))
+* testnet updates ([#218](https://github.com/bgd-labs/aave-address-book/issues/218)) ([456fab9](https://github.com/bgd-labs/aave-address-book/commit/456fab9620d573bf9ae03d753d0aa6c51f4b95c2))
+
+## [1.34.0](https://github.com/bgd-labs/aave-address-book/compare/v1.33.0...v1.34.0) (2023-08-24)
+
+
+### Features
+
+* aave misc js exports ([#210](https://github.com/bgd-labs/aave-address-book/issues/210)) ([4112844](https://github.com/bgd-labs/aave-address-book/commit/4112844dfc027fa538ba2cf2d8b97cd69f7c4903))
+* add Scroll Sepolia testnet ([#215](https://github.com/bgd-labs/aave-address-book/issues/215)) ([a220f6a](https://github.com/bgd-labs/aave-address-book/commit/a220f6afc7f85b6113f02e573007d4d22cee6c6c))
+
+
+### Bug Fixes
+
+* cleanup dependencies ([#213](https://github.com/bgd-labs/aave-address-book/issues/213)) ([815d1cc](https://github.com/bgd-labs/aave-address-book/commit/815d1cc59d671a23e95e3cf7479cf170ba9ddeba))
+
 ## [1.33.0](https://github.com/bgd-labs/aave-address-book/compare/v1.32.0...v1.33.0) (2023-08-18)
 
 
