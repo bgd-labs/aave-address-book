@@ -71,3 +71,4 @@ export {IGovernanceCore_ABI} from './abis/IGovernanceCore';
 export {IVotingStrategy_ABI} from './abis/IVotingStrategy';
 export {IGovernancePowerStrategy_ABI} from './abis/IGovernancePowerStrategy';
 export {IDataWarehouse_ABI} from './abis/IDataWarehouse';
+export {IExecutorWithTimelock_ABI} from './abis/IExecutorWithTimelock';

@@ -15,6 +15,7 @@ const INTERFACES = [
   'IVotingStrategy',
   'IGovernancePowerStrategy',
   'IDataWarehouse',
+  'IExecutorWithTimelock',
 ];
 
 export async function generateABIs() {
