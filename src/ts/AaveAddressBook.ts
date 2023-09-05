@@ -72,3 +72,7 @@ export {IVotingStrategy_ABI} from './abis/IVotingStrategy';
 export {IGovernancePowerStrategy_ABI} from './abis/IGovernancePowerStrategy';
 export {IDataWarehouse_ABI} from './abis/IDataWarehouse';
 export {IExecutorWithTimelock_ABI} from './abis/IExecutorWithTimelock';
+export {IERC20_ABI} from './abis/IERC20';
+export {IAToken_ABI} from './abis/IAToken';
+export {IDefaultInterestRateStrategy_ABI} from './abis/IDefaultInterestRateStrategy';
+export {IAaveOracle_ABI} from './abis/IAaveOracle';
