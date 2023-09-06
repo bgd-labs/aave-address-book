@@ -371,3 +371,11 @@ library AaveV3OptimismAssets {
   address internal constant rETH_INTEREST_RATE_STRATEGY =
     0x3B57B081dA6Af5e2759A57bD3211932Cb6176997;
 }
+
+library AaveV3OptimismEModes {
+  uint256 internal constant NONE = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+
+  uint256 internal constant ETH_CORRELATED = 2;
+}

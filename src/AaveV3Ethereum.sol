@@ -581,3 +581,9 @@ library AaveV3EthereumAssets {
   address internal constant sDAI_INTEREST_RATE_STRATEGY =
     0xdef8F50155A6cf21181E29E400E8CffAE2d50968;
 }
+
+library AaveV3EthereumEModes {
+  uint256 internal constant NONE = 0;
+
+  uint256 internal constant ETH_CORRELATED = 1;
+}

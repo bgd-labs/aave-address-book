@@ -242,3 +242,9 @@ library AaveV3ArbitrumGoerliAssets {
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0x1949f5dE0F6D5a57918734B659c112616fCb7af7;
 }
+
+library AaveV3ArbitrumGoerliEModes {
+  uint256 internal constant NONE = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+}

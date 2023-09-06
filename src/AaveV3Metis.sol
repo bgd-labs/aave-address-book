@@ -187,3 +187,7 @@ library AaveV3MetisAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0x83e654d42f437915bf849dE04c19AAd8C5e8c01E;
 }
+
+library AaveV3MetisEModes {
+  uint256 internal constant NONE = 0;
+}

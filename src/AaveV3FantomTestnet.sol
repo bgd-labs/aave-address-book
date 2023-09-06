@@ -280,3 +280,9 @@ library AaveV3FantomTestnetAssets {
   address internal constant SUSHI_INTEREST_RATE_STRATEGY =
     0x9060C6E714BA5C3A46665599103989778a736D4B;
 }
+
+library AaveV3FantomTestnetEModes {
+  uint256 internal constant NONE = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+}

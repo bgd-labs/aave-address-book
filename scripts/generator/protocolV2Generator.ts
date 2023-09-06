@@ -229,17 +229,14 @@ export async function generateProtocolV2Library(config: PoolConfig) {
   const assetsLibraryName = name + 'Assets';
   const assetsLibrary = generateAssetsLibrary(config.chainId, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
-  writeFileSync(`./src/ts/${assetsLibraryName}.ts`, assetsLibrary.js);
+  appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
   // appendFileSync(`./src/ts/AaveAddressBook.ts`, `export {${name}} from './${name}';\r\n`);
   // appendFileSync(
   //   `./src/ts/AaveAddressBook.ts`,
   //   `export {${assetsLibraryName}} from './${assetsLibraryName}';\r\n`,
   // );
   return {
-    js: [
-      `export * as ${name} from './${name}';`,
-      `export {${assetsLibraryName}} from './${assetsLibraryName}';`,
-    ],
+    js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],
   };
 }

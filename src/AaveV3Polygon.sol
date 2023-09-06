@@ -514,3 +514,13 @@ library AaveV3PolygonAssets {
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E;
 }
+
+library AaveV3PolygonEModes {
+  uint256 internal constant NONE = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+
+  uint256 internal constant MATIC_CORRELATED = 2;
+
+  uint256 internal constant ETH_CORRELATED = 3;
+}

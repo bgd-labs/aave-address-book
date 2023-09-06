@@ -404,3 +404,9 @@ library AaveV3MumbaiAssets {
   address internal constant AGEUR_INTEREST_RATE_STRATEGY =
     0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25;
 }
+
+library AaveV3MumbaiEModes {
+  uint256 internal constant NONE = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+}

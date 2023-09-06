@@ -239,3 +239,9 @@ library AaveV3FujiAssets {
   address internal constant WAVAX_INTEREST_RATE_STRATEGY =
     0xeA461FF7c4e89150348b363F886b72c4E4d30Bd9;
 }
+
+library AaveV3FujiEModes {
+  uint256 internal constant NONE = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+}

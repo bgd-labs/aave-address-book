@@ -1,5 +1,5 @@
 import {Hex, PublicClient, getContract, zeroAddress} from 'viem';
-import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
+import {AddressInfo, Addresses, PoolConfig, ReserveData} from '../configs/types';
 import {ADDRESS_PROVIDER_V3_ABI} from '../abi/address_provider_v3_abi';
 import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
 import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
@@ -13,6 +13,7 @@ import {
   addressOrZero,
   bytes32toAddress,
   generateJsConstants,
+  generateJsObject,
   generateSolidityConstants,
   getImplementationStorageSlot,
   prefixWithGeneratedWarning,
@@ -20,6 +21,7 @@ import {
   wrapIntoSolidityLibrary,
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
+import {ChainId} from './chains';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -111,8 +113,10 @@ async function getAdditionalTokenInfo(
   };
 }
 
-export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addresses> {
-  const publicClient = RPC_PROVIDERS[pool.chainId];
+export async function getPoolV3Addresses(
+  pool: PoolConfig,
+): Promise<PoolV3Addresses & {eModes: Map<number, string>}> {
+  const publicClient: PublicClient = RPC_PROVIDERS[pool.chainId];
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
     abi: ADDRESS_PROVIDER_V3_ABI,
@@ -154,6 +158,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
     }
 
     let reservesData: PoolV3Addresses['reservesData'] = [];
+    const eModes = new Map<number, string>();
     // workaround, fix before merge
     // didn't find all the ui pool data provider addresses, so currently there are gaps
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
@@ -174,6 +179,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
       )[0];
       reservesData = await Promise.all(
         data.map(async (reserve) => {
+          eModes.set(reserve.eModeCategoryId, reserve.eModeLabel);
           const result: ReserveData = {
             symbol: reserve.symbol,
             decimals: Number(reserve.decimals),
@@ -196,6 +202,7 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
     const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(publicClient, pool, reservesData);
 
     return {
+      eModes,
       POOL_ADDRESSES_PROVIDER: {
         value: pool.POOL_ADDRESSES_PROVIDER,
         type: 'IPoolAddressesProvider',
@@ -224,8 +231,29 @@ export async function getPoolV3Addresses(pool: PoolConfig): Promise<PoolV3Addres
   }
 }
 
+function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryName: string) {
+  const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
+  const formatted = sorted.reduce((acc, [value, label]) => {
+    acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'NONE'}`] = {
+      value,
+      type: 'uint256',
+    };
+    return acc;
+  }, {} as Addresses);
+  return {
+    solidity: wrapIntoSolidityLibrary(
+      generateSolidityConstants({
+        chainId,
+        addresses: formatted,
+      }),
+      libraryName,
+    ),
+    js: `export const E_MODES = ${generateJsObject({addresses: formatted})}\n`,
+  };
+}
+
 export async function generateProtocolV3Library(config: PoolConfig) {
-  const {reservesData, ...addresses} = await getPoolV3Addresses(config);
+  const {reservesData, eModes, ...addresses} = await getPoolV3Addresses(config);
   const name = `AaveV3${config.name}`;
 
   // generate main library
@@ -263,12 +291,16 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   const assetsLibraryName = name + 'Assets';
   const assetsLibrary = generateAssetsLibrary(config.chainId, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
-  writeFileSync(`./src/ts/${assetsLibraryName}.ts`, assetsLibrary.js);
+  appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
+
+  // generate emodes library
+  const eModesLibraryName = name + 'EModes';
+  const eModesLibrary = generateEmodes(config.chainId, eModes, eModesLibraryName);
+  appendFileSync(`./src/${name}.sol`, eModesLibrary.solidity);
+  appendFileSync(`./src/ts/${name}.ts`, eModesLibrary.js);
+
   return {
-    js: [
-      `export * as ${name} from './${name}';`,
-      `export {${assetsLibraryName}} from './${assetsLibraryName}';`,
-    ],
+    js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],
   };
 }
