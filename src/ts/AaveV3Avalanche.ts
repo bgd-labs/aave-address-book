@@ -210,7 +210,7 @@ export const ASSETS = {
   },
 };
 export const E_MODES = {
-  None: 0,
+  NONE: 0,
   STABLECOINS: 1,
   AVAX_CORRELATED: 2,
 };

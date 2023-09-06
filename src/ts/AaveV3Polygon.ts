@@ -284,7 +284,7 @@ export const ASSETS = {
   },
 };
 export const E_MODES = {
-  None: 0,
+  NONE: 0,
   STABLECOINS: 1,
   MATIC_CORRELATED: 2,
   ETH_CORRELATED: 3,

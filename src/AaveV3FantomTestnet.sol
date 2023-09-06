@@ -282,7 +282,7 @@ library AaveV3FantomTestnetAssets {
 }
 
 library AaveV3FantomTestnetEModes {
-  uint256 internal constant None = 0;
+  uint256 internal constant NONE = 0;
 
   uint256 internal constant STABLECOINS = 1;
 }

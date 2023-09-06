@@ -150,7 +150,7 @@ library AaveV3BaseAssets {
 }
 
 library AaveV3BaseEModes {
-  uint256 internal constant None = 0;
+  uint256 internal constant NONE = 0;
 
   uint256 internal constant ETH_CORRELATED = 1;
 }

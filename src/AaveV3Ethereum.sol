@@ -583,7 +583,7 @@ library AaveV3EthereumAssets {
 }
 
 library AaveV3EthereumEModes {
-  uint256 internal constant None = 0;
+  uint256 internal constant NONE = 0;
 
   uint256 internal constant ETH_CORRELATED = 1;
 }

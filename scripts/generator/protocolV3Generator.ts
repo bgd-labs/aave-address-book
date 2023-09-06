@@ -234,7 +234,7 @@ export async function getPoolV3Addresses(
 function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryName: string) {
   const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
   const formatted = sorted.reduce((acc, [value, label]) => {
-    acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'None'}`] = {
+    acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'NONE'}`] = {
       value,
       type: 'uint256',
     };
