@@ -11,9 +11,7 @@ export type AddressInfo = Hex | KnownInterfaces;
 
 export type Addresses = Record<Uppercase<string>, AddressInfo>;
 
-export interface GovernanceConfig {
-  name: string;
-  CHAIN_ID: ChainId;
+export type GovernanceV3Addresses = {
   CROSS_CHAIN_CONTROLLER?: Hex;
   GOVERNANCE?: Hex;
   VOTING_MACHINE?: Hex;
@@ -21,6 +19,12 @@ export interface GovernanceConfig {
   VOTING_PORTAL_ETH_ETH?: Hex;
   VOTING_PORTAL_ETH_AVAX?: Hex;
   VOTING_PORTAL_ETH_POL?: Hex;
+};
+
+export interface GovernanceConfig {
+  name: string;
+  CHAIN_ID: ChainId;
+  ADDRESSES: GovernanceV3Addresses;
 }
 
 export interface PoolConfig {

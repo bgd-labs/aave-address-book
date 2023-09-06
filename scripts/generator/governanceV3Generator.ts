@@ -1,6 +1,6 @@
 import {writeFileSync} from 'fs';
 import {Hex, PublicClient, getContract} from 'viem';
-import {GovernanceConfig} from '../configs/types';
+import {Addresses, GovernanceConfig} from '../configs/types';
 import {PAYLOADS_CONTROLLER_ABI} from '../abi/payloadsController';
 import {RPC_PROVIDERS} from './clients';
 import {
@@ -40,15 +40,22 @@ async function fetchV3ExecutorAddresses(
   };
 }
 
-async function getGovernanceV3Addresses({CHAIN_ID, name, ...config}: GovernanceConfig) {
-  if (config.PAYLOADS_CONTROLLER) {
+async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig) {
+  const addresses: Addresses = {...ADDRESSES};
+  if (addresses.GOVERNANCE)
+    addresses.GOVERNANCE = {value: addresses.GOVERNANCE, type: 'IGovernanceCore'};
+  if (addresses.PAYLOADS_CONTROLLER) {
     const executors = await fetchV3ExecutorAddresses(
       RPC_PROVIDERS[CHAIN_ID],
-      config.PAYLOADS_CONTROLLER,
+      addresses.PAYLOADS_CONTROLLER as Hex,
     );
-    return {...config, ...executors};
+    addresses.PAYLOADS_CONTROLLER = {
+      value: addresses.PAYLOADS_CONTROLLER,
+      type: 'IPayloadsControllerCore',
+    };
+    return {...addresses, ...executors};
   }
-  return config;
+  return addresses;
 }
 
 export async function generateGovernanceLibrary(config: GovernanceConfig) {
@@ -59,10 +66,11 @@ export async function generateGovernanceLibrary(config: GovernanceConfig) {
     `./src/${name}.sol`,
     prefixWithPragma(
       prefixWithGeneratedWarning(
-        wrapIntoSolidityLibrary(
-          generateSolidityConstants({chainId: config.CHAIN_ID, addresses}),
-          name,
-        ),
+        `import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';\n` +
+          wrapIntoSolidityLibrary(
+            generateSolidityConstants({chainId: config.CHAIN_ID, addresses}),
+            name,
+          ),
       ),
     ),
   );

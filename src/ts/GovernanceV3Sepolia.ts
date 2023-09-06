@@ -1,13 +1,13 @@
 // https://sepolia.etherscan.io/address/0xF57D158aA44B95E657bA4697fD69A2B9037bd723
 export const CROSS_CHAIN_CONTROLLER = '0xF57D158aA44B95E657bA4697fD69A2B9037bd723';
 
-// https://sepolia.etherscan.io/address/0x2B2fa1A67964613F8056FB8612494893A2B90DCa
+// IGovernanceCore https://sepolia.etherscan.io/address/0x2B2fa1A67964613F8056FB8612494893A2B90DCa
 export const GOVERNANCE = '0x2B2fa1A67964613F8056FB8612494893A2B90DCa';
 
 // https://sepolia.etherscan.io/address/0x374A77D3cC77f09D42DE5F322cc47cb4ef0792a0
 export const VOTING_MACHINE = '0x374A77D3cC77f09D42DE5F322cc47cb4ef0792a0';
 
-// https://sepolia.etherscan.io/address/0xF3a4C3BDa8d54971aA5cEbdeF3326d9ea4Fd8262
+// IPayloadsControllerCore https://sepolia.etherscan.io/address/0xF3a4C3BDa8d54971aA5cEbdeF3326d9ea4Fd8262
 export const PAYLOADS_CONTROLLER = '0xF3a4C3BDa8d54971aA5cEbdeF3326d9ea4Fd8262';
 
 // https://sepolia.etherscan.io/address/0x86224d188f4005d5De75eEeFfC45dE51d3A4969c
