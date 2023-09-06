@@ -86,6 +86,17 @@ export function generateJsConstants({
   return Object.keys(addresses).map((key) => addressToJsConstant(chainId, key, addresses[key]));
 }
 
+export function generateJsObject({addresses}: {addresses: Addresses}) {
+  return JSON.stringify(
+    addresses,
+    function (key, value) {
+      if (!key) return value;
+      return typeof value === 'object' ? value.value : value;
+    },
+    2,
+  );
+}
+
 export const bytes32toAddress = (bytes32: Hex) => {
   return getAddress(`0x${bytes32.slice(26)}`);
 };

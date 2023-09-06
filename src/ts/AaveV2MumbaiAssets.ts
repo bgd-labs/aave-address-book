@@ -1,4 +1,4 @@
-export const AaveV2MumbaiAssets = {
+export const ASSETS = {
   DAI: {
     UNDERLYING: '0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F',
     decimals: 18,

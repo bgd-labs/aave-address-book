@@ -1,4 +1,4 @@
-export const AaveV2AvalancheAssets = {
+export const ASSETS = {
   WETHe: {
     UNDERLYING: '0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB',
     decimals: 18,

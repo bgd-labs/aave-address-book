@@ -13,6 +13,7 @@ import {
   addressOrZero,
   bytes32toAddress,
   generateJsConstants,
+  generateJsObject,
   generateSolidityConstants,
   getImplementationStorageSlot,
   prefixWithGeneratedWarning,
@@ -247,7 +248,7 @@ function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryNa
       }),
       libraryName,
     ),
-    js: `export const ${libraryName} = ${JSON.stringify(sorted, null, 2)}`,
+    js: `export const E_MODES = ${generateJsObject({addresses: formatted})}\n`,
   };
 }
 
@@ -290,20 +291,16 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   const assetsLibraryName = name + 'Assets';
   const assetsLibrary = generateAssetsLibrary(config.chainId, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
-  writeFileSync(`./src/ts/${assetsLibraryName}.ts`, assetsLibrary.js);
+  appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
 
   // generate emodes library
   const eModesLibraryName = name + 'EModes';
   const eModesLibrary = generateEmodes(config.chainId, eModes, eModesLibraryName);
   appendFileSync(`./src/${name}.sol`, eModesLibrary.solidity);
-  writeFileSync(`./src/ts/${eModesLibraryName}.ts`, eModesLibrary.js);
+  appendFileSync(`./src/ts/${name}.ts`, eModesLibrary.js);
 
   return {
-    js: [
-      `export * as ${name} from './${name}';`,
-      `export {${assetsLibraryName}} from './${assetsLibraryName}';`,
-      `export {${eModesLibraryName}} from './${eModesLibraryName}';`,
-    ],
+    js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],
   };
 }

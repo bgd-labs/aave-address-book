@@ -1,4 +1,4 @@
-export const AaveV2FujiAssets = {
+export const ASSETS = {
   WETH: {
     UNDERLYING: '0x9668f5f55f2712Dd2dfa316256609b516292D554',
     decimals: 18,

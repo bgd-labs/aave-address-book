@@ -1,1 +1,1 @@
-export const AaveV2EthereumArcAssets = {};
+export const ASSETS = {};
