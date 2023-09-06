@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/bgd-labs/aave-address-book/compare/v2.2.0...v2.3.0) (2023-09-06)
+
+
+### Features
+
+* add abis for common contracts to js exports ([#236](https://github.com/bgd-labs/aave-address-book/issues/236)) ([8c3fbc4](https://github.com/bgd-labs/aave-address-book/commit/8c3fbc4047be187bc9a19e86e55b9155533c8254))
+* add eModes library ([#238](https://github.com/bgd-labs/aave-address-book/issues/238)) ([bfa9397](https://github.com/bgd-labs/aave-address-book/commit/bfa93975983d308fe9fe558a6b02fbd7b2d7168c))
+
+
+### Bug Fixes
+
+* added executor with timelock abi ([#235](https://github.com/bgd-labs/aave-address-book/issues/235)) ([3d2414c](https://github.com/bgd-labs/aave-address-book/commit/3d2414ca906e98a57f54e592578e55afa26328a9))
+* addresses fixed ([#237](https://github.com/bgd-labs/aave-address-book/issues/237)) ([f8b2bfb](https://github.com/bgd-labs/aave-address-book/commit/f8b2bfb55d3e83f07a937368f39da31265284023))
+
 ## [2.2.0](https://github.com/bgd-labs/aave-address-book/compare/v2.1.0...v2.2.0) (2023-09-05)
 
 
