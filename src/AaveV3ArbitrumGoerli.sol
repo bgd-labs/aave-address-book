@@ -243,7 +243,7 @@ library AaveV3ArbitrumGoerliAssets {
     0x1949f5dE0F6D5a57918734B659c112616fCb7af7;
 }
 
-library AaveV3ArbitrumGoerliEmodes {
+library AaveV3ArbitrumGoerliEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;

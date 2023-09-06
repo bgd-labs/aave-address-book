@@ -414,7 +414,7 @@ library AaveV3ArbitrumAssets {
   address internal constant ARB_INTEREST_RATE_STRATEGY = 0xD87974E8ED49AB16d5053ba793F4e17078Be0426;
 }
 
-library AaveV3ArbitrumEmodes {
+library AaveV3ArbitrumEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;

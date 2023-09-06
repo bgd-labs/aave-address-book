@@ -20,6 +20,7 @@ import {
   wrapIntoSolidityLibrary,
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
+import {ChainId} from './chains';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -229,16 +230,25 @@ export async function getPoolV3Addresses(
   }
 }
 
-function generateEmodes(eModes: Map<number, string>) {
-  return Array.from(eModes)
-    .sort(([keyA], [keyB]) => keyA - keyB)
-    .reduce((acc, [value, label]) => {
-      acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'None'}`] = {
-        value,
-        type: 'uint256',
-      };
-      return acc;
-    }, {} as Addresses);
+function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryName: string) {
+  const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
+  const formatted = sorted.reduce((acc, [value, label]) => {
+    acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'None'}`] = {
+      value,
+      type: 'uint256',
+    };
+    return acc;
+  }, {} as Addresses);
+  return {
+    solidity: wrapIntoSolidityLibrary(
+      generateSolidityConstants({
+        chainId,
+        addresses: formatted,
+      }),
+      libraryName,
+    ),
+    js: `export const ${libraryName} = ${JSON.stringify(sorted, null, 2)}`,
+  };
 }
 
 export async function generateProtocolV3Library(config: PoolConfig) {
@@ -283,21 +293,16 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   writeFileSync(`./src/ts/${assetsLibraryName}.ts`, assetsLibrary.js);
 
   // generate emodes library
-  const eModesLibraryName = name + 'Emodes';
-  appendFileSync(
-    `./src/${name}.sol`,
-    wrapIntoSolidityLibrary(
-      generateSolidityConstants({
-        chainId: config.chainId,
-        addresses: generateEmodes(eModes),
-      }),
-      eModesLibraryName,
-    ),
-  );
+  const eModesLibraryName = name + 'EModes';
+  const eModesLibrary = generateEmodes(config.chainId, eModes, eModesLibraryName);
+  appendFileSync(`./src/${name}.sol`, eModesLibrary.solidity);
+  writeFileSync(`./src/ts/${eModesLibraryName}.ts`, eModesLibrary.js);
+
   return {
     js: [
       `export * as ${name} from './${name}';`,
       `export {${assetsLibraryName}} from './${assetsLibraryName}';`,
+      `export {${eModesLibraryName}} from './${eModesLibraryName}';`,
     ],
     solidity: [`import {${name}} from './${name}.sol';`],
   };

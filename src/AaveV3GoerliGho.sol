@@ -197,7 +197,7 @@ library AaveV3GoerliGhoAssets {
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0xa0b2a67C9AE5f52201DA9cBe03866D3f5cd725AF;
 }
 
-library AaveV3GoerliGhoEmodes {
+library AaveV3GoerliGhoEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLE_EMODE = 1;

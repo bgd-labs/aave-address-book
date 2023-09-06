@@ -515,7 +515,7 @@ library AaveV3PolygonAssets {
     0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E;
 }
 
-library AaveV3PolygonEmodes {
+library AaveV3PolygonEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;

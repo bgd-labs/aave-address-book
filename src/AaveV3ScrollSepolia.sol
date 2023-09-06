@@ -243,7 +243,7 @@ library AaveV3ScrollSepoliaAssets {
     0x9c41A3E545126Cc2c160634405E00461Ec30F709;
 }
 
-library AaveV3ScrollSepoliaEmodes {
+library AaveV3ScrollSepoliaEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;

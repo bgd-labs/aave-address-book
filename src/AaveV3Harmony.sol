@@ -242,7 +242,7 @@ library AaveV3HarmonyAssets {
     0x145dE30c929a065582da84Cf96F88460dB9745A7;
 }
 
-library AaveV3HarmonyEmodes {
+library AaveV3HarmonyEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;

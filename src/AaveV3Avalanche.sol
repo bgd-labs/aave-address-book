@@ -357,7 +357,7 @@ library AaveV3AvalancheAssets {
     0x79a906e8c998d2fb5C5D66d23c4c5416Fe0168D6;
 }
 
-library AaveV3AvalancheEmodes {
+library AaveV3AvalancheEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;

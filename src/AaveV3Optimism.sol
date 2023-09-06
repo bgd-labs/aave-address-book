@@ -372,7 +372,7 @@ library AaveV3OptimismAssets {
     0x3B57B081dA6Af5e2759A57bD3211932Cb6176997;
 }
 
-library AaveV3OptimismEmodes {
+library AaveV3OptimismEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;

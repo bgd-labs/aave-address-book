@@ -243,7 +243,7 @@ library AaveV3OptimismGoerliAssets {
     0xc2e90fd19999E7Bd8558Af9A96B88af2f320aBB6;
 }
 
-library AaveV3OptimismGoerliEmodes {
+library AaveV3OptimismGoerliEModes {
   uint256 internal constant None = 0;
 
   uint256 internal constant STABLECOINS = 1;
