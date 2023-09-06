@@ -16,6 +16,15 @@ const INTERFACES = [
   'IGovernancePowerStrategy',
   'IDataWarehouse',
   'IExecutorWithTimelock',
+  'IERC20',
+  'IAToken',
+  'IDefaultInterestRateStrategy',
+  'IAaveOracle',
+  'IExecutor',
+  'ICrossChainController',
+  'IWithGuardian',
+  'IRescuable',
+  'IOwnable',
 ];
 
 export async function generateABIs() {

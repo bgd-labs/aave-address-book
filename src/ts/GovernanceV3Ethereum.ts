@@ -1,10 +1,10 @@
 // https://etherscan.io/address/0x6aaD18a3cafB04b9a70761943796eCC179A1D933
 export const CROSS_CHAIN_CONTROLLER = '0x6aaD18a3cafB04b9a70761943796eCC179A1D933';
 
-// https://etherscan.io/address/0x4096461e8756f8ad1d06992B61d322aB29e73e21
+// IGovernanceCore https://etherscan.io/address/0x4096461e8756f8ad1d06992B61d322aB29e73e21
 export const GOVERNANCE = '0x4096461e8756f8ad1d06992B61d322aB29e73e21';
 
-// https://etherscan.io/address/0xf6FB2B1ab6EF8fb24F068229932e60276C9950AE
+// IPayloadsControllerCore https://etherscan.io/address/0xf6FB2B1ab6EF8fb24F068229932e60276C9950AE
 export const PAYLOADS_CONTROLLER = '0xf6FB2B1ab6EF8fb24F068229932e60276C9950AE';
 
 // https://etherscan.io/address/0x4D20436E4c6Fc1fF27312f4531112692bbdbC481

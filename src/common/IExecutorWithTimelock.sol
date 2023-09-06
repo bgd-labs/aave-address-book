@@ -127,6 +127,8 @@ interface IExecutorWithTimelock {
    **/
   function GRACE_PERIOD() external view returns (uint256);
 
+  function VOTING_DURATION() external view returns (uint256);
+
   /**
    * @dev Getter of minimum delay constant
    * @return minimum delay in seconds
