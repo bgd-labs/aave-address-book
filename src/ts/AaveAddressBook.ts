@@ -76,3 +76,7 @@ export {IERC20_ABI} from './abis/IERC20';
 export {IAToken_ABI} from './abis/IAToken';
 export {IDefaultInterestRateStrategy_ABI} from './abis/IDefaultInterestRateStrategy';
 export {IAaveOracle_ABI} from './abis/IAaveOracle';
+export {IExecutor_ABI} from './abis/IExecutor';
+export {ICrossChainController_ABI} from './abis/ICrossChainController';
+export {IWithGuardian_ABI} from './abis/IWithGuardian';
+export {IRescuable_ABI} from './abis/IRescuable';

@@ -20,6 +20,10 @@ const INTERFACES = [
   'IAToken',
   'IDefaultInterestRateStrategy',
   'IAaveOracle',
+  'IExecutor',
+  'ICrossChainController',
+  'IWithGuardian',
+  'IRescuable',
 ];
 
 export async function generateABIs() {
