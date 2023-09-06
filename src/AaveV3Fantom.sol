@@ -286,3 +286,9 @@ library AaveV3FantomAssets {
   address internal constant SUSHI_INTEREST_RATE_STRATEGY =
     0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 }
+
+library AaveV3FantomEmodes {
+  uint256 internal constant None = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+}

@@ -242,3 +242,9 @@ library AaveV3ScrollSepoliaAssets {
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0x9c41A3E545126Cc2c160634405E00461Ec30F709;
 }
+
+library AaveV3ScrollSepoliaEmodes {
+  uint256 internal constant None = 0;
+
+  uint256 internal constant STABLECOINS = 1;
+}
