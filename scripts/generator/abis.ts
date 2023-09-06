@@ -24,6 +24,7 @@ const INTERFACES = [
   'ICrossChainController',
   'IWithGuardian',
   'IRescuable',
+  'IOwnable',
 ];
 
 export async function generateABIs() {

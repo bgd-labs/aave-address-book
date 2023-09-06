@@ -80,3 +80,4 @@ export {IExecutor_ABI} from './abis/IExecutor';
 export {ICrossChainController_ABI} from './abis/ICrossChainController';
 export {IWithGuardian_ABI} from './abis/IWithGuardian';
 export {IRescuable_ABI} from './abis/IRescuable';
+export {IOwnable_ABI} from './abis/IOwnable';
