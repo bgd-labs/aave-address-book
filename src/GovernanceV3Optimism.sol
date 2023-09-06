@@ -5,6 +5,6 @@ pragma solidity >=0.6.0;
 import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';
 
 library GovernanceV3Optimism {
-  // https://explorer.optimism.io/address/0x5DA7D1150e7dc6eE060c75c5BdE00Fa92Eb9a675
-  address internal constant CROSS_CHAIN_CONTROLLER = 0x5DA7D1150e7dc6eE060c75c5BdE00Fa92Eb9a675;
+  // https://explorer.optimism.io/address/0x7810AEF20eeF5BF7140402497FF8fB231A4B3fbA
+  address internal constant CROSS_CHAIN_CONTROLLER = 0x7810AEF20eeF5BF7140402497FF8fB231A4B3fbA;
 }
