@@ -7,6 +7,7 @@ export * as GovernanceV3Fuji from './GovernanceV3Fuji';
 export * as GovernanceV3Optimism from './GovernanceV3Optimism';
 export * as GovernanceV3Polygon from './GovernanceV3Polygon';
 export * as GovernanceV3Mumbai from './GovernanceV3Mumbai';
+export * as GovernanceV3Goerli from './GovernanceV3Goerli';
 export * as AaveV2EthereumAMM from './AaveV2EthereumAMM';
 export * as AaveV2EthereumArc from './AaveV2EthereumArc';
 export * as AaveV2Ethereum from './AaveV2Ethereum';

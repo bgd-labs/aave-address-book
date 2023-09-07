@@ -1,5 +1,9 @@
 import {appendFileSync, existsSync, mkdirSync, rmdirSync, writeFileSync} from 'fs';
-import {governanceConfigMainnet, governanceConfigSepolia} from './configs/governance/mainnet';
+import {
+  governanceConfigMainnet,
+  governanceConfigSepolia,
+  governanceConfigGoerli,
+} from './configs/governance/ethereum';
 import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
@@ -59,6 +63,7 @@ async function main() {
       governanceConfigOptimism,
       governanceConfigPolygon,
       governanceConfigMumbai,
+      governanceConfigGoerli,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(

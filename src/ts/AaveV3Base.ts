@@ -97,8 +97,8 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x8BAdED77793c340ab79848A09C7F5f7F16007Ab6',
     ORACLE: '0x7e860098F58bBFC8648a4311b374B1D669a2bc6B',
   },
-};
+} as const;
 export const E_MODES = {
   NONE: 0,
   ETH_CORRELATED: 1,
-};
+} as const;

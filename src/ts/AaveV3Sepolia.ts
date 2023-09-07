@@ -130,8 +130,8 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A',
     ORACLE: '0xCbE15C1f40f1D7eE1De3756D1557d5Fdc2A50bBD',
   },
-};
+} as const;
 export const E_MODES = {
   NONE: 0,
   STABLECOINS: 1,
-};
+} as const;

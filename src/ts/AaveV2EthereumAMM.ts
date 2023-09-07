@@ -265,4 +265,4 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x52E39422cd86a12a13773D86af5FdBF5665989aD',
     ORACLE: '0x399e3bb2BBd49c570aa6edc6ac390E0D0aCbbD5e',
   },
-};
+} as const;

@@ -154,8 +154,8 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521',
     ORACLE: '0xCcc059a1a17577676c8673952Dc02070D29e5a66',
   },
-};
+} as const;
 export const E_MODES = {
   NONE: 0,
   STABLECOINS: 1,
-};
+} as const;

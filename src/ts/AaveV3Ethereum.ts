@@ -321,8 +321,8 @@ export const ASSETS = {
     ORACLE: '0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B',
     STATA_TOKEN: '0x0000000000000000000000000000000000000000',
   },
-};
+} as const;
 export const E_MODES = {
   NONE: 0,
   ETH_CORRELATED: 1,
-};
+} as const;

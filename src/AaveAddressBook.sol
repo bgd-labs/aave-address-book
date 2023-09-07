@@ -10,6 +10,7 @@ import {GovernanceV3Fuji} from './GovernanceV3Fuji.sol';
 import {GovernanceV3Optimism} from './GovernanceV3Optimism.sol';
 import {GovernanceV3Polygon} from './GovernanceV3Polygon.sol';
 import {GovernanceV3Mumbai} from './GovernanceV3Mumbai.sol';
+import {GovernanceV3Goerli} from './GovernanceV3Goerli.sol';
 import {AaveV2EthereumAMM} from './AaveV2EthereumAMM.sol';
 import {AaveV2EthereumArc} from './AaveV2EthereumArc.sol';
 import {AaveV2Ethereum} from './AaveV2Ethereum.sol';

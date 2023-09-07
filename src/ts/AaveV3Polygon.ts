@@ -282,10 +282,10 @@ export const ASSETS = {
     ORACLE: '0xe34949A48cd2E6f5CD41753e449bd2d43993C9AC',
     STATA_TOKEN: '0x89Bd338fa8886bC16C7bBbBD30220c03dBE358A7',
   },
-};
+} as const;
 export const E_MODES = {
   NONE: 0,
   STABLECOINS: 1,
   MATIC_CORRELATED: 2,
   ETH_CORRELATED: 3,
-};
+} as const;

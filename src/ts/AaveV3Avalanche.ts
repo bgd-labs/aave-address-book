@@ -208,9 +208,9 @@ export const ASSETS = {
     ORACLE: '0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743',
     STATA_TOKEN: '0x0e3DE807B3B4D65D40dfB7BB908289b227d816c8',
   },
-};
+} as const;
 export const E_MODES = {
   NONE: 0,
   STABLECOINS: 1,
   AVAX_CORRELATED: 2,
-};
+} as const;

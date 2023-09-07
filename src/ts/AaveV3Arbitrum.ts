@@ -235,9 +235,9 @@ export const ASSETS = {
     ORACLE: '0xb2A824043730FE05F3DA2efaFa1CBbe83fa548D6',
     STATA_TOKEN: '0x0000000000000000000000000000000000000000',
   },
-};
+} as const;
 export const E_MODES = {
   NONE: 0,
   STABLECOINS: 1,
   ETH_CORRELATED: 2,
-};
+} as const;
