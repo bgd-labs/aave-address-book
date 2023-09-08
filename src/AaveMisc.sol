@@ -68,7 +68,6 @@ library AaveMisc {
   // https://etherscan.io/address/0x3ea64b1C0194524b48F9118462C8E9cd61a243c7
   address internal constant AAVE_SWAPPER_ETHEREUM = 0x3ea64b1C0194524b48F9118462C8E9cd61a243c7;
 
-  // https://polygonscan.com/address/0xc928002904ec475663a83063d492ea2ae09ebda1
   // https://etherscan.io/address/0xc928002904Ec475663A83063D492EA2aE09EbDA1
   address internal constant AAVE_POL_ETH_BRIDGE = 0xc928002904Ec475663A83063D492EA2aE09EbDA1;
 }
