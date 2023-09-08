@@ -5,6 +5,6 @@ pragma solidity >=0.6.0;
 import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';
 
 library GovernanceV3Polygon {
-  // https://polygonscan.com/address/0xFb79B297CF95d912Ace0eF41866691eE6aeA19E2
-  address internal constant CROSS_CHAIN_CONTROLLER = 0xFb79B297CF95d912Ace0eF41866691eE6aeA19E2;
+  // https://polygonscan.com/address/0xF6B99959F0b5e79E1CC7062E12aF632CEb18eF0d
+  address internal constant CROSS_CHAIN_CONTROLLER = 0xF6B99959F0b5e79E1CC7062E12aF632CEb18eF0d;
 }

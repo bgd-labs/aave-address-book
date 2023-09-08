@@ -5,8 +5,8 @@ pragma solidity >=0.6.0;
 import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';
 
 library GovernanceV3Ethereum {
-  // https://etherscan.io/address/0x6aaD18a3cafB04b9a70761943796eCC179A1D933
-  address internal constant CROSS_CHAIN_CONTROLLER = 0x6aaD18a3cafB04b9a70761943796eCC179A1D933;
+  // https://etherscan.io/address/0xEd42a7D8559a463722Ca4beD50E0Cc05a386b0e1
+  address internal constant CROSS_CHAIN_CONTROLLER = 0xEd42a7D8559a463722Ca4beD50E0Cc05a386b0e1;
 
   // https://etherscan.io/address/0x4096461e8756f8ad1d06992B61d322aB29e73e21
   IGovernanceCore internal constant GOVERNANCE =

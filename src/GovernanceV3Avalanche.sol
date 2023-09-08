@@ -5,6 +5,6 @@ pragma solidity >=0.6.0;
 import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';
 
 library GovernanceV3Avalanche {
-  // https://snowtrace.io/address/0x55b9C6DFCC84f120de502484C1C7Cb158A25D610
-  address internal constant CROSS_CHAIN_CONTROLLER = 0x55b9C6DFCC84f120de502484C1C7Cb158A25D610;
+  // https://snowtrace.io/address/0x27FC7D54C893dA63C0AE6d57e1B2B13A70690928
+  address internal constant CROSS_CHAIN_CONTROLLER = 0x27FC7D54C893dA63C0AE6d57e1B2B13A70690928;
 }

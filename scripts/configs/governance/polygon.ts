@@ -15,6 +15,6 @@ export const governanceConfigPolygon: GovernanceConfig = {
   name: 'Polygon',
   CHAIN_ID: ChainId.polygon,
   ADDRESSES: {
-    CROSS_CHAIN_CONTROLLER: '0xFb79B297CF95d912Ace0eF41866691eE6aeA19E2',
+    CROSS_CHAIN_CONTROLLER: '0xF6B99959F0b5e79E1CC7062E12aF632CEb18eF0d',
   },
 };

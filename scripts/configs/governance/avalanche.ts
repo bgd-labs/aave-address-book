@@ -15,6 +15,6 @@ export const governanceConfigAvalanche: GovernanceConfig = {
   name: 'Avalanche',
   CHAIN_ID: ChainId.avalanche,
   ADDRESSES: {
-    CROSS_CHAIN_CONTROLLER: '0x55b9C6DFCC84f120de502484C1C7Cb158A25D610',
+    CROSS_CHAIN_CONTROLLER: '0x27FC7D54C893dA63C0AE6d57e1B2B13A70690928',
   },
 };
