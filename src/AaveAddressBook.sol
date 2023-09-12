@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {GovernanceV3Sepolia} from './GovernanceV3Sepolia.sol';
 import {GovernanceV3Ethereum} from './GovernanceV3Ethereum.sol';
 import {GovernanceV3Arbitrum} from './GovernanceV3Arbitrum.sol';
 import {GovernanceV3Avalanche} from './GovernanceV3Avalanche.sol';

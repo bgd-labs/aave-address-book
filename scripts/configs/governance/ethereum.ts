@@ -1,6 +1,7 @@
 import {ChainId} from '../../generator/chains';
 import {GovernanceConfig} from '../types';
 
+// OUTDATED ABI
 export const governanceConfigSepolia: GovernanceConfig = {
   name: 'Sepolia',
   CHAIN_ID: ChainId.sepolia,

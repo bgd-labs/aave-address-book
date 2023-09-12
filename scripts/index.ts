@@ -55,7 +55,7 @@ async function main() {
   // generate files
   const governanceNames = await Promise.all(
     [
-      governanceConfigSepolia,
+      // governanceConfigSepolia,
       governanceConfigMainnet,
       governanceConfigArbitrum,
       governanceConfigAvalanche,
