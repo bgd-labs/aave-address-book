@@ -125,6 +125,7 @@ const miscAddresses: Addresses = {
     value: '0x3b56998Ec06477704622ca8e2eA1b4db134cec32',
   },
   AAVE_SWAPPER_ETHEREUM: '0x3ea64b1C0194524b48F9118462C8E9cd61a243c7',
+  AAVE_POL_ETH_BRIDGE: '0xc928002904Ec475663A83063D492EA2aE09EbDA1',
 };
 
 export function generateMisc() {
