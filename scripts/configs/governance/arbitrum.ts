@@ -1,6 +1,5 @@
 import {ChainId} from '../../generator/chains';
 import {GovernanceConfig} from '../types';
-import {Hex} from 'viem';
 
 export const governanceConfigArbitrum: GovernanceConfig = {
   name: 'Arbitrum',
