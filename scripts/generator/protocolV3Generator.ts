@@ -248,7 +248,7 @@ function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryNa
       }),
       libraryName,
     ),
-    js: `export const E_MODES = ${generateJsObject({addresses: formatted})}\n`,
+    js: `export const E_MODES = ${generateJsObject({addresses: formatted})} as const;\n`,
   };
 }
 

@@ -85,7 +85,11 @@ export function generateAssetsLibrary(
     },
     {} as {[address: string]: {[key: string]: Hex | number}},
   );
-  let templateV3Assets = `export const ASSETS = ${JSON.stringify(innerObject, null, 2)}\n`;
+  let templateV3Assets = `export const ASSETS = ${JSON.stringify(
+    innerObject,
+    null,
+    2,
+  )} as const;\n`;
   return {
     solidity: wrapIntoSolidityLibrary(
       formattedReservesData

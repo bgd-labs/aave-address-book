@@ -1,6 +1,7 @@
 import {ChainId} from '../../generator/chains';
 import {GovernanceConfig} from '../types';
 
+// OUTDATED ABI
 export const governanceConfigSepolia: GovernanceConfig = {
   name: 'Sepolia',
   CHAIN_ID: ChainId.sepolia,
@@ -12,6 +13,17 @@ export const governanceConfigSepolia: GovernanceConfig = {
     VOTING_PORTAL_ETH_ETH: '0x86224d188f4005d5De75eEeFfC45dE51d3A4969c',
     VOTING_PORTAL_ETH_AVAX: '0x2c2585E30c1CC1F0B4f4992F17957E31C9750983',
     VOTING_PORTAL_ETH_POL: '0x31a1517c21fA41b7c4A208379a3f988093E4Aa44',
+  },
+};
+
+export const governanceConfigGoerli: GovernanceConfig = {
+  name: 'Goerli',
+  CHAIN_ID: ChainId.goerli,
+  ADDRESSES: {
+    GOVERNANCE: '0x586207Df62c7D5D1c9dBb8F61EdF77cc30925C4F',
+    VOTING_MACHINE: '0xE8AD5ab6295c16D04257BC6Cd6D447ff4018FF89',
+    PAYLOADS_CONTROLLER: '0x064361B3761CcDd17300146bf58a79d1E570382E',
+    VOTING_PORTAL_ETH_ETH: '0xFf376b6db4AF0d87Dba35860B3B87F526d7879cF',
   },
 };
 

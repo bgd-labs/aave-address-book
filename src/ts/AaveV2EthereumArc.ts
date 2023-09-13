@@ -36,4 +36,4 @@ export const EMISSION_MANAGER = '0x0000000000000000000000000000000000000000';
 export const PERMISSION_MANAGER = '0xF4a1F5fEA79C3609514A417425971FadC10eCfBE';
 
 export const CHAIN_ID = 1;
-export const ASSETS = {};
+export const ASSETS = {} as const;

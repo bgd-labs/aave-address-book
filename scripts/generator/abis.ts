@@ -13,6 +13,7 @@ const INTERFACES = [
   'IVotingMachineWithProofs',
   'IGovernanceCore',
   'IVotingStrategy',
+  'IVotingPortal',
   'IGovernancePowerStrategy',
   'IDataWarehouse',
   'IExecutorWithTimelock',
