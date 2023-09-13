@@ -83,8 +83,8 @@ library AaveMisc {
   // https://andromeda-explorer.metis.io/address/0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97
   address internal constant PROXY_ADMIN_METIS = 0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97;
 
-  // https://andromeda-explorer.metis.io/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
-  address internal constant CREATE_3_FACTORY_METIS = 0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
+  // https://andromeda-explorer.metis.io/address/0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A
+  address internal constant CREATE_3_FACTORY_METIS = 0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A;
 
   // https://basescan.org/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
   address internal constant TRANSPARENT_PROXY_FACTORY_BASE =

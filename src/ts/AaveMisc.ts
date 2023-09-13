@@ -68,8 +68,8 @@ export const TRANSPARENT_PROXY_FACTORY_METIS = '0x1dad86dC5990BCE5bFe3A150A4E0ec
 // address https://andromeda-explorer.metis.io/address/0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97
 export const PROXY_ADMIN_METIS = '0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97';
 
-// address https://andromeda-explorer.metis.io/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
-export const CREATE_3_FACTORY_METIS = '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A';
+// address https://andromeda-explorer.metis.io/address/0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A
+export const CREATE_3_FACTORY_METIS = '0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A';
 
 // address https://basescan.org/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
 export const TRANSPARENT_PROXY_FACTORY_BASE = '0x05225Cd708bCa9253789C1374e4337a019e99D56';
