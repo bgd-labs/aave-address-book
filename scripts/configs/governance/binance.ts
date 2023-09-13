@@ -1,7 +1,7 @@
 import {GovernanceConfig} from '../types';
 import {ChainId} from '../../generator/chains';
 
-export const governanceConfigBase: GovernanceConfig = {
+export const governanceConfigBinance: GovernanceConfig = {
   name: 'Binance',
   CHAIN_ID: ChainId.binance,
   ADDRESSES: {

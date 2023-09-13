@@ -44,6 +44,9 @@ import {governanceConfigAvalanche, governanceConfigFuji} from './configs/governa
 import {governanceConfigOptimism} from './configs/governance/optimism';
 import {governanceConfigMumbai, governanceConfigPolygon} from './configs/governance/polygon';
 import {generateABIs} from './generator/abis';
+import {governanceConfigMetis} from './configs/governance/metis';
+import {governanceConfigBase} from './configs/governance/base';
+import {governanceConfigBinance} from './configs/governance/binance';
 
 async function main() {
   // cleanup ts artifacts
@@ -64,6 +67,9 @@ async function main() {
       governanceConfigPolygon,
       governanceConfigMumbai,
       governanceConfigGoerli,
+      governanceConfigMetis,
+      governanceConfigBase,
+      governanceConfigBinance,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
