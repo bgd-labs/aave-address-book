@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/bgd-labs/aave-address-book/compare/v2.3.0...v2.4.0) (2023-09-13)
+
+
+### Features
+
+* add bridge addresses ([#240](https://github.com/bgd-labs/aave-address-book/issues/240)) ([ebdc37e](https://github.com/bgd-labs/aave-address-book/commit/ebdc37e431d00feb183a8424e1e5d663e56f561b))
+* added new ccc deployments ([#242](https://github.com/bgd-labs/aave-address-book/issues/242)) ([119563b](https://github.com/bgd-labs/aave-address-book/commit/119563b10cc16a69a35a633760b4f0f4bcdff4ae))
+
+
+### Bug Fixes
+
+* add goerli governance v3 ([#241](https://github.com/bgd-labs/aave-address-book/issues/241)) ([0c86faf](https://github.com/bgd-labs/aave-address-book/commit/0c86fafe90992d8e67e2d40a1d2c73b973d8874c))
+
 ## [2.3.0](https://github.com/bgd-labs/aave-address-book/compare/v2.2.0...v2.3.0) (2023-09-06)
 
 
