@@ -19,6 +19,11 @@ export type GovernanceV3Addresses = {
   VOTING_PORTAL_ETH_ETH?: Hex;
   VOTING_PORTAL_ETH_AVAX?: Hex;
   VOTING_PORTAL_ETH_POL?: Hex;
+  CL_EMERGENCY_ORACLE?: Hex;
+  VM_DATA_HELPER?: Hex;
+  GOV_DATA_HELPER?: Hex;
+  PC_DATA_HELPER?: Hex;
+  META_DELEGATE_HELPER?: Hex;
 };
 
 export interface GovernanceConfig {

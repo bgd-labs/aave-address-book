@@ -5,26 +5,44 @@ pragma solidity >=0.6.0;
 import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';
 
 library GovernanceV3Ethereum {
-  // https://etherscan.io/address/0x6aaD18a3cafB04b9a70761943796eCC179A1D933
-  address internal constant CROSS_CHAIN_CONTROLLER = 0x6aaD18a3cafB04b9a70761943796eCC179A1D933;
+  // https://etherscan.io/address/0xEd42a7D8559a463722Ca4beD50E0Cc05a386b0e1
+  address internal constant CROSS_CHAIN_CONTROLLER = 0xEd42a7D8559a463722Ca4beD50E0Cc05a386b0e1;
 
-  // https://etherscan.io/address/0x4096461e8756f8ad1d06992B61d322aB29e73e21
+  // https://etherscan.io/address/0x9AEE0B04504CeF83A65AC3f0e838D0593BCb2BC7
   IGovernanceCore internal constant GOVERNANCE =
-    IGovernanceCore(0x4096461e8756f8ad1d06992B61d322aB29e73e21);
+    IGovernanceCore(0x9AEE0B04504CeF83A65AC3f0e838D0593BCb2BC7);
 
-  // https://etherscan.io/address/0xf6FB2B1ab6EF8fb24F068229932e60276C9950AE
+  // https://etherscan.io/address/0xdAbad81aF85554E9ae636395611C58F7eC1aAEc5
   IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
-    IPayloadsControllerCore(0xf6FB2B1ab6EF8fb24F068229932e60276C9950AE);
+    IPayloadsControllerCore(0xdAbad81aF85554E9ae636395611C58F7eC1aAEc5);
 
-  // https://etherscan.io/address/0x4D20436E4c6Fc1fF27312f4531112692bbdbC481
-  address internal constant VOTING_MACHINE = 0x4D20436E4c6Fc1fF27312f4531112692bbdbC481;
+  // https://etherscan.io/address/0x617332a777780F546261247F621051d0b98975Eb
+  address internal constant VOTING_MACHINE = 0x617332a777780F546261247F621051d0b98975Eb;
 
-  // https://etherscan.io/address/0x26B4f5FB207a2635bfEF11DFd86d862B93f85E5a
-  address internal constant VOTING_PORTAL_ETH_ETH = 0x26B4f5FB207a2635bfEF11DFd86d862B93f85E5a;
+  // https://etherscan.io/address/0xf23f7De3AC42F22eBDA17e64DC4f51FB66b8E21f
+  address internal constant VOTING_PORTAL_ETH_ETH = 0xf23f7De3AC42F22eBDA17e64DC4f51FB66b8E21f;
 
-  // https://etherscan.io/address/0x95Fa2c817169E26956AB8795c84a225b55d7db5B
-  address internal constant EXECUTOR_LVL_1 = 0x95Fa2c817169E26956AB8795c84a225b55d7db5B;
+  // https://etherscan.io/address/0x33aCEf7365809218485873B7d0d67FeE411B5D79
+  address internal constant VOTING_PORTAL_ETH_AVAX = 0x33aCEf7365809218485873B7d0d67FeE411B5D79;
 
-  // https://etherscan.io/address/0x3785149dC7B45a2383dFCf4bC78e44BFce474111
-  address internal constant EXECUTOR_LVL_2 = 0x3785149dC7B45a2383dFCf4bC78e44BFce474111;
+  // https://etherscan.io/address/0x9b24C168d6A76b5459B1d47071a54962a4df36c3
+  address internal constant VOTING_PORTAL_ETH_POL = 0x9b24C168d6A76b5459B1d47071a54962a4df36c3;
+
+  // https://etherscan.io/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
+  address internal constant PC_DATA_HELPER = 0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A;
+
+  // https://etherscan.io/address/0x67f8916326123c9a10543Db973706539e0F24f2B
+  address internal constant GOV_DATA_HELPER = 0x67f8916326123c9a10543Db973706539e0F24f2B;
+
+  // https://etherscan.io/address/0x77976B51569896523EE215962Ee91ff236Fa50E8
+  address internal constant VM_DATA_HELPER = 0x77976B51569896523EE215962Ee91ff236Fa50E8;
+
+  // https://etherscan.io/address/0x94363B11b37BC3ffe43AB09cff5A010352FE85dC
+  address internal constant META_DELEGATE_HELPER = 0x94363B11b37BC3ffe43AB09cff5A010352FE85dC;
+
+  // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
+  address internal constant EXECUTOR_LVL_1 = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
+
+  // https://etherscan.io/address/0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957
+  address internal constant EXECUTOR_LVL_2 = 0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957;
 }
