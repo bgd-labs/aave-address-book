@@ -107,7 +107,7 @@ const miscAddresses: Addresses = {
   CREATE_3_FACTORY_METIS: {
     chainId: ChainId.metis,
     type: 'address',
-    value: '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A',
+    value: '0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A',
   },
   TRANSPARENT_PROXY_FACTORY_BASE: {
     chainId: ChainId.base,
