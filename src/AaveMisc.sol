@@ -20,8 +20,21 @@ library AaveMisc {
   // https://etherscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_ETHEREUM = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
 
+  // https://etherscan.io/address/0xcc3C54B95f3f1867A43009B80ed4DD930E3cE2F7
+  address internal constant CREATE_3_FACTORY_ETHEREUM = 0xcc3C54B95f3f1867A43009B80ed4DD930E3cE2F7;
+
   // https://etherscan.io/address/0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517
   address internal constant PROXY_ADMIN_ETHEREUM_LONG = 0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517;
+
+  // https://bscscan.com/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
+  address internal constant TRANSPARENT_PROXY_FACTORY_BINANCE =
+    0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
+
+  // https://bscscan.com/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
+  address internal constant PROXY_ADMIN_BINANCE = 0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c;
+
+  // https://bscscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  address internal constant CREATE_3_FACTORY_BINANCE = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
   // https://polygonscan.com/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_POLYGON =
@@ -30,12 +43,18 @@ library AaveMisc {
   // https://polygonscan.com/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_POLYGON = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
 
+  // https://polygonscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  address internal constant CREATE_3_FACTORY_POLYGON = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
+
   // https://snowtrace.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_AVALANCHE =
     0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
 
   // https://snowtrace.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_AVALANCHE = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
+
+  // https://snowtrace.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  address internal constant CREATE_3_FACTORY_AVALANCHE = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
   // https://explorer.optimism.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_OPTIMISM =
@@ -44,12 +63,18 @@ library AaveMisc {
   // https://explorer.optimism.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_OPTIMISM = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
 
+  // https://explorer.optimism.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  address internal constant CREATE_3_FACTORY_OPTIMISM = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
+
   // https://arbiscan.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
   address internal constant TRANSPARENT_PROXY_FACTORY_ARBITRUM =
     0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
 
   // https://arbiscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN_ARBITRUM = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
+
+  // https://arbiscan.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  address internal constant CREATE_3_FACTORY_ARBITRUM = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
   // https://andromeda-explorer.metis.io/address/0x1dad86dC5990BCE5bFe3A150A4E0ece990d6EBcB
   address internal constant TRANSPARENT_PROXY_FACTORY_METIS =
@@ -58,6 +83,9 @@ library AaveMisc {
   // https://andromeda-explorer.metis.io/address/0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97
   address internal constant PROXY_ADMIN_METIS = 0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97;
 
+  // https://andromeda-explorer.metis.io/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
+  address internal constant CREATE_3_FACTORY_METIS = 0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
+
   // https://basescan.org/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
   address internal constant TRANSPARENT_PROXY_FACTORY_BASE =
     0x05225Cd708bCa9253789C1374e4337a019e99D56;
@@ -65,6 +93,12 @@ library AaveMisc {
   // https://basescan.org/address/0xc85b1E333aecc99340b2320493Fe2d22b8734795
   address internal constant PROXY_ADMIN_BASE = 0xc85b1E333aecc99340b2320493Fe2d22b8734795;
 
+  // https://basescan.org/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  address internal constant CREATE_3_FACTORY_BASE = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
+
   // https://etherscan.io/address/0x3ea64b1C0194524b48F9118462C8E9cd61a243c7
   address internal constant AAVE_SWAPPER_ETHEREUM = 0x3ea64b1C0194524b48F9118462C8E9cd61a243c7;
+
+  // https://etherscan.io/address/0xc928002904Ec475663A83063D492EA2aE09EbDA1
+  address internal constant AAVE_POL_ETH_BRIDGE = 0xc928002904Ec475663A83063D492EA2aE09EbDA1;
 }

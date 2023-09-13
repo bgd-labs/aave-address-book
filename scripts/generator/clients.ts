@@ -18,6 +18,7 @@ import {
   sepolia,
   avalanche,
   base,
+  bsc,
 } from 'viem/chains';
 import {ChainId} from './chains';
 
@@ -153,6 +154,13 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.base]: createPublicClient({
     chain: base,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.binance]: createPublicClient({
+    chain: bsc,
     transport: http(),
     batch: {
       multicall: true,

@@ -5,6 +5,28 @@ pragma solidity >=0.6.0;
 import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';
 
 library GovernanceV3Polygon {
-  // https://polygonscan.com/address/0xFb79B297CF95d912Ace0eF41866691eE6aeA19E2
-  address internal constant CROSS_CHAIN_CONTROLLER = 0xFb79B297CF95d912Ace0eF41866691eE6aeA19E2;
+  // https://polygonscan.com/address/0xF6B99959F0b5e79E1CC7062E12aF632CEb18eF0d
+  address internal constant CROSS_CHAIN_CONTROLLER = 0xF6B99959F0b5e79E1CC7062E12aF632CEb18eF0d;
+
+  // https://polygonscan.com/address/0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F
+  address internal constant CL_EMERGENCY_ORACLE = 0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F;
+
+  // https://polygonscan.com/address/0xc8a2ADC4261c6b669CdFf69E717E77C9cFeB420d
+  address internal constant VOTING_MACHINE = 0xc8a2ADC4261c6b669CdFf69E717E77C9cFeB420d;
+
+  // https://polygonscan.com/address/0x401B5D0294E23637c18fcc38b1Bca814CDa2637C
+  IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
+    IPayloadsControllerCore(0x401B5D0294E23637c18fcc38b1Bca814CDa2637C);
+
+  // https://polygonscan.com/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
+  address internal constant PC_DATA_HELPER = 0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A;
+
+  // https://polygonscan.com/address/0x77976B51569896523EE215962Ee91ff236Fa50E8
+  address internal constant VM_DATA_HELPER = 0x77976B51569896523EE215962Ee91ff236Fa50E8;
+
+  // https://polygonscan.com/address/0xDf7d0e6454DB638881302729F5ba99936EaAB233
+  address internal constant EXECUTOR_LVL_1 = 0xDf7d0e6454DB638881302729F5ba99936EaAB233;
+
+  // https://polygonscan.com/address/0x0000000000000000000000000000000000000000
+  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }
