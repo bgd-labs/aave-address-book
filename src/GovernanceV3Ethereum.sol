@@ -40,6 +40,9 @@ library GovernanceV3Ethereum {
   // https://etherscan.io/address/0x94363B11b37BC3ffe43AB09cff5A010352FE85dC
   address internal constant META_DELEGATE_HELPER = 0x94363B11b37BC3ffe43AB09cff5A010352FE85dC;
 
+  // https://etherscan.io/address/0x73C6Fb358dDA8e84D50e98A98F7c0dF32e15C7e9
+  address internal constant EMERGENCY_REGISTRY = 0x73C6Fb358dDA8e84D50e98A98F7c0dF32e15C7e9;
+
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant EXECUTOR_LVL_1 = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
