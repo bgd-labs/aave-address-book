@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.1](https://github.com/bgd-labs/aave-address-book/compare/v2.4.0...v2.4.1) (2023-09-18)
+
+
+### Bug Fixes
+
+* added missing gov v3 networks to generator ([#244](https://github.com/bgd-labs/aave-address-book/issues/244)) ([f6121e9](https://github.com/bgd-labs/aave-address-book/commit/f6121e96764ae8dbb9e79b6df231a22cf7832edd))
+* correct metis create3 factory ([#245](https://github.com/bgd-labs/aave-address-book/issues/245)) ([df2735e](https://github.com/bgd-labs/aave-address-book/commit/df2735e63e5775ab38e774db6d952cb8174f95bc))
+* updated eth gov helper. Added goerli helpers ([#246](https://github.com/bgd-labs/aave-address-book/issues/246)) ([748e2d7](https://github.com/bgd-labs/aave-address-book/commit/748e2d70b9465fb3bb02780c136b47909dcc3f1d))
+
 ## [2.4.0](https://github.com/bgd-labs/aave-address-book/compare/v2.3.0...v2.4.0) (2023-09-13)
 
 
