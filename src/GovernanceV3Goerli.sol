@@ -31,6 +31,9 @@ library GovernanceV3Goerli {
   // https://goerli.etherscan.io/address/0x160e2d1456B815d6a3d281218538dd6E2e3C841f
   address internal constant GOV_DATA_HELPER = 0x160e2d1456B815d6a3d281218538dd6E2e3C841f;
 
+  // https://goerli.etherscan.io/address/0x1ba21Fb1bDF4234CAe0AD1e02cF6750d7938E358
+  address internal constant GOVERNANCE_POWER_STRATEGY = 0x1ba21Fb1bDF4234CAe0AD1e02cF6750d7938E358;
+
   // https://goerli.etherscan.io/address/0xb7Ea453180e3c7856b341199269c6ca78658c2b2
   address internal constant EXECUTOR_LVL_1 = 0xb7Ea453180e3c7856b341199269c6ca78658c2b2;
 

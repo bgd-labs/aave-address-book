@@ -12,6 +12,7 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
+import {GOVERNANCE_V3_ABI} from '../abi/governance_v3_abi';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
@@ -60,21 +61,42 @@ const getDataWarehouse = async (
   votingStrategy: Address,
   publicClient: PublicClient,
 ): Promise<Address> => {
-  if (!votingStrategy) throw new Error('trying to fetch voting strategy from address 0');
+  if (!votingStrategy) throw new Error('trying to fetch data warehouse from address 0');
 
-  const votingMachineContract = getContract({
+  const votingStrategyContract = getContract({
     address: votingStrategy,
     abi: VOTING_STRATEGY_ABI,
     publicClient,
   });
 
-  return (await votingMachineContract.read.DATA_WAREHOUSE()) as Address;
+  return (await votingStrategyContract.read.DATA_WAREHOUSE()) as Address;
+};
+
+const getGovernancePowerStrategy = async (
+  governance: Address,
+  publicClient: PublicClient,
+): Promise<Address> => {
+  if (!governance) throw new Error('trying to fetch power strategy from address 0');
+
+  const governanceContract = getContract({
+    address: governance,
+    abi: GOVERNANCE_V3_ABI,
+    publicClient,
+  });
+
+  return (await governanceContract.read.getPowerStrategy()) as Address;
 };
 
 async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig) {
   let addresses: Addresses = {...ADDRESSES};
-  if (addresses.GOVERNANCE)
+  if (addresses.GOVERNANCE) {
+    addresses.GOVERNANCE_POWER_STRATEGY = await getGovernancePowerStrategy(
+      addresses.GOVERNANCE,
+      RPC_PROVIDERS[CHAIN_ID],
+    );
     addresses.GOVERNANCE = {value: addresses.GOVERNANCE, type: 'IGovernanceCore'};
+  }
+
   if (addresses.PAYLOADS_CONTROLLER) {
     const executors = await fetchV3ExecutorAddresses(
       RPC_PROVIDERS[CHAIN_ID],
@@ -95,15 +117,6 @@ async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig)
       addresses.VOTING_STRATEGY,
       RPC_PROVIDERS[CHAIN_ID],
     );
-
-    // addresses.VOTING_STRATEGY = {
-    //   value: votingStrategy,
-    //   type: 'IVotingStrategy',
-    // };
-    // addresses.DATA_WAREHOUSE = {
-    //   value: dataWarehouse,
-    //   type: 'IDataWarehouse',
-    // };
   }
   return addresses;
 }
