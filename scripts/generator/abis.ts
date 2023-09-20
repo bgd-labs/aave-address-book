@@ -4,7 +4,7 @@ export function generateABIImports() {
   const jsExports: string[] = [];
   for (const INTERFACE of ABI_INTERFACES) {
     const varName = `${INTERFACE}_ABI`;
-    jsExports.push(`export {${varName}} from './scripts/abis/${INTERFACE}';`);
+    jsExports.push(`export {${varName}} from './abis/${INTERFACE}';`);
   }
   return {
     solidity: [],
