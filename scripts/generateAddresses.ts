@@ -1,4 +1,12 @@
-import {appendFileSync, existsSync, mkdirSync, rmdirSync, writeFileSync} from 'fs';
+import {
+  appendFileSync,
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  rmSync,
+  rmdirSync,
+  writeFileSync,
+} from 'fs';
 import {
   governanceConfigMainnet,
   governanceConfigSepolia,
@@ -43,7 +51,7 @@ import {governanceConfigArbitrum} from './configs/governance/arbitrum';
 import {governanceConfigAvalanche, governanceConfigFuji} from './configs/governance/avalanche';
 import {governanceConfigOptimism} from './configs/governance/optimism';
 import {governanceConfigMumbai, governanceConfigPolygon} from './configs/governance/polygon';
-import {generateABIs} from './generator/abis';
+import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBinance} from './configs/governance/binance';
@@ -51,10 +59,13 @@ import {governanceConfigBinance} from './configs/governance/binance';
 async function main() {
   // cleanup ts artifacts
   if (existsSync('./src/ts')) {
-    rmdirSync('./src/ts', {recursive: true});
+    const files = readdirSync('./src/ts');
+    for (const file of files) {
+      if (file !== 'abis') rmSync(`./src/ts/${file}`);
+    }
+  } else {
+    mkdirSync('./src/ts');
   }
-  mkdirSync('./src/ts');
-
   // generate files
   const governanceNames = await Promise.all(
     [
@@ -113,7 +124,7 @@ async function main() {
 
   const smImports = generateSafetyModule();
 
-  const abis = await generateABIs();
+  const abis = generateABIImports();
 
   const imports = [
     governanceNames,

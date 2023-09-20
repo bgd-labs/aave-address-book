@@ -1,9 +1,6 @@
 import {writeFileSync} from 'fs';
 import {Hex, PublicClient, getContract, Address} from 'viem';
 import {Addresses, GovernanceConfig} from '../configs/types';
-import {PAYLOADS_CONTROLLER_ABI} from '../abi/payloadsController';
-import {VOTING_MACHINE_ABI} from '../abi/votingMachine_abi';
-import {VOTING_STRATEGY_ABI} from '../abi/votingStrategy_abi';
 import {RPC_PROVIDERS} from './clients';
 import {
   generateJsConstants,
@@ -12,7 +9,10 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
-import {GOVERNANCE_V3_ABI} from '../abi/governance_v3_abi';
+import {IGovernanceCore_ABI} from '../../src/ts/abis/IGovernanceCore';
+import {IPayloadsControllerCore_ABI} from '../../src/ts/abis/IPayloadsControllerCore';
+import {IVotingStrategy_ABI} from '../../src/ts/abis/IVotingStrategy';
+import {IVotingMachineWithProofs_ABI} from '../../src/ts/abis/IVotingMachineWithProofs';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
@@ -25,7 +25,7 @@ async function fetchV3ExecutorAddresses(
 ): Promise<ExecutorsV3> {
   const payloadsControllerContract = getContract({
     address: payloadsController,
-    abi: PAYLOADS_CONTROLLER_ABI,
+    abi: IPayloadsControllerCore_ABI,
     publicClient,
   });
 
@@ -42,14 +42,14 @@ async function fetchV3ExecutorAddresses(
 async function getVotingStrategyAndWarehouse(votingMachine: Address, publicClient: PublicClient) {
   const votingMachineContract = getContract({
     address: votingMachine,
-    abi: VOTING_MACHINE_ABI,
+    abi: IVotingMachineWithProofs_ABI,
     publicClient,
   });
 
   const votingStrategy = await votingMachineContract.read.VOTING_STRATEGY();
   const votingStrategyContract = getContract({
     address: votingStrategy,
-    abi: VOTING_STRATEGY_ABI,
+    abi: IVotingStrategy_ABI,
     publicClient,
   });
   const warehouse = await votingStrategyContract.read.DATA_WAREHOUSE();
@@ -64,7 +64,7 @@ function getGovernancePowerStrategy(governance: Address, publicClient: PublicCli
 
   const governanceContract = getContract({
     address: governance,
-    abi: GOVERNANCE_V3_ABI,
+    abi: IGovernanceCore_ABI,
     publicClient,
   });
 
