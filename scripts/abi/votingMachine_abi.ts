@@ -1136,4 +1136,4 @@ export const VOTING_MACHINE_ABI = [
     stateMutability: 'nonpayable',
     type: 'function',
   },
-];
+] as const;

@@ -23,59 +23,43 @@ async function fetchV3ExecutorAddresses(
   publicClient: PublicClient,
   payloadsController: Hex,
 ): Promise<ExecutorsV3> {
-  if (!payloadsController) throw new Error('trying to fetch executors for zero address');
-  // executors
   const payloadsControllerContract = getContract({
     address: payloadsController,
     abi: PAYLOADS_CONTROLLER_ABI,
     publicClient,
   });
 
-  const executorLvl1 = await payloadsControllerContract.read.getExecutorSettingsByAccessControl([
-    1,
-  ]);
-  const executorLvl2 = await payloadsControllerContract.read.getExecutorSettingsByAccessControl([
-    2,
+  const [executorLvl1, executorLvl2] = await Promise.all([
+    payloadsControllerContract.read.getExecutorSettingsByAccessControl([1]),
+    payloadsControllerContract.read.getExecutorSettingsByAccessControl([2]),
   ]);
   return {
     EXECUTOR_LVL_1: executorLvl1.executor,
     EXECUTOR_LVL_2: executorLvl2.executor,
   };
 }
-const getVotingStrategy = async (
-  votingMachine: Address,
-  publicClient: PublicClient,
-): Promise<Address> => {
-  if (!votingMachine) throw new Error('trying to fetch voting machine from address 0');
 
+async function getVotingStrategyAndWarehouse(votingMachine: Address, publicClient: PublicClient) {
   const votingMachineContract = getContract({
     address: votingMachine,
     abi: VOTING_MACHINE_ABI,
     publicClient,
   });
 
-  return (await votingMachineContract.read.VOTING_STRATEGY()) as Address;
-};
-
-const getDataWarehouse = async (
-  votingStrategy: Address,
-  publicClient: PublicClient,
-): Promise<Address> => {
-  if (!votingStrategy) throw new Error('trying to fetch data warehouse from address 0');
-
+  const votingStrategy = await votingMachineContract.read.VOTING_STRATEGY();
   const votingStrategyContract = getContract({
     address: votingStrategy,
     abi: VOTING_STRATEGY_ABI,
     publicClient,
   });
+  const warehouse = await votingStrategyContract.read.DATA_WAREHOUSE();
+  return {
+    VOTING_STRATEGY: {value: votingStrategy, type: 'IVotingStrategy'},
+    DATA_WAREHOUSE: {value: warehouse, type: 'IDataWarehouse'},
+  };
+}
 
-  return (await votingStrategyContract.read.DATA_WAREHOUSE()) as Address;
-};
-
-const getGovernancePowerStrategy = async (
-  governance: Address,
-  publicClient: PublicClient,
-): Promise<Address> => {
+function getGovernancePowerStrategy(governance: Address, publicClient: PublicClient) {
   if (!governance) throw new Error('trying to fetch power strategy from address 0');
 
   const governanceContract = getContract({
@@ -84,39 +68,36 @@ const getGovernancePowerStrategy = async (
     publicClient,
   });
 
-  return (await governanceContract.read.getPowerStrategy()) as Address;
-};
+  return governanceContract.read.getPowerStrategy();
+}
 
 async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig) {
   let addresses: Addresses = {...ADDRESSES};
-  if (addresses.GOVERNANCE) {
+  if (ADDRESSES.GOVERNANCE) {
     addresses.GOVERNANCE_POWER_STRATEGY = await getGovernancePowerStrategy(
-      addresses.GOVERNANCE,
+      ADDRESSES.GOVERNANCE,
       RPC_PROVIDERS[CHAIN_ID],
     );
     addresses.GOVERNANCE = {value: addresses.GOVERNANCE, type: 'IGovernanceCore'};
   }
 
-  if (addresses.PAYLOADS_CONTROLLER) {
+  if (ADDRESSES.PAYLOADS_CONTROLLER) {
     const executors = await fetchV3ExecutorAddresses(
       RPC_PROVIDERS[CHAIN_ID],
-      addresses.PAYLOADS_CONTROLLER as Hex,
+      ADDRESSES.PAYLOADS_CONTROLLER,
     );
     addresses.PAYLOADS_CONTROLLER = {
-      value: addresses.PAYLOADS_CONTROLLER,
+      value: ADDRESSES.PAYLOADS_CONTROLLER,
       type: 'IPayloadsControllerCore',
     };
     addresses = {...addresses, ...executors};
   }
-  if (addresses.VOTING_MACHINE) {
-    addresses.VOTING_STRATEGY = await getVotingStrategy(
-      addresses.VOTING_MACHINE as Address,
+  if (ADDRESSES.VOTING_MACHINE) {
+    const strategyAndWareHouse = await getVotingStrategyAndWarehouse(
+      ADDRESSES.VOTING_MACHINE,
       RPC_PROVIDERS[CHAIN_ID],
     );
-    addresses.DATA_WAREHOUSE = await getDataWarehouse(
-      addresses.VOTING_STRATEGY,
-      RPC_PROVIDERS[CHAIN_ID],
-    );
+    addresses = {...addresses, ...strategyAndWareHouse};
   }
   return addresses;
 }
@@ -129,7 +110,7 @@ export async function generateGovernanceLibrary(config: GovernanceConfig) {
     `./src/${name}.sol`,
     prefixWithPragma(
       prefixWithGeneratedWarning(
-        `import {IGovernanceCore, IPayloadsControllerCore} from './GovernanceV3.sol';\n` +
+        `import {IGovernanceCore, IPayloadsControllerCore, IDataWarehouse, IVotingStrategy} from './GovernanceV3.sol';\n` +
           wrapIntoSolidityLibrary(
             generateSolidityConstants({chainId: config.CHAIN_ID, addresses}),
             name,

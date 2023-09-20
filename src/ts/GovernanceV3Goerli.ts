@@ -31,8 +31,8 @@ export const EXECUTOR_LVL_1 = '0xb7Ea453180e3c7856b341199269c6ca78658c2b2';
 // https://goerli.etherscan.io/address/0x78350567D0598F84091318769c5b66dcbB811524
 export const EXECUTOR_LVL_2 = '0x78350567D0598F84091318769c5b66dcbB811524';
 
-// https://goerli.etherscan.io/address/0x2e5a80Be4EA93225f0D9bFE1f8aC6470f54acDb9
+// IVotingStrategy https://goerli.etherscan.io/address/0x2e5a80Be4EA93225f0D9bFE1f8aC6470f54acDb9
 export const VOTING_STRATEGY = '0x2e5a80Be4EA93225f0D9bFE1f8aC6470f54acDb9';
 
-// https://goerli.etherscan.io/address/0xC946cc6bb934bAf2A539BaB62c647aff09D2e2D8
+// IDataWarehouse https://goerli.etherscan.io/address/0xC946cc6bb934bAf2A539BaB62c647aff09D2e2D8
 export const DATA_WAREHOUSE = '0xC946cc6bb934bAf2A539BaB62c647aff09D2e2D8';

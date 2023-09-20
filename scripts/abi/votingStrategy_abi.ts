@@ -269,4 +269,4 @@ export const VOTING_STRATEGY_ABI = [
     stateMutability: 'pure',
     type: 'function',
   },
-];
+] as const;

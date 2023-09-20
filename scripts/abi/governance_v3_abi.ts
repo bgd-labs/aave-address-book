@@ -1286,4 +1286,4 @@ export const GOVERNANCE_V3_ABI = [
     stateMutability: 'nonpayable',
     type: 'function',
   },
-];
+] as const;
