@@ -29,4 +29,10 @@ library GovernanceV3Polygon {
 
   // https://polygonscan.com/address/0x0000000000000000000000000000000000000000
   address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+
+  // https://polygonscan.com/address/0x59e6CAD5d7E7b9A26a45a1d1E74C7aF008170042
+  address internal constant VOTING_STRATEGY = 0x59e6CAD5d7E7b9A26a45a1d1E74C7aF008170042;
+
+  // https://polygonscan.com/address/0xf41193E25408F652AF878c47E4401A01B5E4B682
+  address internal constant DATA_WAREHOUSE = 0xf41193E25408F652AF878c47E4401A01B5E4B682;
 }

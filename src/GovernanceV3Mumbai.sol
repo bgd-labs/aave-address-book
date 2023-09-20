@@ -20,4 +20,10 @@ library GovernanceV3Mumbai {
 
   // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
   address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+
+  // https://mumbai.polygonscan.com/address/0x2FD0ea3cF58cB9cD25c2a186E643629198A37600
+  address internal constant VOTING_STRATEGY = 0x2FD0ea3cF58cB9cD25c2a186E643629198A37600;
+
+  // https://mumbai.polygonscan.com/address/0x1F780a6E860792E59F2160b1E9E503bFF8c58Cb1
+  address internal constant DATA_WAREHOUSE = 0x1F780a6E860792E59F2160b1E9E503bFF8c58Cb1;
 }

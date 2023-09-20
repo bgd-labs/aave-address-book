@@ -1,7 +1,9 @@
 import {writeFileSync} from 'fs';
-import {Hex, PublicClient, getContract} from 'viem';
+import {Hex, PublicClient, getContract, Address} from 'viem';
 import {Addresses, GovernanceConfig} from '../configs/types';
 import {PAYLOADS_CONTROLLER_ABI} from '../abi/payloadsController';
+import {VOTING_MACHINE_ABI} from '../abi/votingMachine_abi';
+import {VOTING_STRATEGY_ABI} from '../abi/votingStrategy_abi';
 import {RPC_PROVIDERS} from './clients';
 import {
   generateJsConstants,
@@ -39,9 +41,38 @@ async function fetchV3ExecutorAddresses(
     EXECUTOR_LVL_2: executorLvl2.executor,
   };
 }
+const getVotingStrategy = async (
+  votingMachine: Address,
+  publicClient: PublicClient,
+): Promise<Address> => {
+  if (!votingMachine) throw new Error('trying to fetch voting machine from address 0');
+
+  const votingMachineContract = getContract({
+    address: votingMachine,
+    abi: VOTING_MACHINE_ABI,
+    publicClient,
+  });
+
+  return (await votingMachineContract.read.VOTING_STRATEGY()) as Address;
+};
+
+const getDataWarehouse = async (
+  votingStrategy: Address,
+  publicClient: PublicClient,
+): Promise<Address> => {
+  if (!votingStrategy) throw new Error('trying to fetch voting strategy from address 0');
+
+  const votingMachineContract = getContract({
+    address: votingStrategy,
+    abi: VOTING_STRATEGY_ABI,
+    publicClient,
+  });
+
+  return (await votingMachineContract.read.DATA_WAREHOUSE()) as Address;
+};
 
 async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig) {
-  const addresses: Addresses = {...ADDRESSES};
+  let addresses: Addresses = {...ADDRESSES};
   if (addresses.GOVERNANCE)
     addresses.GOVERNANCE = {value: addresses.GOVERNANCE, type: 'IGovernanceCore'};
   if (addresses.PAYLOADS_CONTROLLER) {
@@ -53,7 +84,26 @@ async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig)
       value: addresses.PAYLOADS_CONTROLLER,
       type: 'IPayloadsControllerCore',
     };
-    return {...addresses, ...executors};
+    addresses = {...addresses, ...executors};
+  }
+  if (addresses.VOTING_MACHINE) {
+    addresses.VOTING_STRATEGY = await getVotingStrategy(
+      addresses.VOTING_MACHINE as Address,
+      RPC_PROVIDERS[CHAIN_ID],
+    );
+    addresses.DATA_WAREHOUSE = await getDataWarehouse(
+      addresses.VOTING_STRATEGY,
+      RPC_PROVIDERS[CHAIN_ID],
+    );
+
+    // addresses.VOTING_STRATEGY = {
+    //   value: votingStrategy,
+    //   type: 'IVotingStrategy',
+    // };
+    // addresses.DATA_WAREHOUSE = {
+    //   value: dataWarehouse,
+    //   type: 'IDataWarehouse',
+    // };
   }
   return addresses;
 }

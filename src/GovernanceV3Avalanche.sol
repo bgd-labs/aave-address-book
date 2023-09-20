@@ -29,4 +29,10 @@ library GovernanceV3Avalanche {
 
   // https://snowtrace.io/address/0x0000000000000000000000000000000000000000
   address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+
+  // https://snowtrace.io/address/0x690C218668B440204F369Af1541245d367cc805C
+  address internal constant VOTING_STRATEGY = 0x690C218668B440204F369Af1541245d367cc805C;
+
+  // https://snowtrace.io/address/0x9626F9d60CC0B7e1c9a0A47b7f0bd618fb6f40ff
+  address internal constant DATA_WAREHOUSE = 0x9626F9d60CC0B7e1c9a0A47b7f0bd618fb6f40ff;
 }

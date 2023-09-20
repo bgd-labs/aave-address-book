@@ -20,4 +20,10 @@ library GovernanceV3Fuji {
 
   // https://testnet.snowtrace.io/address/0x0000000000000000000000000000000000000000
   address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
+
+  // https://testnet.snowtrace.io/address/0x8c55a1bf3DC7076522C5cd025f497A498eF90143
+  address internal constant VOTING_STRATEGY = 0x8c55a1bf3DC7076522C5cd025f497A498eF90143;
+
+  // https://testnet.snowtrace.io/address/0xDB23939d4C483E748c2487916fB20d7fF7e39588
+  address internal constant DATA_WAREHOUSE = 0xDB23939d4C483E748c2487916fB20d7fF7e39588;
 }
