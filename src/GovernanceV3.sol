@@ -4,6 +4,7 @@ pragma experimental ABIEncoderV2;
 
 import {IVotingMachineWithProofs} from './governance-v3/IVotingMachineWithProofs.sol';
 import {IDataWarehouse} from './governance-v3/IDataWarehouse.sol';
+import {IVotingStrategy} from './governance-v3/IVotingStrategy.sol';
 
 library PayloadsControllerUtils {
   /// @notice enum with supported access levels
