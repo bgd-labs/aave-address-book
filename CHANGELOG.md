@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.4.2](https://github.com/bgd-labs/aave-address-book/compare/v2.4.1...v2.4.2) (2023-09-21)
+
+
+### Bug Fixes
+
+* added voting strategy and data warehouse ([#250](https://github.com/bgd-labs/aave-address-book/issues/250)) ([cb4af18](https://github.com/bgd-labs/aave-address-book/commit/cb4af18214cb370f4c309686a863ccb340671aaf))
+* update gho ir ([#251](https://github.com/bgd-labs/aave-address-book/issues/251)) ([f2d16fc](https://github.com/bgd-labs/aave-address-book/commit/f2d16fcdb5b24559691035f74e32afea98d6e703))
+* update governancev2 links ([#249](https://github.com/bgd-labs/aave-address-book/issues/249)) ([63670ad](https://github.com/bgd-labs/aave-address-book/commit/63670ad734badf5f3c6ee66662829051ab360449))
+
 ### [2.4.1](https://github.com/bgd-labs/aave-address-book/compare/v2.4.0...v2.4.1) (2023-09-18)
 
 
