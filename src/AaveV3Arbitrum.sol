@@ -58,8 +58,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
 
-  // https://arbiscan.io/address/0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE
-  address internal constant DEBT_SWAP_ADAPTER = 0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE;
+  // https://arbiscan.io/address/0x9E8e9D6b0D24216F59043db68BDda1620892f549
+  address internal constant DEBT_SWAP_ADAPTER = 0x9E8e9D6b0D24216F59043db68BDda1620892f549;
 
   // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;

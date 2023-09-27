@@ -44,8 +44,8 @@ export const EMISSION_MANAGER = '0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73';
 // https://explorer.optimism.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
 export const CAPS_PLUS_RISK_STEWARD = '0x5E76E98E0963EcDC6A065d1435F84065b7523f39';
 
-// https://explorer.optimism.io/address/0xb77fc84a549ecc0b410d6fa15159C2df207545a3
-export const DEBT_SWAP_ADAPTER = '0xb77fc84a549ecc0b410d6fa15159C2df207545a3';
+// https://explorer.optimism.io/address/0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC
+export const DEBT_SWAP_ADAPTER = '0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC';
 
 // https://explorer.optimism.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
 export const L2_ENCODER = '0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC';

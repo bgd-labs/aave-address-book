@@ -58,8 +58,8 @@ library AaveV3Optimism {
   // https://explorer.optimism.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
 
-  // https://explorer.optimism.io/address/0xb77fc84a549ecc0b410d6fa15159C2df207545a3
-  address internal constant DEBT_SWAP_ADAPTER = 0xb77fc84a549ecc0b410d6fa15159C2df207545a3;
+  // https://explorer.optimism.io/address/0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC
+  address internal constant DEBT_SWAP_ADAPTER = 0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC;
 
   // https://explorer.optimism.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;

@@ -58,8 +58,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778;
 
-  // https://etherscan.io/address/0x8f30ADaA6950b31f675bF8a709Bc23F55aa24735
-  address internal constant DEBT_SWAP_ADAPTER = 0x8f30ADaA6950b31f675bF8a709Bc23F55aa24735;
+  // https://etherscan.io/address/0x8761e0370f94f68Db8EaA731f4fC581f6AD0Bd68
+  address internal constant DEBT_SWAP_ADAPTER = 0x8761e0370f94f68Db8EaA731f4fC581f6AD0Bd68;
 
   // https://etherscan.io/address/0x21714092D90c7265F52fdfDae068EC11a23C6248
   address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
