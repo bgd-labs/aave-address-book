@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/bgd-labs/aave-address-book/compare/v2.4.2...v2.5.0) (2023-09-27)
+
+
+### Features
+
+* upgrade debt swap adapters ([#214](https://github.com/bgd-labs/aave-address-book/issues/214)) ([ed9d2f9](https://github.com/bgd-labs/aave-address-book/commit/ed9d2f93dad7fddf2e4d995cebd5b8468038bb64))
+
 ### [2.4.2](https://github.com/bgd-labs/aave-address-book/compare/v2.4.1...v2.4.2) (2023-09-21)
 
 
