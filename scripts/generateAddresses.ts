@@ -55,6 +55,14 @@ import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBinance} from './configs/governance/binance';
+import {baseAddresses} from './configs/networks/base';
+import {generateNetworkAddresses} from './generator/networkGenerator';
+import {arbitrumAddresses} from './configs/networks/arbitrum';
+import {avalancheAddresses} from './configs/networks/avalanche';
+import {ethereumAddresses} from './configs/networks/ethereum';
+import {polygonAddresses} from './configs/networks/polygon';
+import {fantomAddresses} from './configs/networks/fantom';
+import {optimismAddresses} from './configs/networks/optimism';
 
 async function main() {
   // cleanup ts artifacts
@@ -118,6 +126,16 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
 
+  const networkAddresses = [
+    arbitrumAddresses,
+    avalancheAddresses,
+    baseAddresses,
+    ethereumAddresses,
+    fantomAddresses,
+    optimismAddresses,
+    polygonAddresses,
+  ].map((addresses) => generateNetworkAddresses(addresses));
+
   const miscImports = generateMisc();
 
   const govImports = generateGovV2();
@@ -130,6 +148,7 @@ async function main() {
     governanceNames,
     v2LibraryNames,
     v3LibraryNames,
+    networkAddresses,
     miscImports,
     govImports,
     smImports,
