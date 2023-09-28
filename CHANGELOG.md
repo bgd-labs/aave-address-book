@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/bgd-labs/aave-address-book/compare/v2.5.0...v2.6.0) (2023-09-28)
+
+
+### Features
+
+* add base debt swap ([#255](https://github.com/bgd-labs/aave-address-book/issues/255)) ([225d138](https://github.com/bgd-labs/aave-address-book/commit/225d138ea394c03f92d125d06437f66a5280199f))
+* move interfaces to single files ([#254](https://github.com/bgd-labs/aave-address-book/issues/254)) ([a041491](https://github.com/bgd-labs/aave-address-book/commit/a0414914b1c9d4a4986833183f309bf0ea36d6dc))
+
 ## [2.5.0](https://github.com/bgd-labs/aave-address-book/compare/v2.4.2...v2.5.0) (2023-09-27)
 
 
