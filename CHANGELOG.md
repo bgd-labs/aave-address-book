@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.7.0](https://github.com/bgd-labs/aave-address-book/compare/v2.6.0...v2.7.0) (2023-10-03)
+
+
+### Features
+
+* add entrypoint per network & paraswap fee claimers ([#257](https://github.com/bgd-labs/aave-address-book/issues/257)) ([974f5b8](https://github.com/bgd-labs/aave-address-book/commit/974f5b85ff327dafd62e429044d063fd64851248))
+
 ## [2.6.0](https://github.com/bgd-labs/aave-address-book/compare/v2.5.0...v2.6.0) (2023-09-28)
 
 
