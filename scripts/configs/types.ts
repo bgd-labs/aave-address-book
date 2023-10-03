@@ -82,3 +82,15 @@ export type ReserveData = {
   ORACLE: Hex;
   STATA_TOKEN?: Hex;
 };
+
+/**
+ * @dev config for addresses that belong more to a network then to a specific pool
+ */
+export interface NetworkAddresses {
+  name: string;
+  chainId: ChainId;
+  addresses: {
+    // https://github.com/bgd-labs/aave-paraswap-claimer
+    PARASWAP_FEE_CLAIMER?: Hex;
+  };
+}
