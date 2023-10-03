@@ -9,7 +9,7 @@ import {
 } from './utils';
 
 export function generateNetworkAddresses(config: NetworkAddresses) {
-  const name = `${config.name}Addresses`;
+  const name = `Misc${config.name}`;
 
   fs.writeFileSync(
     `./src/${name}.sol`,

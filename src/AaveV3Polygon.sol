@@ -198,9 +198,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xF9680D99D6C9589e2a93a78A04A279e509205945
   address internal constant WETH_ORACLE = 0xF9680D99D6C9589e2a93a78A04A279e509205945;
 
-  // https://polygonscan.com/address/0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F
+  // https://polygonscan.com/address/0xf6733B9842883BFE0e0a940eA2F572676af31bde
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0x27eFE5db315b71753b2a38ED3d5dd7E9362ba93F;
+    0xf6733B9842883BFE0e0a940eA2F572676af31bde;
 
   // https://polygonscan.com/address/0xc2132D05D31c914a87C6611C10748AEb04B58e8F
   address internal constant USDT_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
