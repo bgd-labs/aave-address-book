@@ -61,6 +61,16 @@ library AaveV3Base {
   // https://basescan.org/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
   address internal constant DEBT_SWAP_ADAPTER = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
 
+  // https://basescan.org/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
+  address internal constant WITHDRAW_SWAP_ADAPTER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
+
+  // https://basescan.org/address/0x2E549104c516b8657A7D888494DfbAbD7C70b464
+  address internal constant SWAP_COLLATERAL_ADAPTER = 0x2E549104c516b8657A7D888494DfbAbD7C70b464;
+
+  // https://basescan.org/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
+  address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
+    0x78F8Bd884C3D738B74B420540659c82f392820e0;
+
   // https://basescan.org/address/0xc7751400F809cdB0C167F87985083C558a0610F7
   address internal constant LISTING_ENGINE = 0xc7751400F809cdB0C167F87985083C558a0610F7;
 
