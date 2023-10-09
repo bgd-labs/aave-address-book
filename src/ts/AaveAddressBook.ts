@@ -27,6 +27,7 @@ export * as AaveV3Avalanche from './AaveV3Avalanche';
 export * as AaveV3Fuji from './AaveV3Fuji';
 export * as AaveV3Base from './AaveV3Base';
 export * as AaveV3Metis from './AaveV3Metis';
+export * as AaveV3Gnosis from './AaveV3Gnosis';
 export * as AaveV3ArbitrumGoerli from './AaveV3ArbitrumGoerli';
 export * as AaveV3Arbitrum from './AaveV3Arbitrum';
 export * as AaveV3OptimismGoerli from './AaveV3OptimismGoerli';

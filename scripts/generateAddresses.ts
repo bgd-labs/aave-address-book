@@ -20,6 +20,7 @@ import {
 import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
 import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
+import {gnosisProtoV3} from './configs/pools/gnosis';
 import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
 import {
   mumbaiProtoV2,
@@ -102,6 +103,7 @@ async function main() {
       fujiProtoV3,
       baseProtoV3,
       metisProtoV3,
+      gnosisProtoV3,
       arbitrumGoerliProtoV3,
       arbitrumProtoV3,
       optimismGoerliProtoV3,

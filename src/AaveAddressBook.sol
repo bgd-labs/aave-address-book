@@ -30,6 +30,7 @@ import {AaveV3Avalanche} from './AaveV3Avalanche.sol';
 import {AaveV3Fuji} from './AaveV3Fuji.sol';
 import {AaveV3Base} from './AaveV3Base.sol';
 import {AaveV3Metis} from './AaveV3Metis.sol';
+import {AaveV3Gnosis} from './AaveV3Gnosis.sol';
 import {AaveV3ArbitrumGoerli} from './AaveV3ArbitrumGoerli.sol';
 import {AaveV3Arbitrum} from './AaveV3Arbitrum.sol';
 import {AaveV3OptimismGoerli} from './AaveV3OptimismGoerli.sol';
