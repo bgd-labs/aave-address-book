@@ -159,7 +159,7 @@ export const RPC_PROVIDERS = {
       multicall: true,
     },
   }),
-  [ChainId.binance]: createPublicClient({
+  [ChainId.bnb]: createPublicClient({
     chain: bsc,
     transport: http(),
     batch: {
