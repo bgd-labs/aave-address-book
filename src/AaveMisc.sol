@@ -26,14 +26,14 @@ library AaveMisc {
   // https://etherscan.io/address/0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517
   address internal constant PROXY_ADMIN_ETHEREUM_LONG = 0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517;
 
-  // https://bscscan.com/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
+  // https://etherscan.io/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
   address internal constant TRANSPARENT_PROXY_FACTORY_BINANCE =
     0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
 
-  // https://bscscan.com/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
+  // https://etherscan.io/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
   address internal constant PROXY_ADMIN_BINANCE = 0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c;
 
-  // https://bscscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  // https://etherscan.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
   address internal constant CREATE_3_FACTORY_BINANCE = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
   // https://polygonscan.com/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29

@@ -1,17 +1,5 @@
-import {
-  appendFileSync,
-  existsSync,
-  mkdirSync,
-  readdirSync,
-  rmSync,
-  rmdirSync,
-  writeFileSync,
-} from 'fs';
-import {
-  governanceConfigMainnet,
-  governanceConfigSepolia,
-  governanceConfigGoerli,
-} from './configs/governance/ethereum';
+import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
+import {governanceConfigMainnet, governanceConfigGoerli} from './configs/governance/ethereum';
 import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
@@ -54,7 +42,7 @@ import {governanceConfigMumbai, governanceConfigPolygon} from './configs/governa
 import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
-import {governanceConfigBinance} from './configs/governance/binance';
+import {governanceConfigBNB} from './configs/governance/bnb';
 import {baseAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses} from './configs/networks/arbitrum';
@@ -88,7 +76,7 @@ async function main() {
       governanceConfigGoerli,
       governanceConfigMetis,
       governanceConfigBase,
-      governanceConfigBinance,
+      governanceConfigBNB,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(

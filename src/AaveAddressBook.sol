@@ -12,7 +12,7 @@ import {GovernanceV3Mumbai} from './GovernanceV3Mumbai.sol';
 import {GovernanceV3Goerli} from './GovernanceV3Goerli.sol';
 import {GovernanceV3Metis} from './GovernanceV3Metis.sol';
 import {GovernanceV3Base} from './GovernanceV3Base.sol';
-import {GovernanceV3Binance} from './GovernanceV3Binance.sol';
+import {GovernanceV3BNB} from './GovernanceV3BNB.sol';
 import {AaveV2EthereumAMM} from './AaveV2EthereumAMM.sol';
 import {AaveV2EthereumArc} from './AaveV2EthereumArc.sol';
 import {AaveV2Ethereum} from './AaveV2Ethereum.sol';

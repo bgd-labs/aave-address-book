@@ -20,5 +20,5 @@ export enum ChainId {
   scroll_sepolia = 534351,
   metis = 1088,
   base = 8453,
-  binance = 56,
+  bnb = 56,
 }
