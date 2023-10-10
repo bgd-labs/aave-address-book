@@ -44,6 +44,7 @@ import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
+import {governanceConfigGnosis} from './configs/governance/gnosis';
 import {baseAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses} from './configs/networks/arbitrum';
@@ -78,6 +79,7 @@ async function main() {
       governanceConfigMetis,
       governanceConfigBase,
       governanceConfigBNB,
+      governanceConfigGnosis,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
