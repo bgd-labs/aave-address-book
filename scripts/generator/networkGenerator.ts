@@ -8,7 +8,7 @@ import {
   wrapIntoSolidityLibrary,
 } from './utils';
 
-export function generateNetworkAddresses(config: NetworkAddresses) {
+export function generateNetworkAddresses(config: NetworkAddresses<any>) {
   const name = `Misc${config.name}`;
 
   fs.writeFileSync(
