@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IAaveEcosystemReserveController} from './common/IAaveEcosystemReserveController.sol';
+import {IStreamable} from './common/IStreamable.sol';
+
 library MiscEthereum {
   // https://etherscan.io/address/0x3d569673dAa0575c936c7c67c4E6AedA69CC630C
   IAaveEcosystemReserveController internal constant AAVE_ECOSYSTEM_RESERVE_CONTROLLER =
