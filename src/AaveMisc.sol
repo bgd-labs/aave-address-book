@@ -86,6 +86,16 @@ library AaveMisc {
   // https://andromeda-explorer.metis.io/address/0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A
   address internal constant CREATE_3_FACTORY_METIS = 0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A;
 
+  // https://blockscout.com/xdai/mainnet/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
+  address internal constant TRANSPARENT_PROXY_FACTORY_GNOSIS =
+    0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
+
+  // https://blockscout.com/xdai/mainnet/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
+  address internal constant PROXY_ADMIN_GNOSIS = 0xe892E40C92c2E4D281Be59b2E6300F271d824E75;
+
+  // https://blockscout.com/xdai/mainnet/address/0xEa3B43Bf2FeEDd2A30BB30112bF2e824e35AF909
+  address internal constant CREATE_3_FACTORY_GNOSIS = 0xEa3B43Bf2FeEDd2A30BB30112bF2e824e35AF909;
+
   // https://basescan.org/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
   address internal constant TRANSPARENT_PROXY_FACTORY_BASE =
     0x05225Cd708bCa9253789C1374e4337a019e99D56;
