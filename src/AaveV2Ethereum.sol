@@ -466,9 +466,9 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x3886BA987236181D98F2401c507Fb8BeA7871dF2
   address internal constant TUSD_ORACLE = 0x3886BA987236181D98F2401c507Fb8BeA7871dF2;
 
-  // https://etherscan.io/address/0x531F1D684c35e570eE580D6881D0844caee682cd
+  // https://etherscan.io/address/0xb70e28437Aec70a8cfE5240F54c463cF849bE17C
   address internal constant TUSD_INTEREST_RATE_STRATEGY =
-    0x531F1D684c35e570eE580D6881D0844caee682cd;
+    0xb70e28437Aec70a8cfE5240F54c463cF849bE17C;
 
   // https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
   address internal constant USDC_UNDERLYING = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
