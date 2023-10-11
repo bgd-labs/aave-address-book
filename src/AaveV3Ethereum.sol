@@ -68,8 +68,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f
   address internal constant GHO_TOKEN = 0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f;
 
-  // https://etherscan.io/address/0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07
-  address internal constant LISTING_ENGINE = 0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07;
+  // https://etherscan.io/address/0xA3e44d830440dF5098520F62Ebec285B1198c51E
+  address internal constant CONFIG_ENGINE = 0xA3e44d830440dF5098520F62Ebec285B1198c51E;
 
   // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

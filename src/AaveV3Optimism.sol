@@ -64,8 +64,8 @@ library AaveV3Optimism {
   // https://explorer.optimism.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
 
-  // https://explorer.optimism.io/address/0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3
-  address internal constant LISTING_ENGINE = 0x7A9A9c14B35E58ffa1cC84aB421acE0FdcD289E3;
+  // https://explorer.optimism.io/address/0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9
+  address internal constant CONFIG_ENGINE = 0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9;
 
   // https://explorer.optimism.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

@@ -17,13 +17,13 @@ export const CREATE_3_FACTORY_ETHEREUM = '0xcc3C54B95f3f1867A43009B80ed4DD930E3c
 // https://etherscan.io/address/0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517
 export const PROXY_ADMIN_ETHEREUM_LONG = '0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517';
 
-// address https://etherscan.io/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
+// address https://bscscan.com/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
 export const TRANSPARENT_PROXY_FACTORY_BINANCE = '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A';
 
-// address https://etherscan.io/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
+// address https://bscscan.com/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
 export const PROXY_ADMIN_BINANCE = '0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c';
 
-// address https://etherscan.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+// address https://bscscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
 export const CREATE_3_FACTORY_BINANCE = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
 
 // address https://polygonscan.com/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29

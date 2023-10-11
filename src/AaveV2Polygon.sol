@@ -48,7 +48,7 @@ library AaveV2Polygon {
   address internal constant DEBT_SWAP_ADAPTER = 0x1E623A311948b531B07B6EA7CC34a9A2bCADADd0;
 
   // https://polygonscan.com/address/0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9
-  address internal constant LISTING_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
+  address internal constant CONFIG_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
 
   // https://polygonscan.com/address/0x3db487975aB1728DB5787b798866c2021B24ec52
   address internal constant MIGRATION_HELPER = 0x3db487975aB1728DB5787b798866c2021B24ec52;

@@ -48,7 +48,7 @@ library AaveV2Ethereum {
   address internal constant DEBT_SWAP_ADAPTER = 0x6A6FA664D4Fa49a6a780a1D6143f079f8dd7C33d;
 
   // https://etherscan.io/address/0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9
-  address internal constant LISTING_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
+  address internal constant CONFIG_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
 
   // https://etherscan.io/address/0xB748952c7BC638F31775245964707Bcc5DDFabFC
   address internal constant MIGRATION_HELPER = 0xB748952c7BC638F31775245964707Bcc5DDFabFC;
