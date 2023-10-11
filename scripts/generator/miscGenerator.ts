@@ -20,17 +20,17 @@ const miscAddresses: Addresses = {
   CREATE_3_FACTORY_ETHEREUM: '0xcc3C54B95f3f1867A43009B80ed4DD930E3cE2F7',
   PROXY_ADMIN_ETHEREUM_LONG: '0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517',
   TRANSPARENT_PROXY_FACTORY_BINANCE: {
-    chainId: ChainId.binance,
+    chainId: ChainId.bnb,
     type: 'address',
     value: '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A',
   },
   PROXY_ADMIN_BINANCE: {
-    chainId: ChainId.binance,
+    chainId: ChainId.bnb,
     type: 'address',
     value: '0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c',
   },
   CREATE_3_FACTORY_BINANCE: {
-    chainId: ChainId.binance,
+    chainId: ChainId.bnb,
     type: 'address',
     value: '0x3b56998Ec06477704622ca8e2eA1b4db134cec32',
   },
