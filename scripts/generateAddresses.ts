@@ -122,7 +122,6 @@ async function main() {
     fantomAddresses,
     optimismAddresses,
     polygonAddresses,
-    baseAddresses,
     metisAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 

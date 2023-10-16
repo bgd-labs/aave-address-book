@@ -46,7 +46,6 @@ import {MiscEthereum} from './MiscEthereum.sol';
 import {MiscFantom} from './MiscFantom.sol';
 import {MiscOptimism} from './MiscOptimism.sol';
 import {MiscPolygon} from './MiscPolygon.sol';
-import {MiscBase} from './MiscBase.sol';
 import {MiscMetis} from './MiscMetis.sol';
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 import {AaveGovernanceV2} from './AaveGovernanceV2.sol';

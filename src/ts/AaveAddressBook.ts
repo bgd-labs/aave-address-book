@@ -43,7 +43,6 @@ export * as MiscEthereum from './MiscEthereum';
 export * as MiscFantom from './MiscFantom';
 export * as MiscOptimism from './MiscOptimism';
 export * as MiscPolygon from './MiscPolygon';
-export * as MiscBase from './MiscBase';
 export * as MiscMetis from './MiscMetis';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
