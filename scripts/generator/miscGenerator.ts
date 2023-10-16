@@ -122,7 +122,7 @@ const miscAddresses: Addresses = {
   CREATE_3_FACTORY_GNOSIS: {
     chainId: ChainId.gnosis,
     type: 'address',
-    value: '0xEa3B43Bf2FeEDd2A30BB30112bF2e824e35AF909',
+    value: '0x2cC41488f4494c5e11cB6cbA82199442B9f495B6',
   },
   TRANSPARENT_PROXY_FACTORY_BASE: {
     chainId: ChainId.base,
@@ -138,21 +138,6 @@ const miscAddresses: Addresses = {
     chainId: ChainId.base,
     type: 'address',
     value: '0x3b56998Ec06477704622ca8e2eA1b4db134cec32',
-  },
-  TRANSPARENT_PROXY_FACTORY_GNOSIS: {
-    chainId: ChainId.gnosis,
-    type: 'address',
-    value: '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A',
-  },
-  PROXY_ADMIN_GNOSIS: {
-    chainId: ChainId.gnosis,
-    type: 'address',
-    value: '0xe892E40C92c2E4D281Be59b2E6300F271d824E75',
-  },
-  CREATE_3_FACTORY_GNOSIS: {
-    chainId: ChainId.gnosis,
-    type: 'address',
-    value: '0x2cC41488f4494c5e11cB6cbA82199442B9f495B6',
   },
   AAVE_SWAPPER_ETHEREUM: '0x3ea64b1C0194524b48F9118462C8E9cd61a243c7',
   AAVE_POL_ETH_BRIDGE: '0xc928002904Ec475663A83063D492EA2aE09EbDA1',

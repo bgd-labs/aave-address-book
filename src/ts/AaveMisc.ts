@@ -77,8 +77,8 @@ export const TRANSPARENT_PROXY_FACTORY_GNOSIS = '0x47aAdaAE1F05C978E6aBb7568d11B
 // address https://blockscout.com/xdai/mainnet/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
 export const PROXY_ADMIN_GNOSIS = '0xe892E40C92c2E4D281Be59b2E6300F271d824E75';
 
-// address https://blockscout.com/xdai/mainnet/address/0xEa3B43Bf2FeEDd2A30BB30112bF2e824e35AF909
-export const CREATE_3_FACTORY_GNOSIS = '0xEa3B43Bf2FeEDd2A30BB30112bF2e824e35AF909';
+// address https://blockscout.com/xdai/mainnet/address/0x2cC41488f4494c5e11cB6cbA82199442B9f495B6
+export const CREATE_3_FACTORY_GNOSIS = '0x2cC41488f4494c5e11cB6cbA82199442B9f495B6';
 
 // address https://basescan.org/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
 export const TRANSPARENT_PROXY_FACTORY_BASE = '0x05225Cd708bCa9253789C1374e4337a019e99D56';
@@ -88,15 +88,6 @@ export const PROXY_ADMIN_BASE = '0xc85b1E333aecc99340b2320493Fe2d22b8734795';
 
 // address https://basescan.org/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
 export const CREATE_3_FACTORY_BASE = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
-
-// address https://blockscout.com/xdai/mainnet/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
-export const TRANSPARENT_PROXY_FACTORY_GNOSIS = '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A';
-
-// address https://blockscout.com/xdai/mainnet/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
-export const PROXY_ADMIN_GNOSIS = '0xe892E40C92c2E4D281Be59b2E6300F271d824E75';
-
-// address https://blockscout.com/xdai/mainnet/address/0x2cC41488f4494c5e11cB6cbA82199442B9f495B6
-export const CREATE_3_FACTORY_GNOSIS = '0x2cC41488f4494c5e11cB6cbA82199442B9f495B6';
 
 // https://etherscan.io/address/0x3ea64b1C0194524b48F9118462C8E9cd61a243c7
 export const AAVE_SWAPPER_ETHEREUM = '0x3ea64b1C0194524b48F9118462C8E9cd61a243c7';
