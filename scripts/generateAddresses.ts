@@ -51,6 +51,7 @@ import {ethereumAddresses} from './configs/networks/ethereum';
 import {polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses} from './configs/networks/optimism';
+import {governanceConfigPolygonZkEVM} from './configs/governance/zkevm';
 
 async function main() {
   // cleanup ts artifacts
@@ -77,6 +78,7 @@ async function main() {
       governanceConfigMetis,
       governanceConfigBase,
       governanceConfigBNB,
+      governanceConfigPolygonZkEVM,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(

@@ -10,6 +10,7 @@ export * as GovernanceV3Goerli from './GovernanceV3Goerli';
 export * as GovernanceV3Metis from './GovernanceV3Metis';
 export * as GovernanceV3Base from './GovernanceV3Base';
 export * as GovernanceV3BNB from './GovernanceV3BNB';
+export * as GovernanceV3PolygonZkEVM from './GovernanceV3PolygonZkEVM';
 export * as AaveV2EthereumAMM from './AaveV2EthereumAMM';
 export * as AaveV2EthereumArc from './AaveV2EthereumArc';
 export * as AaveV2Ethereum from './AaveV2Ethereum';

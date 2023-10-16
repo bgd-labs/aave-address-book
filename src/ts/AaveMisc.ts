@@ -17,13 +17,13 @@ export const CREATE_3_FACTORY_ETHEREUM = '0xcc3C54B95f3f1867A43009B80ed4DD930E3c
 // https://etherscan.io/address/0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517
 export const PROXY_ADMIN_ETHEREUM_LONG = '0x86C3FfeE349A7cFf7cA88C449717B1b133bfb517';
 
-// address https://etherscan.io/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
+// address https://bscscan.com/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
 export const TRANSPARENT_PROXY_FACTORY_BINANCE = '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A';
 
-// address https://etherscan.io/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
+// address https://bscscan.com/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
 export const PROXY_ADMIN_BINANCE = '0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c';
 
-// address https://etherscan.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+// address https://bscscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
 export const CREATE_3_FACTORY_BINANCE = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
 
 // address https://polygonscan.com/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
@@ -79,6 +79,15 @@ export const PROXY_ADMIN_BASE = '0xc85b1E333aecc99340b2320493Fe2d22b8734795';
 
 // address https://basescan.org/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
 export const CREATE_3_FACTORY_BASE = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
+
+// address https://zkevm.polygonscan.com/address/0x8B6851156023f4f5A66F68BEA80851c3D905Ac93
+export const TRANSPARENT_PROXY_FACTORY_ZK_EVM = '0x8B6851156023f4f5A66F68BEA80851c3D905Ac93';
+
+// address https://zkevm.polygonscan.com/address/0x2f6571d3Eb9a4e350C68C36bCD2afe39530078E2
+export const PROXY_ADMIN_ZK_EVM = '0x2f6571d3Eb9a4e350C68C36bCD2afe39530078E2';
+
+// address https://zkevm.polygonscan.com/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
+export const CREATE_3_FACTORY_ZK_EVM = '0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19';
 
 // https://etherscan.io/address/0x3ea64b1C0194524b48F9118462C8E9cd61a243c7
 export const AAVE_SWAPPER_ETHEREUM = '0x3ea64b1C0194524b48F9118462C8E9cd61a243c7';
