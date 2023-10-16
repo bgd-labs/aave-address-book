@@ -34,23 +34,23 @@ library AaveV3Gnosis {
   // https://blockscout.com/xdai/mainnet/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
   address internal constant ACL_ADMIN = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
 
-  // https://blockscout.com/xdai/mainnet/address/0x0000000000000000000000000000000000000000
-  ICollector internal constant COLLECTOR = ICollector(0x0000000000000000000000000000000000000000);
+  // https://blockscout.com/xdai/mainnet/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
+  ICollector internal constant COLLECTOR = ICollector(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
 
   // https://blockscout.com/xdai/mainnet/address/0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d;
 
-  // https://blockscout.com/xdai/mainnet/address/0x0000000000000000000000000000000000000000
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x0000000000000000000000000000000000000000;
+  // https://blockscout.com/xdai/mainnet/address/0x589750BA8aF186cE5B55391B0b7148cAD43a1619
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
 
-  // https://blockscout.com/xdai/mainnet/address/0x0000000000000000000000000000000000000000
+  // https://blockscout.com/xdai/mainnet/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x0000000000000000000000000000000000000000;
+    0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
 
-  // https://blockscout.com/xdai/mainnet/address/0x0000000000000000000000000000000000000000
+  // https://blockscout.com/xdai/mainnet/address/0x06C35Cfd3FC61eC2aC437f0d08840d5776b945af
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x0000000000000000000000000000000000000000;
+    0x06C35Cfd3FC61eC2aC437f0d08840d5776b945af;
 
   // https://blockscout.com/xdai/mainnet/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
   address internal constant EMISSION_MANAGER = 0x41585C50524fb8c3899B43D7D797d9486AAc94DB;
@@ -58,9 +58,15 @@ library AaveV3Gnosis {
   // https://blockscout.com/xdai/mainnet/address/0xab923C4BD40eab9824C0b86FD8562eEcb933b56a
   address internal constant L2_ENCODER = 0xab923C4BD40eab9824C0b86FD8562eEcb933b56a;
 
+  // https://blockscout.com/xdai/mainnet/address/0x3238FC1d642b60F41a35f62570237656C85F4744
+  address internal constant LISTING_ENGINE = 0x3238FC1d642b60F41a35f62570237656C85F4744;
+
   // https://blockscout.com/xdai/mainnet/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x1236010CECea55998384e795B59815D871f5f94d;
+
+  // https://blockscout.com/xdai/mainnet/address/0x73dDE2A75c06a108912bf7Ff600eDdCE9d96Ed25
+  address internal constant RATES_FACTORY = 0x73dDE2A75c06a108912bf7Ff600eDdCE9d96Ed25;
 
   // https://blockscout.com/xdai/mainnet/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;

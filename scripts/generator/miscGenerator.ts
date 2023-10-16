@@ -109,6 +109,21 @@ const miscAddresses: Addresses = {
     type: 'address',
     value: '0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A',
   },
+  TRANSPARENT_PROXY_FACTORY_GNOSIS: {
+    chainId: ChainId.gnosis,
+    type: 'address',
+    value: '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A',
+  },
+  PROXY_ADMIN_GNOSIS: {
+    chainId: ChainId.gnosis,
+    type: 'address',
+    value: '0xe892E40C92c2E4D281Be59b2E6300F271d824E75',
+  },
+  CREATE_3_FACTORY_GNOSIS: {
+    chainId: ChainId.gnosis,
+    type: 'address',
+    value: '0xEa3B43Bf2FeEDd2A30BB30112bF2e824e35AF909',
+  },
   TRANSPARENT_PROXY_FACTORY_BASE: {
     chainId: ChainId.base,
     type: 'address',
