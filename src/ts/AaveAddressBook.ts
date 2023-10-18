@@ -69,4 +69,4 @@ export {IOwnable_ABI} from './abis/IOwnable';
 export {IPayloadsControllerDataHelper_ABI} from './abis/IPayloadsControllerDataHelper';
 export {IGovernanceDataHelper_ABI} from './abis/IGovernanceDataHelper';
 export {IMetaDelegateHelper_ABI} from './abis/IMetaDelegateHelper';
-export {IMetaDelegateHelper_ABI} from './abis/IMetaDelegateHelper';
+export {IVotingMachineDataHelper_ABI} from './abis/IVotingMachineDataHelper';

@@ -38,7 +38,7 @@ export const DOWNLOAD_ABI_INTERFACES = [
     name: 'IMetaDelegateHelper',
   },
   {
-    address: governanceConfigMainnet.ADDRESSES.META_DELEGATE_HELPER,
-    name: 'IMetaDelegateHelper',
+    address: governanceConfigMainnet.ADDRESSES.VM_DATA_HELPER,
+    name: 'IVotingMachineDataHelper',
   },
 ];
