@@ -201,9 +201,9 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x13e3Ee699D1909E989722E753853AE30b17e08c5
   address internal constant WETH_ORACLE = 0x13e3Ee699D1909E989722E753853AE30b17e08c5;
 
-  // https://explorer.optimism.io/address/0xF9336Bb69654fdd665AaC6618309a8cba078D8fE
+  // https://explorer.optimism.io/address/0x5f58C25D17C09c9e1892F45DE6dA45ed973A5326
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xF9336Bb69654fdd665AaC6618309a8cba078D8fE;
+    0x5f58C25D17C09c9e1892F45DE6dA45ed973A5326;
 
   // https://explorer.optimism.io/address/0x94b008aA00579c1307B0EF2c499aD98a8ce58e58
   address internal constant USDT_UNDERLYING = 0x94b008aA00579c1307B0EF2c499aD98a8ce58e58;

@@ -26,7 +26,6 @@ export const RPC_PROVIDERS = {
   [ChainId.mainnet]: createPublicClient({
     chain: mainnet,
     transport: fallback([
-      http('https://eth.llamarpc.com'),
       http('https://ethereum.publicnode.com'),
       http('https://cloudflare-eth.com'),
     ]),
