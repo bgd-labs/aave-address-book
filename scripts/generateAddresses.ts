@@ -53,6 +53,7 @@ import {polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
+import {gnosisAddresses} from './configs/networks/gnosis';
 
 async function main() {
   // cleanup ts artifacts
@@ -127,6 +128,7 @@ async function main() {
     optimismAddresses,
     polygonAddresses,
     metisAddresses,
+    gnosisAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
