@@ -46,7 +46,7 @@ export interface PoolConfig {
     DEBT_SWAP_ADAPTER?: Hex;
     WITHDRAW_SWAP_ADAPTER?: Hex;
     POOL_ADDRESSES_PROVIDER_REGISTRY?: Hex;
-    LISTING_ENGINE?: Hex;
+    CONFIG_ENGINE?: Hex;
     MIGRATION_HELPER?: Hex;
     UI_POOL_DATA_PROVIDER?: Hex;
     UI_INCENTIVE_DATA_PROVIDER?: Hex;
@@ -86,11 +86,14 @@ export type ReserveData = {
 /**
  * @dev config for addresses that belong more to a network then to a specific pool
  */
-export interface NetworkAddresses {
+export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
   name: string;
   chainId: ChainId;
   addresses: {
     // https://github.com/bgd-labs/aave-paraswap-claimer
     PARASWAP_FEE_CLAIMER?: Hex;
-  };
+    TRANSPARENT_PROXY_FACTORY?: Hex;
+    PROXY_ADMIN?: Hex;
+    CREATE_3_FACTORY?: Hex;
+  } & T;
 }

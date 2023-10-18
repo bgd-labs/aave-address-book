@@ -61,8 +61,8 @@ library AaveV3Metis {
   // https://andromeda-explorer.metis.io/address/0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9
   address internal constant L2_ENCODER = 0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9;
 
-  // https://andromeda-explorer.metis.io/address/0x857720ad258db0ACb180e76A5526c72CFCe6F8A7
-  address internal constant LISTING_ENGINE = 0x857720ad258db0ACb180e76A5526c72CFCe6F8A7;
+  // https://andromeda-explorer.metis.io/address/0x8be473dCfA93132658821E67CbEB684ec8Ea2E74
+  address internal constant CONFIG_ENGINE = 0x8be473dCfA93132658821E67CbEB684ec8Ea2E74;
 
   // https://andromeda-explorer.metis.io/address/0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

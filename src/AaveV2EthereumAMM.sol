@@ -45,7 +45,7 @@ library AaveV2EthereumAMM {
   address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
 
   // https://etherscan.io/address/0xcfC26009618ec2Ca8787180116a37Caa354a465C
-  address internal constant LISTING_ENGINE = 0xcfC26009618ec2Ca8787180116a37Caa354a465C;
+  address internal constant CONFIG_ENGINE = 0xcfC26009618ec2Ca8787180116a37Caa354a465C;
 
   // https://etherscan.io/address/0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a
   address internal constant MIGRATION_HELPER = 0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a;
