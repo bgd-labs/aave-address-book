@@ -61,8 +61,8 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0xb58Fd91558fa213D97Ac94C97F831c7289278084
   address internal constant DEBT_SWAP_ADAPTER = 0xb58Fd91558fa213D97Ac94C97F831c7289278084;
 
-  // https://polygonscan.com/address/0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07
-  address internal constant LISTING_ENGINE = 0xE202F2fc4b6A37Ba53cfD15bE42a762A645FCA07;
+  // https://polygonscan.com/address/0xfFD6F13c9574bedb3f4E131e9C4320186AF83c1D
+  address internal constant CONFIG_ENGINE = 0xfFD6F13c9574bedb3f4E131e9C4320186AF83c1D;
 
   // https://polygonscan.com/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

@@ -47,8 +47,8 @@ export const CAPS_PLUS_RISK_STEWARD = '0x5f4d15d761528c57a5C30c43c1DAb26Fc545273
 // https://andromeda-explorer.metis.io/address/0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9
 export const L2_ENCODER = '0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9';
 
-// https://andromeda-explorer.metis.io/address/0x857720ad258db0ACb180e76A5526c72CFCe6F8A7
-export const LISTING_ENGINE = '0x857720ad258db0ACb180e76A5526c72CFCe6F8A7';
+// https://andromeda-explorer.metis.io/address/0x8be473dCfA93132658821E67CbEB684ec8Ea2E74
+export const CONFIG_ENGINE = '0x8be473dCfA93132658821E67CbEB684ec8Ea2E74';
 
 // https://andromeda-explorer.metis.io/address/0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5';
