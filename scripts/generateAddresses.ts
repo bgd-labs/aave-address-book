@@ -32,7 +32,6 @@ import {scrollAlphaProtoV3, scrollSepoliaProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
-import {generateMisc} from './generator/miscGenerator';
 import {generateGovV2} from './generator/governanceV2Generator';
 import {prefixWithGeneratedWarning, prefixWithPragma} from './generator/utils';
 import {generateSafetyModule} from './generator/safetyModuleGenerator';
@@ -53,6 +52,7 @@ import {ethereumAddresses} from './configs/networks/ethereum';
 import {polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses} from './configs/networks/optimism';
+import {metisAddresses} from './configs/networks/metis';
 
 async function main() {
   // cleanup ts artifacts
@@ -126,9 +126,8 @@ async function main() {
     fantomAddresses,
     optimismAddresses,
     polygonAddresses,
+    metisAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
-
-  const miscImports = generateMisc();
 
   const govImports = generateGovV2();
 
@@ -141,7 +140,6 @@ async function main() {
     v2LibraryNames,
     v3LibraryNames,
     networkAddresses,
-    miscImports,
     govImports,
     smImports,
     abis,

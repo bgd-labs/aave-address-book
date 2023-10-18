@@ -43,7 +43,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Generate library
-        run: yarn start
+        run: yarn generate:addresses
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@712add83f26c1e359c046a6ca3dd677fb7017626

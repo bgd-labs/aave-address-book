@@ -8,19 +8,23 @@ import {
   wrapIntoSolidityLibrary,
 } from './utils';
 
-export function generateNetworkAddresses(config: NetworkAddresses) {
+export function generateNetworkAddresses(config: NetworkAddresses<any>) {
   const name = `Misc${config.name}`;
+
+  let solidityLibrary = wrapIntoSolidityLibrary(
+    generateSolidityConstants({chainId: config.chainId, addresses: config.addresses}),
+    name,
+  );
+
+  if (/IAaveEcosystemReserveController/g.test(solidityLibrary))
+    solidityLibrary =
+      `import {IAaveEcosystemReserveController} from './common/IAaveEcosystemReserveController.sol';\n` +
+      `import {IStreamable} from './common/IStreamable.sol';\n` +
+      solidityLibrary;
 
   fs.writeFileSync(
     `./src/${name}.sol`,
-    prefixWithGeneratedWarning(
-      prefixWithPragma(
-        wrapIntoSolidityLibrary(
-          generateSolidityConstants({chainId: config.chainId, addresses: config.addresses}),
-          name,
-        ),
-      ),
-    ),
+    prefixWithGeneratedWarning(prefixWithPragma(solidityLibrary)),
   );
   fs.writeFileSync(
     `./src/ts/${name}.ts`,
