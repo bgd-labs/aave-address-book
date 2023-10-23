@@ -59,7 +59,7 @@ library AaveV3Gnosis {
   address internal constant L2_ENCODER = 0xab923C4BD40eab9824C0b86FD8562eEcb933b56a;
 
   // https://blockscout.com/xdai/mainnet/address/0x3238FC1d642b60F41a35f62570237656C85F4744
-  address internal constant LISTING_ENGINE = 0x3238FC1d642b60F41a35f62570237656C85F4744;
+  address internal constant CONFIG_ENGINE = 0x3238FC1d642b60F41a35f62570237656C85F4744;
 
   // https://blockscout.com/xdai/mainnet/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
