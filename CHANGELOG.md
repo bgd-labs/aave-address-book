@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/bgd-labs/aave-address-book/compare/v2.7.0...v2.8.0) (2023-10-24)
+
+
+### Features
+
+* add gnosis chain ([#263](https://github.com/bgd-labs/aave-address-book/issues/263)) ([1063411](https://github.com/bgd-labs/aave-address-book/commit/1063411d276c58158d46bd51a15513c63889c242))
+* gov v3-abis ([#268](https://github.com/bgd-labs/aave-address-book/issues/268)) ([452f760](https://github.com/bgd-labs/aave-address-book/commit/452f760d4133d1aba15434beaaaa8b3b3e71b457))
+* rename to config engine ([#266](https://github.com/bgd-labs/aave-address-book/issues/266)) ([4002972](https://github.com/bgd-labs/aave-address-book/commit/4002972ab5d2f7c1256b34de48b887abe86ac090))
+
+
+### Bug Fixes
+
+* don't fail on missing test ([7758182](https://github.com/bgd-labs/aave-address-book/commit/7758182cf72090f22b469654a9a9af6af3cf59ff))
+* rename binance to bnb ([#262](https://github.com/bgd-labs/aave-address-book/issues/262)) ([35285a2](https://github.com/bgd-labs/aave-address-book/commit/35285a26991ce19cddca48a8fe4f6ce50ece5943))
+* switch to release please ([94f54e1](https://github.com/bgd-labs/aave-address-book/commit/94f54e19795443fd4b00da3199598839634e7c23))
+
 ## [2.7.0](https://github.com/bgd-labs/aave-address-book/compare/v2.6.0...v2.7.0) (2023-10-03)
 
 
