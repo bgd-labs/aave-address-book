@@ -20,6 +20,7 @@ import {
 import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
 import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
+import {gnosisProtoV3} from './configs/pools/gnosis';
 import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
 import {
   mumbaiProtoV2,
@@ -42,6 +43,7 @@ import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
+import {governanceConfigGnosis} from './configs/governance/gnosis';
 import {baseAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses} from './configs/networks/arbitrum';
@@ -51,6 +53,7 @@ import {polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
+import {gnosisAddresses} from './configs/networks/gnosis';
 
 async function main() {
   // cleanup ts artifacts
@@ -77,6 +80,7 @@ async function main() {
       governanceConfigMetis,
       governanceConfigBase,
       governanceConfigBNB,
+      governanceConfigGnosis,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
@@ -102,6 +106,7 @@ async function main() {
       fujiProtoV3,
       baseProtoV3,
       metisProtoV3,
+      gnosisProtoV3,
       arbitrumGoerliProtoV3,
       arbitrumProtoV3,
       optimismGoerliProtoV3,
@@ -123,6 +128,7 @@ async function main() {
     optimismAddresses,
     polygonAddresses,
     metisAddresses,
+    gnosisAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

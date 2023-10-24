@@ -19,6 +19,7 @@ import {
   avalanche,
   base,
   bsc,
+  gnosis,
 } from 'viem/chains';
 import {ChainId} from './chains';
 
@@ -160,6 +161,13 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.bnb]: createPublicClient({
     chain: bsc,
+    transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.gnosis]: createPublicClient({
+    chain: gnosis,
     transport: http(),
     batch: {
       multicall: true,
