@@ -189,5 +189,5 @@ library AaveV3MetisAssets {
 }
 
 library AaveV3MetisEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 }
