@@ -373,9 +373,9 @@ library AaveV3OptimismAssets {
 }
 
 library AaveV3OptimismEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLECOINS = 1;
+  uint8 internal constant STABLECOINS = 1;
 
-  uint256 internal constant ETH_CORRELATED = 2;
+  uint8 internal constant ETH_CORRELATED = 2;
 }

@@ -244,7 +244,7 @@ library AaveV3ScrollAlphaAssets {
 }
 
 library AaveV3ScrollAlphaEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLECOINS = 1;
+  uint8 internal constant STABLECOINS = 1;
 }

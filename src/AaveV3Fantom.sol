@@ -288,7 +288,7 @@ library AaveV3FantomAssets {
 }
 
 library AaveV3FantomEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLECOINS = 1;
+  uint8 internal constant STABLECOINS = 1;
 }

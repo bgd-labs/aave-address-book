@@ -236,7 +236,7 @@ function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryNa
   const formatted = sorted.reduce((acc, [value, label]) => {
     acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'NONE'}`] = {
       value,
-      type: 'uint256',
+      type: 'uint8',
     };
     return acc;
   }, {} as Addresses);

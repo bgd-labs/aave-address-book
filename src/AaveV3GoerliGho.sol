@@ -198,7 +198,7 @@ library AaveV3GoerliGhoAssets {
 }
 
 library AaveV3GoerliGhoEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLE_EMODE = 1;
+  uint8 internal constant STABLE_EMODE = 1;
 }
