@@ -11,4 +11,7 @@ library MiscGnosis {
 
   // https://blockscout.com/xdai/mainnet/address/0x2cC41488f4494c5e11cB6cbA82199442B9f495B6
   address internal constant CREATE_3_FACTORY = 0x2cC41488f4494c5e11cB6cbA82199442B9f495B6;
+
+  // https://blockscout.com/xdai/mainnet/address/0xF163b8698821cefbD33Cf449764d69Ea445cE23D
+  address internal constant PROTOCOL_GUARDIAN = 0xF163b8698821cefbD33Cf449764d69Ea445cE23D;
 }
