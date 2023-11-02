@@ -28,8 +28,8 @@ library AaveV2Polygon {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x7551b5D2763519d4e37e8B81929D336De671d46d);
 
-  // https://polygonscan.com/address/0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
-  address internal constant POOL_ADMIN = 0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
+  // https://polygonscan.com/address/0xDf7d0e6454DB638881302729F5ba99936EaAB233
+  address internal constant POOL_ADMIN = 0xDf7d0e6454DB638881302729F5ba99936EaAB233;
 
   // https://polygonscan.com/address/0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58
   address internal constant EMERGENCY_ADMIN = 0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;

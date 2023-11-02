@@ -31,8 +31,8 @@ library AaveV3Metis {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xcDCb65fc657B701a5100a12eFB663978E7e8fFB8);
 
-  // https://andromeda-explorer.metis.io/address/0x8EC77963068474a45016938Deb95E603Ca82a029
-  address internal constant ACL_ADMIN = 0x8EC77963068474a45016938Deb95E603Ca82a029;
+  // https://andromeda-explorer.metis.io/address/0x6fD45D32375d5aDB8D76275A3932c740F03a8718
+  address internal constant ACL_ADMIN = 0x6fD45D32375d5aDB8D76275A3932c740F03a8718;
 
   // https://andromeda-explorer.metis.io/address/0xB5b64c7E00374e766272f8B442Cd261412D4b118
   ICollector internal constant COLLECTOR = ICollector(0xB5b64c7E00374e766272f8B442Cd261412D4b118);

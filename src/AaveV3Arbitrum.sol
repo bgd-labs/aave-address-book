@@ -31,8 +31,8 @@ library AaveV3Arbitrum {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
-  address internal constant ACL_ADMIN = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
+  // https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327
+  address internal constant ACL_ADMIN = 0xFF1137243698CaA18EE364Cc966CF0e02A4e6327;
 
   // https://arbiscan.io/address/0x053D55f9B5AF8694c503EB288a1B7E552f590710
   ICollector internal constant COLLECTOR = ICollector(0x053D55f9B5AF8694c503EB288a1B7E552f590710);

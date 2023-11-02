@@ -31,8 +31,8 @@ library AaveV3Polygon {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://polygonscan.com/address/0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
-  address internal constant ACL_ADMIN = 0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
+  // https://polygonscan.com/address/0xDf7d0e6454DB638881302729F5ba99936EaAB233
+  address internal constant ACL_ADMIN = 0xDf7d0e6454DB638881302729F5ba99936EaAB233;
 
   // https://polygonscan.com/address/0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383
   ICollector internal constant COLLECTOR = ICollector(0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383);

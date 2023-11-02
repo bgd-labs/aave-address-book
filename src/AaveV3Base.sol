@@ -31,8 +31,8 @@ library AaveV3Base {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x43955b0899Ab7232E3a454cf84AedD22Ad46FD33);
 
-  // https://basescan.org/address/0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45
-  address internal constant ACL_ADMIN = 0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45;
+  // https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a
+  address internal constant ACL_ADMIN = 0x9390B1735def18560c509E2d0bc090E9d6BA257a;
 
   // https://basescan.org/address/0xBA9424d650A4F5c80a0dA641254d1AcCE2A37057
   ICollector internal constant COLLECTOR = ICollector(0xBA9424d650A4F5c80a0dA641254d1AcCE2A37057);

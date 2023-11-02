@@ -31,8 +31,8 @@ library AaveV3Avalanche {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
-  address internal constant ACL_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
+  // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
+  address internal constant ACL_ADMIN = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 
   // https://snowtrace.io/address/0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0
   ICollector internal constant COLLECTOR = ICollector(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0);
