@@ -20,8 +20,8 @@ export const AAVE_PROTOCOL_DATA_PROVIDER = '0x50ddd0Cd4266299527d25De9CBb55fE0EB
 // IACLManager https://snowtrace.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
 export const ACL_MANAGER = '0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B';
 
-// https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
-export const ACL_ADMIN = '0xa35b76E4935449E33C56aB24b23fcd3246f13470';
+// https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
+export const ACL_ADMIN = '0x3C06dce358add17aAf230f2234bCCC4afd50d090';
 
 // ICollector https://snowtrace.io/address/0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0
 export const COLLECTOR = '0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0';

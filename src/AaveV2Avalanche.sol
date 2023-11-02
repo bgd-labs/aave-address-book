@@ -28,8 +28,8 @@ library AaveV2Avalanche {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x65285E9dfab318f57051ab2b139ccCf232945451);
 
-  // https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
-  address internal constant POOL_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
+  // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
+  address internal constant POOL_ADMIN = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 
   // https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
   address internal constant EMERGENCY_ADMIN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;

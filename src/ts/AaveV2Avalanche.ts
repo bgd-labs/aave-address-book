@@ -17,8 +17,8 @@ export const LENDING_RATE_ORACLE = '0xc34254642B504484465F38Cb1CC396d45a9c7c80';
 // IAaveProtocolDataProvider https://snowtrace.io/address/0x65285E9dfab318f57051ab2b139ccCf232945451
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0x65285E9dfab318f57051ab2b139ccCf232945451';
 
-// https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
-export const POOL_ADMIN = '0xa35b76E4935449E33C56aB24b23fcd3246f13470';
+// https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
+export const POOL_ADMIN = '0x3C06dce358add17aAf230f2234bCCC4afd50d090';
 
 // https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
 export const EMERGENCY_ADMIN = '0xa35b76E4935449E33C56aB24b23fcd3246f13470';

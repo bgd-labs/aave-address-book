@@ -28,8 +28,8 @@ library AaveV2Ethereum {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x057835Ad21a177dbdd3090bB1CAE03EaCF78Fc6d);
 
-  // https://etherscan.io/address/0xEE56e2B3D491590B5b31738cC34d5232F378a8D5
-  address internal constant POOL_ADMIN = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
+  // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
+  address internal constant POOL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
   // https://etherscan.io/address/0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633
   address internal constant EMERGENCY_ADMIN = 0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;

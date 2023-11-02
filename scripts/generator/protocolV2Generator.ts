@@ -1,6 +1,5 @@
 import {Hex, PublicClient, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
-import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
 import {RPC_PROVIDERS} from './clients';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
@@ -15,6 +14,7 @@ import {LENDING_POOL_V2_ABI} from '../abi/lending_pool_v2_abi';
 import {A_TOKEN_V2_ABI} from '../abi/aToken_v2_abi';
 import {INCENTIVES_CONTROLLER_ABI} from '../abi/incentivesController_abi';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
+import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
 
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -106,7 +106,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
       const uiPoolDataProvider = getContract({
         address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-        abi: UI_POOL_DATA_PROVIDER_ABI,
+        abi: IUiPoolDataProvider_ABI,
         publicClient,
       });
       reservesData = (

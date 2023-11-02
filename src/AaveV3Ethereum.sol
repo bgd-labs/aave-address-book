@@ -31,8 +31,8 @@ library AaveV3Ethereum {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0);
 
-  // https://etherscan.io/address/0xEE56e2B3D491590B5b31738cC34d5232F378a8D5
-  address internal constant ACL_ADMIN = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
+  // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
+  address internal constant ACL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);

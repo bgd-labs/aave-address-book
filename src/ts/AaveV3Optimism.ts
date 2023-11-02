@@ -20,8 +20,8 @@ export const AAVE_PROTOCOL_DATA_PROVIDER = '0xd9Ca4878dd38B021583c1B669905592EAe
 // IACLManager https://explorer.optimism.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
 export const ACL_MANAGER = '0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B';
 
-// https://explorer.optimism.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
-export const ACL_ADMIN = '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611';
+// https://explorer.optimism.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf
+export const ACL_ADMIN = '0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf';
 
 // ICollector https://explorer.optimism.io/address/0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf
 export const COLLECTOR = '0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf';

@@ -74,10 +74,11 @@ function getGovernancePowerStrategy(governance: Address, publicClient: PublicCli
 async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig) {
   let addresses: Addresses = {...ADDRESSES};
   if (ADDRESSES.GOVERNANCE) {
-    addresses.GOVERNANCE_POWER_STRATEGY = await getGovernancePowerStrategy(
-      ADDRESSES.GOVERNANCE,
-      RPC_PROVIDERS[CHAIN_ID],
-    );
+    // TODO: comment back in when governance v3 is live
+    // addresses.GOVERNANCE_POWER_STRATEGY = await getGovernancePowerStrategy(
+    //   ADDRESSES.GOVERNANCE,
+    //   RPC_PROVIDERS[CHAIN_ID],
+    // );
     addresses.GOVERNANCE = {value: addresses.GOVERNANCE, type: 'IGovernanceCore'};
   }
 

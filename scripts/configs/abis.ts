@@ -43,10 +43,6 @@ export const DOWNLOAD_ABI_INTERFACES = [
   },
   {
     address: mainnetProtoV3Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-    name: 'IUiPoolDataProviderV3',
-  },
-  {
-    address: mainnetProtoV2Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-    name: 'IUiPoolDataProviderV2',
+    name: 'IUiPoolDataProvider',
   },
 ];

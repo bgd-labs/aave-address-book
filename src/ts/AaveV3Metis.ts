@@ -20,8 +20,8 @@ export const AAVE_PROTOCOL_DATA_PROVIDER = '0x99411FC17Ad1B56f49719E3850B2CDcc0f
 // IACLManager https://andromeda-explorer.metis.io/address/0xcDCb65fc657B701a5100a12eFB663978E7e8fFB8
 export const ACL_MANAGER = '0xcDCb65fc657B701a5100a12eFB663978E7e8fFB8';
 
-// https://andromeda-explorer.metis.io/address/0x8EC77963068474a45016938Deb95E603Ca82a029
-export const ACL_ADMIN = '0x8EC77963068474a45016938Deb95E603Ca82a029';
+// https://andromeda-explorer.metis.io/address/0x6fD45D32375d5aDB8D76275A3932c740F03a8718
+export const ACL_ADMIN = '0x6fD45D32375d5aDB8D76275A3932c740F03a8718';
 
 // ICollector https://andromeda-explorer.metis.io/address/0xB5b64c7E00374e766272f8B442Cd261412D4b118
 export const COLLECTOR = '0xB5b64c7E00374e766272f8B442Cd261412D4b118';

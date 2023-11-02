@@ -31,8 +31,8 @@ library AaveV3Optimism {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://explorer.optimism.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
-  address internal constant ACL_ADMIN = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
+  // https://explorer.optimism.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf
+  address internal constant ACL_ADMIN = 0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf;
 
   // https://explorer.optimism.io/address/0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf
   ICollector internal constant COLLECTOR = ICollector(0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf);
