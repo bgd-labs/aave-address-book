@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/bgd-labs/aave-address-book/compare/v2.8.0...v2.9.0) (2023-11-02)
+
+
+### Features
+
+* add ui pool data provider abis ([#276](https://github.com/bgd-labs/aave-address-book/issues/276)) ([e35ab6e](https://github.com/bgd-labs/aave-address-book/commit/e35ab6e6cc1c30aa2394172c6f204a4654e985e1))
+
+
+### Bug Fixes
+
+* add protocol guardian ([#275](https://github.com/bgd-labs/aave-address-book/issues/275)) ([1cc00a0](https://github.com/bgd-labs/aave-address-book/commit/1cc00a0d0e73be00f8882c2b676a26e24ecb7e13))
+
 ## [2.8.0](https://github.com/bgd-labs/aave-address-book/compare/v2.7.0...v2.8.0) (2023-10-24)
 
 
