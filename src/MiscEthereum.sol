@@ -33,4 +33,7 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0xcc3C54B95f3f1867A43009B80ed4DD930E3cE2F7
   address internal constant CREATE_3_FACTORY = 0xcc3C54B95f3f1867A43009B80ed4DD930E3cE2F7;
+
+  // https://etherscan.io/address/0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633
+  address internal constant PROTOCOL_GUARDIAN = 0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;
 }

@@ -96,5 +96,6 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     TRANSPARENT_PROXY_FACTORY?: Hex;
     PROXY_ADMIN?: Hex;
     CREATE_3_FACTORY?: Hex;
+    PROTOCOL_GUARDIAN?: Hex;
   } & T;
 }
