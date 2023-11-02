@@ -1,5 +1,5 @@
-import {ChainId} from '../generator/chains';
 import {governanceConfigMainnet} from './governance/ethereum';
+import {mainnetProtoV2Pool, mainnetProtoV3Pool} from './pools/ethereum';
 
 export const ABI_INTERFACES = [
   'IAaveGovernanceV2',
@@ -40,5 +40,13 @@ export const DOWNLOAD_ABI_INTERFACES = [
   {
     address: governanceConfigMainnet.ADDRESSES.VM_DATA_HELPER,
     name: 'IVotingMachineDataHelper',
+  },
+  {
+    address: mainnetProtoV3Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
+    name: 'IUiPoolDataProviderV3',
+  },
+  {
+    address: mainnetProtoV2Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
+    name: 'IUiPoolDataProviderV2',
   },
 ];
