@@ -37,7 +37,7 @@ contract AaveAddressBookTest is Test {
   }
 
   function testPoolAdminIsCorrect() public {
-    assertEq(AaveV2Ethereum.POOL_ADMIN, address(0xEE56e2B3D491590B5b31738cC34d5232F378a8D5));
+    assertEq(AaveV2Ethereum.POOL_ADMIN, address(0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A));
   }
 
   function testEmergencyAdminIsCorrect() public {
