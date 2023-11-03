@@ -20,4 +20,7 @@ library MiscPolygon {
 
   // https://polygonscan.com/address/0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58
   address internal constant PROTOCOL_GUARDIAN = 0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;
+
+  // https://polygonscan.com/address/0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b
+  address internal constant AAVE_MERKLE_DISTRIBUTOR = 0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b;
 }
