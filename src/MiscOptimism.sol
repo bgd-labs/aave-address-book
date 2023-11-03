@@ -17,4 +17,7 @@ library MiscOptimism {
 
   // https://explorer.optimism.io/address/0xE50c8C619d05ff98b22Adf991F17602C774F785c
   address internal constant PROTOCOL_GUARDIAN = 0xE50c8C619d05ff98b22Adf991F17602C774F785c;
+
+  // https://explorer.optimism.io/address/0x1685D81212580DD4cDA287616C2f6F4794927e18
+  address internal constant AAVE_MERKLE_DISTRIBUTOR = 0x1685D81212580DD4cDA287616C2f6F4794927e18;
 }

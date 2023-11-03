@@ -17,4 +17,7 @@ library MiscAvalanche {
 
   // https://snowtrace.io/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
   address internal constant PROTOCOL_GUARDIAN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
+
+  // https://snowtrace.io/address/0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E
+  address internal constant AAVE_MERKLE_DISTRIBUTOR = 0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E;
 }
