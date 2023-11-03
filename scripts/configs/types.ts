@@ -57,6 +57,7 @@ export interface PoolConfig {
     DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: Hex;
     STATIC_A_TOKEN_FACTORY?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
+    FREEZING_STEWARD?: Hex;
     GHO_TOKEN?: Hex;
     UI_GHO_DATA_PROVIDER?: Hex;
     RATES_FACTORY?: Hex;
