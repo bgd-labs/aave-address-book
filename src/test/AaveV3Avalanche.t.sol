@@ -38,7 +38,7 @@ contract AaveAddressBookTest is Test {
   }
 
   function testACLAdminIsCorrect() public {
-    assertEq(AaveV3Avalanche.ACL_ADMIN, address(0xa35b76E4935449E33C56aB24b23fcd3246f13470));
+    assertEq(AaveV3Avalanche.ACL_ADMIN, address(0x3C06dce358add17aAf230f2234bCCC4afd50d090));
   }
 
   function testCollectorIsCorrect() public {

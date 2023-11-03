@@ -82,6 +82,9 @@ library AaveV3Gnosis {
 
   // https://blockscout.com/xdai/mainnet/address/0x33AE1f41546a2e05368Bf789b3d868813c0Ae658
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x33AE1f41546a2e05368Bf789b3d868813c0Ae658;
+
+  // https://blockscout.com/xdai/mainnet/address/0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5
+  address internal constant FREEZING_STEWARD = 0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5;
 }
 
 library AaveV3GnosisAssets {}

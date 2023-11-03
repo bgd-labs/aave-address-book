@@ -68,6 +68,9 @@ export const WETH_GATEWAY = '0xb7E51aA2A5f4dD478F183A593F67637ed6F1d1D9';
 // https://blockscout.com/xdai/mainnet/address/0x33AE1f41546a2e05368Bf789b3d868813c0Ae658
 export const CAPS_PLUS_RISK_STEWARD = '0x33AE1f41546a2e05368Bf789b3d868813c0Ae658';
 
+// https://blockscout.com/xdai/mainnet/address/0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5
+export const FREEZING_STEWARD = '0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5';
+
 export const CHAIN_ID = 100;
 export const ASSETS = {} as const;
 export const E_MODES = {} as const;

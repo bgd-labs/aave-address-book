@@ -44,6 +44,9 @@ export const EMISSION_MANAGER = '0xfDb2580A1ac4CDc67E4236738b28af59e2022Dd2';
 // https://andromeda-explorer.metis.io/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
 export const CAPS_PLUS_RISK_STEWARD = '0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731';
 
+// https://andromeda-explorer.metis.io/address/0x2C77153fF4a1e83A8d8D750735FB101ECB55949f
+export const FREEZING_STEWARD = '0x2C77153fF4a1e83A8d8D750735FB101ECB55949f';
+
 // https://andromeda-explorer.metis.io/address/0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9
 export const L2_ENCODER = '0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9';
 

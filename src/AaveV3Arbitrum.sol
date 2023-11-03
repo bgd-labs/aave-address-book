@@ -58,6 +58,9 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
 
+  // https://arbiscan.io/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
+  address internal constant FREEZING_STEWARD = 0xe59470B3BE3293534603487E00A44C72f2CD466d;
+
   // https://arbiscan.io/address/0x9E8e9D6b0D24216F59043db68BDda1620892f549
   address internal constant DEBT_SWAP_ADAPTER = 0x9E8e9D6b0D24216F59043db68BDda1620892f549;
 
