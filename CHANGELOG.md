@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.10.0](https://github.com/bgd-labs/aave-address-book/compare/v2.9.0...v2.10.0) (2023-11-03)
+
+
+### Features
+
+* add freezing stewards ([#278](https://github.com/bgd-labs/aave-address-book/issues/278)) ([72ae34d](https://github.com/bgd-labs/aave-address-book/commit/72ae34d362e9793acc8d674179038c0f8fcc94fa))
+* added aave merkle distributor addresses ([#280](https://github.com/bgd-labs/aave-address-book/issues/280)) ([3a20d76](https://github.com/bgd-labs/aave-address-book/commit/3a20d761d68f7cafb69163864b0c46b21bc3ccf1))
+
 ## [2.9.0](https://github.com/bgd-labs/aave-address-book/compare/v2.8.0...v2.9.0) (2023-11-02)
 
 
