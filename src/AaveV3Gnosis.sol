@@ -91,7 +91,7 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1
   address internal constant WETH_UNDERLYING = 0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://blockscout.com/xdai/mainnet/address/0xa818F1B57c201E092C4A2017A91815034326Efd1
   address internal constant WETH_A_TOKEN = 0xa818F1B57c201E092C4A2017A91815034326Efd1;
@@ -112,7 +112,7 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6
   address internal constant wstETH_UNDERLYING = 0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6;
 
-  uint256 internal constant wstETH_DECIMALS = 18;
+  uint8 internal constant wstETH_DECIMALS = 18;
 
   // https://blockscout.com/xdai/mainnet/address/0x23e4E76D01B2002BE436CE8d6044b0aA2f68B68a
   address internal constant wstETH_A_TOKEN = 0x23e4E76D01B2002BE436CE8d6044b0aA2f68B68a;
@@ -133,7 +133,7 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb
   address internal constant GNO_UNDERLYING = 0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb;
 
-  uint256 internal constant GNO_DECIMALS = 18;
+  uint8 internal constant GNO_DECIMALS = 18;
 
   // https://blockscout.com/xdai/mainnet/address/0xA1Fa064A85266E2Ca82DEe5C5CcEC84DF445760e
   address internal constant GNO_A_TOKEN = 0xA1Fa064A85266E2Ca82DEe5C5CcEC84DF445760e;
@@ -153,7 +153,7 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83
   address internal constant USDC_UNDERLYING = 0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://blockscout.com/xdai/mainnet/address/0xc6B7AcA6DE8a6044E0e32d0c841a89244A10D284
   address internal constant USDC_A_TOKEN = 0xc6B7AcA6DE8a6044E0e32d0c841a89244A10D284;
@@ -174,7 +174,7 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d
   address internal constant WXDAI_UNDERLYING = 0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d;
 
-  uint256 internal constant WXDAI_DECIMALS = 18;
+  uint8 internal constant WXDAI_DECIMALS = 18;
 
   // https://blockscout.com/xdai/mainnet/address/0xd0Dd6cEF72143E22cCED4867eb0d5F2328715533
   address internal constant WXDAI_A_TOKEN = 0xd0Dd6cEF72143E22cCED4867eb0d5F2328715533;
@@ -195,7 +195,7 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0xcB444e90D8198415266c6a2724b7900fb12FC56E
   address internal constant EURe_UNDERLYING = 0xcB444e90D8198415266c6a2724b7900fb12FC56E;
 
-  uint256 internal constant EURe_DECIMALS = 18;
+  uint8 internal constant EURe_DECIMALS = 18;
 
   // https://blockscout.com/xdai/mainnet/address/0xEdBC7449a9b594CA4E053D9737EC5Dc4CbCcBfb2
   address internal constant EURe_A_TOKEN = 0xEdBC7449a9b594CA4E053D9737EC5Dc4CbCcBfb2;
@@ -216,7 +216,7 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0xaf204776c7245bF4147c2612BF6e5972Ee483701
   address internal constant sDAI_UNDERLYING = 0xaf204776c7245bF4147c2612BF6e5972Ee483701;
 
-  uint256 internal constant sDAI_DECIMALS = 18;
+  uint8 internal constant sDAI_DECIMALS = 18;
 
   // https://blockscout.com/xdai/mainnet/address/0x7a5c3860a77a8DC1b225BD46d0fb2ac1C6D191BC
   address internal constant sDAI_A_TOKEN = 0x7a5c3860a77a8DC1b225BD46d0fb2ac1C6D191BC;

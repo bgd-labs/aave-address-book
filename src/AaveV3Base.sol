@@ -104,7 +104,7 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x4200000000000000000000000000000000000006
   address internal constant WETH_UNDERLYING = 0x4200000000000000000000000000000000000006;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://basescan.org/address/0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7
   address internal constant WETH_A_TOKEN = 0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7;
@@ -125,7 +125,7 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22
   address internal constant cbETH_UNDERLYING = 0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22;
 
-  uint256 internal constant cbETH_DECIMALS = 18;
+  uint8 internal constant cbETH_DECIMALS = 18;
 
   // https://basescan.org/address/0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad
   address internal constant cbETH_A_TOKEN = 0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad;
@@ -146,7 +146,7 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA
   address internal constant USDbC_UNDERLYING = 0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA;
 
-  uint256 internal constant USDbC_DECIMALS = 6;
+  uint8 internal constant USDbC_DECIMALS = 6;
 
   // https://basescan.org/address/0x0a1d576f3eFeF75b330424287a95A366e8281D54
   address internal constant USDbC_A_TOKEN = 0x0a1d576f3eFeF75b330424287a95A366e8281D54;

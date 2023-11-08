@@ -65,7 +65,7 @@ export function generateAssetsLibrary(
     const symbol = fixSymbol(_symbol, rest.UNDERLYING);
     return {
       [`${symbol}_UNDERLYING`]: rest.UNDERLYING,
-      [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint256'},
+      [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
       [`${symbol}_A_TOKEN`]: rest.A_TOKEN,
       [`${symbol}_V_TOKEN`]: rest.V_TOKEN,
       [`${symbol}_S_TOKEN`]: rest.S_TOKEN,

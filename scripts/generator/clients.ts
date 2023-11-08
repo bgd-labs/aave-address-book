@@ -126,7 +126,7 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.sepolia]: createPublicClient({
     chain: sepolia,
-    transport: http(),
+    transport: http('https://ethereum-sepolia.publicnode.com'),
     batch: {
       multicall: true,
     },
