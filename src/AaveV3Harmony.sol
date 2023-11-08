@@ -76,7 +76,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0xEf977d2f931C1978Db5F6747666fa1eACB0d0339
   address internal constant ONE_DAI_UNDERLYING = 0xEf977d2f931C1978Db5F6747666fa1eACB0d0339;
 
-  uint256 internal constant ONE_DAI_DECIMALS = 18;
+  uint8 internal constant ONE_DAI_DECIMALS = 18;
 
   // https://explorer.harmony.one/address/0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE
   address internal constant ONE_DAI_A_TOKEN = 0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE;
@@ -97,7 +97,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0x218532a12a389a4a92fC0C5Fb22901D1c19198aA
   address internal constant LINK_UNDERLYING = 0x218532a12a389a4a92fC0C5Fb22901D1c19198aA;
 
-  uint256 internal constant LINK_DECIMALS = 18;
+  uint8 internal constant LINK_DECIMALS = 18;
 
   // https://explorer.harmony.one/address/0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530
   address internal constant LINK_A_TOKEN = 0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530;
@@ -118,7 +118,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0x985458E523dB3d53125813eD68c274899e9DfAb4
   address internal constant ONE_USDC_UNDERLYING = 0x985458E523dB3d53125813eD68c274899e9DfAb4;
 
-  uint256 internal constant ONE_USDC_DECIMALS = 6;
+  uint8 internal constant ONE_USDC_DECIMALS = 6;
 
   // https://explorer.harmony.one/address/0x625E7708f30cA75bfd92586e17077590C60eb4cD
   address internal constant ONE_USDC_A_TOKEN = 0x625E7708f30cA75bfd92586e17077590C60eb4cD;
@@ -139,7 +139,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0x3095c7557bCb296ccc6e363DE01b760bA031F2d9
   address internal constant ONE_WBTC_UNDERLYING = 0x3095c7557bCb296ccc6e363DE01b760bA031F2d9;
 
-  uint256 internal constant ONE_WBTC_DECIMALS = 8;
+  uint8 internal constant ONE_WBTC_DECIMALS = 8;
 
   // https://explorer.harmony.one/address/0x078f358208685046a11C85e8ad32895DED33A249
   address internal constant ONE_WBTC_A_TOKEN = 0x078f358208685046a11C85e8ad32895DED33A249;
@@ -160,7 +160,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0x6983D1E6DEf3690C4d616b13597A09e6193EA013
   address internal constant ONE_ETH_UNDERLYING = 0x6983D1E6DEf3690C4d616b13597A09e6193EA013;
 
-  uint256 internal constant ONE_ETH_DECIMALS = 18;
+  uint8 internal constant ONE_ETH_DECIMALS = 18;
 
   // https://explorer.harmony.one/address/0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8
   address internal constant ONE_ETH_A_TOKEN = 0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8;
@@ -181,7 +181,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f
   address internal constant ONE_USDT_UNDERLYING = 0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f;
 
-  uint256 internal constant ONE_USDT_DECIMALS = 6;
+  uint8 internal constant ONE_USDT_DECIMALS = 6;
 
   // https://explorer.harmony.one/address/0x6ab707Aca953eDAeFBc4fD23bA73294241490620
   address internal constant ONE_USDT_A_TOKEN = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
@@ -202,7 +202,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0xcF323Aad9E522B93F11c352CaA519Ad0E14eB40F
   address internal constant ONE_AAVE_UNDERLYING = 0xcF323Aad9E522B93F11c352CaA519Ad0E14eB40F;
 
-  uint256 internal constant ONE_AAVE_DECIMALS = 18;
+  uint8 internal constant ONE_AAVE_DECIMALS = 18;
 
   // https://explorer.harmony.one/address/0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
   address internal constant ONE_AAVE_A_TOKEN = 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375;
@@ -223,7 +223,7 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a
   address internal constant WONE_UNDERLYING = 0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a;
 
-  uint256 internal constant WONE_DECIMALS = 18;
+  uint8 internal constant WONE_DECIMALS = 18;
 
   // https://explorer.harmony.one/address/0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97
   address internal constant WONE_A_TOKEN = 0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97;

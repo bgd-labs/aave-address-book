@@ -107,7 +107,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1
   address internal constant DAI_UNDERLYING = 0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://arbiscan.io/address/0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE
   address internal constant DAI_A_TOKEN = 0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE;
@@ -127,7 +127,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xf97f4df75117a78c1A5a0DBb814Af92458539FB4
   address internal constant LINK_UNDERLYING = 0xf97f4df75117a78c1A5a0DBb814Af92458539FB4;
 
-  uint256 internal constant LINK_DECIMALS = 18;
+  uint8 internal constant LINK_DECIMALS = 18;
 
   // https://arbiscan.io/address/0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530
   address internal constant LINK_A_TOKEN = 0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530;
@@ -148,7 +148,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8
   address internal constant USDC_UNDERLYING = 0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://arbiscan.io/address/0x625E7708f30cA75bfd92586e17077590C60eb4cD
   address internal constant USDC_A_TOKEN = 0x625E7708f30cA75bfd92586e17077590C60eb4cD;
@@ -169,7 +169,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f
   address internal constant WBTC_UNDERLYING = 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f;
 
-  uint256 internal constant WBTC_DECIMALS = 8;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
   // https://arbiscan.io/address/0x078f358208685046a11C85e8ad32895DED33A249
   address internal constant WBTC_A_TOKEN = 0x078f358208685046a11C85e8ad32895DED33A249;
@@ -190,7 +190,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x82aF49447D8a07e3bd95BD0d56f35241523fBab1
   address internal constant WETH_UNDERLYING = 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://arbiscan.io/address/0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8
   address internal constant WETH_A_TOKEN = 0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8;
@@ -211,7 +211,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9
   address internal constant USDT_UNDERLYING = 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9;
 
-  uint256 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://arbiscan.io/address/0x6ab707Aca953eDAeFBc4fD23bA73294241490620
   address internal constant USDT_A_TOKEN = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
@@ -232,7 +232,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xba5DdD1f9d7F570dc94a51479a000E3BCE967196
   address internal constant AAVE_UNDERLYING = 0xba5DdD1f9d7F570dc94a51479a000E3BCE967196;
 
-  uint256 internal constant AAVE_DECIMALS = 18;
+  uint8 internal constant AAVE_DECIMALS = 18;
 
   // https://arbiscan.io/address/0xf329e36C7bF6E5E86ce2150875a84Ce77f477375
   address internal constant AAVE_A_TOKEN = 0xf329e36C7bF6E5E86ce2150875a84Ce77f477375;
@@ -253,7 +253,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xD22a58f79e9481D1a88e00c343885A588b34b68B
   address internal constant EURS_UNDERLYING = 0xD22a58f79e9481D1a88e00c343885A588b34b68B;
 
-  uint256 internal constant EURS_DECIMALS = 2;
+  uint8 internal constant EURS_DECIMALS = 2;
 
   // https://arbiscan.io/address/0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97
   address internal constant EURS_A_TOKEN = 0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97;
@@ -274,7 +274,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x5979D7b546E38E414F7E9822514be443A4800529
   address internal constant wstETH_UNDERLYING = 0x5979D7b546E38E414F7E9822514be443A4800529;
 
-  uint256 internal constant wstETH_DECIMALS = 18;
+  uint8 internal constant wstETH_DECIMALS = 18;
 
   // https://arbiscan.io/address/0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf
   address internal constant wstETH_A_TOKEN = 0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf;
@@ -295,7 +295,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x3F56e0c36d275367b8C502090EDF38289b3dEa0d
   address internal constant MAI_UNDERLYING = 0x3F56e0c36d275367b8C502090EDF38289b3dEa0d;
 
-  uint256 internal constant MAI_DECIMALS = 18;
+  uint8 internal constant MAI_DECIMALS = 18;
 
   // https://arbiscan.io/address/0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA
   address internal constant MAI_A_TOKEN = 0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA;
@@ -315,7 +315,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8
   address internal constant rETH_UNDERLYING = 0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8;
 
-  uint256 internal constant rETH_DECIMALS = 18;
+  uint8 internal constant rETH_DECIMALS = 18;
 
   // https://arbiscan.io/address/0x8Eb270e296023E9D92081fdF967dDd7878724424
   address internal constant rETH_A_TOKEN = 0x8Eb270e296023E9D92081fdF967dDd7878724424;
@@ -336,7 +336,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x93b346b6BC2548dA6A1E7d98E9a421B42541425b
   address internal constant LUSD_UNDERLYING = 0x93b346b6BC2548dA6A1E7d98E9a421B42541425b;
 
-  uint256 internal constant LUSD_DECIMALS = 18;
+  uint8 internal constant LUSD_DECIMALS = 18;
 
   // https://arbiscan.io/address/0x8ffDf2DE812095b1D19CB146E4c004587C0A0692
   address internal constant LUSD_A_TOKEN = 0x8ffDf2DE812095b1D19CB146E4c004587C0A0692;
@@ -357,7 +357,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xaf88d065e77c8cC2239327C5EDb3A432268e5831
   address internal constant USDCn_UNDERLYING = 0xaf88d065e77c8cC2239327C5EDb3A432268e5831;
 
-  uint256 internal constant USDCn_DECIMALS = 6;
+  uint8 internal constant USDCn_DECIMALS = 6;
 
   // https://arbiscan.io/address/0x724dc807b04555b71ed48a6896b6F41593b8C637
   address internal constant USDCn_A_TOKEN = 0x724dc807b04555b71ed48a6896b6F41593b8C637;
@@ -378,7 +378,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F
   address internal constant FRAX_UNDERLYING = 0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F;
 
-  uint256 internal constant FRAX_DECIMALS = 18;
+  uint8 internal constant FRAX_DECIMALS = 18;
 
   // https://arbiscan.io/address/0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5
   address internal constant FRAX_A_TOKEN = 0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5;
@@ -399,7 +399,7 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x912CE59144191C1204E64559FE8253a0e49E6548
   address internal constant ARB_UNDERLYING = 0x912CE59144191C1204E64559FE8253a0e49E6548;
 
-  uint256 internal constant ARB_DECIMALS = 18;
+  uint8 internal constant ARB_DECIMALS = 18;
 
   // https://arbiscan.io/address/0x6533afac2E7BCCB20dca161449A13A32D391fb00
   address internal constant ARB_A_TOKEN = 0x6533afac2E7BCCB20dca161449A13A32D391fb00;

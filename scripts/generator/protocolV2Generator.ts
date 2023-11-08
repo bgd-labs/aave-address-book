@@ -28,6 +28,7 @@ export interface PoolV2Addresses {
   COLLECTOR: AddressInfo;
   EMISSION_MANAGER: AddressInfo;
   DEFAULT_INCENTIVES_CONTROLLER: AddressInfo;
+  LENDING_POOL_COLLATERAL_MANAGER: AddressInfo;
   reservesData: ReserveData[];
 }
 
@@ -73,7 +74,7 @@ async function getAdditionalTokenInfo(
 }
 
 export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addresses> {
-  const publicClient = RPC_PROVIDERS[pool.chainId];
+  const publicClient = RPC_PROVIDERS[pool.chainId] as PublicClient;
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
     abi: ADDRESS_PROVIDER_V2_ABI,
@@ -88,6 +89,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       POOL_ADMIN,
       EMERGENCY_ADMIN,
       AAVE_PROTOCOL_DATA_PROVIDER,
+      LENDING_POOL_COLLATERAL_MANAGER,
     ] = await Promise.all([
       addressProviderContract.read.getLendingPool(),
       addressProviderContract.read.getLendingRateOracle(),
@@ -98,6 +100,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       addressProviderContract.read.getAddress([
         '0x0100000000000000000000000000000000000000000000000000000000000000',
       ]),
+      addressProviderContract.read.getLendingPoolCollateralManager(),
     ]);
 
     let reservesData: PoolV2Addresses['reservesData'] = [];
@@ -184,6 +187,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       DEFAULT_INCENTIVES_CONTROLLER,
       ...rest,
       EMISSION_MANAGER,
+      LENDING_POOL_COLLATERAL_MANAGER,
       reservesData,
     };
   } catch (error: any) {

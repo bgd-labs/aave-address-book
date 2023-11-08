@@ -44,6 +44,10 @@ library AaveV2Mumbai {
   // https://mumbai.polygonscan.com/address/0x943E44157dC0302a5CEb172374d1749018a00994
   address internal constant EMISSION_MANAGER = 0x943E44157dC0302a5CEb172374d1749018a00994;
 
+  // https://mumbai.polygonscan.com/address/0x2A7004B21c49253ca8DF923406Fed9a02AA86Ba0
+  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
+    0x2A7004B21c49253ca8DF923406Fed9a02AA86Ba0;
+
   // https://mumbai.polygonscan.com/address/0x0b3C23243106A69449e79C14c58BB49E358f9B10
   address internal constant FAUCET = 0x0b3C23243106A69449e79C14c58BB49E358f9B10;
 
@@ -68,7 +72,7 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F
   address internal constant DAI_UNDERLYING = 0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://mumbai.polygonscan.com/address/0x639cB7b21ee2161DF9c882483C9D55c90c20Ca3e
   address internal constant DAI_A_TOKEN = 0x639cB7b21ee2161DF9c882483C9D55c90c20Ca3e;
@@ -88,7 +92,7 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x2058A9D7613eEE744279e3856Ef0eAda5FCbaA7e
   address internal constant USDC_UNDERLYING = 0x2058A9D7613eEE744279e3856Ef0eAda5FCbaA7e;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://mumbai.polygonscan.com/address/0x2271e3Fef9e15046d09E1d78a8FF038c691E9Cf9
   address internal constant USDC_A_TOKEN = 0x2271e3Fef9e15046d09E1d78a8FF038c691E9Cf9;
@@ -109,7 +113,7 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0xBD21A10F619BE90d6066c941b04e340841F1F989
   address internal constant USDT_UNDERLYING = 0xBD21A10F619BE90d6066c941b04e340841F1F989;
 
-  uint256 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://mumbai.polygonscan.com/address/0xF8744C0bD8C7adeA522d6DDE2298b17284A79D1b
   address internal constant USDT_A_TOKEN = 0xF8744C0bD8C7adeA522d6DDE2298b17284A79D1b;
@@ -130,7 +134,7 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x0d787a4a1548f673ed375445535a6c7A1EE56180
   address internal constant WBTC_UNDERLYING = 0x0d787a4a1548f673ed375445535a6c7A1EE56180;
 
-  uint256 internal constant WBTC_DECIMALS = 8;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
   // https://mumbai.polygonscan.com/address/0xc9276ECa6798A14f64eC33a526b547DAd50bDa2F
   address internal constant WBTC_A_TOKEN = 0xc9276ECa6798A14f64eC33a526b547DAd50bDa2F;
@@ -151,7 +155,7 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x3C68CE8504087f89c640D02d133646d98e64ddd9
   address internal constant WETH_UNDERLYING = 0x3C68CE8504087f89c640D02d133646d98e64ddd9;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://mumbai.polygonscan.com/address/0x7aE20397Ca327721F013BB9e140C707F82871b56
   address internal constant WETH_A_TOKEN = 0x7aE20397Ca327721F013BB9e140C707F82871b56;
@@ -172,7 +176,7 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889
   address internal constant WMATIC_UNDERLYING = 0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889;
 
-  uint256 internal constant WMATIC_DECIMALS = 18;
+  uint8 internal constant WMATIC_DECIMALS = 18;
 
   // https://mumbai.polygonscan.com/address/0xF45444171435d0aCB08a8af493837eF18e86EE27
   address internal constant WMATIC_A_TOKEN = 0xF45444171435d0aCB08a8af493837eF18e86EE27;
@@ -193,7 +197,7 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x341d1f30e77D3FBfbD43D17183E2acb9dF25574E
   address internal constant AAVE_UNDERLYING = 0x341d1f30e77D3FBfbD43D17183E2acb9dF25574E;
 
-  uint256 internal constant AAVE_DECIMALS = 18;
+  uint8 internal constant AAVE_DECIMALS = 18;
 
   // https://mumbai.polygonscan.com/address/0x7ec62b6fC19174255335C8f4346E0C2fcf870a6B
   address internal constant AAVE_A_TOKEN = 0x7ec62b6fC19174255335C8f4346E0C2fcf870a6B;
