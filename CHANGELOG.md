@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.11.0](https://github.com/bgd-labs/aave-address-book/compare/v2.10.0...v2.11.0) (2023-11-08)
+
+
+### Features
+
+* add collateral manager ([#283](https://github.com/bgd-labs/aave-address-book/issues/283)) ([c852ff7](https://github.com/bgd-labs/aave-address-book/commit/c852ff7c1b0d0bd45b1a2916dca63d3031b1684f))
+* add stkabpt usd oracles ([#285](https://github.com/bgd-labs/aave-address-book/issues/285)) ([1539dfa](https://github.com/bgd-labs/aave-address-book/commit/1539dfa534dd03518f857a9fe283bc08cadf09d4))
+
 ## [2.10.0](https://github.com/bgd-labs/aave-address-book/compare/v2.9.0...v2.10.0) (2023-11-03)
 
 
