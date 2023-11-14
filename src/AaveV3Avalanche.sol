@@ -48,9 +48,9 @@ library AaveV3Avalanche {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24;
 
-  // https://snowtrace.io/address/0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_2 =
-    0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9;
+  // https://snowtrace.io/address/0xccf12894957E637Bd69693B12F3ba12b539C2D11
+  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_3 =
+    0xccf12894957E637Bd69693B12F3ba12b539C2D11;
 
   // https://snowtrace.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
   address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;

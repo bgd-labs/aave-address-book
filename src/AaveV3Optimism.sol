@@ -48,9 +48,9 @@ library AaveV3Optimism {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0x04a8D477eE202aDCE1682F5902e1160455205b12;
 
-  // https://explorer.optimism.io/address/0x6b4E260b765B3cA1514e618C0215A6B7839fF93e
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_2 =
-    0x6b4E260b765B3cA1514e618C0215A6B7839fF93e;
+  // https://explorer.optimism.io/address/0x69713dA5fDfacf77E80C31F9B928Ec0Fc3716384
+  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_3 =
+    0x69713dA5fDfacf77E80C31F9B928Ec0Fc3716384;
 
   // https://explorer.optimism.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
   address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;

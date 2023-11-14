@@ -48,9 +48,9 @@ library AaveV3Fantom {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x81387c40EB75acB02757C1Ae55D5936E78c9dEd3;
 
-  // https://ftmscan.com/address/0x52A1CeB68Ee6b7B5D13E0376A1E0E4423A8cE26e
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x52A1CeB68Ee6b7B5D13E0376A1E0E4423A8cE26e;
+  // https://ftmscan.com/address/0xa88c6D90eAe942291325f9ae3c66f3563B93FE10
+  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_2 =
+    0xa88c6D90eAe942291325f9ae3c66f3563B93FE10;
 
   // https://ftmscan.com/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
   address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
