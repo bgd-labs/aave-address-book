@@ -44,9 +44,9 @@ library AaveV2Avalanche {
   // https://snowtrace.io/address/0x5CfCd7E6D055Ba4f7B998914336254aDE3F69f26
   address internal constant EMISSION_MANAGER = 0x5CfCd7E6D055Ba4f7B998914336254aDE3F69f26;
 
-  // https://snowtrace.io/address/0xa9c1bb836752a2Dfb3694ca084D8ffBB07768771
+  // https://snowtrace.io/address/0x69A45013F047A65422deFdD0C43f09530D7025c0
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0xa9c1bb836752a2Dfb3694ca084D8ffBB07768771;
+    0x69A45013F047A65422deFdD0C43f09530D7025c0;
 
   // https://snowtrace.io/address/0xc1D40f4cF36e4aE4108Ffa08818cD16c2d9aEF73
   address internal constant DEBT_SWAP_ADAPTER = 0xc1D40f4cF36e4aE4108Ffa08818cD16c2d9aEF73;

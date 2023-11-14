@@ -44,9 +44,9 @@ library AaveV2Polygon {
   // https://polygonscan.com/address/0x2bB25175d9B0F8965780209EB558Cc3b56cA6d32
   address internal constant EMISSION_MANAGER = 0x2bB25175d9B0F8965780209EB558Cc3b56cA6d32;
 
-  // https://polygonscan.com/address/0xA39599424642D9fD35e475EF802EddF798dc555B
+  // https://polygonscan.com/address/0xAdDb96Fb6A795faf042DD25BD4710267C41D1F74
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0xA39599424642D9fD35e475EF802EddF798dc555B;
+    0xAdDb96Fb6A795faf042DD25BD4710267C41D1F74;
 
   // https://polygonscan.com/address/0x1E623A311948b531B07B6EA7CC34a9A2bCADADd0
   address internal constant DEBT_SWAP_ADAPTER = 0x1E623A311948b531B07B6EA7CC34a9A2bCADADd0;
