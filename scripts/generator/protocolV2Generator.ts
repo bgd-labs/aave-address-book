@@ -15,6 +15,7 @@ import {A_TOKEN_V2_ABI} from '../abi/aToken_v2_abi';
 import {INCENTIVES_CONTROLLER_ABI} from '../abi/incentivesController_abi';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
+import {mainnetAmmV2Pool} from '../configs/pools/ethereum';
 
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -98,7 +99,9 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       addressProviderContract.read.getPoolAdmin(),
       addressProviderContract.read.getEmergencyAdmin(),
       addressProviderContract.read.getAddress([
-        '0x0100000000000000000000000000000000000000000000000000000000000000',
+        pool.name === mainnetAmmV2Pool.name
+          ? '0x1000000000000000000000000000000000000000000000000000000000000000'
+          : '0x0100000000000000000000000000000000000000000000000000000000000000',
       ]),
       addressProviderContract.read.getLendingPoolCollateralManager(),
     ]);

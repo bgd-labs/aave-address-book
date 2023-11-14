@@ -24,9 +24,9 @@ library AaveV2EthereumAMM {
   ILendingRateOracle internal constant LENDING_RATE_ORACLE =
     ILendingRateOracle(0x8A32f49FFbA88aba6EFF96F45D8BD1D4b3f35c7D);
 
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
+  // https://etherscan.io/address/0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IAaveProtocolDataProvider(0x0000000000000000000000000000000000000000);
+    IAaveProtocolDataProvider(0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba);
 
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant POOL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
