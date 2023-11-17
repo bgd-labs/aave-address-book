@@ -128,9 +128,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
   address internal constant WETH_ORACLE = 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
 
-  // https://etherscan.io/address/0xb02381b1d27aA9845e5012083CA288c1818884f0
+  // https://etherscan.io/address/0xA901Bf68Bebde17ba382e499C3e9EbAe649DF276
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xb02381b1d27aA9845e5012083CA288c1818884f0;
+    0xA901Bf68Bebde17ba382e499C3e9EbAe649DF276;
 
   // https://etherscan.io/address/0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0
   address internal constant wstETH_UNDERLYING = 0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0;
