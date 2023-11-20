@@ -28,3 +28,12 @@ export const ethereumAddresses: NetworkAddresses<{
     AAVE_MERKLE_DISTRIBUTOR: '0xa88c6D90eAe942291325f9ae3c66f3563B93FE10',
   },
 };
+
+export const sepoliaAddresses: NetworkAddresses = {
+  name: 'Sepolia',
+  chainId: ChainId.sepolia,
+  addresses: {
+    TRANSPARENT_PROXY_FACTORY: '0x3Bad08c7b17D77cE12A2e1438Db2353b58F7c4a2',
+    PROXY_ADMIN: '0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7',
+  },
+};

@@ -49,6 +49,7 @@ export * as MiscPolygon from './MiscPolygon';
 export * as MiscMetis from './MiscMetis';
 export * as MiscGnosis from './MiscGnosis';
 export * as MiscBNB from './MiscBNB';
+export * as MiscSepolia from './MiscSepolia';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
 export {IAaveGovernanceV2_ABI} from './abis/IAaveGovernanceV2';

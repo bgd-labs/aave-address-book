@@ -49,7 +49,7 @@ import {baseAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses} from './configs/networks/arbitrum';
 import {avalancheAddresses} from './configs/networks/avalanche';
-import {ethereumAddresses} from './configs/networks/ethereum';
+import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
 import {polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses} from './configs/networks/optimism';
@@ -132,7 +132,8 @@ async function main() {
     polygonAddresses,
     metisAddresses,
     gnosisAddresses,
-    bnbAddresses
+    bnbAddresses,
+    sepoliaAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
