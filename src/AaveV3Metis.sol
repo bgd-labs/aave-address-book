@@ -82,6 +82,9 @@ library AaveV3Metis {
 
   // https://andromeda-explorer.metis.io/address/0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b
   address internal constant WALLET_BALANCE_PROVIDER = 0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b;
+
+  // https://andromeda-explorer.metis.io/address/0x9C62AdC332888F56998542415c38D7CDf3Ff7619
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x9C62AdC332888F56998542415c38D7CDf3Ff7619;
 }
 
 library AaveV3MetisAssets {
