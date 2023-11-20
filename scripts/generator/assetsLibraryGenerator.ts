@@ -63,7 +63,7 @@ export function generateAssetsLibrary(
 ) {
   const formattedReservesData = reservesData.map(({symbol: _symbol, ...rest}) => {
     const symbol = fixSymbol(_symbol, rest.UNDERLYING);
-    return {
+    const addresses = {
       [`${symbol}_UNDERLYING`]: rest.UNDERLYING,
       [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
       [`${symbol}_A_TOKEN`]: rest.A_TOKEN,
@@ -72,6 +72,9 @@ export function generateAssetsLibrary(
       [`${symbol}_ORACLE`]: rest.ORACLE,
       [`${symbol}_INTEREST_RATE_STRATEGY`]: rest.INTEREST_RATE_STRATEGY,
     };
+    if (rest.STATA_TOKEN && rest.STATA_TOKEN != zeroAddress)
+      addresses[`${symbol}_STATA_TOKEN`] = rest.STATA_TOKEN;
+    return addresses;
   });
 
   const innerObject = reservesData.reduce(
