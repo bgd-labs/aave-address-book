@@ -21,6 +21,7 @@ import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
 import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
+import {bnbProtoV3} from './configs/pools/bnb';
 import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
 import {
   mumbaiProtoV2,
@@ -54,6 +55,7 @@ import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
+import {bnbAddresses} from './configs/networks/bnb';
 
 async function main() {
   // cleanup ts artifacts
@@ -107,6 +109,7 @@ async function main() {
       baseProtoV3,
       metisProtoV3,
       gnosisProtoV3,
+      bnbProtoV3,
       arbitrumGoerliProtoV3,
       arbitrumProtoV3,
       optimismGoerliProtoV3,
@@ -129,6 +132,7 @@ async function main() {
     polygonAddresses,
     metisAddresses,
     gnosisAddresses,
+    bnbAddresses
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
