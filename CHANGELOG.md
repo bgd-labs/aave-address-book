@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.12.0](https://github.com/bgd-labs/aave-address-book/compare/v2.11.0...v2.12.0) (2023-11-20)
+
+
+### Features
+
+* add bnb addresses ([#292](https://github.com/bgd-labs/aave-address-book/issues/292)) ([2d16c86](https://github.com/bgd-labs/aave-address-book/commit/2d16c86169ef8a040300652d08e422589035a279))
+
+
+### Bug Fixes
+
+* pdp address on amm is in a different slot ([#287](https://github.com/bgd-labs/aave-address-book/issues/287)) ([1d47ffe](https://github.com/bgd-labs/aave-address-book/commit/1d47ffe701a1c49ab546c7295e671e01e40736d5))
+* update aave-v3-core ([#293](https://github.com/bgd-labs/aave-address-book/issues/293)) ([a09a083](https://github.com/bgd-labs/aave-address-book/commit/a09a083130429702ed2674291b2bcccdcff21104))
+
 ## [2.11.0](https://github.com/bgd-labs/aave-address-book/compare/v2.10.0...v2.11.0) (2023-11-08)
 
 
