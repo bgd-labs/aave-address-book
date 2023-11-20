@@ -85,6 +85,9 @@ library AaveV3Gnosis {
 
   // https://blockscout.com/xdai/mainnet/address/0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5
   address internal constant FREEZING_STEWARD = 0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5;
+
+  // https://blockscout.com/xdai/mainnet/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6;
 }
 
 library AaveV3GnosisAssets {
