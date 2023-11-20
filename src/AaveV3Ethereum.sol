@@ -85,9 +85,6 @@ library AaveV3Ethereum {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x02e7B8511831B1b02d9018215a0f8f500Ea5c6B3;
 
-  // https://etherscan.io/address/0x17D0D723a6741C8E154594a8850D29D58Bcc9218
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x17D0D723a6741C8E154594a8850D29D58Bcc9218;
-
   // https://etherscan.io/address/0xADC0A53095A0af87F3aa29FE0715B5c28016364e
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xADC0A53095A0af87F3aa29FE0715B5c28016364e;
 

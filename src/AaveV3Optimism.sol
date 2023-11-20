@@ -81,9 +81,6 @@ library AaveV3Optimism {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xa12734e64417f61f8442E7D5132EdBFdbDDeF0fa;
 
-  // https://explorer.optimism.io/address/0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823
-  address internal constant STATIC_A_TOKEN_FACTORY = 0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823;
-
   // https://explorer.optimism.io/address/0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857;
 

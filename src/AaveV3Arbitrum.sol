@@ -81,9 +81,6 @@ library AaveV3Arbitrum {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x28201C152DC5B69A86FA54FCfd21bcA4C0eff3BA;
 
-  // https://arbiscan.io/address/0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823
-  address internal constant STATIC_A_TOKEN_FACTORY = 0xD9419920a9768d6EdaBbe5b93cB4B5B9F3019823;
-
   // https://arbiscan.io/address/0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251;
 
