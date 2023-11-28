@@ -118,8 +118,8 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D
   address internal constant DAI_ORACLE = 0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D;
 
-  // https://polygonscan.com/address/0xA9F3C3caE095527061e6d270DBE163693e6fda9D
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
+  // https://polygonscan.com/address/0xdef8F50155A6cf21181E29E400E8CffAE2d50968
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xdef8F50155A6cf21181E29E400E8CffAE2d50968;
 
   // https://polygonscan.com/address/0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39
   address internal constant LINK_UNDERLYING = 0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39;
@@ -159,9 +159,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7
   address internal constant USDC_ORACLE = 0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7;
 
-  // https://polygonscan.com/address/0xC82dF96432346cFb632473eB619Db3B8AC280234
+  // https://polygonscan.com/address/0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xC82dF96432346cFb632473eB619Db3B8AC280234;
+    0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3;
 
   // https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6
   address internal constant WBTC_UNDERLYING = 0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6;
@@ -222,9 +222,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x0A6513e40db6EB1b165753AD52E80663aeA50545
   address internal constant USDT_ORACLE = 0x0A6513e40db6EB1b165753AD52E80663aeA50545;
 
-  // https://polygonscan.com/address/0xA9F3C3caE095527061e6d270DBE163693e6fda9D
+  // https://polygonscan.com/address/0xdef8F50155A6cf21181E29E400E8CffAE2d50968
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
+    0xdef8F50155A6cf21181E29E400E8CffAE2d50968;
 
   // https://polygonscan.com/address/0xD6DF932A45C0f255f85145f286eA0b292B21C90B
   address internal constant AAVE_UNDERLYING = 0xD6DF932A45C0f255f85145f286eA0b292B21C90B;
@@ -450,9 +450,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xd8d483d813547CfB624b8Dc33a00F2fcbCd2D428
   address internal constant miMATIC_ORACLE = 0xd8d483d813547CfB624b8Dc33a00F2fcbCd2D428;
 
-  // https://polygonscan.com/address/0xA9F3C3caE095527061e6d270DBE163693e6fda9D
+  // https://polygonscan.com/address/0xA901Bf68Bebde17ba382e499C3e9EbAe649DF276
   address internal constant miMATIC_INTEREST_RATE_STRATEGY =
-    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
+    0xA901Bf68Bebde17ba382e499C3e9EbAe649DF276;
 
   // https://polygonscan.com/address/0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4
   address internal constant stMATIC_UNDERLYING = 0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4;

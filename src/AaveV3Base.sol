@@ -160,9 +160,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x7e860098F58bBFC8648a4311b374B1D669a2bc6B
   address internal constant USDbC_ORACLE = 0x7e860098F58bBFC8648a4311b374B1D669a2bc6B;
 
-  // https://basescan.org/address/0x8BAdED77793c340ab79848A09C7F5f7F16007Ab6
+  // https://basescan.org/address/0x8c63A1b0721D5776Ae5ed1Be8dc7f2A1e7312Ed3
   address internal constant USDbC_INTEREST_RATE_STRATEGY =
-    0x8BAdED77793c340ab79848A09C7F5f7F16007Ab6;
+    0x8c63A1b0721D5776Ae5ed1Be8dc7f2A1e7312Ed3;
 }
 
 library AaveV3BaseEModes {

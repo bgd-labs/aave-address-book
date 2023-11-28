@@ -121,8 +121,8 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x8dBa75e83DA73cc766A7e5a0ee71F656BAb470d6
   address internal constant DAI_ORACLE = 0x8dBa75e83DA73cc766A7e5a0ee71F656BAb470d6;
 
-  // https://explorer.optimism.io/address/0xA9F3C3caE095527061e6d270DBE163693e6fda9D
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
+  // https://explorer.optimism.io/address/0x6D6D3b7FC50999bf20dE5CC8e0F63AFD18B95f0e
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x6D6D3b7FC50999bf20dE5CC8e0F63AFD18B95f0e;
 
   // https://explorer.optimism.io/address/0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6
   address internal constant LINK_UNDERLYING = 0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6;
@@ -162,9 +162,9 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3
   address internal constant USDC_ORACLE = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
 
-  // https://explorer.optimism.io/address/0x354E84ec43aCD91e1C0135c3e691960E881DB4b7
+  // https://explorer.optimism.io/address/0x3832311560d3B457E9cC35e5b8e06EB167D8c17D
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x354E84ec43aCD91e1C0135c3e691960E881DB4b7;
+    0x3832311560d3B457E9cC35e5b8e06EB167D8c17D;
 
   // https://explorer.optimism.io/address/0x68f180fcCe6836688e9084f035309E29Bf0A2095
   address internal constant WBTC_UNDERLYING = 0x68f180fcCe6836688e9084f035309E29Bf0A2095;
@@ -225,9 +225,9 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0xECef79E109e997bCA29c1c0897ec9d7b03647F5E
   address internal constant USDT_ORACLE = 0xECef79E109e997bCA29c1c0897ec9d7b03647F5E;
 
-  // https://explorer.optimism.io/address/0xA9F3C3caE095527061e6d270DBE163693e6fda9D
+  // https://explorer.optimism.io/address/0x6D6D3b7FC50999bf20dE5CC8e0F63AFD18B95f0e
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
+    0x6D6D3b7FC50999bf20dE5CC8e0F63AFD18B95f0e;
 
   // https://explorer.optimism.io/address/0x76FB31fb4af56892A25e32cFC43De717950c9278
   address internal constant AAVE_UNDERLYING = 0x76FB31fb4af56892A25e32cFC43De717950c9278;
@@ -267,9 +267,9 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x7f99817d87baD03ea21E05112Ca799d715730efe
   address internal constant sUSD_ORACLE = 0x7f99817d87baD03ea21E05112Ca799d715730efe;
 
-  // https://explorer.optimism.io/address/0xA9F3C3caE095527061e6d270DBE163693e6fda9D
+  // https://explorer.optimism.io/address/0xD61ca03Eac0352090f45bE50403F7B17d20E11F2
   address internal constant sUSD_INTEREST_RATE_STRATEGY =
-    0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
+    0xD61ca03Eac0352090f45bE50403F7B17d20E11F2;
 
   // https://explorer.optimism.io/address/0x4200000000000000000000000000000000000042
   address internal constant OP_UNDERLYING = 0x4200000000000000000000000000000000000042;
@@ -329,9 +329,9 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x9dfc79Aaeb5bb0f96C6e9402671981CdFc424052
   address internal constant LUSD_ORACLE = 0x9dfc79Aaeb5bb0f96C6e9402671981CdFc424052;
 
-  // https://explorer.optimism.io/address/0x271f5f8325051f22caDa18FfedD4a805584a232A
+  // https://explorer.optimism.io/address/0x41365f2aC2D19c3B4Bc691007d314aba80af3669
   address internal constant LUSD_INTEREST_RATE_STRATEGY =
-    0x271f5f8325051f22caDa18FfedD4a805584a232A;
+    0x41365f2aC2D19c3B4Bc691007d314aba80af3669;
 
   // https://explorer.optimism.io/address/0xdFA46478F9e5EA86d57387849598dbFB2e964b02
   address internal constant MAI_UNDERLYING = 0xdFA46478F9e5EA86d57387849598dbFB2e964b02;
@@ -350,8 +350,8 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0
   address internal constant MAI_ORACLE = 0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0;
 
-  // https://explorer.optimism.io/address/0xD624AFA34614B4fe7FEe7e1751a2E5E04fb47398
-  address internal constant MAI_INTEREST_RATE_STRATEGY = 0xD624AFA34614B4fe7FEe7e1751a2E5E04fb47398;
+  // https://explorer.optimism.io/address/0x049E42fe40368384d04bC10f8494Ea6FD164442a
+  address internal constant MAI_INTEREST_RATE_STRATEGY = 0x049E42fe40368384d04bC10f8494Ea6FD164442a;
 
   // https://explorer.optimism.io/address/0x9Bcef72be871e61ED4fBbc7630889beE758eb81D
   address internal constant rETH_UNDERLYING = 0x9Bcef72be871e61ED4fBbc7630889beE758eb81D;
