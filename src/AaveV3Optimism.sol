@@ -414,24 +414,24 @@ library AaveV3OptimismAssets {
   address internal constant rETH_STATA_TOKEN = 0xf9ce3c97b4b54F3D16861420f4816D9f68190B7B;
 
   // https://explorer.optimism.io/address/0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85
-  address internal constant USDC_UNDERLYING = 0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85;
+  address internal constant USDCn_UNDERLYING = 0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85;
 
-  uint8 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDCn_DECIMALS = 6;
 
   // https://explorer.optimism.io/address/0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5
-  address internal constant USDC_A_TOKEN = 0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5;
+  address internal constant USDCn_A_TOKEN = 0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5;
 
   // https://explorer.optimism.io/address/0x5D557B07776D12967914379C71a1310e917C7555
-  address internal constant USDC_V_TOKEN = 0x5D557B07776D12967914379C71a1310e917C7555;
+  address internal constant USDCn_V_TOKEN = 0x5D557B07776D12967914379C71a1310e917C7555;
 
   // https://explorer.optimism.io/address/0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB
-  address internal constant USDC_S_TOKEN = 0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB;
+  address internal constant USDCn_S_TOKEN = 0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB;
 
   // https://explorer.optimism.io/address/0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3
-  address internal constant USDC_ORACLE = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
+  address internal constant USDCn_ORACLE = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
 
   // https://explorer.optimism.io/address/0x5eE947d920643cCd3e2c54eAAd8F260FC8Add3b4
-  address internal constant USDC_INTEREST_RATE_STRATEGY =
+  address internal constant USDCn_INTEREST_RATE_STRATEGY =
     0x5eE947d920643cCd3e2c54eAAd8F260FC8Add3b4;
 }
 

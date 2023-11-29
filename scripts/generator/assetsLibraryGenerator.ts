@@ -51,6 +51,7 @@ export function fixSymbol(symbol: string, _underlying: string) {
     case '0x59a19d8c652fa0284f44113d0ff9aba70bd46fb4':
       return 'BPT_BAL_WETH';
     case '0xaf88d065e77c8cc2239327c5edb3a432268e5831':
+    case '0x0b2c639c533813f4aa9d7837caf62653d097ff85':
       return 'USDCn';
   }
   return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_');
