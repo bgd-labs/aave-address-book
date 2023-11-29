@@ -78,8 +78,8 @@ library AaveV3Polygon {
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xE3090207A2de94A856EA10a7e1Bd36dD6145712B;
 
-  // https://polygonscan.com/address/0x2B218C73f63820CE86655d16A79C333E24fEB0BE
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x2B218C73f63820CE86655d16A79C333E24fEB0BE;
+  // https://polygonscan.com/address/0x397202AB0b4E7C954ac0c493c00749C517210953
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x397202AB0b4E7C954ac0c493c00749C517210953;
 
   // https://polygonscan.com/address/0xC4aff49fCeD8ac1D818a6DCAB063f9f97E66ec5E
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xC4aff49fCeD8ac1D818a6DCAB063f9f97E66ec5E;
@@ -121,6 +121,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xdef8F50155A6cf21181E29E400E8CffAE2d50968
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xdef8F50155A6cf21181E29E400E8CffAE2d50968;
 
+  // https://polygonscan.com/address/0x83c59636e602787A6EEbBdA2915217B416193FcB
+  address internal constant DAI_STATA_TOKEN = 0x83c59636e602787A6EEbBdA2915217B416193FcB;
+
   // https://polygonscan.com/address/0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39
   address internal constant LINK_UNDERLYING = 0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39;
 
@@ -141,6 +144,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x03733F4E008d36f2e37F0080fF1c8DF756622E6F
   address internal constant LINK_INTEREST_RATE_STRATEGY =
     0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
+
+  // https://polygonscan.com/address/0x37868a45c6741616F9E5a189dC0481AD70056B6a
+  address internal constant LINK_STATA_TOKEN = 0x37868a45c6741616F9E5a189dC0481AD70056B6a;
 
   // https://polygonscan.com/address/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174
   address internal constant USDC_UNDERLYING = 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174;
@@ -163,6 +169,9 @@ library AaveV3PolygonAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3;
 
+  // https://polygonscan.com/address/0x1017F4a86Fc3A3c824346d0b8C5e96A5029bDAf9
+  address internal constant USDC_STATA_TOKEN = 0x1017F4a86Fc3A3c824346d0b8C5e96A5029bDAf9;
+
   // https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6
   address internal constant WBTC_UNDERLYING = 0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6;
 
@@ -183,6 +192,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x07Fa3744FeC271F80c2EA97679823F65c13CCDf4
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0x07Fa3744FeC271F80c2EA97679823F65c13CCDf4;
+
+  // https://polygonscan.com/address/0xbC0f50CCB8514Aa7dFEB297521c4BdEBc9C7d22d
+  address internal constant WBTC_STATA_TOKEN = 0xbC0f50CCB8514Aa7dFEB297521c4BdEBc9C7d22d;
 
   // https://polygonscan.com/address/0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619
   address internal constant WETH_UNDERLYING = 0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619;
@@ -205,6 +217,9 @@ library AaveV3PolygonAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xf6733B9842883BFE0e0a940eA2F572676af31bde;
 
+  // https://polygonscan.com/address/0xb3D5Af0A52a35692D3FcbE37669b3B8C31dddE7D
+  address internal constant WETH_STATA_TOKEN = 0xb3D5Af0A52a35692D3FcbE37669b3B8C31dddE7D;
+
   // https://polygonscan.com/address/0xc2132D05D31c914a87C6611C10748AEb04B58e8F
   address internal constant USDT_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
 
@@ -225,6 +240,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xdef8F50155A6cf21181E29E400E8CffAE2d50968
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0xdef8F50155A6cf21181E29E400E8CffAE2d50968;
+
+  // https://polygonscan.com/address/0x87A1fdc4C726c459f597282be639a045062c0E46
+  address internal constant USDT_STATA_TOKEN = 0x87A1fdc4C726c459f597282be639a045062c0E46;
 
   // https://polygonscan.com/address/0xD6DF932A45C0f255f85145f286eA0b292B21C90B
   address internal constant AAVE_UNDERLYING = 0xD6DF932A45C0f255f85145f286eA0b292B21C90B;
@@ -247,6 +265,9 @@ library AaveV3PolygonAssets {
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
 
+  // https://polygonscan.com/address/0xCA2E1E33E5BCF4978E2d683656E1f5610f8C4A7E
+  address internal constant AAVE_STATA_TOKEN = 0xCA2E1E33E5BCF4978E2d683656E1f5610f8C4A7E;
+
   // https://polygonscan.com/address/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270
   address internal constant WMATIC_UNDERLYING = 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270;
 
@@ -268,6 +289,9 @@ library AaveV3PolygonAssets {
   address internal constant WMATIC_INTEREST_RATE_STRATEGY =
     0xD87974E8ED49AB16d5053ba793F4e17078Be0426;
 
+  // https://polygonscan.com/address/0x98254592408E389D1dd2dBa318656C2C5c305b4E
+  address internal constant WMATIC_STATA_TOKEN = 0x98254592408E389D1dd2dBa318656C2C5c305b4E;
+
   // https://polygonscan.com/address/0x172370d5Cd63279eFa6d502DAB29171933a610AF
   address internal constant CRV_UNDERLYING = 0x172370d5Cd63279eFa6d502DAB29171933a610AF;
 
@@ -287,6 +311,9 @@ library AaveV3PolygonAssets {
 
   // https://polygonscan.com/address/0xBefcd01681224555b74eAC87207eaF9Bc3361F59
   address internal constant CRV_INTEREST_RATE_STRATEGY = 0xBefcd01681224555b74eAC87207eaF9Bc3361F59;
+
+  // https://polygonscan.com/address/0x4356941463eD4d75381AC23C9EF799B5d7C52AD8
+  address internal constant CRV_STATA_TOKEN = 0x4356941463eD4d75381AC23C9EF799B5d7C52AD8;
 
   // https://polygonscan.com/address/0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a
   address internal constant SUSHI_UNDERLYING = 0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a;
@@ -309,6 +336,9 @@ library AaveV3PolygonAssets {
   address internal constant SUSHI_INTEREST_RATE_STRATEGY =
     0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
 
+  // https://polygonscan.com/address/0xe3eDe71d32240b7EC355F0e5DD1131BBe029F934
+  address internal constant SUSHI_STATA_TOKEN = 0xe3eDe71d32240b7EC355F0e5DD1131BBe029F934;
+
   // https://polygonscan.com/address/0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7
   address internal constant GHST_UNDERLYING = 0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7;
 
@@ -330,6 +360,9 @@ library AaveV3PolygonAssets {
   address internal constant GHST_INTEREST_RATE_STRATEGY =
     0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
 
+  // https://polygonscan.com/address/0x123319636A6a9c85D9959399304F4cB23F64327e
+  address internal constant GHST_STATA_TOKEN = 0x123319636A6a9c85D9959399304F4cB23F64327e;
+
   // https://polygonscan.com/address/0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3
   address internal constant BAL_UNDERLYING = 0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3;
 
@@ -350,6 +383,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xCbDC7D7984D7AD59434f0B1999D2006898C40f9A
   address internal constant BAL_INTEREST_RATE_STRATEGY = 0xCbDC7D7984D7AD59434f0B1999D2006898C40f9A;
 
+  // https://polygonscan.com/address/0x1a8969FD39AbaF228e690B172C4C3Eb7c67F95E1
+  address internal constant BAL_STATA_TOKEN = 0x1a8969FD39AbaF228e690B172C4C3Eb7c67F95E1;
+
   // https://polygonscan.com/address/0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369
   address internal constant DPI_UNDERLYING = 0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369;
 
@@ -369,6 +405,9 @@ library AaveV3PolygonAssets {
 
   // https://polygonscan.com/address/0xd9d85499449f26d2A2c240defd75314f23920089
   address internal constant DPI_INTEREST_RATE_STRATEGY = 0xd9d85499449f26d2A2c240defd75314f23920089;
+
+  // https://polygonscan.com/address/0x73B788ACA5f4F0EeB3c6Da453cDf31041a77b36D
+  address internal constant DPI_STATA_TOKEN = 0x73B788ACA5f4F0EeB3c6Da453cDf31041a77b36D;
 
   // https://polygonscan.com/address/0xE111178A87A3BFf0c8d18DECBa5798827539Ae99
   address internal constant EURS_UNDERLYING = 0xE111178A87A3BFf0c8d18DECBa5798827539Ae99;
@@ -391,6 +430,9 @@ library AaveV3PolygonAssets {
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0x8F183Ee74C790CB558232a141099b316D6C8Ba6E;
 
+  // https://polygonscan.com/address/0x02E26888Ed3240BB38f26A2adF96Af9B52b167ea
+  address internal constant EURS_STATA_TOKEN = 0x02E26888Ed3240BB38f26A2adF96Af9B52b167ea;
+
   // https://polygonscan.com/address/0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c
   address internal constant jEUR_UNDERLYING = 0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c;
 
@@ -411,6 +453,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4
   address internal constant jEUR_INTEREST_RATE_STRATEGY =
     0x41B66b4b6b4c9dab039d96528D1b88f7BAF8C5A4;
+
+  // https://polygonscan.com/address/0xD992DaC78Ef3F34614E6a7d325b7b6A320FC0AB5
+  address internal constant jEUR_STATA_TOKEN = 0xD992DaC78Ef3F34614E6a7d325b7b6A320FC0AB5;
 
   // https://polygonscan.com/address/0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4
   address internal constant agEUR_UNDERLYING = 0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4;
@@ -433,6 +478,9 @@ library AaveV3PolygonAssets {
   address internal constant agEUR_INTEREST_RATE_STRATEGY =
     0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
+  // https://polygonscan.com/address/0xd3eb8796Ed36f58E03B7b4b5AD417FA74931d2c4
+  address internal constant agEUR_STATA_TOKEN = 0xd3eb8796Ed36f58E03B7b4b5AD417FA74931d2c4;
+
   // https://polygonscan.com/address/0xa3Fa99A148fA48D14Ed51d610c367C61876997F1
   address internal constant miMATIC_UNDERLYING = 0xa3Fa99A148fA48D14Ed51d610c367C61876997F1;
 
@@ -453,6 +501,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xA901Bf68Bebde17ba382e499C3e9EbAe649DF276
   address internal constant miMATIC_INTEREST_RATE_STRATEGY =
     0xA901Bf68Bebde17ba382e499C3e9EbAe649DF276;
+
+  // https://polygonscan.com/address/0x8486B49433cCed038b51d18Ae3772CDB7E31CA5e
+  address internal constant miMATIC_STATA_TOKEN = 0x8486B49433cCed038b51d18Ae3772CDB7E31CA5e;
 
   // https://polygonscan.com/address/0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4
   address internal constant stMATIC_UNDERLYING = 0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4;
@@ -475,6 +526,9 @@ library AaveV3PolygonAssets {
   address internal constant stMATIC_INTEREST_RATE_STRATEGY =
     0x03733F4E008d36f2e37F0080fF1c8DF756622E6F;
 
+  // https://polygonscan.com/address/0x867A180B7060fDC27610dC9096E93534F638A315
+  address internal constant stMATIC_STATA_TOKEN = 0x867A180B7060fDC27610dC9096E93534F638A315;
+
   // https://polygonscan.com/address/0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6
   address internal constant MaticX_UNDERLYING = 0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6;
 
@@ -496,6 +550,9 @@ library AaveV3PolygonAssets {
   address internal constant MaticX_INTEREST_RATE_STRATEGY =
     0x6B434652E4C4e3e972f9F267982F05ae0fcc24b6;
 
+  // https://polygonscan.com/address/0xbcDd5709641Af4BE99b1470A2B3A5203539132Ec
+  address internal constant MaticX_STATA_TOKEN = 0xbcDd5709641Af4BE99b1470A2B3A5203539132Ec;
+
   // https://polygonscan.com/address/0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD
   address internal constant wstETH_UNDERLYING = 0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD;
 
@@ -516,6 +573,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0xA6459195d60A797D278f58Ffbd2BA62Fb3F7FA1E;
+
+  // https://polygonscan.com/address/0x5274453F4CD5dD7280011a1Cca3B9e1b78EC59A6
+  address internal constant wstETH_STATA_TOKEN = 0x5274453F4CD5dD7280011a1Cca3B9e1b78EC59A6;
 }
 
 library AaveV3PolygonEModes {

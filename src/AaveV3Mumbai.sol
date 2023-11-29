@@ -69,6 +69,9 @@ library AaveV3Mumbai {
 
   // https://mumbai.polygonscan.com/address/0x8dA9412AbB78db20d0B496573D9066C474eA21B8
   address internal constant WETH_GATEWAY = 0x8dA9412AbB78db20d0B496573D9066C474eA21B8;
+
+  // https://mumbai.polygonscan.com/address/0x4df6bfA5522aAd4C80e6C95b613B92AC019f2d3e
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x4df6bfA5522aAd4C80e6C95b613B92AC019f2d3e;
 }
 
 library AaveV3MumbaiAssets {
@@ -92,6 +95,9 @@ library AaveV3MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0xbE46486f69fc2882e5E4769CFBCe704E3EfecD25
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xbE46486f69fc2882e5E4769CFBCe704E3EfecD25;
 
+  // https://mumbai.polygonscan.com/address/0xe012Fa4A7CAa676b2587A20650b8358d72984250
+  address internal constant DAI_STATA_TOKEN = 0xe012Fa4A7CAa676b2587A20650b8358d72984250;
+
   // https://mumbai.polygonscan.com/address/0x9DFf9E93B1e513379cf820504D642c6891d8F7CC
   address internal constant LINK_UNDERLYING = 0x9DFf9E93B1e513379cf820504D642c6891d8F7CC;
 
@@ -112,6 +118,9 @@ library AaveV3MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B
   address internal constant LINK_INTEREST_RATE_STRATEGY =
     0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
+
+  // https://mumbai.polygonscan.com/address/0xA609025Ee8885C4E557331cCF4e3A1099B182359
+  address internal constant LINK_STATA_TOKEN = 0xA609025Ee8885C4E557331cCF4e3A1099B182359;
 
   // https://mumbai.polygonscan.com/address/0x52D800ca262522580CeBAD275395ca6e7598C014
   address internal constant USDC_UNDERLYING = 0x52D800ca262522580CeBAD275395ca6e7598C014;
@@ -134,6 +143,9 @@ library AaveV3MumbaiAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25;
 
+  // https://mumbai.polygonscan.com/address/0x5eF0fbC8cC652e1128ff50fA8473B7E949C9EaC3
+  address internal constant USDC_STATA_TOKEN = 0x5eF0fbC8cC652e1128ff50fA8473B7E949C9EaC3;
+
   // https://mumbai.polygonscan.com/address/0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A
   address internal constant WBTC_UNDERLYING = 0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A;
 
@@ -154,6 +166,9 @@ library AaveV3MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
     0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
+
+  // https://mumbai.polygonscan.com/address/0x0693e498eF6D6fb27b57dc3D9e3E0a0f9f2fbeC4
+  address internal constant WBTC_STATA_TOKEN = 0x0693e498eF6D6fb27b57dc3D9e3E0a0f9f2fbeC4;
 
   // https://mumbai.polygonscan.com/address/0xc199807AF4fEDB02EE567Ed0FeB814A077de4802
   address internal constant WETH_UNDERLYING = 0xc199807AF4fEDB02EE567Ed0FeB814A077de4802;
@@ -176,6 +191,9 @@ library AaveV3MumbaiAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
 
+  // https://mumbai.polygonscan.com/address/0x666ef6De71Eb3DAd05F996ECAa910360f4e8fD7c
+  address internal constant WETH_STATA_TOKEN = 0x666ef6De71Eb3DAd05F996ECAa910360f4e8fD7c;
+
   // https://mumbai.polygonscan.com/address/0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2
   address internal constant USDT_UNDERLYING = 0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2;
 
@@ -196,6 +214,9 @@ library AaveV3MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25;
+
+  // https://mumbai.polygonscan.com/address/0x48774b9D6Bd38d6d0CF17D9C6E023b67eDAEeA29
+  address internal constant USDT_STATA_TOKEN = 0x48774b9D6Bd38d6d0CF17D9C6E023b67eDAEeA29;
 
   // https://mumbai.polygonscan.com/address/0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24
   address internal constant AAVE_UNDERLYING = 0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24;
@@ -218,6 +239,9 @@ library AaveV3MumbaiAssets {
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
 
+  // https://mumbai.polygonscan.com/address/0xC19611D616f191dc7dFFAf192c071B8957379585
+  address internal constant AAVE_STATA_TOKEN = 0xC19611D616f191dc7dFFAf192c071B8957379585;
+
   // https://mumbai.polygonscan.com/address/0xaD3C5a67275dE4b5554CdD1d961e957f408eF75a
   address internal constant WMATIC_UNDERLYING = 0xaD3C5a67275dE4b5554CdD1d961e957f408eF75a;
 
@@ -239,6 +263,9 @@ library AaveV3MumbaiAssets {
   address internal constant WMATIC_INTEREST_RATE_STRATEGY =
     0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
 
+  // https://mumbai.polygonscan.com/address/0x5C0478fd615e02ecC3BB3fbe2fe6153090031696
+  address internal constant WMATIC_STATA_TOKEN = 0x5C0478fd615e02ecC3BB3fbe2fe6153090031696;
+
   // https://mumbai.polygonscan.com/address/0x2bbF1f48a678d2f7c291dc5F8fD04805D34F485f
   address internal constant CRV_UNDERLYING = 0x2bbF1f48a678d2f7c291dc5F8fD04805D34F485f;
 
@@ -258,6 +285,9 @@ library AaveV3MumbaiAssets {
 
   // https://mumbai.polygonscan.com/address/0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B
   address internal constant CRV_INTEREST_RATE_STRATEGY = 0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
+
+  // https://mumbai.polygonscan.com/address/0x81E7EB2067FDc31308b2dC97A070EDe0634Aa7fd
+  address internal constant CRV_STATA_TOKEN = 0x81E7EB2067FDc31308b2dC97A070EDe0634Aa7fd;
 
   // https://mumbai.polygonscan.com/address/0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61
   address internal constant SUSHI_UNDERLYING = 0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61;
@@ -280,6 +310,9 @@ library AaveV3MumbaiAssets {
   address internal constant SUSHI_INTEREST_RATE_STRATEGY =
     0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
 
+  // https://mumbai.polygonscan.com/address/0xDEF3d6FcFD68af03cCC4818FFd17F57A54Dd93f8
+  address internal constant SUSHI_STATA_TOKEN = 0xDEF3d6FcFD68af03cCC4818FFd17F57A54Dd93f8;
+
   // https://mumbai.polygonscan.com/address/0x9f86bA35a016acE27BD4C37E42a1940A5b2508EF
   address internal constant GHST_UNDERLYING = 0x9f86bA35a016acE27BD4C37E42a1940A5b2508EF;
 
@@ -301,6 +334,9 @@ library AaveV3MumbaiAssets {
   address internal constant GHST_INTEREST_RATE_STRATEGY =
     0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
 
+  // https://mumbai.polygonscan.com/address/0x7f178E419181B8C9CF64fee7D58F24b32ec0F1cc
+  address internal constant GHST_STATA_TOKEN = 0x7f178E419181B8C9CF64fee7D58F24b32ec0F1cc;
+
   // https://mumbai.polygonscan.com/address/0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB
   address internal constant BAL_UNDERLYING = 0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB;
 
@@ -321,6 +357,9 @@ library AaveV3MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B
   address internal constant BAL_INTEREST_RATE_STRATEGY = 0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
 
+  // https://mumbai.polygonscan.com/address/0xb95140824eC44ec97ab10f459aD0768275Eb3e94
+  address internal constant BAL_STATA_TOKEN = 0xb95140824eC44ec97ab10f459aD0768275Eb3e94;
+
   // https://mumbai.polygonscan.com/address/0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD
   address internal constant DPI_UNDERLYING = 0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD;
 
@@ -340,6 +379,9 @@ library AaveV3MumbaiAssets {
 
   // https://mumbai.polygonscan.com/address/0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B
   address internal constant DPI_INTEREST_RATE_STRATEGY = 0x0313912C1C3D946F9253D9b6E9f6aB9137759b4B;
+
+  // https://mumbai.polygonscan.com/address/0x00718266Ae6AbaCe3C14AD0263968eB7F581BC91
+  address internal constant DPI_STATA_TOKEN = 0x00718266Ae6AbaCe3C14AD0263968eB7F581BC91;
 
   // https://mumbai.polygonscan.com/address/0xB516d30421d2A0524769A243BBE5e193E78ab35c
   address internal constant EURS_UNDERLYING = 0xB516d30421d2A0524769A243BBE5e193E78ab35c;
@@ -362,6 +404,9 @@ library AaveV3MumbaiAssets {
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25;
 
+  // https://mumbai.polygonscan.com/address/0xB5B6c7a13602CF827Cc2F0383E27F8e2DB8dBE64
+  address internal constant EURS_STATA_TOKEN = 0xB5B6c7a13602CF827Cc2F0383E27F8e2DB8dBE64;
+
   // https://mumbai.polygonscan.com/address/0xd409F17095a370800A9C352124C6a1e82695203E
   address internal constant JEUR_UNDERLYING = 0xd409F17095a370800A9C352124C6a1e82695203E;
 
@@ -383,6 +428,9 @@ library AaveV3MumbaiAssets {
   address internal constant JEUR_INTEREST_RATE_STRATEGY =
     0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25;
 
+  // https://mumbai.polygonscan.com/address/0xEf6F8a13a8B2098F13D08A95b32191ddE13693eE
+  address internal constant JEUR_STATA_TOKEN = 0xEf6F8a13a8B2098F13D08A95b32191ddE13693eE;
+
   // https://mumbai.polygonscan.com/address/0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F
   address internal constant AGEUR_UNDERLYING = 0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F;
 
@@ -403,6 +451,9 @@ library AaveV3MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25
   address internal constant AGEUR_INTEREST_RATE_STRATEGY =
     0x8d284fE251BB7Fe6B529FC2f27BAb415FcF46B25;
+
+  // https://mumbai.polygonscan.com/address/0xeF5074Dd60e25F8EFd763068C73d34E05815f41f
+  address internal constant AGEUR_STATA_TOKEN = 0xeF5074Dd60e25F8EFd763068C73d34E05815f41f;
 }
 
 library AaveV3MumbaiEModes {

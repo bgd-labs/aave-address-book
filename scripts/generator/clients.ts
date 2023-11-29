@@ -168,7 +168,7 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.gnosis]: createPublicClient({
     chain: gnosis,
-    transport: http(),
+    transport: http(process.env.RPC_GNOSIS),
     batch: {
       multicall: true,
     },

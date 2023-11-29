@@ -85,6 +85,9 @@ library AaveV3Gnosis {
 
   // https://blockscout.com/xdai/mainnet/address/0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5
   address internal constant FREEZING_STEWARD = 0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5;
+
+  // https://blockscout.com/xdai/mainnet/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
+  address internal constant STATIC_A_TOKEN_FACTORY = 0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6;
 }
 
 library AaveV3GnosisAssets {
@@ -109,6 +112,9 @@ library AaveV3GnosisAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xD84d86083010FB683f1e8fA3809ee8DC90A4C4DB;
 
+  // https://blockscout.com/xdai/mainnet/address/0xD843FB478c5aA9759FeA3f3c98D467e2F136190a
+  address internal constant WETH_STATA_TOKEN = 0xD843FB478c5aA9759FeA3f3c98D467e2F136190a;
+
   // https://blockscout.com/xdai/mainnet/address/0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6
   address internal constant wstETH_UNDERLYING = 0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6;
 
@@ -130,6 +136,9 @@ library AaveV3GnosisAssets {
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0x9E57695Dab0DCdb42BC220ff1E9eb2e22a31209b;
 
+  // https://blockscout.com/xdai/mainnet/address/0xECfD0638175e291BA3F784A58FB9D38a25418904
+  address internal constant wstETH_STATA_TOKEN = 0xECfD0638175e291BA3F784A58FB9D38a25418904;
+
   // https://blockscout.com/xdai/mainnet/address/0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb
   address internal constant GNO_UNDERLYING = 0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb;
 
@@ -149,6 +158,9 @@ library AaveV3GnosisAssets {
 
   // https://blockscout.com/xdai/mainnet/address/0x9E57695Dab0DCdb42BC220ff1E9eb2e22a31209b
   address internal constant GNO_INTEREST_RATE_STRATEGY = 0x9E57695Dab0DCdb42BC220ff1E9eb2e22a31209b;
+
+  // https://blockscout.com/xdai/mainnet/address/0x2D737e2B0e175f05D0904C208d6C4e40da570f65
+  address internal constant GNO_STATA_TOKEN = 0x2D737e2B0e175f05D0904C208d6C4e40da570f65;
 
   // https://blockscout.com/xdai/mainnet/address/0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83
   address internal constant USDC_UNDERLYING = 0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83;
@@ -171,6 +183,9 @@ library AaveV3GnosisAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x345f7fcd88207fe060AD03c2656A23A3Ab596479;
 
+  // https://blockscout.com/xdai/mainnet/address/0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB
+  address internal constant USDC_STATA_TOKEN = 0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB;
+
   // https://blockscout.com/xdai/mainnet/address/0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d
   address internal constant WXDAI_UNDERLYING = 0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d;
 
@@ -191,6 +206,9 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0x345f7fcd88207fe060AD03c2656A23A3Ab596479
   address internal constant WXDAI_INTEREST_RATE_STRATEGY =
     0x345f7fcd88207fe060AD03c2656A23A3Ab596479;
+
+  // https://blockscout.com/xdai/mainnet/address/0x7f0EAE87Df30C468E0680c83549D0b3DE7664D4B
+  address internal constant WXDAI_STATA_TOKEN = 0x7f0EAE87Df30C468E0680c83549D0b3DE7664D4B;
 
   // https://blockscout.com/xdai/mainnet/address/0xcB444e90D8198415266c6a2724b7900fb12FC56E
   address internal constant EURe_UNDERLYING = 0xcB444e90D8198415266c6a2724b7900fb12FC56E;
@@ -213,6 +231,9 @@ library AaveV3GnosisAssets {
   address internal constant EURe_INTEREST_RATE_STRATEGY =
     0x6c3b7e7B8b9609D57C70C3F630228F979EAbb450;
 
+  // https://blockscout.com/xdai/mainnet/address/0x8418D17640a74F1614AC3E1826F29e78714488a1
+  address internal constant EURe_STATA_TOKEN = 0x8418D17640a74F1614AC3E1826F29e78714488a1;
+
   // https://blockscout.com/xdai/mainnet/address/0xaf204776c7245bF4147c2612BF6e5972Ee483701
   address internal constant sDAI_UNDERLYING = 0xaf204776c7245bF4147c2612BF6e5972Ee483701;
 
@@ -233,6 +254,9 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0x6c3b7e7B8b9609D57C70C3F630228F979EAbb450
   address internal constant sDAI_INTEREST_RATE_STRATEGY =
     0x6c3b7e7B8b9609D57C70C3F630228F979EAbb450;
+
+  // https://blockscout.com/xdai/mainnet/address/0xf3f45960f8dE00D8ED614D445a5a268c6F6Dec4f
+  address internal constant sDAI_STATA_TOKEN = 0xf3f45960f8dE00D8ED614D445a5a268c6F6Dec4f;
 }
 
 library AaveV3GnosisEModes {

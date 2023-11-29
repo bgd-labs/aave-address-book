@@ -15,3 +15,12 @@ export const polygonAddresses: NetworkAddresses<{AAVE_POL_ETH_BRIDGE: Hex}> = {
     AAVE_MERKLE_DISTRIBUTOR: '0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b',
   },
 };
+
+export const mumbaiAddresses: NetworkAddresses = {
+  name: 'Mumbai',
+  chainId: ChainId.mumbai,
+  addresses: {
+    TRANSPARENT_PROXY_FACTORY: '0x49A726CC7B438dBc4fB89a9548B5E8691e1C35A6',
+    PROXY_ADMIN: '0xaebfFE29D8E823e8E43695648F418fa8c30AF879',
+  },
+};

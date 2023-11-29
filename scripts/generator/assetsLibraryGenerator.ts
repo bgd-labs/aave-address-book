@@ -51,6 +51,7 @@ export function fixSymbol(symbol: string, _underlying: string) {
     case '0x59a19d8c652fa0284f44113d0ff9aba70bd46fb4':
       return 'BPT_BAL_WETH';
     case '0xaf88d065e77c8cc2239327c5edb3a432268e5831':
+    case '0x0b2c639c533813f4aa9d7837caf62653d097ff85':
       return 'USDCn';
   }
   return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_');
@@ -63,7 +64,7 @@ export function generateAssetsLibrary(
 ) {
   const formattedReservesData = reservesData.map(({symbol: _symbol, ...rest}) => {
     const symbol = fixSymbol(_symbol, rest.UNDERLYING);
-    return {
+    const addresses = {
       [`${symbol}_UNDERLYING`]: rest.UNDERLYING,
       [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
       [`${symbol}_A_TOKEN`]: rest.A_TOKEN,
@@ -72,6 +73,9 @@ export function generateAssetsLibrary(
       [`${symbol}_ORACLE`]: rest.ORACLE,
       [`${symbol}_INTEREST_RATE_STRATEGY`]: rest.INTEREST_RATE_STRATEGY,
     };
+    if (rest.STATA_TOKEN && rest.STATA_TOKEN != zeroAddress)
+      addresses[`${symbol}_STATA_TOKEN`] = rest.STATA_TOKEN;
+    return addresses;
   });
 
   const innerObject = reservesData.reduce(
