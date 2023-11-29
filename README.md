@@ -69,7 +69,7 @@ console.log(AaveV2Avalanche.CHAIN_ID);
 
 ### Generate files
 
-The library is generated based on the config file located in `scripts/config.ts`. You can regenerate the files by running `yarn start`.
+The library is generated based on the config file located in `scripts/generateAddresses.ts` and `scripts/generateABIs.ts`. You can regenerate the files by running `yarn start`.
 
 ### Dependencies
 
@@ -91,15 +91,15 @@ forge test
 
 ### Adding a new Pool
 
-To list a new pool in the address book, you simply need to add a new pool in the [pools config](./scripts/config.ts) and run `yarn start`.
+To list a new pool in the address book, you simply need to add a new pool in the respective [pools config](./scripts/configs/<type>/<network>) and run `yarn start`.
 
 ### Adding new Addresses
 
-a) Adding an address that **can be optained via onchain calls** so it doesn't need to be hardcoded on the configs:
+a) Adding an address that **can be obtained via onchain calls** so it doesn't need to be hardcoded on the configs:
 
 To achieve an addition here you need to add the address to the respective [v2 type](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/generator_v2.ts#L11) and/or [v3 type](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/generator_v3.ts#L11) and adjust the generator scripts accordingly. New types should be added to the [AaveV2](https://github.com/bgd-labs/aave-address-book/blob/main/src/AaveV2.sol) and [AaveV3](https://github.com/bgd-labs/aave-address-book/blob/main/src/AaveV3.sol) files.
 
-b) Adding an address that **cannot be optained via onchain calls** so it needs to be manually maintained:
+b) Adding an address that **cannot be obtained via onchain calls** so it needs to be manually maintained:
 
 To achieve an addition here, you need to alter the [additionalAddresses section](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/config.ts#L46) on the pool type and add your address to the respecive pools. Additional addresses will currently be exported as type `address`. There's currently no possibility to define a custom type.
 

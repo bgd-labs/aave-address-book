@@ -19,8 +19,8 @@ library MiscEthereum {
   // https://etherscan.io/address/0x3ea64b1C0194524b48F9118462C8E9cd61a243c7
   address internal constant AAVE_SWAPPER = 0x3ea64b1C0194524b48F9118462C8E9cd61a243c7;
 
-  // https://etherscan.io/address/0xc928002904Ec475663A83063D492EA2aE09EbDA1
-  address internal constant AAVE_POL_ETH_BRIDGE = 0xc928002904Ec475663A83063D492EA2aE09EbDA1;
+  // https://etherscan.io/address/0x1C2BA5b8ab8e795fF44387ba6d251fa65AD20b36
+  address internal constant AAVE_POL_ETH_BRIDGE = 0x1C2BA5b8ab8e795fF44387ba6d251fa65AD20b36;
 
   // https://etherscan.io/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
   address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
