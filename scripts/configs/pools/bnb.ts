@@ -2,7 +2,7 @@ import {ChainId} from '../../generator/chains';
 import {PoolConfig} from '../types';
 
 export const bnbProtoV3: PoolConfig = {
-  name: 'Bnb',
+  name: 'BNB',
   chainId: ChainId.bnb,
   POOL_ADDRESSES_PROVIDER: '0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D',
   additionalAddresses: {
@@ -26,5 +26,5 @@ export const bnbProtoV3: PoolConfig = {
     DEFAULT_A_TOKEN_IMPL: '0x6c23bAF050ec192afc0B967a93b83e6c5405df43',
     DEFAULT_VARIABLE_DEBT_TOKEN_IMPL: '0x777fBA024bA1228fDa76149A4ff8B23475ed057D',
     DEFAULT_STABLE_DEBT_TOKEN_IMPL: '0xb172a90A7C238969CE9B27cc19D13b60A91e7F00',
-  }
+  },
 };

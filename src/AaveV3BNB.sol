@@ -5,7 +5,7 @@ pragma solidity >=0.6.0;
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
 
-library AaveV3Bnb {
+library AaveV3BNB {
   // https://bscscan.com/address/0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D);
@@ -100,6 +100,6 @@ library AaveV3Bnb {
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x5E2d083417D12d4B0824E14Ecd48D26831F4Da7D;
 }
 
-library AaveV3BnbAssets {}
+library AaveV3BNBAssets {}
 
-library AaveV3BnbEModes {}
+library AaveV3BNBEModes {}
