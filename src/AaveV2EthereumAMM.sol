@@ -44,9 +44,9 @@ library AaveV2EthereumAMM {
   // https://etherscan.io/address/0x0000000000000000000000000000000000000000
   address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
 
-  // https://etherscan.io/address/0xbd4765210d4167CE2A5b87280D9E8Ee316D5EC7C
+  // https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0xbd4765210d4167CE2A5b87280D9E8Ee316D5EC7C;
+    0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
 
   // https://etherscan.io/address/0xcfC26009618ec2Ca8787180116a37Caa354a465C
   address internal constant CONFIG_ENGINE = 0xcfC26009618ec2Ca8787180116a37Caa354a465C;
