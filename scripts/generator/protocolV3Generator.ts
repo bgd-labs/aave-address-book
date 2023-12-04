@@ -7,7 +7,7 @@ import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
 import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
 import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
 import {RPC_PROVIDERS} from './clients';
-import {appendFileSync, writeFileSync, existsSync, rmSync} from 'fs';
+import {appendFileSync, writeFileSync} from 'fs';
 import {
   addressOrZero,
   bytes32toAddress,
@@ -256,7 +256,6 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   const {reservesData, eModes, ...addresses} = await getPoolV3Addresses(config);
   const name = `AaveV3${config.name}`;
 
-  if (existsSync(`./src/${name}.sol`)) rmSync(`./src/${name}.sol`);
   // generate main library
   writeFileSync(
     `./src/${name}.sol`,
@@ -274,7 +273,6 @@ export async function generateProtocolV3Library(config: PoolConfig) {
       ),
     ),
   );
-  if (existsSync(`./src/ts/${name}.ts`)) rmSync(`./src/ts/${name}.ts`);
   writeFileSync(
     `./src/ts/${name}.ts`,
     prefixWithGeneratedWarning(
