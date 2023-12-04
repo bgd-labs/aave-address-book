@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.13.0](https://github.com/bgd-labs/aave-address-book/compare/v2.12.0...v2.13.0) (2023-12-04)
+
+
+### Features
+
+* add static a token factory ([#294](https://github.com/bgd-labs/aave-address-book/issues/294)) ([03e04f0](https://github.com/bgd-labs/aave-address-book/commit/03e04f0fd8012ca7cf74c2d7019fd544b8c0aac8))
+* update bridge address ([#295](https://github.com/bgd-labs/aave-address-book/issues/295)) ([c582623](https://github.com/bgd-labs/aave-address-book/commit/c5826233a2427272a88e09dfcc562f1115736327))
+
 ## [2.12.0](https://github.com/bgd-labs/aave-address-book/compare/v2.11.0...v2.12.0) (2023-11-20)
 
 
