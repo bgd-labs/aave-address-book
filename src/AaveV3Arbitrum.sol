@@ -96,8 +96,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  // https://arbiscan.io/address/0xB5Ee21786D28c5Ba61661550879475976B707099
-  address internal constant WETH_GATEWAY = 0xB5Ee21786D28c5Ba61661550879475976B707099;
+  // https://arbiscan.io/address/0x1401bf602d95a0d52978961644B7BDD117Cf6Df6
+  address internal constant WETH_GATEWAY = 0x1401bf602d95a0d52978961644B7BDD117Cf6Df6;
 
   // https://arbiscan.io/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;

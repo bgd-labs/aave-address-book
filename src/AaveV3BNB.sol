@@ -93,8 +93,8 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
   address internal constant WALLET_BALANCE_PROVIDER = 0x36616cf17557639614c1cdDb356b1B83fc0B2132;
 
-  // https://bscscan.com/address/0x589750BA8aF186cE5B55391B0b7148cAD43a1619
-  address internal constant WETH_GATEWAY = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
+  // https://bscscan.com/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
+  address internal constant WETH_GATEWAY = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
 
   // https://bscscan.com/address/0x5E2d083417D12d4B0824E14Ecd48D26831F4Da7D
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x5E2d083417D12d4B0824E14Ecd48D26831F4Da7D;

@@ -62,8 +62,8 @@ export const UI_POOL_DATA_PROVIDER = '0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809
 // https://blockscout.com/xdai/mainnet/address/0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D
 export const WALLET_BALANCE_PROVIDER = '0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D';
 
-// https://blockscout.com/xdai/mainnet/address/0xb7E51aA2A5f4dD478F183A593F67637ed6F1d1D9
-export const WETH_GATEWAY = '0xb7E51aA2A5f4dD478F183A593F67637ed6F1d1D9';
+// https://blockscout.com/xdai/mainnet/address/0xA25d9f14CFA40d3227ED9a48B124667dDFfCFdDD
+export const WETH_GATEWAY = '0xA25d9f14CFA40d3227ED9a48B124667dDFfCFdDD';
 
 // https://blockscout.com/xdai/mainnet/address/0x33AE1f41546a2e05368Bf789b3d868813c0Ae658
 export const CAPS_PLUS_RISK_STEWARD = '0x33AE1f41546a2e05368Bf789b3d868813c0Ae658';

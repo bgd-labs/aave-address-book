@@ -20,8 +20,8 @@ library AaveV3Optimism {
   // https://explorer.optimism.io/address/0xD81eb3728a631871a7eBBaD631b5f424909f0c77
   IAaveOracle internal constant ORACLE = IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77);
 
-  // https://explorer.optimism.io/address/0xB1ba0787Ca0A45f086F8CA03c97E7593636E47D5
-  address internal constant PRICE_ORACLE_SENTINEL = 0xB1ba0787Ca0A45f086F8CA03c97E7593636E47D5;
+  // https://explorer.optimism.io/address/0xE229d5DE4BD5beEAf12d427B5B57BFe66abD2c3b
+  address internal constant PRICE_ORACLE_SENTINEL = 0xE229d5DE4BD5beEAf12d427B5B57BFe66abD2c3b;
 
   // https://explorer.optimism.io/address/0xd9Ca4878dd38B021583c1B669905592EAe76E044
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
@@ -96,8 +96,8 @@ library AaveV3Optimism {
   // https://explorer.optimism.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  // https://explorer.optimism.io/address/0x76D3030728e52DEB8848d5613aBaDE88441cbc59
-  address internal constant WETH_GATEWAY = 0x76D3030728e52DEB8848d5613aBaDE88441cbc59;
+  // https://explorer.optimism.io/address/0x4C0633Bf70fB2bB984A9eEC5d9052BdEA451C70A
+  address internal constant WETH_GATEWAY = 0x4C0633Bf70fB2bB984A9eEC5d9052BdEA451C70A;
 
   // https://explorer.optimism.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;

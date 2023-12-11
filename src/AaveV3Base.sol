@@ -99,8 +99,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x5779b29B0a34577d927E8D511B595ef9abbFAE82
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;
 
-  // https://basescan.org/address/0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee
-  address internal constant WETH_GATEWAY = 0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee;
+  // https://basescan.org/address/0x398808Db36da6BA4e30d4Fb88d72c3473921bC6e
+  address internal constant WETH_GATEWAY = 0x398808Db36da6BA4e30d4Fb88d72c3473921bC6e;
 }
 
 library AaveV3BaseAssets {
@@ -175,6 +175,27 @@ library AaveV3BaseAssets {
 
   // https://basescan.org/address/0x6fCe2756794128B1771324caA860965801DCbCdB
   address internal constant USDbC_STATA_TOKEN = 0x6fCe2756794128B1771324caA860965801DCbCdB;
+
+  // https://basescan.org/address/0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452
+  address internal constant wstETH_UNDERLYING = 0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://basescan.org/address/0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D
+  address internal constant wstETH_A_TOKEN = 0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D;
+
+  // https://basescan.org/address/0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1
+  address internal constant wstETH_V_TOKEN = 0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1;
+
+  // https://basescan.org/address/0xfe742Fa2a84294E8316F05b17c05090Fc68B5105
+  address internal constant wstETH_S_TOKEN = 0xfe742Fa2a84294E8316F05b17c05090Fc68B5105;
+
+  // https://basescan.org/address/0x945fD405773973d286De54E44649cc0d9e264F78
+  address internal constant wstETH_ORACLE = 0x945fD405773973d286De54E44649cc0d9e264F78;
+
+  // https://basescan.org/address/0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9;
 }
 
 library AaveV3BaseEModes {
