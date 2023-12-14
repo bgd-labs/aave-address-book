@@ -20,8 +20,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x2Cc0Fc26eD4563A5ce5e8bdcfe1A2878676Ae156
   IAaveOracle internal constant ORACLE = IAaveOracle(0x2Cc0Fc26eD4563A5ce5e8bdcfe1A2878676Ae156);
 
-  // https://basescan.org/address/0xe34949A48cd2E6f5CD41753e449bd2d43993C9AC
-  address internal constant PRICE_ORACLE_SENTINEL = 0xe34949A48cd2E6f5CD41753e449bd2d43993C9AC;
+  // https://basescan.org/address/0x943AcD0c93d7a8Bee7dA5Fd0DC3d0028237074d6
+  address internal constant PRICE_ORACLE_SENTINEL = 0x943AcD0c93d7a8Bee7dA5Fd0DC3d0028237074d6;
 
   // https://basescan.org/address/0x2d8A3C5677189723C4cB8873CfC9C8976FDF38Ac
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
@@ -175,6 +175,27 @@ library AaveV3BaseAssets {
 
   // https://basescan.org/address/0x6fCe2756794128B1771324caA860965801DCbCdB
   address internal constant USDbC_STATA_TOKEN = 0x6fCe2756794128B1771324caA860965801DCbCdB;
+
+  // https://basescan.org/address/0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452
+  address internal constant wstETH_UNDERLYING = 0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://basescan.org/address/0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D
+  address internal constant wstETH_A_TOKEN = 0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D;
+
+  // https://basescan.org/address/0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1
+  address internal constant wstETH_V_TOKEN = 0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1;
+
+  // https://basescan.org/address/0xfe742Fa2a84294E8316F05b17c05090Fc68B5105
+  address internal constant wstETH_S_TOKEN = 0xfe742Fa2a84294E8316F05b17c05090Fc68B5105;
+
+  // https://basescan.org/address/0x945fD405773973d286De54E44649cc0d9e264F78
+  address internal constant wstETH_ORACLE = 0x945fD405773973d286De54E44649cc0d9e264F78;
+
+  // https://basescan.org/address/0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9;
 }
 
 library AaveV3BaseEModes {
