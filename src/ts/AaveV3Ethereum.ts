@@ -89,8 +89,8 @@ export const WETH_GATEWAY = '0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C';
 // https://etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
 export const WITHDRAW_SWAP_ADAPTER = '0x78F8Bd884C3D738B74B420540659c82f392820e0';
 
-// https://etherscan.io/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
-export const SAVINGS_DAI_TOKEN_WRAPPER = '0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16';
+// https://etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+export const SAVINGS_DAI_TOKEN_WRAPPER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034';
 
 export const CHAIN_ID = 1;
 export const ASSETS = {
