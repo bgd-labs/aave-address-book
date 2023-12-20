@@ -20,8 +20,8 @@ library AaveV3Optimism {
   // https://explorer.optimism.io/address/0xD81eb3728a631871a7eBBaD631b5f424909f0c77
   IAaveOracle internal constant ORACLE = IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77);
 
-  // https://explorer.optimism.io/address/0xB1ba0787Ca0A45f086F8CA03c97E7593636E47D5
-  address internal constant PRICE_ORACLE_SENTINEL = 0xB1ba0787Ca0A45f086F8CA03c97E7593636E47D5;
+  // https://explorer.optimism.io/address/0xE229d5DE4BD5beEAf12d427B5B57BFe66abD2c3b
+  address internal constant PRICE_ORACLE_SENTINEL = 0xE229d5DE4BD5beEAf12d427B5B57BFe66abD2c3b;
 
   // https://explorer.optimism.io/address/0xd9Ca4878dd38B021583c1B669905592EAe76E044
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
