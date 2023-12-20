@@ -20,8 +20,8 @@ library AaveV3Metis {
   // https://andromeda-explorer.metis.io/address/0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e
   IAaveOracle internal constant ORACLE = IAaveOracle(0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e);
 
-  // https://andromeda-explorer.metis.io/address/0xE2566C39db9559D318fB3a00D7B5992CBeeA8567
-  address internal constant PRICE_ORACLE_SENTINEL = 0xE2566C39db9559D318fB3a00D7B5992CBeeA8567;
+  // https://andromeda-explorer.metis.io/address/0x2B5EA1604BAbb7B730120950Cb13951f3525828A
+  address internal constant PRICE_ORACLE_SENTINEL = 0x2B5EA1604BAbb7B730120950Cb13951f3525828A;
 
   // https://andromeda-explorer.metis.io/address/0x99411FC17Ad1B56f49719E3850B2CDcc0f9bBFd8
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =

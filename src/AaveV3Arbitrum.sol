@@ -20,8 +20,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7
   IAaveOracle internal constant ORACLE = IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7);
 
-  // https://arbiscan.io/address/0xF876d26041a4Fdc7A787d209DC3D2795dDc74f1e
-  address internal constant PRICE_ORACLE_SENTINEL = 0xF876d26041a4Fdc7A787d209DC3D2795dDc74f1e;
+  // https://arbiscan.io/address/0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b
+  address internal constant PRICE_ORACLE_SENTINEL = 0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b;
 
   // https://arbiscan.io/address/0x6b4E260b765B3cA1514e618C0215A6B7839fF93e
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
