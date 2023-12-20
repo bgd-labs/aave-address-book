@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.13.1](https://github.com/bgd-labs/aave-address-book/compare/v2.13.0...v2.13.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* update packages & run on node 20 ([#308](https://github.com/bgd-labs/aave-address-book/issues/308)) ([2496e82](https://github.com/bgd-labs/aave-address-book/commit/2496e824cad9d15071e78ba557182a7ceeb1ff4b))
+
 ## [2.13.0](https://github.com/bgd-labs/aave-address-book/compare/v2.12.0...v2.13.0) (2023-12-04)
 
 
