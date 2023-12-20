@@ -108,6 +108,9 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
+
+  // https://etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+  address internal constant SAVINGS_DAI_TOKEN_WRAPPER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 }
 
 library AaveV3EthereumAssets {
