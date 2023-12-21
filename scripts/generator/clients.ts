@@ -26,10 +26,7 @@ import {ChainId} from './chains';
 export const RPC_PROVIDERS = {
   [ChainId.mainnet]: createPublicClient({
     chain: mainnet,
-    transport: fallback([
-      http('https://ethereum.publicnode.com'),
-      http('https://cloudflare-eth.com'),
-    ]),
+    transport: http(process.env.RPC_MAINNET),
     batch: {
       multicall: true,
     },
@@ -53,7 +50,7 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.polygon]: createPublicClient({
     chain: polygon,
-    transport: http(),
+    transport: http(process.env.RPC_POLYGON),
     batch: {
       multicall: true,
     },
@@ -67,14 +64,14 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.avalanche]: createPublicClient({
     chain: avalanche,
-    transport: http(),
+    transport: http(process.env.RPC_AVALANCHE),
     batch: {
       multicall: true,
     },
   }),
   [ChainId.arbitrum_one]: createPublicClient({
     chain: arbitrum,
-    transport: http(),
+    transport: http(process.env.RPC_ARBITRUM),
     batch: {
       multicall: true,
     },
@@ -95,17 +92,14 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.optimism]: createPublicClient({
     chain: optimism,
-    transport: fallback([
-      http('https://mainnet.optimism.io'),
-      http('https://optimism.publicnode.com'),
-    ]),
+    transport: http(process.env.RPC_OPTIMISM),
     batch: {
       multicall: true,
     },
   }),
   [ChainId.optimism_goerli]: createPublicClient({
     chain: optimismGoerli,
-    transport: http(),
+    transport: http('https://optimism-goerli.publicnode.com	'),
     batch: {
       multicall: true,
     },
