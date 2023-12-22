@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.13.2](https://github.com/bgd-labs/aave-address-book/compare/v2.13.1...v2.13.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* replace rpcs ([#312](https://github.com/bgd-labs/aave-address-book/issues/312)) ([2e1b66e](https://github.com/bgd-labs/aave-address-book/commit/2e1b66e5277e53e15f6774f6c418c2be5221018b))
+* use custom rpcs ([a62c801](https://github.com/bgd-labs/aave-address-book/commit/a62c801d5c24317708e08ca4c93d8658eabbafac))
+
 ## [2.13.1](https://github.com/bgd-labs/aave-address-book/compare/v2.13.0...v2.13.1) (2023-12-20)
 
 
