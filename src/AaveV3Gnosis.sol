@@ -156,8 +156,8 @@ library AaveV3GnosisAssets {
   // https://blockscout.com/xdai/mainnet/address/0x22441d81416430A54336aB28765abd31a792Ad37
   address internal constant GNO_ORACLE = 0x22441d81416430A54336aB28765abd31a792Ad37;
 
-  // https://blockscout.com/xdai/mainnet/address/0x9E57695Dab0DCdb42BC220ff1E9eb2e22a31209b
-  address internal constant GNO_INTEREST_RATE_STRATEGY = 0x9E57695Dab0DCdb42BC220ff1E9eb2e22a31209b;
+  // https://blockscout.com/xdai/mainnet/address/0x777fDAB3C03aA63d7d7CbCbaB22724cEe50F1731
+  address internal constant GNO_INTEREST_RATE_STRATEGY = 0x777fDAB3C03aA63d7d7CbCbaB22724cEe50F1731;
 
   // https://blockscout.com/xdai/mainnet/address/0x2D737e2B0e175f05D0904C208d6C4e40da570f65
   address internal constant GNO_STATA_TOKEN = 0x2D737e2B0e175f05D0904C208d6C4e40da570f65;

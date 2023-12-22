@@ -168,9 +168,9 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3
   address internal constant USDC_ORACLE = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
 
-  // https://explorer.optimism.io/address/0x3832311560d3B457E9cC35e5b8e06EB167D8c17D
+  // https://explorer.optimism.io/address/0x769EbC5106bF09D9A665CCb691e1907612b57F16
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x3832311560d3B457E9cC35e5b8e06EB167D8c17D;
+    0x769EbC5106bF09D9A665CCb691e1907612b57F16;
 
   // https://explorer.optimism.io/address/0x9F281eb58fd98ad98EDe0fc4C553AD4D73e7Ca2C
   address internal constant USDC_STATA_TOKEN = 0x9F281eb58fd98ad98EDe0fc4C553AD4D73e7Ca2C;
@@ -430,9 +430,9 @@ library AaveV3OptimismAssets {
   // https://explorer.optimism.io/address/0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3
   address internal constant USDCn_ORACLE = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
 
-  // https://explorer.optimism.io/address/0x5eE947d920643cCd3e2c54eAAd8F260FC8Add3b4
+  // https://explorer.optimism.io/address/0xB57Ff919A953424d6B143ABfD6740A225eab953e
   address internal constant USDCn_INTEREST_RATE_STRATEGY =
-    0x5eE947d920643cCd3e2c54eAAd8F260FC8Add3b4;
+    0xB57Ff919A953424d6B143ABfD6740A225eab953e;
 }
 
 library AaveV3OptimismEModes {

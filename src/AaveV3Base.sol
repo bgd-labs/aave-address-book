@@ -169,9 +169,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x7e860098F58bBFC8648a4311b374B1D669a2bc6B
   address internal constant USDbC_ORACLE = 0x7e860098F58bBFC8648a4311b374B1D669a2bc6B;
 
-  // https://basescan.org/address/0x8c63A1b0721D5776Ae5ed1Be8dc7f2A1e7312Ed3
+  // https://basescan.org/address/0xDBea12F69D3Fcb4Be9FD14dd450AAe2B2a3d4de7
   address internal constant USDbC_INTEREST_RATE_STRATEGY =
-    0x8c63A1b0721D5776Ae5ed1Be8dc7f2A1e7312Ed3;
+    0xDBea12F69D3Fcb4Be9FD14dd450AAe2B2a3d4de7;
 
   // https://basescan.org/address/0x6fCe2756794128B1771324caA860965801DCbCdB
   address internal constant USDbC_STATA_TOKEN = 0x6fCe2756794128B1771324caA860965801DCbCdB;
@@ -196,6 +196,27 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9;
+
+  // https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913
+  address internal constant USDC_UNDERLYING = 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://basescan.org/address/0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB
+  address internal constant USDC_A_TOKEN = 0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB;
+
+  // https://basescan.org/address/0x59dca05b6c26dbd64b5381374aAaC5CD05644C28
+  address internal constant USDC_V_TOKEN = 0x59dca05b6c26dbd64b5381374aAaC5CD05644C28;
+
+  // https://basescan.org/address/0x03506214379aA86ad1176af71c260278cfa10B38
+  address internal constant USDC_S_TOKEN = 0x03506214379aA86ad1176af71c260278cfa10B38;
+
+  // https://basescan.org/address/0x7e860098F58bBFC8648a4311b374B1D669a2bc6B
+  address internal constant USDC_ORACLE = 0x7e860098F58bBFC8648a4311b374B1D669a2bc6B;
+
+  // https://basescan.org/address/0x50eC656Ba67885D0937b5f549f3104ea15E75588
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0x50eC656Ba67885D0937b5f549f3104ea15E75588;
 }
 
 library AaveV3BaseEModes {
