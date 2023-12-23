@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.13.3](https://github.com/bgd-labs/aave-address-book/compare/v2.13.2...v2.13.3) (2023-12-23)
+
+
+### Bug Fixes
+
+* resolve regression in commonjs bundling introduced in 2.13.1 ([#314](https://github.com/bgd-labs/aave-address-book/issues/314)) ([d573ee5](https://github.com/bgd-labs/aave-address-book/commit/d573ee52acf0f78c1129efee6b3d360475da9296))
+
 ## [2.13.2](https://github.com/bgd-labs/aave-address-book/compare/v2.13.1...v2.13.2) (2023-12-22)
 
 
