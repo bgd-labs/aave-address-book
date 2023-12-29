@@ -41,8 +41,8 @@ library AaveV2Mumbai {
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xd41aE58e803Edf4304334acCE4DC4Ec34a63C644;
 
-  // https://mumbai.polygonscan.com/address/0x943E44157dC0302a5CEb172374d1749018a00994
-  address internal constant EMISSION_MANAGER = 0x943E44157dC0302a5CEb172374d1749018a00994;
+  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
+  address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
 
   // https://mumbai.polygonscan.com/address/0x2A7004B21c49253ca8DF923406Fed9a02AA86Ba0
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
