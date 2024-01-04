@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.14.0](https://github.com/bgd-labs/aave-address-book/compare/v2.13.3...v2.14.0) (2024-01-04)
+
+
+### Features
+
+* upgrade weth gateway ([#316](https://github.com/bgd-labs/aave-address-book/issues/316)) ([575eac6](https://github.com/bgd-labs/aave-address-book/commit/575eac6d595d5d15ba5e6ca9192a2f2a5c719022))
+
+## [2.13.3](https://github.com/bgd-labs/aave-address-book/compare/v2.13.2...v2.13.3) (2023-12-23)
+
+
+### Bug Fixes
+
+* resolve regression in commonjs bundling introduced in 2.13.1 ([#314](https://github.com/bgd-labs/aave-address-book/issues/314)) ([d573ee5](https://github.com/bgd-labs/aave-address-book/commit/d573ee52acf0f78c1129efee6b3d360475da9296))
+
+## [2.13.2](https://github.com/bgd-labs/aave-address-book/compare/v2.13.1...v2.13.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* replace rpcs ([#312](https://github.com/bgd-labs/aave-address-book/issues/312)) ([2e1b66e](https://github.com/bgd-labs/aave-address-book/commit/2e1b66e5277e53e15f6774f6c418c2be5221018b))
+* use custom rpcs ([a62c801](https://github.com/bgd-labs/aave-address-book/commit/a62c801d5c24317708e08ca4c93d8658eabbafac))
+
+## [2.13.1](https://github.com/bgd-labs/aave-address-book/compare/v2.13.0...v2.13.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* update packages & run on node 20 ([#308](https://github.com/bgd-labs/aave-address-book/issues/308)) ([2496e82](https://github.com/bgd-labs/aave-address-book/commit/2496e824cad9d15071e78ba557182a7ceeb1ff4b))
+
 ## [2.13.0](https://github.com/bgd-labs/aave-address-book/compare/v2.12.0...v2.13.0) (2023-12-04)
 
 

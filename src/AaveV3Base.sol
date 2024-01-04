@@ -99,8 +99,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x5779b29B0a34577d927E8D511B595ef9abbFAE82
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;
 
-  // https://basescan.org/address/0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee
-  address internal constant WETH_GATEWAY = 0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee;
+  // https://basescan.org/address/0x8be473dCfA93132658821E67CbEB684ec8Ea2E74
+  address internal constant WETH_GATEWAY = 0x8be473dCfA93132658821E67CbEB684ec8Ea2E74;
 }
 
 library AaveV3BaseAssets {

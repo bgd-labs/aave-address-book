@@ -86,11 +86,14 @@ export const UI_POOL_DATA_PROVIDER = '0x91c0eA31b49B69Ea18607702c5d9aC360bf3dE7d
 // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
 export const WALLET_BALANCE_PROVIDER = '0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2';
 
-// https://etherscan.io/address/0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C
-export const WETH_GATEWAY = '0xD322A49006FC828F9B5B37Ab215F99B4E5caB19C';
+// https://etherscan.io/address/0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9
+export const WETH_GATEWAY = '0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9';
 
 // https://etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
 export const WITHDRAW_SWAP_ADAPTER = '0x78F8Bd884C3D738B74B420540659c82f392820e0';
+
+// https://etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+export const SAVINGS_DAI_TOKEN_WRAPPER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034';
 
 export const CHAIN_ID = 1;
 export const ASSETS = {
