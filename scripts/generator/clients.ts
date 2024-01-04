@@ -12,6 +12,7 @@ import {
   optimismGoerli,
   fantom,
   fantomTestnet,
+  scroll,
   scrollTestnet,
   scrollSepolia,
   metis,
@@ -163,6 +164,13 @@ export const RPC_PROVIDERS = {
   [ChainId.gnosis]: createPublicClient({
     chain: gnosis,
     transport: http(process.env.RPC_GNOSIS),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.scroll]: createPublicClient({
+    chain: scroll,
+    transport: http(process.env.RPC_SCROLL),
     batch: {
       multicall: true,
     },

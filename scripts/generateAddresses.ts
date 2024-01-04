@@ -29,7 +29,7 @@ import {
   polygonProtoV2,
   polygonProtoV3,
 } from './configs/pools/polygon';
-import {scrollAlphaProtoV3, scrollSepoliaProtoV3} from './configs/pools/scroll';
+import {scrollAlphaProtoV3, scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -56,6 +56,8 @@ import {optimismAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
+import {scrollAddresses} from './configs/networks/scroll';
+import {governanceConfigScroll} from './configs/governance/scroll';
 
 async function main() {
   // cleanup ts artifacts
@@ -83,6 +85,7 @@ async function main() {
       governanceConfigBase,
       governanceConfigBNB,
       governanceConfigGnosis,
+      governanceConfigScroll,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
@@ -114,6 +117,7 @@ async function main() {
       arbitrumProtoV3,
       optimismGoerliProtoV3,
       optimismProtoV3,
+      scrollProtoV3,
       scrollAlphaProtoV3,
       scrollSepoliaProtoV3,
       fantomTestnetProtoV3,
@@ -133,6 +137,7 @@ async function main() {
     metisAddresses,
     gnosisAddresses,
     bnbAddresses,
+    scrollAddresses,
     sepoliaAddresses,
     mumbaiAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
