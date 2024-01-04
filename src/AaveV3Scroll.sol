@@ -83,8 +83,8 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C
   address internal constant WALLET_BALANCE_PROVIDER = 0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C;
 
-  // https://scrollscan.com/address/0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461
-  address internal constant WETH_GATEWAY = 0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461;
+  // https://scrollscan.com/address/0x93c597e5229f76679d7646cC9161B59Cc0DE78B9
+  address internal constant WETH_GATEWAY = 0x93c597e5229f76679d7646cC9161B59Cc0DE78B9;
 }
 
 library AaveV3ScrollAssets {}

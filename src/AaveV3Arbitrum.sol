@@ -168,9 +168,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3
   address internal constant USDC_ORACLE = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
 
-  // https://arbiscan.io/address/0x53b13a6D43F647D788411Abfd28D229C274AfBF9
+  // https://arbiscan.io/address/0x642a8DAcC59b73491Dcaa3BCeF046D660901fCc1
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x53b13a6D43F647D788411Abfd28D229C274AfBF9;
+    0x642a8DAcC59b73491Dcaa3BCeF046D660901fCc1;
 
   // https://arbiscan.io/address/0x0Bc9E52051f553E75550CA22C196bf132c52Cf0B
   address internal constant USDC_STATA_TOKEN = 0x0Bc9E52051f553E75550CA22C196bf132c52Cf0B;
