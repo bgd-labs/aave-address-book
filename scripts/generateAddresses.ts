@@ -58,6 +58,7 @@ import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {scrollAddresses} from './configs/networks/scroll';
 import {governanceConfigScroll} from './configs/governance/scroll';
+import {governanceConfigPolygonZkEVM} from './configs/governance/polygonZkevm';
 
 async function main() {
   // cleanup ts artifacts
@@ -86,6 +87,7 @@ async function main() {
       governanceConfigBNB,
       governanceConfigGnosis,
       governanceConfigScroll,
+      governanceConfigPolygonZkEVM,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
