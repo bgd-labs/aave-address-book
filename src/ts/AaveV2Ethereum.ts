@@ -65,8 +65,8 @@ export const UI_POOL_DATA_PROVIDER = '0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A
 // https://etherscan.io/address/0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922
 export const WALLET_BALANCE_PROVIDER = '0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922';
 
-// https://etherscan.io/address/0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31
-export const WETH_GATEWAY = '0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31';
+// https://etherscan.io/address/0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24
+export const WETH_GATEWAY = '0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24';
 
 export const CHAIN_ID = 1;
 export const ASSETS = {

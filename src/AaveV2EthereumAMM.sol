@@ -70,8 +70,8 @@ library AaveV2EthereumAMM {
   // https://etherscan.io/address/0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922
   address internal constant WALLET_BALANCE_PROVIDER = 0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922;
 
-  // https://etherscan.io/address/0x1C4a4e31231F71Fc34867D034a9E68f6fC798249
-  address internal constant WETH_GATEWAY = 0x1C4a4e31231F71Fc34867D034a9E68f6fC798249;
+  // https://etherscan.io/address/0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC
+  address internal constant WETH_GATEWAY = 0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC;
 }
 
 library AaveV2EthereumAMMAssets {
