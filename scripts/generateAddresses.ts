@@ -57,6 +57,7 @@ import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {scrollAddresses} from './configs/networks/scroll';
+import {governanceConfigScroll} from './configs/governance/scroll';
 
 async function main() {
   // cleanup ts artifacts
@@ -84,6 +85,7 @@ async function main() {
       governanceConfigBase,
       governanceConfigBNB,
       governanceConfigGnosis,
+      governanceConfigScroll,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
