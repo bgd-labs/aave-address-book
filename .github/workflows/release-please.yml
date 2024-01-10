@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+jobs:
+  test-node:
+    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      releaseCreated: ${{ steps.release.outputs.release_created }}
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          package-name: aave-address-book
+          pull-request-header: "I have created a release"
+
+  release-node:
+    uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
+    if: ${{ needs.release-please.outputs.releaseCreated }}
+    needs:
+      - test-node
+      - release-please
+    secrets:
+      NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}

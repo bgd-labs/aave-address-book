@@ -1,6 +1,6 @@
 {
   "name": "@bgd-labs/aave-address-book",
-  "version": "2.4.0",
+  "version": "2.14.0",
   "description": "This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.",
   "private": false,
   "files": [
@@ -29,9 +29,12 @@
   "sideEffects": false,
   "scripts": {
     "prettier": "prettier --write 'src/**/*.{sol,ts}'",
-    "start": "tsx scripts/index.ts  && npm run prettier",
+    "generate:abis": "tsx scripts/generateABIs.ts && npm run prettier",
+    "generate:addresses": "tsx scripts/generateAddresses.ts && npm run prettier",
+    "start": "tsx scripts/generateABIs.ts &&tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
-    "ci:publish": "npm run build && npm publish --access=public"
+    "ci:publish": "npm run build && npm publish --access=public",
+    "test": "echo 'no tests exist yet'"
   },
   "repository": {
     "type": "git",
@@ -44,13 +47,13 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
-    "@types/node": "^20.5.7",
-    "esbuild-plugin-file-path-extensions": "^1.0.0",
+    "@types/node": "^20.10.5",
+    "esbuild-plugin-file-path-extensions": "^2.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-solidity": "^1.1.3",
-    "tsup": "^7.2.0",
-    "tsx": "^3.12.7",
-    "typescript": "^5.2.2",
-    "viem": "^1.9.3"
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "viem": "^1.20.3"
   }
 }

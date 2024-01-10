@@ -31,7 +31,7 @@ export function addressInfoToSolidityLibraryConstant(
   entry: AddressInfo,
 ) {
   if (typeof entry === 'object') {
-    if (entry.type === 'uint256') {
+    if (entry.type === 'uint256' || entry.type === 'uint8') {
       return `${entry.type} internal constant ${key} = ${entry.value};\n`;
     }
     const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);

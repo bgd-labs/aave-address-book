@@ -21,60 +21,18 @@ import {AaveV2Ethereum} from "aave-address-book/AaveV2Ethereum.sol";
 import {AaveV3Avalanche} from "aave-address-book/AaveV3Avalanche.sol";
 ```
 
-Included addresses:
-
-```sh
-// v2 libraries
-ILendingPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-ILendingPool POOL;
-ILendingPoolConfigurator POOL_CONFIGURATOR;
-IAaveOracle ORACLE;
-IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
-address POOL_ADMIN;
-address EMERGENCY_ADMIN;
-ICollector COLLECTOR;
-
-// v3 libraries
-IPoolAddressesProvider POOL_ADDRESSES_PROVIDER;
-IPool POOL;
-IPoolConfigurator POOL_CONFIGURATOR;
-IAaveOracle ORACLE;
-IAaveProtocolDataProvider AAVE_PROTOCOL_DATA_PROVIDER;
-IACLManager ACL_MANAGER;
-address ACL_ADMIN;
-ICollector COLLECTOR;
-address DEFAULT_INCENTIVES_CONTROLLER;
-address DEFAULT_A_TOKEN_IMPL_REV_1;
-address DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1;
-address DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1;
-```
-
 **Import addresses and interfaces to interact with Governance:**
 
 ```sh
 import {AaveGovernanceV2} from "aave-address-book/AaveGovernanceV2.sol";
+import {IGovernanceCore} from "aave-address-book/GovernanceV3.sol";
+
 ```
 
-Included addresses:
+**Import miscellaneous network addresses and interfaces relevant to the aave protocol:**
 
 ```sh
-IAaveGovernanceV2 GOV;
-address SHORT_EXECUTOR;
-address LONG_EXECUTOR;
-address ARC_TIMELOCK;
-```
-
-**Import miscellaneous addresses and interfaces relevant to the aave protocol:**
-
-```sh
-import {AaveMisc} from "aave-address-book/AaveMisc.sol";
-```
-
-Included addresses:
-
-```sh
-IAaveEcosystemReserveController AAVE_ECOSYSTEM_RESERVE_CONTROLLER;
-address ECOSYSTEM_RESERVE;
+import {Misc<Network>} from "aave-address-book/Aave<Network>.sol";
 ```
 
 ### Production Recommendations
@@ -111,7 +69,7 @@ console.log(AaveV2Avalanche.CHAIN_ID);
 
 ### Generate files
 
-The library is generated based on the config file located in `scripts/config.ts`. You can regenerate the files by running `yarn start`.
+The library is generated based on the config file located in `scripts/generateAddresses.ts` and `scripts/generateABIs.ts`. You can regenerate the files by running `yarn start`.
 
 ### Dependencies
 
@@ -133,15 +91,15 @@ forge test
 
 ### Adding a new Pool
 
-To list a new pool in the address book, you simply need to add a new pool in the [pools config](./scripts/config.ts) and run `yarn start`.
+To list a new pool in the address book, you simply need to add a new pool in the respective [pools config](./scripts/configs/<type>/<network>) and run `yarn start`.
 
 ### Adding new Addresses
 
-a) Adding an address that **can be optained via onchain calls** so it doesn't need to be hardcoded on the configs:
+a) Adding an address that **can be obtained via onchain calls** so it doesn't need to be hardcoded on the configs:
 
 To achieve an addition here you need to add the address to the respective [v2 type](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/generator_v2.ts#L11) and/or [v3 type](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/generator_v3.ts#L11) and adjust the generator scripts accordingly. New types should be added to the [AaveV2](https://github.com/bgd-labs/aave-address-book/blob/main/src/AaveV2.sol) and [AaveV3](https://github.com/bgd-labs/aave-address-book/blob/main/src/AaveV3.sol) files.
 
-b) Adding an address that **cannot be optained via onchain calls** so it needs to be manually maintained:
+b) Adding an address that **cannot be obtained via onchain calls** so it needs to be manually maintained:
 
 To achieve an addition here, you need to alter the [additionalAddresses section](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/config.ts#L46) on the pool type and add your address to the respecive pools. Additional addresses will currently be exported as type `address`. There's currently no possibility to define a custom type.
 

@@ -12,6 +12,7 @@ import {
   optimismGoerli,
   fantom,
   fantomTestnet,
+  scroll,
   scrollTestnet,
   scrollSepolia,
   metis,
@@ -19,17 +20,14 @@ import {
   avalanche,
   base,
   bsc,
+  gnosis,
 } from 'viem/chains';
 import {ChainId} from './chains';
 
 export const RPC_PROVIDERS = {
   [ChainId.mainnet]: createPublicClient({
     chain: mainnet,
-    transport: fallback([
-      http('https://eth.llamarpc.com'),
-      http('https://ethereum.publicnode.com'),
-      http('https://cloudflare-eth.com'),
-    ]),
+    transport: http(process.env.RPC_MAINNET),
     batch: {
       multicall: true,
     },
@@ -53,7 +51,7 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.polygon]: createPublicClient({
     chain: polygon,
-    transport: http(),
+    transport: http(process.env.RPC_POLYGON),
     batch: {
       multicall: true,
     },
@@ -67,14 +65,14 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.avalanche]: createPublicClient({
     chain: avalanche,
-    transport: http(),
+    transport: http(process.env.RPC_AVALANCHE),
     batch: {
       multicall: true,
     },
   }),
   [ChainId.arbitrum_one]: createPublicClient({
     chain: arbitrum,
-    transport: http(),
+    transport: http(process.env.RPC_ARBITRUM),
     batch: {
       multicall: true,
     },
@@ -95,17 +93,14 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.optimism]: createPublicClient({
     chain: optimism,
-    transport: fallback([
-      http('https://mainnet.optimism.io'),
-      http('https://optimism.publicnode.com'),
-    ]),
+    transport: http(process.env.RPC_OPTIMISM),
     batch: {
       multicall: true,
     },
   }),
   [ChainId.optimism_goerli]: createPublicClient({
     chain: optimismGoerli,
-    transport: http(),
+    transport: http('https://optimism-goerli.publicnode.com	'),
     batch: {
       multicall: true,
     },
@@ -126,7 +121,7 @@ export const RPC_PROVIDERS = {
   }),
   [ChainId.sepolia]: createPublicClient({
     chain: sepolia,
-    transport: http(),
+    transport: http('https://ethereum-sepolia.publicnode.com'),
     batch: {
       multicall: true,
     },
@@ -159,9 +154,23 @@ export const RPC_PROVIDERS = {
       multicall: true,
     },
   }),
-  [ChainId.binance]: createPublicClient({
+  [ChainId.bnb]: createPublicClient({
     chain: bsc,
     transport: http(),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.gnosis]: createPublicClient({
+    chain: gnosis,
+    transport: http(process.env.RPC_GNOSIS),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.scroll]: createPublicClient({
+    chain: scroll,
+    transport: http(process.env.RPC_SCROLL),
     batch: {
       multicall: true,
     },

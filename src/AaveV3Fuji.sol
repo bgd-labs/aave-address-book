@@ -75,7 +75,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0x676bD5B5d0955925aeCe653C50426940c58036c8
   address internal constant DAI_UNDERLYING = 0x676bD5B5d0955925aeCe653C50426940c58036c8;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://testnet.snowtrace.io/address/0xc2E0542ae75DF6ceC02fea12972918a5D18Eb956
   address internal constant DAI_A_TOKEN = 0xc2E0542ae75DF6ceC02fea12972918a5D18Eb956;
@@ -95,7 +95,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0x3A38c4d0444b5fFcc5323b2e86A21aBaaf5FbF26
   address internal constant LINK_UNDERLYING = 0x3A38c4d0444b5fFcc5323b2e86A21aBaaf5FbF26;
 
-  uint256 internal constant LINK_DECIMALS = 18;
+  uint8 internal constant LINK_DECIMALS = 18;
 
   // https://testnet.snowtrace.io/address/0x6cC4457C7547E6995ba7bA000851182F94658A51
   address internal constant LINK_A_TOKEN = 0x6cC4457C7547E6995ba7bA000851182F94658A51;
@@ -116,7 +116,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0xCaC7Ffa82c0f43EBB0FC11FCd32123EcA46626cf
   address internal constant USDC_UNDERLYING = 0xCaC7Ffa82c0f43EBB0FC11FCd32123EcA46626cf;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://testnet.snowtrace.io/address/0xb1c85310a1b809C70fA6806d27Da425C1261F801
   address internal constant USDC_A_TOKEN = 0xb1c85310a1b809C70fA6806d27Da425C1261F801;
@@ -137,7 +137,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0x0EFD8Ad2231c0B9C4d63F892E0a0a59a626Ce88d
   address internal constant WBTC_UNDERLYING = 0x0EFD8Ad2231c0B9C4d63F892E0a0a59a626Ce88d;
 
-  uint256 internal constant WBTC_DECIMALS = 8;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
   // https://testnet.snowtrace.io/address/0x3d1F7da320eFDE834Cb7974d68591ca65de92FDC
   address internal constant WBTC_A_TOKEN = 0x3d1F7da320eFDE834Cb7974d68591ca65de92FDC;
@@ -158,7 +158,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0xf97b6C636167B529B6f1D729Bd9bC0e2Bd491848
   address internal constant WETH_UNDERLYING = 0xf97b6C636167B529B6f1D729Bd9bC0e2Bd491848;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://testnet.snowtrace.io/address/0x812664237ad3DfdaA697B77b7919bBde7486D90E
   address internal constant WETH_A_TOKEN = 0x812664237ad3DfdaA697B77b7919bBde7486D90E;
@@ -179,7 +179,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0xBDE7fbbb1DC89E74B73C54Ad911A1C9685caCD83
   address internal constant USDT_UNDERLYING = 0xBDE7fbbb1DC89E74B73C54Ad911A1C9685caCD83;
 
-  uint256 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://testnet.snowtrace.io/address/0x13f2B2AFCbe58e72b3d275aC197c3f602CC57735
   address internal constant USDT_A_TOKEN = 0x13f2B2AFCbe58e72b3d275aC197c3f602CC57735;
@@ -200,7 +200,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0xfB4CeA030Fa61FC435E922CFDc4bF9C80456E19b
   address internal constant AAVE_UNDERLYING = 0xfB4CeA030Fa61FC435E922CFDc4bF9C80456E19b;
 
-  uint256 internal constant AAVE_DECIMALS = 18;
+  uint8 internal constant AAVE_DECIMALS = 18;
 
   // https://testnet.snowtrace.io/address/0x8419b35fA4AE8105d3241687a6421abA7303E642
   address internal constant AAVE_A_TOKEN = 0x8419b35fA4AE8105d3241687a6421abA7303E642;
@@ -221,7 +221,7 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0x2f6179f64FFe203899600Ba26d10979B314eA13D
   address internal constant WAVAX_UNDERLYING = 0x2f6179f64FFe203899600Ba26d10979B314eA13D;
 
-  uint256 internal constant WAVAX_DECIMALS = 18;
+  uint8 internal constant WAVAX_DECIMALS = 18;
 
   // https://testnet.snowtrace.io/address/0x339f50bCbd874A892fb2c6A56Cf8D85Dd215Bf8e
   address internal constant WAVAX_A_TOKEN = 0x339f50bCbd874A892fb2c6A56Cf8D85Dd215Bf8e;
@@ -241,7 +241,7 @@ library AaveV3FujiAssets {
 }
 
 library AaveV3FujiEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLECOINS = 1;
+  uint8 internal constant STABLECOINS = 1;
 }

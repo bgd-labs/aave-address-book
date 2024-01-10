@@ -24,6 +24,8 @@ export type GovernanceV3Addresses = {
   GOV_DATA_HELPER?: Hex;
   PC_DATA_HELPER?: Hex;
   META_DELEGATE_HELPER?: Hex;
+  EMERGENCY_REGISTRY?: Hex;
+  GOVERNANCE_POWER_STRATEGY?: Hex;
 };
 
 export interface GovernanceConfig {
@@ -46,7 +48,7 @@ export interface PoolConfig {
     WITHDRAW_SWAP_ADAPTER?: Hex;
     SAVINGS_DAI_TOKEN_WRAPPER?: Hex;
     POOL_ADDRESSES_PROVIDER_REGISTRY?: Hex;
-    LISTING_ENGINE?: Hex;
+    CONFIG_ENGINE?: Hex;
     MIGRATION_HELPER?: Hex;
     UI_POOL_DATA_PROVIDER?: Hex;
     UI_INCENTIVE_DATA_PROVIDER?: Hex;
@@ -56,6 +58,7 @@ export interface PoolConfig {
     DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: Hex;
     STATIC_A_TOKEN_FACTORY?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
+    FREEZING_STEWARD?: Hex;
     GHO_TOKEN?: Hex;
     UI_GHO_DATA_PROVIDER?: Hex;
     RATES_FACTORY?: Hex;
@@ -82,3 +85,20 @@ export type ReserveData = {
   ORACLE: Hex;
   STATA_TOKEN?: Hex;
 };
+
+/**
+ * @dev config for addresses that belong more to a network then to a specific pool
+ */
+export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
+  name: string;
+  chainId: ChainId;
+  addresses: {
+    // https://github.com/bgd-labs/aave-paraswap-claimer
+    PARASWAP_FEE_CLAIMER?: Hex;
+    TRANSPARENT_PROXY_FACTORY?: Hex;
+    PROXY_ADMIN?: Hex;
+    CREATE_3_FACTORY?: Hex;
+    PROTOCOL_GUARDIAN?: Hex;
+    AAVE_MERKLE_DISTRIBUTOR?: Hex;
+  } & T;
+}

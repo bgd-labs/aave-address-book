@@ -16,9 +16,11 @@ export enum ChainId {
   optimism_goerli = 420,
   harmony = 1666600000,
   sepolia = 11155111,
+  scroll = 534352,
   scroll_alpha = 534353,
   scroll_sepolia = 534351,
   metis = 1088,
   base = 8453,
-  binance = 56,
+  bnb = 56,
+  gnosis = 100,
 }

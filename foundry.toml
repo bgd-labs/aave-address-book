@@ -6,3 +6,9 @@ ffi = false
 optimizer = true
 optimizer_runs = 1000000
 verbosity = 1
+
+[rpc_endpoints]
+mainnet = "${RPC_MAINNET}"
+
+[etherscan]
+mainnet={key="${ETHERSCAN_API_KEY_MAINNET}",chainId=1}

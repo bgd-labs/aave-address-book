@@ -36,14 +36,23 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: "yarn"
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Generate library
-        run: yarn start
+        run: yarn generate:addresses
+        env:
+          RPC_MAINNET: ${{ secrets.RPC_MAINNET }}
+          RPC_POLYGON: ${{ secrets.RPC_POLYGON }}
+          RPC_AVALANCHE: ${{ secrets.RPC_AVALANCHE }}
+          RPC_OPTIMISM: ${{ secrets.RPC_OPTIMISM }}
+          RPC_ARBITRUM: ${{ secrets.RPC_ARBITRUM }}
+          RPC_BASE: ${{ secrets.RPC_BASE }}
+          RPC_GNOSIS: ${{ secrets.RPC_GNOSIS }}
+          RPC_BNB: ${{ secrets.RPC_BNB }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@712add83f26c1e359c046a6ca3dd677fb7017626

@@ -1,52 +1,14 @@
-import util from 'node:util';
-import {exec} from 'node:child_process';
-import {existsSync, mkdirSync, rmSync, writeFileSync} from 'node:fs';
-import {prefixWithGeneratedWarning} from './utils';
+import {ABI_INTERFACES, DOWNLOAD_ABI_INTERFACES} from '../configs/abis';
 
-const awaitableExec = util.promisify(exec);
-
-const INTERFACES = [
-  'IAaveGovernanceV2',
-  'ICollector',
-  'AggregatorInterface',
-  'IPayloadsControllerCore',
-  'IVotingMachineWithProofs',
-  'IGovernanceCore',
-  'IVotingStrategy',
-  'IVotingPortal',
-  'IGovernancePowerStrategy',
-  'IDataWarehouse',
-  'IExecutorWithTimelock',
-  'IERC20',
-  'IAToken',
-  'IDefaultInterestRateStrategy',
-  'IAaveOracle',
-  'IExecutor',
-  'ICrossChainController',
-  'IWithGuardian',
-  'IRescuable',
-  'IOwnable',
-];
-
-export async function generateABIs() {
-  if (existsSync('./src/ts/abis')) {
-    rmSync('./src/ts/abis', {recursive: true});
-  }
-  mkdirSync('./src/ts/abis');
+export function generateABIImports() {
   const jsExports: string[] = [];
-  for (const INTERFACE of INTERFACES) {
-    const {stdout, stderr} = await awaitableExec(`forge inspect ${INTERFACE} abi`);
-    if (stderr) {
-      throw new Error(`Failed to generate abi for ${INTERFACE}`);
-    }
+  for (const INTERFACE of ABI_INTERFACES) {
     const varName = `${INTERFACE}_ABI`;
-    writeFileSync(
-      `./src/ts/abis/${INTERFACE}.ts`,
-      prefixWithGeneratedWarning(
-        `export const ${varName} = ${JSON.stringify(JSON.parse(stdout.trim()), null, 2)} as const;`,
-      ),
-    );
     jsExports.push(`export {${varName}} from './abis/${INTERFACE}';`);
+  }
+  for (const INTERFACE of DOWNLOAD_ABI_INTERFACES) {
+    const varName = `${INTERFACE.name}_ABI`;
+    jsExports.push(`export {${varName}} from './abis/${INTERFACE.name}';`);
   }
   return {
     solidity: [],

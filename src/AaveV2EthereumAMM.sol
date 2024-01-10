@@ -24,15 +24,15 @@ library AaveV2EthereumAMM {
   ILendingRateOracle internal constant LENDING_RATE_ORACLE =
     ILendingRateOracle(0x8A32f49FFbA88aba6EFF96F45D8BD1D4b3f35c7D);
 
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
+  // https://etherscan.io/address/0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IAaveProtocolDataProvider(0x0000000000000000000000000000000000000000);
+    IAaveProtocolDataProvider(0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba);
 
-  // https://etherscan.io/address/0xEE56e2B3D491590B5b31738cC34d5232F378a8D5
-  address internal constant POOL_ADMIN = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
+  // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
+  address internal constant POOL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
-  // https://etherscan.io/address/0xB9062896ec3A615a4e4444DF183F0531a77218AE
-  address internal constant EMERGENCY_ADMIN = 0xB9062896ec3A615a4e4444DF183F0531a77218AE;
+  // https://etherscan.io/address/0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633
+  address internal constant EMERGENCY_ADMIN = 0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;
 
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
@@ -44,8 +44,12 @@ library AaveV2EthereumAMM {
   // https://etherscan.io/address/0x0000000000000000000000000000000000000000
   address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
 
+  // https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
+  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
+    0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
+
   // https://etherscan.io/address/0xcfC26009618ec2Ca8787180116a37Caa354a465C
-  address internal constant LISTING_ENGINE = 0xcfC26009618ec2Ca8787180116a37Caa354a465C;
+  address internal constant CONFIG_ENGINE = 0xcfC26009618ec2Ca8787180116a37Caa354a465C;
 
   // https://etherscan.io/address/0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a
   address internal constant MIGRATION_HELPER = 0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a;
@@ -66,15 +70,15 @@ library AaveV2EthereumAMM {
   // https://etherscan.io/address/0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922
   address internal constant WALLET_BALANCE_PROVIDER = 0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922;
 
-  // https://etherscan.io/address/0x1C4a4e31231F71Fc34867D034a9E68f6fC798249
-  address internal constant WETH_GATEWAY = 0x1C4a4e31231F71Fc34867D034a9E68f6fC798249;
+  // https://etherscan.io/address/0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC
+  address internal constant WETH_GATEWAY = 0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC;
 }
 
 library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
   address internal constant WETH_UNDERLYING = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0xf9Fb4AD91812b704Ba883B11d2B576E890a6730A
   address internal constant WETH_A_TOKEN = 0xf9Fb4AD91812b704Ba883B11d2B576E890a6730A;
@@ -95,7 +99,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x6B175474E89094C44Da98b954EedeAC495271d0F
   address internal constant DAI_UNDERLYING = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://etherscan.io/address/0x79bE75FFC64DD58e66787E4Eae470c8a1FD08ba4
   address internal constant DAI_A_TOKEN = 0x79bE75FFC64DD58e66787E4Eae470c8a1FD08ba4;
@@ -115,7 +119,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
   address internal constant USDC_UNDERLYING = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://etherscan.io/address/0xd24946147829DEaA935bE2aD85A3291dbf109c80
   address internal constant USDC_A_TOKEN = 0xd24946147829DEaA935bE2aD85A3291dbf109c80;
@@ -136,7 +140,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xdAC17F958D2ee523a2206206994597C13D831ec7
   address internal constant USDT_UNDERLYING = 0xdAC17F958D2ee523a2206206994597C13D831ec7;
 
-  uint256 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://etherscan.io/address/0x17a79792Fe6fE5C95dFE95Fe3fCEE3CAf4fE4Cb7
   address internal constant USDT_A_TOKEN = 0x17a79792Fe6fE5C95dFE95Fe3fCEE3CAf4fE4Cb7;
@@ -157,7 +161,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
   address internal constant WBTC_UNDERLYING = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
 
-  uint256 internal constant WBTC_DECIMALS = 8;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
   // https://etherscan.io/address/0x13B2f6928D7204328b0E8E4BCd0379aA06EA21FA
   address internal constant WBTC_A_TOKEN = 0x13B2f6928D7204328b0E8E4BCd0379aA06EA21FA;
@@ -178,7 +182,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11
   address internal constant UNI_DAI_WETH_UNDERLYING = 0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11;
 
-  uint256 internal constant UNI_DAI_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_DAI_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x9303EabC860a743aABcc3A1629014CaBcc3F8D36
   address internal constant UNI_DAI_WETH_A_TOKEN = 0x9303EabC860a743aABcc3A1629014CaBcc3F8D36;
@@ -199,7 +203,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xBb2b8038a1640196FbE3e38816F3e67Cba72D940
   address internal constant UNI_WBTC_WETH_UNDERLYING = 0xBb2b8038a1640196FbE3e38816F3e67Cba72D940;
 
-  uint256 internal constant UNI_WBTC_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_WBTC_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0xc58F53A8adff2fB4eb16ED56635772075E2EE123
   address internal constant UNI_WBTC_WETH_A_TOKEN = 0xc58F53A8adff2fB4eb16ED56635772075E2EE123;
@@ -220,7 +224,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f
   address internal constant UNI_AAVE_WETH_UNDERLYING = 0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f;
 
-  uint256 internal constant UNI_AAVE_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_AAVE_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0xe59d2FF6995a926A574390824a657eEd36801E55
   address internal constant UNI_AAVE_WETH_A_TOKEN = 0xe59d2FF6995a926A574390824a657eEd36801E55;
@@ -241,7 +245,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xB6909B960DbbE7392D405429eB2b3649752b4838
   address internal constant UNI_BAT_WETH_UNDERLYING = 0xB6909B960DbbE7392D405429eB2b3649752b4838;
 
-  uint256 internal constant UNI_BAT_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_BAT_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0xA1B0edF4460CC4d8bFAA18Ed871bFF15E5b57Eb4
   address internal constant UNI_BAT_WETH_A_TOKEN = 0xA1B0edF4460CC4d8bFAA18Ed871bFF15E5b57Eb4;
@@ -262,7 +266,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5
   address internal constant UNI_DAI_USDC_UNDERLYING = 0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5;
 
-  uint256 internal constant UNI_DAI_USDC_DECIMALS = 18;
+  uint8 internal constant UNI_DAI_USDC_DECIMALS = 18;
 
   // https://etherscan.io/address/0xE340B25fE32B1011616bb8EC495A4d503e322177
   address internal constant UNI_DAI_USDC_A_TOKEN = 0xE340B25fE32B1011616bb8EC495A4d503e322177;
@@ -283,7 +287,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x3dA1313aE46132A397D90d95B1424A9A7e3e0fCE
   address internal constant UNI_CRV_WETH_UNDERLYING = 0x3dA1313aE46132A397D90d95B1424A9A7e3e0fCE;
 
-  uint256 internal constant UNI_CRV_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_CRV_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x0ea20e7fFB006d4Cfe84df2F72d8c7bD89247DB0
   address internal constant UNI_CRV_WETH_A_TOKEN = 0x0ea20e7fFB006d4Cfe84df2F72d8c7bD89247DB0;
@@ -304,7 +308,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974
   address internal constant UNI_LINK_WETH_UNDERLYING = 0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974;
 
-  uint256 internal constant UNI_LINK_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_LINK_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0xb8db81B84d30E2387de0FF330420A4AAA6688134
   address internal constant UNI_LINK_WETH_A_TOKEN = 0xb8db81B84d30E2387de0FF330420A4AAA6688134;
@@ -325,7 +329,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xC2aDdA861F89bBB333c90c492cB837741916A225
   address internal constant UNI_MKR_WETH_UNDERLYING = 0xC2aDdA861F89bBB333c90c492cB837741916A225;
 
-  uint256 internal constant UNI_MKR_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_MKR_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x370adc71f67f581158Dc56f539dF5F399128Ddf9
   address internal constant UNI_MKR_WETH_A_TOKEN = 0x370adc71f67f581158Dc56f539dF5F399128Ddf9;
@@ -346,7 +350,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x8Bd1661Da98EBDd3BD080F0bE4e6d9bE8cE9858c
   address internal constant UNI_REN_WETH_UNDERLYING = 0x8Bd1661Da98EBDd3BD080F0bE4e6d9bE8cE9858c;
 
-  uint256 internal constant UNI_REN_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_REN_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0xA9e201A4e269d6cd5E9F0FcbcB78520cf815878B
   address internal constant UNI_REN_WETH_A_TOKEN = 0xA9e201A4e269d6cd5E9F0FcbcB78520cf815878B;
@@ -367,7 +371,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x43AE24960e5534731Fc831386c07755A2dc33D47
   address internal constant UNI_SNX_WETH_UNDERLYING = 0x43AE24960e5534731Fc831386c07755A2dc33D47;
 
-  uint256 internal constant UNI_SNX_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_SNX_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x38E491A71291CD43E8DE63b7253E482622184894
   address internal constant UNI_SNX_WETH_A_TOKEN = 0x38E491A71291CD43E8DE63b7253E482622184894;
@@ -388,7 +392,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xd3d2E2692501A5c9Ca623199D38826e513033a17
   address internal constant UNI_UNI_WETH_UNDERLYING = 0xd3d2E2692501A5c9Ca623199D38826e513033a17;
 
-  uint256 internal constant UNI_UNI_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_UNI_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x3D26dcd840fCC8e4B2193AcE8A092e4a65832F9f
   address internal constant UNI_UNI_WETH_A_TOKEN = 0x3D26dcd840fCC8e4B2193AcE8A092e4a65832F9f;
@@ -409,7 +413,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc
   address internal constant UNI_USDC_WETH_UNDERLYING = 0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc;
 
-  uint256 internal constant UNI_USDC_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_USDC_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x391E86e2C002C70dEe155eAceB88F7A3c38f5976
   address internal constant UNI_USDC_WETH_A_TOKEN = 0x391E86e2C002C70dEe155eAceB88F7A3c38f5976;
@@ -430,7 +434,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x004375Dff511095CC5A197A54140a24eFEF3A416
   address internal constant UNI_WBTC_USDC_UNDERLYING = 0x004375Dff511095CC5A197A54140a24eFEF3A416;
 
-  uint256 internal constant UNI_WBTC_USDC_DECIMALS = 18;
+  uint8 internal constant UNI_WBTC_USDC_DECIMALS = 18;
 
   // https://etherscan.io/address/0x2365a4890eD8965E564B7E2D27C38Ba67Fec4C6F
   address internal constant UNI_WBTC_USDC_A_TOKEN = 0x2365a4890eD8965E564B7E2D27C38Ba67Fec4C6F;
@@ -451,7 +455,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28
   address internal constant UNI_YFI_WETH_UNDERLYING = 0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28;
 
-  uint256 internal constant UNI_YFI_WETH_DECIMALS = 18;
+  uint8 internal constant UNI_YFI_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x5394794Be8b6eD5572FCd6b27103F46b5F390E8f
   address internal constant UNI_YFI_WETH_A_TOKEN = 0x5394794Be8b6eD5572FCd6b27103F46b5F390E8f;
@@ -472,7 +476,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x1efF8aF5D577060BA4ac8A29A13525bb0Ee2A3D5
   address internal constant BPT_WBTC_WETH_UNDERLYING = 0x1efF8aF5D577060BA4ac8A29A13525bb0Ee2A3D5;
 
-  uint256 internal constant BPT_WBTC_WETH_DECIMALS = 18;
+  uint8 internal constant BPT_WBTC_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0x358bD0d980E031E23ebA9AA793926857703783BD
   address internal constant BPT_WBTC_WETH_A_TOKEN = 0x358bD0d980E031E23ebA9AA793926857703783BD;
@@ -493,7 +497,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x59A19D8c652FA0284f44113D0ff9aBa70bd46fB4
   address internal constant BPT_BAL_WETH_UNDERLYING = 0x59A19D8c652FA0284f44113D0ff9aBa70bd46fB4;
 
-  uint256 internal constant BPT_BAL_WETH_DECIMALS = 18;
+  uint8 internal constant BPT_BAL_WETH_DECIMALS = 18;
 
   // https://etherscan.io/address/0xd109b2A304587569c84308c55465cd9fF0317bFB
   address internal constant BPT_BAL_WETH_A_TOKEN = 0xd109b2A304587569c84308c55465cd9fF0317bFB;
@@ -514,7 +518,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e
   address internal constant GUNI_DAI_USDC_UNDERLYING = 0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e;
 
-  uint256 internal constant GUNI_DAI_USDC_DECIMALS = 18;
+  uint8 internal constant GUNI_DAI_USDC_DECIMALS = 18;
 
   // https://etherscan.io/address/0xd145c6ae8931ed5Bca9b5f5B7dA5991F5aB63B5c
   address internal constant GUNI_DAI_USDC_A_TOKEN = 0xd145c6ae8931ed5Bca9b5f5B7dA5991F5aB63B5c;
@@ -535,7 +539,7 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xD2eeC91055F07fE24C9cCB25828ecfEFd4be0c41
   address internal constant GUNI_USDC_USDT_UNDERLYING = 0xD2eeC91055F07fE24C9cCB25828ecfEFd4be0c41;
 
-  uint256 internal constant GUNI_USDC_USDT_DECIMALS = 18;
+  uint8 internal constant GUNI_USDC_USDT_DECIMALS = 18;
 
   // https://etherscan.io/address/0xCa5DFDABBfFD58cfD49A9f78Ca52eC8e0591a3C5
   address internal constant GUNI_USDC_USDT_A_TOKEN = 0xCa5DFDABBfFD58cfD49A9f78Ca52eC8e0591a3C5;

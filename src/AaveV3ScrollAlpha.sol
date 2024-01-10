@@ -78,7 +78,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40
   address internal constant DAI_UNDERLYING = 0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://blockscout.scroll.io/address/0x99Cb50E6bE36C8096e6731ED7738d93090B710DD
   address internal constant DAI_A_TOKEN = 0x99Cb50E6bE36C8096e6731ED7738d93090B710DD;
@@ -98,7 +98,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0x279cBF5B7e3651F03CB9b71A9E7A3c924b267801
   address internal constant LINK_UNDERLYING = 0x279cBF5B7e3651F03CB9b71A9E7A3c924b267801;
 
-  uint256 internal constant LINK_DECIMALS = 18;
+  uint8 internal constant LINK_DECIMALS = 18;
 
   // https://blockscout.scroll.io/address/0x55DD1cDFE13fCa68F6D14D452E2a20cABe191841
   address internal constant LINK_A_TOKEN = 0x55DD1cDFE13fCa68F6D14D452E2a20cABe191841;
@@ -119,7 +119,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0x2C9678042D52B97D27f2bD2947F7111d93F3dD0D
   address internal constant USDC_UNDERLYING = 0x2C9678042D52B97D27f2bD2947F7111d93F3dD0D;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://blockscout.scroll.io/address/0x6E4A1BcBd3C3038e6957207cadC1A17092DC7ba3
   address internal constant USDC_A_TOKEN = 0x6E4A1BcBd3C3038e6957207cadC1A17092DC7ba3;
@@ -140,7 +140,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0x5EA79f3190ff37418d42F9B2618688494dBD9693
   address internal constant WBTC_UNDERLYING = 0x5EA79f3190ff37418d42F9B2618688494dBD9693;
 
-  uint256 internal constant WBTC_DECIMALS = 8;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
   // https://blockscout.scroll.io/address/0x43AE2a14AD923915aa85d683D1b7d0d320ae87B2
   address internal constant WBTC_A_TOKEN = 0x43AE2a14AD923915aa85d683D1b7d0d320ae87B2;
@@ -161,7 +161,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0xb123dCe044EdF0a755505d9623Fba16C0F41cae9
   address internal constant WETH_UNDERLYING = 0xb123dCe044EdF0a755505d9623Fba16C0F41cae9;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://blockscout.scroll.io/address/0x9E8CEC4F2F4596141B62e88966D7167E9db555aD
   address internal constant WETH_A_TOKEN = 0x9E8CEC4F2F4596141B62e88966D7167E9db555aD;
@@ -182,7 +182,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0x186C0C26c45A8DA1Da34339ee513624a9609156d
   address internal constant USDT_UNDERLYING = 0x186C0C26c45A8DA1Da34339ee513624a9609156d;
 
-  uint256 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://blockscout.scroll.io/address/0x54Cb3ba40705d7CCB18c1C24edD8B602a88eF4CE
   address internal constant USDT_A_TOKEN = 0x54Cb3ba40705d7CCB18c1C24edD8B602a88eF4CE;
@@ -203,7 +203,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0xfc2921bE7B2762F0E87039905d6019B0fF5978a8
   address internal constant AAVE_UNDERLYING = 0xfc2921bE7B2762F0E87039905d6019B0fF5978a8;
 
-  uint256 internal constant AAVE_DECIMALS = 18;
+  uint8 internal constant AAVE_DECIMALS = 18;
 
   // https://blockscout.scroll.io/address/0xC5209E1325A0DBeb28143D82e7E1DE709456Fc8a
   address internal constant AAVE_A_TOKEN = 0xC5209E1325A0DBeb28143D82e7E1DE709456Fc8a;
@@ -224,7 +224,7 @@ library AaveV3ScrollAlphaAssets {
   // https://blockscout.scroll.io/address/0xDf40f3a3566b4271450083f1Ad5732590BA47575
   address internal constant EURS_UNDERLYING = 0xDf40f3a3566b4271450083f1Ad5732590BA47575;
 
-  uint256 internal constant EURS_DECIMALS = 2;
+  uint8 internal constant EURS_DECIMALS = 2;
 
   // https://blockscout.scroll.io/address/0xD49d1CF2886B1c95A94e8a9066E8b298646716b6
   address internal constant EURS_A_TOKEN = 0xD49d1CF2886B1c95A94e8a9066E8b298646716b6;
@@ -244,7 +244,7 @@ library AaveV3ScrollAlphaAssets {
 }
 
 library AaveV3ScrollAlphaEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLECOINS = 1;
+  uint8 internal constant STABLECOINS = 1;
 }

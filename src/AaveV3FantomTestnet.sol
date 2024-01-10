@@ -75,7 +75,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x77FDe93fEe5fe272dC17d799cb61447431E6Eba2
   address internal constant DAI_UNDERLYING = 0x77FDe93fEe5fe272dC17d799cb61447431E6Eba2;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://testnet.ftmscan.com/address/0x2B101eFBB4dFf1fbB8f87f02C560Fb8AC773aFC5
   address internal constant DAI_A_TOKEN = 0x2B101eFBB4dFf1fbB8f87f02C560Fb8AC773aFC5;
@@ -95,7 +95,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x1Da81b322451C51D2580B373974a999d5A9C2D21
   address internal constant LINK_UNDERLYING = 0x1Da81b322451C51D2580B373974a999d5A9C2D21;
 
-  uint256 internal constant LINK_DECIMALS = 18;
+  uint8 internal constant LINK_DECIMALS = 18;
 
   // https://testnet.ftmscan.com/address/0x7d18f0834A38cA6B0e58CC671900f0017E6d55Ff
   address internal constant LINK_A_TOKEN = 0x7d18f0834A38cA6B0e58CC671900f0017E6d55Ff;
@@ -116,7 +116,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x66F61903D7FEC18048bEc2e792f272cb8B657733
   address internal constant USDC_UNDERLYING = 0x66F61903D7FEC18048bEc2e792f272cb8B657733;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://testnet.ftmscan.com/address/0xFFF336d1310D5Ba18CfFb2006afa762EC7d7a4fb
   address internal constant USDC_A_TOKEN = 0xFFF336d1310D5Ba18CfFb2006afa762EC7d7a4fb;
@@ -137,7 +137,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x2c95d10bA4BBEc79e562e8B3f48687751808C925
   address internal constant WBTC_UNDERLYING = 0x2c95d10bA4BBEc79e562e8B3f48687751808C925;
 
-  uint256 internal constant WBTC_DECIMALS = 8;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
   // https://testnet.ftmscan.com/address/0x17A6c7f20e804a558E0674c0Eef1F69442770596
   address internal constant WBTC_A_TOKEN = 0x17A6c7f20e804a558E0674c0Eef1F69442770596;
@@ -158,7 +158,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded
   address internal constant WETH_UNDERLYING = 0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://testnet.ftmscan.com/address/0x0e426e6e6B226D8bd566e417b90411Dcf14DF861
   address internal constant WETH_A_TOKEN = 0x0e426e6e6B226D8bd566e417b90411Dcf14DF861;
@@ -179,7 +179,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x9DFf9E93B1e513379cf820504D642c6891d8F7CC
   address internal constant USDT_UNDERLYING = 0x9DFf9E93B1e513379cf820504D642c6891d8F7CC;
 
-  uint256 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://testnet.ftmscan.com/address/0x97293798206Fc4FDF23D6b536ED3D694599e35BC
   address internal constant USDT_A_TOKEN = 0x97293798206Fc4FDF23D6b536ED3D694599e35BC;
@@ -200,7 +200,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x52D800ca262522580CeBAD275395ca6e7598C014
   address internal constant AAVE_UNDERLYING = 0x52D800ca262522580CeBAD275395ca6e7598C014;
 
-  uint256 internal constant AAVE_DECIMALS = 18;
+  uint8 internal constant AAVE_DECIMALS = 18;
 
   // https://testnet.ftmscan.com/address/0xf10e04c48f14d50F7378e01a1EEf7498D9a27d08
   address internal constant AAVE_A_TOKEN = 0xf10e04c48f14d50F7378e01a1EEf7498D9a27d08;
@@ -221,7 +221,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A
   address internal constant WFTM_UNDERLYING = 0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A;
 
-  uint256 internal constant WFTM_DECIMALS = 18;
+  uint8 internal constant WFTM_DECIMALS = 18;
 
   // https://testnet.ftmscan.com/address/0xFA3AdA68fA9512B2e22a5fac6b6F0231068A2b36
   address internal constant WFTM_A_TOKEN = 0xFA3AdA68fA9512B2e22a5fac6b6F0231068A2b36;
@@ -242,7 +242,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0xc199807AF4fEDB02EE567Ed0FeB814A077de4802
   address internal constant CRV_UNDERLYING = 0xc199807AF4fEDB02EE567Ed0FeB814A077de4802;
 
-  uint256 internal constant CRV_DECIMALS = 18;
+  uint8 internal constant CRV_DECIMALS = 18;
 
   // https://testnet.ftmscan.com/address/0x01CEf190E98cE7B8CA722e33C0D3aF456106103d
   address internal constant CRV_A_TOKEN = 0x01CEf190E98cE7B8CA722e33C0D3aF456106103d;
@@ -262,7 +262,7 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2
   address internal constant SUSHI_UNDERLYING = 0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2;
 
-  uint256 internal constant SUSHI_DECIMALS = 18;
+  uint8 internal constant SUSHI_DECIMALS = 18;
 
   // https://testnet.ftmscan.com/address/0xac8fd53423708ac1C49E5486485854FBE1487e65
   address internal constant SUSHI_A_TOKEN = 0xac8fd53423708ac1C49E5486485854FBE1487e65;
@@ -282,7 +282,7 @@ library AaveV3FantomTestnetAssets {
 }
 
 library AaveV3FantomTestnetEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLECOINS = 1;
+  uint8 internal constant STABLECOINS = 1;
 }

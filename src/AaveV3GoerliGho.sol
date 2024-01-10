@@ -75,7 +75,7 @@ library AaveV3GoerliGhoAssets {
   // https://goerli.etherscan.io/address/0xE205181Eb3D7415f15377F79aA7769F846cE56DD
   address internal constant AAVE_UNDERLYING = 0xE205181Eb3D7415f15377F79aA7769F846cE56DD;
 
-  uint256 internal constant AAVE_DECIMALS = 18;
+  uint8 internal constant AAVE_DECIMALS = 18;
 
   // https://goerli.etherscan.io/address/0xAC4D92980562Ac11Af46C6C7CEdD7C819C2028D0
   address internal constant AAVE_A_TOKEN = 0xAC4D92980562Ac11Af46C6C7CEdD7C819C2028D0;
@@ -96,7 +96,7 @@ library AaveV3GoerliGhoAssets {
   // https://goerli.etherscan.io/address/0xD77b79BE3e85351fF0cbe78f1B58cf8d1064047C
   address internal constant DAI_UNDERLYING = 0xD77b79BE3e85351fF0cbe78f1B58cf8d1064047C;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://goerli.etherscan.io/address/0x7402b9625D1712426807952b798e3180dC38876F
   address internal constant DAI_A_TOKEN = 0x7402b9625D1712426807952b798e3180dC38876F;
@@ -116,7 +116,7 @@ library AaveV3GoerliGhoAssets {
   // https://goerli.etherscan.io/address/0x69305b943C6F55743b2Ece5c0b20507300a39FC3
   address internal constant USDC_UNDERLYING = 0x69305b943C6F55743b2Ece5c0b20507300a39FC3;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://goerli.etherscan.io/address/0xdC916609281306558E0e8245bFBf90EFd3eCAb96
   address internal constant USDC_A_TOKEN = 0xdC916609281306558E0e8245bFBf90EFd3eCAb96;
@@ -137,7 +137,7 @@ library AaveV3GoerliGhoAssets {
   // https://goerli.etherscan.io/address/0x84ced17d95F3EC7230bAf4a369F1e624Ae60090d
   address internal constant WETH_UNDERLYING = 0x84ced17d95F3EC7230bAf4a369F1e624Ae60090d;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://goerli.etherscan.io/address/0x49871B521E44cb4a34b2bF2cbCF03C1CF895C48b
   address internal constant WETH_A_TOKEN = 0x49871B521E44cb4a34b2bF2cbCF03C1CF895C48b;
@@ -158,7 +158,7 @@ library AaveV3GoerliGhoAssets {
   // https://goerli.etherscan.io/address/0x2166903C38B4883B855eA2C77A02430a27Cdfede
   address internal constant LINK_UNDERLYING = 0x2166903C38B4883B855eA2C77A02430a27Cdfede;
 
-  uint256 internal constant LINK_DECIMALS = 18;
+  uint8 internal constant LINK_DECIMALS = 18;
 
   // https://goerli.etherscan.io/address/0x601c61Fc4eEe64a4b1f5201125b788dc1585746b
   address internal constant LINK_A_TOKEN = 0x601c61Fc4eEe64a4b1f5201125b788dc1585746b;
@@ -179,7 +179,7 @@ library AaveV3GoerliGhoAssets {
   // https://goerli.etherscan.io/address/0xcbE9771eD31e761b744D3cB9eF78A1f32DD99211
   address internal constant GHO_UNDERLYING = 0xcbE9771eD31e761b744D3cB9eF78A1f32DD99211;
 
-  uint256 internal constant GHO_DECIMALS = 18;
+  uint8 internal constant GHO_DECIMALS = 18;
 
   // https://goerli.etherscan.io/address/0xdC25729a09241d24c4228f1a0C27137770cF363e
   address internal constant GHO_A_TOKEN = 0xdC25729a09241d24c4228f1a0C27137770cF363e;
@@ -198,7 +198,7 @@ library AaveV3GoerliGhoAssets {
 }
 
 library AaveV3GoerliGhoEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLE_EMODE = 1;
+  uint8 internal constant STABLE_EMODE = 1;
 }

@@ -1,6 +1,5 @@
 import {Hex, PublicClient, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
-import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
 import {RPC_PROVIDERS} from './clients';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
@@ -15,6 +14,8 @@ import {LENDING_POOL_V2_ABI} from '../abi/lending_pool_v2_abi';
 import {A_TOKEN_V2_ABI} from '../abi/aToken_v2_abi';
 import {INCENTIVES_CONTROLLER_ABI} from '../abi/incentivesController_abi';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
+import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
+import {mainnetAmmV2Pool} from '../configs/pools/ethereum';
 
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -28,6 +29,7 @@ export interface PoolV2Addresses {
   COLLECTOR: AddressInfo;
   EMISSION_MANAGER: AddressInfo;
   DEFAULT_INCENTIVES_CONTROLLER: AddressInfo;
+  LENDING_POOL_COLLATERAL_MANAGER: AddressInfo;
   reservesData: ReserveData[];
 }
 
@@ -73,7 +75,7 @@ async function getAdditionalTokenInfo(
 }
 
 export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addresses> {
-  const publicClient = RPC_PROVIDERS[pool.chainId];
+  const publicClient = RPC_PROVIDERS[pool.chainId] as PublicClient;
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
     abi: ADDRESS_PROVIDER_V2_ABI,
@@ -88,6 +90,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       POOL_ADMIN,
       EMERGENCY_ADMIN,
       AAVE_PROTOCOL_DATA_PROVIDER,
+      LENDING_POOL_COLLATERAL_MANAGER,
     ] = await Promise.all([
       addressProviderContract.read.getLendingPool(),
       addressProviderContract.read.getLendingRateOracle(),
@@ -96,8 +99,11 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       addressProviderContract.read.getPoolAdmin(),
       addressProviderContract.read.getEmergencyAdmin(),
       addressProviderContract.read.getAddress([
-        '0x0100000000000000000000000000000000000000000000000000000000000000',
+        pool.name === mainnetAmmV2Pool.name
+          ? '0x1000000000000000000000000000000000000000000000000000000000000000'
+          : '0x0100000000000000000000000000000000000000000000000000000000000000',
       ]),
+      addressProviderContract.read.getLendingPoolCollateralManager(),
     ]);
 
     let reservesData: PoolV2Addresses['reservesData'] = [];
@@ -106,7 +112,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
       const uiPoolDataProvider = getContract({
         address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-        abi: UI_POOL_DATA_PROVIDER_ABI,
+        abi: IUiPoolDataProvider_ABI,
         publicClient,
       });
       reservesData = (
@@ -184,6 +190,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       DEFAULT_INCENTIVES_CONTROLLER,
       ...rest,
       EMISSION_MANAGER,
+      LENDING_POOL_COLLATERAL_MANAGER,
       reservesData,
     };
   } catch (error: any) {

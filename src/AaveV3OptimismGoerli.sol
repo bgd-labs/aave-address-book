@@ -78,7 +78,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709
   address internal constant DAI_UNDERLYING = 0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709;
 
-  uint256 internal constant DAI_DECIMALS = 18;
+  uint8 internal constant DAI_DECIMALS = 18;
 
   // https://goerli-optimism.etherscan.io/address/0x25E84646dF74FB9BCa68Aa8d018F7883ecE4B307
   address internal constant DAI_A_TOKEN = 0x25E84646dF74FB9BCa68Aa8d018F7883ecE4B307;
@@ -98,7 +98,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0xBA25de9a7DC623B30799F33B770d31B44c2C3b77
   address internal constant LINK_UNDERLYING = 0xBA25de9a7DC623B30799F33B770d31B44c2C3b77;
 
-  uint256 internal constant LINK_DECIMALS = 18;
+  uint8 internal constant LINK_DECIMALS = 18;
 
   // https://goerli-optimism.etherscan.io/address/0xEf51CEE544Dc4f2046da04656a19a28d5C83BB60
   address internal constant LINK_A_TOKEN = 0xEf51CEE544Dc4f2046da04656a19a28d5C83BB60;
@@ -119,7 +119,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE
   address internal constant USDC_UNDERLYING = 0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE;
 
-  uint256 internal constant USDC_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://goerli-optimism.etherscan.io/address/0x99A8acb66c7ED63141b868a603C2337B24f85B22
   address internal constant USDC_A_TOKEN = 0x99A8acb66c7ED63141b868a603C2337B24f85B22;
@@ -140,7 +140,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692
   address internal constant WBTC_UNDERLYING = 0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692;
 
-  uint256 internal constant WBTC_DECIMALS = 8;
+  uint8 internal constant WBTC_DECIMALS = 8;
 
   // https://goerli-optimism.etherscan.io/address/0xa821B2BD2364194d24d3Cd92e0F450B0AD5823d0
   address internal constant WBTC_A_TOKEN = 0xa821B2BD2364194d24d3Cd92e0F450B0AD5823d0;
@@ -161,7 +161,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0x4778caf7b5DBD3934c3906c2909653eB1e0E601f
   address internal constant WETH_UNDERLYING = 0x4778caf7b5DBD3934c3906c2909653eB1e0E601f;
 
-  uint256 internal constant WETH_DECIMALS = 18;
+  uint8 internal constant WETH_DECIMALS = 18;
 
   // https://goerli-optimism.etherscan.io/address/0x18c9297E82dEf404a9472e7F208840Ae8261DFe8
   address internal constant WETH_A_TOKEN = 0x18c9297E82dEf404a9472e7F208840Ae8261DFe8;
@@ -182,7 +182,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0xf79129ae303764D79287FfF0c857003E95fC1506
   address internal constant USDT_UNDERLYING = 0xf79129ae303764D79287FfF0c857003E95fC1506;
 
-  uint256 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://goerli-optimism.etherscan.io/address/0x053Ac73bCD255525123872E2248a06C9794f29c7
   address internal constant USDT_A_TOKEN = 0x053Ac73bCD255525123872E2248a06C9794f29c7;
@@ -203,7 +203,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0x20288ac1Ef7711448DF03283E6B580710E73393a
   address internal constant AAVE_UNDERLYING = 0x20288ac1Ef7711448DF03283E6B580710E73393a;
 
-  uint256 internal constant AAVE_DECIMALS = 18;
+  uint8 internal constant AAVE_DECIMALS = 18;
 
   // https://goerli-optimism.etherscan.io/address/0x79655b4d49d52fEDB9503A20a55ef5762dA17B18
   address internal constant AAVE_A_TOKEN = 0x79655b4d49d52fEDB9503A20a55ef5762dA17B18;
@@ -224,7 +224,7 @@ library AaveV3OptimismGoerliAssets {
   // https://goerli-optimism.etherscan.io/address/0xC21D17E8E839C1286BBaa297d932AE9b33d7985b
   address internal constant SUSD_UNDERLYING = 0xC21D17E8E839C1286BBaa297d932AE9b33d7985b;
 
-  uint256 internal constant SUSD_DECIMALS = 18;
+  uint8 internal constant SUSD_DECIMALS = 18;
 
   // https://goerli-optimism.etherscan.io/address/0xaf68aDbd3d8BBaC6c59c32490c01Cf8F6dB1adAE
   address internal constant SUSD_A_TOKEN = 0xaf68aDbd3d8BBaC6c59c32490c01Cf8F6dB1adAE;
@@ -244,7 +244,7 @@ library AaveV3OptimismGoerliAssets {
 }
 
 library AaveV3OptimismGoerliEModes {
-  uint256 internal constant NONE = 0;
+  uint8 internal constant NONE = 0;
 
-  uint256 internal constant STABLECOINS = 1;
+  uint8 internal constant STABLECOINS = 1;
 }

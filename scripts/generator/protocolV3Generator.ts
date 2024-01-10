@@ -2,7 +2,6 @@ import {Hex, PublicClient, getContract, zeroAddress} from 'viem';
 import {AddressInfo, Addresses, PoolConfig, ReserveData} from '../configs/types';
 import {ADDRESS_PROVIDER_V3_ABI} from '../abi/address_provider_v3_abi';
 import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
-import {UI_POOL_DATA_PROVIDER_ABI} from '../abi/uipooldata_provider';
 import {STATIC_A_TOKEN_FACTORY_ABI} from '../abi/static_a_token_factory_abi';
 import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
 import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
@@ -22,6 +21,7 @@ import {
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {ChainId} from './chains';
+import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -164,7 +164,7 @@ export async function getPoolV3Addresses(
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
       const uiPoolDataProvider = getContract({
         address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-        abi: UI_POOL_DATA_PROVIDER_ABI,
+        abi: IUiPoolDataProvider_ABI,
         publicClient,
       });
       const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
@@ -236,7 +236,7 @@ function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryNa
   const formatted = sorted.reduce((acc, [value, label]) => {
     acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'NONE'}`] = {
       value,
-      type: 'uint256',
+      type: 'uint8',
     };
     return acc;
   }, {} as Addresses);
