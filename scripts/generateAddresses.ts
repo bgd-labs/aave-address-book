@@ -58,6 +58,7 @@ import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {scrollAddresses} from './configs/networks/scroll';
+import {polygonZkevmAddresses} from './configs/networks/polygonZkevm';
 import {governanceConfigScroll} from './configs/governance/scroll';
 import {governanceConfigPolygonZkEVM} from './configs/governance/polygonZkevm';
 
@@ -142,6 +143,7 @@ async function main() {
     gnosisAddresses,
     bnbAddresses,
     scrollAddresses,
+    polygonZkevmAddresses,
     sepoliaAddresses,
     mumbaiAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
