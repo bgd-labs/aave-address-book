@@ -1,7 +1,7 @@
 import {NetworkAddresses} from '../types';
 import {ChainId} from '../../generator/chains';
 
-export const polygonZkevmAddresses: NetworkAddresses = {
+export const polygonZkEVMAddresses: NetworkAddresses = {
   name: 'PolygonZkEVM',
   chainId: ChainId.zkevm,
   addresses: {

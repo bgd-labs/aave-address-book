@@ -1,8 +1,8 @@
 import {ChainId} from '../../generator/chains';
 import {PoolConfig} from '../types';
 
-export const polygonZkevmProtoV3: PoolConfig = {
-  name: 'PolygonZkevm',
+export const polygonZkEVMProtoV3: PoolConfig = {
+  name: 'PolygonZkEVM',
   chainId: ChainId.zkevm,
   POOL_ADDRESSES_PROVIDER: '0x36616cf17557639614c1cdDb356b1B83fc0B2132',
   additionalAddresses: {

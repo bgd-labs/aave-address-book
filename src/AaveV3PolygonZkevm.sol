@@ -5,7 +5,7 @@ pragma solidity >=0.6.0;
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
 
-library AaveV3PolygonZkevm {
+library AaveV3PolygonZkEVM {
   // https://zkevm.polygonscan.com/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
     IPoolAddressesProvider(0x36616cf17557639614c1cdDb356b1B83fc0B2132);
@@ -100,6 +100,6 @@ library AaveV3PolygonZkevm {
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x06C35Cfd3FC61eC2aC437f0d08840d5776b945af;
 }
 
-library AaveV3PolygonZkevmAssets {}
+library AaveV3PolygonZkEVMAssets {}
 
-library AaveV3PolygonZkevmEModes {}
+library AaveV3PolygonZkEVMEModes {}
