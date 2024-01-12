@@ -41,8 +41,8 @@ library AaveV3Mumbai {
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xBcEF55508Efb890C71c8a6211B3dE02B00430503;
 
-  // https://mumbai.polygonscan.com/address/0x274032E998ea08EAE819E7985488AD54DC813b69
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x274032E998ea08EAE819E7985488AD54DC813b69;
+  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x0000000000000000000000000000000000000000;
 
   // https://mumbai.polygonscan.com/address/0xf24dc19cFb9A25bbc4DDcaAdb116DfD17472207B
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
