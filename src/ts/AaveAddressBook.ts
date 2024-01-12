@@ -54,7 +54,7 @@ export * as MiscMetis from './MiscMetis';
 export * as MiscGnosis from './MiscGnosis';
 export * as MiscBNB from './MiscBNB';
 export * as MiscScroll from './MiscScroll';
-export * as MiscPolygonZkEVM from './MiscPolygonZkEVM';
+export * as MiscPolygonZkEvm from './MiscPolygonZkEvm';
 export * as MiscSepolia from './MiscSepolia';
 export * as MiscMumbai from './MiscMumbai';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';

@@ -57,7 +57,7 @@ import {MiscMetis} from './MiscMetis.sol';
 import {MiscGnosis} from './MiscGnosis.sol';
 import {MiscBNB} from './MiscBNB.sol';
 import {MiscScroll} from './MiscScroll.sol';
-import {MiscPolygonZkEVM} from './MiscPolygonZkEVM.sol';
+import {MiscPolygonZkEvm} from './MiscPolygonZkEvm.sol';
 import {MiscSepolia} from './MiscSepolia.sol';
 import {MiscMumbai} from './MiscMumbai.sol';
 import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';

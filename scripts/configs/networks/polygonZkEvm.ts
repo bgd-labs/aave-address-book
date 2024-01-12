@@ -2,7 +2,7 @@ import {NetworkAddresses} from '../types';
 import {ChainId} from '../../generator/chains';
 
 export const polygonZkEvmAddresses: NetworkAddresses = {
-  name: 'PolygonZkEVM',
+  name: 'PolygonZkEvm',
   chainId: ChainId.zkevm,
   addresses: {
     PARASWAP_FEE_CLAIMER: '0xAe940e61E9863178b71500c9B5faE2a04Da361a1',
