@@ -1,8 +1,8 @@
 import {ChainId} from '../../generator/chains';
 import {GovernanceConfig} from '../types';
 
-export const governanceConfigPolygonZkEVM: GovernanceConfig = {
-  name: 'PolygonZkEVM',
+export const governanceConfigPolygonZkEvm: GovernanceConfig = {
+  name: 'PolygonZkEvm',
   CHAIN_ID: ChainId.zkevm,
   ADDRESSES: {
     CROSS_CHAIN_CONTROLLER: '0xed7e0874526B9BB9E36C7e9472ed7ed324CEeE3B',

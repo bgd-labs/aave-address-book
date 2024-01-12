@@ -22,7 +22,7 @@ import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
-import {polygonZkEVMProtoV3} from './configs/pools/polygonZkEVM';
+import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
 import {
   mumbaiProtoV2,
@@ -58,9 +58,9 @@ import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {scrollAddresses} from './configs/networks/scroll';
-import {polygonZkEVMAddresses} from './configs/networks/polygonZkEVM';
+import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
-import {governanceConfigPolygonZkEVM} from './configs/governance/polygonZkEVM';
+import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 
 async function main() {
   // cleanup ts artifacts
@@ -89,7 +89,7 @@ async function main() {
       governanceConfigBNB,
       governanceConfigGnosis,
       governanceConfigScroll,
-      governanceConfigPolygonZkEVM,
+      governanceConfigPolygonZkEvm,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
@@ -116,7 +116,7 @@ async function main() {
       baseProtoV3,
       metisProtoV3,
       gnosisProtoV3,
-      polygonZkEVMProtoV3,
+      polygonZkEvmProtoV3,
       bnbProtoV3,
       arbitrumGoerliProtoV3,
       arbitrumProtoV3,
@@ -143,7 +143,7 @@ async function main() {
     gnosisAddresses,
     bnbAddresses,
     scrollAddresses,
-    polygonZkEVMAddresses,
+    polygonZkEvmAddresses,
     sepoliaAddresses,
     mumbaiAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
