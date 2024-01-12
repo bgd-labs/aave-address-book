@@ -21,6 +21,7 @@ import {
   base,
   bsc,
   gnosis,
+  polygonZkEvm,
 } from 'viem/chains';
 import {ChainId} from './chains';
 
@@ -171,6 +172,13 @@ export const RPC_PROVIDERS = {
   [ChainId.scroll]: createPublicClient({
     chain: scroll,
     transport: http(process.env.RPC_SCROLL),
+    batch: {
+      multicall: true,
+    },
+  }),
+  [ChainId.zkevm]: createPublicClient({
+    chain: polygonZkEvm,
+    transport: http(),
     batch: {
       multicall: true,
     },
