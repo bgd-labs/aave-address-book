@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.15.2](https://github.com/bgd-labs/aave-address-book/compare/v2.15.1...v2.15.2) (2024-01-15)
+
+
+### Bug Fixes
+
+* add protocol guardian for scroll ([#323](https://github.com/bgd-labs/aave-address-book/issues/323)) ([06b67e5](https://github.com/bgd-labs/aave-address-book/commit/06b67e52c89993eafebbb9ad6bf91f286b660bed))
+
 ## [2.15.1](https://github.com/bgd-labs/aave-address-book/compare/v2.15.0...v2.15.1) (2024-01-15)
 
 
