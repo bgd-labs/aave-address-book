@@ -194,9 +194,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6
   address internal constant USDC_ORACLE = 0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6;
 
-  // https://etherscan.io/address/0x53b13a6D43F647D788411Abfd28D229C274AfBF9
+  // https://etherscan.io/address/0x642a8DAcC59b73491Dcaa3BCeF046D660901fCc1
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x53b13a6D43F647D788411Abfd28D229C274AfBF9;
+    0x642a8DAcC59b73491Dcaa3BCeF046D660901fCc1;
 
   // https://etherscan.io/address/0x6B175474E89094C44Da98b954EedeAC495271d0F
   address internal constant DAI_UNDERLYING = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
@@ -215,8 +215,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9
   address internal constant DAI_ORACLE = 0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9;
 
-  // https://etherscan.io/address/0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3;
+  // https://etherscan.io/address/0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237;
 
   // https://etherscan.io/address/0x514910771AF9Ca656af840dff83E8264EcF986CA
   address internal constant LINK_UNDERLYING = 0x514910771AF9Ca656af840dff83E8264EcF986CA;
@@ -298,9 +298,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x3E7d1eAB13ad0104d2750B8863b489D65364e32D
   address internal constant USDT_ORACLE = 0x3E7d1eAB13ad0104d2750B8863b489D65364e32D;
 
-  // https://etherscan.io/address/0x588b62C84533232E3A881e096E5D639Fa754F093
+  // https://etherscan.io/address/0xc77576b02D74BBF9CdC26F3B86FD09d134416df2
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x588b62C84533232E3A881e096E5D639Fa754F093;
+    0xc77576b02D74BBF9CdC26F3B86FD09d134416df2;
 
   // https://etherscan.io/address/0xae78736Cd615f374D3085123A210448E74Fc6393
   address internal constant rETH_UNDERLYING = 0xae78736Cd615f374D3085123A210448E74Fc6393;
@@ -340,9 +340,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x3D7aE7E594f2f2091Ad8798313450130d0Aba3a0
   address internal constant LUSD_ORACLE = 0x3D7aE7E594f2f2091Ad8798313450130d0Aba3a0;
 
-  // https://etherscan.io/address/0xaDbdb3d6B51151e4CDF32e4050B6F03D2bfB6477
+  // https://etherscan.io/address/0xC0B875907514131C2Fd43f0FBf59EdaB84C7e260
   address internal constant LUSD_INTEREST_RATE_STRATEGY =
-    0xaDbdb3d6B51151e4CDF32e4050B6F03D2bfB6477;
+    0xC0B875907514131C2Fd43f0FBf59EdaB84C7e260;
 
   // https://etherscan.io/address/0xD533a949740bb3306d119CC777fa900bA034cd52
   address internal constant CRV_UNDERLYING = 0xD533a949740bb3306d119CC777fa900bA034cd52;
@@ -522,9 +522,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xB9E1E3A9feFf48998E45Fa90847ed4D467E8BcfD
   address internal constant FRAX_ORACLE = 0xB9E1E3A9feFf48998E45Fa90847ed4D467E8BcfD;
 
-  // https://etherscan.io/address/0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3
+  // https://etherscan.io/address/0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
-    0x9a158802cD924747EF336cA3F9DE3bdb60Cf43D3;
+    0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237;
 
   // https://etherscan.io/address/0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f
   address internal constant GHO_UNDERLYING = 0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f;

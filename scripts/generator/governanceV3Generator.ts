@@ -120,7 +120,10 @@ export async function generateGovernanceLibrary(config: GovernanceConfig) {
   );
   writeFileSync(
     `./src/ts/${name}.ts`,
-    generateJsConstants({chainId: config.CHAIN_ID, addresses}).join('\n'),
+    generateJsConstants({
+      chainId: config.CHAIN_ID,
+      addresses: {...addresses, CHAIN_ID: {value: config.CHAIN_ID, type: 'uint256'}},
+    }).join('\n'),
   );
   return {
     js: [`export * as ${name} from './${name}';`],

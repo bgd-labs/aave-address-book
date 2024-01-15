@@ -18,3 +18,5 @@ export const VOTING_STRATEGY = '0x2FD0ea3cF58cB9cD25c2a186E643629198A37600';
 
 // IDataWarehouse https://mumbai.polygonscan.com/address/0x1F780a6E860792E59F2160b1E9E503bFF8c58Cb1
 export const DATA_WAREHOUSE = '0x1F780a6E860792E59F2160b1E9E503bFF8c58Cb1';
+
+export const CHAIN_ID = 80001;
