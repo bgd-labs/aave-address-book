@@ -27,3 +27,5 @@ export const VOTING_STRATEGY = '0x690C218668B440204F369Af1541245d367cc805C';
 
 // IDataWarehouse https://snowtrace.io/address/0x9626F9d60CC0B7e1c9a0A47b7f0bd618fb6f40ff
 export const DATA_WAREHOUSE = '0x9626F9d60CC0B7e1c9a0A47b7f0bd618fb6f40ff';
+
+export const CHAIN_ID = 43114;

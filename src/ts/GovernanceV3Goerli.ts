@@ -36,3 +36,5 @@ export const VOTING_STRATEGY = '0x2e5a80Be4EA93225f0D9bFE1f8aC6470f54acDb9';
 
 // IDataWarehouse https://goerli.etherscan.io/address/0xC946cc6bb934bAf2A539BaB62c647aff09D2e2D8
 export const DATA_WAREHOUSE = '0xC946cc6bb934bAf2A539BaB62c647aff09D2e2D8';
+
+export const CHAIN_ID = 5;
