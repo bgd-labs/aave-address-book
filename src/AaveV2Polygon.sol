@@ -102,8 +102,8 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0xFC539A559e170f848323e19dfD66007520510085
   address internal constant DAI_ORACLE = 0xFC539A559e170f848323e19dfD66007520510085;
 
-  // https://polygonscan.com/address/0x283Df7893eF10F729890017F57d76B8D78e18915
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x283Df7893eF10F729890017F57d76B8D78e18915;
+  // https://polygonscan.com/address/0xa966adA364E0491520a1235aAA9cf15E08c1Db05
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xa966adA364E0491520a1235aAA9cf15E08c1Db05;
 
   // https://polygonscan.com/address/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174
   address internal constant USDC_UNDERLYING = 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174;
@@ -122,9 +122,9 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0xefb7e6be8356cCc6827799B6A7348eE674A80EaE
   address internal constant USDC_ORACLE = 0xefb7e6be8356cCc6827799B6A7348eE674A80EaE;
 
-  // https://polygonscan.com/address/0xc7008Df6B900b41CD528ceb23283Cf4BBCd0ac6E
+  // https://polygonscan.com/address/0x2ad5a608a920E7061ccE38955C89A7c3F4c0aba7
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xc7008Df6B900b41CD528ceb23283Cf4BBCd0ac6E;
+    0x2ad5a608a920E7061ccE38955C89A7c3F4c0aba7;
 
   // https://polygonscan.com/address/0xc2132D05D31c914a87C6611C10748AEb04B58e8F
   address internal constant USDT_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
@@ -143,9 +143,9 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d
   address internal constant USDT_ORACLE = 0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d;
 
-  // https://polygonscan.com/address/0x8D6dA015e69A84644BFc7455F871bDe2A7Fedf39
+  // https://polygonscan.com/address/0x7892E4Db4C172e7Af389677c04c42eE3F8Fd5447
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x8D6dA015e69A84644BFc7455F871bDe2A7Fedf39;
+    0x7892E4Db4C172e7Af389677c04c42eE3F8Fd5447;
 
   // https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6
   address internal constant WBTC_UNDERLYING = 0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6;

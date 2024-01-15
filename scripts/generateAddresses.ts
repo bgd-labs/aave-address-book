@@ -30,7 +30,7 @@ import {
   polygonProtoV2,
   polygonProtoV3,
 } from './configs/pools/polygon';
-import {scrollAlphaProtoV3, scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -67,7 +67,7 @@ async function main() {
   if (existsSync('./src/ts')) {
     const files = readdirSync('./src/ts');
     for (const file of files) {
-      if (file !== 'abis') rmSync(`./src/ts/${file}`);
+      if (file !== 'abis' && file !== 'AaveV3Harmony.ts') rmSync(`./src/ts/${file}`);
     }
   } else {
     mkdirSync('./src/ts');
@@ -123,11 +123,10 @@ async function main() {
       optimismGoerliProtoV3,
       optimismProtoV3,
       scrollProtoV3,
-      scrollAlphaProtoV3,
       scrollSepoliaProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
-      harmonyProtoV3,
+      // harmonyProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
 
@@ -164,7 +163,10 @@ async function main() {
     abis,
   ].flat();
 
-  const jsExports = imports.map((f) => f.js).flat();
+  const jsExports = [
+    ...imports.map((f) => f.js).flat(),
+    "export * as AaveV3Harmony from './AaveV3Harmony';",
+  ];
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
 

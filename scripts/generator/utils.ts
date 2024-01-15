@@ -1,11 +1,10 @@
 import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
-import {ChainId} from './chains';
-import {RPC_PROVIDERS} from './clients';
+import {CHAIN_ID_CLIENT_MAP, ChainId} from '@bgd-labs/js-utils';
 
 function getExplorerLink(chainId: ChainId, address: Hex) {
-  const publicClient = RPC_PROVIDERS[chainId];
-  return `${publicClient.chain?.blockExplorers?.default.url}/address/${getAddress(address)}`;
+  const client = CHAIN_ID_CLIENT_MAP[chainId];
+  return `${client.chain?.blockExplorers?.default.url}/address/${getAddress(address)}`;
 }
 
 export function prefixWithPragma(code: string) {

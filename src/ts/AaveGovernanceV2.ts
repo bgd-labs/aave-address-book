@@ -17,7 +17,7 @@ export const ARC_TIMELOCK = '0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218';
 // address https://polygonscan.com/address/0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
 export const POLYGON_BRIDGE_EXECUTOR = '0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772';
 
-// address https://explorer.optimism.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
+// address https://optimistic.etherscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
 export const OPTIMISM_BRIDGE_EXECUTOR = '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611';
 
 // address https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
