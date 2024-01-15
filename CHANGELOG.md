@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.15.1](https://github.com/bgd-labs/aave-address-book/compare/v2.15.0...v2.15.1) (2024-01-15)
+
+
+### Bug Fixes
+
+* patch harmony ([#321](https://github.com/bgd-labs/aave-address-book/issues/321)) ([742f6b3](https://github.com/bgd-labs/aave-address-book/commit/742f6b3f1c1155e1092b14ab6fcc8836ee52c464))
+
 ## [2.15.0](https://github.com/bgd-labs/aave-address-book/compare/v2.14.0...v2.15.0) (2024-01-12)
 
 
