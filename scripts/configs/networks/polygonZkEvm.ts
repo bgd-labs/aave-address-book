@@ -1,9 +1,9 @@
 import {NetworkAddresses} from '../types';
-import {ChainId} from '../../generator/chains';
+import {ChainId} from '@bgd-labs/js-utils';
 
 export const polygonZkEvmAddresses: NetworkAddresses = {
   name: 'PolygonZkEvm',
-  chainId: ChainId.zkevm,
+  chainId: ChainId.zkEVM,
   addresses: {
     PARASWAP_FEE_CLAIMER: '0xAe940e61E9863178b71500c9B5faE2a04Da361a1',
     TRANSPARENT_PROXY_FACTORY: '0x8B6851156023f4f5A66F68BEA80851c3D905Ac93',

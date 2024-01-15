@@ -1,9 +1,9 @@
-import {ChainId} from '../../generator/chains';
+import {ChainId} from '@bgd-labs/js-utils';
 import {PoolConfig} from '../types';
 
 export const polygonZkEvmProtoV3: PoolConfig = {
   name: 'PolygonZkEvm',
-  chainId: ChainId.zkevm,
+  chainId: ChainId.zkEVM,
   POOL_ADDRESSES_PROVIDER: '0x36616cf17557639614c1cdDb356b1B83fc0B2132',
   additionalAddresses: {
     L2_ENCODER: '0x777fBA024bA1228fDa76149A4ff8B23475ed057D',

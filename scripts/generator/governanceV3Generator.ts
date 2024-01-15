@@ -1,7 +1,6 @@
 import {writeFileSync} from 'fs';
 import {Hex, PublicClient, getContract, Address} from 'viem';
 import {Addresses, GovernanceConfig} from '../configs/types';
-import {RPC_PROVIDERS} from './clients';
 import {
   generateJsConstants,
   generateSolidityConstants,
@@ -13,6 +12,7 @@ import {IGovernanceCore_ABI} from '../../src/ts/abis/IGovernanceCore';
 import {IPayloadsControllerCore_ABI} from '../../src/ts/abis/IPayloadsControllerCore';
 import {IVotingStrategy_ABI} from '../../src/ts/abis/IVotingStrategy';
 import {IVotingMachineWithProofs_ABI} from '../../src/ts/abis/IVotingMachineWithProofs';
+import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
@@ -20,13 +20,13 @@ type ExecutorsV3 = {
 };
 
 async function fetchV3ExecutorAddresses(
-  publicClient: PublicClient,
+  client: PublicClient,
   payloadsController: Hex,
 ): Promise<ExecutorsV3> {
   const payloadsControllerContract = getContract({
     address: payloadsController,
     abi: IPayloadsControllerCore_ABI,
-    publicClient,
+    client,
   });
 
   const [executorLvl1, executorLvl2] = await Promise.all([
@@ -39,18 +39,18 @@ async function fetchV3ExecutorAddresses(
   };
 }
 
-async function getVotingStrategyAndWarehouse(votingMachine: Address, publicClient: PublicClient) {
+async function getVotingStrategyAndWarehouse(votingMachine: Address, client: PublicClient) {
   const votingMachineContract = getContract({
     address: votingMachine,
     abi: IVotingMachineWithProofs_ABI,
-    publicClient,
+    client,
   });
 
   const votingStrategy = await votingMachineContract.read.VOTING_STRATEGY();
   const votingStrategyContract = getContract({
     address: votingStrategy,
     abi: IVotingStrategy_ABI,
-    publicClient,
+    client,
   });
   const warehouse = await votingStrategyContract.read.DATA_WAREHOUSE();
   return {
@@ -59,13 +59,13 @@ async function getVotingStrategyAndWarehouse(votingMachine: Address, publicClien
   };
 }
 
-function getGovernancePowerStrategy(governance: Address, publicClient: PublicClient) {
+function getGovernancePowerStrategy(governance: Address, client: PublicClient) {
   if (!governance) throw new Error('trying to fetch power strategy from address 0');
 
   const governanceContract = getContract({
     address: governance,
     abi: IGovernanceCore_ABI,
-    publicClient,
+    client,
   });
 
   return governanceContract.read.getPowerStrategy();
@@ -74,17 +74,16 @@ function getGovernancePowerStrategy(governance: Address, publicClient: PublicCli
 async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig) {
   let addresses: Addresses = {...ADDRESSES};
   if (ADDRESSES.GOVERNANCE) {
-    // TODO: comment back in when governance v3 is live
-    // addresses.GOVERNANCE_POWER_STRATEGY = await getGovernancePowerStrategy(
-    //   ADDRESSES.GOVERNANCE,
-    //   RPC_PROVIDERS[CHAIN_ID],
-    // );
+    addresses.GOVERNANCE_POWER_STRATEGY = await getGovernancePowerStrategy(
+      ADDRESSES.GOVERNANCE,
+      CHAIN_ID_CLIENT_MAP[CHAIN_ID],
+    );
     addresses.GOVERNANCE = {value: addresses.GOVERNANCE, type: 'IGovernanceCore'};
   }
 
   if (ADDRESSES.PAYLOADS_CONTROLLER) {
     const executors = await fetchV3ExecutorAddresses(
-      RPC_PROVIDERS[CHAIN_ID],
+      CHAIN_ID_CLIENT_MAP[CHAIN_ID],
       ADDRESSES.PAYLOADS_CONTROLLER,
     );
     addresses.PAYLOADS_CONTROLLER = {
@@ -96,7 +95,7 @@ async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig)
   if (ADDRESSES.VOTING_MACHINE) {
     const strategyAndWareHouse = await getVotingStrategyAndWarehouse(
       ADDRESSES.VOTING_MACHINE,
-      RPC_PROVIDERS[CHAIN_ID],
+      CHAIN_ID_CLIENT_MAP[CHAIN_ID],
     );
     addresses = {...addresses, ...strategyAndWareHouse};
   }

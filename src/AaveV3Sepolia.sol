@@ -265,6 +265,26 @@ library AaveV3SepoliaAssets {
 
   // https://sepolia.etherscan.io/address/0x72B49a461900e11632C95dfa563e7173438D4e3E
   address internal constant EURS_STATA_TOKEN = 0x72B49a461900e11632C95dfa563e7173438D4e3E;
+
+  // https://sepolia.etherscan.io/address/0xc4bF5CbDaBE595361438F8c6a187bDc330539c60
+  address internal constant GHO_UNDERLYING = 0xc4bF5CbDaBE595361438F8c6a187bDc330539c60;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://sepolia.etherscan.io/address/0xd190eF37dB51Bb955A680fF1A85763CC72d083D4
+  address internal constant GHO_A_TOKEN = 0xd190eF37dB51Bb955A680fF1A85763CC72d083D4;
+
+  // https://sepolia.etherscan.io/address/0x67ae46EF043F7A4508BD1d6B94DB6c33F0915844
+  address internal constant GHO_V_TOKEN = 0x67ae46EF043F7A4508BD1d6B94DB6c33F0915844;
+
+  // https://sepolia.etherscan.io/address/0xdCA691FB9609aB814E59c62d70783da1c056A9b6
+  address internal constant GHO_S_TOKEN = 0xdCA691FB9609aB814E59c62d70783da1c056A9b6;
+
+  // https://sepolia.etherscan.io/address/0x00f7fecFAEbEd9499e1f3f9d04E755a21E5fc47C
+  address internal constant GHO_ORACLE = 0x00f7fecFAEbEd9499e1f3f9d04E755a21E5fc47C;
+
+  // https://sepolia.etherscan.io/address/0x521247B4d0a51E71DE580dA2cBF99EB40a44b3Bf
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x521247B4d0a51E71DE580dA2cBF99EB40a44b3Bf;
 }
 
 library AaveV3SepoliaEModes {

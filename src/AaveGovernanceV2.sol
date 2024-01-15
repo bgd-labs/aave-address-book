@@ -26,7 +26,7 @@ library AaveGovernanceV2 {
   // https://polygonscan.com/address/0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
   address internal constant POLYGON_BRIDGE_EXECUTOR = 0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
 
-  // https://explorer.optimism.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
+  // https://optimistic.etherscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
   address internal constant OPTIMISM_BRIDGE_EXECUTOR = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
   // https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
