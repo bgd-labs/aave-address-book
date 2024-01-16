@@ -1,5 +1,5 @@
-import {ChainId} from '../../generator/chains';
-import {PoolConfig} from '../types';
+import { ChainId } from '../../generator/chains';
+import { PoolConfig } from '../types';
 
 export const goerliProtoV2Pool: PoolConfig = {
   name: 'Goerli',
@@ -39,6 +39,8 @@ export const sepoliaProtoV3: PoolConfig = {
     WALLET_BALANCE_PROVIDER: '0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709',
     WETH_GATEWAY: '0x387d311e47e80b498169e6fb51d3193167d89F7D',
     STATIC_A_TOKEN_FACTORY: '0xd210dFB43B694430B8d31762B5199e30c31266C8',
+    UI_GHO_DATA_PROVIDER: '0x69B9843A16a6E9933125EBD97659BA3CCbE2Ef8A',
+    GHO_TOKEN: '0xc4bF5CbDaBE595361438F8c6a187bDc330539c60',
   },
 };
 
