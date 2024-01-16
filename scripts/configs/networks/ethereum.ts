@@ -1,5 +1,5 @@
 import {Hex} from 'viem';
-import {ChainId} from '../../generator/chains';
+import {ChainId} from '@bgd-labs/js-utils';
 import {AddressInfo, NetworkAddresses} from '../types';
 
 export const ethereumAddresses: NetworkAddresses<{

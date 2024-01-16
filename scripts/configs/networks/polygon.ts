@@ -1,5 +1,5 @@
 import {Hex} from 'viem';
-import {ChainId} from '../../generator/chains';
+import {ChainId} from '@bgd-labs/js-utils';
 import {NetworkAddresses} from '../types';
 
 export const polygonAddresses: NetworkAddresses<{AAVE_POL_ETH_BRIDGE: Hex}> = {

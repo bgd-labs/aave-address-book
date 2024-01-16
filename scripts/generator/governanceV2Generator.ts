@@ -7,7 +7,7 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
-import {ChainId} from './chains';
+import {ChainId} from '@bgd-labs/js-utils';
 
 const govV2Addresses: Addresses = {
   GOV: {value: '0xEC568fffba86c094cf06b22134B23074DFE2252c', type: 'IAaveGovernanceV2'},

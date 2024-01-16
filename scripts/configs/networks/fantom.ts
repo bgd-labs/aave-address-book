@@ -1,4 +1,4 @@
-import {ChainId} from '../../generator/chains';
+import {ChainId} from '@bgd-labs/js-utils';
 import {NetworkAddresses} from '../types';
 
 export const fantomAddresses: NetworkAddresses = {
