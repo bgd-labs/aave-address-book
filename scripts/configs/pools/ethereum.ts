@@ -1,5 +1,5 @@
-import { ChainId } from '../../generator/chains';
-import { PoolConfig } from '../types';
+import {ChainId} from '@bgd-labs/js-utils';
+import {PoolConfig} from '../types';
 
 export const goerliProtoV2Pool: PoolConfig = {
   name: 'Goerli',

@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.15.2](https://github.com/bgd-labs/aave-address-book/compare/v2.15.1...v2.15.2) (2024-01-15)
+
+
+### Bug Fixes
+
+* add protocol guardian for scroll ([#323](https://github.com/bgd-labs/aave-address-book/issues/323)) ([06b67e5](https://github.com/bgd-labs/aave-address-book/commit/06b67e52c89993eafebbb9ad6bf91f286b660bed))
+
+## [2.15.1](https://github.com/bgd-labs/aave-address-book/compare/v2.15.0...v2.15.1) (2024-01-15)
+
+
+### Bug Fixes
+
+* patch harmony ([#321](https://github.com/bgd-labs/aave-address-book/issues/321)) ([742f6b3](https://github.com/bgd-labs/aave-address-book/commit/742f6b3f1c1155e1092b14ab6fcc8836ee52c464))
+
+## [2.15.0](https://github.com/bgd-labs/aave-address-book/compare/v2.14.0...v2.15.0) (2024-01-12)
+
+
+### Features
+
+* add polygon zkEVM contracts ([#320](https://github.com/bgd-labs/aave-address-book/issues/320)) ([772807c](https://github.com/bgd-labs/aave-address-book/commit/772807c81dc831b51f942506253c0d90fb03e65c))
+* added scroll contracts ([#307](https://github.com/bgd-labs/aave-address-book/issues/307)) ([a53910d](https://github.com/bgd-labs/aave-address-book/commit/a53910d9b71c6653f23d08443264ad898119b391))
+
 ## [2.14.0](https://github.com/bgd-labs/aave-address-book/compare/v2.13.3...v2.14.0) (2024-01-04)
 
 

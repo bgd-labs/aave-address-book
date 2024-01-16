@@ -22,6 +22,7 @@ import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
+import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
 import {
   mumbaiProtoV2,
@@ -29,7 +30,7 @@ import {
   polygonProtoV2,
   polygonProtoV3,
 } from './configs/pools/polygon';
-import {scrollAlphaProtoV3, scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -57,14 +58,16 @@ import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {scrollAddresses} from './configs/networks/scroll';
+import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
+import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 
 async function main() {
   // cleanup ts artifacts
   if (existsSync('./src/ts')) {
     const files = readdirSync('./src/ts');
     for (const file of files) {
-      if (file !== 'abis') rmSync(`./src/ts/${file}`);
+      if (file !== 'abis' && file !== 'AaveV3Harmony.ts') rmSync(`./src/ts/${file}`);
     }
   } else {
     mkdirSync('./src/ts');
@@ -86,6 +89,7 @@ async function main() {
       governanceConfigBNB,
       governanceConfigGnosis,
       governanceConfigScroll,
+      governanceConfigPolygonZkEvm,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
@@ -112,17 +116,17 @@ async function main() {
       baseProtoV3,
       metisProtoV3,
       gnosisProtoV3,
+      polygonZkEvmProtoV3,
       bnbProtoV3,
       arbitrumGoerliProtoV3,
       arbitrumProtoV3,
       optimismGoerliProtoV3,
       optimismProtoV3,
       scrollProtoV3,
-      scrollAlphaProtoV3,
       scrollSepoliaProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
-      harmonyProtoV3,
+      // harmonyProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
 
@@ -138,6 +142,7 @@ async function main() {
     gnosisAddresses,
     bnbAddresses,
     scrollAddresses,
+    polygonZkEvmAddresses,
     sepoliaAddresses,
     mumbaiAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
@@ -158,7 +163,10 @@ async function main() {
     abis,
   ].flat();
 
-  const jsExports = imports.map((f) => f.js).flat();
+  const jsExports = [
+    ...imports.map((f) => f.js).flat(),
+    "export * as AaveV3Harmony from './AaveV3Harmony';",
+  ];
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
 
