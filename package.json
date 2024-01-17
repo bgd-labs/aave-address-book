@@ -47,7 +47,7 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
-    "@bgd-labs/js-utils": "^1.0.6",
+    "@bgd-labs/js-utils": "^1.1.0",
     "@types/node": "^20.10.5",
     "esbuild-plugin-file-path-extensions": "^2.0.0",
     "prettier": "^3.0.3",
@@ -55,6 +55,6 @@
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3",
-    "viem": "^2.0.10"
+    "viem": "^2.1.1"
   }
 }
