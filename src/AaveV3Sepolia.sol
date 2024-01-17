@@ -72,6 +72,9 @@ library AaveV3Sepolia {
 
   // https://sepolia.etherscan.io/address/0xd210dFB43B694430B8d31762B5199e30c31266C8
   address internal constant STATIC_A_TOKEN_FACTORY = 0xd210dFB43B694430B8d31762B5199e30c31266C8;
+
+  // https://sepolia.etherscan.io/address/0xc4bF5CbDaBE595361438F8c6a187bDc330539c60
+  address internal constant GHO_TOKEN = 0xc4bF5CbDaBE595361438F8c6a187bDc330539c60;
 }
 
 library AaveV3SepoliaAssets {
