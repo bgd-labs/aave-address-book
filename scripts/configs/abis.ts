@@ -1,6 +1,5 @@
-import {SAFETY_MODULE} from '../generator/safetyModuleGenerator';
 import {governanceConfigMainnet} from './governance/ethereum';
-import {mainnetProtoV2Pool, mainnetProtoV3Pool} from './pools/ethereum';
+import {mainnetProtoV3Pool} from './pools/ethereum';
 
 export const ABI_INTERFACES = [
   'IAaveGovernanceV2',

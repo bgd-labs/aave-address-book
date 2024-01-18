@@ -83,4 +83,5 @@ export {IGovernanceDataHelper_ABI} from './abis/IGovernanceDataHelper';
 export {IMetaDelegateHelper_ABI} from './abis/IMetaDelegateHelper';
 export {IVotingMachineDataHelper_ABI} from './abis/IVotingMachineDataHelper';
 export {IUiPoolDataProvider_ABI} from './abis/IUiPoolDataProvider';
+export {IStakeToken_ABI} from './abis/IStakeToken';
 export * as AaveV3Harmony from './AaveV3Harmony';
