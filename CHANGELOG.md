@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.16.0](https://github.com/bgd-labs/aave-address-book/compare/v2.15.2...v2.16.0) (2024-01-18)
+
+
+### Features
+
+* Add GHO token address to Aave V3 Sepolia Pool and Arbitrum Sepolia ([#326](https://github.com/bgd-labs/aave-address-book/issues/326)) ([2e2a694](https://github.com/bgd-labs/aave-address-book/commit/2e2a69463e6c0fb9cb878afe5fb239186169f0ec))
+* add stk GGHO ([#328](https://github.com/bgd-labs/aave-address-book/issues/328)) ([3a887dd](https://github.com/bgd-labs/aave-address-book/commit/3a887dd4e39cd04b34b61856f696959e02c2fa0a))
+
 ## [2.15.2](https://github.com/bgd-labs/aave-address-book/compare/v2.15.1...v2.15.2) (2024-01-15)
 
 
