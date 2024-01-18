@@ -1,3 +1,4 @@
+import {SAFETY_MODULE} from '../generator/safetyModuleGenerator';
 import {governanceConfigMainnet} from './governance/ethereum';
 import {mainnetProtoV2Pool, mainnetProtoV3Pool} from './pools/ethereum';
 
@@ -44,5 +45,9 @@ export const DOWNLOAD_ABI_INTERFACES = [
   {
     address: mainnetProtoV3Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
     name: 'IUiPoolDataProvider',
+  },
+  {
+    address: '0x50f9d4e28309303f0cdcac8af0b569e8b75ab857',
+    name: 'IStakeToken',
   },
 ];
