@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.17.0](https://github.com/bgd-labs/aave-address-book/compare/v2.16.0...v2.17.0) (2024-01-18)
+
+
+### Features
+
+* add stk AAVE wstETH BPTv2 ([#330](https://github.com/bgd-labs/aave-address-book/issues/330)) ([79b1847](https://github.com/bgd-labs/aave-address-book/commit/79b18475bc2375782353916c9c4084861e67fba3))
+
 ## [2.16.0](https://github.com/bgd-labs/aave-address-book/compare/v2.15.2...v2.16.0) (2024-01-18)
 
 
