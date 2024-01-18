@@ -1,3 +1,4 @@
+import {SAFETY_MODULE} from '../generator/safetyModuleGenerator';
 import {governanceConfigMainnet} from './governance/ethereum';
 import {mainnetProtoV2Pool, mainnetProtoV3Pool} from './pools/ethereum';
 
@@ -44,5 +45,9 @@ export const DOWNLOAD_ABI_INTERFACES = [
   {
     address: mainnetProtoV3Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
     name: 'IUiPoolDataProvider',
+  },
+  {
+    address: SAFETY_MODULE.STK_GHO,
+    name: 'IAggregatedStakeToken',
   },
 ];

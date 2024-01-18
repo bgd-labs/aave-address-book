@@ -8,7 +8,7 @@ import {
 } from './utils';
 import {ChainId} from '@bgd-labs/js-utils';
 
-const SAFETY_MODULE = {
+export const SAFETY_MODULE = {
   STK_AAVE: '0x4da27a545c0c5B758a6BA100e3a049001de870f5',
   STK_ABPT: '0xa1116930326D21fB917d5A27F1E9943A9595fb47',
   STK_ABPT_ORACLE: '0x209Ad99bd808221293d03827B86cC544bcA0023b',
