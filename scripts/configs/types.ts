@@ -59,7 +59,6 @@ export interface PoolConfig {
     STATIC_A_TOKEN_FACTORY?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
     FREEZING_STEWARD?: Hex;
-    GHO_TOKEN?: Hex;
     UI_GHO_DATA_PROVIDER?: Hex;
     RATES_FACTORY?: Hex;
     PERMISSION_MANAGER?: Hex;
@@ -100,5 +99,7 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     CREATE_3_FACTORY?: Hex;
     PROTOCOL_GUARDIAN?: Hex;
     AAVE_MERKLE_DISTRIBUTOR?: Hex;
+    GHO_TOKEN?: Hex;
+    GHO_FLASHMINTER_FACILITATOR?: Hex;
   } & T;
 }

@@ -5,4 +5,10 @@ export const TRANSPARENT_PROXY_FACTORY = '0x3Bad08c7b17D77cE12A2e1438Db2353b58F7
 // https://sepolia.etherscan.io/address/0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7
 export const PROXY_ADMIN = '0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7';
 
+// https://sepolia.etherscan.io/address/0xc4bF5CbDaBE595361438F8c6a187bDc330539c60
+export const GHO_TOKEN = '0xc4bF5CbDaBE595361438F8c6a187bDc330539c60';
+
+// https://sepolia.etherscan.io/address/0xB5d0ef1548D9C70d3E7a96cA67A2d7EbC5b1173E
+export const GHO_FLASHMINTER_FACILITATOR = '0xB5d0ef1548D9C70d3E7a96cA67A2d7EbC5b1173E';
+
 export const CHAIN_ID = 11155111;
