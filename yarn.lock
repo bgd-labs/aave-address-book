@@ -7,11 +7,12 @@
   resolved "https://registry.yarnpkg.com/@adraffy/ens-normalize/-/ens-normalize-1.10.0.tgz#d2a39395c587e092d77cbbc80acf956a54f38bf7"
   integrity sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==
 
-"@bgd-labs/js-utils@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.0.6.tgz#45245ada271541aa0f5a70f389f1471182bea42b"
-  integrity sha512-aS1/wJdIvqhs9CPo6juEGyluQw9+k0m3HMQvLKpjyUrlqHHvN9mr2szQOEZhLzHFdhghOQHS9+KWvYnwsDv17A==
+"@bgd-labs/js-utils@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.1.0.tgz#1fe9c995becb7497a6f8ec3691f87945a747b540"
+  integrity sha512-FYEt/+33HEubu0jACTOY4pqcQP3j74NGQAZe5/oD00PZCiLPMYf19zM5Mgws05r+IpE2FEb0ShMMVZRYcXwtcQ==
   dependencies:
+    "@supercharge/promise-pool" "^3.1.0"
     bs58 "^5.0.0"
     gray-matter "^4.0.3"
     tsx "^4.4.0"
@@ -294,6 +295,11 @@
   integrity sha512-PdhRFNhbTtu3x8Axm0uYpqOy/lODYQK+MlYSgqIsq2L8SFYEHJPHNUiOTAJbDGzNjjr1/n9AcIayxafR/fWmYw==
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
+
+"@supercharge/promise-pool@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@supercharge/promise-pool/-/promise-pool-3.1.0.tgz#308b9f4d4bf1d607695f916d9454a3556cd4c2b4"
+  integrity sha512-gB3NukbIcYzRtPoE6dx9svQYPodxvnfQlaaQd8N/z87E6WaMfRE7o5HwB+LZ+KeM0nsNAq1n4TmBtfz1VCUR+Q==
 
 "@types/node@^20.10.5":
   version "20.10.5"
@@ -1031,10 +1037,10 @@ undici-types@~5.26.4:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
-viem@^2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.0.10.tgz#a3671e8a70d9f665259b7b0f1575d76db6b054e2"
-  integrity sha512-ncdvXJ0v8Qc83qQaPzPG7pTr7gbg9hRUCNL7n/1b5ZFE17YIeQVtGTx6zqg4zdjTXlTKPrecKvqeKUUjKrmnYg==
+viem@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.1.1.tgz#8ab73c84d66369e80b9090626a0a8010d681e2d4"
+  integrity sha512-gJiwYceD7Dsjioglr+85GQS3u5Gp9XGG8oJqGsauBaEPFlkmbRx7cxD2Q5RZXFToVvEbarOWtITZtGHBsGv4MQ==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"

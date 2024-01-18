@@ -14,4 +14,7 @@ library AaveSafetyModule {
 
   // https://etherscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
   address internal constant STK_ABPT_V2_ORACLE = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
+
+  // https://etherscan.io/address/0x1a88Df1cFe15Af22B3c4c783D4e6F7F9e0C1885d
+  address internal constant STK_GHO = 0x1a88Df1cFe15Af22B3c4c783D4e6F7F9e0C1885d;
 }
