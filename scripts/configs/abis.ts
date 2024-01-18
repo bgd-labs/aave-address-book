@@ -47,7 +47,7 @@ export const DOWNLOAD_ABI_INTERFACES = [
     name: 'IUiPoolDataProvider',
   },
   {
-    address: SAFETY_MODULE.STK_GHO,
-    name: 'IAggregatedStakeToken',
+    address: '0x50f9d4e28309303f0cdcac8af0b569e8b75ab857',
+    name: 'IStakeToken',
   },
 ];
