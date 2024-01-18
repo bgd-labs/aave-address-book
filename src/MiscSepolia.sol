@@ -8,4 +8,11 @@ library MiscSepolia {
 
   // https://sepolia.etherscan.io/address/0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7
   address internal constant PROXY_ADMIN = 0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7;
+
+  // https://sepolia.etherscan.io/address/0xc4bF5CbDaBE595361438F8c6a187bDc330539c60
+  address internal constant GHO_TOKEN = 0xc4bF5CbDaBE595361438F8c6a187bDc330539c60;
+
+  // https://sepolia.etherscan.io/address/0xB5d0ef1548D9C70d3E7a96cA67A2d7EbC5b1173E
+  address internal constant GHO_FLASHMINTER_FACILITATOR =
+    0xB5d0ef1548D9C70d3E7a96cA67A2d7EbC5b1173E;
 }

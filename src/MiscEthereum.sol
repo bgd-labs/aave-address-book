@@ -39,4 +39,11 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0xa88c6D90eAe942291325f9ae3c66f3563B93FE10
   address internal constant AAVE_MERKLE_DISTRIBUTOR = 0xa88c6D90eAe942291325f9ae3c66f3563B93FE10;
+
+  // https://etherscan.io/address/0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f
+  address internal constant GHO_TOKEN = 0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f;
+
+  // https://etherscan.io/address/0xb639D208Bcf0589D54FaC24E655C79EC529762B8
+  address internal constant GHO_FLASHMINTER_FACILITATOR =
+    0xb639D208Bcf0589D54FaC24E655C79EC529762B8;
 }

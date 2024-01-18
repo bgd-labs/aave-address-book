@@ -12,3 +12,12 @@ export const arbitrumAddresses: NetworkAddresses = {
     PROTOCOL_GUARDIAN: '0xbbd9f90699c1fa0d7a65870d241dd1f1217c96eb',
   },
 };
+
+
+export const arbitrumSepoliaAddresses: NetworkAddresses = {
+  name: 'ArbitrumSepolia',
+  chainId: ChainId.arbitrum_sepolia,
+  addresses: {
+    GHO_TOKEN: '0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810',
+  },
+};
