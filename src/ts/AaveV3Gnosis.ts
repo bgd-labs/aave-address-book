@@ -41,9 +41,6 @@ export const DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 = '0x06C35Cfd3FC61eC2aC437f0d0
 // https://blockscout.com/xdai/mainnet/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
 export const EMISSION_MANAGER = '0x41585C50524fb8c3899B43D7D797d9486AAc94DB';
 
-// https://blockscout.com/xdai/mainnet/address/0xab923C4BD40eab9824C0b86FD8562eEcb933b56a
-export const L2_ENCODER = '0xab923C4BD40eab9824C0b86FD8562eEcb933b56a';
-
 // https://blockscout.com/xdai/mainnet/address/0x3238FC1d642b60F41a35f62570237656C85F4744
 export const CONFIG_ENGINE = '0x3238FC1d642b60F41a35f62570237656C85F4744';
 

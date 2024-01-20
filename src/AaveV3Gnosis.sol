@@ -55,9 +55,6 @@ library AaveV3Gnosis {
   // https://blockscout.com/xdai/mainnet/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
   address internal constant EMISSION_MANAGER = 0x41585C50524fb8c3899B43D7D797d9486AAc94DB;
 
-  // https://blockscout.com/xdai/mainnet/address/0xab923C4BD40eab9824C0b86FD8562eEcb933b56a
-  address internal constant L2_ENCODER = 0xab923C4BD40eab9824C0b86FD8562eEcb933b56a;
-
   // https://blockscout.com/xdai/mainnet/address/0x3238FC1d642b60F41a35f62570237656C85F4744
   address internal constant CONFIG_ENGINE = 0x3238FC1d642b60F41a35f62570237656C85F4744;
 
