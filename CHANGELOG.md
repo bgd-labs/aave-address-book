@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.18.0](https://github.com/bgd-labs/aave-address-book/compare/v2.17.0...v2.18.0) (2024-01-22)
+
+
+### Features
+
+* generate new abis ([#332](https://github.com/bgd-labs/aave-address-book/issues/332)) ([f747345](https://github.com/bgd-labs/aave-address-book/commit/f747345eba0b39a4d8e4aa045b6586d10f1e2446))
+
+
+### Bug Fixes
+
+* scroll addresses ([#336](https://github.com/bgd-labs/aave-address-book/issues/336)) ([f2c544a](https://github.com/bgd-labs/aave-address-book/commit/f2c544a8bfac4d534ce42d93524bdae4eca1119f))
+
 ## [2.17.0](https://github.com/bgd-labs/aave-address-book/compare/v2.16.0...v2.17.0) (2024-01-18)
 
 
