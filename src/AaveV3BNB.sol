@@ -55,9 +55,6 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85
   address internal constant EMISSION_MANAGER = 0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85;
 
-  // https://bscscan.com/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
-  address internal constant L2_ENCODER = 0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
-
   // https://bscscan.com/address/0x971F1C94b139AdEdedA729DA636e2B0C433Ff595
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x971F1C94b139AdEdedA729DA636e2B0C433Ff595;
 

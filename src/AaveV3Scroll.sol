@@ -6,85 +6,85 @@ import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolData
 import {ICollector} from './common/ICollector.sol';
 
 library AaveV3Scroll {
-  // https://scrollscan.com/address/0xdc5D225Df17df184d11015B91C4A10cd7834e2aC
+  // https://scrollscan.com/address/0x69850D0B276776781C063771b161bd8894BCdD04
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-    IPoolAddressesProvider(0xdc5D225Df17df184d11015B91C4A10cd7834e2aC);
+    IPoolAddressesProvider(0x69850D0B276776781C063771b161bd8894BCdD04);
 
-  // https://scrollscan.com/address/0xe37405957E371D07A1086a02ae33Ae443d4574F9
-  IPool internal constant POOL = IPool(0xe37405957E371D07A1086a02ae33Ae443d4574F9);
+  // https://scrollscan.com/address/0x11fCfe756c05AD438e312a7fd934381537D3cFfe
+  IPool internal constant POOL = IPool(0x11fCfe756c05AD438e312a7fd934381537D3cFfe);
 
-  // https://scrollscan.com/address/0x81b161773CE43781A3E67d71f652E0E22f21e170
+  // https://scrollscan.com/address/0x32BCab42a2bb5AC577D24b425D46d8b8e0Df9b7f
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
-    IPoolConfigurator(0x81b161773CE43781A3E67d71f652E0E22f21e170);
+    IPoolConfigurator(0x32BCab42a2bb5AC577D24b425D46d8b8e0Df9b7f);
 
-  // https://scrollscan.com/address/0xD936362a1960ECE6c99a89F0a6f1104f0873826A
-  IAaveOracle internal constant ORACLE = IAaveOracle(0xD936362a1960ECE6c99a89F0a6f1104f0873826A);
+  // https://scrollscan.com/address/0x04421D8C506E2fA2371a08EfAaBf791F624054F3
+  IAaveOracle internal constant ORACLE = IAaveOracle(0x04421D8C506E2fA2371a08EfAaBf791F624054F3);
 
   // https://scrollscan.com/address/0x0000000000000000000000000000000000000000
   address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
-  // https://scrollscan.com/address/0xa411Accec7000c52feE9bFeDaDc53E1CEF72d6d4
+  // https://scrollscan.com/address/0xa99F4E69acF23C6838DE90dD1B5c02EA928A53ee
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xa411Accec7000c52feE9bFeDaDc53E1CEF72d6d4);
+    IPoolDataProvider(0xa99F4E69acF23C6838DE90dD1B5c02EA928A53ee);
 
-  // https://scrollscan.com/address/0xAF4646B0131af8fc0DC435AF7F7d303Ac131E072
+  // https://scrollscan.com/address/0x7633F981D87dC6307227de9383D2ce7243158081
   IACLManager internal constant ACL_MANAGER =
-    IACLManager(0xAF4646B0131af8fc0DC435AF7F7d303Ac131E072);
+    IACLManager(0x7633F981D87dC6307227de9383D2ce7243158081);
 
   // https://scrollscan.com/address/0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24
   address internal constant ACL_ADMIN = 0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24;
 
-  // https://scrollscan.com/address/0x83a9EFE0485e7C227F29fe376132EfF746B45E96
-  ICollector internal constant COLLECTOR = ICollector(0x83a9EFE0485e7C227F29fe376132EfF746B45E96);
+  // https://scrollscan.com/address/0x90eB541e1a431D8a30ED85A77675D1F001128cb5
+  ICollector internal constant COLLECTOR = ICollector(0x90eB541e1a431D8a30ED85A77675D1F001128cb5);
 
-  // https://scrollscan.com/address/0xB972ABEdB6047e0EfcfE1261c10F1a93C4daE29F
+  // https://scrollscan.com/address/0xa3f3100C4f1D0624DB9DB97b40C13885Ce297799
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0xB972ABEdB6047e0EfcfE1261c10F1a93C4daE29F;
+    0xa3f3100C4f1D0624DB9DB97b40C13885Ce297799;
 
-  // https://scrollscan.com/address/0xA9E3fFb25C369e44862DD3e87Be4420abb879965
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xA9E3fFb25C369e44862DD3e87Be4420abb879965;
+  // https://scrollscan.com/address/0x92EDe4ABd9df4Bfb49b4d723e4c932e35c47C54C
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x92EDe4ABd9df4Bfb49b4d723e4c932e35c47C54C;
 
-  // https://scrollscan.com/address/0x95eeA7A0b16C8ee3A923D3F5ebe6d77C0332084c
+  // https://scrollscan.com/address/0x49bA16C08130FF8cFADE263B49387A8555bc057B
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x95eeA7A0b16C8ee3A923D3F5ebe6d77C0332084c;
+    0x49bA16C08130FF8cFADE263B49387A8555bc057B;
 
-  // https://scrollscan.com/address/0x07c319CaCAcF9422fA18f3e7389A0BE1B64cAB86
+  // https://scrollscan.com/address/0x8Ff5f08EDB2E5e1A51bd14d0494320bdB436a149
   address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x07c319CaCAcF9422fA18f3e7389A0BE1B64cAB86;
+    0x8Ff5f08EDB2E5e1A51bd14d0494320bdB436a149;
 
-  // https://scrollscan.com/address/0x7417cB07350Cc50ad5d461648cA55E2405190887
-  address internal constant EMISSION_MANAGER = 0x7417cB07350Cc50ad5d461648cA55E2405190887;
+  // https://scrollscan.com/address/0x6091546836DAe0487A50E300da3F237727441D90
+  address internal constant EMISSION_MANAGER = 0x6091546836DAe0487A50E300da3F237727441D90;
 
-  // https://scrollscan.com/address/0x0ffE481FBF0AE2282A5E1f701fab266aF487A97D
-  address internal constant L2_ENCODER = 0x0ffE481FBF0AE2282A5E1f701fab266aF487A97D;
+  // https://scrollscan.com/address/0x8714E5ED2d8edD4E88eFf66637C3FE8eCf2B8C40
+  address internal constant L2_ENCODER = 0x8714E5ED2d8edD4E88eFf66637C3FE8eCf2B8C40;
 
-  // https://scrollscan.com/address/0x36a92f2373400050656256B03Fa189145b708921
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x36a92f2373400050656256B03Fa189145b708921;
+  // https://scrollscan.com/address/0xc4dcA550EF04FD0f8AbD4c384575Fb8a8123054e
+  address internal constant CAPS_PLUS_RISK_STEWARD = 0xc4dcA550EF04FD0f8AbD4c384575Fb8a8123054e;
 
-  // https://scrollscan.com/address/0xCC3958a77c001a5608768537F628cA3b0A2A9386
-  address internal constant FREEZING_STEWARD = 0xCC3958a77c001a5608768537F628cA3b0A2A9386;
+  // https://scrollscan.com/address/0xc68D0C511076283075bD5cc9aA61E43673135f37
+  address internal constant FREEZING_STEWARD = 0xc68D0C511076283075bD5cc9aA61E43673135f37;
 
-  // https://scrollscan.com/address/0x22913D4E21D44EF7662B118A6540450e25fE09a9
-  address internal constant CONFIG_ENGINE = 0x22913D4E21D44EF7662B118A6540450e25fE09a9;
+  // https://scrollscan.com/address/0x9CBC05104c3ff7EC0885770911a0828C40fd0a32
+  address internal constant CONFIG_ENGINE = 0x9CBC05104c3ff7EC0885770911a0828C40fd0a32;
 
-  // https://scrollscan.com/address/0xb0633e01310a09C1Ee71a96c057DcF9c13fd6F62
+  // https://scrollscan.com/address/0xFBedc64AeE24921cb43004312B9eF367a4162b57
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
-    0xb0633e01310a09C1Ee71a96c057DcF9c13fd6F62;
+    0xFBedc64AeE24921cb43004312B9eF367a4162b57;
 
-  // https://scrollscan.com/address/0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe
-  address internal constant RATES_FACTORY = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
+  // https://scrollscan.com/address/0xe48fb34452FaE3Cd5d906F748490FBE16c3Ce31b
+  address internal constant RATES_FACTORY = 0xe48fb34452FaE3Cd5d906F748490FBE16c3Ce31b;
 
-  // https://scrollscan.com/address/0x9E7DF170E44093d6738057157CA048794B02555d
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x9E7DF170E44093d6738057157CA048794B02555d;
+  // https://scrollscan.com/address/0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07;
 
-  // https://scrollscan.com/address/0x29CF7aC4Fc122085c0D4DE8894f878F0b141F799
-  address internal constant UI_POOL_DATA_PROVIDER = 0x29CF7aC4Fc122085c0D4DE8894f878F0b141F799;
+  // https://scrollscan.com/address/0x639c4ae31A02D54d66A9c696c63404BCa8B2734C
+  address internal constant UI_POOL_DATA_PROVIDER = 0x639c4ae31A02D54d66A9c696c63404BCa8B2734C;
 
-  // https://scrollscan.com/address/0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C
-  address internal constant WALLET_BALANCE_PROVIDER = 0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C;
+  // https://scrollscan.com/address/0xE51642875Af07Fea1B03d821E41a9DB24bC4447E
+  address internal constant WALLET_BALANCE_PROVIDER = 0xE51642875Af07Fea1B03d821E41a9DB24bC4447E;
 
-  // https://scrollscan.com/address/0x93c597e5229f76679d7646cC9161B59Cc0DE78B9
-  address internal constant WETH_GATEWAY = 0x93c597e5229f76679d7646cC9161B59Cc0DE78B9;
+  // https://scrollscan.com/address/0xFF75A4B698E3Ec95E608ac0f22A03B8368E05F5D
+  address internal constant WETH_GATEWAY = 0xFF75A4B698E3Ec95E608ac0f22A03B8368E05F5D;
 }
 
 library AaveV3ScrollAssets {}
