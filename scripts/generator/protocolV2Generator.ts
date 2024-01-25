@@ -1,4 +1,4 @@
-import {Hex, PublicClient, getContract} from 'viem';
+import {Hex, Client, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
@@ -34,7 +34,7 @@ export interface PoolV2Addresses {
 }
 
 async function getAdditionalTokenInfo(
-  client: PublicClient,
+  client: Client,
   pool: Hex,
   reservesData: PoolV2Addresses['reservesData'],
 ): Promise<{
@@ -75,7 +75,7 @@ async function getAdditionalTokenInfo(
 }
 
 export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addresses> {
-  const client = CHAIN_ID_CLIENT_MAP[pool.chainId] as PublicClient;
+  const client = CHAIN_ID_CLIENT_MAP[pool.chainId];
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
     abi: ADDRESS_PROVIDER_V2_ABI,

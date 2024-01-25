@@ -36,7 +36,10 @@ export function generateSafetyModule() {
   fs.writeFileSync(
     `./src/ts/AaveSafetyModule.ts`,
     prefixWithGeneratedWarning(
-      generateJsConstants({chainId: ChainId.mainnet, addresses: SAFETY_MODULE}).join('\n'),
+      generateJsConstants({
+        chainId: ChainId.mainnet,
+        addresses: {...SAFETY_MODULE, CHAIN_ID: {value: ChainId.mainnet, type: 'uint256'}},
+      }).join('\n'),
     ),
   );
 
