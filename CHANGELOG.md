@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.18.1](https://github.com/bgd-labs/aave-address-book/compare/v2.18.0...v2.18.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* add chainId to js sm export ([#338](https://github.com/bgd-labs/aave-address-book/issues/338)) ([988ec45](https://github.com/bgd-labs/aave-address-book/commit/988ec4555be7701e63a28229cbd4054a07563c71))
+
 ## [2.18.0](https://github.com/bgd-labs/aave-address-book/compare/v2.17.0...v2.18.0) (2024-01-22)
 
 
