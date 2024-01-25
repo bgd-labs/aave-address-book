@@ -1,5 +1,5 @@
 import {writeFileSync} from 'fs';
-import {Hex, PublicClient, getContract, Address} from 'viem';
+import {Hex, getContract, Address, Client} from 'viem';
 import {Addresses, GovernanceConfig} from '../configs/types';
 import {
   generateJsConstants,
@@ -20,7 +20,7 @@ type ExecutorsV3 = {
 };
 
 async function fetchV3ExecutorAddresses(
-  client: PublicClient,
+  client: Client,
   payloadsController: Hex,
 ): Promise<ExecutorsV3> {
   const payloadsControllerContract = getContract({
@@ -39,7 +39,7 @@ async function fetchV3ExecutorAddresses(
   };
 }
 
-async function getVotingStrategyAndWarehouse(votingMachine: Address, client: PublicClient) {
+async function getVotingStrategyAndWarehouse(votingMachine: Address, client: Client) {
   const votingMachineContract = getContract({
     address: votingMachine,
     abi: IVotingMachineWithProofs_ABI,
@@ -59,7 +59,7 @@ async function getVotingStrategyAndWarehouse(votingMachine: Address, client: Pub
   };
 }
 
-function getGovernancePowerStrategy(governance: Address, client: PublicClient) {
+function getGovernancePowerStrategy(governance: Address, client: Client) {
   if (!governance) throw new Error('trying to fetch power strategy from address 0');
 
   const governanceContract = getContract({

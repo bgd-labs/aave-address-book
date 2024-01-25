@@ -1,4 +1,4 @@
-import {Hex, PublicClient, getContract, zeroAddress} from 'viem';
+import {Hex, Client, getContract, zeroAddress} from 'viem';
 import {AddressInfo, Addresses, PoolConfig, ReserveData} from '../configs/types';
 import {ADDRESS_PROVIDER_V3_ABI} from '../abi/address_provider_v3_abi';
 import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
@@ -6,7 +6,7 @@ import {STATIC_A_TOKEN_FACTORY_ABI} from '../abi/static_a_token_factory_abi';
 import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
 import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
 import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
-import {CHAIN_ID_CLIENT_MAP, ChainId} from '@bgd-labs/js-utils';
+import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
   addressOrZero,
@@ -41,7 +41,7 @@ export interface PoolV3Addresses {
 }
 
 async function getAdditionalTokenInfo(
-  client: PublicClient,
+  client: Client,
   pool: PoolConfig,
   reservesData: PoolV3Addresses['reservesData'],
 ): Promise<{
@@ -115,7 +115,7 @@ async function getAdditionalTokenInfo(
 export async function getPoolV3Addresses(
   pool: PoolConfig,
 ): Promise<PoolV3Addresses & {eModes: Map<number, string>}> {
-  const client: PublicClient = CHAIN_ID_CLIENT_MAP[pool.chainId];
+  const client = CHAIN_ID_CLIENT_MAP[pool.chainId];
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
     abi: ADDRESS_PROVIDER_V3_ABI,
@@ -231,7 +231,7 @@ export async function getPoolV3Addresses(
   }
 }
 
-function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryName: string) {
+function generateEmodes(chainId: number, eModes: Map<number, string>, libraryName: string) {
   const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
   const formatted = sorted.reduce((acc, [value, label]) => {
     acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'NONE'}`] = {

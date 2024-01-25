@@ -1,8 +1,9 @@
-import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
+import {Client, Hex, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
-import {CHAIN_ID_CLIENT_MAP, ChainId} from '@bgd-labs/js-utils';
+import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
+import {getStorageAt} from 'viem/actions';
 
-function getExplorerLink(chainId: ChainId, address: Hex) {
+function getExplorerLink(chainId: number, address: Hex) {
   const client = CHAIN_ID_CLIENT_MAP[chainId];
   return `${client.chain?.blockExplorers?.default.url}/address/${getAddress(address)}`;
 }
@@ -25,7 +26,7 @@ export function wrapIntoSolidityLibrary(code: string[], libraryName: string) {
 }
 
 export function addressInfoToSolidityLibraryConstant(
-  chainId: ChainId,
+  chainId: number,
   key: string,
   entry: AddressInfo,
 ) {
@@ -52,7 +53,7 @@ export function generateSolidityConstants({
   chainId,
   addresses,
 }: {
-  chainId: ChainId;
+  chainId: number;
   addresses: Addresses;
 }) {
   return Object.keys(addresses).map((key) =>
@@ -60,7 +61,7 @@ export function generateSolidityConstants({
   );
 }
 
-export function addressToJsConstant(chainId: ChainId, key: string, entry: AddressInfo) {
+export function addressToJsConstant(chainId: number, key: string, entry: AddressInfo) {
   if (typeof entry === 'object') {
     if (entry.type === 'uint256') {
       return `export const ${key} = ${entry.value};\n`;
@@ -75,13 +76,7 @@ export function addressToJsConstant(chainId: ChainId, key: string, entry: Addres
   return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';\n`;
 }
 
-export function generateJsConstants({
-  chainId,
-  addresses,
-}: {
-  chainId: ChainId;
-  addresses: Addresses;
-}) {
+export function generateJsConstants({chainId, addresses}: {chainId: number; addresses: Addresses}) {
   return Object.keys(addresses).map((key) => addressToJsConstant(chainId, key, addresses[key]));
 }
 
@@ -100,8 +95,8 @@ export const bytes32toAddress = (bytes32: Hex) => {
   return getAddress(`0x${bytes32.slice(26)}`);
 };
 
-export const getImplementationStorageSlot = async (provider: PublicClient, address: Hex) => {
-  return (await provider.getStorageAt({
+export const getImplementationStorageSlot = async (client: Client, address: Hex) => {
+  return (await getStorageAt(client, {
     address,
     slot: '0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc',
   })) as Hex;
