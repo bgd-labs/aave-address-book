@@ -299,6 +299,9 @@ library AaveV3EthereumAssets {
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0xc77576b02D74BBF9CdC26F3B86FD09d134416df2;
 
+  // https://etherscan.io/address/0x862c57d48becB45583AEbA3f489696D22466Ca1b
+  address internal constant USDT_STATA_TOKEN = 0x862c57d48becB45583AEbA3f489696D22466Ca1b;
+
   // https://etherscan.io/address/0xae78736Cd615f374D3085123A210448E74Fc6393
   address internal constant rETH_UNDERLYING = 0xae78736Cd615f374D3085123A210448E74Fc6393;
 
