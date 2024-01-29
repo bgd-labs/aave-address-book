@@ -8,6 +8,9 @@ export const ethereumAddresses: NetworkAddresses<{
   PROXY_ADMIN_LONG: Hex;
   AAVE_SWAPPER: Hex;
   AAVE_POL_ETH_BRIDGE: Hex;
+  GSM_REGISTRY: Hex;
+  GSM_USDC: Hex;
+  GSM_USDT: Hex;
 }> = {
   name: 'Ethereum',
   chainId: ChainId.mainnet,
@@ -28,6 +31,10 @@ export const ethereumAddresses: NetworkAddresses<{
     AAVE_MERKLE_DISTRIBUTOR: '0xa88c6D90eAe942291325f9ae3c66f3563B93FE10',
     GHO_TOKEN: '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
     GHO_FLASHMINTER_FACILITATOR: '0xb639D208Bcf0589D54FaC24E655C79EC529762B8',
+    // TODO: perhaps makes sense to create a generator for GSM to automatically pull GSMs, for now let's see how this evolves
+    GSM_REGISTRY: '0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578',
+    GSM_USDC: '0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578',
+    GSM_USDT: '0x686F8D21520f4ecEc7ba577be08354F4d1EB8262',
   },
 };
 
