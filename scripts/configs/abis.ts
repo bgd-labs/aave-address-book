@@ -50,4 +50,16 @@ export const DOWNLOAD_ABI_INTERFACES = [
     address: '0x50f9d4e28309303f0cdcac8af0b569e8b75ab857',
     name: 'IStakeToken',
   },
+  {
+    address: '0x5D4Aa78B08Bc7C530e21bf7447988b1Be7991322',
+    name: 'IAaveToken',
+  },
+  {
+    address: '0x0fE58FE1CaA69951dC924A8c222bE19013B89476',
+    name: 'IStkAaveToken',
+  },
+  {
+    address: '0x366AE337897223AEa70e3EBe1862219386f20593',
+    name: 'ATokenWithDelegation',
+  },
 ];
