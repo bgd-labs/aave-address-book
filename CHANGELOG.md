@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.19.0](https://github.com/bgd-labs/aave-address-book/compare/v2.18.1...v2.19.0) (2024-01-30)
+
+
+### Features
+
+* add delegation abis ([#344](https://github.com/bgd-labs/aave-address-book/issues/344)) ([a282f3b](https://github.com/bgd-labs/aave-address-book/commit/a282f3b1706548894197473cc4d9dfbbc97fc5de))
+* gsm addresses ([#342](https://github.com/bgd-labs/aave-address-book/issues/342)) ([541f2ac](https://github.com/bgd-labs/aave-address-book/commit/541f2ac7f0406c55cf47cfc9152065a817647eba))
+
 ## [2.18.1](https://github.com/bgd-labs/aave-address-book/compare/v2.18.0...v2.18.1) (2024-01-25)
 
 
