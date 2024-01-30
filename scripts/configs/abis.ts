@@ -60,6 +60,6 @@ export const DOWNLOAD_ABI_INTERFACES = [
   },
   {
     address: '0x366AE337897223AEa70e3EBe1862219386f20593',
-    name: 'ATokenWithDelegation',
+    name: 'IATokenWithDelegation',
   },
 ];
