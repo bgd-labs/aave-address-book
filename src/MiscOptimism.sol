@@ -20,4 +20,10 @@ library MiscOptimism {
 
   // https://optimistic.etherscan.io/address/0x1685D81212580DD4cDA287616C2f6F4794927e18
   address internal constant AAVE_MERKLE_DISTRIBUTOR = 0x1685D81212580DD4cDA287616C2f6F4794927e18;
+
+  // https://optimistic.etherscan.io/address/0xe59EBa0D492cA53C6f46015EEa00517F2707dc77
+  address internal constant wstETH_stETH_AGGREGATOR = 0xe59EBa0D492cA53C6f46015EEa00517F2707dc77;
+
+  // https://optimistic.etherscan.io/address/0x22F3727be377781d1579B7C9222382b21c9d1a8f
+  address internal constant rETH_ETH_AGGREGATOR = 0x22F3727be377781d1579B7C9222382b21c9d1a8f;
 }
