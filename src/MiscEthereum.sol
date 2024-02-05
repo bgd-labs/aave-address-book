@@ -47,8 +47,8 @@ library MiscEthereum {
   address internal constant GHO_FLASHMINTER_FACILITATOR =
     0xb639D208Bcf0589D54FaC24E655C79EC529762B8;
 
-  // https://etherscan.io/address/0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578
-  address internal constant GSM_REGISTRY = 0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578;
+  // https://etherscan.io/address/0x167527DB01325408696326e3580cd8e55D99Dc1A
+  address internal constant GSM_REGISTRY = 0x167527DB01325408696326e3580cd8e55D99Dc1A;
 
   // https://etherscan.io/address/0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578
   address internal constant GSM_USDC = 0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578;
