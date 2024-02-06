@@ -108,20 +108,6 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant SAVINGS_DAI_TOKEN_WRAPPER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
-
-  // https://etherscan.io/address/0x430BEdcA5DfA6f94d1205Cb33AB4f008D0d9942a
-  address internal constant GSM_USDC_FIXED_PRICE_STRATEGY =
-    0x430BEdcA5DfA6f94d1205Cb33AB4f008D0d9942a;
-
-  // https://etherscan.io/address/0x4c707764cbFB4FFa078e169e6b8A6AdbE7526a2c
-  address internal constant GSM_USDT_FIXED_PRICE_STRATEGY =
-    0x4c707764cbFB4FFa078e169e6b8A6AdbE7526a2c;
-
-  // https://etherscan.io/address/0xef6beCa8D9543eC007bceA835aF768B58F730C1f
-  address internal constant GSM_USDC_ORACLESWAPFREEZER = 0xef6beCa8D9543eC007bceA835aF768B58F730C1f;
-
-  // https://etherscan.io/address/0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5
-  address internal constant GSM_USDT_ORACLESWAPFREEZER = 0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5;
 }
 
 library AaveV3EthereumAssets {
