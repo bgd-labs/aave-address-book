@@ -65,10 +65,10 @@ library MiscEthereum {
     0x4c707764cbFB4FFa078e169e6b8A6AdbE7526a2c;
 
   // https://etherscan.io/address/0xef6beCa8D9543eC007bceA835aF768B58F730C1f
-  address internal constant GSM_USDC_ORACLESWAPFREEZER = 0xef6beCa8D9543eC007bceA835aF768B58F730C1f;
+  address internal constant GSM_USDC_ORACLE_SWAP_FREEZER = 0xef6beCa8D9543eC007bceA835aF768B58F730C1f;
 
   // https://etherscan.io/address/0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5
-  address internal constant GSM_USDT_ORACLESWAPFREEZER = 0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5;
+  address internal constant GSM_USDT_ORACLE_SWAP_FREEZER = 0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5;
 
   // https://etherscan.io/address/0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5
   address internal constant GSM_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
