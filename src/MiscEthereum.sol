@@ -57,10 +57,10 @@ library MiscEthereum {
   address internal constant GSM_USDT = 0x686F8D21520f4ecEc7ba577be08354F4d1EB8262;
 
   // https://etherscan.io/address/0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5
-  address internal constant GSM_USDC_FIXED_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
+  address internal constant GSM_USDC_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
 
   // https://etherscan.io/address/0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5
-  address internal constant GSM_USDT_FIXED_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
+  address internal constant GSM_USDT_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
 
   // https://etherscan.io/address/0x430BEdcA5DfA6f94d1205Cb33AB4f008D0d9942a
   address internal constant GSM_USDC_PRICE_STRATEGY =

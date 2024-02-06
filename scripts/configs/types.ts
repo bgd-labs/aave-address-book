@@ -104,8 +104,8 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     GSM_REGISTRY?: Hex;
     GSM_USDC?: Hex;
     GSM_USDT?: Hex;
-    GSM_USDC_FIXED_FEE_STRATEGY?: Hex;
-    GSM_USDT_FIXED_FEE_STRATEGY?: Hex;
+    GSM_USDC_FEE_STRATEGY?: Hex;
+    GSM_USDT_FEE_STRATEGY?: Hex;
     GSM_USDC_PRICE_STRATEGY?: Hex;
     GSM_USDT_PRICE_STRATEGY?: Hex;
     GSM_USDC_ORACLE_SWAP_FREEZER?: Hex;
