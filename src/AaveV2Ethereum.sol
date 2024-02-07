@@ -635,9 +635,9 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x492575FDD11a0fCf2C6C719867890a7648d526eB
   address internal constant AMPL_ORACLE = 0x492575FDD11a0fCf2C6C719867890a7648d526eB;
 
-  // https://etherscan.io/address/0xB2D822cAdb9040F3164829BC34e41a93cA3E01e5
+  // https://etherscan.io/address/0xa324C768Bdd002b3387CE1c691A549268f63250b
   address internal constant AMPL_INTEREST_RATE_STRATEGY =
-    0xB2D822cAdb9040F3164829BC34e41a93cA3E01e5;
+    0xa324C768Bdd002b3387CE1c691A549268f63250b;
 
   // https://etherscan.io/address/0x8E870D67F660D95d5be530380D0eC0bd388289E1
   address internal constant USDP_UNDERLYING = 0x8E870D67F660D95d5be530380D0eC0bd388289E1;
