@@ -12,12 +12,12 @@ const addresses = Object.entries(_addresses).reduce((acc, [root, nested]) => {
   Object.keys(nested).map((key) => {
     if (typeof nested[key as keyof typeof nested] === "string") {
       const value = nested[key as keyof typeof nested];
-      if (!nested.CHAIN_ID) console.log(root);
+      if (!(nested as any).CHAIN_ID) console.log(root);
       acc.push({
         path: `${root} ${key}`,
         value: value,
-        link: `${CHAIN_ID_CLIENT_MAP[nested.CHAIN_ID]?.chain?.blockExplorers
-          ?.default.url}/address/${value}`,
+        link: `${CHAIN_ID_CLIENT_MAP[(nested as any).CHAIN_ID]?.chain
+          ?.blockExplorers?.default.url}/address/${value}`,
       });
     }
   });
