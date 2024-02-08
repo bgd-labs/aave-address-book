@@ -84,7 +84,7 @@ export async function generateTokenList(pools: TokenListParams) {
     }
   }
 
-  // if (cachedList.tokens.length === tokens.length) return;
+  if (cachedList.tokens.length === tokens.length) return;
   const tokenList: TokenList = {
     name: 'Aave token list',
     logoURI: 'ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1',
@@ -120,7 +120,7 @@ export async function generateTokenList(pools: TokenListParams) {
     version: {
       major: 3,
       minor: 0,
-      patch: cachedList.version?.patch ? cachedList.version.patch + 1 : 0,
+      patch: cachedList.version?.patch != undefined ? cachedList.version.patch + 1 : 0,
     },
     tokens,
   };
