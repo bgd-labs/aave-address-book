@@ -50,7 +50,6 @@ export async function generateTokenList(pools: TokenListParams) {
             address: token,
             client: CHAIN_ID_CLIENT_MAP[chainId],
           });
-          console.log(token, poolName);
           const [name, symbol] =
             token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
               ? ['Maker', 'MKR']
@@ -70,7 +69,7 @@ export async function generateTokenList(pools: TokenListParams) {
       await addToken(
         reserve.A_TOKEN,
         /V2/.test(poolName) ? [TAGS.aTokenV2, TAGS.aaveV2] : [TAGS.aTokenV3, TAGS.aaveV3],
-        {pool: poolName},
+        {pool: poolName, underlying: reserve.UNDERLYING},
       );
       if (reserve.STATA_TOKEN && reserve.STATA_TOKEN != zeroAddress)
         await addToken(
@@ -78,6 +77,8 @@ export async function generateTokenList(pools: TokenListParams) {
           [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.stataToken],
           {
             pool: poolName,
+            underlying: reserve.UNDERLYING,
+            underlyingAToken: reserve.A_TOKEN,
           },
         );
     }
