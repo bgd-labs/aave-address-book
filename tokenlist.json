@@ -1,0 +1,5916 @@
+{
+  "name": "Aave token list",
+  "logoURI": "ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1",
+  "keywords": ["audited", "verified", "aave"],
+  "tags": {
+    "underlying": {
+      "name": "underlyingAsset",
+      "description": "Tokens that are used as underlying assets in the Aave protocol"
+    },
+    "aaveV2": { "name": "Aave V2", "description": "Tokens related to aave v2" },
+    "aaveV3": { "name": "Aave V3", "description": "Tokens related to aave v3" },
+    "aTokenV2": {
+      "name": "aToken V2",
+      "description": "Tokens that earn interest on the Aave Protocol V2"
+    },
+    "aTokenV3": {
+      "name": "aToken V3",
+      "description": "Tokens that earn interest on the Aave Protocol V3"
+    },
+    "stataToken": {
+      "name": "static a token",
+      "description": "Tokens that are wrapped into a 4626 Vault"
+    }
+  },
+  "timestamp": "2024-02-08T11:37:09.039Z",
+  "version": { "major": 3, "minor": 0, "patch": 0 },
+  "tokens": [
+    {
+      "chainId": 1,
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xf9Fb4AD91812b704Ba883B11d2B576E890a6730A",
+      "name": "Aave AMM Market WETH",
+      "decimals": 18,
+      "symbol": "aAmmWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "name": "Dai Stablecoin",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x79bE75FFC64DD58e66787E4Eae470c8a1FD08ba4",
+      "name": "Aave AMM Market DAI",
+      "decimals": 18,
+      "symbol": "aAmmDAI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd24946147829DEaA935bE2aD85A3291dbf109c80",
+      "name": "Aave AMM Market USDC",
+      "decimals": 6,
+      "symbol": "aAmmUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x17a79792Fe6fE5C95dFE95Fe3fCEE3CAf4fE4Cb7",
+      "name": "Aave AMM Market USDT",
+      "decimals": 6,
+      "symbol": "aAmmUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "name": "Wrapped BTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x13B2f6928D7204328b0E8E4BCd0379aA06EA21FA",
+      "name": "Aave AMM Market WBTC",
+      "decimals": 8,
+      "symbol": "aAmmWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_DAI_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x9303EabC860a743aABcc3A1629014CaBcc3F8D36",
+      "name": "Aave AMM Market UniDAIWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniDAIWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_WBTC_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xc58F53A8adff2fB4eb16ED56635772075E2EE123",
+      "name": "Aave AMM Market UniWBTCWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniWBTCWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_AAVE_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xe59d2FF6995a926A574390824a657eEd36801E55",
+      "name": "Aave AMM Market UniAAVEWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniAAVEWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xB6909B960DbbE7392D405429eB2b3649752b4838",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_BAT_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xA1B0edF4460CC4d8bFAA18Ed871bFF15E5b57Eb4",
+      "name": "Aave AMM Market UniBATWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniBATWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_DAI_USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xE340B25fE32B1011616bb8EC495A4d503e322177",
+      "name": "Aave AMM Market UniDAIUSDC",
+      "decimals": 18,
+      "symbol": "aAmmUniDAIUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x3dA1313aE46132A397D90d95B1424A9A7e3e0fCE",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_CRV_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x0ea20e7fFB006d4Cfe84df2F72d8c7bD89247DB0",
+      "name": "Aave AMM Market UniCRVWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniCRVWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_LINK_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xb8db81B84d30E2387de0FF330420A4AAA6688134",
+      "name": "Aave AMM Market UniLINKWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniLINKWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xC2aDdA861F89bBB333c90c492cB837741916A225",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_MKR_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x370adc71f67f581158Dc56f539dF5F399128Ddf9",
+      "name": "Aave AMM Market UniMKRWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniMKRWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x8Bd1661Da98EBDd3BD080F0bE4e6d9bE8cE9858c",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_REN_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xA9e201A4e269d6cd5E9F0FcbcB78520cf815878B",
+      "name": "Aave AMM Market UniRENWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniRENWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x43AE24960e5534731Fc831386c07755A2dc33D47",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_SNX_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x38E491A71291CD43E8DE63b7253E482622184894",
+      "name": "Aave AMM Market UniSNXWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniSNXWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xd3d2E2692501A5c9Ca623199D38826e513033a17",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_UNI_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x3D26dcd840fCC8e4B2193AcE8A092e4a65832F9f",
+      "name": "Aave AMM Market UniUNIWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniUNIWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_USDC_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x391E86e2C002C70dEe155eAceB88F7A3c38f5976",
+      "name": "Aave AMM Market UniUSDCWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniUSDCWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x004375Dff511095CC5A197A54140a24eFEF3A416",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_WBTC_USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x2365a4890eD8965E564B7E2D27C38Ba67Fec4C6F",
+      "name": "Aave AMM Market UniWBTCUSDC",
+      "decimals": 18,
+      "symbol": "aAmmUniWBTCUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28",
+      "name": "Uniswap V2",
+      "decimals": 18,
+      "symbol": "UNI_YFI_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x5394794Be8b6eD5572FCd6b27103F46b5F390E8f",
+      "name": "Aave AMM Market UniYFIWETH",
+      "decimals": 18,
+      "symbol": "aAmmUniYFIWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x1efF8aF5D577060BA4ac8A29A13525bb0Ee2A3D5",
+      "name": "Balancer Pool Token",
+      "decimals": 18,
+      "symbol": "BPT_WBTC_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x358bD0d980E031E23ebA9AA793926857703783BD",
+      "name": "Aave AMM Market BptWBTCWETH",
+      "decimals": 18,
+      "symbol": "aAmmBptWBTCWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x59A19D8c652FA0284f44113D0ff9aBa70bd46fB4",
+      "name": "Balancer Pool Token",
+      "decimals": 18,
+      "symbol": "BPT_BAL_WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd109b2A304587569c84308c55465cd9fF0317bFB",
+      "name": "Aave AMM Market BptBALWETH",
+      "decimals": 18,
+      "symbol": "aAmmBptBALWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e",
+      "name": "Gelato Uniswap DAI/USDC LP",
+      "decimals": 18,
+      "symbol": "GUNI_DAI_USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd145c6ae8931ed5Bca9b5f5B7dA5991F5aB63B5c",
+      "name": "Aave AMM Market GUniDAIUSDC",
+      "decimals": 18,
+      "symbol": "aAmmGUniDAIUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xD2eeC91055F07fE24C9cCB25828ecfEFd4be0c41",
+      "name": "Gelato Uniswap USDC/USDT LP",
+      "decimals": 18,
+      "symbol": "GUNI_USDC_USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xCa5DFDABBfFD58cfD49A9f78Ca52eC8e0591a3C5",
+      "name": "Aave AMM Market GUniUSDCUSDT",
+      "decimals": 18,
+      "symbol": "aAmmGUniUSDCUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2EthereumAMM" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x3Ed3B47Dd13EC9a98b44e6204A523E766B225811",
+      "name": "Aave interest bearing USDT",
+      "decimals": 6,
+      "symbol": "aUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x9ff58f4fFB29fA2266Ab25e75e2A8b3503311656",
+      "name": "Aave interest bearing WBTC",
+      "decimals": 8,
+      "symbol": "aWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e",
+      "name": "Aave interest bearing WETH",
+      "decimals": 18,
+      "symbol": "aWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+      "name": "yearn.finance",
+      "decimals": 18,
+      "symbol": "YFI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x5165d24277cD063F5ac44Efd447B27025e888f37",
+      "name": "Aave interest bearing YFI",
+      "decimals": 18,
+      "symbol": "aYFI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
+      "name": "0x Protocol Token",
+      "decimals": 18,
+      "symbol": "ZRX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xDf7FF54aAcAcbFf42dfe29DD6144A69b629f8C9e",
+      "name": "Aave interest bearing ZRX",
+      "decimals": 18,
+      "symbol": "aZRX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+      "name": "Uniswap",
+      "decimals": 18,
+      "symbol": "UNI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xB9D7CB55f463405CDfBe4E90a6D2Df01C2B92BF1",
+      "name": "Aave interest bearing UNI",
+      "decimals": 18,
+      "symbol": "aUNI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+      "name": "Aave Token",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xFFC97d72E13E01096502Cb8Eb52dEe56f74DAD7B",
+      "name": "Aave interest bearing AAVE",
+      "decimals": 18,
+      "symbol": "aAAVE",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+      "name": "Basic Attention Token",
+      "decimals": 18,
+      "symbol": "BAT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x05Ec93c0365baAeAbF7AefFb0972ea7ECdD39CF1",
+      "name": "Aave interest bearing BAT",
+      "decimals": 18,
+      "symbol": "aBAT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
+      "name": "BUSD",
+      "decimals": 18,
+      "symbol": "BUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xA361718326c15715591c299427c62086F69923D9",
+      "name": "Aave interest bearing BUSD",
+      "decimals": 18,
+      "symbol": "aBUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x028171bCA77440897B824Ca71D1c56caC55b68A3",
+      "name": "Aave interest bearing DAI",
+      "decimals": 18,
+      "symbol": "aDAI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
+      "name": "Enjin Coin",
+      "decimals": 18,
+      "symbol": "ENJ",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xaC6Df26a590F08dcC95D5a4705ae8abbc88509Ef",
+      "name": "Aave interest bearing ENJ",
+      "decimals": 18,
+      "symbol": "aENJ",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200",
+      "name": "Kyber Network Crystal",
+      "decimals": 18,
+      "symbol": "KNC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x39C6b3e42d6A679d7D776778Fe880BC9487C2EDA",
+      "name": "Aave interest bearing KNC",
+      "decimals": 18,
+      "symbol": "aKNC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "name": "ChainLink Token",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xa06bC25B5805d5F8d82847D191Cb4Af5A3e873E0",
+      "name": "Aave interest bearing LINK",
+      "decimals": 18,
+      "symbol": "aLINK",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
+      "name": "Decentraland MANA",
+      "decimals": 18,
+      "symbol": "MANA",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xa685a61171bb30d4072B338c80Cb7b2c865c873E",
+      "name": "Aave interest bearing MANA",
+      "decimals": 18,
+      "symbol": "aMANA",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+      "name": "Maker",
+      "decimals": 18,
+      "symbol": "MKR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xc713e5E149D5D0715DcD1c156a020976e7E56B88",
+      "name": "Aave interest bearing MKR",
+      "decimals": 18,
+      "symbol": "aMKR",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x408e41876cCCDC0F92210600ef50372656052a38",
+      "name": "Republic Token",
+      "decimals": 18,
+      "symbol": "REN",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xCC12AbE4ff81c9378D670De1b57F8e0Dd228D77a",
+      "name": "Aave interest bearing REN",
+      "decimals": 18,
+      "symbol": "aREN",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
+      "name": "Synthetix Network Token",
+      "decimals": 18,
+      "symbol": "SNX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x35f6B052C598d933D69A4EEC4D04c73A191fE6c2",
+      "name": "Aave interest bearing SNX",
+      "decimals": 18,
+      "symbol": "aSNX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
+      "name": "Synth sUSD",
+      "decimals": 18,
+      "symbol": "sUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x6C5024Cd4F8A59110119C56f8933403A539555EB",
+      "name": "Aave interest bearing SUSD",
+      "decimals": 18,
+      "symbol": "aSUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x0000000000085d4780B73119b644AE5ecd22b376",
+      "name": "TrueUSD",
+      "decimals": 18,
+      "symbol": "TUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x101cc05f4A51C0319f570d5E146a8C625198e636",
+      "name": "Aave interest bearing TUSD",
+      "decimals": 18,
+      "symbol": "aTUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xBcca60bB61934080951369a648Fb03DF4F96263C",
+      "name": "Aave interest bearing USDC",
+      "decimals": 6,
+      "symbol": "aUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xD533a949740bb3306d119CC777fa900bA034cd52",
+      "name": "Curve DAO Token",
+      "decimals": 18,
+      "symbol": "CRV",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8dAE6Cb04688C62d939ed9B68d32Bc62e49970b1",
+      "name": "Aave interest bearing CRV",
+      "decimals": 18,
+      "symbol": "aCRV",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
+      "name": "Gemini dollar",
+      "decimals": 2,
+      "symbol": "GUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xD37EE7e4f452C6638c96536e68090De8cBcdb583",
+      "name": "Aave interest bearing GUSD",
+      "decimals": 2,
+      "symbol": "aGUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xba100000625a3754423978a60c9317c58a424e3D",
+      "name": "Balancer",
+      "decimals": 18,
+      "symbol": "BAL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x272F97b7a56a387aE942350bBC7Df5700f8a4576",
+      "name": "Aave interest bearing BAL",
+      "decimals": 18,
+      "symbol": "aBAL",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272",
+      "name": "SushiBar",
+      "decimals": 18,
+      "symbol": "xSUSHI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xF256CC7847E919FAc9B808cC216cAc87CCF2f47a",
+      "name": "Aave interest bearing XSUSHI",
+      "decimals": 18,
+      "symbol": "aXSUSHI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xD5147bc8e386d91Cc5DBE72099DAC6C9b99276F5",
+      "name": "renFIL",
+      "decimals": 18,
+      "symbol": "renFIL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x514cd6756CCBe28772d4Cb81bC3156BA9d1744aa",
+      "name": "Aave interest bearing RENFIL",
+      "decimals": 18,
+      "symbol": "aRENFIL",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919",
+      "name": "Rai Reflex Index",
+      "decimals": 18,
+      "symbol": "RAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xc9BC48c72154ef3e5425641a3c747242112a46AF",
+      "name": "Aave interest bearing RAI",
+      "decimals": 18,
+      "symbol": "aRAI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xD46bA6D942050d489DBd938a2C909A5d5039A161",
+      "name": "Ampleforth",
+      "decimals": 9,
+      "symbol": "AMPL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x1E6bb68Acec8fefBD87D192bE09bb274170a0548",
+      "name": "Aave interest bearing AMPL",
+      "decimals": 9,
+      "symbol": "aAMPL",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
+      "name": "Pax Dollar",
+      "decimals": 18,
+      "symbol": "USDP",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x2e8F4bdbE3d47d7d7DE490437AeA9915D930F1A3",
+      "name": "Aave interest bearing USDP",
+      "decimals": 18,
+      "symbol": "aUSDP",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
+      "name": "DefiPulse Index",
+      "decimals": 18,
+      "symbol": "DPI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x6F634c6135D2EBD550000ac92F494F9CB8183dAe",
+      "name": "Aave interest bearing DPI",
+      "decimals": 18,
+      "symbol": "aDPI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+      "name": "Frax",
+      "decimals": 18,
+      "symbol": "FRAX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xd4937682df3C8aEF4FE912A96A74121C0829E664",
+      "name": "Aave interest bearing FRAX",
+      "decimals": 18,
+      "symbol": "aFRAX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x956F47F50A910163D8BF957Cf5846D573E7f87CA",
+      "name": "Fei USD",
+      "decimals": 18,
+      "symbol": "FEI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x683923dB55Fead99A79Fa01A27EeC3cB19679cC3",
+      "name": "Aave interest bearing FEI",
+      "decimals": 18,
+      "symbol": "aFEI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+      "name": "Liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "stETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x1982b2F5814301d4e9a8b0201555376e62F82428",
+      "name": "Aave interest bearing STETH",
+      "decimals": 18,
+      "symbol": "aSTETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+      "name": "Ethereum Name Service",
+      "decimals": 18,
+      "symbol": "ENS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x9a14e23A58edf4EFDcB360f68cd1b95ce2081a2F",
+      "name": "Aave interest bearing ENS",
+      "decimals": 18,
+      "symbol": "aENS",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xa693B19d2931d498c5B318dF961919BB4aee87a5",
+      "name": "UST",
+      "decimals": 6,
+      "symbol": "UST",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xc2e2152647F4C26028482Efaf64b2Aa28779EFC4",
+      "name": "Aave interest bearing UST",
+      "decimals": 6,
+      "symbol": "aUST",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
+      "name": "Convex Token",
+      "decimals": 18,
+      "symbol": "CVX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x952749E07d7157bb9644A894dFAF3Bad5eF6D918",
+      "name": "Aave interest bearing CVX",
+      "decimals": 18,
+      "symbol": "aCVX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x111111111117dC0aa78b770fA6A738034120C302",
+      "name": "1INCH Token",
+      "decimals": 18,
+      "symbol": "ONE_INCH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xB29130CBcC3F791f077eAdE0266168E808E5151e",
+      "name": "Aave interest bearing 1INCH",
+      "decimals": 18,
+      "symbol": "aONE_INCH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0",
+      "name": "LUSD Stablecoin",
+      "decimals": 18,
+      "symbol": "LUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xce1871f791548600cb59efbefFC9c38719142079",
+      "name": "Aave interest bearing LUSD",
+      "decimals": 18,
+      "symbol": "aLUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Ethereum" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+      "name": "(PoS) Dai Stablecoin",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x27F8D03b3a2196956ED754baDc28D73be8830A6e",
+      "name": "Aave Matic Market DAI",
+      "decimals": 18,
+      "symbol": "amDAI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "name": "USD Coin (PoS)",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x1a13F4Ca1d028320A707D99520AbFefca3998b7F",
+      "name": "Aave Matic Market USDC",
+      "decimals": 6,
+      "symbol": "amUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "name": "(PoS) Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x60D55F02A771d515e077c9C2403a1ef324885CeC",
+      "name": "Aave Matic Market USDT",
+      "decimals": 6,
+      "symbol": "amUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
+      "name": "(PoS) Wrapped BTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x5c2ed810328349100A66B82b78a1791B101C9D61",
+      "name": "Aave Matic Market WBTC",
+      "decimals": 8,
+      "symbol": "amWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x28424507fefb6f7f8E9D3860F56504E4e5f5f390",
+      "name": "Aave Matic Market WETH",
+      "decimals": 18,
+      "symbol": "amWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+      "name": "Wrapped Matic",
+      "decimals": 18,
+      "symbol": "WMATIC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x8dF3aad3a84da6b69A4DA8aeC3eA40d9091B2Ac4",
+      "name": "Aave Matic Market WMATIC",
+      "decimals": 18,
+      "symbol": "amWMATIC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
+      "name": "Aave (PoS)",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x1d2a0E5EC8E5bBDCA5CB219e649B565d8e5c3360",
+      "name": "Aave Matic Market AAVE",
+      "decimals": 18,
+      "symbol": "amAAVE",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
+      "name": "Aavegotchi GHST Token (PoS)",
+      "decimals": 18,
+      "symbol": "GHST",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x080b5BF8f360F624628E0fb961F4e67c9e3c7CF1",
+      "name": "Aave Matic Market GHST",
+      "decimals": 18,
+      "symbol": "amGHST",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3",
+      "name": "Balancer (PoS)",
+      "decimals": 18,
+      "symbol": "BAL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0xc4195D4060DaEac44058Ed668AA5EfEc50D77ff6",
+      "name": "Aave Matic Market BAL",
+      "decimals": 18,
+      "symbol": "amBAL",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369",
+      "name": "DefiPulse Index (PoS)",
+      "decimals": 18,
+      "symbol": "DPI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x81fB82aAcB4aBE262fc57F06fD4c1d2De347D7B1",
+      "name": "Aave Matic Market DPI",
+      "decimals": 18,
+      "symbol": "amDPI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
+      "name": "CRV (PoS)",
+      "decimals": 18,
+      "symbol": "CRV",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x3Df8f92b7E798820ddcCA2EBEA7BAbda2c90c4aD",
+      "name": "Aave Matic Market CRV",
+      "decimals": 18,
+      "symbol": "amCRV",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
+      "name": "SushiToken (PoS)",
+      "decimals": 18,
+      "symbol": "SUSHI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x21eC9431B5B55c5339Eb1AE7582763087F98FAc2",
+      "name": "Aave Matic Market SUSHI",
+      "decimals": 18,
+      "symbol": "amSUSHI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39",
+      "name": "ChainLink Token",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x0Ca2e42e8c21954af73Bc9af1213E4e81D6a669A",
+      "name": "Aave Matic Market LINK",
+      "decimals": 18,
+      "symbol": "amLINK",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Polygon" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x639cB7b21ee2161DF9c882483C9D55c90c20Ca3e",
+      "name": "Aave Matic Market DAI",
+      "decimals": 18,
+      "symbol": "amDAI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x2058A9D7613eEE744279e3856Ef0eAda5FCbaA7e",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x2271e3Fef9e15046d09E1d78a8FF038c691E9Cf9",
+      "name": "Aave Matic Market USDC",
+      "decimals": 6,
+      "symbol": "amUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xBD21A10F619BE90d6066c941b04e340841F1F989",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xF8744C0bD8C7adeA522d6DDE2298b17284A79D1b",
+      "name": "Aave Matic Market USDT",
+      "decimals": 6,
+      "symbol": "amUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x0d787a4a1548f673ed375445535a6c7A1EE56180",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xc9276ECa6798A14f64eC33a526b547DAd50bDa2F",
+      "name": "Aave Matic Market WBTC",
+      "decimals": 8,
+      "symbol": "amWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x3C68CE8504087f89c640D02d133646d98e64ddd9",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x7aE20397Ca327721F013BB9e140C707F82871b56",
+      "name": "Aave Matic Market WETH",
+      "decimals": 18,
+      "symbol": "amWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889",
+      "name": "Wrapped Matic",
+      "decimals": 18,
+      "symbol": "WMATIC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xF45444171435d0aCB08a8af493837eF18e86EE27",
+      "name": "Aave Matic Market WMATIC",
+      "decimals": 18,
+      "symbol": "amWMATIC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x341d1f30e77D3FBfbD43D17183E2acb9dF25574E",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x7ec62b6fC19174255335C8f4346E0C2fcf870a6B",
+      "name": "Aave Matic Market AAVE",
+      "decimals": 18,
+      "symbol": "amAAVE",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Mumbai" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x0B7a69d978DdA361Db5356D4Bd0206496aFbDD96",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x5fDF09EE06219f96EffE1b4CC47f44A630C5A358",
+      "name": "Aave interest bearing AAVE",
+      "decimals": 18,
+      "symbol": "aAAVE",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x515614aA3d8f09152b1289848383A260c7D053Ff",
+      "name": "BAT",
+      "decimals": 18,
+      "symbol": "BAT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x41355876CEC93c43cE4e784ce1b5f5e62557D2e2",
+      "name": "Aave interest bearing BAT",
+      "decimals": 18,
+      "symbol": "aBAT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xa7c3Bf25FFeA8605B516Cf878B7435fe1768c89b",
+      "name": "BUSD",
+      "decimals": 18,
+      "symbol": "BUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xabd2878A23cba83F1e9790635e09e494b8E21333",
+      "name": "Aave interest bearing BUSD",
+      "decimals": 18,
+      "symbol": "aBUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x75Ab5AB1Eef154C0352Fc31D2428Cef80C7F8B33",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x31f30d9A5627eAfeC4433Ae2886Cf6cc3D25E772",
+      "name": "Aave interest bearing DAI",
+      "decimals": 18,
+      "symbol": "aDAI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x1057DCaa0b66dFBcEc5241fD51F4326C210f201F",
+      "name": "ENJ",
+      "decimals": 18,
+      "symbol": "ENJ",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x3DB016c45090337e989C882F47Cf1Dc51fB6dE1B",
+      "name": "Aave interest bearing ENJ",
+      "decimals": 18,
+      "symbol": "aENJ",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x54Bc1D59873A5ABde98cf76B6EcF4075ff65d685",
+      "name": "KNC",
+      "decimals": 18,
+      "symbol": "KNC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x7D5e39D49Ca107b49Fd4c6cF777B04bdA79a675C",
+      "name": "Aave interest bearing KNC",
+      "decimals": 18,
+      "symbol": "aKNC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x7337e7FF9abc45c0e43f130C136a072F4794d40b",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x8c8cc9b893b6962409BCEaAFCA95d1044ce809bc",
+      "name": "Aave interest bearing LINK",
+      "decimals": 18,
+      "symbol": "aLINK",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x8d9EAc6f25470EFfD68f0AD22993CB2813c0c9B9",
+      "name": "MANA",
+      "decimals": 18,
+      "symbol": "MANA",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x71d4C18Ce2bd9889E17099B1552D0b92FAe15731",
+      "name": "Aave interest bearing MANA",
+      "decimals": 18,
+      "symbol": "aMANA",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x90be02599452FBC1a3D47E9EB62895330cfA05Ed",
+      "name": "MKR",
+      "decimals": 18,
+      "symbol": "MKR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xd77332d9FA5299010b403bB4f768ACb2d2E8A8a6",
+      "name": "Aave interest bearing MKR",
+      "decimals": 18,
+      "symbol": "aMKR",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x3160F3f3B55eF85d0D27f04A2d74d426c32de842",
+      "name": "REN",
+      "decimals": 18,
+      "symbol": "REN",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x2A4B55A3229470BE6Bc78f1b534Cfe8064107407",
+      "name": "Aave interest bearing REN",
+      "decimals": 18,
+      "symbol": "aREN",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xFc1Ab0379db4B6ad8Bf5Bc1382e108a341E2EaBb",
+      "name": "SNX",
+      "decimals": 18,
+      "symbol": "SNX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x1Fad08D99F66fe709f4c4d7D81268d6fd380a20f",
+      "name": "Aave interest bearing SNX",
+      "decimals": 18,
+      "symbol": "aSNX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x4e62eB262948671590b8D967BDE048557bdd03eD",
+      "name": "SUSD",
+      "decimals": 18,
+      "symbol": "SUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xb997a147657a9295137e54c6C19ECF9e97Eb4b36",
+      "name": "Aave interest bearing SUSD",
+      "decimals": 18,
+      "symbol": "aSUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xc048C1b6ac47393F073dA2b3d5D1cc43b94891Fd",
+      "name": "TUSD",
+      "decimals": 18,
+      "symbol": "TUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x37416BA913324Bc0eEB60f27d5897d8A6A75028b",
+      "name": "Aave interest bearing TUSD",
+      "decimals": 18,
+      "symbol": "aTUSD",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x981D8AcaF6af3a46785e7741d22fBE81B25Ebf1e",
+      "name": "UNI",
+      "decimals": 18,
+      "symbol": "UNI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x6Ea7776f7d217b41Dc44684Da6f9FcD4eb9642C3",
+      "name": "Aave interest bearing UNI",
+      "decimals": 18,
+      "symbol": "aUNI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x9FD21bE27A2B059a288229361E2fA632D8D2d074",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x935c0F6019b05C787573B5e6176681282A3f3E05",
+      "name": "Aave interest bearing USDC",
+      "decimals": 6,
+      "symbol": "aUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x65E2fe35C30eC218b46266F89847c63c2eDa7Dc7",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xDCb84F51dd4BeA1ce4b6118F087B260a71BB656c",
+      "name": "Aave interest bearing USDT",
+      "decimals": 6,
+      "symbol": "aUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xf4423F4152966eBb106261740da907662A3569C5",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x2f8274ce7fB939014e657e480e9ed3e1131f242B",
+      "name": "Aave interest bearing WBTC",
+      "decimals": 8,
+      "symbol": "aWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xCCa7d1416518D095E729904aAeA087dBA749A4dC",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x22404B0e2a7067068AcdaDd8f9D586F834cCe2c5",
+      "name": "Aave interest bearing WETH",
+      "decimals": 18,
+      "symbol": "aWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x6c260F702B6Bb9AC989DA4B0fcbE7fddF8f749c4",
+      "name": "YFI",
+      "decimals": 18,
+      "symbol": "YFI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xAF299560160896eF72219F0e2Ea67d4653cE8251",
+      "name": "Aave interest bearing YFI",
+      "decimals": 18,
+      "symbol": "aYFI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xAcFd03DdF9C68015E1943FB02b60c5df56C4CB9e",
+      "name": "ZRX",
+      "decimals": 18,
+      "symbol": "ZRX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x22af6D8C0cD02a4EbdF6f79B6181DcC565f0b18e",
+      "name": "Aave interest bearing ZRX",
+      "decimals": 18,
+      "symbol": "aZRX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x45E18E77b15A02a31507e948A546a509A50a2376",
+      "name": "xSUSHI",
+      "decimals": 18,
+      "symbol": "xSUSHI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x8C1d95Ed70e16664b0CFF72c31a536a68474A4eA",
+      "name": "Aave interest bearing xSUSHI",
+      "decimals": 18,
+      "symbol": "axSUSHI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Goerli" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0x9668f5f55f2712Dd2dfa316256609b516292D554",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x2B2927e26b433D92fC598EE79Fa351d6591B8F95",
+      "name": "Aave Avalanche Market WETH",
+      "decimals": 18,
+      "symbol": "aavaWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0x02823f9B469960Bb3b1de0B3746D4b95B7E35543",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x5f049c41aF3856cBc171F61FB04D58C1e7445f5F",
+      "name": "Aave Avalanche Market USDT",
+      "decimals": 6,
+      "symbol": "aavaUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0x9C1DCacB57ADa1E9e2D3a8280B7cfC7EB936186F",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0xD5B516FDbfb7264676Fd4901B9dD3F707db68733",
+      "name": "Aave Avalanche Market WBTC",
+      "decimals": 8,
+      "symbol": "aavaWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0xd00ae08403B9bbb9124bB305C09058E32C39A48c",
+      "name": "Wrapped AVAX",
+      "decimals": 18,
+      "symbol": "WAVAX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0xf8C78Ba24DD965487f4472dfb280c46800a0c9B6",
+      "name": "Aave Avalanche Market WAVAX",
+      "decimals": 18,
+      "symbol": "aavaWAVAX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Fuji" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETHe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x53f7c5869a859F0AeC3D334ee8B4Cf01E3492f21",
+      "name": "Aave Avalanche Market WETH",
+      "decimals": 18,
+      "symbol": "avWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
+      "name": "Dai Stablecoin",
+      "decimals": 18,
+      "symbol": "DAIe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x47AFa96Cdc9fAb46904A55a6ad4bf6660B53c38a",
+      "name": "Aave Avalanche Market DAI",
+      "decimals": 18,
+      "symbol": "avDAI",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc7198437980c041c805A1EDcbA50c1Ce5db95118",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDTe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x532E6537FEA298397212F09A61e03311686f548e",
+      "name": "Aave Avalanche Market USDT",
+      "decimals": 6,
+      "symbol": "avUSDT",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDCe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x46A51127C3ce23fb7AB1DE06226147F446e4a857",
+      "name": "Aave Avalanche Market USDC",
+      "decimals": 6,
+      "symbol": "avUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
+      "name": "Aave Token",
+      "decimals": 18,
+      "symbol": "AAVEe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0xD45B7c061016102f9FA220502908f2c0f1add1D7",
+      "name": "Aave Avalanche Market AAVE",
+      "decimals": 18,
+      "symbol": "avAAVE",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
+      "name": "Wrapped BTC",
+      "decimals": 8,
+      "symbol": "WBTCe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x686bEF2417b6Dc32C50a3cBfbCC3bb60E1e9a15D",
+      "name": "Aave Avalanche Market WBTC",
+      "decimals": 8,
+      "symbol": "avWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "name": "Wrapped AVAX",
+      "decimals": 18,
+      "symbol": "WAVAX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0xDFE521292EcE2A4f44242efBcD66Bc594CA9714B",
+      "name": "Aave Avalanche Market WAVAX",
+      "decimals": 18,
+      "symbol": "avWAVAX",
+      "tags": ["aTokenV2", "aaveV2"],
+      "extensions": { "pool": "AaveV2Avalanche" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8",
+      "name": "Aave Ethereum WETH",
+      "decimals": 18,
+      "symbol": "aEthWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x252231882FB38481497f3C767469106297c8d93b",
+      "name": "Static Aave Ethereum WETH",
+      "decimals": 18,
+      "symbol": "stataEthWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x0B925eD163218f6662a35e0f0371Ac234f9E9371",
+      "name": "Aave Ethereum wstETH",
+      "decimals": 18,
+      "symbol": "aEthwstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x322AA5F5Be95644d6c36544B6c5061F072D16DF5",
+      "name": "Static Aave Ethereum wstETH",
+      "decimals": 18,
+      "symbol": "stataEthwstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x5Ee5bf7ae06D1Be5997A1A72006FE6C607eC6DE8",
+      "name": "Aave Ethereum WBTC",
+      "decimals": 8,
+      "symbol": "aEthWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c",
+      "name": "Aave Ethereum USDC",
+      "decimals": 6,
+      "symbol": "aEthUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6",
+      "name": "Static Aave Ethereum USDC",
+      "decimals": 6,
+      "symbol": "stataEthUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x018008bfb33d285247A21d44E50697654f754e63",
+      "name": "Aave Ethereum DAI",
+      "decimals": 18,
+      "symbol": "aEthDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xaf270C38fF895EA3f95Ed488CEACe2386F038249",
+      "name": "Static Aave Ethereum DAI",
+      "decimals": 18,
+      "symbol": "stataEthDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x5E8C8A7243651DB1384C0dDfDbE39761E8e7E51a",
+      "name": "Aave Ethereum LINK",
+      "decimals": 18,
+      "symbol": "aEthLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xA700b4eB416Be35b2911fd5Dee80678ff64fF6C9",
+      "name": "Aave Ethereum AAVE",
+      "decimals": 18,
+      "symbol": "aEthAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704",
+      "name": "Coinbase Wrapped Staked ETH",
+      "decimals": 18,
+      "symbol": "cbETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x977b6fc5dE62598B08C85AC8Cf2b745874E8b78c",
+      "name": "Aave Ethereum cbETH",
+      "decimals": 18,
+      "symbol": "aEthcbETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+      "name": "Aave Ethereum USDT",
+      "decimals": 6,
+      "symbol": "aEthUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x862c57d48becB45583AEbA3f489696D22466Ca1b",
+      "name": "Static Aave Ethereum USDT",
+      "decimals": 6,
+      "symbol": "stataEthUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xae78736Cd615f374D3085123A210448E74Fc6393",
+      "name": "Rocket Pool ETH",
+      "decimals": 18,
+      "symbol": "rETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xCc9EE9483f662091a1de4795249E24aC0aC2630f",
+      "name": "Aave Ethereum rETH",
+      "decimals": 18,
+      "symbol": "aEthrETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x3Fe6a295459FAe07DF8A0ceCC36F37160FE86AA9",
+      "name": "Aave Ethereum LUSD",
+      "decimals": 18,
+      "symbol": "aEthLUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xDBf5E36569798D1E39eE9d7B1c61A7409a74F23A",
+      "name": "Static Aave Ethereum LUSD",
+      "decimals": 18,
+      "symbol": "stataEthLUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x7B95Ec873268a6BFC6427e7a28e396Db9D0ebc65",
+      "name": "Aave Ethereum CRV",
+      "decimals": 18,
+      "symbol": "aEthCRV",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x8A458A9dc9048e005d22849F470891b840296619",
+      "name": "Aave Ethereum MKR",
+      "decimals": 18,
+      "symbol": "aEthMKR",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xC7B4c17861357B8ABB91F25581E7263E08DCB59c",
+      "name": "Aave Ethereum SNX",
+      "decimals": 18,
+      "symbol": "aEthSNX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x2516E7B3F76294e03C42AA4c5b5b4DCE9C436fB8",
+      "name": "Aave Ethereum BAL",
+      "decimals": 18,
+      "symbol": "aEthBAL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xF6D2224916DDFbbab6e6bd0D1B7034f4Ae0CaB18",
+      "name": "Aave Ethereum UNI",
+      "decimals": 18,
+      "symbol": "aEthUNI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32",
+      "name": "Lido DAO Token",
+      "decimals": 18,
+      "symbol": "LDO",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x9A44fd41566876A39655f74971a3A6eA0a17a454",
+      "name": "Aave Ethereum LDO",
+      "decimals": 18,
+      "symbol": "aEthLDO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x545bD6c032eFdde65A377A6719DEF2796C8E0f2e",
+      "name": "Aave Ethereum ENS",
+      "decimals": 18,
+      "symbol": "aEthENS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x71Aef7b30728b9BB371578f36c5A1f1502a5723e",
+      "name": "Aave Ethereum 1INCH",
+      "decimals": 18,
+      "symbol": "aEthONE_INCH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xd4e245848d6E1220DBE62e155d89fa327E43CB06",
+      "name": "Aave Ethereum FRAX",
+      "decimals": 18,
+      "symbol": "aEthFRAX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xEE66abD4D0f9908A48E08AE354B0f425De3e237E",
+      "name": "Static Aave Ethereum FRAX",
+      "decimals": 18,
+      "symbol": "stataEthFRAX",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x00907f9921424583e7ffBfEdf84F92B7B2Be4977",
+      "name": "Aave Ethereum GHO",
+      "decimals": 18,
+      "symbol": "aEthGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f",
+      "name": "Rocket Pool Protocol",
+      "decimals": 18,
+      "symbol": "RPL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xB76CF92076adBF1D9C39294FA8e7A67579FDe357",
+      "name": "Aave Ethereum RPL",
+      "decimals": 18,
+      "symbol": "aEthRPL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
+      "name": "Savings Dai",
+      "decimals": 18,
+      "symbol": "sDAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x4C612E3B15b96Ff9A6faED838F8d07d479a8dD4c",
+      "name": "Aave Ethereum sDAI",
+      "decimals": 18,
+      "symbol": "aEthsDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6",
+      "name": "StargateToken",
+      "decimals": 18,
+      "symbol": "STG",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x1bA9843bD4327c6c77011406dE5fA8749F7E3479",
+      "name": "Aave Ethereum STG",
+      "decimals": 18,
+      "symbol": "aEthSTG",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202",
+      "name": "Kyber Network Crystal v2",
+      "decimals": 18,
+      "symbol": "KNC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x5b502e3796385E1e9755d7043B9C945C3aCCeC9C",
+      "name": "Aave Ethereum KNC",
+      "decimals": 18,
+      "symbol": "aEthKNC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0",
+      "name": "Frax Share",
+      "decimals": 18,
+      "symbol": "FXS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x82F9c5ad306BBa1AD0De49bB5FA6F01bf61085ef",
+      "name": "Aave Ethereum FXS",
+      "decimals": 18,
+      "symbol": "aEthFXS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
+      "name": "Curve.Fi USD Stablecoin",
+      "decimals": 18,
+      "symbol": "crvUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xb82fa9f31612989525992FCfBB09AB22Eff5c85A",
+      "name": "Aave Ethereum crvUSD",
+      "decimals": 18,
+      "symbol": "aEthcrvUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 1,
+      "address": "0x848107491E029AFDe0AC543779c7790382f15929",
+      "name": "Static Aave Ethereum crvUSD",
+      "decimals": 18,
+      "symbol": "stataEthcrvUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Ethereum" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x29598b72eb5CeBd806C5dCD549490FdA35B13cD8",
+      "name": "Aave Ethereum DAI",
+      "decimals": 18,
+      "symbol": "aEthDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17",
+      "name": "Static Aave Ethereum DAI",
+      "decimals": 18,
+      "symbol": "stataEthDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xf8Fb3713D459D7C1018BD0A49D19b4C44290EBE5",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x3FfAf50D4F4E96eB78f2407c090b72e86eCaed24",
+      "name": "Aave Ethereum LINK",
+      "decimals": 18,
+      "symbol": "aEthLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x8227a989709a757f25dF251C3C3e71CA38627836",
+      "name": "Static Aave Ethereum LINK",
+      "decimals": 18,
+      "symbol": "stataEthLINK",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x16dA4541aD1807f4443d92D26044C1147406EB80",
+      "name": "Aave Ethereum USDC",
+      "decimals": 6,
+      "symbol": "aEthUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x8A88124522dbBF1E56352ba3DE1d9F78C143751e",
+      "name": "Static Aave Ethereum USDC",
+      "decimals": 6,
+      "symbol": "stataEthUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x29f2D40B0605204364af54EC677bD022dA425d03",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x1804Bf30507dc2EB3bDEbbbdd859991EAeF6EefF",
+      "name": "Aave Ethereum WBTC",
+      "decimals": 8,
+      "symbol": "aEthWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x131a121bda71ED810bCAf2aC9079214925e59C18",
+      "name": "Static Aave Ethereum WBTC",
+      "decimals": 8,
+      "symbol": "stataEthWBTC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x5b071b590a59395fE4025A0Ccc1FcC931AAc1830",
+      "name": "Aave Ethereum WETH",
+      "decimals": 18,
+      "symbol": "aEthWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x162B500569F42D9eCe937e6a61EDfef660A12E98",
+      "name": "Static Aave Ethereum WETH",
+      "decimals": 18,
+      "symbol": "stataEthWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xAF0F6e8b0Dc5c913bbF4d14c22B4E78Dd14310B6",
+      "name": "Aave Ethereum USDT",
+      "decimals": 6,
+      "symbol": "aEthUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x978206fAe13faF5a8d293FB614326B237684B750",
+      "name": "Static Aave Ethereum USDT",
+      "decimals": 6,
+      "symbol": "stataEthUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x88541670E55cC00bEEFD87eB59EDd1b7C511AC9a",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x6b8558764d3b7572136F17174Cb9aB1DDc7E1259",
+      "name": "Aave Ethereum AAVE",
+      "decimals": 18,
+      "symbol": "aEthAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x56771cEF0cb422e125564CcCC98BB05fdc718E77",
+      "name": "Static Aave Ethereum AAVE",
+      "decimals": 18,
+      "symbol": "stataEthAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x6d906e526a4e2Ca02097BA9d0caA3c382F52278E",
+      "name": "EURS",
+      "decimals": 2,
+      "symbol": "EURS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xB20691021F9AcED8631eDaa3c0Cd2949EB45662D",
+      "name": "Aave Ethereum EURS",
+      "decimals": 2,
+      "symbol": "aEthEURS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0x72B49a461900e11632C95dfa563e7173438D4e3E",
+      "name": "Static Aave Ethereum EURS",
+      "decimals": 2,
+      "symbol": "stataEthEURS",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xc4bF5CbDaBE595361438F8c6a187bDc330539c60",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 11155111,
+      "address": "0xd190eF37dB51Bb955A680fF1A85763CC72d083D4",
+      "name": "Aave Sepolia GHO",
+      "decimals": 18,
+      "symbol": "aSepGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Sepolia" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xE205181Eb3D7415f15377F79aA7769F846cE56DD",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xAC4D92980562Ac11Af46C6C7CEdD7C819C2028D0",
+      "name": "Aave Testnet AAVE",
+      "decimals": 18,
+      "symbol": "aTestAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3GoerliGho" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xD77b79BE3e85351fF0cbe78f1B58cf8d1064047C",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x7402b9625D1712426807952b798e3180dC38876F",
+      "name": "Aave Testnet DAI",
+      "decimals": 18,
+      "symbol": "aTestDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3GoerliGho" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x69305b943C6F55743b2Ece5c0b20507300a39FC3",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xdC916609281306558E0e8245bFBf90EFd3eCAb96",
+      "name": "Aave Testnet USDC",
+      "decimals": 6,
+      "symbol": "aTestUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3GoerliGho" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x84ced17d95F3EC7230bAf4a369F1e624Ae60090d",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x49871B521E44cb4a34b2bF2cbCF03C1CF895C48b",
+      "name": "Aave Testnet WETH",
+      "decimals": 18,
+      "symbol": "aTestWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3GoerliGho" }
+    },
+    {
+      "chainId": 5,
+      "address": "0x2166903C38B4883B855eA2C77A02430a27Cdfede",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0x601c61Fc4eEe64a4b1f5201125b788dc1585746b",
+      "name": "Aave Testnet LINK",
+      "decimals": 18,
+      "symbol": "aTestLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3GoerliGho" }
+    },
+    {
+      "chainId": 5,
+      "address": "0xcbE9771eD31e761b744D3cB9eF78A1f32DD99211",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5,
+      "address": "0xdC25729a09241d24c4228f1a0C27137770cF363e",
+      "name": "Aave Ethereum GHO",
+      "decimals": 18,
+      "symbol": "aEthGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3GoerliGho" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+      "name": "Aave Polygon DAI",
+      "decimals": 18,
+      "symbol": "aPolDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x83c59636e602787A6EEbBdA2915217B416193FcB",
+      "name": "Static Aave Polygon DAI",
+      "decimals": 18,
+      "symbol": "stataPolDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
+      "name": "Aave Polygon LINK",
+      "decimals": 18,
+      "symbol": "aPolLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x37868a45c6741616F9E5a189dC0481AD70056B6a",
+      "name": "Static Aave Polygon LINK",
+      "decimals": 18,
+      "symbol": "stataPolLINK",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Polygon USDC",
+      "decimals": 6,
+      "symbol": "aPolUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x1017F4a86Fc3A3c824346d0b8C5e96A5029bDAf9",
+      "name": "Static Aave Polygon USDC",
+      "decimals": 6,
+      "symbol": "stataPolUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x078f358208685046a11C85e8ad32895DED33A249",
+      "name": "Aave Polygon WBTC",
+      "decimals": 8,
+      "symbol": "aPolWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xbC0f50CCB8514Aa7dFEB297521c4BdEBc9C7d22d",
+      "name": "Static Aave Polygon WBTC",
+      "decimals": 8,
+      "symbol": "stataPolWBTC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
+      "name": "Aave Polygon WETH",
+      "decimals": 18,
+      "symbol": "aPolWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xb3D5Af0A52a35692D3FcbE37669b3B8C31dddE7D",
+      "name": "Static Aave Polygon WETH",
+      "decimals": 18,
+      "symbol": "stataPolWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+      "name": "Aave Polygon USDT",
+      "decimals": 6,
+      "symbol": "aPolUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x87A1fdc4C726c459f597282be639a045062c0E46",
+      "name": "Static Aave Polygon USDT",
+      "decimals": 6,
+      "symbol": "stataPolUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Polygon AAVE",
+      "decimals": 18,
+      "symbol": "aPolAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xCA2E1E33E5BCF4978E2d683656E1f5610f8C4A7E",
+      "name": "Static Aave Polygon AAVE",
+      "decimals": 18,
+      "symbol": "stataPolAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Polygon WMATIC",
+      "decimals": 18,
+      "symbol": "aPolWMATIC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x98254592408E389D1dd2dBa318656C2C5c305b4E",
+      "name": "Static Aave Polygon WMATIC",
+      "decimals": 18,
+      "symbol": "stataPolWMATIC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Polygon CRV",
+      "decimals": 18,
+      "symbol": "aPolCRV",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x4356941463eD4d75381AC23C9EF799B5d7C52AD8",
+      "name": "Static Aave Polygon CRV",
+      "decimals": 18,
+      "symbol": "stataPolCRV",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Polygon SUSHI",
+      "decimals": 18,
+      "symbol": "aPolSUSHI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xe3eDe71d32240b7EC355F0e5DD1131BBe029F934",
+      "name": "Static Aave Polygon SUSHI",
+      "decimals": 18,
+      "symbol": "stataPolSUSHI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
+      "name": "Aave Polygon GHST",
+      "decimals": 18,
+      "symbol": "aPolGHST",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x123319636A6a9c85D9959399304F4cB23F64327e",
+      "name": "Static Aave Polygon GHST",
+      "decimals": 18,
+      "symbol": "stataPolGHST",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
+      "name": "Aave Polygon BAL",
+      "decimals": 18,
+      "symbol": "aPolBAL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x1a8969FD39AbaF228e690B172C4C3Eb7c67F95E1",
+      "name": "Static Aave Polygon BAL",
+      "decimals": 18,
+      "symbol": "stataPolBAL",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
+      "name": "Aave Polygon DPI",
+      "decimals": 18,
+      "symbol": "aPolDPI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x73B788ACA5f4F0EeB3c6Da453cDf31041a77b36D",
+      "name": "Static Aave Polygon DPI",
+      "decimals": 18,
+      "symbol": "stataPolDPI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
+      "name": "STASIS EURS Token (PoS)",
+      "decimals": 2,
+      "symbol": "EURS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
+      "name": "Aave Polygon EURS",
+      "decimals": 2,
+      "symbol": "aPolEURS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x02E26888Ed3240BB38f26A2adF96Af9B52b167ea",
+      "name": "Static Aave Polygon EURS",
+      "decimals": 2,
+      "symbol": "stataPolEURS",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
+      "name": "Jarvis Synthetic Euro",
+      "decimals": 18,
+      "symbol": "jEUR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x6533afac2E7BCCB20dca161449A13A32D391fb00",
+      "name": "Aave Polygon JEUR",
+      "decimals": 18,
+      "symbol": "aPolJEUR",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xD992DaC78Ef3F34614E6a7d325b7b6A320FC0AB5",
+      "name": "Static Aave Polygon JEUR",
+      "decimals": 18,
+      "symbol": "stataPolJEUR",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
+      "name": "agEUR",
+      "decimals": 18,
+      "symbol": "agEUR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77",
+      "name": "Aave Polygon AGEUR",
+      "decimals": 18,
+      "symbol": "aPolAGEUR",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xd3eb8796Ed36f58E03B7b4b5AD417FA74931d2c4",
+      "name": "Static Aave Polygon AGEUR",
+      "decimals": 18,
+      "symbol": "stataPolAGEUR",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
+      "name": "miMATIC",
+      "decimals": 18,
+      "symbol": "miMATIC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D",
+      "name": "Aave Polygon MIMATIC",
+      "decimals": 18,
+      "symbol": "aPolMIMATIC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x8486B49433cCed038b51d18Ae3772CDB7E31CA5e",
+      "name": "Static Aave Polygon MIMATIC",
+      "decimals": 18,
+      "symbol": "stataPolMIMATIC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4",
+      "name": "Staked MATIC (PoS)",
+      "decimals": 18,
+      "symbol": "stMATIC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9",
+      "name": "Aave Polygon STMATIC",
+      "decimals": 18,
+      "symbol": "aPolSTMATIC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x867A180B7060fDC27610dC9096E93534F638A315",
+      "name": "Static Aave Polygon STMATIC",
+      "decimals": 18,
+      "symbol": "stataPolSTMATIC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6",
+      "name": "Liquid Staking Matic (PoS)",
+      "decimals": 18,
+      "symbol": "MaticX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE",
+      "name": "Aave Polygon MATICX",
+      "decimals": 18,
+      "symbol": "aPolMATICX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0xbcDd5709641Af4BE99b1470A2B3A5203539132Ec",
+      "name": "Static Aave Polygon MATICX",
+      "decimals": 18,
+      "symbol": "stataPolMATICX",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
+      "name": "Wrapped liquid staked Ether 2.0 (PoS)",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0xf59036CAEBeA7dC4b86638DFA2E3C97dA9FcCd40",
+      "name": "Aave Polygon wstETH",
+      "decimals": 18,
+      "symbol": "aPolwstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x5274453F4CD5dD7280011a1Cca3B9e1b78EC59A6",
+      "name": "Static Aave Polygon wstETH",
+      "decimals": 18,
+      "symbol": "stataPolwstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 137,
+      "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDCn",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 137,
+      "address": "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD",
+      "name": "Aave Polygon USDCn",
+      "decimals": 6,
+      "symbol": "aPolUSDCn",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Polygon" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x8903bbBD684B7ef734c01BEb00273Ff52703514F",
+      "name": "Aave Polygon DAI",
+      "decimals": 18,
+      "symbol": "aPolDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xe012Fa4A7CAa676b2587A20650b8358d72984250",
+      "name": "Static Aave Polygon DAI",
+      "decimals": 18,
+      "symbol": "stataPolDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x9DFf9E93B1e513379cf820504D642c6891d8F7CC",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xaB9F0568d5C6CE1437ba07E6efE529A2A9b82665",
+      "name": "Aave Polygon LINK",
+      "decimals": 18,
+      "symbol": "aPolLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xA609025Ee8885C4E557331cCF4e3A1099B182359",
+      "name": "Static Aave Polygon LINK",
+      "decimals": 18,
+      "symbol": "stataPolLINK",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x52D800ca262522580CeBAD275395ca6e7598C014",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x4086fabeE92a080002eeBA1220B9025a27a40A49",
+      "name": "Aave Polygon USDC",
+      "decimals": 6,
+      "symbol": "aPolUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x5eF0fbC8cC652e1128ff50fA8473B7E949C9EaC3",
+      "name": "Static Aave Polygon USDC",
+      "decimals": 6,
+      "symbol": "stataPolUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xdA67e6C1171D4f0D522Db7f127B88405eA1535d4",
+      "name": "Aave Polygon WBTC",
+      "decimals": 8,
+      "symbol": "aPolWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x0693e498eF6D6fb27b57dc3D9e3E0a0f9f2fbeC4",
+      "name": "Static Aave Polygon WBTC",
+      "decimals": 8,
+      "symbol": "stataPolWBTC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xc199807AF4fEDB02EE567Ed0FeB814A077de4802",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xAba444af64ad33A6d8575b8A353226997d6A126a",
+      "name": "Aave Polygon WETH",
+      "decimals": 18,
+      "symbol": "aPolWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x666ef6De71Eb3DAd05F996ECAa910360f4e8fD7c",
+      "name": "Static Aave Polygon WETH",
+      "decimals": 18,
+      "symbol": "stataPolWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x5F3a71D07E95C1E54B9Cc055D418a219586A3473",
+      "name": "Aave Polygon USDT",
+      "decimals": 6,
+      "symbol": "aPolUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x48774b9D6Bd38d6d0CF17D9C6E023b67eDAEeA29",
+      "name": "Static Aave Polygon USDT",
+      "decimals": 6,
+      "symbol": "stataPolUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xE05705857b3d78aCe3d872b26D9c951B266ECC8d",
+      "name": "Aave Polygon AAVE",
+      "decimals": 18,
+      "symbol": "aPolAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xC19611D616f191dc7dFFAf192c071B8957379585",
+      "name": "Static Aave Polygon AAVE",
+      "decimals": 18,
+      "symbol": "stataPolAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xaD3C5a67275dE4b5554CdD1d961e957f408eF75a",
+      "name": "WMATIC",
+      "decimals": 18,
+      "symbol": "WMATIC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xaCA5e6a7117F54B34B476aB95Bf3034c304e7a81",
+      "name": "Aave Polygon WMATIC",
+      "decimals": 18,
+      "symbol": "aPolWMATIC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x5C0478fd615e02ecC3BB3fbe2fe6153090031696",
+      "name": "Static Aave Polygon WMATIC",
+      "decimals": 18,
+      "symbol": "stataPolWMATIC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x2bbF1f48a678d2f7c291dc5F8fD04805D34F485f",
+      "name": "CRV",
+      "decimals": 18,
+      "symbol": "CRV",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xbB814C46ef7BFB51E3b25600675A6A7B03426973",
+      "name": "Aave Polygon CRV",
+      "decimals": 18,
+      "symbol": "aPolCRV",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x81E7EB2067FDc31308b2dC97A070EDe0634Aa7fd",
+      "name": "Static Aave Polygon CRV",
+      "decimals": 18,
+      "symbol": "stataPolCRV",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61",
+      "name": "SUSHI",
+      "decimals": 18,
+      "symbol": "SUSHI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x474Af312bbfc1d12b6f6e2140D6D50Ed9dA6F839",
+      "name": "Aave Polygon SUSHI",
+      "decimals": 18,
+      "symbol": "aPolSUSHI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xDEF3d6FcFD68af03cCC4818FFd17F57A54Dd93f8",
+      "name": "Static Aave Polygon SUSHI",
+      "decimals": 18,
+      "symbol": "stataPolSUSHI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x9f86bA35a016acE27BD4C37E42a1940A5b2508EF",
+      "name": "GHST",
+      "decimals": 18,
+      "symbol": "GHST",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x9B1330b35DD740242c4622b5f203Bc39Ff40D9c9",
+      "name": "Aave Polygon GHST",
+      "decimals": 18,
+      "symbol": "aPolGHST",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x7f178E419181B8C9CF64fee7D58F24b32ec0F1cc",
+      "name": "Static Aave Polygon GHST",
+      "decimals": 18,
+      "symbol": "stataPolGHST",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB",
+      "name": "BAL",
+      "decimals": 18,
+      "symbol": "BAL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x27EbCb5ba3e4Ab18911dA0bA3350Ec42ceEa4ceE",
+      "name": "Aave Polygon BAL",
+      "decimals": 18,
+      "symbol": "aPolBAL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xb95140824eC44ec97ab10f459aD0768275Eb3e94",
+      "name": "Static Aave Polygon BAL",
+      "decimals": 18,
+      "symbol": "stataPolBAL",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD",
+      "name": "DPI",
+      "decimals": 18,
+      "symbol": "DPI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xeBf20b66BB82a157450C3ad4cab738D629a29749",
+      "name": "Aave Polygon DPI",
+      "decimals": 18,
+      "symbol": "aPolDPI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0x00718266Ae6AbaCe3C14AD0263968eB7F581BC91",
+      "name": "Static Aave Polygon DPI",
+      "decimals": 18,
+      "symbol": "stataPolDPI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xB516d30421d2A0524769A243BBE5e193E78ab35c",
+      "name": "EURS",
+      "decimals": 2,
+      "symbol": "EURS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x6fD1376295392f1F6F9EcCc89bff0e26dDB2aE74",
+      "name": "Aave Polygon EURS",
+      "decimals": 2,
+      "symbol": "aPolEURS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xB5B6c7a13602CF827Cc2F0383E27F8e2DB8dBE64",
+      "name": "Static Aave Polygon EURS",
+      "decimals": 2,
+      "symbol": "stataPolEURS",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xd409F17095a370800A9C352124C6a1e82695203E",
+      "name": "JEUR",
+      "decimals": 18,
+      "symbol": "JEUR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0x58B8d2A77D7d5942fA701a1Dd68e7cF8222750f6",
+      "name": "Aave Polygon JEUR",
+      "decimals": 18,
+      "symbol": "aPolJEUR",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xEf6F8a13a8B2098F13D08A95b32191ddE13693eE",
+      "name": "Static Aave Polygon JEUR",
+      "decimals": 18,
+      "symbol": "stataPolJEUR",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F",
+      "name": "AGEUR",
+      "decimals": 18,
+      "symbol": "AGEUR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 80001,
+      "address": "0xbD3615332c2a12e2fFc41Fe09C4f05e5493e733F",
+      "name": "Aave Polygon AGEUR",
+      "decimals": 18,
+      "symbol": "aPolAGEUR",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 80001,
+      "address": "0xeF5074Dd60e25F8EFd763068C73d34E05815f41f",
+      "name": "Static Aave Polygon AGEUR",
+      "decimals": 18,
+      "symbol": "stataPolAGEUR",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Mumbai" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+      "name": "Aave Avalanche DAI",
+      "decimals": 18,
+      "symbol": "aAvaDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x02F3f6c8A432C1e49f3359d7d36887C25d8A5888",
+      "name": "Static Aave Avalanche DAI",
+      "decimals": 18,
+      "symbol": "stataAvaDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5947BB275c521040051D82396192181b413227A3",
+      "name": "Chainlink Token",
+      "decimals": 18,
+      "symbol": "LINKe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
+      "name": "Aave Avalanche LINK",
+      "decimals": 18,
+      "symbol": "aAvaLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x8B773Ab77Dff01985D438961dBCE58382a70cA52",
+      "name": "Static Aave Avalanche LINK",
+      "decimals": 18,
+      "symbol": "stataAvaLINK",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Avalanche USDC",
+      "decimals": 6,
+      "symbol": "aAvaUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xC509aB7bB4eDbF193b82264D499a7Fc526Cd01F4",
+      "name": "Static Aave Avalanche USDC",
+      "decimals": 6,
+      "symbol": "stataAvaUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x078f358208685046a11C85e8ad32895DED33A249",
+      "name": "Aave Avalanche WBTC",
+      "decimals": 8,
+      "symbol": "aAvaWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xE3C0f42EAF1a4BFe37CbA105e5463564BA7730aE",
+      "name": "Static Aave Avalanche WBTC",
+      "decimals": 8,
+      "symbol": "stataAvaWBTC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
+      "name": "Aave Avalanche WETH",
+      "decimals": 18,
+      "symbol": "aAvaWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf8E24175D01653fd6AA203C2C17B1e4Dd1CA2731",
+      "name": "Static Aave Avalanche WETH",
+      "decimals": 18,
+      "symbol": "stataAvaWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+      "name": "TetherToken",
+      "decimals": 6,
+      "symbol": "USDt",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+      "name": "Aave Avalanche USDT",
+      "decimals": 6,
+      "symbol": "aAvaUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5525Ee69BC1e354B356864187De486fab5AD67d7",
+      "name": "Static Aave Avalanche USDT",
+      "decimals": 6,
+      "symbol": "stataAvaUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Avalanche AAVE",
+      "decimals": 18,
+      "symbol": "aAvaAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xac0746AfD13DEbe2a43a6c8745Fb83Fd2A2909cA",
+      "name": "Static Aave Avalanche AAVE",
+      "decimals": 18,
+      "symbol": "stataAvaAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Avalanche WAVAX",
+      "decimals": 18,
+      "symbol": "aAvaWAVAX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d",
+      "name": "Static Aave Avalanche WAVAX",
+      "decimals": 18,
+      "symbol": "stataAvaWAVAX",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+      "name": "Staked AVAX",
+      "decimals": 18,
+      "symbol": "sAVAX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Avalanche SAVAX",
+      "decimals": 18,
+      "symbol": "aAvaSAVAX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x4F059cA8a2a5BF8895Ee731f2E901cCB769FB95f",
+      "name": "Static Aave Avalanche SAVAX",
+      "decimals": 18,
+      "symbol": "stataAvaSAVAX",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
+      "name": "Frax",
+      "decimals": 18,
+      "symbol": "FRAX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Avalanche FRAX",
+      "decimals": 18,
+      "symbol": "aAvaFRAX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xA3c2ffE702F4cD265B2249AB5f84Fab81FFf6c73",
+      "name": "Static Aave Avalanche FRAX",
+      "decimals": 18,
+      "symbol": "stataAvaFRAX",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b",
+      "name": "Mai Stablecoin",
+      "decimals": 18,
+      "symbol": "MAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
+      "name": "Aave Avalanche MAI",
+      "decimals": 18,
+      "symbol": "aAvaMAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x08cC59E51BB0Bc322B4D251f7262dB864d6150ce",
+      "name": "Static Aave Avalanche MAI",
+      "decimals": 18,
+      "symbol": "stataAvaMAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
+      "name": "Bitcoin",
+      "decimals": 8,
+      "symbol": "BTCb",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
+      "name": "Aave Avalanche BTC.b",
+      "decimals": 8,
+      "symbol": "aAvaBTCb",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x34d768cc830c32DcD743321c09A2A702651bF9a2",
+      "name": "Static Aave Avalanche BTC.b",
+      "decimals": 8,
+      "symbol": "stataAvaBTCb",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Avalanche" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0x676bD5B5d0955925aeCe653C50426940c58036c8",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0xc2E0542ae75DF6ceC02fea12972918a5D18Eb956",
+      "name": "Aave Avalanche DAI",
+      "decimals": 18,
+      "symbol": "aAvaDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0x3A38c4d0444b5fFcc5323b2e86A21aBaaf5FbF26",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x6cC4457C7547E6995ba7bA000851182F94658A51",
+      "name": "Aave Avalanche LINK",
+      "decimals": 18,
+      "symbol": "aAvaLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0xCaC7Ffa82c0f43EBB0FC11FCd32123EcA46626cf",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0xb1c85310a1b809C70fA6806d27Da425C1261F801",
+      "name": "Aave Avalanche USDC",
+      "decimals": 6,
+      "symbol": "aAvaUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0x0EFD8Ad2231c0B9C4d63F892E0a0a59a626Ce88d",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x3d1F7da320eFDE834Cb7974d68591ca65de92FDC",
+      "name": "Aave Avalanche WBTC",
+      "decimals": 8,
+      "symbol": "aAvaWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0xf97b6C636167B529B6f1D729Bd9bC0e2Bd491848",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x812664237ad3DfdaA697B77b7919bBde7486D90E",
+      "name": "Aave Avalanche WETH",
+      "decimals": 18,
+      "symbol": "aAvaWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0xBDE7fbbb1DC89E74B73C54Ad911A1C9685caCD83",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x13f2B2AFCbe58e72b3d275aC197c3f602CC57735",
+      "name": "Aave Avalanche USDT",
+      "decimals": 6,
+      "symbol": "aAvaUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0xfB4CeA030Fa61FC435E922CFDc4bF9C80456E19b",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x8419b35fA4AE8105d3241687a6421abA7303E642",
+      "name": "Aave Avalanche AAVE",
+      "decimals": 18,
+      "symbol": "aAvaAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 43113,
+      "address": "0x2f6179f64FFe203899600Ba26d10979B314eA13D",
+      "name": "WAVAX",
+      "decimals": 18,
+      "symbol": "WAVAX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43113,
+      "address": "0x339f50bCbd874A892fb2c6A56Cf8D85Dd215Bf8e",
+      "name": "Aave Avalanche WAVAX",
+      "decimals": 18,
+      "symbol": "aAvaWAVAX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fuji" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7",
+      "name": "Aave Base WETH",
+      "decimals": 18,
+      "symbol": "aBasWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x468973e3264F2aEba0417A8f2cD0Ec397E738898",
+      "name": "Static Aave Base WETH",
+      "decimals": 18,
+      "symbol": "stataBasWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "name": "Coinbase Wrapped Staked ETH",
+      "decimals": 18,
+      "symbol": "cbETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad",
+      "name": "Aave Base cbETH",
+      "decimals": 18,
+      "symbol": "aBascbETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e",
+      "name": "Static Aave Base cbETH",
+      "decimals": 18,
+      "symbol": "stataBascbETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "name": "USD Base Coin",
+      "decimals": 6,
+      "symbol": "USDbC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0x0a1d576f3eFeF75b330424287a95A366e8281D54",
+      "name": "Aave Base USDbC",
+      "decimals": 6,
+      "symbol": "aBasUSDbC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x6fCe2756794128B1771324caA860965801DCbCdB",
+      "name": "Static Aave Base USDbC",
+      "decimals": 6,
+      "symbol": "stataBasUSDbC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D",
+      "name": "Aave Base wstETH",
+      "decimals": 18,
+      "symbol": "aBaswstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB",
+      "name": "Aave Base USDC",
+      "decimals": 6,
+      "symbol": "aBasUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Base" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
+      "name": "DAI Token",
+      "decimals": 18,
+      "symbol": "mDAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1088,
+      "address": "0x85ABAdDcae06efee2CB5F75f33b6471759eFDE24",
+      "name": "Aave Metis mDAI",
+      "decimals": 18,
+      "symbol": "aMetmDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0x66a2E4cff95BDE6403Ed5541B396aA0B171e5509",
+      "name": "Static Aave Metis mDAI",
+      "decimals": 18,
+      "symbol": "stataMetmDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
+      "name": "Metis Token",
+      "decimals": 18,
+      "symbol": "Metis",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1088,
+      "address": "0x7314Ef2CA509490f65F52CC8FC9E0675C66390b8",
+      "name": "Aave Metis METIS",
+      "decimals": 18,
+      "symbol": "aMetMETIS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0x5DE732A094A0ceF0eBFEcF0A916bDAB29650a784",
+      "name": "Static Aave Metis METIS",
+      "decimals": 18,
+      "symbol": "stataMetMETIS",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
+      "name": "USDC Token",
+      "decimals": 6,
+      "symbol": "mUSDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1088,
+      "address": "0x885C8AEC5867571582545F894A5906971dB9bf27",
+      "name": "Aave Metis mUSDC",
+      "decimals": 6,
+      "symbol": "aMetmUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0xb24451C231C6e6A60aC46f45E98a267caae898f4",
+      "name": "Static Aave Metis mUSDC",
+      "decimals": 6,
+      "symbol": "stataMetmUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC",
+      "name": "USDT Token",
+      "decimals": 6,
+      "symbol": "mUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1088,
+      "address": "0xd9fa75D14c26720d5ce7eE2530793a823e8f07b9",
+      "name": "Aave Metis mUSDT",
+      "decimals": 6,
+      "symbol": "aMetmUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0xAAea6F041425B813760dA201d08d46487034A266",
+      "name": "Static Aave Metis mUSDT",
+      "decimals": 6,
+      "symbol": "stataMetmUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0x420000000000000000000000000000000000000A",
+      "name": "Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1088,
+      "address": "0x8acAe35059C9aE27709028fF6689386a44c09f3a",
+      "name": "Aave Metis WETH",
+      "decimals": 18,
+      "symbol": "aMetWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 1088,
+      "address": "0x2f1606864d6322c54b50a1762D4a1ca67f42d23d",
+      "name": "Static Aave Metis WETH",
+      "decimals": 18,
+      "symbol": "stataMetWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Metis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
+      "name": "Wrapped Ether on xDai",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 100,
+      "address": "0xa818F1B57c201E092C4A2017A91815034326Efd1",
+      "name": "Aave Gnosis WETH",
+      "decimals": 18,
+      "symbol": "aGnoWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0xD843FB478c5aA9759FeA3f3c98D467e2F136190a",
+      "name": "Static Aave Gnosis WETH",
+      "decimals": 18,
+      "symbol": "stataGnoWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
+      "name": "Wrapped liquid staked Ether 2.0 from ...",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 100,
+      "address": "0x23e4E76D01B2002BE436CE8d6044b0aA2f68B68a",
+      "name": "Aave Gnosis wstETH",
+      "decimals": 18,
+      "symbol": "aGnowstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0xECfD0638175e291BA3F784A58FB9D38a25418904",
+      "name": "Static Aave Gnosis wstETH",
+      "decimals": 18,
+      "symbol": "stataGnowstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
+      "name": "Gnosis Token on xDai",
+      "decimals": 18,
+      "symbol": "GNO",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 100,
+      "address": "0xA1Fa064A85266E2Ca82DEe5C5CcEC84DF445760e",
+      "name": "Aave Gnosis GNO",
+      "decimals": 18,
+      "symbol": "aGnoGNO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0x2D737e2B0e175f05D0904C208d6C4e40da570f65",
+      "name": "Static Aave Gnosis GNO",
+      "decimals": 18,
+      "symbol": "stataGnoGNO",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
+      "name": "USD//C on xDai",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 100,
+      "address": "0xc6B7AcA6DE8a6044E0e32d0c841a89244A10D284",
+      "name": "Aave Gnosis USDC",
+      "decimals": 6,
+      "symbol": "aGnoUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0x270bA1f35D8b87510D24F693fcCc0da02e6E4EeB",
+      "name": "Static Aave Gnosis USDC",
+      "decimals": 6,
+      "symbol": "stataGnoUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
+      "name": "Wrapped XDAI",
+      "decimals": 18,
+      "symbol": "WXDAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 100,
+      "address": "0xd0Dd6cEF72143E22cCED4867eb0d5F2328715533",
+      "name": "Aave Gnosis WXDAI",
+      "decimals": 18,
+      "symbol": "aGnoWXDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0x7f0EAE87Df30C468E0680c83549D0b3DE7664D4B",
+      "name": "Static Aave Gnosis WXDAI",
+      "decimals": 18,
+      "symbol": "stataGnoWXDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
+      "name": "Monerium EUR emoney",
+      "decimals": 18,
+      "symbol": "EURe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 100,
+      "address": "0xEdBC7449a9b594CA4E053D9737EC5Dc4CbCcBfb2",
+      "name": "Aave Gnosis EURe",
+      "decimals": 18,
+      "symbol": "aGnoEURe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0x8418D17640a74F1614AC3E1826F29e78714488a1",
+      "name": "Static Aave Gnosis EURe",
+      "decimals": 18,
+      "symbol": "stataGnoEURe",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
+      "name": "Savings xDAI",
+      "decimals": 18,
+      "symbol": "sDAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 100,
+      "address": "0x7a5c3860a77a8DC1b225BD46d0fb2ac1C6D191BC",
+      "name": "Aave Gnosis sDAI",
+      "decimals": 18,
+      "symbol": "aGnosDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 100,
+      "address": "0xf3f45960f8dE00D8ED614D445a5a268c6F6Dec4f",
+      "name": "Static Aave Gnosis sDAI",
+      "decimals": 18,
+      "symbol": "stataGnosDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Gnosis" }
+    },
+    {
+      "chainId": 56,
+      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "name": "PancakeSwap Token",
+      "decimals": 18,
+      "symbol": "Cake",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 56,
+      "address": "0x4199CC1F5ed0d796563d7CcB2e036253E2C18281",
+      "name": "Aave BNB Smart Chain CAKE",
+      "decimals": 18,
+      "symbol": "aBnbCAKE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3BNB" }
+    },
+    {
+      "chainId": 56,
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "name": "Wrapped BNB",
+      "decimals": 18,
+      "symbol": "WBNB",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 56,
+      "address": "0x9B00a09492a626678E5A3009982191586C444Df9",
+      "name": "Aave BNB Smart Chain WBNB",
+      "decimals": 18,
+      "symbol": "aBnbWBNB",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3BNB" }
+    },
+    {
+      "chainId": 56,
+      "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "name": "BTCB Token",
+      "decimals": 18,
+      "symbol": "BTCB",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 56,
+      "address": "0x56a7ddc4e848EbF43845854205ad71D5D5F72d3D",
+      "name": "Aave BNB Smart Chain BTCB",
+      "decimals": 18,
+      "symbol": "aBnbBTCB",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3BNB" }
+    },
+    {
+      "chainId": 56,
+      "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "name": "Ethereum Token",
+      "decimals": 18,
+      "symbol": "ETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 56,
+      "address": "0x2E94171493fAbE316b6205f1585779C887771E2F",
+      "name": "Aave BNB Smart Chain ETH",
+      "decimals": 18,
+      "symbol": "aBnbETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3BNB" }
+    },
+    {
+      "chainId": 56,
+      "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+      "name": "USD Coin",
+      "decimals": 18,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 56,
+      "address": "0x00901a076785e0906d1028c7d6372d247bec7d61",
+      "name": "Aave BNB Smart Chain USDC",
+      "decimals": 18,
+      "symbol": "aBnbUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3BNB" }
+    },
+    {
+      "chainId": 56,
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "name": "Tether USD",
+      "decimals": 18,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 56,
+      "address": "0xa9251ca9DE909CB71783723713B21E4233fbf1B1",
+      "name": "Aave BNB Smart Chain USDT",
+      "decimals": 18,
+      "symbol": "aBnbUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3BNB" }
+    },
+    {
+      "chainId": 56,
+      "address": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409",
+      "name": "First Digital USD",
+      "decimals": 18,
+      "symbol": "FDUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 56,
+      "address": "0x75bd1A659bdC62e4C313950d44A2416faB43E785",
+      "name": "Aave BNB Smart Chain FDUSD",
+      "decimals": 18,
+      "symbol": "aBnbFDUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3BNB" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0xe73C6dA65337ef99dBBc014C7858973Eba40a10b",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0x48d70B5EF8aBF23944322c291D183EdCb3d1d09e",
+      "name": "Aave Arbitrum DAI",
+      "decimals": 18,
+      "symbol": "aArbDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0xB35Ec24CACC44C5F161bF098Ed5320BCbcda34FD",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0xB7C5a28bE43543eccE023A63d69b88d441cB6a28",
+      "name": "Aave Arbitrum LINK",
+      "decimals": 18,
+      "symbol": "aArbLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0xd513E4537510C75E24f941f159B7CAFA74E7B3B9",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0xC68eE187eb44227dCEaB89ce789193027887a30d",
+      "name": "Aave Arbitrum USDC",
+      "decimals": 6,
+      "symbol": "aArbUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0x1377b75237a9ee83aC0C76dE258E68e875d96334",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0x65Ae5B31CDC763F58cc70fC8780E07DEBccB4D4e",
+      "name": "Aave Arbitrum WBTC",
+      "decimals": 8,
+      "symbol": "aArbWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0x4284186b053ACdBA28E8B26E99475d891533086a",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0x878092a3313bD2437ffbb6dC43638C0a1Cd0A8D2",
+      "name": "Aave Arbitrum WETH",
+      "decimals": 18,
+      "symbol": "aArbWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0x8dA9412AbB78db20d0B496573D9066C474eA21B8",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0xcDA8CEF39c407c2C00818C9A1aD99067fF06c142",
+      "name": "Aave Arbitrum USDT",
+      "decimals": 6,
+      "symbol": "aArbUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0xD8A70FC58BC069CFE6529EBF0c1Db067f2b5347E",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0xA4be980CE12b9bfe1C2976bD7Fc923b516Dcd4Ec",
+      "name": "Aave Arbitrum AAVE",
+      "decimals": 18,
+      "symbol": "aArbAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 421613,
+      "address": "0x322bCff7b69F832B1a1F56E6BC600C9229CFb907",
+      "name": "EURS",
+      "decimals": 2,
+      "symbol": "EURS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 421613,
+      "address": "0x1dbe58049F741b78B87700C979e72C666f63c525",
+      "name": "Aave Arbitrum EURS",
+      "decimals": 2,
+      "symbol": "aArbEURS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ArbitrumGoerli" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Dai Stablecoin",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+      "name": "Aave Arbitrum DAI",
+      "decimals": 18,
+      "symbol": "aArbDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xc91c5297d7E161aCC74b482aAfCc75B85cc0bfeD",
+      "name": "Static Aave Arbitrum DAI",
+      "decimals": 18,
+      "symbol": "stataArbDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
+      "name": "ChainLink Token",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
+      "name": "Aave Arbitrum LINK",
+      "decimals": 18,
+      "symbol": "aArbLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x27dE098EF2772386cBCf1a4c8BEb886368b7F9a9",
+      "name": "Static Aave Arbitrum LINK",
+      "decimals": 18,
+      "symbol": "stataArbLINK",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+      "name": "USD Coin (Arb1)",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Arbitrum USDC",
+      "decimals": 6,
+      "symbol": "aArbUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x0Bc9E52051f553E75550CA22C196bf132c52Cf0B",
+      "name": "Static Aave Arbitrum USDC",
+      "decimals": 6,
+      "symbol": "stataArbUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+      "name": "Wrapped BTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x078f358208685046a11C85e8ad32895DED33A249",
+      "name": "Aave Arbitrum WBTC",
+      "decimals": 8,
+      "symbol": "aArbWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x32B95Fbe04e5a51cF99FeeF4e57Cf7e3FC9c5A93",
+      "name": "Static Aave Arbitrum WBTC",
+      "decimals": 8,
+      "symbol": "stataArbWBTC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
+      "name": "Aave Arbitrum WETH",
+      "decimals": 18,
+      "symbol": "aArbWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x352F3475716261dCC991Bd5F2aF973eB3D0F5878",
+      "name": "Static Aave Arbitrum WETH",
+      "decimals": 18,
+      "symbol": "stataArbWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+      "name": "Aave Arbitrum USDT",
+      "decimals": 6,
+      "symbol": "aArbUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xb165a74407fE1e519d6bCbDeC1Ed3202B35a4140",
+      "name": "Static Aave Arbitrum USDT",
+      "decimals": 6,
+      "symbol": "stataArbUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196",
+      "name": "Aave Token",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Arbitrum AAVE",
+      "decimals": 18,
+      "symbol": "aArbAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x1C0c8EcED17aE093b3C1a1a8fFeBE2E9513a9346",
+      "name": "Static Aave Arbitrum AAVE",
+      "decimals": 18,
+      "symbol": "stataArbAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xD22a58f79e9481D1a88e00c343885A588b34b68B",
+      "name": "STASIS EURS Token",
+      "decimals": 2,
+      "symbol": "EURS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Arbitrum EURS",
+      "decimals": 2,
+      "symbol": "aArbEURS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x9a40747BE51185A416B181789B671E78a8d045dD",
+      "name": "Static Aave Arbitrum EURS",
+      "decimals": 2,
+      "symbol": "stataArbEURS",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Arbitrum wstETH",
+      "decimals": 18,
+      "symbol": "aArbwstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x7775d4Ae4Dbb79a624fB96AAcDB8Ca74F671c0DF",
+      "name": "Static Aave Arbitrum wstETH",
+      "decimals": 18,
+      "symbol": "stataArbwstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
+      "name": "Mai Stablecoin",
+      "decimals": 18,
+      "symbol": "MAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Arbitrum MAI",
+      "decimals": 18,
+      "symbol": "aArbMAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xB4a0a2692D82301703B27082Cda45B083F68CAcE",
+      "name": "Static Aave Arbitrum MAI",
+      "decimals": 18,
+      "symbol": "stataArbMAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
+      "name": "Rocket Pool ETH",
+      "decimals": 18,
+      "symbol": "rETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
+      "name": "Aave Arbitrum rETH",
+      "decimals": 18,
+      "symbol": "aArbrETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x68235105d6d33A19369D24b746cb7481FB2b34fd",
+      "name": "Static Aave Arbitrum rETH",
+      "decimals": 18,
+      "symbol": "stataArbrETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
+      "name": "LUSD Stablecoin",
+      "decimals": 18,
+      "symbol": "LUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
+      "name": "Aave Arbitrum LUSD",
+      "decimals": 18,
+      "symbol": "aArbLUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xDbB6314b5b07E63B7101844c0346309B79f8C20A",
+      "name": "Static Aave Arbitrum LUSD",
+      "decimals": 18,
+      "symbol": "stataArbLUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDCn",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
+      "name": "Aave Arbitrum USDCn",
+      "decimals": 6,
+      "symbol": "aArbUSDCn",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x7CFaDFD5645B50bE87d546f42699d863648251ad",
+      "name": "Static Aave Arbitrum USDCn",
+      "decimals": 6,
+      "symbol": "stataArbUSDCn",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+      "name": "Frax",
+      "decimals": 18,
+      "symbol": "FRAX",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
+      "name": "Aave Arbitrum FRAX",
+      "decimals": 18,
+      "symbol": "aArbFRAX",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x89AEc2023f89E26Dbb7eaa7a98fe3996f9d112A8",
+      "name": "Static Aave Arbitrum FRAX",
+      "decimals": 18,
+      "symbol": "stataArbFRAX",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "name": "Arbitrum",
+      "decimals": 18,
+      "symbol": "ARB",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42161,
+      "address": "0x6533afac2E7BCCB20dca161449A13A32D391fb00",
+      "name": "Aave Arbitrum ARB",
+      "decimals": 18,
+      "symbol": "aArbARB",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x9b5637d7952BC9fa2D693aAE51f3103760Bf2693",
+      "name": "Static Aave Arbitrum ARB",
+      "decimals": 18,
+      "symbol": "stataArbARB",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Arbitrum" }
+    },
+    {
+      "chainId": 420,
+      "address": "0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0x25E84646dF74FB9BCa68Aa8d018F7883ecE4B307",
+      "name": "Aave Optimism DAI",
+      "decimals": 18,
+      "symbol": "aOptDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 420,
+      "address": "0xBA25de9a7DC623B30799F33B770d31B44c2C3b77",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0xEf51CEE544Dc4f2046da04656a19a28d5C83BB60",
+      "name": "Aave Optimism LINK",
+      "decimals": 18,
+      "symbol": "aOptLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 420,
+      "address": "0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0x99A8acb66c7ED63141b868a603C2337B24f85B22",
+      "name": "Aave Optimism USDC",
+      "decimals": 6,
+      "symbol": "aOptUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 420,
+      "address": "0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0xa821B2BD2364194d24d3Cd92e0F450B0AD5823d0",
+      "name": "Aave Optimism WBTC",
+      "decimals": 8,
+      "symbol": "aOptWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 420,
+      "address": "0x4778caf7b5DBD3934c3906c2909653eB1e0E601f",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0x18c9297E82dEf404a9472e7F208840Ae8261DFe8",
+      "name": "Aave Optimism WETH",
+      "decimals": 18,
+      "symbol": "aOptWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 420,
+      "address": "0xf79129ae303764D79287FfF0c857003E95fC1506",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0x053Ac73bCD255525123872E2248a06C9794f29c7",
+      "name": "Aave Optimism USDT",
+      "decimals": 6,
+      "symbol": "aOptUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 420,
+      "address": "0x20288ac1Ef7711448DF03283E6B580710E73393a",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0x79655b4d49d52fEDB9503A20a55ef5762dA17B18",
+      "name": "Aave Optimism AAVE",
+      "decimals": 18,
+      "symbol": "aOptAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 420,
+      "address": "0xC21D17E8E839C1286BBaa297d932AE9b33d7985b",
+      "name": "SUSD",
+      "decimals": 18,
+      "symbol": "SUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 420,
+      "address": "0xaf68aDbd3d8BBaC6c59c32490c01Cf8F6dB1adAE",
+      "name": "Aave Optimism SUSD",
+      "decimals": 18,
+      "symbol": "aOptSUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3OptimismGoerli" }
+    },
+    {
+      "chainId": 10,
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Dai Stablecoin",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+      "name": "Aave Optimism DAI",
+      "decimals": 18,
+      "symbol": "aOptDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x6dDc64289bE8a71A707fB057d5d07Cc756055d6e",
+      "name": "Static Aave Optimism DAI",
+      "decimals": 18,
+      "symbol": "stataOptDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
+      "name": "ChainLink Token",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
+      "name": "Aave Optimism LINK",
+      "decimals": 18,
+      "symbol": "aOptLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x39BCf217ACc4Bf2fCaF7BC8800E69D986912c75e",
+      "name": "Static Aave Optimism LINK",
+      "decimals": 18,
+      "symbol": "stataOptLINK",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Optimism USDC",
+      "decimals": 6,
+      "symbol": "aOptUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x9F281eb58fd98ad98EDe0fc4C553AD4D73e7Ca2C",
+      "name": "Static Aave Optimism USDC",
+      "decimals": 6,
+      "symbol": "stataOptUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
+      "name": "Wrapped BTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x078f358208685046a11C85e8ad32895DED33A249",
+      "name": "Aave Optimism WBTC",
+      "decimals": 8,
+      "symbol": "aOptWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x6d998FeEFC7B3664eaD09CAf02b5a0fc2E365F18",
+      "name": "Static Aave Optimism WBTC",
+      "decimals": 8,
+      "symbol": "stataOptWBTC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
+      "name": "Aave Optimism WETH",
+      "decimals": 18,
+      "symbol": "aOptWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x98d69620C31869fD4822ceb6ADAB31180475FD37",
+      "name": "Static Aave Optimism WETH",
+      "decimals": 18,
+      "symbol": "stataOptWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+      "name": "Aave Optimism USDT",
+      "decimals": 6,
+      "symbol": "aOptUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x035c93db04E5aAea54E6cd0261C492a3e0638b37",
+      "name": "Static Aave Optimism USDT",
+      "decimals": 6,
+      "symbol": "stataOptUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x76FB31fb4af56892A25e32cFC43De717950c9278",
+      "name": "Aave Token",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Optimism AAVE",
+      "decimals": 18,
+      "symbol": "aOptAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0xae0Ca1B1Bc6cac26981B5e2b9c40f8Ce8A9082eE",
+      "name": "Static Aave Optimism AAVE",
+      "decimals": 18,
+      "symbol": "stataOptAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
+      "name": "Synth sUSD",
+      "decimals": 18,
+      "symbol": "sUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Optimism SUSD",
+      "decimals": 18,
+      "symbol": "aOptSUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x3A956E2Fcc7e71Ea14b0257d40BEbdB287d19652",
+      "name": "Static Aave Optimism SUSD",
+      "decimals": 18,
+      "symbol": "stataOptSUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x4200000000000000000000000000000000000042",
+      "name": "Optimism",
+      "decimals": 18,
+      "symbol": "OP",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Optimism OP",
+      "decimals": 18,
+      "symbol": "aOptOP",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0xd4F1Cf9A038269FE8F03745C2875591Ad6438ab1",
+      "name": "Static Aave Optimism OP",
+      "decimals": 18,
+      "symbol": "stataOptOP",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Optimism wstETH",
+      "decimals": 18,
+      "symbol": "aOptwstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0xb972abef80046A57409e37a7DF5dEf2638917516",
+      "name": "Static Aave Optimism wstETH",
+      "decimals": 18,
+      "symbol": "stataOptwstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0xc40F949F8a4e094D1b49a23ea9241D289B7b2819",
+      "name": "LUSD Stablecoin",
+      "decimals": 18,
+      "symbol": "LUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x8Eb270e296023E9D92081fdF967dDd7878724424",
+      "name": "Aave Optimism LUSD",
+      "decimals": 18,
+      "symbol": "aOptLUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x84648dc3Cefb601bc28a49A07a1A8Bad04D30Ad3",
+      "name": "Static Aave Optimism LUSD",
+      "decimals": 18,
+      "symbol": "stataOptLUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0xdFA46478F9e5EA86d57387849598dbFB2e964b02",
+      "name": "Mai Stablecoin",
+      "decimals": 18,
+      "symbol": "MAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
+      "name": "Aave Optimism MAI",
+      "decimals": 18,
+      "symbol": "aOptMAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x60495bC8D8Baf7E866888ecC00491e37B47dfF24",
+      "name": "Static Aave Optimism MAI",
+      "decimals": 18,
+      "symbol": "stataOptMAI",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
+      "name": "Rocket Pool ETH",
+      "decimals": 18,
+      "symbol": "rETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
+      "name": "Aave Optimism rETH",
+      "decimals": 18,
+      "symbol": "aOptrETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0xf9ce3c97b4b54F3D16861420f4816D9f68190B7B",
+      "name": "Static Aave Optimism rETH",
+      "decimals": 18,
+      "symbol": "stataOptrETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 10,
+      "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDCn",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 10,
+      "address": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
+      "name": "Aave Optimism USDCn",
+      "decimals": 6,
+      "symbol": "aOptUSDCn",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Optimism" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0x99Cb50E6bE36C8096e6731ED7738d93090B710DD",
+      "name": "Aave Ethereum DAI",
+      "decimals": 18,
+      "symbol": "aEthDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0x279cBF5B7e3651F03CB9b71A9E7A3c924b267801",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0x55DD1cDFE13fCa68F6D14D452E2a20cABe191841",
+      "name": "Aave Ethereum LINK",
+      "decimals": 18,
+      "symbol": "aEthLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0x2C9678042D52B97D27f2bD2947F7111d93F3dD0D",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0x6E4A1BcBd3C3038e6957207cadC1A17092DC7ba3",
+      "name": "Aave Ethereum USDC",
+      "decimals": 6,
+      "symbol": "aEthUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0x5EA79f3190ff37418d42F9B2618688494dBD9693",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0x43AE2a14AD923915aa85d683D1b7d0d320ae87B2",
+      "name": "Aave Ethereum WBTC",
+      "decimals": 8,
+      "symbol": "aEthWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0xb123dCe044EdF0a755505d9623Fba16C0F41cae9",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0x9E8CEC4F2F4596141B62e88966D7167E9db555aD",
+      "name": "Aave Ethereum WETH",
+      "decimals": 18,
+      "symbol": "aEthWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0x186C0C26c45A8DA1Da34339ee513624a9609156d",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0x54Cb3ba40705d7CCB18c1C24edD8B602a88eF4CE",
+      "name": "Aave Ethereum USDT",
+      "decimals": 6,
+      "symbol": "aEthUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0xfc2921bE7B2762F0E87039905d6019B0fF5978a8",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0xC5209E1325A0DBeb28143D82e7E1DE709456Fc8a",
+      "name": "Aave Ethereum AAVE",
+      "decimals": 18,
+      "symbol": "aEthAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 534351,
+      "address": "0xDf40f3a3566b4271450083f1Ad5732590BA47575",
+      "name": "EURS",
+      "decimals": 2,
+      "symbol": "EURS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534351,
+      "address": "0xD49d1CF2886B1c95A94e8a9066E8b298646716b6",
+      "name": "Aave Ethereum EURS",
+      "decimals": 2,
+      "symbol": "aEthEURS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3ScrollSepolia" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x77FDe93fEe5fe272dC17d799cb61447431E6Eba2",
+      "name": "DAI",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0x2B101eFBB4dFf1fbB8f87f02C560Fb8AC773aFC5",
+      "name": "Aave Fantom DAI",
+      "decimals": 18,
+      "symbol": "aFanDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x1Da81b322451C51D2580B373974a999d5A9C2D21",
+      "name": "LINK",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0x7d18f0834A38cA6B0e58CC671900f0017E6d55Ff",
+      "name": "Aave Fantom LINK",
+      "decimals": 18,
+      "symbol": "aFanLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x66F61903D7FEC18048bEc2e792f272cb8B657733",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0xFFF336d1310D5Ba18CfFb2006afa762EC7d7a4fb",
+      "name": "Aave Fantom USDC",
+      "decimals": 6,
+      "symbol": "aFanUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x2c95d10bA4BBEc79e562e8B3f48687751808C925",
+      "name": "WBTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0x17A6c7f20e804a558E0674c0Eef1F69442770596",
+      "name": "Aave Fantom WBTC",
+      "decimals": 8,
+      "symbol": "aFanWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0x0e426e6e6B226D8bd566e417b90411Dcf14DF861",
+      "name": "Aave Fantom WETH",
+      "decimals": 18,
+      "symbol": "aFanWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x9DFf9E93B1e513379cf820504D642c6891d8F7CC",
+      "name": "USDT",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0x97293798206Fc4FDF23D6b536ED3D694599e35BC",
+      "name": "Aave Fantom USDT",
+      "decimals": 6,
+      "symbol": "aFanUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x52D800ca262522580CeBAD275395ca6e7598C014",
+      "name": "AAVE",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0xf10e04c48f14d50F7378e01a1EEf7498D9a27d08",
+      "name": "Aave Fantom AAVE",
+      "decimals": 18,
+      "symbol": "aFanAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A",
+      "name": "WFTM",
+      "decimals": 18,
+      "symbol": "WFTM",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0xFA3AdA68fA9512B2e22a5fac6b6F0231068A2b36",
+      "name": "Aave Fantom WFTM",
+      "decimals": 18,
+      "symbol": "aFanWFTM",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0xc199807AF4fEDB02EE567Ed0FeB814A077de4802",
+      "name": "CRV",
+      "decimals": 18,
+      "symbol": "CRV",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0x01CEf190E98cE7B8CA722e33C0D3aF456106103d",
+      "name": "Aave Fantom CRV",
+      "decimals": 18,
+      "symbol": "aFanCRV",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 4002,
+      "address": "0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2",
+      "name": "SUSHI",
+      "decimals": 18,
+      "symbol": "SUSHI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4002,
+      "address": "0xac8fd53423708ac1C49E5486485854FBE1487e65",
+      "name": "Aave Fantom SUSHI",
+      "decimals": 18,
+      "symbol": "aFanSUSHI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3FantomTestnet" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+      "name": "Dai Stablecoin",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+      "name": "Aave Fantom DAI",
+      "decimals": 18,
+      "symbol": "aFanDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
+      "name": "ChainLink",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
+      "name": "Aave Fantom LINK",
+      "decimals": 18,
+      "symbol": "aFanLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Fantom USDC",
+      "decimals": 6,
+      "symbol": "aFanUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+      "name": "Bitcoin",
+      "decimals": 8,
+      "symbol": "BTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0x078f358208685046a11C85e8ad32895DED33A249",
+      "name": "Aave Fantom WBTC",
+      "decimals": 8,
+      "symbol": "aFanWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+      "name": "Ethereum",
+      "decimals": 18,
+      "symbol": "ETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
+      "name": "Aave Fantom WETH",
+      "decimals": 18,
+      "symbol": "aFanWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
+      "name": "Frapped USDT",
+      "decimals": 6,
+      "symbol": "fUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+      "name": "Aave Fantom USDT",
+      "decimals": 6,
+      "symbol": "aFanUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
+      "name": "Aave",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Fantom AAVE",
+      "decimals": 18,
+      "symbol": "aFanAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "name": "Wrapped Fantom",
+      "decimals": 18,
+      "symbol": "WFTM",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Fantom WFTM",
+      "decimals": 18,
+      "symbol": "aFanWFTM",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
+      "name": "Curve DAO",
+      "decimals": 18,
+      "symbol": "CRV",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Fantom CRV",
+      "decimals": 18,
+      "symbol": "aFanCRV",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    },
+    {
+      "chainId": 250,
+      "address": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
+      "name": "Sushi",
+      "decimals": 18,
+      "symbol": "SUSHI",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 250,
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Fantom SUSHI",
+      "decimals": 18,
+      "symbol": "aFanSUSHI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": { "pool": "AaveV3Fantom" }
+    }
+  ]
+}

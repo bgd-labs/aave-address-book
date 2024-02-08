@@ -1,7 +1,6 @@
 import {Hex, zeroAddress} from 'viem';
 import {ReserveData} from '../configs/types';
 import {generateSolidityConstants, wrapIntoSolidityLibrary} from './utils';
-import {ChainId} from '@bgd-labs/js-utils';
 
 /**
  * As symbols are used as variable name in Solidity and Javascript there are certain characters that are not allowed and should be replaced.
@@ -59,7 +58,7 @@ export function fixSymbol(symbol: string, _underlying: string) {
 }
 
 export function generateAssetsLibrary(
-  chainId: ChainId,
+  chainId: number,
   reservesData: ReserveData[],
   libraryName: string,
 ) {
