@@ -66,7 +66,6 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
   return (
     <div className="w-full max-w-2xl mb-10">
       <Box
-        type="search"
         className={cn('group border-brand-900 border', {
           ['border-b-0']: results.length > 0,
         })}
@@ -108,13 +107,13 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
                   {result.item.path.map((p, i) => (
                     <span
                       key={i}
-                      className="text-brand-900 text-xs font-semibold leading-none rounded-sm bg-brand-300 py-1 px-1.5"
+                      className="text-brand-900 text-xs font-semibold leading-none rounded-sm bg-brand-100 border border-brand-300 py-1 px-1.5"
                     >
                       {p}
                     </span>
                   ))}
                 </div>
-                <div className="font-mono text-xs text-brand-500 truncate px-0.5">
+                <div className="font-mono text-xs text-brand-500 truncate px-0.5 w-60 sm:w-full">
                   {result.item.value}
                 </div>
               </div>
