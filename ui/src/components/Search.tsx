@@ -64,14 +64,15 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
   }, [search, performSearch]);
 
   return (
-    <div className="w-full max-w-xl mb-10">
+    <div className="w-full max-w-2xl mb-10">
       <Box
+        type="search"
         className={cn('group border-brand-900 border', {
           ['border-b-0']: results.length > 0,
         })}
       >
         <svg
-          className="w-6 h-6 group-focus-within:text-blue-500 absolute top-1/2 left-2 -translate-y-1/2 text-brand-500 transition-all"
+          className="w-7 h-7 group-focus-within:text-blue-500 absolute top-1/2 left-3 -translate-y-1/2 text-brand-500 transition-all"
           fill="none"
           viewBox="0 0 24 24"
         >
@@ -87,7 +88,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="outline-none py-2 pl-9 pr-9 w-full border border-2 border-transparent focus:border-blue-200 transition-all"
+          className="outline-none py-3 px-11 w-full text-xl border border-2 border-transparent focus:border-blue-200 transition-all"
         />
         <div className="text-brand-500 text-xs absolute top-1/2 right-3 -translate-y-1/2">
           {search !== '' && results.length}
@@ -95,18 +96,29 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
       </Box>
       {results.length !== 0 &&
         results.map((result) => (
-          <Box className="px-3 pt-1 pb-2" key={result.item.searchPath}>
-            {result.item.chainId}
-            <ChainIcon chainId={result.item.chainId} />
-            <div>
-              {result.item.path.map((p, i) => (
-                <span key={i} className="text-brand-900 text-sm">
-                  {p}
-                  {i !== result.item.path.length - 1 && <span> / </span>}
-                </span>
-              ))}
-            </div>
-            <div className="font-mono text-xs">{result.item.value}</div>
+          <Box key={result.item.searchPath} isHoverable>
+            <a
+              className="px-3 pt-4 pb-4 flex gap-3 cursor-pointer"
+              href={result.item.link}
+              target='_blank'
+            >
+              <ChainIcon chainId={result.item.chainId} />
+              <div className="leading-none">
+                <div className="mb-2 flex flex-wrap gap-1">
+                  {result.item.path.map((p, i) => (
+                    <span
+                      key={i}
+                      className="text-brand-900 text-xs font-semibold leading-none rounded-sm bg-brand-300 py-1 px-1.5"
+                    >
+                      {p}
+                    </span>
+                  ))}
+                </div>
+                <div className="font-mono text-xs text-brand-500 truncate px-0.5">
+                  {result.item.value}
+                </div>
+              </div>
+            </a>
           </Box>
         ))}
     </div>

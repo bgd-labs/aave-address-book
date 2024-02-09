@@ -13,6 +13,8 @@ import optimismIcon from '@/assets/chains/optimism.svg';
 import unknownIcon from '@/assets/chains/unknown.svg';
 import polygonZkEvmIcon from '@/assets/chains/polygonZkEvm.svg';
 import scrollIcon from '@/assets/chains/scroll.svg';
+import ethereumTestnetIcon from '@/assets/chains/ethereumTestnet.svg';
+import fantomOperaIcon from '@/assets/chains/fantomOpera.svg';
 
 type Props = {
   chainId?: number | null;
@@ -42,6 +44,20 @@ const getIcon = (chainId: number) => {
       return avalancheIcon;
     case 534352:
       return scrollIcon;
+    case 250:
+      return fantomOperaIcon;
+    case 5: 
+      return ethereumTestnetIcon;
+    case 4002:
+      return ethereumTestnetIcon;
+    case 11155111:
+      return ethereumTestnetIcon;
+    case 534351:
+      return ethereumTestnetIcon;
+    case 80001:
+      return ethereumTestnetIcon;
+    case 43113:
+      return ethereumTestnetIcon;
     default:
       return unknownIcon;
   }
