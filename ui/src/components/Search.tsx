@@ -1,10 +1,11 @@
 'use client';
+
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { cn } from '@/utils/cn';
 import { type Address } from '@/types';
 import Fuse, { FuseResult } from 'fuse.js';
 import { Box } from './Box';
-import { ChainIcon } from '@/components/ChainIcon';
+import { SearchResult } from './SearchResult';
 
 const fuseOptions = {
   isCaseSensitive: false,
@@ -89,36 +90,10 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
           onChange={(e) => setSearch(e.target.value)}
           className="outline-none py-3 px-11 w-full text-xl border border-2 border-transparent focus:border-blue-200 transition-all"
         />
-        <div className="text-brand-500 text-xs absolute top-1/2 right-3 -translate-y-1/2">
-          {search !== '' && results.length}
-        </div>
       </Box>
       {results.length !== 0 &&
         results.map((result) => (
-          <Box key={result.item.searchPath} isHoverable>
-            <a
-              className="px-3 pt-4 pb-4 flex gap-3 cursor-pointer"
-              href={result.item.link}
-              target='_blank'
-            >
-              <ChainIcon chainId={result.item.chainId} />
-              <div className="leading-none">
-                <div className="mb-2 flex flex-wrap gap-1">
-                  {result.item.path.map((p, i) => (
-                    <span
-                      key={i}
-                      className="text-brand-900 text-xs font-semibold leading-none rounded-sm bg-brand-100 border border-brand-300 py-1 px-1.5"
-                    >
-                      {p}
-                    </span>
-                  ))}
-                </div>
-                <div className="font-mono text-xs text-brand-500 truncate px-0.5 w-60 sm:w-full">
-                  {result.item.value}
-                </div>
-              </div>
-            </a>
-          </Box>
+          <SearchResult key={result.item.searchPath} result={result} />
         ))}
     </div>
   );
