@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-08T12:39:46.221Z",
-  "version": { "major": 3, "minor": 0, "patch": 0 },
+  "timestamp": "2024-02-10T00:45:27.953Z",
+  "version": { "major": 3, "minor": 0, "patch": 1 },
   "tokens": [
     {
       "chainId": 1,
@@ -6702,6 +6702,66 @@
       "extensions": {
         "pool": "AaveV3Optimism",
         "underlying": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x5300000000000000000000000000000000000004",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534352,
+      "address": "0xf301805bE1Df81102C957f6d4Ce29d2B8c056B2a",
+      "name": "Aave Scroll WETH",
+      "decimals": 18,
+      "symbol": "aScrWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0x5300000000000000000000000000000000000004"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534352,
+      "address": "0x1D738a3436A8C49CefFbaB7fbF04B660fb528CbD",
+      "name": "Aave Scroll USDC",
+      "decimals": 6,
+      "symbol": "aScrUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534352,
+      "address": "0x5B1322eeb46240b02e20062b8F0F9908d525B09c",
+      "name": "Aave Scroll wstETH",
+      "decimals": 18,
+      "symbol": "aScrwstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32"
       }
     },
     {
