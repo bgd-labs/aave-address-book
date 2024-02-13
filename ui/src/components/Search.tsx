@@ -8,21 +8,13 @@ import { Box } from './Box';
 import { SearchResult } from './SearchResult';
 
 const fuseOptions = {
-  isCaseSensitive: false,
-  includeScore: false,
-  shouldSort: true,
-  includeMatches: false,
-  findAllMatches: false,
-  minMatchCharLength: 2,
-  location: 0,
-  threshold: 0.4,
-  distance: 100,
-  useExtendedSearch: false,
-  ignoreLocation: false,
-  ignoreFieldNorm: false,
-  fieldNormWeight: 1,
-  keys: [{ name: 'searchPath', weight: 3 }, 'value'],
+  includeScore: true,
+  keys: ['searchPath'],
+  threshold: 0.2,
+  ignoreLocation: true,
+  useExtendedSearch: true,
 };
+
 
 const SEARCH_LIMIT = 32;
 const DEBOUNCE_TIME = 150;
