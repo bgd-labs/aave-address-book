@@ -20,4 +20,13 @@ export const PROTOCOL_GUARDIAN = '0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58';
 // https://polygonscan.com/address/0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b
 export const AAVE_MERKLE_DISTRIBUTOR = '0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b';
 
+// https://polygonscan.com/address/0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c
+export const wstETH_stETH_AGGREGATOR = '0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c';
+
+// https://polygonscan.com/address/0xeE652bbF72689AA59F0B8F981c9c90e2A8Af8d8f
+export const MaticX_RATE_PROVIDER = '0xeE652bbF72689AA59F0B8F981c9c90e2A8Af8d8f';
+
+// https://polygonscan.com/address/0xdEd6C522d803E35f65318a9a4d7333a22d582199
+export const stMATIC_RATE_PROVIDER = '0xdEd6C522d803E35f65318a9a4d7333a22d582199';
+
 export const CHAIN_ID = 137;

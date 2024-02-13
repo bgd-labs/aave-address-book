@@ -1,7 +1,11 @@
+import {Hex} from 'viem';
 import {ChainId} from '@bgd-labs/js-utils';
 import {NetworkAddresses} from '../types';
 
-export const arbitrumAddresses: NetworkAddresses = {
+export const arbitrumAddresses: NetworkAddresses<{
+  wstETH_stETH_AGGREGATOR: Hex;
+  rETH_ETH_AGGREGATOR: Hex;
+}> = {
   name: 'Arbitrum',
   chainId: ChainId.arbitrum_one,
   addresses: {
@@ -10,9 +14,10 @@ export const arbitrumAddresses: NetworkAddresses = {
     PROXY_ADMIN: '0xD3cF979e676265e4f6379749DECe4708B9A22476',
     CREATE_3_FACTORY: '0x3b56998Ec06477704622ca8e2eA1b4db134cec32',
     PROTOCOL_GUARDIAN: '0xbbd9f90699c1fa0d7a65870d241dd1f1217c96eb',
+    wstETH_stETH_AGGREGATOR: '0xB1552C5e96B312d0Bf8b554186F846C40614a540',
+    rETH_ETH_AGGREGATOR: '0xF3272CAfe65b190e76caAF483db13424a3e23dD2',
   },
 };
-
 
 export const arbitrumSepoliaAddresses: NetworkAddresses = {
   name: 'ArbitrumSepolia',

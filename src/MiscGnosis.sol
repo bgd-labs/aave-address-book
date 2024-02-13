@@ -14,4 +14,7 @@ library MiscGnosis {
 
   // https://gnosisscan.io/address/0xF163b8698821cefbD33Cf449764d69Ea445cE23D
   address internal constant PROTOCOL_GUARDIAN = 0xF163b8698821cefbD33Cf449764d69Ea445cE23D;
+
+  // https://gnosisscan.io/address/0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA
+  address internal constant wstETH_stETH_AGGREGATOR = 0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA;
 }

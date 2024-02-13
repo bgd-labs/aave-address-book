@@ -47,4 +47,7 @@ export const GSM_USDC = '0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578';
 // https://etherscan.io/address/0x686F8D21520f4ecEc7ba577be08354F4d1EB8262
 export const GSM_USDT = '0x686F8D21520f4ecEc7ba577be08354F4d1EB8262';
 
+// https://etherscan.io/address/0x197E90f9FAD81970bA7976f33CbD77088E5D7cf7
+export const sDAI_POT = '0x197E90f9FAD81970bA7976f33CbD77088E5D7cf7';
+
 export const CHAIN_ID = 1;

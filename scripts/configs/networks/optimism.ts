@@ -1,7 +1,11 @@
+import {Hex} from 'viem';
 import {ChainId} from '@bgd-labs/js-utils';
 import {NetworkAddresses} from '../types';
 
-export const optimismAddresses: NetworkAddresses = {
+export const optimismAddresses: NetworkAddresses<{
+  wstETH_stETH_AGGREGATOR: Hex;
+  rETH_ETH_AGGREGATOR: Hex;
+}> = {
   name: 'Optimism',
   chainId: ChainId.optimism,
   addresses: {
@@ -11,5 +15,7 @@ export const optimismAddresses: NetworkAddresses = {
     CREATE_3_FACTORY: '0x3b56998Ec06477704622ca8e2eA1b4db134cec32',
     PROTOCOL_GUARDIAN: '0xe50c8c619d05ff98b22adf991f17602c774f785c',
     AAVE_MERKLE_DISTRIBUTOR: '0x1685D81212580DD4cDA287616C2f6F4794927e18',
+    wstETH_stETH_AGGREGATOR: '0xe59EBa0D492cA53C6f46015EEa00517F2707dc77',
+    rETH_ETH_AGGREGATOR: '0x22F3727be377781d1579B7C9222382b21c9d1a8f',
   },
 };

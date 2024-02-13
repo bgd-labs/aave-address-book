@@ -1,7 +1,11 @@
+import {Hex} from 'viem';
 import {ChainId} from '@bgd-labs/js-utils';
 import {NetworkAddresses} from '../types';
 
-export const baseAddresses: NetworkAddresses = {
+export const baseAddresses: NetworkAddresses<{
+  wstETH_stETH_AGGREGATOR: Hex;
+  cbETH_ETH_AGGREGATOR: Hex;
+}> = {
   name: 'Base',
   chainId: ChainId.base,
   addresses: {
@@ -10,5 +14,7 @@ export const baseAddresses: NetworkAddresses = {
     PROXY_ADMIN: '0xc85b1E333aecc99340b2320493Fe2d22b8734795',
     CREATE_3_FACTORY: '0x3b56998Ec06477704622ca8e2eA1b4db134cec32',
     PROTOCOL_GUARDIAN: '0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A',
+    wstETH_stETH_AGGREGATOR: '0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061',
+    cbETH_ETH_AGGREGATOR: '0x806b4Ac04501c29769051e42783cF04dCE41440b',
   },
 };

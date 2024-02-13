@@ -11,6 +11,7 @@ export const ethereumAddresses: NetworkAddresses<{
   GSM_REGISTRY: Hex;
   GSM_USDC: Hex;
   GSM_USDT: Hex;
+  sDAI_POT: Hex;
 }> = {
   name: 'Ethereum',
   chainId: ChainId.mainnet,
@@ -35,6 +36,7 @@ export const ethereumAddresses: NetworkAddresses<{
     GSM_REGISTRY: '0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578',
     GSM_USDC: '0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578',
     GSM_USDT: '0x686F8D21520f4ecEc7ba577be08354F4d1EB8262',
+    sDAI_POT: '0x197E90f9FAD81970bA7976f33CbD77088E5D7cf7',
   },
 };
 

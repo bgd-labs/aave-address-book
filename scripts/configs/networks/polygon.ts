@@ -2,7 +2,12 @@ import {Hex} from 'viem';
 import {ChainId} from '@bgd-labs/js-utils';
 import {NetworkAddresses} from '../types';
 
-export const polygonAddresses: NetworkAddresses<{AAVE_POL_ETH_BRIDGE: Hex}> = {
+export const polygonAddresses: NetworkAddresses<{
+  AAVE_POL_ETH_BRIDGE: Hex;
+  wstETH_stETH_AGGREGATOR: Hex;
+  MaticX_RATE_PROVIDER: Hex;
+  stMATIC_RATE_PROVIDER: Hex;
+}> = {
   name: 'Polygon',
   chainId: ChainId.polygon,
   addresses: {
@@ -13,6 +18,9 @@ export const polygonAddresses: NetworkAddresses<{AAVE_POL_ETH_BRIDGE: Hex}> = {
     CREATE_3_FACTORY: '0x3b56998Ec06477704622ca8e2eA1b4db134cec32',
     PROTOCOL_GUARDIAN: '0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58',
     AAVE_MERKLE_DISTRIBUTOR: '0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b',
+    wstETH_stETH_AGGREGATOR: '0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c',
+    MaticX_RATE_PROVIDER: '0xeE652bbF72689AA59F0B8F981c9c90e2A8Af8d8f',
+    stMATIC_RATE_PROVIDER: '0xdEd6C522d803E35f65318a9a4d7333a22d582199',
   },
 };
 
