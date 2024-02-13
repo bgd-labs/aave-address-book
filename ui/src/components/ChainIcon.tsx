@@ -15,6 +15,7 @@ import polygonZkEvmIcon from '@/assets/chains/polygonZkEvm.svg';
 import scrollIcon from '@/assets/chains/scroll.svg';
 import ethereumTestnetIcon from '@/assets/chains/ethereumTestnet.svg';
 import fantomOperaIcon from '@/assets/chains/fantomOpera.svg';
+import harmonyOneIcon from '@/assets/chains/harmonyOne.svg';
 
 type Props = {
   chainId?: number | null;
@@ -58,6 +59,14 @@ const getIcon = (chainId: number) => {
       return ethereumTestnetIcon;
     case 43113:
       return ethereumTestnetIcon;
+    case 421613:
+      return ethereumTestnetIcon;
+    case 420:
+      return ethereumTestnetIcon;
+    case 421614:
+      return ethereumTestnetIcon;
+    case 1666600000:
+      return harmonyOneIcon;
     default:
       return unknownIcon;
   }
