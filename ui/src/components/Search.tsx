@@ -9,12 +9,11 @@ import { SearchResult } from './SearchResult';
 
 const fuseOptions = {
   includeScore: true,
-  keys: ['searchPath'],
+  keys: ['searchPath', 'value'],
   threshold: 0.2,
   ignoreLocation: true,
   useExtendedSearch: true,
 };
-
 
 const SEARCH_LIMIT = 32;
 const DEBOUNCE_TIME = 150;
