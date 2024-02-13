@@ -58,6 +58,12 @@ const getIcon = (chainId: number) => {
       return ethereumTestnetIcon;
     case 43113:
       return ethereumTestnetIcon;
+    case 421613:
+      return ethereumTestnetIcon;
+    case 420:
+      return ethereumTestnetIcon;
+    case 421614:
+      return ethereumTestnetIcon;
     default:
       return unknownIcon;
   }
