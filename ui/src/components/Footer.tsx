@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <div className="flex items-center justify-center text-sm text-brand-500 mt-auto">
+    <div className="flex items-center justify-center text-sm text-brand-500 mt-auto -translate-x-1">
       <div>
         <div className="mb-2 text-center">by BGD Labs</div>
         <div className="flex justify-center gap-1">
