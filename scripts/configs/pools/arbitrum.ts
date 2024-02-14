@@ -1,20 +1,6 @@
 import {ChainId} from '@bgd-labs/js-utils';
 import {PoolConfig} from '../types';
 
-export const arbitrumGoerliProtoV3: PoolConfig = {
-  name: 'ArbitrumGoerli',
-  chainId: ChainId.arbitrum_goerli,
-  POOL_ADDRESSES_PROVIDER: '0xD64dDe119f11C88850FD596BE11CE398CC5893e6',
-  additionalAddresses: {
-    FAUCET: '0xc1b3cc37cf2f922abDFE7F01A17bc932F4078665',
-    L2_ENCODER: '0x46605375317C3E8bd19E0ED70987354Cb6D16720',
-    UI_INCENTIVE_DATA_PROVIDER: '0x159E642e34ad712242F6057477277b093eb43950',
-    UI_POOL_DATA_PROVIDER: '0x1d5a0287E4ac7Ff805D8399D0177c75C8C95d4dC',
-    WALLET_BALANCE_PROVIDER: '0x8c7914af3926CfA5131Ce294c48E03C6d3aDc916',
-    WETH_GATEWAY: '0xcD1065F2c3A0e0a94d543Ce41720BFF515f753B7',
-  },
-};
-
 export const arbitrumProtoV3: PoolConfig = {
   name: 'Arbitrum',
   chainId: ChainId.arbitrum_one,

@@ -33,7 +33,6 @@ export * as AaveV3Metis from './AaveV3Metis';
 export * as AaveV3Gnosis from './AaveV3Gnosis';
 export * as AaveV3PolygonZkEvm from './AaveV3PolygonZkEvm';
 export * as AaveV3BNB from './AaveV3BNB';
-export * as AaveV3ArbitrumGoerli from './AaveV3ArbitrumGoerli';
 export * as AaveV3Arbitrum from './AaveV3Arbitrum';
 export * as AaveV3OptimismGoerli from './AaveV3OptimismGoerli';
 export * as AaveV3Optimism from './AaveV3Optimism';

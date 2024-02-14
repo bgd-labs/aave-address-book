@@ -1,6 +1,6 @@
 import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
 import {governanceConfigMainnet, governanceConfigGoerli} from './configs/governance/ethereum';
-import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
+import {arbitrumProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
   avalancheProtoV3,
@@ -120,7 +120,6 @@ async function main() {
       gnosisProtoV3,
       polygonZkEvmProtoV3,
       bnbProtoV3,
-      arbitrumGoerliProtoV3,
       arbitrumProtoV3,
       optimismGoerliProtoV3,
       optimismProtoV3,
