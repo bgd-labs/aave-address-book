@@ -21,7 +21,7 @@ export const SearchResult = ({ result }: { result: FuseResult<Address> }) => {
   };
 
   return (
-    <Box isHoverable>
+    <Box className="border-b-brand-900" isHoverable>
       <a
         className="px-3 pt-4 pb-4 flex gap-3 cursor-pointer"
         href={result.item.link}
@@ -43,7 +43,10 @@ export const SearchResult = ({ result }: { result: FuseResult<Address> }) => {
             {result.item.value}
           </div>
         </div>
-        <button className="ml-auto px-4 opacity-30 hover:opacity-100" onClick={handleCopyClick}>
+        <button
+          className="ml-auto px-4 opacity-30 hover:opacity-100"
+          onClick={handleCopyClick}
+        >
           <span className="flex h-6 w-6 overflow-hidden">
             <svg
               className={cn(

@@ -47,12 +47,9 @@ const addresses = flattenObject(addressBook);
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-start pl-4 pr-2 py-6 sm:py-10">
-        <h1 className="leading-4 text-center mb-5">
-          <div className="text-4xl font-heading font-bold">Aave</div>
-          <div className="text-[10px] uppercase font-semibold text-brand-500 tracking-wider">
-            Address Book
-          </div>
+      <main className="flex min-h-screen flex-col items-center justify-start pl-4 pr-2 py-8 sm:py-16">
+        <h1 className="leading-4 text-center mb-6">
+          <div className="text-5xl font-heading font-bold -translate-x-1">Aave</div>
         </h1>
         <Search addresses={addresses} />
         <Footer />
