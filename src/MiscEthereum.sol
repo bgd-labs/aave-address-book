@@ -58,4 +58,13 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0x197E90f9FAD81970bA7976f33CbD77088E5D7cf7
   address internal constant sDAI_POT = 0x197E90f9FAD81970bA7976f33CbD77088E5D7cf7;
+
+  // https://etherscan.io/address/0x004626A008B1aCdC4c74ab51644093b155e59A23
+  address internal constant stEUR = 0x004626A008B1aCdC4c74ab51644093b155e59A23;
+
+  // https://etherscan.io/address/0xb4d5289C58CE36080b0748B47F859D8F50dFAACb
+  address internal constant agEUR_EUR_AGGREGATOR = 0xb4d5289C58CE36080b0748B47F859D8F50dFAACb;
+
+  // https://etherscan.io/address/0xb49f677943BC038e9857d61E7d053CaA2C1734C1
+  address internal constant EUR_USD_AGGREGATOR = 0xb49f677943BC038e9857d61E7d053CaA2C1734C1;
 }
