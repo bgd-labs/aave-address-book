@@ -79,7 +79,8 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="outline-none py-3 px-11 w-full text-xl border border-4 border-transparent focus:border-blue-100 transition-all ring-inset focus:ring-1	ring-blue-300"
+          className="rounded-none outline-none py-3 px-11 w-full text-xl border border-4 border-transparent focus:border-blue-100 transition-all ring-inset focus:ring-1	ring-blue-300 placeholder:text-brand-500"
+          placeholder="Search..."
         />
       </Box>
       {results.length !== 0 &&
