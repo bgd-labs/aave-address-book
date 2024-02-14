@@ -49,7 +49,7 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col items-center justify-start pl-4 pr-2 py-8 sm:py-16">
         <h1 className="leading-4 text-center mb-6">
-          <div className="text-5xl font-heading font-bold">Aave</div>
+          <div className="text-5xl font-heading font-bold -translate-x-1">Aave</div>
         </h1>
         <Search addresses={addresses} />
         <Footer />
