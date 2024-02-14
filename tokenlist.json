@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-10T00:45:27.953Z",
-  "version": { "major": 3, "minor": 0, "patch": 1 },
+  "timestamp": "2024-02-14T08:04:11.845Z",
+  "version": { "major": 3, "minor": 0, "patch": 2 },
   "tokens": [
     {
       "chainId": 1,
@@ -2739,6 +2739,26 @@
         "pool": "AaveV3Ethereum",
         "underlying": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
         "underlyingAToken": "0xb82fa9f31612989525992FCfBB09AB22Eff5c85A"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+      "name": "PayPal USD",
+      "decimals": 6,
+      "symbol": "PYUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E",
+      "name": "Aave Ethereum PYUSD",
+      "decimals": 6,
+      "symbol": "aEthPYUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "AaveV3Ethereum",
+        "underlying": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
       }
     },
     {
