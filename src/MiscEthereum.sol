@@ -47,8 +47,8 @@ library MiscEthereum {
   address internal constant GHO_FLASHMINTER_FACILITATOR =
     0xb639D208Bcf0589D54FaC24E655C79EC529762B8;
 
-  // https://etherscan.io/address/0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578
-  address internal constant GSM_REGISTRY = 0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578;
+  // https://etherscan.io/address/0x167527DB01325408696326e3580cd8e55D99Dc1A
+  address internal constant GSM_REGISTRY = 0x167527DB01325408696326e3580cd8e55D99Dc1A;
 
   // https://etherscan.io/address/0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578
   address internal constant GSM_USDC = 0x0d8eFfC11dF3F229AA1EA0509BC9DFa632A13578;
@@ -56,6 +56,26 @@ library MiscEthereum {
   // https://etherscan.io/address/0x686F8D21520f4ecEc7ba577be08354F4d1EB8262
   address internal constant GSM_USDT = 0x686F8D21520f4ecEc7ba577be08354F4d1EB8262;
 
+  // https://etherscan.io/address/0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5
+  address internal constant GSM_USDC_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
+
+  // https://etherscan.io/address/0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5
+  address internal constant GSM_USDT_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
+
+  // https://etherscan.io/address/0x430BEdcA5DfA6f94d1205Cb33AB4f008D0d9942a
+  address internal constant GSM_USDC_PRICE_STRATEGY =
+    0x430BEdcA5DfA6f94d1205Cb33AB4f008D0d9942a;
+
+  // https://etherscan.io/address/0x4c707764cbFB4FFa078e169e6b8A6AdbE7526a2c
+  address internal constant GSM_USDT_PRICE_STRATEGY =
+    0x4c707764cbFB4FFa078e169e6b8A6AdbE7526a2c;
+
+  // https://etherscan.io/address/0xef6beCa8D9543eC007bceA835aF768B58F730C1f
+  address internal constant GSM_USDC_ORACLE_SWAP_FREEZER = 0xef6beCa8D9543eC007bceA835aF768B58F730C1f;
+
+  // https://etherscan.io/address/0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5
+  address internal constant GSM_USDT_ORACLE_SWAP_FREEZER = 0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5;
+  
   // https://etherscan.io/address/0x197E90f9FAD81970bA7976f33CbD77088E5D7cf7
   address internal constant sDAI_POT = 0x197E90f9FAD81970bA7976f33CbD77088E5D7cf7;
 

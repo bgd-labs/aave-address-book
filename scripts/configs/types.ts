@@ -101,5 +101,14 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     AAVE_MERKLE_DISTRIBUTOR?: Hex;
     GHO_TOKEN?: Hex;
     GHO_FLASHMINTER_FACILITATOR?: Hex;
+    GSM_REGISTRY?: Hex;
+    GSM_USDC?: Hex;
+    GSM_USDT?: Hex;
+    GSM_USDC_FEE_STRATEGY?: Hex;
+    GSM_USDT_FEE_STRATEGY?: Hex;
+    GSM_USDC_PRICE_STRATEGY?: Hex;
+    GSM_USDT_PRICE_STRATEGY?: Hex;
+    GSM_USDC_ORACLE_SWAP_FREEZER?: Hex;
+    GSM_USDT_ORACLE_SWAP_FREEZER?: Hex;
   } & T;
 }
