@@ -243,6 +243,9 @@ export async function generateProtocolV2Library(config: PoolConfig) {
   //   `export {${assetsLibraryName}} from './${assetsLibraryName}';\r\n`,
   // );
   return {
+    name,
+    reservesData,
+    chainId: config.chainId,
     js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],
   };

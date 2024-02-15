@@ -1,6 +1,6 @@
 import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
 import {governanceConfigMainnet, governanceConfigGoerli} from './configs/governance/ethereum';
-import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
+import {arbitrumProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
   avalancheProtoV3,
@@ -61,6 +61,7 @@ import {scrollAddresses} from './configs/networks/scroll';
 import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
 import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
+import {generateTokenList} from './generator/generateTokenList';
 
 async function main() {
   // cleanup ts artifacts
@@ -104,6 +105,7 @@ async function main() {
       avalancheProtoV2,
     ].map((config) => generateProtocolV2Library(config)),
   );
+
   const v3LibraryNames = await Promise.all(
     [
       mainnetProtoV3Pool,
@@ -118,7 +120,6 @@ async function main() {
       gnosisProtoV3,
       polygonZkEvmProtoV3,
       bnbProtoV3,
-      arbitrumGoerliProtoV3,
       arbitrumProtoV3,
       optimismGoerliProtoV3,
       optimismProtoV3,
@@ -129,6 +130,8 @@ async function main() {
       // harmonyProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
+
+  generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
 
   const networkAddresses = [
     arbitrumAddresses,

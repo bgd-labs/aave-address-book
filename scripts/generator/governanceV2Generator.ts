@@ -67,7 +67,10 @@ export function generateGovV2() {
   fs.writeFileSync(
     `./src/ts/AaveGovernanceV2.ts`,
     prefixWithGeneratedWarning(
-      generateJsConstants({chainId: ChainId.mainnet, addresses: govV2Addresses}).join('\n'),
+      generateJsConstants({
+        chainId: ChainId.mainnet,
+        addresses: {...govV2Addresses, CHAIN_ID: {value: 1, type: 'uint256'}},
+      }).join('\n'),
     ),
   );
 

@@ -36,7 +36,6 @@ import {AaveV3Metis} from './AaveV3Metis.sol';
 import {AaveV3Gnosis} from './AaveV3Gnosis.sol';
 import {AaveV3PolygonZkEvm} from './AaveV3PolygonZkEvm.sol';
 import {AaveV3BNB} from './AaveV3BNB.sol';
-import {AaveV3ArbitrumGoerli} from './AaveV3ArbitrumGoerli.sol';
 import {AaveV3Arbitrum} from './AaveV3Arbitrum.sol';
 import {AaveV3OptimismGoerli} from './AaveV3OptimismGoerli.sol';
 import {AaveV3Optimism} from './AaveV3Optimism.sol';

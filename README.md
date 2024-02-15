@@ -6,6 +6,8 @@ This repository contains an up-to-date registry of all addresses of the Aave eco
 
 The goal is for Solidity developers to have the most integrated environment possible when they want to develop on top of Aave, by just importing a package with all the necessary addresses to interact with.
 
+You can find a searchable version of the address book on [https://book.onaave.com/](https://book.onaave.com/).
+
 ## Usage with foundry
 
 With Foundry installed and being in a Git repository:
@@ -69,7 +71,7 @@ console.log(AaveV2Avalanche.CHAIN_ID);
 
 ### Generate files
 
-The library is generated based on the config file located in `scripts/generateAddresses.ts` and `scripts/generateABIs.ts`. You can regenerate the files by running `yarn start`.
+The library is generated based on the `scripts/generateAddresses.ts` and `scripts/generateABIs.ts` scripts. You can regenerate the files by running `yarn start`.
 
 ### Dependencies
 
@@ -91,7 +93,7 @@ forge test
 
 ### Adding a new Pool
 
-To list a new pool in the address book, you simply need to add a new pool in the respective [pools config](./scripts/configs/<type>/<network>) and run `yarn start`.
+To list a new pool in the address book, you simply need to add a new pool in the respective [pools config](./scripts/configs/<type>/<network>) and run `yarn generate:addresses`.
 
 ### Adding new Addresses
 
@@ -101,10 +103,6 @@ To achieve an addition here you need to add the address to the respective [v2 ty
 
 b) Adding an address that **cannot be obtained via onchain calls** so it needs to be manually maintained:
 
-To achieve an addition here, you need to alter the [additionalAddresses section](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/config.ts#L46) on the pool type and add your address to the respecive pools. Additional addresses will currently be exported as type `address`. There's currently no possibility to define a custom type.
+To achieve an addition here, you need to alter the [additionalAddresses section](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/config.ts#L46) on the pool type and add your address to the respective pools. Additional addresses will currently be exported as type `address`. There's currently no possibility to define a custom type.
 
-In any case you need to run `yarn start` afterwards and commit the altered artifacts.
-
-## Sample projects
-
-- [aave v2 asset listing template](https://github.com/bgd-labs/example-aave-v2-listing)
+In any case you need to run `yarn generate:addresses` afterwards and commit the altered artifacts.

@@ -15,6 +15,7 @@ export const ABI_INTERFACES = [
   'IDataWarehouse',
   'IExecutorWithTimelock',
   'IERC20',
+  'IERC20Detailed',
   'IAToken',
   'IDefaultInterestRateStrategy',
   'IAaveOracle',
