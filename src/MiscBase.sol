@@ -21,6 +21,6 @@ library MiscBase {
   // https://basescan.org/address/0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061
   address internal constant wstETH_stETH_AGGREGATOR = 0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061;
 
-  // https://basescan.org/address/0x806b4Ac04501c29769051e42783cF04dCE41440b
-  address internal constant cbETH_ETH_AGGREGATOR = 0x806b4Ac04501c29769051e42783cF04dCE41440b;
+  // https://basescan.org/address/0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04
+  address internal constant cbETH_ETH_AGGREGATOR = 0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04;
 }
