@@ -58,4 +58,7 @@ import {MiscScroll} from './MiscScroll.sol';
 import {MiscPolygonZkEvm} from './MiscPolygonZkEvm.sol';
 import {MiscSepolia} from './MiscSepolia.sol';
 import {MiscMumbai} from './MiscMumbai.sol';
+import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
+import {AaveGovernanceV2} from './AaveGovernanceV2.sol';
+import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';
 import {AaveSafetyModule} from './AaveSafetyModule.sol';
