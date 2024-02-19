@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-14T19:30:30.913Z",
-  "version": { "major": 3, "minor": 0, "patch": 3 },
+  "timestamp": "2024-02-19T18:03:11.901Z",
+  "version": { "major": 3, "minor": 0, "patch": 0 },
   "tokens": [
     {
       "chainId": 1,
@@ -5342,6 +5342,19 @@
     },
     {
       "chainId": 56,
+      "address": "0x3854354CE3681da1D7F550073061E92a4a7d1B27",
+      "name": "Static Aave BNB Smart Chain CAKE",
+      "decimals": 18,
+      "symbol": "stataBnbCAKE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+        "underlyingAToken": "0x4199CC1F5ed0d796563d7CcB2e036253E2C18281"
+      }
+    },
+    {
+      "chainId": 56,
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       "name": "Wrapped BNB",
       "decimals": 18,
@@ -5358,6 +5371,19 @@
       "extensions": {
         "pool": "AaveV3BNB",
         "underlying": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x436baCb4C66583de4Cb16e13a1A0D9A3075DE425",
+      "name": "Static Aave BNB Smart Chain WBNB",
+      "decimals": 18,
+      "symbol": "stataBnbWBNB",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+        "underlyingAToken": "0x9B00a09492a626678E5A3009982191586C444Df9"
       }
     },
     {
@@ -5382,6 +5408,19 @@
     },
     {
       "chainId": 56,
+      "address": "0x1F66b530084079d35478A069d9c4424F9c9C320c",
+      "name": "Static Aave BNB Smart Chain BTCB",
+      "decimals": 18,
+      "symbol": "stataBnbBTCB",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+        "underlyingAToken": "0x56a7ddc4e848EbF43845854205ad71D5D5F72d3D"
+      }
+    },
+    {
+      "chainId": 56,
       "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
       "name": "Ethereum Token",
       "decimals": 18,
@@ -5398,6 +5437,19 @@
       "extensions": {
         "pool": "AaveV3BNB",
         "underlying": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x52077433fB7053D747E2846aD0C18ff5015C368E",
+      "name": "Static Aave BNB Smart Chain ETH",
+      "decimals": 18,
+      "symbol": "stataBnbETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+        "underlyingAToken": "0x2E94171493fAbE316b6205f1585779C887771E2F"
       }
     },
     {
@@ -5422,6 +5474,19 @@
     },
     {
       "chainId": 56,
+      "address": "0x3906cDdfb781f02B21f21BD81ed7Fd8DC37075E1",
+      "name": "Static Aave BNB Smart Chain USDC",
+      "decimals": 18,
+      "symbol": "stataBnbUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+        "underlyingAToken": "0x00901a076785e0906d1028c7d6372d247bec7d61"
+      }
+    },
+    {
+      "chainId": 56,
       "address": "0x55d398326f99059fF775485246999027B3197955",
       "name": "Tether USD",
       "decimals": 18,
@@ -5442,6 +5507,19 @@
     },
     {
       "chainId": 56,
+      "address": "0x0471D185cc7Be61E154277cAB2396cD397663da6",
+      "name": "Static Aave BNB Smart Chain USDT",
+      "decimals": 18,
+      "symbol": "stataBnbUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x55d398326f99059fF775485246999027B3197955",
+        "underlyingAToken": "0xa9251ca9DE909CB71783723713B21E4233fbf1B1"
+      }
+    },
+    {
+      "chainId": 56,
       "address": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409",
       "name": "First Digital USD",
       "decimals": 18,
@@ -5458,6 +5536,19 @@
       "extensions": {
         "pool": "AaveV3BNB",
         "underlying": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x4d074aAa0821073dA827f7bf6a02cF905b394ed0",
+      "name": "Static Aave BNB Smart Chain FDUSD",
+      "decimals": 18,
+      "symbol": "stataBnbFDUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409",
+        "underlyingAToken": "0x75bd1A659bdC62e4C313950d44A2416faB43E785"
       }
     },
     {
@@ -6586,6 +6677,19 @@
     },
     {
       "chainId": 534352,
+      "address": "0x6b9DfaC194fa78a1882680E2cE19194D006AeEfd",
+      "name": "Static Aave Scroll WETH",
+      "decimals": 18,
+      "symbol": "stataScrWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0x5300000000000000000000000000000000000004",
+        "underlyingAToken": "0xf301805bE1Df81102C957f6d4Ce29d2B8c056B2a"
+      }
+    },
+    {
+      "chainId": 534352,
       "address": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
       "name": "USD Coin",
       "decimals": 6,
@@ -6606,6 +6710,19 @@
     },
     {
       "chainId": 534352,
+      "address": "0x9fA123bC7E6b61cC8a9D893673a4C6E5392FF4A7",
+      "name": "Static Aave Scroll USDC",
+      "decimals": 6,
+      "symbol": "stataScrUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
+        "underlyingAToken": "0x1D738a3436A8C49CefFbaB7fbF04B660fb528CbD"
+      }
+    },
+    {
+      "chainId": 534352,
       "address": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
       "name": "Wrapped liquid staked Ether 2.0",
       "decimals": 18,
@@ -6622,6 +6739,19 @@
       "extensions": {
         "pool": "AaveV3Scroll",
         "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x6e368c4dBf083e18a29aE63FC06AF9deDb3242F0",
+      "name": "Static Aave Scroll wstETH",
+      "decimals": 18,
+      "symbol": "stataScrwstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
+        "underlyingAToken": "0x5B1322eeb46240b02e20062b8F0F9908d525B09c"
       }
     },
     {
