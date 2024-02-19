@@ -6,7 +6,7 @@ import {readFileSync, existsSync, writeFileSync} from 'fs';
 import {cwd} from 'process';
 import {join} from 'path';
 import prettier from 'prettier';
-import {Address, getContract, zeroAddress} from 'viem';
+import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {fixSymbol} from './assetsLibraryGenerator';
@@ -22,6 +22,7 @@ const TAGS = {
 
 type TokenListParams = {
   name: string;
+  pool: Hex;
   chainId: number;
   reservesData: ReserveData[];
 }[];
@@ -37,7 +38,7 @@ export async function generateTokenList(pools: TokenListParams) {
     : {tokens: []};
 
   const tokens: TokenInfo[] = [];
-  for (const {reservesData, chainId, name: poolName} of pools) {
+  for (const {reservesData, chainId, name: poolName, pool} of pools) {
     for (const reserve of reservesData) {
       async function addToken(token: Address, tags: string[], extensions?: Record<string, string>) {
         const alreadyInList = findInList(tokens, token, chainId);
@@ -69,14 +70,14 @@ export async function generateTokenList(pools: TokenListParams) {
       await addToken(
         reserve.A_TOKEN,
         /V2/.test(poolName) ? [TAGS.aTokenV2, TAGS.aaveV2] : [TAGS.aTokenV3, TAGS.aaveV3],
-        {pool: poolName, underlying: reserve.UNDERLYING},
+        {pool: pool, underlying: reserve.UNDERLYING},
       );
       if (reserve.STATA_TOKEN && reserve.STATA_TOKEN != zeroAddress)
         await addToken(
           reserve.STATA_TOKEN,
           [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.stataToken],
           {
-            pool: poolName,
+            pool: pool,
             underlying: reserve.UNDERLYING,
             underlyingAToken: reserve.A_TOKEN,
           },
