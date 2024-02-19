@@ -10,8 +10,6 @@ import {
 import {ChainId} from '@bgd-labs/js-utils';
 
 const govV2Addresses: Addresses = {
-  GOV: {value: '0xEC568fffba86c094cf06b22134B23074DFE2252c', type: 'IAaveGovernanceV2'},
-  GOV_STRATEGY: {value: '0xb7e383ef9B1E9189Fc0F71fb30af8aa14377429e', type: 'IGovernanceStrategy'},
   SHORT_EXECUTOR: '0xEE56e2B3D491590B5b31738cC34d5232F378a8D5',
   LONG_EXECUTOR: '0x79426A1c24B2978D90d7A5070a46C65B07bC4299',
   ARC_TIMELOCK: '0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218',
