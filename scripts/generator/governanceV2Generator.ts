@@ -72,9 +72,6 @@ export function generateGovV2() {
 
   return {
     js: [`export * as ${name} from './${name}';`],
-    solidity: [
-      `import {AaveGovernanceV2, IGovernanceStrategy} from './AaveGovernanceV2.sol';`,
-      `import {${name}} from './${name}.sol';`,
-    ],
+    solidity: [`import {${name}} from './${name}.sol';`],
   };
 }
