@@ -52,12 +52,10 @@ export function generateGovV2() {
     `./src/AaveGovernanceV2.sol`,
     prefixWithGeneratedWarning(
       prefixWithPragma(
-        `import {IGovernanceStrategy} from './common/IGovernanceStrategy.sol';\n` +
-          `import {IAaveGovernanceV2, IExecutorWithTimelock} from './common/IAaveGovernanceV2.sol';\n` +
-          wrapIntoSolidityLibrary(
-            generateSolidityConstants({chainId: ChainId.mainnet, addresses: govV2Addresses}),
-            name,
-          ),
+        wrapIntoSolidityLibrary(
+          generateSolidityConstants({chainId: ChainId.mainnet, addresses: govV2Addresses}),
+          name,
+        ),
       ),
     ),
   );
