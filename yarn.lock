@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@adraffy/ens-normalize/-/ens-normalize-1.10.0.tgz#d2a39395c587e092d77cbbc80acf956a54f38bf7"
   integrity sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==
 
-"@bgd-labs/js-utils@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.1.1.tgz#0e400061169cd38d1dd44b401dc3c05b904cbd76"
-  integrity sha512-CWzoY+3IWpu/YhDgVYbnZhBEGQ8kGJwAgqZexrIkD9+GJh5raEcOWByV8psWapOwttWO4ppxS/RgmMdJQ5Hhxg==
+"@bgd-labs/js-utils@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.2.1.tgz#01c9db4f046c2afa5db403a396f913e7a59c7f33"
+  integrity sha512-FvAeqjHFF0bi/TzN0FR3W97IBn9I4WJjMRWyUf/4fTSB0l2dLL1563fRok+i9con7T651imcg/YhiE7Gd9vKtQ==
   dependencies:
     "@supercharge/promise-pool" "^3.1.0"
     bs58 "^5.0.0"
