@@ -61,7 +61,6 @@ export default function Home() {
           </div>
         </h1>
         <Search addresses={addresses} />
-        
         <Footer />
       </main>
     </>
