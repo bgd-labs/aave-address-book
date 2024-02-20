@@ -58,12 +58,12 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
   return (
     <div className="w-full max-w-2xl mb-10">
       <Box
-        className={cn('group border-brand-900 border', {
+        className={cn('group border-brand-900 border p-1', {
           ['border-b-0']: results.length > 0,
         })}
       >
         <svg
-          className="w-7 h-7 group-focus-within:text-blue-500 absolute top-1/2 left-3 -translate-y-1/2 text-brand-500 transition-all"
+          className="w-7 h-7 group-focus-within:text-brand-900 absolute top-1/2 left-3 -translate-y-1/2 text-brand-500 transition-all"
           fill="none"
           viewBox="0 0 24 24"
         >
@@ -79,7 +79,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="rounded-none outline-none py-3 px-11 w-full text-xl border border-4 border-transparent focus:border-blue-100 transition-all ring-inset focus:ring-1	ring-blue-300 placeholder:text-brand-500"
+          className="rounded-none outline-none py-3 px-11 w-full text-xl border border-1 border-r-2 border-t-2 border-transparent focus:border-brand-900 transition-all ring-inset placeholder:text-brand-500"
           placeholder="Search..."
         />
       </Box>
