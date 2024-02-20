@@ -63,7 +63,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
         })}
       >
         <svg
-          className="w-7 h-7 group-focus-within:text-blue-500 absolute top-1/2 left-3 -translate-y-1/2 text-brand-500 transition-all"
+          className="w-7 h-7 group-focus-within:text-brand-900 absolute top-1/2 left-3 -translate-y-1/2 text-brand-500 transition-all"
           fill="none"
           viewBox="0 0 24 24"
         >
@@ -79,7 +79,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="rounded-none outline-none py-3 px-11 w-full text-xl border border-4 border-transparent focus:border-blue-100 transition-all ring-inset focus:ring-1	ring-blue-300 placeholder:text-brand-500"
+          className="rounded-none outline-none py-3 px-11 w-full text-xl border border-4 border-transparent focus:border-brand-100 transition-all ring-inset focus:ring-1	ring-brand-500 placeholder:text-brand-500"
           placeholder="Search..."
         />
       </Box>
