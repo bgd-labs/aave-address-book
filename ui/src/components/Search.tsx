@@ -58,9 +58,12 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
   return (
     <div className="w-full max-w-2xl mb-10">
       <Box
-        className={cn('group border-brand-900 border p-1.5 focus-within:bg-brand-300', {
-          ['border-b-0']: results.length > 0,
-        })}
+        className={cn(
+          'group border-brand-900 border p-1.5 focus-within:bg-brand-300 transition-colors',
+          {
+            ['border-b-0']: results.length > 0,
+          },
+        )}
       >
         <svg
           className="w-7 h-7 group-focus-within:text-brand-900 absolute top-1/2 left-3 -translate-y-1/2 text-brand-500 transition-all"
