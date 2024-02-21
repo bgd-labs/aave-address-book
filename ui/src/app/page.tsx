@@ -1,8 +1,12 @@
 import * as addressBook from '../../../src/ts/AaveAddressBook';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
+import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Search } from '@/components/Search';
 import { Footer } from '@/components/Footer';
 import { type Address } from '@/types';
+import logo from '@/assets/logo.svg';
+
 
 function isEthereumAddress(value: any): value is string {
   return typeof value === 'string' && /^0x[a-fA-F0-9]{40}$/.test(value);
@@ -44,13 +48,16 @@ function flattenObject(
 
 const addresses = flattenObject(addressBook);
 
+export const metadata: Metadata = {
+  title: 'Search on Aave',
+  description: "Registry of all smart contracts' addresses on Aave",
+};
+
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-start pl-4 pr-2 py-8 sm:py-16">
-        <h1 className="leading-4 text-center mb-6">
-          <div className="text-5xl font-heading font-bold -translate-x-1">Aave</div>
-        </h1>
+      <main className="flex min-h-screen flex-col items-center justify-start pl-4 pr-2 pb-8 pt-16 sm:pt-36">
+        <Image src={logo} alt="Aave Search" className='mb-7 w-36 sm:w-44' />
         <Search addresses={addresses} />
         <Footer />
       </main>

@@ -1,9 +1,7 @@
-import {SAFETY_MODULE} from '../generator/safetyModuleGenerator';
 import {governanceConfigMainnet} from './governance/ethereum';
-import {mainnetProtoV2Pool, mainnetProtoV3Pool} from './pools/ethereum';
+import {mainnetProtoV3Pool} from './pools/ethereum';
 
 export const ABI_INTERFACES = [
-  'IAaveGovernanceV2',
   'ICollector',
   'AggregatorInterface',
   'IPayloadsControllerCore',
@@ -63,4 +61,9 @@ export const DOWNLOAD_ABI_INTERFACES = [
     address: '0x366AE337897223AEa70e3EBe1862219386f20593',
     name: 'IATokenWithDelegation',
   },
+  {
+    address: '0x79b5e91037AE441dE0d9e6fd3Fd85b96B83d4E93',
+    name: 'IStaticATokenFactory',
+  },
+  {address: '0xc026f5dd7869e0ddc44a759ea3dec6d5cd8d996b', name: 'IStaticATokenLM'},
 ];

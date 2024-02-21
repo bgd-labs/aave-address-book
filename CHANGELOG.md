@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.21.1](https://github.com/bgd-labs/aave-address-book/compare/v2.21.0...v2.21.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* add tokenlist to ts exports ([#376](https://github.com/bgd-labs/aave-address-book/issues/376)) ([bb0acd6](https://github.com/bgd-labs/aave-address-book/commit/bb0acd6062929e299c86fc65b87c6336d7c40d5d))
+
+## [2.21.0](https://github.com/bgd-labs/aave-address-book/compare/v2.20.0...v2.21.0) (2024-02-21)
+
+
+### Features
+
+* add github link ([#370](https://github.com/bgd-labs/aave-address-book/issues/370)) ([ab278d7](https://github.com/bgd-labs/aave-address-book/commit/ab278d7327ee183f7472b5266bb434c2439cefb7))
+* add new abis ([#372](https://github.com/bgd-labs/aave-address-book/issues/372)) ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* add stata for scroll and bnb ([#371](https://github.com/bgd-labs/aave-address-book/issues/371)) ([f84bd69](https://github.com/bgd-labs/aave-address-book/commit/f84bd6992c8bf461ba10538053f85be1e4a22124))
+* update UI, add logo ([#374](https://github.com/bgd-labs/aave-address-book/issues/374)) ([c23a202](https://github.com/bgd-labs/aave-address-book/commit/c23a20229ca21ca5a786050846a1965882700351))
+
+
+### Bug Fixes
+
+* patch list ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* remove gov v2 and strategy are no longer useful ([#367](https://github.com/bgd-labs/aave-address-book/issues/367)) ([1775497](https://github.com/bgd-labs/aave-address-book/commit/17754972fcc15ea4ea15231308af22610f121d83))
+* update tokenlist ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* use proper type ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* use proper type ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+
+## [2.20.0](https://github.com/bgd-labs/aave-address-book/compare/v2.19.0...v2.20.0) (2024-02-18)
+
+
+### Features
+
+* add eur aggregators and pyUSd ([#360](https://github.com/bgd-labs/aave-address-book/issues/360)) ([4050131](https://github.com/bgd-labs/aave-address-book/commit/4050131e6b80c508d42c37b53fb959ac1d08571f))
+* generate tokenlist alongside the repo ([#353](https://github.com/bgd-labs/aave-address-book/issues/353)) ([a1a60f6](https://github.com/bgd-labs/aave-address-book/commit/a1a60f64487e1afbc6390242b1cc10bab131d1b9))
+
+
+### Bug Fixes
+
+* add favicon w/transparent bg ([#363](https://github.com/bgd-labs/aave-address-book/issues/363)) ([80447d8](https://github.com/bgd-labs/aave-address-book/commit/80447d84334c4a5185fc4f5d55e17f99a1c9f8c4))
+* remove arbitrum goerli ([#361](https://github.com/bgd-labs/aave-address-book/issues/361)) ([179f064](https://github.com/bgd-labs/aave-address-book/commit/179f06464c503b39b6715b4382ca4270677ba099))
+* skip update if no changes ([594087e](https://github.com/bgd-labs/aave-address-book/commit/594087e2857b6be3d71361e270b341812e7b5ba6))
+
 ## [2.19.0](https://github.com/bgd-labs/aave-address-book/compare/v2.18.1...v2.19.0) (2024-01-30)
 
 

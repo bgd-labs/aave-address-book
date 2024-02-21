@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-21T14:29:38.178Z",
-  "version": { "major": 3, "minor": 0, "patch": 4 },
+  "timestamp": "2024-02-21T09:06:48.186Z",
+  "version": { "major": 3, "minor": 0, "patch": 6 },
   "tokens": [
     {
       "chainId": 1,
@@ -41,7 +41,7 @@
       "symbol": "aAmmWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
       }
     },
@@ -61,7 +61,7 @@
       "symbol": "aAmmDAI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
       }
     },
@@ -81,7 +81,7 @@
       "symbol": "aAmmUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       }
     },
@@ -101,7 +101,7 @@
       "symbol": "aAmmUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
       }
     },
@@ -121,7 +121,7 @@
       "symbol": "aAmmWBTC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
       }
     },
@@ -141,7 +141,7 @@
       "symbol": "aAmmUniDAIWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11"
       }
     },
@@ -161,7 +161,7 @@
       "symbol": "aAmmUniWBTCWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940"
       }
     },
@@ -181,7 +181,7 @@
       "symbol": "aAmmUniAAVEWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f"
       }
     },
@@ -201,7 +201,7 @@
       "symbol": "aAmmUniBATWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xB6909B960DbbE7392D405429eB2b3649752b4838"
       }
     },
@@ -221,7 +221,7 @@
       "symbol": "aAmmUniDAIUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5"
       }
     },
@@ -241,7 +241,7 @@
       "symbol": "aAmmUniCRVWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x3dA1313aE46132A397D90d95B1424A9A7e3e0fCE"
       }
     },
@@ -261,7 +261,7 @@
       "symbol": "aAmmUniLINKWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974"
       }
     },
@@ -281,7 +281,7 @@
       "symbol": "aAmmUniMKRWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xC2aDdA861F89bBB333c90c492cB837741916A225"
       }
     },
@@ -301,7 +301,7 @@
       "symbol": "aAmmUniRENWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x8Bd1661Da98EBDd3BD080F0bE4e6d9bE8cE9858c"
       }
     },
@@ -321,7 +321,7 @@
       "symbol": "aAmmUniSNXWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x43AE24960e5534731Fc831386c07755A2dc33D47"
       }
     },
@@ -341,7 +341,7 @@
       "symbol": "aAmmUniUNIWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xd3d2E2692501A5c9Ca623199D38826e513033a17"
       }
     },
@@ -361,7 +361,7 @@
       "symbol": "aAmmUniUSDCWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc"
       }
     },
@@ -381,7 +381,7 @@
       "symbol": "aAmmUniWBTCUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x004375Dff511095CC5A197A54140a24eFEF3A416"
       }
     },
@@ -401,7 +401,7 @@
       "symbol": "aAmmUniYFIWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28"
       }
     },
@@ -421,7 +421,7 @@
       "symbol": "aAmmBptWBTCWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x1efF8aF5D577060BA4ac8A29A13525bb0Ee2A3D5"
       }
     },
@@ -441,7 +441,7 @@
       "symbol": "aAmmBptBALWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x59A19D8c652FA0284f44113D0ff9aBa70bd46fB4"
       }
     },
@@ -461,7 +461,7 @@
       "symbol": "aAmmGUniDAIUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e"
       }
     },
@@ -481,7 +481,7 @@
       "symbol": "aAmmGUniUSDCUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2EthereumAMM",
+        "pool": "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB",
         "underlying": "0xD2eeC91055F07fE24C9cCB25828ecfEFd4be0c41"
       }
     },
@@ -493,7 +493,7 @@
       "symbol": "aUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
       }
     },
@@ -505,7 +505,7 @@
       "symbol": "aWBTC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
       }
     },
@@ -517,7 +517,7 @@
       "symbol": "aWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
       }
     },
@@ -537,7 +537,7 @@
       "symbol": "aYFI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e"
       }
     },
@@ -557,7 +557,7 @@
       "symbol": "aZRX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xE41d2489571d322189246DaFA5ebDe1F4699F498"
       }
     },
@@ -577,7 +577,7 @@
       "symbol": "aUNI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
       }
     },
@@ -597,7 +597,7 @@
       "symbol": "aAAVE",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
       }
     },
@@ -617,7 +617,7 @@
       "symbol": "aBAT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF"
       }
     },
@@ -637,7 +637,7 @@
       "symbol": "aBUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x4Fabb145d64652a948d72533023f6E7A623C7C53"
       }
     },
@@ -649,7 +649,7 @@
       "symbol": "aDAI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
       }
     },
@@ -669,7 +669,7 @@
       "symbol": "aENJ",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c"
       }
     },
@@ -689,7 +689,7 @@
       "symbol": "aKNC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xdd974D5C2e2928deA5F71b9825b8b646686BD200"
       }
     },
@@ -709,7 +709,7 @@
       "symbol": "aLINK",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x514910771AF9Ca656af840dff83E8264EcF986CA"
       }
     },
@@ -729,7 +729,7 @@
       "symbol": "aMANA",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942"
       }
     },
@@ -749,7 +749,7 @@
       "symbol": "aMKR",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
       }
     },
@@ -769,7 +769,7 @@
       "symbol": "aREN",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x408e41876cCCDC0F92210600ef50372656052a38"
       }
     },
@@ -789,7 +789,7 @@
       "symbol": "aSNX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F"
       }
     },
@@ -809,7 +809,7 @@
       "symbol": "aSUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51"
       }
     },
@@ -829,7 +829,7 @@
       "symbol": "aTUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x0000000000085d4780B73119b644AE5ecd22b376"
       }
     },
@@ -841,7 +841,7 @@
       "symbol": "aUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       }
     },
@@ -861,7 +861,7 @@
       "symbol": "aCRV",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xD533a949740bb3306d119CC777fa900bA034cd52"
       }
     },
@@ -881,7 +881,7 @@
       "symbol": "aGUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd"
       }
     },
@@ -901,7 +901,7 @@
       "symbol": "aBAL",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xba100000625a3754423978a60c9317c58a424e3D"
       }
     },
@@ -921,7 +921,7 @@
       "symbol": "aXSUSHI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272"
       }
     },
@@ -941,7 +941,7 @@
       "symbol": "aRENFIL",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xD5147bc8e386d91Cc5DBE72099DAC6C9b99276F5"
       }
     },
@@ -961,7 +961,7 @@
       "symbol": "aRAI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919"
       }
     },
@@ -981,7 +981,7 @@
       "symbol": "aAMPL",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xD46bA6D942050d489DBd938a2C909A5d5039A161"
       }
     },
@@ -1001,7 +1001,7 @@
       "symbol": "aUSDP",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x8E870D67F660D95d5be530380D0eC0bd388289E1"
       }
     },
@@ -1021,7 +1021,7 @@
       "symbol": "aDPI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b"
       }
     },
@@ -1041,7 +1041,7 @@
       "symbol": "aFRAX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
       }
     },
@@ -1061,7 +1061,7 @@
       "symbol": "aFEI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x956F47F50A910163D8BF957Cf5846D573E7f87CA"
       }
     },
@@ -1081,7 +1081,7 @@
       "symbol": "aSTETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84"
       }
     },
@@ -1101,7 +1101,7 @@
       "symbol": "aENS",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72"
       }
     },
@@ -1121,7 +1121,7 @@
       "symbol": "aUST",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0xa693B19d2931d498c5B318dF961919BB4aee87a5"
       }
     },
@@ -1141,7 +1141,7 @@
       "symbol": "aCVX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B"
       }
     },
@@ -1161,7 +1161,7 @@
       "symbol": "aONE_INCH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x111111111117dC0aa78b770fA6A738034120C302"
       }
     },
@@ -1181,7 +1181,7 @@
       "symbol": "aLUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Ethereum",
+        "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"
       }
     },
@@ -1201,7 +1201,7 @@
       "symbol": "amDAI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063"
       }
     },
@@ -1221,7 +1221,7 @@
       "symbol": "amUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
       }
     },
@@ -1241,7 +1241,7 @@
       "symbol": "amUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
       }
     },
@@ -1261,7 +1261,7 @@
       "symbol": "amWBTC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6"
       }
     },
@@ -1281,7 +1281,7 @@
       "symbol": "amWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
       }
     },
@@ -1301,7 +1301,7 @@
       "symbol": "amWMATIC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
       }
     },
@@ -1321,7 +1321,7 @@
       "symbol": "amAAVE",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B"
       }
     },
@@ -1341,7 +1341,7 @@
       "symbol": "amGHST",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7"
       }
     },
@@ -1361,7 +1361,7 @@
       "symbol": "amBAL",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3"
       }
     },
@@ -1381,7 +1381,7 @@
       "symbol": "amDPI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369"
       }
     },
@@ -1401,7 +1401,7 @@
       "symbol": "amCRV",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x172370d5Cd63279eFa6d502DAB29171933a610AF"
       }
     },
@@ -1421,7 +1421,7 @@
       "symbol": "amSUSHI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a"
       }
     },
@@ -1441,7 +1441,7 @@
       "symbol": "amLINK",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Polygon",
+        "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39"
       }
     },
@@ -1461,7 +1461,7 @@
       "symbol": "amDAI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Mumbai",
+        "pool": "0x9198F13B08E299d85E096929fA9781A1E3d5d827",
         "underlying": "0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F"
       }
     },
@@ -1481,7 +1481,7 @@
       "symbol": "amUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Mumbai",
+        "pool": "0x9198F13B08E299d85E096929fA9781A1E3d5d827",
         "underlying": "0x2058A9D7613eEE744279e3856Ef0eAda5FCbaA7e"
       }
     },
@@ -1501,7 +1501,7 @@
       "symbol": "amUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Mumbai",
+        "pool": "0x9198F13B08E299d85E096929fA9781A1E3d5d827",
         "underlying": "0xBD21A10F619BE90d6066c941b04e340841F1F989"
       }
     },
@@ -1521,7 +1521,7 @@
       "symbol": "amWBTC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Mumbai",
+        "pool": "0x9198F13B08E299d85E096929fA9781A1E3d5d827",
         "underlying": "0x0d787a4a1548f673ed375445535a6c7A1EE56180"
       }
     },
@@ -1541,7 +1541,7 @@
       "symbol": "amWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Mumbai",
+        "pool": "0x9198F13B08E299d85E096929fA9781A1E3d5d827",
         "underlying": "0x3C68CE8504087f89c640D02d133646d98e64ddd9"
       }
     },
@@ -1561,7 +1561,7 @@
       "symbol": "amWMATIC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Mumbai",
+        "pool": "0x9198F13B08E299d85E096929fA9781A1E3d5d827",
         "underlying": "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889"
       }
     },
@@ -1581,7 +1581,7 @@
       "symbol": "amAAVE",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Mumbai",
+        "pool": "0x9198F13B08E299d85E096929fA9781A1E3d5d827",
         "underlying": "0x341d1f30e77D3FBfbD43D17183E2acb9dF25574E"
       }
     },
@@ -1601,7 +1601,7 @@
       "symbol": "aAAVE",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x0B7a69d978DdA361Db5356D4Bd0206496aFbDD96"
       }
     },
@@ -1621,7 +1621,7 @@
       "symbol": "aBAT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x515614aA3d8f09152b1289848383A260c7D053Ff"
       }
     },
@@ -1641,7 +1641,7 @@
       "symbol": "aBUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0xa7c3Bf25FFeA8605B516Cf878B7435fe1768c89b"
       }
     },
@@ -1661,7 +1661,7 @@
       "symbol": "aDAI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x75Ab5AB1Eef154C0352Fc31D2428Cef80C7F8B33"
       }
     },
@@ -1681,7 +1681,7 @@
       "symbol": "aENJ",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x1057DCaa0b66dFBcEc5241fD51F4326C210f201F"
       }
     },
@@ -1701,7 +1701,7 @@
       "symbol": "aKNC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x54Bc1D59873A5ABde98cf76B6EcF4075ff65d685"
       }
     },
@@ -1721,7 +1721,7 @@
       "symbol": "aLINK",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x7337e7FF9abc45c0e43f130C136a072F4794d40b"
       }
     },
@@ -1741,7 +1741,7 @@
       "symbol": "aMANA",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x8d9EAc6f25470EFfD68f0AD22993CB2813c0c9B9"
       }
     },
@@ -1761,7 +1761,7 @@
       "symbol": "aMKR",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x90be02599452FBC1a3D47E9EB62895330cfA05Ed"
       }
     },
@@ -1781,7 +1781,7 @@
       "symbol": "aREN",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x3160F3f3B55eF85d0D27f04A2d74d426c32de842"
       }
     },
@@ -1801,7 +1801,7 @@
       "symbol": "aSNX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0xFc1Ab0379db4B6ad8Bf5Bc1382e108a341E2EaBb"
       }
     },
@@ -1821,7 +1821,7 @@
       "symbol": "aSUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x4e62eB262948671590b8D967BDE048557bdd03eD"
       }
     },
@@ -1841,7 +1841,7 @@
       "symbol": "aTUSD",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0xc048C1b6ac47393F073dA2b3d5D1cc43b94891Fd"
       }
     },
@@ -1861,7 +1861,7 @@
       "symbol": "aUNI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x981D8AcaF6af3a46785e7741d22fBE81B25Ebf1e"
       }
     },
@@ -1881,7 +1881,7 @@
       "symbol": "aUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x9FD21bE27A2B059a288229361E2fA632D8D2d074"
       }
     },
@@ -1901,7 +1901,7 @@
       "symbol": "aUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x65E2fe35C30eC218b46266F89847c63c2eDa7Dc7"
       }
     },
@@ -1921,7 +1921,7 @@
       "symbol": "aWBTC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0xf4423F4152966eBb106261740da907662A3569C5"
       }
     },
@@ -1941,7 +1941,7 @@
       "symbol": "aWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0xCCa7d1416518D095E729904aAeA087dBA749A4dC"
       }
     },
@@ -1961,7 +1961,7 @@
       "symbol": "aYFI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x6c260F702B6Bb9AC989DA4B0fcbE7fddF8f749c4"
       }
     },
@@ -1981,7 +1981,7 @@
       "symbol": "aZRX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0xAcFd03DdF9C68015E1943FB02b60c5df56C4CB9e"
       }
     },
@@ -2001,7 +2001,7 @@
       "symbol": "axSUSHI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Goerli",
+        "pool": "0x4bd5643ac6f66a5237E18bfA7d47cF22f1c9F210",
         "underlying": "0x45E18E77b15A02a31507e948A546a509A50a2376"
       }
     },
@@ -2021,7 +2021,7 @@
       "symbol": "aavaWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Fuji",
+        "pool": "0x76cc67FF2CC77821A70ED14321111Ce381C2594D",
         "underlying": "0x9668f5f55f2712Dd2dfa316256609b516292D554"
       }
     },
@@ -2041,7 +2041,7 @@
       "symbol": "aavaUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Fuji",
+        "pool": "0x76cc67FF2CC77821A70ED14321111Ce381C2594D",
         "underlying": "0x02823f9B469960Bb3b1de0B3746D4b95B7E35543"
       }
     },
@@ -2061,7 +2061,7 @@
       "symbol": "aavaWBTC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Fuji",
+        "pool": "0x76cc67FF2CC77821A70ED14321111Ce381C2594D",
         "underlying": "0x9C1DCacB57ADa1E9e2D3a8280B7cfC7EB936186F"
       }
     },
@@ -2081,7 +2081,7 @@
       "symbol": "aavaWAVAX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Fuji",
+        "pool": "0x76cc67FF2CC77821A70ED14321111Ce381C2594D",
         "underlying": "0xd00ae08403B9bbb9124bB305C09058E32C39A48c"
       }
     },
@@ -2101,7 +2101,7 @@
       "symbol": "avWETH",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Avalanche",
+        "pool": "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C",
         "underlying": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB"
       }
     },
@@ -2121,7 +2121,7 @@
       "symbol": "avDAI",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Avalanche",
+        "pool": "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C",
         "underlying": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70"
       }
     },
@@ -2141,7 +2141,7 @@
       "symbol": "avUSDT",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Avalanche",
+        "pool": "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C",
         "underlying": "0xc7198437980c041c805A1EDcbA50c1Ce5db95118"
       }
     },
@@ -2161,7 +2161,7 @@
       "symbol": "avUSDC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Avalanche",
+        "pool": "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C",
         "underlying": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664"
       }
     },
@@ -2181,7 +2181,7 @@
       "symbol": "avAAVE",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Avalanche",
+        "pool": "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C",
         "underlying": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9"
       }
     },
@@ -2201,7 +2201,7 @@
       "symbol": "avWBTC",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Avalanche",
+        "pool": "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C",
         "underlying": "0x50b7545627a5162F82A992c33b87aDc75187B218"
       }
     },
@@ -2221,7 +2221,7 @@
       "symbol": "avWAVAX",
       "tags": ["aTokenV2", "aaveV2"],
       "extensions": {
-        "pool": "AaveV2Avalanche",
+        "pool": "0x4F01AeD16D97E3aB5ab2B501154DC9bb0F1A5A2C",
         "underlying": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
       }
     },
@@ -2233,7 +2233,7 @@
       "symbol": "aEthWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
       }
     },
@@ -2245,7 +2245,7 @@
       "symbol": "stataEthWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
         "underlyingAToken": "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8"
       }
@@ -2266,7 +2266,7 @@
       "symbol": "aEthwstETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
       }
     },
@@ -2278,7 +2278,7 @@
       "symbol": "stataEthwstETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
         "underlyingAToken": "0x0B925eD163218f6662a35e0f0371Ac234f9E9371"
       }
@@ -2291,7 +2291,7 @@
       "symbol": "aEthWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
       }
     },
@@ -2303,7 +2303,7 @@
       "symbol": "aEthUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       }
     },
@@ -2315,7 +2315,7 @@
       "symbol": "stataEthUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
         "underlyingAToken": "0x98C23E9d8f34FEFb1B7BD6a91B7FF122F4e16F5c"
       }
@@ -2328,7 +2328,7 @@
       "symbol": "aEthDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F"
       }
     },
@@ -2340,7 +2340,7 @@
       "symbol": "stataEthDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
         "underlyingAToken": "0x018008bfb33d285247A21d44E50697654f754e63"
       }
@@ -2353,7 +2353,7 @@
       "symbol": "aEthLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x514910771AF9Ca656af840dff83E8264EcF986CA"
       }
     },
@@ -2365,7 +2365,7 @@
       "symbol": "aEthAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
       }
     },
@@ -2385,7 +2385,7 @@
       "symbol": "aEthcbETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704"
       }
     },
@@ -2397,7 +2397,7 @@
       "symbol": "aEthUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
       }
     },
@@ -2409,7 +2409,7 @@
       "symbol": "stataEthUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
         "underlyingAToken": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a"
       }
@@ -2430,7 +2430,7 @@
       "symbol": "aEthrETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xae78736Cd615f374D3085123A210448E74Fc6393"
       }
     },
@@ -2442,7 +2442,7 @@
       "symbol": "aEthLUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0"
       }
     },
@@ -2454,7 +2454,7 @@
       "symbol": "stataEthLUSD",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0",
         "underlyingAToken": "0x3Fe6a295459FAe07DF8A0ceCC36F37160FE86AA9"
       }
@@ -2467,7 +2467,7 @@
       "symbol": "aEthCRV",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xD533a949740bb3306d119CC777fa900bA034cd52"
       }
     },
@@ -2479,7 +2479,7 @@
       "symbol": "aEthMKR",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
       }
     },
@@ -2491,7 +2491,7 @@
       "symbol": "aEthSNX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F"
       }
     },
@@ -2503,7 +2503,7 @@
       "symbol": "aEthBAL",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xba100000625a3754423978a60c9317c58a424e3D"
       }
     },
@@ -2515,7 +2515,7 @@
       "symbol": "aEthUNI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
       }
     },
@@ -2535,7 +2535,7 @@
       "symbol": "aEthLDO",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32"
       }
     },
@@ -2547,7 +2547,7 @@
       "symbol": "aEthENS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72"
       }
     },
@@ -2559,7 +2559,7 @@
       "symbol": "aEthONE_INCH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x111111111117dC0aa78b770fA6A738034120C302"
       }
     },
@@ -2571,7 +2571,7 @@
       "symbol": "aEthFRAX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
       }
     },
@@ -2583,7 +2583,7 @@
       "symbol": "stataEthFRAX",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
         "underlyingAToken": "0xd4e245848d6E1220DBE62e155d89fa327E43CB06"
       }
@@ -2604,7 +2604,7 @@
       "symbol": "aEthGHO",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f"
       }
     },
@@ -2624,7 +2624,7 @@
       "symbol": "aEthRPL",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f"
       }
     },
@@ -2644,7 +2644,7 @@
       "symbol": "aEthsDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x83F20F44975D03b1b09e64809B757c47f942BEeA"
       }
     },
@@ -2664,7 +2664,7 @@
       "symbol": "aEthSTG",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xAf5191B0De278C7286d6C7CC6ab6BB8A73bA2Cd6"
       }
     },
@@ -2684,7 +2684,7 @@
       "symbol": "aEthKNC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202"
       }
     },
@@ -2704,7 +2704,7 @@
       "symbol": "aEthFXS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x3432B6A60D23Ca0dFCa7761B7ab56459D9C964D0"
       }
     },
@@ -2724,7 +2724,7 @@
       "symbol": "aEthcrvUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E"
       }
     },
@@ -2736,7 +2736,7 @@
       "symbol": "stataEthcrvUSD",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xf939E0A03FB07F59A73314E73794Be0E57ac1b4E",
         "underlyingAToken": "0xb82fa9f31612989525992FCfBB09AB22Eff5c85A"
       }
@@ -2757,7 +2757,7 @@
       "symbol": "aEthPYUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
       }
     },
@@ -2769,7 +2769,7 @@
       "symbol": "stataEthPYUSD",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Ethereum",
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
         "underlyingAToken": "0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E"
       }
@@ -2790,7 +2790,7 @@
       "symbol": "aEthDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357"
       }
     },
@@ -2802,7 +2802,7 @@
       "symbol": "stataEthDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357",
         "underlyingAToken": "0x29598b72eb5CeBd806C5dCD549490FdA35B13cD8"
       }
@@ -2823,7 +2823,7 @@
       "symbol": "aEthLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xf8Fb3713D459D7C1018BD0A49D19b4C44290EBE5"
       }
     },
@@ -2835,7 +2835,7 @@
       "symbol": "stataEthLINK",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xf8Fb3713D459D7C1018BD0A49D19b4C44290EBE5",
         "underlyingAToken": "0x3FfAf50D4F4E96eB78f2407c090b72e86eCaed24"
       }
@@ -2856,7 +2856,7 @@
       "symbol": "aEthUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8"
       }
     },
@@ -2868,7 +2868,7 @@
       "symbol": "stataEthUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8",
         "underlyingAToken": "0x16dA4541aD1807f4443d92D26044C1147406EB80"
       }
@@ -2889,7 +2889,7 @@
       "symbol": "aEthWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x29f2D40B0605204364af54EC677bD022dA425d03"
       }
     },
@@ -2901,7 +2901,7 @@
       "symbol": "stataEthWBTC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x29f2D40B0605204364af54EC677bD022dA425d03",
         "underlyingAToken": "0x1804Bf30507dc2EB3bDEbbbdd859991EAeF6EefF"
       }
@@ -2922,7 +2922,7 @@
       "symbol": "aEthWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c"
       }
     },
@@ -2934,7 +2934,7 @@
       "symbol": "stataEthWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c",
         "underlyingAToken": "0x5b071b590a59395fE4025A0Ccc1FcC931AAc1830"
       }
@@ -2955,7 +2955,7 @@
       "symbol": "aEthUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0"
       }
     },
@@ -2967,7 +2967,7 @@
       "symbol": "stataEthUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0",
         "underlyingAToken": "0xAF0F6e8b0Dc5c913bbF4d14c22B4E78Dd14310B6"
       }
@@ -2988,7 +2988,7 @@
       "symbol": "aEthAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x88541670E55cC00bEEFD87eB59EDd1b7C511AC9a"
       }
     },
@@ -3000,7 +3000,7 @@
       "symbol": "stataEthAAVE",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x88541670E55cC00bEEFD87eB59EDd1b7C511AC9a",
         "underlyingAToken": "0x6b8558764d3b7572136F17174Cb9aB1DDc7E1259"
       }
@@ -3021,7 +3021,7 @@
       "symbol": "aEthEURS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x6d906e526a4e2Ca02097BA9d0caA3c382F52278E"
       }
     },
@@ -3033,7 +3033,7 @@
       "symbol": "stataEthEURS",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0x6d906e526a4e2Ca02097BA9d0caA3c382F52278E",
         "underlyingAToken": "0xB20691021F9AcED8631eDaa3c0Cd2949EB45662D"
       }
@@ -3054,7 +3054,7 @@
       "symbol": "aSepGHO",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Sepolia",
+        "pool": "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951",
         "underlying": "0xc4bF5CbDaBE595361438F8c6a187bDc330539c60"
       }
     },
@@ -3074,7 +3074,7 @@
       "symbol": "aTestAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3GoerliGho",
+        "pool": "0x617Cf26407193E32a771264fB5e9b8f09715CdfB",
         "underlying": "0xE205181Eb3D7415f15377F79aA7769F846cE56DD"
       }
     },
@@ -3094,7 +3094,7 @@
       "symbol": "aTestDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3GoerliGho",
+        "pool": "0x617Cf26407193E32a771264fB5e9b8f09715CdfB",
         "underlying": "0xD77b79BE3e85351fF0cbe78f1B58cf8d1064047C"
       }
     },
@@ -3114,7 +3114,7 @@
       "symbol": "aTestUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3GoerliGho",
+        "pool": "0x617Cf26407193E32a771264fB5e9b8f09715CdfB",
         "underlying": "0x69305b943C6F55743b2Ece5c0b20507300a39FC3"
       }
     },
@@ -3134,7 +3134,7 @@
       "symbol": "aTestWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3GoerliGho",
+        "pool": "0x617Cf26407193E32a771264fB5e9b8f09715CdfB",
         "underlying": "0x84ced17d95F3EC7230bAf4a369F1e624Ae60090d"
       }
     },
@@ -3154,7 +3154,7 @@
       "symbol": "aTestLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3GoerliGho",
+        "pool": "0x617Cf26407193E32a771264fB5e9b8f09715CdfB",
         "underlying": "0x2166903C38B4883B855eA2C77A02430a27Cdfede"
       }
     },
@@ -3174,7 +3174,7 @@
       "symbol": "aEthGHO",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3GoerliGho",
+        "pool": "0x617Cf26407193E32a771264fB5e9b8f09715CdfB",
         "underlying": "0xcbE9771eD31e761b744D3cB9eF78A1f32DD99211"
       }
     },
@@ -3186,7 +3186,7 @@
       "symbol": "aPolDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063"
       }
     },
@@ -3198,7 +3198,7 @@
       "symbol": "stataPolDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
         "underlyingAToken": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE"
       }
@@ -3211,7 +3211,7 @@
       "symbol": "aPolLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39"
       }
     },
@@ -3223,7 +3223,7 @@
       "symbol": "stataPolLINK",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x53E0bca35eC356BD5ddDFebbD1Fc0fD03FaBad39",
         "underlyingAToken": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530"
       }
@@ -3236,7 +3236,7 @@
       "symbol": "aPolUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
       }
     },
@@ -3248,7 +3248,7 @@
       "symbol": "stataPolUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
         "underlyingAToken": "0x625E7708f30cA75bfd92586e17077590C60eb4cD"
       }
@@ -3261,7 +3261,7 @@
       "symbol": "aPolWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6"
       }
     },
@@ -3273,7 +3273,7 @@
       "symbol": "stataPolWBTC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
         "underlyingAToken": "0x078f358208685046a11C85e8ad32895DED33A249"
       }
@@ -3286,7 +3286,7 @@
       "symbol": "aPolWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619"
       }
     },
@@ -3298,7 +3298,7 @@
       "symbol": "stataPolWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
         "underlyingAToken": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8"
       }
@@ -3311,7 +3311,7 @@
       "symbol": "aPolUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
       }
     },
@@ -3323,7 +3323,7 @@
       "symbol": "stataPolUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
         "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
       }
@@ -3336,7 +3336,7 @@
       "symbol": "aPolAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B"
       }
     },
@@ -3348,7 +3348,7 @@
       "symbol": "stataPolAAVE",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xD6DF932A45C0f255f85145f286eA0b292B21C90B",
         "underlyingAToken": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375"
       }
@@ -3361,7 +3361,7 @@
       "symbol": "aPolWMATIC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
       }
     },
@@ -3373,7 +3373,7 @@
       "symbol": "stataPolWMATIC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
         "underlyingAToken": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97"
       }
@@ -3386,7 +3386,7 @@
       "symbol": "aPolCRV",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x172370d5Cd63279eFa6d502DAB29171933a610AF"
       }
     },
@@ -3398,7 +3398,7 @@
       "symbol": "stataPolCRV",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
         "underlyingAToken": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf"
       }
@@ -3411,7 +3411,7 @@
       "symbol": "aPolSUSHI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a"
       }
     },
@@ -3423,7 +3423,7 @@
       "symbol": "stataPolSUSHI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a",
         "underlyingAToken": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA"
       }
@@ -3436,7 +3436,7 @@
       "symbol": "aPolGHST",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7"
       }
     },
@@ -3448,7 +3448,7 @@
       "symbol": "stataPolGHST",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
         "underlyingAToken": "0x8Eb270e296023E9D92081fdF967dDd7878724424"
       }
@@ -3461,7 +3461,7 @@
       "symbol": "aPolBAL",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3"
       }
     },
@@ -3473,7 +3473,7 @@
       "symbol": "stataPolBAL",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x9a71012B13CA4d3D0Cdc72A177DF3ef03b0E76A3",
         "underlyingAToken": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692"
       }
@@ -3486,7 +3486,7 @@
       "symbol": "aPolDPI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369"
       }
     },
@@ -3498,7 +3498,7 @@
       "symbol": "stataPolDPI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x85955046DF4668e1DD369D2DE9f3AEB98DD2A369",
         "underlyingAToken": "0x724dc807b04555b71ed48a6896b6F41593b8C637"
       }
@@ -3519,7 +3519,7 @@
       "symbol": "aPolEURS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99"
       }
     },
@@ -3531,7 +3531,7 @@
       "symbol": "stataPolEURS",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
         "underlyingAToken": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5"
       }
@@ -3552,7 +3552,7 @@
       "symbol": "aPolJEUR",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c"
       }
     },
@@ -3564,7 +3564,7 @@
       "symbol": "stataPolJEUR",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
         "underlyingAToken": "0x6533afac2E7BCCB20dca161449A13A32D391fb00"
       }
@@ -3585,7 +3585,7 @@
       "symbol": "aPolAGEUR",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4"
       }
     },
@@ -3597,7 +3597,7 @@
       "symbol": "stataPolAGEUR",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
         "underlyingAToken": "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77"
       }
@@ -3618,7 +3618,7 @@
       "symbol": "aPolMIMATIC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1"
       }
     },
@@ -3630,7 +3630,7 @@
       "symbol": "stataPolMIMATIC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xa3Fa99A148fA48D14Ed51d610c367C61876997F1",
         "underlyingAToken": "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D"
       }
@@ -3651,7 +3651,7 @@
       "symbol": "aPolSTMATIC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4"
       }
     },
@@ -3663,7 +3663,7 @@
       "symbol": "stataPolSTMATIC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4",
         "underlyingAToken": "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9"
       }
@@ -3684,7 +3684,7 @@
       "symbol": "aPolMATICX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6"
       }
     },
@@ -3696,7 +3696,7 @@
       "symbol": "stataPolMATICX",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xfa68FB4628DFF1028CFEc22b4162FCcd0d45efb6",
         "underlyingAToken": "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE"
       }
@@ -3717,7 +3717,7 @@
       "symbol": "aPolwstETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD"
       }
     },
@@ -3729,7 +3729,7 @@
       "symbol": "stataPolwstETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x03b54A6e9a984069379fae1a4fC4dBAE93B3bCCD",
         "underlyingAToken": "0xf59036CAEBeA7dC4b86638DFA2E3C97dA9FcCd40"
       }
@@ -3750,7 +3750,7 @@
       "symbol": "aPolUSDCn",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Polygon",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
       }
     },
@@ -3770,7 +3770,7 @@
       "symbol": "aPolDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded"
       }
     },
@@ -3782,7 +3782,7 @@
       "symbol": "stataPolDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded",
         "underlyingAToken": "0x8903bbBD684B7ef734c01BEb00273Ff52703514F"
       }
@@ -3803,7 +3803,7 @@
       "symbol": "aPolLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x9DFf9E93B1e513379cf820504D642c6891d8F7CC"
       }
     },
@@ -3815,7 +3815,7 @@
       "symbol": "stataPolLINK",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x9DFf9E93B1e513379cf820504D642c6891d8F7CC",
         "underlyingAToken": "0xaB9F0568d5C6CE1437ba07E6efE529A2A9b82665"
       }
@@ -3836,7 +3836,7 @@
       "symbol": "aPolUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x52D800ca262522580CeBAD275395ca6e7598C014"
       }
     },
@@ -3848,7 +3848,7 @@
       "symbol": "stataPolUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x52D800ca262522580CeBAD275395ca6e7598C014",
         "underlyingAToken": "0x4086fabeE92a080002eeBA1220B9025a27a40A49"
       }
@@ -3869,7 +3869,7 @@
       "symbol": "aPolWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A"
       }
     },
@@ -3881,7 +3881,7 @@
       "symbol": "stataPolWBTC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A",
         "underlyingAToken": "0xdA67e6C1171D4f0D522Db7f127B88405eA1535d4"
       }
@@ -3902,7 +3902,7 @@
       "symbol": "aPolWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xc199807AF4fEDB02EE567Ed0FeB814A077de4802"
       }
     },
@@ -3914,7 +3914,7 @@
       "symbol": "stataPolWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xc199807AF4fEDB02EE567Ed0FeB814A077de4802",
         "underlyingAToken": "0xAba444af64ad33A6d8575b8A353226997d6A126a"
       }
@@ -3935,7 +3935,7 @@
       "symbol": "aPolUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2"
       }
     },
@@ -3947,7 +3947,7 @@
       "symbol": "stataPolUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2",
         "underlyingAToken": "0x5F3a71D07E95C1E54B9Cc055D418a219586A3473"
       }
@@ -3968,7 +3968,7 @@
       "symbol": "aPolAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24"
       }
     },
@@ -3980,7 +3980,7 @@
       "symbol": "stataPolAAVE",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24",
         "underlyingAToken": "0xE05705857b3d78aCe3d872b26D9c951B266ECC8d"
       }
@@ -4001,7 +4001,7 @@
       "symbol": "aPolWMATIC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xaD3C5a67275dE4b5554CdD1d961e957f408eF75a"
       }
     },
@@ -4013,7 +4013,7 @@
       "symbol": "stataPolWMATIC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xaD3C5a67275dE4b5554CdD1d961e957f408eF75a",
         "underlyingAToken": "0xaCA5e6a7117F54B34B476aB95Bf3034c304e7a81"
       }
@@ -4034,7 +4034,7 @@
       "symbol": "aPolCRV",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x2bbF1f48a678d2f7c291dc5F8fD04805D34F485f"
       }
     },
@@ -4046,7 +4046,7 @@
       "symbol": "stataPolCRV",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x2bbF1f48a678d2f7c291dc5F8fD04805D34F485f",
         "underlyingAToken": "0xbB814C46ef7BFB51E3b25600675A6A7B03426973"
       }
@@ -4067,7 +4067,7 @@
       "symbol": "aPolSUSHI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61"
       }
     },
@@ -4079,7 +4079,7 @@
       "symbol": "stataPolSUSHI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61",
         "underlyingAToken": "0x474Af312bbfc1d12b6f6e2140D6D50Ed9dA6F839"
       }
@@ -4100,7 +4100,7 @@
       "symbol": "aPolGHST",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x9f86bA35a016acE27BD4C37E42a1940A5b2508EF"
       }
     },
@@ -4112,7 +4112,7 @@
       "symbol": "stataPolGHST",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x9f86bA35a016acE27BD4C37E42a1940A5b2508EF",
         "underlyingAToken": "0x9B1330b35DD740242c4622b5f203Bc39Ff40D9c9"
       }
@@ -4133,7 +4133,7 @@
       "symbol": "aPolBAL",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB"
       }
     },
@@ -4145,7 +4145,7 @@
       "symbol": "stataPolBAL",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB",
         "underlyingAToken": "0x27EbCb5ba3e4Ab18911dA0bA3350Ec42ceEa4ceE"
       }
@@ -4166,7 +4166,7 @@
       "symbol": "aPolDPI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD"
       }
     },
@@ -4178,7 +4178,7 @@
       "symbol": "stataPolDPI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD",
         "underlyingAToken": "0xeBf20b66BB82a157450C3ad4cab738D629a29749"
       }
@@ -4199,7 +4199,7 @@
       "symbol": "aPolEURS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xB516d30421d2A0524769A243BBE5e193E78ab35c"
       }
     },
@@ -4211,7 +4211,7 @@
       "symbol": "stataPolEURS",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xB516d30421d2A0524769A243BBE5e193E78ab35c",
         "underlyingAToken": "0x6fD1376295392f1F6F9EcCc89bff0e26dDB2aE74"
       }
@@ -4232,7 +4232,7 @@
       "symbol": "aPolJEUR",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xd409F17095a370800A9C352124C6a1e82695203E"
       }
     },
@@ -4244,7 +4244,7 @@
       "symbol": "stataPolJEUR",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xd409F17095a370800A9C352124C6a1e82695203E",
         "underlyingAToken": "0x58B8d2A77D7d5942fA701a1Dd68e7cF8222750f6"
       }
@@ -4265,7 +4265,7 @@
       "symbol": "aPolAGEUR",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F"
       }
     },
@@ -4277,7 +4277,7 @@
       "symbol": "stataPolAGEUR",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Mumbai",
+        "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F",
         "underlyingAToken": "0xbD3615332c2a12e2fFc41Fe09C4f05e5493e733F"
       }
@@ -4290,7 +4290,7 @@
       "symbol": "aAvaDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70"
       }
     },
@@ -4302,7 +4302,7 @@
       "symbol": "stataAvaDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
         "underlyingAToken": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE"
       }
@@ -4323,7 +4323,7 @@
       "symbol": "aAvaLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x5947BB275c521040051D82396192181b413227A3"
       }
     },
@@ -4335,7 +4335,7 @@
       "symbol": "stataAvaLINK",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x5947BB275c521040051D82396192181b413227A3",
         "underlyingAToken": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530"
       }
@@ -4356,7 +4356,7 @@
       "symbol": "aAvaUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E"
       }
     },
@@ -4368,7 +4368,7 @@
       "symbol": "stataAvaUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
         "underlyingAToken": "0x625E7708f30cA75bfd92586e17077590C60eb4cD"
       }
@@ -4381,7 +4381,7 @@
       "symbol": "aAvaWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x50b7545627a5162F82A992c33b87aDc75187B218"
       }
     },
@@ -4393,7 +4393,7 @@
       "symbol": "stataAvaWBTC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x50b7545627a5162F82A992c33b87aDc75187B218",
         "underlyingAToken": "0x078f358208685046a11C85e8ad32895DED33A249"
       }
@@ -4406,7 +4406,7 @@
       "symbol": "aAvaWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB"
       }
     },
@@ -4418,7 +4418,7 @@
       "symbol": "stataAvaWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
         "underlyingAToken": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8"
       }
@@ -4439,7 +4439,7 @@
       "symbol": "aAvaUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7"
       }
     },
@@ -4451,7 +4451,7 @@
       "symbol": "stataAvaUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
         "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
       }
@@ -4464,7 +4464,7 @@
       "symbol": "aAvaAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9"
       }
     },
@@ -4476,7 +4476,7 @@
       "symbol": "stataAvaAAVE",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
         "underlyingAToken": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375"
       }
@@ -4489,7 +4489,7 @@
       "symbol": "aAvaWAVAX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
       }
     },
@@ -4501,7 +4501,7 @@
       "symbol": "stataAvaWAVAX",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
         "underlyingAToken": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97"
       }
@@ -4522,7 +4522,7 @@
       "symbol": "aAvaSAVAX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE"
       }
     },
@@ -4534,7 +4534,7 @@
       "symbol": "stataAvaSAVAX",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
         "underlyingAToken": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf"
       }
@@ -4555,7 +4555,7 @@
       "symbol": "aAvaFRAX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64"
       }
     },
@@ -4567,7 +4567,7 @@
       "symbol": "stataAvaFRAX",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
         "underlyingAToken": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA"
       }
@@ -4588,7 +4588,7 @@
       "symbol": "aAvaMAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b"
       }
     },
@@ -4600,7 +4600,7 @@
       "symbol": "stataAvaMAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b",
         "underlyingAToken": "0x8Eb270e296023E9D92081fdF967dDd7878724424"
       }
@@ -4621,7 +4621,7 @@
       "symbol": "aAvaBTCb",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x152b9d0FdC40C096757F570A51E494bd4b943E50"
       }
     },
@@ -4633,7 +4633,7 @@
       "symbol": "stataAvaBTCb",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Avalanche",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
         "underlyingAToken": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692"
       }
@@ -4654,7 +4654,7 @@
       "symbol": "aAvaDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0x676bD5B5d0955925aeCe653C50426940c58036c8"
       }
     },
@@ -4674,7 +4674,7 @@
       "symbol": "aAvaLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0x3A38c4d0444b5fFcc5323b2e86A21aBaaf5FbF26"
       }
     },
@@ -4694,7 +4694,7 @@
       "symbol": "aAvaUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0xCaC7Ffa82c0f43EBB0FC11FCd32123EcA46626cf"
       }
     },
@@ -4714,7 +4714,7 @@
       "symbol": "aAvaWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0x0EFD8Ad2231c0B9C4d63F892E0a0a59a626Ce88d"
       }
     },
@@ -4734,7 +4734,7 @@
       "symbol": "aAvaWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0xf97b6C636167B529B6f1D729Bd9bC0e2Bd491848"
       }
     },
@@ -4754,7 +4754,7 @@
       "symbol": "aAvaUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0xBDE7fbbb1DC89E74B73C54Ad911A1C9685caCD83"
       }
     },
@@ -4774,7 +4774,7 @@
       "symbol": "aAvaAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0xfB4CeA030Fa61FC435E922CFDc4bF9C80456E19b"
       }
     },
@@ -4794,7 +4794,7 @@
       "symbol": "aAvaWAVAX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fuji",
+        "pool": "0xccEa5C65f6d4F465B71501418b88FBe4e7071283",
         "underlying": "0x2f6179f64FFe203899600Ba26d10979B314eA13D"
       }
     },
@@ -4814,7 +4814,7 @@
       "symbol": "aBasWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x4200000000000000000000000000000000000006"
       }
     },
@@ -4826,7 +4826,7 @@
       "symbol": "stataBasWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x4200000000000000000000000000000000000006",
         "underlyingAToken": "0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7"
       }
@@ -4847,7 +4847,7 @@
       "symbol": "aBascbETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
       }
     },
@@ -4859,7 +4859,7 @@
       "symbol": "stataBascbETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
         "underlyingAToken": "0xcf3D55c10DB69f28fD1A75Bd73f3D8A2d9c595ad"
       }
@@ -4880,7 +4880,7 @@
       "symbol": "aBasUSDbC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA"
       }
     },
@@ -4892,7 +4892,7 @@
       "symbol": "stataBasUSDbC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
         "underlyingAToken": "0x0a1d576f3eFeF75b330424287a95A366e8281D54"
       }
@@ -4913,7 +4913,7 @@
       "symbol": "aBaswstETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452"
       }
     },
@@ -4933,7 +4933,7 @@
       "symbol": "aBasUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Base",
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
       }
     },
@@ -4953,7 +4953,7 @@
       "symbol": "aMetmDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0"
       }
     },
@@ -4965,7 +4965,7 @@
       "symbol": "stataMetmDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
         "underlyingAToken": "0x85ABAdDcae06efee2CB5F75f33b6471759eFDE24"
       }
@@ -4986,7 +4986,7 @@
       "symbol": "aMetMETIS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000"
       }
     },
@@ -4998,7 +4998,7 @@
       "symbol": "stataMetMETIS",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
         "underlyingAToken": "0x7314Ef2CA509490f65F52CC8FC9E0675C66390b8"
       }
@@ -5019,7 +5019,7 @@
       "symbol": "aMetmUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21"
       }
     },
@@ -5031,7 +5031,7 @@
       "symbol": "stataMetmUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
         "underlyingAToken": "0x885C8AEC5867571582545F894A5906971dB9bf27"
       }
@@ -5052,7 +5052,7 @@
       "symbol": "aMetmUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC"
       }
     },
@@ -5064,7 +5064,7 @@
       "symbol": "stataMetmUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC",
         "underlyingAToken": "0xd9fa75D14c26720d5ce7eE2530793a823e8f07b9"
       }
@@ -5085,7 +5085,7 @@
       "symbol": "aMetWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0x420000000000000000000000000000000000000A"
       }
     },
@@ -5097,7 +5097,7 @@
       "symbol": "stataMetWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Metis",
+        "pool": "0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57",
         "underlying": "0x420000000000000000000000000000000000000A",
         "underlyingAToken": "0x8acAe35059C9aE27709028fF6689386a44c09f3a"
       }
@@ -5118,7 +5118,7 @@
       "symbol": "aGnoWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1"
       }
     },
@@ -5130,7 +5130,7 @@
       "symbol": "stataGnoWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1",
         "underlyingAToken": "0xa818F1B57c201E092C4A2017A91815034326Efd1"
       }
@@ -5151,7 +5151,7 @@
       "symbol": "aGnowstETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6"
       }
     },
@@ -5163,7 +5163,7 @@
       "symbol": "stataGnowstETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
         "underlyingAToken": "0x23e4E76D01B2002BE436CE8d6044b0aA2f68B68a"
       }
@@ -5184,7 +5184,7 @@
       "symbol": "aGnoGNO",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb"
       }
     },
@@ -5196,7 +5196,7 @@
       "symbol": "stataGnoGNO",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb",
         "underlyingAToken": "0xA1Fa064A85266E2Ca82DEe5C5CcEC84DF445760e"
       }
@@ -5217,7 +5217,7 @@
       "symbol": "aGnoUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83"
       }
     },
@@ -5229,7 +5229,7 @@
       "symbol": "stataGnoUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
         "underlyingAToken": "0xc6B7AcA6DE8a6044E0e32d0c841a89244A10D284"
       }
@@ -5250,7 +5250,7 @@
       "symbol": "aGnoWXDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
       }
     },
@@ -5262,7 +5262,7 @@
       "symbol": "stataGnoWXDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d",
         "underlyingAToken": "0xd0Dd6cEF72143E22cCED4867eb0d5F2328715533"
       }
@@ -5283,7 +5283,7 @@
       "symbol": "aGnoEURe",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xcB444e90D8198415266c6a2724b7900fb12FC56E"
       }
     },
@@ -5295,7 +5295,7 @@
       "symbol": "stataGnoEURe",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
         "underlyingAToken": "0xEdBC7449a9b594CA4E053D9737EC5Dc4CbCcBfb2"
       }
@@ -5316,7 +5316,7 @@
       "symbol": "aGnosDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xaf204776c7245bF4147c2612BF6e5972Ee483701"
       }
     },
@@ -5328,7 +5328,7 @@
       "symbol": "stataGnosDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Gnosis",
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
         "underlyingAToken": "0x7a5c3860a77a8DC1b225BD46d0fb2ac1C6D191BC"
       }
@@ -5349,8 +5349,21 @@
       "symbol": "aBnbCAKE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x3854354CE3681da1D7F550073061E92a4a7d1B27",
+      "name": "Static Aave BNB Smart Chain CAKE",
+      "decimals": 18,
+      "symbol": "stataBnbCAKE",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+        "underlyingAToken": "0x4199CC1F5ed0d796563d7CcB2e036253E2C18281"
       }
     },
     {
@@ -5369,8 +5382,21 @@
       "symbol": "aBnbWBNB",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x436baCb4C66583de4Cb16e13a1A0D9A3075DE425",
+      "name": "Static Aave BNB Smart Chain WBNB",
+      "decimals": 18,
+      "symbol": "stataBnbWBNB",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+        "underlyingAToken": "0x9B00a09492a626678E5A3009982191586C444Df9"
       }
     },
     {
@@ -5389,8 +5415,21 @@
       "symbol": "aBnbBTCB",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x1F66b530084079d35478A069d9c4424F9c9C320c",
+      "name": "Static Aave BNB Smart Chain BTCB",
+      "decimals": 18,
+      "symbol": "stataBnbBTCB",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+        "underlyingAToken": "0x56a7ddc4e848EbF43845854205ad71D5D5F72d3D"
       }
     },
     {
@@ -5409,8 +5448,21 @@
       "symbol": "aBnbETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x52077433fB7053D747E2846aD0C18ff5015C368E",
+      "name": "Static Aave BNB Smart Chain ETH",
+      "decimals": 18,
+      "symbol": "stataBnbETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+        "underlyingAToken": "0x2E94171493fAbE316b6205f1585779C887771E2F"
       }
     },
     {
@@ -5429,8 +5481,21 @@
       "symbol": "aBnbUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x3906cDdfb781f02B21f21BD81ed7Fd8DC37075E1",
+      "name": "Static Aave BNB Smart Chain USDC",
+      "decimals": 18,
+      "symbol": "stataBnbUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+        "underlyingAToken": "0x00901a076785e0906d1028c7d6372d247bec7d61"
       }
     },
     {
@@ -5449,8 +5514,21 @@
       "symbol": "aBnbUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x55d398326f99059fF775485246999027B3197955"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x0471D185cc7Be61E154277cAB2396cD397663da6",
+      "name": "Static Aave BNB Smart Chain USDT",
+      "decimals": 18,
+      "symbol": "stataBnbUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0x55d398326f99059fF775485246999027B3197955",
+        "underlyingAToken": "0xa9251ca9DE909CB71783723713B21E4233fbf1B1"
       }
     },
     {
@@ -5469,8 +5547,21 @@
       "symbol": "aBnbFDUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409"
+      }
+    },
+    {
+      "chainId": 56,
+      "address": "0x4d074aAa0821073dA827f7bf6a02cF905b394ed0",
+      "name": "Static Aave BNB Smart Chain FDUSD",
+      "decimals": 18,
+      "symbol": "stataBnbFDUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3BNB",
+        "underlying": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409",
+        "underlyingAToken": "0x75bd1A659bdC62e4C313950d44A2416faB43E785"
       }
     },
     {
@@ -5489,7 +5580,7 @@
       "symbol": "aArbDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
       }
     },
@@ -5501,7 +5592,7 @@
       "symbol": "stataArbDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
         "underlyingAToken": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE"
       }
@@ -5522,7 +5613,7 @@
       "symbol": "aArbLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
       }
     },
@@ -5534,7 +5625,7 @@
       "symbol": "stataArbLINK",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4",
         "underlyingAToken": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530"
       }
@@ -5555,7 +5646,7 @@
       "symbol": "aArbUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
       }
     },
@@ -5567,7 +5658,7 @@
       "symbol": "stataArbUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
         "underlyingAToken": "0x625E7708f30cA75bfd92586e17077590C60eb4cD"
       }
@@ -5588,7 +5679,7 @@
       "symbol": "aArbWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
       }
     },
@@ -5600,7 +5691,7 @@
       "symbol": "stataArbWBTC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
         "underlyingAToken": "0x078f358208685046a11C85e8ad32895DED33A249"
       }
@@ -5621,7 +5712,7 @@
       "symbol": "aArbWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
       }
     },
@@ -5633,7 +5724,7 @@
       "symbol": "stataArbWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
         "underlyingAToken": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8"
       }
@@ -5654,7 +5745,7 @@
       "symbol": "aArbUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
       }
     },
@@ -5666,7 +5757,7 @@
       "symbol": "stataArbUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
         "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
       }
@@ -5687,7 +5778,7 @@
       "symbol": "aArbAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196"
       }
     },
@@ -5699,7 +5790,7 @@
       "symbol": "stataArbAAVE",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196",
         "underlyingAToken": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375"
       }
@@ -5720,7 +5811,7 @@
       "symbol": "aArbEURS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xD22a58f79e9481D1a88e00c343885A588b34b68B"
       }
     },
@@ -5732,7 +5823,7 @@
       "symbol": "stataArbEURS",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xD22a58f79e9481D1a88e00c343885A588b34b68B",
         "underlyingAToken": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97"
       }
@@ -5753,7 +5844,7 @@
       "symbol": "aArbwstETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x5979D7b546E38E414F7E9822514be443A4800529"
       }
     },
@@ -5765,7 +5856,7 @@
       "symbol": "stataArbwstETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x5979D7b546E38E414F7E9822514be443A4800529",
         "underlyingAToken": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf"
       }
@@ -5786,7 +5877,7 @@
       "symbol": "aArbMAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d"
       }
     },
@@ -5798,7 +5889,7 @@
       "symbol": "stataArbMAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
         "underlyingAToken": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA"
       }
@@ -5819,7 +5910,7 @@
       "symbol": "aArbrETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
       }
     },
@@ -5831,7 +5922,7 @@
       "symbol": "stataArbrETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8",
         "underlyingAToken": "0x8Eb270e296023E9D92081fdF967dDd7878724424"
       }
@@ -5852,7 +5943,7 @@
       "symbol": "aArbLUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b"
       }
     },
@@ -5864,7 +5955,7 @@
       "symbol": "stataArbLUSD",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
         "underlyingAToken": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692"
       }
@@ -5885,7 +5976,7 @@
       "symbol": "aArbUSDCn",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
       }
     },
@@ -5897,7 +5988,7 @@
       "symbol": "stataArbUSDCn",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
         "underlyingAToken": "0x724dc807b04555b71ed48a6896b6F41593b8C637"
       }
@@ -5918,7 +6009,7 @@
       "symbol": "aArbFRAX",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F"
       }
     },
@@ -5930,7 +6021,7 @@
       "symbol": "stataArbFRAX",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
         "underlyingAToken": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5"
       }
@@ -5951,7 +6042,7 @@
       "symbol": "aArbARB",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x912CE59144191C1204E64559FE8253a0e49E6548"
       }
     },
@@ -5963,7 +6054,7 @@
       "symbol": "stataArbARB",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Arbitrum",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x912CE59144191C1204E64559FE8253a0e49E6548",
         "underlyingAToken": "0x6533afac2E7BCCB20dca161449A13A32D391fb00"
       }
@@ -5984,7 +6075,7 @@
       "symbol": "aOptDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709"
       }
     },
@@ -6004,7 +6095,7 @@
       "symbol": "aOptLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0xBA25de9a7DC623B30799F33B770d31B44c2C3b77"
       }
     },
@@ -6024,7 +6115,7 @@
       "symbol": "aOptUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE"
       }
     },
@@ -6044,7 +6135,7 @@
       "symbol": "aOptWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692"
       }
     },
@@ -6064,7 +6155,7 @@
       "symbol": "aOptWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0x4778caf7b5DBD3934c3906c2909653eB1e0E601f"
       }
     },
@@ -6084,7 +6175,7 @@
       "symbol": "aOptUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0xf79129ae303764D79287FfF0c857003E95fC1506"
       }
     },
@@ -6104,7 +6195,7 @@
       "symbol": "aOptAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0x20288ac1Ef7711448DF03283E6B580710E73393a"
       }
     },
@@ -6124,7 +6215,7 @@
       "symbol": "aOptSUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3OptimismGoerli",
+        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
         "underlying": "0xC21D17E8E839C1286BBaa297d932AE9b33d7985b"
       }
     },
@@ -6144,7 +6235,7 @@
       "symbol": "aOptDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
       }
     },
@@ -6156,7 +6247,7 @@
       "symbol": "stataOptDAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
         "underlyingAToken": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE"
       }
@@ -6177,7 +6268,7 @@
       "symbol": "aOptLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6"
       }
     },
@@ -6189,7 +6280,7 @@
       "symbol": "stataOptLINK",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
         "underlyingAToken": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530"
       }
@@ -6210,7 +6301,7 @@
       "symbol": "aOptUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607"
       }
     },
@@ -6222,7 +6313,7 @@
       "symbol": "stataOptUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
         "underlyingAToken": "0x625E7708f30cA75bfd92586e17077590C60eb4cD"
       }
@@ -6243,7 +6334,7 @@
       "symbol": "aOptWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x68f180fcCe6836688e9084f035309E29Bf0A2095"
       }
     },
@@ -6255,7 +6346,7 @@
       "symbol": "stataOptWBTC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x68f180fcCe6836688e9084f035309E29Bf0A2095",
         "underlyingAToken": "0x078f358208685046a11C85e8ad32895DED33A249"
       }
@@ -6276,7 +6367,7 @@
       "symbol": "aOptWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x4200000000000000000000000000000000000006"
       }
     },
@@ -6288,7 +6379,7 @@
       "symbol": "stataOptWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x4200000000000000000000000000000000000006",
         "underlyingAToken": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8"
       }
@@ -6309,7 +6400,7 @@
       "symbol": "aOptUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58"
       }
     },
@@ -6321,7 +6412,7 @@
       "symbol": "stataOptUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
         "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
       }
@@ -6342,7 +6433,7 @@
       "symbol": "aOptAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x76FB31fb4af56892A25e32cFC43De717950c9278"
       }
     },
@@ -6354,7 +6445,7 @@
       "symbol": "stataOptAAVE",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x76FB31fb4af56892A25e32cFC43De717950c9278",
         "underlyingAToken": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375"
       }
@@ -6375,7 +6466,7 @@
       "symbol": "aOptSUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
       }
     },
@@ -6387,7 +6478,7 @@
       "symbol": "stataOptSUSD",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
         "underlyingAToken": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97"
       }
@@ -6408,7 +6499,7 @@
       "symbol": "aOptOP",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x4200000000000000000000000000000000000042"
       }
     },
@@ -6420,7 +6511,7 @@
       "symbol": "stataOptOP",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x4200000000000000000000000000000000000042",
         "underlyingAToken": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf"
       }
@@ -6441,7 +6532,7 @@
       "symbol": "aOptwstETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb"
       }
     },
@@ -6453,7 +6544,7 @@
       "symbol": "stataOptwstETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
         "underlyingAToken": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA"
       }
@@ -6474,7 +6565,7 @@
       "symbol": "aOptLUSD",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc40F949F8a4e094D1b49a23ea9241D289B7b2819"
       }
     },
@@ -6486,7 +6577,7 @@
       "symbol": "stataOptLUSD",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc40F949F8a4e094D1b49a23ea9241D289B7b2819",
         "underlyingAToken": "0x8Eb270e296023E9D92081fdF967dDd7878724424"
       }
@@ -6507,7 +6598,7 @@
       "symbol": "aOptMAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xdFA46478F9e5EA86d57387849598dbFB2e964b02"
       }
     },
@@ -6519,7 +6610,7 @@
       "symbol": "stataOptMAI",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xdFA46478F9e5EA86d57387849598dbFB2e964b02",
         "underlyingAToken": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692"
       }
@@ -6540,7 +6631,7 @@
       "symbol": "aOptrETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D"
       }
     },
@@ -6552,7 +6643,7 @@
       "symbol": "stataOptrETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x9Bcef72be871e61ED4fBbc7630889beE758eb81D",
         "underlyingAToken": "0x724dc807b04555b71ed48a6896b6F41593b8C637"
       }
@@ -6573,7 +6664,7 @@
       "symbol": "aOptUSDCn",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Optimism",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"
       }
     },
@@ -6593,8 +6684,21 @@
       "symbol": "aScrWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Scroll",
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0x5300000000000000000000000000000000000004"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x6b9DfaC194fa78a1882680E2cE19194D006AeEfd",
+      "name": "Static Aave Scroll WETH",
+      "decimals": 18,
+      "symbol": "stataScrWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0x5300000000000000000000000000000000000004",
+        "underlyingAToken": "0xf301805bE1Df81102C957f6d4Ce29d2B8c056B2a"
       }
     },
     {
@@ -6613,8 +6717,21 @@
       "symbol": "aScrUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Scroll",
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x9fA123bC7E6b61cC8a9D893673a4C6E5392FF4A7",
+      "name": "Static Aave Scroll USDC",
+      "decimals": 6,
+      "symbol": "stataScrUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
+        "underlyingAToken": "0x1D738a3436A8C49CefFbaB7fbF04B660fb528CbD"
       }
     },
     {
@@ -6633,8 +6750,21 @@
       "symbol": "aScrwstETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Scroll",
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x6e368c4dBf083e18a29aE63FC06AF9deDb3242F0",
+      "name": "Static Aave Scroll wstETH",
+      "decimals": 18,
+      "symbol": "stataScrwstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3Scroll",
+        "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
+        "underlyingAToken": "0x5B1322eeb46240b02e20062b8F0F9908d525B09c"
       }
     },
     {
@@ -6653,7 +6783,7 @@
       "symbol": "aEthDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40"
       }
     },
@@ -6673,7 +6803,7 @@
       "symbol": "aEthLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0x279cBF5B7e3651F03CB9b71A9E7A3c924b267801"
       }
     },
@@ -6693,7 +6823,7 @@
       "symbol": "aEthUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0x2C9678042D52B97D27f2bD2947F7111d93F3dD0D"
       }
     },
@@ -6713,7 +6843,7 @@
       "symbol": "aEthWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0x5EA79f3190ff37418d42F9B2618688494dBD9693"
       }
     },
@@ -6733,7 +6863,7 @@
       "symbol": "aEthWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0xb123dCe044EdF0a755505d9623Fba16C0F41cae9"
       }
     },
@@ -6753,7 +6883,7 @@
       "symbol": "aEthUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0x186C0C26c45A8DA1Da34339ee513624a9609156d"
       }
     },
@@ -6773,7 +6903,7 @@
       "symbol": "aEthAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0xfc2921bE7B2762F0E87039905d6019B0fF5978a8"
       }
     },
@@ -6793,7 +6923,7 @@
       "symbol": "aEthEURS",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3ScrollSepolia",
+        "pool": "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440",
         "underlying": "0xDf40f3a3566b4271450083f1Ad5732590BA47575"
       }
     },
@@ -6813,7 +6943,7 @@
       "symbol": "aFanDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x77FDe93fEe5fe272dC17d799cb61447431E6Eba2"
       }
     },
@@ -6833,7 +6963,7 @@
       "symbol": "aFanLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x1Da81b322451C51D2580B373974a999d5A9C2D21"
       }
     },
@@ -6853,7 +6983,7 @@
       "symbol": "aFanUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x66F61903D7FEC18048bEc2e792f272cb8B657733"
       }
     },
@@ -6873,7 +7003,7 @@
       "symbol": "aFanWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x2c95d10bA4BBEc79e562e8B3f48687751808C925"
       }
     },
@@ -6893,7 +7023,7 @@
       "symbol": "aFanWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded"
       }
     },
@@ -6913,7 +7043,7 @@
       "symbol": "aFanUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x9DFf9E93B1e513379cf820504D642c6891d8F7CC"
       }
     },
@@ -6933,7 +7063,7 @@
       "symbol": "aFanAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x52D800ca262522580CeBAD275395ca6e7598C014"
       }
     },
@@ -6953,7 +7083,7 @@
       "symbol": "aFanWFTM",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A"
       }
     },
@@ -6973,7 +7103,7 @@
       "symbol": "aFanCRV",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0xc199807AF4fEDB02EE567Ed0FeB814A077de4802"
       }
     },
@@ -6993,7 +7123,7 @@
       "symbol": "aFanSUSHI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3FantomTestnet",
+        "pool": "0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8",
         "underlying": "0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2"
       }
     },
@@ -7013,7 +7143,7 @@
       "symbol": "aFanDAI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E"
       }
     },
@@ -7033,7 +7163,7 @@
       "symbol": "aFanLINK",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8"
       }
     },
@@ -7053,7 +7183,7 @@
       "symbol": "aFanUSDC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75"
       }
     },
@@ -7073,7 +7203,7 @@
       "symbol": "aFanWBTC",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x321162Cd933E2Be498Cd2267a90534A804051b11"
       }
     },
@@ -7093,7 +7223,7 @@
       "symbol": "aFanWETH",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x74b23882a30290451A17c44f4F05243b6b58C76d"
       }
     },
@@ -7113,7 +7243,7 @@
       "symbol": "aFanUSDT",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x049d68029688eAbF473097a2fC38ef61633A3C7A"
       }
     },
@@ -7133,7 +7263,7 @@
       "symbol": "aFanAAVE",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B"
       }
     },
@@ -7153,7 +7283,7 @@
       "symbol": "aFanWFTM",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83"
       }
     },
@@ -7173,7 +7303,7 @@
       "symbol": "aFanCRV",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x1E4F97b9f9F913c46F1632781732927B9019C68b"
       }
     },
@@ -7193,7 +7323,7 @@
       "symbol": "aFanSUSHI",
       "tags": ["aTokenV3", "aaveV3"],
       "extensions": {
-        "pool": "AaveV3Fantom",
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC"
       }
     }
