@@ -16,6 +16,7 @@ import {GovernanceV3BNB} from './GovernanceV3BNB.sol';
 import {GovernanceV3Gnosis} from './GovernanceV3Gnosis.sol';
 import {GovernanceV3Scroll} from './GovernanceV3Scroll.sol';
 import {GovernanceV3PolygonZkEvm} from './GovernanceV3PolygonZkEvm.sol';
+import {GovernanceV3Celo} from './GovernanceV3Celo.sol';
 import {AaveV2EthereumAMM} from './AaveV2EthereumAMM.sol';
 import {AaveV2EthereumArc} from './AaveV2EthereumArc.sol';
 import {AaveV2Ethereum} from './AaveV2Ethereum.sol';

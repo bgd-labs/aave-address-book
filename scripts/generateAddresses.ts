@@ -64,6 +64,7 @@ import {celoAddresses} from './configs/networks/celo';
 import {governanceConfigScroll} from './configs/governance/scroll';
 import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 import {generateTokenList} from './generator/generateTokenList';
+import {governanceConfigCelo} from './configs/governance/celo';
 
 async function main() {
   // cleanup ts artifacts
@@ -93,6 +94,7 @@ async function main() {
       governanceConfigGnosis,
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
+      governanceConfigCelo,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(

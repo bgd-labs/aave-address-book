@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-14T19:30:30.913Z",
-  "version": { "major": 3, "minor": 0, "patch": 3 },
+  "timestamp": "2024-02-21T14:29:38.178Z",
+  "version": { "major": 3, "minor": 0, "patch": 4 },
   "tokens": [
     {
       "chainId": 1,
@@ -2759,6 +2759,19 @@
       "extensions": {
         "pool": "AaveV3Ethereum",
         "underlying": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152",
+      "name": "Static Aave Ethereum PYUSD",
+      "decimals": 6,
+      "symbol": "stataEthPYUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "AaveV3Ethereum",
+        "underlying": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+        "underlyingAToken": "0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E"
       }
     },
     {
