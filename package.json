@@ -4,7 +4,8 @@
   "description": "This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.",
   "private": false,
   "files": [
-    "dist"
+    "dist",
+    "tokenlist.json"
   ],
   "publishConfig": {
     "access": "public"
@@ -33,7 +34,7 @@
     "generate:addresses": "tsx scripts/generateAddresses.ts && npm run prettier",
     "start": "tsx scripts/generateABIs.ts &&tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
-    "ci:publish": "npm run build && cp tokenlist.json dist/tokenlist.json && npm publish --access=public",
+    "ci:publish": "npm run build && npm publish --access=public",
     "test": "echo 'no tests exist yet'"
   },
   "repository": {
