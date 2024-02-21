@@ -58,7 +58,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
   return (
     <div className="w-full max-w-2xl mb-10">
       <Box
-        className={cn('group border-brand-900 border p-1.5', {
+        className={cn('group border-brand-900 border p-1.5 focus-within:bg-brand-300', {
           ['border-b-0']: results.length > 0,
         })}
       >
