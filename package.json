@@ -33,7 +33,7 @@
     "generate:addresses": "tsx scripts/generateAddresses.ts && npm run prettier",
     "start": "tsx scripts/generateABIs.ts &&tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
-    "ci:publish": "npm run build && npm publish --access=public",
+    "ci:publish": "npm run build && cp tokenlist.json dist/tokenlist.json && npm publish --access=public",
     "test": "echo 'no tests exist yet'"
   },
   "repository": {

@@ -300,6 +300,7 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   appendFileSync(`./src/ts/${name}.ts`, eModesLibrary.js);
 
   return {
+    pool: (addresses.POOL as any).value,
     name,
     reservesData,
     chainId: config.chainId,
