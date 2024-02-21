@@ -10,6 +10,7 @@ import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {fixSymbol} from './assetsLibraryGenerator';
+import {getSymbolUri, VARIANT} from './svgUtils';
 
 const TAGS = {
   underlying: 'underlying',
@@ -40,7 +41,12 @@ export async function generateTokenList(pools: TokenListParams) {
   const tokens: TokenInfo[] = [];
   for (const {reservesData, chainId, name: poolName, pool} of pools) {
     for (const reserve of reservesData) {
-      async function addToken(token: Address, tags: string[], extensions?: Record<string, string>) {
+      async function addToken(
+        token: Address,
+        variant: VARIANT,
+        tags: string[],
+        extensions?: Record<string, string>,
+      ) {
         const alreadyInList = findInList(tokens, token, chainId);
         if (alreadyInList) return;
         const cache = findInList(cachedList.tokens, token, chainId);
@@ -55,6 +61,7 @@ export async function generateTokenList(pools: TokenListParams) {
             token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
               ? ['Maker', 'MKR']
               : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
+          const symbolUri = await getSymbolUri(symbol, variant);
           return tokens.push({
             chainId: chainId,
             address: token,
@@ -62,19 +69,22 @@ export async function generateTokenList(pools: TokenListParams) {
             decimals: reserve.decimals,
             symbol: fixSymbol(symbol, token),
             tags,
+            ...(symbolUri ? {logoURI: symbolUri} : {}),
             ...(extensions ? {extensions} : {}),
           });
         }
       }
-      await addToken(reserve.UNDERLYING, [TAGS.underlying]);
+      await addToken(reserve.UNDERLYING, VARIANT.UNDERLYING, [TAGS.underlying]);
       await addToken(
         reserve.A_TOKEN,
+        VARIANT.A_TOKEN,
         /V2/.test(poolName) ? [TAGS.aTokenV2, TAGS.aaveV2] : [TAGS.aTokenV3, TAGS.aaveV3],
         {pool: pool, underlying: reserve.UNDERLYING},
       );
       if (reserve.STATA_TOKEN && reserve.STATA_TOKEN != zeroAddress)
         await addToken(
           reserve.STATA_TOKEN,
+          VARIANT.STATA_TOKEN,
           [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.stataToken],
           {
             pool: pool,

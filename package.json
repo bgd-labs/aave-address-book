@@ -5,7 +5,8 @@
   "private": false,
   "files": [
     "dist",
-    "tokenlist.json"
+    "tokenlist.json",
+    "assets"
   ],
   "publishConfig": {
     "access": "public"
@@ -54,6 +55,7 @@
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
     "esbuild-plugin-file-path-extensions": "^2.0.0",
+    "ipfs-only-hash": "^4.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-solidity": "^1.1.3",
     "tsup": "^8.0.1",

@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-21T09:06:48.186Z",
-  "version": { "major": 3, "minor": 0, "patch": 6 },
+  "timestamp": "2024-02-21T13:20:24.148Z",
+  "version": { "major": 3, "minor": 0, "patch": 7 },
   "tokens": [
     {
       "chainId": 1,
@@ -31,7 +31,8 @@
       "name": "Wrapped Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 1,
@@ -51,7 +52,8 @@
       "name": "Dai Stablecoin",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 1,
@@ -71,7 +73,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 1,
@@ -91,7 +94,8 @@
       "name": "Tether USD",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 1,
@@ -111,7 +115,8 @@
       "name": "Wrapped BTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 1,
@@ -411,7 +416,8 @@
       "name": "Balancer Pool Token",
       "decimals": 18,
       "symbol": "BPT_WBTC_WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmNV6psKC8baYb6VEGUfnvXdgoESg46pUguZU6XqBUFK5q"
     },
     {
       "chainId": 1,
@@ -431,7 +437,8 @@
       "name": "Balancer Pool Token",
       "decimals": 18,
       "symbol": "BPT_BAL_WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmNV6psKC8baYb6VEGUfnvXdgoESg46pUguZU6XqBUFK5q"
     },
     {
       "chainId": 1,
@@ -527,7 +534,8 @@
       "name": "yearn.finance",
       "decimals": 18,
       "symbol": "YFI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmVypEL99qjmjb3PJAzjYqh1Ddx98hrmkFtWmMNsRc4ucF"
     },
     {
       "chainId": 1,
@@ -547,7 +555,8 @@
       "name": "0x Protocol Token",
       "decimals": 18,
       "symbol": "ZRX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmNb3cmFqeoh4CCoCAoFj6PkdKC3MwRDDDYJZZEnnSzGTL"
     },
     {
       "chainId": 1,
@@ -567,7 +576,8 @@
       "name": "Uniswap",
       "decimals": 18,
       "symbol": "UNI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRCSQDZ6KcYq4cTnRVgC2x2ZE7k29zvyvzuEZhcfKuDDc"
     },
     {
       "chainId": 1,
@@ -587,7 +597,8 @@
       "name": "Aave Token",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 1,
@@ -607,7 +618,8 @@
       "name": "Basic Attention Token",
       "decimals": 18,
       "symbol": "BAT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmY1tCt7KkhPNQCHQNArp1khEW3va3HvgkPPV9a2iWpmnq"
     },
     {
       "chainId": 1,
@@ -627,7 +639,8 @@
       "name": "BUSD",
       "decimals": 18,
       "symbol": "BUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmcGRK3ck3Y9CvKwary4FBap4aALVbwMjjgxWMcujeQo1p"
     },
     {
       "chainId": 1,
@@ -659,7 +672,8 @@
       "name": "Enjin Coin",
       "decimals": 18,
       "symbol": "ENJ",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPjk8n3r8AzTqKSQ4iK32aeWJYNNVMpY8sWCL9BcwAJkR"
     },
     {
       "chainId": 1,
@@ -679,7 +693,8 @@
       "name": "Kyber Network Crystal",
       "decimals": 18,
       "symbol": "KNC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUd6HB2GNyKafzj95psUK6BxY2SVoBN7X8GJ9YrK1CDps"
     },
     {
       "chainId": 1,
@@ -699,7 +714,8 @@
       "name": "ChainLink Token",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 1,
@@ -719,7 +735,8 @@
       "name": "Decentraland MANA",
       "decimals": 18,
       "symbol": "MANA",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmcdRxs6zF1sDDLkaXqhVw8JdjjjkDqjeAxTTiLcUn2TV6"
     },
     {
       "chainId": 1,
@@ -739,7 +756,8 @@
       "name": "Maker",
       "decimals": 18,
       "symbol": "MKR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmW4HbQgNFTQxAicUTHpHpq1ZxWF74JVb231L8RkEEbfzL"
     },
     {
       "chainId": 1,
@@ -759,7 +777,8 @@
       "name": "Republic Token",
       "decimals": 18,
       "symbol": "REN",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeqwGtY6ZMVGrUNMvm7W4HBxiUYViiEmFcPxsZX4rvmYM"
     },
     {
       "chainId": 1,
@@ -779,7 +798,8 @@
       "name": "Synthetix Network Token",
       "decimals": 18,
       "symbol": "SNX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmVe6Y1hDU5ixcd4goW3u4ds7Yq9NBQRjixWvVnpfEBmZg"
     },
     {
       "chainId": 1,
@@ -799,7 +819,8 @@
       "name": "Synth sUSD",
       "decimals": 18,
       "symbol": "sUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPJZivuNqvvG2ZwhtMdTqQ4Na8WazJjFWKJ7YkFba9uYz"
     },
     {
       "chainId": 1,
@@ -819,7 +840,8 @@
       "name": "TrueUSD",
       "decimals": 18,
       "symbol": "TUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmXbwHWQUy1zQTjR6pscMVuHXBPaZBxmw6x9n9yGoyP6xZ"
     },
     {
       "chainId": 1,
@@ -851,7 +873,8 @@
       "name": "Curve DAO Token",
       "decimals": 18,
       "symbol": "CRV",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRPJ3NM4Q5fquXmEgDS9YUzm8617b7b4ADGhPGva3Cpfh"
     },
     {
       "chainId": 1,
@@ -871,7 +894,8 @@
       "name": "Gemini dollar",
       "decimals": 2,
       "symbol": "GUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc6VecWKJ61hmiFaC1FRVfVFsiWgcJNWqMpJ2tNiV49wt"
     },
     {
       "chainId": 1,
@@ -891,7 +915,8 @@
       "name": "Balancer",
       "decimals": 18,
       "symbol": "BAL",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQdQAPWVPrtP8nFFR7x8hjfwA84gVWsraVZpvW58GU2Fm"
     },
     {
       "chainId": 1,
@@ -911,7 +936,8 @@
       "name": "SushiBar",
       "decimals": 18,
       "symbol": "xSUSHI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTn7zk2wbQ5SHUeP7NMca5sgYXxJzXxB7Xv9fNT9uoQyM"
     },
     {
       "chainId": 1,
@@ -931,7 +957,8 @@
       "name": "renFIL",
       "decimals": 18,
       "symbol": "renFIL",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQJMdpAFSLD4sYEezYV1YL8qZYkcmYy1hYgngJWJ8rESJ"
     },
     {
       "chainId": 1,
@@ -951,7 +978,8 @@
       "name": "Rai Reflex Index",
       "decimals": 18,
       "symbol": "RAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmcaw2yvpgnkfhFzBoKkuRzUsJ8aSUajNf3svR1V4xfi6g"
     },
     {
       "chainId": 1,
@@ -971,7 +999,8 @@
       "name": "Ampleforth",
       "decimals": 9,
       "symbol": "AMPL",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmSWH4RQ4MqtkvgdkZPcPv68pHWkQFr6YMWibU4VvDwFxw"
     },
     {
       "chainId": 1,
@@ -991,7 +1020,8 @@
       "name": "Pax Dollar",
       "decimals": 18,
       "symbol": "USDP",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTwFNnhv4P1fMETKu3nJdxU7kqa9oqr255us3gc1S9wCw"
     },
     {
       "chainId": 1,
@@ -1011,7 +1041,8 @@
       "name": "DefiPulse Index",
       "decimals": 18,
       "symbol": "DPI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTERkAfds2717HPH41kqrjKcxdLyLZP6NurY1jjdWne3p"
     },
     {
       "chainId": 1,
@@ -1031,7 +1062,8 @@
       "name": "Frax",
       "decimals": 18,
       "symbol": "FRAX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYMjoYh74N26XxLUn8T5gzeLKyG8BsVJUzT1gsqG6Uxg8"
     },
     {
       "chainId": 1,
@@ -1051,7 +1083,8 @@
       "name": "Fei USD",
       "decimals": 18,
       "symbol": "FEI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmdFjWZYB5REob7iUfFvdGKMGy82GNXuh3ZvmZQz7PVuSg"
     },
     {
       "chainId": 1,
@@ -1071,7 +1104,8 @@
       "name": "Liquid staked Ether 2.0",
       "decimals": 18,
       "symbol": "stETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmdk45kESAPxiWuvi6HsFmUuUhfE5J3UuJUt8naNs2PQRm"
     },
     {
       "chainId": 1,
@@ -1091,7 +1125,8 @@
       "name": "Ethereum Name Service",
       "decimals": 18,
       "symbol": "ENS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYEa3mbcQve6QEEbbGijU2ecAWt1BM5nUa8bRP5xRKhuC"
     },
     {
       "chainId": 1,
@@ -1111,7 +1146,8 @@
       "name": "UST",
       "decimals": 6,
       "symbol": "UST",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbnojQuxezM82hkyMSTW3qQaJUgDtmAqDgAUZgj54QxGa"
     },
     {
       "chainId": 1,
@@ -1131,7 +1167,8 @@
       "name": "Convex Token",
       "decimals": 18,
       "symbol": "CVX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmU75377GShYCd5jKxU81jEhBUKzRbrnDyko4aAUWeekJF"
     },
     {
       "chainId": 1,
@@ -1151,7 +1188,8 @@
       "name": "1INCH Token",
       "decimals": 18,
       "symbol": "ONE_INCH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmds5DKAymYBiJ3c9NAH6wHwHTGCnrbPeGA1n7RJxT72ax"
     },
     {
       "chainId": 1,
@@ -1171,7 +1209,8 @@
       "name": "LUSD Stablecoin",
       "decimals": 18,
       "symbol": "LUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYi2duNbozKeDcLjz4zQ94e8TsRAqknDXFoTZkzzioFny"
     },
     {
       "chainId": 1,
@@ -1191,7 +1230,8 @@
       "name": "(PoS) Dai Stablecoin",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 137,
@@ -1211,7 +1251,8 @@
       "name": "USD Coin (PoS)",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 137,
@@ -1231,7 +1272,8 @@
       "name": "(PoS) Tether USD",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 137,
@@ -1251,7 +1293,8 @@
       "name": "(PoS) Wrapped BTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 137,
@@ -1271,7 +1314,8 @@
       "name": "Wrapped Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 137,
@@ -1291,7 +1335,8 @@
       "name": "Wrapped Matic",
       "decimals": 18,
       "symbol": "WMATIC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPd2Tisj3yrCQPUixmcAmE3WHc39cZMXwNGpZkBLKYPsg"
     },
     {
       "chainId": 137,
@@ -1311,7 +1356,8 @@
       "name": "Aave (PoS)",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 137,
@@ -1331,7 +1377,8 @@
       "name": "Aavegotchi GHST Token (PoS)",
       "decimals": 18,
       "symbol": "GHST",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPmPhztv3YADMe56LDaHd7rqyuaLAB3Hm9Nx55tXju98s"
     },
     {
       "chainId": 137,
@@ -1351,7 +1398,8 @@
       "name": "Balancer (PoS)",
       "decimals": 18,
       "symbol": "BAL",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQdQAPWVPrtP8nFFR7x8hjfwA84gVWsraVZpvW58GU2Fm"
     },
     {
       "chainId": 137,
@@ -1371,7 +1419,8 @@
       "name": "DefiPulse Index (PoS)",
       "decimals": 18,
       "symbol": "DPI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTERkAfds2717HPH41kqrjKcxdLyLZP6NurY1jjdWne3p"
     },
     {
       "chainId": 137,
@@ -1391,7 +1440,8 @@
       "name": "CRV (PoS)",
       "decimals": 18,
       "symbol": "CRV",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRPJ3NM4Q5fquXmEgDS9YUzm8617b7b4ADGhPGva3Cpfh"
     },
     {
       "chainId": 137,
@@ -1411,7 +1461,8 @@
       "name": "SushiToken (PoS)",
       "decimals": 18,
       "symbol": "SUSHI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbUjpdmdKscpuinhbLM2sY4sNvSbFeLwHaEM2isJVUoCA"
     },
     {
       "chainId": 137,
@@ -1431,7 +1482,8 @@
       "name": "ChainLink Token",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 137,
@@ -1451,7 +1503,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 80001,
@@ -1471,7 +1524,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 80001,
@@ -1491,7 +1545,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 80001,
@@ -1511,7 +1566,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 80001,
@@ -1531,7 +1587,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 80001,
@@ -1551,7 +1608,8 @@
       "name": "Wrapped Matic",
       "decimals": 18,
       "symbol": "WMATIC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPd2Tisj3yrCQPUixmcAmE3WHc39cZMXwNGpZkBLKYPsg"
     },
     {
       "chainId": 80001,
@@ -1571,7 +1629,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 80001,
@@ -1591,7 +1650,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 5,
@@ -1611,7 +1671,8 @@
       "name": "BAT",
       "decimals": 18,
       "symbol": "BAT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmY1tCt7KkhPNQCHQNArp1khEW3va3HvgkPPV9a2iWpmnq"
     },
     {
       "chainId": 5,
@@ -1631,7 +1692,8 @@
       "name": "BUSD",
       "decimals": 18,
       "symbol": "BUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmcGRK3ck3Y9CvKwary4FBap4aALVbwMjjgxWMcujeQo1p"
     },
     {
       "chainId": 5,
@@ -1651,7 +1713,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 5,
@@ -1671,7 +1734,8 @@
       "name": "ENJ",
       "decimals": 18,
       "symbol": "ENJ",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPjk8n3r8AzTqKSQ4iK32aeWJYNNVMpY8sWCL9BcwAJkR"
     },
     {
       "chainId": 5,
@@ -1691,7 +1755,8 @@
       "name": "KNC",
       "decimals": 18,
       "symbol": "KNC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUd6HB2GNyKafzj95psUK6BxY2SVoBN7X8GJ9YrK1CDps"
     },
     {
       "chainId": 5,
@@ -1711,7 +1776,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 5,
@@ -1731,7 +1797,8 @@
       "name": "MANA",
       "decimals": 18,
       "symbol": "MANA",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmcdRxs6zF1sDDLkaXqhVw8JdjjjkDqjeAxTTiLcUn2TV6"
     },
     {
       "chainId": 5,
@@ -1751,7 +1818,8 @@
       "name": "MKR",
       "decimals": 18,
       "symbol": "MKR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmW4HbQgNFTQxAicUTHpHpq1ZxWF74JVb231L8RkEEbfzL"
     },
     {
       "chainId": 5,
@@ -1771,7 +1839,8 @@
       "name": "REN",
       "decimals": 18,
       "symbol": "REN",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeqwGtY6ZMVGrUNMvm7W4HBxiUYViiEmFcPxsZX4rvmYM"
     },
     {
       "chainId": 5,
@@ -1791,7 +1860,8 @@
       "name": "SNX",
       "decimals": 18,
       "symbol": "SNX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmVe6Y1hDU5ixcd4goW3u4ds7Yq9NBQRjixWvVnpfEBmZg"
     },
     {
       "chainId": 5,
@@ -1811,7 +1881,8 @@
       "name": "SUSD",
       "decimals": 18,
       "symbol": "SUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPJZivuNqvvG2ZwhtMdTqQ4Na8WazJjFWKJ7YkFba9uYz"
     },
     {
       "chainId": 5,
@@ -1831,7 +1902,8 @@
       "name": "TUSD",
       "decimals": 18,
       "symbol": "TUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmXbwHWQUy1zQTjR6pscMVuHXBPaZBxmw6x9n9yGoyP6xZ"
     },
     {
       "chainId": 5,
@@ -1851,7 +1923,8 @@
       "name": "UNI",
       "decimals": 18,
       "symbol": "UNI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRCSQDZ6KcYq4cTnRVgC2x2ZE7k29zvyvzuEZhcfKuDDc"
     },
     {
       "chainId": 5,
@@ -1871,7 +1944,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 5,
@@ -1891,7 +1965,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 5,
@@ -1911,7 +1986,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 5,
@@ -1931,7 +2007,8 @@
       "name": "Wrapped Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 5,
@@ -1951,7 +2028,8 @@
       "name": "YFI",
       "decimals": 18,
       "symbol": "YFI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmVypEL99qjmjb3PJAzjYqh1Ddx98hrmkFtWmMNsRc4ucF"
     },
     {
       "chainId": 5,
@@ -1971,7 +2049,8 @@
       "name": "ZRX",
       "decimals": 18,
       "symbol": "ZRX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmNb3cmFqeoh4CCoCAoFj6PkdKC3MwRDDDYJZZEnnSzGTL"
     },
     {
       "chainId": 5,
@@ -1991,7 +2070,8 @@
       "name": "xSUSHI",
       "decimals": 18,
       "symbol": "xSUSHI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTn7zk2wbQ5SHUeP7NMca5sgYXxJzXxB7Xv9fNT9uoQyM"
     },
     {
       "chainId": 5,
@@ -2011,7 +2091,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 43113,
@@ -2031,7 +2112,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 43113,
@@ -2051,7 +2133,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 43113,
@@ -2071,7 +2154,8 @@
       "name": "Wrapped AVAX",
       "decimals": 18,
       "symbol": "WAVAX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmadG3FVoMe5Ticc5EJFsiCZqsCfZ69CMVqD2wn27LLLeJ"
     },
     {
       "chainId": 43113,
@@ -2211,7 +2295,8 @@
       "name": "Wrapped AVAX",
       "decimals": 18,
       "symbol": "WAVAX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmadG3FVoMe5Ticc5EJFsiCZqsCfZ69CMVqD2wn27LLLeJ"
     },
     {
       "chainId": 43114,
@@ -2256,7 +2341,8 @@
       "name": "Wrapped liquid staked Ether 2.0",
       "decimals": 18,
       "symbol": "wstETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmX92ZEUDt7YJcFVxaQ1kJSpWpHBtQLcz5bdtigqaDXbG7"
     },
     {
       "chainId": 1,
@@ -2375,7 +2461,8 @@
       "name": "Coinbase Wrapped Staked ETH",
       "decimals": 18,
       "symbol": "cbETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmaTmpnKnmzkaCKidrVwN2V1X2jFfHgELshXHgTqSS3Js5"
     },
     {
       "chainId": 1,
@@ -2420,7 +2507,8 @@
       "name": "Rocket Pool ETH",
       "decimals": 18,
       "symbol": "rETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeifZm3tWay1hFBZ1Gw4qhVwvpAeeDNwBPh23kAaoHYex"
     },
     {
       "chainId": 1,
@@ -2525,7 +2613,8 @@
       "name": "Lido DAO Token",
       "decimals": 18,
       "symbol": "LDO",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmb4CpUduRjuAMSwkFK3X5hPCKedU2g5RatmfSA4AdWLNf"
     },
     {
       "chainId": 1,
@@ -2594,7 +2683,8 @@
       "name": "Gho Token",
       "decimals": 18,
       "symbol": "GHO",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYMhvimxtkzQw55DQkTv2VAeLuGQvB3JtGFtZvxGev5QR"
     },
     {
       "chainId": 1,
@@ -2614,7 +2704,8 @@
       "name": "Rocket Pool Protocol",
       "decimals": 18,
       "symbol": "RPL",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmZs4aswQoG3joXMg6bpNmaBYdfpzemA3Ec6PZHVCeCzJS"
     },
     {
       "chainId": 1,
@@ -2634,7 +2725,8 @@
       "name": "Savings Dai",
       "decimals": 18,
       "symbol": "sDAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYpoADytswxdg1ch6nAKRGroxL7wd2TFEQY7re4qC5Ket"
     },
     {
       "chainId": 1,
@@ -2654,7 +2746,8 @@
       "name": "StargateToken",
       "decimals": 18,
       "symbol": "STG",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmVHMFgHTSzvD9zNLV79724P7Hio6hkFumg1Aq6AoJ7JP7"
     },
     {
       "chainId": 1,
@@ -2674,7 +2767,8 @@
       "name": "Kyber Network Crystal v2",
       "decimals": 18,
       "symbol": "KNC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUd6HB2GNyKafzj95psUK6BxY2SVoBN7X8GJ9YrK1CDps"
     },
     {
       "chainId": 1,
@@ -2694,7 +2788,8 @@
       "name": "Frax Share",
       "decimals": 18,
       "symbol": "FXS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTdar4tjE7NZpY4ZoXqdo9bKNMARKbbqPzNkW3ES1UzhP"
     },
     {
       "chainId": 1,
@@ -2714,7 +2809,8 @@
       "name": "Curve.Fi USD Stablecoin",
       "decimals": 18,
       "symbol": "crvUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRotLFFS7gGNqvJZnhMYg9pCVLgQBXEber9CbYXgwQS8P"
     },
     {
       "chainId": 1,
@@ -2747,7 +2843,8 @@
       "name": "PayPal USD",
       "decimals": 6,
       "symbol": "PYUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmXVDUMahHeWKZDhktgFXYAzArFxqS6zQnuFmGcfAfPMvE"
     },
     {
       "chainId": 1,
@@ -2780,7 +2877,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 11155111,
@@ -2813,7 +2911,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 11155111,
@@ -2846,7 +2945,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 11155111,
@@ -2879,7 +2979,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 11155111,
@@ -2912,7 +3013,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 11155111,
@@ -2945,7 +3047,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 11155111,
@@ -2978,7 +3081,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 11155111,
@@ -3011,7 +3115,8 @@
       "name": "EURS",
       "decimals": 2,
       "symbol": "EURS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRqJDSX2HEsM5T1kYqCKn8kEomeFPW2J5oB3QgVzmDPLA"
     },
     {
       "chainId": 11155111,
@@ -3044,7 +3149,8 @@
       "name": "Gho Token",
       "decimals": 18,
       "symbol": "GHO",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYMhvimxtkzQw55DQkTv2VAeLuGQvB3JtGFtZvxGev5QR"
     },
     {
       "chainId": 11155111,
@@ -3064,7 +3170,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 5,
@@ -3084,7 +3191,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 5,
@@ -3104,7 +3212,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 5,
@@ -3124,7 +3233,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 5,
@@ -3144,7 +3254,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 5,
@@ -3164,7 +3275,8 @@
       "name": "Gho Token",
       "decimals": 18,
       "symbol": "GHO",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYMhvimxtkzQw55DQkTv2VAeLuGQvB3JtGFtZvxGev5QR"
     },
     {
       "chainId": 5,
@@ -3509,7 +3621,8 @@
       "name": "STASIS EURS Token (PoS)",
       "decimals": 2,
       "symbol": "EURS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRqJDSX2HEsM5T1kYqCKn8kEomeFPW2J5oB3QgVzmDPLA"
     },
     {
       "chainId": 137,
@@ -3542,7 +3655,8 @@
       "name": "Jarvis Synthetic Euro",
       "decimals": 18,
       "symbol": "jEUR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmZcys2xf1JR3Jqybs66Q3NX9sxUuJVK5qpcXHn43T93k4"
     },
     {
       "chainId": 137,
@@ -3575,7 +3689,8 @@
       "name": "agEUR",
       "decimals": 18,
       "symbol": "agEUR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmWZMAqh98W93jrCkRYySKBDeUpKA9SVo3sLrjxUcNmoKy"
     },
     {
       "chainId": 137,
@@ -3641,7 +3756,8 @@
       "name": "Staked MATIC (PoS)",
       "decimals": 18,
       "symbol": "stMATIC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmcoKxGDKvVVjRrDuT9mv1KV9JHjXY7pypt9dEw3T6PyH7"
     },
     {
       "chainId": 137,
@@ -3674,7 +3790,8 @@
       "name": "Liquid Staking Matic (PoS)",
       "decimals": 18,
       "symbol": "MaticX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmcGNAotqMXDBwH4bFMXwNQoGdZcTsESvCZYy5WvFEm8ZW"
     },
     {
       "chainId": 137,
@@ -3707,7 +3824,8 @@
       "name": "Wrapped liquid staked Ether 2.0 (PoS)",
       "decimals": 18,
       "symbol": "wstETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmX92ZEUDt7YJcFVxaQ1kJSpWpHBtQLcz5bdtigqaDXbG7"
     },
     {
       "chainId": 137,
@@ -3740,7 +3858,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDCn",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 137,
@@ -3760,7 +3879,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 80001,
@@ -3793,7 +3913,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 80001,
@@ -3826,7 +3947,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 80001,
@@ -3859,7 +3981,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 80001,
@@ -3892,7 +4015,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 80001,
@@ -3925,7 +4049,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 80001,
@@ -3958,7 +4083,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 80001,
@@ -3991,7 +4117,8 @@
       "name": "WMATIC",
       "decimals": 18,
       "symbol": "WMATIC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPd2Tisj3yrCQPUixmcAmE3WHc39cZMXwNGpZkBLKYPsg"
     },
     {
       "chainId": 80001,
@@ -4024,7 +4151,8 @@
       "name": "CRV",
       "decimals": 18,
       "symbol": "CRV",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRPJ3NM4Q5fquXmEgDS9YUzm8617b7b4ADGhPGva3Cpfh"
     },
     {
       "chainId": 80001,
@@ -4057,7 +4185,8 @@
       "name": "SUSHI",
       "decimals": 18,
       "symbol": "SUSHI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbUjpdmdKscpuinhbLM2sY4sNvSbFeLwHaEM2isJVUoCA"
     },
     {
       "chainId": 80001,
@@ -4090,7 +4219,8 @@
       "name": "GHST",
       "decimals": 18,
       "symbol": "GHST",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPmPhztv3YADMe56LDaHd7rqyuaLAB3Hm9Nx55tXju98s"
     },
     {
       "chainId": 80001,
@@ -4123,7 +4253,8 @@
       "name": "BAL",
       "decimals": 18,
       "symbol": "BAL",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQdQAPWVPrtP8nFFR7x8hjfwA84gVWsraVZpvW58GU2Fm"
     },
     {
       "chainId": 80001,
@@ -4156,7 +4287,8 @@
       "name": "DPI",
       "decimals": 18,
       "symbol": "DPI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTERkAfds2717HPH41kqrjKcxdLyLZP6NurY1jjdWne3p"
     },
     {
       "chainId": 80001,
@@ -4189,7 +4321,8 @@
       "name": "EURS",
       "decimals": 2,
       "symbol": "EURS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRqJDSX2HEsM5T1kYqCKn8kEomeFPW2J5oB3QgVzmDPLA"
     },
     {
       "chainId": 80001,
@@ -4222,7 +4355,8 @@
       "name": "JEUR",
       "decimals": 18,
       "symbol": "JEUR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmZcys2xf1JR3Jqybs66Q3NX9sxUuJVK5qpcXHn43T93k4"
     },
     {
       "chainId": 80001,
@@ -4255,7 +4389,8 @@
       "name": "AGEUR",
       "decimals": 18,
       "symbol": "AGEUR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmWZMAqh98W93jrCkRYySKBDeUpKA9SVo3sLrjxUcNmoKy"
     },
     {
       "chainId": 80001,
@@ -4346,7 +4481,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 43114,
@@ -4429,7 +4565,8 @@
       "name": "TetherToken",
       "decimals": 6,
       "symbol": "USDt",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 43114,
@@ -4512,7 +4649,8 @@
       "name": "Staked AVAX",
       "decimals": 18,
       "symbol": "sAVAX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYS1F6DkBkXzZZv5khAuEEFWDanMtEGME4aRhnXiwASPw"
     },
     {
       "chainId": 43114,
@@ -4545,7 +4683,8 @@
       "name": "Frax",
       "decimals": 18,
       "symbol": "FRAX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYMjoYh74N26XxLUn8T5gzeLKyG8BsVJUzT1gsqG6Uxg8"
     },
     {
       "chainId": 43114,
@@ -4578,7 +4717,8 @@
       "name": "Mai Stablecoin",
       "decimals": 18,
       "symbol": "MAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbW2kzNg9xGSpm7pHdcVJrsBQpisznkLW5XNkzKWCfWKX"
     },
     {
       "chainId": 43114,
@@ -4644,7 +4784,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 43113,
@@ -4664,7 +4805,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 43113,
@@ -4684,7 +4826,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 43113,
@@ -4704,7 +4847,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 43113,
@@ -4724,7 +4868,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 43113,
@@ -4744,7 +4889,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 43113,
@@ -4764,7 +4910,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 43113,
@@ -4784,7 +4931,8 @@
       "name": "WAVAX",
       "decimals": 18,
       "symbol": "WAVAX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmadG3FVoMe5Ticc5EJFsiCZqsCfZ69CMVqD2wn27LLLeJ"
     },
     {
       "chainId": 43113,
@@ -4804,7 +4952,8 @@
       "name": "Wrapped Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 8453,
@@ -4837,7 +4986,8 @@
       "name": "Coinbase Wrapped Staked ETH",
       "decimals": 18,
       "symbol": "cbETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmaTmpnKnmzkaCKidrVwN2V1X2jFfHgELshXHgTqSS3Js5"
     },
     {
       "chainId": 8453,
@@ -4870,7 +5020,8 @@
       "name": "USD Base Coin",
       "decimals": 6,
       "symbol": "USDbC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeF3KjU3PA27FgxXst8UfBWyXf1qpTkp6sQoGgChn8fjc"
     },
     {
       "chainId": 8453,
@@ -4903,7 +5054,8 @@
       "name": "Wrapped liquid staked Ether 2.0",
       "decimals": 18,
       "symbol": "wstETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmX92ZEUDt7YJcFVxaQ1kJSpWpHBtQLcz5bdtigqaDXbG7"
     },
     {
       "chainId": 8453,
@@ -4923,7 +5075,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 8453,
@@ -4976,7 +5129,8 @@
       "name": "Metis Token",
       "decimals": 18,
       "symbol": "Metis",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPVayFbYykToSiQBVW9wSq4PnLb1mEw215Yw2TEQC3SPN"
     },
     {
       "chainId": 1088,
@@ -5075,7 +5229,8 @@
       "name": "Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 1088,
@@ -5108,7 +5263,8 @@
       "name": "Wrapped Ether on xDai",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 100,
@@ -5141,7 +5297,8 @@
       "name": "Wrapped liquid staked Ether 2.0 from ...",
       "decimals": 18,
       "symbol": "wstETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmX92ZEUDt7YJcFVxaQ1kJSpWpHBtQLcz5bdtigqaDXbG7"
     },
     {
       "chainId": 100,
@@ -5174,7 +5331,8 @@
       "name": "Gnosis Token on xDai",
       "decimals": 18,
       "symbol": "GNO",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmTGHMe1uuejWwHhjHaV56LD8Ffm7oLcURecmM7XhD1GkC"
     },
     {
       "chainId": 100,
@@ -5207,7 +5365,8 @@
       "name": "USD//C on xDai",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 100,
@@ -5240,7 +5399,8 @@
       "name": "Wrapped XDAI",
       "decimals": 18,
       "symbol": "WXDAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmdgTVDnGpq7vdXrfv5iMsNyD3fLfVsN7qFw6UuojEEqwd"
     },
     {
       "chainId": 100,
@@ -5273,7 +5433,8 @@
       "name": "Monerium EUR emoney",
       "decimals": 18,
       "symbol": "EURe",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYGcL1L2b6tPrW2EubRDTEMPcWXTc8pdzGKk1TWmnYp9x"
     },
     {
       "chainId": 100,
@@ -5306,7 +5467,8 @@
       "name": "Savings xDAI",
       "decimals": 18,
       "symbol": "sDAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYpoADytswxdg1ch6nAKRGroxL7wd2TFEQY7re4qC5Ket"
     },
     {
       "chainId": 100,
@@ -5339,7 +5501,8 @@
       "name": "PancakeSwap Token",
       "decimals": 18,
       "symbol": "Cake",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPyAoNbKxhAtqC96PwrLLG1ABgb4iCmCGW6Fcs91et1Dr"
     },
     {
       "chainId": 56,
@@ -5361,7 +5524,7 @@
       "symbol": "stataBnbCAKE",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
         "underlyingAToken": "0x4199CC1F5ed0d796563d7CcB2e036253E2C18281"
       }
@@ -5372,7 +5535,8 @@
       "name": "Wrapped BNB",
       "decimals": 18,
       "symbol": "WBNB",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmVGqT1f3sn83FpKYPQLzZDEg4ohXmFspdJcieZe5tAQPy"
     },
     {
       "chainId": 56,
@@ -5394,7 +5558,7 @@
       "symbol": "stataBnbWBNB",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
         "underlyingAToken": "0x9B00a09492a626678E5A3009982191586C444Df9"
       }
@@ -5427,7 +5591,7 @@
       "symbol": "stataBnbBTCB",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
         "underlyingAToken": "0x56a7ddc4e848EbF43845854205ad71D5D5F72d3D"
       }
@@ -5438,7 +5602,8 @@
       "name": "Ethereum Token",
       "decimals": 18,
       "symbol": "ETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdZw6iotAseSoP2v3GTH4FxGh84maHT3j1P1hwSdPu9J"
     },
     {
       "chainId": 56,
@@ -5460,7 +5625,7 @@
       "symbol": "stataBnbETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
         "underlyingAToken": "0x2E94171493fAbE316b6205f1585779C887771E2F"
       }
@@ -5471,7 +5636,8 @@
       "name": "USD Coin",
       "decimals": 18,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 56,
@@ -5493,7 +5659,7 @@
       "symbol": "stataBnbUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
         "underlyingAToken": "0x00901a076785e0906d1028c7d6372d247bec7d61"
       }
@@ -5504,7 +5670,8 @@
       "name": "Tether USD",
       "decimals": 18,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 56,
@@ -5526,7 +5693,7 @@
       "symbol": "stataBnbUSDT",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0x55d398326f99059fF775485246999027B3197955",
         "underlyingAToken": "0xa9251ca9DE909CB71783723713B21E4233fbf1B1"
       }
@@ -5537,7 +5704,8 @@
       "name": "First Digital USD",
       "decimals": 18,
       "symbol": "FDUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmSw1BHwpKwNdRvPFn8Ptbb5qBAAkHJU638kzBmPZtNGoB"
     },
     {
       "chainId": 56,
@@ -5559,7 +5727,7 @@
       "symbol": "stataBnbFDUSD",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3BNB",
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
         "underlying": "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409",
         "underlyingAToken": "0x75bd1A659bdC62e4C313950d44A2416faB43E785"
       }
@@ -5570,7 +5738,8 @@
       "name": "Dai Stablecoin",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 42161,
@@ -5603,7 +5772,8 @@
       "name": "ChainLink Token",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 42161,
@@ -5636,7 +5806,8 @@
       "name": "USD Coin (Arb1)",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 42161,
@@ -5669,7 +5840,8 @@
       "name": "Wrapped BTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 42161,
@@ -5702,7 +5874,8 @@
       "name": "Wrapped Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 42161,
@@ -5735,7 +5908,8 @@
       "name": "Tether USD",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 42161,
@@ -5768,7 +5942,8 @@
       "name": "Aave Token",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 42161,
@@ -5801,7 +5976,8 @@
       "name": "STASIS EURS Token",
       "decimals": 2,
       "symbol": "EURS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRqJDSX2HEsM5T1kYqCKn8kEomeFPW2J5oB3QgVzmDPLA"
     },
     {
       "chainId": 42161,
@@ -5834,7 +6010,8 @@
       "name": "Wrapped liquid staked Ether 2.0",
       "decimals": 18,
       "symbol": "wstETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmX92ZEUDt7YJcFVxaQ1kJSpWpHBtQLcz5bdtigqaDXbG7"
     },
     {
       "chainId": 42161,
@@ -5867,7 +6044,8 @@
       "name": "Mai Stablecoin",
       "decimals": 18,
       "symbol": "MAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbW2kzNg9xGSpm7pHdcVJrsBQpisznkLW5XNkzKWCfWKX"
     },
     {
       "chainId": 42161,
@@ -5900,7 +6078,8 @@
       "name": "Rocket Pool ETH",
       "decimals": 18,
       "symbol": "rETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeifZm3tWay1hFBZ1Gw4qhVwvpAeeDNwBPh23kAaoHYex"
     },
     {
       "chainId": 42161,
@@ -5933,7 +6112,8 @@
       "name": "LUSD Stablecoin",
       "decimals": 18,
       "symbol": "LUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYi2duNbozKeDcLjz4zQ94e8TsRAqknDXFoTZkzzioFny"
     },
     {
       "chainId": 42161,
@@ -5966,7 +6146,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDCn",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 42161,
@@ -5999,7 +6180,8 @@
       "name": "Frax",
       "decimals": 18,
       "symbol": "FRAX",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYMjoYh74N26XxLUn8T5gzeLKyG8BsVJUzT1gsqG6Uxg8"
     },
     {
       "chainId": 42161,
@@ -6032,7 +6214,8 @@
       "name": "Arbitrum",
       "decimals": 18,
       "symbol": "ARB",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmaQsv6UnUJHRyDUNZDWgyaKe4EyE8Vung147qefLVmTcm"
     },
     {
       "chainId": 42161,
@@ -6065,7 +6248,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 420,
@@ -6085,7 +6269,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 420,
@@ -6105,7 +6290,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 420,
@@ -6125,7 +6311,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 420,
@@ -6145,7 +6332,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 420,
@@ -6165,7 +6353,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 420,
@@ -6185,7 +6374,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 420,
@@ -6205,7 +6395,8 @@
       "name": "SUSD",
       "decimals": 18,
       "symbol": "SUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPJZivuNqvvG2ZwhtMdTqQ4Na8WazJjFWKJ7YkFba9uYz"
     },
     {
       "chainId": 420,
@@ -6225,7 +6416,8 @@
       "name": "Dai Stablecoin",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 10,
@@ -6258,7 +6450,8 @@
       "name": "ChainLink Token",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 10,
@@ -6291,7 +6484,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 10,
@@ -6324,7 +6518,8 @@
       "name": "Wrapped BTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 10,
@@ -6357,7 +6552,8 @@
       "name": "Wrapped Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 10,
@@ -6390,7 +6586,8 @@
       "name": "Tether USD",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 10,
@@ -6423,7 +6620,8 @@
       "name": "Aave Token",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 10,
@@ -6456,7 +6654,8 @@
       "name": "Synth sUSD",
       "decimals": 18,
       "symbol": "sUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmPJZivuNqvvG2ZwhtMdTqQ4Na8WazJjFWKJ7YkFba9uYz"
     },
     {
       "chainId": 10,
@@ -6489,7 +6688,8 @@
       "name": "Optimism",
       "decimals": 18,
       "symbol": "OP",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmd7o9BXbfLSn2HXyQ34i6aMbbzjmgXzKrcmEszLmUEbuz"
     },
     {
       "chainId": 10,
@@ -6522,7 +6722,8 @@
       "name": "Wrapped liquid staked Ether 2.0",
       "decimals": 18,
       "symbol": "wstETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmX92ZEUDt7YJcFVxaQ1kJSpWpHBtQLcz5bdtigqaDXbG7"
     },
     {
       "chainId": 10,
@@ -6555,7 +6756,8 @@
       "name": "LUSD Stablecoin",
       "decimals": 18,
       "symbol": "LUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYi2duNbozKeDcLjz4zQ94e8TsRAqknDXFoTZkzzioFny"
     },
     {
       "chainId": 10,
@@ -6588,7 +6790,8 @@
       "name": "Mai Stablecoin",
       "decimals": 18,
       "symbol": "MAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbW2kzNg9xGSpm7pHdcVJrsBQpisznkLW5XNkzKWCfWKX"
     },
     {
       "chainId": 10,
@@ -6621,7 +6824,8 @@
       "name": "Rocket Pool ETH",
       "decimals": 18,
       "symbol": "rETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeifZm3tWay1hFBZ1Gw4qhVwvpAeeDNwBPh23kAaoHYex"
     },
     {
       "chainId": 10,
@@ -6654,7 +6858,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDCn",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 10,
@@ -6674,7 +6879,8 @@
       "name": "Wrapped Ether",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 534352,
@@ -6696,7 +6902,7 @@
       "symbol": "stataScrWETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Scroll",
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0x5300000000000000000000000000000000000004",
         "underlyingAToken": "0xf301805bE1Df81102C957f6d4Ce29d2B8c056B2a"
       }
@@ -6707,7 +6913,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 534352,
@@ -6729,7 +6936,7 @@
       "symbol": "stataScrUSDC",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Scroll",
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4",
         "underlyingAToken": "0x1D738a3436A8C49CefFbaB7fbF04B660fb528CbD"
       }
@@ -6740,7 +6947,8 @@
       "name": "Wrapped liquid staked Ether 2.0",
       "decimals": 18,
       "symbol": "wstETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmX92ZEUDt7YJcFVxaQ1kJSpWpHBtQLcz5bdtigqaDXbG7"
     },
     {
       "chainId": 534352,
@@ -6762,7 +6970,7 @@
       "symbol": "stataScrwstETH",
       "tags": ["aaveV3", "stataToken"],
       "extensions": {
-        "pool": "AaveV3Scroll",
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
         "underlyingAToken": "0x5B1322eeb46240b02e20062b8F0F9908d525B09c"
       }
@@ -6773,7 +6981,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 534351,
@@ -6793,7 +7002,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 534351,
@@ -6813,7 +7023,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 534351,
@@ -6833,7 +7044,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 534351,
@@ -6853,7 +7065,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 534351,
@@ -6873,7 +7086,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 534351,
@@ -6893,7 +7107,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 534351,
@@ -6913,7 +7128,8 @@
       "name": "EURS",
       "decimals": 2,
       "symbol": "EURS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRqJDSX2HEsM5T1kYqCKn8kEomeFPW2J5oB3QgVzmDPLA"
     },
     {
       "chainId": 534351,
@@ -6933,7 +7149,8 @@
       "name": "DAI",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 4002,
@@ -6953,7 +7170,8 @@
       "name": "LINK",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 4002,
@@ -6973,7 +7191,8 @@
       "name": "USDC",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 4002,
@@ -6993,7 +7212,8 @@
       "name": "WBTC",
       "decimals": 8,
       "symbol": "WBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQZWTZzfxbdt474FvfFhmcyWgNh2R2jMJPSs9Tee1aXsz"
     },
     {
       "chainId": 4002,
@@ -7013,7 +7233,8 @@
       "name": "WETH",
       "decimals": 18,
       "symbol": "WETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmccjhwVgz72wAtxNWwu14inG7MRGGnGn2Y5eW6E3235ge"
     },
     {
       "chainId": 4002,
@@ -7033,7 +7254,8 @@
       "name": "USDT",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc4YuvEfJhj3CLxgG2q7jynmPcuoiUMWcHvqMTAuH6DpL"
     },
     {
       "chainId": 4002,
@@ -7053,7 +7275,8 @@
       "name": "AAVE",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 4002,
@@ -7073,7 +7296,8 @@
       "name": "WFTM",
       "decimals": 18,
       "symbol": "WFTM",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQptnTPCJryzPkZqZt74wCbJ4u3waESeBPUP9Qm4z8UEP"
     },
     {
       "chainId": 4002,
@@ -7093,7 +7317,8 @@
       "name": "CRV",
       "decimals": 18,
       "symbol": "CRV",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRPJ3NM4Q5fquXmEgDS9YUzm8617b7b4ADGhPGva3Cpfh"
     },
     {
       "chainId": 4002,
@@ -7113,7 +7338,8 @@
       "name": "SUSHI",
       "decimals": 18,
       "symbol": "SUSHI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbUjpdmdKscpuinhbLM2sY4sNvSbFeLwHaEM2isJVUoCA"
     },
     {
       "chainId": 4002,
@@ -7133,7 +7359,8 @@
       "name": "Dai Stablecoin",
       "decimals": 18,
       "symbol": "DAI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeaRHCP3AMWcQA7vD8Qw4kzCD77SDKqL6g2iQTHxg3GeR"
     },
     {
       "chainId": 250,
@@ -7153,7 +7380,8 @@
       "name": "ChainLink",
       "decimals": 18,
       "symbol": "LINK",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmP1HryrNN8f5At1mmty2sbKuDdwNtiYreGuhtFfM4Eeou"
     },
     {
       "chainId": 250,
@@ -7173,7 +7401,8 @@
       "name": "USD Coin",
       "decimals": 6,
       "symbol": "USDC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmUBKVZCFWq2scfJzRhxaD3iq4wHfWjuVecrw5a6buCdGL"
     },
     {
       "chainId": 250,
@@ -7193,7 +7422,8 @@
       "name": "Bitcoin",
       "decimals": 8,
       "symbol": "BTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQAPGuxPd4rHrCw1HJ5QU5P8JKX7Rukqfc4YonqndYrqn"
     },
     {
       "chainId": 250,
@@ -7213,7 +7443,8 @@
       "name": "Ethereum",
       "decimals": 18,
       "symbol": "ETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdZw6iotAseSoP2v3GTH4FxGh84maHT3j1P1hwSdPu9J"
     },
     {
       "chainId": 250,
@@ -7253,7 +7484,8 @@
       "name": "Aave",
       "decimals": 18,
       "symbol": "AAVE",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbdapR8hQCetkazKDQTbMy7JVi8Q3WBKeL5K6TKcQpVCC"
     },
     {
       "chainId": 250,
@@ -7273,7 +7505,8 @@
       "name": "Wrapped Fantom",
       "decimals": 18,
       "symbol": "WFTM",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQptnTPCJryzPkZqZt74wCbJ4u3waESeBPUP9Qm4z8UEP"
     },
     {
       "chainId": 250,
@@ -7293,7 +7526,8 @@
       "name": "Curve DAO",
       "decimals": 18,
       "symbol": "CRV",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmRPJ3NM4Q5fquXmEgDS9YUzm8617b7b4ADGhPGva3Cpfh"
     },
     {
       "chainId": 250,
@@ -7313,7 +7547,8 @@
       "name": "Sushi",
       "decimals": 18,
       "symbol": "SUSHI",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbUjpdmdKscpuinhbLM2sY4sNvSbFeLwHaEM2isJVUoCA"
     },
     {
       "chainId": 250,
