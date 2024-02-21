@@ -58,7 +58,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
   return (
     <div className="w-full max-w-2xl mb-10">
       <Box
-        className={cn('group border-brand-900 border p-1', {
+        className={cn('group border-brand-900 border p-1.5', {
           ['border-b-0']: results.length > 0,
         })}
       >
@@ -75,13 +75,15 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
             d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"
           ></path>
         </svg>
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="rounded-none outline-none py-3 px-11 w-full text-xl border border-1 border-r-2 border-t-2 border-transparent focus:border-brand-900 transition-all ring-inset placeholder:text-brand-500"
-          placeholder="Search..."
-        />
+        <div className="hover:ring-1 focus-within:ring-1 ring-brand-900 transition-all">
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="rounded-none outline-none py-3 px-11 w-full text-xl border-r-2 border-t-2 border-transparent focus:border-brand-900 transition-all ring-inset placeholder:text-brand-500 "
+            placeholder="Search..."
+          />
+        </div>
       </Box>
       {results.length !== 0 &&
         results.map((result) => (
