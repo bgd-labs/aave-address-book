@@ -709,6 +709,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xAC4f9019608f3A359Ba6a576DC4deC9561D2e514
   address internal constant PYUSD_INTEREST_RATE_STRATEGY =
     0xAC4f9019608f3A359Ba6a576DC4deC9561D2e514;
+
+  // https://etherscan.io/address/0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152
+  address internal constant PYUSD_STATA_TOKEN = 0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152;
 }
 
 library AaveV3EthereumEModes {
