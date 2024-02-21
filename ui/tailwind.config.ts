@@ -11,9 +11,9 @@ const config: Config = {
     extend: {
       colors: {
         'brand-100': '#FCF9F5',
-        'brand-300': '#EEECE9',
-        'brand-500': '#C4BFB8',
-        'brand-900': '#1D1D1B',
+        'brand-300': '#f2f0f8',
+        'brand-500': '#c5c3d0',
+        'brand-900': '#1d1d1b',
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

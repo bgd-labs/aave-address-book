@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} ${spaceGrotesk.variable} bg-brand-100 bg-[url('/backgroundPattern.svg')] bg-no-repeat bg-cover bg-fixed`}>
+      <body className={`font-sans ${inter.variable} ${spaceGrotesk.variable} bg-[url('/backgroundPattern.svg')] bg-no-repeat bg-cover bg-fixed`}>
         {children}
       </body>
     </html> 
