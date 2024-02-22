@@ -2,7 +2,7 @@ import {readFileSync, readdirSync} from 'fs';
 import {join} from 'path';
 import Hash from 'ipfs-only-hash';
 
-const assets = readdirSync(join(process.cwd(), 'assets/icons'));
+export const assets = readdirSync(join(process.cwd(), 'assets/underlying'));
 
 export enum VARIANT {
   UNDERLYING,
@@ -10,12 +10,17 @@ export enum VARIANT {
   STATA_TOKEN,
 }
 
-export async function getSymbolUri(symbol: string, variant: VARIANT): string | undefined {
+export enum VARIANT_SUFFIX {
+  A_TOKEN = '_aToken',
+  STATA_TOKEN = '_stataToken',
+}
+
+export async function getSymbolUri(symbol: string, variant: VARIANT): Promise<string | undefined> {
   const fileName = getFileName(symbol, variant);
   const exists = assets.includes(fileName);
   if (exists) {
     const cid = await getHash(
-      readFileSync(join(process.cwd(), 'assets/icons', fileName), {encoding: 'utf8'}),
+      readFileSync(join(process.cwd(), 'assets/underlying', fileName), {encoding: 'utf8'}),
     );
     return `ipfs://${cid}`;
   }
@@ -30,8 +35,8 @@ export async function getSymbolUri(symbol: string, variant: VARIANT): string | u
 function getFileName(_symbol: string, variant: VARIANT): string {
   const symbol = _symbol.toLowerCase();
   if (variant === VARIANT.UNDERLYING) return `${symbol}.svg`;
-  if (variant === VARIANT.A_TOKEN) return `${symbol}_aToken.svg`;
-  if (variant === VARIANT.STATA_TOKEN) return `${symbol}_stataToken.svg`;
+  if (variant === VARIANT.A_TOKEN) return `${symbol}${VARIANT_SUFFIX.A_TOKEN}.svg`;
+  if (variant === VARIANT.STATA_TOKEN) return `${symbol}${VARIANT_SUFFIX.STATA_TOKEN}.svg`;
   throw new Error('unknown variant');
 }
 
