@@ -13,7 +13,7 @@ function generateStataToken(fileName: string, underlying: string) {
   const svg = stataTemplate.replace(
     '<template />',
     underlying
-      .replace('height="48"', 'x="9" y="9" width="30" height="30"')
+      .replace('height="48"', 'x="4" y="4" width="40" height="40"')
       .replace('width="48"', ''),
   );
   writeFileSync(
@@ -42,7 +42,7 @@ function generateAToken(fileName: string, underlying: string) {
   const svg = aTemplate.replace(
     '<template />',
     underlying
-      .replace('height="48"', 'x="9" y="9" width="30" height="30"')
+      .replace('height="48"', 'x="4" y="4" width="40" height="40"')
       .replace('width="48"', ''),
   );
   writeFileSync(
