@@ -9,6 +9,12 @@ module.exports = {
       },
     },
     {
+      name: "removeAttrs",
+      params: {
+        attrs: "(x|y)",
+      },
+    },
+    {
       name: "rewrite width & height so it's consistent",
       fn: () => {
         return {
