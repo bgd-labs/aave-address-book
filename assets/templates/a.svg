@@ -2,8 +2,8 @@
     <defs id="defs10">
         <linearGradient id="linear-gradient" x1="215.80821" x2="52.73571" y1="34.559513" y2="226.81609"
             gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#b6509e" id="stop2" />
-            <stop offset="1" stopColor="#2ebac6" id="stop4" />
+            <stop offset="0" stop-color="#b6509e" id="stop2" />
+            <stop offset="1" stop-color="#2ebac6" id="stop4" />
         </linearGradient>
         <linearGradient id="linear-gradient-2" x1="0.90700001" x2="0.163" y1="0.227" y2="0.85299999" />
     </defs>
