@@ -9,11 +9,7 @@ module.exports = {
       },
     },
     {
-      name: "rewrite width & height",
-      params: {
-        width: "48",
-        height: "48",
-      },
+      name: "rewrite width & height so it's consistent",
       fn: () => {
         return {
           element: {

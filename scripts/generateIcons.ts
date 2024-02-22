@@ -28,6 +28,7 @@ function generateStataToken(fileName: string, underlying: string) {
   writeFileSync(join(basePath, 'stataToken', fileName), svg);
 }
 
+// TODO: fine the template somewhere
 function generateAToken() {}
 
 main();
