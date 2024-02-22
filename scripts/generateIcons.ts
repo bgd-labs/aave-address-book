@@ -1,18 +1,9 @@
 import {join} from 'path';
-import {VARIANT_SUFFIX, assets} from './generator/svgUtils';
+import {assets} from './generator/svgUtils';
 import {readFileSync, writeFileSync} from 'fs';
-import {XMLParser} from 'fast-xml-parser';
+import {optimize} from 'svgo';
 
 const basePath = join(process.cwd(), 'assets');
-
-async function main() {
-  for (const fileName of assets) {
-    const underlying = readFileSync(join(basePath, 'underlying', fileName), {
-      encoding: 'utf8',
-    });
-    generateStataToken(fileName, underlying);
-  }
-}
 
 const stataTemplate = readFileSync(join(basePath, 'templates', 'stata.svg'), {
   encoding: 'utf8',
@@ -25,10 +16,60 @@ function generateStataToken(fileName: string, underlying: string) {
       .replace('height="48"', 'x="9" y="9" width="30" height="30"')
       .replace('width="48"', ''),
   );
-  writeFileSync(join(basePath, 'stataToken', fileName), svg);
+  writeFileSync(
+    join(basePath, 'stataToken', fileName),
+    optimize(svg, {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeViewBox: false,
+            },
+          },
+        },
+      ],
+    }).data,
+  );
 }
 
+const aTemplate = readFileSync(join(basePath, 'templates', 'a.svg'), {
+  encoding: 'utf8',
+});
+
 // TODO: fine the template somewhere
-function generateAToken() {}
+function generateAToken(fileName: string, underlying: string) {
+  const svg = aTemplate.replace(
+    '<template />',
+    underlying
+      .replace('height="48"', 'x="9" y="9" width="30" height="30"')
+      .replace('width="48"', ''),
+  );
+  writeFileSync(
+    join(basePath, 'aToken', fileName),
+    optimize(svg, {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              removeViewBox: false,
+            },
+          },
+        },
+      ],
+    }).data,
+  );
+}
+
+async function main() {
+  for (const fileName of assets) {
+    const underlying = readFileSync(join(basePath, 'underlying', fileName), {
+      encoding: 'utf8',
+    });
+    generateStataToken(fileName, underlying);
+    generateAToken(fileName, underlying);
+  }
+}
 
 main();
