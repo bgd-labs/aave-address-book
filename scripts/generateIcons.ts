@@ -13,8 +13,8 @@ function generateStataToken(fileName: string, underlying: string) {
   const svg = stataTemplate.replace(
     '<template />',
     underlying
-      .replace('height="48"', 'x="4" y="4" width="40" height="40"')
-      .replace('width="48"', ''),
+      .replace(/width="[^"]*"/g, 'width="48"')
+      .replace(/height="[^"]*"/g, 'height="48"')
   );
   writeFileSync(
     join(basePath, 'stataToken', fileName),
@@ -37,13 +37,12 @@ const aTemplate = readFileSync(join(basePath, 'templates', 'a.svg'), {
   encoding: 'utf8',
 });
 
-// TODO: fine the template somewhere
 function generateAToken(fileName: string, underlying: string) {
   const svg = aTemplate.replace(
     '<template />',
     underlying
-      .replace('height="48"', 'x="4" y="4" width="40" height="40"')
-      .replace('width="48"', ''),
+      .replace(/width="[^"]*"/g, 'width="48"')
+      .replace(/height="[^"]*"/g, 'height="48"')
   );
   writeFileSync(
     join(basePath, 'aToken', fileName),
