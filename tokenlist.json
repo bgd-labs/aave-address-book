@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-21T09:06:48.186Z",
-  "version": { "major": 3, "minor": 0, "patch": 6 },
+  "timestamp": "2024-02-23T00:46:36.905Z",
+  "version": { "major": 3, "minor": 0, "patch": 7 },
   "tokens": [
     {
       "chainId": 1,
@@ -4935,6 +4935,19 @@
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
+      "name": "Static Aave Base USDC",
+      "decimals": 6,
+      "symbol": "stataBasUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "underlyingAToken": "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB"
       }
     },
     {

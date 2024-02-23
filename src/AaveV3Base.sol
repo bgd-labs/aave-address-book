@@ -217,6 +217,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x136848FdaedEB56245bE0e61E28A3CB8c0B45CaA
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x136848FdaedEB56245bE0e61E28A3CB8c0B45CaA;
+
+  // https://basescan.org/address/0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc
+  address internal constant USDC_STATA_TOKEN = 0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc;
 }
 
 library AaveV3BaseEModes {
