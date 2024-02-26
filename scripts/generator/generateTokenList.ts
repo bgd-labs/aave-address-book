@@ -10,7 +10,7 @@ import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {fixSymbol} from './assetsLibraryGenerator';
-import {getSymbolUri, VARIANT} from './svgUtils';
+import {getSymbolUri, uploadToPinata, VARIANT} from './svgUtils';
 
 const TAGS = {
   underlying: 'underlying',

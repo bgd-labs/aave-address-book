@@ -15,21 +15,19 @@ function generateStataToken(fileName: string, underlying: string) {
     '<template />',
     underlying.replace(/width="[^"]*"/g, 'width="48"').replace(/height="[^"]*"/g, 'height="48"'),
   );
-  writeFileSync(
-    join(basePath, 'stataToken', fileName),
-    optimize(svg, {
-      plugins: [
-        {
-          name: 'preset-default',
-          params: {
-            overrides: {
-              removeViewBox: false,
-            },
+  const content = optimize(svg, {
+    plugins: [
+      {
+        name: 'preset-default',
+        params: {
+          overrides: {
+            removeViewBox: false,
           },
         },
-      ],
-    }).data,
-  );
+      },
+    ],
+  }).data;
+  writeFileSync(join(basePath, 'stataToken', fileName), content);
 }
 
 const aTemplate = readFileSync(join(basePath, 'templates', 'a.svg'), {
@@ -41,21 +39,19 @@ function generateAToken(fileName: string, underlying: string) {
     '<template />',
     underlying.replace(/width="[^"]*"/g, 'width="48"').replace(/height="[^"]*"/g, 'height="48"'),
   );
-  writeFileSync(
-    join(basePath, 'aToken', fileName),
-    optimize(svg, {
-      plugins: [
-        {
-          name: 'preset-default',
-          params: {
-            overrides: {
-              removeViewBox: false,
-            },
+  const content = optimize(svg, {
+    plugins: [
+      {
+        name: 'preset-default',
+        params: {
+          overrides: {
+            removeViewBox: false,
           },
         },
-      ],
-    }).data,
-  );
+      },
+    ],
+  }).data;
+  writeFileSync(join(basePath, 'aToken', fileName), content);
 }
 
 async function main() {
