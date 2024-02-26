@@ -1,8 +1,6 @@
-import {readFileSync, readdirSync} from 'fs';
+import {existsSync, readFileSync} from 'fs';
 import {join} from 'path';
 import Hash from 'ipfs-only-hash';
-
-export const assets = readdirSync(join(process.cwd(), 'assets/underlying'));
 
 export enum VARIANT {
   UNDERLYING,
@@ -10,28 +8,39 @@ export enum VARIANT {
   STATA_TOKEN,
 }
 
-export enum VARIANT_FOLDER {
-  UNDERLYING = 'underlying',
-  A_TOKEN = 'aToken',
-  STATA_TOKEN = 'stataToken',
-}
+export const VARIANT_FOLDER: Record<VARIANT, string> = {
+  [VARIANT.UNDERLYING]: 'underlying',
+  [VARIANT.A_TOKEN]: 'aToken',
+  [VARIANT.STATA_TOKEN]: 'stataToken',
+};
 
+const SYMBOL_SYMBOL_MAP = {
+  miMATIC: 'MAI',
+  BTCB: 'BTC',
+  'BTC.b': 'BTC',
+  fUSDT: 'USDT',
+} as const;
 /**
  * some assets share a icon, although having different symbols onchain
  */
-const SYMBOL_SYMBOL_MAP = {} as const;
+function getIconForSymbol(symbol) {
+  if (/\.e/.test(symbol)) return symbol.replace('.e', '');
+  if (/m\./.test(symbol)) return symbol.replace('m.', '');
+  return SYMBOL_SYMBOL_MAP[symbol] || symbol;
+}
 
 export async function getSymbolUri(_symbol: string, variant: VARIANT): Promise<string | undefined> {
-  const rawSymbol = _symbol.toLowerCase();
-  const symbol = SYMBOL_SYMBOL_MAP[rawSymbol] || rawSymbol;
-  const exists = assets.includes(symbol);
-  if (exists) {
+  const symbol = getIconForSymbol(_symbol).toLowerCase();
+  const filePath = join(process.cwd(), 'assets', VARIANT_FOLDER[variant], `${symbol}.svg`);
+  if (existsSync(filePath)) {
     const cid = await getHash(
-      readFileSync(join(process.cwd(), 'assets', VARIANT_FOLDER[variant], symbol), {
+      readFileSync(filePath, {
         encoding: 'utf8',
       }),
     );
     return `ipfs://${cid}`;
+  } else {
+    console.log('symbol not found', symbol, variant);
   }
 }
 

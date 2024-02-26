@@ -1,9 +1,10 @@
 import {join} from 'path';
-import {assets} from './generator/svgUtils';
-import {readFileSync, writeFileSync} from 'fs';
+import {readFileSync, readdirSync, writeFileSync} from 'fs';
 import {optimize} from 'svgo';
 
 const basePath = join(process.cwd(), 'assets');
+
+export const assets = readdirSync(join(basePath, 'underlying'));
 
 const stataTemplate = readFileSync(join(basePath, 'templates', 'stata.svg'), {
   encoding: 'utf8',
@@ -12,9 +13,7 @@ const stataTemplate = readFileSync(join(basePath, 'templates', 'stata.svg'), {
 function generateStataToken(fileName: string, underlying: string) {
   const svg = stataTemplate.replace(
     '<template />',
-    underlying
-      .replace(/width="[^"]*"/g, 'width="48"')
-      .replace(/height="[^"]*"/g, 'height="48"')
+    underlying.replace(/width="[^"]*"/g, 'width="48"').replace(/height="[^"]*"/g, 'height="48"'),
   );
   writeFileSync(
     join(basePath, 'stataToken', fileName),
@@ -40,9 +39,7 @@ const aTemplate = readFileSync(join(basePath, 'templates', 'a.svg'), {
 function generateAToken(fileName: string, underlying: string) {
   const svg = aTemplate.replace(
     '<template />',
-    underlying
-      .replace(/width="[^"]*"/g, 'width="48"')
-      .replace(/height="[^"]*"/g, 'height="48"')
+    underlying.replace(/width="[^"]*"/g, 'width="48"').replace(/height="[^"]*"/g, 'height="48"'),
   );
   writeFileSync(
     join(basePath, 'aToken', fileName),
