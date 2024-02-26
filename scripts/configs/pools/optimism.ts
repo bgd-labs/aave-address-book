@@ -1,20 +1,6 @@
 import {ChainId} from '@bgd-labs/js-utils';
 import {PoolConfig} from '../types';
 
-export const optimismGoerliProtoV3: PoolConfig = {
-  name: 'OptimismGoerli',
-  chainId: ChainId.optimism_goerli,
-  POOL_ADDRESSES_PROVIDER: '0xf3a4595bD9FBf129DEb80802a4785873F0ceB65c',
-  additionalAddresses: {
-    FAUCET: '0x387d311e47e80b498169e6fb51d3193167d89F7D',
-    L2_ENCODER: '0x19cdecE64EDE475ba0EB114ff4E319d64Ef8ECCf',
-    UI_INCENTIVE_DATA_PROVIDER: '0x72A9c57cD5E2Ff20450e409cF6A542f1E6c710fc',
-    UI_POOL_DATA_PROVIDER: '0xD2f5680976c86ADd3978b7ad3422Ee5c7690ddb4',
-    WALLET_BALANCE_PROVIDER: '0x56033E114c61183590d39BA847400F02022Ebe47',
-    WETH_GATEWAY: '0xf556C102F47d806E21E8E78438E58ac06A14A29E',
-  },
-};
-
 export const optimismProtoV3: PoolConfig = {
   name: 'Optimism',
   chainId: ChainId.optimism,
