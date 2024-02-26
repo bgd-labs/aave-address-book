@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-22T16:42:16.034Z",
-  "version": { "major": 3, "minor": 0, "patch": 8 },
+  "timestamp": "2024-02-26T13:02:14.709Z",
+  "version": { "major": 3, "minor": 0, "patch": 9 },
   "tokens": [
     {
       "chainId": 1,
@@ -4938,6 +4938,19 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc",
+      "name": "Static Aave Base USDC",
+      "decimals": 6,
+      "symbol": "stataBasUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "underlyingAToken": "0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -6057,166 +6070,6 @@
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x912CE59144191C1204E64559FE8253a0e49E6548",
         "underlyingAToken": "0x6533afac2E7BCCB20dca161449A13A32D391fb00"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709",
-      "name": "DAI",
-      "decimals": 18,
-      "symbol": "DAI",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0x25E84646dF74FB9BCa68Aa8d018F7883ecE4B307",
-      "name": "Aave Optimism DAI",
-      "decimals": 18,
-      "symbol": "aOptDAI",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0xBA25de9a7DC623B30799F33B770d31B44c2C3b77",
-      "name": "LINK",
-      "decimals": 18,
-      "symbol": "LINK",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0xEf51CEE544Dc4f2046da04656a19a28d5C83BB60",
-      "name": "Aave Optimism LINK",
-      "decimals": 18,
-      "symbol": "aOptLINK",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0xBA25de9a7DC623B30799F33B770d31B44c2C3b77"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE",
-      "name": "USDC",
-      "decimals": 6,
-      "symbol": "USDC",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0x99A8acb66c7ED63141b868a603C2337B24f85B22",
-      "name": "Aave Optimism USDC",
-      "decimals": 6,
-      "symbol": "aOptUSDC",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692",
-      "name": "WBTC",
-      "decimals": 8,
-      "symbol": "WBTC",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0xa821B2BD2364194d24d3Cd92e0F450B0AD5823d0",
-      "name": "Aave Optimism WBTC",
-      "decimals": 8,
-      "symbol": "aOptWBTC",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0x099E6dA9FFF9F0D8873AaD3FB4C9F7eDA5742692"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0x4778caf7b5DBD3934c3906c2909653eB1e0E601f",
-      "name": "WETH",
-      "decimals": 18,
-      "symbol": "WETH",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0x18c9297E82dEf404a9472e7F208840Ae8261DFe8",
-      "name": "Aave Optimism WETH",
-      "decimals": 18,
-      "symbol": "aOptWETH",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0x4778caf7b5DBD3934c3906c2909653eB1e0E601f"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0xf79129ae303764D79287FfF0c857003E95fC1506",
-      "name": "USDT",
-      "decimals": 6,
-      "symbol": "USDT",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0x053Ac73bCD255525123872E2248a06C9794f29c7",
-      "name": "Aave Optimism USDT",
-      "decimals": 6,
-      "symbol": "aOptUSDT",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0xf79129ae303764D79287FfF0c857003E95fC1506"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0x20288ac1Ef7711448DF03283E6B580710E73393a",
-      "name": "AAVE",
-      "decimals": 18,
-      "symbol": "AAVE",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0x79655b4d49d52fEDB9503A20a55ef5762dA17B18",
-      "name": "Aave Optimism AAVE",
-      "decimals": 18,
-      "symbol": "aOptAAVE",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0x20288ac1Ef7711448DF03283E6B580710E73393a"
-      }
-    },
-    {
-      "chainId": 420,
-      "address": "0xC21D17E8E839C1286BBaa297d932AE9b33d7985b",
-      "name": "SUSD",
-      "decimals": 18,
-      "symbol": "SUSD",
-      "tags": ["underlying"]
-    },
-    {
-      "chainId": 420,
-      "address": "0xaf68aDbd3d8BBaC6c59c32490c01Cf8F6dB1adAE",
-      "name": "Aave Optimism SUSD",
-      "decimals": 18,
-      "symbol": "aOptSUSD",
-      "tags": ["aTokenV3", "aaveV3"],
-      "extensions": {
-        "pool": "0x52dCE39f4A3823b335732178364f5590bDacb25D",
-        "underlying": "0xC21D17E8E839C1286BBaa297d932AE9b33d7985b"
       }
     },
     {

@@ -50,29 +50,28 @@ export async function generateTokenList(pools: TokenListParams) {
         const alreadyInList = findInList(tokens, token, chainId);
         if (alreadyInList) return;
         const cache = findInList(cachedList.tokens, token, chainId);
-        if (cache) return tokens.push(cache);
-        else {
-          const erc20contract = getContract({
-            abi: IERC20Detailed_ABI,
-            address: token,
-            client: CHAIN_ID_CLIENT_MAP[chainId],
-          });
-          const [name, symbol] =
-            token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
-              ? ['Maker', 'MKR']
-              : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
-          const symbolUri = await getSymbolUri(symbol, variant);
-          return tokens.push({
-            chainId: chainId,
-            address: token,
-            name: name.length > 40 ? `${name.substring(0, 37)}...` : name, // schema limits to 40 characters
-            decimals: reserve.decimals,
-            symbol: fixSymbol(symbol, token),
-            tags,
-            ...(symbolUri ? {logoURI: symbolUri} : {}),
-            ...(extensions ? {extensions} : {}),
-          });
-        }
+
+        const erc20contract = getContract({
+          abi: IERC20Detailed_ABI,
+          address: token,
+          client: CHAIN_ID_CLIENT_MAP[chainId],
+        });
+        const [name, symbol] = cache
+          ? [cache.name, cache.symbol]
+          : token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
+          ? ['Maker', 'MKR']
+          : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
+        const symbolUri = await getSymbolUri(reserve.symbol, variant);
+        return tokens.push({
+          chainId: chainId,
+          address: token,
+          name: name.length > 40 ? `${name.substring(0, 37)}...` : name, // schema limits to 40 characters
+          decimals: reserve.decimals,
+          symbol: fixSymbol(symbol, token),
+          tags,
+          ...(symbolUri ? {logoURI: symbolUri} : {}),
+          ...(extensions ? {extensions} : {}),
+        });
       }
       await addToken(reserve.UNDERLYING, VARIANT.UNDERLYING, [TAGS.underlying]);
       await addToken(
@@ -95,7 +94,7 @@ export async function generateTokenList(pools: TokenListParams) {
     }
   }
 
-  if (cachedList.tokens.length === tokens.length) return;
+  if (JSON.stringify(cachedList.tokens) === JSON.stringify(tokens)) return;
   const tokenList: TokenList = {
     name: 'Aave token list',
     logoURI: 'ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1',

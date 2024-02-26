@@ -16,8 +16,14 @@ export enum VARIANT_FOLDER {
   STATA_TOKEN = 'stataToken',
 }
 
+/**
+ * some assets share a icon, although having different symbols onchain
+ */
+const SYMBOL_SYMBOL_MAP = {} as const;
+
 export async function getSymbolUri(_symbol: string, variant: VARIANT): Promise<string | undefined> {
-  const symbol = _symbol.toLowerCase();
+  const rawSymbol = _symbol.toLowerCase();
+  const symbol = SYMBOL_SYMBOL_MAP[rawSymbol] || rawSymbol;
   const exists = assets.includes(symbol);
   if (exists) {
     const cid = await getHash(
