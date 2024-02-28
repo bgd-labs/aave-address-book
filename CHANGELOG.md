@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.22.0](https://github.com/bgd-labs/aave-address-book/compare/v2.21.1...v2.22.0) (2024-02-28)
+
+
+### Features
+
+* add token icons & remove optimism goerli ([#378](https://github.com/bgd-labs/aave-address-book/issues/378)) ([6435899](https://github.com/bgd-labs/aave-address-book/commit/6435899458adc2f35a3b0f87b68f1a16d9b6112e))
+
+
+### Bug Fixes
+
+* upload ci ([6435899](https://github.com/bgd-labs/aave-address-book/commit/6435899458adc2f35a3b0f87b68f1a16d9b6112e))
+* upload to quicknode ([6435899](https://github.com/bgd-labs/aave-address-book/commit/6435899458adc2f35a3b0f87b68f1a16d9b6112e))
+
 ## [2.21.1](https://github.com/bgd-labs/aave-address-book/compare/v2.21.0...v2.21.1) (2024-02-21)
 
 
