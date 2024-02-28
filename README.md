@@ -92,7 +92,7 @@ forge test
 ### Adding a new Pool
 
 To list a new pool in the address book, you simply need to add a new pool in the respective [pools config](./scripts/configs/<type>/<network>) and run `yarn start`.
-src/AaveAddressBook.sol 0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520p
+src/AaveAddressBook.sol 0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520
 ### Adding new Addresses
 
 a) Adding an address that **can be obtained via onchain calls** so it doesn't need to be hardcoded on the configs:
