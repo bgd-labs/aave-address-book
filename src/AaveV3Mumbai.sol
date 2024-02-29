@@ -20,9 +20,6 @@ library AaveV3Mumbai {
   // https://mumbai.polygonscan.com/address/0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8
   IAaveOracle internal constant ORACLE = IAaveOracle(0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8);
 
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://mumbai.polygonscan.com/address/0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e);

@@ -73,7 +73,7 @@ export function generateAssetsLibrary(
       [`${symbol}_ORACLE`]: rest.ORACLE,
       [`${symbol}_INTEREST_RATE_STRATEGY`]: rest.INTEREST_RATE_STRATEGY,
     };
-    if (rest.STATA_TOKEN && rest.STATA_TOKEN != zeroAddress)
+    if (rest.STATA_TOKEN && rest.STATA_TOKEN !== zeroAddress)
       addresses[`${symbol}_STATA_TOKEN`] = rest.STATA_TOKEN;
     return addresses;
   });
@@ -82,8 +82,8 @@ export function generateAssetsLibrary(
     (acc, {symbol: _symbol, ...rest}) => {
       const symbol = fixSymbol(_symbol, rest.UNDERLYING);
       acc[symbol] = rest;
-      if (rest.STATA_TOKEN && rest.STATA_TOKEN != zeroAddress) {
-        acc[symbol].STATA_TOKEN = rest.STATA_TOKEN;
+      if (rest.STATA_TOKEN && rest.STATA_TOKEN == zeroAddress) {
+        delete acc[symbol].STATA_TOKEN;
       }
       return acc;
     },

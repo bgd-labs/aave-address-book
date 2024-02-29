@@ -17,7 +17,4 @@ library GovernanceV3Scroll {
 
   // https://scrollscan.com/address/0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24
   address internal constant EXECUTOR_LVL_1 = 0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24;
-
-  // https://scrollscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }

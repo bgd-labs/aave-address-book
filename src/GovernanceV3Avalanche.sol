@@ -27,9 +27,6 @@ library GovernanceV3Avalanche {
   // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
   address internal constant EXECUTOR_LVL_1 = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 
-  // https://snowtrace.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
-
   // https://snowtrace.io/address/0x690C218668B440204F369Af1541245d367cc805C
   IVotingStrategy internal constant VOTING_STRATEGY =
     IVotingStrategy(0x690C218668B440204F369Af1541245d367cc805C);

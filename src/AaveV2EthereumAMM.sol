@@ -37,13 +37,6 @@ library AaveV2EthereumAMM {
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0x0000000000000000000000000000000000000000;
-
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
-
   // https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
     0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
@@ -88,9 +81,6 @@ library AaveV2EthereumAMMAssets {
 
   // https://etherscan.io/address/0x118Ee405c6be8f9BA7cC7a98064EB5DA462235CF
   address internal constant WETH_S_TOKEN = 0x118Ee405c6be8f9BA7cC7a98064EB5DA462235CF;
-
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant WETH_ORACLE = 0x0000000000000000000000000000000000000000;
 
   // https://etherscan.io/address/0xdb838A27f91b112D722c854636F2c23720ea007E
   address internal constant WETH_INTEREST_RATE_STRATEGY =

@@ -20,9 +20,6 @@ library AaveV3ScrollSepolia {
   // https://sepolia-blockscout.scroll.io/address/0x4B7C7D2EbcDc1015D35F617596318C15d9d24e59
   IAaveOracle internal constant ORACLE = IAaveOracle(0x4B7C7D2EbcDc1015D35F617596318C15d9d24e59);
 
-  // https://sepolia-blockscout.scroll.io/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://sepolia-blockscout.scroll.io/address/0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee);

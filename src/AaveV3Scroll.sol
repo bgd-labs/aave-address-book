@@ -20,9 +20,6 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x04421D8C506E2fA2371a08EfAaBf791F624054F3
   IAaveOracle internal constant ORACLE = IAaveOracle(0x04421D8C506E2fA2371a08EfAaBf791F624054F3);
 
-  // https://scrollscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://scrollscan.com/address/0xa99F4E69acF23C6838DE90dD1B5c02EA928A53ee
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xa99F4E69acF23C6838DE90dD1B5c02EA928A53ee);

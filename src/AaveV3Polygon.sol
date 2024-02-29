@@ -20,9 +20,6 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0xb023e699F5a33916Ea823A16485e259257cA8Bd1
   IAaveOracle internal constant ORACLE = IAaveOracle(0xb023e699F5a33916Ea823A16485e259257cA8Bd1);
 
-  // https://polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://polygonscan.com/address/0x9441B65EE553F70df9C77d45d3283B6BC24F222d
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x9441B65EE553F70df9C77d45d3283B6BC24F222d);

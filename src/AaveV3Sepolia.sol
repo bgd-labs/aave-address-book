@@ -20,9 +20,6 @@ library AaveV3Sepolia {
   // https://sepolia.etherscan.io/address/0x2da88497588bf89281816106C7259e31AF45a663
   IAaveOracle internal constant ORACLE = IAaveOracle(0x2da88497588bf89281816106C7259e31AF45a663);
 
-  // https://sepolia.etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://sepolia.etherscan.io/address/0x3e9708d80f7B3e43118013075F7e95CE3AB31F31
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x3e9708d80f7B3e43118013075F7e95CE3AB31F31);

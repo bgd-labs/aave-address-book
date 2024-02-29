@@ -27,9 +27,6 @@ library GovernanceV3Polygon {
   // https://polygonscan.com/address/0xDf7d0e6454DB638881302729F5ba99936EaAB233
   address internal constant EXECUTOR_LVL_1 = 0xDf7d0e6454DB638881302729F5ba99936EaAB233;
 
-  // https://polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
-
   // https://polygonscan.com/address/0x59e6CAD5d7E7b9A26a45a1d1E74C7aF008170042
   IVotingStrategy internal constant VOTING_STRATEGY =
     IVotingStrategy(0x59e6CAD5d7E7b9A26a45a1d1E74C7aF008170042);

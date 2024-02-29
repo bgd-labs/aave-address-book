@@ -20,9 +20,6 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
   IAaveOracle internal constant ORACLE = IAaveOracle(0xeb0a051be10228213BAEb449db63719d6742F7c4);
 
-  // https://gnosisscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://gnosisscan.io/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741);

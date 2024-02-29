@@ -182,9 +182,6 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0xc478cBbeB590C76b01ce658f8C4dda04f30e2C6f
   address internal constant WETH_S_TOKEN = 0xc478cBbeB590C76b01ce658f8C4dda04f30e2C6f;
 
-  // https://polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant WETH_ORACLE = 0x0000000000000000000000000000000000000000;
-
   // https://polygonscan.com/address/0xEA2e7947658944674893D71cE5DA52d528a43388
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xEA2e7947658944674893D71cE5DA52d528a43388;

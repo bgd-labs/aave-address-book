@@ -18,9 +18,6 @@ library GovernanceV3Fuji {
   // https://testnet.snowtrace.io/address/0xACd2b1bA0B85FaF0f45D4974Ba8ee538E157fBc6
   address internal constant EXECUTOR_LVL_1 = 0xACd2b1bA0B85FaF0f45D4974Ba8ee538E157fBc6;
 
-  // https://testnet.snowtrace.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
-
   // https://testnet.snowtrace.io/address/0x8c55a1bf3DC7076522C5cd025f497A498eF90143
   IVotingStrategy internal constant VOTING_STRATEGY =
     IVotingStrategy(0x8c55a1bf3DC7076522C5cd025f497A498eF90143);
