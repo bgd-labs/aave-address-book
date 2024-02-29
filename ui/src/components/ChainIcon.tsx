@@ -1,21 +1,21 @@
 'use client';
 
 import Image from 'next/image';
-import ethereumIcon from '@/assets/chains/ethereum.svg';
-import polygonIcon from '@/assets/chains/polygon.svg';
-import binanceIcon from '@/assets/chains/binance.svg';
-import arbitrumIcon from '@/assets/chains/arbitrum.svg';
-import avalancheIcon from '@/assets/chains/avalanche.svg';
-import baseIcon from '@/assets/chains/base.svg';
-import gnosisIcon from '@/assets/chains/gnosis.svg';
-import metisIcon from '@/assets/chains/metis.svg';
-import optimismIcon from '@/assets/chains/optimism.svg';
-import unknownIcon from '@/assets/chains/unknown.svg';
-import polygonZkEvmIcon from '@/assets/chains/polygonZkEvm.svg';
-import scrollIcon from '@/assets/chains/scroll.svg';
-import ethereumTestnetIcon from '@/assets/chains/ethereumTestnet.svg';
-import fantomOperaIcon from '@/assets/chains/fantomOpera.svg';
-import harmonyOneIcon from '@/assets/chains/harmonyOne.svg';
+import ethereumIcon from '../../../assets/chains/ethereum.svg';
+import polygonIcon from '../../../assets/chains/polygon.svg';
+import binanceIcon from '../../../assets/chains/binance.svg';
+import arbitrumIcon from '../../../assets/chains/arbitrum.svg';
+import avalancheIcon from '../../../assets/chains/avalanche.svg';
+import baseIcon from '../../../assets/chains/base.svg';
+import gnosisIcon from '../../../assets/chains/gnosis.svg';
+import metisIcon from '../../../assets/chains/metis.svg';
+import optimismIcon from '../../../assets/chains/optimism.svg';
+import unknownIcon from '../../../assets/chains/unknown.svg';
+import polygonZkEvmIcon from '../../../assets/chains/polygonZkEvm.svg';
+import scrollIcon from '../../../assets/chains/scroll.svg';
+import ethereumTestnetIcon from '../../../assets/chains/ethereumTestnet.svg';
+import fantomOperaIcon from '../../../assets/chains/fantomOpera.svg';
+import harmonyOneIcon from '../../../assets/chains/harmonyOne.svg';
 
 type Props = {
   chainId?: number | null;
