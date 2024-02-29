@@ -20,7 +20,4 @@ library GovernanceV3BNB {
 
   // https://bscscan.com/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a
   address internal constant EXECUTOR_LVL_1 = 0x9390B1735def18560c509E2d0bc090E9d6BA257a;
-
-  // https://bscscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }

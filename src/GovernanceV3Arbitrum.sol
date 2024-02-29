@@ -17,7 +17,4 @@ library GovernanceV3Arbitrum {
 
   // https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327
   address internal constant EXECUTOR_LVL_1 = 0xFF1137243698CaA18EE364Cc966CF0e02A4e6327;
-
-  // https://arbiscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }

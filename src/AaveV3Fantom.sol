@@ -20,9 +20,6 @@ library AaveV3Fantom {
   // https://ftmscan.com/address/0xfd6f3c1845604C8AE6c6E402ad17fb9885160754
   IAaveOracle internal constant ORACLE = IAaveOracle(0xfd6f3c1845604C8AE6c6E402ad17fb9885160754);
 
-  // https://ftmscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://ftmscan.com/address/0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654);

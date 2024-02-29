@@ -17,7 +17,4 @@ library GovernanceV3Optimism {
 
   // https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf
   address internal constant EXECUTOR_LVL_1 = 0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf;
-
-  // https://optimistic.etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }

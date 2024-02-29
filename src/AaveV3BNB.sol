@@ -20,9 +20,6 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x39bc1bfDa2130d6Bb6DBEfd366939b4c7aa7C697
   IAaveOracle internal constant ORACLE = IAaveOracle(0x39bc1bfDa2130d6Bb6DBEfd366939b4c7aa7C697);
 
-  // https://bscscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://bscscan.com/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x41585C50524fb8c3899B43D7D797d9486AAc94DB);

@@ -83,9 +83,6 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x10dec6dF64d0ebD271c8AdD492Af4F5594358919
   address internal constant DAI_S_TOKEN = 0x10dec6dF64d0ebD271c8AdD492Af4F5594358919;
 
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant DAI_ORACLE = 0x0000000000000000000000000000000000000000;
-
   // https://mumbai.polygonscan.com/address/0x1f5Ee28A9BD5810BA9Eb877A555a2C15527D3484
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0x1f5Ee28A9BD5810BA9Eb877A555a2C15527D3484;
 
@@ -102,9 +99,6 @@ library AaveV2MumbaiAssets {
 
   // https://mumbai.polygonscan.com/address/0x83A7bC369cFd55D9F00267318b6D221fb9Fa739F
   address internal constant USDC_S_TOKEN = 0x83A7bC369cFd55D9F00267318b6D221fb9Fa739F;
-
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant USDC_ORACLE = 0x0000000000000000000000000000000000000000;
 
   // https://mumbai.polygonscan.com/address/0x63Afbf8a706C23B81ECF892d818170d2A423b01d
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -124,9 +118,6 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0xdD250d4e7ff5f7414F3EBe8fcBbB13583191BDaC
   address internal constant USDT_S_TOKEN = 0xdD250d4e7ff5f7414F3EBe8fcBbB13583191BDaC;
 
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant USDT_ORACLE = 0x0000000000000000000000000000000000000000;
-
   // https://mumbai.polygonscan.com/address/0x63Afbf8a706C23B81ECF892d818170d2A423b01d
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0x63Afbf8a706C23B81ECF892d818170d2A423b01d;
@@ -144,9 +135,6 @@ library AaveV2MumbaiAssets {
 
   // https://mumbai.polygonscan.com/address/0x29A36d45e8d9f446EC9529b28907bc850B398154
   address internal constant WBTC_S_TOKEN = 0x29A36d45e8d9f446EC9529b28907bc850B398154;
-
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant WBTC_ORACLE = 0x0000000000000000000000000000000000000000;
 
   // https://mumbai.polygonscan.com/address/0x88cf62ff6bDd02ca43840645dE26F8CDb6De2941
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
@@ -166,9 +154,6 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0x35D88812d32b966da90db9F546fbf43553C4F35b
   address internal constant WETH_S_TOKEN = 0x35D88812d32b966da90db9F546fbf43553C4F35b;
 
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant WETH_ORACLE = 0x0000000000000000000000000000000000000000;
-
   // https://mumbai.polygonscan.com/address/0x50a2bf8f96826E9Bfe7fbb94fFbA5790d44B92D1
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0x50a2bf8f96826E9Bfe7fbb94fFbA5790d44B92D1;
@@ -187,9 +172,6 @@ library AaveV2MumbaiAssets {
   // https://mumbai.polygonscan.com/address/0xfeedbD76ac61616f270911CCaBb43a36380f40ae
   address internal constant WMATIC_S_TOKEN = 0xfeedbD76ac61616f270911CCaBb43a36380f40ae;
 
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant WMATIC_ORACLE = 0x0000000000000000000000000000000000000000;
-
   // https://mumbai.polygonscan.com/address/0x8A3Cc6F77BE0a10b60A34bE2316707555Fd634dF
   address internal constant WMATIC_INTEREST_RATE_STRATEGY =
     0x8A3Cc6F77BE0a10b60A34bE2316707555Fd634dF;
@@ -207,9 +189,6 @@ library AaveV2MumbaiAssets {
 
   // https://mumbai.polygonscan.com/address/0x14bD9790e15294608Df4160dcF45B64adBFdCBaA
   address internal constant AAVE_S_TOKEN = 0x14bD9790e15294608Df4160dcF45B64adBFdCBaA;
-
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant AAVE_ORACLE = 0x0000000000000000000000000000000000000000;
 
   // https://mumbai.polygonscan.com/address/0x624dCF5e81a0aA7fE0096447c63113c984DDC0F8
   address internal constant AAVE_INTEREST_RATE_STRATEGY =

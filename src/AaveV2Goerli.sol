@@ -37,13 +37,6 @@ library AaveV2Goerli {
   // https://goerli.etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
-  // https://goerli.etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0x0000000000000000000000000000000000000000;
-
-  // https://goerli.etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
-
   // https://goerli.etherscan.io/address/0x2EEFbC0444D9529571c1803fa32D105BC7F4371b
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
     0x2EEFbC0444D9529571c1803fa32D105BC7F4371b;
@@ -431,9 +424,6 @@ library AaveV2GoerliAssets {
 
   // https://goerli.etherscan.io/address/0x2D9038076C16F152B6Ab5391644DB8e3E88C3723
   address internal constant WETH_S_TOKEN = 0x2D9038076C16F152B6Ab5391644DB8e3E88C3723;
-
-  // https://goerli.etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant WETH_ORACLE = 0x0000000000000000000000000000000000000000;
 
   // https://goerli.etherscan.io/address/0xA9464a84A26c439bf721BF2f5E1B14d5dE13bE3B
   address internal constant WETH_INTEREST_RATE_STRATEGY =

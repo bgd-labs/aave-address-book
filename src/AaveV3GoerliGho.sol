@@ -20,9 +20,6 @@ library AaveV3GoerliGho {
   // https://goerli.etherscan.io/address/0xcb601629B36891c43943e3CDa2eB18FAc38B5c4e
   IAaveOracle internal constant ORACLE = IAaveOracle(0xcb601629B36891c43943e3CDa2eB18FAc38B5c4e);
 
-  // https://goerli.etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
-
   // https://goerli.etherscan.io/address/0xB7d8ff9949dB06D8387C28332045b8F734641755
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xB7d8ff9949dB06D8387C28332045b8F734641755);

@@ -10,7 +10,4 @@ export const PC_DATA_HELPER = '0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A';
 // https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf
 export const EXECUTOR_LVL_1 = '0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf';
 
-// https://optimistic.etherscan.io/address/0x0000000000000000000000000000000000000000
-export const EXECUTOR_LVL_2 = '0x0000000000000000000000000000000000000000';
-
 export const CHAIN_ID = 10;
