@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.22.1](https://github.com/bgd-labs/aave-address-book/compare/v2.22.0...v2.22.1) (2024-02-29)
+
+
+### Bug Fixes
+
+* remove zero addresses ([#385](https://github.com/bgd-labs/aave-address-book/issues/385)) ([568b2c6](https://github.com/bgd-labs/aave-address-book/commit/568b2c6010d7e145227a3d23d8f7454dd50769ec))
+
 ## [2.22.0](https://github.com/bgd-labs/aave-address-book/compare/v2.21.1...v2.22.0) (2024-02-28)
 
 
