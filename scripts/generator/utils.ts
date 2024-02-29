@@ -57,7 +57,11 @@ export function generateSolidityConstants({
   addresses: Addresses;
 }) {
   return Object.keys(addresses)
-    .filter((key) => addresses[key] != zeroAddress)
+    .filter((key) =>
+      typeof addresses[key] !== 'object'
+        ? addresses[key] !== zeroAddress
+        : addresses[key].value !== zeroAddress,
+    )
     .map((key) => addressInfoToSolidityLibraryConstant(chainId, key, addresses[key]));
 }
 
@@ -78,7 +82,11 @@ export function addressToJsConstant(chainId: number, key: string, entry: Address
 
 export function generateJsConstants({chainId, addresses}: {chainId: number; addresses: Addresses}) {
   return Object.keys(addresses)
-    .filter((key) => addresses[key] != zeroAddress)
+    .filter((key) =>
+      typeof addresses[key] !== 'object'
+        ? addresses[key] !== zeroAddress
+        : addresses[key].value !== zeroAddress,
+    )
     .map((key) => addressToJsConstant(chainId, key, addresses[key]));
 }
 

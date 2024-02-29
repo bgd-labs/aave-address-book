@@ -24,10 +24,6 @@ library AaveV2Goerli {
   ILendingRateOracle internal constant LENDING_RATE_ORACLE =
     ILendingRateOracle(0x76aFA2b6C29E1B277A3BB1CD320b2756c1674c91);
 
-  // https://goerli.etherscan.io/address/0x0000000000000000000000000000000000000000
-  IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IAaveProtocolDataProvider(0x0000000000000000000000000000000000000000);
-
   // https://goerli.etherscan.io/address/0x77c45699A715A64A7a7796d5CEe884cf617D5254
   address internal constant POOL_ADMIN = 0x77c45699A715A64A7a7796d5CEe884cf617D5254;
 
