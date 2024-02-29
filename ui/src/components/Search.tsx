@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { cn } from '@/utils/cn';
 import { type Address } from '@/types';
 import Fuse, { FuseResult } from 'fuse.js';
@@ -19,7 +20,13 @@ const SEARCH_LIMIT = 32;
 const DEBOUNCE_TIME = 150;
 
 export const Search = ({ addresses }: { addresses: Address[] }) => {
-  const [search, setSearch] = useState('');
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const searchString = searchParams.get('q');
+
+  const [search, setSearch] = useState(searchString || '');
   const [results, setResults] = useState<FuseResult<Address>[]>([]);
   const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -46,6 +53,9 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
       clearTimeout(timeoutId.current);
     }
     timeoutId.current = setTimeout(() => {
+      if (search) {
+        router.push(`${pathname}?q=${search}`);
+      }
       performSearch(search);
     }, DEBOUNCE_TIME);
     return () => {
@@ -53,7 +63,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
         clearTimeout(timeoutId.current);
       }
     };
-  }, [search, performSearch]);
+  }, [search, performSearch, router, pathname]);
 
   return (
     <div className="w-full max-w-2xl mb-10">
