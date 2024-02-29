@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-02-21T09:06:48.186Z",
-  "version": { "major": 3, "minor": 0, "patch": 6 },
+  "timestamp": "2024-02-29T12:31:00.440Z",
+  "version": { "major": 3, "minor": 0, "patch": 7 },
   "tokens": [
     {
       "chainId": 1,
@@ -4935,6 +4935,46 @@
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+      }
+    },
+    {
+      "chainId": 84532,
+      "address": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 84532,
+      "address": "0xf53B60F4006cab2b3C4688ce41fD5362427A2A66",
+      "name": "Aave Base Sepolia USDC",
+      "decimals": 6,
+      "symbol": "aBasSepUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x07eA79F68B2B3df564D0A34F8e19D9B1e339814b",
+        "underlying": "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+      }
+    },
+    {
+      "chainId": 84532,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 84532,
+      "address": "0x96e32dE4B1d1617B8c2AE13a88B9cC287239b13f",
+      "name": "Aave Base Sepolia WETH",
+      "decimals": 18,
+      "symbol": "aBasSepWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x07eA79F68B2B3df564D0A34F8e19D9B1e339814b",
+        "underlying": "0x4200000000000000000000000000000000000006"
       }
     },
     {

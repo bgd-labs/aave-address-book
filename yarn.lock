@@ -7,15 +7,15 @@
   resolved "https://registry.yarnpkg.com/@adraffy/ens-normalize/-/ens-normalize-1.10.0.tgz#d2a39395c587e092d77cbbc80acf956a54f38bf7"
   integrity sha512-nA9XHtlAkYfJxY7bce8DcN7eKxWWCWkU+1GR9d+U6MbNpfwQp8TI7vqOsBsMcHoT4mBu2kypKoSKnghEzOOq5Q==
 
-"@bgd-labs/js-utils@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.2.1.tgz#01c9db4f046c2afa5db403a396f913e7a59c7f33"
-  integrity sha512-FvAeqjHFF0bi/TzN0FR3W97IBn9I4WJjMRWyUf/4fTSB0l2dLL1563fRok+i9con7T651imcg/YhiE7Gd9vKtQ==
+"@bgd-labs/js-utils@^@1.3.1":
+  version "1.3.1-6ccc11e9eb549f3c99f693d7eed254cbbc40465c.0"
+  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.3.1-6ccc11e9eb549f3c99f693d7eed254cbbc40465c.0.tgz#2c8063b77ade112869b2ea24f8af2d4fe0424744"
+  integrity sha512-g7kMx4BttNVYdQa/eMYc0tULDDNiDZz+JumJP2Pw64D41OGijq8R+QUFvN5bZTJRf+gIvBMD+KwmZez8trfntw==
   dependencies:
-    "@supercharge/promise-pool" "^3.1.0"
+    "@supercharge/promise-pool" "^3.1.1"
     bs58 "^5.0.0"
     gray-matter "^4.0.3"
-    tsx "^4.4.0"
+    tsx "^4.7.1"
 
 "@esbuild/aix-ppc64@0.19.10":
   version "0.19.10"
@@ -296,10 +296,10 @@
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
 
-"@supercharge/promise-pool@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@supercharge/promise-pool/-/promise-pool-3.1.0.tgz#308b9f4d4bf1d607695f916d9454a3556cd4c2b4"
-  integrity sha512-gB3NukbIcYzRtPoE6dx9svQYPodxvnfQlaaQd8N/z87E6WaMfRE7o5HwB+LZ+KeM0nsNAq1n4TmBtfz1VCUR+Q==
+"@supercharge/promise-pool@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@supercharge/promise-pool/-/promise-pool-3.1.1.tgz#237d4e151b8591e2ff4f0ae388f7d6b4741bacc0"
+  integrity sha512-TgCm6jVqMPv+OgD5uBNND/CkCwNDdXPQlcprtnXsWSBpTCy0q5CI6vRj+jsUiXE1xeRaKIX4UeaYJqzZBL92sg==
 
 "@types/node@^20.10.5":
   version "20.10.5"
@@ -1054,10 +1054,20 @@ tsup@^8.0.1:
     sucrase "^3.20.3"
     tree-kill "^1.2.2"
 
-tsx@^4.4.0, tsx@^4.7.0:
+tsx@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.7.0.tgz#1689cfe7dda495ca1f9a66d4cad79cb57b9f6f4a"
   integrity sha512-I+t79RYPlEYlHn9a+KzwrvEwhJg35h/1zHsLC2JXvhC2mdynMv6Zxzvhv5EMV6VF5qJlLlkSnMVvdZV3PSIGcg==
+  dependencies:
+    esbuild "~0.19.10"
+    get-tsconfig "^4.7.2"
+  optionalDependencies:
+    fsevents "~2.3.3"
+
+tsx@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.7.1.tgz#27af6cbf4e1cdfcb9b5425b1c61bb7e668eb5e84"
+  integrity sha512-8d6VuibXHtlN5E3zFkgY8u4DX7Y3Z27zvvPKVmLon/D4AjuKzarkUBTLDBgj9iTQ0hg5xM7c/mYiRVM+HETf0g==
   dependencies:
     esbuild "~0.19.10"
     get-tsconfig "^4.7.2"
