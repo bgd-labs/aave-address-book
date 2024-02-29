@@ -39,7 +39,6 @@ import {AaveV3PolygonZkEvm} from './AaveV3PolygonZkEvm.sol';
 import {AaveV3BNB} from './AaveV3BNB.sol';
 import {AaveV3Celo} from './AaveV3Celo.sol';
 import {AaveV3Arbitrum} from './AaveV3Arbitrum.sol';
-import {AaveV3OptimismGoerli} from './AaveV3OptimismGoerli.sol';
 import {AaveV3Optimism} from './AaveV3Optimism.sol';
 import {AaveV3Scroll} from './AaveV3Scroll.sol';
 import {AaveV3ScrollSepolia} from './AaveV3ScrollSepolia.sol';
