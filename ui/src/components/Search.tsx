@@ -27,6 +27,11 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
 
   const [search, setSearch] = useState(searchString || '');
   const [results, setResults] = useState<FuseResult<Address>[]>([]);
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  const refs = useRef<(HTMLAnchorElement | null)[]>([]);
+  const inputRef = useRef<HTMLInputElement>(null);
+
   const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const fuseIndex = useMemo(
@@ -46,6 +51,44 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
     },
     [addresses, fuseIndex],
   );
+
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === 'ArrowDown' || (event.key === 'Tab' && !event.shiftKey)) {
+      event.preventDefault();
+      setActiveIndex((prevActiveIndex) =>
+        prevActiveIndex === -1 ? 0 : (prevActiveIndex + 1) % results.length,
+      );
+    } else if (
+      event.key === 'ArrowUp' ||
+      (event.key === 'Tab' && event.shiftKey)
+    ) {
+      event.preventDefault();
+      setActiveIndex((prevActiveIndex) => {
+        if (prevActiveIndex === 0) {
+          inputRef.current?.focus();
+          return -1;
+        }
+        return prevActiveIndex === -1
+          ? 0
+          : (prevActiveIndex - 1 + results.length) % results.length;
+      });
+    }
+  };
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    refs.current = refs.current.slice(0, results.length);
+    setActiveIndex(-1);
+  }, [results]);
+
+  useEffect(() => {
+    if (refs.current[activeIndex]) {
+      refs.current[activeIndex]?.focus();
+    }
+  }, [activeIndex]);
 
   useEffect(() => {
     if (timeoutId.current) {
@@ -67,7 +110,7 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
   }, [search, performSearch, pathname]);
 
   return (
-    <div className="w-full max-w-2xl mb-10">
+    <div className="w-full max-w-2xl mb-10" onKeyDown={handleKeyDown}>
       <Box
         className={cn(
           'group border-brand-900 border p-1.5 focus-within:bg-brand-300 transition-colors',
@@ -96,12 +139,18 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
             onChange={(e) => setSearch(e.target.value)}
             className="rounded-none outline-none py-3 px-11 w-full text-xl border-r-2 border-t-2 border-transparent focus:border-brand-900 transition-all ring-inset placeholder:text-brand-500 "
             placeholder="Search..."
+            ref={inputRef}
           />
         </div>
       </Box>
       {results.length !== 0 &&
-        results.map((result) => (
-          <SearchResult key={result.item.searchPath} result={result} />
+        results.map((result, index) => (
+          <SearchResult
+            key={result.item.searchPath}
+            result={result}
+            ref={(el) => (refs.current[index] = el)}
+            tabIndex={index === activeIndex ? 0 : -1}
+          />
         ))}
     </div>
   );
