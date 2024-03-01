@@ -25,6 +25,8 @@ function flattenObject(
   });
 
   for (let [key, value] of entries) {
+    if (key === 'tokenlist') continue;
+
     const newPath = [...path, key];
     if (key === 'CHAIN_ID') {
       chainId = value as number;
