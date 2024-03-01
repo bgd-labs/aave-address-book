@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react';
+import { Suspense } from 'react';
 import * as addressBook from '../../../src/ts/AaveAddressBook';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
 import Image from 'next/image';
