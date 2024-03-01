@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 import * as addressBook from '../../../src/ts/AaveAddressBook';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
 import { Footer } from '@/components/Footer';
@@ -49,11 +48,6 @@ function flattenObject(
 }
 
 const addresses = flattenObject(addressBook);
-
-export const metadata: Metadata = {
-  title: 'Search on Aave',
-  description: "Registry of all smart contracts' addresses on Aave",
-};
 
 export default function Home() {
   return (
