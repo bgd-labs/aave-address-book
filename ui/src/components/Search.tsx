@@ -54,6 +54,8 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
     timeoutId.current = setTimeout(() => {
       if (search) {
         window.history.replaceState(null, '', `${pathname}?q=${search}`);
+      } else {
+        window.history.replaceState(null, '', pathname);
       }
       performSearch(search);
     }, DEBOUNCE_TIME);
