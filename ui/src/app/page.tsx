@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 import * as addressBook from '../../../src/ts/AaveAddressBook';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
+import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
 import { type Address } from '@/types';
 import logo from '@/assets/logo.svg';
@@ -50,17 +50,12 @@ function flattenObject(
 
 const addresses = flattenObject(addressBook);
 
-export const metadata: Metadata = {
-  title: 'Search on Aave',
-  description: "Registry of all smart contracts' addresses on Aave",
-};
-
 export default function Home() {
   return (
     <>
       <main className="flex min-h-screen flex-col items-center justify-start pl-4 pr-2 pb-8 pt-16 sm:pt-36">
         <Image src={logo} alt="Aave Search" className="mb-7 w-36 sm:w-44" />
-        <Suspense>
+        <Suspense fallback={<SearchSkeleton />}>
           <Search addresses={addresses} />
         </Suspense>
         <Footer />
