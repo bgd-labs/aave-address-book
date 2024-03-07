@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.23.0](https://github.com/bgd-labs/aave-address-book/compare/v2.22.1...v2.23.0) (2024-03-07)
+
+
+### Features
+
+* add keyboard navigation ([#392](https://github.com/bgd-labs/aave-address-book/issues/392)) ([dcd9526](https://github.com/bgd-labs/aave-address-book/commit/dcd952633b8a94a379d89ae4801521651262bd84))
+* added IBaseAdapter interface ([#394](https://github.com/bgd-labs/aave-address-book/issues/394)) ([85ee922](https://github.com/bgd-labs/aave-address-book/commit/85ee922bc68b2bf986e80720f99a160515690ab6))
+* base sepolia addresses ([#384](https://github.com/bgd-labs/aave-address-book/issues/384)) ([573f481](https://github.com/bgd-labs/aave-address-book/commit/573f481205620c12046c3d784512ab67692a3423))
+* optimism sepolia addresses ([#393](https://github.com/bgd-labs/aave-address-book/issues/393)) ([88ecb79](https://github.com/bgd-labs/aave-address-book/commit/88ecb79822afed57a54a8cc447b26416dfd01707))
+* persist search value in url ([#387](https://github.com/bgd-labs/aave-address-book/issues/387)) ([204361a](https://github.com/bgd-labs/aave-address-book/commit/204361a8860004ad3b26e33095561a70d4a6d1e4))
+
+
+### Bug Fixes
+
+* ignore tokenlist ([#391](https://github.com/bgd-labs/aave-address-book/issues/391)) ([eb407f6](https://github.com/bgd-labs/aave-address-book/commit/eb407f6530dcf6e852a988504f16843ae69f220b))
+* use native replaceState instead of router ([#390](https://github.com/bgd-labs/aave-address-book/issues/390)) ([9afe436](https://github.com/bgd-labs/aave-address-book/commit/9afe436b3b360cc24ce66adbd03a8d1171e8323f))
+* wrap Search in Suspense ([#389](https://github.com/bgd-labs/aave-address-book/issues/389)) ([75d903b](https://github.com/bgd-labs/aave-address-book/commit/75d903b3819eed0212bd644d1a01e4bfe12acf6d))
+
 ## [2.22.1](https://github.com/bgd-labs/aave-address-book/compare/v2.22.0...v2.22.1) (2024-02-29)
 
 
