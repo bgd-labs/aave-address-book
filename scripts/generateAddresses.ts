@@ -24,6 +24,7 @@ import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
 import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismProtoV3} from './configs/pools/optimism';
+import {optimismSepoliaProtoV3} from './configs/pools/optimismSepolia';
 import {
   mumbaiProtoV2,
   mumbaiProtoV3,
@@ -54,6 +55,7 @@ import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
 import {mumbaiAddresses, polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses} from './configs/networks/optimism';
+import {optimismSepoliaAddresses} from './configs/networks/optimismSepolia';
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
@@ -122,6 +124,7 @@ async function main() {
       bnbProtoV3,
       arbitrumProtoV3,
       optimismProtoV3,
+      optimismSepoliaProtoV3,
       scrollProtoV3,
       scrollSepoliaProtoV3,
       fantomTestnetProtoV3,
@@ -140,6 +143,7 @@ async function main() {
     ethereumAddresses,
     fantomAddresses,
     optimismAddresses,
+    optimismSepoliaAddresses,
     polygonAddresses,
     metisAddresses,
     gnosisAddresses,
