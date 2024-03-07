@@ -8,6 +8,7 @@ import {
   fujiProtoV3,
 } from './configs/pools/avalanche';
 import {baseProtoV3} from './configs/pools/base';
+import {baseSepoliaProtoV3} from './configs/pools/baseSepolia';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
@@ -48,6 +49,7 @@ import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
 import {baseAddresses} from './configs/networks/base';
+import {baseSepoliaAddresses} from './configs/networks/baseSepolia';
 import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses, arbitrumSepoliaAddresses} from './configs/networks/arbitrum';
 import {avalancheAddresses} from './configs/networks/avalanche';
@@ -118,6 +120,7 @@ async function main() {
       avalancheProtoV3,
       fujiProtoV3,
       baseProtoV3,
+      baseSepoliaProtoV3,
       metisProtoV3,
       gnosisProtoV3,
       polygonZkEvmProtoV3,
@@ -140,6 +143,7 @@ async function main() {
     arbitrumSepoliaAddresses,
     avalancheAddresses,
     baseAddresses,
+    baseSepoliaAddresses,
     ethereumAddresses,
     fantomAddresses,
     optimismAddresses,
