@@ -17,7 +17,4 @@ library GovernanceV3PolygonZkEvm {
 
   // https://zkevm.polygonscan.com/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
   address internal constant EXECUTOR_LVL_1 = 0xe59470B3BE3293534603487E00A44C72f2CD466d;
-
-  // https://zkevm.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }

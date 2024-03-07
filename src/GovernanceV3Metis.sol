@@ -17,7 +17,4 @@ library GovernanceV3Metis {
 
   // https://andromeda-explorer.metis.io/address/0x6fD45D32375d5aDB8D76275A3932c740F03a8718
   address internal constant EXECUTOR_LVL_1 = 0x6fD45D32375d5aDB8D76275A3932c740F03a8718;
-
-  // https://andromeda-explorer.metis.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }

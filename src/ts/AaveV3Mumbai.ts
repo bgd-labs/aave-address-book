@@ -11,9 +11,6 @@ export const POOL_CONFIGURATOR = '0x5C12526EaAc2637fEa2322ee4e389698dBFC3845';
 // IAaveOracle https://mumbai.polygonscan.com/address/0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8
 export const ORACLE = '0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8';
 
-// https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-export const PRICE_ORACLE_SENTINEL = '0x0000000000000000000000000000000000000000';
-
 // IPoolDataProvider https://mumbai.polygonscan.com/address/0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e';
 

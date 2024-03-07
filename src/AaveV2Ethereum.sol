@@ -141,9 +141,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x4e977830ba4bd783C0BB7F15d3e243f73FF57121
   address internal constant WETH_S_TOKEN = 0x4e977830ba4bd783C0BB7F15d3e243f73FF57121;
 
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant WETH_ORACLE = 0x0000000000000000000000000000000000000000;
-
   // https://etherscan.io/address/0xb8975328Aa52c00B9Ec1e11e518C4900f2e6C62a
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xb8975328Aa52c00B9Ec1e11e518C4900f2e6C62a;

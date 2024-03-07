@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { cn } from '@/utils/cn';
 import { type Address } from '@/types';
 import Fuse, { FuseResult } from 'fuse.js';
@@ -19,8 +20,18 @@ const SEARCH_LIMIT = 32;
 const DEBOUNCE_TIME = 150;
 
 export const Search = ({ addresses }: { addresses: Address[] }) => {
-  const [search, setSearch] = useState('');
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const searchString = searchParams.get('q');
+
+  const [search, setSearch] = useState(searchString || '');
   const [results, setResults] = useState<FuseResult<Address>[]>([]);
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  const refs = useRef<(HTMLAnchorElement | null)[]>([]);
+  const inputRef = useRef<HTMLInputElement>(null);
+
   const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const fuseIndex = useMemo(
@@ -41,11 +52,54 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
     [addresses, fuseIndex],
   );
 
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === 'ArrowDown' || (event.key === 'Tab' && !event.shiftKey)) {
+      event.preventDefault();
+      setActiveIndex((prevActiveIndex) =>
+        prevActiveIndex === -1 ? 0 : (prevActiveIndex + 1) % results.length,
+      );
+    } else if (
+      event.key === 'ArrowUp' ||
+      (event.key === 'Tab' && event.shiftKey)
+    ) {
+      event.preventDefault();
+      setActiveIndex((prevActiveIndex) => {
+        if (prevActiveIndex === 0) {
+          inputRef.current?.focus();
+          return -1;
+        }
+        return prevActiveIndex === -1
+          ? 0
+          : (prevActiveIndex - 1 + results.length) % results.length;
+      });
+    }
+  };
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  useEffect(() => {
+    refs.current = refs.current.slice(0, results.length);
+    setActiveIndex(-1);
+  }, [results]);
+
+  useEffect(() => {
+    if (refs.current[activeIndex]) {
+      refs.current[activeIndex]?.focus();
+    }
+  }, [activeIndex]);
+
   useEffect(() => {
     if (timeoutId.current) {
       clearTimeout(timeoutId.current);
     }
     timeoutId.current = setTimeout(() => {
+      if (search) {
+        window.history.replaceState(null, '', `${pathname}?q=${search}`);
+      } else {
+        window.history.replaceState(null, '', pathname);
+      }
       performSearch(search);
     }, DEBOUNCE_TIME);
     return () => {
@@ -53,10 +107,10 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
         clearTimeout(timeoutId.current);
       }
     };
-  }, [search, performSearch]);
+  }, [search, performSearch, pathname]);
 
   return (
-    <div className="w-full max-w-2xl mb-10">
+    <div className="w-full max-w-2xl mb-10" onKeyDown={handleKeyDown}>
       <Box
         className={cn(
           'group border-brand-900 border p-1.5 focus-within:bg-brand-300 transition-colors',
@@ -85,12 +139,18 @@ export const Search = ({ addresses }: { addresses: Address[] }) => {
             onChange={(e) => setSearch(e.target.value)}
             className="rounded-none outline-none py-3 px-11 w-full text-xl border-r-2 border-t-2 border-transparent focus:border-brand-900 transition-all ring-inset placeholder:text-brand-500 "
             placeholder="Search..."
+            ref={inputRef}
           />
         </div>
       </Box>
       {results.length !== 0 &&
-        results.map((result) => (
-          <SearchResult key={result.item.searchPath} result={result} />
+        results.map((result, index) => (
+          <SearchResult
+            key={result.item.searchPath}
+            result={result}
+            ref={(el) => (refs.current[index] = el)}
+            tabIndex={index === activeIndex ? 0 : -1}
+          />
         ))}
     </div>
   );

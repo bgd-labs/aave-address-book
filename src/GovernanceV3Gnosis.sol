@@ -20,7 +20,4 @@ library GovernanceV3Gnosis {
 
   // https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
   address internal constant EXECUTOR_LVL_1 = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
-
-  // https://gnosisscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
 }
