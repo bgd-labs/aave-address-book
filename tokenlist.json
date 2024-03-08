@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-03-05T19:16:41.148Z",
-  "version": { "major": 3, "minor": 0, "patch": 9 },
+  "timestamp": "2024-03-08T17:01:05.437Z",
+  "version": { "major": 3, "minor": 0, "patch": 10 },
   "tokens": [
     {
       "chainId": 1,
@@ -6648,6 +6648,50 @@
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x912CE59144191C1204E64559FE8253a0e49E6548",
         "underlyingAToken": "0x6533afac2E7BCCB20dca161449A13A32D391fb00"
+      }
+    },
+    {
+      "chainId": 421614,
+      "address": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbhThHCdcMQ5bmQLpQ5zQsXHjP6jXoe84CGFuxEVskiV9"
+    },
+    {
+      "chainId": 421614,
+      "address": "0x460b97BD498E1157530AEb3086301d5225b91216",
+      "name": "Aave Arbitrum Sepolia USDC",
+      "decimals": 6,
+      "symbol": "aArbSepUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmcUgFhpDzaGxQXvacRJjnQeECQhVCGWNkRfouu8hCkESo",
+      "extensions": {
+        "pool": "0xBfC91D59fdAA134A4ED45f7B584cAf96D7792Eff",
+        "underlying": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d"
+      }
+    },
+    {
+      "chainId": 421614,
+      "address": "0x1dF462e2712496373A347f8ad10802a5E95f053D",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmQUcgNk4wBhEchxQjjoSkvUXTb9Lzw9SCZoygwktjSNqd"
+    },
+    {
+      "chainId": 421614,
+      "address": "0xf5f17EbE81E516Dc7cB38D61908EC252F150CE60",
+      "name": "Aave Arbitrum Sepolia WETH",
+      "decimals": 18,
+      "symbol": "aArbSepWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://Qma7MhjhSCiMyjDs1Zu3csUH4gYnPsT2DWPH7E9VjJDX2a",
+      "extensions": {
+        "pool": "0xBfC91D59fdAA134A4ED45f7B584cAf96D7792Eff",
+        "underlying": "0x1dF462e2712496373A347f8ad10802a5E95f053D"
       }
     },
     {
