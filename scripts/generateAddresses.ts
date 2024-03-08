@@ -1,14 +1,13 @@
 import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
 import {governanceConfigMainnet, governanceConfigGoerli} from './configs/governance/ethereum';
-import {arbitrumProtoV3} from './configs/pools/arbitrum';
+import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
   avalancheProtoV3,
   fujiProtoV2,
   fujiProtoV3,
 } from './configs/pools/avalanche';
-import {baseProtoV3} from './configs/pools/base';
-import {baseSepoliaProtoV3} from './configs/pools/baseSepolia';
+import {baseProtoV3, baseSepoliaProtoV3} from './configs/pools/base';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
@@ -24,8 +23,7 @@ import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
 import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
-import {optimismProtoV3} from './configs/pools/optimism';
-import {optimismSepoliaProtoV3} from './configs/pools/optimismSepolia';
+import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
 import {
   mumbaiProtoV2,
   mumbaiProtoV3,
@@ -48,16 +46,14 @@ import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
-import {baseAddresses} from './configs/networks/base';
-import {baseSepoliaAddresses} from './configs/networks/baseSepolia';
+import {baseAddresses, baseSepoliaAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses, arbitrumSepoliaAddresses} from './configs/networks/arbitrum';
 import {avalancheAddresses} from './configs/networks/avalanche';
 import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
 import {mumbaiAddresses, polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
-import {optimismAddresses} from './configs/networks/optimism';
-import {optimismSepoliaAddresses} from './configs/networks/optimismSepolia';
+import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
@@ -126,6 +122,7 @@ async function main() {
       polygonZkEvmProtoV3,
       bnbProtoV3,
       arbitrumProtoV3,
+      arbitrumSepoliaProtoV3,
       optimismProtoV3,
       optimismSepoliaProtoV3,
       scrollProtoV3,
