@@ -11,4 +11,7 @@ library MiscScroll {
 
   // https://scrollscan.com/address/0x63B20270b695E44Ac94Ad7592D5f81E3575b93e7
   address internal constant PROTOCOL_GUARDIAN = 0x63B20270b695E44Ac94Ad7592D5f81E3575b93e7;
+
+  // https://scrollscan.com/address/0xE61Da4C909F7d86797a0D06Db63c34f76c9bCBDC
+  address internal constant wstETH_stETH_AGGREGATOR = 0xE61Da4C909F7d86797a0D06Db63c34f76c9bCBDC;
 }
