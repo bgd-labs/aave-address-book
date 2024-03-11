@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0x36616cf17557639614c1cdDb356b1B83fc0B21
 // IPool https://zkevm.polygonscan.com/address/0xb50201558B00496A145fE76f7424749556E326D8
 export const POOL = '0xb50201558B00496A145fE76f7424749556E326D8';
 
+// https://zkevm.polygonscan.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+export const POOL_IMPL = '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671';
+
 // IPoolConfigurator https://zkevm.polygonscan.com/address/0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16
 export const POOL_CONFIGURATOR = '0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16';
+
+// https://zkevm.polygonscan.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
+export const POOL_CONFIGURATOR_IMPL = '0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C';
 
 // IAaveOracle https://zkevm.polygonscan.com/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
 export const ORACLE = '0x3e652E97ff339B73421f824F5b03d75b62F1Fb51';

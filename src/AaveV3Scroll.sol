@@ -13,9 +13,15 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x11fCfe756c05AD438e312a7fd934381537D3cFfe
   IPool internal constant POOL = IPool(0x11fCfe756c05AD438e312a7fd934381537D3cFfe);
 
+  // https://scrollscan.com/address/0x0c448B78A77d901f79F6afFD476aa7e761421cC1
+  address internal constant POOL_IMPL = 0x0c448B78A77d901f79F6afFD476aa7e761421cC1;
+
   // https://scrollscan.com/address/0x32BCab42a2bb5AC577D24b425D46d8b8e0Df9b7f
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x32BCab42a2bb5AC577D24b425D46d8b8e0Df9b7f);
+
+  // https://scrollscan.com/address/0xBFDDF25621d9d5543bDfa9e8a89bD546c5eE8cff
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xBFDDF25621d9d5543bDfa9e8a89bD546c5eE8cff;
 
   // https://scrollscan.com/address/0x04421D8C506E2fA2371a08EfAaBf791F624054F3
   IAaveOracle internal constant ORACLE = IAaveOracle(0x04421D8C506E2fA2371a08EfAaBf791F624054F3);

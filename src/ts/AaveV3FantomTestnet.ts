@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA
 // IPool https://testnet.ftmscan.com/address/0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8
 export const POOL = '0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8';
 
+// https://testnet.ftmscan.com/address/0x685b86a6659a1CbcfE168304386e1b54C543Ce16
+export const POOL_IMPL = '0x685b86a6659a1CbcfE168304386e1b54C543Ce16';
+
 // IPoolConfigurator https://testnet.ftmscan.com/address/0x257a6f06192D532e40F66b3DDfE2cBBaf8373822
 export const POOL_CONFIGURATOR = '0x257a6f06192D532e40F66b3DDfE2cBBaf8373822';
+
+// https://testnet.ftmscan.com/address/0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492
+export const POOL_CONFIGURATOR_IMPL = '0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492';
 
 // IAaveOracle https://testnet.ftmscan.com/address/0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4
 export const ORACLE = '0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4';

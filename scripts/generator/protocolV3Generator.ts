@@ -25,8 +25,10 @@ import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
   POOL: AddressInfo;
+  POOL_IMPL: AddressInfo;
   AAVE_PROTOCOL_DATA_PROVIDER: AddressInfo;
   POOL_CONFIGURATOR: AddressInfo;
+  POOL_CONFIGURATOR_IMPL: AddressInfo;
   ORACLE: AddressInfo;
   PRICE_ORACLE_SENTINEL: AddressInfo;
   ACL_ADMIN: AddressInfo;
@@ -121,7 +123,10 @@ export async function getPoolV3Addresses(
     abi: ADDRESS_PROVIDER_V3_ABI,
     client,
   });
-  if (!client) console.log(client, pool.chainId, pool.POOL_ADDRESSES_PROVIDER);
+  if (!client) {
+    console.log(client, pool.chainId, pool.POOL_ADDRESSES_PROVIDER);
+    throw new Error('client for chain not found');
+  }
   try {
     const [
       POOL,
@@ -141,8 +146,12 @@ export async function getPoolV3Addresses(
       addressProviderContract.read.getPoolDataProvider(),
     ]);
 
-    const DEFAULT_INCENTIVES_CONTROLLER = await addressProviderContract.read.getAddress([
-      '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532',
+    const [POOL_IMPL, POOL_CONFIGURATOR_IMPL, DEFAULT_INCENTIVES_CONTROLLER] = await Promise.all([
+      getImplementationStorageSlot(client, POOL),
+      getImplementationStorageSlot(client, POOL_CONFIGURATOR),
+      addressProviderContract.read.getAddress([
+        '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532',
+      ]),
     ]);
 
     let EMISSION_MANAGER: Hex = zeroAddress;
@@ -208,10 +217,12 @@ export async function getPoolV3Addresses(
         type: 'IPoolAddressesProvider',
       },
       POOL: {value: POOL, type: 'IPool'},
+      POOL_IMPL: bytes32toAddress(POOL_IMPL),
       POOL_CONFIGURATOR: {
         value: POOL_CONFIGURATOR,
         type: 'IPoolConfigurator',
       },
+      POOL_CONFIGURATOR_IMPL: bytes32toAddress(POOL_CONFIGURATOR_IMPL),
       ORACLE: {
         value: ORACLE,
         type: 'IAaveOracle',

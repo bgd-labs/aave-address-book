@@ -13,9 +13,15 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
+  // https://optimistic.etherscan.io/address/0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541
+  address internal constant POOL_IMPL = 0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541;
+
   // https://optimistic.etherscan.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
+
+  // https://optimistic.etherscan.io/address/0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B;
 
   // https://optimistic.etherscan.io/address/0xD81eb3728a631871a7eBBaD631b5f424909f0c77
   IAaveOracle internal constant ORACLE = IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77);

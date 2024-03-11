@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0x012bAC54348C0E635dCAc9D5FB99f06F24136C
 // IPool https://sepolia.etherscan.io/address/0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951
 export const POOL = '0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951';
 
+// https://sepolia.etherscan.io/address/0x0562453c3DAFBB5e625483af58f4E6D668c44e19
+export const POOL_IMPL = '0x0562453c3DAFBB5e625483af58f4E6D668c44e19';
+
 // IPoolConfigurator https://sepolia.etherscan.io/address/0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138
 export const POOL_CONFIGURATOR = '0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138';
+
+// https://sepolia.etherscan.io/address/0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32
+export const POOL_CONFIGURATOR_IMPL = '0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32';
 
 // IAaveOracle https://sepolia.etherscan.io/address/0x2da88497588bf89281816106C7259e31AF45a663
 export const ORACLE = '0x2da88497588bf89281816106C7259e31AF45a663';

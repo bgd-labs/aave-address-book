@@ -13,9 +13,15 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
+  // https://polygonscan.com/address/0x1ed647b250e5b6d71DC7B25806F44c33F5658F71
+  address internal constant POOL_IMPL = 0x1ed647b250e5b6d71DC7B25806F44c33F5658F71;
+
   // https://polygonscan.com/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
+
+  // https://polygonscan.com/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
 
   // https://polygonscan.com/address/0xb023e699F5a33916Ea823A16485e259257cA8Bd1
   IAaveOracle internal constant ORACLE = IAaveOracle(0xb023e699F5a33916Ea823A16485e259257cA8Bd1);
