@@ -13,9 +13,15 @@ library AaveV3FantomTestnet {
   // https://testnet.ftmscan.com/address/0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8
   IPool internal constant POOL = IPool(0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8);
 
+  // https://testnet.ftmscan.com/address/0x685b86a6659a1CbcfE168304386e1b54C543Ce16
+  address internal constant POOL_IMPL = 0x685b86a6659a1CbcfE168304386e1b54C543Ce16;
+
   // https://testnet.ftmscan.com/address/0x257a6f06192D532e40F66b3DDfE2cBBaf8373822
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x257a6f06192D532e40F66b3DDfE2cBBaf8373822);
+
+  // https://testnet.ftmscan.com/address/0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492;
 
   // https://testnet.ftmscan.com/address/0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4
   IAaveOracle internal constant ORACLE = IAaveOracle(0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4);

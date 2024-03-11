@@ -13,9 +13,15 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
+  // https://arbiscan.io/address/0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541
+  address internal constant POOL_IMPL = 0x03e8C5Cd5E194659b16456bb43Dd5D38886FE541;
+
   // https://arbiscan.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
+
+  // https://arbiscan.io/address/0x04a8D477eE202aDCE1682F5902e1160455205b12
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x04a8D477eE202aDCE1682F5902e1160455205b12;
 
   // https://arbiscan.io/address/0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7
   IAaveOracle internal constant ORACLE = IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7);

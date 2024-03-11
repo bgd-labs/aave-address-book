@@ -13,9 +13,15 @@ library AaveV3OptimismSepolia {
   // https://optimism-sepolia.blockscout.com/address/0xb50201558B00496A145fE76f7424749556E326D8
   IPool internal constant POOL = IPool(0xb50201558B00496A145fE76f7424749556E326D8);
 
+  // https://optimism-sepolia.blockscout.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant POOL_IMPL = 0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
   // https://optimism-sepolia.blockscout.com/address/0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16);
+
+  // https://optimism-sepolia.blockscout.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C;
 
   // https://optimism-sepolia.blockscout.com/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
   IAaveOracle internal constant ORACLE = IAaveOracle(0xeb0a051be10228213BAEb449db63719d6742F7c4);

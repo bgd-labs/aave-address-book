@@ -13,9 +13,15 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2
   IPool internal constant POOL = IPool(0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2);
 
+  // https://etherscan.io/address/0x5FAab9E1adbddaD0a08734BE8a52185Fd6558E14
+  address internal constant POOL_IMPL = 0x5FAab9E1adbddaD0a08734BE8a52185Fd6558E14;
+
   // https://etherscan.io/address/0x64b761D848206f447Fe2dd461b0c635Ec39EbB27
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x64b761D848206f447Fe2dd461b0c635Ec39EbB27);
+
+  // https://etherscan.io/address/0xFDA7ffA872bDc906D43079EA134ebC9a511db0c2
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xFDA7ffA872bDc906D43079EA134ebC9a511db0c2;
 
   // https://etherscan.io/address/0x54586bE62E3c3580375aE3723C145253060Ca0C2
   IAaveOracle internal constant ORACLE = IAaveOracle(0x54586bE62E3c3580375aE3723C145253060Ca0C2);

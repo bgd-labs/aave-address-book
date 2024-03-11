@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0xd449FeD49d9C443688d6816fE6872F21402e41
 // IPool https://sepolia.basescan.org/address/0x07eA79F68B2B3df564D0A34F8e19D9B1e339814b
 export const POOL = '0x07eA79F68B2B3df564D0A34F8e19D9B1e339814b';
 
+// https://sepolia.basescan.org/address/0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0
+export const POOL_IMPL = '0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0';
+
 // IPoolConfigurator https://sepolia.basescan.org/address/0x347Ae6820F48e9Dd563235742d89FAef6ffCaA72
 export const POOL_CONFIGURATOR = '0x347Ae6820F48e9Dd563235742d89FAef6ffCaA72';
+
+// https://sepolia.basescan.org/address/0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F
+export const POOL_CONFIGURATOR_IMPL = '0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F';
 
 // IAaveOracle https://sepolia.basescan.org/address/0x29E1eF0209275D0F403E8C57861C2df8706eA244
 export const ORACLE = '0x29E1eF0209275D0F403E8C57861C2df8706eA244';

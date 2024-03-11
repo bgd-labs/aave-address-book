@@ -1,5 +1,5 @@
 import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
-import {governanceConfigMainnet, governanceConfigGoerli} from './configs/governance/ethereum';
+import {governanceConfigMainnet} from './configs/governance/ethereum';
 import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
@@ -13,9 +13,7 @@ import {
   mainnetAmmV2Pool,
   mainnetArcV2Pool,
   mainnetProtoV2Pool,
-  goerliProtoV2Pool,
   sepoliaProtoV3,
-  goerliGHOV3Pool,
 } from './configs/pools/ethereum';
 import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
 import {harmonyProtoV3} from './configs/pools/harmony';
@@ -84,7 +82,6 @@ async function main() {
       governanceConfigOptimism,
       governanceConfigPolygon,
       governanceConfigMumbai,
-      governanceConfigGoerli,
       governanceConfigMetis,
       governanceConfigBase,
       governanceConfigBNB,
@@ -100,7 +97,6 @@ async function main() {
       mainnetProtoV2Pool,
       polygonProtoV2,
       mumbaiProtoV2,
-      goerliProtoV2Pool,
       fujiProtoV2,
       avalancheProtoV2,
     ].map((config) => generateProtocolV2Library(config)),
@@ -110,7 +106,6 @@ async function main() {
     [
       mainnetProtoV3Pool,
       sepoliaProtoV3,
-      goerliGHOV3Pool,
       polygonProtoV3,
       mumbaiProtoV3,
       avalancheProtoV3,

@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0x69850D0B276776781C063771b161bd8894BCdD
 // IPool https://scrollscan.com/address/0x11fCfe756c05AD438e312a7fd934381537D3cFfe
 export const POOL = '0x11fCfe756c05AD438e312a7fd934381537D3cFfe';
 
+// https://scrollscan.com/address/0x0c448B78A77d901f79F6afFD476aa7e761421cC1
+export const POOL_IMPL = '0x0c448B78A77d901f79F6afFD476aa7e761421cC1';
+
 // IPoolConfigurator https://scrollscan.com/address/0x32BCab42a2bb5AC577D24b425D46d8b8e0Df9b7f
 export const POOL_CONFIGURATOR = '0x32BCab42a2bb5AC577D24b425D46d8b8e0Df9b7f';
+
+// https://scrollscan.com/address/0xBFDDF25621d9d5543bDfa9e8a89bD546c5eE8cff
+export const POOL_CONFIGURATOR_IMPL = '0xBFDDF25621d9d5543bDfa9e8a89bD546c5eE8cff';
 
 // IAaveOracle https://scrollscan.com/address/0x04421D8C506E2fA2371a08EfAaBf791F624054F3
 export const ORACLE = '0x04421D8C506E2fA2371a08EfAaBf791F624054F3';

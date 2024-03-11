@@ -13,9 +13,15 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
+  // https://snowtrace.io/address/0x1ed647b250e5b6d71DC7B25806F44c33F5658F71
+  address internal constant POOL_IMPL = 0x1ed647b250e5b6d71DC7B25806F44c33F5658F71;
+
   // https://snowtrace.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
+
+  // https://snowtrace.io/address/0x79b5e91037AE441dE0d9e6fd3Fd85b96B83d4E93
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x79b5e91037AE441dE0d9e6fd3Fd85b96B83d4E93;
 
   // https://snowtrace.io/address/0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C
   IAaveOracle internal constant ORACLE = IAaveOracle(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C);

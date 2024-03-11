@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0x36616cf17557639614c1cdDb356b1B83fc0B21
 // IPool https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8
 export const POOL = '0xb50201558B00496A145fE76f7424749556E326D8';
 
+// https://gnosisscan.io/address/0x5b522140fabeB6b6232336295581e63902e9b4ad
+export const POOL_IMPL = '0x5b522140fabeB6b6232336295581e63902e9b4ad';
+
 // IPoolConfigurator https://gnosisscan.io/address/0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16
 export const POOL_CONFIGURATOR = '0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16';
+
+// https://gnosisscan.io/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
+export const POOL_CONFIGURATOR_IMPL = '0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C';
 
 // IAaveOracle https://gnosisscan.io/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
 export const ORACLE = '0xeb0a051be10228213BAEb449db63719d6742F7c4';

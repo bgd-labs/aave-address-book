@@ -13,9 +13,15 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0x07eA79F68B2B3df564D0A34F8e19D9B1e339814b
   IPool internal constant POOL = IPool(0x07eA79F68B2B3df564D0A34F8e19D9B1e339814b);
 
+  // https://sepolia.basescan.org/address/0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0
+  address internal constant POOL_IMPL = 0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0;
+
   // https://sepolia.basescan.org/address/0x347Ae6820F48e9Dd563235742d89FAef6ffCaA72
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x347Ae6820F48e9Dd563235742d89FAef6ffCaA72);
+
+  // https://sepolia.basescan.org/address/0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F;
 
   // https://sepolia.basescan.org/address/0x29E1eF0209275D0F403E8C57861C2df8706eA244
   IAaveOracle internal constant ORACLE = IAaveOracle(0x29E1eF0209275D0F403E8C57861C2df8706eA244);

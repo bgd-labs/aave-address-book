@@ -13,9 +13,15 @@ library AaveV3Metis {
   // https://andromeda-explorer.metis.io/address/0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57
   IPool internal constant POOL = IPool(0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57);
 
+  // https://andromeda-explorer.metis.io/address/0x8adB6916Bc161d7E3D46286ADAD3C77eef84Eb5d
+  address internal constant POOL_IMPL = 0x8adB6916Bc161d7E3D46286ADAD3C77eef84Eb5d;
+
   // https://andromeda-explorer.metis.io/address/0x69FEE8F261E004453BE0800BC9039717528645A6
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x69FEE8F261E004453BE0800BC9039717528645A6);
+
+  // https://andromeda-explorer.metis.io/address/0x4e70dFC21Cec67FCC2C1A0D2A093604ac7c9e4fB
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4e70dFC21Cec67FCC2C1A0D2A093604ac7c9e4fB;
 
   // https://andromeda-explorer.metis.io/address/0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e
   IAaveOracle internal constant ORACLE = IAaveOracle(0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e);

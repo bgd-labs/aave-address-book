@@ -13,9 +13,15 @@ library AaveV3Fuji {
   // https://testnet.snowtrace.io/address/0xccEa5C65f6d4F465B71501418b88FBe4e7071283
   IPool internal constant POOL = IPool(0xccEa5C65f6d4F465B71501418b88FBe4e7071283);
 
+  // https://testnet.snowtrace.io/address/0x987F9410f61c56F0d0D2F44B783d7E1B75141249
+  address internal constant POOL_IMPL = 0x987F9410f61c56F0d0D2F44B783d7E1B75141249;
+
   // https://testnet.snowtrace.io/address/0x34b80e82dFa833D65ef7618Cfc22bb1F359adce7
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x34b80e82dFa833D65ef7618Cfc22bb1F359adce7);
+
+  // https://testnet.snowtrace.io/address/0x892E31b5a218879C9dbe258f691897AC28c5e061
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x892E31b5a218879C9dbe258f691897AC28c5e061;
 
   // https://testnet.snowtrace.io/address/0x4DaE2f0f4Db78115eF114F1Dfef426ef2A4fC318
   IAaveOracle internal constant ORACLE = IAaveOracle(0x4DaE2f0f4Db78115eF114F1Dfef426ef2A4fC318);
