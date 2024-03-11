@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.24.0](https://github.com/bgd-labs/aave-address-book/compare/v2.23.0...v2.24.0) (2024-03-11)
+
+
+### Features
+
+* add arbitrum sepolia ([#396](https://github.com/bgd-labs/aave-address-book/issues/396)) ([d6124b0](https://github.com/bgd-labs/aave-address-book/commit/d6124b068788491cd2776f119187e9ffb7a5b9ff))
+
+
+### Bug Fixes
+
+* add impls ([#399](https://github.com/bgd-labs/aave-address-book/issues/399)) ([59151e7](https://github.com/bgd-labs/aave-address-book/commit/59151e77a4b359be4f59f20b5db6ce499af36a41))
+
 ## [2.23.0](https://github.com/bgd-labs/aave-address-book/compare/v2.22.1...v2.23.0) (2024-03-07)
 
 
