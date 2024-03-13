@@ -22,8 +22,6 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-03-13T00:48:24.837Z",
-  "version": { "major": 3, "minor": 0, "patch": 12 },
   "tokens": [
     {
       "chainId": 1,
@@ -7372,5 +7370,7 @@
         "underlying": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC"
       }
     }
-  ]
+  ],
+  "version": { "major": 3, "minor": 0, "patch": 12 },
+  "timestamp": "2024-03-13T21:35:30.176Z"
 }
