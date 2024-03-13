@@ -162,7 +162,7 @@ export async function generateTokenList(pools: TokenListParams) {
     throw new Error('error creating tokenlist');
   }
   return {
-    js: [`export {tokenlist} from './tokenlist.ts';`],
+    js: [`export {tokenlist} from './tokenlist';`],
     solidity: [],
   };
 }
