@@ -94,7 +94,11 @@ export async function generateTokenList(pools: TokenListParams) {
     }
   }
 
-  if (JSON.stringify(cachedList.tokens) === JSON.stringify(tokens)) return;
+  if (JSON.stringify(cachedList.tokens) === JSON.stringify(tokens))
+    return {
+      js: [`export {tokenList} from './tokenlist.ts';`],
+      solidity: [],
+    };
   const tokenList: TokenList = {
     name: 'Aave token list',
     logoURI: 'ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1',
@@ -146,9 +150,19 @@ export async function generateTokenList(pools: TokenListParams) {
         filepath: path,
       }),
     );
+    writeFileSync(
+      `./src/ts/tokenlist.ts`,
+      await prettier.format(`export const tokenList = ${JSON.stringify(tokenList)} as const`, {
+        filepath: path,
+      }),
+    );
   }
   if (validator.errors) {
     console.log(validator.errors);
     throw new Error('error creating tokenlist');
   }
+  return {
+    js: [`export {tokenList} from './tokenlist.ts';`],
+    solidity: [],
+  };
 }

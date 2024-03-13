@@ -128,7 +128,7 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
 
-  generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
+  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
 
   const networkAddresses = [
     arbitrumAddresses,
@@ -163,13 +163,13 @@ async function main() {
     networkAddresses,
     govImports,
     smImports,
+    tokenListImports,
     abis,
   ].flat();
 
   const jsExports = [
     ...imports.map((f) => f.js).flat(),
-    "export {default as tokenlist} from './../../tokenlist.json';" +
-      "export * as AaveV3Harmony from './AaveV3Harmony';",
+    "export * as AaveV3Harmony from './AaveV3Harmony';",
   ];
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));

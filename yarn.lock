@@ -34,10 +34,10 @@
     chalk "^2.4.2"
     js-tokens "^4.0.0"
 
-"@bgd-labs/js-utils@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.3.0.tgz#0cb7649acf175c5127a5077f4a8168118a8966c2"
-  integrity sha512-jk3Wmw/qA9T2dTMTDN9B+O3dUxfuZhnlW8OaaJBo+Lb9uqH2irTi3ex9dNoR+JYw8cSw+RQnV7fI2UWLJ8vXOw==
+"@bgd-labs/js-utils@1.3.1-f95274c470a773ac8d045db51b6af0769e743f0a.0":
+  version "1.3.1-f95274c470a773ac8d045db51b6af0769e743f0a.0"
+  resolved "https://registry.yarnpkg.com/@bgd-labs/js-utils/-/js-utils-1.3.1-f95274c470a773ac8d045db51b6af0769e743f0a.0.tgz#65098a83928ee9b99d90f737d628ff52fe299892"
+  integrity sha512-T332D+0koMlDBjxwpz4RXLer+VVF4Eo4OLs8Sn6EVnnfGZ6JxaSoWjlUTEg7hlxakcHFzmwLkHIr1+1TXxlWWg==
   dependencies:
     "@supercharge/promise-pool" "^3.1.1"
     bs58 "^5.0.0"
