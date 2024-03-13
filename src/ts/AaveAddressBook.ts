@@ -58,7 +58,7 @@ export * as MiscSepolia from './MiscSepolia';
 export * as MiscMumbai from './MiscMumbai';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
-export {tokenList} from './tokenlist.ts';
+export {tokenlist} from './tokenlist.ts';
 export {ICollector_ABI} from './abis/ICollector';
 export {AggregatorInterface_ABI} from './abis/AggregatorInterface';
 export {IPayloadsControllerCore_ABI} from './abis/IPayloadsControllerCore';

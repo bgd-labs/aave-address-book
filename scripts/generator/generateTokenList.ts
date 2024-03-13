@@ -94,12 +94,7 @@ export async function generateTokenList(pools: TokenListParams) {
     }
   }
 
-  if (JSON.stringify(cachedList.tokens) === JSON.stringify(tokens))
-    return {
-      js: [`export {tokenList} from './tokenlist.ts';`],
-      solidity: [],
-    };
-  const tokenList: TokenList = {
+  const tokenList = {
     name: 'Aave token list',
     logoURI: 'ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1',
     keywords: ['audited', 'verified', 'aave'],
@@ -130,14 +125,19 @@ export async function generateTokenList(pools: TokenListParams) {
         description: 'Tokens that are wrapped into a 4626 Vault',
       },
     },
-    timestamp: new Date().toISOString(),
-    version: {
+    tokens,
+    version: cachedList.version,
+    timestamp: cachedList.timestamp,
+  };
+
+  if (JSON.stringify(cachedList.tokens) !== JSON.stringify(tokens)) {
+    tokenList.version = {
       major: 3,
       minor: 0,
       patch: cachedList.version?.patch != undefined ? cachedList.version.patch + 1 : 0,
-    },
-    tokens,
-  };
+    };
+    tokenList.timestamp = new Date().toISOString();
+  }
 
   const ajv = new Ajv({allErrors: true, verbose: true});
   addFormats(ajv);
@@ -152,8 +152,8 @@ export async function generateTokenList(pools: TokenListParams) {
     );
     writeFileSync(
       `./src/ts/tokenlist.ts`,
-      await prettier.format(`export const tokenList = ${JSON.stringify(tokenList)} as const`, {
-        filepath: path,
+      await prettier.format(`export const tokenlist = ${JSON.stringify(tokenList)}`, {
+        filepath: `./src/ts/tokenlist.ts`,
       }),
     );
   }
@@ -162,7 +162,7 @@ export async function generateTokenList(pools: TokenListParams) {
     throw new Error('error creating tokenlist');
   }
   return {
-    js: [`export {tokenList} from './tokenlist.ts';`],
+    js: [`export {tokenlist} from './tokenlist.ts';`],
     solidity: [],
   };
 }

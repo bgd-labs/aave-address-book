@@ -15,7 +15,6 @@
   "module": "./dist/AaveAddressBook.mjs",
   "types": "./dist/AaveAddressBook.d.ts",
   "exports": {
-    "./tokenlist": "./tokenlist.json",
     ".": {
       "require": {
         "types": "./dist/AaveAddressBook.d.ts",
