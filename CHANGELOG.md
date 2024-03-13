@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.24.1](https://github.com/bgd-labs/aave-address-book/compare/v2.24.0...v2.24.1) (2024-03-13)
+
+
+### Bug Fixes
+
+* remove tokenList ([#402](https://github.com/bgd-labs/aave-address-book/issues/402)) ([ef195f0](https://github.com/bgd-labs/aave-address-book/commit/ef195f0473144453bed9e4ec1d22c4f3b9e41bde))
+
 ## [2.24.0](https://github.com/bgd-labs/aave-address-book/compare/v2.23.0...v2.24.0) (2024-03-11)
 
 
