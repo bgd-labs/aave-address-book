@@ -22,8 +22,8 @@
       "description": "Tokens that are wrapped into a 4626 Vault"
     }
   },
-  "timestamp": "2024-03-11T15:00:24.073Z",
-  "version": { "major": 3, "minor": 0, "patch": 11 },
+  "timestamp": "2024-03-13T00:48:24.837Z",
+  "version": { "major": 3, "minor": 0, "patch": 12 },
   "tokens": [
     {
       "chainId": 1,
@@ -6588,6 +6588,20 @@
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85"
+      }
+    },
+    {
+      "chainId": 10,
+      "address": "0x4DD03dfD36548C840B563745e3FBeC320F37BA7e",
+      "name": "Static Aave Optimism USDCn",
+      "decimals": 6,
+      "symbol": "stataOptUSDCn",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "ipfs://QmRSVBEwfG2v5jV9aR8B9h2MjSig8MpqE2JuqtF1UmA9pP",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+        "underlyingAToken": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5"
       }
     },
     {
