@@ -13,9 +13,15 @@ library AaveV2Mumbai {
   // https://mumbai.polygonscan.com/address/0x9198F13B08E299d85E096929fA9781A1E3d5d827
   ILendingPool internal constant POOL = ILendingPool(0x9198F13B08E299d85E096929fA9781A1E3d5d827);
 
+  // https://mumbai.polygonscan.com/address/0x100449c403dFaECC90502C03BE6cfF2715A3EE2E
+  address internal constant POOL_IMPL = 0x100449c403dFaECC90502C03BE6cfF2715A3EE2E;
+
   // https://mumbai.polygonscan.com/address/0xc3c37E2aA3dc66464fa3C29ce2a6EC85beFC45e1
   ILendingPoolConfigurator internal constant POOL_CONFIGURATOR =
     ILendingPoolConfigurator(0xc3c37E2aA3dc66464fa3C29ce2a6EC85beFC45e1);
+
+  // https://mumbai.polygonscan.com/address/0x8C991b1085e5b3cCcb7A3d7fC215f8C801a47D5B
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x8C991b1085e5b3cCcb7A3d7fC215f8C801a47D5B;
 
   // https://mumbai.polygonscan.com/address/0xC365C653f7229894F93994CD0b30947Ab69Ff1D5
   IAaveOracle internal constant ORACLE = IAaveOracle(0xC365C653f7229894F93994CD0b30947Ab69Ff1D5);

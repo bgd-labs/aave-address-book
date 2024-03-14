@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0xd05e3E715d945B59290df0ae8eF85c1BdB6847
 // ILendingPool https://polygonscan.com/address/0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
 export const POOL = '0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf';
 
+// https://polygonscan.com/address/0x1685D81212580DD4cDA287616C2f6F4794927e18
+export const POOL_IMPL = '0x1685D81212580DD4cDA287616C2f6F4794927e18';
+
 // ILendingPoolConfigurator https://polygonscan.com/address/0x26db2B833021583566323E3b8985999981b9F1F3
 export const POOL_CONFIGURATOR = '0x26db2B833021583566323E3b8985999981b9F1F3';
+
+// https://polygonscan.com/address/0x56C8Aa7e4fCAbaaD5e87d6847D0901134939A13a
+export const POOL_CONFIGURATOR_IMPL = '0x56C8Aa7e4fCAbaaD5e87d6847D0901134939A13a';
 
 // IAaveOracle https://polygonscan.com/address/0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d
 export const ORACLE = '0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d';

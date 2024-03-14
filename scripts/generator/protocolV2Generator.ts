@@ -3,8 +3,10 @@ import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
+  bytes32toAddress,
   generateJsConstants,
   generateSolidityConstants,
+  getImplementationStorageSlot,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
@@ -20,8 +22,10 @@ import {mainnetAmmV2Pool} from '../configs/pools/ethereum';
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
   POOL: AddressInfo;
+  POOL_IMPL: AddressInfo;
   AAVE_PROTOCOL_DATA_PROVIDER: AddressInfo;
   POOL_CONFIGURATOR: AddressInfo;
+  POOL_CONFIGURATOR_IMPL: AddressInfo;
   ORACLE: AddressInfo;
   LENDING_RATE_ORACLE: AddressInfo;
   POOL_ADMIN: AddressInfo;
@@ -106,6 +110,11 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       addressProviderContract.read.getLendingPoolCollateralManager(),
     ]);
 
+    const [POOL_IMPL, POOL_CONFIGURATOR_IMPL] = await Promise.all([
+      getImplementationStorageSlot(client, POOL),
+      getImplementationStorageSlot(client, POOL_CONFIGURATOR),
+    ]);
+
     let reservesData: PoolV2Addresses['reservesData'] = [];
     // workaround, fix before merge
     // didn't find all the ui pool data provider addresses, so currently there are gaps
@@ -171,10 +180,12 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
         type: 'ILendingPoolAddressesProvider',
       },
       POOL: {value: POOL, type: 'ILendingPool'},
+      POOL_IMPL: bytes32toAddress(POOL_IMPL),
       POOL_CONFIGURATOR: {
         value: POOL_CONFIGURATOR,
         type: 'ILendingPoolConfigurator',
       },
+      POOL_CONFIGURATOR_IMPL: bytes32toAddress(POOL_CONFIGURATOR_IMPL),
       ORACLE: {
         value: ORACLE,
         type: 'IAaveOracle',

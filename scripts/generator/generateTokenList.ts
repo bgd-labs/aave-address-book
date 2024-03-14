@@ -40,6 +40,7 @@ export async function generateTokenList(pools: TokenListParams) {
 
   const tokens: TokenInfo[] = [];
   for (const {reservesData, chainId, name: poolName, pool} of pools) {
+    if (CHAIN_ID_CLIENT_MAP[chainId].chain?.testnet) continue;
     for (const reserve of reservesData) {
       async function addToken(
         token: Address,
