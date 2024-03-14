@@ -461,28 +461,28 @@ library AaveV3PolygonAssets {
   address internal constant jEUR_STATA_TOKEN = 0xD992DaC78Ef3F34614E6a7d325b7b6A320FC0AB5;
 
   // https://polygonscan.com/address/0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4
-  address internal constant agEUR_UNDERLYING = 0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4;
+  address internal constant EURA_UNDERLYING = 0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4;
 
-  uint8 internal constant agEUR_DECIMALS = 18;
+  uint8 internal constant EURA_DECIMALS = 18;
 
   // https://polygonscan.com/address/0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77
-  address internal constant agEUR_A_TOKEN = 0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77;
+  address internal constant EURA_A_TOKEN = 0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77;
 
   // https://polygonscan.com/address/0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6
-  address internal constant agEUR_V_TOKEN = 0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6;
+  address internal constant EURA_V_TOKEN = 0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6;
 
   // https://polygonscan.com/address/0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF
-  address internal constant agEUR_S_TOKEN = 0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF;
+  address internal constant EURA_S_TOKEN = 0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF;
 
   // https://polygonscan.com/address/0x73366Fe0AA0Ded304479862808e02506FE556a98
-  address internal constant agEUR_ORACLE = 0x73366Fe0AA0Ded304479862808e02506FE556a98;
+  address internal constant EURA_ORACLE = 0x73366Fe0AA0Ded304479862808e02506FE556a98;
 
   // https://polygonscan.com/address/0xA9F3C3caE095527061e6d270DBE163693e6fda9D
-  address internal constant agEUR_INTEREST_RATE_STRATEGY =
+  address internal constant EURA_INTEREST_RATE_STRATEGY =
     0xA9F3C3caE095527061e6d270DBE163693e6fda9D;
 
   // https://polygonscan.com/address/0xd3eb8796Ed36f58E03B7b4b5AD417FA74931d2c4
-  address internal constant agEUR_STATA_TOKEN = 0xd3eb8796Ed36f58E03B7b4b5AD417FA74931d2c4;
+  address internal constant EURA_STATA_TOKEN = 0xd3eb8796Ed36f58E03B7b4b5AD417FA74931d2c4;
 
   // https://polygonscan.com/address/0xa3Fa99A148fA48D14Ed51d610c367C61876997F1
   address internal constant miMATIC_UNDERLYING = 0xa3Fa99A148fA48D14Ed51d610c367C61876997F1;

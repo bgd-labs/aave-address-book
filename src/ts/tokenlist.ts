@@ -3286,7 +3286,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'agEUR',
       tags: ['underlying'],
-      logoURI: 'ipfs://QmS8gdLAHvXQMDyjZmpK8Ex9fPXX3xb2sMtuHgnNMrTo52',
     },
     {
       chainId: 137,
@@ -3295,7 +3294,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aPolAGEUR',
       tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'ipfs://QmR8p1PkNMgVcTRXFg94iZuJ4Lk5NvbqavJ2aNZfxP8PLB',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
         underlying: '0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4',
@@ -3308,7 +3306,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'stataPolAGEUR',
       tags: ['aaveV3', 'stataToken'],
-      logoURI: 'ipfs://Qmaz2g7Prwy5y21QFFVAQkjvV5XDTjBeLvMn5psLoWhtmn',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
         underlying: '0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4',
@@ -7371,6 +7368,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 12},
-  timestamp: '2024-03-13T21:35:30.176Z',
+  version: {major: 3, minor: 0, patch: 13},
+  timestamp: '2024-03-14T15:22:54.628Z',
 };

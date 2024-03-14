@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0xAcc030EF66f9dFEAE9CbB0cd1B25654b82cFA8
 // ILendingPool https://etherscan.io/address/0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB
 export const POOL = '0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB';
 
+// https://etherscan.io/address/0xb9184a4480830bf89B55b73631E287Df9079F466
+export const POOL_IMPL = '0xb9184a4480830bf89B55b73631E287Df9079F466';
+
 // ILendingPoolConfigurator https://etherscan.io/address/0x23A875eDe3F1030138701683e42E9b16A7F87768
 export const POOL_CONFIGURATOR = '0x23A875eDe3F1030138701683e42E9b16A7F87768';
+
+// https://etherscan.io/address/0x9f3Cc7b6f5F75d97735763c22cb280dbF90f17a2
+export const POOL_CONFIGURATOR_IMPL = '0x9f3Cc7b6f5F75d97735763c22cb280dbF90f17a2';
 
 // IAaveOracle https://etherscan.io/address/0xA50ba011c48153De246E5192C8f9258A2ba79Ca9
 export const ORACLE = '0xA50ba011c48153De246E5192C8f9258A2ba79Ca9';

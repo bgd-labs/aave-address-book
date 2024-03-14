@@ -13,9 +13,15 @@ library AaveV2Fuji {
   // https://testnet.snowscan.xyz/address/0x76cc67FF2CC77821A70ED14321111Ce381C2594D
   ILendingPool internal constant POOL = ILendingPool(0x76cc67FF2CC77821A70ED14321111Ce381C2594D);
 
+  // https://testnet.snowscan.xyz/address/0x6C66d96ACCCCC2E6F576813A480AD230D56FB2F1
+  address internal constant POOL_IMPL = 0x6C66d96ACCCCC2E6F576813A480AD230D56FB2F1;
+
   // https://testnet.snowscan.xyz/address/0x4ceBAFAAcc6Cb26FD90E4cDe138Eb812442bb5f3
   ILendingPoolConfigurator internal constant POOL_CONFIGURATOR =
     ILendingPoolConfigurator(0x4ceBAFAAcc6Cb26FD90E4cDe138Eb812442bb5f3);
+
+  // https://testnet.snowscan.xyz/address/0x4f350F6D1688ca1eae4811e182569130a8B6CCaf
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4f350F6D1688ca1eae4811e182569130a8B6CCaf;
 
   // https://testnet.snowscan.xyz/address/0xfa4f5B081632c4709667D467F817C09d9008A46A
   IAaveOracle internal constant ORACLE = IAaveOracle(0xfa4f5B081632c4709667D467F817C09d9008A46A);

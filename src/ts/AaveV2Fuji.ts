@@ -5,8 +5,14 @@ export const POOL_ADDRESSES_PROVIDER = '0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C
 // ILendingPool https://testnet.snowscan.xyz/address/0x76cc67FF2CC77821A70ED14321111Ce381C2594D
 export const POOL = '0x76cc67FF2CC77821A70ED14321111Ce381C2594D';
 
+// https://testnet.snowscan.xyz/address/0x6C66d96ACCCCC2E6F576813A480AD230D56FB2F1
+export const POOL_IMPL = '0x6C66d96ACCCCC2E6F576813A480AD230D56FB2F1';
+
 // ILendingPoolConfigurator https://testnet.snowscan.xyz/address/0x4ceBAFAAcc6Cb26FD90E4cDe138Eb812442bb5f3
 export const POOL_CONFIGURATOR = '0x4ceBAFAAcc6Cb26FD90E4cDe138Eb812442bb5f3';
+
+// https://testnet.snowscan.xyz/address/0x4f350F6D1688ca1eae4811e182569130a8B6CCaf
+export const POOL_CONFIGURATOR_IMPL = '0x4f350F6D1688ca1eae4811e182569130a8B6CCaf';
 
 // IAaveOracle https://testnet.snowscan.xyz/address/0xfa4f5B081632c4709667D467F817C09d9008A46A
 export const ORACLE = '0xfa4f5B081632c4709667D467F817C09d9008A46A';
