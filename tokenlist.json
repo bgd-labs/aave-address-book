@@ -420,7 +420,7 @@
       "decimals": 18,
       "symbol": "BPT_WBTC_WETH",
       "tags": ["underlying"],
-      "logoURI": "ipfs://QmZs8zqWVEm88Vhi4Zm5A4xtUCKUMNDyfYnTrEuF6KGM6f"
+      "logoURI": "ipfs://QmXt9P6ZeGMcPCfYoEj2r8KdMXQkt71UTPq1wjdKkA6MQt"
     },
     {
       "chainId": 1,
@@ -442,7 +442,7 @@
       "decimals": 18,
       "symbol": "BPT_BAL_WETH",
       "tags": ["underlying"],
-      "logoURI": "ipfs://QmZs8zqWVEm88Vhi4Zm5A4xtUCKUMNDyfYnTrEuF6KGM6f"
+      "logoURI": "ipfs://QmXt9P6ZeGMcPCfYoEj2r8KdMXQkt71UTPq1wjdKkA6MQt"
     },
     {
       "chainId": 1,
@@ -3282,10 +3282,11 @@
     {
       "chainId": 137,
       "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-      "name": "agEUR",
+      "name": "EURA (previously agEUR)",
       "decimals": 18,
-      "symbol": "agEUR",
-      "tags": ["underlying"]
+      "symbol": "EURA",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmcoURPK859RCJkYP5XurPChSg5nz2ofrbXWVeHhBzRz1e"
     },
     {
       "chainId": 137,
@@ -3294,6 +3295,7 @@
       "decimals": 18,
       "symbol": "aPolAGEUR",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmbQ5DiG6jcJuSn64ReDTmX8dHhwq77tJ1YJbGG1MswTvv",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4"
@@ -3306,6 +3308,7 @@
       "decimals": 18,
       "symbol": "stataPolAGEUR",
       "tags": ["aaveV3", "stataToken"],
+      "logoURI": "ipfs://QmaXZuufZKnVa9hdoJG12vPfdfP6oyRKqAGR5Ghwpk3ZDF",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
@@ -4024,8 +4027,7 @@
       "name": "AGEUR",
       "decimals": 18,
       "symbol": "AGEUR",
-      "tags": ["underlying"],
-      "logoURI": "ipfs://QmS8gdLAHvXQMDyjZmpK8Ex9fPXX3xb2sMtuHgnNMrTo52"
+      "tags": ["underlying"]
     },
     {
       "chainId": 80001,
@@ -4034,7 +4036,6 @@
       "decimals": 18,
       "symbol": "aPolAGEUR",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "ipfs://QmR8p1PkNMgVcTRXFg94iZuJ4Lk5NvbqavJ2aNZfxP8PLB",
       "extensions": {
         "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F"
@@ -4047,7 +4048,6 @@
       "decimals": 18,
       "symbol": "stataPolAGEUR",
       "tags": ["aaveV3", "stataToken"],
-      "logoURI": "ipfs://Qmaz2g7Prwy5y21QFFVAQkjvV5XDTjBeLvMn5psLoWhtmn",
       "extensions": {
         "pool": "0xcC6114B983E4Ed2737E9BD3961c9924e6216c704",
         "underlying": "0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F",
@@ -7369,5 +7369,5 @@
     }
   ],
   "version": { "major": 3, "minor": 0, "patch": 13 },
-  "timestamp": "2024-03-14T15:22:54.628Z"
+  "timestamp": "2024-03-14T15:34:02.648Z"
 }
