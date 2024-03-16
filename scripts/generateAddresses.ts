@@ -29,6 +29,7 @@ import {
   polygonProtoV3,
 } from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {celoProtoV3} from './configs/pools/celo';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -57,9 +58,11 @@ import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {scrollAddresses} from './configs/networks/scroll';
 import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
+import {celoAddresses} from './configs/networks/celo';
 import {governanceConfigScroll} from './configs/governance/scroll';
 import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 import {generateTokenList} from './generator/generateTokenList';
+import {governanceConfigCelo} from './configs/governance/celo';
 
 async function main() {
   // cleanup ts artifacts
@@ -88,6 +91,7 @@ async function main() {
       governanceConfigGnosis,
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
+      governanceConfigCelo,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v2LibraryNames = await Promise.all(
@@ -116,6 +120,7 @@ async function main() {
       gnosisProtoV3,
       polygonZkEvmProtoV3,
       bnbProtoV3,
+      celoProtoV3,
       arbitrumProtoV3,
       arbitrumSepoliaProtoV3,
       optimismProtoV3,
@@ -146,6 +151,7 @@ async function main() {
     bnbAddresses,
     scrollAddresses,
     polygonZkEvmAddresses,
+    celoAddresses,
     sepoliaAddresses,
     mumbaiAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
