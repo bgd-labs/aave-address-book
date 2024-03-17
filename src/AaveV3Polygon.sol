@@ -600,6 +600,9 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x642a8DAcC59b73491Dcaa3BCeF046D660901fCc1
   address internal constant USDCn_INTEREST_RATE_STRATEGY =
     0x642a8DAcC59b73491Dcaa3BCeF046D660901fCc1;
+
+  // https://polygonscan.com/address/0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19
+  address internal constant USDCn_STATA_TOKEN = 0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19;
 }
 
 library AaveV3PolygonEModes {
