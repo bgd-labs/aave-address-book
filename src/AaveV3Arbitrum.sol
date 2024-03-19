@@ -124,8 +124,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
   address internal constant DAI_S_TOKEN = 0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B;
 
-  // https://arbiscan.io/address/0xc5C8E77B397E531B8EC06BFb0048328B30E9eCfB
-  address internal constant DAI_ORACLE = 0xc5C8E77B397E531B8EC06BFb0048328B30E9eCfB;
+  // https://arbiscan.io/address/0x4a838a3Dac6633bB1fd932B6f356DecFCAf7803D
+  address internal constant DAI_ORACLE = 0x4a838a3Dac6633bB1fd932B6f356DecFCAf7803D;
 
   // https://arbiscan.io/address/0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237;
@@ -171,8 +171,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x307ffe186F84a3bc2613D1eA417A5737D69A7007
   address internal constant USDC_S_TOKEN = 0x307ffe186F84a3bc2613D1eA417A5737D69A7007;
 
-  // https://arbiscan.io/address/0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3
-  address internal constant USDC_ORACLE = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
+  // https://arbiscan.io/address/0xDe25a88F87FEd9F8999fAbF6729dCB121893623C
+  address internal constant USDC_ORACLE = 0xDe25a88F87FEd9F8999fAbF6729dCB121893623C;
 
   // https://arbiscan.io/address/0x642a8DAcC59b73491Dcaa3BCeF046D660901fCc1
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -243,8 +243,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x70eFfc565DB6EEf7B927610155602d31b670e802
   address internal constant USDT_S_TOKEN = 0x70eFfc565DB6EEf7B927610155602d31b670e802;
 
-  // https://arbiscan.io/address/0x3f3f5dF88dC9F13eac63DF89EC16ef6e7E25DdE7
-  address internal constant USDT_ORACLE = 0x3f3f5dF88dC9F13eac63DF89EC16ef6e7E25DdE7;
+  // https://arbiscan.io/address/0x84dC1C52D7C340AA54B4e8799FBB31C3D28E67aD
+  address internal constant USDT_ORACLE = 0x84dC1C52D7C340AA54B4e8799FBB31C3D28E67aD;
 
   // https://arbiscan.io/address/0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237
   address internal constant USDT_INTEREST_RATE_STRATEGY =
@@ -315,8 +315,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x08Cb71192985E936C7Cd166A8b268035e400c3c3
   address internal constant wstETH_S_TOKEN = 0x08Cb71192985E936C7Cd166A8b268035e400c3c3;
 
-  // https://arbiscan.io/address/0x945fD405773973d286De54E44649cc0d9e264F78
-  address internal constant wstETH_ORACLE = 0x945fD405773973d286De54E44649cc0d9e264F78;
+  // https://arbiscan.io/address/0x87fE1503beFBF98C35c7526B0c488d950F822C0F
+  address internal constant wstETH_ORACLE = 0x87fE1503beFBF98C35c7526B0c488d950F822C0F;
 
   // https://arbiscan.io/address/0x4b8D3277d49E114C8F2D6E0B2eD310e29226fe16
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
@@ -339,8 +339,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841
   address internal constant MAI_S_TOKEN = 0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841;
 
-  // https://arbiscan.io/address/0x59644ec622243878d1464A9504F9e9a31294128a
-  address internal constant MAI_ORACLE = 0x59644ec622243878d1464A9504F9e9a31294128a;
+  // https://arbiscan.io/address/0x7a7cE08a1057723CCEDeA2462407427Ae33FFEb2
+  address internal constant MAI_ORACLE = 0x7a7cE08a1057723CCEDeA2462407427Ae33FFEb2;
 
   // https://arbiscan.io/address/0xc77576b02D74BBF9CdC26F3B86FD09d134416df2
   address internal constant MAI_INTEREST_RATE_STRATEGY = 0xc77576b02D74BBF9CdC26F3B86FD09d134416df2;
@@ -362,8 +362,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc
   address internal constant rETH_S_TOKEN = 0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc;
 
-  // https://arbiscan.io/address/0x04c28D6fE897859153eA753f986cc249Bf064f71
-  address internal constant rETH_ORACLE = 0x04c28D6fE897859153eA753f986cc249Bf064f71;
+  // https://arbiscan.io/address/0x256f33FC0110B1297f78f48524631D30B752480D
+  address internal constant rETH_ORACLE = 0x256f33FC0110B1297f78f48524631D30B752480D;
 
   // https://arbiscan.io/address/0xC82dF96432346cFb632473eB619Db3B8AC280234
   address internal constant rETH_INTEREST_RATE_STRATEGY =
@@ -386,8 +386,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xa5e408678469d23efDB7694b1B0A85BB0669e8bd
   address internal constant LUSD_S_TOKEN = 0xa5e408678469d23efDB7694b1B0A85BB0669e8bd;
 
-  // https://arbiscan.io/address/0x0411D28c94d85A36bC72Cb0f875dfA8371D8fFfF
-  address internal constant LUSD_ORACLE = 0x0411D28c94d85A36bC72Cb0f875dfA8371D8fFfF;
+  // https://arbiscan.io/address/0x341B110bDF665A20F0D5f84A92FcAF5EbeEBC629
+  address internal constant LUSD_ORACLE = 0x341B110bDF665A20F0D5f84A92FcAF5EbeEBC629;
 
   // https://arbiscan.io/address/0xC0B875907514131C2Fd43f0FBf59EdaB84C7e260
   address internal constant LUSD_INTEREST_RATE_STRATEGY =
@@ -410,8 +410,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a
   address internal constant USDCn_S_TOKEN = 0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a;
 
-  // https://arbiscan.io/address/0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3
-  address internal constant USDCn_ORACLE = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
+  // https://arbiscan.io/address/0xDe25a88F87FEd9F8999fAbF6729dCB121893623C
+  address internal constant USDCn_ORACLE = 0xDe25a88F87FEd9F8999fAbF6729dCB121893623C;
 
   // https://arbiscan.io/address/0x06B1Ec378618EA736a65395eA5CAB69A2410493B
   address internal constant USDCn_INTEREST_RATE_STRATEGY =
@@ -434,8 +434,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB
   address internal constant FRAX_S_TOKEN = 0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB;
 
-  // https://arbiscan.io/address/0x0809E3d38d1B4214958faf06D8b1B1a2b73f2ab8
-  address internal constant FRAX_ORACLE = 0x0809E3d38d1B4214958faf06D8b1B1a2b73f2ab8;
+  // https://arbiscan.io/address/0x06919EB75Bd6BA817D38CC70C1CA588ac7a01C10
+  address internal constant FRAX_ORACLE = 0x06919EB75Bd6BA817D38CC70C1CA588ac7a01C10;
 
   // https://arbiscan.io/address/0x2402C25e7E45b1466c53Ef7766AAd878A4CbC237
   address internal constant FRAX_INTEREST_RATE_STRATEGY =

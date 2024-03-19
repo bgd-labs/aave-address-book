@@ -132,8 +132,8 @@ library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x59F359aA263f7Ac09876E869AF1F75b558904ed4
   address internal constant USDC_S_TOKEN = 0x59F359aA263f7Ac09876E869AF1F75b558904ed4;
 
-  // https://scrollscan.com/address/0x43d12Fb3AfCAd5347fA764EeAB105478337b7200
-  address internal constant USDC_ORACLE = 0x43d12Fb3AfCAd5347fA764EeAB105478337b7200;
+  // https://scrollscan.com/address/0x427Fd98dbD1DbC2D4e792350caBe7c9665F35bee
+  address internal constant USDC_ORACLE = 0x427Fd98dbD1DbC2D4e792350caBe7c9665F35bee;
 
   // https://scrollscan.com/address/0x9205B37978aC983A297dFB53b3f3D2cCC7DDDADa
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -156,8 +156,8 @@ library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x18e3f125ce85e8D65AD2bb4f6b5fff110772A078
   address internal constant wstETH_S_TOKEN = 0x18e3f125ce85e8D65AD2bb4f6b5fff110772A078;
 
-  // https://scrollscan.com/address/0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c
-  address internal constant wstETH_ORACLE = 0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c;
+  // https://scrollscan.com/address/0x4EdAbf45e78363b8Dcd763bBbd05665c6e24975C
+  address internal constant wstETH_ORACLE = 0x4EdAbf45e78363b8Dcd763bBbd05665c6e24975C;
 
   // https://scrollscan.com/address/0xCB032D7e38a10503c0b2F9f7bE8c1A81bBBEe2A8
   address internal constant wstETH_INTEREST_RATE_STRATEGY =

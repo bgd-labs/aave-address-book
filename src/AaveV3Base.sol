@@ -148,8 +148,8 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0xa9dF5c62d16d3f496673F4d736852017b086eCA0
   address internal constant cbETH_S_TOKEN = 0xa9dF5c62d16d3f496673F4d736852017b086eCA0;
 
-  // https://basescan.org/address/0x80f2c02224a2E548FC67c0bF705eBFA825dd5439
-  address internal constant cbETH_ORACLE = 0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
+  // https://basescan.org/address/0x8e11Ad4531826ff47BD8157a2c705F5422Da6A61
+  address internal constant cbETH_ORACLE = 0x8e11Ad4531826ff47BD8157a2c705F5422Da6A61;
 
   // https://basescan.org/address/0x05295489b6aE0d97ae7C49a42989497294F7F428
   address internal constant cbETH_INTEREST_RATE_STRATEGY =
@@ -172,8 +172,8 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654
   address internal constant USDbC_S_TOKEN = 0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654;
 
-  // https://basescan.org/address/0x7e860098F58bBFC8648a4311b374B1D669a2bc6B
-  address internal constant USDbC_ORACLE = 0x7e860098F58bBFC8648a4311b374B1D669a2bc6B;
+  // https://basescan.org/address/0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f
+  address internal constant USDbC_ORACLE = 0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f;
 
   // https://basescan.org/address/0xDBea12F69D3Fcb4Be9FD14dd450AAe2B2a3d4de7
   address internal constant USDbC_INTEREST_RATE_STRATEGY =
@@ -196,8 +196,8 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0xfe742Fa2a84294E8316F05b17c05090Fc68B5105
   address internal constant wstETH_S_TOKEN = 0xfe742Fa2a84294E8316F05b17c05090Fc68B5105;
 
-  // https://basescan.org/address/0x945fD405773973d286De54E44649cc0d9e264F78
-  address internal constant wstETH_ORACLE = 0x945fD405773973d286De54E44649cc0d9e264F78;
+  // https://basescan.org/address/0x56038D3998C42db18ba3B821bD1EbaB9B678e657
+  address internal constant wstETH_ORACLE = 0x56038D3998C42db18ba3B821bD1EbaB9B678e657;
 
   // https://basescan.org/address/0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
@@ -217,8 +217,8 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x03506214379aA86ad1176af71c260278cfa10B38
   address internal constant USDC_S_TOKEN = 0x03506214379aA86ad1176af71c260278cfa10B38;
 
-  // https://basescan.org/address/0x7e860098F58bBFC8648a4311b374B1D669a2bc6B
-  address internal constant USDC_ORACLE = 0x7e860098F58bBFC8648a4311b374B1D669a2bc6B;
+  // https://basescan.org/address/0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f
+  address internal constant USDC_ORACLE = 0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f;
 
   // https://basescan.org/address/0x136848FdaedEB56245bE0e61E28A3CB8c0B45CaA
   address internal constant USDC_INTEREST_RATE_STRATEGY =

@@ -125,8 +125,8 @@ library AaveV3AvalancheAssets {
   // https://snowscan.xyz/address/0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B
   address internal constant DAIe_S_TOKEN = 0xd94112B5B62d53C9402e7A60289c6810dEF1dC9B;
 
-  // https://snowscan.xyz/address/0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300
-  address internal constant DAIe_ORACLE = 0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300;
+  // https://snowscan.xyz/address/0xf82da795727633aFA9BB0f1B08A87c0F6A38723f
+  address internal constant DAIe_ORACLE = 0xf82da795727633aFA9BB0f1B08A87c0F6A38723f;
 
   // https://snowscan.xyz/address/0x6D6D3b7FC50999bf20dE5CC8e0F63AFD18B95f0e
   address internal constant DAIe_INTEREST_RATE_STRATEGY =
@@ -173,8 +173,8 @@ library AaveV3AvalancheAssets {
   // https://snowscan.xyz/address/0x307ffe186F84a3bc2613D1eA417A5737D69A7007
   address internal constant USDC_S_TOKEN = 0x307ffe186F84a3bc2613D1eA417A5737D69A7007;
 
-  // https://snowscan.xyz/address/0xF096872672F44d6EBA71458D74fe67F9a77a23B9
-  address internal constant USDC_ORACLE = 0xF096872672F44d6EBA71458D74fe67F9a77a23B9;
+  // https://snowscan.xyz/address/0xD8277249e871BE9A402fa286C2C5ec16046dC512
+  address internal constant USDC_ORACLE = 0xD8277249e871BE9A402fa286C2C5ec16046dC512;
 
   // https://snowscan.xyz/address/0x3832311560d3B457E9cC35e5b8e06EB167D8c17D
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -245,8 +245,8 @@ library AaveV3AvalancheAssets {
   // https://snowscan.xyz/address/0x70eFfc565DB6EEf7B927610155602d31b670e802
   address internal constant USDt_S_TOKEN = 0x70eFfc565DB6EEf7B927610155602d31b670e802;
 
-  // https://snowscan.xyz/address/0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a
-  address internal constant USDt_ORACLE = 0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a;
+  // https://snowscan.xyz/address/0x39185f2236A6022b682e8BB93C040d125DA093CF
+  address internal constant USDt_ORACLE = 0x39185f2236A6022b682e8BB93C040d125DA093CF;
 
   // https://snowscan.xyz/address/0x6D6D3b7FC50999bf20dE5CC8e0F63AFD18B95f0e
   address internal constant USDt_INTEREST_RATE_STRATEGY =
@@ -317,8 +317,8 @@ library AaveV3AvalancheAssets {
   // https://snowscan.xyz/address/0x08Cb71192985E936C7Cd166A8b268035e400c3c3
   address internal constant sAVAX_S_TOKEN = 0x08Cb71192985E936C7Cd166A8b268035e400c3c3;
 
-  // https://snowscan.xyz/address/0xc9245871D69BF4c36c6F2D15E0D68Ffa883FE1A7
-  address internal constant sAVAX_ORACLE = 0xc9245871D69BF4c36c6F2D15E0D68Ffa883FE1A7;
+  // https://snowscan.xyz/address/0xB2B332f27e4B7305649a228C31Ed9858c5a6bAD9
+  address internal constant sAVAX_ORACLE = 0xB2B332f27e4B7305649a228C31Ed9858c5a6bAD9;
 
   // https://snowscan.xyz/address/0x79a906e8c998d2fb5C5D66d23c4c5416Fe0168D6
   address internal constant sAVAX_INTEREST_RATE_STRATEGY =
@@ -341,8 +341,8 @@ library AaveV3AvalancheAssets {
   // https://snowscan.xyz/address/0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841
   address internal constant FRAX_S_TOKEN = 0x78246294a4c6fBf614Ed73CcC9F8b875ca8eE841;
 
-  // https://snowscan.xyz/address/0xbBa56eF1565354217a3353a466edB82E8F25b08e
-  address internal constant FRAX_ORACLE = 0xbBa56eF1565354217a3353a466edB82E8F25b08e;
+  // https://snowscan.xyz/address/0x6208576378D06ce69A27987b7A524A9B15d499a4
+  address internal constant FRAX_ORACLE = 0x6208576378D06ce69A27987b7A524A9B15d499a4;
 
   // https://snowscan.xyz/address/0x6D6D3b7FC50999bf20dE5CC8e0F63AFD18B95f0e
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
@@ -365,8 +365,8 @@ library AaveV3AvalancheAssets {
   // https://snowscan.xyz/address/0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc
   address internal constant MAI_S_TOKEN = 0x3EF10DFf4928279c004308EbADc4Db8B7620d6fc;
 
-  // https://snowscan.xyz/address/0x5D1F504211c17365CA66353442a74D4435A8b778
-  address internal constant MAI_ORACLE = 0x5D1F504211c17365CA66353442a74D4435A8b778;
+  // https://snowscan.xyz/address/0xCcC55Db26B78a19Dba1beE0066F9c1665575439A
+  address internal constant MAI_ORACLE = 0xCcC55Db26B78a19Dba1beE0066F9c1665575439A;
 
   // https://snowscan.xyz/address/0xD61ca03Eac0352090f45bE50403F7B17d20E11F2
   address internal constant MAI_INTEREST_RATE_STRATEGY = 0xD61ca03Eac0352090f45bE50403F7B17d20E11F2;
