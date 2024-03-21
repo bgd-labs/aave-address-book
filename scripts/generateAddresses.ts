@@ -60,6 +60,7 @@ import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
 import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 import {generateTokenList} from './generator/generateTokenList';
+import {generateAaveV1} from './generator/protocolV1Generator';
 
 async function main() {
   // cleanup ts artifacts
@@ -90,6 +91,7 @@ async function main() {
       governanceConfigPolygonZkEvm,
     ].map((config) => generateGovernanceLibrary(config)),
   );
+  const v1Library = generateAaveV1();
   const v2LibraryNames = await Promise.all(
     [
       mainnetAmmV2Pool,
@@ -158,6 +160,7 @@ async function main() {
 
   const imports = [
     governanceNames,
+    v1Library,
     v2LibraryNames,
     v3LibraryNames,
     networkAddresses,
