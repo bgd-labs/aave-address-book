@@ -87,4 +87,7 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0xb49f677943BC038e9857d61E7d053CaA2C1734C1
   address internal constant EUR_USD_AGGREGATOR = 0xb49f677943BC038e9857d61E7d053CaA2C1734C1;
+
+  // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
+  address internal constant weETH_RATIO_PROVIDER = 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee;
 }
