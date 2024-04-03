@@ -2,7 +2,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {GovernanceV3Ethereum} from './GovernanceV3Ethereum.sol';
+import {GovernanceV3Ethereum} from './GovernanceV3Ethereum.sol';[05:53:51] Running build in Washington, D.C., USA (East) – iad1
+[05:53:51] Cloning github.com/Tranvanlap95/aave-address-book (Branch: 0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520, Commit: 156a29c)
+[05:53:55] Cloning completed: 3.862s
+[05:53:56] Restored build cache
+[05:53:56] Running "vercel build"
+[05:53:57] Vercel CLI 33.6.2
+[05:53:57] Build Completed in /vercel/output [22ms]
+[05:53:57] Deploying outputs...
+[05:53:59] 
+[05:53:59] Deployment completed
+[05:54:00] Uploading build cache [29.00 B]...
+[05:54:00] Build cache uploaded: 438.464ms
 import {GovernanceV3Arbitrum} from './GovernanceV3Arbitrum.sol';
 import {GovernanceV3Avalanche} from './GovernanceV3Avalanche.sol';
 import {GovernanceV3Fuji} from './GovernanceV3Fuji.sol';
