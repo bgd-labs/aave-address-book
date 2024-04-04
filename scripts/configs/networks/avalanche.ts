@@ -13,3 +13,11 @@ export const avalancheAddresses: NetworkAddresses = {
     AAVE_MERKLE_DISTRIBUTOR: '0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E',
   },
 };
+
+export const avalancheFujiAddresses: NetworkAddresses = {
+  name: 'AvaxFuji',
+  chainId: ChainId.fuji,
+  addresses: {
+    GHO_TOKEN: '0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723',
+  },
+};

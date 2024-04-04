@@ -5,4 +5,7 @@ export const TRANSPARENT_PROXY_FACTORY = '0xD90f09Ea5eE893b8c0564719E855f1CF0455
 // https://sepolia.basescan.org/address/0xF9e48edc704BDF494309cA457BCea4c0696f591d
 export const PROXY_ADMIN = '0xF9e48edc704BDF494309cA457BCea4c0696f591d';
 
+// https://sepolia.basescan.org/address/0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb
+export const GHO_TOKEN = '0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb';
+
 export const CHAIN_ID = 84532;

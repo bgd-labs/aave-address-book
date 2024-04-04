@@ -46,6 +46,7 @@ import {AaveV3Fantom} from './AaveV3Fantom.sol';
 import {MiscArbitrum} from './MiscArbitrum.sol';
 import {MiscArbitrumSepolia} from './MiscArbitrumSepolia.sol';
 import {MiscAvalanche} from './MiscAvalanche.sol';
+import {MiscAvaxFuji} from './MiscAvaxFuji.sol';
 import {MiscBase} from './MiscBase.sol';
 import {MiscBaseSepolia} from './MiscBaseSepolia.sol';
 import {MiscEthereum} from './MiscEthereum.sol';

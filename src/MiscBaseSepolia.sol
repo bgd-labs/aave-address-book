@@ -8,4 +8,7 @@ library MiscBaseSepolia {
 
   // https://sepolia.basescan.org/address/0xF9e48edc704BDF494309cA457BCea4c0696f591d
   address internal constant PROXY_ADMIN = 0xF9e48edc704BDF494309cA457BCea4c0696f591d;
+
+  // https://sepolia.basescan.org/address/0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb
+  address internal constant GHO_TOKEN = 0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb;
 }

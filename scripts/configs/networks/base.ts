@@ -25,5 +25,6 @@ export const baseSepoliaAddresses: NetworkAddresses = {
   addresses: {
     TRANSPARENT_PROXY_FACTORY: '0xd90f09ea5ee893b8c0564719e855f1cf0455d894',
     PROXY_ADMIN: '0xF9e48edc704BDF494309cA457BCea4c0696f591d',
+    GHO_TOKEN:'0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb'
   },
 };
