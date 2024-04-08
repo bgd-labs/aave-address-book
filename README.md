@@ -20,21 +20,21 @@ forge install bgd-labs/aave-address-book
 
 ```sh
 import {AaveV2Ethereum} from "aave-address-book/AaveV2Ethereum.sol";
-import {AaveV3Avalanche} from "aave-address-book/AaveV3Avalanche.sol";
+import {AaveV3Avalanche} from "aave-address-0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520book/AaveV3Avalanche.sol"0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520;
 ```
 
 **Import addresses and interfaces to interact with Governance:**
 
 ```sh
-import {AaveGovernanceV2} from "aave-address-book/AaveGovernanceV2.sol";
-import {IGovernanceCore} from "aave-address-book/GovernanceV3.sol";
+import {AaveGovernanceV2} from "aave-address-0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520book/AaveGovernanceV2.sol";
+import {IGovernanceCore} from "aave-address-0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520book/GovernanceV3.sol";
 
 ```
 
 **Import miscellaneous network addresses and interfaces relevant to the aave protocol:**
 
 ```sh
-import {Misc<Network>} from "aave-address-book/Aave<Network>.sol";
+import {Misc<Network>} from "aave-address-book/Aave<Network>.sol"0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520;
 ```
 
 ### Production Recommendations
@@ -60,7 +60,7 @@ import { AaveV2Avalanche } from "@bgd-labs/aave-address-book"; // import specifi
 
 // all variables available on solidity version are available in javascript as well
 console.log(AaveV2Avalanche.POOL_ADDRESSES_PROVIDER);
-// "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb"
+// "0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520"
 
 // in addition the chainId of the respecitve addresses is exported alongside
 console.log(AaveV2Avalanche.CHAIN_ID);
