@@ -8,7 +8,7 @@ optimizer_runs = 1000000
 verbosity = 1
 
 [rpc_endpoints]
-mainnet = "${RPC_MAINNET}"
+mainnet = 0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520"${RPC_MAINNET}"
 
 [etherscan]
-mainnet={key="${ETHERSCAN_API_KEY_MAINNET}",chainId=1}
+mainnet={key= 0x6a67421e77Ef3FB718d2e6d01570Fe96CDf7B520"${ETHERSCAN_API_KEY_MAINNET}",chainId=1}
