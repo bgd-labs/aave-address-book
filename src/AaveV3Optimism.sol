@@ -222,9 +222,9 @@ library AaveV3OptimismAssets {
   // https://optimistic.etherscan.io/address/0x13e3Ee699D1909E989722E753853AE30b17e08c5
   address internal constant WETH_ORACLE = 0x13e3Ee699D1909E989722E753853AE30b17e08c5;
 
-  // https://optimistic.etherscan.io/address/0xd00655ED65edE44354F54A23d46DCbd7ba0727dD
+  // https://optimistic.etherscan.io/address/0x16F9bBeE415e519F184Fe1c09d653C6567e4eb2f
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xd00655ED65edE44354F54A23d46DCbd7ba0727dD;
+    0x16F9bBeE415e519F184Fe1c09d653C6567e4eb2f;
 
   // https://optimistic.etherscan.io/address/0x98d69620C31869fD4822ceb6ADAB31180475FD37
   address internal constant WETH_STATA_TOKEN = 0x98d69620C31869fD4822ceb6ADAB31180475FD37;
