@@ -136,9 +136,9 @@ library AaveV2AvalancheAssets {
   // https://snowscan.xyz/address/0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300
   address internal constant DAIe_ORACLE = 0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300;
 
-  // https://snowscan.xyz/address/0xa7C0f85c626761eDD0875549aD09E8d3f5446695
+  // https://snowscan.xyz/address/0x7e7B8d96C08881c3e1F506E3a81baE759aeFacA7
   address internal constant DAIe_INTEREST_RATE_STRATEGY =
-    0xa7C0f85c626761eDD0875549aD09E8d3f5446695;
+    0x7e7B8d96C08881c3e1F506E3a81baE759aeFacA7;
 
   // https://snowscan.xyz/address/0xc7198437980c041c805A1EDcbA50c1Ce5db95118
   address internal constant USDTe_UNDERLYING = 0xc7198437980c041c805A1EDcbA50c1Ce5db95118;
@@ -157,9 +157,9 @@ library AaveV2AvalancheAssets {
   // https://snowscan.xyz/address/0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a
   address internal constant USDTe_ORACLE = 0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a;
 
-  // https://snowscan.xyz/address/0xa7C0f85c626761eDD0875549aD09E8d3f5446695
+  // https://snowscan.xyz/address/0x7e7B8d96C08881c3e1F506E3a81baE759aeFacA7
   address internal constant USDTe_INTEREST_RATE_STRATEGY =
-    0xa7C0f85c626761eDD0875549aD09E8d3f5446695;
+    0x7e7B8d96C08881c3e1F506E3a81baE759aeFacA7;
 
   // https://snowscan.xyz/address/0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664
   address internal constant USDCe_UNDERLYING = 0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664;
@@ -178,9 +178,9 @@ library AaveV2AvalancheAssets {
   // https://snowscan.xyz/address/0xF096872672F44d6EBA71458D74fe67F9a77a23B9
   address internal constant USDCe_ORACLE = 0xF096872672F44d6EBA71458D74fe67F9a77a23B9;
 
-  // https://snowscan.xyz/address/0xa7C0f85c626761eDD0875549aD09E8d3f5446695
+  // https://snowscan.xyz/address/0xb1f13B58D6a3B1aEdB211Db58D9e42d28D09DbF4
   address internal constant USDCe_INTEREST_RATE_STRATEGY =
-    0xa7C0f85c626761eDD0875549aD09E8d3f5446695;
+    0xb1f13B58D6a3B1aEdB211Db58D9e42d28D09DbF4;
 
   // https://snowscan.xyz/address/0x63a72806098Bd3D9520cC43356dD78afe5D386D9
   address internal constant AAVEe_UNDERLYING = 0x63a72806098Bd3D9520cC43356dD78afe5D386D9;
