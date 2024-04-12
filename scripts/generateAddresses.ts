@@ -47,7 +47,7 @@ import {governanceConfigGnosis} from './configs/governance/gnosis';
 import {baseAddresses, baseSepoliaAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses, arbitrumSepoliaAddresses} from './configs/networks/arbitrum';
-import {avalancheAddresses, avalancheFujiAddresses} from './configs/networks/avalanche';
+import {avalancheAddresses} from './configs/networks/avalanche';
 import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
 import {mumbaiAddresses, polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
@@ -136,7 +136,6 @@ async function main() {
     arbitrumAddresses,
     arbitrumSepoliaAddresses,
     avalancheAddresses,
-    avalancheFujiAddresses,
     baseAddresses,
     baseSepoliaAddresses,
     ethereumAddresses,
