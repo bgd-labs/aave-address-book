@@ -29,10 +29,7 @@ export function generateNetworkAddresses(config: NetworkAddresses<any>) {
   fs.writeFileSync(
     `./src/ts/${name}.ts`,
     prefixWithGeneratedWarning(
-      generateJsConstants({
-        chainId: config.chainId,
-        addresses: {...config.addresses, CHAIN_ID: {value: config.chainId, type: 'uint256'}},
-      }).join('\n'),
+      generateJsConstants({chainId: config.chainId, addresses: config.addresses}).join('\n'),
     ),
   );
   return {

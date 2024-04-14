@@ -17,10 +17,4 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb
   address internal constant PROTOCOL_GUARDIAN = 0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb;
-
-  // https://arbiscan.io/address/0xB1552C5e96B312d0Bf8b554186F846C40614a540
-  address internal constant wstETH_stETH_AGGREGATOR = 0xB1552C5e96B312d0Bf8b554186F846C40614a540;
-
-  // https://arbiscan.io/address/0xF3272CAfe65b190e76caAF483db13424a3e23dD2
-  address internal constant rETH_ETH_AGGREGATOR = 0xF3272CAfe65b190e76caAF483db13424a3e23dD2;
 }

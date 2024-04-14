@@ -1,6 +1,7 @@
 import {Hex, zeroAddress} from 'viem';
 import {ReserveData} from '../configs/types';
 import {generateSolidityConstants, wrapIntoSolidityLibrary} from './utils';
+import {ChainId} from './chains';
 
 /**
  * As symbols are used as variable name in Solidity and Javascript there are certain characters that are not allowed and should be replaced.
@@ -51,14 +52,13 @@ export function fixSymbol(symbol: string, _underlying: string) {
       return 'BPT_BAL_WETH';
     case '0xaf88d065e77c8cc2239327c5edb3a432268e5831':
     case '0x0b2c639c533813f4aa9d7837caf62653d097ff85':
-    case '0x3c499c542cef5e3811e1192ce70d8cc03d5c3359': // polygon
       return 'USDCn';
   }
   return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_');
 }
 
 export function generateAssetsLibrary(
-  chainId: number,
+  chainId: ChainId,
   reservesData: ReserveData[],
   libraryName: string,
 ) {
@@ -73,7 +73,7 @@ export function generateAssetsLibrary(
       [`${symbol}_ORACLE`]: rest.ORACLE,
       [`${symbol}_INTEREST_RATE_STRATEGY`]: rest.INTEREST_RATE_STRATEGY,
     };
-    if (rest.STATA_TOKEN && rest.STATA_TOKEN !== zeroAddress)
+    if (rest.STATA_TOKEN && rest.STATA_TOKEN != zeroAddress)
       addresses[`${symbol}_STATA_TOKEN`] = rest.STATA_TOKEN;
     return addresses;
   });
@@ -82,8 +82,8 @@ export function generateAssetsLibrary(
     (acc, {symbol: _symbol, ...rest}) => {
       const symbol = fixSymbol(_symbol, rest.UNDERLYING);
       acc[symbol] = rest;
-      if (rest.STATA_TOKEN && rest.STATA_TOKEN == zeroAddress) {
-        delete acc[symbol].STATA_TOKEN;
+      if (rest.STATA_TOKEN && rest.STATA_TOKEN != zeroAddress) {
+        acc[symbol].STATA_TOKEN = rest.STATA_TOKEN;
       }
       return acc;
     },

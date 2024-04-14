@@ -205,7 +205,7 @@ export const IExecutorWithTimelock_ABI = [
       {
         name: 'governance',
         type: 'address',
-        internalType: 'address',
+        internalType: 'contract IAaveGovernanceV2',
       },
       {
         name: 'proposalId',

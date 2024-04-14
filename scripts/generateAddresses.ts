@@ -1,34 +1,35 @@
 import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
-import {governanceConfigMainnet} from './configs/governance/ethereum';
-import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';
+import {governanceConfigMainnet, governanceConfigGoerli} from './configs/governance/ethereum';
+import {arbitrumGoerliProtoV3, arbitrumProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
   avalancheProtoV3,
   fujiProtoV2,
   fujiProtoV3,
 } from './configs/pools/avalanche';
-import {baseProtoV3, baseSepoliaProtoV3} from './configs/pools/base';
+import {baseProtoV3} from './configs/pools/base';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
   mainnetArcV2Pool,
   mainnetProtoV2Pool,
+  goerliProtoV2Pool,
   sepoliaProtoV3,
+  goerliGHOV3Pool,
 } from './configs/pools/ethereum';
 import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
 import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
-import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
-import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
+import {optimismGoerliProtoV3, optimismProtoV3} from './configs/pools/optimism';
 import {
   mumbaiProtoV2,
   mumbaiProtoV3,
   polygonProtoV2,
   polygonProtoV3,
 } from './configs/pools/polygon';
-import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {scrollAlphaProtoV3, scrollSepoliaProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -44,30 +45,24 @@ import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
-import {baseAddresses, baseSepoliaAddresses} from './configs/networks/base';
+import {baseAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
-import {arbitrumAddresses, arbitrumSepoliaAddresses} from './configs/networks/arbitrum';
+import {arbitrumAddresses} from './configs/networks/arbitrum';
 import {avalancheAddresses} from './configs/networks/avalanche';
 import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
 import {mumbaiAddresses, polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
-import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/optimism';
+import {optimismAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
-import {scrollAddresses} from './configs/networks/scroll';
-import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
-import {governanceConfigScroll} from './configs/governance/scroll';
-import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
-import {generateTokenList} from './generator/generateTokenList';
-import {generateAaveV1} from './generator/protocolV1Generator';
 
 async function main() {
   // cleanup ts artifacts
   if (existsSync('./src/ts')) {
     const files = readdirSync('./src/ts');
     for (const file of files) {
-      if (file !== 'abis' && file !== 'AaveV3Harmony.ts') rmSync(`./src/ts/${file}`);
+      if (file !== 'abis') rmSync(`./src/ts/${file}`);
     }
   } else {
     mkdirSync('./src/ts');
@@ -83,15 +78,13 @@ async function main() {
       governanceConfigOptimism,
       governanceConfigPolygon,
       governanceConfigMumbai,
+      governanceConfigGoerli,
       governanceConfigMetis,
       governanceConfigBase,
       governanceConfigBNB,
       governanceConfigGnosis,
-      governanceConfigScroll,
-      governanceConfigPolygonZkEvm,
     ].map((config) => generateGovernanceLibrary(config)),
   );
-  const v1Library = generateAaveV1();
   const v2LibraryNames = await Promise.all(
     [
       mainnetAmmV2Pool,
@@ -99,55 +92,47 @@ async function main() {
       mainnetProtoV2Pool,
       polygonProtoV2,
       mumbaiProtoV2,
+      goerliProtoV2Pool,
       fujiProtoV2,
       avalancheProtoV2,
     ].map((config) => generateProtocolV2Library(config)),
   );
-
   const v3LibraryNames = await Promise.all(
     [
       mainnetProtoV3Pool,
       sepoliaProtoV3,
+      goerliGHOV3Pool,
       polygonProtoV3,
       mumbaiProtoV3,
       avalancheProtoV3,
       fujiProtoV3,
       baseProtoV3,
-      baseSepoliaProtoV3,
       metisProtoV3,
       gnosisProtoV3,
-      polygonZkEvmProtoV3,
       bnbProtoV3,
+      arbitrumGoerliProtoV3,
       arbitrumProtoV3,
-      arbitrumSepoliaProtoV3,
+      optimismGoerliProtoV3,
       optimismProtoV3,
-      optimismSepoliaProtoV3,
-      scrollProtoV3,
+      scrollAlphaProtoV3,
       scrollSepoliaProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
-      // harmonyProtoV3,
+      harmonyProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
 
-  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
-
   const networkAddresses = [
     arbitrumAddresses,
-    arbitrumSepoliaAddresses,
     avalancheAddresses,
     baseAddresses,
-    baseSepoliaAddresses,
     ethereumAddresses,
     fantomAddresses,
     optimismAddresses,
-    optimismSepoliaAddresses,
     polygonAddresses,
     metisAddresses,
     gnosisAddresses,
     bnbAddresses,
-    scrollAddresses,
-    polygonZkEvmAddresses,
     sepoliaAddresses,
     mumbaiAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
@@ -160,20 +145,15 @@ async function main() {
 
   const imports = [
     governanceNames,
-    v1Library,
     v2LibraryNames,
     v3LibraryNames,
     networkAddresses,
     govImports,
     smImports,
-    tokenListImports,
     abis,
   ].flat();
 
-  const jsExports = [
-    ...imports.map((f) => f.js).flat(),
-    "export * as AaveV3Harmony from './AaveV3Harmony';",
-  ];
+  const jsExports = imports.map((f) => f.js).flat();
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
 

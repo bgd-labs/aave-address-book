@@ -1,11 +1,11 @@
-import {Client, Hex, getAddress, zeroAddress} from 'viem';
+import {Hex, PublicClient, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
-import {getStorageAt} from 'viem/actions';
+import {ChainId} from './chains';
+import {RPC_PROVIDERS} from './clients';
 
-function getExplorerLink(chainId: number, address: Hex) {
-  const client = CHAIN_ID_CLIENT_MAP[chainId];
-  return `${client.chain?.blockExplorers?.default.url}/address/${getAddress(address)}`;
+function getExplorerLink(chainId: ChainId, address: Hex) {
+  const publicClient = RPC_PROVIDERS[chainId];
+  return `${publicClient.chain?.blockExplorers?.default.url}/address/${getAddress(address)}`;
 }
 
 export function prefixWithPragma(code: string) {
@@ -26,7 +26,7 @@ export function wrapIntoSolidityLibrary(code: string[], libraryName: string) {
 }
 
 export function addressInfoToSolidityLibraryConstant(
-  chainId: number,
+  chainId: ChainId,
   key: string,
   entry: AddressInfo,
 ) {
@@ -53,19 +53,15 @@ export function generateSolidityConstants({
   chainId,
   addresses,
 }: {
-  chainId: number;
+  chainId: ChainId;
   addresses: Addresses;
 }) {
-  return Object.keys(addresses)
-    .filter((key) =>
-      typeof addresses[key] !== 'object'
-        ? addresses[key] !== zeroAddress
-        : addresses[key].value !== zeroAddress,
-    )
-    .map((key) => addressInfoToSolidityLibraryConstant(chainId, key, addresses[key]));
+  return Object.keys(addresses).map((key) =>
+    addressInfoToSolidityLibraryConstant(chainId, key, addresses[key]),
+  );
 }
 
-export function addressToJsConstant(chainId: number, key: string, entry: AddressInfo) {
+export function addressToJsConstant(chainId: ChainId, key: string, entry: AddressInfo) {
   if (typeof entry === 'object') {
     if (entry.type === 'uint256') {
       return `export const ${key} = ${entry.value};\n`;
@@ -80,14 +76,14 @@ export function addressToJsConstant(chainId: number, key: string, entry: Address
   return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';\n`;
 }
 
-export function generateJsConstants({chainId, addresses}: {chainId: number; addresses: Addresses}) {
-  return Object.keys(addresses)
-    .filter((key) =>
-      typeof addresses[key] !== 'object'
-        ? addresses[key] !== zeroAddress
-        : addresses[key].value !== zeroAddress,
-    )
-    .map((key) => addressToJsConstant(chainId, key, addresses[key]));
+export function generateJsConstants({
+  chainId,
+  addresses,
+}: {
+  chainId: ChainId;
+  addresses: Addresses;
+}) {
+  return Object.keys(addresses).map((key) => addressToJsConstant(chainId, key, addresses[key]));
 }
 
 export function generateJsObject({addresses}: {addresses: Addresses}) {
@@ -105,8 +101,8 @@ export const bytes32toAddress = (bytes32: Hex) => {
   return getAddress(`0x${bytes32.slice(26)}`);
 };
 
-export const getImplementationStorageSlot = async (client: Client, address: Hex) => {
-  return (await getStorageAt(client, {
+export const getImplementationStorageSlot = async (provider: PublicClient, address: Hex) => {
+  return (await provider.getStorageAt({
     address,
     slot: '0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc',
   })) as Hex;

@@ -48,5 +48,3 @@ export const VOTING_STRATEGY = '0x5642A5A5Ec284B4145563aBF319620204aCCA7f4';
 
 // IDataWarehouse https://etherscan.io/address/0x1699FE9CaDC8a0b6c93E06B62Ab4592a0fFEcF61
 export const DATA_WAREHOUSE = '0x1699FE9CaDC8a0b6c93E06B62Ab4592a0fFEcF61';
-
-export const CHAIN_ID = 1;

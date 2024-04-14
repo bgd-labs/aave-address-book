@@ -11,5 +11,5 @@ export default await defineConfig({
   clean: true,
   splitting: false,
   dts: true,
-  esbuildPlugins: [esbuildPluginFilePathExtensions({cjsExtension: 'js'})],
+  esbuildPlugins: [esbuildPluginFilePathExtensions()],
 });

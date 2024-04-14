@@ -48,4 +48,4 @@ export async function generateABIs(removeExisting: boolean) {
   }
 }
 
-generateABIs(false);
+generateABIs();

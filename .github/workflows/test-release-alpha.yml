@@ -10,25 +10,6 @@ on:
 jobs:
   test:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
-  pkg-size-report:
-    name: Package Size Report
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-          registry-url: "https://registry.npmjs.org"
-          cache: "yarn"
-
-      - name: Package size report
-        uses: pkg-size/action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   release-node-alpha:
     uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
     needs: test

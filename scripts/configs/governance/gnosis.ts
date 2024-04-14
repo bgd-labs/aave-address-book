@@ -1,5 +1,5 @@
 import {GovernanceConfig} from '../types';
-import {ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '../../generator/chains';
 
 export const governanceConfigGnosis: GovernanceConfig = {
   name: 'Gnosis',
