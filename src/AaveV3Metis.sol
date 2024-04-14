@@ -13,15 +13,21 @@ library AaveV3Metis {
   // https://andromeda-explorer.metis.io/address/0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57
   IPool internal constant POOL = IPool(0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57);
 
+  // https://andromeda-explorer.metis.io/address/0x8adB6916Bc161d7E3D46286ADAD3C77eef84Eb5d
+  address internal constant POOL_IMPL = 0x8adB6916Bc161d7E3D46286ADAD3C77eef84Eb5d;
+
   // https://andromeda-explorer.metis.io/address/0x69FEE8F261E004453BE0800BC9039717528645A6
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x69FEE8F261E004453BE0800BC9039717528645A6);
 
+  // https://andromeda-explorer.metis.io/address/0x4e70dFC21Cec67FCC2C1A0D2A093604ac7c9e4fB
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4e70dFC21Cec67FCC2C1A0D2A093604ac7c9e4fB;
+
   // https://andromeda-explorer.metis.io/address/0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e
   IAaveOracle internal constant ORACLE = IAaveOracle(0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e);
 
-  // https://andromeda-explorer.metis.io/address/0xE2566C39db9559D318fB3a00D7B5992CBeeA8567
-  address internal constant PRICE_ORACLE_SENTINEL = 0xE2566C39db9559D318fB3a00D7B5992CBeeA8567;
+  // https://andromeda-explorer.metis.io/address/0x2B5EA1604BAbb7B730120950Cb13951f3525828A
+  address internal constant PRICE_ORACLE_SENTINEL = 0x2B5EA1604BAbb7B730120950Cb13951f3525828A;
 
   // https://andromeda-explorer.metis.io/address/0x99411FC17Ad1B56f49719E3850B2CDcc0f9bBFd8
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
@@ -102,8 +108,8 @@ library AaveV3MetisAssets {
   // https://andromeda-explorer.metis.io/address/0xf1cd706E177F3AEa620c722Dc436B5a2066E4C68
   address internal constant mDAI_S_TOKEN = 0xf1cd706E177F3AEa620c722Dc436B5a2066E4C68;
 
-  // https://andromeda-explorer.metis.io/address/0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1
-  address internal constant mDAI_ORACLE = 0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1;
+  // https://andromeda-explorer.metis.io/address/0xB3721282cd62Ba8F7bB02Cb843F3a34f9e109ef8
+  address internal constant mDAI_ORACLE = 0xB3721282cd62Ba8F7bB02Cb843F3a34f9e109ef8;
 
   // https://andromeda-explorer.metis.io/address/0x4a8de3E62B4a63905f62e56292ECdCfD3593d1c9
   address internal constant mDAI_INTEREST_RATE_STRATEGY =
@@ -150,12 +156,12 @@ library AaveV3MetisAssets {
   // https://andromeda-explorer.metis.io/address/0x81aC531A7CA8Bdaeb571d8d948e29481A35495C8
   address internal constant mUSDC_S_TOKEN = 0x81aC531A7CA8Bdaeb571d8d948e29481A35495C8;
 
-  // https://andromeda-explorer.metis.io/address/0x663855969c85F3BE415807250414Ca9129533a5f
-  address internal constant mUSDC_ORACLE = 0x663855969c85F3BE415807250414Ca9129533a5f;
+  // https://andromeda-explorer.metis.io/address/0xF2acD6aE4fcf662161eA354dA844f224bf91FF8c
+  address internal constant mUSDC_ORACLE = 0xF2acD6aE4fcf662161eA354dA844f224bf91FF8c;
 
-  // https://andromeda-explorer.metis.io/address/0x3B88f83B2b0444F14B6fc904040F648206F551fc
+  // https://andromeda-explorer.metis.io/address/0x463F3F7F0eD356703A9bF2Da3FB95AECBEfe60ce
   address internal constant mUSDC_INTEREST_RATE_STRATEGY =
-    0x3B88f83B2b0444F14B6fc904040F648206F551fc;
+    0x463F3F7F0eD356703A9bF2Da3FB95AECBEfe60ce;
 
   // https://andromeda-explorer.metis.io/address/0xb24451C231C6e6A60aC46f45E98a267caae898f4
   address internal constant mUSDC_STATA_TOKEN = 0xb24451C231C6e6A60aC46f45E98a267caae898f4;
@@ -174,12 +180,12 @@ library AaveV3MetisAssets {
   // https://andromeda-explorer.metis.io/address/0xb4984c08984776074fB9BB78fFE24e9F1E97CD3F
   address internal constant mUSDT_S_TOKEN = 0xb4984c08984776074fB9BB78fFE24e9F1E97CD3F;
 
-  // https://andromeda-explorer.metis.io/address/0x51864b8948Aa5e35aace2BaDaF901D63418A3b9D
-  address internal constant mUSDT_ORACLE = 0x51864b8948Aa5e35aace2BaDaF901D63418A3b9D;
+  // https://andromeda-explorer.metis.io/address/0xD1D7DCBDE72916646A7F8AcE6Ad8C5179D8ddFbB
+  address internal constant mUSDT_ORACLE = 0xD1D7DCBDE72916646A7F8AcE6Ad8C5179D8ddFbB;
 
-  // https://andromeda-explorer.metis.io/address/0x5A1bdAc4eBa2A70D465ef4aDd2f68dBBae183454
+  // https://andromeda-explorer.metis.io/address/0xEDeA87920826abfE28C2D57AC7665B7031f64EfF
   address internal constant mUSDT_INTEREST_RATE_STRATEGY =
-    0x5A1bdAc4eBa2A70D465ef4aDd2f68dBBae183454;
+    0xEDeA87920826abfE28C2D57AC7665B7031f64EfF;
 
   // https://andromeda-explorer.metis.io/address/0xAAea6F041425B813760dA201d08d46487034A266
   address internal constant mUSDT_STATA_TOKEN = 0xAAea6F041425B813760dA201d08d46487034A266;

@@ -13,15 +13,18 @@ library AaveV3Sepolia {
   // https://sepolia.etherscan.io/address/0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951
   IPool internal constant POOL = IPool(0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951);
 
+  // https://sepolia.etherscan.io/address/0x0562453c3DAFBB5e625483af58f4E6D668c44e19
+  address internal constant POOL_IMPL = 0x0562453c3DAFBB5e625483af58f4E6D668c44e19;
+
   // https://sepolia.etherscan.io/address/0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138);
 
+  // https://sepolia.etherscan.io/address/0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32;
+
   // https://sepolia.etherscan.io/address/0x2da88497588bf89281816106C7259e31AF45a663
   IAaveOracle internal constant ORACLE = IAaveOracle(0x2da88497588bf89281816106C7259e31AF45a663);
-
-  // https://sepolia.etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
   // https://sepolia.etherscan.io/address/0x3e9708d80f7B3e43118013075F7e95CE3AB31F31
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
@@ -72,6 +75,9 @@ library AaveV3Sepolia {
 
   // https://sepolia.etherscan.io/address/0xd210dFB43B694430B8d31762B5199e30c31266C8
   address internal constant STATIC_A_TOKEN_FACTORY = 0xd210dFB43B694430B8d31762B5199e30c31266C8;
+
+  // https://sepolia.etherscan.io/address/0x69B9843A16a6E9933125EBD97659BA3CCbE2Ef8A
+  address internal constant UI_GHO_DATA_PROVIDER = 0x69B9843A16a6E9933125EBD97659BA3CCbE2Ef8A;
 }
 
 library AaveV3SepoliaAssets {
@@ -265,6 +271,26 @@ library AaveV3SepoliaAssets {
 
   // https://sepolia.etherscan.io/address/0x72B49a461900e11632C95dfa563e7173438D4e3E
   address internal constant EURS_STATA_TOKEN = 0x72B49a461900e11632C95dfa563e7173438D4e3E;
+
+  // https://sepolia.etherscan.io/address/0xc4bF5CbDaBE595361438F8c6a187bDc330539c60
+  address internal constant GHO_UNDERLYING = 0xc4bF5CbDaBE595361438F8c6a187bDc330539c60;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://sepolia.etherscan.io/address/0xd190eF37dB51Bb955A680fF1A85763CC72d083D4
+  address internal constant GHO_A_TOKEN = 0xd190eF37dB51Bb955A680fF1A85763CC72d083D4;
+
+  // https://sepolia.etherscan.io/address/0x67ae46EF043F7A4508BD1d6B94DB6c33F0915844
+  address internal constant GHO_V_TOKEN = 0x67ae46EF043F7A4508BD1d6B94DB6c33F0915844;
+
+  // https://sepolia.etherscan.io/address/0xdCA691FB9609aB814E59c62d70783da1c056A9b6
+  address internal constant GHO_S_TOKEN = 0xdCA691FB9609aB814E59c62d70783da1c056A9b6;
+
+  // https://sepolia.etherscan.io/address/0x00f7fecFAEbEd9499e1f3f9d04E755a21E5fc47C
+  address internal constant GHO_ORACLE = 0x00f7fecFAEbEd9499e1f3f9d04E755a21E5fc47C;
+
+  // https://sepolia.etherscan.io/address/0x521247B4d0a51E71DE580dA2cBF99EB40a44b3Bf
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x521247B4d0a51E71DE580dA2cBF99EB40a44b3Bf;
 }
 
 library AaveV3SepoliaEModes {

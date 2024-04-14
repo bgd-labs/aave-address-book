@@ -2,6 +2,219 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.25.0](https://github.com/bgd-labs/aave-address-book/compare/v2.24.2...v2.25.0) (2024-03-21)
+
+
+### Features
+
+* add aave v1 ([#409](https://github.com/bgd-labs/aave-address-book/issues/409)) ([c614b39](https://github.com/bgd-labs/aave-address-book/commit/c614b3927fba196393b269d27d93ee71ed4ba485))
+
+## [2.24.2](https://github.com/bgd-labs/aave-address-book/compare/v2.24.1...v2.24.2) (2024-03-14)
+
+
+### Bug Fixes
+
+* add v2 impls ([#404](https://github.com/bgd-labs/aave-address-book/issues/404)) ([90f5416](https://github.com/bgd-labs/aave-address-book/commit/90f5416aa25e806290be6bb125769b83f8f5b273))
+
+## [2.24.1](https://github.com/bgd-labs/aave-address-book/compare/v2.24.0...v2.24.1) (2024-03-13)
+
+
+### Bug Fixes
+
+* remove tokenList ([#402](https://github.com/bgd-labs/aave-address-book/issues/402)) ([ef195f0](https://github.com/bgd-labs/aave-address-book/commit/ef195f0473144453bed9e4ec1d22c4f3b9e41bde))
+
+## [2.24.0](https://github.com/bgd-labs/aave-address-book/compare/v2.23.0...v2.24.0) (2024-03-11)
+
+
+### Features
+
+* add arbitrum sepolia ([#396](https://github.com/bgd-labs/aave-address-book/issues/396)) ([d6124b0](https://github.com/bgd-labs/aave-address-book/commit/d6124b068788491cd2776f119187e9ffb7a5b9ff))
+
+
+### Bug Fixes
+
+* add impls ([#399](https://github.com/bgd-labs/aave-address-book/issues/399)) ([59151e7](https://github.com/bgd-labs/aave-address-book/commit/59151e77a4b359be4f59f20b5db6ce499af36a41))
+
+## [2.23.0](https://github.com/bgd-labs/aave-address-book/compare/v2.22.1...v2.23.0) (2024-03-07)
+
+
+### Features
+
+* add keyboard navigation ([#392](https://github.com/bgd-labs/aave-address-book/issues/392)) ([dcd9526](https://github.com/bgd-labs/aave-address-book/commit/dcd952633b8a94a379d89ae4801521651262bd84))
+* added IBaseAdapter interface ([#394](https://github.com/bgd-labs/aave-address-book/issues/394)) ([85ee922](https://github.com/bgd-labs/aave-address-book/commit/85ee922bc68b2bf986e80720f99a160515690ab6))
+* base sepolia addresses ([#384](https://github.com/bgd-labs/aave-address-book/issues/384)) ([573f481](https://github.com/bgd-labs/aave-address-book/commit/573f481205620c12046c3d784512ab67692a3423))
+* optimism sepolia addresses ([#393](https://github.com/bgd-labs/aave-address-book/issues/393)) ([88ecb79](https://github.com/bgd-labs/aave-address-book/commit/88ecb79822afed57a54a8cc447b26416dfd01707))
+* persist search value in url ([#387](https://github.com/bgd-labs/aave-address-book/issues/387)) ([204361a](https://github.com/bgd-labs/aave-address-book/commit/204361a8860004ad3b26e33095561a70d4a6d1e4))
+
+
+### Bug Fixes
+
+* ignore tokenlist ([#391](https://github.com/bgd-labs/aave-address-book/issues/391)) ([eb407f6](https://github.com/bgd-labs/aave-address-book/commit/eb407f6530dcf6e852a988504f16843ae69f220b))
+* use native replaceState instead of router ([#390](https://github.com/bgd-labs/aave-address-book/issues/390)) ([9afe436](https://github.com/bgd-labs/aave-address-book/commit/9afe436b3b360cc24ce66adbd03a8d1171e8323f))
+* wrap Search in Suspense ([#389](https://github.com/bgd-labs/aave-address-book/issues/389)) ([75d903b](https://github.com/bgd-labs/aave-address-book/commit/75d903b3819eed0212bd644d1a01e4bfe12acf6d))
+
+## [2.22.1](https://github.com/bgd-labs/aave-address-book/compare/v2.22.0...v2.22.1) (2024-02-29)
+
+
+### Bug Fixes
+
+* remove zero addresses ([#385](https://github.com/bgd-labs/aave-address-book/issues/385)) ([568b2c6](https://github.com/bgd-labs/aave-address-book/commit/568b2c6010d7e145227a3d23d8f7454dd50769ec))
+
+## [2.22.0](https://github.com/bgd-labs/aave-address-book/compare/v2.21.1...v2.22.0) (2024-02-28)
+
+
+### Features
+
+* add token icons & remove optimism goerli ([#378](https://github.com/bgd-labs/aave-address-book/issues/378)) ([6435899](https://github.com/bgd-labs/aave-address-book/commit/6435899458adc2f35a3b0f87b68f1a16d9b6112e))
+
+
+### Bug Fixes
+
+* upload ci ([6435899](https://github.com/bgd-labs/aave-address-book/commit/6435899458adc2f35a3b0f87b68f1a16d9b6112e))
+* upload to quicknode ([6435899](https://github.com/bgd-labs/aave-address-book/commit/6435899458adc2f35a3b0f87b68f1a16d9b6112e))
+
+## [2.21.1](https://github.com/bgd-labs/aave-address-book/compare/v2.21.0...v2.21.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* add tokenlist to ts exports ([#376](https://github.com/bgd-labs/aave-address-book/issues/376)) ([bb0acd6](https://github.com/bgd-labs/aave-address-book/commit/bb0acd6062929e299c86fc65b87c6336d7c40d5d))
+
+## [2.21.0](https://github.com/bgd-labs/aave-address-book/compare/v2.20.0...v2.21.0) (2024-02-21)
+
+
+### Features
+
+* add github link ([#370](https://github.com/bgd-labs/aave-address-book/issues/370)) ([ab278d7](https://github.com/bgd-labs/aave-address-book/commit/ab278d7327ee183f7472b5266bb434c2439cefb7))
+* add new abis ([#372](https://github.com/bgd-labs/aave-address-book/issues/372)) ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* add stata for scroll and bnb ([#371](https://github.com/bgd-labs/aave-address-book/issues/371)) ([f84bd69](https://github.com/bgd-labs/aave-address-book/commit/f84bd6992c8bf461ba10538053f85be1e4a22124))
+* update UI, add logo ([#374](https://github.com/bgd-labs/aave-address-book/issues/374)) ([c23a202](https://github.com/bgd-labs/aave-address-book/commit/c23a20229ca21ca5a786050846a1965882700351))
+
+
+### Bug Fixes
+
+* patch list ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* remove gov v2 and strategy are no longer useful ([#367](https://github.com/bgd-labs/aave-address-book/issues/367)) ([1775497](https://github.com/bgd-labs/aave-address-book/commit/17754972fcc15ea4ea15231308af22610f121d83))
+* update tokenlist ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* use proper type ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+* use proper type ([6e89a60](https://github.com/bgd-labs/aave-address-book/commit/6e89a60f1b2ee8b8f2679f6ee49cf48923f53cf1))
+
+## [2.20.0](https://github.com/bgd-labs/aave-address-book/compare/v2.19.0...v2.20.0) (2024-02-18)
+
+
+### Features
+
+* add eur aggregators and pyUSd ([#360](https://github.com/bgd-labs/aave-address-book/issues/360)) ([4050131](https://github.com/bgd-labs/aave-address-book/commit/4050131e6b80c508d42c37b53fb959ac1d08571f))
+* generate tokenlist alongside the repo ([#353](https://github.com/bgd-labs/aave-address-book/issues/353)) ([a1a60f6](https://github.com/bgd-labs/aave-address-book/commit/a1a60f64487e1afbc6390242b1cc10bab131d1b9))
+
+
+### Bug Fixes
+
+* add favicon w/transparent bg ([#363](https://github.com/bgd-labs/aave-address-book/issues/363)) ([80447d8](https://github.com/bgd-labs/aave-address-book/commit/80447d84334c4a5185fc4f5d55e17f99a1c9f8c4))
+* remove arbitrum goerli ([#361](https://github.com/bgd-labs/aave-address-book/issues/361)) ([179f064](https://github.com/bgd-labs/aave-address-book/commit/179f06464c503b39b6715b4382ca4270677ba099))
+* skip update if no changes ([594087e](https://github.com/bgd-labs/aave-address-book/commit/594087e2857b6be3d71361e270b341812e7b5ba6))
+
+## [2.19.0](https://github.com/bgd-labs/aave-address-book/compare/v2.18.1...v2.19.0) (2024-01-30)
+
+
+### Features
+
+* add delegation abis ([#344](https://github.com/bgd-labs/aave-address-book/issues/344)) ([a282f3b](https://github.com/bgd-labs/aave-address-book/commit/a282f3b1706548894197473cc4d9dfbbc97fc5de))
+* gsm addresses ([#342](https://github.com/bgd-labs/aave-address-book/issues/342)) ([541f2ac](https://github.com/bgd-labs/aave-address-book/commit/541f2ac7f0406c55cf47cfc9152065a817647eba))
+
+## [2.18.1](https://github.com/bgd-labs/aave-address-book/compare/v2.18.0...v2.18.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* add chainId to js sm export ([#338](https://github.com/bgd-labs/aave-address-book/issues/338)) ([988ec45](https://github.com/bgd-labs/aave-address-book/commit/988ec4555be7701e63a28229cbd4054a07563c71))
+
+## [2.18.0](https://github.com/bgd-labs/aave-address-book/compare/v2.17.0...v2.18.0) (2024-01-22)
+
+
+### Features
+
+* generate new abis ([#332](https://github.com/bgd-labs/aave-address-book/issues/332)) ([f747345](https://github.com/bgd-labs/aave-address-book/commit/f747345eba0b39a4d8e4aa045b6586d10f1e2446))
+
+
+### Bug Fixes
+
+* scroll addresses ([#336](https://github.com/bgd-labs/aave-address-book/issues/336)) ([f2c544a](https://github.com/bgd-labs/aave-address-book/commit/f2c544a8bfac4d534ce42d93524bdae4eca1119f))
+
+## [2.17.0](https://github.com/bgd-labs/aave-address-book/compare/v2.16.0...v2.17.0) (2024-01-18)
+
+
+### Features
+
+* add stk AAVE wstETH BPTv2 ([#330](https://github.com/bgd-labs/aave-address-book/issues/330)) ([79b1847](https://github.com/bgd-labs/aave-address-book/commit/79b18475bc2375782353916c9c4084861e67fba3))
+
+## [2.16.0](https://github.com/bgd-labs/aave-address-book/compare/v2.15.2...v2.16.0) (2024-01-18)
+
+
+### Features
+
+* Add GHO token address to Aave V3 Sepolia Pool and Arbitrum Sepolia ([#326](https://github.com/bgd-labs/aave-address-book/issues/326)) ([2e2a694](https://github.com/bgd-labs/aave-address-book/commit/2e2a69463e6c0fb9cb878afe5fb239186169f0ec))
+* add stk GGHO ([#328](https://github.com/bgd-labs/aave-address-book/issues/328)) ([3a887dd](https://github.com/bgd-labs/aave-address-book/commit/3a887dd4e39cd04b34b61856f696959e02c2fa0a))
+
+## [2.15.2](https://github.com/bgd-labs/aave-address-book/compare/v2.15.1...v2.15.2) (2024-01-15)
+
+
+### Bug Fixes
+
+* add protocol guardian for scroll ([#323](https://github.com/bgd-labs/aave-address-book/issues/323)) ([06b67e5](https://github.com/bgd-labs/aave-address-book/commit/06b67e52c89993eafebbb9ad6bf91f286b660bed))
+
+## [2.15.1](https://github.com/bgd-labs/aave-address-book/compare/v2.15.0...v2.15.1) (2024-01-15)
+
+
+### Bug Fixes
+
+* patch harmony ([#321](https://github.com/bgd-labs/aave-address-book/issues/321)) ([742f6b3](https://github.com/bgd-labs/aave-address-book/commit/742f6b3f1c1155e1092b14ab6fcc8836ee52c464))
+
+## [2.15.0](https://github.com/bgd-labs/aave-address-book/compare/v2.14.0...v2.15.0) (2024-01-12)
+
+
+### Features
+
+* add polygon zkEVM contracts ([#320](https://github.com/bgd-labs/aave-address-book/issues/320)) ([772807c](https://github.com/bgd-labs/aave-address-book/commit/772807c81dc831b51f942506253c0d90fb03e65c))
+* added scroll contracts ([#307](https://github.com/bgd-labs/aave-address-book/issues/307)) ([a53910d](https://github.com/bgd-labs/aave-address-book/commit/a53910d9b71c6653f23d08443264ad898119b391))
+
+## [2.14.0](https://github.com/bgd-labs/aave-address-book/compare/v2.13.3...v2.14.0) (2024-01-04)
+
+
+### Features
+
+* upgrade weth gateway ([#316](https://github.com/bgd-labs/aave-address-book/issues/316)) ([575eac6](https://github.com/bgd-labs/aave-address-book/commit/575eac6d595d5d15ba5e6ca9192a2f2a5c719022))
+
+## [2.13.3](https://github.com/bgd-labs/aave-address-book/compare/v2.13.2...v2.13.3) (2023-12-23)
+
+
+### Bug Fixes
+
+* resolve regression in commonjs bundling introduced in 2.13.1 ([#314](https://github.com/bgd-labs/aave-address-book/issues/314)) ([d573ee5](https://github.com/bgd-labs/aave-address-book/commit/d573ee52acf0f78c1129efee6b3d360475da9296))
+
+## [2.13.2](https://github.com/bgd-labs/aave-address-book/compare/v2.13.1...v2.13.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* replace rpcs ([#312](https://github.com/bgd-labs/aave-address-book/issues/312)) ([2e1b66e](https://github.com/bgd-labs/aave-address-book/commit/2e1b66e5277e53e15f6774f6c418c2be5221018b))
+* use custom rpcs ([a62c801](https://github.com/bgd-labs/aave-address-book/commit/a62c801d5c24317708e08ca4c93d8658eabbafac))
+
+## [2.13.1](https://github.com/bgd-labs/aave-address-book/compare/v2.13.0...v2.13.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* update packages & run on node 20 ([#308](https://github.com/bgd-labs/aave-address-book/issues/308)) ([2496e82](https://github.com/bgd-labs/aave-address-book/commit/2496e824cad9d15071e78ba557182a7ceeb1ff4b))
+
+## [2.13.0](https://github.com/bgd-labs/aave-address-book/compare/v2.12.0...v2.13.0) (2023-12-04)
+
+
+### Features
+
+* add static a token factory ([#294](https://github.com/bgd-labs/aave-address-book/issues/294)) ([03e04f0](https://github.com/bgd-labs/aave-address-book/commit/03e04f0fd8012ca7cf74c2d7019fd544b8c0aac8))
+* update bridge address ([#295](https://github.com/bgd-labs/aave-address-book/issues/295)) ([c582623](https://github.com/bgd-labs/aave-address-book/commit/c5826233a2427272a88e09dfcc562f1115736327))
+
 ## [2.12.0](https://github.com/bgd-labs/aave-address-book/compare/v2.11.0...v2.12.0) (2023-11-20)
 
 

@@ -5,14 +5,17 @@ export const POOL_ADDRESSES_PROVIDER = '0x4CeDCB57Af02293231BAA9D39354D6BFDFD251
 // IPool https://mumbai.polygonscan.com/address/0xcC6114B983E4Ed2737E9BD3961c9924e6216c704
 export const POOL = '0xcC6114B983E4Ed2737E9BD3961c9924e6216c704';
 
+// https://mumbai.polygonscan.com/address/0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155
+export const POOL_IMPL = '0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155';
+
 // IPoolConfigurator https://mumbai.polygonscan.com/address/0x5C12526EaAc2637fEa2322ee4e389698dBFC3845
 export const POOL_CONFIGURATOR = '0x5C12526EaAc2637fEa2322ee4e389698dBFC3845';
 
+// https://mumbai.polygonscan.com/address/0xe6c0e5085CaebcFD5d8a144636dCc2379b38333F
+export const POOL_CONFIGURATOR_IMPL = '0xe6c0e5085CaebcFD5d8a144636dCc2379b38333F';
+
 // IAaveOracle https://mumbai.polygonscan.com/address/0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8
 export const ORACLE = '0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8';
-
-// https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-export const PRICE_ORACLE_SENTINEL = '0x0000000000000000000000000000000000000000';
 
 // IPoolDataProvider https://mumbai.polygonscan.com/address/0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e';

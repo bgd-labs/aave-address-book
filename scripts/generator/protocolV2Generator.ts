@@ -1,10 +1,12 @@
-import {Hex, PublicClient, getContract} from 'viem';
+import {Hex, Client, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
-import {RPC_PROVIDERS} from './clients';
+import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
+  bytes32toAddress,
   generateJsConstants,
   generateSolidityConstants,
+  getImplementationStorageSlot,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
@@ -20,8 +22,10 @@ import {mainnetAmmV2Pool} from '../configs/pools/ethereum';
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
   POOL: AddressInfo;
+  POOL_IMPL: AddressInfo;
   AAVE_PROTOCOL_DATA_PROVIDER: AddressInfo;
   POOL_CONFIGURATOR: AddressInfo;
+  POOL_CONFIGURATOR_IMPL: AddressInfo;
   ORACLE: AddressInfo;
   LENDING_RATE_ORACLE: AddressInfo;
   POOL_ADMIN: AddressInfo;
@@ -34,7 +38,7 @@ export interface PoolV2Addresses {
 }
 
 async function getAdditionalTokenInfo(
-  publicClient: PublicClient,
+  client: Client,
   pool: Hex,
   reservesData: PoolV2Addresses['reservesData'],
 ): Promise<{
@@ -47,7 +51,7 @@ async function getAdditionalTokenInfo(
     const aTokenContract = getContract({
       address: reservesData[0].A_TOKEN,
       abi: A_TOKEN_V2_ABI,
-      publicClient,
+      client,
     });
     const COLLECTOR = await aTokenContract.read.RESERVE_TREASURY_ADDRESS();
 
@@ -58,14 +62,14 @@ async function getAdditionalTokenInfo(
     const lendingPoolContract = getContract({
       address: pool,
       abi: LENDING_POOL_V2_ABI,
-      publicClient,
+      client,
     });
     const reserves = await lendingPoolContract.read.getReservesList();
     const data = await lendingPoolContract.read.getReserveData([reserves[0]]);
     const aTokenContract = getContract({
       address: data.aTokenAddress,
       abi: A_TOKEN_V2_ABI,
-      publicClient,
+      client,
     });
     const collector = await aTokenContract.read.RESERVE_TREASURY_ADDRESS();
     return {
@@ -75,11 +79,11 @@ async function getAdditionalTokenInfo(
 }
 
 export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addresses> {
-  const publicClient = RPC_PROVIDERS[pool.chainId] as PublicClient;
+  const client = CHAIN_ID_CLIENT_MAP[pool.chainId];
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
     abi: ADDRESS_PROVIDER_V2_ABI,
-    publicClient,
+    client,
   });
   try {
     const [
@@ -106,6 +110,11 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       addressProviderContract.read.getLendingPoolCollateralManager(),
     ]);
 
+    const [POOL_IMPL, POOL_CONFIGURATOR_IMPL] = await Promise.all([
+      getImplementationStorageSlot(client, POOL),
+      getImplementationStorageSlot(client, POOL_CONFIGURATOR),
+    ]);
+
     let reservesData: PoolV2Addresses['reservesData'] = [];
     // workaround, fix before merge
     // didn't find all the ui pool data provider addresses, so currently there are gaps
@@ -113,7 +122,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       const uiPoolDataProvider = getContract({
         address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
         abi: IUiPoolDataProvider_ABI,
-        publicClient,
+        client,
       });
       reservesData = (
         await uiPoolDataProvider.read.getReservesData([pool.POOL_ADDRESSES_PROVIDER])
@@ -131,13 +140,13 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       });
     }
 
-    const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(publicClient, POOL, reservesData);
+    const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(client, POOL, reservesData);
 
     // Note: needed as i didn't find an upto date uipooldataprovider for arc
     const lendingPoolContract = getContract({
       address: POOL,
       abi: LENDING_POOL_V2_ABI,
-      publicClient,
+      client,
     });
     const reserves = await lendingPoolContract.read.getReservesList();
     const data = await lendingPoolContract.read.getReserveData([reserves[0]]);
@@ -148,7 +157,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
     const aTokenContract = getContract({
       address: data.aTokenAddress,
       abi: A_TOKEN_V2_ABI,
-      publicClient,
+      client,
     });
 
     const DEFAULT_INCENTIVES_CONTROLLER = await aTokenContract.read.getIncentivesController();
@@ -158,7 +167,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
       const incentivesControllerContract = getContract({
         address: DEFAULT_INCENTIVES_CONTROLLER,
         abi: INCENTIVES_CONTROLLER_ABI,
-        publicClient,
+        client,
       });
       EMISSION_MANAGER = await incentivesControllerContract.read.EMISSION_MANAGER();
     } catch (e) {
@@ -171,10 +180,12 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
         type: 'ILendingPoolAddressesProvider',
       },
       POOL: {value: POOL, type: 'ILendingPool'},
+      POOL_IMPL: bytes32toAddress(POOL_IMPL),
       POOL_CONFIGURATOR: {
         value: POOL_CONFIGURATOR,
         type: 'ILendingPoolConfigurator',
       },
+      POOL_CONFIGURATOR_IMPL: bytes32toAddress(POOL_CONFIGURATOR_IMPL),
       ORACLE: {
         value: ORACLE,
         type: 'IAaveOracle',
@@ -237,12 +248,11 @@ export async function generateProtocolV2Library(config: PoolConfig) {
   const assetsLibrary = generateAssetsLibrary(config.chainId, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
   appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
-  // appendFileSync(`./src/ts/AaveAddressBook.ts`, `export {${name}} from './${name}';\r\n`);
-  // appendFileSync(
-  //   `./src/ts/AaveAddressBook.ts`,
-  //   `export {${assetsLibraryName}} from './${assetsLibraryName}';\r\n`,
-  // );
   return {
+    pool: (addresses.POOL as any).value,
+    name,
+    reservesData,
+    chainId: config.chainId,
     js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],
   };

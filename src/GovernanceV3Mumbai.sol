@@ -18,9 +18,6 @@ library GovernanceV3Mumbai {
   // https://mumbai.polygonscan.com/address/0x858859CCDDa608941bB64D260a836298c49Ff0C7
   address internal constant EXECUTOR_LVL_1 = 0x858859CCDDa608941bB64D260a836298c49Ff0C7;
 
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant EXECUTOR_LVL_2 = 0x0000000000000000000000000000000000000000;
-
   // https://mumbai.polygonscan.com/address/0x2FD0ea3cF58cB9cD25c2a186E643629198A37600
   IVotingStrategy internal constant VOTING_STRATEGY =
     IVotingStrategy(0x2FD0ea3cF58cB9cD25c2a186E643629198A37600);

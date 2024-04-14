@@ -5,14 +5,17 @@ export const POOL_ADDRESSES_PROVIDER = '0x52A27dC690F8652288194Dd2bc523863eBdEa2
 // IPool https://sepolia-blockscout.scroll.io/address/0x48914C788295b5db23aF2b5F0B3BE775C4eA9440
 export const POOL = '0x48914C788295b5db23aF2b5F0B3BE775C4eA9440';
 
+// https://sepolia-blockscout.scroll.io/address/0xB186894F315133C2396104CAb386C3A0fEC09025
+export const POOL_IMPL = '0xB186894F315133C2396104CAb386C3A0fEC09025';
+
 // IPoolConfigurator https://sepolia-blockscout.scroll.io/address/0x63BB78Fbac521998BD6E33f1a960677c7a1d4F10
 export const POOL_CONFIGURATOR = '0x63BB78Fbac521998BD6E33f1a960677c7a1d4F10';
 
+// https://sepolia-blockscout.scroll.io/address/0xE7560d98a9fdAe4F3b87eb172ae44177A075eeDF
+export const POOL_CONFIGURATOR_IMPL = '0xE7560d98a9fdAe4F3b87eb172ae44177A075eeDF';
+
 // IAaveOracle https://sepolia-blockscout.scroll.io/address/0x4B7C7D2EbcDc1015D35F617596318C15d9d24e59
 export const ORACLE = '0x4B7C7D2EbcDc1015D35F617596318C15d9d24e59';
-
-// https://sepolia-blockscout.scroll.io/address/0x0000000000000000000000000000000000000000
-export const PRICE_ORACLE_SENTINEL = '0x0000000000000000000000000000000000000000';
 
 // IPoolDataProvider https://sepolia-blockscout.scroll.io/address/0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee';

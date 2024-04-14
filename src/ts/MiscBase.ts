@@ -13,3 +13,11 @@ export const CREATE_3_FACTORY = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
 
 // https://basescan.org/address/0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A
 export const PROTOCOL_GUARDIAN = '0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A';
+
+// https://basescan.org/address/0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061
+export const wstETH_stETH_AGGREGATOR = '0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061';
+
+// https://basescan.org/address/0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04
+export const cbETH_ETH_AGGREGATOR = '0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04';
+
+export const CHAIN_ID = 8453;

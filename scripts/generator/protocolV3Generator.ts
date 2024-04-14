@@ -1,4 +1,4 @@
-import {Hex, PublicClient, getContract, zeroAddress} from 'viem';
+import {Hex, Client, getContract, zeroAddress} from 'viem';
 import {AddressInfo, Addresses, PoolConfig, ReserveData} from '../configs/types';
 import {ADDRESS_PROVIDER_V3_ABI} from '../abi/address_provider_v3_abi';
 import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
@@ -6,7 +6,7 @@ import {STATIC_A_TOKEN_FACTORY_ABI} from '../abi/static_a_token_factory_abi';
 import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
 import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
 import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
-import {RPC_PROVIDERS} from './clients';
+import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
   addressOrZero,
@@ -20,14 +20,15 @@ import {
   wrapIntoSolidityLibrary,
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
-import {ChainId} from './chains';
 import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
   POOL: AddressInfo;
+  POOL_IMPL: AddressInfo;
   AAVE_PROTOCOL_DATA_PROVIDER: AddressInfo;
   POOL_CONFIGURATOR: AddressInfo;
+  POOL_CONFIGURATOR_IMPL: AddressInfo;
   ORACLE: AddressInfo;
   PRICE_ORACLE_SENTINEL: AddressInfo;
   ACL_ADMIN: AddressInfo;
@@ -42,7 +43,7 @@ export interface PoolV3Addresses {
 }
 
 async function getAdditionalTokenInfo(
-  publicClient: PublicClient,
+  client: Client,
   pool: PoolConfig,
   reservesData: PoolV3Addresses['reservesData'],
 ): Promise<{
@@ -55,26 +56,26 @@ async function getAdditionalTokenInfo(
     const aTokenContract = getContract({
       address: reservesData[0].A_TOKEN,
       abi: A_TOKEN_V3_ABI,
-      publicClient,
+      client,
     });
     const variableDebtTokenContract = getContract({
       address: reservesData[0].V_TOKEN,
       abi: VARIABLE_DEBT_TOKEN_ABI,
-      publicClient,
+      client,
     });
     const stableDebtTokenContract = getContract({
       address: reservesData[0].S_TOKEN,
       abi: STABLE_DEBT_TOKEN_ABI,
-      publicClient,
+      client,
     });
 
     const [COLLECTOR, aTokenImplSlot, aTokenImplRevision, vTokenImplSlot, sTokenImplSlot] =
       await Promise.all([
         aTokenContract.read.RESERVE_TREASURY_ADDRESS(),
-        getImplementationStorageSlot(publicClient, reservesData[0].A_TOKEN),
+        getImplementationStorageSlot(client, reservesData[0].A_TOKEN),
         aTokenContract.read.ATOKEN_REVISION(),
-        getImplementationStorageSlot(publicClient, reservesData[0].V_TOKEN),
-        getImplementationStorageSlot(publicClient, reservesData[0].S_TOKEN),
+        getImplementationStorageSlot(client, reservesData[0].V_TOKEN),
+        getImplementationStorageSlot(client, reservesData[0].S_TOKEN),
       ]);
     const defaultATokenImplementation = bytes32toAddress(aTokenImplSlot);
 
@@ -116,12 +117,16 @@ async function getAdditionalTokenInfo(
 export async function getPoolV3Addresses(
   pool: PoolConfig,
 ): Promise<PoolV3Addresses & {eModes: Map<number, string>}> {
-  const publicClient: PublicClient = RPC_PROVIDERS[pool.chainId];
+  const client = CHAIN_ID_CLIENT_MAP[pool.chainId];
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
     abi: ADDRESS_PROVIDER_V3_ABI,
-    publicClient,
+    client,
   });
+  if (!client) {
+    console.log(client, pool.chainId, pool.POOL_ADDRESSES_PROVIDER);
+    throw new Error('client for chain not found');
+  }
   try {
     const [
       POOL,
@@ -141,8 +146,12 @@ export async function getPoolV3Addresses(
       addressProviderContract.read.getPoolDataProvider(),
     ]);
 
-    const DEFAULT_INCENTIVES_CONTROLLER = await addressProviderContract.read.getAddress([
-      '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532',
+    const [POOL_IMPL, POOL_CONFIGURATOR_IMPL, DEFAULT_INCENTIVES_CONTROLLER] = await Promise.all([
+      getImplementationStorageSlot(client, POOL),
+      getImplementationStorageSlot(client, POOL_CONFIGURATOR),
+      addressProviderContract.read.getAddress([
+        '0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532',
+      ]),
     ]);
 
     let EMISSION_MANAGER: Hex = zeroAddress;
@@ -150,7 +159,7 @@ export async function getPoolV3Addresses(
       const incentivesControllerContract = getContract({
         address: DEFAULT_INCENTIVES_CONTROLLER,
         abi: REWARDS_CONTROLLER_ABI,
-        publicClient,
+        client,
       });
       EMISSION_MANAGER = await incentivesControllerContract.read.getEmissionManager();
     } catch (e) {
@@ -165,13 +174,13 @@ export async function getPoolV3Addresses(
       const uiPoolDataProvider = getContract({
         address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
         abi: IUiPoolDataProvider_ABI,
-        publicClient,
+        client,
       });
       const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
         ? getContract({
             address: pool.additionalAddresses.STATIC_A_TOKEN_FACTORY,
             abi: STATIC_A_TOKEN_FACTORY_ABI,
-            publicClient,
+            client,
           })
         : null;
       const data = (
@@ -199,7 +208,7 @@ export async function getPoolV3Addresses(
       );
     }
 
-    const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(publicClient, pool, reservesData);
+    const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(client, pool, reservesData);
 
     return {
       eModes,
@@ -208,10 +217,12 @@ export async function getPoolV3Addresses(
         type: 'IPoolAddressesProvider',
       },
       POOL: {value: POOL, type: 'IPool'},
+      POOL_IMPL: bytes32toAddress(POOL_IMPL),
       POOL_CONFIGURATOR: {
         value: POOL_CONFIGURATOR,
         type: 'IPoolConfigurator',
       },
+      POOL_CONFIGURATOR_IMPL: bytes32toAddress(POOL_CONFIGURATOR_IMPL),
       ORACLE: {
         value: ORACLE,
         type: 'IAaveOracle',
@@ -231,7 +242,7 @@ export async function getPoolV3Addresses(
   }
 }
 
-function generateEmodes(chainId: ChainId, eModes: Map<number, string>, libraryName: string) {
+function generateEmodes(chainId: number, eModes: Map<number, string>, libraryName: string) {
   const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
   const formatted = sorted.reduce((acc, [value, label]) => {
     acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'NONE'}`] = {
@@ -300,6 +311,10 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   appendFileSync(`./src/ts/${name}.ts`, eModesLibrary.js);
 
   return {
+    pool: (addresses.POOL as any).value,
+    name,
+    reservesData,
+    chainId: config.chainId,
     js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],
   };

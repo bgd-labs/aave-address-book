@@ -13,15 +13,18 @@ library AaveV3Mumbai {
   // https://mumbai.polygonscan.com/address/0xcC6114B983E4Ed2737E9BD3961c9924e6216c704
   IPool internal constant POOL = IPool(0xcC6114B983E4Ed2737E9BD3961c9924e6216c704);
 
+  // https://mumbai.polygonscan.com/address/0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155
+  address internal constant POOL_IMPL = 0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155;
+
   // https://mumbai.polygonscan.com/address/0x5C12526EaAc2637fEa2322ee4e389698dBFC3845
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x5C12526EaAc2637fEa2322ee4e389698dBFC3845);
 
+  // https://mumbai.polygonscan.com/address/0xe6c0e5085CaebcFD5d8a144636dCc2379b38333F
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xe6c0e5085CaebcFD5d8a144636dCc2379b38333F;
+
   // https://mumbai.polygonscan.com/address/0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8
   IAaveOracle internal constant ORACLE = IAaveOracle(0x27848354d8c9f71a41c6f6edfC6E3CACf3b848c8);
-
-  // https://mumbai.polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
   // https://mumbai.polygonscan.com/address/0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =

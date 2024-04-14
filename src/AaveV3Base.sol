@@ -13,15 +13,21 @@ library AaveV3Base {
   // https://basescan.org/address/0xA238Dd80C259a72e81d7e4664a9801593F98d1c5
   IPool internal constant POOL = IPool(0xA238Dd80C259a72e81d7e4664a9801593F98d1c5);
 
+  // https://basescan.org/address/0xE9547fc44C271dBddf94D8E20b46836B87DA6789
+  address internal constant POOL_IMPL = 0xE9547fc44C271dBddf94D8E20b46836B87DA6789;
+
   // https://basescan.org/address/0x5731a04B1E775f0fdd454Bf70f3335886e9A96be
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x5731a04B1E775f0fdd454Bf70f3335886e9A96be);
 
+  // https://basescan.org/address/0x5456C510ACb8bD0b9a65B4B632dB2925690D3237
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x5456C510ACb8bD0b9a65B4B632dB2925690D3237;
+
   // https://basescan.org/address/0x2Cc0Fc26eD4563A5ce5e8bdcfe1A2878676Ae156
   IAaveOracle internal constant ORACLE = IAaveOracle(0x2Cc0Fc26eD4563A5ce5e8bdcfe1A2878676Ae156);
 
-  // https://basescan.org/address/0xe34949A48cd2E6f5CD41753e449bd2d43993C9AC
-  address internal constant PRICE_ORACLE_SENTINEL = 0xe34949A48cd2E6f5CD41753e449bd2d43993C9AC;
+  // https://basescan.org/address/0x943AcD0c93d7a8Bee7dA5Fd0DC3d0028237074d6
+  address internal constant PRICE_ORACLE_SENTINEL = 0x943AcD0c93d7a8Bee7dA5Fd0DC3d0028237074d6;
 
   // https://basescan.org/address/0x2d8A3C5677189723C4cB8873CfC9C8976FDF38Ac
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
@@ -99,8 +105,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x5779b29B0a34577d927E8D511B595ef9abbFAE82
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;
 
-  // https://basescan.org/address/0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee
-  address internal constant WETH_GATEWAY = 0x18CD499E3d7ed42FEbA981ac9236A278E4Cdc2ee;
+  // https://basescan.org/address/0x8be473dCfA93132658821E67CbEB684ec8Ea2E74
+  address internal constant WETH_GATEWAY = 0x8be473dCfA93132658821E67CbEB684ec8Ea2E74;
 }
 
 library AaveV3BaseAssets {
@@ -142,8 +148,8 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0xa9dF5c62d16d3f496673F4d736852017b086eCA0
   address internal constant cbETH_S_TOKEN = 0xa9dF5c62d16d3f496673F4d736852017b086eCA0;
 
-  // https://basescan.org/address/0x80f2c02224a2E548FC67c0bF705eBFA825dd5439
-  address internal constant cbETH_ORACLE = 0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
+  // https://basescan.org/address/0x8e11Ad4531826ff47BD8157a2c705F5422Da6A61
+  address internal constant cbETH_ORACLE = 0x8e11Ad4531826ff47BD8157a2c705F5422Da6A61;
 
   // https://basescan.org/address/0x05295489b6aE0d97ae7C49a42989497294F7F428
   address internal constant cbETH_INTEREST_RATE_STRATEGY =
@@ -166,15 +172,60 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654
   address internal constant USDbC_S_TOKEN = 0xBBaDd47fbaFa9dE717FE203e4707DEB893C64654;
 
-  // https://basescan.org/address/0x7e860098F58bBFC8648a4311b374B1D669a2bc6B
-  address internal constant USDbC_ORACLE = 0x7e860098F58bBFC8648a4311b374B1D669a2bc6B;
+  // https://basescan.org/address/0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f
+  address internal constant USDbC_ORACLE = 0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f;
 
-  // https://basescan.org/address/0x8c63A1b0721D5776Ae5ed1Be8dc7f2A1e7312Ed3
+  // https://basescan.org/address/0xDBea12F69D3Fcb4Be9FD14dd450AAe2B2a3d4de7
   address internal constant USDbC_INTEREST_RATE_STRATEGY =
-    0x8c63A1b0721D5776Ae5ed1Be8dc7f2A1e7312Ed3;
+    0xDBea12F69D3Fcb4Be9FD14dd450AAe2B2a3d4de7;
 
   // https://basescan.org/address/0x6fCe2756794128B1771324caA860965801DCbCdB
   address internal constant USDbC_STATA_TOKEN = 0x6fCe2756794128B1771324caA860965801DCbCdB;
+
+  // https://basescan.org/address/0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452
+  address internal constant wstETH_UNDERLYING = 0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://basescan.org/address/0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D
+  address internal constant wstETH_A_TOKEN = 0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D;
+
+  // https://basescan.org/address/0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1
+  address internal constant wstETH_V_TOKEN = 0x41A7C3f5904ad176dACbb1D99101F59ef0811DC1;
+
+  // https://basescan.org/address/0xfe742Fa2a84294E8316F05b17c05090Fc68B5105
+  address internal constant wstETH_S_TOKEN = 0xfe742Fa2a84294E8316F05b17c05090Fc68B5105;
+
+  // https://basescan.org/address/0x56038D3998C42db18ba3B821bD1EbaB9B678e657
+  address internal constant wstETH_ORACLE = 0x56038D3998C42db18ba3B821bD1EbaB9B678e657;
+
+  // https://basescan.org/address/0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x2f51b00eC4912874DFDBd8dC3C8e390c21e77aF9;
+
+  // https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913
+  address internal constant USDC_UNDERLYING = 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://basescan.org/address/0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB
+  address internal constant USDC_A_TOKEN = 0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB;
+
+  // https://basescan.org/address/0x59dca05b6c26dbd64b5381374aAaC5CD05644C28
+  address internal constant USDC_V_TOKEN = 0x59dca05b6c26dbd64b5381374aAaC5CD05644C28;
+
+  // https://basescan.org/address/0x03506214379aA86ad1176af71c260278cfa10B38
+  address internal constant USDC_S_TOKEN = 0x03506214379aA86ad1176af71c260278cfa10B38;
+
+  // https://basescan.org/address/0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f
+  address internal constant USDC_ORACLE = 0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f;
+
+  // https://basescan.org/address/0x136848FdaedEB56245bE0e61E28A3CB8c0B45CaA
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0x136848FdaedEB56245bE0e61E28A3CB8c0B45CaA;
+
+  // https://basescan.org/address/0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc
+  address internal constant USDC_STATA_TOKEN = 0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc;
 }
 
 library AaveV3BaseEModes {

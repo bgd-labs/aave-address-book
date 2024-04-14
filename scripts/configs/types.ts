@@ -1,5 +1,5 @@
 import {Hex} from 'viem';
-import {ChainId} from '../generator/chains';
+import {ChainId} from '@bgd-labs/js-utils';
 
 interface KnownInterfaces<T extends number | Hex = any> {
   value: T;
@@ -46,6 +46,7 @@ export interface PoolConfig {
     SWAP_COLLATERAL_ADAPTER?: Hex;
     DEBT_SWAP_ADAPTER?: Hex;
     WITHDRAW_SWAP_ADAPTER?: Hex;
+    SAVINGS_DAI_TOKEN_WRAPPER?: Hex;
     POOL_ADDRESSES_PROVIDER_REGISTRY?: Hex;
     CONFIG_ENGINE?: Hex;
     MIGRATION_HELPER?: Hex;
@@ -58,7 +59,6 @@ export interface PoolConfig {
     STATIC_A_TOKEN_FACTORY?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
     FREEZING_STEWARD?: Hex;
-    GHO_TOKEN?: Hex;
     UI_GHO_DATA_PROVIDER?: Hex;
     RATES_FACTORY?: Hex;
     PERMISSION_MANAGER?: Hex;
@@ -99,5 +99,16 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     CREATE_3_FACTORY?: Hex;
     PROTOCOL_GUARDIAN?: Hex;
     AAVE_MERKLE_DISTRIBUTOR?: Hex;
+    GHO_TOKEN?: Hex;
+    GHO_FLASHMINTER_FACILITATOR?: Hex;
+    GSM_REGISTRY?: Hex;
+    GSM_USDC?: Hex;
+    GSM_USDT?: Hex;
+    GSM_USDC_FEE_STRATEGY?: Hex;
+    GSM_USDT_FEE_STRATEGY?: Hex;
+    GSM_USDC_PRICE_STRATEGY?: Hex;
+    GSM_USDT_PRICE_STRATEGY?: Hex;
+    GSM_USDC_ORACLE_SWAP_FREEZER?: Hex;
+    GSM_USDT_ORACLE_SWAP_FREEZER?: Hex;
   } & T;
 }

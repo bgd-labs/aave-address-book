@@ -13,9 +13,15 @@ library AaveV2EthereumArc {
   // https://etherscan.io/address/0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0
   ILendingPool internal constant POOL = ILendingPool(0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0);
 
+  // https://etherscan.io/address/0xfbF029508c061B440D0cF7Fd639e77Fb2E196241
+  address internal constant POOL_IMPL = 0xfbF029508c061B440D0cF7Fd639e77Fb2E196241;
+
   // https://etherscan.io/address/0x4e1c7865e7BE78A7748724Fa0409e88dc14E67aA
   ILendingPoolConfigurator internal constant POOL_CONFIGURATOR =
     ILendingPoolConfigurator(0x4e1c7865e7BE78A7748724Fa0409e88dc14E67aA);
+
+  // https://etherscan.io/address/0x8e5E28f273E3a6612A9C5d6F16aa67DA156042F4
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x8e5E28f273E3a6612A9C5d6F16aa67DA156042F4;
 
   // https://etherscan.io/address/0xB8a7bc0d13B1f5460513040a97F404b4fea7D2f3
   IAaveOracle internal constant ORACLE = IAaveOracle(0xB8a7bc0d13B1f5460513040a97F404b4fea7D2f3);
@@ -36,13 +42,6 @@ library AaveV2EthereumArc {
 
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
-
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0x0000000000000000000000000000000000000000;
-
-  // https://etherscan.io/address/0x0000000000000000000000000000000000000000
-  address internal constant EMISSION_MANAGER = 0x0000000000000000000000000000000000000000;
 
   // https://etherscan.io/address/0x837696219C9a3775a856BEBC02DB1fA918C8a46e
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =

@@ -13,9 +13,15 @@ library AaveV2Polygon {
   // https://polygonscan.com/address/0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
   ILendingPool internal constant POOL = ILendingPool(0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf);
 
+  // https://polygonscan.com/address/0x1685D81212580DD4cDA287616C2f6F4794927e18
+  address internal constant POOL_IMPL = 0x1685D81212580DD4cDA287616C2f6F4794927e18;
+
   // https://polygonscan.com/address/0x26db2B833021583566323E3b8985999981b9F1F3
   ILendingPoolConfigurator internal constant POOL_CONFIGURATOR =
     ILendingPoolConfigurator(0x26db2B833021583566323E3b8985999981b9F1F3);
+
+  // https://polygonscan.com/address/0x56C8Aa7e4fCAbaaD5e87d6847D0901134939A13a
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x56C8Aa7e4fCAbaaD5e87d6847D0901134939A13a;
 
   // https://polygonscan.com/address/0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d
   IAaveOracle internal constant ORACLE = IAaveOracle(0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d);
@@ -80,8 +86,8 @@ library AaveV2Polygon {
   // https://polygonscan.com/address/0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e
   address internal constant WALLET_BALANCE_PROVIDER = 0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e;
 
-  // https://polygonscan.com/address/0xAeBF56223F044a73A513FAD7E148A9075227eD9b
-  address internal constant WETH_GATEWAY = 0xAeBF56223F044a73A513FAD7E148A9075227eD9b;
+  // https://polygonscan.com/address/0xf1e6d4347105138B51E2bacA9A22fA228309ebB1
+  address internal constant WETH_GATEWAY = 0xf1e6d4347105138B51E2bacA9A22fA228309ebB1;
 }
 
 library AaveV2PolygonAssets {
@@ -102,8 +108,8 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0xFC539A559e170f848323e19dfD66007520510085
   address internal constant DAI_ORACLE = 0xFC539A559e170f848323e19dfD66007520510085;
 
-  // https://polygonscan.com/address/0x283Df7893eF10F729890017F57d76B8D78e18915
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x283Df7893eF10F729890017F57d76B8D78e18915;
+  // https://polygonscan.com/address/0xa966adA364E0491520a1235aAA9cf15E08c1Db05
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xa966adA364E0491520a1235aAA9cf15E08c1Db05;
 
   // https://polygonscan.com/address/0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174
   address internal constant USDC_UNDERLYING = 0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174;
@@ -122,9 +128,9 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0xefb7e6be8356cCc6827799B6A7348eE674A80EaE
   address internal constant USDC_ORACLE = 0xefb7e6be8356cCc6827799B6A7348eE674A80EaE;
 
-  // https://polygonscan.com/address/0xc7008Df6B900b41CD528ceb23283Cf4BBCd0ac6E
+  // https://polygonscan.com/address/0x2ad5a608a920E7061ccE38955C89A7c3F4c0aba7
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xc7008Df6B900b41CD528ceb23283Cf4BBCd0ac6E;
+    0x2ad5a608a920E7061ccE38955C89A7c3F4c0aba7;
 
   // https://polygonscan.com/address/0xc2132D05D31c914a87C6611C10748AEb04B58e8F
   address internal constant USDT_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
@@ -143,9 +149,9 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d
   address internal constant USDT_ORACLE = 0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d;
 
-  // https://polygonscan.com/address/0x8D6dA015e69A84644BFc7455F871bDe2A7Fedf39
+  // https://polygonscan.com/address/0x7892E4Db4C172e7Af389677c04c42eE3F8Fd5447
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x8D6dA015e69A84644BFc7455F871bDe2A7Fedf39;
+    0x7892E4Db4C172e7Af389677c04c42eE3F8Fd5447;
 
   // https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6
   address internal constant WBTC_UNDERLYING = 0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6;
@@ -181,9 +187,6 @@ library AaveV2PolygonAssets {
 
   // https://polygonscan.com/address/0xc478cBbeB590C76b01ce658f8C4dda04f30e2C6f
   address internal constant WETH_S_TOKEN = 0xc478cBbeB590C76b01ce658f8C4dda04f30e2C6f;
-
-  // https://polygonscan.com/address/0x0000000000000000000000000000000000000000
-  address internal constant WETH_ORACLE = 0x0000000000000000000000000000000000000000;
 
   // https://polygonscan.com/address/0xEA2e7947658944674893D71cE5DA52d528a43388
   address internal constant WETH_INTEREST_RATE_STRATEGY =
