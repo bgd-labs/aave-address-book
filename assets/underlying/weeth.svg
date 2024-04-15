@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Слой_1" x="0" y="0" version="1.1" viewBox="0 0 136.06 136.06">
+  <style>
+    .st1{stroke-linejoin:round}.st1,.st2{fill:none;stroke:#140275;stroke-width:2.5;stroke-miterlimit:10}
+  </style>
+  <linearGradient id="SVGID_1_" x1="15.0933" x2="124.3159" y1="94.8079" y2="39.5233" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#00bfff"/>
+    <stop offset=".5016" stop-color="#6963ed"/>
+    <stop offset=".5227" stop-color="#6d62ee"/>
+    <stop offset=".8463" stop-color="#ab57fa"/>
+    <stop offset="1" stop-color="#c353ff"/>
+  </linearGradient>
+  <circle cx="67.99" cy="68.03" r="66.45" fill="url(#SVGID_1_)"/>
+  <circle cx="67.99" cy="68.03" r="61.35" class="st1"/>
+  <path d="m67.92 18.28-30.4 19.03v30.72" class="st2"/>
+  <path d="m51.38 45.4-13.86-8.09" class="st1"/>
+  <path d="m67.92 118.43-30.4-19.38V75.26" class="st2"/>
+  <path d="m49.21 91.86-11.69 7.19M67.92 84.78 98.4 68.03 67.92 18.28l-30.4 49.75z" class="st1"/>
+  <path d="M67.92 18.28 98.4 37.31v30.72" class="st2"/>
+  <path d="m84.54 45.4 13.86-8.09M67.92 92.67 98.4 75.26l-30.48 43.17-30.4-43.17z" class="st1"/>
+  <path d="M67.92 118.43 98.4 99.05V75.26" class="st2"/>
+  <path d="m86.71 91.86 11.69 7.19" class="st1"/>
+</svg>
