@@ -1,10 +1,9 @@
 import {Hex} from 'viem';
-import {ChainId} from '@bgd-labs/js-utils';
 
 interface KnownInterfaces<T extends number | Hex = any> {
   value: T;
   type: T extends number ? 'uint256' : 'address' | string;
-  chainId?: T extends number ? never : ChainId;
+  chainId?: T extends number ? never : number;
 }
 
 export type AddressInfo = Hex | KnownInterfaces;
@@ -30,13 +29,13 @@ export type GovernanceV3Addresses = {
 
 export interface GovernanceConfig {
   name: string;
-  CHAIN_ID: ChainId;
+  CHAIN_ID: number;
   ADDRESSES: GovernanceV3Addresses;
 }
 
 export interface PoolConfig {
   name: string;
-  chainId: ChainId;
+  chainId: number;
   POOL_ADDRESSES_PROVIDER: Hex;
   // will be inlined in js pool export
   additionalAddresses: {
@@ -57,6 +56,7 @@ export interface PoolConfig {
     PROOF_OF_RESERVE_AGGREGATOR?: Hex;
     DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: Hex;
     STATIC_A_TOKEN_FACTORY?: Hex;
+    STATIC_A_TOKEN_ORACLE?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
     FREEZING_STEWARD?: Hex;
     UI_GHO_DATA_PROVIDER?: Hex;
@@ -90,7 +90,7 @@ export type ReserveData = {
  */
 export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
   name: string;
-  chainId: ChainId;
+  chainId: number;
   addresses: {
     // https://github.com/bgd-labs/aave-paraswap-claimer
     PARASWAP_FEE_CLAIMER?: Hex;

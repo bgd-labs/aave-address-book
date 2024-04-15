@@ -15,6 +15,7 @@ export const ethereumAddresses: NetworkAddresses<{
   stEUR: Hex;
   agEUR_EUR_AGGREGATOR: Hex;
   EUR_USD_AGGREGATOR: Hex;
+  weETH_RATIO_PROVIDER: Hex;
 }> = {
   name: 'Ethereum',
   chainId: ChainId.mainnet,
@@ -49,6 +50,7 @@ export const ethereumAddresses: NetworkAddresses<{
     stEUR: '0x004626A008B1aCdC4c74ab51644093b155e59A23',
     agEUR_EUR_AGGREGATOR: '0xb4d5289C58CE36080b0748B47F859D8F50dFAACb',
     EUR_USD_AGGREGATOR: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
+    weETH_RATIO_PROVIDER: '0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee',
   },
 };
 

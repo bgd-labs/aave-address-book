@@ -2930,6 +2930,20 @@
       }
     },
     {
+      "chainId": 137,
+      "address": "0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19",
+      "name": "Static Aave Polygon USDCn",
+      "decimals": 6,
+      "symbol": "stataPolUSDCn",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "ipfs://QmRSVBEwfG2v5jV9aR8B9h2MjSig8MpqE2JuqtF1UmA9pP",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+        "underlyingAToken": "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD"
+      }
+    },
+    {
       "chainId": 43114,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Avalanche DAI",
@@ -5759,6 +5773,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 13 },
-  "timestamp": "2024-03-14T15:36:34.094Z"
+  "version": { "major": 3, "minor": 0, "patch": 14 },
+  "timestamp": "2024-03-17T00:51:09.765Z"
 }
