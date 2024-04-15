@@ -43,6 +43,7 @@ export * as AaveV3Fantom from './AaveV3Fantom';
 export * as MiscArbitrum from './MiscArbitrum';
 export * as MiscArbitrumSepolia from './MiscArbitrumSepolia';
 export * as MiscAvalanche from './MiscAvalanche';
+export * as MiscFuji from './MiscFuji';
 export * as MiscBase from './MiscBase';
 export * as MiscBaseSepolia from './MiscBaseSepolia';
 export * as MiscEthereum from './MiscEthereum';

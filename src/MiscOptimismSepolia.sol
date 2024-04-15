@@ -3,6 +3,9 @@
 pragma solidity >=0.6.0;
 
 library MiscOptimismSepolia {
+  // https://optimism-sepolia.blockscout.com/address/0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810
+  address internal constant GHO_TOKEN = 0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810;
+
   // https://optimism-sepolia.blockscout.com/address/0xb172a90A7C238969CE9B27cc19D13b60A91e7F00
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xb172a90A7C238969CE9B27cc19D13b60A91e7F00;
 
