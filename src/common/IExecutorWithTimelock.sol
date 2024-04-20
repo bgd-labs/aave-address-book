@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IAaveGovernanceV2} from './IAaveGovernanceV2.sol';
+
 interface IExecutorWithTimelock {
   /**
    * @dev emitted when a new pending admin is set
@@ -115,7 +117,7 @@ interface IExecutorWithTimelock {
    * @return true of proposal is over grace period
    **/
   function isProposalOverGracePeriod(
-    address governance,
+    IAaveGovernanceV2 governance,
     uint256 proposalId
   ) external view returns (bool);
 

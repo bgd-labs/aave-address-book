@@ -10,5 +10,3 @@ export const CREATE_3_FACTORY = '0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A';
 
 // https://andromeda-explorer.metis.io/address/0xF6Db48C5968A9eBCB935786435530f28e32Cc501
 export const PROTOCOL_GUARDIAN = '0xF6Db48C5968A9eBCB935786435530f28e32Cc501';
-
-export const CHAIN_ID = 1088;

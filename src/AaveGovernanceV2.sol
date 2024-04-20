@@ -2,7 +2,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
+import {IGovernanceStrategy} from './common/IGovernanceStrategy.sol';
+import {IAaveGovernanceV2, IExecutorWithTimelock} from './common/IAaveGovernanceV2.sol';
+
 library AaveGovernanceV2 {
+  // https://etherscan.io/address/0xEC568fffba86c094cf06b22134B23074DFE2252c
+  IAaveGovernanceV2 internal constant GOV =
+    IAaveGovernanceV2(0xEC568fffba86c094cf06b22134B23074DFE2252c);
+
+  // https://etherscan.io/address/0xb7e383ef9B1E9189Fc0F71fb30af8aa14377429e
+  IGovernanceStrategy internal constant GOV_STRATEGY =
+    IGovernanceStrategy(0xb7e383ef9B1E9189Fc0F71fb30af8aa14377429e);
+
   // https://etherscan.io/address/0xEE56e2B3D491590B5b31738cC34d5232F378a8D5
   address internal constant SHORT_EXECUTOR = 0xEE56e2B3D491590B5b31738cC34d5232F378a8D5;
 
@@ -15,7 +26,7 @@ library AaveGovernanceV2 {
   // https://polygonscan.com/address/0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
   address internal constant POLYGON_BRIDGE_EXECUTOR = 0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
 
-  // https://optimistic.etherscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
+  // https://explorer.optimism.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
   address internal constant OPTIMISM_BRIDGE_EXECUTOR = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
   // https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
