@@ -22,12 +22,7 @@ import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
 import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
-import {
-  mumbaiProtoV2,
-  mumbaiProtoV3,
-  polygonProtoV2,
-  polygonProtoV3,
-} from './configs/pools/polygon';
+import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
@@ -38,7 +33,7 @@ import {generateSafetyModule} from './generator/safetyModuleGenerator';
 import {governanceConfigArbitrum} from './configs/governance/arbitrum';
 import {governanceConfigAvalanche, governanceConfigFuji} from './configs/governance/avalanche';
 import {governanceConfigOptimism} from './configs/governance/optimism';
-import {governanceConfigMumbai, governanceConfigPolygon} from './configs/governance/polygon';
+import {governanceConfigPolygon} from './configs/governance/polygon';
 import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
@@ -49,7 +44,7 @@ import {generateNetworkAddresses} from './generator/networkGenerator';
 import {arbitrumAddresses, arbitrumSepoliaAddresses} from './configs/networks/arbitrum';
 import {avalancheAddresses, avalancheFujiAddresses} from './configs/networks/avalanche';
 import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
-import {mumbaiAddresses, polygonAddresses} from './configs/networks/polygon';
+import {polygonAddresses} from './configs/networks/polygon';
 import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
@@ -82,7 +77,6 @@ async function main() {
       governanceConfigFuji,
       governanceConfigOptimism,
       governanceConfigPolygon,
-      governanceConfigMumbai,
       governanceConfigMetis,
       governanceConfigBase,
       governanceConfigBNB,
@@ -98,7 +92,6 @@ async function main() {
       mainnetArcV2Pool,
       mainnetProtoV2Pool,
       polygonProtoV2,
-      mumbaiProtoV2,
       fujiProtoV2,
       avalancheProtoV2,
     ].map((config) => generateProtocolV2Library(config)),
@@ -109,7 +102,6 @@ async function main() {
       mainnetProtoV3Pool,
       sepoliaProtoV3,
       polygonProtoV3,
-      mumbaiProtoV3,
       avalancheProtoV3,
       fujiProtoV3,
       baseProtoV3,
@@ -150,7 +142,6 @@ async function main() {
     scrollAddresses,
     polygonZkEvmAddresses,
     sepoliaAddresses,
-    mumbaiAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

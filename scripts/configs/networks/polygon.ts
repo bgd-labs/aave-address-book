@@ -23,12 +23,3 @@ export const polygonAddresses: NetworkAddresses<{
     stMATIC_RATE_PROVIDER: '0xdEd6C522d803E35f65318a9a4d7333a22d582199',
   },
 };
-
-export const mumbaiAddresses: NetworkAddresses = {
-  name: 'Mumbai',
-  chainId: ChainId.mumbai,
-  addresses: {
-    TRANSPARENT_PROXY_FACTORY: '0x49A726CC7B438dBc4fB89a9548B5E8691e1C35A6',
-    PROXY_ADMIN: '0xaebfFE29D8E823e8E43695648F418fa8c30AF879',
-  },
-};
