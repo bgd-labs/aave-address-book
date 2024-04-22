@@ -53,6 +53,8 @@ jobs:
           RPC_BASE: ${{ secrets.RPC_BASE }}
           RPC_GNOSIS: ${{ secrets.RPC_GNOSIS }}
           RPC_BNB: ${{ secrets.RPC_BNB }}
+          RPC_METIS: ${{ secrets.RPC_METIS }}
+          RPC_SCROLL: ${{ secrets.RPC_SCROLL }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@712add83f26c1e359c046a6ca3dd677fb7017626
