@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.26.0](https://github.com/bgd-labs/aave-address-book/compare/v2.25.1...v2.26.0) (2024-04-22)
+
+
+### Features
+
+* added weeth icons to assets ([#427](https://github.com/bgd-labs/aave-address-book/issues/427)) ([572ee8d](https://github.com/bgd-labs/aave-address-book/commit/572ee8d6281f54a086a2c61c680675bce4606d5b))
+
+
+### Bug Fixes
+
+* Fix uiPoolDataProvider contract on Harmony ([#428](https://github.com/bgd-labs/aave-address-book/issues/428)) ([15bc0a8](https://github.com/bgd-labs/aave-address-book/commit/15bc0a8e7cd9717af393aaab89381aed91531092))
+* remove mumbai ([#432](https://github.com/bgd-labs/aave-address-book/issues/432)) ([64e51f9](https://github.com/bgd-labs/aave-address-book/commit/64e51f98d64bc0dc59adae0a11a29d4e92537a3f))
+
 ## [2.25.1](https://github.com/bgd-labs/aave-address-book/compare/v2.25.0...v2.25.1) (2024-04-11)
 
 
