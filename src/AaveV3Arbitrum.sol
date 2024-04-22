@@ -466,6 +466,27 @@ library AaveV3ArbitrumAssets {
 
   // https://arbiscan.io/address/0x9b5637d7952BC9fa2D693aAE51f3103760Bf2693
   address internal constant ARB_STATA_TOKEN = 0x9b5637d7952BC9fa2D693aAE51f3103760Bf2693;
+
+  // https://arbiscan.io/address/0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe
+  address internal constant weETH_UNDERLYING = 0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe;
+
+  uint8 internal constant weETH_DECIMALS = 18;
+
+  // https://arbiscan.io/address/0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77
+  address internal constant weETH_A_TOKEN = 0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77;
+
+  // https://arbiscan.io/address/0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6
+  address internal constant weETH_V_TOKEN = 0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6;
+
+  // https://arbiscan.io/address/0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF
+  address internal constant weETH_S_TOKEN = 0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF;
+
+  // https://arbiscan.io/address/0x517276B5972C4Db7E88B9F76Ee500E888a2D73C3
+  address internal constant weETH_ORACLE = 0x517276B5972C4Db7E88B9F76Ee500E888a2D73C3;
+
+  // https://arbiscan.io/address/0x0fc12Ad84210695dE8C0D5D8B6f720C37cEaB02f
+  address internal constant weETH_INTEREST_RATE_STRATEGY =
+    0x0fc12Ad84210695dE8C0D5D8B6f720C37cEaB02f;
 }
 
 library AaveV3ArbitrumEModes {

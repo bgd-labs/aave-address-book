@@ -2305,6 +2305,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc39Z8gPzajG5TFos5uvBDUhrG94qj46UN4FJdZGeqfv4"
+    },
+    {
+      "chainId": 1,
+      "address": "0xBdfa7b7893081B35Fb54027489e2Bc7A38275129",
+      "name": "Aave Ethereum weETH",
+      "decimals": 18,
+      "symbol": "aEthweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmdHmsCCY3w3FvUgPANzkWbSSVicpWzrzWEJUKgNrfixBR",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -4721,6 +4743,28 @@
       }
     },
     {
+      "chainId": 42161,
+      "address": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://Qmc39Z8gPzajG5TFos5uvBDUhrG94qj46UN4FJdZGeqfv4"
+    },
+    {
+      "chainId": 42161,
+      "address": "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77",
+      "name": "Aave Arbitrum weETH",
+      "decimals": 18,
+      "symbol": "aArbweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmdHmsCCY3w3FvUgPANzkWbSSVicpWzrzWEJUKgNrfixBR",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe"
+      }
+    },
+    {
       "chainId": 10,
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
@@ -5773,6 +5817,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 14 },
-  "timestamp": "2024-03-17T00:51:09.765Z"
+  "version": { "major": 3, "minor": 0, "patch": 15 },
+  "timestamp": "2024-04-22T06:01:02.747Z"
 }
