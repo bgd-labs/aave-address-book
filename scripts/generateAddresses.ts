@@ -162,10 +162,7 @@ async function main() {
     abis,
   ].flat();
 
-  const jsExports = [
-    ...imports.map((f) => f.js).flat(),
-    "export * as AaveV3Harmony from './AaveV3Harmony';",
-  ];
+  const jsExports = imports.map((f) => f.js).flat();
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
 

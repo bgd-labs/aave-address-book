@@ -89,4 +89,3 @@ export {IStkAaveToken_ABI} from './abis/IStkAaveToken';
 export {IATokenWithDelegation_ABI} from './abis/IATokenWithDelegation';
 export {IStaticATokenFactory_ABI} from './abis/IStaticATokenFactory';
 export {IStaticATokenLM_ABI} from './abis/IStaticATokenLM';
-export * as AaveV3Harmony from './AaveV3Harmony';
