@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.26.1](https://github.com/bgd-labs/aave-address-book/compare/v2.26.0...v2.26.1) (2024-04-23)
+
+
+### Bug Fixes
+
+* readd harmony ([#436](https://github.com/bgd-labs/aave-address-book/issues/436)) ([cc7b565](https://github.com/bgd-labs/aave-address-book/commit/cc7b5659042631b6728bbf1e966db9072e80fdb1))
+* use proper rpc on scroll ([#434](https://github.com/bgd-labs/aave-address-book/issues/434)) ([b71481b](https://github.com/bgd-labs/aave-address-book/commit/b71481be2a71902d8b9d2d4aa3a6f50a3f83896b))
+
 ## [2.26.0](https://github.com/bgd-labs/aave-address-book/compare/v2.25.1...v2.26.0) (2024-04-22)
 
 
