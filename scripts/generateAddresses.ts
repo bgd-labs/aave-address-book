@@ -118,7 +118,7 @@ async function main() {
       scrollSepoliaProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
-      // harmonyProtoV3,
+      harmonyProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
 

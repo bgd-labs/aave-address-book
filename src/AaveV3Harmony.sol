@@ -13,15 +13,18 @@ library AaveV3Harmony {
   // https://explorer.harmony.one/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
+  // https://explorer.harmony.one/address/0xDF9e4ABdbd94107932265319479643D3B05809dc
+  address internal constant POOL_IMPL = 0xDF9e4ABdbd94107932265319479643D3B05809dc;
+
   // https://explorer.harmony.one/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
 
+  // https://explorer.harmony.one/address/0xD6FA681E22306b0F4E605B979b7c9a1dFa865ade
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xD6FA681E22306b0F4E605B979b7c9a1dFa865ade;
+
   // https://explorer.harmony.one/address/0x3C90887Ede8D65ccb2777A5d577beAb2548280AD
   IAaveOracle internal constant ORACLE = IAaveOracle(0x3C90887Ede8D65ccb2777A5d577beAb2548280AD);
-
-  // https://explorer.harmony.one/address/0x0000000000000000000000000000000000000000
-  address internal constant PRICE_ORACLE_SENTINEL = 0x0000000000000000000000000000000000000000;
 
   // https://explorer.harmony.one/address/0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
@@ -62,8 +65,8 @@ library AaveV3Harmony {
   // https://explorer.harmony.one/address/0xf7a60467aBb8A3240A0382b22E1B03c7d4F59Da5
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xf7a60467aBb8A3240A0382b22E1B03c7d4F59Da5;
 
-  // https://explorer.harmony.one/address/0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f
-  address internal constant UI_POOL_DATA_PROVIDER = 0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f;
+  // https://explorer.harmony.one/address/0xeC6118C69af50660231108059ab98CD0cF9a6eA1
+  address internal constant UI_POOL_DATA_PROVIDER = 0xeC6118C69af50660231108059ab98CD0cF9a6eA1;
 
   // https://explorer.harmony.one/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;

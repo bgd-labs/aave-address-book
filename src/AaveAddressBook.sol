@@ -40,6 +40,7 @@ import {AaveV3Scroll} from './AaveV3Scroll.sol';
 import {AaveV3ScrollSepolia} from './AaveV3ScrollSepolia.sol';
 import {AaveV3FantomTestnet} from './AaveV3FantomTestnet.sol';
 import {AaveV3Fantom} from './AaveV3Fantom.sol';
+import {AaveV3Harmony} from './AaveV3Harmony.sol';
 import {MiscArbitrum} from './MiscArbitrum.sol';
 import {MiscArbitrumSepolia} from './MiscArbitrumSepolia.sol';
 import {MiscAvalanche} from './MiscAvalanche.sol';
