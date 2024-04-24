@@ -133,8 +133,8 @@ library AaveV2AvalancheAssets {
   // https://snowscan.xyz/address/0x3676E4EE689D527dDb89812B63fAD0B7501772B3
   address internal constant DAIe_S_TOKEN = 0x3676E4EE689D527dDb89812B63fAD0B7501772B3;
 
-  // https://snowscan.xyz/address/0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300
-  address internal constant DAIe_ORACLE = 0x51D7180edA2260cc4F6e4EebB82FEF5c3c2B8300;
+  // https://snowscan.xyz/address/0xf82da795727633aFA9BB0f1B08A87c0F6A38723f
+  address internal constant DAIe_ORACLE = 0xf82da795727633aFA9BB0f1B08A87c0F6A38723f;
 
   // https://snowscan.xyz/address/0x7e7B8d96C08881c3e1F506E3a81baE759aeFacA7
   address internal constant DAIe_INTEREST_RATE_STRATEGY =
@@ -154,8 +154,8 @@ library AaveV2AvalancheAssets {
   // https://snowscan.xyz/address/0x9c7B81A867499B7387ed05017a13d4172a0c17bF
   address internal constant USDTe_S_TOKEN = 0x9c7B81A867499B7387ed05017a13d4172a0c17bF;
 
-  // https://snowscan.xyz/address/0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a
-  address internal constant USDTe_ORACLE = 0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a;
+  // https://snowscan.xyz/address/0x39185f2236A6022b682e8BB93C040d125DA093CF
+  address internal constant USDTe_ORACLE = 0x39185f2236A6022b682e8BB93C040d125DA093CF;
 
   // https://snowscan.xyz/address/0x7e7B8d96C08881c3e1F506E3a81baE759aeFacA7
   address internal constant USDTe_INTEREST_RATE_STRATEGY =
@@ -175,8 +175,8 @@ library AaveV2AvalancheAssets {
   // https://snowscan.xyz/address/0x5B14679135dbE8B02015ec3Ca4924a12E4C6C85a
   address internal constant USDCe_S_TOKEN = 0x5B14679135dbE8B02015ec3Ca4924a12E4C6C85a;
 
-  // https://snowscan.xyz/address/0xF096872672F44d6EBA71458D74fe67F9a77a23B9
-  address internal constant USDCe_ORACLE = 0xF096872672F44d6EBA71458D74fe67F9a77a23B9;
+  // https://snowscan.xyz/address/0xD8277249e871BE9A402fa286C2C5ec16046dC512
+  address internal constant USDCe_ORACLE = 0xD8277249e871BE9A402fa286C2C5ec16046dC512;
 
   // https://snowscan.xyz/address/0xb1f13B58D6a3B1aEdB211Db58D9e42d28D09DbF4
   address internal constant USDCe_INTEREST_RATE_STRATEGY =
