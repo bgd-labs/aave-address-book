@@ -22,6 +22,12 @@ export const ABI_INTERFACES = [
   'IWithGuardian',
   'IRescuable',
   'IOwnable',
+  'ILendingPool',
+  'ILendingPoolAddressesProvider',
+  'ILendingPoolConfigurator',
+  'IPool',
+  'IPoolAddressesProvider',
+  'IPoolConfigurator',
 ];
 
 export const DOWNLOAD_ABI_INTERFACES = [

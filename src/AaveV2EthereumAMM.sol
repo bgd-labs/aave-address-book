@@ -106,8 +106,8 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x8da51a5a3129343468a63A96ccae1ff1352a3dfE
   address internal constant DAI_S_TOKEN = 0x8da51a5a3129343468a63A96ccae1ff1352a3dfE;
 
-  // https://etherscan.io/address/0x773616E4d11A78F511299002da57A0a94577F1f4
-  address internal constant DAI_ORACLE = 0x773616E4d11A78F511299002da57A0a94577F1f4;
+  // https://etherscan.io/address/0xd486FE27AAB0b3CAd1462D767292dd7a84F06E58
+  address internal constant DAI_ORACLE = 0xd486FE27AAB0b3CAd1462D767292dd7a84F06E58;
 
   // https://etherscan.io/address/0xA57cDBfE9FA29Ad842f53100d68789999c04AA36
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xA57cDBfE9FA29Ad842f53100d68789999c04AA36;
@@ -126,8 +126,8 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xE5971a8a741892F3b3ac3E9c94d02588190cE220
   address internal constant USDC_S_TOKEN = 0xE5971a8a741892F3b3ac3E9c94d02588190cE220;
 
-  // https://etherscan.io/address/0x986b5E1e1755e3C2440e960477f25201B0a8bbD4
-  address internal constant USDC_ORACLE = 0x986b5E1e1755e3C2440e960477f25201B0a8bbD4;
+  // https://etherscan.io/address/0x9f2817536Cfd48BF59243d9D8802a5670F5Be05d
+  address internal constant USDC_ORACLE = 0x9f2817536Cfd48BF59243d9D8802a5670F5Be05d;
 
   // https://etherscan.io/address/0xA57cDBfE9FA29Ad842f53100d68789999c04AA36
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -147,8 +147,8 @@ library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0x04A0577a89E1b9E8f6c87ee26cCe6a168fFfC5b5
   address internal constant USDT_S_TOKEN = 0x04A0577a89E1b9E8f6c87ee26cCe6a168fFfC5b5;
 
-  // https://etherscan.io/address/0xEe9F2375b4bdF6387aa8265dD4FB8F16512A1d46
-  address internal constant USDT_ORACLE = 0xEe9F2375b4bdF6387aa8265dD4FB8F16512A1d46;
+  // https://etherscan.io/address/0xEfF57B0c8987eea8C491bdDD2F64c1c21297Cf74
+  address internal constant USDT_ORACLE = 0xEfF57B0c8987eea8C491bdDD2F64c1c21297Cf74;
 
   // https://etherscan.io/address/0x2223cd25f60F3e4035fcEfE44612773AFEbFd8ab
   address internal constant USDT_INTEREST_RATE_STRATEGY =
