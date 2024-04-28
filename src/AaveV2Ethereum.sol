@@ -13,8 +13,8 @@ library AaveV2Ethereum {
   // https://etherscan.io/address/0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
   ILendingPool internal constant POOL = ILendingPool(0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9);
 
-  // https://etherscan.io/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
-  address internal constant POOL_IMPL = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;
+  // https://etherscan.io/address/0x02D84abD89Ee9DB409572f19B6e1596c301F3c81
+  address internal constant POOL_IMPL = 0x02D84abD89Ee9DB409572f19B6e1596c301F3c81;
 
   // https://etherscan.io/address/0x311Bb771e4F8952E6Da169b425E7e92d6Ac45756
   ILendingPoolConfigurator internal constant POOL_CONFIGURATOR =
