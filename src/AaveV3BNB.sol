@@ -216,9 +216,9 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0xaFcFF74AE956f4c23c27Db49659D4a7F350415C1
   address internal constant USDC_ORACLE = 0xaFcFF74AE956f4c23c27Db49659D4a7F350415C1;
 
-  // https://bscscan.com/address/0x0C8c4DbEB2dfA2a3770a54450E9937725D2d3D24
+  // https://bscscan.com/address/0x4e4B860383B9C35615f2dc0C3b78F83009A46720
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x0C8c4DbEB2dfA2a3770a54450E9937725D2d3D24;
+    0x4e4B860383B9C35615f2dc0C3b78F83009A46720;
 
   // https://bscscan.com/address/0x3906cDdfb781f02B21f21BD81ed7Fd8DC37075E1
   address internal constant USDC_STATA_TOKEN = 0x3906cDdfb781f02B21f21BD81ed7Fd8DC37075E1;
@@ -240,9 +240,9 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0x0F682319Ed4A240b7a2599A48C965049515D9bC3
   address internal constant USDT_ORACLE = 0x0F682319Ed4A240b7a2599A48C965049515D9bC3;
 
-  // https://bscscan.com/address/0x7aD646053aE2A184971dc952Cc680a5a5a0cFB8a
+  // https://bscscan.com/address/0xD161Cd855089c33c00F7D30C56452e5B4B8a8599
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x7aD646053aE2A184971dc952Cc680a5a5a0cFB8a;
+    0xD161Cd855089c33c00F7D30C56452e5B4B8a8599;
 
   // https://bscscan.com/address/0x0471D185cc7Be61E154277cAB2396cD397663da6
   address internal constant USDT_STATA_TOKEN = 0x0471D185cc7Be61E154277cAB2396cD397663da6;
@@ -264,9 +264,9 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0x60a117Fa5bAbee4d645884fB11E413Da4F893b6D
   address internal constant FDUSD_ORACLE = 0x60a117Fa5bAbee4d645884fB11E413Da4F893b6D;
 
-  // https://bscscan.com/address/0xBE6Af4cD3097424BcF5C5BeC3bcEc2017DBCaA86
+  // https://bscscan.com/address/0x6415754564745A50adB508D3B94d10870FE220eb
   address internal constant FDUSD_INTEREST_RATE_STRATEGY =
-    0xBE6Af4cD3097424BcF5C5BeC3bcEc2017DBCaA86;
+    0x6415754564745A50adB508D3B94d10870FE220eb;
 
   // https://bscscan.com/address/0x4d074aAa0821073dA827f7bf6a02cF905b394ed0
   address internal constant FDUSD_STATA_TOKEN = 0x4d074aAa0821073dA827f7bf6a02cF905b394ed0;
