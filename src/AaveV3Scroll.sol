@@ -138,9 +138,9 @@ library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x427Fd98dbD1DbC2D4e792350caBe7c9665F35bee
   address internal constant USDC_ORACLE = 0x427Fd98dbD1DbC2D4e792350caBe7c9665F35bee;
 
-  // https://scrollscan.com/address/0x39FA62444F4716f64253aEAc4509Ad32DE8D67B2
+  // https://scrollscan.com/address/0x80E14993fE2cA5c64328B4a8DfC1D95960338bd5
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0x39FA62444F4716f64253aEAc4509Ad32DE8D67B2;
+    0x80E14993fE2cA5c64328B4a8DfC1D95960338bd5;
 
   // https://scrollscan.com/address/0x9fA123bC7E6b61cC8a9D893673a4C6E5392FF4A7
   address internal constant USDC_STATA_TOKEN = 0x9fA123bC7E6b61cC8a9D893673a4C6E5392FF4A7;
