@@ -733,9 +733,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3
   address internal constant weETH_ORACLE = 0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3;
 
-  // https://etherscan.io/address/0x48AF11111764E710fcDcE2750db848C63edab57B
+  // https://etherscan.io/address/0xf1e5355cEcaA71036CE21cdF8F9d04061B1BC6E1
   address internal constant weETH_INTEREST_RATE_STRATEGY =
-    0x48AF11111764E710fcDcE2750db848C63edab57B;
+    0xf1e5355cEcaA71036CE21cdF8F9d04061B1BC6E1;
 }
 
 library AaveV3EthereumEModes {
