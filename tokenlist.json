@@ -2327,6 +2327,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
+      "name": "Staked ETH",
+      "decimals": 18,
+      "symbol": "osETH",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmeEGaxEpuGhP8pxDcPAcXt6zkmw3TcHEA3zaVdZa2kuup"
+    },
+    {
+      "chainId": 1,
+      "address": "0x927709711794F3De5DdBF1D176bEE2D55Ba13c21",
+      "name": "Aave Ethereum osETH",
+      "decimals": 18,
+      "symbol": "aEthosETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmeDG5bDNJZzhoU8T2oqybCcpbnY39tWSTb8c9KopuYP8o",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -5981,6 +6003,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 16 },
-  "timestamp": "2024-04-23T08:44:32.311Z"
+  "version": { "major": 3, "minor": 0, "patch": 17 },
+  "timestamp": "2024-05-14T00:10:42.495Z"
 }
