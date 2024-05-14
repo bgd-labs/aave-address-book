@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.27.0](https://github.com/bgd-labs/aave-address-book/compare/v2.26.1...v2.27.0) (2024-05-14)
+
+
+### Features
+
+* add missing abis ([#438](https://github.com/bgd-labs/aave-address-book/issues/438)) ([aa24a81](https://github.com/bgd-labs/aave-address-book/commit/aa24a81922da3d7bbb7eab6bdfaada29300f79a9))
+* add oseth icons ([#447](https://github.com/bgd-labs/aave-address-book/issues/447)) ([b27abbb](https://github.com/bgd-labs/aave-address-book/commit/b27abbb39a7dc2ff3c287813872e59e3d891a5ad))
+
 ## [2.26.1](https://github.com/bgd-labs/aave-address-book/compare/v2.26.0...v2.26.1) (2024-04-23)
 
 
