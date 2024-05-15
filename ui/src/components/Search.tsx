@@ -3,30 +3,30 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { cn } from '@/utils/cn';
-import { type Address } from '@/types';
+import { type SearchItem } from '@/types';
 import Fuse, { FuseResult } from 'fuse.js';
 import { Box } from './Box';
 import { SearchResult } from './SearchResult';
 
 const fuseOptions = {
   includeScore: true,
-  keys: ['searchPath', 'value'],
+  keys: ['searchPath', 'value', 'library', 'key'],
   threshold: 0.2,
-  ignoreLocation: true,
+  // ignoreLocation: false,
   useExtendedSearch: true,
 };
 
 const SEARCH_LIMIT = 32;
 const DEBOUNCE_TIME = 150;
 
-export const Search = ({ addresses }: { addresses: Address[] }) => {
+export const Search = ({ addresses }: { addresses: SearchItem[] }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   const searchString = searchParams.get('q');
 
   const [search, setSearch] = useState(searchString || '');
-  const [results, setResults] = useState<FuseResult<Address>[]>([]);
+  const [results, setResults] = useState<FuseResult<SearchItem>[]>([]);
   const [activeIndex, setActiveIndex] = useState(-1);
 
   const refs = useRef<(HTMLAnchorElement | null)[]>([]);
