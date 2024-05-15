@@ -5,10 +5,10 @@ import { FuseResult } from 'fuse.js';
 import { Box } from '@/components/Box';
 import { ChainIcon } from '@/components/ChainIcon';
 import { cn } from '@/utils/cn';
-import { type Address } from '@/types';
+import { type SearchItem } from '@/types';
 
 type SearchResultProps = {
-  result: FuseResult<Address>;
+  result: FuseResult<SearchItem>;
   tabIndex: number;
 };
 

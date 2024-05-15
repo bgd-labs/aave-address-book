@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Search } from '@/components/Search';
 import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
-import { type Address } from '@/types';
+import { type SearchItem } from '@/types';
 import logo from '@/assets/logo.svg';
 
 function isEthereumAddress(value: any): value is string {
@@ -16,8 +16,8 @@ function flattenObject(
   obj: any,
   path: string[] = [],
   chainId: number | null = null,
-): Address[] {
-  const result: Address[] = [];
+): SearchItem[] {
+  const result: SearchItem[] = [];
   const entries = Object.entries(obj).sort(([keyA], [keyB]) => {
     if (keyA === 'CHAIN_ID') return -1;
     if (keyB === 'CHAIN_ID') return 1;
@@ -42,6 +42,8 @@ function flattenObject(
         chainId,
         link,
         searchPath: newPath.join(''),
+        library: newPath[0],
+        key: newPath[newPath.length - 1],
       });
     }
   }
