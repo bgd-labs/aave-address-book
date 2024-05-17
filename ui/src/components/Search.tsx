@@ -11,7 +11,7 @@ import { SearchResult } from './SearchResult';
 const fuseOptions = {
   includeScore: true,
   keys: ['searchPath', 'value', 'library', 'key'],
-  threshold: 0.2,
+  // threshold: 0.6,
   // ignoreLocation: false,
   useExtendedSearch: true,
 };
