@@ -17,4 +17,7 @@ library MiscBNB {
 
   // https://bscscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
   address internal constant CREATE_3_FACTORY = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
+
+  // https://bscscan.com/address/0x51Bd3d6011Dd0BD88Ee1bEA1a67be799A6A09D79
+  address internal constant AAVE_CL_ROBOT_OPERATOR = 0x51Bd3d6011Dd0BD88Ee1bEA1a67be799A6A09D79;
 }

@@ -18,6 +18,9 @@ library MiscPolygon {
   // https://polygonscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
   address internal constant CREATE_3_FACTORY = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
+  // https://polygonscan.com/address/0xB4C212f5cD17E200019b07e6B1fDf124d35DBCf5
+  address internal constant AAVE_CL_ROBOT_OPERATOR = 0xB4C212f5cD17E200019b07e6B1fDf124d35DBCf5;
+
   // https://polygonscan.com/address/0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58
   address internal constant PROTOCOL_GUARDIAN = 0x1450F2898D6bA2710C98BE9CAF3041330eD5ae58;
 

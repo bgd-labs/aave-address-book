@@ -15,6 +15,9 @@ library MiscBase {
   // https://basescan.org/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
   address internal constant CREATE_3_FACTORY = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
+  // https://basescan.org/address/0x88db99eeBb390a2a4DcAC2E1DDb09c07E911C5C3
+  address internal constant AAVE_CL_ROBOT_OPERATOR = 0x88db99eeBb390a2a4DcAC2E1DDb09c07E911C5C3;
+
   // https://basescan.org/address/0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A
   address internal constant PROTOCOL_GUARDIAN = 0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A;
 

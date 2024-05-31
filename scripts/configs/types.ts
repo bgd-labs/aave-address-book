@@ -99,6 +99,7 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     CREATE_3_FACTORY?: Hex;
     PROTOCOL_GUARDIAN?: Hex;
     AAVE_MERKLE_DISTRIBUTOR?: Hex;
+    AAVE_CL_ROBOT_OPERATOR?: Hex;
     GHO_TOKEN?: Hex;
     GHO_FLASHMINTER_FACILITATOR?: Hex;
     GSM_REGISTRY?: Hex;
