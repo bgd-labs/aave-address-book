@@ -10,7 +10,7 @@ import { SearchResult } from './SearchResult';
 
 const fuseOptions = {
   includeScore: true,
-  keys: [{ name: 'searchPath', weight: 1 }],
+  keys: ['searchPath'],
   threshold: 0.6,
   ignoreLocation: true,
   useExtendedSearch: true,
