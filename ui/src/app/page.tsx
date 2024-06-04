@@ -53,14 +53,28 @@ function flattenObject(
 }
 
 const addresses = flattenObject(addressBook);
+const sortedAddresses = addresses.sort((a, b) => {
+  const chainIdDiff = (a.chainId ?? 0) - (b.chainId ?? 0);
+  if (chainIdDiff !== 0) {
+    return chainIdDiff;
+  }
+
+  const pathLengthDiff = a.path.length - b.path.length;
+  if (pathLengthDiff !== 0) {
+    return pathLengthDiff;
+  }
+
+  return a.searchPath.length - b.searchPath.length;
+});
+const searchPaths = sortedAddresses.map((a) => a.searchPath);
 
 export default function Home() {
   return (
     <>
       <main className="flex min-h-screen flex-col items-center justify-start pl-4 pr-2 pb-8 pt-16 sm:pt-36">
-        <Image src={logo} alt="Aave Search" className="mb-7 w-36 sm:w-44" />
+        <Image src={logo} alt="Aave Search" className="mb-7 w-36 sm:w-44" priority />
         <Suspense fallback={<SearchSkeleton />}>
-          <Search addresses={addresses} />
+          <Search addresses={addresses} searchPaths={searchPaths} />
         </Suspense>
         <Footer />
       </main>

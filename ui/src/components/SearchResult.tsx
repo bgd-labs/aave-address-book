@@ -1,46 +1,59 @@
 'use client';
 
-import { useState, forwardRef } from 'react';
-import { FuseResult } from 'fuse.js';
+import { useState, useRef, forwardRef, useCallback, useEffect } from 'react';
 import { Box } from '@/components/Box';
 import { ChainIcon } from '@/components/ChainIcon';
 import { cn } from '@/utils/cn';
 import { type SearchItem } from '@/types';
 
 type SearchResultProps = {
-  result: FuseResult<SearchItem>;
+  result: SearchItem;
   tabIndex: number;
 };
+
+const COPY_TIMEOUT = 1500;
 
 export const SearchResult = forwardRef<HTMLAnchorElement, SearchResultProps>(
   ({ result, tabIndex }, ref) => {
     const [copied, setCopied] = useState(false);
+    const copyTimeoutId = useRef<NodeJS.Timeout | null>(null);
 
-    const handleCopyClick = async (event: React.MouseEvent) => {
-      event.preventDefault();
-      event.stopPropagation();
-      await navigator.clipboard.writeText(result.item.value);
-      setCopied(true);
-      setTimeout(() => {
-        setCopied(false);
-      }, 1500);
-    };
+    useEffect(() => {
+      return () => {
+        if (copyTimeoutId.current) {
+          clearTimeout(copyTimeoutId.current);
+        }
+      };
+    }, []);
+
+    const handleCopyClick = useCallback(
+      async (event: React.MouseEvent) => {
+        event.preventDefault();
+        event.stopPropagation();
+        await navigator.clipboard.writeText(result.value);
+        setCopied(true);
+        copyTimeoutId.current = setTimeout(() => {
+          setCopied(false);
+        }, COPY_TIMEOUT);
+      },
+      [result.value],
+    );
 
     return (
       <Box className="border-b-brand-900" isHoverable>
         <a
           className="px-3 pt-4 pb-4 flex gap-3 cursor-pointer outline-none"
-          href={result.item.link}
+          href={result.link}
           target="_blank"
           ref={ref}
           tabIndex={tabIndex}
         >
-          <ChainIcon chainId={result.item.chainId} />
+          <ChainIcon chainId={result.chainId} />
           <div className="leading-none">
             <div className="mb-2 flex flex-wrap gap-1">
-              {result.item.path.map((p, i) => (
+              {result.path.map((p, i) => (
                 <span
-                  key={i}
+                  key={p}
                   className="text-brand-900 text-xs font-semibold leading-none rounded-sm bg-brand-100 border border-brand-300 py-1 px-1.5 truncate max-w-60 sm:max-w-full"
                 >
                   {p}
@@ -48,7 +61,7 @@ export const SearchResult = forwardRef<HTMLAnchorElement, SearchResultProps>(
               ))}
             </div>
             <div className="font-mono text-xs text-brand-500 truncate px-0.5 w-60 sm:w-full">
-              {result.item.value}
+              {result.value}
             </div>
           </div>
           <button

@@ -4,28 +4,34 @@ import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { cn } from '@/utils/cn';
 import { type SearchItem } from '@/types';
-import Fuse, { FuseResult } from 'fuse.js';
 import { Box } from './Box';
 import { SearchResult } from './SearchResult';
+import uFuzzy from '@leeoniya/ufuzzy';
 
-const fuseOptions = {
-  includeScore: true,
-  keys: ['searchPath'],
-  threshold: 0.6,
-  ignoreLocation: true,
-  useExtendedSearch: true,
-};
-
+const SEARCH_LIMIT = 100;
 const DEBOUNCE_TIME = 150;
 
-export const Search = ({ addresses }: { addresses: SearchItem[] }) => {
+const getResultText = (results: any[], limit: number) => {
+  const resultCount = results.length;
+  if (resultCount === 0) return '';
+  const displayCount = resultCount < limit ? resultCount : `${limit}+`;
+  return `${displayCount} result${resultCount === 1 ? '' : 's'}`;
+};
+
+export const Search = ({
+  addresses,
+  searchPaths,
+}: {
+  addresses: SearchItem[];
+  searchPaths: string[];
+}) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   const searchString = searchParams.get('q');
 
   const [search, setSearch] = useState(searchString || '');
-  const [results, setResults] = useState<FuseResult<SearchItem>[]>([]);
+  const [results, setResults] = useState<SearchItem[]>([]);
   const [activeIndex, setActiveIndex] = useState(-1);
 
   const refs = useRef<(HTMLAnchorElement | null)[]>([]);
@@ -33,22 +39,30 @@ export const Search = ({ addresses }: { addresses: SearchItem[] }) => {
 
   const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const fuseIndex = useMemo(
-    () => Fuse.createIndex(fuseOptions.keys, addresses),
-    [addresses],
-  );
-
   const performSearch = useCallback(
     (search: string) => {
-      const fuse = new Fuse(addresses, fuseOptions, fuseIndex);
-      if (search) {
-        // const limitedSearch = search.slice(0, SEARCH_LIMIT);
-        setResults(fuse.search(search, { limit: 100 }));
-      } else {
-        setResults([]);
-      }
+      const opts = {
+        intraMode: 1,
+        intraChars: '[a-zA-Z0-9]',
+        caseSensitive: false,
+      };
+
+      const uf = new uFuzzy(opts);
+      const searchWords = search.trim().split(/\s+/);
+
+      let results = searchPaths
+        .map((path, idx) => ({ path, idx }))
+        .filter(({ path }) =>
+          searchWords.every((word) => {
+            const idxs = uf.filter([path], word);
+            return idxs && idxs.length > 0;
+          }),
+        )
+        .map(({ idx }) => addresses[idx]);
+
+      setResults(results.slice(0, SEARCH_LIMIT));
     },
-    [addresses, fuseIndex],
+    [searchPaths, addresses],
   );
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
@@ -141,11 +155,14 @@ export const Search = ({ addresses }: { addresses: SearchItem[] }) => {
             ref={inputRef}
           />
         </div>
+        <div className="absolute top-0 right-5 h-full flex items-center translate-y-[2px] justify-center text-brand-500 text-sm">
+          {getResultText(results, SEARCH_LIMIT)}
+        </div>
       </Box>
       {results.length !== 0 &&
         results.map((result, index) => (
           <SearchResult
-            key={result.item.searchPath}
+            key={result.searchPath}
             result={result}
             ref={(el) => (refs.current[index] = el)}
             tabIndex={index === activeIndex ? 0 : -1}
