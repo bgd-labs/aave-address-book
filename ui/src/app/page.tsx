@@ -7,10 +7,12 @@ import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
 import { type SearchItem } from '@/types';
 import logo from '@/assets/logo.svg';
+import { Address, isAddress } from 'viem';
 
-function isEthereumAddress(value: any): value is string {
-  return typeof value === 'string' && /^0x[a-fA-F0-9]{40}$/.test(value);
-}
+const TAG_MAP: Record<string, string[]> = {
+  S_TOKEN: ['stable', 'debt'],
+  V_TOKEN: ['variable', 'debt'],
+};
 
 function flattenObject(
   obj: any,
@@ -33,17 +35,17 @@ function flattenObject(
     }
     if (typeof value === 'object' && value !== null) {
       result.push(...flattenObject(value, newPath, chainId));
-    } else if (isEthereumAddress(value)) {
+    } else if (isAddress(value as string)) {
       const link = `${CHAIN_ID_CLIENT_MAP[chainId!]?.chain?.blockExplorers?.default.url}/address/${value}`;
-
+      const key = newPath[newPath.length - 1];
+      const searchPath = [...newPath, value];
+      if (TAG_MAP[key]) searchPath.push(...TAG_MAP[key]);
       result.push({
         path: newPath,
-        value,
+        value: value as Address,
         chainId,
         link,
-        searchPath: newPath.join(''),
-        library: newPath[0],
-        key: newPath[newPath.length - 1],
+        searchPath: searchPath.join(' '),
       });
     }
   }

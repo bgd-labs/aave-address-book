@@ -10,13 +10,12 @@ import { SearchResult } from './SearchResult';
 
 const fuseOptions = {
   includeScore: true,
-  keys: ['searchPath', 'value', 'library', 'key'],
-  // threshold: 0.6,
-  // ignoreLocation: false,
+  keys: [{ name: 'searchPath', weight: 1 }],
+  threshold: 0.6,
+  ignoreLocation: true,
   useExtendedSearch: true,
 };
 
-const SEARCH_LIMIT = 32;
 const DEBOUNCE_TIME = 150;
 
 export const Search = ({ addresses }: { addresses: SearchItem[] }) => {
@@ -43,8 +42,8 @@ export const Search = ({ addresses }: { addresses: SearchItem[] }) => {
     (search: string) => {
       const fuse = new Fuse(addresses, fuseOptions, fuseIndex);
       if (search) {
-        const limitedSearch = search.slice(0, SEARCH_LIMIT);
-        setResults(fuse.search(limitedSearch, { limit: 100 }));
+        // const limitedSearch = search.slice(0, SEARCH_LIMIT);
+        setResults(fuse.search(search, { limit: 100 }));
       } else {
         setResults([]);
       }
