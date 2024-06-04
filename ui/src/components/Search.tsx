@@ -9,7 +9,7 @@ import { SearchResult } from './SearchResult';
 import uFuzzy from '@leeoniya/ufuzzy';
 
 const SEARCH_LIMIT = 100;
-const DEBOUNCE_TIME = 150;
+const DEBOUNCE_TIME = 100;
 
 const getResultText = (results: any[], limit: number) => {
   const resultCount = results.length;
@@ -39,30 +39,31 @@ export const Search = ({
 
   const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  const uf = useMemo(() => {
+    const opts = {};
+    return new uFuzzy(opts);
+  }, []);
+
   const performSearch = useCallback(
     (search: string) => {
-      const opts = {
-        intraMode: 1,
-        intraChars: '[a-zA-Z0-9]',
-        caseSensitive: false,
-      };
-
-      const uf = new uFuzzy(opts);
       const searchWords = search.trim().split(/\s+/);
-
-      let results = searchPaths
-        .map((path, idx) => ({ path, idx }))
-        .filter(({ path }) =>
-          searchWords.every((word) => {
-            const idxs = uf.filter([path], word);
-            return idxs && idxs.length > 0;
-          }),
-        )
-        .map(({ idx }) => addresses[idx]);
-
+  
+      let results = [];
+      for (let idx = 0; idx < searchPaths.length; idx++) {
+        const path = searchPaths[idx];
+        const isMatch = searchWords.every((word) => {
+          const idxs = uf.filter([path], word);
+          return idxs && idxs.length > 0;
+        });
+  
+        if (isMatch) {
+          results.push(addresses[idx]);
+        }
+      }
+  
       setResults(results.slice(0, SEARCH_LIMIT));
     },
-    [searchPaths, addresses],
+    [searchPaths, addresses, uf],
   );
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
