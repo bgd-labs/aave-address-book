@@ -2311,7 +2311,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'weETH',
       tags: ['underlying'],
-      logoURI: 'ipfs://Qmc39Z8gPzajG5TFos5uvBDUhrG94qj46UN4FJdZGeqfv4',
+      logoURI: 'ipfs://QmYusTsG3rW5GxgCEYGCayvE2sv4NN3brBgFFHXA8VizgN',
     },
     {
       chainId: 1,
@@ -2320,7 +2320,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aEthweETH',
       tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'ipfs://QmdHmsCCY3w3FvUgPANzkWbSSVicpWzrzWEJUKgNrfixBR',
+      logoURI: 'ipfs://QmWNJt5HzWb87bkYadLcRnxZZXNvuTVXazgkrTLZ1gE3Zu',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
         underlying: '0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee',
@@ -2778,7 +2778,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'EURA',
       tags: ['underlying'],
-      logoURI: 'ipfs://QmcoURPK859RCJkYP5XurPChSg5nz2ofrbXWVeHhBzRz1e',
+      logoURI: 'ipfs://QmdiME7YGM59pRLoGQjnpHTJELacUp6GXhMY99XWRrpEyK',
     },
     {
       chainId: 137,
@@ -3538,6 +3538,28 @@ export const tokenlist = {
         pool: '0xA238Dd80C259a72e81d7e4664a9801593F98d1c5',
         underlying: '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
         underlyingAToken: '0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB',
+      },
+    },
+    {
+      chainId: 8453,
+      address: '0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A',
+      name: 'Wrapped eETH',
+      decimals: 18,
+      symbol: 'weETH',
+      tags: ['underlying'],
+      logoURI: 'ipfs://QmYusTsG3rW5GxgCEYGCayvE2sv4NN3brBgFFHXA8VizgN',
+    },
+    {
+      chainId: 8453,
+      address: '0x7C307e128efA31F540F2E2d976C995E0B65F51F6',
+      name: 'Aave Base weETH',
+      decimals: 18,
+      symbol: 'aBasweETH',
+      tags: ['aTokenV3', 'aaveV3'],
+      logoURI: 'ipfs://QmWNJt5HzWb87bkYadLcRnxZZXNvuTVXazgkrTLZ1gE3Zu',
+      extensions: {
+        pool: '0xA238Dd80C259a72e81d7e4664a9801593F98d1c5',
+        underlying: '0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A',
       },
     },
     {
@@ -4771,7 +4793,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'weETH',
       tags: ['underlying'],
-      logoURI: 'ipfs://Qmc39Z8gPzajG5TFos5uvBDUhrG94qj46UN4FJdZGeqfv4',
+      logoURI: 'ipfs://QmYusTsG3rW5GxgCEYGCayvE2sv4NN3brBgFFHXA8VizgN',
     },
     {
       chainId: 42161,
@@ -4780,7 +4802,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aArbweETH',
       tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'ipfs://QmdHmsCCY3w3FvUgPANzkWbSSVicpWzrzWEJUKgNrfixBR',
+      logoURI: 'ipfs://QmWNJt5HzWb87bkYadLcRnxZZXNvuTVXazgkrTLZ1gE3Zu',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
         underlying: '0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe',
@@ -6003,6 +6025,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 17},
-  timestamp: '2024-05-14T00:10:42.495Z',
+  version: {major: 3, minor: 0, patch: 18},
+  timestamp: '2024-06-04T00:10:45.852Z',
 };
