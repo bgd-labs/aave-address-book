@@ -40,7 +40,10 @@ export const Search = ({
   const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const uf = useMemo(() => {
-    const opts = {};
+    const opts = {
+      intraMode: 1,
+      intraChars: "[a-z\\d'_]"
+    };
     return new uFuzzy(opts);
   }, []);
 
