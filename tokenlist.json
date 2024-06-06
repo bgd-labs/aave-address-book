@@ -3541,6 +3541,28 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYusTsG3rW5GxgCEYGCayvE2sv4NN3brBgFFHXA8VizgN"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x7C307e128efA31F540F2E2d976C995E0B65F51F6",
+      "name": "Aave Base weETH",
+      "decimals": 18,
+      "symbol": "aBasweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmWNJt5HzWb87bkYadLcRnxZZXNvuTVXazgkrTLZ1gE3Zu",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -6004,5 +6026,5 @@
     }
   ],
   "version": { "major": 3, "minor": 0, "patch": 18 },
-  "timestamp": "2024-05-31T09:23:51.984Z"
+  "timestamp": "2024-06-04T00:10:45.852Z"
 }
