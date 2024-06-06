@@ -15,6 +15,9 @@ library MiscAvalanche {
   // https://snowscan.xyz/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
   address internal constant CREATE_3_FACTORY = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
+  // https://snowscan.xyz/address/0x06d958772304e7220fc3E463756CE01Ed0D24db2
+  address internal constant AAVE_CL_ROBOT_OPERATOR = 0x06d958772304e7220fc3E463756CE01Ed0D24db2;
+
   // https://snowscan.xyz/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
   address internal constant PROTOCOL_GUARDIAN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
 

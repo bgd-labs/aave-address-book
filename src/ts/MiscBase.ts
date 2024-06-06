@@ -11,6 +11,9 @@ export const PROXY_ADMIN = '0xc85b1E333aecc99340b2320493Fe2d22b8734795';
 // https://basescan.org/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
 export const CREATE_3_FACTORY = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
 
+// https://basescan.org/address/0x88db99eeBb390a2a4DcAC2E1DDb09c07E911C5C3
+export const AAVE_CL_ROBOT_OPERATOR = '0x88db99eeBb390a2a4DcAC2E1DDb09c07E911C5C3';
+
 // https://basescan.org/address/0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A
 export const PROTOCOL_GUARDIAN = '0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A';
 

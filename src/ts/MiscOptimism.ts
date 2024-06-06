@@ -11,6 +11,9 @@ export const PROXY_ADMIN = '0xD3cF979e676265e4f6379749DECe4708B9A22476';
 // https://optimistic.etherscan.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
 export const CREATE_3_FACTORY = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
 
+// https://optimistic.etherscan.io/address/0x55Cf9583D7D30DC4936bAee1f747591dBECe5df7
+export const AAVE_CL_ROBOT_OPERATOR = '0x55Cf9583D7D30DC4936bAee1f747591dBECe5df7';
+
 // https://optimistic.etherscan.io/address/0xE50c8C619d05ff98b22Adf991F17602C774F785c
 export const PROTOCOL_GUARDIAN = '0xE50c8C619d05ff98b22Adf991F17602C774F785c';
 

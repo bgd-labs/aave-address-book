@@ -15,6 +15,9 @@ library MiscArbitrum {
   // https://arbiscan.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
   address internal constant CREATE_3_FACTORY = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
+  // https://arbiscan.io/address/0xaa944aD95e51CB83C1f35FAEEDfC7d2c31B0BB4d
+  address internal constant AAVE_CL_ROBOT_OPERATOR = 0xaa944aD95e51CB83C1f35FAEEDfC7d2c31B0BB4d;
+
   // https://arbiscan.io/address/0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb
   address internal constant PROTOCOL_GUARDIAN = 0xbbd9f90699c1FA0D7A65870D241DD1f1217c96Eb;
 

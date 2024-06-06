@@ -14,4 +14,7 @@ export const PROXY_ADMIN = '0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c';
 // https://bscscan.com/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
 export const CREATE_3_FACTORY = '0x3b56998Ec06477704622ca8e2eA1b4db134cec32';
 
+// https://bscscan.com/address/0x51Bd3d6011Dd0BD88Ee1bEA1a67be799A6A09D79
+export const AAVE_CL_ROBOT_OPERATOR = '0x51Bd3d6011Dd0BD88Ee1bEA1a67be799A6A09D79';
+
 export const CHAIN_ID = 56;
