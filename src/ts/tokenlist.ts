@@ -2311,7 +2311,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'weETH',
       tags: ['underlying'],
-      logoURI: 'ipfs://QmYusTsG3rW5GxgCEYGCayvE2sv4NN3brBgFFHXA8VizgN',
+      logoURI: 'ipfs://QmfVkuQkCmBCanmvBaehJHpnD2Mx7UsPT7JEn7LgpTXZqY',
     },
     {
       chainId: 1,
@@ -2355,6 +2355,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'USDe',
       tags: ['underlying'],
+      logoURI: 'ipfs://Qmc2GCcBVstvZwriyopKa8gDputG2vS5G5BmhLH3v3iuF7',
     },
     {
       chainId: 1,
@@ -2363,6 +2364,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aEthUSDe',
       tags: ['aTokenV3', 'aaveV3'],
+      logoURI: 'ipfs://QmRE7FvahSLT6u37jjtCqQvqZs5dyVR2tgV5ERNGbspSji',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
         underlying: '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
@@ -3567,7 +3569,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'weETH',
       tags: ['underlying'],
-      logoURI: 'ipfs://QmYusTsG3rW5GxgCEYGCayvE2sv4NN3brBgFFHXA8VizgN',
+      logoURI: 'ipfs://QmfVkuQkCmBCanmvBaehJHpnD2Mx7UsPT7JEn7LgpTXZqY',
     },
     {
       chainId: 8453,
@@ -4813,7 +4815,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'weETH',
       tags: ['underlying'],
-      logoURI: 'ipfs://QmYusTsG3rW5GxgCEYGCayvE2sv4NN3brBgFFHXA8VizgN',
+      logoURI: 'ipfs://QmfVkuQkCmBCanmvBaehJHpnD2Mx7UsPT7JEn7LgpTXZqY',
     },
     {
       chainId: 42161,
@@ -6045,6 +6047,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 19},
-  timestamp: '2024-06-06T16:07:33.483Z',
+  version: {major: 3, minor: 0, patch: 20},
+  timestamp: '2024-06-06T17:14:34.891Z',
 };
