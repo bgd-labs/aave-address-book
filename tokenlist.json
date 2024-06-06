@@ -2349,6 +2349,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x4F5923Fc5FD4a93352581b38B7cD26943012DECF",
+      "name": "Aave Ethereum USDe",
+      "decimals": 18,
+      "symbol": "aEthUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -6025,6 +6045,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 18 },
-  "timestamp": "2024-06-04T00:10:45.852Z"
+  "version": { "major": 3, "minor": 0, "patch": 19 },
+  "timestamp": "2024-06-06T16:07:33.483Z"
 }
