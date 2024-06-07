@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.28.0](https://github.com/bgd-labs/aave-address-book/compare/v2.27.0...v2.28.0) (2024-06-06)
+
+
+### Features
+
+* add aave cl robot operator ([#459](https://github.com/bgd-labs/aave-address-book/issues/459)) ([b789e07](https://github.com/bgd-labs/aave-address-book/commit/b789e0763fcc6a0b83daa3c16b7b7e32a6f86b30))
+* improve search ([#460](https://github.com/bgd-labs/aave-address-book/issues/460)) ([2dc0566](https://github.com/bgd-labs/aave-address-book/commit/2dc0566a46fb7747acee3791cf42e578db34edfe))
+* update search algo, use uFuzzy ([#461](https://github.com/bgd-labs/aave-address-book/issues/461)) ([bf12e26](https://github.com/bgd-labs/aave-address-book/commit/bf12e26e8408142bfd9d3edb4481da3a681fce59))
+
+
+### Bug Fixes
+
+* added `susde` and `usde` assets icons ([#463](https://github.com/bgd-labs/aave-address-book/issues/463)) ([e87e5b5](https://github.com/bgd-labs/aave-address-book/commit/e87e5b59e24f1e2aa90e1e66016d606958bfda3d))
+* added missing assets ([#457](https://github.com/bgd-labs/aave-address-book/issues/457)) ([1b6997f](https://github.com/bgd-labs/aave-address-book/commit/1b6997f671e2678fbc8716a92043313704afa6b3))
+* improve fuzzing ([#449](https://github.com/bgd-labs/aave-address-book/issues/449)) ([8b1a6c5](https://github.com/bgd-labs/aave-address-book/commit/8b1a6c5b022b60eb4a71f85d11f8a584a8c487af))
+* show threshold ([#452](https://github.com/bgd-labs/aave-address-book/issues/452)) ([f73f77c](https://github.com/bgd-labs/aave-address-book/commit/f73f77ca03f61c7bc3b6899d173e96ea200cf529))
+
 ## [2.27.0](https://github.com/bgd-labs/aave-address-book/compare/v2.26.1...v2.27.0) (2024-05-14)
 
 
