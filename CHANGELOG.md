@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.29.0](https://github.com/bgd-labs/aave-address-book/compare/v2.28.0...v2.29.0) (2024-06-10)
+
+
+### Features
+
+* add arbitrum stata oracle ([#465](https://github.com/bgd-labs/aave-address-book/issues/465)) ([843be68](https://github.com/bgd-labs/aave-address-book/commit/843be688d7b9853b04f8860db17c3a064729fd2c))
+
 ## [2.28.0](https://github.com/bgd-labs/aave-address-book/compare/v2.27.0...v2.28.0) (2024-06-06)
 
 
