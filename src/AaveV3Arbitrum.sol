@@ -487,9 +487,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x517276B5972C4Db7E88B9F76Ee500E888a2D73C3
   address internal constant weETH_ORACLE = 0x517276B5972C4Db7E88B9F76Ee500E888a2D73C3;
 
-  // https://arbiscan.io/address/0x0fc12Ad84210695dE8C0D5D8B6f720C37cEaB02f
+  // https://arbiscan.io/address/0x4011fcd421b9E90f131B164EC1d162DBE269621C
   address internal constant weETH_INTEREST_RATE_STRATEGY =
-    0x0fc12Ad84210695dE8C0D5D8B6f720C37cEaB02f;
+    0x4011fcd421b9E90f131B164EC1d162DBE269621C;
 }
 
 library AaveV3ArbitrumEModes {
