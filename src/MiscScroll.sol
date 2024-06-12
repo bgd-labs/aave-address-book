@@ -9,6 +9,9 @@ library MiscScroll {
   // https://scrollscan.com/address/0x782559e349b084bB7C07c08404aE6E3436cDAE2E
   address internal constant PROXY_ADMIN = 0x782559e349b084bB7C07c08404aE6E3436cDAE2E;
 
+  // https://scrollscan.com/address/0xC6f44D0daC966658Db36742f5153bDa0EBbb45ab
+  address internal constant CREATE_3_FACTORY = 0xC6f44D0daC966658Db36742f5153bDa0EBbb45ab;
+
   // https://scrollscan.com/address/0x63B20270b695E44Ac94Ad7592D5f81E3575b93e7
   address internal constant PROTOCOL_GUARDIAN = 0x63B20270b695E44Ac94Ad7592D5f81E3575b93e7;
 
