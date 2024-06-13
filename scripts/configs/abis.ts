@@ -28,6 +28,7 @@ export const ABI_INTERFACES = [
   'IPool',
   'IPoolAddressesProvider',
   'IPoolConfigurator',
+  'IStakeToken',
 ];
 
 export const DOWNLOAD_ABI_INTERFACES = [
@@ -50,10 +51,6 @@ export const DOWNLOAD_ABI_INTERFACES = [
   {
     address: mainnetProtoV3Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
     name: 'IUiPoolDataProvider',
-  },
-  {
-    address: '0x50f9d4e28309303f0cdcac8af0b569e8b75ab857',
-    name: 'IStakeToken',
   },
   {
     address: '0x5D4Aa78B08Bc7C530e21bf7447988b1Be7991322',

@@ -1,6 +1,6 @@
 pragma solidity ^0.8.10;
 
-interface StakeToken {
+interface IStakeToken {
   event Approval(address indexed owner, address indexed spender, uint256 value);
   event AssetConfigUpdated(address indexed asset, uint256 emission);
   event AssetIndexUpdated(address indexed asset, uint256 index);
