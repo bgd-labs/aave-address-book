@@ -564,8 +564,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xD110cac5d8682A3b045D5524a9903E031d70FCCd
   address internal constant GHO_ORACLE = 0xD110cac5d8682A3b045D5524a9903E031d70FCCd;
 
-  // https://etherscan.io/address/0xD6d3b0a2c30E317C997abca49F9B498C2655B980
-  address internal constant GHO_INTEREST_RATE_STRATEGY = 0xD6d3b0a2c30E317C997abca49F9B498C2655B980;
+  // https://etherscan.io/address/0x4001afa0E0B6A882bE51499932a6f82F133D03F9
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x4001afa0E0B6A882bE51499932a6f82F133D03F9;
 
   // https://etherscan.io/address/0xD33526068D116cE69F19A9ee46F0bd304F21A51f
   address internal constant RPL_UNDERLYING = 0xD33526068D116cE69F19A9ee46F0bd304F21A51f;
