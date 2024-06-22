@@ -2371,6 +2371,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b",
+      "name": "ETHx",
+      "decimals": 18,
+      "symbol": "ETHx",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmYXBy6e3HFb9ZTC3ECNWD4ziXjBD4R1Eo1nyPBDMPSskR"
+    },
+    {
+      "chainId": 1,
+      "address": "0x1c0E06a0b1A4c160c17545FF2A951bfcA57C0002",
+      "name": "Aave Ethereum ETHx",
+      "decimals": 18,
+      "symbol": "aEthETHx",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmYMZXZfrHZ7A4gBJSdb7DW3yvoDTSHrsW5ouF5D4SFf61",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -6047,6 +6069,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 20 },
-  "timestamp": "2024-06-06T17:14:34.891Z"
+  "version": { "major": 3, "minor": 0, "patch": 21 },
+  "timestamp": "2024-06-22T00:10:57.128Z"
 }
