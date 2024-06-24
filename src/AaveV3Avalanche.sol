@@ -224,9 +224,9 @@ library AaveV3AvalancheAssets {
   // https://snowscan.xyz/address/0x976B3D034E162d8bD72D6b9C989d545b839003b0
   address internal constant WETHe_ORACLE = 0x976B3D034E162d8bD72D6b9C989d545b839003b0;
 
-  // https://snowscan.xyz/address/0x271f5f8325051f22caDa18FfedD4a805584a232A
+  // https://snowscan.xyz/address/0xd5CA18a70189309664e34FB8150799ff13722308
   address internal constant WETHe_INTEREST_RATE_STRATEGY =
-    0x271f5f8325051f22caDa18FfedD4a805584a232A;
+    0xd5CA18a70189309664e34FB8150799ff13722308;
 
   // https://snowscan.xyz/address/0xf8E24175D01653fd6AA203C2C17B1e4Dd1CA2731
   address internal constant WETHe_STATA_TOKEN = 0xf8E24175D01653fd6AA203C2C17B1e4Dd1CA2731;

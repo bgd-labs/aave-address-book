@@ -108,9 +108,9 @@ library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0xa767f745331D267c7751297D982b050c93985627
   address internal constant WETH_ORACLE = 0xa767f745331D267c7751297D982b050c93985627;
 
-  // https://gnosisscan.io/address/0xD84d86083010FB683f1e8fA3809ee8DC90A4C4DB
+  // https://gnosisscan.io/address/0xD3120200c339f608C394CCF9cBAD4bABab63B5dD
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xD84d86083010FB683f1e8fA3809ee8DC90A4C4DB;
+    0xD3120200c339f608C394CCF9cBAD4bABab63B5dD;
 
   // https://gnosisscan.io/address/0xD843FB478c5aA9759FeA3f3c98D467e2F136190a
   address internal constant WETH_STATA_TOKEN = 0xD843FB478c5aA9759FeA3f3c98D467e2F136190a;
