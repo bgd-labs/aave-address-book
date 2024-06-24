@@ -193,8 +193,8 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e
   address internal constant ETH_ORACLE = 0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e;
 
-  // https://bscscan.com/address/0x6EB97Ba43A1576989bc203178BD64C1182f24DDc
-  address internal constant ETH_INTEREST_RATE_STRATEGY = 0x6EB97Ba43A1576989bc203178BD64C1182f24DDc;
+  // https://bscscan.com/address/0x34E8e73bFB04454bd203410b009124527A57Ea3F
+  address internal constant ETH_INTEREST_RATE_STRATEGY = 0x34E8e73bFB04454bd203410b009124527A57Ea3F;
 
   // https://bscscan.com/address/0x52077433fB7053D747E2846aD0C18ff5015C368E
   address internal constant ETH_STATA_TOKEN = 0x52077433fB7053D747E2846aD0C18ff5015C368E;

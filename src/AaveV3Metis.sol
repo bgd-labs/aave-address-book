@@ -207,9 +207,9 @@ library AaveV3MetisAssets {
   // https://andromeda-explorer.metis.io/address/0x3BBe70e2F96c87aEce7F67A2b0178052f62E37fE
   address internal constant WETH_ORACLE = 0x3BBe70e2F96c87aEce7F67A2b0178052f62E37fE;
 
-  // https://andromeda-explorer.metis.io/address/0x83e654d42f437915bf849dE04c19AAd8C5e8c01E
+  // https://andromeda-explorer.metis.io/address/0xf043D74F1CbF798D8E9a3cB19fDf2084C275f921
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0x83e654d42f437915bf849dE04c19AAd8C5e8c01E;
+    0xf043D74F1CbF798D8E9a3cB19fDf2084C275f921;
 
   // https://andromeda-explorer.metis.io/address/0x2f1606864d6322c54b50a1762D4a1ca67f42d23d
   address internal constant WETH_STATA_TOKEN = 0x2f1606864d6322c54b50a1762D4a1ca67f42d23d;

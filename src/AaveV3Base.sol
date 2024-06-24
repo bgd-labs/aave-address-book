@@ -130,9 +130,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x71041dddad3595F9CEd3DcCFBe3D1F4b0a16Bb70
   address internal constant WETH_ORACLE = 0x71041dddad3595F9CEd3DcCFBe3D1F4b0a16Bb70;
 
-  // https://basescan.org/address/0xC1F6588f4A1145D0B7F94c86a773bB47F0eC0759
+  // https://basescan.org/address/0x0D9e605d77Ea2ADe3eEAfa86cE353899E9D3d72C
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xC1F6588f4A1145D0B7F94c86a773bB47F0eC0759;
+    0x0D9e605d77Ea2ADe3eEAfa86cE353899E9D3d72C;
 
   // https://basescan.org/address/0x468973e3264F2aEba0417A8f2cD0Ec397E738898
   address internal constant WETH_STATA_TOKEN = 0x468973e3264F2aEba0417A8f2cD0Ec397E738898;

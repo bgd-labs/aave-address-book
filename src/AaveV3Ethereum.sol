@@ -131,9 +131,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
   address internal constant WETH_ORACLE = 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
 
-  // https://etherscan.io/address/0x06B1Ec378618EA736a65395eA5CAB69A2410493B
+  // https://etherscan.io/address/0x42ec99A020B78C449d17d93bC4c89e0189B5811d
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0x06B1Ec378618EA736a65395eA5CAB69A2410493B;
+    0x42ec99A020B78C449d17d93bC4c89e0189B5811d;
 
   // https://etherscan.io/address/0x252231882FB38481497f3C767469106297c8d93b
   address internal constant WETH_STATA_TOKEN = 0x252231882FB38481497f3C767469106297c8d93b;

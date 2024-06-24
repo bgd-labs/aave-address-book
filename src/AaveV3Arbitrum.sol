@@ -225,9 +225,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612
   address internal constant WETH_ORACLE = 0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612;
 
-  // https://arbiscan.io/address/0xd56eE97960b1b2953e751151Fd84888cF3F3b521
+  // https://arbiscan.io/address/0x42ec99A020B78C449d17d93bC4c89e0189B5811d
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xd56eE97960b1b2953e751151Fd84888cF3F3b521;
+    0x42ec99A020B78C449d17d93bC4c89e0189B5811d;
 
   // https://arbiscan.io/address/0x352F3475716261dCC991Bd5F2aF973eB3D0F5878
   address internal constant WETH_STATA_TOKEN = 0x352F3475716261dCC991Bd5F2aF973eB3D0F5878;
