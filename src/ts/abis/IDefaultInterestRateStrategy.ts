@@ -2,59 +2,46 @@
 export const IDefaultInterestRateStrategy_ABI = [
   {
     type: 'function',
-    name: 'ADDRESSES_PROVIDER',
+    name: 'EXCESS_UTILIZATION_RATE',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'OPTIMAL_UTILIZATION_RATE',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'addressesProvider',
     inputs: [],
     outputs: [
       {
         name: '',
         type: 'address',
-        internalType: 'contract IPoolAddressesProvider',
+        internalType: 'address',
       },
     ],
     stateMutability: 'view',
   },
   {
     type: 'function',
-    name: 'MAX_EXCESS_STABLE_TO_TOTAL_DEBT_RATIO',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    name: 'MAX_EXCESS_USAGE_RATIO',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    name: 'OPTIMAL_STABLE_TO_TOTAL_DEBT_RATIO',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    name: 'OPTIMAL_USAGE_RATIO',
+    name: 'baseVariableBorrowRate',
     inputs: [],
     outputs: [
       {
@@ -70,56 +57,34 @@ export const IDefaultInterestRateStrategy_ABI = [
     name: 'calculateInterestRates',
     inputs: [
       {
-        name: 'params',
-        type: 'tuple',
-        internalType: 'struct DataTypes.CalculateInterestRatesParams',
-        components: [
-          {
-            name: 'unbacked',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'liquidityAdded',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'liquidityTaken',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'totalStableDebt',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'totalVariableDebt',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'averageStableBorrowRate',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'reserveFactor',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'reserve',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'aToken',
-            type: 'address',
-            internalType: 'address',
-          },
-        ],
+        name: 'reserve',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'availableLiquidity',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+      {
+        name: 'totalStableDebt',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+      {
+        name: 'totalVariableDebt',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+      {
+        name: 'averageStableBorrowRate',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+      {
+        name: 'reserveFactor',
+        type: 'uint256',
+        internalType: 'uint256',
       },
     ],
     outputs: [
@@ -133,32 +98,6 @@ export const IDefaultInterestRateStrategy_ABI = [
         type: 'uint256',
         internalType: 'uint256',
       },
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    name: 'getBaseStableBorrowRate',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    name: 'getBaseVariableBorrowRate',
-    inputs: [],
-    outputs: [
       {
         name: '',
         type: 'uint256',
@@ -182,7 +121,7 @@ export const IDefaultInterestRateStrategy_ABI = [
   },
   {
     type: 'function',
-    name: 'getStableRateExcessOffset',
+    name: 'stableRateSlope1',
     inputs: [],
     outputs: [
       {
@@ -195,7 +134,7 @@ export const IDefaultInterestRateStrategy_ABI = [
   },
   {
     type: 'function',
-    name: 'getStableRateSlope1',
+    name: 'stableRateSlope2',
     inputs: [],
     outputs: [
       {
@@ -208,7 +147,7 @@ export const IDefaultInterestRateStrategy_ABI = [
   },
   {
     type: 'function',
-    name: 'getStableRateSlope2',
+    name: 'variableRateSlope1',
     inputs: [],
     outputs: [
       {
@@ -221,20 +160,7 @@ export const IDefaultInterestRateStrategy_ABI = [
   },
   {
     type: 'function',
-    name: 'getVariableRateSlope1',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    name: 'getVariableRateSlope2',
+    name: 'variableRateSlope2',
     inputs: [],
     outputs: [
       {

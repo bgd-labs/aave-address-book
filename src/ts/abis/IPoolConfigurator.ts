@@ -2,6 +2,19 @@
 export const IPoolConfigurator_ABI = [
   {
     type: 'function',
+    name: 'MAX_GRACE_PERIOD',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'uint40',
+        internalType: 'uint40',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'configureReserveAsCollateral',
     inputs: [
       {
@@ -30,6 +43,19 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
+    name: 'disableLiquidationGracePeriod',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'dropReserve',
     inputs: [
       {
@@ -39,6 +65,38 @@ export const IPoolConfigurator_ABI = [
       },
     ],
     outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'getConfiguratorLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'getPendingLtv',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+    ],
     stateMutability: 'nonpayable',
   },
   {
@@ -66,9 +124,9 @@ export const IPoolConfigurator_ABI = [
             internalType: 'address',
           },
           {
-            name: 'underlyingAssetDecimals',
-            type: 'uint8',
-            internalType: 'uint8',
+            name: 'useVirtualBalance',
+            type: 'bool',
+            internalType: 'bool',
           },
           {
             name: 'interestRateStrategyAddress',
@@ -122,6 +180,11 @@ export const IPoolConfigurator_ABI = [
           },
           {
             name: 'params',
+            type: 'bytes',
+            internalType: 'bytes',
+          },
+          {
+            name: 'interestRateData',
             type: 'bytes',
             internalType: 'bytes',
           },
@@ -268,6 +331,24 @@ export const IPoolConfigurator_ABI = [
         type: 'bool',
         internalType: 'bool',
       },
+      {
+        name: 'gracePeriod',
+        type: 'uint40',
+        internalType: 'uint40',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'setPoolPause',
+    inputs: [
+      {
+        name: 'paused',
+        type: 'bool',
+        internalType: 'bool',
+      },
     ],
     outputs: [],
     stateMutability: 'nonpayable',
@@ -364,6 +445,24 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
+    name: 'setReserveInterestRateData',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'rateData',
+        type: 'bytes',
+        internalType: 'bytes',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'setReserveInterestRateStrategyAddress',
     inputs: [
       {
@@ -375,6 +474,11 @@ export const IPoolConfigurator_ABI = [
         name: 'newRateStrategyAddress',
         type: 'address',
         internalType: 'address',
+      },
+      {
+        name: 'rateData',
+        type: 'bytes',
+        internalType: 'bytes',
       },
     ],
     outputs: [],
@@ -393,6 +497,29 @@ export const IPoolConfigurator_ABI = [
         name: 'paused',
         type: 'bool',
         internalType: 'bool',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'setReservePause',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'paused',
+        type: 'bool',
+        internalType: 'bool',
+      },
+      {
+        name: 'gracePeriod',
+        type: 'uint40',
+        internalType: 'uint40',
       },
     ],
     outputs: [],
@@ -901,6 +1028,38 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'event',
+    name: 'LiquidationGracePeriodChanged',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'gracePeriodUntil',
+        type: 'uint40',
+        indexed: false,
+        internalType: 'uint40',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'LiquidationGracePeriodDisabled',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
     name: 'LiquidationProtocolFeeChanged',
     inputs: [
       {
@@ -917,6 +1076,25 @@ export const IPoolConfigurator_ABI = [
       },
       {
         name: 'newFee',
+        type: 'uint256',
+        indexed: false,
+        internalType: 'uint256',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'PendingLtvChanged',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'ltv',
         type: 'uint256',
         indexed: false,
         internalType: 'uint256',
@@ -1071,6 +1249,31 @@ export const IPoolConfigurator_ABI = [
         type: 'address',
         indexed: false,
         internalType: 'address',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'ReserveInterestRateDataChanged',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'strategy',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'data',
+        type: 'bytes',
+        indexed: false,
+        internalType: 'bytes',
       },
     ],
     anonymous: false,

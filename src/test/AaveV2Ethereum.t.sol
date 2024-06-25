@@ -4,7 +4,7 @@ pragma solidity >=0.6.0;
 import 'forge-std/Test.sol';
 import {AaveV2Ethereum} from '../AaveAddressBook.sol';
 // import is unnecessary here, but needed somewhere in the project so we can infer the abi from build artifacts
-import {IERC20Detailed} from 'aave-v3-core/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol';
+import {IERC20Detailed} from 'aave-v3-origin/core/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol';
 
 contract AaveAddressBookTest is Test {
   function setUp() public {}

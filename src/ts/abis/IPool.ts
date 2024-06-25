@@ -342,6 +342,32 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
+    name: 'getBorrowLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'getBridgeLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'getConfiguration',
     inputs: [
       {
@@ -414,6 +440,77 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
+    name: 'getEModeLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'getFlashLoanLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'getLiquidationGracePeriod',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'uint40',
+        internalType: 'uint40',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'getLiquidationLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'getPoolLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'getReserveAddressById',
     inputs: [
       {
@@ -445,7 +542,7 @@ export const IPool_ABI = [
       {
         name: '',
         type: 'tuple',
-        internalType: 'struct DataTypes.ReserveData',
+        internalType: 'struct DataTypes.ReserveDataLegacy',
         components: [
           {
             name: 'configuration',
@@ -536,6 +633,119 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
+    name: 'getReserveDataExtended',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'tuple',
+        internalType: 'struct DataTypes.ReserveData',
+        components: [
+          {
+            name: 'configuration',
+            type: 'tuple',
+            internalType: 'struct DataTypes.ReserveConfigurationMap',
+            components: [
+              {
+                name: 'data',
+                type: 'uint256',
+                internalType: 'uint256',
+              },
+            ],
+          },
+          {
+            name: 'liquidityIndex',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'currentLiquidityRate',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'variableBorrowIndex',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'currentVariableBorrowRate',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'currentStableBorrowRate',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'lastUpdateTimestamp',
+            type: 'uint40',
+            internalType: 'uint40',
+          },
+          {
+            name: 'id',
+            type: 'uint16',
+            internalType: 'uint16',
+          },
+          {
+            name: 'liquidationGracePeriodUntil',
+            type: 'uint40',
+            internalType: 'uint40',
+          },
+          {
+            name: 'aTokenAddress',
+            type: 'address',
+            internalType: 'address',
+          },
+          {
+            name: 'stableDebtTokenAddress',
+            type: 'address',
+            internalType: 'address',
+          },
+          {
+            name: 'variableDebtTokenAddress',
+            type: 'address',
+            internalType: 'address',
+          },
+          {
+            name: 'interestRateStrategyAddress',
+            type: 'address',
+            internalType: 'address',
+          },
+          {
+            name: 'accruedToTreasury',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'unbacked',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'isolationModeTotalDebt',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+          {
+            name: 'virtualUnderlyingBalance',
+            type: 'uint128',
+            internalType: 'uint128',
+          },
+        ],
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'getReserveNormalizedIncome',
     inputs: [
       {
@@ -574,6 +784,19 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
+    name: 'getReservesCount',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'getReservesList',
     inputs: [],
     outputs: [
@@ -584,6 +807,19 @@ export const IPool_ABI = [
       },
     ],
     stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getSupplyLogic',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'nonpayable',
   },
   {
     type: 'function',
@@ -670,6 +906,25 @@ export const IPool_ABI = [
         name: '',
         type: 'uint256',
         internalType: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getVirtualUnderlyingBalance',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'uint128',
+        internalType: 'uint128',
       },
     ],
     stateMutability: 'view',
@@ -979,6 +1234,24 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
+    name: 'setLiquidationGracePeriod',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'until',
+        type: 'uint40',
+        internalType: 'uint40',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'setReserveInterestRateStrategyAddress',
     inputs: [
       {
@@ -1115,6 +1388,50 @@ export const IPool_ABI = [
         name: 'interestRateMode',
         type: 'uint256',
         internalType: 'uint256',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'swapToVariable',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'user',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'syncIndexesState',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'syncRatesState',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
       },
     ],
     outputs: [],
