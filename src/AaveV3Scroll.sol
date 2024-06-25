@@ -114,9 +114,9 @@ library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x6bF14CB0A831078629D993FDeBcB182b21A8774C
   address internal constant WETH_ORACLE = 0x6bF14CB0A831078629D993FDeBcB182b21A8774C;
 
-  // https://scrollscan.com/address/0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05
+  // https://scrollscan.com/address/0xE9EcAE0EDA2A97BB6a06a6244FfdFa6b1D886967
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05;
+    0xE9EcAE0EDA2A97BB6a06a6244FfdFa6b1D886967;
 
   // https://scrollscan.com/address/0x6b9DfaC194fa78a1882680E2cE19194D006AeEfd
   address internal constant WETH_STATA_TOKEN = 0x6b9DfaC194fa78a1882680E2cE19194D006AeEfd;
