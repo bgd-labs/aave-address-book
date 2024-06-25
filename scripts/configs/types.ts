@@ -39,6 +39,9 @@ export interface PoolConfig {
   POOL_ADDRESSES_PROVIDER: Hex;
   // will be inlined in js pool export
   additionalAddresses: {
+    ARB_GHO?: Hex;
+    ETH_TOKEN_POOL?: Hex;
+    ARB_TOKEN_POOL?: Hex;
     FAUCET?: Hex;
     WETH_GATEWAY?: Hex;
     REPAY_WITH_COLLATERAL_ADAPTER?: Hex;

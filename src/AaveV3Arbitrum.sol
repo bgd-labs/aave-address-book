@@ -61,6 +61,12 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
   address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
+  // https://arbiscan.io/address/0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33
+  address internal constant ARB_GHO = 0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33;
+
+  // https://arbiscan.io/address/0xF168B83598516A532a85995b52504a2Fa058C068
+  address internal constant ARB_TOKEN_POOL = 0xF168B83598516A532a85995b52504a2Fa058C068;
+
   // https://arbiscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
 
