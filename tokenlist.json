@@ -2355,7 +2355,7 @@
       "decimals": 18,
       "symbol": "USDe",
       "tags": ["underlying"],
-      "logoURI": "ipfs://Qmc2GCcBVstvZwriyopKa8gDputG2vS5G5BmhLH3v3iuF7"
+      "logoURI": "ipfs://QmWAegn44e7A39KRT1tpKb6eDPBCnMxUzH95tYUMDr7bYf"
     },
     {
       "chainId": 1,
@@ -2364,7 +2364,7 @@
       "decimals": 18,
       "symbol": "aEthUSDe",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "ipfs://QmRE7FvahSLT6u37jjtCqQvqZs5dyVR2tgV5ERNGbspSji",
+      "logoURI": "ipfs://QmWsWn7j1im2Y4dg2b54m19Kh97y7aazbjt33AxJc5U32k",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3"
@@ -6069,6 +6069,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 21 },
-  "timestamp": "2024-06-22T00:10:57.128Z"
+  "version": { "major": 3, "minor": 0, "patch": 22 },
+  "timestamp": "2024-06-26T11:39:51.272Z"
 }
