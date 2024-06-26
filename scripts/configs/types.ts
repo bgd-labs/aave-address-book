@@ -39,9 +39,6 @@ export interface PoolConfig {
   POOL_ADDRESSES_PROVIDER: Hex;
   // will be inlined in js pool export
   additionalAddresses: {
-    ARB_GHO?: Hex;
-    ETH_TOKEN_POOL?: Hex;
-    ARB_TOKEN_POOL?: Hex;
     FAUCET?: Hex;
     WETH_GATEWAY?: Hex;
     REPAY_WITH_COLLATERAL_ADAPTER?: Hex;
@@ -105,6 +102,8 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     AAVE_CL_ROBOT_OPERATOR?: Hex;
     GHO_TOKEN?: Hex;
     GHO_FLASHMINTER_FACILITATOR?: Hex;
+    GHO_ETH_CCIP_POOL?: Hex;
+    GHO_ARB_CCIP_POOL?: Hex;
     GSM_REGISTRY?: Hex;
     GSM_USDC?: Hex;
     GSM_USDT?: Hex;

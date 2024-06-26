@@ -58,9 +58,6 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x223d844fc4B006D67c0cDbd39371A9F73f69d974
   address internal constant EMISSION_MANAGER = 0x223d844fc4B006D67c0cDbd39371A9F73f69d974;
 
-  // https://etherscan.io/address/0x5756880B6a1EAba0175227bf02a7E87c1e02B28C
-  address internal constant ETH_TOKEN_POOL = 0x5756880B6a1EAba0175227bf02a7E87c1e02B28C;
-
   // https://etherscan.io/address/0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778;
 
