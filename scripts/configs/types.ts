@@ -102,8 +102,7 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     AAVE_CL_ROBOT_OPERATOR?: Hex;
     GHO_TOKEN?: Hex;
     GHO_FLASHMINTER_FACILITATOR?: Hex;
-    GHO_ETH_CCIP_POOL?: Hex;
-    GHO_ARB_CCIP_POOL?: Hex;
+    GHO_CCIP_TOKEN_POOL?: Hex,
     GSM_REGISTRY?: Hex;
     GSM_USDC?: Hex;
     GSM_USDT?: Hex;

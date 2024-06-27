@@ -51,7 +51,7 @@ library MiscEthereum {
     0xb639D208Bcf0589D54FaC24E655C79EC529762B8;
 
   // https://etherscan.io/address/0x5756880B6a1EAba0175227bf02a7E87c1e02B28C
-  address internal constant GHO_ETH_CCIP_POOL = 0x5756880B6a1EAba0175227bf02a7E87c1e02B28C;
+  address internal constant GHO_CCIP_TOKEN_POOL = 0x5756880B6a1EAba0175227bf02a7E87c1e02B28C;
 
   // https://etherscan.io/address/0x167527DB01325408696326e3580cd8e55D99Dc1A
   address internal constant GSM_REGISTRY = 0x167527DB01325408696326e3580cd8e55D99Dc1A;

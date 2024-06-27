@@ -3,9 +3,6 @@
 pragma solidity >=0.6.0;
 
 library MiscArbitrum {
-  // https://arbiscan.io/address/0xF168B83598516A532a85995b52504a2Fa058C068
-  address internal constant GHO_ARB_CCIP_POOL = 0xF168B83598516A532a85995b52504a2Fa058C068;
-
   // https://arbiscan.io/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
   address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
 
@@ -29,4 +26,10 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0xF3272CAfe65b190e76caAF483db13424a3e23dD2
   address internal constant rETH_ETH_AGGREGATOR = 0xF3272CAfe65b190e76caAF483db13424a3e23dD2;
+
+  // https://arbiscan.io/address/0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33
+  address internal constant GHO_TOKEN = 0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33;
+
+  // https://arbiscan.io/address/0xF168B83598516A532a85995b52504a2Fa058C068
+  address internal constant GHO_CCIP_TOKEN_POOL = 0xF168B83598516A532a85995b52504a2Fa058C068;
 }
