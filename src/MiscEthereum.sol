@@ -93,4 +93,16 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
   address internal constant weETH_RATIO_PROVIDER = 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee;
+
+  // https://etherscan.io/address/0x6Cc65bF618F55ce2433f9D8d827Fc44117D81399
+  address internal constant ROCKET_NETWORK_BALANCES = 0x6Cc65bF618F55ce2433f9D8d827Fc44117D81399;
+
+  // https://etherscan.io/address/0xF64bAe65f6f2a5277571143A24FaaFDFC0C2a737
+  address internal constant STADER_LABS_ORACLE = 0xF64bAe65f6f2a5277571143A24FaaFDFC0C2a737;
+
+  // https://etherscan.io/address/0x9b37180d847B27ADC13C2277299045C1237Ae281
+  address internal constant CBETH_ORACLE = 0x9b37180d847B27ADC13C2277299045C1237Ae281;
+
+  // https://etherscan.io/address/0x308861A430be4cce5502d0A12724771Fc6DaF216
+  address internal constant ETHERFI_LIQUIDITY_POOL = 0x308861A430be4cce5502d0A12724771Fc6DaF216;
 }
