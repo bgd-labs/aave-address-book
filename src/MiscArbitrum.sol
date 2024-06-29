@@ -26,4 +26,7 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0xF3272CAfe65b190e76caAF483db13424a3e23dD2
   address internal constant rETH_ETH_AGGREGATOR = 0xF3272CAfe65b190e76caAF483db13424a3e23dD2;
+
+  // https://arbiscan.io/address/0xF168B83598516A532a85995b52504a2Fa058C068
+  address internal constant GHO_CCIP_TOKEN_POOL = 0xF168B83598516A532a85995b52504a2Fa058C068;
 }
