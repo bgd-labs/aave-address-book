@@ -4875,6 +4875,28 @@ export const tokenlist = {
       },
     },
     {
+      chainId: 42161,
+      address: '0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33',
+      name: 'Gho Token',
+      decimals: 18,
+      symbol: 'GHO',
+      tags: ['underlying'],
+      logoURI: 'ipfs://Qmcrt9HVLmyPaizcn3LPvpFzSE94QtK5iZRRVzqzDbr8X8',
+    },
+    {
+      chainId: 42161,
+      address: '0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D',
+      name: 'Aave Arbitrum GHO',
+      decimals: 18,
+      symbol: 'aArbGHO',
+      tags: ['aTokenV3', 'aaveV3'],
+      logoURI: 'ipfs://QmeRyqK1GAa2b8qxviLsdYz43m7C4gG2cC7se9Z5CEvLv1',
+      extensions: {
+        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
+        underlying: '0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33',
+      },
+    },
+    {
       chainId: 10,
       address: '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
       name: 'Dai Stablecoin',
@@ -6091,6 +6113,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 23},
-  timestamp: '2024-06-28T00:11:05.915Z',
+  version: {major: 3, minor: 0, patch: 24},
+  timestamp: '2024-07-02T16:07:16.550Z',
 };
