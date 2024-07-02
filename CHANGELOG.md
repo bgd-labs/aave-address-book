@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.30.0](https://github.com/bgd-labs/aave-address-book/compare/v2.29.0...v2.30.0) (2024-07-02)
+
+
+### Features
+
+* Add create3 factory to scroll network ([#469](https://github.com/bgd-labs/aave-address-book/issues/469)) ([548b080](https://github.com/bgd-labs/aave-address-book/commit/548b08018a141f9800664800b00af7d1e4ee468d))
+
+
+### Bug Fixes
+
+* assets icons for `susde` and `usde` ([#478](https://github.com/bgd-labs/aave-address-book/issues/478)) ([7d86bab](https://github.com/bgd-labs/aave-address-book/commit/7d86bab0543bd6db34b696a56a80ca34b71de9ce))
+* update abis ([#468](https://github.com/bgd-labs/aave-address-book/issues/468)) ([11cb363](https://github.com/bgd-labs/aave-address-book/commit/11cb363ba4d94b511c1336af45608305ad3d8166))
+
 ## [2.29.0](https://github.com/bgd-labs/aave-address-book/compare/v2.28.0...v2.29.0) (2024-06-10)
 
 
