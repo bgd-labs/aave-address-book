@@ -71,8 +71,8 @@ library AaveV3Ethereum {
   address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
     0x21714092D90c7265F52fdfDae068EC11a23C6248;
 
-  // https://etherscan.io/address/0xA3e44d830440dF5098520F62Ebec285B1198c51E
-  address internal constant CONFIG_ENGINE = 0xA3e44d830440dF5098520F62Ebec285B1198c51E;
+  // https://etherscan.io/address/0x8689b8aDD004A9fD2320031b7d3f5aF1f7F41e17
+  address internal constant CONFIG_ENGINE = 0x8689b8aDD004A9fD2320031b7d3f5aF1f7F41e17;
 
   // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -564,8 +564,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xD110cac5d8682A3b045D5524a9903E031d70FCCd
   address internal constant GHO_ORACLE = 0xD110cac5d8682A3b045D5524a9903E031d70FCCd;
 
-  // https://etherscan.io/address/0x0273800eB1f291AB0F21A3ceE9fB33fe500f8c18
-  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x0273800eB1f291AB0F21A3ceE9fB33fe500f8c18;
+  // https://etherscan.io/address/0x0966dDA5514dB6D98DF16ABC7932946A6e45c337
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x0966dDA5514dB6D98DF16ABC7932946A6e45c337;
 
   // https://etherscan.io/address/0xD33526068D116cE69F19A9ee46F0bd304F21A51f
   address internal constant RPL_UNDERLYING = 0xD33526068D116cE69F19A9ee46F0bd304F21A51f;

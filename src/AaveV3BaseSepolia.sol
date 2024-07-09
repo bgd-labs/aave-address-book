@@ -58,8 +58,8 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0x0D42405bc97AeF309c22aB2D30dD3d35eD41d05f
   address internal constant EMISSION_MANAGER = 0x0D42405bc97AeF309c22aB2D30dD3d35eD41d05f;
 
-  // https://sepolia.basescan.org/address/0xC18ECB3DEf8BAaB2be2714324c5AdA75608e0a48
-  address internal constant CONFIG_ENGINE = 0xC18ECB3DEf8BAaB2be2714324c5AdA75608e0a48;
+  // https://sepolia.basescan.org/address/0x08183F38166f640D60895150d99e57c6ad948451
+  address internal constant CONFIG_ENGINE = 0x08183F38166f640D60895150d99e57c6ad948451;
 
   // https://sepolia.basescan.org/address/0x777fBA024bA1228fDa76149A4ff8B23475ed057D
   address internal constant RATES_FACTORY = 0x777fBA024bA1228fDa76149A4ff8B23475ed057D;

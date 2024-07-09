@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
 import {governanceConfigMainnet} from './configs/governance/ethereum';
 import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';

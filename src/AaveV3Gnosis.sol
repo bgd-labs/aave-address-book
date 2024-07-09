@@ -58,8 +58,8 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
   address internal constant EMISSION_MANAGER = 0x41585C50524fb8c3899B43D7D797d9486AAc94DB;
 
-  // https://gnosisscan.io/address/0x3238FC1d642b60F41a35f62570237656C85F4744
-  address internal constant CONFIG_ENGINE = 0x3238FC1d642b60F41a35f62570237656C85F4744;
+  // https://gnosisscan.io/address/0xE2a33403eaD139873820da597531f07f65ED0E3c
+  address internal constant CONFIG_ENGINE = 0xE2a33403eaD139873820da597531f07f65ED0E3c;
 
   // https://gnosisscan.io/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
