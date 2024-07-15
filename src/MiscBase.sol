@@ -18,8 +18,11 @@ library MiscBase {
   // https://basescan.org/address/0x88db99eeBb390a2a4DcAC2E1DDb09c07E911C5C3
   address internal constant AAVE_CL_ROBOT_OPERATOR = 0x88db99eeBb390a2a4DcAC2E1DDb09c07E911C5C3;
 
-  // https://basescan.org/address/0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A
-  address internal constant PROTOCOL_GUARDIAN = 0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A;
+  // https://basescan.org/address/0x56C1a4b54921DEA9A344967a8693C7E661D72968
+  address internal constant PROTOCOL_GUARDIAN = 0x56C1a4b54921DEA9A344967a8693C7E661D72968;
+
+  // https://basescan.org/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
+  address internal constant GOVERNANCE_GUARDIAN = 0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe;
 
   // https://basescan.org/address/0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061
   address internal constant wstETH_stETH_AGGREGATOR = 0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061;

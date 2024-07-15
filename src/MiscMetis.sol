@@ -12,6 +12,9 @@ library MiscMetis {
   // https://andromeda-explorer.metis.io/address/0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A
   address internal constant CREATE_3_FACTORY = 0x2e649f6b54B07E210b31c9cC2eB8a0d5997c3D4A;
 
-  // https://andromeda-explorer.metis.io/address/0xF6Db48C5968A9eBCB935786435530f28e32Cc501
-  address internal constant PROTOCOL_GUARDIAN = 0xF6Db48C5968A9eBCB935786435530f28e32Cc501;
+  // https://andromeda-explorer.metis.io/address/0x56C1a4b54921DEA9A344967a8693C7E661D72968
+  address internal constant PROTOCOL_GUARDIAN = 0x56C1a4b54921DEA9A344967a8693C7E661D72968;
+
+  // https://andromeda-explorer.metis.io/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
+  address internal constant GOVERNANCE_GUARDIAN = 0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe;
 }
