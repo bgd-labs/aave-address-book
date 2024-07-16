@@ -2355,7 +2355,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'USDe',
       tags: ['underlying'],
-      logoURI: 'ipfs://Qmc2GCcBVstvZwriyopKa8gDputG2vS5G5BmhLH3v3iuF7',
+      logoURI: 'ipfs://QmWAegn44e7A39KRT1tpKb6eDPBCnMxUzH95tYUMDr7bYf',
     },
     {
       chainId: 1,
@@ -2364,7 +2364,7 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aEthUSDe',
       tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'ipfs://QmRE7FvahSLT6u37jjtCqQvqZs5dyVR2tgV5ERNGbspSji',
+      logoURI: 'ipfs://QmWsWn7j1im2Y4dg2b54m19Kh97y7aazbjt33AxJc5U32k',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
         underlying: '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
@@ -2390,6 +2390,28 @@ export const tokenlist = {
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
         underlying: '0xA35b1B31Ce002FBF2058D22F30f95D405200A15b',
+      },
+    },
+    {
+      chainId: 1,
+      address: '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+      name: 'Staked USDe',
+      decimals: 18,
+      symbol: 'sUSDe',
+      tags: ['underlying'],
+      logoURI: 'ipfs://QmVo9rz5SQotKoJ8iDHniPevSos5C8EfjszAohuUk11Ndc',
+    },
+    {
+      chainId: 1,
+      address: '0x4579a27aF00A62C0EB156349f31B345c08386419',
+      name: 'Aave Ethereum sUSDe',
+      decimals: 18,
+      symbol: 'aEthsUSDe',
+      tags: ['aTokenV3', 'aaveV3'],
+      logoURI: 'ipfs://QmPovdv3P384t6w8uxi4QLtB2QVsCAsaM3VLP4ZBcFjaxQ',
+      extensions: {
+        pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
+        underlying: '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
       },
     },
     {
@@ -4853,6 +4875,28 @@ export const tokenlist = {
       },
     },
     {
+      chainId: 42161,
+      address: '0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33',
+      name: 'Gho Token',
+      decimals: 18,
+      symbol: 'GHO',
+      tags: ['underlying'],
+      logoURI: 'ipfs://Qmcrt9HVLmyPaizcn3LPvpFzSE94QtK5iZRRVzqzDbr8X8',
+    },
+    {
+      chainId: 42161,
+      address: '0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D',
+      name: 'Aave Arbitrum GHO',
+      decimals: 18,
+      symbol: 'aArbGHO',
+      tags: ['aTokenV3', 'aaveV3'],
+      logoURI: 'ipfs://QmeRyqK1GAa2b8qxviLsdYz43m7C4gG2cC7se9Z5CEvLv1',
+      extensions: {
+        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
+        underlying: '0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33',
+      },
+    },
+    {
       chainId: 10,
       address: '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
       name: 'Dai Stablecoin',
@@ -6069,6 +6113,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 21},
-  timestamp: '2024-06-22T00:10:57.128Z',
+  version: {major: 3, minor: 0, patch: 24},
+  timestamp: '2024-07-02T16:07:16.550Z',
 };
