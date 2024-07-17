@@ -15,6 +15,9 @@ library GovernanceV3Optimism {
   // https://optimistic.etherscan.io/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
   address internal constant PC_DATA_HELPER = 0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A;
 
+  // https://optimistic.etherscan.io/address/0x6c5264C380C7022e54f585c4E354ffb6f221a03b
+  address internal constant GRANULAR_GUARDIAN = 0x6c5264C380C7022e54f585c4E354ffb6f221a03b;
+
   // https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf
   address internal constant EXECUTOR_LVL_1 = 0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf;
 }

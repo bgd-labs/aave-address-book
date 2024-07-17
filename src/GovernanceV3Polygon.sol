@@ -24,6 +24,9 @@ library GovernanceV3Polygon {
   // https://polygonscan.com/address/0x77976B51569896523EE215962Ee91ff236Fa50E8
   address internal constant VM_DATA_HELPER = 0x77976B51569896523EE215962Ee91ff236Fa50E8;
 
+  // https://polygonscan.com/address/0x0D2CccD3dD420dC6DE2f24DB44aA22fADE290a02
+  address internal constant GRANULAR_GUARDIAN = 0x0D2CccD3dD420dC6DE2f24DB44aA22fADE290a02;
+
   // https://polygonscan.com/address/0xDf7d0e6454DB638881302729F5ba99936EaAB233
   address internal constant EXECUTOR_LVL_1 = 0xDf7d0e6454DB638881302729F5ba99936EaAB233;
 

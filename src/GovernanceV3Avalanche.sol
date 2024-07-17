@@ -24,6 +24,9 @@ library GovernanceV3Avalanche {
   // https://snowscan.xyz/address/0x77976B51569896523EE215962Ee91ff236Fa50E8
   address internal constant VM_DATA_HELPER = 0x77976B51569896523EE215962Ee91ff236Fa50E8;
 
+  // https://snowscan.xyz/address/0xc1162BCb2E5E3ca4725512008c7522dF8C8B7B65
+  address internal constant GRANULAR_GUARDIAN = 0xc1162BCb2E5E3ca4725512008c7522dF8C8B7B65;
+
   // https://snowscan.xyz/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
   address internal constant EXECUTOR_LVL_1 = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 

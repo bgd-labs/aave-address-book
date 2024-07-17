@@ -15,6 +15,9 @@ library GovernanceV3Arbitrum {
   // https://arbiscan.io/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
   address internal constant PC_DATA_HELPER = 0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A;
 
+  // https://arbiscan.io/address/0x4922093c476CfbCF903C7C4082d2D64bAE8A37cE
+  address internal constant GRANULAR_GUARDIAN = 0x4922093c476CfbCF903C7C4082d2D64bAE8A37cE;
+
   // https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327
   address internal constant EXECUTOR_LVL_1 = 0xFF1137243698CaA18EE364Cc966CF0e02A4e6327;
 }
