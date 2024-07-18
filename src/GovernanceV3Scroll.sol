@@ -15,6 +15,9 @@ library GovernanceV3Scroll {
   // https://scrollscan.com/address/0xf438e33dCCEE260ee4371F9dceF408b0d7DBe424
   address internal constant PC_DATA_HELPER = 0xf438e33dCCEE260ee4371F9dceF408b0d7DBe424;
 
+  // https://scrollscan.com/address/0xa835707d28e6C37C49d661742f2Fb5987367cEd4
+  address internal constant GRANULAR_GUARDIAN = 0xa835707d28e6C37C49d661742f2Fb5987367cEd4;
+
   // https://scrollscan.com/address/0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24
   address internal constant EXECUTOR_LVL_1 = 0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24;
 }
