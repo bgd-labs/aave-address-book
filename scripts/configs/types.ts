@@ -25,6 +25,7 @@ export type GovernanceV3Addresses = {
   META_DELEGATE_HELPER?: Hex;
   EMERGENCY_REGISTRY?: Hex;
   GOVERNANCE_POWER_STRATEGY?: Hex;
+  GRANULAR_GUARDIAN?: Hex;
 };
 
 export interface GovernanceConfig {
@@ -102,7 +103,7 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     AAVE_CL_ROBOT_OPERATOR?: Hex;
     GHO_TOKEN?: Hex;
     GHO_FLASHMINTER_FACILITATOR?: Hex;
-    GHO_CCIP_TOKEN_POOL?: Hex,
+    GHO_CCIP_TOKEN_POOL?: Hex;
     GSM_REGISTRY?: Hex;
     GSM_USDC?: Hex;
     GSM_USDT?: Hex;

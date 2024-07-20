@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.31.0](https://github.com/bgd-labs/aave-address-book/compare/v2.30.0...v2.31.0) (2024-07-18)
+
+
+### Features
+
+* Granular Guardian addresses ([#492](https://github.com/bgd-labs/aave-address-book/issues/492)) ([c89c7f6](https://github.com/bgd-labs/aave-address-book/commit/c89c7f69e1ed952df4e4ddc393000b4b2688efaf))
+* Lido pool addresses
 ## [2.30.0](https://github.com/bgd-labs/aave-address-book/compare/v2.29.0...v2.30.0) (2024-07-02)
 
 

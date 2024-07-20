@@ -18,6 +18,9 @@ library GovernanceV3BNB {
   // https://bscscan.com/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
   address internal constant PC_DATA_HELPER = 0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A;
 
+  // https://bscscan.com/address/0xe4FB5e3F506BE0095f38004f993D16fdA8224383
+  address internal constant GRANULAR_GUARDIAN = 0xe4FB5e3F506BE0095f38004f993D16fdA8224383;
+
   // https://bscscan.com/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a
   address internal constant EXECUTOR_LVL_1 = 0x9390B1735def18560c509E2d0bc090E9d6BA257a;
 }

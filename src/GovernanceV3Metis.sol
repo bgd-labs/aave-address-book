@@ -15,6 +15,9 @@ library GovernanceV3Metis {
   // https://andromeda-explorer.metis.io/address/0x81d32B36380e6266e1BDd490eAC56cdB300afBe0
   address internal constant PC_DATA_HELPER = 0x81d32B36380e6266e1BDd490eAC56cdB300afBe0;
 
+  // https://andromeda-explorer.metis.io/address/0x61BE97d3a0550549f67CA7421725fA73Fa2036B5
+  address internal constant GRANULAR_GUARDIAN = 0x61BE97d3a0550549f67CA7421725fA73Fa2036B5;
+
   // https://andromeda-explorer.metis.io/address/0x6fD45D32375d5aDB8D76275A3932c740F03a8718
   address internal constant EXECUTOR_LVL_1 = 0x6fD45D32375d5aDB8D76275A3932c740F03a8718;
 }
