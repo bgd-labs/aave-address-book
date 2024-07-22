@@ -81,9 +81,6 @@ library AaveV3Avalanche {
   address internal constant PROOF_OF_RESERVE_AGGREGATOR =
     0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
 
-  // https://snowscan.xyz/address/0xDd81E6F85358292075B78fc8D5830BE8434aF8BA
-  address internal constant RATES_FACTORY = 0xDd81E6F85358292075B78fc8D5830BE8434aF8BA;
-
   // https://snowscan.xyz/address/0x49F5B996814fEd1dd39285B92A59CFb2dfd8D4f9
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x49F5B996814fEd1dd39285B92A59CFb2dfd8D4f9;

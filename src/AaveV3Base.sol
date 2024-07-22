@@ -89,9 +89,6 @@ library AaveV3Base {
   // https://basescan.org/address/0xc7751400F809cdB0C167F87985083C558a0610F7
   address internal constant CONFIG_ENGINE = 0xc7751400F809cdB0C167F87985083C558a0610F7;
 
-  // https://basescan.org/address/0x0D1Fe8eAdb0a3e44C4Cc9D73De8dA50C1E475832
-  address internal constant RATES_FACTORY = 0x0D1Fe8eAdb0a3e44C4Cc9D73De8dA50C1E475832;
-
   // https://basescan.org/address/0x39e97c588B2907Fb67F44fea256Ae3BA064207C5
   address internal constant L2_ENCODER = 0x39e97c588B2907Fb67F44fea256Ae3BA064207C5;
 

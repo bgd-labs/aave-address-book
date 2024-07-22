@@ -74,9 +74,6 @@ library AaveV3BNB {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x117684358D990E42Eb1649E7e8C4691951dc1E71;
 
-  // https://bscscan.com/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
-  address internal constant RATES_FACTORY = 0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6;
-
   // https://bscscan.com/address/0x0727a6494095511078d63143A8a1E90b9f310880
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0x0727a6494095511078d63143A8a1E90b9f310880;
