@@ -65,9 +65,6 @@ library AaveV3Gnosis {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x1236010CECea55998384e795B59815D871f5f94d;
 
-  // https://gnosisscan.io/address/0x73dDE2A75c06a108912bf7Ff600eDdCE9d96Ed25
-  address internal constant RATES_FACTORY = 0x73dDE2A75c06a108912bf7Ff600eDdCE9d96Ed25;
-
   // https://gnosisscan.io/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
 

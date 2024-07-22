@@ -80,9 +80,6 @@ library AaveV3Optimism {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
-  // https://optimistic.etherscan.io/address/0xDd81E6F85358292075B78fc8D5830BE8434aF8BA
-  address internal constant RATES_FACTORY = 0xDd81E6F85358292075B78fc8D5830BE8434aF8BA;
-
   // https://optimistic.etherscan.io/address/0xa12734e64417f61f8442E7D5132EdBFdbDDeF0fa
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xa12734e64417f61f8442E7D5132EdBFdbDDeF0fa;

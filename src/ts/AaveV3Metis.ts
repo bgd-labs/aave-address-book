@@ -62,9 +62,6 @@ export const CONFIG_ENGINE = '0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957';
 // https://andromeda-explorer.metis.io/address/0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5';
 
-// https://andromeda-explorer.metis.io/address/0x87Aaba7cf8e1F319d0E3402d68017171201dEcd5
-export const RATES_FACTORY = '0x87Aaba7cf8e1F319d0E3402d68017171201dEcd5';
-
 // https://andromeda-explorer.metis.io/address/0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927
 export const UI_INCENTIVE_DATA_PROVIDER = '0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927';
 

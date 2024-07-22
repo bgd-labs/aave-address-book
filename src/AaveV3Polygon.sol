@@ -74,9 +74,6 @@ library AaveV3Polygon {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
-  // https://polygonscan.com/address/0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896
-  address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
-
   // https://polygonscan.com/address/0xE3090207A2de94A856EA10a7e1Bd36dD6145712B
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
     0xE3090207A2de94A856EA10a7e1Bd36dD6145712B;

@@ -68,9 +68,6 @@ library AaveV3ArbitrumSepolia {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0xbB7492Cce831eE6F349960a6E2da8eadC4b50cA3;
 
-  // https://sepolia.arbiscan.io/address/0x6376D4df995f32f308f2d5049a7a320943023232
-  address internal constant RATES_FACTORY = 0x6376D4df995f32f308f2d5049a7a320943023232;
-
   // https://sepolia.arbiscan.io/address/0xB90fa850a4af6D30feA8b41989eaAecDcA8fd414
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xB90fa850a4af6D30feA8b41989eaAecDcA8fd414;
 

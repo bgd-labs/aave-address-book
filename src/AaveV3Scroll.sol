@@ -77,9 +77,6 @@ library AaveV3Scroll {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0xFBedc64AeE24921cb43004312B9eF367a4162b57;
 
-  // https://scrollscan.com/address/0xe48fb34452FaE3Cd5d906F748490FBE16c3Ce31b
-  address internal constant RATES_FACTORY = 0xe48fb34452FaE3Cd5d906F748490FBE16c3Ce31b;
-
   // https://scrollscan.com/address/0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07;
 
