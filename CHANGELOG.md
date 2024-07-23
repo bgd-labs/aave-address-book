@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/bgd-labs/aave-address-book/compare/v2.31.0...v3.0.0) (2024-07-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to aave-dao/aave-v3origin ([#476](https://github.com/bgd-labs/aave-address-book/issues/476))
+* replace config engine with 3.1 ([#486](https://github.com/bgd-labs/aave-address-book/issues/486))
+
+### Features
+
+* add CAPS_PLUS_RISK_STEWARD address in Lido Ethereum V3 config ([#495](https://github.com/bgd-labs/aave-address-book/issues/495)) ([f6ac658](https://github.com/bgd-labs/aave-address-book/commit/f6ac658bd0a8854b2880d52969ebf38710a7eb4b))
+* migrate to aave-dao/aave-v3origin ([#476](https://github.com/bgd-labs/aave-address-book/issues/476)) ([0c3bd1f](https://github.com/bgd-labs/aave-address-book/commit/0c3bd1fa910413d94380b88b7daf767604d28f19))
+* replace config engine with 3.1 ([#486](https://github.com/bgd-labs/aave-address-book/issues/486)) ([343a7be](https://github.com/bgd-labs/aave-address-book/commit/343a7bedb3a60f9012c9427472b43397c0d83d25))
+
 ## [2.31.0](https://github.com/bgd-labs/aave-address-book/compare/v2.30.0...v2.31.0) (2024-07-18)
 
 
