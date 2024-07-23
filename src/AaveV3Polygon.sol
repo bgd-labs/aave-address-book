@@ -67,15 +67,12 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0xb58Fd91558fa213D97Ac94C97F831c7289278084
   address internal constant DEBT_SWAP_ADAPTER = 0xb58Fd91558fa213D97Ac94C97F831c7289278084;
 
-  // https://polygonscan.com/address/0xfFD6F13c9574bedb3f4E131e9C4320186AF83c1D
-  address internal constant CONFIG_ENGINE = 0xfFD6F13c9574bedb3f4E131e9C4320186AF83c1D;
+  // https://polygonscan.com/address/0xAF0C901489790c35D9cef02CFA11123009E81e2a
+  address internal constant CONFIG_ENGINE = 0xAF0C901489790c35D9cef02CFA11123009E81e2a;
 
   // https://polygonscan.com/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
-
-  // https://polygonscan.com/address/0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896
-  address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
 
   // https://polygonscan.com/address/0xE3090207A2de94A856EA10a7e1Bd36dD6145712B
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =

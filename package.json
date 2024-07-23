@@ -64,7 +64,8 @@
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
     "typescript": "^5.4.2",
-    "viem": "^2.8.5"
+    "viem": "^2.8.5",
+    "dotenv": "^16.4.1"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
