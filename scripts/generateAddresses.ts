@@ -58,6 +58,8 @@ import {governanceConfigScroll} from './configs/governance/scroll';
 import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
+import {governanceConfigZkSync} from './configs/governance/zksync';
+import {zkSyncAddresses} from './configs/networks/zksync';
 
 async function main() {
   // cleanup ts artifacts
@@ -85,6 +87,7 @@ async function main() {
       governanceConfigGnosis,
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
+      governanceConfigZkSync,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -145,6 +148,7 @@ async function main() {
     scrollAddresses,
     polygonZkEvmAddresses,
     sepoliaAddresses,
+    zkSyncAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
