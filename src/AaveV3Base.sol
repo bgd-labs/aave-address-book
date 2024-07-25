@@ -220,9 +220,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f
   address internal constant USDC_ORACLE = 0x978D8878b53Fbe40dab7D4AB47b97AB622FFeF9f;
 
-  // https://basescan.org/address/0xA802E6c96572f4C7efbf1e611d161CF63ad74Ef9
+  // https://basescan.org/address/0x8d09558a46178E28FC9703787c164C829De3FfF3
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xA802E6c96572f4C7efbf1e611d161CF63ad74Ef9;
+    0x8d09558a46178E28FC9703787c164C829De3FfF3;
 
   // https://basescan.org/address/0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc
   address internal constant USDC_STATA_TOKEN = 0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc;
