@@ -77,8 +77,8 @@ export const SWAP_COLLATERAL_ADAPTER = '0x830C5A67a0C95D69dA5fb7801Ac1773c6fB538
 // https://optimistic.etherscan.io/address/0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7
 export const UI_INCENTIVE_DATA_PROVIDER = '0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7';
 
-// https://optimistic.etherscan.io/address/0xbd83DdBE37fc91923d59C8c1E0bDe0CccCa332d5
-export const UI_POOL_DATA_PROVIDER = '0xbd83DdBE37fc91923d59C8c1E0bDe0CccCa332d5';
+// https://optimistic.etherscan.io/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
+export const UI_POOL_DATA_PROVIDER = '0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9';
 
 // https://optimistic.etherscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
 export const WALLET_BALANCE_PROVIDER = '0xBc790382B3686abffE4be14A030A96aC6154023a';

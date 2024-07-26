@@ -65,8 +65,8 @@ export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x9E7B73ffD9D2026F3ff4212c29E20
 // https://andromeda-explorer.metis.io/address/0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927
 export const UI_INCENTIVE_DATA_PROVIDER = '0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927';
 
-// https://andromeda-explorer.metis.io/address/0x7dd60bd8507fDC3d300d53427b7AE566701a7320
-export const UI_POOL_DATA_PROVIDER = '0x7dd60bd8507fDC3d300d53427b7AE566701a7320';
+// https://andromeda-explorer.metis.io/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
+export const UI_POOL_DATA_PROVIDER = '0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763';
 
 // https://andromeda-explorer.metis.io/address/0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b
 export const WALLET_BALANCE_PROVIDER = '0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b';
