@@ -99,8 +99,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xDA67AF3403555Ce0AE3ffC22fDb7354458277358
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xDA67AF3403555Ce0AE3ffC22fDb7354458277358;
 
-  // https://arbiscan.io/address/0x145dE30c929a065582da84Cf96F88460dB9745A7
-  address internal constant UI_POOL_DATA_PROVIDER = 0x145dE30c929a065582da84Cf96F88460dB9745A7;
+  // https://arbiscan.io/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
+  address internal constant UI_POOL_DATA_PROVIDER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://arbiscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;

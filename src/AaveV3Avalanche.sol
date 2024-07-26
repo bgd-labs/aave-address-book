@@ -94,8 +94,8 @@ library AaveV3Avalanche {
   // https://snowscan.xyz/address/0x265d414f80b0fca9505710e6F16dB4b67555D365
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x265d414f80b0fca9505710e6F16dB4b67555D365;
 
-  // https://snowscan.xyz/address/0xF71DBe0FAEF1473ffC607d4c555dfF0aEaDb878d
-  address internal constant UI_POOL_DATA_PROVIDER = 0xF71DBe0FAEF1473ffC607d4c555dfF0aEaDb878d;
+  // https://snowscan.xyz/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
+  address internal constant UI_POOL_DATA_PROVIDER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
 
   // https://snowscan.xyz/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
