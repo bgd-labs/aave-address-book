@@ -80,8 +80,8 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07;
 
-  // https://scrollscan.com/address/0x639c4ae31A02D54d66A9c696c63404BCa8B2734C
-  address internal constant UI_POOL_DATA_PROVIDER = 0x639c4ae31A02D54d66A9c696c63404BCa8B2734C;
+  // https://scrollscan.com/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
 
   // https://scrollscan.com/address/0xE51642875Af07Fea1B03d821E41a9DB24bC4447E
   address internal constant WALLET_BALANCE_PROVIDER = 0xE51642875Af07Fea1B03d821E41a9DB24bC4447E;

@@ -87,8 +87,8 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0x874313A46e4957D29FAAC43BF5Eb2B144894f557
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x874313A46e4957D29FAAC43BF5Eb2B144894f557;
 
-  // https://polygonscan.com/address/0xC69728f11E9E6127733751c8410432913123acf1
-  address internal constant UI_POOL_DATA_PROVIDER = 0xC69728f11E9E6127733751c8410432913123acf1;
+  // https://polygonscan.com/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
+  address internal constant UI_POOL_DATA_PROVIDER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
 
   // https://polygonscan.com/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
