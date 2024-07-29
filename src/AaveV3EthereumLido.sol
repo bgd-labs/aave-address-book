@@ -136,5 +136,7 @@ library AaveV3EthereumLidoAssets {
 }
 
 library AaveV3EthereumLidoEModes {
+  uint8 internal constant NONE = 0;
+
   uint8 internal constant ETH_CORRELATED = 1;
 }

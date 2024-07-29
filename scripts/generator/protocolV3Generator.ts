@@ -168,6 +168,7 @@ export async function getPoolV3Addresses(
 
     let reservesData: PoolV3Addresses['reservesData'] = [];
     const eModes = new Map<number, string>();
+    eModes.set(0, 'NONE');
     // workaround, fix before merge
     // didn't find all the ui pool data provider addresses, so currently there are gaps
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
@@ -188,7 +189,14 @@ export async function getPoolV3Addresses(
       )[0];
       reservesData = await Promise.all(
         data.map(async (reserve) => {
-          eModes.set(reserve.eModeCategoryId, reserve.eModeLabel);
+          if (eModes.get(reserve.eModeCategoryId)) {
+            if (reserve.eModeLabel && reserve.eModeLabel !== eModes.get(reserve.eModeCategoryId))
+              throw new Error(
+                `received different eMode labels for same category ${reserve.eModeCategoryId}`,
+              );
+          } else {
+            eModes.set(reserve.eModeCategoryId, reserve.eModeLabel);
+          }
           const result: ReserveData = {
             symbol: reserve.symbol,
             decimals: Number(reserve.decimals),
@@ -245,7 +253,7 @@ export async function getPoolV3Addresses(
 function generateEmodes(chainId: number, eModes: Map<number, string>, libraryName: string) {
   const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
   const formatted = sorted.reduce((acc, [value, label]) => {
-    acc[`${label ? label.toUpperCase().replace('-', '_').replace(' ', '_') : 'NONE'}`] = {
+    acc[label.toUpperCase().replace('-', '_').replace(' ', '_')] = {
       value,
       type: 'uint8',
     };

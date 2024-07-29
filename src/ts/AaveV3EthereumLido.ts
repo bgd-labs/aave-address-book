@@ -96,5 +96,6 @@ export const ASSETS = {
   },
 } as const;
 export const E_MODES = {
+  NONE: 0,
   ETH_CORRELATED: 1,
 } as const;
