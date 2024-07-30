@@ -26,6 +26,7 @@ import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {zkSyncProtoV3} from './configs/pools/zksync';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -121,6 +122,7 @@ async function main() {
       optimismSepoliaProtoV3,
       scrollProtoV3,
       scrollSepoliaProtoV3,
+      zkSyncProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
       harmonyProtoV3,
