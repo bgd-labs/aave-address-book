@@ -1,9 +1,6 @@
 import {Hex, Client, getContract, zeroAddress} from 'viem';
 import {AddressInfo, Addresses, PoolConfig, ReserveData} from '../configs/types';
 import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
-import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
-import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
-import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
@@ -21,6 +18,7 @@ import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
 import {IPoolAddressesProvider_ABI} from '../../src/ts/abis/IPoolAddressesProvider';
 import {IStaticATokenFactory_ABI} from '../../src/ts/abis/IStaticATokenFactory';
+import {IAToken_ABI} from '../../src/ts/abis/IAToken';
 import {IPool_ABI} from '../../src/ts/abis/IPool';
 
 export interface PoolV3Addresses {
@@ -57,17 +55,42 @@ async function getAdditionalTokenInfo(
   if (reservesData.length > 0) {
     const aTokenContract = getContract({
       address: reservesData[0].A_TOKEN,
-      abi: A_TOKEN_V3_ABI,
+      abi: [
+        {
+          inputs: [],
+          name: 'ATOKEN_REVISION',
+          outputs: [{internalType: 'uint256', name: '', type: 'uint256'}],
+          stateMutability: 'view',
+          type: 'function',
+        },
+        ...IAToken_ABI,
+      ] as const,
       client,
     });
     const variableDebtTokenContract = getContract({
       address: reservesData[0].V_TOKEN,
-      abi: VARIABLE_DEBT_TOKEN_ABI,
+      abi: [
+        {
+          inputs: [],
+          name: 'DEBT_TOKEN_REVISION',
+          outputs: [{internalType: 'uint256', name: '', type: 'uint256'}],
+          stateMutability: 'view',
+          type: 'function',
+        },
+      ] as const,
       client,
     });
     const stableDebtTokenContract = getContract({
       address: reservesData[0].S_TOKEN,
-      abi: STABLE_DEBT_TOKEN_ABI,
+      abi: [
+        {
+          inputs: [],
+          name: 'DEBT_TOKEN_REVISION',
+          outputs: [{internalType: 'uint256', name: '', type: 'uint256'}],
+          stateMutability: 'view',
+          type: 'function',
+        },
+      ] as const,
       client,
     });
 
