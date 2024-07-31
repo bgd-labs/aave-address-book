@@ -69,6 +69,14 @@ async function main() {
   } else {
     mkdirSync('./src/ts');
   }
+
+  // helia ipfs imports
+  const { createHelia } = await import('helia');
+  const { strings } = await import('@helia/strings');
+  const h = await createHelia();
+
+  const str = strings(h);
+
   // generate files
   const governanceNames = await Promise.all(
     [
@@ -125,7 +133,8 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
 
-  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
+  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames], str);
+  console.log("✅ Tokens list generation finished");
 
   const networkAddresses = [
     arbitrumAddresses,
@@ -173,6 +182,9 @@ async function main() {
 
   writeFileSync(`./src/AaveAddressBook.sol`, prefixWithGeneratedWarning(prefixWithPragma('')));
   solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
+
+  console.log("✅ Generation finished");
 }
 
 main();
+

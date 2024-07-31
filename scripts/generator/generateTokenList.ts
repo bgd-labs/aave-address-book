@@ -11,6 +11,7 @@ import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {fixSymbol} from './assetsLibraryGenerator';
 import {getSymbolUri, VARIANT} from './svgUtils';
+import {Strings} from '@helia/strings';
 
 const TAGS = {
   underlying: 'underlying',
@@ -32,7 +33,7 @@ function findInList(tokens: TokenInfo[], address: Address, chainId: number) {
   return tokens.find((x) => x.address === address && x.chainId === chainId);
 }
 
-export async function generateTokenList(pools: TokenListParams) {
+export async function generateTokenList(pools: TokenListParams, str: Strings) {
   const path = join(cwd(), 'tokenlist.json');
   const cachedList: TokenList = existsSync(path)
     ? JSON.parse(readFileSync(path, 'utf-8'))
@@ -62,7 +63,7 @@ export async function generateTokenList(pools: TokenListParams) {
           : token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
           ? ['Maker', 'MKR']
           : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
-        const symbolUri = await getSymbolUri(reserve.symbol, variant);
+        const symbolUri = await getSymbolUri(reserve.symbol, variant, str);
         return tokens.push({
           chainId: chainId,
           address: token,
