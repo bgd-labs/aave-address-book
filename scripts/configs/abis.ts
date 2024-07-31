@@ -1,6 +1,9 @@
 import {governanceConfigMainnet} from './governance/ethereum';
 import {mainnetProtoV3Pool} from './pools/ethereum';
 
+/**
+ * @dev These abis can be inferred directly from code as they exist as a dependency
+ */
 export const ABI_INTERFACES = [
   'ICollector',
   'AggregatorInterface',
@@ -33,6 +36,10 @@ export const ABI_INTERFACES = [
   'IStaticATokenLM',
 ];
 
+/**
+ * @dev These abis cannot be inferred as they don't exist as a dependency on this repo.
+ * Therefore we use forge download & forge inspect to fetch them from on-chain contracts
+ */
 export const DOWNLOAD_ABI_INTERFACES = [
   {
     address: governanceConfigMainnet.ADDRESSES.PC_DATA_HELPER,

@@ -21,6 +21,7 @@ import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
 import {IPoolAddressesProvider_ABI} from '../../src/ts/abis/IPoolAddressesProvider';
 import {IStaticATokenFactory_ABI} from '../../src/ts/abis/IStaticATokenFactory';
+import {IPool_ABI} from '../../src/ts/abis/IPool';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -212,6 +213,13 @@ export async function getPoolV3Addresses(
     }
 
     const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(client, pool, reservesData);
+
+    // fetching libraries on 3.1+
+    // const libraries = {};
+    // try {
+    //   const poolContract = getContract({address: POOL, abi: IPool_ABI, client});
+    //   const [] = await Promise.all([poolContract.read.getFlashloanLogic()]);
+    // } catch (e) {}
 
     return {
       eModes,
