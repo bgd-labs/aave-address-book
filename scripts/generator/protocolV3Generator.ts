@@ -41,6 +41,7 @@ export interface PoolV3Addresses {
   [key: `DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
   [key: `DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
   reservesData: ReserveData[];
+  externalLibraries: null | Record<string, AddressInfo>;
 }
 
 async function getAdditionalTokenInfo(
@@ -49,9 +50,9 @@ async function getAdditionalTokenInfo(
   reservesData: PoolV3Addresses['reservesData'],
 ): Promise<{
   COLLECTOR: AddressInfo;
-  [key: `DEFAULT_A_TOKEN_IMPL_REV_${number}`]: Hex;
-  [key: `DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${number}`]: Hex;
-  [key: `DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${number}`]: Hex;
+  [key: `DEFAULT_A_TOKEN_IMPL_REV_${number}`]: AddressInfo;
+  [key: `DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
+  [key: `DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
 }> {
   if (reservesData.length > 0) {
     const aTokenContract = getContract({
@@ -93,9 +94,6 @@ async function getAdditionalTokenInfo(
     const stableDebtTokenRevision = Number(
       await stableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
     );
-
-    try {
-    } catch (e) {}
 
     return {
       COLLECTOR: {value: COLLECTOR, type: 'ICollector'},
@@ -215,14 +213,42 @@ export async function getPoolV3Addresses(
     const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(client, pool, reservesData);
 
     // fetching libraries on 3.1+
-    // const libraries = {};
-    // try {
-    //   const poolContract = getContract({address: POOL, abi: IPool_ABI, client});
-    //   const [] = await Promise.all([poolContract.read.getFlashloanLogic()]);
-    // } catch (e) {}
+    let externalLibraries: null | Record<string, AddressInfo> = null;
+    try {
+      const poolContract = getContract({address: POOL, abi: IPool_ABI, client});
+      const [
+        FLASHLOAN_LOGIC,
+        BORROW_LOGIC,
+        BRIDGE_LOGIC,
+        E_MODE_LOGIC,
+        LIQUIDATION_LOGIC,
+        POOL_LOGIC,
+        SUPPLY_LOGIC,
+      ] = await Promise.all([
+        poolContract.read.getFlashLoanLogic(),
+        poolContract.read.getBorrowLogic(),
+        poolContract.read.getBridgeLogic(),
+        poolContract.read.getEModeLogic(),
+        poolContract.read.getLiquidationLogic(),
+        poolContract.read.getPoolLogic(),
+        poolContract.read.getSupplyLogic(),
+      ]);
+      externalLibraries = {
+        FLASHLOAN_LOGIC,
+        BORROW_LOGIC,
+        BRIDGE_LOGIC,
+        E_MODE_LOGIC,
+        LIQUIDATION_LOGIC,
+        POOL_LOGIC,
+        SUPPLY_LOGIC,
+      };
+    } catch (e) {
+      // might fail on fantom/harmony and testnets
+    }
 
     return {
       eModes,
+      externalLibraries,
       POOL_ADDRESSES_PROVIDER: {
         value: pool.POOL_ADDRESSES_PROVIDER,
         type: 'IPoolAddressesProvider',
@@ -276,8 +302,25 @@ function generateEmodes(chainId: number, eModes: Map<number, string>, libraryNam
   };
 }
 
+function generateExternalLibraries(
+  chainId: number,
+  libraries: Record<string, AddressInfo>,
+  libraryName: string,
+) {
+  return {
+    solidity: wrapIntoSolidityLibrary(
+      generateSolidityConstants({
+        chainId,
+        addresses: libraries,
+      }),
+      libraryName,
+    ),
+    js: `export const EXTERNAL_LIBRARIES = ${generateJsObject({addresses: libraries})} as const;\n`,
+  };
+}
+
 export async function generateProtocolV3Library(config: PoolConfig) {
-  const {reservesData, eModes, ...addresses} = await getPoolV3Addresses(config);
+  const {reservesData, eModes, externalLibraries, ...addresses} = await getPoolV3Addresses(config);
   const name = `AaveV3${config.name}`;
 
   // generate main library
@@ -322,6 +365,18 @@ export async function generateProtocolV3Library(config: PoolConfig) {
   const eModesLibrary = generateEmodes(config.chainId, eModes, eModesLibraryName);
   appendFileSync(`./src/${name}.sol`, eModesLibrary.solidity);
   appendFileSync(`./src/ts/${name}.ts`, eModesLibrary.js);
+
+  // generate externalLibraries library
+  if (externalLibraries) {
+    const externalLibraryName = name + 'ExternalLibraries';
+    const externalLibrary = generateExternalLibraries(
+      config.chainId,
+      externalLibraries,
+      externalLibraryName,
+    );
+    appendFileSync(`./src/${name}.sol`, externalLibrary.solidity);
+    appendFileSync(`./src/ts/${name}.ts`, externalLibrary.js);
+  }
 
   return {
     pool: (addresses.POOL as any).value,

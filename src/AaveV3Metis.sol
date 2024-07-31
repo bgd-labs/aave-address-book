@@ -215,3 +215,26 @@ library AaveV3MetisAssets {
 library AaveV3MetisEModes {
   uint8 internal constant NONE = 0;
 }
+
+library AaveV3MetisExternalLibraries {
+  // https://andromeda-explorer.metis.io/address/0x6DA8d7EF0625e965dafc393793C048096392d4a5
+  address internal constant FLASHLOAN_LOGIC = 0x6DA8d7EF0625e965dafc393793C048096392d4a5;
+
+  // https://andromeda-explorer.metis.io/address/0x41717de714Db8630F02Dea8f6A39C73A5b5C7df1
+  address internal constant BORROW_LOGIC = 0x41717de714Db8630F02Dea8f6A39C73A5b5C7df1;
+
+  // https://andromeda-explorer.metis.io/address/0xca2385754bCa5d632F5160B560352aBd12029685
+  address internal constant BRIDGE_LOGIC = 0xca2385754bCa5d632F5160B560352aBd12029685;
+
+  // https://andromeda-explorer.metis.io/address/0x12959a64470Dd003590Bb1EcFC436dddE7608724
+  address internal constant E_MODE_LOGIC = 0x12959a64470Dd003590Bb1EcFC436dddE7608724;
+
+  // https://andromeda-explorer.metis.io/address/0x72c272aE914EC11AFe1e74A0016e0A91c1A6014e
+  address internal constant LIQUIDATION_LOGIC = 0x72c272aE914EC11AFe1e74A0016e0A91c1A6014e;
+
+  // https://andromeda-explorer.metis.io/address/0x55D552EFbc8aEB87AffCEa8630B43a33BA24D975
+  address internal constant POOL_LOGIC = 0x55D552EFbc8aEB87AffCEa8630B43a33BA24D975;
+
+  // https://andromeda-explorer.metis.io/address/0x9336943ecd91C201D9ED5A21562b34Aef710052f
+  address internal constant SUPPLY_LOGIC = 0x9336943ecd91C201D9ED5A21562b34Aef710052f;
+}
