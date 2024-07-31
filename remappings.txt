@@ -1,2 +1,3 @@
 forge-std/=lib/forge-std/src/
 aave-v3-origin/=lib/aave-v3-origin/src/
+solidity-utils/=lib/aave-v3-origin/lib/solidity-utils/src/

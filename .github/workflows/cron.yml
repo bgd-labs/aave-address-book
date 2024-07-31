@@ -60,9 +60,9 @@ jobs:
         uses: peter-evans/create-pull-request@712add83f26c1e359c046a6ca3dd677fb7017626
         with:
           committer: Cache-bot <noreply@github.com>
-          commit-message: "chore(cache): automated cache update"
+          commit-message: "fix(cache): automated cache update - updated addresses"
           delete-branch: true
-          title: "chore(cache): automated cache update"
+          title: "fix(cache): automated cache update - updated addresses"
 
       - name: Post to a Slack channel
         id: slack
