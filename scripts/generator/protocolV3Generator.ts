@@ -1,8 +1,6 @@
 import {Hex, Client, getContract, zeroAddress} from 'viem';
 import {AddressInfo, Addresses, PoolConfig, ReserveData} from '../configs/types';
-import {ADDRESS_PROVIDER_V3_ABI} from '../abi/address_provider_v3_abi';
 import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
-import {STATIC_A_TOKEN_FACTORY_ABI} from '../abi/static_a_token_factory_abi';
 import {A_TOKEN_V3_ABI} from '../abi/aToken_v3_abi';
 import {VARIABLE_DEBT_TOKEN_ABI} from '../abi/variableDebtToken_v3_abi';
 import {STABLE_DEBT_TOKEN_ABI} from '../abi/stableDebtToken_v3_abi';
@@ -21,6 +19,8 @@ import {
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
+import {IPoolAddressesProvider_ABI} from '../../src/ts/abis/IPoolAddressesProvider';
+import {IStaticATokenFactory_ABI} from '../../src/ts/abis/IStaticATokenFactory';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -93,6 +93,9 @@ async function getAdditionalTokenInfo(
       await stableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
     );
 
+    try {
+    } catch (e) {}
+
     return {
       COLLECTOR: {value: COLLECTOR, type: 'ICollector'},
       [`DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision}`]: defaultATokenImplementation,
@@ -120,7 +123,7 @@ export async function getPoolV3Addresses(
   const client = CHAIN_ID_CLIENT_MAP[pool.chainId];
   const addressProviderContract = getContract({
     address: pool.POOL_ADDRESSES_PROVIDER,
-    abi: ADDRESS_PROVIDER_V3_ABI,
+    abi: IPoolAddressesProvider_ABI,
     client,
   });
   if (!client) {
@@ -179,7 +182,7 @@ export async function getPoolV3Addresses(
       const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
         ? getContract({
             address: pool.additionalAddresses.STATIC_A_TOKEN_FACTORY,
-            abi: STATIC_A_TOKEN_FACTORY_ABI,
+            abi: IStaticATokenFactory_ABI,
             client,
           })
         : null;

@@ -16,7 +16,7 @@ import {LENDING_POOL_V2_ABI} from '../abi/lending_pool_v2_abi';
 import {A_TOKEN_V2_ABI} from '../abi/aToken_v2_abi';
 import {INCENTIVES_CONTROLLER_ABI} from '../abi/incentivesController_abi';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
-import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
+import {UI_POOL_DATA_PROVIDER_V2_ABI} from '../abi/uiPoolData_provider_v2_abi';
 import {mainnetAmmV2Pool} from '../configs/pools/ethereum';
 
 export interface PoolV2Addresses {
@@ -121,7 +121,7 @@ export async function getPoolV2Addresses(pool: PoolConfig): Promise<PoolV2Addres
     if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
       const uiPoolDataProvider = getContract({
         address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-        abi: IUiPoolDataProvider_ABI,
+        abi: UI_POOL_DATA_PROVIDER_V2_ABI,
         client,
       });
       reservesData = (

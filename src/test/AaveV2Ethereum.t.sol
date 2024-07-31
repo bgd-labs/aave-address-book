@@ -3,8 +3,11 @@ pragma solidity >=0.6.0;
 
 import 'forge-std/Test.sol';
 import {AaveV2Ethereum} from '../AaveAddressBook.sol';
-// import is unnecessary here, but needed somewhere in the project so we can infer the abi from build artifacts
+// imports are unused but required so forge inspect can find the source code
 import {IERC20Detailed} from 'aave-v3-origin/core/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol';
+import {IWithGuardian} from 'solidity-utils/contracts/access-control/interfaces/IWithGuardian.sol';
+import {IStaticATokenFactory} from 'aave-v3-origin/periphery/contracts/static-a-token/interfaces/IStaticATokenFactory.sol';
+import {IStaticATokenLM} from 'aave-v3-origin/periphery/contracts/static-a-token/interfaces/IStaticATokenLM.sol';
 
 contract AaveAddressBookTest is Test {
   function setUp() public {}
