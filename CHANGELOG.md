@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.2](https://github.com/bgd-labs/aave-address-book/compare/v3.0.1...v3.0.2) (2024-07-31)
+
+
+### Bug Fixes
+
+* always set eMode NONE, trigger release for address changes, export external libraries library ([#508](https://github.com/bgd-labs/aave-address-book/issues/508)) ([19649ca](https://github.com/bgd-labs/aave-address-book/commit/19649cad1cbf51d22a978770e03aac99721b0cfa))
+* update chain icon in the UI (change to icon from web3 package) ([#511](https://github.com/bgd-labs/aave-address-book/issues/511)) ([78daad4](https://github.com/bgd-labs/aave-address-book/commit/78daad4ffc7c15d56d5211512ca5b825d4f98ebd))
+* updated libs with origin fix for serialization cleanup ([#509](https://github.com/bgd-labs/aave-address-book/issues/509)) ([500dfc2](https://github.com/bgd-labs/aave-address-book/commit/500dfc2440469f08b3bc654aaf65c0a3e2ab7e3a))
+
 ## [3.0.1](https://github.com/bgd-labs/aave-address-book/compare/v3.0.0...v3.0.1) (2024-07-27)
 
 
