@@ -53,14 +53,14 @@ export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x396C44011e58108eC3a7Ad83B5c9F
 // https://era.zksync.network//address/0xEeaC35776B35837318c317E0aE57AFdef7eeF40a
 export const UI_INCENTIVE_DATA_PROVIDER = '0xEeaC35776B35837318c317E0aE57AFdef7eeF40a';
 
-// https://era.zksync.network//address/0x6C579c44A82E997d57f33A3b6AccD40e90196920
-export const UI_POOL_DATA_PROVIDER = '0x6C579c44A82E997d57f33A3b6AccD40e90196920';
+// https://era.zksync.network//address/0xff9D92509A5C60636718BE40Be5CA0b4fE3fACcD
+export const UI_POOL_DATA_PROVIDER = '0xff9D92509A5C60636718BE40Be5CA0b4fE3fACcD';
 
 // https://era.zksync.network//address/0x3BE5B5E817440f0CDcA46f89518BE4a67875Acb3
 export const WALLET_BALANCE_PROVIDER = '0x3BE5B5E817440f0CDcA46f89518BE4a67875Acb3';
 
-// https://era.zksync.network//address/0x7B70bA67e1af805c747C6E3ae32aCe5e73f8c2A4
-export const WETH_GATEWAY = '0x7B70bA67e1af805c747C6E3ae32aCe5e73f8c2A4';
+// https://era.zksync.network//address/0x5E6aB3f1F82469929f4E4243d110CaBD2Dce5f60
+export const WETH_GATEWAY = '0x5E6aB3f1F82469929f4E4243d110CaBD2Dce5f60';
 
 export const CHAIN_ID = 324;
 export const ASSETS = {} as const;

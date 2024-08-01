@@ -68,14 +68,14 @@ library AaveV3ZkSync {
   // https://era.zksync.network//address/0xEeaC35776B35837318c317E0aE57AFdef7eeF40a
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xEeaC35776B35837318c317E0aE57AFdef7eeF40a;
 
-  // https://era.zksync.network//address/0x6C579c44A82E997d57f33A3b6AccD40e90196920
-  address internal constant UI_POOL_DATA_PROVIDER = 0x6C579c44A82E997d57f33A3b6AccD40e90196920;
+  // https://era.zksync.network//address/0xff9D92509A5C60636718BE40Be5CA0b4fE3fACcD
+  address internal constant UI_POOL_DATA_PROVIDER = 0xff9D92509A5C60636718BE40Be5CA0b4fE3fACcD;
 
   // https://era.zksync.network//address/0x3BE5B5E817440f0CDcA46f89518BE4a67875Acb3
   address internal constant WALLET_BALANCE_PROVIDER = 0x3BE5B5E817440f0CDcA46f89518BE4a67875Acb3;
 
-  // https://era.zksync.network//address/0x7B70bA67e1af805c747C6E3ae32aCe5e73f8c2A4
-  address internal constant WETH_GATEWAY = 0x7B70bA67e1af805c747C6E3ae32aCe5e73f8c2A4;
+  // https://era.zksync.network//address/0x5E6aB3f1F82469929f4E4243d110CaBD2Dce5f60
+  address internal constant WETH_GATEWAY = 0x5E6aB3f1F82469929f4E4243d110CaBD2Dce5f60;
 }
 
 library AaveV3ZkSyncAssets {}
