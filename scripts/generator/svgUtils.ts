@@ -1,5 +1,8 @@
-import { AssetTag, getAssetIconNameAndPath } from "@bgd-labs/react-web3-icons/dist/utils";
-import { Strings } from "@helia/strings";
+import {
+  AssetTag,
+  getAssetIconNameAndPath,
+  getAssetName
+} from "@bgd-labs/react-web3-icons/dist/utils";
 
 export enum VARIANT {
   UNDERLYING,
@@ -13,16 +16,15 @@ const VARIANT_TAGS: Record<VARIANT, AssetTag | undefined> = {
   [VARIANT.STATA_TOKEN]: AssetTag.StataToken,
 };
 
-export async function getSymbolUri(symbol: string, variant: VARIANT, str: Strings): Promise<string | undefined> {
-  const { iconPathToRepo } = getAssetIconNameAndPath({
+export async function getSymbolUri(symbol: string, variant: VARIANT): Promise<string | undefined> {
+  const assetName = getAssetName({ symbol });
+  const {  iconPathToRepo } = getAssetIconNameAndPath({
     symbol,
     assetTag: VARIANT_TAGS[variant],
   });
-  const symbolResponse = await fetch(iconPathToRepo);
-  if (symbolResponse.ok) {
-    const symbolSvgCode = await symbolResponse.text();
-    const cid = await str.add(symbolSvgCode);
-    return `ipfs://${cid.toString()}`;
+
+  if (assetName !== 'Unknown') {
+    return iconPathToRepo;
   } else {
     console.log('symbol not found', symbol, variant);
   }

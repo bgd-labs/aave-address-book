@@ -70,13 +70,6 @@ async function main() {
     mkdirSync('./src/ts');
   }
 
-  // helia ipfs imports
-  const { createHelia } = await import('helia');
-  const { strings } = await import('@helia/strings');
-  const h = await createHelia();
-
-  const str = strings(h);
-
   // generate files
   const governanceNames = await Promise.all(
     [
@@ -133,7 +126,7 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
 
-  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames], str);
+  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
   console.log("✅ Tokens list generation finished");
 
   const networkAddresses = [
