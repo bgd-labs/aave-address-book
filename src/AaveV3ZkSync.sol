@@ -61,6 +61,9 @@ library AaveV3ZkSync {
   // https://era.zksync.network//address/0x54478961c63F981066859c6aac4160f2d7A658E3
   address internal constant L2_ENCODER = 0x54478961c63F981066859c6aac4160f2d7A658E3;
 
+  // https://era.zksync.network//address/0xcb6c594dE17fDA7Bfde3590f745f8e4E4f62313A
+  address internal constant CONFIG_ENGINE = 0xcb6c594dE17fDA7Bfde3590f745f8e4E4f62313A;
+
   // https://era.zksync.network//address/0x396C44011e58108eC3a7Ad83B5c9FB4B256Ba5D7
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x396C44011e58108eC3a7Ad83B5c9FB4B256Ba5D7;
@@ -80,4 +83,29 @@ library AaveV3ZkSync {
 
 library AaveV3ZkSyncAssets {}
 
-library AaveV3ZkSyncEModes {}
+library AaveV3ZkSyncEModes {
+  uint8 internal constant NONE = 0;
+}
+
+library AaveV3ZkSyncExternalLibraries {
+  // https://era.zksync.network//address/0xb9f1FdECc1169900a543CB8E9c1F24ee6dD7C665
+  address internal constant FLASHLOAN_LOGIC = 0xb9f1FdECc1169900a543CB8E9c1F24ee6dD7C665;
+
+  // https://era.zksync.network//address/0x8821156340E25f0d9f4ad79349944158b9B7370E
+  address internal constant BORROW_LOGIC = 0x8821156340E25f0d9f4ad79349944158b9B7370E;
+
+  // https://era.zksync.network//address/0x9E1c74428FAffDe164d2B6A4f707B0d0B177E69b
+  address internal constant BRIDGE_LOGIC = 0x9E1c74428FAffDe164d2B6A4f707B0d0B177E69b;
+
+  // https://era.zksync.network//address/0x94Eff35Bb1eF2089b61Ac8daeBff6987D45BEc53
+  address internal constant E_MODE_LOGIC = 0x94Eff35Bb1eF2089b61Ac8daeBff6987D45BEc53;
+
+  // https://era.zksync.network//address/0xd04CDe0FF78f3E5aa26d6eCB0b2cd62Ebc734821
+  address internal constant LIQUIDATION_LOGIC = 0xd04CDe0FF78f3E5aa26d6eCB0b2cd62Ebc734821;
+
+  // https://era.zksync.network//address/0xEe9A09200Ea8925bDB6CAA5739338D8716036f6F
+  address internal constant POOL_LOGIC = 0xEe9A09200Ea8925bDB6CAA5739338D8716036f6F;
+
+  // https://era.zksync.network//address/0x29292DcB190CB037105135a2c962F736c26787d8
+  address internal constant SUPPLY_LOGIC = 0x29292DcB190CB037105135a2c962F736c26787d8;
+}
