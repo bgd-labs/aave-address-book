@@ -69,6 +69,7 @@ async function main() {
   } else {
     mkdirSync('./src/ts');
   }
+
   // generate files
   const governanceNames = await Promise.all(
     [
@@ -126,6 +127,7 @@ async function main() {
   );
 
   const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
+  console.log("✅ Tokens list generation finished");
 
   const networkAddresses = [
     arbitrumAddresses,
@@ -173,6 +175,9 @@ async function main() {
 
   writeFileSync(`./src/AaveAddressBook.sol`, prefixWithGeneratedWarning(prefixWithPragma('')));
   solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
+
+  console.log("✅ Generation finished");
 }
 
 main();
+
