@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IRescuable} from './IRescuable.sol';
+import {IRescuable} from 'solidity-utils/contracts/utils/interfaces/IRescuable.sol';
 
 library EnumerableSet {
   // To implement this library for multiple types with as little code

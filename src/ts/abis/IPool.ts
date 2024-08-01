@@ -351,7 +351,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -364,7 +364,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -449,7 +449,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -462,7 +462,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -494,7 +494,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -507,7 +507,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -819,7 +819,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',

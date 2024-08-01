@@ -105,4 +105,6 @@ library AaveV3PolygonZkEvm {
 
 library AaveV3PolygonZkEvmAssets {}
 
-library AaveV3PolygonZkEvmEModes {}
+library AaveV3PolygonZkEvmEModes {
+  uint8 internal constant NONE = 0;
+}

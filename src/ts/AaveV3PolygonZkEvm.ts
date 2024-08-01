@@ -88,4 +88,6 @@ export const WITHDRAW_SWAP_ADAPTER = '0x06C35Cfd3FC61eC2aC437f0d08840d5776b945af
 
 export const CHAIN_ID = 1101;
 export const ASSETS = {} as const;
-export const E_MODES = {} as const;
+export const E_MODES = {
+  NONE: 0,
+} as const;
