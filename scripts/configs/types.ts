@@ -25,6 +25,7 @@ export type GovernanceV3Addresses = {
   META_DELEGATE_HELPER?: Hex;
   EMERGENCY_REGISTRY?: Hex;
   GOVERNANCE_POWER_STRATEGY?: Hex;
+  GRANULAR_GUARDIAN?: Hex;
 };
 
 export interface GovernanceConfig {

@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
 import {governanceConfigMainnet} from './configs/governance/ethereum';
 import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';
@@ -14,6 +15,7 @@ import {
   mainnetArcV2Pool,
   mainnetProtoV2Pool,
   sepoliaProtoV3,
+  lidoEthereumMainnetProtoV3Pool,
 } from './configs/pools/ethereum';
 import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
 import {harmonyProtoV3} from './configs/pools/harmony';
@@ -67,6 +69,7 @@ async function main() {
   } else {
     mkdirSync('./src/ts');
   }
+
   // generate files
   const governanceNames = await Promise.all(
     [
@@ -119,10 +122,12 @@ async function main() {
       fantomTestnetProtoV3,
       fantomProtoV3,
       harmonyProtoV3,
+      lidoEthereumMainnetProtoV3Pool,
     ].map((config) => generateProtocolV3Library(config)),
   );
 
   const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
+  console.log("✅ Tokens list generation finished");
 
   const networkAddresses = [
     arbitrumAddresses,
@@ -170,6 +175,9 @@ async function main() {
 
   writeFileSync(`./src/AaveAddressBook.sol`, prefixWithGeneratedWarning(prefixWithPragma('')));
   solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
+
+  console.log("✅ Generation finished");
 }
 
 main();
+

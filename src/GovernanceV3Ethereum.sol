@@ -46,6 +46,9 @@ library GovernanceV3Ethereum {
   // https://etherscan.io/address/0xa198Fac58E02A5C5F8F7e877895d50cFa9ad1E04
   address internal constant GOVERNANCE_POWER_STRATEGY = 0xa198Fac58E02A5C5F8F7e877895d50cFa9ad1E04;
 
+  // https://etherscan.io/address/0x4457cA11E90f416Cc1D3a8E1cA41C0cdEcC251d4
+  address internal constant GRANULAR_GUARDIAN = 0x4457cA11E90f416Cc1D3a8E1cA41C0cdEcC251d4;
+
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant EXECUTOR_LVL_1 = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 

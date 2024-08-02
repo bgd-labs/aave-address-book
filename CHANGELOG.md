@@ -2,6 +2,50 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.3](https://github.com/bgd-labs/aave-address-book/compare/v3.0.2...v3.0.3) (2024-08-01)
+
+
+### Bug Fixes
+
+* tokens list generator and remove assets from project ([#513](https://github.com/bgd-labs/aave-address-book/issues/513)) ([82be66f](https://github.com/bgd-labs/aave-address-book/commit/82be66f9330edbdb4d01391992dddd53da01aecd))
+
+## [3.0.2](https://github.com/bgd-labs/aave-address-book/compare/v3.0.1...v3.0.2) (2024-07-31)
+
+
+### Bug Fixes
+
+* always set eMode NONE, trigger release for address changes, export external libraries library ([#508](https://github.com/bgd-labs/aave-address-book/issues/508)) ([19649ca](https://github.com/bgd-labs/aave-address-book/commit/19649cad1cbf51d22a978770e03aac99721b0cfa))
+* update chain icon in the UI (change to icon from web3 package) ([#511](https://github.com/bgd-labs/aave-address-book/issues/511)) ([78daad4](https://github.com/bgd-labs/aave-address-book/commit/78daad4ffc7c15d56d5211512ca5b825d4f98ebd))
+* updated libs with origin fix for serialization cleanup ([#509](https://github.com/bgd-labs/aave-address-book/issues/509)) ([500dfc2](https://github.com/bgd-labs/aave-address-book/commit/500dfc2440469f08b3bc654aaf65c0a3e2ab7e3a))
+
+## [3.0.1](https://github.com/bgd-labs/aave-address-book/compare/v3.0.0...v3.0.1) (2024-07-27)
+
+
+### Bug Fixes
+
+* update origin ([#498](https://github.com/bgd-labs/aave-address-book/issues/498)) ([b73de88](https://github.com/bgd-labs/aave-address-book/commit/b73de88660cf0aca21bde80a93ea7909013b2341))
+
+## [3.0.0](https://github.com/bgd-labs/aave-address-book/compare/v2.31.0...v3.0.0) (2024-07-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to aave-dao/aave-v3origin ([#476](https://github.com/bgd-labs/aave-address-book/issues/476))
+* replace config engine with 3.1 ([#486](https://github.com/bgd-labs/aave-address-book/issues/486))
+
+### Features
+
+* add CAPS_PLUS_RISK_STEWARD address in Lido Ethereum V3 config ([#495](https://github.com/bgd-labs/aave-address-book/issues/495)) ([f6ac658](https://github.com/bgd-labs/aave-address-book/commit/f6ac658bd0a8854b2880d52969ebf38710a7eb4b))
+* migrate to aave-dao/aave-v3origin ([#476](https://github.com/bgd-labs/aave-address-book/issues/476)) ([0c3bd1f](https://github.com/bgd-labs/aave-address-book/commit/0c3bd1fa910413d94380b88b7daf767604d28f19))
+* replace config engine with 3.1 ([#486](https://github.com/bgd-labs/aave-address-book/issues/486)) ([343a7be](https://github.com/bgd-labs/aave-address-book/commit/343a7bedb3a60f9012c9427472b43397c0d83d25))
+
+## [2.31.0](https://github.com/bgd-labs/aave-address-book/compare/v2.30.0...v2.31.0) (2024-07-18)
+
+
+### Features
+
+* Granular Guardian addresses ([#492](https://github.com/bgd-labs/aave-address-book/issues/492)) ([c89c7f6](https://github.com/bgd-labs/aave-address-book/commit/c89c7f69e1ed952df4e4ddc393000b4b2688efaf))
+* Lido pool addresses
 ## [2.30.0](https://github.com/bgd-labs/aave-address-book/compare/v2.29.0...v2.30.0) (2024-07-02)
 
 
