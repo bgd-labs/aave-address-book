@@ -61,8 +61,8 @@ library AaveV3ZkSync {
   // https://era.zksync.network//address/0x54478961c63F981066859c6aac4160f2d7A658E3
   address internal constant L2_ENCODER = 0x54478961c63F981066859c6aac4160f2d7A658E3;
 
-  // https://era.zksync.network//address/0xcb6c594dE17fDA7Bfde3590f745f8e4E4f62313A
-  address internal constant CONFIG_ENGINE = 0xcb6c594dE17fDA7Bfde3590f745f8e4E4f62313A;
+  // https://era.zksync.network//address/0x8942E8873246e7c0996ebB95Eaff8e888bABDf66
+  address internal constant CONFIG_ENGINE = 0x8942E8873246e7c0996ebB95Eaff8e888bABDf66;
 
   // https://era.zksync.network//address/0x396C44011e58108eC3a7Ad83B5c9FB4B256Ba5D7
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
