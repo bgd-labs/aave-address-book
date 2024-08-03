@@ -61,8 +61,8 @@ library AaveV3OptimismSepolia {
   // https://optimism-sepolia.blockscout.com/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
   address internal constant L2_ENCODER = 0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
 
-  // https://optimism-sepolia.blockscout.com/address/0x619643b346E3389062527cdb60C8720415B39860
-  address internal constant CONFIG_ENGINE = 0x619643b346E3389062527cdb60C8720415B39860;
+  // https://optimism-sepolia.blockscout.com/address/0x1D0f881Ce1a646E2f27Dec3c57Fa056cB838BCC2
+  address internal constant CONFIG_ENGINE = 0x1D0f881Ce1a646E2f27Dec3c57Fa056cB838BCC2;
 
   // https://optimism-sepolia.blockscout.com/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
