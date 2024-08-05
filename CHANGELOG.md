@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.4](https://github.com/bgd-labs/aave-address-book/compare/v3.0.3...v3.0.4) (2024-08-05)
+
+
+### Bug Fixes
+
+* added updated base config engine for 3.1 ([#518](https://github.com/bgd-labs/aave-address-book/issues/518)) ([93419b6](https://github.com/bgd-labs/aave-address-book/commit/93419b6be987a7f4c41b3dea03563b7499fee996))
+* v3.1 config engine address ([#516](https://github.com/bgd-labs/aave-address-book/issues/516)) ([e11b22f](https://github.com/bgd-labs/aave-address-book/commit/e11b22f4368d62cb7693817b87b7dba4cb5fd620))
+
 ## [3.0.3](https://github.com/bgd-labs/aave-address-book/compare/v3.0.2...v3.0.3) (2024-08-01)
 
 
