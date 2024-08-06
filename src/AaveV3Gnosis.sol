@@ -254,6 +254,27 @@ library AaveV3GnosisAssets {
 
   // https://gnosisscan.io/address/0xf3f45960f8dE00D8ED614D445a5a268c6F6Dec4f
   address internal constant sDAI_STATA_TOKEN = 0xf3f45960f8dE00D8ED614D445a5a268c6F6Dec4f;
+
+  // https://gnosisscan.io/address/0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0
+  address internal constant USDCe_UNDERLYING = 0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0;
+
+  uint8 internal constant USDCe_DECIMALS = 6;
+
+  // https://gnosisscan.io/address/0xC0333cb85B59a788d8C7CAe5e1Fd6E229A3E5a65
+  address internal constant USDCe_A_TOKEN = 0xC0333cb85B59a788d8C7CAe5e1Fd6E229A3E5a65;
+
+  // https://gnosisscan.io/address/0x37B9Ad6b5DC8Ad977AD716e92F49e9D200e58431
+  address internal constant USDCe_V_TOKEN = 0x37B9Ad6b5DC8Ad977AD716e92F49e9D200e58431;
+
+  // https://gnosisscan.io/address/0x135A7bA96fBe20949cf2D8E46c7F5ca3bB1EE222
+  address internal constant USDCe_S_TOKEN = 0x135A7bA96fBe20949cf2D8E46c7F5ca3bB1EE222;
+
+  // https://gnosisscan.io/address/0x0a2d05bc646C65A029e602c257DfA14adF8BfAd2
+  address internal constant USDCe_ORACLE = 0x0a2d05bc646C65A029e602c257DfA14adF8BfAd2;
+
+  // https://gnosisscan.io/address/0x98619395148C348e9A09C7D34290B1E9e7715A3E
+  address internal constant USDCe_INTEREST_RATE_STRATEGY =
+    0x98619395148C348e9A09C7D34290B1E9e7715A3E;
 }
 
 library AaveV3GnosisEModes {

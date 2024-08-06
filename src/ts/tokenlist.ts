@@ -4140,6 +4140,28 @@ export const tokenlist = {
       },
     },
     {
+      chainId: 100,
+      address: '0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0',
+      name: 'Bridged USDC (Gnosis)',
+      decimals: 6,
+      symbol: 'USDCe',
+      tags: ['underlying'],
+      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg',
+    },
+    {
+      chainId: 100,
+      address: '0xC0333cb85B59a788d8C7CAe5e1Fd6E229A3E5a65',
+      name: 'Aave Gnosis USDCe',
+      decimals: 6,
+      symbol: 'aGnoUSDCe',
+      tags: ['aTokenV3', 'aaveV3'],
+      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg',
+      extensions: {
+        pool: '0xb50201558B00496A145fE76f7424749556E326D8',
+        underlying: '0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0',
+      },
+    },
+    {
       chainId: 56,
       address: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
       name: 'PancakeSwap Token',
@@ -6261,6 +6283,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 30},
-  timestamp: '2024-08-01T11:36:37.827Z',
+  version: {major: 3, minor: 0, patch: 31},
+  timestamp: '2024-08-06T00:11:28.748Z',
 };
