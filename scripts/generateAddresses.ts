@@ -26,6 +26,7 @@ import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {zkSyncProtoV3} from './configs/pools/zksync';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -58,6 +59,8 @@ import {governanceConfigScroll} from './configs/governance/scroll';
 import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
+import {governanceConfigZkSync} from './configs/governance/zksync';
+import {zkSyncAddresses} from './configs/networks/zksync';
 
 async function main() {
   // cleanup ts artifacts
@@ -86,6 +89,7 @@ async function main() {
       governanceConfigGnosis,
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
+      governanceConfigZkSync,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -119,6 +123,7 @@ async function main() {
       optimismSepoliaProtoV3,
       scrollProtoV3,
       scrollSepoliaProtoV3,
+      zkSyncProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
       harmonyProtoV3,
@@ -147,6 +152,7 @@ async function main() {
     scrollAddresses,
     polygonZkEvmAddresses,
     sepoliaAddresses,
+    zkSyncAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
