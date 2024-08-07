@@ -47,8 +47,8 @@ export const EMISSION_MANAGER = '0x54E3aa872c3d2A89D1A6495F770f2cCa2C4Fc185';
 // https://sepolia.arbiscan.io/address/0x2E45e7dCD1e94d8edf1605FfF4602912FDC662bC
 export const L2_ENCODER = '0x2E45e7dCD1e94d8edf1605FfF4602912FDC662bC';
 
-// https://sepolia.arbiscan.io/address/0xEB442296880a3FC7C00FFe695c40B09d970fb936
-export const CONFIG_ENGINE = '0xEB442296880a3FC7C00FFe695c40B09d970fb936';
+// https://sepolia.arbiscan.io/address/0x0a275C06556EeB3c7Ff2b0f0cfD462A7645772EF
+export const CONFIG_ENGINE = '0x0a275C06556EeB3c7Ff2b0f0cfD462A7645772EF';
 
 // https://sepolia.arbiscan.io/address/0xbB7492Cce831eE6F349960a6E2da8eadC4b50cA3
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0xbB7492Cce831eE6F349960a6E2da8eadC4b50cA3';

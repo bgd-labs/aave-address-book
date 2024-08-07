@@ -59,8 +59,8 @@ export const DEBT_SWAP_ADAPTER = '0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC';
 // https://optimistic.etherscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
 export const L2_ENCODER = '0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC';
 
-// https://optimistic.etherscan.io/address/0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9
-export const CONFIG_ENGINE = '0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9';
+// https://optimistic.etherscan.io/address/0x619643b346E3389062527cdb60C8720415B39860
+export const CONFIG_ENGINE = '0x619643b346E3389062527cdb60C8720415B39860';
 
 // https://optimistic.etherscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x770ef9f4fe897e59daCc474EF11238303F9552b6';
