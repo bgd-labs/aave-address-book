@@ -18,6 +18,9 @@ library GovernanceV3ZkSync {
   // https://era.zksync.network//address/0xe0e23196D42b54F262a3DE952e6B34B197D1A228
   address internal constant GRANULAR_GUARDIAN = 0xe0e23196D42b54F262a3DE952e6B34B197D1A228;
 
+  // https://era.zksync.network//address/0x4257bf0746D783f0D962913d7d8AFA408B62547E
+  address internal constant GOVERNANCE_GUARDIAN = 0x4257bf0746D783f0D962913d7d8AFA408B62547E;
+
   // https://era.zksync.network//address/0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020
   address internal constant EXECUTOR_LVL_1 = 0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020;
 }

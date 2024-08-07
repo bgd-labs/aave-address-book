@@ -4061,6 +4061,28 @@
       }
     },
     {
+      "chainId": 100,
+      "address": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
+      "name": "Bridged USDC (Gnosis)",
+      "decimals": 6,
+      "symbol": "USDCe",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmbhThHCdcMQ5bmQLpQ5zQsXHjP6jXoe84CGFuxEVskiV9"
+    },
+    {
+      "chainId": 100,
+      "address": "0xC0333cb85B59a788d8C7CAe5e1Fd6E229A3E5a65",
+      "name": "Aave Gnosis USDCe",
+      "decimals": 6,
+      "symbol": "aGnoUSDCe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmcUgFhpDzaGxQXvacRJjnQeECQhVCGWNkRfouu8hCkESo",
+      "extensions": {
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
+        "underlying": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0"
+      }
+    },
+    {
       "chainId": 56,
       "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       "name": "PancakeSwap Token",
@@ -4897,6 +4919,20 @@
       }
     },
     {
+      "chainId": 42161,
+      "address": "0xD9FBA68D89178e3538e708939332c79efC540179",
+      "name": "Static Aave Arbitrum GHO",
+      "decimals": 18,
+      "symbol": "stataArbGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "ipfs://QmQtYRwBEVomRUshffhoAxbo6hKrAJwSXzrmR5YnE2indf",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33",
+        "underlyingAToken": "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D"
+      }
+    },
+    {
       "chainId": 10,
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
@@ -5506,6 +5542,28 @@
         "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
         "underlyingAToken": "0x5B1322eeb46240b02e20062b8F0F9908d525B09c"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x01f0a31698C4d065659b9bdC21B3610292a1c506",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "ipfs://QmfVkuQkCmBCanmvBaehJHpnD2Mx7UsPT7JEn7LgpTXZqY"
+    },
+    {
+      "chainId": 534352,
+      "address": "0xd80A5e16DBDC52Bd1C947CEDfA22c562Be9129C8",
+      "name": "Aave Scroll weETH",
+      "decimals": 18,
+      "symbol": "aScrweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "ipfs://QmWNJt5HzWb87bkYadLcRnxZZXNvuTVXazgkrTLZ1gE3Zu",
+      "extensions": {
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
+        "underlying": "0x01f0a31698C4d065659b9bdC21B3610292a1c506"
       }
     },
     {
@@ -6139,6 +6197,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 25 },
-  "timestamp": "2024-07-29T12:54:38.327Z"
+  "version": { "major": 3, "minor": 0, "patch": 26 },
+  "timestamp": "2024-08-07T14:23:39.922Z"
 }
