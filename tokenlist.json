@@ -4951,6 +4951,20 @@
       }
     },
     {
+      "chainId": 42161,
+      "address": "0xD9FBA68D89178e3538e708939332c79efC540179",
+      "name": "Static Aave Arbitrum GHO",
+      "decimals": 18,
+      "symbol": "stataArbGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33",
+        "underlyingAToken": "0xeBe517846d0F36eCEd99C735cbF6131e1fEB775D"
+      }
+    },
+    {
       "chainId": 10,
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
@@ -5560,6 +5574,28 @@
         "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32",
         "underlyingAToken": "0x5B1322eeb46240b02e20062b8F0F9908d525B09c"
+      }
+    },
+    {
+      "chainId": 534352,
+      "address": "0x01f0a31698C4d065659b9bdC21B3610292a1c506",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weeth.svg"
+    },
+    {
+      "chainId": 534352,
+      "address": "0xd80A5e16DBDC52Bd1C947CEDfA22c562Be9129C8",
+      "name": "Aave Scroll weETH",
+      "decimals": 18,
+      "symbol": "aScrweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweeth.svg",
+      "extensions": {
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
+        "underlying": "0x01f0a31698C4d065659b9bdC21B3610292a1c506"
       }
     },
     {
@@ -6205,6 +6241,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 31 },
-  "timestamp": "2024-08-06T00:11:28.748Z"
+  "version": { "major": 3, "minor": 0, "patch": 32 },
+  "timestamp": "2024-08-07T00:11:33.172Z"
 }
