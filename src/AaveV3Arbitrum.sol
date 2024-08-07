@@ -510,6 +510,9 @@ library AaveV3ArbitrumAssets {
 
   // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+
+  // https://arbiscan.io/address/0xD9FBA68D89178e3538e708939332c79efC540179
+  address internal constant GHO_STATA_TOKEN = 0xD9FBA68D89178e3538e708939332c79efC540179;
 }
 
 library AaveV3ArbitrumEModes {
