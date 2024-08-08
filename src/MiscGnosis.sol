@@ -12,8 +12,11 @@ library MiscGnosis {
   // https://gnosisscan.io/address/0x2cC41488f4494c5e11cB6cbA82199442B9f495B6
   address internal constant CREATE_3_FACTORY = 0x2cC41488f4494c5e11cB6cbA82199442B9f495B6;
 
-  // https://gnosisscan.io/address/0xF163b8698821cefbD33Cf449764d69Ea445cE23D
-  address internal constant PROTOCOL_GUARDIAN = 0xF163b8698821cefbD33Cf449764d69Ea445cE23D;
+  // https://gnosisscan.io/address/0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6
+  address internal constant PROTOCOL_GUARDIAN = 0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6;
+
+  // https://gnosisscan.io/address/0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b
+  address internal constant GOVERNANCE_GUARDIAN = 0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b;
 
   // https://gnosisscan.io/address/0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA
   address internal constant wstETH_stETH_AGGREGATOR = 0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA;

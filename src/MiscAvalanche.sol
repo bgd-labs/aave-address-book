@@ -18,8 +18,11 @@ library MiscAvalanche {
   // https://snowscan.xyz/address/0x06d958772304e7220fc3E463756CE01Ed0D24db2
   address internal constant AAVE_CL_ROBOT_OPERATOR = 0x06d958772304e7220fc3E463756CE01Ed0D24db2;
 
-  // https://snowscan.xyz/address/0xa35b76E4935449E33C56aB24b23fcd3246f13470
-  address internal constant PROTOCOL_GUARDIAN = 0xa35b76E4935449E33C56aB24b23fcd3246f13470;
+  // https://snowscan.xyz/address/0x56C1a4b54921DEA9A344967a8693C7E661D72968
+  address internal constant PROTOCOL_GUARDIAN = 0x56C1a4b54921DEA9A344967a8693C7E661D72968;
+
+  // https://snowscan.xyz/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
+  address internal constant GOVERNANCE_GUARDIAN = 0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe;
 
   // https://snowscan.xyz/address/0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E
   address internal constant AAVE_MERKLE_DISTRIBUTOR = 0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E;

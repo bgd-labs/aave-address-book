@@ -100,6 +100,7 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     PROXY_ADMIN?: Hex;
     CREATE_3_FACTORY?: Hex;
     PROTOCOL_GUARDIAN?: Hex;
+    GOVERNANCE_GUARDIAN?: Hex;
     AAVE_MERKLE_DISTRIBUTOR?: Hex;
     AAVE_CL_ROBOT_OPERATOR?: Hex;
     GHO_TOKEN?: Hex;
