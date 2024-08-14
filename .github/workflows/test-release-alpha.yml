@@ -11,6 +11,8 @@ jobs:
   test:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
   pkg-size-report:
+    permissions:
+      pull-requests: write
     name: Package Size Report
     runs-on: ubuntu-latest
 
@@ -30,6 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   release-node-alpha:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
     needs: test
     secrets:
