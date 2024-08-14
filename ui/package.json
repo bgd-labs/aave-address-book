@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@bgd-labs/react-web3-icons": "^1.4.4",
-    "@bgd-labs/js-utils": "^1.1.1",
+    "@bgd-labs/js-utils": "^1.4.2",
     "@leeoniya/ufuzzy": "^1.0.14",
     "clsx": "^2.1.0",
     "next": "14.2.3",
