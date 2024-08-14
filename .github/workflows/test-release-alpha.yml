@@ -11,7 +11,8 @@ jobs:
   test:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
   pkg-size-report:
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      pull-requests: write
     name: Package Size Report
     runs-on: ubuntu-latest
 
