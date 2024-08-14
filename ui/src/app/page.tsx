@@ -54,7 +54,7 @@ function flattenObject(
     if (typeof value === 'object' && value !== null) {
       result.push(...flattenObject(value, newPath, chainId));
     } else if (isAddress(value as string)) {
-      const link = `${CHAIN_ID_CLIENT_MAP[chainId!]?.chain?.blockExplorers?.default.url}/address/${value}`;
+      const link = `${CHAIN_ID_CLIENT_MAP[chainId!]?.chain?.blockExplorers?.default.url.replace(/\/$/, '')}/address/${value}`;
       const key = newPath[newPath.length - 1];
       const searchPath = [...newPath, value];
       if (TAG_MAP[key]) searchPath.push(...TAG_MAP[key]);
@@ -94,8 +94,10 @@ const sortedAddresses = addresses.sort((a, b) => {
   }
 
   // A dirty hack to sligthly prioritize mainnet addresses
-  const aSearchPathLength = a.chainId === 1 ? a.searchPath.length - 6 : a.searchPath.length;
-  const bSearchPathLength = b.chainId === 1 ? b.searchPath.length - 6 : b.searchPath.length;
+  const aSearchPathLength =
+    a.chainId === 1 ? a.searchPath.length - 6 : a.searchPath.length;
+  const bSearchPathLength =
+    b.chainId === 1 ? b.searchPath.length - 6 : b.searchPath.length;
 
   const searchPathLengthDiff = aSearchPathLength - bSearchPathLength;
   if (searchPathLengthDiff !== 0) {
