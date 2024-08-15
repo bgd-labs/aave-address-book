@@ -3856,6 +3856,20 @@
     },
     {
       "chainId": 8453,
+      "address": "0x03916e49f794Ab877eFA23597627eE8094E6cbB0",
+      "name": "Static Aave Base wstETH",
+      "decimals": 18,
+      "symbol": "stataBaswstETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "underlyingAToken": "0x99CBC45ea5bb7eF3a5BC08FB1B7E56bB2442Ef0D"
+      }
+    },
+    {
+      "chainId": 8453,
       "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       "name": "USD Coin",
       "decimals": 6,
@@ -3910,6 +3924,20 @@
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x588159E0d360ffAA978330812f9234818ab46E8E",
+      "name": "Static Aave Base weETH",
+      "decimals": 18,
+      "symbol": "stataBasweETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweeth.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "underlyingAToken": "0x7C307e128efA31F540F2E2d976C995E0B65F51F6"
       }
     },
     {
@@ -6493,6 +6521,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 33 },
-  "timestamp": "2024-08-14T11:06:05.925Z"
+  "version": { "major": 3, "minor": 0, "patch": 34 },
+  "timestamp": "2024-08-15T00:11:41.010Z"
 }
