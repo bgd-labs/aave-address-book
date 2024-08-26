@@ -10,8 +10,10 @@ on:
 jobs:
   test-solidity:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
+    secrets: inherit
   test-js:
     uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+    secrets: inherit
   pkg-size-report:
     permissions:
       pull-requests: write
