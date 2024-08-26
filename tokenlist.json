@@ -5879,116 +5879,6 @@
       }
     },
     {
-      "chainId": 324,
-      "address": "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4",
-      "name": "USDC",
-      "decimals": 6,
-      "symbol": "USDC",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
-    },
-    {
-      "chainId": 324,
-      "address": "0x97448808a366BDCC3A0fF84E36573dD8Ef1Ff5Fb",
-      "name": "Aave ZkSync USDC",
-      "decimals": 6,
-      "symbol": "aZksUSDC",
-      "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
-      "extensions": {
-        "pool": "0x75Bb7792be39f9CA9E7F4c7a6AFcF53e7F614Cb2",
-        "underlying": "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4"
-      }
-    },
-    {
-      "chainId": 324,
-      "address": "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C",
-      "name": "Tether USD",
-      "decimals": 6,
-      "symbol": "USDT",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
-    },
-    {
-      "chainId": 324,
-      "address": "0xa7d6B2dFe6cDB4c2D017294636065ac77265114c",
-      "name": "Aave ZkSync USDT",
-      "decimals": 6,
-      "symbol": "aZksUSDT",
-      "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
-      "extensions": {
-        "pool": "0x75Bb7792be39f9CA9E7F4c7a6AFcF53e7F614Cb2",
-        "underlying": "0x493257fD37EDB34451f62EDf8D2a0C418852bA4C"
-      }
-    },
-    {
-      "chainId": 324,
-      "address": "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
-      "name": "Wrapped Ether",
-      "decimals": 18,
-      "symbol": "WETH",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
-    },
-    {
-      "chainId": 324,
-      "address": "0xe471A799FA3DC0738Cf9FB7346574843f5219C30",
-      "name": "Aave ZkSync WETH",
-      "decimals": 18,
-      "symbol": "aZksWETH",
-      "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
-      "extensions": {
-        "pool": "0x75Bb7792be39f9CA9E7F4c7a6AFcF53e7F614Cb2",
-        "underlying": "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91"
-      }
-    },
-    {
-      "chainId": 324,
-      "address": "0x703b52F2b28fEbcB60E1372858AF5b18849FE867",
-      "name": "Wrapped liquid staked Ether 2.0",
-      "decimals": 18,
-      "symbol": "wstETH",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wsteth.svg"
-    },
-    {
-      "chainId": 324,
-      "address": "0x318CfbA2CDDBF6522d855A589938EC6f5B990Fc1",
-      "name": "Aave ZkSync wstETH",
-      "decimals": 18,
-      "symbol": "aZkswstETH",
-      "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awsteth.svg",
-      "extensions": {
-        "pool": "0x75Bb7792be39f9CA9E7F4c7a6AFcF53e7F614Cb2",
-        "underlying": "0x703b52F2b28fEbcB60E1372858AF5b18849FE867"
-      }
-    },
-    {
-      "chainId": 324,
-      "address": "0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E",
-      "name": "ZKsync",
-      "decimals": 18,
-      "symbol": "ZK",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/zk.svg"
-    },
-    {
-      "chainId": 324,
-      "address": "0xFA8789719Ff34325362FF901bb3B34f34Ce4768A",
-      "name": "Aave ZkSync ZK",
-      "decimals": 18,
-      "symbol": "aZksZK",
-      "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/azk.svg",
-      "extensions": {
-        "pool": "0x75Bb7792be39f9CA9E7F4c7a6AFcF53e7F614Cb2",
-        "underlying": "0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E"
-      }
-    },
-    {
       "chainId": 250,
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
       "name": "Dai Stablecoin",
@@ -6411,6 +6301,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 35 },
-  "timestamp": "2024-08-26T07:44:49.723Z"
+  "version": { "major": 3, "minor": 0, "patch": 36 },
+  "timestamp": "2024-08-26T08:37:22.547Z"
 }

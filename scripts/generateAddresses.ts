@@ -123,7 +123,7 @@ async function main() {
       optimismSepoliaProtoV3,
       scrollProtoV3,
       scrollSepoliaProtoV3,
-      zkSyncProtoV3,
+      // zkSyncProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
       harmonyProtoV3,
@@ -132,7 +132,7 @@ async function main() {
   );
 
   const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
-  console.log("✅ Tokens list generation finished");
+  console.log('✅ Tokens list generation finished');
 
   const networkAddresses = [
     arbitrumAddresses,
@@ -182,8 +182,7 @@ async function main() {
   writeFileSync(`./src/AaveAddressBook.sol`, prefixWithGeneratedWarning(prefixWithPragma('')));
   solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
 
-  console.log("✅ Generation finished");
+  console.log('✅ Generation finished');
 }
 
 main();
-
