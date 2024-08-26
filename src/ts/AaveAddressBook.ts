@@ -36,7 +36,6 @@ export * as AaveV3Optimism from './AaveV3Optimism';
 export * as AaveV3OptimismSepolia from './AaveV3OptimismSepolia';
 export * as AaveV3Scroll from './AaveV3Scroll';
 export * as AaveV3ScrollSepolia from './AaveV3ScrollSepolia';
-export * as AaveV3ZkSync from './AaveV3ZkSync';
 export * as AaveV3FantomTestnet from './AaveV3FantomTestnet';
 export * as AaveV3Fantom from './AaveV3Fantom';
 export * as AaveV3Harmony from './AaveV3Harmony';
