@@ -25,9 +25,9 @@
     tsx "^4.7.1"
 
 "@bgd-labs/react-web3-icons@^1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@bgd-labs/react-web3-icons/-/react-web3-icons-1.4.4.tgz#56ed9d762acaa8fa58507e9a73a1a9177a87172f"
-  integrity sha512-wc9lH1f7bv7zVIjXdkaUVf/k4CRu78uFs06764k7nu6TTIIIWWJgH1KwrUKqhfWyanSwXt47Q+gz1YH4G/m/Lw==
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/@bgd-labs/react-web3-icons/-/react-web3-icons-1.4.6.tgz#7c5cfb1aa56ed1945c59839f3994d962010e1053"
+  integrity sha512-668HIZLxzvcI1uTDvQ3bkcBmLqV1k3OJ4R/6hpCyx6OQDzzjfvHhuLpIUPSbMzi3q+15xX8fMDVVE2MBUCs1Xg==
   dependencies:
     "@loadable/component" "5.16.4"
     react "18.3.1"
