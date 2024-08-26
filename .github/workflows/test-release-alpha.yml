@@ -8,8 +8,12 @@ on:
   pull_request:
 
 jobs:
-  test:
+  test-solidity:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
+    secrets: inherit
+  test-js:
+    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+    secrets: inherit
   pkg-size-report:
     permissions:
       pull-requests: write
@@ -34,6 +38,8 @@ jobs:
   release-node-alpha:
     if: github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
     uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
-    needs: test
+    needs:
+      - test-solidity
+      - test-js
     secrets:
       NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
