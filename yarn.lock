@@ -503,9 +503,9 @@ dotenv@^16.4.1:
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
 
 esbuild-plugin-file-path-extensions@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/esbuild-plugin-file-path-extensions/-/esbuild-plugin-file-path-extensions-2.0.0.tgz#8b076b619d8a55898a35b86d042772e91f132192"
-  integrity sha512-VzVJhuegxLeg8VhsHmxRXtz1Kxf3QMQb1xIuKWivGHoOmZdU6O6xJ5iHhfCDyR+Vs+JE5GrvSpCsZ3GvaqlkUA==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/esbuild-plugin-file-path-extensions/-/esbuild-plugin-file-path-extensions-2.1.2.tgz#4e26900a9eb8187edd22bbe04b99e969c6dc4fe1"
+  integrity sha512-c9ncPyXg2ykUFBZ3HwErs39EN0jdJHHMb2un/fAYHR41ZgnsHMXM1FlG8W3MV+NXRi64dFSybS9FZcaHO0Ge5Q==
 
 esbuild@^0.19.2, esbuild@~0.19.10:
   version "0.19.10"
