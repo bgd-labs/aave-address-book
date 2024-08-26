@@ -81,10 +81,116 @@ library AaveV3ZkSync {
   address internal constant STATIC_A_TOKEN_FACTORY = 0x9416fA2036662565b0Aa26D18b4948F73A192C96;
 }
 
-library AaveV3ZkSyncAssets {}
+library AaveV3ZkSyncAssets {
+  // https://era.zksync.network//address/0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4
+  address internal constant USDC_UNDERLYING = 0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://era.zksync.network//address/0x97448808a366BDCC3A0fF84E36573dD8Ef1Ff5Fb
+  address internal constant USDC_A_TOKEN = 0x97448808a366BDCC3A0fF84E36573dD8Ef1Ff5Fb;
+
+  // https://era.zksync.network//address/0xb30d45038b1373827A0336cD6EB0b94723C76783
+  address internal constant USDC_V_TOKEN = 0xb30d45038b1373827A0336cD6EB0b94723C76783;
+
+  // https://era.zksync.network//address/0x9bC045f0aB33a498dA84F09fDAbd0C3c8Ed278c0
+  address internal constant USDC_S_TOKEN = 0x9bC045f0aB33a498dA84F09fDAbd0C3c8Ed278c0;
+
+  // https://era.zksync.network//address/0x162C97F6B4FA5a915A44D430bb7AE0eE716b3b87
+  address internal constant USDC_ORACLE = 0x162C97F6B4FA5a915A44D430bb7AE0eE716b3b87;
+
+  // https://era.zksync.network//address/0x7BcE25db0C430059C4277D6A747d7fd0C1214beA
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0x7BcE25db0C430059C4277D6A747d7fd0C1214beA;
+
+  // https://era.zksync.network//address/0x493257fD37EDB34451f62EDf8D2a0C418852bA4C
+  address internal constant USDT_UNDERLYING = 0x493257fD37EDB34451f62EDf8D2a0C418852bA4C;
+
+  uint8 internal constant USDT_DECIMALS = 6;
+
+  // https://era.zksync.network//address/0xa7d6B2dFe6cDB4c2D017294636065ac77265114c
+  address internal constant USDT_A_TOKEN = 0xa7d6B2dFe6cDB4c2D017294636065ac77265114c;
+
+  // https://era.zksync.network//address/0x02C39C4Ed5D7345fD96E9f83805467B9D3c33252
+  address internal constant USDT_V_TOKEN = 0x02C39C4Ed5D7345fD96E9f83805467B9D3c33252;
+
+  // https://era.zksync.network//address/0x3d58EC46eE7b50ff54E5277Bbb02A8fdE774F193
+  address internal constant USDT_S_TOKEN = 0x3d58EC46eE7b50ff54E5277Bbb02A8fdE774F193;
+
+  // https://era.zksync.network//address/0x92DaB7275859C5399a326874897daddb0F4ed7A4
+  address internal constant USDT_ORACLE = 0x92DaB7275859C5399a326874897daddb0F4ed7A4;
+
+  // https://era.zksync.network//address/0x7BcE25db0C430059C4277D6A747d7fd0C1214beA
+  address internal constant USDT_INTEREST_RATE_STRATEGY =
+    0x7BcE25db0C430059C4277D6A747d7fd0C1214beA;
+
+  // https://era.zksync.network//address/0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91
+  address internal constant WETH_UNDERLYING = 0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://era.zksync.network//address/0xe471A799FA3DC0738Cf9FB7346574843f5219C30
+  address internal constant WETH_A_TOKEN = 0xe471A799FA3DC0738Cf9FB7346574843f5219C30;
+
+  // https://era.zksync.network//address/0x912413f4Ab1fBFD31414DE2fB1b63816c95e4d91
+  address internal constant WETH_V_TOKEN = 0x912413f4Ab1fBFD31414DE2fB1b63816c95e4d91;
+
+  // https://era.zksync.network//address/0x415BeF014E69564Fe68f6b8d5fBbDE4310794C5d
+  address internal constant WETH_S_TOKEN = 0x415BeF014E69564Fe68f6b8d5fBbDE4310794C5d;
+
+  // https://era.zksync.network//address/0x6D41d1dc818112880b40e26BD6FD347E41008eDA
+  address internal constant WETH_ORACLE = 0x6D41d1dc818112880b40e26BD6FD347E41008eDA;
+
+  // https://era.zksync.network//address/0x7BcE25db0C430059C4277D6A747d7fd0C1214beA
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0x7BcE25db0C430059C4277D6A747d7fd0C1214beA;
+
+  // https://era.zksync.network//address/0x703b52F2b28fEbcB60E1372858AF5b18849FE867
+  address internal constant wstETH_UNDERLYING = 0x703b52F2b28fEbcB60E1372858AF5b18849FE867;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://era.zksync.network//address/0x318CfbA2CDDBF6522d855A589938EC6f5B990Fc1
+  address internal constant wstETH_A_TOKEN = 0x318CfbA2CDDBF6522d855A589938EC6f5B990Fc1;
+
+  // https://era.zksync.network//address/0x29191BEa63b15E70E2f4c2647695aD1C8EdCb3d5
+  address internal constant wstETH_V_TOKEN = 0x29191BEa63b15E70E2f4c2647695aD1C8EdCb3d5;
+
+  // https://era.zksync.network//address/0x60a6E8f92482Fe6F11B57697Ca4f962c0cDA3369
+  address internal constant wstETH_S_TOKEN = 0x60a6E8f92482Fe6F11B57697Ca4f962c0cDA3369;
+
+  // https://era.zksync.network//address/0xB19d366dC599904Aa026440d4E805F0E13512682
+  address internal constant wstETH_ORACLE = 0xB19d366dC599904Aa026440d4E805F0E13512682;
+
+  // https://era.zksync.network//address/0x7BcE25db0C430059C4277D6A747d7fd0C1214beA
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x7BcE25db0C430059C4277D6A747d7fd0C1214beA;
+
+  // https://era.zksync.network//address/0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E
+  address internal constant ZK_UNDERLYING = 0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E;
+
+  uint8 internal constant ZK_DECIMALS = 18;
+
+  // https://era.zksync.network//address/0xFA8789719Ff34325362FF901bb3B34f34Ce4768A
+  address internal constant ZK_A_TOKEN = 0xFA8789719Ff34325362FF901bb3B34f34Ce4768A;
+
+  // https://era.zksync.network//address/0xfaa231f2B7D0De0644b38a36deF591B3B8c7a409
+  address internal constant ZK_V_TOKEN = 0xfaa231f2B7D0De0644b38a36deF591B3B8c7a409;
+
+  // https://era.zksync.network//address/0x9EAAc5b543258E44a189D1dF02dD2CEAAb8Af7B0
+  address internal constant ZK_S_TOKEN = 0x9EAAc5b543258E44a189D1dF02dD2CEAAb8Af7B0;
+
+  // https://era.zksync.network//address/0xD1ce60dc8AE060DDD17cA8716C96f193bC88DD13
+  address internal constant ZK_ORACLE = 0xD1ce60dc8AE060DDD17cA8716C96f193bC88DD13;
+
+  // https://era.zksync.network//address/0x7BcE25db0C430059C4277D6A747d7fd0C1214beA
+  address internal constant ZK_INTEREST_RATE_STRATEGY = 0x7BcE25db0C430059C4277D6A747d7fd0C1214beA;
+}
 
 library AaveV3ZkSyncEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
 }
 
 library AaveV3ZkSyncExternalLibraries {
