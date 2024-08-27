@@ -74,6 +74,9 @@ export const CONFIG_ENGINE = '0xC80f057d40Fc7f0A01ad4a634f35520Df8079707';
 // https://etherscan.io/address/0x3843b29118fFC18d5d12EE079d0324E1bF115e69
 export const CAPS_PLUS_RISK_STEWARD = '0x3843b29118fFC18d5d12EE079d0324E1bF115e69';
 
+// https://etherscan.io/address/0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D
+export const RISK_STEWARD = '0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   wstETH: {

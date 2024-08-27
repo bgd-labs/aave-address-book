@@ -89,6 +89,9 @@ library AaveV3EthereumLido {
 
   // https://etherscan.io/address/0x3843b29118fFC18d5d12EE079d0324E1bF115e69
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x3843b29118fFC18d5d12EE079d0324E1bF115e69;
+
+  // https://etherscan.io/address/0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D
+  address internal constant RISK_STEWARD = 0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D;
 }
 
 library AaveV3EthereumLidoAssets {

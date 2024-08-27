@@ -64,6 +64,9 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
 
+  // https://optimistic.etherscan.io/address/0x9062F78b631f33D24Ed058cBc116A653452ea82A
+  address internal constant RISK_STEWARD = 0x9062F78b631f33D24Ed058cBc116A653452ea82A;
+
   // https://optimistic.etherscan.io/address/0x3829943c53F2d00e20B58475aF19716724bF90Ba
   address internal constant FREEZING_STEWARD = 0x3829943c53F2d00e20B58475aF19716724bF90Ba;
 
