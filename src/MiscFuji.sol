@@ -3,6 +3,6 @@
 pragma solidity >=0.6.0;
 
 library MiscFuji {
-  // https://testnet.snowscan.xyz/address/0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723
+  // https://testnet.snowtrace.io/address/0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723
   address internal constant GHO_TOKEN = 0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723;
 }

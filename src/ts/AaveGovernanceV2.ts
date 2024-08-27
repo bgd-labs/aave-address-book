@@ -17,7 +17,7 @@ export const OPTIMISM_BRIDGE_EXECUTOR = '0x7d9103572bE58FfE99dc390E8246f02dcAe6f
 // address https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
 export const ARBITRUM_BRIDGE_EXECUTOR = '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611';
 
-// address https://andromeda-explorer.metis.io/address/0x8EC77963068474a45016938Deb95E603Ca82a029
+// address https://explorer.metis.io/address/0x8EC77963068474a45016938Deb95E603Ca82a029
 export const METIS_BRIDGE_EXECUTOR = '0x8EC77963068474a45016938Deb95E603Ca82a029';
 
 // address https://basescan.org/address/0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45
