@@ -21,7 +21,7 @@ library AaveGovernanceV2 {
   // https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
   address internal constant ARBITRUM_BRIDGE_EXECUTOR = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 
-  // https://andromeda-explorer.metis.io/address/0x8EC77963068474a45016938Deb95E603Ca82a029
+  // https://explorer.metis.io/address/0x8EC77963068474a45016938Deb95E603Ca82a029
   address internal constant METIS_BRIDGE_EXECUTOR = 0x8EC77963068474a45016938Deb95E603Ca82a029;
 
   // https://basescan.org/address/0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45
