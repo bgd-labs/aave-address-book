@@ -42,7 +42,7 @@ export const Search = ({
   const uf = useMemo(() => {
     const opts = {
       intraMode: 1,
-      intraChars: "[a-z\\d'_]"
+      intraChars: "[a-z\\d'_]",
     };
     return new uFuzzy(opts);
   }, []);
@@ -50,7 +50,7 @@ export const Search = ({
   const performSearch = useCallback(
     (search: string) => {
       const searchWords = search.trim().split(/\s+/);
-  
+
       let results = [];
       for (let idx = 0; idx < searchPaths.length; idx++) {
         const path = searchPaths[idx];
@@ -58,12 +58,12 @@ export const Search = ({
           const idxs = uf.filter([path], word);
           return idxs && idxs.length > 0;
         });
-  
+
         if (isMatch) {
           results.push(addresses[idx]);
         }
       }
-  
+
       setResults(results.slice(0, SEARCH_LIMIT));
     },
     [searchPaths, addresses, uf],
@@ -168,7 +168,7 @@ export const Search = ({
           <SearchResult
             key={result.searchPath}
             result={result}
-            ref={(el) => (refs.current[index] = el)}
+            ref={(el) => (refs.current[index] = el) as any}
             tabIndex={index === activeIndex ? 0 : -1}
           />
         ))}

@@ -11,6 +11,7 @@ name: release-please
 jobs:
   test-node:
     uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+    secrets: inherit
 
   release-please:
     runs-on: ubuntu-latest
