@@ -5,7 +5,7 @@ import githubIcon from '@/assets/icons/github.svg';
 
 export const Footer = () => {
   return (
-    <div className="mt-auto -translate-x-1">
+    <div className="-translate-x-1">
       <div className="flex items-center justify-center text-sm text-brand-500">
         <div>
           <div className="mb-2 text-center">by BGD Labs</div>
