@@ -108,6 +108,14 @@ const sortedAddresses = addresses.sort((a, b) => {
 });
 const searchPaths = sortedAddresses.map((a) => a.searchPath);
 
+const gnosis = `address,name,chainId\n${addresses
+  .sort((a, b) => a.chainId! - b.chainId!)
+  .map(
+    (address) =>
+      `${address.value},${address.path.join(' ')},${address.chainId}`,
+  )
+  .join('\n')}`;
+
 export default function Home() {
   return (
     <>
@@ -120,6 +128,12 @@ export default function Home() {
         />
         <Suspense fallback={<SearchSkeleton />}>
           <Search addresses={addresses} searchPaths={searchPaths} />
+          <a
+            download="gnosis-aave-address-book.csv"
+            href={'data:text/plain;charset=utf-8,' + encodeURIComponent(gnosis)}
+          >
+            Gnosis
+          </a>
         </Suspense>
         <Footer />
       </main>
