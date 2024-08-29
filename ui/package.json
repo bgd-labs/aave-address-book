@@ -9,25 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bgd-labs/react-web3-icons": "^1.4.6",
+    "@bgd-labs/react-web3-icons": "^1.4.7",
     "@bgd-labs/js-utils": "^1.4.2",
     "@leeoniya/ufuzzy": "^1.0.14",
-    "clsx": "^2.1.0",
-    "next": "14.2.3",
+    "clsx": "^2.1.1",
+    "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
-    "@types/node": "^22",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
-    "postcss": "^8.4.35",
+    "@types/node": "^22.5.1",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8.4.41",
     "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
   }
 }
