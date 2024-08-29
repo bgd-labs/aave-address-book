@@ -31,7 +31,8 @@
   "scripts": {
     "prettier": "prettier --write 'src/**/*.{sol,ts}'",
     "generate:abis": "tsx scripts/generateABIs.ts && npm run prettier",
-    "generate:addresses": "tsx scripts/generateAddresses.ts && npm run prettier",
+    "generate:safe": "tsx scripts/generateSafeCSV.ts",
+    "generate:addresses": "tsx scripts/generateAddresses.ts && npm generate:safe && npm run prettier",
     "start": "tsx scripts/generateABIs.ts && tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
     "ci:publish": "npm run build && npm publish --access=public",
