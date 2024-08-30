@@ -8,6 +8,7 @@ import { Footer } from '@/components/Footer';
 import { type SearchItem } from '@/types';
 import logo from '@/assets/logo.svg';
 import { Address, isAddress } from 'viem';
+import { SafeDownload } from '@/components/SafeDownload';
 
 const PRODUCTION_CHAIN_IDS = [
   1, 8453, 42161, 43114, 250, 1666600000, 10, 137, 1088, 100, 56, 534352,
@@ -121,6 +122,7 @@ export default function Home() {
         <Suspense fallback={<SearchSkeleton />}>
           <Search addresses={addresses} searchPaths={searchPaths} />
         </Suspense>
+        <SafeDownload />
         <Footer />
       </main>
     </>
