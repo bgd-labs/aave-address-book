@@ -37,9 +37,23 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant ACL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
+  // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
+  ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
+
   // https://etherscan.io/address/0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb;
+
+  // https://etherscan.io/address/0xaFFA06528Bd92625de2e7A0cfa0119319265Ea4b
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xaFFA06528Bd92625de2e7A0cfa0119319265Ea4b;
+
+  // https://etherscan.io/address/0xBb077DaFFeb23B2126E7358b0b122ba6838FB881
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+    0xBb077DaFFeb23B2126E7358b0b122ba6838FB881;
+
+  // https://etherscan.io/address/0xb53F0547722AE5fa5b433a7acc44571aD68CEdAA
+  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
+    0xb53F0547722AE5fa5b433a7acc44571aD68CEdAA;
 
   // https://etherscan.io/address/0x223d844fc4B006D67c0cDbd39371A9F73f69d974
   address internal constant EMISSION_MANAGER = 0x223d844fc4B006D67c0cDbd39371A9F73f69d974;
@@ -58,14 +72,14 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0x850347E0cF64fd342A3404c1c5DA21Aa0A46c5c6
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x850347E0cF64fd342A3404c1c5DA21Aa0A46c5c6;
 
-  // https://etherscan.io/address/0x8Ed2Ac8a525BA1CfF1b4253de62Ef8466c5C8311
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x8Ed2Ac8a525BA1CfF1b4253de62Ef8466c5C8311;
+  // https://etherscan.io/address/0x162A7AC02f547ad796CA549f757e2b8d1D9b10a6
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x162A7AC02f547ad796CA549f757e2b8d1D9b10a6;
 
   // https://etherscan.io/address/0xdbbB1C304FA7feDeF5855ab993d34254BF2576A6
   address internal constant UI_POOL_DATA_PROVIDER = 0xdbbB1C304FA7feDeF5855ab993d34254BF2576A6;
 
-  // https://etherscan.io/address/0x1C438F26Dc3751f70fCBf63493d94EaA1F31c8fC
-  address internal constant WALLET_BALANCE_PROVIDER = 0x1C438F26Dc3751f70fCBf63493d94EaA1F31c8fC;
+  // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
+  address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
 
   // https://etherscan.io/address/0xAB911dFB2bB9e264EE836F30D3367618f8Aef965
   address internal constant WETH_GATEWAY = 0xAB911dFB2bB9e264EE836F30D3367618f8Aef965;
