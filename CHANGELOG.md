@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/bgd-labs/aave-address-book/compare/v3.1.1...v3.2.0) (2024-09-02)
+
+
+### Features
+
+* add download for gnosis ([#556](https://github.com/bgd-labs/aave-address-book/issues/556)) ([bb2e157](https://github.com/bgd-labs/aave-address-book/commit/bb2e15766ff59e400c4188c9b6ab635b24a6f6c7))
+* add generalised risk stewards ([#553](https://github.com/bgd-labs/aave-address-book/issues/553)) ([be65fa2](https://github.com/bgd-labs/aave-address-book/commit/be65fa2d7470c8f4da59365890c646efb1066cb7))
+* link to file instead of download ([#558](https://github.com/bgd-labs/aave-address-book/issues/558)) ([7356ce6](https://github.com/bgd-labs/aave-address-book/commit/7356ce6efe78e1ff65b42d0ea44a75e5c913fd02))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#528](https://github.com/bgd-labs/aave-address-book/issues/528)) ([eec868e](https://github.com/bgd-labs/aave-address-book/commit/eec868eb1a3cd66ae01a93b499b6f6c9f7674cad))
+* **cache:** automated cache update - updated addresses ([#540](https://github.com/bgd-labs/aave-address-book/issues/540)) ([5c08f2b](https://github.com/bgd-labs/aave-address-book/commit/5c08f2b7475f3af24d8f29f35a707d18716ebb93))
+* **cache:** automated cache update - updated addresses ([#546](https://github.com/bgd-labs/aave-address-book/issues/546)) ([2d7c918](https://github.com/bgd-labs/aave-address-book/commit/2d7c91846bd111ce6ae4bc7f57fd4f939770572f))
+* **cache:** automated cache update - updated addresses ([#554](https://github.com/bgd-labs/aave-address-book/issues/554)) ([6f989a0](https://github.com/bgd-labs/aave-address-book/commit/6f989a0dab36e553d8d5dd1e50ef3d6b5f920043))
+* disable-release-ci ([#536](https://github.com/bgd-labs/aave-address-book/issues/536)) ([ebca49e](https://github.com/bgd-labs/aave-address-book/commit/ebca49e22cc05f65acd269ac074f4b39fdd35ea3))
+* don't make a realease for every shitty dependency upgrade ([#538](https://github.com/bgd-labs/aave-address-book/issues/538)) ([32a608a](https://github.com/bgd-labs/aave-address-book/commit/32a608ac716e943f0e62c8763f380a4ce6f33492))
+* remove trailing slashes ([#539](https://github.com/bgd-labs/aave-address-book/issues/539)) ([0432434](https://github.com/bgd-labs/aave-address-book/commit/0432434fc46fc23e8d71ac4d0586c77e3d77e4fe))
+* update ci ([#557](https://github.com/bgd-labs/aave-address-book/issues/557)) ([15e00d7](https://github.com/bgd-labs/aave-address-book/commit/15e00d7a735494308e9c22eda7002ab0d1257c51))
+* upgrade pull request ci ([#548](https://github.com/bgd-labs/aave-address-book/issues/548)) ([5886099](https://github.com/bgd-labs/aave-address-book/commit/58860997091f5e2f2935422f79ba00c1f444ab0d))
+
 ## [3.1.1](https://github.com/bgd-labs/aave-address-book/compare/v3.1.0...v3.1.1) (2024-08-13)
 
 
