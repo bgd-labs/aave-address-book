@@ -15,10 +15,11 @@ jobs:
 
   release-please:
     runs-on: ubuntu-latest
+    needs: test-node
     outputs:
       releaseCreated: ${{ steps.release.outputs.release_created }}
     steps:
-      - uses: google-github-actions/release-please-action@v4.1.0
+      - uses: googleapis/release-please-action@v4.1.3
         id: release
         with:
           release-type: node
@@ -26,8 +27,6 @@ jobs:
   release-node:
     uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
     if: ${{ needs.release-please.outputs.releaseCreated }}
-    needs:
-      - test-node
-      - release-please
+    needs: release-please
     secrets:
       NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
