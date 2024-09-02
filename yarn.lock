@@ -1183,9 +1183,9 @@ undici-types@~6.19.2:
   integrity sha512-e/vggGopEfTKSvj4ihnOLTsqhrKRN3LeO6qSN/GxohhuRv8qH9bNQ4B8W7e/vFL+0XTnmHPB4/kegunZGA4Org==
 
 viem@^2.8.5:
-  version "2.19.7"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.19.7.tgz#719006feb0e7f57c790242f62629737f4518752a"
-  integrity sha512-zoaBWnI6vf7MVRn4lAbuKd25hR31088yrMqONMHU8RjHTY4nqf+O589BPODwJak1LkfpbawyGyCY2tRFwZCWgw==
+  version "2.21.1"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.21.1.tgz#7d07e4302297d1b44b4c97b8fece3b6ebb73b1ef"
+  integrity sha512-nlIc2LLS6aqkngULS9UJ2Sg3nHKAgF9bbpDUwjUoAUBijd69mrCWPBXQ8jmbzcx12uZUfd9Nc//CHgSVZiMwyg==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.4.0"
