@@ -5,6 +5,7 @@ import {NetworkAddresses} from '../types';
 export const baseAddresses: NetworkAddresses<{
   wstETH_stETH_AGGREGATOR: Hex;
   cbETH_ETH_AGGREGATOR: Hex;
+  LEGACY_BRIDGE_EXECUTOR: Hex;
 }> = {
   name: 'Base',
   chainId: ChainId.base,
@@ -17,6 +18,7 @@ export const baseAddresses: NetworkAddresses<{
     PROTOCOL_GUARDIAN: '0x9e10C0A1Eb8FF6a0AaA53a62C7a338f35D7D9a2A',
     wstETH_stETH_AGGREGATOR: '0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061',
     cbETH_ETH_AGGREGATOR: '0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04',
+    LEGACY_BRIDGE_EXECUTOR: '0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45',
   },
 };
 
@@ -26,6 +28,6 @@ export const baseSepoliaAddresses: NetworkAddresses = {
   addresses: {
     TRANSPARENT_PROXY_FACTORY: '0xd90f09ea5ee893b8c0564719e855f1cf0455d894',
     PROXY_ADMIN: '0xF9e48edc704BDF494309cA457BCea4c0696f591d',
-    GHO_TOKEN:'0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb'
+    GHO_TOKEN: '0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb',
   },
 };

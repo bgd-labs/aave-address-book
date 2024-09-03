@@ -14,4 +14,7 @@ library MiscMetis {
 
   // https://explorer.metis.io/address/0xF6Db48C5968A9eBCB935786435530f28e32Cc501
   address internal constant PROTOCOL_GUARDIAN = 0xF6Db48C5968A9eBCB935786435530f28e32Cc501;
+
+  // https://explorer.metis.io/address/0x8EC77963068474a45016938Deb95E603Ca82a029
+  address internal constant LEGACY_BRIDGE_EXECUTOR = 0x8EC77963068474a45016938Deb95E603Ca82a029;
 }

@@ -26,4 +26,7 @@ library MiscBase {
 
   // https://basescan.org/address/0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04
   address internal constant cbETH_ETH_AGGREGATOR = 0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04;
+
+  // https://basescan.org/address/0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45
+  address internal constant LEGACY_BRIDGE_EXECUTOR = 0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45;
 }

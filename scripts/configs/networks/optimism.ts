@@ -5,6 +5,7 @@ import {NetworkAddresses} from '../types';
 export const optimismAddresses: NetworkAddresses<{
   wstETH_stETH_AGGREGATOR: Hex;
   rETH_ETH_AGGREGATOR: Hex;
+  LEGACY_BRIDGE_EXECUTOR: Hex;
 }> = {
   name: 'Optimism',
   chainId: ChainId.optimism,
@@ -18,6 +19,7 @@ export const optimismAddresses: NetworkAddresses<{
     AAVE_MERKLE_DISTRIBUTOR: '0x1685D81212580DD4cDA287616C2f6F4794927e18',
     wstETH_stETH_AGGREGATOR: '0xe59EBa0D492cA53C6f46015EEa00517F2707dc77',
     rETH_ETH_AGGREGATOR: '0x22F3727be377781d1579B7C9222382b21c9d1a8f',
+    LEGACY_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
   },
 };
 
@@ -27,6 +29,6 @@ export const optimismSepoliaAddresses: NetworkAddresses = {
   addresses: {
     GHO_TOKEN: '0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810',
     TRANSPARENT_PROXY_FACTORY: '0xb172a90A7C238969CE9B27cc19D13b60A91e7F00',
-    PROXY_ADMIN: '0xe892E40C92c2E4D281Be59b2E6300F271d824E75'
+    PROXY_ADMIN: '0xe892E40C92c2E4D281Be59b2E6300F271d824E75',
   },
 };

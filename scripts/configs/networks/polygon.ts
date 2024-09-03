@@ -7,6 +7,7 @@ export const polygonAddresses: NetworkAddresses<{
   wstETH_stETH_AGGREGATOR: Hex;
   MaticX_RATE_PROVIDER: Hex;
   stMATIC_RATE_PROVIDER: Hex;
+  LEGACY_BRIDGE_EXECUTOR: Hex;
 }> = {
   name: 'Polygon',
   chainId: ChainId.polygon,
@@ -22,5 +23,6 @@ export const polygonAddresses: NetworkAddresses<{
     wstETH_stETH_AGGREGATOR: '0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c',
     MaticX_RATE_PROVIDER: '0xeE652bbF72689AA59F0B8F981c9c90e2A8Af8d8f',
     stMATIC_RATE_PROVIDER: '0xdEd6C522d803E35f65318a9a4d7333a22d582199',
+    LEGACY_BRIDGE_EXECUTOR: '0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772',
   },
 };
