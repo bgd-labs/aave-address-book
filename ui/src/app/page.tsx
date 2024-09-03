@@ -1,18 +1,13 @@
 import { Suspense } from 'react';
-import * as addressBook from '../../../src/ts/AaveAddressBook';
+import { flattenedAddresses } from '../../../scripts/generator/getAddresses';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
 import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
-import { type SearchItem } from '@/types';
 import logo from '@/assets/logo.svg';
-import { Address, isAddress } from 'viem';
 import { SafeDownload } from '@/components/SafeDownload';
 
-const PRODUCTION_CHAIN_IDS = [
-  1, 8453, 42161, 43114, 250, 1666600000, 10, 137, 1088, 100, 56, 534352,
-];
 const VERSION_PRIORITY: { [key: string]: number } = {
   AaveV3: 1,
   AaveV2: 2,
@@ -31,50 +26,22 @@ function getVersionPriority(name: string): number {
 const TAG_MAP: Record<string, string[]> = {
   S_TOKEN: ['stable', 'debt'],
   V_TOKEN: ['variable', 'debt'],
+  STATA_TOKEN: ['stata', 'static'],
 };
 
-function flattenObject(
-  obj: any,
-  path: string[] = [],
-  chainId: number | null = null,
-): SearchItem[] {
-  const result: SearchItem[] = [];
-  const entries = Object.entries(obj).sort(([keyA], [keyB]) => {
-    if (keyA === 'CHAIN_ID') return -1;
-    if (keyB === 'CHAIN_ID') return 1;
-    return 0;
-  });
+const addresses = flattenedAddresses.map((item) => ({
+  ...item,
+  link: `${CHAIN_ID_CLIENT_MAP[item.chainId]?.chain?.blockExplorers?.default.url.replace(/\/$/, '')}/address/${item.value}`,
+  searchPath: [
+    ...item.path,
+    item.value,
+    ...(TAG_MAP[item.path[item.path.length - 1]] ?? []),
+  ].join(' '),
+}));
 
-  for (let [key, value] of entries) {
-    if (key === 'tokenlist') continue;
-
-    const newPath = [...path, key];
-    if (key === 'CHAIN_ID') {
-      chainId = value as number;
-    }
-    if (typeof value === 'object' && value !== null) {
-      result.push(...flattenObject(value, newPath, chainId));
-    } else if (isAddress(value as string)) {
-      const link = `${CHAIN_ID_CLIENT_MAP[chainId!]?.chain?.blockExplorers?.default.url.replace(/\/$/, '')}/address/${value}`;
-      const key = newPath[newPath.length - 1];
-      const searchPath = [...newPath, value];
-      if (TAG_MAP[key]) searchPath.push(...TAG_MAP[key]);
-      result.push({
-        path: newPath,
-        value: value as Address,
-        chainId,
-        link,
-        searchPath: searchPath.join(' '),
-      });
-    }
-  }
-  return result;
-}
-
-const addresses = flattenObject(addressBook);
 const sortedAddresses = addresses.sort((a, b) => {
-  const aInProduction = PRODUCTION_CHAIN_IDS.includes(a.chainId ?? 0);
-  const bInProduction = PRODUCTION_CHAIN_IDS.includes(b.chainId ?? 0);
+  const aInProduction = !CHAIN_ID_CLIENT_MAP[a.chainId].chain?.testnet;
+  const bInProduction = !CHAIN_ID_CLIENT_MAP[b.chainId].chain?.testnet;
 
   if (aInProduction && !bInProduction) {
     return -1;

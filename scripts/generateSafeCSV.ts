@@ -1,44 +1,10 @@
-import * as addressBook from '../src/ts/AaveAddressBook';
-import {Address, isAddress} from 'viem';
 import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {writeFileSync} from 'fs';
+import {flattenedAddresses} from './generator/getAddresses';
 
-export type ListItem = {
-  path: string[];
-  value: string;
-  chainId: number | null;
-};
-
-function flattenObject(obj: any, path: string[] = [], chainId: number | null = null): ListItem[] {
-  const result: ListItem[] = [];
-  const entries = Object.entries(obj).sort(([keyA], [keyB]) => {
-    if (keyA === 'CHAIN_ID') return -1;
-    if (keyB === 'CHAIN_ID') return 1;
-    return 0;
-  });
-
-  for (let [key, value] of entries) {
-    if (key === 'tokenlist') continue;
-    if (chainId && CHAIN_ID_CLIENT_MAP[chainId!].chain?.testnet) continue;
-
-    const newPath = [...path, key];
-    if (key === 'CHAIN_ID') {
-      chainId = value as number;
-    }
-    if (typeof value === 'object' && value !== null) {
-      result.push(...flattenObject(value, newPath, chainId));
-    } else if (isAddress(value as string)) {
-      result.push({
-        path: newPath,
-        value: value as Address,
-        chainId,
-      });
-    }
-  }
-  return result;
-}
-
-const addresses = flattenObject(addressBook);
+const addresses = flattenedAddresses.filter(
+  (item) => !CHAIN_ID_CLIENT_MAP[item.chainId].chain?.testnet,
+);
 
 const safe = `address,name,chainId\n${addresses
   .sort((a, b) => a.chainId! - b.chainId!)
