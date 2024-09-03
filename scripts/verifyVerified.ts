@@ -15,6 +15,12 @@ const CHAIN_ID_API_KEY_MAP = {
   [ChainId.gnosis]: process.env.ETHERSCAN_API_KEY_GNOSIS,
 };
 
+function getApiUrl(chainId: number) {
+  if (chainId === ChainId.metis)
+    return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
+  return CHAIN_ID_CLIENT_MAP[chainId]?.chain?.blockExplorers?.default.apiUrl;
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -27,7 +33,7 @@ async function checkProxyVerfication(item: ListItem, guid: string) {
     guid,
   };
   const formattedParams = new URLSearchParams(params).toString();
-  const url = `${CHAIN_ID_CLIENT_MAP[item.chainId]?.chain?.blockExplorers?.default.apiUrl}?${formattedParams}`;
+  const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
     const {status} = await request.json();
@@ -45,7 +51,7 @@ async function verifyProxy(item: ListItem) {
     action: 'verifyproxycontract',
   };
   const formattedParams = new URLSearchParams(params).toString();
-  const url = `${CHAIN_ID_CLIENT_MAP[item.chainId]?.chain?.blockExplorers?.default.apiUrl}?${formattedParams}`;
+  const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url, {
       method: 'POST',
@@ -72,7 +78,7 @@ async function checkVerified(item: ListItem) {
   };
 
   const formattedParams = new URLSearchParams(params).toString();
-  const url = `${CHAIN_ID_CLIENT_MAP[item.chainId]?.chain?.blockExplorers?.default.apiUrl}?${formattedParams}`;
+  const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
     const response = await request.json();
