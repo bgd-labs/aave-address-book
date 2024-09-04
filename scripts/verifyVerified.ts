@@ -99,7 +99,7 @@ async function checkVerified(item: ListItem) {
 const cachePath = './cache/verification.json';
 
 async function main() {
-  mkdirSync('cache');
+  if (!existsSync('cache')) mkdirSync('cache');
   const cache: Record<number, Record<Address, boolean>> = existsSync(cachePath)
     ? JSON.parse(readFileSync(cachePath, 'utf-8'))
     : {};
