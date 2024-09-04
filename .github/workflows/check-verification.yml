@@ -34,7 +34,7 @@ jobs:
         id: cache
         uses: actions/cache/restore@v4
         with:
-          path: cache
+          path: .
           key: cache
 
       - name: Create backup
