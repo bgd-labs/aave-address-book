@@ -128,7 +128,7 @@ async function main() {
     await sleep(200); // rate limit on etherscan api of 5 req/s
   }
   if (errors.length != 0) {
-    writeFileSync('errors.json', JSON.stringify(errors, null, 2), {encoding: 'utf-8'});
+    writeFileSync('./cache/errors.json', JSON.stringify(errors, null, 2), {encoding: 'utf-8'});
     process.exit(1);
   }
 }
