@@ -42,7 +42,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Create backup
-        if: steps.cache.outputs.cache-matched-key == 'true'
+        if: steps.cache.outputs.cache-matched-key != ''
         run: |
           cd cache
           ls -l
@@ -68,13 +68,13 @@ jobs:
           ETHERSCAN_API_KEY_GNOSIS: ${{ secrets.ETHERSCAN_API_KEY_GNOSIS }}
 
       - name: diff
-        if: steps.cache.outputs.cache-matched-key == 'true'
+        if: steps.cache.outputs.cache-matched-key != ''
         run: |
           git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/errors.backup.json cache/errors.json || :
           git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/verify.backup.json cache/verify.json || :
 
       - name: Remove backup
-        if: steps.cache.outputs.cache-matched-key == 'true'
+        if: steps.cache.outputs.cache-matched-key != ''
         run: |
           rm cache/errors.backup.json || :
           rm cache/verify.backup.json || :
