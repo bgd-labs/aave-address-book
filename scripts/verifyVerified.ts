@@ -81,9 +81,7 @@ async function checkVerified(item: ListItem) {
   const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
-    const response = await request.json();
-    if (response.status !== '1' || !response.result[0].ContractName) console.log(url);
-    return response;
+    return request.json();
   } catch (e) {
     console.error(e);
     process.exit(1);

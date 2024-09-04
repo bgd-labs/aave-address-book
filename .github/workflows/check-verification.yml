@@ -46,6 +46,16 @@ jobs:
 
       - name: verify
         run: yarn check:verification
+        env:
+          ETHERSCAN_API_KEY_MAINNET: ${{ secrets.ETHERSCAN_API_KEY_MAINNET }}
+          ETHERSCAN_API_KEY_POLYGON: ${{ secrets.ETHERSCAN_API_KEY_POLYGON }}
+          ETHERSCAN_API_KEY_ARBITRUM: ${{ secrets.ETHERSCAN_API_KEY_ARBITRUM }}
+          ETHERSCAN_API_KEY_OPTIMISM: ${{ secrets.ETHERSCAN_API_KEY_OPTIMISM }}
+          ETHERSCAN_API_KEY_SCROLL: ${{ secrets.ETHERSCAN_API_KEY_SCROLL }}
+          ETHERSCAN_API_KEY_BNB: ${{ secrets.ETHERSCAN_API_KEY_BNB }}
+          ETHERSCAN_API_KEY_BASE: ${{ secrets.ETHERSCAN_API_KEY_BASE }}
+          ETHERSCAN_API_KEY_ZKSYNC: ${{ secrets.ETHERSCAN_API_KEY_ZKSYNC }}
+          ETHERSCAN_API_KEY_GNOSIS: ${{ secrets.ETHERSCAN_API_KEY_GNOSIS }}
 
       - uses: actions/upload-artifact@v4
         # if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
