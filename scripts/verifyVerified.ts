@@ -81,7 +81,15 @@ async function checkVerified(item: ListItem) {
   const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
-    return request.json();
+    const {status, result} = await request.json();
+    if (status !== '1' || !result[0].ContractName) {
+      // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
+      // therefore we try to manually assign it
+      if (['S_TOKEN', 'V_TOKEN', 'A_TOKEN'].includes(item.path[item.path.length - 1])) {
+        await verifyProxy(item);
+      }
+    }
+    return {status, result};
   } catch (e) {
     console.error(e);
     return {status: '0', result: e};
@@ -110,11 +118,6 @@ async function main() {
     };
 
     if (status !== '1' || !result[0].ContractName) {
-      // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
-      // therefore we try to manually assign it
-      if (['S_TOKEN', 'V_TOKEN', 'A_TOKEN'].includes(item.path[item.path.length - 1])) {
-        await verifyProxy(item);
-      }
       errors.push({item, error: result});
       console.log('errors', errors.length);
     } else {
