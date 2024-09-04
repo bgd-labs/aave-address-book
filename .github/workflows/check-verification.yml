@@ -35,7 +35,10 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: cache
-          key: cache
+          restore-keys: |
+            ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-
+            ${{ runner.os }}-verification-
+            ${{ runner.os }}-
 
       - name: Create backup
         if: steps.cache.outputs.cache-hit == 'true'
@@ -80,4 +83,4 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: cache
-          key: cache
+          key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-
