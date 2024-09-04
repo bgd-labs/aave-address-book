@@ -37,7 +37,7 @@ jobs:
           path: cache
           key: cache
 
-      - name: Copy errors
+      - name: Create backup
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
           rm cache/errors.backup.json
@@ -61,3 +61,9 @@ jobs:
           ETHERSCAN_API_KEY_BASE: ${{ secrets.ETHERSCAN_API_KEY_BASE }}
           ETHERSCAN_API_KEY_ZKSYNC: ${{ secrets.ETHERSCAN_API_KEY_ZKSYNC }}
           ETHERSCAN_API_KEY_GNOSIS: ${{ secrets.ETHERSCAN_API_KEY_GNOSIS }}
+
+      - name: diff
+        if: steps.cache.outputs.cache-hit == 'true'
+        run:
+          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/errors.backup.json cache/errors.json
+          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/verify.backup.json cache/verify.json
