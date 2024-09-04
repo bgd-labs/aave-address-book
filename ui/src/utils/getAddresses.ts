@@ -1,6 +1,6 @@
-import * as addressBook from '../../src/ts/AaveAddressBook';
-import {Address, isAddress} from 'viem';
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
+import * as addressBook from '../../../src/ts/AaveAddressBook';
+import { isAddress } from 'viem';
+import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
 
 export type ListItem = {
   path: string[];

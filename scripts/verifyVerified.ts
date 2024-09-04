@@ -1,5 +1,5 @@
 import {CHAIN_ID_CLIENT_MAP, ChainId} from '@bgd-labs/js-utils';
-import {ListItem, flattenedAddresses} from './generator/getAddresses';
+import {ListItem, flattenedAddresses} from '../ui/src/utils/getAddresses';
 import {writeFileSync, readFileSync, existsSync, mkdirSync} from 'fs';
 import {Address, zeroAddress} from 'viem';
 
