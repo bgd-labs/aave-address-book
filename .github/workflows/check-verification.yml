@@ -40,8 +40,6 @@ jobs:
       - name: Create backup
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
-          rm cache/errors.backup.json
-          rm cache/verify.backup.json
           cp cache/errors.json cache/errors.backup.json
           cp cache/verify.json cache/verify.backup.json
 
@@ -67,3 +65,9 @@ jobs:
         run:
           git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/errors.backup.json cache/errors.json
           git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/verify.backup.json cache/verify.json
+
+      - name: Remove backup
+        if: steps.cache.outputs.cache-hit == 'true'
+        run: |
+          rm cache/errors.backup.json
+          rm cache/verify.backup.json
