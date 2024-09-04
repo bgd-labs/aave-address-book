@@ -65,9 +65,9 @@ jobs:
 
       - name: diff
         if: steps.cache.outputs.cache-hit == 'true'
-        run:
-          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/errors.backup.json cache/errors.json
-          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/verify.backup.json cache/verify.json
+        run: |
+          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/errors.backup.json cache/errors.json || :
+          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/verify.backup.json cache/verify.json || :
 
       - name: Remove backup
         if: steps.cache.outputs.cache-hit == 'true'
