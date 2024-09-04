@@ -1,6 +1,6 @@
 import {CHAIN_ID_CLIENT_MAP, ChainId} from '@bgd-labs/js-utils';
 import {ListItem, flattenedAddresses} from './generator/getAddresses';
-import {writeFileSync, readFileSync, existsSync} from 'fs';
+import {writeFileSync, readFileSync, existsSync, mkdirSync} from 'fs';
 import {Address, zeroAddress} from 'viem';
 
 const CHAIN_ID_API_KEY_MAP = {
@@ -93,6 +93,7 @@ async function checkVerified(item: ListItem) {
 const cachePath = './cache/verification.json';
 
 async function main() {
+  mkdirSync('cache');
   const cache: Record<number, Record<Address, boolean>> = existsSync(cachePath)
     ? JSON.parse(readFileSync(cachePath, 'utf-8'))
     : {};
