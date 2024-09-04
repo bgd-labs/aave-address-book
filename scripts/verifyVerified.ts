@@ -129,6 +129,8 @@ async function main() {
   if (errors.length != 0) {
     writeFileSync('./cache/errors.json', JSON.stringify(errors, null, 2), {encoding: 'utf-8'});
     process.exit(1);
+  } else {
+    writeFileSync('./cache/errors.json', JSON.stringify({}, null, 2), {encoding: 'utf-8'});
   }
 }
 

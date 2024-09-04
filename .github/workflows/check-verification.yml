@@ -40,9 +40,6 @@ jobs:
       - name: Create backup
         if: steps.cache.outputs.cache-hit == 'true'
         run: |
-          ls -l
-          cd cache
-          ls -l
           cp cache/errors.json cache/errors.backup.json
           cp cache/verify.json cache/verify.backup.json
 
