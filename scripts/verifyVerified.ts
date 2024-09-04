@@ -119,6 +119,7 @@ async function main() {
 
     if (status !== '1' || !result[0].ContractName) {
       errors.push({item, error: result});
+      writeFileSync('./cache/errors.json', JSON.stringify(errors, null, 2), {encoding: 'utf-8'});
       console.log('errors', errors.length);
     } else {
       if (!cache[item.chainId]) cache[item.chainId] = {};
@@ -130,7 +131,6 @@ async function main() {
     await sleep(200); // rate limit on etherscan api of 5 req/s
   }
   if (errors.length != 0) {
-    writeFileSync('./cache/errors.json', JSON.stringify(errors, null, 2), {encoding: 'utf-8'});
     process.exit(1);
   } else {
     writeFileSync('./cache/errors.json', JSON.stringify({}, null, 2), {encoding: 'utf-8'});
