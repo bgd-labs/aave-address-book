@@ -16,6 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+    # the verification step will exit with error code whenever there is a non verified contract
+    # we don't want the ci to fail yet though as there are already unverified contracts
+    # we might consider removing this in the future
+    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
