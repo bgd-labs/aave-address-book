@@ -35,6 +35,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: cache
+          key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-
             ${{ runner.os }}-verification-
@@ -83,4 +84,4 @@ jobs:
         uses: actions/cache/save@v4
         with:
           path: cache
-          key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-
+          key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}
