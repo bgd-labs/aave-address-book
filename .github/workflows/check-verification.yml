@@ -66,7 +66,8 @@ jobs:
           ETHERSCAN_API_KEY_BASE: ${{ secrets.ETHERSCAN_API_KEY_BASE }}
           ETHERSCAN_API_KEY_ZKSYNC: ${{ secrets.ETHERSCAN_API_KEY_ZKSYNC }}
           ETHERSCAN_API_KEY_GNOSIS: ${{ secrets.ETHERSCAN_API_KEY_GNOSIS }}
-          ETHERSCAN_API_KEY_ZKEVM: ${{ secrets.ETHERSCAN_API_KEY_POLYGON }}
+          ETHERSCAN_API_KEY_ZKEVM: ${{ secrets.ETHERSCAN_API_KEY_ZKEVM }}
+          ETHERSCAN_API_KEY_AVALANCHE: ${{ secrets.ETHERSCAN_API_KEY_AVALANCHE }}
 
       - name: diff
         if: steps.cache.outputs.cache-matched-key != ''
