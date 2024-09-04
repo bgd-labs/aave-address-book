@@ -278,6 +278,9 @@ library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x98619395148C348e9A09C7D34290B1E9e7715A3E
   address internal constant USDCe_INTEREST_RATE_STRATEGY =
     0x98619395148C348e9A09C7D34290B1E9e7715A3E;
+
+  // https://gnosisscan.io/address/0xf0E7eC247b918311afa054E0AEdb99d74c31b809
+  address internal constant USDCe_STATA_TOKEN = 0xf0E7eC247b918311afa054E0AEdb99d74c31b809;
 }
 
 library AaveV3GnosisEModes {
