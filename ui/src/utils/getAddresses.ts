@@ -1,5 +1,5 @@
 import * as addressBook from '../../../src/ts/AaveAddressBook';
-import { isAddress } from 'viem';
+import { isAddress, Address } from 'viem';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
 
 export type ListItem = {
