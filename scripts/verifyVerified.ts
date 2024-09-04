@@ -6,6 +6,7 @@ import {Address, zeroAddress} from 'viem';
 const CHAIN_ID_API_KEY_MAP = {
   [ChainId.mainnet]: process.env.ETHERSCAN_API_KEY_MAINNET,
   [ChainId.polygon]: process.env.ETHERSCAN_API_KEY_POLYGON,
+  [ChainId.zkEVM]: process.env.ETHERSCAN_API_KEY_ZKEVM,
   [ChainId.arbitrum_one]: process.env.ETHERSCAN_API_KEY_ARBITRUM,
   [ChainId.optimism]: process.env.ETHERSCAN_API_KEY_OPTIMISM,
   [ChainId.scroll]: process.env.ETHERSCAN_API_KEY_SCROLL,
