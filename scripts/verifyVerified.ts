@@ -84,7 +84,7 @@ async function checkVerified(item: ListItem) {
     return request.json();
   } catch (e) {
     console.error(e);
-    process.exit(1);
+    return {status: '0', result: e};
   }
 }
 
