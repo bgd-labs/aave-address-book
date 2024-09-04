@@ -29,4 +29,7 @@ library MiscOptimism {
 
   // https://optimistic.etherscan.io/address/0x22F3727be377781d1579B7C9222382b21c9d1a8f
   address internal constant rETH_ETH_AGGREGATOR = 0x22F3727be377781d1579B7C9222382b21c9d1a8f;
+
+  // https://optimistic.etherscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
+  address internal constant LEGACY_BRIDGE_EXECUTOR = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 }

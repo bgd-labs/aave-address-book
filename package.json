@@ -30,6 +30,7 @@
   "sideEffects": false,
   "scripts": {
     "prettier": "prettier --write 'src/**/*.{sol,ts}'",
+    "check:verification": "tsx scripts/verifyVerified.ts",
     "generate:abis": "tsx scripts/generateABIs.ts && npm run prettier",
     "generate:safe": "tsx scripts/generateSafeCSV.ts",
     "generate:addresses": "tsx scripts/generateAddresses.ts && npm run generate:safe && npm run prettier",

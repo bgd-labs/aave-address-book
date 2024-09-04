@@ -35,4 +35,7 @@ library MiscPolygon {
 
   // https://polygonscan.com/address/0xdEd6C522d803E35f65318a9a4d7333a22d582199
   address internal constant stMATIC_RATE_PROVIDER = 0xdEd6C522d803E35f65318a9a4d7333a22d582199;
+
+  // https://polygonscan.com/address/0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
+  address internal constant LEGACY_BRIDGE_EXECUTOR = 0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772;
 }

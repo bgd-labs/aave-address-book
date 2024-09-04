@@ -29,4 +29,7 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0xF168B83598516A532a85995b52504a2Fa058C068
   address internal constant GHO_CCIP_TOKEN_POOL = 0xF168B83598516A532a85995b52504a2Fa058C068;
+
+  // https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
+  address internal constant LEGACY_BRIDGE_EXECUTOR = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
 }

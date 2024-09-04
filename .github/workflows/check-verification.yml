@@ -1,0 +1,89 @@
+# Checks if all addresses are verified and generates a diff if not
+name: Address verification diff
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+          cache: "yarn"
+
+      - name: install
+        run: yarn install --frozen-lockfile
+
+      - name: Cache Restore
+        id: cache
+        uses: actions/cache/restore@v4
+        with:
+          path: cache
+          key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-
+            ${{ runner.os }}-verification-
+            ${{ runner.os }}-
+
+      - name: Create backup
+        if: steps.cache.outputs.cache-matched-key != ''
+        run: |
+          cd cache
+          ls -l
+          cd ..
+          cp cache/errors.json cache/errors.backup.json || :
+          cp cache/verification.json cache/verification.backup.json || :
+
+      - name: verify
+        run: yarn check:verification
+        # the verification step will exit with error code whenever there is a non verified contract
+        # we don't want the ci to fail yet though as there are already unverified contracts
+        # we might consider removing this in the future
+        continue-on-error: true
+        env:
+          ETHERSCAN_API_KEY_MAINNET: ${{ secrets.ETHERSCAN_API_KEY_MAINNET }}
+          ETHERSCAN_API_KEY_POLYGON: ${{ secrets.ETHERSCAN_API_KEY_POLYGON }}
+          ETHERSCAN_API_KEY_ARBITRUM: ${{ secrets.ETHERSCAN_API_KEY_ARBITRUM }}
+          ETHERSCAN_API_KEY_OPTIMISM: ${{ secrets.ETHERSCAN_API_KEY_OPTIMISM }}
+          ETHERSCAN_API_KEY_SCROLL: ${{ secrets.ETHERSCAN_API_KEY_SCROLL }}
+          ETHERSCAN_API_KEY_BNB: ${{ secrets.ETHERSCAN_API_KEY_BNB }}
+          ETHERSCAN_API_KEY_BASE: ${{ secrets.ETHERSCAN_API_KEY_BASE }}
+          ETHERSCAN_API_KEY_ZKSYNC: ${{ secrets.ETHERSCAN_API_KEY_ZKSYNC }}
+          ETHERSCAN_API_KEY_GNOSIS: ${{ secrets.ETHERSCAN_API_KEY_GNOSIS }}
+          ETHERSCAN_API_KEY_ZKEVM: ${{ secrets.ETHERSCAN_API_KEY_ZKEVM }}
+          ETHERSCAN_API_KEY_AVALANCHE: ${{ secrets.ETHERSCAN_API_KEY_AVALANCHE }}
+
+      - name: diff
+        if: steps.cache.outputs.cache-matched-key != ''
+        run: |
+          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/errors.backup.json cache/errors.json || :
+          git diff --no-index --diff-algorithm=patience --ignore-space-at-eol cache/verification.backup.json cache/verification.json || :
+
+      - name: Remove backup
+        if: steps.cache.outputs.cache-matched-key != ''
+        run: |
+          rm cache/errors.backup.json || :
+          rm cache/verification.backup.json || :
+
+      - name: Cache Save
+        # if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        uses: actions/cache/save@v4
+        with:
+          path: cache
+          key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}

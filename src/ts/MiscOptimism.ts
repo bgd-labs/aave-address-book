@@ -26,4 +26,7 @@ export const wstETH_stETH_AGGREGATOR = '0xe59EBa0D492cA53C6f46015EEa00517F2707dc
 // https://optimistic.etherscan.io/address/0x22F3727be377781d1579B7C9222382b21c9d1a8f
 export const rETH_ETH_AGGREGATOR = '0x22F3727be377781d1579B7C9222382b21c9d1a8f';
 
+// https://optimistic.etherscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
+export const LEGACY_BRIDGE_EXECUTOR = '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611';
+
 export const CHAIN_ID = 10;
