@@ -30,15 +30,15 @@ jobs:
       - name: install
         run: yarn install --frozen-lockfile
 
-      - uses: actions/download-artifact@v4
-        with:
-          name: cache
-          path: .
+      # - uses: actions/download-artifact@v4
+      #   with:
+      #     name: cache
+      #     path: .
 
-      - uses: actions/download-artifact@v4
-        with:
-          name: cache
-          path: backup
+      # - uses: actions/download-artifact@v4
+      #   with:
+      #     name: cache
+      #     path: backup
 
       - name: verify
         run: yarn check:verification
