@@ -4455,6 +4455,21 @@ export const tokenlist = {
       },
     },
     {
+      chainId: 100,
+      address: '0xf0E7eC247b918311afa054E0AEdb99d74c31b809',
+      name: 'Static Aave Gnosis USDCe',
+      decimals: 6,
+      symbol: 'stataGnoUSDCe',
+      tags: ['aaveV3', 'stataToken'],
+      logoURI:
+        'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
+      extensions: {
+        pool: '0xb50201558B00496A145fE76f7424749556E326D8',
+        underlying: '0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0',
+        underlyingAToken: '0xC0333cb85B59a788d8C7CAe5e1Fd6E229A3E5a65',
+      },
+    },
+    {
       chainId: 56,
       address: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
       name: 'PancakeSwap Token',
@@ -6392,6 +6407,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 38},
-  timestamp: '2024-08-27T14:59:50.622Z',
+  version: {major: 3, minor: 0, patch: 39},
+  timestamp: '2024-09-04T00:12:26.140Z',
 };
