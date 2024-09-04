@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { flattenedAddresses } from '../../../scripts/generator/getAddresses';
+import { flattenedAddresses } from '../utils/getAddresses';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
