@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.3.0](https://github.com/bgd-labs/aave-address-book/compare/v3.2.1...v3.3.0) (2024-09-09)
+
+
+### Features
+
+* add EtherFi caps ([#566](https://github.com/bgd-labs/aave-address-book/issues/566)) ([d9fee6c](https://github.com/bgd-labs/aave-address-book/commit/d9fee6cf4f3a5e73ea073a3020483309e2053246))
+* add risk steward for etherfi ([#569](https://github.com/bgd-labs/aave-address-book/issues/569)) ([6b29c5f](https://github.com/bgd-labs/aave-address-book/commit/6b29c5f6b18d861b707872047061fc269edd5467))
+* automate verify ([#570](https://github.com/bgd-labs/aave-address-book/issues/570)) ([c6d651b](https://github.com/bgd-labs/aave-address-book/commit/c6d651bafc29ea448351ba05ccb64d4776352dfb))
+
+
+### Bug Fixes
+
+* add viem to ui ([#572](https://github.com/bgd-labs/aave-address-book/issues/572)) ([5efdaf4](https://github.com/bgd-labs/aave-address-book/commit/5efdaf4d3d1de8226a6e83ba9fc92b38a203798d))
+* **cache:** automated cache update - updated addresses ([#571](https://github.com/bgd-labs/aave-address-book/issues/571)) ([3f45fcc](https://github.com/bgd-labs/aave-address-book/commit/3f45fcc952bae9b0a7d6d35742f06eb313c7cfb6))
+* readd type ([#573](https://github.com/bgd-labs/aave-address-book/issues/573)) ([20e6b13](https://github.com/bgd-labs/aave-address-book/commit/20e6b13cbf838bce1f2b4f18c5894217f73d4143))
+
 ## [3.2.1](https://github.com/bgd-labs/aave-address-book/compare/v3.2.0...v3.2.1) (2024-09-02)
 
 
