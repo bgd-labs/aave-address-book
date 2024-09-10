@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/bgd-labs/aave-address-book/compare/v3.3.0...v3.4.0) (2024-09-10)
+
+
+### Features
+
+* add zksync instance contracts ([#580](https://github.com/bgd-labs/aave-address-book/issues/580)) ([65a89f7](https://github.com/bgd-labs/aave-address-book/commit/65a89f74abb1b37c01442be4340370d5179a94bc))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#581](https://github.com/bgd-labs/aave-address-book/issues/581)) ([ac70753](https://github.com/bgd-labs/aave-address-book/commit/ac70753d16354243ab0c5553a5af3a96b7fce733))
+* **cache:** automated cache update - updated addresses ([#584](https://github.com/bgd-labs/aave-address-book/issues/584)) ([4a909ce](https://github.com/bgd-labs/aave-address-book/commit/4a909cea419ba8d2f70d9ba73310344a1d11e86d))
+
 ## [3.3.0](https://github.com/bgd-labs/aave-address-book/compare/v3.2.1...v3.3.0) (2024-09-09)
 
 
