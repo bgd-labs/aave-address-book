@@ -5,7 +5,11 @@ import {getStorageAt} from 'viem/actions';
 
 function getExplorerLink(chainId: number, address: Hex) {
   const client = CHAIN_ID_CLIENT_MAP[chainId];
-  return `${client.chain?.blockExplorers?.default.url}/address/${getAddress(address)}`;
+  let url = client.chain?.blockExplorers?.default.url;
+  if (url && url.endsWith('/')) {
+    url = url.slice(0, -1); // sanitize explorer url
+  }
+  return `${url}/address/${getAddress(address)}`;
 }
 
 export function prefixWithPragma(code: string) {
