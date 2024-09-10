@@ -1,5 +1,6 @@
 # Checks if all addresses are verified and generates a diff if not
-name: Address verification diff
+# Also checks for sanity of values (by performing various checks to ensure correctness)
+name: Checks
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
