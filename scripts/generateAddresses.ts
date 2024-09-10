@@ -124,7 +124,7 @@ async function main() {
       optimismSepoliaProtoV3,
       scrollProtoV3,
       scrollSepoliaProtoV3,
-      // zkSyncProtoV3,
+      zkSyncProtoV3,
       fantomTestnetProtoV3,
       fantomProtoV3,
       harmonyProtoV3,
