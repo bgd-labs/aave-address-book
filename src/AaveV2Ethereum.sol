@@ -108,9 +108,9 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xEfF57B0c8987eea8C491bdDD2F64c1c21297Cf74
   address internal constant USDT_ORACLE = 0xEfF57B0c8987eea8C491bdDD2F64c1c21297Cf74;
 
-  // https://etherscan.io/address/0x5A3a8Aa25F0D61eF834Da59B4cD5bC48B8AB9910
+  // https://etherscan.io/address/0xa8850b94E4A0B881c3b08aE065D189D87F34F175
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0x5A3a8Aa25F0D61eF834Da59B4cD5bC48B8AB9910;
+    0xa8850b94E4A0B881c3b08aE065D189D87F34F175;
 
   // https://etherscan.io/address/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
   address internal constant WBTC_UNDERLYING = 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599;
@@ -290,8 +290,8 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xd486FE27AAB0b3CAd1462D767292dd7a84F06E58
   address internal constant DAI_ORACLE = 0xd486FE27AAB0b3CAd1462D767292dd7a84F06E58;
 
-  // https://etherscan.io/address/0xffeae1Bf7ddc089b8820B223220d76E537bf058E
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xffeae1Bf7ddc089b8820B223220d76E537bf058E;
+  // https://etherscan.io/address/0xA939B1f36E9a14B044B8149933184a18E0dFC17D
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xA939B1f36E9a14B044B8149933184a18E0dFC17D;
 
   // https://etherscan.io/address/0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c
   address internal constant ENJ_UNDERLYING = 0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c;
@@ -494,9 +494,9 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x9f2817536Cfd48BF59243d9D8802a5670F5Be05d
   address internal constant USDC_ORACLE = 0x9f2817536Cfd48BF59243d9D8802a5670F5Be05d;
 
-  // https://etherscan.io/address/0xF1722FBCAc1C49bA57a77c3F4373A4bb86a46e60
+  // https://etherscan.io/address/0x6a8C8119b2BA9460162B8C999f5A8C84f28a033f
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xF1722FBCAc1C49bA57a77c3F4373A4bb86a46e60;
+    0x6a8C8119b2BA9460162B8C999f5A8C84f28a033f;
 
   // https://etherscan.io/address/0xD533a949740bb3306d119CC777fa900bA034cd52
   address internal constant CRV_UNDERLYING = 0xD533a949740bb3306d119CC777fa900bA034cd52;
