@@ -59,6 +59,7 @@ export interface PoolConfig {
     DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: Hex;
     STATIC_A_TOKEN_FACTORY?: Hex;
     STATIC_A_TOKEN_ORACLE?: Hex;
+    STATA_FACTORY?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
     RISK_STEWARD?: Hex;
     FREEZING_STEWARD?: Hex;
@@ -86,6 +87,7 @@ export type ReserveData = {
   INTEREST_RATE_STRATEGY: Hex;
   ORACLE: Hex;
   STATA_TOKEN?: Hex;
+  STATA_TOKENV2?: Hex;
 };
 
 /**

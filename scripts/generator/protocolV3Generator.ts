@@ -208,6 +208,21 @@ export async function getPoolV3Addresses(
             client,
           })
         : null;
+      const stataTokenFactoryContract = pool.additionalAddresses.STATA_FACTORY
+        ? getContract({
+            address: pool.additionalAddresses.STATA_FACTORY,
+            abi: [
+              {
+                inputs: [{internalType: 'address', name: 'underlying', type: 'address'}],
+                name: 'getStataToken',
+                outputs: [{internalType: 'address', name: '', type: 'address'}],
+                stateMutability: 'view',
+                type: 'function',
+              },
+            ] as const,
+            client,
+          })
+        : null;
       const data = (
         await uiPoolDataProvider.read.getReservesData([pool.POOL_ADDRESSES_PROVIDER])
       )[0];
@@ -226,6 +241,10 @@ export async function getPoolV3Addresses(
           };
           if (staticATokenFactoryContract)
             result.STATA_TOKEN = (await staticATokenFactoryContract.read.getStaticAToken([
+              reserve.underlyingAsset,
+            ])) as Hex;
+          if (stataTokenFactoryContract)
+            result.STATA_TOKENV2 = (await stataTokenFactoryContract.read.getStataToken([
               reserve.underlyingAsset,
             ])) as Hex;
           return result;
