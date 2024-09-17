@@ -85,7 +85,7 @@ export const IERC20_ABI = [
     name: 'transfer',
     inputs: [
       {
-        name: 'to',
+        name: 'recipient',
         type: 'address',
         internalType: 'address',
       },
@@ -109,12 +109,12 @@ export const IERC20_ABI = [
     name: 'transferFrom',
     inputs: [
       {
-        name: 'from',
+        name: 'sender',
         type: 'address',
         internalType: 'address',
       },
       {
-        name: 'to',
+        name: 'recipient',
         type: 'address',
         internalType: 'address',
       },

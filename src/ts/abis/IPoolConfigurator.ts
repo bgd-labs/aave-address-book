@@ -11,7 +11,7 @@ export const IPoolConfigurator_ABI = [
         internalType: 'uint40',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -78,7 +78,7 @@ export const IPoolConfigurator_ABI = [
         internalType: 'address',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -97,7 +97,7 @@ export const IPoolConfigurator_ABI = [
         internalType: 'uint256',
       },
     ],
-    stateMutability: 'nonpayable',
+    stateMutability: 'view',
   },
   {
     type: 'function',

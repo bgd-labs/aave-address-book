@@ -3,6 +3,7 @@ import {mainnetProtoV3Pool} from './pools/ethereum';
 
 /**
  * @dev These abis can be inferred directly from code as they exist as a dependency
+ * For contracts that are not unique, the path needs to be prefixed
  */
 export const ABI_INTERFACES = [
   'ICollector',
@@ -15,11 +16,11 @@ export const ABI_INTERFACES = [
   'IGovernancePowerStrategy',
   'IDataWarehouse',
   'IExecutorWithTimelock',
-  'IERC20',
+  'lib/aave-v3-origin/src/core/contracts/dependencies/openzeppelin/contracts/IERC20.sol:IERC20',
   'IERC20Detailed',
   'IAToken',
   'IDefaultInterestRateStrategy',
-  'IAaveOracle',
+  'lib/aave-v3-origin/src/core/contracts/interfaces/IAaveOracle.sol:IAaveOracle',
   'IExecutor',
   'ICrossChainController',
   'IWithGuardian',
@@ -32,8 +33,8 @@ export const ABI_INTERFACES = [
   'IPoolAddressesProvider',
   'IPoolConfigurator',
   'IStakeToken',
-  'IStaticATokenFactory',
-  'IStaticATokenLM',
+  'IStataTokenFactory',
+  'IStataTokenV2',
 ];
 
 /**
