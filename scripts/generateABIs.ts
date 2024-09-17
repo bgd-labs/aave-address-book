@@ -15,8 +15,11 @@ export async function generateABIs(removeExisting: boolean) {
   } else {
     mkdirSync('./src/ts/abis');
   }
-  for (const INTERFACE of ABI_INTERFACES) {
-    const {stdout, stderr} = await awaitableExec(`forge inspect ${INTERFACE} abi`);
+  const imports: string[] = [];
+  for (const INTERFACE_PATH of ABI_INTERFACES) {
+    const {stdout, stderr} = await awaitableExec(`forge inspect ${INTERFACE_PATH} abi`);
+    const INTERFACE =
+      INTERFACE_PATH.split(':').length > 1 ? INTERFACE_PATH.split(':')[1] : INTERFACE_PATH;
     if (stderr) {
       throw new Error(`Failed to generate abi for ${INTERFACE}`);
     }
