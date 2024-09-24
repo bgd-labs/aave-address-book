@@ -874,6 +874,48 @@ library AaveV3EthereumAssets {
 
   // https://etherscan.io/address/0x54D612b000697bd8B0094889D7d6A92bA0Bf2DEa
   address internal constant sUSDe_STATA_TOKEN = 0x54D612b000697bd8B0094889D7d6A92bA0Bf2DEa;
+
+  // https://etherscan.io/address/0x18084fbA666a33d37592fA2633fD49a74DD93a88
+  address internal constant tBTC_UNDERLYING = 0x18084fbA666a33d37592fA2633fD49a74DD93a88;
+
+  uint8 internal constant tBTC_DECIMALS = 18;
+
+  // https://etherscan.io/address/0x10Ac93971cdb1F5c778144084242374473c350Da
+  address internal constant tBTC_A_TOKEN = 0x10Ac93971cdb1F5c778144084242374473c350Da;
+
+  // https://etherscan.io/address/0xAC50890a80A2731eb1eA2e9B4F29569CeB06D960
+  address internal constant tBTC_V_TOKEN = 0xAC50890a80A2731eb1eA2e9B4F29569CeB06D960;
+
+  // https://etherscan.io/address/0xCcf8413F9cA3bAE07EEF05E265D238d60abCb8Ca
+  address internal constant tBTC_S_TOKEN = 0xCcf8413F9cA3bAE07EEF05E265D238d60abCb8Ca;
+
+  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  address internal constant tBTC_ORACLE = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+
+  // https://etherscan.io/address/0x847A3364Cc5fE389283bD821cfC8A477288D9e82
+  address internal constant tBTC_INTEREST_RATE_STRATEGY =
+    0x847A3364Cc5fE389283bD821cfC8A477288D9e82;
+
+  // https://etherscan.io/address/0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf
+  address internal constant cbBTC_UNDERLYING = 0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf;
+
+  uint8 internal constant cbBTC_DECIMALS = 8;
+
+  // https://etherscan.io/address/0x5c647cE0Ae10658ec44FA4E11A51c96e94efd1Dd
+  address internal constant cbBTC_A_TOKEN = 0x5c647cE0Ae10658ec44FA4E11A51c96e94efd1Dd;
+
+  // https://etherscan.io/address/0xeB284A70557EFe3591b9e6D9D720040E02c54a4d
+  address internal constant cbBTC_V_TOKEN = 0xeB284A70557EFe3591b9e6D9D720040E02c54a4d;
+
+  // https://etherscan.io/address/0x0002BfcCE657a4BEB498E23201bd767FC5A0A0d5
+  address internal constant cbBTC_S_TOKEN = 0x0002BfcCE657a4BEB498E23201bd767FC5A0A0d5;
+
+  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  address internal constant cbBTC_ORACLE = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+
+  // https://etherscan.io/address/0x847A3364Cc5fE389283bD821cfC8A477288D9e82
+  address internal constant cbBTC_INTEREST_RATE_STRATEGY =
+    0x847A3364Cc5fE389283bD821cfC8A477288D9e82;
 }
 
 library AaveV3EthereumEModes {
