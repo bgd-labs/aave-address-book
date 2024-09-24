@@ -2699,6 +2699,46 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x18084fbA666a33d37592fA2633fD49a74DD93a88",
+      "name": "tBTC v2",
+      "decimals": 18,
+      "symbol": "tBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x10Ac93971cdb1F5c778144084242374473c350Da",
+      "name": "Aave Ethereum tBTC",
+      "decimals": 18,
+      "symbol": "aEthtBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x18084fbA666a33d37592fA2633fD49a74DD93a88"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "name": "Coinbase Wrapped BTC",
+      "decimals": 8,
+      "symbol": "cbBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x5c647cE0Ae10658ec44FA4E11A51c96e94efd1Dd",
+      "name": "Aave Ethereum cbBTC",
+      "decimals": 8,
+      "symbol": "aEthcbBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -3938,6 +3978,26 @@
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
         "underlyingAToken": "0x7C307e128efA31F540F2E2d976C995E0B65F51F6"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "name": "Coinbase Wrapped BTC",
+      "decimals": 8,
+      "symbol": "cbBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0xBdb9300b7CDE636d9cD4AFF00f6F009fFBBc8EE6",
+      "name": "Aave Base cbBTC",
+      "decimals": 8,
+      "symbol": "aBascbBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
       }
     },
     {
@@ -6477,6 +6537,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 41 },
-  "timestamp": "2024-09-21T00:12:26.510Z"
+  "version": { "major": 3, "minor": 0, "patch": 42 },
+  "timestamp": "2024-09-24T01:03:38.390Z"
 }
