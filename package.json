@@ -1,6 +1,6 @@
 {
   "name": "@bgd-labs/aave-address-book",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "description": "This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.",
   "private": false,
   "files": [
@@ -31,6 +31,7 @@
   "scripts": {
     "prettier": "prettier --write 'src/**/*.{sol,ts}'",
     "check:verification": "tsx scripts/verifyVerified.ts",
+    "check:sanity": "tsx scripts/sanity.ts",
     "generate:abis": "tsx scripts/generateABIs.ts && npm run prettier",
     "generate:safe": "tsx scripts/generateSafeCSV.ts",
     "generate:addresses": "tsx scripts/generateAddresses.ts && npm run generate:safe && npm run prettier",

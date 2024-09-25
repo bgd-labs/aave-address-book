@@ -43,6 +43,25 @@ export const IRescuable_ABI = [
   },
   {
     type: 'function',
+    name: 'maxRescue',
+    inputs: [
+      {
+        name: 'erc20Token',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'whoCanRescue',
     inputs: [],
     outputs: [
