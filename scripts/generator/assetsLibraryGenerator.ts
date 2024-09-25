@@ -75,6 +75,8 @@ export function generateAssetsLibrary(
     };
     if (rest.STATA_TOKEN && rest.STATA_TOKEN !== zeroAddress)
       addresses[`${symbol}_STATA_TOKEN`] = rest.STATA_TOKEN;
+    if (rest.STATA_TOKENV2 && rest.STATA_TOKENV2 !== zeroAddress)
+      addresses[`${symbol}_STATA_TOKENV2`] = rest.STATA_TOKENV2;
     return addresses;
   });
 
@@ -84,6 +86,9 @@ export function generateAssetsLibrary(
       acc[symbol] = rest;
       if (rest.STATA_TOKEN && rest.STATA_TOKEN == zeroAddress) {
         delete acc[symbol].STATA_TOKEN;
+      }
+      if (rest.STATA_TOKENV2 && rest.STATA_TOKENV2 == zeroAddress) {
+        delete acc[symbol].STATA_TOKENV2;
       }
       return acc;
     },
