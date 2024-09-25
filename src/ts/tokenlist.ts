@@ -6139,7 +6139,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'ZK',
       tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/zk.svg',
     },
     {
       chainId: 324,
@@ -6148,7 +6147,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aZksZK',
       tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/azk.svg',
       extensions: {
         pool: '0x78e30497a3c7527d953c6B1E3541b021A98Ac43c',
         underlying: '0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E',
@@ -6629,6 +6627,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 42},
-  timestamp: '2024-09-24T01:03:38.390Z',
+  version: {major: 3, minor: 0, patch: 43},
+  timestamp: '2024-09-25T10:16:01.448Z',
 };

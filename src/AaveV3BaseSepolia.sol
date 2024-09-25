@@ -82,6 +82,9 @@ library AaveV3BaseSepolia {
 
   // https://sepolia.basescan.org/address/0xF6Dac650dA5616Bc3206e969D7868e7c25805171
   address internal constant WETH_GATEWAY = 0xF6Dac650dA5616Bc3206e969D7868e7c25805171;
+
+  // https://sepolia.basescan.org/address/0xd91d1331db4F436DaF47Ec9Dd86deCb8EEF946B4
+  address internal constant STATA_FACTORY = 0xd91d1331db4F436DaF47Ec9Dd86deCb8EEF946B4;
 }
 
 library AaveV3BaseSepoliaAssets {
