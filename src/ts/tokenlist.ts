@@ -1415,7 +1415,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'WMATIC',
       tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wmatic.svg',
     },
     {
       chainId: 137,
@@ -1424,7 +1423,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'amWMATIC',
       tags: ['aTokenV2', 'aaveV2'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awmatic.svg',
       extensions: {
         pool: '0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf',
         underlying: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
@@ -2959,7 +2957,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aPolWMATIC',
       tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awmatic.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
         underlying: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
@@ -2972,8 +2969,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'stataPolWMATIC',
       tags: ['aaveV3', 'stataToken'],
-      logoURI:
-        'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawmatic.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
         underlying: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
@@ -6629,6 +6624,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 42},
-  timestamp: '2024-09-24T01:03:38.390Z',
+  version: {major: 3, minor: 0, patch: 43},
+  timestamp: '2024-09-26T01:02:45.302Z',
 };
