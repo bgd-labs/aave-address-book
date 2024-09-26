@@ -272,28 +272,28 @@ library AaveV3PolygonAssets {
   address internal constant AAVE_STATA_TOKEN = 0xCA2E1E33E5BCF4978E2d683656E1f5610f8C4A7E;
 
   // https://polygonscan.com/address/0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270
-  address internal constant WMATIC_UNDERLYING = 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270;
+  address internal constant WPOL_UNDERLYING = 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270;
 
-  uint8 internal constant WMATIC_DECIMALS = 18;
+  uint8 internal constant WPOL_DECIMALS = 18;
 
   // https://polygonscan.com/address/0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97
-  address internal constant WMATIC_A_TOKEN = 0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97;
+  address internal constant WPOL_A_TOKEN = 0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97;
 
   // https://polygonscan.com/address/0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8
-  address internal constant WMATIC_V_TOKEN = 0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8;
+  address internal constant WPOL_V_TOKEN = 0x4a1c3aD6Ed28a636ee1751C69071f6be75DEb8B8;
 
   // https://polygonscan.com/address/0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E
-  address internal constant WMATIC_S_TOKEN = 0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E;
+  address internal constant WPOL_S_TOKEN = 0xF15F26710c827DDe8ACBA678682F3Ce24f2Fb56E;
 
   // https://polygonscan.com/address/0xAB594600376Ec9fD91F8e885dADF0CE036862dE0
-  address internal constant WMATIC_ORACLE = 0xAB594600376Ec9fD91F8e885dADF0CE036862dE0;
+  address internal constant WPOL_ORACLE = 0xAB594600376Ec9fD91F8e885dADF0CE036862dE0;
 
   // https://polygonscan.com/address/0x21128C8f5AE37904c9082D932928FE0C2be1Ff73
-  address internal constant WMATIC_INTEREST_RATE_STRATEGY =
+  address internal constant WPOL_INTEREST_RATE_STRATEGY =
     0x21128C8f5AE37904c9082D932928FE0C2be1Ff73;
 
   // https://polygonscan.com/address/0x98254592408E389D1dd2dBa318656C2C5c305b4E
-  address internal constant WMATIC_STATA_TOKEN = 0x98254592408E389D1dd2dBa318656C2C5c305b4E;
+  address internal constant WPOL_STATA_TOKEN = 0x98254592408E389D1dd2dBa318656C2C5c305b4E;
 
   // https://polygonscan.com/address/0x172370d5Cd63279eFa6d502DAB29171933a610AF
   address internal constant CRV_UNDERLYING = 0x172370d5Cd63279eFa6d502DAB29171933a610AF;
