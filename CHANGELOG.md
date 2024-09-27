@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.1](https://github.com/bgd-labs/aave-address-book/compare/v3.5.0...v3.5.1) (2024-09-27)
+
+
+### Bug Fixes
+
+* Add addresses for paraswap adapters repay and debt swap ([#603](https://github.com/bgd-labs/aave-address-book/issues/603)) ([#604](https://github.com/bgd-labs/aave-address-book/issues/604)) ([8ef7044](https://github.com/bgd-labs/aave-address-book/commit/8ef7044f0d3338daf6cbcde1a46324585e6b7a2f))
+* **cache:** automated cache update - updated addresses ([#600](https://github.com/bgd-labs/aave-address-book/issues/600)) ([53d8509](https://github.com/bgd-labs/aave-address-book/commit/53d85096dc310f4c1fbdf1e714704f9c34ca0e85))
+* **cache:** automated cache update - updated addresses ([#602](https://github.com/bgd-labs/aave-address-book/issues/602)) ([eadb136](https://github.com/bgd-labs/aave-address-book/commit/eadb1369580baf2f4504ae5268cac981ca9cd2f5))
+
 ## [3.5.0](https://github.com/bgd-labs/aave-address-book/compare/v3.4.0...v3.5.0) (2024-09-21)
 
 
