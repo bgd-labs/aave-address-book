@@ -54,8 +54,8 @@ library AaveV2Ethereum {
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
     0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
 
-  // https://etherscan.io/address/0x6A6FA664D4Fa49a6a780a1D6143f079f8dd7C33d
-  address internal constant DEBT_SWAP_ADAPTER = 0x6A6FA664D4Fa49a6a780a1D6143f079f8dd7C33d;
+  // https://etherscan.io/address/0xAf5c88245CD02Ff3DF332EF1E1FfD5bc5D1d87cd
+  address internal constant DEBT_SWAP_ADAPTER = 0xAf5c88245CD02Ff3DF332EF1E1FfD5bc5D1d87cd;
 
   // https://etherscan.io/address/0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9
   address internal constant CONFIG_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;

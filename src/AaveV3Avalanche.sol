@@ -67,8 +67,8 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99
   address internal constant FREEZING_STEWARD = 0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99;
 
-  // https://snowtrace.io/address/0x8A9b2c132EA7676EE267F5b97b622083d6E3a2d4
-  address internal constant DEBT_SWAP_ADAPTER = 0x8A9b2c132EA7676EE267F5b97b622083d6E3a2d4;
+  // https://snowtrace.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+  address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
   // https://snowtrace.io/address/0x5fF5c392C5D397926364789E22f74043f7E42f2b
   address internal constant CONFIG_ENGINE = 0x5fF5c392C5D397926364789E22f74043f7E42f2b;
@@ -84,9 +84,9 @@ library AaveV3Avalanche {
   address internal constant PROOF_OF_RESERVE_AGGREGATOR =
     0x80f2c02224a2E548FC67c0bF705eBFA825dd5439;
 
-  // https://snowtrace.io/address/0x49F5B996814fEd1dd39285B92A59CFb2dfd8D4f9
+  // https://snowtrace.io/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0x49F5B996814fEd1dd39285B92A59CFb2dfd8D4f9;
+    0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://snowtrace.io/address/0x691C316b2Eec7e64d17e7E3E01f3dB44c9CcEf19
   address internal constant STATIC_A_TOKEN_FACTORY = 0x691C316b2Eec7e64d17e7E3E01f3dB44c9CcEf19;

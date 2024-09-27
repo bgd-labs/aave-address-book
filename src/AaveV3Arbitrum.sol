@@ -70,8 +70,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
   address internal constant FREEZING_STEWARD = 0xe59470B3BE3293534603487E00A44C72f2CD466d;
 
-  // https://arbiscan.io/address/0x9E8e9D6b0D24216F59043db68BDda1620892f549
-  address internal constant DEBT_SWAP_ADAPTER = 0x9E8e9D6b0D24216F59043db68BDda1620892f549;
+  // https://arbiscan.io/address/0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4
+  address internal constant DEBT_SWAP_ADAPTER = 0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4;
 
   // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
@@ -86,9 +86,9 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896
   address internal constant RATES_FACTORY = 0xcC47c4Fe1F7f29ff31A8b62197023aC8553C7896;
 
-  // https://arbiscan.io/address/0x28201C152DC5B69A86FA54FCfd21bcA4C0eff3BA
+  // https://arbiscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0x28201C152DC5B69A86FA54FCfd21bcA4C0eff3BA;
+    0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
   // https://arbiscan.io/address/0x411D79b8cC43384FDE66CaBf9b6a17180c842511
   address internal constant STATIC_A_TOKEN_FACTORY = 0x411D79b8cC43384FDE66CaBf9b6a17180c842511;
