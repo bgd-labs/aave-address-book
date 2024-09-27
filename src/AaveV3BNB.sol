@@ -67,8 +67,8 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x83f15Bc50d1A212576B202f80489502a7cc10412
   address internal constant FREEZING_STEWARD = 0x83f15Bc50d1A212576B202f80489502a7cc10412;
 
-  // https://bscscan.com/address/0xAe13e4DA0952f0B8fE04E21df53716fCF799a923
-  address internal constant DEBT_SWAP_ADAPTER = 0xAe13e4DA0952f0B8fE04E21df53716fCF799a923;
+  // https://bscscan.com/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
+  address internal constant DEBT_SWAP_ADAPTER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://bscscan.com/address/0x2ecC4F6CDbe6ea77107dd131Af81ec82Db330d6b
   address internal constant CONFIG_ENGINE = 0x2ecC4F6CDbe6ea77107dd131Af81ec82Db330d6b;
@@ -77,9 +77,9 @@ library AaveV3BNB {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x117684358D990E42Eb1649E7e8C4691951dc1E71;
 
-  // https://bscscan.com/address/0x0727a6494095511078d63143A8a1E90b9f310880
+  // https://bscscan.com/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0x0727a6494095511078d63143A8a1E90b9f310880;
+    0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
 
   // https://bscscan.com/address/0x33E0b3fc976DC9C516926BA48CfC0A9E10a2aAA5
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x33E0b3fc976DC9C516926BA48CfC0A9E10a2aAA5;

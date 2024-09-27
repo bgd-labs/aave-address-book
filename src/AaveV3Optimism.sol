@@ -70,8 +70,8 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x3829943c53F2d00e20B58475aF19716724bF90Ba
   address internal constant FREEZING_STEWARD = 0x3829943c53F2d00e20B58475aF19716724bF90Ba;
 
-  // https://optimistic.etherscan.io/address/0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC
-  address internal constant DEBT_SWAP_ADAPTER = 0xcFaE0D8c5707FCc6478D6a65fFA31efADeF8b8EC;
+  // https://optimistic.etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+  address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
   // https://optimistic.etherscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
@@ -83,9 +83,9 @@ library AaveV3Optimism {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
-  // https://optimistic.etherscan.io/address/0xa12734e64417f61f8442E7D5132EdBFdbDDeF0fa
+  // https://optimistic.etherscan.io/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0xa12734e64417f61f8442E7D5132EdBFdbDDeF0fa;
+    0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://optimistic.etherscan.io/address/0x22D76094730fA377184100EFB8CEfC673B89B372
   address internal constant STATIC_A_TOKEN_FACTORY = 0x22D76094730fA377184100EFB8CEfC673B89B372;
