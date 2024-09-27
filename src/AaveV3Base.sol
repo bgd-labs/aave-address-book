@@ -70,8 +70,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x4A4c73d563395ad827511F70097d4Ef82E653805
   address internal constant FREEZING_STEWARD = 0x4A4c73d563395ad827511F70097d4Ef82E653805;
 
-  // https://basescan.org/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
-  address internal constant DEBT_SWAP_ADAPTER = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
+  // https://basescan.org/address/0xb12e82DF057BF16ecFa89D7D089dc7E5C1Dc057B
+  address internal constant DEBT_SWAP_ADAPTER = 0xb12e82DF057BF16ecFa89D7D089dc7E5C1Dc057B;
 
   // https://basescan.org/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
@@ -79,9 +79,9 @@ library AaveV3Base {
   // https://basescan.org/address/0x2E549104c516b8657A7D888494DfbAbD7C70b464
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x2E549104c516b8657A7D888494DfbAbD7C70b464;
 
-  // https://basescan.org/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
+  // https://basescan.org/address/0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0x78F8Bd884C3D738B74B420540659c82f392820e0;
+    0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4;
 
   // https://basescan.org/address/0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22
   address internal constant STATIC_A_TOKEN_FACTORY = 0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22;

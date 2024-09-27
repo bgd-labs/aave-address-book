@@ -62,9 +62,9 @@ library AaveV3EthereumEtherFi {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0xbaA999AC55EAce41CcAE355c77809e68Bb345170;
 
-  // https://etherscan.io/address/0x8831a5EEB5e10D2E5148Ca91ee9E4716a00c2CB2
+  // https://etherscan.io/address/0x23b282c49C88d9161aae14b5eD777B976A5Ae65D
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0x8831a5EEB5e10D2E5148Ca91ee9E4716a00c2CB2;
+    0x23b282c49C88d9161aae14b5eD777B976A5Ae65D;
 
   // https://etherscan.io/address/0xB04427eFdd15b0EC233400d2F7f7E4fd0291C285
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xB04427eFdd15b0EC233400d2F7f7E4fd0291C285;

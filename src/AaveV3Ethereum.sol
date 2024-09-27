@@ -67,8 +67,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x2eE68ACb6A1319de1b49DC139894644E424fefD6
   address internal constant FREEZING_STEWARD = 0x2eE68ACb6A1319de1b49DC139894644E424fefD6;
 
-  // https://etherscan.io/address/0x8761e0370f94f68Db8EaA731f4fC581f6AD0Bd68
-  address internal constant DEBT_SWAP_ADAPTER = 0x8761e0370f94f68Db8EaA731f4fC581f6AD0Bd68;
+  // https://etherscan.io/address/0xd7852E139a7097E119623de0751AE53a61efb442
+  address internal constant DEBT_SWAP_ADAPTER = 0xd7852E139a7097E119623de0751AE53a61efb442;
 
   // https://etherscan.io/address/0x21714092D90c7265F52fdfDae068EC11a23C6248
   address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
@@ -81,9 +81,9 @@ library AaveV3Ethereum {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0xbaA999AC55EAce41CcAE355c77809e68Bb345170;
 
-  // https://etherscan.io/address/0x02e7B8511831B1b02d9018215a0f8f500Ea5c6B3
+  // https://etherscan.io/address/0x35bb522b102326ea3F1141661dF4626C87000e3E
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0x02e7B8511831B1b02d9018215a0f8f500Ea5c6B3;
+    0x35bb522b102326ea3F1141661dF4626C87000e3E;
 
   // https://etherscan.io/address/0x411D79b8cC43384FDE66CaBf9b6a17180c842511
   address internal constant STATIC_A_TOKEN_FACTORY = 0x411D79b8cC43384FDE66CaBf9b6a17180c842511;

@@ -62,9 +62,9 @@ library AaveV3EthereumLido {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0xC6cAB8D39D93DC0Bd5986E7Ce5Bb956E30103A43;
 
-  // https://etherscan.io/address/0xd0EAE3B730AE736614c66Cb40aFd1e0063f74286
+  // https://etherscan.io/address/0x66E1aBdb06e7363a618D65a910c540dfED23754f
   address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
-    0xd0EAE3B730AE736614c66Cb40aFd1e0063f74286;
+    0x66E1aBdb06e7363a618D65a910c540dfED23754f;
 
   // https://etherscan.io/address/0xD0887AA7fEBC8962c622493646195e7c76D94fCE
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xD0887AA7fEBC8962c622493646195e7c76D94fCE;
