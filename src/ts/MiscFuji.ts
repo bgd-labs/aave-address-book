@@ -2,4 +2,10 @@
 // https://testnet.snowtrace.io/address/0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723
 export const GHO_TOKEN = '0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723';
 
+// https://testnet.snowtrace.io/address/0x5B8D7e59DbEC5804e4A096FF548ACea83E4615a9
+export const TRANSPARENT_PROXY_FACTORY = '0x5B8D7e59DbEC5804e4A096FF548ACea83E4615a9';
+
+// https://testnet.snowtrace.io/address/0x440F1b750Cbc7DDd2Bd9Af279Afe422EaeE58b41
+export const PROXY_ADMIN = '0x440F1b750Cbc7DDd2Bd9Af279Afe422EaeE58b41';
+
 export const CHAIN_ID = 43113;
