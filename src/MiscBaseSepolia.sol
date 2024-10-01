@@ -3,11 +3,11 @@
 pragma solidity >=0.6.0;
 
 library MiscBaseSepolia {
-  // https://sepolia.basescan.org/address/0xD90f09Ea5eE893b8c0564719E855f1CF0455D894
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xD90f09Ea5eE893b8c0564719E855f1CF0455D894;
+  // https://sepolia.basescan.org/address/0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
 
-  // https://sepolia.basescan.org/address/0xF9e48edc704BDF494309cA457BCea4c0696f591d
-  address internal constant PROXY_ADMIN = 0xF9e48edc704BDF494309cA457BCea4c0696f591d;
+  // https://sepolia.basescan.org/address/0xbeCE3Cb857644b44Bb44084f9AfE784473ADb17B
+  address internal constant PROXY_ADMIN = 0xbeCE3Cb857644b44Bb44084f9AfE784473ADb17B;
 
   // https://sepolia.basescan.org/address/0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb
   address internal constant GHO_TOKEN = 0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb;

@@ -26,8 +26,8 @@ export const baseSepoliaAddresses: NetworkAddresses = {
   name: 'BaseSepolia',
   chainId: ChainId.base_sepolia,
   addresses: {
-    TRANSPARENT_PROXY_FACTORY: '0xd90f09ea5ee893b8c0564719e855f1cf0455d894',
-    PROXY_ADMIN: '0xF9e48edc704BDF494309cA457BCea4c0696f591d',
+    TRANSPARENT_PROXY_FACTORY: '0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe',
+    PROXY_ADMIN: '0xbeCE3Cb857644b44Bb44084f9AfE784473ADb17B',
     GHO_TOKEN: '0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb',
   },
 };
