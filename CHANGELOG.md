@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.6.0](https://github.com/bgd-labs/aave-address-book/compare/v3.5.1...v3.6.0) (2024-10-01)
+
+
+### Features
+
+* v3.2 avax fuji contracts ([#611](https://github.com/bgd-labs/aave-address-book/issues/611)) ([ded4b64](https://github.com/bgd-labs/aave-address-book/commit/ded4b64f10fdc07b151e691d3e7bf8eeeeba89e4))
+* v3.2 base sepolia contracts ([#612](https://github.com/bgd-labs/aave-address-book/issues/612)) ([ff1064e](https://github.com/bgd-labs/aave-address-book/commit/ff1064e27fc82dc6eafc9049cf5ee9fb3f395de9))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#606](https://github.com/bgd-labs/aave-address-book/issues/606)) ([e1861d9](https://github.com/bgd-labs/aave-address-book/commit/e1861d9e12ff96fd774b89a5236d16ea2e15792b))
+
 ## [3.5.1](https://github.com/bgd-labs/aave-address-book/compare/v3.5.0...v3.5.1) (2024-09-27)
 
 
