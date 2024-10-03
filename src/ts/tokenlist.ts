@@ -2756,6 +2756,26 @@ export const tokenlist = {
       },
     },
     {
+      chainId: 1,
+      address: '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      name: 'USDS Stablecoin',
+      decimals: 18,
+      symbol: 'USDS',
+      tags: ['underlying'],
+    },
+    {
+      chainId: 1,
+      address: '0x32a6268f9Ba3642Dda7892aDd74f1D34469A4259',
+      name: 'Aave Ethereum USDS',
+      decimals: 18,
+      symbol: 'aEthUSDS',
+      tags: ['aTokenV3', 'aaveV3'],
+      extensions: {
+        pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
+        underlying: '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      },
+    },
+    {
       chainId: 137,
       address: '0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE',
       name: 'Aave Polygon DAI',
@@ -6573,6 +6593,18 @@ export const tokenlist = {
     },
     {
       chainId: 1,
+      address: '0x09AA30b182488f769a9824F15E6Ce58591Da4781',
+      name: 'Aave Ethereum Lido USDS',
+      decimals: 18,
+      symbol: 'aEthLidoUSDS',
+      tags: ['aTokenV3', 'aaveV3'],
+      extensions: {
+        pool: '0x4e033931ad43597d96D6bcc25c280717730B58B1',
+        underlying: '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      },
+    },
+    {
+      chainId: 1,
       address: '0xbe1F842e7e0afd2c2322aae5d34bA899544b29db',
       name: 'Aave Ethereum EtherFi weETH',
       decimals: 18,
@@ -6624,6 +6656,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 43},
-  timestamp: '2024-09-26T01:02:45.302Z',
+  version: {major: 3, minor: 0, patch: 44},
+  timestamp: '2024-10-03T00:13:07.347Z',
 };
