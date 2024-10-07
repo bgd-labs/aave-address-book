@@ -7,12 +7,13 @@ concurrency:
 on:
   pull_request:
 
+
 jobs:
   test-solidity:
-    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
+    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@130a99a60ad2c4944ab6114105d86fcbb841af77 # pin@main
     secrets: inherit
   test-js:
-    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@130a99a60ad2c4944ab6114105d86fcbb841af77 # pin@main
     if: github.event.pull_request.head.repo.full_name == github.repository
     secrets: inherit
   pkg-size-report:
@@ -23,21 +24,21 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # pin@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # pin@v4
         with:
           node-version-file: .nvmrc
           cache: "yarn"
 
       - name: Package size report
-        uses: pkg-size/action@v1
+        uses: pkg-size/action@a637fb0897b6f14f18e776d8c3dbccb34a1ad27b # pin@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   release-node-alpha:
     if: github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
-    uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
+    uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@130a99a60ad2c4944ab6114105d86fcbb841af77 # pin@main
     needs:
       - test-solidity
       - test-js
