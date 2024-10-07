@@ -14,6 +14,7 @@ on:
       - main
   workflow_dispatch:
 
+
 jobs:
   check-proposals:
     name: Check if library is up to date
@@ -24,17 +25,17 @@ jobs:
       pull-requests: write
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # pin@v3
         with:
           submodules: recursive
           fetch-depth: 0
 
       - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1
+        uses: foundry-rs/foundry-toolchain@362aa1be8f31305295acb1032271acd5e9b99312 # pin@v1
         with:
           version: nightly
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # pin@v4
         with:
           node-version-file: .nvmrc
           cache: "yarn"
@@ -57,7 +58,7 @@ jobs:
           RPC_SCROLL: ${{ secrets.RPC_SCROLL }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
+        uses: peter-evans/create-pull-request@00897e0bc2ceba9f86c9b0fda8429107112e6fa5 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
         with:
           author: Cache-bot <noreply@github.com>
           committer: Cache-bot <noreply@github.com>
@@ -68,7 +69,7 @@ jobs:
       - name: Post to a Slack channel
         id: slack
         if: failure()
-        uses: slackapi/slack-github-action@v1.24.0
+        uses: slackapi/slack-github-action@e28cf165c92ffef168d23c5c9000cffc8a25e117 # pin@v1.24.0
         with:
           # Slack channel id, channel name, or user id to post message.
           # See also: https://api.slack.com/methods/chat.postMessage#channels

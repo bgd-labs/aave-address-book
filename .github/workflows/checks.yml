@@ -19,10 +19,10 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # pin@v4
         with:
           node-version-file: .nvmrc
           cache: "yarn"
@@ -49,10 +49,10 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # pin@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # pin@v4
         with:
           node-version-file: .nvmrc
           cache: "yarn"
@@ -62,7 +62,7 @@ jobs:
 
       - name: Cache Restore
         id: cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # pin@v4
         with:
           path: cache
           key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}
@@ -113,7 +113,7 @@ jobs:
 
       - name: Cache Save
         # if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # pin@v4
         with:
           path: cache
           key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}

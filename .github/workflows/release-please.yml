@@ -10,7 +10,7 @@ permissions:
 name: release-please
 jobs:
   test-node:
-    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@130a99a60ad2c4944ab6114105d86fcbb841af77 # pin@main
     secrets: inherit
 
   release-please:
@@ -19,13 +19,13 @@ jobs:
     outputs:
       releaseCreated: ${{ steps.release.outputs.release_created }}
     steps:
-      - uses: googleapis/release-please-action@v4.1.3
+      - uses: googleapis/release-please-action@7987652d64b4581673a76e33ad5e98e3dd56832f # pin@v4.1.3
         id: release
         with:
           release-type: node
 
   release-node:
-    uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
+    uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@130a99a60ad2c4944ab6114105d86fcbb841af77 # pin@main
     if: ${{ needs.release-please.outputs.releaseCreated }}
     needs: release-please
     secrets:
