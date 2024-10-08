@@ -18,9 +18,12 @@ import {
   lidoEthereumMainnetProtoV3Pool,
   etherFiEthereumMainnetProtoV3Pool,
 } from './configs/pools/ethereum';
+import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
+import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
+import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
@@ -46,6 +49,7 @@ import {arbitrumAddresses, arbitrumSepoliaAddresses} from './configs/networks/ar
 import {avalancheAddresses, avalancheFujiAddresses} from './configs/networks/avalanche';
 import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
 import {polygonAddresses} from './configs/networks/polygon';
+import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
@@ -64,9 +68,7 @@ async function main() {
   if (existsSync('./src/ts')) {
     const files = readdirSync('./src/ts');
     for (const file of files) {
-      // we maintain these files for backwards compatibility, we might want to just remove them
-      if (file !== 'abis' && file !== 'AaveV3Harmony.ts' && file !== 'AaveV3Fantom.ts')
-        rmSync(`./src/ts/${file}`);
+      if (file !== 'abis' && file !== 'AaveV3Harmony.ts') rmSync(`./src/ts/${file}`);
     }
   } else {
     mkdirSync('./src/ts');
@@ -114,6 +116,7 @@ async function main() {
       baseSepoliaProtoV3,
       metisProtoV3,
       gnosisProtoV3,
+      polygonZkEvmProtoV3,
       bnbProtoV3,
       arbitrumProtoV3,
       arbitrumSepoliaProtoV3,
@@ -122,6 +125,9 @@ async function main() {
       scrollProtoV3,
       scrollSepoliaProtoV3,
       zkSyncProtoV3,
+      fantomTestnetProtoV3,
+      fantomProtoV3,
+      harmonyProtoV3,
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
     ].map((config) => generateProtocolV3Library(config)),
@@ -138,6 +144,7 @@ async function main() {
     baseAddresses,
     baseSepoliaAddresses,
     ethereumAddresses,
+    fantomAddresses,
     optimismAddresses,
     optimismSepoliaAddresses,
     polygonAddresses,
@@ -170,8 +177,6 @@ async function main() {
   const jsExports = imports.map((f) => f.js).flat();
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
-  writeFileSync(`./src/ts/Abis.ts`, prefixWithGeneratedWarning(''));
-  abis.map((jsExport) => appendFileSync('./src/ts/Abis.ts', `${jsExport}\n`));
 
   const solidityImports = imports.map((f) => f.solidity).flat();
 

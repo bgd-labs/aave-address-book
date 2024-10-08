@@ -13,36 +13,39 @@ library AaveV3Harmony {
   // https://explorer.harmony.one/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
-  // https://explorer.harmony.one/address/0xDF9e4ABdbd94107932265319479643D3B05809dc
-  address internal constant POOL_IMPL = 0xDF9e4ABdbd94107932265319479643D3B05809dc;
-
   // https://explorer.harmony.one/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
 
-  // https://explorer.harmony.one/address/0xD6FA681E22306b0F4E605B979b7c9a1dFa865ade
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xD6FA681E22306b0F4E605B979b7c9a1dFa865ade;
-
   // https://explorer.harmony.one/address/0x3C90887Ede8D65ccb2777A5d577beAb2548280AD
   IAaveOracle internal constant ORACLE = IAaveOracle(0x3C90887Ede8D65ccb2777A5d577beAb2548280AD);
 
-  // https://explorer.harmony.one/address/0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654);
+  // https://explorer.harmony.one/address/0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D
+  address internal constant ACL_ADMIN = 0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;
 
   // https://explorer.harmony.one/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://explorer.harmony.one/address/0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D
-  address internal constant ACL_ADMIN = 0xb2f0C5f37f4beD2cB51C44653cD5D84866BDcd2D;
+  // https://explorer.harmony.one/address/0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654);
 
-  // https://explorer.harmony.one/address/0x8A020d92D6B119978582BE4d3EdFdC9F7b28BF31
-  ICollector internal constant COLLECTOR = ICollector(0x8A020d92D6B119978582BE4d3EdFdC9F7b28BF31);
+  // https://explorer.harmony.one/address/0xDF9e4ABdbd94107932265319479643D3B05809dc
+  address internal constant POOL_IMPL = 0xDF9e4ABdbd94107932265319479643D3B05809dc;
+
+  // https://explorer.harmony.one/address/0xD6FA681E22306b0F4E605B979b7c9a1dFa865ade
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xD6FA681E22306b0F4E605B979b7c9a1dFa865ade;
 
   // https://explorer.harmony.one/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;
+
+  // https://explorer.harmony.one/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
+  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
+
+  // https://explorer.harmony.one/address/0x8A020d92D6B119978582BE4d3EdFdC9F7b28BF31
+  ICollector internal constant COLLECTOR = ICollector(0x8A020d92D6B119978582BE4d3EdFdC9F7b28BF31);
 
   // https://explorer.harmony.one/address/0xa5ba6E5EC19a1Bf23C857991c857dB62b2Aa187B
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xa5ba6E5EC19a1Bf23C857991c857dB62b2Aa187B;
@@ -50,9 +53,6 @@ library AaveV3Harmony {
   // https://explorer.harmony.one/address/0x81387c40EB75acB02757C1Ae55D5936E78c9dEd3
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x81387c40EB75acB02757C1Ae55D5936E78c9dEd3;
-
-  // https://explorer.harmony.one/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
-  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
   // https://explorer.harmony.one/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -215,10 +215,4 @@ library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0x230E0321Cf38F09e247e50Afc7801EA2351fe56F
   address internal constant WONE_INTEREST_RATE_STRATEGY =
     0x230E0321Cf38F09e247e50Afc7801EA2351fe56F;
-}
-
-library AaveV3HarmonyEModes {
-  uint8 internal constant NONE = 0;
-
-  uint8 internal constant STABLECOINS = 1;
 }
