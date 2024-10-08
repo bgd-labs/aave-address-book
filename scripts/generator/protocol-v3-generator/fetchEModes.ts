@@ -1,7 +1,7 @@
 import {Address, Client, getContract} from 'viem';
 import {IPool_ABI} from '../../../src/ts/abis/IPool';
-import {Addresses, EMode} from '../../configs/types';
-import {generateJsObject, generateSolidityConstants, wrapIntoSolidityLibrary} from '../utils';
+import {Addresses, EMode, ReserveData} from '../../configs/types';
+import {bitMapToIndexes, generateSolidityConstants, wrapIntoSolidityLibrary} from '../utils';
 
 /**
  * As eModes are stores in a mapping there is no easy way to fetch "all eModes"
@@ -10,7 +10,10 @@ import {generateJsObject, generateSolidityConstants, wrapIntoSolidityLibrary} fr
 export async function fetchEModes(client: Client, poolAddress: Address) {
   const poolContract = getContract({address: poolAddress, abi: IPool_ABI, client});
 
-  const eModes = new Map<number, EMode>();
+  const eModes = new Map<
+    number,
+    EMode & {collateralAssetIds: number[]; borrowableAssetIds: number[]}
+  >();
   let i = 1;
   let emptyCount = 0;
   while (true) {
@@ -26,7 +29,9 @@ export async function fetchEModes(client: Client, poolAddress: Address) {
       eModes.set(i, {
         label,
         collateralBitmap,
+        collateralAssetIds: bitMapToIndexes(collateralBitmap),
         borrowableBitmap,
+        borrowableAssetIds: bitMapToIndexes(borrowableBitmap),
         ...eModeData,
       });
     }

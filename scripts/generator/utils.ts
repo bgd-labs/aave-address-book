@@ -120,3 +120,12 @@ export function addressOrZero(address?: Hex): Hex {
   if (address) return address;
   return zeroAddress;
 }
+
+export function bitMapToIndexes(bitmap: bigint) {
+  const reserveIndexes: number[] = [];
+  for (let i = 0; bitmap != 0n; i++) {
+    if (bitmap & 0x1n) reserveIndexes.push(i);
+    bitmap = bitmap >> 1n;
+  }
+  return reserveIndexes;
+}

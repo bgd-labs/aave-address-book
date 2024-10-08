@@ -271,7 +271,9 @@ export const E_MODES = {
   '1': {
     label: 'Stablecoins',
     collateralBitmap: '4261',
+    collateralAssetIds: [0, 2, 5, 7, 12],
     borrowableBitmap: '4261',
+    borrowableAssetIds: [0, 2, 5, 7, 12],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -279,7 +281,9 @@ export const E_MODES = {
   '2': {
     label: 'ETH correlated',
     collateralBitmap: '33040',
+    collateralAssetIds: [4, 8, 15],
     borrowableBitmap: '33040',
+    borrowableAssetIds: [4, 8, 15],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,

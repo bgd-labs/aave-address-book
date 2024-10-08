@@ -216,7 +216,9 @@ export const E_MODES = {
   '1': {
     label: 'Stablecoins',
     collateralBitmap: '1573',
+    collateralAssetIds: [0, 2, 5, 9, 10],
     borrowableBitmap: '1573',
+    borrowableAssetIds: [0, 2, 5, 9, 10],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -224,7 +226,9 @@ export const E_MODES = {
   '2': {
     label: 'AVAX correlated',
     collateralBitmap: '384',
+    collateralAssetIds: [7, 8],
     borrowableBitmap: '384',
+    borrowableAssetIds: [7, 8],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
