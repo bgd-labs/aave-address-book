@@ -254,6 +254,12 @@ library AaveV3BaseAssets {
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
 }
 
+library AaveV3BaseEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
+}
+
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

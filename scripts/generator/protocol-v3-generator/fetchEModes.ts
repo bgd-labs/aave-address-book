@@ -57,6 +57,10 @@ export function generateEmodeLibrary(
       }),
       libraryName,
     ),
-    js: `export const E_MODES = ${generateJsObject(Object.fromEntries(eModes))} as const;\n`,
+    js: `export const E_MODES = ${JSON.stringify(
+      Object.fromEntries(eModes),
+      (key, value) => (typeof value === 'bigint' ? value.toString() : value), // return everything else unchanged
+      2,
+    )} as const;\n`,
   };
 }

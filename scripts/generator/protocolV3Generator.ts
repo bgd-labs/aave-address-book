@@ -113,6 +113,7 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
     appendFileSync(`./src/ts/${name}.ts`, eModesLibrary.js);
   } catch (e) {
     // can fail due to pre 3.2 deployments
+    console.log(e.message);
   }
 
   // generate externalLibraries library
@@ -133,6 +134,7 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
     }
   } catch (e) {
     // can fail due to pre 3.1 deployments
+    console.log(e.message);
   }
 
   return {

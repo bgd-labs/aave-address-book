@@ -359,6 +359,14 @@ library AaveV3AvalancheAssets {
   address internal constant BTCb_STATIC_A_TOKEN = 0x34d768cc830c32DcD743321c09A2A702651bF9a2;
 }
 
+library AaveV3AvalancheEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant STABLECOINS = 1;
+
+  uint8 internal constant AVAX_CORRELATED = 2;
+}
+
 library AaveV3AvalancheExternalLibraries {
   // https://snowtrace.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

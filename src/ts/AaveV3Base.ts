@@ -164,4 +164,14 @@ export const ASSETS = {
     ORACLE: '0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F',
   },
 } as const;
+export const E_MODES = {
+  '1': {
+    label: 'ETH correlated',
+    collateralBitmap: '43',
+    borrowableBitmap: '43',
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10200,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;

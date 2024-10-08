@@ -212,4 +212,22 @@ export const ASSETS = {
     STATIC_A_TOKEN: '0x34d768cc830c32DcD743321c09A2A702651bF9a2',
   },
 } as const;
+export const E_MODES = {
+  '1': {
+    label: 'Stablecoins',
+    collateralBitmap: '1573',
+    borrowableBitmap: '1573',
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+  '2': {
+    label: 'AVAX correlated',
+    collateralBitmap: '384',
+    borrowableBitmap: '384',
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;

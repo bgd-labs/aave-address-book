@@ -538,6 +538,16 @@ library AaveV3PolygonAssets {
   address internal constant USDCn_STATIC_A_TOKEN = 0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19;
 }
 
+library AaveV3PolygonEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant STABLECOINS = 1;
+
+  uint8 internal constant MATIC_CORRELATED = 2;
+
+  uint8 internal constant ETH_CORRELATED = 3;
+}
+
 library AaveV3PolygonExternalLibraries {
   // https://polygonscan.com/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

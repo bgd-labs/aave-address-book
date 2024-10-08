@@ -164,6 +164,12 @@ library AaveV3EthereumLidoAssets {
     0x8958b1C39269167527821f8c276Ef7504883f2fa;
 }
 
+library AaveV3EthereumLidoEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
+}
+
 library AaveV3EthereumLidoExternalLibraries {
   // https://etherscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

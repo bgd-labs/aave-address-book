@@ -296,4 +296,30 @@ export const ASSETS = {
     STATIC_A_TOKEN: '0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19',
   },
 } as const;
+export const E_MODES = {
+  '1': {
+    label: 'Stablecoins',
+    collateralBitmap: '1171493',
+    borrowableBitmap: '1171493',
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+  '2': {
+    label: 'MATIC correlated',
+    collateralBitmap: '393344',
+    borrowableBitmap: '393344',
+    ltv: 9250,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+  '3': {
+    label: 'ETH correlated',
+    collateralBitmap: '524304',
+    borrowableBitmap: '524304',
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;

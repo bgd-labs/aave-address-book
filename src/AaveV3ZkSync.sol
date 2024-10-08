@@ -171,6 +171,12 @@ library AaveV3ZkSyncAssets {
   address internal constant ZK_INTEREST_RATE_STRATEGY = 0x57815Ab06D846d7dECd326Ee541CD06144FED237;
 }
 
+library AaveV3ZkSyncEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
+}
+
 library AaveV3ZkSyncExternalLibraries {
   // https://era.zksync.network/address/0xcE53459E8734Df93399A425183Ee1860Ca8c2D0b
   address internal constant FLASHLOAN_LOGIC = 0xcE53459E8734Df93399A425183Ee1860Ca8c2D0b;

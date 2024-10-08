@@ -463,6 +463,14 @@ library AaveV3ArbitrumAssets {
   address internal constant GHO_STATIC_A_TOKEN = 0xD9FBA68D89178e3538e708939332c79efC540179;
 }
 
+library AaveV3ArbitrumEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant STABLECOINS = 1;
+
+  uint8 internal constant ETH_CORRELATED = 2;
+}
+
 library AaveV3ArbitrumExternalLibraries {
   // https://arbiscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

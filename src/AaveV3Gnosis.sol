@@ -255,6 +255,12 @@ library AaveV3GnosisAssets {
   address internal constant USDCe_STATIC_A_TOKEN = 0xf0E7eC247b918311afa054E0AEdb99d74c31b809;
 }
 
+library AaveV3GnosisEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
+}
+
 library AaveV3GnosisExternalLibraries {
   // https://gnosisscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

@@ -232,4 +232,22 @@ export const ASSETS = {
     STATIC_A_TOKEN: '0x4DD03dfD36548C840B563745e3FBeC320F37BA7e',
   },
 } as const;
+export const E_MODES = {
+  '1': {
+    label: 'Stablecoins',
+    collateralBitmap: '8357',
+    borrowableBitmap: '8357',
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+  '2': {
+    label: 'ETH correlated',
+    collateralBitmap: '4624',
+    borrowableBitmap: '4624',
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;

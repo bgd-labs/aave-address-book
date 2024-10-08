@@ -827,6 +827,12 @@ library AaveV3EthereumAssets {
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 
+library AaveV3EthereumEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
+}
+
 library AaveV3EthereumExternalLibraries {
   // https://etherscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

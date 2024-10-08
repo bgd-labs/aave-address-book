@@ -175,6 +175,12 @@ library AaveV3ScrollAssets {
     0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc;
 }
 
+library AaveV3ScrollEModes {
+  uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
+}
+
 library AaveV3ScrollExternalLibraries {
   // https://scrollscan.com/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

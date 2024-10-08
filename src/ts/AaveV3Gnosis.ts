@@ -154,4 +154,14 @@ export const ASSETS = {
     STATIC_A_TOKEN: '0xf0E7eC247b918311afa054E0AEdb99d74c31b809',
   },
 } as const;
+export const E_MODES = {
+  '1': {
+    label: 'ETH correlated',
+    collateralBitmap: '3',
+    borrowableBitmap: '3',
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;
