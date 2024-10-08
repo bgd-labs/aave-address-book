@@ -70,8 +70,8 @@ library AaveV3ZkSync {
   // https://era.zksync.network/address/0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dAB0
   address internal constant WALLET_BALANCE_PROVIDER = 0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dAB0;
 
-  // https://era.zksync.network/address/0xA72d2e6C79F3e19b5cF51069e5eD1c0177b548EB
-  address internal constant WETH_GATEWAY = 0xA72d2e6C79F3e19b5cF51069e5eD1c0177b548EB;
+  // https://era.zksync.network/address/0xD5f6c8D402E0a0222f7FA132F9e80fDCC074df5C
+  address internal constant WETH_GATEWAY = 0xD5f6c8D402E0a0222f7FA132F9e80fDCC074df5C;
 
   // https://era.zksync.network/address/0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9
   address internal constant STATIC_A_TOKEN_FACTORY = 0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9;

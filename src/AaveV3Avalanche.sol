@@ -99,8 +99,8 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  // https://snowtrace.io/address/0x2DeC8BCE3471eD65B1bB558Fa28439D45bF446d0
-  address internal constant WETH_GATEWAY = 0x2DeC8BCE3471eD65B1bB558Fa28439D45bF446d0;
+  // https://snowtrace.io/address/0xCf3045a03F83ADfBCbA1f19Cb2cF4E19075F8668
+  address internal constant WETH_GATEWAY = 0xCf3045a03F83ADfBCbA1f19Cb2cF4E19075F8668;
 
   // https://snowtrace.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;

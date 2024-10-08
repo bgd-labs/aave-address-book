@@ -98,8 +98,8 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  // https://optimistic.etherscan.io/address/0xe9E52021f4e11DEAD8661812A0A6c8627abA2a54
-  address internal constant WETH_GATEWAY = 0xe9E52021f4e11DEAD8661812A0A6c8627abA2a54;
+  // https://optimistic.etherscan.io/address/0x60eE8b61a13c67d0191c851BEC8F0bc850160710
+  address internal constant WETH_GATEWAY = 0x60eE8b61a13c67d0191c851BEC8F0bc850160710;
 
   // https://optimistic.etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;

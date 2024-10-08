@@ -99,8 +99,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
   address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
 
-  // https://etherscan.io/address/0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9
-  address internal constant WETH_GATEWAY = 0x893411580e590D62dDBca8a703d61Cc4A8c7b2b9;
+  // https://etherscan.io/address/0xA434D495249abE33E031Fe71a969B81f3c07950D
+  address internal constant WETH_GATEWAY = 0xA434D495249abE33E031Fe71a969B81f3c07950D;
 
   // https://etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
