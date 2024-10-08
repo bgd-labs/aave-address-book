@@ -8,4 +8,4 @@ on:
 
 jobs:
   test:
-    uses: bgd-labs/github-workflows/.github/workflows/comment.yml@1762723929c79ec9d11b813f03968e39dbbbe082 # pin@main
+    uses: bgd-labs/github-workflows/.github/workflows/comment.yml@ea41920d7c7c656823137da415d1e3f59bf064bf # pin@main
