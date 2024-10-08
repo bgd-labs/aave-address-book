@@ -43,6 +43,7 @@ jobs:
           RPC_BNB: ${{ secrets.RPC_BNB }}
           RPC_METIS: ${{ secrets.RPC_METIS }}
           RPC_SCROLL: ${{ secrets.RPC_SCROLL }}
+          RPC_FANTOM: ${{ secrets.RPC_FANTOM }}
   verification:
     runs-on: ubuntu-latest
     permissions:

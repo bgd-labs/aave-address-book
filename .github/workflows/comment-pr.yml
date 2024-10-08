@@ -2,10 +2,10 @@ name: PR Comment
 
 on:
   workflow_run:
-    workflows: [ Test ]
+    workflows: [Test]
     types:
       - completed
 
 jobs:
   test:
-    uses: bgd-labs/github-workflows/.github/workflows/comment.yml@130a99a60ad2c4944ab6114105d86fcbb841af77 # pin@main
+    uses: bgd-labs/github-workflows/.github/workflows/comment.yml@1762723929c79ec9d11b813f03968e39dbbbe082 # pin@main
