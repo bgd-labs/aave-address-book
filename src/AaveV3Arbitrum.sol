@@ -13,15 +13,15 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
-  // https://arbiscan.io/address/0x6C6c6857e2F32fcCBDb2791597350Aa034a3ce47
-  address internal constant POOL_IMPL = 0x6C6c6857e2F32fcCBDb2791597350Aa034a3ce47;
+  // https://arbiscan.io/address/0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4
+  address internal constant POOL_IMPL = 0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4;
 
   // https://arbiscan.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
 
-  // https://arbiscan.io/address/0x419226e0Ad27f3B2019123f7246a364622b018e5
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x419226e0Ad27f3B2019123f7246a364622b018e5;
+  // https://arbiscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://arbiscan.io/address/0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7
   IAaveOracle internal constant ORACLE = IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7);
@@ -29,9 +29,9 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b
   address internal constant PRICE_ORACLE_SENTINEL = 0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b;
 
-  // https://arbiscan.io/address/0x7deEB8aCE4220643D8edeC871a23807E4d006eE5
+  // https://arbiscan.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x7deEB8aCE4220643D8edeC871a23807E4d006eE5);
+    IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
 
   // https://arbiscan.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
   IACLManager internal constant ACL_MANAGER =
@@ -126,8 +126,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x4a838a3Dac6633bB1fd932B6f356DecFCAf7803D
   address internal constant DAI_ORACLE = 0x4a838a3Dac6633bB1fd932B6f356DecFCAf7803D;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
-  address internal constant DAI_INTEREST_RATE_STRATEGY = 0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
+  address internal constant DAI_INTEREST_RATE_STRATEGY = 0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0xc91c5297d7E161aCC74b482aAfCc75B85cc0bfeD
   address internal constant DAI_STATIC_A_TOKEN = 0xc91c5297d7E161aCC74b482aAfCc75B85cc0bfeD;
@@ -146,9 +146,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x86E53CF1B870786351Da77A57575e79CB55812CB
   address internal constant LINK_ORACLE = 0x86E53CF1B870786351Da77A57575e79CB55812CB;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant LINK_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x27dE098EF2772386cBCf1a4c8BEb886368b7F9a9
   address internal constant LINK_STATIC_A_TOKEN = 0x27dE098EF2772386cBCf1a4c8BEb886368b7F9a9;
@@ -167,9 +167,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xDe25a88F87FEd9F8999fAbF6729dCB121893623C
   address internal constant USDC_ORACLE = 0xDe25a88F87FEd9F8999fAbF6729dCB121893623C;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant USDC_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x0Bc9E52051f553E75550CA22C196bf132c52Cf0B
   address internal constant USDC_STATIC_A_TOKEN = 0x0Bc9E52051f553E75550CA22C196bf132c52Cf0B;
@@ -188,9 +188,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x6ce185860a4963106506C203335A2910413708e9
   address internal constant WBTC_ORACLE = 0x6ce185860a4963106506C203335A2910413708e9;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x32B95Fbe04e5a51cF99FeeF4e57Cf7e3FC9c5A93
   address internal constant WBTC_STATIC_A_TOKEN = 0x32B95Fbe04e5a51cF99FeeF4e57Cf7e3FC9c5A93;
@@ -209,9 +209,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612
   address internal constant WETH_ORACLE = 0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant WETH_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x352F3475716261dCC991Bd5F2aF973eB3D0F5878
   address internal constant WETH_STATIC_A_TOKEN = 0x352F3475716261dCC991Bd5F2aF973eB3D0F5878;
@@ -230,9 +230,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x84dC1C52D7C340AA54B4e8799FBB31C3D28E67aD
   address internal constant USDT_ORACLE = 0x84dC1C52D7C340AA54B4e8799FBB31C3D28E67aD;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant USDT_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0xb165a74407fE1e519d6bCbDeC1Ed3202B35a4140
   address internal constant USDT_STATIC_A_TOKEN = 0xb165a74407fE1e519d6bCbDeC1Ed3202B35a4140;
@@ -251,9 +251,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xaD1d5344AaDE45F43E596773Bcc4c423EAbdD034
   address internal constant AAVE_ORACLE = 0xaD1d5344AaDE45F43E596773Bcc4c423EAbdD034;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x1C0c8EcED17aE093b3C1a1a8fFeBE2E9513a9346
   address internal constant AAVE_STATIC_A_TOKEN = 0x1C0c8EcED17aE093b3C1a1a8fFeBE2E9513a9346;
@@ -272,9 +272,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84
   address internal constant EURS_ORACLE = 0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant EURS_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x9a40747BE51185A416B181789B671E78a8d045dD
   address internal constant EURS_STATIC_A_TOKEN = 0x9a40747BE51185A416B181789B671E78a8d045dD;
@@ -293,9 +293,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x87fE1503beFBF98C35c7526B0c488d950F822C0F
   address internal constant wstETH_ORACLE = 0x87fE1503beFBF98C35c7526B0c488d950F822C0F;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x7775d4Ae4Dbb79a624fB96AAcDB8Ca74F671c0DF
   address internal constant wstETH_STATIC_A_TOKEN = 0x7775d4Ae4Dbb79a624fB96AAcDB8Ca74F671c0DF;
@@ -314,8 +314,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x7a7cE08a1057723CCEDeA2462407427Ae33FFEb2
   address internal constant MAI_ORACLE = 0x7a7cE08a1057723CCEDeA2462407427Ae33FFEb2;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
-  address internal constant MAI_INTEREST_RATE_STRATEGY = 0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
+  address internal constant MAI_INTEREST_RATE_STRATEGY = 0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0xB4a0a2692D82301703B27082Cda45B083F68CAcE
   address internal constant MAI_STATIC_A_TOKEN = 0xB4a0a2692D82301703B27082Cda45B083F68CAcE;
@@ -334,9 +334,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x256f33FC0110B1297f78f48524631D30B752480D
   address internal constant rETH_ORACLE = 0x256f33FC0110B1297f78f48524631D30B752480D;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant rETH_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x68235105d6d33A19369D24b746cb7481FB2b34fd
   address internal constant rETH_STATIC_A_TOKEN = 0x68235105d6d33A19369D24b746cb7481FB2b34fd;
@@ -355,9 +355,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x341B110bDF665A20F0D5f84A92FcAF5EbeEBC629
   address internal constant LUSD_ORACLE = 0x341B110bDF665A20F0D5f84A92FcAF5EbeEBC629;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant LUSD_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0xDbB6314b5b07E63B7101844c0346309B79f8C20A
   address internal constant LUSD_STATIC_A_TOKEN = 0xDbB6314b5b07E63B7101844c0346309B79f8C20A;
@@ -376,9 +376,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xDe25a88F87FEd9F8999fAbF6729dCB121893623C
   address internal constant USDCn_ORACLE = 0xDe25a88F87FEd9F8999fAbF6729dCB121893623C;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant USDCn_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x7CFaDFD5645B50bE87d546f42699d863648251ad
   address internal constant USDCn_STATIC_A_TOKEN = 0x7CFaDFD5645B50bE87d546f42699d863648251ad;
@@ -397,9 +397,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x06919EB75Bd6BA817D38CC70C1CA588ac7a01C10
   address internal constant FRAX_ORACLE = 0x06919EB75Bd6BA817D38CC70C1CA588ac7a01C10;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x89AEc2023f89E26Dbb7eaa7a98fe3996f9d112A8
   address internal constant FRAX_STATIC_A_TOKEN = 0x89AEc2023f89E26Dbb7eaa7a98fe3996f9d112A8;
@@ -418,8 +418,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xb2A824043730FE05F3DA2efaFa1CBbe83fa548D6
   address internal constant ARB_ORACLE = 0xb2A824043730FE05F3DA2efaFa1CBbe83fa548D6;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
-  address internal constant ARB_INTEREST_RATE_STRATEGY = 0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
+  address internal constant ARB_INTEREST_RATE_STRATEGY = 0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x9b5637d7952BC9fa2D693aAE51f3103760Bf2693
   address internal constant ARB_STATIC_A_TOKEN = 0x9b5637d7952BC9fa2D693aAE51f3103760Bf2693;
@@ -438,9 +438,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x517276B5972C4Db7E88B9F76Ee500E888a2D73C3
   address internal constant weETH_ORACLE = 0x517276B5972C4Db7E88B9F76Ee500E888a2D73C3;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant weETH_INTEREST_RATE_STRATEGY =
-    0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33
   address internal constant GHO_UNDERLYING = 0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33;
@@ -456,8 +456,8 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xB05984aD83C20b3ADE7bf97a9a0Cb539DDE28DBb
   address internal constant GHO_ORACLE = 0xB05984aD83C20b3ADE7bf97a9a0Cb539DDE28DBb;
 
-  // https://arbiscan.io/address/0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea
-  address internal constant GHO_INTEREST_RATE_STRATEGY = 0xC2c6DF6a8B6cc79a6F927a1FFAE602c701C374Ea;
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 
   // https://arbiscan.io/address/0xD9FBA68D89178e3538e708939332c79efC540179
   address internal constant GHO_STATIC_A_TOKEN = 0xD9FBA68D89178e3538e708939332c79efC540179;
@@ -472,24 +472,24 @@ library AaveV3ArbitrumEModes {
 }
 
 library AaveV3ArbitrumExternalLibraries {
-  // https://arbiscan.io/address/0x6DA8d7EF0625e965dafc393793C048096392d4a5
-  address internal constant FLASHLOAN_LOGIC = 0x6DA8d7EF0625e965dafc393793C048096392d4a5;
+  // https://arbiscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
+  address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;
 
-  // https://arbiscan.io/address/0x41717de714Db8630F02Dea8f6A39C73A5b5C7df1
-  address internal constant BORROW_LOGIC = 0x41717de714Db8630F02Dea8f6A39C73A5b5C7df1;
+  // https://arbiscan.io/address/0x4c52FE2162200bf26c314d7bbd8611699139d553
+  address internal constant BORROW_LOGIC = 0x4c52FE2162200bf26c314d7bbd8611699139d553;
 
-  // https://arbiscan.io/address/0xca2385754bCa5d632F5160B560352aBd12029685
-  address internal constant BRIDGE_LOGIC = 0xca2385754bCa5d632F5160B560352aBd12029685;
+  // https://arbiscan.io/address/0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604
+  address internal constant BRIDGE_LOGIC = 0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604;
 
-  // https://arbiscan.io/address/0x12959a64470Dd003590Bb1EcFC436dddE7608724
-  address internal constant E_MODE_LOGIC = 0x12959a64470Dd003590Bb1EcFC436dddE7608724;
+  // https://arbiscan.io/address/0x88F864670De467aA73CD45325F9652C578C8AB85
+  address internal constant E_MODE_LOGIC = 0x88F864670De467aA73CD45325F9652C578C8AB85;
 
-  // https://arbiscan.io/address/0x72c272aE914EC11AFe1e74A0016e0A91c1A6014e
-  address internal constant LIQUIDATION_LOGIC = 0x72c272aE914EC11AFe1e74A0016e0A91c1A6014e;
+  // https://arbiscan.io/address/0x80d16970B31243Fe67DaB028115f3E4c3E3510Ad
+  address internal constant LIQUIDATION_LOGIC = 0x80d16970B31243Fe67DaB028115f3E4c3E3510Ad;
 
-  // https://arbiscan.io/address/0x55D552EFbc8aEB87AffCEa8630B43a33BA24D975
-  address internal constant POOL_LOGIC = 0x55D552EFbc8aEB87AffCEa8630B43a33BA24D975;
+  // https://arbiscan.io/address/0xA58FB47bE9074828215A173564C0CD10f6F249bf
+  address internal constant POOL_LOGIC = 0xA58FB47bE9074828215A173564C0CD10f6F249bf;
 
-  // https://arbiscan.io/address/0x9336943ecd91C201D9ED5A21562b34Aef710052f
-  address internal constant SUPPLY_LOGIC = 0x9336943ecd91C201D9ED5A21562b34Aef710052f;
+  // https://arbiscan.io/address/0x2b22E425C1322fbA0DbF17bb1dA25d71811EE7ba
+  address internal constant SUPPLY_LOGIC = 0x2b22E425C1322fbA0DbF17bb1dA25d71811EE7ba;
 }

@@ -23,6 +23,10 @@ import {
   optimismSepolia,
   scrollSepolia,
   arbitrumSepolia,
+  // deprecated
+  harmonyOne,
+  fantomTestnet,
+  fantom,
 } from 'viem/chains';
 import {Client} from 'viem';
 import {ChainId} from '@bgd-labs/js-utils';
@@ -169,6 +173,26 @@ export const baseSepoliaClient = createClient({
   ...batchConfig,
 });
 
+// deprecated
+
+export const fantomTestnetClient = createClient({
+  chain: fantomTestnet,
+  transport: http(process.env.RPC_FANTOM_TESTNET, commonConfig),
+  ...batchConfig,
+});
+
+export const fantomClient = createClient({
+  chain: fantomTestnet,
+  transport: http(process.env.RPC_FANTOM, commonConfig),
+  ...batchConfig,
+});
+
+export const harmonyClient = createClient({
+  chain: harmonyOne,
+  transport: http(process.env.RPC_HARMONY, commonConfig),
+  ...batchConfig,
+});
+
 export const CHAIN_ID_CLIENT_MAP: Record<number, Client> = {
   [ChainId.mainnet]: mainnetClient,
   [ChainId.arbitrum_one]: arbitrumClient,
@@ -193,4 +217,8 @@ export const CHAIN_ID_CLIENT_MAP: Record<number, Client> = {
   [ChainId.zkSync]: zkSyncClient,
   [ChainId.fuji]: fujiClient,
   [ChainId.mumbai]: mumbaiClient,
+  // deprecated
+  [ChainId.harmony]: harmonyClient,
+  [ChainId.fantom]: fantomClient,
+  [ChainId.fantom_testnet]: fantomTestnetClient,
 } as const;

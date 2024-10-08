@@ -51,10 +51,6 @@ library AaveV3FantomTestnet {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x67F50B454972F7557c359AfE2DD3caef9930d665;
 
-  // https://testnet.ftmscan.com/address/0x979667835fE95F39609220C7582C7f21DaF1ce11
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x979667835fE95F39609220C7582C7f21DaF1ce11;
-
   // https://testnet.ftmscan.com/address/0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155
   address internal constant EMISSION_MANAGER = 0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155;
 
@@ -86,9 +82,6 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x7a277581a2b1F0B52ce98A1A9b3ADb2DAbE99639
   address internal constant DAI_V_TOKEN = 0x7a277581a2b1F0B52ce98A1A9b3ADb2DAbE99639;
 
-  // https://testnet.ftmscan.com/address/0xDbFbB8697438646fa75071C71d9B3dD1abaaB19f
-  address internal constant DAI_S_TOKEN = 0xDbFbB8697438646fa75071C71d9B3dD1abaaB19f;
-
   // https://testnet.ftmscan.com/address/0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB
   address internal constant DAI_ORACLE = 0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB;
 
@@ -105,9 +98,6 @@ library AaveV3FantomTestnetAssets {
 
   // https://testnet.ftmscan.com/address/0x37a36207141fec36F383b9012FFACA924e4c7809
   address internal constant LINK_V_TOKEN = 0x37a36207141fec36F383b9012FFACA924e4c7809;
-
-  // https://testnet.ftmscan.com/address/0xF21aC6F04D88Cb4EC2a33Aa3A3a909FF64d4dDe1
-  address internal constant LINK_S_TOKEN = 0xF21aC6F04D88Cb4EC2a33Aa3A3a909FF64d4dDe1;
 
   // https://testnet.ftmscan.com/address/0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD
   address internal constant LINK_ORACLE = 0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD;
@@ -127,9 +117,6 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x7723CeBe9a4D7416a7023d30bBefe73b755CE0bf
   address internal constant USDC_V_TOKEN = 0x7723CeBe9a4D7416a7023d30bBefe73b755CE0bf;
 
-  // https://testnet.ftmscan.com/address/0xb9fdF942fd49A3876b4c5aAd3b65B48C8c7Bec2C
-  address internal constant USDC_S_TOKEN = 0xb9fdF942fd49A3876b4c5aAd3b65B48C8c7Bec2C;
-
   // https://testnet.ftmscan.com/address/0x4CeDCB57Af02293231BAA9D39354D6BFDFD251e0
   address internal constant USDC_ORACLE = 0x4CeDCB57Af02293231BAA9D39354D6BFDFD251e0;
 
@@ -147,9 +134,6 @@ library AaveV3FantomTestnetAssets {
 
   // https://testnet.ftmscan.com/address/0x798FD7a01C614F23a9fF27427e94175c3A8eBa5B
   address internal constant WBTC_V_TOKEN = 0x798FD7a01C614F23a9fF27427e94175c3A8eBa5B;
-
-  // https://testnet.ftmscan.com/address/0xCE3F0aA0b7cd4d7202a6c14e835EdF58F73e0F41
-  address internal constant WBTC_S_TOKEN = 0xCE3F0aA0b7cd4d7202a6c14e835EdF58F73e0F41;
 
   // https://testnet.ftmscan.com/address/0x8022B4f0165644D9EFcDEF70b09F5739b95740bc
   address internal constant WBTC_ORACLE = 0x8022B4f0165644D9EFcDEF70b09F5739b95740bc;
@@ -169,9 +153,6 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x5d18c525aD0C583aeEa44535cce7fd234D10Ef65
   address internal constant WETH_V_TOKEN = 0x5d18c525aD0C583aeEa44535cce7fd234D10Ef65;
 
-  // https://testnet.ftmscan.com/address/0xFb58c0193E4BEBAd5385776e7e4c53bA80caEAda
-  address internal constant WETH_S_TOKEN = 0xFb58c0193E4BEBAd5385776e7e4c53bA80caEAda;
-
   // https://testnet.ftmscan.com/address/0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e
   address internal constant WETH_ORACLE = 0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e;
 
@@ -189,9 +170,6 @@ library AaveV3FantomTestnetAssets {
 
   // https://testnet.ftmscan.com/address/0x8aE1A997A45C7A7b8c00889C8d0eAabBa899CA90
   address internal constant USDT_V_TOKEN = 0x8aE1A997A45C7A7b8c00889C8d0eAabBa899CA90;
-
-  // https://testnet.ftmscan.com/address/0x3C2550b9D48B1c1814AeF3E58E76c6fD343d9775
-  address internal constant USDT_S_TOKEN = 0x3C2550b9D48B1c1814AeF3E58E76c6fD343d9775;
 
   // https://testnet.ftmscan.com/address/0x7CBa02e449d1D41b792A28fC15ee3F72C5aDC113
   address internal constant USDT_ORACLE = 0x7CBa02e449d1D41b792A28fC15ee3F72C5aDC113;
@@ -211,9 +189,6 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0xD54a60da0deA4054169faeD0217F8Be0198A789E
   address internal constant AAVE_V_TOKEN = 0xD54a60da0deA4054169faeD0217F8Be0198A789E;
 
-  // https://testnet.ftmscan.com/address/0xc83e9eF21C7736dfA4049835e05dbCC6a9b1C42b
-  address internal constant AAVE_S_TOKEN = 0xc83e9eF21C7736dfA4049835e05dbCC6a9b1C42b;
-
   // https://testnet.ftmscan.com/address/0xB516d30421d2A0524769A243BBE5e193E78ab35c
   address internal constant AAVE_ORACLE = 0xB516d30421d2A0524769A243BBE5e193E78ab35c;
 
@@ -231,9 +206,6 @@ library AaveV3FantomTestnetAssets {
 
   // https://testnet.ftmscan.com/address/0x5a76c9C809e7032F857dC24430e724831b202e29
   address internal constant WFTM_V_TOKEN = 0x5a76c9C809e7032F857dC24430e724831b202e29;
-
-  // https://testnet.ftmscan.com/address/0x519Cc175fe84B19A67D136216408774FA6145AEE
-  address internal constant WFTM_S_TOKEN = 0x519Cc175fe84B19A67D136216408774FA6145AEE;
 
   // https://testnet.ftmscan.com/address/0x76675dEA78639e06a0f6b377262A03dEA916D6a4
   address internal constant WFTM_ORACLE = 0x76675dEA78639e06a0f6b377262A03dEA916D6a4;
@@ -253,9 +225,6 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x40489046ABe77aa660C6270A4abD0018821eE2e6
   address internal constant CRV_V_TOKEN = 0x40489046ABe77aa660C6270A4abD0018821eE2e6;
 
-  // https://testnet.ftmscan.com/address/0x8DC8F6Db4805109590A07e6F1488D5fD20A2980c
-  address internal constant CRV_S_TOKEN = 0x8DC8F6Db4805109590A07e6F1488D5fD20A2980c;
-
   // https://testnet.ftmscan.com/address/0xd409F17095a370800A9C352124C6a1e82695203E
   address internal constant CRV_ORACLE = 0xd409F17095a370800A9C352124C6a1e82695203E;
 
@@ -272,9 +241,6 @@ library AaveV3FantomTestnetAssets {
 
   // https://testnet.ftmscan.com/address/0xd863A878743D56B1208DC3bf3F280c0d16eC28D4
   address internal constant SUSHI_V_TOKEN = 0xd863A878743D56B1208DC3bf3F280c0d16eC28D4;
-
-  // https://testnet.ftmscan.com/address/0x2D95dC1559576dF4A4d22e6befB6f23b151Df04c
-  address internal constant SUSHI_S_TOKEN = 0x2D95dC1559576dF4A4d22e6befB6f23b151Df04c;
 
   // https://testnet.ftmscan.com/address/0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F
   address internal constant SUSHI_ORACLE = 0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F;
