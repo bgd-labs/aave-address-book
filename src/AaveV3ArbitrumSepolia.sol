@@ -51,10 +51,6 @@ library AaveV3ArbitrumSepolia {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0;
 
-  // https://sepolia.arbiscan.io/address/0x6259AE15400421d341f114f5c2dF43B351D1320E
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x6259AE15400421d341f114f5c2dF43B351D1320E;
-
   // https://sepolia.arbiscan.io/address/0x54E3aa872c3d2A89D1A6495F770f2cCa2C4Fc185
   address internal constant EMISSION_MANAGER = 0x54E3aa872c3d2A89D1A6495F770f2cCa2C4Fc185;
 
@@ -93,9 +89,6 @@ library AaveV3ArbitrumSepoliaAssets {
   // https://sepolia.arbiscan.io/address/0x4fBE3A94C60A5085dA6a2D309965DcF34c36711d
   address internal constant USDC_V_TOKEN = 0x4fBE3A94C60A5085dA6a2D309965DcF34c36711d;
 
-  // https://sepolia.arbiscan.io/address/0x74801168f69fE402da6274F2328fCfA539d3Be1a
-  address internal constant USDC_S_TOKEN = 0x74801168f69fE402da6274F2328fCfA539d3Be1a;
-
   // https://sepolia.arbiscan.io/address/0x0153002d20B96532C639313c2d54c3dA09109309
   address internal constant USDC_ORACLE = 0x0153002d20B96532C639313c2d54c3dA09109309;
 
@@ -113,9 +106,6 @@ library AaveV3ArbitrumSepoliaAssets {
 
   // https://sepolia.arbiscan.io/address/0x372eB464296D8D78acaa462b41eaaf2D3663dAD3
   address internal constant WETH_V_TOKEN = 0x372eB464296D8D78acaa462b41eaaf2D3663dAD3;
-
-  // https://sepolia.arbiscan.io/address/0x4F364534B30Bbcd285EBfee61579115727Cb27c5
-  address internal constant WETH_S_TOKEN = 0x4F364534B30Bbcd285EBfee61579115727Cb27c5;
 
   // https://sepolia.arbiscan.io/address/0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165
   address internal constant WETH_ORACLE = 0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165;

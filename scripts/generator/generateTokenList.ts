@@ -8,9 +8,9 @@ import {join} from 'path';
 import prettier from 'prettier';
 import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {fixSymbol} from './assetsLibraryGenerator';
 import {getSymbolUri, VARIANT} from './svgUtils';
+import {CHAIN_ID_CLIENT_MAP} from '../clients';
 
 const TAGS = {
   underlying: 'underlying',
@@ -60,8 +60,8 @@ export async function generateTokenList(pools: TokenListParams) {
         const [name, symbol] = cache
           ? [cache.name, cache.symbol]
           : token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
-          ? ['Maker', 'MKR']
-          : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
+            ? ['Maker', 'MKR']
+            : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
         const symbolUri = await getSymbolUri(reserve.symbol, variant);
         return tokens.push({
           chainId: chainId,

@@ -18,8 +18,6 @@ import {
   lidoEthereumMainnetProtoV3Pool,
   etherFiEthereumMainnetProtoV3Pool,
 } from './configs/pools/ethereum';
-import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
-import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
@@ -49,7 +47,6 @@ import {arbitrumAddresses, arbitrumSepoliaAddresses} from './configs/networks/ar
 import {avalancheAddresses, avalancheFujiAddresses} from './configs/networks/avalanche';
 import {ethereumAddresses, sepoliaAddresses} from './configs/networks/ethereum';
 import {polygonAddresses} from './configs/networks/polygon';
-import {fantomAddresses} from './configs/networks/fantom';
 import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/optimism';
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
@@ -125,9 +122,6 @@ async function main() {
       scrollProtoV3,
       scrollSepoliaProtoV3,
       zkSyncProtoV3,
-      fantomTestnetProtoV3,
-      fantomProtoV3,
-      harmonyProtoV3,
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
     ].map((config) => generateProtocolV3Library(config)),
@@ -144,7 +138,6 @@ async function main() {
     baseAddresses,
     baseSepoliaAddresses,
     ethereumAddresses,
-    fantomAddresses,
     optimismAddresses,
     optimismSepoliaAddresses,
     polygonAddresses,

@@ -51,10 +51,6 @@ library AaveV3EthereumEtherFi {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xBb077DaFFeb23B2126E7358b0b122ba6838FB881;
 
-  // https://etherscan.io/address/0xb53F0547722AE5fa5b433a7acc44571aD68CEdAA
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0xb53F0547722AE5fa5b433a7acc44571aD68CEdAA;
-
   // https://etherscan.io/address/0x223d844fc4B006D67c0cDbd39371A9F73f69d974
   address internal constant EMISSION_MANAGER = 0x223d844fc4B006D67c0cDbd39371A9F73f69d974;
 
@@ -109,9 +105,6 @@ library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0x16264412CB72F0d16A446f7D928Dd0D822810048
   address internal constant weETH_V_TOKEN = 0x16264412CB72F0d16A446f7D928Dd0D822810048;
 
-  // https://etherscan.io/address/0x57A994227592652D58BBF3D52e34261dF8b354D0
-  address internal constant weETH_S_TOKEN = 0x57A994227592652D58BBF3D52e34261dF8b354D0;
-
   // https://etherscan.io/address/0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3
   address internal constant weETH_ORACLE = 0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3;
 
@@ -129,9 +122,6 @@ library AaveV3EthereumEtherFiAssets {
 
   // https://etherscan.io/address/0x9355032d747f1e08F8720CD01950E652eE15cdB7
   address internal constant USDC_V_TOKEN = 0x9355032d747f1e08F8720CD01950E652eE15cdB7;
-
-  // https://etherscan.io/address/0x7157fD098fd11fD9BB8C0a39d8a3Eb57e3f8F079
-  address internal constant USDC_S_TOKEN = 0x7157fD098fd11fD9BB8C0a39d8a3Eb57e3f8F079;
 
   // https://etherscan.io/address/0x736bF902680e68989886e9807CD7Db4B3E015d3C
   address internal constant USDC_ORACLE = 0x736bF902680e68989886e9807CD7Db4B3E015d3C;
@@ -151,9 +141,6 @@ library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0xD2cf07dEE40d3D530D15b88d689f5cd97A31FC3D
   address internal constant PYUSD_V_TOKEN = 0xD2cf07dEE40d3D530D15b88d689f5cd97A31FC3D;
 
-  // https://etherscan.io/address/0xba47EDC94d060040ed17fB5c5503DD227CE207AE
-  address internal constant PYUSD_S_TOKEN = 0xba47EDC94d060040ed17fB5c5503DD227CE207AE;
-
   // https://etherscan.io/address/0x150bAe7Ce224555D39AfdBc6Cb4B8204E594E022
   address internal constant PYUSD_ORACLE = 0x150bAe7Ce224555D39AfdBc6Cb4B8204E594E022;
 
@@ -171,9 +158,6 @@ library AaveV3EthereumEtherFiAssets {
 
   // https://etherscan.io/address/0xfd3aDA5AAbdc6531C7C2AC46c00eBf870f5a0E6B
   address internal constant FRAX_V_TOKEN = 0xfd3aDA5AAbdc6531C7C2AC46c00eBf870f5a0E6B;
-
-  // https://etherscan.io/address/0x6789a5d8103f63b3702F779217F0a7D262F18331
-  address internal constant FRAX_S_TOKEN = 0x6789a5d8103f63b3702F779217F0a7D262F18331;
 
   // https://etherscan.io/address/0x45D270263BBee500CF8adcf2AbC0aC227097b036
   address internal constant FRAX_ORACLE = 0x45D270263BBee500CF8adcf2AbC0aC227097b036;

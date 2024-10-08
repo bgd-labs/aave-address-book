@@ -51,10 +51,6 @@ library AaveV3PolygonZkEvm {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c;
 
-  // https://zkevm.polygonscan.com/address/0x96086C25d13943C80Ff9a19791a40Df6aFC08328
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x96086C25d13943C80Ff9a19791a40Df6aFC08328;
-
   // https://zkevm.polygonscan.com/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
   address internal constant EMISSION_MANAGER = 0xeb0a051be10228213BAEb449db63719d6742F7c4;
 

@@ -51,10 +51,6 @@ library AaveV3BNB {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x777fBA024bA1228fDa76149A4ff8B23475ed057D;
 
-  // https://bscscan.com/address/0xb172a90A7C238969CE9B27cc19D13b60A91e7F00
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0xb172a90A7C238969CE9B27cc19D13b60A91e7F00;
-
   // https://bscscan.com/address/0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85
   address internal constant EMISSION_MANAGER = 0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85;
 
@@ -115,9 +111,6 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0xE20dBC7119c635B1B51462f844861258770e0699
   address internal constant Cake_V_TOKEN = 0xE20dBC7119c635B1B51462f844861258770e0699;
 
-  // https://bscscan.com/address/0x57e95511de39890D3e782df4b19F0D97A05DF64A
-  address internal constant Cake_S_TOKEN = 0x57e95511de39890D3e782df4b19F0D97A05DF64A;
-
   // https://bscscan.com/address/0xB6064eD41d4f67e353768aA239cA86f4F73665a1
   address internal constant Cake_ORACLE = 0xB6064eD41d4f67e353768aA239cA86f4F73665a1;
 
@@ -126,7 +119,7 @@ library AaveV3BNBAssets {
     0x51D86C833fC4F300196F028FEaC899a94eb82eFb;
 
   // https://bscscan.com/address/0x3854354CE3681da1D7F550073061E92a4a7d1B27
-  address internal constant Cake_STATA_TOKEN = 0x3854354CE3681da1D7F550073061E92a4a7d1B27;
+  address internal constant Cake_STATIC_A_TOKEN = 0x3854354CE3681da1D7F550073061E92a4a7d1B27;
 
   // https://bscscan.com/address/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c
   address internal constant WBNB_UNDERLYING = 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
@@ -139,9 +132,6 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0x0E76414d433ddfe8004d2A7505d218874875a996
   address internal constant WBNB_V_TOKEN = 0x0E76414d433ddfe8004d2A7505d218874875a996;
 
-  // https://bscscan.com/address/0x5cc46d2b1103aB23CFD63eF8631480bbf4eB40FE
-  address internal constant WBNB_S_TOKEN = 0x5cc46d2b1103aB23CFD63eF8631480bbf4eB40FE;
-
   // https://bscscan.com/address/0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE
   address internal constant WBNB_ORACLE = 0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE;
 
@@ -150,7 +140,7 @@ library AaveV3BNBAssets {
     0x51D86C833fC4F300196F028FEaC899a94eb82eFb;
 
   // https://bscscan.com/address/0x436baCb4C66583de4Cb16e13a1A0D9A3075DE425
-  address internal constant WBNB_STATA_TOKEN = 0x436baCb4C66583de4Cb16e13a1A0D9A3075DE425;
+  address internal constant WBNB_STATIC_A_TOKEN = 0x436baCb4C66583de4Cb16e13a1A0D9A3075DE425;
 
   // https://bscscan.com/address/0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c
   address internal constant BTCB_UNDERLYING = 0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c;
@@ -163,9 +153,6 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0x7b1E82F4f542fbB25D64c5523Fe3e44aBe4F2702
   address internal constant BTCB_V_TOKEN = 0x7b1E82F4f542fbB25D64c5523Fe3e44aBe4F2702;
 
-  // https://bscscan.com/address/0x9Ef6D76740713C674A6e4f38B863E62D10965053
-  address internal constant BTCB_S_TOKEN = 0x9Ef6D76740713C674A6e4f38B863E62D10965053;
-
   // https://bscscan.com/address/0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf
   address internal constant BTCB_ORACLE = 0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf;
 
@@ -174,7 +161,7 @@ library AaveV3BNBAssets {
     0x51D86C833fC4F300196F028FEaC899a94eb82eFb;
 
   // https://bscscan.com/address/0x1F66b530084079d35478A069d9c4424F9c9C320c
-  address internal constant BTCB_STATA_TOKEN = 0x1F66b530084079d35478A069d9c4424F9c9C320c;
+  address internal constant BTCB_STATIC_A_TOKEN = 0x1F66b530084079d35478A069d9c4424F9c9C320c;
 
   // https://bscscan.com/address/0x2170Ed0880ac9A755fd29B2688956BD959F933F8
   address internal constant ETH_UNDERLYING = 0x2170Ed0880ac9A755fd29B2688956BD959F933F8;
@@ -187,9 +174,6 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0x8FDea7891b4D6dbdc746309245B316aF691A636C
   address internal constant ETH_V_TOKEN = 0x8FDea7891b4D6dbdc746309245B316aF691A636C;
 
-  // https://bscscan.com/address/0xa8327EE1858E06983af6690d24e77774807109d4
-  address internal constant ETH_S_TOKEN = 0xa8327EE1858E06983af6690d24e77774807109d4;
-
   // https://bscscan.com/address/0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e
   address internal constant ETH_ORACLE = 0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e;
 
@@ -197,7 +181,7 @@ library AaveV3BNBAssets {
   address internal constant ETH_INTEREST_RATE_STRATEGY = 0x51D86C833fC4F300196F028FEaC899a94eb82eFb;
 
   // https://bscscan.com/address/0x52077433fB7053D747E2846aD0C18ff5015C368E
-  address internal constant ETH_STATA_TOKEN = 0x52077433fB7053D747E2846aD0C18ff5015C368E;
+  address internal constant ETH_STATIC_A_TOKEN = 0x52077433fB7053D747E2846aD0C18ff5015C368E;
 
   // https://bscscan.com/address/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d
   address internal constant USDC_UNDERLYING = 0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d;
@@ -210,9 +194,6 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0xcDBBEd5606d9c5C98eEedd67933991dC17F0c68d
   address internal constant USDC_V_TOKEN = 0xcDBBEd5606d9c5C98eEedd67933991dC17F0c68d;
 
-  // https://bscscan.com/address/0xCcC260D9778F900eAd566Fa2E1D622E667677653
-  address internal constant USDC_S_TOKEN = 0xCcC260D9778F900eAd566Fa2E1D622E667677653;
-
   // https://bscscan.com/address/0xaFcFF74AE956f4c23c27Db49659D4a7F350415C1
   address internal constant USDC_ORACLE = 0xaFcFF74AE956f4c23c27Db49659D4a7F350415C1;
 
@@ -221,7 +202,7 @@ library AaveV3BNBAssets {
     0x51D86C833fC4F300196F028FEaC899a94eb82eFb;
 
   // https://bscscan.com/address/0x3906cDdfb781f02B21f21BD81ed7Fd8DC37075E1
-  address internal constant USDC_STATA_TOKEN = 0x3906cDdfb781f02B21f21BD81ed7Fd8DC37075E1;
+  address internal constant USDC_STATIC_A_TOKEN = 0x3906cDdfb781f02B21f21BD81ed7Fd8DC37075E1;
 
   // https://bscscan.com/address/0x55d398326f99059fF775485246999027B3197955
   address internal constant USDT_UNDERLYING = 0x55d398326f99059fF775485246999027B3197955;
@@ -234,9 +215,6 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0xF8bb2Be50647447Fb355e3a77b81be4db64107cd
   address internal constant USDT_V_TOKEN = 0xF8bb2Be50647447Fb355e3a77b81be4db64107cd;
 
-  // https://bscscan.com/address/0xB735D922a36d4337f561CE433594727e1bc8bD01
-  address internal constant USDT_S_TOKEN = 0xB735D922a36d4337f561CE433594727e1bc8bD01;
-
   // https://bscscan.com/address/0x0F682319Ed4A240b7a2599A48C965049515D9bC3
   address internal constant USDT_ORACLE = 0x0F682319Ed4A240b7a2599A48C965049515D9bC3;
 
@@ -245,7 +223,7 @@ library AaveV3BNBAssets {
     0x51D86C833fC4F300196F028FEaC899a94eb82eFb;
 
   // https://bscscan.com/address/0x0471D185cc7Be61E154277cAB2396cD397663da6
-  address internal constant USDT_STATA_TOKEN = 0x0471D185cc7Be61E154277cAB2396cD397663da6;
+  address internal constant USDT_STATIC_A_TOKEN = 0x0471D185cc7Be61E154277cAB2396cD397663da6;
 
   // https://bscscan.com/address/0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409
   address internal constant FDUSD_UNDERLYING = 0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409;
@@ -258,9 +236,6 @@ library AaveV3BNBAssets {
   // https://bscscan.com/address/0xE628B8a123e6037f1542e662B9F55141a16945C8
   address internal constant FDUSD_V_TOKEN = 0xE628B8a123e6037f1542e662B9F55141a16945C8;
 
-  // https://bscscan.com/address/0x5543d347bfae77A5FF913e589aB6D6ad520f1C73
-  address internal constant FDUSD_S_TOKEN = 0x5543d347bfae77A5FF913e589aB6D6ad520f1C73;
-
   // https://bscscan.com/address/0x60a117Fa5bAbee4d645884fB11E413Da4F893b6D
   address internal constant FDUSD_ORACLE = 0x60a117Fa5bAbee4d645884fB11E413Da4F893b6D;
 
@@ -269,7 +244,7 @@ library AaveV3BNBAssets {
     0x51D86C833fC4F300196F028FEaC899a94eb82eFb;
 
   // https://bscscan.com/address/0x4d074aAa0821073dA827f7bf6a02cF905b394ed0
-  address internal constant FDUSD_STATA_TOKEN = 0x4d074aAa0821073dA827f7bf6a02cF905b394ed0;
+  address internal constant FDUSD_STATIC_A_TOKEN = 0x4d074aAa0821073dA827f7bf6a02cF905b394ed0;
 }
 
 library AaveV3BNBEModes {

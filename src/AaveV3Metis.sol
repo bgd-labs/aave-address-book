@@ -54,10 +54,6 @@ library AaveV3Metis {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f;
 
-  // https://explorer.metis.io/address/0x52aC2476Fc6F788B4c5A9B12Cfcb7fDB163955f4
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x52aC2476Fc6F788B4c5A9B12Cfcb7fDB163955f4;
-
   // https://explorer.metis.io/address/0xfDb2580A1ac4CDc67E4236738b28af59e2022Dd2
   address internal constant EMISSION_MANAGER = 0xfDb2580A1ac4CDc67E4236738b28af59e2022Dd2;
 
@@ -105,9 +101,6 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x13Bd89aF338f3c7eAE9a75852fC2F1ca28B4DDbF
   address internal constant mDAI_V_TOKEN = 0x13Bd89aF338f3c7eAE9a75852fC2F1ca28B4DDbF;
 
-  // https://explorer.metis.io/address/0xf1cd706E177F3AEa620c722Dc436B5a2066E4C68
-  address internal constant mDAI_S_TOKEN = 0xf1cd706E177F3AEa620c722Dc436B5a2066E4C68;
-
   // https://explorer.metis.io/address/0xB3721282cd62Ba8F7bB02Cb843F3a34f9e109ef8
   address internal constant mDAI_ORACLE = 0xB3721282cd62Ba8F7bB02Cb843F3a34f9e109ef8;
 
@@ -116,7 +109,7 @@ library AaveV3MetisAssets {
     0xE263434d0c71Ff6EB089034F2aFf89e9f6F714E8;
 
   // https://explorer.metis.io/address/0x66a2E4cff95BDE6403Ed5541B396aA0B171e5509
-  address internal constant mDAI_STATA_TOKEN = 0x66a2E4cff95BDE6403Ed5541B396aA0B171e5509;
+  address internal constant mDAI_STATIC_A_TOKEN = 0x66a2E4cff95BDE6403Ed5541B396aA0B171e5509;
 
   // https://explorer.metis.io/address/0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000
   address internal constant Metis_UNDERLYING = 0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000;
@@ -129,9 +122,6 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x0110174183e13D5Ea59D7512226c5D5A47bA2c40
   address internal constant Metis_V_TOKEN = 0x0110174183e13D5Ea59D7512226c5D5A47bA2c40;
 
-  // https://explorer.metis.io/address/0xeF547E238d689BAa811E597105A596bBE2Fe0761
-  address internal constant Metis_S_TOKEN = 0xeF547E238d689BAa811E597105A596bBE2Fe0761;
-
   // https://explorer.metis.io/address/0xD4a5Bb03B5D66d9bf81507379302Ac2C2DFDFa6D
   address internal constant Metis_ORACLE = 0xD4a5Bb03B5D66d9bf81507379302Ac2C2DFDFa6D;
 
@@ -140,7 +130,7 @@ library AaveV3MetisAssets {
     0xE263434d0c71Ff6EB089034F2aFf89e9f6F714E8;
 
   // https://explorer.metis.io/address/0x5DE732A094A0ceF0eBFEcF0A916bDAB29650a784
-  address internal constant Metis_STATA_TOKEN = 0x5DE732A094A0ceF0eBFEcF0A916bDAB29650a784;
+  address internal constant Metis_STATIC_A_TOKEN = 0x5DE732A094A0ceF0eBFEcF0A916bDAB29650a784;
 
   // https://explorer.metis.io/address/0xEA32A96608495e54156Ae48931A7c20f0dcc1a21
   address internal constant mUSDC_UNDERLYING = 0xEA32A96608495e54156Ae48931A7c20f0dcc1a21;
@@ -153,9 +143,6 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x571171a7EF1e3c8c83d47EF1a50E225E9c351380
   address internal constant mUSDC_V_TOKEN = 0x571171a7EF1e3c8c83d47EF1a50E225E9c351380;
 
-  // https://explorer.metis.io/address/0x81aC531A7CA8Bdaeb571d8d948e29481A35495C8
-  address internal constant mUSDC_S_TOKEN = 0x81aC531A7CA8Bdaeb571d8d948e29481A35495C8;
-
   // https://explorer.metis.io/address/0xF2acD6aE4fcf662161eA354dA844f224bf91FF8c
   address internal constant mUSDC_ORACLE = 0xF2acD6aE4fcf662161eA354dA844f224bf91FF8c;
 
@@ -164,7 +151,7 @@ library AaveV3MetisAssets {
     0xE263434d0c71Ff6EB089034F2aFf89e9f6F714E8;
 
   // https://explorer.metis.io/address/0xb24451C231C6e6A60aC46f45E98a267caae898f4
-  address internal constant mUSDC_STATA_TOKEN = 0xb24451C231C6e6A60aC46f45E98a267caae898f4;
+  address internal constant mUSDC_STATIC_A_TOKEN = 0xb24451C231C6e6A60aC46f45E98a267caae898f4;
 
   // https://explorer.metis.io/address/0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC
   address internal constant mUSDT_UNDERLYING = 0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC;
@@ -177,9 +164,6 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x6B45DcE8aF4fE5Ab3bFCF030d8fB57718eAB54e5
   address internal constant mUSDT_V_TOKEN = 0x6B45DcE8aF4fE5Ab3bFCF030d8fB57718eAB54e5;
 
-  // https://explorer.metis.io/address/0xb4984c08984776074fB9BB78fFE24e9F1E97CD3F
-  address internal constant mUSDT_S_TOKEN = 0xb4984c08984776074fB9BB78fFE24e9F1E97CD3F;
-
   // https://explorer.metis.io/address/0xD1D7DCBDE72916646A7F8AcE6Ad8C5179D8ddFbB
   address internal constant mUSDT_ORACLE = 0xD1D7DCBDE72916646A7F8AcE6Ad8C5179D8ddFbB;
 
@@ -188,7 +172,7 @@ library AaveV3MetisAssets {
     0xE263434d0c71Ff6EB089034F2aFf89e9f6F714E8;
 
   // https://explorer.metis.io/address/0xAAea6F041425B813760dA201d08d46487034A266
-  address internal constant mUSDT_STATA_TOKEN = 0xAAea6F041425B813760dA201d08d46487034A266;
+  address internal constant mUSDT_STATIC_A_TOKEN = 0xAAea6F041425B813760dA201d08d46487034A266;
 
   // https://explorer.metis.io/address/0x420000000000000000000000000000000000000A
   address internal constant WETH_UNDERLYING = 0x420000000000000000000000000000000000000A;
@@ -201,9 +185,6 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x8Bb19e3DD277a73D4A95EE434F14cE4B92898421
   address internal constant WETH_V_TOKEN = 0x8Bb19e3DD277a73D4A95EE434F14cE4B92898421;
 
-  // https://explorer.metis.io/address/0x38cFF1C1dFE9e2566F11CB717Ac43fa56fEeCFbd
-  address internal constant WETH_S_TOKEN = 0x38cFF1C1dFE9e2566F11CB717Ac43fa56fEeCFbd;
-
   // https://explorer.metis.io/address/0x3BBe70e2F96c87aEce7F67A2b0178052f62E37fE
   address internal constant WETH_ORACLE = 0x3BBe70e2F96c87aEce7F67A2b0178052f62E37fE;
 
@@ -212,7 +193,7 @@ library AaveV3MetisAssets {
     0xE263434d0c71Ff6EB089034F2aFf89e9f6F714E8;
 
   // https://explorer.metis.io/address/0x2f1606864d6322c54b50a1762D4a1ca67f42d23d
-  address internal constant WETH_STATA_TOKEN = 0x2f1606864d6322c54b50a1762D4a1ca67f42d23d;
+  address internal constant WETH_STATIC_A_TOKEN = 0x2f1606864d6322c54b50a1762D4a1ca67f42d23d;
 }
 
 library AaveV3MetisEModes {

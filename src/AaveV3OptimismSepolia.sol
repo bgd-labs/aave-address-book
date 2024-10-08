@@ -51,10 +51,6 @@ library AaveV3OptimismSepolia {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x777fBA024bA1228fDa76149A4ff8B23475ed057D;
 
-  // https://optimism-sepolia.blockscout.com/address/0x29B8Edc8a5158e8eBD7Dea3473517AB079260a0b
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x29B8Edc8a5158e8eBD7Dea3473517AB079260a0b;
-
   // https://optimism-sepolia.blockscout.com/address/0xB438D5376ADB4b31D0103E659f1673eAD684BAD9
   address internal constant EMISSION_MANAGER = 0xB438D5376ADB4b31D0103E659f1673eAD684BAD9;
 
@@ -96,9 +92,6 @@ library AaveV3OptimismSepoliaAssets {
   // https://optimism-sepolia.blockscout.com/address/0x0c0fce05F2314540EcB095bF4D069e5E0ED90fF8
   address internal constant USDC_V_TOKEN = 0x0c0fce05F2314540EcB095bF4D069e5E0ED90fF8;
 
-  // https://optimism-sepolia.blockscout.com/address/0x436D82d905b014926a2375C576500B6fea0D2496
-  address internal constant USDC_S_TOKEN = 0x436D82d905b014926a2375C576500B6fea0D2496;
-
   // https://optimism-sepolia.blockscout.com/address/0x6e44e50E3cc14DD16e01C590DC1d7020cb36eD4C
   address internal constant USDC_ORACLE = 0x6e44e50E3cc14DD16e01C590DC1d7020cb36eD4C;
 
@@ -116,9 +109,6 @@ library AaveV3OptimismSepoliaAssets {
 
   // https://optimism-sepolia.blockscout.com/address/0x9D881f67F20B49243c98f53d2B9E91E39d02Ae09
   address internal constant WETH_V_TOKEN = 0x9D881f67F20B49243c98f53d2B9E91E39d02Ae09;
-
-  // https://optimism-sepolia.blockscout.com/address/0x5CBc43c339F5202D2dcB59583D33cA8498b75031
-  address internal constant WETH_S_TOKEN = 0x5CBc43c339F5202D2dcB59583D33cA8498b75031;
 
   // https://optimism-sepolia.blockscout.com/address/0x61Ec26aA57019C486B10502285c5A3D4A4750AD7
   address internal constant WETH_ORACLE = 0x61Ec26aA57019C486B10502285c5A3D4A4750AD7;

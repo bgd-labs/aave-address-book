@@ -51,15 +51,11 @@ library AaveV3BaseSepolia {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x95eeA7A0b16C8ee3A923D3F5ebe6d77C0332084c;
 
-  // https://sepolia.basescan.org/address/0x4dF950Ff1352B22dA739c33C35C6f0c81B5d9d19
-  address internal constant DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x4dF950Ff1352B22dA739c33C35C6f0c81B5d9d19;
-
   // https://sepolia.basescan.org/address/0x1F95c29C9E686e4f438ED5D13cF0B7430B9F39ec
   address internal constant EMISSION_MANAGER = 0x1F95c29C9E686e4f438ED5D13cF0B7430B9F39ec;
 
   // https://sepolia.basescan.org/address/0xAE252DA024783d1813C890d82642bbED120c3093
-  address internal constant STATIC_A_TOKEN_FACTORY = 0xAE252DA024783d1813C890d82642bbED120c3093;
+  address internal constant STATA_FACTORY = 0xAE252DA024783d1813C890d82642bbED120c3093;
 
   // https://sepolia.basescan.org/address/0x3d2ee1AB8C3a597cDf80273C684dE0036481bE3a
   address internal constant CONFIG_ENGINE = 0x3d2ee1AB8C3a597cDf80273C684dE0036481bE3a;
@@ -81,7 +77,61 @@ library AaveV3BaseSepolia {
   address internal constant WETH_GATEWAY = 0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461;
 }
 
-library AaveV3BaseSepoliaAssets {}
+library AaveV3BaseSepoliaAssets {
+  // https://sepolia.basescan.org/address/0x036CbD53842c5426634e7929541eC2318f3dCF7e
+  address internal constant USDC_UNDERLYING = 0x036CbD53842c5426634e7929541eC2318f3dCF7e;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://sepolia.basescan.org/address/0xfE45Bf4dEF7223Ab1Bf83cA17a4462Ef1647F7FF
+  address internal constant USDC_A_TOKEN = 0xfE45Bf4dEF7223Ab1Bf83cA17a4462Ef1647F7FF;
+
+  // https://sepolia.basescan.org/address/0x5E531B00C86C2D0014020183DaFE7c17C4aA90D8
+  address internal constant USDC_V_TOKEN = 0x5E531B00C86C2D0014020183DaFE7c17C4aA90D8;
+
+  // https://sepolia.basescan.org/address/0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165
+  address internal constant USDC_ORACLE = 0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165;
+
+  // https://sepolia.basescan.org/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
+
+  // https://sepolia.basescan.org/address/0x808456652fdb597867f38412077A9182bf77359F
+  address internal constant EURC_UNDERLYING = 0x808456652fdb597867f38412077A9182bf77359F;
+
+  uint8 internal constant EURC_DECIMALS = 6;
+
+  // https://sepolia.basescan.org/address/0x70B607b3cdED31635779781d42540580D4Ac18F4
+  address internal constant EURC_A_TOKEN = 0x70B607b3cdED31635779781d42540580D4Ac18F4;
+
+  // https://sepolia.basescan.org/address/0xEa1b67213437E753656B209d1d3d16c1DFE424fd
+  address internal constant EURC_V_TOKEN = 0xEa1b67213437E753656B209d1d3d16c1DFE424fd;
+
+  // https://sepolia.basescan.org/address/0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165
+  address internal constant EURC_ORACLE = 0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165;
+
+  // https://sepolia.basescan.org/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
+  address internal constant EURC_INTEREST_RATE_STRATEGY =
+    0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
+
+  // https://sepolia.basescan.org/address/0x4200000000000000000000000000000000000006
+  address internal constant WETH_UNDERLYING = 0x4200000000000000000000000000000000000006;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://sepolia.basescan.org/address/0x6dE9f4b8d4A52D15F1372ef463e27AeAa8a3FdF4
+  address internal constant WETH_A_TOKEN = 0x6dE9f4b8d4A52D15F1372ef463e27AeAa8a3FdF4;
+
+  // https://sepolia.basescan.org/address/0x80bEA6A08B3c2df41B48F27c983C3238f1144093
+  address internal constant WETH_V_TOKEN = 0x80bEA6A08B3c2df41B48F27c983C3238f1144093;
+
+  // https://sepolia.basescan.org/address/0x4aDC67696bA383F43DD60A9e78F2C97Fbbfc7cb1
+  address internal constant WETH_ORACLE = 0x4aDC67696bA383F43DD60A9e78F2C97Fbbfc7cb1;
+
+  // https://sepolia.basescan.org/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
+}
 
 library AaveV3BaseSepoliaEModes {
   uint8 internal constant NONE = 0;

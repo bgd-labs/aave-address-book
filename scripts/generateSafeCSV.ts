@@ -1,6 +1,6 @@
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {writeFileSync} from 'fs';
 import {flattenedAddresses} from '../ui/src/utils/getAddresses';
+import {CHAIN_ID_CLIENT_MAP} from './clients';
 
 const addresses = flattenedAddresses.filter(
   (item) => !CHAIN_ID_CLIENT_MAP[item.chainId].chain?.testnet,
