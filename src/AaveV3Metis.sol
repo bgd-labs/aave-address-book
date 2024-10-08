@@ -13,15 +13,9 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57
   IPool internal constant POOL = IPool(0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57);
 
-  // https://explorer.metis.io/address/0xC89fBD2a15e88A72A76428DA00dDBBE47cb4EBB0
-  address internal constant POOL_IMPL = 0xC89fBD2a15e88A72A76428DA00dDBBE47cb4EBB0;
-
   // https://explorer.metis.io/address/0x69FEE8F261E004453BE0800BC9039717528645A6
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x69FEE8F261E004453BE0800BC9039717528645A6);
-
-  // https://explorer.metis.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://explorer.metis.io/address/0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e
   IAaveOracle internal constant ORACLE = IAaveOracle(0x38D36e85E47eA6ff0d18B0adF12E5fC8984A6f8e);
@@ -29,23 +23,32 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x2B5EA1604BAbb7B730120950Cb13951f3525828A
   address internal constant PRICE_ORACLE_SENTINEL = 0x2B5EA1604BAbb7B730120950Cb13951f3525828A;
 
-  // https://explorer.metis.io/address/0xC01372469A17b6716A38F00c277533917B6859c0
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xC01372469A17b6716A38F00c277533917B6859c0);
+  // https://explorer.metis.io/address/0x6fD45D32375d5aDB8D76275A3932c740F03a8718
+  address internal constant ACL_ADMIN = 0x6fD45D32375d5aDB8D76275A3932c740F03a8718;
 
   // https://explorer.metis.io/address/0xcDCb65fc657B701a5100a12eFB663978E7e8fFB8
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xcDCb65fc657B701a5100a12eFB663978E7e8fFB8);
 
-  // https://explorer.metis.io/address/0x6fD45D32375d5aDB8D76275A3932c740F03a8718
-  address internal constant ACL_ADMIN = 0x6fD45D32375d5aDB8D76275A3932c740F03a8718;
+  // https://explorer.metis.io/address/0xC01372469A17b6716A38F00c277533917B6859c0
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0xC01372469A17b6716A38F00c277533917B6859c0);
 
-  // https://explorer.metis.io/address/0xB5b64c7E00374e766272f8B442Cd261412D4b118
-  ICollector internal constant COLLECTOR = ICollector(0xB5b64c7E00374e766272f8B442Cd261412D4b118);
+  // https://explorer.metis.io/address/0xC89fBD2a15e88A72A76428DA00dDBBE47cb4EBB0
+  address internal constant POOL_IMPL = 0xC89fBD2a15e88A72A76428DA00dDBBE47cb4EBB0;
+
+  // https://explorer.metis.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://explorer.metis.io/address/0x30C1b8F0490fa0908863d6Cbd2E36400b4310A6B
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x30C1b8F0490fa0908863d6Cbd2E36400b4310A6B;
+
+  // https://explorer.metis.io/address/0xfDb2580A1ac4CDc67E4236738b28af59e2022Dd2
+  address internal constant EMISSION_MANAGER = 0xfDb2580A1ac4CDc67E4236738b28af59e2022Dd2;
+
+  // https://explorer.metis.io/address/0xB5b64c7E00374e766272f8B442Cd261412D4b118
+  ICollector internal constant COLLECTOR = ICollector(0xB5b64c7E00374e766272f8B442Cd261412D4b118);
 
   // https://explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x246405C70461f93513C74606815615c24c5C8C79;
@@ -53,9 +56,6 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f;
-
-  // https://explorer.metis.io/address/0xfDb2580A1ac4CDc67E4236738b28af59e2022Dd2
-  address internal constant EMISSION_MANAGER = 0xfDb2580A1ac4CDc67E4236738b28af59e2022Dd2;
 
   // https://explorer.metis.io/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
@@ -196,9 +196,7 @@ library AaveV3MetisAssets {
   address internal constant WETH_STATIC_A_TOKEN = 0x2f1606864d6322c54b50a1762D4a1ca67f42d23d;
 }
 
-library AaveV3MetisEModes {
-  uint8 internal constant NONE = 0;
-}
+library AaveV3MetisEModes {}
 
 library AaveV3MetisExternalLibraries {
   // https://explorer.metis.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

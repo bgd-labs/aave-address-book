@@ -2100,6 +2100,7 @@
       "decimals": 18,
       "symbol": "aEthMKR",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/amkr.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2"
@@ -6198,6 +6199,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 50 },
-  "timestamp": "2024-10-08T18:32:02.995Z"
+  "version": { "major": 3, "minor": 0, "patch": 52 },
+  "timestamp": "2024-10-08T21:59:17.581Z"
 }

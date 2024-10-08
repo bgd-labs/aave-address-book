@@ -13,36 +13,39 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
-  // https://snowtrace.io/address/0x1f69d4700B34A1D9F92E55235df414FcC02A8306
-  address internal constant POOL_IMPL = 0x1f69d4700B34A1D9F92E55235df414FcC02A8306;
-
   // https://snowtrace.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
 
-  // https://snowtrace.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
-
   // https://snowtrace.io/address/0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C
   IAaveOracle internal constant ORACLE = IAaveOracle(0xEBd36016B3eD09D4693Ed4251c67Bd858c3c7C9C);
 
-  // https://snowtrace.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
+  // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
+  address internal constant ACL_ADMIN = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 
   // https://snowtrace.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
-  address internal constant ACL_ADMIN = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
+  // https://snowtrace.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
 
-  // https://snowtrace.io/address/0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0
-  ICollector internal constant COLLECTOR = ICollector(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0);
+  // https://snowtrace.io/address/0x1f69d4700B34A1D9F92E55235df414FcC02A8306
+  address internal constant POOL_IMPL = 0x1f69d4700B34A1D9F92E55235df414FcC02A8306;
+
+  // https://snowtrace.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://snowtrace.io/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;
+
+  // https://snowtrace.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
+  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
+
+  // https://snowtrace.io/address/0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0
+  ICollector internal constant COLLECTOR = ICollector(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0);
 
   // https://snowtrace.io/address/0x1E81af09001aD208BDa68FF022544dB2102A752d
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0x1E81af09001aD208BDa68FF022544dB2102A752d;
@@ -50,9 +53,6 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24;
-
-  // https://snowtrace.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
-  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
   // https://snowtrace.io/address/0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5;
@@ -357,14 +357,6 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0x34d768cc830c32DcD743321c09A2A702651bF9a2
   address internal constant BTCb_STATIC_A_TOKEN = 0x34d768cc830c32DcD743321c09A2A702651bF9a2;
-}
-
-library AaveV3AvalancheEModes {
-  uint8 internal constant NONE = 0;
-
-  uint8 internal constant STABLECOINS = 1;
-
-  uint8 internal constant AVAX_CORRELATED = 2;
 }
 
 library AaveV3AvalancheExternalLibraries {

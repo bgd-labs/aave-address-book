@@ -13,15 +13,9 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
-  // https://arbiscan.io/address/0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4
-  address internal constant POOL_IMPL = 0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4;
-
   // https://arbiscan.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
-
-  // https://arbiscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://arbiscan.io/address/0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7
   IAaveOracle internal constant ORACLE = IAaveOracle(0xb56c2F0B653B2e0b10C9b928C8580Ac5Df02C7C7);
@@ -29,23 +23,32 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b
   address internal constant PRICE_ORACLE_SENTINEL = 0x7A9ff54A6eE4a21223036890bB8c4ea2D62c686b;
 
-  // https://arbiscan.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
+  // https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327
+  address internal constant ACL_ADMIN = 0xFF1137243698CaA18EE364Cc966CF0e02A4e6327;
 
   // https://arbiscan.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://arbiscan.io/address/0xFF1137243698CaA18EE364Cc966CF0e02A4e6327
-  address internal constant ACL_ADMIN = 0xFF1137243698CaA18EE364Cc966CF0e02A4e6327;
+  // https://arbiscan.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
 
-  // https://arbiscan.io/address/0x053D55f9B5AF8694c503EB288a1B7E552f590710
-  ICollector internal constant COLLECTOR = ICollector(0x053D55f9B5AF8694c503EB288a1B7E552f590710);
+  // https://arbiscan.io/address/0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4
+  address internal constant POOL_IMPL = 0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4;
+
+  // https://arbiscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://arbiscan.io/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;
+
+  // https://arbiscan.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
+  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
+
+  // https://arbiscan.io/address/0x053D55f9B5AF8694c503EB288a1B7E552f590710
+  ICollector internal constant COLLECTOR = ICollector(0x053D55f9B5AF8694c503EB288a1B7E552f590710);
 
   // https://arbiscan.io/address/0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a;
@@ -53,9 +56,6 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
-
-  // https://arbiscan.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
-  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
   // https://arbiscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
@@ -461,14 +461,6 @@ library AaveV3ArbitrumAssets {
 
   // https://arbiscan.io/address/0xD9FBA68D89178e3538e708939332c79efC540179
   address internal constant GHO_STATIC_A_TOKEN = 0xD9FBA68D89178e3538e708939332c79efC540179;
-}
-
-library AaveV3ArbitrumEModes {
-  uint8 internal constant NONE = 0;
-
-  uint8 internal constant STABLECOINS = 1;
-
-  uint8 internal constant ETH_CORRELATED = 2;
 }
 
 library AaveV3ArbitrumExternalLibraries {

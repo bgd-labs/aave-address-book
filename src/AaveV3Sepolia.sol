@@ -13,36 +13,39 @@ library AaveV3Sepolia {
   // https://sepolia.etherscan.io/address/0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951
   IPool internal constant POOL = IPool(0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951);
 
-  // https://sepolia.etherscan.io/address/0x0562453c3DAFBB5e625483af58f4E6D668c44e19
-  address internal constant POOL_IMPL = 0x0562453c3DAFBB5e625483af58f4E6D668c44e19;
-
   // https://sepolia.etherscan.io/address/0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138);
 
-  // https://sepolia.etherscan.io/address/0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32;
-
   // https://sepolia.etherscan.io/address/0x2da88497588bf89281816106C7259e31AF45a663
   IAaveOracle internal constant ORACLE = IAaveOracle(0x2da88497588bf89281816106C7259e31AF45a663);
 
-  // https://sepolia.etherscan.io/address/0x3e9708d80f7B3e43118013075F7e95CE3AB31F31
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x3e9708d80f7B3e43118013075F7e95CE3AB31F31);
+  // https://sepolia.etherscan.io/address/0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00
+  address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
 
   // https://sepolia.etherscan.io/address/0x7F2bE3b178deeFF716CD6Ff03Ef79A1dFf360ddD
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x7F2bE3b178deeFF716CD6Ff03Ef79A1dFf360ddD);
 
-  // https://sepolia.etherscan.io/address/0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00
-  address internal constant ACL_ADMIN = 0xfA0e305E0f46AB04f00ae6b5f4560d61a2183E00;
+  // https://sepolia.etherscan.io/address/0x3e9708d80f7B3e43118013075F7e95CE3AB31F31
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x3e9708d80f7B3e43118013075F7e95CE3AB31F31);
 
-  // https://sepolia.etherscan.io/address/0x604264f8017fEF3b11B3dD63537CB501560380B5
-  ICollector internal constant COLLECTOR = ICollector(0x604264f8017fEF3b11B3dD63537CB501560380B5);
+  // https://sepolia.etherscan.io/address/0x0562453c3DAFBB5e625483af58f4E6D668c44e19
+  address internal constant POOL_IMPL = 0x0562453c3DAFBB5e625483af58f4E6D668c44e19;
+
+  // https://sepolia.etherscan.io/address/0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32;
 
   // https://sepolia.etherscan.io/address/0x4DA5c4da71C5a167171cC839487536d86e083483
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x4DA5c4da71C5a167171cC839487536d86e083483;
+
+  // https://sepolia.etherscan.io/address/0x098a890BAfDf6FB4ACD24bF107D20EA15D229C62
+  address internal constant EMISSION_MANAGER = 0x098a890BAfDf6FB4ACD24bF107D20EA15D229C62;
+
+  // https://sepolia.etherscan.io/address/0x604264f8017fEF3b11B3dD63537CB501560380B5
+  ICollector internal constant COLLECTOR = ICollector(0x604264f8017fEF3b11B3dD63537CB501560380B5);
 
   // https://sepolia.etherscan.io/address/0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f;
@@ -50,9 +53,6 @@ library AaveV3Sepolia {
   // https://sepolia.etherscan.io/address/0x54bdE009156053108E73E2401aEA755e38f92098
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x54bdE009156053108E73E2401aEA755e38f92098;
-
-  // https://sepolia.etherscan.io/address/0x098a890BAfDf6FB4ACD24bF107D20EA15D229C62
-  address internal constant EMISSION_MANAGER = 0x098a890BAfDf6FB4ACD24bF107D20EA15D229C62;
 
   // https://sepolia.etherscan.io/address/0xC959483DBa39aa9E78757139af0e9a2EDEb3f42D
   address internal constant FAUCET = 0xC959483DBa39aa9E78757139af0e9a2EDEb3f42D;
@@ -260,10 +260,4 @@ library AaveV3SepoliaAssets {
 
   // https://sepolia.etherscan.io/address/0x521247B4d0a51E71DE580dA2cBF99EB40a44b3Bf
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0x521247B4d0a51E71DE580dA2cBF99EB40a44b3Bf;
-}
-
-library AaveV3SepoliaEModes {
-  uint8 internal constant NONE = 0;
-
-  uint8 internal constant STABLECOINS = 1;
 }

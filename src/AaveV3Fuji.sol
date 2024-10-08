@@ -13,36 +13,39 @@ library AaveV3Fuji {
   // https://testnet.snowtrace.io/address/0x8B9b2AF4afB389b4a70A474dfD4AdCD4a302bb40
   IPool internal constant POOL = IPool(0x8B9b2AF4afB389b4a70A474dfD4AdCD4a302bb40);
 
-  // https://testnet.snowtrace.io/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
-  address internal constant POOL_IMPL = 0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
-
   // https://testnet.snowtrace.io/address/0xF9f36C15fBddAF0B64E0D16E4D6852B433a86cbE
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0xF9f36C15fBddAF0B64E0D16E4D6852B433a86cbE);
 
-  // https://testnet.snowtrace.io/address/0x782559e349b084bB7C07c08404aE6E3436cDAE2E
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x782559e349b084bB7C07c08404aE6E3436cDAE2E;
-
   // https://testnet.snowtrace.io/address/0xd36338d0F231446b36008310f1DE0812784ADeBC
   IAaveOracle internal constant ORACLE = IAaveOracle(0xd36338d0F231446b36008310f1DE0812784ADeBC);
 
-  // https://testnet.snowtrace.io/address/0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014);
+  // https://testnet.snowtrace.io/address/0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b
+  address internal constant ACL_ADMIN = 0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b;
 
   // https://testnet.snowtrace.io/address/0xa411Accec7000c52feE9bFeDaDc53E1CEF72d6d4
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa411Accec7000c52feE9bFeDaDc53E1CEF72d6d4);
 
-  // https://testnet.snowtrace.io/address/0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b
-  address internal constant ACL_ADMIN = 0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b;
+  // https://testnet.snowtrace.io/address/0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014);
 
-  // https://testnet.snowtrace.io/address/0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9
-  ICollector internal constant COLLECTOR = ICollector(0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9);
+  // https://testnet.snowtrace.io/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
+  address internal constant POOL_IMPL = 0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
+
+  // https://testnet.snowtrace.io/address/0x782559e349b084bB7C07c08404aE6E3436cDAE2E
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x782559e349b084bB7C07c08404aE6E3436cDAE2E;
 
   // https://testnet.snowtrace.io/address/0x03aFC1Dfb53eae8eB7BE0E8CB6524aa79C3F8578
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x03aFC1Dfb53eae8eB7BE0E8CB6524aa79C3F8578;
+
+  // https://testnet.snowtrace.io/address/0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58
+  address internal constant EMISSION_MANAGER = 0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58;
+
+  // https://testnet.snowtrace.io/address/0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9
+  ICollector internal constant COLLECTOR = ICollector(0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9);
 
   // https://testnet.snowtrace.io/address/0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
@@ -50,9 +53,6 @@ library AaveV3Fuji {
   // https://testnet.snowtrace.io/address/0x21CcaD436A6c762B919dB7cb07C5082a43DB2589
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x21CcaD436A6c762B919dB7cb07C5082a43DB2589;
-
-  // https://testnet.snowtrace.io/address/0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58
-  address internal constant EMISSION_MANAGER = 0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58;
 
   // https://testnet.snowtrace.io/address/0x4058FE01Aa090E0841F4E08f79D2607C4861142E
   address internal constant CONFIG_ENGINE = 0x4058FE01Aa090E0841F4E08f79D2607C4861142E;
@@ -130,9 +130,7 @@ library AaveV3FujiAssets {
     0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461;
 }
 
-library AaveV3FujiEModes {
-  uint8 internal constant NONE = 0;
-}
+library AaveV3FujiEModes {}
 
 library AaveV3FujiExternalLibraries {
   // https://testnet.snowtrace.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

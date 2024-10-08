@@ -90,6 +90,15 @@ export type ReserveData = {
   STATA_TOKEN?: Hex;
 };
 
+export type EMode = {
+  label: string;
+  ltv: number;
+  liquidationThreshold: number;
+  liquidationBonus: number;
+  collateralBitmap: bigint;
+  borrowableBitmap: bigint;
+};
+
 /**
  * @dev config for addresses that belong more to a network then to a specific pool
  */

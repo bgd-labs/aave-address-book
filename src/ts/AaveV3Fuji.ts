@@ -5,41 +5,41 @@ export const POOL_ADDRESSES_PROVIDER = '0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F
 // IPool https://testnet.snowtrace.io/address/0x8B9b2AF4afB389b4a70A474dfD4AdCD4a302bb40
 export const POOL = '0x8B9b2AF4afB389b4a70A474dfD4AdCD4a302bb40';
 
-// https://testnet.snowtrace.io/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
-export const POOL_IMPL = '0xff1DB744F1275f8e04A62A7E5D663575F3a774B6';
-
 // IPoolConfigurator https://testnet.snowtrace.io/address/0xF9f36C15fBddAF0B64E0D16E4D6852B433a86cbE
 export const POOL_CONFIGURATOR = '0xF9f36C15fBddAF0B64E0D16E4D6852B433a86cbE';
-
-// https://testnet.snowtrace.io/address/0x782559e349b084bB7C07c08404aE6E3436cDAE2E
-export const POOL_CONFIGURATOR_IMPL = '0x782559e349b084bB7C07c08404aE6E3436cDAE2E';
 
 // IAaveOracle https://testnet.snowtrace.io/address/0xd36338d0F231446b36008310f1DE0812784ADeBC
 export const ORACLE = '0xd36338d0F231446b36008310f1DE0812784ADeBC';
 
-// IPoolDataProvider https://testnet.snowtrace.io/address/0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014
-export const AAVE_PROTOCOL_DATA_PROVIDER = '0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014';
+// https://testnet.snowtrace.io/address/0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b
+export const ACL_ADMIN = '0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b';
 
 // IACLManager https://testnet.snowtrace.io/address/0xa411Accec7000c52feE9bFeDaDc53E1CEF72d6d4
 export const ACL_MANAGER = '0xa411Accec7000c52feE9bFeDaDc53E1CEF72d6d4';
 
-// https://testnet.snowtrace.io/address/0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b
-export const ACL_ADMIN = '0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b';
+// IPoolDataProvider https://testnet.snowtrace.io/address/0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0xC65cbd1e309Bf0e841Ee6f6E786480598e6a4014';
 
-// ICollector https://testnet.snowtrace.io/address/0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9
-export const COLLECTOR = '0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9';
+// https://testnet.snowtrace.io/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
+export const POOL_IMPL = '0xff1DB744F1275f8e04A62A7E5D663575F3a774B6';
+
+// https://testnet.snowtrace.io/address/0x782559e349b084bB7C07c08404aE6E3436cDAE2E
+export const POOL_CONFIGURATOR_IMPL = '0x782559e349b084bB7C07c08404aE6E3436cDAE2E';
 
 // https://testnet.snowtrace.io/address/0x03aFC1Dfb53eae8eB7BE0E8CB6524aa79C3F8578
 export const DEFAULT_INCENTIVES_CONTROLLER = '0x03aFC1Dfb53eae8eB7BE0E8CB6524aa79C3F8578';
+
+// https://testnet.snowtrace.io/address/0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58
+export const EMISSION_MANAGER = '0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58';
+
+// ICollector https://testnet.snowtrace.io/address/0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9
+export const COLLECTOR = '0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9';
 
 // https://testnet.snowtrace.io/address/0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe
 export const DEFAULT_A_TOKEN_IMPL_REV_1 = '0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe';
 
 // https://testnet.snowtrace.io/address/0x21CcaD436A6c762B919dB7cb07C5082a43DB2589
 export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 = '0x21CcaD436A6c762B919dB7cb07C5082a43DB2589';
-
-// https://testnet.snowtrace.io/address/0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58
-export const EMISSION_MANAGER = '0xa46F32c76cAE9Fd34afB8029dE9c30b7F86bFA58';
 
 // https://testnet.snowtrace.io/address/0x4058FE01Aa090E0841F4E08f79D2607C4861142E
 export const CONFIG_ENGINE = '0x4058FE01Aa090E0841F4E08f79D2607C4861142E';
@@ -63,6 +63,7 @@ export const CHAIN_ID = 43113;
 export const ASSETS = {
   USDC: {
     decimals: 6,
+    id: 0,
     UNDERLYING: '0x5425890298aed601595a70AB815c96711a31Bc65',
     A_TOKEN: '0x9CFcc1B289E59FBe1E769f020C77315DF8473760',
     V_TOKEN: '0x92cb483760299e69d31f59050cfD5937B8730E48',
@@ -71,6 +72,7 @@ export const ASSETS = {
   },
   EURC: {
     decimals: 6,
+    id: 1,
     UNDERLYING: '0x5E44db7996c682E92a960b65AC713a54AD815c6B',
     A_TOKEN: '0xBb51336dAD7A010Ff32656b53233c2C3670cc5B9',
     V_TOKEN: '0x8C776d6d7A6D250Abb1b9Ce22b4E310b95E1ef85',
@@ -79,6 +81,7 @@ export const ASSETS = {
   },
   WAVAX: {
     decimals: 18,
+    id: 2,
     UNDERLYING: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
     A_TOKEN: '0x50902e21C8CfB5f2e45127c1Bbcd6B985119b433',
     V_TOKEN: '0xe7CF4cE189b3a519EE2A41c18338a3bef0f28a9D',
@@ -86,9 +89,7 @@ export const ASSETS = {
     ORACLE: '0x5498BB86BC934c8D34FDA08E81D444153d0D06aD',
   },
 } as const;
-export const E_MODES = {
-  NONE: 0,
-} as const;
+export const E_MODES = {} as const;
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0',
   BORROW_LOGIC: '0x4c52FE2162200bf26c314d7bbd8611699139d553',

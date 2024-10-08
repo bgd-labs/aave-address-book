@@ -21,6 +21,7 @@ export const ABI_INTERFACES = [
   'IAToken',
   'IDefaultInterestRateStrategy',
   'lib/aave-v3-origin/src/contracts/interfaces/IAaveOracle.sol:IAaveOracle',
+  'lib/aave-v3-origin/src/contracts/rewards/interfaces/IRewardsController.sol:IRewardsController',
   'IExecutor',
   'ICrossChainController',
   'IWithGuardian',

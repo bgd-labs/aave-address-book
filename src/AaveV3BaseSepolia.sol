@@ -13,36 +13,39 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0xbE781D7Bdf469f3d94a62Cdcc407aCe106AEcA74
   IPool internal constant POOL = IPool(0xbE781D7Bdf469f3d94a62Cdcc407aCe106AEcA74);
 
-  // https://sepolia.basescan.org/address/0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C
-  address internal constant POOL_IMPL = 0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C;
-
   // https://sepolia.basescan.org/address/0x4200a89Bd036745918889D6dCC5685A4C6F01C24
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x4200a89Bd036745918889D6dCC5685A4C6F01C24);
 
-  // https://sepolia.basescan.org/address/0x9E7DF170E44093d6738057157CA048794B02555d
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x9E7DF170E44093d6738057157CA048794B02555d;
-
   // https://sepolia.basescan.org/address/0x9Ba30437Ba63AA2902319DE1B3f0E25a18826842
   IAaveOracle internal constant ORACLE = IAaveOracle(0x9Ba30437Ba63AA2902319DE1B3f0E25a18826842);
 
-  // https://sepolia.basescan.org/address/0xAF4646B0131af8fc0DC435AF7F7d303Ac131E072
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xAF4646B0131af8fc0DC435AF7F7d303Ac131E072);
+  // https://sepolia.basescan.org/address/0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b
+  address internal constant ACL_ADMIN = 0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b;
 
   // https://sepolia.basescan.org/address/0xb880879303D35a82B1888a4A6d47D2ef0653E4A2
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xb880879303D35a82B1888a4A6d47D2ef0653E4A2);
 
-  // https://sepolia.basescan.org/address/0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b
-  address internal constant ACL_ADMIN = 0x6ec33534BE07d45cc4E02Fbd127F8ed2aE919a6b;
+  // https://sepolia.basescan.org/address/0xAF4646B0131af8fc0DC435AF7F7d303Ac131E072
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0xAF4646B0131af8fc0DC435AF7F7d303Ac131E072);
 
-  // https://sepolia.basescan.org/address/0x67F521ca716dD9413fd2D2AfdEbEE9285289d2cB
-  ICollector internal constant COLLECTOR = ICollector(0x67F521ca716dD9413fd2D2AfdEbEE9285289d2cB);
+  // https://sepolia.basescan.org/address/0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C
+  address internal constant POOL_IMPL = 0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C;
+
+  // https://sepolia.basescan.org/address/0x9E7DF170E44093d6738057157CA048794B02555d
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x9E7DF170E44093d6738057157CA048794B02555d;
 
   // https://sepolia.basescan.org/address/0x294FF52d234a7e09E9642F846702A45337ceB2E2
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x294FF52d234a7e09E9642F846702A45337ceB2E2;
+
+  // https://sepolia.basescan.org/address/0x1F95c29C9E686e4f438ED5D13cF0B7430B9F39ec
+  address internal constant EMISSION_MANAGER = 0x1F95c29C9E686e4f438ED5D13cF0B7430B9F39ec;
+
+  // https://sepolia.basescan.org/address/0x67F521ca716dD9413fd2D2AfdEbEE9285289d2cB
+  ICollector internal constant COLLECTOR = ICollector(0x67F521ca716dD9413fd2D2AfdEbEE9285289d2cB);
 
   // https://sepolia.basescan.org/address/0xA9E3fFb25C369e44862DD3e87Be4420abb879965
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xA9E3fFb25C369e44862DD3e87Be4420abb879965;
@@ -50,9 +53,6 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0x95eeA7A0b16C8ee3A923D3F5ebe6d77C0332084c
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x95eeA7A0b16C8ee3A923D3F5ebe6d77C0332084c;
-
-  // https://sepolia.basescan.org/address/0x1F95c29C9E686e4f438ED5D13cF0B7430B9F39ec
-  address internal constant EMISSION_MANAGER = 0x1F95c29C9E686e4f438ED5D13cF0B7430B9F39ec;
 
   // https://sepolia.basescan.org/address/0xAE252DA024783d1813C890d82642bbED120c3093
   address internal constant STATA_FACTORY = 0xAE252DA024783d1813C890d82642bbED120c3093;
@@ -133,9 +133,7 @@ library AaveV3BaseSepoliaAssets {
     0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
 }
 
-library AaveV3BaseSepoliaEModes {
-  uint8 internal constant NONE = 0;
-}
+library AaveV3BaseSepoliaEModes {}
 
 library AaveV3BaseSepoliaExternalLibraries {
   // https://sepolia.basescan.org/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

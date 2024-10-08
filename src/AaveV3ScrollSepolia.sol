@@ -13,36 +13,39 @@ library AaveV3ScrollSepolia {
   // https://sepolia.scrollscan.com/address/0x48914C788295b5db23aF2b5F0B3BE775C4eA9440
   IPool internal constant POOL = IPool(0x48914C788295b5db23aF2b5F0B3BE775C4eA9440);
 
-  // https://sepolia.scrollscan.com/address/0xB186894F315133C2396104CAb386C3A0fEC09025
-  address internal constant POOL_IMPL = 0xB186894F315133C2396104CAb386C3A0fEC09025;
-
   // https://sepolia.scrollscan.com/address/0x63BB78Fbac521998BD6E33f1a960677c7a1d4F10
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x63BB78Fbac521998BD6E33f1a960677c7a1d4F10);
 
-  // https://sepolia.scrollscan.com/address/0xE7560d98a9fdAe4F3b87eb172ae44177A075eeDF
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xE7560d98a9fdAe4F3b87eb172ae44177A075eeDF;
-
   // https://sepolia.scrollscan.com/address/0x4B7C7D2EbcDc1015D35F617596318C15d9d24e59
   IAaveOracle internal constant ORACLE = IAaveOracle(0x4B7C7D2EbcDc1015D35F617596318C15d9d24e59);
 
-  // https://sepolia.scrollscan.com/address/0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee);
+  // https://sepolia.scrollscan.com/address/0xA5bf8BC3c35D9F92b038254B9B8675266f6b62c0
+  address internal constant ACL_ADMIN = 0xA5bf8BC3c35D9F92b038254B9B8675266f6b62c0;
 
   // https://sepolia.scrollscan.com/address/0x166601A0Cc6Cf979e2f0eF94EC5363B6BC24061C
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x166601A0Cc6Cf979e2f0eF94EC5363B6BC24061C);
 
-  // https://sepolia.scrollscan.com/address/0xA5bf8BC3c35D9F92b038254B9B8675266f6b62c0
-  address internal constant ACL_ADMIN = 0xA5bf8BC3c35D9F92b038254B9B8675266f6b62c0;
+  // https://sepolia.scrollscan.com/address/0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee);
 
-  // https://sepolia.scrollscan.com/address/0x104Cd7695C9247096F7AD37d3258B63c9675A00e
-  ICollector internal constant COLLECTOR = ICollector(0x104Cd7695C9247096F7AD37d3258B63c9675A00e);
+  // https://sepolia.scrollscan.com/address/0xB186894F315133C2396104CAb386C3A0fEC09025
+  address internal constant POOL_IMPL = 0xB186894F315133C2396104CAb386C3A0fEC09025;
+
+  // https://sepolia.scrollscan.com/address/0xE7560d98a9fdAe4F3b87eb172ae44177A075eeDF
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xE7560d98a9fdAe4F3b87eb172ae44177A075eeDF;
 
   // https://sepolia.scrollscan.com/address/0xa76F05D0cdf599E0186dec880F2FA480fd0c5280
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xa76F05D0cdf599E0186dec880F2FA480fd0c5280;
+
+  // https://sepolia.scrollscan.com/address/0x01dd3Ad7D942406C47acd5b70cBad28fd377c6f2
+  address internal constant EMISSION_MANAGER = 0x01dd3Ad7D942406C47acd5b70cBad28fd377c6f2;
+
+  // https://sepolia.scrollscan.com/address/0x104Cd7695C9247096F7AD37d3258B63c9675A00e
+  ICollector internal constant COLLECTOR = ICollector(0x104Cd7695C9247096F7AD37d3258B63c9675A00e);
 
   // https://sepolia.scrollscan.com/address/0x0Eae78c97347bf6FCF784Aa91CABC4aCdB5cc2dd
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x0Eae78c97347bf6FCF784Aa91CABC4aCdB5cc2dd;
@@ -50,9 +53,6 @@ library AaveV3ScrollSepolia {
   // https://sepolia.scrollscan.com/address/0xAb8eaAE8383Abe28203cB6e6FAa0477B2fb97f07
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xAb8eaAE8383Abe28203cB6e6FAa0477B2fb97f07;
-
-  // https://sepolia.scrollscan.com/address/0x01dd3Ad7D942406C47acd5b70cBad28fd377c6f2
-  address internal constant EMISSION_MANAGER = 0x01dd3Ad7D942406C47acd5b70cBad28fd377c6f2;
 
   // https://sepolia.scrollscan.com/address/0x2F826FD1a0071476330a58dD1A9B36bcF7da832d
   address internal constant FAUCET = 0x2F826FD1a0071476330a58dD1A9B36bcF7da832d;
@@ -216,10 +216,4 @@ library AaveV3ScrollSepoliaAssets {
   // https://sepolia.scrollscan.com/address/0x9c41A3E545126Cc2c160634405E00461Ec30F709
   address internal constant EURS_INTEREST_RATE_STRATEGY =
     0x9c41A3E545126Cc2c160634405E00461Ec30F709;
-}
-
-library AaveV3ScrollSepoliaEModes {
-  uint8 internal constant NONE = 0;
-
-  uint8 internal constant STABLECOINS = 1;
 }
