@@ -93,8 +93,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x162A7AC02f547ad796CA549f757e2b8d1D9b10a6
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x162A7AC02f547ad796CA549f757e2b8d1D9b10a6;
 
-  // https://etherscan.io/address/0x5c5228aC8BC1528482514aF3e27E692495148717
-  address internal constant UI_POOL_DATA_PROVIDER = 0x5c5228aC8BC1528482514aF3e27E692495148717;
+  // https://etherscan.io/address/0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047
+  address internal constant UI_POOL_DATA_PROVIDER = 0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047;
 
   // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
   address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
