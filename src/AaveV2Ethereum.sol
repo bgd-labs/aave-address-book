@@ -102,9 +102,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x531842cEbbdD378f8ee36D171d6cC9C4fcf475Ec
   address internal constant USDT_V_TOKEN = 0x531842cEbbdD378f8ee36D171d6cC9C4fcf475Ec;
 
-  // https://etherscan.io/address/0xe91D55AB2240594855aBd11b3faAE801Fd4c4687
-  address internal constant USDT_S_TOKEN = 0xe91D55AB2240594855aBd11b3faAE801Fd4c4687;
-
   // https://etherscan.io/address/0xEfF57B0c8987eea8C491bdDD2F64c1c21297Cf74
   address internal constant USDT_ORACLE = 0xEfF57B0c8987eea8C491bdDD2F64c1c21297Cf74;
 
@@ -122,9 +119,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0x9c39809Dec7F95F5e0713634a4D0701329B3b4d2
   address internal constant WBTC_V_TOKEN = 0x9c39809Dec7F95F5e0713634a4D0701329B3b4d2;
-
-  // https://etherscan.io/address/0x51B039b9AFE64B78758f8Ef091211b5387eA717c
-  address internal constant WBTC_S_TOKEN = 0x51B039b9AFE64B78758f8Ef091211b5387eA717c;
 
   // https://etherscan.io/address/0xFD858c8bC5ac5e10f01018bC78471bb0DC392247
   address internal constant WBTC_ORACLE = 0xFD858c8bC5ac5e10f01018bC78471bb0DC392247;
@@ -144,9 +138,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xF63B34710400CAd3e044cFfDcAb00a0f32E33eCf
   address internal constant WETH_V_TOKEN = 0xF63B34710400CAd3e044cFfDcAb00a0f32E33eCf;
 
-  // https://etherscan.io/address/0x4e977830ba4bd783C0BB7F15d3e243f73FF57121
-  address internal constant WETH_S_TOKEN = 0x4e977830ba4bd783C0BB7F15d3e243f73FF57121;
-
   // https://etherscan.io/address/0xb8975328Aa52c00B9Ec1e11e518C4900f2e6C62a
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xb8975328Aa52c00B9Ec1e11e518C4900f2e6C62a;
@@ -161,9 +152,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0x7EbD09022Be45AD993BAA1CEc61166Fcc8644d97
   address internal constant YFI_V_TOKEN = 0x7EbD09022Be45AD993BAA1CEc61166Fcc8644d97;
-
-  // https://etherscan.io/address/0xca823F78C2Dd38993284bb42Ba9b14152082F7BD
-  address internal constant YFI_S_TOKEN = 0xca823F78C2Dd38993284bb42Ba9b14152082F7BD;
 
   // https://etherscan.io/address/0x7c5d4F8345e66f68099581Db340cd65B078C41f4
   address internal constant YFI_ORACLE = 0x7c5d4F8345e66f68099581Db340cd65B078C41f4;
@@ -182,9 +170,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x85791D117A392097590bDeD3bD5abB8d5A20491A
   address internal constant ZRX_V_TOKEN = 0x85791D117A392097590bDeD3bD5abB8d5A20491A;
 
-  // https://etherscan.io/address/0x071B4323a24E73A5afeEbe34118Cd21B8FAAF7C3
-  address internal constant ZRX_S_TOKEN = 0x071B4323a24E73A5afeEbe34118Cd21B8FAAF7C3;
-
   // https://etherscan.io/address/0x2Da4983a622a8498bb1a21FaE9D8F6C664939962
   address internal constant ZRX_ORACLE = 0x2Da4983a622a8498bb1a21FaE9D8F6C664939962;
 
@@ -202,9 +187,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x5BdB050A92CADcCfCDcCCBFC17204a1C9cC0Ab73
   address internal constant UNI_V_TOKEN = 0x5BdB050A92CADcCfCDcCCBFC17204a1C9cC0Ab73;
 
-  // https://etherscan.io/address/0xD939F7430dC8D5a427f156dE1012A56C18AcB6Aa
-  address internal constant UNI_S_TOKEN = 0xD939F7430dC8D5a427f156dE1012A56C18AcB6Aa;
-
   // https://etherscan.io/address/0xD6aA3D25116d8dA79Ea0246c4826EB951872e02e
   address internal constant UNI_ORACLE = 0xD6aA3D25116d8dA79Ea0246c4826EB951872e02e;
 
@@ -221,9 +203,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xF7DBA49d571745D9d7fcb56225B05BEA803EBf3C
   address internal constant AAVE_V_TOKEN = 0xF7DBA49d571745D9d7fcb56225B05BEA803EBf3C;
-
-  // https://etherscan.io/address/0x079D6a3E844BcECf5720478A718Edb6575362C5f
-  address internal constant AAVE_S_TOKEN = 0x079D6a3E844BcECf5720478A718Edb6575362C5f;
 
   // https://etherscan.io/address/0x6Df09E975c830ECae5bd4eD9d90f3A95a4f88012
   address internal constant AAVE_ORACLE = 0x6Df09E975c830ECae5bd4eD9d90f3A95a4f88012;
@@ -243,9 +222,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xfc218A6Dfe6901CB34B1a5281FC6f1b8e7E56877
   address internal constant BAT_V_TOKEN = 0xfc218A6Dfe6901CB34B1a5281FC6f1b8e7E56877;
 
-  // https://etherscan.io/address/0x277f8676FAcf4dAA5a6EA38ba511B7F65AA02f9F
-  address internal constant BAT_S_TOKEN = 0x277f8676FAcf4dAA5a6EA38ba511B7F65AA02f9F;
-
   // https://etherscan.io/address/0x0d16d4528239e9ee52fa531af613AcdB23D88c94
   address internal constant BAT_ORACLE = 0x0d16d4528239e9ee52fa531af613AcdB23D88c94;
 
@@ -262,9 +238,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xbA429f7011c9fa04cDd46a2Da24dc0FF0aC6099c
   address internal constant BUSD_V_TOKEN = 0xbA429f7011c9fa04cDd46a2Da24dc0FF0aC6099c;
-
-  // https://etherscan.io/address/0x4A7A63909A72D268b1D8a93a9395d098688e0e5C
-  address internal constant BUSD_S_TOKEN = 0x4A7A63909A72D268b1D8a93a9395d098688e0e5C;
 
   // https://etherscan.io/address/0x378E959C0eCBbA793217913cE1D8745f6d6B7aC7
   address internal constant BUSD_ORACLE = 0x378E959C0eCBbA793217913cE1D8745f6d6B7aC7;
@@ -284,9 +257,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x6C3c78838c761c6Ac7bE9F59fe808ea2A6E4379d
   address internal constant DAI_V_TOKEN = 0x6C3c78838c761c6Ac7bE9F59fe808ea2A6E4379d;
 
-  // https://etherscan.io/address/0x778A13D3eeb110A4f7bb6529F99c000119a08E92
-  address internal constant DAI_S_TOKEN = 0x778A13D3eeb110A4f7bb6529F99c000119a08E92;
-
   // https://etherscan.io/address/0xd486FE27AAB0b3CAd1462D767292dd7a84F06E58
   address internal constant DAI_ORACLE = 0xd486FE27AAB0b3CAd1462D767292dd7a84F06E58;
 
@@ -303,9 +273,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0x38995F292a6E31b78203254fE1cdd5Ca1010A446
   address internal constant ENJ_V_TOKEN = 0x38995F292a6E31b78203254fE1cdd5Ca1010A446;
-
-  // https://etherscan.io/address/0x943DcCA156b5312Aa24c1a08769D67FEce4ac14C
-  address internal constant ENJ_S_TOKEN = 0x943DcCA156b5312Aa24c1a08769D67FEce4ac14C;
 
   // https://etherscan.io/address/0x24D9aB51950F3d62E9144fdC2f3135DAA6Ce8D1B
   address internal constant ENJ_ORACLE = 0x24D9aB51950F3d62E9144fdC2f3135DAA6Ce8D1B;
@@ -324,9 +291,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x6B05D1c608015Ccb8e205A690cB86773A96F39f1
   address internal constant KNC_V_TOKEN = 0x6B05D1c608015Ccb8e205A690cB86773A96F39f1;
 
-  // https://etherscan.io/address/0x9915dfb872778B2890a117DA1F35F335eb06B54f
-  address internal constant KNC_S_TOKEN = 0x9915dfb872778B2890a117DA1F35F335eb06B54f;
-
   // https://etherscan.io/address/0x656c0544eF4C98A6a98491833A89204Abb045d6b
   address internal constant KNC_ORACLE = 0x656c0544eF4C98A6a98491833A89204Abb045d6b;
 
@@ -343,9 +307,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0x0b8f12b1788BFdE65Aa1ca52E3e9F3Ba401be16D
   address internal constant LINK_V_TOKEN = 0x0b8f12b1788BFdE65Aa1ca52E3e9F3Ba401be16D;
-
-  // https://etherscan.io/address/0xFB4AEc4Cc858F2539EBd3D37f2a43eAe5b15b98a
-  address internal constant LINK_S_TOKEN = 0xFB4AEc4Cc858F2539EBd3D37f2a43eAe5b15b98a;
 
   // https://etherscan.io/address/0xDC530D9457755926550b59e8ECcdaE7624181557
   address internal constant LINK_ORACLE = 0xDC530D9457755926550b59e8ECcdaE7624181557;
@@ -365,9 +326,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x0A68976301e46Ca6Ce7410DB28883E309EA0D352
   address internal constant MANA_V_TOKEN = 0x0A68976301e46Ca6Ce7410DB28883E309EA0D352;
 
-  // https://etherscan.io/address/0xD86C74eA2224f4B8591560652b50035E4e5c0a3b
-  address internal constant MANA_S_TOKEN = 0xD86C74eA2224f4B8591560652b50035E4e5c0a3b;
-
   // https://etherscan.io/address/0x82A44D92D6c329826dc557c5E1Be6ebeC5D5FeB9
   address internal constant MANA_ORACLE = 0x82A44D92D6c329826dc557c5E1Be6ebeC5D5FeB9;
 
@@ -386,9 +344,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xba728eAd5e496BE00DCF66F650b6d7758eCB50f8
   address internal constant MKR_V_TOKEN = 0xba728eAd5e496BE00DCF66F650b6d7758eCB50f8;
 
-  // https://etherscan.io/address/0xC01C8E4b12a89456a9fD4e4e75B72546Bf53f0B5
-  address internal constant MKR_S_TOKEN = 0xC01C8E4b12a89456a9fD4e4e75B72546Bf53f0B5;
-
   // https://etherscan.io/address/0x24551a8Fb2A7211A25a17B1481f043A8a8adC7f2
   address internal constant MKR_ORACLE = 0x24551a8Fb2A7211A25a17B1481f043A8a8adC7f2;
 
@@ -405,9 +360,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xcd9D82d33bd737De215cDac57FE2F7f04DF77FE0
   address internal constant REN_V_TOKEN = 0xcd9D82d33bd737De215cDac57FE2F7f04DF77FE0;
-
-  // https://etherscan.io/address/0x3356Ec1eFA75d9D150Da1EC7d944D9EDf73703B7
-  address internal constant REN_S_TOKEN = 0x3356Ec1eFA75d9D150Da1EC7d944D9EDf73703B7;
 
   // https://etherscan.io/address/0x3147D7203354Dc06D9fd350c7a2437bcA92387a4
   address internal constant REN_ORACLE = 0x3147D7203354Dc06D9fd350c7a2437bcA92387a4;
@@ -426,9 +378,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x267EB8Cf715455517F9BD5834AeAE3CeA1EBdbD8
   address internal constant SNX_V_TOKEN = 0x267EB8Cf715455517F9BD5834AeAE3CeA1EBdbD8;
 
-  // https://etherscan.io/address/0x8575c8ae70bDB71606A53AeA1c6789cB0fBF3166
-  address internal constant SNX_S_TOKEN = 0x8575c8ae70bDB71606A53AeA1c6789cB0fBF3166;
-
   // https://etherscan.io/address/0x79291A9d692Df95334B1a0B3B4AE6bC606782f8c
   address internal constant SNX_ORACLE = 0x79291A9d692Df95334B1a0B3B4AE6bC606782f8c;
 
@@ -445,9 +394,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xdC6a3Ab17299D9C2A412B0e0a4C1f55446AE0817
   address internal constant sUSD_V_TOKEN = 0xdC6a3Ab17299D9C2A412B0e0a4C1f55446AE0817;
-
-  // https://etherscan.io/address/0x30B0f7324feDF89d8eff397275F8983397eFe4af
-  address internal constant sUSD_S_TOKEN = 0x30B0f7324feDF89d8eff397275F8983397eFe4af;
 
   // https://etherscan.io/address/0x00753D870Ceda60b38A9efeb47a724160BD8A749
   address internal constant sUSD_ORACLE = 0x00753D870Ceda60b38A9efeb47a724160BD8A749;
@@ -467,9 +413,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x01C0eb1f8c6F1C1bF74ae028697ce7AA2a8b0E92
   address internal constant TUSD_V_TOKEN = 0x01C0eb1f8c6F1C1bF74ae028697ce7AA2a8b0E92;
 
-  // https://etherscan.io/address/0x7f38d60D94652072b2C44a18c0e14A481EC3C0dd
-  address internal constant TUSD_S_TOKEN = 0x7f38d60D94652072b2C44a18c0e14A481EC3C0dd;
-
   // https://etherscan.io/address/0x65f05c3bC078bf24EdeaCFD48D6312c103AC4a61
   address internal constant TUSD_ORACLE = 0x65f05c3bC078bf24EdeaCFD48D6312c103AC4a61;
 
@@ -487,9 +430,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0x619beb58998eD2278e08620f97007e1116D5D25b
   address internal constant USDC_V_TOKEN = 0x619beb58998eD2278e08620f97007e1116D5D25b;
-
-  // https://etherscan.io/address/0xE4922afAB0BbaDd8ab2a88E0C79d884Ad337fcA6
-  address internal constant USDC_S_TOKEN = 0xE4922afAB0BbaDd8ab2a88E0C79d884Ad337fcA6;
 
   // https://etherscan.io/address/0x9f2817536Cfd48BF59243d9D8802a5670F5Be05d
   address internal constant USDC_ORACLE = 0x9f2817536Cfd48BF59243d9D8802a5670F5Be05d;
@@ -509,9 +449,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x00ad8eBF64F141f1C81e9f8f792d3d1631c6c684
   address internal constant CRV_V_TOKEN = 0x00ad8eBF64F141f1C81e9f8f792d3d1631c6c684;
 
-  // https://etherscan.io/address/0x9288059a74f589C919c7Cf1Db433251CdFEB874B
-  address internal constant CRV_S_TOKEN = 0x9288059a74f589C919c7Cf1Db433251CdFEB874B;
-
   // https://etherscan.io/address/0x8a12Be339B0cD1829b91Adc01977caa5E9ac121e
   address internal constant CRV_ORACLE = 0x8a12Be339B0cD1829b91Adc01977caa5E9ac121e;
 
@@ -528,9 +465,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0x279AF5b99540c1A3A7E3CDd326e19659401eF99e
   address internal constant GUSD_V_TOKEN = 0x279AF5b99540c1A3A7E3CDd326e19659401eF99e;
-
-  // https://etherscan.io/address/0xf8aC64ec6Ff8E0028b37EB89772d21865321bCe0
-  address internal constant GUSD_S_TOKEN = 0xf8aC64ec6Ff8E0028b37EB89772d21865321bCe0;
 
   // https://etherscan.io/address/0xEc6f4Cd64d28Ef32507e2dc399948aAe9Bbedd7e
   address internal constant GUSD_ORACLE = 0xEc6f4Cd64d28Ef32507e2dc399948aAe9Bbedd7e;
@@ -550,9 +484,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x13210D4Fe0d5402bd7Ecbc4B5bC5cFcA3b71adB0
   address internal constant BAL_V_TOKEN = 0x13210D4Fe0d5402bd7Ecbc4B5bC5cFcA3b71adB0;
 
-  // https://etherscan.io/address/0xe569d31590307d05DA3812964F1eDd551D665a0b
-  address internal constant BAL_S_TOKEN = 0xe569d31590307d05DA3812964F1eDd551D665a0b;
-
   // https://etherscan.io/address/0xC1438AA3823A6Ba0C159CfA8D98dF5A994bA120b
   address internal constant BAL_ORACLE = 0xC1438AA3823A6Ba0C159CfA8D98dF5A994bA120b;
 
@@ -569,9 +500,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xfAFEDF95E21184E3d880bd56D4806c4b8d31c69A
   address internal constant xSUSHI_V_TOKEN = 0xfAFEDF95E21184E3d880bd56D4806c4b8d31c69A;
-
-  // https://etherscan.io/address/0x73Bfb81D7dbA75C904f430eA8BAe82DB0D41187B
-  address internal constant xSUSHI_S_TOKEN = 0x73Bfb81D7dbA75C904f430eA8BAe82DB0D41187B;
 
   // https://etherscan.io/address/0xF05D9B6C08757EAcb1fbec18e36A1B7566a13DEB
   address internal constant xSUSHI_ORACLE = 0xF05D9B6C08757EAcb1fbec18e36A1B7566a13DEB;
@@ -591,9 +519,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x348e2eBD5E962854871874E444F4122399c02755
   address internal constant renFIL_V_TOKEN = 0x348e2eBD5E962854871874E444F4122399c02755;
 
-  // https://etherscan.io/address/0xcAad05C49E14075077915cB5C820EB3245aFb950
-  address internal constant renFIL_S_TOKEN = 0xcAad05C49E14075077915cB5C820EB3245aFb950;
-
   // https://etherscan.io/address/0x0606Be69451B1C9861Ac6b3626b99093b713E801
   address internal constant renFIL_ORACLE = 0x0606Be69451B1C9861Ac6b3626b99093b713E801;
 
@@ -612,9 +537,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xB5385132EE8321977FfF44b60cDE9fE9AB0B4e6b
   address internal constant RAI_V_TOKEN = 0xB5385132EE8321977FfF44b60cDE9fE9AB0B4e6b;
 
-  // https://etherscan.io/address/0x9C72B8476C33AE214ee3e8C20F0bc28496a62032
-  address internal constant RAI_S_TOKEN = 0x9C72B8476C33AE214ee3e8C20F0bc28496a62032;
-
   // https://etherscan.io/address/0x4ad7B025127e89263242aB68F0f9c4E5C033B489
   address internal constant RAI_ORACLE = 0x4ad7B025127e89263242aB68F0f9c4E5C033B489;
 
@@ -631,9 +553,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xf013D90E4e4E3Baf420dFea60735e75dbd42f1e1
   address internal constant AMPL_V_TOKEN = 0xf013D90E4e4E3Baf420dFea60735e75dbd42f1e1;
-
-  // https://etherscan.io/address/0x18152C9f77DAdc737006e9430dB913159645fa87
-  address internal constant AMPL_S_TOKEN = 0x18152C9f77DAdc737006e9430dB913159645fa87;
 
   // https://etherscan.io/address/0x492575FDD11a0fCf2C6C719867890a7648d526eB
   address internal constant AMPL_ORACLE = 0x492575FDD11a0fCf2C6C719867890a7648d526eB;
@@ -653,9 +572,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xFDb93B3b10936cf81FA59A02A7523B6e2149b2B7
   address internal constant USDP_V_TOKEN = 0xFDb93B3b10936cf81FA59A02A7523B6e2149b2B7;
 
-  // https://etherscan.io/address/0x2387119bc85A74e0BBcbe190d80676CB16F10D4F
-  address internal constant USDP_S_TOKEN = 0x2387119bc85A74e0BBcbe190d80676CB16F10D4F;
-
   // https://etherscan.io/address/0x776292E6eb3eD2D28C0CFa77BaB9378A771424Be
   address internal constant USDP_ORACLE = 0x776292E6eb3eD2D28C0CFa77BaB9378A771424Be;
 
@@ -674,9 +590,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x4dDff5885a67E4EffeC55875a3977D7E60F82ae0
   address internal constant DPI_V_TOKEN = 0x4dDff5885a67E4EffeC55875a3977D7E60F82ae0;
 
-  // https://etherscan.io/address/0xa3953F07f389d719F99FC378ebDb9276177d8A6e
-  address internal constant DPI_S_TOKEN = 0xa3953F07f389d719F99FC378ebDb9276177d8A6e;
-
   // https://etherscan.io/address/0x2fe9EcF3024B5A63f50Ec0eFC53b8fF2C09F2E93
   address internal constant DPI_ORACLE = 0x2fe9EcF3024B5A63f50Ec0eFC53b8fF2C09F2E93;
 
@@ -693,9 +606,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xfE8F19B17fFeF0fDbfe2671F248903055AFAA8Ca
   address internal constant FRAX_V_TOKEN = 0xfE8F19B17fFeF0fDbfe2671F248903055AFAA8Ca;
-
-  // https://etherscan.io/address/0x3916e3B6c84b161df1b2733dFfc9569a1dA710c2
-  address internal constant FRAX_S_TOKEN = 0x3916e3B6c84b161df1b2733dFfc9569a1dA710c2;
 
   // https://etherscan.io/address/0x1f7e2ccd6702a5c587160390A52111aF6020ac92
   address internal constant FRAX_ORACLE = 0x1f7e2ccd6702a5c587160390A52111aF6020ac92;
@@ -715,9 +625,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xC2e10006AccAb7B45D9184FcF5b7EC7763f5BaAe
   address internal constant FEI_V_TOKEN = 0xC2e10006AccAb7B45D9184FcF5b7EC7763f5BaAe;
 
-  // https://etherscan.io/address/0xd89cF9E8A858F8B4b31Faf793505e112d6c17449
-  address internal constant FEI_S_TOKEN = 0xd89cF9E8A858F8B4b31Faf793505e112d6c17449;
-
   // https://etherscan.io/address/0xac3AF0f4A52C577Cc2C241dF51a01FDe3D06D93B
   address internal constant FEI_ORACLE = 0xac3AF0f4A52C577Cc2C241dF51a01FDe3D06D93B;
 
@@ -734,9 +641,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xA9DEAc9f00Dc4310c35603FCD9D34d1A750f81Db
   address internal constant stETH_V_TOKEN = 0xA9DEAc9f00Dc4310c35603FCD9D34d1A750f81Db;
-
-  // https://etherscan.io/address/0x66457616Dd8489dF5D0AFD8678F4A260088aAF55
-  address internal constant stETH_S_TOKEN = 0x66457616Dd8489dF5D0AFD8678F4A260088aAF55;
 
   // https://etherscan.io/address/0xADE6CBA6c45aa8E9d0337cAc3D2619eabc39D901
   address internal constant stETH_ORACLE = 0xADE6CBA6c45aa8E9d0337cAc3D2619eabc39D901;
@@ -756,9 +660,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x176808047cc9b7A2C9AE202c593ED42dDD7C0D13
   address internal constant ENS_V_TOKEN = 0x176808047cc9b7A2C9AE202c593ED42dDD7C0D13;
 
-  // https://etherscan.io/address/0x34441FFD1948E49dC7a607882D0c38Efd0083815
-  address internal constant ENS_S_TOKEN = 0x34441FFD1948E49dC7a607882D0c38Efd0083815;
-
   // https://etherscan.io/address/0xd4641b75015E6536E8102D98479568D05D7123Db
   address internal constant ENS_ORACLE = 0xd4641b75015E6536E8102D98479568D05D7123Db;
 
@@ -775,9 +676,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xaf32001cf2E66C4C3af4205F6EA77112AA4160FE
   address internal constant UST_V_TOKEN = 0xaf32001cf2E66C4C3af4205F6EA77112AA4160FE;
-
-  // https://etherscan.io/address/0x7FDbfB0412700D94403c42cA3CAEeeA183F07B26
-  address internal constant UST_S_TOKEN = 0x7FDbfB0412700D94403c42cA3CAEeeA183F07B26;
 
   // https://etherscan.io/address/0x51d08b4912d33d051b57d784c7CAfC0cD42c0f45
   address internal constant UST_ORACLE = 0x51d08b4912d33d051b57d784c7CAfC0cD42c0f45;
@@ -796,9 +694,6 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x4Ae5E4409C6Dbc84A00f9f89e4ba096603fb7d50
   address internal constant CVX_V_TOKEN = 0x4Ae5E4409C6Dbc84A00f9f89e4ba096603fb7d50;
 
-  // https://etherscan.io/address/0xB01Eb1cE1Da06179136D561766fc2d609C5F55Eb
-  address internal constant CVX_S_TOKEN = 0xB01Eb1cE1Da06179136D561766fc2d609C5F55Eb;
-
   // https://etherscan.io/address/0xC9CbF687f43176B302F03f5e58470b77D07c61c6
   address internal constant CVX_ORACLE = 0xC9CbF687f43176B302F03f5e58470b77D07c61c6;
 
@@ -815,9 +710,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0xD7896C1B9b4455aFf31473908eB15796ad2295DA
   address internal constant ONE_INCH_V_TOKEN = 0xD7896C1B9b4455aFf31473908eB15796ad2295DA;
-
-  // https://etherscan.io/address/0x1278d6ED804d59d2d18a5Aa5638DfD591A79aF0a
-  address internal constant ONE_INCH_S_TOKEN = 0x1278d6ED804d59d2d18a5Aa5638DfD591A79aF0a;
 
   // https://etherscan.io/address/0x72AFAECF99C9d9C8215fF44C77B94B99C28741e8
   address internal constant ONE_INCH_ORACLE = 0x72AFAECF99C9d9C8215fF44C77B94B99C28741e8;
@@ -836,9 +728,6 @@ library AaveV2EthereumAssets {
 
   // https://etherscan.io/address/0x411066489AB40442d6Fc215aD7c64224120D33F2
   address internal constant LUSD_V_TOKEN = 0x411066489AB40442d6Fc215aD7c64224120D33F2;
-
-  // https://etherscan.io/address/0x39f010127274b2dBdB770B45e1de54d974974526
-  address internal constant LUSD_S_TOKEN = 0x39f010127274b2dBdB770B45e1de54d974974526;
 
   // https://etherscan.io/address/0x3a1b874ec865c466046cf131516d26Cc228dF0b3
   address internal constant LUSD_ORACLE = 0x3a1b874ec865c466046cf131516d26Cc228dF0b3;

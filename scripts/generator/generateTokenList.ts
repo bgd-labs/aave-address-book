@@ -8,9 +8,9 @@ import {join} from 'path';
 import prettier from 'prettier';
 import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {fixSymbol} from './assetsLibraryGenerator';
 import {getSymbolUri, VARIANT} from './svgUtils';
+import {CHAIN_ID_CLIENT_MAP} from '../clients';
 
 const TAGS = {
   underlying: 'underlying',
@@ -18,6 +18,7 @@ const TAGS = {
   aTokenV2: 'aTokenV2',
   aaveV3: 'aaveV3',
   aTokenV3: 'aTokenV3',
+  staticAToken: 'staticAT',
   stataToken: 'stataToken',
 } as const;
 
@@ -60,8 +61,8 @@ export async function generateTokenList(pools: TokenListParams) {
         const [name, symbol] = cache
           ? [cache.name, cache.symbol]
           : token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
-          ? ['Maker', 'MKR']
-          : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
+            ? ['Maker', 'MKR']
+            : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
         const symbolUri = await getSymbolUri(reserve.symbol, variant);
         return tokens.push({
           chainId: chainId,
@@ -81,6 +82,17 @@ export async function generateTokenList(pools: TokenListParams) {
         /V2/.test(poolName) ? [TAGS.aTokenV2, TAGS.aaveV2] : [TAGS.aTokenV3, TAGS.aaveV3],
         {pool: pool, underlying: reserve.UNDERLYING},
       );
+      if (reserve.STATIC_A_TOKEN && reserve.STATIC_A_TOKEN != zeroAddress)
+        await addToken(
+          reserve.STATIC_A_TOKEN,
+          VARIANT.STATIC_A_TOKEN,
+          [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.staticAToken],
+          {
+            pool: pool,
+            underlying: reserve.UNDERLYING,
+            underlyingAToken: reserve.A_TOKEN,
+          },
+        );
       if (reserve.STATA_TOKEN && reserve.STATA_TOKEN != zeroAddress)
         await addToken(
           reserve.STATA_TOKEN,
@@ -122,6 +134,10 @@ export async function generateTokenList(pools: TokenListParams) {
         description: 'Tokens that earn interest on the Aave Protocol V3',
       },
       [TAGS.stataToken]: {
+        name: 'stata token',
+        description: 'Tokens that are wrapped into a 4626 Vault',
+      },
+      [TAGS.staticAToken]: {
         name: 'static a token',
         description: 'Tokens that are wrapped into a 4626 Vault',
       },

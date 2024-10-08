@@ -86,9 +86,6 @@ library AaveV2FujiAssets {
   // https://testnet.snowtrace.io/address/0xB61CC359E2133b8618cc0319F359F8CA1d3d2b33
   address internal constant WETH_V_TOKEN = 0xB61CC359E2133b8618cc0319F359F8CA1d3d2b33;
 
-  // https://testnet.snowtrace.io/address/0x056AaAc3aAf49d00C4fA10bCf9661D2371427ECB
-  address internal constant WETH_S_TOKEN = 0x056AaAc3aAf49d00C4fA10bCf9661D2371427ECB;
-
   // https://testnet.snowtrace.io/address/0x86d67c3D38D2bCeE722E601025C25a575021c6EA
   address internal constant WETH_ORACLE = 0x86d67c3D38D2bCeE722E601025C25a575021c6EA;
 
@@ -106,9 +103,6 @@ library AaveV2FujiAssets {
 
   // https://testnet.snowtrace.io/address/0x6422A7C91A48dD211BF6BdE1Db14d7734f9cbD69
   address internal constant USDT_V_TOKEN = 0x6422A7C91A48dD211BF6BdE1Db14d7734f9cbD69;
-
-  // https://testnet.snowtrace.io/address/0x8c5a8eB9dd4e029c1A5B9e740086eB6Cf4Ba7F13
-  address internal constant USDT_S_TOKEN = 0x8c5a8eB9dd4e029c1A5B9e740086eB6Cf4Ba7F13;
 
   // https://testnet.snowtrace.io/address/0x7898AcCC83587C3C55116c5230C17a6Cd9C71bad
   address internal constant USDT_ORACLE = 0x7898AcCC83587C3C55116c5230C17a6Cd9C71bad;
@@ -128,9 +122,6 @@ library AaveV2FujiAssets {
   // https://testnet.snowtrace.io/address/0xbd0601970fE5b35649Fb92f292cde21f0f52eAE9
   address internal constant WBTC_V_TOKEN = 0xbd0601970fE5b35649Fb92f292cde21f0f52eAE9;
 
-  // https://testnet.snowtrace.io/address/0x38A9d8f89Cf87FD4C50dd7B019b9af30c2540512
-  address internal constant WBTC_S_TOKEN = 0x38A9d8f89Cf87FD4C50dd7B019b9af30c2540512;
-
   // https://testnet.snowtrace.io/address/0x31CF013A08c6Ac228C94551d535d5BAfE19c602a
   address internal constant WBTC_ORACLE = 0x31CF013A08c6Ac228C94551d535d5BAfE19c602a;
 
@@ -148,9 +139,6 @@ library AaveV2FujiAssets {
 
   // https://testnet.snowtrace.io/address/0x333f38B8E76077539Cde1d50Fb5dE0AC6F7E6837
   address internal constant WAVAX_V_TOKEN = 0x333f38B8E76077539Cde1d50Fb5dE0AC6F7E6837;
-
-  // https://testnet.snowtrace.io/address/0xE1c2E4E85d34CAed5c29447135c3ADfaD30364f1
-  address internal constant WAVAX_S_TOKEN = 0xE1c2E4E85d34CAed5c29447135c3ADfaD30364f1;
 
   // https://testnet.snowtrace.io/address/0x5498BB86BC934c8D34FDA08E81D444153d0D06aD
   address internal constant WAVAX_ORACLE = 0x5498BB86BC934c8D34FDA08E81D444153d0D06aD;

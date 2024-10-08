@@ -69,10 +69,11 @@ export function generateAssetsLibrary(
       [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
       [`${symbol}_A_TOKEN`]: rest.A_TOKEN,
       [`${symbol}_V_TOKEN`]: rest.V_TOKEN,
-      [`${symbol}_S_TOKEN`]: rest.S_TOKEN,
       [`${symbol}_ORACLE`]: rest.ORACLE,
       [`${symbol}_INTEREST_RATE_STRATEGY`]: rest.INTEREST_RATE_STRATEGY,
     };
+    if (rest.STATIC_A_TOKEN && rest.STATIC_A_TOKEN !== zeroAddress)
+      addresses[`${symbol}_STATIC_A_TOKEN`] = rest.STATIC_A_TOKEN;
     if (rest.STATA_TOKEN && rest.STATA_TOKEN !== zeroAddress)
       addresses[`${symbol}_STATA_TOKEN`] = rest.STATA_TOKEN;
     return addresses;
@@ -82,6 +83,9 @@ export function generateAssetsLibrary(
     (acc, {symbol: _symbol, ...rest}) => {
       const symbol = fixSymbol(_symbol, rest.UNDERLYING);
       acc[symbol] = rest;
+      if (rest.STATIC_A_TOKEN && rest.STATIC_A_TOKEN == zeroAddress) {
+        delete acc[symbol].STATIC_A_TOKEN;
+      }
       if (rest.STATA_TOKEN && rest.STATA_TOKEN == zeroAddress) {
         delete acc[symbol].STATA_TOKEN;
       }

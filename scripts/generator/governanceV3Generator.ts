@@ -12,7 +12,7 @@ import {IGovernanceCore_ABI} from '../../src/ts/abis/IGovernanceCore';
 import {IPayloadsControllerCore_ABI} from '../../src/ts/abis/IPayloadsControllerCore';
 import {IVotingStrategy_ABI} from '../../src/ts/abis/IVotingStrategy';
 import {IVotingMachineWithProofs_ABI} from '../../src/ts/abis/IVotingMachineWithProofs';
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
+import {CHAIN_ID_CLIENT_MAP} from '../clients';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;

@@ -1,6 +1,5 @@
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {getContract} from 'viem';
-import {IStaticATokenFactory_ABI} from '../../src/ts/AaveAddressBook';
+import {CHAIN_ID_CLIENT_MAP} from '../clients';
 
 export async function check(addresses: Record<string, any>) {
   if (addresses.STATIC_A_TOKEN_FACTORY) {

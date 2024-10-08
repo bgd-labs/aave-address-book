@@ -1,7 +1,6 @@
 import {Hex, Client, getContract, zeroAddress} from 'viem';
 import {AddressInfo, Addresses, PoolConfig, ReserveData} from '../configs/types';
 import {REWARDS_CONTROLLER_ABI} from '../abi/rewardsController_v3_abi';
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
   addressOrZero,
@@ -15,11 +14,14 @@ import {
   wrapIntoSolidityLibrary,
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
-import {IUiPoolDataProvider_ABI} from '../../src/ts/abis/IUiPoolDataProvider';
 import {IPoolAddressesProvider_ABI} from '../../src/ts/abis/IPoolAddressesProvider';
 import {IStaticATokenFactory_ABI} from '../../src/ts/abis/IStaticATokenFactory';
+import {IStataTokenFactory_ABI} from '../../src/ts/abis/IStataTokenFactory';
+import {IAaveOracle_ABI} from '../../src/ts/abis/IAaveOracle';
+import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {IAToken_ABI} from '../../src/ts/abis/IAToken';
 import {IPool_ABI} from '../../src/ts/abis/IPool';
+import {CHAIN_ID_CLIENT_MAP} from '../clients';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;
@@ -50,7 +52,6 @@ async function getAdditionalTokenInfo(
   COLLECTOR: AddressInfo;
   [key: `DEFAULT_A_TOKEN_IMPL_REV_${number}`]: AddressInfo;
   [key: `DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
-  [key: `DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
 }> {
   if (reservesData.length > 0) {
     const aTokenContract = getContract({
@@ -80,28 +81,13 @@ async function getAdditionalTokenInfo(
       ] as const,
       client,
     });
-    const stableDebtTokenContract = getContract({
-      address: reservesData[0].S_TOKEN,
-      abi: [
-        {
-          inputs: [],
-          name: 'DEBT_TOKEN_REVISION',
-          outputs: [{internalType: 'uint256', name: '', type: 'uint256'}],
-          stateMutability: 'view',
-          type: 'function',
-        },
-      ] as const,
-      client,
-    });
 
-    const [COLLECTOR, aTokenImplSlot, aTokenImplRevision, vTokenImplSlot, sTokenImplSlot] =
-      await Promise.all([
-        aTokenContract.read.RESERVE_TREASURY_ADDRESS(),
-        getImplementationStorageSlot(client, reservesData[0].A_TOKEN),
-        aTokenContract.read.ATOKEN_REVISION(),
-        getImplementationStorageSlot(client, reservesData[0].V_TOKEN),
-        getImplementationStorageSlot(client, reservesData[0].S_TOKEN),
-      ]);
+    const [COLLECTOR, aTokenImplSlot, aTokenImplRevision, vTokenImplSlot] = await Promise.all([
+      aTokenContract.read.RESERVE_TREASURY_ADDRESS(),
+      getImplementationStorageSlot(client, reservesData[0].A_TOKEN),
+      aTokenContract.read.ATOKEN_REVISION(),
+      getImplementationStorageSlot(client, reservesData[0].V_TOKEN),
+    ]);
     const defaultATokenImplementation = bytes32toAddress(aTokenImplSlot);
 
     const aTokenRevision = Number(aTokenImplRevision);
@@ -112,19 +98,11 @@ async function getAdditionalTokenInfo(
       await variableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
     );
 
-    const defaultStableDebtTokenImplementation = bytes32toAddress(sTokenImplSlot);
-
-    const stableDebtTokenRevision = Number(
-      await stableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
-    );
-
     return {
       COLLECTOR: {value: COLLECTOR, type: 'ICollector'},
       [`DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision}`]: defaultATokenImplementation,
       [`DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision}`]:
         defaultVariableDebtTokenImplementation,
-      [`DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_${stableDebtTokenRevision}`]:
-        defaultStableDebtTokenImplementation,
     };
   }
   return {
@@ -132,9 +110,6 @@ async function getAdditionalTokenInfo(
     DEFAULT_A_TOKEN_IMPL_REV_1: addressOrZero(pool.initial?.DEFAULT_A_TOKEN_IMPL),
     DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1: addressOrZero(
       pool.initial?.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL,
-    ),
-    DEFAULT_STABLE_DEBT_TOKEN_IMPL_REV_1: addressOrZero(
-      pool.initial?.DEFAULT_STABLE_DEBT_TOKEN_IMPL,
     ),
   };
 }
@@ -191,54 +166,74 @@ export async function getPoolV3Addresses(
       console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
 
-    let reservesData: PoolV3Addresses['reservesData'] = [];
     const eModes = new Map<number, string>();
-    // workaround, fix before merge
-    // didn't find all the ui pool data provider addresses, so currently there are gaps
-    if (pool.additionalAddresses.UI_POOL_DATA_PROVIDER) {
-      const uiPoolDataProvider = getContract({
-        address: pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
-        abi: IUiPoolDataProvider_ABI,
-        client,
-      });
-      const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
-        ? getContract({
-            address: pool.additionalAddresses.STATIC_A_TOKEN_FACTORY,
-            abi: IStaticATokenFactory_ABI,
-            client,
-          })
-        : null;
-      const data = (
-        await uiPoolDataProvider.read.getReservesData([pool.POOL_ADDRESSES_PROVIDER])
-      )[0];
-      reservesData = await Promise.all(
-        data.map(async (reserve) => {
-          eModes.set(reserve.eModeCategoryId, reserve.eModeLabel);
-          const result: ReserveData = {
-            symbol: reserve.symbol,
-            decimals: Number(reserve.decimals),
-            UNDERLYING: reserve.underlyingAsset,
-            A_TOKEN: reserve.aTokenAddress,
-            S_TOKEN: reserve.stableDebtTokenAddress,
-            V_TOKEN: reserve.variableDebtTokenAddress,
-            INTEREST_RATE_STRATEGY: reserve.interestRateStrategyAddress,
-            ORACLE: reserve.priceOracle,
-          };
-          if (staticATokenFactoryContract)
-            result.STATA_TOKEN = (await staticATokenFactoryContract.read.getStaticAToken([
-              reserve.underlyingAsset,
-            ])) as Hex;
-          return result;
-        }),
-      );
+    const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
+      ? getContract({
+          address: pool.additionalAddresses.STATIC_A_TOKEN_FACTORY,
+          abi: IStaticATokenFactory_ABI,
+          client,
+        })
+      : null;
+    const stataTokenFactoryContract = pool.additionalAddresses.STATA_FACTORY
+      ? getContract({
+          address: pool.additionalAddresses.STATA_FACTORY,
+          abi: IStataTokenFactory_ABI,
+          client,
+        })
+      : null;
+    const poolContract = getContract({address: POOL, abi: IPool_ABI, client});
+    const oracleContract = getContract({address: ORACLE, abi: IAaveOracle_ABI, client});
+
+    let i = 1;
+    let emptyCount = 0;
+    while (true) {
+      const eModeData = await poolContract.read.getEModeCategoryData([i]);
+      if (eModeData.liquidationThreshold == 0) {
+        emptyCount++;
+      } else {
+        eModes.set(i, eModeData.label);
+      }
+      if (emptyCount > 2) break;
+      i++;
     }
+    const reserves = await poolContract.read.getReservesList();
+    const reservesData: PoolV3Addresses['reservesData'] = await Promise.all(
+      reserves.map(async (reserve) => {
+        const erc20Contract = getContract({address: reserve, abi: IERC20Detailed_ABI, client});
+        const [data, symbol, decimals, oracle] = await Promise.all([
+          poolContract.read.getReserveData([reserve]),
+          reserve === '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
+            ? 'MRK'
+            : erc20Contract.read.symbol(),
+          erc20Contract.read.decimals(),
+          oracleContract.read.getSourceOfAsset([reserve]),
+        ]);
+        const result: ReserveData = {
+          symbol: reserve === '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2' ? 'MRK' : symbol,
+          decimals: decimals,
+          UNDERLYING: reserve,
+          A_TOKEN: data.aTokenAddress,
+          V_TOKEN: data.variableDebtTokenAddress,
+          INTEREST_RATE_STRATEGY: data.interestRateStrategyAddress,
+          ORACLE: oracle,
+        };
+        if (staticATokenFactoryContract)
+          result.STATIC_A_TOKEN = (await staticATokenFactoryContract.read.getStaticAToken([
+            reserve,
+          ])) as Hex;
+        if (stataTokenFactoryContract)
+          result.STATA_TOKEN = (await stataTokenFactoryContract.read.getStataToken([
+            reserve,
+          ])) as Hex;
+        return result;
+      }),
+    );
 
     const {COLLECTOR, ...rest} = await getAdditionalTokenInfo(client, pool, reservesData);
 
     // fetching libraries on 3.1+
     let externalLibraries: null | Record<string, AddressInfo> = null;
     try {
-      const poolContract = getContract({address: POOL, abi: IPool_ABI, client});
       const [
         FLASHLOAN_LOGIC,
         BORROW_LOGIC,

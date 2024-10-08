@@ -15,7 +15,7 @@ contract AaveAddressMisfitsTest is Test {
    * The arc is the only market where owner != POOL_ADMIN right now.
    * So this test ensures we actually use the pool admin.
    */
-  function testArcPoolAdminIsCorrect() public {
+  function testArcPoolAdminIsCorrect() public pure {
     assertEq(
       address(AaveV2EthereumArc.POOL_ADMIN),
       address(0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218)

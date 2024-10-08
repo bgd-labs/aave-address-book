@@ -1,7 +1,8 @@
-import {CHAIN_ID_CLIENT_MAP, ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '@bgd-labs/js-utils';
 import {ListItem, flattenedAddresses} from '../ui/src/utils/getAddresses';
 import {writeFileSync, readFileSync, existsSync, mkdirSync} from 'fs';
 import {Address, zeroAddress} from 'viem';
+import {CHAIN_ID_CLIENT_MAP} from './clients';
 
 const CHAIN_ID_API_KEY_MAP = {
   [ChainId.mainnet]: process.env.ETHERSCAN_API_KEY_MAINNET,

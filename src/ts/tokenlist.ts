@@ -18,6 +18,10 @@ export const tokenlist = {
       description: 'Tokens that earn interest on the Aave Protocol V3',
     },
     stataToken: {
+      name: 'stata token',
+      description: 'Tokens that are wrapped into a 4626 Vault',
+    },
+    staticAT: {
       name: 'static a token',
       description: 'Tokens that are wrapped into a 4626 Vault',
     },
@@ -1755,7 +1759,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum WETH',
       decimals: 18,
       symbol: 'stataEthWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -1792,7 +1796,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum wstETH',
       decimals: 18,
       symbol: 'stataEthwstETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg',
       extensions: {
@@ -1820,7 +1824,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum WBTC',
       decimals: 8,
       symbol: 'stataEthWBTC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawbtc.svg',
       extensions: {
@@ -1848,7 +1852,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum USDC',
       decimals: 6,
       symbol: 'stataEthUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -1876,7 +1880,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum DAI',
       decimals: 18,
       symbol: 'stataEthDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -1903,7 +1907,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum LINK',
       decimals: 18,
       symbol: 'stataEthLINK',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalink.svg',
       extensions: {
@@ -1931,7 +1935,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum AAVE',
       decimals: 18,
       symbol: 'stataEthAAVE',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg',
       extensions: {
@@ -1968,7 +1972,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum cbETH',
       decimals: 18,
       symbol: 'stataEthcbETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statacbeth.svg',
       extensions: {
@@ -1996,7 +2000,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum USDT',
       decimals: 6,
       symbol: 'stataEthUSDT',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg',
       extensions: {
@@ -2033,7 +2037,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum rETH',
       decimals: 18,
       symbol: 'stataEthrETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statareth.svg',
       extensions: {
@@ -2061,7 +2065,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum LUSD',
       decimals: 18,
       symbol: 'stataEthLUSD',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalusd.svg',
       extensions: {
@@ -2089,7 +2093,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum CRV',
       decimals: 18,
       symbol: 'stataEthCRV',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statacrv.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -2104,7 +2108,6 @@ export const tokenlist = {
       decimals: 18,
       symbol: 'aEthMKR',
       tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/amkr.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
         underlying: '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2',
@@ -2129,7 +2132,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum SNX',
       decimals: 18,
       symbol: 'stataEthSNX',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasnx.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -2169,7 +2172,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum UNI',
       decimals: 18,
       symbol: 'stataEthUNI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statauni.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -2205,7 +2208,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum LDO',
       decimals: 18,
       symbol: 'stataEthLDO',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataldo.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -2232,7 +2235,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum ENS',
       decimals: 18,
       symbol: 'stataEthENS',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataens.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -2259,7 +2262,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum 1INCH',
       decimals: 18,
       symbol: 'stataEthONE_INCH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stata1inch.svg',
       extensions: {
@@ -2287,7 +2290,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum FRAX',
       decimals: 18,
       symbol: 'stataEthFRAX',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statafrax.svg',
       extensions: {
@@ -2324,7 +2327,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum GHO',
       decimals: 18,
       symbol: 'stataEthGHO',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -2360,7 +2363,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum RPL',
       decimals: 18,
       symbol: 'stataEthRPL',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statarpl.svg',
       extensions: {
         pool: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2',
@@ -2396,7 +2399,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum sDAI',
       decimals: 18,
       symbol: 'stataEthsDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasdai.svg',
       extensions: {
@@ -2499,7 +2502,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum crvUSD',
       decimals: 18,
       symbol: 'stataEthcrvUSD',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statacrvusd.svg',
       extensions: {
@@ -2536,7 +2539,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum PYUSD',
       decimals: 6,
       symbol: 'stataEthPYUSD',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statapyusd.svg',
       extensions: {
@@ -2595,7 +2598,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum osETH',
       decimals: 18,
       symbol: 'stataEthosETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataoseth.svg',
       extensions: {
@@ -2632,7 +2635,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum USDe',
       decimals: 18,
       symbol: 'stataEthUSDe',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausde.svg',
       extensions: {
@@ -2669,7 +2672,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum ETHx',
       decimals: 18,
       symbol: 'stataEthETHx',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataethx.svg',
       extensions: {
@@ -2706,7 +2709,7 @@ export const tokenlist = {
       name: 'Static Aave Ethereum sUSDe',
       decimals: 18,
       symbol: 'stataEthsUSDe',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasusde.svg',
       extensions: {
@@ -2794,7 +2797,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon DAI',
       decimals: 18,
       symbol: 'stataPolDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -2821,7 +2824,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon LINK',
       decimals: 18,
       symbol: 'stataPolLINK',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalink.svg',
       extensions: {
@@ -2849,7 +2852,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon USDC',
       decimals: 6,
       symbol: 'stataPolUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -2877,7 +2880,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon WBTC',
       decimals: 8,
       symbol: 'stataPolWBTC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawbtc.svg',
       extensions: {
@@ -2905,7 +2908,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon WETH',
       decimals: 18,
       symbol: 'stataPolWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -2933,7 +2936,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon USDT',
       decimals: 6,
       symbol: 'stataPolUSDT',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg',
       extensions: {
@@ -2961,7 +2964,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon AAVE',
       decimals: 18,
       symbol: 'stataPolAAVE',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg',
       extensions: {
@@ -2988,7 +2991,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon WMATIC',
       decimals: 18,
       symbol: 'stataPolWMATIC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
         underlying: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
@@ -3014,7 +3017,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon CRV',
       decimals: 18,
       symbol: 'stataPolCRV',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statacrv.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -3041,7 +3044,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon SUSHI',
       decimals: 18,
       symbol: 'stataPolSUSHI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasushi.svg',
       extensions: {
@@ -3069,7 +3072,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon GHST',
       decimals: 18,
       symbol: 'stataPolGHST',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataghst.svg',
       extensions: {
@@ -3097,7 +3100,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon BAL',
       decimals: 18,
       symbol: 'stataPolBAL',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statabal.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -3124,7 +3127,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon DPI',
       decimals: 18,
       symbol: 'stataPolDPI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadpi.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -3160,7 +3163,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon EURS',
       decimals: 2,
       symbol: 'stataPolEURS',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataeurs.svg',
       extensions: {
@@ -3197,7 +3200,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon JEUR',
       decimals: 18,
       symbol: 'stataPolJEUR',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statajeur.svg',
       extensions: {
@@ -3234,7 +3237,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon AGEUR',
       decimals: 18,
       symbol: 'stataPolAGEUR',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataeura.svg',
       extensions: {
@@ -3271,7 +3274,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon MIMATIC',
       decimals: 18,
       symbol: 'stataPolMIMATIC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statamai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -3307,7 +3310,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon STMATIC',
       decimals: 18,
       symbol: 'stataPolSTMATIC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statastmatic.svg',
       extensions: {
@@ -3344,7 +3347,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon MATICX',
       decimals: 18,
       symbol: 'stataPolMATICX',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statamaticx.svg',
       extensions: {
@@ -3381,7 +3384,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon wstETH',
       decimals: 18,
       symbol: 'stataPolwstETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg',
       extensions: {
@@ -3418,7 +3421,7 @@ export const tokenlist = {
       name: 'Static Aave Polygon USDCn',
       decimals: 6,
       symbol: 'stataPolUSDCn',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -3446,7 +3449,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche DAI',
       decimals: 18,
       symbol: 'stataAvaDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -3482,7 +3485,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche LINK',
       decimals: 18,
       symbol: 'stataAvaLINK',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalink.svg',
       extensions: {
@@ -3519,7 +3522,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche USDC',
       decimals: 6,
       symbol: 'stataAvaUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -3547,7 +3550,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche WBTC',
       decimals: 8,
       symbol: 'stataAvaWBTC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawbtc.svg',
       extensions: {
@@ -3575,7 +3578,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche WETH',
       decimals: 18,
       symbol: 'stataAvaWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -3612,7 +3615,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche USDT',
       decimals: 6,
       symbol: 'stataAvaUSDT',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg',
       extensions: {
@@ -3640,7 +3643,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche AAVE',
       decimals: 18,
       symbol: 'stataAvaAAVE',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg',
       extensions: {
@@ -3668,7 +3671,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche WAVAX',
       decimals: 18,
       symbol: 'stataAvaWAVAX',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawavax.svg',
       extensions: {
@@ -3705,7 +3708,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche SAVAX',
       decimals: 18,
       symbol: 'stataAvaSAVAX',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasavax.svg',
       extensions: {
@@ -3742,7 +3745,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche FRAX',
       decimals: 18,
       symbol: 'stataAvaFRAX',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statafrax.svg',
       extensions: {
@@ -3779,7 +3782,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche MAI',
       decimals: 18,
       symbol: 'stataAvaMAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statamai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -3815,7 +3818,7 @@ export const tokenlist = {
       name: 'Static Aave Avalanche BTC.b',
       decimals: 8,
       symbol: 'stataAvaBTCb',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statabtc.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -3851,7 +3854,7 @@ export const tokenlist = {
       name: 'Static Aave Base WETH',
       decimals: 18,
       symbol: 'stataBasWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -3888,7 +3891,7 @@ export const tokenlist = {
       name: 'Static Aave Base cbETH',
       decimals: 18,
       symbol: 'stataBascbETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statacbeth.svg',
       extensions: {
@@ -3925,7 +3928,7 @@ export const tokenlist = {
       name: 'Static Aave Base USDbC',
       decimals: 6,
       symbol: 'stataBasUSDbC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdbc.svg',
       extensions: {
@@ -3962,7 +3965,7 @@ export const tokenlist = {
       name: 'Static Aave Base wstETH',
       decimals: 18,
       symbol: 'stataBaswstETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg',
       extensions: {
@@ -3999,7 +4002,7 @@ export const tokenlist = {
       name: 'Static Aave Base USDC',
       decimals: 6,
       symbol: 'stataBasUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -4036,7 +4039,7 @@ export const tokenlist = {
       name: 'Static Aave Base weETH',
       decimals: 18,
       symbol: 'stataBasweETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweeth.svg',
       extensions: {
@@ -4093,7 +4096,7 @@ export const tokenlist = {
       name: 'Static Aave Metis mDAI',
       decimals: 18,
       symbol: 'stataMetmDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg',
       extensions: {
         pool: '0x90df02551bB792286e8D4f13E0e357b4Bf1D6a57',
@@ -4129,7 +4132,7 @@ export const tokenlist = {
       name: 'Static Aave Metis METIS',
       decimals: 18,
       symbol: 'stataMetMETIS',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statametis.svg',
       extensions: {
@@ -4166,7 +4169,7 @@ export const tokenlist = {
       name: 'Static Aave Metis mUSDC',
       decimals: 6,
       symbol: 'stataMetmUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -4203,7 +4206,7 @@ export const tokenlist = {
       name: 'Static Aave Metis mUSDT',
       decimals: 6,
       symbol: 'stataMetmUSDT',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg',
       extensions: {
@@ -4240,7 +4243,7 @@ export const tokenlist = {
       name: 'Static Aave Metis WETH',
       decimals: 18,
       symbol: 'stataMetWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -4277,7 +4280,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis WETH',
       decimals: 18,
       symbol: 'stataGnoWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -4314,7 +4317,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis wstETH',
       decimals: 18,
       symbol: 'stataGnowstETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg',
       extensions: {
@@ -4351,7 +4354,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis GNO',
       decimals: 18,
       symbol: 'stataGnoGNO',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagno.svg',
       extensions: {
         pool: '0xb50201558B00496A145fE76f7424749556E326D8',
@@ -4387,7 +4390,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis USDC',
       decimals: 6,
       symbol: 'stataGnoUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -4424,7 +4427,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis WXDAI',
       decimals: 18,
       symbol: 'stataGnoWXDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawxdai.svg',
       extensions: {
@@ -4461,7 +4464,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis EURe',
       decimals: 18,
       symbol: 'stataGnoEURe',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataeure.svg',
       extensions: {
@@ -4498,7 +4501,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis sDAI',
       decimals: 18,
       symbol: 'stataGnosDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasdai.svg',
       extensions: {
@@ -4535,7 +4538,7 @@ export const tokenlist = {
       name: 'Static Aave Gnosis USDCe',
       decimals: 6,
       symbol: 'stataGnoUSDCe',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -4572,7 +4575,7 @@ export const tokenlist = {
       name: 'Static Aave BNB Smart Chain CAKE',
       decimals: 18,
       symbol: 'stataBnbCAKE',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statacake.svg',
       extensions: {
@@ -4609,7 +4612,7 @@ export const tokenlist = {
       name: 'Static Aave BNB Smart Chain WBNB',
       decimals: 18,
       symbol: 'stataBnbWBNB',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawbnb.svg',
       extensions: {
@@ -4646,7 +4649,7 @@ export const tokenlist = {
       name: 'Static Aave BNB Smart Chain BTCB',
       decimals: 18,
       symbol: 'stataBnbBTCB',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statabtc.svg',
       extensions: {
         pool: '0x6807dc923806fE8Fd134338EABCA509979a7e0cB',
@@ -4682,7 +4685,7 @@ export const tokenlist = {
       name: 'Static Aave BNB Smart Chain ETH',
       decimals: 18,
       symbol: 'stataBnbETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataeth.svg',
       extensions: {
         pool: '0x6807dc923806fE8Fd134338EABCA509979a7e0cB',
@@ -4718,7 +4721,7 @@ export const tokenlist = {
       name: 'Static Aave BNB Smart Chain USDC',
       decimals: 18,
       symbol: 'stataBnbUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -4755,7 +4758,7 @@ export const tokenlist = {
       name: 'Static Aave BNB Smart Chain USDT',
       decimals: 18,
       symbol: 'stataBnbUSDT',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg',
       extensions: {
@@ -4792,7 +4795,7 @@ export const tokenlist = {
       name: 'Static Aave BNB Smart Chain FDUSD',
       decimals: 18,
       symbol: 'stataBnbFDUSD',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statafdusd.svg',
       extensions: {
@@ -4829,7 +4832,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum DAI',
       decimals: 18,
       symbol: 'stataArbDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -4865,7 +4868,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum LINK',
       decimals: 18,
       symbol: 'stataArbLINK',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalink.svg',
       extensions: {
@@ -4902,7 +4905,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum USDC',
       decimals: 6,
       symbol: 'stataArbUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -4939,7 +4942,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum WBTC',
       decimals: 8,
       symbol: 'stataArbWBTC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawbtc.svg',
       extensions: {
@@ -4976,7 +4979,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum WETH',
       decimals: 18,
       symbol: 'stataArbWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -5013,7 +5016,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum USDT',
       decimals: 6,
       symbol: 'stataArbUSDT',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg',
       extensions: {
@@ -5050,7 +5053,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum AAVE',
       decimals: 18,
       symbol: 'stataArbAAVE',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg',
       extensions: {
@@ -5087,7 +5090,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum EURS',
       decimals: 2,
       symbol: 'stataArbEURS',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataeurs.svg',
       extensions: {
@@ -5124,7 +5127,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum wstETH',
       decimals: 18,
       symbol: 'stataArbwstETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg',
       extensions: {
@@ -5161,7 +5164,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum MAI',
       decimals: 18,
       symbol: 'stataArbMAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statamai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -5197,7 +5200,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum rETH',
       decimals: 18,
       symbol: 'stataArbrETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statareth.svg',
       extensions: {
@@ -5234,7 +5237,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum LUSD',
       decimals: 18,
       symbol: 'stataArbLUSD',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalusd.svg',
       extensions: {
@@ -5271,7 +5274,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum USDCn',
       decimals: 6,
       symbol: 'stataArbUSDCn',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -5308,7 +5311,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum FRAX',
       decimals: 18,
       symbol: 'stataArbFRAX',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statafrax.svg',
       extensions: {
@@ -5345,7 +5348,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum ARB',
       decimals: 18,
       symbol: 'stataArbARB',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataarb.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -5403,7 +5406,7 @@ export const tokenlist = {
       name: 'Static Aave Arbitrum GHO',
       decimals: 18,
       symbol: 'stataArbGHO',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -5439,7 +5442,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism DAI',
       decimals: 18,
       symbol: 'stataOptDAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -5475,7 +5478,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism LINK',
       decimals: 18,
       symbol: 'stataOptLINK',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalink.svg',
       extensions: {
@@ -5512,7 +5515,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism USDC',
       decimals: 6,
       symbol: 'stataOptUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -5549,7 +5552,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism WBTC',
       decimals: 8,
       symbol: 'stataOptWBTC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawbtc.svg',
       extensions: {
@@ -5586,7 +5589,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism WETH',
       decimals: 18,
       symbol: 'stataOptWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -5623,7 +5626,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism USDT',
       decimals: 6,
       symbol: 'stataOptUSDT',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg',
       extensions: {
@@ -5660,7 +5663,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism AAVE',
       decimals: 18,
       symbol: 'stataOptAAVE',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg',
       extensions: {
@@ -5697,7 +5700,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism SUSD',
       decimals: 18,
       symbol: 'stataOptSUSD',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasusd.svg',
       extensions: {
@@ -5734,7 +5737,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism OP',
       decimals: 18,
       symbol: 'stataOptOP',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataop.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -5770,7 +5773,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism wstETH',
       decimals: 18,
       symbol: 'stataOptwstETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg',
       extensions: {
@@ -5807,7 +5810,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism LUSD',
       decimals: 18,
       symbol: 'stataOptLUSD',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalusd.svg',
       extensions: {
@@ -5844,7 +5847,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism MAI',
       decimals: 18,
       symbol: 'stataOptMAI',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statamai.svg',
       extensions: {
         pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
@@ -5880,7 +5883,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism rETH',
       decimals: 18,
       symbol: 'stataOptrETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statareth.svg',
       extensions: {
@@ -5917,7 +5920,7 @@ export const tokenlist = {
       name: 'Static Aave Optimism USDCn',
       decimals: 6,
       symbol: 'stataOptUSDCn',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -5954,7 +5957,7 @@ export const tokenlist = {
       name: 'Static Aave Scroll WETH',
       decimals: 18,
       symbol: 'stataScrWETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg',
       extensions: {
@@ -5991,7 +5994,7 @@ export const tokenlist = {
       name: 'Static Aave Scroll USDC',
       decimals: 6,
       symbol: 'stataScrUSDC',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg',
       extensions: {
@@ -6028,7 +6031,7 @@ export const tokenlist = {
       name: 'Static Aave Scroll wstETH',
       decimals: 18,
       symbol: 'stataScrwstETH',
-      tags: ['aaveV3', 'stataToken'],
+      tags: ['aaveV3', 'staticAT'],
       logoURI:
         'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawsteth.svg',
       extensions: {
@@ -6167,226 +6170,6 @@ export const tokenlist = {
       extensions: {
         pool: '0x78e30497a3c7527d953c6B1E3541b021A98Ac43c',
         underlying: '0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-      name: 'Dai Stablecoin',
-      decimals: 18,
-      symbol: 'DAI',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/dai.svg',
-    },
-    {
-      chainId: 250,
-      address: '0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE',
-      name: 'Aave Fantom DAI',
-      decimals: 18,
-      symbol: 'aFanDAI',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/adai.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
-      name: 'ChainLink',
-      decimals: 18,
-      symbol: 'LINK',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/link.svg',
-    },
-    {
-      chainId: 250,
-      address: '0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530',
-      name: 'Aave Fantom LINK',
-      decimals: 18,
-      symbol: 'aFanLINK',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/alink.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-      name: 'USD Coin',
-      decimals: 6,
-      symbol: 'USDC',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg',
-    },
-    {
-      chainId: 250,
-      address: '0x625E7708f30cA75bfd92586e17077590C60eb4cD',
-      name: 'Aave Fantom USDC',
-      decimals: 6,
-      symbol: 'aFanUSDC',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x321162Cd933E2Be498Cd2267a90534A804051b11',
-      name: 'Bitcoin',
-      decimals: 8,
-      symbol: 'BTC',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/btc.svg',
-    },
-    {
-      chainId: 250,
-      address: '0x078f358208685046a11C85e8ad32895DED33A249',
-      name: 'Aave Fantom WBTC',
-      decimals: 8,
-      symbol: 'aFanWBTC',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/abtc.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x321162Cd933E2Be498Cd2267a90534A804051b11',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x74b23882a30290451A17c44f4F05243b6b58C76d',
-      name: 'Ethereum',
-      decimals: 18,
-      symbol: 'ETH',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eth.svg',
-    },
-    {
-      chainId: 250,
-      address: '0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8',
-      name: 'Aave Fantom WETH',
-      decimals: 18,
-      symbol: 'aFanWETH',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeth.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x74b23882a30290451A17c44f4F05243b6b58C76d',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x049d68029688eAbF473097a2fC38ef61633A3C7A',
-      name: 'Frapped USDT',
-      decimals: 6,
-      symbol: 'fUSDT',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg',
-    },
-    {
-      chainId: 250,
-      address: '0x6ab707Aca953eDAeFBc4fD23bA73294241490620',
-      name: 'Aave Fantom USDT',
-      decimals: 6,
-      symbol: 'aFanUSDT',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x049d68029688eAbF473097a2fC38ef61633A3C7A',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B',
-      name: 'Aave',
-      decimals: 18,
-      symbol: 'AAVE',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg',
-    },
-    {
-      chainId: 250,
-      address: '0xf329e36C7bF6E5E86ce2150875a84Ce77f477375',
-      name: 'Aave Fantom AAVE',
-      decimals: 18,
-      symbol: 'aFanAAVE',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aaave.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
-      name: 'Wrapped Fantom',
-      decimals: 18,
-      symbol: 'WFTM',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wftm.svg',
-    },
-    {
-      chainId: 250,
-      address: '0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97',
-      name: 'Aave Fantom WFTM',
-      decimals: 18,
-      symbol: 'aFanWFTM',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awftm.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0x1E4F97b9f9F913c46F1632781732927B9019C68b',
-      name: 'Curve DAO',
-      decimals: 18,
-      symbol: 'CRV',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/crv.svg',
-    },
-    {
-      chainId: 250,
-      address: '0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf',
-      name: 'Aave Fantom CRV',
-      decimals: 18,
-      symbol: 'aFanCRV',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/acrv.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0x1E4F97b9f9F913c46F1632781732927B9019C68b',
-      },
-    },
-    {
-      chainId: 250,
-      address: '0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
-      name: 'Sushi',
-      decimals: 18,
-      symbol: 'SUSHI',
-      tags: ['underlying'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/sushi.svg',
-    },
-    {
-      chainId: 250,
-      address: '0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA',
-      name: 'Aave Fantom SUSHI',
-      decimals: 18,
-      symbol: 'aFanSUSHI',
-      tags: ['aTokenV3', 'aaveV3'],
-      logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asushi.svg',
-      extensions: {
-        pool: '0x794a61358D6845594F94dc1DB02A252b5b4814aD',
-        underlying: '0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC',
       },
     },
     {
@@ -6669,6 +6452,6 @@ export const tokenlist = {
       },
     },
   ],
-  version: {major: 3, minor: 0, patch: 45},
-  timestamp: '2024-10-08T00:12:40.399Z',
+  version: {major: 3, minor: 0, patch: 48},
+  timestamp: '2024-10-08T13:07:37.712Z',
 };

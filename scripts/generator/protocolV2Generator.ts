@@ -1,6 +1,5 @@
 import {Hex, Client, getContract} from 'viem';
 import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
-import {CHAIN_ID_CLIENT_MAP} from '@bgd-labs/js-utils';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
   bytes32toAddress,
@@ -18,6 +17,7 @@ import {INCENTIVES_CONTROLLER_ABI} from '../abi/incentivesController_abi';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {UI_POOL_DATA_PROVIDER_V2_ABI} from '../abi/uiPoolData_provider_v2_abi';
 import {mainnetAmmV2Pool} from '../configs/pools/ethereum';
+import {CHAIN_ID_CLIENT_MAP} from '../clients';
 
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;

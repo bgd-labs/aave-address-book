@@ -109,9 +109,6 @@ library AaveV2AvalancheAssets {
   // https://snowtrace.io/address/0x4e575CacB37bc1b5afEc68a0462c4165A5268983
   address internal constant WETHe_V_TOKEN = 0x4e575CacB37bc1b5afEc68a0462c4165A5268983;
 
-  // https://snowtrace.io/address/0x60F6A45006323B97d97cB0a42ac39e2b757ADA63
-  address internal constant WETHe_S_TOKEN = 0x60F6A45006323B97d97cB0a42ac39e2b757ADA63;
-
   // https://snowtrace.io/address/0x976B3D034E162d8bD72D6b9C989d545b839003b0
   address internal constant WETHe_ORACLE = 0x976B3D034E162d8bD72D6b9C989d545b839003b0;
 
@@ -129,9 +126,6 @@ library AaveV2AvalancheAssets {
 
   // https://snowtrace.io/address/0x1852DC24d1a8956a0B356AA18eDe954c7a0Ca5ae
   address internal constant DAIe_V_TOKEN = 0x1852DC24d1a8956a0B356AA18eDe954c7a0Ca5ae;
-
-  // https://snowtrace.io/address/0x3676E4EE689D527dDb89812B63fAD0B7501772B3
-  address internal constant DAIe_S_TOKEN = 0x3676E4EE689D527dDb89812B63fAD0B7501772B3;
 
   // https://snowtrace.io/address/0xf82da795727633aFA9BB0f1B08A87c0F6A38723f
   address internal constant DAIe_ORACLE = 0xf82da795727633aFA9BB0f1B08A87c0F6A38723f;
@@ -151,9 +145,6 @@ library AaveV2AvalancheAssets {
   // https://snowtrace.io/address/0xfc1AdA7A288d6fCe0d29CcfAAa57Bc9114bb2DbE
   address internal constant USDTe_V_TOKEN = 0xfc1AdA7A288d6fCe0d29CcfAAa57Bc9114bb2DbE;
 
-  // https://snowtrace.io/address/0x9c7B81A867499B7387ed05017a13d4172a0c17bF
-  address internal constant USDTe_S_TOKEN = 0x9c7B81A867499B7387ed05017a13d4172a0c17bF;
-
   // https://snowtrace.io/address/0x39185f2236A6022b682e8BB93C040d125DA093CF
   address internal constant USDTe_ORACLE = 0x39185f2236A6022b682e8BB93C040d125DA093CF;
 
@@ -171,9 +162,6 @@ library AaveV2AvalancheAssets {
 
   // https://snowtrace.io/address/0x848c080d2700CBE1B894a3374AD5E887E5cCb89c
   address internal constant USDCe_V_TOKEN = 0x848c080d2700CBE1B894a3374AD5E887E5cCb89c;
-
-  // https://snowtrace.io/address/0x5B14679135dbE8B02015ec3Ca4924a12E4C6C85a
-  address internal constant USDCe_S_TOKEN = 0x5B14679135dbE8B02015ec3Ca4924a12E4C6C85a;
 
   // https://snowtrace.io/address/0xD8277249e871BE9A402fa286C2C5ec16046dC512
   address internal constant USDCe_ORACLE = 0xD8277249e871BE9A402fa286C2C5ec16046dC512;
@@ -193,9 +181,6 @@ library AaveV2AvalancheAssets {
   // https://snowtrace.io/address/0x8352E3fd18B8d84D3c8a1b538d788899073c7A8E
   address internal constant AAVEe_V_TOKEN = 0x8352E3fd18B8d84D3c8a1b538d788899073c7A8E;
 
-  // https://snowtrace.io/address/0x66904E4F3f44e3925D22ceca401b6F2DA085c98f
-  address internal constant AAVEe_S_TOKEN = 0x66904E4F3f44e3925D22ceca401b6F2DA085c98f;
-
   // https://snowtrace.io/address/0x3CA13391E9fb38a75330fb28f8cc2eB3D9ceceED
   address internal constant AAVEe_ORACLE = 0x3CA13391E9fb38a75330fb28f8cc2eB3D9ceceED;
 
@@ -214,9 +199,6 @@ library AaveV2AvalancheAssets {
   // https://snowtrace.io/address/0x2dc0E35eC3Ab070B8a175C829e23650Ee604a9eB
   address internal constant WBTCe_V_TOKEN = 0x2dc0E35eC3Ab070B8a175C829e23650Ee604a9eB;
 
-  // https://snowtrace.io/address/0x3484408989985d68C9700dc1CFDFeAe6d2f658CF
-  address internal constant WBTCe_S_TOKEN = 0x3484408989985d68C9700dc1CFDFeAe6d2f658CF;
-
   // https://snowtrace.io/address/0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743
   address internal constant WBTCe_ORACLE = 0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743;
 
@@ -234,9 +216,6 @@ library AaveV2AvalancheAssets {
 
   // https://snowtrace.io/address/0x66A0FE52Fb629a6cB4D10B8580AFDffE888F5Fd4
   address internal constant WAVAX_V_TOKEN = 0x66A0FE52Fb629a6cB4D10B8580AFDffE888F5Fd4;
-
-  // https://snowtrace.io/address/0x2920CD5b8A160b2Addb00Ec5d5f4112255d4ae75
-  address internal constant WAVAX_S_TOKEN = 0x2920CD5b8A160b2Addb00Ec5d5f4112255d4ae75;
 
   // https://snowtrace.io/address/0x0A77230d17318075983913bC2145DB16C7366156
   address internal constant WAVAX_ORACLE = 0x0A77230d17318075983913bC2145DB16C7366156;
