@@ -67,19 +67,6 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'MAX_STABLE_RATE_BORROW_SIZE_PERCENT',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
     name: 'backUnbacked',
     inputs: [
       {
@@ -152,7 +139,7 @@ export const IPool_ABI = [
       {
         name: 'config',
         type: 'tuple',
-        internalType: 'struct DataTypes.EModeCategory',
+        internalType: 'struct DataTypes.EModeCategoryBaseConfiguration',
         components: [
           {
             name: 'ltv',
@@ -170,16 +157,47 @@ export const IPool_ABI = [
             internalType: 'uint16',
           },
           {
-            name: 'priceSource',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
             name: 'label',
             type: 'string',
             internalType: 'string',
           },
         ],
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'configureEModeCategoryBorrowableBitmap',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+      {
+        name: 'borrowableBitmap',
+        type: 'uint128',
+        internalType: 'uint128',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'configureEModeCategoryCollateralBitmap',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+      {
+        name: 'collateralBitmap',
+        type: 'uint128',
+        internalType: 'uint128',
       },
     ],
     outputs: [],
@@ -394,6 +412,80 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
+    name: 'getEModeCategoryBorrowableBitmap',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'uint128',
+        internalType: 'uint128',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getEModeCategoryCollateralBitmap',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'uint128',
+        internalType: 'uint128',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getEModeCategoryCollateralConfig',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'tuple',
+        internalType: 'struct DataTypes.CollateralConfig',
+        components: [
+          {
+            name: 'ltv',
+            type: 'uint16',
+            internalType: 'uint16',
+          },
+          {
+            name: 'liquidationThreshold',
+            type: 'uint16',
+            internalType: 'uint16',
+          },
+          {
+            name: 'liquidationBonus',
+            type: 'uint16',
+            internalType: 'uint16',
+          },
+        ],
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'getEModeCategoryData',
     inputs: [
       {
@@ -406,7 +498,7 @@ export const IPool_ABI = [
       {
         name: '',
         type: 'tuple',
-        internalType: 'struct DataTypes.EModeCategory',
+        internalType: 'struct DataTypes.EModeCategoryLegacy',
         components: [
           {
             name: 'ltv',
@@ -434,6 +526,25 @@ export const IPool_ABI = [
             internalType: 'string',
           },
         ],
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getEModeCategoryLabel',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'string',
+        internalType: 'string',
       },
     ],
     stateMutability: 'view',
@@ -680,7 +791,7 @@ export const IPool_ABI = [
             internalType: 'uint128',
           },
           {
-            name: 'currentStableBorrowRate',
+            name: '__deprecatedStableBorrowRate',
             type: 'uint128',
             internalType: 'uint128',
           },
@@ -705,7 +816,7 @@ export const IPool_ABI = [
             internalType: 'address',
           },
           {
-            name: 'stableDebtTokenAddress',
+            name: '__deprecatedStableDebtTokenAddress',
             type: 'address',
             internalType: 'address',
           },
@@ -944,11 +1055,6 @@ export const IPool_ABI = [
         internalType: 'address',
       },
       {
-        name: 'stableDebtAddress',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
         name: 'variableDebtAddress',
         type: 'address',
         internalType: 'address',
@@ -1031,24 +1137,6 @@ export const IPool_ABI = [
         name: 'referralCode',
         type: 'uint16',
         internalType: 'uint16',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    name: 'rebalanceStableBorrowRate',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'user',
-        type: 'address',
-        internalType: 'address',
       },
     ],
     outputs: [],
@@ -1370,42 +1458,6 @@ export const IPool_ABI = [
         name: 'permitS',
         type: 'bytes32',
         internalType: 'bytes32',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    name: 'swapBorrowRateMode',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'interestRateMode',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    name: 'swapToVariable',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'user',
-        type: 'address',
-        internalType: 'address',
       },
     ],
     outputs: [],
@@ -1752,25 +1804,6 @@ export const IPool_ABI = [
   },
   {
     type: 'event',
-    name: 'RebalanceStableBorrowRate',
-    inputs: [
-      {
-        name: 'reserve',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'user',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
     name: 'Repay',
     inputs: [
       {
@@ -1920,31 +1953,6 @@ export const IPool_ABI = [
         type: 'uint16',
         indexed: true,
         internalType: 'uint16',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
-    name: 'SwapBorrowRateMode',
-    inputs: [
-      {
-        name: 'reserve',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'user',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'interestRateMode',
-        type: 'uint8',
-        indexed: false,
-        internalType: 'enum DataTypes.InterestRateMode',
       },
     ],
     anonymous: false,

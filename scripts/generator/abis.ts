@@ -12,8 +12,5 @@ export function generateABIImports() {
     const varName = `${INTERFACE.name}_ABI`;
     jsExports.push(`export {${varName}} from './abis/${INTERFACE.name}';`);
   }
-  return {
-    solidity: [],
-    js: jsExports,
-  };
+  return jsExports;
 }
