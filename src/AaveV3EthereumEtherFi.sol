@@ -167,7 +167,9 @@ library AaveV3EthereumEtherFiAssets {
     0xC16666b7FF197427BD255E6961A5F99cfb3A6059;
 }
 
-library AaveV3EthereumEtherFiEModes {}
+library AaveV3EthereumEtherFiEModes {
+  uint8 internal constant NONE = 0;
+}
 
 library AaveV3EthereumEtherFiExternalLibraries {
   // https://etherscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

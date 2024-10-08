@@ -94,9 +94,9 @@ export function generateJsConstants({chainId, addresses}: {chainId: number; addr
     .map((key) => addressToJsConstant(chainId, key, addresses[key]));
 }
 
-export function generateJsObject({addresses}: {addresses: Addresses}) {
+export function generateJsObject(object: any) {
   return JSON.stringify(
-    addresses,
+    object,
     function (key, value) {
       if (!key) return value;
       return typeof value === 'object' ? value.value : value;

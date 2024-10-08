@@ -133,7 +133,9 @@ library AaveV3BaseSepoliaAssets {
     0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
 }
 
-library AaveV3BaseSepoliaEModes {}
+library AaveV3BaseSepoliaEModes {
+  uint8 internal constant NONE = 0;
+}
 
 library AaveV3BaseSepoliaExternalLibraries {
   // https://sepolia.basescan.org/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

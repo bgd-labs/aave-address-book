@@ -53,10 +53,10 @@ export function generateEmodeLibrary(
     solidity: wrapIntoSolidityLibrary(
       generateSolidityConstants({
         chainId,
-        addresses: formatted,
+        addresses: {NONE: {value: 0, type: 'uint8'}, ...formatted},
       }),
       libraryName,
     ),
-    js: `export const E_MODES = ${JSON.stringify(Object.fromEntries(eModes))} as const;\n`,
+    js: `export const E_MODES = ${generateJsObject(Object.fromEntries(eModes))} as const;\n`,
   };
 }

@@ -247,7 +247,9 @@ library AaveV3BNBAssets {
   address internal constant FDUSD_STATIC_A_TOKEN = 0x4d074aAa0821073dA827f7bf6a02cF905b394ed0;
 }
 
-library AaveV3BNBEModes {}
+library AaveV3BNBEModes {
+  uint8 internal constant NONE = 0;
+}
 
 library AaveV3BNBExternalLibraries {
   // https://bscscan.com/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

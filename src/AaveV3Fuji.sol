@@ -130,7 +130,9 @@ library AaveV3FujiAssets {
     0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461;
 }
 
-library AaveV3FujiEModes {}
+library AaveV3FujiEModes {
+  uint8 internal constant NONE = 0;
+}
 
 library AaveV3FujiExternalLibraries {
   // https://testnet.snowtrace.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

@@ -196,7 +196,9 @@ library AaveV3MetisAssets {
   address internal constant WETH_STATIC_A_TOKEN = 0x2f1606864d6322c54b50a1762D4a1ca67f42d23d;
 }
 
-library AaveV3MetisEModes {}
+library AaveV3MetisEModes {
+  uint8 internal constant NONE = 0;
+}
 
 library AaveV3MetisExternalLibraries {
   // https://explorer.metis.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
