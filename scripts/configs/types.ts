@@ -81,6 +81,7 @@ export type ReserveData = {
   symbol: string;
   UNDERLYING: Hex;
   decimals: number;
+  id: number;
   A_TOKEN: Hex;
   V_TOKEN: Hex;
   INTEREST_RATE_STRATEGY: Hex;

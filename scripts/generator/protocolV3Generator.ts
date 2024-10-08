@@ -166,7 +166,6 @@ export async function getPoolV3Addresses(
       console.log(`old version of incentives controller deployed on ${pool.name}`);
     }
 
-    const eModes = new Map<number, string>();
     const staticATokenFactoryContract = pool.additionalAddresses.STATIC_A_TOKEN_FACTORY
       ? getContract({
           address: pool.additionalAddresses.STATIC_A_TOKEN_FACTORY,
@@ -184,14 +183,35 @@ export async function getPoolV3Addresses(
     const poolContract = getContract({address: POOL, abi: IPool_ABI, client});
     const oracleContract = getContract({address: ORACLE, abi: IAaveOracle_ABI, client});
 
+    const eModes = new Map<
+      number,
+      {
+        label: string;
+        ltv: number;
+        liquidationThreshold: number;
+        liquidationBonus: number;
+        collateralBitmap: bigint;
+        borrowableBitmap: bigint;
+      }
+    >();
     let i = 1;
     let emptyCount = 0;
     while (true) {
-      const eModeData = await poolContract.read.getEModeCategoryData([i]);
+      const eModeData = await poolContract.read.getEModeCategoryCollateralConfig([i]);
       if (eModeData.liquidationThreshold == 0) {
         emptyCount++;
       } else {
-        eModes.set(i, eModeData.label);
+        const [label, collateralBitmap, borrowableBitmap] = await Promise.all([
+          poolContract.read.getEModeCategoryLabel([i]),
+          poolContract.read.getEModeCategoryCollateralBitmap([i]),
+          poolContract.read.getEModeCategoryBorrowableBitmap([i]),
+        ]);
+        eModes.set(i, {
+          label,
+          collateralBitmap,
+          borrowableBitmap,
+          ...eModeData,
+        });
       }
       if (emptyCount > 2) break;
       i++;
@@ -211,6 +231,7 @@ export async function getPoolV3Addresses(
         const result: ReserveData = {
           symbol: reserve === '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2' ? 'MRK' : symbol,
           decimals: decimals,
+          id: data.id,
           UNDERLYING: reserve,
           A_TOKEN: data.aTokenAddress,
           V_TOKEN: data.variableDebtTokenAddress,
