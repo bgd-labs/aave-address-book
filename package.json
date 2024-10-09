@@ -28,15 +28,15 @@
     },
     "./abis": {
       "require": {
-        "types": "./dist/Abis.d.ts",
-        "default": "./dist/Abis.js"
+        "types": "./dist/abis/index.d.ts",
+        "default": "./dist/abis/index.js"
       },
       "import": {
-        "types": "./dist/Abis.mts",
-        "default": "./dist/Abis.mjs"
+        "types": "./dist/abis/index.mts",
+        "default": "./dist/abis/index.mjs"
       },
-      "types": "./dist/Abis.d.ts",
-      "default": "./dist/Abis.js"
+      "types": "./dist/abis/index.d.ts",
+      "default": "./dist/abis/index.js"
     }
   },
   "sideEffects": false,

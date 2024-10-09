@@ -15,7 +15,6 @@ export async function generateABIs(removeExisting: boolean) {
   } else {
     mkdirSync('./src/ts/abis');
   }
-  const imports: string[] = [];
   for (const INTERFACE_PATH of ABI_INTERFACES) {
     const {stdout, stderr} = await awaitableExec(`forge inspect ${INTERFACE_PATH} abi`);
     const INTERFACE =
