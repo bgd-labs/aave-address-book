@@ -106,7 +106,7 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
 
   // generate emodes library
   try {
-    const eModes = await fetchEModes(client, poolAddresses.POOL.value);
+    const eModes = await fetchEModes(client, poolAddresses.POOL.value, reservesData);
     const eModesLibraryName = name + 'EModes';
     const eModesLibrary = generateEmodeLibrary(poolConfig.chainId, eModes, eModesLibraryName);
     appendFileSync(`./src/${name}.sol`, eModesLibrary.solidity);

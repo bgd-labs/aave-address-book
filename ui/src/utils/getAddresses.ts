@@ -21,8 +21,7 @@ export function flattenObject(
   });
 
   for (let [key, value] of entries) {
-    if (key === 'tokenlist') continue;
-    if (chainId && CHAIN_ID_CLIENT_MAP[chainId!].chain?.testnet) continue;
+    if (key === 'E_MODES') continue;
 
     const newPath = [...path, key];
     if (key === 'CHAIN_ID') {

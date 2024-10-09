@@ -123,9 +123,17 @@ export const E_MODES = {
   '1': {
     label: 'ETH correlated',
     collateralBitmap: '13',
-    collateralAssetIds: [0, 2, 3],
+    collateralAssets: [
+      '0x5300000000000000000000000000000000000004',
+      '0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32',
+      '0x01f0a31698C4d065659b9bdC21B3610292a1c506',
+    ],
     borrowableBitmap: '13',
-    borrowableAssetIds: [0, 2, 3],
+    borrowableAssets: [
+      '0x5300000000000000000000000000000000000004',
+      '0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32',
+      '0x01f0a31698C4d065659b9bdC21B3610292a1c506',
+    ],
     ltv: 9000,
     liquidationThreshold: 9300,
     liquidationBonus: 10100,

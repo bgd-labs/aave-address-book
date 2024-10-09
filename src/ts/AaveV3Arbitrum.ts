@@ -271,9 +271,21 @@ export const E_MODES = {
   '1': {
     label: 'Stablecoins',
     collateralBitmap: '4261',
-    collateralAssetIds: [0, 2, 5, 7, 12],
+    collateralAssets: [
+      '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
+      '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
+      '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9',
+      '0xD22a58f79e9481D1a88e00c343885A588b34b68B',
+      '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
+    ],
     borrowableBitmap: '4261',
-    borrowableAssetIds: [0, 2, 5, 7, 12],
+    borrowableAssets: [
+      '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
+      '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
+      '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9',
+      '0xD22a58f79e9481D1a88e00c343885A588b34b68B',
+      '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -281,9 +293,17 @@ export const E_MODES = {
   '2': {
     label: 'ETH correlated',
     collateralBitmap: '33040',
-    collateralAssetIds: [4, 8, 15],
+    collateralAssets: [
+      '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      '0x5979D7b546E38E414F7E9822514be443A4800529',
+      '0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe',
+    ],
     borrowableBitmap: '33040',
-    borrowableAssetIds: [4, 8, 15],
+    borrowableAssets: [
+      '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      '0x5979D7b546E38E414F7E9822514be443A4800529',
+      '0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,

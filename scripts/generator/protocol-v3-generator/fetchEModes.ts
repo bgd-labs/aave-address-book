@@ -7,12 +7,16 @@ import {bitMapToIndexes, generateSolidityConstants, wrapIntoSolidityLibrary} fro
  * As eModes are stores in a mapping there is no easy way to fetch "all eModes"
  * Therefore we fetch one after another and simply assume there is no gap > n
  */
-export async function fetchEModes(client: Client, poolAddress: Address) {
+export async function fetchEModes(
+  client: Client,
+  poolAddress: Address,
+  reserveData: ReserveData[],
+) {
   const poolContract = getContract({address: poolAddress, abi: IPool_ABI, client});
 
   const eModes = new Map<
     number,
-    EMode & {collateralAssetIds: number[]; borrowableAssetIds: number[]}
+    EMode & {collateralAssets: Address[]; borrowableAssets: Address[]}
   >();
   let i = 1;
   let emptyCount = 0;
@@ -29,9 +33,13 @@ export async function fetchEModes(client: Client, poolAddress: Address) {
       eModes.set(i, {
         label,
         collateralBitmap,
-        collateralAssetIds: bitMapToIndexes(collateralBitmap),
+        collateralAssets: bitMapToIndexes(collateralBitmap).map(
+          (id) => reserveData.find((r) => r.id === id)!.UNDERLYING,
+        ),
         borrowableBitmap,
-        borrowableAssetIds: bitMapToIndexes(borrowableBitmap),
+        borrowableAssets: bitMapToIndexes(borrowableBitmap).map(
+          (id) => reserveData.find((r) => r.id === id)!.UNDERLYING,
+        ),
         ...eModeData,
       });
     }

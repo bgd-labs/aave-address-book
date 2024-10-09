@@ -216,9 +216,21 @@ export const E_MODES = {
   '1': {
     label: 'Stablecoins',
     collateralBitmap: '1573',
-    collateralAssetIds: [0, 2, 5, 9, 10],
+    collateralAssets: [
+      '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
+      '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+      '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
+      '0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64',
+      '0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b',
+    ],
     borrowableBitmap: '1573',
-    borrowableAssetIds: [0, 2, 5, 9, 10],
+    borrowableAssets: [
+      '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
+      '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+      '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
+      '0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64',
+      '0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -226,9 +238,15 @@ export const E_MODES = {
   '2': {
     label: 'AVAX correlated',
     collateralBitmap: '384',
-    collateralAssetIds: [7, 8],
+    collateralAssets: [
+      '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+      '0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE',
+    ],
     borrowableBitmap: '384',
-    borrowableAssetIds: [7, 8],
+    borrowableAssets: [
+      '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+      '0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
