@@ -535,6 +535,67 @@
     },
     {
       "chainId": 1,
+      "address": "0xd35f648C3C7f17cd1Ba92e5eac991E3EfcD4566d",
+      "name": "Aave Arc market USDC",
+      "decimals": 6,
+      "symbol": "aUSDC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0",
+        "underlying": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xe6d6E7dA65A2C18109Ff56B7CBBdc7B706Fc13F8",
+      "name": "Aave Arc market WBTC",
+      "decimals": 8,
+      "symbol": "aWBTC",
+      "tags": ["aTokenV2", "aaveV2"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awbtc.svg",
+      "extensions": {
+        "pool": "0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0",
+        "underlying": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x319190E3Bbc595602A9E63B2bCfB61c6634355b1",
+      "name": "Aave Arc market WETH",
+      "decimals": 18,
+      "symbol": "aWETH",
+      "tags": ["aTokenV2", "aaveV2"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0",
+        "underlying": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+      "name": "Aave Token",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0x89eFaC495C65d43619c661df654ec64fc10C0A75",
+      "name": "Aave Arc market AAVE",
+      "decimals": 18,
+      "symbol": "aAAVE",
+      "tags": ["aTokenV2", "aaveV2"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aaave.svg",
+      "extensions": {
+        "pool": "0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0",
+        "underlying": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x3Ed3B47Dd13EC9a98b44e6204A523E766B225811",
       "name": "Aave interest bearing USDT",
       "decimals": 6,
@@ -637,15 +698,6 @@
         "pool": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
         "underlying": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
       }
-    },
-    {
-      "chainId": 1,
-      "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
-      "name": "Aave Token",
-      "decimals": 18,
-      "symbol": "AAVE",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg"
     },
     {
       "chainId": 1,
@@ -6375,6 +6427,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 53 },
-  "timestamp": "2024-10-08T22:06:44.778Z"
+  "version": { "major": 3, "minor": 0, "patch": 54 },
+  "timestamp": "2024-10-09T07:36:59.289Z"
 }

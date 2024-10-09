@@ -34,6 +34,10 @@ library AaveV2Fuji {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x0668EDE013c1c475724523409b8B6bE633469585);
 
+  // https://testnet.snowtrace.io/address/0x007bbD6A554E27EcdA1D10b40974eb7478799EcB
+  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
+    0x007bbD6A554E27EcdA1D10b40974eb7478799EcB;
+
   // https://testnet.snowtrace.io/address/0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e
   address internal constant POOL_ADMIN = 0x1128d177BdaA74Ae68EB06e693f4CbA6BF427a5e;
 
@@ -49,10 +53,6 @@ library AaveV2Fuji {
 
   // https://testnet.snowtrace.io/address/0x3b60cABB2C0e9ADe3e364b1F9752342A5D6079e2
   address internal constant EMISSION_MANAGER = 0x3b60cABB2C0e9ADe3e364b1F9752342A5D6079e2;
-
-  // https://testnet.snowtrace.io/address/0x007bbD6A554E27EcdA1D10b40974eb7478799EcB
-  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0x007bbD6A554E27EcdA1D10b40974eb7478799EcB;
 
   // https://testnet.snowtrace.io/address/0x90E5BAc5A98fff59617080848959f44eACB4Cd7B
   address internal constant FAUCET = 0x90E5BAc5A98fff59617080848959f44eACB4Cd7B;

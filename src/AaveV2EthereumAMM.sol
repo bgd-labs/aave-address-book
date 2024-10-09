@@ -34,6 +34,10 @@ library AaveV2EthereumAMM {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba);
 
+  // https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
+  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
+    0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
+
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant POOL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
@@ -42,10 +46,6 @@ library AaveV2EthereumAMM {
 
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
-
-  // https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
-  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
 
   // https://etherscan.io/address/0xcfC26009618ec2Ca8787180116a37Caa354a465C
   address internal constant CONFIG_ENGINE = 0xcfC26009618ec2Ca8787180116a37Caa354a465C;
