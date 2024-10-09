@@ -15,12 +15,18 @@ export async function check(addresses: Record<string, any>) {
       });
       const owner = await gateway.read.owner();
       const governance = getGovernance(addresses.CHAIN_ID);
-      const l1Executor = (governance as any).EXECUTOR_LVL_1;
-      // prettier would be to check against executor lvl_1
-      if (owner !== l1Executor) {
-        throw new Error(
-          `SANITY_GATEWAY: OWNER MISMATCH ${addresses.POOL}.${addresses.WETH_GATEWAY}:${owner} != ${l1Executor}`,
+      if (!governance) {
+        console.log(
+          'SANITY_GATEWAY: Skipped due to missing governance on chainId: ${addresses.CHAIN_ID}',
         );
+      } else {
+        const l1Executor = (governance as any).EXECUTOR_LVL_1;
+        // prettier would be to check against executor lvl_1
+        if (owner !== l1Executor) {
+          throw new Error(
+            `SANITY_GATEWAY: OWNER MISMATCH ${addresses.POOL}.${addresses.WETH_GATEWAY}:${owner} != ${l1Executor}`,
+          );
+        }
       }
     }
   }
