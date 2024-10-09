@@ -76,11 +76,11 @@ library AaveV3Metis {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5;
 
-  // https://explorer.metis.io/address/0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x3e7BC5EcE0f22DbB16c3e3EeA288a10A57d68927;
+  // https://explorer.metis.io/address/0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4;
 
-  // https://explorer.metis.io/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
-  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
+  // https://explorer.metis.io/address/0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3;
 
   // https://explorer.metis.io/address/0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b
   address internal constant WALLET_BALANCE_PROVIDER = 0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b;

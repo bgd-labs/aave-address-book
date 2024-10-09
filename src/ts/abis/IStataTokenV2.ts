@@ -21,7 +21,7 @@ export const IStataTokenV2_ABI = [
       {
         name: '',
         type: 'address',
-        internalType: 'contract IERC20',
+        internalType: 'address',
       },
     ],
     stateMutability: 'view',

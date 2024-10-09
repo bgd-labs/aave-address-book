@@ -89,11 +89,11 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857;
 
-  // https://optimistic.etherscan.io/address/0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x6F143FE2F7B02424ad3CaD1593D6f36c0Aab69d7;
+  // https://optimistic.etherscan.io/address/0x5c5228aC8BC1528482514aF3e27E692495148717
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x5c5228aC8BC1528482514aF3e27E692495148717;
 
-  // https://optimistic.etherscan.io/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
-  address internal constant UI_POOL_DATA_PROVIDER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
+  // https://optimistic.etherscan.io/address/0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4
+  address internal constant UI_POOL_DATA_PROVIDER = 0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4;
 
   // https://optimistic.etherscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
