@@ -95,11 +95,11 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251;
 
-  // https://arbiscan.io/address/0xDA67AF3403555Ce0AE3ffC22fDb7354458277358
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xDA67AF3403555Ce0AE3ffC22fDb7354458277358;
+  // https://arbiscan.io/address/0x68100bD5345eA474D93577127C11F39FF8463e93
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x68100bD5345eA474D93577127C11F39FF8463e93;
 
-  // https://arbiscan.io/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
-  address internal constant UI_POOL_DATA_PROVIDER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
+  // https://arbiscan.io/address/0x5c5228aC8BC1528482514aF3e27E692495148717
+  address internal constant UI_POOL_DATA_PROVIDER = 0x5c5228aC8BC1528482514aF3e27E692495148717;
 
   // https://arbiscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;

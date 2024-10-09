@@ -76,11 +76,11 @@ library AaveV3Scroll {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0xFBedc64AeE24921cb43004312B9eF367a4162b57;
 
-  // https://scrollscan.com/address/0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x37A2f0b0b5FC33999e3E7fdECcFAe1e894fF9b07;
+  // https://scrollscan.com/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
-  // https://scrollscan.com/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
-  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
+  // https://scrollscan.com/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
+  address internal constant UI_POOL_DATA_PROVIDER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
 
   // https://scrollscan.com/address/0xE51642875Af07Fea1B03d821E41a9DB24bC4447E
   address internal constant WALLET_BALANCE_PROVIDER = 0xE51642875Af07Fea1B03d821E41a9DB24bC4447E;

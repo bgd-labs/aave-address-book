@@ -61,11 +61,11 @@ library AaveV3Gnosis {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x1236010CECea55998384e795B59815D871f5f94d;
 
-  // https://gnosisscan.io/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
+  // https://gnosisscan.io/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
-  // https://gnosisscan.io/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
-  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
+  // https://gnosisscan.io/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
+  address internal constant UI_POOL_DATA_PROVIDER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
 
   // https://gnosisscan.io/address/0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D
   address internal constant WALLET_BALANCE_PROVIDER = 0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D;

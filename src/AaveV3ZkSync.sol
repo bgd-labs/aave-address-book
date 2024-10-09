@@ -61,11 +61,11 @@ library AaveV3ZkSync {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x0753E3637ddC6efc40759D9c347251046644F25F;
 
-  // https://era.zksync.network/address/0x82B3B951Cf43B42324B915Ab651a83D910f29D67
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x82B3B951Cf43B42324B915Ab651a83D910f29D67;
+  // https://era.zksync.network/address/0x430Ef10d29237a0f061f9F7753fCe1cd1F5cF0e1
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x430Ef10d29237a0f061f9F7753fCe1cd1F5cF0e1;
 
-  // https://era.zksync.network/address/0x43312730DB351Dc099924462A42B442c0993F6B5
-  address internal constant UI_POOL_DATA_PROVIDER = 0x43312730DB351Dc099924462A42B442c0993F6B5;
+  // https://era.zksync.network/address/0x6fCDa2646d6E4a42b1663d219811fC96AE3A0ec8
+  address internal constant UI_POOL_DATA_PROVIDER = 0x6fCDa2646d6E4a42b1663d219811fC96AE3A0ec8;
 
   // https://era.zksync.network/address/0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dAB0
   address internal constant WALLET_BALANCE_PROVIDER = 0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dAB0;
