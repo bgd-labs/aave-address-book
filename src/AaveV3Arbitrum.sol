@@ -72,8 +72,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
 
-  // https://arbiscan.io/address/0xEB442296880a3FC7C00FFe695c40B09d970fb936
-  address internal constant CONFIG_ENGINE = 0xEB442296880a3FC7C00FFe695c40B09d970fb936;
+  // https://arbiscan.io/address/0x7759F202181A2a896c672372af3EbbA7E1e6549f
+  address internal constant CONFIG_ENGINE = 0x7759F202181A2a896c672372af3EbbA7E1e6549f;
 
   // https://arbiscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

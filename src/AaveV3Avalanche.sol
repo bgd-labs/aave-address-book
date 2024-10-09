@@ -66,8 +66,8 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
-  // https://snowtrace.io/address/0x5fF5c392C5D397926364789E22f74043f7E42f2b
-  address internal constant CONFIG_ENGINE = 0x5fF5c392C5D397926364789E22f74043f7E42f2b;
+  // https://snowtrace.io/address/0x9aaB9F0b6E19907e346420Edc0d3029Edb5e8616
+  address internal constant CONFIG_ENGINE = 0x9aaB9F0b6E19907e346420Edc0d3029Edb5e8616;
 
   // https://snowtrace.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
