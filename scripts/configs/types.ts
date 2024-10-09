@@ -81,12 +81,22 @@ export type ReserveData = {
   symbol: string;
   UNDERLYING: Hex;
   decimals: number;
+  id: number;
   A_TOKEN: Hex;
   V_TOKEN: Hex;
   INTEREST_RATE_STRATEGY: Hex;
   ORACLE: Hex;
   STATIC_A_TOKEN?: Hex;
   STATA_TOKEN?: Hex;
+};
+
+export type EMode = {
+  label: string;
+  ltv: number;
+  liquidationThreshold: number;
+  liquidationBonus: number;
+  collateralBitmap: bigint;
+  borrowableBitmap: bigint;
 };
 
 /**

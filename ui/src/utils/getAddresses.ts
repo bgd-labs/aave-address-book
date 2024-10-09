@@ -1,5 +1,5 @@
 import * as addressBook from '../../../src/ts/AaveAddressBook';
-import { isAddress, Address } from 'viem';
+import { isAddress, Address, zeroAddress } from 'viem';
 import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
 
 export type ListItem = {
@@ -21,8 +21,7 @@ export function flattenObject(
   });
 
   for (let [key, value] of entries) {
-    if (key === 'tokenlist') continue;
-    if (chainId && CHAIN_ID_CLIENT_MAP[chainId!].chain?.testnet) continue;
+    if (key === 'E_MODES') continue;
 
     const newPath = [...path, key];
     if (key === 'CHAIN_ID') {
@@ -30,7 +29,7 @@ export function flattenObject(
     }
     if (typeof value === 'object' && value !== null) {
       result.push(...flattenObject(value, newPath, chainId));
-    } else if (isAddress(value as string)) {
+    } else if (isAddress(value as string) && value !== zeroAddress) {
       result.push({
         path: newPath,
         value: value as Address,

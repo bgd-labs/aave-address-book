@@ -62,7 +62,7 @@ import { AaveV2Avalanche } from "@bgd-labs/aave-address-book"; // import specifi
 console.log(AaveV2Avalanche.POOL_ADDRESSES_PROVIDER);
 // "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb"
 
-// in addition the chainId of the respecitve addresses is exported alongside
+// in addition the chainId of the respective addresses is exported alongside
 console.log(AaveV2Avalanche.CHAIN_ID);
 // 43114
 ```
@@ -106,3 +106,11 @@ b) Adding an address that **cannot be obtained via onchain calls** so it needs t
 To achieve an addition here, you need to alter the [additionalAddresses section](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/config.ts#L46) on the pool type and add your address to the respective pools. Additional addresses will currently be exported as type `address`. There's currently no possibility to define a custom type.
 
 In any case you need to run `yarn generate:addresses` afterwards and commit the altered artifacts.
+
+### Troubleshooting
+
+#### Error generating the addresses
+
+This repository will try to use public rpcs.
+For some networks they are not very reliable though, therefore you can set `RPC_<NETWORK>` in your .env to use a private rpc.
+Check https://github.com/bgd-labs/aave-address-book/blob/main/scripts/clients.ts#L39 for the chain naming convention.

@@ -167,19 +167,13 @@ export async function generateTokenList(pools: TokenListParams) {
         filepath: path,
       }),
     );
-    writeFileSync(
-      `./src/ts/tokenlist.ts`,
-      await prettier.format(`export const tokenlist = ${JSON.stringify(tokenList)}`, {
-        filepath: `./src/ts/tokenlist.ts`,
-      }),
-    );
   }
   if (validator.errors) {
     console.log(validator.errors);
     throw new Error('error creating tokenlist');
   }
   return {
-    js: [`export {tokenlist} from './tokenlist';`],
+    js: [],
     solidity: [],
   };
 }

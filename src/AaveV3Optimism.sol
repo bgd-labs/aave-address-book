@@ -13,15 +13,9 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x794a61358D6845594F94dc1DB02A252b5b4814aD
   IPool internal constant POOL = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
 
-  // https://optimistic.etherscan.io/address/0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4
-  address internal constant POOL_IMPL = 0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4;
-
   // https://optimistic.etherscan.io/address/0x8145eddDf43f50276641b55bd3AD95944510021E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8145eddDf43f50276641b55bd3AD95944510021E);
-
-  // https://optimistic.etherscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://optimistic.etherscan.io/address/0xD81eb3728a631871a7eBBaD631b5f424909f0c77
   IAaveOracle internal constant ORACLE = IAaveOracle(0xD81eb3728a631871a7eBBaD631b5f424909f0c77);
@@ -29,23 +23,32 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0xE229d5DE4BD5beEAf12d427B5B57BFe66abD2c3b
   address internal constant PRICE_ORACLE_SENTINEL = 0xE229d5DE4BD5beEAf12d427B5B57BFe66abD2c3b;
 
-  // https://optimistic.etherscan.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
+  // https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf
+  address internal constant ACL_ADMIN = 0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf;
 
   // https://optimistic.etherscan.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://optimistic.etherscan.io/address/0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf
-  address internal constant ACL_ADMIN = 0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf;
+  // https://optimistic.etherscan.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
 
-  // https://optimistic.etherscan.io/address/0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf
-  ICollector internal constant COLLECTOR = ICollector(0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf);
+  // https://optimistic.etherscan.io/address/0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4
+  address internal constant POOL_IMPL = 0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4;
+
+  // https://optimistic.etherscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://optimistic.etherscan.io/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x929EC64c34a17401F460460D4B9390518E5B473e;
+
+  // https://optimistic.etherscan.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
+  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
+
+  // https://optimistic.etherscan.io/address/0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf
+  ICollector internal constant COLLECTOR = ICollector(0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf);
 
   // https://optimistic.etherscan.io/address/0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B;
@@ -53,9 +56,6 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x04a8D477eE202aDCE1682F5902e1160455205b12
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0x04a8D477eE202aDCE1682F5902e1160455205b12;
-
-  // https://optimistic.etherscan.io/address/0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73
-  address internal constant EMISSION_MANAGER = 0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73;
 
   // https://optimistic.etherscan.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x5E76E98E0963EcDC6A065d1435F84065b7523f39;

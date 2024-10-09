@@ -13,36 +13,39 @@ library AaveV3FantomTestnet {
   // https://testnet.ftmscan.com/address/0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8
   IPool internal constant POOL = IPool(0x56Ab717d882F7A8d4a3C2b191707322c5Cc70db8);
 
-  // https://testnet.ftmscan.com/address/0x685b86a6659a1CbcfE168304386e1b54C543Ce16
-  address internal constant POOL_IMPL = 0x685b86a6659a1CbcfE168304386e1b54C543Ce16;
-
   // https://testnet.ftmscan.com/address/0x257a6f06192D532e40F66b3DDfE2cBBaf8373822
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x257a6f06192D532e40F66b3DDfE2cBBaf8373822);
 
-  // https://testnet.ftmscan.com/address/0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492;
-
   // https://testnet.ftmscan.com/address/0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4
   IAaveOracle internal constant ORACLE = IAaveOracle(0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4);
 
-  // https://testnet.ftmscan.com/address/0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61);
+  // https://testnet.ftmscan.com/address/0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8
+  address internal constant ACL_ADMIN = 0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8;
 
   // https://testnet.ftmscan.com/address/0xD5D4f4fe4BfC8e8193f38927EfafDbfbB66dd7e0
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xD5D4f4fe4BfC8e8193f38927EfafDbfbB66dd7e0);
 
-  // https://testnet.ftmscan.com/address/0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8
-  address internal constant ACL_ADMIN = 0x9973Ce75946D56fA3B0C6aa3647d67D440BDAec8;
+  // https://testnet.ftmscan.com/address/0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61);
 
-  // https://testnet.ftmscan.com/address/0x445e52B0C18704448f4589C4304f63Ea287c2eb0
-  ICollector internal constant COLLECTOR = ICollector(0x445e52B0C18704448f4589C4304f63Ea287c2eb0);
+  // https://testnet.ftmscan.com/address/0x685b86a6659a1CbcfE168304386e1b54C543Ce16
+  address internal constant POOL_IMPL = 0x685b86a6659a1CbcfE168304386e1b54C543Ce16;
+
+  // https://testnet.ftmscan.com/address/0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492;
 
   // https://testnet.ftmscan.com/address/0x9F749B597414eD4F53a0F23971327bb60f16ad94
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x9F749B597414eD4F53a0F23971327bb60f16ad94;
+
+  // https://testnet.ftmscan.com/address/0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155
+  address internal constant EMISSION_MANAGER = 0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155;
+
+  // https://testnet.ftmscan.com/address/0x445e52B0C18704448f4589C4304f63Ea287c2eb0
+  ICollector internal constant COLLECTOR = ICollector(0x445e52B0C18704448f4589C4304f63Ea287c2eb0);
 
   // https://testnet.ftmscan.com/address/0x6056C29483433A095eF98Fb0d01F2827F5FCeB99
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x6056C29483433A095eF98Fb0d01F2827F5FCeB99;
@@ -50,9 +53,6 @@ library AaveV3FantomTestnet {
   // https://testnet.ftmscan.com/address/0x67F50B454972F7557c359AfE2DD3caef9930d665
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x67F50B454972F7557c359AfE2DD3caef9930d665;
-
-  // https://testnet.ftmscan.com/address/0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155
-  address internal constant EMISSION_MANAGER = 0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155;
 
   // https://testnet.ftmscan.com/address/0x021BE22Bdfa497D6643D4035E530095E7b452967
   address internal constant FAUCET = 0x021BE22Bdfa497D6643D4035E530095E7b452967;
@@ -248,10 +248,4 @@ library AaveV3FantomTestnetAssets {
   // https://testnet.ftmscan.com/address/0x9060C6E714BA5C3A46665599103989778a736D4B
   address internal constant SUSHI_INTEREST_RATE_STRATEGY =
     0x9060C6E714BA5C3A46665599103989778a736D4B;
-}
-
-library AaveV3FantomTestnetEModes {
-  uint8 internal constant NONE = 0;
-
-  uint8 internal constant STABLECOINS = 1;
 }

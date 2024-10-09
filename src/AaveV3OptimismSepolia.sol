@@ -13,36 +13,39 @@ library AaveV3OptimismSepolia {
   // https://optimism-sepolia.blockscout.com/address/0xb50201558B00496A145fE76f7424749556E326D8
   IPool internal constant POOL = IPool(0xb50201558B00496A145fE76f7424749556E326D8);
 
-  // https://optimism-sepolia.blockscout.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
-  address internal constant POOL_IMPL = 0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
-
   // https://optimism-sepolia.blockscout.com/address/0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16);
 
-  // https://optimism-sepolia.blockscout.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C;
-
   // https://optimism-sepolia.blockscout.com/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
   IAaveOracle internal constant ORACLE = IAaveOracle(0xeb0a051be10228213BAEb449db63719d6742F7c4);
 
-  // https://optimism-sepolia.blockscout.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741);
+  // https://optimism-sepolia.blockscout.com/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
+  address internal constant ACL_ADMIN = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
 
   // https://optimism-sepolia.blockscout.com/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x41585C50524fb8c3899B43D7D797d9486AAc94DB);
 
-  // https://optimism-sepolia.blockscout.com/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
-  address internal constant ACL_ADMIN = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
+  // https://optimism-sepolia.blockscout.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741);
 
-  // https://optimism-sepolia.blockscout.com/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
-  ICollector internal constant COLLECTOR = ICollector(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
+  // https://optimism-sepolia.blockscout.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant POOL_IMPL = 0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://optimism-sepolia.blockscout.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C;
 
   // https://optimism-sepolia.blockscout.com/address/0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d;
+
+  // https://optimism-sepolia.blockscout.com/address/0xB438D5376ADB4b31D0103E659f1673eAD684BAD9
+  address internal constant EMISSION_MANAGER = 0xB438D5376ADB4b31D0103E659f1673eAD684BAD9;
+
+  // https://optimism-sepolia.blockscout.com/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
+  ICollector internal constant COLLECTOR = ICollector(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
 
   // https://optimism-sepolia.blockscout.com/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
@@ -50,9 +53,6 @@ library AaveV3OptimismSepolia {
   // https://optimism-sepolia.blockscout.com/address/0x777fBA024bA1228fDa76149A4ff8B23475ed057D
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x777fBA024bA1228fDa76149A4ff8B23475ed057D;
-
-  // https://optimism-sepolia.blockscout.com/address/0xB438D5376ADB4b31D0103E659f1673eAD684BAD9
-  address internal constant EMISSION_MANAGER = 0xB438D5376ADB4b31D0103E659f1673eAD684BAD9;
 
   // https://optimism-sepolia.blockscout.com/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
   address internal constant L2_ENCODER = 0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
@@ -116,8 +116,4 @@ library AaveV3OptimismSepoliaAssets {
   // https://optimism-sepolia.blockscout.com/address/0xaFb7Bc3f69A8Cc6a49823eFF9E3974CD49181A9c
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xaFb7Bc3f69A8Cc6a49823eFF9E3974CD49181A9c;
-}
-
-library AaveV3OptimismSepoliaEModes {
-  uint8 internal constant NONE = 0;
 }

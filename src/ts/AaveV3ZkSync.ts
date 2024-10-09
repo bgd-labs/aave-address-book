@@ -5,41 +5,41 @@ export const POOL_ADDRESSES_PROVIDER = '0x2A3948BB219D6B2Fa83D64100006391a96bE6c
 // IPool https://era.zksync.network/address/0x78e30497a3c7527d953c6B1E3541b021A98Ac43c
 export const POOL = '0x78e30497a3c7527d953c6B1E3541b021A98Ac43c';
 
-// https://era.zksync.network/address/0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9
-export const POOL_IMPL = '0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9';
-
 // IPoolConfigurator https://era.zksync.network/address/0x0207d31b4377C74bEC37356aaD83E3dCc979F40E
 export const POOL_CONFIGURATOR = '0x0207d31b4377C74bEC37356aaD83E3dCc979F40E';
-
-// https://era.zksync.network/address/0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d
-export const POOL_CONFIGURATOR_IMPL = '0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d';
 
 // IAaveOracle https://era.zksync.network/address/0xC7F58Fca663a8d377B6D0c9703C697f56dC40088
 export const ORACLE = '0xC7F58Fca663a8d377B6D0c9703C697f56dC40088';
 
-// IPoolDataProvider https://era.zksync.network/address/0x5F2A704cE47B373c908fE8A29514249469b52b99
-export const AAVE_PROTOCOL_DATA_PROVIDER = '0x5F2A704cE47B373c908fE8A29514249469b52b99';
+// https://era.zksync.network/address/0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020
+export const ACL_ADMIN = '0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020';
 
 // IACLManager https://era.zksync.network/address/0xc6150b63c2F02528d4A969a248710A4658ed7928
 export const ACL_MANAGER = '0xc6150b63c2F02528d4A969a248710A4658ed7928';
 
-// https://era.zksync.network/address/0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020
-export const ACL_ADMIN = '0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020';
+// IPoolDataProvider https://era.zksync.network/address/0x5F2A704cE47B373c908fE8A29514249469b52b99
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0x5F2A704cE47B373c908fE8A29514249469b52b99';
 
-// ICollector https://era.zksync.network/address/0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b
-export const COLLECTOR = '0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b';
+// https://era.zksync.network/address/0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9
+export const POOL_IMPL = '0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9';
+
+// https://era.zksync.network/address/0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d
+export const POOL_CONFIGURATOR_IMPL = '0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d';
 
 // https://era.zksync.network/address/0x37c972C9dDfC2138EBe33eC19dba063AB9f8966e
 export const DEFAULT_INCENTIVES_CONTROLLER = '0x37c972C9dDfC2138EBe33eC19dba063AB9f8966e';
+
+// https://era.zksync.network/address/0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f
+export const EMISSION_MANAGER = '0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f';
+
+// ICollector https://era.zksync.network/address/0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b
+export const COLLECTOR = '0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b';
 
 // https://era.zksync.network/address/0x34be365Fd01ac224F21490aaC6dFd65D25434bbB
 export const DEFAULT_A_TOKEN_IMPL_REV_1 = '0x34be365Fd01ac224F21490aaC6dFd65D25434bbB';
 
 // https://era.zksync.network/address/0x52E97425D1Fa6885fAaC9260B711fA5047A88d06
 export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 = '0x52E97425D1Fa6885fAaC9260B711fA5047A88d06';
-
-// https://era.zksync.network/address/0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f
-export const EMISSION_MANAGER = '0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f';
 
 // https://era.zksync.network/address/0x93E5E329FaCf7d85118b49f0eb250E9c767CA177
 export const CONFIG_ENGINE = '0x93E5E329FaCf7d85118b49f0eb250E9c767CA177';
@@ -69,6 +69,7 @@ export const CHAIN_ID = 324;
 export const ASSETS = {
   USDC: {
     decimals: 6,
+    id: 0,
     UNDERLYING: '0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4',
     A_TOKEN: '0xE977F9B2a5ccf0457870a67231F23BE4DaecfbDb',
     V_TOKEN: '0x0049250D15A8550c5a14Baa5AF5B662a93a525B9',
@@ -77,6 +78,7 @@ export const ASSETS = {
   },
   USDT: {
     decimals: 6,
+    id: 1,
     UNDERLYING: '0x493257fD37EDB34451f62EDf8D2a0C418852bA4C',
     A_TOKEN: '0xC48574bc5358c967d9447e7Df70230Fdb469e4E7',
     V_TOKEN: '0x8992DB58077fe8C7B80c1B3a738eAe8A7BdDbA34',
@@ -85,6 +87,7 @@ export const ASSETS = {
   },
   WETH: {
     decimals: 18,
+    id: 2,
     UNDERLYING: '0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91',
     A_TOKEN: '0xb7b93bCf82519bB757Fd18b23A389245Dbd8ca64',
     V_TOKEN: '0x98dC737eA0E9bCb254c3F98510a71c5E11F74238',
@@ -93,6 +96,7 @@ export const ASSETS = {
   },
   wstETH: {
     decimals: 18,
+    id: 3,
     UNDERLYING: '0x703b52F2b28fEbcB60E1372858AF5b18849FE867',
     A_TOKEN: '0xd4e607633F3d984633E946aEA4eb71f92564c1c9',
     V_TOKEN: '0x6aD279F6523f6421fD5B0324a97D8F62eeCD80c8',
@@ -101,6 +105,7 @@ export const ASSETS = {
   },
   ZK: {
     decimals: 18,
+    id: 4,
     UNDERLYING: '0x5A7d6b2F92C77FAD6CCaBd7EE0624E64907Eaf3E',
     A_TOKEN: '0xd6cD2c0fC55936498726CacC497832052A9B2D1B',
     V_TOKEN: '0x6450fd7F877B5bB726F7Bc6Bf0e6ffAbd48d72ad',
@@ -109,15 +114,21 @@ export const ASSETS = {
   },
 } as const;
 export const E_MODES = {
-  NONE: 0,
-  ETH_CORRELATED: 1,
+  '1': {
+    label: 'ETH correlated',
+    collateralBitmap: '12',
+    collateralAssets: [
+      '0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91',
+      '0x703b52F2b28fEbcB60E1372858AF5b18849FE867',
+    ],
+    borrowableBitmap: '12',
+    borrowableAssets: [
+      '0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91',
+      '0x703b52F2b28fEbcB60E1372858AF5b18849FE867',
+    ],
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
 } as const;
-export const EXTERNAL_LIBRARIES = {
-  FLASHLOAN_LOGIC: '0xcE53459E8734Df93399A425183Ee1860Ca8c2D0b',
-  BORROW_LOGIC: '0xc3Ba0a556e0813BBf0741CdaD6086ca1023cd6d3',
-  BRIDGE_LOGIC: '0x345A778167524995d6788a9a0e1D0eeb7CbFE496',
-  E_MODE_LOGIC: '0xA2C266Cd25296A7174134B0a6d894e250c830504',
-  LIQUIDATION_LOGIC: '0x0C0191Dd96eD7Ef86D1cC319eb68f127C196A6ee',
-  POOL_LOGIC: '0xd60e89f5b8BD0E46029FD127741DA136b3A574D7',
-  SUPPLY_LOGIC: '0x20EA931cE718b5f3bcdCfc3B7D2685f6a853a55D',
-} as const;
+export const EXTERNAL_LIBRARIES = {} as const;

@@ -13,36 +13,39 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0xb50201558B00496A145fE76f7424749556E326D8
   IPool internal constant POOL = IPool(0xb50201558B00496A145fE76f7424749556E326D8);
 
-  // https://gnosisscan.io/address/0x8a48EF9287c402C119c14a5f6897F6dFdc12cb45
-  address internal constant POOL_IMPL = 0x8a48EF9287c402C119c14a5f6897F6dFdc12cb45;
-
   // https://gnosisscan.io/address/0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16);
 
-  // https://gnosisscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
-
   // https://gnosisscan.io/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
   IAaveOracle internal constant ORACLE = IAaveOracle(0xeb0a051be10228213BAEb449db63719d6742F7c4);
 
-  // https://gnosisscan.io/address/0x57038C3e3Fe0a170BB72DE2fD56E98e4d1a69717
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x57038C3e3Fe0a170BB72DE2fD56E98e4d1a69717);
+  // https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
+  address internal constant ACL_ADMIN = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
 
   // https://gnosisscan.io/address/0xEc710f59005f48703908bC519D552Df5B8472614
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xEc710f59005f48703908bC519D552Df5B8472614);
 
-  // https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
-  address internal constant ACL_ADMIN = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
+  // https://gnosisscan.io/address/0x57038C3e3Fe0a170BB72DE2fD56E98e4d1a69717
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x57038C3e3Fe0a170BB72DE2fD56E98e4d1a69717);
 
-  // https://gnosisscan.io/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
-  ICollector internal constant COLLECTOR = ICollector(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
+  // https://gnosisscan.io/address/0x8a48EF9287c402C119c14a5f6897F6dFdc12cb45
+  address internal constant POOL_IMPL = 0x8a48EF9287c402C119c14a5f6897F6dFdc12cb45;
+
+  // https://gnosisscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://gnosisscan.io/address/0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d;
+
+  // https://gnosisscan.io/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
+  address internal constant EMISSION_MANAGER = 0x41585C50524fb8c3899B43D7D797d9486AAc94DB;
+
+  // https://gnosisscan.io/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
+  ICollector internal constant COLLECTOR = ICollector(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
 
   // https://gnosisscan.io/address/0x589750BA8aF186cE5B55391B0b7148cAD43a1619
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
@@ -50,9 +53,6 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
-
-  // https://gnosisscan.io/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
-  address internal constant EMISSION_MANAGER = 0x41585C50524fb8c3899B43D7D797d9486AAc94DB;
 
   // https://gnosisscan.io/address/0xE2a33403eaD139873820da597531f07f65ED0E3c
   address internal constant CONFIG_ENGINE = 0xE2a33403eaD139873820da597531f07f65ED0E3c;

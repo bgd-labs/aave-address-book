@@ -5,38 +5,29 @@ export const POOL_ADDRESSES_PROVIDER = '0x36616cf17557639614c1cdDb356b1B83fc0B21
 // IPool https://zkevm.polygonscan.com/address/0xb50201558B00496A145fE76f7424749556E326D8
 export const POOL = '0xb50201558B00496A145fE76f7424749556E326D8';
 
-// https://zkevm.polygonscan.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
-export const POOL_IMPL = '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671';
-
 // IPoolConfigurator https://zkevm.polygonscan.com/address/0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16
 export const POOL_CONFIGURATOR = '0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16';
-
-// https://zkevm.polygonscan.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
-export const POOL_CONFIGURATOR_IMPL = '0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C';
 
 // IAaveOracle https://zkevm.polygonscan.com/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
 export const ORACLE = '0x3e652E97ff339B73421f824F5b03d75b62F1Fb51';
 
-// IPoolDataProvider https://zkevm.polygonscan.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
-export const AAVE_PROTOCOL_DATA_PROVIDER = '0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741';
+// https://zkevm.polygonscan.com/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
+export const ACL_ADMIN = '0xe59470B3BE3293534603487E00A44C72f2CD466d';
 
 // IACLManager https://zkevm.polygonscan.com/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
 export const ACL_MANAGER = '0x41585C50524fb8c3899B43D7D797d9486AAc94DB';
 
-// https://zkevm.polygonscan.com/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
-export const ACL_ADMIN = '0xe59470B3BE3293534603487E00A44C72f2CD466d';
+// IPoolDataProvider https://zkevm.polygonscan.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741';
 
-// ICollector https://zkevm.polygonscan.com/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
-export const COLLECTOR = '0xe892E40C92c2E4D281Be59b2E6300F271d824E75';
+// https://zkevm.polygonscan.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+export const POOL_IMPL = '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671';
+
+// https://zkevm.polygonscan.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
+export const POOL_CONFIGURATOR_IMPL = '0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C';
 
 // https://zkevm.polygonscan.com/address/0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d
 export const DEFAULT_INCENTIVES_CONTROLLER = '0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d';
-
-// https://zkevm.polygonscan.com/address/0xDe090EfCD6ef4b86792e2D84E55a5fa8d49D25D2
-export const DEFAULT_A_TOKEN_IMPL_REV_1 = '0xDe090EfCD6ef4b86792e2D84E55a5fa8d49D25D2';
-
-// https://zkevm.polygonscan.com/address/0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 = '0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c';
 
 // https://zkevm.polygonscan.com/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
 export const EMISSION_MANAGER = '0xeb0a051be10228213BAEb449db63719d6742F7c4';
@@ -85,6 +76,3 @@ export const WITHDRAW_SWAP_ADAPTER = '0x06C35Cfd3FC61eC2aC437f0d08840d5776b945af
 
 export const CHAIN_ID = 1101;
 export const ASSETS = {} as const;
-export const E_MODES = {
-  NONE: 0,
-} as const;

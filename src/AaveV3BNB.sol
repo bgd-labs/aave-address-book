@@ -13,36 +13,39 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x6807dc923806fE8Fd134338EABCA509979a7e0cB
   IPool internal constant POOL = IPool(0x6807dc923806fE8Fd134338EABCA509979a7e0cB);
 
-  // https://bscscan.com/address/0xE498675A3dd5aB2Cab72986dc7AA9B2AE87Acec4
-  address internal constant POOL_IMPL = 0xE498675A3dd5aB2Cab72986dc7AA9B2AE87Acec4;
-
   // https://bscscan.com/address/0x67bdF23C7fCE7C65fF7415Ba3F2520B45D6f9584
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x67bdF23C7fCE7C65fF7415Ba3F2520B45D6f9584);
 
-  // https://bscscan.com/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
-
   // https://bscscan.com/address/0x39bc1bfDa2130d6Bb6DBEfd366939b4c7aa7C697
   IAaveOracle internal constant ORACLE = IAaveOracle(0x39bc1bfDa2130d6Bb6DBEfd366939b4c7aa7C697);
 
-  // https://bscscan.com/address/0x23dF2a19384231aFD114b036C14b6b03324D79BC
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x23dF2a19384231aFD114b036C14b6b03324D79BC);
+  // https://bscscan.com/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a
+  address internal constant ACL_ADMIN = 0x9390B1735def18560c509E2d0bc090E9d6BA257a;
 
   // https://bscscan.com/address/0x2D97F8FA96886Fd923c065F5457F9DDd494e3877
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x2D97F8FA96886Fd923c065F5457F9DDd494e3877);
 
-  // https://bscscan.com/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a
-  address internal constant ACL_ADMIN = 0x9390B1735def18560c509E2d0bc090E9d6BA257a;
+  // https://bscscan.com/address/0x23dF2a19384231aFD114b036C14b6b03324D79BC
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x23dF2a19384231aFD114b036C14b6b03324D79BC);
 
-  // https://bscscan.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
-  ICollector internal constant COLLECTOR = ICollector(0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C);
+  // https://bscscan.com/address/0xE498675A3dd5aB2Cab72986dc7AA9B2AE87Acec4
+  address internal constant POOL_IMPL = 0xE498675A3dd5aB2Cab72986dc7AA9B2AE87Acec4;
+
+  // https://bscscan.com/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://bscscan.com/address/0xC206C2764A9dBF27d599613b8F9A63ACd1160ab4
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xC206C2764A9dBF27d599613b8F9A63ACd1160ab4;
+
+  // https://bscscan.com/address/0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85
+  address internal constant EMISSION_MANAGER = 0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85;
+
+  // https://bscscan.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
+  ICollector internal constant COLLECTOR = ICollector(0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C);
 
   // https://bscscan.com/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
@@ -50,9 +53,6 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x777fBA024bA1228fDa76149A4ff8B23475ed057D
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x777fBA024bA1228fDa76149A4ff8B23475ed057D;
-
-  // https://bscscan.com/address/0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85
-  address internal constant EMISSION_MANAGER = 0x6eD1c70aa357fB8a7e1Eac85aa59e33287Df8f85;
 
   // https://bscscan.com/address/0x971F1C94b139AdEdedA729DA636e2B0C433Ff595
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x971F1C94b139AdEdedA729DA636e2B0C433Ff595;

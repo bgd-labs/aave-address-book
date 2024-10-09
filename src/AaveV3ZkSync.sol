@@ -13,36 +13,39 @@ library AaveV3ZkSync {
   // https://era.zksync.network/address/0x78e30497a3c7527d953c6B1E3541b021A98Ac43c
   IPool internal constant POOL = IPool(0x78e30497a3c7527d953c6B1E3541b021A98Ac43c);
 
-  // https://era.zksync.network/address/0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9
-  address internal constant POOL_IMPL = 0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9;
-
   // https://era.zksync.network/address/0x0207d31b4377C74bEC37356aaD83E3dCc979F40E
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x0207d31b4377C74bEC37356aaD83E3dCc979F40E);
 
-  // https://era.zksync.network/address/0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d;
-
   // https://era.zksync.network/address/0xC7F58Fca663a8d377B6D0c9703C697f56dC40088
   IAaveOracle internal constant ORACLE = IAaveOracle(0xC7F58Fca663a8d377B6D0c9703C697f56dC40088);
 
-  // https://era.zksync.network/address/0x5F2A704cE47B373c908fE8A29514249469b52b99
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x5F2A704cE47B373c908fE8A29514249469b52b99);
+  // https://era.zksync.network/address/0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020
+  address internal constant ACL_ADMIN = 0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020;
 
   // https://era.zksync.network/address/0xc6150b63c2F02528d4A969a248710A4658ed7928
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xc6150b63c2F02528d4A969a248710A4658ed7928);
 
-  // https://era.zksync.network/address/0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020
-  address internal constant ACL_ADMIN = 0x04cE39789e11a49595cD0ECEf6f4Bd54ABF4d020;
+  // https://era.zksync.network/address/0x5F2A704cE47B373c908fE8A29514249469b52b99
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x5F2A704cE47B373c908fE8A29514249469b52b99);
 
-  // https://era.zksync.network/address/0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b
-  ICollector internal constant COLLECTOR = ICollector(0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b);
+  // https://era.zksync.network/address/0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9
+  address internal constant POOL_IMPL = 0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9;
+
+  // https://era.zksync.network/address/0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d;
 
   // https://era.zksync.network/address/0x37c972C9dDfC2138EBe33eC19dba063AB9f8966e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x37c972C9dDfC2138EBe33eC19dba063AB9f8966e;
+
+  // https://era.zksync.network/address/0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f
+  address internal constant EMISSION_MANAGER = 0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f;
+
+  // https://era.zksync.network/address/0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b
+  ICollector internal constant COLLECTOR = ICollector(0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b);
 
   // https://era.zksync.network/address/0x34be365Fd01ac224F21490aaC6dFd65D25434bbB
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x34be365Fd01ac224F21490aaC6dFd65D25434bbB;
@@ -50,9 +53,6 @@ library AaveV3ZkSync {
   // https://era.zksync.network/address/0x52E97425D1Fa6885fAaC9260B711fA5047A88d06
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x52E97425D1Fa6885fAaC9260B711fA5047A88d06;
-
-  // https://era.zksync.network/address/0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f
-  address internal constant EMISSION_MANAGER = 0x92AA83Ce0CC590E6B0627a9E22e84Ef43F389D1f;
 
   // https://era.zksync.network/address/0x93E5E329FaCf7d85118b49f0eb250E9c767CA177
   address internal constant CONFIG_ENGINE = 0x93E5E329FaCf7d85118b49f0eb250E9c767CA177;

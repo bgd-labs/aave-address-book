@@ -94,9 +94,9 @@ export function generateJsConstants({chainId, addresses}: {chainId: number; addr
     .map((key) => addressToJsConstant(chainId, key, addresses[key]));
 }
 
-export function generateJsObject({addresses}: {addresses: Addresses}) {
+export function generateJsObject(object: any) {
   return JSON.stringify(
-    addresses,
+    object,
     function (key, value) {
       if (!key) return value;
       return typeof value === 'object' ? value.value : value;
@@ -119,4 +119,13 @@ export const getImplementationStorageSlot = async (client: Client, address: Hex)
 export function addressOrZero(address?: Hex): Hex {
   if (address) return address;
   return zeroAddress;
+}
+
+export function bitMapToIndexes(bitmap: bigint) {
+  const reserveIndexes: number[] = [];
+  for (let i = 0; bitmap != 0n; i++) {
+    if (bitmap & 0x1n) reserveIndexes.push(i);
+    bitmap = bitmap >> 1n;
+  }
+  return reserveIndexes;
 }

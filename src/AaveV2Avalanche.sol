@@ -34,6 +34,10 @@ library AaveV2Avalanche {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x65285E9dfab318f57051ab2b139ccCf232945451);
 
+  // https://snowtrace.io/address/0x69A45013F047A65422deFdD0C43f09530D7025c0
+  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
+    0x69A45013F047A65422deFdD0C43f09530D7025c0;
+
   // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
   address internal constant POOL_ADMIN = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 
@@ -49,10 +53,6 @@ library AaveV2Avalanche {
 
   // https://snowtrace.io/address/0x5CfCd7E6D055Ba4f7B998914336254aDE3F69f26
   address internal constant EMISSION_MANAGER = 0x5CfCd7E6D055Ba4f7B998914336254aDE3F69f26;
-
-  // https://snowtrace.io/address/0x69A45013F047A65422deFdD0C43f09530D7025c0
-  address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0x69A45013F047A65422deFdD0C43f09530D7025c0;
 
   // https://snowtrace.io/address/0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4
   address internal constant DEBT_SWAP_ADAPTER = 0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4;

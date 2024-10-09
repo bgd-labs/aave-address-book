@@ -13,36 +13,39 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0x0AA97c284e98396202b6A04024F5E2c65026F3c0
   IPool internal constant POOL = IPool(0x0AA97c284e98396202b6A04024F5E2c65026F3c0);
 
-  // https://etherscan.io/address/0x54b63fa80D6D657Bc77a5fbE56EA6bFAfB6E5A5d
-  address internal constant POOL_IMPL = 0x54b63fa80D6D657Bc77a5fbE56EA6bFAfB6E5A5d;
-
   // https://etherscan.io/address/0x8438F4D29D895d75C86BDC25360c25eF0607E65d
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x8438F4D29D895d75C86BDC25360c25eF0607E65d);
 
-  // https://etherscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
-
   // https://etherscan.io/address/0x43b64f28A678944E0655404B0B98E443851cC34F
   IAaveOracle internal constant ORACLE = IAaveOracle(0x43b64f28A678944E0655404B0B98E443851cC34F);
 
-  // https://etherscan.io/address/0xE7d490885A68f00d9886508DF281D67263ed5758
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xE7d490885A68f00d9886508DF281D67263ed5758);
+  // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
+  address internal constant ACL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
   // https://etherscan.io/address/0x3cE8E2eb6501d4705477643E96881B1bef6A2DB3
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x3cE8E2eb6501d4705477643E96881B1bef6A2DB3);
 
-  // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
-  address internal constant ACL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
+  // https://etherscan.io/address/0xE7d490885A68f00d9886508DF281D67263ed5758
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0xE7d490885A68f00d9886508DF281D67263ed5758);
 
-  // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
-  ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
+  // https://etherscan.io/address/0x54b63fa80D6D657Bc77a5fbE56EA6bFAfB6E5A5d
+  address internal constant POOL_IMPL = 0x54b63fa80D6D657Bc77a5fbE56EA6bFAfB6E5A5d;
+
+  // https://etherscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
 
   // https://etherscan.io/address/0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb;
+
+  // https://etherscan.io/address/0x223d844fc4B006D67c0cDbd39371A9F73f69d974
+  address internal constant EMISSION_MANAGER = 0x223d844fc4B006D67c0cDbd39371A9F73f69d974;
+
+  // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
+  ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
   // https://etherscan.io/address/0xaFFA06528Bd92625de2e7A0cfa0119319265Ea4b
   address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xaFFA06528Bd92625de2e7A0cfa0119319265Ea4b;
@@ -50,9 +53,6 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0xBb077DaFFeb23B2126E7358b0b122ba6838FB881
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xBb077DaFFeb23B2126E7358b0b122ba6838FB881;
-
-  // https://etherscan.io/address/0x223d844fc4B006D67c0cDbd39371A9F73f69d974
-  address internal constant EMISSION_MANAGER = 0x223d844fc4B006D67c0cDbd39371A9F73f69d974;
 
   // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

@@ -13,43 +13,33 @@ library AaveV3PolygonZkEvm {
   // https://zkevm.polygonscan.com/address/0xb50201558B00496A145fE76f7424749556E326D8
   IPool internal constant POOL = IPool(0xb50201558B00496A145fE76f7424749556E326D8);
 
-  // https://zkevm.polygonscan.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
-  address internal constant POOL_IMPL = 0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
-
   // https://zkevm.polygonscan.com/address/0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
     IPoolConfigurator(0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16);
 
-  // https://zkevm.polygonscan.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C;
-
   // https://zkevm.polygonscan.com/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
   IAaveOracle internal constant ORACLE = IAaveOracle(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
 
-  // https://zkevm.polygonscan.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
-  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741);
+  // https://zkevm.polygonscan.com/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
+  address internal constant ACL_ADMIN = 0xe59470B3BE3293534603487E00A44C72f2CD466d;
 
   // https://zkevm.polygonscan.com/address/0x41585C50524fb8c3899B43D7D797d9486AAc94DB
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x41585C50524fb8c3899B43D7D797d9486AAc94DB);
 
-  // https://zkevm.polygonscan.com/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
-  address internal constant ACL_ADMIN = 0xe59470B3BE3293534603487E00A44C72f2CD466d;
+  // https://zkevm.polygonscan.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
+  IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
+    IPoolDataProvider(0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741);
 
-  // https://zkevm.polygonscan.com/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
-  ICollector internal constant COLLECTOR = ICollector(0xe892E40C92c2E4D281Be59b2E6300F271d824E75);
+  // https://zkevm.polygonscan.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant POOL_IMPL = 0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://zkevm.polygonscan.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C;
 
   // https://zkevm.polygonscan.com/address/0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
     0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d;
-
-  // https://zkevm.polygonscan.com/address/0xDe090EfCD6ef4b86792e2D84E55a5fa8d49D25D2
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xDe090EfCD6ef4b86792e2D84E55a5fa8d49D25D2;
-
-  // https://zkevm.polygonscan.com/address/0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c;
 
   // https://zkevm.polygonscan.com/address/0xeb0a051be10228213BAEb449db63719d6742F7c4
   address internal constant EMISSION_MANAGER = 0xeb0a051be10228213BAEb449db63719d6742F7c4;
@@ -100,7 +90,3 @@ library AaveV3PolygonZkEvm {
 }
 
 library AaveV3PolygonZkEvmAssets {}
-
-library AaveV3PolygonZkEvmEModes {
-  uint8 internal constant NONE = 0;
-}

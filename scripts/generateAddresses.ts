@@ -163,6 +163,8 @@ async function main() {
 
   const abis = generateABIImports();
 
+  writeFileSync('./src/ts/abis/index.ts', abis.join('\n'));
+
   const imports = [
     governanceNames,
     v1Library,
@@ -172,7 +174,6 @@ async function main() {
     govImports,
     smImports,
     tokenListImports,
-    abis,
   ].flat();
 
   const jsExports = imports.map((f) => f.js).flat();
