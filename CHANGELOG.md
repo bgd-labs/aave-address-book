@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/bgd-labs/aave-address-book/compare/v3.7.0...v4.0.0) (2024-10-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* The eMode exports on the js side now contain the full eMode configuration with the decoded bitmaps. Abis are exported via /abis to no longer mix with the addresses. Removing tokenlist from ts exports as there's no good reason to use it from here (integrations work with the toplevel json)
+
+### Features
+
+* ts eModes exports ([#629](https://github.com/bgd-labs/aave-address-book/issues/629)) ([4f47411](https://github.com/bgd-labs/aave-address-book/commit/4f474115b1086dc2992adf7f96330b6dbfcd3618))
+
+
+### Bug Fixes
+
+* add v3.2 config engine ([#632](https://github.com/bgd-labs/aave-address-book/issues/632)) ([cf71df4](https://github.com/bgd-labs/aave-address-book/commit/cf71df41dade698e3ec3ee6aa40f51580994f8eb))
+* previous fixes were for release ci, this one for cron ci ([#626](https://github.com/bgd-labs/aave-address-book/issues/626)) ([1296c81](https://github.com/bgd-labs/aave-address-book/commit/1296c81943aaa0e2b8d602e383abf116fd3b349f))
+
 ## [3.7.0](https://github.com/bgd-labs/aave-address-book/compare/v3.6.0...v3.7.0) (2024-10-08)
 
 
