@@ -28,7 +28,6 @@ export * as AaveV3Base from './AaveV3Base';
 export * as AaveV3BaseSepolia from './AaveV3BaseSepolia';
 export * as AaveV3Metis from './AaveV3Metis';
 export * as AaveV3Gnosis from './AaveV3Gnosis';
-export * as AaveV3PolygonZkEvm from './AaveV3PolygonZkEvm';
 export * as AaveV3BNB from './AaveV3BNB';
 export * as AaveV3Arbitrum from './AaveV3Arbitrum';
 export * as AaveV3ArbitrumSepolia from './AaveV3ArbitrumSepolia';
