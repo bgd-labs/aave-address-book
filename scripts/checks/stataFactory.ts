@@ -1,7 +1,7 @@
 import {getContract} from 'viem';
 import {CHAIN_ID_CLIENT_MAP} from '../clients';
 
-export async function check(addresses: Record<string, any>) {
+export async function check(lib: string, addresses: Record<string, any>) {
   if (addresses.STATIC_A_TOKEN_FACTORY) {
     const client = CHAIN_ID_CLIENT_MAP[addresses.CHAIN_ID];
     const factory = getContract({
