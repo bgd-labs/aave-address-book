@@ -7,6 +7,7 @@ import {mainnetProtoV3Pool} from './pools/ethereum';
  */
 export const ABI_INTERFACES = [
   'ICollector',
+  'lib/aave-v3-origin/src/contracts/extensions/v3-config-engine/IAaveV3ConfigEngine.sol:IAaveV3ConfigEngine',
   'AggregatorInterface',
   'IPayloadsControllerCore',
   'IVotingMachineWithProofs',

@@ -72,8 +72,8 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
 
-  // https://optimistic.etherscan.io/address/0x619643b346E3389062527cdb60C8720415B39860
-  address internal constant CONFIG_ENGINE = 0x619643b346E3389062527cdb60C8720415B39860;
+  // https://optimistic.etherscan.io/address/0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55
+  address internal constant CONFIG_ENGINE = 0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55;
 
   // https://optimistic.etherscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

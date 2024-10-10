@@ -1,4 +1,5 @@
 export {ICollector_ABI} from './ICollector';
+export {IAaveV3ConfigEngine_ABI} from './IAaveV3ConfigEngine';
 export {AggregatorInterface_ABI} from './AggregatorInterface';
 export {IPayloadsControllerCore_ABI} from './IPayloadsControllerCore';
 export {IVotingMachineWithProofs_ABI} from './IVotingMachineWithProofs';

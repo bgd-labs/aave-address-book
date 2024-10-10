@@ -80,8 +80,8 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0xAB911dFB2bB9e264EE836F30D3367618f8Aef965
   address internal constant WETH_GATEWAY = 0xAB911dFB2bB9e264EE836F30D3367618f8Aef965;
 
-  // https://etherscan.io/address/0x482548b76D4C577A0b5cb2A1f97EFB2893E957ed
-  address internal constant CONFIG_ENGINE = 0x482548b76D4C577A0b5cb2A1f97EFB2893E957ed;
+  // https://etherscan.io/address/0x909bA8DA4c826C62013Ce3A30ce1F42943F3b340
+  address internal constant CONFIG_ENGINE = 0x909bA8DA4c826C62013Ce3A30ce1F42943F3b340;
 
   // https://etherscan.io/address/0x1Ff525426800279843B71C0F818594DeCdC3b522
   address internal constant STATIC_A_TOKEN_FACTORY = 0x1Ff525426800279843B71C0F818594DeCdC3b522;

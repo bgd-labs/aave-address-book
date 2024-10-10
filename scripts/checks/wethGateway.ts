@@ -3,7 +3,7 @@ import {CHAIN_ID_CLIENT_MAP} from '../clients';
 import {IOwnable_ABI} from '../../src/ts/abis/IOwnable';
 import {getGovernance} from './utils';
 
-export async function check(addresses: Record<string, any>) {
+export async function check(lib: string, addresses: Record<string, any>) {
   if (addresses.WETH_GATEWAY) {
     const client = CHAIN_ID_CLIENT_MAP[addresses.CHAIN_ID];
     // on testnets owners are usually not governance

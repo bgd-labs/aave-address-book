@@ -31,7 +31,6 @@ import {AaveV3Base} from './AaveV3Base.sol';
 import {AaveV3BaseSepolia} from './AaveV3BaseSepolia.sol';
 import {AaveV3Metis} from './AaveV3Metis.sol';
 import {AaveV3Gnosis} from './AaveV3Gnosis.sol';
-import {AaveV3PolygonZkEvm} from './AaveV3PolygonZkEvm.sol';
 import {AaveV3BNB} from './AaveV3BNB.sol';
 import {AaveV3Arbitrum} from './AaveV3Arbitrum.sol';
 import {AaveV3ArbitrumSepolia} from './AaveV3ArbitrumSepolia.sol';

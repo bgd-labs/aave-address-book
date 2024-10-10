@@ -69,8 +69,8 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0xc68D0C511076283075bD5cc9aA61E43673135f37
   address internal constant FREEZING_STEWARD = 0xc68D0C511076283075bD5cc9aA61E43673135f37;
 
-  // https://scrollscan.com/address/0x8543A1c3f8D4Cb0D7363047bec613b6b54740B1d
-  address internal constant CONFIG_ENGINE = 0x8543A1c3f8D4Cb0D7363047bec613b6b54740B1d;
+  // https://scrollscan.com/address/0xC0FE411b2606a06f64C1536E8F92FA6a9d5a89B8
+  address internal constant CONFIG_ENGINE = 0xC0FE411b2606a06f64C1536E8F92FA6a9d5a89B8;
 
   // https://scrollscan.com/address/0xFBedc64AeE24921cb43004312B9eF367a4162b57
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

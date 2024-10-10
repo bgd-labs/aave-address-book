@@ -23,7 +23,6 @@ import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
-import {polygonZkEvmProtoV3} from './configs/pools/polygonZkEvm';
 import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
@@ -116,7 +115,6 @@ async function main() {
       baseSepoliaProtoV3,
       metisProtoV3,
       gnosisProtoV3,
-      polygonZkEvmProtoV3,
       bnbProtoV3,
       arbitrumProtoV3,
       arbitrumSepoliaProtoV3,
