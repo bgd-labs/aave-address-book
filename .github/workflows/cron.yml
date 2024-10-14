@@ -58,7 +58,7 @@ jobs:
           RPC_FANTOM: ${{ secrets.RPC_FANTOM }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@5fb55cc7c4af0547e8aa82d5580fe1dea5684b89 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
+        uses: peter-evans/create-pull-request@41fe70dee0e901e32df4d42043fc2734b9ef3c59 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
         with:
           author: Cache-bot <noreply@github.com>
           committer: Cache-bot <noreply@github.com>
