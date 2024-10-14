@@ -1,0 +1,55 @@
+## should eventually move to bgd-labs/github-workflows
+
+name: "Setup Node'ish environment"
+description: 'Sets up Node/Bun and installs the dependencies'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Determine Packager
+      id: packager
+      run: |
+        if [ -f yarn.lock]; then
+            echo "PACKAGER=yarn" >> $GITHUB_ENV
+        fi
+
+        if [ -f pnpm-lock.yaml]; then
+            echo "PACKAGER=pnpm" >> $GITHUB_ENV
+        fi
+
+        if [ -f package-lock.json]; then
+            echo "PACKAGER=npm" >> $GITHUB_ENV
+        fi
+
+        if [ -f bun.lockb ]; then 
+            echo "PACKAGER=bun" >> $GITHUB_ENV
+        fi
+
+    - name: Setup Node.js
+      if: ${{ env.PACKAGER != "bun" }}
+      uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # pin@v4
+      with:
+        node-version-file: .nvmrc
+        cache: ${{ env.PACKAGER }}
+
+    - name: Install (yarn)      
+      if: ${{ env.PACKAGER == "yarn" }}
+      run: yarn install --frozen-lockfile --prefer-offline
+      
+    - name: Install (npm)
+      if: ${{ env.PACKAGER == "npm" }}
+      run: npm ci --prefer-offline --no-audit
+      
+    - name: Install (pnpm)
+      if: ${{ env.PACKAGER == "pnpm" }}
+      run: pnpm i --prefer-offline --no-audit
+
+    - name: Setup Bun
+      if: ${{ env.PACKAGER == "bun" }}
+      uses: oven-sh/setup-bun@v2
+      with:
+        bun-version-file: ".bun-version"
+    
+    - name: Install (bun)
+      if: ${{ env.PACKAGER == "bun" }}
+      run: bun --prefer-offline
