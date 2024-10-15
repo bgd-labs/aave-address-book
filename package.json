@@ -37,6 +37,18 @@
       },
       "types": "./dist/abis/index.d.ts",
       "default": "./dist/abis/index.js"
+    },
+    "./tokenlist": {
+      "require": {
+        "types": "./dist/tokenlist.d.ts",
+        "default": "./dist/tokenlist.js"
+      },
+      "import": {
+        "types": "./dist/tokenlist.mts",
+        "default": "./dist/tokenlist.mjs"
+      },
+      "types": "./dist/tokenlist.d.ts",
+      "default": "./dist/tokenlist.js"
     }
   },
   "sideEffects": false,
