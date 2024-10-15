@@ -114,11 +114,6 @@ export const IPoolConfigurator_ABI = [
             internalType: 'address',
           },
           {
-            name: 'stableDebtTokenImpl',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
             name: 'variableDebtTokenImpl',
             type: 'address',
             internalType: 'address',
@@ -169,16 +164,6 @@ export const IPoolConfigurator_ABI = [
             internalType: 'string',
           },
           {
-            name: 'stableDebtTokenName',
-            type: 'string',
-            internalType: 'string',
-          },
-          {
-            name: 'stableDebtTokenSymbol',
-            type: 'string',
-            internalType: 'string',
-          },
-          {
             name: 'params',
             type: 'bytes',
             internalType: 'bytes',
@@ -196,7 +181,7 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
-    name: 'setAssetEModeCategory',
+    name: 'setAssetBorrowableInEMode',
     inputs: [
       {
         name: 'asset',
@@ -204,9 +189,37 @@ export const IPoolConfigurator_ABI = [
         internalType: 'address',
       },
       {
-        name: 'newCategoryId',
+        name: 'categoryId',
         type: 'uint8',
         internalType: 'uint8',
+      },
+      {
+        name: 'borrowable',
+        type: 'bool',
+        internalType: 'bool',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'setAssetCollateralInEMode',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'categoryId',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+      {
+        name: 'collateral',
+        type: 'bool',
+        internalType: 'bool',
       },
     ],
     outputs: [],
@@ -289,11 +302,6 @@ export const IPoolConfigurator_ABI = [
         name: 'liquidationBonus',
         type: 'uint16',
         internalType: 'uint16',
-      },
-      {
-        name: 'oracle',
-        type: 'address',
-        internalType: 'address',
       },
       {
         name: 'label',
@@ -527,24 +535,6 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
-    name: 'setReserveStableRateBorrowing',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'enabled',
-        type: 'bool',
-        internalType: 'bool',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
     name: 'setSiloedBorrowing',
     inputs: [
       {
@@ -688,51 +678,6 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
-    name: 'updateStableDebtToken',
-    inputs: [
-      {
-        name: 'input',
-        type: 'tuple',
-        internalType: 'struct ConfiguratorInputTypes.UpdateDebtTokenInput',
-        components: [
-          {
-            name: 'asset',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'incentivesController',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'name',
-            type: 'string',
-            internalType: 'string',
-          },
-          {
-            name: 'symbol',
-            type: 'string',
-            internalType: 'string',
-          },
-          {
-            name: 'implementation',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'params',
-            type: 'bytes',
-            internalType: 'bytes',
-          },
-        ],
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
     name: 'updateVariableDebtToken',
     inputs: [
       {
@@ -797,6 +742,56 @@ export const IPoolConfigurator_ABI = [
         type: 'address',
         indexed: true,
         internalType: 'address',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'AssetBorrowableInEModeChanged',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'categoryId',
+        type: 'uint8',
+        indexed: false,
+        internalType: 'uint8',
+      },
+      {
+        name: 'borrowable',
+        type: 'bool',
+        indexed: false,
+        internalType: 'bool',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'AssetCollateralInEModeChanged',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'categoryId',
+        type: 'uint8',
+        indexed: false,
+        internalType: 'uint8',
+      },
+      {
+        name: 'collateral',
+        type: 'bool',
+        indexed: false,
+        internalType: 'bool',
       },
     ],
     anonymous: false,
@@ -916,31 +911,6 @@ export const IPoolConfigurator_ABI = [
         type: 'uint256',
         indexed: false,
         internalType: 'uint256',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
-    name: 'EModeAssetCategoryChanged',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'oldCategoryId',
-        type: 'uint8',
-        indexed: false,
-        internalType: 'uint8',
-      },
-      {
-        name: 'newCategoryId',
-        type: 'uint8',
-        indexed: false,
-        internalType: 'uint8',
       },
     ],
     anonymous: false,
@@ -1324,25 +1294,6 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'event',
-    name: 'ReserveStableRateBorrowing',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'enabled',
-        type: 'bool',
-        indexed: false,
-        internalType: 'bool',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
     name: 'SiloedBorrowingChanged',
     inputs: [
       {
@@ -1362,31 +1313,6 @@ export const IPoolConfigurator_ABI = [
         type: 'bool',
         indexed: false,
         internalType: 'bool',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
-    name: 'StableDebtTokenUpgraded',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'proxy',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'implementation',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
       },
     ],
     anonymous: false,
