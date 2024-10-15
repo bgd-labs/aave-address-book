@@ -69,6 +69,11 @@ console.log(AaveV2Avalanche.CHAIN_ID);
 
 ## Running this repository
 
+### Setup
+```sh
+cp .env.example .env
+```
+
 ### Generate files
 
 The library is generated based on the `scripts/generateAddresses.ts` and `scripts/generateABIs.ts` scripts. You can regenerate the files by running `yarn start`.
