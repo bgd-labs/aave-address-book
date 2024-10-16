@@ -95,11 +95,11 @@ library AaveV3Base {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x2f6571d3Eb9a4e350C68C36bCD2afe39530078E2;
 
-  // https://basescan.org/address/0xEdD3b4737C1a0011626631a977b91Cf3E944982d
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xEdD3b4737C1a0011626631a977b91Cf3E944982d;
+  // https://basescan.org/address/0x91E04cf78e53aEBe609e8a7f2003e7EECD743F2B
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x91E04cf78e53aEBe609e8a7f2003e7EECD743F2B;
 
-  // https://basescan.org/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
-  address internal constant UI_POOL_DATA_PROVIDER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
+  // https://basescan.org/address/0x68100bD5345eA474D93577127C11F39FF8463e93
+  address internal constant UI_POOL_DATA_PROVIDER = 0x68100bD5345eA474D93577127C11F39FF8463e93;
 
   // https://basescan.org/address/0x5779b29B0a34577d927E8D511B595ef9abbFAE82
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;
