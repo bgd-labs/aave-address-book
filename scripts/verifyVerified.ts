@@ -6,13 +6,16 @@ import {CHAIN_ID_CLIENT_MAP} from './clients';
 
 const CHAIN_ID_API_KEY_MAP = {
   [ChainId.mainnet]: process.env.ETHERSCAN_API_KEY_MAINNET,
+  [ChainId.sepolia]: process.env.ETHERSCAN_API_KEY_MAINNET,
   [ChainId.polygon]: process.env.ETHERSCAN_API_KEY_POLYGON,
   [ChainId.zkEVM]: process.env.ETHERSCAN_API_KEY_ZKEVM,
   [ChainId.arbitrum_one]: process.env.ETHERSCAN_API_KEY_ARBITRUM,
   [ChainId.optimism]: process.env.ETHERSCAN_API_KEY_OPTIMISM,
   [ChainId.scroll]: process.env.ETHERSCAN_API_KEY_SCROLL,
+  [ChainId.scroll_sepolia]: process.env.ETHERSCAN_API_KEY_SCROLL,
   [ChainId.bnb]: process.env.ETHERSCAN_API_KEY_BNB,
   [ChainId.base]: process.env.ETHERSCAN_API_KEY_BASE,
+  [ChainId.base_sepolia]: process.env.ETHERSCAN_API_KEY_BASE,
   [ChainId.zkSync]: process.env.ETHERSCAN_API_KEY_ZKSYNC,
   [ChainId.gnosis]: process.env.ETHERSCAN_API_KEY_GNOSIS,
 };
@@ -108,7 +111,9 @@ async function main() {
 
   const errors: {item: ListItem; error: any}[] = [];
   for (const item of flattenedAddresses.filter(
-    (item) => ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any),
+    (item) =>
+      ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
+      !CHAIN_ID_CLIENT_MAP[item.chainId].chain?.testnet,
   )) {
     // skip contracts for which we have checked verification before
     if (cache[item.chainId]?.[item.value]) continue;
