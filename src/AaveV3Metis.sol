@@ -34,8 +34,8 @@ library AaveV3Metis {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xC01372469A17b6716A38F00c277533917B6859c0);
 
-  // https://explorer.metis.io/address/0xC89fBD2a15e88A72A76428DA00dDBBE47cb4EBB0
-  address internal constant POOL_IMPL = 0xC89fBD2a15e88A72A76428DA00dDBBE47cb4EBB0;
+  // https://explorer.metis.io/address/0xcA311Dce5b11436c7Bd7b3847E77adE29F829F8e
+  address internal constant POOL_IMPL = 0xcA311Dce5b11436c7Bd7b3847E77adE29F829F8e;
 
   // https://explorer.metis.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;

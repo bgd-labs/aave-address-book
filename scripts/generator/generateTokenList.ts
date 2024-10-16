@@ -10,7 +10,7 @@ import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {fixSymbol} from './assetsLibraryGenerator';
 import {getSymbolUri, VARIANT} from './svgUtils';
-import {CHAIN_ID_CLIENT_MAP} from '../clients';
+import {CHAIN_ID_CHAIN_MAP, getClient} from '../clients';
 
 const TAGS = {
   underlying: 'underlying',
@@ -41,7 +41,7 @@ export async function generateTokenList(pools: TokenListParams) {
 
   const tokens: TokenInfo[] = [];
   for (const {reservesData, chainId, name: poolName, pool} of pools) {
-    if (CHAIN_ID_CLIENT_MAP[chainId].chain?.testnet) continue;
+    if (CHAIN_ID_CHAIN_MAP[chainId].testnet) continue;
     for (const reserve of reservesData) {
       async function addToken(
         token: Address,
@@ -56,7 +56,7 @@ export async function generateTokenList(pools: TokenListParams) {
         const erc20contract = getContract({
           abi: IERC20Detailed_ABI,
           address: token,
-          client: CHAIN_ID_CLIENT_MAP[chainId],
+          client: getClient(chainId),
         });
         const [name, symbol] = cache
           ? [cache.name, cache.symbol]

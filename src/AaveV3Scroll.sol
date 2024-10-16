@@ -34,8 +34,8 @@ library AaveV3Scroll {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xe2108b60623C6Dcf7bBd535bD15a451fd0811f7b);
 
-  // https://scrollscan.com/address/0xE8Ba6eD06F0c00885754704108a72A54a5E5b764
-  address internal constant POOL_IMPL = 0xE8Ba6eD06F0c00885754704108a72A54a5E5b764;
+  // https://scrollscan.com/address/0xcB2107Ace932591C57EB5D07A135F1F3Dd613Dc0
+  address internal constant POOL_IMPL = 0xcB2107Ace932591C57EB5D07A135F1F3Dd613Dc0;
 
   // https://scrollscan.com/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;

@@ -114,3 +114,4 @@ In any case you need to run `yarn generate:addresses` afterwards and commit the 
 This repository will try to use public rpcs.
 For some networks they are not very reliable though, therefore you can set `RPC_<NETWORK>` in your .env to use a private rpc.
 Check https://github.com/bgd-labs/aave-address-book/blob/main/scripts/clients.ts#L39 for the chain naming convention.
+Alternatively you can provide an `ALCHEMY_API_KEY` which will use alchemy as a fallback if no exact RPC is specified.

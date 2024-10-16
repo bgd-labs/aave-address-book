@@ -23,8 +23,8 @@ export const ACL_MANAGER = '0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B';
 // IPoolDataProvider https://optimistic.etherscan.io/address/0x7F23D86Ee20D869112572136221e173428DD740B
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0x7F23D86Ee20D869112572136221e173428DD740B';
 
-// https://optimistic.etherscan.io/address/0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4
-export const POOL_IMPL = '0xb7F64c31f1c9c2c0a4b1a7fDA9Ce0Aed487DF9F4';
+// https://optimistic.etherscan.io/address/0x7A7eF57479123f26DB6a0e3EFbF8A3562EDD65BE
+export const POOL_IMPL = '0x7A7eF57479123f26DB6a0e3EFbF8A3562EDD65BE';
 
 // https://optimistic.etherscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
 export const POOL_CONFIGURATOR_IMPL = '0x4816b2C2895f97fB918f1aE7Da403750a0eE372e';

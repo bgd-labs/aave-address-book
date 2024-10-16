@@ -1,4 +1,4 @@
-import {HttpTransportConfig, createClient, http} from 'viem';
+import {Chain, HttpTransportConfig, createClient, http} from 'viem';
 import {
   mainnet,
   arbitrum,
@@ -8,18 +8,13 @@ import {
   base,
   baseSepolia,
   sepolia,
-  goerli,
   bsc,
   avalanche,
   gnosis,
   polygonZkEvm,
   scroll,
   celo,
-  zkSync,
   avalancheFuji,
-  polygonMumbai,
-  arbitrumGoerli,
-  optimismGoerli,
   optimismSepolia,
   scrollSepolia,
   arbitrumSepolia,
@@ -27,6 +22,7 @@ import {
   harmonyOne,
   fantomTestnet,
   fantom,
+  zksync,
 } from 'viem/chains';
 import {Client} from 'viem';
 import {ChainId} from '@bgd-labs/js-utils';
@@ -34,191 +30,131 @@ import {ChainId} from '@bgd-labs/js-utils';
 const commonConfig: HttpTransportConfig = {timeout: 30_000, batch: true};
 const batchConfig = {batch: {multicall: true}};
 
-export const mainnetClient = createClient({
-  chain: mainnet,
-  transport: http(process.env.RPC_MAINNET, commonConfig),
-  ...batchConfig,
-});
+// @notice: fetched from alchemy private trpc api
+// const data = await(await fetch('https://app-api.alchemy.com/trpc/config.getNetworkConfig')).json();
+// data.result.data.reduce((acc,val) => {
+//     acc[val.networkChainId] = val.kebabCaseId;
+//     return acc;
+// },{})
+const alchemyNetworks: Record<number, string> = {
+  1: 'eth-mainnet',
+  3: 'eth-ropsten',
+  4: 'eth-rinkeby',
+  5: 'eth-goerli',
+  10: 'opt-mainnet',
+  42: 'eth-kovan',
+  56: 'bnb-mainnet',
+  69: 'opt-kovan',
+  97: 'bnb-testnet',
+  100: 'gnosis-mainnet',
+  137: 'polygon-mainnet',
+  204: 'opbnb-mainnet',
+  250: 'fantom-mainnet',
+  252: 'frax-mainnet',
+  300: 'zksync-sepolia',
+  324: 'zksync-mainnet',
+  420: 'opt-goerli',
+  592: 'astar-mainnet',
+  747: 'flow-mainnet',
+  1088: 'metis-mainnet',
+  1101: 'polygonzkevm-mainnet',
+  1301: 'unichain-sepolia',
+  1442: 'polygonzkevm-testnet',
+  1946: 'soneium-minato',
+  2442: 'polygonzkevm-cardona',
+  2522: 'frax-sepolia',
+  4002: 'fantom-testnet',
+  5611: 'opbnb-testnet',
+  7000: 'zetachain-mainnet',
+  7001: 'zetachain-testnet',
+  8453: 'base-mainnet',
+  10200: 'gnosis-chiado',
+  11011: 'shape-sepolia',
+  42161: 'arb-mainnet',
+  42170: 'arbnova-mainnet',
+  43113: 'avax-fuji',
+  43114: 'avax-mainnet',
+  59141: 'linea-sepolia',
+  59144: 'linea-mainnet',
+  80001: 'polygon-mumbai',
+  80002: 'polygon-amoy',
+  80084: 'berachain-bartio',
+  81457: 'blast-mainnet',
+  84531: 'base-goerli',
+  84532: 'base-sepolia',
+  421611: 'arb-rinkeby',
+  421613: 'arb-goerli',
+  421614: 'arb-sepolia',
+  534351: 'scroll-sepolia',
+  534352: 'scroll-mainnet',
+  7777777: 'zora-mainnet',
+  11155111: 'eth-sepolia',
+  11155420: 'opt-sepolia',
+  168587773: 'blast-sepolia',
+  999999999: 'zora-sepolia',
+};
 
-export const arbitrumClient = createClient({
-  chain: arbitrum,
-  transport: http(process.env.RPC_ARBITRUM, commonConfig),
-  ...batchConfig,
-});
+const networkEnv: Record<number, string> = {
+  [ChainId.mainnet]: 'RPC_MAINNET',
+  [ChainId.optimism]: 'RPC_OPTIMISM',
+  [ChainId.bnb]: 'RPC_BNB',
+  [ChainId.gnosis]: 'RPC_GNOSIS',
+  [ChainId.polygon]: 'RPC_POLYGON',
+  [ChainId.fantom]: 'RPC_FANTOM',
+  [ChainId.zkSync]: 'RPC_ZKSYNC',
+  [ChainId.metis]: 'RPC_METIS',
+  [ChainId.base]: 'RPC_BASE',
+  [ChainId.arbitrum_one]: 'RPC_ARBITRUM',
+  [ChainId.avalanche]: 'RPC_AVALANCHE',
+  [ChainId.scroll]: 'RPC_SCROLL',
+};
 
-export const polygonClient = createClient({
-  chain: polygon,
-  transport: http(process.env.RPC_POLYGON, commonConfig),
-  ...batchConfig,
-});
+export const CHAIN_ID_CHAIN_MAP: Record<number, Chain> = {
+  [ChainId.mainnet]: mainnet,
+  [ChainId.sepolia]: sepolia,
+  [ChainId.optimism]: optimism,
+  [ChainId.optimism_sepolia]: optimismSepolia,
+  [ChainId.bnb]: bsc,
+  [ChainId.gnosis]: gnosis,
+  [ChainId.polygon]: polygon,
+  [ChainId.fantom]: fantom,
+  [ChainId.fantom_testnet]: fantomTestnet,
+  [ChainId.zkSync]: zksync,
+  [ChainId.metis]: metis,
+  [ChainId.base]: base,
+  [ChainId.base_sepolia]: baseSepolia,
+  [ChainId.arbitrum_one]: arbitrum,
+  [ChainId.arbitrum_sepolia]: arbitrumSepolia,
+  [ChainId.avalanche]: avalanche,
+  [ChainId.fuji]: avalancheFuji,
+  [ChainId.scroll]: scroll,
+  [ChainId.scroll_sepolia]: scrollSepolia,
+  [ChainId.harmony]: harmonyOne,
+  [ChainId.zkEVM]: polygonZkEvm,
+  [ChainId.celo]: celo,
+};
 
-export const optimismClient = createClient({
-  chain: optimism,
-  transport: http(process.env.RPC_OPTIMISM, commonConfig),
-  ...batchConfig,
-});
+/**
+ * Selects a rpc based on a predefined priorization:
+ * 1. env.RPC_URL_<network>
+ * 2. alchemy if available
+ */
+function getRPCUrl(chainId: number): string | undefined {
+  if (process.env[networkEnv[chainId]]) return process.env[networkEnv[chainId]];
+  if (alchemyNetworks[chainId] && process.env.ALCHEMY_API_KEY)
+    return `https://${alchemyNetworks[chainId]}.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`;
+}
 
-export const metisClient = createClient({
-  chain: metis,
-  transport: http(process.env.RPC_METIS, commonConfig),
-  ...batchConfig,
-});
+const clientCache: Record<number, Client> = {};
 
-export const baseClient = createClient({
-  chain: base,
-  transport: http(process.env.RPC_BASE, commonConfig),
-  ...batchConfig,
-});
-
-export const bnbClient = createClient({
-  chain: bsc,
-  transport: http(process.env.RPC_BNB, commonConfig),
-  ...batchConfig,
-});
-
-export const avalancheClient = createClient({
-  chain: avalanche,
-  transport: http(process.env.RPC_AVALANCHE, commonConfig),
-  ...batchConfig,
-});
-
-export const gnosisClient = createClient({
-  chain: gnosis,
-  transport: http(process.env.RPC_GNOSIS, commonConfig),
-  ...batchConfig,
-});
-
-export const scrollClient = createClient({
-  chain: scroll,
-  transport: http(process.env.RPC_SCROLL, commonConfig),
-  ...batchConfig,
-});
-
-export const zkEVMClient = createClient({
-  chain: polygonZkEvm,
-  transport: http(process.env.RPC_ZKEVM, commonConfig),
-  ...batchConfig,
-});
-
-export const celoClient = createClient({
-  chain: celo,
-  transport: http(process.env.RPC_CELO, commonConfig),
-  ...batchConfig,
-});
-
-export const zkSyncClient = createClient({
-  chain: zkSync,
-  transport: http(process.env.RPC_ZKSYNC, commonConfig),
-  ...batchConfig,
-});
-
-// testnets
-export const fujiClient = createClient({
-  chain: avalancheFuji,
-  transport: http(process.env.RPC_FUJI, commonConfig),
-  ...batchConfig,
-});
-
-export const mumbaiClient = createClient({
-  chain: polygonMumbai,
-  transport: http(process.env.RPC_MUMBAI, commonConfig),
-  ...batchConfig,
-});
-
-export const sepoliaClient = createClient({
-  chain: sepolia,
-  transport: http(process.env.RPC_SEPOLIA, commonConfig),
-  ...batchConfig,
-});
-
-export const goerliClient = createClient({
-  chain: goerli,
-  transport: http(process.env.RPC_GOERLI, commonConfig),
-  ...batchConfig,
-});
-
-export const arbitrumGoerliClient = createClient({
-  chain: arbitrumGoerli,
-  transport: http(process.env.RPC_ARBITRUM_GOERLI, commonConfig),
-  ...batchConfig,
-});
-
-export const arbitrumSepoliaClient = createClient({
-  chain: arbitrumSepolia,
-  transport: http(process.env.RPC_ARBITRUM_SEPOLIA, commonConfig),
-  ...batchConfig,
-});
-
-export const optimismGoerliClient = createClient({
-  chain: optimismGoerli,
-  transport: http(process.env.RPC_OPTIMISM_GOERLI, commonConfig),
-  ...batchConfig,
-});
-
-export const optimismSepoliaClient = createClient({
-  chain: optimismSepolia,
-  transport: http(process.env.RPC_OPTIMISM_SEPOLIA, commonConfig),
-  ...batchConfig,
-});
-
-export const scrollSepoliaClient = createClient({
-  chain: scrollSepolia,
-  transport: http(process.env.RPC_SCROLL_SEPOLIA, commonConfig),
-  ...batchConfig,
-});
-
-export const baseSepoliaClient = createClient({
-  chain: baseSepolia,
-  transport: http(process.env.RPC_BASE_SEPOLIA, commonConfig),
-  ...batchConfig,
-});
-
-// deprecated
-
-export const fantomTestnetClient = createClient({
-  chain: fantomTestnet,
-  transport: http(process.env.RPC_FANTOM_TESTNET, commonConfig),
-  ...batchConfig,
-});
-
-export const fantomClient = createClient({
-  chain: fantomTestnet,
-  transport: http(process.env.RPC_FANTOM, commonConfig),
-  ...batchConfig,
-});
-
-export const harmonyClient = createClient({
-  chain: harmonyOne,
-  transport: http(process.env.RPC_HARMONY, commonConfig),
-  ...batchConfig,
-});
-
-export const CHAIN_ID_CLIENT_MAP: Record<number, Client> = {
-  [ChainId.mainnet]: mainnetClient,
-  [ChainId.arbitrum_one]: arbitrumClient,
-  [ChainId.arbitrum_goerli]: arbitrumGoerliClient,
-  [ChainId.arbitrum_sepolia]: arbitrumSepoliaClient,
-  [ChainId.polygon]: polygonClient,
-  [ChainId.optimism]: optimismClient,
-  [ChainId.optimism_goerli]: optimismGoerliClient,
-  [ChainId.optimism_sepolia]: optimismSepoliaClient,
-  [ChainId.metis]: metisClient,
-  [ChainId.base]: baseClient,
-  [ChainId.base_sepolia]: baseSepoliaClient,
-  [ChainId.sepolia]: sepoliaClient,
-  [ChainId.goerli]: goerliClient,
-  [ChainId.bnb]: bnbClient,
-  [ChainId.avalanche]: avalancheClient,
-  [ChainId.gnosis]: gnosisClient,
-  [ChainId.scroll]: scrollClient,
-  [ChainId.scroll_sepolia]: scrollSepoliaClient,
-  [ChainId.zkEVM]: zkEVMClient,
-  [ChainId.celo]: celoClient,
-  [ChainId.zkSync]: zkSyncClient,
-  [ChainId.fuji]: fujiClient,
-  [ChainId.mumbai]: mumbaiClient,
-  // deprecated
-  [ChainId.harmony]: harmonyClient,
-  [ChainId.fantom]: fantomClient,
-  [ChainId.fantom_testnet]: fantomTestnetClient,
-} as const;
+export function getClient(chainId: number) {
+  console.log(chainId, getRPCUrl(chainId));
+  if (!clientCache[chainId]) {
+    clientCache[chainId] = createClient({
+      chain: CHAIN_ID_CHAIN_MAP[chainId],
+      transport: http(getRPCUrl(chainId), commonConfig),
+      ...batchConfig,
+    });
+  }
+  return clientCache[chainId];
+}

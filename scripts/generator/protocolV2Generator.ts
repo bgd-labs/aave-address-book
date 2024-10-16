@@ -10,7 +10,7 @@ import {
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {fetchPoolAddresses} from './protocol-v2-generator/fetchPoolAddresses';
-import {CHAIN_ID_CLIENT_MAP} from '../clients';
+import {getClient} from '../clients';
 import {fetchTokens, inferAdditionalTokenInfo} from './protocol-v2-generator/fetchTokens';
 
 export interface PoolV2Addresses {
@@ -32,7 +32,7 @@ export interface PoolV2Addresses {
 }
 
 export async function generateProtocolV2Library(poolConfig: PoolConfig) {
-  const client = CHAIN_ID_CLIENT_MAP[poolConfig.chainId];
+  const client = getClient(poolConfig.chainId);
   if (!client) {
     throw new Error(`client for chain not found for chainId: ${poolConfig.chainId}`);
   }

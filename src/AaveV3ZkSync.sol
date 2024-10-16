@@ -31,8 +31,8 @@ library AaveV3ZkSync {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x5F2A704cE47B373c908fE8A29514249469b52b99);
 
-  // https://era.zksync.network/address/0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9
-  address internal constant POOL_IMPL = 0x3Db69F17e682a8E6f029a90c8DD04A4689B988b9;
+  // https://era.zksync.network/address/0x79Bef43a562047B8FDF6335b28Fa61820A442fD6
+  address internal constant POOL_IMPL = 0x79Bef43a562047B8FDF6335b28Fa61820A442fD6;
 
   // https://era.zksync.network/address/0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d
   address internal constant POOL_CONFIGURATOR_IMPL = 0xBc4c49630350F67D7Ec88785E5DF9A57c78a1b7d;

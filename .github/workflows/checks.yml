@@ -33,17 +33,7 @@ jobs:
       - name: verify
         run: yarn check:sanity
         env:
-          RPC_MAINNET: ${{ secrets.RPC_MAINNET }}
-          RPC_POLYGON: ${{ secrets.RPC_POLYGON }}
-          RPC_AVALANCHE: ${{ secrets.RPC_AVALANCHE }}
-          RPC_OPTIMISM: ${{ secrets.RPC_OPTIMISM }}
-          RPC_ARBITRUM: ${{ secrets.RPC_ARBITRUM }}
-          RPC_BASE: ${{ secrets.RPC_BASE }}
-          RPC_GNOSIS: ${{ secrets.RPC_GNOSIS }}
-          RPC_BNB: ${{ secrets.RPC_BNB }}
-          RPC_METIS: ${{ secrets.RPC_METIS }}
-          RPC_SCROLL: ${{ secrets.RPC_SCROLL }}
-          RPC_FANTOM: ${{ secrets.RPC_FANTOM }}
+          ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
   verification:
     runs-on: ubuntu-latest
     permissions:

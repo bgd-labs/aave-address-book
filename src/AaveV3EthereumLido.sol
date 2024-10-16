@@ -31,8 +31,8 @@ library AaveV3EthereumLido {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x08795CFE08C7a81dCDFf482BbAAF474B240f31cD);
 
-  // https://etherscan.io/address/0xF96e23D32584536552C70D99664D4B17F373229c
-  address internal constant POOL_IMPL = 0xF96e23D32584536552C70D99664D4B17F373229c;
+  // https://etherscan.io/address/0xf5b4664CB6D13189345119c60a948cdc7785d0FE
+  address internal constant POOL_IMPL = 0xf5b4664CB6D13189345119c60a948cdc7785d0FE;
 
   // https://etherscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;

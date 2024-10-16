@@ -31,8 +31,8 @@ library AaveV3BNB {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x23dF2a19384231aFD114b036C14b6b03324D79BC);
 
-  // https://bscscan.com/address/0xE498675A3dd5aB2Cab72986dc7AA9B2AE87Acec4
-  address internal constant POOL_IMPL = 0xE498675A3dd5aB2Cab72986dc7AA9B2AE87Acec4;
+  // https://bscscan.com/address/0xB769c2A9259B3Eedaf120d8643C4C7EAe977fd7f
+  address internal constant POOL_IMPL = 0xB769c2A9259B3Eedaf120d8643C4C7EAe977fd7f;
 
   // https://bscscan.com/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;

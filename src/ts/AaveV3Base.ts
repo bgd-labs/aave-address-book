@@ -23,8 +23,8 @@ export const ACL_MANAGER = '0x43955b0899Ab7232E3a454cf84AedD22Ad46FD33';
 // IPoolDataProvider https://basescan.org/address/0xd82a47fdebB5bf5329b09441C3DaB4b5df2153Ad
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0xd82a47fdebB5bf5329b09441C3DaB4b5df2153Ad';
 
-// https://basescan.org/address/0xDea262629b7D28722Ad4189c515f93c996D2Cd72
-export const POOL_IMPL = '0xDea262629b7D28722Ad4189c515f93c996D2Cd72';
+// https://basescan.org/address/0x3a9C471F13C9cA1eBDf440cf713C8404e498F9C3
+export const POOL_IMPL = '0x3a9C471F13C9cA1eBDf440cf713C8404e498F9C3';
 
 // https://basescan.org/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
 export const POOL_CONFIGURATOR_IMPL = '0x4816b2C2895f97fB918f1aE7Da403750a0eE372e';
