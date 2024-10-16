@@ -8,18 +8,13 @@ import {
   base,
   baseSepolia,
   sepolia,
-  goerli,
   bsc,
   avalanche,
   gnosis,
   polygonZkEvm,
   scroll,
   celo,
-  zkSync,
   avalancheFuji,
-  polygonMumbai,
-  arbitrumGoerli,
-  optimismGoerli,
   optimismSepolia,
   scrollSepolia,
   arbitrumSepolia,
@@ -35,7 +30,7 @@ import {ChainId} from '@bgd-labs/js-utils';
 const commonConfig: HttpTransportConfig = {timeout: 30_000, batch: true};
 const batchConfig = {batch: {multicall: true}};
 
-// fetched from their private trpc api
+// @notice: fetched from alchemy private trpc api
 // const data = await(await fetch('https://app-api.alchemy.com/trpc/config.getNetworkConfig')).json();
 // data.result.data.reduce((acc,val) => {
 //     acc[val.networkChainId] = val.kebabCaseId;
@@ -100,29 +95,43 @@ const alchemyNetworks: Record<number, string> = {
 };
 
 const networkEnv: Record<number, string> = {
-  1: 'RPC_URL_MAINNET',
-  10: 'RPC_URL_OPTIMISM',
-  56: 'RPC_URL_BNB',
-  100: 'RPC_URL_GNOSIS',
-  137: 'RPC_URL_POLYGON',
-  250: 'RPC_URL_FANTOM',
-  324: 'RPC_URL_ZKSYNC',
-  42161: 'RPC_URL_ARBITRUM',
-  43114: 'RPC_URL_AVALANCHE',
-  534352: 'RPC_URL_SCROLL',
+  [ChainId.mainnet]: 'RPC_MAINNET',
+  [ChainId.optimism]: 'RPC_OPTIMISM',
+  [ChainId.bnb]: 'RPC_BNB',
+  [ChainId.gnosis]: 'RPC_GNOSIS',
+  [ChainId.polygon]: 'RPC_POLYGON',
+  [ChainId.fantom]: 'RPC_FANTOM',
+  [ChainId.zkSync]: 'RPC_ZKSYNC',
+  [ChainId.metis]: 'RPC_METIS',
+  [ChainId.base]: 'RPC_BASE',
+  [ChainId.arbitrum_one]: 'RPC_ARBITRUM',
+  [ChainId.avalanche]: 'RPC_AVALANCHE',
+  [ChainId.scroll]: 'RPC_SCROLL',
 };
 
 export const CHAIN_ID_CHAIN_MAP: Record<number, Chain> = {
-  1: mainnet,
-  10: optimism,
-  56: bsc,
-  100: gnosis,
-  137: polygon,
-  250: fantom,
-  324: zksync,
-  42161: arbitrum,
-  43114: avalanche,
-  534352: scroll,
+  [ChainId.mainnet]: mainnet,
+  [ChainId.sepolia]: sepolia,
+  [ChainId.optimism]: optimism,
+  [ChainId.optimism_sepolia]: optimismSepolia,
+  [ChainId.bnb]: bsc,
+  [ChainId.gnosis]: gnosis,
+  [ChainId.polygon]: polygon,
+  [ChainId.fantom]: fantom,
+  [ChainId.fantom_testnet]: fantomTestnet,
+  [ChainId.zkSync]: zksync,
+  [ChainId.metis]: metis,
+  [ChainId.base]: base,
+  [ChainId.base_sepolia]: baseSepolia,
+  [ChainId.arbitrum_one]: arbitrum,
+  [ChainId.arbitrum_sepolia]: arbitrumSepolia,
+  [ChainId.avalanche]: avalanche,
+  [ChainId.fuji]: avalancheFuji,
+  [ChainId.scroll]: scroll,
+  [ChainId.scroll_sepolia]: scrollSepolia,
+  [ChainId.harmony]: harmonyOne,
+  [ChainId.zkEVM]: polygonZkEvm,
+  [ChainId.celo]: celo,
 };
 
 /**
@@ -139,6 +148,7 @@ function getRPCUrl(chainId: number): string | undefined {
 const clientCache: Record<number, Client> = {};
 
 export function getClient(chainId: number) {
+  console.log(chainId, getRPCUrl(chainId));
   if (!clientCache[chainId]) {
     clientCache[chainId] = createClient({
       chain: CHAIN_ID_CHAIN_MAP[chainId],

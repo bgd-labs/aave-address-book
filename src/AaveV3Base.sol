@@ -34,8 +34,8 @@ library AaveV3Base {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xd82a47fdebB5bf5329b09441C3DaB4b5df2153Ad);
 
-  // https://basescan.org/address/0xDea262629b7D28722Ad4189c515f93c996D2Cd72
-  address internal constant POOL_IMPL = 0xDea262629b7D28722Ad4189c515f93c996D2Cd72;
+  // https://basescan.org/address/0x3a9C471F13C9cA1eBDf440cf713C8404e498F9C3
+  address internal constant POOL_IMPL = 0x3a9C471F13C9cA1eBDf440cf713C8404e498F9C3;
 
   // https://basescan.org/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;

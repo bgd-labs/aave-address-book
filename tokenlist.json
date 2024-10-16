@@ -6147,6 +6147,226 @@
       }
     },
     {
+      "chainId": 250,
+      "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+      "name": "Dai Stablecoin",
+      "decimals": 18,
+      "symbol": "DAI",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/dai.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
+      "name": "Aave Fantom DAI",
+      "decimals": 18,
+      "symbol": "aFanDAI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/adai.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8",
+      "name": "ChainLink",
+      "decimals": 18,
+      "symbol": "LINK",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/link.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530",
+      "name": "Aave Fantom LINK",
+      "decimals": 18,
+      "symbol": "aFanLINK",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/alink.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0x625E7708f30cA75bfd92586e17077590C60eb4cD",
+      "name": "Aave Fantom USDC",
+      "decimals": 6,
+      "symbol": "aFanUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11",
+      "name": "Bitcoin",
+      "decimals": 8,
+      "symbol": "BTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/btc.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0x078f358208685046a11C85e8ad32895DED33A249",
+      "name": "Aave Fantom WBTC",
+      "decimals": 8,
+      "symbol": "aFanWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/abtc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x321162Cd933E2Be498Cd2267a90534A804051b11"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d",
+      "name": "Ethereum",
+      "decimals": 18,
+      "symbol": "ETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eth.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8",
+      "name": "Aave Fantom WETH",
+      "decimals": 18,
+      "symbol": "aFanWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeth.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x74b23882a30290451A17c44f4F05243b6b58C76d"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
+      "name": "Frapped USDT",
+      "decimals": 6,
+      "symbol": "fUSDT",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+      "name": "Aave Fantom USDT",
+      "decimals": 6,
+      "symbol": "aFanUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x049d68029688eAbF473097a2fC38ef61633A3C7A"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
+      "name": "Aave",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
+      "name": "Aave Fantom AAVE",
+      "decimals": 18,
+      "symbol": "aFanAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aaave.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "name": "Wrapped Fantom",
+      "decimals": 18,
+      "symbol": "WFTM",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wftm.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
+      "name": "Aave Fantom WFTM",
+      "decimals": 18,
+      "symbol": "aFanWFTM",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awftm.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
+      "name": "Curve DAO",
+      "decimals": 18,
+      "symbol": "CRV",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/crv.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf",
+      "name": "Aave Fantom CRV",
+      "decimals": 18,
+      "symbol": "aFanCRV",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/acrv.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x1E4F97b9f9F913c46F1632781732927B9019C68b"
+      }
+    },
+    {
+      "chainId": 250,
+      "address": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC",
+      "name": "Sushi",
+      "decimals": 18,
+      "symbol": "SUSHI",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/sushi.svg"
+    },
+    {
+      "chainId": 250,
+      "address": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA",
+      "name": "Aave Fantom SUSHI",
+      "decimals": 18,
+      "symbol": "aFanSUSHI",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asushi.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC"
+      }
+    },
+    {
       "chainId": 1666600000,
       "address": "0xEf977d2f931C1978Db5F6747666fa1eACB0d0339",
       "name": "Dai Stablecoin",
@@ -6427,6 +6647,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 54 },
-  "timestamp": "2024-10-09T07:36:59.289Z"
+  "version": { "major": 3, "minor": 0, "patch": 55 },
+  "timestamp": "2024-10-16T14:02:42.858Z"
 }

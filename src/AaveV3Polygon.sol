@@ -31,8 +31,8 @@ library AaveV3Polygon {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x7F23D86Ee20D869112572136221e173428DD740B);
 
-  // https://polygonscan.com/address/0x1f69d4700B34A1D9F92E55235df414FcC02A8306
-  address internal constant POOL_IMPL = 0x1f69d4700B34A1D9F92E55235df414FcC02A8306;
+  // https://polygonscan.com/address/0x5DFb8c777C19d3cEdcDc7398d2EeF1FB0b9b05c9
+  address internal constant POOL_IMPL = 0x5DFb8c777C19d3cEdcDc7398d2EeF1FB0b9b05c9;
 
   // https://polygonscan.com/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;

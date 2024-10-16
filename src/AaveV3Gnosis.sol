@@ -31,8 +31,8 @@ library AaveV3Gnosis {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x57038C3e3Fe0a170BB72DE2fD56E98e4d1a69717);
 
-  // https://gnosisscan.io/address/0x8a48EF9287c402C119c14a5f6897F6dFdc12cb45
-  address internal constant POOL_IMPL = 0x8a48EF9287c402C119c14a5f6897F6dFdc12cb45;
+  // https://gnosisscan.io/address/0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770
+  address internal constant POOL_IMPL = 0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770;
 
   // https://gnosisscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;

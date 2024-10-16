@@ -31,8 +31,8 @@ library AaveV3EthereumEtherFi {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xE7d490885A68f00d9886508DF281D67263ed5758);
 
-  // https://etherscan.io/address/0x54b63fa80D6D657Bc77a5fbE56EA6bFAfB6E5A5d
-  address internal constant POOL_IMPL = 0x54b63fa80D6D657Bc77a5fbE56EA6bFAfB6E5A5d;
+  // https://etherscan.io/address/0x3d881c2Dc90F00e7A52F06155f77FBEC63A779c7
+  address internal constant POOL_IMPL = 0x3d881c2Dc90F00e7A52F06155f77FBEC63A779c7;
 
   // https://etherscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
   address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
