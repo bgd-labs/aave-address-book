@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/bgd-labs/aave-address-book/compare/v4.0.0...v4.1.0) (2024-10-16)
+
+
+### Features
+
+* avara ui v3.2 ui data providers ([#641](https://github.com/bgd-labs/aave-address-book/issues/641)) ([#644](https://github.com/bgd-labs/aave-address-book/issues/644)) ([1bfe6bf](https://github.com/bgd-labs/aave-address-book/commit/1bfe6bf8e8e5b37f815b2563809f5c1bf4d3af19))
+
+
+### Bug Fixes
+
+* readd tokenlist ([#642](https://github.com/bgd-labs/aave-address-book/issues/642)) ([c9ab73b](https://github.com/bgd-labs/aave-address-book/commit/c9ab73be76dd4f5f8684a2cdd6614acaae7856f4))
+
 ## [4.0.0](https://github.com/bgd-labs/aave-address-book/compare/v3.7.0...v4.0.0) (2024-10-10)
 
 
