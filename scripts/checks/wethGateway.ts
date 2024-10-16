@@ -1,11 +1,11 @@
 import {getContract} from 'viem';
-import {CHAIN_ID_CLIENT_MAP} from '../clients';
+import {getClient} from '../clients';
 import {IOwnable_ABI} from '../../src/ts/abis/IOwnable';
 import {getGovernance} from './utils';
 
 export async function check(lib: string, addresses: Record<string, any>) {
   if (addresses.WETH_GATEWAY) {
-    const client = CHAIN_ID_CLIENT_MAP[addresses.CHAIN_ID];
+    const client = getClient(addresses.CHAIN_ID);
     // on testnets owners are usually not governance
     if (!client.chain?.testnet) {
       const gateway = getContract({

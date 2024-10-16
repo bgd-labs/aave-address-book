@@ -2,7 +2,7 @@ import {ChainId} from '@bgd-labs/js-utils';
 import {ListItem, flattenedAddresses} from '../ui/src/utils/getAddresses';
 import {writeFileSync, readFileSync, existsSync, mkdirSync} from 'fs';
 import {Address, zeroAddress} from 'viem';
-import {CHAIN_ID_CLIENT_MAP} from './clients';
+import {CHAIN_ID_CHAIN_MAP} from './clients';
 
 const CHAIN_ID_API_KEY_MAP = {
   [ChainId.mainnet]: process.env.ETHERSCAN_API_KEY_MAINNET,
@@ -23,7 +23,7 @@ const CHAIN_ID_API_KEY_MAP = {
 function getApiUrl(chainId: number) {
   if (chainId === ChainId.metis)
     return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
-  return CHAIN_ID_CLIENT_MAP[chainId]?.chain?.blockExplorers?.default.apiUrl;
+  return CHAIN_ID_CHAIN_MAP[chainId].blockExplorers?.default.apiUrl;
 }
 
 function sleep(ms) {
@@ -113,7 +113,7 @@ async function main() {
   for (const item of flattenedAddresses.filter(
     (item) =>
       ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
-      !CHAIN_ID_CLIENT_MAP[item.chainId].chain?.testnet,
+      !CHAIN_ID_CHAIN_MAP[item.chainId].testnet,
   )) {
     // skip contracts for which we have checked verification before
     if (cache[item.chainId]?.[item.value]) continue;

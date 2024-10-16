@@ -12,7 +12,7 @@ import {IGovernanceCore_ABI} from '../../src/ts/abis/IGovernanceCore';
 import {IPayloadsControllerCore_ABI} from '../../src/ts/abis/IPayloadsControllerCore';
 import {IVotingStrategy_ABI} from '../../src/ts/abis/IVotingStrategy';
 import {IVotingMachineWithProofs_ABI} from '../../src/ts/abis/IVotingMachineWithProofs';
-import {CHAIN_ID_CLIENT_MAP} from '../clients';
+import {getClient} from '../clients';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
@@ -76,14 +76,14 @@ async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig)
   if (ADDRESSES.GOVERNANCE) {
     addresses.GOVERNANCE_POWER_STRATEGY = await getGovernancePowerStrategy(
       ADDRESSES.GOVERNANCE,
-      CHAIN_ID_CLIENT_MAP[CHAIN_ID],
+      getClient(CHAIN_ID),
     );
     addresses.GOVERNANCE = {value: addresses.GOVERNANCE, type: 'IGovernanceCore'};
   }
 
   if (ADDRESSES.PAYLOADS_CONTROLLER) {
     const executors = await fetchV3ExecutorAddresses(
-      CHAIN_ID_CLIENT_MAP[CHAIN_ID],
+      getClient(CHAIN_ID),
       ADDRESSES.PAYLOADS_CONTROLLER,
     );
     addresses.PAYLOADS_CONTROLLER = {
@@ -95,7 +95,7 @@ async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig)
   if (ADDRESSES.VOTING_MACHINE) {
     const strategyAndWareHouse = await getVotingStrategyAndWarehouse(
       ADDRESSES.VOTING_MACHINE,
-      CHAIN_ID_CLIENT_MAP[CHAIN_ID],
+      getClient(CHAIN_ID),
     );
     addresses = {...addresses, ...strategyAndWareHouse};
   }

@@ -1,11 +1,11 @@
 import {getContract} from 'viem';
-import {CHAIN_ID_CLIENT_MAP} from '../clients';
+import {getClient} from '../clients';
 import {IAaveV3ConfigEngine_ABI} from '../../src/ts/abis/IAaveV3ConfigEngine';
 
 export async function check(lib: string, addresses: Record<string, any>) {
   // Aave V2 has a different type, being deprecated we don't validate it
   if (addresses.CONFIG_ENGINE && lib.startsWith('AaveV3')) {
-    const client = CHAIN_ID_CLIENT_MAP[addresses.CHAIN_ID];
+    const client = getClient(addresses.CHAIN_ID);
     if (!client.chain?.testnet) {
       const engineContract = getContract({
         abi: IAaveV3ConfigEngine_ABI,

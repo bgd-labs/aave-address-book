@@ -10,7 +10,7 @@ import {
 } from './utils';
 import {generateAssetsLibrary} from './assetsLibraryGenerator';
 import {fetchPoolAddresses} from './protocol-v3-generator/fetchPoolAddresses';
-import {CHAIN_ID_CLIENT_MAP} from '../clients';
+import {getClient} from '../clients';
 import {fetchExternalPoolLibraries} from './protocol-v3-generator/fetchExternalPoolLibraries';
 import {fetchEModes, generateEmodeLibrary} from './protocol-v3-generator/fetchEModes';
 import {fetchTokens, inferAdditionalTokenInfo} from './protocol-v3-generator/fetchTokens';
@@ -53,7 +53,7 @@ function generateExternalLibraries(
 }
 
 export async function generateProtocolV3Library(poolConfig: PoolConfig) {
-  const client = CHAIN_ID_CLIENT_MAP[poolConfig.chainId];
+  const client = getClient(poolConfig.chainId);
   if (!client) {
     throw new Error(`client for chain not found for chainId: ${poolConfig.chainId}`);
   }
