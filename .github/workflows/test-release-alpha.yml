@@ -30,7 +30,7 @@ jobs:
       - name: Package size report
         uses: andresz1/size-limit-action@v1 # pin@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
   release-node-alpha:
     if: github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
     uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@ea41920d7c7c656823137da415d1e3f59bf064bf # pin@main
