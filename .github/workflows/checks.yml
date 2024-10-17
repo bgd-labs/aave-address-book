@@ -43,7 +43,7 @@ jobs:
 
       - name: Cache Restore
         id: cache
-        uses: actions/cache/restore@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # pin@v4
+        uses: actions/cache/restore@3624ceb22c1c5a301c8db4169662070a689d9ea8 # pin@v4
         with:
           path: cache
           key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}
@@ -94,7 +94,7 @@ jobs:
 
       - name: Cache Save
         # if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
-        uses: actions/cache/save@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # pin@v4
+        uses: actions/cache/save@3624ceb22c1c5a301c8db4169662070a689d9ea8 # pin@v4
         with:
           path: cache
           key: ${{ runner.os }}-verification-${{ hashFiles('safe.csv') }}-${{ github.sha }}
