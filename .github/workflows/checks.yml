@@ -23,6 +23,10 @@ jobs:
 
       - uses: bgd-labs/github-workflows/.github/actions/setup-node@main
 
+      - uses: bgd-labs/action-rpc-env@main
+        with:
+          ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
+
       - name: verify
         run: yarn check:sanity
         env:

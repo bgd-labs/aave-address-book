@@ -36,20 +36,12 @@ jobs:
 
       - uses: bgd-labs/github-workflows/.github/actions/setup-node@main
 
+      - uses: bgd-labs/action-rpc-env@main
+        with:
+          ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
+
       - name: Generate library
         run: yarn generate:addresses
-        env:
-          RPC_MAINNET: ${{ secrets.RPC_MAINNET }}
-          RPC_POLYGON: ${{ secrets.RPC_POLYGON }}
-          RPC_AVALANCHE: ${{ secrets.RPC_AVALANCHE }}
-          RPC_OPTIMISM: ${{ secrets.RPC_OPTIMISM }}
-          RPC_ARBITRUM: ${{ secrets.RPC_ARBITRUM }}
-          RPC_BASE: ${{ secrets.RPC_BASE }}
-          RPC_GNOSIS: ${{ secrets.RPC_GNOSIS }}
-          RPC_BNB: ${{ secrets.RPC_BNB }}
-          RPC_METIS: ${{ secrets.RPC_METIS }}
-          RPC_SCROLL: ${{ secrets.RPC_SCROLL }}
-          RPC_FANTOM: ${{ secrets.RPC_FANTOM }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@5fb55cc7c4af0547e8aa82d5580fe1dea5684b89 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
