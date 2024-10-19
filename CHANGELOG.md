@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/bgd-labs/aave-address-book/compare/v4.1.0...v4.2.0) (2024-10-19)
+
+
+### Features
+
+* **secrets:** use `ALCHEMY_API_KEY` if present ([#646](https://github.com/bgd-labs/aave-address-book/issues/646)) ([483e27d](https://github.com/bgd-labs/aave-address-book/commit/483e27dd761d5ec2b7d4d486c4d0f40433fd5832))
+
+
+### Bug Fixes
+
+* remove alchemy api key ([483e27d](https://github.com/bgd-labs/aave-address-book/commit/483e27dd761d5ec2b7d4d486c4d0f40433fd5832))
+* weth gateway gnosis ([#654](https://github.com/bgd-labs/aave-address-book/issues/654)) ([7ac58c7](https://github.com/bgd-labs/aave-address-book/commit/7ac58c7e28204bddcded36df02476e8cc58dc35f))
+
 ## [4.1.0](https://github.com/bgd-labs/aave-address-book/compare/v4.0.0...v4.1.0) (2024-10-16)
 
 
