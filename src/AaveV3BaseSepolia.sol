@@ -131,6 +131,27 @@ library AaveV3BaseSepoliaAssets {
   // https://sepolia.basescan.org/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
+
+  // https://sepolia.basescan.org/address/0x3e138010792d63e4af70dD7F2401C9cdE0eaf3C8
+  address internal constant USDX_UNDERLYING = 0x3e138010792d63e4af70dD7F2401C9cdE0eaf3C8;
+
+  uint8 internal constant USDX_DECIMALS = 18;
+
+  // https://sepolia.basescan.org/address/0x7E60de07156fdA16A74F3700725e2bbB5CFC8CB8
+  address internal constant USDX_A_TOKEN = 0x7E60de07156fdA16A74F3700725e2bbB5CFC8CB8;
+
+  // https://sepolia.basescan.org/address/0xed47C3087a7B41a4F2cA93747DDDc368f8EcDE47
+  address internal constant USDX_V_TOKEN = 0xed47C3087a7B41a4F2cA93747DDDc368f8EcDE47;
+
+  // https://sepolia.basescan.org/address/0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165
+  address internal constant USDX_ORACLE = 0xd30e2101a97dcbAeBCBC04F14C3f624E67A35165;
+
+  // https://sepolia.basescan.org/address/0xff1DB744F1275f8e04A62A7E5D663575F3a774B6
+  address internal constant USDX_INTEREST_RATE_STRATEGY =
+    0xff1DB744F1275f8e04A62A7E5D663575F3a774B6;
+
+  // https://sepolia.basescan.org/address/0xb17966889E3D914CCf9A11bA0Fd71870B03727AF
+  address internal constant USDX_STATA_TOKEN = 0xb17966889E3D914CCf9A11bA0Fd71870B03727AF;
 }
 
 library AaveV3BaseSepoliaEModes {
