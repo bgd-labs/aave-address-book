@@ -27,6 +27,9 @@ library GovernanceV3Avalanche {
   // https://snowtrace.io/address/0xc1162BCb2E5E3ca4725512008c7522dF8C8B7B65
   address internal constant GRANULAR_GUARDIAN = 0xc1162BCb2E5E3ca4725512008c7522dF8C8B7B65;
 
+  // https://snowtrace.io/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
+  address internal constant GOVERNANCE_GUARDIAN = 0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe;
+
   // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
   address internal constant EXECUTOR_LVL_1 = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 

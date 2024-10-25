@@ -6,8 +6,8 @@ library MiscBNB {
   // https://bscscan.com/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
   address internal constant TRANSPARENT_PROXY_FACTORY = 0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
 
-  // https://bscscan.com/address/0x25170e9Ed4077ABA7D3DD03cf4A9F45Dc6D0fcCD
-  address internal constant PROTOCOL_GUARDIAN = 0x25170e9Ed4077ABA7D3DD03cf4A9F45Dc6D0fcCD;
+  // https://bscscan.com/address/0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6
+  address internal constant PROTOCOL_GUARDIAN = 0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6;
 
   // https://bscscan.com/address/0xAe940e61E9863178b71500c9B5faE2a04Da361a1
   address internal constant PARASWAP_FEE_CLAIMER = 0xAe940e61E9863178b71500c9B5faE2a04Da361a1;

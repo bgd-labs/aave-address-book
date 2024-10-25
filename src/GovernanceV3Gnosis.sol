@@ -21,6 +21,9 @@ library GovernanceV3Gnosis {
   // https://gnosisscan.io/address/0x4A9F571E3C1f2F13567bb59e38988e74d7d72602
   address internal constant GRANULAR_GUARDIAN = 0x4A9F571E3C1f2F13567bb59e38988e74d7d72602;
 
+  // https://gnosisscan.io/address/0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b
+  address internal constant GOVERNANCE_GUARDIAN = 0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b;
+
   // https://gnosisscan.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
   address internal constant EXECUTOR_LVL_1 = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
 }

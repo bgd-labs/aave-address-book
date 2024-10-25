@@ -46,7 +46,7 @@ contract AaveAddressBookTest is Test {
   }
 
   function testEmergencyAdminIsCorrect() public pure {
-    assertEq(AaveV2Ethereum.EMERGENCY_ADMIN, address(0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633));
+    assertEq(AaveV2Ethereum.EMERGENCY_ADMIN, address(0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30));
   }
 
   function testCollectorIsCorrect() public pure {

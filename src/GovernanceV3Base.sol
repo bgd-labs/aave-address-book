@@ -18,6 +18,9 @@ library GovernanceV3Base {
   // https://basescan.org/address/0xa1c6aF35E0205f42256382C05243C543FEDBf4bB
   address internal constant GRANULAR_GUARDIAN = 0xa1c6aF35E0205f42256382C05243C543FEDBf4bB;
 
+  // https://basescan.org/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
+  address internal constant GOVERNANCE_GUARDIAN = 0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe;
+
   // https://basescan.org/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a
   address internal constant EXECUTOR_LVL_1 = 0x9390B1735def18560c509E2d0bc090E9d6BA257a;
 }
