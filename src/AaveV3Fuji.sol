@@ -128,6 +128,27 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461
   address internal constant WAVAX_INTEREST_RATE_STRATEGY =
     0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461;
+
+  // https://testnet.snowtrace.io/address/0x22913D4E21D44EF7662B118A6540450e25fE09a9
+  address internal constant USDX_UNDERLYING = 0x22913D4E21D44EF7662B118A6540450e25fE09a9;
+
+  uint8 internal constant USDX_DECIMALS = 18;
+
+  // https://testnet.snowtrace.io/address/0x687b7a6Ea699E0652552Cd8C86aA764eF33f285d
+  address internal constant USDX_A_TOKEN = 0x687b7a6Ea699E0652552Cd8C86aA764eF33f285d;
+
+  // https://testnet.snowtrace.io/address/0x8ECa241b42f89EcA1F790A1Bd908a0F73F8e1A11
+  address internal constant USDX_V_TOKEN = 0x8ECa241b42f89EcA1F790A1Bd908a0F73F8e1A11;
+
+  // https://testnet.snowtrace.io/address/0x97FE42a7E96640D932bbc0e1580c73E705A8EB73
+  address internal constant USDX_ORACLE = 0x97FE42a7E96640D932bbc0e1580c73E705A8EB73;
+
+  // https://testnet.snowtrace.io/address/0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461
+  address internal constant USDX_INTEREST_RATE_STRATEGY =
+    0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461;
+
+  // https://testnet.snowtrace.io/address/0x17Bb5B12D6716FC96565dB996DAFC7F7a731731F
+  address internal constant USDX_STATA_TOKEN = 0x17Bb5B12D6716FC96565dB996DAFC7F7a731731F;
 }
 
 library AaveV3FujiEModes {

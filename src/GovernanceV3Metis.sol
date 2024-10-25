@@ -18,6 +18,9 @@ library GovernanceV3Metis {
   // https://explorer.metis.io/address/0x61BE97d3a0550549f67CA7421725fA73Fa2036B5
   address internal constant GRANULAR_GUARDIAN = 0x61BE97d3a0550549f67CA7421725fA73Fa2036B5;
 
+  // https://explorer.metis.io/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
+  address internal constant GOVERNANCE_GUARDIAN = 0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe;
+
   // https://explorer.metis.io/address/0x6fD45D32375d5aDB8D76275A3932c740F03a8718
   address internal constant EXECUTOR_LVL_1 = 0x6fD45D32375d5aDB8D76275A3932c740F03a8718;
 }

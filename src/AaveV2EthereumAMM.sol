@@ -41,8 +41,8 @@ library AaveV2EthereumAMM {
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant POOL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
 
-  // https://etherscan.io/address/0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633
-  address internal constant EMERGENCY_ADMIN = 0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;
+  // https://etherscan.io/address/0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30
+  address internal constant EMERGENCY_ADMIN = 0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30;
 
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);

@@ -21,6 +21,9 @@ library GovernanceV3BNB {
   // https://bscscan.com/address/0xe4FB5e3F506BE0095f38004f993D16fdA8224383
   address internal constant GRANULAR_GUARDIAN = 0xe4FB5e3F506BE0095f38004f993D16fdA8224383;
 
+  // https://bscscan.com/address/0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b
+  address internal constant GOVERNANCE_GUARDIAN = 0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b;
+
   // https://bscscan.com/address/0x9390B1735def18560c509E2d0bc090E9d6BA257a
   address internal constant EXECUTOR_LVL_1 = 0x9390B1735def18560c509E2d0bc090E9d6BA257a;
 }

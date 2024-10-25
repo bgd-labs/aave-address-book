@@ -10,6 +10,9 @@ export const PC_DATA_HELPER = '0xf438e33dCCEE260ee4371F9dceF408b0d7DBe424';
 // https://scrollscan.com/address/0xa835707d28e6C37C49d661742f2Fb5987367cEd4
 export const GRANULAR_GUARDIAN = '0xa835707d28e6C37C49d661742f2Fb5987367cEd4';
 
+// https://scrollscan.com/address/0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b
+export const GOVERNANCE_GUARDIAN = '0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b';
+
 // https://scrollscan.com/address/0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24
 export const EXECUTOR_LVL_1 = '0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24';
 

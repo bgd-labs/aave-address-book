@@ -37,8 +37,8 @@ library MiscEthereum {
   // https://etherscan.io/address/0x1cDF8879eC8bE012bA959EB515b11008E0cb6323
   address internal constant AAVE_CL_ROBOT_OPERATOR = 0x1cDF8879eC8bE012bA959EB515b11008E0cb6323;
 
-  // https://etherscan.io/address/0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633
-  address internal constant PROTOCOL_GUARDIAN = 0xCA76Ebd8617a03126B6FB84F9b1c1A0fB71C2633;
+  // https://etherscan.io/address/0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30
+  address internal constant PROTOCOL_GUARDIAN = 0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30;
 
   // https://etherscan.io/address/0xa88c6D90eAe942291325f9ae3c66f3563B93FE10
   address internal constant AAVE_MERKLE_DISTRIBUTOR = 0xa88c6D90eAe942291325f9ae3c66f3563B93FE10;

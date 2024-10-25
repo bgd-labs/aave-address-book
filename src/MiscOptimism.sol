@@ -18,8 +18,8 @@ library MiscOptimism {
   // https://optimistic.etherscan.io/address/0x55Cf9583D7D30DC4936bAee1f747591dBECe5df7
   address internal constant AAVE_CL_ROBOT_OPERATOR = 0x55Cf9583D7D30DC4936bAee1f747591dBECe5df7;
 
-  // https://optimistic.etherscan.io/address/0xE50c8C619d05ff98b22Adf991F17602C774F785c
-  address internal constant PROTOCOL_GUARDIAN = 0xE50c8C619d05ff98b22Adf991F17602C774F785c;
+  // https://optimistic.etherscan.io/address/0x56C1a4b54921DEA9A344967a8693C7E661D72968
+  address internal constant PROTOCOL_GUARDIAN = 0x56C1a4b54921DEA9A344967a8693C7E661D72968;
 
   // https://optimistic.etherscan.io/address/0x1685D81212580DD4cDA287616C2f6F4794927e18
   address internal constant AAVE_MERKLE_DISTRIBUTOR = 0x1685D81212580DD4cDA287616C2f6F4794927e18;
