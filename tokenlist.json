@@ -6596,6 +6596,26 @@
     },
     {
       "chainId": 1,
+      "address": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+      "name": "Renzo Restaked ETH",
+      "decimals": 18,
+      "symbol": "ezETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x74e5664394998f13B07aF42446380ACef637969f",
+      "name": "Aave Ethereum Lido ezETH",
+      "decimals": 18,
+      "symbol": "aEthLidoezETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
+        "underlying": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xbe1F842e7e0afd2c2322aae5d34bA899544b29db",
       "name": "Aave Ethereum EtherFi weETH",
       "decimals": 18,
@@ -6647,6 +6667,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 55 },
-  "timestamp": "2024-10-16T14:02:42.858Z"
+  "version": { "major": 3, "minor": 0, "patch": 56 },
+  "timestamp": "2024-10-27T21:53:47.751Z"
 }

@@ -56,7 +56,7 @@ export function generateEmodeLibrary(
 ) {
   const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
   const formatted = sorted.reduce((acc, [value, eMode]) => {
-    acc[eMode.label.toUpperCase().replace('-', '_').replace(' ', '_')] = {
+    acc[eMode.label.toUpperCase().replace(/-/g, '_').replace(/ /g, '_')] = {
       value,
       type: 'uint8',
     };
