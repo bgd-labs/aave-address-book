@@ -148,7 +148,6 @@ function getRPCUrl(chainId: number): string | undefined {
 const clientCache: Record<number, Client> = {};
 
 export function getClient(chainId: number) {
-  console.log(chainId, getRPCUrl(chainId));
   if (!clientCache[chainId]) {
     clientCache[chainId] = createClient({
       chain: CHAIN_ID_CHAIN_MAP[chainId],

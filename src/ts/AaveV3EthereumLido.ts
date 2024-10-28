@@ -112,6 +112,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x8958b1C39269167527821f8c276Ef7504883f2fa',
     ORACLE: '0x736bF902680e68989886e9807CD7Db4B3E015d3C',
   },
+  ezETH: {
+    decimals: 18,
+    id: 4,
+    UNDERLYING: '0xbf5495Efe5DB9ce00f80364C8B423567e58d2110',
+    A_TOKEN: '0x74e5664394998f13B07aF42446380ACef637969f',
+    V_TOKEN: '0x08e1bba76D27841dD91FAb4b3a636A0D5CF8c3E9',
+    INTEREST_RATE_STRATEGY: '0x8958b1C39269167527821f8c276Ef7504883f2fa',
+    ORACLE: '0x68C9c7Bf43DBd0EBab102116bc7C3C9f7d9297Ee',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -121,13 +130,30 @@ export const E_MODES = {
       '0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0',
       '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     ],
-    borrowableBitmap: '3',
-    borrowableAssets: [
-      '0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0',
-      '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
-    ],
+    borrowableBitmap: '2',
+    borrowableAssets: ['0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'],
     ltv: 9350,
     liquidationThreshold: 9550,
+    liquidationBonus: 10100,
+  },
+  '2': {
+    label: 'LRT Stablecoins main',
+    collateralBitmap: '16',
+    collateralAssets: ['0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'],
+    borrowableBitmap: '4',
+    borrowableAssets: ['0xdC035D45d973E3EC169d2276DDab16f1e407384F'],
+    ltv: 7500,
+    liquidationThreshold: 7800,
+    liquidationBonus: 10750,
+  },
+  '3': {
+    label: 'LRT wstETH main',
+    collateralBitmap: '16',
+    collateralAssets: ['0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0'],
+    ltv: 9300,
+    liquidationThreshold: 9500,
     liquidationBonus: 10100,
   },
 } as const;
