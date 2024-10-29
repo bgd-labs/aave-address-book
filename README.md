@@ -71,7 +71,7 @@ console.log(AaveV2Avalanche.CHAIN_ID);
 
 ### Generate files
 
-The library is generated based on the `scripts/generateAddresses.ts` and `scripts/generateABIs.ts` scripts. You can regenerate the files by running `yarn start`.
+The library is generated based on the `scripts/generateAddresses.ts` and `scripts/generateABIs.ts` scripts. You can regenerate the files by running `npm run start`.
 
 ### Dependencies
 
@@ -93,7 +93,7 @@ forge test
 
 ### Adding a new Pool
 
-To list a new pool in the address book, you simply need to add a new pool in the respective [pools config](./scripts/configs/<type>/<network>) and run `yarn generate:addresses`.
+To list a new pool in the address book, you simply need to add a new pool in the respective [pools config](./scripts/configs/<type>/<network>) and run `npm run generate:addresses`.
 
 ### Adding new Addresses
 
@@ -105,7 +105,7 @@ b) Adding an address that **cannot be obtained via onchain calls** so it needs t
 
 To achieve an addition here, you need to alter the [additionalAddresses section](https://github.com/bgd-labs/aave-address-book/blob/main/scripts/config.ts#L46) on the pool type and add your address to the respective pools. Additional addresses will currently be exported as type `address`. There's currently no possibility to define a custom type.
 
-In any case you need to run `yarn generate:addresses` afterwards and commit the altered artifacts.
+In any case you need to run `npm run generate:addresses` afterwards and commit the altered artifacts.
 
 ### Troubleshooting
 
