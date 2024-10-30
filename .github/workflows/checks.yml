@@ -28,7 +28,7 @@ jobs:
           ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
 
       - name: verify
-        run: yarn check:sanity
+        run: npm run check:sanity
         env:
           ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
   verification:
@@ -62,7 +62,7 @@ jobs:
           cp cache/verification.json cache/verification.backup.json || :
 
       - name: verify
-        run: yarn check:verification
+        run: npm run check:verification
         # the verification step will exit with error code whenever there is a non verified contract
         # we don't want the ci to fail yet though as there are already unverified contracts
         # we might consider removing this in the future

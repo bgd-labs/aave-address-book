@@ -13,9 +13,9 @@ export enum VARIANT {
 
 const VARIANT_TAGS: Record<VARIANT, AssetTag | undefined> = {
   [VARIANT.UNDERLYING]: undefined,
-  [VARIANT.A_TOKEN]: AssetTag.AToken,
-  [VARIANT.STATA_TOKEN]: AssetTag.StataToken,
-  [VARIANT.STATIC_A_TOKEN]: AssetTag.StataToken,
+  [VARIANT.A_TOKEN]: 'a',
+  [VARIANT.STATA_TOKEN]: 'stata',
+  [VARIANT.STATIC_A_TOKEN]: 'stata',
 };
 
 export async function getSymbolUri(symbol: string, variant: VARIANT): Promise<string | undefined> {

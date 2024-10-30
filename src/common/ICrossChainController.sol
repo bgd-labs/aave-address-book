@@ -977,6 +977,4 @@ interface ICrossChainForwarder {
  * @author BGD Labs
  * @notice interface containing the objects, events and methods definitions of the CrossChainController contract
  */
-interface ICrossChainController is IRescuable, ICrossChainForwarder, ICrossChainReceiver {
-
-}
+interface ICrossChainController is IRescuable, ICrossChainForwarder, ICrossChainReceiver {}
