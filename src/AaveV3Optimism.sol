@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -104,7 +103,6 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
 }
-
 library AaveV3OptimismAssets {
   // https://optimistic.etherscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1
   address internal constant DAI_UNDERLYING = 0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1;
@@ -397,7 +395,6 @@ library AaveV3OptimismAssets {
   // https://optimistic.etherscan.io/address/0x4DD03dfD36548C840B563745e3FBeC320F37BA7e
   address internal constant USDCn_STATIC_A_TOKEN = 0x4DD03dfD36548C840B563745e3FBeC320F37BA7e;
 }
-
 library AaveV3OptimismEModes {
   uint8 internal constant NONE = 0;
 
@@ -405,7 +402,6 @@ library AaveV3OptimismEModes {
 
   uint8 internal constant ETH_CORRELATED = 2;
 }
-
 library AaveV3OptimismExternalLibraries {
   // https://optimistic.etherscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -110,7 +109,6 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
 }
-
 library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1
   address internal constant DAI_UNDERLYING = 0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1;
@@ -462,7 +460,6 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xD9FBA68D89178e3538e708939332c79efC540179
   address internal constant GHO_STATIC_A_TOKEN = 0xD9FBA68D89178e3538e708939332c79efC540179;
 }
-
 library AaveV3ArbitrumEModes {
   uint8 internal constant NONE = 0;
 
@@ -470,7 +467,6 @@ library AaveV3ArbitrumEModes {
 
   uint8 internal constant ETH_CORRELATED = 2;
 }
-
 library AaveV3ArbitrumExternalLibraries {
   // https://arbiscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

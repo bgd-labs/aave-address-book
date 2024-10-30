@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Harmony {
   // https://explorer.harmony.one/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -70,7 +69,6 @@ library AaveV3Harmony {
   // https://explorer.harmony.one/address/0xE387c6053CE8EC9f8C3fa5cE085Af73114a695d3
   address internal constant WETH_GATEWAY = 0xE387c6053CE8EC9f8C3fa5cE085Af73114a695d3;
 }
-
 library AaveV3HarmonyAssets {
   // https://explorer.harmony.one/address/0xEf977d2f931C1978Db5F6747666fa1eACB0d0339
   address internal constant ONE_DAI_UNDERLYING = 0xEf977d2f931C1978Db5F6747666fa1eACB0d0339;

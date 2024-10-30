@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0xeBa440B438Ad808101d1c451C1C5322c90BEFCdA
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -92,7 +91,6 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0x7FbBCCFB548c110226fEF5BEc816Ea04B5170EA3
   address internal constant RISK_STEWARD = 0x7FbBCCFB548c110226fEF5BEc816Ea04B5170EA3;
 }
-
 library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
   address internal constant weETH_UNDERLYING = 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee;
@@ -166,11 +164,9 @@ library AaveV3EthereumEtherFiAssets {
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
     0xC16666b7FF197427BD255E6961A5F99cfb3A6059;
 }
-
 library AaveV3EthereumEtherFiEModes {
   uint8 internal constant NONE = 0;
 }
-
 library AaveV3EthereumEtherFiExternalLibraries {
   // https://etherscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

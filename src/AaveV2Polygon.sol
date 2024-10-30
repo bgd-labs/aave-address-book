@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV2Polygon {
   // https://polygonscan.com/address/0xd05e3E715d945B59290df0ae8eF85c1BdB684744
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -89,7 +88,6 @@ library AaveV2Polygon {
   // https://polygonscan.com/address/0xf1e6d4347105138B51E2bacA9A22fA228309ebB1
   address internal constant WETH_GATEWAY = 0xf1e6d4347105138B51E2bacA9A22fA228309ebB1;
 }
-
 library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
   address internal constant DAI_UNDERLYING = 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063;

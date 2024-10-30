@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3EthereumLido {
   // https://etherscan.io/address/0xcfBf336fe147D643B9Cb705648500e101504B16d
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -89,7 +88,6 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D
   address internal constant RISK_STEWARD = 0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D;
 }
-
 library AaveV3EthereumLidoAssets {
   // https://etherscan.io/address/0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0
   address internal constant wstETH_UNDERLYING = 0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0;
@@ -181,7 +179,6 @@ library AaveV3EthereumLidoAssets {
   address internal constant ezETH_INTEREST_RATE_STRATEGY =
     0x8958b1C39269167527821f8c276Ef7504883f2fa;
 }
-
 library AaveV3EthereumLidoEModes {
   uint8 internal constant NONE = 0;
 
@@ -191,7 +188,6 @@ library AaveV3EthereumLidoEModes {
 
   uint8 internal constant LRT_WSTETH_MAIN = 3;
 }
-
 library AaveV3EthereumLidoExternalLibraries {
   // https://etherscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

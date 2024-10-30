@@ -6600,7 +6600,8 @@
       "name": "Renzo Restaked ETH",
       "decimals": 18,
       "symbol": "ezETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
     },
     {
       "chainId": 1,
@@ -6609,6 +6610,7 @@
       "decimals": 18,
       "symbol": "aEthLidoezETH",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aezeth.svg",
       "extensions": {
         "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
         "underlying": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110"
@@ -6667,6 +6669,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 56 },
-  "timestamp": "2024-10-27T21:53:47.751Z"
+  "version": { "major": 3, "minor": 0, "patch": 57 },
+  "timestamp": "2024-10-30T07:50:56.596Z"
 }

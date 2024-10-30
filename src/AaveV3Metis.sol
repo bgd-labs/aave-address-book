@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Metis {
   // https://explorer.metis.io/address/0xB9FABd7500B2C6781c35Dd48d54f81fc2299D7AF
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -88,7 +87,6 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x9C62AdC332888F56998542415c38D7CDf3Ff7619
   address internal constant STATIC_A_TOKEN_FACTORY = 0x9C62AdC332888F56998542415c38D7CDf3Ff7619;
 }
-
 library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0
   address internal constant mDAI_UNDERLYING = 0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0;
@@ -195,11 +193,9 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x2f1606864d6322c54b50a1762D4a1ca67f42d23d
   address internal constant WETH_STATIC_A_TOKEN = 0x2f1606864d6322c54b50a1762D4a1ca67f42d23d;
 }
-
 library AaveV3MetisEModes {
   uint8 internal constant NONE = 0;
 }
-
 library AaveV3MetisExternalLibraries {
   // https://explorer.metis.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

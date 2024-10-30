@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Avalanche {
   // https://snowtrace.io/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -105,7 +104,6 @@ library AaveV3Avalanche {
   // https://snowtrace.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
 }
-
 library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xd586E7F844cEa2F87f50152665BCbc2C279D8d70
   address internal constant DAIe_UNDERLYING = 0xd586E7F844cEa2F87f50152665BCbc2C279D8d70;
@@ -358,7 +356,6 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0x34d768cc830c32DcD743321c09A2A702651bF9a2
   address internal constant BTCb_STATIC_A_TOKEN = 0x34d768cc830c32DcD743321c09A2A702651bF9a2;
 }
-
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;
 
@@ -366,7 +363,6 @@ library AaveV3AvalancheEModes {
 
   uint8 internal constant AVAX_CORRELATED = 2;
 }
-
 library AaveV3AvalancheExternalLibraries {
   // https://snowtrace.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

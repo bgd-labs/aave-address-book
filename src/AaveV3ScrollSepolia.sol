@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3ScrollSepolia {
   // https://sepolia.scrollscan.com/address/0x52A27dC690F8652288194Dd2bc523863eBdEa236
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -72,7 +71,6 @@ library AaveV3ScrollSepolia {
   // https://sepolia.scrollscan.com/address/0x57ce905CfD7f986A929A26b006f797d181dB706e
   address internal constant WETH_GATEWAY = 0x57ce905CfD7f986A929A26b006f797d181dB706e;
 }
-
 library AaveV3ScrollSepoliaAssets {
   // https://sepolia.scrollscan.com/address/0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40
   address internal constant DAI_UNDERLYING = 0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40;

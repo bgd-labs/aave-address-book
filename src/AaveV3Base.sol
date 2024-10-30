@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Base {
   // https://basescan.org/address/0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -107,7 +106,6 @@ library AaveV3Base {
   // https://basescan.org/address/0x729b3EA8C005AbC58c9150fb57Ec161296F06766
   address internal constant WETH_GATEWAY = 0x729b3EA8C005AbC58c9150fb57Ec161296F06766;
 }
-
 library AaveV3BaseAssets {
   // https://basescan.org/address/0x4200000000000000000000000000000000000006
   address internal constant WETH_UNDERLYING = 0x4200000000000000000000000000000000000006;
@@ -253,13 +251,11 @@ library AaveV3BaseAssets {
   address internal constant cbBTC_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
 }
-
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant ETH_CORRELATED = 1;
 }
-
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

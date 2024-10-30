@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Fuji {
   // https://testnet.snowtrace.io/address/0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -73,7 +72,6 @@ library AaveV3Fuji {
   // https://testnet.snowtrace.io/address/0x3d2ee1AB8C3a597cDf80273C684dE0036481bE3a
   address internal constant WETH_GATEWAY = 0x3d2ee1AB8C3a597cDf80273C684dE0036481bE3a;
 }
-
 library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0x5425890298aed601595a70AB815c96711a31Bc65
   address internal constant USDC_UNDERLYING = 0x5425890298aed601595a70AB815c96711a31Bc65;
@@ -150,11 +148,9 @@ library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0x17Bb5B12D6716FC96565dB996DAFC7F7a731731F
   address internal constant USDX_STATA_TOKEN = 0x17Bb5B12D6716FC96565dB996DAFC7F7a731731F;
 }
-
 library AaveV3FujiEModes {
   uint8 internal constant NONE = 0;
 }
-
 library AaveV3FujiExternalLibraries {
   // https://testnet.snowtrace.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;
