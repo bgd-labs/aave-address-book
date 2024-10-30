@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV2EthereumArc {
   // https://etherscan.io/address/0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -50,7 +49,6 @@ library AaveV2EthereumArc {
   // https://etherscan.io/address/0xF4a1F5fEA79C3609514A417425971FadC10eCfBE
   address internal constant PERMISSION_MANAGER = 0xF4a1F5fEA79C3609514A417425971FadC10eCfBE;
 }
-
 library AaveV2EthereumArcAssets {
   // https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
   address internal constant USDC_UNDERLYING = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48;

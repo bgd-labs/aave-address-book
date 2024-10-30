@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Fantom {
   // https://ftmscan.com/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -77,7 +76,6 @@ library AaveV3Fantom {
   // https://ftmscan.com/address/0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f
   address internal constant WETH_GATEWAY = 0x1DcDA4de2Bf6c7AD9a34788D22aE6b7d55016e1f;
 }
-
 library AaveV3FantomAssets {
   // https://ftmscan.com/address/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E
   address internal constant DAI_UNDERLYING = 0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E;

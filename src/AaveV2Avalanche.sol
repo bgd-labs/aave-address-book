@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV2Avalanche {
   // https://snowtrace.io/address/0xb6A86025F0FE1862B372cb0ca18CE3EDe02A318f
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -96,7 +95,6 @@ library AaveV2Avalanche {
   // https://snowtrace.io/address/0x68c815cB8C8390bc3F2CE99265044dEC9D350C49
   address internal constant WETH_GATEWAY = 0x68c815cB8C8390bc3F2CE99265044dEC9D350C49;
 }
-
 library AaveV2AvalancheAssets {
   // https://snowtrace.io/address/0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB
   address internal constant WETHe_UNDERLYING = 0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB;

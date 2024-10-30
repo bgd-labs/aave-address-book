@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3OptimismSepolia {
   // https://optimism-sepolia.blockscout.com/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -79,7 +78,6 @@ library AaveV3OptimismSepolia {
   // https://optimism-sepolia.blockscout.com/address/0x589750BA8aF186cE5B55391B0b7148cAD43a1619
   address internal constant WETH_GATEWAY = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
 }
-
 library AaveV3OptimismSepoliaAssets {
   // https://optimism-sepolia.blockscout.com/address/0x5fd84259d66Cd46123540766Be93DFE6D43130D7
   address internal constant USDC_UNDERLYING = 0x5fd84259d66Cd46123540766Be93DFE6D43130D7;

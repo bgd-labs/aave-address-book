@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3ZkSync {
   // https://era.zksync.network/address/0x2A3948BB219D6B2Fa83D64100006391a96bE6cb7
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -79,7 +78,6 @@ library AaveV3ZkSync {
   // https://era.zksync.network/address/0xDeDee21f34eff4e2902B95A106855834a608e19a
   address internal constant RISK_STEWARD = 0xDeDee21f34eff4e2902B95A106855834a608e19a;
 }
-
 library AaveV3ZkSyncAssets {
   // https://era.zksync.network/address/0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4
   address internal constant USDC_UNDERLYING = 0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4;
@@ -170,13 +168,11 @@ library AaveV3ZkSyncAssets {
   // https://era.zksync.network/address/0x57815Ab06D846d7dECd326Ee541CD06144FED237
   address internal constant ZK_INTEREST_RATE_STRATEGY = 0x57815Ab06D846d7dECd326Ee541CD06144FED237;
 }
-
 library AaveV3ZkSyncEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant ETH_CORRELATED = 1;
 }
-
 library AaveV3ZkSyncExternalLibraries {
   // https://era.zksync.network/address/0xcE53459E8734Df93399A425183Ee1860Ca8c2D0b
   address internal constant FLASHLOAN_LOGIC = 0xcE53459E8734Df93399A425183Ee1860Ca8c2D0b;

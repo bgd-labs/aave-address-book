@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Polygon {
   // https://polygonscan.com/address/0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -98,7 +97,6 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
 }
-
 library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
   address internal constant DAI_UNDERLYING = 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063;
@@ -537,7 +535,6 @@ library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19
   address internal constant USDCn_STATIC_A_TOKEN = 0x2dCa80061632f3F87c9cA28364d1d0c30cD79a19;
 }
-
 library AaveV3PolygonEModes {
   uint8 internal constant NONE = 0;
 
@@ -547,7 +544,6 @@ library AaveV3PolygonEModes {
 
   uint8 internal constant ETH_CORRELATED = 3;
 }
-
 library AaveV3PolygonExternalLibraries {
   // https://polygonscan.com/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

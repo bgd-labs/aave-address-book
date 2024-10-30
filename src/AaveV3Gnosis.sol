@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Gnosis {
   // https://gnosisscan.io/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -85,7 +84,6 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
   address internal constant STATIC_A_TOKEN_FACTORY = 0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6;
 }
-
 library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1
   address internal constant WETH_UNDERLYING = 0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1;
@@ -254,13 +252,11 @@ library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0xf0E7eC247b918311afa054E0AEdb99d74c31b809
   address internal constant USDCe_STATIC_A_TOKEN = 0xf0E7eC247b918311afa054E0AEdb99d74c31b809;
 }
-
 library AaveV3GnosisEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant ETH_CORRELATED = 1;
 }
-
 library AaveV3GnosisExternalLibraries {
   // https://gnosisscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

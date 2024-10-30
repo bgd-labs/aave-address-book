@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3Scroll {
   // https://scrollscan.com/address/0x69850D0B276776781C063771b161bd8894BCdD04
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -91,7 +90,6 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x970b77b96D94966939a8F867c2BfC2aC0310C0e7
   address internal constant STATIC_A_TOKEN_FACTORY = 0x970b77b96D94966939a8F867c2BfC2aC0310C0e7;
 }
-
 library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x5300000000000000000000000000000000000004
   address internal constant WETH_UNDERLYING = 0x5300000000000000000000000000000000000004;
@@ -174,13 +172,11 @@ library AaveV3ScrollAssets {
   address internal constant weETH_INTEREST_RATE_STRATEGY =
     0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc;
 }
-
 library AaveV3ScrollEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant ETH_CORRELATED = 1;
 }
-
 library AaveV3ScrollExternalLibraries {
   // https://scrollscan.com/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

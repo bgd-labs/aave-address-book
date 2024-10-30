@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3ArbitrumSepolia {
   // https://sepolia.arbiscan.io/address/0xB25a5D144626a0D488e52AE717A051a2E9997076
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -76,7 +75,6 @@ library AaveV3ArbitrumSepolia {
   // https://sepolia.arbiscan.io/address/0x20040a64612555042335926d72B4E5F667a67fA1
   address internal constant WETH_GATEWAY = 0x20040a64612555042335926d72B4E5F667a67fA1;
 }
-
 library AaveV3ArbitrumSepoliaAssets {
   // https://sepolia.arbiscan.io/address/0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d
   address internal constant USDC_UNDERLYING = 0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d;
