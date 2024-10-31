@@ -35,6 +35,7 @@ export {IGovernanceDataHelper_ABI} from './IGovernanceDataHelper';
 export {IMetaDelegateHelper_ABI} from './IMetaDelegateHelper';
 export {IVotingMachineDataHelper_ABI} from './IVotingMachineDataHelper';
 export {IUiPoolDataProvider_ABI} from './IUiPoolDataProvider';
+export {IRiskSteward_ABI} from './IRiskSteward';
 export {IAaveToken_ABI} from './IAaveToken';
 export {IStkAaveToken_ABI} from './IStkAaveToken';
 export {IATokenWithDelegation_ABI} from './IATokenWithDelegation';

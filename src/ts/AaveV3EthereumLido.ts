@@ -71,8 +71,8 @@ export const CONFIG_ENGINE = '0x1097eDb85392932b7dCB630baDDC8A6D73585218';
 // https://etherscan.io/address/0x3843b29118fFC18d5d12EE079d0324E1bF115e69
 export const CAPS_PLUS_RISK_STEWARD = '0x3843b29118fFC18d5d12EE079d0324E1bF115e69';
 
-// https://etherscan.io/address/0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D
-export const RISK_STEWARD = '0x45C4f8b32927eFFdf1dA3cA42498504947dd4d0D';
+// https://etherscan.io/address/0x30adC2f98ff78fDde12F191Acb82699f640694FB
+export const RISK_STEWARD = '0x30adC2f98ff78fDde12F191Acb82699f640694FB';
 
 export const CHAIN_ID = 1;
 export const ASSETS = {

@@ -88,8 +88,8 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0x1EBdbE77bbDDD284BdCE8D7981D7eD26D6af58cA
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x1EBdbE77bbDDD284BdCE8D7981D7eD26D6af58cA;
 
-  // https://etherscan.io/address/0x7FbBCCFB548c110226fEF5BEc816Ea04B5170EA3
-  address internal constant RISK_STEWARD = 0x7FbBCCFB548c110226fEF5BEc816Ea04B5170EA3;
+  // https://etherscan.io/address/0xBF79d8339303148E345277a994Eb2cD5d82F0067
+  address internal constant RISK_STEWARD = 0xBF79d8339303148E345277a994Eb2cD5d82F0067;
 }
 library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee

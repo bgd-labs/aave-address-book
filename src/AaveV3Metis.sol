@@ -59,8 +59,8 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
 
-  // https://explorer.metis.io/address/0xF73F2634b43344d86921DA3391d4EF0d5675Dd63
-  address internal constant RISK_STEWARD = 0xF73F2634b43344d86921DA3391d4EF0d5675Dd63;
+  // https://explorer.metis.io/address/0x58226D26658F19724cB881E9F747EeDC846BB1c9
+  address internal constant RISK_STEWARD = 0x58226D26658F19724cB881E9F747EeDC846BB1c9;
 
   // https://explorer.metis.io/address/0x2C77153fF4a1e83A8d8D750735FB101ECB55949f
   address internal constant FREEZING_STEWARD = 0x2C77153fF4a1e83A8d8D750735FB101ECB55949f;

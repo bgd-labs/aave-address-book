@@ -59,8 +59,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x12DEB4025b79f2B43f6aeF079F9D77C3f9a67bb6
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x12DEB4025b79f2B43f6aeF079F9D77C3f9a67bb6;
 
-  // https://basescan.org/address/0x963C0b3dFF5C35b171CcC11DAC006a605E42BeD2
-  address internal constant RISK_STEWARD = 0x963C0b3dFF5C35b171CcC11DAC006a605E42BeD2;
+  // https://basescan.org/address/0xD3DE4b3571744EB77946d65aBF01408902E92c4E
+  address internal constant RISK_STEWARD = 0xD3DE4b3571744EB77946d65aBF01408902E92c4E;
 
   // https://basescan.org/address/0x4A4c73d563395ad827511F70097d4Ef82E653805
   address internal constant FREEZING_STEWARD = 0x4A4c73d563395ad827511F70097d4Ef82E653805;
