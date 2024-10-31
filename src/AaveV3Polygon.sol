@@ -56,8 +56,8 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0xc5de989E0D1BF605d19478Fdd32Aa827a10b464f
   address internal constant CAPS_PLUS_RISK_STEWARD = 0xc5de989E0D1BF605d19478Fdd32Aa827a10b464f;
 
-  // https://polygonscan.com/address/0xfF33BEcB9ECFE4328D4f9C37bE0F07b2CFe976E3
-  address internal constant RISK_STEWARD = 0xfF33BEcB9ECFE4328D4f9C37bE0F07b2CFe976E3;
+  // https://polygonscan.com/address/0x88dECc4bf07f5219ea7D1E32fe3762DA28ff7609
+  address internal constant RISK_STEWARD = 0x88dECc4bf07f5219ea7D1E32fe3762DA28ff7609;
 
   // https://polygonscan.com/address/0xa7b40ed4dfAC9255EA9Dd218A3874f380D9FbBEB
   address internal constant FREEZING_STEWARD = 0xa7b40ed4dfAC9255EA9Dd218A3874f380D9FbBEB;

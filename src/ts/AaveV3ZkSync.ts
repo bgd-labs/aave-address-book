@@ -62,8 +62,8 @@ export const WETH_GATEWAY = '0xD5f6c8D402E0a0222f7FA132F9e80fDCC074df5C';
 // https://era.zksync.network/address/0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9
 export const STATIC_A_TOKEN_FACTORY = '0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9';
 
-// https://era.zksync.network/address/0xDeDee21f34eff4e2902B95A106855834a608e19a
-export const RISK_STEWARD = '0xDeDee21f34eff4e2902B95A106855834a608e19a';
+// https://era.zksync.network/address/0x05c77Cf62346329a157d7A6F874464D049CECb26
+export const RISK_STEWARD = '0x05c77Cf62346329a157d7A6F874464D049CECb26';
 
 export const CHAIN_ID = 324;
 export const ASSETS = {

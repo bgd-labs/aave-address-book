@@ -1,3 +1,4 @@
+import { RISK_STEWARD } from './../../src/ts/AaveV3Avalanche';
 import {governanceConfigMainnet} from './governance/ethereum';
 import {mainnetProtoV3Pool} from './pools/ethereum';
 
@@ -64,6 +65,10 @@ export const DOWNLOAD_ABI_INTERFACES = [
   {
     address: mainnetProtoV3Pool.additionalAddresses.UI_POOL_DATA_PROVIDER,
     name: 'IUiPoolDataProvider',
+  },
+  {
+    address: mainnetProtoV3Pool.additionalAddresses.RISK_STEWARD,
+    name: 'IRiskSteward',
   },
   {
     address: '0x5D4Aa78B08Bc7C530e21bf7447988b1Be7991322',
