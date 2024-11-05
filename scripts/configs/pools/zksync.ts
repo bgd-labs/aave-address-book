@@ -3,7 +3,7 @@ import {PoolConfig} from '../types';
 
 export const zkSyncProtoV3: PoolConfig = {
   name: 'ZkSync',
-  chainId: ChainId.zkSync,
+  chainId: ChainId.zksync,
   POOL_ADDRESSES_PROVIDER: '0x2A3948BB219D6B2Fa83D64100006391a96bE6cb7',
   additionalAddresses: {
     CONFIG_ENGINE: '0x54965A9c830DCEEa6BeEa77642C6A78C3df1C957',

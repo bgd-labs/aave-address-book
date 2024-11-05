@@ -4,7 +4,6 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
 import {ICollector} from './common/ICollector.sol';
-
 library AaveV3BaseSepoliaLido {
   // https://sepolia.basescan.org/address/0x6f7E694fe5250Ce638fFE95524760422E6e41997
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
@@ -76,7 +75,6 @@ library AaveV3BaseSepoliaLido {
   // https://sepolia.basescan.org/address/0x63bBa35193cB5E061E8F0318F8A1788EA34E5198
   address internal constant WETH_GATEWAY = 0x63bBa35193cB5E061E8F0318F8A1788EA34E5198;
 }
-
 library AaveV3BaseSepoliaLidoAssets {
   // https://sepolia.basescan.org/address/0x31DeecB1f03D68154fB7d86EA54F3276afDC33e3
   address internal constant USDC_UNDERLYING = 0x31DeecB1f03D68154fB7d86EA54F3276afDC33e3;
@@ -167,13 +165,11 @@ library AaveV3BaseSepoliaLidoAssets {
   address internal constant cbETH_INTEREST_RATE_STRATEGY =
     0x25286160e24a8567B24649AD230f581BC9DC1a66;
 }
-
 library AaveV3BaseSepoliaLidoEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant ETH_CORRELATED = 1;
 }
-
 library AaveV3BaseSepoliaLidoExternalLibraries {
   // https://sepolia.basescan.org/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
   address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;

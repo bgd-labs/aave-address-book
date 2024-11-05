@@ -4,7 +4,7 @@ import {NetworkAddresses} from '../types';
 
 export const zkSyncAddresses: NetworkAddresses = {
   name: 'ZkSync',
-  chainId: ChainId.zkSync,
+  chainId: ChainId.zksync,
   addresses: {
     TRANSPARENT_PROXY_FACTORY: '0x903A3228c4C58e94787CB33EE83e087bCFcF0a91',
     PROXY_ADMIN: '0x158d6c497317367CEa3CBAb0BD84E6de236F060D',
