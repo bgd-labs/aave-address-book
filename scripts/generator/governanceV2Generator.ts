@@ -7,7 +7,7 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
-import {ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '@bgd-labs/rpc-env';
 
 const govV2Addresses: Addresses = {
   SHORT_EXECUTOR: '0xEE56e2B3D491590B5b31738cC34d5232F378a8D5',

@@ -1,4 +1,4 @@
-import {ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '@bgd-labs/rpc-env';
 import {GovernanceConfig} from '../types';
 
 export const governanceConfigFuji: GovernanceConfig = {
