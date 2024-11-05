@@ -1,4 +1,4 @@
-import {ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '@bgd-labs/rpc-env';
 import {NetworkAddresses} from '../types';
 
 export const bnbAddresses: NetworkAddresses = {

@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { flattenedAddresses } from '../utils/getAddresses';
-import { CHAIN_ID_CLIENT_MAP } from '@bgd-labs/js-utils';
+import { CHAIN_ID_CHAIN_MAP } from '../../../scripts/clients';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
 import { SearchSkeleton } from '@/components/SearchSkeleton';
@@ -31,7 +31,7 @@ const TAG_MAP: Record<string, string[]> = {
 
 const addresses = flattenedAddresses.map((item) => ({
   ...item,
-  link: `${CHAIN_ID_CLIENT_MAP[item.chainId]?.chain?.blockExplorers?.default.url.replace(/\/$/, '')}/address/${item.value}`,
+  link: `${CHAIN_ID_CHAIN_MAP[item.chainId]?.blockExplorers?.default.url.replace(/\/$/, '')}/address/${item.value}`,
   searchPath: [
     ...item.path,
     item.value,
@@ -40,8 +40,8 @@ const addresses = flattenedAddresses.map((item) => ({
 }));
 
 const sortedAddresses = addresses.sort((a, b) => {
-  const aInProduction = !CHAIN_ID_CLIENT_MAP[a.chainId].chain?.testnet;
-  const bInProduction = !CHAIN_ID_CLIENT_MAP[b.chainId].chain?.testnet;
+  const aInProduction = !CHAIN_ID_CHAIN_MAP[a.chainId].testnet;
+  const bInProduction = !CHAIN_ID_CHAIN_MAP[b.chainId].testnet;
 
   if (aInProduction && !bInProduction) {
     return -1;
@@ -61,7 +61,7 @@ const sortedAddresses = addresses.sort((a, b) => {
     return pathLengthDiff;
   }
 
-  // A dirty hack to sligthly prioritize mainnet addresses
+  // A dirty hack to slightly prioritize mainnet addresses
   const aSearchPathLength =
     a.chainId === 1 ? a.searchPath.length - 6 : a.searchPath.length;
   const bSearchPathLength =

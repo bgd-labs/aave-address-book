@@ -1,4 +1,4 @@
-import {ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '@bgd-labs/rpc-env';
 import {ListItem, flattenedAddresses} from '../ui/src/utils/getAddresses';
 import {writeFileSync, readFileSync, existsSync, mkdirSync} from 'fs';
 import {Address, zeroAddress} from 'viem';
@@ -30,7 +30,7 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function checkProxyVerfication(item: ListItem, guid: string) {
+async function checkProxyVerification(item: ListItem, guid: string) {
   const params = {
     apikey: CHAIN_ID_API_KEY_MAP[item.chainId] || '',
     module: 'contract',
@@ -67,7 +67,7 @@ async function verifyProxy(item: ListItem) {
 
     const {status, result} = await request.json();
     await sleep(1000);
-    if (status === '1') checkProxyVerfication(item, result);
+    if (status === '1') checkProxyVerification(item, result);
   } catch (e) {
     console.error(e);
     process.exit(1);

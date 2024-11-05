@@ -1,5 +1,5 @@
 import {GovernanceConfig} from '../types';
-import {ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '@bgd-labs/rpc-env';
 
 export const governanceConfigGnosis: GovernanceConfig = {
   name: 'Gnosis',

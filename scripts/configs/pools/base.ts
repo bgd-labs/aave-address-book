@@ -1,4 +1,4 @@
-import {ChainId} from '@bgd-labs/js-utils';
+import {ChainId} from '@bgd-labs/rpc-env';
 import {PoolConfig} from '../types';
 
 export const baseProtoV3: PoolConfig = {
@@ -59,5 +59,5 @@ export const baseSepoliaLidoProtoV3: PoolConfig = {
     UI_POOL_DATA_PROVIDER: '0x912D4A80f8cA3959eB49Ce38f060c46323D1e3A4',
     WALLET_BALANCE_PROVIDER: '0x2a5208950631917efE7EbE969eC1be68EE46AB16',
     WETH_GATEWAY: '0x63bBa35193cB5E061E8F0318F8A1788EA34E5198',
-  }
+  },
 };
