@@ -29,6 +29,7 @@ import {AaveV3Avalanche} from './AaveV3Avalanche.sol';
 import {AaveV3Fuji} from './AaveV3Fuji.sol';
 import {AaveV3Base} from './AaveV3Base.sol';
 import {AaveV3BaseSepolia} from './AaveV3BaseSepolia.sol';
+import {AaveV3BaseSepoliaLido} from './AaveV3BaseSepoliaLido.sol';
 import {AaveV3Metis} from './AaveV3Metis.sol';
 import {AaveV3Gnosis} from './AaveV3Gnosis.sol';
 import {AaveV3BNB} from './AaveV3BNB.sol';

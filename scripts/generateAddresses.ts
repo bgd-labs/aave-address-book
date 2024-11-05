@@ -8,7 +8,7 @@ import {
   fujiProtoV2,
   fujiProtoV3,
 } from './configs/pools/avalanche';
-import {baseProtoV3, baseSepoliaProtoV3} from './configs/pools/base';
+import {baseProtoV3, baseSepoliaProtoV3, baseSepoliaLidoProtoV3} from './configs/pools/base';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
@@ -113,6 +113,7 @@ async function main() {
       fujiProtoV3,
       baseProtoV3,
       baseSepoliaProtoV3,
+      baseSepoliaLidoProtoV3,
       metisProtoV3,
       gnosisProtoV3,
       bnbProtoV3,

@@ -26,6 +26,7 @@ export * as AaveV3Avalanche from './AaveV3Avalanche';
 export * as AaveV3Fuji from './AaveV3Fuji';
 export * as AaveV3Base from './AaveV3Base';
 export * as AaveV3BaseSepolia from './AaveV3BaseSepolia';
+export * as AaveV3BaseSepoliaLido from './AaveV3BaseSepoliaLido';
 export * as AaveV3Metis from './AaveV3Metis';
 export * as AaveV3Gnosis from './AaveV3Gnosis';
 export * as AaveV3BNB from './AaveV3BNB';
