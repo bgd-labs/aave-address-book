@@ -59,9 +59,16 @@ const clientCache: Record<number, Client> = {};
 
 export function getClient(chainId: number) {
   if (!clientCache[chainId]) {
+    let rpcURL;
+    try {
+      rpcURL = getRPCUrl(chainId as any);
+    } catch (e) {
+      // if we cannot find an rpc in env we'll pass undefined
+      // which will select the most reliable public rpc
+    }
     clientCache[chainId] = createClient({
       chain: CHAIN_ID_CHAIN_MAP[chainId],
-      transport: http(getRPCUrl(chainId as any), commonConfig),
+      transport: http(rpcURL, commonConfig),
       ...batchConfig,
     });
   }
