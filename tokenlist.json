@@ -4805,6 +4805,28 @@
       }
     },
     {
+      "chainId": 56,
+      "address": "0x26c5e01524d2E6280A48F2c50fF6De7e52E9611C",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wsteth.svg"
+    },
+    {
+      "chainId": 56,
+      "address": "0xBDFd4E51D3c14a232135f04988a42576eFb31519",
+      "name": "Aave BNB Smart Chain wstETH",
+      "decimals": 18,
+      "symbol": "aBnbwstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awsteth.svg",
+      "extensions": {
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
+        "underlying": "0x26c5e01524d2E6280A48F2c50fF6De7e52E9611C"
+      }
+    },
+    {
       "chainId": 42161,
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
@@ -6669,6 +6691,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 57 },
-  "timestamp": "2024-10-30T07:50:56.596Z"
+  "version": { "major": 3, "minor": 0, "patch": 58 },
+  "timestamp": "2024-11-05T21:48:08.910Z"
 }

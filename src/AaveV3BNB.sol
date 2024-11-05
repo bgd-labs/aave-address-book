@@ -243,9 +243,29 @@ library AaveV3BNBAssets {
 
   // https://bscscan.com/address/0x4d074aAa0821073dA827f7bf6a02cF905b394ed0
   address internal constant FDUSD_STATIC_A_TOKEN = 0x4d074aAa0821073dA827f7bf6a02cF905b394ed0;
+
+  // https://bscscan.com/address/0x26c5e01524d2E6280A48F2c50fF6De7e52E9611C
+  address internal constant wstETH_UNDERLYING = 0x26c5e01524d2E6280A48F2c50fF6De7e52E9611C;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://bscscan.com/address/0xBDFd4E51D3c14a232135f04988a42576eFb31519
+  address internal constant wstETH_A_TOKEN = 0xBDFd4E51D3c14a232135f04988a42576eFb31519;
+
+  // https://bscscan.com/address/0x2c391998308c56D7572A8F501D58CB56fB9Fe1C5
+  address internal constant wstETH_V_TOKEN = 0x2c391998308c56D7572A8F501D58CB56fB9Fe1C5;
+
+  // https://bscscan.com/address/0xc1377B4cdF9116bf7b3d7F72A4f8A7Be8506cE80
+  address internal constant wstETH_ORACLE = 0xc1377B4cdF9116bf7b3d7F72A4f8A7Be8506cE80;
+
+  // https://bscscan.com/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
 }
 library AaveV3BNBEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant ETH_CORRELATED = 1;
 }
 library AaveV3BNBExternalLibraries {
   // https://bscscan.com/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

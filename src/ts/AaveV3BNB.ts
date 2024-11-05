@@ -155,6 +155,26 @@ export const ASSETS = {
     ORACLE: '0x60a117Fa5bAbee4d645884fB11E413Da4F893b6D',
     STATIC_A_TOKEN: '0x4d074aAa0821073dA827f7bf6a02cF905b394ed0',
   },
+  wstETH: {
+    decimals: 18,
+    id: 7,
+    UNDERLYING: '0x26c5e01524d2E6280A48F2c50fF6De7e52E9611C',
+    A_TOKEN: '0xBDFd4E51D3c14a232135f04988a42576eFb31519',
+    V_TOKEN: '0x2c391998308c56D7572A8F501D58CB56fB9Fe1C5',
+    INTEREST_RATE_STRATEGY: '0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5',
+    ORACLE: '0xc1377B4cdF9116bf7b3d7F72A4f8A7Be8506cE80',
+  },
 } as const;
-export const E_MODES = {} as const;
+export const E_MODES = {
+  '1': {
+    label: 'ETH-Correlated',
+    collateralBitmap: '128',
+    collateralAssets: ['0x26c5e01524d2E6280A48F2c50fF6De7e52E9611C'],
+    borrowableBitmap: '8',
+    borrowableAssets: ['0x2170Ed0880ac9A755fd29B2688956BD959F933F8'],
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;
