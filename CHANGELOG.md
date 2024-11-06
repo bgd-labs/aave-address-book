@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.3.0](https://github.com/bgd-labs/aave-address-book/compare/v4.2.1...v4.3.0) (2024-11-05)
+
+
+### Features
+
+* add testnet base sepolia lido market ([#669](https://github.com/bgd-labs/aave-address-book/issues/669)) ([de1275e](https://github.com/bgd-labs/aave-address-book/commit/de1275e6aaf69017b777f375ac2d1d11df47775b))
+* update risk stewards ([#674](https://github.com/bgd-labs/aave-address-book/issues/674)) ([d6bdf78](https://github.com/bgd-labs/aave-address-book/commit/d6bdf782d7a395cf125713205fc610c371c17220))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#671](https://github.com/bgd-labs/aave-address-book/issues/671)) ([94267fd](https://github.com/bgd-labs/aave-address-book/commit/94267fd97eefa3ed8b5b063969d88b527c8b4b9b))
+* **cache:** automated cache update - updated addresses ([#682](https://github.com/bgd-labs/aave-address-book/issues/682)) ([4126d92](https://github.com/bgd-labs/aave-address-book/commit/4126d925ee5f229531b56299d7828efbc4dafd61))
+* make ci work on testnets ([#681](https://github.com/bgd-labs/aave-address-book/issues/681)) ([1611ebd](https://github.com/bgd-labs/aave-address-book/commit/1611ebd4a64114b657cfe73700b3a68d970989a1))
+
 ## [4.2.1](https://github.com/bgd-labs/aave-address-book/compare/v4.2.0...v4.2.1) (2024-10-28)
 
 
