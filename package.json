@@ -64,8 +64,8 @@
     "generate:addresses": "tsx scripts/generateAddresses.ts && npm run generate:safe && npm run prettier",
     "start": "tsx scripts/generateABIs.ts && tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
-    "ci:publish": "npm run build && npm publish --access=public",
-    "test": "npm run generate:addresses"
+    "test": "npm run generate:addresses",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
