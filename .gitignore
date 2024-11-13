@@ -6,7 +6,7 @@
 
 # Foundry
 out/
-cache/
+/cache/
 
 node_modules/
 

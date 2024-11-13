@@ -1,4 +1,4 @@
-import * as addressBook from '../../src/ts/AaveAddressBook';
+import * as addressBook from '../src/ts/AaveAddressBook';
 
 export function getGovernance(chainId: number) {
   for (const [name, lib] of Object.entries(addressBook)) {

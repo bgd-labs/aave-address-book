@@ -61,12 +61,11 @@ export function getClient(chainId: number) {
   if (!clientCache[chainId]) {
     let rpcURL;
     try {
-      rpcURL = getRPCUrl(chainId as any);
+      rpcURL = getRPCUrl(chainId as any, process.env.ALCHEMY_API_KEY);
     } catch (e) {
       // if we cannot find an rpc in env we'll pass undefined
       // which will select the most reliable public rpc
     }
-    console.log(chainId);
     clientCache[chainId] = createClient({
       chain: CHAIN_ID_CHAIN_MAP[chainId],
       transport: http(rpcURL, commonConfig),
