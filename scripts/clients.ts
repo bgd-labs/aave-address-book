@@ -66,7 +66,6 @@ export function getClient(chainId: number) {
       // if we cannot find an rpc in env we'll pass undefined
       // which will select the most reliable public rpc
     }
-    console.log(chainId);
     clientCache[chainId] = createClient({
       chain: CHAIN_ID_CHAIN_MAP[chainId],
       transport: http(rpcURL, commonConfig),
