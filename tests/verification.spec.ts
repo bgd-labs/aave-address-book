@@ -1,8 +1,10 @@
 import {ChainId} from '@bgd-labs/rpc-env';
-import {ListItem, flattenedAddresses} from '../ui/src/utils/getAddresses';
-import {writeFileSync, readFileSync, existsSync, mkdirSync} from 'fs';
-import {Address, zeroAddress} from 'viem';
-import {CHAIN_ID_CHAIN_MAP} from './clients';
+import {describe, expect, it} from 'vitest';
+import {CHAIN_ID_CHAIN_MAP} from '../scripts/clients';
+import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
+import verified from './cache/verified.json';
+import {writeFileSync} from 'fs';
+import {zeroAddress} from 'viem';
 
 const CHAIN_ID_API_KEY_MAP = {
   [ChainId.mainnet]: process.env.ETHERSCAN_API_KEY_MAINNET,
@@ -16,15 +18,9 @@ const CHAIN_ID_API_KEY_MAP = {
   [ChainId.bnb]: process.env.ETHERSCAN_API_KEY_BNB,
   [ChainId.base]: process.env.ETHERSCAN_API_KEY_BASE,
   [ChainId.base_sepolia]: process.env.ETHERSCAN_API_KEY_BASE,
-  [ChainId.zkSync]: process.env.ETHERSCAN_API_KEY_ZKSYNC,
+  [ChainId.zksync]: process.env.ETHERSCAN_API_KEY_ZKSYNC,
   [ChainId.gnosis]: process.env.ETHERSCAN_API_KEY_GNOSIS,
 };
-
-function getApiUrl(chainId: number) {
-  if (chainId === ChainId.metis)
-    return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
-  return CHAIN_ID_CHAIN_MAP[chainId].blockExplorers?.default.apiUrl;
-}
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -101,48 +97,48 @@ async function checkVerified(item: ListItem) {
   }
 }
 
-const cachePath = './cache/verification.json';
-
-async function main() {
-  if (!existsSync('cache')) mkdirSync('cache');
-  const cache: Record<number, Record<Address, boolean>> = existsSync(cachePath)
-    ? JSON.parse(readFileSync(cachePath, 'utf-8'))
-    : {};
-
-  const errors: {item: ListItem; error: any}[] = [];
-  for (const item of flattenedAddresses.filter(
-    (item) =>
-      ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
-      !CHAIN_ID_CHAIN_MAP[item.chainId].testnet,
-  )) {
-    // skip contracts for which we have checked verification before
-    if (cache[item.chainId]?.[item.value]) continue;
-    // skip zero addresses
-    if (item.value === zeroAddress) continue;
-    const {status, result} = (await checkVerified(item)) as {
-      status: string;
-      result: {ContractName: string}[];
-    };
-
-    if (status !== '1' || !result[0].ContractName) {
-      errors.push({item, error: result});
-      writeFileSync('./cache/errors.json', JSON.stringify(errors, null, 2), {encoding: 'utf-8'});
-      console.log('errors', errors.length);
-    } else {
-      if (!cache[item.chainId]) cache[item.chainId] = {};
-      cache[item.chainId][item.value] = {
-        name: result[0].ContractName,
-      };
-      writeFileSync(cachePath, JSON.stringify(cache, null, 2), {encoding: 'utf-8'});
-    }
-    await sleep(200); // rate limit on etherscan api of 5 req/s
-  }
-  if (errors.length != 0) {
-    console.log(errors);
-    process.exit(1);
-  } else {
-    writeFileSync('./cache/errors.json', JSON.stringify({}, null, 2), {encoding: 'utf-8'});
-  }
+function getApiUrl(chainId: number) {
+  if (chainId === ChainId.metis)
+    return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
+  return CHAIN_ID_CHAIN_MAP[chainId].blockExplorers?.default.apiUrl;
 }
 
-main();
+describe(
+  'verification',
+  () => {
+    it('should have all contracts verified except for the known set of errors', async () => {
+      const addressesToCheck = flattenedAddresses.filter(
+        (item) =>
+          ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
+          !CHAIN_ID_CHAIN_MAP[item.chainId].testnet,
+      );
+      const errors: {item: ListItem; error: any}[] = [];
+      let newVerified = false;
+      for (const item of addressesToCheck) {
+        const hasBeenCheckedBefore = verified[item.chainId][item.value];
+        if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
+          const {status, result} = (await checkVerified(item)) as {
+            status: string;
+            result: {ContractName: string}[];
+          };
+          if (status !== '1' || !result[0].ContractName) {
+            errors.push({item, error: result});
+          } else {
+            newVerified = true;
+            if (!verified[item.chainId]) verified[item.chainId] = {};
+            verified[item.chainId][item.value] = {
+              name: result[0].ContractName,
+            };
+          }
+        }
+      }
+      if (newVerified) {
+        writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
+          encoding: 'utf-8',
+        });
+      }
+      expect(errors).toMatchSnapshot();
+    });
+  },
+  {timeout: 120_000},
+);
