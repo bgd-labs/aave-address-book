@@ -6,21 +6,7 @@ import verified from './cache/verified.json';
 import {writeFileSync} from 'fs';
 import {zeroAddress} from 'viem';
 
-const CHAIN_ID_API_KEY_MAP = {
-  [ChainId.mainnet]: process.env.ETHERSCAN_API_KEY_MAINNET,
-  [ChainId.sepolia]: process.env.ETHERSCAN_API_KEY_MAINNET,
-  [ChainId.polygon]: process.env.ETHERSCAN_API_KEY_POLYGON,
-  [ChainId.zkEVM]: process.env.ETHERSCAN_API_KEY_ZKEVM,
-  [ChainId.arbitrum_one]: process.env.ETHERSCAN_API_KEY_ARBITRUM,
-  [ChainId.optimism]: process.env.ETHERSCAN_API_KEY_OPTIMISM,
-  [ChainId.scroll]: process.env.ETHERSCAN_API_KEY_SCROLL,
-  [ChainId.scroll_sepolia]: process.env.ETHERSCAN_API_KEY_SCROLL,
-  [ChainId.bnb]: process.env.ETHERSCAN_API_KEY_BNB,
-  [ChainId.base]: process.env.ETHERSCAN_API_KEY_BASE,
-  [ChainId.base_sepolia]: process.env.ETHERSCAN_API_KEY_BASE,
-  [ChainId.zksync]: process.env.ETHERSCAN_API_KEY_ZKSYNC,
-  [ChainId.gnosis]: process.env.ETHERSCAN_API_KEY_GNOSIS,
-};
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -28,7 +14,8 @@ function sleep(ms) {
 
 async function checkProxyVerification(item: ListItem, guid: string) {
   const params = {
-    apikey: CHAIN_ID_API_KEY_MAP[item.chainId] || '',
+    chainId: String(item.chainId),
+    apikey: ETHERSCAN_API_KEY,
     module: 'contract',
     action: 'checkproxyverification',
     guid,
@@ -47,7 +34,8 @@ async function checkProxyVerification(item: ListItem, guid: string) {
 
 async function verifyProxy(item: ListItem) {
   const params = {
-    apikey: CHAIN_ID_API_KEY_MAP[item.chainId] || '',
+    chainId: String(item.chainId),
+    apikey: ETHERSCAN_API_KEY,
     module: 'contract',
     action: 'verifyproxycontract',
   };
@@ -72,7 +60,8 @@ async function verifyProxy(item: ListItem) {
 
 async function checkVerified(item: ListItem) {
   const params = {
-    apikey: CHAIN_ID_API_KEY_MAP[item.chainId] || '',
+    chainId: String(item.chainId),
+    apikey: ETHERSCAN_API_KEY,
     address: item.value,
     module: 'contract',
     action: 'getsourcecode',
@@ -100,7 +89,7 @@ async function checkVerified(item: ListItem) {
 function getApiUrl(chainId: number) {
   if (chainId === ChainId.metis)
     return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
-  return CHAIN_ID_CHAIN_MAP[chainId].blockExplorers?.default.apiUrl;
+  return `https://api.etherscan.io/v2/api`;
 }
 
 describe(
@@ -117,6 +106,7 @@ describe(
       for (const item of addressesToCheck) {
         const hasBeenCheckedBefore = verified[item.chainId][item.value];
         if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
+          await sleep(500);
           const {status, result} = (await checkVerified(item)) as {
             status: string;
             result: {ContractName: string}[];

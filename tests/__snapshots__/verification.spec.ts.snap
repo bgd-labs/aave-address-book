@@ -111,7 +111,23 @@ exports[`verification > should have all contracts verified except for the known 
     },
   },
   {
-    "error": "Contract source code not verified",
+    "error": [
+      {
+        "ABI": "Contract source code not verified",
+        "CompilerVersion": "",
+        "ConstructorArguments": "",
+        "ContractName": "",
+        "EVMVersion": "Default",
+        "Implementation": "",
+        "Library": "",
+        "LicenseType": "Unknown",
+        "OptimizationUsed": "",
+        "Proxy": "0",
+        "Runs": "",
+        "SourceCode": "",
+        "SwarmSource": "",
+      },
+    ],
     "item": {
       "chainId": 43114,
       "path": [
@@ -119,17 +135,6 @@ exports[`verification > should have all contracts verified except for the known 
         "UI_INCENTIVE_DATA_PROVIDER",
       ],
       "value": "0x11979886A6dBAE27D7a72c49fCF3F23240D647bF",
-    },
-  },
-  {
-    "error": null,
-    "item": {
-      "chainId": 43114,
-      "path": [
-        "AaveV2Avalanche",
-        "UI_POOL_DATA_PROVIDER",
-      ],
-      "value": "0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A",
     },
   },
   {
