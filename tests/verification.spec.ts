@@ -103,10 +103,15 @@ describe(
       );
       const errors: {item: ListItem; error: any}[] = [];
       let newVerified = false;
+      // unique set of addresses checked on this iteration
+      // used to prevent double checking the same address
+      const checked = new Set<string>();
       for (const item of addressesToCheck) {
         const hasBeenCheckedBefore = verified[item.chainId][item.value];
         if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
-          await sleep(500);
+          const key = `${item.chainId}-${item.value}`;
+          if (checked.has(key)) continue;
+          checked.add(key);
           const {status, result} = (await checkVerified(item)) as {
             status: string;
             result: {ContractName: string}[];
