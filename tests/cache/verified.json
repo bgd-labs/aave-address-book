@@ -2264,6 +2264,12 @@
     },
     "0xBF79d8339303148E345277a994Eb2cD5d82F0067": {
       "name": "RiskSteward"
+    },
+    "0x74e5664394998f13B07aF42446380ACef637969f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x08e1bba76D27841dD91FAb4b3a636A0D5CF8c3E9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "10": {
@@ -3036,6 +3042,12 @@
     },
     "0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6": {
       "name": "GnosisSafeProxy"
+    },
+    "0xBDFd4E51D3c14a232135f04988a42576eFb31519": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2c391998308c56D7572A8F501D58CB56fB9Fe1C5": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "100": {
@@ -5043,6 +5055,12 @@
     },
     "0x56C1a4b54921DEA9A344967a8693C7E661D72968": {
       "name": "GnosisSafeProxy"
+    },
+    "0xBdb9300b7CDE636d9cD4AFF00f6F009fFBBc8EE6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x05e08702028de6AaD395DC6478b554a56920b9AD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "42161": {
