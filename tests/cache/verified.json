@@ -3341,6 +3341,18 @@
     },
     "0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6": {
       "name": "GnosisSafeProxy"
+    },
+    "0x86b0521f92a554057e54B93098BA2A6Aaa2F4ACB": {
+      "name": "ParaSwapRepayAdapter"
+    },
+    "0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3": {
+      "name": "ParaSwapWithdrawSwapAdapter"
+    },
+    "0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4": {
+      "name": "ParaSwapLiquiditySwapAdapter"
+    },
+    "0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034": {
+      "name": "ParaSwapDebtSwapAdapterV3"
     }
   },
   "137": {
