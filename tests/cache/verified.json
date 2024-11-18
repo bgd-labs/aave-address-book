@@ -2270,6 +2270,12 @@
     },
     "0x08e1bba76D27841dD91FAb4b3a636A0D5CF8c3E9": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xc2015641564a5914A17CB9A92eC8d8feCfa8f2D0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2ABbAab3EF4e4A899d39e7EC996b5715E76b399a": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "10": {
@@ -6720,6 +6726,9 @@
     },
     "0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6": {
       "name": "GnosisSafeProxy"
+    },
+    "0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc": {
+      "name": "DefaultReserveInterestRateStrategyV2"
     }
   }
 }
