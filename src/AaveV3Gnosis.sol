@@ -83,6 +83,19 @@ library AaveV3Gnosis {
 
   // https://gnosisscan.io/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
   address internal constant STATIC_A_TOKEN_FACTORY = 0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6;
+
+  // https://gnosisscan.io/address/0x86b0521f92a554057e54B93098BA2A6Aaa2F4ACB
+  address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
+    0x86b0521f92a554057e54B93098BA2A6Aaa2F4ACB;
+
+  // https://gnosisscan.io/address/0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4
+  address internal constant SWAP_COLLATERAL_ADAPTER = 0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4;
+
+  // https://gnosisscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+  address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
+
+  // https://gnosisscan.io/address/0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3
+  address internal constant WITHDRAW_SWAP_ADAPTER = 0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3;
 }
 library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1

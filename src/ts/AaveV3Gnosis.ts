@@ -71,6 +71,18 @@ export const FREEZING_STEWARD = '0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5';
 // https://gnosisscan.io/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
 export const STATIC_A_TOKEN_FACTORY = '0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6';
 
+// https://gnosisscan.io/address/0x86b0521f92a554057e54B93098BA2A6Aaa2F4ACB
+export const REPAY_WITH_COLLATERAL_ADAPTER = '0x86b0521f92a554057e54B93098BA2A6Aaa2F4ACB';
+
+// https://gnosisscan.io/address/0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4
+export const SWAP_COLLATERAL_ADAPTER = '0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4';
+
+// https://gnosisscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
+export const DEBT_SWAP_ADAPTER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034';
+
+// https://gnosisscan.io/address/0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3
+export const WITHDRAW_SWAP_ADAPTER = '0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3';
+
 export const CHAIN_ID = 100;
 export const ASSETS = {
   WETH: {
