@@ -121,6 +121,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x8958b1C39269167527821f8c276Ef7504883f2fa',
     ORACLE: '0x68C9c7Bf43DBd0EBab102116bc7C3C9f7d9297Ee',
   },
+  sUSDe: {
+    decimals: 18,
+    id: 5,
+    UNDERLYING: '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+    A_TOKEN: '0xc2015641564a5914A17CB9A92eC8d8feCfa8f2D0',
+    V_TOKEN: '0x2ABbAab3EF4e4A899d39e7EC996b5715E76b399a',
+    INTEREST_RATE_STRATEGY: '0x8958b1C39269167527821f8c276Ef7504883f2fa',
+    ORACLE: '0xb37aE8aBa6C0C1Bf2c509fc06E11aa4AF29B665A',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -155,6 +164,19 @@ export const E_MODES = {
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
+  },
+  '4': {
+    label: 'sUSDe Stablecoins',
+    collateralBitmap: '32',
+    collateralAssets: ['0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'],
+    borrowableBitmap: '12',
+    borrowableAssets: [
+      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+    ],
+    ltv: 9000,
+    liquidationThreshold: 9200,
+    liquidationBonus: 10300,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;

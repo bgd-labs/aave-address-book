@@ -6640,6 +6640,19 @@
     },
     {
       "chainId": 1,
+      "address": "0xc2015641564a5914A17CB9A92eC8d8feCfa8f2D0",
+      "name": "Aave Ethereum Lido sUSDe",
+      "decimals": 18,
+      "symbol": "aEthLidosUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asusde.svg",
+      "extensions": {
+        "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
+        "underlying": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xbe1F842e7e0afd2c2322aae5d34bA899544b29db",
       "name": "Aave Ethereum EtherFi weETH",
       "decimals": 18,
@@ -6691,6 +6704,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 58 },
-  "timestamp": "2024-11-05T21:48:08.910Z"
+  "version": { "major": 3, "minor": 0, "patch": 59 },
+  "timestamp": "2024-11-18T13:03:11.207Z"
 }

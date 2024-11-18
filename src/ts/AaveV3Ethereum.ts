@@ -473,5 +473,18 @@ export const E_MODES = {
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
   },
+  '2': {
+    label: 'sUSDe Stablecoins',
+    collateralBitmap: '4294967296',
+    collateralAssets: ['0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'],
+    borrowableBitmap: '34359738376',
+    borrowableAssets: [
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+    ],
+    ltv: 9000,
+    liquidationThreshold: 9200,
+    liquidationBonus: 10300,
+  },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;
