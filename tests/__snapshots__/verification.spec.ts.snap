@@ -110,34 +110,5 @@ exports[`verification > should have all contracts verified except for the known 
       "value": "0x11979886A6dBAE27D7a72c49fCF3F23240D647bF",
     },
   },
-  {
-    "error": [
-      {
-        "ABI": "Contract source code not verified",
-        "CompilerVersion": "",
-        "ConstructorArguments": "",
-        "ContractName": "",
-        "EVMVersion": "Default",
-        "Implementation": "",
-        "Library": "",
-        "LicenseType": "Unknown",
-        "OptimizationUsed": "",
-        "Proxy": "0",
-        "Runs": "",
-        "SourceCode": "",
-        "SwarmSource": "",
-      },
-    ],
-    "item": {
-      "chainId": 534352,
-      "path": [
-        "AaveV3Scroll",
-        "ASSETS",
-        "WETH",
-        "INTEREST_RATE_STRATEGY",
-      ],
-      "value": "0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc",
-    },
-  },
 ]
 `;
