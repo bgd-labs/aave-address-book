@@ -1273,4 +1273,14 @@ export const ICrossChainController_ABI = [
     ],
     anonymous: false,
   },
+  {
+    type: 'error',
+    name: 'EthTransferFailed',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'OnlyRescueGuardian',
+    inputs: [],
+  },
 ] as const;
