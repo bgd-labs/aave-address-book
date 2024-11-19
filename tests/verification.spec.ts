@@ -116,6 +116,7 @@ describe(
             status: string;
             result: {ContractName: string}[];
           };
+          await sleep(300);
           if (status !== '1' || !result[0].ContractName) {
             errors.push({item, error: result});
           } else {
