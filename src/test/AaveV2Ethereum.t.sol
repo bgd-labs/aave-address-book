@@ -6,8 +6,8 @@ import {AaveV2Ethereum} from '../AaveAddressBook.sol';
 // imports are unused but required so forge inspect can find the source code
 import {IERC20Detailed} from 'aave-v3-origin/contracts/dependencies/openzeppelin/contracts/IERC20Detailed.sol';
 import {IWithGuardian} from 'solidity-utils/contracts/access-control/interfaces/IWithGuardian.sol';
-import {IStataTokenFactory} from 'aave-v3-origin/contracts/extensions/static-a-token/interfaces/IStataTokenFactory.sol';
-import {IStataTokenV2} from 'aave-v3-origin/contracts/extensions/static-a-token/interfaces/IStataTokenV2.sol';
+import {IStataTokenFactory} from 'aave-v3-origin/contracts/extensions/stata-token/interfaces/IStataTokenFactory.sol';
+import {IStataTokenV2} from 'aave-v3-origin/contracts/extensions/stata-token/interfaces/IStataTokenV2.sol';
 
 contract AaveAddressBookTest is Test {
   function setUp() public {}

@@ -15,6 +15,32 @@ export const IStataTokenV2_ABI = [
   },
   {
     type: 'function',
+    name: 'POOL',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'contract IPool',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'POOL_ADDRESSES_PROVIDER',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'contract IPoolAddressesProvider',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'aToken',
     inputs: [],
     outputs: [
@@ -1131,6 +1157,11 @@ export const IStataTokenV2_ABI = [
   {
     type: 'error',
     name: 'StaticATokenInvalidZeroShares',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'ZeroIncentivesControllerIsForbidden',
     inputs: [],
   },
 ] as const;
