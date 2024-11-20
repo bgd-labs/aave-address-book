@@ -90,6 +90,9 @@ library AaveV3EthereumEtherFi {
 
   // https://etherscan.io/address/0xBF79d8339303148E345277a994Eb2cD5d82F0067
   address internal constant RISK_STEWARD = 0xBF79d8339303148E345277a994Eb2cD5d82F0067;
+
+  // https://etherscan.io/address/0x40ede12b44d98Fc4E53A2fB027D1BD1846e1690C
+  address internal constant DEBT_SWAP_ADAPTER = 0x40ede12b44d98Fc4E53A2fB027D1BD1846e1690C;
 }
 library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
