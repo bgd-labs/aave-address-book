@@ -2276,6 +2276,9 @@
     },
     "0x2ABbAab3EF4e4A899d39e7EC996b5715E76b399a": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9FB3B12248bf010AEA7cE08343C8499FFAB4770f": {
+      "name": "TransparentProxyFactory"
     }
   },
   "10": {
@@ -2728,6 +2731,9 @@
     },
     "0x56C1a4b54921DEA9A344967a8693C7E661D72968": {
       "name": "GnosisSafeProxy"
+    },
+    "0x984B710D22730f799312513A10C1382e9D1Fa689": {
+      "name": "TransparentProxyFactory"
     }
   },
   "56": {
@@ -3054,6 +3060,9 @@
     },
     "0x2c391998308c56D7572A8F501D58CB56fB9Fe1C5": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xD410270dadBA6CAB0b3523136b79ab3a19CCecc8": {
+      "name": "TransparentProxyFactory"
     }
   },
   "100": {
@@ -3353,6 +3362,9 @@
     },
     "0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034": {
       "name": "ParaSwapDebtSwapAdapterV3"
+    },
+    "0x8b8bf083fD1837486c141681E10Ea61D0f3cD692": {
+      "name": "TransparentProxyFactory"
     }
   },
   "137": {
@@ -4234,6 +4246,9 @@
     },
     "0x3465528BE493a61629234C259b62b9539817d8e7": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xa29b1234011BF1ba46Ed10edE2a59340bf97d583": {
+      "name": "TransparentProxyFactory"
     }
   },
   "324": {
@@ -4395,6 +4410,9 @@
     },
     "0x05c77Cf62346329a157d7A6F874464D049CECb26": {
       "name": "RiskSteward"
+    },
+    "0x8601Af6a00862112b2F2E4993684073D904DE836": {
+      "name": "TransparentProxyFactoryZkSync"
     }
   },
   "1088": {
@@ -4649,6 +4667,9 @@
     },
     "0x56C1a4b54921DEA9A344967a8693C7E661D72968": {
       "name": "GnosisSafeProxy"
+    },
+    "0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B": {
+      "name": "TransparentProxyFactory"
     }
   },
   "1101": {
@@ -4758,6 +4779,9 @@
       "name": "ProxyAdmin"
     },
     "0x8B6851156023f4f5A66F68BEA80851c3D905Ac93": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xd91d1331db4F436DaF47Ec9Dd86deCb8EEF946B4": {
       "name": "TransparentProxyFactory"
     }
   },
@@ -5079,6 +5103,9 @@
     },
     "0x05e08702028de6AaD395DC6478b554a56920b9AD": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd9Ca4878dd38B021583c1B669905592EAe76E044": {
+      "name": "TransparentProxyFactory"
     }
   },
   "42161": {
@@ -5588,6 +5615,9 @@
     },
     "0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6": {
       "name": "GnosisSafeProxy"
+    },
+    "0x9B643d4aC937BEE8Bfb1Ec76401C22E18C318429": {
+      "name": "TransparentProxyFactory"
     }
   },
   "43113": {
@@ -6315,6 +6345,9 @@
     },
     "0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A": {
       "name": "UiPoolDataProviderV2V3"
+    },
+    "0x2Efe215aE82339fa059bb9d611E4cC858cfe9Df6": {
+      "name": "TransparentProxyFactory"
     }
   },
   "84532": {
@@ -6741,6 +6774,9 @@
     },
     "0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc": {
       "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a": {
+      "name": "TransparentProxyFactory"
     }
   }
 }

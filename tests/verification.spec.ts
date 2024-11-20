@@ -101,7 +101,7 @@ describe(
           ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
           !CHAIN_ID_CHAIN_MAP[item.chainId].testnet,
       );
-      const errors: {item: ListItem; error: any}[] = [];
+      const errors: {item: ListItem}[] = [];
       let newVerified = false;
       // unique set of addresses checked on this iteration
       // used to prevent double checking the same address
@@ -118,7 +118,8 @@ describe(
           };
           await sleep(300);
           if (status !== '1' || !result[0].ContractName) {
-            errors.push({item, error: result});
+            errors.push({item});
+            console.log(result);
           } else {
             newVerified = true;
             if (!verified[item.chainId]) verified[item.chainId] = {};

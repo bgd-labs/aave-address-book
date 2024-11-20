@@ -6,8 +6,8 @@ library MiscBase {
   // https://basescan.org/address/0xAe940e61E9863178b71500c9B5faE2a04Da361a1
   address internal constant PARASWAP_FEE_CLAIMER = 0xAe940e61E9863178b71500c9B5faE2a04Da361a1;
 
-  // https://basescan.org/address/0x05225Cd708bCa9253789C1374e4337a019e99D56
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x05225Cd708bCa9253789C1374e4337a019e99D56;
+  // https://basescan.org/address/0xd9Ca4878dd38B021583c1B669905592EAe76E044
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xd9Ca4878dd38B021583c1B669905592EAe76E044;
 
   // https://basescan.org/address/0xc85b1E333aecc99340b2320493Fe2d22b8734795
   address internal constant PROXY_ADMIN = 0xc85b1E333aecc99340b2320493Fe2d22b8734795;

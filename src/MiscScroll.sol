@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscScroll {
-  // https://scrollscan.com/address/0xFa2eeb2d0054C3Db2A606E2cd9EE111b62707D1e
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xFa2eeb2d0054C3Db2A606E2cd9EE111b62707D1e;
+  // https://scrollscan.com/address/0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a;
 
   // https://scrollscan.com/address/0x782559e349b084bB7C07c08404aE6E3436cDAE2E
   address internal constant PROXY_ADMIN = 0x782559e349b084bB7C07c08404aE6E3436cDAE2E;

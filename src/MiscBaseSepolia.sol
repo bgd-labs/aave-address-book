@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscBaseSepolia {
-  // https://sepolia.basescan.org/address/0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
+  // https://sepolia.basescan.org/address/0xd1B3E25fD7C8AE7CADDC6F71b461b79CD4ddcFa3
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xd1B3E25fD7C8AE7CADDC6F71b461b79CD4ddcFa3;
 
   // https://sepolia.basescan.org/address/0xbeCE3Cb857644b44Bb44084f9AfE784473ADb17B
   address internal constant PROXY_ADMIN = 0xbeCE3Cb857644b44Bb44084f9AfE784473ADb17B;
