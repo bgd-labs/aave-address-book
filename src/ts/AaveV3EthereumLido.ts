@@ -74,6 +74,9 @@ export const CAPS_PLUS_RISK_STEWARD = '0x3843b29118fFC18d5d12EE079d0324E1bF115e6
 // https://etherscan.io/address/0x30adC2f98ff78fDde12F191Acb82699f640694FB
 export const RISK_STEWARD = '0x30adC2f98ff78fDde12F191Acb82699f640694FB';
 
+// https://etherscan.io/address/0xd1B2dec98A95B773C4909B5CD8FB455F467A527f
+export const DEBT_SWAP_ADAPTER = '0xd1B2dec98A95B773C4909B5CD8FB455F467A527f';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   wstETH: {
