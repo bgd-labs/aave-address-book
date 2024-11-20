@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.5.0](https://github.com/bgd-labs/aave-address-book/compare/v4.4.0...v4.5.0) (2024-11-20)
+
+
+### Features
+
+* lido and etherfi debt swap adapters ([#705](https://github.com/bgd-labs/aave-address-book/issues/705)) ([d35af65](https://github.com/bgd-labs/aave-address-book/commit/d35af65f4a08e141bd8839e8527c2d8be8334263))
+
 ## [4.4.0](https://github.com/bgd-labs/aave-address-book/compare/v4.3.2...v4.4.0) (2024-11-19)
 
 
