@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscBNB {
-  // https://bscscan.com/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
+  // https://bscscan.com/address/0xD410270dadBA6CAB0b3523136b79ab3a19CCecc8
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xD410270dadBA6CAB0b3523136b79ab3a19CCecc8;
 
   // https://bscscan.com/address/0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6
   address internal constant PROTOCOL_GUARDIAN = 0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6;

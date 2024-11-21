@@ -24,8 +24,8 @@ library MiscEthereum {
   // https://etherscan.io/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
   address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
 
-  // https://etherscan.io/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
+  // https://etherscan.io/address/0x9FB3B12248bf010AEA7cE08343C8499FFAB4770f
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0x9FB3B12248bf010AEA7cE08343C8499FFAB4770f;
 
   // https://etherscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN = 0xD3cF979e676265e4f6379749DECe4708B9A22476;

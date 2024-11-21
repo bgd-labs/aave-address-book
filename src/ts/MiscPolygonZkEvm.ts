@@ -2,8 +2,8 @@
 // https://zkevm.polygonscan.com/address/0xAe940e61E9863178b71500c9B5faE2a04Da361a1
 export const PARASWAP_FEE_CLAIMER = '0xAe940e61E9863178b71500c9B5faE2a04Da361a1';
 
-// https://zkevm.polygonscan.com/address/0x8B6851156023f4f5A66F68BEA80851c3D905Ac93
-export const TRANSPARENT_PROXY_FACTORY = '0x8B6851156023f4f5A66F68BEA80851c3D905Ac93';
+// https://zkevm.polygonscan.com/address/0xd91d1331db4F436DaF47Ec9Dd86deCb8EEF946B4
+export const TRANSPARENT_PROXY_FACTORY = '0xd91d1331db4F436DaF47Ec9Dd86deCb8EEF946B4';
 
 // https://zkevm.polygonscan.com/address/0x2f6571d3Eb9a4e350C68C36bCD2afe39530078E2
 export const PROXY_ADMIN = '0x2f6571d3Eb9a4e350C68C36bCD2afe39530078E2';

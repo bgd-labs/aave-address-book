@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscSepolia {
-  // https://sepolia.etherscan.io/address/0x3Bad08c7b17D77cE12A2e1438Db2353b58F7c4a2
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x3Bad08c7b17D77cE12A2e1438Db2353b58F7c4a2;
+  // https://sepolia.etherscan.io/address/0x84B08568906ee891de1c23175E5B92d7Df7DDCc4
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0x84B08568906ee891de1c23175E5B92d7Df7DDCc4;
 
   // https://sepolia.etherscan.io/address/0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7
   address internal constant PROXY_ADMIN = 0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7;

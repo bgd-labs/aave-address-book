@@ -9,8 +9,8 @@ library MiscPolygon {
   // https://polygonscan.com/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
   address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
 
-  // https://polygonscan.com/address/0xB4e496f70602fE2AC6Ae511D028BA4D194773B29
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xB4e496f70602fE2AC6Ae511D028BA4D194773B29;
+  // https://polygonscan.com/address/0xa29b1234011BF1ba46Ed10edE2a59340bf97d583
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xa29b1234011BF1ba46Ed10edE2a59340bf97d583;
 
   // https://polygonscan.com/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN = 0xD3cF979e676265e4f6379749DECe4708B9A22476;

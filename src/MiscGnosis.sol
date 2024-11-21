@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscGnosis {
-  // https://gnosisscan.io/address/0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A;
+  // https://gnosisscan.io/address/0x8b8bf083fD1837486c141681E10Ea61D0f3cD692
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0x8b8bf083fD1837486c141681E10Ea61D0f3cD692;
 
   // https://gnosisscan.io/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
   address internal constant PROXY_ADMIN = 0xe892E40C92c2E4D281Be59b2E6300F271d824E75;

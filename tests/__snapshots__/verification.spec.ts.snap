@@ -3,23 +3,6 @@
 exports[`verification > should have all contracts verified except for the known set of errors 1`] = `
 [
   {
-    "error": [
-      {
-        "ABI": "Contract source code not verified",
-        "CompilerVersion": "",
-        "ConstructorArguments": "",
-        "ContractName": "",
-        "EVMVersion": "Default",
-        "Implementation": "",
-        "Library": "",
-        "LicenseType": "Unknown",
-        "OptimizationUsed": "",
-        "Proxy": "0",
-        "Runs": "",
-        "SourceCode": "",
-        "SwarmSource": "",
-      },
-    ],
     "item": {
       "chainId": 1101,
       "path": [
@@ -30,23 +13,6 @@ exports[`verification > should have all contracts verified except for the known 
     },
   },
   {
-    "error": [
-      {
-        "ABI": "Contract source code not verified",
-        "CompilerVersion": "",
-        "ConstructorArguments": "",
-        "ContractName": "",
-        "EVMVersion": "Default",
-        "Implementation": "",
-        "Library": "",
-        "LicenseType": "Unknown",
-        "OptimizationUsed": "",
-        "Proxy": "0",
-        "Runs": "",
-        "SourceCode": "",
-        "SwarmSource": "",
-      },
-    ],
     "item": {
       "chainId": 1,
       "path": [
@@ -57,23 +23,6 @@ exports[`verification > should have all contracts verified except for the known 
     },
   },
   {
-    "error": [
-      {
-        "ABI": "Contract source code not verified",
-        "CompilerVersion": "",
-        "ConstructorArguments": "",
-        "ContractName": "",
-        "EVMVersion": "Default",
-        "Implementation": "",
-        "Library": "",
-        "LicenseType": "Unknown",
-        "OptimizationUsed": "",
-        "Proxy": "0",
-        "Runs": "",
-        "SourceCode": "",
-        "SwarmSource": "",
-      },
-    ],
     "item": {
       "chainId": 137,
       "path": [
@@ -84,23 +33,6 @@ exports[`verification > should have all contracts verified except for the known 
     },
   },
   {
-    "error": [
-      {
-        "ABI": "Contract source code not verified",
-        "CompilerVersion": "",
-        "ConstructorArguments": "",
-        "ContractName": "",
-        "EVMVersion": "Default",
-        "Implementation": "",
-        "Library": "",
-        "LicenseType": "Unknown",
-        "OptimizationUsed": "",
-        "Proxy": "0",
-        "Runs": "",
-        "SourceCode": "",
-        "SwarmSource": "",
-      },
-    ],
     "item": {
       "chainId": 43114,
       "path": [
