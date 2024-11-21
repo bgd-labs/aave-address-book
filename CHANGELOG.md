@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.6.0](https://github.com/bgd-labs/aave-address-book/compare/v4.5.1...v4.6.0) (2024-11-21)
+
+
+### Features
+
+* deploy new proxy factory on all networks ([#707](https://github.com/bgd-labs/aave-address-book/issues/707)) ([51134ec](https://github.com/bgd-labs/aave-address-book/commit/51134ec1c1b981a9260ebebc1f1eb44d1b38cb1d))
+
 ## [4.5.1](https://github.com/bgd-labs/aave-address-book/compare/v4.5.0...v4.5.1) (2024-11-21)
 
 
