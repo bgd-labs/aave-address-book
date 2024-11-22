@@ -1,10 +1,10 @@
 import {Client, Hex, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
 import {getStorageAt} from 'viem/actions';
-import {CHAIN_ID_CHAIN_MAP} from '../clients';
+import {ChainList} from '@bgd-labs/rpc-env';
 
 function getExplorerLink(chainId: number, address: Hex) {
-  const chain = CHAIN_ID_CHAIN_MAP[chainId];
+  const chain = ChainList[chainId];
   let url = chain.blockExplorers?.default.url;
   if (url && url.endsWith('/')) {
     url = url.slice(0, -1); // sanitize explorer url

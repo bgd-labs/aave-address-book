@@ -2826,7 +2826,8 @@
       "name": "rsETH",
       "decimals": 18,
       "symbol": "rsETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/rseth.svg"
     },
     {
       "chainId": 1,
@@ -2835,6 +2836,7 @@
       "decimals": 18,
       "symbol": "aEthrsETH",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/arseth.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
@@ -6304,8 +6306,7 @@
       "name": "Frapped USDT",
       "decimals": 6,
       "symbol": "fUSDT",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 250,
@@ -6314,7 +6315,6 @@
       "decimals": 6,
       "symbol": "aFanUSDT",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x049d68029688eAbF473097a2fC38ef61633A3C7A"
@@ -6724,6 +6724,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 60 },
-  "timestamp": "2024-11-21T12:03:58.811Z"
+  "version": { "major": 3, "minor": 0, "patch": 61 },
+  "timestamp": "2024-11-22T09:58:33.514Z"
 }

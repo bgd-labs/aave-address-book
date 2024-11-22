@@ -3,7 +3,7 @@ import {GovernanceConfig} from '../types';
 
 export const governanceConfigFuji: GovernanceConfig = {
   name: 'Fuji',
-  CHAIN_ID: ChainId.fuji,
+  CHAIN_ID: ChainId.avalanche_fuji,
   ADDRESSES: {
     CROSS_CHAIN_CONTROLLER: '0x5488A48E5C22175548E8d68622211F5928cBbf23',
     VOTING_MACHINE: '0x79Edd77c76F95b6b69907CaD1d8241F9DB0e3FD0',
