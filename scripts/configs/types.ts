@@ -126,5 +126,6 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     GSM_USDT_PRICE_STRATEGY?: Hex;
     GSM_USDC_ORACLE_SWAP_FREEZER?: Hex;
     GSM_USDT_ORACLE_SWAP_FREEZER?: Hex;
+    FAUCET?: Hex;
   } & T;
 }
