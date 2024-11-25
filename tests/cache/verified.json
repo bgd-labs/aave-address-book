@@ -2297,6 +2297,9 @@
     },
     "0x40ede12b44d98Fc4E53A2fB027D1BD1846e1690C": {
       "name": "ParaSwapDebtSwapAdapterV3"
+    },
+    "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
+      "name": "GnosisSafeProxy"
     }
   },
   "10": {
