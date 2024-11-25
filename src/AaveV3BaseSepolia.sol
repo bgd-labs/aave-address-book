@@ -78,8 +78,8 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0x0568130e794429D2eEBC4dafE18f25Ff1a1ed8b6
   address internal constant WETH_GATEWAY = 0x0568130e794429D2eEBC4dafE18f25Ff1a1ed8b6;
 
-  // https://sepolia.basescan.org/address/0xcBF4fF4FF25a031419fe211A49Ff27B7a7c90dA5
-  address internal constant UMBRELLA = 0xcBF4fF4FF25a031419fe211A49Ff27B7a7c90dA5;
+  // https://sepolia.basescan.org/address/0xb939e96168a3953697B64DA8055570dee8735829
+  address internal constant UMBRELLA = 0xb939e96168a3953697B64DA8055570dee8735829;
 }
 library AaveV3BaseSepoliaAssets {
   // https://sepolia.basescan.org/address/0xba50Cd2A20f6DA35D788639E581bca8d0B5d4D5f

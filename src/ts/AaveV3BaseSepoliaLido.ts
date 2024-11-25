@@ -65,6 +65,9 @@ export const WALLET_BALANCE_PROVIDER = '0x29e4a5A618845250383dCd33DD0a5A4223c26A
 // https://sepolia.basescan.org/address/0x85c10e659FcEB9319248d88f82E5e0c8cb0Bc000
 export const WETH_GATEWAY = '0x85c10e659FcEB9319248d88f82E5e0c8cb0Bc000';
 
+// https://sepolia.basescan.org/address/0x779f13D3C70B50707a1C1ac9772c117cC3aDA477
+export const UMBRELLA = '0x779f13D3C70B50707a1C1ac9772c117cC3aDA477';
+
 export const CHAIN_ID = 84532;
 export const ASSETS = {
   USDC: {
