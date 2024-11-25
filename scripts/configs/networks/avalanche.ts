@@ -17,7 +17,7 @@ export const avalancheAddresses: NetworkAddresses = {
 
 export const avalancheFujiAddresses: NetworkAddresses = {
   name: 'Fuji',
-  chainId: ChainId.fuji,
+  chainId: ChainId.avalanche_fuji,
   addresses: {
     GHO_TOKEN: '0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723',
     TRANSPARENT_PROXY_FACTORY: '0x421117D7319E96d831972b3F7e970bbfe29C4F21',

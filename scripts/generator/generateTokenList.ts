@@ -10,7 +10,8 @@ import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {fixSymbol} from './assetsLibraryGenerator';
 import {getSymbolUri, VARIANT} from './svgUtils';
-import {CHAIN_ID_CHAIN_MAP, getClient} from '../clients';
+import {getClient} from '../clients';
+import {ChainList} from '@bgd-labs/rpc-env';
 
 const TAGS = {
   underlying: 'underlying',
@@ -41,7 +42,7 @@ export async function generateTokenList(pools: TokenListParams) {
 
   const tokens: TokenInfo[] = [];
   for (const {reservesData, chainId, name: poolName, pool} of pools) {
-    if (CHAIN_ID_CHAIN_MAP[chainId].testnet) continue;
+    if (ChainList[chainId].testnet) continue;
     for (const reserve of reservesData) {
       async function addToken(
         token: Address,

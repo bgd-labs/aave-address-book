@@ -1,8 +1,8 @@
 import { Suspense } from 'react';
 import { flattenedAddresses } from '../utils/getAddresses';
-import { CHAIN_ID_CHAIN_MAP } from '../../../scripts/clients';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
+import { ChainList } from '@bgd-labs/rpc-env';
 import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
 import logo from '@/assets/logo.svg';
@@ -31,7 +31,7 @@ const TAG_MAP: Record<string, string[]> = {
 
 const addresses = flattenedAddresses.map((item) => ({
   ...item,
-  link: `${CHAIN_ID_CHAIN_MAP[item.chainId]?.blockExplorers?.default.url.replace(/\/$/, '')}/address/${item.value}`,
+  link: `${ChainList[item.chainId as keyof typeof ChainList]?.blockExplorers?.default.url.replace(/\/$/, '')}/address/${item.value}`,
   searchPath: [
     ...item.path,
     item.value,
@@ -40,8 +40,8 @@ const addresses = flattenedAddresses.map((item) => ({
 }));
 
 const sortedAddresses = addresses.sort((a, b) => {
-  const aInProduction = !CHAIN_ID_CHAIN_MAP[a.chainId].testnet;
-  const bInProduction = !CHAIN_ID_CHAIN_MAP[b.chainId].testnet;
+  const aInProduction = !ChainList[a.chainId as keyof typeof ChainList].testnet;
+  const bInProduction = !ChainList[b.chainId as keyof typeof ChainList].testnet;
 
   if (aInProduction && !bInProduction) {
     return -1;
