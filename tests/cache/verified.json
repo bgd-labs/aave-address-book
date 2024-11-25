@@ -2279,6 +2279,24 @@
     },
     "0x9FB3B12248bf010AEA7cE08343C8499FFAB4770f": {
       "name": "TransparentProxyFactory"
+    },
+    "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2D62109243b87C4bA3EE7bA1D91B0dD0A074d7b1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6De3E52A1B7294A34e271a508082b1Ff4a37E30e": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x47F52B2e43D0386cF161e001835b03Ad49889e3b": {
+      "name": "RsETHPriceCapAdapter"
+    },
+    "0xd1B2dec98A95B773C4909B5CD8FB455F467A527f": {
+      "name": "ParaSwapDebtSwapAdapterV3"
+    },
+    "0x40ede12b44d98Fc4E53A2fB027D1BD1846e1690C": {
+      "name": "ParaSwapDebtSwapAdapterV3"
     }
   },
   "10": {

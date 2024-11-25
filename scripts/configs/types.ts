@@ -67,6 +67,7 @@ export interface PoolConfig {
     RATES_FACTORY?: Hex;
     PERMISSION_MANAGER?: Hex;
     WALLET_BALANCE_PROVIDER?: Hex;
+    UMBRELLA?: Hex;
   };
   // will be used for pending pools where the impls can't be fetched yet
   initial?: {
