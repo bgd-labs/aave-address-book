@@ -5,7 +5,7 @@ import {getClient} from '../../scripts/clients';
 
 export async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
-  const gateway = getContract({
+  const umbrella = getContract({
     abi: [
       {
         type: 'function',
@@ -21,14 +21,15 @@ export async function check(addresses: Record<string, any>) {
         stateMutability: 'view',
       },
     ] as const,
-    address: addresses.UMRELLA,
+    address: addresses.UMBRELLA,
     client,
   });
-  const [POOL] = await Promise.all([gateway.read.POOL()]);
+  console.log(addresses.UMBRELLA, addresses.CHAIN_ID);
+  const [POOL] = await Promise.all([umbrella.read.POOL()]);
   expect(POOL).toEqual(addresses.POOL);
 }
 
-describe('weth gateway', () => {
+describe('umbrella', () => {
   it('should reference correct contracts on all getters', async () => {
     await Promise.all(
       Object.keys(addressBook).map((library) => {
