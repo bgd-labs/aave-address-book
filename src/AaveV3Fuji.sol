@@ -74,6 +74,9 @@ library AaveV3Fuji {
 
   // https://testnet.snowtrace.io/address/0x46Dcd5F4600319b02649Fd76B55aA6c1035CA478
   address internal constant WETH_GATEWAY = 0x46Dcd5F4600319b02649Fd76B55aA6c1035CA478;
+
+  // https://testnet.snowtrace.io/address/0xF9530F06960523e05F5c5a2d7054eC601407c1DE
+  address internal constant UMBRELLA = 0xF9530F06960523e05F5c5a2d7054eC601407c1DE;
 }
 library AaveV3FujiAssets {
   // https://testnet.snowtrace.io/address/0x89502c3731F69DDC95B65753708A07F8Cd0373F4

@@ -92,6 +92,9 @@ export const WALLET_BALANCE_PROVIDER = '0x5779b29B0a34577d927E8D511B595ef9abbFAE
 // https://basescan.org/address/0x729b3EA8C005AbC58c9150fb57Ec161296F06766
 export const WETH_GATEWAY = '0x729b3EA8C005AbC58c9150fb57Ec161296F06766';
 
+// https://basescan.org/address/0xcBF4fF4FF25a031419fe211A49Ff27B7a7c90dA5
+export const UMBRELLA = '0xcBF4fF4FF25a031419fe211A49Ff27B7a7c90dA5';
+
 export const CHAIN_ID = 8453;
 export const ASSETS = {
   WETH: {

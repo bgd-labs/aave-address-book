@@ -62,6 +62,9 @@ export const WALLET_BALANCE_PROVIDER = '0xde35f7711295Dfd0CD8bd94d46f65b8Acb1825
 // https://testnet.snowtrace.io/address/0x46Dcd5F4600319b02649Fd76B55aA6c1035CA478
 export const WETH_GATEWAY = '0x46Dcd5F4600319b02649Fd76B55aA6c1035CA478';
 
+// https://testnet.snowtrace.io/address/0xF9530F06960523e05F5c5a2d7054eC601407c1DE
+export const UMBRELLA = '0xF9530F06960523e05F5c5a2d7054eC601407c1DE';
+
 export const CHAIN_ID = 43113;
 export const ASSETS = {
   USDC: {
