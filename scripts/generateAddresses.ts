@@ -61,6 +61,9 @@ import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
 import {governanceConfigZkSync} from './configs/governance/zksync';
 import {zkSyncAddresses} from './configs/networks/zksync';
+import {ghoArbitrum} from './configs/gho/arbitrum';
+import {ghoEthereum} from './configs/gho/ethereum';
+import {generateGho} from './generator/ghoGenerator';
 
 async function main() {
   // cleanup ts artifacts
@@ -131,6 +134,7 @@ async function main() {
       etherFiEthereumMainnetProtoV3Pool,
     ].map((config) => generateProtocolV3Library(config)),
   );
+  const ghoAddresses = [ghoEthereum, ghoArbitrum].map((config) => generateGho(config));
 
   const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
   console.log('✅ Tokens list generation finished');
@@ -173,17 +177,12 @@ async function main() {
     govImports,
     smImports,
     tokenListImports,
+    ghoAddresses,
   ].flat();
 
   const jsExports = imports.map((f) => f.js).flat();
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
-
-  const solidityImports = imports.map((f) => f.solidity).flat();
-
-  writeFileSync(`./src/AaveAddressBook.sol`, prefixWithGeneratedWarning(prefixWithPragma('')));
-  solidityImports.map((solExport) => appendFileSync('./src/AaveAddressBook.sol', solExport));
-
   console.log('✅ Generation finished');
 }
 

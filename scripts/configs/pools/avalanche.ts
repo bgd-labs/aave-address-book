@@ -3,7 +3,7 @@ import {PoolConfig} from '../types';
 
 export const fujiProtoV2: PoolConfig = {
   name: 'Fuji',
-  chainId: ChainId.fuji,
+  chainId: ChainId.avalanche_fuji,
   POOL_ADDRESSES_PROVIDER: '0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C0f',
   additionalAddresses: {
     FAUCET: '0x90E5BAc5A98fff59617080848959f44eACB4Cd7B',
@@ -17,7 +17,7 @@ export const fujiProtoV2: PoolConfig = {
 
 export const fujiProtoV3: PoolConfig = {
   name: 'Fuji',
-  chainId: ChainId.fuji,
+  chainId: ChainId.avalanche_fuji,
   POOL_ADDRESSES_PROVIDER: '0x07D04EfAAA0Ac69D19d107795aF247C42Eb50F1C',
   additionalAddresses: {
     CONFIG_ENGINE: '0x4058FE01Aa090E0841F4E08f79D2607C4861142E',

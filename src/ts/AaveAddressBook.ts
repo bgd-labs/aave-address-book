@@ -62,3 +62,5 @@ export * as MiscSepolia from './MiscSepolia';
 export * as MiscZkSync from './MiscZkSync';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
+export * as GhoEthereum from './GhoEthereum';
+export * as GhoArbitrum from './GhoArbitrum';

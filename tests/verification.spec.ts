@@ -1,6 +1,5 @@
-import {ChainId} from '@bgd-labs/rpc-env';
+import {ChainId, ChainList} from '@bgd-labs/rpc-env';
 import {describe, expect, it} from 'vitest';
-import {CHAIN_ID_CHAIN_MAP} from '../scripts/clients';
 import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
 import {writeFileSync} from 'fs';
@@ -99,7 +98,7 @@ describe(
       const addressesToCheck = flattenedAddresses.filter(
         (item) =>
           ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
-          !CHAIN_ID_CHAIN_MAP[item.chainId].testnet,
+          !ChainList[item.chainId].testnet,
       );
       const errors: {item: ListItem}[] = [];
       let newVerified = false;

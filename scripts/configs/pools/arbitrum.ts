@@ -3,7 +3,7 @@ import {PoolConfig} from '../types';
 
 export const arbitrumProtoV3: PoolConfig = {
   name: 'Arbitrum',
-  chainId: ChainId.arbitrum_one,
+  chainId: ChainId.arbitrum,
   POOL_ADDRESSES_PROVIDER: '0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb',
   additionalAddresses: {
     CAPS_PLUS_RISK_STEWARD: '0xADf86b537eF08591c2777E144322E8b0Ca7E82a7',

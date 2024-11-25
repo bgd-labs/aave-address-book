@@ -8,7 +8,7 @@ export const arbitrumAddresses: NetworkAddresses<{
   LEGACY_BRIDGE_EXECUTOR: Hex;
 }> = {
   name: 'Arbitrum',
-  chainId: ChainId.arbitrum_one,
+  chainId: ChainId.arbitrum,
   addresses: {
     PARASWAP_FEE_CLAIMER: '0x9abf798f5314BFd793A9E57A654BEd35af4A1D60',
     TRANSPARENT_PROXY_FACTORY: '0x9b643d4ac937bee8bfb1ec76401c22e18c318429',
@@ -18,7 +18,6 @@ export const arbitrumAddresses: NetworkAddresses<{
     PROTOCOL_GUARDIAN: '0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6',
     wstETH_stETH_AGGREGATOR: '0xB1552C5e96B312d0Bf8b554186F846C40614a540',
     rETH_ETH_AGGREGATOR: '0xF3272CAfe65b190e76caAF483db13424a3e23dD2',
-    GHO_CCIP_TOKEN_POOL: '0xF168B83598516A532a85995b52504a2Fa058C068',
     LEGACY_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
   },
 };
