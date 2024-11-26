@@ -3,6 +3,9 @@
 pragma solidity >=0.6.0;
 
 library MiscArbitrum {
+  // https://arbiscan.io/address/0x0335ffa9af5CE05590d6C9A75B645470e07744a9
+  address internal constant AAVE_ARB_ETH_BRIDGE = 0x0335ffa9af5CE05590d6C9A75B645470e07744a9;
+
   // https://arbiscan.io/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
   address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
 

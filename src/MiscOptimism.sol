@@ -3,6 +3,9 @@
 pragma solidity >=0.6.0;
 
 library MiscOptimism {
+  // https://optimistic.etherscan.io/address/0xc3250A20F8a7BbDd23adE87737EE46A45Fe5543E
+  address internal constant AAVE_OPT_ETH_BRIDGE = 0xc3250A20F8a7BbDd23adE87737EE46A45Fe5543E;
+
   // https://optimistic.etherscan.io/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
   address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
 
