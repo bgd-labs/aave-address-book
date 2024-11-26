@@ -29,4 +29,7 @@ export const rETH_ETH_AGGREGATOR = '0x22F3727be377781d1579B7C9222382b21c9d1a8f';
 // https://optimistic.etherscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
 export const LEGACY_BRIDGE_EXECUTOR = '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611';
 
+// https://optimistic.etherscan.io/address/0xc3250A20F8a7BbDd23adE87737EE46A45Fe5543E
+export const AAVE_OPT_ETH_BRIDGE = '0xc3250A20F8a7BbDd23adE87737EE46A45Fe5543E';
+
 export const CHAIN_ID = 10;
