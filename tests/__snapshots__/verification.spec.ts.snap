@@ -34,12 +34,150 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
+      "chainId": 43113,
+      "path": [
+        "AaveV2Fuji",
+        "POOL_IMPL",
+      ],
+      "value": "0x6C66d96ACCCCC2E6F576813A480AD230D56FB2F1",
+    },
+  },
+  {
+    "item": {
+      "chainId": 43113,
+      "path": [
+        "AaveV2Fuji",
+        "ORACLE",
+      ],
+      "value": "0xfa4f5B081632c4709667D467F817C09d9008A46A",
+    },
+  },
+  {
+    "item": {
+      "chainId": 43113,
+      "path": [
+        "AaveV2Fuji",
+        "LENDING_RATE_ORACLE",
+      ],
+      "value": "0x76Ec7c83aCb6af821E61F1DF1E0aBE684Bc904F8",
+    },
+  },
+  {
+    "item": {
+      "chainId": 43113,
+      "path": [
+        "AaveV2Fuji",
+        "DEFAULT_INCENTIVES_CONTROLLER",
+      ],
+      "value": "0xa1EF206fb9a8D8186157FC817fCddcC47727ED55",
+    },
+  },
+  {
+    "item": {
+      "chainId": 43113,
+      "path": [
+        "AaveV2Fuji",
+        "FAUCET",
+      ],
+      "value": "0x90E5BAc5A98fff59617080848959f44eACB4Cd7B",
+    },
+  },
+  {
+    "item": {
+      "chainId": 43113,
+      "path": [
+        "AaveV2Fuji",
+        "UI_INCENTIVE_DATA_PROVIDER",
+      ],
+      "value": "0x9842E5B7b7C6cEDfB1952a388e050582Ff95645b",
+    },
+  },
+  {
+    "item": {
       "chainId": 43114,
       "path": [
         "AaveV2Avalanche",
         "UI_INCENTIVE_DATA_PROVIDER",
       ],
       "value": "0x11979886A6dBAE27D7a72c49fCF3F23240D647bF",
+    },
+  },
+  {
+    "item": {
+      "chainId": 84532,
+      "path": [
+        "AaveV3BaseSepolia",
+        "COLLECTOR",
+      ],
+      "value": "0x6414DE3F58d54Fb90636e8393F065fDFe34Da420",
+    },
+  },
+  {
+    "item": {
+      "chainId": 84532,
+      "path": [
+        "AaveV3BaseSepolia",
+        "UMBRELLA",
+      ],
+      "value": "0xb939e96168a3953697B64DA8055570dee8735829",
+    },
+  },
+  {
+    "item": {
+      "chainId": 421614,
+      "path": [
+        "AaveV3ArbitrumSepolia",
+        "ASSETS",
+        "USDC",
+        "INTEREST_RATE_STRATEGY",
+      ],
+      "value": "0x5C0A210C9C0df2Ab147BDE7D9583c07cEb3131CD",
+    },
+  },
+  {
+    "item": {
+      "chainId": 421614,
+      "path": [
+        "AaveV3ArbitrumSepolia",
+        "ASSETS",
+        "WETH",
+        "INTEREST_RATE_STRATEGY",
+      ],
+      "value": "0x46d3a2A27E2c700d74f21AD3290A20cB8437F7b7",
+    },
+  },
+  {
+    "item": {
+      "chainId": 11155420,
+      "path": [
+        "AaveV3OptimismSepolia",
+        "RATES_FACTORY",
+      ],
+      "value": "0x83E0E6095a318446b313f7D27e0c33Ed1e9c0213",
+    },
+  },
+  {
+    "item": {
+      "chainId": 11155420,
+      "path": [
+        "AaveV3OptimismSepolia",
+        "ASSETS",
+        "USDC",
+        "INTEREST_RATE_STRATEGY",
+      ],
+      "value": "0xd6a6339c6C1B5a8792afA6e0E80b1908b8579f51",
+    },
+  },
+  {
+    "item": {
+      "chainId": 11155420,
+      "path": [
+        "AaveV3OptimismSepolia",
+        "ASSETS",
+        "WETH",
+        "INTEREST_RATE_STRATEGY",
+      ],
+      "value": "0xaFb7Bc3f69A8Cc6a49823eFF9E3974CD49181A9c",
     },
   },
 ]

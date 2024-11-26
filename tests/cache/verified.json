@@ -4806,6 +4806,122 @@
       "name": "TransparentProxyFactory"
     }
   },
+  "4002": {
+    "0x1558c6FadDe1bEaf0f6628BDd1DFf3461185eA24": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x18a8d31dA46eeb9138a16dfC429E74C04ff523F4": {
+      "name": "AaveOracle"
+    },
+    "0xD5D4f4fe4BfC8e8193f38927EfafDbfbB66dd7e0": {
+      "name": "ACLManager"
+    },
+    "0x3c9F4EEa18B02ee331218646Fea59EE3661d2A61": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x685b86a6659a1CbcfE168304386e1b54C543Ce16": {
+      "name": "Pool"
+    },
+    "0x1034d6131E0E7F2F47bFAd06597ed97b35aA5492": {
+      "name": "PoolConfigurator"
+    },
+    "0xBAdD48c3EB42A10dB791D7b02E3c07Fbf95B3155": {
+      "name": "EmissionManager"
+    },
+    "0x445e52B0C18704448f4589C4304f63Ea287c2eb0": {
+      "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0x6056C29483433A095eF98Fb0d01F2827F5FCeB99": {
+      "name": "AToken"
+    },
+    "0x67F50B454972F7557c359AfE2DD3caef9930d665": {
+      "name": "VariableDebtToken"
+    },
+    "0x021BE22Bdfa497D6643D4035E530095E7b452967": {
+      "name": "Faucet"
+    },
+    "0xf24dc19cFb9A25bbc4DDcaAdb116DfD17472207B": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0xC91dB4F736b6Acf5A2e379a58280D1b06BD24E7d": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x49cC86071dEcC7999BA656763b8389f23058bB34": {
+      "name": "WalletBalanceProvider"
+    },
+    "0xd2B0C9778d088Fc79C28Da719bC02158E64796bD": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x77FDe93fEe5fe272dC17d799cb61447431E6Eba2": {
+      "name": "TestnetERC20"
+    },
+    "0xEF97dc4389e8198068939ac2E92ca24371b67F1F": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x00DF377c2C82a65A8bAe2Ff04a9434a721Bc5aEB": {
+      "name": "MockAggregator"
+    },
+    "0x1Da81b322451C51D2580B373974a999d5A9C2D21": {
+      "name": "TestnetERC20"
+    },
+    "0x9060C6E714BA5C3A46665599103989778a736D4B": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x55c7852e10fcd07cF63Ad1bb9FC191b6F4d96ebD": {
+      "name": "MockAggregator"
+    },
+    "0x66F61903D7FEC18048bEc2e792f272cb8B657733": {
+      "name": "TestnetERC20"
+    },
+    "0x3877E12506b087e56CdB7C9a54A04bE0D322B26C": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x4CeDCB57Af02293231BAA9D39354D6BFDFD251e0": {
+      "name": "MockAggregator"
+    },
+    "0x2c95d10bA4BBEc79e562e8B3f48687751808C925": {
+      "name": "TestnetERC20"
+    },
+    "0x8022B4f0165644D9EFcDEF70b09F5739b95740bc": {
+      "name": "MockAggregator"
+    },
+    "0xc8c0Cf9436F4862a8F60Ce680Ca5a9f0f99b5ded": {
+      "name": "TestnetERC20"
+    },
+    "0x9e2DDb6aA91399546Bd875E2e63E8d6df276922e": {
+      "name": "MockAggregator"
+    },
+    "0x9DFf9E93B1e513379cf820504D642c6891d8F7CC": {
+      "name": "TestnetERC20"
+    },
+    "0x7CBa02e449d1D41b792A28fC15ee3F72C5aDC113": {
+      "name": "MockAggregator"
+    },
+    "0x52D800ca262522580CeBAD275395ca6e7598C014": {
+      "name": "TestnetERC20"
+    },
+    "0xB516d30421d2A0524769A243BBE5e193E78ab35c": {
+      "name": "MockAggregator"
+    },
+    "0x2Fa2e7a6dEB7bb51B625336DBe1dA23511914a8A": {
+      "name": "WETH9Mock"
+    },
+    "0x76675dEA78639e06a0f6b377262A03dEA916D6a4": {
+      "name": "MockAggregator"
+    },
+    "0xc199807AF4fEDB02EE567Ed0FeB814A077de4802": {
+      "name": "TestnetERC20"
+    },
+    "0xd409F17095a370800A9C352124C6a1e82695203E": {
+      "name": "MockAggregator"
+    },
+    "0x1fdE0eCc619726f4cD597887C9F3b4c8740e19e2": {
+      "name": "TestnetERC20"
+    },
+    "0xcDA8dE50b65cB2Affc8B89f35C40A97Eed4B270F": {
+      "name": "MockAggregator"
+    }
+  },
   "8453": {
     "0x793177a6Cf520C7fE5B2E45660EBB48132184BBC": {
       "name": "AaveProtocolDataProvider"
@@ -5797,6 +5913,171 @@
     },
     "0xF9f36C15fBddAF0B64E0D16E4D6852B433a86cbE": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5488A48E5C22175548E8d68622211F5928cBbf23": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x79Edd77c76F95b6b69907CaD1d8241F9DB0e3FD0": {
+      "name": "VotingMachine"
+    },
+    "0xf1842f9D6C3D9ec1153d7afCBb9cDBC537Ea5d15": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xACd2b1bA0B85FaF0f45D4974Ba8ee538E157fBc6": {
+      "name": "Executor"
+    },
+    "0x8c55a1bf3DC7076522C5cd025f497A498eF90143": {
+      "name": "VotingStrategyTest"
+    },
+    "0xDB23939d4C483E748c2487916fB20d7fF7e39588": {
+      "name": "DataWarehouse"
+    },
+    "0x83E0E6095a318446b313f7D27e0c33Ed1e9c0213": {
+      "name": "PoolAddressesProvider"
+    },
+    "0xd6a6339c6C1B5a8792afA6e0E80b1908b8579f51": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xaFb7Bc3f69A8Cc6a49823eFF9E3974CD49181A9c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4523495a435Aea946644EB1c9123Cd8BB2a5B389": {
+      "name": "AaveOracle"
+    },
+    "0xE99aeEaaBA947D8f96A20ceD6Ff3d157cd3529E8": {
+      "name": "ACLManager"
+    },
+    "0x9153c061f54bA728F892979522A1462386694c86": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xd8247C7926841337E8adf9fD9E87026992C45062": {
+      "name": "PoolInstance"
+    },
+    "0x294daB91f3539f5a74Ed995a59235eE62A14A345": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x6FAa7a29d4Af1Dc2acbC58cff158d367E3436CB9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x22baB145Ce9585761437c2878ac62Fe4C442e591": {
+      "name": "EmissionManager"
+    },
+    "0x8c31CD3ce60584c26eA49A1E2dF900247de3b517": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xD63f7658C66B2934Bd234D79D06aEF5290734B30": {
+      "name": "ATokenInstance"
+    },
+    "0xD8994FE9B79f99CD0b13AE946F5cd866c6d12d00": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xdFf435BCcf782f11187D3a4454d96702eD78e092": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x0AfF487736AAF982A90Fe996Afa43Dfa05646C0c": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0xC400635a7a87b0a41f1A0720687a03eE2e5Cbe1F": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4A49351ED179b23af08523Af98a8ca95C712b9d9": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0xC5dfC5E3a5099A6456a8BF20D7497Eb76358899F": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0xde35f7711295Dfd0CD8bd94d46f65b8Acb182520": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x46Dcd5F4600319b02649Fd76B55aA6c1035CA478": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0xF9530F06960523e05F5c5a2d7054eC601407c1DE": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x89502c3731F69DDC95B65753708A07F8Cd0373F4": {
+      "name": "TestnetERC20"
+    },
+    "0x9FA9607021A7d4e0570f3686632121945EB1FE5F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6396fD2e4Eb71B9bbf6c0fE6Dc6Aa4977F6aaBE7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5C2e738F6E27bCE0F7558051Bf90605dD6176900": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0xEB099AEb2441a13B67C35759D83764fe887a8903": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x96dFCCB3F9ACDaF6c8f8a35E814023C3484d1eA2": {
+      "name": "TestnetERC20"
+    },
+    "0x7134E7dFf2fB941Fe235EC279C2e41eb18a3f66B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x41b84B9f233e26e8D0F944e53da28ac2466007FE": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA6811b192d3E22DCfa4CD42e5237a3d979f64F03": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4bd918F7A01b04D6dB19d5c03dB03Ec68943c02a": {
+      "name": "TestnetERC20"
+    },
+    "0xcF01643FDaE7e46a2028532De943b6a5997648aB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xFB9061900b5A6785b3677A06e9C7177CBD658573": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe0CA1F1d2d8736FCa553F268f4d626FA7FA0F342": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xbf32c7dFC72b730967072B112927ca0de205dbb5": {
+      "name": "TestnetERC20"
+    },
+    "0x399383e30A89db93C791C2f23Fb331F246Af3094": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6d98C06dCd3c2F51173186999A9F9824fF8C8851": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf28d3B4e7fFF74880c20Fe29aF5800ecd4389dA1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x96Cf2f5dDEcE1b3060ddC3bE4021b2B84Aa882eA": {
+      "name": "TestnetERC20"
+    },
+    "0xC854512a8587Ac65AFED436aaa42ae93BF909606": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xAf14D1181650aFD20124d0fF9276Dcf01Eb9d4Ad": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x34C4c526902d88a3Aa98DB8a9b802603EB1E3470": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xC7276460Afb61F0eC7Af99c302b52d893e11cDF3": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x160c02B4d3609D9c12526Edf2C9977bE8E4C16BD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4738A050aE2185b70D35E09586bC07DC7432CDB0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x78F6Ab435898d314359320d22e673667172D0A27": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723": {
+      "name": "GhoToken"
+    },
+    "0x421117D7319E96d831972b3F7e970bbfe29C4F21": {
+      "name": "TransparentProxyFactory"
+    },
+    "0x48B5bD96e36a9c0D0eA3f07d3b3dA34bBD514fB3": {
+      "name": "Faucet"
     }
   },
   "43114": {
@@ -6467,6 +6748,285 @@
     },
     "0xd5DDE725b0A2dE43fBDb4E488A7fdA389210d461": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0xE4C23309117Aa30342BFaae6c95c6478e0A4Ad00": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x8bAB6d1b75f19e9eD9fCe8b9BD338844fF79aE27": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0Bf6bdFF4da24C272BC524d521Ab0db20601D384": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x943b0dE18d4abf4eF02A85912F8fc07684C141dF": {
+      "name": "AaveOracle"
+    },
+    "0x9f09F541Adf314341d8d45E5B18961147b9050E9": {
+      "name": "ACLManager"
+    },
+    "0xa432Be23d16907918d626DA6523f89a7c9A299A0": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x18A9a9c3B93bdB18eE4cEFe50e55C203D1A31b89": {
+      "name": "L2PoolInstance"
+    },
+    "0x7315c5ac05cf06aa50693C73929844b66F039DC1": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x71B448405c803A3982aBa448133133D2DEAFBE5F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x49ECA4d8e7EaE6a1e7c02516851fF9038b277e96": {
+      "name": "EmissionManager"
+    },
+    "0x3012CaC83a1286D0014aA9BB0461b80eb9c8e1b1": {
+      "name": "ATokenInstance"
+    },
+    "0x9B928e20ECD8d2bA6444B307F4B5127A41d6e19C": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x4Afb5ADe7Bd7a670B61f303ab0C740eE8350918f": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xD3a3f523100e1eaa740A6eE72Ae94710A0fAcFCe": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x8eB0791E0981947df2eA074D2479dB9A258b0312": {
+      "name": "L2Encoder"
+    },
+    "0x34473a6Ef69d92191d7b25352b5D266f3a5BAca2": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0xDB1412acf288D5bE057f8e90fd7b1BF4f84bB3B1": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x6a9D64f93DB660EaCB2b6E9424792c630CdA87d8": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x2c4D1F4EC7F4FfA09a5E1C9e74fD3A10f21Bd811": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x0568130e794429D2eEBC4dafE18f25Ff1a1ed8b6": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0xba50Cd2A20f6DA35D788639E581bca8d0B5d4D5f": {
+      "name": "TestnetERC20"
+    },
+    "0x10F1A9D11CDf50041f3f8cB7191CBE2f31750ACC": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xFB3e85601b7fEb3691bbb8779Ef0E1069E347204": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x705F7D9Ed0Ac3724eC974DaF6A099bA59d254b92": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0xf430cb6E2b85f99222fBFA6dFEa18Ff60FA6B32a": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a": {
+      "name": "TestnetERC20"
+    },
+    "0xcE3CAae5Ed17A7AafCEEbc897DE843fA6CC0c018": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xE3C742c88EE6A610157C16b60bBDD62351daeE39": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3ec8593F930EA45ea58c968260e6e9FF53FC934f": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xf63dA51069FAe9448747FA425F8Cb84B0149eC0F": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x54114591963CF60EF3aA63bEfD6eC263D98145a4": {
+      "name": "TestnetERC20"
+    },
+    "0x47Db195BAf46898302C06c31bCF46c01C64ACcF9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x638291B5Ccb9fEd339FdD351Eb086e607fCA9561": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0FB99723Aee6f420beAD13e6bBB79b7E6F034298": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x5d7538579560F5fdD54F9D264DBe0e697b5BF668": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x73a5bB60b0B0fc35710DDc0ea9c407031E31Bdbb": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x562abf6562d6A2b165aDa02b5946bc3E7b4dD653": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xde7820fFb73059608928cb9e29F6EB1369Ad1342": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xD171b9694f7A2597Ed006D41f7509aaD4B485c4B": {
+      "name": "TestnetERC20"
+    },
+    "0x9Fd6d1DBAd7c052e0c43f46df36eEc6a68814B63": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xa1a483652b157FF006292CDb0e9EB7FFad2a5142": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3c65e28D357a37589e1C7C86044a9f44dDC17134": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x9F56ff6c3441bb89eBFf1c0bc75D4096C33230d1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x810D46F9a9027E28F9B01F75E2bdde839dA61115": {
+      "name": "TestnetERC20"
+    },
+    "0x0aD46dE765522399d7b25B438b230A894d72272B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xBA42C6752F347e3c22DD0A4e5578dCB0137C1325": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xb113F5A928BCfF189C998ab20d753a47F9dE5A61": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xFb3AB5ABd3dE4703C0F296B1fe6f5E570e1631Ff": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xc08746B8A3bE6ebbB1a8C0b3e7474EB4A0d6F9fb": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x7b2F44923254d438556CA0faC364920e72b700c0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf6CB188D70aF9bFeF1f932BE34563eb87443bb12": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x351c866eF5876b591C695E12e662bED68C1E5c74": {
+      "name": "AaveOracle"
+    },
+    "0x4F987c03244d92793e92BA573AF377424Ad8cC1b": {
+      "name": "ACLManager"
+    },
+    "0xF79eD307027B94e2aD0d91101Cf4650266475924": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xBBAce2C0D027c15dA142E3C1B5B1c7a1d8530443": {
+      "name": "L2PoolInstance"
+    },
+    "0x14Cfd46aD03b9563B46c12ee7f3247EA27445669": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0xFEC49bCa4A83502E57d716B5578249C5e1872dE8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xa6AE0751dc06EE8dE771905bEa435a35c7C05A1b": {
+      "name": "EmissionManager"
+    },
+    "0x073479553F63C7f91080491dE2F48E7AbB9D5013": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6AE08bFee892fA655082CE3Ef99ebE7b83EDC422": {
+      "name": "ATokenInstance"
+    },
+    "0x6A173B0E7b2189b0Ba4FCb5bFF55D70Ed91443A6": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x949addAD066F276c216B9892ae4a19D39fA394E1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x39471096B7EE44d50ba01b978a06d88D164446e3": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x88BA56c5e38536378B17376945f0670F66964714": {
+      "name": "L2Encoder"
+    },
+    "0xed20622f29362aeAa2B2e8833a65b30c2B83A0DC": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0x1A706064675d226ABeFA50124e68a422d9FE777a": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0xB177501db055d357587Ab973f8D7748588A8A8B5": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x29e4a5A618845250383dCd33DD0a5A4223c26Acd": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x85c10e659FcEB9319248d88f82E5e0c8cb0Bc000": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x779f13D3C70B50707a1C1ac9772c117cC3aDA477": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xaF163ca48f93776195D472954dcad349528678aF": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x040a0aCdBd42f7f0c605423Aacc6abB47d7cB42C": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x25203996df0d836EC9E2b4f92EAd42E8b424C865": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0x5F27a04278bce1b04b80462e829b5582BD42B260": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xA98575847a756085DDD61329EfEE7CDab4BB92A0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd37D7004D54d1F779BC788193C72AC6C826e9046": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x35C90dfcEC0BBfD90355Eab33b6807dD044937B2": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3c93A2c798e4759F1Af4BFA1C052A0083ccF42Ef": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8D4dFea75077400457FF68A039E9c39997398b80": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xaBf1f599A74469e02A9489545823389A6f560705": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x713751EC1A92a78112ca3b62bace0dE9377a14b3": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6b20DFD2264152431a7242771eE381E03D378D96": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x35005A1D2f262F941CcA230EB04377059c977101": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xB542b8E3cC87B34A3F80902d9f8841D83b01d173": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7352Cfa37Cd01320491C9fb53D941E511932D345": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x13B9Fa684b90367Ddd20D53d5b5a81F54eaf1B8A": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4c9a538604BA9283eC2B2838BCB6C755B85B76Ce": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1076426cDFf78456AbdCE9eD654724B914B2b318": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x257bB590608322Fdf47446a1Fc531bf5EC7e8f38": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x95F99D1695c866FEb16657cCA8E91437a50D2a5e": {
+      "name": "TransparentProxyFactory"
+    },
+    "0x6CBc6928Ad317F60E8880C43479850F2190F2a0B": {
+      "name": "ProxyAdmin"
+    },
+    "0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb": {
+      "name": "GhoToken"
+    },
+    "0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc": {
+      "name": "Faucet"
     }
   },
   "421614": {
@@ -6556,6 +7116,179 @@
     },
     "0x20040a64612555042335926d72B4E5F667a67fA1": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xCB5B3ca20603231945dC5731C33E7f7F7679Ea89": {
+      "name": "ProxyAdmin"
+    },
+    "0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810": {
+      "name": "GhoToken"
+    }
+  },
+  "534351": {
+    "0x52A27dC690F8652288194Dd2bc523863eBdEa236": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x48914C788295b5db23aF2b5F0B3BE775C4eA9440": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x63BB78Fbac521998BD6E33f1a960677c7a1d4F10": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4B7C7D2EbcDc1015D35F617596318C15d9d24e59": {
+      "name": "AaveOracle"
+    },
+    "0x166601A0Cc6Cf979e2f0eF94EC5363B6BC24061C": {
+      "name": "ACLManager"
+    },
+    "0xaE58b3Be9E159bDEc67Ada8507CA3001c80725Ee": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xB186894F315133C2396104CAb386C3A0fEC09025": {
+      "name": "L2Pool"
+    },
+    "0xE7560d98a9fdAe4F3b87eb172ae44177A075eeDF": {
+      "name": "PoolConfigurator"
+    },
+    "0xa76F05D0cdf599E0186dec880F2FA480fd0c5280": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x01dd3Ad7D942406C47acd5b70cBad28fd377c6f2": {
+      "name": "EmissionManager"
+    },
+    "0x104Cd7695C9247096F7AD37d3258B63c9675A00e": {
+      "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0x0Eae78c97347bf6FCF784Aa91CABC4aCdB5cc2dd": {
+      "name": "AToken"
+    },
+    "0xAb8eaAE8383Abe28203cB6e6FAa0477B2fb97f07": {
+      "name": "VariableDebtToken"
+    },
+    "0x2F826FD1a0071476330a58dD1A9B36bcF7da832d": {
+      "name": "Faucet"
+    },
+    "0x3Bb33c67908D0d58F8d7349cBe726ff3b059e0fC": {
+      "name": "L2Encoder"
+    },
+    "0xBf67A725F976d4A7C1fa9ea5303FD57D13CA0A37": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0xDC55BcFC0963608401A4bA6298624E5895f8250a": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x6c68e975764a56e62AF3d1C8209F789779Eb763B": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x57ce905CfD7f986A929A26b006f797d181dB706e": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40": {
+      "name": "TestnetERC20"
+    },
+    "0x99Cb50E6bE36C8096e6731ED7738d93090B710DD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x09F9A7cd11BE8468064b06FF20Dce43E0A434a2A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x85AD5a4a0974b6092d1F7369eC39c8b2255b8e6f": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x58A5C0E02CF344c538F4Cf8d3EFC51e7c134B31A": {
+      "name": "MockAggregator"
+    },
+    "0x279cBF5B7e3651F03CB9b71A9E7A3c924b267801": {
+      "name": "TestnetERC20"
+    },
+    "0x55DD1cDFE13fCa68F6D14D452E2a20cABe191841": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2f42470c67aA2f6D7d2855FBB691179a6Dba4822": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9a8D012c2e26cE911AD211976aa06Ca020487389": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x01BdbF85210e113db2216e837D9b1e401eb7003e": {
+      "name": "MockAggregator"
+    },
+    "0x2C9678042D52B97D27f2bD2947F7111d93F3dD0D": {
+      "name": "TestnetERC20"
+    },
+    "0x6E4A1BcBd3C3038e6957207cadC1A17092DC7ba3": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6ED2eB0A4141975A8A33558234137265f36055f7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9c41A3E545126Cc2c160634405E00461Ec30F709": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xB1732127A07B05e6Ea1FA53c8B791560Ff768439": {
+      "name": "MockAggregator"
+    },
+    "0x5EA79f3190ff37418d42F9B2618688494dBD9693": {
+      "name": "TestnetERC20"
+    },
+    "0x43AE2a14AD923915aa85d683D1b7d0d320ae87B2": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x52a011bF32a85D952aa259D85b705b7cF040836f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xb09f1850207Af7AFcd564632bB541B7b3c776006": {
+      "name": "MockAggregator"
+    },
+    "0xb123dCe044EdF0a755505d9623Fba16C0F41cae9": {
+      "name": "WETH9Mock"
+    },
+    "0x9E8CEC4F2F4596141B62e88966D7167E9db555aD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xD502CD7A595ec36992b0601fae0A4b50A88084D4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA0579Ea869d26CE4dfED0b65b54A08A4BdF3F5A8": {
+      "name": "MockAggregator"
+    },
+    "0x186C0C26c45A8DA1Da34339ee513624a9609156d": {
+      "name": "TestnetERC20"
+    },
+    "0x54Cb3ba40705d7CCB18c1C24edD8B602a88eF4CE": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4cB0Dd10789208630F4def0DAAB4161f4Bb7b09D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2d00F2DBA40e677E23AC442B5ab932Ce699d163e": {
+      "name": "MockAggregator"
+    },
+    "0xfc2921bE7B2762F0E87039905d6019B0fF5978a8": {
+      "name": "TestnetERC20"
+    },
+    "0xC5209E1325A0DBeb28143D82e7E1DE709456Fc8a": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7AE95AD823943283c3D5b7E9bE5E24414ba980cD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x79fb53cF4Ba1B59E07Eeed92D641F8374DaAFC8f": {
+      "name": "MockAggregator"
+    },
+    "0xDf40f3a3566b4271450083f1Ad5732590BA47575": {
+      "name": "TestnetERC20"
+    },
+    "0xD49d1CF2886B1c95A94e8a9066E8b298646716b6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2160F75FB89A6C35Bd59Ecf120B26f459956c925": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xC6C58919440AD9daBF04D85b29820477AE7E808E": {
+      "name": "MockAggregator"
     }
   },
   "534352": {
@@ -6798,6 +7531,319 @@
     },
     "0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a": {
       "name": "TransparentProxyFactory"
+    }
+  },
+  "11155111": {
+    "0x012bAC54348C0E635dCAc9D5FB99f06F24136C9A": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x6Ae43d3271ff6888e7Fc43Fd7321a503ff738951": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7Ee60D184C24Ef7AfC1Ec7Be59A0f448A0abd138": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2da88497588bf89281816106C7259e31AF45a663": {
+      "name": "AaveOracle"
+    },
+    "0x7F2bE3b178deeFF716CD6Ff03Ef79A1dFf360ddD": {
+      "name": "ACLManager"
+    },
+    "0x3e9708d80f7B3e43118013075F7e95CE3AB31F31": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x0562453c3DAFBB5e625483af58f4E6D668c44e19": {
+      "name": "Pool"
+    },
+    "0x63Dea961A0B2e2dF4F7A4bb61CBc39BF53A6eb32": {
+      "name": "PoolConfigurator"
+    },
+    "0x4DA5c4da71C5a167171cC839487536d86e083483": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x098a890BAfDf6FB4ACD24bF107D20EA15D229C62": {
+      "name": "EmissionManager"
+    },
+    "0x604264f8017fEF3b11B3dD63537CB501560380B5": {
+      "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f": {
+      "name": "AToken"
+    },
+    "0x54bdE009156053108E73E2401aEA755e38f92098": {
+      "name": "VariableDebtToken"
+    },
+    "0xC959483DBa39aa9E78757139af0e9a2EDEb3f42D": {
+      "name": "Faucet"
+    },
+    "0xBA25de9a7DC623B30799F33B770d31B44c2C3b77": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x69529987FA4A075D0C00B0128fa848dc9ebbE9CE": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0xCD4e0d6D2b1252E2A709B8aE97DBA31164C5a709": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x387d311e47e80b498169e6fb51d3193167d89F7D": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0xd210dFB43B694430B8d31762B5199e30c31266C8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x69B9843A16a6E9933125EBD97659BA3CCbE2Ef8A": {
+      "name": "UiGhoDataProvider"
+    },
+    "0xFF34B3d4Aee8ddCd6F9AFFFB6Fe49bD371b8a357": {
+      "name": "TestnetERC20"
+    },
+    "0x29598b72eb5CeBd806C5dCD549490FdA35B13cD8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x22675C506A8FC26447aFFfa33640f6af5d4D4cF0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA813CC4d67821fbAcF24659e414A1Cf6c551373c": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x9aF11c35c5d3Ae182C0050438972aac4376f9516": {
+      "name": "MockAggregator"
+    },
+    "0xDE46e43F46ff74A23a65EBb0580cbe3dFE684a17": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xf8Fb3713D459D7C1018BD0A49D19b4C44290EBE5": {
+      "name": "TestnetERC20"
+    },
+    "0x3FfAf50D4F4E96eB78f2407c090b72e86eCaed24": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x34a4d932E722b9dFb492B9D8131127690CE2430B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xCA30c502d52F905FB3D04eE60cA48F5A1A89f8dB": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x14fC51b7df22b4D393cD45504B9f0A3002A63F3F": {
+      "name": "MockAggregator"
+    },
+    "0x8227a989709a757f25dF251C3C3e71CA38627836": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x94a9D9AC8a22534E3FaCa9F4e7F2E2cf85d5E4C8": {
+      "name": "TestnetERC20"
+    },
+    "0x16dA4541aD1807f4443d92D26044C1147406EB80": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x36B5dE936eF1710E1d22EabE5231b28581a92ECc": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5CB1008969a2d5FAcE8eF32732e6A306d0D0EF2A": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x98458D6A99489F15e6eB5aFa67ACFAcf6F211051": {
+      "name": "MockAggregator"
+    },
+    "0x8A88124522dbBF1E56352ba3DE1d9F78C143751e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x29f2D40B0605204364af54EC677bD022dA425d03": {
+      "name": "TestnetERC20"
+    },
+    "0x1804Bf30507dc2EB3bDEbbbdd859991EAeF6EefF": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xEB016dFd303F19fbDdFb6300eB4AeB2DA7Ceac37": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x784B90bA1E9a8cf3C9939c2e072F058B024C4b8a": {
+      "name": "MockAggregator"
+    },
+    "0x131a121bda71ED810bCAf2aC9079214925e59C18": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xC558DBdd856501FCd9aaF1E62eae57A9F0629a3c": {
+      "name": "WETH9Mock"
+    },
+    "0x5b071b590a59395fE4025A0Ccc1FcC931AAc1830": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x22a35DB253f4F6D0029025D6312A3BdAb20C2c6A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDde0E8E6d3653614878Bf5009EDC317BC129fE2F": {
+      "name": "MockAggregator"
+    },
+    "0x162B500569F42D9eCe937e6a61EDfef660A12E98": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0": {
+      "name": "TestnetERC20"
+    },
+    "0xAF0F6e8b0Dc5c913bbF4d14c22B4E78Dd14310B6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9844386d29EEd970B9F6a2B9a676083b0478210e": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4e86D3Aa271Fa418F38D7262fdBa2989C94aa5Ba": {
+      "name": "MockAggregator"
+    },
+    "0x978206fAe13faF5a8d293FB614326B237684B750": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x88541670E55cC00bEEFD87eB59EDd1b7C511AC9a": {
+      "name": "TestnetERC20"
+    },
+    "0x6b8558764d3b7572136F17174Cb9aB1DDc7E1259": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf12fdFc4c631F6D361b48723c2F2800b84B519e6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xda678Ef100c13504edDb8a228A1e8e4CB139f189": {
+      "name": "MockAggregator"
+    },
+    "0x56771cEF0cb422e125564CcCC98BB05fdc718E77": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6d906e526a4e2Ca02097BA9d0caA3c382F52278E": {
+      "name": "TestnetERC20"
+    },
+    "0xB20691021F9AcED8631eDaa3c0Cd2949EB45662D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x94482C7A7477196259D8a0f74fB853277Fa5a75b": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xCbE15C1f40f1D7eE1De3756D1557d5Fdc2A50bBD": {
+      "name": "MockAggregator"
+    },
+    "0x72B49a461900e11632C95dfa563e7173438D4e3E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xc4bF5CbDaBE595361438F8c6a187bDc330539c60": {
+      "name": "GhoToken"
+    },
+    "0xd190eF37dB51Bb955A680fF1A85763CC72d083D4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x67ae46EF043F7A4508BD1d6B94DB6c33F0915844": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x521247B4d0a51E71DE580dA2cBF99EB40a44b3Bf": {
+      "name": "GhoInterestRateStrategy"
+    },
+    "0x00f7fecFAEbEd9499e1f3f9d04E755a21E5fc47C": {
+      "name": "GhoOracle"
+    },
+    "0x84B08568906ee891de1c23175E5B92d7Df7DDCc4": {
+      "name": "TransparentProxyFactory"
+    },
+    "0x8dDa7a1E3e96EB13BE50bB59e80485227E3DE2e7": {
+      "name": "ProxyAdmin"
+    },
+    "0xB5d0ef1548D9C70d3E7a96cA67A2d7EbC5b1173E": {
+      "name": "GhoFlashMinter"
+    }
+  },
+  "11155420": {
+    "0x36616cf17557639614c1cdDb356b1B83fc0B2132": {
+      "name": "PoolAddressesProvider"
+    },
+    "0xb50201558B00496A145fE76f7424749556E326D8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7304979ec9E4EaA0273b6A037a31c4e9e5A75D16": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xeb0a051be10228213BAEb449db63719d6742F7c4": {
+      "name": "AaveOracle"
+    },
+    "0x1dF462e2712496373A347f8ad10802a5E95f053D": {
+      "name": "Executor"
+    },
+    "0x41585C50524fb8c3899B43D7D797d9486AAc94DB": {
+      "name": "ACLManager"
+    },
+    "0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xB1532b76D054c9F9E61b25c4d91f69B4133E4671": {
+      "name": "L2Pool"
+    },
+    "0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C": {
+      "name": "PoolConfigurator"
+    },
+    "0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB438D5376ADB4b31D0103E659f1673eAD684BAD9": {
+      "name": "EmissionManager"
+    },
+    "0x3e652E97ff339B73421f824F5b03d75b62F1Fb51": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6c23bAF050ec192afc0B967a93b83e6c5405df43": {
+      "name": "AToken"
+    },
+    "0x777fBA024bA1228fDa76149A4ff8B23475ed057D": {
+      "name": "VariableDebtToken"
+    },
+    "0xBeC519531F0E78BcDdB295242fA4EC5251B38574": {
+      "name": "L2Encoder"
+    },
+    "0x1D0f881Ce1a646E2f27Dec3c57Fa056cB838BCC2": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x1236010CECea55998384e795B59815D871f5f94d": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x589750BA8aF186cE5B55391B0b7148cAD43a1619": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x5fd84259d66Cd46123540766Be93DFE6D43130D7": {
+      "name": "FiatTokenProxy"
+    },
+    "0xa818F1B57c201E092C4A2017A91815034326Efd1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0c0fce05F2314540EcB095bF4D069e5E0ED90fF8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6e44e50E3cc14DD16e01C590DC1d7020cb36eD4C": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4200000000000000000000000000000000000006": {
+      "name": "WETH9"
+    },
+    "0x23e4E76D01B2002BE436CE8d6044b0aA2f68B68a": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9D881f67F20B49243c98f53d2B9E91E39d02Ae09": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x61Ec26aA57019C486B10502285c5A3D4A4750AD7": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xb13Cfa6f8B2Eed2C37fB00fF0c1A59807C585810": {
+      "name": "GhoToken"
+    },
+    "0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xe892E40C92c2E4D281Be59b2E6300F271d824E75": {
+      "name": "ProxyAdmin"
     }
   }
 }

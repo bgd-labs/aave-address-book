@@ -3,7 +3,8 @@ import {describe, expect, it} from 'vitest';
 import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
 import {writeFileSync} from 'fs';
-import {zeroAddress} from 'viem';
+import {Hex, PublicClient, zeroAddress} from 'viem';
+import {getClient} from '../scripts/clients';
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
 
@@ -97,8 +98,7 @@ describe(
     it('should have all contracts verified except for the known set of errors', async () => {
       const addressesToCheck = flattenedAddresses.filter(
         (item) =>
-          ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
-          !ChainList[item.chainId].testnet,
+          ![ChainId.harmony, ChainId.fantom, ChainId.fantom_testnet].includes(item.chainId as any),
       );
       const errors: {item: ListItem}[] = [];
       let newVerified = false;
@@ -106,25 +106,29 @@ describe(
       // used to prevent double checking the same address
       const checked = new Set<string>();
       for (const item of addressesToCheck) {
-        const hasBeenCheckedBefore = verified[item.chainId][item.value];
+        const hasBeenCheckedBefore = verified[item.chainId]?.[item.value];
         if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
           const key = `${item.chainId}-${item.value}`;
           if (checked.has(key)) continue;
           checked.add(key);
-          const {status, result} = (await checkVerified(item)) as {
-            status: string;
-            result: {ContractName: string}[];
-          };
-          await sleep(300);
-          if (status !== '1' || !result[0].ContractName) {
-            errors.push({item});
-            console.log(result);
-          } else {
-            newVerified = true;
-            if (!verified[item.chainId]) verified[item.chainId] = {};
-            verified[item.chainId][item.value] = {
-              name: result[0].ContractName,
+          const client = getClient(item.chainId) as PublicClient;
+          const hasCode = await client.getCode({address: item.value as Hex});
+          if (hasCode) {
+            const {status, result} = (await checkVerified(item)) as {
+              status: string;
+              result: {ContractName: string}[];
             };
+            await sleep(300);
+            if (status !== '1' || !result[0].ContractName) {
+              errors.push({item});
+              console.log(item.chainId, item.value);
+            } else {
+              newVerified = true;
+              if (!verified[item.chainId]) verified[item.chainId] = {};
+              verified[item.chainId][item.value] = {
+                name: result[0].ContractName,
+              };
+            }
           }
         }
       }
@@ -136,5 +140,5 @@ describe(
       expect(errors).toMatchSnapshot();
     });
   },
-  {timeout: 120_000},
+  {timeout: 500_000},
 );
