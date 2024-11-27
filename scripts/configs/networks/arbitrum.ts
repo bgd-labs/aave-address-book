@@ -6,6 +6,7 @@ export const arbitrumAddresses: NetworkAddresses<{
   wstETH_stETH_AGGREGATOR: Hex;
   rETH_ETH_AGGREGATOR: Hex;
   LEGACY_BRIDGE_EXECUTOR: Hex;
+  AAVE_ARB_ETH_BRIDGE: Hex;
 }> = {
   name: 'Arbitrum',
   chainId: ChainId.arbitrum,
@@ -19,6 +20,7 @@ export const arbitrumAddresses: NetworkAddresses<{
     wstETH_stETH_AGGREGATOR: '0xB1552C5e96B312d0Bf8b554186F846C40614a540',
     rETH_ETH_AGGREGATOR: '0xF3272CAfe65b190e76caAF483db13424a3e23dD2',
     LEGACY_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
+    AAVE_ARB_ETH_BRIDGE: '0x0335ffa9af5CE05590d6C9A75B645470e07744a9'
   },
 };
 
