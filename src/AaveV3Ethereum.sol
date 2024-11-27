@@ -106,6 +106,9 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant SAVINGS_DAI_TOKEN_WRAPPER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
+
+  // https://etherscan.io/address/0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F
+  address internal constant STATA_FACTORY = 0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F;
 }
 library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
@@ -128,6 +131,9 @@ library AaveV3EthereumAssets {
 
   // https://etherscan.io/address/0x252231882FB38481497f3C767469106297c8d93b
   address internal constant WETH_STATIC_A_TOKEN = 0x252231882FB38481497f3C767469106297c8d93b;
+
+  // https://etherscan.io/address/0x0bfc9d54Fc184518A81162F8fB99c2eACa081202
+  address internal constant WETH_STATA_TOKEN = 0x0bfc9d54Fc184518A81162F8fB99c2eACa081202;
 
   // https://etherscan.io/address/0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0
   address internal constant wstETH_UNDERLYING = 0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0;
@@ -191,6 +197,9 @@ library AaveV3EthereumAssets {
 
   // https://etherscan.io/address/0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6
   address internal constant USDC_STATIC_A_TOKEN = 0x73edDFa87C71ADdC275c2b9890f5c3a8480bC9E6;
+
+  // https://etherscan.io/address/0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E
+  address internal constant USDC_STATA_TOKEN = 0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E;
 
   // https://etherscan.io/address/0x6B175474E89094C44Da98b954EedeAC495271d0F
   address internal constant DAI_UNDERLYING = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
@@ -295,6 +304,9 @@ library AaveV3EthereumAssets {
 
   // https://etherscan.io/address/0x862c57d48becB45583AEbA3f489696D22466Ca1b
   address internal constant USDT_STATIC_A_TOKEN = 0x862c57d48becB45583AEbA3f489696D22466Ca1b;
+
+  // https://etherscan.io/address/0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8
+  address internal constant USDT_STATA_TOKEN = 0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8;
 
   // https://etherscan.io/address/0xae78736Cd615f374D3085123A210448E74Fc6393
   address internal constant rETH_UNDERLYING = 0xae78736Cd615f374D3085123A210448E74Fc6393;
