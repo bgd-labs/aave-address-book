@@ -29,4 +29,7 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0x7d9103572bE58FfE99dc390E8246f02dcAe6f611
   address internal constant LEGACY_BRIDGE_EXECUTOR = 0x7d9103572bE58FfE99dc390E8246f02dcAe6f611;
+
+  // https://arbiscan.io/address/0x0335ffa9af5CE05590d6C9A75B645470e07744a9
+  address internal constant AAVE_ARB_ETH_BRIDGE = 0x0335ffa9af5CE05590d6C9A75B645470e07744a9;
 }

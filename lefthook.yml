@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: false
+  commands:
+    generate:
+      priority: 1
+      run: npm run generate:addresses
+      stage_fixed: true
+    test:
+      priority: 2
+      run: npm run test
+      stage_fixed: true
+    format:
+      priority: 3
+      run: npm run prettier
+      stage_fixed: true
