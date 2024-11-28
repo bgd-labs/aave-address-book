@@ -2864,6 +2864,20 @@
     },
     {
       "chainId": 1,
+      "address": "0xb80B3215EA8183a064073f9892eb64236160a4dF",
+      "name": "Wrapped Aave Ethereum USDS",
+      "decimals": 18,
+      "symbol": "waEthUSDS",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausds.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xdC035D45d973E3EC169d2276DDab16f1e407384F",
+        "underlyingAToken": "0x32a6268f9Ba3642Dda7892aDd74f1D34469A4259"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7",
       "name": "rsETH",
       "decimals": 18,
@@ -6850,6 +6864,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 62 },
-  "timestamp": "2024-11-27T16:12:03.014Z"
+  "version": { "major": 3, "minor": 0, "patch": 63 },
+  "timestamp": "2024-11-28T10:58:50.316Z"
 }

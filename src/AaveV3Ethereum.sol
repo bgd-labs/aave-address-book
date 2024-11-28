@@ -836,6 +836,9 @@ library AaveV3EthereumAssets {
   address internal constant USDS_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 
+  // https://etherscan.io/address/0xb80B3215EA8183a064073f9892eb64236160a4dF
+  address internal constant USDS_STATA_TOKEN = 0xb80B3215EA8183a064073f9892eb64236160a4dF;
+
   // https://etherscan.io/address/0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7
   address internal constant rsETH_UNDERLYING = 0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7;
 

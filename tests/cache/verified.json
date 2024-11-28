@@ -2321,6 +2321,9 @@
     },
     "0x775F661b0bD1739349b9A2A3EF60be277c5d2D29": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xb80B3215EA8183a064073f9892eb64236160a4dF": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
