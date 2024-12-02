@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.7.0](https://github.com/bgd-labs/aave-address-book/compare/v4.6.0...v4.7.0) (2024-12-02)
+
+
+### Features
+
+* add bridges ([#718](https://github.com/bgd-labs/aave-address-book/issues/718)) ([937b958](https://github.com/bgd-labs/aave-address-book/commit/937b958af85b210f186959d5785b0089a650a755))
+* gho libraries ([#713](https://github.com/bgd-labs/aave-address-book/issues/713)) ([c63b6ab](https://github.com/bgd-labs/aave-address-book/commit/c63b6ab77ff3416cd70bec9d3dc8d7bbc26b3fb3))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#728](https://github.com/bgd-labs/aave-address-book/issues/728)) ([d8ccf37](https://github.com/bgd-labs/aave-address-book/commit/d8ccf37fbbf820c212386116dceeca44201a90d6))
+
 ## [4.6.0](https://github.com/bgd-labs/aave-address-book/compare/v4.5.1...v4.6.0) (2024-11-21)
 
 
