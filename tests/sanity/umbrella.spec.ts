@@ -24,7 +24,6 @@ export async function check(addresses: Record<string, any>) {
     address: addresses.UMBRELLA,
     client,
   });
-  console.log(addresses.UMBRELLA, addresses.CHAIN_ID);
   const [POOL] = await Promise.all([umbrella.read.POOL()]);
   expect(POOL).toEqual(addresses.POOL);
 }

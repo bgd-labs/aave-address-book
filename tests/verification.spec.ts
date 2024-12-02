@@ -4,6 +4,8 @@ import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
 import {writeFileSync} from 'fs';
 import {Hex, PublicClient, zeroAddress} from 'viem';
+import {getCode} from 'viem/actions';
+
 import {getClient} from '../scripts/clients';
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
@@ -112,7 +114,7 @@ describe(
           if (checked.has(key)) continue;
           checked.add(key);
           const client = getClient(item.chainId) as PublicClient;
-          const hasCode = await client.getCode({address: item.value as Hex});
+          const hasCode = await getCode(client, {address: item.value as Hex});
           if (hasCode) {
             const {status, result} = (await checkVerified(item)) as {
               status: string;

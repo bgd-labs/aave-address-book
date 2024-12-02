@@ -1,6 +1,5 @@
 import {describe, it, expect} from 'vitest';
 import {getUmbrellaConfig} from '../../scripts/generator/umbrellaGenerator';
-import {rpcResponseCache} from '../../scripts/clients';
 
 describe('umbrellaGenerator', () => {
   it('should generate the config', async () => {
@@ -89,10 +88,14 @@ describe('umbrellaGenerator', () => {
           "0x98297F8CE8fBE6Ac21Baa23549389852D28715C4",
           "0xF045cAB6235e10116319D94B1c5970DAAe9b7136",
           "0x32735b634571904008D29086C95e90b558758F9f",
+          "0x7c743cCAE301b558D2DB0c72D6d69C792AA2E4c9",
+          "0x4Dc9749D5FF960e92b21800CC0a6fC7A2aD606f8",
+          "0x8d1dF6F3602f1Ca01f01F6e6d1071B205FbB0026",
+          "0xF2176ACe5DA79291D176C645a725eBa96A8f246D",
+          "0xC550C904e04C6046122C0271A5D90891870f8824",
+          "0xA821016E5A282676c07FeC5217016e229B518dE0",
         ],
       }
     `);
-
-    console.log('cache', rpcResponseCache);
   });
 });
