@@ -2300,6 +2300,30 @@
     },
     "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
       "name": "GnosisSafeProxy"
+    },
+    "0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0bfc9d54Fc184518A81162F8fB99c2eACa081202": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x347C75d19718a05148687E13dca259aD016aB411": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0FE906e030a44eF24CA8c7dC7B7c53A6C4F00ce9": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x775F661b0bD1739349b9A2A3EF60be277c5d2D29": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xb80B3215EA8183a064073f9892eb64236160a4dF": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
@@ -3389,6 +3413,21 @@
     },
     "0x8b8bf083fD1837486c141681E10Ea61D0f3cD692": {
       "name": "TransparentProxyFactory"
+    },
+    "0x33992721c565dA3248bd3af80524e054F5F05b42": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x57f664882F762FA37903FC864e2B633D384B411A": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x773CDA0CADe2A3d86E6D4e30699d40bB95174ff2": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7c16F0185A26Db0AE7a9377f23BC18ea7ce5d644": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "137": {
