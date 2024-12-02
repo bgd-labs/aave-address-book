@@ -62,6 +62,9 @@ export interface PoolConfig {
     STATIC_A_TOKEN_ORACLE?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
     RISK_STEWARD?: Hex;
+    EDGE_RISK_STEWARD?: Hex;
+    EDGE_STEWARD_INJECTOR?: Hex;
+    RISK_ORACLE?: Hex;
     FREEZING_STEWARD?: Hex;
     UI_GHO_DATA_PROVIDER?: Hex;
     RATES_FACTORY?: Hex;

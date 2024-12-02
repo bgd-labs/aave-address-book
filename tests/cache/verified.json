@@ -2300,6 +2300,15 @@
     },
     "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
       "name": "GnosisSafeProxy"
+    },
+    "0x81aFd0F99c2Afa2f2DD7E387c2Ef9CD2a29b6E1A": {
+      "name": "EDGE_RISK_STEWARD"
+    },
+    "0x834a5aC6e9D05b92F599A031941262F761c34859": {
+      "name": "EDGE_STEWARD_INJECTOR"
+    },
+    "0x7ABB46C690C52E919687D19ebF89C81A6136C1F2": {
+      "name": "RISK_ORACLE"
     }
   },
   "10": {
