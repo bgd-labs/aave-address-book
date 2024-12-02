@@ -6,6 +6,7 @@ export const optimismAddresses: NetworkAddresses<{
   wstETH_stETH_AGGREGATOR: Hex;
   rETH_ETH_AGGREGATOR: Hex;
   LEGACY_BRIDGE_EXECUTOR: Hex;
+  AAVE_OPT_ETH_BRIDGE: Hex;
 }> = {
   name: 'Optimism',
   chainId: ChainId.optimism,
@@ -20,6 +21,7 @@ export const optimismAddresses: NetworkAddresses<{
     wstETH_stETH_AGGREGATOR: '0xe59EBa0D492cA53C6f46015EEa00517F2707dc77',
     rETH_ETH_AGGREGATOR: '0x22F3727be377781d1579B7C9222382b21c9d1a8f',
     LEGACY_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
+    AAVE_OPT_ETH_BRIDGE: '0xc3250A20F8a7BbDd23adE87737EE46A45Fe5543E',
   },
 };
 

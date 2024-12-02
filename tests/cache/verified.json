@@ -2755,6 +2755,9 @@
     },
     "0x984B710D22730f799312513A10C1382e9D1Fa689": {
       "name": "TransparentProxyFactory"
+    },
+    "0xc3250A20F8a7BbDd23adE87737EE46A45Fe5543E": {
+      "name": "AaveOpEthERC20Bridge"
     }
   },
   "56": {
@@ -5755,6 +5758,9 @@
     },
     "0x9B643d4aC937BEE8Bfb1Ec76401C22E18C318429": {
       "name": "TransparentProxyFactory"
+    },
+    "0x0335ffa9af5CE05590d6C9A75B645470e07744a9": {
+      "name": "AaveArbEthERC20Bridge"
     }
   },
   "43113": {
