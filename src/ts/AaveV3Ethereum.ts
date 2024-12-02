@@ -486,9 +486,10 @@ export const E_MODES = {
     label: 'sUSDe Stablecoins',
     collateralBitmap: '4294967296',
     collateralAssets: ['0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'],
-    borrowableBitmap: '34359738376',
+    borrowableBitmap: '34359738632',
     borrowableAssets: [
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
     ],
     ltv: 9000,
