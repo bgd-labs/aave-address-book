@@ -27,6 +27,7 @@ import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism'
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {zkSyncProtoV3} from './configs/pools/zksync';
+import {lineaProtoV3} from './configs/pools/linea';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -61,6 +62,7 @@ import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
 import {governanceConfigZkSync} from './configs/governance/zksync';
 import {zkSyncAddresses} from './configs/networks/zksync';
+import {lineaAddresses} from './configs/networks/linea';
 import {ghoArbitrum} from './configs/gho/arbitrum';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
@@ -132,6 +134,7 @@ async function main() {
       harmonyProtoV3,
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
+      lineaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum].map((config) => generateGho(config));
@@ -158,6 +161,7 @@ async function main() {
     polygonZkEvmAddresses,
     sepoliaAddresses,
     zkSyncAddresses,
+    lineaAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
