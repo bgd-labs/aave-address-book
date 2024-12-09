@@ -37,6 +37,5 @@ export function generateNetworkAddresses(config: NetworkAddresses<any>) {
   );
   return {
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
   };
 }

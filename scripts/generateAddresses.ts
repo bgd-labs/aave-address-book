@@ -31,7 +31,7 @@ import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
 import {generateGovV2} from './generator/governanceV2Generator';
-import {prefixWithGeneratedWarning, prefixWithPragma} from './generator/utils';
+import {prefixWithGeneratedWarning} from './generator/utils';
 import {generateSafetyModule} from './generator/safetyModuleGenerator';
 import {governanceConfigArbitrum} from './configs/governance/arbitrum';
 import {governanceConfigAvalanche, governanceConfigFuji} from './configs/governance/avalanche';
@@ -64,6 +64,7 @@ import {zkSyncAddresses} from './configs/networks/zksync';
 import {ghoArbitrum} from './configs/gho/arbitrum';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
+import {generateLibraries} from './generateLibraries';
 
 async function main() {
   // cleanup ts artifacts
@@ -136,7 +137,7 @@ async function main() {
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum].map((config) => generateGho(config));
 
-  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
+  await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
   console.log('✅ Tokens list generation finished');
 
   const networkAddresses = [
@@ -176,9 +177,10 @@ async function main() {
     networkAddresses,
     govImports,
     smImports,
-    tokenListImports,
     ghoAddresses,
   ].flat();
+
+  await Promise.all([generateLibraries({poolv3: baseSepoliaProtoV3})]);
 
   const jsExports = imports.map((f) => f.js).flat();
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));

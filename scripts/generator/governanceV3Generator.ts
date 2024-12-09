@@ -127,6 +127,5 @@ export async function generateGovernanceLibrary(config: GovernanceConfig) {
   );
   return {
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
   };
 }

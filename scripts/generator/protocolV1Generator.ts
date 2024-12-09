@@ -42,6 +42,5 @@ export function generateAaveV1() {
 
   return {
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
   };
 }

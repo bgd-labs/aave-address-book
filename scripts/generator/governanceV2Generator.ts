@@ -47,6 +47,5 @@ export function generateGovV2() {
 
   return {
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
   };
 }
