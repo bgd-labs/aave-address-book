@@ -1,5 +1,5 @@
 import {describe, it, expect} from 'vitest';
-import {getUmbrellaConfig} from '../../scripts/generator/umbrellaGenerator';
+import {getUmbrellaConfig} from '../../scripts/generator/umbrella';
 
 describe('umbrellaGenerator', () => {
   it('should generate the config', async () => {

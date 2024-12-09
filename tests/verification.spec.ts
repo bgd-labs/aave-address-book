@@ -94,13 +94,33 @@ function getApiUrl(chainId: number) {
   return `https://api.etherscan.io/v2/api`;
 }
 
+// very old contracts we know will never be verified
+const knownErrors = {
+  1: {
+    '0xD01ab9a6577E1D84F142e44D49380e23A340387d': true,
+  },
+  1101: {
+    '0xF1c11BE0b4466728DDb7991A0Ac5265646ec9672': true,
+  },
+  137: {
+    '0x645654D59A5226CBab969b1f5431aA47CBf64ab8': true,
+  },
+  43114: {
+    '0x11979886A6dBAE27D7a72c49fCF3F23240D647bF': true,
+  },
+};
+
 describe(
   'verification',
   () => {
     it('should have all contracts verified except for the known set of errors', async () => {
       const addressesToCheck = flattenedAddresses.filter(
         (item) =>
-          ![ChainId.harmony, ChainId.fantom, ChainId.fantom_testnet].includes(item.chainId as any),
+          ![ChainId.harmony, ChainId.fantom, ChainId.fantom_testnet].includes(
+            item.chainId as any,
+          ) &&
+          item.path[0] !== 'AaveV2Fuji' &&
+          !knownErrors[item.chainId]?.[item.value],
       );
       const errors: {item: ListItem}[] = [];
       let newVerified = false;

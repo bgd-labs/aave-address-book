@@ -7039,6 +7039,33 @@
     },
     "0xb939e96168a3953697B64DA8055570dee8735829": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xfa3BE9b886fb9E4909040a7AE01eeD47fd96A075": {
+      "name": "ATokenInstance"
+    },
+    "0x2B218FFE3C1272Da2F95cb0d09Ff346a861E04b7": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xc2B555ae014305DBF6E9dF01d7a8D50C446Fa3f1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x567FD032E58504b88c5ACDE951b8069a58445766": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x32ae7319c4a4eEC0bB8318d4382A193E89fF2A1D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x946fA6F7E2E6F94EfAB67DBf72a054d79F7F8301": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xAd1D19156C20a73d19c9f896faDFf7Eafd0c4dF9": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xD7fe90c0F9eEB361300876f49e81A34cbbbe1fE4": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xD250d3E34F3bC3090f798a93c38DbAeced420Eae": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "421614": {
