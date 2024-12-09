@@ -173,8 +173,4 @@ export async function generateTokenList(pools: TokenListParams) {
     console.log(validator.errors);
     throw new Error('error creating tokenlist');
   }
-  return {
-    js: [],
-    solidity: [],
-  };
 }

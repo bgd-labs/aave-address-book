@@ -150,3 +150,71 @@ export const E_MODES = {
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;
+export const UMBRELLA_CONFIGURATION = [
+  {
+    reserve: '0xba50Cd2A20f6DA35D788639E581bca8d0B5d4D5f',
+    configs: [
+      {
+        stakeToken: '0x567FD032E58504b88c5ACDE951b8069a58445766',
+        oracle: '0xf430cb6E2b85f99222fBFA6dFEa18Ff60FA6B32a',
+        liquidationBonus: '10000',
+        isReserveStataToken: true,
+      },
+    ],
+  },
+  {
+    reserve: '0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a',
+    configs: [
+      {
+        stakeToken: '0x32ae7319c4a4eEC0bB8318d4382A193E89fF2A1D',
+        oracle: '0xf63dA51069FAe9448747FA425F8Cb84B0149eC0F',
+        liquidationBonus: '10000',
+        isReserveStataToken: true,
+      },
+    ],
+  },
+  {
+    reserve: '0x54114591963CF60EF3aA63bEfD6eC263D98145a4',
+    configs: [
+      {
+        stakeToken: '0x946fA6F7E2E6F94EfAB67DBf72a054d79F7F8301',
+        oracle: '0x5d7538579560F5fdD54F9D264DBe0e697b5BF668',
+        liquidationBonus: '10000',
+        isReserveStataToken: true,
+      },
+    ],
+  },
+  {
+    reserve: '0x4200000000000000000000000000000000000006',
+    configs: [
+      {
+        stakeToken: '0xAd1D19156C20a73d19c9f896faDFf7Eafd0c4dF9',
+        oracle: '0xde7820fFb73059608928cb9e29F6EB1369Ad1342',
+        liquidationBonus: '10000',
+        isReserveStataToken: true,
+      },
+    ],
+  },
+  {
+    reserve: '0xD171b9694f7A2597Ed006D41f7509aaD4B485c4B',
+    configs: [
+      {
+        stakeToken: '0xD7fe90c0F9eEB361300876f49e81A34cbbbe1fE4',
+        oracle: '0x9F56ff6c3441bb89eBFf1c0bc75D4096C33230d1',
+        liquidationBonus: '10000',
+        isReserveStataToken: true,
+      },
+    ],
+  },
+  {
+    reserve: '0x810D46F9a9027E28F9B01F75E2bdde839dA61115',
+    configs: [
+      {
+        stakeToken: '0xD250d3E34F3bC3090f798a93c38DbAeced420Eae',
+        oracle: '0xFb3AB5ABd3dE4703C0F296B1fe6f5E570e1631Ff',
+        liquidationBonus: '10000',
+        isReserveStataToken: true,
+      },
+    ],
+  },
+] as const;

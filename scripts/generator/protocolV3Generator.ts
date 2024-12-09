@@ -143,6 +143,5 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
     reservesData,
     chainId: poolConfig.chainId,
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
   };
 }
