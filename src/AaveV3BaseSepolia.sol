@@ -46,12 +46,12 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0x6414DE3F58d54Fb90636e8393F065fDFe34Da420
   ICollector internal constant COLLECTOR = ICollector(0x6414DE3F58d54Fb90636e8393F065fDFe34Da420);
 
-  // https://sepolia.basescan.org/address/0x3012CaC83a1286D0014aA9BB0461b80eb9c8e1b1
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x3012CaC83a1286D0014aA9BB0461b80eb9c8e1b1;
+  // https://sepolia.basescan.org/address/0xfa3BE9b886fb9E4909040a7AE01eeD47fd96A075
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0xfa3BE9b886fb9E4909040a7AE01eeD47fd96A075;
 
-  // https://sepolia.basescan.org/address/0x9B928e20ECD8d2bA6444B307F4B5127A41d6e19C
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x9B928e20ECD8d2bA6444B307F4B5127A41d6e19C;
+  // https://sepolia.basescan.org/address/0x2B218FFE3C1272Da2F95cb0d09Ff346a861E04b7
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
+    0x2B218FFE3C1272Da2F95cb0d09Ff346a861E04b7;
 
   // https://sepolia.basescan.org/address/0x4Afb5ADe7Bd7a670B61f303ab0C740eE8350918f
   address internal constant STATA_FACTORY = 0x4Afb5ADe7Bd7a670B61f303ab0C740eE8350918f;
@@ -78,8 +78,8 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0x0568130e794429D2eEBC4dafE18f25Ff1a1ed8b6
   address internal constant WETH_GATEWAY = 0x0568130e794429D2eEBC4dafE18f25Ff1a1ed8b6;
 
-  // https://sepolia.basescan.org/address/0xb939e96168a3953697B64DA8055570dee8735829
-  address internal constant UMBRELLA = 0xb939e96168a3953697B64DA8055570dee8735829;
+  // https://sepolia.basescan.org/address/0xc2B555ae014305DBF6E9dF01d7a8D50C446Fa3f1
+  address internal constant UMBRELLA = 0xc2B555ae014305DBF6E9dF01d7a8D50C446Fa3f1;
 }
 library AaveV3BaseSepoliaAssets {
   // https://sepolia.basescan.org/address/0xba50Cd2A20f6DA35D788639E581bca8d0B5d4D5f

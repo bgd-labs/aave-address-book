@@ -7033,6 +7033,12 @@
     },
     "0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc": {
       "name": "Faucet"
+    },
+    "0x6414DE3F58d54Fb90636e8393F065fDFe34Da420": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xb939e96168a3953697B64DA8055570dee8735829": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "421614": {
