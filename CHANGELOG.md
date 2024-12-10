@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.7.0](https://github.com/bgd-labs/aave-address-book/compare/v4.6.0...v4.7.0) (2024-12-10)
+
+
+### Features
+
+* add bridges ([#718](https://github.com/bgd-labs/aave-address-book/issues/718)) ([937b958](https://github.com/bgd-labs/aave-address-book/commit/937b958af85b210f186959d5785b0089a650a755))
+* add new stata tokens ([#719](https://github.com/bgd-labs/aave-address-book/issues/719)) ([cdb0105](https://github.com/bgd-labs/aave-address-book/commit/cdb0105bf754bffd0c4d127ba4f8aa57d4d61702))
+* gho libraries ([#713](https://github.com/bgd-labs/aave-address-book/issues/713)) ([c63b6ab](https://github.com/bgd-labs/aave-address-book/commit/c63b6ab77ff3416cd70bec9d3dc8d7bbc26b3fb3))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#728](https://github.com/bgd-labs/aave-address-book/issues/728)) ([d8ccf37](https://github.com/bgd-labs/aave-address-book/commit/d8ccf37fbbf820c212386116dceeca44201a90d6))
+* update aave-v3-origin with new solidity-utils lib ([#735](https://github.com/bgd-labs/aave-address-book/issues/735)) ([88c5cd4](https://github.com/bgd-labs/aave-address-book/commit/88c5cd4f65696a62b5933b507906ac75e97a46ca))
+
 ## [4.6.0](https://github.com/bgd-labs/aave-address-book/compare/v4.5.1...v4.6.0) (2024-11-21)
 
 
