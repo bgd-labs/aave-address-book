@@ -14,11 +14,11 @@ library GovernanceV3Linea {
   // https://lineascan.build/address/0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99
   address internal constant PC_DATA_HELPER = 0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99;
 
-  // https://lineascan.build/address/0x8CAdaAE6cd278c7C8FBaD5d6F55Ca6129A627E10
-  address internal constant GRANULAR_GUARDIAN = 0x8CAdaAE6cd278c7C8FBaD5d6F55Ca6129A627E10;
+  // https://lineascan.build/address/0xc1cd6faF6e9138b4e6C21d438f9ebF2bd6F6cA16
+  address internal constant GRANULAR_GUARDIAN = 0xc1cd6faF6e9138b4e6C21d438f9ebF2bd6F6cA16;
 
-  // https://lineascan.build/address/0x0BF186764D8333a938f35e5dD124a7b9b9dccDF9
-  address internal constant GOVERNANCE_GUARDIAN = 0x0BF186764D8333a938f35e5dD124a7b9b9dccDF9;
+  // https://lineascan.build/address/0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E
+  address internal constant GOVERNANCE_GUARDIAN = 0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E;
 
   // https://lineascan.build/address/0x8c2d95FE7aeB57b86961F3abB296A54f0ADb7F88
   address internal constant EXECUTOR_LVL_1 = 0x8c2d95FE7aeB57b86961F3abB296A54f0ADb7F88;
