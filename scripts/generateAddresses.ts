@@ -66,6 +66,7 @@ import {lineaAddresses} from './configs/networks/linea';
 import {ghoArbitrum} from './configs/gho/arbitrum';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
+import {governanceConfigLinea} from './configs/governance/linea';
 
 async function main() {
   // cleanup ts artifacts
@@ -95,6 +96,7 @@ async function main() {
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
       governanceConfigZkSync,
+      governanceConfigLinea,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();

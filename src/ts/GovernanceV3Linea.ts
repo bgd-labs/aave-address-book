@@ -1,0 +1,19 @@
+// https://lineascan.build/address/0x0D3f821e9741C8a8Bcac231162320251Db0cdf52
+export const CROSS_CHAIN_CONTROLLER = '0x0D3f821e9741C8a8Bcac231162320251Db0cdf52';
+
+// IPayloadsControllerCore https://lineascan.build/address/0x61308f66DEF56EffFa25C8CB5408D6dDdB450149
+export const PAYLOADS_CONTROLLER = '0x61308f66DEF56EffFa25C8CB5408D6dDdB450149';
+
+// https://lineascan.build/address/0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99
+export const PC_DATA_HELPER = '0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99';
+
+// https://lineascan.build/address/0x8CAdaAE6cd278c7C8FBaD5d6F55Ca6129A627E10
+export const GRANULAR_GUARDIAN = '0x8CAdaAE6cd278c7C8FBaD5d6F55Ca6129A627E10';
+
+// https://lineascan.build/address/0x0BF186764D8333a938f35e5dD124a7b9b9dccDF9
+export const GOVERNANCE_GUARDIAN = '0x0BF186764D8333a938f35e5dD124a7b9b9dccDF9';
+
+// https://lineascan.build/address/0x8c2d95FE7aeB57b86961F3abB296A54f0ADb7F88
+export const EXECUTOR_LVL_1 = '0x8c2d95FE7aeB57b86961F3abB296A54f0ADb7F88';
+
+export const CHAIN_ID = 59144;
