@@ -138,6 +138,24 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x8958b1C39269167527821f8c276Ef7504883f2fa',
     ORACLE: '0xb37aE8aBa6C0C1Bf2c509fc06E11aa4AF29B665A',
   },
+  GHO: {
+    decimals: 18,
+    id: 6,
+    UNDERLYING: '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
+    A_TOKEN: '0x18eFE565A5373f430e2F809b97De30335B3ad96A',
+    V_TOKEN: '0x18577F0f4A0B2Ee6F4048dB51c7acd8699F97DB8',
+    INTEREST_RATE_STRATEGY: '0x8958b1C39269167527821f8c276Ef7504883f2fa',
+    ORACLE: '0xD110cac5d8682A3b045D5524a9903E031d70FCCd',
+  },
+  rsETH: {
+    decimals: 18,
+    id: 7,
+    UNDERLYING: '0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7',
+    A_TOKEN: '0x56D919E7B25aA42F3F8a4BC77b8982048F2E84B4',
+    V_TOKEN: '0x2c2163f120cf58631368981BC16e90190Bc6C644',
+    INTEREST_RATE_STRATEGY: '0x8958b1C39269167527821f8c276Ef7504883f2fa',
+    ORACLE: '0x47F52B2e43D0386cF161e001835b03Ad49889e3b',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -157,8 +175,12 @@ export const E_MODES = {
     label: 'LRT Stablecoins main',
     collateralBitmap: '16',
     collateralAssets: ['0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'],
-    borrowableBitmap: '4',
-    borrowableAssets: ['0xdC035D45d973E3EC169d2276DDab16f1e407384F'],
+    borrowableBitmap: '76',
+    borrowableAssets: [
+      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
+    ],
     ltv: 7500,
     liquidationThreshold: 7800,
     liquidationBonus: 10750,
@@ -177,14 +199,25 @@ export const E_MODES = {
     label: 'sUSDe Stablecoins',
     collateralBitmap: '32',
     collateralAssets: ['0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'],
-    borrowableBitmap: '12',
+    borrowableBitmap: '76',
     borrowableAssets: [
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
     liquidationBonus: 10300,
+  },
+  '5': {
+    label: 'rsETH LST main',
+    collateralBitmap: '128',
+    collateralAssets: ['0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0'],
+    ltv: 9250,
+    liquidationThreshold: 9450,
+    liquidationBonus: 10100,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;
