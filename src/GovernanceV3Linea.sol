@@ -7,9 +7,9 @@ library GovernanceV3Linea {
   // https://lineascan.build/address/0x0D3f821e9741C8a8Bcac231162320251Db0cdf52
   address internal constant CROSS_CHAIN_CONTROLLER = 0x0D3f821e9741C8a8Bcac231162320251Db0cdf52;
 
-  // https://lineascan.build/address/0x61308f66DEF56EffFa25C8CB5408D6dDdB450149
+  // https://lineascan.build/address/0x3BcE23a1363728091bc57A58a226CF2940C2e074
   IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
-    IPayloadsControllerCore(0x61308f66DEF56EffFa25C8CB5408D6dDdB450149);
+    IPayloadsControllerCore(0x3BcE23a1363728091bc57A58a226CF2940C2e074);
 
   // https://lineascan.build/address/0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99
   address internal constant PC_DATA_HELPER = 0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99;
