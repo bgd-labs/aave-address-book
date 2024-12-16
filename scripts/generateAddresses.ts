@@ -64,6 +64,7 @@ import {zkSyncAddresses} from './configs/networks/zksync';
 import {ghoArbitrum} from './configs/gho/arbitrum';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
+import {rpcResponseCache} from './clients';
 
 async function main() {
   // cleanup ts artifacts
@@ -184,6 +185,7 @@ async function main() {
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
   console.log('✅ Generation finished');
+  console.log(rpcResponseCache);
 }
 
 main();
