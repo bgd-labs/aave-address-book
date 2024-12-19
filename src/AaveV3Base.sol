@@ -250,6 +250,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
   address internal constant cbBTC_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0xeaCFa728623d0958e3C386bACed79138BCAfC50F
+  address internal constant cbBTC_STATIC_A_TOKEN = 0xeaCFa728623d0958e3C386bACed79138BCAfC50F;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
