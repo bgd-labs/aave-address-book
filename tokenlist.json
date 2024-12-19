@@ -4163,6 +4163,20 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0xeaCFa728623d0958e3C386bACed79138BCAfC50F",
+      "name": "Static Aave Base cbBTC",
+      "decimals": 8,
+      "symbol": "stataBascbBTC",
+      "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statacbbtc.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "underlyingAToken": "0xBdb9300b7CDE636d9cD4AFF00f6F009fFBBc8EE6"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -6890,6 +6904,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 64 },
-  "timestamp": "2024-12-16T00:15:18.778Z"
+  "version": { "major": 3, "minor": 0, "patch": 65 },
+  "timestamp": "2024-12-19T00:14:21.703Z"
 }
