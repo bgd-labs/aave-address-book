@@ -740,6 +740,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99
   address internal constant USDe_STATIC_A_TOKEN = 0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99;
 
+  // https://etherscan.io/address/0x5F9D59db355b4A60501544637b00e94082cA575b
+  address internal constant USDe_STATA_TOKEN = 0x5F9D59db355b4A60501544637b00e94082cA575b;
+
   // https://etherscan.io/address/0xA35b1B31Ce002FBF2058D22F30f95D405200A15b
   address internal constant ETHx_UNDERLYING = 0xA35b1B31Ce002FBF2058D22F30f95D405200A15b;
 
