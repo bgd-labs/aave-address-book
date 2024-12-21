@@ -226,6 +226,9 @@ library AaveV3EthereumLidoAssets {
   // https://etherscan.io/address/0x8958b1C39269167527821f8c276Ef7504883f2fa
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0x8958b1C39269167527821f8c276Ef7504883f2fa;
 
+  // https://etherscan.io/address/0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C
+  address internal constant GHO_STATA_TOKEN = 0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C;
+
   // https://etherscan.io/address/0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7
   address internal constant rsETH_UNDERLYING = 0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7;
 
