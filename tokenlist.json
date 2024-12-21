@@ -6221,6 +6221,26 @@
       }
     },
     {
+      "chainId": 534352,
+      "address": "0xd29687c813D741E2F938F4aC377128810E217b1b",
+      "name": "Scroll",
+      "decimals": 18,
+      "symbol": "SCR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 534352,
+      "address": "0x25718130C2a8eb94e2e1FAFB5f1cDd4b459aCf64",
+      "name": "Aave Scroll SCR",
+      "decimals": 18,
+      "symbol": "aScrSCR",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
+        "underlying": "0xd29687c813D741E2F938F4aC377128810E217b1b"
+      }
+    },
+    {
       "chainId": 324,
       "address": "0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4",
       "name": "USDC",
@@ -6854,6 +6874,20 @@
     },
     {
       "chainId": 1,
+      "address": "0xC71Ea051a5F82c67ADcF634c36FFE6334793D24C",
+      "name": "Wrapped Aave Ethereum Lido GHO",
+      "decimals": 18,
+      "symbol": "waEthLidoGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
+        "underlying": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+        "underlyingAToken": "0x18eFE565A5373f430e2F809b97De30335B3ad96A"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x56D919E7B25aA42F3F8a4BC77b8982048F2E84B4",
       "name": "Aave Ethereum Lido rsETH",
       "decimals": 18,
@@ -6918,6 +6952,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 66 },
-  "timestamp": "2024-12-20T00:13:29.054Z"
+  "version": { "major": 3, "minor": 0, "patch": 67 },
+  "timestamp": "2024-12-21T00:13:16.966Z"
 }
