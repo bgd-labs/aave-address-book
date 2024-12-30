@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.7.3](https://github.com/bgd-labs/aave-address-book/compare/v4.7.2...v4.7.3) (2024-12-30)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#753](https://github.com/bgd-labs/aave-address-book/issues/753)) ([139eef9](https://github.com/bgd-labs/aave-address-book/commit/139eef947251bfe7853014bd365c9592af0faa78))
+* **cache:** automated cache update - updated addresses ([#760](https://github.com/bgd-labs/aave-address-book/issues/760)) ([774e385](https://github.com/bgd-labs/aave-address-book/commit/774e3853a8fc11f4e6721b3045bb72a106b3f038))
+* update list of verified contracts ([#765](https://github.com/bgd-labs/aave-address-book/issues/765)) ([609893c](https://github.com/bgd-labs/aave-address-book/commit/609893cb4866608edab9610016ba9469adea6ba7))
+* Update ParaSwapRepayAdapter in Polygon V2 ([#754](https://github.com/bgd-labs/aave-address-book/issues/754)) ([b348370](https://github.com/bgd-labs/aave-address-book/commit/b3483708e95e8a14e270826f2220d6f2d1cc2928))
+
 ## [4.7.2](https://github.com/bgd-labs/aave-address-book/compare/v4.7.1...v4.7.2) (2024-12-20)
 
 
