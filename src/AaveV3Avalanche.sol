@@ -355,6 +355,24 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0x34d768cc830c32DcD743321c09A2A702651bF9a2
   address internal constant BTCb_STATIC_A_TOKEN = 0x34d768cc830c32DcD743321c09A2A702651bF9a2;
+
+  // https://snowtrace.io/address/0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a
+  address internal constant AUSD_UNDERLYING = 0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a;
+
+  uint8 internal constant AUSD_DECIMALS = 6;
+
+  // https://snowtrace.io/address/0x724dc807b04555b71ed48a6896b6F41593b8C637
+  address internal constant AUSD_A_TOKEN = 0x724dc807b04555b71ed48a6896b6F41593b8C637;
+
+  // https://snowtrace.io/address/0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a
+  address internal constant AUSD_V_TOKEN = 0xDC1fad70953Bb3918592b6fCc374fe05F5811B6a;
+
+  // https://snowtrace.io/address/0x83f32c0882B12Ef16214c417efF11FD9e764bf34
+  address internal constant AUSD_ORACLE = 0x83f32c0882B12Ef16214c417efF11FD9e764bf34;
+
+  // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
+  address internal constant AUSD_INTEREST_RATE_STRATEGY =
+    0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da;
 }
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;

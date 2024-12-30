@@ -2654,6 +2654,20 @@
     },
     {
       "chainId": 1,
+      "address": "0x867b0CDC4B39a19945E616c29639b0390b39db3B",
+      "name": "Static Aave Ethereum weETH",
+      "decimals": 18,
+      "symbol": "stataEthweETH",
+      "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweeth.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+        "underlyingAToken": "0xBdfa7b7893081B35Fb54027489e2Bc7A38275129"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38",
       "name": "Staked ETH",
       "decimals": 18,
@@ -3936,6 +3950,26 @@
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
         "underlyingAToken": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+      "name": "AUSD",
+      "decimals": 6,
+      "symbol": "AUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 43114,
+      "address": "0x724dc807b04555b71ed48a6896b6F41593b8C637",
+      "name": "Aave Avalanche AUSD",
+      "decimals": 6,
+      "symbol": "aAvaAUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a"
       }
     },
     {
@@ -6952,6 +6986,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 67 },
-  "timestamp": "2024-12-21T00:13:16.966Z"
+  "version": { "major": 3, "minor": 0, "patch": 68 },
+  "timestamp": "2024-12-30T00:14:07.753Z"
 }
