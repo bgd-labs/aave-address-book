@@ -698,6 +698,9 @@ library AaveV3EthereumAssets {
   address internal constant weETH_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 
+  // https://etherscan.io/address/0x867b0CDC4B39a19945E616c29639b0390b39db3B
+  address internal constant weETH_STATIC_A_TOKEN = 0x867b0CDC4B39a19945E616c29639b0390b39db3B;
+
   // https://etherscan.io/address/0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38
   address internal constant osETH_UNDERLYING = 0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38;
 
