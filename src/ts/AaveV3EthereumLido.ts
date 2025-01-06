@@ -200,15 +200,14 @@ export const E_MODES = {
     label: 'sUSDe Stablecoins',
     collateralBitmap: '32',
     collateralAssets: ['0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'],
-    borrowableBitmap: '76',
+    borrowableBitmap: '72',
     borrowableAssets: [
-      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
       '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10300,
+    liquidationBonus: 10400,
   },
   '5': {
     label: 'rsETH LST main',
