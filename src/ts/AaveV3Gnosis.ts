@@ -190,5 +190,15 @@ export const E_MODES = {
     liquidationThreshold: 9300,
     liquidationBonus: 10100,
   },
+  '2': {
+    label: 'sDAI / EURe',
+    collateralBitmap: '64',
+    collateralAssets: ['0xaf204776c7245bF4147c2612BF6e5972Ee483701'],
+    borrowableBitmap: '32',
+    borrowableAssets: ['0xcB444e90D8198415266c6a2724b7900fb12FC56E'],
+    ltv: 8500,
+    liquidationThreshold: 8750,
+    liquidationBonus: 10500,
+  },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;
