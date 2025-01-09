@@ -5722,6 +5722,32 @@
       "name": "AaveArbEthERC20Bridge"
     }
   },
+  "42220": {
+    "0x50F4dAA86F3c747ce15C3C38bD0383200B61d6Dd": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x91b21900E91CD302EBeD05E45D8f270ddAED944d": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8657Cd5a0957e8C5BE15c69C67078b5d730D720a": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xbE815420A63A413BB8D508d8022C0FF150Ea7C39": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x1dF462e2712496373A347f8ad10802a5E95f053D": {
+      "name": "Executor"
+    },
+    "0xAe13e4DA0952f0B8fE04E21df53716fCF799a923": {
+      "name": "TransparentProxyFactory"
+    },
+    "0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0": {
+      "name": "ProxyAdmin"
+    },
+    "0x38BC0ED9d90Bc2309A436f4ED6Ca6Bc4D5C0DFA6": {
+      "name": "GnosisSafeProxy"
+    }
+  },
   "43113": {
     "0x0668EDE013c1c475724523409b8B6bE633469585": {
       "name": "AaveProtocolDataProvider"

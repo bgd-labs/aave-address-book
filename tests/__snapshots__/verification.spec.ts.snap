@@ -17,26 +17,6 @@ exports[`verification > should have all contracts verified except for the known 
       "chainId": 42220,
       "path": [
         "GovernanceV3Celo",
-        "CROSS_CHAIN_CONTROLLER",
-      ],
-      "value": "0x50F4dAA86F3c747ce15C3C38bD0383200B61d6Dd",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "GovernanceV3Celo",
-        "CL_EMERGENCY_ORACLE",
-      ],
-      "value": "0x91b21900E91CD302EBeD05E45D8f270ddAED944d",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "GovernanceV3Celo",
         "PAYLOADS_CONTROLLER",
       ],
       "value": "0xE48E10834C04E394A04BF22a565D063D40b9FA42",
@@ -47,39 +27,9 @@ exports[`verification > should have all contracts verified except for the known 
       "chainId": 42220,
       "path": [
         "GovernanceV3Celo",
-        "PC_DATA_HELPER",
-      ],
-      "value": "0x8657Cd5a0957e8C5BE15c69C67078b5d730D720a",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "GovernanceV3Celo",
-        "GRANULAR_GUARDIAN",
-      ],
-      "value": "0xbE815420A63A413BB8D508d8022C0FF150Ea7C39",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "GovernanceV3Celo",
         "GOVERNANCE_GUARDIAN",
       ],
       "value": "0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "GovernanceV3Celo",
-        "EXECUTOR_LVL_1",
-      ],
-      "value": "0x1dF462e2712496373A347f8ad10802a5E95f053D",
     },
   },
   {
@@ -110,36 +60,6 @@ exports[`verification > should have all contracts verified except for the known 
         "UI_INCENTIVE_DATA_PROVIDER",
       ],
       "value": "0x11979886A6dBAE27D7a72c49fCF3F23240D647bF",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "MiscCelo",
-        "TRANSPARENT_PROXY_FACTORY",
-      ],
-      "value": "0xAe13e4DA0952f0B8fE04E21df53716fCF799a923",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "MiscCelo",
-        "PROXY_ADMIN",
-      ],
-      "value": "0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "MiscCelo",
-        "PROTOCOL_GUARDIAN",
-      ],
-      "value": "0x38BC0ED9d90Bc2309A436f4ED6Ca6Bc4D5C0DFA6",
     },
   },
 ]
