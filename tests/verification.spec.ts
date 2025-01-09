@@ -106,7 +106,7 @@ describe(
       // used to prevent double checking the same address
       const checked = new Set<string>();
       for (const item of addressesToCheck) {
-        const hasBeenCheckedBefore = verified[item.chainId][item.value];
+        const hasBeenCheckedBefore = verified[item.chainId]?.[item.value];
         if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
           const key = `${item.chainId}-${item.value}`;
           if (checked.has(key)) continue;
