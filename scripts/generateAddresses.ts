@@ -41,6 +41,7 @@ import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
+import {governanceConfigCelo} from './configs/governance/celo';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
 import {baseAddresses, baseSepoliaAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
@@ -53,6 +54,7 @@ import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/op
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
+import {celoAddresses} from './configs/networks/celo';
 import {scrollAddresses} from './configs/networks/scroll';
 import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
@@ -93,6 +95,7 @@ async function main() {
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
       governanceConfigZkSync,
+      governanceConfigCelo,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -154,6 +157,7 @@ async function main() {
     metisAddresses,
     gnosisAddresses,
     bnbAddresses,
+    celoAddresses,
     scrollAddresses,
     polygonZkEvmAddresses,
     sepoliaAddresses,

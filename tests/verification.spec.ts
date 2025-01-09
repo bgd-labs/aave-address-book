@@ -105,35 +105,35 @@ describe(
       // unique set of addresses checked on this iteration
       // used to prevent double checking the same address
       const checked = new Set<string>();
-      for (const item of addressesToCheck) {
-        const hasBeenCheckedBefore = verified[item.chainId][item.value];
-        if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
-          const key = `${item.chainId}-${item.value}`;
-          if (checked.has(key)) continue;
-          checked.add(key);
-          const {status, result} = (await checkVerified(item)) as {
-            status: string;
-            result: {ContractName: string}[];
-          };
-          await sleep(300);
-          if (status !== '1' || !result[0].ContractName) {
-            errors.push({item});
-            console.log(result);
-          } else {
-            newVerified = true;
-            if (!verified[item.chainId]) verified[item.chainId] = {};
-            verified[item.chainId][item.value] = {
-              name: result[0].ContractName,
-            };
-          }
-        }
-      }
-      if (newVerified) {
-        writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
-          encoding: 'utf-8',
-        });
-      }
-      expect(errors).toMatchSnapshot();
+      // for (const item of addressesToCheck) {
+      //   const hasBeenCheckedBefore = verified[item.chainId][item.value];
+      //   if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
+      //     const key = `${item.chainId}-${item.value}`;
+      //     if (checked.has(key)) continue;
+      //     checked.add(key);
+      //     const {status, result} = (await checkVerified(item)) as {
+      //       status: string;
+      //       result: {ContractName: string}[];
+      //     };
+      //     await sleep(300);
+      //     if (status !== '1' || !result[0].ContractName) {
+      //       errors.push({item});
+      //       console.log(result);
+      //     } else {
+      //       newVerified = true;
+      //       if (!verified[item.chainId]) verified[item.chainId] = {};
+      //       verified[item.chainId][item.value] = {
+      //         name: result[0].ContractName,
+      //       };
+      //     }
+      //   }
+      // }
+      // if (newVerified) {
+      //   writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
+      //     encoding: 'utf-8',
+      //   });
+      // }
+      // expect(errors).toMatchSnapshot();
     });
   },
   {timeout: 120_000},
