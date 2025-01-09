@@ -3958,7 +3958,8 @@
       "name": "AUSD",
       "decimals": 6,
       "symbol": "AUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausd.svg"
     },
     {
       "chainId": 43114,
@@ -3967,6 +3968,7 @@
       "decimals": 6,
       "symbol": "aAvaAUSD",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aausd.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a"
@@ -6260,7 +6262,8 @@
       "name": "Scroll",
       "decimals": 18,
       "symbol": "SCR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/scr.svg"
     },
     {
       "chainId": 534352,
@@ -6269,6 +6272,7 @@
       "decimals": 18,
       "symbol": "aScrSCR",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ascr.svg",
       "extensions": {
         "pool": "0x11fCfe756c05AD438e312a7fd934381537D3cFfe",
         "underlying": "0xd29687c813D741E2F938F4aC377128810E217b1b"
@@ -6986,6 +6990,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 70 },
-  "timestamp": "2025-01-09T14:07:46.811Z"
+  "version": { "major": 3, "minor": 0, "patch": 71 },
+  "timestamp": "2025-01-09T14:30:21.377Z"
 }
