@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.7.5](https://github.com/bgd-labs/aave-address-book/compare/v4.7.4...v4.7.5) (2025-01-10)
+
+
+### Bug Fixes
+
+* use non ipfs aave icon ([#772](https://github.com/bgd-labs/aave-address-book/issues/772)) ([f9d2f78](https://github.com/bgd-labs/aave-address-book/commit/f9d2f78ab6d2d5f7debad4fedff72ce9bd3bad6b))
+
 ## [4.7.4](https://github.com/bgd-labs/aave-address-book/compare/v4.7.3...v4.7.4) (2025-01-09)
 
 
