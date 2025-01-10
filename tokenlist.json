@@ -1,6 +1,6 @@
 {
   "name": "Aave token list",
-  "logoURI": "ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1",
+  "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg",
   "keywords": ["audited", "verified", "aave"],
   "tags": {
     "underlying": {
@@ -6990,6 +6990,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 69 },
+  "version": { "major": 3, "minor": 0, "patch": 70 },
   "timestamp": "2024-12-30T12:43:43.000Z"
 }
