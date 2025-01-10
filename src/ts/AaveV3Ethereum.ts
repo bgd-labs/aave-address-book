@@ -503,7 +503,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10300,
+    liquidationBonus: 10400,
   },
   '3': {
     label: 'rsETH LST main',
