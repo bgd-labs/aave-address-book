@@ -49,19 +49,11 @@ export const Search = ({
 
   const performSearch = useCallback(
     (search: string) => {
-      const searchWords = search.trim().split(/\s+/);
-
-      let results = [];
-      for (let idx = 0; idx < searchPaths.length; idx++) {
-        const path = searchPaths[idx];
-        const isMatch = searchWords.every((word) => {
-          const idxs = uf.filter([path], word);
-          return idxs && idxs.length > 0;
-        });
-
-        if (isMatch) {
-          results.push(addresses[idx]);
-        }
+      let [matches, idx, order] = uf.search(searchPaths, search, 10);
+      console.log(idx);
+      let results: SearchItem[] = [];
+      if (order && matches) {
+        results = order.map((r) => addresses[matches[r]]);
       }
 
       setResults(results.slice(0, SEARCH_LIMIT));
@@ -168,7 +160,9 @@ export const Search = ({
           <SearchResult
             key={result.searchPath}
             result={result}
-            ref={(el) => (refs.current[index] = el) as any}
+            ref={(el) => {
+              (refs.current[index] = el) as any;
+            }}
             tabIndex={index === activeIndex ? 0 : -1}
           />
         ))}
