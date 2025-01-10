@@ -49,7 +49,11 @@ export const Search = ({
 
   const performSearch = useCallback(
     (search: string) => {
-      let [matches, idx, order] = uf.search(searchPaths, search, 10);
+      let [matches, idx, order] = uf.search(
+        searchPaths.map((path) => path.replace(/_/g, '')),
+        search,
+        10,
+      );
       console.log(idx);
       let results: SearchItem[] = [];
       if (order && matches) {
