@@ -7,9 +7,44 @@ import { type SearchItem } from '@/types';
 import { Box } from './Box';
 import { SearchResult } from './SearchResult';
 import uFuzzy from '@leeoniya/ufuzzy';
+import { ChainList } from '@bgd-labs/rpc-env';
 
 const SEARCH_LIMIT = 100;
 const DEBOUNCE_TIME = 100;
+
+const VERSION_PRIORITY: { [key: string]: number } = {
+  AaveV3: 1,
+  AaveV2: 2,
+  AaveV1: 3,
+};
+
+function getVersionPriority(name: string): number {
+  for (const version in VERSION_PRIORITY) {
+    if (name.startsWith(version)) {
+      return VERSION_PRIORITY[version];
+    }
+  }
+  return 4;
+}
+
+function comp(a: SearchItem, b: SearchItem) {
+  const aInProduction = !ChainList[a.chainId as keyof typeof ChainList].testnet;
+  const bInProduction = !ChainList[b.chainId as keyof typeof ChainList].testnet;
+
+  if (aInProduction && !bInProduction) {
+    return -1;
+  } else if (!aInProduction && bInProduction) {
+    return 1;
+  }
+
+  const aVersionPriority = getVersionPriority(a.searchPath);
+  const bVersionPriority = getVersionPriority(b.searchPath);
+
+  if (aVersionPriority !== bVersionPriority) {
+    return aVersionPriority - bVersionPriority;
+  }
+  return 0;
+}
 
 const getResultText = (results: any[], limit: number) => {
   const resultCount = results.length;
@@ -49,22 +84,20 @@ export const Search = ({
 
   const performSearch = useCallback(
     (search: string) => {
-      const searchWords = search.trim().split(/\s+/);
-
-      let results = [];
-      for (let idx = 0; idx < searchPaths.length; idx++) {
-        const path = searchPaths[idx];
-        const isMatch = searchWords.every((word) => {
-          const idxs = uf.filter([path], word);
-          return idxs && idxs.length > 0;
-        });
-
-        if (isMatch) {
-          results.push(addresses[idx]);
-        }
+      let [matches, idx, order] = uf.search(
+        searchPaths.map((path) => path.replace(/_/g, '')),
+        search,
+        10,
+      );
+      console.log(idx);
+      let results: SearchItem[] = [];
+      if (order && matches) {
+        results = order
+          .slice(0, SEARCH_LIMIT)
+          .map((r) => addresses[matches[r]]);
       }
 
-      setResults(results.slice(0, SEARCH_LIMIT));
+      setResults(results.sort(comp));
     },
     [searchPaths, addresses, uf],
   );
@@ -168,7 +201,9 @@ export const Search = ({
           <SearchResult
             key={result.searchPath}
             result={result}
-            ref={(el) => (refs.current[index] = el) as any}
+            ref={(el) => {
+              (refs.current[index] = el) as any;
+            }}
             tabIndex={index === activeIndex ? 0 : -1}
           />
         ))}
