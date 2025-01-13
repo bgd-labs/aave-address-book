@@ -49,22 +49,28 @@ export const Search = ({
 
   const performSearch = useCallback(
     (search: string) => {
-      const searchWords = search.trim().split(/\s+/);
+      const searchTerm = search.trim().toLowerCase();
 
-      let results = [];
-      for (let idx = 0; idx < searchPaths.length; idx++) {
-        const path = searchPaths[idx];
-        const isMatch = searchWords.every((word) => {
-          const idxs = uf.filter([path], word);
-          return idxs && idxs.length > 0;
-        });
+      const exactMatches = searchPaths
+        .map((path, idx) => ({ path, idx }))
+        .filter(({ path }) => path.toLowerCase().includes(searchTerm))
+        .map(({ idx }) => addresses[idx]);
 
-        if (isMatch) {
-          results.push(addresses[idx]);
-        }
-      }
+      const searchWords = searchTerm.split(/\s+/);
+      const fuzzyMatches = searchPaths
+        .map((path, idx) => ({ path, idx }))
+        .filter(({ path }) => {
+          const lowPath = path.toLowerCase();
+          if (lowPath.includes(searchTerm)) return false;
 
-      setResults(results.slice(0, SEARCH_LIMIT));
+          return searchWords.every((word) => {
+            const idxs = uf.filter([path], word);
+            return idxs && idxs.length > 0;
+          });
+        })
+        .map(({ idx }) => addresses[idx]);
+
+      setResults([...exactMatches, ...fuzzyMatches].slice(0, SEARCH_LIMIT));
     },
     [searchPaths, addresses, uf],
   );
