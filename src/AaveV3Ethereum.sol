@@ -680,6 +680,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152
   address internal constant PYUSD_STATIC_A_TOKEN = 0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152;
 
+  // https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6
+  address internal constant PYUSD_STATA_TOKEN = 0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6;
+
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
   address internal constant weETH_UNDERLYING = 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee;
 
