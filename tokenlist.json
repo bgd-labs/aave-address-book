@@ -2632,6 +2632,20 @@
     },
     {
       "chainId": 1,
+      "address": "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6",
+      "name": "Wrapped Aave Ethereum PYUSD",
+      "decimals": 6,
+      "symbol": "waEthPYUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statapyusd.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+        "underlyingAToken": "0x0C0d01AbF3e6aDfcA0989eBbA9d6e85dD58EaB1E"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
       "name": "Wrapped eETH",
       "decimals": 18,
@@ -6990,6 +7004,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 70 },
-  "timestamp": "2024-12-30T12:43:43.000Z"
+  "version": { "major": 3, "minor": 0, "patch": 71 },
+  "timestamp": "2025-01-15T00:12:57.878Z"
 }
