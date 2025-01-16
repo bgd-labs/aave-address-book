@@ -164,6 +164,15 @@ export const ASSETS = {
     ORACLE: '0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F',
     STATIC_A_TOKEN: '0xeaCFa728623d0958e3C386bACed79138BCAfC50F',
   },
+  ezETH: {
+    decimals: 18,
+    id: 7,
+    UNDERLYING: '0x2416092f143378750bb29b79eD961ab195CcEea5',
+    A_TOKEN: '0xDD5745756C2de109183c6B5bB886F9207bEF114D',
+    V_TOKEN: '0xbc4f5631f2843488792e4F1660d0A51Ba489bdBd',
+    INTEREST_RATE_STRATEGY: '0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5',
+    ORACLE: '0x438e24f5FCDC1A66ecb25D19B5543e0Cb91A44D4',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -185,6 +194,26 @@ export const E_MODES = {
     ltv: 9000,
     liquidationThreshold: 9300,
     liquidationBonus: 10200,
+  },
+  '2': {
+    label: 'ezETH wstETH',
+    collateralBitmap: '128',
+    collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
+    borrowableBitmap: '8',
+    borrowableAssets: ['0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'],
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+  '3': {
+    label: 'ezETH Stablecoins',
+    collateralBitmap: '128',
+    collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
+    borrowableBitmap: '16',
+    borrowableAssets: ['0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913'],
+    ltv: 7200,
+    liquidationThreshold: 7500,
+    liquidationBonus: 10750,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;

@@ -4241,6 +4241,28 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Renzo Restaked ETH",
+      "decimals": 18,
+      "symbol": "ezETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
+    },
+    {
+      "chainId": 8453,
+      "address": "0xDD5745756C2de109183c6B5bB886F9207bEF114D",
+      "name": "Aave Base ezETH",
+      "decimals": 18,
+      "symbol": "aBasezETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aezeth.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x2416092f143378750bb29b79eD961ab195CcEea5"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -5637,6 +5659,28 @@
       }
     },
     {
+      "chainId": 42161,
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Renzo Restaked ETH",
+      "decimals": 18,
+      "symbol": "ezETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
+    },
+    {
+      "chainId": 42161,
+      "address": "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9",
+      "name": "Aave Arbitrum ezETH",
+      "decimals": 18,
+      "symbol": "aArbezETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aezeth.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x2416092f143378750bb29b79eD961ab195CcEea5"
+      }
+    },
+    {
       "chainId": 10,
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
@@ -7004,6 +7048,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 71 },
-  "timestamp": "2025-01-15T00:12:57.878Z"
+  "version": { "major": 3, "minor": 0, "patch": 72 },
+  "timestamp": "2025-01-16T00:13:24.539Z"
 }
