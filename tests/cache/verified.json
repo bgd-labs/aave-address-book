@@ -5205,6 +5205,18 @@
     },
     "0xeaCFa728623d0958e3C386bACed79138BCAfC50F": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x2416092f143378750bb29b79eD961ab195CcEea5": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDD5745756C2de109183c6B5bB886F9207bEF114D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xbc4f5631f2843488792e4F1660d0A51Ba489bdBd": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x438e24f5FCDC1A66ecb25D19B5543e0Cb91A44D4": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "42161": {
@@ -5720,6 +5732,18 @@
     },
     "0x0335ffa9af5CE05590d6C9A75B645470e07744a9": {
       "name": "AaveArbEthERC20Bridge"
+    },
+    "0x2416092f143378750bb29b79eD961ab195CcEea5": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1fFD28689DA7d0148ff0fCB669e9f9f0Fc13a219": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8Ed37B72300683c0482A595bfa80fFb793874b15": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "43113": {
