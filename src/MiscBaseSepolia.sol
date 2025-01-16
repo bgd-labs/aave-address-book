@@ -3,12 +3,15 @@
 pragma solidity >=0.6.0;
 
 library MiscBaseSepolia {
-  // https://sepolia.basescan.org/address/0xd1B3E25fD7C8AE7CADDC6F71b461b79CD4ddcFa3
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xd1B3E25fD7C8AE7CADDC6F71b461b79CD4ddcFa3;
+  // https://sepolia.basescan.org/address/0x95F99D1695c866FEb16657cCA8E91437a50D2a5e
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0x95F99D1695c866FEb16657cCA8E91437a50D2a5e;
 
-  // https://sepolia.basescan.org/address/0xbeCE3Cb857644b44Bb44084f9AfE784473ADb17B
-  address internal constant PROXY_ADMIN = 0xbeCE3Cb857644b44Bb44084f9AfE784473ADb17B;
+  // https://sepolia.basescan.org/address/0x6CBc6928Ad317F60E8880C43479850F2190F2a0B
+  address internal constant PROXY_ADMIN = 0x6CBc6928Ad317F60E8880C43479850F2190F2a0B;
 
   // https://sepolia.basescan.org/address/0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb
   address internal constant GHO_TOKEN = 0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb;
+
+  // https://sepolia.basescan.org/address/0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc
+  address internal constant FAUCET = 0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc;
 }

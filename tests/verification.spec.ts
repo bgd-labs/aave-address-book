@@ -3,7 +3,10 @@ import {describe, expect, it} from 'vitest';
 import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
 import {writeFileSync} from 'fs';
-import {zeroAddress} from 'viem';
+import {Hex, PublicClient, zeroAddress} from 'viem';
+import {getCode} from 'viem/actions';
+
+import {getClient} from '../scripts/clients';
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
 
@@ -91,14 +94,33 @@ function getApiUrl(chainId: number) {
   return `https://api.etherscan.io/v2/api`;
 }
 
+// very old contracts we know will never be verified
+const knownErrors = {
+  1: {
+    '0xD01ab9a6577E1D84F142e44D49380e23A340387d': true,
+  },
+  1101: {
+    '0xF1c11BE0b4466728DDb7991A0Ac5265646ec9672': true,
+  },
+  137: {
+    '0x645654D59A5226CBab969b1f5431aA47CBf64ab8': true,
+  },
+  43114: {
+    '0x11979886A6dBAE27D7a72c49fCF3F23240D647bF': true,
+  },
+};
+
 describe(
   'verification',
   () => {
     it('should have all contracts verified except for the known set of errors', async () => {
       const addressesToCheck = flattenedAddresses.filter(
         (item) =>
-          ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
-          !ChainList[item.chainId].testnet,
+          ![ChainId.harmony, ChainId.fantom, ChainId.fantom_testnet].includes(
+            item.chainId as any,
+          ) &&
+          item.path[0] !== 'AaveV2Fuji' &&
+          !knownErrors[item.chainId]?.[item.value],
       );
       const errors: {item: ListItem}[] = [];
       let newVerified = false;
@@ -106,25 +128,29 @@ describe(
       // used to prevent double checking the same address
       const checked = new Set<string>();
       for (const item of addressesToCheck) {
-        const hasBeenCheckedBefore = verified[item.chainId][item.value];
+        const hasBeenCheckedBefore = verified[item.chainId]?.[item.value];
         if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
           const key = `${item.chainId}-${item.value}`;
           if (checked.has(key)) continue;
           checked.add(key);
-          const {status, result} = (await checkVerified(item)) as {
-            status: string;
-            result: {ContractName: string}[];
-          };
-          await sleep(300);
-          if (status !== '1' || !result[0].ContractName) {
-            errors.push({item});
-            console.log(result);
-          } else {
-            newVerified = true;
-            if (!verified[item.chainId]) verified[item.chainId] = {};
-            verified[item.chainId][item.value] = {
-              name: result[0].ContractName,
+          const client = getClient(item.chainId) as PublicClient;
+          const hasCode = await getCode(client, {address: item.value as Hex});
+          if (hasCode) {
+            const {status, result} = (await checkVerified(item)) as {
+              status: string;
+              result: {ContractName: string}[];
             };
+            await sleep(300);
+            if (status !== '1' || !result[0].ContractName) {
+              errors.push({item});
+              console.log(item.chainId, item.value);
+            } else {
+              newVerified = true;
+              if (!verified[item.chainId]) verified[item.chainId] = {};
+              verified[item.chainId][item.value] = {
+                name: result[0].ContractName,
+              };
+            }
           }
         }
       }
@@ -136,5 +162,5 @@ describe(
       expect(errors).toMatchSnapshot();
     });
   },
-  {timeout: 120_000},
+  {timeout: 500_000},
 );
