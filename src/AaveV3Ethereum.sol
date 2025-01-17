@@ -680,6 +680,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152
   address internal constant PYUSD_STATIC_A_TOKEN = 0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152;
 
+  // https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6
+  address internal constant PYUSD_STATA_TOKEN = 0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6;
+
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
   address internal constant weETH_UNDERLYING = 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee;
 
@@ -697,6 +700,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant weETH_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0x867b0CDC4B39a19945E616c29639b0390b39db3B
+  address internal constant weETH_STATIC_A_TOKEN = 0x867b0CDC4B39a19945E616c29639b0390b39db3B;
 
   // https://etherscan.io/address/0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38
   address internal constant osETH_UNDERLYING = 0xf1C9acDc66974dFB6dEcB12aA385b9cD01190E38;
@@ -739,6 +745,9 @@ library AaveV3EthereumAssets {
 
   // https://etherscan.io/address/0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99
   address internal constant USDe_STATIC_A_TOKEN = 0x46e5d6A33C8Bd8eD38F3c95991C78C9B2FF3bC99;
+
+  // https://etherscan.io/address/0x5F9D59db355b4A60501544637b00e94082cA575b
+  address internal constant USDe_STATA_TOKEN = 0x5F9D59db355b4A60501544637b00e94082cA575b;
 
   // https://etherscan.io/address/0xA35b1B31Ce002FBF2058D22F30f95D405200A15b
   address internal constant ETHx_UNDERLYING = 0xA35b1B31Ce002FBF2058D22F30f95D405200A15b;

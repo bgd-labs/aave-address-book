@@ -171,6 +171,23 @@ library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc
   address internal constant weETH_INTEREST_RATE_STRATEGY =
     0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc;
+
+  // https://scrollscan.com/address/0xd29687c813D741E2F938F4aC377128810E217b1b
+  address internal constant SCR_UNDERLYING = 0xd29687c813D741E2F938F4aC377128810E217b1b;
+
+  uint8 internal constant SCR_DECIMALS = 18;
+
+  // https://scrollscan.com/address/0x25718130C2a8eb94e2e1FAFB5f1cDd4b459aCf64
+  address internal constant SCR_A_TOKEN = 0x25718130C2a8eb94e2e1FAFB5f1cDd4b459aCf64;
+
+  // https://scrollscan.com/address/0xFFbA405BBF25B2e6C454d18165F2fd8786858c6B
+  address internal constant SCR_V_TOKEN = 0xFFbA405BBF25B2e6C454d18165F2fd8786858c6B;
+
+  // https://scrollscan.com/address/0x26f6F7C468EE309115d19Aa2055db5A74F8cE7A5
+  address internal constant SCR_ORACLE = 0x26f6F7C468EE309115d19Aa2055db5A74F8cE7A5;
+
+  // https://scrollscan.com/address/0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc
+  address internal constant SCR_INTEREST_RATE_STRATEGY = 0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc;
 }
 library AaveV3ScrollEModes {
   uint8 internal constant NONE = 0;

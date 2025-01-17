@@ -284,6 +284,8 @@ library AaveV3GnosisEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant ETH_CORRELATED = 1;
+
+  uint8 internal constant SDAI_EURE = 2;
 }
 library AaveV3GnosisExternalLibraries {
   // https://gnosisscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

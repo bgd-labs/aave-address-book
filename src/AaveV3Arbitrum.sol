@@ -459,6 +459,24 @@ library AaveV3ArbitrumAssets {
 
   // https://arbiscan.io/address/0xD9FBA68D89178e3538e708939332c79efC540179
   address internal constant GHO_STATIC_A_TOKEN = 0xD9FBA68D89178e3538e708939332c79efC540179;
+
+  // https://arbiscan.io/address/0x2416092f143378750bb29b79eD961ab195CcEea5
+  address internal constant ezETH_UNDERLYING = 0x2416092f143378750bb29b79eD961ab195CcEea5;
+
+  uint8 internal constant ezETH_DECIMALS = 18;
+
+  // https://arbiscan.io/address/0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9
+  address internal constant ezETH_A_TOKEN = 0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9;
+
+  // https://arbiscan.io/address/0x1fFD28689DA7d0148ff0fCB669e9f9f0Fc13a219
+  address internal constant ezETH_V_TOKEN = 0x1fFD28689DA7d0148ff0fCB669e9f9f0Fc13a219;
+
+  // https://arbiscan.io/address/0x8Ed37B72300683c0482A595bfa80fFb793874b15
+  address internal constant ezETH_ORACLE = 0x8Ed37B72300683c0482A595bfa80fFb793874b15;
+
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
+  address internal constant ezETH_INTEREST_RATE_STRATEGY =
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 }
 library AaveV3ArbitrumEModes {
   uint8 internal constant NONE = 0;
@@ -466,6 +484,10 @@ library AaveV3ArbitrumEModes {
   uint8 internal constant STABLECOINS = 1;
 
   uint8 internal constant ETH_CORRELATED = 2;
+
+  uint8 internal constant EZETH_WSTETH = 3;
+
+  uint8 internal constant EZETH_STABLECOINS = 4;
 }
 library AaveV3ArbitrumExternalLibraries {
   // https://arbiscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
