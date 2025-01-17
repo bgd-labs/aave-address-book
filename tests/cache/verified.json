@@ -6551,6 +6551,21 @@
     },
     "0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D": {
       "name": "WalletBalanceProvider"
+    },
+    "0x2D97F8FA96886Fd923c065F5457F9DDd494e3877": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xc67bb8F2314fA0df50cBa314c6509A7bdAD500C0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf751969521E20A972A0776CDB0497Fad0F773F1F": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x89502c3731F69DDC95B65753708A07F8Cd0373F4": {
+      "name": "PoolAddressesProvider"
+    },
+    "0xDe090EfCD6ef4b86792e2D84E55a5fa8d49D25D2": {
+      "name": "TransparentProxyFactory"
     }
   },
   "84532": {

@@ -156,7 +156,7 @@ describe(
           encoding: 'utf-8',
         });
       }
-      // expect(errors).toMatchSnapshot();
+      expect(errors).toMatchSnapshot();
     });
   },
   {timeout: 120_000},
