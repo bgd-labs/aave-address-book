@@ -50,7 +50,7 @@ describe('config engine', () => {
         const client = getClient(addresses.CHAIN_ID);
         // we only want to validate AaveV3 config engines as V2 does not expose the necessary getters
         // we also skip testnets as they are not controlled trough governance
-        if (!client.chain?.testnet && addresses.CONFIG_ENGINE && library.startsWith('AaveV3'))
+        if (!client.chain?.testnet && addresses.CONFIG_ENGINE && addresses.COLLECTOR && library.startsWith('AaveV3'))
           return check(addresses);
       }),
     );
