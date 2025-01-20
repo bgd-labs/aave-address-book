@@ -37,6 +37,40 @@ export async function check(addresses: Record<string, any>) {
         );
       }
     }
+
+    if (addresses.EDGE_RISK_STEWARD) {
+      const edgeRiskStewardContract = getContract({
+        abi: IRiskSteward_ABI,
+        address: addresses.EDGE_RISK_STEWARD,
+        client,
+      });
+      const [CONFIG_ENGINE, POOL_DATA_PROVIDER, OWNER, RISK_COUNCIL] = await Promise.all([
+        edgeRiskStewardContract.read.CONFIG_ENGINE(),
+        edgeRiskStewardContract.read.POOL_DATA_PROVIDER(),
+        edgeRiskStewardContract.read.owner(),
+        edgeRiskStewardContract.read.RISK_COUNCIL(),
+      ]);
+
+      if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
+        throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
+      if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
+        throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
+      if (RISK_COUNCIL !== addresses.EDGE_STEWARD_INJECTOR)
+        throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong EDGE_STEWARD_INJECTOR on ${client.chain?.name}`);
+
+      if (!governance) {
+        console.log(
+          `SANITY_EDGE_RISK_STEWARDS: Skipped due to missing governance on ${client.chain?.name}`,
+        );
+      } else {
+        const l1Executor = (governance as any).EXECUTOR_LVL_1;
+        if (OWNER !== l1Executor) {
+          throw new Error(
+            `SANITY_EDGE_RISK_STEWARDS: OWNER MISMATCH ${addresses.POOL}.${addresses.RISK_STEWARD}:${OWNER} != ${l1Executor} on ${client.chain?.name}`,
+          );
+        }
+      }
+    }
   }
 }
 

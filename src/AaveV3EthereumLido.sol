@@ -91,6 +91,15 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0xd1B2dec98A95B773C4909B5CD8FB455F467A527f
   address internal constant DEBT_SWAP_ADAPTER = 0xd1B2dec98A95B773C4909B5CD8FB455F467A527f;
 
+  // https://etherscan.io/address/0x81aFd0F99c2Afa2f2DD7E387c2Ef9CD2a29b6E1A
+  address internal constant EDGE_RISK_STEWARD = 0x81aFd0F99c2Afa2f2DD7E387c2Ef9CD2a29b6E1A;
+
+  // https://etherscan.io/address/0x834a5aC6e9D05b92F599A031941262F761c34859
+  address internal constant EDGE_STEWARD_INJECTOR = 0x834a5aC6e9D05b92F599A031941262F761c34859;
+
+  // https://etherscan.io/address/0x7ABB46C690C52E919687D19ebF89C81A6136C1F2
+  address internal constant RISK_ORACLE = 0x7ABB46C690C52E919687D19ebF89C81A6136C1F2;
+
   // https://etherscan.io/address/0x347C75d19718a05148687E13dca259aD016aB411
   address internal constant STATA_FACTORY = 0x347C75d19718a05148687E13dca259aD016aB411;
 }
