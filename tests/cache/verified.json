@@ -2821,6 +2821,9 @@
     },
     "0xc3250A20F8a7BbDd23adE87737EE46A45Fe5543E": {
       "name": "AaveOpEthERC20Bridge"
+    },
+    "0x9371Df6e3432c74130b632e4e7E57E1F54BFC712": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "56": {
@@ -4518,6 +4521,27 @@
     },
     "0x8601Af6a00862112b2F2E4993684073D904DE836": {
       "name": "TransparentProxyFactoryZkSync"
+    },
+    "0xc1Fa6E2E8667d9bE0Ca938a54c7E0285E9Df924a": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xE818A67EE5c0531AFaa31Aa6e20bcAC36227A641": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf31E1599b4480d07Fa96a7248c4f05cA84DA7fa8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x32aF9A0a47B332761c8C90E9eC9f53e46e852b2B": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xF3c9d58B76AC6Ee6811520021e9A9318c49E4CFa": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDeBb4ddaaaB1676775214552a7a05D6A13f905Da": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDaec4cC3a41E423d678428A8Bb29fa1ADF26869a": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "1088": {
@@ -5226,6 +5250,9 @@
     },
     "0x438e24f5FCDC1A66ecb25D19B5543e0Cb91A44D4": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x78d33BF0014ab169725F2Ea5a62b200F2977faeE": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42161": {
@@ -5753,6 +5780,9 @@
     },
     "0x8Ed37B72300683c0482A595bfa80fFb793874b15": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0xd85922fFF51ba4130cEC7c499db4Ac3Eb9981EaD": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "43113": {
@@ -6575,6 +6605,9 @@
     },
     "0xDe090EfCD6ef4b86792e2D84E55a5fa8d49D25D2": {
       "name": "TransparentProxyFactory"
+    },
+    "0x3238FC1d642b60F41a35f62570237656C85F4744": {
+      "name": "RiskSteward"
     }
   },
   "84532": {
