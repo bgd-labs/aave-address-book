@@ -6447,6 +6447,50 @@
       }
     },
     {
+      "chainId": 324,
+      "address": "0xc1Fa6E2E8667d9bE0Ca938a54c7E0285E9Df924a",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weeth.svg"
+    },
+    {
+      "chainId": 324,
+      "address": "0xE818A67EE5c0531AFaa31Aa6e20bcAC36227A641",
+      "name": "Aave ZkSync weETH",
+      "decimals": 18,
+      "symbol": "aZksweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweeth.svg",
+      "extensions": {
+        "pool": "0x78e30497a3c7527d953c6B1E3541b021A98Ac43c",
+        "underlying": "0xc1Fa6E2E8667d9bE0Ca938a54c7E0285E9Df924a"
+      }
+    },
+    {
+      "chainId": 324,
+      "address": "0xAD17Da2f6Ac76746EF261E835C50b2651ce36DA8",
+      "name": "Staked USDe",
+      "decimals": 18,
+      "symbol": "sUSDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/susde.svg"
+    },
+    {
+      "chainId": 324,
+      "address": "0xF3c9d58B76AC6Ee6811520021e9A9318c49E4CFa",
+      "name": "Aave ZkSync sUSDe",
+      "decimals": 18,
+      "symbol": "aZkssUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asusde.svg",
+      "extensions": {
+        "pool": "0x78e30497a3c7527d953c6B1E3541b021A98Ac43c",
+        "underlying": "0xAD17Da2f6Ac76746EF261E835C50b2651ce36DA8"
+      }
+    },
+    {
       "chainId": 250,
       "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
       "name": "Dai Stablecoin",
@@ -7048,6 +7092,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 74 },
-  "timestamp": "2025-01-17T12:14:09.084Z"
+  "version": { "major": 3, "minor": 0, "patch": 75 },
+  "timestamp": "2025-01-20T08:00:31.961Z"
 }
