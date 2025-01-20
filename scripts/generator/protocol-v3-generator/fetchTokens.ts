@@ -6,7 +6,7 @@ import {IStataTokenFactory_ABI} from '../../../src/ts/abis/IStataTokenFactory';
 import {PoolConfig, ReserveData} from '../../configs/types';
 import {IERC20Detailed_ABI} from '../../../src/ts/abis/IERC20Detailed';
 import {fetchPoolAddresses} from './fetchPoolAddresses';
-import {bytes32toAddress, getImplementationStorageSlot} from '../utils';
+import {bytes32toAddress, getImplementationStorageSlot, addressOrZero} from '../utils';
 import {IAToken_ABI} from '../../../src/ts/abis/IAToken';
 
 export async function fetchTokens(
@@ -69,6 +69,7 @@ export async function fetchTokens(
 
 export async function inferAdditionalTokenInfo(
   client: Client,
+  poolConfig: PoolConfig,
   reservesData: Awaited<ReturnType<typeof fetchTokens>>,
 ) {
   if (reservesData.length > 0) {
@@ -123,4 +124,11 @@ export async function inferAdditionalTokenInfo(
         defaultVariableDebtTokenImplementation,
     };
   }
+  return {
+    COLLECTOR: {value: addressOrZero(poolConfig.initial?.COLLECTOR), type: 'ICollector'},
+    DEFAULT_A_TOKEN_IMPL_REV_1: addressOrZero(poolConfig.initial?.DEFAULT_A_TOKEN_IMPL),
+    DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1: addressOrZero(
+      poolConfig.initial?.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL,
+    ),
+  };
 }

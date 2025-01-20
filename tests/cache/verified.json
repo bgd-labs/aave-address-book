@@ -6608,6 +6608,15 @@
     },
     "0x3238FC1d642b60F41a35f62570237656C85F4744": {
       "name": "RiskSteward"
+    },
+    "0x589750BA8aF186cE5B55391B0b7148cAD43a1619": {
+      "name": "ATokenInstance"
+    },
+    "0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xBeC519531F0E78BcDdB295242fA4EC5251B38574": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "84532": {

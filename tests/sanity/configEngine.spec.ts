@@ -34,6 +34,7 @@ export async function check(addresses: Record<string, any>) {
     throw new Error('SANITY_CONFIG_ENGINE: wrong DEFAULT_INCENTIVES_CONTROLLER');
   if (COLLECTOR !== addresses.COLLECTOR) throw new Error('SANITY_CONFIG_ENGINE: wrong COLLECTOR');
   if (
+    addresses.ASSETS.length > 0 &&
     DEFAULT_INTEREST_RATE_STRATEGY !==
     (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY
   )
