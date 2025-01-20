@@ -43,6 +43,16 @@ library AaveV3Linea {
   // https://lineascan.build/address/0x0165C65FB21bDC9Cdc09C627d62AB3a983337158
   address internal constant EMISSION_MANAGER = 0x0165C65FB21bDC9Cdc09C627d62AB3a983337158;
 
+  // https://lineascan.build/address/0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809
+  ICollector internal constant COLLECTOR = ICollector(0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809);
+
+  // https://lineascan.build/address/0x589750BA8aF186cE5B55391B0b7148cAD43a1619
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
+
+  // https://lineascan.build/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+    0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
+
   // https://lineascan.build/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
   address internal constant CONFIG_ENGINE = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
 
