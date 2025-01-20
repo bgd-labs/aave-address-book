@@ -8,21 +8,6 @@ import { Footer } from '@/components/Footer';
 import logo from '@/assets/logo.svg';
 import { SafeDownload } from '@/components/SafeDownload';
 
-const VERSION_PRIORITY: { [key: string]: number } = {
-  AaveV3: 1,
-  AaveV2: 2,
-  AaveV1: 3,
-};
-
-function getVersionPriority(name: string): number {
-  for (const version in VERSION_PRIORITY) {
-    if (name.startsWith(version)) {
-      return VERSION_PRIORITY[version];
-    }
-  }
-  return 4;
-}
-
 const TAG_MAP: Record<string, string[]> = {
   S_TOKEN: ['stable', 'debt'],
   V_TOKEN: ['variable', 'debt'],
@@ -39,42 +24,7 @@ const addresses = flattenedAddresses.map((item) => ({
   ].join(' '),
 }));
 
-const sortedAddresses = addresses.sort((a, b) => {
-  const aInProduction = !ChainList[a.chainId as keyof typeof ChainList].testnet;
-  const bInProduction = !ChainList[b.chainId as keyof typeof ChainList].testnet;
-
-  if (aInProduction && !bInProduction) {
-    return -1;
-  } else if (!aInProduction && bInProduction) {
-    return 1;
-  }
-
-  const aVersionPriority = getVersionPriority(a.searchPath);
-  const bVersionPriority = getVersionPriority(b.searchPath);
-
-  if (aVersionPriority !== bVersionPriority) {
-    return aVersionPriority - bVersionPriority;
-  }
-
-  const pathLengthDiff = a.path.length - b.path.length;
-  if (pathLengthDiff !== 0) {
-    return pathLengthDiff;
-  }
-
-  // A dirty hack to slightly prioritize mainnet addresses
-  const aSearchPathLength =
-    a.chainId === 1 ? a.searchPath.length - 6 : a.searchPath.length;
-  const bSearchPathLength =
-    b.chainId === 1 ? b.searchPath.length - 6 : b.searchPath.length;
-
-  const searchPathLengthDiff = aSearchPathLength - bSearchPathLength;
-  if (searchPathLengthDiff !== 0) {
-    return searchPathLengthDiff;
-  }
-
-  return 0;
-});
-const searchPaths = sortedAddresses.map((a) => a.searchPath);
+const searchPaths = addresses.map((a) => a.searchPath);
 
 export default function Home() {
   return (

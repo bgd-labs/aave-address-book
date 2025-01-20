@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.7.4](https://github.com/bgd-labs/aave-address-book/compare/v4.7.3...v4.7.4) (2025-01-09)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#767](https://github.com/bgd-labs/aave-address-book/issues/767)) ([79a79f0](https://github.com/bgd-labs/aave-address-book/commit/79a79f0476edd4951db5801bb2d0ab40156e83a2))
+* **cache:** automated cache update - updated addresses ([#769](https://github.com/bgd-labs/aave-address-book/issues/769)) ([5526313](https://github.com/bgd-labs/aave-address-book/commit/55263139f4e50514216298c0991aade86c864730))
+
+## [4.7.3](https://github.com/bgd-labs/aave-address-book/compare/v4.7.2...v4.7.3) (2024-12-30)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#753](https://github.com/bgd-labs/aave-address-book/issues/753)) ([139eef9](https://github.com/bgd-labs/aave-address-book/commit/139eef947251bfe7853014bd365c9592af0faa78))
+* **cache:** automated cache update - updated addresses ([#760](https://github.com/bgd-labs/aave-address-book/issues/760)) ([774e385](https://github.com/bgd-labs/aave-address-book/commit/774e3853a8fc11f4e6721b3045bb72a106b3f038))
+* update list of verified contracts ([#765](https://github.com/bgd-labs/aave-address-book/issues/765)) ([609893c](https://github.com/bgd-labs/aave-address-book/commit/609893cb4866608edab9610016ba9469adea6ba7))
+* Update ParaSwapRepayAdapter in Polygon V2 ([#754](https://github.com/bgd-labs/aave-address-book/issues/754)) ([b348370](https://github.com/bgd-labs/aave-address-book/commit/b3483708e95e8a14e270826f2220d6f2d1cc2928))
+
+## [4.7.2](https://github.com/bgd-labs/aave-address-book/compare/v4.7.1...v4.7.2) (2024-12-20)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#750](https://github.com/bgd-labs/aave-address-book/issues/750)) ([1efa352](https://github.com/bgd-labs/aave-address-book/commit/1efa3529fc2754c2409fa67ed332b332a945856f))
+* **cache:** automated cache update - updated addresses ([#752](https://github.com/bgd-labs/aave-address-book/issues/752)) ([cda5325](https://github.com/bgd-labs/aave-address-book/commit/cda5325aeadb4528c1d3810fb2ef13426ea10413))
+
+## [4.7.1](https://github.com/bgd-labs/aave-address-book/compare/v4.7.0...v4.7.1) (2024-12-16)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#739](https://github.com/bgd-labs/aave-address-book/issues/739)) ([16f3b10](https://github.com/bgd-labs/aave-address-book/commit/16f3b10a4ca21da3d0d0e8e1b6c1c5ad27c73384))
+
+## [4.7.0](https://github.com/bgd-labs/aave-address-book/compare/v4.6.0...v4.7.0) (2024-12-10)
+
+
+### Features
+
+* add bridges ([#718](https://github.com/bgd-labs/aave-address-book/issues/718)) ([937b958](https://github.com/bgd-labs/aave-address-book/commit/937b958af85b210f186959d5785b0089a650a755))
+* add new stata tokens ([#719](https://github.com/bgd-labs/aave-address-book/issues/719)) ([cdb0105](https://github.com/bgd-labs/aave-address-book/commit/cdb0105bf754bffd0c4d127ba4f8aa57d4d61702))
+* gho libraries ([#713](https://github.com/bgd-labs/aave-address-book/issues/713)) ([c63b6ab](https://github.com/bgd-labs/aave-address-book/commit/c63b6ab77ff3416cd70bec9d3dc8d7bbc26b3fb3))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#728](https://github.com/bgd-labs/aave-address-book/issues/728)) ([d8ccf37](https://github.com/bgd-labs/aave-address-book/commit/d8ccf37fbbf820c212386116dceeca44201a90d6))
+* update aave-v3-origin with new solidity-utils lib ([#735](https://github.com/bgd-labs/aave-address-book/issues/735)) ([88c5cd4](https://github.com/bgd-labs/aave-address-book/commit/88c5cd4f65696a62b5933b507906ac75e97a46ca))
+
 ## [4.6.0](https://github.com/bgd-labs/aave-address-book/compare/v4.5.1...v4.6.0) (2024-11-21)
 
 

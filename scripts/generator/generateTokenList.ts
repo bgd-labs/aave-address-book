@@ -110,7 +110,7 @@ export async function generateTokenList(pools: TokenListParams) {
 
   const tokenList = {
     name: 'Aave token list',
-    logoURI: 'ipfs://QmWzL3TSmkMhbqGBEwyeFyWVvLmEo3F44HBMFnmTUiTfp1',
+    logoURI: 'https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg',
     keywords: ['audited', 'verified', 'aave'],
 
     tags: {
