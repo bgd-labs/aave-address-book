@@ -17,6 +17,7 @@ import {
   sepoliaProtoV3,
   lidoEthereumMainnetProtoV3Pool,
   etherFiEthereumMainnetProtoV3Pool,
+  wlfiEthereumMainnetProtoV3Pool,
 } from './configs/pools/ethereum';
 import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
 import {harmonyProtoV3} from './configs/pools/harmony';
@@ -136,6 +137,7 @@ async function main() {
       harmonyProtoV3,
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
+      wlfiEthereumMainnetProtoV3Pool,
       lineaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );

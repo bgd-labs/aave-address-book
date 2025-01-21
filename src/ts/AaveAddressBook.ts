@@ -43,6 +43,7 @@ export * as AaveV3Fantom from './AaveV3Fantom';
 export * as AaveV3Harmony from './AaveV3Harmony';
 export * as AaveV3EthereumLido from './AaveV3EthereumLido';
 export * as AaveV3EthereumEtherFi from './AaveV3EthereumEtherFi';
+export * as AaveV3EthereumWlfi from './AaveV3EthereumWlfi';
 export * as AaveV3Linea from './AaveV3Linea';
 export * as MiscArbitrum from './MiscArbitrum';
 export * as MiscArbitrumSepolia from './MiscArbitrumSepolia';
