@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscZkSync {
-  // https://era.zksync.network/address/0x8601Af6a00862112b2F2E4993684073D904DE836
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x8601Af6a00862112b2F2E4993684073D904DE836;
+  // https://era.zksync.network/address/0x0a902bCd36F128683EAF1eE7001a3ad2E808d93B
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0x0a902bCd36F128683EAF1eE7001a3ad2E808d93B;
 
   // https://era.zksync.network/address/0x158d6c497317367CEa3CBAb0BD84E6de236F060D
   address internal constant PROXY_ADMIN = 0x158d6c497317367CEa3CBAb0BD84E6de236F060D;

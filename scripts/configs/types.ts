@@ -109,8 +109,6 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
   name: string;
   chainId: number;
   addresses: {
-    // https://github.com/bgd-labs/aave-paraswap-claimer
-    PARASWAP_FEE_CLAIMER?: Hex;
     TRANSPARENT_PROXY_FACTORY?: Hex;
     PROXY_ADMIN?: Hex;
     CREATE_3_FACTORY?: Hex;

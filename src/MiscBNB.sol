@@ -3,14 +3,11 @@
 pragma solidity >=0.6.0;
 
 library MiscBNB {
-  // https://bscscan.com/address/0xD410270dadBA6CAB0b3523136b79ab3a19CCecc8
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xD410270dadBA6CAB0b3523136b79ab3a19CCecc8;
+  // https://bscscan.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 
   // https://bscscan.com/address/0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6
   address internal constant PROTOCOL_GUARDIAN = 0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6;
-
-  // https://bscscan.com/address/0xAe940e61E9863178b71500c9B5faE2a04Da361a1
-  address internal constant PARASWAP_FEE_CLAIMER = 0xAe940e61E9863178b71500c9B5faE2a04Da361a1;
 
   // https://bscscan.com/address/0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c
   address internal constant PROXY_ADMIN = 0x39EBFfc7679c62Dfcc4A3E2c09Bcb0be255Ae63c;
