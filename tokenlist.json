@@ -2941,6 +2941,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x8236a87084f8B84306f72007F36F2618A5634494",
+      "name": "Lombard Staked Bitcoin",
+      "decimals": 8,
+      "symbol": "LBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x65906988ADEe75306021C417a1A3458040239602",
+      "name": "Aave Ethereum LBTC",
+      "decimals": 8,
+      "symbol": "aEthLBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x8236a87084f8B84306f72007F36F2618A5634494"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -7372,6 +7392,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 77 },
-  "timestamp": "2025-01-21T00:13:11.791Z"
+  "version": { "major": 3, "minor": 0, "patch": 78 },
+  "timestamp": "2025-01-26T00:13:30.441Z"
 }
