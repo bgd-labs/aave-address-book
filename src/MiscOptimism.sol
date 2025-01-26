@@ -3,11 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscOptimism {
-  // https://optimistic.etherscan.io/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
-  address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
-
-  // https://optimistic.etherscan.io/address/0x984B710D22730f799312513A10C1382e9D1Fa689
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x984B710D22730f799312513A10C1382e9D1Fa689;
+  // https://optimistic.etherscan.io/address/0xEB0682d148e874553008730f0686ea89db7DA412
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 
   // https://optimistic.etherscan.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN = 0xD3cF979e676265e4f6379749DECe4708B9A22476;

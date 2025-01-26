@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscMetis {
-  // https://explorer.metis.io/address/0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B;
+  // https://explorer.metis.io/address/0xEB0682d148e874553008730f0686ea89db7DA412
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 
   // https://explorer.metis.io/address/0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97
   address internal constant PROXY_ADMIN = 0x1CabD986cBAbDf12E00128DFf03C80ee62C4fd97;

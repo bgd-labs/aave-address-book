@@ -242,17 +242,5 @@ exports[`verification > should have all contracts verified except for the known 
       "value": "0xD089B4cb88Dacf4e27be869A00e9f7e2E3C18193",
     },
   },
-  {
-    "item": {
-      "chainId": 324,
-      "path": [
-        "AaveV3ZkSync",
-        "ASSETS",
-        "sUSDe",
-        "UNDERLYING",
-      ],
-      "value": "0xAD17Da2f6Ac76746EF261E835C50b2651ce36DA8",
-    },
-  },
 ]
 `;

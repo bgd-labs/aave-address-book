@@ -6,11 +6,8 @@ library MiscPolygon {
   // https://polygonscan.com/address/0x1C2BA5b8ab8e795fF44387ba6d251fa65AD20b36
   address internal constant AAVE_POL_ETH_BRIDGE = 0x1C2BA5b8ab8e795fF44387ba6d251fa65AD20b36;
 
-  // https://polygonscan.com/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
-  address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
-
-  // https://polygonscan.com/address/0xa29b1234011BF1ba46Ed10edE2a59340bf97d583
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xa29b1234011BF1ba46Ed10edE2a59340bf97d583;
+  // https://polygonscan.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 
   // https://polygonscan.com/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN = 0xD3cF979e676265e4f6379749DECe4708B9A22476;

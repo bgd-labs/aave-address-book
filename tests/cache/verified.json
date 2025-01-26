@@ -2363,6 +2363,9 @@
     },
     "0x2c2163f120cf58631368981BC16e90190Bc6C644": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "10": {
@@ -2824,6 +2827,9 @@
     },
     "0x9371Df6e3432c74130b632e4e7E57E1F54BFC712": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "56": {
@@ -3153,6 +3159,9 @@
     },
     "0xD410270dadBA6CAB0b3523136b79ab3a19CCecc8": {
       "name": "TransparentProxyFactory"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "100": {
@@ -3470,6 +3479,9 @@
     },
     "0x51350d88c1bd32Cc6A79368c9Fb70373Fb71F375": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "137": {
@@ -4357,6 +4369,9 @@
     },
     "0x6D49dC81a1f07a6B1902DC79bc2D408cb9D555d1": {
       "name": "ParaSwapRepayAdapter"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "324": {
@@ -4542,6 +4557,12 @@
     },
     "0xDaec4cC3a41E423d678428A8Bb29fa1ADF26869a": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0xAD17Da2f6Ac76746EF261E835C50b2651ce36DA8": {
+      "name": "StakedUSDeOFT"
+    },
+    "0x0a902bCd36F128683EAF1eE7001a3ad2E808d93B": {
+      "name": "TransparentProxyFactoryZkSync"
     }
   },
   "1088": {
@@ -4798,6 +4819,9 @@
       "name": "GnosisSafeProxy"
     },
     "0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
     }
   },
@@ -5253,6 +5277,9 @@
     },
     "0x78d33BF0014ab169725F2Ea5a62b200F2977faeE": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "42161": {
@@ -5783,6 +5810,9 @@
     },
     "0xd85922fFF51ba4130cEC7c499db4Ac3Eb9981EaD": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "43113": {
@@ -6525,6 +6555,9 @@
     },
     "0x83f32c0882B12Ef16214c417efF11FD9e764bf34": {
       "name": "PriceCapAdapterStable"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "59144": {
@@ -6617,6 +6650,9 @@
     },
     "0xBeC519531F0E78BcDdB295242fA4EC5251B38574": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xEf62Fc23727c17b612081114b1919d139a7b1B83": {
+      "name": "TransparentProxyFactory"
     }
   },
   "84532": {
@@ -7058,6 +7094,9 @@
     },
     "0xFFbA405BBF25B2e6C454d18165F2fd8786858c6B": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   }
 }
