@@ -2946,7 +2946,8 @@
       "name": "Lombard Staked Bitcoin",
       "decimals": 8,
       "symbol": "LBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/lbtc.svg"
     },
     {
       "chainId": 1,
@@ -2955,6 +2956,7 @@
       "decimals": 8,
       "symbol": "aEthLBTC",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/albtc.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x8236a87084f8B84306f72007F36F2618A5634494"
@@ -7392,6 +7394,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 78 },
-  "timestamp": "2025-01-26T00:13:30.441Z"
+  "version": { "major": 3, "minor": 0, "patch": 79 },
+  "timestamp": "2025-01-27T11:16:20.221Z"
 }
