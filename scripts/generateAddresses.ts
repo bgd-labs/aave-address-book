@@ -67,6 +67,8 @@ import {ghoArbitrum} from './configs/gho/arbitrum';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
 import {governanceConfigLinea} from './configs/governance/linea';
+import {mantleAddresses} from './configs/networks/mantle';
+import {sonicAddresses} from './configs/networks/sonic';
 
 async function main() {
   // cleanup ts artifacts
@@ -164,6 +166,8 @@ async function main() {
     sepoliaAddresses,
     zkSyncAddresses,
     lineaAddresses,
+    mantleAddresses,
+    sonicAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

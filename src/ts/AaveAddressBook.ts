@@ -63,6 +63,8 @@ export * as MiscPolygonZkEvm from './MiscPolygonZkEvm';
 export * as MiscSepolia from './MiscSepolia';
 export * as MiscZkSync from './MiscZkSync';
 export * as MiscLinea from './MiscLinea';
+export * as MiscMantle from './MiscMantle';
+export * as MiscSonic from './MiscSonic';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
 export * as GhoEthereum from './GhoEthereum';

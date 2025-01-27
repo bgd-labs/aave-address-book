@@ -2366,6 +2366,15 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x8236a87084f8B84306f72007F36F2618A5634494": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x65906988ADEe75306021C417a1A3458040239602": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x68aeB290C7727D899B47c56d1c96AEAC475cD0dD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "10": {
@@ -4374,6 +4383,11 @@
       "name": "TransparentProxyFactory"
     }
   },
+  "146": {
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
+    }
+  },
   "324": {
     "0x800813f4714BC7A0a95310e3fB9e4f18872CA92C": {
       "name": "TransparentUpgradeableProxy"
@@ -4935,6 +4949,11 @@
       "name": "TransparentProxyFactory"
     },
     "0xd91d1331db4F436DaF47Ec9Dd86deCb8EEF946B4": {
+      "name": "TransparentProxyFactory"
+    }
+  },
+  "5000": {
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
     }
   },
