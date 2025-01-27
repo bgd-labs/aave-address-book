@@ -6,8 +6,8 @@ library GhoEthereum {
   // https://etherscan.io/address/0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f
   address internal constant GHO_TOKEN = 0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f;
 
-  // https://etherscan.io/address/0x5756880B6a1EAba0175227bf02a7E87c1e02B28C
-  address internal constant GHO_CCIP_TOKEN_POOL = 0x5756880B6a1EAba0175227bf02a7E87c1e02B28C;
+  // https://etherscan.io/address/0x06179f7C1be40863405f374E7f5F8806c728660A
+  address internal constant GHO_CCIP_TOKEN_POOL = 0x06179f7C1be40863405f374E7f5F8806c728660A;
 
   // https://etherscan.io/address/0xb639D208Bcf0589D54FaC24E655C79EC529762B8
   address internal constant GHO_FLASHMINTER_FACILITATOR =

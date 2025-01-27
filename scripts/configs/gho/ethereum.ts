@@ -6,7 +6,7 @@ export const ghoEthereum: GhoAddresses = {
   chainId: ChainId.mainnet,
   addresses: {
     GHO_TOKEN: '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
-    GHO_CCIP_TOKEN_POOL: '0x5756880B6a1EAba0175227bf02a7E87c1e02B28C',
+    GHO_CCIP_TOKEN_POOL: '0x06179f7C1be40863405f374E7f5F8806c728660A',
     GHO_FLASHMINTER_FACILITATOR: '0xb639D208Bcf0589D54FaC24E655C79EC529762B8',
     GHO_LIQUIDITY_COMMITTEE: '0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b',
     // TODO: perhaps makes sense to create a generator for GSM to automatically pull GSMs, for now let's see how this evolves

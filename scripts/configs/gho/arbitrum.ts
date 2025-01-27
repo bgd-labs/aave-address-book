@@ -5,6 +5,6 @@ export const ghoArbitrum: GhoAddresses = {
   name: 'Arbitrum',
   chainId: ChainId.arbitrum,
   addresses: {
-    GHO_CCIP_TOKEN_POOL: '0xF168B83598516A532a85995b52504a2Fa058C068',
+    GHO_CCIP_TOKEN_POOL: '0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB',
   },
 };
