@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.9.0](https://github.com/bgd-labs/aave-address-book/compare/v4.8.1...v4.9.0) (2025-01-29)
+
+
+### Features
+
+* upgrade factories ([#804](https://github.com/bgd-labs/aave-address-book/issues/804)) ([3ad86fd](https://github.com/bgd-labs/aave-address-book/commit/3ad86fdbfb6595564aebe93823845f793d43de8b))
+
+
+### Bug Fixes
+
+* add mantle and sonic ([#808](https://github.com/bgd-labs/aave-address-book/issues/808)) ([78f182d](https://github.com/bgd-labs/aave-address-book/commit/78f182d578bd9772827f3fb0a177add7b9c71a73))
+* bump origin ([#811](https://github.com/bgd-labs/aave-address-book/issues/811)) ([386775a](https://github.com/bgd-labs/aave-address-book/commit/386775ae50429aba611d16ea1c97bacf15603552))
+* **cache:** automated cache update - updated addresses ([#805](https://github.com/bgd-labs/aave-address-book/issues/805)) ([bc25e5e](https://github.com/bgd-labs/aave-address-book/commit/bc25e5e9acbdcea733fd2ab769de7ebd31f0a417))
+* upgrade origin to latest ([#810](https://github.com/bgd-labs/aave-address-book/issues/810)) ([c7900ad](https://github.com/bgd-labs/aave-address-book/commit/c7900adaa8b454ae3e7b24cb729283257978c9eb))
+
 ## [4.8.1](https://github.com/bgd-labs/aave-address-book/compare/v4.8.0...v4.8.1) (2025-01-21)
 
 
