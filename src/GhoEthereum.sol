@@ -44,4 +44,10 @@ library GhoEthereum {
   // https://etherscan.io/address/0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5
   address internal constant GSM_USDT_ORACLE_SWAP_FREEZER =
     0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5;
+
+  // https://etherscan.io/address/0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34
+  address internal constant GHO_AAVE_STEWARD = 0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34;
+
+  // https://etherscan.io/address/0xC5BcC58BE6172769ca1a78B8A45752E3C5059c39
+  address internal constant GHO_CCIP_STEWARD = 0xC5BcC58BE6172769ca1a78B8A45752E3C5059c39;
 }
