@@ -3,6 +3,6 @@
 pragma solidity >=0.6.0;
 
 library GhoArbitrum {
-  // https://arbiscan.io/address/0xF168B83598516A532a85995b52504a2Fa058C068
-  address internal constant GHO_CCIP_TOKEN_POOL = 0xF168B83598516A532a85995b52504a2Fa058C068;
+  // https://arbiscan.io/address/0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB
+  address internal constant GHO_CCIP_TOKEN_POOL = 0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB;
 }

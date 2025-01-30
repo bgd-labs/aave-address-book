@@ -1932,7 +1932,7 @@
     "0xb49f677943BC038e9857d61E7d053CaA2C1734C1": {
       "name": "EACAggregatorProxy"
     },
-    "0x5756880B6a1EAba0175227bf02a7E87c1e02B28C": {
+    "0x06179f7C1be40863405f374E7f5F8806c728660A": {
       "name": "TransparentUpgradeableProxy"
     },
     "0xb639D208Bcf0589D54FaC24E655C79EC529762B8": {
@@ -5743,7 +5743,7 @@
     "0x3b56998Ec06477704622ca8e2eA1b4db134cec32": {
       "name": "Create3Factory"
     },
-    "0xF168B83598516A532a85995b52504a2Fa058C068": {
+    "0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB": {
       "name": "TransparentUpgradeableProxy"
     },
     "0x7d9103572bE58FfE99dc390E8246f02dcAe6f611": {
