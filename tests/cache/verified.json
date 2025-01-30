@@ -2375,6 +2375,12 @@
     },
     "0x68aeB290C7727D899B47c56d1c96AEAC475cD0dD": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34": {
+      "name": "GhoAaveSteward"
+    },
+    "0xC5BcC58BE6172769ca1a78B8A45752E3C5059c39": {
+      "name": "GhoCcipSteward"
     }
   },
   "10": {
@@ -5832,6 +5838,15 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0xd2D586f849620ef042FE3aF52eAa10e9b78bf7De": {
+      "name": "GhoAaveSteward"
+    },
+    "0xa9afaE6A53E90f9E4CE0717162DF5Bc3d9aBe7B2": {
+      "name": "GhoBucketSteward"
+    },
+    "0xCd5ab470AaC5c13e1063ee700503f3346b7C90Db": {
+      "name": "GhoCcipSteward"
     }
   },
   "43113": {
