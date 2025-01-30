@@ -516,6 +516,9 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant ezETH_INTEREST_RATE_STRATEGY =
     0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
+
+  // https://arbiscan.io/address/0x4ff50C17df0D1b788d021ACd85039810a1aA68A1
+  address internal constant ezETH_STATA_TOKEN = 0x4ff50C17df0D1b788d021ACd85039810a1aA68A1;
 }
 library AaveV3ArbitrumEModes {
   uint8 internal constant NONE = 0;

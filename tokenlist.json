@@ -5450,8 +5450,7 @@
       "name": "Tether USD",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 42161,
@@ -5460,7 +5459,6 @@
       "decimals": 6,
       "symbol": "aArbUSDT",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
@@ -5473,7 +5471,6 @@
       "decimals": 6,
       "symbol": "stataArbUSDT",
       "tags": ["aaveV3", "staticAT"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
@@ -5487,7 +5484,6 @@
       "decimals": 6,
       "symbol": "waArbUSDT",
       "tags": ["aaveV3", "stataToken"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
@@ -5980,6 +5976,20 @@
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x2416092f143378750bb29b79eD961ab195CcEea5"
+      }
+    },
+    {
+      "chainId": 42161,
+      "address": "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1",
+      "name": "Wrapped Aave Arbitrum ezETH",
+      "decimals": 18,
+      "symbol": "waArbezETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataezeth.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "underlyingAToken": "0xEA1132120ddcDDA2F119e99Fa7A27a0d036F7Ac9"
       }
     },
     {
@@ -7394,6 +7404,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 79 },
-  "timestamp": "2025-01-27T11:16:20.221Z"
+  "version": { "major": 3, "minor": 0, "patch": 80 },
+  "timestamp": "2025-01-30T12:01:43.440Z"
 }
