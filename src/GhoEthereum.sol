@@ -16,6 +16,9 @@ library GhoEthereum {
   // https://etherscan.io/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
   address internal constant GHO_LIQUIDITY_COMMITTEE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
 
+  // https://etherscan.io/address/0xD1E856a947CdF56b4f000ee29d34F5808E0A6848
+  address internal constant GHO_GSM_STEWARD = 0xD1E856a947CdF56b4f000ee29d34F5808E0A6848;
+
   // https://etherscan.io/address/0x167527DB01325408696326e3580cd8e55D99Dc1A
   address internal constant GSM_REGISTRY = 0x167527DB01325408696326e3580cd8e55D99Dc1A;
 
@@ -44,4 +47,13 @@ library GhoEthereum {
   // https://etherscan.io/address/0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5
   address internal constant GSM_USDT_ORACLE_SWAP_FREEZER =
     0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5;
+
+  // https://etherscan.io/address/0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34
+  address internal constant GHO_AAVE_CORE_STEWARD = 0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34;
+
+  // https://etherscan.io/address/0x46Aa1063e5265b43663E81329333B47c517A5409
+  address internal constant GHO_BUCKET_STEWARD = 0x46Aa1063e5265b43663E81329333B47c517A5409;
+
+  // https://etherscan.io/address/0xC5BcC58BE6172769ca1a78B8A45752E3C5059c39
+  address internal constant GHO_CCIP_STEWARD = 0xC5BcC58BE6172769ca1a78B8A45752E3C5059c39;
 }
