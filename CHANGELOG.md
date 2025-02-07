@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.10.0](https://github.com/bgd-labs/aave-address-book/compare/v4.9.0...v4.10.0) (2025-02-07)
+
+
+### Features
+
+* gho on base ([#824](https://github.com/bgd-labs/aave-address-book/issues/824)) ([d8829eb](https://github.com/bgd-labs/aave-address-book/commit/d8829ebd700391380265840495e602e35b767292))
+
+
+### Bug Fixes
+
+* symbol ([#814](https://github.com/bgd-labs/aave-address-book/issues/814)) ([13bf5f4](https://github.com/bgd-labs/aave-address-book/commit/13bf5f428e2f8919370e9347517956c6dc0d9faf))
+
 ## [4.9.0](https://github.com/bgd-labs/aave-address-book/compare/v4.8.1...v4.9.0) (2025-01-29)
 
 
