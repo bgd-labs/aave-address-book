@@ -64,6 +64,7 @@ import {governanceConfigZkSync} from './configs/governance/zksync';
 import {zkSyncAddresses} from './configs/networks/zksync';
 import {lineaAddresses} from './configs/networks/linea';
 import {ghoArbitrum} from './configs/gho/arbitrum';
+import {ghoBase} from './configs/gho/base';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
 import {governanceConfigLinea} from './configs/governance/linea';
@@ -141,7 +142,7 @@ async function main() {
       lineaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum].map((config) => generateGho(config));
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
 
   const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
   console.log('✅ Tokens list generation finished');
