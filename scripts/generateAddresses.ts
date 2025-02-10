@@ -70,6 +70,7 @@ import {generateGho} from './generator/ghoGenerator';
 import {governanceConfigLinea} from './configs/governance/linea';
 import {mantleAddresses} from './configs/networks/mantle';
 import {sonicAddresses} from './configs/networks/sonic';
+import { governanceConfigSonic } from './configs/governance/sonic';
 
 async function main() {
   // cleanup ts artifacts
@@ -100,6 +101,7 @@ async function main() {
       governanceConfigPolygonZkEvm,
       governanceConfigZkSync,
       governanceConfigLinea,
+      governanceConfigSonic,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();

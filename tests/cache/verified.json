@@ -4398,6 +4398,24 @@
   "146": {
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x58e003a3C6f2Aeed6a2a6Bc77B504566523cb15c": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6fD45D32375d5aDB8D76275A3932c740F03a8718": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0x10078c1D8E46dd1ed5D8df2C42d5ABb969b11566": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x63C4422D6cc849549daeb600B7EcE52bD18fAd7f": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xECB564e91f620fBFb59d0C4A41d7f10aDb0D1934": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7b62461a3570c6AC8a9f8330421576e417B71EE7": {
+      "name": "Executor"
     }
   },
   "324": {
