@@ -4967,6 +4967,30 @@
   "5000": {
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x7Fcb83a4a2577e30aaD0218B5A3C015b40b1209A": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xB7691d5b74bF50Cc2CF55B29f9ba6f80FC3954a4": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x74c3a74362dF4Dd1b9924a97C357B8772dC45000": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xDA575812755ED6C5Ad33a859798d472C0495529A": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x9390B1735def18560c509E2d0bc090E9d6BA257a": {
+      "name": "Executor"
+    },
+    "0x5e06b10B3b9c3E1c0996D2544A35B9839Be02922": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xb26670d2800DBB9cfCe2f2660FfDcA48C799c86d": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x70884634D0098782592111A2A6B8d223be31CB7b": {
+      "name": "Executor"
     }
   },
   "8453": {
