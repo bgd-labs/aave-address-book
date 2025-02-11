@@ -298,6 +298,23 @@ library AaveV3BaseAssets {
 
   // https://basescan.org/address/0xF8F10f39116716e89498c1c5E94137ADa11b2BC7
   address internal constant ezETH_STATA_TOKEN = 0xF8F10f39116716e89498c1c5E94137ADa11b2BC7;
+
+  // https://basescan.org/address/0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee
+  address internal constant GHO_UNDERLYING = 0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://basescan.org/address/0x067ae75628177FD257c2B1e500993e1a0baBcBd1
+  address internal constant GHO_A_TOKEN = 0x067ae75628177FD257c2B1e500993e1a0baBcBd1;
+
+  // https://basescan.org/address/0x38e59ADE183BbEb94583d44213c8f3297e9933e9
+  address internal constant GHO_V_TOKEN = 0x38e59ADE183BbEb94583d44213c8f3297e9933e9;
+
+  // https://basescan.org/address/0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73
+  address internal constant GHO_ORACLE = 0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73;
+
+  // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
