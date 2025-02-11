@@ -6939,7 +6939,7 @@
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
       "name": "Frapped USDT",
       "decimals": 6,
-      "symbol": "fUSDT",
+      "symbol": "USDT",
       "tags": ["underlying"]
     },
     {
@@ -7580,6 +7580,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 81 },
-  "timestamp": "2025-02-11T14:26:40.865Z"
+  "version": { "major": 3, "minor": 0, "patch": 84 },
+  "timestamp": "2025-02-11T12:29:23.312Z"
 }

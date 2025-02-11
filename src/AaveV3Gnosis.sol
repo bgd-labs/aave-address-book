@@ -82,7 +82,8 @@ library AaveV3Gnosis {
   address internal constant FREEZING_STEWARD = 0x3Ceaf9b6CAb92dFe6302D0CC3F1BA880C28d35e5;
 
   // https://gnosisscan.io/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6;
 
   // https://gnosisscan.io/address/0x33992721c565dA3248bd3af80524e054F5F05b42
   address internal constant STATA_FACTORY = 0x33992721c565dA3248bd3af80524e054F5F05b42;
