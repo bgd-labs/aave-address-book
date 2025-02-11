@@ -54,7 +54,13 @@ export function fixSymbol(symbol: string, _underlying: string) {
     case '0x3c499c542cef5e3811e1192ce70d8cc03d5c3359': // polygon
       return 'USDCn';
   }
-  return symbol.replace('-', '_').replace('.', '').replace(' ', '_').replace('1', 'ONE_').replace('USD₮0', 'USDT');
+  if (symbol === 'USD₮0' || symbol === 'fUSDT') return 'USDT';
+  return symbol
+    .replace('-', '_')
+    .replace('.', '')
+    .replace(' ', '_')
+    .replace('1', 'ONE_')
+    .replace('USD₮0', 'USDT');
 }
 
 export function generateAssetsLibrary(

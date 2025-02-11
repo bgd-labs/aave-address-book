@@ -72,15 +72,144 @@ library AaveV3Linea {
   // https://lineascan.build/address/0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D
   address internal constant WALLET_BALANCE_PROVIDER = 0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D;
 
-  // https://lineascan.build/address/0x4758213271BFdC72224A7a8742dC865fC97756e1
-  address internal constant WETH_GATEWAY = 0x4758213271BFdC72224A7a8742dC865fC97756e1;
-
-  // https://lineascan.build/address/0x28ad75CA21793835b975130e9FdA149A476a2b7c
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x28ad75CA21793835b975130e9FdA149A476a2b7c;
+  // https://lineascan.build/address/0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F
+  address internal constant WETH_GATEWAY = 0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F;
 }
-library AaveV3LineaAssets {}
+library AaveV3LineaAssets {
+  // https://lineascan.build/address/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f
+  address internal constant WETH_UNDERLYING = 0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://lineascan.build/address/0x787897dF92703BB3Fc4d9Ee98e15C0b8130Bf163
+  address internal constant WETH_A_TOKEN = 0x787897dF92703BB3Fc4d9Ee98e15C0b8130Bf163;
+
+  // https://lineascan.build/address/0x0e7543a9dA61b2E71fC880685eD2945B7426a689
+  address internal constant WETH_V_TOKEN = 0x0e7543a9dA61b2E71fC880685eD2945B7426a689;
+
+  // https://lineascan.build/address/0x3c6Cd9Cc7c7a4c2Cf5a82734CD249D7D593354dA
+  address internal constant WETH_ORACLE = 0x3c6Cd9Cc7c7a4c2Cf5a82734CD249D7D593354dA;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4
+  address internal constant WBTC_UNDERLYING = 0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4;
+
+  uint8 internal constant WBTC_DECIMALS = 8;
+
+  // https://lineascan.build/address/0x37f7E06359F98162615e016d0008023D910bB576
+  address internal constant WBTC_A_TOKEN = 0x37f7E06359F98162615e016d0008023D910bB576;
+
+  // https://lineascan.build/address/0x74A1b56f5137b00AA0ADA1dD964a3A361Ecc32e9
+  address internal constant WBTC_V_TOKEN = 0x74A1b56f5137b00AA0ADA1dD964a3A361Ecc32e9;
+
+  // https://lineascan.build/address/0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9
+  address internal constant WBTC_ORACLE = 0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant WBTC_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0x176211869cA2b568f2A7D4EE941E073a821EE1ff
+  address internal constant USDC_UNDERLYING = 0x176211869cA2b568f2A7D4EE941E073a821EE1ff;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://lineascan.build/address/0x374D7860c4f2f604De0191298dD393703Cce84f3
+  address internal constant USDC_A_TOKEN = 0x374D7860c4f2f604De0191298dD393703Cce84f3;
+
+  // https://lineascan.build/address/0x63aB166e6E1b6Fb705b6ca23686FaD9705EB3534
+  address internal constant USDC_V_TOKEN = 0x63aB166e6E1b6Fb705b6ca23686FaD9705EB3534;
+
+  // https://lineascan.build/address/0x14ac9f8a8646D11D66fbaA9E9F5A869dC08B5D71
+  address internal constant USDC_ORACLE = 0x14ac9f8a8646D11D66fbaA9E9F5A869dC08B5D71;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0xA219439258ca9da29E9Cc4cE5596924745e12B93
+  address internal constant USDT_UNDERLYING = 0xA219439258ca9da29E9Cc4cE5596924745e12B93;
+
+  uint8 internal constant USDT_DECIMALS = 6;
+
+  // https://lineascan.build/address/0x88231dfEC71D4FF5c1e466D08C321944A7adC673
+  address internal constant USDT_A_TOKEN = 0x88231dfEC71D4FF5c1e466D08C321944A7adC673;
+
+  // https://lineascan.build/address/0x4CEdfa47F7d0e9036110B850Ce49f4cd47b28a2F
+  address internal constant USDT_V_TOKEN = 0x4CEdfa47F7d0e9036110B850Ce49f4cd47b28a2F;
+
+  // https://lineascan.build/address/0x0DccbA847D677d4dc3c22C9Dc17DC468226d08Ed
+  address internal constant USDT_ORACLE = 0x0DccbA847D677d4dc3c22C9Dc17DC468226d08Ed;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant USDT_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F
+  address internal constant wstETH_UNDERLYING = 0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://lineascan.build/address/0x58943d20e010d9E34C4511990e232783460d0219
+  address internal constant wstETH_A_TOKEN = 0x58943d20e010d9E34C4511990e232783460d0219;
+
+  // https://lineascan.build/address/0x81C1a619Be23050B3242B41a739e6B6CfDa56687
+  address internal constant wstETH_V_TOKEN = 0x81C1a619Be23050B3242B41a739e6B6CfDa56687;
+
+  // https://lineascan.build/address/0x96014CA32e2902A5F07c6ADF00eB17D3DE9aC364
+  address internal constant wstETH_ORACLE = 0x96014CA32e2902A5F07c6ADF00eB17D3DE9aC364;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0x2416092f143378750bb29b79eD961ab195CcEea5
+  address internal constant ezETH_UNDERLYING = 0x2416092f143378750bb29b79eD961ab195CcEea5;
+
+  uint8 internal constant ezETH_DECIMALS = 18;
+
+  // https://lineascan.build/address/0x935EfCBeFc1dF0541aFc3fE145134f8c9a0beB89
+  address internal constant ezETH_A_TOKEN = 0x935EfCBeFc1dF0541aFc3fE145134f8c9a0beB89;
+
+  // https://lineascan.build/address/0x1fE3452CEF885724F8aDF1382ee17d05d7e01CaB
+  address internal constant ezETH_V_TOKEN = 0x1fE3452CEF885724F8aDF1382ee17d05d7e01CaB;
+
+  // https://lineascan.build/address/0x1217a8A40cea4dB5429fbF6EDeB3B606b99CC9b0
+  address internal constant ezETH_ORACLE = 0x1217a8A40cea4dB5429fbF6EDeB3B606b99CC9b0;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant ezETH_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6
+  address internal constant weETH_UNDERLYING = 0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6;
+
+  uint8 internal constant weETH_DECIMALS = 18;
+
+  // https://lineascan.build/address/0x0C7921aB4888fd06731898b3fffFeB06781D5F4F
+  address internal constant weETH_A_TOKEN = 0x0C7921aB4888fd06731898b3fffFeB06781D5F4F;
+
+  // https://lineascan.build/address/0x37a843725508243952950307CeacE7A9f5D5c280
+  address internal constant weETH_V_TOKEN = 0x37a843725508243952950307CeacE7A9f5D5c280;
+
+  // https://lineascan.build/address/0x0abf2f5642d945b49B8d2DBC6f85c2D8e0424C85
+  address internal constant weETH_ORACLE = 0x0abf2f5642d945b49B8d2DBC6f85c2D8e0424C85;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant weETH_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+}
 library AaveV3LineaEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant WSTETH_CORRELATED = 1;
+
+  uint8 internal constant EZETH_CORRELATED = 2;
+
+  uint8 internal constant WEETH_CORRELATED = 3;
 }
 library AaveV3LineaExternalLibraries {
   // https://lineascan.build/address/0x6990DFae5c227F1aC5D486b1AC0eecAcC2B3e68d

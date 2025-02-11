@@ -76,14 +76,11 @@ library AaveV3EthereumEtherFi {
   // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
   address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
 
-  // https://etherscan.io/address/0xAB911dFB2bB9e264EE836F30D3367618f8Aef965
-  address internal constant WETH_GATEWAY = 0xAB911dFB2bB9e264EE836F30D3367618f8Aef965;
+  // https://etherscan.io/address/0xf956B38F035dC9067fb827A512D3CF35202AB0Bc
+  address internal constant WETH_GATEWAY = 0xf956B38F035dC9067fb827A512D3CF35202AB0Bc;
 
   // https://etherscan.io/address/0x909bA8DA4c826C62013Ce3A30ce1F42943F3b340
   address internal constant CONFIG_ENGINE = 0x909bA8DA4c826C62013Ce3A30ce1F42943F3b340;
-
-  // https://etherscan.io/address/0x1Ff525426800279843B71C0F818594DeCdC3b522
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x1Ff525426800279843B71C0F818594DeCdC3b522;
 
   // https://etherscan.io/address/0x1EBdbE77bbDDD284BdCE8D7981D7eD26D6af58cA
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x1EBdbE77bbDDD284BdCE8D7981D7eD26D6af58cA;

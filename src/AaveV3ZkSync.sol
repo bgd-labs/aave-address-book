@@ -69,11 +69,8 @@ library AaveV3ZkSync {
   // https://era.zksync.network/address/0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dAB0
   address internal constant WALLET_BALANCE_PROVIDER = 0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dAB0;
 
-  // https://era.zksync.network/address/0xD5f6c8D402E0a0222f7FA132F9e80fDCC074df5C
-  address internal constant WETH_GATEWAY = 0xD5f6c8D402E0a0222f7FA132F9e80fDCC074df5C;
-
-  // https://era.zksync.network/address/0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9;
+  // https://era.zksync.network/address/0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff
+  address internal constant WETH_GATEWAY = 0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff;
 
   // https://era.zksync.network/address/0x05c77Cf62346329a157d7A6F874464D049CECb26
   address internal constant RISK_STEWARD = 0x05c77Cf62346329a157d7A6F874464D049CECb26;

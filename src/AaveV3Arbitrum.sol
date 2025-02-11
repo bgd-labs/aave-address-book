@@ -86,10 +86,12 @@ library AaveV3Arbitrum {
     0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
   // https://arbiscan.io/address/0x411D79b8cC43384FDE66CaBf9b6a17180c842511
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x411D79b8cC43384FDE66CaBf9b6a17180c842511;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x411D79b8cC43384FDE66CaBf9b6a17180c842511;
 
   // https://arbiscan.io/address/0xD61BF98649EA8F8D09e184184777b1867F00E5CB
-  address internal constant STATIC_A_TOKEN_ORACLE = 0xD61BF98649EA8F8D09e184184777b1867F00E5CB;
+  address internal constant LEGACY_STATIC_A_TOKEN_ORACLE =
+    0xD61BF98649EA8F8D09e184184777b1867F00E5CB;
 
   // https://arbiscan.io/address/0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xF3C3F14dd7BDb7E03e6EBc3bc5Ffc6D66De12251;
@@ -103,8 +105,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  // https://arbiscan.io/address/0x5760E34c4003752329bC77790B1De44C2799F8C3
-  address internal constant WETH_GATEWAY = 0x5760E34c4003752329bC77790B1De44C2799F8C3;
+  // https://arbiscan.io/address/0x5283BEcEd7ADF6D003225C13896E536f2D4264FF
+  address internal constant WETH_GATEWAY = 0x5283BEcEd7ADF6D003225C13896E536f2D4264FF;
 
   // https://arbiscan.io/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;

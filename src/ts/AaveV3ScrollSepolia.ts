@@ -56,8 +56,8 @@ export const UI_POOL_DATA_PROVIDER = '0xDC55BcFC0963608401A4bA6298624E5895f8250a
 // https://sepolia.scrollscan.com/address/0x6c68e975764a56e62AF3d1C8209F789779Eb763B
 export const WALLET_BALANCE_PROVIDER = '0x6c68e975764a56e62AF3d1C8209F789779Eb763B';
 
-// https://sepolia.scrollscan.com/address/0x57ce905CfD7f986A929A26b006f797d181dB706e
-export const WETH_GATEWAY = '0x57ce905CfD7f986A929A26b006f797d181dB706e';
+// https://sepolia.scrollscan.com/address/0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4
+export const WETH_GATEWAY = '0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4';
 
 export const CHAIN_ID = 534351;
 export const ASSETS = {

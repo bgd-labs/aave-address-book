@@ -81,7 +81,8 @@ library AaveV3Ethereum {
     0x35bb522b102326ea3F1141661dF4626C87000e3E;
 
   // https://etherscan.io/address/0x411D79b8cC43384FDE66CaBf9b6a17180c842511
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x411D79b8cC43384FDE66CaBf9b6a17180c842511;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x411D79b8cC43384FDE66CaBf9b6a17180c842511;
 
   // https://etherscan.io/address/0xADC0A53095A0af87F3aa29FE0715B5c28016364e
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xADC0A53095A0af87F3aa29FE0715B5c28016364e;
@@ -98,8 +99,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
   address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
 
-  // https://etherscan.io/address/0xA434D495249abE33E031Fe71a969B81f3c07950D
-  address internal constant WETH_GATEWAY = 0xA434D495249abE33E031Fe71a969B81f3c07950D;
+  // https://etherscan.io/address/0xd01607c3C5eCABa394D8be377a08590149325722
+  address internal constant WETH_GATEWAY = 0xd01607c3C5eCABa394D8be377a08590149325722;
 
   // https://etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;

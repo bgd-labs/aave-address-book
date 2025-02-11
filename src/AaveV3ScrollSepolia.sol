@@ -68,8 +68,8 @@ library AaveV3ScrollSepolia {
   // https://sepolia.scrollscan.com/address/0x6c68e975764a56e62AF3d1C8209F789779Eb763B
   address internal constant WALLET_BALANCE_PROVIDER = 0x6c68e975764a56e62AF3d1C8209F789779Eb763B;
 
-  // https://sepolia.scrollscan.com/address/0x57ce905CfD7f986A929A26b006f797d181dB706e
-  address internal constant WETH_GATEWAY = 0x57ce905CfD7f986A929A26b006f797d181dB706e;
+  // https://sepolia.scrollscan.com/address/0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4
+  address internal constant WETH_GATEWAY = 0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4;
 }
 library AaveV3ScrollSepoliaAssets {
   // https://sepolia.scrollscan.com/address/0x7984E363c38b590bB4CA35aEd5133Ef2c6619C40

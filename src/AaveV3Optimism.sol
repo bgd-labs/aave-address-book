@@ -83,7 +83,8 @@ library AaveV3Optimism {
     0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://optimistic.etherscan.io/address/0x22D76094730fA377184100EFB8CEfC673B89B372
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x22D76094730fA377184100EFB8CEfC673B89B372;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x22D76094730fA377184100EFB8CEfC673B89B372;
 
   // https://optimistic.etherscan.io/address/0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857;
@@ -97,14 +98,11 @@ library AaveV3Optimism {
   // https://optimistic.etherscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  // https://optimistic.etherscan.io/address/0x60eE8b61a13c67d0191c851BEC8F0bc850160710
-  address internal constant WETH_GATEWAY = 0x60eE8b61a13c67d0191c851BEC8F0bc850160710;
+  // https://optimistic.etherscan.io/address/0x5f2508cAE9923b02316254026CD43d7902866725
+  address internal constant WETH_GATEWAY = 0x5f2508cAE9923b02316254026CD43d7902866725;
 
   // https://optimistic.etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
-
-  // https://optimistic.etherscan.io/address/0x9371Df6e3432c74130b632e4e7E57E1F54BFC712
-  address internal constant STATA_FACTORY = 0x9371Df6e3432c74130b632e4e7E57E1F54BFC712;
 }
 library AaveV3OptimismAssets {
   // https://optimistic.etherscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1

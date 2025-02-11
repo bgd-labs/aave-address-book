@@ -76,8 +76,8 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
   address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
 
-  // https://etherscan.io/address/0x0B8C700917a6991FEa7198dDFC80bc8962b5055D
-  address internal constant WETH_GATEWAY = 0x0B8C700917a6991FEa7198dDFC80bc8962b5055D;
+  // https://etherscan.io/address/0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299
+  address internal constant WETH_GATEWAY = 0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299;
 
   // https://etherscan.io/address/0x1097eDb85392932b7dCB630baDDC8A6D73585218
   address internal constant CONFIG_ENGINE = 0x1097eDb85392932b7dCB630baDDC8A6D73585218;

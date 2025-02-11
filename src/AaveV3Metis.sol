@@ -85,7 +85,8 @@ library AaveV3Metis {
   address internal constant WALLET_BALANCE_PROVIDER = 0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b;
 
   // https://explorer.metis.io/address/0x9C62AdC332888F56998542415c38D7CDf3Ff7619
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x9C62AdC332888F56998542415c38D7CDf3Ff7619;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x9C62AdC332888F56998542415c38D7CDf3Ff7619;
 }
 library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0

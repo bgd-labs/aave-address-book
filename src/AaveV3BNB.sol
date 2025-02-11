@@ -88,14 +88,15 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
   address internal constant WALLET_BALANCE_PROVIDER = 0x36616cf17557639614c1cdDb356b1B83fc0B2132;
 
-  // https://bscscan.com/address/0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88
-  address internal constant WETH_GATEWAY = 0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
+  // https://bscscan.com/address/0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7
+  address internal constant WETH_GATEWAY = 0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7;
 
   // https://bscscan.com/address/0x5E2d083417D12d4B0824E14Ecd48D26831F4Da7D
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x5E2d083417D12d4B0824E14Ecd48D26831F4Da7D;
 
   // https://bscscan.com/address/0x326aB0868bD279382Be2DF5E228Cb8AF38649AB4
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x326aB0868bD279382Be2DF5E228Cb8AF38649AB4;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x326aB0868bD279382Be2DF5E228Cb8AF38649AB4;
 }
 library AaveV3BNBAssets {
   // https://bscscan.com/address/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82
