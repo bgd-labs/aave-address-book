@@ -4397,6 +4397,28 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x067ae75628177FD257c2B1e500993e1a0baBcBd1",
+      "name": "Aave Base GHO",
+      "decimals": 18,
+      "symbol": "aBasGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -7404,6 +7426,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 80 },
-  "timestamp": "2025-01-30T12:01:43.440Z"
+  "version": { "major": 3, "minor": 0, "patch": 81 },
+  "timestamp": "2025-02-11T00:13:11.255Z"
 }
