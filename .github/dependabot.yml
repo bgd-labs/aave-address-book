@@ -5,10 +5,12 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/"
-    schedule:
-      interval: "weekly"
+  # disable for now as it does not work & spams the repo
+  # - package-ecosystem: "npm" # See documentation for possible values
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #   open-pull-requests-limit: 1
 
   - package-ecosystem: "gitsubmodule" # See documentation for possible values
     directory: "/" # Location of package manifests
