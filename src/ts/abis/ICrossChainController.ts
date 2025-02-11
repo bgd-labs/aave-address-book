@@ -874,19 +874,6 @@ export const ICrossChainController_ABI = [
     stateMutability: 'nonpayable',
   },
   {
-    type: 'function',
-    name: 'whoCanRescue',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'address',
-        internalType: 'address',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
     type: 'event',
     name: 'BridgeAdapterUpdated',
     inputs: [

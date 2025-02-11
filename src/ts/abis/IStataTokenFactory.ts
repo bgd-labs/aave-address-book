@@ -2,6 +2,58 @@
 export const IStataTokenFactory_ABI = [
   {
     type: 'function',
+    name: 'INITIAL_OWNER',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'POOL',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'contract IPool',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'STATA_TOKEN_IMPL',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'TRANSPARENT_PROXY_FACTORY',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'contract ITransparentProxyFactory',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'createStataTokens',
     inputs: [
       {

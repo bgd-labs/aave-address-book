@@ -72,8 +72,8 @@ library AaveV3Linea {
   // https://lineascan.build/address/0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D
   address internal constant WALLET_BALANCE_PROVIDER = 0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D;
 
-  // https://lineascan.build/address/0x4758213271BFdC72224A7a8742dC865fC97756e1
-  address internal constant WETH_GATEWAY = 0x4758213271BFdC72224A7a8742dC865fC97756e1;
+  // https://lineascan.build/address/0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F
+  address internal constant WETH_GATEWAY = 0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F;
 }
 library AaveV3LineaAssets {
   // https://lineascan.build/address/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f

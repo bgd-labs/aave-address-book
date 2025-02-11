@@ -61,19 +61,6 @@ export const IRescuable_ABI = [
     stateMutability: 'view',
   },
   {
-    type: 'function',
-    name: 'whoCanRescue',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'address',
-        internalType: 'address',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
     type: 'event',
     name: 'ERC20Rescued',
     inputs: [
