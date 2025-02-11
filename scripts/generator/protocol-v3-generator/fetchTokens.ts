@@ -14,9 +14,9 @@ export async function fetchTokens(
   poolConfig: PoolConfig,
   poolAddresses: Awaited<ReturnType<typeof fetchPoolAddresses>>,
 ) {
-  const staticATokenFactoryContract = poolConfig.additionalAddresses.STATIC_A_TOKEN_FACTORY
+  const staticATokenFactoryContract = poolConfig.additionalAddresses.LEGACY_STATIC_A_TOKEN_FACTORY
     ? getContract({
-        address: poolConfig.additionalAddresses.STATIC_A_TOKEN_FACTORY,
+        address: poolConfig.additionalAddresses.LEGACY_STATIC_A_TOKEN_FACTORY,
         abi: IStaticATokenFactory_ABI,
         client,
       })

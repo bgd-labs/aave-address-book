@@ -63,9 +63,104 @@ export const WALLET_BALANCE_PROVIDER = '0xff75B6da14FfbbfD355Daf7a2731456b3562Ba
 export const WETH_GATEWAY = '0x4758213271BFdC72224A7a8742dC865fC97756e1';
 
 // https://lineascan.build/address/0x28ad75CA21793835b975130e9FdA149A476a2b7c
-export const STATIC_A_TOKEN_FACTORY = '0x28ad75CA21793835b975130e9FdA149A476a2b7c';
+export const STATA_FACTORY = '0x28ad75CA21793835b975130e9FdA149A476a2b7c';
 
 export const CHAIN_ID = 59144;
-export const ASSETS = {} as const;
-export const E_MODES = {} as const;
+export const ASSETS = {
+  WETH: {
+    decimals: 18,
+    id: 0,
+    UNDERLYING: '0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f',
+    A_TOKEN: '0x787897dF92703BB3Fc4d9Ee98e15C0b8130Bf163',
+    V_TOKEN: '0x0e7543a9dA61b2E71fC880685eD2945B7426a689',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x3c6Cd9Cc7c7a4c2Cf5a82734CD249D7D593354dA',
+  },
+  WBTC: {
+    decimals: 8,
+    id: 1,
+    UNDERLYING: '0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4',
+    A_TOKEN: '0x37f7E06359F98162615e016d0008023D910bB576',
+    V_TOKEN: '0x74A1b56f5137b00AA0ADA1dD964a3A361Ecc32e9',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9',
+  },
+  USDC: {
+    decimals: 6,
+    id: 2,
+    UNDERLYING: '0x176211869cA2b568f2A7D4EE941E073a821EE1ff',
+    A_TOKEN: '0x374D7860c4f2f604De0191298dD393703Cce84f3',
+    V_TOKEN: '0x63aB166e6E1b6Fb705b6ca23686FaD9705EB3534',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x14ac9f8a8646D11D66fbaA9E9F5A869dC08B5D71',
+  },
+  USDT: {
+    decimals: 6,
+    id: 3,
+    UNDERLYING: '0xA219439258ca9da29E9Cc4cE5596924745e12B93',
+    A_TOKEN: '0x88231dfEC71D4FF5c1e466D08C321944A7adC673',
+    V_TOKEN: '0x4CEdfa47F7d0e9036110B850Ce49f4cd47b28a2F',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x0DccbA847D677d4dc3c22C9Dc17DC468226d08Ed',
+  },
+  wstETH: {
+    decimals: 18,
+    id: 4,
+    UNDERLYING: '0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F',
+    A_TOKEN: '0x58943d20e010d9E34C4511990e232783460d0219',
+    V_TOKEN: '0x81C1a619Be23050B3242B41a739e6B6CfDa56687',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x96014CA32e2902A5F07c6ADF00eB17D3DE9aC364',
+  },
+  ezETH: {
+    decimals: 18,
+    id: 5,
+    UNDERLYING: '0x2416092f143378750bb29b79eD961ab195CcEea5',
+    A_TOKEN: '0x935EfCBeFc1dF0541aFc3fE145134f8c9a0beB89',
+    V_TOKEN: '0x1fE3452CEF885724F8aDF1382ee17d05d7e01CaB',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x1217a8A40cea4dB5429fbF6EDeB3B606b99CC9b0',
+  },
+  weETH: {
+    decimals: 18,
+    id: 6,
+    UNDERLYING: '0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6',
+    A_TOKEN: '0x0C7921aB4888fd06731898b3fffFeB06781D5F4F',
+    V_TOKEN: '0x37a843725508243952950307CeacE7A9f5D5c280',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x0abf2f5642d945b49B8d2DBC6f85c2D8e0424C85',
+  },
+} as const;
+export const E_MODES = {
+  '1': {
+    label: 'wstETH correlated',
+    collateralBitmap: '16',
+    collateralAssets: ['0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f'],
+    ltv: 9350,
+    liquidationThreshold: 9550,
+    liquidationBonus: 10100,
+  },
+  '2': {
+    label: 'ezETH correlated',
+    collateralBitmap: '32',
+    collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f'],
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+  '3': {
+    label: 'weETH correlated',
+    collateralBitmap: '64',
+    collateralAssets: ['0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f'],
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;

@@ -165,21 +165,21 @@ library AaveV3FantomAssets {
   address internal constant ETH_INTEREST_RATE_STRATEGY = 0x4aa694e6c06D6162d95BE98a2Df6a521d5A7b521;
 
   // https://ftmscan.com/address/0x049d68029688eAbF473097a2fC38ef61633A3C7A
-  address internal constant fUSDT_UNDERLYING = 0x049d68029688eAbF473097a2fC38ef61633A3C7A;
+  address internal constant USDT_UNDERLYING = 0x049d68029688eAbF473097a2fC38ef61633A3C7A;
 
-  uint8 internal constant fUSDT_DECIMALS = 6;
+  uint8 internal constant USDT_DECIMALS = 6;
 
   // https://ftmscan.com/address/0x6ab707Aca953eDAeFBc4fD23bA73294241490620
-  address internal constant fUSDT_A_TOKEN = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
+  address internal constant USDT_A_TOKEN = 0x6ab707Aca953eDAeFBc4fD23bA73294241490620;
 
   // https://ftmscan.com/address/0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7
-  address internal constant fUSDT_V_TOKEN = 0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7;
+  address internal constant USDT_V_TOKEN = 0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7;
 
   // https://ftmscan.com/address/0xF64b636c5dFe1d3555A847341cDC449f612307d0
-  address internal constant fUSDT_ORACLE = 0xF64b636c5dFe1d3555A847341cDC449f612307d0;
+  address internal constant USDT_ORACLE = 0xF64b636c5dFe1d3555A847341cDC449f612307d0;
 
   // https://ftmscan.com/address/0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82
-  address internal constant fUSDT_INTEREST_RATE_STRATEGY =
+  address internal constant USDT_INTEREST_RATE_STRATEGY =
     0xf4a0039F2d4a2EaD5216AbB6Ae4C4C3AA2dB9b82;
 
   // https://ftmscan.com/address/0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B
