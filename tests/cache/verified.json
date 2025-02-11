@@ -7284,6 +7284,9 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4": {
+      "name": "WrappedTokenGatewayV3"
     }
   }
 }
