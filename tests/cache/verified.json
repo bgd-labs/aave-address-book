@@ -2387,6 +2387,15 @@
     },
     "0xD1E856a947CdF56b4f000ee29d34F5808E0A6848": {
       "name": "GhoGsmSteward"
+    },
+    "0xd01607c3C5eCABa394D8be377a08590149325722": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0xf956B38F035dC9067fb827A512D3CF35202AB0Bc": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "10": {
@@ -2851,6 +2860,9 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x5f2508cAE9923b02316254026CD43d7902866725": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "56": {
@@ -3183,6 +3195,9 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "100": {
@@ -3503,6 +3518,9 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0xb85d72EC1EfE48168c4aBC4eB855f8Cbcd05cE38": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "137": {
@@ -4393,6 +4411,9 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0xBC302053db3aA514A3c86B9221082f162B91ad63": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "146": {
@@ -4589,6 +4610,9 @@
     },
     "0x0a902bCd36F128683EAF1eE7001a3ad2E808d93B": {
       "name": "TransparentProxyFactoryZkSync"
+    },
+    "0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "1088": {
@@ -5335,6 +5359,9 @@
     },
     "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73": {
       "name": "GhoOracle"
+    },
+    "0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "42161": {
@@ -5877,6 +5904,9 @@
     },
     "0xCd5ab470AaC5c13e1063ee700503f3346b7C90Db": {
       "name": "GhoCcipSteward"
+    },
+    "0x5283BEcEd7ADF6D003225C13896E536f2D4264FF": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "43113": {
@@ -6622,6 +6652,9 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x2825cE5921538d17cc15Ae00a8B24fF759C6CDaE": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "59144": {
@@ -6804,6 +6837,9 @@
     },
     "0x0abf2f5642d945b49B8d2DBC6f85c2D8e0424C85": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "84532": {
