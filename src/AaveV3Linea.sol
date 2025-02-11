@@ -74,9 +74,6 @@ library AaveV3Linea {
 
   // https://lineascan.build/address/0x4758213271BFdC72224A7a8742dC865fC97756e1
   address internal constant WETH_GATEWAY = 0x4758213271BFdC72224A7a8742dC865fC97756e1;
-
-  // https://lineascan.build/address/0x28ad75CA21793835b975130e9FdA149A476a2b7c
-  address internal constant STATA_FACTORY = 0x28ad75CA21793835b975130e9FdA149A476a2b7c;
 }
 library AaveV3LineaAssets {
   // https://lineascan.build/address/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f
