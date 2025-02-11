@@ -56,8 +56,8 @@ export const UI_POOL_DATA_PROVIDER = '0x88b4013f8C50e61ab027Cc253ab9a50663e2dF45
 // https://testnet.snowtrace.io/address/0x3f5A507B33260a3869878B31FB90F04F451d28e3
 export const WALLET_BALANCE_PROVIDER = '0x3f5A507B33260a3869878B31FB90F04F451d28e3';
 
-// https://testnet.snowtrace.io/address/0x2825cE5921538d17cc15Ae00a8B24fF759C6CDaE
-export const WETH_GATEWAY = '0x2825cE5921538d17cc15Ae00a8B24fF759C6CDaE';
+// https://testnet.snowtrace.io/address/0x1648C14DbB6ccdd5846969cE23DeEC4C66a03335
+export const WETH_GATEWAY = '0x1648C14DbB6ccdd5846969cE23DeEC4C66a03335';
 
 export const CHAIN_ID = 43113;
 export const ASSETS = {

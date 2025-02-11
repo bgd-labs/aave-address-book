@@ -69,8 +69,8 @@ library AaveV2Fuji {
   // https://testnet.snowtrace.io/address/0x3f5A507B33260a3869878B31FB90F04F451d28e3
   address internal constant WALLET_BALANCE_PROVIDER = 0x3f5A507B33260a3869878B31FB90F04F451d28e3;
 
-  // https://testnet.snowtrace.io/address/0x2825cE5921538d17cc15Ae00a8B24fF759C6CDaE
-  address internal constant WETH_GATEWAY = 0x2825cE5921538d17cc15Ae00a8B24fF759C6CDaE;
+  // https://testnet.snowtrace.io/address/0x1648C14DbB6ccdd5846969cE23DeEC4C66a03335
+  address internal constant WETH_GATEWAY = 0x1648C14DbB6ccdd5846969cE23DeEC4C66a03335;
 }
 library AaveV2FujiAssets {
   // https://testnet.snowtrace.io/address/0x9668f5f55f2712Dd2dfa316256609b516292D554

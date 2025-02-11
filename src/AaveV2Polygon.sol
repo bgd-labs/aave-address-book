@@ -85,8 +85,8 @@ library AaveV2Polygon {
   // https://polygonscan.com/address/0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e
   address internal constant WALLET_BALANCE_PROVIDER = 0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e;
 
-  // https://polygonscan.com/address/0xBC302053db3aA514A3c86B9221082f162B91ad63
-  address internal constant WETH_GATEWAY = 0xBC302053db3aA514A3c86B9221082f162B91ad63;
+  // https://polygonscan.com/address/0xf1e6d4347105138B51E2bacA9A22fA228309ebB1
+  address internal constant WETH_GATEWAY = 0xf1e6d4347105138B51E2bacA9A22fA228309ebB1;
 }
 library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063

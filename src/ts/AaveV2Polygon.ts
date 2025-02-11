@@ -71,8 +71,8 @@ export const UI_POOL_DATA_PROVIDER = '0x204f2Eb81D996729829debC819f7992DCEEfE7b1
 // https://polygonscan.com/address/0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e
 export const WALLET_BALANCE_PROVIDER = '0x34aa032bC416Cf2CdC45c0C8f065b1F19463D43e';
 
-// https://polygonscan.com/address/0xBC302053db3aA514A3c86B9221082f162B91ad63
-export const WETH_GATEWAY = '0xBC302053db3aA514A3c86B9221082f162B91ad63';
+// https://polygonscan.com/address/0xf1e6d4347105138B51E2bacA9A22fA228309ebB1
+export const WETH_GATEWAY = '0xf1e6d4347105138B51E2bacA9A22fA228309ebB1';
 
 export const CHAIN_ID = 137;
 export const ASSETS = {
