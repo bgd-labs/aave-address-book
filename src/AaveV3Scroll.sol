@@ -88,7 +88,8 @@ library AaveV3Scroll {
   address internal constant WETH_GATEWAY = 0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F;
 
   // https://scrollscan.com/address/0x970b77b96D94966939a8F867c2BfC2aC0310C0e7
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x970b77b96D94966939a8F867c2BfC2aC0310C0e7;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x970b77b96D94966939a8F867c2BfC2aC0310C0e7;
 }
 library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x5300000000000000000000000000000000000004

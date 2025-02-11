@@ -77,7 +77,8 @@ library AaveV3Polygon {
     0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://polygonscan.com/address/0x397202AB0b4E7C954ac0c493c00749C517210953
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x397202AB0b4E7C954ac0c493c00749C517210953;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x397202AB0b4E7C954ac0c493c00749C517210953;
 
   // https://polygonscan.com/address/0xC4aff49fCeD8ac1D818a6DCAB063f9f97E66ec5E
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xC4aff49fCeD8ac1D818a6DCAB063f9f97E66ec5E;
