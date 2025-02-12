@@ -107,6 +107,9 @@ const knownErrors = {
   43114: {
     '0x11979886A6dBAE27D7a72c49fCF3F23240D647bF': true, // very old contracts we know will never be verified
   },
+  146: {
+    '0x0846C28Dd54DEA4Fd7Fb31bcc5EB81673D68c695': true, // etherscan issue - not detecting that it's verified
+  },
 };
 
 describe(
