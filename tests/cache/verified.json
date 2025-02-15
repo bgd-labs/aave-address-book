@@ -4991,6 +4991,66 @@
     },
     "0x70884634D0098782592111A2A6B8d223be31CB7b": {
       "name": "Executor"
+    },
+    "0x2aB3580a805fB10CbAd567212C70e26C1B6769eC": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x2e770EF8AbdEcA83D9310E2d3B3c2FdfFF5fd85A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4fDE7000ac23033B0FD420098B8a83A9Ff52c33C": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6c23bAF050ec192afc0B967a93b83e6c5405df43": {
+      "name": "AaveOracle"
+    },
+    "0x3e652E97ff339B73421f824F5b03d75b62F1Fb51": {
+      "name": "ACLManager"
+    },
+    "0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x589750BA8aF186cE5B55391B0b7148cAD43a1619": {
+      "name": "L2PoolInstance"
+    },
+    "0xBeC519531F0E78BcDdB295242fA4EC5251B38574": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0xe875feF12DF97D763038F0Eac53962Ca36249eA6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9D6aB154437A28CF202954e1176449c75e6D6c4B": {
+      "name": "EmissionManager"
+    },
+    "0x29B8Edc8a5158e8eBD7Dea3473517AB079260a0b": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd8247C7926841337E8adf9fD9E87026992C45062": {
+      "name": "ATokenInstance"
+    },
+    "0x294daB91f3539f5a74Ed995a59235eE62A14A345": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xea9989569Cf2D860597b4d649c9A963c15ab84fa": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xe892E40C92c2E4D281Be59b2E6300F271d824E75": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0x01d678F1bbE148C96e7501F1Ac41661904F84F61": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x4F6f44325828D2A40724A0a966F33d75cD1DF7c1": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x4758213271BFdC72224A7a8742dC865fC97756e1": {
+      "name": "WalletBalanceProvider"
+    },
+    "0xde35f7711295Dfd0CD8bd94d46f65b8Acb182520": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x4A49351ED179b23af08523Af98a8ca95C712b9d9": {
+      "name": "L2Encoder"
     }
   },
   "8453": {

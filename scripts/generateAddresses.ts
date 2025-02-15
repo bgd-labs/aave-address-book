@@ -28,6 +28,7 @@ import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {zkSyncProtoV3} from './configs/pools/zksync';
 import {lineaProtoV3} from './configs/pools/linea';
+import {mantleProtoV3} from './configs/pools/mantle';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -142,6 +143,7 @@ async function main() {
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
       lineaProtoV3,
+      mantleProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
