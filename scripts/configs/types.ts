@@ -57,9 +57,9 @@ export interface PoolConfig {
     PROOF_OF_RESERVE?: Hex;
     PROOF_OF_RESERVE_AGGREGATOR?: Hex;
     DELEGATION_AWARE_A_TOKEN_IMPL_REV_1?: Hex;
-    STATIC_A_TOKEN_FACTORY?: Hex; // deprecated
+    LEGACY_STATIC_A_TOKEN_FACTORY?: Hex; // deprecated
+    LEGACY_STATIC_A_TOKEN_ORACLE?: Hex; // deprecated
     STATA_FACTORY?: Hex;
-    STATIC_A_TOKEN_ORACLE?: Hex;
     CAPS_PLUS_RISK_STEWARD?: Hex;
     RISK_STEWARD?: Hex;
     EDGE_RISK_STEWARD?: Hex;

@@ -84,7 +84,8 @@ library AaveV3Avalanche {
     0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://snowtrace.io/address/0x691C316b2Eec7e64d17e7E3E01f3dB44c9CcEf19
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x691C316b2Eec7e64d17e7E3E01f3dB44c9CcEf19;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x691C316b2Eec7e64d17e7E3E01f3dB44c9CcEf19;
 
   // https://snowtrace.io/address/0x2Cf641F7C0eac2788A7924B82d6Ca8EB7bAa4E3A
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x2Cf641F7C0eac2788A7924B82d6Ca8EB7bAa4E3A;

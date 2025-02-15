@@ -4397,6 +4397,42 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x067ae75628177FD257c2B1e500993e1a0baBcBd1",
+      "name": "Aave Base GHO",
+      "decimals": 18,
+      "symbol": "aBasGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E",
+      "name": "Wrapped Aave Base GHO",
+      "decimals": 18,
+      "symbol": "waBasGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
+        "underlyingAToken": "0x067ae75628177FD257c2B1e500993e1a0baBcBd1"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -6917,7 +6953,7 @@
       "address": "0x049d68029688eAbF473097a2fC38ef61633A3C7A",
       "name": "Frapped USDT",
       "decimals": 6,
-      "symbol": "fUSDT",
+      "symbol": "USDT",
       "tags": ["underlying"]
     },
     {
@@ -7402,8 +7438,162 @@
         "pool": "0x0AA97c284e98396202b6A04024F5E2c65026F3c0",
         "underlying": "0x853d955aCEf822Db058eb8505911ED77F175b99e"
       }
+    },
+    {
+      "chainId": 59144,
+      "address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0x787897dF92703BB3Fc4d9Ee98e15C0b8130Bf163",
+      "name": "Aave Linea WETH",
+      "decimals": 18,
+      "symbol": "aLinWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f"
+      }
+    },
+    {
+      "chainId": 59144,
+      "address": "0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4",
+      "name": "Wrapped BTC",
+      "decimals": 8,
+      "symbol": "WBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wbtc.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0x37f7E06359F98162615e016d0008023D910bB576",
+      "name": "Aave Linea WBTC",
+      "decimals": 8,
+      "symbol": "aLinWBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awbtc.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4"
+      }
+    },
+    {
+      "chainId": 59144,
+      "address": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0x374D7860c4f2f604De0191298dD393703Cce84f3",
+      "name": "Aave Linea USDC",
+      "decimals": 6,
+      "symbol": "aLinUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff"
+      }
+    },
+    {
+      "chainId": 59144,
+      "address": "0xA219439258ca9da29E9Cc4cE5596924745e12B93",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0x88231dfEC71D4FF5c1e466D08C321944A7adC673",
+      "name": "Aave Linea USDT",
+      "decimals": 6,
+      "symbol": "aLinUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0xA219439258ca9da29E9Cc4cE5596924745e12B93"
+      }
+    },
+    {
+      "chainId": 59144,
+      "address": "0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wsteth.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0x58943d20e010d9E34C4511990e232783460d0219",
+      "name": "Aave Linea wstETH",
+      "decimals": 18,
+      "symbol": "aLinwstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awsteth.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F"
+      }
+    },
+    {
+      "chainId": 59144,
+      "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "name": "Renzo Restaked ETH",
+      "decimals": 18,
+      "symbol": "ezETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0x935EfCBeFc1dF0541aFc3fE145134f8c9a0beB89",
+      "name": "Aave Linea ezETH",
+      "decimals": 18,
+      "symbol": "aLinezETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aezeth.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0x2416092f143378750bb29b79eD961ab195CcEea5"
+      }
+    },
+    {
+      "chainId": 59144,
+      "address": "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weeth.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0x0C7921aB4888fd06731898b3fffFeB06781D5F4F",
+      "name": "Aave Linea weETH",
+      "decimals": 18,
+      "symbol": "aLinweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweeth.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6"
+      }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 80 },
-  "timestamp": "2025-01-30T12:01:43.440Z"
+  "version": { "major": 3, "minor": 0, "patch": 85 },
+  "timestamp": "2025-02-12T00:13:09.101Z"
 }

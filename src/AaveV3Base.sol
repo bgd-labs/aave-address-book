@@ -79,10 +79,12 @@ library AaveV3Base {
     0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4;
 
   // https://basescan.org/address/0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22;
 
   // https://basescan.org/address/0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88
-  address internal constant STATIC_A_TOKEN_ORACLE = 0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
+  address internal constant LEGACY_STATIC_A_TOKEN_ORACLE =
+    0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
 
   // https://basescan.org/address/0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d
   address internal constant CONFIG_ENGINE = 0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d;
@@ -298,6 +300,26 @@ library AaveV3BaseAssets {
 
   // https://basescan.org/address/0xF8F10f39116716e89498c1c5E94137ADa11b2BC7
   address internal constant ezETH_STATA_TOKEN = 0xF8F10f39116716e89498c1c5E94137ADa11b2BC7;
+
+  // https://basescan.org/address/0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee
+  address internal constant GHO_UNDERLYING = 0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://basescan.org/address/0x067ae75628177FD257c2B1e500993e1a0baBcBd1
+  address internal constant GHO_A_TOKEN = 0x067ae75628177FD257c2B1e500993e1a0baBcBd1;
+
+  // https://basescan.org/address/0x38e59ADE183BbEb94583d44213c8f3297e9933e9
+  address internal constant GHO_V_TOKEN = 0x38e59ADE183BbEb94583d44213c8f3297e9933e9;
+
+  // https://basescan.org/address/0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73
+  address internal constant GHO_ORACLE = 0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73;
+
+  // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E
+  address internal constant GHO_STATA_TOKEN = 0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
