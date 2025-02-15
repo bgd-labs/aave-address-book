@@ -100,6 +100,18 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
+      "chainId": 8453,
+      "path": [
+        "AaveV3Base",
+        "ASSETS",
+        "GHO",
+        "STATA_TOKEN",
+      ],
+      "value": "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E",
+    },
+  },
+  {
+    "item": {
       "chainId": 42161,
       "path": [
         "AaveV3Arbitrum",

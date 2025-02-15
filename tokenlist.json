@@ -4419,6 +4419,20 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E",
+      "name": "Wrapped Aave Base GHO",
+      "decimals": 18,
+      "symbol": "waBasGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee",
+        "underlyingAToken": "0x067ae75628177FD257c2B1e500993e1a0baBcBd1"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -7580,6 +7594,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 84 },
-  "timestamp": "2025-02-11T12:29:23.312Z"
+  "version": { "major": 3, "minor": 0, "patch": 85 },
+  "timestamp": "2025-02-15T13:41:58.475Z"
 }
