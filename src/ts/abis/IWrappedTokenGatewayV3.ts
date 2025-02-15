@@ -2,6 +2,32 @@
 export const IWrappedTokenGatewayV3_ABI = [
   {
     type: 'function',
+    name: 'POOL',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'contract IPool',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'WETH',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'contract IWETH',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'borrowETH',
     inputs: [
       {

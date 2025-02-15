@@ -92,8 +92,8 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
 
-  // https://polygonscan.com/address/0xF5f61a1ab3488fCB6d86451846bcFa9cdc108eB0
-  address internal constant WETH_GATEWAY = 0xF5f61a1ab3488fCB6d86451846bcFa9cdc108eB0;
+  // https://polygonscan.com/address/0xBC302053db3aA514A3c86B9221082f162B91ad63
+  address internal constant WETH_GATEWAY = 0xBC302053db3aA514A3c86B9221082f162B91ad63;
 
   // https://polygonscan.com/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;

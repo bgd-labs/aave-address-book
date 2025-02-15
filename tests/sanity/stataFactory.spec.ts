@@ -3,27 +3,16 @@ import * as addressBook from '../../src/ts/AaveAddressBook';
 import {getContract} from 'viem';
 import {getClient} from '../../scripts/clients';
 import {getMisc} from '../utils';
+import {IStataTokenFactory_ABI} from '../../src/ts/abis/IStataTokenFactory';
 
 export async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
   const factory = getContract({
     abi: [
+      ...IStataTokenFactory_ABI,
       {
         type: 'function',
-        name: 'POOL',
-        inputs: [],
-        outputs: [
-          {
-            name: '',
-            type: 'address',
-            internalType: 'address',
-          },
-        ],
-        stateMutability: 'view',
-      },
-      {
-        type: 'function',
-        name: 'PROXY_ADMIN',
+        name: 'PROXY_ADMIN', // legacy for not yet upgraded contracts
         inputs: [],
         outputs: [
           {

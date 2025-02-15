@@ -84,8 +84,8 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0xE51642875Af07Fea1B03d821E41a9DB24bC4447E
   address internal constant WALLET_BALANCE_PROVIDER = 0xE51642875Af07Fea1B03d821E41a9DB24bC4447E;
 
-  // https://scrollscan.com/address/0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F
-  address internal constant WETH_GATEWAY = 0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F;
+  // https://scrollscan.com/address/0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4
+  address internal constant WETH_GATEWAY = 0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4;
 
   // https://scrollscan.com/address/0x970b77b96D94966939a8F867c2BfC2aC0310C0e7
   address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
