@@ -56,6 +56,9 @@ library AaveV3Sonic {
   // https://sonicscan.org/address/0xa119F84bC1b8083F5061E4cf53705cBf1065bA27
   address internal constant CONFIG_ENGINE = 0xa119F84bC1b8083F5061E4cf53705cBf1065bA27;
 
+  // https://sonicscan.org/address/0xAe13e4DA0952f0B8fE04E21df53716fCF799a923
+  address internal constant RISK_STEWARD = 0xAe13e4DA0952f0B8fE04E21df53716fCF799a923;
+
   // https://sonicscan.org/address/0x5E5D87858592d211fdb4503F09FB2B5cf805cB51
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x5E5D87858592d211fdb4503F09FB2B5cf805cB51;
