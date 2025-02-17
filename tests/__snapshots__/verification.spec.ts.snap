@@ -4,18 +4,6 @@ exports[`verification > should have all contracts verified except for the known 
 [
   {
     "item": {
-      "chainId": 8453,
-      "path": [
-        "AaveV3Base",
-        "ASSETS",
-        "WETH",
-        "STATA_TOKEN",
-      ],
-      "value": "0xe298b938631f750DD409fB18227C4a23dCdaab9b",
-    },
-  },
-  {
-    "item": {
       "chainId": 42220,
       "path": [
         "GovernanceV3Celo",
@@ -36,7 +24,19 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
-      "chainId": 1,
+      "chainId": 8453,
+      "path": [
+        "AaveV3Base",
+        "ASSETS",
+        "WETH",
+        "STATA_TOKEN",
+      ],
+      "value": "0xe298b938631f750DD409fB18227C4a23dCdaab9b",
+    },
+  },
+  {
+    "item": {
+      "chainId": 8453,
       "path": [
         "AaveV3Base",
         "ASSETS",
@@ -116,6 +116,18 @@ exports[`verification > should have all contracts verified except for the known 
         "STATA_TOKEN",
       ],
       "value": "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7",
+    },
+  },
+  {
+    "item": {
+      "chainId": 8453,
+      "path": [
+        "AaveV3Base",
+        "ASSETS",
+        "GHO",
+        "STATA_TOKEN",
+      ],
+      "value": "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E",
     },
   },
   {
