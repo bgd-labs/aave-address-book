@@ -4473,6 +4473,9 @@
     },
     "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0xAe13e4DA0952f0B8fE04E21df53716fCF799a923": {
+      "name": "RiskSteward"
     }
   },
   "324": {
