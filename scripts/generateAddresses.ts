@@ -27,6 +27,7 @@ import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism'
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {zkSyncProtoV3} from './configs/pools/zksync';
+import {lineaProtoV3} from './configs/pools/linea';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -63,9 +64,14 @@ import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
 import {governanceConfigZkSync} from './configs/governance/zksync';
 import {zkSyncAddresses} from './configs/networks/zksync';
+import {lineaAddresses} from './configs/networks/linea';
 import {ghoArbitrum} from './configs/gho/arbitrum';
+import {ghoBase} from './configs/gho/base';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
+import {governanceConfigLinea} from './configs/governance/linea';
+import {mantleAddresses} from './configs/networks/mantle';
+import {sonicAddresses} from './configs/networks/sonic';
 
 async function main() {
   // cleanup ts artifacts
@@ -96,6 +102,7 @@ async function main() {
       governanceConfigPolygonZkEvm,
       governanceConfigZkSync,
       governanceConfigCelo,
+      governanceConfigLinea,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -135,9 +142,10 @@ async function main() {
       harmonyProtoV3,
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
+      lineaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum].map((config) => generateGho(config));
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
 
   const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
   console.log('✅ Tokens list generation finished');
@@ -162,6 +170,9 @@ async function main() {
     polygonZkEvmAddresses,
     sepoliaAddresses,
     zkSyncAddresses,
+    lineaAddresses,
+    mantleAddresses,
+    sonicAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

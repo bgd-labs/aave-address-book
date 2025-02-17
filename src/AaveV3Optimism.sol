@@ -83,7 +83,8 @@ library AaveV3Optimism {
     0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
   // https://optimistic.etherscan.io/address/0x22D76094730fA377184100EFB8CEfC673B89B372
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x22D76094730fA377184100EFB8CEfC673B89B372;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x22D76094730fA377184100EFB8CEfC673B89B372;
 
   // https://optimistic.etherscan.io/address/0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857
   address internal constant SWAP_COLLATERAL_ADAPTER = 0x830C5A67a0C95D69dA5fb7801Ac1773c6fB53857;

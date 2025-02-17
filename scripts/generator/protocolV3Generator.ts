@@ -59,7 +59,7 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
   }
   const poolAddresses = await fetchPoolAddresses(client, poolConfig);
   const reservesData = await fetchTokens(client, poolConfig, poolAddresses);
-  const additionalTokenInfo = await inferAdditionalTokenInfo(client, reservesData);
+  const additionalTokenInfo = await inferAdditionalTokenInfo(client, poolConfig, reservesData);
   const name = `AaveV3${poolConfig.name}`;
 
   // generate main library

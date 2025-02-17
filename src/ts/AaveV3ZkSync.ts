@@ -59,9 +59,6 @@ export const WALLET_BALANCE_PROVIDER = '0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dA
 // https://era.zksync.network/address/0xD5f6c8D402E0a0222f7FA132F9e80fDCC074df5C
 export const WETH_GATEWAY = '0xD5f6c8D402E0a0222f7FA132F9e80fDCC074df5C';
 
-// https://era.zksync.network/address/0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9
-export const STATIC_A_TOKEN_FACTORY = '0x1Bc8dbF1f5aF8094Aa166098131116CaAd6B22F9';
-
 // https://era.zksync.network/address/0x05c77Cf62346329a157d7A6F874464D049CECb26
 export const RISK_STEWARD = '0x05c77Cf62346329a157d7A6F874464D049CECb26';
 
@@ -112,6 +109,24 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x57815Ab06D846d7dECd326Ee541CD06144FED237',
     ORACLE: '0xD1ce60dc8AE060DDD17cA8716C96f193bC88DD13',
   },
+  weETH: {
+    decimals: 18,
+    id: 5,
+    UNDERLYING: '0xc1Fa6E2E8667d9bE0Ca938a54c7E0285E9Df924a',
+    A_TOKEN: '0xE818A67EE5c0531AFaa31Aa6e20bcAC36227A641',
+    V_TOKEN: '0xf31E1599b4480d07Fa96a7248c4f05cA84DA7fa8',
+    INTEREST_RATE_STRATEGY: '0x57815Ab06D846d7dECd326Ee541CD06144FED237',
+    ORACLE: '0x32aF9A0a47B332761c8C90E9eC9f53e46e852b2B',
+  },
+  sUSDe: {
+    decimals: 18,
+    id: 6,
+    UNDERLYING: '0xAD17Da2f6Ac76746EF261E835C50b2651ce36DA8',
+    A_TOKEN: '0xF3c9d58B76AC6Ee6811520021e9A9318c49E4CFa',
+    V_TOKEN: '0xDeBb4ddaaaB1676775214552a7a05D6A13f905Da',
+    INTEREST_RATE_STRATEGY: '0x57815Ab06D846d7dECd326Ee541CD06144FED237',
+    ORACLE: '0xDaec4cC3a41E423d678428A8Bb29fa1ADF26869a',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -126,6 +141,16 @@ export const E_MODES = {
       '0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91',
       '0x703b52F2b28fEbcB60E1372858AF5b18849FE867',
     ],
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+  '2': {
+    label: 'weETH correlated',
+    collateralBitmap: '32',
+    collateralAssets: ['0xc1Fa6E2E8667d9bE0Ca938a54c7E0285E9Df924a'],
+    borrowableBitmap: '4',
+    borrowableAssets: ['0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91'],
     ltv: 9000,
     liquidationThreshold: 9300,
     liquidationBonus: 10100,

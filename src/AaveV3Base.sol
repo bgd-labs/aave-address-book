@@ -79,10 +79,12 @@ library AaveV3Base {
     0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4;
 
   // https://basescan.org/address/0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x940F9a5d5F9ED264990D0eaee1F3DD60B4Cb9A22;
 
   // https://basescan.org/address/0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88
-  address internal constant STATIC_A_TOKEN_ORACLE = 0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
+  address internal constant LEGACY_STATIC_A_TOKEN_ORACLE =
+    0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
 
   // https://basescan.org/address/0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d
   address internal constant CONFIG_ENGINE = 0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d;
@@ -105,6 +107,9 @@ library AaveV3Base {
 
   // https://basescan.org/address/0x729b3EA8C005AbC58c9150fb57Ec161296F06766
   address internal constant WETH_GATEWAY = 0x729b3EA8C005AbC58c9150fb57Ec161296F06766;
+
+  // https://basescan.org/address/0x78d33BF0014ab169725F2Ea5a62b200F2977faeE
+  address internal constant STATA_FACTORY = 0x78d33BF0014ab169725F2Ea5a62b200F2977faeE;
 }
 library AaveV3BaseAssets {
   // https://basescan.org/address/0x4200000000000000000000000000000000000006
@@ -128,6 +133,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x468973e3264F2aEba0417A8f2cD0Ec397E738898
   address internal constant WETH_STATIC_A_TOKEN = 0x468973e3264F2aEba0417A8f2cD0Ec397E738898;
 
+  // https://basescan.org/address/0xe298b938631f750DD409fB18227C4a23dCdaab9b
+  address internal constant WETH_STATA_TOKEN = 0xe298b938631f750DD409fB18227C4a23dCdaab9b;
+
   // https://basescan.org/address/0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22
   address internal constant cbETH_UNDERLYING = 0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22;
 
@@ -148,6 +156,9 @@ library AaveV3BaseAssets {
 
   // https://basescan.org/address/0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e
   address internal constant cbETH_STATIC_A_TOKEN = 0x16A004065dfb11276DcB29Dc03fb8A85f9A43C6e;
+
+  // https://basescan.org/address/0x5e8B674127B321DC344c078e58BBACc3f3008962
+  address internal constant cbETH_STATA_TOKEN = 0x5e8B674127B321DC344c078e58BBACc3f3008962;
 
   // https://basescan.org/address/0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA
   address internal constant USDbC_UNDERLYING = 0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA;
@@ -170,6 +181,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x6fCe2756794128B1771324caA860965801DCbCdB
   address internal constant USDbC_STATIC_A_TOKEN = 0x6fCe2756794128B1771324caA860965801DCbCdB;
 
+  // https://basescan.org/address/0x74D4D1D440c9679b1013999Bd91507eAa2fff651
+  address internal constant USDbC_STATA_TOKEN = 0x74D4D1D440c9679b1013999Bd91507eAa2fff651;
+
   // https://basescan.org/address/0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452
   address internal constant wstETH_UNDERLYING = 0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452;
 
@@ -190,6 +204,9 @@ library AaveV3BaseAssets {
 
   // https://basescan.org/address/0x03916e49f794Ab877eFA23597627eE8094E6cbB0
   address internal constant wstETH_STATIC_A_TOKEN = 0x03916e49f794Ab877eFA23597627eE8094E6cbB0;
+
+  // https://basescan.org/address/0x0830820D1A9aa1554364752d6D8F55C836871B74
+  address internal constant wstETH_STATA_TOKEN = 0x0830820D1A9aa1554364752d6D8F55C836871B74;
 
   // https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913
   address internal constant USDC_UNDERLYING = 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913;
@@ -212,6 +229,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc
   address internal constant USDC_STATIC_A_TOKEN = 0x4EA71A20e655794051D1eE8b6e4A3269B13ccaCc;
 
+  // https://basescan.org/address/0xC768c589647798a6EE01A91FdE98EF2ed046DBD6
+  address internal constant USDC_STATA_TOKEN = 0xC768c589647798a6EE01A91FdE98EF2ed046DBD6;
+
   // https://basescan.org/address/0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A
   address internal constant weETH_UNDERLYING = 0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A;
 
@@ -233,6 +253,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x588159E0d360ffAA978330812f9234818ab46E8E
   address internal constant weETH_STATIC_A_TOKEN = 0x588159E0d360ffAA978330812f9234818ab46E8E;
 
+  // https://basescan.org/address/0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b
+  address internal constant weETH_STATA_TOKEN = 0x6acD0a165fD70A84b6b50d955ff3628700bAAf4b;
+
   // https://basescan.org/address/0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf
   address internal constant cbBTC_UNDERLYING = 0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf;
 
@@ -253,11 +276,59 @@ library AaveV3BaseAssets {
 
   // https://basescan.org/address/0xeaCFa728623d0958e3C386bACed79138BCAfC50F
   address internal constant cbBTC_STATIC_A_TOKEN = 0xeaCFa728623d0958e3C386bACed79138BCAfC50F;
+
+  // https://basescan.org/address/0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF
+  address internal constant cbBTC_STATA_TOKEN = 0xFA2A03b6f4A65fB1Af64f7d935fDBf78693df9aF;
+
+  // https://basescan.org/address/0x2416092f143378750bb29b79eD961ab195CcEea5
+  address internal constant ezETH_UNDERLYING = 0x2416092f143378750bb29b79eD961ab195CcEea5;
+
+  uint8 internal constant ezETH_DECIMALS = 18;
+
+  // https://basescan.org/address/0xDD5745756C2de109183c6B5bB886F9207bEF114D
+  address internal constant ezETH_A_TOKEN = 0xDD5745756C2de109183c6B5bB886F9207bEF114D;
+
+  // https://basescan.org/address/0xbc4f5631f2843488792e4F1660d0A51Ba489bdBd
+  address internal constant ezETH_V_TOKEN = 0xbc4f5631f2843488792e4F1660d0A51Ba489bdBd;
+
+  // https://basescan.org/address/0x438e24f5FCDC1A66ecb25D19B5543e0Cb91A44D4
+  address internal constant ezETH_ORACLE = 0x438e24f5FCDC1A66ecb25D19B5543e0Cb91A44D4;
+
+  // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant ezETH_INTEREST_RATE_STRATEGY =
+    0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0xF8F10f39116716e89498c1c5E94137ADa11b2BC7
+  address internal constant ezETH_STATA_TOKEN = 0xF8F10f39116716e89498c1c5E94137ADa11b2BC7;
+
+  // https://basescan.org/address/0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee
+  address internal constant GHO_UNDERLYING = 0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://basescan.org/address/0x067ae75628177FD257c2B1e500993e1a0baBcBd1
+  address internal constant GHO_A_TOKEN = 0x067ae75628177FD257c2B1e500993e1a0baBcBd1;
+
+  // https://basescan.org/address/0x38e59ADE183BbEb94583d44213c8f3297e9933e9
+  address internal constant GHO_V_TOKEN = 0x38e59ADE183BbEb94583d44213c8f3297e9933e9;
+
+  // https://basescan.org/address/0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73
+  address internal constant GHO_ORACLE = 0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73;
+
+  // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E
+  address internal constant GHO_STATA_TOKEN = 0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant ETH_CORRELATED = 1;
+
+  uint8 internal constant EZETH_WSTETH = 2;
+
+  uint8 internal constant EZETH_STABLECOINS = 3;
 }
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

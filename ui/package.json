@@ -10,25 +10,29 @@
   },
   "dependencies": {
     "@bgd-labs/react-web3-icons": "^1.7.5",
-    "@bgd-labs/rpc-env": "^2.2.1",
-    "@leeoniya/ufuzzy": "^1.0.17",
+    "@bgd-labs/rpc-env": "^2.3.2",
+    "@leeoniya/ufuzzy": "^1.0.18",
     "clsx": "^2.1.1",
-    "next": "14.2.7",
-    "react": "^18",
-    "react-dom": "^18",
-    "tailwind-merge": "^2.5.2",
-    "viem": "^2.21.3"
+    "next": "15.1.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "tailwind-merge": "^2.6.0",
+    "viem": "^2.23.1"
   },
   "devDependencies": {
-    "@types/node": "^22.5.1",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
+    "@types/node": "^22.10.5",
+    "@types/react": "19.0.4",
+    "@types/react-dom": "19.0.2",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.7",
-    "postcss": "^8.4.41",
-    "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4"
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.4",
+    "postcss": "^8.5.2",
+    "prettier": "^3.5.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  },
+  "overrides": {
+    "@types/react": "19.0.4",
+    "@types/react-dom": "19.0.2"
   }
 }

@@ -3,11 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscAvalanche {
-  // https://snowtrace.io/address/0x9abf798f5314BFd793A9E57A654BEd35af4A1D60
-  address internal constant PARASWAP_FEE_CLAIMER = 0x9abf798f5314BFd793A9E57A654BEd35af4A1D60;
-
-  // https://snowtrace.io/address/0x2Efe215aE82339fa059bb9d611E4cC858cfe9Df6
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x2Efe215aE82339fa059bb9d611E4cC858cfe9Df6;
+  // https://snowtrace.io/address/0xEB0682d148e874553008730f0686ea89db7DA412
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 
   // https://snowtrace.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN = 0xD3cF979e676265e4f6379749DECe4708B9A22476;

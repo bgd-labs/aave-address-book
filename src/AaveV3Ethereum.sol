@@ -81,7 +81,8 @@ library AaveV3Ethereum {
     0x35bb522b102326ea3F1141661dF4626C87000e3E;
 
   // https://etherscan.io/address/0x411D79b8cC43384FDE66CaBf9b6a17180c842511
-  address internal constant STATIC_A_TOKEN_FACTORY = 0x411D79b8cC43384FDE66CaBf9b6a17180c842511;
+  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
+    0x411D79b8cC43384FDE66CaBf9b6a17180c842511;
 
   // https://etherscan.io/address/0xADC0A53095A0af87F3aa29FE0715B5c28016364e
   address internal constant SWAP_COLLATERAL_ADAPTER = 0xADC0A53095A0af87F3aa29FE0715B5c28016364e;
@@ -680,6 +681,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152
   address internal constant PYUSD_STATIC_A_TOKEN = 0x00F2a835758B33f3aC53516Ebd69f3dc77B0D152;
 
+  // https://etherscan.io/address/0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6
+  address internal constant PYUSD_STATA_TOKEN = 0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6;
+
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
   address internal constant weETH_UNDERLYING = 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee;
 
@@ -862,6 +866,24 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant rsETH_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0x8236a87084f8B84306f72007F36F2618A5634494
+  address internal constant LBTC_UNDERLYING = 0x8236a87084f8B84306f72007F36F2618A5634494;
+
+  uint8 internal constant LBTC_DECIMALS = 8;
+
+  // https://etherscan.io/address/0x65906988ADEe75306021C417a1A3458040239602
+  address internal constant LBTC_A_TOKEN = 0x65906988ADEe75306021C417a1A3458040239602;
+
+  // https://etherscan.io/address/0x68aeB290C7727D899B47c56d1c96AEAC475cD0dD
+  address internal constant LBTC_V_TOKEN = 0x68aeB290C7727D899B47c56d1c96AEAC475cD0dD;
+
+  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  address internal constant LBTC_ORACLE = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+
+  // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
+  address internal constant LBTC_INTEREST_RATE_STRATEGY =
+    0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 library AaveV3EthereumEModes {
   uint8 internal constant NONE = 0;
@@ -871,6 +893,8 @@ library AaveV3EthereumEModes {
   uint8 internal constant SUSDE_STABLECOINS = 2;
 
   uint8 internal constant RSETH_LST_MAIN = 3;
+
+  uint8 internal constant LBTC_WBTC = 4;
 }
 library AaveV3EthereumExternalLibraries {
   // https://etherscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0

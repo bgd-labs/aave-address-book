@@ -2,6 +2,57 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.10.0](https://github.com/bgd-labs/aave-address-book/compare/v4.9.0...v4.10.0) (2025-02-07)
+
+
+### Features
+
+* gho on base ([#824](https://github.com/bgd-labs/aave-address-book/issues/824)) ([d8829eb](https://github.com/bgd-labs/aave-address-book/commit/d8829ebd700391380265840495e602e35b767292))
+
+
+### Bug Fixes
+
+* symbol ([#814](https://github.com/bgd-labs/aave-address-book/issues/814)) ([13bf5f4](https://github.com/bgd-labs/aave-address-book/commit/13bf5f428e2f8919370e9347517956c6dc0d9faf))
+
+## [4.9.0](https://github.com/bgd-labs/aave-address-book/compare/v4.8.1...v4.9.0) (2025-01-29)
+
+
+### Features
+
+* upgrade factories ([#804](https://github.com/bgd-labs/aave-address-book/issues/804)) ([3ad86fd](https://github.com/bgd-labs/aave-address-book/commit/3ad86fdbfb6595564aebe93823845f793d43de8b))
+
+
+### Bug Fixes
+
+* add mantle and sonic ([#808](https://github.com/bgd-labs/aave-address-book/issues/808)) ([78f182d](https://github.com/bgd-labs/aave-address-book/commit/78f182d578bd9772827f3fb0a177add7b9c71a73))
+* bump origin ([#811](https://github.com/bgd-labs/aave-address-book/issues/811)) ([386775a](https://github.com/bgd-labs/aave-address-book/commit/386775ae50429aba611d16ea1c97bacf15603552))
+* **cache:** automated cache update - updated addresses ([#805](https://github.com/bgd-labs/aave-address-book/issues/805)) ([bc25e5e](https://github.com/bgd-labs/aave-address-book/commit/bc25e5e9acbdcea733fd2ab769de7ebd31f0a417))
+* upgrade origin to latest ([#810](https://github.com/bgd-labs/aave-address-book/issues/810)) ([c7900ad](https://github.com/bgd-labs/aave-address-book/commit/c7900adaa8b454ae3e7b24cb729283257978c9eb))
+
+## [4.8.1](https://github.com/bgd-labs/aave-address-book/compare/v4.8.0...v4.8.1) (2025-01-21)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#802](https://github.com/bgd-labs/aave-address-book/issues/802)) ([9546863](https://github.com/bgd-labs/aave-address-book/commit/9546863f8a8c024ac1eed80d5d8222d55b08a6d0))
+* initial addresses ([#800](https://github.com/bgd-labs/aave-address-book/issues/800)) ([837214a](https://github.com/bgd-labs/aave-address-book/commit/837214a8bfff3c937a6d8fd803d0c88eeaa948a0))
+
+## [4.8.0](https://github.com/bgd-labs/aave-address-book/compare/v4.7.4...v4.8.0) (2025-01-20)
+
+
+### Features
+
+* add edge risk steward addresses ([#722](https://github.com/bgd-labs/aave-address-book/issues/722)) ([06623dc](https://github.com/bgd-labs/aave-address-book/commit/06623dcb7d8ad4838b5aeae740b7fa3f531e493f))
+* add linea contracts ([#729](https://github.com/bgd-labs/aave-address-book/issues/729)) ([d22bc78](https://github.com/bgd-labs/aave-address-book/commit/d22bc78386303517252c8ec28761274259ce33c1))
+* new stata factories ([#799](https://github.com/bgd-labs/aave-address-book/issues/799)) ([c3dc726](https://github.com/bgd-labs/aave-address-book/commit/c3dc7268b9b414a6bf98a717fc4be739258cdc40))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#784](https://github.com/bgd-labs/aave-address-book/issues/784)) ([48e1375](https://github.com/bgd-labs/aave-address-book/commit/48e13758f2ca240b50d69d35d8eeb4b2a3b61306))
+* **cache:** automated cache update - updated addresses ([#785](https://github.com/bgd-labs/aave-address-book/issues/785)) ([9da796d](https://github.com/bgd-labs/aave-address-book/commit/9da796dac9d709c3d89607f8f645735c6c504798))
+* use non ipfs aave icon ([#772](https://github.com/bgd-labs/aave-address-book/issues/772)) ([f9d2f78](https://github.com/bgd-labs/aave-address-book/commit/f9d2f78ab6d2d5f7debad4fedff72ce9bd3bad6b))
+
 ## [4.7.4](https://github.com/bgd-labs/aave-address-book/compare/v4.7.3...v4.7.4) (2025-01-09)
 
 

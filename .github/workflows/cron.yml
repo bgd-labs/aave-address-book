@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@8f1998e9878d786675189ef566a2e4bf24869773 # pin@v1
+        uses: foundry-rs/foundry-toolchain@de808b1eea699e761c404bda44ba8f21aba30b2c # pin@v1
         with:
           version: nightly
 
@@ -44,7 +44,7 @@ jobs:
         run: npm run generate:addresses
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@25b6871a4ebe4c3585f47c7a687ac6fd0ec0e32d # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
+        uses: peter-evans/create-pull-request@253935418100774e6d13aa1d877700be09f535f5 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
         with:
           author: Cache-bot <noreply@github.com>
           committer: Cache-bot <noreply@github.com>

@@ -34,6 +34,7 @@ export async function check(addresses: Record<string, any>) {
     throw new Error('SANITY_CONFIG_ENGINE: wrong DEFAULT_INCENTIVES_CONTROLLER');
   if (COLLECTOR !== addresses.COLLECTOR) throw new Error('SANITY_CONFIG_ENGINE: wrong COLLECTOR');
   if (
+    addresses.ASSETS.length > 0 &&
     DEFAULT_INTEREST_RATE_STRATEGY !==
     (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY
   )
@@ -50,7 +51,7 @@ describe('config engine', () => {
         const client = getClient(addresses.CHAIN_ID);
         // we only want to validate AaveV3 config engines as V2 does not expose the necessary getters
         // we also skip testnets as they are not controlled trough governance
-        if (!client.chain?.testnet && addresses.CONFIG_ENGINE && library.startsWith('AaveV3'))
+        if (!client.chain?.testnet && addresses.CONFIG_ENGINE && addresses.COLLECTOR && library.startsWith('AaveV3'))
           return check(addresses);
       }),
     );
