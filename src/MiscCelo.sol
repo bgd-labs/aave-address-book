@@ -3,12 +3,12 @@
 pragma solidity >=0.6.0;
 
 library MiscCelo {
-  // https://celoscan.io/address/0xAe13e4DA0952f0B8fE04E21df53716fCF799a923
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0xAe13e4DA0952f0B8fE04E21df53716fCF799a923;
+  // https://celoscan.io/address/0x1Be33D186a081eFDf15310e4bdEd81E828C47f9b
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0x1Be33D186a081eFDf15310e4bdEd81E828C47f9b;
 
   // https://celoscan.io/address/0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0
   address internal constant PROXY_ADMIN = 0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0;
 
-  // https://celoscan.io/address/0x38BC0ED9d90Bc2309A436f4ED6Ca6Bc4D5C0DFA6
-  address internal constant PROTOCOL_GUARDIAN = 0x38BC0ED9d90Bc2309A436f4ED6Ca6Bc4D5C0DFA6;
+  // https://celoscan.io/address/0x88E7aB6ee481Cf92e548c0e1169F824F99142c85
+  address internal constant PROTOCOL_GUARDIAN = 0x88E7aB6ee481Cf92e548c0e1169F824F99142c85;
 }

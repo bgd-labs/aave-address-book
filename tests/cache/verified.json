@@ -5948,6 +5948,9 @@
     },
     "0xB91DA65093d54a1a7cb0fe684860F568A5E57123": {
       "name": "WalletBalanceProvider"
+    },
+    "0x1Be33D186a081eFDf15310e4bdEd81E828C47f9b": {
+      "name": "TransparentProxyFactory"
     }
   },
   "43113": {

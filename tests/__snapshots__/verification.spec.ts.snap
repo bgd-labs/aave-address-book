@@ -286,5 +286,15 @@ exports[`verification > should have all contracts verified except for the known 
       "value": "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1",
     },
   },
+  {
+    "item": {
+      "chainId": 42220,
+      "path": [
+        "MiscCelo",
+        "PROTOCOL_GUARDIAN",
+      ],
+      "value": "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85",
+    },
+  },
 ]
 `;
