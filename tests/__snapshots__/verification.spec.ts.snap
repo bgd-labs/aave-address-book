@@ -266,5 +266,15 @@ exports[`verification > should have all contracts verified except for the known 
       "value": "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1",
     },
   },
+  {
+    "item": {
+      "chainId": 146,
+      "path": [
+        "AaveV3Sonic",
+        "STATA_FACTORY",
+      ],
+      "value": "0xFeeb6FE430B7523fEF2a38327241eE7153779535",
+    },
+  },
 ]
 `;
