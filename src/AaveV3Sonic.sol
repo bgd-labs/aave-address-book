@@ -74,6 +74,9 @@ library AaveV3Sonic {
 
   // https://sonicscan.org/address/0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9
   address internal constant WETH_GATEWAY = 0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9;
+
+  // https://sonicscan.org/address/0xFeeb6FE430B7523fEF2a38327241eE7153779535
+  address internal constant STATA_FACTORY = 0xFeeb6FE430B7523fEF2a38327241eE7153779535;
 }
 library AaveV3SonicAssets {}
 library AaveV3SonicEModes {
