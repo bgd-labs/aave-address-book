@@ -65,7 +65,8 @@
     "start": "tsx scripts/generateABIs.ts && tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
     "test": "vitest run tests",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test:snapshot": "npx vitest -u"
   },
   "repository": {
     "type": "git",
