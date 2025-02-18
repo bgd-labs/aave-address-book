@@ -5951,6 +5951,15 @@
     },
     "0x1Be33D186a081eFDf15310e4bdEd81E828C47f9b": {
       "name": "TransparentProxyFactory"
+    },
+    "0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3F662AA079a9619F10BFF4848910195C52CB2fb4": {
+      "name": "ATokenInstance"
+    },
+    "0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "43113": {

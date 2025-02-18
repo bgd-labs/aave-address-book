@@ -43,6 +43,16 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x9e04Cb339163b06068397d9b6af2dA78440954e0
   address internal constant EMISSION_MANAGER = 0x9e04Cb339163b06068397d9b6af2dA78440954e0;
 
+  // https://celoscan.io/address/0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7
+  ICollector internal constant COLLECTOR = ICollector(0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7);
+
+  // https://celoscan.io/address/0x3F662AA079a9619F10BFF4848910195C52CB2fb4
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x3F662AA079a9619F10BFF4848910195C52CB2fb4;
+
+  // https://celoscan.io/address/0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+    0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0;
+
   // https://celoscan.io/address/0xB25a5D144626a0D488e52AE717A051a2E9997076
   address internal constant CONFIG_ENGINE = 0xB25a5D144626a0D488e52AE717A051a2E9997076;
 
