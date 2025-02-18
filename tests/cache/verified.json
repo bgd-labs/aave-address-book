@@ -4476,6 +4476,9 @@
     },
     "0xAe13e4DA0952f0B8fE04E21df53716fCF799a923": {
       "name": "RiskSteward"
+    },
+    "0xA4aF5175ed38e791362F01c67a487DbA4aE07dFe": {
+      "name": "GnosisSafeProxy"
     }
   },
   "324": {
