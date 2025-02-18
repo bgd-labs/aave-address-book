@@ -107,6 +107,11 @@ const knownErrors = {
   43114: {
     '0x11979886A6dBAE27D7a72c49fCF3F23240D647bF': true, // very old contracts we know will never be verified
   },
+  5000: {
+    '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
+    '0x1283C5015B1Fb5616FA3aCb0C18e6879a02869cB': true, // etherscan issue - not detecting that it's verified
+    '0xF089f77173A3009A98c45f49D547BF714A7B1e01': true, // etherscan issue - not detecting that it's verified
+  },
   146: {
     '0x0846C28Dd54DEA4Fd7Fb31bcc5EB81673D68c695': true, // etherscan issue - not detecting that it's verified
   },
