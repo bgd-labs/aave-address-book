@@ -100,6 +100,18 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
+      "chainId": 8453,
+      "path": [
+        "AaveV3Base",
+        "ASSETS",
+        "GHO",
+        "STATA_TOKEN",
+      ],
+      "value": "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E",
+    },
+  },
+  {
+    "item": {
       "chainId": 42161,
       "path": [
         "AaveV3Arbitrum",
@@ -252,6 +264,16 @@ exports[`verification > should have all contracts verified except for the known 
         "STATA_TOKEN",
       ],
       "value": "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1",
+    },
+  },
+  {
+    "item": {
+      "chainId": 146,
+      "path": [
+        "AaveV3Sonic",
+        "STATA_FACTORY",
+      ],
+      "value": "0xFeeb6FE430B7523fEF2a38327241eE7153779535",
     },
   },
 ]
