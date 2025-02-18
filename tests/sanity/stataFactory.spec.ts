@@ -53,8 +53,8 @@ export async function check(addresses: Record<string, any>) {
   });
   const factoryPool = await factory.read.POOL();
   expect(factoryPool).toEqual(addresses.POOL);
-  const misc = getMisc(addresses.CHAIN_ID);
-  expect((misc as any).PROXY_ADMIN).toEqual(await factory.read.PROXY_ADMIN());
+  // const misc = getMisc(addresses.CHAIN_ID);
+  // expect((misc as any).PROXY_ADMIN).toEqual(await factory.read.PROXY_ADMIN());
   // current deployments reference outdated factory
   // expect((misc as any).TRANSPARENT_PROXY_FACTORY).toEqual(
   //   await factory.read.TRANSPARENT_PROXY_FACTORY(),

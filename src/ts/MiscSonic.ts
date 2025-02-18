@@ -2,4 +2,7 @@
 // https://sonicscan.org/address/0xEB0682d148e874553008730f0686ea89db7DA412
 export const TRANSPARENT_PROXY_FACTORY = '0xEB0682d148e874553008730f0686ea89db7DA412';
 
+// https://sonicscan.org/address/0xA4aF5175ed38e791362F01c67a487DbA4aE07dFe
+export const PROTOCOL_GUARDIAN = '0xA4aF5175ed38e791362F01c67a487DbA4aE07dFe';
+
 export const CHAIN_ID = 146;

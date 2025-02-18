@@ -274,6 +274,12 @@ exports[`verification > should have all contracts verified except for the known 
         "PROTOCOL_GUARDIAN",
       ],
       "value": "0x172867391d690Eb53896623DaD22208624230686",
+      "chainId": 146,
+      "path": [
+        "AaveV3Sonic",
+        "STATA_FACTORY",
+      ],
+      "value": "0xFeeb6FE430B7523fEF2a38327241eE7153779535",
     },
   },
 ]
