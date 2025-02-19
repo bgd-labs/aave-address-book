@@ -6047,6 +6047,89 @@
       "name": "GhoCcipSteward"
     }
   },
+  "42220": {
+    "0x50F4dAA86F3c747ce15C3C38bD0383200B61d6Dd": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x91b21900E91CD302EBeD05E45D8f270ddAED944d": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8657Cd5a0957e8C5BE15c69C67078b5d730D720a": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xbE815420A63A413BB8D508d8022C0FF150Ea7C39": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x1dF462e2712496373A347f8ad10802a5E95f053D": {
+      "name": "Executor"
+    },
+    "0xAe13e4DA0952f0B8fE04E21df53716fCF799a923": {
+      "name": "TransparentProxyFactory"
+    },
+    "0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0": {
+      "name": "ProxyAdmin"
+    },
+    "0x38BC0ED9d90Bc2309A436f4ED6Ca6Bc4D5C0DFA6": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x9F7Cf9417D5251C59fE94fB9147feEe1aAd9Cea5": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7567E3434CC1BEf724AB595e6072367Ef4914691": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1e693D088ceFD1E95ba4c4a5F7EeA41a1Ec37e8b": {
+      "name": "AaveOracle"
+    },
+    "0x7a12dCfd73C1B4cddf294da4cFce75FcaBBa314C": {
+      "name": "ACLManager"
+    },
+    "0x33b7d355613110b4E842f5f7057Ccd36fb4cee28": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x44D38b18a99E50E51B99F05C1f418Db26Ded315f": {
+      "name": "PoolInstance"
+    },
+    "0x87f6224536d9BD1d4FE6052e06f9647B51843e33": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x4725A0FdbEB14A77964bC1C221eE3a7982263103": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9e04Cb339163b06068397d9b6af2dA78440954e0": {
+      "name": "EmissionManager"
+    },
+    "0xB25a5D144626a0D488e52AE717A051a2E9997076": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xB4B6939D0804DCE8d0Ac3e59b2eD5C072829d56b": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0xf07fFd12b119b921C4a2ce8d4A13C5d1E3000d6e": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0xB91DA65093d54a1a7cb0fe684860F568A5E57123": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x1Be33D186a081eFDf15310e4bdEd81E828C47f9b": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3F662AA079a9619F10BFF4848910195C52CB2fb4": {
+      "name": "ATokenInstance"
+    },
+    "0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0": {
+      "name": "VariableDebtTokenInstance"
+    }
+  },
   "43113": {
     "0x0668EDE013c1c475724523409b8B6bE633469585": {
       "name": "AaveProtocolDataProvider"

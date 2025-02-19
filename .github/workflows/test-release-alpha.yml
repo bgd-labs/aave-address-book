@@ -10,7 +10,12 @@ on:
 jobs:
   test-solidity:
     uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
-    secrets: inherit
+    secrets:
+      ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
+    with:
+      compareLcov: false
+      compareGas: false
+
   test-js:
     uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
     if: github.event.pull_request.head.repo.full_name == github.repository

@@ -4,6 +4,26 @@ exports[`verification > should have all contracts verified except for the known 
 [
   {
     "item": {
+      "chainId": 42220,
+      "path": [
+        "GovernanceV3Celo",
+        "PAYLOADS_CONTROLLER",
+      ],
+      "value": "0xE48E10834C04E394A04BF22a565D063D40b9FA42",
+    },
+  },
+  {
+    "item": {
+      "chainId": 42220,
+      "path": [
+        "GovernanceV3Celo",
+        "GOVERNANCE_GUARDIAN",
+      ],
+      "value": "0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E",
+    },
+  },
+  {
+    "item": {
       "chainId": 8453,
       "path": [
         "AaveV3Base",
@@ -284,6 +304,16 @@ exports[`verification > should have all contracts verified except for the known 
         "STATA_FACTORY",
       ],
       "value": "0xFeeb6FE430B7523fEF2a38327241eE7153779535",
+    },
+  },
+  {
+    "item": {
+      "chainId": 42220,
+      "path": [
+        "MiscCelo",
+        "PROTOCOL_GUARDIAN",
+      ],
+      "value": "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85",
     },
   },
   {

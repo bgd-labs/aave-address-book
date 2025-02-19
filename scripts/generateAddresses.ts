@@ -28,6 +28,7 @@ import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {zkSyncProtoV3} from './configs/pools/zksync';
 import {lineaProtoV3} from './configs/pools/linea';
+import {celoProtoV3} from './configs/pools/celo';
 import {mantleProtoV3} from './configs/pools/mantle';
 import {sonicProtoV3} from './configs/pools/sonic';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
@@ -44,6 +45,7 @@ import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
+import {governanceConfigCelo} from './configs/governance/celo';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
 import {baseAddresses, baseSepoliaAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
@@ -56,6 +58,7 @@ import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/op
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
+import {celoAddresses} from './configs/networks/celo';
 import {scrollAddresses} from './configs/networks/scroll';
 import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
@@ -103,6 +106,7 @@ async function main() {
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
       governanceConfigZkSync,
+      governanceConfigCelo,
       governanceConfigLinea,
       governanceConfigMantle,
       governanceConfigSonic,
@@ -146,6 +150,7 @@ async function main() {
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
       lineaProtoV3,
+      celoProtoV3,
       mantleProtoV3,
       sonicProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
@@ -170,6 +175,7 @@ async function main() {
     metisAddresses,
     gnosisAddresses,
     bnbAddresses,
+    celoAddresses,
     scrollAddresses,
     polygonZkEvmAddresses,
     sepoliaAddresses,
