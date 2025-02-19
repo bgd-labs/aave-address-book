@@ -89,6 +89,9 @@ export const RISK_ORACLE = '0x7ABB46C690C52E919687D19ebF89C81A6136C1F2';
 // https://etherscan.io/address/0x347C75d19718a05148687E13dca259aD016aB411
 export const STATA_FACTORY = '0x347C75d19718a05148687E13dca259aD016aB411';
 
+// https://etherscan.io/address/0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285
+export const GHO_DIRECT_MINTER = '0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   wstETH: {
