@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.12.0](https://github.com/bgd-labs/aave-address-book/compare/v4.11.0...v4.12.0) (2025-02-19)
+
+
+### Features
+
+* Add Celo addresses ([#770](https://github.com/bgd-labs/aave-address-book/issues/770)) ([1688111](https://github.com/bgd-labs/aave-address-book/commit/1688111fee51bd01225c328c2ad5f21a5c696f08))
+* add gho direct minter ([#847](https://github.com/bgd-labs/aave-address-book/issues/847)) ([66d7c49](https://github.com/bgd-labs/aave-address-book/commit/66d7c490f53ac79787320e172ea39162ba38e7b0))
+* mantle instance contracts ([#828](https://github.com/bgd-labs/aave-address-book/issues/828)) ([853b5a0](https://github.com/bgd-labs/aave-address-book/commit/853b5a038028ae3fef77e814faebb4eb39008c1e))
+
 ## [4.11.0](https://github.com/bgd-labs/aave-address-book/compare/v4.10.0...v4.11.0) (2025-02-18)
 
 
