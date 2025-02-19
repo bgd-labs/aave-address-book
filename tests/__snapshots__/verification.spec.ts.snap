@@ -314,7 +314,7 @@ exports[`verification > should have all contracts verified except for the known 
         "PROTOCOL_GUARDIAN",
       ],
       "value": "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85",
-      },
+    },
   },
   {
     "item": {
@@ -324,7 +324,7 @@ exports[`verification > should have all contracts verified except for the known 
         "PROTOCOL_GUARDIAN",
       ],
       "value": "0x172867391d690Eb53896623DaD22208624230686",
-      },
+    },
   },
 ]
 `;
