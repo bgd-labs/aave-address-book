@@ -5,4 +5,7 @@ pragma solidity >=0.6.0;
 library MiscMantle {
   // https://mantlescan.xyz/address/0xEB0682d148e874553008730f0686ea89db7DA412
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
+
+  // https://mantlescan.xyz/address/0x172867391d690Eb53896623DaD22208624230686
+  address internal constant PROTOCOL_GUARDIAN = 0x172867391d690Eb53896623DaD22208624230686;
 }
