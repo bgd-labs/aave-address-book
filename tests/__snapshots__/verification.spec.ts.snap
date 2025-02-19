@@ -288,6 +288,16 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
+      "chainId": 5000,
+      "path": [
+        "AaveV3Mantle",
+        "STATA_FACTORY",
+      ],
+      "value": "0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA",
+    },
+  },
+  {
+    "item": {
       "chainId": 146,
       "path": [
         "AaveV3Sonic",
@@ -304,7 +314,17 @@ exports[`verification > should have all contracts verified except for the known 
         "PROTOCOL_GUARDIAN",
       ],
       "value": "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85",
-    },
+      },
+  },
+  {
+    "item": {
+      "chainId": 5000,
+      "path": [
+        "MiscMantle",
+        "PROTOCOL_GUARDIAN",
+      ],
+      "value": "0x172867391d690Eb53896623DaD22208624230686",
+      },
   },
 ]
 `;
