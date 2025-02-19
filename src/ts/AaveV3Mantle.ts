@@ -62,6 +62,9 @@ export const WETH_GATEWAY = '0xde35f7711295Dfd0CD8bd94d46f65b8Acb182520';
 // https://mantlescan.xyz/address/0x4A49351ED179b23af08523Af98a8ca95C712b9d9
 export const L2_ENCODER = '0x4A49351ED179b23af08523Af98a8ca95C712b9d9';
 
+// https://mantlescan.xyz/address/0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA
+export const STATA_FACTORY = '0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA';
+
 export const CHAIN_ID = 5000;
 export const ASSETS = {} as const;
 export const E_MODES = {} as const;

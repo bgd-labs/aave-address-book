@@ -74,6 +74,9 @@ library AaveV3Mantle {
 
   // https://mantlescan.xyz/address/0x4A49351ED179b23af08523Af98a8ca95C712b9d9
   address internal constant L2_ENCODER = 0x4A49351ED179b23af08523Af98a8ca95C712b9d9;
+
+  // https://mantlescan.xyz/address/0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA
+  address internal constant STATA_FACTORY = 0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA;
 }
 library AaveV3MantleAssets {}
 library AaveV3MantleEModes {
