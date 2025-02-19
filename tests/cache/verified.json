@@ -2387,6 +2387,9 @@
     },
     "0xD1E856a947CdF56b4f000ee29d34F5808E0A6848": {
       "name": "GhoGsmSteward"
+    },
+    "0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
