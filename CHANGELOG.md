@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.12.1](https://github.com/bgd-labs/aave-address-book/compare/v4.12.0...v4.12.1) (2025-02-20)
+
+
+### Bug Fixes
+
+* update web3 icons ([#849](https://github.com/bgd-labs/aave-address-book/issues/849)) ([a274953](https://github.com/bgd-labs/aave-address-book/commit/a27495376032eaaca01d71aecfb7d8438cb4e9f7))
+
 ## [4.12.0](https://github.com/bgd-labs/aave-address-book/compare/v4.11.0...v4.12.0) (2025-02-19)
 
 
