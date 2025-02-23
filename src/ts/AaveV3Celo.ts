@@ -56,6 +56,12 @@ export const UI_POOL_DATA_PROVIDER = '0xf07fFd12b119b921C4a2ce8d4A13C5d1E3000d6e
 // https://celoscan.io/address/0xB91DA65093d54a1a7cb0fe684860F568A5E57123
 export const WALLET_BALANCE_PROVIDER = '0xB91DA65093d54a1a7cb0fe684860F568A5E57123';
 
+// https://celoscan.io/address/0x2b33073B94243304bCb4dfFA6b624afA5BAA414D
+export const STATA_FACTORY = '0x2b33073B94243304bCb4dfFA6b624afA5BAA414D';
+
+// https://celoscan.io/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef
+export const RISK_STEWARD = '0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef';
+
 export const CHAIN_ID = 42220;
 export const ASSETS = {} as const;
 export const E_MODES = {} as const;

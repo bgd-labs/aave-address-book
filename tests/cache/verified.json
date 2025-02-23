@@ -5135,6 +5135,9 @@
     },
     "0x4A49351ED179b23af08523Af98a8ca95C712b9d9": {
       "name": "L2Encoder"
+    },
+    "0xCCCcf90C363Eaf09dD89DD5330C1287Ff6a945Ee": {
+      "name": "RiskSteward"
     }
   },
   "8453": {
@@ -6128,6 +6131,12 @@
     },
     "0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0x2b33073B94243304bCb4dfFA6b624afA5BAA414D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef": {
+      "name": "RiskSteward"
     }
   },
   "43113": {

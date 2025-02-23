@@ -68,6 +68,12 @@ library AaveV3Celo {
 
   // https://celoscan.io/address/0xB91DA65093d54a1a7cb0fe684860F568A5E57123
   address internal constant WALLET_BALANCE_PROVIDER = 0xB91DA65093d54a1a7cb0fe684860F568A5E57123;
+
+  // https://celoscan.io/address/0x2b33073B94243304bCb4dfFA6b624afA5BAA414D
+  address internal constant STATA_FACTORY = 0x2b33073B94243304bCb4dfFA6b624afA5BAA414D;
+
+  // https://celoscan.io/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef
+  address internal constant RISK_STEWARD = 0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef;
 }
 library AaveV3CeloAssets {}
 library AaveV3CeloEModes {
