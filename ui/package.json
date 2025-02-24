@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bgd-labs/react-web3-icons": "^1.7.5",
+    "@bgd-labs/react-web3-icons": "^1.13.0",
     "@bgd-labs/rpc-env": "^2.3.2",
     "@leeoniya/ufuzzy": "^1.0.18",
     "clsx": "^2.1.1",

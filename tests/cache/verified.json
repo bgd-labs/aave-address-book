@@ -2396,6 +2396,9 @@
     },
     "0xf956B38F035dC9067fb827A512D3CF35202AB0Bc": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
@@ -4419,6 +4422,87 @@
   "146": {
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x58e003a3C6f2Aeed6a2a6Bc77B504566523cb15c": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6fD45D32375d5aDB8D76275A3932c740F03a8718": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0x10078c1D8E46dd1ed5D8df2C42d5ABb969b11566": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x63C4422D6cc849549daeb600B7EcE52bD18fAd7f": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xECB564e91f620fBFb59d0C4A41d7f10aDb0D1934": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7b62461a3570c6AC8a9f8330421576e417B71EE7": {
+      "name": "Executor"
+    },
+    "0x5C2e738F6E27bCE0F7558051Bf90605dD6176900": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x50c70FEB95aBC1A92FC30b9aCc41Bd349E5dE2f0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xD63f7658C66B2934Bd234D79D06aEF5290734B30": {
+      "name": "AaveOracle"
+    },
+    "0x3a790a47c4d531FD333FAD24f70B0ccb521B3b5A": {
+      "name": "ACLManager"
+    },
+    "0x306c124fFba5f2Bc0BcAf40D249cf19D492440b9": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x46Dcd5F4600319b02649Fd76B55aA6c1035CA478": {
+      "name": "PoolInstance"
+    },
+    "0x5cC4f782cFe249286476A7eFfD9D7bd215768194": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x24bD6e9ca54F1737467DEf82dCA9702925B3Aa59": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd3A0A19Cdb7d1615f30988763BEA5f8feCc17a87": {
+      "name": "EmissionManager"
+    },
+    "0x1aB55bBdD5DF0782BBCf73553Af93BC6B29A286B": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6": {
+      "name": "ATokenInstance"
+    },
+    "0xcb85C501B3A5e9851850d66648d69B26A4c90942": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xa119F84bC1b8083F5061E4cf53705cBf1065bA27": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x5E5D87858592d211fdb4503F09FB2B5cf805cB51": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0xeC859AED64e87004FA724892D5aB474901825B2D": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x9005A69fE088680827f292e8aE885Be4BE1beb2f": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x6637Ef9c6b41Fa62d69b7E88C5Dd9eF30BbEE945": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0xAe13e4DA0952f0B8fE04E21df53716fCF799a923": {
+      "name": "RiskSteward"
+    },
+    "0xA4aF5175ed38e791362F01c67a487DbA4aE07dFe": {
+      "name": "GnosisSafeProxy"
     }
   },
   "324": {
@@ -4991,6 +5075,90 @@
   "5000": {
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0x7Fcb83a4a2577e30aaD0218B5A3C015b40b1209A": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xB7691d5b74bF50Cc2CF55B29f9ba6f80FC3954a4": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x74c3a74362dF4Dd1b9924a97C357B8772dC45000": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xDA575812755ED6C5Ad33a859798d472C0495529A": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x9390B1735def18560c509E2d0bc090E9d6BA257a": {
+      "name": "Executor"
+    },
+    "0x5e06b10B3b9c3E1c0996D2544A35B9839Be02922": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xb26670d2800DBB9cfCe2f2660FfDcA48C799c86d": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x70884634D0098782592111A2A6B8d223be31CB7b": {
+      "name": "Executor"
+    },
+    "0x2aB3580a805fB10CbAd567212C70e26C1B6769eC": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x2e770EF8AbdEcA83D9310E2d3B3c2FdfFF5fd85A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4fDE7000ac23033B0FD420098B8a83A9Ff52c33C": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6c23bAF050ec192afc0B967a93b83e6c5405df43": {
+      "name": "AaveOracle"
+    },
+    "0x3e652E97ff339B73421f824F5b03d75b62F1Fb51": {
+      "name": "ACLManager"
+    },
+    "0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x589750BA8aF186cE5B55391B0b7148cAD43a1619": {
+      "name": "L2PoolInstance"
+    },
+    "0xBeC519531F0E78BcDdB295242fA4EC5251B38574": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0xe875feF12DF97D763038F0Eac53962Ca36249eA6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9D6aB154437A28CF202954e1176449c75e6D6c4B": {
+      "name": "EmissionManager"
+    },
+    "0x29B8Edc8a5158e8eBD7Dea3473517AB079260a0b": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd8247C7926841337E8adf9fD9E87026992C45062": {
+      "name": "ATokenInstance"
+    },
+    "0x294daB91f3539f5a74Ed995a59235eE62A14A345": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xea9989569Cf2D860597b4d649c9A963c15ab84fa": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xe892E40C92c2E4D281Be59b2E6300F271d824E75": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0x01d678F1bbE148C96e7501F1Ac41661904F84F61": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x4F6f44325828D2A40724A0a966F33d75cD1DF7c1": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x4758213271BFdC72224A7a8742dC865fC97756e1": {
+      "name": "WalletBalanceProvider"
+    },
+    "0xde35f7711295Dfd0CD8bd94d46f65b8Acb182520": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x4A49351ED179b23af08523Af98a8ca95C712b9d9": {
+      "name": "L2Encoder"
     }
   },
   "8453": {
@@ -5907,6 +6075,89 @@
     },
     "0x5283BEcEd7ADF6D003225C13896E536f2D4264FF": {
       "name": "WrappedTokenGatewayV3"
+    }
+  },
+  "42220": {
+    "0x50F4dAA86F3c747ce15C3C38bD0383200B61d6Dd": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x91b21900E91CD302EBeD05E45D8f270ddAED944d": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8657Cd5a0957e8C5BE15c69C67078b5d730D720a": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xbE815420A63A413BB8D508d8022C0FF150Ea7C39": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x1dF462e2712496373A347f8ad10802a5E95f053D": {
+      "name": "Executor"
+    },
+    "0xAe13e4DA0952f0B8fE04E21df53716fCF799a923": {
+      "name": "TransparentProxyFactory"
+    },
+    "0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0": {
+      "name": "ProxyAdmin"
+    },
+    "0x38BC0ED9d90Bc2309A436f4ED6Ca6Bc4D5C0DFA6": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x9F7Cf9417D5251C59fE94fB9147feEe1aAd9Cea5": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7567E3434CC1BEf724AB595e6072367Ef4914691": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1e693D088ceFD1E95ba4c4a5F7EeA41a1Ec37e8b": {
+      "name": "AaveOracle"
+    },
+    "0x7a12dCfd73C1B4cddf294da4cFce75FcaBBa314C": {
+      "name": "ACLManager"
+    },
+    "0x33b7d355613110b4E842f5f7057Ccd36fb4cee28": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x44D38b18a99E50E51B99F05C1f418Db26Ded315f": {
+      "name": "PoolInstance"
+    },
+    "0x87f6224536d9BD1d4FE6052e06f9647B51843e33": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x4725A0FdbEB14A77964bC1C221eE3a7982263103": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9e04Cb339163b06068397d9b6af2dA78440954e0": {
+      "name": "EmissionManager"
+    },
+    "0xB25a5D144626a0D488e52AE717A051a2E9997076": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xB4B6939D0804DCE8d0Ac3e59b2eD5C072829d56b": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0xf07fFd12b119b921C4a2ce8d4A13C5d1E3000d6e": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0xB91DA65093d54a1a7cb0fe684860F568A5E57123": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x1Be33D186a081eFDf15310e4bdEd81E828C47f9b": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3F662AA079a9619F10BFF4848910195C52CB2fb4": {
+      "name": "ATokenInstance"
+    },
+    "0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "43113": {

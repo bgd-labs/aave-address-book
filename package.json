@@ -1,6 +1,6 @@
 {
   "name": "@bgd-labs/aave-address-book",
-  "version": "4.10.0",
+  "version": "4.12.0",
   "description": "This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.",
   "private": false,
   "files": [
@@ -65,7 +65,8 @@
     "start": "tsx scripts/generateABIs.ts && tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
     "test": "vitest run tests",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test:snapshot": "npx vitest -u"
   },
   "repository": {
     "type": "git",
@@ -78,7 +79,7 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
-    "@bgd-labs/react-web3-icons": "^1.10.0",
+    "@bgd-labs/react-web3-icons": "^1.13.0",
     "@bgd-labs/rpc-env": "^2.3.2",
     "@types/node": "^22.4.1",
     "@uniswap/token-lists": "^1.0.0-beta.33",
@@ -92,7 +93,7 @@
     "tsup": "^8.0.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "viem": "^2.23.1",
+    "viem": "^2.23.5",
     "vitest": "^2.1.8"
   },
   "packageManager": "^npm@10.0.0",

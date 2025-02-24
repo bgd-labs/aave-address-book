@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.12.0](https://github.com/bgd-labs/aave-address-book/compare/v4.11.0...v4.12.0) (2025-02-19)
+
+
+### Features
+
+* Add Celo addresses ([#770](https://github.com/bgd-labs/aave-address-book/issues/770)) ([1688111](https://github.com/bgd-labs/aave-address-book/commit/1688111fee51bd01225c328c2ad5f21a5c696f08))
+* add gho direct minter ([#847](https://github.com/bgd-labs/aave-address-book/issues/847)) ([66d7c49](https://github.com/bgd-labs/aave-address-book/commit/66d7c490f53ac79787320e172ea39162ba38e7b0))
+* mantle instance contracts ([#828](https://github.com/bgd-labs/aave-address-book/issues/828)) ([853b5a0](https://github.com/bgd-labs/aave-address-book/commit/853b5a038028ae3fef77e814faebb4eb39008c1e))
+
+## [4.11.0](https://github.com/bgd-labs/aave-address-book/compare/v4.10.0...v4.11.0) (2025-02-18)
+
+
+### Features
+
+* sonic instance contracts ([#829](https://github.com/bgd-labs/aave-address-book/issues/829)) ([dd41430](https://github.com/bgd-labs/aave-address-book/commit/dd41430542a8699de58fc9ea36f7606574bf9455))
+
+
+### Bug Fixes
+
+* add list of verified ([#840](https://github.com/bgd-labs/aave-address-book/issues/840)) ([4e7fbac](https://github.com/bgd-labs/aave-address-book/commit/4e7fbac6a7f6ba59582d6fc047d766e997fecc60))
+* **cache:** automated cache update - updated addresses ([#830](https://github.com/bgd-labs/aave-address-book/issues/830)) ([aa516bb](https://github.com/bgd-labs/aave-address-book/commit/aa516bba1be147cf4e6fada5c824a7babf73f282))
+* **cache:** automated cache update - updated addresses ([#842](https://github.com/bgd-labs/aave-address-book/issues/842)) ([0b38aa8](https://github.com/bgd-labs/aave-address-book/commit/0b38aa8f208b9015df81993f23027e1fe88a3bc1))
+* disable dependabot ([#838](https://github.com/bgd-labs/aave-address-book/issues/838)) ([b8d3726](https://github.com/bgd-labs/aave-address-book/commit/b8d37265e935e623c6d8b08d4c23be03dac6cc6b))
+* use npm workspace ([#832](https://github.com/bgd-labs/aave-address-book/issues/832)) ([7afe056](https://github.com/bgd-labs/aave-address-book/commit/7afe05609993cef8a49fcfd2b66ae9d729e0e33d))
+
 ## [4.10.0](https://github.com/bgd-labs/aave-address-book/compare/v4.9.0...v4.10.0) (2025-02-07)
 
 

@@ -4,6 +4,26 @@ exports[`verification > should have all contracts verified except for the known 
 [
   {
     "item": {
+      "chainId": 42220,
+      "path": [
+        "GovernanceV3Celo",
+        "PAYLOADS_CONTROLLER",
+      ],
+      "value": "0xE48E10834C04E394A04BF22a565D063D40b9FA42",
+    },
+  },
+  {
+    "item": {
+      "chainId": 42220,
+      "path": [
+        "GovernanceV3Celo",
+        "GOVERNANCE_GUARDIAN",
+      ],
+      "value": "0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E",
+    },
+  },
+  {
+    "item": {
       "chainId": 8453,
       "path": [
         "AaveV3Base",
@@ -96,6 +116,18 @@ exports[`verification > should have all contracts verified except for the known 
         "STATA_TOKEN",
       ],
       "value": "0xF8F10f39116716e89498c1c5E94137ADa11b2BC7",
+    },
+  },
+  {
+    "item": {
+      "chainId": 8453,
+      "path": [
+        "AaveV3Base",
+        "ASSETS",
+        "GHO",
+        "STATA_TOKEN",
+      ],
+      "value": "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E",
     },
   },
   {
@@ -252,6 +284,46 @@ exports[`verification > should have all contracts verified except for the known 
         "STATA_TOKEN",
       ],
       "value": "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1",
+    },
+  },
+  {
+    "item": {
+      "chainId": 5000,
+      "path": [
+        "AaveV3Mantle",
+        "STATA_FACTORY",
+      ],
+      "value": "0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA",
+    },
+  },
+  {
+    "item": {
+      "chainId": 146,
+      "path": [
+        "AaveV3Sonic",
+        "STATA_FACTORY",
+      ],
+      "value": "0xFeeb6FE430B7523fEF2a38327241eE7153779535",
+    },
+  },
+  {
+    "item": {
+      "chainId": 42220,
+      "path": [
+        "MiscCelo",
+        "PROTOCOL_GUARDIAN",
+      ],
+      "value": "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85",
+    },
+  },
+  {
+    "item": {
+      "chainId": 5000,
+      "path": [
+        "MiscMantle",
+        "PROTOCOL_GUARDIAN",
+      ],
+      "value": "0x172867391d690Eb53896623DaD22208624230686",
     },
   },
 ]

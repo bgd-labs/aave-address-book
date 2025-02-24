@@ -28,6 +28,9 @@ import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
 import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
 import {zkSyncProtoV3} from './configs/pools/zksync';
 import {lineaProtoV3} from './configs/pools/linea';
+import {celoProtoV3} from './configs/pools/celo';
+import {mantleProtoV3} from './configs/pools/mantle';
+import {sonicProtoV3} from './configs/pools/sonic';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -42,6 +45,7 @@ import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
 import {governanceConfigBase} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
+import {governanceConfigCelo} from './configs/governance/celo';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
 import {baseAddresses, baseSepoliaAddresses} from './configs/networks/base';
 import {generateNetworkAddresses} from './generator/networkGenerator';
@@ -54,6 +58,7 @@ import {optimismAddresses, optimismSepoliaAddresses} from './configs/networks/op
 import {metisAddresses} from './configs/networks/metis';
 import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
+import {celoAddresses} from './configs/networks/celo';
 import {scrollAddresses} from './configs/networks/scroll';
 import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
@@ -70,6 +75,8 @@ import {generateGho} from './generator/ghoGenerator';
 import {governanceConfigLinea} from './configs/governance/linea';
 import {mantleAddresses} from './configs/networks/mantle';
 import {sonicAddresses} from './configs/networks/sonic';
+import {governanceConfigMantle} from './configs/governance/mantle';
+import {governanceConfigSonic} from './configs/governance/sonic';
 
 async function main() {
   // cleanup ts artifacts
@@ -99,7 +106,10 @@ async function main() {
       governanceConfigScroll,
       governanceConfigPolygonZkEvm,
       governanceConfigZkSync,
+      governanceConfigCelo,
       governanceConfigLinea,
+      governanceConfigMantle,
+      governanceConfigSonic,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -140,6 +150,9 @@ async function main() {
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
       lineaProtoV3,
+      celoProtoV3,
+      mantleProtoV3,
+      sonicProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
@@ -162,6 +175,7 @@ async function main() {
     metisAddresses,
     gnosisAddresses,
     bnbAddresses,
+    celoAddresses,
     scrollAddresses,
     polygonZkEvmAddresses,
     sepoliaAddresses,

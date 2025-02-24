@@ -102,6 +102,9 @@ library AaveV3EthereumLido {
 
   // https://etherscan.io/address/0x347C75d19718a05148687E13dca259aD016aB411
   address internal constant STATA_FACTORY = 0x347C75d19718a05148687E13dca259aD016aB411;
+
+  // https://etherscan.io/address/0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285
+  address internal constant GHO_DIRECT_MINTER = 0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285;
 }
 library AaveV3EthereumLidoAssets {
   // https://etherscan.io/address/0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0
