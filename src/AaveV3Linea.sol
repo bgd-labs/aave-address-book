@@ -26,15 +26,15 @@ library AaveV3Linea {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xbf32c7dFC72b730967072B112927ca0de205dbb5);
 
-  // https://lineascan.build/address/0x2D97F8FA96886Fd923c065F5457F9DDd494e3877
+  // https://lineascan.build/address/0x9eEBf28397D8bECC999472fC8838CBbeF54aebf6
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x2D97F8FA96886Fd923c065F5457F9DDd494e3877);
+    IPoolDataProvider(0x9eEBf28397D8bECC999472fC8838CBbeF54aebf6);
 
-  // https://lineascan.build/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
-  address internal constant POOL_IMPL = 0x36616cf17557639614c1cdDb356b1B83fc0B2132;
+  // https://lineascan.build/address/0xE3A01F80c1b5ab2159A3c8B9318C38833011ddF8
+  address internal constant POOL_IMPL = 0xE3A01F80c1b5ab2159A3c8B9318C38833011ddF8;
 
-  // https://lineascan.build/address/0x1236010CECea55998384e795B59815D871f5f94d
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x1236010CECea55998384e795B59815D871f5f94d;
+  // https://lineascan.build/address/0x02f4Eea384E92F0C2b4C50Bfb1206cA8EaE6c719
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x02f4Eea384E92F0C2b4C50Bfb1206cA8EaE6c719;
 
   // https://lineascan.build/address/0xc67bb8F2314fA0df50cBa314c6509A7bdAD500C0
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -212,24 +212,24 @@ library AaveV3LineaEModes {
   uint8 internal constant WEETH_CORRELATED = 3;
 }
 library AaveV3LineaExternalLibraries {
-  // https://lineascan.build/address/0x6990DFae5c227F1aC5D486b1AC0eecAcC2B3e68d
-  address internal constant FLASHLOAN_LOGIC = 0x6990DFae5c227F1aC5D486b1AC0eecAcC2B3e68d;
+  // https://lineascan.build/address/0x0b3486805D3bda7ACb2d5aa7E26f0b68aF647bc5
+  address internal constant FLASHLOAN_LOGIC = 0x0b3486805D3bda7ACb2d5aa7E26f0b68aF647bc5;
 
-  // https://lineascan.build/address/0xbFEDA4cC9184727Ac7546Ce529D306bB5CffcB4F
-  address internal constant BORROW_LOGIC = 0xbFEDA4cC9184727Ac7546Ce529D306bB5CffcB4F;
+  // https://lineascan.build/address/0xAB3218d0900Ba992084a6592b43f66926D4F5757
+  address internal constant BORROW_LOGIC = 0xAB3218d0900Ba992084a6592b43f66926D4F5757;
 
-  // https://lineascan.build/address/0x3f399651Fc3FE274F7754Bb240BC80e096c0d1c5
-  address internal constant BRIDGE_LOGIC = 0x3f399651Fc3FE274F7754Bb240BC80e096c0d1c5;
+  // https://lineascan.build/address/0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A
+  address internal constant BRIDGE_LOGIC = 0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A;
 
-  // https://lineascan.build/address/0x848eD9932047Fae0baf74d645450018F424A4367
-  address internal constant E_MODE_LOGIC = 0x848eD9932047Fae0baf74d645450018F424A4367;
+  // https://lineascan.build/address/0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e
+  address internal constant E_MODE_LOGIC = 0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e;
 
-  // https://lineascan.build/address/0xB84A9FBa16902e990EbCb63A22bB46996E9CfABe
-  address internal constant LIQUIDATION_LOGIC = 0xB84A9FBa16902e990EbCb63A22bB46996E9CfABe;
+  // https://lineascan.build/address/0x70Ac8F684eED3769960b2f863e405afc90CabCD4
+  address internal constant LIQUIDATION_LOGIC = 0x70Ac8F684eED3769960b2f863e405afc90CabCD4;
 
-  // https://lineascan.build/address/0x7Cc1def95a7eCfb5afF91425D5e828802A8d914E
-  address internal constant POOL_LOGIC = 0x7Cc1def95a7eCfb5afF91425D5e828802A8d914E;
+  // https://lineascan.build/address/0x50B8ed003a371cc498c57518e3581a059834c70c
+  address internal constant POOL_LOGIC = 0x50B8ed003a371cc498c57518e3581a059834c70c;
 
-  // https://lineascan.build/address/0x3c012c5d3Be847F46a1428A3Bc53d70dFe691194
-  address internal constant SUPPLY_LOGIC = 0x3c012c5d3Be847F46a1428A3Bc53d70dFe691194;
+  // https://lineascan.build/address/0x0742d8afd443B9D9B0587536d3750Ef94d69e4b7
+  address internal constant SUPPLY_LOGIC = 0x0742d8afd443B9D9B0587536d3750Ef94d69e4b7;
 }

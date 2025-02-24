@@ -2399,6 +2399,27 @@
     },
     "0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x497a1994c46d4f6C864904A9f1fac6328Cb7C8a6": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x9aEb8aAA1cA38634Aa8C0c8933E7fB4D61091327": {
+      "name": "PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x66FeAe868EBEd74A34A7043e88742AAE00D2bC53": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xc405a0eAB071a085A832F876D8e5be7cFEAfb624": {
+      "name": "PoolInstance"
+    },
+    "0xECdA3F25B73261d1FdFa1E158967660AA29f00cC": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x56401d666f486c495566A29249447C2BB8C56bB2": {
+      "name": "PoolInstance"
     }
   },
   "10": {
@@ -2866,6 +2887,15 @@
     },
     "0x5f2508cAE9923b02316254026CD43d7902866725": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x7f775bb7af2e7E09D5Dc9506c95516159a5cA0D0": {
+      "name": "L2PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "56": {
@@ -3201,6 +3231,15 @@
     },
     "0x0c2C95b24529664fE55D4437D7A31175CFE6c4f7": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x1e26247502e90b4fab9D0d17e4775e90085D2A35": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x9E255f9d061405769Abb2b583C9B2c4368b482b9": {
+      "name": "PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "100": {
@@ -3524,6 +3563,15 @@
     },
     "0xb85d72EC1EfE48168c4aBC4eB855f8Cbcd05cE38": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0xA2d323DBc43F445aD2d8974F17Be5dab32aAD474": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x77C874799E9564A0D0670ED40bf023D249E7bb21": {
+      "name": "PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "137": {
@@ -4417,6 +4465,15 @@
     },
     "0xBC302053db3aA514A3c86B9221082f162B91ad63": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8": {
+      "name": "PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "146": {
@@ -4697,6 +4754,15 @@
     },
     "0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0xf79473ea6ef2C9537027bAe2f6E07d67dD9999E0": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xc38b6318C434a362D16B635e2d2C2D58764f7a43": {
+      "name": "PoolInstance"
+    },
+    "0xf994D6bee2F5F98a068985C008Cf0e5fBa132700": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "1088": {
@@ -4957,6 +5023,15 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0xbb4a3B6781be3650B252552dFF6332EfB1162152": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xAD6A01bAde8e5ffeD933e342F58a53768422e96A": {
+      "name": "L2PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "1101": {
@@ -5533,6 +5608,15 @@
     },
     "0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0xC4Fcf9893072d61Cc2899C0054877Cb752587981": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x6EF6B6176091F94A8aD52C08e571F81598b226A2": {
+      "name": "L2PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "42161": {
@@ -6078,6 +6162,15 @@
     },
     "0x5283BEcEd7ADF6D003225C13896E536f2D4264FF": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x7f775bb7af2e7E09D5Dc9506c95516159a5cA0D0": {
+      "name": "L2PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "42220": {
@@ -6915,6 +7008,15 @@
     },
     "0x2825cE5921538d17cc15Ae00a8B24fF759C6CDaE": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8": {
+      "name": "PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "59144": {
@@ -7100,6 +7202,15 @@
     },
     "0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0x9eEBf28397D8bECC999472fC8838CBbeF54aebf6": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xE3A01F80c1b5ab2159A3c8B9318C38833011ddF8": {
+      "name": "L2PoolInstance"
+    },
+    "0x02f4Eea384E92F0C2b4C50Bfb1206cA8EaE6c719": {
+      "name": "PoolConfiguratorInstance"
     }
   },
   "84532": {
@@ -7547,6 +7658,15 @@
     },
     "0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4": {
       "name": "WrappedTokenGatewayV3"
+    },
+    "0xDC3c96ef82F861B4a3f10C81d4340c75460209ca": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xe7E38A47BefE9470622B773a1B8c266890363fb8": {
+      "name": "L2PoolInstance"
+    },
+    "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
+      "name": "PoolConfiguratorInstance"
     }
   }
 }

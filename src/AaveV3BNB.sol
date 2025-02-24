@@ -26,15 +26,15 @@ library AaveV3BNB {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x2D97F8FA96886Fd923c065F5457F9DDd494e3877);
 
-  // https://bscscan.com/address/0x23dF2a19384231aFD114b036C14b6b03324D79BC
+  // https://bscscan.com/address/0x1e26247502e90b4fab9D0d17e4775e90085D2A35
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x23dF2a19384231aFD114b036C14b6b03324D79BC);
+    IPoolDataProvider(0x1e26247502e90b4fab9D0d17e4775e90085D2A35);
 
-  // https://bscscan.com/address/0xB769c2A9259B3Eedaf120d8643C4C7EAe977fd7f
-  address internal constant POOL_IMPL = 0xB769c2A9259B3Eedaf120d8643C4C7EAe977fd7f;
+  // https://bscscan.com/address/0x9E255f9d061405769Abb2b583C9B2c4368b482b9
+  address internal constant POOL_IMPL = 0x9E255f9d061405769Abb2b583C9B2c4368b482b9;
 
-  // https://bscscan.com/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
+  // https://bscscan.com/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b;
 
   // https://bscscan.com/address/0xC206C2764A9dBF27d599613b8F9A63ACd1160ab4
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -269,24 +269,24 @@ library AaveV3BNBEModes {
   uint8 internal constant ETH_CORRELATED = 1;
 }
 library AaveV3BNBExternalLibraries {
-  // https://bscscan.com/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
-  address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;
+  // https://bscscan.com/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
+  address internal constant FLASHLOAN_LOGIC = 0x34039100cc9584Ae5D741d322e16d0d18CEE8770;
 
-  // https://bscscan.com/address/0x4c52FE2162200bf26c314d7bbd8611699139d553
-  address internal constant BORROW_LOGIC = 0x4c52FE2162200bf26c314d7bbd8611699139d553;
+  // https://bscscan.com/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
+  address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
 
-  // https://bscscan.com/address/0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604
-  address internal constant BRIDGE_LOGIC = 0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604;
+  // https://bscscan.com/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
+  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
-  // https://bscscan.com/address/0x88F864670De467aA73CD45325F9652C578C8AB85
-  address internal constant E_MODE_LOGIC = 0x88F864670De467aA73CD45325F9652C578C8AB85;
+  // https://bscscan.com/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
+  address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;
 
-  // https://bscscan.com/address/0x80d16970B31243Fe67DaB028115f3E4c3E3510Ad
-  address internal constant LIQUIDATION_LOGIC = 0x80d16970B31243Fe67DaB028115f3E4c3E3510Ad;
+  // https://bscscan.com/address/0x4731bF01583F991278692E8727d0700a00A1fBBf
+  address internal constant LIQUIDATION_LOGIC = 0x4731bF01583F991278692E8727d0700a00A1fBBf;
 
-  // https://bscscan.com/address/0xA58FB47bE9074828215A173564C0CD10f6F249bf
-  address internal constant POOL_LOGIC = 0xA58FB47bE9074828215A173564C0CD10f6F249bf;
+  // https://bscscan.com/address/0xf8C97539934ee66a67C26010e8e027D77E821B0C
+  address internal constant POOL_LOGIC = 0xf8C97539934ee66a67C26010e8e027D77E821B0C;
 
-  // https://bscscan.com/address/0x2b22E425C1322fbA0DbF17bb1dA25d71811EE7ba
-  address internal constant SUPPLY_LOGIC = 0x2b22E425C1322fbA0DbF17bb1dA25d71811EE7ba;
+  // https://bscscan.com/address/0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3
+  address internal constant SUPPLY_LOGIC = 0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3;
 }
