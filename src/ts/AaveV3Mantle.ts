@@ -65,6 +65,9 @@ export const L2_ENCODER = '0x4A49351ED179b23af08523Af98a8ca95C712b9d9';
 // https://mantlescan.xyz/address/0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA
 export const STATA_FACTORY = '0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA';
 
+// https://mantlescan.xyz/address/0xCCCcf90C363Eaf09dD89DD5330C1287Ff6a945Ee
+export const RISK_STEWARD = '0xCCCcf90C363Eaf09dD89DD5330C1287Ff6a945Ee';
+
 export const CHAIN_ID = 5000;
 export const ASSETS = {} as const;
 export const E_MODES = {} as const;
