@@ -71,6 +71,7 @@ export interface PoolConfig {
     PERMISSION_MANAGER?: Hex;
     WALLET_BALANCE_PROVIDER?: Hex;
     GHO_DIRECT_MINTER?: Hex;
+    UMBRELLA?: Hex;
   };
   // will be used for pending pools where the impls can't be fetched yet
   initial?: {
@@ -116,6 +117,7 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     PROTOCOL_GUARDIAN?: Hex;
     AAVE_MERKLE_DISTRIBUTOR?: Hex;
     AAVE_CL_ROBOT_OPERATOR?: Hex;
+    FAUCET?: Hex;
   } & T;
 }
 
