@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.13.0](https://github.com/bgd-labs/aave-address-book/compare/v4.12.0...v4.13.0) (2025-02-24)
+
+
+### Features
+
+* update to v3.3.0 ([#839](https://github.com/bgd-labs/aave-address-book/issues/839)) ([43c76b3](https://github.com/bgd-labs/aave-address-book/commit/43c76b394b972e0a7490ccc066d2e8ddce8a2638))
+
+
+### Bug Fixes
+
+* add risk stewards for celo and mantle ([#852](https://github.com/bgd-labs/aave-address-book/issues/852)) ([a1a964e](https://github.com/bgd-labs/aave-address-book/commit/a1a964ec8dcddfccc373e465f3461dc96693fe61))
+* **cache:** automated cache update - updated addresses ([#851](https://github.com/bgd-labs/aave-address-book/issues/851)) ([b0fd6b1](https://github.com/bgd-labs/aave-address-book/commit/b0fd6b1021af0d2b2a32a940846e2427f5c38465))
+* update web3 icons ([#849](https://github.com/bgd-labs/aave-address-book/issues/849)) ([a274953](https://github.com/bgd-labs/aave-address-book/commit/a27495376032eaaca01d71aecfb7d8438cb4e9f7))
+* updated base sepolia addresses ([#854](https://github.com/bgd-labs/aave-address-book/issues/854)) ([edac387](https://github.com/bgd-labs/aave-address-book/commit/edac3879d4a4cd46b076ede048adde6464b1430a))
+
 ## [4.12.0](https://github.com/bgd-labs/aave-address-book/compare/v4.11.0...v4.12.0) (2025-02-19)
 
 
