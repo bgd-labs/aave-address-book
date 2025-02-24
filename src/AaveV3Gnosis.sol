@@ -26,15 +26,15 @@ library AaveV3Gnosis {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xEc710f59005f48703908bC519D552Df5B8472614);
 
-  // https://gnosisscan.io/address/0x57038C3e3Fe0a170BB72DE2fD56E98e4d1a69717
+  // https://gnosisscan.io/address/0xA2d323DBc43F445aD2d8974F17Be5dab32aAD474
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x57038C3e3Fe0a170BB72DE2fD56E98e4d1a69717);
+    IPoolDataProvider(0xA2d323DBc43F445aD2d8974F17Be5dab32aAD474);
 
-  // https://gnosisscan.io/address/0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770
-  address internal constant POOL_IMPL = 0xF2C312BfAF4CF0429DB4DA15a0cf5F770Ea3E770;
+  // https://gnosisscan.io/address/0x77C874799E9564A0D0670ED40bf023D249E7bb21
+  address internal constant POOL_IMPL = 0x77C874799E9564A0D0670ED40bf023D249E7bb21;
 
-  // https://gnosisscan.io/address/0x4816b2C2895f97fB918f1aE7Da403750a0eE372e
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x4816b2C2895f97fB918f1aE7Da403750a0eE372e;
+  // https://gnosisscan.io/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b;
 
   // https://gnosisscan.io/address/0xaD4F91D26254B6B0C6346b390dDA2991FDE2F20d
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -289,24 +289,24 @@ library AaveV3GnosisEModes {
   uint8 internal constant SDAI_EURE = 2;
 }
 library AaveV3GnosisExternalLibraries {
-  // https://gnosisscan.io/address/0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0
-  address internal constant FLASHLOAN_LOGIC = 0xb32381feFFF45eE9F47fD2f2cF83C832637d6EF0;
+  // https://gnosisscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
+  address internal constant FLASHLOAN_LOGIC = 0x34039100cc9584Ae5D741d322e16d0d18CEE8770;
 
-  // https://gnosisscan.io/address/0x4c52FE2162200bf26c314d7bbd8611699139d553
-  address internal constant BORROW_LOGIC = 0x4c52FE2162200bf26c314d7bbd8611699139d553;
+  // https://gnosisscan.io/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
+  address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
 
-  // https://gnosisscan.io/address/0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604
-  address internal constant BRIDGE_LOGIC = 0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604;
+  // https://gnosisscan.io/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
+  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
-  // https://gnosisscan.io/address/0x88F864670De467aA73CD45325F9652C578C8AB85
-  address internal constant E_MODE_LOGIC = 0x88F864670De467aA73CD45325F9652C578C8AB85;
+  // https://gnosisscan.io/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
+  address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;
 
-  // https://gnosisscan.io/address/0x80d16970B31243Fe67DaB028115f3E4c3E3510Ad
-  address internal constant LIQUIDATION_LOGIC = 0x80d16970B31243Fe67DaB028115f3E4c3E3510Ad;
+  // https://gnosisscan.io/address/0x4731bF01583F991278692E8727d0700a00A1fBBf
+  address internal constant LIQUIDATION_LOGIC = 0x4731bF01583F991278692E8727d0700a00A1fBBf;
 
-  // https://gnosisscan.io/address/0xA58FB47bE9074828215A173564C0CD10f6F249bf
-  address internal constant POOL_LOGIC = 0xA58FB47bE9074828215A173564C0CD10f6F249bf;
+  // https://gnosisscan.io/address/0xf8C97539934ee66a67C26010e8e027D77E821B0C
+  address internal constant POOL_LOGIC = 0xf8C97539934ee66a67C26010e8e027D77E821B0C;
 
-  // https://gnosisscan.io/address/0x2b22E425C1322fbA0DbF17bb1dA25d71811EE7ba
-  address internal constant SUPPLY_LOGIC = 0x2b22E425C1322fbA0DbF17bb1dA25d71811EE7ba;
+  // https://gnosisscan.io/address/0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3
+  address internal constant SUPPLY_LOGIC = 0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3;
 }

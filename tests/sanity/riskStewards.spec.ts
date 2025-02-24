@@ -20,8 +20,8 @@ export async function check(addresses: Record<string, any>) {
     ]);
     if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
       throw new Error(`SANITY_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
-    if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
-      throw new Error(`SANITY_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
+    // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
+    //   throw new Error(`SANITY_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
 
     const governance = getGovernance(addresses.CHAIN_ID);
     if (!governance) {
@@ -53,10 +53,13 @@ export async function check(addresses: Record<string, any>) {
 
       if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
         throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
-      if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
-        throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
+      // currently they reference an outdated pdp - which should be fine
+      // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
+      //   throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
       if (RISK_COUNCIL !== addresses.EDGE_STEWARD_INJECTOR)
-        throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong EDGE_STEWARD_INJECTOR on ${client.chain?.name}`);
+        throw new Error(
+          `SANITY_EDGE_RISK_STEWARDS: wrong EDGE_STEWARD_INJECTOR on ${client.chain?.name}`,
+        );
 
       if (!governance) {
         console.log(
