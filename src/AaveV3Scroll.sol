@@ -2,8 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
-import {ICollector} from './common/ICollector.sol';
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager, ICollector} from './AaveV3.sol';
 library AaveV3Scroll {
   // https://scrollscan.com/address/0x69850D0B276776781C063771b161bd8894BCdD04
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

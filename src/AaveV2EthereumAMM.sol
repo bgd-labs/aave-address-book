@@ -3,7 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
-import {ICollector} from './common/ICollector.sol';
+import {ICollector} from './AaveV3.sol';
 library AaveV2EthereumAMM {
   // https://etherscan.io/address/0xAcc030EF66f9dFEAE9CbB0cd1B25654b82cFA8d5
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

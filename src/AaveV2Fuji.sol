@@ -3,7 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
-import {ICollector} from './common/ICollector.sol';
+import {ICollector} from './AaveV3.sol';
 library AaveV2Fuji {
   // https://testnet.snowtrace.io/address/0x7fdC1FdF79BE3309bf82f4abdAD9f111A6590C0f
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

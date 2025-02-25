@@ -2,8 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';
-import {ICollector} from './common/ICollector.sol';
+import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager, ICollector} from './AaveV3.sol';
 library AaveV3BaseSepoliaLido {
   // https://sepolia.basescan.org/address/0x6f7E694fe5250Ce638fFE95524760422E6e41997
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

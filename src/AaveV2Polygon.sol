@@ -3,7 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';
-import {ICollector} from './common/ICollector.sol';
+import {ICollector} from './AaveV3.sol';
 library AaveV2Polygon {
   // https://polygonscan.com/address/0xd05e3E715d945B59290df0ae8eF85c1BdB684744
   ILendingPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =

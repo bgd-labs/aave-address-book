@@ -16,6 +16,7 @@ import {IDefaultInterestRateStrategyV2} from 'aave-v3-origin/contracts/interface
 import {IReserveInterestRateStrategy} from 'aave-v3-origin/contracts/interfaces/IReserveInterestRateStrategy.sol';
 import {IPoolDataProvider as IAaveProtocolDataProvider} from 'aave-v3-origin/contracts/interfaces/IPoolDataProvider.sol';
 import {AggregatorInterface} from 'aave-v3-origin/contracts/dependencies/chainlink/AggregatorInterface.sol';
+import {ICollector} from 'aave-v3-origin/contracts/treasury/ICollector.sol';
 
 interface IACLManager is BasicIACLManager {
   function hasRole(bytes32 role, address account) external view returns (bool);

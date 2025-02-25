@@ -47,7 +47,7 @@ export async function generateProtocolV2Library(poolConfig: PoolConfig) {
     prefixWithGeneratedWarning(
       prefixWithPragma(
         `import {ILendingPoolAddressesProvider, ILendingPool, ILendingPoolConfigurator, IAaveOracle, IAaveProtocolDataProvider, ILendingRateOracle} from './AaveV2.sol';\n` +
-          `import {ICollector} from './common/ICollector.sol';` +
+          `import {ICollector} from './AaveV3.sol';` +
           wrapIntoSolidityLibrary(
             generateSolidityConstants({
               chainId: poolConfig.chainId,
