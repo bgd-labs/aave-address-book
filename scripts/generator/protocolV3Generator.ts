@@ -67,8 +67,7 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
     `./src/${name}.sol`,
     prefixWithGeneratedWarning(
       prefixWithPragma(
-        `import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager} from './AaveV3.sol';\n` +
-          `import {ICollector} from './common/ICollector.sol';` +
+        `import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager, ICollector} from './AaveV3.sol';\n` +
           wrapIntoSolidityLibrary(
             generateSolidityConstants({
               chainId: poolConfig.chainId,
