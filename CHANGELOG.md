@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.13.2](https://github.com/bgd-labs/aave-address-book/compare/v4.13.1...v4.13.2) (2025-02-26)
+
+
+### Bug Fixes
+
+* stata optimism factory ([#859](https://github.com/bgd-labs/aave-address-book/issues/859)) ([d12773d](https://github.com/bgd-labs/aave-address-book/commit/d12773d4edfa5e8867f0614e8b6c9ffa8c90f0d4))
+
 ## [4.13.1](https://github.com/bgd-labs/aave-address-book/compare/v4.13.0...v4.13.1) (2025-02-24)
 
 
