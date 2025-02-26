@@ -86,6 +86,9 @@ export const DEBT_SWAP_ADAPTER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034';
 // https://gnosisscan.io/address/0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3
 export const WITHDRAW_SWAP_ADAPTER = '0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3';
 
+// https://gnosisscan.io/address/0xFf3a13703236A77Da603c7D413cf6F6AfB866D34
+export const DUST_BIN = '0xFf3a13703236A77Da603c7D413cf6F6AfB866D34';
+
 export const CHAIN_ID = 100;
 export const ASSETS = {
   WETH: {

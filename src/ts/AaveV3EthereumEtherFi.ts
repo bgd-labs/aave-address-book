@@ -77,6 +77,9 @@ export const RISK_STEWARD = '0xBF79d8339303148E345277a994Eb2cD5d82F0067';
 // https://etherscan.io/address/0x40ede12b44d98Fc4E53A2fB027D1BD1846e1690C
 export const DEBT_SWAP_ADAPTER = '0x40ede12b44d98Fc4E53A2fB027D1BD1846e1690C';
 
+// https://etherscan.io/address/0x66296a4130609bDf32e699c2D821F745B8132f2F
+export const DUST_BIN = '0x66296a4130609bDf32e699c2D821F745B8132f2F';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   weETH: {

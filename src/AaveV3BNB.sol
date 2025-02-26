@@ -96,6 +96,9 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x326aB0868bD279382Be2DF5E228Cb8AF38649AB4
   address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
     0x326aB0868bD279382Be2DF5E228Cb8AF38649AB4;
+
+  // https://bscscan.com/address/0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202
+  address internal constant DUST_BIN = 0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202;
 }
 library AaveV3BNBAssets {
   // https://bscscan.com/address/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82

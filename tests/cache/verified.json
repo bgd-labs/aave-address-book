@@ -2420,6 +2420,9 @@
     },
     "0x56401d666f486c495566A29249447C2BB8C56bB2": {
       "name": "PoolInstance"
+    },
+    "0x66296a4130609bDf32e699c2D821F745B8132f2F": {
+      "name": "AaveV3DefaultRateStrategyProcedure"
     }
   },
   "10": {
@@ -2899,6 +2902,9 @@
     },
     "0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x9601de16a38B6d2Dd5d5f313EEDb4fcAf9718D6C": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "56": {
@@ -3243,6 +3249,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "100": {
@@ -3575,6 +3584,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0xFf3a13703236A77Da603c7D413cf6F6AfB866D34": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "137": {
@@ -4477,6 +4489,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x2797F0BCff7b76c0439EC82018cD8011909bA812": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
@@ -5035,6 +5050,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x1bFFB297643dBD4D0F6A27F431CF878cE9175d00": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "1101": {
@@ -5620,6 +5638,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42161": {
@@ -6174,6 +6195,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x897c76905A3d17F71d5ea033916B65154Cf4b4f0": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42220": {
@@ -6263,6 +6287,9 @@
     },
     "0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef": {
       "name": "RiskSteward"
+    },
+    "0x886b90e5d7DA22000f1652740D3EC51566AAbe40": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "43113": {
@@ -7020,6 +7047,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x0D5fA13Abca0bc06ac227eb4653cc5aDF4293341": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "59144": {
@@ -7214,6 +7244,9 @@
     },
     "0x02f4Eea384E92F0C2b4C50Bfb1206cA8EaE6c719": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x94756B7508631509601a5555c93457Bf0ebDbC48": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "84532": {
@@ -7670,6 +7703,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0xD1aE9Da215B06910F246b13fbCbd74D9657AF365": {
+      "name": "TransparentUpgradeableProxy"
     }
   }
 }

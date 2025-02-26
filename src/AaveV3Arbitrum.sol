@@ -112,6 +112,9 @@ library AaveV3Arbitrum {
 
   // https://arbiscan.io/address/0xd85922fFF51ba4130cEC7c499db4Ac3Eb9981EaD
   address internal constant STATA_FACTORY = 0xd85922fFF51ba4130cEC7c499db4Ac3Eb9981EaD;
+
+  // https://arbiscan.io/address/0x897c76905A3d17F71d5ea033916B65154Cf4b4f0
+  address internal constant DUST_BIN = 0x897c76905A3d17F71d5ea033916B65154Cf4b4f0;
 }
 library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1

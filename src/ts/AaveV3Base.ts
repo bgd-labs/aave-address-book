@@ -95,6 +95,9 @@ export const WETH_GATEWAY = '0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24';
 // https://basescan.org/address/0x78d33BF0014ab169725F2Ea5a62b200F2977faeE
 export const STATA_FACTORY = '0x78d33BF0014ab169725F2Ea5a62b200F2977faeE';
 
+// https://basescan.org/address/0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202
+export const DUST_BIN = '0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202';
+
 export const CHAIN_ID = 8453;
 export const ASSETS = {
   WETH: {

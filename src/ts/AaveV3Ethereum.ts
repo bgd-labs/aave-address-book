@@ -95,6 +95,9 @@ export const SAVINGS_DAI_TOKEN_WRAPPER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a05
 // https://etherscan.io/address/0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F
 export const STATA_FACTORY = '0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F';
 
+// https://etherscan.io/address/0x66296a4130609bDf32e699c2D821F745B8132f2F
+export const DUST_BIN = '0x66296a4130609bDf32e699c2D821F745B8132f2F';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   WETH: {

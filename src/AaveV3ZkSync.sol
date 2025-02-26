@@ -73,6 +73,9 @@ library AaveV3ZkSync {
 
   // https://era.zksync.network/address/0x05c77Cf62346329a157d7A6F874464D049CECb26
   address internal constant RISK_STEWARD = 0x05c77Cf62346329a157d7A6F874464D049CECb26;
+
+  // https://era.zksync.network/address/0xA980972F672be373387EF567f339423Bd70CF743
+  address internal constant DUST_BIN = 0xA980972F672be373387EF567f339423Bd70CF743;
 }
 library AaveV3ZkSyncAssets {
   // https://era.zksync.network/address/0x1d17CBcF0D6D143135aE902365D2E5e2A16538D4

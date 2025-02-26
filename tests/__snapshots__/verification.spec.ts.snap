@@ -288,6 +288,16 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
+      "chainId": 324,
+      "path": [
+        "AaveV3ZkSync",
+        "DUST_BIN",
+      ],
+      "value": "0xA980972F672be373387EF567f339423Bd70CF743",
+    },
+  },
+  {
+    "item": {
       "chainId": 5000,
       "path": [
         "AaveV3Mantle",
@@ -298,12 +308,32 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
+      "chainId": 5000,
+      "path": [
+        "AaveV3Mantle",
+        "DUST_BIN",
+      ],
+      "value": "0x7485FB1552BB107fFc923f41E548e8e3FFea5E45",
+    },
+  },
+  {
+    "item": {
       "chainId": 146,
       "path": [
         "AaveV3Sonic",
         "STATA_FACTORY",
       ],
       "value": "0xFeeb6FE430B7523fEF2a38327241eE7153779535",
+    },
+  },
+  {
+    "item": {
+      "chainId": 146,
+      "path": [
+        "AaveV3Sonic",
+        "DUST_BIN",
+      ],
+      "value": "0x62aDD9C6B511085C67515ebB799b51c4cf2d786F",
     },
   },
   {

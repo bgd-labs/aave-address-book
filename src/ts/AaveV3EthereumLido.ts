@@ -92,6 +92,9 @@ export const STATA_FACTORY = '0x347C75d19718a05148687E13dca259aD016aB411';
 // https://etherscan.io/address/0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285
 export const GHO_DIRECT_MINTER = '0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285';
 
+// https://etherscan.io/address/0x66296a4130609bDf32e699c2D821F745B8132f2F
+export const DUST_BIN = '0x66296a4130609bDf32e699c2D821F745B8132f2F';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   wstETH: {

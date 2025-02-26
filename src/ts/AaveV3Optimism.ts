@@ -92,6 +92,9 @@ export const WITHDRAW_SWAP_ADAPTER = '0x78F8Bd884C3D738B74B420540659c82f392820e0
 // https://optimistic.etherscan.io/address/0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39
 export const STATA_FACTORY = '0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39';
 
+// https://optimistic.etherscan.io/address/0x9601de16a38B6d2Dd5d5f313EEDb4fcAf9718D6C
+export const DUST_BIN = '0x9601de16a38B6d2Dd5d5f313EEDb4fcAf9718D6C';
+
 export const CHAIN_ID = 10;
 export const ASSETS = {
   DAI: {

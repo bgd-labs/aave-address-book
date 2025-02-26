@@ -96,6 +96,9 @@ library AaveV3Polygon {
 
   // https://polygonscan.com/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
+
+  // https://polygonscan.com/address/0x2797F0BCff7b76c0439EC82018cD8011909bA812
+  address internal constant DUST_BIN = 0x2797F0BCff7b76c0439EC82018cD8011909bA812;
 }
 library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
