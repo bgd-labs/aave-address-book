@@ -102,6 +102,9 @@ library AaveV3Optimism {
 
   // https://optimistic.etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
+
+  // https://optimistic.etherscan.io/address/0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39
+  address internal constant STATA_FACTORY = 0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39;
 }
 library AaveV3OptimismAssets {
   // https://optimistic.etherscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1

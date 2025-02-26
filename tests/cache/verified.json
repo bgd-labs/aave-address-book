@@ -2896,6 +2896,9 @@
     },
     "0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "56": {

@@ -89,6 +89,9 @@ export const WETH_GATEWAY = '0x5f2508cAE9923b02316254026CD43d7902866725';
 // https://optimistic.etherscan.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
 export const WITHDRAW_SWAP_ADAPTER = '0x78F8Bd884C3D738B74B420540659c82f392820e0';
 
+// https://optimistic.etherscan.io/address/0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39
+export const STATA_FACTORY = '0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39';
+
 export const CHAIN_ID = 10;
 export const ASSETS = {
   DAI: {
