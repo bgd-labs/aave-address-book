@@ -105,8 +105,8 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285
   address internal constant GHO_DIRECT_MINTER = 0x2cE01c87Fec1b71A9041c52CaED46Fc5f4807285;
 
-  // https://etherscan.io/address/0x66296a4130609bDf32e699c2D821F745B8132f2F
-  address internal constant DUST_BIN = 0x66296a4130609bDf32e699c2D821F745B8132f2F;
+  // https://etherscan.io/address/0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b
+  address internal constant DUST_BIN = 0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b;
 }
 library AaveV3EthereumLidoAssets {
   // https://etherscan.io/address/0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0
