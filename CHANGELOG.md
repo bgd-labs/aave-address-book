@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.14.0](https://github.com/bgd-labs/aave-address-book/compare/v4.13.2...v4.14.0) (2025-02-28)
+
+
+### Features
+
+* add dust collector ([#861](https://github.com/bgd-labs/aave-address-book/issues/861)) ([300841c](https://github.com/bgd-labs/aave-address-book/commit/300841c0c3cbc884dca90d168053a3f8df25f767))
+
 ## [4.13.2](https://github.com/bgd-labs/aave-address-book/compare/v4.13.1...v4.13.2) (2025-02-26)
 
 
