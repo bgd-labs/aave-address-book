@@ -65,6 +65,9 @@ export const WETH_GATEWAY = '0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9';
 // https://sonicscan.org/address/0xFeeb6FE430B7523fEF2a38327241eE7153779535
 export const STATA_FACTORY = '0xFeeb6FE430B7523fEF2a38327241eE7153779535';
 
+// https://sonicscan.org/address/0x62aDD9C6B511085C67515ebB799b51c4cf2d786F
+export const DUST_BIN = '0x62aDD9C6B511085C67515ebB799b51c4cf2d786F';
+
 export const CHAIN_ID = 146;
 export const ASSETS = {} as const;
 export const E_MODES = {} as const;

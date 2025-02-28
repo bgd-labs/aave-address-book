@@ -62,6 +62,9 @@ export const WETH_GATEWAY = '0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff';
 // https://era.zksync.network/address/0x05c77Cf62346329a157d7A6F874464D049CECb26
 export const RISK_STEWARD = '0x05c77Cf62346329a157d7A6F874464D049CECb26';
 
+// https://era.zksync.network/address/0x452E8E84bF852513585f893931CBD9A409Cd3459
+export const DUST_BIN = '0x452E8E84bF852513585f893931CBD9A409Cd3459';
+
 export const CHAIN_ID = 324;
 export const ASSETS = {
   USDC: {

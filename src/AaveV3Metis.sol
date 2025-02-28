@@ -86,6 +86,9 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x9C62AdC332888F56998542415c38D7CDf3Ff7619
   address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
     0x9C62AdC332888F56998542415c38D7CDf3Ff7619;
+
+  // https://explorer.metis.io/address/0x1bFFB297643dBD4D0F6A27F431CF878cE9175d00
+  address internal constant DUST_BIN = 0x1bFFB297643dBD4D0F6A27F431CF878cE9175d00;
 }
 library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0

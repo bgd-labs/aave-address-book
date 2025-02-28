@@ -98,6 +98,9 @@ export const WITHDRAW_SWAP_ADAPTER = '0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
 // https://arbiscan.io/address/0xd85922fFF51ba4130cEC7c499db4Ac3Eb9981EaD
 export const STATA_FACTORY = '0xd85922fFF51ba4130cEC7c499db4Ac3Eb9981EaD';
 
+// https://arbiscan.io/address/0x897c76905A3d17F71d5ea033916B65154Cf4b4f0
+export const DUST_BIN = '0x897c76905A3d17F71d5ea033916B65154Cf4b4f0';
+
 export const CHAIN_ID = 42161;
 export const ASSETS = {
   DAI: {

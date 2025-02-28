@@ -103,6 +103,9 @@ library AaveV3Avalanche {
 
   // https://snowtrace.io/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
   address internal constant WITHDRAW_SWAP_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
+
+  // https://snowtrace.io/address/0x0D5fA13Abca0bc06ac227eb4653cc5aDF4293341
+  address internal constant DUST_BIN = 0x0D5fA13Abca0bc06ac227eb4653cc5aDF4293341;
 }
 library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xd586E7F844cEa2F87f50152665BCbc2C279D8d70

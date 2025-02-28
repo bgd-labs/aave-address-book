@@ -62,6 +62,9 @@ export const STATA_FACTORY = '0x2b33073B94243304bCb4dfFA6b624afA5BAA414D';
 // https://celoscan.io/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef
 export const RISK_STEWARD = '0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef';
 
+// https://celoscan.io/address/0x886b90e5d7DA22000f1652740D3EC51566AAbe40
+export const DUST_BIN = '0x886b90e5d7DA22000f1652740D3EC51566AAbe40';
+
 export const CHAIN_ID = 42220;
 export const ASSETS = {} as const;
 export const E_MODES = {} as const;

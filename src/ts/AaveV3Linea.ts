@@ -62,6 +62,9 @@ export const WALLET_BALANCE_PROVIDER = '0xff75B6da14FfbbfD355Daf7a2731456b3562Ba
 // https://lineascan.build/address/0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F
 export const WETH_GATEWAY = '0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F';
 
+// https://lineascan.build/address/0x94756B7508631509601a5555c93457Bf0ebDbC48
+export const DUST_BIN = '0x94756B7508631509601a5555c93457Bf0ebDbC48';
+
 export const CHAIN_ID = 59144;
 export const ASSETS = {
   WETH: {

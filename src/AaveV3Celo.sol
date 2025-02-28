@@ -73,6 +73,9 @@ library AaveV3Celo {
 
   // https://celoscan.io/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef
   address internal constant RISK_STEWARD = 0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef;
+
+  // https://celoscan.io/address/0x886b90e5d7DA22000f1652740D3EC51566AAbe40
+  address internal constant DUST_BIN = 0x886b90e5d7DA22000f1652740D3EC51566AAbe40;
 }
 library AaveV3CeloAssets {}
 library AaveV3CeloEModes {

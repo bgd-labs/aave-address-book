@@ -99,6 +99,9 @@ library AaveV3Gnosis {
 
   // https://gnosisscan.io/address/0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3
   address internal constant WITHDRAW_SWAP_ADAPTER = 0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3;
+
+  // https://gnosisscan.io/address/0xFf3a13703236A77Da603c7D413cf6F6AfB866D34
+  address internal constant DUST_BIN = 0xFf3a13703236A77Da603c7D413cf6F6AfB866D34;
 }
 library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1

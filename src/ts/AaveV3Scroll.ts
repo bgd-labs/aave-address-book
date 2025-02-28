@@ -77,6 +77,9 @@ export const WETH_GATEWAY = '0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4';
 // https://scrollscan.com/address/0x970b77b96D94966939a8F867c2BfC2aC0310C0e7
 export const LEGACY_STATIC_A_TOKEN_FACTORY = '0x970b77b96D94966939a8F867c2BfC2aC0310C0e7';
 
+// https://scrollscan.com/address/0xD1aE9Da215B06910F246b13fbCbd74D9657AF365
+export const DUST_BIN = '0xD1aE9Da215B06910F246b13fbCbd74D9657AF365';
+
 export const CHAIN_ID = 534352;
 export const ASSETS = {
   WETH: {

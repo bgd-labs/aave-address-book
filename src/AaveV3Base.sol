@@ -109,6 +109,9 @@ library AaveV3Base {
 
   // https://basescan.org/address/0x78d33BF0014ab169725F2Ea5a62b200F2977faeE
   address internal constant STATA_FACTORY = 0x78d33BF0014ab169725F2Ea5a62b200F2977faeE;
+
+  // https://basescan.org/address/0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202
+  address internal constant DUST_BIN = 0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202;
 }
 library AaveV3BaseAssets {
   // https://basescan.org/address/0x4200000000000000000000000000000000000006
