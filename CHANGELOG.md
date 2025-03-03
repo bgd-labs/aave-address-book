@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.15.0](https://github.com/bgd-labs/aave-address-book/compare/v4.14.0...v4.15.0) (2025-03-03)
+
+
+### Features
+
+* clinic stewards ([#865](https://github.com/bgd-labs/aave-address-book/issues/865)) ([a652eda](https://github.com/bgd-labs/aave-address-book/commit/a652edad56b817c730ced875ed4e61995825b76e))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#867](https://github.com/bgd-labs/aave-address-book/issues/867)) ([d833e6e](https://github.com/bgd-labs/aave-address-book/commit/d833e6eb599952b668bbc26ff9a14c43022c0f8f))
+
 ## [4.14.0](https://github.com/bgd-labs/aave-address-book/compare/v4.13.2...v4.14.0) (2025-02-28)
 
 
