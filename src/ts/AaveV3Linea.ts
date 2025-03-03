@@ -65,6 +65,9 @@ export const WETH_GATEWAY = '0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F';
 // https://lineascan.build/address/0x94756B7508631509601a5555c93457Bf0ebDbC48
 export const DUST_BIN = '0x94756B7508631509601a5555c93457Bf0ebDbC48';
 
+// https://lineascan.build/address/0xA68A0864F304b5145f00A3f8Fd3ec2281568700F
+export const CLINIC_STEWARD = '0xA68A0864F304b5145f00A3f8Fd3ec2281568700F';
+
 export const CHAIN_ID = 59144;
 export const ASSETS = {
   WETH: {

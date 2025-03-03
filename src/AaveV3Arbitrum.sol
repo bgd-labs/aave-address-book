@@ -115,6 +115,9 @@ library AaveV3Arbitrum {
 
   // https://arbiscan.io/address/0x897c76905A3d17F71d5ea033916B65154Cf4b4f0
   address internal constant DUST_BIN = 0x897c76905A3d17F71d5ea033916B65154Cf4b4f0;
+
+  // https://arbiscan.io/address/0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c
+  address internal constant CLINIC_STEWARD = 0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c;
 }
 library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1

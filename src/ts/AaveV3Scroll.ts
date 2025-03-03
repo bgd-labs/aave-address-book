@@ -80,6 +80,9 @@ export const LEGACY_STATIC_A_TOKEN_FACTORY = '0x970b77b96D94966939a8F867c2BfC2aC
 // https://scrollscan.com/address/0xD1aE9Da215B06910F246b13fbCbd74D9657AF365
 export const DUST_BIN = '0xD1aE9Da215B06910F246b13fbCbd74D9657AF365';
 
+// https://scrollscan.com/address/0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de
+export const CLINIC_STEWARD = '0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de';
+
 export const CHAIN_ID = 534352;
 export const ASSETS = {
   WETH: {

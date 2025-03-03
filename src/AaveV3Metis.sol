@@ -89,6 +89,9 @@ library AaveV3Metis {
 
   // https://explorer.metis.io/address/0x1bFFB297643dBD4D0F6A27F431CF878cE9175d00
   address internal constant DUST_BIN = 0x1bFFB297643dBD4D0F6A27F431CF878cE9175d00;
+
+  // https://explorer.metis.io/address/0x53d3c1B2d42578F56ef4c0142F19CDB54CE55040
+  address internal constant CLINIC_STEWARD = 0x53d3c1B2d42578F56ef4c0142F19CDB54CE55040;
 }
 library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0

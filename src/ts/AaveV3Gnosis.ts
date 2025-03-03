@@ -89,6 +89,9 @@ export const WITHDRAW_SWAP_ADAPTER = '0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3
 // https://gnosisscan.io/address/0xFf3a13703236A77Da603c7D413cf6F6AfB866D34
 export const DUST_BIN = '0xFf3a13703236A77Da603c7D413cf6F6AfB866D34';
 
+// https://gnosisscan.io/address/0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA
+export const CLINIC_STEWARD = '0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA';
+
 export const CHAIN_ID = 100;
 export const ASSETS = {
   WETH: {

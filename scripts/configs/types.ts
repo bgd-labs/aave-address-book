@@ -73,6 +73,7 @@ export interface PoolConfig {
     GHO_DIRECT_MINTER?: Hex;
     UMBRELLA?: Hex;
     DUST_BIN?: Hex;
+    CLINIC_STEWARD?: Hex;
   };
   // will be used for pending pools where the impls can't be fetched yet
   initial?: {

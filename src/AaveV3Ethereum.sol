@@ -112,6 +112,9 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b
   address internal constant DUST_BIN = 0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b;
+
+  // https://etherscan.io/address/0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7
+  address internal constant CLINIC_STEWARD = 0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7;
 }
 library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2

@@ -65,6 +65,9 @@ export const RISK_STEWARD = '0x05c77Cf62346329a157d7A6F874464D049CECb26';
 // https://era.zksync.network/address/0x452E8E84bF852513585f893931CBD9A409Cd3459
 export const DUST_BIN = '0x452E8E84bF852513585f893931CBD9A409Cd3459';
 
+// https://era.zksync.network/address/0x2a549daDfe66AcFf25Bb0Cf0C989AAD0Dc547ceb
+export const CLINIC_STEWARD = '0x2a549daDfe66AcFf25Bb0Cf0C989AAD0Dc547ceb';
+
 export const CHAIN_ID = 324;
 export const ASSETS = {
   USDC: {

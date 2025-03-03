@@ -98,6 +98,9 @@ export const STATA_FACTORY = '0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F';
 // https://etherscan.io/address/0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b
 export const DUST_BIN = '0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b';
 
+// https://etherscan.io/address/0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7
+export const CLINIC_STEWARD = '0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   WETH: {

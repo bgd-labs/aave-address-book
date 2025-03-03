@@ -92,6 +92,9 @@ library AaveV3Scroll {
 
   // https://scrollscan.com/address/0xD1aE9Da215B06910F246b13fbCbd74D9657AF365
   address internal constant DUST_BIN = 0xD1aE9Da215B06910F246b13fbCbd74D9657AF365;
+
+  // https://scrollscan.com/address/0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de
+  address internal constant CLINIC_STEWARD = 0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de;
 }
 library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x5300000000000000000000000000000000000004

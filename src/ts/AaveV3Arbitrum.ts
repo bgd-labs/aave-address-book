@@ -101,6 +101,9 @@ export const STATA_FACTORY = '0xd85922fFF51ba4130cEC7c499db4Ac3Eb9981EaD';
 // https://arbiscan.io/address/0x897c76905A3d17F71d5ea033916B65154Cf4b4f0
 export const DUST_BIN = '0x897c76905A3d17F71d5ea033916B65154Cf4b4f0';
 
+// https://arbiscan.io/address/0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c
+export const CLINIC_STEWARD = '0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c';
+
 export const CHAIN_ID = 42161;
 export const ASSETS = {
   DAI: {

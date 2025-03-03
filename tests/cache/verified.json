@@ -2426,6 +2426,12 @@
     },
     "0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7": {
+      "name": "ClinicSteward"
+    },
+    "0x7571F419F7Df2d0622C1A20154a0D4250B2265cC": {
+      "name": "ClinicSteward"
     }
   },
   "10": {
@@ -2908,6 +2914,9 @@
     },
     "0x9601de16a38B6d2Dd5d5f313EEDb4fcAf9718D6C": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xD835fb6f9823b4054Ccf30403De76AA8abcd00b8": {
+      "name": "ClinicSteward"
     }
   },
   "56": {
@@ -3255,6 +3264,9 @@
     },
     "0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43": {
+      "name": "ClinicSteward"
     }
   },
   "100": {
@@ -3590,6 +3602,9 @@
     },
     "0xFf3a13703236A77Da603c7D413cf6F6AfB866D34": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA": {
+      "name": "ClinicSteward"
     }
   },
   "137": {
@@ -4495,6 +4510,9 @@
     },
     "0x2797F0BCff7b76c0439EC82018cD8011909bA812": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x476B3D5509f600cC377Ab86658b623337Fc6A717": {
+      "name": "ClinicSteward"
     }
   },
   "146": {
@@ -4784,6 +4802,9 @@
     },
     "0xf994D6bee2F5F98a068985C008Cf0e5fBa132700": {
       "name": "PoolConfiguratorInstance"
+    },
+    "0x2a549daDfe66AcFf25Bb0Cf0C989AAD0Dc547ceb": {
+      "name": "ClinicSteward"
     }
   },
   "1088": {
@@ -5056,6 +5077,9 @@
     },
     "0x1bFFB297643dBD4D0F6A27F431CF878cE9175d00": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x53d3c1B2d42578F56ef4c0142F19CDB54CE55040": {
+      "name": "ClinicSteward"
     }
   },
   "1101": {
@@ -5677,6 +5701,9 @@
     },
     "0x88b1Cd4b430D95b406E382C3cDBaE54697a0286E": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x1a79098C3149020ACdEfb3EE44AA1d9509305530": {
+      "name": "ClinicSteward"
     }
   },
   "42161": {
@@ -6273,6 +6300,9 @@
     },
     "0x4ff50C17df0D1b788d021ACd85039810a1aA68A1": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c": {
+      "name": "ClinicSteward"
     }
   },
   "42220": {
@@ -7128,6 +7158,9 @@
     },
     "0x0D5fA13Abca0bc06ac227eb4653cc5aDF4293341": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x6c2B732cB368322E460D718df3CD4F553d5fbAde": {
+      "name": "ClinicSteward"
     }
   },
   "59144": {
@@ -7325,6 +7358,9 @@
     },
     "0x94756B7508631509601a5555c93457Bf0ebDbC48": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xA68A0864F304b5145f00A3f8Fd3ec2281568700F": {
+      "name": "ClinicSteward"
     }
   },
   "84532": {
@@ -7784,6 +7820,9 @@
     },
     "0xD1aE9Da215B06910F246b13fbCbd74D9657AF365": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de": {
+      "name": "ClinicSteward"
     }
   }
 }
