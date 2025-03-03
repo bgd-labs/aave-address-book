@@ -98,6 +98,9 @@ export const STATA_FACTORY = '0x78d33BF0014ab169725F2Ea5a62b200F2977faeE';
 // https://basescan.org/address/0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202
 export const DUST_BIN = '0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202';
 
+// https://basescan.org/address/0x1a79098C3149020ACdEfb3EE44AA1d9509305530
+export const CLINIC_STEWARD = '0x1a79098C3149020ACdEfb3EE44AA1d9509305530';
+
 export const CHAIN_ID = 8453;
 export const ASSETS = {
   WETH: {

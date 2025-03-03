@@ -92,6 +92,9 @@ export const WITHDRAW_SWAP_ADAPTER = '0x78F8Bd884C3D738B74B420540659c82f392820e0
 // https://snowtrace.io/address/0x0D5fA13Abca0bc06ac227eb4653cc5aDF4293341
 export const DUST_BIN = '0x0D5fA13Abca0bc06ac227eb4653cc5aDF4293341';
 
+// https://snowtrace.io/address/0x6c2B732cB368322E460D718df3CD4F553d5fbAde
+export const CLINIC_STEWARD = '0x6c2B732cB368322E460D718df3CD4F553d5fbAde';
+
 export const CHAIN_ID = 43114;
 export const ASSETS = {
   DAIe: {

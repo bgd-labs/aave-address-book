@@ -76,6 +76,9 @@ library AaveV3Linea {
 
   // https://lineascan.build/address/0x94756B7508631509601a5555c93457Bf0ebDbC48
   address internal constant DUST_BIN = 0x94756B7508631509601a5555c93457Bf0ebDbC48;
+
+  // https://lineascan.build/address/0xA68A0864F304b5145f00A3f8Fd3ec2281568700F
+  address internal constant CLINIC_STEWARD = 0xA68A0864F304b5145f00A3f8Fd3ec2281568700F;
 }
 library AaveV3LineaAssets {
   // https://lineascan.build/address/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f

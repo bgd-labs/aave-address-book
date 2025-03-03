@@ -95,6 +95,9 @@ export const STATA_FACTORY = '0x170d6D6FCAbF0Ba3932a03d5f470c16c39c18e39';
 // https://optimistic.etherscan.io/address/0x9601de16a38B6d2Dd5d5f313EEDb4fcAf9718D6C
 export const DUST_BIN = '0x9601de16a38B6d2Dd5d5f313EEDb4fcAf9718D6C';
 
+// https://optimistic.etherscan.io/address/0xD835fb6f9823b4054Ccf30403De76AA8abcd00b8
+export const CLINIC_STEWARD = '0xD835fb6f9823b4054Ccf30403De76AA8abcd00b8';
+
 export const CHAIN_ID = 10;
 export const ASSETS = {
   DAI: {
@@ -257,8 +260,8 @@ export const E_MODES = {
       '0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9',
       '0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85',
     ],
-    ltv: 9000,
-    liquidationThreshold: 9300,
+    ltv: 1,
+    liquidationThreshold: 8700,
     liquidationBonus: 10100,
   },
   '2': {

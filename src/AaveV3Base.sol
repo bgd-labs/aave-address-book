@@ -112,6 +112,9 @@ library AaveV3Base {
 
   // https://basescan.org/address/0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202
   address internal constant DUST_BIN = 0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202;
+
+  // https://basescan.org/address/0x1a79098C3149020ACdEfb3EE44AA1d9509305530
+  address internal constant CLINIC_STEWARD = 0x1a79098C3149020ACdEfb3EE44AA1d9509305530;
 }
 library AaveV3BaseAssets {
   // https://basescan.org/address/0x4200000000000000000000000000000000000006

@@ -86,6 +86,9 @@ export const LEGACY_STATIC_A_TOKEN_FACTORY = '0x326aB0868bD279382Be2DF5E228Cb8AF
 // https://bscscan.com/address/0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202
 export const DUST_BIN = '0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202';
 
+// https://bscscan.com/address/0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43
+export const CLINIC_STEWARD = '0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43';
+
 export const CHAIN_ID = 56;
 export const ASSETS = {
   Cake: {

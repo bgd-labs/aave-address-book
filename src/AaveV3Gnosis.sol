@@ -102,6 +102,9 @@ library AaveV3Gnosis {
 
   // https://gnosisscan.io/address/0xFf3a13703236A77Da603c7D413cf6F6AfB866D34
   address internal constant DUST_BIN = 0xFf3a13703236A77Da603c7D413cf6F6AfB866D34;
+
+  // https://gnosisscan.io/address/0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA
+  address internal constant CLINIC_STEWARD = 0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA;
 }
 library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1
