@@ -7592,8 +7592,72 @@
         "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
         "underlying": "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6"
       }
+    },
+    {
+      "chainId": 146,
+      "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+      "name": "Wrapped Ether on Sonic",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 146,
+      "address": "0xe18Ab82c81E7Eecff32B8A82B1b7d2d23F1EcE96",
+      "name": "Aave Sonic WETH",
+      "decimals": 18,
+      "symbol": "aSonWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+      "name": "Bridged USDC (Sonic Labs)",
+      "decimals": 6,
+      "symbol": "USDCe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 146,
+      "address": "0x578Ee1ca3a8E1b54554Da1Bf7C583506C4CD11c6",
+      "name": "Aave Sonic USDC",
+      "decimals": 6,
+      "symbol": "aSonUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894"
+      }
+    },
+    {
+      "chainId": 146,
+      "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+      "name": "Wrapped Sonic",
+      "decimals": 18,
+      "symbol": "wS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 146,
+      "address": "0x6C5E14A212c1C3e4Baf6f871ac9B1a969918c131",
+      "name": "Aave Sonic wS",
+      "decimals": 18,
+      "symbol": "aSonwS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38"
+      }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 85 },
-  "timestamp": "2025-02-15T13:41:58.475Z"
+  "version": { "major": 3, "minor": 0, "patch": 86 },
+  "timestamp": "2025-03-03T19:49:19.213Z"
 }
