@@ -99,6 +99,9 @@ library AaveV3SonicAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xdFf435BCcf782f11187D3a4454d96702eD78e092;
 
+  // https://sonicscan.org/address/0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0
+  address internal constant WETH_STATA_TOKEN = 0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0;
+
   // https://sonicscan.org/address/0x29219dd400f2Bf60E5a23d13Be72B486D4038894
   address internal constant USDCe_UNDERLYING = 0x29219dd400f2Bf60E5a23d13Be72B486D4038894;
 
@@ -117,6 +120,9 @@ library AaveV3SonicAssets {
   address internal constant USDCe_INTEREST_RATE_STRATEGY =
     0xdFf435BCcf782f11187D3a4454d96702eD78e092;
 
+  // https://sonicscan.org/address/0x6646248971427B80ce531bdD793e2Eb859347E55
+  address internal constant USDCe_STATA_TOKEN = 0x6646248971427B80ce531bdD793e2Eb859347E55;
+
   // https://sonicscan.org/address/0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38
   address internal constant wS_UNDERLYING = 0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38;
 
@@ -133,6 +139,9 @@ library AaveV3SonicAssets {
 
   // https://sonicscan.org/address/0xdFf435BCcf782f11187D3a4454d96702eD78e092
   address internal constant wS_INTEREST_RATE_STRATEGY = 0xdFf435BCcf782f11187D3a4454d96702eD78e092;
+
+  // https://sonicscan.org/address/0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB
+  address internal constant wS_STATA_TOKEN = 0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB;
 }
 library AaveV3SonicEModes {
   uint8 internal constant NONE = 0;

@@ -7617,6 +7617,20 @@
     },
     {
       "chainId": 146,
+      "address": "0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0",
+      "name": "Wrapped Aave Sonic WETH",
+      "decimals": 18,
+      "symbol": "waSonWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg",
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
+        "underlyingAToken": "0xe18Ab82c81E7Eecff32B8A82B1b7d2d23F1EcE96"
+      }
+    },
+    {
+      "chainId": 146,
       "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
       "name": "Bridged USDC (Sonic Labs)",
       "decimals": 6,
@@ -7639,6 +7653,20 @@
     },
     {
       "chainId": 146,
+      "address": "0x6646248971427B80ce531bdD793e2Eb859347E55",
+      "name": "Wrapped Aave Sonic USDC",
+      "decimals": 6,
+      "symbol": "waSonUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
+        "underlyingAToken": "0x578Ee1ca3a8E1b54554Da1Bf7C583506C4CD11c6"
+      }
+    },
+    {
+      "chainId": 146,
       "address": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
       "name": "Wrapped Sonic",
       "decimals": 18,
@@ -7656,8 +7684,21 @@
         "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
         "underlying": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38"
       }
+    },
+    {
+      "chainId": 146,
+      "address": "0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB",
+      "name": "Wrapped Aave Sonic wS",
+      "decimals": 18,
+      "symbol": "waSonwS",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
+        "underlyingAToken": "0x6C5E14A212c1C3e4Baf6f871ac9B1a969918c131"
+      }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 86 },
-  "timestamp": "2025-03-03T19:49:19.213Z"
+  "version": { "major": 3, "minor": 0, "patch": 87 },
+  "timestamp": "2025-03-07T00:13:53.341Z"
 }
