@@ -200,9 +200,9 @@ library AaveV2AvalancheAssets {
   // https://snowtrace.io/address/0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743
   address internal constant WBTCe_ORACLE = 0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743;
 
-  // https://snowtrace.io/address/0x6724e923E4bb58fCdF7CEe7A5E7bBb47b99C2647
+  // https://snowtrace.io/address/0x3dED180433c1cb0B0697eD2e85cE598414DaCE58
   address internal constant WBTCe_INTEREST_RATE_STRATEGY =
-    0x6724e923E4bb58fCdF7CEe7A5E7bBb47b99C2647;
+    0x3dED180433c1cb0B0697eD2e85cE598414DaCE58;
 
   // https://snowtrace.io/address/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7
   address internal constant WAVAX_UNDERLYING = 0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7;
