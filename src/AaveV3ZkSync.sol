@@ -199,8 +199,8 @@ library AaveV3ZkSyncAssets {
   // https://era.zksync.network/address/0xDeBb4ddaaaB1676775214552a7a05D6A13f905Da
   address internal constant sUSDe_V_TOKEN = 0xDeBb4ddaaaB1676775214552a7a05D6A13f905Da;
 
-  // https://era.zksync.network/address/0xDaec4cC3a41E423d678428A8Bb29fa1ADF26869a
-  address internal constant sUSDe_ORACLE = 0xDaec4cC3a41E423d678428A8Bb29fa1ADF26869a;
+  // https://era.zksync.network/address/0x9172A80ed668D3097D45350ffF71F4421ff572e1
+  address internal constant sUSDe_ORACLE = 0x9172A80ed668D3097D45350ffF71F4421ff572e1;
 
   // https://era.zksync.network/address/0x57815Ab06D846d7dECd326Ee541CD06144FED237
   address internal constant sUSDe_INTEREST_RATE_STRATEGY =
