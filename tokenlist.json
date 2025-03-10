@@ -6533,6 +6533,20 @@
       }
     },
     {
+      "chainId": 10,
+      "address": "0x41B334E9F2C0ED1f30fD7c351874a6071C53a78E",
+      "name": "Wrapped Aave Optimism USDCn",
+      "decimals": 6,
+      "symbol": "waOptUSDCn",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+        "underlyingAToken": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5"
+      }
+    },
+    {
       "chainId": 534352,
       "address": "0x5300000000000000000000000000000000000004",
       "name": "Wrapped Ether",
@@ -7699,6 +7713,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 87 },
-  "timestamp": "2025-03-07T00:13:53.341Z"
+  "version": { "major": 3, "minor": 0, "patch": 88 },
+  "timestamp": "2025-03-10T07:28:08.643Z"
 }
