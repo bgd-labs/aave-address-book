@@ -27,9 +27,9 @@ exports[`verification > should have all contracts verified except for the known 
       "chainId": 146,
       "path": [
         "AaveV3Sonic",
-        "STATA_FACTORY",
+        "DUST_BIN",
       ],
-      "value": "0xFeeb6FE430B7523fEF2a38327241eE7153779535",
+      "value": "0x62aDD9C6B511085C67515ebB799b51c4cf2d786F",
     },
   },
   {
@@ -37,9 +37,11 @@ exports[`verification > should have all contracts verified except for the known 
       "chainId": 146,
       "path": [
         "AaveV3Sonic",
-        "DUST_BIN",
+        "ASSETS",
+        "wS",
+        "STATA_TOKEN",
       ],
-      "value": "0x62aDD9C6B511085C67515ebB799b51c4cf2d786F",
+      "value": "0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB",
     },
   },
   {
