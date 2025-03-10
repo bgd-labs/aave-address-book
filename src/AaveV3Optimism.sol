@@ -403,6 +403,9 @@ library AaveV3OptimismAssets {
 
   // https://optimistic.etherscan.io/address/0x4DD03dfD36548C840B563745e3FBeC320F37BA7e
   address internal constant USDCn_STATIC_A_TOKEN = 0x4DD03dfD36548C840B563745e3FBeC320F37BA7e;
+
+  // https://optimistic.etherscan.io/address/0x41B334E9F2C0ED1f30fD7c351874a6071C53a78E
+  address internal constant USDCn_STATA_TOKEN = 0x41B334E9F2C0ED1f30fD7c351874a6071C53a78E;
 }
 library AaveV3OptimismEModes {
   uint8 internal constant NONE = 0;
