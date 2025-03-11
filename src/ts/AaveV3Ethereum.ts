@@ -101,6 +101,9 @@ export const DUST_BIN = '0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b';
 // https://etherscan.io/address/0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7
 export const CLINIC_STEWARD = '0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7';
 
+// https://etherscan.io/address/0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697
+export const SVR_STEWARD = '0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   WETH: {
@@ -535,11 +538,31 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '4': {
-    label: 'LBTC / WBTC',
+    label: 'LBTC_WBTC',
     collateralBitmap: '137438953472',
     collateralAssets: ['0x8236a87084f8B84306f72007F36F2618A5634494'],
     borrowableBitmap: '4',
     borrowableAssets: ['0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'],
+    ltv: 8400,
+    liquidationThreshold: 8600,
+    liquidationBonus: 10300,
+  },
+  '5': {
+    label: 'LBTC_cbBTC',
+    collateralBitmap: '137438953472',
+    collateralAssets: ['0x8236a87084f8B84306f72007F36F2618A5634494'],
+    borrowableBitmap: '17179869184',
+    borrowableAssets: ['0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf'],
+    ltv: 8400,
+    liquidationThreshold: 8600,
+    liquidationBonus: 10300,
+  },
+  '6': {
+    label: 'LBTC_tBTC',
+    collateralBitmap: '137438953472',
+    collateralAssets: ['0x8236a87084f8B84306f72007F36F2618A5634494'],
+    borrowableBitmap: '8589934592',
+    borrowableAssets: ['0x18084fbA666a33d37592fA2633fD49a74DD93a88'],
     ltv: 8400,
     liquidationThreshold: 8600,
     liquidationBonus: 10300,

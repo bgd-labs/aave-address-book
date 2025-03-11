@@ -4438,7 +4438,8 @@
       "name": "rsETHWrapper",
       "decimals": 18,
       "symbol": "wrsETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
     },
     {
       "chainId": 8453,
@@ -4447,9 +4448,52 @@
       "decimals": 18,
       "symbol": "aBaswrsETH",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0xEDfa23602D0EC14714057867A78d01e94176BEA0"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
+      "name": "Lombard Staked Bitcoin",
+      "decimals": 8,
+      "symbol": "LBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/lbtc.svg"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x90072A4aA69B5Eb74984Ab823EFC5f91e90b3a72",
+      "name": "Aave Base LBTC",
+      "decimals": 8,
+      "symbol": "aBasLBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/albtc.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0xecAc9C5F704e954931349Da37F60E39f515c11c1"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+      "name": "EURC",
+      "decimals": 6,
+      "symbol": "EURC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0x90DA57E0A6C0d166Bf15764E03b83745Dc90025B",
+      "name": "Aave Base EURC",
+      "decimals": 6,
+      "symbol": "aBasEURC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42"
       }
     },
     {
@@ -7705,7 +7749,8 @@
       "name": "Wrapped Sonic",
       "decimals": 18,
       "symbol": "wS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ws.svg"
     },
     {
       "chainId": 146,
@@ -7714,6 +7759,7 @@
       "decimals": 18,
       "symbol": "aSonwS",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aws.svg",
       "extensions": {
         "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
         "underlying": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38"
@@ -7726,6 +7772,7 @@
       "decimals": 18,
       "symbol": "waSonwS",
       "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataws.svg",
       "extensions": {
         "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
         "underlying": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
@@ -7733,6 +7780,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 90 },
-  "timestamp": "2025-03-11T00:14:08.442Z"
+  "version": { "major": 3, "minor": 0, "patch": 92 },
+  "timestamp": "2025-03-11T11:07:46.201Z"
 }
