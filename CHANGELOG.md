@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.16.0](https://github.com/bgd-labs/aave-address-book/compare/v4.15.1...v4.16.0) (2025-03-11)
+
+
+### Features
+
+* add ava stata factory ([#878](https://github.com/bgd-labs/aave-address-book/issues/878)) ([1ef9f0a](https://github.com/bgd-labs/aave-address-book/commit/1ef9f0a5358aa77f0b91f3ea5664baacc33f1094))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#879](https://github.com/bgd-labs/aave-address-book/issues/879)) ([f7bc4a7](https://github.com/bgd-labs/aave-address-book/commit/f7bc4a7cf0908757f04cf7f2e9a3964e6fb13fef))
+* update icons ([#882](https://github.com/bgd-labs/aave-address-book/issues/882)) ([64b3329](https://github.com/bgd-labs/aave-address-book/commit/64b33297d8d04c94937871b0e4fa4dfcae47c89e))
+
 ## [4.15.1](https://github.com/bgd-labs/aave-address-book/compare/v4.15.0...v4.15.1) (2025-03-10)
 
 
