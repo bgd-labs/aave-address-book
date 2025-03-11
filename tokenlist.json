@@ -4433,6 +4433,26 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0xEDfa23602D0EC14714057867A78d01e94176BEA0",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0x80a94C36747CF51b2FbabDfF045f6D22c1930eD1",
+      "name": "Aave Base wrsETH",
+      "decimals": 18,
+      "symbol": "aBaswrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0xEDfa23602D0EC14714057867A78d01e94176BEA0"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -7713,6 +7733,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 88 },
-  "timestamp": "2025-03-10T07:28:08.643Z"
+  "version": { "major": 3, "minor": 0, "patch": 89 },
+  "timestamp": "2025-03-11T00:14:08.442Z"
 }
