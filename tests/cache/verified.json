@@ -2435,6 +2435,30 @@
     },
     "0x42bc86f2f08419280a99d8fbEa4672e7c30a86ec": {
       "name": "SUSDePriceCapAdapter"
+    },
+    "0xe85dA2C9D406afe7A37F525b5CAbEDA42944dB6f": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x91773a61759398d33C252F25A38DA77a51e0c9Ff": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x2821B41F1fA07c0270A3f0de91B24B9766F312FD": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x231537BE2db93464B7A1D50AbF9390c0Da0FB65D": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xE85Bf1E770bc3dC52A25594C2c16059a01aA8406": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x503eFA3651E247F9078C6F66bb93E2a81566EE00": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x7B3217A81D1ADe9B0666feA260228102E8105e99": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x77285e3CDD9a3CA67aEd9a3d7A3837bEbA0DBDdE": {
+      "name": "DefaultReserveInterestRateStrategy"
     }
   },
   "10": {
@@ -5773,6 +5797,18 @@
     },
     "0x1a79098C3149020ACdEfb3EE44AA1d9509305530": {
       "name": "ClinicSteward"
+    },
+    "0xEDfa23602D0EC14714057867A78d01e94176BEA0": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x567E7f3DB2CD4C81872F829C8ab6556616818580": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x80a94C36747CF51b2FbabDfF045f6D22c1930eD1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe9541C77a111bCAa5dF56839bbC50894eba7aFcb": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "42161": {
@@ -7233,6 +7269,9 @@
     },
     "0x3dED180433c1cb0B0697eD2e85cE598414DaCE58": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xC2E7A608d868817dd58438913Ed72955a0567561": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "59144": {
