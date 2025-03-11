@@ -2459,6 +2459,9 @@
     },
     "0x77285e3CDD9a3CA67aEd9a3d7A3837bEbA0DBDdE": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697": {
+      "name": "SvrOracleSteward"
     }
   },
   "10": {
@@ -5809,6 +5812,27 @@
     },
     "0xe9541C77a111bCAa5dF56839bbC50894eba7aFcb": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xecAc9C5F704e954931349Da37F60E39f515c11c1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x90072A4aA69B5Eb74984Ab823EFC5f91e90b3a72": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xa2525b3f058846075506903d792d58C5a0D834c9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42": {
+      "name": "FiatTokenProxy"
+    },
+    "0x90DA57E0A6C0d166Bf15764E03b83745Dc90025B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x03D01595769333174036832e18fA2f17C74f8161": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x215f25556f91b30AFCF0a12dA51C9d4374B22570": {
+      "name": "EURPriceCapAdapterStable"
     }
   },
   "42161": {

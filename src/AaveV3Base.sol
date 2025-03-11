@@ -343,6 +343,42 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
   address internal constant wrsETH_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0xecAc9C5F704e954931349Da37F60E39f515c11c1
+  address internal constant LBTC_UNDERLYING = 0xecAc9C5F704e954931349Da37F60E39f515c11c1;
+
+  uint8 internal constant LBTC_DECIMALS = 8;
+
+  // https://basescan.org/address/0x90072A4aA69B5Eb74984Ab823EFC5f91e90b3a72
+  address internal constant LBTC_A_TOKEN = 0x90072A4aA69B5Eb74984Ab823EFC5f91e90b3a72;
+
+  // https://basescan.org/address/0xa2525b3f058846075506903d792d58C5a0D834c9
+  address internal constant LBTC_V_TOKEN = 0xa2525b3f058846075506903d792d58C5a0D834c9;
+
+  // https://basescan.org/address/0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F
+  address internal constant LBTC_ORACLE = 0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F;
+
+  // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant LBTC_INTEREST_RATE_STRATEGY =
+    0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42
+  address internal constant EURC_UNDERLYING = 0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42;
+
+  uint8 internal constant EURC_DECIMALS = 6;
+
+  // https://basescan.org/address/0x90DA57E0A6C0d166Bf15764E03b83745Dc90025B
+  address internal constant EURC_A_TOKEN = 0x90DA57E0A6C0d166Bf15764E03b83745Dc90025B;
+
+  // https://basescan.org/address/0x03D01595769333174036832e18fA2f17C74f8161
+  address internal constant EURC_V_TOKEN = 0x03D01595769333174036832e18fA2f17C74f8161;
+
+  // https://basescan.org/address/0x215f25556f91b30AFCF0a12dA51C9d4374B22570
+  address internal constant EURC_ORACLE = 0x215f25556f91b30AFCF0a12dA51C9d4374B22570;
+
+  // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant EURC_INTEREST_RATE_STRATEGY =
+    0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
@@ -353,7 +389,7 @@ library AaveV3BaseEModes {
 
   uint8 internal constant EZETH_STABLECOINS = 3;
 
-  uint8 internal constant RSETH_WSTETH_EMODE = 4;
+  uint8 internal constant LBTC_CBBTC = 4;
 }
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770

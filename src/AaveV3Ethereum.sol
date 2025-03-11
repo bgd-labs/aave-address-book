@@ -115,6 +115,9 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7
   address internal constant CLINIC_STEWARD = 0xf00E2de0E78DFf055A92AD4719a179CE275b6Ef7;
+
+  // https://etherscan.io/address/0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697
+  address internal constant SVR_STEWARD = 0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697;
 }
 library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
@@ -900,6 +903,10 @@ library AaveV3EthereumEModes {
   uint8 internal constant RSETH_LST_MAIN = 3;
 
   uint8 internal constant LBTC_WBTC = 4;
+
+  uint8 internal constant LBTC_CBBTC = 5;
+
+  uint8 internal constant LBTC_TBTC = 6;
 }
 library AaveV3EthereumExternalLibraries {
   // https://etherscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770

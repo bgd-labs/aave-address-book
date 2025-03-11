@@ -79,7 +79,7 @@
   },
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
-    "@bgd-labs/react-web3-icons": "^1.13.0",
+    "@bgd-labs/react-web3-icons": "^1.15.0",
     "@bgd-labs/rpc-env": "^2.3.2",
     "@types/node": "^22.4.1",
     "@uniswap/token-lists": "^1.0.0-beta.33",
