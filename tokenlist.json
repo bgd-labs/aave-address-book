@@ -4936,6 +4936,20 @@
     },
     {
       "chainId": 100,
+      "address": "0x417bc5b940475203A18C2f320a5ba470D6c5E463",
+      "name": "Wrapped Aave Gnosis EURe",
+      "decimals": 18,
+      "symbol": "waGnoEURe",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataeure.svg",
+      "extensions": {
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
+        "underlying": "0xcB444e90D8198415266c6a2724b7900fb12FC56E",
+        "underlyingAToken": "0xEdBC7449a9b594CA4E053D9737EC5Dc4CbCcBfb2"
+      }
+    },
+    {
+      "chainId": 100,
       "address": "0xaf204776c7245bF4147c2612BF6e5972Ee483701",
       "name": "Savings xDAI",
       "decimals": 18,
@@ -7780,6 +7794,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 92 },
-  "timestamp": "2025-03-11T11:07:46.201Z"
+  "version": { "major": 3, "minor": 0, "patch": 93 },
+  "timestamp": "2025-03-12T19:51:17.473Z"
 }

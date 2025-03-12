@@ -241,6 +241,9 @@ library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x8418D17640a74F1614AC3E1826F29e78714488a1
   address internal constant EURe_STATIC_A_TOKEN = 0x8418D17640a74F1614AC3E1826F29e78714488a1;
 
+  // https://gnosisscan.io/address/0x417bc5b940475203A18C2f320a5ba470D6c5E463
+  address internal constant EURe_STATA_TOKEN = 0x417bc5b940475203A18C2f320a5ba470D6c5E463;
+
   // https://gnosisscan.io/address/0xaf204776c7245bF4147c2612BF6e5972Ee483701
   address internal constant sDAI_UNDERLYING = 0xaf204776c7245bF4147c2612BF6e5972Ee483701;
 
