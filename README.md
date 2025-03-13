@@ -107,6 +107,11 @@ To achieve an addition here, you need to alter the [additionalAddresses section]
 
 In any case you need to run `npm run generate:addresses` afterwards and commit the altered artifacts.
 
+### Notes
+
+- In order to successfully check that contracts are verified, you must have in your local `.env` file an entry of `ETHERSCAN_API_KEY` with a mainnet API key on it.
+- Avalanche contracts must be verified on `snowscan.io`
+
 ### Troubleshooting
 
 #### Error generating the addresses

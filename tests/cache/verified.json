@@ -2460,11 +2460,11 @@
     "0x77285e3CDD9a3CA67aEd9a3d7A3837bEbA0DBDdE": {
       "name": "DefaultReserveInterestRateStrategy"
     },
-    "0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697": {
-      "name": "SvrOracleSteward"
-    },
     "0x22aC12a6937BBBC0a301AF9154d08EaD95673122": {
       "name": "PoolExposureSteward"
+    },
+    "0x8b493f416F5F7933cC146b1899c069F2361cad60": {
+      "name": "SvrOracleSteward"
     }
   },
   "10": {
