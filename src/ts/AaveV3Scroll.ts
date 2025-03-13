@@ -83,6 +83,9 @@ export const DUST_BIN = '0xD1aE9Da215B06910F246b13fbCbd74D9657AF365';
 // https://scrollscan.com/address/0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de
 export const CLINIC_STEWARD = '0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de';
 
+// https://scrollscan.com/address/0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7
+export const POOL_EXPOSURE_STEWARD = '0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7';
+
 export const CHAIN_ID = 534352;
 export const ASSETS = {
   WETH: {

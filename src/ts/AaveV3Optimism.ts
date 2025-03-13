@@ -98,6 +98,9 @@ export const DUST_BIN = '0x9601de16a38B6d2Dd5d5f313EEDb4fcAf9718D6C';
 // https://optimistic.etherscan.io/address/0xD835fb6f9823b4054Ccf30403De76AA8abcd00b8
 export const CLINIC_STEWARD = '0xD835fb6f9823b4054Ccf30403De76AA8abcd00b8';
 
+// https://optimistic.etherscan.io/address/0x4684b645386525057526EB85854045914Fe389d6
+export const POOL_EXPOSURE_STEWARD = '0x4684b645386525057526EB85854045914Fe389d6';
+
 export const CHAIN_ID = 10;
 export const ASSETS = {
   DAI: {

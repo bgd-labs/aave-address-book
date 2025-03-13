@@ -89,6 +89,9 @@ export const DUST_BIN = '0x3870D459d2fC2Edbb03E0DdeE6c0Ccb268caf202';
 // https://bscscan.com/address/0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43
 export const CLINIC_STEWARD = '0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43';
 
+// https://bscscan.com/address/0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8
+export const POOL_EXPOSURE_STEWARD = '0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8';
+
 export const CHAIN_ID = 56;
 export const ASSETS = {
   Cake: {

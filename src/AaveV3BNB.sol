@@ -102,6 +102,9 @@ library AaveV3BNB {
 
   // https://bscscan.com/address/0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43
   address internal constant CLINIC_STEWARD = 0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43;
+
+  // https://bscscan.com/address/0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8
+  address internal constant POOL_EXPOSURE_STEWARD = 0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8;
 }
 library AaveV3BNBAssets {
   // https://bscscan.com/address/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82

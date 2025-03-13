@@ -89,6 +89,9 @@ export const DUST_BIN = '0x2797F0BCff7b76c0439EC82018cD8011909bA812';
 // https://polygonscan.com/address/0x476B3D5509f600cC377Ab86658b623337Fc6A717
 export const CLINIC_STEWARD = '0x476B3D5509f600cC377Ab86658b623337Fc6A717';
 
+// https://polygonscan.com/address/0xE5b11ab4D36E58C9171e3DB98Ba17336606Cd6ef
+export const POOL_EXPOSURE_STEWARD = '0xE5b11ab4D36E58C9171e3DB98Ba17336606Cd6ef';
+
 export const CHAIN_ID = 137;
 export const ASSETS = {
   DAI: {

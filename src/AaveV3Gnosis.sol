@@ -105,6 +105,9 @@ library AaveV3Gnosis {
 
   // https://gnosisscan.io/address/0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA
   address internal constant CLINIC_STEWARD = 0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA;
+
+  // https://gnosisscan.io/address/0xdA12A8F009258592A9B5618129259992858636dc
+  address internal constant POOL_EXPOSURE_STEWARD = 0xdA12A8F009258592A9B5618129259992858636dc;
 }
 library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1
@@ -240,6 +243,9 @@ library AaveV3GnosisAssets {
 
   // https://gnosisscan.io/address/0x8418D17640a74F1614AC3E1826F29e78714488a1
   address internal constant EURe_STATIC_A_TOKEN = 0x8418D17640a74F1614AC3E1826F29e78714488a1;
+
+  // https://gnosisscan.io/address/0x417bc5b940475203A18C2f320a5ba470D6c5E463
+  address internal constant EURe_STATA_TOKEN = 0x417bc5b940475203A18C2f320a5ba470D6c5E463;
 
   // https://gnosisscan.io/address/0xaf204776c7245bF4147c2612BF6e5972Ee483701
   address internal constant sDAI_UNDERLYING = 0xaf204776c7245bF4147c2612BF6e5972Ee483701;

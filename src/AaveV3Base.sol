@@ -115,6 +115,9 @@ library AaveV3Base {
 
   // https://basescan.org/address/0x1a79098C3149020ACdEfb3EE44AA1d9509305530
   address internal constant CLINIC_STEWARD = 0x1a79098C3149020ACdEfb3EE44AA1d9509305530;
+
+  // https://basescan.org/address/0x4f1F3E32f20847a4c9F002882eB607aD750b6115
+  address internal constant POOL_EXPOSURE_STEWARD = 0x4f1F3E32f20847a4c9F002882eB607aD750b6115;
 }
 library AaveV3BaseAssets {
   // https://basescan.org/address/0x4200000000000000000000000000000000000006

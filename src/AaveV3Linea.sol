@@ -79,6 +79,9 @@ library AaveV3Linea {
 
   // https://lineascan.build/address/0xA68A0864F304b5145f00A3f8Fd3ec2281568700F
   address internal constant CLINIC_STEWARD = 0xA68A0864F304b5145f00A3f8Fd3ec2281568700F;
+
+  // https://lineascan.build/address/0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702
+  address internal constant POOL_EXPOSURE_STEWARD = 0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702;
 }
 library AaveV3LineaAssets {
   // https://lineascan.build/address/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f
