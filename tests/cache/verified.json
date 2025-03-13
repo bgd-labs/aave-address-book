@@ -2462,6 +2462,9 @@
     },
     "0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697": {
       "name": "SvrOracleSteward"
+    },
+    "0x8b493f416F5F7933cC146b1899c069F2361cad60": {
+      "name": "SvrOracleSteward"
     }
   },
   "10": {
@@ -3638,6 +3641,9 @@
     },
     "0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA": {
       "name": "ClinicSteward"
+    },
+    "0x417bc5b940475203A18C2f320a5ba470D6c5E463": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "137": {
