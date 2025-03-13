@@ -105,6 +105,9 @@ library AaveV3Gnosis {
 
   // https://gnosisscan.io/address/0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA
   address internal constant CLINIC_STEWARD = 0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA;
+
+  // https://gnosisscan.io/address/0xdA12A8F009258592A9B5618129259992858636dc
+  address internal constant POOL_EXPOSURE_STEWARD = 0xdA12A8F009258592A9B5618129259992858636dc;
 }
 library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1

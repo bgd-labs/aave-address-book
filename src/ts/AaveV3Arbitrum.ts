@@ -104,6 +104,9 @@ export const DUST_BIN = '0x897c76905A3d17F71d5ea033916B65154Cf4b4f0';
 // https://arbiscan.io/address/0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c
 export const CLINIC_STEWARD = '0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c';
 
+// https://arbiscan.io/address/0xfB1D12D7C9c3Eb6b40fe0502801CdFCE816a0d18
+export const POOL_EXPOSURE_STEWARD = '0xfB1D12D7C9c3Eb6b40fe0502801CdFCE816a0d18';
+
 export const CHAIN_ID = 42161;
 export const ASSETS = {
   DAI: {

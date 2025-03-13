@@ -2460,8 +2460,8 @@
     "0x77285e3CDD9a3CA67aEd9a3d7A3837bEbA0DBDdE": {
       "name": "DefaultReserveInterestRateStrategy"
     },
-    "0xC2cD451F3Cf0E965e6C477E3a20D9c2371988697": {
-      "name": "SvrOracleSteward"
+    "0x22aC12a6937BBBC0a301AF9154d08EaD95673122": {
+      "name": "PoolExposureSteward"
     },
     "0x8b493f416F5F7933cC146b1899c069F2361cad60": {
       "name": "SvrOracleSteward"
@@ -2953,6 +2953,9 @@
     },
     "0x41B334E9F2C0ED1f30fD7c351874a6071C53a78E": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x4684b645386525057526EB85854045914Fe389d6": {
+      "name": "PoolExposureSteward"
     }
   },
   "56": {
@@ -3303,6 +3306,9 @@
     },
     "0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43": {
       "name": "ClinicSteward"
+    },
+    "0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8": {
+      "name": "PoolExposureSteward"
     }
   },
   "100": {
@@ -3641,6 +3647,9 @@
     },
     "0x0447Be151c126D2d704b1Ce5F5b3ed6b7D50FABA": {
       "name": "ClinicSteward"
+    },
+    "0xdA12A8F009258592A9B5618129259992858636dc": {
+      "name": "PoolExposureSteward"
     },
     "0x417bc5b940475203A18C2f320a5ba470D6c5E463": {
       "name": "TransparentUpgradeableProxy"
@@ -4564,6 +4573,9 @@
     },
     "0x01576c429baB8724A11bef844dDa95165D899Fca": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xE5b11ab4D36E58C9171e3DB98Ba17336606Cd6ef": {
+      "name": "PoolExposureSteward"
     }
   },
   "146": {
@@ -4698,6 +4710,9 @@
     },
     "0xc76dFb89fF298145b417d221B2c747d84952e01d": {
       "name": "EACAggregatorProxy"
+    },
+    "0x4A137d528444Cc0346320CFa5C80FFc68087D7F9": {
+      "name": "PoolExposureSteward"
     }
   },
   "324": {
@@ -5839,6 +5854,9 @@
     },
     "0x215f25556f91b30AFCF0a12dA51C9d4374B22570": {
       "name": "EURPriceCapAdapterStable"
+    },
+    "0x4f1F3E32f20847a4c9F002882eB607aD750b6115": {
+      "name": "PoolExposureSteward"
     }
   },
   "42161": {
@@ -6438,6 +6456,9 @@
     },
     "0x7B58055fC6bE4B23cF8c9287b7d3C4adBE919a9c": {
       "name": "ClinicSteward"
+    },
+    "0xfB1D12D7C9c3Eb6b40fe0502801CdFCE816a0d18": {
+      "name": "PoolExposureSteward"
     }
   },
   "42220": {
@@ -7302,6 +7323,9 @@
     },
     "0xC2E7A608d868817dd58438913Ed72955a0567561": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x0d68D50DB848dfE6012456781c1D79A11eD12a2e": {
+      "name": "PoolExposureSteward"
     }
   },
   "59144": {
@@ -7502,6 +7526,9 @@
     },
     "0xA68A0864F304b5145f00A3f8Fd3ec2281568700F": {
       "name": "ClinicSteward"
+    },
+    "0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702": {
+      "name": "PoolExposureSteward"
     }
   },
   "84532": {
@@ -7964,6 +7991,9 @@
     },
     "0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de": {
       "name": "ClinicSteward"
+    },
+    "0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7": {
+      "name": "PoolExposureSteward"
     }
   }
 }

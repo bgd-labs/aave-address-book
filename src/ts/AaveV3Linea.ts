@@ -68,6 +68,9 @@ export const DUST_BIN = '0x94756B7508631509601a5555c93457Bf0ebDbC48';
 // https://lineascan.build/address/0xA68A0864F304b5145f00A3f8Fd3ec2281568700F
 export const CLINIC_STEWARD = '0xA68A0864F304b5145f00A3f8Fd3ec2281568700F';
 
+// https://lineascan.build/address/0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702
+export const POOL_EXPOSURE_STEWARD = '0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702';
+
 export const CHAIN_ID = 59144;
 export const ASSETS = {
   WETH: {

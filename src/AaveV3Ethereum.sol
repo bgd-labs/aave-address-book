@@ -118,6 +118,9 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0x8b493f416F5F7933cC146b1899c069F2361cad60
   address internal constant SVR_STEWARD = 0x8b493f416F5F7933cC146b1899c069F2361cad60;
+
+  // https://etherscan.io/address/0x22aC12a6937BBBC0a301AF9154d08EaD95673122
+  address internal constant POOL_EXPOSURE_STEWARD = 0x22aC12a6937BBBC0a301AF9154d08EaD95673122;
 }
 library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2

@@ -79,6 +79,9 @@ library AaveV3Sonic {
 
   // https://sonicscan.org/address/0x62aDD9C6B511085C67515ebB799b51c4cf2d786F
   address internal constant DUST_BIN = 0x62aDD9C6B511085C67515ebB799b51c4cf2d786F;
+
+  // https://sonicscan.org/address/0x4A137d528444Cc0346320CFa5C80FFc68087D7F9
+  address internal constant POOL_EXPOSURE_STEWARD = 0x4A137d528444Cc0346320CFa5C80FFc68087D7F9;
 }
 library AaveV3SonicAssets {
   // https://sonicscan.org/address/0x50c42dEAcD8Fc9773493ED674b675bE577f2634b

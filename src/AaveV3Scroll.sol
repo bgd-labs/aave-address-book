@@ -95,6 +95,9 @@ library AaveV3Scroll {
 
   // https://scrollscan.com/address/0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de
   address internal constant CLINIC_STEWARD = 0x7616355B00c9d1D2Faf3937Dacb5B9aA1e6755de;
+
+  // https://scrollscan.com/address/0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7
+  address internal constant POOL_EXPOSURE_STEWARD = 0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7;
 }
 library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x5300000000000000000000000000000000000004
