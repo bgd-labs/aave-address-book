@@ -4579,6 +4579,9 @@
     },
     "0xE5b11ab4D36E58C9171e3DB98Ba17336606Cd6ef": {
       "name": "PoolExposureSteward"
+    },
+    "0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
