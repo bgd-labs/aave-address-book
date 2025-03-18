@@ -274,19 +274,23 @@ export const E_MODES = {
   },
   '4': {
     label: 'LBTC_cbBTC',
-    collateralBitmap: '1536',
-    collateralAssets: [
-      '0xEDfa23602D0EC14714057867A78d01e94176BEA0',
-      '0xecAc9C5F704e954931349Da37F60E39f515c11c1',
-    ],
-    borrowableBitmap: '72',
-    borrowableAssets: [
-      '0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452',
-      '0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf',
-    ],
+    collateralBitmap: '1024',
+    collateralAssets: ['0xecAc9C5F704e954931349Da37F60E39f515c11c1'],
+    borrowableBitmap: '64',
+    borrowableAssets: ['0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf'],
     ltv: 8200,
     liquidationThreshold: 8400,
     liquidationBonus: 10300,
+  },
+  '5': {
+    label: 'rsETH/wstETH',
+    collateralBitmap: '512',
+    collateralAssets: ['0xEDfa23602D0EC14714057867A78d01e94176BEA0'],
+    borrowableBitmap: '8',
+    borrowableAssets: ['0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'],
+    ltv: 9250,
+    liquidationThreshold: 9450,
+    liquidationBonus: 10100,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;

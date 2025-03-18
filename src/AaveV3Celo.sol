@@ -77,7 +77,97 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x886b90e5d7DA22000f1652740D3EC51566AAbe40
   address internal constant DUST_BIN = 0x886b90e5d7DA22000f1652740D3EC51566AAbe40;
 }
-library AaveV3CeloAssets {}
+library AaveV3CeloAssets {
+  // https://celoscan.io/address/0xcebA9300f2b948710d2653dD7B07f33A8B32118C
+  address internal constant USDC_UNDERLYING = 0xcebA9300f2b948710d2653dD7B07f33A8B32118C;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://celoscan.io/address/0xFF8309b9e99bfd2D4021bc71a362aBD93dBd4785
+  address internal constant USDC_A_TOKEN = 0xFF8309b9e99bfd2D4021bc71a362aBD93dBd4785;
+
+  // https://celoscan.io/address/0xDbe517c0FA6467873B684eCcbED77217E471E862
+  address internal constant USDC_V_TOKEN = 0xDbe517c0FA6467873B684eCcbED77217E471E862;
+
+  // https://celoscan.io/address/0xBF704f2FfdB856805cE64D085cD50427823696D7
+  address internal constant USDC_ORACLE = 0xBF704f2FfdB856805cE64D085cD50427823696D7;
+
+  // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0x8B62D241Bf59f40991DCd18531683156d7013355;
+
+  // https://celoscan.io/address/0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e
+  address internal constant USDT_UNDERLYING = 0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e;
+
+  uint8 internal constant USDT_DECIMALS = 6;
+
+  // https://celoscan.io/address/0xDeE98402A302e4D707fB9bf2bac66fAEEc31e8Df
+  address internal constant USDT_A_TOKEN = 0xDeE98402A302e4D707fB9bf2bac66fAEEc31e8Df;
+
+  // https://celoscan.io/address/0xE15324a9887999803b931Ac45aa89a94A9750052
+  address internal constant USDT_V_TOKEN = 0xE15324a9887999803b931Ac45aa89a94A9750052;
+
+  // https://celoscan.io/address/0x6e3d991C965364481796116dE68A8036d1b3Ecd0
+  address internal constant USDT_ORACLE = 0x6e3d991C965364481796116dE68A8036d1b3Ecd0;
+
+  // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
+  address internal constant USDT_INTEREST_RATE_STRATEGY =
+    0x8B62D241Bf59f40991DCd18531683156d7013355;
+
+  // https://celoscan.io/address/0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73
+  address internal constant cEUR_UNDERLYING = 0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73;
+
+  uint8 internal constant cEUR_DECIMALS = 18;
+
+  // https://celoscan.io/address/0x34c02571094e08E935B8cf8dC10F1Ad6795f1f81
+  address internal constant cEUR_A_TOKEN = 0x34c02571094e08E935B8cf8dC10F1Ad6795f1f81;
+
+  // https://celoscan.io/address/0x5C2B7EB5886B3cEc5CCE1019E34493da33291aF5
+  address internal constant cEUR_V_TOKEN = 0x5C2B7EB5886B3cEc5CCE1019E34493da33291aF5;
+
+  // https://celoscan.io/address/0x3D207061Dbe8E2473527611BFecB87Ff12b28dDa
+  address internal constant cEUR_ORACLE = 0x3D207061Dbe8E2473527611BFecB87Ff12b28dDa;
+
+  // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
+  address internal constant cEUR_INTEREST_RATE_STRATEGY =
+    0x8B62D241Bf59f40991DCd18531683156d7013355;
+
+  // https://celoscan.io/address/0x765DE816845861e75A25fCA122bb6898B8B1282a
+  address internal constant cUSD_UNDERLYING = 0x765DE816845861e75A25fCA122bb6898B8B1282a;
+
+  uint8 internal constant cUSD_DECIMALS = 18;
+
+  // https://celoscan.io/address/0xBba98352628B0B0c4b40583F593fFCb630935a45
+  address internal constant cUSD_A_TOKEN = 0xBba98352628B0B0c4b40583F593fFCb630935a45;
+
+  // https://celoscan.io/address/0x05Ee3d1fBACbDbA1259946033cd7A42FDFcCcF0d
+  address internal constant cUSD_V_TOKEN = 0x05Ee3d1fBACbDbA1259946033cd7A42FDFcCcF0d;
+
+  // https://celoscan.io/address/0xdCdA3E7E90fe827776b8FDaEa3C5977F123354DA
+  address internal constant cUSD_ORACLE = 0xdCdA3E7E90fe827776b8FDaEa3C5977F123354DA;
+
+  // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
+  address internal constant cUSD_INTEREST_RATE_STRATEGY =
+    0x8B62D241Bf59f40991DCd18531683156d7013355;
+
+  // https://celoscan.io/address/0x471EcE3750Da237f93B8E339c536989b8978a438
+  address internal constant CELO_UNDERLYING = 0x471EcE3750Da237f93B8E339c536989b8978a438;
+
+  uint8 internal constant CELO_DECIMALS = 18;
+
+  // https://celoscan.io/address/0xC3e77dC389537Db1EEc7C33B95Cf3beECA71A209
+  address internal constant CELO_A_TOKEN = 0xC3e77dC389537Db1EEc7C33B95Cf3beECA71A209;
+
+  // https://celoscan.io/address/0xaEa37B42955De2Ba2E4AF6581E46349bCD3Ea2d6
+  address internal constant CELO_V_TOKEN = 0xaEa37B42955De2Ba2E4AF6581E46349bCD3Ea2d6;
+
+  // https://celoscan.io/address/0x0568fD19986748cEfF3301e55c0eb1E729E0Ab7e
+  address internal constant CELO_ORACLE = 0x0568fD19986748cEfF3301e55c0eb1E729E0Ab7e;
+
+  // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
+  address internal constant CELO_INTEREST_RATE_STRATEGY =
+    0x8B62D241Bf59f40991DCd18531683156d7013355;
+}
 library AaveV3CeloEModes {
   uint8 internal constant NONE = 0;
 }

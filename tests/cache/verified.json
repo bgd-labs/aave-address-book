@@ -6554,6 +6554,69 @@
     },
     "0xE48E10834C04E394A04BF22a565D063D40b9FA42": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xcebA9300f2b948710d2653dD7B07f33A8B32118C": {
+      "name": "FiatTokenProxy"
+    },
+    "0xFF8309b9e99bfd2D4021bc71a362aBD93dBd4785": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDbe517c0FA6467873B684eCcbED77217E471E862": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8B62D241Bf59f40991DCd18531683156d7013355": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0xBF704f2FfdB856805cE64D085cD50427823696D7": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDeE98402A302e4D707fB9bf2bac66fAEEc31e8Df": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xE15324a9887999803b931Ac45aa89a94A9750052": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6e3d991C965364481796116dE68A8036d1b3Ecd0": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73": {
+      "name": "StableTokenEURProxy"
+    },
+    "0x34c02571094e08E935B8cf8dC10F1Ad6795f1f81": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5C2B7EB5886B3cEc5CCE1019E34493da33291aF5": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3D207061Dbe8E2473527611BFecB87Ff12b28dDa": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x765DE816845861e75A25fCA122bb6898B8B1282a": {
+      "name": "StableTokenProxy"
+    },
+    "0xBba98352628B0B0c4b40583F593fFCb630935a45": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x05Ee3d1fBACbDbA1259946033cd7A42FDFcCcF0d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xdCdA3E7E90fe827776b8FDaEa3C5977F123354DA": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x471EcE3750Da237f93B8E339c536989b8978a438": {
+      "name": "GoldTokenProxy"
+    },
+    "0xC3e77dC389537Db1EEc7C33B95Cf3beECA71A209": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xaEa37B42955De2Ba2E4AF6581E46349bCD3Ea2d6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0568fD19986748cEfF3301e55c0eb1E729E0Ab7e": {
+      "name": "EACAggregatorProxy"
     }
   },
   "43113": {

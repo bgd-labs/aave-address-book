@@ -60,9 +60,7 @@ import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {celoAddresses} from './configs/networks/celo';
 import {scrollAddresses} from './configs/networks/scroll';
-import {polygonZkEvmAddresses} from './configs/networks/polygonZkEvm';
 import {governanceConfigScroll} from './configs/governance/scroll';
-import {governanceConfigPolygonZkEvm} from './configs/governance/polygonZkEvm';
 import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
 import {governanceConfigZkSync} from './configs/governance/zksync';
@@ -104,7 +102,6 @@ async function main() {
       governanceConfigBNB,
       governanceConfigGnosis,
       governanceConfigScroll,
-      governanceConfigPolygonZkEvm,
       governanceConfigZkSync,
       governanceConfigCelo,
       governanceConfigLinea,
@@ -177,7 +174,6 @@ async function main() {
     bnbAddresses,
     celoAddresses,
     scrollAddresses,
-    polygonZkEvmAddresses,
     sepoliaAddresses,
     zkSyncAddresses,
     lineaAddresses,
