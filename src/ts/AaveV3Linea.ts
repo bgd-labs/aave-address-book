@@ -71,6 +71,9 @@ export const CLINIC_STEWARD = '0xA68A0864F304b5145f00A3f8Fd3ec2281568700F';
 // https://lineascan.build/address/0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702
 export const POOL_EXPOSURE_STEWARD = '0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702';
 
+// https://lineascan.build/address/0xc25Da0Ddab750739d2500dfD4E31EB4E83622F54
+export const STATA_FACTORY = '0xc25Da0Ddab750739d2500dfD4E31EB4E83622F54';
+
 export const CHAIN_ID = 59144;
 export const ASSETS = {
   WETH: {

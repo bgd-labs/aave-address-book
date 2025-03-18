@@ -3309,6 +3309,9 @@
     },
     "0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8": {
       "name": "PoolExposureSteward"
+    },
+    "0x929B8a21a604b93DD7e95d5b9aAa3aDf5bE250ae": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "100": {
@@ -7592,6 +7595,9 @@
     },
     "0x07Fc6Fa43Cf6b08d24679ebf8060386b4D41B702": {
       "name": "PoolExposureSteward"
+    },
+    "0xc25Da0Ddab750739d2500dfD4E31EB4E83622F54": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "84532": {
@@ -8057,6 +8063,9 @@
     },
     "0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7": {
       "name": "PoolExposureSteward"
+    },
+    "0x01cfB64B99f717d791260ECb502e675d6E8Cf522": {
+      "name": "TransparentUpgradeableProxy"
     }
   }
 }
