@@ -393,6 +393,8 @@ library AaveV3BaseEModes {
   uint8 internal constant EZETH_STABLECOINS = 3;
 
   uint8 internal constant LBTC_CBBTC = 4;
+
+  uint8 internal constant RSETH_WSTETH = 5;
 }
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770

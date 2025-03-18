@@ -7686,6 +7686,108 @@
       }
     },
     {
+      "chainId": 42220,
+      "address": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
+      "name": "USDC",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 42220,
+      "address": "0xFF8309b9e99bfd2D4021bc71a362aBD93dBd4785",
+      "name": "Aave Celo USDC",
+      "decimals": 6,
+      "symbol": "aCelUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C"
+      }
+    },
+    {
+      "chainId": 42220,
+      "address": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42220,
+      "address": "0xDeE98402A302e4D707fB9bf2bac66fAEEc31e8Df",
+      "name": "Aave Celo USDT",
+      "decimals": 6,
+      "symbol": "aCelUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e"
+      }
+    },
+    {
+      "chainId": 42220,
+      "address": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
+      "name": "Celo Euro",
+      "decimals": 18,
+      "symbol": "cEUR",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42220,
+      "address": "0x34c02571094e08E935B8cf8dC10F1Ad6795f1f81",
+      "name": "Aave Celo cEUR",
+      "decimals": 18,
+      "symbol": "aCelcEUR",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73"
+      }
+    },
+    {
+      "chainId": 42220,
+      "address": "0x765DE816845861e75A25fCA122bb6898B8B1282a",
+      "name": "Celo Dollar",
+      "decimals": 18,
+      "symbol": "cUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42220,
+      "address": "0xBba98352628B0B0c4b40583F593fFCb630935a45",
+      "name": "Aave Celo cUSD",
+      "decimals": 18,
+      "symbol": "aCelcUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0x765DE816845861e75A25fCA122bb6898B8B1282a"
+      }
+    },
+    {
+      "chainId": 42220,
+      "address": "0x471EcE3750Da237f93B8E339c536989b8978a438",
+      "name": "Celo native asset",
+      "decimals": 18,
+      "symbol": "CELO",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 42220,
+      "address": "0xC3e77dC389537Db1EEc7C33B95Cf3beECA71A209",
+      "name": "Aave Celo CELO",
+      "decimals": 18,
+      "symbol": "aCelCELO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0x471EcE3750Da237f93B8E339c536989b8978a438"
+      }
+    },
+    {
       "chainId": 146,
       "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
       "name": "Wrapped Ether on Sonic",
@@ -7794,6 +7896,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 93 },
-  "timestamp": "2025-03-12T20:27:55.508Z"
+  "version": { "major": 3, "minor": 0, "patch": 96 },
+  "timestamp": "2025-03-18T06:18:44.350Z"
 }
