@@ -86,10 +86,6 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4
   address internal constant WETH_GATEWAY = 0xE79Ca44408Dae5a57eA2a9594532f1E84d2edAa4;
 
-  // https://scrollscan.com/address/0x970b77b96D94966939a8F867c2BfC2aC0310C0e7
-  address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =
-    0x970b77b96D94966939a8F867c2BfC2aC0310C0e7;
-
   // https://scrollscan.com/address/0xD1aE9Da215B06910F246b13fbCbd74D9657AF365
   address internal constant DUST_BIN = 0xD1aE9Da215B06910F246b13fbCbd74D9657AF365;
 
@@ -98,6 +94,9 @@ library AaveV3Scroll {
 
   // https://scrollscan.com/address/0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7
   address internal constant POOL_EXPOSURE_STEWARD = 0xf4c8A85fee25f055795E5DcDF39b447aD5761aC7;
+
+  // https://scrollscan.com/address/0x01cfB64B99f717d791260ECb502e675d6E8Cf522
+  address internal constant STATA_FACTORY = 0x01cfB64B99f717d791260ECb502e675d6E8Cf522;
 }
 library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0x5300000000000000000000000000000000000004
@@ -118,9 +117,6 @@ library AaveV3ScrollAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc;
 
-  // https://scrollscan.com/address/0x6b9DfaC194fa78a1882680E2cE19194D006AeEfd
-  address internal constant WETH_STATIC_A_TOKEN = 0x6b9DfaC194fa78a1882680E2cE19194D006AeEfd;
-
   // https://scrollscan.com/address/0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4
   address internal constant USDC_UNDERLYING = 0x06eFdBFf2a14a7c8E15944D1F4A48F9F95F663A4;
 
@@ -139,9 +135,6 @@ library AaveV3ScrollAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc;
 
-  // https://scrollscan.com/address/0x9fA123bC7E6b61cC8a9D893673a4C6E5392FF4A7
-  address internal constant USDC_STATIC_A_TOKEN = 0x9fA123bC7E6b61cC8a9D893673a4C6E5392FF4A7;
-
   // https://scrollscan.com/address/0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32
   address internal constant wstETH_UNDERLYING = 0xf610A9dfB7C89644979b4A0f27063E9e7d7Cda32;
 
@@ -159,9 +152,6 @@ library AaveV3ScrollAssets {
   // https://scrollscan.com/address/0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0xC37353E5766164D8654D3CB395acfDcA4c2E7Ddc;
-
-  // https://scrollscan.com/address/0x6e368c4dBf083e18a29aE63FC06AF9deDb3242F0
-  address internal constant wstETH_STATIC_A_TOKEN = 0x6e368c4dBf083e18a29aE63FC06AF9deDb3242F0;
 
   // https://scrollscan.com/address/0x01f0a31698C4d065659b9bdC21B3610292a1c506
   address internal constant weETH_UNDERLYING = 0x01f0a31698C4d065659b9bdC21B3610292a1c506;

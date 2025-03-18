@@ -92,6 +92,9 @@ export const CLINIC_STEWARD = '0x9e842f55Fdbb8F332D7c7aCe2B67fa5e4CCAAc43';
 // https://bscscan.com/address/0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8
 export const POOL_EXPOSURE_STEWARD = '0x58AfE45eE7D7f2AE9c26827F33A6f319Feb68Df8';
 
+// https://bscscan.com/address/0x929B8a21a604b93DD7e95d5b9aAa3aDf5bE250ae
+export const STATA_FACTORY = '0x929B8a21a604b93DD7e95d5b9aAa3aDf5bE250ae';
+
 export const CHAIN_ID = 56;
 export const ASSETS = {
   Cake: {

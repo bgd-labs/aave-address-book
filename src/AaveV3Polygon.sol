@@ -105,6 +105,9 @@ library AaveV3Polygon {
 
   // https://polygonscan.com/address/0xE5b11ab4D36E58C9171e3DB98Ba17336606Cd6ef
   address internal constant POOL_EXPOSURE_STEWARD = 0xE5b11ab4D36E58C9171e3DB98Ba17336606Cd6ef;
+
+  // https://polygonscan.com/address/0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa
+  address internal constant STATA_FACTORY = 0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa;
 }
 library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
