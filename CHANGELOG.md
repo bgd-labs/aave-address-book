@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.17.1](https://github.com/bgd-labs/aave-address-book/compare/v4.17.0...v4.17.1) (2025-03-20)
+
+
+### Bug Fixes
+
+* weth gateway ([#891](https://github.com/bgd-labs/aave-address-book/issues/891)) ([ba66374](https://github.com/bgd-labs/aave-address-book/commit/ba6637496673bcf5c1bc013deacf2cb0e4c6ad8c))
+
 ## [4.17.0](https://github.com/bgd-labs/aave-address-book/compare/v4.16.1...v4.17.0) (2025-03-18)
 
 
