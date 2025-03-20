@@ -68,8 +68,8 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D
   address internal constant WALLET_BALANCE_PROVIDER = 0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D;
 
-  // https://gnosisscan.io/address/0xb85d72EC1EfE48168c4aBC4eB855f8Cbcd05cE38
-  address internal constant WETH_GATEWAY = 0xb85d72EC1EfE48168c4aBC4eB855f8Cbcd05cE38;
+  // https://gnosisscan.io/address/0x721B9abAb6511b46b9ee83A1aba23BDAcB004149
+  address internal constant WETH_GATEWAY = 0x721B9abAb6511b46b9ee83A1aba23BDAcB004149;
 
   // https://gnosisscan.io/address/0x33AE1f41546a2e05368Bf789b3d868813c0Ae658
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x33AE1f41546a2e05368Bf789b3d868813c0Ae658;

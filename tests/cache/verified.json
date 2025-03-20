@@ -3656,6 +3656,9 @@
     },
     "0x417bc5b940475203A18C2f320a5ba470D6c5E463": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x721B9abAb6511b46b9ee83A1aba23BDAcB004149": {
+      "name": "WrappedTokenGatewayV3"
     }
   },
   "137": {
