@@ -6,7 +6,7 @@ This repository contains an up-to-date registry of all addresses of the Aave eco
 
 The goal is for Solidity developers to have the most integrated environment possible when they want to develop on top of Aave, by just importing a package with all the necessary addresses to interact with.
 
-You can find a searchable version of the address book on [https://book.onaave.com/](https://book.onaave.com/).
+You can find a searchable version of the address book on [https://search.onaave.com/](https://search.onaave.com/).
 
 ## Usage with foundry
 
@@ -120,3 +120,13 @@ This repository will try to use public rpcs.
 For some networks they are not very reliable though, therefore you can set `RPC_<NETWORK>` in your .env to use a private rpc.
 Check https://github.com/bgd-labs/aave-address-book/blob/main/scripts/clients.ts#L39 for the chain naming convention.
 Alternatively you can provide an `ALCHEMY_API_KEY` which will use alchemy as a fallback if no exact RPC is specified.
+
+### Raycast extension
+
+To install the Aave Search extension for [Raycast](https://www.raycast.com/):
+1.	Make sure you have Raycast installed on your Mac
+2.	Open Raycast, type `Store` and select the Store command
+4.	Search for `Aave Search` or navigate directly to the [extension page](https://www.raycast.com/smbdy/aave-search).
+5.	Click the Install button or press `⁠⌘ + ⁠↵` to install the extension
+
+Once installed, you can use the extension by typing `aave` in Raycast.  
