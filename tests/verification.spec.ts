@@ -1,11 +1,11 @@
-import {ChainId, ChainList} from '@bgd-labs/rpc-env';
-import {describe, expect, it} from 'vitest';
-import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
+import { ChainId, ChainList } from '@bgd-labs/rpc-env';
+import { describe, expect, it } from 'vitest';
+import { flattenedAddresses, ListItem } from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
-import {writeFileSync} from 'fs';
-import {Hex, PublicClient, zeroAddress} from 'viem';
-import {getCode} from 'viem/actions';
-import {getClient} from '../scripts/clients';
+import { writeFileSync } from 'fs';
+import { Hex, PublicClient, zeroAddress } from 'viem';
+import { getCode } from 'viem/actions';
+import { getClient } from '../scripts/clients';
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
 
@@ -25,12 +25,12 @@ async function checkProxyVerification(item: ListItem, guid: string) {
   const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
-    const {status} = await request.json();
+    const { status } = await request.json();
     if (status === '1')
       console.log(
         'successfully verified proxy. Please rerun the script in a few minutes as you need to wait till etherscan prunes its cache.',
       );
-  } catch (e) {}
+  } catch (e) { }
 }
 
 async function verifyProxy(item: ListItem) {
@@ -50,7 +50,7 @@ async function verifyProxy(item: ListItem) {
       }),
     });
 
-    const {status, result} = await request.json();
+    const { status, result } = await request.json();
     await sleep(1000);
     if (status === '1') checkProxyVerification(item, result);
   } catch (e) {
@@ -72,7 +72,7 @@ async function checkVerified(item: ListItem) {
   const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
-    const {status, result} = await request.json();
+    const { status, result } = await request.json();
     if (status !== '1' || !result[0].ContractName) {
       // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
       // therefore we try to manually assign it
@@ -80,10 +80,10 @@ async function checkVerified(item: ListItem) {
         await verifyProxy(item);
       }
     }
-    return {status, result};
+    return { status, result };
   } catch (e) {
     console.error(e);
-    return {status: '0', result: e};
+    return { status: '0', result: e };
   }
 }
 
@@ -115,6 +115,11 @@ const knownErrors = {
   146: {
     '0x0846C28Dd54DEA4Fd7Fb31bcc5EB81673D68c695': true, // etherscan issue - not detecting that it's verified
   },
+  10: {
+    '0x61b620FAd391b53A2D0973b10a3Ed69558d5c66E': true, // etherscan issue
+    '0x464b808c2C7E04b07e860fDF7a91870620246148': true, // etherscan issue
+    '0x927CfF131fD5B43FC992D071929b2c095d6E4b70': true, // etherscan issue
+  }
 };
 
 describe(
@@ -127,7 +132,7 @@ describe(
           !ChainList[item.chainId].testnet &&
           !knownErrors[item.chainId]?.[item.value],
       );
-      const errors: {item: ListItem}[] = [];
+      const errors: { item: ListItem }[] = [];
       let newVerified = false;
       // unique set of addresses checked on this iteration
       // used to prevent double checking the same address
@@ -139,15 +144,15 @@ describe(
           if (checked.has(key)) continue;
           checked.add(key);
           const client = getClient(item.chainId) as PublicClient;
-          const hasCode = await getCode(client, {address: item.value as Hex});
+          const hasCode = await getCode(client, { address: item.value as Hex });
           if (hasCode) {
-            const {status, result} = (await checkVerified(item)) as {
+            const { status, result } = (await checkVerified(item)) as {
               status: string;
-              result: {ContractName: string}[];
+              result: { ContractName: string }[];
             };
             await sleep(300);
             if (status !== '1' || !result[0].ContractName) {
-              errors.push({item});
+              errors.push({ item });
               console.log(item.value, result);
             } else {
               newVerified = true;
@@ -167,5 +172,5 @@ describe(
       expect(errors).toMatchSnapshot();
     });
   },
-  {timeout: 120_000},
+  { timeout: 120_000 },
 );

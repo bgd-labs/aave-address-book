@@ -2465,6 +2465,27 @@
     },
     "0x8b493f416F5F7933cC146b1899c069F2361cad60": {
       "name": "SvrOracleSteward"
+    },
+    "0x06a1795a88b82700896583e123F46BE43877bFb6": {
+      "name": "VotingMachine"
+    },
+    "0x6ACe1Bf22D57a33863161bFDC851316Fb0442690": {
+      "name": "VotingPortal"
+    },
+    "0x9Ded9406f088C10621BE628EEFf40c1DF396c172": {
+      "name": "VotingPortal"
+    },
+    "0xFe4683C18aaad791B6AFDF0a8e1Ed5C6e2c9ecD6": {
+      "name": "VotingPortal"
+    },
+    "0xA16044F268d84599e58E851b25f4DBA061DC6088": {
+      "name": "VotingStrategy"
+    },
+    "0xa638c14525CAEE8e498A67b409CCb1B7b34c3981": {
+      "name": "DataWarehouse"
+    },
+    "0x5caF5a86f39073637Ac7c8A7b5290871de80cb9b": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
@@ -4585,6 +4606,15 @@
     },
     "0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x44c8b753229006A8047A05b90379A7e92185E97C": {
+      "name": "VotingMachine"
+    },
+    "0xd755F1CA351E989391a5bacDeC8F780dFD76f5d2": {
+      "name": "VotingStrategy"
+    },
+    "0xE3D355a9E58D59Ad11F318deAED528f79A9C1e5a": {
+      "name": "DataWarehouse"
     }
   },
   "146": {
@@ -7398,6 +7428,48 @@
     },
     "0x0d68D50DB848dfE6012456781c1D79A11eD12a2e": {
       "name": "PoolExposureSteward"
+    },
+    "0x4D1863d22D0ED8579f8999388BCC833CB057C2d6": {
+      "name": "VotingMachine"
+    },
+    "0x6771B74568181f6042C9e5CFF98f62e7Ce40482e": {
+      "name": "VotingStrategy"
+    },
+    "0x450820e342B731b542caA5328d06F26528914dDd": {
+      "name": "DataWarehouse"
+    },
+    "0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x61933AF56431280EE4e5667133D8aF6322D64B32": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xe1bFC96d95BAdCB10Ff013Cb0C9C6c737ca07009": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xdFD2b2437a94108323045C282fF1916de5Ac6Af7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x59933c571d200dc6A7Fd1CDa22495dB442082E34": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7883978D1F322641a3AaA82Bac3b0a6Dee7A171E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xD7da0De6Ef4f51d6206bF2A35fCd2030F54c3F7B": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7D0394F8898fBA73836Bf12bD606228887705895": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3929336Afd0BBa6FCAbB67dFB78610379C66B43B": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2d324fD1Ca86D90f61B0965d2db2f86d22eA4B74": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "59144": {
