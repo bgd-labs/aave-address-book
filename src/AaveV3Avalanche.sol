@@ -138,6 +138,9 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0x02F3f6c8A432C1e49f3359d7d36887C25d8A5888
   address internal constant DAIe_STATIC_A_TOKEN = 0x02F3f6c8A432C1e49f3359d7d36887C25d8A5888;
 
+  // https://snowtrace.io/address/0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13
+  address internal constant DAIe_STATA_TOKEN = 0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13;
+
   // https://snowtrace.io/address/0x5947BB275c521040051D82396192181b413227A3
   address internal constant LINKe_UNDERLYING = 0x5947BB275c521040051D82396192181b413227A3;
 
@@ -159,6 +162,9 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0x8B773Ab77Dff01985D438961dBCE58382a70cA52
   address internal constant LINKe_STATIC_A_TOKEN = 0x8B773Ab77Dff01985D438961dBCE58382a70cA52;
 
+  // https://snowtrace.io/address/0x61933AF56431280EE4e5667133D8aF6322D64B32
+  address internal constant LINKe_STATA_TOKEN = 0x61933AF56431280EE4e5667133D8aF6322D64B32;
+
   // https://snowtrace.io/address/0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E
   address internal constant USDC_UNDERLYING = 0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E;
 
@@ -179,6 +185,9 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0xC509aB7bB4eDbF193b82264D499a7Fc526Cd01F4
   address internal constant USDC_STATIC_A_TOKEN = 0xC509aB7bB4eDbF193b82264D499a7Fc526Cd01F4;
+
+  // https://snowtrace.io/address/0xe1bFC96d95BAdCB10Ff013Cb0C9C6c737ca07009
+  address internal constant USDC_STATA_TOKEN = 0xe1bFC96d95BAdCB10Ff013Cb0C9C6c737ca07009;
 
   // https://snowtrace.io/address/0x50b7545627a5162F82A992c33b87aDc75187B218
   address internal constant WBTCe_UNDERLYING = 0x50b7545627a5162F82A992c33b87aDc75187B218;
@@ -222,6 +231,9 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xf8E24175D01653fd6AA203C2C17B1e4Dd1CA2731
   address internal constant WETHe_STATIC_A_TOKEN = 0xf8E24175D01653fd6AA203C2C17B1e4Dd1CA2731;
 
+  // https://snowtrace.io/address/0xdFD2b2437a94108323045C282fF1916de5Ac6Af7
+  address internal constant WETHe_STATA_TOKEN = 0xdFD2b2437a94108323045C282fF1916de5Ac6Af7;
+
   // https://snowtrace.io/address/0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7
   address internal constant USDt_UNDERLYING = 0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7;
 
@@ -242,6 +254,9 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0x5525Ee69BC1e354B356864187De486fab5AD67d7
   address internal constant USDt_STATIC_A_TOKEN = 0x5525Ee69BC1e354B356864187De486fab5AD67d7;
+
+  // https://snowtrace.io/address/0x59933c571d200dc6A7Fd1CDa22495dB442082E34
+  address internal constant USDt_STATA_TOKEN = 0x59933c571d200dc6A7Fd1CDa22495dB442082E34;
 
   // https://snowtrace.io/address/0x63a72806098Bd3D9520cC43356dD78afe5D386D9
   address internal constant AAVEe_UNDERLYING = 0x63a72806098Bd3D9520cC43356dD78afe5D386D9;
@@ -264,6 +279,9 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xac0746AfD13DEbe2a43a6c8745Fb83Fd2A2909cA
   address internal constant AAVEe_STATIC_A_TOKEN = 0xac0746AfD13DEbe2a43a6c8745Fb83Fd2A2909cA;
 
+  // https://snowtrace.io/address/0x7883978D1F322641a3AaA82Bac3b0a6Dee7A171E
+  address internal constant AAVEe_STATA_TOKEN = 0x7883978D1F322641a3AaA82Bac3b0a6Dee7A171E;
+
   // https://snowtrace.io/address/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7
   address internal constant WAVAX_UNDERLYING = 0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7;
 
@@ -284,6 +302,9 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d
   address internal constant WAVAX_STATIC_A_TOKEN = 0x6A02C7a974F1F13A67980C80F774eC1d2eD8f98d;
+
+  // https://snowtrace.io/address/0xD7da0De6Ef4f51d6206bF2A35fCd2030F54c3F7B
+  address internal constant WAVAX_STATA_TOKEN = 0xD7da0De6Ef4f51d6206bF2A35fCd2030F54c3F7B;
 
   // https://snowtrace.io/address/0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE
   address internal constant sAVAX_UNDERLYING = 0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE;
@@ -306,6 +327,9 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0x4F059cA8a2a5BF8895Ee731f2E901cCB769FB95f
   address internal constant sAVAX_STATIC_A_TOKEN = 0x4F059cA8a2a5BF8895Ee731f2E901cCB769FB95f;
 
+  // https://snowtrace.io/address/0x7D0394F8898fBA73836Bf12bD606228887705895
+  address internal constant sAVAX_STATA_TOKEN = 0x7D0394F8898fBA73836Bf12bD606228887705895;
+
   // https://snowtrace.io/address/0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64
   address internal constant FRAX_UNDERLYING = 0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64;
 
@@ -326,6 +350,9 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0xA3c2ffE702F4cD265B2249AB5f84Fab81FFf6c73
   address internal constant FRAX_STATIC_A_TOKEN = 0xA3c2ffE702F4cD265B2249AB5f84Fab81FFf6c73;
+
+  // https://snowtrace.io/address/0x3929336Afd0BBa6FCAbB67dFB78610379C66B43B
+  address internal constant FRAX_STATA_TOKEN = 0x3929336Afd0BBa6FCAbB67dFB78610379C66B43B;
 
   // https://snowtrace.io/address/0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b
   address internal constant MAI_UNDERLYING = 0x5c49b268c9841AFF1Cc3B0a418ff5c3442eE3F3b;
@@ -368,6 +395,9 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0x34d768cc830c32DcD743321c09A2A702651bF9a2
   address internal constant BTCb_STATIC_A_TOKEN = 0x34d768cc830c32DcD743321c09A2A702651bF9a2;
 
+  // https://snowtrace.io/address/0x2d324fD1Ca86D90f61B0965d2db2f86d22eA4B74
+  address internal constant BTCb_STATA_TOKEN = 0x2d324fD1Ca86D90f61B0965d2db2f86d22eA4B74;
+
   // https://snowtrace.io/address/0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a
   address internal constant AUSD_UNDERLYING = 0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a;
 
@@ -385,6 +415,9 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
   address internal constant AUSD_INTEREST_RATE_STRATEGY =
     0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da;
+
+  // https://snowtrace.io/address/0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e
+  address internal constant AUSD_STATA_TOKEN = 0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e;
 }
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;

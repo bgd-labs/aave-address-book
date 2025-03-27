@@ -1968,6 +1968,20 @@
     },
     {
       "chainId": 1,
+      "address": "0x5caF5a86f39073637Ac7c8A7b5290871de80cb9b",
+      "name": "Wrapped Aave Ethereum DAI",
+      "decimals": 18,
+      "symbol": "waEthDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "underlyingAToken": "0x018008bfb33d285247A21d44E50697654f754e63"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x5E8C8A7243651DB1384C0dDfDbE39761E8e7E51a",
       "name": "Aave Ethereum LINK",
       "decimals": 18,
@@ -3630,6 +3644,20 @@
     },
     {
       "chainId": 43114,
+      "address": "0xC38aD3527A4B821BF437639cBA8Bf567BFa63A13",
+      "name": "Wrapped Aave Avalanche DAI",
+      "decimals": 18,
+      "symbol": "waAvaDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
+        "underlyingAToken": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE"
+      }
+    },
+    {
+      "chainId": 43114,
       "address": "0x5947BB275c521040051D82396192181b413227A3",
       "name": "Chainlink Token",
       "decimals": 18,
@@ -3666,6 +3694,20 @@
     },
     {
       "chainId": 43114,
+      "address": "0x61933AF56431280EE4e5667133D8aF6322D64B32",
+      "name": "Wrapped Aave Avalanche LINK",
+      "decimals": 18,
+      "symbol": "waAvaLINK",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statalink.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x5947BB275c521040051D82396192181b413227A3",
+        "underlyingAToken": "0x191c10Aa4AF7C30e871E70C95dB0E4eb77237530"
+      }
+    },
+    {
+      "chainId": 43114,
       "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
       "name": "USD Coin",
       "decimals": 6,
@@ -3693,6 +3735,20 @@
       "decimals": 6,
       "symbol": "stataAvaUSDC",
       "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+        "underlyingAToken": "0x625E7708f30cA75bfd92586e17077590C60eb4cD"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xe1bFC96d95BAdCB10Ff013Cb0C9C6c737ca07009",
+      "name": "Wrapped Aave Avalanche USDC",
+      "decimals": 6,
+      "symbol": "waAvaUSDC",
+      "tags": ["aaveV3", "stataToken"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
@@ -3756,6 +3812,20 @@
     },
     {
       "chainId": 43114,
+      "address": "0xdFD2b2437a94108323045C282fF1916de5Ac6Af7",
+      "name": "Wrapped Aave Avalanche WETH",
+      "decimals": 18,
+      "symbol": "waAvaWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
+        "underlyingAToken": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8"
+      }
+    },
+    {
+      "chainId": 43114,
       "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
       "name": "TetherToken",
       "decimals": 6,
@@ -3792,6 +3862,20 @@
     },
     {
       "chainId": 43114,
+      "address": "0x59933c571d200dc6A7Fd1CDa22495dB442082E34",
+      "name": "Wrapped Aave Avalanche USDT",
+      "decimals": 6,
+      "symbol": "waAvaUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+        "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
+      }
+    },
+    {
+      "chainId": 43114,
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "name": "Aave Avalanche AAVE",
       "decimals": 18,
@@ -3819,6 +3903,20 @@
     },
     {
       "chainId": 43114,
+      "address": "0x7883978D1F322641a3AaA82Bac3b0a6Dee7A171E",
+      "name": "Wrapped Aave Avalanche AAVE",
+      "decimals": 18,
+      "symbol": "waAvaAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
+        "underlyingAToken": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375"
+      }
+    },
+    {
+      "chainId": 43114,
       "address": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97",
       "name": "Aave Avalanche WAVAX",
       "decimals": 18,
@@ -3837,6 +3935,20 @@
       "decimals": 18,
       "symbol": "stataAvaWAVAX",
       "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawavax.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+        "underlyingAToken": "0x6d80113e533a2C0fe82EaBD35f1875DcEA89Ea97"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xD7da0De6Ef4f51d6206bF2A35fCd2030F54c3F7B",
+      "name": "Wrapped Aave Avalanche WAVAX",
+      "decimals": 18,
+      "symbol": "waAvaWAVAX",
+      "tags": ["aaveV3", "stataToken"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawavax.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
@@ -3882,6 +3994,20 @@
     },
     {
       "chainId": 43114,
+      "address": "0x7D0394F8898fBA73836Bf12bD606228887705895",
+      "name": "Wrapped Aave Avalanche SAVAX",
+      "decimals": 18,
+      "symbol": "waAvaSAVAX",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasavax.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE",
+        "underlyingAToken": "0x513c7E3a9c69cA3e22550eF58AC1C0088e918FFf"
+      }
+    },
+    {
+      "chainId": 43114,
       "address": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
       "name": "Frax",
       "decimals": 18,
@@ -3909,6 +4035,20 @@
       "decimals": 18,
       "symbol": "stataAvaFRAX",
       "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statafrax.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
+        "underlyingAToken": "0xc45A479877e1e9Dfe9FcD4056c699575a1045dAA"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x3929336Afd0BBa6FCAbB67dFB78610379C66B43B",
+      "name": "Wrapped Aave Avalanche FRAX",
+      "decimals": 18,
+      "symbol": "waAvaFRAX",
+      "tags": ["aaveV3", "stataToken"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statafrax.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
@@ -3990,6 +4130,20 @@
     },
     {
       "chainId": 43114,
+      "address": "0x2d324fD1Ca86D90f61B0965d2db2f86d22eA4B74",
+      "name": "Wrapped Aave Avalanche BTC.b",
+      "decimals": 8,
+      "symbol": "waAvaBTCb",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statabtc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
+        "underlyingAToken": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692"
+      }
+    },
+    {
+      "chainId": 43114,
       "address": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
       "name": "AUSD",
       "decimals": 6,
@@ -4008,6 +4162,20 @@
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e",
+      "name": "Wrapped Aave Avalanche AUSD",
+      "decimals": 6,
+      "symbol": "waAvaAUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataausd.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+        "underlyingAToken": "0x724dc807b04555b71ed48a6896b6F41593b8C637"
       }
     },
     {
@@ -6144,6 +6312,20 @@
     },
     {
       "chainId": 10,
+      "address": "0x61b620FAd391b53A2D0973b10a3Ed69558d5c66E",
+      "name": "Wrapped Aave Optimism DAI",
+      "decimals": 18,
+      "symbol": "waOptDAI",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statadai.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+        "underlyingAToken": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE"
+      }
+    },
+    {
+      "chainId": 10,
       "address": "0x350a791Bfc2C21F9Ed5d10980Dad2e2638ffa7f6",
       "name": "ChainLink Token",
       "decimals": 18,
@@ -6288,6 +6470,20 @@
     },
     {
       "chainId": 10,
+      "address": "0x464b808c2C7E04b07e860fDF7a91870620246148",
+      "name": "Wrapped Aave Optimism WETH",
+      "decimals": 18,
+      "symbol": "waOptWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x4200000000000000000000000000000000000006",
+        "underlyingAToken": "0xe50fA9b3c56FfB159cB0FCA61F5c9D750e8128c8"
+      }
+    },
+    {
+      "chainId": 10,
       "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
       "name": "Tether USD",
       "decimals": 6,
@@ -6315,6 +6511,20 @@
       "decimals": 6,
       "symbol": "stataOptUSDT",
       "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+        "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
+      }
+    },
+    {
+      "chainId": 10,
+      "address": "0x927CfF131fD5B43FC992D071929b2c095d6E4b70",
+      "name": "Wrapped Aave Optimism USDT",
+      "decimals": 6,
+      "symbol": "waOptUSDT",
+      "tags": ["aaveV3", "stataToken"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
@@ -7460,6 +7670,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 97 },
-  "timestamp": "2025-03-18T15:13:09.297Z"
+  "version": { "major": 3, "minor": 0, "patch": 98 },
+  "timestamp": "2025-03-27T00:14:18.596Z"
 }
