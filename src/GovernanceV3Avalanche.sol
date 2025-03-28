@@ -10,8 +10,8 @@ library GovernanceV3Avalanche {
   // https://snowtrace.io/address/0x41185495Bc8297a65DC46f94001DC7233775EbEe
   address internal constant CL_EMERGENCY_ORACLE = 0x41185495Bc8297a65DC46f94001DC7233775EbEe;
 
-  // https://snowtrace.io/address/0x9b6f5ef589A3DD08670Dd146C11C4Fb33E04494F
-  address internal constant VOTING_MACHINE = 0x9b6f5ef589A3DD08670Dd146C11C4Fb33E04494F;
+  // https://snowtrace.io/address/0x4D1863d22D0ED8579f8999388BCC833CB057C2d6
+  address internal constant VOTING_MACHINE = 0x4D1863d22D0ED8579f8999388BCC833CB057C2d6;
 
   // https://snowtrace.io/address/0x1140CB7CAfAcC745771C2Ea31e7B5C653c5d0B80
   IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
@@ -32,11 +32,11 @@ library GovernanceV3Avalanche {
   // https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
   address internal constant EXECUTOR_LVL_1 = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
 
-  // https://snowtrace.io/address/0x690C218668B440204F369Af1541245d367cc805C
+  // https://snowtrace.io/address/0x6771B74568181f6042C9e5CFF98f62e7Ce40482e
   IVotingStrategy internal constant VOTING_STRATEGY =
-    IVotingStrategy(0x690C218668B440204F369Af1541245d367cc805C);
+    IVotingStrategy(0x6771B74568181f6042C9e5CFF98f62e7Ce40482e);
 
-  // https://snowtrace.io/address/0x9626F9d60CC0B7e1c9a0A47b7f0bd618fb6f40ff
+  // https://snowtrace.io/address/0x450820e342B731b542caA5328d06F26528914dDd
   IDataWarehouse internal constant DATA_WAREHOUSE =
-    IDataWarehouse(0x9626F9d60CC0B7e1c9a0A47b7f0bd618fb6f40ff);
+    IDataWarehouse(0x450820e342B731b542caA5328d06F26528914dDd);
 }

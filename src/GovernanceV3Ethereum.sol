@@ -15,17 +15,17 @@ library GovernanceV3Ethereum {
   IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
     IPayloadsControllerCore(0xdAbad81aF85554E9ae636395611C58F7eC1aAEc5);
 
-  // https://etherscan.io/address/0x617332a777780F546261247F621051d0b98975Eb
-  address internal constant VOTING_MACHINE = 0x617332a777780F546261247F621051d0b98975Eb;
+  // https://etherscan.io/address/0x06a1795a88b82700896583e123F46BE43877bFb6
+  address internal constant VOTING_MACHINE = 0x06a1795a88b82700896583e123F46BE43877bFb6;
 
-  // https://etherscan.io/address/0xf23f7De3AC42F22eBDA17e64DC4f51FB66b8E21f
-  address internal constant VOTING_PORTAL_ETH_ETH = 0xf23f7De3AC42F22eBDA17e64DC4f51FB66b8E21f;
+  // https://etherscan.io/address/0x6ACe1Bf22D57a33863161bFDC851316Fb0442690
+  address internal constant VOTING_PORTAL_ETH_ETH = 0x6ACe1Bf22D57a33863161bFDC851316Fb0442690;
 
-  // https://etherscan.io/address/0x33aCEf7365809218485873B7d0d67FeE411B5D79
-  address internal constant VOTING_PORTAL_ETH_AVAX = 0x33aCEf7365809218485873B7d0d67FeE411B5D79;
+  // https://etherscan.io/address/0x9Ded9406f088C10621BE628EEFf40c1DF396c172
+  address internal constant VOTING_PORTAL_ETH_AVAX = 0x9Ded9406f088C10621BE628EEFf40c1DF396c172;
 
-  // https://etherscan.io/address/0x9b24C168d6A76b5459B1d47071a54962a4df36c3
-  address internal constant VOTING_PORTAL_ETH_POL = 0x9b24C168d6A76b5459B1d47071a54962a4df36c3;
+  // https://etherscan.io/address/0xFe4683C18aaad791B6AFDF0a8e1Ed5C6e2c9ecD6
+  address internal constant VOTING_PORTAL_ETH_POL = 0xFe4683C18aaad791B6AFDF0a8e1Ed5C6e2c9ecD6;
 
   // https://etherscan.io/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
   address internal constant PC_DATA_HELPER = 0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A;
@@ -57,11 +57,11 @@ library GovernanceV3Ethereum {
   // https://etherscan.io/address/0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957
   address internal constant EXECUTOR_LVL_2 = 0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957;
 
-  // https://etherscan.io/address/0x5642A5A5Ec284B4145563aBF319620204aCCA7f4
+  // https://etherscan.io/address/0xA16044F268d84599e58E851b25f4DBA061DC6088
   IVotingStrategy internal constant VOTING_STRATEGY =
-    IVotingStrategy(0x5642A5A5Ec284B4145563aBF319620204aCCA7f4);
+    IVotingStrategy(0xA16044F268d84599e58E851b25f4DBA061DC6088);
 
-  // https://etherscan.io/address/0x1699FE9CaDC8a0b6c93E06B62Ab4592a0fFEcF61
+  // https://etherscan.io/address/0xa638c14525CAEE8e498A67b409CCb1B7b34c3981
   IDataWarehouse internal constant DATA_WAREHOUSE =
-    IDataWarehouse(0x1699FE9CaDC8a0b6c93E06B62Ab4592a0fFEcF61);
+    IDataWarehouse(0xa638c14525CAEE8e498A67b409CCb1B7b34c3981);
 }

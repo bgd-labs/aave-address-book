@@ -10,8 +10,8 @@ library GovernanceV3Polygon {
   // https://polygonscan.com/address/0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F
   address internal constant CL_EMERGENCY_ORACLE = 0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F;
 
-  // https://polygonscan.com/address/0xc8a2ADC4261c6b669CdFf69E717E77C9cFeB420d
-  address internal constant VOTING_MACHINE = 0xc8a2ADC4261c6b669CdFf69E717E77C9cFeB420d;
+  // https://polygonscan.com/address/0x44c8b753229006A8047A05b90379A7e92185E97C
+  address internal constant VOTING_MACHINE = 0x44c8b753229006A8047A05b90379A7e92185E97C;
 
   // https://polygonscan.com/address/0x401B5D0294E23637c18fcc38b1Bca814CDa2637C
   IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
@@ -32,11 +32,11 @@ library GovernanceV3Polygon {
   // https://polygonscan.com/address/0xDf7d0e6454DB638881302729F5ba99936EaAB233
   address internal constant EXECUTOR_LVL_1 = 0xDf7d0e6454DB638881302729F5ba99936EaAB233;
 
-  // https://polygonscan.com/address/0x59e6CAD5d7E7b9A26a45a1d1E74C7aF008170042
+  // https://polygonscan.com/address/0xd755F1CA351E989391a5bacDeC8F780dFD76f5d2
   IVotingStrategy internal constant VOTING_STRATEGY =
-    IVotingStrategy(0x59e6CAD5d7E7b9A26a45a1d1E74C7aF008170042);
+    IVotingStrategy(0xd755F1CA351E989391a5bacDeC8F780dFD76f5d2);
 
-  // https://polygonscan.com/address/0xf41193E25408F652AF878c47E4401A01B5E4B682
+  // https://polygonscan.com/address/0xE3D355a9E58D59Ad11F318deAED528f79A9C1e5a
   IDataWarehouse internal constant DATA_WAREHOUSE =
-    IDataWarehouse(0xf41193E25408F652AF878c47E4401A01B5E4B682);
+    IDataWarehouse(0xE3D355a9E58D59Ad11F318deAED528f79A9C1e5a);
 }
