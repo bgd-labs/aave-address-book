@@ -116,9 +116,7 @@ const knownErrors = {
     '0x0846C28Dd54DEA4Fd7Fb31bcc5EB81673D68c695': true, // etherscan issue - not detecting that it's verified
   },
   10: {
-    '0x61b620FAd391b53A2D0973b10a3Ed69558d5c66E': true, // etherscan issue
-    '0x464b808c2C7E04b07e860fDF7a91870620246148': true, // etherscan issue
-    '0x927CfF131fD5B43FC992D071929b2c095d6E4b70': true, // etherscan issue
+    '0x927CfF131fD5B43FC992D071929b2c095d6E4b70': true, // etherscan issue - not detecting that it's verified
   }
 };
 

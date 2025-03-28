@@ -2977,6 +2977,12 @@
     },
     "0x4684b645386525057526EB85854045914Fe389d6": {
       "name": "PoolExposureSteward"
+    },
+    "0x61b620FAd391b53A2D0973b10a3Ed69558d5c66E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x464b808c2C7E04b07e860fDF7a91870620246148": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "56": {
