@@ -247,8 +247,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x4228F8895C7dDA20227F6a5c6751b8Ebf19a6ba8
   address internal constant LINK_V_TOKEN = 0x4228F8895C7dDA20227F6a5c6751b8Ebf19a6ba8;
 
-  // https://etherscan.io/address/0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c
-  address internal constant LINK_ORACLE = 0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c;
+  // https://etherscan.io/address/0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183
+  address internal constant LINK_ORACLE = 0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant LINK_INTEREST_RATE_STRATEGY =
@@ -268,8 +268,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xBae535520Abd9f8C85E58929e0006A2c8B372F74
   address internal constant AAVE_V_TOKEN = 0xBae535520Abd9f8C85E58929e0006A2c8B372F74;
 
-  // https://etherscan.io/address/0x547a514d5e3769680Ce22B2361c10Ea13619e8a9
-  address internal constant AAVE_ORACLE = 0x547a514d5e3769680Ce22B2361c10Ea13619e8a9;
+  // https://etherscan.io/address/0xF02C1e2A3B77c1cacC72f72B44f7d0a4c62e4a85
+  address internal constant AAVE_ORACLE = 0xF02C1e2A3B77c1cacC72f72B44f7d0a4c62e4a85;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
@@ -817,8 +817,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xAC50890a80A2731eb1eA2e9B4F29569CeB06D960
   address internal constant tBTC_V_TOKEN = 0xAC50890a80A2731eb1eA2e9B4F29569CeB06D960;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
-  address internal constant tBTC_ORACLE = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
+  address internal constant tBTC_ORACLE = 0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant tBTC_INTEREST_RATE_STRATEGY =
@@ -892,8 +892,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x68aeB290C7727D899B47c56d1c96AEAC475cD0dD
   address internal constant LBTC_V_TOKEN = 0x68aeB290C7727D899B47c56d1c96AEAC475cD0dD;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
-  address internal constant LBTC_ORACLE = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
+  address internal constant LBTC_ORACLE = 0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant LBTC_INTEREST_RATE_STRATEGY =
