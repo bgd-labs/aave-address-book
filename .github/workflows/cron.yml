@@ -44,7 +44,7 @@ jobs:
         run: npm run generate:addresses
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@253935418100774e6d13aa1d877700be09f535f5 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
+        uses: peter-evans/create-pull-request@98106d3f2b65918a6591f9e155117b7219ff7e51 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
         with:
           author: Cache-bot <noreply@github.com>
           committer: Cache-bot <noreply@github.com>
