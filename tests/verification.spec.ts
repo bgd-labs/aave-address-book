@@ -1,11 +1,11 @@
-import { ChainId, ChainList } from '@bgd-labs/rpc-env';
-import { describe, expect, it } from 'vitest';
-import { flattenedAddresses, ListItem } from '../ui/src/utils/getAddresses';
+import {ChainId, ChainList} from '@bgd-labs/rpc-env';
+import {describe, expect, it} from 'vitest';
+import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
-import { writeFileSync } from 'fs';
-import { Hex, PublicClient, zeroAddress } from 'viem';
-import { getCode } from 'viem/actions';
-import { getClient } from '../scripts/clients';
+import {writeFileSync} from 'fs';
+import {Hex, PublicClient, zeroAddress} from 'viem';
+import {getCode} from 'viem/actions';
+import {getClient} from '../scripts/clients';
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
 
@@ -25,12 +25,12 @@ async function checkProxyVerification(item: ListItem, guid: string) {
   const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
-    const { status } = await request.json();
+    const {status} = await request.json();
     if (status === '1')
       console.log(
         'successfully verified proxy. Please rerun the script in a few minutes as you need to wait till etherscan prunes its cache.',
       );
-  } catch (e) { }
+  } catch (e) {}
 }
 
 async function verifyProxy(item: ListItem) {
@@ -50,7 +50,7 @@ async function verifyProxy(item: ListItem) {
       }),
     });
 
-    const { status, result } = await request.json();
+    const {status, result} = await request.json();
     await sleep(1000);
     if (status === '1') checkProxyVerification(item, result);
   } catch (e) {
@@ -72,7 +72,7 @@ async function checkVerified(item: ListItem) {
   const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
-    const { status, result } = await request.json();
+    const {status, result} = await request.json();
     if (status !== '1' || !result[0].ContractName) {
       // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
       // therefore we try to manually assign it
@@ -80,10 +80,10 @@ async function checkVerified(item: ListItem) {
         await verifyProxy(item);
       }
     }
-    return { status, result };
+    return {status, result};
   } catch (e) {
     console.error(e);
-    return { status: '0', result: e };
+    return {status: '0', result: e};
   }
 }
 
@@ -96,7 +96,6 @@ function getApiUrl(chainId: number) {
 const knownErrors = {
   1: {
     '0xD01ab9a6577E1D84F142e44D49380e23A340387d': true, // very old contracts we know will never be verified
-    '0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6': true, // etherscan issue - not detecting that it's verified
   },
   1101: {
     '0xF1c11BE0b4466728DDb7991A0Ac5265646ec9672': true, // very old contracts we know will never be verified
@@ -109,15 +108,7 @@ const knownErrors = {
   },
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
-    '0x1283C5015B1Fb5616FA3aCb0C18e6879a02869cB': true, // etherscan issue - not detecting that it's verified
-    '0xF089f77173A3009A98c45f49D547BF714A7B1e01': true, // etherscan issue - not detecting that it's verified
   },
-  146: {
-    '0x0846C28Dd54DEA4Fd7Fb31bcc5EB81673D68c695': true, // etherscan issue - not detecting that it's verified
-  },
-  10: {
-    '0x927CfF131fD5B43FC992D071929b2c095d6E4b70': true, // etherscan issue - not detecting that it's verified
-  }
 };
 
 describe(
@@ -130,7 +121,7 @@ describe(
           !ChainList[item.chainId].testnet &&
           !knownErrors[item.chainId]?.[item.value],
       );
-      const errors: { item: ListItem }[] = [];
+      const errors: {item: ListItem}[] = [];
       let newVerified = false;
       // unique set of addresses checked on this iteration
       // used to prevent double checking the same address
@@ -142,15 +133,15 @@ describe(
           if (checked.has(key)) continue;
           checked.add(key);
           const client = getClient(item.chainId) as PublicClient;
-          const hasCode = await getCode(client, { address: item.value as Hex });
+          const hasCode = await getCode(client, {address: item.value as Hex});
           if (hasCode) {
-            const { status, result } = (await checkVerified(item)) as {
+            const {status, result} = (await checkVerified(item)) as {
               status: string;
-              result: { ContractName: string }[];
+              result: {ContractName: string}[];
             };
             await sleep(300);
             if (status !== '1' || !result[0].ContractName) {
-              errors.push({ item });
+              errors.push({item});
               console.log(item.value, result);
             } else {
               newVerified = true;
@@ -170,5 +161,5 @@ describe(
       expect(errors).toMatchSnapshot();
     });
   },
-  { timeout: 120_000 },
+  {timeout: 120_000},
 );

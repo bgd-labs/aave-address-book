@@ -2486,6 +2486,18 @@
     },
     "0x5caF5a86f39073637Ac7c8A7b5290871de80cb9b": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xF02C1e2A3B77c1cacC72f72B44f7d0a4c62e4a85": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xb51EDdDD8c47856D81C8681EA71404Cec93E92c6": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A": {
+      "name": "EACAggregatorProxy"
     }
   },
   "10": {
@@ -2982,6 +2994,9 @@
       "name": "TransparentUpgradeableProxy"
     },
     "0x464b808c2C7E04b07e860fDF7a91870620246148": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x927CfF131fD5B43FC992D071929b2c095d6E4b70": {
       "name": "TransparentUpgradeableProxy"
     }
   },
@@ -4758,6 +4773,15 @@
     },
     "0x4A137d528444Cc0346320CFa5C80FFc68087D7F9": {
       "name": "PoolExposureSteward"
+    },
+    "0x0846C28Dd54DEA4Fd7Fb31bcc5EB81673D68c695": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x62aDD9C6B511085C67515ebB799b51c4cf2d786F": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "324": {
@@ -5453,6 +5477,12 @@
     },
     "0x7485FB1552BB107fFc923f41E548e8e3FFea5E45": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x1283C5015B1Fb5616FA3aCb0C18e6879a02869cB": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xF089f77173A3009A98c45f49D547BF714A7B1e01": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "8453": {
@@ -5902,6 +5932,9 @@
     },
     "0x4f1F3E32f20847a4c9F002882eB607aD750b6115": {
       "name": "PoolExposureSteward"
+    },
+    "0x729F75Aff28c726e32403e80cef2aFb518CFbfa7": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42161": {
