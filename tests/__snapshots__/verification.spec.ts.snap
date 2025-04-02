@@ -24,28 +24,6 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
-      "chainId": 146,
-      "path": [
-        "AaveV3Sonic",
-        "DUST_BIN",
-      ],
-      "value": "0x62aDD9C6B511085C67515ebB799b51c4cf2d786F",
-    },
-  },
-  {
-    "item": {
-      "chainId": 146,
-      "path": [
-        "AaveV3Sonic",
-        "ASSETS",
-        "wS",
-        "STATA_TOKEN",
-      ],
-      "value": "0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB",
-    },
-  },
-  {
-    "item": {
       "chainId": 42220,
       "path": [
         "MiscCelo",
