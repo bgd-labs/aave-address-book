@@ -4665,6 +4665,19 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x729F75Aff28c726e32403e80cef2aFb518CFbfa7",
+      "name": "Wrapped Aave Base EURC",
+      "decimals": 6,
+      "symbol": "waBasEURC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "underlyingAToken": "0x90DA57E0A6C0d166Bf15764E03b83745Dc90025B"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -7670,6 +7683,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 98 },
-  "timestamp": "2025-03-27T00:14:18.596Z"
+  "version": { "major": 3, "minor": 0, "patch": 99 },
+  "timestamp": "2025-04-02T00:14:39.617Z"
 }
