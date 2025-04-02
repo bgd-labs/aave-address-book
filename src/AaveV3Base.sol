@@ -382,6 +382,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
   address internal constant EURC_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0x729F75Aff28c726e32403e80cef2aFb518CFbfa7
+  address internal constant EURC_STATA_TOKEN = 0x729F75Aff28c726e32403e80cef2aFb518CFbfa7;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
