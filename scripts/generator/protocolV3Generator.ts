@@ -1,7 +1,9 @@
-import {AddressInfo, Addresses, EMode, PoolConfig, ReserveData} from '../configs/types';
+import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
+  formatCamelToSnakeCase,
   generateJsConstants,
+  generateRsConstants,
   generateJsObject,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
@@ -96,12 +98,28 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
       }).join('\n'),
     ),
   );
+  writeFileSync(
+    `./src/rs/src/${formatCamelToSnakeCase(name)}.rs`,
+    prefixWithGeneratedWarning(
+      'use crate::types::{AssetInfo, EModeConfig};\n use alloy_primitives::{address, Address};\n\n' +
+      generateRsConstants({
+        chainId: poolConfig.chainId,
+        addresses: {
+          ...poolAddresses,
+          ...additionalTokenInfo,
+          ...poolConfig.additionalAddresses,
+          CHAIN_ID: {value: poolConfig.chainId, type: 'uint256'},
+        },
+      }).join('\n'),
+    ),
+  );
 
   // generate assets library
   const assetsLibraryName = name + 'Assets';
   const assetsLibrary = generateAssetsLibrary(poolConfig.chainId, reservesData, assetsLibraryName);
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
   appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
+  appendFileSync(`./src/rs/src/${formatCamelToSnakeCase(name)}.rs`, assetsLibrary.rs);
 
   // generate emodes library
   try {
@@ -110,6 +128,7 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
     const eModesLibrary = generateEmodeLibrary(poolConfig.chainId, eModes, eModesLibraryName);
     appendFileSync(`./src/${name}.sol`, eModesLibrary.solidity);
     appendFileSync(`./src/ts/${name}.ts`, eModesLibrary.js);
+    appendFileSync(`./src/rs/src/${formatCamelToSnakeCase(name)}.rs`, eModesLibrary.rs);
   } catch (e) {
     // can fail due to pre 3.2 deployments
     console.log(e.message);
@@ -143,5 +162,6 @@ export async function generateProtocolV3Library(poolConfig: PoolConfig) {
     chainId: poolConfig.chainId,
     js: [`export * as ${name} from './${name}';`],
     solidity: [`import {${name}} from './${name}.sol';`],
+    rs: [`pub mod ${formatCamelToSnakeCase(name)};`],
   };
 }

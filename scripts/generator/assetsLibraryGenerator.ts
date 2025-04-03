@@ -1,6 +1,6 @@
 import {Hex, zeroAddress} from 'viem';
 import {ReserveData} from '../configs/types';
-import {generateSolidityConstants, wrapIntoSolidityLibrary} from './utils';
+import {generateSolidityConstants, wrapIntoSolidityLibrary, prefixWithRustAddress, prefixWithOptionalRustAddress} from './utils';
 
 /**
  * As symbols are used as variable name in Solidity and Javascript there are certain characters that are not allowed and should be replaced.
@@ -105,6 +105,21 @@ export function generateAssetsLibrary(
     null,
     2,
   )} as const;\n`;
+  const wrapToRustAssets = reservesData.map((reserve) => {
+    return `AssetInfo {
+      name: "${fixSymbol(reserve.symbol, reserve.UNDERLYING)}",
+      decimals: ${reserve.decimals},
+      id: ${reserve.id},
+      underlying: ${prefixWithRustAddress(reserve.UNDERLYING)},
+      a_token: ${prefixWithRustAddress(reserve.A_TOKEN)},
+      v_token: ${prefixWithRustAddress(reserve.V_TOKEN)},
+      interest_rate_strategy: ${prefixWithRustAddress(reserve.INTEREST_RATE_STRATEGY)},
+      oracle: ${prefixWithRustAddress(reserve.ORACLE)},
+      static_a_token: ${prefixWithOptionalRustAddress(reserve.STATIC_A_TOKEN)},
+      stata_token: ${prefixWithOptionalRustAddress(reserve.STATA_TOKEN)},
+    }`
+  });
+  let templateV3AssetsRust = `pub const ASSETS: &[AssetInfo] = &[ ${wrapToRustAssets} ];\n\n`;
   return {
     solidity: wrapIntoSolidityLibrary(
       formattedReservesData
@@ -113,5 +128,6 @@ export function generateAssetsLibrary(
       libraryName,
     ),
     js: templateV3Assets,
+    rs: templateV3AssetsRust
   };
 }

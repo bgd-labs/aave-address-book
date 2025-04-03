@@ -1,7 +1,7 @@
 import {Address, Client, getContract} from 'viem';
 import {IPool_ABI} from '../../../src/ts/abis/IPool';
 import {Addresses, EMode, ReserveData} from '../../configs/types';
-import {bitMapToIndexes, generateSolidityConstants, wrapIntoSolidityLibrary} from '../utils';
+import {bitMapToIndexes, generateSolidityConstants, wrapIntoSolidityLibrary, prefixWithRustAddress} from '../utils';
 
 /**
  * As eModes are stores in a mapping there is no easy way to fetch "all eModes"
@@ -51,7 +51,7 @@ export async function fetchEModes(
 
 export function generateEmodeLibrary(
   chainId: number,
-  eModes: Map<number, EMode>,
+  eModes: Map<number, EMode & {collateralAssets: Address[]; borrowableAssets: Address[]}>,
   libraryName: string,
 ) {
   const sorted = Array.from(eModes).sort(([keyA], [keyB]) => keyA - keyB);
@@ -62,6 +62,19 @@ export function generateEmodeLibrary(
     };
     return acc;
   }, {} as Addresses);
+  const wrapToRustEmodes = Array.from(eModes).map(([key, emode]) => {
+    return `EModeConfig {
+      id: ${key},
+      label: "${emode.label}",
+      collateral_bitmap: "${emode.collateralBitmap.toString()}",
+      collateral_assets: &[ ${emode.collateralAssets.map((asset) => prefixWithRustAddress(asset))} ],
+      borrowable_bitmap: "${emode.borrowableBitmap.toString()}",
+      borrowable_assets: &[ ${emode.borrowableAssets.map((asset) => prefixWithRustAddress(asset))} ],
+      ltv: ${emode.ltv},
+      liquidation_threshold: ${emode.liquidationThreshold},
+      liquidation_bonus: ${emode.liquidationBonus}
+    }`
+  }).join(', ');
   return {
     solidity: wrapIntoSolidityLibrary(
       generateSolidityConstants({
@@ -75,5 +88,6 @@ export function generateEmodeLibrary(
       (key, value) => (typeof value === 'bigint' ? value.toString() : value), // return everything else unchanged
       2,
     )} as const;\n`,
+    rs: `pub const E_MODES: &[EModeConfig] = &[ ${wrapToRustEmodes} ];`
   };
 }

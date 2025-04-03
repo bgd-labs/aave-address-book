@@ -53,6 +53,15 @@ export function addressInfoToSolidityLibraryConstant(
   )};\n`;
 }
 
+export function prefixWithRustAddress(address: string) {
+  return `address!("${address}")`;
+}
+
+export function prefixWithOptionalRustAddress(address) {
+  if (!address || address == zeroAddress) return 'None';
+  return `Some(address!("${address}"))`;
+}
+
 export function generateSolidityConstants({
   chainId,
   addresses,
@@ -84,6 +93,21 @@ export function addressToJsConstant(chainId: number, key: string, entry: Address
   return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';\n`;
 }
 
+export function addressToRsConstant(chainId: number, key: string, entry: AddressInfo) {
+  if (typeof entry === 'object') {
+    if (entry.type === 'uint256') {
+      return `pub const ${key}: u32 = ${entry.value};\n\n`;
+    }
+    const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);
+    return `// ${entry.type} ${blockExplorerLinkComment}\npub const ${key}:Address = ${prefixWithRustAddress(getAddress(
+      entry.value,
+    ))};\n`;
+  }
+
+  const blockExplorerLinkComment = getExplorerLink(chainId, entry);
+  return `// ${blockExplorerLinkComment}\npub const ${key}:Address = ${prefixWithRustAddress(getAddress(entry))};\n`;
+}
+
 export function generateJsConstants({chainId, addresses}: {chainId: number; addresses: Addresses}) {
   return Object.keys(addresses)
     .filter((key) =>
@@ -92,6 +116,16 @@ export function generateJsConstants({chainId, addresses}: {chainId: number; addr
         : addresses[key].value !== zeroAddress,
     )
     .map((key) => addressToJsConstant(chainId, key, addresses[key]));
+}
+
+export function generateRsConstants({chainId, addresses}: {chainId: number; addresses: Addresses}) {
+  return Object.keys(addresses)
+    .filter((key) =>
+      typeof addresses[key] !== 'object'
+        ? addresses[key] !== zeroAddress
+        : addresses[key].value !== zeroAddress,
+    )
+    .map((key) => addressToRsConstant(chainId, key, addresses[key]));
 }
 
 export function generateJsObject(object: any) {
@@ -128,4 +162,10 @@ export function bitMapToIndexes(bitmap: bigint) {
     bitmap = bitmap >> 1n;
   }
   return reserveIndexes;
+}
+
+export function formatCamelToSnakeCase(str: string): string {
+  if (str === 'AaveV3ZkSync') return 'aave_v3_zksync';
+  if (str === 'AaveV3EthereumEtherFi') return 'aave_v3_etherfi';
+  return str.replace(/([a-z0-9])([A-Z])/g, '$1_$2').toLowerCase();
 }

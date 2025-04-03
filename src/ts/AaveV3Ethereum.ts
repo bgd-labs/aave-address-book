@@ -486,6 +486,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A',
   },
+  eBTC: {
+    decimals: 8,
+    id: 38,
+    UNDERLYING: '0x657e8C867D8B37dCC18fA4Caead9C45EB088C642',
+    A_TOKEN: '0x5fefd7069a7D91d01f269DADE14526CCF3487810',
+    V_TOKEN: '0x47eD0509e64615c0d5C6d39AF1B38D02Bc9fE58f',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0x95a85D0d2f3115702d813549a80040387738A430',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -569,6 +578,16 @@ export const E_MODES = {
     borrowableAssets: ['0x18084fbA666a33d37592fA2633fD49a74DD93a88'],
     ltv: 8400,
     liquidationThreshold: 8600,
+    liquidationBonus: 10300,
+  },
+  '7': {
+    label: 'eBTC/WBTC',
+    collateralBitmap: '274877906944',
+    collateralAssets: ['0x657e8C867D8B37dCC18fA4Caead9C45EB088C642'],
+    borrowableBitmap: '4',
+    borrowableAssets: ['0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'],
+    ltv: 8300,
+    liquidationThreshold: 8500,
     liquidationBonus: 10300,
   },
 } as const;

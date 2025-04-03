@@ -204,6 +204,12 @@ async function main() {
   const jsExports = imports.map((f) => f.js).flat();
   writeFileSync(`./src/ts/AaveAddressBook.ts`, prefixWithGeneratedWarning(''));
   jsExports.map((jsExport) => appendFileSync('./src/ts/AaveAddressBook.ts', `${jsExport}\n`));
+
+  // TODO: change for all
+  const rsExports = [v3LibraryNames].flat().map((f) => f.rs).flat();
+  writeFileSync(`./src/rs/src/lib.rs`, prefixWithGeneratedWarning('pub mod types;\npub use types::{AssetInfo, EModeConfig};\n\n'));
+  rsExports.map((rsExports) => appendFileSync('./src/rs/src/lib.rs', `${rsExports}\n`));
+
   console.log('✅ Generation finished');
 }
 
