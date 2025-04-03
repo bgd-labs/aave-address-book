@@ -2498,6 +2498,18 @@
     },
     "0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A": {
       "name": "EACAggregatorProxy"
+    },
+    "0x657e8C867D8B37dCC18fA4Caead9C45EB088C642": {
+      "name": "BoringVault"
+    },
+    "0x5fefd7069a7D91d01f269DADE14526CCF3487810": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x47eD0509e64615c0d5C6d39AF1B38D02Bc9fE58f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x95a85D0d2f3115702d813549a80040387738A430": {
+      "name": "EBTCPriceCapAdapter"
     }
   },
   "10": {
@@ -6537,6 +6549,18 @@
     },
     "0xfB1D12D7C9c3Eb6b40fe0502801CdFCE816a0d18": {
       "name": "PoolExposureSteward"
+    },
+    "0x4186BFC76E2E237523CBC30FD220FE055156b41F": {
+      "name": "RSETH_OFT"
+    },
+    "0xb4B0cbcA864c2Eb0C0342608D92490C034aC1089": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x6b030Ff3FB9956B1B69f475B77aE0d3Cf2CC5aFa": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "42220": {
