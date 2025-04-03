@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.18.0](https://github.com/bgd-labs/aave-address-book/compare/v4.17.2...v4.18.0) (2025-04-03)
+
+
+### Features
+
+* add ebtc ([#906](https://github.com/bgd-labs/aave-address-book/issues/906)) ([c5e87bd](https://github.com/bgd-labs/aave-address-book/commit/c5e87bd40dc334e50619a078c01d32a4c5e27678))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#900](https://github.com/bgd-labs/aave-address-book/issues/900)) ([43aa988](https://github.com/bgd-labs/aave-address-book/commit/43aa988fe7ab0af82f92a639dab4f10f6c6619df))
+* **cache:** automated cache update - updated addresses ([#903](https://github.com/bgd-labs/aave-address-book/issues/903)) ([5c6c087](https://github.com/bgd-labs/aave-address-book/commit/5c6c087d0a379a76b22a49481e020a721005c297))
+
 ## [4.17.2](https://github.com/bgd-labs/aave-address-book/compare/v4.17.1...v4.17.2) (2025-03-28)
 
 
