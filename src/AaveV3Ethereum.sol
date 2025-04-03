@@ -898,6 +898,24 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant LBTC_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0x657e8C867D8B37dCC18fA4Caead9C45EB088C642
+  address internal constant eBTC_UNDERLYING = 0x657e8C867D8B37dCC18fA4Caead9C45EB088C642;
+
+  uint8 internal constant eBTC_DECIMALS = 8;
+
+  // https://etherscan.io/address/0x5fefd7069a7D91d01f269DADE14526CCF3487810
+  address internal constant eBTC_A_TOKEN = 0x5fefd7069a7D91d01f269DADE14526CCF3487810;
+
+  // https://etherscan.io/address/0x47eD0509e64615c0d5C6d39AF1B38D02Bc9fE58f
+  address internal constant eBTC_V_TOKEN = 0x47eD0509e64615c0d5C6d39AF1B38D02Bc9fE58f;
+
+  // https://etherscan.io/address/0x95a85D0d2f3115702d813549a80040387738A430
+  address internal constant eBTC_ORACLE = 0x95a85D0d2f3115702d813549a80040387738A430;
+
+  // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
+  address internal constant eBTC_INTEREST_RATE_STRATEGY =
+    0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 library AaveV3EthereumEModes {
   uint8 internal constant NONE = 0;
@@ -913,6 +931,8 @@ library AaveV3EthereumEModes {
   uint8 internal constant LBTC_CBBTC = 5;
 
   uint8 internal constant LBTC_TBTC = 6;
+
+  uint8 internal constant EBTC_WBTC = 7;
 }
 library AaveV3EthereumExternalLibraries {
   // https://etherscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770

@@ -300,6 +300,15 @@ export const ASSETS = {
     ORACLE: '0x8Ed37B72300683c0482A595bfa80fFb793874b15',
     STATA_TOKEN: '0x4ff50C17df0D1b788d021ACd85039810a1aA68A1',
   },
+  rsETH: {
+    decimals: 18,
+    id: 18,
+    UNDERLYING: '0x4186BFC76E2E237523CBC30FD220FE055156b41F',
+    A_TOKEN: '0x6b030Ff3FB9956B1B69f475B77aE0d3Cf2CC5aFa',
+    V_TOKEN: '0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE',
+    INTEREST_RATE_STRATEGY: '0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F',
+    ORACLE: '0xb4B0cbcA864c2Eb0C0342608D92490C034aC1089',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -364,6 +373,16 @@ export const E_MODES = {
     ltv: 7200,
     liquidationThreshold: 7500,
     liquidationBonus: 10750,
+  },
+  '5': {
+    label: 'rsETH wstETH',
+    collateralBitmap: '262144',
+    collateralAssets: ['0x4186BFC76E2E237523CBC30FD220FE055156b41F'],
+    borrowableBitmap: '256',
+    borrowableAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
+    ltv: 9250,
+    liquidationThreshold: 9450,
+    liquidationBonus: 10100,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;
