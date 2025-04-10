@@ -63,6 +63,69 @@ export const IUiPoolDataProvider_ABI = [
   },
   {
     type: 'function',
+    name: 'getEModes',
+    inputs: [
+      {
+        name: 'provider',
+        type: 'address',
+        internalType: 'contract IPoolAddressesProvider',
+      },
+    ],
+    outputs: [
+      {
+        name: '',
+        type: 'tuple[]',
+        internalType: 'struct IUiPoolDataProviderV3.Emode[]',
+        components: [
+          {
+            name: 'id',
+            type: 'uint8',
+            internalType: 'uint8',
+          },
+          {
+            name: 'eMode',
+            type: 'tuple',
+            internalType: 'struct DataTypes.EModeCategory',
+            components: [
+              {
+                name: 'ltv',
+                type: 'uint16',
+                internalType: 'uint16',
+              },
+              {
+                name: 'liquidationThreshold',
+                type: 'uint16',
+                internalType: 'uint16',
+              },
+              {
+                name: 'liquidationBonus',
+                type: 'uint16',
+                internalType: 'uint16',
+              },
+              {
+                name: 'collateralBitmap',
+                type: 'uint128',
+                internalType: 'uint128',
+              },
+              {
+                name: 'label',
+                type: 'string',
+                internalType: 'string',
+              },
+              {
+                name: 'borrowableBitmap',
+                type: 'uint128',
+                internalType: 'uint128',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    stateMutability: 'view'
+  },
+  {
+    type: 'function',
     name: 'getReservesData',
     inputs: [
       {
@@ -128,11 +191,6 @@ export const IUiPoolDataProvider_ABI = [
             internalType: 'bool',
           },
           {
-            name: 'stableBorrowRateEnabled',
-            type: 'bool',
-            internalType: 'bool',
-          },
-          {
             name: 'isActive',
             type: 'bool',
             internalType: 'bool',
@@ -163,22 +221,12 @@ export const IUiPoolDataProvider_ABI = [
             internalType: 'uint128',
           },
           {
-            name: 'stableBorrowRate',
-            type: 'uint128',
-            internalType: 'uint128',
-          },
-          {
             name: 'lastUpdateTimestamp',
             type: 'uint40',
             internalType: 'uint40',
           },
           {
             name: 'aTokenAddress',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'stableDebtTokenAddress',
             type: 'address',
             internalType: 'address',
           },
@@ -194,21 +242,6 @@ export const IUiPoolDataProvider_ABI = [
           },
           {
             name: 'availableLiquidity',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'totalPrincipalStableDebt',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'averageStableRate',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'stableDebtLastUpdateTimestamp',
             type: 'uint256',
             internalType: 'uint256',
           },
@@ -234,21 +267,6 @@ export const IUiPoolDataProvider_ABI = [
           },
           {
             name: 'variableRateSlope2',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'stableRateSlope1',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'stableRateSlope2',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'baseStableBorrowRate',
             type: 'uint256',
             internalType: 'uint256',
           },
@@ -303,11 +321,6 @@ export const IUiPoolDataProvider_ABI = [
             internalType: 'uint256',
           },
           {
-            name: 'eModeCategoryId',
-            type: 'uint8',
-            internalType: 'uint8',
-          },
-          {
             name: 'borrowCap',
             type: 'uint256',
             internalType: 'uint256',
@@ -318,34 +331,19 @@ export const IUiPoolDataProvider_ABI = [
             internalType: 'uint256',
           },
           {
-            name: 'eModeLtv',
-            type: 'uint16',
-            internalType: 'uint16',
-          },
-          {
-            name: 'eModeLiquidationThreshold',
-            type: 'uint16',
-            internalType: 'uint16',
-          },
-          {
-            name: 'eModeLiquidationBonus',
-            type: 'uint16',
-            internalType: 'uint16',
-          },
-          {
-            name: 'eModePriceSource',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'eModeLabel',
-            type: 'string',
-            internalType: 'string',
-          },
-          {
             name: 'borrowableInIsolation',
             type: 'bool',
             internalType: 'bool',
+          },
+          {
+            name: 'virtualAccActive',
+            type: 'bool',
+            internalType: 'bool',
+          },
+          {
+            name: 'virtualUnderlyingBalance',
+            type: 'uint128',
+            internalType: 'uint128',
           },
         ],
       },
@@ -435,22 +433,7 @@ export const IUiPoolDataProvider_ABI = [
             internalType: 'bool',
           },
           {
-            name: 'stableBorrowRate',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
             name: 'scaledVariableDebt',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'principalStableDebt',
-            type: 'uint256',
-            internalType: 'uint256',
-          },
-          {
-            name: 'stableBorrowLastUpdateTimestamp',
             type: 'uint256',
             internalType: 'uint256',
           },
