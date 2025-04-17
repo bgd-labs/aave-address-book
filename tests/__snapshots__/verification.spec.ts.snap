@@ -14,16 +14,6 @@ exports[`verification > should have all contracts verified except for the known 
   },
   {
     "item": {
-      "chainId": 324,
-      "path": [
-        "AaveV3ZkSync",
-        "DUST_BIN",
-      ],
-      "value": "0x452E8E84bF852513585f893931CBD9A409Cd3459",
-    },
-  },
-  {
-    "item": {
       "chainId": 42220,
       "path": [
         "MiscCelo",

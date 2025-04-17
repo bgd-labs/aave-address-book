@@ -5003,6 +5003,9 @@
     },
     "0x9172A80ed668D3097D45350ffF71F4421ff572e1": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x452E8E84bF852513585f893931CBD9A409Cd3459": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "1088": {
@@ -5495,6 +5498,9 @@
     },
     "0xF089f77173A3009A98c45f49D547BF714A7B1e01": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x3238FC1d642b60F41a35f62570237656C85F4744": {
+      "name": "RiskSteward"
     }
   },
   "8453": {
