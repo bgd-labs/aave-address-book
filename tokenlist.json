@@ -2997,6 +2997,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+      "name": "RLUSD",
+      "decimals": 18,
+      "symbol": "RLUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xFa82580c16A31D0c1bC632A36F82e83EfEF3Eec0",
+      "name": "Aave Ethereum RLUSD",
+      "decimals": 18,
+      "symbol": "aEthRLUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -7725,6 +7745,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 100 },
-  "timestamp": "2025-04-03T14:49:46.457Z"
+  "version": { "major": 3, "minor": 0, "patch": 101 },
+  "timestamp": "2025-04-21T20:57:47.687Z"
 }
