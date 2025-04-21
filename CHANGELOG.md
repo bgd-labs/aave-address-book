@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.18.1](https://github.com/bgd-labs/aave-address-book/compare/v4.18.0...v4.18.1) (2025-04-21)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#910](https://github.com/bgd-labs/aave-address-book/issues/910)) ([5a07142](https://github.com/bgd-labs/aave-address-book/commit/5a0714257cabe86aa0056a8ecd4e18c3dd75ec05))
+* **cache:** automated cache update - updated addresses ([#915](https://github.com/bgd-labs/aave-address-book/issues/915)) ([a42e127](https://github.com/bgd-labs/aave-address-book/commit/a42e127eccb901730560a6a5a2b78a39ebbd00c2))
+* mantle risk steward ([#913](https://github.com/bgd-labs/aave-address-book/issues/913)) ([49e7d15](https://github.com/bgd-labs/aave-address-book/commit/49e7d15760f6960ccf5dcc8edad12bd32799213a))
+
 ## [4.18.0](https://github.com/bgd-labs/aave-address-book/compare/v4.17.2...v4.18.0) (2025-04-03)
 
 
