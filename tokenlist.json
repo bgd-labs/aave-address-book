@@ -2472,6 +2472,20 @@
     },
     {
       "chainId": 1,
+      "address": "0x91ad1f5443cF356010D2171D6D26B11C309c4b16",
+      "name": "Wrapped Aave Ethereum RPL",
+      "decimals": 18,
+      "symbol": "waEthRPL",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statarpl.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xD33526068D116cE69F19A9ee46F0bd304F21A51f",
+        "underlyingAToken": "0xB76CF92076adBF1D9C39294FA8e7A67579FDe357"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x83F20F44975D03b1b09e64809B757c47f942BEeA",
       "name": "Savings Dai",
       "decimals": 18,
@@ -7745,6 +7759,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 101 },
-  "timestamp": "2025-04-21T20:57:47.687Z"
+  "version": { "major": 3, "minor": 0, "patch": 102 },
+  "timestamp": "2025-04-25T00:15:08.832Z"
 }
