@@ -581,6 +581,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x95EF7cb3494e65dA4926bA330dBf540a13afFD17
   address internal constant RPL_STATIC_A_TOKEN = 0x95EF7cb3494e65dA4926bA330dBf540a13afFD17;
 
+  // https://etherscan.io/address/0x91ad1f5443cF356010D2171D6D26B11C309c4b16
+  address internal constant RPL_STATA_TOKEN = 0x91ad1f5443cF356010D2171D6D26B11C309c4b16;
+
   // https://etherscan.io/address/0x83F20F44975D03b1b09e64809B757c47f942BEeA
   address internal constant sDAI_UNDERLYING = 0x83F20F44975D03b1b09e64809B757c47f942BEeA;
 
