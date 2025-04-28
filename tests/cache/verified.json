@@ -2510,6 +2510,27 @@
     },
     "0x95a85D0d2f3115702d813549a80040387738A430": {
       "name": "EBTCPriceCapAdapter"
+    },
+    "0x91ad1f5443cF356010D2171D6D26B11C309c4b16": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD": {
+      "name": "StablecoinProxy"
+    },
+    "0xFa82580c16A31D0c1bC632A36F82e83EfEF3Eec0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xBdFe7aD7976d5d7E0965ea83a81Ca1bCfF7e84a9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf0eaC18E908B34770FDEe46d069c846bDa866759": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A": {
+      "name": "EdgeRiskStewardEMode"
+    },
+    "0x83ab600cE8a61b43e1757b89C0589928f765c1C4": {
+      "name": "AaveStewardInjectorEMode"
     }
   },
   "10": {
@@ -5953,6 +5974,15 @@
     },
     "0x729F75Aff28c726e32403e80cef2aFb518CFbfa7": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xB892202d9Ce2C16C565A492a5168689b215Eb269": {
+      "name": "EdgeRiskStewardCaps"
+    },
+    "0x4f84A364B66Eb6280350da011829a6BD02B4712f": {
+      "name": "AaveStewardInjectorCaps"
+    },
+    "0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D": {
+      "name": "RiskOracle"
     }
   },
   "42161": {
@@ -6567,6 +6597,15 @@
     },
     "0x80cA0d8C38d2e2BcbaB66aA1648Bd1C7160500FE": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x085E34722e04567Df9E6d2c32e82fd74f3342e79": {
+      "name": "EdgeRiskStewardCaps"
+    },
+    "0x35d53dEB2F6f40Ea7af32B6F8BEd88eA966DF1D9": {
+      "name": "AaveStewardInjectorCaps"
+    },
+    "0x861eeAdB55E41f161F31Acb1BFD4c70E3a964Aed": {
+      "name": "RiskOracle"
     }
   },
   "42220": {
@@ -7539,6 +7578,15 @@
     },
     "0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x57218F3aB422A39115951c3Eb06881a7A719DfdD": {
+      "name": "EdgeRiskStewardCaps"
+    },
+    "0x54714FAc85b0bf627288CC3a186dE81A42f1D635": {
+      "name": "AaveStewardInjectorCaps"
+    },
+    "0x1273f29204fC102bD4620485B13cFE27a794fF32": {
+      "name": "RiskOracle"
     }
   },
   "59144": {

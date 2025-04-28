@@ -38,10 +38,10 @@ export async function check(addresses: Record<string, any>) {
       }
     }
 
-    if (addresses.EDGE_RISK_STEWARD) {
+    if (addresses.EDGE_RISK_STEWARD_RATES) {
       const edgeRiskStewardContract = getContract({
         abi: IRiskSteward_ABI,
-        address: addresses.EDGE_RISK_STEWARD,
+        address: addresses.EDGE_RISK_STEWARD_RATES,
         client,
       });
       const [CONFIG_ENGINE, POOL_DATA_PROVIDER, OWNER, RISK_COUNCIL] = await Promise.all([
@@ -56,7 +56,7 @@ export async function check(addresses: Record<string, any>) {
       // currently they reference an outdated pdp - which should be fine
       // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
       //   throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
-      if (RISK_COUNCIL !== addresses.EDGE_STEWARD_INJECTOR)
+      if (RISK_COUNCIL !== addresses.EDGE_INJECTOR_RATES)
         throw new Error(
           `SANITY_EDGE_RISK_STEWARDS: wrong EDGE_STEWARD_INJECTOR on ${client.chain?.name}`,
         );

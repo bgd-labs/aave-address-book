@@ -61,6 +61,15 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x14568979093FFF97aeBD73F58051a4f0e297b1eB
   address internal constant RISK_STEWARD = 0x14568979093FFF97aeBD73F58051a4f0e297b1eB;
 
+  // https://arbiscan.io/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
+  address internal constant EDGE_RISK_STEWARD_CAPS = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;
+
+  // https://arbiscan.io/address/0x35d53dEB2F6f40Ea7af32B6F8BEd88eA966DF1D9
+  address internal constant EDGE_INJECTOR_CAPS = 0x35d53dEB2F6f40Ea7af32B6F8BEd88eA966DF1D9;
+
+  // https://arbiscan.io/address/0x861eeAdB55E41f161F31Acb1BFD4c70E3a964Aed
+  address internal constant EDGE_RISK_ORACLE = 0x861eeAdB55E41f161F31Acb1BFD4c70E3a964Aed;
+
   // https://arbiscan.io/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
   address internal constant FREEZING_STEWARD = 0xe59470B3BE3293534603487E00A44C72f2CD466d;
 
