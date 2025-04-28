@@ -91,13 +91,20 @@ library AaveV3EthereumLido {
   address internal constant DEBT_SWAP_ADAPTER = 0xd1B2dec98A95B773C4909B5CD8FB455F467A527f;
 
   // https://etherscan.io/address/0x81aFd0F99c2Afa2f2DD7E387c2Ef9CD2a29b6E1A
-  address internal constant EDGE_RISK_STEWARD = 0x81aFd0F99c2Afa2f2DD7E387c2Ef9CD2a29b6E1A;
+  address internal constant EDGE_RISK_STEWARD_RATES = 0x81aFd0F99c2Afa2f2DD7E387c2Ef9CD2a29b6E1A;
 
   // https://etherscan.io/address/0x834a5aC6e9D05b92F599A031941262F761c34859
-  address internal constant EDGE_STEWARD_INJECTOR = 0x834a5aC6e9D05b92F599A031941262F761c34859;
+  address internal constant EDGE_INJECTOR_RATES = 0x834a5aC6e9D05b92F599A031941262F761c34859;
+
+  // https://etherscan.io/address/0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A
+  address internal constant EDGE_RISK_STEWARD_PENDLE_EMODE =
+    0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A;
+
+  // https://etherscan.io/address/0x83ab600cE8a61b43e1757b89C0589928f765c1C4
+  address internal constant EDGE_INJECTOR_PENDLE_EMODE = 0x83ab600cE8a61b43e1757b89C0589928f765c1C4;
 
   // https://etherscan.io/address/0x7ABB46C690C52E919687D19ebF89C81A6136C1F2
-  address internal constant RISK_ORACLE = 0x7ABB46C690C52E919687D19ebF89C81A6136C1F2;
+  address internal constant EDGE_RISK_ORACLE = 0x7ABB46C690C52E919687D19ebF89C81A6136C1F2;
 
   // https://etherscan.io/address/0x347C75d19718a05148687E13dca259aD016aB411
   address internal constant STATA_FACTORY = 0x347C75d19718a05148687E13dca259aD016aB411;
