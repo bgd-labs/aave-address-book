@@ -104,6 +104,9 @@ export const DUST_BIN = '0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b';
 // https://etherscan.io/address/0x7571F419F7Df2d0622C1A20154a0D4250B2265cC
 export const CLINIC_STEWARD = '0x7571F419F7Df2d0622C1A20154a0D4250B2265cC';
 
+// https://etherscan.io/address/0x84f2C90f2D66E700baA4CF3cbF66bE7D8f21Bd87
+export const SVR_STEWARD = '0x84f2C90f2D66E700baA4CF3cbF66bE7D8f21Bd87';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   wstETH: {
