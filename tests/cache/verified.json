@@ -2531,6 +2531,9 @@
     },
     "0x83ab600cE8a61b43e1757b89C0589928f765c1C4": {
       "name": "AaveStewardInjectorEMode"
+    },
+    "0x84f2C90f2D66E700baA4CF3cbF66bE7D8f21Bd87": {
+      "name": "SvrOracleSteward"
     }
   },
   "10": {
@@ -3030,6 +3033,33 @@
       "name": "TransparentUpgradeableProxy"
     },
     "0x927CfF131fD5B43FC992D071929b2c095d6E4b70": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xC438643b0eee8a314eEC53eb8A1Ee6467C88fc24": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0B590eF479c8e03825Ae779839aCb4583aCc15FD": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xEA9020a9e04C557478daD749A1aaD242b443042C": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x527604E4D87A7562ec653dbe2878D0DCAB7f1972": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0ec63A55a688E5Ba26afe8d9250114505E8b60a0": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x712Ef4D78f43ecAfa106ea003704a908C99D7f11": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xbaF95bB30CDab3d5b7a11B67EDeF5631bD62be86": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x413093E03d6aeE4F2F7e48D4b88881bf4932b249": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x8e6a81b9d541A0CeA090818B62C4B2DE7f2A2Cf7": {
       "name": "TransparentUpgradeableProxy"
     }
   },
