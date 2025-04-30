@@ -1467,9 +1467,9 @@
     {
       "chainId": 137,
       "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
-      "name": "Wrapped Matic",
+      "name": "Wrapped Polygon Ecosystem Token",
       "decimals": 18,
-      "symbol": "WMATIC",
+      "symbol": "WPOL",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wmatic.svg"
     },
@@ -3028,6 +3028,26 @@
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x50D2C7992b802Eef16c04FeADAB310f31866a545",
+      "name": "PT Ethereal eUSDE 29MAY2025",
+      "decimals": 18,
+      "symbol": "PT_eUSDE_29MAY2025",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x4B0821e768Ed9039a70eD1E80E15E76a5bE5Df5F",
+      "name": "Aave Ethereum PT_eUSDE_29MAY2025",
+      "decimals": 18,
+      "symbol": "aEthPT_eUSDE_29MAY2025",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x50D2C7992b802Eef16c04FeADAB310f31866a545"
       }
     },
     {
@@ -5796,7 +5816,7 @@
     {
       "chainId": 42161,
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
-      "name": "Tether USD",
+      "name": "USD₮0",
       "decimals": 6,
       "symbol": "USDT",
       "tags": ["underlying"]
@@ -7883,8 +7903,28 @@
         "underlying": "0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38",
         "underlyingAToken": "0x6C5E14A212c1C3e4Baf6f871ac9B1a969918c131"
       }
+    },
+    {
+      "chainId": 146,
+      "address": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955",
+      "name": "Beets Staked Sonic",
+      "decimals": 18,
+      "symbol": "stS",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 146,
+      "address": "0xeAa74D7F42267eB907092AF4Bc700f667EeD0B8B",
+      "name": "Aave Sonic stS",
+      "decimals": 18,
+      "symbol": "aSonstS",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955"
+      }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 103 },
-  "timestamp": "2025-04-28T19:02:48.673Z"
+  "version": { "major": 3, "minor": 0, "patch": 105 },
+  "timestamp": "2025-04-30T17:02:21.895Z"
 }

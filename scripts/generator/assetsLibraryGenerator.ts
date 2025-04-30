@@ -56,7 +56,7 @@ export function fixSymbol(symbol: string, _underlying: string) {
   }
   if (symbol === 'USD₮0' || symbol === 'fUSDT') return 'USDT';
   return symbol
-    .replace('-', '_')
+    .replaceAll('-', '_')
     .replace('.', '')
     .replace(' ', '_')
     .replace('1', 'ONE_')
