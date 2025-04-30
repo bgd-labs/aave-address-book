@@ -145,9 +145,28 @@ library AaveV3SonicAssets {
 
   // https://sonicscan.org/address/0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB
   address internal constant wS_STATA_TOKEN = 0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB;
+
+  // https://sonicscan.org/address/0xE5DA20F15420aD15DE0fa650600aFc998bbE3955
+  address internal constant stS_UNDERLYING = 0xE5DA20F15420aD15DE0fa650600aFc998bbE3955;
+
+  uint8 internal constant stS_DECIMALS = 18;
+
+  // https://sonicscan.org/address/0xeAa74D7F42267eB907092AF4Bc700f667EeD0B8B
+  address internal constant stS_A_TOKEN = 0xeAa74D7F42267eB907092AF4Bc700f667EeD0B8B;
+
+  // https://sonicscan.org/address/0x333cFdCB6457C409e4f0C88F3806252bEe5fe425
+  address internal constant stS_V_TOKEN = 0x333cFdCB6457C409e4f0C88F3806252bEe5fe425;
+
+  // https://sonicscan.org/address/0x5BA5D5213B47DFE020B1F8d6fB54Db3F74F9ea9a
+  address internal constant stS_ORACLE = 0x5BA5D5213B47DFE020B1F8d6fB54Db3F74F9ea9a;
+
+  // https://sonicscan.org/address/0xdFf435BCcf782f11187D3a4454d96702eD78e092
+  address internal constant stS_INTEREST_RATE_STRATEGY = 0xdFf435BCcf782f11187D3a4454d96702eD78e092;
 }
 library AaveV3SonicEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant STS_WS = 1;
 }
 library AaveV3SonicExternalLibraries {
   // https://sonicscan.org/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770

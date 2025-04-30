@@ -103,6 +103,26 @@ export const ASSETS = {
     ORACLE: '0xc76dFb89fF298145b417d221B2c747d84952e01d',
     STATA_TOKEN: '0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB',
   },
+  stS: {
+    decimals: 18,
+    id: 3,
+    UNDERLYING: '0xE5DA20F15420aD15DE0fa650600aFc998bbE3955',
+    A_TOKEN: '0xeAa74D7F42267eB907092AF4Bc700f667EeD0B8B',
+    V_TOKEN: '0x333cFdCB6457C409e4f0C88F3806252bEe5fe425',
+    INTEREST_RATE_STRATEGY: '0xdFf435BCcf782f11187D3a4454d96702eD78e092',
+    ORACLE: '0x5BA5D5213B47DFE020B1F8d6fB54Db3F74F9ea9a',
+  },
 } as const;
-export const E_MODES = {} as const;
+export const E_MODES = {
+  '1': {
+    label: 'stS/wS',
+    collateralBitmap: '8',
+    collateralAssets: ['0xE5DA20F15420aD15DE0fa650600aFc998bbE3955'],
+    borrowableBitmap: '4',
+    borrowableAssets: ['0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38'],
+    ltv: 8700,
+    liquidationThreshold: 9000,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {} as const;
