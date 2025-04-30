@@ -103,6 +103,13 @@ export type ReserveData = {
   STATA_TOKEN?: Hex;
 };
 
+export type UmbrellaStakeData = {
+  STAKE_TOKEN: Hex;
+  UNDERLYING: Hex;
+  symbol: string;
+  decimals: number;
+};
+
 export type EMode = {
   label: string;
   ltv: number;
@@ -133,4 +140,15 @@ export interface GhoAddresses<T extends Record<string, AddressInfo> = {}> {
   name: string;
   chainId: number;
   addresses: T;
+}
+
+export interface UmbrellaConfig {
+  name: string;
+  chainId: number;
+  UMBRELLA: Hex;
+  additionalAddresses: {
+    UMBRELLA_BATCH_HELPER?: Hex;
+    UMBRELLA_CONFIG_ENGINE?: Hex;
+    DATA_AGGREGATION_HELPER?: Hex;
+  };
 }
