@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.19.0](https://github.com/bgd-labs/aave-address-book/compare/v4.18.1...v4.19.0) (2025-04-30)
+
+
+### Features
+
+* add injector addresses ([#921](https://github.com/bgd-labs/aave-address-book/issues/921)) ([d9194b2](https://github.com/bgd-labs/aave-address-book/commit/d9194b289bb18af4ec22aef3fbb7734e2f025544))
+* lido svr ([#923](https://github.com/bgd-labs/aave-address-book/issues/923)) ([94b7c13](https://github.com/bgd-labs/aave-address-book/commit/94b7c139a8a8e59f94108a864586e2368bf54447))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#916](https://github.com/bgd-labs/aave-address-book/issues/916)) ([e632249](https://github.com/bgd-labs/aave-address-book/commit/e6322499249eeb36a0ddfe3d81da430cc45ef287))
+* **cache:** automated cache update - updated addresses ([#922](https://github.com/bgd-labs/aave-address-book/issues/922)) ([df11c38](https://github.com/bgd-labs/aave-address-book/commit/df11c3892198a024508fafd090214908c5b64014))
+* pt symbol ([#925](https://github.com/bgd-labs/aave-address-book/issues/925)) ([541fdb8](https://github.com/bgd-labs/aave-address-book/commit/541fdb87ce4b0b9fae16e1a09a7566beae54252d))
+
 ## [4.18.1](https://github.com/bgd-labs/aave-address-book/compare/v4.18.0...v4.18.1) (2025-04-21)
 
 
