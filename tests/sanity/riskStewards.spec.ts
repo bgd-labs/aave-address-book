@@ -13,9 +13,8 @@ export async function check(addresses: Record<string, any>) {
       address: addresses.RISK_STEWARD,
       client,
     });
-    const [CONFIG_ENGINE, POOL_DATA_PROVIDER, OWNER] = await Promise.all([
+    const [CONFIG_ENGINE, OWNER] = await Promise.all([
       riskStewardContract.read.CONFIG_ENGINE(),
-      riskStewardContract.read.POOL_DATA_PROVIDER(),
       riskStewardContract.read.owner(),
     ]);
     if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
