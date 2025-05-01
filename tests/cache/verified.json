@@ -2546,6 +2546,9 @@
     },
     "0x5292AB3292D076271f853Ed8e05e61cc02F0A2C6": {
       "name": "PendlePriceCapAdapter"
+    },
+    "0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4": {
+      "name": "RiskSteward"
     }
   },
   "10": {
