@@ -202,6 +202,7 @@ async function main() {
     smImports,
     tokenListImports,
     ghoAddresses,
+    umbrellaAddresses
   ].flat();
 
   const jsExports = imports.map((f) => f.js).flat();

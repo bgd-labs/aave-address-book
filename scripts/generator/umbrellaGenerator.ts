@@ -1,13 +1,13 @@
 import {Client, getContract} from 'viem';
-import {writeFileSync} from 'fs';
+import {appendFileSync, writeFileSync} from 'fs';
 import {
   generateJsConstants,
-  generateJsObject,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from './utils';
+import {generateUmbrellaStakeAssetsLibrary} from './assetsLibraryGenerator';
 import {bytes32toAddress, getImplementationStorageSlot} from './utils';
 import {AddressInfo, UmbrellaConfig, UmbrellaStakeData} from '../configs/types';
 import {getClient} from '../clients';
@@ -23,23 +23,6 @@ export interface UmbrellaAddresses {
   UMBRELLA_CONFIG_ENGINE?: AddressInfo;
   DATA_AGGREGATION_HELPER?: AddressInfo;
   externalLibraries: null | Record<string, AddressInfo>;
-}
-
-function generateExternalLibraries(
-  chainId: number,
-  libraries: Record<string, AddressInfo>,
-  libraryName: string,
-) {
-  return {
-    solidity: wrapIntoSolidityLibrary(
-      generateSolidityConstants({
-        chainId,
-        addresses: libraries,
-      }),
-      libraryName,
-    ),
-    js: `export const EXTERNAL_LIBRARIES = ${generateJsObject({addresses: libraries})} as const;\n`,
-  };
 }
 
 async function fetchUmbrellaStakeTokens(client: Client, umbrellaConfig: UmbrellaConfig) {
@@ -142,12 +125,11 @@ export async function generateUmbrellaLibrary(umbrellaConfig: UmbrellaConfig) {
     ),
   );
 
-  // TODO: add
   // generate umbrella stake assets library
-  // const assetsLibraryName = name + 'Assets';
-  // const assetsLibrary = generateAssetsLibrary(umbrellaConfig.chainId, umbrellaStakeTokens, assetsLibraryName);
-  // appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
-  // appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
+  const assetsLibraryName = name + 'Assets';
+  const assetsLibrary = generateUmbrellaStakeAssetsLibrary(umbrellaConfig.chainId, umbrellaStakeTokens, assetsLibraryName);
+  appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
+  appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
 
   return {
     umbrella: umbrellaConfig.UMBRELLA,

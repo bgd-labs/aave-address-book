@@ -1,5 +1,5 @@
 import {Hex, zeroAddress} from 'viem';
-import {ReserveData} from '../configs/types';
+import {ReserveData, UmbrellaStakeData} from '../configs/types';
 import {generateSolidityConstants, wrapIntoSolidityLibrary} from './utils';
 
 /**
@@ -113,5 +113,45 @@ export function generateAssetsLibrary(
       libraryName,
     ),
     js: templateV3Assets,
+  };
+}
+
+export function generateUmbrellaStakeAssetsLibrary(
+  chainId: number,
+  umbrellaStakeData: UmbrellaStakeData[],
+  libraryName: string,
+) {
+  const formattedStakeData = umbrellaStakeData.map(({symbol: _symbol, ...rest}) => {
+    const symbol = fixSymbol(_symbol, rest.UNDERLYING);
+    const addresses = {
+      [`${symbol}`]: rest.STAKE_TOKEN,
+      [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
+    };
+    return addresses;
+  });
+
+  const innerObject = umbrellaStakeData.reduce(
+    (acc, {symbol: _symbol, ...rest}) => {
+      const symbol = fixSymbol(_symbol, rest.UNDERLYING);
+      acc[symbol] = rest;
+      return acc;
+    },
+    {} as {[address: string]: {[key: string]: Hex | number}},
+  );
+
+  let templateStakeAssets = `export const UMBRELLA_STAKE_ASSETS = ${JSON.stringify(
+    innerObject,
+    null,
+    2,
+  )} as const;\n`;
+
+  return {
+    solidity: wrapIntoSolidityLibrary(
+      formattedStakeData
+        .map((addresses) => generateSolidityConstants({chainId, addresses}))
+        .flat(),
+      libraryName,
+    ),
+    js: templateStakeAssets,
   };
 }

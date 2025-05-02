@@ -146,7 +146,7 @@ export interface UmbrellaConfig {
   name: string;
   chainId: number;
   UMBRELLA: Hex;
-  additionalAddresses: {
+  additionalAddresses?: {
     UMBRELLA_BATCH_HELPER?: Hex;
     UMBRELLA_CONFIG_ENGINE?: Hex;
     DATA_AGGREGATION_HELPER?: Hex;

@@ -27,3 +27,4 @@ library UmbrellaEthereum {
   // https://etherscan.io/address/0xAeB694261D4A36A060974044fB1f2d15CFB7851b
   address internal constant DATA_AGGREGATION_HELPER = 0xAeB694261D4A36A060974044fB1f2d15CFB7851b;
 }
+library UmbrellaEthereumAssets {}
