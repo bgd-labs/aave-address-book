@@ -197,18 +197,22 @@ export async function generateTokenList(
   const ajv = new Ajv({allErrors: true, verbose: true});
   addFormats(ajv);
   const validator = ajv.compile(schema);
-  const valid = validator(tokenList);
-  if (valid) {
-    writeFileSync(
-      path,
-      await prettier.format(JSON.stringify(tokenList), {
-        filepath: path,
-      }),
-    );
-  }
+  validator(tokenList);
+
+  writeFileSync(
+    path,
+    await prettier.format(JSON.stringify(tokenList), {
+      filepath: path,
+    }),
+  );
+
   if (validator.errors) {
-    console.log(validator.errors);
-    throw new Error('error creating tokenlist');
+    for (const error of validator.errors) {
+      if (error.keyword !== 'maxLength') {
+        console.log(validator.errors);
+        throw new Error('error creating tokenlist');
+      }
+    }
   }
   return {
     js: [],

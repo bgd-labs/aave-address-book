@@ -2534,6 +2534,21 @@
     },
     "0x84f2C90f2D66E700baA4CF3cbF66bE7D8f21Bd87": {
       "name": "SvrOracleSteward"
+    },
+    "0x50D2C7992b802Eef16c04FeADAB310f31866a545": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x4B0821e768Ed9039a70eD1E80E15E76a5bE5Df5F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3c20fbFD32243Dd9899301C84bCe17413EeE0A0C": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5292AB3292D076271f853Ed8e05e61cc02F0A2C6": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4": {
+      "name": "RiskSteward"
     }
   },
   "10": {
@@ -4845,6 +4860,18 @@
     },
     "0x18B7B8695165290f2767BC63c36D3dFEa4C0F9bB": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955": {
+      "name": "ERC1967Proxy"
+    },
+    "0xeAa74D7F42267eB907092AF4Bc700f667EeD0B8B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x333cFdCB6457C409e4f0C88F3806252bEe5fe425": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5BA5D5213B47DFE020B1F8d6fB54Db3F74F9ea9a": {
+      "name": "StSPriceCapAdapter"
     }
   },
   "324": {
