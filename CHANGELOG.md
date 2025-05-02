@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.19.1](https://github.com/bgd-labs/aave-address-book/compare/v4.19.0...v4.19.1) (2025-05-01)
+
+
+### Bug Fixes
+
+* update steward address ([#926](https://github.com/bgd-labs/aave-address-book/issues/926)) ([0b25ffc](https://github.com/bgd-labs/aave-address-book/commit/0b25ffc4d534c9565f08559a3872d65c46dada1d))
+
 ## [4.19.0](https://github.com/bgd-labs/aave-address-book/compare/v4.18.1...v4.19.0) (2025-04-30)
 
 
