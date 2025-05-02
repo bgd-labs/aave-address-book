@@ -80,7 +80,7 @@
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
     "@bgd-labs/react-web3-icons": "^1.15.0",
-    "@bgd-labs/rpc-env": "^2.3.2",
+    "@bgd-labs/toolbox": "^0.0.13",
     "@types/node": "^22.4.1",
     "@uniswap/token-lists": "^1.0.0-beta.33",
     "ajv": "^8.12.0",
@@ -94,11 +94,11 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "viem": "^2.23.5",
-    "vitest": "^2.1.8"
+    "vitest": "^3.1.2"
   },
   "packageManager": "^npm@10.0.0",
   "overrides": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.3"
   }
 }

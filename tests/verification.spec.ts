@@ -1,4 +1,4 @@
-import {ChainId, ChainList} from '@bgd-labs/rpc-env';
+import {ChainId, ChainList} from '@bgd-labs/toolbox';
 import {describe, expect, it} from 'vitest';
 import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';

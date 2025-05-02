@@ -1,7 +1,7 @@
 import {Client, Hex, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
 import {getStorageAt} from 'viem/actions';
-import {ChainList} from '@bgd-labs/rpc-env';
+import {ChainList} from '@bgd-labs/toolbox';
 
 function getExplorerLink(chainId: number, address: Hex) {
   const chain = ChainList[chainId];
