@@ -2549,6 +2549,18 @@
     },
     "0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4": {
       "name": "RiskSteward"
+    },
+    "0x3b3fB9C57858EF816833dC91565EFcd85D96f634": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xDE6eF6CB4aBd3A473ffC2942eEf5D84536F8E864": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8C6FeaF5d58BA1A6541F9c4aF685f62bFCBaC3b1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x759B9B72700A129CD7AD8e53F9c99cb48Fd57105": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "10": {
@@ -6821,6 +6833,12 @@
     },
     "0x0568fD19986748cEfF3301e55c0eb1E729E0Ab7e": {
       "name": "EACAggregatorProxy"
+    },
+    "0xba3ae0F0A78579a5e8C4188dcde60DcCc0Dd4Fab": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x5264B1F45616dB619Bb3c8DCeBD86fB33FA0e53F": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "43113": {
