@@ -37,7 +37,6 @@ export function generateChainlink() {
         acc[`SVR_` + feed.name] = (feed as any).secondaryProxyAddress;
       return acc;
     }, {});
-    console.log(addresses);
 
     let solidityLibrary = wrapIntoSolidityLibrary(
       generateSolidityConstants({
