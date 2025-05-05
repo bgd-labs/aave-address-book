@@ -60,7 +60,6 @@ export function fixSymbol(symbol: string, _underlying: string) {
     .replaceAll('-', '_')
     .replace('.', '')
     .replace(' ', '_')
-    // .replace('1', 'ONE_')
     .replace('USD₮0', 'USDT')
     .replace('USD₮', 'USDT');
 }
