@@ -26,32 +26,32 @@ library UmbrellaBaseSepolia {
 }
 library UmbrellaBaseSepoliaAssets {
   // https://sepolia.basescan.org/address/0xD15e98f7AD53954fc96A7904738Eb1Ed1f6F0422
-  address internal constant stkwaBasSepUSDCVONE_ = 0xD15e98f7AD53954fc96A7904738Eb1Ed1f6F0422;
+  address internal constant stkwaBasSepUSDCV1 = 0xD15e98f7AD53954fc96A7904738Eb1Ed1f6F0422;
 
-  uint8 internal constant stkwaBasSepUSDCVONE__DECIMALS = 6;
+  uint8 internal constant stkwaBasSepUSDCV1_DECIMALS = 6;
 
   // https://sepolia.basescan.org/address/0x9287a4e4DDb8715862D5c94E6f3108E1E9A83321
-  address internal constant stkwaBasSepUSDTVONE_ = 0x9287a4e4DDb8715862D5c94E6f3108E1E9A83321;
+  address internal constant stkwaBasSepUSDTV1 = 0x9287a4e4DDb8715862D5c94E6f3108E1E9A83321;
 
-  uint8 internal constant stkwaBasSepUSDTVONE__DECIMALS = 6;
+  uint8 internal constant stkwaBasSepUSDTV1_DECIMALS = 6;
 
   // https://sepolia.basescan.org/address/0xf9a03b111e22180172F5DF879ac3c5d19BA75975
-  address internal constant stkwaBasSepWBTCVONE_ = 0xf9a03b111e22180172F5DF879ac3c5d19BA75975;
+  address internal constant stkwaBasSepWBTCV1 = 0xf9a03b111e22180172F5DF879ac3c5d19BA75975;
 
-  uint8 internal constant stkwaBasSepWBTCVONE__DECIMALS = 8;
+  uint8 internal constant stkwaBasSepWBTCV1_DECIMALS = 8;
 
   // https://sepolia.basescan.org/address/0x36edA587e02e897Db071000ac37606B2767d68aa
-  address internal constant stkwaBasSepcbETHVONE_ = 0x36edA587e02e897Db071000ac37606B2767d68aa;
+  address internal constant stkwaBasSepcbETHV1 = 0x36edA587e02e897Db071000ac37606B2767d68aa;
 
-  uint8 internal constant stkwaBasSepcbETHVONE__DECIMALS = 18;
+  uint8 internal constant stkwaBasSepcbETHV1_DECIMALS = 18;
 
   // https://sepolia.basescan.org/address/0x16C2230c3B1116Acdf3dE7202893cb5f0fBde6E6
-  address internal constant stkwaBasSepLINKVONE_ = 0x16C2230c3B1116Acdf3dE7202893cb5f0fBde6E6;
+  address internal constant stkwaBasSepLINKV1 = 0x16C2230c3B1116Acdf3dE7202893cb5f0fBde6E6;
 
-  uint8 internal constant stkwaBasSepLINKVONE__DECIMALS = 18;
+  uint8 internal constant stkwaBasSepLINKV1_DECIMALS = 18;
 
   // https://sepolia.basescan.org/address/0xfD055B11563b80648091d0F69704dD647714e134
-  address internal constant stkWETHVONE_ = 0xfD055B11563b80648091d0F69704dD647714e134;
+  address internal constant stkWETHV1 = 0xfD055B11563b80648091d0F69704dD647714e134;
 
-  uint8 internal constant stkWETHVONE__DECIMALS = 18;
+  uint8 internal constant stkWETHV1_DECIMALS = 18;
 }
