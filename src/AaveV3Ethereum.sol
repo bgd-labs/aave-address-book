@@ -55,8 +55,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778
   address internal constant CAPS_PLUS_RISK_STEWARD = 0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778;
 
-  // https://etherscan.io/address/0x7C7143f4bE189928A6a98D8686c5e84c893c59c7
-  address internal constant RISK_STEWARD = 0x7C7143f4bE189928A6a98D8686c5e84c893c59c7;
+  // https://etherscan.io/address/0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4
+  address internal constant RISK_STEWARD = 0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4;
 
   // https://etherscan.io/address/0x2eE68ACb6A1319de1b49DC139894644E424fefD6
   address internal constant FREEZING_STEWARD = 0x2eE68ACb6A1319de1b49DC139894644E424fefD6;
@@ -956,6 +956,25 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant PT_eUSDE_29MAY2025_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0x3b3fB9C57858EF816833dC91565EFcd85D96f634
+  address internal constant PT_sUSDE_31JUL2025_UNDERLYING =
+    0x3b3fB9C57858EF816833dC91565EFcd85D96f634;
+
+  uint8 internal constant PT_sUSDE_31JUL2025_DECIMALS = 18;
+
+  // https://etherscan.io/address/0xDE6eF6CB4aBd3A473ffC2942eEf5D84536F8E864
+  address internal constant PT_sUSDE_31JUL2025_A_TOKEN = 0xDE6eF6CB4aBd3A473ffC2942eEf5D84536F8E864;
+
+  // https://etherscan.io/address/0x8C6FeaF5d58BA1A6541F9c4aF685f62bFCBaC3b1
+  address internal constant PT_sUSDE_31JUL2025_V_TOKEN = 0x8C6FeaF5d58BA1A6541F9c4aF685f62bFCBaC3b1;
+
+  // https://etherscan.io/address/0x759B9B72700A129CD7AD8e53F9c99cb48Fd57105
+  address internal constant PT_sUSDE_31JUL2025_ORACLE = 0x759B9B72700A129CD7AD8e53F9c99cb48Fd57105;
+
+  // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
+  address internal constant PT_sUSDE_31JUL2025_INTEREST_RATE_STRATEGY =
+    0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 library AaveV3EthereumEModes {
   uint8 internal constant NONE = 0;
@@ -973,6 +992,8 @@ library AaveV3EthereumEModes {
   uint8 internal constant LBTC_TBTC = 6;
 
   uint8 internal constant EBTC_WBTC = 7;
+
+  uint8 internal constant PT_SUSDE_STABLECOINS_JUL_2025 = 8;
 
   uint8 internal constant PT_EUSDE_STABLECOINS_MAY_2025 = 9;
 }

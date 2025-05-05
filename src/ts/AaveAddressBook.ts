@@ -15,6 +15,7 @@ export * as GovernanceV3Celo from './GovernanceV3Celo';
 export * as GovernanceV3Linea from './GovernanceV3Linea';
 export * as GovernanceV3Mantle from './GovernanceV3Mantle';
 export * as GovernanceV3Sonic from './GovernanceV3Sonic';
+export * as GovernanceV3Soneium from './GovernanceV3Soneium';
 export * as AaveV1 from './AaveV1';
 export * as AaveV2EthereumAMM from './AaveV2EthereumAMM';
 export * as AaveV2EthereumArc from './AaveV2EthereumArc';

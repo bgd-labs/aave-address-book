@@ -55,11 +55,11 @@ export function fixSymbol(symbol: string, _underlying: string) {
       return 'USDCn';
   }
   if (symbol === 'USD₮0' || symbol === 'fUSDT') return 'USDT';
+  if (symbol === '1INCH') return 'ONE_INCH';
   return symbol
     .replaceAll('-', '_')
     .replace('.', '')
     .replace(' ', '_')
-    .replace('1', 'ONE_')
     .replace('USD₮0', 'USDT')
     .replace('USD₮', 'USDT');
 }

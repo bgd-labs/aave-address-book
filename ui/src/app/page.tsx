@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { flattenedAddresses } from '../utils/getAddresses';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
-import { ChainList } from '@bgd-labs/rpc-env';
+import { ChainList } from '@bgd-labs/toolbox';
 import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
 import logo from '@/assets/logo.svg';

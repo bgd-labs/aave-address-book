@@ -1,5 +1,5 @@
 import {Hex} from 'viem';
-import {ChainId} from '@bgd-labs/rpc-env';
+import {ChainId} from '@bgd-labs/toolbox';
 import {NetworkAddresses} from '../types';
 
 export const arbitrumAddresses: NetworkAddresses<{
