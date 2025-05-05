@@ -6860,6 +6860,12 @@
     },
     "0x0568fD19986748cEfF3301e55c0eb1E729E0Ab7e": {
       "name": "EACAggregatorProxy"
+    },
+    "0xba3ae0F0A78579a5e8C4188dcde60DcCc0Dd4Fab": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x5264B1F45616dB619Bb3c8DCeBD86fB33FA0e53F": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "43113": {

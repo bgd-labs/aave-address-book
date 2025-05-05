@@ -11,7 +11,7 @@ import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {fixSymbol} from './assetsLibraryGenerator';
 import {getSymbolUri, VARIANT} from './svgUtils';
 import {getClient} from '../clients';
-import {ChainList} from '@bgd-labs/rpc-env';
+import {ChainList} from '@bgd-labs/toolbox';
 
 const TAGS = {
   underlying: 'underlying',

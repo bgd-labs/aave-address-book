@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.19.3](https://github.com/bgd-labs/aave-address-book/compare/v4.19.2...v4.19.3) (2025-05-05)
+
+
+### Bug Fixes
+
+* add chainlink feeds to address book ([#929](https://github.com/bgd-labs/aave-address-book/issues/929)) ([2e80fc7](https://github.com/bgd-labs/aave-address-book/commit/2e80fc7b947837e82706820ac8bd227a507eaaf2))
+
 ## [4.19.2](https://github.com/bgd-labs/aave-address-book/compare/v4.19.1...v4.19.2) (2025-05-05)
 
 

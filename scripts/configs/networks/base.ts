@@ -1,5 +1,5 @@
 import {Hex} from 'viem';
-import {ChainId} from '@bgd-labs/rpc-env';
+import {ChainId} from '@bgd-labs/toolbox';
 import {NetworkAddresses} from '../types';
 
 export const baseAddresses: NetworkAddresses<{
@@ -28,6 +28,6 @@ export const baseSepoliaAddresses: NetworkAddresses = {
     TRANSPARENT_PROXY_FACTORY: '0x95F99D1695c866FEb16657cCA8E91437a50D2a5e',
     PROXY_ADMIN: '0x6CBc6928Ad317F60E8880C43479850F2190F2a0B',
     // GHO_TOKEN: '0x7CFa3f3d1cded0Da930881c609D4Dbf0012c14Bb',
-    FAUCET: '0xd9145b5f45ad4519c7accd6e0a4a82e83bb8a6dc'
+    FAUCET: '0xd9145b5f45ad4519c7accd6e0a4a82e83bb8a6dc',
   },
 };
