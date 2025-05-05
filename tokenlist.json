@@ -3057,6 +3057,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x3b3fB9C57858EF816833dC91565EFcd85D96f634",
+      "name": "PT Ethena sUSDE 31JUL2025",
+      "decimals": 18,
+      "symbol": "PT_sUSDE_3ONE_JUL2025",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0xDE6eF6CB4aBd3A473ffC2942eEf5D84536F8E864",
+      "name": "Aave Ethereum PT_sUSDE_31JUL2025",
+      "decimals": 18,
+      "symbol": "aEthPT_sUSDE_3ONE_JUL2025",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x3b3fB9C57858EF816833dC91565EFcd85D96f634"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -7731,6 +7753,20 @@
     },
     {
       "chainId": 42220,
+      "address": "0xba3ae0F0A78579a5e8C4188dcde60DcCc0Dd4Fab",
+      "name": "Wrapped Aave Celo USDC",
+      "decimals": 6,
+      "symbol": "waCelUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
+        "underlyingAToken": "0xFF8309b9e99bfd2D4021bc71a362aBD93dBd4785"
+      }
+    },
+    {
+      "chainId": 42220,
       "address": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
       "name": "Tether USD",
       "decimals": 6,
@@ -7749,6 +7785,20 @@
       "extensions": {
         "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
         "underlying": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e"
+      }
+    },
+    {
+      "chainId": 42220,
+      "address": "0x5264B1F45616dB619Bb3c8DCeBD86fB33FA0e53F",
+      "name": "Wrapped Aave Celo USDT",
+      "decimals": 6,
+      "symbol": "waCelUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
+        "underlyingAToken": "0xDeE98402A302e4D707fB9bf2bac66fAEEc31e8Df"
       }
     },
     {
@@ -7946,6 +7996,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 106 },
-  "timestamp": "2025-05-02T19:00:06.745Z"
+  "version": { "major": 3, "minor": 0, "patch": 107 },
+  "timestamp": "2025-05-05T10:39:20.449Z"
 }
