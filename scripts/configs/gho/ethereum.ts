@@ -1,4 +1,4 @@
-import {ChainId} from '@bgd-labs/rpc-env';
+import {ChainId} from '@bgd-labs/toolbox';
 import {GhoAddresses} from '../types';
 
 export const ghoEthereum: GhoAddresses = {

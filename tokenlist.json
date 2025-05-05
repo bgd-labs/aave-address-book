@@ -2996,7 +2996,8 @@
       "name": "ether.fi BTC",
       "decimals": 8,
       "symbol": "eBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ebtc.svg"
     },
     {
       "chainId": 1,
@@ -3005,6 +3006,7 @@
       "decimals": 8,
       "symbol": "aEtheBTC",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aebtc.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x657e8C867D8B37dCC18fA4Caead9C45EB088C642"
@@ -3016,7 +3018,8 @@
       "name": "RLUSD",
       "decimals": 18,
       "symbol": "RLUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/rlusd.svg"
     },
     {
       "chainId": 1,
@@ -3025,6 +3028,7 @@
       "decimals": 18,
       "symbol": "aEthRLUSD",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/arlusd.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD"
@@ -3036,7 +3040,8 @@
       "name": "PT Ethereal eUSDE 29MAY2025",
       "decimals": 18,
       "symbol": "PT_eUSDE_29MAY2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3045,6 +3050,7 @@
       "decimals": 18,
       "symbol": "aEthPT_eUSDE_29MAY2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x50D2C7992b802Eef16c04FeADAB310f31866a545"
@@ -3056,7 +3062,8 @@
       "name": "PT Ethena sUSDE 31JUL2025",
       "decimals": 18,
       "symbol": "PT_sUSDE_3ONE_JUL2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
     },
     {
       "chainId": 1,
@@ -3065,6 +3072,7 @@
       "decimals": 18,
       "symbol": "aEthPT_sUSDE_3ONE_JUL2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x3b3fB9C57858EF816833dC91565EFcd85D96f634"
@@ -4744,7 +4752,8 @@
       "name": "EURC",
       "decimals": 6,
       "symbol": "EURC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eurc.svg"
     },
     {
       "chainId": 8453,
@@ -4753,6 +4762,7 @@
       "decimals": 6,
       "symbol": "aBasEURC",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeurc.svg",
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42"
@@ -4765,6 +4775,7 @@
       "decimals": 6,
       "symbol": "waBasEURC",
       "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataeurc.svg",
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
@@ -5839,7 +5850,8 @@
       "name": "USD₮0",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
     },
     {
       "chainId": 42161,
@@ -5848,6 +5860,7 @@
       "decimals": 6,
       "symbol": "aArbUSDT",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
@@ -5860,6 +5873,7 @@
       "decimals": 6,
       "symbol": "stataArbUSDT",
       "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt0.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
@@ -5873,6 +5887,7 @@
       "decimals": 6,
       "symbol": "waArbUSDT",
       "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt0.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
@@ -7738,11 +7753,26 @@
     },
     {
       "chainId": 42220,
+      "address": "0xba3ae0F0A78579a5e8C4188dcde60DcCc0Dd4Fab",
+      "name": "Wrapped Aave Celo USDC",
+      "decimals": 6,
+      "symbol": "waCelUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
+        "underlyingAToken": "0xFF8309b9e99bfd2D4021bc71a362aBD93dBd4785"
+      }
+    },
+    {
+      "chainId": 42220,
       "address": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
       "name": "Tether USD",
       "decimals": 6,
       "symbol": "USDT",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
     },
     {
       "chainId": 42220,
@@ -7751,9 +7781,24 @@
       "decimals": 6,
       "symbol": "aCelUSDT",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
       "extensions": {
         "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
         "underlying": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e"
+      }
+    },
+    {
+      "chainId": 42220,
+      "address": "0x5264B1F45616dB619Bb3c8DCeBD86fB33FA0e53F",
+      "name": "Wrapped Aave Celo USDT",
+      "decimals": 6,
+      "symbol": "waCelUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
+        "underlyingAToken": "0xDeE98402A302e4D707fB9bf2bac66fAEEc31e8Df"
       }
     },
     {
@@ -7762,7 +7807,8 @@
       "name": "Celo Euro",
       "decimals": 18,
       "symbol": "cEUR",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ceur.svg"
     },
     {
       "chainId": 42220,
@@ -7771,6 +7817,7 @@
       "decimals": 18,
       "symbol": "aCelcEUR",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aceur.svg",
       "extensions": {
         "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
         "underlying": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73"
@@ -7782,7 +7829,8 @@
       "name": "Celo Dollar",
       "decimals": 18,
       "symbol": "cUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/cusd.svg"
     },
     {
       "chainId": 42220,
@@ -7791,6 +7839,7 @@
       "decimals": 18,
       "symbol": "aCelcUSD",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/acusd.svg",
       "extensions": {
         "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
         "underlying": "0x765DE816845861e75A25fCA122bb6898B8B1282a"
@@ -7930,7 +7979,8 @@
       "name": "Beets Staked Sonic",
       "decimals": 18,
       "symbol": "stS",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/sts.svg"
     },
     {
       "chainId": 146,
@@ -7939,12 +7989,13 @@
       "decimals": 18,
       "symbol": "aSonstS",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asts.svg",
       "extensions": {
         "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
         "underlying": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955"
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 106 },
-  "timestamp": "2025-05-05T00:16:03.554Z"
+  "version": { "major": 3, "minor": 0, "patch": 107 },
+  "timestamp": "2025-05-05T10:42:08.742Z"
 }

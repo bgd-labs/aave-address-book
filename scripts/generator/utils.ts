@@ -1,7 +1,7 @@
 import {Client, Hex, getAddress, zeroAddress} from 'viem';
 import {AddressInfo, Addresses} from '../configs/types';
 import {getStorageAt} from 'viem/actions';
-import {ChainList} from '@bgd-labs/rpc-env';
+import {ChainList} from '@bgd-labs/toolbox';
 
 function getExplorerLink(chainId: number, address: Hex) {
   const chain = ChainList[chainId];
@@ -66,7 +66,24 @@ export function generateSolidityConstants({
         ? addresses[key] !== zeroAddress
         : addresses[key].value !== zeroAddress,
     )
-    .map((key) => addressInfoToSolidityLibraryConstant(chainId, key, addresses[key]));
+    .map((key) =>
+      addressInfoToSolidityLibraryConstant(
+        chainId,
+        key
+          .replace(/^(\d)/, '_$1')
+          .replace(/\+/g, 'Plus')
+          .replace(/ü/g, 'ue')
+          .replace(/ä/g, 'ae')
+          .replace(/ö/g, 'oe')
+          .replace(/ß/g, 'ss')
+          .replace(/^\s\s*/, '')
+          .replace(/\s\s*$/, '') //  trim both sides of string
+          .replace(/[^\w\ ]/gi, '') //  replaces all non-alphanumeric with empty string
+          .replace(/-{2,}/g, ' ') //  remove duplicate spaces
+          .replace(/ +/gi, '_'), //  Convert spaces to dashes,
+        addresses[key],
+      ),
+    );
 }
 
 export function addressToJsConstant(chainId: number, key: string, entry: AddressInfo) {
@@ -119,13 +136,4 @@ export const getImplementationStorageSlot = async (client: Client, address: Hex)
 export function addressOrZero(address?: Hex): Hex {
   if (address) return address;
   return zeroAddress;
-}
-
-export function bitMapToIndexes(bitmap: bigint) {
-  const reserveIndexes: number[] = [];
-  for (let i = 0; bitmap != 0n; i++) {
-    if (bitmap & 0x1n) reserveIndexes.push(i);
-    bitmap = bitmap >> 1n;
-  }
-  return reserveIndexes;
 }

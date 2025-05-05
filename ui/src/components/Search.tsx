@@ -7,7 +7,7 @@ import { type SearchItem } from '@/types';
 import { Box } from './Box';
 import { SearchResult } from './SearchResult';
 import uFuzzy from '@leeoniya/ufuzzy';
-import { ChainList } from '@bgd-labs/rpc-env';
+import { ChainList } from '@bgd-labs/toolbox';
 
 const SEARCH_LIMIT = 100;
 const DEBOUNCE_TIME = 100;

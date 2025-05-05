@@ -75,6 +75,7 @@ import {mantleAddresses} from './configs/networks/mantle';
 import {sonicAddresses} from './configs/networks/sonic';
 import {governanceConfigMantle} from './configs/governance/mantle';
 import {governanceConfigSonic} from './configs/governance/sonic';
+import {generateChainlink} from './generator/chainlink';
 
 async function main() {
   // cleanup ts artifacts
@@ -186,6 +187,8 @@ async function main() {
   const smImports = generateSafetyModule();
 
   const abis = generateABIImports();
+
+  generateChainlink();
 
   writeFileSync('./src/ts/abis/index.ts', abis.join('\n'));
 

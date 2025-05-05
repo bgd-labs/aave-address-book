@@ -96,6 +96,9 @@ library AaveV3CeloAssets {
   address internal constant USDC_INTEREST_RATE_STRATEGY =
     0x8B62D241Bf59f40991DCd18531683156d7013355;
 
+  // https://celoscan.io/address/0xba3ae0F0A78579a5e8C4188dcde60DcCc0Dd4Fab
+  address internal constant USDC_STATA_TOKEN = 0xba3ae0F0A78579a5e8C4188dcde60DcCc0Dd4Fab;
+
   // https://celoscan.io/address/0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e
   address internal constant USDT_UNDERLYING = 0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e;
 
@@ -113,6 +116,9 @@ library AaveV3CeloAssets {
   // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0x8B62D241Bf59f40991DCd18531683156d7013355;
+
+  // https://celoscan.io/address/0x5264B1F45616dB619Bb3c8DCeBD86fB33FA0e53F
+  address internal constant USDT_STATA_TOKEN = 0x5264B1F45616dB619Bb3c8DCeBD86fB33FA0e53F;
 
   // https://celoscan.io/address/0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73
   address internal constant cEUR_UNDERLYING = 0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73;

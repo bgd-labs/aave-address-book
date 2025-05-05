@@ -1,7 +1,8 @@
 import {Address, Client, getContract} from 'viem';
 import {IPool_ABI} from '../../../src/ts/abis/IPool';
 import {Addresses, EMode, ReserveData} from '../../configs/types';
-import {bitMapToIndexes, generateSolidityConstants, wrapIntoSolidityLibrary} from '../utils';
+import {generateSolidityConstants, wrapIntoSolidityLibrary} from '../utils';
+import {bitmapToIndexes} from '@bgd-labs/toolbox';
 
 /**
  * As eModes are stores in a mapping there is no easy way to fetch "all eModes"
@@ -33,11 +34,11 @@ export async function fetchEModes(
       eModes.set(i, {
         label,
         collateralBitmap,
-        collateralAssets: bitMapToIndexes(collateralBitmap).map(
+        collateralAssets: bitmapToIndexes(collateralBitmap).map(
           (id) => reserveData.find((r) => r.id === id)!.UNDERLYING,
         ),
         borrowableBitmap,
-        borrowableAssets: bitMapToIndexes(borrowableBitmap).map(
+        borrowableAssets: bitmapToIndexes(borrowableBitmap).map(
           (id) => reserveData.find((r) => r.id === id)!.UNDERLYING,
         ),
         ...eModeData,
