@@ -9,7 +9,7 @@ import {
 import {ChainId, chainlinkFeeds} from '@bgd-labs/toolbox';
 
 const CHAIN_ID_TO_NAME = {
-  [ChainId.mainnet]: 'Mainnet',
+  [ChainId.mainnet]: 'Ethereum',
   [ChainId.polygon]: 'Polygon',
   [ChainId.avalanche]: 'Avalanche',
   [ChainId.arbitrum]: 'Arbitrum',
@@ -32,9 +32,12 @@ export function generateChainlink() {
     if (!CHAIN_ID_TO_NAME[chainId]) throw new Error(`Skipped chainId: ${chainId} on chainlink`);
     const name = `Chainlink${CHAIN_ID_TO_NAME[chainId]}`;
     const addresses = chainlinkFeeds[chainId as keyof typeof chainlinkFeeds].reduce((acc, feed) => {
-      if (feed.proxyAddress) acc[feed.name] = feed.proxyAddress;
-      if ((feed as any).secondaryProxyAddress)
+      // the name is not unique as there are multiple feeds e.g. for USDC / USDC
+      // therefore we prefix svr feeds with `SVR_` and suffix the underlying base feed with `_BASE`
+      if ((feed as any).secondaryProxyAddress) {
         acc[`SVR_` + feed.name] = (feed as any).secondaryProxyAddress;
+        acc[`SVR_` + feed.name + '_BASE'] = (feed as any).proxyAddress;
+      } else if (feed.proxyAddress) acc[feed.name] = feed.proxyAddress;
       return acc;
     }, {});
 
