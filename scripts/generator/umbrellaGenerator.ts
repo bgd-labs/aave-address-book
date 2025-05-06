@@ -18,8 +18,8 @@ export interface UmbrellaAddresses {
   UMBRELLA: AddressInfo;
   UMBRELLA_IMPL: AddressInfo;
   UMBRELLA_STAKE_IMPL: AddressInfo;
-  UMBRELLA_INCENTIVES_CONTROLLER: AddressInfo;
-  UMBRELLA_INCENTIVES_CONTROLLER_IMPL: AddressInfo;
+  UMBRELLA_REWARDS_CONTROLLER: AddressInfo;
+  UMBRELLA_REWARDS_CONTROLLER_IMPL: AddressInfo;
   UMBRELLA_BATCH_HELPER?: AddressInfo;
   UMBRELLA_CONFIG_ENGINE?: AddressInfo;
   DATA_AGGREGATION_HELPER?: AddressInfo;
@@ -67,10 +67,10 @@ async function fetchUmbrellaAddresses(client: Client, umbrellaConfig: UmbrellaCo
     abi: IUmbrellaStakeToken_ABI,
     client,
   });
-  const UMBRELLA_INCENTIVES_CONTROLLER = await umbrellaStakeContract.read.REWARDS_CONTROLLER();
-  const [UMBRELLA_IMPL, UMBRELLA_INCENTIVES_CONTROLLER_IMPL] = await Promise.all([
+  const UMBRELLA_REWARDS_CONTROLLER = await umbrellaStakeContract.read.REWARDS_CONTROLLER();
+  const [UMBRELLA_IMPL, UMBRELLA_REWARDS_CONTROLLER_IMPL] = await Promise.all([
     getImplementationStorageSlot(client, umbrellaConfig.UMBRELLA),
-    getImplementationStorageSlot(client, UMBRELLA_INCENTIVES_CONTROLLER),
+    getImplementationStorageSlot(client, UMBRELLA_REWARDS_CONTROLLER),
   ]);
 
   return {
@@ -80,8 +80,8 @@ async function fetchUmbrellaAddresses(client: Client, umbrellaConfig: UmbrellaCo
     },
     UMBRELLA_IMPL: bytes32toAddress(UMBRELLA_IMPL),
     UMBRELLA_STAKE_TOKEN_IMPL,
-    UMBRELLA_INCENTIVES_CONTROLLER,
-    UMBRELLA_INCENTIVES_CONTROLLER_IMPL: bytes32toAddress(UMBRELLA_INCENTIVES_CONTROLLER_IMPL),
+    UMBRELLA_REWARDS_CONTROLLER,
+    UMBRELLA_REWARDS_CONTROLLER_IMPL: bytes32toAddress(UMBRELLA_REWARDS_CONTROLLER_IMPL),
   };
 }
 

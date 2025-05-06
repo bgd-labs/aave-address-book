@@ -44,7 +44,7 @@ import {governanceConfigOptimism} from './configs/governance/optimism';
 import {governanceConfigPolygon} from './configs/governance/polygon';
 import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
-import {governanceConfigBase} from './configs/governance/base';
+import {governanceConfigBase, governanceConfigBaseSepolia} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
 import {governanceConfigCelo} from './configs/governance/celo';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
@@ -103,6 +103,7 @@ async function main() {
       governanceConfigPolygon,
       governanceConfigMetis,
       governanceConfigBase,
+      governanceConfigBaseSepolia,
       governanceConfigBNB,
       governanceConfigGnosis,
       governanceConfigScroll,

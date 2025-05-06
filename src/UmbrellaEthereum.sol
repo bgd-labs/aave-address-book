@@ -15,11 +15,11 @@ library UmbrellaEthereum {
   address internal constant UMBRELLA_STAKE_TOKEN_IMPL = 0x75e8aC0c063B6966E2A9954adEdf39BdE9370197;
 
   // https://etherscan.io/address/0x4655Ce3D625a63d30bA704087E52B4C31E38188B
-  address internal constant UMBRELLA_INCENTIVES_CONTROLLER =
+  address internal constant UMBRELLA_REWARDS_CONTROLLER =
     0x4655Ce3D625a63d30bA704087E52B4C31E38188B;
 
   // https://etherscan.io/address/0x85C3371044e49782DbE3dC23de1D77a078aFb5d0
-  address internal constant UMBRELLA_INCENTIVES_CONTROLLER_IMPL =
+  address internal constant UMBRELLA_REWARDS_CONTROLLER_IMPL =
     0x85C3371044e49782DbE3dC23de1D77a078aFb5d0;
 
   // https://etherscan.io/address/0xCe6Ced23118EDEb23054E06118a702797b13fc2F

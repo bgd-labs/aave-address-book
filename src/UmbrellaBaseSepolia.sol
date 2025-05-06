@@ -15,11 +15,11 @@ library UmbrellaBaseSepolia {
   address internal constant UMBRELLA_STAKE_TOKEN_IMPL = 0xa642Ca2DA558D75deaff46b68790bcF1Fa25f485;
 
   // https://sepolia.basescan.org/address/0x412f8957f9A42FFe47B634AB73f89Ff4E0a29026
-  address internal constant UMBRELLA_INCENTIVES_CONTROLLER =
+  address internal constant UMBRELLA_REWARDS_CONTROLLER =
     0x412f8957f9A42FFe47B634AB73f89Ff4E0a29026;
 
   // https://sepolia.basescan.org/address/0xA97Ea1A74628638Cab2C150f04F435678313117B
-  address internal constant UMBRELLA_INCENTIVES_CONTROLLER_IMPL =
+  address internal constant UMBRELLA_REWARDS_CONTROLLER_IMPL =
     0xA97Ea1A74628638Cab2C150f04F435678313117B;
 
   // https://sepolia.basescan.org/address/0xcDfb3f2d924b02A78a51F43BC34610dC62ADCEC3
