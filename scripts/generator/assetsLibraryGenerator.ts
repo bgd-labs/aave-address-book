@@ -1,6 +1,6 @@
 import {Hex, zeroAddress} from 'viem';
 import {ReserveData, UmbrellaStakeData} from '../configs/types';
-import {generateSolidityConstants, wrapIntoSolidityLibrary} from './utils';
+import {generateSolidityConstants, wrapIntoSolidityLibrary, removeNetworkAbbreviation} from './utils';
 
 /**
  * As symbols are used as variable name in Solidity and Javascript there are certain characters that are not allowed and should be replaced.
@@ -64,6 +64,14 @@ export function fixSymbol(symbol: string, _underlying: string) {
     .replace('USD₮', 'USDT');
 }
 
+export function fixUmbrellaStakeSymbol(symbol: string, underlying: string) {
+  symbol = removeNetworkAbbreviation(fixSymbol(symbol, underlying));
+  return symbol
+    .replace('stk', 'STK_')
+    .replace('wa', 'WA_')
+    .replace(/(V\d+)/g, '_$1');
+}
+
 export function generateAssetsLibrary(
   chainId: number,
   reservesData: ReserveData[],
@@ -122,7 +130,7 @@ export function generateUmbrellaStakeAssetsLibrary(
   libraryName: string,
 ) {
   const formattedStakeData = umbrellaStakeData.map(({symbol: _symbol, ...rest}) => {
-    const symbol = fixSymbol(_symbol, rest.UNDERLYING);
+    const symbol = fixUmbrellaStakeSymbol(_symbol, rest.UNDERLYING);
     const addresses = {
       [`${symbol}`]: rest.STAKE_TOKEN,
       [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
@@ -132,7 +140,7 @@ export function generateUmbrellaStakeAssetsLibrary(
 
   const innerObject = umbrellaStakeData.reduce(
     (acc, {symbol: _symbol, ...rest}) => {
-      const symbol = fixSymbol(_symbol, rest.UNDERLYING);
+      const symbol = fixUmbrellaStakeSymbol(_symbol, rest.UNDERLYING);
       acc[symbol] = rest;
       return acc;
     },

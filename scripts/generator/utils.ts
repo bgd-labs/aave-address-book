@@ -138,3 +138,9 @@ export function addressOrZero(address?: Hex): Hex {
   if (address) return address;
   return zeroAddress;
 }
+
+export function removeNetworkAbbreviation(symbol: string): string {
+  return symbol
+    .replace('BasSep', '')
+    .replace('Eth', '')
+}

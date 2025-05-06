@@ -1,4 +1,4 @@
-import {ChainId} from '@bgd-labs/rpc-env';
+import {ChainId} from '@bgd-labs/toolbox';
 import {UmbrellaConfig} from '../types';
 
 export const umbrellaMainnetConfig: UmbrellaConfig = {
