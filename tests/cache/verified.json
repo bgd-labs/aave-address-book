@@ -2588,6 +2588,9 @@
     },
     "0xAeB694261D4A36A060974044fB1f2d15CFB7851b": {
       "name": "DataAggregationHelper"
+    },
+    "0x85C3371044e49782DbE3dC23de1D77a078aFb5d0": {
+      "name": "RewardsController"
     }
   },
   "10": {
