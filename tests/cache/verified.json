@@ -2550,6 +2550,12 @@
     "0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4": {
       "name": "RiskSteward"
     },
+    "0xF86F77F7531B3374274E3f725E0A81D60bC4bB67": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2759de67aD133C747C9f41d56F1b8A343cE679a1": {
+      "name": "Executor"
+    },
     "0x3b3fB9C57858EF816833dC91565EFcd85D96f634": {
       "name": "PendlePrincipalToken"
     },
@@ -2561,6 +2567,30 @@
     },
     "0x759B9B72700A129CD7AD8e53F9c99cb48Fd57105": {
       "name": "PendlePriceCapAdapter"
+    },
+    "0xa6Cfa5803Da7851D6D9B7Dd97abF32DC53f7200d": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDE00aC600900ae5833F0aDbf601A1DAEbD16B482": {
+      "name": "Umbrella"
+    },
+    "0x75e8aC0c063B6966E2A9954adEdf39BdE9370197": {
+      "name": "UmbrellaStakeToken"
+    },
+    "0x4655Ce3D625a63d30bA704087E52B4C31E38188B": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xCe6Ced23118EDEb23054E06118a702797b13fc2F": {
+      "name": "UmbrellaBatchHelper"
+    },
+    "0x0eb41d1f609EF1970a2F319C7a36BDa934d2c92a": {
+      "name": "UmbrellaConfigEngine"
+    },
+    "0xAeB694261D4A36A060974044fB1f2d15CFB7851b": {
+      "name": "DataAggregationHelper"
+    },
+    "0x85C3371044e49782DbE3dC23de1D77a078aFb5d0": {
+      "name": "RewardsController"
     }
   },
   "10": {

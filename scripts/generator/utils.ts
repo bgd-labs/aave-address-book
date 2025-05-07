@@ -38,6 +38,7 @@ export function addressInfoToSolidityLibraryConstant(
     if (entry.type === 'uint256' || entry.type === 'uint8') {
       return `${entry.type} internal constant ${key} = ${entry.value};\n`;
     }
+    if (!entry.value) console.log('entry', entry);
     const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);
     if (entry.type === 'address')
       return `// ${blockExplorerLinkComment}\naddress internal constant ${key} = ${getAddress(
@@ -136,4 +137,10 @@ export const getImplementationStorageSlot = async (client: Client, address: Hex)
 export function addressOrZero(address?: Hex): Hex {
   if (address) return address;
   return zeroAddress;
+}
+
+export function removeNetworkAbbreviation(symbol: string): string {
+  return symbol
+    .replace('BasSep', '')
+    .replace('Eth', '')
 }

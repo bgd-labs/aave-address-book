@@ -34,6 +34,7 @@ import {sonicProtoV3} from './configs/pools/sonic';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
+import {generateUmbrellaLibrary} from './generator/umbrellaGenerator';
 import {generateGovV2} from './generator/governanceV2Generator';
 import {prefixWithGeneratedWarning, prefixWithPragma} from './generator/utils';
 import {generateSafetyModule} from './generator/safetyModuleGenerator';
@@ -43,7 +44,7 @@ import {governanceConfigOptimism} from './configs/governance/optimism';
 import {governanceConfigPolygon} from './configs/governance/polygon';
 import {generateABIImports} from './generator/abis';
 import {governanceConfigMetis} from './configs/governance/metis';
-import {governanceConfigBase} from './configs/governance/base';
+import {governanceConfigBase, governanceConfigBaseSepolia} from './configs/governance/base';
 import {governanceConfigBNB} from './configs/governance/bnb';
 import {governanceConfigCelo} from './configs/governance/celo';
 import {governanceConfigGnosis} from './configs/governance/gnosis';
@@ -75,6 +76,8 @@ import {mantleAddresses} from './configs/networks/mantle';
 import {sonicAddresses} from './configs/networks/sonic';
 import {governanceConfigMantle} from './configs/governance/mantle';
 import {governanceConfigSonic} from './configs/governance/sonic';
+import {umbrellaMainnetConfig} from './configs/umbrella/ethereum';
+import {umbrellaBaseSepoliaConfig} from './configs/umbrella/base';
 import {generateChainlink} from './generator/chainlink';
 
 async function main() {
@@ -100,6 +103,7 @@ async function main() {
       governanceConfigPolygon,
       governanceConfigMetis,
       governanceConfigBase,
+      governanceConfigBaseSepolia,
       governanceConfigBNB,
       governanceConfigGnosis,
       governanceConfigScroll,
@@ -154,8 +158,8 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
-
-  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames]);
+  const umbrellaAddresses = await Promise.all([umbrellaMainnetConfig, umbrellaBaseSepoliaConfig].map((config) => generateUmbrellaLibrary(config)));
+  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames, ...umbrellaAddresses]);
   console.log('✅ Tokens list generation finished');
 
   const networkAddresses = [
@@ -202,6 +206,7 @@ async function main() {
     smImports,
     tokenListImports,
     ghoAddresses,
+    umbrellaAddresses
   ].flat();
 
   const jsExports = imports.map((f) => f.js).flat();

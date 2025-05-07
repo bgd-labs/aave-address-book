@@ -1,7 +1,7 @@
 import {schema, TokenInfo, TokenList} from '@uniswap/token-lists';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import {ReserveData} from '../configs/types';
+import {ReserveData, UmbrellaStakeData} from '../configs/types';
 import {readFileSync, existsSync, writeFileSync} from 'fs';
 import {cwd} from 'process';
 import {join} from 'path';
@@ -21,90 +21,123 @@ const TAGS = {
   aTokenV3: 'aTokenV3',
   staticAToken: 'staticAT',
   stataToken: 'stataToken',
+  umbrellaStkToken: 'uStkToken',
 } as const;
 
-type TokenListParams = {
+type ReserveTokenListParams = {
   name: string;
   pool: Hex;
   chainId: number;
   reservesData: ReserveData[];
-}[];
+};
+
+type UmbrellaTokenListParams = {
+  name: string;
+  chainId: number;
+  umbrella: Hex;
+  umbrellaStakeData: UmbrellaStakeData[];
+};
 
 function findInList(tokens: TokenInfo[], address: Address, chainId: number) {
   return tokens.find((x) => x.address === address && x.chainId === chainId);
 }
 
-export async function generateTokenList(pools: TokenListParams) {
+export async function generateTokenList(
+  tokenSources: (ReserveTokenListParams | UmbrellaTokenListParams)[]
+) {
   const path = join(cwd(), 'tokenlist.json');
   const cachedList: TokenList = existsSync(path)
     ? JSON.parse(readFileSync(path, 'utf-8'))
     : {tokens: []};
 
   const tokens: TokenInfo[] = [];
-  for (const {reservesData, chainId, name: poolName, pool} of pools) {
-    if (ChainList[chainId].testnet) continue;
-    for (const reserve of reservesData) {
-      async function addToken(
-        token: Address,
-        variant: VARIANT,
-        tags: string[],
-        extensions?: Record<string, string>,
-      ) {
-        const alreadyInList = findInList(tokens, token, chainId);
-        if (alreadyInList) return;
-        const cache = findInList(cachedList.tokens, token, chainId);
 
-        const erc20contract = getContract({
-          abi: IERC20Detailed_ABI,
-          address: token,
-          client: getClient(chainId),
-        });
-        const [name, symbol] = cache
-          ? [cache.name, cache.symbol]
-          : token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
-            ? ['Maker', 'MKR']
-            : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
-        const symbolUri = await getSymbolUri(reserve.symbol, variant);
-        return tokens.push({
-          chainId: chainId,
-          address: token,
-          name: name.length > 40 ? `${name.substring(0, 37)}...` : name, // schema limits to 40 characters
-          decimals: reserve.decimals,
-          symbol: fixSymbol(symbol, token),
-          tags,
-          ...(symbolUri ? {logoURI: symbolUri} : {}),
-          ...(extensions ? {extensions} : {}),
-        });
+  for (const source of tokenSources) {
+    const chainId = source.chainId;
+    if (ChainList[chainId].testnet) continue;
+
+    async function addToken(
+      token: Address,
+      variant: VARIANT,
+      tags: string[],
+      dataItem: ReserveData | UmbrellaStakeData,
+      extensions?: Record<string, string>,
+    ) {
+      const alreadyInList = findInList(tokens, token, chainId);
+      if (alreadyInList) return;
+      const cache = findInList(cachedList.tokens, token, chainId);
+
+      const erc20contract = getContract({
+        abi: IERC20Detailed_ABI,
+        address: token,
+        client: getClient(chainId),
+      });
+      const [name, symbol] = cache
+        ? [cache.name, cache.symbol]
+        : token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
+          ? ['Maker', 'MKR']
+          : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
+      const symbolUri = await getSymbolUri(dataItem.symbol, variant);
+      return tokens.push({
+        chainId: chainId,
+        address: token,
+        name: name.length > 40 ? `${name.substring(0, 37)}...` : name, // schema limits to 40 characters
+        decimals: dataItem.decimals,
+        symbol: fixSymbol(symbol, token),
+        tags,
+        ...(symbolUri ? {logoURI: symbolUri} : {}),
+        ...(extensions ? {extensions} : {}),
+      });
+    }
+
+    if ('reservesData' in source && source.reservesData) {
+      const { reservesData, name: poolName } = source;
+      for (const reserve of reservesData) {
+        await addToken(reserve.UNDERLYING, VARIANT.UNDERLYING, [TAGS.underlying], reserve);
+        await addToken(
+          reserve.A_TOKEN,
+          VARIANT.A_TOKEN,
+          /V2/.test(poolName) ? [TAGS.aTokenV2, TAGS.aaveV2] : [TAGS.aTokenV3, TAGS.aaveV3],
+          reserve,
+          {pool: source.pool, underlying: reserve.UNDERLYING},
+        );
+        if (reserve.STATIC_A_TOKEN && reserve.STATIC_A_TOKEN != zeroAddress)
+          await addToken(
+            reserve.STATIC_A_TOKEN,
+            VARIANT.STATIC_A_TOKEN,
+            [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.staticAToken],
+            reserve,
+            {
+              pool: source.pool,
+              underlying: reserve.UNDERLYING,
+              underlyingAToken: reserve.A_TOKEN,
+            },
+          );
+        if (reserve.STATA_TOKEN && reserve.STATA_TOKEN != zeroAddress)
+          await addToken(
+            reserve.STATA_TOKEN,
+            VARIANT.STATA_TOKEN,
+            [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.stataToken],
+            reserve,
+            {
+              pool: source.pool,
+              underlying: reserve.UNDERLYING,
+              underlyingAToken: reserve.A_TOKEN,
+            },
+          );
       }
-      await addToken(reserve.UNDERLYING, VARIANT.UNDERLYING, [TAGS.underlying]);
-      await addToken(
-        reserve.A_TOKEN,
-        VARIANT.A_TOKEN,
-        /V2/.test(poolName) ? [TAGS.aTokenV2, TAGS.aaveV2] : [TAGS.aTokenV3, TAGS.aaveV3],
-        {pool: pool, underlying: reserve.UNDERLYING},
-      );
-      if (reserve.STATIC_A_TOKEN && reserve.STATIC_A_TOKEN != zeroAddress)
+    }
+    if ('umbrellaStakeData' in source && source.umbrellaStakeData) {
+      const { umbrellaStakeData, umbrella } = source;
+      for (const stakeData of umbrellaStakeData) {
         await addToken(
-          reserve.STATIC_A_TOKEN,
-          VARIANT.STATIC_A_TOKEN,
-          [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.staticAToken],
-          {
-            pool: pool,
-            underlying: reserve.UNDERLYING,
-            underlyingAToken: reserve.A_TOKEN,
-          },
+          stakeData.STAKE_TOKEN,
+          VARIANT.UMBRELLA_STAKE_TOKEN,
+          [TAGS.umbrellaStkToken],
+          stakeData,
+          {underlying: stakeData.UNDERLYING, umbrella}
         );
-      if (reserve.STATA_TOKEN && reserve.STATA_TOKEN != zeroAddress)
-        await addToken(
-          reserve.STATA_TOKEN,
-          VARIANT.STATA_TOKEN,
-          [/V2/.test(poolName) ? TAGS.aaveV3 : TAGS.aaveV3, TAGS.stataToken],
-          {
-            pool: pool,
-            underlying: reserve.UNDERLYING,
-            underlyingAToken: reserve.A_TOKEN,
-          },
-        );
+      }
     }
   }
 
@@ -141,6 +174,10 @@ export async function generateTokenList(pools: TokenListParams) {
       [TAGS.staticAToken]: {
         name: 'static a token',
         description: 'Tokens that are wrapped into a 4626 Vault',
+      },
+      [TAGS.umbrellaStkToken]: {
+        name: 'umbrella stake token',
+        description: 'New version of the Aave Safety Module stk tokens, used on Umbrella',
       },
     },
     tokens,

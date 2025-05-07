@@ -39,3 +39,6 @@ export {IRiskSteward_ABI} from './IRiskSteward';
 export {IAaveToken_ABI} from './IAaveToken';
 export {IStkAaveToken_ABI} from './IStkAaveToken';
 export {IATokenWithDelegation_ABI} from './IATokenWithDelegation';
+export {IUmbrellaRewardsController_ABI} from './IUmbrellaRewardsController';
+export {IUmbrella_ABI} from './IUmbrella';
+export {IUmbrellaStakeToken_ABI} from './IUmbrellaStakeToken';

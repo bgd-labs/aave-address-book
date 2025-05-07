@@ -12,3 +12,11 @@ export const governanceConfigBase: GovernanceConfig = {
     GOVERNANCE_GUARDIAN: '0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe',
   },
 };
+
+export const governanceConfigBaseSepolia: GovernanceConfig = {
+  name: 'BaseSepolia',
+  CHAIN_ID: ChainId.base_sepolia,
+  ADDRESSES: {
+    PERMISSIONED_PAYLOADS_CONTROLLER: '0x9F9c7F84C043Fe3366E8567352FB6ab352222b7d',
+  },
+};

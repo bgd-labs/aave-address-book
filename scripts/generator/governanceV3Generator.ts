@@ -16,7 +16,7 @@ import {getClient} from '../clients';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
-  EXECUTOR_LVL_2: Hex;
+  EXECUTOR_LVL_2?: Hex;
 };
 
 async function fetchV3ExecutorAddresses(
@@ -91,6 +91,17 @@ async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig)
       type: 'IPayloadsControllerCore',
     };
     addresses = {...addresses, ...executors};
+  }
+  if (ADDRESSES.PERMISSIONED_PAYLOADS_CONTROLLER) {
+    const executors = await fetchV3ExecutorAddresses(
+      getClient(CHAIN_ID),
+      ADDRESSES.PERMISSIONED_PAYLOADS_CONTROLLER,
+    );
+    addresses.PERMISSIONED_PAYLOADS_CONTROLLER = {
+      value: ADDRESSES.PERMISSIONED_PAYLOADS_CONTROLLER,
+      type: 'IPayloadsControllerCore',
+    };
+    addresses = {...addresses, PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR: executors.EXECUTOR_LVL_1};
   }
   if (ADDRESSES.VOTING_MACHINE) {
     const strategyAndWareHouse = await getVotingStrategyAndWarehouse(

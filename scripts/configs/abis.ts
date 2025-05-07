@@ -1,4 +1,3 @@
-import { RISK_STEWARD } from './../../src/ts/AaveV3Avalanche';
 import {governanceConfigMainnet} from './governance/ethereum';
 import {mainnetProtoV3Pool} from './pools/ethereum';
 
@@ -81,5 +80,17 @@ export const DOWNLOAD_ABI_INTERFACES = [
   {
     address: '0x366AE337897223AEa70e3EBe1862219386f20593',
     name: 'IATokenWithDelegation',
+  },
+  {
+    address: '0x85C3371044e49782DbE3dC23de1D77a078aFb5d0',
+    name: 'IUmbrellaRewardsController',
+  },
+  {
+    address: '0xDE00aC600900ae5833F0aDbf601A1DAEbD16B482',
+    name: 'IUmbrella',
+  },
+  {
+    address: '0x75e8aC0c063B6966E2A9954adEdf39BdE9370197',
+    name: 'IUmbrellaStakeToken',
   },
 ];
