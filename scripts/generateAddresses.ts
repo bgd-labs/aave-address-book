@@ -1,14 +1,14 @@
 import 'dotenv/config';
-import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
-import {governanceConfigMainnet} from './configs/governance/ethereum';
-import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';
+import { appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'fs';
+import { governanceConfigMainnet } from './configs/governance/ethereum';
+import { arbitrumProtoV3, arbitrumSepoliaProtoV3 } from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
   avalancheProtoV3,
   fujiProtoV2,
   fujiProtoV3,
 } from './configs/pools/avalanche';
-import {baseProtoV3, baseSepoliaProtoV3, baseSepoliaLidoProtoV3} from './configs/pools/base';
+import { baseProtoV3, baseSepoliaProtoV3, baseSepoliaLidoProtoV3 } from './configs/pools/base';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
@@ -79,6 +79,7 @@ import {governanceConfigSonic} from './configs/governance/sonic';
 import {umbrellaMainnetConfig} from './configs/umbrella/ethereum';
 import {umbrellaBaseSepoliaConfig} from './configs/umbrella/base';
 import {generateChainlink} from './generator/chainlink';
+import { governanceConfigSoneium } from './configs/governance/soneium';
 
 async function main() {
   // cleanup ts artifacts
@@ -112,6 +113,7 @@ async function main() {
       governanceConfigLinea,
       governanceConfigMantle,
       governanceConfigSonic,
+      governanceConfigSoneium
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
