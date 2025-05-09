@@ -9,10 +9,11 @@ import {
 } from './utils';
 import {generateUmbrellaStakeAssetsLibrary} from './assetsLibraryGenerator';
 import {bytes32toAddress, getImplementationStorageSlot} from './utils';
-import {AddressInfo, UmbrellaConfig, UmbrellaStakeData} from '../configs/types';
+import {AddressInfo, Addresses, UmbrellaConfig, UmbrellaStakeData} from '../configs/types';
 import {getClient} from '../clients';
 import {IUmbrella_ABI} from '../../src/ts/abis/IUmbrella';
 import {IUmbrellaStakeToken_ABI} from '../../src/ts/abis/IUmbrellaStakeToken';
+import {fetchV3ExecutorAddresses} from '../generator/governanceV3Generator';
 
 export interface UmbrellaAddresses {
   UMBRELLA: AddressInfo;
@@ -73,7 +74,7 @@ async function fetchUmbrellaAddresses(client: Client, umbrellaConfig: UmbrellaCo
     getImplementationStorageSlot(client, UMBRELLA_REWARDS_CONTROLLER),
   ]);
 
-  return {
+  let addresses: Addresses = {
     UMBRELLA: {
       value: umbrellaConfig.UMBRELLA,
       type: 'IUmbrella',
@@ -83,6 +84,22 @@ async function fetchUmbrellaAddresses(client: Client, umbrellaConfig: UmbrellaCo
     UMBRELLA_REWARDS_CONTROLLER,
     UMBRELLA_REWARDS_CONTROLLER_IMPL: bytes32toAddress(UMBRELLA_REWARDS_CONTROLLER_IMPL),
   };
+
+  if (umbrellaConfig.additionalAddresses?.PERMISSIONED_PAYLOADS_CONTROLLER) {
+    const executors = await fetchV3ExecutorAddresses(
+      client,
+      umbrellaConfig.additionalAddresses.PERMISSIONED_PAYLOADS_CONTROLLER,
+    );
+    addresses = {
+      ... addresses,
+      PERMISSIONED_PAYLOADS_CONTROLLER: {
+        value: umbrellaConfig.additionalAddresses.PERMISSIONED_PAYLOADS_CONTROLLER,
+        type: 'IPayloadsControllerCore',
+      },
+      PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR: executors.EXECUTOR_LVL_1,
+    };
+  }
+  return addresses;
 }
 
 export async function generateUmbrellaLibrary(umbrellaConfig: UmbrellaConfig) {

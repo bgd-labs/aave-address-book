@@ -22,6 +22,14 @@ library UmbrellaBaseSepolia {
   address internal constant UMBRELLA_REWARDS_CONTROLLER_IMPL =
     0xA97Ea1A74628638Cab2C150f04F435678313117B;
 
+  // https://sepolia.basescan.org/address/0x9F9c7F84C043Fe3366E8567352FB6ab352222b7d
+  address internal constant PERMISSIONED_PAYLOADS_CONTROLLER =
+    0x9F9c7F84C043Fe3366E8567352FB6ab352222b7d;
+
+  // https://sepolia.basescan.org/address/0x228B2Fe0b214862D2A8129ecd983D1D872cEb95a
+  address internal constant PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR =
+    0x228B2Fe0b214862D2A8129ecd983D1D872cEb95a;
+
   // https://sepolia.basescan.org/address/0xcDfb3f2d924b02A78a51F43BC34610dC62ADCEC3
   address internal constant UMBRELLA_BATCH_HELPER = 0xcDfb3f2d924b02A78a51F43BC34610dC62ADCEC3;
 
