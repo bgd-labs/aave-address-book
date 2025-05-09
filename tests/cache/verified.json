@@ -2591,6 +2591,9 @@
     },
     "0x85C3371044e49782DbE3dC23de1D77a078aFb5d0": {
       "name": "RewardsController"
+    },
+    "0x6A1792a91C08e9f0bFe7a990871B786643237f0F": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {

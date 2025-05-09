@@ -15,10 +15,6 @@ library GovernanceV3Ethereum {
   IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
     IPayloadsControllerCore(0xdAbad81aF85554E9ae636395611C58F7eC1aAEc5);
 
-  // https://etherscan.io/address/0xF86F77F7531B3374274E3f725E0A81D60bC4bB67
-  IPayloadsControllerCore internal constant PERMISSIONED_PAYLOADS_CONTROLLER =
-    IPayloadsControllerCore(0xF86F77F7531B3374274E3f725E0A81D60bC4bB67);
-
   // https://etherscan.io/address/0x06a1795a88b82700896583e123F46BE43877bFb6
   address internal constant VOTING_MACHINE = 0x06a1795a88b82700896583e123F46BE43877bFb6;
 
@@ -60,10 +56,6 @@ library GovernanceV3Ethereum {
 
   // https://etherscan.io/address/0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957
   address internal constant EXECUTOR_LVL_2 = 0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957;
-
-  // https://etherscan.io/address/0x2759de67aD133C747C9f41d56F1b8A343cE679a1
-  address internal constant PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR =
-    0x2759de67aD133C747C9f41d56F1b8A343cE679a1;
 
   // https://etherscan.io/address/0xA16044F268d84599e58E851b25f4DBA061DC6088
   IVotingStrategy internal constant VOTING_STRATEGY =
