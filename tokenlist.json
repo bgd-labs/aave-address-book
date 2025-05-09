@@ -3040,6 +3040,20 @@
     },
     {
       "chainId": 1,
+      "address": "0x6A1792a91C08e9f0bFe7a990871B786643237f0F",
+      "name": "Wrapped Aave Ethereum RLUSD",
+      "decimals": 18,
+      "symbol": "waEthRLUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statarlusd.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+        "underlyingAToken": "0xFa82580c16A31D0c1bC632A36F82e83EfEF3Eec0"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x50D2C7992b802Eef16c04FeADAB310f31866a545",
       "name": "PT Ethereal eUSDE 29MAY2025",
       "decimals": 18,
@@ -8000,6 +8014,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 107 },
-  "timestamp": "2025-05-05T10:42:08.742Z"
+  "version": { "major": 3, "minor": 0, "patch": 108 },
+  "timestamp": "2025-05-09T00:15:13.815Z"
 }
