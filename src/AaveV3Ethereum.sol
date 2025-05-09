@@ -938,6 +938,9 @@ library AaveV3EthereumAssets {
   address internal constant RLUSD_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 
+  // https://etherscan.io/address/0x6A1792a91C08e9f0bFe7a990871B786643237f0F
+  address internal constant RLUSD_STATA_TOKEN = 0x6A1792a91C08e9f0bFe7a990871B786643237f0F;
+
   // https://etherscan.io/address/0x50D2C7992b802Eef16c04FeADAB310f31866a545
   address internal constant PT_eUSDE_29MAY2025_UNDERLYING =
     0x50D2C7992b802Eef16c04FeADAB310f31866a545;
