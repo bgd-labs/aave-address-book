@@ -3097,6 +3097,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xC139190F447e929f090Edeb554D95AbB8b18aC1C",
+      "name": "USDtb",
+      "decimals": 18,
+      "symbol": "USDtb",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdtb.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0xEc4ef66D4fCeEba34aBB4dE69dB391Bc5476ccc8",
+      "name": "Aave Ethereum USDtb",
+      "decimals": 18,
+      "symbol": "aEthUSDtb",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdtb.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xC139190F447e929f090Edeb554D95AbB8b18aC1C"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -8014,6 +8036,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 108 },
-  "timestamp": "2025-05-09T00:15:13.815Z"
+  "version": { "major": 3, "minor": 0, "patch": 109 },
+  "timestamp": "2025-05-12T00:16:04.922Z"
 }
