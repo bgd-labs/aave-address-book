@@ -22,6 +22,14 @@ library UmbrellaEthereum {
   address internal constant UMBRELLA_REWARDS_CONTROLLER_IMPL =
     0x85C3371044e49782DbE3dC23de1D77a078aFb5d0;
 
+  // https://etherscan.io/address/0xF86F77F7531B3374274E3f725E0A81D60bC4bB67
+  address internal constant PERMISSIONED_PAYLOADS_CONTROLLER =
+    0xF86F77F7531B3374274E3f725E0A81D60bC4bB67;
+
+  // https://etherscan.io/address/0x2759de67aD133C747C9f41d56F1b8A343cE679a1
+  address internal constant PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR =
+    0x2759de67aD133C747C9f41d56F1b8A343cE679a1;
+
   // https://etherscan.io/address/0xCe6Ced23118EDEb23054E06118a702797b13fc2F
   address internal constant UMBRELLA_BATCH_HELPER = 0xCe6Ced23118EDEb23054E06118a702797b13fc2F;
 

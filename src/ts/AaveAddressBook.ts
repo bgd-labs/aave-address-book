@@ -7,7 +7,6 @@ export * as GovernanceV3Optimism from './GovernanceV3Optimism';
 export * as GovernanceV3Polygon from './GovernanceV3Polygon';
 export * as GovernanceV3Metis from './GovernanceV3Metis';
 export * as GovernanceV3Base from './GovernanceV3Base';
-export * as GovernanceV3BaseSepolia from './GovernanceV3BaseSepolia';
 export * as GovernanceV3BNB from './GovernanceV3BNB';
 export * as GovernanceV3Gnosis from './GovernanceV3Gnosis';
 export * as GovernanceV3Scroll from './GovernanceV3Scroll';
