@@ -179,8 +179,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x40aAbEf1aa8f0eEc637E0E7d92fbfFB2F26A8b7B
   address internal constant WBTC_V_TOKEN = 0x40aAbEf1aa8f0eEc637E0E7d92fbfFB2F26A8b7B;
 
-  // https://etherscan.io/address/0x230E0321Cf38F09e247e50Afc7801EA2351fe56F
-  address internal constant WBTC_ORACLE = 0x230E0321Cf38F09e247e50Afc7801EA2351fe56F;
+  // https://etherscan.io/address/0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc
+  address internal constant WBTC_ORACLE = 0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant WBTC_INTEREST_RATE_STRATEGY =
@@ -838,8 +838,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xeB284A70557EFe3591b9e6D9D720040E02c54a4d
   address internal constant cbBTC_V_TOKEN = 0xeB284A70557EFe3591b9e6D9D720040E02c54a4d;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
-  address internal constant cbBTC_ORACLE = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
+  address internal constant cbBTC_ORACLE = 0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant cbBTC_INTEREST_RATE_STRATEGY =
@@ -913,8 +913,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x47eD0509e64615c0d5C6d39AF1B38D02Bc9fE58f
   address internal constant eBTC_V_TOKEN = 0x47eD0509e64615c0d5C6d39AF1B38D02Bc9fE58f;
 
-  // https://etherscan.io/address/0x95a85D0d2f3115702d813549a80040387738A430
-  address internal constant eBTC_ORACLE = 0x95a85D0d2f3115702d813549a80040387738A430;
+  // https://etherscan.io/address/0x577C217cB5b1691A500D48aA7F69346409cFd668
+  address internal constant eBTC_ORACLE = 0x577C217cB5b1691A500D48aA7F69346409cFd668;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant eBTC_INTEREST_RATE_STRATEGY =
@@ -937,6 +937,9 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant RLUSD_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0x6A1792a91C08e9f0bFe7a990871B786643237f0F
+  address internal constant RLUSD_STATA_TOKEN = 0x6A1792a91C08e9f0bFe7a990871B786643237f0F;
 
   // https://etherscan.io/address/0x50D2C7992b802Eef16c04FeADAB310f31866a545
   address internal constant PT_eUSDE_29MAY2025_UNDERLYING =
@@ -975,6 +978,24 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant PT_sUSDE_31JUL2025_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0xC139190F447e929f090Edeb554D95AbB8b18aC1C
+  address internal constant USDtb_UNDERLYING = 0xC139190F447e929f090Edeb554D95AbB8b18aC1C;
+
+  uint8 internal constant USDtb_DECIMALS = 18;
+
+  // https://etherscan.io/address/0xEc4ef66D4fCeEba34aBB4dE69dB391Bc5476ccc8
+  address internal constant USDtb_A_TOKEN = 0xEc4ef66D4fCeEba34aBB4dE69dB391Bc5476ccc8;
+
+  // https://etherscan.io/address/0xeA85a065F87FE28Aa8Fbf0D6C7deC472b106252C
+  address internal constant USDtb_V_TOKEN = 0xeA85a065F87FE28Aa8Fbf0D6C7deC472b106252C;
+
+  // https://etherscan.io/address/0x2FA6A78E3d617c1013a22938411602dc9Da98dBa
+  address internal constant USDtb_ORACLE = 0x2FA6A78E3d617c1013a22938411602dc9Da98dBa;
+
+  // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
+  address internal constant USDtb_INTEREST_RATE_STRATEGY =
+    0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 library AaveV3EthereumEModes {
   uint8 internal constant NONE = 0;
@@ -996,6 +1017,8 @@ library AaveV3EthereumEModes {
   uint8 internal constant PT_SUSDE_STABLECOINS_JUL_2025 = 8;
 
   uint8 internal constant PT_EUSDE_STABLECOINS_MAY_2025 = 9;
+
+  uint8 internal constant USDE_STABLECOIN = 11;
 }
 library AaveV3EthereumExternalLibraries {
   // https://etherscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
