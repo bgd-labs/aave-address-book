@@ -638,8 +638,8 @@ export const E_MODES = {
       '0xdAC17F958D2ee523a2206206994597C13D831ec7',
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
     ],
-    ltv: 8840,
-    liquidationThreshold: 9040,
+    ltv: 8890,
+    liquidationThreshold: 9090,
     liquidationBonus: 10429,
   },
   '9': {
@@ -654,7 +654,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10300,
+    liquidationBonus: 10270,
   },
   '11': {
     label: 'USDe Stablecoin',
