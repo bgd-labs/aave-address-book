@@ -90,6 +90,8 @@ async function checkVerified(item: ListItem) {
 function getApiUrl(chainId: number) {
   if (chainId === ChainId.metis)
     return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
+  if (chainId === ChainId.soneium)
+    return `https://soneium.blockscout.com/api`;
   return `https://api.etherscan.io/v2/api`;
 }
 
