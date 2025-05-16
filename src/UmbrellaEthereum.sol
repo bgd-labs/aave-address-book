@@ -5,11 +5,11 @@ pragma solidity >=0.6.0;
 import {IUmbrella} from './common/IUmbrella.sol';
 
 library UmbrellaEthereum {
-  // https://etherscan.io/address/0xa6Cfa5803Da7851D6D9B7Dd97abF32DC53f7200d
-  IUmbrella internal constant UMBRELLA = IUmbrella(0xa6Cfa5803Da7851D6D9B7Dd97abF32DC53f7200d);
+  // https://etherscan.io/address/0xD400fc38ED4732893174325693a63C30ee3881a8
+  IUmbrella internal constant UMBRELLA = IUmbrella(0xD400fc38ED4732893174325693a63C30ee3881a8);
 
-  // https://etherscan.io/address/0xDE00aC600900ae5833F0aDbf601A1DAEbD16B482
-  address internal constant UMBRELLA_IMPL = 0xDE00aC600900ae5833F0aDbf601A1DAEbD16B482;
+  // https://etherscan.io/address/0x929e21D24D3f2A529621AdC248D227012B72646d
+  address internal constant UMBRELLA_IMPL = 0x929e21D24D3f2A529621AdC248D227012B72646d;
 
   // https://etherscan.io/address/0x75e8aC0c063B6966E2A9954adEdf39BdE9370197
   address internal constant UMBRELLA_STAKE_TOKEN_IMPL = 0x75e8aC0c063B6966E2A9954adEdf39BdE9370197;
@@ -33,10 +33,14 @@ library UmbrellaEthereum {
   // https://etherscan.io/address/0xCe6Ced23118EDEb23054E06118a702797b13fc2F
   address internal constant UMBRELLA_BATCH_HELPER = 0xCe6Ced23118EDEb23054E06118a702797b13fc2F;
 
-  // https://etherscan.io/address/0x0eb41d1f609EF1970a2F319C7a36BDa934d2c92a
-  address internal constant UMBRELLA_CONFIG_ENGINE = 0x0eb41d1f609EF1970a2F319C7a36BDa934d2c92a;
+  // https://etherscan.io/address/0x21f01c82Bc205c2A6F20E6694fd912cBccdcA208
+  address internal constant UMBRELLA_CONFIG_ENGINE = 0x21f01c82Bc205c2A6F20E6694fd912cBccdcA208;
 
   // https://etherscan.io/address/0xAeB694261D4A36A060974044fB1f2d15CFB7851b
   address internal constant DATA_AGGREGATION_HELPER = 0xAeB694261D4A36A060974044fB1f2d15CFB7851b;
+
+  // https://etherscan.io/address/0x6c1DC85f2aE71C3DAcd6E44Bb57DEeF61b540a5A
+  address internal constant DEFICIT_OFFSET_CLINIC_STEWARD =
+    0x6c1DC85f2aE71C3DAcd6E44Bb57DEeF61b540a5A;
 }
 library UmbrellaEthereumAssets {}

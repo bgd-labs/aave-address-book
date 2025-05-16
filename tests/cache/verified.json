@@ -2594,6 +2594,51 @@
     },
     "0x6A1792a91C08e9f0bFe7a990871B786643237f0F": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc": {
+      "name": "CLSynchronicityPriceAdapterPegToBase"
+    },
+    "0x577C217cB5b1691A500D48aA7F69346409cFd668": {
+      "name": "EBTCPriceCapAdapter"
+    },
+    "0xC139190F447e929f090Edeb554D95AbB8b18aC1C": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xEc4ef66D4fCeEba34aBB4dE69dB391Bc5476ccc8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xeA85a065F87FE28Aa8Fbf0D6C7deC472b106252C": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2FA6A78E3d617c1013a22938411602dc9Da98dBa": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xe1D97bF61901B075E9626c8A2340a7De385861Ef": {
+      "name": "WstETHPriceCapAdapter"
+    },
+    "0x5424384B256154046E9667dDFaaa5e550145215e": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x3f73F03aa83B2A48ed27E964eD0fDb590332095B": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xF3d49021fF3bbBFDfC1992A4b09E5D1d141D044C": {
+      "name": "EzETHPriceCapAdapter"
+    },
+    "0x7292C95A5f6A501a9c4B34f6393e221F2A0139c3": {
+      "name": "RsETHPriceCapAdapter"
+    },
+    "0xD400fc38ED4732893174325693a63C30ee3881a8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x929e21D24D3f2A529621AdC248D227012B72646d": {
+      "name": "Umbrella"
+    },
+    "0x21f01c82Bc205c2A6F20E6694fd912cBccdcA208": {
+      "name": "UmbrellaConfigEngine"
+    },
+    "0x6c1DC85f2aE71C3DAcd6E44Bb57DEeF61b540a5A": {
+      "name": "DeficitOffsetClinicSteward"
     }
   },
   "10": {
