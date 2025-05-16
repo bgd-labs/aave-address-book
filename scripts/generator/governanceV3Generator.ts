@@ -16,10 +16,10 @@ import {getClient} from '../clients';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;
-  EXECUTOR_LVL_2: Hex;
+  EXECUTOR_LVL_2?: Hex;
 };
 
-async function fetchV3ExecutorAddresses(
+export async function fetchV3ExecutorAddresses(
   client: Client,
   payloadsController: Hex,
 ): Promise<ExecutorsV3> {

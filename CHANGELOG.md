@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.20.0](https://github.com/bgd-labs/aave-address-book/compare/v4.19.3...v4.20.0) (2025-05-12)
+
+
+### Features
+
+* add umbrella contracts ([#924](https://github.com/bgd-labs/aave-address-book/issues/924)) ([a1ba47d](https://github.com/bgd-labs/aave-address-book/commit/a1ba47dd74c8950ffc68cbc66b18766164ea2663))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - pt eMode ([#935](https://github.com/bgd-labs/aave-address-book/issues/935)) ([866b97d](https://github.com/bgd-labs/aave-address-book/commit/866b97d7386f794fcd1e3d62f7c3633d1d76cc74))
+* **cache:** automated cache update - updated addresses ([#938](https://github.com/bgd-labs/aave-address-book/issues/938)) ([cb60ad2](https://github.com/bgd-labs/aave-address-book/commit/cb60ad22a4ac522ccb5eb14f71e040c3b0d67d0f))
+* **cache:** automated cache update - updated addresses ([#940](https://github.com/bgd-labs/aave-address-book/issues/940)) ([b81bd88](https://github.com/bgd-labs/aave-address-book/commit/b81bd88c48ac253da5b8e9292dd28f0feb05da78))
+* chainlink naming ([#937](https://github.com/bgd-labs/aave-address-book/issues/937)) ([ae336fc](https://github.com/bgd-labs/aave-address-book/commit/ae336fc147b6f7c2740966ccb4d4506dce128b3d))
+* migrate permissioned payloads controller ([#939](https://github.com/bgd-labs/aave-address-book/issues/939)) ([974ec3f](https://github.com/bgd-labs/aave-address-book/commit/974ec3fdab5b213ce52d829fc11257320083d137))
+
 ## [4.19.3](https://github.com/bgd-labs/aave-address-book/compare/v4.19.2...v4.19.3) (2025-05-05)
 
 

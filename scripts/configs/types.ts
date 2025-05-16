@@ -75,7 +75,6 @@ export interface PoolConfig {
     PERMISSION_MANAGER?: Hex;
     WALLET_BALANCE_PROVIDER?: Hex;
     GHO_DIRECT_MINTER?: Hex;
-    UMBRELLA?: Hex;
     DUST_BIN?: Hex;
     CLINIC_STEWARD?: Hex;
     SVR_STEWARD?: Hex;
@@ -101,6 +100,13 @@ export type ReserveData = {
   ORACLE: Hex;
   STATIC_A_TOKEN?: Hex;
   STATA_TOKEN?: Hex;
+};
+
+export type UmbrellaStakeData = {
+  STAKE_TOKEN: Hex;
+  UNDERLYING: Hex;
+  symbol: string;
+  decimals: number;
 };
 
 export type EMode = {
@@ -133,4 +139,17 @@ export interface GhoAddresses<T extends Record<string, AddressInfo> = {}> {
   name: string;
   chainId: number;
   addresses: T;
+}
+
+export interface UmbrellaConfig {
+  name: string;
+  chainId: number;
+  UMBRELLA: Hex;
+  additionalAddresses?: {
+    UMBRELLA_BATCH_HELPER?: Hex;
+    UMBRELLA_CONFIG_ENGINE?: Hex;
+    DATA_AGGREGATION_HELPER?: Hex;
+    PERMISSIONED_PAYLOADS_CONTROLLER?: Hex;
+    DEFICIT_OFFSET_CLINIC_STEWARD?: Hex;
+  };
 }

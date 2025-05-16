@@ -15,12 +15,25 @@ export const ICollector_ABI = [
   },
   {
     type: 'function',
+    name: 'FUNDS_ADMIN_ROLE',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'bytes32',
+        internalType: 'bytes32',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
     name: 'approve',
     inputs: [
       {
         name: 'token',
         type: 'address',
-        internalType: 'address',
+        internalType: 'contract IERC20',
       },
       {
         name: 'recipient',
@@ -120,19 +133,6 @@ export const ICollector_ABI = [
   },
   {
     type: 'function',
-    name: 'getFundsAdmin',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'address',
-        internalType: 'address',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
     name: 'getNextStreamId',
     inputs: [],
     outputs: [
@@ -200,25 +200,7 @@ export const ICollector_ABI = [
   },
   {
     type: 'function',
-    name: 'initialize',
-    inputs: [
-      {
-        name: 'fundsAdmin',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'nextStreamId',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    name: 'setFundsAdmin',
+    name: 'isFundsAdmin',
     inputs: [
       {
         name: 'admin',
@@ -226,8 +208,14 @@ export const ICollector_ABI = [
         internalType: 'address',
       },
     ],
-    outputs: [],
-    stateMutability: 'nonpayable',
+    outputs: [
+      {
+        name: '',
+        type: 'bool',
+        internalType: 'bool',
+      },
+    ],
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -236,7 +224,7 @@ export const ICollector_ABI = [
       {
         name: 'token',
         type: 'address',
-        internalType: 'address',
+        internalType: 'contract IERC20',
       },
       {
         name: 'recipient',
@@ -364,19 +352,6 @@ export const ICollector_ABI = [
   },
   {
     type: 'event',
-    name: 'NewFundsAdmin',
-    inputs: [
-      {
-        name: 'fundsAdmin',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
     name: 'WithdrawFromStream',
     inputs: [
       {
@@ -399,5 +374,60 @@ export const ICollector_ABI = [
       },
     ],
     anonymous: false,
+  },
+  {
+    type: 'error',
+    name: 'BalanceExceeded',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'DepositNotMultipleTimeDelta',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'DepositSmallerTimeDelta',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'InvalidRecipient',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'InvalidStartTime',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'InvalidStopTime',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'InvalidZeroAddress',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'InvalidZeroAmount',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'OnlyFundsAdmin',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'OnlyFundsAdminOrRecipient',
+    inputs: [],
+  },
+  {
+    type: 'error',
+    name: 'StreamDoesNotExist',
+    inputs: [],
   },
 ] as const;

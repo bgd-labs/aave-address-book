@@ -24,6 +24,10 @@
     "staticAT": {
       "name": "static a token",
       "description": "Tokens that are wrapped into a 4626 Vault"
+    },
+    "uStkToken": {
+      "name": "umbrella stake token",
+      "description": "New version of the Aave Safety Module stk tokens, used on Umbrella"
     }
   },
   "tokens": [
@@ -8032,6 +8036,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 108 },
-  "timestamp": "2025-05-13T17:11:32.194Z"
+  "version": { "major": 3, "minor": 0, "patch": 109 },
+  "timestamp": "2025-05-16T16:16:52.953Z"
 }

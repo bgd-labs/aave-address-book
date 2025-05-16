@@ -1,6 +1,6 @@
 import {Hex, zeroAddress} from 'viem';
-import {ReserveData} from '../configs/types';
-import {generateSolidityConstants, wrapIntoSolidityLibrary} from './utils';
+import {ReserveData, UmbrellaStakeData} from '../configs/types';
+import {generateSolidityConstants, wrapIntoSolidityLibrary, removeNetworkAbbreviation} from './utils';
 
 /**
  * As symbols are used as variable name in Solidity and Javascript there are certain characters that are not allowed and should be replaced.
@@ -64,6 +64,14 @@ export function fixSymbol(symbol: string, _underlying: string) {
     .replace('USD₮', 'USDT');
 }
 
+export function fixUmbrellaStakeSymbol(symbol: string, underlying: string) {
+  symbol = removeNetworkAbbreviation(fixSymbol(symbol, underlying));
+  return symbol
+    .replace('stk', 'STK_')
+    .replace('wa', 'WA_')
+    .replace(/(V\d+)/g, '_$1');
+}
+
 export function generateAssetsLibrary(
   chainId: number,
   reservesData: ReserveData[],
@@ -113,5 +121,45 @@ export function generateAssetsLibrary(
       libraryName,
     ),
     js: templateV3Assets,
+  };
+}
+
+export function generateUmbrellaStakeAssetsLibrary(
+  chainId: number,
+  umbrellaStakeData: UmbrellaStakeData[],
+  libraryName: string,
+) {
+  const formattedStakeData = umbrellaStakeData.map(({symbol: _symbol, ...rest}) => {
+    const symbol = fixUmbrellaStakeSymbol(_symbol, rest.UNDERLYING);
+    const addresses = {
+      [`${symbol}`]: rest.STAKE_TOKEN,
+      [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
+    };
+    return addresses;
+  });
+
+  const innerObject = umbrellaStakeData.reduce(
+    (acc, {symbol: _symbol, ...rest}) => {
+      const symbol = fixUmbrellaStakeSymbol(_symbol, rest.UNDERLYING);
+      acc[symbol] = rest;
+      return acc;
+    },
+    {} as {[address: string]: {[key: string]: Hex | number}},
+  );
+
+  let templateStakeAssets = `export const UMBRELLA_STAKE_ASSETS = ${JSON.stringify(
+    innerObject,
+    null,
+    2,
+  )} as const;\n`;
+
+  return {
+    solidity: wrapIntoSolidityLibrary(
+      formattedStakeData
+        .map((addresses) => generateSolidityConstants({chainId, addresses}))
+        .flat(),
+      libraryName,
+    ),
+    js: templateStakeAssets,
   };
 }
