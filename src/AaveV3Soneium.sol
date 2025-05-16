@@ -58,8 +58,8 @@ library AaveV3Soneium {
   // https://soneium.blockscout.com/address/0x169117F01c3272c09D45b3e52dFc11764D7258A9
   address internal constant CONFIG_ENGINE = 0x169117F01c3272c09D45b3e52dFc11764D7258A9;
 
-  // https://soneium.blockscout.com/address/0xA57ea84d23F6a1c6309654ECD90fBFE956B87d9a
-  address internal constant RISK_STEWARD = 0xA57ea84d23F6a1c6309654ECD90fBFE956B87d9a;
+  // https://soneium.blockscout.com/address/0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc
+  address internal constant RISK_STEWARD = 0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc;
 
   // https://soneium.blockscout.com/address/0x629A5a607aC4901252e4C48a0Fde156785598F5b
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

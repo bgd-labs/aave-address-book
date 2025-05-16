@@ -5586,9 +5586,6 @@
     "0x169117F01c3272c09D45b3e52dFc11764D7258A9": {
       "name": "AaveV3ConfigEngine"
     },
-    "0xA57ea84d23F6a1c6309654ECD90fBFE956B87d9a": {
-      "name": "RiskSteward"
-    },
     "0x629A5a607aC4901252e4C48a0Fde156785598F5b": {
       "name": "PoolAddressesProviderRegistry"
     },
@@ -5615,6 +5612,9 @@
     },
     "0xEf323B194caD8e02D9E5D8F07B34f625f1c088f1": {
       "name": "SafeProxy"
+    },
+    "0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc": {
+      "name": "RiskSteward"
     }
   },
   "5000": {
