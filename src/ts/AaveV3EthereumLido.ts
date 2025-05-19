@@ -187,13 +187,13 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'ETH correlated',
+    label: 'wstETH/WETH',
     collateralBitmap: '1',
     collateralAssets: ['0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0'],
     borrowableBitmap: '2',
     borrowableAssets: ['0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'],
-    ltv: 9350,
-    liquidationThreshold: 9550,
+    ltv: 9500,
+    liquidationThreshold: 9650,
     liquidationBonus: 10100,
   },
   '2': {
@@ -242,6 +242,20 @@ export const E_MODES = {
     ltv: 9250,
     liquidationThreshold: 9450,
     liquidationBonus: 10100,
+  },
+  '6': {
+    label: 'rsETH/Stablecoins',
+    collateralBitmap: '128',
+    collateralAssets: ['0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7'],
+    borrowableBitmap: '76',
+    borrowableAssets: [
+      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
+    ],
+    ltv: 7200,
+    liquidationThreshold: 7500,
+    liquidationBonus: 10750,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;

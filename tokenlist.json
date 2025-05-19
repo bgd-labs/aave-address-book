@@ -4823,6 +4823,28 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x63706e401c06ac8513145b7687A14804d17f814b",
+      "name": "Aave Token",
+      "decimals": 18,
+      "symbol": "AAVE",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg"
+    },
+    {
+      "chainId": 8453,
+      "address": "0x67EAF2BeE4384a2f84Da9Eb8105C661C123736BA",
+      "name": "Aave Base AAVE",
+      "decimals": 18,
+      "symbol": "aBasAAVE",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aaave.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x63706e401c06ac8513145b7687A14804d17f814b"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -8036,6 +8058,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 109 },
-  "timestamp": "2025-05-12T00:16:04.922Z"
+  "version": { "major": 3, "minor": 0, "patch": 110 },
+  "timestamp": "2025-05-19T11:29:49.436Z"
 }

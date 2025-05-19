@@ -277,7 +277,7 @@ library AaveV3EthereumLidoAssets {
 library AaveV3EthereumLidoEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant ETH_CORRELATED = 1;
+  uint8 internal constant WSTETH_WETH = 1;
 
   uint8 internal constant LRT_STABLECOINS_MAIN = 2;
 
@@ -286,6 +286,8 @@ library AaveV3EthereumLidoEModes {
   uint8 internal constant SUSDE_STABLECOINS = 4;
 
   uint8 internal constant RSETH_LST_MAIN = 5;
+
+  uint8 internal constant RSETH_STABLECOINS = 6;
 }
 library AaveV3EthereumLidoExternalLibraries {
   // https://etherscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
