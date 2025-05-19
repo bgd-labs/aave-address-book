@@ -389,9 +389,22 @@ export const E_MODES = {
     collateralAssets: ['0x4186BFC76E2E237523CBC30FD220FE055156b41F'],
     borrowableBitmap: '256',
     borrowableAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
-    ltv: 9250,
-    liquidationThreshold: 9450,
+    ltv: 9300,
+    liquidationThreshold: 9500,
     liquidationBonus: 10100,
+  },
+  '6': {
+    label: 'rsETH/Stablecoins',
+    collateralBitmap: '262144',
+    collateralAssets: ['0x4186BFC76E2E237523CBC30FD220FE055156b41F'],
+    borrowableBitmap: '36',
+    borrowableAssets: [
+      '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
+      '0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9',
+    ],
+    ltv: 7200,
+    liquidationThreshold: 7500,
+    liquidationBonus: 10750,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;

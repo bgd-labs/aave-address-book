@@ -584,8 +584,8 @@ export const E_MODES = {
       '0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0',
       '0xA35b1B31Ce002FBF2058D22F30f95D405200A15b',
     ],
-    ltv: 9250,
-    liquidationThreshold: 9450,
+    ltv: 9300,
+    liquidationThreshold: 9500,
     liquidationBonus: 10100,
   },
   '4': {
