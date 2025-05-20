@@ -1,14 +1,14 @@
 import 'dotenv/config';
-import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
-import {governanceConfigMainnet} from './configs/governance/ethereum';
-import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';
+import { appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'fs';
+import { governanceConfigMainnet } from './configs/governance/ethereum';
+import { arbitrumProtoV3, arbitrumSepoliaProtoV3 } from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
   avalancheProtoV3,
   fujiProtoV2,
   fujiProtoV3,
 } from './configs/pools/avalanche';
-import {baseProtoV3, baseSepoliaProtoV3, baseSepoliaLidoProtoV3} from './configs/pools/base';
+import { baseProtoV3, baseSepoliaProtoV3, baseSepoliaLidoProtoV3 } from './configs/pools/base';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
@@ -31,6 +31,7 @@ import {lineaProtoV3} from './configs/pools/linea';
 import {celoProtoV3} from './configs/pools/celo';
 import {mantleProtoV3} from './configs/pools/mantle';
 import {sonicProtoV3} from './configs/pools/sonic';
+import {soneiumProtoV3} from './configs/pools/soneium';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -74,11 +75,13 @@ import {generateGho} from './generator/ghoGenerator';
 import {governanceConfigLinea} from './configs/governance/linea';
 import {mantleAddresses} from './configs/networks/mantle';
 import {sonicAddresses} from './configs/networks/sonic';
+import {soneiumAddresses} from './configs/networks/soneium';
 import {governanceConfigMantle} from './configs/governance/mantle';
 import {governanceConfigSonic} from './configs/governance/sonic';
 import {umbrellaMainnetConfig} from './configs/umbrella/ethereum';
 import {umbrellaBaseSepoliaConfig} from './configs/umbrella/base';
 import {generateChainlink} from './generator/chainlink';
+import { governanceConfigSoneium } from './configs/governance/soneium';
 
 async function main() {
   // cleanup ts artifacts
@@ -111,6 +114,7 @@ async function main() {
       governanceConfigLinea,
       governanceConfigMantle,
       governanceConfigSonic,
+      governanceConfigSoneium
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -154,6 +158,7 @@ async function main() {
       celoProtoV3,
       mantleProtoV3,
       sonicProtoV3,
+      soneiumProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
@@ -183,6 +188,7 @@ async function main() {
     lineaAddresses,
     mantleAddresses,
     sonicAddresses,
+    soneiumAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
