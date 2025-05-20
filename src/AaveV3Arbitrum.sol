@@ -569,6 +569,8 @@ library AaveV3ArbitrumEModes {
   uint8 internal constant EZETH_STABLECOINS = 4;
 
   uint8 internal constant RSETH_WSTETH = 5;
+
+  uint8 internal constant RSETH_STABLECOINS = 6;
 }
 library AaveV3ArbitrumExternalLibraries {
   // https://arbiscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
