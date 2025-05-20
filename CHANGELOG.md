@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.21.0](https://github.com/bgd-labs/aave-address-book/compare/v4.20.1...v4.21.0) (2025-05-20)
+
+
+### Features
+
+* Add soneium addresses ([#928](https://github.com/bgd-labs/aave-address-book/issues/928)) ([bf0eed6](https://github.com/bgd-labs/aave-address-book/commit/bf0eed678c0ce9e3860aeac674c0b4bca9f67bf9))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#949](https://github.com/bgd-labs/aave-address-book/issues/949)) ([e3ade58](https://github.com/bgd-labs/aave-address-book/commit/e3ade580f8c7dddb2b63326a9e6800010d75661b))
+
 ## [4.20.1](https://github.com/bgd-labs/aave-address-book/compare/v4.20.0...v4.20.1) (2025-05-19)
 
 
