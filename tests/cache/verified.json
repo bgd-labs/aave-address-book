@@ -6225,6 +6225,18 @@
     },
     "0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D": {
       "name": "RiskOracle"
+    },
+    "0x63706e401c06ac8513145b7687A14804d17f814b": {
+      "name": "OptimismMintableERC20"
+    },
+    "0x67EAF2BeE4384a2f84Da9Eb8105C661C123736BA": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xcEC1Ea95dDEF7CFC27D3D9615E05b035af460978": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3d6774EF702A10b20FCa8Ed40FC022f7E4938e07": {
+      "name": "EACAggregatorProxy"
     }
   },
   "42161": {

@@ -107,6 +107,9 @@ export const SVR_STEWARD = '0x8b493f416F5F7933cC146b1899c069F2361cad60';
 // https://etherscan.io/address/0x22aC12a6937BBBC0a301AF9154d08EaD95673122
 export const POOL_EXPOSURE_STEWARD = '0x22aC12a6937BBBC0a301AF9154d08EaD95673122';
 
+// https://etherscan.io/address/0x83ab600cE8a61b43e1757b89C0589928f765c1C4
+export const EDGE_INJECTOR_PENDLE_EMODE = '0x83ab600cE8a61b43e1757b89C0589928f765c1C4';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   WETH: {
@@ -654,7 +657,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10270,
+    liquidationBonus: 10240,
   },
   '11': {
     label: 'USDe Stablecoin',
