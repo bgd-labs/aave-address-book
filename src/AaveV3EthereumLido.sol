@@ -100,9 +100,6 @@ library AaveV3EthereumLido {
   address internal constant EDGE_RISK_STEWARD_PENDLE_EMODE =
     0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A;
 
-  // https://etherscan.io/address/0x83ab600cE8a61b43e1757b89C0589928f765c1C4
-  address internal constant EDGE_INJECTOR_PENDLE_EMODE = 0x83ab600cE8a61b43e1757b89C0589928f765c1C4;
-
   // https://etherscan.io/address/0x7ABB46C690C52E919687D19ebF89C81A6136C1F2
   address internal constant EDGE_RISK_ORACLE = 0x7ABB46C690C52E919687D19ebF89C81A6136C1F2;
 

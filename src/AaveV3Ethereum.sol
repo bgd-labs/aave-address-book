@@ -121,6 +121,9 @@ library AaveV3Ethereum {
 
   // https://etherscan.io/address/0x22aC12a6937BBBC0a301AF9154d08EaD95673122
   address internal constant POOL_EXPOSURE_STEWARD = 0x22aC12a6937BBBC0a301AF9154d08EaD95673122;
+
+  // https://etherscan.io/address/0x83ab600cE8a61b43e1757b89C0589928f765c1C4
+  address internal constant EDGE_INJECTOR_PENDLE_EMODE = 0x83ab600cE8a61b43e1757b89C0589928f765c1C4;
 }
 library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
