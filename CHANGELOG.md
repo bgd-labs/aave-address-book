@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.22.0](https://github.com/bgd-labs/aave-address-book/compare/v4.21.0...v4.22.0) (2025-05-22)
+
+
+### Features
+
+* include sol on npm ([#953](https://github.com/bgd-labs/aave-address-book/issues/953)) ([19c15f6](https://github.com/bgd-labs/aave-address-book/commit/19c15f6100e2636bd24e8929635b84133c52e368))
+
+
+### Bug Fixes
+
+* injector directory ([#951](https://github.com/bgd-labs/aave-address-book/issues/951)) ([8b8fc72](https://github.com/bgd-labs/aave-address-book/commit/8b8fc7289a82634082daee98577020ec22fa9fc4))
+
 ## [4.21.0](https://github.com/bgd-labs/aave-address-book/compare/v4.20.1...v4.21.0) (2025-05-20)
 
 
