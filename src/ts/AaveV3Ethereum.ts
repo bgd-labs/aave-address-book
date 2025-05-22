@@ -641,9 +641,9 @@ export const E_MODES = {
       '0xdAC17F958D2ee523a2206206994597C13D831ec7',
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
     ],
-    ltv: 8890,
-    liquidationThreshold: 9090,
-    liquidationBonus: 10429,
+    ltv: 8940,
+    liquidationThreshold: 9140,
+    liquidationBonus: 10410,
   },
   '9': {
     label: 'PT-eUSDe Stablecoins May 2025',
