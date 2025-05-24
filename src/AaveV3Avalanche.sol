@@ -80,8 +80,8 @@ library AaveV3Avalanche {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x770ef9f4fe897e59daCc474EF11238303F9552b6;
 
-  // https://snowtrace.io/address/0xab22988D93d5F942fC6B6c6Ea285744809D1d9Cc
-  address internal constant PROOF_OF_RESERVE = 0xab22988D93d5F942fC6B6c6Ea285744809D1d9Cc;
+  // https://snowtrace.io/address/0xB94e515615c244Ab25f7A6e592e3Cb7EE31E99F4
+  address internal constant PROOF_OF_RESERVE = 0xB94e515615c244Ab25f7A6e592e3Cb7EE31E99F4;
 
   // https://snowtrace.io/address/0x80f2c02224a2E548FC67c0bF705eBFA825dd5439
   address internal constant PROOF_OF_RESERVE_AGGREGATOR =

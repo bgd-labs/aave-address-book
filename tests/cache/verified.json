@@ -7847,6 +7847,9 @@
     },
     "0x1273f29204fC102bD4620485B13cFE27a794fF32": {
       "name": "RiskOracle"
+    },
+    "0xB94e515615c244Ab25f7A6e592e3Cb7EE31E99F4": {
+      "name": "ProofOfReserveExecutorV3"
     }
   },
   "59144": {
