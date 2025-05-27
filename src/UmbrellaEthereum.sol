@@ -33,11 +33,11 @@ library UmbrellaEthereum {
   // https://etherscan.io/address/0xCe6Ced23118EDEb23054E06118a702797b13fc2F
   address internal constant UMBRELLA_BATCH_HELPER = 0xCe6Ced23118EDEb23054E06118a702797b13fc2F;
 
-  // https://etherscan.io/address/0x21f01c82Bc205c2A6F20E6694fd912cBccdcA208
-  address internal constant UMBRELLA_CONFIG_ENGINE = 0x21f01c82Bc205c2A6F20E6694fd912cBccdcA208;
+  // https://etherscan.io/address/0x3f3EfAeba02bbA78BA7E89Dc6Ec503C8fe5fd5a4
+  address internal constant UMBRELLA_CONFIG_ENGINE = 0x3f3EfAeba02bbA78BA7E89Dc6Ec503C8fe5fd5a4;
 
-  // https://etherscan.io/address/0xAeB694261D4A36A060974044fB1f2d15CFB7851b
-  address internal constant DATA_AGGREGATION_HELPER = 0xAeB694261D4A36A060974044fB1f2d15CFB7851b;
+  // https://etherscan.io/address/0xcc8FD820B1b9C5EBACA8615927f2fFc1f74B9dB3
+  address internal constant DATA_AGGREGATION_HELPER = 0xcc8FD820B1b9C5EBACA8615927f2fFc1f74B9dB3;
 
   // https://etherscan.io/address/0x6c1DC85f2aE71C3DAcd6E44Bb57DEeF61b540a5A
   address internal constant DEFICIT_OFFSET_CLINIC_STEWARD =
