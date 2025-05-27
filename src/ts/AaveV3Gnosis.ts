@@ -191,11 +191,8 @@ export const E_MODES = {
       '0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1',
       '0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6',
     ],
-    borrowableBitmap: '3',
-    borrowableAssets: [
-      '0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1',
-      '0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6',
-    ],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1'],
     ltv: 9000,
     liquidationThreshold: 9300,
     liquidationBonus: 10100,

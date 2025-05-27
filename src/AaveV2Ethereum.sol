@@ -520,9 +520,9 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x0606Be69451B1C9861Ac6b3626b99093b713E801
   address internal constant renFIL_ORACLE = 0x0606Be69451B1C9861Ac6b3626b99093b713E801;
 
-  // https://etherscan.io/address/0x6855E5544Cd803BF24c9612b3F12C009116B0ee1
+  // https://etherscan.io/address/0x311C866D55456e465e314A3E9830276B438A73f0
   address internal constant renFIL_INTEREST_RATE_STRATEGY =
-    0x6855E5544Cd803BF24c9612b3F12C009116B0ee1;
+    0x311C866D55456e465e314A3E9830276B438A73f0;
 
   // https://etherscan.io/address/0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919
   address internal constant RAI_UNDERLYING = 0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919;
