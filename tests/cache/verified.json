@@ -2639,6 +2639,12 @@
     },
     "0x6c1DC85f2aE71C3DAcd6E44Bb57DEeF61b540a5A": {
       "name": "DeficitOffsetClinicSteward"
+    },
+    "0x3f3EfAeba02bbA78BA7E89Dc6Ec503C8fe5fd5a4": {
+      "name": "UmbrellaConfigEngine"
+    },
+    "0xcc8FD820B1b9C5EBACA8615927f2fFc1f74B9dB3": {
+      "name": "DataAggregationHelper"
     }
   },
   "10": {
