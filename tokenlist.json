@@ -3119,6 +3119,68 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x917459337CaAC939D41d7493B3999f571D20D667",
+      "name": "PT Ethena USDe 31JUL2025",
+      "decimals": 18,
+      "symbol": "PT_USDe_31JUL2025",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x312ffC57778CEfa11989733e6E08143E7E229c1c",
+      "name": "Aave Ethereum PT_USDe_31JUL2025",
+      "decimals": 18,
+      "symbol": "aEthPT_USDe_31JUL2025",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x917459337CaAC939D41d7493B3999f571D20D667"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617",
+      "name": "PT Ethereal eUSDE 14AUG2025",
+      "decimals": 18,
+      "symbol": "PT_eUSDE_14AUG2025",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x2eDff5AF94334fBd7C38ae318edf1c40e072b73B",
+      "name": "Aave Ethereum PT_eUSDe_14AUG2025",
+      "decimals": 18,
+      "symbol": "aEthPT_eUSDe_14AUG2025",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x90D2af7d622ca3141efA4d8f1F24d86E5974Cc8F",
+      "name": "Ethereal Pre-deposit Vault",
+      "decimals": 18,
+      "symbol": "eUSDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eusde.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0x5F9190496e0DFC831C3bd307978de4a245E2F5cD",
+      "name": "Aave Ethereum eUSDe",
+      "decimals": 18,
+      "symbol": "aEtheUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeusde.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x90D2af7d622ca3141efA4d8f1F24d86E5974Cc8F"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -8058,6 +8120,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 110 },
-  "timestamp": "2025-05-19T11:29:49.436Z"
+  "version": { "major": 3, "minor": 0, "patch": 111 },
+  "timestamp": "2025-05-28T00:20:28.119Z"
 }
