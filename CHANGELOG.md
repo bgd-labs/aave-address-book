@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.22.0](https://github.com/bgd-labs/aave-address-book/compare/v4.21.0...v4.22.0) (2025-05-28)
+
+
+### Features
+
+* include sol on npm ([#953](https://github.com/bgd-labs/aave-address-book/issues/953)) ([19c15f6](https://github.com/bgd-labs/aave-address-book/commit/19c15f6100e2636bd24e8929635b84133c52e368))
+
+
+### Bug Fixes
+
+* avalanche PoR executor address ([#954](https://github.com/bgd-labs/aave-address-book/issues/954)) ([a70599b](https://github.com/bgd-labs/aave-address-book/commit/a70599b218c5b91eb85c693ae2d583500cd52ad8))
+* **cache:** automated cache update - updated addresses ([#955](https://github.com/bgd-labs/aave-address-book/issues/955)) ([954f139](https://github.com/bgd-labs/aave-address-book/commit/954f1394b869c17a1226c713632d8334965d6986))
+* **cache:** automated cache update - updated addresses ([#957](https://github.com/bgd-labs/aave-address-book/issues/957)) ([a374b5c](https://github.com/bgd-labs/aave-address-book/commit/a374b5c54ef5c48a4f28be575622f4922be1532a))
+* injector directory ([#951](https://github.com/bgd-labs/aave-address-book/issues/951)) ([8b8fc72](https://github.com/bgd-labs/aave-address-book/commit/8b8fc7289a82634082daee98577020ec22fa9fc4))
+* update umbrella helpers ([#956](https://github.com/bgd-labs/aave-address-book/issues/956)) ([1dbef10](https://github.com/bgd-labs/aave-address-book/commit/1dbef10cc1908f19f27bbfda223225f32d54218f))
+
 ## [4.21.0](https://github.com/bgd-labs/aave-address-book/compare/v4.20.1...v4.21.0) (2025-05-20)
 
 
