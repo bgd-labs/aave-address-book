@@ -137,8 +137,8 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC
   address internal constant DAIe_V_TOKEN = 0x8619d80FB0141ba7F184CbF22fd724116D9f7ffC;
 
-  // https://snowtrace.io/address/0xf82da795727633aFA9BB0f1B08A87c0F6A38723f
-  address internal constant DAIe_ORACLE = 0xf82da795727633aFA9BB0f1B08A87c0F6A38723f;
+  // https://snowtrace.io/address/0x0b47c51CCD4FaDe1D93C750bFCAB0a5ce8734ED0
+  address internal constant DAIe_ORACLE = 0x0b47c51CCD4FaDe1D93C750bFCAB0a5ce8734ED0;
 
   // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
   address internal constant DAIe_INTEREST_RATE_STRATEGY =
@@ -185,8 +185,8 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xFCCf3cAbbe80101232d343252614b6A3eE81C989
   address internal constant USDC_V_TOKEN = 0xFCCf3cAbbe80101232d343252614b6A3eE81C989;
 
-  // https://snowtrace.io/address/0xD8277249e871BE9A402fa286C2C5ec16046dC512
-  address internal constant USDC_ORACLE = 0xD8277249e871BE9A402fa286C2C5ec16046dC512;
+  // https://snowtrace.io/address/0xb0D7A8bbDcdb1203850b742bB4d7f57a1F1C8483
+  address internal constant USDC_ORACLE = 0xb0D7A8bbDcdb1203850b742bB4d7f57a1F1C8483;
 
   // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -254,8 +254,8 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7
   address internal constant USDt_V_TOKEN = 0xfb00AC187a8Eb5AFAE4eACE434F493Eb62672df7;
 
-  // https://snowtrace.io/address/0x39185f2236A6022b682e8BB93C040d125DA093CF
-  address internal constant USDt_ORACLE = 0x39185f2236A6022b682e8BB93C040d125DA093CF;
+  // https://snowtrace.io/address/0x5b7810a910B4a878AaA4800a824E5E5796838009
+  address internal constant USDt_ORACLE = 0x5b7810a910B4a878AaA4800a824E5E5796838009;
 
   // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
   address internal constant USDt_INTEREST_RATE_STRATEGY =
@@ -350,8 +350,8 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907
   address internal constant FRAX_V_TOKEN = 0x34e2eD44EF7466D5f9E0b782B5c08b57475e7907;
 
-  // https://snowtrace.io/address/0x6208576378D06ce69A27987b7A524A9B15d499a4
-  address internal constant FRAX_ORACLE = 0x6208576378D06ce69A27987b7A524A9B15d499a4;
+  // https://snowtrace.io/address/0x0b7c356de5E68A8A257fcD23Ac1e8204D753A6fb
+  address internal constant FRAX_ORACLE = 0x0b7c356de5E68A8A257fcD23Ac1e8204D753A6fb;
 
   // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
   address internal constant FRAX_INTEREST_RATE_STRATEGY =
@@ -374,8 +374,8 @@ library AaveV3AvalancheAssets {
   // https://snowtrace.io/address/0xCE186F6Cccb0c955445bb9d10C59caE488Fea559
   address internal constant MAI_V_TOKEN = 0xCE186F6Cccb0c955445bb9d10C59caE488Fea559;
 
-  // https://snowtrace.io/address/0xCcC55Db26B78a19Dba1beE0066F9c1665575439A
-  address internal constant MAI_ORACLE = 0xCcC55Db26B78a19Dba1beE0066F9c1665575439A;
+  // https://snowtrace.io/address/0x85142981C14D98a4B69B04225ca74b764648D443
+  address internal constant MAI_ORACLE = 0x85142981C14D98a4B69B04225ca74b764648D443;
 
   // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
   address internal constant MAI_INTEREST_RATE_STRATEGY = 0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da;

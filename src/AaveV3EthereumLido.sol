@@ -172,8 +172,8 @@ library AaveV3EthereumLidoAssets {
   // https://etherscan.io/address/0x2D9fe18b6c35FE439cC15D932cc5C943bf2d901E
   address internal constant USDS_V_TOKEN = 0x2D9fe18b6c35FE439cC15D932cc5C943bf2d901E;
 
-  // https://etherscan.io/address/0x4F01b76391A05d32B20FA2d05dD5963eE8db20E6
-  address internal constant USDS_ORACLE = 0x4F01b76391A05d32B20FA2d05dD5963eE8db20E6;
+  // https://etherscan.io/address/0x94C7FD62fd0506e71d8142E9D36687fC72A86B02
+  address internal constant USDS_ORACLE = 0x94C7FD62fd0506e71d8142E9D36687fC72A86B02;
 
   // https://etherscan.io/address/0x8958b1C39269167527821f8c276Ef7504883f2fa
   address internal constant USDS_INTEREST_RATE_STRATEGY =

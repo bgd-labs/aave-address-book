@@ -105,8 +105,8 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x13Bd89aF338f3c7eAE9a75852fC2F1ca28B4DDbF
   address internal constant mDAI_V_TOKEN = 0x13Bd89aF338f3c7eAE9a75852fC2F1ca28B4DDbF;
 
-  // https://explorer.metis.io/address/0xB3721282cd62Ba8F7bB02Cb843F3a34f9e109ef8
-  address internal constant mDAI_ORACLE = 0xB3721282cd62Ba8F7bB02Cb843F3a34f9e109ef8;
+  // https://explorer.metis.io/address/0xf577E512687C83706ccfeD31C1939C75E8ea966F
+  address internal constant mDAI_ORACLE = 0xf577E512687C83706ccfeD31C1939C75E8ea966F;
 
   // https://explorer.metis.io/address/0x258625AfDe0073f5Bbce50C0305f4C23B16C7F3a
   address internal constant mDAI_INTEREST_RATE_STRATEGY =
@@ -147,8 +147,8 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x571171a7EF1e3c8c83d47EF1a50E225E9c351380
   address internal constant mUSDC_V_TOKEN = 0x571171a7EF1e3c8c83d47EF1a50E225E9c351380;
 
-  // https://explorer.metis.io/address/0xF2acD6aE4fcf662161eA354dA844f224bf91FF8c
-  address internal constant mUSDC_ORACLE = 0xF2acD6aE4fcf662161eA354dA844f224bf91FF8c;
+  // https://explorer.metis.io/address/0x0b9cA640284cf2636577703f785D5aEEc466BC56
+  address internal constant mUSDC_ORACLE = 0x0b9cA640284cf2636577703f785D5aEEc466BC56;
 
   // https://explorer.metis.io/address/0x258625AfDe0073f5Bbce50C0305f4C23B16C7F3a
   address internal constant mUSDC_INTEREST_RATE_STRATEGY =
@@ -168,8 +168,8 @@ library AaveV3MetisAssets {
   // https://explorer.metis.io/address/0x6B45DcE8aF4fE5Ab3bFCF030d8fB57718eAB54e5
   address internal constant mUSDT_V_TOKEN = 0x6B45DcE8aF4fE5Ab3bFCF030d8fB57718eAB54e5;
 
-  // https://explorer.metis.io/address/0xD1D7DCBDE72916646A7F8AcE6Ad8C5179D8ddFbB
-  address internal constant mUSDT_ORACLE = 0xD1D7DCBDE72916646A7F8AcE6Ad8C5179D8ddFbB;
+  // https://explorer.metis.io/address/0x433636CB0136Cfd75145ccca608Bb548E6C037dE
+  address internal constant mUSDT_ORACLE = 0x433636CB0136Cfd75145ccca608Bb548E6C037dE;
 
   // https://explorer.metis.io/address/0x258625AfDe0073f5Bbce50C0305f4C23B16C7F3a
   address internal constant mUSDT_INTEREST_RATE_STRATEGY =

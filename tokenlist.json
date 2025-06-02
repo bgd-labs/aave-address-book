@@ -3181,6 +3181,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xC96dE26018A54D51c097160568752c4E3BD6C364",
+      "name": "Fire Bitcoin",
+      "decimals": 8,
+      "symbol": "FBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/fbtc.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0xcCA43ceF272c30415866914351fdfc3E881bb7c2",
+      "name": "Aave Ethereum FBTC",
+      "decimals": 8,
+      "symbol": "aEthFBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/afbtc.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xC96dE26018A54D51c097160568752c4E3BD6C364"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -7990,6 +8012,28 @@
       }
     },
     {
+      "chainId": 42220,
+      "address": "0xD221812de1BD094f35587EE8E174B07B6167D9Af",
+      "name": "Wrapped Ether (Celo native bridge)",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 42220,
+      "address": "0xf385280F36e009C157697D25E0B802EfaBfd789c",
+      "name": "Aave Celo WETH",
+      "decimals": 18,
+      "symbol": "aCelWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0xD221812de1BD094f35587EE8E174B07B6167D9Af"
+      }
+    },
+    {
       "chainId": 146,
       "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
       "name": "Wrapped Ether on Sonic",
@@ -8120,6 +8164,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 111 },
-  "timestamp": "2025-05-28T00:20:28.119Z"
+  "version": { "major": 3, "minor": 0, "patch": 112 },
+  "timestamp": "2025-06-02T16:57:38.885Z"
 }
