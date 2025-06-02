@@ -100,8 +100,8 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0x75c4d1Fb84429023170086f06E682DcbBF537b7d
   address internal constant DAI_V_TOKEN = 0x75c4d1Fb84429023170086f06E682DcbBF537b7d;
 
-  // https://polygonscan.com/address/0x08EDd9E1DF3b0b8498864C60a2FD6cDb13148885
-  address internal constant DAI_ORACLE = 0x08EDd9E1DF3b0b8498864C60a2FD6cDb13148885;
+  // https://polygonscan.com/address/0xC368bAB13A2b46D02c20c28AeBaB79bbE7E067AA
+  address internal constant DAI_ORACLE = 0xC368bAB13A2b46D02c20c28AeBaB79bbE7E067AA;
 
   // https://polygonscan.com/address/0xDa6b70b725404A0c6bb116B1584fb88Eb7d7ED6d
   address internal constant DAI_INTEREST_RATE_STRATEGY = 0xDa6b70b725404A0c6bb116B1584fb88Eb7d7ED6d;
@@ -117,8 +117,8 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0x248960A9d75EdFa3de94F7193eae3161Eb349a12
   address internal constant USDC_V_TOKEN = 0x248960A9d75EdFa3de94F7193eae3161Eb349a12;
 
-  // https://polygonscan.com/address/0xB611AA5E98112C7c3711Ca3a5187dC025B83C8e4
-  address internal constant USDC_ORACLE = 0xB611AA5E98112C7c3711Ca3a5187dC025B83C8e4;
+  // https://polygonscan.com/address/0xeAa310d63670b8C36699cE53E3e926b23355F3df
+  address internal constant USDC_ORACLE = 0xeAa310d63670b8C36699cE53E3e926b23355F3df;
 
   // https://polygonscan.com/address/0x4309B0d719a0Dfb526EE9C0E58b77635B2971cC4
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -135,8 +135,8 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0x8038857FD47108A07d1f6Bf652ef1cBeC279A2f3
   address internal constant USDT_V_TOKEN = 0x8038857FD47108A07d1f6Bf652ef1cBeC279A2f3;
 
-  // https://polygonscan.com/address/0xf840c80932908EF206056dF0882bC595e7150607
-  address internal constant USDT_ORACLE = 0xf840c80932908EF206056dF0882bC595e7150607;
+  // https://polygonscan.com/address/0xf44Fee6877F2f1a0b84c8bC49ff4Ec35DF089Ea0
+  address internal constant USDT_ORACLE = 0xf44Fee6877F2f1a0b84c8bC49ff4Ec35DF089Ea0;
 
   // https://polygonscan.com/address/0xAb85FD7DCBFdD40e822321DAc4D5fD3cf08b2542
   address internal constant USDT_INTEREST_RATE_STRATEGY =

@@ -123,8 +123,8 @@ library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0x9355032d747f1e08F8720CD01950E652eE15cdB7
   address internal constant USDC_V_TOKEN = 0x9355032d747f1e08F8720CD01950E652eE15cdB7;
 
-  // https://etherscan.io/address/0x736bF902680e68989886e9807CD7Db4B3E015d3C
-  address internal constant USDC_ORACLE = 0x736bF902680e68989886e9807CD7Db4B3E015d3C;
+  // https://etherscan.io/address/0xB6557F02F0a5dA7b9D3C2d979cc19e00e756F6dA
+  address internal constant USDC_ORACLE = 0xB6557F02F0a5dA7b9D3C2d979cc19e00e756F6dA;
 
   // https://etherscan.io/address/0xC16666b7FF197427BD255E6961A5F99cfb3A6059
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -141,8 +141,8 @@ library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0xD2cf07dEE40d3D530D15b88d689f5cd97A31FC3D
   address internal constant PYUSD_V_TOKEN = 0xD2cf07dEE40d3D530D15b88d689f5cd97A31FC3D;
 
-  // https://etherscan.io/address/0x150bAe7Ce224555D39AfdBc6Cb4B8204E594E022
-  address internal constant PYUSD_ORACLE = 0x150bAe7Ce224555D39AfdBc6Cb4B8204E594E022;
+  // https://etherscan.io/address/0x36964C0579D02E0a5AaAb89E24Cf8d7CDF3549EE
+  address internal constant PYUSD_ORACLE = 0x36964C0579D02E0a5AaAb89E24Cf8d7CDF3549EE;
 
   // https://etherscan.io/address/0xC16666b7FF197427BD255E6961A5F99cfb3A6059
   address internal constant PYUSD_INTEREST_RATE_STRATEGY =
@@ -159,8 +159,8 @@ library AaveV3EthereumEtherFiAssets {
   // https://etherscan.io/address/0xfd3aDA5AAbdc6531C7C2AC46c00eBf870f5a0E6B
   address internal constant FRAX_V_TOKEN = 0xfd3aDA5AAbdc6531C7C2AC46c00eBf870f5a0E6B;
 
-  // https://etherscan.io/address/0x45D270263BBee500CF8adcf2AbC0aC227097b036
-  address internal constant FRAX_ORACLE = 0x45D270263BBee500CF8adcf2AbC0aC227097b036;
+  // https://etherscan.io/address/0xeF50f8DC65402c3019586bc8725fCD0b99B8AAd7
+  address internal constant FRAX_ORACLE = 0xeF50f8DC65402c3019586bc8725fCD0b99B8AAd7;
 
   // https://etherscan.io/address/0xC16666b7FF197427BD255E6961A5F99cfb3A6059
   address internal constant FRAX_INTEREST_RATE_STRATEGY =

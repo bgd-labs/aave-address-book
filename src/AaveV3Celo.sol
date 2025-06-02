@@ -173,6 +173,24 @@ library AaveV3CeloAssets {
   // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
   address internal constant CELO_INTEREST_RATE_STRATEGY =
     0x8B62D241Bf59f40991DCd18531683156d7013355;
+
+  // https://celoscan.io/address/0xD221812de1BD094f35587EE8E174B07B6167D9Af
+  address internal constant WETH_UNDERLYING = 0xD221812de1BD094f35587EE8E174B07B6167D9Af;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://celoscan.io/address/0xf385280F36e009C157697D25E0B802EfaBfd789c
+  address internal constant WETH_A_TOKEN = 0xf385280F36e009C157697D25E0B802EfaBfd789c;
+
+  // https://celoscan.io/address/0x6508cff7c5FbA053Af00a4E894500e6fA00274B7
+  address internal constant WETH_V_TOKEN = 0x6508cff7c5FbA053Af00a4E894500e6fA00274B7;
+
+  // https://celoscan.io/address/0x1FcD30A73D67639c1cD89ff5746E7585731c083B
+  address internal constant WETH_ORACLE = 0x1FcD30A73D67639c1cD89ff5746E7585731c083B;
+
+  // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0x8B62D241Bf59f40991DCd18531683156d7013355;
 }
 library AaveV3CeloEModes {
   uint8 internal constant NONE = 0;
