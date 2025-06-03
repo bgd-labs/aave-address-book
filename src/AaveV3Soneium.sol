@@ -83,7 +83,61 @@ library AaveV3Soneium {
   // https://soneium.blockscout.com/address/0x03001Bcf6C6B916E793f7BB49b8928c29882b3D8
   address internal constant DUST_BIN = 0x03001Bcf6C6B916E793f7BB49b8928c29882b3D8;
 }
-library AaveV3SoneiumAssets {}
+library AaveV3SoneiumAssets {
+  // https://soneium.blockscout.com/address/0x4200000000000000000000000000000000000006
+  address internal constant WETH_UNDERLYING = 0x4200000000000000000000000000000000000006;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://soneium.blockscout.com/address/0x1bD45Cc20CE61BE344A64218E6Ade01E72b08f39
+  address internal constant WETH_A_TOKEN = 0x1bD45Cc20CE61BE344A64218E6Ade01E72b08f39;
+
+  // https://soneium.blockscout.com/address/0xC52375A5A04C0ABe5a6Ca5F3a344be2415EF54dB
+  address internal constant WETH_V_TOKEN = 0xC52375A5A04C0ABe5a6Ca5F3a344be2415EF54dB;
+
+  // https://soneium.blockscout.com/address/0x291cF980BA12505D65ee01BDe0882F1d5e533525
+  address internal constant WETH_ORACLE = 0x291cF980BA12505D65ee01BDe0882F1d5e533525;
+
+  // https://soneium.blockscout.com/address/0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0;
+
+  // https://soneium.blockscout.com/address/0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369
+  address internal constant USDCe_UNDERLYING = 0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369;
+
+  uint8 internal constant USDCe_DECIMALS = 6;
+
+  // https://soneium.blockscout.com/address/0xb2C9E934A55B58D20496A5019F8722a96d8A44d8
+  address internal constant USDCe_A_TOKEN = 0xb2C9E934A55B58D20496A5019F8722a96d8A44d8;
+
+  // https://soneium.blockscout.com/address/0xccE2594ea5bC482DB9b4826Ce25d0764fE56BfD8
+  address internal constant USDCe_V_TOKEN = 0xccE2594ea5bC482DB9b4826Ce25d0764fE56BfD8;
+
+  // https://soneium.blockscout.com/address/0xe9d6696fc74A8ef545D2c9C842f820763407E778
+  address internal constant USDCe_ORACLE = 0xe9d6696fc74A8ef545D2c9C842f820763407E778;
+
+  // https://soneium.blockscout.com/address/0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0
+  address internal constant USDCe_INTEREST_RATE_STRATEGY =
+    0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0;
+
+  // https://soneium.blockscout.com/address/0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35
+  address internal constant USDT_UNDERLYING = 0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35;
+
+  uint8 internal constant USDT_DECIMALS = 6;
+
+  // https://soneium.blockscout.com/address/0xBAB0366ADdA6d2845c6BB5db4339A824350d24F7
+  address internal constant USDT_A_TOKEN = 0xBAB0366ADdA6d2845c6BB5db4339A824350d24F7;
+
+  // https://soneium.blockscout.com/address/0xb3B6f42Ef71DDd9348136FFBdF02B545c0d2B799
+  address internal constant USDT_V_TOKEN = 0xb3B6f42Ef71DDd9348136FFBdF02B545c0d2B799;
+
+  // https://soneium.blockscout.com/address/0x01bcEb741614D4388028EaF3284DCB04386c30D2
+  address internal constant USDT_ORACLE = 0x01bcEb741614D4388028EaF3284DCB04386c30D2;
+
+  // https://soneium.blockscout.com/address/0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0
+  address internal constant USDT_INTEREST_RATE_STRATEGY =
+    0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0;
+}
 library AaveV3SoneiumEModes {
   uint8 internal constant NONE = 0;
 }

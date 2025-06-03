@@ -8162,8 +8162,74 @@
         "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
         "underlying": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955"
       }
+    },
+    {
+      "chainId": 1868,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0x1bD45Cc20CE61BE344A64218E6Ade01E72b08f39",
+      "name": "Aave Soneium WETH",
+      "decimals": 18,
+      "symbol": "aSoneWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0x4200000000000000000000000000000000000006"
+      }
+    },
+    {
+      "chainId": 1868,
+      "address": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369",
+      "name": "Bridged USDC (Soneium)",
+      "decimals": 6,
+      "symbol": "USDCe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0xb2C9E934A55B58D20496A5019F8722a96d8A44d8",
+      "name": "Aave Soneium USDCe",
+      "decimals": 6,
+      "symbol": "aSoneUSDCe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369"
+      }
+    },
+    {
+      "chainId": 1868,
+      "address": "0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0xBAB0366ADdA6d2845c6BB5db4339A824350d24F7",
+      "name": "Aave Soneium USDT",
+      "decimals": 6,
+      "symbol": "aSoneUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35"
+      }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 112 },
-  "timestamp": "2025-06-02T16:57:38.885Z"
+  "version": { "major": 3, "minor": 0, "patch": 113 },
+  "timestamp": "2025-06-03T15:55:31.979Z"
 }
