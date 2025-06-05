@@ -10,6 +10,7 @@ export enum VARIANT {
   STATA_TOKEN,
   STATIC_A_TOKEN,
   UMBRELLA_STAKE_TOKEN,
+  UMBRELLA_STAKE_STATA_TOKEN,
 }
 
 const VARIANT_TAGS: Record<VARIANT, AssetTag | undefined> = {
@@ -18,6 +19,7 @@ const VARIANT_TAGS: Record<VARIANT, AssetTag | undefined> = {
   [VARIANT.STATA_TOKEN]: 'stata',
   [VARIANT.STATIC_A_TOKEN]: 'stata',
   [VARIANT.UMBRELLA_STAKE_TOKEN]: 'stk',
+  [VARIANT.UMBRELLA_STAKE_STATA_TOKEN]: 'stkStata',
 };
 
 export async function getSymbolUri(symbol: string, variant: VARIANT): Promise<string | undefined> {
@@ -32,4 +34,9 @@ export async function getSymbolUri(symbol: string, variant: VARIANT): Promise<st
   } else {
     console.log('symbol not found', symbol, variant);
   }
+}
+
+export function getUmbrellaStkVariant(symbol: string): VARIANT {
+  return symbol.slice(3).startsWith('wa') ?
+    VARIANT.UMBRELLA_STAKE_STATA_TOKEN : VARIANT.UMBRELLA_STAKE_TOKEN;
 }

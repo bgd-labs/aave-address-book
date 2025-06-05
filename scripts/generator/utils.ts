@@ -1,4 +1,5 @@
-import {Client, Hex, getAddress, zeroAddress} from 'viem';
+import {Client, Hex, getAddress, getContract, zeroAddress} from 'viem';
+import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
 import {AddressInfo, Addresses} from '../configs/types';
 import {getStorageAt} from 'viem/actions';
 import {ChainList} from '@bgd-labs/toolbox';
@@ -143,4 +144,13 @@ export function removeNetworkAbbreviation(symbol: string): string {
   return symbol
     .replace('BasSep', '')
     .replace('Eth', '')
+}
+
+export async function getTokenSymbol(client: Client, token: Hex): Promise<string> {
+  const tokenContract = getContract({
+    address: token,
+    abi: IERC20Detailed_ABI,
+    client,
+  });
+  return await tokenContract.read.symbol();
 }
