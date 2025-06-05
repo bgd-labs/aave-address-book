@@ -3124,7 +3124,8 @@
       "name": "PT Ethena USDe 31JUL2025",
       "decimals": 18,
       "symbol": "PT_USDe_31JUL2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3133,6 +3134,7 @@
       "decimals": 18,
       "symbol": "aEthPT_USDe_31JUL2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x917459337CaAC939D41d7493B3999f571D20D667"
@@ -3144,7 +3146,8 @@
       "name": "PT Ethereal eUSDE 14AUG2025",
       "decimals": 18,
       "symbol": "PT_eUSDE_14AUG2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3153,6 +3156,7 @@
       "decimals": 18,
       "symbol": "aEthPT_eUSDe_14AUG2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617"
@@ -8230,6 +8234,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 113 },
-  "timestamp": "2025-06-03T15:55:31.979Z"
+  "version": { "major": 3, "minor": 0, "patch": 114 },
+  "timestamp": "2025-06-05T10:11:18.888Z"
 }
