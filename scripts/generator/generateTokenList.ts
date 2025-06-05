@@ -8,10 +8,12 @@ import {join} from 'path';
 import prettier from 'prettier';
 import {Address, getContract, Hex, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
+import {IStataTokenV2_ABI} from './../../src/ts/abis/IStataTokenV2';
 import {fixSymbol} from './assetsLibraryGenerator';
-import {getSymbolUri, VARIANT} from './svgUtils';
+import {getSymbolUri, getUmbrellaStkVariant, VARIANT} from './svgUtils';
 import {getClient} from '../clients';
 import {ChainList} from '@bgd-labs/toolbox';
+import {getTokenSymbol} from './utils';
 
 const TAGS = {
   underlying: 'underlying',
@@ -66,22 +68,36 @@ export async function generateTokenList(
       const alreadyInList = findInList(tokens, token, chainId);
       if (alreadyInList) return;
       const cache = findInList(cachedList.tokens, token, chainId);
+      const client = getClient(chainId);
 
       const erc20contract = getContract({
         abi: IERC20Detailed_ABI,
         address: token,
-        client: getClient(chainId),
+        client,
       });
       const [name, symbol] = cache
         ? [cache.name, cache.symbol]
         : token == '0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2'
           ? ['Maker', 'MKR']
           : await Promise.all([erc20contract.read.name(), erc20contract.read.symbol()]);
-      const symbolUri = await getSymbolUri(dataItem.symbol, variant);
+
+      let reserveSymbol = dataItem.symbol;
+      if (variant == VARIANT.UMBRELLA_STAKE_TOKEN) {
+        reserveSymbol = await getTokenSymbol(client, dataItem.UNDERLYING);
+      } else if (variant == VARIANT.UMBRELLA_STAKE_STATA_TOKEN) {
+        const umbrellaUnderlyingContract = getContract({
+          abi: IStataTokenV2_ABI,
+          address: dataItem.UNDERLYING,
+          client,
+        });
+        reserveSymbol = await getTokenSymbol(client, await umbrellaUnderlyingContract.read.asset());
+      }
+      const symbolUri = await getSymbolUri(reserveSymbol, variant);
+
       return tokens.push({
         chainId: chainId,
         address: token,
-        name: name.length > 40 ? `${name.substring(0, 37)}...` : name, // schema limits to 40 characters
+        name,
         decimals: dataItem.decimals,
         symbol: fixSymbol(symbol, token),
         tags,
@@ -132,7 +148,7 @@ export async function generateTokenList(
       for (const stakeData of umbrellaStakeData) {
         await addToken(
           stakeData.STAKE_TOKEN,
-          VARIANT.UMBRELLA_STAKE_TOKEN,
+          getUmbrellaStkVariant(stakeData.symbol),
           [TAGS.umbrellaStkToken],
           stakeData,
           {underlying: stakeData.UNDERLYING, umbrella}
