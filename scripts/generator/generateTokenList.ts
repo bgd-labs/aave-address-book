@@ -99,7 +99,7 @@ export async function generateTokenList(
         address: token,
         name,
         decimals: dataItem.decimals,
-        symbol: fixSymbol(symbol, token),
+        symbol: symbol,
         tags,
         ...(symbolUri ? {logoURI: symbolUri} : {}),
         ...(extensions ? {extensions} : {}),
