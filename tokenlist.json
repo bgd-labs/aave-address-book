@@ -7519,6 +7519,28 @@
       }
     },
     {
+      "chainId": 324,
+      "address": "0xd4169E045bcF9a86cC00101225d9ED61D2F51af2",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 324,
+      "address": "0x5722921bb6C37EaEb78b993765Aa5D79CC50052F",
+      "name": "Aave ZkSync wrsETH",
+      "decimals": 18,
+      "symbol": "aZkswrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x78e30497a3c7527d953c6B1E3541b021A98Ac43c",
+        "underlying": "0xd4169E045bcF9a86cC00101225d9ED61D2F51af2"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0xC035a7cf15375cE2706766804551791aD035E0C2",
       "name": "Aave Ethereum Lido wstETH",
@@ -8286,6 +8308,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 116 },
-  "timestamp": "2025-06-07T10:02:06.659Z"
+  "version": { "major": 3, "minor": 0, "patch": 117 },
+  "timestamp": "2025-06-12T00:15:42.309Z"
 }

@@ -236,8 +236,8 @@ export const E_MODES = {
     collateralAssets: ['0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7'],
     borrowableBitmap: '1',
     borrowableAssets: ['0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0'],
-    ltv: 9250,
-    liquidationThreshold: 9450,
+    ltv: 9300,
+    liquidationThreshold: 9500,
     liquidationBonus: 10100,
   },
   '6': {
