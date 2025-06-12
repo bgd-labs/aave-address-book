@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.22.3](https://github.com/bgd-labs/aave-address-book/compare/v4.22.2...v4.22.3) (2025-06-12)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#971](https://github.com/bgd-labs/aave-address-book/issues/971)) ([3497eee](https://github.com/bgd-labs/aave-address-book/commit/3497eee67eab1ef03eefa3c1293bac41983f4cfc))
+* **cache:** automated cache update - updated addresses ([#973](https://github.com/bgd-labs/aave-address-book/issues/973)) ([7e23dff](https://github.com/bgd-labs/aave-address-book/commit/7e23dff545949e179f2aae453f863f1f0a586ed8))
+* **cache:** automated cache update - updated addresses ([#974](https://github.com/bgd-labs/aave-address-book/issues/974)) ([31b0020](https://github.com/bgd-labs/aave-address-book/commit/31b00209b3a061900fb87ddc95da679f372a2e5d))
+* Update umbrella helpers ([#975](https://github.com/bgd-labs/aave-address-book/issues/975)) ([dafdcc5](https://github.com/bgd-labs/aave-address-book/commit/dafdcc58b72b7131b738895e22e21f32eb6196f1))
+* use unmodified symbols in exported tokenlist ([#970](https://github.com/bgd-labs/aave-address-book/issues/970)) ([b3a7ddd](https://github.com/bgd-labs/aave-address-book/commit/b3a7ddd7bf4361b239aeb470c8979631f286b107))
+
 ## [4.22.2](https://github.com/bgd-labs/aave-address-book/compare/v4.22.1...v4.22.2) (2025-06-05)
 
 
