@@ -36,8 +36,8 @@ library UmbrellaEthereum {
   // https://etherscan.io/address/0x3f3EfAeba02bbA78BA7E89Dc6Ec503C8fe5fd5a4
   address internal constant UMBRELLA_CONFIG_ENGINE = 0x3f3EfAeba02bbA78BA7E89Dc6Ec503C8fe5fd5a4;
 
-  // https://etherscan.io/address/0xcc8FD820B1b9C5EBACA8615927f2fFc1f74B9dB3
-  address internal constant DATA_AGGREGATION_HELPER = 0xcc8FD820B1b9C5EBACA8615927f2fFc1f74B9dB3;
+  // https://etherscan.io/address/0x5061c5aAEA55442a886fBC77dfD40e8489D1c07c
+  address internal constant DATA_AGGREGATION_HELPER = 0x5061c5aAEA55442a886fBC77dfD40e8489D1c07c;
 
   // https://etherscan.io/address/0x6c1DC85f2aE71C3DAcd6E44Bb57DEeF61b540a5A
   address internal constant DEFICIT_OFFSET_CLINIC_STEWARD =
