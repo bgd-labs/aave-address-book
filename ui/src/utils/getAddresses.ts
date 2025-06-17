@@ -40,17 +40,4 @@ export function flattenObject(
   return result;
 }
 
-const flattenedAddresses = flattenObject(addressBook);
-
-Object.keys(chainlinkFeeds).forEach((chainId) => {
-  const chainLinkFeeds = chainlinkFeeds[chainId as keyof typeof chainlinkFeeds];
-  chainLinkFeeds.forEach((feed) =>
-    flattenedAddresses.push({
-      chainId: Number(chainId),
-      path: ['Chainlink', feed.name],
-      value: feed.proxyAddress as Address,
-    }),
-  );
-});
-
-export { flattenedAddresses };
+export const flattenedAddresses = flattenObject(addressBook);
