@@ -13,7 +13,7 @@ library ChainlinkBase {
   address internal constant AXL_USD = 0x676C4C6C31D97A5581D3204C04A8125B350E2F9D;
 
   // https://basescan.org/address/0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061
-  address internal constant wstETHstETH_Exchange_Rate = 0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061;
+  address internal constant wstETH_stETH_Exchange_Rate = 0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061;
 
   // https://basescan.org/address/0xD89c7fFB39C44b17EAecd8717a75A36c19C07582
   address internal constant sUSDz_USDz_Exchange_Rate = 0xD89c7fFB39C44b17EAecd8717a75A36c19C07582;
@@ -52,7 +52,7 @@ library ChainlinkBase {
   address internal constant inETH_ETH_Exchange_Rate = 0x83ac12dBb5Bd7Fa597ab2FFEc9F2F13DeDdFe163;
 
   // https://basescan.org/address/0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04
-  address internal constant cbETHETH_Exchange_Rate = 0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04;
+  address internal constant cbETH_ETH_Exchange_Rate = 0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04;
 
   // https://basescan.org/address/0x35e9D7001819Ea3B39Da906aE6b06A62cfe2c181
   address internal constant weETH_eETH_Exchange_Rate = 0x35e9D7001819Ea3B39Da906aE6b06A62cfe2c181;
@@ -64,7 +64,7 @@ library ChainlinkBase {
   address internal constant DAI_USD = 0x591e79239a7d679378eC8c847e5038150364C78F;
 
   // https://basescan.org/address/0xe8dD07CCf5BC4922424140E44Eb970F5950725ef
-  address internal constant wrsETHETH_Exchange_Rate = 0xe8dD07CCf5BC4922424140E44Eb970F5950725ef;
+  address internal constant wrsETH_ETH_Exchange_Rate = 0xe8dD07CCf5BC4922424140E44Eb970F5950725ef;
 
   // https://basescan.org/address/0xC4300B7CF0646F0Fe4C5B2ACFCCC4dCA1346f5d8
   address internal constant ezETH_ETH_Exchange_Rate = 0xC4300B7CF0646F0Fe4C5B2ACFCCC4dCA1346f5d8;
@@ -98,7 +98,7 @@ library ChainlinkBase {
   address internal constant XAU_USD = 0x5213eBB69743b85644dbB6E25cdF994aFBb8cF31;
 
   // https://basescan.org/address/0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9
-  address internal constant MAG7SSI_USD = 0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9;
+  address internal constant MAG7_SSI_USD = 0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9;
 
   // https://basescan.org/address/0xB366E8Efb9661323ff477CedF70f55F897D6cFeA
   address internal constant ARKB_Reserves = 0xB366E8Efb9661323ff477CedF70f55F897D6cFeA;
@@ -113,7 +113,7 @@ library ChainlinkBase {
   address internal constant RETH_ETH = 0xf397bF97280B488cA19ee3093E81C0a77F02e9a5;
 
   // https://basescan.org/address/0xa669E5272E60f78299F4824495cE01a3923f4380
-  address internal constant wstETHETH_Exchange_Rate = 0xa669E5272E60f78299F4824495cE01a3923f4380;
+  address internal constant wstETH_ETH_Exchange_Rate = 0xa669E5272E60f78299F4824495cE01a3923f4380;
 
   // https://basescan.org/address/0xFC1415403EbB0c693f9a7844b92aD2Ff24775C65
   address internal constant weETH_ETH = 0xFC1415403EbB0c693f9a7844b92aD2Ff24775C65;
@@ -146,7 +146,7 @@ library ChainlinkBase {
   address internal constant TRY_USD = 0x29413773e7CD4Dfd6Ad89a50887877b88a6C592C;
 
   // https://basescan.org/address/0x1Eba1d6941088c8FCE2CbcaC80754C77871aD093
-  address internal constant sfrxETHfrxETH_Exchange_Rate =
+  address internal constant sfrxETH_frxETH_Exchange_Rate =
     0x1Eba1d6941088c8FCE2CbcaC80754C77871aD093;
 
   // https://basescan.org/address/0xBCF85224fc0756B9Fa45aA7892530B47e10b6433
@@ -272,7 +272,7 @@ library ChainlinkBase {
   address internal constant APT_USD = 0x88a98431C25329AA422B21D147c1518b34dD36F4;
 
   // https://basescan.org/address/0x67283A47E470afbCcc4aC74ccC32401a81027691
-  address internal constant SolvBTCBBN_SolvBTC_Exchange_Rate =
+  address internal constant SolvBTC_BBN_SolvBTC_Exchange_Rate =
     0x67283A47E470afbCcc4aC74ccC32401a81027691;
 
   // https://basescan.org/address/0x122b5334A8b55861dBc6729c294451471FbF318D

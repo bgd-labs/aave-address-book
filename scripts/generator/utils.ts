@@ -55,6 +55,21 @@ export function addressInfoToSolidityLibraryConstant(
   )};\n`;
 }
 
+function keyToVar(key: string) {
+  return key
+    .replace(/^(\d)/, '_$1')
+    .replace(/\+/g, 'Plus')
+    .replace(/ü/g, 'ue')
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ß/g, 'ss')
+    .replace(/^\s\s*/, '')
+    .replace(/\s\s*$/, '') //  trim both sides of string
+    .replace(/[^\w\ ]/gi, ' ') //  replaces all non-alphanumeric with empty string
+    .replace(/-{2,}/g, ' ') //  remove duplicate spaces
+    .replace(/ +/gi, '_'); //  Convert spaces to dashes,
+}
+
 export function generateSolidityConstants({
   chainId,
   addresses,
@@ -68,24 +83,7 @@ export function generateSolidityConstants({
         ? addresses[key] !== zeroAddress
         : addresses[key].value !== zeroAddress,
     )
-    .map((key) =>
-      addressInfoToSolidityLibraryConstant(
-        chainId,
-        key
-          .replace(/^(\d)/, '_$1')
-          .replace(/\+/g, 'Plus')
-          .replace(/ü/g, 'ue')
-          .replace(/ä/g, 'ae')
-          .replace(/ö/g, 'oe')
-          .replace(/ß/g, 'ss')
-          .replace(/^\s\s*/, '')
-          .replace(/\s\s*$/, '') //  trim both sides of string
-          .replace(/[^\w\ ]/gi, '') //  replaces all non-alphanumeric with empty string
-          .replace(/-{2,}/g, ' ') //  remove duplicate spaces
-          .replace(/ +/gi, '_'), //  Convert spaces to dashes,
-        addresses[key],
-      ),
-    );
+    .map((key) => addressInfoToSolidityLibraryConstant(chainId, keyToVar(key), addresses[key]));
 }
 
 export function addressToJsConstant(chainId: number, key: string, entry: AddressInfo) {
@@ -94,13 +92,13 @@ export function addressToJsConstant(chainId: number, key: string, entry: Address
       return `export const ${key} = ${entry.value};\n`;
     }
     const blockExplorerLinkComment = getExplorerLink(entry.chainId || chainId, entry.value);
-    return `// ${entry.type} ${blockExplorerLinkComment}\n export const ${key} = '${getAddress(
-      entry.value,
-    )}';\n`;
+    return `// ${entry.type} ${blockExplorerLinkComment}\n export const ${keyToVar(
+      key,
+    )} = '${getAddress(entry.value)}';\n`;
   }
 
   const blockExplorerLinkComment = getExplorerLink(chainId, entry);
-  return `// ${blockExplorerLinkComment}\nexport const ${key} = '${getAddress(entry)}';\n`;
+  return `// ${blockExplorerLinkComment}\nexport const ${keyToVar(key)} = '${getAddress(entry)}';\n`;
 }
 
 export function generateJsConstants({chainId, addresses}: {chainId: number; addresses: Addresses}) {
@@ -141,9 +139,7 @@ export function addressOrZero(address?: Hex): Hex {
 }
 
 export function removeNetworkAbbreviation(symbol: string): string {
-  return symbol
-    .replace('BasSep', '')
-    .replace('Eth', '')
+  return symbol.replace('BasSep', '').replace('Eth', '');
 }
 
 export async function getTokenSymbol(client: Client, token: Hex): Promise<string> {

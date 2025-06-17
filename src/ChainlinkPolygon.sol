@@ -61,7 +61,7 @@ library ChainlinkPolygon {
   address internal constant TUSD_USD = 0x7C5D415B64312D38c56B54358449d0a4058339d2;
 
   // https://polygonscan.com/address/0x67935f65D1577ced9f4929D3679A157E95C1c02c
-  address internal constant ETHUSD_Total_Marketcap = 0x67935f65D1577ced9f4929D3679A157E95C1c02c;
+  address internal constant ETH_USD_Total_Marketcap = 0x67935f65D1577ced9f4929D3679A157E95C1c02c;
 
   // https://polygonscan.com/address/0xf9184b8E5da48C19fA4E06f83f77742e748cca96
   address internal constant AMZN_USD = 0xf9184b8E5da48C19fA4E06f83f77742e748cca96;
@@ -157,7 +157,7 @@ library ChainlinkPolygon {
   address internal constant GHST_USD = 0xDD229Ce42f11D8Ee7fFf29bDB71C7b81352e11be;
 
   // https://polygonscan.com/address/0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d
-  address internal constant SPYUS = 0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d;
+  address internal constant SPY_US = 0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d;
 
   // https://polygonscan.com/address/0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2
   address internal constant KNC_USD = 0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2;
@@ -251,10 +251,10 @@ library ChainlinkPolygon {
   address internal constant XTZ_USD = 0x691e26AB58ff05800E028b0876A41B720b26FC65;
 
   // https://polygonscan.com/address/0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c
-  address internal constant wstETHstETH_Exchange_Rate = 0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c;
+  address internal constant wstETH_stETH_Exchange_Rate = 0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c;
 
   // https://polygonscan.com/address/0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F
-  address internal constant AAVE_Network_Emergency_Count_Polygon =
+  address internal constant AAVE_Network_Emergency_Count_Polygon_ =
     0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F;
 
   // https://polygonscan.com/address/0x76631863c2ae7367aF8f37Cd10d251DA7f1DE186
@@ -267,7 +267,7 @@ library ChainlinkPolygon {
   address internal constant sUSDe_USD = 0xe71A04ACe06e2667c7e1c802E998CBf44A6bf53C;
 
   // https://polygonscan.com/address/0xbd238a35Fb47aE22F0cC551f14ffB8E8f04FCA21
-  address internal constant DOGEUSD_Total_Marketcap = 0xbd238a35Fb47aE22F0cC551f14ffB8E8f04FCA21;
+  address internal constant DOGE_USD_Total_Marketcap = 0xbd238a35Fb47aE22F0cC551f14ffB8E8f04FCA21;
 
   // https://polygonscan.com/address/0xa070427bF5bA5709f70e98b94Cb2F435a242C46C
   address internal constant MKR_USD = 0xa070427bF5bA5709f70e98b94Cb2F435a242C46C;
@@ -297,7 +297,7 @@ library ChainlinkPolygon {
   address internal constant APE_USD = 0x2Ac3F3Bfac8fC9094BC3f0F9041a51375235B992;
 
   // https://polygonscan.com/address/0x18E4058491C3F58bC2f747A9E64cA256Ed6B318d
-  address internal constant BTCUSD_Total_Marketcap = 0x18E4058491C3F58bC2f747A9E64cA256Ed6B318d;
+  address internal constant BTC_USD_Total_Marketcap = 0x18E4058491C3F58bC2f747A9E64cA256Ed6B318d;
 
   // https://polygonscan.com/address/0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d
   address internal constant USDT_ETH = 0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d;
@@ -324,7 +324,7 @@ library ChainlinkPolygon {
   address internal constant CBETH_ETH = 0x0a6a03CdF7d0b48d4e4BA8e362A4FfC3aAC4f3c0;
 
   // https://polygonscan.com/address/0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7
-  address internal constant CGT_PoR_ETH = 0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7;
+  address internal constant CGT_PoR_ETH_ = 0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7;
 
   // https://polygonscan.com/address/0x336584C8E6Dc19637A5b36206B1c79923111b405
   address internal constant CRV_USD = 0x336584C8E6Dc19637A5b36206B1c79923111b405;

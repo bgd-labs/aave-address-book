@@ -43,13 +43,13 @@ library ChainlinkGnosis {
   address internal constant CHF_USD = 0xFb00261Af80ADb1629D3869E377ae1EEC7bE659F;
 
   // https://gnosisscan.io/address/0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA
-  address internal constant wstETHETH_Exchange_Rate = 0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA;
+  address internal constant wstETH_ETH_Exchange_Rate = 0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA;
 
   // https://gnosisscan.io/address/0xab70BCB260073d036d1660201e9d5405F5829b7a
   address internal constant EUR_USD = 0xab70BCB260073d036d1660201e9d5405F5829b7a;
 
   // https://gnosisscan.io/address/0xF937ffAeA1363e4Fa260760bDFA2aA8Fc911F84D
-  address internal constant AAVE_Network_Emergency_Count_Gnosis_Chain =
+  address internal constant AAVE_Network_Emergency_Count_Gnosis_Chain_ =
     0xF937ffAeA1363e4Fa260760bDFA2aA8Fc911F84D;
 
   // https://gnosisscan.io/address/0x0CaE8f5c10931f0Ce87Ed9BbB71391C6E93C2C26

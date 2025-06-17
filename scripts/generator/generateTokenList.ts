@@ -45,7 +45,7 @@ function findInList(tokens: TokenInfo[], address: Address, chainId: number) {
 }
 
 export async function generateTokenList(
-  tokenSources: (ReserveTokenListParams | UmbrellaTokenListParams)[]
+  tokenSources: (ReserveTokenListParams | UmbrellaTokenListParams)[],
 ) {
   const path = join(cwd(), 'tokenlist.json');
   const cachedList: TokenList = existsSync(path)
@@ -107,7 +107,7 @@ export async function generateTokenList(
     }
 
     if ('reservesData' in source && source.reservesData) {
-      const { reservesData, name: poolName } = source;
+      const {reservesData, name: poolName} = source;
       for (const reserve of reservesData) {
         await addToken(reserve.UNDERLYING, VARIANT.UNDERLYING, [TAGS.underlying], reserve);
         await addToken(
@@ -144,14 +144,14 @@ export async function generateTokenList(
       }
     }
     if ('umbrellaStakeData' in source && source.umbrellaStakeData) {
-      const { umbrellaStakeData, umbrella } = source;
+      const {umbrellaStakeData, umbrella} = source;
       for (const stakeData of umbrellaStakeData) {
         await addToken(
           stakeData.STAKE_TOKEN,
           getUmbrellaStkVariant(stakeData.symbol),
           [TAGS.umbrellaStkToken],
           stakeData,
-          {underlying: stakeData.UNDERLYING, umbrella}
+          {underlying: stakeData.UNDERLYING, umbrella},
         );
       }
     }
@@ -232,6 +232,5 @@ export async function generateTokenList(
   }
   return {
     js: [],
-    solidity: [],
   };
 }

@@ -13,7 +13,7 @@ library ChainlinkSonic {
   address internal constant mooBIFI_USD = 0xc9541134848f525f8eaEA262599a1668A3a9b6eD;
 
   // https://sonicscan.org/address/0xECB564e91f620fBFb59d0C4A41d7f10aDb0D1934
-  address internal constant AAVE_Network_Emergency_Count_Sonic =
+  address internal constant AAVE_Network_Emergency_Count_Sonic_ =
     0xECB564e91f620fBFb59d0C4A41d7f10aDb0D1934;
 
   // https://sonicscan.org/address/0xc76dFb89fF298145b417d221B2c747d84952e01d

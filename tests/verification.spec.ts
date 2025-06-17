@@ -90,8 +90,7 @@ async function checkVerified(item: ListItem) {
 function getApiUrl(chainId: number) {
   if (chainId === ChainId.metis)
     return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
-  if (chainId === ChainId.soneium)
-    return `https://soneium.blockscout.com/api`;
+  if (chainId === ChainId.soneium) return `https://soneium.blockscout.com/api`;
   return `https://api.etherscan.io/v2/api`;
 }
 
@@ -113,55 +112,51 @@ const knownErrors = {
   },
 };
 
-describe(
-  'verification',
-  () => {
-    it('should have all contracts verified except for the known set of errors', async () => {
-      const addressesToCheck = flattenedAddresses.filter(
-        (item) =>
-          ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
-          !ChainList[item.chainId].testnet &&
-          !knownErrors[item.chainId]?.[item.value],
-      );
-      const errors: {item: ListItem}[] = [];
-      let newVerified = false;
-      // unique set of addresses checked on this iteration
-      // used to prevent double checking the same address
-      const checked = new Set<string>();
-      for (const item of addressesToCheck) {
-        const hasBeenCheckedBefore = verified[item.chainId]?.[item.value];
-        if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
-          const key = `${item.chainId}-${item.value}`;
-          if (checked.has(key)) continue;
-          checked.add(key);
-          const client = getClient(item.chainId) as PublicClient;
-          const hasCode = await getCode(client, {address: item.value as Hex});
-          if (hasCode) {
-            const {status, result} = (await checkVerified(item)) as {
-              status: string;
-              result: {ContractName: string}[];
+describe('verification', {timeout: 500_000}, () => {
+  it('should have all contracts verified except for the known set of errors', async () => {
+    const addressesToCheck = flattenedAddresses.filter(
+      (item) =>
+        ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
+        !ChainList[item.chainId].testnet &&
+        !knownErrors[item.chainId]?.[item.value],
+    );
+    const errors: {item: ListItem}[] = [];
+    let newVerified = false;
+    // unique set of addresses checked on this iteration
+    // used to prevent double checking the same address
+    const checked = new Set<string>();
+    for (const item of addressesToCheck) {
+      const hasBeenCheckedBefore = verified[item.chainId]?.[item.value];
+      if (!hasBeenCheckedBefore && item.value !== zeroAddress) {
+        const key = `${item.chainId}-${item.value}`;
+        if (checked.has(key)) continue;
+        checked.add(key);
+        const client = getClient(item.chainId) as PublicClient;
+        const hasCode = await getCode(client, {address: item.value as Hex});
+        if (hasCode) {
+          const {status, result} = (await checkVerified(item)) as {
+            status: string;
+            result: {ContractName: string}[];
+          };
+          await sleep(300);
+          if (status !== '1' || !result[0].ContractName) {
+            errors.push({item});
+            console.log(item.value, result);
+          } else {
+            newVerified = true;
+            if (!verified[item.chainId]) verified[item.chainId] = {};
+            verified[item.chainId][item.value] = {
+              name: result[0].ContractName,
             };
-            await sleep(300);
-            if (status !== '1' || !result[0].ContractName) {
-              errors.push({item});
-              console.log(item.value, result);
-            } else {
-              newVerified = true;
-              if (!verified[item.chainId]) verified[item.chainId] = {};
-              verified[item.chainId][item.value] = {
-                name: result[0].ContractName,
-              };
+            if (newVerified) {
+              writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
+                encoding: 'utf-8',
+              });
             }
           }
         }
       }
-      if (newVerified) {
-        writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
-          encoding: 'utf-8',
-        });
-      }
-      expect(errors).toMatchSnapshot();
-    });
-  },
-  {timeout: 120_000},
-);
+    }
+    expect(errors).toMatchSnapshot();
+  });
+});

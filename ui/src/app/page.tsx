@@ -2,29 +2,17 @@ import { Suspense } from 'react';
 import { flattenedAddresses } from '../utils/getAddresses';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
-import { chainlinkFeeds, ChainList } from '@bgd-labs/toolbox';
+import { ChainList } from '@bgd-labs/toolbox';
 import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
 import logo from '@/assets/logo.svg';
 import { SafeDownload } from '@/components/SafeDownload';
-import { Address } from 'viem';
 
 const TAG_MAP: Record<string, string[]> = {
   S_TOKEN: ['stable', 'debt'],
   V_TOKEN: ['variable', 'debt'],
   STATA_TOKEN: ['stata', 'static'],
 };
-
-Object.keys(chainlinkFeeds).forEach((chainId) => {
-  const chainLinkFeeds = chainlinkFeeds[chainId as keyof typeof chainlinkFeeds];
-  chainLinkFeeds.forEach((feed) =>
-    flattenedAddresses.push({
-      chainId: Number(chainId),
-      path: ['Chainlink', feed.name],
-      value: feed.proxyAddress as Address,
-    }),
-  );
-});
 
 const addresses = flattenedAddresses.map((item) => ({
   ...item,

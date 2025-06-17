@@ -286,7 +286,7 @@ library ChainlinkBNB {
   address internal constant ZAR_USD = 0xDE1952A1bF53f8E558cc761ad2564884E55B2c6F;
 
   // https://bscscan.com/address/0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1
-  address internal constant AAVE_Network_Emergency_Count_BNB_Chain =
+  address internal constant AAVE_Network_Emergency_Count_BNB_Chain_ =
     0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1;
 
   // https://bscscan.com/address/0x66cD2975d02f5F5cdEF2E05cBca12549B1a5022D
@@ -305,7 +305,7 @@ library ChainlinkBNB {
   address internal constant wstETH_stETH_Exchange_Rate = 0x4c75d01cfa4D998770b399246400a6dc40FB9645;
 
   // https://bscscan.com/address/0x601CaA447C59Dc4E25992f4057BbE828F66193C0
-  address internal constant SolvBTCBBN_SolvBTC_Exchange_Rate =
+  address internal constant SolvBTC_BBN_SolvBTC_Exchange_Rate =
     0x601CaA447C59Dc4E25992f4057BbE828F66193C0;
 
   // https://bscscan.com/address/0x798A65D349B2B5E6645695912880b54dfFd79074

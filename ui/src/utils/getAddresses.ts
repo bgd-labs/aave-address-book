@@ -1,4 +1,3 @@
-import { chainlinkFeeds } from '@bgd-labs/toolbox';
 import * as addressBook from '../../../src/ts/AaveAddressBook';
 import { isAddress, Address, zeroAddress } from 'viem';
 
