@@ -93,7 +93,7 @@ export const inwstETH_wstETH_Exchange_Rate = '0xb58c5C550Ba19c4CEeE071F8CeeB58f8
 export const XAU_USD = '0x5213eBB69743b85644dbB6E25cdF994aFBb8cF31';
 
 // https://basescan.org/address/0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9
-export const MAG7_SSI_USD = '0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9';
+export const MAG7SSI_USD = '0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9';
 
 // https://basescan.org/address/0xB366E8Efb9661323ff477CedF70f55F897D6cFeA
 export const ARKB_Reserves = '0xB366E8Efb9661323ff477CedF70f55F897D6cFeA';
@@ -264,7 +264,7 @@ export const uniBTC_BTC_Exchange_Rate = '0xbC7c5023eE571e4D9C4890C90a16be05c1EEf
 export const APT_USD = '0x88a98431C25329AA422B21D147c1518b34dD36F4';
 
 // https://basescan.org/address/0x67283A47E470afbCcc4aC74ccC32401a81027691
-export const SolvBTC_BBN_SolvBTC_Exchange_Rate = '0x67283A47E470afbCcc4aC74ccC32401a81027691';
+export const SolvBTCBBN_SolvBTC_Exchange_Rate = '0x67283A47E470afbCcc4aC74ccC32401a81027691';
 
 // https://basescan.org/address/0x122b5334A8b55861dBc6729c294451471FbF318D
 export const MLN_USD = '0x122b5334A8b55861dBc6729c294451471FbF318D';

@@ -6,7 +6,7 @@ export const pufETH_ETH = '0xEEDE303b8602Db7556eD57BDf7133A6bAADa294D';
 export const BTC_USD = '0x884E2819193d8c8993036290D5a8778Dbe3942f2';
 
 // https://soneium.blockscout.com/address/0x564eC0aeEb910e99dA4aC9341f3C01052F80A74B
-export const SolvBTC_BBN_SolvBTC_Exchange_Rate = '0x564eC0aeEb910e99dA4aC9341f3C01052F80A74B';
+export const SolvBTCBBN_SolvBTC_Exchange_Rate = '0x564eC0aeEb910e99dA4aC9341f3C01052F80A74B';
 
 // https://soneium.blockscout.com/address/0xaDE1b9AbB98c6A542E4B49db2588a3Ec4bF7Cdf0
 export const L2_Sequencer_Uptime_Status_Feed = '0xaDE1b9AbB98c6A542E4B49db2588a3Ec4bF7Cdf0';

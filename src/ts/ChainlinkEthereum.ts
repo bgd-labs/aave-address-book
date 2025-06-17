@@ -390,7 +390,7 @@ export const USDL_USD = '0x8697D23509F328F90135933de0Dde38Eb86d4893';
 export const Unichain_Healthcheck = '0x5d8017CDC949AA0a6c00999B970892456d4f5fF3';
 
 // https://etherscan.io/address/0x1f34794A16D644b9810477EbF3f0b3870141E2e3
-export const SolvBTC_BBN_SolvBTC_Exchange_Rate = '0x1f34794A16D644b9810477EbF3f0b3870141E2e3';
+export const SolvBTCBBN_SolvBTC_Exchange_Rate = '0x1f34794A16D644b9810477EbF3f0b3870141E2e3';
 
 // https://etherscan.io/address/0x86cF33a451dE9dc61a2862FD94FF4ad4Bd65A5d2
 export const GRT_USD = '0x86cF33a451dE9dc61a2862FD94FF4ad4Bd65A5d2';

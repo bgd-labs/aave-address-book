@@ -157,7 +157,7 @@ library ChainlinkPolygon {
   address internal constant GHST_USD = 0xDD229Ce42f11D8Ee7fFf29bDB71C7b81352e11be;
 
   // https://polygonscan.com/address/0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d
-  address internal constant SPY_US = 0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d;
+  address internal constant SPYUS = 0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d;
 
   // https://polygonscan.com/address/0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2
   address internal constant KNC_USD = 0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2;

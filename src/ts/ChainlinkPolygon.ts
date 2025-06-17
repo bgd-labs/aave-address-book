@@ -153,7 +153,7 @@ export const GRT_USD = '0x3FabBfb300B1e2D7c9B84512fe9D30aeDF24C410';
 export const GHST_USD = '0xDD229Ce42f11D8Ee7fFf29bDB71C7b81352e11be';
 
 // https://polygonscan.com/address/0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d
-export const SPY_US = '0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d';
+export const SPYUS = '0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d';
 
 // https://polygonscan.com/address/0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2
 export const KNC_USD = '0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2';

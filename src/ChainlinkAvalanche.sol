@@ -4,7 +4,7 @@ pragma solidity >=0.6.0;
 
 library ChainlinkAvalanche {
   // https://snowtrace.io/address/0xebEfEAA58636DF9B20a4fAd78Fad8759e6A20e87
-  address internal constant WBTC_e_PoR = 0xebEfEAA58636DF9B20a4fAd78Fad8759e6A20e87;
+  address internal constant WBTCe_PoR = 0xebEfEAA58636DF9B20a4fAd78Fad8759e6A20e87;
 
   // https://snowtrace.io/address/0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e
   address internal constant SAND_USD = 0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e;
@@ -31,7 +31,7 @@ library ChainlinkAvalanche {
   address internal constant Exchange_Rate_ggAVAX_AVAX = 0xA5ecED13b233BcF5c58BFbada5247d5B2893cB9a;
 
   // https://snowtrace.io/address/0x976D7fAc81A49FA71EF20694a3C56B9eFB93c30B
-  address internal constant DAI_e_PoR = 0x976D7fAc81A49FA71EF20694a3C56B9eFB93c30B;
+  address internal constant DAIe_PoR = 0x976D7fAc81A49FA71EF20694a3C56B9eFB93c30B;
 
   // https://snowtrace.io/address/0x7E77D9F06056017334e26bEd92176222169DE6C1
   address internal constant deUSD_USD = 0x7E77D9F06056017334e26bEd92176222169DE6C1;
@@ -71,7 +71,7 @@ library ChainlinkAvalanche {
   address internal constant ADA_USD = 0x69C2703b8F1A85a2EF6aBDd085699a9F909BE053;
 
   // https://snowtrace.io/address/0x99311B4bf6D8E3D3B4b9fbdD09a1B0F4Ad8e06E9
-  address internal constant BTC_b_PoR = 0x99311B4bf6D8E3D3B4b9fbdD09a1B0F4Ad8e06E9;
+  address internal constant BTCb_PoR = 0x99311B4bf6D8E3D3B4b9fbdD09a1B0F4Ad8e06E9;
 
   // https://snowtrace.io/address/0x5C2d58627Fbe746f5ea24Ef6D618f09f8e3f0122
   address internal constant AUSD_USD = 0x5C2d58627Fbe746f5ea24Ef6D618f09f8e3f0122;
@@ -92,7 +92,7 @@ library ChainlinkAvalanche {
   address internal constant JOE_USD = 0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a;
 
   // https://snowtrace.io/address/0x943cEF1B112Ca9FD7EDaDC9A46477d3812a382b6
-  address internal constant LINK_e_PoR = 0x943cEF1B112Ca9FD7EDaDC9A46477d3812a382b6;
+  address internal constant LINKe_PoR = 0x943cEF1B112Ca9FD7EDaDC9A46477d3812a382b6;
 
   // https://snowtrace.io/address/0x2dD517B2f9ba49CedB0573131FD97a5AC19ff648
   address internal constant FTM_USD = 0x2dD517B2f9ba49CedB0573131FD97a5AC19ff648;
@@ -132,7 +132,7 @@ library ChainlinkAvalanche {
     0xfD2b540D6c147D0889A1F1B97a2A9aB694992677;
 
   // https://snowtrace.io/address/0xc0990e0989141a5F535a2a24b6Af65618CC83d32
-  address internal constant SolvBTC_BBN_SolvBTC_Exchange_Rate =
+  address internal constant SolvBTCBBN_SolvBTC_Exchange_Rate =
     0xc0990e0989141a5F535a2a24b6Af65618CC83d32;
 
   // https://snowtrace.io/address/0x2F194315f122d374a27973e259783d5C864A5bf6
@@ -169,7 +169,7 @@ library ChainlinkAvalanche {
   address internal constant DOT_USD = 0xD73a74314AcCb53b30cAfDA0cb61c9772B57C4a2;
 
   // https://snowtrace.io/address/0x14C4c668E34c09E1FBA823aD5DB47F60aeBDD4F7
-  address internal constant AAVE_e_PoR = 0x14C4c668E34c09E1FBA823aD5DB47F60aeBDD4F7;
+  address internal constant AAVEe_PoR = 0x14C4c668E34c09E1FBA823aD5DB47F60aeBDD4F7;
 
   // https://snowtrace.io/address/0x9a1372f9b1B71B3A5a72E092AE67E172dBd7Daaa
   address internal constant UNI_USD = 0x9a1372f9b1B71B3A5a72E092AE67E172dBd7Daaa;
@@ -178,7 +178,7 @@ library ChainlinkAvalanche {
   address internal constant MIMATIC_USD = 0x5D1F504211c17365CA66353442a74D4435A8b778;
 
   // https://snowtrace.io/address/0xDDaf9290D057BfA12d7576e6dADC109421F31948
-  address internal constant WETH_e_PoR = 0xDDaf9290D057BfA12d7576e6dADC109421F31948;
+  address internal constant WETHe_PoR = 0xDDaf9290D057BfA12d7576e6dADC109421F31948;
 
   // https://snowtrace.io/address/0x7FDE7f51dc2580dd051e17A333E28CDC8176da0A
   address internal constant NEAR_USD = 0x7FDE7f51dc2580dd051e17A333E28CDC8176da0A;
@@ -229,7 +229,7 @@ library ChainlinkAvalanche {
   address internal constant EURC_USD = 0x3368310bC4AeE5D96486A73bae8E6b49FcDE62D3;
 
   // https://snowtrace.io/address/0x94D8c2548018C27F1aa078A23C4158206bE1CC72
-  address internal constant USDT_e_PoR = 0x94D8c2548018C27F1aa078A23C4158206bE1CC72;
+  address internal constant USDTe_PoR = 0x94D8c2548018C27F1aa078A23C4158206bE1CC72;
 
   // https://snowtrace.io/address/0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a
   address internal constant USDT_USD = 0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a;
@@ -238,7 +238,7 @@ library ChainlinkAvalanche {
   address internal constant CRV_USD = 0x7CF8A6090A9053B01F3DF4D4e6CfEdd8c90d9027;
 
   // https://snowtrace.io/address/0x63769951E4cfDbDC653dD9BBde63D2Ce0746e5F2
-  address internal constant USDC_e_PoR = 0x63769951E4cfDbDC653dD9BBde63D2Ce0746e5F2;
+  address internal constant USDCe_PoR = 0x63769951E4cfDbDC653dD9BBde63D2Ce0746e5F2;
 
   // https://snowtrace.io/address/0xC4D7270aCc921DE5A17452437257f075C1298eB3
   address internal constant CHZ_USD = 0xC4D7270aCc921DE5A17452437257f075C1298eB3;

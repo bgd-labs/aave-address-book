@@ -64,6 +64,7 @@ function keyToVar(key: string) {
     .replace(/ö/g, 'oe')
     .replace(/ß/g, 'ss')
     .replace(/^\s\s*/, '')
+    .replace(/\./g, '')
     .replace(/[^\w\ ]/gi, ' ') //  replaces all non-alphanumeric with empty string
     .replace(/-{2,}/g, ' ') //  remove duplicate spaces
     .replace(/\s\s*$/, '') //  trim both sides of string

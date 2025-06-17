@@ -98,7 +98,7 @@ library ChainlinkBase {
   address internal constant XAU_USD = 0x5213eBB69743b85644dbB6E25cdF994aFBb8cF31;
 
   // https://basescan.org/address/0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9
-  address internal constant MAG7_SSI_USD = 0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9;
+  address internal constant MAG7SSI_USD = 0x2B1de6AD89847C11aF2ede14edB013AA79E94aC9;
 
   // https://basescan.org/address/0xB366E8Efb9661323ff477CedF70f55F897D6cFeA
   address internal constant ARKB_Reserves = 0xB366E8Efb9661323ff477CedF70f55F897D6cFeA;
@@ -272,7 +272,7 @@ library ChainlinkBase {
   address internal constant APT_USD = 0x88a98431C25329AA422B21D147c1518b34dD36F4;
 
   // https://basescan.org/address/0x67283A47E470afbCcc4aC74ccC32401a81027691
-  address internal constant SolvBTC_BBN_SolvBTC_Exchange_Rate =
+  address internal constant SolvBTCBBN_SolvBTC_Exchange_Rate =
     0x67283A47E470afbCcc4aC74ccC32401a81027691;
 
   // https://basescan.org/address/0x122b5334A8b55861dBc6729c294451471FbF318D

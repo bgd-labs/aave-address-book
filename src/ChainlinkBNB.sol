@@ -305,7 +305,7 @@ library ChainlinkBNB {
   address internal constant wstETH_stETH_Exchange_Rate = 0x4c75d01cfa4D998770b399246400a6dc40FB9645;
 
   // https://bscscan.com/address/0x601CaA447C59Dc4E25992f4057BbE828F66193C0
-  address internal constant SolvBTC_BBN_SolvBTC_Exchange_Rate =
+  address internal constant SolvBTCBBN_SolvBTC_Exchange_Rate =
     0x601CaA447C59Dc4E25992f4057BbE828F66193C0;
 
   // https://bscscan.com/address/0x798A65D349B2B5E6645695912880b54dfFd79074

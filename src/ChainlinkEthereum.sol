@@ -396,7 +396,7 @@ library ChainlinkEthereum {
   address internal constant Unichain_Healthcheck = 0x5d8017CDC949AA0a6c00999B970892456d4f5fF3;
 
   // https://etherscan.io/address/0x1f34794A16D644b9810477EbF3f0b3870141E2e3
-  address internal constant SolvBTC_BBN_SolvBTC_Exchange_Rate =
+  address internal constant SolvBTCBBN_SolvBTC_Exchange_Rate =
     0x1f34794A16D644b9810477EbF3f0b3870141E2e3;
 
   // https://etherscan.io/address/0x86cF33a451dE9dc61a2862FD94FF4ad4Bd65A5d2
