@@ -1,3 +1,4 @@
+import { chainlinkFeeds } from '@bgd-labs/toolbox';
 import * as addressBook from '../../../src/ts/AaveAddressBook';
 import { isAddress, Address, zeroAddress } from 'viem';
 
@@ -39,4 +40,17 @@ export function flattenObject(
   return result;
 }
 
-export const flattenedAddresses = flattenObject(addressBook);
+const flattenedAddresses = flattenObject(addressBook);
+
+Object.keys(chainlinkFeeds).forEach((chainId) => {
+  const chainLinkFeeds = chainlinkFeeds[chainId as keyof typeof chainlinkFeeds];
+  chainLinkFeeds.forEach((feed) =>
+    flattenedAddresses.push({
+      chainId: Number(chainId),
+      path: ['Chainlink', feed.name],
+      value: feed.proxyAddress as Address,
+    }),
+  );
+});
+
+export { flattenedAddresses };
