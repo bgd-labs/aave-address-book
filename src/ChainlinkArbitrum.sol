@@ -596,7 +596,7 @@ library ChainlinkArbitrum {
   address internal constant RSETH_ETH = 0xb0EA543f9F8d4B818550365d13F66Da747e1476A;
 
   // https://arbiscan.io/address/0x19eCDd6DDc12597ec4A522fB1E25b1A580B605B7
-  address internal constant GM_BTC_USD_WBTC_WBTC_ = 0x19eCDd6DDc12597ec4A522fB1E25b1A580B605B7;
+  address internal constant GM_BTC_USD_WBTC_WBTC = 0x19eCDd6DDc12597ec4A522fB1E25b1A580B605B7;
 
   // https://arbiscan.io/address/0xfB3264D1129824933a52374c2C1696F4470D041e
   address internal constant gmETH_USD = 0xfB3264D1129824933a52374c2C1696F4470D041e;
@@ -618,7 +618,7 @@ library ChainlinkArbitrum {
     0x20b0159404886F4BFE51A1ad9c14cFc3Cde5995c;
 
   // https://arbiscan.io/address/0xEAeFFF521cb36dFb414E8580f8635BFB44d96255
-  address internal constant GM_ETH_USD_wETH_wETH_ = 0xEAeFFF521cb36dFb414E8580f8635BFB44d96255;
+  address internal constant GM_ETH_USD_wETH_wETH = 0xEAeFFF521cb36dFb414E8580f8635BFB44d96255;
 
   // https://arbiscan.io/address/0x383b3624478124697BEF675F07cA37570b73992f
   address internal constant SPELL_USD = 0x383b3624478124697BEF675F07cA37570b73992f;

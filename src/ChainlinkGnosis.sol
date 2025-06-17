@@ -49,7 +49,7 @@ library ChainlinkGnosis {
   address internal constant EUR_USD = 0xab70BCB260073d036d1660201e9d5405F5829b7a;
 
   // https://gnosisscan.io/address/0xF937ffAeA1363e4Fa260760bDFA2aA8Fc911F84D
-  address internal constant AAVE_Network_Emergency_Count_Gnosis_Chain_ =
+  address internal constant AAVE_Network_Emergency_Count_Gnosis_Chain =
     0xF937ffAeA1363e4Fa260760bDFA2aA8Fc911F84D;
 
   // https://gnosisscan.io/address/0x0CaE8f5c10931f0Ce87Ed9BbB71391C6E93C2C26

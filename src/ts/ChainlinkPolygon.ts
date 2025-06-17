@@ -249,7 +249,7 @@ export const XTZ_USD = '0x691e26AB58ff05800E028b0876A41B720b26FC65';
 export const wstETH_stETH_Exchange_Rate = '0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c';
 
 // https://polygonscan.com/address/0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F
-export const AAVE_Network_Emergency_Count_Polygon_ = '0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F';
+export const AAVE_Network_Emergency_Count_Polygon = '0xDAFA1989A504c48Ee20a582f2891eeB25E2fA23F';
 
 // https://polygonscan.com/address/0x76631863c2ae7367aF8f37Cd10d251DA7f1DE186
 export const XPT_USD = '0x76631863c2ae7367aF8f37Cd10d251DA7f1DE186';
@@ -318,7 +318,7 @@ export const SUSHI_USD = '0x49B0c695039243BBfEb8EcD054EB70061fd54aa0';
 export const CBETH_ETH = '0x0a6a03CdF7d0b48d4e4BA8e362A4FfC3aAC4f3c0';
 
 // https://polygonscan.com/address/0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7
-export const CGT_PoR_ETH_ = '0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7';
+export const CGT_PoR_ETH = '0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7';
 
 // https://polygonscan.com/address/0x336584C8E6Dc19637A5b36206B1c79923111b405
 export const CRV_USD = '0x336584C8E6Dc19637A5b36206B1c79923111b405';

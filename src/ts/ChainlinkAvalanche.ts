@@ -51,7 +51,7 @@ export const WOO_ETH = '0xfAa665F5a0e13beea63b6DfF601DD634959690Df';
 export const CHF_USD = '0xA418573AB5226711c8564Eeb449c3618ABFaf677';
 
 // https://snowtrace.io/address/0x41185495Bc8297a65DC46f94001DC7233775EbEe
-export const AAVE_Network_Emergency_Count_Avalanche_ = '0x41185495Bc8297a65DC46f94001DC7233775EbEe';
+export const AAVE_Network_Emergency_Count_Avalanche = '0x41185495Bc8297a65DC46f94001DC7233775EbEe';
 
 // https://snowtrace.io/address/0x9df2195dc96e6Ef983B1aAC275649F3f28F82Aa1
 export const KNC_USD = '0x9df2195dc96e6Ef983B1aAC275649F3f28F82Aa1';

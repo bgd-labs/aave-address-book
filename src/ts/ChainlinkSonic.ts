@@ -9,7 +9,7 @@ export const DAI_USD = '0x1654Df3d2543717534eE1c38eb9aF5F0407Ec708';
 export const mooBIFI_USD = '0xc9541134848f525f8eaEA262599a1668A3a9b6eD';
 
 // https://sonicscan.org/address/0xECB564e91f620fBFb59d0C4A41d7f10aDb0D1934
-export const AAVE_Network_Emergency_Count_Sonic_ = '0xECB564e91f620fBFb59d0C4A41d7f10aDb0D1934';
+export const AAVE_Network_Emergency_Count_Sonic = '0xECB564e91f620fBFb59d0C4A41d7f10aDb0D1934';
 
 // https://sonicscan.org/address/0xc76dFb89fF298145b417d221B2c747d84952e01d
 export const S_USD = '0xc76dFb89fF298145b417d221B2c747d84952e01d';

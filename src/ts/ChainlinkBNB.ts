@@ -282,7 +282,7 @@ export const CHF_USD = '0x964261740356cB4aaD0C3D2003Ce808A4176a46d';
 export const ZAR_USD = '0xDE1952A1bF53f8E558cc761ad2564884E55B2c6F';
 
 // https://bscscan.com/address/0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1
-export const AAVE_Network_Emergency_Count_BNB_Chain_ = '0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1';
+export const AAVE_Network_Emergency_Count_BNB_Chain = '0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1';
 
 // https://bscscan.com/address/0x66cD2975d02f5F5cdEF2E05cBca12549B1a5022D
 export const GME_USD = '0x66cD2975d02f5F5cdEF2E05cBca12549B1a5022D';

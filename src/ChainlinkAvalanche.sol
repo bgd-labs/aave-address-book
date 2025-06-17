@@ -55,7 +55,7 @@ library ChainlinkAvalanche {
   address internal constant CHF_USD = 0xA418573AB5226711c8564Eeb449c3618ABFaf677;
 
   // https://snowtrace.io/address/0x41185495Bc8297a65DC46f94001DC7233775EbEe
-  address internal constant AAVE_Network_Emergency_Count_Avalanche_ =
+  address internal constant AAVE_Network_Emergency_Count_Avalanche =
     0x41185495Bc8297a65DC46f94001DC7233775EbEe;
 
   // https://snowtrace.io/address/0x9df2195dc96e6Ef983B1aAC275649F3f28F82Aa1

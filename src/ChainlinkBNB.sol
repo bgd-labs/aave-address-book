@@ -286,7 +286,7 @@ library ChainlinkBNB {
   address internal constant ZAR_USD = 0xDE1952A1bF53f8E558cc761ad2564884E55B2c6F;
 
   // https://bscscan.com/address/0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1
-  address internal constant AAVE_Network_Emergency_Count_BNB_Chain_ =
+  address internal constant AAVE_Network_Emergency_Count_BNB_Chain =
     0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1;
 
   // https://bscscan.com/address/0x66cD2975d02f5F5cdEF2E05cBca12549B1a5022D
