@@ -19,7 +19,7 @@ library ChainlinkLinea {
   address internal constant weETH_ETH = 0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544;
 
   // https://lineascan.build/address/0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC
-  address internal constant agETHETH_Exchange_Rate = 0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC;
+  address internal constant agETH_ETH_Exchange_Rate = 0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC;
 
   // https://lineascan.build/address/0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156
   address internal constant osETH_ETH_Exchange_Rate = 0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156;

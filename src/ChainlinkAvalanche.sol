@@ -125,7 +125,7 @@ library ChainlinkAvalanche {
   address internal constant TRY_USD = 0xA61bF273688Ea095b5e4c11f1AF5E763F7aEEE91;
 
   // https://snowtrace.io/address/0x84FF93CAD57DcD39b21895171D30A7A0e7851C75
-  address internal constant wstETHstETH_Exchange_Rate = 0x84FF93CAD57DcD39b21895171D30A7A0e7851C75;
+  address internal constant wstETH_stETH_Exchange_Rate = 0x84FF93CAD57DcD39b21895171D30A7A0e7851C75;
 
   // https://snowtrace.io/address/0xfD2b540D6c147D0889A1F1B97a2A9aB694992677
   address internal constant fsBTC_Frictionless_Bitcoin_Treasury_Fund_Reserves =
