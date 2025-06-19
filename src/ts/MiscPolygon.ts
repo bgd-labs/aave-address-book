@@ -32,4 +32,10 @@ export const stMATIC_RATE_PROVIDER = '0xdEd6C522d803E35f65318a9a4d7333a22d582199
 // https://polygonscan.com/address/0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772
 export const LEGACY_BRIDGE_EXECUTOR = '0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772';
 
+// https://polygonscan.com/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
+
+// https://polygonscan.com/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+export const MASIV_SAFE = '0xdef1FA4CEfe67365ba046a7C630D6B885298E210';
+
 export const CHAIN_ID = 137;

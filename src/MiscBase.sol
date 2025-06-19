@@ -26,4 +26,13 @@ library MiscBase {
 
   // https://basescan.org/address/0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45
   address internal constant LEGACY_BRIDGE_EXECUTOR = 0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45;
+
+  // https://basescan.org/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+  address internal constant AFC_SAFE = 0x22740deBa78d5a0c24C58C740e3715ec29de1bFa;
+
+  // https://basescan.org/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+  address internal constant ALC_SAFE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
+
+  // https://basescan.org/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+  address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
 }

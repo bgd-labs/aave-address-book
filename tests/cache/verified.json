@@ -3305,6 +3305,21 @@
     },
     "0xec746eCF986E2927Abd291a2A1716c940100f8Ba": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdeadD8aB03075b7FBA81864202a2f59EE25B312b": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xFeeb6FE430B7523fEF2a38327241eE7153779535": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x535b2f7C20B9C83d70e519cf9991578eF9816B7B": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
@@ -4270,6 +4285,18 @@
     },
     "0x3FF5BDB2bB6E3f946d9485De6c591c93B4179ae7": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdeadD8aB03075b7FBA81864202a2f59EE25B312b": {
+      "name": "GnosisSafeProxy"
     }
   },
   "56": {
@@ -5067,6 +5094,12 @@
     },
     "0x74E72F37A8c415c8f1a98Ed42E78Ff997435791D": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   },
   "100": {
@@ -5524,6 +5557,18 @@
       "name": "EACAggregatorProxy"
     },
     "0xFDF9EB5fafc11Efa65f6FD144898da39a7920Ae8": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdeadD8aB03075b7FBA81864202a2f59EE25B312b": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xc89077976e03d19057eb296215C15afAe4A7464B": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -6862,6 +6907,12 @@
     },
     "0xc76f762CedF0F78a439727861628E0fdfE1e70c2": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   },
   "146": {
@@ -7119,6 +7170,12 @@
     },
     "0xb00C13A3a919259D1A2F47181ECD32C3b7df8636": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   },
   "324": {
@@ -8991,6 +9048,15 @@
     },
     "0x2621897C993fdE08873Ef58dA1453aEE49a70144": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   },
   "42161": {
@@ -10235,6 +10301,18 @@
     },
     "0x7Fa028B87e73deb66DcFf9Fa40f4C7C6Dd2Fd254": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdeadD8aB03075b7FBA81864202a2f59EE25B312b": {
+      "name": "GnosisSafeProxy"
     }
   },
   "42220": {
@@ -10477,6 +10555,12 @@
     },
     "0x9a48d9b0AF457eF040281A9Af3867bc65522Fecd": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   },
   "43113": {
@@ -11537,6 +11621,15 @@
     },
     "0xC4D7270aCc921DE5A17452437257f075C1298eB3": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   },
   "59144": {
@@ -11821,6 +11914,12 @@
     },
     "0x9ce4473B42a639d010eD741df3CA829E6e480803": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   },
   "84532": {
@@ -12397,6 +12496,12 @@
     },
     "0x14473e2BD405dcb5550ccA1d36da40227A6810EC": {
       "name": "EACAggregatorProxy"
+    },
+    "0x22740deBa78d5a0c24C58C740e3715ec29de1bFa": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
+      "name": "GnosisSafeProxy"
     }
   }
 }
