@@ -3305,6 +3305,18 @@
     },
     "0xec746eCF986E2927Abd291a2A1716c940100f8Ba": {
       "name": "EACAggregatorProxy"
+    },
+    "0xF0d9bb015Cd7BfAb877B7156146dc09Bf461370d": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x2D27d9e1b74936D8E83c4BA118F09A4c4a897f62": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xAcFCF155a0de611414C510D43446c27a4EE6a758": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x04F84020Fdf10d9ee64D1dcC2986EDF2F556DA11": {
+      "name": "EACAggregatorProxy"
     }
   },
   "10": {
@@ -4270,6 +4282,12 @@
     },
     "0x3FF5BDB2bB6E3f946d9485De6c591c93B4179ae7": {
       "name": "EACAggregatorProxy"
+    },
+    "0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x30F6ffb911ac7B9aDF471f28366ce1826C05776e": {
+      "name": "EACAggregatorProxy"
     }
   },
   "56": {
@@ -5067,6 +5085,12 @@
     },
     "0x74E72F37A8c415c8f1a98Ed42E78Ff997435791D": {
       "name": "EACAggregatorProxy"
+    },
+    "0xaD8b4e59A7f25B68945fAf0f3a3EAF027832FFB0": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xE8ed18E29402CD223bC5B73D30e40CCdf7b72986": {
+      "name": "EACAggregatorProxy"
     }
   },
   "100": {
@@ -5524,6 +5548,9 @@
       "name": "EACAggregatorProxy"
     },
     "0xFDF9EB5fafc11Efa65f6FD144898da39a7920Ae8": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xc89077976e03d19057eb296215C15afAe4A7464B": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -7119,6 +7146,15 @@
     },
     "0xb00C13A3a919259D1A2F47181ECD32C3b7df8636": {
       "name": "EACAggregatorProxy"
+    },
+    "0x21f037F67946A199b1DBF1Cb7DFa21bFde477196": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x0fceF1123FDBEdC89a0189B15D35B7A33B7694c0": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xB6D739Ba498a0D8d1e92F81345B764C995Cc4882": {
+      "name": "EACAggregatorProxy"
     }
   },
   "324": {
@@ -8015,6 +8051,12 @@
     },
     "0x931602D8758E7A891Dce57A31c2A23A98931Fe1c": {
       "name": "EACAggregatorProxy"
+    },
+    "0x251Ef178518aba5aa1df24713344EA1C6d9ccc67": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x2580FA33f9dfD9D26F1aC418E09113f3E9c316c2": {
+      "name": "EACAggregatorProxy"
     }
   },
   "5000": {
@@ -8163,6 +8205,15 @@
       "name": "EACAggregatorProxy"
     },
     "0xd86048D5e4fe96157CE03Ae519A9045bEDaa6551": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xB16FcAFB8378baA0a69142a325878FDCad58606A": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x73b15e19b247263D03D7938f1356304b7B330Ff0": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x01dd982820B7c25e2A9C77BDd3bC0eDA90298A2F": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -8990,6 +9041,21 @@
       "name": "EACAggregatorProxy"
     },
     "0x2621897C993fdE08873Ef58dA1453aEE49a70144": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x9f0C1dD78C4CBdF5b9cf923a549A201EdC676D34": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x1E6A29666288a310326B37d823Fe4Ea3937424D2": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x206a34e47093125fbf4C75b7c7E88b84c6A77a69": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x34cD971a092d5411bD69C10a5F0A7EEF72C69041": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4e7dB2f9a28348AB48a968dd4217D565D1F15Ba4": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -10234,6 +10300,21 @@
       "name": "EACAggregatorProxy"
     },
     "0x7Fa028B87e73deb66DcFf9Fa40f4C7C6Dd2Fd254": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xcAc0138592090762385CCB7bb94C9401F734Eb30": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x5F25Ea8Cf2a3aB12E4D6fB58FB63C7938473B036": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xd9344493d99153Ad4353D604A1d80d4089004c5D": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xCF9752295D0ac9215461fA095faFEC1B854b849B": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xCF7a7A1Fb746E926Bbe5C88a702a89167a94C51C": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -11537,6 +11618,12 @@
     },
     "0xC4D7270aCc921DE5A17452437257f075C1298eB3": {
       "name": "EACAggregatorProxy"
+    },
+    "0xc43861646Cdc051D04CA0c9dF2265FFcFa0dF6f3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x0d2807dc7FA52d3B38be564B64a2b37753C49AdD": {
+      "name": "EACAggregatorProxy"
     }
   },
   "59144": {
@@ -11821,6 +11908,32 @@
     },
     "0x9ce4473B42a639d010eD741df3CA829E6e480803": {
       "name": "EACAggregatorProxy"
+    },
+    "0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458": {
+      "name": "EACAggregatorProxy"
+    }
+  },
+  "60808": {
+    "0xf630C8A7bC033FD20fcc45d8B43bFe92dE73154F": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x17fa87007bfF1dC7e6b3a36ED936E6355e37237C": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9fE056F44510F970d724adA16903ba5D75CC4742": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xb2C672931Bd1Da226e29997Ec8cEB60Fb1DA3959": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x19CE4363FEA478Aa04B9EA2937cc5A2cbcD44be6": {
+      "name": "SafeProxy"
+    },
+    "0x90800d1F54384523723eD3962c7Cd59d7866c83d": {
+      "name": "Executor"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "84532": {
