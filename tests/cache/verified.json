@@ -11931,6 +11931,9 @@
     },
     "0x90800d1F54384523723eD3962c7Cd59d7866c83d": {
       "name": "Executor"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "84532": {

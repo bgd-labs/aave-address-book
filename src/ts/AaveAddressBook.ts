@@ -71,6 +71,7 @@ export * as MiscLinea from './MiscLinea';
 export * as MiscMantle from './MiscMantle';
 export * as MiscSonic from './MiscSonic';
 export * as MiscSoneium from './MiscSoneium';
+export * as MiscBob from './MiscBob';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
 export * as GhoEthereum from './GhoEthereum';
