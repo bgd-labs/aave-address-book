@@ -7,7 +7,8 @@ library ChainlinkScroll {
   address internal constant pufETH_ETH_Exchange_Rate = 0x7C6Da2C92caCe9F77274379Dc32a1eEE0B4C5FfD;
 
   // https://scrollscan.com/address/0x8B5947e03894cEAD4f96283cFa19d88D6bc73d8F
-  address internal constant ylstETHstETH_exchange_rate = 0x8B5947e03894cEAD4f96283cFa19d88D6bc73d8F;
+  address internal constant ylstETH_stETH_exchange_rate =
+    0x8B5947e03894cEAD4f96283cFa19d88D6bc73d8F;
 
   // https://scrollscan.com/address/0x57bd9E614f542fB3d6FeF2B744f3B813f0cc1258
   address internal constant weETH_eETH_Exchange_Rate = 0x57bd9E614f542fB3d6FeF2B744f3B813f0cc1258;
@@ -49,7 +50,7 @@ library ChainlinkScroll {
   address internal constant SOL_USD = 0xDf3F55B6bd57084DD4a72a41853C0a2487CB757F;
 
   // https://scrollscan.com/address/0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E
-  address internal constant stBTC_PoR = 0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E;
+  address internal constant stBTC_Proof_of_Reserves = 0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E;
 
   // https://scrollscan.com/address/0xB4b121ebE4DdCdFD3378b9519A101678829fE8c6
   address internal constant AVAX_USD = 0xB4b121ebE4DdCdFD3378b9519A101678829fE8c6;
@@ -86,13 +87,13 @@ library ChainlinkScroll {
   address internal constant STETH_USD = 0x439a2b573C8Ecd215990Fc25b4F547E89CF67b79;
 
   // https://scrollscan.com/address/0xf42e954D384247cE971d65f09a34500551942d67
-  address internal constant agETHETH_Exchange_Rate = 0xf42e954D384247cE971d65f09a34500551942d67;
+  address internal constant agETH_ETH_Exchange_Rate = 0xf42e954D384247cE971d65f09a34500551942d67;
 
   // https://scrollscan.com/address/0xCaca6BFdeDA537236Ee406437D2F8a400026C589
   address internal constant BTC_USD = 0xCaca6BFdeDA537236Ee406437D2F8a400026C589;
 
   // https://scrollscan.com/address/0xE61Da4C909F7d86797a0D06Db63c34f76c9bCBDC
-  address internal constant wstETHstETH_Exchange_Rate = 0xE61Da4C909F7d86797a0D06Db63c34f76c9bCBDC;
+  address internal constant wstETH_stETH_Exchange_Rate = 0xE61Da4C909F7d86797a0D06Db63c34f76c9bCBDC;
 
   // https://scrollscan.com/address/0x3fBB86e564fC1303625BA88EaE55740f3A649d36
   address internal constant RETH_ETH = 0x3fBB86e564fC1303625BA88EaE55740f3A649d36;

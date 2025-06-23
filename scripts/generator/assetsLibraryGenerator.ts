@@ -69,7 +69,7 @@ export function fixUmbrellaStakeSymbol(symbol: string, underlying: string) {
   return symbol
     .replace('stk', 'STK_')
     .replace('wa', 'WA_')
-    .replace(/(V\d+)/g, '_$1');
+    .replace(/([Vv]\d+)/g, (match) => '_' + match.toUpperCase());
 }
 
 export function generateAssetsLibrary(

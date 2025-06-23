@@ -37,7 +37,11 @@ async function fetchUmbrellaStakeTokens(client: Client, umbrellaConfig: Umbrella
   const stakeTokens = await umbrellaContract.read.getStkTokens();
   const stakeTokenData: UmbrellaStakeData[] = await Promise.all(
     stakeTokens.map(async (stakeToken) => {
-      const stakeTokenContract = getContract({address: stakeToken, abi: IUmbrellaStakeToken_ABI, client});
+      const stakeTokenContract = getContract({
+        address: stakeToken,
+        abi: IUmbrellaStakeToken_ABI,
+        client,
+      });
       const [symbol, decimals, underlying] = await Promise.all([
         stakeTokenContract.read.symbol(),
         stakeTokenContract.read.decimals(),
@@ -91,7 +95,7 @@ async function fetchUmbrellaAddresses(client: Client, umbrellaConfig: UmbrellaCo
       umbrellaConfig.additionalAddresses.PERMISSIONED_PAYLOADS_CONTROLLER,
     );
     addresses = {
-      ... addresses,
+      ...addresses,
       PERMISSIONED_PAYLOADS_CONTROLLER: {
         value: umbrellaConfig.additionalAddresses.PERMISSIONED_PAYLOADS_CONTROLLER,
         type: 'IPayloadsControllerCore',
@@ -122,7 +126,7 @@ export async function generateUmbrellaLibrary(umbrellaConfig: UmbrellaConfig) {
               chainId: umbrellaConfig.chainId,
               addresses: {
                 ...umbrellaAddresses,
-                ...umbrellaConfig.additionalAddresses
+                ...umbrellaConfig.additionalAddresses,
               },
             }),
             name,
@@ -146,7 +150,11 @@ export async function generateUmbrellaLibrary(umbrellaConfig: UmbrellaConfig) {
 
   // generate umbrella stake assets library
   const assetsLibraryName = name + 'Assets';
-  const assetsLibrary = generateUmbrellaStakeAssetsLibrary(umbrellaConfig.chainId, umbrellaStakeTokens, assetsLibraryName);
+  const assetsLibrary = generateUmbrellaStakeAssetsLibrary(
+    umbrellaConfig.chainId,
+    umbrellaStakeTokens,
+    assetsLibraryName,
+  );
   appendFileSync(`./src/${name}.sol`, assetsLibrary.solidity);
   appendFileSync(`./src/ts/${name}.ts`, assetsLibrary.js);
 
@@ -156,6 +164,5 @@ export async function generateUmbrellaLibrary(umbrellaConfig: UmbrellaConfig) {
     umbrellaStakeData: umbrellaStakeTokens,
     chainId: umbrellaConfig.chainId,
     js: [`export * as ${name} from './${name}';`],
-    solidity: [`import {${name}} from './${name}.sol';`],
   };
 }

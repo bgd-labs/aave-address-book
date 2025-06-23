@@ -17,7 +17,7 @@ library ChainlinkZkSync {
   address internal constant LINK_USD = 0x1b5a683579f53b9E30B538F70544444389633c75;
 
   // https://era.zksync.network/address/0x78F211E6707463F5b2254DE667b9A70a95d816b5
-  address internal constant wrsETHETH_Exchange_Rate_ETH =
+  address internal constant wrsETH_ETH_Exchange_Rate_ETH =
     0x78F211E6707463F5b2254DE667b9A70a95d816b5;
 
   // https://era.zksync.network/address/0xB66325FC0F8aA6dE6FeDFF4e51e54025cEea51eE
@@ -39,7 +39,7 @@ library ChainlinkZkSync {
   address internal constant UNI_USD = 0x93A08A9D592101938D4a63c86d0989d7018c00D9;
 
   // https://era.zksync.network/address/0x24a0C9404101A8d7497676BE12F10aEa356bAC28
-  address internal constant wstETHstETH_Exchange_Rate = 0x24a0C9404101A8d7497676BE12F10aEa356bAC28;
+  address internal constant wstETH_stETH_Exchange_Rate = 0x24a0C9404101A8d7497676BE12F10aEa356bAC28;
 
   // https://era.zksync.network/address/0x92c2ed09B096470DF40973231Dac5aC987F9b8F9
   address internal constant rswETH_ETH_Exchange_Rate = 0x92c2ed09B096470DF40973231Dac5aC987F9b8F9;
