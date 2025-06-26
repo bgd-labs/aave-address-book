@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.22.4](https://github.com/bgd-labs/aave-address-book/compare/v4.22.3...v4.22.4) (2025-06-26)
+
+
+### Bug Fixes
+
+* add cl to UI ([#978](https://github.com/bgd-labs/aave-address-book/issues/978)) ([27244be](https://github.com/bgd-labs/aave-address-book/commit/27244beffa4ccd47f428b27a771f0f9629d89ccc))
+* **cache:** automated cache update - updated addresses ([#976](https://github.com/bgd-labs/aave-address-book/issues/976)) ([e3afaf9](https://github.com/bgd-labs/aave-address-book/commit/e3afaf9dc2efeafa8472be2fa0cf991112d5a4e9))
+* **cache:** automated cache update - updated addresses ([#979](https://github.com/bgd-labs/aave-address-book/issues/979)) ([5c95a38](https://github.com/bgd-labs/aave-address-book/commit/5c95a387425fd1e02b74cc38854753acd9526f65))
+* **cache:** automated cache update - updated addresses ([#980](https://github.com/bgd-labs/aave-address-book/issues/980)) ([003a0fa](https://github.com/bgd-labs/aave-address-book/commit/003a0fa452cc7c095378bf036a19def7075ef7ac))
+* **cache:** automated cache update - updated addresses ([#982](https://github.com/bgd-labs/aave-address-book/issues/982)) ([7b7045c](https://github.com/bgd-labs/aave-address-book/commit/7b7045c0ad53301c1d125fb69d29744ea9e498e2))
+
 ## [4.22.3](https://github.com/bgd-labs/aave-address-book/compare/v4.22.2...v4.22.3) (2025-06-12)
 
 
