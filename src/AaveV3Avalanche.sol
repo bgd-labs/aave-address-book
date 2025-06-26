@@ -444,6 +444,9 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da;
+
+  // https://snowtrace.io/address/0x79459f4C9AfC902488109D058C3E76ed0B037c41
+  address internal constant GHO_STATA_TOKEN = 0x79459f4C9AfC902488109D058C3E76ed0B037c41;
 }
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;
