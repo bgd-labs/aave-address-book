@@ -427,6 +427,23 @@ library AaveV3AvalancheAssets {
 
   // https://snowtrace.io/address/0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e
   address internal constant AUSD_STATA_TOKEN = 0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e;
+
+  // https://snowtrace.io/address/0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73
+  address internal constant GHO_UNDERLYING = 0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://snowtrace.io/address/0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6
+  address internal constant GHO_A_TOKEN = 0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6;
+
+  // https://snowtrace.io/address/0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5
+  address internal constant GHO_V_TOKEN = 0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5;
+
+  // https://snowtrace.io/address/0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12
+  address internal constant GHO_ORACLE = 0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12;
+
+  // https://snowtrace.io/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da;
 }
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;
