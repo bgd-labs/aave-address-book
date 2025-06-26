@@ -11645,6 +11645,21 @@
     },
     "0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12": {
       "name": "GhoOracle"
+    },
+    "0xDe6539018B095353A40753Dc54C91C68c9487D4E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xA5Ba213867E175A182a5dd6A9193C6158738105A": {
+      "name": "GhoAaveSteward"
+    },
+    "0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B": {
+      "name": "GhoBucketSteward"
+    },
+    "0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6": {
+      "name": "GhoCcipSteward"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
     }
   },
   "59144": {

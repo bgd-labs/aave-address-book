@@ -67,6 +67,7 @@ import {governanceConfigZkSync} from './configs/governance/zksync';
 import {zkSyncAddresses} from './configs/networks/zksync';
 import {lineaAddresses} from './configs/networks/linea';
 import {ghoArbitrum} from './configs/gho/arbitrum';
+import {ghoAvalanche} from './configs/gho/avalanche';
 import {ghoBase} from './configs/gho/base';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
@@ -159,7 +160,9 @@ async function main() {
       soneiumProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche].map((config) =>
+    generateGho(config),
+  );
   const umbrellaAddresses = await Promise.all(
     [umbrellaMainnetConfig, umbrellaBaseSepoliaConfig].map((config) =>
       generateUmbrellaLibrary(config),
