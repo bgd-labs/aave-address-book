@@ -4409,6 +4409,28 @@
       }
     },
     {
+      "chainId": 43114,
+      "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6",
+      "name": "Aave Avalanche GHO",
+      "decimals": 18,
+      "symbol": "aAvaGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73"
+      }
+    },
+    {
       "chainId": 8453,
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -8308,6 +8330,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 119 },
-  "timestamp": "2025-06-17T14:24:43.316Z"
+  "version": { "major": 3, "minor": 0, "patch": 120 },
+  "timestamp": "2025-06-26T00:16:09.627Z"
 }
