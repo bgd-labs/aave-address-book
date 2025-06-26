@@ -7,6 +7,10 @@ export const arbitrumAddresses: NetworkAddresses<{
   rETH_ETH_AGGREGATOR: Hex;
   LEGACY_BRIDGE_EXECUTOR: Hex;
   AAVE_ARB_ETH_BRIDGE: Hex;
+  AFC_SAFE: Hex;
+  ALC_SAFE: Hex;
+  MASIV_SAFE: Hex;
+  MERIT_AHAB_SAFE: Hex;
 }> = {
   name: 'Arbitrum',
   chainId: ChainId.arbitrum,
@@ -20,6 +24,10 @@ export const arbitrumAddresses: NetworkAddresses<{
     rETH_ETH_AGGREGATOR: '0xF3272CAfe65b190e76caAF483db13424a3e23dD2',
     LEGACY_BRIDGE_EXECUTOR: '0x7d9103572bE58FfE99dc390E8246f02dcAe6f611',
     AAVE_ARB_ETH_BRIDGE: '0x0335ffa9af5CE05590d6C9A75B645470e07744a9',
+    AFC_SAFE: '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa',
+    ALC_SAFE: '0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b',
+    MASIV_SAFE: '0xdef1FA4CEfe67365ba046a7C630D6B885298E210',
+    MERIT_AHAB_SAFE: '0xdeadD8aB03075b7FBA81864202a2f59EE25B312b',
   },
 };
 

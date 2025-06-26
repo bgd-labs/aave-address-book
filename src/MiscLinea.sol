@@ -11,4 +11,10 @@ library MiscLinea {
 
   // https://lineascan.build/address/0x0BF186764D8333a938f35e5dD124a7b9b9dccDF9
   address internal constant PROTOCOL_GUARDIAN = 0x0BF186764D8333a938f35e5dD124a7b9b9dccDF9;
+
+  // https://lineascan.build/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+  address internal constant AFC_SAFE = 0x22740deBa78d5a0c24C58C740e3715ec29de1bFa;
+
+  // https://lineascan.build/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+  address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
 }
