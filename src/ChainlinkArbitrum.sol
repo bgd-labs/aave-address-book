@@ -45,9 +45,6 @@ library ChainlinkArbitrum {
   // https://arbiscan.io/address/0x37833E5b3fbbEd4D613a3e0C354eF91A42B81eeB
   address internal constant USDS_USD = 0x37833E5b3fbbEd4D613a3e0C354eF91A42B81eeB;
 
-  // https://arbiscan.io/address/0xcAc0138592090762385CCB7bb94C9401F734Eb30
-  address internal constant USD1_USD = 0xcAc0138592090762385CCB7bb94C9401F734Eb30;
-
   // https://arbiscan.io/address/0x17d8D87dF3E279c737568aB0C5cC3fF750aB763e
   address internal constant DOLO_USD = 0x17d8D87dF3E279c737568aB0C5cC3fF750aB763e;
 
@@ -87,9 +84,6 @@ library ChainlinkArbitrum {
   // https://arbiscan.io/address/0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3
   address internal constant USDC_USD = 0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3;
 
-  // https://arbiscan.io/address/0x5F25Ea8Cf2a3aB12E4D6fB58FB63C7938473B036
-  address internal constant aBTC_Proof_of_Reserves = 0x5F25Ea8Cf2a3aB12E4D6fB58FB63C7938473B036;
-
   // https://arbiscan.io/address/0x221912ce795669f628c51c69b7d0873eDA9C03bB
   address internal constant APE_USD = 0x221912ce795669f628c51c69b7d0873eDA9C03bB;
 
@@ -115,7 +109,7 @@ library ChainlinkArbitrum {
   address internal constant ezETH_ETH = 0x11E1836bFF2ce9d6A5bec9cA79dc998210f3886d;
 
   // https://arbiscan.io/address/0xfb010c715Ff2B85DB9c896f0C030bF9329638905
-  address internal constant FBTC_Proof_of_Reserves = 0xfb010c715Ff2B85DB9c896f0C030bF9329638905;
+  address internal constant FBTC_PoR = 0xfb010c715Ff2B85DB9c896f0C030bF9329638905;
 
   // https://arbiscan.io/address/0x6548a81E640C000150e06AB413fB3F772682e9c5
   address internal constant USDPlus_USD = 0x6548a81E640C000150e06AB413fB3F772682e9c5;
@@ -245,7 +239,7 @@ library ChainlinkArbitrum {
   address internal constant MSFT_USD = 0xDde33fb9F21739602806580bdd73BAd831DcA867;
 
   // https://arbiscan.io/address/0x0543Bb6b5A57E3e7569237b67321eAB773e41401
-  address internal constant iBTC_Proof_of_Reserves = 0x0543Bb6b5A57E3e7569237b67321eAB773e41401;
+  address internal constant iBTC_PoR = 0x0543Bb6b5A57E3e7569237b67321eAB773e41401;
 
   // https://arbiscan.io/address/0x47E55cCec6582838E173f252D08Afd8116c2202d
   address internal constant MAGIC_USD = 0x47E55cCec6582838E173f252D08Afd8116c2202d;
@@ -304,7 +298,7 @@ library ChainlinkArbitrum {
     0x052d4200b624b07262F574af26C71A6553996Ab5;
 
   // https://arbiscan.io/address/0xA0118D8948FA85624608d94eC6B52973578082fA
-  address internal constant stBTC_Proof_of_Reserves = 0xA0118D8948FA85624608d94eC6B52973578082fA;
+  address internal constant stBTC_PoR = 0xA0118D8948FA85624608d94eC6B52973578082fA;
 
   // https://arbiscan.io/address/0x0F38D86FceF4955B705F35c9e41d1A16e0637c73
   address internal constant GRT_USD = 0x0F38D86FceF4955B705F35c9e41d1A16e0637c73;
@@ -418,7 +412,7 @@ library ChainlinkArbitrum {
   address internal constant TAO_USD = 0x6aCcBB82aF71B8a576B4C05D4aF92A83A035B991;
 
   // https://arbiscan.io/address/0x47A2fBEb46553F01E7133686Fb1b5349d4823a0C
-  address internal constant dlcBTC_Proof_of_Reserves = 0x47A2fBEb46553F01E7133686Fb1b5349d4823a0C;
+  address internal constant dlcBTC_PoR = 0x47A2fBEb46553F01E7133686Fb1b5349d4823a0C;
 
   // https://arbiscan.io/address/0xcd1bd86fDc33080DCF1b5715B6FCe04eC6F85845
   address internal constant META_USD = 0xcd1bd86fDc33080DCF1b5715B6FCe04eC6F85845;
@@ -466,9 +460,6 @@ library ChainlinkArbitrum {
   // https://arbiscan.io/address/0x373510BDa1ab7e873c731968f4D81B685f520E4B
   address internal constant TRUMP_USD = 0x373510BDa1ab7e873c731968f4D81B685f520E4B;
 
-  // https://arbiscan.io/address/0xd9344493d99153Ad4353D604A1d80d4089004c5D
-  address internal constant zBTC_Proof_of_Reserves = 0xd9344493d99153Ad4353D604A1d80d4089004c5D;
-
   // https://arbiscan.io/address/0x3A917e6B5732dFCc4A45257e3930979fAE6a3737
   address internal constant rsETH_ETH_Exchange_Rate = 0x3A917e6B5732dFCc4A45257e3930979fAE6a3737;
 
@@ -477,9 +468,6 @@ library ChainlinkArbitrum {
 
   // https://arbiscan.io/address/0x6fAbee62266Da6686EE2744C6f15bb8352d2f28D
   address internal constant TUSD_USD = 0x6fAbee62266Da6686EE2744C6f15bb8352d2f28D;
-
-  // https://arbiscan.io/address/0xCF9752295D0ac9215461fA095faFEC1B854b849B
-  address internal constant EURC_USD = 0xCF9752295D0ac9215461fA095faFEC1B854b849B;
 
   // https://arbiscan.io/address/0xc6984fF1047Ddd0AB52D2dFa78381CC677921A85
   address internal constant GLV_BTC_USDC_USD = 0xc6984fF1047Ddd0AB52D2dFa78381CC677921A85;
@@ -640,9 +628,6 @@ library ChainlinkArbitrum {
 
   // https://arbiscan.io/address/0x6FfBc6339DD46a7e0513D4887106349214C05505
   address internal constant WEMIX_USD = 0x6FfBc6339DD46a7e0513D4887106349214C05505;
-
-  // https://arbiscan.io/address/0xCF7a7A1Fb746E926Bbe5C88a702a89167a94C51C
-  address internal constant GAS_USD = 0xCF7a7A1Fb746E926Bbe5C88a702a89167a94C51C;
 
   // https://arbiscan.io/address/0x1bD872f3A606471787B1a304cE0356e4e87Af930
   address internal constant frxETH_ETH_Exchange_Rate_Low =

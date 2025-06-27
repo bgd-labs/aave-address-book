@@ -1,34 +1,34 @@
-// https://snowscan.xyz/address/0x27FC7D54C893dA63C0AE6d57e1B2B13A70690928
+// https://snowtrace.io/address/0x27FC7D54C893dA63C0AE6d57e1B2B13A70690928
 export const CROSS_CHAIN_CONTROLLER = '0x27FC7D54C893dA63C0AE6d57e1B2B13A70690928';
 
-// https://snowscan.xyz/address/0x41185495Bc8297a65DC46f94001DC7233775EbEe
+// https://snowtrace.io/address/0x41185495Bc8297a65DC46f94001DC7233775EbEe
 export const CL_EMERGENCY_ORACLE = '0x41185495Bc8297a65DC46f94001DC7233775EbEe';
 
-// https://snowscan.xyz/address/0x4D1863d22D0ED8579f8999388BCC833CB057C2d6
+// https://snowtrace.io/address/0x4D1863d22D0ED8579f8999388BCC833CB057C2d6
 export const VOTING_MACHINE = '0x4D1863d22D0ED8579f8999388BCC833CB057C2d6';
 
-// IPayloadsControllerCore https://snowscan.xyz/address/0x1140CB7CAfAcC745771C2Ea31e7B5C653c5d0B80
+// IPayloadsControllerCore https://snowtrace.io/address/0x1140CB7CAfAcC745771C2Ea31e7B5C653c5d0B80
 export const PAYLOADS_CONTROLLER = '0x1140CB7CAfAcC745771C2Ea31e7B5C653c5d0B80';
 
-// https://snowscan.xyz/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
+// https://snowtrace.io/address/0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A
 export const PC_DATA_HELPER = '0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A';
 
-// https://snowscan.xyz/address/0x77976B51569896523EE215962Ee91ff236Fa50E8
+// https://snowtrace.io/address/0x77976B51569896523EE215962Ee91ff236Fa50E8
 export const VM_DATA_HELPER = '0x77976B51569896523EE215962Ee91ff236Fa50E8';
 
-// https://snowscan.xyz/address/0xc1162BCb2E5E3ca4725512008c7522dF8C8B7B65
+// https://snowtrace.io/address/0xc1162BCb2E5E3ca4725512008c7522dF8C8B7B65
 export const GRANULAR_GUARDIAN = '0xc1162BCb2E5E3ca4725512008c7522dF8C8B7B65';
 
-// https://snowscan.xyz/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
+// https://snowtrace.io/address/0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe
 export const GOVERNANCE_GUARDIAN = '0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe';
 
-// https://snowscan.xyz/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
+// https://snowtrace.io/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
 export const EXECUTOR_LVL_1 = '0x3C06dce358add17aAf230f2234bCCC4afd50d090';
 
-// IVotingStrategy https://snowscan.xyz/address/0x6771B74568181f6042C9e5CFF98f62e7Ce40482e
+// IVotingStrategy https://snowtrace.io/address/0x6771B74568181f6042C9e5CFF98f62e7Ce40482e
 export const VOTING_STRATEGY = '0x6771B74568181f6042C9e5CFF98f62e7Ce40482e';
 
-// IDataWarehouse https://snowscan.xyz/address/0x450820e342B731b542caA5328d06F26528914dDd
+// IDataWarehouse https://snowtrace.io/address/0x450820e342B731b542caA5328d06F26528914dDd
 export const DATA_WAREHOUSE = '0x450820e342B731b542caA5328d06F26528914dDd';
 
 export const CHAIN_ID = 43114;

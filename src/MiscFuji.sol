@@ -3,12 +3,12 @@
 pragma solidity >=0.6.0;
 
 library MiscFuji {
-  // https://testnet.snowscan.xyz/address/0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723
+  // https://testnet.snowtrace.io/address/0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723
   address internal constant GHO_TOKEN = 0x9c04928Cc678776eC1C1C0E46ecC03a5F47A7723;
 
-  // https://testnet.snowscan.xyz/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
+  // https://testnet.snowtrace.io/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
   address internal constant TRANSPARENT_PROXY_FACTORY = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
 
-  // https://testnet.snowscan.xyz/address/0x440F1b750Cbc7DDd2Bd9Af279Afe422EaeE58b41
+  // https://testnet.snowtrace.io/address/0x440F1b750Cbc7DDd2Bd9Af279Afe422EaeE58b41
   address internal constant PROXY_ADMIN = 0x440F1b750Cbc7DDd2Bd9Af279Afe422EaeE58b41;
 }

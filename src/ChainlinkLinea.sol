@@ -34,9 +34,6 @@ library ChainlinkLinea {
   address internal constant ultraETHs_ETH_Exchange_Rate =
     0x0956106Bd02f2C7eca0AbDe1d51Fc8050CC41714;
 
-  // https://lineascan.build/address/0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458
-  address internal constant COMP_USD = 0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458;
-
   // https://lineascan.build/address/0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a
   address internal constant wrsETH_rsETH_Exchange_Rate = 0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a;
 

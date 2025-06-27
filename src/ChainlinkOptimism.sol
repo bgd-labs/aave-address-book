@@ -46,9 +46,6 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0x7f99817d87baD03ea21E05112Ca799d715730efe
   address internal constant SUSD_USD = 0x7f99817d87baD03ea21E05112Ca799d715730efe;
 
-  // https://optimistic.etherscan.io/address/0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca
-  address internal constant ALETH_USD = 0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca;
-
   // https://optimistic.etherscan.io/address/0xee35A95c9a064491531493D8b380bC40A4CCd0Da
   address internal constant DYDX_USD = 0xee35A95c9a064491531493D8b380bC40A4CCd0Da;
 
@@ -113,6 +110,9 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F
   address internal constant APE_USD = 0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F;
 
+  // https://optimistic.etherscan.io/address/0x1520874FC216f5F07E03607303Df2Fda6C3Fc203
+  address internal constant ZIL_USD = 0x1520874FC216f5F07E03607303Df2Fda6C3Fc203;
+
   // https://optimistic.etherscan.io/address/0x34E0E85CeEc6be6146c4f0115769a29a9539222e
   address internal constant FLOKI_USD = 0x34E0E85CeEc6be6146c4f0115769a29a9539222e;
 
@@ -133,9 +133,6 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3
   address internal constant MKR_USD = 0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3;
-
-  // https://optimistic.etherscan.io/address/0x30F6ffb911ac7B9aDF471f28366ce1826C05776e
-  address internal constant USD1_USD = 0x30F6ffb911ac7B9aDF471f28366ce1826C05776e;
 
   // https://optimistic.etherscan.io/address/0x0D276FC14719f9292D5C1eA2198673d1f4269246
   address internal constant OP_USD = 0x0D276FC14719f9292D5C1eA2198673d1f4269246;
@@ -291,9 +288,6 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0xCb93226806156b03c8896bbD1cd5e4174cdb0806
   address internal constant ynETHx_ETH_Exchange_Rate = 0xCb93226806156b03c8896bbD1cd5e4174cdb0806;
-
-  // https://optimistic.etherscan.io/address/0x1520874FC216f5F07E03607303Df2Fda6C3Fc203
-  address internal constant ZIL_USD = 0x1520874FC216f5F07E03607303Df2Fda6C3Fc203;
 
   // https://optimistic.etherscan.io/address/0xf37c76163b2918bB4533579D449524F8542E64AD
   address internal constant FET_USD = 0xf37c76163b2918bB4533579D449524F8542E64AD;

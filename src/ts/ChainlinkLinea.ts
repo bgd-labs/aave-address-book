@@ -29,9 +29,6 @@ export const AAVE_USD = '0x09B0a8AFD9185500d7C64FC68338b4C50db6df1d';
 // https://lineascan.build/address/0x0956106Bd02f2C7eca0AbDe1d51Fc8050CC41714
 export const ultraETHs_ETH_Exchange_Rate = '0x0956106Bd02f2C7eca0AbDe1d51Fc8050CC41714';
 
-// https://lineascan.build/address/0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458
-export const COMP_USD = '0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458';
-
 // https://lineascan.build/address/0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a
 export const wrsETH_rsETH_Exchange_Rate = '0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a';
 

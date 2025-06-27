@@ -75,7 +75,7 @@ export const SUSHI_ETH = '0x17414Eb5159A082e8d41D243C1601c2944401431';
 export const BNB_USD = '0x82a6c4AF830caa6c97bb504425f6A66165C2c26e';
 
 // https://polygonscan.com/address/0x0fB2beD999da86Cb1Fdd97E746600A96141EeA09
-export const bNVDA_Reserves_Proof_of_Reserves = '0x0fB2beD999da86Cb1Fdd97E746600A96141EeA09';
+export const bNVDA_Reserves_PoR = '0x0fB2beD999da86Cb1Fdd97E746600A96141EeA09';
 
 // https://polygonscan.com/address/0xFC539A559e170f848323e19dfD66007520510085
 export const DAI_ETH = '0xFC539A559e170f848323e19dfD66007520510085';
@@ -318,7 +318,7 @@ export const SUSHI_USD = '0x49B0c695039243BBfEb8EcD054EB70061fd54aa0';
 export const CBETH_ETH = '0x0a6a03CdF7d0b48d4e4BA8e362A4FfC3aAC4f3c0';
 
 // https://polygonscan.com/address/0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7
-export const CGT_Proof_of_Reserves_ETH = '0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7';
+export const CGT_PoR_ETH = '0x4e9fc7480c16F3FE5d956C0759eE6b4808d1F5D7';
 
 // https://polygonscan.com/address/0x336584C8E6Dc19637A5b36206B1c79923111b405
 export const CRV_USD = '0x336584C8E6Dc19637A5b36206B1c79923111b405';

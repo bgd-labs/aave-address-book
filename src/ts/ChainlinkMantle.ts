@@ -23,23 +23,14 @@ export const LINK_USD = '0x5871AdBEEdAD531C68A8FD32fE86f07d6b4C645d';
 // https://mantlescan.xyz/address/0xE2f6c76c05985e90B043CC6ddf1D09e8BF5FAAf9
 export const ynETHx_ETH_Exchange_Rate = '0xE2f6c76c05985e90B043CC6ddf1D09e8BF5FAAf9';
 
-// https://mantlescan.xyz/address/0xB16FcAFB8378baA0a69142a325878FDCad58606A
-export const Calculated_mETH_USD = '0xB16FcAFB8378baA0a69142a325878FDCad58606A';
-
 // https://mantlescan.xyz/address/0x6352E3A925E27130317d3A0A5b0b0303e9f2fc7c
 export const mETH_ETH = '0x6352E3A925E27130317d3A0A5b0b0303e9f2fc7c';
-
-// https://mantlescan.xyz/address/0x73b15e19b247263D03D7938f1356304b7B330Ff0
-export const Calculated_FBTC_USD = '0x73b15e19b247263D03D7938f1356304b7B330Ff0';
 
 // https://mantlescan.xyz/address/0x6d5110FB8F6a65c46B89a64C9ac7E3542D31AbA3
 export const sUSDe_USD = '0x6d5110FB8F6a65c46B89a64C9ac7E3542D31AbA3';
 
 // https://mantlescan.xyz/address/0x7db2275279F52D0914A481e14c4Ce5a59705A25b
 export const BTC_USD = '0x7db2275279F52D0914A481e14c4Ce5a59705A25b';
-
-// https://mantlescan.xyz/address/0x01dd982820B7c25e2A9C77BDd3bC0eDA90298A2F
-export const USD1_USD = '0x01dd982820B7c25e2A9C77BDd3bC0eDA90298A2F';
 
 // https://mantlescan.xyz/address/0xD97F20bEbeD74e8144134C4b148fE93417dd0F96
 export const MNT_USD = '0xD97F20bEbeD74e8144134C4b148fE93417dd0F96';

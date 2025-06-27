@@ -50,7 +50,7 @@ library ChainlinkScroll {
   address internal constant SOL_USD = 0xDf3F55B6bd57084DD4a72a41853C0a2487CB757F;
 
   // https://scrollscan.com/address/0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E
-  address internal constant stBTC_Proof_of_Reserves = 0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E;
+  address internal constant stBTC_PoR = 0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E;
 
   // https://scrollscan.com/address/0xB4b121ebE4DdCdFD3378b9519A101678829fE8c6
   address internal constant AVAX_USD = 0xB4b121ebE4DdCdFD3378b9519A101678829fE8c6;
