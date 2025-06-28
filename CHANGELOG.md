@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.23.0](https://github.com/bgd-labs/aave-address-book/compare/v4.22.4...v4.23.0) (2025-06-28)
+
+
+### Features
+
+* gho on avax ([#983](https://github.com/bgd-labs/aave-address-book/issues/983)) ([2e8d8a3](https://github.com/bgd-labs/aave-address-book/commit/2e8d8a3be5d5c32e765cc2668a93d891b56483a3))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#984](https://github.com/bgd-labs/aave-address-book/issues/984)) ([0ae8174](https://github.com/bgd-labs/aave-address-book/commit/0ae8174b3836030f1ffbbb111326d33e10161225))
+* **cache:** automated cache update - updated addresses ([#989](https://github.com/bgd-labs/aave-address-book/issues/989)) ([8e91488](https://github.com/bgd-labs/aave-address-book/commit/8e91488aea5349c37b4bec73622b053d02922b7f))
+* **cache:** automated cache update - updated addresses ([#990](https://github.com/bgd-labs/aave-address-book/issues/990)) ([0cc1785](https://github.com/bgd-labs/aave-address-book/commit/0cc1785dad6f4b9fab54331326ae188a7b3a9a5f))
+* generated with correct npm ([#988](https://github.com/bgd-labs/aave-address-book/issues/988)) ([0993c22](https://github.com/bgd-labs/aave-address-book/commit/0993c22733447442a417301747776604e2753419))
+* update verified file ([#991](https://github.com/bgd-labs/aave-address-book/issues/991)) ([5f3e473](https://github.com/bgd-labs/aave-address-book/commit/5f3e4737fca4e4d712681a4d1d0379410fa5fca0))
+
 ## [4.22.4](https://github.com/bgd-labs/aave-address-book/compare/v4.22.3...v4.22.4) (2025-06-26)
 
 
