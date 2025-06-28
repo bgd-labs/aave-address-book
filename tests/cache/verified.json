@@ -3335,6 +3335,33 @@
     },
     "0x04F84020Fdf10d9ee64D1dcC2986EDF2F556DA11": {
       "name": "EACAggregatorProxy"
+    },
+    "0x889399C34461b25d70d43931e6cE9E40280E617B": {
+      "name": "CbETHPriceCapAdapter"
+    },
+    "0x6929706c42d637DF5Ebf7F0BcfF2aF47F84Ea69D": {
+      "name": "RETHPriceCapAdapter"
+    },
+    "0x87625393534d5C102cADB66D37201dF24cc26d4C": {
+      "name": "WeETHPriceCapAdapter"
+    },
+    "0x2b86D519eF34f8Adfc9349CDeA17c09Aa9dB60E2": {
+      "name": "OsETHPriceCapAdapter"
+    },
+    "0xd7b163B671f8cE9379DF8Ff7F75fA72Ccec1841c": {
+      "name": "EthXPriceCapAdapter"
+    },
+    "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8": {
+      "name": "ERC1967Proxy"
+    },
+    "0xce8c60fd8390eFCc3Fc66A3f0bd64BEb969e750E": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe7ea6125490ae4594aD9B44D05dFF9F2A4343134": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x85968026294b8f8Fb86d6bF3Cda079f9376aD05A": {
+      "name": "TETHPriceCapAdapter"
     }
   },
   "10": {
