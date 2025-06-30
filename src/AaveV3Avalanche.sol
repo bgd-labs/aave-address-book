@@ -52,11 +52,8 @@ library AaveV3Avalanche {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24;
 
-  // https://snowscan.xyz/address/0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5;
-
-  // https://snowscan.xyz/address/0xbf03aB677DEdA36E19D294d1735b93Dd9d1E0c05
-  address internal constant RISK_STEWARD = 0xbf03aB677DEdA36E19D294d1735b93Dd9d1E0c05;
+  // https://snowscan.xyz/address/0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2
+  address internal constant RISK_STEWARD = 0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2;
 
   // https://snowscan.xyz/address/0x57218F3aB422A39115951c3Eb06881a7A719DfdD
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x57218F3aB422A39115951c3Eb06881a7A719DfdD;
@@ -66,9 +63,6 @@ library AaveV3Avalanche {
 
   // https://snowscan.xyz/address/0x1273f29204fC102bD4620485B13cFE27a794fF32
   address internal constant EDGE_RISK_ORACLE = 0x1273f29204fC102bD4620485B13cFE27a794fF32;
-
-  // https://snowscan.xyz/address/0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99
-  address internal constant FREEZING_STEWARD = 0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99;
 
   // https://snowscan.xyz/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;

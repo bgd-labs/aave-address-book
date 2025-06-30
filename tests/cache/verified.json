@@ -3362,6 +3362,18 @@
     },
     "0x85968026294b8f8Fb86d6bF3Cda079f9376aD05A": {
       "name": "TETHPriceCapAdapter"
+    },
+    "0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E": {
+      "name": "RiskSteward"
+    },
+    "0x9F76954f5b55B4908d178f31C07F9537AC8328E7": {
+      "name": "EdgeRiskStewardDiscountRate"
+    },
+    "0x15885A83936EB943e98EeFFb91e9A49040d93993": {
+      "name": "AaveStewardInjectorDiscountRate"
+    },
+    "0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3": {
+      "name": "RiskSteward"
     }
   },
   "10": {
@@ -4345,6 +4357,9 @@
     },
     "0x30F6ffb911ac7B9aDF471f28366ce1826C05776e": {
       "name": "EACAggregatorProxy"
+    },
+    "0xa59262276dB8F997948fdc4a10cBc1448A375636": {
+      "name": "RiskSteward"
     }
   },
   "56": {
@@ -5154,6 +5169,9 @@
     },
     "0xE8ed18E29402CD223bC5B73D30e40CCdf7b72986": {
       "name": "EACAggregatorProxy"
+    },
+    "0x87F4aDD5425f566F156af5074BaD2dFFCd20C594": {
+      "name": "RiskSteward"
     }
   },
   "100": {
@@ -5624,6 +5642,9 @@
     },
     "0xc89077976e03d19057eb296215C15afAe4A7464B": {
       "name": "EACAggregatorProxy"
+    },
+    "0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55": {
+      "name": "RiskSteward"
     }
   },
   "137": {
@@ -6967,6 +6988,9 @@
     },
     "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
       "name": "GnosisSafeProxy"
+    },
+    "0x1e0A5985D58B45C38598e293189aa5228054629b": {
+      "name": "RiskSteward"
     }
   },
   "146": {
@@ -7239,6 +7263,9 @@
     },
     "0xB6D739Ba498a0D8d1e92F81345B764C995Cc4882": {
       "name": "EACAggregatorProxy"
+    },
+    "0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c": {
+      "name": "RiskSteward"
     }
   },
   "324": {
@@ -7529,6 +7556,9 @@
     },
     "0x498232F0a52D4e94A6e0Ea93D63C07Bc63133009": {
       "name": "EACAggregatorProxy"
+    },
+    "0x528a1036C8450464f8a00A0A8c2f517595E44169": {
+      "name": "RiskSteward"
     }
   },
   "1088": {
@@ -7846,6 +7876,9 @@
     },
     "0xa7CBaB1722a6631665863d624A81ab4C4eD0e876": {
       "name": "EACAggregatorProxy"
+    },
+    "0x97CB9e81d480A2AB03299760654C1DDC0C16bE07": {
+      "name": "RiskSteward"
     }
   },
   "1101": {
@@ -9153,6 +9186,9 @@
     },
     "0x4e7dB2f9a28348AB48a968dd4217D565D1F15Ba4": {
       "name": "EACAggregatorProxy"
+    },
+    "0x085E34722e04567Df9E6d2c32e82fd74f3342e79": {
+      "name": "RiskSteward"
     }
   },
   "42161": {
@@ -10427,6 +10463,9 @@
     },
     "0xCF7a7A1Fb746E926Bbe5C88a702a89167a94C51C": {
       "name": "EACAggregatorProxy"
+    },
+    "0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8": {
+      "name": "RiskSteward"
     }
   },
   "42220": {
@@ -10681,6 +10720,9 @@
     },
     "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85": {
       "name": "SafeProxy"
+    },
+    "0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c": {
+      "name": "RiskSteward"
     }
   },
   "43113": {
@@ -11780,6 +11822,9 @@
     },
     "0x0d2807dc7FA52d3B38be564B64a2b37753C49AdD": {
       "name": "EACAggregatorProxy"
+    },
+    "0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2": {
+      "name": "RiskSteward"
     }
   },
   "59144": {
@@ -12073,6 +12118,9 @@
     },
     "0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458": {
       "name": "EACAggregatorProxy"
+    },
+    "0xBDF2e1A49894A306Eb76b89504928b3f509A3a16": {
+      "name": "RiskSteward"
     }
   },
   "84532": {
@@ -12655,6 +12703,9 @@
     },
     "0xdef1FA4CEfe67365ba046a7C630D6B885298E210": {
       "name": "GnosisSafeProxy"
+    },
+    "0x0451f67bA61966C346daBAbB50a30Cc6A9A67C69": {
+      "name": "RiskSteward"
     }
   }
 }

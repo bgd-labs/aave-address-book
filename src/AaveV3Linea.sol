@@ -55,8 +55,8 @@ library AaveV3Linea {
   // https://lineascan.build/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
   address internal constant CONFIG_ENGINE = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
 
-  // https://lineascan.build/address/0x3238FC1d642b60F41a35f62570237656C85F4744
-  address internal constant RISK_STEWARD = 0x3238FC1d642b60F41a35f62570237656C85F4744;
+  // https://lineascan.build/address/0xBDF2e1A49894A306Eb76b89504928b3f509A3a16
+  address internal constant RISK_STEWARD = 0xBDF2e1A49894A306Eb76b89504928b3f509A3a16;
 
   // https://lineascan.build/address/0x96dFCCB3F9ACDaF6c8f8a35E814023C3484d1eA2
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
