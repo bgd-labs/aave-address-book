@@ -55,11 +55,8 @@ library AaveV3Base {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x2425A746911128c2eAA7bEBDc9Bc452eE52208a1;
 
-  // https://basescan.org/address/0x12DEB4025b79f2B43f6aeF079F9D77C3f9a67bb6
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x12DEB4025b79f2B43f6aeF079F9D77C3f9a67bb6;
-
-  // https://basescan.org/address/0xD3DE4b3571744EB77946d65aBF01408902E92c4E
-  address internal constant RISK_STEWARD = 0xD3DE4b3571744EB77946d65aBF01408902E92c4E;
+  // https://basescan.org/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
+  address internal constant RISK_STEWARD = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;
 
   // https://basescan.org/address/0xB892202d9Ce2C16C565A492a5168689b215Eb269
   address internal constant EDGE_RISK_STEWARD_CAPS = 0xB892202d9Ce2C16C565A492a5168689b215Eb269;
@@ -69,9 +66,6 @@ library AaveV3Base {
 
   // https://basescan.org/address/0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D
   address internal constant EDGE_RISK_ORACLE = 0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D;
-
-  // https://basescan.org/address/0x4A4c73d563395ad827511F70097d4Ef82E653805
-  address internal constant FREEZING_STEWARD = 0x4A4c73d563395ad827511F70097d4Ef82E653805;
 
   // https://basescan.org/address/0xb12e82DF057BF16ecFa89D7D089dc7E5C1Dc057B
   address internal constant DEBT_SWAP_ADAPTER = 0xb12e82DF057BF16ecFa89D7D089dc7E5C1Dc057B;

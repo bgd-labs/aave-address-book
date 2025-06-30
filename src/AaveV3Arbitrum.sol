@@ -55,11 +55,8 @@ library AaveV3Arbitrum {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
     0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
 
-  // https://arbiscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0xADf86b537eF08591c2777E144322E8b0Ca7E82a7;
-
-  // https://arbiscan.io/address/0x14568979093FFF97aeBD73F58051a4f0e297b1eB
-  address internal constant RISK_STEWARD = 0x14568979093FFF97aeBD73F58051a4f0e297b1eB;
+  // https://arbiscan.io/address/0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8
+  address internal constant RISK_STEWARD = 0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8;
 
   // https://arbiscan.io/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;
@@ -69,9 +66,6 @@ library AaveV3Arbitrum {
 
   // https://arbiscan.io/address/0x861eeAdB55E41f161F31Acb1BFD4c70E3a964Aed
   address internal constant EDGE_RISK_ORACLE = 0x861eeAdB55E41f161F31Acb1BFD4c70E3a964Aed;
-
-  // https://arbiscan.io/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
-  address internal constant FREEZING_STEWARD = 0xe59470B3BE3293534603487E00A44C72f2CD466d;
 
   // https://arbiscan.io/address/0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4
   address internal constant DEBT_SWAP_ADAPTER = 0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4;

@@ -52,14 +52,8 @@ library AaveV3Ethereum {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6;
 
-  // https://etherscan.io/address/0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x82dcCF206Ae2Ab46E2099e663F70DeE77caE7778;
-
-  // https://etherscan.io/address/0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4
-  address internal constant RISK_STEWARD = 0x46Ab47bA01EF627ce47F2ED61C9482794a6109c4;
-
-  // https://etherscan.io/address/0x2eE68ACb6A1319de1b49DC139894644E424fefD6
-  address internal constant FREEZING_STEWARD = 0x2eE68ACb6A1319de1b49DC139894644E424fefD6;
+  // https://etherscan.io/address/0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E
+  address internal constant RISK_STEWARD = 0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E;
 
   // https://etherscan.io/address/0xd7852E139a7097E119623de0751AE53a61efb442
   address internal constant DEBT_SWAP_ADAPTER = 0xd7852E139a7097E119623de0751AE53a61efb442;
@@ -122,8 +116,23 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x22aC12a6937BBBC0a301AF9154d08EaD95673122
   address internal constant POOL_EXPOSURE_STEWARD = 0x22aC12a6937BBBC0a301AF9154d08EaD95673122;
 
+  // https://etherscan.io/address/0x7ABB46C690C52E919687D19ebF89C81A6136C1F2
+  address internal constant EDGE_RISK_ORACLE = 0x7ABB46C690C52E919687D19ebF89C81A6136C1F2;
+
+  // https://etherscan.io/address/0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A
+  address internal constant EDGE_RISK_STEWARD_PENDLE_EMODE =
+    0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A;
+
+  // https://etherscan.io/address/0x9F76954f5b55B4908d178f31C07F9537AC8328E7
+  address internal constant EDGE_RISK_STEWARD_DISCOUNT_RATE =
+    0x9F76954f5b55B4908d178f31C07F9537AC8328E7;
+
   // https://etherscan.io/address/0x83ab600cE8a61b43e1757b89C0589928f765c1C4
   address internal constant EDGE_INJECTOR_PENDLE_EMODE = 0x83ab600cE8a61b43e1757b89C0589928f765c1C4;
+
+  // https://etherscan.io/address/0x15885A83936EB943e98EeFFb91e9A49040d93993
+  address internal constant EDGE_INJECTOR_DISCOUNT_RATE =
+    0x15885A83936EB943e98EeFFb91e9A49040d93993;
 }
 library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2

@@ -52,14 +52,8 @@ library AaveV3BNB {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x777fBA024bA1228fDa76149A4ff8B23475ed057D;
 
-  // https://bscscan.com/address/0x971F1C94b139AdEdedA729DA636e2B0C433Ff595
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x971F1C94b139AdEdedA729DA636e2B0C433Ff595;
-
-  // https://bscscan.com/address/0xbe7998712402B6A63975515A532Ce503437998b7
-  address internal constant RISK_STEWARD = 0xbe7998712402B6A63975515A532Ce503437998b7;
-
-  // https://bscscan.com/address/0x83f15Bc50d1A212576B202f80489502a7cc10412
-  address internal constant FREEZING_STEWARD = 0x83f15Bc50d1A212576B202f80489502a7cc10412;
+  // https://bscscan.com/address/0x87F4aDD5425f566F156af5074BaD2dFFCd20C594
+  address internal constant RISK_STEWARD = 0x87F4aDD5425f566F156af5074BaD2dFFCd20C594;
 
   // https://bscscan.com/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant DEBT_SWAP_ADAPTER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
