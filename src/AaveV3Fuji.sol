@@ -157,9 +157,6 @@ library AaveV3FujiExternalLibraries {
   // https://testnet.snowscan.xyz/address/0x4c52FE2162200bf26c314d7bbd8611699139d553
   address internal constant BORROW_LOGIC = 0x4c52FE2162200bf26c314d7bbd8611699139d553;
 
-  // https://testnet.snowscan.xyz/address/0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604
-  address internal constant BRIDGE_LOGIC = 0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604;
-
   // https://testnet.snowscan.xyz/address/0x88F864670De467aA73CD45325F9652C578C8AB85
   address internal constant E_MODE_LOGIC = 0x88F864670De467aA73CD45325F9652C578C8AB85;
 
