@@ -3124,7 +3124,8 @@
       "name": "PT Ethena USDe 31JUL2025",
       "decimals": 18,
       "symbol": "PT_USDe_31JUL2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3133,6 +3134,7 @@
       "decimals": 18,
       "symbol": "aEthPT_USDe_31JUL2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x917459337CaAC939D41d7493B3999f571D20D667"
@@ -3144,7 +3146,8 @@
       "name": "PT Ethereal eUSDE 14AUG2025",
       "decimals": 18,
       "symbol": "PT_eUSDE_14AUG2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3153,6 +3156,7 @@
       "decimals": 18,
       "symbol": "aEthPT_eUSDe_14AUG2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617"
@@ -3200,6 +3204,28 @@
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xC96dE26018A54D51c097160568752c4E3BD6C364"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c",
+      "name": "Euro Coin",
+      "decimals": 6,
+      "symbol": "EURC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eurc.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0xAA6e91C82942aeAE040303Bf96c15a6dBcB82CA0",
+      "name": "Aave Ethereum EURC",
+      "decimals": 6,
+      "symbol": "aEthEURC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeurc.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c"
       }
     },
     {
@@ -4402,6 +4428,42 @@
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
         "underlyingAToken": "0x724dc807b04555b71ed48a6896b6F41593b8C637"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6",
+      "name": "Aave Avalanche GHO",
+      "decimals": 18,
+      "symbol": "aAvaGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x79459f4C9AfC902488109D058C3E76ed0B037c41",
+      "name": "Wrapped Aave Avalanche GHO",
+      "decimals": 18,
+      "symbol": "waAvaGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+        "underlyingAToken": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6"
       }
     },
     {
@@ -7515,6 +7577,28 @@
       }
     },
     {
+      "chainId": 324,
+      "address": "0xd4169E045bcF9a86cC00101225d9ED61D2F51af2",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 324,
+      "address": "0x5722921bb6C37EaEb78b993765Aa5D79CC50052F",
+      "name": "Aave ZkSync wrsETH",
+      "decimals": 18,
+      "symbol": "aZkswrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x78e30497a3c7527d953c6B1E3541b021A98Ac43c",
+        "underlying": "0xd4169E045bcF9a86cC00101225d9ED61D2F51af2"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0xC035a7cf15375cE2706766804551791aD035E0C2",
       "name": "Aave Ethereum Lido wstETH",
@@ -7667,6 +7751,26 @@
       "extensions": {
         "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
         "underlying": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+      "name": "Treehouse ETH",
+      "decimals": 18,
+      "symbol": "tETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xce8c60fd8390eFCc3Fc66A3f0bd64BEb969e750E",
+      "name": "Aave Ethereum Lido tETH",
+      "decimals": 18,
+      "symbol": "aEthLidotETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
+        "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
       }
     },
     {
@@ -8162,8 +8266,122 @@
         "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
         "underlying": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955"
       }
+    },
+    {
+      "chainId": 1868,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0x1bD45Cc20CE61BE344A64218E6Ade01E72b08f39",
+      "name": "Aave Soneium WETH",
+      "decimals": 18,
+      "symbol": "aSoneWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0x4200000000000000000000000000000000000006"
+      }
+    },
+    {
+      "chainId": 1868,
+      "address": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369",
+      "name": "Bridged USDC (Soneium)",
+      "decimals": 6,
+      "symbol": "USDCe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0xb2C9E934A55B58D20496A5019F8722a96d8A44d8",
+      "name": "Aave Soneium USDCe",
+      "decimals": 6,
+      "symbol": "aSoneUSDCe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369"
+      }
+    },
+    {
+      "chainId": 1868,
+      "address": "0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0xBAB0366ADdA6d2845c6BB5db4339A824350d24F7",
+      "name": "Aave Soneium USDT",
+      "decimals": 6,
+      "symbol": "aSoneUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
+      "name": "Umbrella Stake Wrapped Aave Ethereum ...",
+      "decimals": 6,
+      "symbol": "stkwaEthUSDCv1",
+      "tags": ["uStkToken"],
+      "extensions": {
+        "underlying": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xA484Ab92fe32B143AEE7019fC1502b1dAA522D31",
+      "name": "Umbrella Stake Wrapped Aave Ethereum ...",
+      "decimals": 6,
+      "symbol": "stkwaEthUSDTv1",
+      "tags": ["uStkToken"],
+      "extensions": {
+        "underlying": "0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xaAFD07D53A7365D3e9fb6F3a3B09EC19676B73Ce",
+      "name": "Umbrella Stake Wrapped Aave Ethereum ...",
+      "decimals": 18,
+      "symbol": "stkwaEthWETHv1",
+      "tags": ["uStkToken"],
+      "extensions": {
+        "underlying": "0x0bfc9d54Fc184518A81162F8fB99c2eACa081202",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x4f827A63755855cDf3e8f3bcD20265C833f15033",
+      "name": "Umbrella Stake Gho Token v1",
+      "decimals": 18,
+      "symbol": "stkGHOv1",
+      "tags": ["uStkToken"],
+      "extensions": {
+        "underlying": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 112 },
-  "timestamp": "2025-06-02T16:57:38.885Z"
+  "version": { "major": 3, "minor": 0, "patch": 113 },
+  "timestamp": "2025-07-02T12:49:57.883Z"
 }

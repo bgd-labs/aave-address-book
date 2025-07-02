@@ -229,9 +229,6 @@ library AaveV3LineaExternalLibraries {
   // https://lineascan.build/address/0xAB3218d0900Ba992084a6592b43f66926D4F5757
   address internal constant BORROW_LOGIC = 0xAB3218d0900Ba992084a6592b43f66926D4F5757;
 
-  // https://lineascan.build/address/0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A
-  address internal constant BRIDGE_LOGIC = 0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A;
-
   // https://lineascan.build/address/0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e
   address internal constant E_MODE_LOGIC = 0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e;
 

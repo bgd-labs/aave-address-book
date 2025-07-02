@@ -25,7 +25,7 @@ import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
 import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
-import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {scrollSepoliaProtoV3, scrollProtoV3, etherFiScrollProtoV3} from './configs/pools/scroll';
 import {zkSyncProtoV3} from './configs/pools/zksync';
 import {lineaProtoV3} from './configs/pools/linea';
 import {celoProtoV3} from './configs/pools/celo';
@@ -147,6 +147,7 @@ async function main() {
       optimismProtoV3,
       optimismSepoliaProtoV3,
       scrollProtoV3,
+      etherFiScrollProtoV3,
       scrollSepoliaProtoV3,
       zkSyncProtoV3,
       // fantomTestnetProtoV3,

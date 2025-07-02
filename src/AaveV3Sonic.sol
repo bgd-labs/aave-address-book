@@ -106,25 +106,25 @@ library AaveV3SonicAssets {
   address internal constant WETH_STATA_TOKEN = 0xeB5e9B0ae5bb60274786C747A1A2A798c11271E0;
 
   // https://sonicscan.org/address/0x29219dd400f2Bf60E5a23d13Be72B486D4038894
-  address internal constant USDCe_UNDERLYING = 0x29219dd400f2Bf60E5a23d13Be72B486D4038894;
+  address internal constant USDC_UNDERLYING = 0x29219dd400f2Bf60E5a23d13Be72B486D4038894;
 
-  uint8 internal constant USDCe_DECIMALS = 6;
+  uint8 internal constant USDC_DECIMALS = 6;
 
   // https://sonicscan.org/address/0x578Ee1ca3a8E1b54554Da1Bf7C583506C4CD11c6
-  address internal constant USDCe_A_TOKEN = 0x578Ee1ca3a8E1b54554Da1Bf7C583506C4CD11c6;
+  address internal constant USDC_A_TOKEN = 0x578Ee1ca3a8E1b54554Da1Bf7C583506C4CD11c6;
 
   // https://sonicscan.org/address/0x2273caBAd63b7D247A6b107E723c803fc49953A0
-  address internal constant USDCe_V_TOKEN = 0x2273caBAd63b7D247A6b107E723c803fc49953A0;
+  address internal constant USDC_V_TOKEN = 0x2273caBAd63b7D247A6b107E723c803fc49953A0;
 
   // https://sonicscan.org/address/0x7A8443a2a5D772db7f1E40DeFe32db485108F128
-  address internal constant USDCe_ORACLE = 0x7A8443a2a5D772db7f1E40DeFe32db485108F128;
+  address internal constant USDC_ORACLE = 0x7A8443a2a5D772db7f1E40DeFe32db485108F128;
 
   // https://sonicscan.org/address/0xdFf435BCcf782f11187D3a4454d96702eD78e092
-  address internal constant USDCe_INTEREST_RATE_STRATEGY =
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
     0xdFf435BCcf782f11187D3a4454d96702eD78e092;
 
   // https://sonicscan.org/address/0x6646248971427B80ce531bdD793e2Eb859347E55
-  address internal constant USDCe_STATA_TOKEN = 0x6646248971427B80ce531bdD793e2Eb859347E55;
+  address internal constant USDC_STATA_TOKEN = 0x6646248971427B80ce531bdD793e2Eb859347E55;
 
   // https://sonicscan.org/address/0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38
   address internal constant wS_UNDERLYING = 0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38;
@@ -174,9 +174,6 @@ library AaveV3SonicExternalLibraries {
 
   // https://sonicscan.org/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://sonicscan.org/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://sonicscan.org/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

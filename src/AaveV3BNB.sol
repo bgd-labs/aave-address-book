@@ -286,9 +286,6 @@ library AaveV3BNBExternalLibraries {
   // https://bscscan.com/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
 
-  // https://bscscan.com/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
-
   // https://bscscan.com/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;
 

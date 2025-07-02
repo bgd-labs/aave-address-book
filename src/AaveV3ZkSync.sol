@@ -205,6 +205,24 @@ library AaveV3ZkSyncAssets {
   // https://era.zksync.network/address/0x57815Ab06D846d7dECd326Ee541CD06144FED237
   address internal constant sUSDe_INTEREST_RATE_STRATEGY =
     0x57815Ab06D846d7dECd326Ee541CD06144FED237;
+
+  // https://era.zksync.network/address/0xd4169E045bcF9a86cC00101225d9ED61D2F51af2
+  address internal constant wrsETH_UNDERLYING = 0xd4169E045bcF9a86cC00101225d9ED61D2F51af2;
+
+  uint8 internal constant wrsETH_DECIMALS = 18;
+
+  // https://era.zksync.network/address/0x5722921bb6C37EaEb78b993765Aa5D79CC50052F
+  address internal constant wrsETH_A_TOKEN = 0x5722921bb6C37EaEb78b993765Aa5D79CC50052F;
+
+  // https://era.zksync.network/address/0x97deC07366Be72884331BE21704Fd93BF35286f9
+  address internal constant wrsETH_V_TOKEN = 0x97deC07366Be72884331BE21704Fd93BF35286f9;
+
+  // https://era.zksync.network/address/0x8d25c9de6DBAd9a9eadfB2CA4706034F6721d555
+  address internal constant wrsETH_ORACLE = 0x8d25c9de6DBAd9a9eadfB2CA4706034F6721d555;
+
+  // https://era.zksync.network/address/0x57815Ab06D846d7dECd326Ee541CD06144FED237
+  address internal constant wrsETH_INTEREST_RATE_STRATEGY =
+    0x57815Ab06D846d7dECd326Ee541CD06144FED237;
 }
 library AaveV3ZkSyncEModes {
   uint8 internal constant NONE = 0;
@@ -212,6 +230,8 @@ library AaveV3ZkSyncEModes {
   uint8 internal constant ETH_CORRELATED = 1;
 
   uint8 internal constant WEETH_CORRELATED = 2;
+
+  uint8 internal constant WRSETH_WSTETH = 3;
 }
 library AaveV3ZkSyncExternalLibraries {
   // https://era.zksync.network/address/0x4DFc5c694D5186De1616E207618e0464023a10A4
@@ -219,9 +239,6 @@ library AaveV3ZkSyncExternalLibraries {
 
   // https://era.zksync.network/address/0x5140E3B094704C400dE13D8d7fa06535e711955f
   address internal constant BORROW_LOGIC = 0x5140E3B094704C400dE13D8d7fa06535e711955f;
-
-  // https://era.zksync.network/address/0xA3fE5b3543cBD4418AcB5a0Ddf3C2513Aa778e60
-  address internal constant BRIDGE_LOGIC = 0xA3fE5b3543cBD4418AcB5a0Ddf3C2513Aa778e60;
 
   // https://era.zksync.network/address/0x6877DEF1aD0f25dCec4F61FB60f5BB1682552412
   address internal constant E_MODE_LOGIC = 0x6877DEF1aD0f25dCec4F61FB60f5BB1682552412;
