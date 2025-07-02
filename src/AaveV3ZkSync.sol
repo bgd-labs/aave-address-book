@@ -240,9 +240,6 @@ library AaveV3ZkSyncExternalLibraries {
   // https://era.zksync.network/address/0x5140E3B094704C400dE13D8d7fa06535e711955f
   address internal constant BORROW_LOGIC = 0x5140E3B094704C400dE13D8d7fa06535e711955f;
 
-  // https://era.zksync.network/address/0xA3fE5b3543cBD4418AcB5a0Ddf3C2513Aa778e60
-  address internal constant BRIDGE_LOGIC = 0xA3fE5b3543cBD4418AcB5a0Ddf3C2513Aa778e60;
-
   // https://era.zksync.network/address/0x6877DEF1aD0f25dCec4F61FB60f5BB1682552412
   address internal constant E_MODE_LOGIC = 0x6877DEF1aD0f25dCec4F61FB60f5BB1682552412;
 
