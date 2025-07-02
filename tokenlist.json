@@ -3207,6 +3207,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c",
+      "name": "Euro Coin",
+      "decimals": 6,
+      "symbol": "EURC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eurc.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0xAA6e91C82942aeAE040303Bf96c15a6dBcB82CA0",
+      "name": "Aave Ethereum EURC",
+      "decimals": 6,
+      "symbol": "aEthEURC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeurc.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -8364,6 +8386,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 122 },
-  "timestamp": "2025-06-28T14:21:49.513Z"
+  "version": { "major": 3, "minor": 0, "patch": 123 },
+  "timestamp": "2025-07-02T00:15:45.328Z"
 }
