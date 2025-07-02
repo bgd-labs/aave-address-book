@@ -578,6 +578,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A',
   },
+  EURC: {
+    decimals: 6,
+    id: 47,
+    UNDERLYING: '0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c',
+    A_TOKEN: '0xAA6e91C82942aeAE040303Bf96c15a6dBcB82CA0',
+    V_TOKEN: '0x6c82c66622Eb360FC973D3F492f9D8E9eA538b08',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0xa6aB031A4d189B24628EC9Eb155F0a0f1A0E55a3',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -758,7 +767,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10350,
+    liquidationBonus: 10320,
   },
   '14': {
     label: 'PT-eUSDe USDe August 2025',
@@ -769,9 +778,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9190,
-    liquidationThreshold: 9390,
-    liquidationBonus: 10250,
+    ltv: 9220,
+    liquidationThreshold: 9420,
+    liquidationBonus: 10220,
   },
   '15': {
     label: 'eUSDe_Stablecoin',
