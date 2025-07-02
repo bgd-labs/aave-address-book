@@ -55,14 +55,8 @@ library AaveV3Metis {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f;
 
-  // https://explorer.metis.io/address/0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x5f4d15d761528c57a5C30c43c1DAb26Fc5452731;
-
-  // https://explorer.metis.io/address/0x58226D26658F19724cB881E9F747EeDC846BB1c9
-  address internal constant RISK_STEWARD = 0x58226D26658F19724cB881E9F747EeDC846BB1c9;
-
-  // https://explorer.metis.io/address/0x2C77153fF4a1e83A8d8D750735FB101ECB55949f
-  address internal constant FREEZING_STEWARD = 0x2C77153fF4a1e83A8d8D750735FB101ECB55949f;
+  // https://explorer.metis.io/address/0x97CB9e81d480A2AB03299760654C1DDC0C16bE07
+  address internal constant RISK_STEWARD = 0x97CB9e81d480A2AB03299760654C1DDC0C16bE07;
 
   // https://explorer.metis.io/address/0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9
   address internal constant L2_ENCODER = 0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9;

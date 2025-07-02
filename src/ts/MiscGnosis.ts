@@ -14,4 +14,13 @@ export const PROTOCOL_GUARDIAN = '0xCb45E82419baeBCC9bA8b1e5c7858e48A3B26Ea6';
 // https://gnosisscan.io/address/0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA
 export const wstETH_stETH_AGGREGATOR = '0x0064AC007fF665CF8D0D3Af5E0AD1c26a3f853eA';
 
+// https://gnosisscan.io/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
+
+// https://gnosisscan.io/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+export const MASIV_SAFE = '0xdef1FA4CEfe67365ba046a7C630D6B885298E210';
+
+// https://gnosisscan.io/address/0xdeadD8aB03075b7FBA81864202a2f59EE25B312b
+export const MERIT_AHAB_SAFE = '0xdeadD8aB03075b7FBA81864202a2f59EE25B312b';
+
 export const CHAIN_ID = 100;

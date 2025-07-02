@@ -23,4 +23,13 @@ export const cbETH_ETH_AGGREGATOR = '0x868a501e68F3D1E89CfC0D22F6b22E8dabce5F04'
 // https://basescan.org/address/0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45
 export const LEGACY_BRIDGE_EXECUTOR = '0xA9F30e6ED4098e9439B2ac8aEA2d3fc26BcEbb45';
 
+// https://basescan.org/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
+
+// https://basescan.org/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+export const ALC_SAFE = '0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b';
+
+// https://basescan.org/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+export const MASIV_SAFE = '0xdef1FA4CEfe67365ba046a7C630D6B885298E210';
+
 export const CHAIN_ID = 8453;
