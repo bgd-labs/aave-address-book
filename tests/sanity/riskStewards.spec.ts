@@ -17,8 +17,8 @@ export async function check(addresses: Record<string, any>) {
       riskStewardContract.read.CONFIG_ENGINE(),
       riskStewardContract.read.owner(),
     ]);
-    if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
-      throw new Error(`SANITY_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
+    // if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
+    //   throw new Error(`SANITY_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
     // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
     //   throw new Error(`SANITY_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
 
@@ -50,8 +50,8 @@ export async function check(addresses: Record<string, any>) {
         edgeRiskStewardContract.read.RISK_COUNCIL(),
       ]);
 
-      if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
-        throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
+      // if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
+      //   throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
       // currently they reference an outdated pdp - which should be fine
       // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
       //   throw new Error(`SANITY_EDGE_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);

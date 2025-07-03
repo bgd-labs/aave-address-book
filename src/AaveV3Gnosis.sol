@@ -52,8 +52,8 @@ library AaveV3Gnosis {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
 
-  // https://gnosisscan.io/address/0x97CB9e81d480A2AB03299760654C1DDC0C16bE07
-  address internal constant CONFIG_ENGINE = 0x97CB9e81d480A2AB03299760654C1DDC0C16bE07;
+  // https://gnosisscan.io/address/0x7494b3714Cd163ae760B1Bb946D61D8BD607706E
+  address internal constant CONFIG_ENGINE = 0x7494b3714Cd163ae760B1Bb946D61D8BD607706E;
 
   // https://gnosisscan.io/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -301,9 +301,6 @@ library AaveV3GnosisExternalLibraries {
 
   // https://gnosisscan.io/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://gnosisscan.io/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://gnosisscan.io/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

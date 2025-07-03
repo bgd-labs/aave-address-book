@@ -88,8 +88,8 @@ library AaveV3Base {
   address internal constant LEGACY_STATIC_A_TOKEN_ORACLE =
     0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
 
-  // https://basescan.org/address/0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d
-  address internal constant CONFIG_ENGINE = 0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d;
+  // https://basescan.org/address/0x655252250f4A453854040A49E8280951A76f3033
+  address internal constant CONFIG_ENGINE = 0x655252250f4A453854040A49E8280951A76f3033;
 
   // https://basescan.org/address/0x39e97c588B2907Fb67F44fea256Ae3BA064207C5
   address internal constant L2_ENCODER = 0x39e97c588B2907Fb67F44fea256Ae3BA064207C5;
@@ -434,9 +434,6 @@ library AaveV3BaseExternalLibraries {
 
   // https://basescan.org/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://basescan.org/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://basescan.org/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

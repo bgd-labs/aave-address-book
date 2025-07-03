@@ -55,8 +55,8 @@ library AaveV3Soneium {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x25e5ED391ab7e72657a5cd7dD333f392DE0D9A01;
 
-  // https://soneium.blockscout.com/address/0x169117F01c3272c09D45b3e52dFc11764D7258A9
-  address internal constant CONFIG_ENGINE = 0x169117F01c3272c09D45b3e52dFc11764D7258A9;
+  // https://soneium.blockscout.com/address/0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311
+  address internal constant CONFIG_ENGINE = 0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311;
 
   // https://soneium.blockscout.com/address/0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc
   address internal constant RISK_STEWARD = 0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc;
@@ -147,9 +147,6 @@ library AaveV3SoneiumExternalLibraries {
 
   // https://soneium.blockscout.com/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://soneium.blockscout.com/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://soneium.blockscout.com/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

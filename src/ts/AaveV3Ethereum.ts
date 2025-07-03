@@ -50,8 +50,8 @@ export const DEBT_SWAP_ADAPTER = '0xd7852E139a7097E119623de0751AE53a61efb442';
 // https://etherscan.io/address/0x21714092D90c7265F52fdfDae068EC11a23C6248
 export const DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 = '0x21714092D90c7265F52fdfDae068EC11a23C6248';
 
-// https://etherscan.io/address/0xA8e351C7Ab1b75A2134A418701919c462932DF79
-export const CONFIG_ENGINE = '0xA8e351C7Ab1b75A2134A418701919c462932DF79';
+// https://etherscan.io/address/0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2
+export const CONFIG_ENGINE = '0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2';
 
 // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0xbaA999AC55EAce41CcAE355c77809e68Bb345170';
@@ -748,8 +748,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9340,
-    liquidationThreshold: 9540,
+    ltv: 9370,
+    liquidationThreshold: 9570,
     liquidationBonus: 10220,
   },
   '13': {

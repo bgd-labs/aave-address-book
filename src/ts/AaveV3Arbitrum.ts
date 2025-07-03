@@ -62,8 +62,8 @@ export const DEBT_SWAP_ADAPTER = '0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4';
 // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
 export const L2_ENCODER = '0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC';
 
-// https://arbiscan.io/address/0x5EcF74eb2feC38fe80F8f20f7eb302F276635fff
-export const CONFIG_ENGINE = '0x5EcF74eb2feC38fe80F8f20f7eb302F276635fff';
+// https://arbiscan.io/address/0xAc9a5B43f531Acb0ac1EcA7a0518fe9F48d06006
+export const CONFIG_ENGINE = '0xAc9a5B43f531Acb0ac1EcA7a0518fe9F48d06006';
 
 // https://arbiscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x770ef9f4fe897e59daCc474EF11238303F9552b6';

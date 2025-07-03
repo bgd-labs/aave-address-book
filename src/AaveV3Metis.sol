@@ -61,8 +61,8 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9
   address internal constant L2_ENCODER = 0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9;
 
-  // https://explorer.metis.io/address/0x45918bB1D3F73904a30Ffc3eD11CdB1c05eBF726
-  address internal constant CONFIG_ENGINE = 0x45918bB1D3F73904a30Ffc3eD11CdB1c05eBF726;
+  // https://explorer.metis.io/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
+  address internal constant CONFIG_ENGINE = 0x1dF462e2712496373A347f8ad10802a5E95f053D;
 
   // https://explorer.metis.io/address/0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -202,9 +202,6 @@ library AaveV3MetisExternalLibraries {
 
   // https://explorer.metis.io/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://explorer.metis.io/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://explorer.metis.io/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

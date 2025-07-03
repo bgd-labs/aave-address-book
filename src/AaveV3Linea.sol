@@ -52,8 +52,8 @@ library AaveV3Linea {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
 
-  // https://lineascan.build/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
-  address internal constant CONFIG_ENGINE = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
+  // https://lineascan.build/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef
+  address internal constant CONFIG_ENGINE = 0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef;
 
   // https://lineascan.build/address/0xBDF2e1A49894A306Eb76b89504928b3f509A3a16
   address internal constant RISK_STEWARD = 0xBDF2e1A49894A306Eb76b89504928b3f509A3a16;
@@ -228,9 +228,6 @@ library AaveV3LineaExternalLibraries {
 
   // https://lineascan.build/address/0xAB3218d0900Ba992084a6592b43f66926D4F5757
   address internal constant BORROW_LOGIC = 0xAB3218d0900Ba992084a6592b43f66926D4F5757;
-
-  // https://lineascan.build/address/0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A
-  address internal constant BRIDGE_LOGIC = 0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A;
 
   // https://lineascan.build/address/0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e
   address internal constant E_MODE_LOGIC = 0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e;

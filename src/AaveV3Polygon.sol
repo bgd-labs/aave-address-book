@@ -58,8 +58,8 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
-  // https://polygonscan.com/address/0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729
-  address internal constant CONFIG_ENGINE = 0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729;
+  // https://polygonscan.com/address/0xc9dd6908381F66fC4Dee18C47fee57e59daCd66C
+  address internal constant CONFIG_ENGINE = 0xc9dd6908381F66fC4Dee18C47fee57e59daCd66C;
 
   // https://polygonscan.com/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -556,9 +556,6 @@ library AaveV3PolygonExternalLibraries {
 
   // https://polygonscan.com/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://polygonscan.com/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://polygonscan.com/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

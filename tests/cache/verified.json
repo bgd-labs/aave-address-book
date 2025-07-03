@@ -3374,6 +3374,27 @@
     },
     "0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3": {
       "name": "RiskSteward"
+    },
+    "0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c": {
+      "name": "FiatTokenProxy"
+    },
+    "0xAA6e91C82942aeAE040303Bf96c15a6dBcB82CA0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6c82c66622Eb360FC973D3F492f9D8E9eA538b08": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xa6aB031A4d189B24628EC9Eb155F0a0f1A0E55a3": {
+      "name": "EURPriceCapAdapterStable"
+    },
+    "0x040FE39aF38260385F464FB8d0504789880632Ba": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xDEFCF9aD6B1624AE4B6C4838740CF2C1C6bFAb6C": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "10": {
@@ -4360,6 +4381,9 @@
     },
     "0xa59262276dB8F997948fdc4a10cBc1448A375636": {
       "name": "RiskSteward"
+    },
+    "0x10879676256905AA2e794479aF916255aE95C8e7": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "56": {
@@ -5172,6 +5196,9 @@
     },
     "0x87F4aDD5425f566F156af5074BaD2dFFCd20C594": {
       "name": "RiskSteward"
+    },
+    "0xcB8c3Dbf2530d6b07b50d0BcE91F7A04FA696486": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "100": {
@@ -5645,6 +5672,9 @@
     },
     "0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55": {
       "name": "RiskSteward"
+    },
+    "0x7494b3714Cd163ae760B1Bb946D61D8BD607706E": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "137": {
@@ -6991,6 +7021,9 @@
     },
     "0x1e0A5985D58B45C38598e293189aa5228054629b": {
       "name": "RiskSteward"
+    },
+    "0xc9dd6908381F66fC4Dee18C47fee57e59daCd66C": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "146": {
@@ -7266,6 +7299,9 @@
     },
     "0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c": {
       "name": "RiskSteward"
+    },
+    "0xDa98B308be8766501ec7Fe3eD9a48EfBD6c31a7B": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "324": {
@@ -7559,6 +7595,9 @@
     },
     "0x528a1036C8450464f8a00A0A8c2f517595E44169": {
       "name": "RiskSteward"
+    },
+    "0xc4C229360C7c59a3bbc7c4424Cd1E4A65db3C21e": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "1088": {
@@ -7879,6 +7918,9 @@
     },
     "0x97CB9e81d480A2AB03299760654C1DDC0C16bE07": {
       "name": "RiskSteward"
+    },
+    "0x1dF462e2712496373A347f8ad10802a5E95f053D": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "1101": {
@@ -8174,6 +8216,9 @@
     },
     "0x2580FA33f9dfD9D26F1aC418E09113f3E9c316c2": {
       "name": "EACAggregatorProxy"
+    },
+    "0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "5000": {
@@ -9189,6 +9234,9 @@
     },
     "0x085E34722e04567Df9E6d2c32e82fd74f3342e79": {
       "name": "RiskSteward"
+    },
+    "0x655252250f4A453854040A49E8280951A76f3033": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "42161": {
@@ -10466,6 +10514,9 @@
     },
     "0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8": {
       "name": "RiskSteward"
+    },
+    "0xAc9a5B43f531Acb0ac1EcA7a0518fe9F48d06006": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "42220": {
@@ -10723,6 +10774,9 @@
     },
     "0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c": {
       "name": "RiskSteward"
+    },
+    "0x9632833100E5BA6608E6650Eb35e4adF01DEB6DF": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "43113": {
@@ -11825,6 +11879,9 @@
     },
     "0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2": {
       "name": "RiskSteward"
+    },
+    "0xF671C2f58ed15Dbd13C3Dc20b25f899Cf02D8FaB": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "59144": {
@@ -12121,6 +12178,9 @@
     },
     "0xBDF2e1A49894A306Eb76b89504928b3f509A3a16": {
       "name": "RiskSteward"
+    },
+    "0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "84532": {
@@ -12706,6 +12766,9 @@
     },
     "0x0451f67bA61966C346daBAbB50a30Cc6A9A67C69": {
       "name": "RiskSteward"
+    },
+    "0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d": {
+      "name": "AaveV3ConfigEngine"
     }
   }
 }

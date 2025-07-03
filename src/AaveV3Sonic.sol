@@ -52,8 +52,8 @@ library AaveV3Sonic {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0xcb85C501B3A5e9851850d66648d69B26A4c90942;
 
-  // https://sonicscan.org/address/0xa119F84bC1b8083F5061E4cf53705cBf1065bA27
-  address internal constant CONFIG_ENGINE = 0xa119F84bC1b8083F5061E4cf53705cBf1065bA27;
+  // https://sonicscan.org/address/0xDa98B308be8766501ec7Fe3eD9a48EfBD6c31a7B
+  address internal constant CONFIG_ENGINE = 0xDa98B308be8766501ec7Fe3eD9a48EfBD6c31a7B;
 
   // https://sonicscan.org/address/0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c
   address internal constant RISK_STEWARD = 0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c;
@@ -174,9 +174,6 @@ library AaveV3SonicExternalLibraries {
 
   // https://sonicscan.org/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://sonicscan.org/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://sonicscan.org/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

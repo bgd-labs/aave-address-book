@@ -52,8 +52,8 @@ library AaveV3ZkSync {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x52E97425D1Fa6885fAaC9260B711fA5047A88d06;
 
-  // https://era.zksync.network/address/0x54965A9c830DCEEa6BeEa77642C6A78C3df1C957
-  address internal constant CONFIG_ENGINE = 0x54965A9c830DCEEa6BeEa77642C6A78C3df1C957;
+  // https://era.zksync.network/address/0xc4C229360C7c59a3bbc7c4424Cd1E4A65db3C21e
+  address internal constant CONFIG_ENGINE = 0xc4C229360C7c59a3bbc7c4424Cd1E4A65db3C21e;
 
   // https://era.zksync.network/address/0x0753E3637ddC6efc40759D9c347251046644F25F
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -239,9 +239,6 @@ library AaveV3ZkSyncExternalLibraries {
 
   // https://era.zksync.network/address/0x5140E3B094704C400dE13D8d7fa06535e711955f
   address internal constant BORROW_LOGIC = 0x5140E3B094704C400dE13D8d7fa06535e711955f;
-
-  // https://era.zksync.network/address/0xA3fE5b3543cBD4418AcB5a0Ddf3C2513Aa778e60
-  address internal constant BRIDGE_LOGIC = 0xA3fE5b3543cBD4418AcB5a0Ddf3C2513Aa778e60;
 
   // https://era.zksync.network/address/0x6877DEF1aD0f25dCec4F61FB60f5BB1682552412
   address internal constant E_MODE_LOGIC = 0x6877DEF1aD0f25dCec4F61FB60f5BB1682552412;

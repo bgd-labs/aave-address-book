@@ -62,8 +62,8 @@ library AaveV3Ethereum {
   address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
     0x21714092D90c7265F52fdfDae068EC11a23C6248;
 
-  // https://etherscan.io/address/0xA8e351C7Ab1b75A2134A418701919c462932DF79
-  address internal constant CONFIG_ENGINE = 0xA8e351C7Ab1b75A2134A418701919c462932DF79;
+  // https://etherscan.io/address/0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2
+  address internal constant CONFIG_ENGINE = 0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2;
 
   // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -1142,9 +1142,6 @@ library AaveV3EthereumExternalLibraries {
 
   // https://etherscan.io/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://etherscan.io/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://etherscan.io/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

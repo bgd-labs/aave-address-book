@@ -78,8 +78,8 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299
   address internal constant WETH_GATEWAY = 0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299;
 
-  // https://etherscan.io/address/0x1097eDb85392932b7dCB630baDDC8A6D73585218
-  address internal constant CONFIG_ENGINE = 0x1097eDb85392932b7dCB630baDDC8A6D73585218;
+  // https://etherscan.io/address/0x040FE39aF38260385F464FB8d0504789880632Ba
+  address internal constant CONFIG_ENGINE = 0x040FE39aF38260385F464FB8d0504789880632Ba;
 
   // https://etherscan.io/address/0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3
   address internal constant RISK_STEWARD = 0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3;
@@ -302,9 +302,6 @@ library AaveV3EthereumLidoExternalLibraries {
 
   // https://etherscan.io/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://etherscan.io/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://etherscan.io/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

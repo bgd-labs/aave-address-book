@@ -67,8 +67,8 @@ library AaveV3Avalanche {
   // https://snowscan.xyz/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
-  // https://snowscan.xyz/address/0x9aaB9F0b6E19907e346420Edc0d3029Edb5e8616
-  address internal constant CONFIG_ENGINE = 0x9aaB9F0b6E19907e346420Edc0d3029Edb5e8616;
+  // https://snowscan.xyz/address/0xF671C2f58ed15Dbd13C3Dc20b25f899Cf02D8FaB
+  address internal constant CONFIG_ENGINE = 0xF671C2f58ed15Dbd13C3Dc20b25f899Cf02D8FaB;
 
   // https://snowscan.xyz/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -455,9 +455,6 @@ library AaveV3AvalancheExternalLibraries {
 
   // https://snowscan.xyz/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
   address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
-
-  // https://snowscan.xyz/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
 
   // https://snowscan.xyz/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
   address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;

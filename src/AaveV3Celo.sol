@@ -52,8 +52,8 @@ library AaveV3Celo {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0;
 
-  // https://celoscan.io/address/0xB25a5D144626a0D488e52AE717A051a2E9997076
-  address internal constant CONFIG_ENGINE = 0xB25a5D144626a0D488e52AE717A051a2E9997076;
+  // https://celoscan.io/address/0x9632833100E5BA6608E6650Eb35e4adF01DEB6DF
+  address internal constant CONFIG_ENGINE = 0x9632833100E5BA6608E6650Eb35e4adF01DEB6DF;
 
   // https://celoscan.io/address/0xB4B6939D0804DCE8d0Ac3e59b2eD5C072829d56b
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -201,9 +201,6 @@ library AaveV3CeloExternalLibraries {
 
   // https://celoscan.io/address/0xAB3218d0900Ba992084a6592b43f66926D4F5757
   address internal constant BORROW_LOGIC = 0xAB3218d0900Ba992084a6592b43f66926D4F5757;
-
-  // https://celoscan.io/address/0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A
-  address internal constant BRIDGE_LOGIC = 0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A;
 
   // https://celoscan.io/address/0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e
   address internal constant E_MODE_LOGIC = 0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e;
