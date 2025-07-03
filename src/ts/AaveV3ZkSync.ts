@@ -59,8 +59,8 @@ export const WALLET_BALANCE_PROVIDER = '0xcb8Dc3C135e59B1252F057da44A8f43EE6B0dA
 // https://era.zksync.network/address/0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff
 export const WETH_GATEWAY = '0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff';
 
-// https://era.zksync.network/address/0x05c77Cf62346329a157d7A6F874464D049CECb26
-export const RISK_STEWARD = '0x05c77Cf62346329a157d7A6F874464D049CECb26';
+// https://era.zksync.network/address/0x528a1036C8450464f8a00A0A8c2f517595E44169
+export const RISK_STEWARD = '0x528a1036C8450464f8a00A0A8c2f517595E44169';
 
 // https://era.zksync.network/address/0x452E8E84bF852513585f893931CBD9A409Cd3459
 export const DUST_BIN = '0x452E8E84bF852513585f893931CBD9A409Cd3459';
@@ -133,6 +133,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x57815Ab06D846d7dECd326Ee541CD06144FED237',
     ORACLE: '0x9172A80ed668D3097D45350ffF71F4421ff572e1',
   },
+  wrsETH: {
+    decimals: 18,
+    id: 7,
+    UNDERLYING: '0xd4169E045bcF9a86cC00101225d9ED61D2F51af2',
+    A_TOKEN: '0x5722921bb6C37EaEb78b993765Aa5D79CC50052F',
+    V_TOKEN: '0x97deC07366Be72884331BE21704Fd93BF35286f9',
+    INTEREST_RATE_STRATEGY: '0x57815Ab06D846d7dECd326Ee541CD06144FED237',
+    ORACLE: '0x8d25c9de6DBAd9a9eadfB2CA4706034F6721d555',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -156,6 +165,16 @@ export const E_MODES = {
     borrowableAssets: ['0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91'],
     ltv: 9000,
     liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+  '3': {
+    label: 'wrsETH/wstETH',
+    collateralBitmap: '128',
+    collateralAssets: ['0xd4169E045bcF9a86cC00101225d9ED61D2F51af2'],
+    borrowableBitmap: '8',
+    borrowableAssets: ['0x703b52F2b28fEbcB60E1372858AF5b18849FE867'],
+    ltv: 9250,
+    liquidationThreshold: 9450,
     liquidationBonus: 10100,
   },
 } as const;

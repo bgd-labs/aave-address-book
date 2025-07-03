@@ -1,14 +1,14 @@
 import 'dotenv/config';
-import { appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'fs';
-import { governanceConfigMainnet } from './configs/governance/ethereum';
-import { arbitrumProtoV3, arbitrumSepoliaProtoV3 } from './configs/pools/arbitrum';
+import {appendFileSync, existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'fs';
+import {governanceConfigMainnet} from './configs/governance/ethereum';
+import {arbitrumProtoV3, arbitrumSepoliaProtoV3} from './configs/pools/arbitrum';
 import {
   avalancheProtoV2,
   avalancheProtoV3,
   fujiProtoV2,
   fujiProtoV3,
 } from './configs/pools/avalanche';
-import { baseProtoV3, baseSepoliaProtoV3, baseSepoliaLidoProtoV3 } from './configs/pools/base';
+import {baseProtoV3, baseSepoliaProtoV3, baseSepoliaLidoProtoV3} from './configs/pools/base';
 import {
   mainnetProtoV3Pool,
   mainnetAmmV2Pool,
@@ -18,8 +18,6 @@ import {
   lidoEthereumMainnetProtoV3Pool,
   etherFiEthereumMainnetProtoV3Pool,
 } from './configs/pools/ethereum';
-import {fantomProtoV3, fantomTestnetProtoV3} from './configs/pools/fantom';
-import {harmonyProtoV3} from './configs/pools/harmony';
 import {metisProtoV3} from './configs/pools/metis';
 import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
@@ -37,7 +35,7 @@ import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
 import {generateUmbrellaLibrary} from './generator/umbrellaGenerator';
 import {generateGovV2} from './generator/governanceV2Generator';
-import {prefixWithGeneratedWarning, prefixWithPragma} from './generator/utils';
+import {prefixWithGeneratedWarning} from './generator/utils';
 import {generateSafetyModule} from './generator/safetyModuleGenerator';
 import {governanceConfigArbitrum} from './configs/governance/arbitrum';
 import {governanceConfigAvalanche, governanceConfigFuji} from './configs/governance/avalanche';
@@ -69,6 +67,7 @@ import {governanceConfigZkSync} from './configs/governance/zksync';
 import {zkSyncAddresses} from './configs/networks/zksync';
 import {lineaAddresses} from './configs/networks/linea';
 import {ghoArbitrum} from './configs/gho/arbitrum';
+import {ghoAvalanche} from './configs/gho/avalanche';
 import {ghoBase} from './configs/gho/base';
 import {ghoEthereum} from './configs/gho/ethereum';
 import {generateGho} from './generator/ghoGenerator';
@@ -81,7 +80,7 @@ import {governanceConfigSonic} from './configs/governance/sonic';
 import {umbrellaMainnetConfig} from './configs/umbrella/ethereum';
 import {umbrellaBaseSepoliaConfig} from './configs/umbrella/base';
 import {generateChainlink} from './generator/chainlink';
-import { governanceConfigSoneium } from './configs/governance/soneium';
+import {governanceConfigSoneium} from './configs/governance/soneium';
 
 async function main() {
   // cleanup ts artifacts
@@ -114,7 +113,7 @@ async function main() {
       governanceConfigLinea,
       governanceConfigMantle,
       governanceConfigSonic,
-      governanceConfigSoneium
+      governanceConfigSoneium,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -161,9 +160,19 @@ async function main() {
       soneiumProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
-  const umbrellaAddresses = await Promise.all([umbrellaMainnetConfig, umbrellaBaseSepoliaConfig].map((config) => generateUmbrellaLibrary(config)));
-  const tokenListImports = await generateTokenList([...v2LibraryNames, ...v3LibraryNames, ...umbrellaAddresses]);
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche].map((config) =>
+    generateGho(config),
+  );
+  const umbrellaAddresses = await Promise.all(
+    [umbrellaMainnetConfig, umbrellaBaseSepoliaConfig].map((config) =>
+      generateUmbrellaLibrary(config),
+    ),
+  );
+  const tokenListImports = await generateTokenList([
+    ...v2LibraryNames,
+    ...v3LibraryNames,
+    ...umbrellaAddresses,
+  ]);
   console.log('✅ Tokens list generation finished');
 
   const networkAddresses = [
@@ -197,7 +206,7 @@ async function main() {
 
   const abis = generateABIImports();
 
-  generateChainlink();
+  const cl = generateChainlink();
 
   writeFileSync('./src/ts/abis/index.ts', abis.join('\n'));
 
@@ -211,7 +220,8 @@ async function main() {
     smImports,
     tokenListImports,
     ghoAddresses,
-    umbrellaAddresses
+    umbrellaAddresses,
+    cl,
   ].flat();
 
   const jsExports = imports.map((f) => f.js).flat();

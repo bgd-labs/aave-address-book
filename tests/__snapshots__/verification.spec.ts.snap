@@ -4,32 +4,50 @@ exports[`verification > should have all contracts verified except for the known 
 [
   {
     "item": {
-      "chainId": 42220,
+      "chainId": 43114,
       "path": [
-        "GovernanceV3Celo",
-        "GOVERNANCE_GUARDIAN",
+        "AaveV3Avalanche",
+        "ASSETS",
+        "GHO",
+        "A_TOKEN",
       ],
-      "value": "0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E",
+      "value": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6",
     },
   },
   {
     "item": {
-      "chainId": 42220,
+      "chainId": 43114,
       "path": [
-        "MiscCelo",
-        "PROTOCOL_GUARDIAN",
+        "AaveV3Avalanche",
+        "ASSETS",
+        "GHO",
+        "V_TOKEN",
       ],
-      "value": "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85",
+      "value": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
     },
   },
   {
     "item": {
-      "chainId": 5000,
+      "chainId": 324,
       "path": [
-        "MiscMantle",
-        "PROTOCOL_GUARDIAN",
+        "AaveV3ZkSync",
+        "ASSETS",
+        "wrsETH",
+        "A_TOKEN",
       ],
-      "value": "0x172867391d690Eb53896623DaD22208624230686",
+      "value": "0x5722921bb6C37EaEb78b993765Aa5D79CC50052F",
+    },
+  },
+  {
+    "item": {
+      "chainId": 324,
+      "path": [
+        "AaveV3ZkSync",
+        "ASSETS",
+        "wrsETH",
+        "V_TOKEN",
+      ],
+      "value": "0x97deC07366Be72884331BE21704Fd93BF35286f9",
     },
   },
 ]

@@ -146,7 +146,7 @@
       "address": "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_DAI_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -168,7 +168,7 @@
       "address": "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_WBTC_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -190,7 +190,7 @@
       "address": "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_AAVE_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -212,7 +212,7 @@
       "address": "0xB6909B960DbbE7392D405429eB2b3649752b4838",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_BAT_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -234,7 +234,7 @@
       "address": "0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_DAI_USDC",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -256,7 +256,7 @@
       "address": "0x3dA1313aE46132A397D90d95B1424A9A7e3e0fCE",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_CRV_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -278,7 +278,7 @@
       "address": "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_LINK_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -300,7 +300,7 @@
       "address": "0xC2aDdA861F89bBB333c90c492cB837741916A225",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_MKR_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -322,7 +322,7 @@
       "address": "0x8Bd1661Da98EBDd3BD080F0bE4e6d9bE8cE9858c",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_REN_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -344,7 +344,7 @@
       "address": "0x43AE24960e5534731Fc831386c07755A2dc33D47",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_SNX_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -366,7 +366,7 @@
       "address": "0xd3d2E2692501A5c9Ca623199D38826e513033a17",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_UNI_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -388,7 +388,7 @@
       "address": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_USDC_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -410,7 +410,7 @@
       "address": "0x004375Dff511095CC5A197A54140a24eFEF3A416",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_WBTC_USDC",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -432,7 +432,7 @@
       "address": "0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28",
       "name": "Uniswap V2",
       "decimals": 18,
-      "symbol": "UNI_YFI_WETH",
+      "symbol": "UNI-V2",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/uni.svg"
     },
@@ -454,7 +454,7 @@
       "address": "0x1efF8aF5D577060BA4ac8A29A13525bb0Ee2A3D5",
       "name": "Balancer Pool Token",
       "decimals": 18,
-      "symbol": "BPT_WBTC_WETH",
+      "symbol": "BPT",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/bpt.svg"
     },
@@ -476,7 +476,7 @@
       "address": "0x59A19D8c652FA0284f44113D0ff9aBa70bd46fB4",
       "name": "Balancer Pool Token",
       "decimals": 18,
-      "symbol": "BPT_BAL_WETH",
+      "symbol": "BPT",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/bpt.svg"
     },
@@ -498,7 +498,7 @@
       "address": "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e",
       "name": "Gelato Uniswap DAI/USDC LP",
       "decimals": 18,
-      "symbol": "GUNI_DAI_USDC",
+      "symbol": "G-UNI",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/guni.svg"
     },
@@ -520,7 +520,7 @@
       "address": "0xD2eeC91055F07fE24C9cCB25828ecfEFd4be0c41",
       "name": "Gelato Uniswap USDC/USDT LP",
       "decimals": 18,
-      "symbol": "GUNI_USDC_USDT",
+      "symbol": "G-UNI",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/guni.svg"
     },
@@ -1319,7 +1319,7 @@
       "address": "0x111111111117dC0aa78b770fA6A738034120C302",
       "name": "1INCH Token",
       "decimals": 18,
-      "symbol": "ONE_INCH",
+      "symbol": "1INCH",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/1inch.svg"
     },
@@ -1328,7 +1328,7 @@
       "address": "0xB29130CBcC3F791f077eAdE0266168E808E5151e",
       "name": "Aave interest bearing 1INCH",
       "decimals": 18,
-      "symbol": "aONE_INCH",
+      "symbol": "a1INCH",
       "tags": ["aTokenV2", "aaveV2"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/a1inch.svg",
       "extensions": {
@@ -1649,7 +1649,7 @@
       "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
       "name": "Wrapped Ether",
       "decimals": 18,
-      "symbol": "WETHe",
+      "symbol": "WETH.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
     },
@@ -1671,7 +1671,7 @@
       "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
       "name": "Dai Stablecoin",
       "decimals": 18,
-      "symbol": "DAIe",
+      "symbol": "DAI.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/dai.svg"
     },
@@ -1693,7 +1693,7 @@
       "address": "0xc7198437980c041c805A1EDcbA50c1Ce5db95118",
       "name": "Tether USD",
       "decimals": 6,
-      "symbol": "USDTe",
+      "symbol": "USDT.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
     },
@@ -1715,7 +1715,7 @@
       "address": "0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
       "name": "USD Coin",
       "decimals": 6,
-      "symbol": "USDCe",
+      "symbol": "USDC.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
     },
@@ -1737,7 +1737,7 @@
       "address": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
       "name": "Aave Token",
       "decimals": 18,
-      "symbol": "AAVEe",
+      "symbol": "AAVE.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aave.svg"
     },
@@ -1759,7 +1759,7 @@
       "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
       "name": "Wrapped BTC",
       "decimals": 8,
-      "symbol": "WBTCe",
+      "symbol": "WBTC.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wbtc.svg"
     },
@@ -2353,7 +2353,7 @@
       "address": "0x71Aef7b30728b9BB371578f36c5A1f1502a5723e",
       "name": "Aave Ethereum 1INCH",
       "decimals": 18,
-      "symbol": "aEthONE_INCH",
+      "symbol": "aEth1INCH",
       "tags": ["aTokenV3", "aaveV3"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/a1inch.svg",
       "extensions": {
@@ -2366,7 +2366,7 @@
       "address": "0xB490fF18e55b8881C9527FE7E358dd363780449F",
       "name": "Static Aave Ethereum 1INCH",
       "decimals": 18,
-      "symbol": "stataEthONE_INCH",
+      "symbol": "stataEth1INCH",
       "tags": ["aaveV3", "staticAT"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stata1inch.svg",
       "extensions": {
@@ -3057,7 +3057,7 @@
       "address": "0x50D2C7992b802Eef16c04FeADAB310f31866a545",
       "name": "PT Ethereal eUSDE 29MAY2025",
       "decimals": 18,
-      "symbol": "PT_eUSDE_29MAY2025",
+      "symbol": "PT-eUSDE-29MAY2025",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
@@ -3079,7 +3079,7 @@
       "address": "0x3b3fB9C57858EF816833dC91565EFcd85D96f634",
       "name": "PT Ethena sUSDE 31JUL2025",
       "decimals": 18,
-      "symbol": "PT_sUSDE_3ONE_JUL2025",
+      "symbol": "PT-sUSDE-31JUL2025",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
     },
@@ -3088,7 +3088,7 @@
       "address": "0xDE6eF6CB4aBd3A473ffC2942eEf5D84536F8E864",
       "name": "Aave Ethereum PT_sUSDE_31JUL2025",
       "decimals": 18,
-      "symbol": "aEthPT_sUSDE_3ONE_JUL2025",
+      "symbol": "aEthPT_sUSDE_31JUL2025",
       "tags": ["aTokenV3", "aaveV3"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
@@ -3123,8 +3123,9 @@
       "address": "0x917459337CaAC939D41d7493B3999f571D20D667",
       "name": "PT Ethena USDe 31JUL2025",
       "decimals": 18,
-      "symbol": "PT_USDe_31JUL2025",
-      "tags": ["underlying"]
+      "symbol": "PT-USDe-31JUL2025",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3133,6 +3134,7 @@
       "decimals": 18,
       "symbol": "aEthPT_USDe_31JUL2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x917459337CaAC939D41d7493B3999f571D20D667"
@@ -3143,8 +3145,9 @@
       "address": "0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617",
       "name": "PT Ethereal eUSDE 14AUG2025",
       "decimals": 18,
-      "symbol": "PT_eUSDE_14AUG2025",
-      "tags": ["underlying"]
+      "symbol": "PT-eUSDE-14AUG2025",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3153,6 +3156,7 @@
       "decimals": 18,
       "symbol": "aEthPT_eUSDe_14AUG2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617"
@@ -3200,6 +3204,28 @@
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xC96dE26018A54D51c097160568752c4E3BD6C364"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c",
+      "name": "Euro Coin",
+      "decimals": 6,
+      "symbol": "EURC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eurc.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0xAA6e91C82942aeAE040303Bf96c15a6dBcB82CA0",
+      "name": "Aave Ethereum EURC",
+      "decimals": 6,
+      "symbol": "aEthEURC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeurc.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c"
       }
     },
     {
@@ -3810,7 +3836,7 @@
       "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
       "name": "USD Coin",
       "decimals": 6,
-      "symbol": "USDCn",
+      "symbol": "USDC",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
     },
@@ -3887,7 +3913,7 @@
       "address": "0x5947BB275c521040051D82396192181b413227A3",
       "name": "Chainlink Token",
       "decimals": 18,
-      "symbol": "LINKe",
+      "symbol": "LINK.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/link.svg"
     },
@@ -4323,7 +4349,7 @@
       "address": "0x152b9d0FdC40C096757F570A51E494bd4b943E50",
       "name": "Bitcoin",
       "decimals": 8,
-      "symbol": "BTCb",
+      "symbol": "BTC.b",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/btc.svg"
     },
@@ -4332,7 +4358,7 @@
       "address": "0x8ffDf2DE812095b1D19CB146E4c004587C0A0692",
       "name": "Aave Avalanche BTC.b",
       "decimals": 8,
-      "symbol": "aAvaBTCb",
+      "symbol": "aAvaBTC.b",
       "tags": ["aTokenV3", "aaveV3"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/abtc.svg",
       "extensions": {
@@ -4345,7 +4371,7 @@
       "address": "0x34d768cc830c32DcD743321c09A2A702651bF9a2",
       "name": "Static Aave Avalanche BTC.b",
       "decimals": 8,
-      "symbol": "stataAvaBTCb",
+      "symbol": "stataAvaBTC.b",
       "tags": ["aaveV3", "staticAT"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statabtc.svg",
       "extensions": {
@@ -4359,7 +4385,7 @@
       "address": "0x2d324fD1Ca86D90f61B0965d2db2f86d22eA4B74",
       "name": "Wrapped Aave Avalanche BTC.b",
       "decimals": 8,
-      "symbol": "waAvaBTCb",
+      "symbol": "waAvaBTC.b",
       "tags": ["aaveV3", "stataToken"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statabtc.svg",
       "extensions": {
@@ -4402,6 +4428,42 @@
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
         "underlyingAToken": "0x724dc807b04555b71ed48a6896b6F41593b8C637"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6",
+      "name": "Aave Avalanche GHO",
+      "decimals": 18,
+      "symbol": "aAvaGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x79459f4C9AfC902488109D058C3E76ed0B037c41",
+      "name": "Wrapped Aave Avalanche GHO",
+      "decimals": 18,
+      "symbol": "waAvaGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+        "underlyingAToken": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6"
       }
     },
     {
@@ -4933,7 +4995,7 @@
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
       "decimals": 18,
-      "symbol": "mDAI",
+      "symbol": "m.DAI",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/dai.svg"
     },
@@ -5005,7 +5067,7 @@
       "address": "0xEA32A96608495e54156Ae48931A7c20f0dcc1a21",
       "name": "USDC Token",
       "decimals": 6,
-      "symbol": "mUSDC",
+      "symbol": "m.USDC",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
     },
@@ -5041,7 +5103,7 @@
       "address": "0xbB06DCA3AE6887fAbF931640f67cab3e3a16F4dC",
       "name": "USDT Token",
       "decimals": 6,
-      "symbol": "mUSDT",
+      "symbol": "m.USDT",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
     },
@@ -5161,7 +5223,7 @@
     {
       "chainId": 100,
       "address": "0x6C76971f98945AE98dD7d4DFcA8711ebea946eA6",
-      "name": "Wrapped liquid staked Ether 2.0 from ...",
+      "name": "Wrapped liquid staked Ether 2.0 from Mainnet",
       "decimals": 18,
       "symbol": "wstETH",
       "tags": ["underlying"],
@@ -5421,7 +5483,7 @@
       "address": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
       "name": "Bridged USDC (Gnosis)",
       "decimals": 6,
-      "symbol": "USDCe",
+      "symbol": "USDC.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
     },
@@ -5995,7 +6057,7 @@
       "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
       "name": "USD₮0",
       "decimals": 6,
-      "symbol": "USDT",
+      "symbol": "USD₮0",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
     },
@@ -6289,7 +6351,7 @@
       "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       "name": "USD Coin",
       "decimals": 6,
-      "symbol": "USDCn",
+      "symbol": "USDC",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
     },
@@ -7205,7 +7267,7 @@
       "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
       "name": "USD Coin",
       "decimals": 6,
-      "symbol": "USDCn",
+      "symbol": "USDC",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
     },
@@ -7515,6 +7577,28 @@
       }
     },
     {
+      "chainId": 324,
+      "address": "0xd4169E045bcF9a86cC00101225d9ED61D2F51af2",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 324,
+      "address": "0x5722921bb6C37EaEb78b993765Aa5D79CC50052F",
+      "name": "Aave ZkSync wrsETH",
+      "decimals": 18,
+      "symbol": "aZkswrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x78e30497a3c7527d953c6B1E3541b021A98Ac43c",
+        "underlying": "0xd4169E045bcF9a86cC00101225d9ED61D2F51af2"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0xC035a7cf15375cE2706766804551791aD035E0C2",
       "name": "Aave Ethereum Lido wstETH",
@@ -7667,6 +7751,26 @@
       "extensions": {
         "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
         "underlying": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+      "name": "Treehouse ETH",
+      "decimals": 18,
+      "symbol": "tETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xce8c60fd8390eFCc3Fc66A3f0bd64BEb969e750E",
+      "name": "Aave Ethereum Lido tETH",
+      "decimals": 18,
+      "symbol": "aEthLidotETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
+        "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
       }
     },
     {
@@ -7916,7 +8020,7 @@
       "address": "0x48065fbBE25f71C9282ddf5e1cD6D6A887483D5e",
       "name": "Tether USD",
       "decimals": 6,
-      "symbol": "USDT",
+      "symbol": "USD₮",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
     },
@@ -8074,7 +8178,7 @@
       "address": "0x29219dd400f2Bf60E5a23d13Be72B486D4038894",
       "name": "Bridged USDC (Sonic Labs)",
       "decimals": 6,
-      "symbol": "USDCe",
+      "symbol": "USDC.e",
       "tags": ["underlying"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
     },
@@ -8162,8 +8266,126 @@
         "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
         "underlying": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955"
       }
+    },
+    {
+      "chainId": 1868,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0x1bD45Cc20CE61BE344A64218E6Ade01E72b08f39",
+      "name": "Aave Soneium WETH",
+      "decimals": 18,
+      "symbol": "aSoneWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0x4200000000000000000000000000000000000006"
+      }
+    },
+    {
+      "chainId": 1868,
+      "address": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369",
+      "name": "Bridged USDC (Soneium)",
+      "decimals": 6,
+      "symbol": "USDC.e",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0xb2C9E934A55B58D20496A5019F8722a96d8A44d8",
+      "name": "Aave Soneium USDCe",
+      "decimals": 6,
+      "symbol": "aSoneUSDCe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0xbA9986D2381edf1DA03B0B9c1f8b00dc4AacC369"
+      }
+    },
+    {
+      "chainId": 1868,
+      "address": "0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35",
+      "name": "Tether USD",
+      "decimals": 6,
+      "symbol": "USDT",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+    },
+    {
+      "chainId": 1868,
+      "address": "0xBAB0366ADdA6d2845c6BB5db4339A824350d24F7",
+      "name": "Aave Soneium USDT",
+      "decimals": 6,
+      "symbol": "aSoneUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "extensions": {
+        "pool": "0xDd3d7A7d03D9fD9ef45f3E587287922eF65CA38B",
+        "underlying": "0x3A337a6adA9d885b6Ad95ec48F9b75f197b5AE35"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
+      "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
+      "decimals": 6,
+      "symbol": "stkwaEthUSDC.v1",
+      "tags": ["uStkToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stkstatausdc.svg",
+      "extensions": {
+        "underlying": "0xD4fa2D31b7968E448877f69A96DE69f5de8cD23E",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xA484Ab92fe32B143AEE7019fC1502b1dAA522D31",
+      "name": "Umbrella Stake Wrapped Aave Ethereum USDT v1",
+      "decimals": 6,
+      "symbol": "stkwaEthUSDT.v1",
+      "tags": ["uStkToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stkstatausdt.svg",
+      "extensions": {
+        "underlying": "0x7Bc3485026Ac48b6cf9BaF0A377477Fff5703Af8",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xaAFD07D53A7365D3e9fb6F3a3B09EC19676B73Ce",
+      "name": "Umbrella Stake Wrapped Aave Ethereum WETH v1",
+      "decimals": 18,
+      "symbol": "stkwaEthWETH.v1",
+      "tags": ["uStkToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stkstataweth.svg",
+      "extensions": {
+        "underlying": "0x0bfc9d54Fc184518A81162F8fB99c2eACa081202",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x4f827A63755855cDf3e8f3bcD20265C833f15033",
+      "name": "Umbrella Stake Gho Token v1",
+      "decimals": 18,
+      "symbol": "stkGHO.v1",
+      "tags": ["uStkToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stkgho.svg",
+      "extensions": {
+        "underlying": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f",
+        "umbrella": "0xD400fc38ED4732893174325693a63C30ee3881a8"
+      }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 112 },
-  "timestamp": "2025-06-02T16:57:38.885Z"
+  "version": { "major": 3, "minor": 0, "patch": 123 },
+  "timestamp": "2025-07-02T00:15:45.328Z"
 }

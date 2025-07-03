@@ -81,11 +81,8 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x1097eDb85392932b7dCB630baDDC8A6D73585218
   address internal constant CONFIG_ENGINE = 0x1097eDb85392932b7dCB630baDDC8A6D73585218;
 
-  // https://etherscan.io/address/0x3843b29118fFC18d5d12EE079d0324E1bF115e69
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x3843b29118fFC18d5d12EE079d0324E1bF115e69;
-
-  // https://etherscan.io/address/0x30adC2f98ff78fDde12F191Acb82699f640694FB
-  address internal constant RISK_STEWARD = 0x30adC2f98ff78fDde12F191Acb82699f640694FB;
+  // https://etherscan.io/address/0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3
+  address internal constant RISK_STEWARD = 0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3;
 
   // https://etherscan.io/address/0xd1B2dec98A95B773C4909B5CD8FB455F467A527f
   address internal constant DEBT_SWAP_ADAPTER = 0xd1B2dec98A95B773C4909B5CD8FB455F467A527f;
@@ -95,13 +92,6 @@ library AaveV3EthereumLido {
 
   // https://etherscan.io/address/0x834a5aC6e9D05b92F599A031941262F761c34859
   address internal constant EDGE_INJECTOR_RATES = 0x834a5aC6e9D05b92F599A031941262F761c34859;
-
-  // https://etherscan.io/address/0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A
-  address internal constant EDGE_RISK_STEWARD_PENDLE_EMODE =
-    0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A;
-
-  // https://etherscan.io/address/0x7ABB46C690C52E919687D19ebF89C81A6136C1F2
-  address internal constant EDGE_RISK_ORACLE = 0x7ABB46C690C52E919687D19ebF89C81A6136C1F2;
 
   // https://etherscan.io/address/0x347C75d19718a05148687E13dca259aD016aB411
   address internal constant STATA_FACTORY = 0x347C75d19718a05148687E13dca259aD016aB411;
@@ -270,6 +260,24 @@ library AaveV3EthereumLidoAssets {
   // https://etherscan.io/address/0x8958b1C39269167527821f8c276Ef7504883f2fa
   address internal constant rsETH_INTEREST_RATE_STRATEGY =
     0x8958b1C39269167527821f8c276Ef7504883f2fa;
+
+  // https://etherscan.io/address/0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8
+  address internal constant tETH_UNDERLYING = 0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8;
+
+  uint8 internal constant tETH_DECIMALS = 18;
+
+  // https://etherscan.io/address/0xce8c60fd8390eFCc3Fc66A3f0bd64BEb969e750E
+  address internal constant tETH_A_TOKEN = 0xce8c60fd8390eFCc3Fc66A3f0bd64BEb969e750E;
+
+  // https://etherscan.io/address/0xe7ea6125490ae4594aD9B44D05dFF9F2A4343134
+  address internal constant tETH_V_TOKEN = 0xe7ea6125490ae4594aD9B44D05dFF9F2A4343134;
+
+  // https://etherscan.io/address/0x85968026294b8f8Fb86d6bF3Cda079f9376aD05A
+  address internal constant tETH_ORACLE = 0x85968026294b8f8Fb86d6bF3Cda079f9376aD05A;
+
+  // https://etherscan.io/address/0x8958b1C39269167527821f8c276Ef7504883f2fa
+  address internal constant tETH_INTEREST_RATE_STRATEGY =
+    0x8958b1C39269167527821f8c276Ef7504883f2fa;
 }
 library AaveV3EthereumLidoEModes {
   uint8 internal constant NONE = 0;
@@ -285,6 +293,8 @@ library AaveV3EthereumLidoEModes {
   uint8 internal constant RSETH_LST_MAIN = 5;
 
   uint8 internal constant RSETH_STABLECOINS = 6;
+
+  uint8 internal constant TETH_WSTETH = 7;
 }
 library AaveV3EthereumLidoExternalLibraries {
   // https://etherscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770

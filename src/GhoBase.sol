@@ -17,4 +17,7 @@ library GhoBase {
 
   // https://basescan.org/address/0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB
   address internal constant GHO_CCIP_STEWARD = 0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB;
+
+  // https://basescan.org/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
+  address internal constant RISK_COUNCIL = 0x8513e6F37dBc52De87b166980Fa3F50639694B60;
 }

@@ -19,7 +19,7 @@ library ChainlinkLinea {
   address internal constant weETH_ETH = 0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544;
 
   // https://lineascan.build/address/0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC
-  address internal constant agETHETH_Exchange_Rate = 0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC;
+  address internal constant agETH_ETH_Exchange_Rate = 0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC;
 
   // https://lineascan.build/address/0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156
   address internal constant osETH_ETH_Exchange_Rate = 0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156;
@@ -33,6 +33,9 @@ library ChainlinkLinea {
   // https://lineascan.build/address/0x0956106Bd02f2C7eca0AbDe1d51Fc8050CC41714
   address internal constant ultraETHs_ETH_Exchange_Rate =
     0x0956106Bd02f2C7eca0AbDe1d51Fc8050CC41714;
+
+  // https://lineascan.build/address/0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458
+  address internal constant COMP_USD = 0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458;
 
   // https://lineascan.build/address/0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a
   address internal constant wrsETH_rsETH_Exchange_Rate = 0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a;

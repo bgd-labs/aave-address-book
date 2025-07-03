@@ -71,8 +71,8 @@ library AaveV3ZkSync {
   // https://era.zksync.network/address/0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff
   address internal constant WETH_GATEWAY = 0xAE2b00D676130Bdf22582781BbBA8f4F21e8B0ff;
 
-  // https://era.zksync.network/address/0x05c77Cf62346329a157d7A6F874464D049CECb26
-  address internal constant RISK_STEWARD = 0x05c77Cf62346329a157d7A6F874464D049CECb26;
+  // https://era.zksync.network/address/0x528a1036C8450464f8a00A0A8c2f517595E44169
+  address internal constant RISK_STEWARD = 0x528a1036C8450464f8a00A0A8c2f517595E44169;
 
   // https://era.zksync.network/address/0x452E8E84bF852513585f893931CBD9A409Cd3459
   address internal constant DUST_BIN = 0x452E8E84bF852513585f893931CBD9A409Cd3459;
@@ -205,6 +205,24 @@ library AaveV3ZkSyncAssets {
   // https://era.zksync.network/address/0x57815Ab06D846d7dECd326Ee541CD06144FED237
   address internal constant sUSDe_INTEREST_RATE_STRATEGY =
     0x57815Ab06D846d7dECd326Ee541CD06144FED237;
+
+  // https://era.zksync.network/address/0xd4169E045bcF9a86cC00101225d9ED61D2F51af2
+  address internal constant wrsETH_UNDERLYING = 0xd4169E045bcF9a86cC00101225d9ED61D2F51af2;
+
+  uint8 internal constant wrsETH_DECIMALS = 18;
+
+  // https://era.zksync.network/address/0x5722921bb6C37EaEb78b993765Aa5D79CC50052F
+  address internal constant wrsETH_A_TOKEN = 0x5722921bb6C37EaEb78b993765Aa5D79CC50052F;
+
+  // https://era.zksync.network/address/0x97deC07366Be72884331BE21704Fd93BF35286f9
+  address internal constant wrsETH_V_TOKEN = 0x97deC07366Be72884331BE21704Fd93BF35286f9;
+
+  // https://era.zksync.network/address/0x8d25c9de6DBAd9a9eadfB2CA4706034F6721d555
+  address internal constant wrsETH_ORACLE = 0x8d25c9de6DBAd9a9eadfB2CA4706034F6721d555;
+
+  // https://era.zksync.network/address/0x57815Ab06D846d7dECd326Ee541CD06144FED237
+  address internal constant wrsETH_INTEREST_RATE_STRATEGY =
+    0x57815Ab06D846d7dECd326Ee541CD06144FED237;
 }
 library AaveV3ZkSyncEModes {
   uint8 internal constant NONE = 0;
@@ -212,6 +230,8 @@ library AaveV3ZkSyncEModes {
   uint8 internal constant ETH_CORRELATED = 1;
 
   uint8 internal constant WEETH_CORRELATED = 2;
+
+  uint8 internal constant WRSETH_WSTETH = 3;
 }
 library AaveV3ZkSyncExternalLibraries {
   // https://era.zksync.network/address/0x4DFc5c694D5186De1616E207618e0464023a10A4
