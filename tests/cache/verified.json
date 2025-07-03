@@ -3443,6 +3443,9 @@
     },
     "0xB7cDAeC5fc1855040df499b8Ebe49Ca9Ac1BDd4b": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0x593B09afc075B3c326CE2AD7750888645BA8943d": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
