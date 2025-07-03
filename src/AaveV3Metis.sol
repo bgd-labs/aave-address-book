@@ -28,15 +28,15 @@ library AaveV3Metis {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xcDCb65fc657B701a5100a12eFB663978E7e8fFB8);
 
-  // https://explorer.metis.io/address/0xbb4a3B6781be3650B252552dFF6332EfB1162152
+  // https://explorer.metis.io/address/0x602BeF1d4c381e5a29f0C562A310416A73D8Be19
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xbb4a3B6781be3650B252552dFF6332EfB1162152);
+    IPoolDataProvider(0x602BeF1d4c381e5a29f0C562A310416A73D8Be19);
 
-  // https://explorer.metis.io/address/0xAD6A01bAde8e5ffeD933e342F58a53768422e96A
-  address internal constant POOL_IMPL = 0xAD6A01bAde8e5ffeD933e342F58a53768422e96A;
+  // https://explorer.metis.io/address/0x375Ca009c6A4A3127d4616B4D8fB61085723AD31
+  address internal constant POOL_IMPL = 0x375Ca009c6A4A3127d4616B4D8fB61085723AD31;
 
-  // https://explorer.metis.io/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b;
+  // https://explorer.metis.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
 
   // https://explorer.metis.io/address/0x30C1b8F0490fa0908863d6Cbd2E36400b4310A6B
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -48,12 +48,12 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0xB5b64c7E00374e766272f8B442Cd261412D4b118
   ICollector internal constant COLLECTOR = ICollector(0xB5b64c7E00374e766272f8B442Cd261412D4b118);
 
-  // https://explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0x246405C70461f93513C74606815615c24c5C8C79;
+  // https://explorer.metis.io/address/0xa6bEd0d6A7bc8845CCf69f9b09d4429Fd9c88C30
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xa6bEd0d6A7bc8845CCf69f9b09d4429Fd9c88C30;
 
-  // https://explorer.metis.io/address/0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f
+  // https://explorer.metis.io/address/0x89ad0FEb750d6fD3f8Ee556a34A6806fFb6DE0D7
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f;
+    0x89ad0FEb750d6fD3f8Ee556a34A6806fFb6DE0D7;
 
   // https://explorer.metis.io/address/0x97CB9e81d480A2AB03299760654C1DDC0C16bE07
   address internal constant RISK_STEWARD = 0x97CB9e81d480A2AB03299760654C1DDC0C16bE07;
@@ -197,21 +197,21 @@ library AaveV3MetisEModes {
   uint8 internal constant NONE = 0;
 }
 library AaveV3MetisExternalLibraries {
-  // https://explorer.metis.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
-  address internal constant FLASHLOAN_LOGIC = 0x34039100cc9584Ae5D741d322e16d0d18CEE8770;
+  // https://explorer.metis.io/address/0x4fDB5d360f946CFD25b14F346f748204c0C6a2F4
+  address internal constant FLASHLOAN_LOGIC = 0x4fDB5d360f946CFD25b14F346f748204c0C6a2F4;
 
-  // https://explorer.metis.io/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
-  address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
+  // https://explorer.metis.io/address/0x5047AD5e603Ec4a2AB58aaE2321C07D8f4De6a8a
+  address internal constant BORROW_LOGIC = 0x5047AD5e603Ec4a2AB58aaE2321C07D8f4De6a8a;
 
-  // https://explorer.metis.io/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
-  address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;
+  // https://explorer.metis.io/address/0x7fcE69A2bA3e78EeB36798cde2c94C70f3A043af
+  address internal constant E_MODE_LOGIC = 0x7fcE69A2bA3e78EeB36798cde2c94C70f3A043af;
 
-  // https://explorer.metis.io/address/0x4731bF01583F991278692E8727d0700a00A1fBBf
-  address internal constant LIQUIDATION_LOGIC = 0x4731bF01583F991278692E8727d0700a00A1fBBf;
+  // https://explorer.metis.io/address/0x5934b283f7120500253f277CCcF4521528aE34D6
+  address internal constant LIQUIDATION_LOGIC = 0x5934b283f7120500253f277CCcF4521528aE34D6;
 
-  // https://explorer.metis.io/address/0xf8C97539934ee66a67C26010e8e027D77E821B0C
-  address internal constant POOL_LOGIC = 0xf8C97539934ee66a67C26010e8e027D77E821B0C;
+  // https://explorer.metis.io/address/0x564c42578A1b270EaE16c25Da39d901245881d1F
+  address internal constant POOL_LOGIC = 0x564c42578A1b270EaE16c25Da39d901245881d1F;
 
-  // https://explorer.metis.io/address/0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3
-  address internal constant SUPPLY_LOGIC = 0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3;
+  // https://explorer.metis.io/address/0x1eF34B91afC368174F579067D1DB94325cDC7946
+  address internal constant SUPPLY_LOGIC = 0x1eF34B91afC368174F579067D1DB94325cDC7946;
 }

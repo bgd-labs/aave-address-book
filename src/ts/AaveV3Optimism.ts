@@ -20,14 +20,14 @@ export const ACL_ADMIN = '0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf';
 // IACLManager https://optimistic.etherscan.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
 export const ACL_MANAGER = '0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B';
 
-// IPoolDataProvider https://optimistic.etherscan.io/address/0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5
-export const AAVE_PROTOCOL_DATA_PROVIDER = '0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5';
+// IPoolDataProvider https://optimistic.etherscan.io/address/0x243Aa95cAC2a25651eda86e80bEe66114413c43b
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0x243Aa95cAC2a25651eda86e80bEe66114413c43b';
 
-// https://optimistic.etherscan.io/address/0x7f775bb7af2e7E09D5Dc9506c95516159a5cA0D0
-export const POOL_IMPL = '0x7f775bb7af2e7E09D5Dc9506c95516159a5cA0D0';
+// https://optimistic.etherscan.io/address/0x893B4d783e62e8BD46D93edA5599491fF8Ad5c40
+export const POOL_IMPL = '0x893B4d783e62e8BD46D93edA5599491fF8Ad5c40';
 
-// https://optimistic.etherscan.io/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
-export const POOL_CONFIGURATOR_IMPL = '0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b';
+// https://optimistic.etherscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+export const POOL_CONFIGURATOR_IMPL = '0x5793FE4de34532F162B4e207aF872729880ec2b6';
 
 // https://optimistic.etherscan.io/address/0x929EC64c34a17401F460460D4B9390518E5B473e
 export const DEFAULT_INCENTIVES_CONTROLLER = '0x929EC64c34a17401F460460D4B9390518E5B473e';
@@ -38,11 +38,11 @@ export const EMISSION_MANAGER = '0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73';
 // ICollector https://optimistic.etherscan.io/address/0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf
 export const COLLECTOR = '0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf';
 
-// https://optimistic.etherscan.io/address/0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B
-export const DEFAULT_A_TOKEN_IMPL = '0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B';
+// https://optimistic.etherscan.io/address/0xd559f84736843042A6cE2F5e57cC4156B1797dB6
+export const DEFAULT_A_TOKEN_IMPL = '0xd559f84736843042A6cE2F5e57cC4156B1797dB6';
 
-// https://optimistic.etherscan.io/address/0x04a8D477eE202aDCE1682F5902e1160455205b12
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0x04a8D477eE202aDCE1682F5902e1160455205b12';
+// https://optimistic.etherscan.io/address/0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f';
 
 // https://optimistic.etherscan.io/address/0xa59262276dB8F997948fdc4a10cBc1448A375636
 export const RISK_STEWARD = '0xa59262276dB8F997948fdc4a10cBc1448A375636';

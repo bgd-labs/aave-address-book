@@ -35,27 +35,27 @@ export async function check(addresses: Record<string, any>) {
   expect(POOL).toBe(addresses.POOL);
   expect(POOL_CONFIGURATOR).toBe(addresses.POOL_CONFIGURATOR);
   expect(ORACLE).toBe(addresses.ORACLE);
-  expect(REWARDS_CONTROLLER).toBe(addresses.REWARDS_CONTROLLER);
+  expect(REWARDS_CONTROLLER).toBe(addresses.DEFAULT_INCENTIVES_CONTROLLER);
   expect(COLLECTOR).toBe(addresses.COLLECTOR);
-  expect(DEFAULT_INTEREST_RATE_STRATEGY).toBe(addresses.DEFAULT_INTEREST_RATE_STRATEGY);
+  expect(DEFAULT_INTEREST_RATE_STRATEGY).toBe(
+    (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY,
+  );
 }
 
 describe('config engine', () => {
-  it('should reference correct contracts on all getters', async () => {
-    await Promise.all(
-      Object.keys(addressBook).map((library) => {
-        const addresses = addressBook[library];
-        const client = getClient(addresses.CHAIN_ID);
-        // we only want to validate AaveV3 config engines as V2 does not expose the necessary getters
-        // we also skip testnets as they are not controlled trough governance
-        if (
-          !client.chain?.testnet &&
-          addresses.CONFIG_ENGINE &&
-          addresses.COLLECTOR &&
-          library.startsWith('AaveV3')
-        )
-          return check(addresses);
-      }),
-    );
+  Object.keys(addressBook).map((library) => {
+    const addresses = addressBook[library];
+    const client = getClient(addresses.CHAIN_ID);
+    // we only want to validate AaveV3 config engines as V2 does not expose the necessary getters
+    // we also skip testnets as they are not controlled trough governance
+    if (
+      !client.chain?.testnet &&
+      addresses.CONFIG_ENGINE &&
+      addresses.COLLECTOR &&
+      library.startsWith('AaveV3')
+    )
+      it(`should reference correct contracts on all getters: ${client.chain!.name}`, async () => {
+        return check(addresses);
+      });
   });
 });
