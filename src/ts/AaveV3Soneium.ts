@@ -20,14 +20,14 @@ export const ACL_ADMIN = '0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A';
 // IACLManager https://soneium.blockscout.com/address/0x7635bFF69E52023aB76267ab1EFf63434cdCe458
 export const ACL_MANAGER = '0x7635bFF69E52023aB76267ab1EFf63434cdCe458';
 
-// IPoolDataProvider https://soneium.blockscout.com/address/0xa0208CE8356ad6C5EC6dFb8996c9A6B828212022
-export const AAVE_PROTOCOL_DATA_PROVIDER = '0xa0208CE8356ad6C5EC6dFb8996c9A6B828212022';
+// IPoolDataProvider https://soneium.blockscout.com/address/0x4a24b44b252db149B5B9BCec4dc3c2752807d626
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0x4a24b44b252db149B5B9BCec4dc3c2752807d626';
 
-// https://soneium.blockscout.com/address/0x3BAe948502f2139cA25f215950bbF9d789b3821d
-export const POOL_IMPL = '0x3BAe948502f2139cA25f215950bbF9d789b3821d';
+// https://soneium.blockscout.com/address/0x313B8C648Cca50704B37CCF705Dc77F7bCC5870d
+export const POOL_IMPL = '0x313B8C648Cca50704B37CCF705Dc77F7bCC5870d';
 
-// https://soneium.blockscout.com/address/0x65Ce60CC7abB147887c29f9467813Eeb107ddF37
-export const POOL_CONFIGURATOR_IMPL = '0x65Ce60CC7abB147887c29f9467813Eeb107ddF37';
+// https://soneium.blockscout.com/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+export const POOL_CONFIGURATOR_IMPL = '0x5793FE4de34532F162B4e207aF872729880ec2b6';
 
 // https://soneium.blockscout.com/address/0xE9Dfe1cbD5F10C56c1466F6AC88e1Fb304Be3780
 export const DEFAULT_INCENTIVES_CONTROLLER = '0xE9Dfe1cbD5F10C56c1466F6AC88e1Fb304Be3780';
@@ -38,14 +38,14 @@ export const EMISSION_MANAGER = '0x2026b787C82331c364EAc13bf761Ca75eDeb0A4B';
 // ICollector https://soneium.blockscout.com/address/0xc7B3cc5F5988613b0D620623C514EDFB32539720
 export const COLLECTOR = '0xc7B3cc5F5988613b0D620623C514EDFB32539720';
 
-// https://soneium.blockscout.com/address/0xa7f516e8656dF586b357529241D71772d503E536
-export const DEFAULT_A_TOKEN_IMPL_REV_1 = '0xa7f516e8656dF586b357529241D71772d503E536';
+// https://soneium.blockscout.com/address/0xD727547F49612f4590B43Bf63F0259ef38a7a488
+export const DEFAULT_A_TOKEN_IMPL = '0xD727547F49612f4590B43Bf63F0259ef38a7a488';
 
-// https://soneium.blockscout.com/address/0x25e5ED391ab7e72657a5cd7dD333f392DE0D9A01
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 = '0x25e5ED391ab7e72657a5cd7dD333f392DE0D9A01';
+// https://soneium.blockscout.com/address/0x57C9e3BeBfb67D1AF9D06a3277A591b6CaD8F66a
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0x57C9e3BeBfb67D1AF9D06a3277A591b6CaD8F66a';
 
-// https://soneium.blockscout.com/address/0x169117F01c3272c09D45b3e52dFc11764D7258A9
-export const CONFIG_ENGINE = '0x169117F01c3272c09D45b3e52dFc11764D7258A9';
+// https://soneium.blockscout.com/address/0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311
+export const CONFIG_ENGINE = '0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311';
 
 // https://soneium.blockscout.com/address/0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc
 export const RISK_STEWARD = '0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc';

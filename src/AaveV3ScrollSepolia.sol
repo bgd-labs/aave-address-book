@@ -46,10 +46,10 @@ library AaveV3ScrollSepolia {
   ICollector internal constant COLLECTOR = ICollector(0x104Cd7695C9247096F7AD37d3258B63c9675A00e);
 
   // https://sepolia.scrollscan.com/address/0x0Eae78c97347bf6FCF784Aa91CABC4aCdB5cc2dd
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x0Eae78c97347bf6FCF784Aa91CABC4aCdB5cc2dd;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x0Eae78c97347bf6FCF784Aa91CABC4aCdB5cc2dd;
 
   // https://sepolia.scrollscan.com/address/0xAb8eaAE8383Abe28203cB6e6FAa0477B2fb97f07
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xAb8eaAE8383Abe28203cB6e6FAa0477B2fb97f07;
 
   // https://sepolia.scrollscan.com/address/0x2F826FD1a0071476330a58dD1A9B36bcF7da832d

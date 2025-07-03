@@ -3374,6 +3374,75 @@
     },
     "0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3": {
       "name": "RiskSteward"
+    },
+    "0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c": {
+      "name": "FiatTokenProxy"
+    },
+    "0xAA6e91C82942aeAE040303Bf96c15a6dBcB82CA0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6c82c66622Eb360FC973D3F492f9D8E9eA538b08": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xa6aB031A4d189B24628EC9Eb155F0a0f1A0E55a3": {
+      "name": "EURPriceCapAdapterStable"
+    },
+    "0x040FE39aF38260385F464FB8d0504789880632Ba": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xDEFCF9aD6B1624AE4B6C4838740CF2C1C6bFAb6C": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x41C5Eaa9AFDBFe79b85Eb2B60BE52121aE3bDC50": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x8c75dC654B0Fd912F49Eb55a0b5794D4a66919E4": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x0a16f2FCC0D44FaE41cc54e079281D84A363bECD": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x947f0054fAEd3481FF4e76CA35f12fbE36cc665B": {
+      "name": "MainnetCorePoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x97f5B96c7DaC8547251330b63760951A4Fab448D": {
+      "name": "ATokenInstance"
+    },
+    "0xB58ED8ec66e43dE3fecD27e351485E7EFE006f38": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xB85B2bFEbeC4F5f401dbf92ac147A3076391fCD5": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xEAbD3344f14b4Df97611910dD3826b0767bcC588": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x9A8C37a8832BEf41d30A2b7Af9e09b6666ee553a": {
+      "name": "ATokenInstance"
+    },
+    "0x34FD9638Ee82e78f21D66b54bF4D4e61CDb4f7d1": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x7c8509591f9693D21280d96e149a08A3bf69Cd0c": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x0ad7E5C14f28773EDDC9ab1e76eA6a522EF5c019": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x80B0486A9D985F3AD918c9B1b1E19D724a1C99b7": {
+      "name": "ATokenInstance"
+    },
+    "0xB7cDAeC5fc1855040df499b8Ebe49Ca9Ac1BDd4b": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "10": {
@@ -4360,6 +4429,24 @@
     },
     "0xa59262276dB8F997948fdc4a10cBc1448A375636": {
       "name": "RiskSteward"
+    },
+    "0x10879676256905AA2e794479aF916255aE95C8e7": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x243Aa95cAC2a25651eda86e80bEe66114413c43b": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x893B4d783e62e8BD46D93edA5599491fF8Ad5c40": {
+      "name": "L2PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0xd559f84736843042A6cE2F5e57cC4156B1797dB6": {
+      "name": "ATokenInstance"
+    },
+    "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "56": {
@@ -5172,6 +5259,24 @@
     },
     "0x87F4aDD5425f566F156af5074BaD2dFFCd20C594": {
       "name": "RiskSteward"
+    },
+    "0xcB8c3Dbf2530d6b07b50d0BcE91F7A04FA696486": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xc90Df74A7c16245c5F5C5870327Ceb38Fe5d5328": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xdDAC2b348b191D39da0EB3866c8Df5D48868aB11": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x7EF0cAcfb15D369B0C4460D86dC2C68Fe96988AD": {
+      "name": "ATokenInstance"
+    },
+    "0x5263972Ce5312D9A25C54B80896B55aeD6136e50": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "100": {
@@ -5645,6 +5750,24 @@
     },
     "0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55": {
       "name": "RiskSteward"
+    },
+    "0x7494b3714Cd163ae760B1Bb946D61D8BD607706E": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xF1F5acB596568895393cB5E4D0452D6592A2fA70": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xAbFa71aE20709d6b62091c2a2dd937b6bf851B94": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x2d23EeFC273AabfdE4013cD80132E9FC16863069": {
+      "name": "ATokenInstance"
+    },
+    "0xADb599b1858E7738aE760D4dCf8C11Cc569AF3fB": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "137": {
@@ -6991,6 +7114,24 @@
     },
     "0x1e0A5985D58B45C38598e293189aa5228054629b": {
       "name": "RiskSteward"
+    },
+    "0xc9dd6908381F66fC4Dee18C47fee57e59daCd66C": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x243Aa95cAC2a25651eda86e80bEe66114413c43b": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x771D2d9420432B8A4C076e6c4721E392c4D3794a": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0xb379Fda00C23Fddb0D89724454D92792e037bDEC": {
+      "name": "ATokenInstance"
+    },
+    "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "146": {
@@ -7266,6 +7407,24 @@
     },
     "0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c": {
       "name": "RiskSteward"
+    },
+    "0xDa98B308be8766501ec7Fe3eD9a48EfBD6c31a7B": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xc0a344397cfa89dF1e1d3e4fb330834D789cF2CD": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x3023FE480Df7365FcC12ADc04779f4ca9b13f1b5": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x4e7ec41282A295e722F13d32C025f03358F72C92": {
+      "name": "ATokenInstance"
+    },
+    "0xc47692016D70496E2E44531AAa8511aa07D4D185": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "324": {
@@ -7559,6 +7718,24 @@
     },
     "0x528a1036C8450464f8a00A0A8c2f517595E44169": {
       "name": "RiskSteward"
+    },
+    "0xc4C229360C7c59a3bbc7c4424Cd1E4A65db3C21e": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x9057ac7b2D35606F8AD5aE2FCBafcD94E58D9927": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x6A8ea36A192063eD7744bB4b7A137f0B3c2455bC": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x1bEdFBB5c7095D750EeE37F3D1b6939458aF516d": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x1d336bFD38be937506a8c45AD0f60bda55943846": {
+      "name": "ATokenInstance"
+    },
+    "0xFF11Be86AA9a662285FD9A66526351A89FBECC55": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "1088": {
@@ -7879,6 +8056,24 @@
     },
     "0x97CB9e81d480A2AB03299760654C1DDC0C16bE07": {
       "name": "RiskSteward"
+    },
+    "0x1dF462e2712496373A347f8ad10802a5E95f053D": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x602BeF1d4c381e5a29f0C562A310416A73D8Be19": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x375Ca009c6A4A3127d4616B4D8fB61085723AD31": {
+      "name": "L2PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0xa6bEd0d6A7bc8845CCf69f9b09d4429Fd9c88C30": {
+      "name": "ATokenInstance"
+    },
+    "0x89ad0FEb750d6fD3f8Ee556a34A6806fFb6DE0D7": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "1101": {
@@ -8174,6 +8369,24 @@
     },
     "0x2580FA33f9dfD9D26F1aC418E09113f3E9c316c2": {
       "name": "EACAggregatorProxy"
+    },
+    "0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x4a24b44b252db149B5B9BCec4dc3c2752807d626": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x313B8C648Cca50704B37CCF705Dc77F7bCC5870d": {
+      "name": "L2PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0xD727547F49612f4590B43Bf63F0259ef38a7a488": {
+      "name": "ATokenInstance"
+    },
+    "0x57C9e3BeBfb67D1AF9D06a3277A591b6CaD8F66a": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "5000": {
@@ -9189,6 +9402,24 @@
     },
     "0x085E34722e04567Df9E6d2c32e82fd74f3342e79": {
       "name": "RiskSteward"
+    },
+    "0x655252250f4A453854040A49E8280951A76f3033": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x0F43731EB8d45A581f4a36DD74F5f358bc90C73A": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xEc202552f0c23bB0c19df2f3311e324bbf015703": {
+      "name": "L2PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x3B09F82090422FcB8f715C620E5Ca23D99a26de2": {
+      "name": "ATokenInstance"
+    },
+    "0xd7e53C075C4bE288275ea57d5Abec0486386313C": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "42161": {
@@ -10466,6 +10697,24 @@
     },
     "0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8": {
       "name": "RiskSteward"
+    },
+    "0xAc9a5B43f531Acb0ac1EcA7a0518fe9F48d06006": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x243Aa95cAC2a25651eda86e80bEe66114413c43b": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xa9022F64F4E86F1C9f4C07B248Caa06b0aF915D9": {
+      "name": "L2PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x1865Dfd7e94233BC3807ACE5fFE6BcF2a66A0C83": {
+      "name": "ATokenInstance"
+    },
+    "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "42220": {
@@ -10723,6 +10972,24 @@
     },
     "0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c": {
       "name": "RiskSteward"
+    },
+    "0x9632833100E5BA6608E6650Eb35e4adF01DEB6DF": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x2e0f8D3B1631296cC7c56538D6Eb6032601E15ED": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xF864eaA55FEf9c7db73dFC56e0A2e05BDd824226": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0x9041042818a3D01EAA0115E55B2c2235c986adc5": {
+      "name": "ATokenInstance"
+    },
+    "0xAc5d1Ff220cCF50022Bb0BaD780438216cac36Be": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "43113": {
@@ -11825,6 +12092,24 @@
     },
     "0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2": {
       "name": "RiskSteward"
+    },
+    "0xF671C2f58ed15Dbd13C3Dc20b25f899Cf02D8FaB": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x243Aa95cAC2a25651eda86e80bEe66114413c43b": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x20c10Dd73b831f22f0230303C021188863C48937": {
+      "name": "PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0xc404C99E1907Acba47454ADbac55634d58C2Bf3b": {
+      "name": "ATokenInstance"
+    },
+    "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "59144": {
@@ -12121,6 +12406,24 @@
     },
     "0xBDF2e1A49894A306Eb76b89504928b3f509A3a16": {
       "name": "RiskSteward"
+    },
+    "0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x47cd4b507B81cB831669c71c7077f4daF6762FF4": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xc9eD58947791A09A1Ec1CF195aE65ebC337476a8": {
+      "name": "L2PoolInstanceWithCustomInitialize"
+    },
+    "0x10efD3d5C0578c426D2960eeF0153C446Dd6C6FA": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0xC4abED17658A379394cD116756e0611e52Ee2c25": {
+      "name": "ATokenInstance"
+    },
+    "0x8581fd85b93cBDB66e9860C1bC280DC52284f9F4": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "84532": {
@@ -12706,6 +13009,24 @@
     },
     "0x0451f67bA61966C346daBAbB50a30Cc6A9A67C69": {
       "name": "RiskSteward"
+    },
+    "0xD828E29E2268f56309dDbbAB697ae85DCEb43B9d": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xBEa2B648f05887eCbF1d115da8b7E4A317975A51": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xC89A04537D4789BbD06F41124949aec7ad8e5cAB": {
+      "name": "L2PoolInstanceWithCustomInitialize"
+    },
+    "0x5793FE4de34532F162B4e207aF872729880ec2b6": {
+      "name": "PoolConfiguratorWithCustomInitialize"
+    },
+    "0xa9E5F0cC15D04d890eC74B33c45836f84786145e": {
+      "name": "ATokenInstance"
+    },
+    "0x1aC9C8E6bAEAEB33b7E550D4A031de8a5D0c0952": {
+      "name": "VariableDebtTokenInstance"
     }
   }
 }

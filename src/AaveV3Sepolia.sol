@@ -46,10 +46,10 @@ library AaveV3Sepolia {
   ICollector internal constant COLLECTOR = ICollector(0x604264f8017fEF3b11B3dD63537CB501560380B5);
 
   // https://sepolia.etherscan.io/address/0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x48424f2779be0f03cDF6F02E17A591A9BF7AF89f;
 
   // https://sepolia.etherscan.io/address/0x54bdE009156053108E73E2401aEA755e38f92098
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x54bdE009156053108E73E2401aEA755e38f92098;
 
   // https://sepolia.etherscan.io/address/0xC959483DBa39aa9E78757139af0e9a2EDEb3f42D

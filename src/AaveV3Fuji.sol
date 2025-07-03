@@ -46,10 +46,10 @@ library AaveV3Fuji {
   ICollector internal constant COLLECTOR = ICollector(0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9);
 
   // https://testnet.snowscan.xyz/address/0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
 
   // https://testnet.snowscan.xyz/address/0x21CcaD436A6c762B919dB7cb07C5082a43DB2589
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x21CcaD436A6c762B919dB7cb07C5082a43DB2589;
 
   // https://testnet.snowscan.xyz/address/0x4058FE01Aa090E0841F4E08f79D2607C4861142E
@@ -156,9 +156,6 @@ library AaveV3FujiExternalLibraries {
 
   // https://testnet.snowscan.xyz/address/0x4c52FE2162200bf26c314d7bbd8611699139d553
   address internal constant BORROW_LOGIC = 0x4c52FE2162200bf26c314d7bbd8611699139d553;
-
-  // https://testnet.snowscan.xyz/address/0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604
-  address internal constant BRIDGE_LOGIC = 0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604;
 
   // https://testnet.snowscan.xyz/address/0x88F864670De467aA73CD45325F9652C578C8AB85
   address internal constant E_MODE_LOGIC = 0x88F864670De467aA73CD45325F9652C578C8AB85;

@@ -46,10 +46,10 @@ library AaveV3BaseSepoliaLido {
   ICollector internal constant COLLECTOR = ICollector(0xA49b77212c4a6C689B78CfA448bb2cd254E87c07);
 
   // https://sepolia.basescan.org/address/0x0Ff3278B57a550767ccec8452f16BD31E7C72238
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x0Ff3278B57a550767ccec8452f16BD31E7C72238;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x0Ff3278B57a550767ccec8452f16BD31E7C72238;
 
   // https://sepolia.basescan.org/address/0xf45B94a4B54318c1A4Fe1287B38370F6FC638B61
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xf45B94a4B54318c1A4Fe1287B38370F6FC638B61;
 
   // https://sepolia.basescan.org/address/0x7e66C9c25E91200b8713d5E926b0e12496636dF5
@@ -175,9 +175,6 @@ library AaveV3BaseSepoliaLidoExternalLibraries {
 
   // https://sepolia.basescan.org/address/0x4c52FE2162200bf26c314d7bbd8611699139d553
   address internal constant BORROW_LOGIC = 0x4c52FE2162200bf26c314d7bbd8611699139d553;
-
-  // https://sepolia.basescan.org/address/0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604
-  address internal constant BRIDGE_LOGIC = 0x97dCbFaE5372A63128F141E8C0BC2c871Ca5F604;
 
   // https://sepolia.basescan.org/address/0x88F864670De467aA73CD45325F9652C578C8AB85
   address internal constant E_MODE_LOGIC = 0x88F864670De467aA73CD45325F9652C578C8AB85;
