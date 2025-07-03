@@ -49,10 +49,10 @@ library AaveV3Arbitrum {
   ICollector internal constant COLLECTOR = ICollector(0x053D55f9B5AF8694c503EB288a1B7E552f590710);
 
   // https://arbiscan.io/address/0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a;
 
   // https://arbiscan.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x5E76E98E0963EcDC6A065d1435F84065b7523f39;
 
   // https://arbiscan.io/address/0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8

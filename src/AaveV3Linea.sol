@@ -46,10 +46,10 @@ library AaveV3Linea {
   ICollector internal constant COLLECTOR = ICollector(0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809);
 
   // https://lineascan.build/address/0x589750BA8aF186cE5B55391B0b7148cAD43a1619
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
 
   // https://lineascan.build/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
 
   // https://lineascan.build/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef

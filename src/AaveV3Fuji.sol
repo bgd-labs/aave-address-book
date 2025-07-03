@@ -46,10 +46,10 @@ library AaveV3Fuji {
   ICollector internal constant COLLECTOR = ICollector(0xEd5b0b955C70Fd97557EF9Af2c9bA902Ad1F2AA9);
 
   // https://testnet.snowscan.xyz/address/0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xeF4d1F3F0dCe46C1Ad684F23Ea3aA542592A8cFe;
 
   // https://testnet.snowscan.xyz/address/0x21CcaD436A6c762B919dB7cb07C5082a43DB2589
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x21CcaD436A6c762B919dB7cb07C5082a43DB2589;
 
   // https://testnet.snowscan.xyz/address/0x4058FE01Aa090E0841F4E08f79D2607C4861142E

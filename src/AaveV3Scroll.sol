@@ -49,10 +49,10 @@ library AaveV3Scroll {
   ICollector internal constant COLLECTOR = ICollector(0x90eB541e1a431D8a30ED85A77675D1F001128cb5);
 
   // https://scrollscan.com/address/0x92EDe4ABd9df4Bfb49b4d723e4c932e35c47C54C
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x92EDe4ABd9df4Bfb49b4d723e4c932e35c47C54C;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x92EDe4ABd9df4Bfb49b4d723e4c932e35c47C54C;
 
   // https://scrollscan.com/address/0x49bA16C08130FF8cFADE263B49387A8555bc057B
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x49bA16C08130FF8cFADE263B49387A8555bc057B;
 
   // https://scrollscan.com/address/0x8714E5ED2d8edD4E88eFf66637C3FE8eCf2B8C40

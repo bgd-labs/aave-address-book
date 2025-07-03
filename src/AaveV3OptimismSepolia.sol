@@ -46,10 +46,10 @@ library AaveV3OptimismSepolia {
   ICollector internal constant COLLECTOR = ICollector(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
 
   // https://optimism-sepolia.blockscout.com/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
 
   // https://optimism-sepolia.blockscout.com/address/0x777fBA024bA1228fDa76149A4ff8B23475ed057D
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x777fBA024bA1228fDa76149A4ff8B23475ed057D;
 
   // https://optimism-sepolia.blockscout.com/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574

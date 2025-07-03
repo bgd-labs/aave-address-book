@@ -49,10 +49,10 @@ library AaveV3Optimism {
   ICollector internal constant COLLECTOR = ICollector(0xB2289E329D2F85F1eD31Adbb30eA345278F21bcf);
 
   // https://optimistic.etherscan.io/address/0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xbCb167bDCF14a8F791d6f4A6EDd964aed2F8813B;
 
   // https://optimistic.etherscan.io/address/0x04a8D477eE202aDCE1682F5902e1160455205b12
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x04a8D477eE202aDCE1682F5902e1160455205b12;
 
   // https://optimistic.etherscan.io/address/0xa59262276dB8F997948fdc4a10cBc1448A375636

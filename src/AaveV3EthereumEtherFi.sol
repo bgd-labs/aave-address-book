@@ -46,10 +46,10 @@ library AaveV3EthereumEtherFi {
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
   // https://etherscan.io/address/0xaFFA06528Bd92625de2e7A0cfa0119319265Ea4b
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xaFFA06528Bd92625de2e7A0cfa0119319265Ea4b;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xaFFA06528Bd92625de2e7A0cfa0119319265Ea4b;
 
   // https://etherscan.io/address/0xBb077DaFFeb23B2126E7358b0b122ba6838FB881
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xBb077DaFFeb23B2126E7358b0b122ba6838FB881;
 
   // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170

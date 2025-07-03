@@ -46,10 +46,10 @@ library AaveV3ZkSync {
   ICollector internal constant COLLECTOR = ICollector(0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b);
 
   // https://era.zksync.network/address/0x34be365Fd01ac224F21490aaC6dFd65D25434bbB
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x34be365Fd01ac224F21490aaC6dFd65D25434bbB;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x34be365Fd01ac224F21490aaC6dFd65D25434bbB;
 
   // https://era.zksync.network/address/0x52E97425D1Fa6885fAaC9260B711fA5047A88d06
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x52E97425D1Fa6885fAaC9260B711fA5047A88d06;
 
   // https://era.zksync.network/address/0xc4C229360C7c59a3bbc7c4424Cd1E4A65db3C21e

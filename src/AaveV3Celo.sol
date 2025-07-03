@@ -46,10 +46,10 @@ library AaveV3Celo {
   ICollector internal constant COLLECTOR = ICollector(0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7);
 
   // https://celoscan.io/address/0x3F662AA079a9619F10BFF4848910195C52CB2fb4
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x3F662AA079a9619F10BFF4848910195C52CB2fb4;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x3F662AA079a9619F10BFF4848910195C52CB2fb4;
 
   // https://celoscan.io/address/0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0;
 
   // https://celoscan.io/address/0x9632833100E5BA6608E6650Eb35e4adF01DEB6DF

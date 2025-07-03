@@ -49,10 +49,10 @@ library AaveV3Metis {
   ICollector internal constant COLLECTOR = ICollector(0xB5b64c7E00374e766272f8B442Cd261412D4b118);
 
   // https://explorer.metis.io/address/0x246405C70461f93513C74606815615c24c5C8C79
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x246405C70461f93513C74606815615c24c5C8C79;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x246405C70461f93513C74606815615c24c5C8C79;
 
   // https://explorer.metis.io/address/0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xE7fA271BD76FC9c6F2F968976E9f4f553256E02f;
 
   // https://explorer.metis.io/address/0x97CB9e81d480A2AB03299760654C1DDC0C16bE07

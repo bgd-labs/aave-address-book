@@ -46,10 +46,10 @@ library AaveV3BNB {
   ICollector internal constant COLLECTOR = ICollector(0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C);
 
   // https://bscscan.com/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x6c23bAF050ec192afc0B967a93b83e6c5405df43;
 
   // https://bscscan.com/address/0x777fBA024bA1228fDa76149A4ff8B23475ed057D
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x777fBA024bA1228fDa76149A4ff8B23475ed057D;
 
   // https://bscscan.com/address/0x87F4aDD5425f566F156af5074BaD2dFFCd20C594

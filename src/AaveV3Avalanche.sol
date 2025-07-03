@@ -46,10 +46,10 @@ library AaveV3Avalanche {
   ICollector internal constant COLLECTOR = ICollector(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0);
 
   // https://snowscan.xyz/address/0x1E81af09001aD208BDa68FF022544dB2102A752d
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0x1E81af09001aD208BDa68FF022544dB2102A752d;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x1E81af09001aD208BDa68FF022544dB2102A752d;
 
   // https://snowscan.xyz/address/0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24;
 
   // https://snowscan.xyz/address/0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2

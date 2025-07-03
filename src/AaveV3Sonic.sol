@@ -46,10 +46,10 @@ library AaveV3Sonic {
   ICollector internal constant COLLECTOR = ICollector(0x1aB55bBdD5DF0782BBCf73553Af93BC6B29A286B);
 
   // https://sonicscan.org/address/0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6;
 
   // https://sonicscan.org/address/0xcb85C501B3A5e9851850d66648d69B26A4c90942
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xcb85C501B3A5e9851850d66648d69B26A4c90942;
 
   // https://sonicscan.org/address/0xDa98B308be8766501ec7Fe3eD9a48EfBD6c31a7B

@@ -46,10 +46,10 @@ library AaveV3Polygon {
   ICollector internal constant COLLECTOR = ICollector(0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383);
 
   // https://polygonscan.com/address/0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xCf85FF1c37c594a10195F7A9Ab85CBb0a03f69dE;
 
   // https://polygonscan.com/address/0x79b5e91037AE441dE0d9e6fd3Fd85b96B83d4E93
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x79b5e91037AE441dE0d9e6fd3Fd85b96B83d4E93;
 
   // https://polygonscan.com/address/0x1e0A5985D58B45C38598e293189aa5228054629b

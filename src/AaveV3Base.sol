@@ -49,10 +49,10 @@ library AaveV3Base {
   ICollector internal constant COLLECTOR = ICollector(0xBA9424d650A4F5c80a0dA641254d1AcCE2A37057);
 
   // https://basescan.org/address/0x98F409Fc4A42F34AE3c326c7f48ED01ae8cAeC69
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x98F409Fc4A42F34AE3c326c7f48ED01ae8cAeC69;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x98F409Fc4A42F34AE3c326c7f48ED01ae8cAeC69;
 
   // https://basescan.org/address/0x2425A746911128c2eAA7bEBDc9Bc452eE52208a1
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x2425A746911128c2eAA7bEBDc9Bc452eE52208a1;
 
   // https://basescan.org/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79

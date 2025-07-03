@@ -1,4 +1,4 @@
-import {describe, it} from 'vitest';
+import {describe, expect, it} from 'vitest';
 import * as addressBook from '../../src/ts/AaveAddressBook';
 import {IAaveV3ConfigEngine_ABI} from '../../src/ts/abis/IAaveV3ConfigEngine';
 import {getContract} from 'viem';
@@ -12,6 +12,8 @@ export async function check(addresses: Record<string, any>) {
     client,
   });
   const [
+    ATOKEN_IMPL,
+    VTOKEN_IMPL,
     POOL,
     POOL_CONFIGURATOR,
     ORACLE,
@@ -19,6 +21,8 @@ export async function check(addresses: Record<string, any>) {
     DEFAULT_INTEREST_RATE_STRATEGY,
     COLLECTOR,
   ] = await Promise.all([
+    engineContract.read.ATOKEN_IMPL(),
+    engineContract.read.VTOKEN_IMPL(),
     engineContract.read.POOL(),
     engineContract.read.POOL_CONFIGURATOR(),
     engineContract.read.ORACLE(),
@@ -26,21 +30,14 @@ export async function check(addresses: Record<string, any>) {
     engineContract.read.DEFAULT_INTEREST_RATE_STRATEGY(),
     engineContract.read.COLLECTOR(),
   ]);
-  if (POOL !== addresses.POOL) throw new Error('SANITY_CONFIG_ENGINE: wrong POOL');
-  if (POOL_CONFIGURATOR !== addresses.POOL_CONFIGURATOR)
-    throw new Error('SANITY_CONFIG_ENGINE: wrong POOL_CONFIGURATOR');
-  if (ORACLE !== addresses.ORACLE) throw new Error('SANITY_CONFIG_ENGINE: wrong ORACLE');
-  if (REWARDS_CONTROLLER !== addresses.DEFAULT_INCENTIVES_CONTROLLER)
-    throw new Error('SANITY_CONFIG_ENGINE: wrong DEFAULT_INCENTIVES_CONTROLLER');
-  if (COLLECTOR !== addresses.COLLECTOR) throw new Error('SANITY_CONFIG_ENGINE: wrong COLLECTOR');
-  if (
-    addresses.ASSETS.length > 0 &&
-    DEFAULT_INTEREST_RATE_STRATEGY !==
-    (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY
-  )
-    throw new Error(
-      `SANITY_CONFIG_ENGINE: wrong DEFAULT_INTEREST_RATE_STRATEGY ${addresses.CONFIG_ENGINE}`,
-    );
+  expect(ATOKEN_IMPL).toBe(addresses.DEFAULT_A_TOKEN_IMPL);
+  expect(VTOKEN_IMPL).toBe(addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL);
+  expect(POOL).toBe(addresses.POOL);
+  expect(POOL_CONFIGURATOR).toBe(addresses.POOL_CONFIGURATOR);
+  expect(ORACLE).toBe(addresses.ORACLE);
+  expect(REWARDS_CONTROLLER).toBe(addresses.REWARDS_CONTROLLER);
+  expect(COLLECTOR).toBe(addresses.COLLECTOR);
+  expect(DEFAULT_INTEREST_RATE_STRATEGY).toBe(addresses.DEFAULT_INTEREST_RATE_STRATEGY);
 }
 
 describe('config engine', () => {
@@ -51,7 +48,12 @@ describe('config engine', () => {
         const client = getClient(addresses.CHAIN_ID);
         // we only want to validate AaveV3 config engines as V2 does not expose the necessary getters
         // we also skip testnets as they are not controlled trough governance
-        if (!client.chain?.testnet && addresses.CONFIG_ENGINE && addresses.COLLECTOR && library.startsWith('AaveV3'))
+        if (
+          !client.chain?.testnet &&
+          addresses.CONFIG_ENGINE &&
+          addresses.COLLECTOR &&
+          library.startsWith('AaveV3')
+        )
           return check(addresses);
       }),
     );

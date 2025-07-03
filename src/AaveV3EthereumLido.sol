@@ -46,10 +46,10 @@ library AaveV3EthereumLido {
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
   // https://etherscan.io/address/0x7F8Fc14D462bdF93c681c1f2Fd615389bF969Fb2
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x7F8Fc14D462bdF93c681c1f2Fd615389bF969Fb2;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x7F8Fc14D462bdF93c681c1f2Fd615389bF969Fb2;
 
   // https://etherscan.io/address/0x3E59212c34588a63350142EFad594a20C88C2CEd
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x3E59212c34588a63350142EFad594a20C88C2CEd;
 
   // https://etherscan.io/address/0xC6cAB8D39D93DC0Bd5986E7Ce5Bb956E30103A43

@@ -49,10 +49,10 @@ library AaveV3Soneium {
   ICollector internal constant COLLECTOR = ICollector(0xc7B3cc5F5988613b0D620623C514EDFB32539720);
 
   // https://soneium.blockscout.com/address/0xa7f516e8656dF586b357529241D71772d503E536
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xa7f516e8656dF586b357529241D71772d503E536;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xa7f516e8656dF586b357529241D71772d503E536;
 
   // https://soneium.blockscout.com/address/0x25e5ED391ab7e72657a5cd7dD333f392DE0D9A01
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x25e5ED391ab7e72657a5cd7dD333f392DE0D9A01;
 
   // https://soneium.blockscout.com/address/0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311
