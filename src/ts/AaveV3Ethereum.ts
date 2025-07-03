@@ -748,8 +748,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9340,
-    liquidationThreshold: 9540,
+    ltv: 9370,
+    liquidationThreshold: 9570,
     liquidationBonus: 10220,
   },
   '13': {
