@@ -62,8 +62,8 @@ library AaveV3Ethereum {
   address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
     0x21714092D90c7265F52fdfDae068EC11a23C6248;
 
-  // https://etherscan.io/address/0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2
-  address internal constant CONFIG_ENGINE = 0x8d54115BfD1Bf399F73adda4af43CcbA9c1AC6b2;
+  // https://etherscan.io/address/0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4
+  address internal constant CONFIG_ENGINE = 0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4;
 
   // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

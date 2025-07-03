@@ -78,8 +78,8 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299
   address internal constant WETH_GATEWAY = 0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299;
 
-  // https://etherscan.io/address/0x040FE39aF38260385F464FB8d0504789880632Ba
-  address internal constant CONFIG_ENGINE = 0x040FE39aF38260385F464FB8d0504789880632Ba;
+  // https://etherscan.io/address/0x41C5Eaa9AFDBFe79b85Eb2B60BE52121aE3bDC50
+  address internal constant CONFIG_ENGINE = 0x41C5Eaa9AFDBFe79b85Eb2B60BE52121aE3bDC50;
 
   // https://etherscan.io/address/0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3
   address internal constant RISK_STEWARD = 0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3;
