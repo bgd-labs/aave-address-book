@@ -7428,6 +7428,18 @@
     },
     "0xc47692016D70496E2E44531AAa8511aa07D4D185": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9": {
+      "name": "ParaSwapRepayAdapter"
+    },
+    "0x78F8Bd884C3D738B74B420540659c82f392820e0": {
+      "name": "ParaSwapLiquiditySwapAdapter"
+    },
+    "0x2E549104c516b8657A7D888494DfbAbD7C70b464": {
+      "name": "ParaSwapDebtSwapAdapterV3"
+    },
+    "0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16": {
+      "name": "ParaSwapWithdrawSwapAdapter"
     }
   },
   "324": {
