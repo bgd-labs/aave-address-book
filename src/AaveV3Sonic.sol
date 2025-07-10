@@ -82,6 +82,19 @@ library AaveV3Sonic {
 
   // https://sonicscan.org/address/0x4A137d528444Cc0346320CFa5C80FFc68087D7F9
   address internal constant POOL_EXPOSURE_STEWARD = 0x4A137d528444Cc0346320CFa5C80FFc68087D7F9;
+
+  // https://sonicscan.org/address/0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9
+  address internal constant REPAY_WITH_COLLATERAL_ADAPTER =
+    0x5598BbFA2f4fE8151f45bBA0a3edE1b54B51a0a9;
+
+  // https://sonicscan.org/address/0x78F8Bd884C3D738B74B420540659c82f392820e0
+  address internal constant SWAP_COLLATERAL_ADAPTER = 0x78F8Bd884C3D738B74B420540659c82f392820e0;
+
+  // https://sonicscan.org/address/0x2E549104c516b8657A7D888494DfbAbD7C70b464
+  address internal constant DEBT_SWAP_ADAPTER = 0x2E549104c516b8657A7D888494DfbAbD7C70b464;
+
+  // https://sonicscan.org/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
+  address internal constant WITHDRAW_SWAP_ADAPTER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 }
 library AaveV3SonicAssets {
   // https://sonicscan.org/address/0x50c42dEAcD8Fc9773493ED674b675bE577f2634b
