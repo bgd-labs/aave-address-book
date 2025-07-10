@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.25.0](https://github.com/bgd-labs/aave-address-book/compare/v4.24.2...v4.25.0) (2025-07-10)
+
+
+### Features
+
+* sonic psp addresses ([#1005](https://github.com/bgd-labs/aave-address-book/issues/1005)) ([e0b3960](https://github.com/bgd-labs/aave-address-book/commit/e0b3960e40470db314f7037d700db540e576c1db))
+
+
+### Bug Fixes
+
+* update origin ([#999](https://github.com/bgd-labs/aave-address-book/issues/999)) ([302898e](https://github.com/bgd-labs/aave-address-book/commit/302898ec848e983729397247942c84a5d0df5c8b))
+
 ## [4.24.2](https://github.com/bgd-labs/aave-address-book/compare/v4.24.1...v4.24.2) (2025-07-03)
 
 
