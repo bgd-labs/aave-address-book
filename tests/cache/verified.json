@@ -13042,6 +13042,72 @@
     },
     "0x1aC9C8E6bAEAEB33b7E550D4A031de8a5D0c0952": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0x1bE9f691084554f3CB8Cc7dCa67BD08AF4355E5D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x1dF462e2712496373A347f8ad10802a5E95f053D": {
+      "name": "Executor"
+    },
+    "0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x6807dc923806fE8Fd134338EABCA509979a7e0cB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x67bdF23C7fCE7C65fF7415Ba3F2520B45D6f9584": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB1532b76D054c9F9E61b25c4d91f69B4133E4671": {
+      "name": "AaveOracle"
+    },
+    "0x2aB3580a805fB10CbAd567212C70e26C1B6769eC": {
+      "name": "PriceOracleSentinel"
+    },
+    "0xf751969521E20A972A0776CDB0497Fad0F773F1F": {
+      "name": "ACLManager"
+    },
+    "0x06C35Cfd3FC61eC2aC437f0d08840d5776b945af": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D": {
+      "name": "L2PoolInstance"
+    },
+    "0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0xC206C2764A9dBF27d599613b8F9A63ACd1160ab4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x381433957104c19a3a3035071Ddf57fDd9Ec63d0": {
+      "name": "EmissionManager"
+    },
+    "0xBeC519531F0E78BcDdB295242fA4EC5251B38574": {
+      "name": "L2Encoder"
+    },
+    "0xde35f7711295Dfd0CD8bd94d46f65b8Acb182520": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x2D97F8FA96886Fd923c065F5457F9DDd494e3877": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0x1236010CECea55998384e795B59815D871f5f94d": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x41585C50524fb8c3899B43D7D797d9486AAc94DB": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x36616cf17557639614c1cdDb356b1B83fc0B2132": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x589750BA8aF186cE5B55391B0b7148cAD43a1619": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0xd758C807Cf0BD82b737c2fC14935FEfe49C44141": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xCC29b02a414B6Bb66490edAa25d3e8E9471Fcb96": {
+      "name": "TransparentUpgradeableProxy"
     }
   }
 }
