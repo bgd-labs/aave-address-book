@@ -10,6 +10,7 @@ export * as GovernanceV3Base from './GovernanceV3Base';
 export * as GovernanceV3BNB from './GovernanceV3BNB';
 export * as GovernanceV3Gnosis from './GovernanceV3Gnosis';
 export * as GovernanceV3Scroll from './GovernanceV3Scroll';
+export * as GovernanceV3ScrollEtherFi from './GovernanceV3ScrollEtherFi';
 export * as GovernanceV3ZkSync from './GovernanceV3ZkSync';
 export * as GovernanceV3Celo from './GovernanceV3Celo';
 export * as GovernanceV3Linea from './GovernanceV3Linea';
