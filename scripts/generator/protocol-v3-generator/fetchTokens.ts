@@ -75,53 +75,23 @@ export async function inferAdditionalTokenInfo(
   if (reservesData.length > 0) {
     const aTokenContract = getContract({
       address: reservesData[0].A_TOKEN,
-      abi: [
-        {
-          inputs: [],
-          name: 'ATOKEN_REVISION',
-          outputs: [{internalType: 'uint256', name: '', type: 'uint256'}],
-          stateMutability: 'view',
-          type: 'function',
-        },
-        ...IAToken_ABI,
-      ] as const,
-      client,
-    });
-    const variableDebtTokenContract = getContract({
-      address: reservesData[0].V_TOKEN,
-      abi: [
-        {
-          inputs: [],
-          name: 'DEBT_TOKEN_REVISION',
-          outputs: [{internalType: 'uint256', name: '', type: 'uint256'}],
-          stateMutability: 'view',
-          type: 'function',
-        },
-      ] as const,
+      abi: IAToken_ABI,
       client,
     });
 
-    const [COLLECTOR, aTokenImplSlot, aTokenImplRevision, vTokenImplSlot] = await Promise.all([
+    const [COLLECTOR, aTokenImplSlot, vTokenImplSlot] = await Promise.all([
       aTokenContract.read.RESERVE_TREASURY_ADDRESS(),
       getImplementationStorageSlot(client, reservesData[0].A_TOKEN),
-      aTokenContract.read.ATOKEN_REVISION(),
       getImplementationStorageSlot(client, reservesData[0].V_TOKEN),
     ]);
     const defaultATokenImplementation = bytes32toAddress(aTokenImplSlot);
 
-    const aTokenRevision = Number(aTokenImplRevision);
-
     const defaultVariableDebtTokenImplementation = bytes32toAddress(vTokenImplSlot);
-
-    const variableDebtTokenRevision = Number(
-      await variableDebtTokenContract.read.DEBT_TOKEN_REVISION(),
-    );
 
     return {
       COLLECTOR: {value: COLLECTOR, type: 'ICollector'},
-      [`DEFAULT_A_TOKEN_IMPL_REV_${aTokenRevision}`]: defaultATokenImplementation,
-      [`DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${variableDebtTokenRevision}`]:
-        defaultVariableDebtTokenImplementation,
+      DEFAULT_A_TOKEN_IMPL: defaultATokenImplementation,
+      DEFAULT_VARIABLE_DEBT_TOKEN_IMPL: defaultVariableDebtTokenImplementation,
     };
   }
   return {

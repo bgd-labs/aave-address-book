@@ -27,7 +27,7 @@ import {scrollSepoliaProtoV3, scrollProtoV3, etherFiScrollProtoV3} from './confi
 import {zkSyncProtoV3} from './configs/pools/zksync';
 import {lineaProtoV3} from './configs/pools/linea';
 import {celoProtoV3} from './configs/pools/celo';
-import {mantleProtoV3} from './configs/pools/mantle';
+// import {mantleProtoV3} from './configs/pools/mantle';
 import {sonicProtoV3} from './configs/pools/sonic';
 import {soneiumProtoV3} from './configs/pools/soneium';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
@@ -156,7 +156,7 @@ async function main() {
       etherFiEthereumMainnetProtoV3Pool,
       lineaProtoV3,
       celoProtoV3,
-      mantleProtoV3,
+      // mantleProtoV3,
       sonicProtoV3,
       soneiumProtoV3,
     ].map((config) => generateProtocolV3Library(config)),

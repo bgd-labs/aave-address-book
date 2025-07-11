@@ -17,14 +17,14 @@ export const ACL_ADMIN = '0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A';
 // IACLManager https://etherscan.io/address/0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0
 export const ACL_MANAGER = '0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0';
 
-// IPoolDataProvider https://etherscan.io/address/0x497a1994c46d4f6C864904A9f1fac6328Cb7C8a6
-export const AAVE_PROTOCOL_DATA_PROVIDER = '0x497a1994c46d4f6C864904A9f1fac6328Cb7C8a6';
+// IPoolDataProvider https://etherscan.io/address/0x0a16f2FCC0D44FaE41cc54e079281D84A363bECD
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0x0a16f2FCC0D44FaE41cc54e079281D84A363bECD';
 
-// https://etherscan.io/address/0x9aEb8aAA1cA38634Aa8C0c8933E7fB4D61091327
-export const POOL_IMPL = '0x9aEb8aAA1cA38634Aa8C0c8933E7fB4D61091327';
+// https://etherscan.io/address/0x947f0054fAEd3481FF4e76CA35f12fbE36cc665B
+export const POOL_IMPL = '0x947f0054fAEd3481FF4e76CA35f12fbE36cc665B';
 
-// https://etherscan.io/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
-export const POOL_CONFIGURATOR_IMPL = '0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b';
+// https://etherscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+export const POOL_CONFIGURATOR_IMPL = '0x5793FE4de34532F162B4e207aF872729880ec2b6';
 
 // https://etherscan.io/address/0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb
 export const DEFAULT_INCENTIVES_CONTROLLER = '0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb';
@@ -35,11 +35,11 @@ export const EMISSION_MANAGER = '0x223d844fc4B006D67c0cDbd39371A9F73f69d974';
 // ICollector https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
 export const COLLECTOR = '0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c';
 
-// https://etherscan.io/address/0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d
-export const DEFAULT_A_TOKEN_IMPL_REV_1 = '0x7EfFD7b47Bfd17e52fB7559d3f924201b9DbfF3d';
+// https://etherscan.io/address/0x97f5B96c7DaC8547251330b63760951A4Fab448D
+export const DEFAULT_A_TOKEN_IMPL = '0x97f5B96c7DaC8547251330b63760951A4Fab448D';
 
-// https://etherscan.io/address/0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 = '0xaC725CB59D16C81061BDeA61041a8A5e73DA9EC6';
+// https://etherscan.io/address/0xB58ED8ec66e43dE3fecD27e351485E7EFE006f38
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xB58ED8ec66e43dE3fecD27e351485E7EFE006f38';
 
 // https://etherscan.io/address/0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E
 export const RISK_STEWARD = '0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E';
@@ -50,8 +50,8 @@ export const DEBT_SWAP_ADAPTER = '0xd7852E139a7097E119623de0751AE53a61efb442';
 // https://etherscan.io/address/0x21714092D90c7265F52fdfDae068EC11a23C6248
 export const DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 = '0x21714092D90c7265F52fdfDae068EC11a23C6248';
 
-// https://etherscan.io/address/0xA8e351C7Ab1b75A2134A418701919c462932DF79
-export const CONFIG_ENGINE = '0xA8e351C7Ab1b75A2134A418701919c462932DF79';
+// https://etherscan.io/address/0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4
+export const CONFIG_ENGINE = '0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4';
 
 // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0xbaA999AC55EAce41CcAE355c77809e68Bb345170';
@@ -64,9 +64,6 @@ export const LEGACY_STATIC_A_TOKEN_FACTORY = '0x411D79b8cC43384FDE66CaBf9b6a1718
 
 // https://etherscan.io/address/0xADC0A53095A0af87F3aa29FE0715B5c28016364e
 export const SWAP_COLLATERAL_ADAPTER = '0xADC0A53095A0af87F3aa29FE0715B5c28016364e';
-
-// https://etherscan.io/address/0x379c1EDD1A41218bdbFf960a9d5AD2818Bf61aE8
-export const UI_GHO_DATA_PROVIDER = '0x379c1EDD1A41218bdbFf960a9d5AD2818Bf61aE8';
 
 // https://etherscan.io/address/0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047
 export const UI_INCENTIVE_DATA_PROVIDER = '0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047';
@@ -88,6 +85,9 @@ export const SAVINGS_DAI_TOKEN_WRAPPER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a05
 
 // https://etherscan.io/address/0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F
 export const STATA_FACTORY = '0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F';
+
+// https://etherscan.io/address/0x593B09afc075B3c326CE2AD7750888645BA8943d
+export const GHO_DIRECT_MINTER = '0x593B09afc075B3c326CE2AD7750888645BA8943d';
 
 // https://etherscan.io/address/0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b
 export const DUST_BIN = '0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b';
@@ -689,7 +689,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10380,
+    liquidationBonus: 10350,
   },
   '9': {
     label: 'PT-eUSDe Stablecoins May 2025',
@@ -748,8 +748,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9370,
-    liquidationThreshold: 9570,
+    ltv: 9400,
+    liquidationThreshold: 9600,
     liquidationBonus: 10220,
   },
   '13': {
@@ -778,8 +778,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9220,
-    liquidationThreshold: 9420,
+    ltv: 9270,
+    liquidationThreshold: 9470,
     liquidationBonus: 10220,
   },
   '15': {

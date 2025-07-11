@@ -46,7 +46,6 @@ export * as AaveV3EthereumLido from './AaveV3EthereumLido';
 export * as AaveV3EthereumEtherFi from './AaveV3EthereumEtherFi';
 export * as AaveV3Linea from './AaveV3Linea';
 export * as AaveV3Celo from './AaveV3Celo';
-export * as AaveV3Mantle from './AaveV3Mantle';
 export * as AaveV3Sonic from './AaveV3Sonic';
 export * as AaveV3Soneium from './AaveV3Soneium';
 export * as MiscArbitrum from './MiscArbitrum';

@@ -46,10 +46,10 @@ library AaveV3ArbitrumSepolia {
   ICollector internal constant COLLECTOR = ICollector(0xa0208CE8356ad6C5EC6dFb8996c9A6B828212022);
 
   // https://sepolia.arbiscan.io/address/0xc0Bac16A64FbAa7EE6483bD12a759e28cD13dcBe
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xc0Bac16A64FbAa7EE6483bD12a759e28cD13dcBe;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xc0Bac16A64FbAa7EE6483bD12a759e28cD13dcBe;
 
   // https://sepolia.arbiscan.io/address/0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x486C2D3F59E4d72f3cAa301a7eF19E3db657F5b0;
 
   // https://sepolia.arbiscan.io/address/0x2E45e7dCD1e94d8edf1605FfF4602912FDC662bC
