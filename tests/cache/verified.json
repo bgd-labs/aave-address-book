@@ -3446,6 +3446,36 @@
     },
     "0x593B09afc075B3c326CE2AD7750888645BA8943d": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xAA43203167317DeeF8288095C44b84a686918d2E": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA484Ba6a7f51f00A3f82a11e73b741AE1dEAB58": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xCDb4fA6ba08bF1FB7Aa9fDf6002E78EDc431a642": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA870e4B82deaDa3727235f34183Ec9B728714C8": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAAd742dd9111373ec3C1E53b005e870d4CfF3be2": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA12BAd4a501d45A5b771e49C2Fd415BA8BFc79d": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xaa7A1910BA79B6A2E385ebA26185aA2dCB9B8eAd": {
+      "name": "GnosisSafeProxy"
     }
   },
   "10": {
@@ -4450,6 +4480,18 @@
     },
     "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xAA43203167317DeeF8288095C44b84a686918d2E": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA870e4B82deaDa3727235f34183Ec9B728714C8": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "GnosisSafeProxy"
     }
   },
   "56": {
@@ -5280,6 +5322,12 @@
     },
     "0x5263972Ce5312D9A25C54B80896B55aeD6136e50": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xAA43203167317DeeF8288095C44b84a686918d2E": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
     }
   },
   "100": {
@@ -5771,6 +5819,21 @@
     },
     "0xADb599b1858E7738aE760D4dCf8C11Cc569AF3fB": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xAA43203167317DeeF8288095C44b84a686918d2E": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA870e4B82deaDa3727235f34183Ec9B728714C8": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "GnosisSafeProxy"
     }
   },
   "137": {
@@ -7135,6 +7198,9 @@
     },
     "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
     }
   },
   "146": {
@@ -9435,6 +9501,21 @@
     },
     "0xd7e53C075C4bE288275ea57d5Abec0486386313C": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xAA43203167317DeeF8288095C44b84a686918d2E": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA870e4B82deaDa3727235f34183Ec9B728714C8": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "GnosisSafeProxy"
     }
   },
   "42161": {
@@ -10730,6 +10811,21 @@
     },
     "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xAA43203167317DeeF8288095C44b84a686918d2E": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA870e4B82deaDa3727235f34183Ec9B728714C8": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "GnosisSafeProxy"
     }
   },
   "42220": {
@@ -12125,6 +12221,9 @@
     },
     "0x1AdB659cA7eaA45e42dCD257d09b963C5cfBB36f": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
     }
   },
   "59144": {
@@ -13042,6 +13141,9 @@
     },
     "0x1aC9C8E6bAEAEB33b7E550D4A031de8a5D0c0952": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6": {
+      "name": "GnosisSafeProxy"
     }
   }
 }
