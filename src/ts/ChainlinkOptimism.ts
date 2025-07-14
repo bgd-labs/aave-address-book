@@ -41,9 +41,6 @@ export const FTM_USD = '0xc19d58652d6BfC6Db6FB3691eDA6Aa7f3379E4E9';
 // https://optimistic.etherscan.io/address/0x7f99817d87baD03ea21E05112Ca799d715730efe
 export const SUSD_USD = '0x7f99817d87baD03ea21E05112Ca799d715730efe';
 
-// https://optimistic.etherscan.io/address/0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca
-export const ALETH_USD = '0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca';
-
 // https://optimistic.etherscan.io/address/0xee35A95c9a064491531493D8b380bC40A4CCd0Da
 export const DYDX_USD = '0xee35A95c9a064491531493D8b380bC40A4CCd0Da';
 
@@ -107,6 +104,9 @@ export const VELO_USD = '0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120';
 // https://optimistic.etherscan.io/address/0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F
 export const APE_USD = '0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F';
 
+// https://optimistic.etherscan.io/address/0x1520874FC216f5F07E03607303Df2Fda6C3Fc203
+export const ZIL_USD = '0x1520874FC216f5F07E03607303Df2Fda6C3Fc203';
+
 // https://optimistic.etherscan.io/address/0x34E0E85CeEc6be6146c4f0115769a29a9539222e
 export const FLOKI_USD = '0x34E0E85CeEc6be6146c4f0115769a29a9539222e';
 
@@ -127,9 +127,6 @@ export const BAL_USD = '0x30D9d31C1ac29Bc2c2c312c1bCa9F8b3D60e2376';
 
 // https://optimistic.etherscan.io/address/0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3
 export const MKR_USD = '0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3';
-
-// https://optimistic.etherscan.io/address/0x30F6ffb911ac7B9aDF471f28366ce1826C05776e
-export const USD1_USD = '0x30F6ffb911ac7B9aDF471f28366ce1826C05776e';
 
 // https://optimistic.etherscan.io/address/0x0D276FC14719f9292D5C1eA2198673d1f4269246
 export const OP_USD = '0x0D276FC14719f9292D5C1eA2198673d1f4269246';
@@ -283,9 +280,6 @@ export const BCH_USD = '0x33E047119359161288bcB143e0C15467C7151d4c';
 
 // https://optimistic.etherscan.io/address/0xCb93226806156b03c8896bbD1cd5e4174cdb0806
 export const ynETHx_ETH_Exchange_Rate = '0xCb93226806156b03c8896bbD1cd5e4174cdb0806';
-
-// https://optimistic.etherscan.io/address/0x1520874FC216f5F07E03607303Df2Fda6C3Fc203
-export const ZIL_USD = '0x1520874FC216f5F07E03607303Df2Fda6C3Fc203';
 
 // https://optimistic.etherscan.io/address/0xf37c76163b2918bB4533579D449524F8542E64AD
 export const FET_USD = '0xf37c76163b2918bB4533579D449524F8542E64AD';

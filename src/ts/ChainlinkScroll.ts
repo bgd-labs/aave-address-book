@@ -45,7 +45,7 @@ export const uniETH_ETH_Exchange_Rate = '0x16F46406457D35fc40BBAA306d8a81aa414e8
 export const SOL_USD = '0xDf3F55B6bd57084DD4a72a41853C0a2487CB757F';
 
 // https://scrollscan.com/address/0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E
-export const stBTC_Proof_of_Reserves = '0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E';
+export const stBTC_PoR = '0x6dCa10bce66548e26DBd1FCF4E8692796BeDdd7E';
 
 // https://scrollscan.com/address/0xB4b121ebE4DdCdFD3378b9519A101678829fE8c6
 export const AVAX_USD = '0xB4b121ebE4DdCdFD3378b9519A101678829fE8c6';

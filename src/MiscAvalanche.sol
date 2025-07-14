@@ -3,30 +3,33 @@
 pragma solidity >=0.6.0;
 
 library MiscAvalanche {
-  // https://snowscan.xyz/address/0xEB0682d148e874553008730f0686ea89db7DA412
+  // https://snowtrace.io/address/0xEB0682d148e874553008730f0686ea89db7DA412
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 
-  // https://snowscan.xyz/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
+  // https://snowtrace.io/address/0xD3cF979e676265e4f6379749DECe4708B9A22476
   address internal constant PROXY_ADMIN = 0xD3cF979e676265e4f6379749DECe4708B9A22476;
 
-  // https://snowscan.xyz/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
+  // https://snowtrace.io/address/0x3b56998Ec06477704622ca8e2eA1b4db134cec32
   address internal constant CREATE_3_FACTORY = 0x3b56998Ec06477704622ca8e2eA1b4db134cec32;
 
-  // https://snowscan.xyz/address/0x06d958772304e7220fc3E463756CE01Ed0D24db2
+  // https://snowtrace.io/address/0x06d958772304e7220fc3E463756CE01Ed0D24db2
   address internal constant AAVE_CL_ROBOT_OPERATOR = 0x06d958772304e7220fc3E463756CE01Ed0D24db2;
 
-  // https://snowscan.xyz/address/0x56C1a4b54921DEA9A344967a8693C7E661D72968
+  // https://snowtrace.io/address/0x56C1a4b54921DEA9A344967a8693C7E661D72968
   address internal constant PROTOCOL_GUARDIAN = 0x56C1a4b54921DEA9A344967a8693C7E661D72968;
 
-  // https://snowscan.xyz/address/0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E
+  // https://snowtrace.io/address/0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E
   address internal constant AAVE_MERKLE_DISTRIBUTOR = 0xA065d5A299E618CD84a87641d5eEbC7916Fdf32E;
 
-  // https://snowscan.xyz/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+  // https://snowtrace.io/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
   address internal constant AFC_SAFE = 0x22740deBa78d5a0c24C58C740e3715ec29de1bFa;
 
-  // https://snowscan.xyz/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+  // https://snowtrace.io/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
   address internal constant ALC_SAFE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
 
-  // https://snowscan.xyz/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+  // https://snowtrace.io/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
   address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
+
+  // https://snowtrace.io/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
+  address internal constant APE_VOTING_SAFE = 0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6;
 }

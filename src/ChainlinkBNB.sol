@@ -4,7 +4,7 @@ pragma solidity >=0.6.0;
 
 library ChainlinkBNB {
   // https://bscscan.com/address/0x657b128a4936542A48a40C320BFfa3F44043583a
-  address internal constant SolvBTC_Proof_of_Reserves = 0x657b128a4936542A48a40C320BFfa3F44043583a;
+  address internal constant SolvBTC_PoR = 0x657b128a4936542A48a40C320BFfa3F44043583a;
 
   // https://bscscan.com/address/0xC333eb0086309a16aa7c8308DfD32c8BBA0a2592
   address internal constant DOT_USD = 0xC333eb0086309a16aa7c8308DfD32c8BBA0a2592;
@@ -129,9 +129,6 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0xf369A13E7f2449E58DdE8302F008eE9131f8d859
   address internal constant XVS_BNB = 0xf369A13E7f2449E58DdE8302F008eE9131f8d859;
 
-  // https://bscscan.com/address/0xaD8b4e59A7f25B68945fAf0f3a3EAF027832FFB0
-  address internal constant USD1_USD = 0xaD8b4e59A7f25B68945fAf0f3a3EAF027832FFB0;
-
   // https://bscscan.com/address/0xD5c40f5144848Bd4EF08a9605d860e727b991513
   address internal constant USDT_BNB = 0xD5c40f5144848Bd4EF08a9605d860e727b991513;
 
@@ -252,9 +249,6 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x6b25F7f189c3f26d3caC43b754578b67Fc8d952A
   address internal constant MS_USD = 0x6b25F7f189c3f26d3caC43b754578b67Fc8d952A;
 
-  // https://bscscan.com/address/0xE8ed18E29402CD223bC5B73D30e40CCdf7b72986
-  address internal constant USR_USD = 0xE8ed18E29402CD223bC5B73D30e40CCdf7b72986;
-
   // https://bscscan.com/address/0x93A67D414896A280bF8FFB3b389fE3686E014fda
   address internal constant XRP_USD = 0x93A67D414896A280bF8FFB3b389fE3686E014fda;
 
@@ -274,7 +268,7 @@ library ChainlinkBNB {
   address internal constant ZBU_USD = 0x4F3CF381c58Bf69b798167Cb537103d2c8ef1A71;
 
   // https://bscscan.com/address/0x81ca991cEf14e7bFB3fa8cc70303a2DEaEb09A42
-  address internal constant Solv_Proof_of_Reserves = 0x81ca991cEf14e7bFB3fa8cc70303a2DEaEb09A42;
+  address internal constant Solv_PoR = 0x81ca991cEf14e7bFB3fa8cc70303a2DEaEb09A42;
 
   // https://bscscan.com/address/0x657e700c66C48c135c4A29c4292908DbdA7aa280
   address internal constant FET_USD = 0x657e700c66C48c135c4A29c4292908DbdA7aa280;
@@ -333,7 +327,7 @@ library ChainlinkBNB {
   address internal constant ICP_USD = 0x84210d9013A30C6ab169e28840A6CC54B60fa042;
 
   // https://bscscan.com/address/0x696B7eA5827548cd35C743A0a05c1f3130196e5e
-  address internal constant stBTC_Proof_of_Reserves = 0x696B7eA5827548cd35C743A0a05c1f3130196e5e;
+  address internal constant stBTC_PoR = 0x696B7eA5827548cd35C743A0a05c1f3130196e5e;
 
   // https://bscscan.com/address/0x10402B01cD2E6A9ed6DBe683CbC68f78Ff02f8FC
   address internal constant USDE_USD = 0x10402B01cD2E6A9ed6DBe683CbC68f78Ff02f8FC;

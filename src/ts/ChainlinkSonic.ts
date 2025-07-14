@@ -44,9 +44,6 @@ export const WBTC_USD = '0x61140C09956495F1ce49D28E125Ed4035e1CAE95';
 // https://sonicscan.org/address/0xdA49fdf6a5606Ca7FF180a9B71928Db01a00b0a8
 export const wstkscBTC_stkscBTC_Exchange_Rate = '0xdA49fdf6a5606Ca7FF180a9B71928Db01a00b0a8';
 
-// https://sonicscan.org/address/0x21f037F67946A199b1DBF1Cb7DFa21bFde477196
-export const xSolvBTC_SolvBTC_Exchange_Rate = '0x21f037F67946A199b1DBF1Cb7DFa21bFde477196';
-
 // https://sonicscan.org/address/0x824364077993847f71293B24ccA8567c00c2de11
 export const ETH_USD = '0x824364077993847f71293B24ccA8567c00c2de11';
 
@@ -61,9 +58,6 @@ export const beS_S_Exchange_Rate = '0x15643d909F07e4083fCE3e3204F7e1A0A37D52f4';
 
 // https://sonicscan.org/address/0xACE5e348a341a740004304c2c228Af1A4581920F
 export const SCUSD_USD = '0xACE5e348a341a740004304c2c228Af1A4581920F';
-
-// https://sonicscan.org/address/0x0fceF1123FDBEdC89a0189B15D35B7A33B7694c0
-export const EUR_USD = '0x0fceF1123FDBEdC89a0189B15D35B7A33B7694c0';
 
 // https://sonicscan.org/address/0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B
 export const OUSDT_USD = '0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B';
@@ -94,9 +88,6 @@ export const OS_S = '0x30caC44b395eB969C9CA0d44dF39e6E0aE8f8D94';
 
 // https://sonicscan.org/address/0x8f0240dc9C7644D121D370d8ee61FF9F2356521E
 export const EURC_USD = '0x8f0240dc9C7644D121D370d8ee61FF9F2356521E';
-
-// https://sonicscan.org/address/0xB6D739Ba498a0D8d1e92F81345B764C995Cc4882
-export const USD1_USD = '0xB6D739Ba498a0D8d1e92F81345B764C995Cc4882';
 
 // https://sonicscan.org/address/0x960BDD1dFD20d7c98fa482D793C3dedD73A113a3
 export const uniBTC_BTC_Exchange_Rate = '0x960BDD1dFD20d7c98fa482D793C3dedD73A113a3';

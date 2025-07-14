@@ -14,17 +14,11 @@ export const L2_Sequencer_Uptime_Status_Feed = '0xaDE1b9AbB98c6A542E4B49db2588a3
 // https://soneium.blockscout.com/address/0x97D2996B726F774B7c5BF77C7A74CFe98174a9d3
 export const solvBTC_BTC = '0x97D2996B726F774B7c5BF77C7A74CFe98174a9d3';
 
-// https://soneium.blockscout.com/address/0x251Ef178518aba5aa1df24713344EA1C6d9ccc67
-export const USD1_USD = '0x251Ef178518aba5aa1df24713344EA1C6d9ccc67';
-
 // https://soneium.blockscout.com/address/0x6D414dC3F9D8822D947B737CA8F75b1c4d6C8542
 export const LINK_ETH = '0x6D414dC3F9D8822D947B737CA8F75b1c4d6C8542';
 
 // https://soneium.blockscout.com/address/0x75196350e8F9Ffa8e6a917E3C6E073D24F458781
 export const WBTC_USD = '0x75196350e8F9Ffa8e6a917E3C6E073D24F458781';
-
-// https://soneium.blockscout.com/address/0x2580FA33f9dfD9D26F1aC418E09113f3E9c316c2
-export const Calculated_wstASTR_USD = '0x2580FA33f9dfD9D26F1aC418E09113f3E9c316c2';
 
 // https://soneium.blockscout.com/address/0xF049354158e13F6794A3cCD236694E0e1BD9AF79
 export const OUSDT_USD = '0xF049354158e13F6794A3cCD236694E0e1BD9AF79';
