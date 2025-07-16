@@ -587,6 +587,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0xa6aB031A4d189B24628EC9Eb155F0a0f1A0E55a3',
   },
+  PT_sUSDE_25SEP2025: {
+    decimals: 18,
+    id: 48,
+    UNDERLYING: '0x9F56094C450763769BA0EA9Fe2876070c0fD5F77',
+    A_TOKEN: '0x5f4a0873a3A02f7C0CB0e13a1d4362a1AD90e751',
+    V_TOKEN: '0xc9AD8Dd111e6384128146467aAf92B81EC422848',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0x7585693910f39df4959912B27D09EAEef06C1a93',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -723,7 +732,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10300,
+    liquidationBonus: 10270,
   },
   '11': {
     label: 'USDe Stablecoin',
@@ -750,7 +759,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10220,
+    liquidationBonus: 10180,
   },
   '13': {
     label: 'PT-eUSDe Stablecoins August 2025',
@@ -778,8 +787,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9270,
-    liquidationThreshold: 9470,
+    ltv: 9340,
+    liquidationThreshold: 9540,
     liquidationBonus: 10220,
   },
   '15': {
@@ -804,6 +813,31 @@ export const E_MODES = {
     borrowableAssets: ['0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'],
     ltv: 8400,
     liquidationThreshold: 8600,
+    liquidationBonus: 10300,
+  },
+  '17': {
+    label: 'PT-sUSDe Stablecoins September 2025',
+    collateralBitmap: '281474976710656',
+    collateralAssets: ['0x9F56094C450763769BA0EA9Fe2876070c0fD5F77'],
+    borrowableBitmap: '35433480456',
+    borrowableAssets: [
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+    ],
+    ltv: 8770,
+    liquidationThreshold: 8970,
+    liquidationBonus: 10500,
+  },
+  '18': {
+    label: 'PT-sUSDe USDe September 2025',
+    collateralBitmap: '281474976710656',
+    collateralAssets: ['0x9F56094C450763769BA0EA9Fe2876070c0fD5F77'],
+    borrowableBitmap: '1073741824',
+    borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
+    ltv: 8910,
+    liquidationThreshold: 9110,
     liquidationBonus: 10300,
   },
 } as const;
