@@ -10,6 +10,7 @@ export const polygonAddresses: NetworkAddresses<{
   LEGACY_BRIDGE_EXECUTOR: Hex;
   AFC_SAFE: Hex;
   MASIV_SAFE: Hex;
+  APE_VOTING_SAFE: Hex;
 }> = {
   name: 'Polygon',
   chainId: ChainId.polygon,
@@ -27,5 +28,6 @@ export const polygonAddresses: NetworkAddresses<{
     LEGACY_BRIDGE_EXECUTOR: '0xdc9A35B16DB4e126cFeDC41322b3a36454B1F772',
     AFC_SAFE: '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa',
     MASIV_SAFE: '0xdef1FA4CEfe67365ba046a7C630D6B885298E210',
+    APE_VOTING_SAFE: '0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6',
   },
 };
