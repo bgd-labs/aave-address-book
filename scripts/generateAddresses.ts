@@ -23,7 +23,7 @@ import {gnosisProtoV3} from './configs/pools/gnosis';
 import {bnbProtoV3} from './configs/pools/bnb';
 import {optimismProtoV3, optimismSepoliaProtoV3} from './configs/pools/optimism';
 import {polygonProtoV2, polygonProtoV3} from './configs/pools/polygon';
-import {scrollSepoliaProtoV3, scrollProtoV3} from './configs/pools/scroll';
+import {scrollSepoliaProtoV3, scrollProtoV3, etherFiScrollProtoV3} from './configs/pools/scroll';
 import {zkSyncProtoV3} from './configs/pools/zksync';
 import {lineaProtoV3} from './configs/pools/linea';
 import {celoProtoV3} from './configs/pools/celo';
@@ -60,7 +60,7 @@ import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {celoAddresses} from './configs/networks/celo';
 import {scrollAddresses} from './configs/networks/scroll';
-import {governanceConfigScroll} from './configs/governance/scroll';
+import {governanceConfigScroll, governanceConfigScrollEtherFi} from './configs/governance/scroll';
 import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
 import {governanceConfigZkSync} from './configs/governance/zksync';
@@ -108,6 +108,7 @@ async function main() {
       governanceConfigBNB,
       governanceConfigGnosis,
       governanceConfigScroll,
+      governanceConfigScrollEtherFi,
       governanceConfigZkSync,
       governanceConfigCelo,
       governanceConfigLinea,
@@ -146,6 +147,7 @@ async function main() {
       optimismProtoV3,
       optimismSepoliaProtoV3,
       scrollProtoV3,
+      etherFiScrollProtoV3,
       scrollSepoliaProtoV3,
       zkSyncProtoV3,
       // fantomTestnetProtoV3,

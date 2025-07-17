@@ -151,3 +151,14 @@ export async function getTokenSymbol(client: Client, token: Hex): Promise<string
   });
   return await tokenContract.read.symbol();
 }
+
+export function extractTypes(addresses: Addresses): string[] {
+  const types = new Set<string>();
+  for (const key in addresses) {
+    const entry = addresses[key];
+    if (entry && typeof entry === 'object' && 'type' in entry && typeof entry.type === 'string') {
+      types.add(entry.type);
+    }
+  }
+  return Array.from(types);
+}
