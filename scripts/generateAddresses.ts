@@ -30,6 +30,7 @@ import {celoProtoV3} from './configs/pools/celo';
 // import {mantleProtoV3} from './configs/pools/mantle';
 import {sonicProtoV3} from './configs/pools/sonic';
 import {soneiumProtoV3} from './configs/pools/soneium';
+import {inkProtoV3} from './configs/pools/ink';
 import {generateGovernanceLibrary} from './generator/governanceV3Generator';
 import {generateProtocolV2Library} from './generator/protocolV2Generator';
 import {generateProtocolV3Library} from './generator/protocolV3Generator';
@@ -60,6 +61,7 @@ import {gnosisAddresses} from './configs/networks/gnosis';
 import {bnbAddresses} from './configs/networks/bnb';
 import {celoAddresses} from './configs/networks/celo';
 import {scrollAddresses} from './configs/networks/scroll';
+import {inkAddresses} from './configs/networks/ink';
 import {governanceConfigScroll} from './configs/governance/scroll';
 import {generateTokenList} from './generator/generateTokenList';
 import {generateAaveV1} from './generator/protocolV1Generator';
@@ -81,6 +83,7 @@ import {umbrellaMainnetConfig} from './configs/umbrella/ethereum';
 import {umbrellaBaseSepoliaConfig} from './configs/umbrella/base';
 import {generateChainlink} from './generator/chainlink';
 import {governanceConfigSoneium} from './configs/governance/soneium';
+import {governanceConfigInk} from './configs/governance/ink';
 
 async function main() {
   // cleanup ts artifacts
@@ -114,6 +117,7 @@ async function main() {
       governanceConfigMantle,
       governanceConfigSonic,
       governanceConfigSoneium,
+      governanceConfigInk,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -158,6 +162,7 @@ async function main() {
       // mantleProtoV3,
       sonicProtoV3,
       soneiumProtoV3,
+      inkProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche].map((config) =>
@@ -198,6 +203,7 @@ async function main() {
     mantleAddresses,
     sonicAddresses,
     soneiumAddresses,
+    inkAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
