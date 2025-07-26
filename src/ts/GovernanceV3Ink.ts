@@ -1,0 +1,8 @@
+// IPayloadsControllerCore https://explorer.inkonchain.com/address/0x1dE9CB9420Dd1f2cCeFFf9393E126b800D413b7A
+export const PERMISSIONED_PAYLOADS_CONTROLLER = '0x1dE9CB9420Dd1f2cCeFFf9393E126b800D413b7A';
+
+// https://explorer.inkonchain.com/address/0x1dF462e2712496373A347f8ad10802a5E95f053D
+export const PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR =
+  '0x1dF462e2712496373A347f8ad10802a5E95f053D';
+
+export const CHAIN_ID = 57073;
