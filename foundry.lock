@@ -1,0 +1,8 @@
+{
+  "lib/aave-v3-origin": {
+    "branch": {
+      "name": "v3.5.0",
+      "rev": "25115b2d1d6f166b3f492a4cc329f475ae266e62"
+    }
+  }
+}

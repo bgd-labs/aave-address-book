@@ -2,6 +2,7 @@ import {writeFileSync} from 'fs';
 import {Hex, getContract, Address, Client} from 'viem';
 import {Addresses, GovernanceConfig} from '../configs/types';
 import {
+  extractTypes,
   generateJsConstants,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
@@ -92,6 +93,20 @@ async function getGovernanceV3Addresses({CHAIN_ID, ADDRESSES}: GovernanceConfig)
     };
     addresses = {...addresses, ...executors};
   }
+  if (ADDRESSES.PERMISSIONED_PAYLOADS_CONTROLLER) {
+    const executors = await fetchV3ExecutorAddresses(
+      getClient(CHAIN_ID),
+      ADDRESSES.PERMISSIONED_PAYLOADS_CONTROLLER,
+    );
+    addresses.PERMISSIONED_PAYLOADS_CONTROLLER = {
+      value: ADDRESSES.PERMISSIONED_PAYLOADS_CONTROLLER,
+      type: 'IPayloadsControllerCore',
+    };
+    addresses = {
+      ...addresses,
+      PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR: executors.EXECUTOR_LVL_1,
+    };
+  }
   if (ADDRESSES.VOTING_MACHINE) {
     const strategyAndWareHouse = await getVotingStrategyAndWarehouse(
       ADDRESSES.VOTING_MACHINE,
@@ -110,7 +125,7 @@ export async function generateGovernanceLibrary(config: GovernanceConfig) {
     `./src/${name}.sol`,
     prefixWithPragma(
       prefixWithGeneratedWarning(
-        `import {IGovernanceCore, IPayloadsControllerCore, IDataWarehouse, IVotingStrategy} from './GovernanceV3.sol';\n` +
+        `import {${extractTypes(addresses).join(', ')}} from './GovernanceV3.sol';\n\n` +
           wrapIntoSolidityLibrary(
             generateSolidityConstants({chainId: config.CHAIN_ID, addresses}),
             name,
