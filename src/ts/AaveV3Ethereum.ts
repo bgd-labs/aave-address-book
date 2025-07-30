@@ -618,8 +618,11 @@ export const E_MODES = {
   },
   '2': {
     label: 'sUSDe Stablecoins',
-    collateralBitmap: '4294967296',
-    collateralAssets: ['0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'],
+    collateralBitmap: '5368709120',
+    collateralAssets: [
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+    ],
     borrowableBitmap: '34359738632',
     borrowableAssets: [
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
@@ -698,7 +701,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10310,
+    liquidationBonus: 10300,
   },
   '9': {
     label: 'PT-eUSDe Stablecoins May 2025',
@@ -732,7 +735,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10240,
+    liquidationBonus: 10210,
   },
   '11': {
     label: 'USDe Stablecoin',
@@ -759,7 +762,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10120,
+    liquidationBonus: 10110,
   },
   '13': {
     label: 'PT-eUSDe Stablecoins August 2025',
@@ -776,7 +779,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10290,
+    liquidationBonus: 10260,
   },
   '14': {
     label: 'PT-eUSDe USDe August 2025',
@@ -789,7 +792,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10190,
+    liquidationBonus: 10160,
   },
   '15': {
     label: 'eUSDe_Stablecoin',
@@ -817,18 +820,23 @@ export const E_MODES = {
   },
   '17': {
     label: 'PT-sUSDe Stablecoins September 2025',
-    collateralBitmap: '281474976710656',
-    collateralAssets: ['0x9F56094C450763769BA0EA9Fe2876070c0fD5F77'],
-    borrowableBitmap: '35433480456',
+    collateralBitmap: '283678294933504',
+    collateralAssets: [
+      '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+      '0x3b3fB9C57858EF816833dC91565EFcd85D96f634',
+      '0x9F56094C450763769BA0EA9Fe2876070c0fD5F77',
+    ],
+    borrowableBitmap: '4433479991560',
     borrowableAssets: [
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
       '0xdAC17F958D2ee523a2206206994597C13D831ec7',
       '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8830,
-    liquidationThreshold: 9030,
-    liquidationBonus: 10500,
+    ltv: 8860,
+    liquidationThreshold: 9060,
+    liquidationBonus: 10470,
   },
   '18': {
     label: 'PT-sUSDe USDe September 2025',
@@ -836,9 +844,9 @@ export const E_MODES = {
     collateralAssets: ['0x9F56094C450763769BA0EA9Fe2876070c0fD5F77'],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9020,
-    liquidationThreshold: 9220,
-    liquidationBonus: 10300,
+    ltv: 9050,
+    liquidationThreshold: 9250,
+    liquidationBonus: 10260,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;
