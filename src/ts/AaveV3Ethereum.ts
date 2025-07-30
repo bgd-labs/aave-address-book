@@ -596,6 +596,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0x7585693910f39df4959912B27D09EAEef06C1a93',
   },
+  PT_USDe_25SEP2025: {
+    decimals: 18,
+    id: 49,
+    UNDERLYING: '0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a',
+    A_TOKEN: '0x38A5357Ce55c81add62aBc84Fb32981e2626ADEf',
+    V_TOKEN: '0x0D8486E1CAbf3C9407B3DdA0cfc4d9C3101fB683',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0x8B17C02d22EE7D6B8D6829ceB710A458de41E84a',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -847,6 +856,41 @@ export const E_MODES = {
     ltv: 9050,
     liquidationThreshold: 9250,
     liquidationBonus: 10260,
+  },
+  '19': {
+    label: 'PT-USDe Stablecoins September 2025',
+    collateralBitmap: '589339306229760',
+    collateralAssets: [
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0x917459337CaAC939D41d7493B3999f571D20D667',
+      '0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617',
+      '0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a',
+    ],
+    borrowableBitmap: '35433480456',
+    borrowableAssets: [
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+    ],
+    ltv: 9030,
+    liquidationThreshold: 9230,
+    liquidationBonus: 10350,
+  },
+  '20': {
+    label: 'PT-USDe USDe September 2025',
+    collateralBitmap: '589339306229760',
+    collateralAssets: [
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0x917459337CaAC939D41d7493B3999f571D20D667',
+      '0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617',
+      '0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a',
+    ],
+    borrowableBitmap: '1073741824',
+    borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
+    ltv: 9120,
+    liquidationThreshold: 9320,
+    liquidationBonus: 10250,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {} as const;
