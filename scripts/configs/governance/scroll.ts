@@ -12,3 +12,11 @@ export const governanceConfigScroll: GovernanceConfig = {
     GOVERNANCE_GUARDIAN: '0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b',
   },
 };
+
+export const governanceConfigScrollEtherFi: GovernanceConfig = {
+  name: 'ScrollEtherFi',
+  CHAIN_ID: ChainId.scroll,
+  ADDRESSES: {
+    PERMISSIONED_PAYLOADS_CONTROLLER: '0x1bE9f691084554f3CB8Cc7dCa67BD08AF4355E5D',
+  },
+};
