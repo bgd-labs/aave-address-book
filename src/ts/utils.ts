@@ -22,15 +22,16 @@ function flattenObject(obj: AnyObject, parentKey = '', result: AnyObject = {}): 
  * @param chainId
  * @returns string[] found paths to address-book addresses
  */
-export function isKnownAddress(value: Address, chainId: number): string[] {
+export function getAddressBookReferences(value: Address, chainId: number): string[] {
   // glob imports have no object properties
   // therefore we recreate the object via spread & remove addresses unrelated to the chain we are checking
   const transformedAddresses = Object.keys(addresses).reduce(
     (acc, key) => {
       if (addresses[key as keyof typeof addresses].CHAIN_ID === chainId) {
         const chainAddresses = {...addresses[key as keyof typeof addresses]};
-        if (chainAddresses.E_MODES) {
-          delete chainAddresses.E_MODES;
+        // deleting eModes as they only contain duplicates and on lookup should always be deprioritized
+        if ((chainAddresses as any).E_MODES) {
+          delete (chainAddresses as any).E_MODES;
         }
         return {...acc, ...flattenObject({[key]: chainAddresses})};
       }
