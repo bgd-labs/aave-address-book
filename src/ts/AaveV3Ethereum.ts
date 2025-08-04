@@ -843,8 +843,8 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8860,
-    liquidationThreshold: 9060,
+    ltv: 8910,
+    liquidationThreshold: 9110,
     liquidationBonus: 10470,
   },
   '18': {
@@ -853,8 +853,8 @@ export const E_MODES = {
     collateralAssets: ['0x9F56094C450763769BA0EA9Fe2876070c0fD5F77'],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9050,
-    liquidationThreshold: 9250,
+    ltv: 9100,
+    liquidationThreshold: 9300,
     liquidationBonus: 10260,
   },
   '19': {
@@ -873,8 +873,8 @@ export const E_MODES = {
       '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
     ],
-    ltv: 9030,
-    liquidationThreshold: 9230,
+    ltv: 9080,
+    liquidationThreshold: 9280,
     liquidationBonus: 10350,
   },
   '20': {
@@ -888,9 +888,16 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9120,
-    liquidationThreshold: 9320,
+    ltv: 9170,
+    liquidationThreshold: 9370,
     liquidationBonus: 10250,
   },
 } as const;
-export const EXTERNAL_LIBRARIES = {} as const;
+export const EXTERNAL_LIBRARIES = {
+  FLASHLOAN_LOGIC: '0x4fDB5d360f946CFD25b14F346f748204c0C6a2F4',
+  BORROW_LOGIC: '0x5047AD5e603Ec4a2AB58aaE2321C07D8f4De6a8a',
+  E_MODE_LOGIC: '0x7fcE69A2bA3e78EeB36798cde2c94C70f3A043af',
+  LIQUIDATION_LOGIC: '0x5934b283f7120500253f277CCcF4521528aE34D6',
+  POOL_LOGIC: '0x564c42578A1b270EaE16c25Da39d901245881d1F',
+  SUPPLY_LOGIC: '0x1eF34B91afC368174F579067D1DB94325cDC7946',
+} as const;
