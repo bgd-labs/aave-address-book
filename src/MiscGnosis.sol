@@ -26,4 +26,19 @@ library MiscGnosis {
 
   // https://gnosisscan.io/address/0xdeadD8aB03075b7FBA81864202a2f59EE25B312b
   address internal constant MERIT_AHAB_SAFE = 0xdeadD8aB03075b7FBA81864202a2f59EE25B312b;
+
+  // https://gnosisscan.io/address/0xAA43203167317DeeF8288095C44b84a686918d2E
+  address internal constant APE_SAFE = 0xAA43203167317DeeF8288095C44b84a686918d2E;
+
+  // https://gnosisscan.io/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
+  address internal constant APE_VOTING_SAFE = 0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6;
+
+  // https://gnosisscan.io/address/0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871
+  address internal constant ALC_INCENTIVE_SAFE = 0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871;
+
+  // https://gnosisscan.io/address/0xAA870e4B82deaDa3727235f34183Ec9B728714C8
+  address internal constant MERIT_INCENTIVE_SAFE = 0xAA870e4B82deaDa3727235f34183Ec9B728714C8;
+
+  // https://gnosisscan.io/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
+  address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
 }
