@@ -27,9 +27,7 @@
       "import": {
         "types": "./dist/AaveAddressBook.mts",
         "default": "./dist/AaveAddressBook.mjs"
-      },
-      "types": "./dist/AaveAddressBook.d.ts",
-      "default": "./dist/AaveAddressBook.js"
+      }
     },
     "./abis": {
       "require": {
@@ -39,9 +37,17 @@
       "import": {
         "types": "./dist/abis/index.mts",
         "default": "./dist/abis/index.mjs"
+      }
+    },
+    "./utils": {
+      "require": {
+        "types": "./dist/utils.d.ts",
+        "default": "./dist/utils.js"
       },
-      "types": "./dist/abis/index.d.ts",
-      "default": "./dist/abis/index.js"
+      "import": {
+        "types": "./dist/utils.mts",
+        "default": "./dist/utils.mjs"
+      }
     },
     "./tokenlist": {
       "require": {
@@ -51,9 +57,7 @@
       "import": {
         "types": "./dist/tokenlist.mts",
         "default": "./dist/tokenlist.mjs"
-      },
-      "types": "./dist/tokenlist.d.ts",
-      "default": "./dist/tokenlist.js"
+      }
     }
   },
   "sideEffects": false,
@@ -97,6 +101,9 @@
     "typescript": "^5.7.2",
     "viem": "^2.23.5",
     "vitest": "^3.1.2"
+  },
+  "peerDependencies": {
+    "viem": "^2.23.5"
   },
   "packageManager": "^npm@10.0.0",
   "overrides": {

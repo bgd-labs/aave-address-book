@@ -116,6 +116,7 @@ export function generateJsObject(object: any) {
   return JSON.stringify(
     object,
     function (key, value) {
+      console.log(key, value);
       if (!key) return value;
       return typeof value === 'object' ? value.value : value;
     },
