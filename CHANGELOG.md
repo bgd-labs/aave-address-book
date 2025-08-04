@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.26.0](https://github.com/bgd-labs/aave-address-book/compare/v4.25.3...v4.26.0) (2025-08-04)
+
+
+### Features
+
+* add isKnownAddress utility ([#1022](https://github.com/bgd-labs/aave-address-book/issues/1022)) ([9e9921a](https://github.com/bgd-labs/aave-address-book/commit/9e9921a91e950d98060d09dabf1d72b70eb5280d))
+
+
+### Bug Fixes
+
+* add APE, ALC, Frontier, Merit, Ahab, and AFC SAFEs to Address Book  ([#1009](https://github.com/bgd-labs/aave-address-book/issues/1009)) ([bfbc2cc](https://github.com/bgd-labs/aave-address-book/commit/bfbc2cc1896475a9a2a76ad410ecaa60535e05db))
+
 ## [4.25.3](https://github.com/bgd-labs/aave-address-book/compare/v4.25.2...v4.25.3) (2025-07-30)
 
 
