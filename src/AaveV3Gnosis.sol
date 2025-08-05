@@ -52,8 +52,8 @@ library AaveV3Gnosis {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xADb599b1858E7738aE760D4dCf8C11Cc569AF3fB;
 
-  // https://gnosisscan.io/address/0x7494b3714Cd163ae760B1Bb946D61D8BD607706E
-  address internal constant CONFIG_ENGINE = 0x7494b3714Cd163ae760B1Bb946D61D8BD607706E;
+  // https://gnosisscan.io/address/0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3
+  address internal constant CONFIG_ENGINE = 0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3;
 
   // https://gnosisscan.io/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

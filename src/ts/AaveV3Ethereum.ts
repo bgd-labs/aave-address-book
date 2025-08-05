@@ -50,8 +50,8 @@ export const DEBT_SWAP_ADAPTER = '0xd7852E139a7097E119623de0751AE53a61efb442';
 // https://etherscan.io/address/0x21714092D90c7265F52fdfDae068EC11a23C6248
 export const DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 = '0x21714092D90c7265F52fdfDae068EC11a23C6248';
 
-// https://etherscan.io/address/0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4
-export const CONFIG_ENGINE = '0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4';
+// https://etherscan.io/address/0xb92f84c29060088e92cC99624830963a54643aC2
+export const CONFIG_ENGINE = '0xb92f84c29060088e92cC99624830963a54643aC2';
 
 // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0xbaA999AC55EAce41CcAE355c77809e68Bb345170';
@@ -788,7 +788,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10260,
+    liquidationBonus: 10230,
   },
   '14': {
     label: 'PT-eUSDe USDe August 2025',
@@ -801,7 +801,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10160,
+    liquidationBonus: 10130,
   },
   '15': {
     label: 'eUSDe_Stablecoin',

@@ -55,8 +55,8 @@ library AaveV3Soneium {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x57C9e3BeBfb67D1AF9D06a3277A591b6CaD8F66a;
 
-  // https://soneium.blockscout.com/address/0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311
-  address internal constant CONFIG_ENGINE = 0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311;
+  // https://soneium.blockscout.com/address/0x4488Aea51d2BCdDe510d22f044568f7B703cCf02
+  address internal constant CONFIG_ENGINE = 0x4488Aea51d2BCdDe510d22f044568f7B703cCf02;
 
   // https://soneium.blockscout.com/address/0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc
   address internal constant RISK_STEWARD = 0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc;

@@ -52,8 +52,8 @@ library AaveV3Linea {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x8581fd85b93cBDB66e9860C1bC280DC52284f9F4;
 
-  // https://lineascan.build/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef
-  address internal constant CONFIG_ENGINE = 0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef;
+  // https://lineascan.build/address/0x1ADD95d62E2B49AF12dDf112B8D4D3B912421087
+  address internal constant CONFIG_ENGINE = 0x1ADD95d62E2B49AF12dDf112B8D4D3B912421087;
 
   // https://lineascan.build/address/0xBDF2e1A49894A306Eb76b89504928b3f509A3a16
   address internal constant RISK_STEWARD = 0xBDF2e1A49894A306Eb76b89504928b3f509A3a16;

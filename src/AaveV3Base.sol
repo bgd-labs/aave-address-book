@@ -88,8 +88,8 @@ library AaveV3Base {
   address internal constant LEGACY_STATIC_A_TOKEN_ORACLE =
     0xe63eAf6DAb1045689BD3a332bC596FfcF54A5C88;
 
-  // https://basescan.org/address/0x655252250f4A453854040A49E8280951A76f3033
-  address internal constant CONFIG_ENGINE = 0x655252250f4A453854040A49E8280951A76f3033;
+  // https://basescan.org/address/0x4af0Ecf7927fBecdFa748990561f054Dc3fACa71
+  address internal constant CONFIG_ENGINE = 0x4af0Ecf7927fBecdFa748990561f054Dc3fACa71;
 
   // https://basescan.org/address/0x39e97c588B2907Fb67F44fea256Ae3BA064207C5
   address internal constant L2_ENCODER = 0x39e97c588B2907Fb67F44fea256Ae3BA064207C5;

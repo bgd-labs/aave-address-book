@@ -3518,6 +3518,15 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0xb92f84c29060088e92cC99624830963a54643aC2": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x88d42CFe16d097e149881216EE90fD1729e4322d": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x88943ef3AA9185d8704c801DF20B2cc0AbD1De81": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "10": {
@@ -4552,6 +4561,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x48B5bD96e36a9c0D0eA3f07d3b3dA34bBD514fB3": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "56": {
@@ -5406,6 +5418,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x6195a956dC026A949dE552F04a5803d3aa1fC408": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "100": {
@@ -5930,6 +5945,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "137": {
@@ -7315,6 +7333,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0xb5970A521073ADE4836dD4A24854Eb387a67c5C8": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "146": {
@@ -7638,6 +7659,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x413830C44A88ab6c4B99FeB1975b8E6795E9deE8": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "324": {
@@ -7967,6 +7991,9 @@
     },
     "0x0095325bb5C5da5b19C92bb6919f80110dcbaEFF": {
       "name": "SupplyLogic"
+    },
+    "0x86bF538eBc264f09ce76f4610F80CC78FEE7CA3B": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "1088": {
@@ -8323,6 +8350,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x48B5bD96e36a9c0D0eA3f07d3b3dA34bBD514fB3": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "1101": {
@@ -8654,6 +8684,9 @@
     },
     "0x4fDB5d360f946CFD25b14F346f748204c0C6a2F4": {
       "name": "FlashLoanLogic"
+    },
+    "0x4488Aea51d2BCdDe510d22f044568f7B703cCf02": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "5000": {
@@ -9720,6 +9753,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x4af0Ecf7927fBecdFa748990561f054Dc3fACa71": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "42161": {
@@ -11048,6 +11084,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0xcCeb5996cF9976168fdbE6fF88B1d89e1180A0EA": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "42220": {
@@ -11341,6 +11380,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x6BC59F65bdA1bE5c2936cAA36081A652c01C7BFb": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "43113": {
@@ -12482,6 +12524,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0x9BAF5d9Bd6FBa6bEAB5e482285eD05799BbA1ECB": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "59144": {
@@ -12814,6 +12859,9 @@
     },
     "0x8bd15bbd01e987D4b851818b6586AA6E16E65c62": {
       "name": "SupplyLogic"
+    },
+    "0x1ADD95d62E2B49AF12dDf112B8D4D3B912421087": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "84532": {
@@ -13438,6 +13486,9 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0xB076204f0E181A224e6eC1eA61Cb5976CBCfFF05": {
+      "name": "AaveV3ConfigEngine"
     }
   }
 }
