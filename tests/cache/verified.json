@@ -5930,6 +5930,18 @@
     },
     "0x1eF34B91afC368174F579067D1DB94325cDC7946": {
       "name": "SupplyLogic"
+    },
+    "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12": {
+      "name": "GhoOracle"
+    },
+    "0x3FdCeC11B4f15C79d483Aedc56F37D302837Cf4d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2766EEFE0311Bf7421cC30155b03d210BCE30dF8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "137": {
