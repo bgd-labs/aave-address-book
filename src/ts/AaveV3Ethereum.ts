@@ -788,7 +788,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10260,
+    liquidationBonus: 10230,
   },
   '14': {
     label: 'PT-eUSDe USDe August 2025',
@@ -801,7 +801,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10160,
+    liquidationBonus: 10130,
   },
   '15': {
     label: 'eUSDe_Stablecoin',
