@@ -5569,6 +5569,28 @@
       }
     },
     {
+      "chainId": 100,
+      "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 100,
+      "address": "0x3FdCeC11B4f15C79d483Aedc56F37D302837Cf4d",
+      "name": "Aave Gnosis GHO",
+      "decimals": 18,
+      "symbol": "aGnoGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73"
+      }
+    },
+    {
       "chainId": 56,
       "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       "name": "PancakeSwap Token",
@@ -8426,6 +8448,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 125 },
-  "timestamp": "2025-07-30T18:13:06.469Z"
+  "version": { "major": 3, "minor": 0, "patch": 126 },
+  "timestamp": "2025-08-06T00:17:12.906Z"
 }
