@@ -30,6 +30,7 @@ export async function check(addresses: Record<string, any>) {
     engineContract.read.DEFAULT_INTEREST_RATE_STRATEGY(),
     engineContract.read.COLLECTOR(),
   ]);
+  // uncomment when aToken, vToken has been updated to v3.5 version
   expect(ATOKEN_IMPL).toBe(addresses.DEFAULT_A_TOKEN_IMPL);
   expect(VTOKEN_IMPL).toBe(addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL);
   expect(POOL).toBe(addresses.POOL);
