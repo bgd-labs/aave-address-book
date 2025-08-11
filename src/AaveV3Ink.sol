@@ -42,6 +42,16 @@ library AaveV3Ink {
   // https://explorer.inkonchain.com/address/0x9CbcEf2c44cF28ff2aa36Bff7BaB315398209A79
   address internal constant EMISSION_MANAGER = 0x9CbcEf2c44cF28ff2aa36Bff7BaB315398209A79;
 
+  // https://explorer.inkonchain.com/address/0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9
+  ICollector internal constant COLLECTOR = ICollector(0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9);
+
+  // https://explorer.inkonchain.com/address/0xd8247C7926841337E8adf9fD9E87026992C45062
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xd8247C7926841337E8adf9fD9E87026992C45062;
+
+  // https://explorer.inkonchain.com/address/0x294daB91f3539f5a74Ed995a59235eE62A14A345
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+    0x294daB91f3539f5a74Ed995a59235eE62A14A345;
+
   // https://explorer.inkonchain.com/address/0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c
   address internal constant L2_ENCODER = 0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c;
 
