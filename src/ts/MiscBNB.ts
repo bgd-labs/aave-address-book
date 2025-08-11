@@ -20,4 +20,10 @@ export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
 // https://bscscan.com/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
 export const MASIV_SAFE = '0xdef1FA4CEfe67365ba046a7C630D6B885298E210';
 
+// https://bscscan.com/address/0xAA43203167317DeeF8288095C44b84a686918d2E
+export const APE_SAFE = '0xAA43203167317DeeF8288095C44b84a686918d2E';
+
+// https://bscscan.com/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
+export const APE_VOTING_SAFE = '0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6';
+
 export const CHAIN_ID = 56;

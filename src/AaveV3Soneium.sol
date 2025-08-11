@@ -32,8 +32,8 @@ library AaveV3Soneium {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x4a24b44b252db149B5B9BCec4dc3c2752807d626);
 
-  // https://soneium.blockscout.com/address/0x313B8C648Cca50704B37CCF705Dc77F7bCC5870d
-  address internal constant POOL_IMPL = 0x313B8C648Cca50704B37CCF705Dc77F7bCC5870d;
+  // https://soneium.blockscout.com/address/0x9be798ECa59aF018d8BfDA0C310DBe4Ddd5f2488
+  address internal constant POOL_IMPL = 0x9be798ECa59aF018d8BfDA0C310DBe4Ddd5f2488;
 
   // https://soneium.blockscout.com/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
   address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
@@ -48,15 +48,15 @@ library AaveV3Soneium {
   // https://soneium.blockscout.com/address/0xc7B3cc5F5988613b0D620623C514EDFB32539720
   ICollector internal constant COLLECTOR = ICollector(0xc7B3cc5F5988613b0D620623C514EDFB32539720);
 
-  // https://soneium.blockscout.com/address/0xD727547F49612f4590B43Bf63F0259ef38a7a488
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0xD727547F49612f4590B43Bf63F0259ef38a7a488;
+  // https://soneium.blockscout.com/address/0xE0a3e914836Ac28D5c42d4a278A06047c0A10c2A
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xE0a3e914836Ac28D5c42d4a278A06047c0A10c2A;
 
-  // https://soneium.blockscout.com/address/0x57C9e3BeBfb67D1AF9D06a3277A591b6CaD8F66a
+  // https://soneium.blockscout.com/address/0xB268b1db5CDDD1D995c7f4ed1aBA3B4Dcf05dA5C
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0x57C9e3BeBfb67D1AF9D06a3277A591b6CaD8F66a;
+    0xB268b1db5CDDD1D995c7f4ed1aBA3B4Dcf05dA5C;
 
-  // https://soneium.blockscout.com/address/0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311
-  address internal constant CONFIG_ENGINE = 0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311;
+  // https://soneium.blockscout.com/address/0x4488Aea51d2BCdDe510d22f044568f7B703cCf02
+  address internal constant CONFIG_ENGINE = 0x4488Aea51d2BCdDe510d22f044568f7B703cCf02;
 
   // https://soneium.blockscout.com/address/0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc
   address internal constant RISK_STEWARD = 0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc;
@@ -142,21 +142,21 @@ library AaveV3SoneiumEModes {
   uint8 internal constant NONE = 0;
 }
 library AaveV3SoneiumExternalLibraries {
-  // https://soneium.blockscout.com/address/0x4fDB5d360f946CFD25b14F346f748204c0C6a2F4
-  address internal constant FLASHLOAN_LOGIC = 0x4fDB5d360f946CFD25b14F346f748204c0C6a2F4;
+  // https://soneium.blockscout.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
+  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
 
-  // https://soneium.blockscout.com/address/0x5047AD5e603Ec4a2AB58aaE2321C07D8f4De6a8a
-  address internal constant BORROW_LOGIC = 0x5047AD5e603Ec4a2AB58aaE2321C07D8f4De6a8a;
+  // https://soneium.blockscout.com/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
+  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
 
-  // https://soneium.blockscout.com/address/0x7fcE69A2bA3e78EeB36798cde2c94C70f3A043af
-  address internal constant E_MODE_LOGIC = 0x7fcE69A2bA3e78EeB36798cde2c94C70f3A043af;
+  // https://soneium.blockscout.com/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
+  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
-  // https://soneium.blockscout.com/address/0x5934b283f7120500253f277CCcF4521528aE34D6
-  address internal constant LIQUIDATION_LOGIC = 0x5934b283f7120500253f277CCcF4521528aE34D6;
+  // https://soneium.blockscout.com/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
+  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
 
-  // https://soneium.blockscout.com/address/0x564c42578A1b270EaE16c25Da39d901245881d1F
-  address internal constant POOL_LOGIC = 0x564c42578A1b270EaE16c25Da39d901245881d1F;
+  // https://soneium.blockscout.com/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
+  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
 
-  // https://soneium.blockscout.com/address/0x1eF34B91afC368174F579067D1DB94325cDC7946
-  address internal constant SUPPLY_LOGIC = 0x1eF34B91afC368174F579067D1DB94325cDC7946;
+  // https://soneium.blockscout.com/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
+  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
 }

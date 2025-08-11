@@ -20,8 +20,8 @@ export const ACL_MANAGER = '0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0';
 // IPoolDataProvider https://etherscan.io/address/0x0a16f2FCC0D44FaE41cc54e079281D84A363bECD
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0x0a16f2FCC0D44FaE41cc54e079281D84A363bECD';
 
-// https://etherscan.io/address/0x947f0054fAEd3481FF4e76CA35f12fbE36cc665B
-export const POOL_IMPL = '0x947f0054fAEd3481FF4e76CA35f12fbE36cc665B';
+// https://etherscan.io/address/0x97287a4F35E583D924f78AD88DB8AFcE1379189A
+export const POOL_IMPL = '0x97287a4F35E583D924f78AD88DB8AFcE1379189A';
 
 // https://etherscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
 export const POOL_CONFIGURATOR_IMPL = '0x5793FE4de34532F162B4e207aF872729880ec2b6';
@@ -35,11 +35,11 @@ export const EMISSION_MANAGER = '0x223d844fc4B006D67c0cDbd39371A9F73f69d974';
 // ICollector https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
 export const COLLECTOR = '0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c';
 
-// https://etherscan.io/address/0x97f5B96c7DaC8547251330b63760951A4Fab448D
-export const DEFAULT_A_TOKEN_IMPL = '0x97f5B96c7DaC8547251330b63760951A4Fab448D';
+// https://etherscan.io/address/0xB76cf0f1d2e1a606c14044607c8c44878AAE7186
+export const DEFAULT_A_TOKEN_IMPL = '0xB76cf0f1d2e1a606c14044607c8c44878AAE7186';
 
-// https://etherscan.io/address/0xB58ED8ec66e43dE3fecD27e351485E7EFE006f38
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xB58ED8ec66e43dE3fecD27e351485E7EFE006f38';
+// https://etherscan.io/address/0x2b31CaA35900f4c8fe6151cCAF8d0Ea4A89743A1
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0x2b31CaA35900f4c8fe6151cCAF8d0Ea4A89743A1';
 
 // https://etherscan.io/address/0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E
 export const RISK_STEWARD = '0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E';
@@ -50,8 +50,8 @@ export const DEBT_SWAP_ADAPTER = '0xd7852E139a7097E119623de0751AE53a61efb442';
 // https://etherscan.io/address/0x21714092D90c7265F52fdfDae068EC11a23C6248
 export const DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 = '0x21714092D90c7265F52fdfDae068EC11a23C6248';
 
-// https://etherscan.io/address/0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4
-export const CONFIG_ENGINE = '0x7f616d322e1d47A83Ba13d97A30Bd1ADB06253A4';
+// https://etherscan.io/address/0xb92f84c29060088e92cC99624830963a54643aC2
+export const CONFIG_ENGINE = '0xb92f84c29060088e92cC99624830963a54643aC2';
 
 // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0xbaA999AC55EAce41CcAE355c77809e68Bb345170';
@@ -596,6 +596,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0x7585693910f39df4959912B27D09EAEef06C1a93',
   },
+  PT_USDe_25SEP2025: {
+    decimals: 18,
+    id: 49,
+    UNDERLYING: '0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a',
+    A_TOKEN: '0x38A5357Ce55c81add62aBc84Fb32981e2626ADEf',
+    V_TOKEN: '0x0D8486E1CAbf3C9407B3DdA0cfc4d9C3101fB683',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0x8B17C02d22EE7D6B8D6829ceB710A458de41E84a',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -618,8 +627,11 @@ export const E_MODES = {
   },
   '2': {
     label: 'sUSDe Stablecoins',
-    collateralBitmap: '4294967296',
-    collateralAssets: ['0x9D39A5DE30e57443BfF2A8307A4256c8797A3497'],
+    collateralBitmap: '5368709120',
+    collateralAssets: [
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+    ],
     borrowableBitmap: '34359738632',
     borrowableAssets: [
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
@@ -698,7 +710,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10310,
+    liquidationBonus: 10300,
   },
   '9': {
     label: 'PT-eUSDe Stablecoins May 2025',
@@ -732,7 +744,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10240,
+    liquidationBonus: 10210,
   },
   '11': {
     label: 'USDe Stablecoin',
@@ -759,7 +771,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10120,
+    liquidationBonus: 10110,
   },
   '13': {
     label: 'PT-eUSDe Stablecoins August 2025',
@@ -776,7 +788,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10290,
+    liquidationBonus: 10230,
   },
   '14': {
     label: 'PT-eUSDe USDe August 2025',
@@ -789,7 +801,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10190,
+    liquidationBonus: 10130,
   },
   '15': {
     label: 'eUSDe_Stablecoin',
@@ -817,18 +829,23 @@ export const E_MODES = {
   },
   '17': {
     label: 'PT-sUSDe Stablecoins September 2025',
-    collateralBitmap: '281474976710656',
-    collateralAssets: ['0x9F56094C450763769BA0EA9Fe2876070c0fD5F77'],
-    borrowableBitmap: '35433480456',
+    collateralBitmap: '283678294933504',
+    collateralAssets: [
+      '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+      '0x3b3fB9C57858EF816833dC91565EFcd85D96f634',
+      '0x9F56094C450763769BA0EA9Fe2876070c0fD5F77',
+    ],
+    borrowableBitmap: '4433479991560',
     borrowableAssets: [
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
       '0xdAC17F958D2ee523a2206206994597C13D831ec7',
       '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+      '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8830,
-    liquidationThreshold: 9030,
-    liquidationBonus: 10500,
+    ltv: 8960,
+    liquidationThreshold: 9160,
+    liquidationBonus: 10440,
   },
   '18': {
     label: 'PT-sUSDe USDe September 2025',
@@ -836,9 +853,51 @@ export const E_MODES = {
     collateralAssets: ['0x9F56094C450763769BA0EA9Fe2876070c0fD5F77'],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9020,
-    liquidationThreshold: 9220,
-    liquidationBonus: 10300,
+    ltv: 9150,
+    liquidationThreshold: 9350,
+    liquidationBonus: 10260,
+  },
+  '19': {
+    label: 'PT-USDe Stablecoins September 2025',
+    collateralBitmap: '589339306229760',
+    collateralAssets: [
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0x917459337CaAC939D41d7493B3999f571D20D667',
+      '0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617',
+      '0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a',
+    ],
+    borrowableBitmap: '35433480456',
+    borrowableAssets: [
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
+    ],
+    ltv: 9100,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10350,
+  },
+  '20': {
+    label: 'PT-USDe USDe September 2025',
+    collateralBitmap: '589339306229760',
+    collateralAssets: [
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0x917459337CaAC939D41d7493B3999f571D20D667',
+      '0x14Bdc3A3AE09f5518b923b69489CBcAfB238e617',
+      '0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a',
+    ],
+    borrowableBitmap: '1073741824',
+    borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
+    ltv: 9170,
+    liquidationThreshold: 9370,
+    liquidationBonus: 10250,
   },
 } as const;
-export const EXTERNAL_LIBRARIES = {} as const;
+export const EXTERNAL_LIBRARIES = {
+  FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
+  BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
+  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
+  LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
+  POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
+  SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',
+} as const;

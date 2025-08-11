@@ -29,8 +29,8 @@ library AaveV3ZkSync {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x9057ac7b2D35606F8AD5aE2FCBafcD94E58D9927);
 
-  // https://era.zksync.network/address/0x6A8ea36A192063eD7744bB4b7A137f0B3c2455bC
-  address internal constant POOL_IMPL = 0x6A8ea36A192063eD7744bB4b7A137f0B3c2455bC;
+  // https://era.zksync.network/address/0x9ED0e05A006157F84714f68d01aC1AdFe1Bf37a4
+  address internal constant POOL_IMPL = 0x9ED0e05A006157F84714f68d01aC1AdFe1Bf37a4;
 
   // https://era.zksync.network/address/0x1bEdFBB5c7095D750EeE37F3D1b6939458aF516d
   address internal constant POOL_CONFIGURATOR_IMPL = 0x1bEdFBB5c7095D750EeE37F3D1b6939458aF516d;
@@ -45,15 +45,15 @@ library AaveV3ZkSync {
   // https://era.zksync.network/address/0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b
   ICollector internal constant COLLECTOR = ICollector(0xd69Cbda644c6be817AaFb5Fd9174f50C33803B6b);
 
-  // https://era.zksync.network/address/0x1d336bFD38be937506a8c45AD0f60bda55943846
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0x1d336bFD38be937506a8c45AD0f60bda55943846;
+  // https://era.zksync.network/address/0x1C6E9cd0d41DA47d90d9118560c04468A1B2DEE2
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x1C6E9cd0d41DA47d90d9118560c04468A1B2DEE2;
 
-  // https://era.zksync.network/address/0xFF11Be86AA9a662285FD9A66526351A89FBECC55
+  // https://era.zksync.network/address/0x96F33C08b4c48754C85868E5c237d21bf95999Ff
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0xFF11Be86AA9a662285FD9A66526351A89FBECC55;
+    0x96F33C08b4c48754C85868E5c237d21bf95999Ff;
 
-  // https://era.zksync.network/address/0xc4C229360C7c59a3bbc7c4424Cd1E4A65db3C21e
-  address internal constant CONFIG_ENGINE = 0xc4C229360C7c59a3bbc7c4424Cd1E4A65db3C21e;
+  // https://era.zksync.network/address/0x86bF538eBc264f09ce76f4610F80CC78FEE7CA3B
+  address internal constant CONFIG_ENGINE = 0x86bF538eBc264f09ce76f4610F80CC78FEE7CA3B;
 
   // https://era.zksync.network/address/0x0753E3637ddC6efc40759D9c347251046644F25F
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -234,21 +234,21 @@ library AaveV3ZkSyncEModes {
   uint8 internal constant WRSETH_WSTETH = 3;
 }
 library AaveV3ZkSyncExternalLibraries {
-  // https://era.zksync.network/address/0xF8b48c00Ff12dD97F961EFE5240eBe956a3D8687
-  address internal constant FLASHLOAN_LOGIC = 0xF8b48c00Ff12dD97F961EFE5240eBe956a3D8687;
+  // https://era.zksync.network/address/0x9d9568079b93045C82822Bf70A91C151BD65a02E
+  address internal constant FLASHLOAN_LOGIC = 0x9d9568079b93045C82822Bf70A91C151BD65a02E;
 
-  // https://era.zksync.network/address/0x3db1DC584758DabA133a59f776503b6c5D2dD1Db
-  address internal constant BORROW_LOGIC = 0x3db1DC584758DabA133a59f776503b6c5D2dD1Db;
+  // https://era.zksync.network/address/0x352007644a7BdE6834309e9881aC59427799a4a5
+  address internal constant BORROW_LOGIC = 0x352007644a7BdE6834309e9881aC59427799a4a5;
 
-  // https://era.zksync.network/address/0xcdAe69765333cAe780e4bf6DcB7dB886Fae0B5A1
-  address internal constant E_MODE_LOGIC = 0xcdAe69765333cAe780e4bf6DcB7dB886Fae0B5A1;
+  // https://era.zksync.network/address/0xE74f2dDFCb29d4D7733ab7aB9Bb809aEB11ABb27
+  address internal constant E_MODE_LOGIC = 0xE74f2dDFCb29d4D7733ab7aB9Bb809aEB11ABb27;
 
-  // https://era.zksync.network/address/0x78ca5C313c8a3265A8bF69a645564181970BE9c1
-  address internal constant LIQUIDATION_LOGIC = 0x78ca5C313c8a3265A8bF69a645564181970BE9c1;
+  // https://era.zksync.network/address/0x592B64d9246278D734F3E6B872452663ce5FE248
+  address internal constant LIQUIDATION_LOGIC = 0x592B64d9246278D734F3E6B872452663ce5FE248;
 
-  // https://era.zksync.network/address/0x4511B06e1524929A4A90c5dD2acA59C8dF728e8a
-  address internal constant POOL_LOGIC = 0x4511B06e1524929A4A90c5dD2acA59C8dF728e8a;
+  // https://era.zksync.network/address/0xaE13c560F109649c4211801cB64aa1B794b0A5d3
+  address internal constant POOL_LOGIC = 0xaE13c560F109649c4211801cB64aa1B794b0A5d3;
 
-  // https://era.zksync.network/address/0x0095325bb5C5da5b19C92bb6919f80110dcbaEFF
-  address internal constant SUPPLY_LOGIC = 0x0095325bb5C5da5b19C92bb6919f80110dcbaEFF;
+  // https://era.zksync.network/address/0x98dAaC81A8B784C5930B884E64e711fECdE0Ef51
+  address internal constant SUPPLY_LOGIC = 0x98dAaC81A8B784C5930B884E64e711fECdE0Ef51;
 }

@@ -90,7 +90,8 @@ async function main() {
   if (existsSync('./src/ts')) {
     const files = readdirSync('./src/ts');
     for (const file of files) {
-      if (file !== 'abis' && file !== 'AaveV3Harmony.ts') rmSync(`./src/ts/${file}`);
+      if (file !== 'abis' && file !== 'AaveV3Harmony.ts' && file !== 'utils.ts')
+        rmSync(`./src/ts/${file}`);
     }
   } else {
     mkdirSync('./src/ts');

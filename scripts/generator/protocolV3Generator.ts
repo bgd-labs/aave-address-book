@@ -48,7 +48,7 @@ function generateExternalLibraries(
       }),
       libraryName,
     ),
-    js: `export const EXTERNAL_LIBRARIES = ${generateJsObject({addresses: libraries})} as const;\n`,
+    js: `export const EXTERNAL_LIBRARIES = ${generateJsObject(libraries)} as const;\n`,
   };
 }
 

@@ -3249,6 +3249,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a",
+      "name": "PT Ethena USDe 25SEP2025",
+      "decimals": 18,
+      "symbol": "PT-USDe-25SEP2025",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x38A5357Ce55c81add62aBc84Fb32981e2626ADEf",
+      "name": "Aave Ethereum PT_USDe_25SEP2025",
+      "decimals": 18,
+      "symbol": "aEthPT_USDe_25SEP2025",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -5546,6 +5566,42 @@
         "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
         "underlying": "0x2a22f9c3b484c3629090FeED35F17Ff8F88f76F0",
         "underlyingAToken": "0xC0333cb85B59a788d8C7CAe5e1Fd6E229A3E5a65"
+      }
+    },
+    {
+      "chainId": 100,
+      "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 100,
+      "address": "0x3FdCeC11B4f15C79d483Aedc56F37D302837Cf4d",
+      "name": "Aave Gnosis GHO",
+      "decimals": 18,
+      "symbol": "aGnoGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73"
+      }
+    },
+    {
+      "chainId": 100,
+      "address": "0x58d9AcAC48A4077E4909181c48DEcD00E5ba5DE4",
+      "name": "Wrapped Aave Gnosis GHO",
+      "decimals": 18,
+      "symbol": "waGnoGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0xb50201558B00496A145fE76f7424749556E326D8",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+        "underlyingAToken": "0x3FdCeC11B4f15C79d483Aedc56F37D302837Cf4d"
       }
     },
     {
@@ -8406,6 +8462,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 124 },
-  "timestamp": "2025-07-16T12:09:31.436Z"
+  "version": { "major": 3, "minor": 0, "patch": 126 },
+  "timestamp": "2025-08-07T11:01:46.699Z"
 }
