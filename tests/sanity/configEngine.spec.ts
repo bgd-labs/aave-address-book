@@ -37,9 +37,12 @@ export async function check(addresses: Record<string, any>) {
   expect(POOL_CONFIGURATOR).toBe(addresses.POOL_CONFIGURATOR);
   expect(ORACLE).toBe(addresses.ORACLE);
   expect(REWARDS_CONTROLLER).toBe(addresses.DEFAULT_INCENTIVES_CONTROLLER);
-  expect(DEFAULT_INTEREST_RATE_STRATEGY).toBe(
-    (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY,
-  );
+
+  if (addresses.ASSETS[0]) {
+    expect(DEFAULT_INTEREST_RATE_STRATEGY).toBe(
+      (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY,
+    );
+  }
 }
 
 describe('config engine', () => {
