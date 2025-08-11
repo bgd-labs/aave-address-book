@@ -12856,6 +12856,33 @@
     },
     "0x2e8090716C5a25332cf963d454250B88bf04E6dC": {
       "name": "SafeProxy"
+    },
+    "0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd8247C7926841337E8adf9fD9E87026992C45062": {
+      "name": "ATokenInstance"
+    },
+    "0x294daB91f3539f5a74Ed995a59235eE62A14A345": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB": {
+      "name": "FlashLoanLogic"
+    },
+    "0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6": {
+      "name": "BorrowLogic"
+    },
+    "0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5": {
+      "name": "EModeLogic"
+    },
+    "0x36Ae486289bB807C3C79A1427b9c3D934294ef43": {
+      "name": "LiquidationLogic"
+    },
+    "0xE51B69e5722Bf547866A4d7Bc190c6e81b626806": {
+      "name": "PoolLogic"
+    },
+    "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
+      "name": "SupplyLogic"
     }
   },
   "59144": {
