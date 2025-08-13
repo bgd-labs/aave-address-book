@@ -8,7 +8,7 @@ The goal is for Solidity developers to have the most integrated environment poss
 
 You can find a searchable version of the address book on [https://search.onaave.com/](https://search.onaave.com/).
 
-_Please note: contract addresses of whitelabel instances which are not directly controlled by the Aave DAO are also included in this repository. For example, the [AaveV3InkWhitelabel](src/AaveV3InkWhitelabel.sol) which is controlled by the Ink team._
+_Please note: contract addresses of whitelabel instances which are not directly controlled by the Aave DAO are also included in this repository. A complete list of Whitelabel instances controlled by their respective teams can be found here_
 
 ## Usage with foundry
 
