@@ -6,6 +6,6 @@ library MiscInk {
   // https://explorer.inkonchain.com/address/0x5C2e738F6E27bCE0F7558051Bf90605dD6176900
   address internal constant TRANSPARENT_PROXY_FACTORY = 0x5C2e738F6E27bCE0F7558051Bf90605dD6176900;
 
-  // https://explorer.inkonchain.com/address/0x2e8090716C5a25332cf963d454250B88bf04E6dC
-  address internal constant PROTOCOL_GUARDIAN = 0x2e8090716C5a25332cf963d454250B88bf04E6dC;
+  // https://explorer.inkonchain.com/address/0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2
+  address internal constant PROTOCOL_GUARDIAN = 0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2;
 }

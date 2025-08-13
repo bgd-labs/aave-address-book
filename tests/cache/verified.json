@@ -12991,6 +12991,9 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2": {
+      "name": "SafeProxy"
     }
   },
   "59144": {
