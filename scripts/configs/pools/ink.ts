@@ -2,7 +2,7 @@ import {ChainId} from '@bgd-labs/toolbox';
 import {PoolConfig} from '../types';
 
 export const inkProtoV3: PoolConfig = {
-  name: 'Ink',
+  name: 'InkWhitelabel',
   chainId: ChainId.ink,
   POOL_ADDRESSES_PROVIDER: '0x4172E6aAEC070ACB31aaCE343A58c93E4C70f44D',
   additionalAddresses: {
