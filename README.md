@@ -8,8 +8,6 @@ The goal is for Solidity developers to have the most integrated environment poss
 
 You can find a searchable version of the address book on [https://search.onaave.com/](https://search.onaave.com/).
 
-_Please note: contract addresses of whitelabel instances which are not directly controlled by the Aave DAO are also included in this repository. A complete list of Whitelabel instances controlled by their respective teams can be found here_
-
 ## Usage with foundry
 
 With Foundry installed and being in a Git repository:
@@ -113,6 +111,7 @@ In any case you need to run `npm run generate:addresses` afterwards and commit t
 
 - In order to successfully check that contracts are verified, you must have in your local `.env` file an entry of `ETHERSCAN_API_KEY` with a mainnet API key on it.
 - Avalanche contracts must be verified on `snowscan.io`
+- Contract addresses of whitelabel instances which are not directly controlled by the Aave DAO are also included in this repository. A complete list of Whitelabel instances controlled by their respective teams can be found here: [AaveV3InkWhitelabel](src/AaveV3InkWhitelabel.sol)
 
 ### Troubleshooting
 
