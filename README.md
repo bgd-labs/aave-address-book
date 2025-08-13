@@ -8,6 +8,8 @@ The goal is for Solidity developers to have the most integrated environment poss
 
 You can find a searchable version of the address book on [https://search.onaave.com/](https://search.onaave.com/).
 
+_Please note: contract addresses of whitelabel instances which are not directly controlled by the Aave DAO are also included in this repository. For example, the [AaveV3InkWhitelabel](src/AaveV3InkWhitelabel.sol) which is controlled by the Ink team._
+
 ## Usage with foundry
 
 With Foundry installed and being in a Git repository:
@@ -129,4 +131,4 @@ To install the Aave Search extension for [Raycast](https://www.raycast.com/):
 4.	Search for `Aave Search` or navigate directly to the [extension page](https://www.raycast.com/smbdy/aave-search).
 5.	Click the Install button or press `⁠⌘ + ⁠↵` to install the extension
 
-Once installed, you can use the extension by typing `aave` in Raycast.  
+Once installed, you can use the extension by typing `aave` in Raycast.
