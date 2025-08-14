@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.27.0](https://github.com/bgd-labs/aave-address-book/compare/v4.26.2...v4.27.0) (2025-08-14)
+
+
+### Features
+
+* add ink v3.5 whitelabel contracts ([#1015](https://github.com/bgd-labs/aave-address-book/issues/1015)) ([2bd7aea](https://github.com/bgd-labs/aave-address-book/commit/2bd7aeacebffbf99b19259b9931422e3c44986f8))
+
 ## [4.26.2](https://github.com/bgd-labs/aave-address-book/compare/v4.26.1...v4.26.2) (2025-08-07)
 
 
