@@ -111,6 +111,7 @@ In any case you need to run `npm run generate:addresses` afterwards and commit t
 
 - In order to successfully check that contracts are verified, you must have in your local `.env` file an entry of `ETHERSCAN_API_KEY` with a mainnet API key on it.
 - Avalanche contracts must be verified on `snowscan.io`
+- Contract addresses of whitelabel instances which are not directly controlled by the Aave DAO are also included in this repository. A complete list of Whitelabel instances controlled by their respective teams can be found here: [AaveV3InkWhitelabel](src/AaveV3InkWhitelabel.sol)
 
 ### Troubleshooting
 
@@ -129,4 +130,4 @@ To install the Aave Search extension for [Raycast](https://www.raycast.com/):
 4.	Search for `Aave Search` or navigate directly to the [extension page](https://www.raycast.com/smbdy/aave-search).
 5.	Click the Install button or press `⁠⌘ + ⁠↵` to install the extension
 
-Once installed, you can use the extension by typing `aave` in Raycast.  
+Once installed, you can use the extension by typing `aave` in Raycast.
