@@ -13021,6 +13021,18 @@
     },
     "0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A": {
       "name": "Executor"
+    },
+    "0x990B75fD1a2345D905a385dBC6e17BEe0Cb2f505": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x44D73D7C4b2f98F426Bf8B5e87628d9eE38ef0Cf": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd0929668178973d5994D5654929aCB3d6c2b9949": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xa2bDB2335Faf1940c99654c592B1a80618d79Fc9": {
+      "name": "GranularGuardianAccessControl"
     }
   },
   "59144": {
