@@ -3269,6 +3269,48 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+      "name": "Treehouse ETH",
+      "decimals": 18,
+      "symbol": "tETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x481a2acf3A72ffDc602A9541896Ca1DB87f86cf7",
+      "name": "Aave Ethereum tETH",
+      "decimals": 18,
+      "symbol": "aEthtETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+      "name": "Renzo Restaked ETH",
+      "decimals": 18,
+      "symbol": "ezETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0x4E2a4d9B3DF7Aae73b418Bd39F3af9e148E3F479",
+      "name": "Aave Ethereum ezETH",
+      "decimals": 18,
+      "symbol": "aEthezETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aezeth.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -7756,15 +7798,6 @@
     },
     {
       "chainId": 1,
-      "address": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
-      "name": "Renzo Restaked ETH",
-      "decimals": 18,
-      "symbol": "ezETH",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
-    },
-    {
-      "chainId": 1,
       "address": "0x74e5664394998f13B07aF42446380ACef637969f",
       "name": "Aave Ethereum Lido ezETH",
       "decimals": 18,
@@ -7828,14 +7861,6 @@
         "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
         "underlying": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
       }
-    },
-    {
-      "chainId": 1,
-      "address": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
-      "name": "Treehouse ETH",
-      "decimals": 18,
-      "symbol": "tETH",
-      "tags": ["underlying"]
     },
     {
       "chainId": 1,
@@ -8462,6 +8487,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 126 },
-  "timestamp": "2025-08-07T11:01:46.699Z"
+  "version": { "major": 3, "minor": 0, "patch": 127 },
+  "timestamp": "2025-08-19T00:15:51.383Z"
 }

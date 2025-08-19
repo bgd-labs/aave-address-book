@@ -361,8 +361,8 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0xa2525b3f058846075506903d792d58C5a0D834c9
   address internal constant LBTC_V_TOKEN = 0xa2525b3f058846075506903d792d58C5a0D834c9;
 
-  // https://basescan.org/address/0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F
-  address internal constant LBTC_ORACLE = 0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F;
+  // https://basescan.org/address/0xA04669FE5cba4Bb21f265B562D23e562E45A1C67
+  address internal constant LBTC_ORACLE = 0xA04669FE5cba4Bb21f265B562D23e562E45A1C67;
 
   // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
   address internal constant LBTC_INTEREST_RATE_STRATEGY =
