@@ -83,7 +83,7 @@ import {umbrellaMainnetConfig} from './configs/umbrella/ethereum';
 import {umbrellaBaseSepoliaConfig} from './configs/umbrella/base';
 import {generateChainlink} from './generator/chainlink';
 import {governanceConfigSoneium} from './configs/governance/soneium';
-import {governanceConfigInk} from './configs/governance/ink';
+import {governanceConfigInk, governanceConfigInkWhiteLabel} from './configs/governance/ink';
 
 async function main() {
   // cleanup ts artifacts
@@ -119,6 +119,7 @@ async function main() {
       governanceConfigSonic,
       governanceConfigSoneium,
       governanceConfigInk,
+      governanceConfigInkWhiteLabel,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();

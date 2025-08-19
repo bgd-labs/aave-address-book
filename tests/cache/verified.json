@@ -3554,6 +3554,24 @@
     },
     "0xaa7A1910BA79B6A2E385ebA26185aA2dCB9B8eAd": {
       "name": "GnosisSafeProxy"
+    },
+    "0xf8c04B50499872A5B5137219DEc0F791f7f620D0": {
+      "name": "LBTCPriceCapAdapter"
+    },
+    "0x03bB418e89B75407585f8198178f253DA3216218": {
+      "name": "EBTCPriceCapAdapter"
+    },
+    "0x481a2acf3A72ffDc602A9541896Ca1DB87f86cf7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7EC9Afe70f8FD603282eBAcbc9058A83623E2899": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4E2a4d9B3DF7Aae73b418Bd39F3af9e148E3F479": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x730318dB7b830d324fC3fEDDB1d212Ec64bD3141": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "10": {
@@ -10041,6 +10059,9 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0xA04669FE5cba4Bb21f265B562D23e562E45A1C67": {
+      "name": "LBTCPriceCapAdapter"
     }
   },
   "42161": {
@@ -12994,6 +13015,12 @@
     },
     "0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2": {
       "name": "SafeProxy"
+    },
+    "0x1bBcC6F0BB563067Ca45450023a13E34fa963Fa9": {
+      "name": "SafeProxy"
+    },
+    "0x47aAdaAE1F05C978E6aBb7568d11B7F6e0FC4d6A": {
+      "name": "Executor"
     }
   },
   "59144": {
