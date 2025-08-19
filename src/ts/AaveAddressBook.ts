@@ -72,6 +72,7 @@ export * as MiscLinea from './MiscLinea';
 export * as MiscMantle from './MiscMantle';
 export * as MiscSonic from './MiscSonic';
 export * as MiscSoneium from './MiscSoneium';
+export * as MiscInk from './MiscInk';
 export * as MiscInkWhitelabel from './MiscInkWhitelabel';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
