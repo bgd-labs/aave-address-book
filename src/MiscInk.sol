@@ -5,7 +5,4 @@ pragma solidity >=0.6.0;
 library MiscInk {
   // https://explorer.inkonchain.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
-
-  // https://explorer.inkonchain.com/address/0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2
-  address internal constant PROTOCOL_GUARDIAN = 0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2;
 }

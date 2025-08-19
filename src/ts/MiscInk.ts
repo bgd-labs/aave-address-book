@@ -2,7 +2,4 @@
 // https://explorer.inkonchain.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
 export const TRANSPARENT_PROXY_FACTORY = '0xEB0682d148e874553008730f0686ea89db7DA412';
 
-// https://explorer.inkonchain.com/address/0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2
-export const PROTOCOL_GUARDIAN = '0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2';
-
 export const CHAIN_ID = 57073;
