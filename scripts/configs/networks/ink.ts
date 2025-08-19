@@ -1,5 +1,5 @@
-import {ChainId} from '@bgd-labs/toolbox';
-import {NetworkAddresses} from '../types';
+import { ChainId } from '@bgd-labs/toolbox';
+import { NetworkAddresses } from '../types';
 
 export const inkWhiteLabelAddresses: NetworkAddresses = {
   name: 'InkWhitelabel',
@@ -15,6 +15,5 @@ export const inkAddresses: NetworkAddresses = {
   chainId: ChainId.ink,
   addresses: {
     TRANSPARENT_PROXY_FACTORY: '0xEB0682d148e874553008730f0686ea89db7DA412',
-    PROTOCOL_GUARDIAN: '0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2'
   },
 };
