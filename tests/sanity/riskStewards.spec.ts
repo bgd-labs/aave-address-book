@@ -1,10 +1,9 @@
-import {describe, it} from 'vitest';
+import { describe, it } from 'vitest';
 import * as addressBook from '../../src/ts/AaveAddressBook';
-import {getContract} from 'viem';
-import {getClient} from '../../scripts/clients';
-import {getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel} from '../utils';
-import {IRiskSteward_ABI} from '../../src/ts/abis/IRiskSteward';
-import { IPoolAddressesProvider_ABI } from '../../src/ts/abis/IPoolAddressesProvider';
+import { getContract } from 'viem';
+import { getClient } from '../../scripts/clients';
+import { getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel } from '../utils';
+import { IRiskSteward_ABI } from '../../src/ts/abis/IRiskSteward';
 
 export async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
@@ -22,13 +21,8 @@ export async function check(addresses: Record<string, any>) {
     //   throw new Error(`SANITY_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
     // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
     //   throw new Error(`SANITY_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
-    const poolAddressProvider = getContract({
-      abi: [...IPoolAddressesProvider_ABI] as const,
-      address: addresses.POOL_ADDRESSES_PROVIDER,
-      client,
-    });
-    const marketId = await poolAddressProvider.read.getMarketId();
-    const isWhiteLabel = isPoolWhiteLabel(marketId);
+
+    const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
     const governance = isWhiteLabel ? getWhiteLabelGovernance(addresses.CHAIN_ID) : getGovernance(addresses.CHAIN_ID);
     if (!governance) {
       console.log(

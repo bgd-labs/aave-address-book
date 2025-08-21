@@ -3,8 +3,6 @@ import * as addressBook from '../../src/ts/AaveAddressBook';
 import {getContract} from 'viem';
 import {getClient} from '../../scripts/clients';
 import {getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel} from '../utils';
-import {IRiskSteward_ABI} from '../../src/ts/abis/IRiskSteward';
-import { IPoolAddressesProvider_ABI } from '../../src/ts/abis/IPoolAddressesProvider';
 
 export async function checkGetters(address, addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
@@ -57,13 +55,7 @@ export async function checkGetters(address, addresses: Record<string, any>) {
   expect(POOL).toEqual(addresses.POOL);
   expect(ORACLE).toEqual(addresses.ORACLE);
 
-  const poolAddressProvider = getContract({
-    abi: [...IPoolAddressesProvider_ABI] as const,
-    address: addresses.POOL_ADDRESSES_PROVIDER,
-    client,
-  });
-  const marketId = await poolAddressProvider.read.getMarketId();
-  const isWhiteLabel = isPoolWhiteLabel(marketId);
+  const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
   const governance = isWhiteLabel ? getWhiteLabelGovernance(addresses.CHAIN_ID) : getGovernance(addresses.CHAIN_ID);
   if (!governance) {
     console.log(`SANITY_PSP: Skipped due to missing governance on ${client.chain?.name}`);

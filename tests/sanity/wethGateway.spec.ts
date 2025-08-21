@@ -5,7 +5,6 @@ import { getClient } from '../../scripts/clients';
 import { IOwnable_ABI } from '../../src/ts/abis/IOwnable';
 import { IWrappedTokenGatewayV3_ABI } from '../../src/ts/abis/IWrappedTokenGatewayV3';
 import { getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel } from '../utils';
-import { IPoolAddressesProvider_ABI } from '../../src/ts/abis/IPoolAddressesProvider';
 
 export async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
@@ -18,13 +17,7 @@ export async function check(addresses: Record<string, any>) {
     });
     const owner = await gateway.read.owner();
 
-    const poolAddressProvider = getContract({
-      abi: [...IPoolAddressesProvider_ABI] as const,
-      address: addresses.POOL_ADDRESSES_PROVIDER,
-      client,
-    });
-    const marketId = await poolAddressProvider.read.getMarketId();
-    const isWhiteLabel = isPoolWhiteLabel(marketId);
+    const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
 
     const governance = isWhiteLabel ? getWhiteLabelGovernance(addresses.CHAIN_ID) : getGovernance(addresses.CHAIN_ID);
     // pools without governance are factually deprecated

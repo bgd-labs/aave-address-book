@@ -1,4 +1,6 @@
+import { Address, Client, getContract } from 'viem';
 import * as addressBook from '../src/ts/AaveAddressBook';
+import { IPoolAddressesProvider_ABI } from '../src/ts/abis/IPoolAddressesProvider';
 
 export function getGovernance(chainId: number) {
   for (const [name, lib] of Object.entries(addressBook)) {
@@ -18,6 +20,12 @@ export function getMisc(chainId: number) {
   }
 }
 
-export function isPoolWhiteLabel(marketId: string) {
+export async function isPoolWhiteLabel(poolAddressProviderAddress: Address, client: Client) {
+  const poolAddressProvider = getContract({
+    abi: [...IPoolAddressesProvider_ABI] as const,
+    address: poolAddressProviderAddress,
+    client,
+  });
+  const marketId = await poolAddressProvider.read.getMarketId();
   return marketId.toLowerCase().includes('whitelabel');
 }
