@@ -1,9 +1,9 @@
-import {describe, it} from 'vitest';
+import { describe, it } from 'vitest';
 import * as addressBook from '../../src/ts/AaveAddressBook';
-import {getContract} from 'viem';
-import {getClient} from '../../scripts/clients';
-import {getGovernance} from '../utils';
-import {IRiskSteward_ABI} from '../../src/ts/abis/IRiskSteward';
+import { getContract } from 'viem';
+import { getClient } from '../../scripts/clients';
+import { getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel } from '../utils';
+import { IRiskSteward_ABI } from '../../src/ts/abis/IRiskSteward';
 
 export async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
@@ -22,7 +22,8 @@ export async function check(addresses: Record<string, any>) {
     // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)
     //   throw new Error(`SANITY_RISK_STEWARDS: wrong POOL_DATA_PROVIDER on ${client.chain?.name}`);
 
-    const governance = getGovernance(addresses.CHAIN_ID);
+    const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
+    const governance = isWhiteLabel ? getWhiteLabelGovernance(addresses.CHAIN_ID) : getGovernance(addresses.CHAIN_ID);
     if (!governance) {
       console.log(
         `SANITY_RISK_STEWARDS: Skipped due to missing governance on ${client.chain?.name}`,

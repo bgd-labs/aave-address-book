@@ -1,10 +1,10 @@
-import {describe, it, expect} from 'vitest';
+import { describe, it, expect } from 'vitest';
 import * as addressBook from '../../src/ts/AaveAddressBook';
-import {getContract} from 'viem';
-import {getClient} from '../../scripts/clients';
-import {IOwnable_ABI} from '../../src/ts/abis/IOwnable';
-import {IWrappedTokenGatewayV3_ABI} from '../../src/ts/abis/IWrappedTokenGatewayV3';
-import {getGovernance} from '../utils';
+import { getContract } from 'viem';
+import { getClient } from '../../scripts/clients';
+import { IOwnable_ABI } from '../../src/ts/abis/IOwnable';
+import { IWrappedTokenGatewayV3_ABI } from '../../src/ts/abis/IWrappedTokenGatewayV3';
+import { getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel } from '../utils';
 
 export async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
@@ -16,7 +16,10 @@ export async function check(addresses: Record<string, any>) {
       client,
     });
     const owner = await gateway.read.owner();
-    const governance = getGovernance(addresses.CHAIN_ID);
+
+    const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
+
+    const governance = isWhiteLabel ? getWhiteLabelGovernance(addresses.CHAIN_ID) : getGovernance(addresses.CHAIN_ID);
     // pools without governance are factually deprecated
     if (!governance) {
       console.log(
