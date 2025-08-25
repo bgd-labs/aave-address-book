@@ -139,6 +139,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
     ORACLE: '0x0abf2f5642d945b49B8d2DBC6f85c2D8e0424C85',
   },
+  wrsETH: {
+    decimals: 18,
+    id: 7,
+    UNDERLYING: '0xD2671165570f41BBB3B0097893300b6EB6101E6C',
+    A_TOKEN: '0xCDD80E6211FC767352B198f827200C7e93d7Bb04',
+    V_TOKEN: '0xf3C806a402E4E9101373F76C05880EEAc91BB5b9',
+    INTEREST_RATE_STRATEGY: '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671',
+    ORACLE: '0x444f25c5E73fED92B91F3ECB1bD27003C3CDdeE7',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -165,6 +174,16 @@ export const E_MODES = {
     label: 'weETH correlated',
     collateralBitmap: '64',
     collateralAssets: ['0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f'],
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10100,
+  },
+  '4': {
+    label: 'wrsETH/WETH Isolated Liquid E-mode',
+    collateralBitmap: '128',
+    collateralAssets: ['0xD2671165570f41BBB3B0097893300b6EB6101E6C'],
     borrowableBitmap: '1',
     borrowableAssets: ['0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f'],
     ltv: 9000,
