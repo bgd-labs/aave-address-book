@@ -8081,6 +8081,28 @@
       }
     },
     {
+      "chainId": 59144,
+      "address": "0xD2671165570f41BBB3B0097893300b6EB6101E6C",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0xCDD80E6211FC767352B198f827200C7e93d7Bb04",
+      "name": "Aave Linea wrsETH",
+      "decimals": 18,
+      "symbol": "aLinwrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0xD2671165570f41BBB3B0097893300b6EB6101E6C"
+      }
+    },
+    {
       "chainId": 42220,
       "address": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
       "name": "USDC",
@@ -8487,6 +8509,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 127 },
-  "timestamp": "2025-08-19T00:15:51.383Z"
+  "version": { "major": 3, "minor": 0, "patch": 128 },
+  "timestamp": "2025-08-25T00:16:14.470Z"
 }
