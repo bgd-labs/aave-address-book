@@ -13398,6 +13398,18 @@
     },
     "0x330a2C27fCE66685d87ebaE4cE9dA71D2F6D1141": {
       "name": "SupplyLogic"
+    },
+    "0xD2671165570f41BBB3B0097893300b6EB6101E6C": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x444f25c5E73fED92B91F3ECB1bD27003C3CDdeE7": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xCDD80E6211FC767352B198f827200C7e93d7Bb04": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf3C806a402E4E9101373F76C05880EEAc91BB5b9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "84532": {
