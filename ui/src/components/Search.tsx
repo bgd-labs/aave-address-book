@@ -89,12 +89,16 @@ export const Search = ({
         search,
         10,
       );
-      console.log(idx);
       let results: SearchItem[] = [];
-      if (order && matches) {
-        results = order
-          .slice(0, SEARCH_LIMIT)
-          .map((r) => addresses[matches[r]]);
+
+      if (matches) {
+        if (order) {
+          results = order
+            .slice(0, SEARCH_LIMIT)
+            .map((r) => addresses[matches[r]]);
+        } else {
+          results = matches.slice(0, SEARCH_LIMIT).map((r) => addresses[r]);
+        }
       }
 
       setResults(results.sort(comp));
