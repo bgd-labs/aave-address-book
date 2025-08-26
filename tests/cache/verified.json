@@ -11420,6 +11420,15 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x62fC96b27a510cF4977B59FF952Dc32378Cc221d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB5b46F918C2923fC7f26DB76e8a6A6e9C4347Cf9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "42220": {
