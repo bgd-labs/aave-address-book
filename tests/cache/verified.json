@@ -12923,6 +12923,12 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "57073": {

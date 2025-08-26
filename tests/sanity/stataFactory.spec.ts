@@ -2,10 +2,9 @@ import {describe, expect, it} from 'vitest';
 import * as addressBook from '../../src/ts/AaveAddressBook';
 import {getContract} from 'viem';
 import {getClient} from '../../scripts/clients';
-import {getMisc} from '../utils';
 import {IStataTokenFactory_ABI} from '../../src/ts/abis/IStataTokenFactory';
 
-export async function check(addresses: Record<string, any>) {
+async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
   const factory = getContract({
     abi: [
@@ -51,14 +50,17 @@ export async function check(addresses: Record<string, any>) {
 }
 
 describe('stata factory', () => {
-  Object.keys(addressBook).map((library) => {
+  Object.keys(addressBook).forEach((library) => {
     const addresses = addressBook[library];
     if (addresses.STATA_FACTORY) {
       const client = getClient(addresses.CHAIN_ID);
       if (!client.chain?.testnet)
-        it(`should reference correct contracts on all getters: ${client.chain!.name}`, async () => {
-          return check(addresses);
-        });
+        it.concurrent(
+          `should reference correct contracts on all getters: ${client.chain!.name}`,
+          async () => {
+            return check(addresses);
+          },
+        );
     }
   });
 });
