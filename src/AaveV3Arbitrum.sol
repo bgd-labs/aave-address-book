@@ -550,6 +550,24 @@ library AaveV3ArbitrumAssets {
   // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
   address internal constant rsETH_INTEREST_RATE_STRATEGY =
     0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
+
+  // https://arbiscan.io/address/0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40
+  address internal constant tBTC_UNDERLYING = 0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40;
+
+  uint8 internal constant tBTC_DECIMALS = 18;
+
+  // https://arbiscan.io/address/0x62fC96b27a510cF4977B59FF952Dc32378Cc221d
+  address internal constant tBTC_A_TOKEN = 0x62fC96b27a510cF4977B59FF952Dc32378Cc221d;
+
+  // https://arbiscan.io/address/0xB5b46F918C2923fC7f26DB76e8a6A6e9C4347Cf9
+  address internal constant tBTC_V_TOKEN = 0xB5b46F918C2923fC7f26DB76e8a6A6e9C4347Cf9;
+
+  // https://arbiscan.io/address/0x6ce185860a4963106506C203335A2910413708e9
+  address internal constant tBTC_ORACLE = 0x6ce185860a4963106506C203335A2910413708e9;
+
+  // https://arbiscan.io/address/0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F
+  address internal constant tBTC_INTEREST_RATE_STRATEGY =
+    0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F;
 }
 library AaveV3ArbitrumEModes {
   uint8 internal constant NONE = 0;

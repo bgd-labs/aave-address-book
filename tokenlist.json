@@ -6745,6 +6745,28 @@
       }
     },
     {
+      "chainId": 42161,
+      "address": "0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40",
+      "name": "Arbitrum tBTC v2",
+      "decimals": 18,
+      "symbol": "tBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/tbtc.svg"
+    },
+    {
+      "chainId": 42161,
+      "address": "0x62fC96b27a510cF4977B59FF952Dc32378Cc221d",
+      "name": "Aave Arbitrum tBTC",
+      "decimals": 18,
+      "symbol": "aArbtBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/atbtc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40"
+      }
+    },
+    {
       "chainId": 10,
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
@@ -8509,6 +8531,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 128 },
-  "timestamp": "2025-08-25T00:16:14.470Z"
+  "version": { "major": 3, "minor": 0, "patch": 129 },
+  "timestamp": "2025-08-26T00:15:27.715Z"
 }
