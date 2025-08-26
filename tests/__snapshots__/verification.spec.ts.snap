@@ -4,30 +4,6 @@ exports[`verification > should have all contracts verified except for the known 
 [
   {
     "item": {
-      "chainId": 43114,
-      "path": [
-        "AaveV3Avalanche",
-        "ASSETS",
-        "GHO",
-        "A_TOKEN",
-      ],
-      "value": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6",
-    },
-  },
-  {
-    "item": {
-      "chainId": 43114,
-      "path": [
-        "AaveV3Avalanche",
-        "ASSETS",
-        "GHO",
-        "V_TOKEN",
-      ],
-      "value": "0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5",
-    },
-  },
-  {
-    "item": {
       "chainId": 324,
       "path": [
         "AaveV3ZkSync",

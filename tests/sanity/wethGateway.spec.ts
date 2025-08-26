@@ -1,12 +1,12 @@
-import { describe, it, expect } from 'vitest';
+import {describe, it, expect} from 'vitest';
 import * as addressBook from '../../src/ts/AaveAddressBook';
-import { getContract } from 'viem';
-import { getClient } from '../../scripts/clients';
-import { IOwnable_ABI } from '../../src/ts/abis/IOwnable';
-import { IWrappedTokenGatewayV3_ABI } from '../../src/ts/abis/IWrappedTokenGatewayV3';
-import { getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel } from '../utils';
+import {getContract} from 'viem';
+import {getClient} from '../../scripts/clients';
+import {IOwnable_ABI} from '../../src/ts/abis/IOwnable';
+import {IWrappedTokenGatewayV3_ABI} from '../../src/ts/abis/IWrappedTokenGatewayV3';
+import {getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel} from '../utils';
 
-export async function check(addresses: Record<string, any>) {
+async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
   // on testnets owners are usually not governance
   if (!client.chain?.testnet) {
@@ -19,7 +19,9 @@ export async function check(addresses: Record<string, any>) {
 
     const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
 
-    const governance = isWhiteLabel ? getWhiteLabelGovernance(addresses.CHAIN_ID) : getGovernance(addresses.CHAIN_ID);
+    const governance = isWhiteLabel
+      ? getWhiteLabelGovernance(addresses.CHAIN_ID)
+      : getGovernance(addresses.CHAIN_ID);
     // pools without governance are factually deprecated
     if (!governance) {
       console.log(
@@ -41,13 +43,16 @@ export async function check(addresses: Record<string, any>) {
 }
 
 describe('weth gateway', () => {
-  Object.keys(addressBook).map((library) => {
+  Object.keys(addressBook).forEach((library) => {
     const addresses = addressBook[library];
     if (addresses.WETH_GATEWAY) {
       const client = getClient(addresses.CHAIN_ID);
-      it(`should reference correct contracts on all getters: ${client.chain!.name}`, async () => {
-        return check(addresses);
-      });
+      it.concurrent(
+        `should reference correct contracts on all getters: ${client.chain!.name}`,
+        async () => {
+          return check(addresses);
+        },
+      );
     }
   });
 });
