@@ -1409,7 +1409,7 @@
       "decimals": 6,
       "symbol": "USDT",
       "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
     },
     {
       "chainId": 137,
@@ -1418,7 +1418,7 @@
       "decimals": 6,
       "symbol": "amUSDT",
       "tags": ["aTokenV2", "aaveV2"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
       "extensions": {
         "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
@@ -3452,7 +3452,7 @@
       "decimals": 6,
       "symbol": "aPolUSDT",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
@@ -3465,7 +3465,7 @@
       "decimals": 6,
       "symbol": "stataPolUSDT",
       "tags": ["aaveV3", "staticAT"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt0.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
@@ -8531,6 +8531,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 129 },
-  "timestamp": "2025-08-26T00:15:27.715Z"
+  "version": { "major": 3, "minor": 0, "patch": 130 },
+  "timestamp": "2025-08-28T00:15:10.871Z"
 }
