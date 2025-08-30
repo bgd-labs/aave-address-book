@@ -8,19 +8,19 @@ library UmbrellaBaseSepolia {
   // https://sepolia.basescan.org/address/0x5AC6C5C70934939d7Ad4aAB253aFD760Ad5E5313
   IUmbrella internal constant UMBRELLA = IUmbrella(0x5AC6C5C70934939d7Ad4aAB253aFD760Ad5E5313);
 
-  // https://sepolia.basescan.org/address/0x358FBc5AcE3c5a79f33a1e4aC236A4dc28F58c9B
-  address internal constant UMBRELLA_IMPL = 0x358FBc5AcE3c5a79f33a1e4aC236A4dc28F58c9B;
+  // https://sepolia.basescan.org/address/0x9d6A79103e4B8fA392551aC7F1bcAf6117A8ED5A
+  address internal constant UMBRELLA_IMPL = 0x9d6A79103e4B8fA392551aC7F1bcAf6117A8ED5A;
 
-  // https://sepolia.basescan.org/address/0xa642Ca2DA558D75deaff46b68790bcF1Fa25f485
-  address internal constant UMBRELLA_STAKE_TOKEN_IMPL = 0xa642Ca2DA558D75deaff46b68790bcF1Fa25f485;
+  // https://sepolia.basescan.org/address/0x07687e3F16540d6531a006Bf026e3a4862d6f996
+  address internal constant UMBRELLA_STAKE_TOKEN_IMPL = 0x07687e3F16540d6531a006Bf026e3a4862d6f996;
 
   // https://sepolia.basescan.org/address/0x412f8957f9A42FFe47B634AB73f89Ff4E0a29026
   address internal constant UMBRELLA_REWARDS_CONTROLLER =
     0x412f8957f9A42FFe47B634AB73f89Ff4E0a29026;
 
-  // https://sepolia.basescan.org/address/0xA97Ea1A74628638Cab2C150f04F435678313117B
+  // https://sepolia.basescan.org/address/0x811A6C5F91F39c128a969c6D6FA2494748DEAeBf
   address internal constant UMBRELLA_REWARDS_CONTROLLER_IMPL =
-    0xA97Ea1A74628638Cab2C150f04F435678313117B;
+    0x811A6C5F91F39c128a969c6D6FA2494748DEAeBf;
 
   // https://sepolia.basescan.org/address/0x9F9c7F84C043Fe3366E8567352FB6ab352222b7d
   address internal constant PERMISSIONED_PAYLOADS_CONTROLLER =
