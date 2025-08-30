@@ -406,6 +406,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0x4170aa42631d60160171C60d523A2783565261b9
+  address internal constant AAVE_STATA_TOKEN = 0x4170aa42631d60160171C60d523A2783565261b9;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
