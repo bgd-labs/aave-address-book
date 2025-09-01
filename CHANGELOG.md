@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.28.2](https://github.com/bgd-labs/aave-address-book/compare/v4.28.1...v4.28.2) (2025-08-26)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1049](https://github.com/bgd-labs/aave-address-book/issues/1049)) ([c0af957](https://github.com/bgd-labs/aave-address-book/commit/c0af95783d90184eaf363de892ec0fec43e66b14))
+
+## [4.28.1](https://github.com/bgd-labs/aave-address-book/compare/v4.28.0...v4.28.1) (2025-08-25)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1043](https://github.com/bgd-labs/aave-address-book/issues/1043)) ([f309c5a](https://github.com/bgd-labs/aave-address-book/commit/f309c5ad2fdb432c6c18291fe1c500f04f97edb3))
+* search-algo ([#1046](https://github.com/bgd-labs/aave-address-book/issues/1046)) ([1e1984d](https://github.com/bgd-labs/aave-address-book/commit/1e1984d2e4663b37b2d8e53dae23ceae982385bd))
+
+## [4.28.0](https://github.com/bgd-labs/aave-address-book/compare/v4.27.0...v4.28.0) (2025-08-21)
+
+
+### Features
+
+* add ink aave gov addresses ([#1040](https://github.com/bgd-labs/aave-address-book/issues/1040)) ([0816d42](https://github.com/bgd-labs/aave-address-book/commit/0816d42e77660dd225813c2d1db380e172646a38))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1033](https://github.com/bgd-labs/aave-address-book/issues/1033)) ([cf0802b](https://github.com/bgd-labs/aave-address-book/commit/cf0802bc0dd8333645049f12cf88f86013a58db1))
+* **cache:** automated cache update - updated addresses ([#1041](https://github.com/bgd-labs/aave-address-book/issues/1041)) ([e281938](https://github.com/bgd-labs/aave-address-book/commit/e281938a087bcc65c3870ed266b14262d7879af8))
+
+## [4.27.0](https://github.com/bgd-labs/aave-address-book/compare/v4.26.2...v4.27.0) (2025-08-14)
+
+
+### Features
+
+* add ink v3.5 whitelabel contracts ([#1015](https://github.com/bgd-labs/aave-address-book/issues/1015)) ([2bd7aea](https://github.com/bgd-labs/aave-address-book/commit/2bd7aeacebffbf99b19259b9931422e3c44986f8))
+
 ## [4.26.2](https://github.com/bgd-labs/aave-address-book/compare/v4.26.1...v4.26.2) (2025-08-07)
 
 

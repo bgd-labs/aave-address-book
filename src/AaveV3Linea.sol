@@ -212,6 +212,24 @@ library AaveV3LineaAssets {
   // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
   address internal constant weETH_INTEREST_RATE_STRATEGY =
     0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0xD2671165570f41BBB3B0097893300b6EB6101E6C
+  address internal constant wrsETH_UNDERLYING = 0xD2671165570f41BBB3B0097893300b6EB6101E6C;
+
+  uint8 internal constant wrsETH_DECIMALS = 18;
+
+  // https://lineascan.build/address/0xCDD80E6211FC767352B198f827200C7e93d7Bb04
+  address internal constant wrsETH_A_TOKEN = 0xCDD80E6211FC767352B198f827200C7e93d7Bb04;
+
+  // https://lineascan.build/address/0xf3C806a402E4E9101373F76C05880EEAc91BB5b9
+  address internal constant wrsETH_V_TOKEN = 0xf3C806a402E4E9101373F76C05880EEAc91BB5b9;
+
+  // https://lineascan.build/address/0x444f25c5E73fED92B91F3ECB1bD27003C3CDdeE7
+  address internal constant wrsETH_ORACLE = 0x444f25c5E73fED92B91F3ECB1bD27003C3CDdeE7;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant wrsETH_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
 }
 library AaveV3LineaEModes {
   uint8 internal constant NONE = 0;
@@ -221,6 +239,8 @@ library AaveV3LineaEModes {
   uint8 internal constant EZETH_CORRELATED = 2;
 
   uint8 internal constant WEETH_CORRELATED = 3;
+
+  uint8 internal constant WRSETH_WETH_ISOLATED_LIQUID_E_MODE = 4;
 }
 library AaveV3LineaExternalLibraries {
   // https://lineascan.build/address/0xb5656eCAE657A1bF5f7F5CD06363090A4D2c68e3

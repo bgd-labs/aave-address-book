@@ -1,9 +1,9 @@
-import {ChainId, ChainList} from '@bgd-labs/toolbox';
+import {ChainId, ChainList, getExplorer, getSourceCode} from '@bgd-labs/toolbox';
 import {describe, expect, it} from 'vitest';
 import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
 import {writeFileSync} from 'fs';
-import {Hex, PublicClient, zeroAddress} from 'viem';
+import {Address, Hex, PublicClient, zeroAddress} from 'viem';
 import {getCode} from 'viem/actions';
 import {getClient} from '../scripts/clients';
 
@@ -51,7 +51,7 @@ async function verifyProxy(item: ListItem) {
     });
 
     const {status, result} = await request.json();
-    await sleep(1000);
+    await sleep(200);
     if (status === '1') checkProxyVerification(item, result);
   } catch (e) {
     console.error(e);
@@ -60,27 +60,21 @@ async function verifyProxy(item: ListItem) {
 }
 
 async function checkVerified(item: ListItem) {
-  const params = {
-    chainId: String(item.chainId),
-    apikey: ETHERSCAN_API_KEY,
-    address: item.value,
-    module: 'contract',
-    action: 'getsourcecode',
-  };
-
-  const formattedParams = new URLSearchParams(params).toString();
-  const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
-    const request = await fetch(url);
-    const {status, result} = await request.json();
-    if (status !== '1' || !result[0].ContractName) {
+    const source = await getSourceCode({
+      chainId: item.chainId,
+      apiKey: process.env.ETHERSCAN_API_KEY,
+      address: item.value as Address,
+      apiUrl: process.env.EXPLORER_PROXY,
+    });
+    if (!source.ContractName) {
       // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
       // therefore we try to manually assign it
       if (['S_TOKEN', 'V_TOKEN', 'A_TOKEN'].includes(item.path[item.path.length - 1])) {
         await verifyProxy(item);
       }
     }
-    return {status, result};
+    return {status: '1', result: source};
   } catch (e) {
     console.error(e);
     return {status: '0', result: e};
@@ -88,10 +82,9 @@ async function checkVerified(item: ListItem) {
 }
 
 function getApiUrl(chainId: number) {
-  if (chainId === ChainId.metis)
-    return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
   if (chainId === ChainId.soneium) return `https://soneium.blockscout.com/api`;
-  return `https://api.etherscan.io/v2/api`;
+  if (chainId === ChainId.ink) return `https://explorer.inkonchain.com/api/`;
+  return getExplorer(chainId).api;
 }
 
 const knownErrors = {
@@ -110,6 +103,14 @@ const knownErrors = {
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
   },
+  8453: {
+    '0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431': true, // base tBTC a token
+    '0x182cDEEC1D52ccad869d621bA422F449FA5809f5': true, // base v token
+  },
+  324: {
+    '0x5722921bb6C37EaEb78b993765Aa5D79CC50052F': true, // zksync wrstETH a token
+    '0x97deC07366Be72884331BE21704Fd93BF35286f9': true, // zksync v token
+  }
 };
 
 describe('verification', {timeout: 500_000}, () => {
@@ -118,10 +119,11 @@ describe('verification', {timeout: 500_000}, () => {
       (item) =>
         ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
         !ChainList[item.chainId].testnet &&
-        !knownErrors[item.chainId]?.[item.value],
+        !knownErrors[item.chainId]?.[item.value] &&
+        (!verified[item.chainId]?.[item.value] ||
+          verified[item.chainId]?.[item.value] === zeroAddress),
     );
     const errors: {item: ListItem}[] = [];
-    let newVerified = false;
     // unique set of addresses checked on this iteration
     // used to prevent double checking the same address
     const checked = new Set<string>();
@@ -136,23 +138,19 @@ describe('verification', {timeout: 500_000}, () => {
         if (hasCode) {
           const {status, result} = (await checkVerified(item)) as {
             status: string;
-            result: {ContractName: string}[];
+            result: {ContractName: string};
           };
-          await sleep(300);
-          if (status !== '1' || !result[0].ContractName) {
+          if (status !== '1' || !result.ContractName) {
             errors.push({item});
             console.log(item.value, result);
           } else {
-            newVerified = true;
             if (!verified[item.chainId]) verified[item.chainId] = {};
             verified[item.chainId][item.value] = {
-              name: result[0].ContractName,
+              name: result.ContractName,
             };
-            if (newVerified) {
-              writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
-                encoding: 'utf-8',
-              });
-            }
+            writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
+              encoding: 'utf-8',
+            });
           }
         }
       }

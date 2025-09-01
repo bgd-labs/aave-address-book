@@ -1409,7 +1409,7 @@
       "decimals": 6,
       "symbol": "USDT",
       "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt.svg"
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
     },
     {
       "chainId": 137,
@@ -1418,7 +1418,7 @@
       "decimals": 6,
       "symbol": "amUSDT",
       "tags": ["aTokenV2", "aaveV2"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
       "extensions": {
         "pool": "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
@@ -3269,6 +3269,68 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
+      "name": "Treehouse ETH",
+      "decimals": 18,
+      "symbol": "tETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x481a2acf3A72ffDc602A9541896Ca1DB87f86cf7",
+      "name": "Aave Ethereum tETH",
+      "decimals": 18,
+      "symbol": "aEthtETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
+      "name": "Renzo Restaked ETH",
+      "decimals": 18,
+      "symbol": "ezETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0x4E2a4d9B3DF7Aae73b418Bd39F3af9e148E3F479",
+      "name": "Aave Ethereum ezETH",
+      "decimals": 18,
+      "symbol": "aEthezETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aezeth.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
+      "name": "Tether Gold",
+      "decimals": 6,
+      "symbol": "XAUt",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8A2b6f94Ff3A89a03E8c02Ee92b55aF90c9454A2",
+      "name": "Aave Ethereum XAUt",
+      "decimals": 6,
+      "symbol": "aEthXAUt",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x68749665FF8D2d112Fa859AA293F07A622782F38"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -3410,7 +3472,7 @@
       "decimals": 6,
       "symbol": "aPolUSDT",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt.svg",
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F"
@@ -3423,7 +3485,7 @@
       "decimals": 6,
       "symbol": "stataPolUSDT",
       "tags": ["aaveV3", "staticAT"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt.svg",
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt0.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
@@ -5028,6 +5090,42 @@
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x63706e401c06ac8513145b7687A14804d17f814b"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x4170aa42631d60160171C60d523A2783565261b9",
+      "name": "Wrapped Aave Base AAVE",
+      "decimals": 18,
+      "symbol": "waBasAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x63706e401c06ac8513145b7687A14804d17f814b",
+        "underlyingAToken": "0x67EAF2BeE4384a2f84Da9Eb8105C661C123736BA"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "name": "Base tBTC v2",
+      "decimals": 18,
+      "symbol": "tBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/tbtc.svg"
+    },
+    {
+      "chainId": 8453,
+      "address": "0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431",
+      "name": "Aave Base tBTC",
+      "decimals": 18,
+      "symbol": "aBastBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/atbtc.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b"
       }
     },
     {
@@ -6703,6 +6801,28 @@
       }
     },
     {
+      "chainId": 42161,
+      "address": "0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40",
+      "name": "Arbitrum tBTC v2",
+      "decimals": 18,
+      "symbol": "tBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/tbtc.svg"
+    },
+    {
+      "chainId": 42161,
+      "address": "0x62fC96b27a510cF4977B59FF952Dc32378Cc221d",
+      "name": "Aave Arbitrum tBTC",
+      "decimals": 18,
+      "symbol": "aArbtBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/atbtc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40"
+      }
+    },
+    {
       "chainId": 10,
       "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
       "name": "Dai Stablecoin",
@@ -7756,15 +7876,6 @@
     },
     {
       "chainId": 1,
-      "address": "0xbf5495Efe5DB9ce00f80364C8B423567e58d2110",
-      "name": "Renzo Restaked ETH",
-      "decimals": 18,
-      "symbol": "ezETH",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ezeth.svg"
-    },
-    {
-      "chainId": 1,
       "address": "0x74e5664394998f13B07aF42446380ACef637969f",
       "name": "Aave Ethereum Lido ezETH",
       "decimals": 18,
@@ -7828,14 +7939,6 @@
         "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
         "underlying": "0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7"
       }
-    },
-    {
-      "chainId": 1,
-      "address": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8",
-      "name": "Treehouse ETH",
-      "decimals": 18,
-      "symbol": "tETH",
-      "tags": ["underlying"]
     },
     {
       "chainId": 1,
@@ -8053,6 +8156,28 @@
       "extensions": {
         "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
         "underlying": "0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6"
+      }
+    },
+    {
+      "chainId": 59144,
+      "address": "0xD2671165570f41BBB3B0097893300b6EB6101E6C",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 59144,
+      "address": "0xCDD80E6211FC767352B198f827200C7e93d7Bb04",
+      "name": "Aave Linea wrsETH",
+      "decimals": 18,
+      "symbol": "aLinwrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0xD2671165570f41BBB3B0097893300b6EB6101E6C"
       }
     },
     {
@@ -8462,6 +8587,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 126 },
-  "timestamp": "2025-08-07T11:01:46.699Z"
+  "version": { "major": 3, "minor": 0, "patch": 131 },
+  "timestamp": "2025-09-01T00:18:19.749Z"
 }

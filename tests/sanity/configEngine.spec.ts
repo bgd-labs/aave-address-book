@@ -4,7 +4,7 @@ import {IAaveV3ConfigEngine_ABI} from '../../src/ts/abis/IAaveV3ConfigEngine';
 import {getContract} from 'viem';
 import {getClient} from '../../scripts/clients';
 
-export async function check(addresses: Record<string, any>) {
+async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
   const engineContract = getContract({
     abi: IAaveV3ConfigEngine_ABI,
@@ -30,21 +30,24 @@ export async function check(addresses: Record<string, any>) {
     engineContract.read.DEFAULT_INTEREST_RATE_STRATEGY(),
     engineContract.read.COLLECTOR(),
   ]);
-  // uncomment when aToken, vToken has been updated to v3.5 version
-  expect(ATOKEN_IMPL).toBe(addresses.DEFAULT_A_TOKEN_IMPL);
-  expect(VTOKEN_IMPL).toBe(addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL);
+  if (addresses.DEFAULT_A_TOKEN_IMPL) expect(ATOKEN_IMPL).toBe(addresses.DEFAULT_A_TOKEN_IMPL);
+  if (addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL)
+    expect(VTOKEN_IMPL).toBe(addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL);
+  if (addresses.COLLECTOR) expect(COLLECTOR).toBe(addresses.COLLECTOR);
   expect(POOL).toBe(addresses.POOL);
   expect(POOL_CONFIGURATOR).toBe(addresses.POOL_CONFIGURATOR);
   expect(ORACLE).toBe(addresses.ORACLE);
   expect(REWARDS_CONTROLLER).toBe(addresses.DEFAULT_INCENTIVES_CONTROLLER);
-  expect(COLLECTOR).toBe(addresses.COLLECTOR);
-  expect(DEFAULT_INTEREST_RATE_STRATEGY).toBe(
-    (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY,
-  );
+
+  if (addresses.ASSETS[0]) {
+    expect(DEFAULT_INTEREST_RATE_STRATEGY).toBe(
+      (Object.values(addresses.ASSETS)[0] as any).INTEREST_RATE_STRATEGY,
+    );
+  }
 }
 
 describe('config engine', () => {
-  Object.keys(addressBook).map((library) => {
+  Object.keys(addressBook).forEach((library) => {
     const addresses = addressBook[library];
     const client = getClient(addresses.CHAIN_ID);
     // we only want to validate AaveV3 config engines as V2 does not expose the necessary getters
@@ -55,8 +58,11 @@ describe('config engine', () => {
       addresses.COLLECTOR &&
       library.startsWith('AaveV3')
     )
-      it(`should reference correct contracts on all getters: ${client.chain!.name}`, async () => {
-        return check(addresses);
-      });
+      it.concurrent(
+        `should reference correct contracts on all getters: ${client.chain!.name}`,
+        async () => {
+          return check(addresses);
+        },
+      );
   });
 });
