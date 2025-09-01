@@ -406,6 +406,27 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
   address internal constant AAVE_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0x4170aa42631d60160171C60d523A2783565261b9
+  address internal constant AAVE_STATA_TOKEN = 0x4170aa42631d60160171C60d523A2783565261b9;
+
+  // https://basescan.org/address/0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b
+  address internal constant tBTC_UNDERLYING = 0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b;
+
+  uint8 internal constant tBTC_DECIMALS = 18;
+
+  // https://basescan.org/address/0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431
+  address internal constant tBTC_A_TOKEN = 0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431;
+
+  // https://basescan.org/address/0x182cDEEC1D52ccad869d621bA422F449FA5809f5
+  address internal constant tBTC_V_TOKEN = 0x182cDEEC1D52ccad869d621bA422F449FA5809f5;
+
+  // https://basescan.org/address/0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F
+  address internal constant tBTC_ORACLE = 0x64c911996D3c6aC71f9b455B1E8E7266BcbD848F;
+
+  // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
+  address internal constant tBTC_INTEREST_RATE_STRATEGY =
+    0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;

@@ -3311,6 +3311,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x68749665FF8D2d112Fa859AA293F07A622782F38",
+      "name": "Tether Gold",
+      "decimals": 6,
+      "symbol": "XAUt",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x8A2b6f94Ff3A89a03E8c02Ee92b55aF90c9454A2",
+      "name": "Aave Ethereum XAUt",
+      "decimals": 6,
+      "symbol": "aEthXAUt",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x68749665FF8D2d112Fa859AA293F07A622782F38"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -5070,6 +5090,42 @@
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x63706e401c06ac8513145b7687A14804d17f814b"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x4170aa42631d60160171C60d523A2783565261b9",
+      "name": "Wrapped Aave Base AAVE",
+      "decimals": 18,
+      "symbol": "waBasAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x63706e401c06ac8513145b7687A14804d17f814b",
+        "underlyingAToken": "0x67EAF2BeE4384a2f84Da9Eb8105C661C123736BA"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "name": "Base tBTC v2",
+      "decimals": 18,
+      "symbol": "tBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/tbtc.svg"
+    },
+    {
+      "chainId": 8453,
+      "address": "0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431",
+      "name": "Aave Base tBTC",
+      "decimals": 18,
+      "symbol": "aBastBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/atbtc.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b"
       }
     },
     {
@@ -8531,6 +8587,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 130 },
-  "timestamp": "2025-08-28T00:15:10.871Z"
+  "version": { "major": 3, "minor": 0, "patch": 131 },
+  "timestamp": "2025-09-01T00:18:19.749Z"
 }
