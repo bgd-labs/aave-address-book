@@ -3572,6 +3572,15 @@
     },
     "0x730318dB7b830d324fC3fEDDB1d212Ec64bD3141": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x68749665FF8D2d112Fa859AA293F07A622782F38": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x8A2b6f94Ff3A89a03E8c02Ee92b55aF90c9454A2": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xa665bB258D2a732C170dFD505924214c0b1AC74F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "10": {
@@ -10062,6 +10071,12 @@
     },
     "0xA04669FE5cba4Bb21f265B562D23e562E45A1C67": {
       "name": "LBTCPriceCapAdapter"
+    },
+    "0x4170aa42631d60160171C60d523A2783565261b9": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42161": {
