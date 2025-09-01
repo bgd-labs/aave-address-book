@@ -623,6 +623,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0xF3d49021fF3bbBFDfC1992A4b09E5D1d141D044C',
   },
+  XAUt: {
+    decimals: 6,
+    id: 52,
+    UNDERLYING: '0x68749665FF8D2d112Fa859AA293F07A622782F38',
+    A_TOKEN: '0x8A2b6f94Ff3A89a03E8c02Ee92b55aF90c9454A2',
+    V_TOKEN: '0xa665bB258D2a732C170dFD505924214c0b1AC74F',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -906,8 +915,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9370,
-    liquidationThreshold: 9570,
+    ltv: 9400,
+    liquidationThreshold: 9600,
     liquidationBonus: 10220,
   },
   '21': {

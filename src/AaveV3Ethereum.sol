@@ -1174,6 +1174,24 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant ezETH_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0x68749665FF8D2d112Fa859AA293F07A622782F38
+  address internal constant XAUt_UNDERLYING = 0x68749665FF8D2d112Fa859AA293F07A622782F38;
+
+  uint8 internal constant XAUt_DECIMALS = 6;
+
+  // https://etherscan.io/address/0x8A2b6f94Ff3A89a03E8c02Ee92b55aF90c9454A2
+  address internal constant XAUt_A_TOKEN = 0x8A2b6f94Ff3A89a03E8c02Ee92b55aF90c9454A2;
+
+  // https://etherscan.io/address/0xa665bB258D2a732C170dFD505924214c0b1AC74F
+  address internal constant XAUt_V_TOKEN = 0xa665bB258D2a732C170dFD505924214c0b1AC74F;
+
+  // https://etherscan.io/address/0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6
+  address internal constant XAUt_ORACLE = 0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6;
+
+  // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
+  address internal constant XAUt_INTEREST_RATE_STRATEGY =
+    0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 library AaveV3EthereumEModes {
   uint8 internal constant NONE = 0;
