@@ -4648,6 +4648,9 @@
     },
     "0x14a6801DBEBbd6CBE009c10eCFDA98C1c7B89012": {
       "name": "EdgeRiskStewardCaps"
+    },
+    "0x54714FAc85b0bf627288CC3a186dE81A42f1D635": {
+      "name": "AaveStewardInjectorCaps"
     }
   },
   "56": {
@@ -5535,6 +5538,9 @@
     },
     "0x655252250f4A453854040A49E8280951A76f3033": {
       "name": "EdgeRiskStewardCaps"
+    },
+    "0x54714FAc85b0bf627288CC3a186dE81A42f1D635": {
+      "name": "AaveStewardInjectorCaps"
     }
   },
   "100": {
@@ -6107,6 +6113,9 @@
     },
     "0x655252250f4A453854040A49E8280951A76f3033": {
       "name": "EdgeRiskStewardCaps"
+    },
+    "0x394aDC8772DDD076BD3c5C545c4Edd3617C7d5e6": {
+      "name": "GelatoAaveStewardInjectorCaps"
     }
   },
   "137": {
@@ -7525,6 +7534,9 @@
     },
     "0x35B09a414F6003346cA2E2553b3ea91Cd3524af3": {
       "name": "EdgeRiskStewardCaps"
+    },
+    "0x54714FAc85b0bf627288CC3a186dE81A42f1D635": {
+      "name": "AaveStewardInjectorCaps"
     }
   },
   "146": {
