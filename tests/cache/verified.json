@@ -10077,6 +10077,12 @@
     },
     "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x182cDEEC1D52ccad869d621bA422F449FA5809f5": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "42161": {
