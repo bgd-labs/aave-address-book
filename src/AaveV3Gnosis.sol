@@ -105,6 +105,9 @@ library AaveV3Gnosis {
 
   // https://gnosisscan.io/address/0x655252250f4A453854040A49E8280951A76f3033
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x655252250f4A453854040A49E8280951A76f3033;
+
+  // https://gnosisscan.io/address/0x394aDC8772DDD076BD3c5C545c4Edd3617C7d5e6
+  address internal constant EDGE_INJECTOR_CAPS = 0x394aDC8772DDD076BD3c5C545c4Edd3617C7d5e6;
 }
 library AaveV3GnosisAssets {
   // https://gnosisscan.io/address/0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1
