@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.28.3](https://github.com/bgd-labs/aave-address-book/compare/v4.28.2...v4.28.3) (2025-09-02)
+
+
+### Bug Fixes
+
+* add missing edge stewards caps ([#1060](https://github.com/bgd-labs/aave-address-book/issues/1060)) ([fbc262d](https://github.com/bgd-labs/aave-address-book/commit/fbc262dce75e36560cde04c02b1f4e5790002c0b))
+* **cache:** automated cache update - updated addresses ([#1053](https://github.com/bgd-labs/aave-address-book/issues/1053)) ([c2c0c56](https://github.com/bgd-labs/aave-address-book/commit/c2c0c56f56e24ce1bb2498e66aadd16b75a686ff))
+* **cache:** automated cache update - updated addresses ([#1056](https://github.com/bgd-labs/aave-address-book/issues/1056)) ([f056ef3](https://github.com/bgd-labs/aave-address-book/commit/f056ef397bce089b69a2116f5ccfbbabdfe3cdc0))
+* updated snapshot ([#1058](https://github.com/bgd-labs/aave-address-book/issues/1058)) ([cf4f10c](https://github.com/bgd-labs/aave-address-book/commit/cf4f10c4b4c68116d0c6d08702e814308ba6834c))
+
 ## [4.28.2](https://github.com/bgd-labs/aave-address-book/compare/v4.28.1...v4.28.2) (2025-08-26)
 
 
