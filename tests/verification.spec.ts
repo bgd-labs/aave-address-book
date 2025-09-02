@@ -103,14 +103,6 @@ const knownErrors = {
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
   },
-  8453: {
-    '0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431': true, // base tBTC a token
-    '0x182cDEEC1D52ccad869d621bA422F449FA5809f5': true, // base v token
-  },
-  324: {
-    '0x5722921bb6C37EaEb78b993765Aa5D79CC50052F': true, // zksync wrstETH a token
-    '0x97deC07366Be72884331BE21704Fd93BF35286f9': true, // zksync v token
-  }
 };
 
 describe('verification', {timeout: 500_000}, () => {

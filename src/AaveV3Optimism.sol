@@ -108,6 +108,12 @@ library AaveV3Optimism {
 
   // https://optimistic.etherscan.io/address/0x4684b645386525057526EB85854045914Fe389d6
   address internal constant POOL_EXPOSURE_STEWARD = 0x4684b645386525057526EB85854045914Fe389d6;
+
+  // https://optimistic.etherscan.io/address/0x14a6801DBEBbd6CBE009c10eCFDA98C1c7B89012
+  address internal constant EDGE_RISK_STEWARD_CAPS = 0x14a6801DBEBbd6CBE009c10eCFDA98C1c7B89012;
+
+  // https://optimistic.etherscan.io/address/0x54714FAc85b0bf627288CC3a186dE81A42f1D635
+  address internal constant EDGE_INJECTOR_CAPS = 0x54714FAc85b0bf627288CC3a186dE81A42f1D635;
 }
 library AaveV3OptimismAssets {
   // https://optimistic.etherscan.io/address/0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1

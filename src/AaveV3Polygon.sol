@@ -102,6 +102,12 @@ library AaveV3Polygon {
 
   // https://polygonscan.com/address/0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa
   address internal constant STATA_FACTORY = 0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa;
+
+  // https://polygonscan.com/address/0x35B09a414F6003346cA2E2553b3ea91Cd3524af3
+  address internal constant EDGE_RISK_STEWARD_CAPS = 0x35B09a414F6003346cA2E2553b3ea91Cd3524af3;
+
+  // https://polygonscan.com/address/0x54714FAc85b0bf627288CC3a186dE81A42f1D635
+  address internal constant EDGE_INJECTOR_CAPS = 0x54714FAc85b0bf627288CC3a186dE81A42f1D635;
 }
 library AaveV3PolygonAssets {
   // https://polygonscan.com/address/0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063

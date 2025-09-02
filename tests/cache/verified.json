@@ -4645,6 +4645,12 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x14a6801DBEBbd6CBE009c10eCFDA98C1c7B89012": {
+      "name": "EdgeRiskStewardCaps"
+    },
+    "0x54714FAc85b0bf627288CC3a186dE81A42f1D635": {
+      "name": "AaveStewardInjectorCaps"
     }
   },
   "56": {
@@ -5529,6 +5535,12 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x655252250f4A453854040A49E8280951A76f3033": {
+      "name": "EdgeRiskStewardCaps"
+    },
+    "0x54714FAc85b0bf627288CC3a186dE81A42f1D635": {
+      "name": "AaveStewardInjectorCaps"
     }
   },
   "100": {
@@ -6098,6 +6110,12 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x655252250f4A453854040A49E8280951A76f3033": {
+      "name": "EdgeRiskStewardCaps"
+    },
+    "0x394aDC8772DDD076BD3c5C545c4Edd3617C7d5e6": {
+      "name": "GelatoAaveStewardInjectorCaps"
     },
     "0xDe6539018B095353A40753Dc54C91C68c9487D4E": {
       "name": "TransparentUpgradeableProxy"
@@ -7525,6 +7543,12 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x35B09a414F6003346cA2E2553b3ea91Cd3524af3": {
+      "name": "EdgeRiskStewardCaps"
+    },
+    "0x54714FAc85b0bf627288CC3a186dE81A42f1D635": {
+      "name": "AaveStewardInjectorCaps"
     }
   },
   "146": {
@@ -10089,6 +10113,12 @@
     },
     "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xbcFFB4B3beADc989Bd1458740952aF6EC8fBE431": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x182cDEEC1D52ccad869d621bA422F449FA5809f5": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "42161": {

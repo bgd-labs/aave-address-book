@@ -1,3 +1,30 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`verification > should have all contracts verified except for the known set of errors 1`] = `[]`;
+exports[`verification > should have all contracts verified except for the known set of errors 1`] = `
+[
+  {
+    "item": {
+      "chainId": 324,
+      "path": [
+        "AaveV3ZkSync",
+        "ASSETS",
+        "wrsETH",
+        "A_TOKEN",
+      ],
+      "value": "0x5722921bb6C37EaEb78b993765Aa5D79CC50052F",
+    },
+  },
+  {
+    "item": {
+      "chainId": 324,
+      "path": [
+        "AaveV3ZkSync",
+        "ASSETS",
+        "wrsETH",
+        "V_TOKEN",
+      ],
+      "value": "0x97deC07366Be72884331BE21704Fd93BF35286f9",
+    },
+  },
+]
+`;
