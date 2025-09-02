@@ -4645,6 +4645,9 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x14a6801DBEBbd6CBE009c10eCFDA98C1c7B89012": {
+      "name": "EdgeRiskStewardCaps"
     }
   },
   "56": {
@@ -5529,6 +5532,9 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x655252250f4A453854040A49E8280951A76f3033": {
+      "name": "EdgeRiskStewardCaps"
     }
   },
   "100": {
@@ -6098,6 +6104,9 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x655252250f4A453854040A49E8280951A76f3033": {
+      "name": "EdgeRiskStewardCaps"
     }
   },
   "137": {
@@ -7513,6 +7522,9 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0x35B09a414F6003346cA2E2553b3ea91Cd3524af3": {
+      "name": "EdgeRiskStewardCaps"
     }
   },
   "146": {

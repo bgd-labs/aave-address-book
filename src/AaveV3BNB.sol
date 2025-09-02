@@ -102,6 +102,9 @@ library AaveV3BNB {
 
   // https://bscscan.com/address/0x929B8a21a604b93DD7e95d5b9aAa3aDf5bE250ae
   address internal constant STATA_FACTORY = 0x929B8a21a604b93DD7e95d5b9aAa3aDf5bE250ae;
+
+  // https://bscscan.com/address/0x655252250f4A453854040A49E8280951A76f3033
+  address internal constant EDGE_RISK_STEWARD_CAPS = 0x655252250f4A453854040A49E8280951A76f3033;
 }
 library AaveV3BNBAssets {
   // https://bscscan.com/address/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82

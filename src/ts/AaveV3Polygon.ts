@@ -89,6 +89,9 @@ export const POOL_EXPOSURE_STEWARD = '0xE5b11ab4D36E58C9171e3DB98Ba17336606Cd6ef
 // https://polygonscan.com/address/0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa
 export const STATA_FACTORY = '0x1504F1d7b6892600ae0d394F9042e696dd9F87Fa';
 
+// https://polygonscan.com/address/0x35B09a414F6003346cA2E2553b3ea91Cd3524af3
+export const EDGE_RISK_STEWARD_CAPS = '0x35B09a414F6003346cA2E2553b3ea91Cd3524af3';
+
 export const CHAIN_ID = 137;
 export const ASSETS = {
   DAI: {
