@@ -6116,6 +6116,18 @@
     },
     "0x394aDC8772DDD076BD3c5C545c4Edd3617C7d5e6": {
       "name": "GelatoAaveStewardInjectorCaps"
+    },
+    "0xDe6539018B095353A40753Dc54C91C68c9487D4E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6e637e1E48025E51315d50ab96d5b3be1971A715": {
+      "name": "GhoAaveSteward"
+    },
+    "0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee": {
+      "name": "GhoBucketSteward"
+    },
+    "0x06179f7C1be40863405f374E7f5F8806c728660A": {
+      "name": "GhoCcipSteward"
     }
   },
   "137": {
