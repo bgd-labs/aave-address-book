@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.29.0](https://github.com/bgd-labs/aave-address-book/compare/v4.28.3...v4.29.0) (2025-09-02)
+
+
+### Features
+
+* Add GHO Gnosis addresses ([#1035](https://github.com/bgd-labs/aave-address-book/issues/1035)) ([5c054c3](https://github.com/bgd-labs/aave-address-book/commit/5c054c3d98c133dce1a736b59208452f508b7f59))
+
 ## [4.28.3](https://github.com/bgd-labs/aave-address-book/compare/v4.28.2...v4.28.3) (2025-09-02)
 
 

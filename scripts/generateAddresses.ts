@@ -72,6 +72,7 @@ import { ghoArbitrum } from './configs/gho/arbitrum';
 import { ghoAvalanche } from './configs/gho/avalanche';
 import { ghoBase } from './configs/gho/base';
 import { ghoEthereum } from './configs/gho/ethereum';
+import { ghoGnosis } from './configs/gho/gnosis';
 import { generateGho } from './generator/ghoGenerator';
 import { governanceConfigLinea } from './configs/governance/linea';
 import { mantleAddresses } from './configs/networks/mantle';
@@ -167,7 +168,7 @@ async function main() {
       inkProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche].map((config) =>
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis].map((config) =>
     generateGho(config),
   );
   const umbrellaAddresses = await Promise.all(
