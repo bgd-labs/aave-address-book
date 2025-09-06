@@ -576,13 +576,15 @@ library AaveV3ArbitrumEModes {
 
   uint8 internal constant ETH_CORRELATED = 2;
 
-  uint8 internal constant EZETH_WSTETH = 3;
+  uint8 internal constant EZETH_WSTETH_WETH_ETH_CORRELATED = 3;
 
   uint8 internal constant EZETH_STABLECOINS = 4;
 
-  uint8 internal constant RSETH_WSTETH = 5;
+  uint8 internal constant RSETH_WSTETH_WETH_ETH_CORRELATED = 5;
 
   uint8 internal constant RSETH_STABLECOINS = 6;
+
+  uint8 internal constant WSTETH_WETH_ETH_CORRELATED = 7;
 }
 library AaveV3ArbitrumExternalLibraries {
   // https://arbiscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
