@@ -31,6 +31,7 @@ import { celoProtoV3 } from './configs/pools/celo';
 import { sonicProtoV3 } from './configs/pools/sonic';
 import { soneiumProtoV3 } from './configs/pools/soneium';
 import { inkProtoV3 } from './configs/pools/ink';
+import { plasmaProtoV3 } from './configs/pools/plasma';
 import { generateGovernanceLibrary } from './generator/governanceV3Generator';
 import { generateProtocolV2Library } from './generator/protocolV2Generator';
 import { generateProtocolV3Library } from './generator/protocolV3Generator';
@@ -78,6 +79,7 @@ import { governanceConfigLinea } from './configs/governance/linea';
 import { mantleAddresses } from './configs/networks/mantle';
 import { sonicAddresses } from './configs/networks/sonic';
 import { soneiumAddresses } from './configs/networks/soneium';
+import { plasmaAddresses } from './configs/networks/plasma';
 import { governanceConfigMantle } from './configs/governance/mantle';
 import { governanceConfigSonic } from './configs/governance/sonic';
 import { umbrellaMainnetConfig } from './configs/umbrella/ethereum';
@@ -166,6 +168,7 @@ async function main() {
       sonicProtoV3,
       soneiumProtoV3,
       inkProtoV3,
+      plasmaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis].map((config) =>
@@ -208,6 +211,7 @@ async function main() {
     soneiumAddresses,
     inkAddresses,
     inkWhiteLabelAddresses,
+    plasmaAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
