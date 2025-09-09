@@ -354,11 +354,14 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '3': {
-    label: 'ezETH wstETH',
+    label: 'ezETH/wstETH/WETH ETH Correlated',
     collateralBitmap: '131072',
     collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
-    borrowableBitmap: '256',
-    borrowableAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
+    borrowableBitmap: '272',
+    borrowableAssets: [
+      '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      '0x5979D7b546E38E414F7E9822514be443A4800529',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -377,11 +380,14 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '5': {
-    label: 'rsETH wstETH',
+    label: 'rsETH/wstETH/WETH ETH Correlated',
     collateralBitmap: '262144',
     collateralAssets: ['0x4186BFC76E2E237523CBC30FD220FE055156b41F'],
-    borrowableBitmap: '256',
-    borrowableAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
+    borrowableBitmap: '272',
+    borrowableAssets: [
+      '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      '0x5979D7b546E38E414F7E9822514be443A4800529',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -398,6 +404,16 @@ export const E_MODES = {
     ltv: 7200,
     liquidationThreshold: 7500,
     liquidationBonus: 10750,
+  },
+  '7': {
+    label: 'wstETH/WETH ETH Correlated',
+    collateralBitmap: '256',
+    collateralAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
+    borrowableBitmap: '16',
+    borrowableAssets: ['0x82aF49447D8a07e3bd95BD0d56f35241523fBab1'],
+    ltv: 9400,
+    liquidationThreshold: 9600,
+    liquidationBonus: 10100,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
