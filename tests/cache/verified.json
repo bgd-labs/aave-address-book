@@ -3581,6 +3581,30 @@
     },
     "0xa665bB258D2a732C170dFD505924214c0b1AC74F": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe6A934089BBEe34F832060CE98848359883749B3": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x285866acB0d60105B4Ed350a463361c2d9afA0E2": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x690Df181701C11C53EA33bBF303C25834b66bD14": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8B8B73598a2c4b1de6d3b075618434CfC4826632": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x62C6E813b9589C3631Ba0Cdb013acdB8544038B7": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x38C503a438185cDE29b5cF4dC1442FD6F074F1cc": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2CE7e7b238985A8aD3863De03F200B245B0c1216": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6A196A7B498C4EFBFEfB55364106EC80CceF0C3F": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "10": {
