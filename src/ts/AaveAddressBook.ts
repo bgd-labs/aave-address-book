@@ -18,6 +18,7 @@ export * as GovernanceV3Sonic from './GovernanceV3Sonic';
 export * as GovernanceV3Soneium from './GovernanceV3Soneium';
 export * as GovernanceV3Ink from './GovernanceV3Ink';
 export * as GovernanceV3InkWhitelabel from './GovernanceV3InkWhitelabel';
+export * as GovernanceV3Plasma from './GovernanceV3Plasma';
 export * as AaveV1 from './AaveV1';
 export * as AaveV2EthereumAMM from './AaveV2EthereumAMM';
 export * as AaveV2EthereumArc from './AaveV2EthereumArc';

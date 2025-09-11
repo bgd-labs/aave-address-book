@@ -62,9 +62,6 @@ export const STX_USD = '0x3a9659C071dD3C37a8b1A2363409A8D41B2Feae3';
 // https://arbiscan.io/address/0x03a1f4b19aaeA6e68f0f104dc4346dA3E942cC45
 export const wOETH_OETH_Exchange_Rate = '0x03a1f4b19aaeA6e68f0f104dc4346dA3E942cC45';
 
-// https://arbiscan.io/address/0x761aaeBf021F19F198D325D7979965D0c7C9e53b
-export const OHMv2_USD = '0x761aaeBf021F19F198D325D7979965D0c7C9e53b';
-
 // https://arbiscan.io/address/0xB4AD57B52aB9141de9926a3e0C8dc6264c2ef205
 export const XRP_USD = '0xB4AD57B52aB9141de9926a3e0C8dc6264c2ef205';
 
@@ -79,6 +76,9 @@ export const LUSD_USD = '0x0411D28c94d85A36bC72Cb0f875dfA8371D8fFfF';
 
 // https://arbiscan.io/address/0x85bb02E0Ae286600d1c68Bb6Ce22Cc998d411916
 export const KRW_USD = '0x85bb02E0Ae286600d1c68Bb6Ce22Cc998d411916';
+
+// https://arbiscan.io/address/0x4a85B128EBDaFC24d5CB611e161376ffDECeB289
+export const SUI_USD = '0x4a85B128EBDaFC24d5CB611e161376ffDECeB289';
 
 // https://arbiscan.io/address/0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3
 export const USDC_USD = '0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3';
@@ -136,6 +136,9 @@ export const LBTC_BTC = '0x9fa74925F21ad6C86d8f402EF490cFbA2Fa5e9bE';
 
 // https://arbiscan.io/address/0x875C69Da7AE092E4Dc277171e9c373718DDB25E2
 export const yUSD_USD_Exchange_Rate = '0x875C69Da7AE092E4Dc277171e9c373718DDB25E2';
+
+// https://arbiscan.io/address/0x640F0B3e8Ee59bD7310C3E16B93f4c6612CC1130
+export const vyUSD_USD_Exchange_Rate = '0x640F0B3e8Ee59bD7310C3E16B93f4c6612CC1130';
 
 // https://arbiscan.io/address/0x8f1dF6D7F2db73eECE86a18b4381F4707b918FB1
 export const wrsETH_rsETH_Exchange_Rate = '0x8f1dF6D7F2db73eECE86a18b4381F4707b918FB1';
@@ -214,6 +217,9 @@ export const COMP_USD = '0xe7C53FFd03Eb6ceF7d208bC4C13446c76d1E5884';
 
 // https://arbiscan.io/address/0xBE5eA816870D11239c543F84b71439511D70B94f
 export const BAL_USD = '0xBE5eA816870D11239c543F84b71439511D70B94f';
+
+// https://arbiscan.io/address/0xBf4C6D59070F5649670E3d4f9033673D3489c4E9
+export const RYT_NAV = '0xBf4C6D59070F5649670E3d4f9033673D3489c4E9';
 
 // https://arbiscan.io/address/0xdE9f0894670c4EFcacF370426F10C3AD2Cdf147e
 export const MKR_USD = '0xdE9f0894670c4EFcacF370426F10C3AD2Cdf147e';
@@ -305,6 +311,9 @@ export const GRT_USD = '0x0F38D86FceF4955B705F35c9e41d1A16e0637c73';
 // https://arbiscan.io/address/0xCDA67618e51762235eacA373894F0C79256768fa
 export const ATOM_USD = '0xCDA67618e51762235eacA373894F0C79256768fa';
 
+// https://arbiscan.io/address/0x920E09A98f83b82701207BA7E433a5b53eCB888A
+export const ATH_USD = '0x920E09A98f83b82701207BA7E433a5b53eCB888A';
+
 // https://arbiscan.io/address/0x9C4424Fd84C6661F97D8d6b3fc3C1aAc2BeDd137
 export const GBP_USD = '0x9C4424Fd84C6661F97D8d6b3fc3C1aAc2BeDd137';
 
@@ -332,6 +341,9 @@ export const cbETH_ETH_Exchange_Rate = '0x0518673439245BB95A58688Bc31cd513F3D5bD
 // https://arbiscan.io/address/0xF0d38324d1F86a176aC727A4b0c43c9F9d9c5EB1
 export const SGD_USD = '0xF0d38324d1F86a176aC727A4b0c43c9F9d9c5EB1';
 
+// https://arbiscan.io/address/0xF8722c901675C4F2F7824E256B8A6477b2c105FB
+export const syrupUSDC_USDC_Exchange_Rate = '0xF8722c901675C4F2F7824E256B8A6477b2c105FB';
+
 // https://arbiscan.io/address/0x395D5c5D552Df670dc4B2B1cef0c4EABfFba492f
 export const gmBTC_USD = '0x395D5c5D552Df670dc4B2B1cef0c4EABfFba492f';
 
@@ -355,6 +367,9 @@ export const ENA_USD = '0x9eE96caa9972c801058CAA8E23419fc6516FbF7e';
 
 // https://arbiscan.io/address/0x24ceA4b8ce57cdA5058b924B9B9987992450590c
 export const SOL_USD = '0x24ceA4b8ce57cdA5058b924B9B9987992450590c';
+
+// https://arbiscan.io/address/0x0C997958ccE7A0403AEA7E34d14bbaDA897B5bb3
+export const PUMP_USD = '0x0C997958ccE7A0403AEA7E34d14bbaDA897B5bb3';
 
 // https://arbiscan.io/address/0x2483326d19f780Fb082f333Fe124e4C075B207ba
 export const sUSDS_USDS_Exchange_Rate = '0x2483326d19f780Fb082f333Fe124e4C075B207ba';
@@ -515,6 +530,9 @@ export const tETH_wstETH_Exchange_Rate = '0x98a977Ba31C72aeF2e15B950Eb5Ae3158863
 // https://arbiscan.io/address/0x4bC735Ef24bf286983024CAd5D03f0738865Aaef
 export const _1INCH_USD = '0x4bC735Ef24bf286983024CAd5D03f0738865Aaef';
 
+// https://arbiscan.io/address/0x3b9c34dC5B6BfC1dE896496aFCEf1ca705D0c762
+export const XDC_USD = '0x3b9c34dC5B6BfC1dE896496aFCEf1ca705D0c762';
+
 // https://arbiscan.io/address/0x3dD6e51CB9caE717d5a8778CF79A04029f9cFDF8
 export const JPY_USD = '0x3dD6e51CB9caE717d5a8778CF79A04029f9cFDF8';
 
@@ -526,6 +544,9 @@ export const wstETH_stETH_Exchange_Rate = '0xB1552C5e96B312d0Bf8b554186F846C4061
 
 // https://arbiscan.io/address/0xbcD8bEA7831f392bb019ef3a672CC15866004536
 export const CV_Index = '0xbcD8bEA7831f392bb019ef3a672CC15866004536';
+
+// https://arbiscan.io/address/0xdc49F292ad1bb3DAb6C11363d74ED06F38b9bd9C
+export const APT_USD = '0xdc49F292ad1bb3DAb6C11363d74ED06F38b9bd9C';
 
 // https://arbiscan.io/address/0xBF5C3fB2633e924598A46B9D07a174a9DBcF57C0
 export const NEAR_USD = '0xBF5C3fB2633e924598A46B9D07a174a9DBcF57C0';

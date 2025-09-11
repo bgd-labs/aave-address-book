@@ -87,6 +87,7 @@ import { umbrellaBaseSepoliaConfig } from './configs/umbrella/base';
 import { generateChainlink } from './generator/chainlink';
 import { governanceConfigSoneium } from './configs/governance/soneium';
 import { governanceConfigInk, governanceConfigInkWhiteLabel } from './configs/governance/ink';
+import { governanceConfigPlasma } from './configs/governance/plasma';
 
 async function main() {
   // cleanup ts artifacts
@@ -123,6 +124,7 @@ async function main() {
       governanceConfigSoneium,
       governanceConfigInk,
       governanceConfigInkWhiteLabel,
+      governanceConfigPlasma,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();

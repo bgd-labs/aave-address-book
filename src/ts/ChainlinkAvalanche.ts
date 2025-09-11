@@ -5,6 +5,9 @@ export const WBTCe_Proof_of_Reserves = '0xebEfEAA58636DF9B20a4fAd78Fad8759e6A20e
 // https://snowscan.xyz/address/0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e
 export const SAND_USD = '0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e';
 
+// https://snowscan.xyz/address/0x1ff75B09dC8B749252F46ec482c8a4700Eb6C644
+export const savUSD_vUSD_Exchange_Rate = '0x1ff75B09dC8B749252F46ec482c8a4700Eb6C644';
+
 // https://snowscan.xyz/address/0x01752eAAB988ECb0ceBa2C8FC97c4f1d38Bf246D
 export const SNX_USD = '0x01752eAAB988ECb0ceBa2C8FC97c4f1d38Bf246D';
 
@@ -162,6 +165,9 @@ export const MKR_USD = '0x3E54eB0475051401D093702A5DB84EFa1Ab77b14';
 // https://snowscan.xyz/address/0xc43861646Cdc051D04CA0c9dF2265FFcFa0dF6f3
 export const MATICX_USD_Calculated = '0xc43861646Cdc051D04CA0c9dF2265FFcFa0dF6f3';
 
+// https://snowscan.xyz/address/0xC63eD21bb4577Ff5a762591c73D4b0BCCfAD7AEb
+export const syrupUSDC_USDC_Exchange_Rate = '0xC63eD21bb4577Ff5a762591c73D4b0BCCfAD7AEb';
+
 // https://snowscan.xyz/address/0xD73a74314AcCb53b30cAfDA0cb61c9772B57C4a2
 export const DOT_USD = '0xD73a74314AcCb53b30cAfDA0cb61c9772B57C4a2';
 
@@ -191,6 +197,9 @@ export const JPY_USD = '0xf8B283aD4d969ECFD70005714DD5910160565b94';
 
 // https://snowscan.xyz/address/0x9D6AA0AC8c4818433bEA7a74F49C73B57BcEC4Ec
 export const COMP_USD = '0x9D6AA0AC8c4818433bEA7a74F49C73B57BcEC4Ec';
+
+// https://snowscan.xyz/address/0x55b5dc7d7CDD5d3b2Eb189bf11140839076E5d40
+export const xSolvBTC_NAV = '0x55b5dc7d7CDD5d3b2Eb189bf11140839076E5d40';
 
 // https://snowscan.xyz/address/0x9Cf3Ef104A973b351B2c032AA6793c3A6F76b448
 export const TUSD_USD = '0x9Cf3Ef104A973b351B2c032AA6793c3A6F76b448';
@@ -233,6 +242,9 @@ export const USDT_USD = '0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a';
 
 // https://snowscan.xyz/address/0x7CF8A6090A9053B01F3DF4D4e6CfEdd8c90d9027
 export const CRV_USD = '0x7CF8A6090A9053B01F3DF4D4e6CfEdd8c90d9027';
+
+// https://snowscan.xyz/address/0x80091AEc326bE58223620D827fd5189FaC8b43C0
+export const savBTC_avBTC_Exchange_Rate = '0x80091AEc326bE58223620D827fd5189FaC8b43C0';
 
 // https://snowscan.xyz/address/0x0d2807dc7FA52d3B38be564B64a2b37753C49AdD
 export const EmCH_Reserves = '0x0d2807dc7FA52d3B38be564B64a2b37753C49AdD';
