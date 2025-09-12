@@ -26,6 +26,9 @@ export const WBTC_USD = '0x75196350e8F9Ffa8e6a917E3C6E073D24F458781';
 // https://soneium.blockscout.com/address/0x2580FA33f9dfD9D26F1aC418E09113f3E9c316c2
 export const Calculated_wstASTR_USD = '0x2580FA33f9dfD9D26F1aC418E09113f3E9c316c2';
 
+// https://soneium.blockscout.com/address/0x316DefA0f4BA9567aF55E66212e66b4fD6646eEE
+export const USR_USD = '0x316DefA0f4BA9567aF55E66212e66b4fD6646eEE';
+
 // https://soneium.blockscout.com/address/0xF049354158e13F6794A3cCD236694E0e1BD9AF79
 export const OUSDT_USD = '0xF049354158e13F6794A3cCD236694E0e1BD9AF79';
 
@@ -47,7 +50,13 @@ export const LINK_USD = '0x5f01955B7048d1aC6F8023A5508963617f9FE4f8';
 // https://soneium.blockscout.com/address/0xBa5C28f78eFdC03C37e2C46880314386aFf43228
 export const ASTR_USD = '0xBa5C28f78eFdC03C37e2C46880314386aFf43228';
 
+// https://soneium.blockscout.com/address/0xD5046A1128a57BDc609332A41Cfda72dAd623BC5
+export const wstUSR_stUSR_Exchange_Rate = '0xD5046A1128a57BDc609332A41Cfda72dAd623BC5';
+
 // https://soneium.blockscout.com/address/0x931602D8758E7A891Dce57A31c2A23A98931Fe1c
 export const stETH_ETH = '0x931602D8758E7A891Dce57A31c2A23A98931Fe1c';
+
+// https://soneium.blockscout.com/address/0x42237D7d96A4178bB22498bb3B2C689D502DE847
+export const xSolvBTC_NAV = '0x42237D7d96A4178bB22498bb3B2C689D502DE847';
 
 export const CHAIN_ID = 1868;

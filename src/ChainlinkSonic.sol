@@ -79,6 +79,9 @@ library ChainlinkSonic {
   // https://sonicscan.org/address/0xCdF021EbD115b1B225801F4056c40F4Ff14A574d
   address internal constant solvBTC_BTC = 0xCdF021EbD115b1B225801F4056c40F4Ff14A574d;
 
+  // https://sonicscan.org/address/0x419BB1910D6e13DCF8Fcd87E01C5B826493c1845
+  address internal constant vyUSD_USD_Exchange_Rate = 0x419BB1910D6e13DCF8Fcd87E01C5B826493c1845;
+
   // https://sonicscan.org/address/0xf97A2074fCCFDcD2FF567faEbfE235eCF0091c3D
   address internal constant stS_S_Exchange_Rate = 0xf97A2074fCCFDcD2FF567faEbfE235eCF0091c3D;
 
@@ -88,6 +91,9 @@ library ChainlinkSonic {
 
   // https://sonicscan.org/address/0xdB17996a889706Bd67771dEa59E0Bf9453aF0CE4
   address internal constant stS_USD = 0xdB17996a889706Bd67771dEa59E0Bf9453aF0CE4;
+
+  // https://sonicscan.org/address/0x5c042362ecB555D9fb554E4ee1821Aa6762D9239
+  address internal constant xSolvBTC_NAV = 0x5c042362ecB555D9fb554E4ee1821Aa6762D9239;
 
   // https://sonicscan.org/address/0x3c6490e4c60BD8246071A014AaCE7A596d392642
   address internal constant wanS_anS_Exchange_Rate = 0x3c6490e4c60BD8246071A014AaCE7A596d392642;
