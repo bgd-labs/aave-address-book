@@ -935,7 +935,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10180,
+    liquidationBonus: 10150,
   },
   '21': {
     label: 'tETH/Stablecoins',
