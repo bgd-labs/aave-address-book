@@ -890,7 +890,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10380,
+    liquidationBonus: 10350,
   },
   '18': {
     label: 'PT-sUSDe USDe September 2025',
