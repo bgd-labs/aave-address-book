@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.30.0](https://github.com/bgd-labs/aave-address-book/compare/v4.29.3...v4.30.0) (2025-09-15)
+
+
+### Features
+
+* add plasma contracts ([#1065](https://github.com/bgd-labs/aave-address-book/issues/1065)) ([a0c2498](https://github.com/bgd-labs/aave-address-book/commit/a0c2498d496421565ca1a6c87f5b3e10e5bcc65b))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1071](https://github.com/bgd-labs/aave-address-book/issues/1071)) ([a69d9e4](https://github.com/bgd-labs/aave-address-book/commit/a69d9e4479ed629daa9c967206e4e025b0e01301))
+
 ## [4.29.3](https://github.com/bgd-labs/aave-address-book/compare/v4.29.2...v4.29.3) (2025-09-11)
 
 
