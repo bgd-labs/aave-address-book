@@ -3680,6 +3680,42 @@
     },
     "0xAbE7a3643615Ed32d3431e11E0Ee5A486Cb27d48": {
       "name": "EACAggregatorProxy"
+    },
+    "0x1e9cb00c0AC8d2a171f44E63bE7532AD7224F6D1": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x2F1494543bffb3022bf8Cb18C251D2286C98A85F": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x2b94a8B3E478a2984A0b50a4bB0F19827Ad0cef3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x171e3Ec9377FeBad8d26967f1B1d6383Ae037997": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4e25cfdc5f53c2CdeD13c1472E628eFd35c99C83": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA5265f5B54D0AdD0D48BE88BC3CB0Cdb1a54B816": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xB06A26DF4Ab5853AaCCF2d21FAa00B82362684C3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x46cE854814ea38A4857AeA23aE7759b3A7970e4a": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x14f0737d6b705259e521EA6E9E3506AC78dBd311": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x64c4c1BF5ec145CB6095A289249592B5bb007098": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x16caE6d6ffb4AE01e206b928de925Ac0C8C8116A": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x14E5FC91Ddb3f97C33013Cc9fA74F54062Ad1Aa1": {
+      "name": "EACAggregatorProxy"
     }
   },
   "10": {
@@ -4756,6 +4792,24 @@
     },
     "0x46C627150f7993CB71F12E158478546F5Fe060FF": {
       "name": "EACAggregatorProxy"
+    },
+    "0x8158d24603296Ce54ba903c7D5299E3B6744b555": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xc3cda94d924Eb5c1b0b64e05F01487d30dA3f235": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xfBe83018d075bDD6AffBe85E5F1E37f0b43bf1F6": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA369969F522Fda5Ce1D3823d07A393C27b74f723": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xE036C2B215B2533BCE1c9D0436728cE8ABE5665D": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x3E75C48A27b54dEEc3381689CfA9Ce41Ca55C050": {
+      "name": "EACAggregatorProxy"
     }
   },
   "56": {
@@ -5654,6 +5708,24 @@
       "name": "EACAggregatorProxy"
     },
     "0x90d36D4909730c390546ac288c5C7bEc3f62FF4D": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x83B8DF906c631dD7460Ac875Dc02A62db1dcD37A": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x08CA3ac4dE41F2791e8A247859d637a8977473D7": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x68ff0d4499c68Cf4471143930422ae8F17f6Cd58": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA40a0dC23D3A821fF5Ea9E23080B74DAC031158d": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8fCC2d2973e3740c40aF00d030725A429cd24b57": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xD3F669EF5C364C14d353F46b1D1a048A846e00f1": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -7666,6 +7738,15 @@
     },
     "0xdefcBDC0a5f5fBBdF520dC97be8d6d025B18da05": {
       "name": "EACAggregatorProxy"
+    },
+    "0xD2D1BdD220C35C27f70a2bE1eD6462cECAc76384": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x2A5e28b4F9Ecb01807CeEC25F7b0fcCafF3F6721": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x6b20c92A1D73A9232383DEcD698Ff559eFa0c31A": {
+      "name": "EACAggregatorProxy"
     }
   },
   "146": {
@@ -8024,6 +8105,27 @@
       "name": "EACAggregatorProxy"
     },
     "0x5c042362ecB555D9fb554E4ee1821Aa6762D9239": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xD83083D9D899fB185CcaA8EC63F0582A2970373E": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xB8deBF17f62838F56e4abc923aef4ad4716C105B": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xba7e8ea9B592c0E6731000b9a186581224a09f69": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x852aE0B1Af1aAeDB0fC4428B4B24420780976ca8": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA1d23D3FE32Ef45774D0f2170a7BEf21da09566b": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x791b0Ece46914A7995CEbe6a62d6Be8A3c7b7FAF": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7f9506FcBBc9881a316a0CacD0ae6958EE2b5c7d": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -8386,6 +8488,27 @@
       "name": "SupplyLogic"
     },
     "0x7e161604Da57DF30bbC9f0C166e8163fB9147a7a": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x11353117EB9cd5179Bb7F54BB22d8274dc4f1db7": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x2CfAb79113c81ebD672bC77c5B88Fc803b64cA77": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x6E2Eb2F1E5d31Db83B6982a3E753F8615565fD1f": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xC7Bd1Ea3ec9D08C3068a63b7bd39799061bbb787": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x43b29AF5d5527ebe35c4788810D11BdbA9205669": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x372A10990183E99FB29D4905b71f807ca5474827": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xFc325A8E212319855906C9d02d7795C06baa5fBD": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -9303,6 +9426,27 @@
       "name": "EACAggregatorProxy"
     },
     "0x02959651ED50f9866BF39D29884dF245D03FdC51": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8A6D34330E8F61364a62899fD0a8F4C4021e3296": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x5fc69E6bA39D9150D41B4FFBDa3Deb1b9Bd4611A": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x80C42686a5F953d3c629cb5a35BCC86B1Ddd21e3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4F923DaC0871d29E6147C27Fb7f53bEf13267E31": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x663Fa56307caa30f0C1a2d20D550E13ED85AE78d": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7b7EAf6DBA9b1B3796CF9060517D3D0b2EBA39Fc": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xaAA8b026379A2C670330F94d0e35dd5550c26EC1": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -10293,6 +10437,30 @@
     },
     "0x95051De9Db5Cac61682f64505006f2991dEaB3c2": {
       "name": "EACAggregatorProxy"
+    },
+    "0x65623109aA4561AD3cfF503542083548CeD7e085": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x491a921c41d6a97C57426E0c0108a231cd6E5f60": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x18A3fcA54FaC5B05837205bA4b823fc56191F793": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x17738F7dacFc1De7d06f22cC52211EBf68744dBA": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xe0eda54fC1362C0d7d0ff855E4fCEA79916Fe094": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x0df397aFE00085C138a99eFB39C498e08eB95aD1": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x2a18E2d46Cb067b69e0759dB39b16597fC42D962": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xe2b3688371130f333443428Cf03f27Ce0378F9dC": {
+      "name": "EACAggregatorProxy"
     }
   },
   "9745": {
@@ -10397,6 +10565,15 @@
     },
     "0xEf323B194caD8e02D9E5D8F07B34f625f1c088f1": {
       "name": "SafeProxy"
+    },
+    "0x643441742f73e270e565619be6DE5f4D55E08cd6": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xe76EB348E65eF163d85ce282125FF5a7F5712A1d": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7B9c12915c594a68dE96201Cbdc79147F09da278": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "42161": {
@@ -11787,6 +11964,39 @@
       "name": "EACAggregatorProxy"
     },
     "0xdc49F292ad1bb3DAb6C11363d74ED06F38b9bd9C": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x6BC7fF3C21f005684ef834FBA4d88459e988CcdC": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4b13Dd76De990Db9A2Dab58D35C2c02E5e3AE848": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xE9Bd4Ca2CDacb56cd06c9C4C5231e69c33340B3c": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xb966F82183E41208f594586BBF04bb6163571C48": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x926Eed7973EBc57a8767659C5b35b9a0bAB6302f": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x5Fb8E23065C362080E540e01e0bd4119B6cB53fe": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xAE8B4179389059A735821A77417eACcA60f3e4B4": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x326fA29b208DE897981C78827b8ffDbfa355590b": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xDC1a8F77Cdc46D1Fb7F22F94dFCA4dDBf566fA23": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x552c92c0C09A73d569Ab52FF4C17a153C3472BE3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x066Ba4567C40cB315EAd257Bd86585bb4a74004f": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -13300,6 +13510,24 @@
     },
     "0x80091AEc326bE58223620D827fd5189FaC8b43C0": {
       "name": "EACAggregatorProxy"
+    },
+    "0x3Eb06AE1Ef3adE7B529Fcce522611c6A044697cC": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x665Fa131DE7af7606c785F26e66d07cA43a274D9": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x273e7833604F74a6f80f6B25568D29DE33570e99": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x982057Fd0A53d52E558A722ba53Ad95E702Da0dF": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x962Aba596fe6842D644c51b2F112190e6B6e94B4": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x9A9587Da4Fd5DD3C9AD47C12aFeec5073C8cFc2a": {
+      "name": "EACAggregatorProxy"
     }
   },
   "57073": {
@@ -13798,6 +14026,24 @@
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
     },
     "0x49768d7ebB7694b1e72546300cCCeD877084d72f": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x1E2286815B3D628128fbaa0F213fD53Dea9E015E": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xe5aCa1a31aD6fC61E30Ab8E4a19a9445884A1EDE": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xdAad34260E4105702278F225d3d20C453d12065e": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x9165802Ea199C36F85D53A6F71Da6AF5a6EA8951": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8d6ceb62Ce510935792BE737e30f9f61082b72b3": {
       "name": "EACAggregatorProxy"
     }
   },
