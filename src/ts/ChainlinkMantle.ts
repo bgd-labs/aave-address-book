@@ -17,6 +17,9 @@ export const ETH_USD = '0x5bc7Cf88EB131DB18b5d7930e793095140799aD5';
 // https://mantlescan.xyz/address/0x22b422CECb0D4Bd5afF3EA999b048FA17F5263bD
 export const USDC_USD = '0x22b422CECb0D4Bd5afF3EA999b048FA17F5263bD';
 
+// https://mantlescan.xyz/address/0x8A6D34330E8F61364a62899fD0a8F4C4021e3296
+export const Real_GDP_Percent_Change_Annual_Rate = '0x8A6D34330E8F61364a62899fD0a8F4C4021e3296';
+
 // https://mantlescan.xyz/address/0x5871AdBEEdAD531C68A8FD32fE86f07d6b4C645d
 export const LINK_USD = '0x5871AdBEEdAD531C68A8FD32fE86f07d6b4C645d';
 
@@ -29,8 +32,32 @@ export const Calculated_mETH_USD = '0xB16FcAFB8378baA0a69142a325878FDCad58606A';
 // https://mantlescan.xyz/address/0x6352E3A925E27130317d3A0A5b0b0303e9f2fc7c
 export const mETH_ETH = '0x6352E3A925E27130317d3A0A5b0b0303e9f2fc7c';
 
+// https://mantlescan.xyz/address/0x5fc69E6bA39D9150D41B4FFBDa3Deb1b9Bd4611A
+export const Real_GDP_Level = '0x5fc69E6bA39D9150D41B4FFBDa3Deb1b9Bd4611A';
+
+// https://mantlescan.xyz/address/0x02959651ED50f9866BF39D29884dF245D03FdC51
+export const Calculated_cmETH_ETH = '0x02959651ED50f9866BF39D29884dF245D03FdC51';
+
+// https://mantlescan.xyz/address/0x80C42686a5F953d3c629cb5a35BCC86B1Ddd21e3
+export const Calculated_cmETH_USD = '0x80C42686a5F953d3c629cb5a35BCC86B1Ddd21e3';
+
 // https://mantlescan.xyz/address/0x73b15e19b247263D03D7938f1356304b7B330Ff0
 export const Calculated_FBTC_USD = '0x73b15e19b247263D03D7938f1356304b7B330Ff0';
+
+// https://mantlescan.xyz/address/0x4F923DaC0871d29E6147C27Fb7f53bEf13267E31
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
+  '0x4F923DaC0871d29E6147C27Fb7f53bEf13267E31';
+
+// https://mantlescan.xyz/address/0x663Fa56307caa30f0C1a2d20D550E13ED85AE78d
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
+  '0x663Fa56307caa30f0C1a2d20D550E13ED85AE78d';
+
+// https://mantlescan.xyz/address/0x7b7EAf6DBA9b1B3796CF9060517D3D0b2EBA39Fc
+export const PCE_Price_Index_Level = '0x7b7EAf6DBA9b1B3796CF9060517D3D0b2EBA39Fc';
+
+// https://mantlescan.xyz/address/0xaAA8b026379A2C670330F94d0e35dd5550c26EC1
+export const PCE_Price_Index_Percent_Change_Annual_Rate =
+  '0xaAA8b026379A2C670330F94d0e35dd5550c26EC1';
 
 // https://mantlescan.xyz/address/0x6d5110FB8F6a65c46B89a64C9ac7E3542D31AbA3
 export const sUSDe_USD = '0x6d5110FB8F6a65c46B89a64C9ac7E3542D31AbA3';

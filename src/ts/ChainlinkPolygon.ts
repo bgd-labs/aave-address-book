@@ -5,6 +5,9 @@ export const BTC_USD = '0xc907E116054Ad103354f2D350FD2514433D57F6f';
 // https://polygonscan.com/address/0xDE31F8bFBD8c84b5360CFACCa3539B938dd78ae6
 export const WBTC_USD = '0xDE31F8bFBD8c84b5360CFACCa3539B938dd78ae6';
 
+// https://polygonscan.com/address/0xD2D1BdD220C35C27f70a2bE1eD6462cECAc76384
+export const VanEck_SMH_MID_iNAV = '0xD2D1BdD220C35C27f70a2bE1eD6462cECAc76384';
+
 // https://polygonscan.com/address/0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299
 export const SGD_USD = '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299';
 
@@ -13,6 +16,9 @@ export const PHP_USD = '0x218231089Bebb2A31970c3b77E96eCfb3BA006D1';
 
 // https://polygonscan.com/address/0x2251169D32E7538652a9a8c86bf0c43bFcd956f1
 export const QUICK_USD = '0x2251169D32E7538652a9a8c86bf0c43bFcd956f1';
+
+// https://polygonscan.com/address/0x2A5e28b4F9Ecb01807CeEC25F7b0fcCafF3F6721
+export const wstPOL_POL_Exchange_Rate = '0x2A5e28b4F9Ecb01807CeEC25F7b0fcCafF3F6721';
 
 // https://polygonscan.com/address/0x461c7B8D370a240DdB46B402748381C3210136b3
 export const XAG_USD = '0x461c7B8D370a240DdB46B402748381C3210136b3';
@@ -257,6 +263,9 @@ export const XPT_USD = '0x76631863c2ae7367aF8f37Cd10d251DA7f1DE186';
 // https://polygonscan.com/address/0x785ba89291f676b5386652eB12b30cF361020694
 export const XRP_USD = '0x785ba89291f676b5386652eB12b30cF361020694';
 
+// https://polygonscan.com/address/0x6b20c92A1D73A9232383DEcD698Ff559eFa0c31A
+export const RYT_Polygon_Proof_of_Reserves = '0x6b20c92A1D73A9232383DEcD698Ff559eFa0c31A';
+
 // https://polygonscan.com/address/0xe71A04ACe06e2667c7e1c802E998CBf44A6bf53C
 export const sUSDe_USD = '0xe71A04ACe06e2667c7e1c802E998CBf44A6bf53C';
 
@@ -439,6 +448,9 @@ export const CRV_ETH = '0x1CF68C76803c9A415bE301f50E82e44c64B7F1D4';
 
 // https://polygonscan.com/address/0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403
 export const Calculated_MaticX_USD = '0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403';
+
+// https://polygonscan.com/address/0xdefcBDC0a5f5fBBdF520dC97be8d6d025B18da05
+export const RYT_NAV = '0xdefcBDC0a5f5fBBdF520dC97be8d6d025B18da05';
 
 // https://polygonscan.com/address/0x84227A76a04289473057BEF706646199D7C58c34
 export const ICP_USD = '0x84227A76a04289473057BEF706646199D7C58c34';

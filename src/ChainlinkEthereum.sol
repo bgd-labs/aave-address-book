@@ -51,6 +51,9 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x5c9C449BbC9a6075A2c061dF312a35fd1E05fF22
   address internal constant weETH_ETH = 0x5c9C449BbC9a6075A2c061dF312a35fd1E05fF22;
 
+  // https://etherscan.io/address/0x1E41Ef40AC148706c114534E8192Ca608f80fC48
+  address internal constant JAAA_NAV_Aave_LlamaRisk = 0x1E41Ef40AC148706c114534E8192Ca608f80fC48;
+
   // https://etherscan.io/address/0x0d16d4528239e9ee52fa531af613AcdB23D88c94
   address internal constant BAT_ETH = 0x0d16d4528239e9ee52fa531af613AcdB23D88c94;
 
@@ -76,6 +79,10 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xBE456fd14720C3aCCc30A2013Bffd782c9Cb75D5
   address internal constant TUSD_Reserves = 0xBE456fd14720C3aCCc30A2013Bffd782c9Cb75D5;
 
+  // https://etherscan.io/address/0x1e9cb00c0AC8d2a171f44E63bE7532AD7224F6D1
+  address internal constant Real_GDP_Percent_Change_Annual_Rate =
+    0x1e9cb00c0AC8d2a171f44E63bE7532AD7224F6D1;
+
   // https://etherscan.io/address/0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7
   address internal constant AVAX_USD = 0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7;
 
@@ -93,6 +100,9 @@ library ChainlinkEthereum {
 
   // https://etherscan.io/address/0x1B39Ee86Ec5979ba5C322b826B3ECb8C79991699
   address internal constant COMP_ETH = 0x1B39Ee86Ec5979ba5C322b826B3ECb8C79991699;
+
+  // https://etherscan.io/address/0x2F1494543bffb3022bf8Cb18C251D2286C98A85F
+  address internal constant PCE_Price_Index_Level = 0x2F1494543bffb3022bf8Cb18C251D2286C98A85F;
 
   // https://etherscan.io/address/0xbCF5792575bA3A875D8C406F4E7270f51a902539
   address internal constant Synthetix_Aggregator_Issued_Synths =
@@ -152,6 +162,12 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x8f1dF6D7F2db73eECE86a18b4381F4707b918FB1
   address internal constant PYUSD_USD = 0x8f1dF6D7F2db73eECE86a18b4381F4707b918FB1;
 
+  // https://etherscan.io/address/0x19e2d716288751c5A59deaB61af012D5DF895962
+  address internal constant USCC_NAV_Aave_LlamaRisk = 0x19e2d716288751c5A59deaB61af012D5DF895962;
+
+  // https://etherscan.io/address/0x2b94a8B3E478a2984A0b50a4bB0F19827Ad0cef3
+  address internal constant Real_GDP_Level = 0x2b94a8B3E478a2984A0b50a4bB0F19827Ad0cef3;
+
   // https://etherscan.io/address/0xeb988B77b94C186053282BfcD8B7ED55142D3cAB
   address internal constant XCN_USD = 0xeb988B77b94C186053282BfcD8B7ED55142D3cAB;
 
@@ -173,15 +189,35 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x759bBC1be8F90eE6457C44abc7d443842a976d02
   address internal constant RSR_USD = 0x759bBC1be8F90eE6457C44abc7d443842a976d02;
 
-  // https://etherscan.io/address/0x5586bF404C7A22A4a4077401272cE5945f80189C
-  address internal constant CacheGold_Proof_of_Reserves_USD =
-    0x5586bF404C7A22A4a4077401272cE5945f80189C;
+  // https://etherscan.io/address/0x69B50fF403E995d9c4441a303438D9049dAC8cCD
+  address internal constant SVR_COMP_USD = 0x69B50fF403E995d9c4441a303438D9049dAC8cCD;
+
+  // https://etherscan.io/address/0x203e994f3908cF886C6155c31742557D82c9B4a2
+  address internal constant SVR_COMP_USD_BASE = 0x203e994f3908cF886C6155c31742557D82c9B4a2;
 
   // https://etherscan.io/address/0xEBca574f1cE4d17cd02c20F47Ef8210C08Cc4255
   address internal constant AVAIL_USD = 0xEBca574f1cE4d17cd02c20F47Ef8210C08Cc4255;
 
   // https://etherscan.io/address/0x194a9AaF2e0b67c35915cD01101585A33Fe25CAa
   address internal constant ALCX_ETH = 0x194a9AaF2e0b67c35915cD01101585A33Fe25CAa;
+
+  // https://etherscan.io/address/0x393899FeF73E3C08100BF9b8a78bA84769Fa5B96
+  address internal constant SVR_CRCLon_USD = 0x393899FeF73E3C08100BF9b8a78bA84769Fa5B96;
+
+  // https://etherscan.io/address/0xC0457F67cac4eb0567A208955C332897a597A207
+  address internal constant SVR_CRCLon_USD_BASE = 0xC0457F67cac4eb0567A208955C332897a597A207;
+
+  // https://etherscan.io/address/0xED4E679adAFA9aBC97a3fA797dEE000d7b0ed247
+  address internal constant SVR_TSLAon_USD = 0xED4E679adAFA9aBC97a3fA797dEE000d7b0ed247;
+
+  // https://etherscan.io/address/0x737401E0D1299D8A85b653Fd52823501f4FE0be0
+  address internal constant SVR_TSLAon_USD_BASE = 0x737401E0D1299D8A85b653Fd52823501f4FE0be0;
+
+  // https://etherscan.io/address/0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183
+  address internal constant SVR_LINK_USD = 0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183;
+
+  // https://etherscan.io/address/0x76F8C9E423C228E83DCB11d17F0Bd8aEB0Ca01bb
+  address internal constant SVR_LINK_USD_BASE = 0x76F8C9E423C228E83DCB11d17F0Bd8aEB0Ca01bb;
 
   // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
   address internal constant BTC_USD = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
@@ -219,6 +255,9 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x66704DAD467A7cA508B3be15865D9B9F3E186c90
   address internal constant USDtb_USD = 0x66704DAD467A7cA508B3be15865D9B9F3E186c90;
 
+  // https://etherscan.io/address/0x5c7a079dbf188dAbc66e389482849b05ACB17421
+  address internal constant DOLO_USD = 0x5c7a079dbf188dAbc66e389482849b05ACB17421;
+
   // https://etherscan.io/address/0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5
   address internal constant GBP_USD = 0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5;
 
@@ -237,6 +276,9 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xC8cd82067eA907EA4af81b625d2bB653E21b5156
   address internal constant eETH_Proof_of_Reserves = 0xC8cd82067eA907EA4af81b625d2bB653E21b5156;
 
+  // https://etherscan.io/address/0xADcc914F882965Ef1B2f1043522b3B81ED081491
+  address internal constant BGBTC_Proof_of_Reserves = 0xADcc914F882965Ef1B2f1043522b3B81ED081491;
+
   // https://etherscan.io/address/0x9a51192e065ECC6BDEafE5e194ce54702DE4f1f5
   address internal constant Consumer_Price_Index = 0x9a51192e065ECC6BDEafE5e194ce54702DE4f1f5;
 
@@ -248,6 +290,10 @@ library ChainlinkEthereum {
 
   // https://etherscan.io/address/0x461790bDAF5aeD3df6a88cB97Dec42DD0EFA73c0
   address internal constant xSolvBTC_Proof_of_Reserves = 0x461790bDAF5aeD3df6a88cB97Dec42DD0EFA73c0;
+
+  // https://etherscan.io/address/0x171e3Ec9377FeBad8d26967f1B1d6383Ae037997
+  address internal constant SUSD1Plus_USD1_Exchange_Rate =
+    0x171e3Ec9377FeBad8d26967f1B1d6383Ae037997;
 
   // https://etherscan.io/address/0x9B4a96210bc8D9D55b1908B465D8B0de68B7fF83
   address internal constant frxUSD_USD = 0x9B4a96210bc8D9D55b1908B465D8B0de68B7fF83;
@@ -264,26 +310,20 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xa81FE04086865e63E12dD3776978E49DEEa2ea4e
   address internal constant WBTC_Proof_of_Reserves = 0xa81FE04086865e63E12dD3776978E49DEEa2ea4e;
 
-  // https://etherscan.io/address/0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183
-  address internal constant SVR_LINK_USD = 0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183;
-
-  // https://etherscan.io/address/0x76F8C9E423C228E83DCB11d17F0Bd8aEB0Ca01bb
-  address internal constant SVR_LINK_USD_BASE = 0x76F8C9E423C228E83DCB11d17F0Bd8aEB0Ca01bb;
-
   // https://etherscan.io/address/0xCc70F09A6CC17553b2E31954cD36E4A2d89501f7
   address internal constant SUSHI_USD = 0xCc70F09A6CC17553b2E31954cD36E4A2d89501f7;
 
   // https://etherscan.io/address/0x9944D86CEB9160aF5C5feB251FD671923323f8C3
   address internal constant PAXG_USD = 0x9944D86CEB9160aF5C5feB251FD671923323f8C3;
 
-  // https://etherscan.io/address/0xb4d5289C58CE36080b0748B47F859D8F50dFAACb
-  address internal constant AGEUR_EUR = 0xb4d5289C58CE36080b0748B47F859D8F50dFAACb;
-
   // https://etherscan.io/address/0xc929ad75B72593967DE83E7F7Cda0493458261D9
   address internal constant _1INCH_USD = 0xc929ad75B72593967DE83E7F7Cda0493458261D9;
 
   // https://etherscan.io/address/0x35E3f7E558C04cE7eEE1629258EcbbA03B36Ec56
   address internal constant SAND_USD = 0x35E3f7E558C04cE7eEE1629258EcbbA03B36Ec56;
+
+  // https://etherscan.io/address/0x6029F53A5Df21E5e70C460F5E4c9Aad20427B090
+  address internal constant BUIDL_NAV = 0x6029F53A5Df21E5e70C460F5E4c9Aad20427B090;
 
   // https://etherscan.io/address/0x5C00128d4d1c2F4f652C267d7bcdD7aC99C16E16
   address internal constant ENS_USD = 0x5C00128d4d1c2F4f652C267d7bcdD7aC99C16E16;
@@ -294,11 +334,20 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x03c68933f7a3F76875C0bc670a58e69294cDFD01
   address internal constant RSETH_ETH = 0x03c68933f7a3F76875C0bc670a58e69294cDFD01;
 
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
+  address internal constant SVR_BTC_USD = 0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
+
+  // https://etherscan.io/address/0x85355da30ee4b35F4B30759Bd49a1EBE3fc41Bdb
+  address internal constant SVR_BTC_USD_BASE = 0x85355da30ee4b35F4B30759Bd49a1EBE3fc41Bdb;
+
   // https://etherscan.io/address/0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9
   address internal constant DAI_USD = 0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9;
 
   // https://etherscan.io/address/0x656c0544eF4C98A6a98491833A89204Abb045d6b
   address internal constant KNC_ETH = 0x656c0544eF4C98A6a98491833A89204Abb045d6b;
+
+  // https://etherscan.io/address/0x23adce82907D20c509101E2Af0723A9e16224EFb
+  address internal constant JTRSY_NAV_Aave_LlamaRisk = 0x23adce82907D20c509101E2Af0723A9e16224EFb;
 
   // https://etherscan.io/address/0x34ad75691e25A8E9b681AAA85dbeB7ef6561B42c
   address internal constant USR_USD = 0x34ad75691e25A8E9b681AAA85dbeB7ef6561B42c;
@@ -315,11 +364,11 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xAc559F25B1619171CbC396a50854A3240b6A4e99
   address internal constant ETH_BTC = 0xAc559F25B1619171CbC396a50854A3240b6A4e99;
 
-  // https://etherscan.io/address/0x5424384B256154046E9667dDFaaa5e550145215e
-  address internal constant SVR_ETH_USD = 0x5424384B256154046E9667dDFaaa5e550145215e;
+  // https://etherscan.io/address/0xc0053f3FBcCD593758258334Dfce24C2A9A673aD
+  address internal constant SVR_ETH_USD = 0xc0053f3FBcCD593758258334Dfce24C2A9A673aD;
 
-  // https://etherscan.io/address/0x5147eA642CAEF7BD9c1265AadcA78f997AbB9649
-  address internal constant SVR_ETH_USD_BASE = 0x5147eA642CAEF7BD9c1265AadcA78f997AbB9649;
+  // https://etherscan.io/address/0xd82562bb17557231Cd871e1B2525F3AB8d63D409
+  address internal constant SVR_ETH_USD_BASE = 0xd82562bb17557231Cd871e1B2525F3AB8d63D409;
 
   // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
   address internal constant ETH_USD = 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
@@ -339,17 +388,20 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xeD9960f685C3c4d6aa937E56169a41C19D0aC9c6
   address internal constant sUSDe_USD_Calculated = 0xeD9960f685C3c4d6aa937E56169a41C19D0aC9c6;
 
-  // https://etherscan.io/address/0x079674468Fee6ab45aBfE986737A440701c49BdB
-  address internal constant USDM_USD = 0x079674468Fee6ab45aBfE986737A440701c49BdB;
-
   // https://etherscan.io/address/0x029849bbc0b1d93b85a8b6190e979fd38F5760E2
   address internal constant DPI_ETH = 0x029849bbc0b1d93b85a8b6190e979fd38F5760E2;
+
+  // https://etherscan.io/address/0xE858728eB31a25C4AcCcE17d01B68dCFC3A0ED2C
+  address internal constant LsETH_ETH_Exchange_Rate = 0xE858728eB31a25C4AcCcE17d01B68dCFC3A0ED2C;
 
   // https://etherscan.io/address/0x43921Ca0eca1EA69722c048A6afbc2CAd0BB80e9
   address internal constant _21BTC_Proof_of_Reserves = 0x43921Ca0eca1EA69722c048A6afbc2CAd0BB80e9;
 
   // https://etherscan.io/address/0xc04611C43842220fd941515F86d1DDdB15F04e46
   address internal constant SHV_USD = 0xc04611C43842220fd941515F86d1DDdB15F04e46;
+
+  // https://etherscan.io/address/0x4e25cfdc5f53c2CdeD13c1472E628eFd35c99C83
+  address internal constant SOLVBTC_BTC_Exchange_Rate = 0x4e25cfdc5f53c2CdeD13c1472E628eFd35c99C83;
 
   // https://etherscan.io/address/0xeF8A4aF35cd47424672E3C590aBD37FBB7A7759a
   address internal constant CNY_USD = 0xeF8A4aF35cd47424672E3C590aBD37FBB7A7759a;
@@ -365,6 +417,10 @@ library ChainlinkEthereum {
 
   // https://etherscan.io/address/0xf3Ab3e54DE3b4BCaEbef6C66Cec0a3a88f262757
   address internal constant USTB_AUM = 0xf3Ab3e54DE3b4BCaEbef6C66Cec0a3a88f262757;
+
+  // https://etherscan.io/address/0xA5265f5B54D0AdD0D48BE88BC3CB0Cdb1a54B816
+  address internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
+    0xA5265f5B54D0AdD0D48BE88BC3CB0Cdb1a54B816;
 
   // https://etherscan.io/address/0xD10aBbC76679a20055E167BB80A24ac851b37056
   address internal constant APE_USD = 0xD10aBbC76679a20055E167BB80A24ac851b37056;
@@ -433,17 +489,28 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x8c110B94C5f1d347fAcF5E1E938AB2db60E3c9a8
   address internal constant SPELL_USD = 0x8c110B94C5f1d347fAcF5E1E938AB2db60E3c9a8;
 
+  // https://etherscan.io/address/0xB06A26DF4Ab5853AaCCF2d21FAa00B82362684C3
+  address
+    internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
+    0xB06A26DF4Ab5853AaCCF2d21FAa00B82362684C3;
+
   // https://etherscan.io/address/0xad4A9bED9a5E2c1c9a6E43D35Db53c83873dd901
   address internal constant STBT_Proof_of_Reserves = 0xad4A9bED9a5E2c1c9a6E43D35Db53c83873dd901;
 
   // https://etherscan.io/address/0xF0985f7E2CaBFf22CecC5a71282a89582c382EFE
   address internal constant FTT_ETH = 0xF0985f7E2CaBFf22CecC5a71282a89582c382EFE;
 
+  // https://etherscan.io/address/0xE8E65Fb9116875012F5990Ecaab290B3531DbeB9
+  address internal constant USYC_NAV_Aave_LlamaRisk = 0xE8E65Fb9116875012F5990Ecaab290B3531DbeB9;
+
   // https://etherscan.io/address/0xAcFCF155a0de611414C510D43446c27a4EE6a758
   address internal constant WAMPL_USD = 0xAcFCF155a0de611414C510D43446c27a4EE6a758;
 
   // https://etherscan.io/address/0x3C7dB4D25deAb7c89660512C5494Dc9A3FC40f78
   address internal constant PHP_USD = 0x3C7dB4D25deAb7c89660512C5494Dc9A3FC40f78;
+
+  // https://etherscan.io/address/0xde49c7B5C0E54b1624ED21C7D88bA6593d444Aa0
+  address internal constant USTB_NAV_Aave_LlamaRisk = 0xde49c7B5C0E54b1624ED21C7D88bA6593d444Aa0;
 
   // https://etherscan.io/address/0x62c2ab773B7324ad9e030D777989B3b5d5c54c0A
   address internal constant SVR_USDT_USD = 0x62c2ab773B7324ad9e030D777989B3b5d5c54c0A;
@@ -469,11 +536,17 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x04F84020Fdf10d9ee64D1dcC2986EDF2F556DA11
   address internal constant EURC_USD = 0x04F84020Fdf10d9ee64D1dcC2986EDF2F556DA11;
 
+  // https://etherscan.io/address/0xe5181aA707feD57781e764437f021b633B34659E
+  address internal constant lvlUSD_USD = 0xe5181aA707feD57781e764437f021b633B34659E;
+
   // https://etherscan.io/address/0x14e613AC84a31f709eadbdF89C6CC390fDc9540A
   address internal constant BNB_USD = 0x14e613AC84a31f709eadbdF89C6CC390fDc9540A;
 
   // https://etherscan.io/address/0x32EaFC72772821936BCc9b8A32dC394fEFcDBfD9
   address internal constant Arbitrum_Healthcheck = 0x32EaFC72772821936BCc9b8A32dC394fEFcDBfD9;
+
+  // https://etherscan.io/address/0x46cE854814ea38A4857AeA23aE7759b3A7970e4a
+  address internal constant xSolvBTC_NAV = 0x46cE854814ea38A4857AeA23aE7759b3A7970e4a;
 
   // https://etherscan.io/address/0xD93571A6201978976e37c4A0F7bE17806f2Feab2
   address internal constant stBTC_BTC_Exchange_Rate = 0xD93571A6201978976e37c4A0F7bE17806f2Feab2;
@@ -499,11 +572,20 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xd962fC30A72A84cE50161031391756Bf2876Af5D
   address internal constant CVX_USD = 0xd962fC30A72A84cE50161031391756Bf2876Af5D;
 
+  // https://etherscan.io/address/0x1DE472E766E87eB993d0C7904367014a913E55ee
+  address internal constant WTGXX_NAV = 0x1DE472E766E87eB993d0C7904367014a913E55ee;
+
   // https://etherscan.io/address/0xC5f8c4aB091Be1A899214c0C3636ca33DcA0C547
   address internal constant ETHx_ETH = 0xC5f8c4aB091Be1A899214c0C3636ca33DcA0C547;
 
   // https://etherscan.io/address/0x86392dC19c0b719886221c78AB11eb8Cf5c52812
   address internal constant STETH_ETH = 0x86392dC19c0b719886221c78AB11eb8Cf5c52812;
+
+  // https://etherscan.io/address/0xE6417a3B82438f783DC8fd2B1cB6B0808585030B
+  address internal constant SVR_QQQon_USD = 0xE6417a3B82438f783DC8fd2B1cB6B0808585030B;
+
+  // https://etherscan.io/address/0xE5DF423251c67D85B2D70787Af76069d96BC4D4C
+  address internal constant SVR_QQQon_USD_BASE = 0xE5DF423251c67D85B2D70787Af76069d96BC4D4C;
 
   // https://etherscan.io/address/0xa34317DB73e77d453b1B8d04550c44D10e981C8e
   address internal constant CAD_USD = 0xa34317DB73e77d453b1B8d04550c44D10e981C8e;
@@ -514,6 +596,9 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0x164b276057258d81941e97B0a900D4C7B358bCe0
   address internal constant wstETH_USD_Calculated = 0x164b276057258d81941e97B0a900D4C7B358bCe0;
 
+  // https://etherscan.io/address/0x14f0737d6b705259e521EA6E9E3506AC78dBd311
+  address internal constant USDG_USD = 0x14f0737d6b705259e521EA6E9E3506AC78dBd311;
+
   // https://etherscan.io/address/0x8350b7De6a6a2C1368E7D4Bd968190e13E354297
   address internal constant TBTC_USD = 0x8350b7De6a6a2C1368E7D4Bd968190e13E354297;
 
@@ -523,6 +608,12 @@ library ChainlinkEthereum {
 
   // https://etherscan.io/address/0x32d1463EB53b73C095625719Afa544D5426354cB
   address internal constant IB01_USD = 0x32d1463EB53b73C095625719Afa544D5426354cB;
+
+  // https://etherscan.io/address/0xc9c10271B2B76767C385Ac389C05d77c319DC41C
+  address internal constant SVR_SPYon_USD = 0xc9c10271B2B76767C385Ac389C05d77c319DC41C;
+
+  // https://etherscan.io/address/0x6EcC1b902dB35eAFE95332443802774Fd1D72576
+  address internal constant SVR_SPYon_USD_BASE = 0x6EcC1b902dB35eAFE95332443802774Fd1D72576;
 
   // https://etherscan.io/address/0x861d15F8a4059cb918bD6F3670adAEB1220B298f
   address internal constant uniBTC_BTC_Exchange_Rate = 0x861d15F8a4059cb918bD6F3670adAEB1220B298f;
@@ -541,6 +632,13 @@ library ChainlinkEthereum {
 
   // https://etherscan.io/address/0x7Fa89217C9bA5eb1307Aca6B84E99ed9220e076F
   address internal constant Celo_Healthcheck = 0x7Fa89217C9bA5eb1307Aca6B84E99ed9220e076F;
+
+  // https://etherscan.io/address/0xd95044Eb392CdE502b1F903Fc978317462049E52
+  address internal constant ATH_USD = 0xd95044Eb392CdE502b1F903Fc978317462049E52;
+
+  // https://etherscan.io/address/0x64c4c1BF5ec145CB6095A289249592B5bb007098
+  address internal constant PCE_Price_Index_Percent_Change_Annual_Rate =
+    0x64c4c1BF5ec145CB6095A289249592B5bb007098;
 
   // https://etherscan.io/address/0xFC9e30Cf89f8A00dba3D34edf8b65BCDAdeCC1cB
   address internal constant USD0PlusPlus_USD = 0xFC9e30Cf89f8A00dba3D34edf8b65BCDAdeCC1cB;
@@ -624,6 +722,9 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xbd7F896e60B650C01caf2d7279a1148189A68884
   address internal constant SVR_AAVE_USD_BASE = 0xbd7F896e60B650C01caf2d7279a1148189A68884;
 
+  // https://etherscan.io/address/0x16caE6d6ffb4AE01e206b928de925Ac0C8C8116A
+  address internal constant cUSD_AUM = 0x16caE6d6ffb4AE01e206b928de925Ac0C8C8116A;
+
   // https://etherscan.io/address/0x269f871c80b50a5cF34cDfCfEC11460adA4D66f1
   address internal constant goUSD_Reserves = 0x269f871c80b50a5cF34cDfCfEC11460adA4D66f1;
 
@@ -649,12 +750,6 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xfD628af590c4150A9651C1f4ddD0b4f532B703ae
   address internal constant EUTBL_NAV = 0xfD628af590c4150A9651C1f4ddD0b4f532B703ae;
 
-  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
-  address internal constant SVR_BTC_USD = 0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
-
-  // https://etherscan.io/address/0x85355da30ee4b35F4B30759Bd49a1EBE3fc41Bdb
-  address internal constant SVR_BTC_USD_BASE = 0x85355da30ee4b35F4B30759Bd49a1EBE3fc41Bdb;
-
   // https://etherscan.io/address/0xFF3BC18cCBd5999CE63E788A1c250a88626aD099
   address internal constant sUSDe_USD = 0xFF3BC18cCBd5999CE63E788A1c250a88626aD099;
 
@@ -670,11 +765,14 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xec1D1B3b0443256cc3860e24a46F108e699484Aa
   address internal constant MKR_USD = 0xec1D1B3b0443256cc3860e24a46F108e699484Aa;
 
+  // https://etherscan.io/address/0x14E5FC91Ddb3f97C33013Cc9fA74F54062Ad1Aa1
+  address internal constant WLFI_USD = 0x14E5FC91Ddb3f97C33013Cc9fA74F54062Ad1Aa1;
+
+  // https://etherscan.io/address/0xAbE7a3643615Ed32d3431e11E0Ee5A486Cb27d48
+  address internal constant TBILL_NAV = 0xAbE7a3643615Ed32d3431e11E0Ee5A486Cb27d48;
+
   // https://etherscan.io/address/0xEEf0C605546958c1f899b6fB336C20671f9cD49F
   address internal constant CRVUSD_USD = 0xEEf0C605546958c1f899b6fB336C20671f9cD49F;
-
-  // https://etherscan.io/address/0x8731A3223fEA0CFAaF16370423ed99e32697F0FE
-  address internal constant tfBILL_NAV = 0x8731A3223fEA0CFAaF16370423ed99e32697F0FE;
 
   // https://etherscan.io/address/0x5b563107C8666d2142C216114228443B94152362
   address internal constant mETH_ETH = 0x5b563107C8666d2142C216114228443B94152362;
