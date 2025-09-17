@@ -14,8 +14,18 @@ export const FOXY_USD = '0xdE14081b6bd39230EcA7Be1137413b7b87B07C07';
 // https://lineascan.build/address/0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544
 export const weETH_ETH = '0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544';
 
+// https://lineascan.build/address/0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4
+export const PCE_Price_Index_Level = '0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4';
+
+// https://lineascan.build/address/0x1E2286815B3D628128fbaa0F213fD53Dea9E015E
+export const Real_GDP_Level = '0x1E2286815B3D628128fbaa0F213fD53Dea9E015E';
+
 // https://lineascan.build/address/0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC
 export const agETH_ETH_Exchange_Rate = '0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7bC';
+
+// https://lineascan.build/address/0xe5aCa1a31aD6fC61E30Ab8E4a19a9445884A1EDE
+export const PCE_Price_Index_Percent_Change_Annual_Rate =
+  '0xe5aCa1a31aD6fC61E30Ab8E4a19a9445884A1EDE';
 
 // https://lineascan.build/address/0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156
 export const osETH_ETH_Exchange_Rate = '0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156';
@@ -32,8 +42,15 @@ export const ultraETHs_ETH_Exchange_Rate = '0x0956106Bd02f2C7eca0AbDe1d51Fc8050C
 // https://lineascan.build/address/0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458
 export const COMP_USD = '0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458';
 
-// https://lineascan.build/address/0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a
-export const wrsETH_rsETH_Exchange_Rate = '0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a';
+// https://lineascan.build/address/0x49768d7ebB7694b1e72546300cCCeD877084d72f
+export const xSolvBTC_NAV = '0x49768d7ebB7694b1e72546300cCCeD877084d72f';
+
+// https://lineascan.build/address/0xdAad34260E4105702278F225d3d20C453d12065e
+export const Real_GDP_Percent_Change_Annual_Rate = '0xdAad34260E4105702278F225d3d20C453d12065e';
+
+// https://lineascan.build/address/0x9165802Ea199C36F85D53A6F71Da6AF5a6EA8951
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
+  '0x9165802Ea199C36F85D53A6F71Da6AF5a6EA8951';
 
 // https://lineascan.build/address/0x28606F10277Cc2e99e57ae2C55D26860E13A1BBD
 export const ARB_USD = '0x28606F10277Cc2e99e57ae2C55D26860E13A1BBD';
@@ -41,8 +58,15 @@ export const ARB_USD = '0x28606F10277Cc2e99e57ae2C55D26860E13A1BBD';
 // https://lineascan.build/address/0xeeD6246A489f386b10eeB2908239C8529B9b25DD
 export const instETH_ETH_Exchange_Rate = '0xeeD6246A489f386b10eeB2908239C8529B9b25DD';
 
+// https://lineascan.build/address/0x8d6ceb62Ce510935792BE737e30f9f61082b72b3
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
+  '0x8d6ceb62Ce510935792BE737e30f9f61082b72b3';
+
 // https://lineascan.build/address/0xc4194f19E3a0836F6B998394445C6535c50604Ce
 export const LINK_ETH = '0xc4194f19E3a0836F6B998394445C6535c50604Ce';
+
+// https://lineascan.build/address/0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a
+export const wrsETH_ETH_Exchange_Rate = '0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a';
 
 // https://lineascan.build/address/0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5
 export const USDC_USD = '0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5';

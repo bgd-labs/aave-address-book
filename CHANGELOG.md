@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.30.1](https://github.com/bgd-labs/aave-address-book/compare/v4.30.0...v4.30.1) (2025-09-15)
+
+
+### Bug Fixes
+
+* Update release-please-action to version v4.3.0 ([#1075](https://github.com/bgd-labs/aave-address-book/issues/1075)) ([5fad514](https://github.com/bgd-labs/aave-address-book/commit/5fad514909bae02bfb56eb223705bb949f3db52e))
+
+## [4.30.0](https://github.com/bgd-labs/aave-address-book/compare/v4.29.3...v4.30.0) (2025-09-15)
+
+
+### Features
+
+* add plasma contracts ([#1065](https://github.com/bgd-labs/aave-address-book/issues/1065)) ([a0c2498](https://github.com/bgd-labs/aave-address-book/commit/a0c2498d496421565ca1a6c87f5b3e10e5bcc65b))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1071](https://github.com/bgd-labs/aave-address-book/issues/1071)) ([a69d9e4](https://github.com/bgd-labs/aave-address-book/commit/a69d9e4479ed629daa9c967206e4e025b0e01301))
+
+## [4.29.3](https://github.com/bgd-labs/aave-address-book/compare/v4.29.2...v4.29.3) (2025-09-11)
+
+
+### Bug Fixes
+
+* add verified contracts ([#1069](https://github.com/bgd-labs/aave-address-book/issues/1069)) ([4584172](https://github.com/bgd-labs/aave-address-book/commit/4584172dca744382d076f3f85f89e3ce29f8b273))
+* **cache:** automated cache update - updated addresses ([#1067](https://github.com/bgd-labs/aave-address-book/issues/1067)) ([9fe9d91](https://github.com/bgd-labs/aave-address-book/commit/9fe9d910a6dc001616e363e152d5bfae123ebf2d))
+
+## [4.29.2](https://github.com/bgd-labs/aave-address-book/compare/v4.29.1...v4.29.2) (2025-09-11)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1066](https://github.com/bgd-labs/aave-address-book/issues/1066)) ([9e987ef](https://github.com/bgd-labs/aave-address-book/commit/9e987ef8b6aa4f6d2ca96d9ab211c345fc7553ed))
+
 ## [4.29.1](https://github.com/bgd-labs/aave-address-book/compare/v4.29.0...v4.29.1) (2025-09-09)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@bgd-labs/aave-address-book",
-  "version": "4.29.1",
+  "version": "4.30.1",
   "description": "This repository contains an up-to-date registry of all addresses of the Aave ecosystem's smart contracts, for its usage in Solidity codebases.",
   "private": false,
   "files": [
@@ -86,7 +86,7 @@
   "homepage": "https://github.com/bgd-labs/aave-address-book#readme",
   "devDependencies": {
     "@bgd-labs/react-web3-icons": "^1.30.0",
-    "@bgd-labs/toolbox": "^0.0.25",
+    "@bgd-labs/toolbox": "^0.0.42",
     "@types/node": "^22.4.1",
     "@uniswap/token-lists": "^1.0.0-beta.33",
     "ajv": "^8.12.0",

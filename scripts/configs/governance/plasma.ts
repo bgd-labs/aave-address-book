@@ -1,0 +1,15 @@
+import { ChainId } from '@bgd-labs/toolbox';
+import { GovernanceConfig } from '../types';
+
+export const governanceConfigPlasma: GovernanceConfig = {
+  name: 'Plasma',
+  CHAIN_ID: ChainId.plasma,
+  ADDRESSES: {
+    CROSS_CHAIN_CONTROLLER: '0x643441742f73e270e565619be6DE5f4D55E08cd6',
+    PAYLOADS_CONTROLLER: '0xe76EB348E65eF163d85ce282125FF5a7F5712A1d',
+    PC_DATA_HELPER: '0xA806DA549FcB2B4912a7dFFE4c1aA7A1ed0Bd5C9',
+    GRANULAR_GUARDIAN: '0x60665b4F4FF7073C5fed2656852dCa271DfE2684',
+    GOVERNANCE_GUARDIAN: '0x19CE4363FEA478Aa04B9EA2937cc5A2cbcD44be6',
+    CL_EMERGENCY_ORACLE: '0xF61FE74Ec1cFbd9Ee8Bd27592D2EDEe0E2aA85Cf',
+  },
+};

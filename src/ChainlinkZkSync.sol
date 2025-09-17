@@ -3,8 +3,23 @@
 pragma solidity >=0.6.0;
 
 library ChainlinkZkSync {
+  // https://era.zksync.network/address/0x11353117EB9cd5179Bb7F54BB22d8274dc4f1db7
+  address internal constant USD1_USD = 0x11353117EB9cd5179Bb7F54BB22d8274dc4f1db7;
+
+  // https://era.zksync.network/address/0x2CfAb79113c81ebD672bC77c5B88Fc803b64cA77
+  address internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
+    0x2CfAb79113c81ebD672bC77c5B88Fc803b64cA77;
+
   // https://era.zksync.network/address/0x600E54Fc4cF6148Cd6696A3D37F5f672829BF7C2
   address internal constant ezETH_ETH = 0x600E54Fc4cF6148Cd6696A3D37F5f672829BF7C2;
+
+  // https://era.zksync.network/address/0x6E2Eb2F1E5d31Db83B6982a3E753F8615565fD1f
+  address internal constant PCE_Price_Index_Percent_Change_Annual_Rate =
+    0x6E2Eb2F1E5d31Db83B6982a3E753F8615565fD1f;
+
+  // https://era.zksync.network/address/0xC7Bd1Ea3ec9D08C3068a63b7bd39799061bbb787
+  address internal constant Real_GDP_Percent_Change_Annual_Rate =
+    0xC7Bd1Ea3ec9D08C3068a63b7bd39799061bbb787;
 
   // https://era.zksync.network/address/0x7a6333CaC589e9B11b1fEC190a5828272A2893B5
   address internal constant PEPE_USD = 0x7a6333CaC589e9B11b1fEC190a5828272A2893B5;
@@ -26,6 +41,9 @@ library ChainlinkZkSync {
   // https://era.zksync.network/address/0x2137c69DCb41f611Cc8f39F8A98047e774d6ED74
   address internal constant AAVE_USD = 0x2137c69DCb41f611Cc8f39F8A98047e774d6ED74;
 
+  // https://era.zksync.network/address/0x7e161604Da57DF30bbC9f0C166e8163fB9147a7a
+  address internal constant xSolvBTC_NAV = 0x7e161604Da57DF30bbC9f0C166e8163fB9147a7a;
+
   // https://era.zksync.network/address/0x8D3184a992f93729b249407C33F1e78abE0d650e
   address internal constant weETH_eETH_Exchange_Rate = 0x8D3184a992f93729b249407C33F1e78abE0d650e;
 
@@ -34,6 +52,11 @@ library ChainlinkZkSync {
 
   // https://era.zksync.network/address/0x1824D297C6d6D311A204495277B63e943C2D376E
   address internal constant USDC_USD = 0x1824D297C6d6D311A204495277B63e943C2D376E;
+
+  // https://era.zksync.network/address/0x43b29AF5d5527ebe35c4788810D11BdbA9205669
+  address
+    internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
+    0x43b29AF5d5527ebe35c4788810D11BdbA9205669;
 
   // https://era.zksync.network/address/0x93A08A9D592101938D4a63c86d0989d7018c00D9
   address internal constant UNI_USD = 0x93A08A9D592101938D4a63c86d0989d7018c00D9;
@@ -50,6 +73,9 @@ library ChainlinkZkSync {
   // https://era.zksync.network/address/0x5d336664b5D7A332Cd256Bf68CbF2270C6202fc6
   address internal constant DAI_USD = 0x5d336664b5D7A332Cd256Bf68CbF2270C6202fc6;
 
+  // https://era.zksync.network/address/0x372A10990183E99FB29D4905b71f807ca5474827
+  address internal constant Real_GDP_Level = 0x372A10990183E99FB29D4905b71f807ca5474827;
+
   // https://era.zksync.network/address/0x2cC24D99500a134ea7f78736b5C329C84599fb1B
   address internal constant DOGE_USD = 0x2cC24D99500a134ea7f78736b5C329C84599fb1B;
 
@@ -62,6 +88,9 @@ library ChainlinkZkSync {
   // https://era.zksync.network/address/0xC406104c42211abd1A2cD411DDd071511515bDdd
   address internal constant Fidelity_USD_NAV = 0xC406104c42211abd1A2cD411DDd071511515bDdd;
 
+  // https://era.zksync.network/address/0xFc325A8E212319855906C9d02d7795C06baa5fBD
+  address internal constant PCE_Price_Index_Level = 0xFc325A8E212319855906C9d02d7795C06baa5fBD;
+
   // https://era.zksync.network/address/0x4Cba285c15e3B540C474A114a7b135193e4f1EA6
   address internal constant BTC_USD = 0x4Cba285c15e3B540C474A114a7b135193e4f1EA6;
 
@@ -70,9 +99,6 @@ library ChainlinkZkSync {
 
   // https://era.zksync.network/address/0x960eA047617cfB29AFcf2Ef6794C76713ff0C20C
   address internal constant TRUMP_USD = 0x960eA047617cfB29AFcf2Ef6794C76713ff0C20C;
-
-  // https://era.zksync.network/address/0x6Ab6c24f9312a6cB458761143D373A8f11573C4B
-  address internal constant USDM_USD = 0x6Ab6c24f9312a6cB458761143D373A8f11573C4B;
 
   // https://era.zksync.network/address/0xB615075979AE1836B476F651f1eB79f0Cd3956a9
   address internal constant USDT_USD = 0xB615075979AE1836B476F651f1eB79f0Cd3956a9;

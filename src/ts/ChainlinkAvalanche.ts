@@ -5,6 +5,9 @@ export const WBTCe_Proof_of_Reserves = '0xebEfEAA58636DF9B20a4fAd78Fad8759e6A20e
 // https://snowscan.xyz/address/0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e
 export const SAND_USD = '0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e';
 
+// https://snowscan.xyz/address/0x1ff75B09dC8B749252F46ec482c8a4700Eb6C644
+export const savUSD_vUSD_Exchange_Rate = '0x1ff75B09dC8B749252F46ec482c8a4700Eb6C644';
+
 // https://snowscan.xyz/address/0x01752eAAB988ECb0ceBa2C8FC97c4f1d38Bf246D
 export const SNX_USD = '0x01752eAAB988ECb0ceBa2C8FC97c4f1d38Bf246D';
 
@@ -59,6 +62,12 @@ export const KNC_USD = '0x9df2195dc96e6Ef983B1aAC275649F3f28F82Aa1';
 // https://snowscan.xyz/address/0x05950959B6d876ae0fed1BBe5Caa2d74d8659D59
 export const SGD_USD = '0x05950959B6d876ae0fed1BBe5Caa2d74d8659D59';
 
+// https://snowscan.xyz/address/0x3Eb06AE1Ef3adE7B529Fcce522611c6A044697cC
+export const Real_GDP_Percent_Change_Annual_Rate = '0x3Eb06AE1Ef3adE7B529Fcce522611c6A044697cC';
+
+// https://snowscan.xyz/address/0x665Fa131DE7af7606c785F26e66d07cA43a274D9
+export const Real_GDP_Level = '0x665Fa131DE7af7606c785F26e66d07cA43a274D9';
+
 // https://snowscan.xyz/address/0x86442E3a98558357d46E6182F4b262f76c4fa26F
 export const WBTC_USD = '0x86442E3a98558357d46E6182F4b262f76c4fa26F';
 
@@ -70,6 +79,10 @@ export const BTCb_Proof_of_Reserves = '0x99311B4bf6D8E3D3B4b9fbdD09a1B0F4Ad8e06E
 
 // https://snowscan.xyz/address/0x5C2d58627Fbe746f5ea24Ef6D618f09f8e3f0122
 export const AUSD_USD = '0x5C2d58627Fbe746f5ea24Ef6D618f09f8e3f0122';
+
+// https://snowscan.xyz/address/0x273e7833604F74a6f80f6B25568D29DE33570e99
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
+  '0x273e7833604F74a6f80f6B25568D29DE33570e99';
 
 // https://snowscan.xyz/address/0x4Cf57DC9028187b9DAaF773c8ecA941036989238
 export const XAVA_USD = '0x4Cf57DC9028187b9DAaF773c8ecA941036989238';
@@ -88,6 +101,10 @@ export const JOE_USD = '0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a';
 
 // https://snowscan.xyz/address/0x943cEF1B112Ca9FD7EDaDC9A46477d3812a382b6
 export const LINKe_Proof_of_Reserves = '0x943cEF1B112Ca9FD7EDaDC9A46477d3812a382b6';
+
+// https://snowscan.xyz/address/0x982057Fd0A53d52E558A722ba53Ad95E702Da0dF
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
+  '0x982057Fd0A53d52E558A722ba53Ad95E702Da0dF';
 
 // https://snowscan.xyz/address/0x2dD517B2f9ba49CedB0573131FD97a5AC19ff648
 export const FTM_USD = '0x2dD517B2f9ba49CedB0573131FD97a5AC19ff648';
@@ -162,6 +179,12 @@ export const MKR_USD = '0x3E54eB0475051401D093702A5DB84EFa1Ab77b14';
 // https://snowscan.xyz/address/0xc43861646Cdc051D04CA0c9dF2265FFcFa0dF6f3
 export const MATICX_USD_Calculated = '0xc43861646Cdc051D04CA0c9dF2265FFcFa0dF6f3';
 
+// https://snowscan.xyz/address/0xC63eD21bb4577Ff5a762591c73D4b0BCCfAD7AEb
+export const syrupUSDC_USDC_Exchange_Rate = '0xC63eD21bb4577Ff5a762591c73D4b0BCCfAD7AEb';
+
+// https://snowscan.xyz/address/0x962Aba596fe6842D644c51b2F112190e6B6e94B4
+export const PCE_Price_Index_Level = '0x962Aba596fe6842D644c51b2F112190e6B6e94B4';
+
 // https://snowscan.xyz/address/0xD73a74314AcCb53b30cAfDA0cb61c9772B57C4a2
 export const DOT_USD = '0xD73a74314AcCb53b30cAfDA0cb61c9772B57C4a2';
 
@@ -191,6 +214,9 @@ export const JPY_USD = '0xf8B283aD4d969ECFD70005714DD5910160565b94';
 
 // https://snowscan.xyz/address/0x9D6AA0AC8c4818433bEA7a74F49C73B57BcEC4Ec
 export const COMP_USD = '0x9D6AA0AC8c4818433bEA7a74F49C73B57BcEC4Ec';
+
+// https://snowscan.xyz/address/0x55b5dc7d7CDD5d3b2Eb189bf11140839076E5d40
+export const xSolvBTC_NAV = '0x55b5dc7d7CDD5d3b2Eb189bf11140839076E5d40';
 
 // https://snowscan.xyz/address/0x9Cf3Ef104A973b351B2c032AA6793c3A6F76b448
 export const TUSD_USD = '0x9Cf3Ef104A973b351B2c032AA6793c3A6F76b448';
@@ -234,8 +260,15 @@ export const USDT_USD = '0xEBE676ee90Fe1112671f19b6B7459bC678B67e8a';
 // https://snowscan.xyz/address/0x7CF8A6090A9053B01F3DF4D4e6CfEdd8c90d9027
 export const CRV_USD = '0x7CF8A6090A9053B01F3DF4D4e6CfEdd8c90d9027';
 
+// https://snowscan.xyz/address/0x80091AEc326bE58223620D827fd5189FaC8b43C0
+export const savBTC_avBTC_Exchange_Rate = '0x80091AEc326bE58223620D827fd5189FaC8b43C0';
+
 // https://snowscan.xyz/address/0x0d2807dc7FA52d3B38be564B64a2b37753C49AdD
 export const EmCH_Reserves = '0x0d2807dc7FA52d3B38be564B64a2b37753C49AdD';
+
+// https://snowscan.xyz/address/0x9A9587Da4Fd5DD3C9AD47C12aFeec5073C8cFc2a
+export const PCE_Price_Index_Percent_Change_Annual_Rate =
+  '0x9A9587Da4Fd5DD3C9AD47C12aFeec5073C8cFc2a';
 
 // https://snowscan.xyz/address/0x63769951E4cfDbDC653dD9BBde63D2Ce0746e5F2
 export const USDCe_Proof_of_Reserves = '0x63769951E4cfDbDC653dD9BBde63D2Ce0746e5F2';

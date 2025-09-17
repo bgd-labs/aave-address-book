@@ -9,6 +9,9 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0xDE31F8bFBD8c84b5360CFACCa3539B938dd78ae6
   address internal constant WBTC_USD = 0xDE31F8bFBD8c84b5360CFACCa3539B938dd78ae6;
 
+  // https://polygonscan.com/address/0xD2D1BdD220C35C27f70a2bE1eD6462cECAc76384
+  address internal constant VanEck_SMH_MID_iNAV = 0xD2D1BdD220C35C27f70a2bE1eD6462cECAc76384;
+
   // https://polygonscan.com/address/0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299
   address internal constant SGD_USD = 0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299;
 
@@ -17,6 +20,9 @@ library ChainlinkPolygon {
 
   // https://polygonscan.com/address/0x2251169D32E7538652a9a8c86bf0c43bFcd956f1
   address internal constant QUICK_USD = 0x2251169D32E7538652a9a8c86bf0c43bFcd956f1;
+
+  // https://polygonscan.com/address/0x2A5e28b4F9Ecb01807CeEC25F7b0fcCafF3F6721
+  address internal constant wstPOL_POL_Exchange_Rate = 0x2A5e28b4F9Ecb01807CeEC25F7b0fcCafF3F6721;
 
   // https://polygonscan.com/address/0x461c7B8D370a240DdB46B402748381C3210136b3
   address internal constant XAG_USD = 0x461c7B8D370a240DdB46B402748381C3210136b3;
@@ -264,6 +270,10 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0x785ba89291f676b5386652eB12b30cF361020694
   address internal constant XRP_USD = 0x785ba89291f676b5386652eB12b30cF361020694;
 
+  // https://polygonscan.com/address/0x6b20c92A1D73A9232383DEcD698Ff559eFa0c31A
+  address internal constant RYT_Polygon_Proof_of_Reserves =
+    0x6b20c92A1D73A9232383DEcD698Ff559eFa0c31A;
+
   // https://polygonscan.com/address/0xe71A04ACe06e2667c7e1c802E998CBf44A6bf53C
   address internal constant sUSDe_USD = 0xe71A04ACe06e2667c7e1c802E998CBf44A6bf53C;
 
@@ -446,6 +456,9 @@ library ChainlinkPolygon {
 
   // https://polygonscan.com/address/0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403
   address internal constant Calculated_MaticX_USD = 0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403;
+
+  // https://polygonscan.com/address/0xdefcBDC0a5f5fBBdF520dC97be8d6d025B18da05
+  address internal constant RYT_NAV = 0xdefcBDC0a5f5fBBdF520dC97be8d6d025B18da05;
 
   // https://polygonscan.com/address/0x84227A76a04289473057BEF706646199D7C58c34
   address internal constant ICP_USD = 0x84227A76a04289473057BEF706646199D7C58c34;
