@@ -3719,6 +3719,9 @@
     },
     "0x5513224daaEABCa31af5280727878d52097afA05": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
@@ -13531,6 +13534,15 @@
     },
     "0x9A9587Da4Fd5DD3C9AD47C12aFeec5073C8cFc2a": {
       "name": "EACAggregatorProxy"
+    },
+    "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD": {
+      "name": "FiatTokenProxy"
+    },
+    "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5D557B07776D12967914379C71a1310e917C7555": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "57073": {

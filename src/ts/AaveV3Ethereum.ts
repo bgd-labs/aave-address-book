@@ -541,6 +541,7 @@ export const ASSETS = {
     V_TOKEN: '0xeA85a065F87FE28Aa8Fbf0D6C7deC472b106252C',
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0x2FA6A78E3d617c1013a22938411602dc9Da98dBa',
+    STATA_TOKEN: '0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7',
   },
   PT_USDe_31JUL2025: {
     decimals: 18,
@@ -1034,8 +1035,8 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8860,
-    liquidationThreshold: 9060,
+    ltv: 8910,
+    liquidationThreshold: 9110,
     liquidationBonus: 10390,
   },
   '28': {
@@ -1047,8 +1048,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 8950,
-    liquidationThreshold: 9150,
+    ltv: 9000,
+    liquidationThreshold: 9200,
     liquidationBonus: 10290,
   },
 } as const;
