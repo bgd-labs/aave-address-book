@@ -86,8 +86,8 @@ export const SAVINGS_DAI_TOKEN_WRAPPER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a05
 // https://etherscan.io/address/0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F
 export const STATA_FACTORY = '0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F';
 
-// https://etherscan.io/address/0x593B09afc075B3c326CE2AD7750888645BA8943d
-export const GHO_DIRECT_MINTER = '0x593B09afc075B3c326CE2AD7750888645BA8943d';
+// https://etherscan.io/address/0x5513224daaEABCa31af5280727878d52097afA05
+export const GHO_DIRECT_MINTER = '0x5513224daaEABCa31af5280727878d52097afA05';
 
 // https://etherscan.io/address/0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b
 export const DUST_BIN = '0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b';
@@ -920,7 +920,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10260,
+    liquidationBonus: 10230,
   },
   '20': {
     label: 'PT-USDe USDe September 2025',
