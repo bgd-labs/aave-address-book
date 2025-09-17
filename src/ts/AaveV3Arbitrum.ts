@@ -20,14 +20,14 @@ export const ACL_ADMIN = '0xFF1137243698CaA18EE364Cc966CF0e02A4e6327';
 // IACLManager https://arbiscan.io/address/0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B
 export const ACL_MANAGER = '0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B';
 
-// IPoolDataProvider https://arbiscan.io/address/0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5
-export const AAVE_PROTOCOL_DATA_PROVIDER = '0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5';
+// IPoolDataProvider https://arbiscan.io/address/0x243Aa95cAC2a25651eda86e80bEe66114413c43b
+export const AAVE_PROTOCOL_DATA_PROVIDER = '0x243Aa95cAC2a25651eda86e80bEe66114413c43b';
 
-// https://arbiscan.io/address/0x7f775bb7af2e7E09D5Dc9506c95516159a5cA0D0
-export const POOL_IMPL = '0x7f775bb7af2e7E09D5Dc9506c95516159a5cA0D0';
+// https://arbiscan.io/address/0xCe142f1e750522a3E7Ed7305A224AE88dD9F6ce8
+export const POOL_IMPL = '0xCe142f1e750522a3E7Ed7305A224AE88dD9F6ce8';
 
-// https://arbiscan.io/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
-export const POOL_CONFIGURATOR_IMPL = '0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b';
+// https://arbiscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+export const POOL_CONFIGURATOR_IMPL = '0x5793FE4de34532F162B4e207aF872729880ec2b6';
 
 // https://arbiscan.io/address/0x929EC64c34a17401F460460D4B9390518E5B473e
 export const DEFAULT_INCENTIVES_CONTROLLER = '0x929EC64c34a17401F460460D4B9390518E5B473e';
@@ -38,17 +38,14 @@ export const EMISSION_MANAGER = '0x048f2228D7Bf6776f99aB50cB1b1eaB4D1d4cA73';
 // ICollector https://arbiscan.io/address/0x053D55f9B5AF8694c503EB288a1B7E552f590710
 export const COLLECTOR = '0x053D55f9B5AF8694c503EB288a1B7E552f590710';
 
-// https://arbiscan.io/address/0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a
-export const DEFAULT_A_TOKEN_IMPL_REV_2 = '0x1Be1798b70aEe431c2986f7ff48d9D1fa350786a';
+// https://arbiscan.io/address/0x23f2818E62A48E1C19921Bd7ecA4D278C5Ce5a12
+export const DEFAULT_A_TOKEN_IMPL = '0x23f2818E62A48E1C19921Bd7ecA4D278C5Ce5a12';
 
-// https://arbiscan.io/address/0x5E76E98E0963EcDC6A065d1435F84065b7523f39
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 = '0x5E76E98E0963EcDC6A065d1435F84065b7523f39';
+// https://arbiscan.io/address/0xAcD1A67Bd377c6A4397b486F8B9aFAbDe49B8933
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xAcD1A67Bd377c6A4397b486F8B9aFAbDe49B8933';
 
-// https://arbiscan.io/address/0xADf86b537eF08591c2777E144322E8b0Ca7E82a7
-export const CAPS_PLUS_RISK_STEWARD = '0xADf86b537eF08591c2777E144322E8b0Ca7E82a7';
-
-// https://arbiscan.io/address/0x14568979093FFF97aeBD73F58051a4f0e297b1eB
-export const RISK_STEWARD = '0x14568979093FFF97aeBD73F58051a4f0e297b1eB';
+// https://arbiscan.io/address/0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8
+export const RISK_STEWARD = '0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8';
 
 // https://arbiscan.io/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
 export const EDGE_RISK_STEWARD_CAPS = '0x085E34722e04567Df9E6d2c32e82fd74f3342e79';
@@ -59,17 +56,14 @@ export const EDGE_INJECTOR_CAPS = '0x35d53dEB2F6f40Ea7af32B6F8BEd88eA966DF1D9';
 // https://arbiscan.io/address/0x861eeAdB55E41f161F31Acb1BFD4c70E3a964Aed
 export const EDGE_RISK_ORACLE = '0x861eeAdB55E41f161F31Acb1BFD4c70E3a964Aed';
 
-// https://arbiscan.io/address/0xe59470B3BE3293534603487E00A44C72f2CD466d
-export const FREEZING_STEWARD = '0xe59470B3BE3293534603487E00A44C72f2CD466d';
-
 // https://arbiscan.io/address/0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4
 export const DEBT_SWAP_ADAPTER = '0x63dfa7c09Dc2Ff4030d6B8Dc2ce6262BF898C8A4';
 
 // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
 export const L2_ENCODER = '0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC';
 
-// https://arbiscan.io/address/0x5EcF74eb2feC38fe80F8f20f7eb302F276635fff
-export const CONFIG_ENGINE = '0x5EcF74eb2feC38fe80F8f20f7eb302F276635fff';
+// https://arbiscan.io/address/0xcCeb5996cF9976168fdbE6fF88B1d89e1180A0EA
+export const CONFIG_ENGINE = '0xcCeb5996cF9976168fdbE6fF88B1d89e1180A0EA';
 
 // https://arbiscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x770ef9f4fe897e59daCc474EF11238303F9552b6';
@@ -318,6 +312,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F',
     ORACLE: '0xb4B0cbcA864c2Eb0C0342608D92490C034aC1089',
   },
+  tBTC: {
+    decimals: 18,
+    id: 19,
+    UNDERLYING: '0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40',
+    A_TOKEN: '0x62fC96b27a510cF4977B59FF952Dc32378Cc221d',
+    V_TOKEN: '0xB5b46F918C2923fC7f26DB76e8a6A6e9C4347Cf9',
+    INTEREST_RATE_STRATEGY: '0x429F16dBA3B9e1900087Cbaa7b50D38Bc60fB73F',
+    ORACLE: '0x6ce185860a4963106506C203335A2910413708e9',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -351,11 +354,14 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '3': {
-    label: 'ezETH wstETH',
+    label: 'ezETH/wstETH/WETH ETH Correlated',
     collateralBitmap: '131072',
     collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
-    borrowableBitmap: '256',
-    borrowableAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
+    borrowableBitmap: '272',
+    borrowableAssets: [
+      '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      '0x5979D7b546E38E414F7E9822514be443A4800529',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -374,11 +380,14 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '5': {
-    label: 'rsETH wstETH',
+    label: 'rsETH/wstETH/WETH ETH Correlated',
     collateralBitmap: '262144',
     collateralAssets: ['0x4186BFC76E2E237523CBC30FD220FE055156b41F'],
-    borrowableBitmap: '256',
-    borrowableAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
+    borrowableBitmap: '272',
+    borrowableAssets: [
+      '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+      '0x5979D7b546E38E414F7E9822514be443A4800529',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -396,5 +405,22 @@ export const E_MODES = {
     liquidationThreshold: 7500,
     liquidationBonus: 10750,
   },
+  '7': {
+    label: 'wstETH/WETH ETH Correlated',
+    collateralBitmap: '256',
+    collateralAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
+    borrowableBitmap: '16',
+    borrowableAssets: ['0x82aF49447D8a07e3bd95BD0d56f35241523fBab1'],
+    ltv: 9400,
+    liquidationThreshold: 9600,
+    liquidationBonus: 10100,
+  },
 } as const;
-export const EXTERNAL_LIBRARIES = {} as const;
+export const EXTERNAL_LIBRARIES = {
+  FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
+  BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
+  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
+  LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
+  POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
+  SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',
+} as const;

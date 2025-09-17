@@ -8,4 +8,10 @@ library MiscSonic {
 
   // https://sonicscan.org/address/0xA4aF5175ed38e791362F01c67a487DbA4aE07dFe
   address internal constant PROTOCOL_GUARDIAN = 0xA4aF5175ed38e791362F01c67a487DbA4aE07dFe;
+
+  // https://sonicscan.org/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+  address internal constant AFC_SAFE = 0x22740deBa78d5a0c24C58C740e3715ec29de1bFa;
+
+  // https://sonicscan.org/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+  address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
 }

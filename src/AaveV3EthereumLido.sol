@@ -25,15 +25,15 @@ library AaveV3EthereumLido {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x013E2C7567b6231e865BB9273F8c7656103611c0);
 
-  // https://etherscan.io/address/0x66FeAe868EBEd74A34A7043e88742AAE00D2bC53
+  // https://etherscan.io/address/0xB85B2bFEbeC4F5f401dbf92ac147A3076391fCD5
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x66FeAe868EBEd74A34A7043e88742AAE00D2bC53);
+    IPoolDataProvider(0xB85B2bFEbeC4F5f401dbf92ac147A3076391fCD5);
 
-  // https://etherscan.io/address/0xc405a0eAB071a085A832F876D8e5be7cFEAfb624
-  address internal constant POOL_IMPL = 0xc405a0eAB071a085A832F876D8e5be7cFEAfb624;
+  // https://etherscan.io/address/0xEf534b9Ad7F185aff4146750da6bf8Bb7f58020C
+  address internal constant POOL_IMPL = 0xEf534b9Ad7F185aff4146750da6bf8Bb7f58020C;
 
-  // https://etherscan.io/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b;
+  // https://etherscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
 
   // https://etherscan.io/address/0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,12 +45,12 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
-  // https://etherscan.io/address/0x7F8Fc14D462bdF93c681c1f2Fd615389bF969Fb2
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x7F8Fc14D462bdF93c681c1f2Fd615389bF969Fb2;
+  // https://etherscan.io/address/0xe7525bfE967412b6bAF2E2310cdeeaeFDD8f86Ed
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xe7525bfE967412b6bAF2E2310cdeeaeFDD8f86Ed;
 
-  // https://etherscan.io/address/0x3E59212c34588a63350142EFad594a20C88C2CEd
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x3E59212c34588a63350142EFad594a20C88C2CEd;
+  // https://etherscan.io/address/0xF9c86ADF20b55b816aDc094bd9C0AeCe7D7E309c
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
+    0xF9c86ADF20b55b816aDc094bd9C0AeCe7D7E309c;
 
   // https://etherscan.io/address/0xC6cAB8D39D93DC0Bd5986E7Ce5Bb956E30103A43
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -78,14 +78,11 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299
   address internal constant WETH_GATEWAY = 0x3167C452fA3fa1e5C16bB83Bc0fde4519C464299;
 
-  // https://etherscan.io/address/0x1097eDb85392932b7dCB630baDDC8A6D73585218
-  address internal constant CONFIG_ENGINE = 0x1097eDb85392932b7dCB630baDDC8A6D73585218;
+  // https://etherscan.io/address/0x88d42CFe16d097e149881216EE90fD1729e4322d
+  address internal constant CONFIG_ENGINE = 0x88d42CFe16d097e149881216EE90fD1729e4322d;
 
-  // https://etherscan.io/address/0x3843b29118fFC18d5d12EE079d0324E1bF115e69
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0x3843b29118fFC18d5d12EE079d0324E1bF115e69;
-
-  // https://etherscan.io/address/0x30adC2f98ff78fDde12F191Acb82699f640694FB
-  address internal constant RISK_STEWARD = 0x30adC2f98ff78fDde12F191Acb82699f640694FB;
+  // https://etherscan.io/address/0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3
+  address internal constant RISK_STEWARD = 0x7e6a6B115D31d4A837E3C737c49Cf6Fafe6112C3;
 
   // https://etherscan.io/address/0xd1B2dec98A95B773C4909B5CD8FB455F467A527f
   address internal constant DEBT_SWAP_ADAPTER = 0xd1B2dec98A95B773C4909B5CD8FB455F467A527f;
@@ -95,13 +92,6 @@ library AaveV3EthereumLido {
 
   // https://etherscan.io/address/0x834a5aC6e9D05b92F599A031941262F761c34859
   address internal constant EDGE_INJECTOR_RATES = 0x834a5aC6e9D05b92F599A031941262F761c34859;
-
-  // https://etherscan.io/address/0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A
-  address internal constant EDGE_RISK_STEWARD_PENDLE_EMODE =
-    0xf721bE7AA57a987F3e4D05DAc6fcb5aBF9F7cE9A;
-
-  // https://etherscan.io/address/0x7ABB46C690C52E919687D19ebF89C81A6136C1F2
-  address internal constant EDGE_RISK_ORACLE = 0x7ABB46C690C52E919687D19ebF89C81A6136C1F2;
 
   // https://etherscan.io/address/0x347C75d19718a05148687E13dca259aD016aB411
   address internal constant STATA_FACTORY = 0x347C75d19718a05148687E13dca259aD016aB411;
@@ -270,6 +260,24 @@ library AaveV3EthereumLidoAssets {
   // https://etherscan.io/address/0x8958b1C39269167527821f8c276Ef7504883f2fa
   address internal constant rsETH_INTEREST_RATE_STRATEGY =
     0x8958b1C39269167527821f8c276Ef7504883f2fa;
+
+  // https://etherscan.io/address/0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8
+  address internal constant tETH_UNDERLYING = 0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8;
+
+  uint8 internal constant tETH_DECIMALS = 18;
+
+  // https://etherscan.io/address/0xce8c60fd8390eFCc3Fc66A3f0bd64BEb969e750E
+  address internal constant tETH_A_TOKEN = 0xce8c60fd8390eFCc3Fc66A3f0bd64BEb969e750E;
+
+  // https://etherscan.io/address/0xe7ea6125490ae4594aD9B44D05dFF9F2A4343134
+  address internal constant tETH_V_TOKEN = 0xe7ea6125490ae4594aD9B44D05dFF9F2A4343134;
+
+  // https://etherscan.io/address/0x85968026294b8f8Fb86d6bF3Cda079f9376aD05A
+  address internal constant tETH_ORACLE = 0x85968026294b8f8Fb86d6bF3Cda079f9376aD05A;
+
+  // https://etherscan.io/address/0x8958b1C39269167527821f8c276Ef7504883f2fa
+  address internal constant tETH_INTEREST_RATE_STRATEGY =
+    0x8958b1C39269167527821f8c276Ef7504883f2fa;
 }
 library AaveV3EthereumLidoEModes {
   uint8 internal constant NONE = 0;
@@ -285,26 +293,25 @@ library AaveV3EthereumLidoEModes {
   uint8 internal constant RSETH_LST_MAIN = 5;
 
   uint8 internal constant RSETH_STABLECOINS = 6;
+
+  uint8 internal constant TETH_WSTETH = 7;
 }
 library AaveV3EthereumLidoExternalLibraries {
-  // https://etherscan.io/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
-  address internal constant FLASHLOAN_LOGIC = 0x34039100cc9584Ae5D741d322e16d0d18CEE8770;
+  // https://etherscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
+  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
 
-  // https://etherscan.io/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
-  address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
+  // https://etherscan.io/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
+  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
 
-  // https://etherscan.io/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
+  // https://etherscan.io/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
+  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
-  // https://etherscan.io/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
-  address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;
+  // https://etherscan.io/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
+  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
 
-  // https://etherscan.io/address/0x4731bF01583F991278692E8727d0700a00A1fBBf
-  address internal constant LIQUIDATION_LOGIC = 0x4731bF01583F991278692E8727d0700a00A1fBBf;
+  // https://etherscan.io/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
+  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
 
-  // https://etherscan.io/address/0xf8C97539934ee66a67C26010e8e027D77E821B0C
-  address internal constant POOL_LOGIC = 0xf8C97539934ee66a67C26010e8e027D77E821B0C;
-
-  // https://etherscan.io/address/0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3
-  address internal constant SUPPLY_LOGIC = 0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3;
+  // https://etherscan.io/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
+  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
 }

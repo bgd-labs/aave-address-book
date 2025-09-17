@@ -4,16 +4,6 @@ exports[`verification > should have all contracts verified except for the known 
 [
   {
     "item": {
-      "chainId": 42220,
-      "path": [
-        "GovernanceV3Celo",
-        "GOVERNANCE_GUARDIAN",
-      ],
-      "value": "0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E",
-    },
-  },
-  {
-    "item": {
       "chainId": 324,
       "path": [
         "AaveV3ZkSync",
@@ -34,16 +24,6 @@ exports[`verification > should have all contracts verified except for the known 
         "V_TOKEN",
       ],
       "value": "0x97deC07366Be72884331BE21704Fd93BF35286f9",
-    },
-  },
-  {
-    "item": {
-      "chainId": 42220,
-      "path": [
-        "MiscCelo",
-        "PROTOCOL_GUARDIAN",
-      ],
-      "value": "0x88E7aB6ee481Cf92e548c0e1169F824F99142c85",
     },
   },
 ]

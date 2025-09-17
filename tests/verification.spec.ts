@@ -1,11 +1,11 @@
-import { ChainId, ChainList } from '@bgd-labs/toolbox';
-import { describe, expect, it } from 'vitest';
-import { flattenedAddresses, ListItem } from '../ui/src/utils/getAddresses';
+import {ChainId, ChainList, getExplorer, getSourceCode} from '@bgd-labs/toolbox';
+import {describe, expect, it} from 'vitest';
+import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
-import { writeFileSync } from 'fs';
-import { Hex, PublicClient, zeroAddress } from 'viem';
-import { getCode } from 'viem/actions';
-import { getClient } from '../scripts/clients';
+import {writeFileSync} from 'fs';
+import {Address, Hex, PublicClient, zeroAddress} from 'viem';
+import {getCode} from 'viem/actions';
+import {getClient} from '../scripts/clients';
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
 
@@ -50,8 +50,8 @@ async function verifyProxy(item: ListItem) {
       }),
     });
 
-    const { status, result } = await request.json();
-    await sleep(1000);
+    const {status, result} = await request.json();
+    await sleep(200);
     if (status === '1') checkProxyVerification(item, result);
   } catch (e) {
     console.error(e);
@@ -60,27 +60,21 @@ async function verifyProxy(item: ListItem) {
 }
 
 async function checkVerified(item: ListItem) {
-  const params = {
-    chainId: String(item.chainId),
-    apikey: ETHERSCAN_API_KEY,
-    address: item.value,
-    module: 'contract',
-    action: 'getsourcecode',
-  };
-
-  const formattedParams = new URLSearchParams(params).toString();
-  const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
-    const request = await fetch(url);
-    const { status, result } = await request.json();
-    if (status !== '1' || !result[0].ContractName) {
+    const source = await getSourceCode({
+      chainId: item.chainId,
+      apiKey: process.env.ETHERSCAN_API_KEY,
+      address: item.value as Address,
+      apiUrl: process.env.EXPLORER_PROXY,
+    });
+    if (!source.ContractName) {
       // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
       // therefore we try to manually assign it
       if (['S_TOKEN', 'V_TOKEN', 'A_TOKEN'].includes(item.path[item.path.length - 1])) {
         await verifyProxy(item);
       }
     }
-    return { status, result };
+    return {status: '1', result: source};
   } catch (e) {
     console.error(e);
     return { status: '0', result: e };
@@ -88,11 +82,10 @@ async function checkVerified(item: ListItem) {
 }
 
 function getApiUrl(chainId: number) {
-  if (chainId === ChainId.metis)
-    return `https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api`;
   if (chainId === ChainId.soneium) return `https://soneium.blockscout.com/api`;
   if (chainId === ChainId.bob) return `https://explorer.gobob.xyz/api`;
-  return `https://api.etherscan.io/v2/api`;
+  if (chainId === ChainId.ink) return `https://explorer.inkonchain.com/api/`;
+  return getExplorer(chainId).api;
 }
 
 const knownErrors = {
@@ -119,10 +112,11 @@ describe('verification', { timeout: 500_000 }, () => {
       (item) =>
         ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
         !ChainList[item.chainId].testnet &&
-        !knownErrors[item.chainId]?.[item.value],
+        !knownErrors[item.chainId]?.[item.value] &&
+        (!verified[item.chainId]?.[item.value] ||
+          verified[item.chainId]?.[item.value] === zeroAddress),
     );
-    const errors: { item: ListItem }[] = [];
-    let newVerified = false;
+    const errors: {item: ListItem}[] = [];
     // unique set of addresses checked on this iteration
     // used to prevent double checking the same address
     const checked = new Set<string>();
@@ -137,23 +131,19 @@ describe('verification', { timeout: 500_000 }, () => {
         if (hasCode) {
           const { status, result } = (await checkVerified(item)) as {
             status: string;
-            result: { ContractName: string }[];
+            result: {ContractName: string};
           };
-          await sleep(300);
-          if (status !== '1' || !result[0].ContractName) {
-            errors.push({ item });
+          if (status !== '1' || !result.ContractName) {
+            errors.push({item});
             console.log(item.value, result);
           } else {
-            newVerified = true;
             if (!verified[item.chainId]) verified[item.chainId] = {};
             verified[item.chainId][item.value] = {
-              name: result[0].ContractName,
+              name: result.ContractName,
             };
-            if (newVerified) {
-              writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
-                encoding: 'utf-8',
-              });
-            }
+            writeFileSync('./tests/cache/verified.json', JSON.stringify(verified, null, 2), {
+              encoding: 'utf-8',
+            });
           }
         }
       }

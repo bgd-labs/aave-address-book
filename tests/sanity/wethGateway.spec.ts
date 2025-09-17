@@ -4,9 +4,9 @@ import {getContract} from 'viem';
 import {getClient} from '../../scripts/clients';
 import {IOwnable_ABI} from '../../src/ts/abis/IOwnable';
 import {IWrappedTokenGatewayV3_ABI} from '../../src/ts/abis/IWrappedTokenGatewayV3';
-import {getGovernance} from '../utils';
+import {getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel} from '../utils';
 
-export async function check(addresses: Record<string, any>) {
+async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
   // on testnets owners are usually not governance
   if (!client.chain?.testnet) {
@@ -16,7 +16,12 @@ export async function check(addresses: Record<string, any>) {
       client,
     });
     const owner = await gateway.read.owner();
-    const governance = getGovernance(addresses.CHAIN_ID);
+
+    const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
+
+    const governance = isWhiteLabel
+      ? getWhiteLabelGovernance(addresses.CHAIN_ID)
+      : getGovernance(addresses.CHAIN_ID);
     // pools without governance are factually deprecated
     if (!governance) {
       console.log(
@@ -29,7 +34,7 @@ export async function check(addresses: Record<string, any>) {
     expect(pool).toEqual(addresses.POOL);
 
     const l1Executor = (governance as any).EXECUTOR_LVL_1;
-    expect(owner).toEqual(l1Executor);
+    if (l1Executor) expect(owner).toEqual(l1Executor);
 
     // TODO:
     // const nativeWrapped = await gateway.read.WETH();
@@ -38,13 +43,16 @@ export async function check(addresses: Record<string, any>) {
 }
 
 describe('weth gateway', () => {
-  Object.keys(addressBook).map((library) => {
+  Object.keys(addressBook).forEach((library) => {
     const addresses = addressBook[library];
     if (addresses.WETH_GATEWAY) {
       const client = getClient(addresses.CHAIN_ID);
-      it(`should reference correct contracts on all getters: ${client.chain!.name}`, async () => {
-        return check(addresses);
-      });
+      it.concurrent(
+        `should reference correct contracts on all getters: ${client.chain!.name}`,
+        async () => {
+          return check(addresses);
+        },
+      );
     }
   });
 });

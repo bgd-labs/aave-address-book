@@ -29,8 +29,8 @@ export interface PoolV3Addresses {
   COLLECTOR: AddressInfo;
   EMISSION_MANAGER: AddressInfo;
   DEFAULT_INCENTIVES_CONTROLLER: AddressInfo;
-  [key: `DEFAULT_A_TOKEN_IMPL_REV_${number}`]: AddressInfo;
-  [key: `DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_${number}`]: AddressInfo;
+  DEFAULT_A_TOKEN_IMPL: AddressInfo;
+  DEFAULT_VARIABLE_DEBT_TOKEN_IMPL: AddressInfo;
   reservesData: ReserveData[];
   externalLibraries: null | Record<string, AddressInfo>;
 }
@@ -48,7 +48,7 @@ function generateExternalLibraries(
       }),
       libraryName,
     ),
-    js: `export const EXTERNAL_LIBRARIES = ${generateJsObject({addresses: libraries})} as const;\n`,
+    js: `export const EXTERNAL_LIBRARIES = ${generateJsObject(libraries)} as const;\n`,
   };
 }
 

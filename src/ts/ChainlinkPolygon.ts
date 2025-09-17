@@ -440,6 +440,9 @@ export const CRV_ETH = '0x1CF68C76803c9A415bE301f50E82e44c64B7F1D4';
 // https://polygonscan.com/address/0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403
 export const Calculated_MaticX_USD = '0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403';
 
+// https://polygonscan.com/address/0xdefcBDC0a5f5fBBdF520dC97be8d6d025B18da05
+export const RYT_NAV = '0xdefcBDC0a5f5fBBdF520dC97be8d6d025B18da05';
+
 // https://polygonscan.com/address/0x84227A76a04289473057BEF706646199D7C58c34
 export const ICP_USD = '0x84227A76a04289473057BEF706646199D7C58c34';
 

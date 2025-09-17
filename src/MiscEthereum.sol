@@ -53,4 +53,47 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee
   address internal constant weETH_RATIO_PROVIDER = 0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee;
+
+  // https://etherscan.io/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+  address internal constant AFC_SAFE = 0x22740deBa78d5a0c24C58C740e3715ec29de1bFa;
+
+  // https://etherscan.io/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+  address internal constant ALC_SAFE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
+
+  // https://etherscan.io/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+  address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
+
+  // https://etherscan.io/address/0xdeadD8aB03075b7FBA81864202a2f59EE25B312b
+  address internal constant MERIT_AHAB_SAFE = 0xdeadD8aB03075b7FBA81864202a2f59EE25B312b;
+
+  // https://etherscan.io/address/0xAA43203167317DeeF8288095C44b84a686918d2E
+  address internal constant APE_SAFE = 0xAA43203167317DeeF8288095C44b84a686918d2E;
+
+  // https://etherscan.io/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
+  address internal constant APE_VOTING_SAFE = 0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6;
+
+  // https://etherscan.io/address/0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871
+  address internal constant ALC_INCENTIVE_SAFE = 0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871;
+
+  // https://etherscan.io/address/0xAA484Ba6a7f51f00A3f82a11e73b741AE1dEAB58
+  address internal constant ALC_VOTING_SAFE = 0xAA484Ba6a7f51f00A3f82a11e73b741AE1dEAB58;
+
+  // https://etherscan.io/address/0xCDb4fA6ba08bF1FB7Aa9fDf6002E78EDc431a642
+  address internal constant FRONTIER_SAFE = 0xCDb4fA6ba08bF1FB7Aa9fDf6002E78EDc431a642;
+
+  // https://etherscan.io/address/0xAA870e4B82deaDa3727235f34183Ec9B728714C8
+  address internal constant MERIT_INCENTIVE_SAFE = 0xAA870e4B82deaDa3727235f34183Ec9B728714C8;
+
+  // https://etherscan.io/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
+  address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
+
+  // https://etherscan.io/address/0xAAd742dd9111373ec3C1E53b005e870d4CfF3be2
+  address internal constant AHAB_INCENTIVES_SAFE = 0xAAd742dd9111373ec3C1E53b005e870d4CfF3be2;
+
+  // https://etherscan.io/address/0xAA12BAd4a501d45A5b771e49C2Fd415BA8BFc79d
+  address internal constant AFC_CEX_EARN_SAFE = 0xAA12BAd4a501d45A5b771e49C2Fd415BA8BFc79d;
+
+  // https://etherscan.io/address/0xaa7A1910BA79B6A2E385ebA26185aA2dCB9B8eAd
+  address internal constant AFC_CEX_EARN_INCENTIVE_SAFE =
+    0xaa7A1910BA79B6A2E385ebA26185aA2dCB9B8eAd;
 }

@@ -29,4 +29,31 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0x0335ffa9af5CE05590d6C9A75B645470e07744a9
   address internal constant AAVE_ARB_ETH_BRIDGE = 0x0335ffa9af5CE05590d6C9A75B645470e07744a9;
+
+  // https://arbiscan.io/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+  address internal constant AFC_SAFE = 0x22740deBa78d5a0c24C58C740e3715ec29de1bFa;
+
+  // https://arbiscan.io/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+  address internal constant ALC_SAFE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
+
+  // https://arbiscan.io/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
+  address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
+
+  // https://arbiscan.io/address/0xdeadD8aB03075b7FBA81864202a2f59EE25B312b
+  address internal constant MERIT_AHAB_SAFE = 0xdeadD8aB03075b7FBA81864202a2f59EE25B312b;
+
+  // https://arbiscan.io/address/0xAA43203167317DeeF8288095C44b84a686918d2E
+  address internal constant APE_SAFE = 0xAA43203167317DeeF8288095C44b84a686918d2E;
+
+  // https://arbiscan.io/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
+  address internal constant APE_VOTING_SAFE = 0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6;
+
+  // https://arbiscan.io/address/0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871
+  address internal constant ALC_INCENTIVE_SAFE = 0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871;
+
+  // https://arbiscan.io/address/0xAA870e4B82deaDa3727235f34183Ec9B728714C8
+  address internal constant MERIT_INCENTIVE_SAFE = 0xAA870e4B82deaDa3727235f34183Ec9B728714C8;
+
+  // https://arbiscan.io/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
+  address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
 }

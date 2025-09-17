@@ -125,21 +125,21 @@ library AaveV2PolygonAssets {
     0x4309B0d719a0Dfb526EE9C0E58b77635B2971cC4;
 
   // https://polygonscan.com/address/0xc2132D05D31c914a87C6611C10748AEb04B58e8F
-  address internal constant USDT_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
+  address internal constant USDT0_UNDERLYING = 0xc2132D05D31c914a87C6611C10748AEb04B58e8F;
 
-  uint8 internal constant USDT_DECIMALS = 6;
+  uint8 internal constant USDT0_DECIMALS = 6;
 
   // https://polygonscan.com/address/0x60D55F02A771d515e077c9C2403a1ef324885CeC
-  address internal constant USDT_A_TOKEN = 0x60D55F02A771d515e077c9C2403a1ef324885CeC;
+  address internal constant USDT0_A_TOKEN = 0x60D55F02A771d515e077c9C2403a1ef324885CeC;
 
   // https://polygonscan.com/address/0x8038857FD47108A07d1f6Bf652ef1cBeC279A2f3
-  address internal constant USDT_V_TOKEN = 0x8038857FD47108A07d1f6Bf652ef1cBeC279A2f3;
+  address internal constant USDT0_V_TOKEN = 0x8038857FD47108A07d1f6Bf652ef1cBeC279A2f3;
 
   // https://polygonscan.com/address/0xf44Fee6877F2f1a0b84c8bC49ff4Ec35DF089Ea0
-  address internal constant USDT_ORACLE = 0xf44Fee6877F2f1a0b84c8bC49ff4Ec35DF089Ea0;
+  address internal constant USDT0_ORACLE = 0xf44Fee6877F2f1a0b84c8bC49ff4Ec35DF089Ea0;
 
   // https://polygonscan.com/address/0xAb85FD7DCBFdD40e822321DAc4D5fD3cf08b2542
-  address internal constant USDT_INTEREST_RATE_STRATEGY =
+  address internal constant USDT0_INTEREST_RATE_STRATEGY =
     0xAb85FD7DCBFdD40e822321DAc4D5fD3cf08b2542;
 
   // https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6

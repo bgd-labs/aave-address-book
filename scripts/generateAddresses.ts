@@ -27,9 +27,11 @@ import { scrollSepoliaProtoV3, scrollProtoV3 } from './configs/pools/scroll';
 import { zkSyncProtoV3 } from './configs/pools/zksync';
 import { lineaProtoV3 } from './configs/pools/linea';
 import { celoProtoV3 } from './configs/pools/celo';
-import { mantleProtoV3 } from './configs/pools/mantle';
+// import {mantleProtoV3} from './configs/pools/mantle';
 import { sonicProtoV3 } from './configs/pools/sonic';
 import { soneiumProtoV3 } from './configs/pools/soneium';
+import { inkProtoV3 } from './configs/pools/ink';
+import { plasmaProtoV3 } from './configs/pools/plasma';
 import { generateGovernanceLibrary } from './generator/governanceV3Generator';
 import { generateProtocolV2Library } from './generator/protocolV2Generator';
 import { generateProtocolV3Library } from './generator/protocolV3Generator';
@@ -60,6 +62,7 @@ import { gnosisAddresses } from './configs/networks/gnosis';
 import { bnbAddresses } from './configs/networks/bnb';
 import { celoAddresses } from './configs/networks/celo';
 import { scrollAddresses } from './configs/networks/scroll';
+import { inkAddresses, inkWhiteLabelAddresses } from './configs/networks/ink';
 import { governanceConfigScroll } from './configs/governance/scroll';
 import { generateTokenList } from './generator/generateTokenList';
 import { generateAaveV1 } from './generator/protocolV1Generator';
@@ -67,13 +70,16 @@ import { governanceConfigZkSync } from './configs/governance/zksync';
 import { zkSyncAddresses } from './configs/networks/zksync';
 import { lineaAddresses } from './configs/networks/linea';
 import { ghoArbitrum } from './configs/gho/arbitrum';
+import { ghoAvalanche } from './configs/gho/avalanche';
 import { ghoBase } from './configs/gho/base';
 import { ghoEthereum } from './configs/gho/ethereum';
+import { ghoGnosis } from './configs/gho/gnosis';
 import { generateGho } from './generator/ghoGenerator';
 import { governanceConfigLinea } from './configs/governance/linea';
 import { mantleAddresses } from './configs/networks/mantle';
 import { sonicAddresses } from './configs/networks/sonic';
 import { soneiumAddresses } from './configs/networks/soneium';
+import { plasmaAddresses } from './configs/networks/plasma';
 import { governanceConfigMantle } from './configs/governance/mantle';
 import { governanceConfigSonic } from './configs/governance/sonic';
 import { umbrellaMainnetConfig } from './configs/umbrella/ethereum';
@@ -82,13 +88,16 @@ import { generateChainlink } from './generator/chainlink';
 import { governanceConfigSoneium } from './configs/governance/soneium';
 import { governanceConfigBob } from './configs/governance/bob';
 import { bobAddresses } from './configs/networks/bob';
+import { governanceConfigInk, governanceConfigInkWhiteLabel } from './configs/governance/ink';
+import { governanceConfigPlasma } from './configs/governance/plasma';
 
 async function main() {
   // cleanup ts artifacts
   if (existsSync('./src/ts')) {
     const files = readdirSync('./src/ts');
     for (const file of files) {
-      if (file !== 'abis' && file !== 'AaveV3Harmony.ts') rmSync(`./src/ts/${file}`);
+      if (file !== 'abis' && file !== 'AaveV3Harmony.ts' && file !== 'utils.ts')
+        rmSync(`./src/ts/${file}`);
     }
   } else {
     mkdirSync('./src/ts');
@@ -116,6 +125,9 @@ async function main() {
       governanceConfigSonic,
       governanceConfigSoneium,
       governanceConfigBob,
+      governanceConfigInk,
+      governanceConfigInkWhiteLabel,
+      governanceConfigPlasma,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -157,12 +169,16 @@ async function main() {
       etherFiEthereumMainnetProtoV3Pool,
       lineaProtoV3,
       celoProtoV3,
-      mantleProtoV3,
+      // mantleProtoV3,
       sonicProtoV3,
       soneiumProtoV3,
+      inkProtoV3,
+      plasmaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase].map((config) => generateGho(config));
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis].map((config) =>
+    generateGho(config),
+  );
   const umbrellaAddresses = await Promise.all(
     [umbrellaMainnetConfig, umbrellaBaseSepoliaConfig].map((config) =>
       generateUmbrellaLibrary(config),
@@ -199,6 +215,9 @@ async function main() {
     sonicAddresses,
     soneiumAddresses,
     bobAddresses,
+    inkAddresses,
+    inkWhiteLabelAddresses,
+    plasmaAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

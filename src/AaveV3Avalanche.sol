@@ -25,15 +25,15 @@ library AaveV3Avalanche {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0xa72636CbcAa8F5FF95B2cc47F3CDEe83F3294a0B);
 
-  // https://snowscan.xyz/address/0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5
+  // https://snowscan.xyz/address/0x243Aa95cAC2a25651eda86e80bEe66114413c43b
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x14496b405D62c24F91f04Cda1c69Dc526D56fDE5);
+    IPoolDataProvider(0x243Aa95cAC2a25651eda86e80bEe66114413c43b);
 
-  // https://snowscan.xyz/address/0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8
-  address internal constant POOL_IMPL = 0xB7467b66d86cE80CC258f28D266A18A51DB7FAC8;
+  // https://snowscan.xyz/address/0x1C984121713329114d1D97f5B4Aae9D4D5BfA0eB
+  address internal constant POOL_IMPL = 0x1C984121713329114d1D97f5B4Aae9D4D5BfA0eB;
 
-  // https://snowscan.xyz/address/0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xE5e48Ad1F9D1A894188b483DcF91f4FaD6AbA43b;
+  // https://snowscan.xyz/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
 
   // https://snowscan.xyz/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,18 +45,15 @@ library AaveV3Avalanche {
   // https://snowscan.xyz/address/0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0
   ICollector internal constant COLLECTOR = ICollector(0x5ba7fd868c40c16f7aDfAe6CF87121E13FC2F7a0);
 
-  // https://snowscan.xyz/address/0x1E81af09001aD208BDa68FF022544dB2102A752d
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_2 = 0x1E81af09001aD208BDa68FF022544dB2102A752d;
+  // https://snowscan.xyz/address/0x8deBE6C7d5B56e09403bdB0Ec5CB92506Ac462cD
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x8deBE6C7d5B56e09403bdB0Ec5CB92506Ac462cD;
 
-  // https://snowscan.xyz/address/0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_2 =
-    0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24;
+  // https://snowscan.xyz/address/0xAcD1A67Bd377c6A4397b486F8B9aFAbDe49B8933
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
+    0xAcD1A67Bd377c6A4397b486F8B9aFAbDe49B8933;
 
-  // https://snowscan.xyz/address/0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5
-  address internal constant CAPS_PLUS_RISK_STEWARD = 0xD2C92b5A793e196aB11dBefBe3Af6BddeD6c3DD5;
-
-  // https://snowscan.xyz/address/0xbf03aB677DEdA36E19D294d1735b93Dd9d1E0c05
-  address internal constant RISK_STEWARD = 0xbf03aB677DEdA36E19D294d1735b93Dd9d1E0c05;
+  // https://snowscan.xyz/address/0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2
+  address internal constant RISK_STEWARD = 0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2;
 
   // https://snowscan.xyz/address/0x57218F3aB422A39115951c3Eb06881a7A719DfdD
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x57218F3aB422A39115951c3Eb06881a7A719DfdD;
@@ -67,14 +64,11 @@ library AaveV3Avalanche {
   // https://snowscan.xyz/address/0x1273f29204fC102bD4620485B13cFE27a794fF32
   address internal constant EDGE_RISK_ORACLE = 0x1273f29204fC102bD4620485B13cFE27a794fF32;
 
-  // https://snowscan.xyz/address/0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99
-  address internal constant FREEZING_STEWARD = 0x6d4F341d8Bb3Dc5ABe822Aa940F1884508C13f99;
-
   // https://snowscan.xyz/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
 
-  // https://snowscan.xyz/address/0x9aaB9F0b6E19907e346420Edc0d3029Edb5e8616
-  address internal constant CONFIG_ENGINE = 0x9aaB9F0b6E19907e346420Edc0d3029Edb5e8616;
+  // https://snowscan.xyz/address/0x9BAF5d9Bd6FBa6bEAB5e482285eD05799BbA1ECB
+  address internal constant CONFIG_ENGINE = 0x9BAF5d9Bd6FBa6bEAB5e482285eD05799BbA1ECB;
 
   // https://snowscan.xyz/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -427,6 +421,26 @@ library AaveV3AvalancheAssets {
 
   // https://snowscan.xyz/address/0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e
   address internal constant AUSD_STATA_TOKEN = 0x45cf39EeB437FA95Bb9b52c0105254a6BD25D01e;
+
+  // https://snowscan.xyz/address/0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73
+  address internal constant GHO_UNDERLYING = 0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://snowscan.xyz/address/0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6
+  address internal constant GHO_A_TOKEN = 0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6;
+
+  // https://snowscan.xyz/address/0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5
+  address internal constant GHO_V_TOKEN = 0x38d693cE1dF5AaDF7bC62595A37D667aD57922e5;
+
+  // https://snowscan.xyz/address/0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12
+  address internal constant GHO_ORACLE = 0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12;
+
+  // https://snowscan.xyz/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da;
+
+  // https://snowscan.xyz/address/0x79459f4C9AfC902488109D058C3E76ed0B037c41
+  address internal constant GHO_STATA_TOKEN = 0x79459f4C9AfC902488109D058C3E76ed0B037c41;
 }
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;
@@ -436,24 +450,21 @@ library AaveV3AvalancheEModes {
   uint8 internal constant AVAX_CORRELATED = 2;
 }
 library AaveV3AvalancheExternalLibraries {
-  // https://snowscan.xyz/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
-  address internal constant FLASHLOAN_LOGIC = 0x34039100cc9584Ae5D741d322e16d0d18CEE8770;
+  // https://snowscan.xyz/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
+  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
 
-  // https://snowscan.xyz/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
-  address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
+  // https://snowscan.xyz/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
+  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
 
-  // https://snowscan.xyz/address/0x621Ef86D8A5C693a06295BC288B95C12D4CE4994
-  address internal constant BRIDGE_LOGIC = 0x621Ef86D8A5C693a06295BC288B95C12D4CE4994;
+  // https://snowscan.xyz/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
+  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
-  // https://snowscan.xyz/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
-  address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;
+  // https://snowscan.xyz/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
+  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
 
-  // https://snowscan.xyz/address/0x4731bF01583F991278692E8727d0700a00A1fBBf
-  address internal constant LIQUIDATION_LOGIC = 0x4731bF01583F991278692E8727d0700a00A1fBBf;
+  // https://snowscan.xyz/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
+  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
 
-  // https://snowscan.xyz/address/0xf8C97539934ee66a67C26010e8e027D77E821B0C
-  address internal constant POOL_LOGIC = 0xf8C97539934ee66a67C26010e8e027D77E821B0C;
-
-  // https://snowscan.xyz/address/0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3
-  address internal constant SUPPLY_LOGIC = 0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3;
+  // https://snowscan.xyz/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
+  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
 }

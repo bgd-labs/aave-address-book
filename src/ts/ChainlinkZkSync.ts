@@ -20,6 +20,9 @@ export const LINK_ETH = '0xB66325FC0F8aA6dE6FeDFF4e51e54025cEea51eE';
 // https://era.zksync.network/address/0x2137c69DCb41f611Cc8f39F8A98047e774d6ED74
 export const AAVE_USD = '0x2137c69DCb41f611Cc8f39F8A98047e774d6ED74';
 
+// https://era.zksync.network/address/0x7e161604Da57DF30bbC9f0C166e8163fB9147a7a
+export const xSolvBTC_NAV = '0x7e161604Da57DF30bbC9f0C166e8163fB9147a7a';
+
 // https://era.zksync.network/address/0x8D3184a992f93729b249407C33F1e78abE0d650e
 export const weETH_eETH_Exchange_Rate = '0x8D3184a992f93729b249407C33F1e78abE0d650e';
 

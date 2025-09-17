@@ -29,6 +29,9 @@ export const Calculated_mETH_USD = '0xB16FcAFB8378baA0a69142a325878FDCad58606A';
 // https://mantlescan.xyz/address/0x6352E3A925E27130317d3A0A5b0b0303e9f2fc7c
 export const mETH_ETH = '0x6352E3A925E27130317d3A0A5b0b0303e9f2fc7c';
 
+// https://mantlescan.xyz/address/0x02959651ED50f9866BF39D29884dF245D03FdC51
+export const Calculated_cmETH_ETH = '0x02959651ED50f9866BF39D29884dF245D03FdC51';
+
 // https://mantlescan.xyz/address/0x73b15e19b247263D03D7938f1356304b7B330Ff0
 export const Calculated_FBTC_USD = '0x73b15e19b247263D03D7938f1356304b7B330Ff0';
 

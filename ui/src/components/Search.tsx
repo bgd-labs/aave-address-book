@@ -27,23 +27,49 @@ function getVersionPriority(name: string): number {
   return 4;
 }
 
-function comp(a: SearchItem, b: SearchItem) {
-  const aInProduction = !ChainList[a.chainId as keyof typeof ChainList].testnet;
-  const bInProduction = !ChainList[b.chainId as keyof typeof ChainList].testnet;
+function createComparator(searchQuery: string, marketNames: Set<string>) {
+  return function comp(a: SearchItem, b: SearchItem) {
+    const queryLower = searchQuery.toLowerCase();
+    const aPathLower = a.searchPath.toLowerCase();
+    const bPathLower = b.searchPath.toLowerCase();
 
-  if (aInProduction && !bInProduction) {
-    return -1;
-  } else if (!aInProduction && bInProduction) {
-    return 1;
-  }
+    const aExactStart = aPathLower.startsWith(queryLower);
+    const bExactStart = bPathLower.startsWith(queryLower);
 
-  const aVersionPriority = getVersionPriority(a.searchPath);
-  const bVersionPriority = getVersionPriority(b.searchPath);
+    if (aExactStart && !bExactStart) return -1;
+    if (!aExactStart && bExactStart) return 1;
 
-  if (aVersionPriority !== bVersionPriority) {
-    return aVersionPriority - bVersionPriority;
-  }
-  return 0;
+    const aVersionPriority = getVersionPriority(a.searchPath);
+    const bVersionPriority = getVersionPriority(b.searchPath);
+
+    if (aVersionPriority !== bVersionPriority) {
+      return aVersionPriority - bVersionPriority;
+    }
+
+    const isMarketQuery = marketNames.has(queryLower);
+
+    if (!isMarketQuery) {
+      const aIsEthereum = a.chainId === 1;
+      const bIsEthereum = b.chainId === 1;
+
+      if (aIsEthereum && !bIsEthereum) return -1;
+      if (!aIsEthereum && bIsEthereum) return 1;
+    }
+
+    const aInProduction =
+      !ChainList[a.chainId as keyof typeof ChainList]?.testnet;
+    const bInProduction =
+      !ChainList[b.chainId as keyof typeof ChainList]?.testnet;
+
+    if (aInProduction && !bInProduction) return -1;
+    if (!aInProduction && bInProduction) return 1;
+
+    if (a.path.length !== b.path.length) {
+      return a.path.length - b.path.length;
+    }
+
+    return a.searchPath.localeCompare(b.searchPath);
+  };
 }
 
 const getResultText = (results: any[], limit: number) => {
@@ -74,32 +100,56 @@ export const Search = ({
 
   const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const uf = useMemo(() => {
+  const { uf, cleanedSearchPaths } = useMemo(() => {
     const opts = {
       intraMode: 1,
       intraChars: "[a-z\\d'_]",
     };
-    return new uFuzzy(opts);
-  }, []);
+    const cleaned = searchPaths.map((path) => path.replace(/_/g, ''));
+    return {
+      uf: new uFuzzy(opts),
+      cleanedSearchPaths: cleaned,
+    };
+  }, [searchPaths]);
 
   const performSearch = useCallback(
     (search: string) => {
-      let [matches, idx, order] = uf.search(
-        searchPaths.map((path) => path.replace(/_/g, '')),
-        search,
-        10,
-      );
-      console.log(idx);
-      let results: SearchItem[] = [];
-      if (order && matches) {
-        results = order
-          .slice(0, SEARCH_LIMIT)
-          .map((r) => addresses[matches[r]]);
+      if (!search.trim()) {
+        setResults([]);
+        return;
       }
 
-      setResults(results.sort(comp));
+      let [matches, _, order] = uf.search(cleanedSearchPaths, search, 10);
+      let results: SearchItem[] = [];
+
+      if (matches) {
+        if (order) {
+          results = order
+            .slice(0, SEARCH_LIMIT)
+            .map((r) => addresses[matches[r]]);
+        } else {
+          results = matches.map((r) => addresses[r]);
+        }
+      }
+
+      const extractChainName = (searchPath: string): string | null => {
+        const match = searchPath.match(/^AaveV[1-4]([A-Za-z]+)/);
+        return match ? match[1].toLowerCase() : null;
+      };
+
+      const allChainNames = new Set(
+        addresses
+          .map((addr) => extractChainName(addr.searchPath))
+          .filter((name): name is string => name !== null),
+      );
+
+      const sortedResults = results
+        .sort(createComparator(search, allChainNames))
+        .slice(0, SEARCH_LIMIT);
+
+      setResults(sortedResults);
     },
-    [searchPaths, addresses, uf],
+    [cleanedSearchPaths, addresses, uf],
   );
 
   const handleKeyDown = (event: React.KeyboardEvent) => {

@@ -25,15 +25,15 @@ library AaveV3Celo {
   IACLManager internal constant ACL_MANAGER =
     IACLManager(0x7a12dCfd73C1B4cddf294da4cFce75FcaBBa314C);
 
-  // https://celoscan.io/address/0x33b7d355613110b4E842f5f7057Ccd36fb4cee28
+  // https://celoscan.io/address/0x2e0f8D3B1631296cC7c56538D6Eb6032601E15ED
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x33b7d355613110b4E842f5f7057Ccd36fb4cee28);
+    IPoolDataProvider(0x2e0f8D3B1631296cC7c56538D6Eb6032601E15ED);
 
-  // https://celoscan.io/address/0x44D38b18a99E50E51B99F05C1f418Db26Ded315f
-  address internal constant POOL_IMPL = 0x44D38b18a99E50E51B99F05C1f418Db26Ded315f;
+  // https://celoscan.io/address/0x62572b5F1428aa9C85Ec2f687FeC7DA614e1baa4
+  address internal constant POOL_IMPL = 0x62572b5F1428aa9C85Ec2f687FeC7DA614e1baa4;
 
-  // https://celoscan.io/address/0x87f6224536d9BD1d4FE6052e06f9647B51843e33
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x87f6224536d9BD1d4FE6052e06f9647B51843e33;
+  // https://celoscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
 
   // https://celoscan.io/address/0x4725A0FdbEB14A77964bC1C221eE3a7982263103
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,15 +45,15 @@ library AaveV3Celo {
   // https://celoscan.io/address/0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7
   ICollector internal constant COLLECTOR = ICollector(0xC959439207dA5341B74aDcdAC59016aa9Be7E9E7);
 
-  // https://celoscan.io/address/0x3F662AA079a9619F10BFF4848910195C52CB2fb4
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x3F662AA079a9619F10BFF4848910195C52CB2fb4;
+  // https://celoscan.io/address/0x0B89E33cDe70fa6fd2cD1C243790B9e19a914927
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x0B89E33cDe70fa6fd2cD1C243790B9e19a914927;
 
-  // https://celoscan.io/address/0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x8Ff70eE5F8b607844A094a938E4DeD76aEbca5f0;
+  // https://celoscan.io/address/0x63E00463fDD1f3308C452a38D21834c6cED83836
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
+    0x63E00463fDD1f3308C452a38D21834c6cED83836;
 
-  // https://celoscan.io/address/0xB25a5D144626a0D488e52AE717A051a2E9997076
-  address internal constant CONFIG_ENGINE = 0xB25a5D144626a0D488e52AE717A051a2E9997076;
+  // https://celoscan.io/address/0x6BC59F65bdA1bE5c2936cAA36081A652c01C7BFb
+  address internal constant CONFIG_ENGINE = 0x6BC59F65bdA1bE5c2936cAA36081A652c01C7BFb;
 
   // https://celoscan.io/address/0xB4B6939D0804DCE8d0Ac3e59b2eD5C072829d56b
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -71,8 +71,8 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x2b33073B94243304bCb4dfFA6b624afA5BAA414D
   address internal constant STATA_FACTORY = 0x2b33073B94243304bCb4dfFA6b624afA5BAA414D;
 
-  // https://celoscan.io/address/0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef
-  address internal constant RISK_STEWARD = 0x69a6CaF240698982c3Ac89E0A7C12E76bCEee4ef;
+  // https://celoscan.io/address/0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c
+  address internal constant RISK_STEWARD = 0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c;
 
   // https://celoscan.io/address/0x886b90e5d7DA22000f1652740D3EC51566AAbe40
   address internal constant DUST_BIN = 0x886b90e5d7DA22000f1652740D3EC51566AAbe40;
@@ -196,24 +196,21 @@ library AaveV3CeloEModes {
   uint8 internal constant NONE = 0;
 }
 library AaveV3CeloExternalLibraries {
-  // https://celoscan.io/address/0x0b3486805D3bda7ACb2d5aa7E26f0b68aF647bc5
-  address internal constant FLASHLOAN_LOGIC = 0x0b3486805D3bda7ACb2d5aa7E26f0b68aF647bc5;
+  // https://celoscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
+  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
 
-  // https://celoscan.io/address/0xAB3218d0900Ba992084a6592b43f66926D4F5757
-  address internal constant BORROW_LOGIC = 0xAB3218d0900Ba992084a6592b43f66926D4F5757;
+  // https://celoscan.io/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
+  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
 
-  // https://celoscan.io/address/0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A
-  address internal constant BRIDGE_LOGIC = 0x028a1Bc3769209345C9476aFBa72EE4274Cd2A5A;
+  // https://celoscan.io/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
+  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
-  // https://celoscan.io/address/0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e
-  address internal constant E_MODE_LOGIC = 0xc463D0Ef209A60318F6aF2e8D29958a665d89B1e;
+  // https://celoscan.io/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
+  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
 
-  // https://celoscan.io/address/0x70Ac8F684eED3769960b2f863e405afc90CabCD4
-  address internal constant LIQUIDATION_LOGIC = 0x70Ac8F684eED3769960b2f863e405afc90CabCD4;
+  // https://celoscan.io/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
+  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
 
-  // https://celoscan.io/address/0x50B8ed003a371cc498c57518e3581a059834c70c
-  address internal constant POOL_LOGIC = 0x50B8ed003a371cc498c57518e3581a059834c70c;
-
-  // https://celoscan.io/address/0x0742d8afd443B9D9B0587536d3750Ef94d69e4b7
-  address internal constant SUPPLY_LOGIC = 0x0742d8afd443B9D9B0587536d3750Ef94d69e4b7;
+  // https://celoscan.io/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
+  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
 }

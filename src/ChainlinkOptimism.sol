@@ -3,6 +3,9 @@
 pragma solidity >=0.6.0;
 
 library ChainlinkOptimism {
+  // https://optimistic.etherscan.io/address/0xa8CD85030b6810663DDeD48aA15330F091fb4c9b
+  address internal constant vyUSD_USD_Exchange_Rate = 0xa8CD85030b6810663DDeD48aA15330F091fb4c9b;
+
   // https://optimistic.etherscan.io/address/0x13e3Ee699D1909E989722E753853AE30b17e08c5
   address internal constant ETH_USD = 0x13e3Ee699D1909E989722E753853AE30b17e08c5;
 
@@ -146,6 +149,9 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0xFAD40C0e2BeF93c6a822015863045CAAeAAde4d3
   address internal constant ezETH_ETH_Exchange_Rate = 0xFAD40C0e2BeF93c6a822015863045CAAeAAde4d3;
 
+  // https://optimistic.etherscan.io/address/0x46C627150f7993CB71F12E158478546F5Fe060FF
+  address internal constant yUSD_USD_Exchange_Rate = 0x46C627150f7993CB71F12E158478546F5Fe060FF;
+
   // https://optimistic.etherscan.io/address/0x799A346e7dBfa0f66Ad0961259366F93A1ee34C4
   address internal constant XLM_USD = 0x799A346e7dBfa0f66Ad0961259366F93A1ee34C4;
 
@@ -198,9 +204,6 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0x718A5788b89454aAE3A028AE9c111A29Be6c2a6F
   address internal constant WBTC_USD = 0x718A5788b89454aAE3A028AE9c111A29Be6c2a6F;
-
-  // https://optimistic.etherscan.io/address/0x53623FD50C5Fd8788746af00F088FD7f06fD4116
-  address internal constant RNDR_USD = 0x53623FD50C5Fd8788746af00F088FD7f06fD4116;
 
   // https://optimistic.etherscan.io/address/0x7CFB4fac1a2FDB1267F8bc17FADc12804AC13CFE
   address internal constant ONE_USD = 0x7CFB4fac1a2FDB1267F8bc17FADc12804AC13CFE;
