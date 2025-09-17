@@ -3120,6 +3120,20 @@
     },
     {
       "chainId": 1,
+      "address": "0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7",
+      "name": "Wrapped Aave Ethereum USDtb",
+      "decimals": 18,
+      "symbol": "waEthUSDtb",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdtb.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xC139190F447e929f090Edeb554D95AbB8b18aC1C",
+        "underlyingAToken": "0xEc4ef66D4fCeEba34aBB4dE69dB391Bc5476ccc8"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x917459337CaAC939D41d7493B3999f571D20D667",
       "name": "PT Ethena USDe 31JUL2025",
       "decimals": 18,
@@ -4606,6 +4620,28 @@
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
         "underlyingAToken": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD",
+      "name": "Euro Coin",
+      "decimals": 6,
+      "symbol": "EURC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eurc.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB",
+      "name": "Aave Avalanche EURC",
+      "decimals": 6,
+      "symbol": "aAvaEURC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeurc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD"
       }
     },
     {
@@ -8627,6 +8663,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 133 },
-  "timestamp": "2025-09-11T22:23:45.754Z"
+  "version": { "major": 3, "minor": 0, "patch": 134 },
+  "timestamp": "2025-09-17T19:20:27.632Z"
 }
