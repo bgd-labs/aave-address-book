@@ -3716,6 +3716,9 @@
     },
     "0x14E5FC91Ddb3f97C33013Cc9fA74F54062Ad1Aa1": {
       "name": "EACAggregatorProxy"
+    },
+    "0x5513224daaEABCa31af5280727878d52097afA05": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
