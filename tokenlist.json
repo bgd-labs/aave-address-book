@@ -3248,7 +3248,8 @@
       "name": "PT Ethena sUSDE 25SEP2025",
       "decimals": 18,
       "symbol": "PT-sUSDE-25SEP2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
     },
     {
       "chainId": 1,
@@ -3257,6 +3258,7 @@
       "decimals": 18,
       "symbol": "aEthPT_sUSDE_25SEP2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x9F56094C450763769BA0EA9Fe2876070c0fD5F77"
@@ -3268,7 +3270,8 @@
       "name": "PT Ethena USDe 25SEP2025",
       "decimals": 18,
       "symbol": "PT-USDe-25SEP2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3277,6 +3280,7 @@
       "decimals": 18,
       "symbol": "aEthPT_USDe_25SEP2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a"
@@ -3288,7 +3292,8 @@
       "name": "Treehouse ETH",
       "decimals": 18,
       "symbol": "tETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/teth.svg"
     },
     {
       "chainId": 1,
@@ -3297,6 +3302,7 @@
       "decimals": 18,
       "symbol": "aEthtETH",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ateth.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
@@ -8023,6 +8029,7 @@
       "decimals": 18,
       "symbol": "aEthLidotETH",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ateth.svg",
       "extensions": {
         "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
         "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
@@ -8663,6 +8670,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 134 },
-  "timestamp": "2025-09-17T19:20:27.632Z"
+  "version": { "major": 3, "minor": 0, "patch": 135 },
+  "timestamp": "2025-09-18T08:24:18.998Z"
 }

@@ -489,6 +489,9 @@ library ChainlinkArbitrum {
   // https://arbiscan.io/address/0xA43A34030088E6510FecCFb77E88ee5e7ed0fE64
   address internal constant LDO_USD = 0xA43A34030088E6510FecCFb77E88ee5e7ed0fE64;
 
+  // https://arbiscan.io/address/0x229a9322D050BB6aC91C40fFbB8e3bef79c48071
+  address internal constant USR_USD_Exchange_Rate = 0x229a9322D050BB6aC91C40fFbB8e3bef79c48071;
+
   // https://arbiscan.io/address/0x1940fEd49cDBC397941f2D336eb4994D599e568B
   address internal constant ZRO_USD = 0x1940fEd49cDBC397941f2D336eb4994D599e568B;
 
@@ -606,6 +609,9 @@ library ChainlinkArbitrum {
 
   // https://arbiscan.io/address/0x18DdDDEe3682853c746E5203e0495CAaC5054a75
   address internal constant USDL_USD = 0x18DdDDEe3682853c746E5203e0495CAaC5054a75;
+
+  // https://arbiscan.io/address/0x3861d83ed006A6570cE8Eb9878F4Df0dF889A2da
+  address internal constant RLP_USD_Exchange_Rate = 0x3861d83ed006A6570cE8Eb9878F4Df0dF889A2da;
 
   // https://arbiscan.io/address/0x76998C22eEa325A11dc6971Cedcf533E9740F854
   address internal constant ORDI_USD = 0x76998C22eEa325A11dc6971Cedcf533E9740F854;
