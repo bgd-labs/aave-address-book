@@ -478,6 +478,9 @@ export const ETH_USD_Total_Marketcap = '0xB1f70A229FE7cceD0428245db8B1f6C48c7Ea8
 // https://arbiscan.io/address/0xA43A34030088E6510FecCFb77E88ee5e7ed0fE64
 export const LDO_USD = '0xA43A34030088E6510FecCFb77E88ee5e7ed0fE64';
 
+// https://arbiscan.io/address/0x229a9322D050BB6aC91C40fFbB8e3bef79c48071
+export const USR_USD_Exchange_Rate = '0x229a9322D050BB6aC91C40fFbB8e3bef79c48071';
+
 // https://arbiscan.io/address/0x1940fEd49cDBC397941f2D336eb4994D599e568B
 export const ZRO_USD = '0x1940fEd49cDBC397941f2D336eb4994D599e568B';
 
@@ -594,6 +597,9 @@ export const MIMATIC_USD = '0x59644ec622243878d1464A9504F9e9a31294128a';
 
 // https://arbiscan.io/address/0x18DdDDEe3682853c746E5203e0495CAaC5054a75
 export const USDL_USD = '0x18DdDDEe3682853c746E5203e0495CAaC5054a75';
+
+// https://arbiscan.io/address/0x3861d83ed006A6570cE8Eb9878F4Df0dF889A2da
+export const RLP_USD_Exchange_Rate = '0x3861d83ed006A6570cE8Eb9878F4Df0dF889A2da';
 
 // https://arbiscan.io/address/0x76998C22eEa325A11dc6971Cedcf533E9740F854
 export const ORDI_USD = '0x76998C22eEa325A11dc6971Cedcf533E9740F854';

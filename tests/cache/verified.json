@@ -3722,6 +3722,9 @@
     },
     "0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xc90E3460424fb8ea79775089E9053113FEE34Ed0": {
+      "name": "EACAggregatorProxy"
     }
   },
   "10": {
@@ -4815,6 +4818,24 @@
       "name": "EACAggregatorProxy"
     },
     "0x3E75C48A27b54dEEc3381689CfA9Ce41Ca55C050": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x6C7f319E76456749Ee291EdB8bD0027e5E5d3298": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4C92f5b4f8AE43D5DB11f4b87e6D9156e064F4F0": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x9651C988e590E571b28561c05aF5598d3e73cA31": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x640349aa5A2A37ad628F9c934Dd78A3Dd45F7933": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x675aF77D9266BF28042b0965C11e223153C51aFd": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8Ef4207CBC405085B6740fc931114cAFCD1d9158": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -9272,6 +9293,9 @@
     },
     "0x42237D7d96A4178bB22498bb3B2C689D502DE847": {
       "name": "EACAggregatorProxy"
+    },
+    "0x4f80347FE3579859232e1e8E0735020C008408cB": {
+      "name": "EACAggregatorProxy"
     }
   },
   "5000": {
@@ -12004,6 +12028,12 @@
     },
     "0x066Ba4567C40cB315EAd257Bd86585bb4a74004f": {
       "name": "EACAggregatorProxy"
+    },
+    "0x229a9322D050BB6aC91C40fFbB8e3bef79c48071": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x3861d83ed006A6570cE8Eb9878F4Df0dF889A2da": {
+      "name": "EACAggregatorProxy"
     }
   },
   "42220": {
@@ -13543,6 +13573,12 @@
     },
     "0x5D557B07776D12967914379C71a1310e917C7555": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xc79a363a3f849d8b3F6A1932f748eA9d4fB2f607": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7f7A07FFDe2ab490dad0C0D139d6c730bbe842cC": {
+      "name": "EACAggregatorProxy"
     }
   },
   "57073": {
@@ -14059,6 +14095,9 @@
       "name": "EACAggregatorProxy"
     },
     "0x8d6ceb62Ce510935792BE737e30f9f61082b72b3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xc834a55fb78dEa866E9cd86047Df0F584B9da339": {
       "name": "EACAggregatorProxy"
     }
   },

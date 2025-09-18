@@ -172,6 +172,10 @@ library ChainlinkOptimism {
   address internal constant sfrxETH_frxETH_Exchange_Rate =
     0xd2AdD08d9Cd83720c9296A991ce066BB08265eAc;
 
+  // https://optimistic.etherscan.io/address/0x6C7f319E76456749Ee291EdB8bD0027e5E5d3298
+  address internal constant Virtune_Bitcoin_Prime_ETP_Proof_of_Reserves =
+    0x6C7f319E76456749Ee291EdB8bD0027e5E5d3298;
+
   // https://optimistic.etherscan.io/address/0xb7B9A39CC63f856b90B364911CC324dC46aC1770
   address internal constant ETC_USD = 0xb7B9A39CC63f856b90B364911CC324dC46aC1770;
 
@@ -236,6 +240,10 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0xE036C2B215B2533BCE1c9D0436728cE8ABE5665D
   address internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
     0xE036C2B215B2533BCE1c9D0436728cE8ABE5665D;
+
+  // https://optimistic.etherscan.io/address/0x4C92f5b4f8AE43D5DB11f4b87e6D9156e064F4F0
+  address internal constant Virtune_Polygon_ETP_Proof_of_Reserves =
+    0x4C92f5b4f8AE43D5DB11f4b87e6D9156e064F4F0;
 
   // https://optimistic.etherscan.io/address/0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a
   address internal constant USDe_USD = 0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a;
@@ -315,6 +323,10 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0xCb93226806156b03c8896bbD1cd5e4174cdb0806
   address internal constant ynETHx_ETH_Exchange_Rate = 0xCb93226806156b03c8896bbD1cd5e4174cdb0806;
 
+  // https://optimistic.etherscan.io/address/0x9651C988e590E571b28561c05aF5598d3e73cA31
+  address internal constant Virtune_Arbitrum_ETP_Proof_of_Reserves =
+    0x9651C988e590E571b28561c05aF5598d3e73cA31;
+
   // https://optimistic.etherscan.io/address/0x1520874FC216f5F07E03607303Df2Fda6C3Fc203
   address internal constant ZIL_USD = 0x1520874FC216f5F07E03607303Df2Fda6C3Fc203;
 
@@ -356,6 +368,14 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0x43dEa17DeE1ca50c6266acb59b32659E44D3ee5D
   address internal constant ADA_USD = 0x43dEa17DeE1ca50c6266acb59b32659E44D3ee5D;
+
+  // https://optimistic.etherscan.io/address/0x640349aa5A2A37ad628F9c934Dd78A3Dd45F7933
+  address internal constant Virtune_Bitcoin_ETP_Proof_of_Reserves =
+    0x640349aa5A2A37ad628F9c934Dd78A3Dd45F7933;
+
+  // https://optimistic.etherscan.io/address/0x675aF77D9266BF28042b0965C11e223153C51aFd
+  address internal constant Virtune_Staked_Ethereum_ETP_Proof_of_Reserves =
+    0x675aF77D9266BF28042b0965C11e223153C51aFd;
 
   // https://optimistic.etherscan.io/address/0x50f8cf458E7334Be143f3c9F1f1577EE37A45653
   address internal constant SATS_USD = 0x50f8cf458E7334Be143f3c9F1f1577EE37A45653;
@@ -452,6 +472,10 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3
   address internal constant USDC_USD = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
+
+  // https://optimistic.etherscan.io/address/0x8Ef4207CBC405085B6740fc931114cAFCD1d9158
+  address internal constant Virtune_Chainlink_ETP_Proof_of_Reserves =
+    0x8Ef4207CBC405085B6740fc931114cAFCD1d9158;
 
   // https://optimistic.etherscan.io/address/0x85342bC62aadef58f029ab6d17D643949e6F073e
   address internal constant sUSDe_USDe_Exchange_Rate = 0x85342bC62aadef58f029ab6d17D643949e6F073e;

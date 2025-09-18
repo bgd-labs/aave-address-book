@@ -47,6 +47,9 @@ export const EUR_USD = '0x192f2DBA961Bb0277520C082d6bfa87D5961333E';
 // https://snowscan.xyz/address/0xe89B3CE86D25599D1e615C0f6a353B4572FF868D
 export const BAT_USD = '0xe89B3CE86D25599D1e615C0f6a353B4572FF868D';
 
+// https://snowscan.xyz/address/0xc79a363a3f849d8b3F6A1932f748eA9d4fB2f607
+export const Re_Offchain_Reserves = '0xc79a363a3f849d8b3F6A1932f748eA9d4fB2f607';
+
 // https://snowscan.xyz/address/0xfAa665F5a0e13beea63b6DfF601DD634959690Df
 export const WOO_ETH = '0xfAa665F5a0e13beea63b6DfF601DD634959690Df';
 
@@ -220,6 +223,9 @@ export const xSolvBTC_NAV = '0x55b5dc7d7CDD5d3b2Eb189bf11140839076E5d40';
 
 // https://snowscan.xyz/address/0x9Cf3Ef104A973b351B2c032AA6793c3A6F76b448
 export const TUSD_USD = '0x9Cf3Ef104A973b351B2c032AA6793c3A6F76b448';
+
+// https://snowscan.xyz/address/0x7f7A07FFDe2ab490dad0C0D139d6c730bbe842cC
+export const YBTCB_BTC = '0x7f7A07FFDe2ab490dad0C0D139d6c730bbe842cC';
 
 // https://snowscan.xyz/address/0xBb92195Ec95DE626346eeC8282D53e261dF95241
 export const BNB_USD = '0xBb92195Ec95DE626346eeC8282D53e261dF95241';
