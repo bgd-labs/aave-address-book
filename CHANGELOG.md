@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.30.5](https://github.com/bgd-labs/aave-address-book/compare/v4.30.4...v4.30.5) (2025-09-23)
+
+
+### Bug Fixes
+
+* add exclusion list for plasma ([#1089](https://github.com/bgd-labs/aave-address-book/issues/1089)) ([47805bf](https://github.com/bgd-labs/aave-address-book/commit/47805bfb1f1e280598a6fcb07df3aa85d4752c6f))
+
 ## [4.30.4](https://github.com/bgd-labs/aave-address-book/compare/v4.30.3...v4.30.4) (2025-09-23)
 
 
