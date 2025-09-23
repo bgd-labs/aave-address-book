@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.31.0](https://github.com/bgd-labs/aave-address-book/compare/v4.30.5...v4.31.0) (2025-09-23)
+
+
+### Features
+
+* clinic v2 ([#1092](https://github.com/bgd-labs/aave-address-book/issues/1092)) ([6f87d24](https://github.com/bgd-labs/aave-address-book/commit/6f87d2471dd164b41b95c8b2b0767215f5435ee2))
+
 ## [4.30.5](https://github.com/bgd-labs/aave-address-book/compare/v4.30.4...v4.30.5) (2025-09-23)
 
 
