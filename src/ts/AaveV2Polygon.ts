@@ -74,6 +74,9 @@ export const WALLET_BALANCE_PROVIDER = '0x34aa032bC416Cf2CdC45c0C8f065b1F19463D4
 // https://polygonscan.com/address/0xf1e6d4347105138B51E2bacA9A22fA228309ebB1
 export const WETH_GATEWAY = '0xf1e6d4347105138B51E2bacA9A22fA228309ebB1';
 
+// https://polygonscan.com/address/0xF93b565c96446afdf8C3D37E6B4781D5d5EDef1C
+export const CLINIC_STEWARD = '0xF93b565c96446afdf8C3D37E6B4781D5d5EDef1C';
+
 export const CHAIN_ID = 137;
 export const ASSETS = {
   DAI: {

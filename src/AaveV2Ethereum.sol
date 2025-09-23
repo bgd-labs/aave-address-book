@@ -87,6 +87,9 @@ library AaveV2Ethereum {
 
   // https://etherscan.io/address/0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24
   address internal constant WETH_GATEWAY = 0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24;
+
+  // https://etherscan.io/address/0x6A14eBe9A934c8EFE15C3811a999149472876b56
+  address internal constant CLINIC_STEWARD = 0x6A14eBe9A934c8EFE15C3811a999149472876b56;
 }
 library AaveV2EthereumAssets {
   // https://etherscan.io/address/0xdAC17F958D2ee523a2206206994597C13D831ec7
