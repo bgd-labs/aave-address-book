@@ -33,9 +33,9 @@ library AaveV2EthereumAMM {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba);
 
-  // https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
+  // https://etherscan.io/address/0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
+    0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4;
 
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant POOL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
