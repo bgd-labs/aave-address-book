@@ -3731,6 +3731,12 @@
     },
     "0xcc9632725266473ab5d42320E8Ae00437A1df3bB": {
       "name": "LendingPoolCollateralManager"
+    },
+    "0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c": {
+      "name": "ClinicStewardV2"
+    },
+    "0x6A14eBe9A934c8EFE15C3811a999149472876b56": {
+      "name": "ClinicStewardV2"
     }
   },
   "10": {
@@ -7783,6 +7789,9 @@
     },
     "0x94d977c42C7880EC05aF5Ba6d913785462bf9346": {
       "name": "LendingPoolCollateralManager"
+    },
+    "0xF93b565c96446afdf8C3D37E6B4781D5d5EDef1C": {
+      "name": "ClinicStewardV2"
     }
   },
   "146": {
@@ -13624,6 +13633,9 @@
     },
     "0xd01607c3C5eCABa394D8be377a08590149325722": {
       "name": "LendingPoolCollateralManager"
+    },
+    "0xA28820b8af102fAABAAAdaf94224353Dc772DC99": {
+      "name": "ClinicStewardV2"
     }
   },
   "57073": {
