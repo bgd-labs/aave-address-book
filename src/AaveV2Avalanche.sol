@@ -94,6 +94,9 @@ library AaveV2Avalanche {
 
   // https://snowscan.xyz/address/0x68c815cB8C8390bc3F2CE99265044dEC9D350C49
   address internal constant WETH_GATEWAY = 0x68c815cB8C8390bc3F2CE99265044dEC9D350C49;
+
+  // https://snowscan.xyz/address/0xA28820b8af102fAABAAAdaf94224353Dc772DC99
+  address internal constant CLINIC_STEWARD = 0xA28820b8af102fAABAAAdaf94224353Dc772DC99;
 }
 library AaveV2AvalancheAssets {
   // https://snowscan.xyz/address/0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB

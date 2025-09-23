@@ -59,6 +59,9 @@ export const WALLET_BALANCE_PROVIDER = '0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF9
 // https://etherscan.io/address/0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC
 export const WETH_GATEWAY = '0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC';
 
+// https://etherscan.io/address/0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c
+export const CLINIC_STEWARD = '0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   WETH: {
