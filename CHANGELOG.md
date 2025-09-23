@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.30.4](https://github.com/bgd-labs/aave-address-book/compare/v4.30.3...v4.30.4) (2025-09-23)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1084](https://github.com/bgd-labs/aave-address-book/issues/1084)) ([e3ec202](https://github.com/bgd-labs/aave-address-book/commit/e3ec2028905f44f1256d9969914a93a90d06d9b3))
+* **cache:** automated cache update - updated addresses ([#1085](https://github.com/bgd-labs/aave-address-book/issues/1085)) ([1684411](https://github.com/bgd-labs/aave-address-book/commit/168441178a56b654f5bcb0861e5beb55ece84ced))
+* **cache:** automated cache update - updated addresses ([#1087](https://github.com/bgd-labs/aave-address-book/issues/1087)) ([be885dd](https://github.com/bgd-labs/aave-address-book/commit/be885ddb322d17dcc9c51e6ba5e230442598b633))
+* plasma urls ([#1082](https://github.com/bgd-labs/aave-address-book/issues/1082)) ([f0df7d4](https://github.com/bgd-labs/aave-address-book/commit/f0df7d421cfb0c6a4fd71ec79474e201b34fe8f5))
+
 ## [4.30.3](https://github.com/bgd-labs/aave-address-book/compare/v4.30.2...v4.30.3) (2025-09-17)
 
 
