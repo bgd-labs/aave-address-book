@@ -33,9 +33,9 @@ library AaveV2Polygon {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x7551b5D2763519d4e37e8B81929D336De671d46d);
 
-  // https://polygonscan.com/address/0xAdDb96Fb6A795faf042DD25BD4710267C41D1F74
+  // https://polygonscan.com/address/0x94d977c42C7880EC05aF5Ba6d913785462bf9346
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0xAdDb96Fb6A795faf042DD25BD4710267C41D1F74;
+    0x94d977c42C7880EC05aF5Ba6d913785462bf9346;
 
   // https://polygonscan.com/address/0xDf7d0e6454DB638881302729F5ba99936EaAB233
   address internal constant POOL_ADMIN = 0xDf7d0e6454DB638881302729F5ba99936EaAB233;

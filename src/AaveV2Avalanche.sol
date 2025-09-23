@@ -33,9 +33,9 @@ library AaveV2Avalanche {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0x65285E9dfab318f57051ab2b139ccCf232945451);
 
-  // https://snowscan.xyz/address/0x69A45013F047A65422deFdD0C43f09530D7025c0
+  // https://snowscan.xyz/address/0xd01607c3C5eCABa394D8be377a08590149325722
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0x69A45013F047A65422deFdD0C43f09530D7025c0;
+    0xd01607c3C5eCABa394D8be377a08590149325722;
 
   // https://snowscan.xyz/address/0x3C06dce358add17aAf230f2234bCCC4afd50d090
   address internal constant POOL_ADMIN = 0x3C06dce358add17aAf230f2234bCCC4afd50d090;
