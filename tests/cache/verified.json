@@ -3725,6 +3725,12 @@
     },
     "0xc90E3460424fb8ea79775089E9053113FEE34Ed0": {
       "name": "EACAggregatorProxy"
+    },
+    "0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0xcc9632725266473ab5d42320E8Ae00437A1df3bB": {
+      "name": "LendingPoolCollateralManager"
     }
   },
   "10": {
@@ -7774,6 +7780,9 @@
     },
     "0x6b20c92A1D73A9232383DEcD698Ff559eFa0c31A": {
       "name": "EACAggregatorProxy"
+    },
+    "0x94d977c42C7880EC05aF5Ba6d913785462bf9346": {
+      "name": "LendingPoolCollateralManager"
     }
   },
   "146": {
@@ -10604,6 +10613,39 @@
     },
     "0x7B9c12915c594a68dE96201Cbdc79147F09da278": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0xdBbB0b5DD13E7AC9C56624834ef193df87b022c3": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34": {
+      "name": "USDeOFT"
+    },
+    "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2": {
+      "name": "StakedUSDeOFT"
+    },
+    "0x40eE40D7332995CACA49Db46B94237Fa64647Bd4": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x921371Fa4d4A30cD350D29762ccB8A5861724E29": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA7786e3042435f88869e5a4e384B0AD6B009800b": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB": {
+      "name": "OFTTokenERC20"
+    },
+    "0x43A7dd2125266c5c4c26EB86cd61241132426Fe7": {
+      "name": "EACAggregatorProxy"
     }
   },
   "42161": {
@@ -13579,6 +13621,9 @@
     },
     "0x7f7A07FFDe2ab490dad0C0D139d6c730bbe842cC": {
       "name": "EACAggregatorProxy"
+    },
+    "0xd01607c3C5eCABa394D8be377a08590149325722": {
+      "name": "LendingPoolCollateralManager"
     }
   },
   "57073": {
