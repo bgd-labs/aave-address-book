@@ -901,7 +901,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10140,
+    liquidationBonus: 10110,
   },
   '19': {
     label: 'PT-USDe Stablecoins September 2025',
@@ -990,8 +990,8 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8810,
-    liquidationThreshold: 9010,
+    ltv: 8860,
+    liquidationThreshold: 9060,
     liquidationBonus: 10470,
   },
   '25': {
@@ -1003,8 +1003,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 8980,
-    liquidationThreshold: 9180,
+    ltv: 9030,
+    liquidationThreshold: 9230,
     liquidationBonus: 10270,
   },
   '26': {
