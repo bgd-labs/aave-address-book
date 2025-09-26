@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.32.0](https://github.com/bgd-labs/aave-address-book/compare/v4.31.0...v4.32.0) (2025-09-26)
+
+
+### Features
+
+* GHO Ink addresses ([#1091](https://github.com/bgd-labs/aave-address-book/issues/1091)) ([6777094](https://github.com/bgd-labs/aave-address-book/commit/6777094a46ce00717cefba0a069547f49d8744cb))
+
+
+### Bug Fixes
+
+* allow unverified ccip ([#1096](https://github.com/bgd-labs/aave-address-book/issues/1096)) ([6108fa2](https://github.com/bgd-labs/aave-address-book/commit/6108fa2664be9e39d976cf58900c8591057437fb))
+* **cache:** automated cache update - updated addresses ([#1094](https://github.com/bgd-labs/aave-address-book/issues/1094)) ([c653a0f](https://github.com/bgd-labs/aave-address-book/commit/c653a0f256ebf8a2345e339c5dac25b348826689))
+* **cache:** automated cache update - updated addresses ([#1095](https://github.com/bgd-labs/aave-address-book/issues/1095)) ([ac8ef5b](https://github.com/bgd-labs/aave-address-book/commit/ac8ef5b9aa4fe5a9419b716065f3f0f2e308aeab))
+
 ## [4.31.0](https://github.com/bgd-labs/aave-address-book/compare/v4.30.5...v4.31.0) (2025-09-23)
 
 
