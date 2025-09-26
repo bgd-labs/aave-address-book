@@ -1035,9 +1035,9 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8940,
-    liquidationThreshold: 9140,
-    liquidationBonus: 10390,
+    ltv: 8970,
+    liquidationThreshold: 9170,
+    liquidationBonus: 10360,
   },
   '28': {
     label: 'PT-USDe USDe Nov 2025',
@@ -1048,9 +1048,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9030,
-    liquidationThreshold: 9230,
-    liquidationBonus: 10290,
+    ltv: 9060,
+    liquidationThreshold: 9260,
+    liquidationBonus: 10260,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
