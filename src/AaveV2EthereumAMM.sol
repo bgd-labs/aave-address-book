@@ -33,9 +33,9 @@ library AaveV2EthereumAMM {
   IAaveProtocolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IAaveProtocolDataProvider(0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba);
 
-  // https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
+  // https://etherscan.io/address/0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4
   address internal constant LENDING_POOL_COLLATERAL_MANAGER =
-    0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3;
+    0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4;
 
   // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
   address internal constant POOL_ADMIN = 0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A;
@@ -70,6 +70,9 @@ library AaveV2EthereumAMM {
 
   // https://etherscan.io/address/0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC
   address internal constant WETH_GATEWAY = 0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC;
+
+  // https://etherscan.io/address/0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c
+  address internal constant CLINIC_STEWARD = 0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c;
 }
 library AaveV2EthereumAMMAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2

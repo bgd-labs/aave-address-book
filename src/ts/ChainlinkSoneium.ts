@@ -35,6 +35,9 @@ export const OUSDT_USD = '0xF049354158e13F6794A3cCD236694E0e1BD9AF79';
 // https://soneium.blockscout.com/address/0x4516fDa3259110EefAfC6fBcE266417B3F3b985a
 export const wstETH_ETH = '0x4516fDa3259110EefAfC6fBcE266417B3F3b985a';
 
+// https://soneium.blockscout.com/address/0x4f80347FE3579859232e1e8E0735020C008408cB
+export const RLP_USD_Exchange_Rate = '0x4f80347FE3579859232e1e8E0735020C008408cB';
+
 // https://soneium.blockscout.com/address/0xE92d289831823c96C22592952C1cfA2584a65038
 export const USDT_USD = '0xE92d289831823c96C22592952C1cfA2584a65038';
 

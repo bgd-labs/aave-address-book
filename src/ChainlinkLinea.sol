@@ -31,6 +31,9 @@ library ChainlinkLinea {
   address internal constant PCE_Price_Index_Percent_Change_Annual_Rate =
     0xe5aCa1a31aD6fC61E30Ab8E4a19a9445884A1EDE;
 
+  // https://lineascan.build/address/0x9ECEa805F9DbeeFE8EdB7e3ee08995fF65828d7a
+  address internal constant USD1_USD = 0x9ECEa805F9DbeeFE8EdB7e3ee08995fF65828d7a;
+
   // https://lineascan.build/address/0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156
   address internal constant osETH_ETH_Exchange_Rate = 0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156;
 
@@ -43,6 +46,9 @@ library ChainlinkLinea {
   // https://lineascan.build/address/0x0956106Bd02f2C7eca0AbDe1d51Fc8050CC41714
   address internal constant ultraETHs_ETH_Exchange_Rate =
     0x0956106Bd02f2C7eca0AbDe1d51Fc8050CC41714;
+
+  // https://lineascan.build/address/0xc834a55fb78dEa866E9cd86047Df0F584B9da339
+  address internal constant MUSD_USD = 0xc834a55fb78dEa866E9cd86047Df0F584B9da339;
 
   // https://lineascan.build/address/0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458
   address internal constant COMP_USD = 0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458;
@@ -77,6 +83,9 @@ library ChainlinkLinea {
 
   // https://lineascan.build/address/0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5
   address internal constant USDC_USD = 0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5;
+
+  // https://lineascan.build/address/0x452b408b3e2805C109D52C80Bd54Deda239716d1
+  address internal constant LINEA_USD = 0x452b408b3e2805C109D52C80Bd54Deda239716d1;
 
   // https://lineascan.build/address/0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9
   address internal constant BTC_USD = 0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9;

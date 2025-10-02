@@ -74,6 +74,7 @@ import { ghoAvalanche } from './configs/gho/avalanche';
 import { ghoBase } from './configs/gho/base';
 import { ghoEthereum } from './configs/gho/ethereum';
 import { ghoGnosis } from './configs/gho/gnosis';
+import { ghoInk } from './configs/gho/ink';
 import { generateGho } from './generator/ghoGenerator';
 import { governanceConfigLinea } from './configs/governance/linea';
 import { mantleAddresses } from './configs/networks/mantle';
@@ -86,6 +87,8 @@ import { umbrellaMainnetConfig } from './configs/umbrella/ethereum';
 import { umbrellaBaseSepoliaConfig } from './configs/umbrella/base';
 import { generateChainlink } from './generator/chainlink';
 import { governanceConfigSoneium } from './configs/governance/soneium';
+import { governanceConfigBob } from './configs/governance/bob';
+import { bobAddresses } from './configs/networks/bob';
 import { governanceConfigInk, governanceConfigInkWhiteLabel } from './configs/governance/ink';
 import { governanceConfigPlasma } from './configs/governance/plasma';
 
@@ -122,6 +125,7 @@ async function main() {
       governanceConfigMantle,
       governanceConfigSonic,
       governanceConfigSoneium,
+      governanceConfigBob,
       governanceConfigInk,
       governanceConfigInkWhiteLabel,
       governanceConfigPlasma,
@@ -173,7 +177,7 @@ async function main() {
       plasmaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis].map((config) =>
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk].map((config) =>
     generateGho(config),
   );
   const umbrellaAddresses = await Promise.all(
@@ -211,6 +215,7 @@ async function main() {
     mantleAddresses,
     sonicAddresses,
     soneiumAddresses,
+    bobAddresses,
     inkAddresses,
     inkWhiteLabelAddresses,
     plasmaAddresses,

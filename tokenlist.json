@@ -3120,6 +3120,20 @@
     },
     {
       "chainId": 1,
+      "address": "0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7",
+      "name": "Wrapped Aave Ethereum USDtb",
+      "decimals": 18,
+      "symbol": "waEthUSDtb",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdtb.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xC139190F447e929f090Edeb554D95AbB8b18aC1C",
+        "underlyingAToken": "0xEc4ef66D4fCeEba34aBB4dE69dB391Bc5476ccc8"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0x917459337CaAC939D41d7493B3999f571D20D667",
       "name": "PT Ethena USDe 31JUL2025",
       "decimals": 18,
@@ -3234,7 +3248,8 @@
       "name": "PT Ethena sUSDE 25SEP2025",
       "decimals": 18,
       "symbol": "PT-sUSDE-25SEP2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
     },
     {
       "chainId": 1,
@@ -3243,6 +3258,7 @@
       "decimals": 18,
       "symbol": "aEthPT_sUSDE_25SEP2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x9F56094C450763769BA0EA9Fe2876070c0fD5F77"
@@ -3254,7 +3270,8 @@
       "name": "PT Ethena USDe 25SEP2025",
       "decimals": 18,
       "symbol": "PT-USDe-25SEP2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3263,6 +3280,7 @@
       "decimals": 18,
       "symbol": "aEthPT_USDe_25SEP2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xBC6736d346a5eBC0dEbc997397912CD9b8FAe10a"
@@ -3274,7 +3292,8 @@
       "name": "Treehouse ETH",
       "decimals": 18,
       "symbol": "tETH",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/teth.svg"
     },
     {
       "chainId": 1,
@@ -3283,6 +3302,7 @@
       "decimals": 18,
       "symbol": "aEthtETH",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ateth.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
@@ -4606,6 +4626,28 @@
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
         "underlyingAToken": "0xf611aEb5013fD2c0511c9CD55c7dc5C1140741A6"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD",
+      "name": "Euro Coin",
+      "decimals": 6,
+      "symbol": "EURC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/eurc.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB",
+      "name": "Aave Avalanche EURC",
+      "decimals": 6,
+      "symbol": "aAvaEURC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aeurc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD"
       }
     },
     {
@@ -7987,6 +8029,7 @@
       "decimals": 18,
       "symbol": "aEthLidotETH",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ateth.svg",
       "extensions": {
         "pool": "0x4e033931ad43597d96D6bcc25c280717730B58B1",
         "underlying": "0xD11c452fc99cF405034ee446803b6F6c1F6d5ED8"
@@ -8575,6 +8618,219 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "name": "USDT0",
+      "decimals": 6,
+      "symbol": "USDT0",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0x5D72a9d9A9510Cd8cBdBA12aC62593A58930a948",
+      "name": "Aave Plasma USDT0",
+      "decimals": 6,
+      "symbol": "aPlaUSDT0",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xE0126F0c4451B2B917064A93040fd4770D6774b5",
+      "name": "Wrapped Aave Plasma USDT0",
+      "decimals": 6,
+      "symbol": "waPlaUSDT0",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt0.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "underlyingAToken": "0x5D72a9d9A9510Cd8cBdBA12aC62593A58930a948"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usde.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0x7519403E12111ff6b710877Fcd821D0c12CAF43A",
+      "name": "Aave Plasma USDe",
+      "decimals": 18,
+      "symbol": "aPlaUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausde.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xC63F1a8c0cD4493E18f6f3371182BE01Ce0BeF02",
+      "name": "Wrapped Aave Plasma USDe",
+      "decimals": 18,
+      "symbol": "waPlaUSDe",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausde.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+        "underlyingAToken": "0x7519403E12111ff6b710877Fcd821D0c12CAF43A"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "Staked USDe",
+      "decimals": 18,
+      "symbol": "sUSDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/susde.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0xC1A318493fF07a68fE438Cee60a7AD0d0DBa300E",
+      "name": "Aave Plasma sUSDe",
+      "decimals": 18,
+      "symbol": "aPlasUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asusde.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xA31C7dDAD8F1D66D037C4EE76F8fb725f927Bc25",
+      "name": "Wrapped Aave Plasma sUSDe",
+      "decimals": 18,
+      "symbol": "waPlasUSDe",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasusde.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+        "underlyingAToken": "0xC1A318493fF07a68fE438Cee60a7AD0d0DBa300E"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193",
+      "name": "XAUt0",
+      "decimals": 6,
+      "symbol": "XAUt0",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x5c43D6C075C7CF95fb188FB2977eeD3E3F2a92c2",
+      "name": "Aave Plasma XAUt0",
+      "decimals": 6,
+      "symbol": "aPlaXAUt0",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x8AA32f47f375A4a1FC803e24f9AE42C57469c35F",
+      "name": "Wrapped Aave Plasma XAUt0",
+      "decimals": 6,
+      "symbol": "waPlaXAUt0",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193",
+        "underlyingAToken": "0x5c43D6C075C7CF95fb188FB2977eeD3E3F2a92c2"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "name": "Wrapped eETH",
+      "decimals": 18,
+      "symbol": "weETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weeth.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0xAf1a7a488c8348b41d5860C04162af7d3D38A996",
+      "name": "Aave Plasma weETH",
+      "decimals": 18,
+      "symbol": "aPlaweETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweeth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xA3D68b74bF0528fdD07263c60d6488749044914b"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x893dF8f4bBFEbC313Fc52a53E2e23487ACb28181",
+      "name": "Wrapped Aave Plasma weETH",
+      "decimals": 18,
+      "symbol": "waPlaweETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweeth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+        "underlyingAToken": "0xAf1a7a488c8348b41d5860C04162af7d3D38A996"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
+      "name": "WETH",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0xf1aB7f60128924d69f6d7dE25A20eF70bBd43d07",
+      "name": "Aave Plasma WETH",
+      "decimals": 18,
+      "symbol": "aPlaWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xa047fdFb3420A27a5f926735b475fE5a1E968786",
+      "name": "Wrapped Aave Plasma WETH",
+      "decimals": 18,
+      "symbol": "waPlaWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataweth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
+        "underlyingAToken": "0xf1aB7f60128924d69f6d7dE25A20eF70bBd43d07"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -8627,6 +8883,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 133 },
-  "timestamp": "2025-09-11T22:23:45.754Z"
+  "version": { "major": 3, "minor": 0, "patch": 136 },
+  "timestamp": "2025-09-23T12:33:42.519Z"
 }

@@ -627,6 +627,9 @@ library ChainlinkEthereum {
   // https://etherscan.io/address/0xC28198Df9aee1c4990994B35ff51eFA4C769e534
   address internal constant M_NAV = 0xC28198Df9aee1c4990994B35ff51eFA4C769e534;
 
+  // https://etherscan.io/address/0xc90E3460424fb8ea79775089E9053113FEE34Ed0
+  address internal constant MUSD_USD = 0xc90E3460424fb8ea79775089E9053113FEE34Ed0;
+
   // https://etherscan.io/address/0x9a72298ae3886221820B1c878d12D872087D3a23
   address internal constant OHMv2_ETH = 0x9a72298ae3886221820B1c878d12D872087D3a23;
 

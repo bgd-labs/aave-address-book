@@ -8,6 +8,10 @@ export function getClient(chainId: number) {
   return rpcEnvGetClient(chainId, {
     clientConfig: batchConfig,
     httpConfig: commonConfig,
-    providerConfig: {alchemyKey: process.env.ALCHEMY_API_KEY},
+    providerConfig: {
+      alchemyKey: process.env.ALCHEMY_API_KEY,
+      quicknodeEndpointName: process.env.QUICKNODE_ENDPOINT_NAME,
+      quicknodeToken: process.env.QUICKNODE_TOKEN,
+    },
   });
 }
