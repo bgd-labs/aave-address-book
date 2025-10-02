@@ -23,8 +23,8 @@ export const LENDING_RATE_ORACLE = '0x8A32f49FFbA88aba6EFF96F45D8BD1D4b3f35c7D';
 // IAaveProtocolDataProvider https://etherscan.io/address/0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba';
 
-// https://etherscan.io/address/0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3
-export const LENDING_POOL_COLLATERAL_MANAGER = '0x368e6441bB27159c6e8e6d3bbd9147BEcBA915E3';
+// https://etherscan.io/address/0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4
+export const LENDING_POOL_COLLATERAL_MANAGER = '0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4';
 
 // https://etherscan.io/address/0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A
 export const POOL_ADMIN = '0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A';
@@ -58,6 +58,9 @@ export const WALLET_BALANCE_PROVIDER = '0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF9
 
 // https://etherscan.io/address/0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC
 export const WETH_GATEWAY = '0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC';
+
+// https://etherscan.io/address/0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c
+export const CLINIC_STEWARD = '0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c';
 
 export const CHAIN_ID = 1;
 export const ASSETS = {

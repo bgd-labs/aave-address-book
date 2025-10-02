@@ -97,6 +97,10 @@ library ChainlinkBase {
   // https://basescan.org/address/0x0396000dc82bfAEe746A9Ac6dC69dAd3223Ca9c6
   address internal constant PHP_USD = 0x0396000dc82bfAEe746A9Ac6dC69dAd3223Ca9c6;
 
+  // https://basescan.org/address/0x65623109aA4561AD3cfF503542083548CeD7e085
+  address internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
+    0x65623109aA4561AD3cfF503542083548CeD7e085;
+
   // https://basescan.org/address/0x2330aaE3bca5F05169d5f4597964D44522F62930
   address internal constant USDS_USD = 0x2330aaE3bca5F05169d5f4597964D44522F62930;
 
@@ -109,6 +113,9 @@ library ChainlinkBase {
   // https://basescan.org/address/0xb58c5C550Ba19c4CEeE071F8CeeB58f8770e6978
   address internal constant inwstETH_wstETH_Exchange_Rate =
     0xb58c5C550Ba19c4CEeE071F8CeeB58f8770e6978;
+
+  // https://basescan.org/address/0x491a921c41d6a97C57426E0c0108a231cd6E5f60
+  address internal constant SUI_USD = 0x491a921c41d6a97C57426E0c0108a231cd6E5f60;
 
   // https://basescan.org/address/0x5213eBB69743b85644dbB6E25cdF994aFBb8cF31
   address internal constant XAU_USD = 0x5213eBB69743b85644dbB6E25cdF994aFBb8cF31;
@@ -127,9 +134,6 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0x0F8E057D1D7b282EF968D26E9cB432617dF52519
   address internal constant cbBTC_Reserves = 0x0F8E057D1D7b282EF968D26E9cB432617dF52519;
-
-  // https://basescan.org/address/0xF7742A6f36e9936CeA0E976bF6CD3930C1178775
-  address internal constant USDM_USD = 0xF7742A6f36e9936CeA0E976bF6CD3930C1178775;
 
   // https://basescan.org/address/0xf397bF97280B488cA19ee3093E81C0a77F02e9a5
   address internal constant RETH_ETH = 0xf397bF97280B488cA19ee3093E81C0a77F02e9a5;
@@ -151,6 +155,9 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0x07DA0E54543a844a80ABE69c8A12F22B3aA59f9D
   address internal constant cbBTC_USD = 0x07DA0E54543a844a80ABE69c8A12F22B3aA59f9D;
+
+  // https://basescan.org/address/0x18A3fcA54FaC5B05837205bA4b823fc56191F793
+  address internal constant PCE_Price_Index_Level = 0x18A3fcA54FaC5B05837205bA4b823fc56191F793;
 
   // https://basescan.org/address/0x30A76F4E688Cf52f4A06D7AAd987A7037f3Ae6f7
   address internal constant dlcBTC_Proof_of_Reserves = 0x30A76F4E688Cf52f4A06D7AAd987A7037f3Ae6f7;
@@ -213,6 +220,9 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0x17CAb8FE31E32f08326e5E27412894e49B0f9D65
   address internal constant LINK_USD = 0x17CAb8FE31E32f08326e5E27412894e49B0f9D65;
+
+  // https://basescan.org/address/0x17738F7dacFc1De7d06f22cC52211EBf68744dBA
+  address internal constant xSolvBTC_NAV = 0x17738F7dacFc1De7d06f22cC52211EBf68744dBA;
 
   // https://basescan.org/address/0xe3971Ed6F1A5903321479Ef3148B5950c0612075
   address internal constant SNX_USD = 0xe3971Ed6F1A5903321479Ef3148B5950c0612075;
@@ -330,8 +340,19 @@ library ChainlinkBase {
   // https://basescan.org/address/0x3A1d6444fb6a402470098E23DaD0B7E86E14252F
   address internal constant CHF_USD = 0x3A1d6444fb6a402470098E23DaD0B7E86E14252F;
 
+  // https://basescan.org/address/0xe0eda54fC1362C0d7d0ff855E4fCEA79916Fe094
+  address internal constant Real_GDP_Percent_Change_Annual_Rate =
+    0xe0eda54fC1362C0d7d0ff855E4fCEA79916Fe094;
+
   // https://basescan.org/address/0x4e7dB2f9a28348AB48a968dd4217D565D1F15Ba4
   address internal constant ynETHx_ETH_Exchange_Rate = 0x4e7dB2f9a28348AB48a968dd4217D565D1F15Ba4;
+
+  // https://basescan.org/address/0x0df397aFE00085C138a99eFB39C498e08eB95aD1
+  address internal constant Real_GDP_Level = 0x0df397aFE00085C138a99eFB39C498e08eB95aD1;
+
+  // https://basescan.org/address/0x2a18E2d46Cb067b69e0759dB39b16597fC42D962
+  address internal constant PCE_Price_Index_Percent_Change_Annual_Rate =
+    0x2a18E2d46Cb067b69e0759dB39b16597fC42D962;
 
   // https://basescan.org/address/0xeDC243c7E3c1A9dAf067C90641D2346d2694d2e5
   address internal constant LSETH_ETH = 0xeDC243c7E3c1A9dAf067C90641D2346d2694d2e5;
@@ -404,6 +425,11 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0xD40e758b5eC80820B68DFC302fc5Ce1239083548
   address internal constant YFI_USD = 0xD40e758b5eC80820B68DFC302fc5Ce1239083548;
+
+  // https://basescan.org/address/0xe2b3688371130f333443428Cf03f27Ce0378F9dC
+  address
+    internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
+    0xe2b3688371130f333443428Cf03f27Ce0378F9dC;
 
   // https://basescan.org/address/0x06bdFe07E71C476157FC025d3cCD4BBe08e83EF9
   address internal constant NZD_USD = 0x06bdFe07E71C476157FC025d3cCD4BBe08e83EF9;

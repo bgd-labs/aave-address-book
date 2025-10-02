@@ -1009,6 +1009,9 @@ library AaveV3EthereumAssets {
   address internal constant USDtb_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 
+  // https://etherscan.io/address/0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7
+  address internal constant USDtb_STATA_TOKEN = 0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7;
+
   // https://etherscan.io/address/0x917459337CaAC939D41d7493B3999f571D20D667
   address internal constant PT_USDe_31JUL2025_UNDERLYING =
     0x917459337CaAC939D41d7493B3999f571D20D667;

@@ -441,6 +441,24 @@ library AaveV3AvalancheAssets {
 
   // https://snowscan.xyz/address/0x79459f4C9AfC902488109D058C3E76ed0B037c41
   address internal constant GHO_STATA_TOKEN = 0x79459f4C9AfC902488109D058C3E76ed0B037c41;
+
+  // https://snowscan.xyz/address/0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD
+  address internal constant EURC_UNDERLYING = 0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD;
+
+  uint8 internal constant EURC_DECIMALS = 6;
+
+  // https://snowscan.xyz/address/0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB
+  address internal constant EURC_A_TOKEN = 0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB;
+
+  // https://snowscan.xyz/address/0x5D557B07776D12967914379C71a1310e917C7555
+  address internal constant EURC_V_TOKEN = 0x5D557B07776D12967914379C71a1310e917C7555;
+
+  // https://snowscan.xyz/address/0x3368310bC4AeE5D96486A73bae8E6b49FcDE62D3
+  address internal constant EURC_ORACLE = 0x3368310bC4AeE5D96486A73bae8E6b49FcDE62D3;
+
+  // https://snowscan.xyz/address/0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da
+  address internal constant EURC_INTEREST_RATE_STRATEGY =
+    0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da;
 }
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;

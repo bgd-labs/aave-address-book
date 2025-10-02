@@ -3719,6 +3719,24 @@
     },
     "0x5513224daaEABCa31af5280727878d52097afA05": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xc90E3460424fb8ea79775089E9053113FEE34Ed0": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0xcc9632725266473ab5d42320E8Ae00437A1df3bB": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c": {
+      "name": "ClinicStewardV2"
+    },
+    "0x6A14eBe9A934c8EFE15C3811a999149472876b56": {
+      "name": "ClinicStewardV2"
     }
   },
   "10": {
@@ -4813,6 +4831,24 @@
     },
     "0x3E75C48A27b54dEEc3381689CfA9Ce41Ca55C050": {
       "name": "EACAggregatorProxy"
+    },
+    "0x6C7f319E76456749Ee291EdB8bD0027e5E5d3298": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4C92f5b4f8AE43D5DB11f4b87e6D9156e064F4F0": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x9651C988e590E571b28561c05aF5598d3e73cA31": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x640349aa5A2A37ad628F9c934Dd78A3Dd45F7933": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x675aF77D9266BF28042b0965C11e223153C51aFd": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x8Ef4207CBC405085B6740fc931114cAFCD1d9158": {
+      "name": "EACAggregatorProxy"
     }
   },
   "56": {
@@ -5729,6 +5765,27 @@
       "name": "EACAggregatorProxy"
     },
     "0xD3F669EF5C364C14d353F46b1D1a048A846e00f1": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xa400421C4be37bDfedaD2212d489b5aA7774207c": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x14248836ac6aB5e71D1320C083C6905e8ed08A43": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7754aE2B053c9C8CEF3dAE027f3376675E85A301": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7bDAEb1399c37D0Ff6891F6E6B4A425989e1a105": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x3ae518be05e3F7faBf7e3Ace22Af795D7A09c2E5": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x266d063Bb9BD7f1CEA6F77573D01d0F9cEbBAB62": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x3400969D9b6156d75EC16c81296b93b3149B0E7C": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -7750,6 +7807,12 @@
     },
     "0x6b20c92A1D73A9232383DEcD698Ff559eFa0c31A": {
       "name": "EACAggregatorProxy"
+    },
+    "0x94d977c42C7880EC05aF5Ba6d913785462bf9346": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0xF93b565c96446afdf8C3D37E6B4781D5d5EDef1C": {
+      "name": "ClinicStewardV2"
     }
   },
   "146": {
@@ -8129,6 +8192,12 @@
       "name": "EACAggregatorProxy"
     },
     "0x7f9506FcBBc9881a316a0CacD0ae6958EE2b5c7d": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xf0766006e9032295995D60254a5BB035aAF8b88C": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA8bed2F8cddD243D894fa629bf1F845A7100ecc8": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -9268,6 +9337,9 @@
       "name": "EACAggregatorProxy"
     },
     "0x42237D7d96A4178bB22498bb3B2C689D502DE847": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x4f80347FE3579859232e1e8E0735020C008408cB": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -10577,6 +10649,42 @@
     },
     "0x7B9c12915c594a68dE96201Cbdc79147F09da278": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0xdBbB0b5DD13E7AC9C56624834ef193df87b022c3": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34": {
+      "name": "USDeOFT"
+    },
+    "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2": {
+      "name": "StakedUSDeOFT"
+    },
+    "0x40eE40D7332995CACA49Db46B94237Fa64647Bd4": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x921371Fa4d4A30cD350D29762ccB8A5861724E29": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA7786e3042435f88869e5a4e384B0AD6B009800b": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB": {
+      "name": "OFTTokenERC20"
+    },
+    "0x43A7dd2125266c5c4c26EB86cd61241132426Fe7": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xA3D68b74bF0528fdD07263c60d6488749044914b": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42161": {
@@ -12000,6 +12108,18 @@
       "name": "EACAggregatorProxy"
     },
     "0x066Ba4567C40cB315EAd257Bd86585bb4a74004f": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x229a9322D050BB6aC91C40fFbB8e3bef79c48071": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x3861d83ed006A6570cE8Eb9878F4Df0dF889A2da": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x703389807836463cff0CB01142dE903a74E509C4": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x726a96F31846f586E6a4C72F73c3dB671986a002": {
       "name": "EACAggregatorProxy"
     }
   },
@@ -13531,6 +13651,30 @@
     },
     "0x9A9587Da4Fd5DD3C9AD47C12aFeec5073C8cFc2a": {
       "name": "EACAggregatorProxy"
+    },
+    "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD": {
+      "name": "FiatTokenProxy"
+    },
+    "0x8a9FdE6925a839F6B1932d16B36aC026F8d3FbdB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5D557B07776D12967914379C71a1310e917C7555": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xc79a363a3f849d8b3F6A1932f748eA9d4fB2f607": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x7f7A07FFDe2ab490dad0C0D139d6c730bbe842cC": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xd01607c3C5eCABa394D8be377a08590149325722": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0xA28820b8af102fAABAAAdaf94224353Dc772DC99": {
+      "name": "ClinicStewardV2"
+    },
+    "0xFA38289Fe9f043aD8CCD8e81b28C1D02666D51b6": {
+      "name": "EACAggregatorProxy"
     }
   },
   "57073": {
@@ -13653,6 +13797,21 @@
     },
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
+    },
+    "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDe6539018B095353A40753Dc54C91C68c9487D4E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6": {
+      "name": "GhoOracle"
+    },
+    "0xA5Ba213867E175A182a5dd6A9193C6158738105A": {
+      "name": "GhoBucketSteward"
+    },
+    "0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B": {
+      "name": "GhoCcipSteward"
     }
   },
   "59144": {
@@ -14047,6 +14206,15 @@
       "name": "EACAggregatorProxy"
     },
     "0x8d6ceb62Ce510935792BE737e30f9f61082b72b3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xc834a55fb78dEa866E9cd86047Df0F584B9da339": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x9ECEa805F9DbeeFE8EdB7e3ee08995fF65828d7a": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x452b408b3e2805C109D52C80Bd54Deda239716d1": {
       "name": "EACAggregatorProxy"
     }
   },

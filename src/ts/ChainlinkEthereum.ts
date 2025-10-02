@@ -74,6 +74,9 @@ export const KNC_USD = '0xf8fF43E991A81e6eC886a3D281A2C6cC19aE70Fc';
 // https://etherscan.io/address/0xBE456fd14720C3aCCc30A2013Bffd782c9Cb75D5
 export const TUSD_Reserves = '0xBE456fd14720C3aCCc30A2013Bffd782c9Cb75D5';
 
+// https://etherscan.io/address/0x1e9cb00c0AC8d2a171f44E63bE7532AD7224F6D1
+export const Real_GDP_Percent_Change_Annual_Rate = '0x1e9cb00c0AC8d2a171f44E63bE7532AD7224F6D1';
+
 // https://etherscan.io/address/0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7
 export const AVAX_USD = '0xFF3EEb22B5E3dE6e705b44749C2559d704923FD7';
 
@@ -91,6 +94,9 @@ export const BAT_USD = '0x9441D7556e7820B5ca42082cfa99487D56AcA958';
 
 // https://etherscan.io/address/0x1B39Ee86Ec5979ba5C322b826B3ECb8C79991699
 export const COMP_ETH = '0x1B39Ee86Ec5979ba5C322b826B3ECb8C79991699';
+
+// https://etherscan.io/address/0x2F1494543bffb3022bf8Cb18C251D2286C98A85F
+export const PCE_Price_Index_Level = '0x2F1494543bffb3022bf8Cb18C251D2286C98A85F';
 
 // https://etherscan.io/address/0xbCF5792575bA3A875D8C406F4E7270f51a902539
 export const Synthetix_Aggregator_Issued_Synths = '0xbCF5792575bA3A875D8C406F4E7270f51a902539';
@@ -151,6 +157,9 @@ export const PYUSD_USD = '0x8f1dF6D7F2db73eECE86a18b4381F4707b918FB1';
 
 // https://etherscan.io/address/0x19e2d716288751c5A59deaB61af012D5DF895962
 export const USCC_NAV_Aave_LlamaRisk = '0x19e2d716288751c5A59deaB61af012D5DF895962';
+
+// https://etherscan.io/address/0x2b94a8B3E478a2984A0b50a4bB0F19827Ad0cef3
+export const Real_GDP_Level = '0x2b94a8B3E478a2984A0b50a4bB0F19827Ad0cef3';
 
 // https://etherscan.io/address/0xeb988B77b94C186053282BfcD8B7ED55142D3cAB
 export const XCN_USD = '0xeb988B77b94C186053282BfcD8B7ED55142D3cAB';
@@ -261,7 +270,7 @@ export const USCC_NAV_per_Share = '0xAfFd8F5578E8590665de561bdE9E7BAdb99300d9';
 export const eETH_Proof_of_Reserves = '0xC8cd82067eA907EA4af81b625d2bB653E21b5156';
 
 // https://etherscan.io/address/0xADcc914F882965Ef1B2f1043522b3B81ED081491
-export const bgBTC_Proof_of_Reserves = '0xADcc914F882965Ef1B2f1043522b3B81ED081491';
+export const BGBTC_Proof_of_Reserves = '0xADcc914F882965Ef1B2f1043522b3B81ED081491';
 
 // https://etherscan.io/address/0x9a51192e065ECC6BDEafE5e194ce54702DE4f1f5
 export const Consumer_Price_Index = '0x9a51192e065ECC6BDEafE5e194ce54702DE4f1f5';
@@ -274,6 +283,9 @@ export const cbBTC_USD = '0x2665701293fCbEB223D11A08D826563EDcCE423A';
 
 // https://etherscan.io/address/0x461790bDAF5aeD3df6a88cB97Dec42DD0EFA73c0
 export const xSolvBTC_Proof_of_Reserves = '0x461790bDAF5aeD3df6a88cB97Dec42DD0EFA73c0';
+
+// https://etherscan.io/address/0x171e3Ec9377FeBad8d26967f1B1d6383Ae037997
+export const SUSD1Plus_USD1_Exchange_Rate = '0x171e3Ec9377FeBad8d26967f1B1d6383Ae037997';
 
 // https://etherscan.io/address/0x9B4a96210bc8D9D55b1908B465D8B0de68B7fF83
 export const frxUSD_USD = '0x9B4a96210bc8D9D55b1908B465D8B0de68B7fF83';
@@ -380,6 +392,9 @@ export const _21BTC_Proof_of_Reserves = '0x43921Ca0eca1EA69722c048A6afbc2CAd0BB8
 // https://etherscan.io/address/0xc04611C43842220fd941515F86d1DDdB15F04e46
 export const SHV_USD = '0xc04611C43842220fd941515F86d1DDdB15F04e46';
 
+// https://etherscan.io/address/0x4e25cfdc5f53c2CdeD13c1472E628eFd35c99C83
+export const SOLVBTC_BTC_Exchange_Rate = '0x4e25cfdc5f53c2CdeD13c1472E628eFd35c99C83';
+
 // https://etherscan.io/address/0xeF8A4aF35cd47424672E3C590aBD37FBB7A7759a
 export const CNY_USD = '0xeF8A4aF35cd47424672E3C590aBD37FBB7A7759a';
 
@@ -394,6 +409,10 @@ export const DAI_ETH = '0x773616E4d11A78F511299002da57A0a94577F1f4';
 
 // https://etherscan.io/address/0xf3Ab3e54DE3b4BCaEbef6C66Cec0a3a88f262757
 export const USTB_AUM = '0xf3Ab3e54DE3b4BCaEbef6C66Cec0a3a88f262757';
+
+// https://etherscan.io/address/0xA5265f5B54D0AdD0D48BE88BC3CB0Cdb1a54B816
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
+  '0xA5265f5B54D0AdD0D48BE88BC3CB0Cdb1a54B816';
 
 // https://etherscan.io/address/0xD10aBbC76679a20055E167BB80A24ac851b37056
 export const APE_USD = '0xD10aBbC76679a20055E167BB80A24ac851b37056';
@@ -461,6 +480,10 @@ export const OETH_ETH = '0x703118C4CbccCBF2AB31913e0f8075fbbb15f563';
 // https://etherscan.io/address/0x8c110B94C5f1d347fAcF5E1E938AB2db60E3c9a8
 export const SPELL_USD = '0x8c110B94C5f1d347fAcF5E1E938AB2db60E3c9a8';
 
+// https://etherscan.io/address/0xB06A26DF4Ab5853AaCCF2d21FAa00B82362684C3
+export const Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
+  '0xB06A26DF4Ab5853AaCCF2d21FAa00B82362684C3';
+
 // https://etherscan.io/address/0xad4A9bED9a5E2c1c9a6E43D35Db53c83873dd901
 export const STBT_Proof_of_Reserves = '0xad4A9bED9a5E2c1c9a6E43D35Db53c83873dd901';
 
@@ -512,6 +535,9 @@ export const BNB_USD = '0x14e613AC84a31f709eadbdF89C6CC390fDc9540A';
 // https://etherscan.io/address/0x32EaFC72772821936BCc9b8A32dC394fEFcDBfD9
 export const Arbitrum_Healthcheck = '0x32EaFC72772821936BCc9b8A32dC394fEFcDBfD9';
 
+// https://etherscan.io/address/0x46cE854814ea38A4857AeA23aE7759b3A7970e4a
+export const xSolvBTC_NAV = '0x46cE854814ea38A4857AeA23aE7759b3A7970e4a';
+
 // https://etherscan.io/address/0xD93571A6201978976e37c4A0F7bE17806f2Feab2
 export const stBTC_BTC_Exchange_Rate = '0xD93571A6201978976e37c4A0F7bE17806f2Feab2';
 
@@ -560,6 +586,9 @@ export const SolvBTC_Proof_of_Reserves = '0xda9258AFc797Cd64d1b6FC651051224cdAB1
 // https://etherscan.io/address/0x164b276057258d81941e97B0a900D4C7B358bCe0
 export const wstETH_USD_Calculated = '0x164b276057258d81941e97B0a900D4C7B358bCe0';
 
+// https://etherscan.io/address/0x14f0737d6b705259e521EA6E9E3506AC78dBd311
+export const USDG_USD = '0x14f0737d6b705259e521EA6E9E3506AC78dBd311';
+
 // https://etherscan.io/address/0x8350b7De6a6a2C1368E7D4Bd968190e13E354297
 export const TBTC_USD = '0x8350b7De6a6a2C1368E7D4Bd968190e13E354297';
 
@@ -587,6 +616,9 @@ export const FBTC_BTC_Exchange_Rate = '0xe5346a4Fd329768A99455d969724768a00CA63F
 // https://etherscan.io/address/0xC28198Df9aee1c4990994B35ff51eFA4C769e534
 export const M_NAV = '0xC28198Df9aee1c4990994B35ff51eFA4C769e534';
 
+// https://etherscan.io/address/0xc90E3460424fb8ea79775089E9053113FEE34Ed0
+export const MUSD_USD = '0xc90E3460424fb8ea79775089E9053113FEE34Ed0';
+
 // https://etherscan.io/address/0x9a72298ae3886221820B1c878d12D872087D3a23
 export const OHMv2_ETH = '0x9a72298ae3886221820B1c878d12D872087D3a23';
 
@@ -595,6 +627,10 @@ export const Celo_Healthcheck = '0x7Fa89217C9bA5eb1307Aca6B84E99ed9220e076F';
 
 // https://etherscan.io/address/0xd95044Eb392CdE502b1F903Fc978317462049E52
 export const ATH_USD = '0xd95044Eb392CdE502b1F903Fc978317462049E52';
+
+// https://etherscan.io/address/0x64c4c1BF5ec145CB6095A289249592B5bb007098
+export const PCE_Price_Index_Percent_Change_Annual_Rate =
+  '0x64c4c1BF5ec145CB6095A289249592B5bb007098';
 
 // https://etherscan.io/address/0xFC9e30Cf89f8A00dba3D34edf8b65BCDAdeCC1cB
 export const USD0PlusPlus_USD = '0xFC9e30Cf89f8A00dba3D34edf8b65BCDAdeCC1cB';
@@ -677,6 +713,9 @@ export const SVR_AAVE_USD = '0xF02C1e2A3B77c1cacC72f72B44f7d0a4c62e4a85';
 // https://etherscan.io/address/0xbd7F896e60B650C01caf2d7279a1148189A68884
 export const SVR_AAVE_USD_BASE = '0xbd7F896e60B650C01caf2d7279a1148189A68884';
 
+// https://etherscan.io/address/0x16caE6d6ffb4AE01e206b928de925Ac0C8C8116A
+export const cUSD_AUM = '0x16caE6d6ffb4AE01e206b928de925Ac0C8C8116A';
+
 // https://etherscan.io/address/0x269f871c80b50a5cF34cDfCfEC11460adA4D66f1
 export const goUSD_Reserves = '0x269f871c80b50a5cF34cDfCfEC11460adA4D66f1';
 
@@ -715,6 +754,9 @@ export const ZRX_USD = '0x2885d15b8Af22648b98B122b22FDF4D2a56c6023';
 
 // https://etherscan.io/address/0xec1D1B3b0443256cc3860e24a46F108e699484Aa
 export const MKR_USD = '0xec1D1B3b0443256cc3860e24a46F108e699484Aa';
+
+// https://etherscan.io/address/0x14E5FC91Ddb3f97C33013Cc9fA74F54062Ad1Aa1
+export const WLFI_USD = '0x14E5FC91Ddb3f97C33013Cc9fA74F54062Ad1Aa1';
 
 // https://etherscan.io/address/0xAbE7a3643615Ed32d3431e11E0Ee5A486Cb27d48
 export const TBILL_NAV = '0xAbE7a3643615Ed32d3431e11E0Ee5A486Cb27d48';

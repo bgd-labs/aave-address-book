@@ -541,6 +541,7 @@ export const ASSETS = {
     V_TOKEN: '0xeA85a065F87FE28Aa8Fbf0D6C7deC472b106252C',
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0x2FA6A78E3d617c1013a22938411602dc9Da98dBa',
+    STATA_TOKEN: '0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7',
   },
   PT_USDe_31JUL2025: {
     decimals: 18,
@@ -890,7 +891,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10350,
+    liquidationBonus: 10310,
   },
   '18': {
     label: 'PT-sUSDe USDe September 2025',
@@ -900,7 +901,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10140,
+    liquidationBonus: 10110,
   },
   '19': {
     label: 'PT-USDe Stablecoins September 2025',
@@ -920,7 +921,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10230,
+    liquidationBonus: 10200,
   },
   '20': {
     label: 'PT-USDe USDe September 2025',
@@ -935,7 +936,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10150,
+    liquidationBonus: 10110,
   },
   '21': {
     label: 'tETH/Stablecoins',
@@ -989,9 +990,9 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8760,
-    liquidationThreshold: 8960,
-    liquidationBonus: 10500,
+    ltv: 8950,
+    liquidationThreshold: 9150,
+    liquidationBonus: 10470,
   },
   '25': {
     label: 'PT-sUSDe USDe Nov 2025',
@@ -1002,9 +1003,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 8930,
-    liquidationThreshold: 9130,
-    liquidationBonus: 10300,
+    ltv: 9120,
+    liquidationThreshold: 9320,
+    liquidationBonus: 10270,
   },
   '26': {
     label: 'weETH/wstETH ETH Correlated',
@@ -1034,9 +1035,9 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8860,
-    liquidationThreshold: 9060,
-    liquidationBonus: 10390,
+    ltv: 9020,
+    liquidationThreshold: 9220,
+    liquidationBonus: 10360,
   },
   '28': {
     label: 'PT-USDe USDe Nov 2025',
@@ -1047,9 +1048,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 8950,
-    liquidationThreshold: 9150,
-    liquidationBonus: 10290,
+    ltv: 9110,
+    liquidationThreshold: 9310,
+    liquidationBonus: 10260,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
