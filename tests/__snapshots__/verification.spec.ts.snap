@@ -177,18 +177,6 @@ exports[`verification > should have all contracts verified except for the known 
         "AaveV3Plasma",
         "ASSETS",
         "weETH",
-        "UNDERLYING",
-      ],
-      "value": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
-    },
-  },
-  {
-    "item": {
-      "chainId": 9745,
-      "path": [
-        "AaveV3Plasma",
-        "ASSETS",
-        "weETH",
         "A_TOKEN",
       ],
       "value": "0xAf1a7a488c8348b41d5860C04162af7d3D38A996",
@@ -252,16 +240,6 @@ exports[`verification > should have all contracts verified except for the known 
         "STATA_TOKEN",
       ],
       "value": "0xa047fdFb3420A27a5f926735b475fE5a1E968786",
-    },
-  },
-  {
-    "item": {
-      "chainId": 57073,
-      "path": [
-        "GhoInk",
-        "GHO_CCIP_STEWARD",
-      ],
-      "value": "0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B",
     },
   },
 ]
