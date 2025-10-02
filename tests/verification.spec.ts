@@ -104,12 +104,6 @@ const knownErrors = {
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
   },
-  57073: {
-    '0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B': true, // gho ink GHO_CCIP_STEWARD
-  },
-  9745: {
-    '0xA3D68b74bF0528fdD07263c60d6488749044914b': true, // plasma weETH
-  }
 };
 
 describe('verification', { timeout: 500_000 }, () => {
