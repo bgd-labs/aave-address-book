@@ -992,7 +992,7 @@ export const E_MODES = {
     ],
     ltv: 8950,
     liquidationThreshold: 9150,
-    liquidationBonus: 10470,
+    liquidationBonus: 10440,
   },
   '25': {
     label: 'PT-sUSDe USDe Nov 2025',
@@ -1003,9 +1003,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9120,
-    liquidationThreshold: 9320,
-    liquidationBonus: 10270,
+    ltv: 9150,
+    liquidationThreshold: 9350,
+    liquidationBonus: 10240,
   },
   '26': {
     label: 'weETH/wstETH ETH Correlated',
@@ -1035,8 +1035,8 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 9020,
-    liquidationThreshold: 9220,
+    ltv: 9050,
+    liquidationThreshold: 9250,
     liquidationBonus: 10360,
   },
   '28': {
@@ -1048,8 +1048,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9110,
-    liquidationThreshold: 9310,
+    ltv: 9140,
+    liquidationThreshold: 9340,
     liquidationBonus: 10260,
   },
 } as const;
