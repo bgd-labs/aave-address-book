@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.33.0](https://github.com/bgd-labs/aave-address-book/compare/v4.32.0...v4.33.0) (2025-10-10)
+
+
+### Features
+
+* add injector contracts ([#1109](https://github.com/bgd-labs/aave-address-book/issues/1109)) ([14d88c7](https://github.com/bgd-labs/aave-address-book/commit/14d88c76297eeb087b2713ca01625bae9d381531))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1104](https://github.com/bgd-labs/aave-address-book/issues/1104)) ([54cd159](https://github.com/bgd-labs/aave-address-book/commit/54cd1596467ace7799a2d0699dbc294f43dddc13))
+
 ## [4.32.0](https://github.com/bgd-labs/aave-address-book/compare/v4.31.0...v4.32.0) (2025-10-02)
 
 
