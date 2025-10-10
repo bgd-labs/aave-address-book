@@ -85,6 +85,15 @@ library AaveV3Linea {
 
   // https://lineascan.build/address/0xc25Da0Ddab750739d2500dfD4E31EB4E83622F54
   address internal constant STATA_FACTORY = 0xc25Da0Ddab750739d2500dfD4E31EB4E83622F54;
+
+  // https://lineascan.build/address/0xa6C229d3a1D4D31708B16C0ad2f14337aE4E7893
+  address internal constant EDGE_RISK_ORACLE = 0xa6C229d3a1D4D31708B16C0ad2f14337aE4E7893;
+
+  // https://lineascan.build/address/0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D
+  address internal constant EDGE_RISK_STEWARD_RATES = 0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D;
+
+  // https://lineascan.build/address/0x55510C6fD37bcb9398260E49e57b63B31a5E9066
+  address internal constant EDGE_INJECTOR_RATES = 0x55510C6fD37bcb9398260E49e57b63B31a5E9066;
 }
 library AaveV3LineaAssets {
   // https://lineascan.build/address/0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f

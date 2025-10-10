@@ -46,9 +46,8 @@ async function check(addresses: Record<string, any>) {
         address: addresses.EDGE_RISK_STEWARD_RATES,
         client,
       });
-      const [CONFIG_ENGINE, POOL_DATA_PROVIDER, OWNER, RISK_COUNCIL] = await Promise.all([
+      const [CONFIG_ENGINE, OWNER, RISK_COUNCIL] = await Promise.all([
         edgeRiskStewardContract.read.CONFIG_ENGINE(),
-        edgeRiskStewardContract.read.POOL_DATA_PROVIDER(),
         edgeRiskStewardContract.read.owner(),
         edgeRiskStewardContract.read.RISK_COUNCIL(),
       ]);

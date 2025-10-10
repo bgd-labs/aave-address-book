@@ -3737,6 +3737,27 @@
     },
     "0x6A14eBe9A934c8EFE15C3811a999149472876b56": {
       "name": "ClinicStewardV2"
+    },
+    "0x8A50d613d683c1c381aA027c4d922aE55Fd8A3B3": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xdbcea77E2C4A0e6158a7555C249f28A8Da449178": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x2D8A2d50D3158085180D32A9C0655b13bce81f22": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x54bE9DB9E111EBCe28c702825154f8c49e1eE93E": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x013cDe9e76Fd7Cab355b9f884ad8EE4Ccb781278": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xAbb3A42a06930aEb694c99C0D3D8F5c1056D74f8": {
+      "name": "EdgeRiskStewardRates"
+    },
+    "0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64": {
+      "name": "AaveStewardInjectorRates"
     }
   },
   "10": {
@@ -7813,6 +7834,24 @@
     },
     "0xF93b565c96446afdf8C3D37E6B4781D5d5EDef1C": {
       "name": "ClinicStewardV2"
+    },
+    "0x8844bC72D4E62ee510b0e3F8aa0074a6EE2b47e5": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xa5AEE67a828858f2F3C2f28FEAAfe88067851596": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xFC508BA50B4B12959A683dfcDf771518c03476b1": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x333ce9806e7c152a95a307CB27551Af5ae9D4163": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x636f0761f7309e1b8c07147b8641E22b494e719b": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x62327F44F77Fa40bf054e222eC484dC621Ee4D39": {
+      "name": "DefaultReserveInterestRateStrategy"
     }
   },
   "146": {
@@ -10685,6 +10724,21 @@
     },
     "0xA3D68b74bF0528fdD07263c60d6488749044914b": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb": {
+      "name": "RiskOracle"
+    },
+    "0xe1472037C9f17Ac00bf5336272ab74e423B9254d": {
+      "name": "EdgeRiskStewardEMode"
+    },
+    "0x530034d1A739Afd261291B86A5c3b95eC30c4b44": {
+      "name": "EdgeRiskStewardDiscountRate"
+    },
+    "0xdD56dE44d2d79eC97cEa1A0049c767A4ce97953e": {
+      "name": "GelatoAaveStewardInjectorEMode"
+    },
+    "0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4": {
+      "name": "GelatoAaveStewardInjectorDiscountRate"
     }
   },
   "42161": {
@@ -13675,6 +13729,21 @@
     },
     "0xFA38289Fe9f043aD8CCD8e81b28C1D02666D51b6": {
       "name": "EACAggregatorProxy"
+    },
+    "0x9A2362afe62D7cE7a69f2cE61aED6aB0aF109294": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x7abB575574e221eF52A571974EdeBA870Fc0bBd8": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x04932041605c7ab646E0ff209d94241cd4651598": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x09F9063Fa492d562f414514c596c7f3c01c14714": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xD9Dee878Eb31303FD58D412cE79439400b340A22": {
+      "name": "DefaultReserveInterestRateStrategy"
     }
   },
   "57073": {
@@ -14216,6 +14285,15 @@
     },
     "0x452b408b3e2805C109D52C80Bd54Deda239716d1": {
       "name": "EACAggregatorProxy"
+    },
+    "0xa6C229d3a1D4D31708B16C0ad2f14337aE4E7893": {
+      "name": "RiskOracle"
+    },
+    "0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D": {
+      "name": "EdgeRiskStewardRates"
+    },
+    "0x55510C6fD37bcb9398260E49e57b63B31a5E9066": {
+      "name": "GelatoAaveStewardInjectorRates"
     }
   },
   "60808": {

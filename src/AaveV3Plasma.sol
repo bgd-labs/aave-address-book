@@ -79,6 +79,24 @@ library AaveV3Plasma {
 
   // https://plasmascan.to/address/0x300f49ddf6fB9358ddCB22b12fFae62F1Cce9CdD
   address internal constant DUST_BIN = 0x300f49ddf6fB9358ddCB22b12fFae62F1Cce9CdD;
+
+  // https://plasmascan.to/address/0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb
+  address internal constant EDGE_RISK_ORACLE = 0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb;
+
+  // https://plasmascan.to/address/0xe1472037C9f17Ac00bf5336272ab74e423B9254d
+  address internal constant EDGE_RISK_STEWARD_PENDLE_EMODE =
+    0xe1472037C9f17Ac00bf5336272ab74e423B9254d;
+
+  // https://plasmascan.to/address/0x530034d1A739Afd261291B86A5c3b95eC30c4b44
+  address internal constant EDGE_RISK_STEWARD_DISCOUNT_RATE =
+    0x530034d1A739Afd261291B86A5c3b95eC30c4b44;
+
+  // https://plasmascan.to/address/0xdD56dE44d2d79eC97cEa1A0049c767A4ce97953e
+  address internal constant EDGE_INJECTOR_PENDLE_EMODE = 0xdD56dE44d2d79eC97cEa1A0049c767A4ce97953e;
+
+  // https://plasmascan.to/address/0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4
+  address internal constant EDGE_INJECTOR_DISCOUNT_RATE =
+    0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4;
 }
 library AaveV3PlasmaAssets {
   // https://plasmascan.to/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb
