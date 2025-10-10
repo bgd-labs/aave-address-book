@@ -116,6 +116,12 @@ export const EDGE_INJECTOR_PENDLE_EMODE = '0x83ab600cE8a61b43e1757b89C0589928f76
 // https://etherscan.io/address/0x15885A83936EB943e98EeFFb91e9A49040d93993
 export const EDGE_INJECTOR_DISCOUNT_RATE = '0x15885A83936EB943e98EeFFb91e9A49040d93993';
 
+// https://etherscan.io/address/0xAbb3A42a06930aEb694c99C0D3D8F5c1056D74f8
+export const EDGE_RISK_STEWARD_RATES = '0xAbb3A42a06930aEb694c99C0D3D8F5c1056D74f8';
+
+// https://etherscan.io/address/0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64
+export const EDGE_INJECTOR_RATES = '0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   WETH: {
@@ -990,8 +996,8 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8950,
-    liquidationThreshold: 9150,
+    ltv: 9000,
+    liquidationThreshold: 9200,
     liquidationBonus: 10440,
   },
   '25': {
@@ -1003,8 +1009,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9150,
-    liquidationThreshold: 9350,
+    ltv: 9200,
+    liquidationThreshold: 9400,
     liquidationBonus: 10240,
   },
   '26': {
@@ -1035,9 +1041,9 @@ export const E_MODES = {
       '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 9050,
-    liquidationThreshold: 9250,
-    liquidationBonus: 10360,
+    ltv: 9080,
+    liquidationThreshold: 9280,
+    liquidationBonus: 10330,
   },
   '28': {
     label: 'PT-USDe USDe Nov 2025',
@@ -1048,9 +1054,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9140,
-    liquidationThreshold: 9340,
-    liquidationBonus: 10260,
+    ltv: 9170,
+    liquidationThreshold: 9370,
+    liquidationBonus: 10230,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {

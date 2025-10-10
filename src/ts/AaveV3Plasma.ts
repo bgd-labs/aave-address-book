@@ -68,6 +68,21 @@ export const STATA_FACTORY = '0xbcb77d9D638abECB6BB910c1d8A4c24b0DD165A2';
 // https://plasmascan.to/address/0x300f49ddf6fB9358ddCB22b12fFae62F1Cce9CdD
 export const DUST_BIN = '0x300f49ddf6fB9358ddCB22b12fFae62F1Cce9CdD';
 
+// https://plasmascan.to/address/0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb
+export const EDGE_RISK_ORACLE = '0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb';
+
+// https://plasmascan.to/address/0xe1472037C9f17Ac00bf5336272ab74e423B9254d
+export const EDGE_RISK_STEWARD_PENDLE_EMODE = '0xe1472037C9f17Ac00bf5336272ab74e423B9254d';
+
+// https://plasmascan.to/address/0x530034d1A739Afd261291B86A5c3b95eC30c4b44
+export const EDGE_RISK_STEWARD_DISCOUNT_RATE = '0x530034d1A739Afd261291B86A5c3b95eC30c4b44';
+
+// https://plasmascan.to/address/0xdD56dE44d2d79eC97cEa1A0049c767A4ce97953e
+export const EDGE_INJECTOR_PENDLE_EMODE = '0xdD56dE44d2d79eC97cEa1A0049c767A4ce97953e';
+
+// https://plasmascan.to/address/0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4
+export const EDGE_INJECTOR_DISCOUNT_RATE = '0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4';
+
 export const CHAIN_ID = 9745;
 export const ASSETS = {
   USDT0: {
