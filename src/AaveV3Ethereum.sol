@@ -134,11 +134,11 @@ library AaveV3Ethereum {
   address internal constant EDGE_INJECTOR_DISCOUNT_RATE =
     0x15885A83936EB943e98EeFFb91e9A49040d93993;
 
-  // https://etherscan.io/address/0xAbb3A42a06930aEb694c99C0D3D8F5c1056D74f8
-  address internal constant EDGE_RISK_STEWARD_RATES = 0xAbb3A42a06930aEb694c99C0D3D8F5c1056D74f8;
+  // https://etherscan.io/address/0x80CFd14236409107c220d1D0a3dE845b48fdcDfc
+  address internal constant EDGE_RISK_STEWARD_RATES = 0x80CFd14236409107c220d1D0a3dE845b48fdcDfc;
 
-  // https://etherscan.io/address/0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64
-  address internal constant EDGE_INJECTOR_RATES = 0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64;
+  // https://etherscan.io/address/0x74dc6321A338420238CBD77abA5fEa8679393A66
+  address internal constant EDGE_INJECTOR_RATES = 0x74dc6321A338420238CBD77abA5fEa8679393A66;
 }
 library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
