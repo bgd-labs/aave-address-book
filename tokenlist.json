@@ -8618,6 +8618,112 @@
       }
     },
     {
+      "chainId": 57073,
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "Wrapped Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 57073,
+      "address": "0x2B35eF056728BaFFaC103e3b81cB029788006EF9",
+      "name": "Aave InkWhitelabel WETH",
+      "decimals": 18,
+      "symbol": "aInkWlWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x4200000000000000000000000000000000000006"
+      }
+    },
+    {
+      "chainId": 57073,
+      "address": "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98",
+      "name": "Kraken Wrapped Bitcoin",
+      "decimals": 8,
+      "symbol": "kBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 57073,
+      "address": "0xC712C3a5624de08EA593FB23270804B47942564e",
+      "name": "Aave InkWhitelabel KBTC",
+      "decimals": 8,
+      "symbol": "aInkWlKBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98"
+      }
+    },
+    {
+      "chainId": 57073,
+      "address": "0x0200C29006150606B650577BBE7B6248F58470c1",
+      "name": "USD₮0",
+      "decimals": 6,
+      "symbol": "USD₮0",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
+    },
+    {
+      "chainId": 57073,
+      "address": "0x99cBF1Ff4527675Ed3301671105C9F7748fb8a04",
+      "name": "Aave InkWhitelabel USDT",
+      "decimals": 6,
+      "symbol": "aInkWlUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x0200C29006150606B650577BBE7B6248F58470c1"
+      }
+    },
+    {
+      "chainId": 57073,
+      "address": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
+      "name": "Global Dollar",
+      "decimals": 6,
+      "symbol": "USDG",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 57073,
+      "address": "0x4cd13ce4edbB5523fd4849252b5f1bF215129D10",
+      "name": "Aave InkWhitelabel USDG",
+      "decimals": 6,
+      "symbol": "aInkWlUSDG",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D"
+      }
+    },
+    {
+      "chainId": 57073,
+      "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 57073,
+      "address": "0xC629140A8aA21F8f319A21F41b2DC1b0431693C1",
+      "name": "Aave InkWhitelabel GHO",
+      "decimals": 18,
+      "symbol": "aInkWlGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73"
+      }
+    },
+    {
       "chainId": 9745,
       "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "name": "USDT0",
@@ -8883,6 +8989,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 136 },
-  "timestamp": "2025-09-23T12:33:42.519Z"
+  "version": { "major": 3, "minor": 0, "patch": 137 },
+  "timestamp": "2025-10-13T06:41:45.632Z"
 }
