@@ -116,11 +116,11 @@ export const EDGE_INJECTOR_PENDLE_EMODE = '0x83ab600cE8a61b43e1757b89C0589928f76
 // https://etherscan.io/address/0x15885A83936EB943e98EeFFb91e9A49040d93993
 export const EDGE_INJECTOR_DISCOUNT_RATE = '0x15885A83936EB943e98EeFFb91e9A49040d93993';
 
-// https://etherscan.io/address/0xAbb3A42a06930aEb694c99C0D3D8F5c1056D74f8
-export const EDGE_RISK_STEWARD_RATES = '0xAbb3A42a06930aEb694c99C0D3D8F5c1056D74f8';
+// https://etherscan.io/address/0x80CFd14236409107c220d1D0a3dE845b48fdcDfc
+export const EDGE_RISK_STEWARD_RATES = '0x80CFd14236409107c220d1D0a3dE845b48fdcDfc';
 
-// https://etherscan.io/address/0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64
-export const EDGE_INJECTOR_RATES = '0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64';
+// https://etherscan.io/address/0x74dc6321A338420238CBD77abA5fEa8679393A66
+export const EDGE_INJECTOR_RATES = '0x74dc6321A338420238CBD77abA5fEa8679393A66';
 
 export const CHAIN_ID = 1;
 export const ASSETS = {
@@ -998,7 +998,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10440,
+    liquidationBonus: 10410,
   },
   '25': {
     label: 'PT-sUSDe USDe Nov 2025',
@@ -1011,7 +1011,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10240,
+    liquidationBonus: 10210,
   },
   '26': {
     label: 'weETH/wstETH ETH Correlated',
