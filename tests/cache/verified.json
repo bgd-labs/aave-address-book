@@ -13881,6 +13881,63 @@
     },
     "0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B": {
       "name": "GhoCcipSteward"
+    },
+    "0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0x163131609562E578754aF12E998635BfCa56712C": {
+      "name": "ERC1967Proxy"
+    },
+    "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98": {
+      "name": "KBTCProxy"
+    },
+    "0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb": {
+      "name": "ERC1967Proxy"
+    },
+    "0x24FdD142b34C6B5D55299709DB0966681933c9aF": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xe343167631d89B6Ffc58B88d6b7fB0228795491D": {
+      "name": "ERC1967Proxy"
+    },
+    "0x38758C93672A9F3F4297016BE4Ac1aCA70DcE82A": {
+      "name": "FixedPriceAdapter"
+    },
+    "0x4200000000000000000000000000000000000006": {
+      "name": "WETH"
+    },
+    "0xc1457AcfBaD2332b07B7651A4Da3176E8F3Bc9E4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xC712C3a5624de08EA593FB23270804B47942564e": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0200C29006150606B650577BBE7B6248F58470c1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x99cBF1Ff4527675Ed3301671105C9F7748fb8a04": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA5d61eF3D06234371507e54FB709F401E590719a": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4cd13ce4edbB5523fd4849252b5f1bF215129D10": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x08443163427BaE789774f45198315f6EAefe566C": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xC629140A8aA21F8f319A21F41b2DC1b0431693C1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x45b30e3F687EEC15702dff29069f24173cB69Af4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2B35eF056728BaFFaC103e3b81cB029788006EF9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x47D9b89775958F0b5c7734C5570565Ce575e7e94": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "59144": {
