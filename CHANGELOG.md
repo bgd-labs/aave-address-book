@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.33.0](https://github.com/bgd-labs/aave-address-book/compare/v4.32.0...v4.33.0) (2025-10-14)
+
+
+### Features
+
+* add injector contracts ([#1109](https://github.com/bgd-labs/aave-address-book/issues/1109)) ([14d88c7](https://github.com/bgd-labs/aave-address-book/commit/14d88c76297eeb087b2713ca01625bae9d381531))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1104](https://github.com/bgd-labs/aave-address-book/issues/1104)) ([54cd159](https://github.com/bgd-labs/aave-address-book/commit/54cd1596467ace7799a2d0699dbc294f43dddc13))
+* **cache:** automated cache update - updated addresses ([#1108](https://github.com/bgd-labs/aave-address-book/issues/1108)) ([a5d0257](https://github.com/bgd-labs/aave-address-book/commit/a5d025751313a7c4438e35ca4f4a7a4f7fa57393))
+* ink verification ([#1112](https://github.com/bgd-labs/aave-address-book/issues/1112)) ([1969fa5](https://github.com/bgd-labs/aave-address-book/commit/1969fa5352ad92d95a657f73b918c34c70591443))
+* update injector contract ([#1114](https://github.com/bgd-labs/aave-address-book/issues/1114)) ([89a1126](https://github.com/bgd-labs/aave-address-book/commit/89a1126034129949d57d70f012fb8818aaa6dc7a))
+* Updated aave-v3-origin lib with xlayer updates ([#1115](https://github.com/bgd-labs/aave-address-book/issues/1115)) ([44287cb](https://github.com/bgd-labs/aave-address-book/commit/44287cb77d806ccca1b2aa70f911261ac3a3e7fb))
+
 ## [4.32.0](https://github.com/bgd-labs/aave-address-book/compare/v4.31.0...v4.32.0) (2025-10-02)
 
 
