@@ -1,11 +1,11 @@
-import {ChainId, ChainList, getExplorer, getSourceCode} from '@bgd-labs/toolbox';
-import {describe, expect, it} from 'vitest';
-import {flattenedAddresses, ListItem} from '../ui/src/utils/getAddresses';
+import { ChainId, ChainList, getExplorer, getSourceCode } from '@bgd-labs/toolbox';
+import { describe, expect, it } from 'vitest';
+import { flattenedAddresses, ListItem } from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
-import {writeFileSync} from 'fs';
-import {Address, Hex, PublicClient, zeroAddress} from 'viem';
-import {getCode} from 'viem/actions';
-import {getClient} from '../scripts/clients';
+import { writeFileSync } from 'fs';
+import { Address, Hex, PublicClient, zeroAddress } from 'viem';
+import { getCode } from 'viem/actions';
+import { getClient } from '../scripts/clients';
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY as string;
 
@@ -50,7 +50,7 @@ async function verifyProxy(item: ListItem) {
       }),
     });
 
-    const {status, result} = await request.json();
+    const { status, result } = await request.json();
     await sleep(200);
     if (status === '1') checkProxyVerification(item, result);
   } catch (e) {
@@ -74,7 +74,7 @@ async function checkVerified(item: ListItem) {
         await verifyProxy(item);
       }
     }
-    return {status: '1', result: source};
+    return { status: '1', result: source };
   } catch (e) {
     console.error(e);
     return { status: '0', result: e };
@@ -104,6 +104,9 @@ const knownErrors = {
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
   },
+  196: {
+    '0xEB0682d148e874553008730f0686ea89db7DA412': true, // xLayer explorer is a different one
+  },
 };
 
 describe('verification', { timeout: 500_000 }, () => {
@@ -116,7 +119,7 @@ describe('verification', { timeout: 500_000 }, () => {
         (!verified[item.chainId]?.[item.value] ||
           verified[item.chainId]?.[item.value] === zeroAddress),
     );
-    const errors: {item: ListItem}[] = [];
+    const errors: { item: ListItem }[] = [];
     // unique set of addresses checked on this iteration
     // used to prevent double checking the same address
     const checked = new Set<string>();
@@ -131,10 +134,10 @@ describe('verification', { timeout: 500_000 }, () => {
         if (hasCode) {
           const { status, result } = (await checkVerified(item)) as {
             status: string;
-            result: {ContractName: string};
+            result: { ContractName: string };
           };
           if (status !== '1' || !result.ContractName) {
-            errors.push({item});
+            errors.push({ item });
             console.log(item.value, result);
           } else {
             if (!verified[item.chainId]) verified[item.chainId] = {};
