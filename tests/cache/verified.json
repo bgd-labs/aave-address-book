@@ -3758,6 +3758,21 @@
     },
     "0xd3dc7C39FC2eD85fBC0723ec74a1ed8874410c64": {
       "name": "AaveStewardInjectorRates"
+    },
+    "0x23A6A30F7301607b9bf0a577b0DDBD07920260C7": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x92A6A444f5b433235297d849d2F93B405657234a": {
+      "name": "FixedPriceAdapter"
+    },
+    "0x80CFd14236409107c220d1D0a3dE845b48fdcDfc": {
+      "name": "EdgeRiskStewardRates"
+    },
+    "0x74dc6321A338420238CBD77abA5fEa8679393A66": {
+      "name": "AaveStewardInjectorRates"
+    },
+    "0xb7D402138Cb01BfE97d95181C849379d6AD14d19": {
+      "name": "MainnetSwapSteward"
     }
   },
   "10": {
@@ -7852,6 +7867,9 @@
     },
     "0x62327F44F77Fa40bf054e222eC484dC621Ee4D39": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xD550Bce1a506F48802C9A4464c64E14A3141cE73": {
+      "name": "FixedPriceAdapter"
     }
   },
   "146": {

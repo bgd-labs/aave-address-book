@@ -122,6 +122,9 @@ export const EDGE_RISK_STEWARD_RATES = '0x80CFd14236409107c220d1D0a3dE845b48fdcD
 // https://etherscan.io/address/0x74dc6321A338420238CBD77abA5fEa8679393A66
 export const EDGE_INJECTOR_RATES = '0x74dc6321A338420238CBD77abA5fEa8679393A66';
 
+// https://etherscan.io/address/0xb7D402138Cb01BfE97d95181C849379d6AD14d19
+export const COLLECTOR_SWAP_STEWARD = '0xb7D402138Cb01BfE97d95181C849379d6AD14d19';
+
 export const CHAIN_ID = 1;
 export const ASSETS = {
   WETH: {
@@ -1054,8 +1057,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9220,
-    liquidationThreshold: 9420,
+    ltv: 9260,
+    liquidationThreshold: 9460,
     liquidationBonus: 10230,
   },
 } as const;
