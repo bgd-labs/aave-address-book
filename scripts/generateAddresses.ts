@@ -91,6 +91,7 @@ import { governanceConfigBob } from './configs/governance/bob';
 import { bobAddresses } from './configs/networks/bob';
 import { governanceConfigInk, governanceConfigInkWhiteLabel } from './configs/governance/ink';
 import { governanceConfigPlasma } from './configs/governance/plasma';
+import { xLayerAddresses } from './configs/networks/xlayer';
 
 async function main() {
   // cleanup ts artifacts
@@ -219,6 +220,7 @@ async function main() {
     inkAddresses,
     inkWhiteLabelAddresses,
     plasmaAddresses,
+    xLayerAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

@@ -591,11 +591,11 @@ library AaveV2EthereumAssets {
   // https://etherscan.io/address/0x4dDff5885a67E4EffeC55875a3977D7E60F82ae0
   address internal constant DPI_V_TOKEN = 0x4dDff5885a67E4EffeC55875a3977D7E60F82ae0;
 
-  // https://etherscan.io/address/0x2fe9EcF3024B5A63f50Ec0eFC53b8fF2C09F2E93
-  address internal constant DPI_ORACLE = 0x2fe9EcF3024B5A63f50Ec0eFC53b8fF2C09F2E93;
+  // https://etherscan.io/address/0x92A6A444f5b433235297d849d2F93B405657234a
+  address internal constant DPI_ORACLE = 0x92A6A444f5b433235297d849d2F93B405657234a;
 
-  // https://etherscan.io/address/0x6855E5544Cd803BF24c9612b3F12C009116B0ee1
-  address internal constant DPI_INTEREST_RATE_STRATEGY = 0x6855E5544Cd803BF24c9612b3F12C009116B0ee1;
+  // https://etherscan.io/address/0x23A6A30F7301607b9bf0a577b0DDBD07920260C7
+  address internal constant DPI_INTEREST_RATE_STRATEGY = 0x23A6A30F7301607b9bf0a577b0DDBD07920260C7;
 
   // https://etherscan.io/address/0x853d955aCEf822Db058eb8505911ED77F175b99e
   address internal constant FRAX_UNDERLYING = 0x853d955aCEf822Db058eb8505911ED77F175b99e;
