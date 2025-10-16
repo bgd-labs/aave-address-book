@@ -32,4 +32,7 @@ library MiscAvalanche {
 
   // https://snowscan.xyz/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
   address internal constant APE_VOTING_SAFE = 0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6;
+
+  // https://snowscan.xyz/address/0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08
+  address internal constant REWARD_STEWARD = 0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08;
 }

@@ -14,4 +14,7 @@ library MiscSonic {
 
   // https://sonicscan.org/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
   address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
+
+  // https://sonicscan.org/address/0x9eFf17b168867Dc2bCD87D2Ab44e4857902dbC29
+  address internal constant REWARD_STEWARD = 0x9eFf17b168867Dc2bCD87D2Ab44e4857902dbC29;
 }

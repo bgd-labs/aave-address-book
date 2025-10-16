@@ -3773,6 +3773,9 @@
     },
     "0xb7D402138Cb01BfE97d95181C849379d6AD14d19": {
       "name": "MainnetSwapSteward"
+    },
+    "0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB": {
+      "name": "RewardsSteward"
     }
   },
   "10": {
@@ -4885,6 +4888,9 @@
     },
     "0x8Ef4207CBC405085B6740fc931114cAFCD1d9158": {
       "name": "EACAggregatorProxy"
+    },
+    "0xfD2aaE32247E5015AcB04Aa8220616D6647979aC": {
+      "name": "RewardsSteward"
     }
   },
   "56": {
@@ -5823,6 +5829,9 @@
     },
     "0x3400969D9b6156d75EC16c81296b93b3149B0E7C": {
       "name": "EACAggregatorProxy"
+    },
+    "0x6046A62a80a2c19A0De91063602ce90533c62ae1": {
+      "name": "RewardsSteward"
     }
   },
   "100": {
@@ -6410,6 +6419,9 @@
     },
     "0x06179f7C1be40863405f374E7f5F8806c728660A": {
       "name": "GhoCcipSteward"
+    },
+    "0xE513b6304712D1055C88f72f1952FAe49c09f4ce": {
+      "name": "RewardsSteward"
     }
   },
   "137": {
@@ -7870,6 +7882,12 @@
     },
     "0xD550Bce1a506F48802C9A4464c64E14A3141cE73": {
       "name": "FixedPriceAdapter"
+    },
+    "0x105fe43207CE8331555C9Be8c13718d6DeD2fD97": {
+      "name": "FixedPriceAdapter"
+    },
+    "0xF18F15362e5fB4277DCE713F170341942F43aC3E": {
+      "name": "RewardsSteward"
     }
   },
   "146": {
@@ -8256,6 +8274,9 @@
     },
     "0xA8bed2F8cddD243D894fa629bf1F845A7100ecc8": {
       "name": "EACAggregatorProxy"
+    },
+    "0x9eFf17b168867Dc2bCD87D2Ab44e4857902dbC29": {
+      "name": "RewardsSteward"
     }
   },
   "324": {
@@ -12193,6 +12214,9 @@
     },
     "0x726a96F31846f586E6a4C72F73c3dB671986a002": {
       "name": "EACAggregatorProxy"
+    },
+    "0x659966aCE41944f6E321cA7FE76de4775779d11C": {
+      "name": "RewardsSteward"
     }
   },
   "42220": {
@@ -15046,6 +15070,9 @@
     },
     "0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168": {
       "name": "SupplyLogic"
+    },
+    "0xc50C0D9C4E5df6f2F244a72FD4DA562877CD16EE": {
+      "name": "RewardsSteward"
     }
   }
 }
