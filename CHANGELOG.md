@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.34.0](https://github.com/bgd-labs/aave-address-book/compare/v4.33.0...v4.34.0) (2025-10-16)
+
+
+### Features
+
+* add collector swap steward ([#1117](https://github.com/bgd-labs/aave-address-book/issues/1117)) ([c3a9436](https://github.com/bgd-labs/aave-address-book/commit/c3a9436ddf6f5c8e77c840a28483cc132e315a25))
+
 ## [4.33.0](https://github.com/bgd-labs/aave-address-book/compare/v4.32.0...v4.33.0) (2025-10-14)
 
 
