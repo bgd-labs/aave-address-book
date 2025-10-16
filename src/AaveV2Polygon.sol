@@ -260,8 +260,8 @@ library AaveV2PolygonAssets {
   // https://polygonscan.com/address/0x43150AA0B7e19293D935A412C8607f9172d3d3f3
   address internal constant DPI_V_TOKEN = 0x43150AA0B7e19293D935A412C8607f9172d3d3f3;
 
-  // https://polygonscan.com/address/0xC70aAF9092De3a4E5000956E672cDf5E996B4610
-  address internal constant DPI_ORACLE = 0xC70aAF9092De3a4E5000956E672cDf5E996B4610;
+  // https://polygonscan.com/address/0xD550Bce1a506F48802C9A4464c64E14A3141cE73
+  address internal constant DPI_ORACLE = 0xD550Bce1a506F48802C9A4464c64E14A3141cE73;
 
   // https://polygonscan.com/address/0x6405F880E431403588e92b241Ca15603047ef8a4
   address internal constant DPI_INTEREST_RATE_STRATEGY = 0x6405F880E431403588e92b241Ca15603047ef8a4;
