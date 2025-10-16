@@ -87,6 +87,7 @@ export * as GhoBase from './GhoBase';
 export * as GhoAvalanche from './GhoAvalanche';
 export * as GhoGnosis from './GhoGnosis';
 export * as GhoInk from './GhoInk';
+export * as GhoPlasma from './GhoPlasma';
 export * as UmbrellaEthereum from './UmbrellaEthereum';
 export * as UmbrellaBaseSepolia from './UmbrellaBaseSepolia';
 export * as ChainlinkEthereum from './ChainlinkEthereum';
