@@ -29,4 +29,7 @@ library MiscBNB {
 
   // https://bscscan.com/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
   address internal constant APE_VOTING_SAFE = 0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6;
+
+  // https://bscscan.com/address/0x6046A62a80a2c19A0De91063602ce90533c62ae1
+  address internal constant REWARD_STEWARD = 0x6046A62a80a2c19A0De91063602ce90533c62ae1;
 }

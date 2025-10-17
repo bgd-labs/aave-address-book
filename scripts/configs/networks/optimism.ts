@@ -15,6 +15,7 @@ export const optimismAddresses: NetworkAddresses<{
   APE_VOTING_SAFE: Hex;
   MERIT_INCENTIVE_SAFE: Hex;
   AHAB_SAFE: Hex;
+  REWARD_STEWARD: Hex;
 }> = {
   name: 'Optimism',
   chainId: ChainId.optimism,
@@ -37,6 +38,7 @@ export const optimismAddresses: NetworkAddresses<{
     APE_VOTING_SAFE: '0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6',
     MERIT_INCENTIVE_SAFE: '0xAA870e4B82deaDa3727235f34183Ec9B728714C8',
     AHAB_SAFE: '0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e',
+    REWARD_STEWARD: '0xfD2aaE32247E5015AcB04Aa8220616D6647979aC',
   },
 };
 

@@ -53,4 +53,7 @@ export const MERIT_INCENTIVE_SAFE = '0xAA870e4B82deaDa3727235f34183Ec9B728714C8'
 // https://optimistic.etherscan.io/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
 export const AHAB_SAFE = '0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e';
 
+// https://optimistic.etherscan.io/address/0xfD2aaE32247E5015AcB04Aa8220616D6647979aC
+export const REWARD_STEWARD = '0xfD2aaE32247E5015AcB04Aa8220616D6647979aC';
+
 export const CHAIN_ID = 10;

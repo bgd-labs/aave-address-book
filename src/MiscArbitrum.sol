@@ -56,4 +56,7 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
   address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
+
+  // https://arbiscan.io/address/0x659966aCE41944f6E321cA7FE76de4775779d11C
+  address internal constant REWARD_STEWARD = 0x659966aCE41944f6E321cA7FE76de4775779d11C;
 }
