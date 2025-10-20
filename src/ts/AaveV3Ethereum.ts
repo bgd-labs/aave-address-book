@@ -1046,7 +1046,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10330,
+    liquidationBonus: 10300,
   },
   '28': {
     label: 'PT-USDe USDe Nov 2025',
@@ -1059,7 +1059,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9260,
     liquidationThreshold: 9460,
-    liquidationBonus: 10230,
+    liquidationBonus: 10200,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
