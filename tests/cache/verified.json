@@ -7870,6 +7870,9 @@
     },
     "0xD550Bce1a506F48802C9A4464c64E14A3141cE73": {
       "name": "FixedPriceAdapter"
+    },
+    "0x105fe43207CE8331555C9Be8c13718d6DeD2fD97": {
+      "name": "FixedPriceAdapter"
     }
   },
   "146": {
@@ -10757,6 +10760,18 @@
     },
     "0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4": {
       "name": "GelatoAaveStewardInjectorDiscountRate"
+    },
+    "0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x30cb6ff8649Cc02cEa91971D4730EebeD5A8D2F1": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x3eca1c7836eA09DB3dc85be7B5526Ce80E2609a1": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "42161": {
