@@ -145,6 +145,24 @@ export const ASSETS = {
     ORACLE: '0x43A7dd2125266c5c4c26EB86cd61241132426Fe7',
     STATA_TOKEN: '0xa047fdFb3420A27a5f926735b475fE5a1E968786',
   },
+  PT_USDe_15JAN2026: {
+    decimals: 18,
+    id: 6,
+    UNDERLYING: '0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a',
+    A_TOKEN: '0xEa601A9FECF80bFC529F08A51bD8Cb0d72fc862A',
+    V_TOKEN: '0xD73253B18124837465b0c1fCB1A947d0542a991B',
+    INTEREST_RATE_STRATEGY: '0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC',
+    ORACLE: '0x30cb6ff8649Cc02cEa91971D4730EebeD5A8D2F1',
+  },
+  PT_sUSDE_15JAN2026: {
+    decimals: 18,
+    id: 7,
+    UNDERLYING: '0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8',
+    A_TOKEN: '0x0b9A412c94f07223752031f75a20DDe542D63d5C',
+    V_TOKEN: '0xb2A5AD339d9687B5606b21B37F72f350e5BbC622',
+    INTEREST_RATE_STRATEGY: '0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC',
+    ORACLE: '0x3eca1c7836eA09DB3dc85be7B5526Ce80E2609a1',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -189,6 +207,52 @@ export const E_MODES = {
     ltv: 7500,
     liquidationThreshold: 7800,
     liquidationBonus: 10750,
+  },
+  '5': {
+    label: 'PT-USDe Stablecoins Jan 2026',
+    collateralBitmap: '64',
+    collateralAssets: ['0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a'],
+    borrowableBitmap: '3',
+    borrowableAssets: [
+      '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
+      '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+    ],
+    ltv: 8540,
+    liquidationThreshold: 8740,
+    liquidationBonus: 10490,
+  },
+  '6': {
+    label: 'PT-USDe USDe Jan 2026',
+    collateralBitmap: '64',
+    collateralAssets: ['0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a'],
+    borrowableBitmap: '2',
+    borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
+    ltv: 8620,
+    liquidationThreshold: 8820,
+    liquidationBonus: 10390,
+  },
+  '7': {
+    label: 'PT-sUSDe Stablecoins Jan 2026',
+    collateralBitmap: '128',
+    collateralAssets: ['0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8'],
+    borrowableBitmap: '3',
+    borrowableAssets: [
+      '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
+      '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+    ],
+    ltv: 8390,
+    liquidationThreshold: 8590,
+    liquidationBonus: 10600,
+  },
+  '8': {
+    label: 'PT-sUSDe USDe Jan 2026',
+    collateralBitmap: '128',
+    collateralAssets: ['0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8'],
+    borrowableBitmap: '2',
+    borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
+    ltv: 8450,
+    liquidationThreshold: 8650,
+    liquidationBonus: 10520,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
