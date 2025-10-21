@@ -6422,6 +6422,9 @@
     },
     "0xE513b6304712D1055C88f72f1952FAe49c09f4ce": {
       "name": "RewardsSteward"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
     }
   },
   "137": {
@@ -10817,6 +10820,9 @@
     },
     "0x3acFddf27b85B5f773B610c6F7e4420aeB1Df8dD": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
     }
   },
   "42161": {
@@ -14019,6 +14025,9 @@
     },
     "0x47D9b89775958F0b5c7734C5570565Ce575e7e94": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
     }
   },
   "59144": {

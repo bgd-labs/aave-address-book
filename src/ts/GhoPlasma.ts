@@ -14,4 +14,7 @@ export const GHO_BUCKET_STEWARD = '0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B';
 // https://plasmascan.to/address/0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6
 export const GHO_CCIP_STEWARD = '0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6';
 
+// https://plasmascan.to/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
+export const RISK_COUNCIL = '0x8513e6F37dBc52De87b166980Fa3F50639694B60';
+
 export const CHAIN_ID = 9745;

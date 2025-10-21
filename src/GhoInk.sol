@@ -17,4 +17,7 @@ library GhoInk {
 
   // https://explorer.inkonchain.com/address/0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B
   address internal constant GHO_CCIP_STEWARD = 0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B;
+
+  // https://explorer.inkonchain.com/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
+  address internal constant RISK_COUNCIL = 0x8513e6F37dBc52De87b166980Fa3F50639694B60;
 }
