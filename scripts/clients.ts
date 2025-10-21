@@ -1,7 +1,7 @@
 import {HttpTransportConfig} from 'viem';
 import {getClient as rpcEnvGetClient} from '@bgd-labs/toolbox';
 
-const commonConfig: HttpTransportConfig = {timeout: 30_000, batch: {batchSize: 1000, wait: 100}};
+const commonConfig: HttpTransportConfig = {timeout: 30_000, batch: true};
 const batchConfig = {batch: {multicall: true}};
 
 export function getClient(chainId: number) {
