@@ -1246,11 +1246,11 @@ library AaveV3EthereumAssets {
 library AaveV3EthereumEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant ETH_CORRELATED = 1;
+  uint8 internal constant WETH_WSTETH_CBETH_RETH_WEETH_OSETH_ETHX_WETH = 1;
 
-  uint8 internal constant SUSDE_STABLECOINS = 2;
+  uint8 internal constant USDE_SUSDE_USDC_USDT_USDS = 2;
 
-  uint8 internal constant RSETH_LST_MAIN = 3;
+  uint8 internal constant RSETH_WSTETH_ETHX = 3;
 
   uint8 internal constant LBTC_WBTC = 4;
 
@@ -1260,47 +1260,51 @@ library AaveV3EthereumEModes {
 
   uint8 internal constant EBTC_WBTC = 7;
 
-  uint8 internal constant PT_SUSDE_STABLECOINS_JUL_2025 = 8;
+  uint8 internal constant SUSDE_PT_SUSDE_31JUL2025_USDC_USDT_USDS = 8;
 
-  uint8 internal constant PT_EUSDE_STABLECOINS_MAY_2025 = 9;
+  uint8 internal constant PT_EUSDE_29MAY2025_EUSDE_USDC_USDT_USDS = 9;
 
-  uint8 internal constant PT_USDE_STABLECOINS_JULY_2025 = 10;
+  uint8 internal constant USDE_PT_USDE_31JUL2025_USDC_USDT_USDS = 10;
 
-  uint8 internal constant USDE_STABLECOIN = 11;
+  uint8 internal constant USDE_USDC_USDT_USDS = 11;
 
-  uint8 internal constant PT_USDE_USDE_JULY_2025 = 12;
+  uint8 internal constant USDE_PT_USDE_31JUL2025_USDE = 12;
 
-  uint8 internal constant PT_EUSDE_STABLECOINS_AUGUST_2025 = 13;
+  uint8 internal constant PT_EUSDE_14AUG2025_EUSDE_USDC_USDT_USDS = 13;
 
-  uint8 internal constant PT_EUSDE_USDE_AUGUST_2025 = 14;
+  uint8 internal constant PT_EUSDE_14AUG2025_EUSDE_USDE = 14;
 
-  uint8 internal constant EUSDE_STABLECOIN = 15;
+  uint8 internal constant EUSDE_USDC_USDT_USDS = 15;
 
   uint8 internal constant FBTC_WBTC = 16;
 
-  uint8 internal constant PT_SUSDE_STABLECOINS_SEPTEMBER_2025 = 17;
+  uint8 internal constant SUSDE_PT_SUSDE_31JUL2025_PT_SUSDE_25SEP2025_USDC_USDT_USDE_USDS_USDTB =
+    17;
 
-  uint8 internal constant PT_SUSDE_USDE_SEPTEMBER_2025 = 18;
+  uint8 internal constant PT_SUSDE_25SEP2025_USDE = 18;
 
-  uint8 internal constant PT_USDE_STABLECOINS_SEPTEMBER_2025 = 19;
+  uint8
+    internal constant USDE_PT_USDE_31JUL2025_PT_EUSDE_14AUG2025_PT_USDE_25SEP2025_USDC_USDT_USDE_USDS =
+    19;
 
-  uint8 internal constant PT_USDE_USDE_SEPTEMBER_2025 = 20;
+  uint8 internal constant USDE_PT_USDE_31JUL2025_PT_EUSDE_14AUG2025_PT_USDE_25SEP2025_USDE = 20;
 
-  uint8 internal constant TETH_STABLECOINS = 21;
+  uint8 internal constant TETH_USDC_USDT = 21;
 
   uint8 internal constant EZETH_WSTETH = 22;
 
-  uint8 internal constant EZETH_STABLECOINS = 23;
+  uint8 internal constant EZETH_USDC_USDT = 23;
 
-  uint8 internal constant PT_SUSDE_STABLECOINS_NOV_2025 = 24;
+  uint8 internal constant SUSDE_PT_SUSDE_25SEP2025_PT_SUSDE_27NOV2025_USDC_USDT_USDE_USDS_USDTB =
+    24;
 
-  uint8 internal constant PT_SUSDE_USDE_NOV_2025 = 25;
+  uint8 internal constant PT_SUSDE_25SEP2025_PT_SUSDE_27NOV2025_USDE = 25;
 
-  uint8 internal constant WEETH_WSTETH_ETH_CORRELATED = 26;
+  uint8 internal constant WEETH_WETH_WSTETH = 26;
 
-  uint8 internal constant PT_USDE_STABLECOINS_NOV_2025 = 27;
+  uint8 internal constant PT_USDE_25SEP2025_PT_USDE_27NOV2025_USDC_USDT_USDE_USDS_USDTB = 27;
 
-  uint8 internal constant PT_USDE_USDE_NOV_2025 = 28;
+  uint8 internal constant PT_USDE_25SEP2025_PT_USDE_27NOV2025_USDE = 28;
 }
 library AaveV3EthereumExternalLibraries {
   // https://etherscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
@@ -1308,9 +1312,6 @@ library AaveV3EthereumExternalLibraries {
 
   // https://etherscan.io/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
   address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
-
-  // https://etherscan.io/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
-  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
   // https://etherscan.io/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
   address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;

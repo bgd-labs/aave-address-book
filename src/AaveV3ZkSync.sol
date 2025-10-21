@@ -227,9 +227,9 @@ library AaveV3ZkSyncAssets {
 library AaveV3ZkSyncEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant ETH_CORRELATED = 1;
+  uint8 internal constant WETH_WSTETH_WETH = 1;
 
-  uint8 internal constant WEETH_CORRELATED = 2;
+  uint8 internal constant WEETH_WETH = 2;
 
   uint8 internal constant WRSETH_WSTETH = 3;
 }
@@ -239,9 +239,6 @@ library AaveV3ZkSyncExternalLibraries {
 
   // https://era.zksync.network/address/0x352007644a7BdE6834309e9881aC59427799a4a5
   address internal constant BORROW_LOGIC = 0x352007644a7BdE6834309e9881aC59427799a4a5;
-
-  // https://era.zksync.network/address/0xE74f2dDFCb29d4D7733ab7aB9Bb809aEB11ABb27
-  address internal constant E_MODE_LOGIC = 0xE74f2dDFCb29d4D7733ab7aB9Bb809aEB11ABb27;
 
   // https://era.zksync.network/address/0x592B64d9246278D734F3E6B872452663ce5FE248
   address internal constant LIQUIDATION_LOGIC = 0x592B64d9246278D734F3E6B872452663ce5FE248;

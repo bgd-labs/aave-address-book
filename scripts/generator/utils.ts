@@ -58,6 +58,7 @@ export function addressInfoToSolidityLibraryConstant(
 function keyToVar(key: string) {
   return key
     .replace(/^(\d)/, '_$1')
+    .replace(/\s*\/\s*/g, '___') // a / b
     .replace(/\+/g, 'Plus')
     .replace(/ü/g, 'ue')
     .replace(/ä/g, 'ae')

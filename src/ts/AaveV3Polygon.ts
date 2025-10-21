@@ -310,7 +310,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'Stablecoins',
+    label: 'DAI,USDC,USDT0,EURS,jEUR,EURA,miMATIC,USDCn / ',
     collateralBitmap: '1171493',
     collateralAssets: [
       '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063',
@@ -329,7 +329,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '2': {
-    label: 'MATIC correlated',
+    label: 'WPOL,stMATIC,MaticX / WPOL',
     collateralBitmap: '393344',
     collateralAssets: [
       '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
@@ -343,7 +343,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '3': {
-    label: 'ETH correlated',
+    label: 'WETH,wstETH / WETH',
     collateralBitmap: '524304',
     collateralAssets: [
       '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619',
@@ -359,7 +359,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
   BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
-  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
   LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
   POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
   SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',

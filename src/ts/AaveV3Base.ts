@@ -256,7 +256,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'ETH correlated',
+    label: 'WETH,cbETH,wstETH,weETH / WETH',
     collateralBitmap: '43',
     collateralAssets: [
       '0x4200000000000000000000000000000000000006',
@@ -271,7 +271,7 @@ export const E_MODES = {
     liquidationBonus: 10200,
   },
   '2': {
-    label: 'ezETH wstETH',
+    label: 'ezETH / wstETH',
     collateralBitmap: '128',
     collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
     borrowableBitmap: '8',
@@ -281,7 +281,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '3': {
-    label: 'ezETH Stablecoins',
+    label: 'ezETH / USDC',
     collateralBitmap: '128',
     collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
     borrowableBitmap: '16',
@@ -291,7 +291,7 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '4': {
-    label: 'LBTC_cbBTC',
+    label: 'LBTC / cbBTC',
     collateralBitmap: '1024',
     collateralAssets: ['0xecAc9C5F704e954931349Da37F60E39f515c11c1'],
     borrowableBitmap: '64',
@@ -301,7 +301,7 @@ export const E_MODES = {
     liquidationBonus: 10300,
   },
   '5': {
-    label: 'rsETH/wstETH',
+    label: 'wrsETH / wstETH',
     collateralBitmap: '512',
     collateralAssets: ['0xEDfa23602D0EC14714057867A78d01e94176BEA0'],
     borrowableBitmap: '8',
@@ -311,7 +311,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '6': {
-    label: 'rsETH/USDC',
+    label: 'wrsETH / USDC',
     collateralBitmap: '512',
     collateralAssets: ['0xEDfa23602D0EC14714057867A78d01e94176BEA0'],
     borrowableBitmap: '16',
@@ -321,7 +321,7 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '7': {
-    label: 'weETH/WETH',
+    label: 'weETH / WETH',
     collateralBitmap: '32',
     collateralAssets: ['0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A'],
     borrowableBitmap: '1',
@@ -331,7 +331,7 @@ export const E_MODES = {
     liquidationBonus: 10125,
   },
   '8': {
-    label: 'wstETH/WETH',
+    label: 'wstETH / WETH',
     collateralBitmap: '8',
     collateralAssets: ['0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'],
     borrowableBitmap: '1',
@@ -341,7 +341,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '9': {
-    label: 'cbETH/WETH',
+    label: 'cbETH / WETH',
     collateralBitmap: '2',
     collateralAssets: ['0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22'],
     borrowableBitmap: '1',
@@ -354,7 +354,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
   BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
-  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
   LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
   POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
   SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',

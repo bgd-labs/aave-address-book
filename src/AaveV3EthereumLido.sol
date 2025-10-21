@@ -284,15 +284,15 @@ library AaveV3EthereumLidoEModes {
 
   uint8 internal constant WSTETH_WETH = 1;
 
-  uint8 internal constant LRT_STABLECOINS_MAIN = 2;
+  uint8 internal constant EZETH_USDS_USDC_GHO = 2;
 
-  uint8 internal constant LRT_WSTETH_MAIN = 3;
+  uint8 internal constant EZETH_WSTETH = 3;
 
-  uint8 internal constant SUSDE_STABLECOINS = 4;
+  uint8 internal constant SUSDE_USDC_GHO = 4;
 
-  uint8 internal constant RSETH_LST_MAIN = 5;
+  uint8 internal constant RSETH_WSTETH = 5;
 
-  uint8 internal constant RSETH_STABLECOINS = 6;
+  uint8 internal constant RSETH_USDS_USDC_GHO = 6;
 
   uint8 internal constant TETH_WSTETH = 7;
 }
@@ -302,9 +302,6 @@ library AaveV3EthereumLidoExternalLibraries {
 
   // https://etherscan.io/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
   address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
-
-  // https://etherscan.io/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
-  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
   // https://etherscan.io/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
   address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;

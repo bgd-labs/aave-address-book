@@ -431,17 +431,17 @@ library AaveV3BaseAssets {
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant ETH_CORRELATED = 1;
+  uint8 internal constant WETH_CBETH_WSTETH_WEETH_WETH = 1;
 
   uint8 internal constant EZETH_WSTETH = 2;
 
-  uint8 internal constant EZETH_STABLECOINS = 3;
+  uint8 internal constant EZETH_USDC = 3;
 
   uint8 internal constant LBTC_CBBTC = 4;
 
-  uint8 internal constant RSETH_WSTETH = 5;
+  uint8 internal constant WRSETH_WSTETH = 5;
 
-  uint8 internal constant RSETH_USDC = 6;
+  uint8 internal constant WRSETH_USDC = 6;
 
   uint8 internal constant WEETH_WETH = 7;
 
@@ -455,9 +455,6 @@ library AaveV3BaseExternalLibraries {
 
   // https://basescan.org/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
   address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
-
-  // https://basescan.org/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
-  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
   // https://basescan.org/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
   address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
