@@ -44,4 +44,7 @@ library MiscPolygon {
 
   // https://polygonscan.com/address/0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6
   address internal constant APE_VOTING_SAFE = 0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6;
+
+  // https://polygonscan.com/address/0xF18F15362e5fB4277DCE713F170341942F43aC3E
+  address internal constant REWARD_STEWARD = 0xF18F15362e5fB4277DCE713F170341942F43aC3E;
 }
