@@ -242,5 +242,53 @@ exports[`verification > should have all contracts verified except for the known 
       "value": "0xa047fdFb3420A27a5f926735b475fE5a1E968786",
     },
   },
+  {
+    "item": {
+      "chainId": 9745,
+      "path": [
+        "AaveV3Plasma",
+        "ASSETS",
+        "PT_USDe_15JAN2026",
+        "A_TOKEN",
+      ],
+      "value": "0xEa601A9FECF80bFC529F08A51bD8Cb0d72fc862A",
+    },
+  },
+  {
+    "item": {
+      "chainId": 9745,
+      "path": [
+        "AaveV3Plasma",
+        "ASSETS",
+        "PT_USDe_15JAN2026",
+        "V_TOKEN",
+      ],
+      "value": "0xD73253B18124837465b0c1fCB1A947d0542a991B",
+    },
+  },
+  {
+    "item": {
+      "chainId": 9745,
+      "path": [
+        "AaveV3Plasma",
+        "ASSETS",
+        "PT_sUSDE_15JAN2026",
+        "A_TOKEN",
+      ],
+      "value": "0x0b9A412c94f07223752031f75a20DDe542D63d5C",
+    },
+  },
+  {
+    "item": {
+      "chainId": 9745,
+      "path": [
+        "AaveV3Plasma",
+        "ASSETS",
+        "PT_sUSDE_15JAN2026",
+        "V_TOKEN",
+      ],
+      "value": "0xb2A5AD339d9687B5606b21B37F72f350e5BbC622",
+    },
+  },
 ]
 `;

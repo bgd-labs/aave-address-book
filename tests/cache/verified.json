@@ -10778,6 +10778,30 @@
     },
     "0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4": {
       "name": "GelatoAaveStewardInjectorDiscountRate"
+    },
+    "0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x30cb6ff8649Cc02cEa91971D4730EebeD5A8D2F1": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x3eca1c7836eA09DB3dc85be7B5526Ce80E2609a1": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0xe48D935e6C9e735463ccCf29a7F11e32bC09136E": {
+      "name": "BurnMintERC20"
+    },
+    "0xd6ff49B650550ce2452e0fCCa101Ab7CE206d851": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xe561FE05C39075312Aa9Bc6af79DdaE981461359": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3acFddf27b85B5f773B610c6F7e4420aeB1Df8dD": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "42161": {
