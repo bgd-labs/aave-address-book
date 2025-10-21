@@ -143,3 +143,16 @@ export const etherFiEthereumMainnetProtoV3Pool: PoolConfig = {
     DUST_BIN: '0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b',
   },
 };
+
+export const horizonEthereumMainnetProtoV3Pool: PoolConfig = {
+  name: 'EthereumHorizon',
+  chainId: ChainId.mainnet,
+  POOL_ADDRESSES_PROVIDER: '0x5D39E06b825C1F2B80bf2756a73e28eFAA128ba0',
+  additionalAddresses: {
+    POOL_ADDRESSES_PROVIDER_REGISTRY: '0xC6cAB8D39D93DC0Bd5986E7Ce5Bb956E30103A43',
+    UI_POOL_DATA_PROVIDER: '0x3f78bbd206e4d3c504eb854232eda7e47e9fd8fc',
+    UI_INCENTIVE_DATA_PROVIDER: '0xe3dff4052f0bf6134acb73beae8fe2317d71f047',
+    WALLET_BALANCE_PROVIDER: '0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2',
+    GHO_DIRECT_MINTER: '0xe10C78A3AC7f016eD2DE1A89c5479b1039EAB9eA',
+  },
+};
