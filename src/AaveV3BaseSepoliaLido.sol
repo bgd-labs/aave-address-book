@@ -167,7 +167,7 @@ library AaveV3BaseSepoliaLidoAssets {
 library AaveV3BaseSepoliaLidoEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant WETH_CBETH_WETH_CBETH = 1;
+  uint8 internal constant WETH_cbETH___WETH_cbETH = 1;
 }
 library AaveV3BaseSepoliaLidoExternalLibraries {
   // https://sepolia.basescan.org/address/0x1a746330dF84b35236A02067B67e37Cd42DF5846

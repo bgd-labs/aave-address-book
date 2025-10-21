@@ -315,11 +315,11 @@ library AaveV3GnosisAssets {
 library AaveV3GnosisEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant WETH_WSTETH_WETH = 1;
+  uint8 internal constant WETH_wstETH___WETH = 1;
 
-  uint8 internal constant SDAI_EURE = 2;
+  uint8 internal constant sDAI___EURe = 2;
 
-  uint8 internal constant SDAI_USDCE = 3;
+  uint8 internal constant sDAI___USDCe = 3;
 }
 library AaveV3GnosisExternalLibraries {
   // https://gnosisscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

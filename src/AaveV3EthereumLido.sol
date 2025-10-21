@@ -282,19 +282,19 @@ library AaveV3EthereumLidoAssets {
 library AaveV3EthereumLidoEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant WSTETH_WETH = 1;
+  uint8 internal constant wstETH___WETH = 1;
 
-  uint8 internal constant EZETH_USDS_USDC_GHO = 2;
+  uint8 internal constant ezETH___USDS_USDC_GHO = 2;
 
-  uint8 internal constant EZETH_WSTETH = 3;
+  uint8 internal constant ezETH___wstETH = 3;
 
-  uint8 internal constant SUSDE_USDC_GHO = 4;
+  uint8 internal constant sUSDe___USDC_GHO = 4;
 
-  uint8 internal constant RSETH_WSTETH = 5;
+  uint8 internal constant rsETH___wstETH = 5;
 
-  uint8 internal constant RSETH_USDS_USDC_GHO = 6;
+  uint8 internal constant rsETH___USDS_USDC_GHO = 6;
 
-  uint8 internal constant TETH_WSTETH = 7;
+  uint8 internal constant tETH___wstETH = 7;
 }
 library AaveV3EthereumLidoExternalLibraries {
   // https://etherscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

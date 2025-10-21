@@ -572,19 +572,19 @@ library AaveV3ArbitrumAssets {
 library AaveV3ArbitrumEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant DAI_USDC_USDT_EURS_USDCN_ = 1;
+  uint8 internal constant DAI_USDC_USDT_EURS_USDCn___ = 1;
 
-  uint8 internal constant WETH_WSTETH_WEETH_WETH = 2;
+  uint8 internal constant WETH_wstETH_weETH___WETH = 2;
 
-  uint8 internal constant EZETH_WETH_WSTETH = 3;
+  uint8 internal constant ezETH___WETH_wstETH = 3;
 
-  uint8 internal constant EZETH_USDT_USDCN = 4;
+  uint8 internal constant ezETH___USDT_USDCn = 4;
 
-  uint8 internal constant RSETH_WETH_WSTETH = 5;
+  uint8 internal constant rsETH___WETH_wstETH = 5;
 
-  uint8 internal constant RSETH_USDC_USDT = 6;
+  uint8 internal constant rsETH___USDC_USDT = 6;
 
-  uint8 internal constant WSTETH_WETH = 7;
+  uint8 internal constant wstETH___WETH = 7;
 }
 library AaveV3ArbitrumExternalLibraries {
   // https://arbiscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

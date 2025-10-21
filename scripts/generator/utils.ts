@@ -55,7 +55,7 @@ export function addressInfoToSolidityLibraryConstant(
   )};\n`;
 }
 
-function keyToVar(key: string) {
+export function keyToVar(key: string) {
   return key
     .replace(/^(\d)/, '_$1')
     .replace(/\s*\/\s*/g, '___') // a / b

@@ -431,23 +431,23 @@ library AaveV3BaseAssets {
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant WETH_CBETH_WSTETH_WEETH_WETH = 1;
+  uint8 internal constant WETH_cbETH_wstETH_weETH___WETH = 1;
 
-  uint8 internal constant EZETH_WSTETH = 2;
+  uint8 internal constant ezETH___wstETH = 2;
 
-  uint8 internal constant EZETH_USDC = 3;
+  uint8 internal constant ezETH___USDC = 3;
 
-  uint8 internal constant LBTC_CBBTC = 4;
+  uint8 internal constant LBTC___cbBTC = 4;
 
-  uint8 internal constant WRSETH_WSTETH = 5;
+  uint8 internal constant wrsETH___wstETH = 5;
 
-  uint8 internal constant WRSETH_USDC = 6;
+  uint8 internal constant wrsETH___USDC = 6;
 
-  uint8 internal constant WEETH_WETH = 7;
+  uint8 internal constant weETH___WETH = 7;
 
-  uint8 internal constant WSTETH_WETH = 8;
+  uint8 internal constant wstETH___WETH = 8;
 
-  uint8 internal constant CBETH_WETH = 9;
+  uint8 internal constant cbETH___WETH = 9;
 }
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

@@ -449,9 +449,9 @@ library AaveV3OptimismAssets {
 library AaveV3OptimismEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant DAI_USDC_USDT_SUSD_USDCN_ = 1;
+  uint8 internal constant DAI_USDC_USDT_sUSD_USDCn___ = 1;
 
-  uint8 internal constant WETH_WSTETH_RETH_WETH = 2;
+  uint8 internal constant WETH_wstETH_rETH___WETH = 2;
 }
 library AaveV3OptimismExternalLibraries {
   // https://optimistic.etherscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
