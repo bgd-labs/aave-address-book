@@ -27,6 +27,7 @@ export const ethereumAddresses: NetworkAddresses<{
   AHAB_INCENTIVES_SAFE: Hex;
   AFC_CEX_EARN_SAFE: Hex;
   AFC_CEX_EARN_INCENTIVE_SAFE: Hex;
+  REWARD_STEWARD: Hex;
 }> = {
   name: 'Ethereum',
   chainId: ChainId.mainnet,
@@ -64,6 +65,7 @@ export const ethereumAddresses: NetworkAddresses<{
     AHAB_INCENTIVES_SAFE: '0xAAd742dd9111373ec3C1E53b005e870d4CfF3be2',
     AFC_CEX_EARN_SAFE: '0xAA12BAd4a501d45A5b771e49C2Fd415BA8BFc79d',
     AFC_CEX_EARN_INCENTIVE_SAFE: '0xaa7A1910BA79B6A2E385ebA26185aA2dCB9B8eAd',
+    REWARD_STEWARD: '0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB',
   },
 };
 

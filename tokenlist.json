@@ -8977,6 +8977,50 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0xe48D935e6C9e735463ccCf29a7F11e32bC09136E",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wsteth.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0x140Bc58975DFba4D30fE65c4F6262a6c314683cf",
+      "name": "Aave Plasma wstETH",
+      "decimals": 18,
+      "symbol": "aPlawstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awsteth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xe48D935e6C9e735463ccCf29a7F11e32bC09136E"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xe561FE05C39075312Aa9Bc6af79DdaE981461359",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0x41c7aCCC0fB97470bFB48014bad52E0d99447E79",
+      "name": "Aave Plasma wrsETH",
+      "decimals": 18,
+      "symbol": "aPlawrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xe561FE05C39075312Aa9Bc6af79DdaE981461359"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -9029,6 +9073,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 138 },
-  "timestamp": "2025-10-20T12:31:59.573Z"
+  "version": { "major": 3, "minor": 0, "patch": 139 },
+  "timestamp": "2025-10-21T05:58:46.769Z"
 }

@@ -96,4 +96,7 @@ library MiscEthereum {
   // https://etherscan.io/address/0xaa7A1910BA79B6A2E385ebA26185aA2dCB9B8eAd
   address internal constant AFC_CEX_EARN_INCENTIVE_SAFE =
     0xaa7A1910BA79B6A2E385ebA26185aA2dCB9B8eAd;
+
+  // https://etherscan.io/address/0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB
+  address internal constant REWARD_STEWARD = 0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB;
 }

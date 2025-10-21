@@ -56,4 +56,7 @@ library MiscOptimism {
 
   // https://optimistic.etherscan.io/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
   address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
+
+  // https://optimistic.etherscan.io/address/0xfD2aaE32247E5015AcB04Aa8220616D6647979aC
+  address internal constant REWARD_STEWARD = 0xfD2aaE32247E5015AcB04Aa8220616D6647979aC;
 }
