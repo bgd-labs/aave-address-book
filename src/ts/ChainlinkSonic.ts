@@ -51,9 +51,6 @@ export const wstkscBTC_stkscBTC_Exchange_Rate = '0xdA49fdf6a5606Ca7FF180a9B71928
 // https://sonicscan.org/address/0x21f037F67946A199b1DBF1Cb7DFa21bFde477196
 export const xSolvBTC_SolvBTC_Exchange_Rate = '0x21f037F67946A199b1DBF1Cb7DFa21bFde477196';
 
-// https://sonicscan.org/address/0xf0766006e9032295995D60254a5BB035aAF8b88C
-export const YETH_ETH_Exchange_Rate = '0xf0766006e9032295995D60254a5BB035aAF8b88C';
-
 // https://sonicscan.org/address/0x824364077993847f71293B24ccA8567c00c2de11
 export const ETH_USD = '0x824364077993847f71293B24ccA8567c00c2de11';
 
@@ -100,9 +97,6 @@ export const wstkscETH_stkscETH_Exchange_Rate = '0x356637474C2124cdD46d8c5fFA173
 
 // https://sonicscan.org/address/0xA1d23D3FE32Ef45774D0f2170a7BEf21da09566b
 export const Real_GDP_Level = '0xA1d23D3FE32Ef45774D0f2170a7BEf21da09566b';
-
-// https://sonicscan.org/address/0xA8bed2F8cddD243D894fa629bf1F845A7100ecc8
-export const YBTC_BTC_Exchange_Rate = '0xA8bed2F8cddD243D894fa629bf1F845A7100ecc8';
 
 // https://sonicscan.org/address/0xdB17996a889706Bd67771dEa59E0Bf9453aF0CE4
 export const stS_USD = '0xdB17996a889706Bd67771dEa59E0Bf9453aF0CE4';

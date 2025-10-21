@@ -106,9 +106,6 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0x12Af94c3716bbf339Aa26BfD927DDdE63B27D50C
   address internal constant FXS_USD = 0x12Af94c3716bbf339Aa26BfD927DDdE63B27D50C;
 
-  // https://snowscan.xyz/address/0xFA38289Fe9f043aD8CCD8e81b28C1D02666D51b6
-  address internal constant WRSETH_ETH_Exchange_Rate = 0xFA38289Fe9f043aD8CCD8e81b28C1D02666D51b6;
-
   // https://snowscan.xyz/address/0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a
   address internal constant JOE_USD = 0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a;
 

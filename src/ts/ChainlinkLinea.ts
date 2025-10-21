@@ -27,9 +27,6 @@ export const agETH_ETH_Exchange_Rate = '0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7
 export const PCE_Price_Index_Percent_Change_Annual_Rate =
   '0xe5aCa1a31aD6fC61E30Ab8E4a19a9445884A1EDE';
 
-// https://lineascan.build/address/0x9ECEa805F9DbeeFE8EdB7e3ee08995fF65828d7a
-export const USD1_USD = '0x9ECEa805F9DbeeFE8EdB7e3ee08995fF65828d7a';
-
 // https://lineascan.build/address/0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156
 export const osETH_ETH_Exchange_Rate = '0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156';
 
@@ -76,9 +73,6 @@ export const wrsETH_ETH_Exchange_Rate = '0xEEDF0B095B5dfe75F3881Cb26c19DA209A274
 
 // https://lineascan.build/address/0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5
 export const USDC_USD = '0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5';
-
-// https://lineascan.build/address/0x452b408b3e2805C109D52C80Bd54Deda239716d1
-export const LINEA_USD = '0x452b408b3e2805C109D52C80Bd54Deda239716d1';
 
 // https://lineascan.build/address/0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9
 export const BTC_USD = '0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9';

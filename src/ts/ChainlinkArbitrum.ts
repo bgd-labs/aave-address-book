@@ -204,9 +204,6 @@ export const rswETH_ETH_Exchange_Rate = '0x683989a7A6424122678164Ad26736bA484055
 // https://arbiscan.io/address/0x594b919AD828e693B935705c3F816221729E7AE8
 export const WTI_USD = '0x594b919AD828e693B935705c3F816221729E7AE8';
 
-// https://arbiscan.io/address/0x703389807836463cff0CB01142dE903a74E509C4
-export const YETH_ETH_Exchange_Rate = '0x703389807836463cff0CB01142dE903a74E509C4';
-
 // https://arbiscan.io/address/0xf3451Fd5eddE08cDAE95A6233BaD69DE95552a61
 export const XTZ_USD = '0xf3451Fd5eddE08cDAE95A6233BaD69DE95552a61';
 
@@ -293,9 +290,6 @@ export const GRASS_USD = '0x3791D5eFF50Ab65fD82BBb16BCba42BEA556E7aA';
 
 // https://arbiscan.io/address/0x02DEd5a7EDDA750E3Eb240b54437a54d57b74dBE
 export const PEPE_USD = '0x02DEd5a7EDDA750E3Eb240b54437a54d57b74dBE';
-
-// https://arbiscan.io/address/0x726a96F31846f586E6a4C72F73c3dB671986a002
-export const YBTC_BTC_Exchange_Rate = '0x726a96F31846f586E6a4C72F73c3dB671986a002';
 
 // https://arbiscan.io/address/0x84e8237CC1418Ea1B4A1e0C3e7F48c3A5fbC81AF
 export const AXL_USD = '0x84e8237CC1418Ea1B4A1e0C3e7F48c3A5fbC81AF';
@@ -700,5 +694,8 @@ export const GAS_USD = '0xCF7a7A1Fb746E926Bbe5C88a702a89167a94C51C';
 
 // https://arbiscan.io/address/0x1bD872f3A606471787B1a304cE0356e4e87Af930
 export const frxETH_ETH_Exchange_Rate_Low = '0x1bD872f3A606471787B1a304cE0356e4e87Af930';
+
+// https://arbiscan.io/address/0x7Fa028B87e73deb66DcFf9Fa40f4C7C6Dd2Fd254
+export const USDV_USD = '0x7Fa028B87e73deb66DcFf9Fa40f4C7C6Dd2Fd254';
 
 export const CHAIN_ID = 42161;

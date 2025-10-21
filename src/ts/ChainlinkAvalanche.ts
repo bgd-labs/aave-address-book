@@ -99,9 +99,6 @@ export const FRAX_USD = '0xbBa56eF1565354217a3353a466edB82E8F25b08e';
 // https://snowscan.xyz/address/0x12Af94c3716bbf339Aa26BfD927DDdE63B27D50C
 export const FXS_USD = '0x12Af94c3716bbf339Aa26BfD927DDdE63B27D50C';
 
-// https://snowscan.xyz/address/0xFA38289Fe9f043aD8CCD8e81b28C1D02666D51b6
-export const WRSETH_ETH_Exchange_Rate = '0xFA38289Fe9f043aD8CCD8e81b28C1D02666D51b6';
-
 // https://snowscan.xyz/address/0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a
 export const JOE_USD = '0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a';
 
