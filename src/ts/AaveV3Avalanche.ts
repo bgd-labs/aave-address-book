@@ -268,7 +268,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'Stablecoins',
+    label: 'DAIe,USDC,USDt,FRAX,MAI / ',
     collateralBitmap: '1573',
     collateralAssets: [
       '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
@@ -284,7 +284,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '2': {
-    label: 'AVAX correlated',
+    label: 'WAVAX,sAVAX / WAVAX',
     collateralBitmap: '384',
     collateralAssets: [
       '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
@@ -300,7 +300,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
   BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
-  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
   LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
   POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
   SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',

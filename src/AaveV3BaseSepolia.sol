@@ -207,7 +207,7 @@ library AaveV3BaseSepoliaAssets {
 library AaveV3BaseSepoliaEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant ETH_CORRELATED = 1;
+  uint8 internal constant WETH_cbETH__WETH_cbETH = 1;
 }
 library AaveV3BaseSepoliaExternalLibraries {
   // https://sepolia.basescan.org/address/0x1a746330dF84b35236A02067B67e37Cd42DF5846
@@ -215,9 +215,6 @@ library AaveV3BaseSepoliaExternalLibraries {
 
   // https://sepolia.basescan.org/address/0x17870d152c64C113c7F517fc8955fe9a16D2aa0C
   address internal constant BORROW_LOGIC = 0x17870d152c64C113c7F517fc8955fe9a16D2aa0C;
-
-  // https://sepolia.basescan.org/address/0xa4eec8f03cA7D127f8351087286BbCe895Cb2f06
-  address internal constant E_MODE_LOGIC = 0xa4eec8f03cA7D127f8351087286BbCe895Cb2f06;
 
   // https://sepolia.basescan.org/address/0xFB2e565d25Ee062bF4AA490D1cA72ec71F0DAE8E
   address internal constant LIQUIDATION_LOGIC = 0xFB2e565d25Ee062bF4AA490D1cA72ec71F0DAE8E;

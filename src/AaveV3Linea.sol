@@ -243,13 +243,13 @@ library AaveV3LineaAssets {
 library AaveV3LineaEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant WSTETH_CORRELATED = 1;
+  uint8 internal constant wstETH__WETH = 1;
 
-  uint8 internal constant EZETH_CORRELATED = 2;
+  uint8 internal constant ezETH__WETH = 2;
 
-  uint8 internal constant WEETH_CORRELATED = 3;
+  uint8 internal constant weETH__WETH = 3;
 
-  uint8 internal constant WRSETH_WETH_ISOLATED_LIQUID_E_MODE = 4;
+  uint8 internal constant wrsETH__WETH = 4;
 }
 library AaveV3LineaExternalLibraries {
   // https://lineascan.build/address/0xb5656eCAE657A1bF5f7F5CD06363090A4D2c68e3
@@ -257,9 +257,6 @@ library AaveV3LineaExternalLibraries {
 
   // https://lineascan.build/address/0x46464bCF5BBa29834b57E6c7631fEfb966F427A2
   address internal constant BORROW_LOGIC = 0x46464bCF5BBa29834b57E6c7631fEfb966F427A2;
-
-  // https://lineascan.build/address/0x9D147ED046EA1c629B6e66b0504E45019B133aa4
-  address internal constant E_MODE_LOGIC = 0x9D147ED046EA1c629B6e66b0504E45019B133aa4;
 
   // https://lineascan.build/address/0x22B38029a2B034340B695C6144B3AfD678e109E3
   address internal constant LIQUIDATION_LOGIC = 0x22B38029a2B034340B695C6144B3AfD678e109E3;

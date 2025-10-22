@@ -160,7 +160,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'wstETH correlated',
+    label: 'wstETH / WETH',
     collateralBitmap: '16',
     collateralAssets: ['0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F'],
     borrowableBitmap: '1',
@@ -170,7 +170,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '2': {
-    label: 'ezETH correlated',
+    label: 'ezETH / WETH',
     collateralBitmap: '32',
     collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
     borrowableBitmap: '1',
@@ -180,7 +180,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '3': {
-    label: 'weETH correlated',
+    label: 'weETH / WETH',
     collateralBitmap: '64',
     collateralAssets: ['0x1Bf74C010E6320bab11e2e5A532b5AC15e0b8aA6'],
     borrowableBitmap: '1',
@@ -190,7 +190,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '4': {
-    label: 'wrsETH/WETH Isolated Liquid E-mode',
+    label: 'wrsETH / WETH',
     collateralBitmap: '128',
     collateralAssets: ['0xD2671165570f41BBB3B0097893300b6EB6101E6C'],
     borrowableBitmap: '1',
@@ -203,7 +203,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0xb5656eCAE657A1bF5f7F5CD06363090A4D2c68e3',
   BORROW_LOGIC: '0x46464bCF5BBa29834b57E6c7631fEfb966F427A2',
-  E_MODE_LOGIC: '0x9D147ED046EA1c629B6e66b0504E45019B133aa4',
   LIQUIDATION_LOGIC: '0x22B38029a2B034340B695C6144B3AfD678e109E3',
   POOL_LOGIC: '0xbB6558a80Ed7811bd6d02bD26814e49c349b3acD',
   SUPPLY_LOGIC: '0x330a2C27fCE66685d87ebaE4cE9dA71D2F6D1141',
