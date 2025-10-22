@@ -550,11 +550,11 @@ library AaveV3PolygonAssets {
 library AaveV3PolygonEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant DAI_USDC_USDT0_EURS_jEUR_EURA_miMATIC_USDCn___ = 1;
+  uint8 internal constant DAI_USDC_USDT0_EURS_jEUR_EURA_miMATIC_USDCn__ = 1;
 
-  uint8 internal constant WPOL_stMATIC_MaticX___WPOL = 2;
+  uint8 internal constant WPOL_stMATIC_MaticX__WPOL = 2;
 
-  uint8 internal constant WETH_wstETH___WETH = 3;
+  uint8 internal constant WETH_wstETH__WETH = 3;
 }
 library AaveV3PolygonExternalLibraries {
   // https://polygonscan.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

@@ -4,48 +4,48 @@ pragma solidity >=0.6.0;
 
 library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0xa8CD85030b6810663DDeD48aA15330F091fb4c9b
-  address internal constant vyUSD___USD_Exchange_Rate = 0xa8CD85030b6810663DDeD48aA15330F091fb4c9b;
+  address internal constant vyUSD__USD_Exchange_Rate = 0xa8CD85030b6810663DDeD48aA15330F091fb4c9b;
 
   // https://optimistic.etherscan.io/address/0x13e3Ee699D1909E989722E753853AE30b17e08c5
-  address internal constant ETH___USD = 0x13e3Ee699D1909E989722E753853AE30b17e08c5;
+  address internal constant ETH__USD = 0x13e3Ee699D1909E989722E753853AE30b17e08c5;
 
   // https://optimistic.etherscan.io/address/0x524299Ab0987a7c4B3c8022a35669DdcdC715a10
-  address internal constant WSTETH___ETH = 0x524299Ab0987a7c4B3c8022a35669DdcdC715a10;
+  address internal constant WSTETH__ETH = 0x524299Ab0987a7c4B3c8022a35669DdcdC715a10;
 
   // https://optimistic.etherscan.io/address/0x2fF1EB7D0ceC35959F0248E9354c3248c6683D9b
-  address internal constant FLOW___USD = 0x2fF1EB7D0ceC35959F0248E9354c3248c6683D9b;
+  address internal constant FLOW__USD = 0x2fF1EB7D0ceC35959F0248E9354c3248c6683D9b;
 
   // https://optimistic.etherscan.io/address/0x5a61374950D4BFa5a3D4f2CA36FC1d23A92b6f21
-  address internal constant TBTC___USD = 0x5a61374950D4BFa5a3D4f2CA36FC1d23A92b6f21;
+  address internal constant TBTC__USD = 0x5a61374950D4BFa5a3D4f2CA36FC1d23A92b6f21;
 
   // https://optimistic.etherscan.io/address/0x05950959B6d876ae0fed1BBe5Caa2d74d8659D59
-  address internal constant sUSDe___USD = 0x05950959B6d876ae0fed1BBe5Caa2d74d8659D59;
+  address internal constant sUSDe__USD = 0x05950959B6d876ae0fed1BBe5Caa2d74d8659D59;
 
   // https://optimistic.etherscan.io/address/0x8158d24603296Ce54ba903c7D5299E3B6744b555
   address internal constant PCE_Price_Index_Percent_Change_Annual_Rate =
     0x8158d24603296Ce54ba903c7D5299E3B6744b555;
 
   // https://optimistic.etherscan.io/address/0xD702DD976Fb76Fffc2D3963D037dfDae5b04E593
-  address internal constant BTC___USD = 0xD702DD976Fb76Fffc2D3963D037dfDae5b04E593;
+  address internal constant BTC__USD = 0xD702DD976Fb76Fffc2D3963D037dfDae5b04E593;
 
   // https://optimistic.etherscan.io/address/0x94A178f2c480D14F8CdDa908D173d7a73F779cb7
   address internal constant Synthetix_Aggregator_Debt_Ratio =
     0x94A178f2c480D14F8CdDa908D173d7a73F779cb7;
 
   // https://optimistic.etherscan.io/address/0x5CC26e6798A3b05525076913840aa07b1d65eE00
-  address internal constant inETH___ETH_Exchange_Rate = 0x5CC26e6798A3b05525076913840aa07b1d65eE00;
+  address internal constant inETH__ETH_Exchange_Rate = 0x5CC26e6798A3b05525076913840aa07b1d65eE00;
 
   // https://optimistic.etherscan.io/address/0x698B585CbC4407e2D54aa898B2600B53C68958f7
-  address internal constant WSTETH___USD = 0x698B585CbC4407e2D54aa898B2600B53C68958f7;
+  address internal constant WSTETH__USD = 0x698B585CbC4407e2D54aa898B2600B53C68958f7;
 
   // https://optimistic.etherscan.io/address/0x62f42f70ba85De1086476bB6BADE926d0E0b8a4C
-  address internal constant GMX___USD = 0x62f42f70ba85De1086476bB6BADE926d0E0b8a4C;
+  address internal constant GMX__USD = 0x62f42f70ba85De1086476bB6BADE926d0E0b8a4C;
 
   // https://optimistic.etherscan.io/address/0xeEC819b2e155CC8FEae194F5129f767409e2327c
-  address internal constant UMA___USD = 0xeEC819b2e155CC8FEae194F5129f767409e2327c;
+  address internal constant UMA__USD = 0xeEC819b2e155CC8FEae194F5129f767409e2327c;
 
   // https://optimistic.etherscan.io/address/0x41878779a388585509657CE5Fb95a80050502186
-  address internal constant STETH___USD = 0x41878779a388585509657CE5Fb95a80050502186;
+  address internal constant STETH__USD = 0x41878779a388585509657CE5Fb95a80050502186;
 
   // https://optimistic.etherscan.io/address/0xc3cda94d924Eb5c1b0b64e05F01487d30dA3f235
   address
@@ -56,184 +56,183 @@ library ChainlinkOptimism {
   address internal constant Real_GDP_Level = 0xfBe83018d075bDD6AffBe85E5F1E37f0b43bf1F6;
 
   // https://optimistic.etherscan.io/address/0xc19d58652d6BfC6Db6FB3691eDA6Aa7f3379E4E9
-  address internal constant FTM___USD = 0xc19d58652d6BfC6Db6FB3691eDA6Aa7f3379E4E9;
+  address internal constant FTM__USD = 0xc19d58652d6BfC6Db6FB3691eDA6Aa7f3379E4E9;
 
   // https://optimistic.etherscan.io/address/0x7f99817d87baD03ea21E05112Ca799d715730efe
-  address internal constant SUSD___USD = 0x7f99817d87baD03ea21E05112Ca799d715730efe;
+  address internal constant SUSD__USD = 0x7f99817d87baD03ea21E05112Ca799d715730efe;
 
   // https://optimistic.etherscan.io/address/0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca
-  address internal constant ALETH___USD = 0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca;
+  address internal constant ALETH__USD = 0x0805fAA94F056C06c2a69e115Aa7633EfD3efDca;
 
   // https://optimistic.etherscan.io/address/0xee35A95c9a064491531493D8b380bC40A4CCd0Da
-  address internal constant DYDX___USD = 0xee35A95c9a064491531493D8b380bC40A4CCd0Da;
+  address internal constant DYDX__USD = 0xee35A95c9a064491531493D8b380bC40A4CCd0Da;
 
   // https://optimistic.etherscan.io/address/0x9dfc79Aaeb5bb0f96C6e9402671981CdFc424052
-  address internal constant LUSD___USD = 0x9dfc79Aaeb5bb0f96C6e9402671981CdFc424052;
+  address internal constant LUSD__USD = 0x9dfc79Aaeb5bb0f96C6e9402671981CdFc424052;
 
   // https://optimistic.etherscan.io/address/0x602eB777BE29Fbe63349A33306bD73Ff333D02bB
-  address internal constant STX___USD = 0x602eB777BE29Fbe63349A33306bD73Ff333D02bB;
+  address internal constant STX__USD = 0x602eB777BE29Fbe63349A33306bD73Ff333D02bB;
 
   // https://optimistic.etherscan.io/address/0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0
-  address internal constant MIMATIC___USD = 0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0;
+  address internal constant MIMATIC__USD = 0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0;
 
   // https://optimistic.etherscan.io/address/0x0ded608AFc23724f614B76955bbd9dFe7dDdc828
-  address internal constant MATIC___USD = 0x0ded608AFc23724f614B76955bbd9dFe7dDdc828;
+  address internal constant MATIC__USD = 0x0ded608AFc23724f614B76955bbd9dFe7dDdc828;
 
   // https://optimistic.etherscan.io/address/0x14d2d3a82AeD4019FddDfe07E8bdc485fb0d2249
-  address internal constant STETH___ETH = 0x14d2d3a82AeD4019FddDfe07E8bdc485fb0d2249;
+  address internal constant STETH__ETH = 0x14d2d3a82AeD4019FddDfe07E8bdc485fb0d2249;
 
   // https://optimistic.etherscan.io/address/0x372cc5e685115A56F14fa7e4716F1294e04c278A
-  address internal constant RUNE___USD = 0x372cc5e685115A56F14fa7e4716F1294e04c278A;
+  address internal constant RUNE__USD = 0x372cc5e685115A56F14fa7e4716F1294e04c278A;
 
   // https://optimistic.etherscan.io/address/0xBfbb4fE2fB71022DbFE0D4232c8C528bddf9c57f
-  address internal constant ZRX___USD = 0xBfbb4fE2fB71022DbFE0D4232c8C528bddf9c57f;
+  address internal constant ZRX__USD = 0xBfbb4fE2fB71022DbFE0D4232c8C528bddf9c57f;
 
   // https://optimistic.etherscan.io/address/0x0E09921cf7801A5aD47B892C8727593275625a9f
-  address internal constant TRX___USD = 0x0E09921cf7801A5aD47B892C8727593275625a9f;
+  address internal constant TRX__USD = 0x0E09921cf7801A5aD47B892C8727593275625a9f;
 
   // https://optimistic.etherscan.io/address/0x37AAFb2EE35F1250A001202C660B13c301D2130b
   address internal constant Synthetix_Aggregator_Issued_Synths =
     0x37AAFb2EE35F1250A001202C660B13c301D2130b;
 
   // https://optimistic.etherscan.io/address/0x089730f866C6D478398ce1632C7C38677c475EC1
-  address internal constant uniBTC___BTC_Exchange_Rate = 0x089730f866C6D478398ce1632C7C38677c475EC1;
+  address internal constant uniBTC__BTC_Exchange_Rate = 0x089730f866C6D478398ce1632C7C38677c475EC1;
 
   // https://optimistic.etherscan.io/address/0xD38579f7cBD14c22cF1997575eA8eF7bfe62ca2c
-  address internal constant BNB___USD = 0xD38579f7cBD14c22cF1997575eA8eF7bfe62ca2c;
+  address internal constant BNB__USD = 0xD38579f7cBD14c22cF1997575eA8eF7bfe62ca2c;
 
   // https://optimistic.etherscan.io/address/0x30795BeACc0f43920EF1288dB6676B5e205AE288
-  address internal constant ORDI___USD = 0x30795BeACc0f43920EF1288dB6676B5e205AE288;
+  address internal constant ORDI__USD = 0x30795BeACc0f43920EF1288dB6676B5e205AE288;
 
   // https://optimistic.etherscan.io/address/0x5535e67d8f99c8ebe961E1Fc1F6DDAE96FEC82C9
-  address internal constant INR___USD = 0x5535e67d8f99c8ebe961E1Fc1F6DDAE96FEC82C9;
+  address internal constant INR__USD = 0x5535e67d8f99c8ebe961E1Fc1F6DDAE96FEC82C9;
 
   // https://optimistic.etherscan.io/address/0xBf5384854988939729E8B76b8AeCe7d8D930F9f3
-  address internal constant ALGO___USD = 0xBf5384854988939729E8B76b8AeCe7d8D930F9f3;
+  address internal constant ALGO__USD = 0xBf5384854988939729E8B76b8AeCe7d8D930F9f3;
 
   // https://optimistic.etherscan.io/address/0xA369969F522Fda5Ce1D3823d07A393C27b74f723
   address internal constant Real_GDP_Percent_Change_Annual_Rate =
     0xA369969F522Fda5Ce1D3823d07A393C27b74f723;
 
   // https://optimistic.etherscan.io/address/0x59F075967F0abB7E9FA623CbaAb7560704D67D15
-  address internal constant ANON___USD = 0x59F075967F0abB7E9FA623CbaAb7560704D67D15;
+  address internal constant ANON__USD = 0x59F075967F0abB7E9FA623CbaAb7560704D67D15;
 
   // https://optimistic.etherscan.io/address/0x90da1D1DB26c0A84164Ff03090e0B31Ad08A137A
-  address internal constant rswETH___ETH_Exchange_Rate = 0x90da1D1DB26c0A84164Ff03090e0B31Ad08A137A;
+  address internal constant rswETH__ETH_Exchange_Rate = 0x90da1D1DB26c0A84164Ff03090e0B31Ad08A137A;
 
   // https://optimistic.etherscan.io/address/0x48f2EcF0Bd180239AEF474a9da945F2e2d41daA3
-  address internal constant APT___USD = 0x48f2EcF0Bd180239AEF474a9da945F2e2d41daA3;
+  address internal constant APT__USD = 0x48f2EcF0Bd180239AEF474a9da945F2e2d41daA3;
 
   // https://optimistic.etherscan.io/address/0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120
-  address internal constant VELO___USD = 0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120;
+  address internal constant VELO__USD = 0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120;
 
   // https://optimistic.etherscan.io/address/0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F
-  address internal constant APE___USD = 0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F;
+  address internal constant APE__USD = 0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F;
 
   // https://optimistic.etherscan.io/address/0x34E0E85CeEc6be6146c4f0115769a29a9539222e
-  address internal constant FLOKI___USD = 0x34E0E85CeEc6be6146c4f0115769a29a9539222e;
+  address internal constant FLOKI__USD = 0x34E0E85CeEc6be6146c4f0115769a29a9539222e;
 
   // https://optimistic.etherscan.io/address/0x4Fe3caF5752AD3EEE3BfC0Bb4D07069E569bc66C
-  address internal constant ETHx___ETH = 0x4Fe3caF5752AD3EEE3BfC0Bb4D07069E569bc66C;
+  address internal constant ETHx__ETH = 0x4Fe3caF5752AD3EEE3BfC0Bb4D07069E569bc66C;
 
   // https://optimistic.etherscan.io/address/0x73b8BE3b653c5896BC34fC87cEBC8AcF4Fb7A545
   address internal constant wrsETH_ETH_Exchange_Rate = 0x73b8BE3b653c5896BC34fC87cEBC8AcF4Fb7A545;
 
   // https://optimistic.etherscan.io/address/0xaE2f8ca8d89c3E4521B918D9D5F5bB30e937d68a
-  address internal constant ANKR___USD = 0xaE2f8ca8d89c3E4521B918D9D5F5bB30e937d68a;
+  address internal constant ANKR__USD = 0xaE2f8ca8d89c3E4521B918D9D5F5bB30e937d68a;
 
   // https://optimistic.etherscan.io/address/0xfa042d5F474d7A39454C594CCfE014Ea011495f2
-  address internal constant GRT___USD = 0xfa042d5F474d7A39454C594CCfE014Ea011495f2;
+  address internal constant GRT__USD = 0xfa042d5F474d7A39454C594CCfE014Ea011495f2;
 
   // https://optimistic.etherscan.io/address/0x30D9d31C1ac29Bc2c2c312c1bCa9F8b3D60e2376
-  address internal constant BAL___USD = 0x30D9d31C1ac29Bc2c2c312c1bCa9F8b3D60e2376;
+  address internal constant BAL__USD = 0x30D9d31C1ac29Bc2c2c312c1bCa9F8b3D60e2376;
 
   // https://optimistic.etherscan.io/address/0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3
-  address internal constant MKR___USD = 0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3;
+  address internal constant MKR__USD = 0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3;
 
   // https://optimistic.etherscan.io/address/0x30F6ffb911ac7B9aDF471f28366ce1826C05776e
-  address internal constant USD1___USD = 0x30F6ffb911ac7B9aDF471f28366ce1826C05776e;
+  address internal constant USD1__USD = 0x30F6ffb911ac7B9aDF471f28366ce1826C05776e;
 
   // https://optimistic.etherscan.io/address/0x0D276FC14719f9292D5C1eA2198673d1f4269246
-  address internal constant OP___USD = 0x0D276FC14719f9292D5C1eA2198673d1f4269246;
+  address internal constant OP__USD = 0x0D276FC14719f9292D5C1eA2198673d1f4269246;
 
   // https://optimistic.etherscan.io/address/0x70843CE8E54d2b87Ee02B1911c06EA5632cd07d3
-  address internal constant wOETH___OETH_Exchange_Rate = 0x70843CE8E54d2b87Ee02B1911c06EA5632cd07d3;
+  address internal constant wOETH__OETH_Exchange_Rate = 0x70843CE8E54d2b87Ee02B1911c06EA5632cd07d3;
 
   // https://optimistic.etherscan.io/address/0xFAD40C0e2BeF93c6a822015863045CAAeAAde4d3
-  address internal constant ezETH___ETH_Exchange_Rate = 0xFAD40C0e2BeF93c6a822015863045CAAeAAde4d3;
+  address internal constant ezETH__ETH_Exchange_Rate = 0xFAD40C0e2BeF93c6a822015863045CAAeAAde4d3;
 
   // https://optimistic.etherscan.io/address/0x46C627150f7993CB71F12E158478546F5Fe060FF
-  address internal constant yUSD___USD_Exchange_Rate = 0x46C627150f7993CB71F12E158478546F5Fe060FF;
+  address internal constant yUSD__USD_Exchange_Rate = 0x46C627150f7993CB71F12E158478546F5Fe060FF;
 
   // https://optimistic.etherscan.io/address/0x799A346e7dBfa0f66Ad0961259366F93A1ee34C4
-  address internal constant XLM___USD = 0x799A346e7dBfa0f66Ad0961259366F93A1ee34C4;
+  address internal constant XLM__USD = 0x799A346e7dBfa0f66Ad0961259366F93A1ee34C4;
 
   // https://optimistic.etherscan.io/address/0xd2AdD08d9Cd83720c9296A991ce066BB08265eAc
-  address internal constant sfrxETH___frxETH_Exchange_Rate =
+  address internal constant sfrxETH__frxETH_Exchange_Rate =
     0xd2AdD08d9Cd83720c9296A991ce066BB08265eAc;
 
   // https://optimistic.etherscan.io/address/0x6C7f319E76456749Ee291EdB8bD0027e5E5d3298
-  address internal constant Virtune_Bitcoin_Prime_ETP___Proof_of_Reserves =
+  address internal constant Virtune_Bitcoin_Prime_ETP__Proof_of_Reserves =
     0x6C7f319E76456749Ee291EdB8bD0027e5E5d3298;
 
   // https://optimistic.etherscan.io/address/0xb7B9A39CC63f856b90B364911CC324dC46aC1770
-  address internal constant ETC___USD = 0xb7B9A39CC63f856b90B364911CC324dC46aC1770;
+  address internal constant ETC__USD = 0xb7B9A39CC63f856b90B364911CC324dC46aC1770;
 
   // https://optimistic.etherscan.io/address/0x5eb9F7baCd59C886fBD9aa2C0a891223482a1ed4
-  address internal constant JUP___USD = 0x5eb9F7baCd59C886fBD9aa2C0a891223482a1ed4;
+  address internal constant JUP__USD = 0x5eb9F7baCd59C886fBD9aa2C0a891223482a1ed4;
 
   // https://optimistic.etherscan.io/address/0x371EAD81c9102C9BF4874A9075FFFf170F2Ee389
   address internal constant L2_Sequencer_Uptime_Status_Feed =
     0x371EAD81c9102C9BF4874A9075FFFf170F2Ee389;
 
   // https://optimistic.etherscan.io/address/0x2FCF37343e916eAEd1f1DdaaF84458a359b53877
-  address internal constant SNX___USD = 0x2FCF37343e916eAEd1f1DdaaF84458a359b53877;
+  address internal constant SNX__USD = 0x2FCF37343e916eAEd1f1DdaaF84458a359b53877;
 
   // https://optimistic.etherscan.io/address/0x4D4f9BF097DfE85C513E29D770e7CaceD9C07801
-  address internal constant ynETH___ETH_Exchange_Rate = 0x4D4f9BF097DfE85C513E29D770e7CaceD9C07801;
+  address internal constant ynETH__ETH_Exchange_Rate = 0x4D4f9BF097DfE85C513E29D770e7CaceD9C07801;
 
   // https://optimistic.etherscan.io/address/0x26Fce884555FAe5F0E4701cc976FE8D8bB111A38
-  address internal constant IMX___USD = 0x26Fce884555FAe5F0E4701cc976FE8D8bB111A38;
+  address internal constant IMX__USD = 0x26Fce884555FAe5F0E4701cc976FE8D8bB111A38;
 
   // https://optimistic.etherscan.io/address/0xCc232dcFAAE6354cE191Bd574108c1aD03f86450
-  address internal constant LINK___USD = 0xCc232dcFAAE6354cE191Bd574108c1aD03f86450;
+  address internal constant LINK__USD = 0xCc232dcFAAE6354cE191Bd574108c1aD03f86450;
 
   // https://optimistic.etherscan.io/address/0xAE33e077a02071E62d342E449Afd9895b016d541
-  address internal constant SAND___USD = 0xAE33e077a02071E62d342E449Afd9895b016d541;
+  address internal constant SAND__USD = 0xAE33e077a02071E62d342E449Afd9895b016d541;
 
   // https://optimistic.etherscan.io/address/0xD7bC56BBF8D555936cb5121f38d1d362c586776A
-  address internal constant TIA___USD = 0xD7bC56BBF8D555936cb5121f38d1d362c586776A;
+  address internal constant TIA__USD = 0xD7bC56BBF8D555936cb5121f38d1d362c586776A;
 
   // https://optimistic.etherscan.io/address/0x75c3bF05EeF2c1966D6d5890Def3DbE640627642
-  address internal constant WIF___USD = 0x75c3bF05EeF2c1966D6d5890Def3DbE640627642;
+  address internal constant WIF__USD = 0x75c3bF05EeF2c1966D6d5890Def3DbE640627642;
 
   // https://optimistic.etherscan.io/address/0x028F7347Df25220DA7D63eB7c29fa10448231489
-  address internal constant instETH___ETH_Exchange_Rate =
-    0x028F7347Df25220DA7D63eB7c29fa10448231489;
+  address internal constant instETH__ETH_Exchange_Rate = 0x028F7347Df25220DA7D63eB7c29fa10448231489;
 
   // https://optimistic.etherscan.io/address/0x8281Af165B4380c7aa2445F1c93C150EaD336022
-  address internal constant USR___USD = 0x8281Af165B4380c7aa2445F1c93C150EaD336022;
+  address internal constant USR__USD = 0x8281Af165B4380c7aa2445F1c93C150EaD336022;
 
   // https://optimistic.etherscan.io/address/0x138b809B8472fF09Cd3E075E6EcbB2e42D41d870
-  address internal constant CBETH___ETH = 0x138b809B8472fF09Cd3E075E6EcbB2e42D41d870;
+  address internal constant CBETH__ETH = 0x138b809B8472fF09Cd3E075E6EcbB2e42D41d870;
 
   // https://optimistic.etherscan.io/address/0x8E8E6C8c4942e4963C682fF54A0d058458393DCC
-  address internal constant EOS___USD = 0x8E8E6C8c4942e4963C682fF54A0d058458393DCC;
+  address internal constant EOS__USD = 0x8E8E6C8c4942e4963C682fF54A0d058458393DCC;
 
   // https://optimistic.etherscan.io/address/0x718A5788b89454aAE3A028AE9c111A29Be6c2a6F
-  address internal constant WBTC___USD = 0x718A5788b89454aAE3A028AE9c111A29Be6c2a6F;
+  address internal constant WBTC__USD = 0x718A5788b89454aAE3A028AE9c111A29Be6c2a6F;
 
   // https://optimistic.etherscan.io/address/0x7CFB4fac1a2FDB1267F8bc17FADc12804AC13CFE
-  address internal constant ONE___USD = 0x7CFB4fac1a2FDB1267F8bc17FADc12804AC13CFE;
+  address internal constant ONE__USD = 0x7CFB4fac1a2FDB1267F8bc17FADc12804AC13CFE;
 
   // https://optimistic.etherscan.io/address/0x39be70E93D2D285C9E71be7f70FC5a45A7777B14
-  address internal constant AUD___USD = 0x39be70E93D2D285C9E71be7f70FC5a45A7777B14;
+  address internal constant AUD__USD = 0x39be70E93D2D285C9E71be7f70FC5a45A7777B14;
 
   // https://optimistic.etherscan.io/address/0x5cdC797acCBf57EE2363Fed9701262Abc87a232e
-  address internal constant YFI___USD = 0x5cdC797acCBf57EE2363Fed9701262Abc87a232e;
+  address internal constant YFI__USD = 0x5cdC797acCBf57EE2363Fed9701262Abc87a232e;
 
   // https://optimistic.etherscan.io/address/0x0cD83cC474e69E611d240f0d35D5794361F5e5C2
-  address internal constant ENJ___USD = 0x0cD83cC474e69E611d240f0d35D5794361F5e5C2;
+  address internal constant ENJ__USD = 0x0cD83cC474e69E611d240f0d35D5794361F5e5C2;
 
   // https://optimistic.etherscan.io/address/0xe59EBa0D492cA53C6f46015EEa00517F2707dc77
   address internal constant wstETH_stETH_Exchange_Rate = 0xe59EBa0D492cA53C6f46015EEa00517F2707dc77;
@@ -243,266 +242,264 @@ library ChainlinkOptimism {
     0xE036C2B215B2533BCE1c9D0436728cE8ABE5665D;
 
   // https://optimistic.etherscan.io/address/0x4C92f5b4f8AE43D5DB11f4b87e6D9156e064F4F0
-  address internal constant Virtune_Polygon_ETP___Proof_of_Reserves =
+  address internal constant Virtune_Polygon_ETP__Proof_of_Reserves =
     0x4C92f5b4f8AE43D5DB11f4b87e6D9156e064F4F0;
 
   // https://optimistic.etherscan.io/address/0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a
-  address internal constant USDe___USD = 0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a;
+  address internal constant USDe__USD = 0xEEDF0B095B5dfe75F3881Cb26c19DA209A27463a;
 
   // https://optimistic.etherscan.io/address/0xeA2aeD0087A620995Bf609D1bCD76Ea099905138
-  address internal constant XTZ___USD = 0xeA2aeD0087A620995Bf609D1bCD76Ea099905138;
+  address internal constant XTZ__USD = 0xeA2aeD0087A620995Bf609D1bCD76Ea099905138;
 
   // https://optimistic.etherscan.io/address/0x90CC16F5493894eff84a5Fedd1dcE297d174fEEf
-  address internal constant INJ___USD = 0x90CC16F5493894eff84a5Fedd1dcE297d174fEEf;
+  address internal constant INJ__USD = 0x90CC16F5493894eff84a5Fedd1dcE297d174fEEf;
 
   // https://optimistic.etherscan.io/address/0x8F7bFb42Bf7421c2b34AAD619be4654bFa7B3B8B
-  address internal constant XAU___USD = 0x8F7bFb42Bf7421c2b34AAD619be4654bFa7B3B8B;
+  address internal constant XAU__USD = 0x8F7bFb42Bf7421c2b34AAD619be4654bFa7B3B8B;
 
   // https://optimistic.etherscan.io/address/0x3E75C48A27b54dEEc3381689CfA9Ce41Ca55C050
   address internal constant PCE_Price_Index_Level = 0x3E75C48A27b54dEEc3381689CfA9Ce41Ca55C050;
 
   // https://optimistic.etherscan.io/address/0x805a61D54bb686e57F02D1EC96A1491C7aF40893
-  address internal constant AXS___USD = 0x805a61D54bb686e57F02D1EC96A1491C7aF40893;
+  address internal constant AXS__USD = 0x805a61D54bb686e57F02D1EC96A1491C7aF40893;
 
   // https://optimistic.etherscan.io/address/0x8f14546d0B960793180ee355B73fA55041a4a356
-  address internal constant ARB___USD = 0x8f14546d0B960793180ee355B73fA55041a4a356;
+  address internal constant ARB__USD = 0x8f14546d0B960793180ee355B73fA55041a4a356;
 
   // https://optimistic.etherscan.io/address/0xbD92C6c284271c227a1e0bF1786F468b539f51D9
-  address internal constant CRV___USD = 0xbD92C6c284271c227a1e0bF1786F468b539f51D9;
+  address internal constant CRV__USD = 0xbD92C6c284271c227a1e0bF1786F468b539f51D9;
 
   // https://optimistic.etherscan.io/address/0xb4479d436DDa5c1A79bD88D282725615202406E3
-  address internal constant weETH___ETH = 0xb4479d436DDa5c1A79bD88D282725615202406E3;
+  address internal constant weETH__ETH = 0xb4479d436DDa5c1A79bD88D282725615202406E3;
 
   // https://optimistic.etherscan.io/address/0x338ed6787f463394D24813b297401B9F05a8C9d1
-  address internal constant AAVE___USD = 0x338ed6787f463394D24813b297401B9F05a8C9d1;
+  address internal constant AAVE__USD = 0x338ed6787f463394D24813b297401B9F05a8C9d1;
 
   // https://optimistic.etherscan.io/address/0xEF89db2eA46B4aD4E333466B6A486b809e613F39
-  address internal constant ATOM___USD = 0xEF89db2eA46B4aD4E333466B6A486b809e613F39;
+  address internal constant ATOM__USD = 0xEF89db2eA46B4aD4E333466B6A486b809e613F39;
 
   // https://optimistic.etherscan.io/address/0xb429DE60943a8e6DeD356dca2F93Cd31201D9ed0
-  address internal constant RETH___ETH = 0xb429DE60943a8e6DeD356dca2F93Cd31201D9ed0;
+  address internal constant RETH__ETH = 0xb429DE60943a8e6DeD356dca2F93Cd31201D9ed0;
 
   // https://optimistic.etherscan.io/address/0x72155D46FD9f03AF1739637F9E7Db8A87C40A730
-  address internal constant SUSHI___USD = 0x72155D46FD9f03AF1739637F9E7Db8A87C40A730;
+  address internal constant SUSHI__USD = 0x72155D46FD9f03AF1739637F9E7Db8A87C40A730;
 
   // https://optimistic.etherscan.io/address/0x11429eE838cC01071402f21C219870cbAc0a59A0
-  address internal constant UNI___USD = 0x11429eE838cC01071402f21C219870cbAc0a59A0;
+  address internal constant UNI__USD = 0x11429eE838cC01071402f21C219870cbAc0a59A0;
 
   // https://optimistic.etherscan.io/address/0xe3Ec83f2EE37f7AF2B2711e8aF7554D01B963550
-  address internal constant wstUSR___stUSR_Exchange_Rate =
+  address internal constant wstUSR__stUSR_Exchange_Rate =
     0xe3Ec83f2EE37f7AF2B2711e8aF7554D01B963550;
 
   // https://optimistic.etherscan.io/address/0x98FB6366E71E9A71C247052d447E928303e17bB6
-  address internal constant ankrETH___ETH_Exchange_Rate =
-    0x98FB6366E71E9A71C247052d447E928303e17bB6;
+  address internal constant ankrETH__ETH_Exchange_Rate = 0x98FB6366E71E9A71C247052d447E928303e17bB6;
 
   // https://optimistic.etherscan.io/address/0xC6066533917f034Cf610c08e1fe5e9c7eADe0f54
-  address internal constant DOGE___USD = 0xC6066533917f034Cf610c08e1fe5e9c7eADe0f54;
+  address internal constant DOGE__USD = 0xC6066533917f034Cf610c08e1fe5e9c7eADe0f54;
 
   // https://optimistic.etherscan.io/address/0x64Ecf089a6594Be781908D5a26FC8fA6CB08A2C7
-  address internal constant PEPE___USD = 0x64Ecf089a6594Be781908D5a26FC8fA6CB08A2C7;
+  address internal constant PEPE__USD = 0x64Ecf089a6594Be781908D5a26FC8fA6CB08A2C7;
 
   // https://optimistic.etherscan.io/address/0x22Ba046769b584c3B05530F7c50d0E8638bd71F1
-  address internal constant POL___USD = 0x22Ba046769b584c3B05530F7c50d0E8638bd71F1;
+  address internal constant POL__USD = 0x22Ba046769b584c3B05530F7c50d0E8638bd71F1;
 
   // https://optimistic.etherscan.io/address/0xe4b9bcD7d0AA917f19019165EB89BdbbF36d2cBe
-  address internal constant ETH___BTC = 0xe4b9bcD7d0AA917f19019165EB89BdbbF36d2cBe;
+  address internal constant ETH__BTC = 0xe4b9bcD7d0AA917f19019165EB89BdbbF36d2cBe;
 
   // https://optimistic.etherscan.io/address/0x72EC6bF88effEd88290C66DCF1bE2321d80502f5
-  address internal constant weETH___eETH_Exchange_Rate = 0x72EC6bF88effEd88290C66DCF1bE2321d80502f5;
+  address internal constant weETH__eETH_Exchange_Rate = 0x72EC6bF88effEd88290C66DCF1bE2321d80502f5;
 
   // https://optimistic.etherscan.io/address/0xC663315f7aF904fbbB0F785c32046dFA03e85270
-  address internal constant SOL___USD = 0xC663315f7aF904fbbB0F785c32046dFA03e85270;
+  address internal constant SOL__USD = 0xC663315f7aF904fbbB0F785c32046dFA03e85270;
 
   // https://optimistic.etherscan.io/address/0x60025324DAB37DB3A623ea59Cc567937821EeA12
-  address internal constant OUSDT___USD = 0x60025324DAB37DB3A623ea59Cc567937821EeA12;
+  address internal constant OUSDT__USD = 0x60025324DAB37DB3A623ea59Cc567937821EeA12;
 
   // https://optimistic.etherscan.io/address/0x4e8e8F5b3d0f49e00F3DFb9CF827d1A0FBe33B21
-  address internal constant tETH___wstETH_Exchange_Rate =
-    0x4e8e8F5b3d0f49e00F3DFb9CF827d1A0FBe33B21;
+  address internal constant tETH__wstETH_Exchange_Rate = 0x4e8e8F5b3d0f49e00F3DFb9CF827d1A0FBe33B21;
 
   // https://optimistic.etherscan.io/address/0x33E047119359161288bcB143e0C15467C7151d4c
-  address internal constant BCH___USD = 0x33E047119359161288bcB143e0C15467C7151d4c;
+  address internal constant BCH__USD = 0x33E047119359161288bcB143e0C15467C7151d4c;
 
   // https://optimistic.etherscan.io/address/0xCb93226806156b03c8896bbD1cd5e4174cdb0806
-  address internal constant ynETHx___ETH_Exchange_Rate = 0xCb93226806156b03c8896bbD1cd5e4174cdb0806;
+  address internal constant ynETHx__ETH_Exchange_Rate = 0xCb93226806156b03c8896bbD1cd5e4174cdb0806;
 
   // https://optimistic.etherscan.io/address/0x9651C988e590E571b28561c05aF5598d3e73cA31
-  address internal constant Virtune_Arbitrum_ETP___Proof_of_Reserves =
+  address internal constant Virtune_Arbitrum_ETP__Proof_of_Reserves =
     0x9651C988e590E571b28561c05aF5598d3e73cA31;
 
   // https://optimistic.etherscan.io/address/0x1520874FC216f5F07E03607303Df2Fda6C3Fc203
-  address internal constant ZIL___USD = 0x1520874FC216f5F07E03607303Df2Fda6C3Fc203;
+  address internal constant ZIL__USD = 0x1520874FC216f5F07E03607303Df2Fda6C3Fc203;
 
   // https://optimistic.etherscan.io/address/0xf37c76163b2918bB4533579D449524F8542E64AD
-  address internal constant FET___USD = 0xf37c76163b2918bB4533579D449524F8542E64AD;
+  address internal constant FET__USD = 0xf37c76163b2918bB4533579D449524F8542E64AD;
 
   // https://optimistic.etherscan.io/address/0x22F3727be377781d1579B7C9222382b21c9d1a8f
   address internal constant rETH_ETH_Exchange_Rate = 0x22F3727be377781d1579B7C9222382b21c9d1a8f;
 
   // https://optimistic.etherscan.io/address/0x3626369857A10CcC6cc3A6e4f5C2f5984a519F20
-  address internal constant EUR___USD = 0x3626369857A10CcC6cc3A6e4f5C2f5984a519F20;
+  address internal constant EUR__USD = 0x3626369857A10CcC6cc3A6e4f5C2f5984a519F20;
 
   // https://optimistic.etherscan.io/address/0x58F23F80bF389DB1af9e3aA8c59679806749A8a4
-  address internal constant PENDLE___USD = 0x58F23F80bF389DB1af9e3aA8c59679806749A8a4;
+  address internal constant PENDLE__USD = 0x58F23F80bF389DB1af9e3aA8c59679806749A8a4;
 
   // https://optimistic.etherscan.io/address/0xECef79E109e997bCA29c1c0897ec9d7b03647F5E
-  address internal constant USDT___USD = 0xECef79E109e997bCA29c1c0897ec9d7b03647F5E;
+  address internal constant USDT__USD = 0xECef79E109e997bCA29c1c0897ec9d7b03647F5E;
 
   // https://optimistic.etherscan.io/address/0xADE082c91A6AeCC86fC11704a830e933e1b382eA
-  address internal constant RPL___USD = 0xADE082c91A6AeCC86fC11704a830e933e1b382eA;
+  address internal constant RPL__USD = 0xADE082c91A6AeCC86fC11704a830e933e1b382eA;
 
   // https://optimistic.etherscan.io/address/0x4e1C6B168DCFD7758bC2Ab9d2865f1895813D236
-  address internal constant WLD___USD = 0x4e1C6B168DCFD7758bC2Ab9d2865f1895813D236;
+  address internal constant WLD__USD = 0x4e1C6B168DCFD7758bC2Ab9d2865f1895813D236;
 
   // https://optimistic.etherscan.io/address/0x21515B1Da412ecdCa071a84f32193eD90D4ddb59
-  address internal constant apxETH___pxETH_Exchange_Rate =
+  address internal constant apxETH__pxETH_Exchange_Rate =
     0x21515B1Da412ecdCa071a84f32193eD90D4ddb59;
 
   // https://optimistic.etherscan.io/address/0x66F61FEe824c1dF059BccCC5F21ca39e083EefDf
-  address internal constant FIL___USD = 0x66F61FEe824c1dF059BccCC5F21ca39e083EefDf;
+  address internal constant FIL__USD = 0x66F61FEe824c1dF059BccCC5F21ca39e083EefDf;
 
   // https://optimistic.etherscan.io/address/0xd1e56e7657C0E0d20c0e11C2B6ae0D90932d5665
-  address internal constant SHIB___USD = 0xd1e56e7657C0E0d20c0e11C2B6ae0D90932d5665;
+  address internal constant SHIB__USD = 0xd1e56e7657C0E0d20c0e11C2B6ae0D90932d5665;
 
   // https://optimistic.etherscan.io/address/0x221618871470f78D8a3391d35B77dFb3C0fbc383
-  address internal constant LDO___USD = 0x221618871470f78D8a3391d35B77dFb3C0fbc383;
+  address internal constant LDO__USD = 0x221618871470f78D8a3391d35B77dFb3C0fbc383;
 
   // https://optimistic.etherscan.io/address/0x03fe94a215E3842deD931769F913d93FF33d0051
-  address internal constant RSETH___ETH = 0x03fe94a215E3842deD931769F913d93FF33d0051;
+  address internal constant RSETH__ETH = 0x03fe94a215E3842deD931769F913d93FF33d0051;
 
   // https://optimistic.etherscan.io/address/0x43dEa17DeE1ca50c6266acb59b32659E44D3ee5D
-  address internal constant ADA___USD = 0x43dEa17DeE1ca50c6266acb59b32659E44D3ee5D;
+  address internal constant ADA__USD = 0x43dEa17DeE1ca50c6266acb59b32659E44D3ee5D;
 
   // https://optimistic.etherscan.io/address/0x640349aa5A2A37ad628F9c934Dd78A3Dd45F7933
-  address internal constant Virtune_Bitcoin_ETP___Proof_of_Reserves =
+  address internal constant Virtune_Bitcoin_ETP__Proof_of_Reserves =
     0x640349aa5A2A37ad628F9c934Dd78A3Dd45F7933;
 
   // https://optimistic.etherscan.io/address/0x675aF77D9266BF28042b0965C11e223153C51aFd
-  address internal constant Virtune_Staked_Ethereum_ETP___Proof_of_Reserves =
+  address internal constant Virtune_Staked_Ethereum_ETP__Proof_of_Reserves =
     0x675aF77D9266BF28042b0965C11e223153C51aFd;
 
   // https://optimistic.etherscan.io/address/0x50f8cf458E7334Be143f3c9F1f1577EE37A45653
-  address internal constant SATS___USD = 0x50f8cf458E7334Be143f3c9F1f1577EE37A45653;
+  address internal constant SATS__USD = 0x50f8cf458E7334Be143f3c9F1f1577EE37A45653;
 
   // https://optimistic.etherscan.io/address/0xB22900D4D0CEa5DB0B3bb08565a9f0f4a831D32C
-  address internal constant BRL___USD = 0xB22900D4D0CEa5DB0B3bb08565a9f0f4a831D32C;
+  address internal constant BRL__USD = 0xB22900D4D0CEa5DB0B3bb08565a9f0f4a831D32C;
 
   // https://optimistic.etherscan.io/address/0x37677A136CD3ff2767107D34cfC9213aa474f2BA
   address internal constant agETH_ETH_Exchange_Rate = 0x37677A136CD3ff2767107D34cfC9213aa474f2BA;
 
   // https://optimistic.etherscan.io/address/0xF4d48d48C177C4CcBb95F8cbe62619A80a992A99
-  address internal constant HAI___USD = 0xF4d48d48C177C4CcBb95F8cbe62619A80a992A99;
+  address internal constant HAI__USD = 0xF4d48d48C177C4CcBb95F8cbe62619A80a992A99;
 
   // https://optimistic.etherscan.io/address/0x2a8D91686A048E98e6CCF1A89E82f40D14312672
-  address internal constant XMR___USD = 0x2a8D91686A048E98e6CCF1A89E82f40D14312672;
+  address internal constant XMR__USD = 0x2a8D91686A048E98e6CCF1A89E82f40D14312672;
 
   // https://optimistic.etherscan.io/address/0xec236454209A76a6deCdf5C1183aE2Eb5e82a829
-  address internal constant BONK___USD = 0xec236454209A76a6deCdf5C1183aE2Eb5e82a829;
+  address internal constant BONK__USD = 0xec236454209A76a6deCdf5C1183aE2Eb5e82a829;
 
   // https://optimistic.etherscan.io/address/0xA12CDDd8e986AF9288ab31E58C60e65F2987fB13
-  address internal constant PERP___USD = 0xA12CDDd8e986AF9288ab31E58C60e65F2987fB13;
+  address internal constant PERP__USD = 0xA12CDDd8e986AF9288ab31E58C60e65F2987fB13;
 
   // https://optimistic.etherscan.io/address/0xca6fa4b8CB365C02cd3Ba70544EFffe78f63ac82
-  address internal constant NEAR___USD = 0xca6fa4b8CB365C02cd3Ba70544EFffe78f63ac82;
+  address internal constant NEAR__USD = 0xca6fa4b8CB365C02cd3Ba70544EFffe78f63ac82;
 
   // https://optimistic.etherscan.io/address/0x0838cFe6A97C9CE1611a6Ed17252477a3c71eBEb
-  address internal constant PYTH___USD = 0x0838cFe6A97C9CE1611a6Ed17252477a3c71eBEb;
+  address internal constant PYTH__USD = 0x0838cFe6A97C9CE1611a6Ed17252477a3c71eBEb;
 
   // https://optimistic.etherscan.io/address/0x51E06250C8E46c8E5DE41ac8B917a47D706128C2
-  address internal constant MAV___USD = 0x51E06250C8E46c8E5DE41ac8B917a47D706128C2;
+  address internal constant MAV__USD = 0x51E06250C8E46c8E5DE41ac8B917a47D706128C2;
 
   // https://optimistic.etherscan.io/address/0x464A1515ADc20de946f8d0DEB99cead8CEAE310d
-  address internal constant LINK___ETH = 0x464A1515ADc20de946f8d0DEB99cead8CEAE310d;
+  address internal constant LINK__ETH = 0x464A1515ADc20de946f8d0DEB99cead8CEAE310d;
 
   // https://optimistic.etherscan.io/address/0x28e67BAeEB5dE7A788f3Dde6CF6ee491369Bb3Fa
-  address internal constant DOT___USD = 0x28e67BAeEB5dE7A788f3Dde6CF6ee491369Bb3Fa;
+  address internal constant DOT__USD = 0x28e67BAeEB5dE7A788f3Dde6CF6ee491369Bb3Fa;
 
   // https://optimistic.etherscan.io/address/0x6f6cED6B096708C1276056fdBdb7BbDe07Ca462C
-  address internal constant SEI___USD = 0x6f6cED6B096708C1276056fdBdb7BbDe07Ca462C;
+  address internal constant SEI__USD = 0x6f6cED6B096708C1276056fdBdb7BbDe07Ca462C;
 
   // https://optimistic.etherscan.io/address/0x4244c9aE5B97269B7301B622E22932FA49fBb763
-  address internal constant mooBIFI___USD = 0x4244c9aE5B97269B7301B622E22932FA49fBb763;
+  address internal constant mooBIFI__USD = 0x4244c9aE5B97269B7301B622E22932FA49fBb763;
 
   // https://optimistic.etherscan.io/address/0xFC3b7bd4368b2919f67E437f8c6Ca42C7FD55dd5
-  address internal constant JTO___USD = 0xFC3b7bd4368b2919f67E437f8c6Ca42C7FD55dd5;
+  address internal constant JTO__USD = 0xFC3b7bd4368b2919f67E437f8c6Ca42C7FD55dd5;
 
   // https://optimistic.etherscan.io/address/0x5087Dc69Fd3907a016BD42B38022F7f024140727
-  address internal constant AVAX___USD = 0x5087Dc69Fd3907a016BD42B38022F7f024140727;
+  address internal constant AVAX__USD = 0x5087Dc69Fd3907a016BD42B38022F7f024140727;
 
   // https://optimistic.etherscan.io/address/0xe1011160d78a80E2eEBD60C228EEf7af4Dfcd4d7
-  address internal constant COMP___USD = 0xe1011160d78a80E2eEBD60C228EEf7af4Dfcd4d7;
+  address internal constant COMP__USD = 0xe1011160d78a80E2eEBD60C228EEf7af4Dfcd4d7;
 
   // https://optimistic.etherscan.io/address/0xc7D132BeCAbE7Dcc4204841F33bae45841e41D9C
-  address internal constant FRAX___USD = 0xc7D132BeCAbE7Dcc4204841F33bae45841e41D9C;
+  address internal constant FRAX__USD = 0xc7D132BeCAbE7Dcc4204841F33bae45841e41D9C;
 
   // https://optimistic.etherscan.io/address/0x536944c3A71FEb7c1E5C66Ee37d1a148d8D8f619
-  address internal constant JPY___USD = 0x536944c3A71FEb7c1E5C66Ee37d1a148d8D8f619;
+  address internal constant JPY__USD = 0x536944c3A71FEb7c1E5C66Ee37d1a148d8D8f619;
 
   // https://optimistic.etherscan.io/address/0x8788F0DBDa7678244Ac7FF09d963d7696D56A8a0
-  address internal constant XRP___USD = 0x8788F0DBDa7678244Ac7FF09d963d7696D56A8a0;
+  address internal constant XRP__USD = 0x8788F0DBDa7678244Ac7FF09d963d7696D56A8a0;
 
   // https://optimistic.etherscan.io/address/0x2FF8822F371b283604369700d6F06da3fBb31064
-  address internal constant ZEC___USD = 0x2FF8822F371b283604369700d6F06da3fBb31064;
+  address internal constant ZEC__USD = 0x2FF8822F371b283604369700d6F06da3fBb31064;
 
   // https://optimistic.etherscan.io/address/0x7F102e5b4C32e0861293E97DE85e6E0dB3530605
-  address internal constant WELL___USD = 0x7F102e5b4C32e0861293E97DE85e6E0dB3530605;
+  address internal constant WELL__USD = 0x7F102e5b4C32e0861293E97DE85e6E0dB3530605;
 
   // https://optimistic.etherscan.io/address/0x517C2557c29F7c53Aa5F97a1DAE465E0d5C174AA
-  address internal constant BLUR___USD = 0x517C2557c29F7c53Aa5F97a1DAE465E0d5C174AA;
+  address internal constant BLUR__USD = 0x517C2557c29F7c53Aa5F97a1DAE465E0d5C174AA;
 
   // https://optimistic.etherscan.io/address/0x8dBa75e83DA73cc766A7e5a0ee71F656BAb470d6
-  address internal constant DAI___USD = 0x8dBa75e83DA73cc766A7e5a0ee71F656BAb470d6;
+  address internal constant DAI__USD = 0x8dBa75e83DA73cc766A7e5a0ee71F656BAb470d6;
 
   // https://optimistic.etherscan.io/address/0x9fCe737834500045FB07AD158991BCAC3b05D5A6
-  address internal constant _1INCH___USD = 0x9fCe737834500045FB07AD158991BCAC3b05D5A6;
+  address internal constant _1INCH__USD = 0x9fCe737834500045FB07AD158991BCAC3b05D5A6;
 
   // https://optimistic.etherscan.io/address/0x8814dEC83E2862A3792A0D6aDFC48CF76Add1890
-  address internal constant STRK___USD = 0x8814dEC83E2862A3792A0D6aDFC48CF76Add1890;
+  address internal constant STRK__USD = 0x8814dEC83E2862A3792A0D6aDFC48CF76Add1890;
 
   // https://optimistic.etherscan.io/address/0x5A9072a995E072fD06D8f1EB95933955FDa53C0a
-  address internal constant CELO___USD = 0x5A9072a995E072fD06D8f1EB95933955FDa53C0a;
+  address internal constant CELO__USD = 0x5A9072a995E072fD06D8f1EB95933955FDa53C0a;
 
   // https://optimistic.etherscan.io/address/0xB9B16330671067B1b062B9aC2eFd2dB75F03436E
-  address internal constant FXS___USD = 0xB9B16330671067B1b062B9aC2eFd2dB75F03436E;
+  address internal constant FXS__USD = 0xB9B16330671067B1b062B9aC2eFd2dB75F03436E;
 
   // https://optimistic.etherscan.io/address/0x955b05dD4573dDFAfB47cb78db16B1Fa127E6e71
-  address internal constant CVX___USD = 0x955b05dD4573dDFAfB47cb78db16B1Fa127E6e71;
+  address internal constant CVX__USD = 0x955b05dD4573dDFAfB47cb78db16B1Fa127E6e71;
 
   // https://optimistic.etherscan.io/address/0x290dd71254874f0d4356443607cb8234958DEe49
-  address internal constant XAG___USD = 0x290dd71254874f0d4356443607cb8234958DEe49;
+  address internal constant XAG__USD = 0x290dd71254874f0d4356443607cb8234958DEe49;
 
   // https://optimistic.etherscan.io/address/0xe98290265E4aE3758503a03e937F381A2A7aFB57
-  address internal constant ICP___USD = 0xe98290265E4aE3758503a03e937F381A2A7aFB57;
+  address internal constant ICP__USD = 0xe98290265E4aE3758503a03e937F381A2A7aFB57;
 
   // https://optimistic.etherscan.io/address/0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3
-  address internal constant USDC___USD = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
+  address internal constant USDC__USD = 0x16a9FA2FDa030272Ce99B29CF780dFA30361E0f3;
 
   // https://optimistic.etherscan.io/address/0x8Ef4207CBC405085B6740fc931114cAFCD1d9158
-  address internal constant Virtune_Chainlink_ETP___Proof_of_Reserves =
+  address internal constant Virtune_Chainlink_ETP__Proof_of_Reserves =
     0x8Ef4207CBC405085B6740fc931114cAFCD1d9158;
 
   // https://optimistic.etherscan.io/address/0x85342bC62aadef58f029ab6d17D643949e6F073e
-  address internal constant sUSDe___USDe_Exchange_Rate = 0x85342bC62aadef58f029ab6d17D643949e6F073e;
+  address internal constant sUSDe__USDe_Exchange_Rate = 0x85342bC62aadef58f029ab6d17D643949e6F073e;
 
   // https://optimistic.etherscan.io/address/0xEaf1a9fe242aa9928faedc6CE7e09aD4875f7133
-  address internal constant SUI___USD = 0xEaf1a9fe242aa9928faedc6CE7e09aD4875f7133;
+  address internal constant SUI__USD = 0xEaf1a9fe242aa9928faedc6CE7e09aD4875f7133;
 
   // https://optimistic.etherscan.io/address/0xCB24d22aF35986aC1feb8874AdBbDF68f6dC2e96
-  address internal constant KNC___USD = 0xCB24d22aF35986aC1feb8874AdBbDF68f6dC2e96;
+  address internal constant KNC__USD = 0xCB24d22aF35986aC1feb8874AdBbDF68f6dC2e96;
 
   // https://optimistic.etherscan.io/address/0xC6884869673a6960486FE0f6B0E775A53521e433
-  address internal constant MEME___USD = 0xC6884869673a6960486FE0f6B0E775A53521e433;
+  address internal constant MEME__USD = 0xC6884869673a6960486FE0f6B0E775A53521e433;
 
   // https://optimistic.etherscan.io/address/0x8f096bFFe37313Ad6bD5B9fF48F9FF6E4E5Cd065
-  address internal constant sFRAX___FRAX_Exchange_Rate = 0x8f096bFFe37313Ad6bD5B9fF48F9FF6E4E5Cd065;
+  address internal constant sFRAX__FRAX_Exchange_Rate = 0x8f096bFFe37313Ad6bD5B9fF48F9FF6E4E5Cd065;
 
   // https://optimistic.etherscan.io/address/0x45954efBD01f5A12428A09E4C38b8434C3dD4Ac3
-  address internal constant LTC___USD = 0x45954efBD01f5A12428A09E4C38b8434C3dD4Ac3;
+  address internal constant LTC__USD = 0x45954efBD01f5A12428A09E4C38b8434C3dD4Ac3;
 
   // https://optimistic.etherscan.io/address/0x04e6b67c9875c15C26E2672dF11E1A34161E7B93
-  address internal constant deUSD___USD = 0x04e6b67c9875c15C26E2672dF11E1A34161E7B93;
+  address internal constant deUSD__USD = 0x04e6b67c9875c15C26E2672dF11E1A34161E7B93;
 
   // https://optimistic.etherscan.io/address/0x3FF5BDB2bB6E3f946d9485De6c591c93B4179ae7
-  address internal constant TRB___USD = 0x3FF5BDB2bB6E3f946d9485De6c591c93B4179ae7;
+  address internal constant TRB__USD = 0x3FF5BDB2bB6E3f946d9485De6c591c93B4179ae7;
 }

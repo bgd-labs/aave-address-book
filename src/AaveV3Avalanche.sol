@@ -463,9 +463,9 @@ library AaveV3AvalancheAssets {
 library AaveV3AvalancheEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant DAIe_USDC_USDt_FRAX_MAI___ = 1;
+  uint8 internal constant DAIe_USDC_USDt_FRAX_MAI__ = 1;
 
-  uint8 internal constant WAVAX_sAVAX___WAVAX = 2;
+  uint8 internal constant WAVAX_sAVAX__WAVAX = 2;
 }
 library AaveV3AvalancheExternalLibraries {
   // https://snowscan.xyz/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

@@ -302,25 +302,25 @@ library AaveV3PlasmaAssets {
 library AaveV3PlasmaEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant USDe___USDT0 = 1;
+  uint8 internal constant USDe__USDT0 = 1;
 
-  uint8 internal constant USDe_sUSDe___USDT0 = 2;
+  uint8 internal constant USDe_sUSDe__USDT0 = 2;
 
-  uint8 internal constant weETH___WETH = 3;
+  uint8 internal constant weETH__WETH = 3;
 
-  uint8 internal constant weETH___USDT0 = 4;
+  uint8 internal constant weETH__USDT0 = 4;
 
-  uint8 internal constant PT_USDe_15JAN2026___USDT0_USDe = 5;
+  uint8 internal constant PT_USDe_15JAN2026__USDT0_USDe = 5;
 
-  uint8 internal constant PT_USDe_15JAN2026___USDe = 6;
+  uint8 internal constant PT_USDe_15JAN2026__USDe = 6;
 
-  uint8 internal constant PT_sUSDE_15JAN2026___USDT0_USDe = 7;
+  uint8 internal constant PT_sUSDE_15JAN2026__USDT0_USDe = 7;
 
-  uint8 internal constant PT_sUSDE_15JAN2026___USDe = 8;
+  uint8 internal constant PT_sUSDE_15JAN2026__USDe = 8;
 
-  uint8 internal constant wrsETH___WETH_wstETH = 9;
+  uint8 internal constant wrsETH__WETH_wstETH = 9;
 
-  uint8 internal constant wstETH___WETH = 10;
+  uint8 internal constant wstETH__WETH = 10;
 }
 library AaveV3PlasmaExternalLibraries {
   // https://plasmascan.to/address/0x50a4646D4f5Cc0e45051bF4f222D02fA39eC749D

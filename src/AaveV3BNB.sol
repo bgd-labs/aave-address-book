@@ -277,7 +277,7 @@ library AaveV3BNBAssets {
 library AaveV3BNBEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant wstETH___ETH = 1;
+  uint8 internal constant wstETH__ETH = 1;
 }
 library AaveV3BNBExternalLibraries {
   // https://bscscan.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

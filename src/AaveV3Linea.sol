@@ -243,13 +243,13 @@ library AaveV3LineaAssets {
 library AaveV3LineaEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant wstETH___WETH = 1;
+  uint8 internal constant wstETH__WETH = 1;
 
-  uint8 internal constant ezETH___WETH = 2;
+  uint8 internal constant ezETH__WETH = 2;
 
-  uint8 internal constant weETH___WETH = 3;
+  uint8 internal constant weETH__WETH = 3;
 
-  uint8 internal constant wrsETH___WETH = 4;
+  uint8 internal constant wrsETH__WETH = 4;
 }
 library AaveV3LineaExternalLibraries {
   // https://lineascan.build/address/0xb5656eCAE657A1bF5f7F5CD06363090A4D2c68e3

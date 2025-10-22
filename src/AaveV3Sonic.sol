@@ -179,7 +179,7 @@ library AaveV3SonicAssets {
 library AaveV3SonicEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant stS___wS = 1;
+  uint8 internal constant stS__wS = 1;
 }
 library AaveV3SonicExternalLibraries {
   // https://sonicscan.org/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

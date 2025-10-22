@@ -185,7 +185,7 @@ library AaveV3ScrollAssets {
 library AaveV3ScrollEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant WETH_wstETH_weETH___WETH = 1;
+  uint8 internal constant WETH_wstETH_weETH__WETH = 1;
 }
 library AaveV3ScrollExternalLibraries {
   // https://scrollscan.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

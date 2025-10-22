@@ -227,11 +227,11 @@ library AaveV3ZkSyncAssets {
 library AaveV3ZkSyncEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant WETH_wstETH___WETH = 1;
+  uint8 internal constant WETH_wstETH__WETH = 1;
 
-  uint8 internal constant weETH___WETH = 2;
+  uint8 internal constant weETH__WETH = 2;
 
-  uint8 internal constant wrsETH___wstETH = 3;
+  uint8 internal constant wrsETH__wstETH = 3;
 }
 library AaveV3ZkSyncExternalLibraries {
   // https://era.zksync.network/address/0x9d9568079b93045C82822Bf70A91C151BD65a02E
