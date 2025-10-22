@@ -195,7 +195,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'ETH correlated',
+    label: 'WETH,wstETH / WETH',
     collateralBitmap: '3',
     collateralAssets: [
       '0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1',
@@ -218,7 +218,7 @@ export const E_MODES = {
     liquidationBonus: 10500,
   },
   '3': {
-    label: 'sDAI/USDCe',
+    label: 'sDAI / USDCe',
     collateralBitmap: '64',
     collateralAssets: ['0xaf204776c7245bF4147c2612BF6e5972Ee483701'],
     borrowableBitmap: '128',
@@ -231,7 +231,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
   BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
-  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
   LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
   POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
   SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',

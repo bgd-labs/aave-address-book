@@ -302,25 +302,25 @@ library AaveV3PlasmaAssets {
 library AaveV3PlasmaEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant USDE_STABLECOINS = 1;
+  uint8 internal constant USDe__USDT0 = 1;
 
-  uint8 internal constant SUSDE_STABLECOINS = 2;
+  uint8 internal constant USDe_sUSDe__USDT0 = 2;
 
-  uint8 internal constant WEETH_WETH = 3;
+  uint8 internal constant weETH__WETH = 3;
 
-  uint8 internal constant WEETH_STABLECOINS = 4;
+  uint8 internal constant weETH__USDT0 = 4;
 
-  uint8 internal constant PT_USDE_STABLECOINS_JAN_2026 = 5;
+  uint8 internal constant PT_USDe_15JAN2026__USDT0_USDe = 5;
 
-  uint8 internal constant PT_USDE_USDE_JAN_2026 = 6;
+  uint8 internal constant PT_USDe_15JAN2026__USDe = 6;
 
-  uint8 internal constant PT_SUSDE_STABLECOINS_JAN_2026 = 7;
+  uint8 internal constant PT_sUSDE_15JAN2026__USDT0_USDe = 7;
 
-  uint8 internal constant PT_SUSDE_USDE_JAN_2026 = 8;
+  uint8 internal constant PT_sUSDE_15JAN2026__USDe = 8;
 
-  uint8 internal constant WRSETH_WETH = 9;
+  uint8 internal constant wrsETH__WETH_wstETH = 9;
 
-  uint8 internal constant WSTETH_WETH = 10;
+  uint8 internal constant wstETH__WETH = 10;
 }
 library AaveV3PlasmaExternalLibraries {
   // https://plasmascan.to/address/0x50a4646D4f5Cc0e45051bF4f222D02fA39eC749D
@@ -328,9 +328,6 @@ library AaveV3PlasmaExternalLibraries {
 
   // https://plasmascan.to/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
   address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
-
-  // https://plasmascan.to/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
-  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
   // https://plasmascan.to/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
   address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;

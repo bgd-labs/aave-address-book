@@ -33,9 +33,10 @@ jobs:
       - uses: bgd-labs/github-workflows/.github/actions/setup-node@main
 
       - name: Package size report
-        uses: pkg-size/action@a637fb0897b6f14f18e776d8c3dbccb34a1ad27b # pin@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: andresz1/size-limit-action@94bc357df29c36c8f8d50ea497c3e225c3c95d1d # pin@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
   release-node-alpha:
     if: github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
     uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main

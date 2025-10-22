@@ -324,7 +324,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'Stablecoins',
+    label: 'DAI,USDC,USDT,EURS,USDCn / ',
     collateralBitmap: '4261',
     collateralAssets: [
       '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1',
@@ -340,7 +340,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '2': {
-    label: 'ETH correlated',
+    label: 'WETH,wstETH,weETH / WETH',
     collateralBitmap: '33040',
     collateralAssets: [
       '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
@@ -354,7 +354,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '3': {
-    label: 'ezETH/wstETH/WETH ETH Correlated',
+    label: 'ezETH / WETH,wstETH',
     collateralBitmap: '131072',
     collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
     borrowableBitmap: '272',
@@ -367,7 +367,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '4': {
-    label: 'ezETH Stablecoins',
+    label: 'ezETH / USDT,USDCn',
     collateralBitmap: '131072',
     collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
     borrowableBitmap: '4128',
@@ -380,7 +380,7 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '5': {
-    label: 'rsETH/wstETH/WETH ETH Correlated',
+    label: 'rsETH / WETH,wstETH',
     collateralBitmap: '262144',
     collateralAssets: ['0x4186BFC76E2E237523CBC30FD220FE055156b41F'],
     borrowableBitmap: '272',
@@ -393,7 +393,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '6': {
-    label: 'rsETH/Stablecoins',
+    label: 'rsETH / USDC,USDT',
     collateralBitmap: '262144',
     collateralAssets: ['0x4186BFC76E2E237523CBC30FD220FE055156b41F'],
     borrowableBitmap: '36',
@@ -406,7 +406,7 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '7': {
-    label: 'wstETH/WETH ETH Correlated',
+    label: 'wstETH / WETH',
     collateralBitmap: '256',
     collateralAssets: ['0x5979D7b546E38E414F7E9822514be443A4800529'],
     borrowableBitmap: '16',
@@ -419,7 +419,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
   BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
-  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
   LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
   POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
   SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',

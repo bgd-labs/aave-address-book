@@ -184,7 +184,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: 'USDe Stablecoins',
+    label: 'USDe / USDT0',
     collateralBitmap: '2',
     collateralAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     borrowableBitmap: '1',
@@ -194,7 +194,7 @@ export const E_MODES = {
     liquidationBonus: 10200,
   },
   '2': {
-    label: 'sUSDe Stablecoins',
+    label: 'USDe,sUSDe / USDT0',
     collateralBitmap: '6',
     collateralAssets: [
       '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
@@ -207,7 +207,7 @@ export const E_MODES = {
     liquidationBonus: 10400,
   },
   '3': {
-    label: 'weETH WETH',
+    label: 'weETH / WETH',
     collateralBitmap: '16',
     collateralAssets: ['0xA3D68b74bF0528fdD07263c60d6488749044914b'],
     borrowableBitmap: '32',
@@ -217,7 +217,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '4': {
-    label: 'weETH Stablecoins',
+    label: 'weETH / USDT0',
     collateralBitmap: '16',
     collateralAssets: ['0xA3D68b74bF0528fdD07263c60d6488749044914b'],
     borrowableBitmap: '1',
@@ -227,7 +227,7 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '5': {
-    label: 'PT-USDe Stablecoins Jan 2026',
+    label: 'PT_USDe_15JAN2026 / USDT0,USDe',
     collateralBitmap: '64',
     collateralAssets: ['0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a'],
     borrowableBitmap: '3',
@@ -240,7 +240,7 @@ export const E_MODES = {
     liquidationBonus: 10490,
   },
   '6': {
-    label: 'PT-USDe USDe Jan 2026',
+    label: 'PT_USDe_15JAN2026 / USDe',
     collateralBitmap: '64',
     collateralAssets: ['0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a'],
     borrowableBitmap: '2',
@@ -250,7 +250,7 @@ export const E_MODES = {
     liquidationBonus: 10390,
   },
   '7': {
-    label: 'PT-sUSDe Stablecoins Jan 2026',
+    label: 'PT_sUSDE_15JAN2026 / USDT0,USDe',
     collateralBitmap: '128',
     collateralAssets: ['0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8'],
     borrowableBitmap: '3',
@@ -263,7 +263,7 @@ export const E_MODES = {
     liquidationBonus: 10600,
   },
   '8': {
-    label: 'PT-sUSDe USDe Jan 2026',
+    label: 'PT_sUSDE_15JAN2026 / USDe',
     collateralBitmap: '128',
     collateralAssets: ['0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8'],
     borrowableBitmap: '2',
@@ -273,7 +273,7 @@ export const E_MODES = {
     liquidationBonus: 10490,
   },
   '9': {
-    label: 'wrsETH/WETH',
+    label: 'wrsETH / WETH,wstETH',
     collateralBitmap: '512',
     collateralAssets: ['0xe561FE05C39075312Aa9Bc6af79DdaE981461359'],
     borrowableBitmap: '288',
@@ -286,7 +286,7 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '10': {
-    label: 'wstETH/WETH',
+    label: 'wstETH / WETH',
     collateralBitmap: '256',
     collateralAssets: ['0xe48D935e6C9e735463ccCf29a7F11e32bC09136E'],
     borrowableBitmap: '32',
@@ -299,7 +299,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x50a4646D4f5Cc0e45051bF4f222D02fA39eC749D',
   BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
-  E_MODE_LOGIC: '0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5',
   LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
   POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
   SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',
