@@ -133,7 +133,7 @@ export const ASSETS = {
 } as const;
 export const E_MODES = {
   '1': {
-    label: '',
+    label: ' / ',
     collateralBitmap: '0',
     collateralAssets: [],
     borrowableBitmap: '0',
@@ -143,7 +143,7 @@ export const E_MODES = {
     liquidationBonus: 10300,
   },
   '2': {
-    label: 'USTB GHO',
+    label: 'USTB / GHO',
     collateralBitmap: '8',
     collateralAssets: ['0x43415eB6ff9DB7E26A15b704e7A3eDCe97d31C4e'],
     borrowableBitmap: '1',
@@ -153,7 +153,7 @@ export const E_MODES = {
     liquidationBonus: 10300,
   },
   '3': {
-    label: '',
+    label: ' / ',
     collateralBitmap: '0',
     collateralAssets: [],
     borrowableBitmap: '0',
@@ -163,7 +163,7 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '4': {
-    label: 'USCC GHO',
+    label: 'USCC / GHO',
     collateralBitmap: '16',
     collateralAssets: ['0x14d60E7FDC0D71d8611742720E4C50E7a974020c'],
     borrowableBitmap: '1',
@@ -173,7 +173,7 @@ export const E_MODES = {
     liquidationBonus: 10500,
   },
   '5': {
-    label: '',
+    label: ' / ',
     collateralBitmap: '0',
     collateralAssets: [],
     borrowableBitmap: '0',
@@ -183,7 +183,7 @@ export const E_MODES = {
     liquidationBonus: 10310,
   },
   '6': {
-    label: 'USYC GHO',
+    label: 'USYC / GHO',
     collateralBitmap: '32',
     collateralAssets: ['0x136471a34f6ef19fE571EFFC1CA711fdb8E49f2b'],
     borrowableBitmap: '1',
@@ -193,7 +193,7 @@ export const E_MODES = {
     liquidationBonus: 10310,
   },
   '7': {
-    label: '',
+    label: ' / ',
     collateralBitmap: '0',
     collateralAssets: [],
     borrowableBitmap: '0',
@@ -203,7 +203,7 @@ export const E_MODES = {
     liquidationBonus: 10450,
   },
   '8': {
-    label: 'JTRSY GHO',
+    label: 'JTRSY / GHO',
     collateralBitmap: '64',
     collateralAssets: ['0x8c213ee79581Ff4984583C6a801e5263418C4b86'],
     borrowableBitmap: '1',
@@ -213,7 +213,7 @@ export const E_MODES = {
     liquidationBonus: 10450,
   },
   '9': {
-    label: '',
+    label: ' / ',
     collateralBitmap: '0',
     collateralAssets: [],
     borrowableBitmap: '0',
@@ -223,7 +223,7 @@ export const E_MODES = {
     liquidationBonus: 10900,
   },
   '10': {
-    label: 'JAAA GHO',
+    label: 'JAAA / GHO',
     collateralBitmap: '128',
     collateralAssets: ['0x5a0F93D040De44e78F251b03c43be9CF317Dcf64'],
     borrowableBitmap: '1',
@@ -236,7 +236,6 @@ export const E_MODES = {
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x34039100cc9584Ae5D741d322e16d0d18CEE8770',
   BORROW_LOGIC: '0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36',
-  E_MODE_LOGIC: '0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74',
   LIQUIDATION_LOGIC: '0x4731bF01583F991278692E8727d0700a00A1fBBf',
   POOL_LOGIC: '0xf8C97539934ee66a67C26010e8e027D77E821B0C',
   SUPPLY_LOGIC: '0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3',
