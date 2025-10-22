@@ -33,7 +33,7 @@ jobs:
       - uses: bgd-labs/github-workflows/.github/actions/setup-node@main
 
       - name: Package size report
-        uses: bgd-labs/size-limit-action@6a98dcc134aa03c90f100d446b2625ab3f186a39 # pin@v1
+        uses: bgd-labs/size-limit-action@67b51eb5cf1af841cb39a37c9c2cd74455a3ad77 # pin@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           min_delta: 1
