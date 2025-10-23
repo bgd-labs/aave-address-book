@@ -8155,6 +8155,20 @@
     },
     {
       "chainId": 59144,
+      "address": "0xbC3af484919304E005Ca8b735a0d463b876aeB52",
+      "name": "Wrapped Aave Linea USDC",
+      "decimals": 6,
+      "symbol": "waLinUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
+        "underlyingAToken": "0x374D7860c4f2f604De0191298dD393703Cce84f3"
+      }
+    },
+    {
+      "chainId": 59144,
       "address": "0xA219439258ca9da29E9Cc4cE5596924745e12B93",
       "name": "Tether USD",
       "decimals": 6,
@@ -9078,6 +9092,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 140 },
-  "timestamp": "2025-10-21T18:50:16.485Z"
+  "version": { "major": 3, "minor": 0, "patch": 141 },
+  "timestamp": "2025-10-23T00:15:04.745Z"
 }
