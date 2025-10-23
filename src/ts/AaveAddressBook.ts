@@ -79,6 +79,7 @@ export * as MiscBob from './MiscBob';
 export * as MiscInk from './MiscInk';
 export * as MiscInkWhitelabel from './MiscInkWhitelabel';
 export * as MiscPlasma from './MiscPlasma';
+export * as MiscXLayer from './MiscXLayer';
 export * as AaveGovernanceV2 from './AaveGovernanceV2';
 export * as AaveSafetyModule from './AaveSafetyModule';
 export * as GhoEthereum from './GhoEthereum';

@@ -14495,6 +14495,9 @@
     },
     "0x55510C6fD37bcb9398260E49e57b63B31a5E9066": {
       "name": "GelatoAaveStewardInjectorRates"
+    },
+    "0xbC3af484919304E005Ca8b735a0d463b876aeB52": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "60808": {
