@@ -65,8 +65,34 @@ async function checkVerified(item: ListItem) {
       chainId: item.chainId,
       apiKey: process.env.ETHERSCAN_API_KEY,
       address: item.value as Address,
-      apiUrl: process.env.EXPLORER_PROXY,
+      apiUrl: item.chainId === ChainId.xLayer ? getApiUrl(item.chainId) : process.env.EXPLORER_PROXY,
     });
+
+    if (item.chainId === ChainId.xLayer) {
+      // TODO: check for implementation then check if it is also verified
+      if (source) {
+
+        const parsed: any = JSON.parse(source as any);
+        // safely extract implementation if exists
+        const implementation = parsed.implementation ?? null;
+        if (implementation) {
+          const implementationSource = await getSourceCode({
+            chainId: item.chainId,
+            apiKey: process.env.ETHERSCAN_API_KEY,
+            address: implementation as Address,
+            apiUrl: getApiUrl(item.chainId),
+          });
+          if (implementationSource) {
+            return { status: '1', result: implementationSource };
+          } else {
+            return { status: '0', result: new Error('Implementation not found') };
+          }
+        } else {
+          return { status: '1', result: source };
+        }
+      }
+    }
+
     if (!source.ContractName) {
       // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
       // therefore we try to manually assign it
@@ -74,6 +100,9 @@ async function checkVerified(item: ListItem) {
         await verifyProxy(item);
       }
     }
+
+
+
     return { status: '1', result: source };
   } catch (e) {
     console.error(e);
@@ -85,6 +114,7 @@ function getApiUrl(chainId: number) {
   if (chainId === ChainId.soneium) return `https://soneium.blockscout.com/api`;
   if (chainId === ChainId.bob) return `https://explorer.gobob.xyz/api`;
   if (chainId === ChainId.ink) return `https://explorer.inkonchain.com/api/`;
+  if (chainId === ChainId.xLayer) return `https://www.oklink.com/api/v5/explorer/contract/verify-contract-info`;
   return getExplorer(chainId).api;
 }
 
@@ -103,9 +133,6 @@ const knownErrors = {
   },
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
-  },
-  196: {
-    '0xEB0682d148e874553008730f0686ea89db7DA412': true, // xLayer explorer is a different one
   },
 };
 
