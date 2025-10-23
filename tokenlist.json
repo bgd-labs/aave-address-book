@@ -8659,8 +8659,7 @@
       "name": "Kraken Wrapped Bitcoin",
       "decimals": 8,
       "symbol": "kBTC",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/kbtc.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 57073,
@@ -8669,7 +8668,6 @@
       "decimals": 8,
       "symbol": "aInkWlKBTC",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/akbtc.svg",
       "extensions": {
         "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
         "underlying": "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98"
@@ -8853,8 +8851,7 @@
       "name": "XAUt0",
       "decimals": 6,
       "symbol": "XAUt0",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/xaut0.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 9745,
@@ -8863,7 +8860,6 @@
       "decimals": 6,
       "symbol": "aPlaXAUt0",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/axaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193"
@@ -8876,7 +8872,6 @@
       "decimals": 6,
       "symbol": "waPlaXAUt0",
       "tags": ["aaveV3", "stataToken"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataxaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193",
@@ -9040,6 +9035,26 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
+      "name": "Syrup USDT",
+      "decimals": 6,
+      "symbol": "syrupUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0xD4eE376C40EdC83832aAaFc18fC0272660F5e90b",
+      "name": "Aave Plasma syrupUSDT",
+      "decimals": 6,
+      "symbol": "aPlasyrupUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xC4374775489CB9C56003BF2C9b12495fC64F0771"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -9092,6 +9107,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 141 },
-  "timestamp": "2025-10-23T00:15:04.745Z"
+  "version": { "major": 3, "minor": 0, "patch": 142 },
+  "timestamp": "2025-10-23T22:49:51.467Z"
 }
