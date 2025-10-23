@@ -1,4 +1,4 @@
-import {Hex} from 'viem';
+import { Hex } from 'viem';
 
 interface KnownInterfaces<T extends number | Hex = any> {
   value: T;
@@ -80,6 +80,7 @@ export interface PoolConfig {
     CLINIC_STEWARD?: Hex;
     SVR_STEWARD?: Hex;
     POOL_EXPOSURE_STEWARD?: Hex;
+    COLLECTOR_SWAP_STEWARD?: Hex;
   };
   // will be used for pending pools where the impls can't be fetched yet
   initial?: {

@@ -185,7 +185,7 @@ library AaveV3ScrollAssets {
 library AaveV3ScrollEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant ETH_CORRELATED = 1;
+  uint8 internal constant WETH_wstETH_weETH__WETH = 1;
 }
 library AaveV3ScrollExternalLibraries {
   // https://scrollscan.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
@@ -193,9 +193,6 @@ library AaveV3ScrollExternalLibraries {
 
   // https://scrollscan.com/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
   address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
-
-  // https://scrollscan.com/address/0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5
-  address internal constant E_MODE_LOGIC = 0xD1bddC05A3BB5A7907d82A1b4F1E21dBCE69c3d5;
 
   // https://scrollscan.com/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
   address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;

@@ -8155,6 +8155,20 @@
     },
     {
       "chainId": 59144,
+      "address": "0xbC3af484919304E005Ca8b735a0d463b876aeB52",
+      "name": "Wrapped Aave Linea USDC",
+      "decimals": 6,
+      "symbol": "waLinUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
+        "underlyingAToken": "0x374D7860c4f2f604De0191298dD393703Cce84f3"
+      }
+    },
+    {
+      "chainId": 59144,
       "address": "0xA219439258ca9da29E9Cc4cE5596924745e12B93",
       "name": "Tether USD",
       "decimals": 6,
@@ -8645,7 +8659,8 @@
       "name": "Kraken Wrapped Bitcoin",
       "decimals": 8,
       "symbol": "kBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/kbtc.svg"
     },
     {
       "chainId": 57073,
@@ -8654,6 +8669,7 @@
       "decimals": 8,
       "symbol": "aInkWlKBTC",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/akbtc.svg",
       "extensions": {
         "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
         "underlying": "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98"
@@ -8837,7 +8853,8 @@
       "name": "XAUt0",
       "decimals": 6,
       "symbol": "XAUt0",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/xaut0.svg"
     },
     {
       "chainId": 9745,
@@ -8846,6 +8863,7 @@
       "decimals": 6,
       "symbol": "aPlaXAUt0",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/axaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193"
@@ -8858,6 +8876,7 @@
       "decimals": 6,
       "symbol": "waPlaXAUt0",
       "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataxaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193",
@@ -8937,6 +8956,90 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a",
+      "name": "PT Ethena USDe 15JAN2026",
+      "decimals": 18,
+      "symbol": "PT-USDe-15JAN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0xEa601A9FECF80bFC529F08A51bD8Cb0d72fc862A",
+      "name": "Aave Plasma PT_USDe_15JAN2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_USDe_15JAN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8",
+      "name": "PT Ethena sUSDE 15JAN2026",
+      "decimals": 18,
+      "symbol": "PT-sUSDE-15JAN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x0b9A412c94f07223752031f75a20DDe542D63d5C",
+      "name": "Aave Plasma PT_sUSDE_15JAN2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_sUSDE_15JAN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xe48D935e6C9e735463ccCf29a7F11e32bC09136E",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "decimals": 18,
+      "symbol": "wstETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wsteth.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0x140Bc58975DFba4D30fE65c4F6262a6c314683cf",
+      "name": "Aave Plasma wstETH",
+      "decimals": 18,
+      "symbol": "aPlawstETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awsteth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xe48D935e6C9e735463ccCf29a7F11e32bC09136E"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0xe561FE05C39075312Aa9Bc6af79DdaE981461359",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 9745,
+      "address": "0x41c7aCCC0fB97470bFB48014bad52E0d99447E79",
+      "name": "Aave Plasma wrsETH",
+      "decimals": 18,
+      "symbol": "aPlawrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xe561FE05C39075312Aa9Bc6af79DdaE981461359"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -8989,6 +9092,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 137 },
-  "timestamp": "2025-10-13T06:41:45.632Z"
+  "version": { "major": 3, "minor": 0, "patch": 141 },
+  "timestamp": "2025-10-23T08:47:13.942Z"
 }

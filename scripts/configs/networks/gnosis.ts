@@ -12,6 +12,7 @@ export const gnosisAddresses: NetworkAddresses<{
   ALC_INCENTIVE_SAFE: Hex;
   MERIT_INCENTIVE_SAFE: Hex;
   AHAB_SAFE: Hex;
+  REWARD_STEWARD: Hex;
 }> = {
   name: 'Gnosis',
   chainId: ChainId.gnosis,
@@ -29,5 +30,6 @@ export const gnosisAddresses: NetworkAddresses<{
     ALC_INCENTIVE_SAFE: '0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871',
     MERIT_INCENTIVE_SAFE: '0xAA870e4B82deaDa3727235f34183Ec9B728714C8',
     AHAB_SAFE: '0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e',
+    REWARD_STEWARD: '0xE513b6304712D1055C88f72f1952FAe49c09f4ce',
   },
 };

@@ -7,6 +7,7 @@ export const scrollAddresses: NetworkAddresses<{
   AFC_SAFE: Hex;
   MASIV_SAFE: Hex;
   APE_VOTING_SAFE: Hex;
+  REWARD_STEWARD: Hex;
 }> = {
   name: 'Scroll',
   chainId: ChainId.scroll,
@@ -19,5 +20,6 @@ export const scrollAddresses: NetworkAddresses<{
     AFC_SAFE: '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa',
     MASIV_SAFE: '0xdef1FA4CEfe67365ba046a7C630D6B885298E210',
     APE_VOTING_SAFE: '0xa9e777D56C0Ad861f6a03967E080e767ad8D39b6',
+    REWARD_STEWARD: '0xc50C0D9C4E5df6f2F244a72FD4DA562877CD16EE',
   },
 };

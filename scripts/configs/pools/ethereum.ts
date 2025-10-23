@@ -1,5 +1,5 @@
-import {ChainId} from '@bgd-labs/toolbox';
-import {PoolConfig} from '../types';
+import { ChainId } from '@bgd-labs/toolbox';
+import { PoolConfig } from '../types';
 
 export const sepoliaProtoV3: PoolConfig = {
   name: 'Sepolia',
@@ -94,6 +94,7 @@ export const mainnetProtoV3Pool: PoolConfig = {
     EDGE_INJECTOR_DISCOUNT_RATE: '0x15885A83936EB943e98EeFFb91e9A49040d93993',
     EDGE_RISK_STEWARD_RATES: '0x80CFd14236409107c220d1D0a3dE845b48fdcDfc',
     EDGE_INJECTOR_RATES: '0x74dc6321a338420238cbd77aba5fea8679393a66',
+    COLLECTOR_SWAP_STEWARD: '0xb7D402138Cb01BfE97d95181C849379d6AD14d19',
   },
 };
 
