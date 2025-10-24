@@ -9040,6 +9040,26 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
+      "name": "Syrup USDT",
+      "decimals": 6,
+      "symbol": "syrupUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0xD4eE376C40EdC83832aAaFc18fC0272660F5e90b",
+      "name": "Aave Plasma syrupUSDT",
+      "decimals": 6,
+      "symbol": "aPlasyrupUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xC4374775489CB9C56003BF2C9b12495fC64F0771"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -9092,6 +9112,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 141 },
-  "timestamp": "2025-10-23T08:47:13.942Z"
+  "version": { "major": 3, "minor": 0, "patch": 142 },
+  "timestamp": "2025-10-24T10:49:12.515Z"
 }

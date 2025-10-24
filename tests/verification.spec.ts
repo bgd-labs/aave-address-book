@@ -134,6 +134,10 @@ const knownErrors = {
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
   },
+  196: {
+    '0xeB55A63bf9993d80c86D47f819B5eC958c7C127B': true, // xlayer governance guardian
+    '0xEB0682d148e874553008730f0686ea89db7DA412': true, // xlayer transparent proxy factory
+  },
 };
 
 describe('verification', { timeout: 500_000 }, () => {

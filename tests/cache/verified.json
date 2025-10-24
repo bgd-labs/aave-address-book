@@ -10880,6 +10880,18 @@
     },
     "0xa047fdFb3420A27a5f926735b475fE5a1E968786": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xC4374775489CB9C56003BF2C9b12495fC64F0771": {
+      "name": "BurnMintERC20"
+    },
+    "0xD4eE376C40EdC83832aAaFc18fC0272660F5e90b": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDA5D1a9b7F515457638c01db13a18Bd3514fC4A6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0A3F8218a98337Ef37dCAE4F8a8cfaB0711C64cF": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "42161": {
@@ -13888,6 +13900,9 @@
     },
     "0xD9Dee878Eb31303FD58D412cE79439400b340A22": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08": {
+      "name": "RewardsSteward"
     }
   },
   "57073": {
