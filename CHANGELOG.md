@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.35.0](https://github.com/bgd-labs/aave-address-book/compare/v4.34.1...v4.35.0) (2025-10-24)
+
+
+### Features
+
+* generate emode label ([#1125](https://github.com/bgd-labs/aave-address-book/issues/1125)) ([67405c3](https://github.com/bgd-labs/aave-address-book/commit/67405c31ebab40c4f117b0a6a6f4a2f03fc72dcd))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1129](https://github.com/bgd-labs/aave-address-book/issues/1129)) ([3f6d632](https://github.com/bgd-labs/aave-address-book/commit/3f6d632019101315188c1d76bde36095223f5218))
+* update action ([e1a9f03](https://github.com/bgd-labs/aave-address-book/commit/e1a9f032efb8835157eb036005696d0674a6a229))
+
 ## [4.34.1](https://github.com/bgd-labs/aave-address-book/compare/v4.34.0...v4.34.1) (2025-10-20)
 
 
