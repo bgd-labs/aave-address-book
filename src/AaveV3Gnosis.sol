@@ -103,6 +103,9 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0xdA12A8F009258592A9B5618129259992858636dc
   address internal constant POOL_EXPOSURE_STEWARD = 0xdA12A8F009258592A9B5618129259992858636dc;
 
+  // https://gnosisscan.io/address/0x7BD97DD6C199532d11Cf5f55E13a120dB6dd0F4F
+  address internal constant EDGE_RISK_ORACLE = 0x7BD97DD6C199532d11Cf5f55E13a120dB6dd0F4F;
+
   // https://gnosisscan.io/address/0x655252250f4A453854040A49E8280951A76f3033
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x655252250f4A453854040A49E8280951A76f3033;
 
