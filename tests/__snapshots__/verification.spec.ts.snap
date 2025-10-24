@@ -26,15 +26,5 @@ exports[`verification > should have all contracts verified except for the known 
       "value": "0x97deC07366Be72884331BE21704Fd93BF35286f9",
     },
   },
-  {
-    "item": {
-      "chainId": 43114,
-      "path": [
-        "MiscAvalanche",
-        "REWARD_STEWARD",
-      ],
-      "value": "0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08",
-    },
-  },
 ]
 `;

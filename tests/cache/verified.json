@@ -4891,6 +4891,9 @@
     },
     "0xfD2aaE32247E5015AcB04Aa8220616D6647979aC": {
       "name": "RewardsSteward"
+    },
+    "0x9f6aA2aB14bFF53e4b79A81ce1554F1DFdbb6608": {
+      "name": "RiskOracle"
     }
   },
   "56": {
@@ -5832,6 +5835,9 @@
     },
     "0x6046A62a80a2c19A0De91063602ce90533c62ae1": {
       "name": "RewardsSteward"
+    },
+    "0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D": {
+      "name": "RiskOracle"
     }
   },
   "100": {
@@ -6422,6 +6428,9 @@
     },
     "0xE513b6304712D1055C88f72f1952FAe49c09f4ce": {
       "name": "RewardsSteward"
+    },
+    "0x7BD97DD6C199532d11Cf5f55E13a120dB6dd0F4F": {
+      "name": "RiskOracle"
     }
   },
   "137": {
@@ -7888,6 +7897,9 @@
     },
     "0xF18F15362e5fB4277DCE713F170341942F43aC3E": {
       "name": "RewardsSteward"
+    },
+    "0x9f6aA2aB14bFF53e4b79A81ce1554F1DFdbb6608": {
+      "name": "RiskOracle"
     }
   },
   "146": {
@@ -10880,6 +10892,18 @@
     },
     "0xa047fdFb3420A27a5f926735b475fE5a1E968786": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xC4374775489CB9C56003BF2C9b12495fC64F0771": {
+      "name": "BurnMintERC20"
+    },
+    "0xD4eE376C40EdC83832aAaFc18fC0272660F5e90b": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDA5D1a9b7F515457638c01db13a18Bd3514fC4A6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0A3F8218a98337Ef37dCAE4F8a8cfaB0711C64cF": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "42161": {
@@ -13888,6 +13912,9 @@
     },
     "0xD9Dee878Eb31303FD58D412cE79439400b340A22": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08": {
+      "name": "RewardsSteward"
     }
   },
   "57073": {
@@ -14495,6 +14522,9 @@
     },
     "0x55510C6fD37bcb9398260E49e57b63B31a5E9066": {
       "name": "GelatoAaveStewardInjectorRates"
+    },
+    "0xbC3af484919304E005Ca8b735a0d463b876aeB52": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "60808": {
