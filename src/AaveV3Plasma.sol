@@ -298,6 +298,24 @@ library AaveV3PlasmaAssets {
   // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
   address internal constant wrsETH_INTEREST_RATE_STRATEGY =
     0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
+
+  // https://plasmascan.to/address/0xC4374775489CB9C56003BF2C9b12495fC64F0771
+  address internal constant syrupUSDT_UNDERLYING = 0xC4374775489CB9C56003BF2C9b12495fC64F0771;
+
+  uint8 internal constant syrupUSDT_DECIMALS = 6;
+
+  // https://plasmascan.to/address/0xD4eE376C40EdC83832aAaFc18fC0272660F5e90b
+  address internal constant syrupUSDT_A_TOKEN = 0xD4eE376C40EdC83832aAaFc18fC0272660F5e90b;
+
+  // https://plasmascan.to/address/0xDA5D1a9b7F515457638c01db13a18Bd3514fC4A6
+  address internal constant syrupUSDT_V_TOKEN = 0xDA5D1a9b7F515457638c01db13a18Bd3514fC4A6;
+
+  // https://plasmascan.to/address/0x0A3F8218a98337Ef37dCAE4F8a8cfaB0711C64cF
+  address internal constant syrupUSDT_ORACLE = 0x0A3F8218a98337Ef37dCAE4F8a8cfaB0711C64cF;
+
+  // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
+  address internal constant syrupUSDT_INTEREST_RATE_STRATEGY =
+    0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
 }
 library AaveV3PlasmaEModes {
   uint8 internal constant NONE = 0;
@@ -321,6 +339,8 @@ library AaveV3PlasmaEModes {
   uint8 internal constant wrsETH__WETH_wstETH = 9;
 
   uint8 internal constant wstETH__WETH = 10;
+
+  uint8 internal constant syrupUSDT__USDT0 = 11;
 }
 library AaveV3PlasmaExternalLibraries {
   // https://plasmascan.to/address/0x50a4646D4f5Cc0e45051bF4f222D02fA39eC749D
