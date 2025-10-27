@@ -4651,6 +4651,50 @@
       }
     },
     {
+      "chainId": 43114,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usde.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6533afac2E7BCCB20dca161449A13A32D391fb00",
+      "name": "Aave Avalanche USDe",
+      "decimals": 18,
+      "symbol": "aAvaUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausde.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "Staked USDe",
+      "decimals": 18,
+      "symbol": "sUSDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/susde.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x44705f578135cC5d703b4c9c122528C73Eb87145",
+      "name": "Aave Avalanche sUSDe",
+      "decimals": 18,
+      "symbol": "aAvasUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asusde.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+      }
+    },
+    {
       "chainId": 8453,
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -9108,5 +9152,5 @@
     }
   ],
   "version": { "major": 3, "minor": 0, "patch": 142 },
-  "timestamp": "2025-10-23T22:49:51.467Z"
+  "timestamp": "2025-10-27T00:16:46.639Z"
 }

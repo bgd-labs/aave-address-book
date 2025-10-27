@@ -103,6 +103,9 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x929B8a21a604b93DD7e95d5b9aAa3aDf5bE250ae
   address internal constant STATA_FACTORY = 0x929B8a21a604b93DD7e95d5b9aAa3aDf5bE250ae;
 
+  // https://bscscan.com/address/0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D
+  address internal constant EDGE_RISK_ORACLE = 0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D;
+
   // https://bscscan.com/address/0x655252250f4A453854040A49E8280951A76f3033
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x655252250f4A453854040A49E8280951A76f3033;
 

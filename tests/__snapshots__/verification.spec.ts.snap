@@ -4,6 +4,30 @@ exports[`verification > should have all contracts verified except for the known 
 [
   {
     "item": {
+      "chainId": 43114,
+      "path": [
+        "AaveV3Avalanche",
+        "ASSETS",
+        "USDe",
+        "UNDERLYING",
+      ],
+      "value": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+    },
+  },
+  {
+    "item": {
+      "chainId": 43114,
+      "path": [
+        "AaveV3Avalanche",
+        "ASSETS",
+        "sUSDe",
+        "UNDERLYING",
+      ],
+      "value": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+    },
+  },
+  {
+    "item": {
       "chainId": 324,
       "path": [
         "AaveV3ZkSync",
@@ -24,16 +48,6 @@ exports[`verification > should have all contracts verified except for the known 
         "V_TOKEN",
       ],
       "value": "0x97deC07366Be72884331BE21704Fd93BF35286f9",
-    },
-  },
-  {
-    "item": {
-      "chainId": 43114,
-      "path": [
-        "MiscAvalanche",
-        "REWARD_STEWARD",
-      ],
-      "value": "0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08",
     },
   },
 ]
