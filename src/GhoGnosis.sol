@@ -20,4 +20,7 @@ library GhoGnosis {
 
   // https://gnosisscan.io/address/0x06179f7C1be40863405f374E7f5F8806c728660A
   address internal constant GHO_CCIP_STEWARD = 0x06179f7C1be40863405f374E7f5F8806c728660A;
+
+  // https://gnosisscan.io/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
+  address internal constant RISK_COUNCIL = 0x8513e6F37dBc52De87b166980Fa3F50639694B60;
 }

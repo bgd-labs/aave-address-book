@@ -6431,6 +6431,9 @@
     },
     "0x7BD97DD6C199532d11Cf5f55E13a120dB6dd0F4F": {
       "name": "RiskOracle"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
     }
   },
   "137": {
@@ -10791,6 +10794,21 @@
     "0x6E3748B753D38e33CC476aF63C9d220Af65b7fc4": {
       "name": "GelatoAaveStewardInjectorDiscountRate"
     },
+    "0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1": {
+      "name": "GhoOracle"
+    },
+    "0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B": {
+      "name": "GhoBucketSteward"
+    },
+    "0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6": {
+      "name": "GhoCcipSteward"
+    },
     "0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a": {
       "name": "PendlePrincipalToken"
     },
@@ -10904,6 +10922,9 @@
     },
     "0x0A3F8218a98337Ef37dCAE4F8a8cfaB0711C64cF": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "SafeProxy"
     }
   },
   "42161": {
@@ -14124,6 +14145,9 @@
     },
     "0x47D9b89775958F0b5c7734C5570565Ce575e7e94": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
     }
   },
   "59144": {
