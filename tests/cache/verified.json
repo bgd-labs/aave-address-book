@@ -5026,6 +5026,9 @@
     },
     "0xfD2aaE32247E5015AcB04Aa8220616D6647979aC": {
       "name": "RewardsSteward"
+    },
+    "0x9f6aA2aB14bFF53e4b79A81ce1554F1DFdbb6608": {
+      "name": "RiskOracle"
     }
   },
   "56": {
@@ -5967,6 +5970,9 @@
     },
     "0x6046A62a80a2c19A0De91063602ce90533c62ae1": {
       "name": "RewardsSteward"
+    },
+    "0x239d3Bc5fa247337287cb03f53B8bc63DBBc332D": {
+      "name": "RiskOracle"
     }
   },
   "100": {
@@ -6557,6 +6563,9 @@
     },
     "0xE513b6304712D1055C88f72f1952FAe49c09f4ce": {
       "name": "RewardsSteward"
+    },
+    "0x7BD97DD6C199532d11Cf5f55E13a120dB6dd0F4F": {
+      "name": "RiskOracle"
     }
   },
   "137": {
@@ -8023,6 +8032,9 @@
     },
     "0xF18F15362e5fB4277DCE713F170341942F43aC3E": {
       "name": "RewardsSteward"
+    },
+    "0x9f6aA2aB14bFF53e4b79A81ce1554F1DFdbb6608": {
+      "name": "RiskOracle"
     }
   },
   "146": {
@@ -11015,6 +11027,18 @@
     },
     "0xa047fdFb3420A27a5f926735b475fE5a1E968786": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xC4374775489CB9C56003BF2C9b12495fC64F0771": {
+      "name": "BurnMintERC20"
+    },
+    "0xD4eE376C40EdC83832aAaFc18fC0272660F5e90b": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDA5D1a9b7F515457638c01db13a18Bd3514fC4A6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0A3F8218a98337Ef37dCAE4F8a8cfaB0711C64cF": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "42161": {
@@ -14023,6 +14047,30 @@
     },
     "0xD9Dee878Eb31303FD58D412cE79439400b340A22": {
       "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08": {
+      "name": "RewardsSteward"
+    },
+    "0x6533afac2E7BCCB20dca161449A13A32D391fb00": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x44705f578135cC5d703b4c9c122528C73Eb87145": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8Fb2db0A3b25db76B9BE2013751F8390ea8E5f0A": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34": {
+      "name": "ENAOFT"
+    },
+    "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2": {
+      "name": "StakedUSDeOFT"
     }
   },
   "57073": {
