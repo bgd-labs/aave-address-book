@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.36.0](https://github.com/bgd-labs/aave-address-book/compare/v4.35.1...v4.36.0) (2025-10-27)
+
+
+### Features
+
+* gho on plasma ([#1119](https://github.com/bgd-labs/aave-address-book/issues/1119)) ([c146a2d](https://github.com/bgd-labs/aave-address-book/commit/c146a2de4822610236a55197cb7d7caa7503cb59))
+
+
+### Bug Fixes
+
+* Add ethereum horizon addresses ([#1128](https://github.com/bgd-labs/aave-address-book/issues/1128)) ([4030c4d](https://github.com/bgd-labs/aave-address-book/commit/4030c4d72cfaff98b641bf9ae3d05542316d7144))
+
 ## [4.35.1](https://github.com/bgd-labs/aave-address-book/compare/v4.35.0...v4.35.1) (2025-10-27)
 
 
