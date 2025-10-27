@@ -16,6 +16,7 @@ import {
   mainnetProtoV2Pool,
   sepoliaProtoV3,
   lidoEthereumMainnetProtoV3Pool,
+  horizonEthereumMainnetProtoV3Pool,
   etherFiEthereumMainnetProtoV3Pool,
 } from './configs/pools/ethereum';
 import { metisProtoV3 } from './configs/pools/metis';
@@ -169,6 +170,7 @@ async function main() {
       // harmonyProtoV3,
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
+      horizonEthereumMainnetProtoV3Pool,
       lineaProtoV3,
       celoProtoV3,
       // mantleProtoV3,

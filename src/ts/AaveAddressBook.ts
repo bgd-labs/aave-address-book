@@ -47,6 +47,7 @@ export * as AaveV3ScrollSepolia from './AaveV3ScrollSepolia';
 export * as AaveV3ZkSync from './AaveV3ZkSync';
 export * as AaveV3EthereumLido from './AaveV3EthereumLido';
 export * as AaveV3EthereumEtherFi from './AaveV3EthereumEtherFi';
+export * as AaveV3EthereumHorizon from './AaveV3EthereumHorizon';
 export * as AaveV3Linea from './AaveV3Linea';
 export * as AaveV3Celo from './AaveV3Celo';
 export * as AaveV3Sonic from './AaveV3Sonic';

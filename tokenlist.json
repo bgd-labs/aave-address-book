@@ -8132,6 +8132,145 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x946281A2d0DD6e650d08f74833323D66AE4c8b12",
+      "name": "Aave Horizon RWA GHO",
+      "decimals": 18,
+      "symbol": "aHorRwaGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x68215B6533c47ff9f7125aC95adf00fE4a62f79e",
+      "name": "Aave Horizon RWA USDC",
+      "decimals": 6,
+      "symbol": "aHorRwaUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xE3190143Eb552456F88464662f0c0C4aC67A77eB",
+      "name": "Aave Horizon RWA RLUSD",
+      "decimals": 18,
+      "symbol": "aHorRwaRLUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/arlusd.svg",
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x43415eB6ff9DB7E26A15b704e7A3eDCe97d31C4e",
+      "name": "Superstate Short Duration US Government Securities Fund",
+      "decimals": 6,
+      "symbol": "USTB",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x4E58a2E433A739726134c83d2f07b2562e8dFdB3",
+      "name": "Aave Horizon RWA USTB",
+      "decimals": 6,
+      "symbol": "aHorRwaUSTB",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x43415eB6ff9DB7E26A15b704e7A3eDCe97d31C4e"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+      "name": "Superstate Crypto Carry Fund",
+      "decimals": 6,
+      "symbol": "USCC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x08b798c40b9AB931356d9aB4235F548325C4cb80",
+      "name": "Aave Horizon RWA USCC",
+      "decimals": 6,
+      "symbol": "aHorRwaUSCC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x136471a34f6ef19fE571EFFC1CA711fdb8E49f2b",
+      "name": "US Yield Coin",
+      "decimals": 6,
+      "symbol": "USYC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xc167932AC4EEc2B65844EF00D31b4550250536A5",
+      "name": "Aave Horizon RWA USYC",
+      "decimals": 6,
+      "symbol": "aHorRwaUSYC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x136471a34f6ef19fE571EFFC1CA711fdb8E49f2b"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x8c213ee79581Ff4984583C6a801e5263418C4b86",
+      "name": "Janus Henderson Anemoy Treasury Fund",
+      "decimals": 6,
+      "symbol": "JTRSY",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x844f07AB09aa5dBDCE6A9b1206CE150E1eaDacCb",
+      "name": "Aave Horizon RWA JTRSY",
+      "decimals": 6,
+      "symbol": "aHorRwaJTRSY",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x8c213ee79581Ff4984583C6a801e5263418C4b86"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x5a0F93D040De44e78F251b03c43be9CF317Dcf64",
+      "name": "Janus Henderson Anemoy AAA CLO Fund Token",
+      "decimals": 6,
+      "symbol": "JAAA",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xB0EC6c4482Ac1Ef77bE239C0AC833CF37A27c876",
+      "name": "Aave Horizon RWA JAAA",
+      "decimals": 6,
+      "symbol": "aHorRwaJAAA",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x5a0F93D040De44e78F251b03c43be9CF317Dcf64"
+      }
+    },
+    {
       "chainId": 59144,
       "address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
       "name": "Wrapped Ether",
@@ -9151,6 +9290,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 142 },
-  "timestamp": "2025-10-27T00:16:46.639Z"
+  "version": { "major": 3, "minor": 0, "patch": 143 },
+  "timestamp": "2025-10-27T13:51:27.646Z"
 }
