@@ -265,6 +265,24 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da',
     ORACLE: '0x3368310bC4AeE5D96486A73bae8E6b49FcDE62D3',
   },
+  USDe: {
+    decimals: 18,
+    id: 15,
+    UNDERLYING: '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+    A_TOKEN: '0x6533afac2E7BCCB20dca161449A13A32D391fb00',
+    V_TOKEN: '0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D',
+    INTEREST_RATE_STRATEGY: '0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da',
+    ORACLE: '0x5b7810a910B4a878AaA4800a824E5E5796838009',
+  },
+  sUSDe: {
+    decimals: 18,
+    id: 16,
+    UNDERLYING: '0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2',
+    A_TOKEN: '0x44705f578135cC5d703b4c9c122528C73Eb87145',
+    V_TOKEN: '0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77',
+    INTEREST_RATE_STRATEGY: '0xCe1C5509f2f4d755aA64B8D135B15ec6F12a93da',
+    ORACLE: '0x8Fb2db0A3b25db76B9BE2013751F8390ea8E5f0A',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -295,6 +313,35 @@ export const E_MODES = {
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
+  },
+  '3': {
+    label: 'USDe / USDC,USDt,GHO',
+    collateralBitmap: '32768',
+    collateralAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
+    borrowableBitmap: '8228',
+    borrowableAssets: [
+      '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+      '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
+      '0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73',
+    ],
+    ltv: 8900,
+    liquidationThreshold: 9200,
+    liquidationBonus: 10200,
+  },
+  '4': {
+    label: 'sUSDe / USDC,USDt,GHO,USDe',
+    collateralBitmap: '65536',
+    collateralAssets: ['0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2'],
+    borrowableBitmap: '40996',
+    borrowableAssets: [
+      '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+      '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
+      '0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73',
+      '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+    ],
+    ltv: 8900,
+    liquidationThreshold: 9100,
+    liquidationBonus: 10400,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
