@@ -13915,6 +13915,21 @@
     },
     "0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08": {
       "name": "RewardsSteward"
+    },
+    "0x6533afac2E7BCCB20dca161449A13A32D391fb00": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x44705f578135cC5d703b4c9c122528C73Eb87145": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8Fb2db0A3b25db76B9BE2013751F8390ea8E5f0A": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "57073": {
