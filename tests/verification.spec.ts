@@ -1,4 +1,4 @@
-import { ChainId, ChainList, getExplorer, getSourceCode } from '@bgd-labs/toolbox';
+import { BlockscoutStyleSourceCode, ChainId, ChainList, EtherscanStyleSourceCode, getExplorer, getSourceCode } from '@bgd-labs/toolbox';
 import { describe, expect, it } from 'vitest';
 import { flattenedAddresses, ListItem } from '../ui/src/utils/getAddresses';
 import verified from './cache/verified.json';
@@ -61,26 +61,22 @@ async function verifyProxy(item: ListItem) {
 
 async function checkVerified(item: ListItem) {
   try {
-    const source = await getSourceCode({
+    const source: BlockscoutStyleSourceCode | EtherscanStyleSourceCode = await getSourceCode({
       chainId: item.chainId,
       apiKey: process.env.ETHERSCAN_API_KEY,
       address: item.value as Address,
-      apiUrl: item.chainId === ChainId.xLayer ? getApiUrl(item.chainId) : process.env.EXPLORER_PROXY,
+      apiUrl: process.env.EXPLORER_PROXY,
     });
 
     if (item.chainId === ChainId.xLayer) {
       // TODO: check for implementation then check if it is also verified
       if (source) {
 
-        const parsed: any = JSON.parse(source as any);
-        // safely extract implementation if exists
-        const implementation = parsed.implementation ?? null;
-        if (implementation) {
+        if (source.Implementation !== '') {
           const implementationSource = await getSourceCode({
             chainId: item.chainId,
             apiKey: process.env.ETHERSCAN_API_KEY,
-            address: implementation as Address,
-            apiUrl: getApiUrl(item.chainId),
+            address: source.Implementation as Address,
           });
           if (implementationSource) {
             return { status: '1', result: implementationSource };
@@ -114,7 +110,6 @@ function getApiUrl(chainId: number) {
   if (chainId === ChainId.soneium) return `https://soneium.blockscout.com/api`;
   if (chainId === ChainId.bob) return `https://explorer.gobob.xyz/api`;
   if (chainId === ChainId.ink) return `https://explorer.inkonchain.com/api/`;
-  if (chainId === ChainId.xLayer) return `https://www.oklink.com/api/v5/explorer/contract/verify-contract-info`;
   return getExplorer(chainId).api;
 }
 
@@ -133,11 +128,7 @@ const knownErrors = {
   },
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
-  },
-  196: {
-    '0xeB55A63bf9993d80c86D47f819B5eC958c7C127B': true, // xlayer governance guardian
-    '0xEB0682d148e874553008730f0686ea89db7DA412': true, // xlayer transparent proxy factory
-  },
+  }
 };
 
 describe('verification', { timeout: 500_000 }, () => {

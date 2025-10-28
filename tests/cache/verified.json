@@ -7888,6 +7888,9 @@
     },
     "0xF18F15362e5fB4277DCE713F170341942F43aC3E": {
       "name": "RewardsSteward"
+    },
+    "0x2eaD203C5C1C00612B1DdbBb20e4180dA822d6ff": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
@@ -8277,6 +8280,14 @@
     },
     "0x9eFf17b168867Dc2bCD87D2Ab44e4857902dbC29": {
       "name": "RewardsSteward"
+    }
+  },
+  "196": {
+    "0xeB55A63bf9993d80c86D47f819B5eC958c7C127B": {
+      "name": "SafeL2"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "324": {
@@ -13903,6 +13914,27 @@
     },
     "0x4C6Cf8b226500d92FCBC498c3EC4C2e1091dAC08": {
       "name": "RewardsSteward"
+    },
+    "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34": {
+      "name": "ENAOFT"
+    },
+    "0x6533afac2E7BCCB20dca161449A13A32D391fb00": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6B4b37618D85Db2a7b469983C888040F7F05Ea3D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2": {
+      "name": "StakedUSDeOFT"
+    },
+    "0x44705f578135cC5d703b4c9c122528C73Eb87145": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8437d7C167dFB82ED4Cb79CD44B7a32A1dd95c77": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8Fb2db0A3b25db76B9BE2013751F8390ea8E5f0A": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "57073": {

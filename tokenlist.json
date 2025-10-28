@@ -3554,6 +3554,20 @@
     },
     {
       "chainId": 137,
+      "address": "0x2eaD203C5C1C00612B1DdbBb20e4180dA822d6ff",
+      "name": "Wrapped Aave Polygon USDT",
+      "decimals": 6,
+      "symbol": "waPolUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt0.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+        "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
+      }
+    },
+    {
+      "chainId": 137,
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "name": "Aave Polygon AAVE",
       "decimals": 18,
@@ -4648,6 +4662,50 @@
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usde.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x6533afac2E7BCCB20dca161449A13A32D391fb00",
+      "name": "Aave Avalanche USDe",
+      "decimals": 18,
+      "symbol": "aAvaUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausde.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "Staked USDe",
+      "decimals": 18,
+      "symbol": "sUSDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/susde.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x44705f578135cC5d703b4c9c122528C73Eb87145",
+      "name": "Aave Avalanche sUSDe",
+      "decimals": 18,
+      "symbol": "aAvasUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asusde.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
       }
     },
     {
@@ -9112,6 +9170,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 142 },
-  "timestamp": "2025-10-24T10:49:12.515Z"
+  "version": { "major": 3, "minor": 0, "patch": 143 },
+  "timestamp": "2025-10-28T16:22:11.325Z"
 }
