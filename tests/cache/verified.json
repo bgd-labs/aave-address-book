@@ -8038,6 +8038,9 @@
     },
     "0x9f6aA2aB14bFF53e4b79A81ce1554F1DFdbb6608": {
       "name": "RiskOracle"
+    },
+    "0x2eaD203C5C1C00612B1DdbBb20e4180dA822d6ff": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
@@ -8427,6 +8430,14 @@
     },
     "0x9eFf17b168867Dc2bCD87D2Ab44e4857902dbC29": {
       "name": "RewardsSteward"
+    }
+  },
+  "196": {
+    "0xeB55A63bf9993d80c86D47f819B5eC958c7C127B": {
+      "name": "SafeL2"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
     }
   },
   "324": {
