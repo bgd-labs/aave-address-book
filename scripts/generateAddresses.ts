@@ -16,6 +16,7 @@ import {
   mainnetProtoV2Pool,
   sepoliaProtoV3,
   lidoEthereumMainnetProtoV3Pool,
+  horizonEthereumMainnetProtoV3Pool,
   etherFiEthereumMainnetProtoV3Pool,
 } from './configs/pools/ethereum';
 import { metisProtoV3 } from './configs/pools/metis';
@@ -75,6 +76,7 @@ import { ghoBase } from './configs/gho/base';
 import { ghoEthereum } from './configs/gho/ethereum';
 import { ghoGnosis } from './configs/gho/gnosis';
 import { ghoInk } from './configs/gho/ink';
+import { ghoPlasma } from './configs/gho/plasma';
 import { generateGho } from './generator/ghoGenerator';
 import { governanceConfigLinea } from './configs/governance/linea';
 import { mantleAddresses } from './configs/networks/mantle';
@@ -171,6 +173,7 @@ async function main() {
       // harmonyProtoV3,
       lidoEthereumMainnetProtoV3Pool,
       etherFiEthereumMainnetProtoV3Pool,
+      horizonEthereumMainnetProtoV3Pool,
       lineaProtoV3,
       celoProtoV3,
       // mantleProtoV3,
@@ -180,7 +183,7 @@ async function main() {
       plasmaProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk].map((config) =>
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma].map((config) =>
     generateGho(config),
   );
   const umbrellaAddresses = await Promise.all(

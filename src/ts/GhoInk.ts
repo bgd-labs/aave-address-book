@@ -14,4 +14,7 @@ export const GHO_BUCKET_STEWARD = '0xA5Ba213867E175A182a5dd6A9193C6158738105A';
 // https://explorer.inkonchain.com/address/0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B
 export const GHO_CCIP_STEWARD = '0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B';
 
+// https://explorer.inkonchain.com/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
+export const RISK_COUNCIL = '0x8513e6F37dBc52De87b166980Fa3F50639694B60';
+
 export const CHAIN_ID = 57073;
