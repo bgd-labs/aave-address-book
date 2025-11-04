@@ -3911,6 +3911,18 @@
     },
     "0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3": {
       "name": "SupplyLogic"
+    },
+    "0x2255718832bC9fD3bE1CaF75084F4803DA14FF01": {
+      "name": "ERC1967Proxy"
+    },
+    "0xE1CfD16b8E4B1C86Bb5b7A104cfEFbc7b09326dD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xEAf93Fd541f11D2617C2915D02F7fe67bCa71d4f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5ed77a9D9b7cc80E9d0D7711024AF38C2643C1c4": {
+      "name": "EACAggregatorProxy"
     }
   },
   "10": {
@@ -8038,6 +8050,9 @@
     },
     "0x9f6aA2aB14bFF53e4b79A81ce1554F1DFdbb6608": {
       "name": "RiskOracle"
+    },
+    "0x2eaD203C5C1C00612B1DdbBb20e4180dA822d6ff": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
@@ -8427,6 +8442,32 @@
     },
     "0x9eFf17b168867Dc2bCD87D2Ab44e4857902dbC29": {
       "name": "RewardsSteward"
+    }
+  },
+  "196": {
+    "0xeB55A63bf9993d80c86D47f819B5eC958c7C127B": {
+      "name": "SafeL2"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xFdd46155fD3DA5B907AD3B9f9395366290f58097": {
+      "name": "CrossChainControllerWithEmergencyMode"
+    },
+    "0x80e11cB895a23C901a990239E5534054C66476B5": {
+      "name": "PayloadsController"
+    },
+    "0x9fE056F44510F970d724adA16903ba5D75CC4742": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xD6727ec503A8d0C10a0EAA4e76eAf9A628188b25": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x8a86927E3cf7309D74E504EBDb866903DBD11a1f": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19": {
+      "name": "Executor"
     }
   },
   "324": {

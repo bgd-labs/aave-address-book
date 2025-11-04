@@ -448,6 +448,8 @@ library AaveV3BaseEModes {
   uint8 internal constant wstETH__WETH = 8;
 
   uint8 internal constant cbETH__WETH = 9;
+
+  uint8 internal constant cbBTC__USDC_GHO = 10;
 }
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB

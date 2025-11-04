@@ -3554,6 +3554,20 @@
     },
     {
       "chainId": 137,
+      "address": "0x2eaD203C5C1C00612B1DdbBb20e4180dA822d6ff",
+      "name": "Wrapped Aave Polygon USDT",
+      "decimals": 6,
+      "symbol": "waPolUSDT",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdt0.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+        "underlyingAToken": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620"
+      }
+    },
+    {
+      "chainId": 137,
       "address": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375",
       "name": "Aave Polygon AAVE",
       "decimals": 18,
@@ -8271,6 +8285,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x2255718832bC9fD3bE1CaF75084F4803DA14FF01",
+      "name": "VanEck Treasury Fund",
+      "decimals": 6,
+      "symbol": "VBILL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xE1CfD16b8E4B1C86Bb5b7A104cfEFbc7b09326dD",
+      "name": "Aave Horizon RWA VBILL",
+      "decimals": 6,
+      "symbol": "aHorRwaVBILL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x2255718832bC9fD3bE1CaF75084F4803DA14FF01"
+      }
+    },
+    {
       "chainId": 59144,
       "address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
       "name": "Wrapped Ether",
@@ -8842,7 +8876,8 @@
       "name": "Kraken Wrapped Bitcoin",
       "decimals": 8,
       "symbol": "kBTC",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/kbtc.svg"
     },
     {
       "chainId": 57073,
@@ -8851,6 +8886,7 @@
       "decimals": 8,
       "symbol": "aInkWlKBTC",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/akbtc.svg",
       "extensions": {
         "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
         "underlying": "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98"
@@ -9034,7 +9070,8 @@
       "name": "XAUt0",
       "decimals": 6,
       "symbol": "XAUt0",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/xaut0.svg"
     },
     {
       "chainId": 9745,
@@ -9043,6 +9080,7 @@
       "decimals": 6,
       "symbol": "aPlaXAUt0",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/axaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193"
@@ -9055,6 +9093,7 @@
       "decimals": 6,
       "symbol": "waPlaXAUt0",
       "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataxaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193",
@@ -9290,6 +9329,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 143 },
-  "timestamp": "2025-10-27T13:51:27.646Z"
+  "version": { "major": 3, "minor": 0, "patch": 145 },
+  "timestamp": "2025-11-04T11:24:56.277Z"
 }

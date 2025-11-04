@@ -1,0 +1,22 @@
+// https://www.oklink.com/xlayer/address/0xFdd46155fD3DA5B907AD3B9f9395366290f58097
+export const CROSS_CHAIN_CONTROLLER = '0xFdd46155fD3DA5B907AD3B9f9395366290f58097';
+
+// IPayloadsControllerCore https://www.oklink.com/xlayer/address/0x80e11cB895a23C901a990239E5534054C66476B5
+export const PAYLOADS_CONTROLLER = '0x80e11cB895a23C901a990239E5534054C66476B5';
+
+// https://www.oklink.com/xlayer/address/0x9fE056F44510F970d724adA16903ba5D75CC4742
+export const PC_DATA_HELPER = '0x9fE056F44510F970d724adA16903ba5D75CC4742';
+
+// https://www.oklink.com/xlayer/address/0xD6727ec503A8d0C10a0EAA4e76eAf9A628188b25
+export const GRANULAR_GUARDIAN = '0xD6727ec503A8d0C10a0EAA4e76eAf9A628188b25';
+
+// https://www.oklink.com/xlayer/address/0xeB55A63bf9993d80c86D47f819B5eC958c7C127B
+export const GOVERNANCE_GUARDIAN = '0xeB55A63bf9993d80c86D47f819B5eC958c7C127B';
+
+// https://www.oklink.com/xlayer/address/0x8a86927E3cf7309D74E504EBDb866903DBD11a1f
+export const CL_EMERGENCY_ORACLE = '0x8a86927E3cf7309D74E504EBDb866903DBD11a1f';
+
+// https://www.oklink.com/xlayer/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
+export const EXECUTOR_LVL_1 = '0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19';
+
+export const CHAIN_ID = 196;
