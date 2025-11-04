@@ -211,13 +211,33 @@ library AaveV3EthereumHorizonAssets {
   // https://etherscan.io/address/0x87593272C06f4FC49EC2942eBda0972d2F1Ab521
   address internal constant JAAA_INTEREST_RATE_STRATEGY =
     0x87593272C06f4FC49EC2942eBda0972d2F1Ab521;
+
+  // https://etherscan.io/address/0x2255718832bC9fD3bE1CaF75084F4803DA14FF01
+  address internal constant VBILL_UNDERLYING = 0x2255718832bC9fD3bE1CaF75084F4803DA14FF01;
+
+  uint8 internal constant VBILL_DECIMALS = 6;
+
+  // https://etherscan.io/address/0xE1CfD16b8E4B1C86Bb5b7A104cfEFbc7b09326dD
+  address internal constant VBILL_A_TOKEN = 0xE1CfD16b8E4B1C86Bb5b7A104cfEFbc7b09326dD;
+
+  // https://etherscan.io/address/0xEAf93Fd541f11D2617C2915D02F7fe67bCa71d4f
+  address internal constant VBILL_V_TOKEN = 0xEAf93Fd541f11D2617C2915D02F7fe67bCa71d4f;
+
+  // https://etherscan.io/address/0x5ed77a9D9b7cc80E9d0D7711024AF38C2643C1c4
+  address internal constant VBILL_ORACLE = 0x5ed77a9D9b7cc80E9d0D7711024AF38C2643C1c4;
+
+  // https://etherscan.io/address/0x87593272C06f4FC49EC2942eBda0972d2F1Ab521
+  address internal constant VBILL_INTEREST_RATE_STRATEGY =
+    0x87593272C06f4FC49EC2942eBda0972d2F1Ab521;
 }
 library AaveV3EthereumHorizonEModes {
   uint8 internal constant NONE = 0;
 
-  uint8 internal constant __ = 9;
+  uint8 internal constant VBILL__GHO = 1;
 
   uint8 internal constant USTB__GHO = 2;
+
+  uint8 internal constant __ = 9;
 
   uint8 internal constant USCC__GHO = 4;
 

@@ -130,16 +130,25 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x87593272C06f4FC49EC2942eBda0972d2F1Ab521',
     ORACLE: '0xF77f2537dba4ffD60f77fACdfB2c1706364fA03d',
   },
+  VBILL: {
+    decimals: 6,
+    id: 8,
+    UNDERLYING: '0x2255718832bC9fD3bE1CaF75084F4803DA14FF01',
+    A_TOKEN: '0xE1CfD16b8E4B1C86Bb5b7A104cfEFbc7b09326dD',
+    V_TOKEN: '0xEAf93Fd541f11D2617C2915D02F7fe67bCa71d4f',
+    INTEREST_RATE_STRATEGY: '0x87593272C06f4FC49EC2942eBda0972d2F1Ab521',
+    ORACLE: '0x5ed77a9D9b7cc80E9d0D7711024AF38C2643C1c4',
+  },
 } as const;
 export const E_MODES = {
   '1': {
-    label: ' / ',
-    collateralBitmap: '0',
-    collateralAssets: [],
-    borrowableBitmap: '0',
-    borrowableAssets: [],
-    ltv: 8300,
-    liquidationThreshold: 8800,
+    label: 'VBILL / GHO',
+    collateralBitmap: '256',
+    collateralAssets: ['0x2255718832bC9fD3bE1CaF75084F4803DA14FF01'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f'],
+    ltv: 8400,
+    liquidationThreshold: 8900,
     liquidationBonus: 10300,
   },
   '2': {

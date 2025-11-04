@@ -350,6 +350,19 @@ export const E_MODES = {
     liquidationThreshold: 9500,
     liquidationBonus: 10200,
   },
+  '10': {
+    label: 'cbBTC / USDC,GHO',
+    collateralBitmap: '64',
+    collateralAssets: ['0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf'],
+    borrowableBitmap: '272',
+    borrowableAssets: [
+      '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913',
+      '0x6Bb7a212910682DCFdbd5BCBb3e28FB4E8da10Ee',
+    ],
+    ltv: 8000,
+    liquidationThreshold: 8300,
+    liquidationBonus: 10400,
+  },
 } as const;
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',

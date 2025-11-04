@@ -8285,6 +8285,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x2255718832bC9fD3bE1CaF75084F4803DA14FF01",
+      "name": "VanEck Treasury Fund",
+      "decimals": 6,
+      "symbol": "VBILL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xE1CfD16b8E4B1C86Bb5b7A104cfEFbc7b09326dD",
+      "name": "Aave Horizon RWA VBILL",
+      "decimals": 6,
+      "symbol": "aHorRwaVBILL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x2255718832bC9fD3bE1CaF75084F4803DA14FF01"
+      }
+    },
+    {
       "chainId": 59144,
       "address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
       "name": "Wrapped Ether",
@@ -9309,6 +9329,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 144 },
-  "timestamp": "2025-10-28T16:26:59.181Z"
+  "version": { "major": 3, "minor": 0, "patch": 145 },
+  "timestamp": "2025-11-04T11:24:56.277Z"
 }
