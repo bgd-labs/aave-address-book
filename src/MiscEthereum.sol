@@ -99,4 +99,7 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB
   address internal constant REWARD_STEWARD = 0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB;
+
+  // https://etherscan.io/address/0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307
+  address internal constant AAVE_V4_SECURITY_AUDIT = 0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307;
 }
