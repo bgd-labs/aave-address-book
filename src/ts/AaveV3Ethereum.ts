@@ -1001,7 +1001,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10410,
+    liquidationBonus: 10380,
   },
   '25': {
     label: 'PT_sUSDE_25SEP2025,PT_sUSDE_27NOV2025 / USDe',
@@ -1014,7 +1014,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10210,
+    liquidationBonus: 10180,
   },
   '26': {
     label: 'weETH / WETH,wstETH',
@@ -1046,7 +1046,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10300,
+    liquidationBonus: 10270,
   },
   '28': {
     label: 'PT_USDe_25SEP2025,PT_USDe_27NOV2025 / USDe',
@@ -1057,9 +1057,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9360,
-    liquidationThreshold: 9560,
-    liquidationBonus: 10200,
+    ltv: 9400,
+    liquidationThreshold: 9600,
+    liquidationBonus: 10170,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
