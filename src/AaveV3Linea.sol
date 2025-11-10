@@ -171,6 +171,9 @@ library AaveV3LineaAssets {
   address internal constant USDT_INTEREST_RATE_STRATEGY =
     0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
 
+  // https://lineascan.build/address/0x4D11f27b1c4A5d232a200D2256A4E3d9bAACcF05
+  address internal constant USDT_STATA_TOKEN = 0x4D11f27b1c4A5d232a200D2256A4E3d9bAACcF05;
+
   // https://lineascan.build/address/0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F
   address internal constant wstETH_UNDERLYING = 0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F;
 
