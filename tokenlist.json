@@ -9291,6 +9291,26 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0x6100E367285b01F48D07953803A2d8dCA5D19873",
+      "name": "Wrapped XPL",
+      "decimals": 18,
+      "symbol": "WXPL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x5aA4bc74811D672DA5308019dA4779f673e60B47",
+      "name": "Aave Plasma WXPL",
+      "decimals": 18,
+      "symbol": "aPlaWXPL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x6100E367285b01F48D07953803A2d8dCA5D19873"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -9343,6 +9363,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 144 },
-  "timestamp": "2025-11-10T00:16:26.303Z"
+  "version": { "major": 3, "minor": 0, "patch": 145 },
+  "timestamp": "2025-11-13T00:15:41.620Z"
 }

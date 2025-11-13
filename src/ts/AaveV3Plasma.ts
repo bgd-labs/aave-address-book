@@ -190,6 +190,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC',
     ORACLE: '0x0A3F8218a98337Ef37dCAE4F8a8cfaB0711C64cF',
   },
+  WXPL: {
+    decimals: 18,
+    id: 11,
+    UNDERLYING: '0x6100E367285b01F48D07953803A2d8dCA5D19873',
+    A_TOKEN: '0x5aA4bc74811D672DA5308019dA4779f673e60B47',
+    V_TOKEN: '0x7ec35d7008682c33dBC6b214E01D919e8d441e48',
+    INTEREST_RATE_STRATEGY: '0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC',
+    ORACLE: '0xF932477C37715aE6657Ab884414Bd9876FE3f750',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -313,6 +322,16 @@ export const E_MODES = {
     ltv: 9000,
     liquidationThreshold: 9200,
     liquidationBonus: 10400,
+  },
+  '12': {
+    label: 'WXPL / USDT0',
+    collateralBitmap: '2048',
+    collateralAssets: ['0x6100E367285b01F48D07953803A2d8dCA5D19873'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb'],
+    ltv: 5000,
+    liquidationThreshold: 5500,
+    liquidationBonus: 11000,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
