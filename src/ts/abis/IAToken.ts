@@ -126,12 +126,23 @@ export const IAToken_ABI = [
         internalType: 'uint256',
       },
       {
+        name: 'scaledAmount',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+      {
         name: 'index',
         type: 'uint256',
         internalType: 'uint256',
       },
     ],
-    outputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'bool',
+        internalType: 'bool',
+      },
+    ],
     stateMutability: 'nonpayable',
   },
   {
@@ -179,29 +190,6 @@ export const IAToken_ABI = [
   },
   {
     type: 'function',
-    name: 'handleRepayment',
-    inputs: [
-      {
-        name: 'user',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'onBehalfOf',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'amount',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
     name: 'initialize',
     inputs: [
       {
@@ -210,19 +198,9 @@ export const IAToken_ABI = [
         internalType: 'contract IPool',
       },
       {
-        name: 'treasury',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
         name: 'underlyingAsset',
         type: 'address',
         internalType: 'address',
-      },
-      {
-        name: 'incentivesController',
-        type: 'address',
-        internalType: 'contract IAaveIncentivesController',
       },
       {
         name: 'aTokenDecimals',
@@ -263,7 +241,7 @@ export const IAToken_ABI = [
         internalType: 'address',
       },
       {
-        name: 'amount',
+        name: 'scaledAmount',
         type: 'uint256',
         internalType: 'uint256',
       },
@@ -287,7 +265,7 @@ export const IAToken_ABI = [
     name: 'mintToTreasury',
     inputs: [
       {
-        name: 'amount',
+        name: 'scaledAmount',
         type: 'uint256',
         internalType: 'uint256',
       },
@@ -498,7 +476,17 @@ export const IAToken_ABI = [
         internalType: 'address',
       },
       {
-        name: 'value',
+        name: 'amount',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+      {
+        name: 'scaledAmount',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+      {
+        name: 'index',
         type: 'uint256',
         internalType: 'uint256',
       },

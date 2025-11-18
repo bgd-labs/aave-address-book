@@ -28,25 +28,25 @@ library GhoEthereum {
   // https://etherscan.io/address/0x535b2f7C20B9C83d70e519cf9991578eF9816B7B
   address internal constant GSM_USDT = 0x535b2f7C20B9C83d70e519cf9991578eF9816B7B;
 
-  // https://etherscan.io/address/0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5
-  address internal constant GSM_USDC_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
+  // https://etherscan.io/address/0xE5025A7c15a44283A0616567181587eE6A646D64
+  address internal constant GSM_USDC_FEE_STRATEGY = 0xE5025A7c15a44283A0616567181587eE6A646D64;
 
-  // https://etherscan.io/address/0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5
-  address internal constant GSM_USDT_FEE_STRATEGY = 0xD4478A76aCeA81D3768A0ACB6e38f25eEB6Eb1B5;
+  // https://etherscan.io/address/0xA4346AEa575fCf5777D32F419E5850E5c68B2329
+  address internal constant GSM_USDT_FEE_STRATEGY = 0xA4346AEa575fCf5777D32F419E5850E5c68B2329;
 
-  // https://etherscan.io/address/0x430BEdcA5DfA6f94d1205Cb33AB4f008D0d9942a
-  address internal constant GSM_USDC_PRICE_STRATEGY = 0x430BEdcA5DfA6f94d1205Cb33AB4f008D0d9942a;
+  // https://etherscan.io/address/0x00e89F4022FD13AD56e321D50612Eec598eF3b72
+  address internal constant GSM_USDC_PRICE_STRATEGY = 0x00e89F4022FD13AD56e321D50612Eec598eF3b72;
 
-  // https://etherscan.io/address/0x4c707764cbFB4FFa078e169e6b8A6AdbE7526a2c
-  address internal constant GSM_USDT_PRICE_STRATEGY = 0x4c707764cbFB4FFa078e169e6b8A6AdbE7526a2c;
+  // https://etherscan.io/address/0x20Be7090711995336A13e24B9EA9e05ac2cdd8C0
+  address internal constant GSM_USDT_PRICE_STRATEGY = 0x20Be7090711995336A13e24B9EA9e05ac2cdd8C0;
 
-  // https://etherscan.io/address/0xef6beCa8D9543eC007bceA835aF768B58F730C1f
+  // https://etherscan.io/address/0x29F8c924B7aB50649c9597B8811d08f9Ef0310c3
   address internal constant GSM_USDC_ORACLE_SWAP_FREEZER =
-    0xef6beCa8D9543eC007bceA835aF768B58F730C1f;
+    0x29F8c924B7aB50649c9597B8811d08f9Ef0310c3;
 
-  // https://etherscan.io/address/0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5
+  // https://etherscan.io/address/0x6439DA186BD3d37fE7Fd36036543b403e9FAbaE7
   address internal constant GSM_USDT_ORACLE_SWAP_FREEZER =
-    0x71381e6718b37C12155CB961Ca3D374A8BfFa0e5;
+    0x6439DA186BD3d37fE7Fd36036543b403e9FAbaE7;
 
   // https://etherscan.io/address/0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34
   address internal constant GHO_AAVE_CORE_STEWARD = 0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34;

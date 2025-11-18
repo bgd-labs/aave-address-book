@@ -119,27 +119,7 @@ export const IPoolConfigurator_ABI = [
             internalType: 'address',
           },
           {
-            name: 'useVirtualBalance',
-            type: 'bool',
-            internalType: 'bool',
-          },
-          {
-            name: 'interestRateStrategyAddress',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
             name: 'underlyingAsset',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'treasury',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'incentivesController',
             type: 'address',
             internalType: 'address',
           },
@@ -471,29 +451,6 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
-    name: 'setReserveInterestRateStrategyAddress',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'newRateStrategyAddress',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'rateData',
-        type: 'bytes',
-        internalType: 'bytes',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
     name: 'setReservePause',
     inputs: [
       {
@@ -571,24 +528,6 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
-    name: 'setUnbackedMintCap',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'newUnbackedMintCap',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
     name: 'updateAToken',
     inputs: [
       {
@@ -598,16 +537,6 @@ export const IPoolConfigurator_ABI = [
         components: [
           {
             name: 'asset',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'treasury',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'incentivesController',
             type: 'address',
             internalType: 'address',
           },
@@ -639,36 +568,10 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
-    name: 'updateBridgeProtocolFee',
+    name: 'updateFlashloanPremium',
     inputs: [
       {
-        name: 'newBridgeProtocolFee',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    name: 'updateFlashloanPremiumToProtocol',
-    inputs: [
-      {
-        name: 'newFlashloanPremiumToProtocol',
-        type: 'uint128',
-        internalType: 'uint128',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    name: 'updateFlashloanPremiumTotal',
-    inputs: [
-      {
-        name: 'newFlashloanPremiumTotal',
+        name: 'newFlashloanPremium',
         type: 'uint128',
         internalType: 'uint128',
       },
@@ -687,11 +590,6 @@ export const IPoolConfigurator_ABI = [
         components: [
           {
             name: 'asset',
-            type: 'address',
-            internalType: 'address',
-          },
-          {
-            name: 'incentivesController',
             type: 'address',
             internalType: 'address',
           },
@@ -1335,31 +1233,6 @@ export const IPoolConfigurator_ABI = [
       },
       {
         name: 'newSupplyCap',
-        type: 'uint256',
-        indexed: false,
-        internalType: 'uint256',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
-    name: 'UnbackedMintCapChanged',
-    inputs: [
-      {
-        name: 'asset',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'oldUnbackedMintCap',
-        type: 'uint256',
-        indexed: false,
-        internalType: 'uint256',
-      },
-      {
-        name: 'newUnbackedMintCap',
         type: 'uint256',
         indexed: false,
         internalType: 'uint256',

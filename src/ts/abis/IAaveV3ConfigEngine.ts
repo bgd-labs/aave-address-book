@@ -197,6 +197,51 @@ export const IAaveV3ConfigEngine_ABI = [
   },
   {
     type: 'function',
+    name: 'createEModeCategories',
+    inputs: [
+      {
+        name: 'creations',
+        type: 'tuple[]',
+        internalType: 'struct IAaveV3ConfigEngine.EModeCategoryCreation[]',
+        components: [
+          {
+            name: 'ltv',
+            type: 'uint256',
+            internalType: 'uint256',
+          },
+          {
+            name: 'liqThreshold',
+            type: 'uint256',
+            internalType: 'uint256',
+          },
+          {
+            name: 'liqBonus',
+            type: 'uint256',
+            internalType: 'uint256',
+          },
+          {
+            name: 'label',
+            type: 'string',
+            internalType: 'string',
+          },
+          {
+            name: 'borrowables',
+            type: 'address[]',
+            internalType: 'address[]',
+          },
+          {
+            name: 'collaterals',
+            type: 'address[]',
+            internalType: 'address[]',
+          },
+        ],
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'listAssets',
     inputs: [
       {

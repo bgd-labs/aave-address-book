@@ -7,7 +7,7 @@ import {mainnetProtoV3Pool} from './pools/ethereum';
  */
 export const ABI_INTERFACES = [
   'ICollector',
-  'lib/aave-v3-origin/src/contracts/extensions/v3-config-engine/IAaveV3ConfigEngine.sol:IAaveV3ConfigEngine',
+  'lib/aave-v3-origin/src/contracts/extensions/v3-config-engine/IAaveV3ConfigEngine.sol',
   'AggregatorInterface',
   'IPayloadsControllerCore',
   'IVotingMachineWithProofs',
@@ -17,12 +17,12 @@ export const ABI_INTERFACES = [
   'IGovernancePowerStrategy',
   'IDataWarehouse',
   'IExecutorWithTimelock',
-  'lib/aave-v3-origin/src/contracts/dependencies/openzeppelin/contracts/IERC20.sol:IERC20',
+  'lib/aave-v3-origin/src/contracts/dependencies/openzeppelin/contracts/IERC20.sol',
   'IERC20Detailed',
   'IAToken',
   'IDefaultInterestRateStrategy',
-  'lib/aave-v3-origin/src/contracts/interfaces/IAaveOracle.sol:IAaveOracle',
-  'lib/aave-v3-origin/src/contracts/rewards/interfaces/IRewardsController.sol:IRewardsController',
+  'lib/aave-v3-origin/src/contracts/interfaces/IAaveOracle.sol',
+  'lib/aave-v3-origin/src/contracts/rewards/interfaces/IRewardsController.sol',
   'IExecutor',
   'ICrossChainController',
   'IWithGuardian',
@@ -37,7 +37,7 @@ export const ABI_INTERFACES = [
   'IStakeToken',
   'IStataTokenFactory',
   'IStataTokenV2',
-  'lib/aave-v3-origin/src/contracts/helpers/interfaces/IWrappedTokenGatewayV3.sol:IWrappedTokenGatewayV3',
+  'lib/aave-v3-origin/src/contracts/helpers/interfaces/IWrappedTokenGatewayV3.sol',
 ];
 
 /**
