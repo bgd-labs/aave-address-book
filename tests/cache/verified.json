@@ -3923,6 +3923,24 @@
     },
     "0x5ed77a9D9b7cc80E9d0D7711024AF38C2643C1c4": {
       "name": "EACAggregatorProxy"
+    },
+    "0x06fbDE909B43f01202E3C6207De1D27cC208AcC1": {
+      "name": "FixedFeeStrategy"
+    },
+    "0xfDB0090A92d20EE39d82ac680477b1F58f0A23dE": {
+      "name": "FixedFeeStrategy"
+    },
+    "0x00e89F4022FD13AD56e321D50612Eec598eF3b72": {
+      "name": "FixedPriceStrategy4626"
+    },
+    "0x20Be7090711995336A13e24B9EA9e05ac2cdd8C0": {
+      "name": "FixedPriceStrategy4626"
+    },
+    "0x29F8c924B7aB50649c9597B8811d08f9Ef0310c3": {
+      "name": "OracleSwapFreezer"
+    },
+    "0x6439DA186BD3d37fE7Fd36036543b403e9FAbaE7": {
+      "name": "OracleSwapFreezer"
     }
   },
   "10": {
