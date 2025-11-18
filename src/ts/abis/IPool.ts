@@ -15,19 +15,6 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'BRIDGE_PROTOCOL_FEE',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
     name: 'FLASHLOAN_PREMIUM_TOTAL',
     inputs: [],
     outputs: [
@@ -67,31 +54,33 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'backUnbacked',
+    name: 'RESERVE_INTEREST_RATE_STRATEGY',
+    inputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'address',
+        internalType: 'address',
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'approvePositionManager',
     inputs: [
       {
-        name: 'asset',
+        name: 'positionManager',
         type: 'address',
         internalType: 'address',
       },
       {
-        name: 'amount',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-      {
-        name: 'fee',
-        type: 'uint256',
-        internalType: 'uint256',
+        name: 'approve',
+        type: 'bool',
+        internalType: 'bool',
       },
     ],
-    outputs: [
-      {
-        name: '',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
+    outputs: [],
     stateMutability: 'nonpayable',
   },
   {
@@ -259,7 +248,13 @@ export const IPool_ABI = [
         internalType: 'uint256',
       },
     ],
-    outputs: [],
+    outputs: [
+      {
+        name: '',
+        type: 'uint256',
+        internalType: 'uint256',
+      },
+    ],
     stateMutability: 'nonpayable',
   },
   {
@@ -282,17 +277,17 @@ export const IPool_ABI = [
         internalType: 'address',
       },
       {
-        name: 'amount',
+        name: 'scaledAmount',
         type: 'uint256',
         internalType: 'uint256',
       },
       {
-        name: 'balanceFromBefore',
+        name: 'scaledBalanceFromBefore',
         type: 'uint256',
         internalType: 'uint256',
       },
       {
-        name: 'balanceToBefore',
+        name: 'scaledBalanceToBefore',
         type: 'uint256',
         internalType: 'uint256',
       },
@@ -379,19 +374,6 @@ export const IPool_ABI = [
   {
     type: 'function',
     name: 'getBorrowLogic',
-    inputs: [],
-    outputs: [
-      {
-        name: '',
-        type: 'address',
-        internalType: 'address',
-      },
-    ],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    name: 'getBridgeLogic',
     inputs: [],
     outputs: [
       {
@@ -1021,14 +1003,33 @@ export const IPool_ABI = [
         type: 'address',
         internalType: 'address',
       },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'isApprovedPositionManager',
+    inputs: [
       {
-        name: 'interestRateStrategyAddress',
+        name: 'user',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'positionManager',
         type: 'address',
         internalType: 'address',
       },
     ],
-    outputs: [],
-    stateMutability: 'nonpayable',
+    outputs: [
+      {
+        name: '',
+        type: 'bool',
+        internalType: 'bool',
+      },
+    ],
+    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -1045,7 +1046,7 @@ export const IPool_ABI = [
         internalType: 'address',
       },
       {
-        name: 'user',
+        name: 'borrower',
         type: 'address',
         internalType: 'address',
       },
@@ -1078,27 +1079,12 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'mintUnbacked',
+    name: 'renouncePositionManagerRole',
     inputs: [
       {
-        name: 'asset',
+        name: 'user',
         type: 'address',
         internalType: 'address',
-      },
-      {
-        name: 'amount',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-      {
-        name: 'onBehalfOf',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'referralCode',
-        type: 'uint16',
-        internalType: 'uint16',
       },
     ],
     outputs: [],
@@ -1302,17 +1288,12 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'setReserveInterestRateStrategyAddress',
+    name: 'setUserEMode',
     inputs: [
       {
-        name: 'asset',
-        type: 'address',
-        internalType: 'address',
-      },
-      {
-        name: 'rateStrategyAddress',
-        type: 'address',
-        internalType: 'address',
+        name: 'categoryId',
+        type: 'uint8',
+        internalType: 'uint8',
       },
     ],
     outputs: [],
@@ -1320,12 +1301,17 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'setUserEMode',
+    name: 'setUserEModeOnBehalfOf',
     inputs: [
       {
         name: 'categoryId',
         type: 'uint8',
         internalType: 'uint8',
+      },
+      {
+        name: 'onBehalfOf',
+        type: 'address',
+        internalType: 'address',
       },
     ],
     outputs: [],
@@ -1344,6 +1330,29 @@ export const IPool_ABI = [
         name: 'useAsCollateral',
         type: 'bool',
         internalType: 'bool',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
+    name: 'setUserUseReserveAsCollateralOnBehalfOf',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'useAsCollateral',
+        type: 'bool',
+        internalType: 'bool',
+      },
+      {
+        name: 'onBehalfOf',
+        type: 'address',
+        internalType: 'address',
       },
     ],
     outputs: [],
@@ -1453,28 +1462,10 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'updateBridgeProtocolFee',
+    name: 'updateFlashloanPremium',
     inputs: [
       {
-        name: 'bridgeProtocolFee',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-    ],
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    name: 'updateFlashloanPremiums',
-    inputs: [
-      {
-        name: 'flashLoanPremiumTotal',
-        type: 'uint128',
-        internalType: 'uint128',
-      },
-      {
-        name: 'flashLoanPremiumToProtocol',
+        name: 'flashLoanPremium',
         type: 'uint128',
         internalType: 'uint128',
       },
@@ -1510,37 +1501,6 @@ export const IPool_ABI = [
       },
     ],
     stateMutability: 'nonpayable',
-  },
-  {
-    type: 'event',
-    name: 'BackUnbacked',
-    inputs: [
-      {
-        name: 'reserve',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'backer',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'amount',
-        type: 'uint256',
-        indexed: false,
-        internalType: 'uint256',
-      },
-      {
-        name: 'fee',
-        type: 'uint256',
-        indexed: false,
-        internalType: 'uint256',
-      },
-    ],
-    anonymous: false,
   },
   {
     type: 'event',
@@ -1760,43 +1720,6 @@ export const IPool_ABI = [
   },
   {
     type: 'event',
-    name: 'MintUnbacked',
-    inputs: [
-      {
-        name: 'reserve',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'user',
-        type: 'address',
-        indexed: false,
-        internalType: 'address',
-      },
-      {
-        name: 'onBehalfOf',
-        type: 'address',
-        indexed: true,
-        internalType: 'address',
-      },
-      {
-        name: 'amount',
-        type: 'uint256',
-        indexed: false,
-        internalType: 'uint256',
-      },
-      {
-        name: 'referralCode',
-        type: 'uint16',
-        indexed: true,
-        internalType: 'uint16',
-      },
-    ],
-    anonymous: false,
-  },
-  {
-    type: 'event',
     name: 'MintedToTreasury',
     inputs: [
       {
@@ -1810,6 +1733,44 @@ export const IPool_ABI = [
         type: 'uint256',
         indexed: false,
         internalType: 'uint256',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'PositionManagerApproved',
+    inputs: [
+      {
+        name: 'user',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'positionManager',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'PositionManagerRevoked',
+    inputs: [
+      {
+        name: 'user',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'positionManager',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
       },
     ],
     anonymous: false,

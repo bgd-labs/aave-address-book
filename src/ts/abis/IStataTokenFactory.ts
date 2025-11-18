@@ -104,6 +104,25 @@ export const IStataTokenFactory_ABI = [
     stateMutability: 'view',
   },
   {
+    type: 'event',
+    name: 'StataTokenCreated',
+    inputs: [
+      {
+        name: 'stataToken',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'underlying',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+    ],
+    anonymous: false,
+  },
+  {
     type: 'error',
     name: 'NotListedUnderlying',
     inputs: [
