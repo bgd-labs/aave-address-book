@@ -28,11 +28,11 @@ library GhoEthereum {
   // https://etherscan.io/address/0x535b2f7C20B9C83d70e519cf9991578eF9816B7B
   address internal constant GSM_USDT = 0x535b2f7C20B9C83d70e519cf9991578eF9816B7B;
 
-  // https://etherscan.io/address/0x06fbDE909B43f01202E3C6207De1D27cC208AcC1
-  address internal constant GSM_USDC_FEE_STRATEGY = 0x06fbDE909B43f01202E3C6207De1D27cC208AcC1;
+  // https://etherscan.io/address/0xE5025A7c15a44283A0616567181587eE6A646D64
+  address internal constant GSM_USDC_FEE_STRATEGY = 0xE5025A7c15a44283A0616567181587eE6A646D64;
 
-  // https://etherscan.io/address/0xfDB0090A92d20EE39d82ac680477b1F58f0A23dE
-  address internal constant GSM_USDT_FEE_STRATEGY = 0xfDB0090A92d20EE39d82ac680477b1F58f0A23dE;
+  // https://etherscan.io/address/0xA4346AEa575fCf5777D32F419E5850E5c68B2329
+  address internal constant GSM_USDT_FEE_STRATEGY = 0xA4346AEa575fCf5777D32F419E5850E5c68B2329;
 
   // https://etherscan.io/address/0x00e89F4022FD13AD56e321D50612Eec598eF3b72
   address internal constant GSM_USDC_PRICE_STRATEGY = 0x00e89F4022FD13AD56e321D50612Eec598eF3b72;

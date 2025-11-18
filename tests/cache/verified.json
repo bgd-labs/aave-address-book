@@ -3941,6 +3941,12 @@
     },
     "0x6439DA186BD3d37fE7Fd36036543b403e9FAbaE7": {
       "name": "OracleSwapFreezer"
+    },
+    "0xE5025A7c15a44283A0616567181587eE6A646D64": {
+      "name": "FixedFeeStrategy"
+    },
+    "0xA4346AEa575fCf5777D32F419E5850E5c68B2329": {
+      "name": "FixedFeeStrategy"
     }
   },
   "10": {
