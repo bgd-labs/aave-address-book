@@ -1001,7 +1001,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10350,
+    liquidationBonus: 10320,
   },
   '25': {
     label: 'PT_sUSDE_25SEP2025,PT_sUSDE_27NOV2025 / USDe',
@@ -1014,7 +1014,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10150,
+    liquidationBonus: 10120,
   },
   '26': {
     label: 'weETH / WETH,wstETH',
