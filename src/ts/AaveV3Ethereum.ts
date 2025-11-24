@@ -660,6 +660,24 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0x6A196A7B498C4EFBFEfB55364106EC80CceF0C3F',
   },
+  PT_USDe_5FEB2026: {
+    decimals: 18,
+    id: 55,
+    UNDERLYING: '0x1F84a51296691320478c98b8d77f2Bbd17D34350',
+    A_TOKEN: '0xE728577e9a1Fe7032bc309B4541F58f45443866e',
+    V_TOKEN: '0x9D244A99801dc05cbC04183769c17056B8A1Ad53',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0xc35D319FA5FEc2BBE0eB4d0a826465b60f821F81',
+  },
+  PT_sUSDE_5FEB2026: {
+    decimals: 18,
+    id: 56,
+    UNDERLYING: '0xE8483517077afa11A9B07f849cee2552f040d7b2',
+    A_TOKEN: '0xbe54767735fB7Acca2aa7E2d209a6f705073536D',
+    V_TOKEN: '0xA803414f84fCEF00e745bE7CC2A315908927f15D',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0x4e89f87F24C13819bBDDb56f99b38746C91677D8',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -1001,7 +1019,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10320,
+    liquidationBonus: 10310,
   },
   '25': {
     label: 'PT_sUSDE_25SEP2025,PT_sUSDE_27NOV2025 / USDe',
@@ -1014,7 +1032,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10120,
+    liquidationBonus: 10110,
   },
   '26': {
     label: 'weETH / WETH,wstETH',
@@ -1046,7 +1064,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10240,
+    liquidationBonus: 10210,
   },
   '28': {
     label: 'PT_USDe_25SEP2025,PT_USDe_27NOV2025 / USDe',
@@ -1059,7 +1077,69 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10140,
+    liquidationBonus: 10110,
+  },
+  '29': {
+    label: 'PT_USDe_27NOV2025,PT_USDe_5FEB2026 / USDC,USDT,USDe,USDtb',
+    collateralBitmap: '54043195528445952',
+    collateralAssets: [
+      '0x62C6E813b9589C3631Ba0Cdb013acdB8544038B7',
+      '0x1F84a51296691320478c98b8d77f2Bbd17D34350',
+    ],
+    borrowableBitmap: '4399120253192',
+    borrowableAssets: [
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
+    ],
+    ltv: 8850,
+    liquidationThreshold: 9050,
+    liquidationBonus: 10410,
+  },
+  '30': {
+    label: 'PT_USDe_27NOV2025,PT_USDe_5FEB2026 / USDe',
+    collateralBitmap: '54043195528445952',
+    collateralAssets: [
+      '0x62C6E813b9589C3631Ba0Cdb013acdB8544038B7',
+      '0x1F84a51296691320478c98b8d77f2Bbd17D34350',
+    ],
+    borrowableBitmap: '1073741824',
+    borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
+    ltv: 8930,
+    liquidationThreshold: 9130,
+    liquidationBonus: 10310,
+  },
+  '31': {
+    label: 'PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDC,USDT,USDe,USDtb',
+    collateralBitmap: '81064793292668928',
+    collateralAssets: [
+      '0xe6A934089BBEe34F832060CE98848359883749B3',
+      '0xE8483517077afa11A9B07f849cee2552f040d7b2',
+    ],
+    borrowableBitmap: '4399120253192',
+    borrowableAssets: [
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+      '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
+    ],
+    ltv: 8760,
+    liquidationThreshold: 8960,
+    liquidationBonus: 10510,
+  },
+  '32': {
+    label: 'PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDe',
+    collateralBitmap: '81064793292668928',
+    collateralAssets: [
+      '0xe6A934089BBEe34F832060CE98848359883749B3',
+      '0xE8483517077afa11A9B07f849cee2552f040d7b2',
+    ],
+    borrowableBitmap: '1073741824',
+    borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
+    ltv: 8850,
+    liquidationThreshold: 9050,
+    liquidationBonus: 10410,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {

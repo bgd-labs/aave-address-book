@@ -3391,6 +3391,46 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x1F84a51296691320478c98b8d77f2Bbd17D34350",
+      "name": "PT Ethena USDe 5FEB2026",
+      "decimals": 18,
+      "symbol": "PT-USDe-5FEB2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xE728577e9a1Fe7032bc309B4541F58f45443866e",
+      "name": "Aave Ethereum PT_USDE_5FEB_2026",
+      "decimals": 18,
+      "symbol": "aEthPT_USDE_5FEB_2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x1F84a51296691320478c98b8d77f2Bbd17D34350"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0xE8483517077afa11A9B07f849cee2552f040d7b2",
+      "name": "PT Ethena sUSDE 5FEB2026",
+      "decimals": 18,
+      "symbol": "PT-sUSDE-5FEB2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xbe54767735fB7Acca2aa7E2d209a6f705073536D",
+      "name": "Aave Ethereum PT_sUSDe_5FEB_2026",
+      "decimals": 18,
+      "symbol": "aEthPT_sUSDe_5FEB_2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xE8483517077afa11A9B07f849cee2552f040d7b2"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -9363,6 +9403,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 145 },
-  "timestamp": "2025-11-13T00:15:41.620Z"
+  "version": { "major": 3, "minor": 0, "patch": 146 },
+  "timestamp": "2025-11-24T11:17:33.861Z"
 }

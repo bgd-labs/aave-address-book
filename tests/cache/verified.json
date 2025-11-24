@@ -3947,6 +3947,33 @@
     },
     "0xA4346AEa575fCf5777D32F419E5850E5c68B2329": {
       "name": "FixedFeeStrategy"
+    },
+    "0xd417D34D7aAf70B24FbC6b36808E3396c991C5e4": {
+      "name": "MigrationHelperMainnet"
+    },
+    "0x1F84a51296691320478c98b8d77f2Bbd17D34350": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xE728577e9a1Fe7032bc309B4541F58f45443866e": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9D244A99801dc05cbC04183769c17056B8A1Ad53": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xE8483517077afa11A9B07f849cee2552f040d7b2": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xbe54767735fB7Acca2aa7E2d209a6f705073536D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA803414f84fCEF00e745bE7CC2A315908927f15D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xc35D319FA5FEc2BBE0eB4d0a826465b60f821F81": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x4e89f87F24C13819bBDDb56f99b38746C91677D8": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "10": {
@@ -8077,6 +8104,9 @@
     },
     "0x2eaD203C5C1C00612B1DdbBb20e4180dA822d6ff": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x781978AC59710b5FDd00d5c6a6c3662ba3d85b84": {
+      "name": "MigrationHelper"
     }
   },
   "146": {
@@ -14143,6 +14173,9 @@
     },
     "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2": {
       "name": "StakedUSDeOFT"
+    },
+    "0xFdf9714c74df0535D77dACDbf621E0c977Cd5bc5": {
+      "name": "MigrationHelper"
     }
   },
   "57073": {
