@@ -169,9 +169,83 @@ library AaveV3InkWhitelabelAssets {
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
+
+  // https://explorer.inkonchain.com/address/0x2D270e6886d130D724215A266106e6832161EAEd
+  address internal constant USDC_UNDERLYING = 0x2D270e6886d130D724215A266106e6832161EAEd;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://explorer.inkonchain.com/address/0x70A38B0c90441e991346B7A0Cd98C8528dD1c234
+  address internal constant USDC_A_TOKEN = 0x70A38B0c90441e991346B7A0Cd98C8528dD1c234;
+
+  // https://explorer.inkonchain.com/address/0x305c03f74DBb8C6052b7667AaBEE21dC7c1f0B29
+  address internal constant USDC_V_TOKEN = 0x305c03f74DBb8C6052b7667AaBEE21dC7c1f0B29;
+
+  // https://explorer.inkonchain.com/address/0xd910061259A256B99654Cff414c3bfD503E7F6ea
+  address internal constant USDC_ORACLE = 0xd910061259A256B99654Cff414c3bfD503E7F6ea;
+
+  // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
+
+  // https://explorer.inkonchain.com/address/0xA3D68b74bF0528fdD07263c60d6488749044914b
+  address internal constant weETH_UNDERLYING = 0xA3D68b74bF0528fdD07263c60d6488749044914b;
+
+  uint8 internal constant weETH_DECIMALS = 18;
+
+  // https://explorer.inkonchain.com/address/0x7789888E302Bc3288A78a182efe6DfE91da756ec
+  address internal constant weETH_A_TOKEN = 0x7789888E302Bc3288A78a182efe6DfE91da756ec;
+
+  // https://explorer.inkonchain.com/address/0xF498bfc4439e91042EeDB9736767F770F48Da474
+  address internal constant weETH_V_TOKEN = 0xF498bfc4439e91042EeDB9736767F770F48Da474;
+
+  // https://explorer.inkonchain.com/address/0x68B7Ed7Df658Ed065BcaA415f0Ce0b057Dfcf318
+  address internal constant weETH_ORACLE = 0x68B7Ed7Df658Ed065BcaA415f0Ce0b057Dfcf318;
+
+  // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
+  address internal constant weETH_INTEREST_RATE_STRATEGY =
+    0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
+
+  // https://explorer.inkonchain.com/address/0x9f0a74A92287E323Eb95c1cd9eCdBEb0e397cAe4
+  address internal constant wrsETH_UNDERLYING = 0x9f0a74A92287E323Eb95c1cd9eCdBEb0e397cAe4;
+
+  uint8 internal constant wrsETH_DECIMALS = 18;
+
+  // https://explorer.inkonchain.com/address/0x98F6A9b82799813447E6c00E51aF5b325976199A
+  address internal constant wrsETH_A_TOKEN = 0x98F6A9b82799813447E6c00E51aF5b325976199A;
+
+  // https://explorer.inkonchain.com/address/0x33d3F390F266A21b0467efD559DC5fecD17Db52C
+  address internal constant wrsETH_V_TOKEN = 0x33d3F390F266A21b0467efD559DC5fecD17Db52C;
+
+  // https://explorer.inkonchain.com/address/0x771a1668f973f2485D32580aB53F5C4934e81531
+  address internal constant wrsETH_ORACLE = 0x771a1668f973f2485D32580aB53F5C4934e81531;
+
+  // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
+  address internal constant wrsETH_INTEREST_RATE_STRATEGY =
+    0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
+
+  // https://explorer.inkonchain.com/address/0x2416092f143378750bb29b79eD961ab195CcEea5
+  address internal constant ezETH_UNDERLYING = 0x2416092f143378750bb29b79eD961ab195CcEea5;
+
+  uint8 internal constant ezETH_DECIMALS = 18;
+
+  // https://explorer.inkonchain.com/address/0xd596B3C15E28795AaBF0481DaA0Ff4eBAa42c5F2
+  address internal constant ezETH_A_TOKEN = 0xd596B3C15E28795AaBF0481DaA0Ff4eBAa42c5F2;
+
+  // https://explorer.inkonchain.com/address/0x522e93245C2df28904B86103af69bC27ae80FA46
+  address internal constant ezETH_V_TOKEN = 0x522e93245C2df28904B86103af69bC27ae80FA46;
+
+  // https://explorer.inkonchain.com/address/0x51e5242698Cf425A558BCe440357Fd20f00D9671
+  address internal constant ezETH_ORACLE = 0x51e5242698Cf425A558BCe440357Fd20f00D9671;
+
+  // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
+  address internal constant ezETH_INTEREST_RATE_STRATEGY =
+    0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
 }
 library AaveV3InkWhitelabelEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant weETH_wrsETH_ezETH__WETH = 1;
 }
 library AaveV3InkWhitelabelExternalLibraries {
   // https://explorer.inkonchain.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
