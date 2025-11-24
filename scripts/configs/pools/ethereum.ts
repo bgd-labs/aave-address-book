@@ -1,5 +1,5 @@
-import { ChainId } from '@bgd-labs/toolbox';
-import { PoolConfig } from '../types';
+import {ChainId} from '@bgd-labs/toolbox';
+import {PoolConfig} from '../types';
 
 export const sepoliaProtoV3: PoolConfig = {
   name: 'Sepolia',
@@ -23,7 +23,7 @@ export const mainnetProtoV2Pool: PoolConfig = {
   additionalAddresses: {
     DEBT_SWAP_ADAPTER: '0xAf5c88245CD02Ff3DF332EF1E1FfD5bc5D1d87cd',
     CONFIG_ENGINE: '0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9',
-    MIGRATION_HELPER: '0xb748952c7bc638f31775245964707bcc5ddfabfc',
+    MIGRATION_HELPER: '0xd417D34D7aAf70B24FbC6b36808E3396c991C5e4',
     POOL_ADDRESSES_PROVIDER_REGISTRY: '0x52D306e36E3B6B02c153d0266ff0f85d18BCD413',
     RATES_FACTORY: '0xbD37610BBB1ddc2a22797F7e3f531B59902b7bA7',
     REPAY_WITH_COLLATERAL_ADAPTER: '0x80Aca0C645fEdABaa20fd2Bf0Daf57885A309FE6',

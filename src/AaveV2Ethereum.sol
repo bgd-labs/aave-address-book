@@ -59,8 +59,8 @@ library AaveV2Ethereum {
   // https://etherscan.io/address/0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9
   address internal constant CONFIG_ENGINE = 0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9;
 
-  // https://etherscan.io/address/0xB748952c7BC638F31775245964707Bcc5DDFabFC
-  address internal constant MIGRATION_HELPER = 0xB748952c7BC638F31775245964707Bcc5DDFabFC;
+  // https://etherscan.io/address/0xd417D34D7aAf70B24FbC6b36808E3396c991C5e4
+  address internal constant MIGRATION_HELPER = 0xd417D34D7aAf70B24FbC6b36808E3396c991C5e4;
 
   // https://etherscan.io/address/0x52D306e36E3B6B02c153d0266ff0f85d18BCD413
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
