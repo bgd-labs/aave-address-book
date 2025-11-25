@@ -59,4 +59,13 @@ library MiscArbitrum {
 
   // https://arbiscan.io/address/0x659966aCE41944f6E321cA7FE76de4775779d11C
   address internal constant REWARD_STEWARD = 0x659966aCE41944f6E321cA7FE76de4775779d11C;
+
+  // https://arbiscan.io/address/0xf4F2bc657abe96863dC1Ae17C9e9fFfc2B420e7B
+  address internal constant AGENT_HUB = 0xf4F2bc657abe96863dC1Ae17C9e9fFfc2B420e7B;
+
+  // https://arbiscan.io/address/0xFf822f7E2178176bB650df82427a42cA0c04CcaB
+  address internal constant AGENT_HUB_AUTOMATION = 0xFf822f7E2178176bB650df82427a42cA0c04CcaB;
+
+  // https://arbiscan.io/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

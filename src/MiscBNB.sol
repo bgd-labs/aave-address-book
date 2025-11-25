@@ -32,4 +32,13 @@ library MiscBNB {
 
   // https://bscscan.com/address/0x6046A62a80a2c19A0De91063602ce90533c62ae1
   address internal constant REWARD_STEWARD = 0x6046A62a80a2c19A0De91063602ce90533c62ae1;
+
+  // https://bscscan.com/address/0x115E662Fa3f0b83014eB3f6F86F3D94BeC5eB411
+  address internal constant AGENT_HUB = 0x115E662Fa3f0b83014eB3f6F86F3D94BeC5eB411;
+
+  // https://bscscan.com/address/0x78C2eCf3Ad48F90350f42EB338675cA1b31a7f11
+  address internal constant AGENT_HUB_AUTOMATION = 0x78C2eCf3Ad48F90350f42EB338675cA1b31a7f11;
+
+  // https://bscscan.com/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

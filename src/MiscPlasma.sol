@@ -8,4 +8,13 @@ library MiscPlasma {
 
   // https://plasmascan.to/address/0xEf323B194caD8e02D9E5D8F07B34f625f1c088f1
   address internal constant PROTOCOL_GUARDIAN = 0xEf323B194caD8e02D9E5D8F07B34f625f1c088f1;
+
+  // https://plasmascan.to/address/0x5F29ACbFB6de4282bB4DD2017930cDA730eD864D
+  address internal constant AGENT_HUB = 0x5F29ACbFB6de4282bB4DD2017930cDA730eD864D;
+
+  // https://plasmascan.to/address/0x8C29c9D5439ba69eEEBB132dE2aBd7CA1C04CF35
+  address internal constant AGENT_HUB_AUTOMATION = 0x8C29c9D5439ba69eEEBB132dE2aBd7CA1C04CF35;
+
+  // https://plasmascan.to/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

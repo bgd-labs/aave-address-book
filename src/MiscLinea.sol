@@ -17,4 +17,13 @@ library MiscLinea {
 
   // https://lineascan.build/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
   address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
+
+  // https://lineascan.build/address/0xa1e306dfB12270b02960d5a612539fc587108eD7
+  address internal constant AGENT_HUB = 0xa1e306dfB12270b02960d5a612539fc587108eD7;
+
+  // https://lineascan.build/address/0xc2eb8C711fFBD2cba570d61C081b0bED2B4054F6
+  address internal constant AGENT_HUB_AUTOMATION = 0xc2eb8C711fFBD2cba570d61C081b0bED2B4054F6;
+
+  // https://lineascan.build/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

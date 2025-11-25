@@ -14,4 +14,13 @@ export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
 // https://lineascan.build/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
 export const MASIV_SAFE = '0xdef1FA4CEfe67365ba046a7C630D6B885298E210';
 
+// https://lineascan.build/address/0xa1e306dfB12270b02960d5a612539fc587108eD7
+export const AGENT_HUB = '0xa1e306dfB12270b02960d5a612539fc587108eD7';
+
+// https://lineascan.build/address/0xc2eb8C711fFBD2cba570d61C081b0bED2B4054F6
+export const AGENT_HUB_AUTOMATION = '0xc2eb8C711fFBD2cba570d61C081b0bED2B4054F6';
+
+// https://lineascan.build/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+export const RANGE_VALIDATION_MODULE = '0x9240a6669CC4782FC98620212862DF5CB2e0Df10';
+
 export const CHAIN_ID = 59144;

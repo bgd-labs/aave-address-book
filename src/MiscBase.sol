@@ -50,4 +50,13 @@ library MiscBase {
 
   // https://basescan.org/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
   address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
+
+  // https://basescan.org/address/0x115E662Fa3f0b83014eB3f6F86F3D94BeC5eB411
+  address internal constant AGENT_HUB = 0x115E662Fa3f0b83014eB3f6F86F3D94BeC5eB411;
+
+  // https://basescan.org/address/0x78C2eCf3Ad48F90350f42EB338675cA1b31a7f11
+  address internal constant AGENT_HUB_AUTOMATION = 0x78C2eCf3Ad48F90350f42EB338675cA1b31a7f11;
+
+  // https://basescan.org/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }
