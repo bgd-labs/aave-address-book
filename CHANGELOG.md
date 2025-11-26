@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.37.0](https://github.com/bgd-labs/aave-address-book/compare/v4.36.3...v4.37.0) (2025-11-26)
+
+
+### Features
+
+* add chaos agent hub ([#1152](https://github.com/bgd-labs/aave-address-book/issues/1152)) ([a3b91a1](https://github.com/bgd-labs/aave-address-book/commit/a3b91a1248388bc7b39c7e8f1d642f4a68ff3f82))
+
 ## [4.36.3](https://github.com/bgd-labs/aave-address-book/compare/v4.36.2...v4.36.3) (2025-11-24)
 
 
