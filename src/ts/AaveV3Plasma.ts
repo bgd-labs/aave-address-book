@@ -253,8 +253,8 @@ export const E_MODES = {
       '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
       '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
     ],
-    ltv: 8950,
-    liquidationThreshold: 9150,
+    ltv: 9000,
+    liquidationThreshold: 9200,
     liquidationBonus: 10370,
   },
   '6': {
@@ -276,8 +276,8 @@ export const E_MODES = {
       '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
       '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
     ],
-    ltv: 8810,
-    liquidationThreshold: 9010,
+    ltv: 8860,
+    liquidationThreshold: 9060,
     liquidationBonus: 10500,
   },
   '8': {

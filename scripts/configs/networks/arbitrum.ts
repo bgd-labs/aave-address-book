@@ -40,8 +40,11 @@ export const arbitrumAddresses: NetworkAddresses<{
     MERIT_INCENTIVE_SAFE: '0xAA870e4B82deaDa3727235f34183Ec9B728714C8',
     AHAB_SAFE: '0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e',
     REWARD_STEWARD: '0x659966aCE41944f6E321cA7FE76de4775779d11C',
+    AGENT_HUB: '0xf4F2bc657abe96863dC1Ae17C9e9fFfc2B420e7B',
+    AGENT_HUB_AUTOMATION: '0xff822f7e2178176bb650df82427a42ca0c04ccab',
+    RANGE_VALIDATION_MODULE: '0x9240a6669cc4782fc98620212862df5cb2e0df10'
   },
-};  
+};
 
 export const arbitrumSepoliaAddresses: NetworkAddresses = {
   name: 'ArbitrumSepolia',

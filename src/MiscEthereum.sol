@@ -99,4 +99,13 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB
   address internal constant REWARD_STEWARD = 0x2C7f01A1322ce99EEB331d6Eb73Aff400f11C5CB;
+
+  // https://etherscan.io/address/0x95E3015c67EF62B866cC28ca5A9AB5017A55e336
+  address internal constant AGENT_HUB = 0x95E3015c67EF62B866cC28ca5A9AB5017A55e336;
+
+  // https://etherscan.io/address/0x5CFc96c396325724D49dfF95Da103feDdbf48E05
+  address internal constant AGENT_HUB_AUTOMATION = 0x5CFc96c396325724D49dfF95Da103feDdbf48E05;
+
+  // https://etherscan.io/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

@@ -59,4 +59,13 @@ library MiscOptimism {
 
   // https://optimistic.etherscan.io/address/0xfD2aaE32247E5015AcB04Aa8220616D6647979aC
   address internal constant REWARD_STEWARD = 0xfD2aaE32247E5015AcB04Aa8220616D6647979aC;
+
+  // https://optimistic.etherscan.io/address/0x1aCEC7abbcFE6dD10EA4bB50894908406FfE8719
+  address internal constant AGENT_HUB = 0x1aCEC7abbcFE6dD10EA4bB50894908406FfE8719;
+
+  // https://optimistic.etherscan.io/address/0xEed80d79ae1383884b93d96bd1521F7247EC7e53
+  address internal constant AGENT_HUB_AUTOMATION = 0xEed80d79ae1383884b93d96bd1521F7247EC7e53;
+
+  // https://optimistic.etherscan.io/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

@@ -47,4 +47,13 @@ library MiscPolygon {
 
   // https://polygonscan.com/address/0xF18F15362e5fB4277DCE713F170341942F43aC3E
   address internal constant REWARD_STEWARD = 0xF18F15362e5fB4277DCE713F170341942F43aC3E;
+
+  // https://polygonscan.com/address/0xd44342b1aC132353d3148Ea6ed330d1Ae6F0c664
+  address internal constant AGENT_HUB = 0xd44342b1aC132353d3148Ea6ed330d1Ae6F0c664;
+
+  // https://polygonscan.com/address/0x125844D33F75090517Ea19Aab8Ca24eEa4Fef764
+  address internal constant AGENT_HUB_AUTOMATION = 0x125844D33F75090517Ea19Aab8Ca24eEa4Fef764;
+
+  // https://polygonscan.com/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

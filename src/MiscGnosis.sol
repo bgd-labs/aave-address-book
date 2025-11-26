@@ -44,4 +44,13 @@ library MiscGnosis {
 
   // https://gnosisscan.io/address/0xE513b6304712D1055C88f72f1952FAe49c09f4ce
   address internal constant REWARD_STEWARD = 0xE513b6304712D1055C88f72f1952FAe49c09f4ce;
+
+  // https://gnosisscan.io/address/0x7520bb9c237c864957e9a9881821bF882491bc5C
+  address internal constant AGENT_HUB = 0x7520bb9c237c864957e9a9881821bF882491bc5C;
+
+  // https://gnosisscan.io/address/0x5f65E68ddb5Cfdb5B64bD8562dBA08Af6b26818c
+  address internal constant AGENT_HUB_AUTOMATION = 0x5f65E68ddb5Cfdb5B64bD8562dBA08Af6b26818c;
+
+  // https://gnosisscan.io/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+  address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 }

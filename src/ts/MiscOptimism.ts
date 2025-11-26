@@ -56,4 +56,13 @@ export const AHAB_SAFE = '0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e';
 // https://optimistic.etherscan.io/address/0xfD2aaE32247E5015AcB04Aa8220616D6647979aC
 export const REWARD_STEWARD = '0xfD2aaE32247E5015AcB04Aa8220616D6647979aC';
 
+// https://optimistic.etherscan.io/address/0x1aCEC7abbcFE6dD10EA4bB50894908406FfE8719
+export const AGENT_HUB = '0x1aCEC7abbcFE6dD10EA4bB50894908406FfE8719';
+
+// https://optimistic.etherscan.io/address/0xEed80d79ae1383884b93d96bd1521F7247EC7e53
+export const AGENT_HUB_AUTOMATION = '0xEed80d79ae1383884b93d96bd1521F7247EC7e53';
+
+// https://optimistic.etherscan.io/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
+export const RANGE_VALIDATION_MODULE = '0x9240a6669CC4782FC98620212862DF5CB2e0Df10';
+
 export const CHAIN_ID = 10;
