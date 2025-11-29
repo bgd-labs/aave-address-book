@@ -4749,6 +4749,28 @@
       }
     },
     {
+      "chainId": 43114,
+      "address": "0x7bFd4CA2a6Cf3A3fDDd645D10B323031afe47FF0",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF",
+      "name": "Aave Avalanche wrsETH",
+      "decimals": 18,
+      "symbol": "aAvawrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x7bFd4CA2a6Cf3A3fDDd645D10B323031afe47FF0"
+      }
+    },
+    {
       "chainId": 8453,
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -9491,6 +9513,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 147 },
-  "timestamp": "2025-11-24T13:22:12.235Z"
+  "version": { "major": 3, "minor": 0, "patch": 148 },
+  "timestamp": "2025-11-29T00:15:21.080Z"
 }
