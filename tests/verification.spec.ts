@@ -25,12 +25,12 @@ async function checkProxyVerification(item: ListItem, guid: string) {
   const url = `${getApiUrl(item.chainId)}?${formattedParams}`;
   try {
     const request = await fetch(url);
-    const { status } = await request.json();
+    const {status} = await request.json();
     if (status === '1')
       console.log(
         'successfully verified proxy. Please rerun the script in a few minutes as you need to wait till etherscan prunes its cache.',
       );
-  } catch (e) { }
+  } catch (e) {}
 }
 
 async function verifyProxy(item: ListItem) {
@@ -77,7 +77,7 @@ async function checkVerified(item: ListItem) {
     return {status: '1', result: source};
   } catch (e) {
     console.error(e);
-    return { status: '0', result: e };
+    return {status: '0', result: e};
   }
 }
 
@@ -106,7 +106,7 @@ const knownErrors = {
   },
 };
 
-describe('verification', { timeout: 500_000 }, () => {
+describe('verification', {timeout: 500_000}, () => {
   it('should have all contracts verified except for the known set of errors', async () => {
     const addressesToCheck = flattenedAddresses.filter(
       (item) =>
@@ -127,9 +127,9 @@ describe('verification', { timeout: 500_000 }, () => {
         if (checked.has(key)) continue;
         checked.add(key);
         const client = getClient(item.chainId) as PublicClient;
-        const hasCode = await getCode(client, { address: item.value as Hex });
+        const hasCode = await getCode(client, {address: item.value as Hex});
         if (hasCode) {
-          const { status, result } = (await checkVerified(item)) as {
+          const {status, result} = (await checkVerified(item)) as {
             status: string;
             result: {ContractName: string};
           };
