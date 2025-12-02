@@ -3431,6 +3431,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA",
+      "name": "MetaMask USD",
+      "decimals": 6,
+      "symbol": "mUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xAa0200d169fF3ba9385c12E073c5d1d30434AE7b",
+      "name": "Aave Ethereum mUSD",
+      "decimals": 6,
+      "symbol": "aEthmUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -4746,6 +4766,28 @@
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
         "underlying": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+      }
+    },
+    {
+      "chainId": 43114,
+      "address": "0x7bFd4CA2a6Cf3A3fDDd645D10B323031afe47FF0",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 43114,
+      "address": "0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF",
+      "name": "Aave Avalanche wrsETH",
+      "decimals": 18,
+      "symbol": "aAvawrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x7bFd4CA2a6Cf3A3fDDd645D10B323031afe47FF0"
       }
     },
     {
@@ -8549,6 +8591,26 @@
       }
     },
     {
+      "chainId": 59144,
+      "address": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA",
+      "name": "MetaMask USD",
+      "decimals": 6,
+      "symbol": "mUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 59144,
+      "address": "0x61B19879F4033c2b5682a969cccC9141e022823c",
+      "name": "Aave Linea mUSD",
+      "decimals": 6,
+      "symbol": "aLinmUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
+        "underlying": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA"
+      }
+    },
+    {
       "chainId": 42220,
       "address": "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
       "name": "USDC",
@@ -9491,6 +9553,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 147 },
-  "timestamp": "2025-11-24T13:22:12.235Z"
+  "version": { "major": 3, "minor": 0, "patch": 148 },
+  "timestamp": "2025-12-02T00:16:28.121Z"
 }
