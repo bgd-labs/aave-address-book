@@ -245,6 +245,24 @@ library AaveV3LineaAssets {
   // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
   address internal constant wrsETH_INTEREST_RATE_STRATEGY =
     0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
+
+  // https://lineascan.build/address/0xacA92E438df0B2401fF60dA7E4337B687a2435DA
+  address internal constant mUSD_UNDERLYING = 0xacA92E438df0B2401fF60dA7E4337B687a2435DA;
+
+  uint8 internal constant mUSD_DECIMALS = 6;
+
+  // https://lineascan.build/address/0x61B19879F4033c2b5682a969cccC9141e022823c
+  address internal constant mUSD_A_TOKEN = 0x61B19879F4033c2b5682a969cccC9141e022823c;
+
+  // https://lineascan.build/address/0x8619B395Fd96DCFe3f2711d8BF84b26338db0294
+  address internal constant mUSD_V_TOKEN = 0x8619B395Fd96DCFe3f2711d8BF84b26338db0294;
+
+  // https://lineascan.build/address/0xB8454f3b48395103F23c88B699d4F6A81fD1DCff
+  address internal constant mUSD_ORACLE = 0xB8454f3b48395103F23c88B699d4F6A81fD1DCff;
+
+  // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
+  address internal constant mUSD_INTEREST_RATE_STRATEGY =
+    0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;
 }
 library AaveV3LineaEModes {
   uint8 internal constant NONE = 0;
