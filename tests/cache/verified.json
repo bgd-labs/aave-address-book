@@ -3983,6 +3983,18 @@
     },
     "0x9240a6669CC4782FC98620212862DF5CB2e0Df10": {
       "name": "RangeValidationModule"
+    },
+    "0xacA92E438df0B2401fF60dA7E4337B687a2435DA": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xAa0200d169fF3ba9385c12E073c5d1d30434AE7b": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xE35e6A0D3AbC28289f5d4C2d262a133Df936b98D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf22de319901C3b9BAEc7Fa14FdF013Ede40E7312": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "10": {
@@ -14257,6 +14269,18 @@
     },
     "0x9240a6669CC4782FC98620212862DF5CB2e0Df10": {
       "name": "RangeValidationModule"
+    },
+    "0x40B4BAEcc69B882e8804f9286b12228C27F8c9BF": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3ca5FA07689F266e907439aFd1fBB59c44fe12f6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe5Af98d1c62c7D9C1378AF187eEFB0BEe112ff64": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x7bFd4CA2a6Cf3A3fDDd645D10B323031afe47FF0": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "57073": {
@@ -14930,6 +14954,18 @@
     },
     "0x9240a6669CC4782FC98620212862DF5CB2e0Df10": {
       "name": "RangeValidationModule"
+    },
+    "0xacA92E438df0B2401fF60dA7E4337B687a2435DA": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x61B19879F4033c2b5682a969cccC9141e022823c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8619B395Fd96DCFe3f2711d8BF84b26338db0294": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB8454f3b48395103F23c88B699d4F6A81fD1DCff": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "60808": {
