@@ -3451,6 +3451,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x356B8d89c1e1239Cbbb9dE4815c39A1474d5BA7D",
+      "name": "Syrup USDT",
+      "decimals": 6,
+      "symbol": "syrupUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x24Ab03a9a5Bc2C49E5523e8d915A3536ac38B91D",
+      "name": "Aave Ethereum syrupUSDT",
+      "decimals": 6,
+      "symbol": "aEthsyrupUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x356B8d89c1e1239Cbbb9dE4815c39A1474d5BA7D"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -9553,6 +9573,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 148 },
-  "timestamp": "2025-12-02T00:16:28.121Z"
+  "version": { "major": 3, "minor": 0, "patch": 149 },
+  "timestamp": "2025-12-04T00:16:41.960Z"
 }
