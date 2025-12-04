@@ -687,6 +687,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0xf22de319901C3b9BAEc7Fa14FdF013Ede40E7312',
   },
+  syrupUSDT: {
+    decimals: 6,
+    id: 58,
+    UNDERLYING: '0x356B8d89c1e1239Cbbb9dE4815c39A1474d5BA7D',
+    A_TOKEN: '0x24Ab03a9a5Bc2C49E5523e8d915A3536ac38B91D',
+    V_TOKEN: '0xAEf73b04654931B94920a3D7AE62032b79fB6d0c',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0x982aC260B5a4e5bCAb6A437e79168390cFbDe70D',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -1102,8 +1111,8 @@ export const E_MODES = {
       '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8950,
-    liquidationThreshold: 9150,
+    ltv: 9000,
+    liquidationThreshold: 9200,
     liquidationBonus: 10380,
   },
   '30': {
@@ -1115,8 +1124,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9030,
-    liquidationThreshold: 9230,
+    ltv: 9080,
+    liquidationThreshold: 9280,
     liquidationBonus: 10280,
   },
   '31': {
@@ -1133,8 +1142,8 @@ export const E_MODES = {
       '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8860,
-    liquidationThreshold: 9060,
+    ltv: 8910,
+    liquidationThreshold: 9110,
     liquidationBonus: 10480,
   },
   '32': {
@@ -1146,9 +1155,22 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 8950,
-    liquidationThreshold: 9150,
+    ltv: 9000,
+    liquidationThreshold: 9200,
     liquidationBonus: 10380,
+  },
+  '33': {
+    label: 'syrupUSDT / USDT,GHO',
+    collateralBitmap: '288230376151711744',
+    collateralAssets: ['0x356B8d89c1e1239Cbbb9dE4815c39A1474d5BA7D'],
+    borrowableBitmap: '1048832',
+    borrowableAssets: [
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+      '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
+    ],
+    ltv: 9000,
+    liquidationThreshold: 9200,
+    liquidationBonus: 10400,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
