@@ -4,105 +4,102 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager, ICollector} from './AaveV3.sol';
 library AaveV3Mantle {
-  // https://mantlescan.xyz/address/0x2aB3580a805fB10CbAd567212C70e26C1B6769eC
+  // https://mantlescan.xyz/address/0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-    IPoolAddressesProvider(0x2aB3580a805fB10CbAd567212C70e26C1B6769eC);
+    IPoolAddressesProvider(0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0);
 
-  // https://mantlescan.xyz/address/0x2e770EF8AbdEcA83D9310E2d3B3c2FdfFF5fd85A
-  IPool internal constant POOL = IPool(0x2e770EF8AbdEcA83D9310E2d3B3c2FdfFF5fd85A);
+  // https://mantlescan.xyz/address/0x3dcCf77D25d628e1aBbf6CA85E8729b57Da624a1
+  IPool internal constant POOL = IPool(0x3dcCf77D25d628e1aBbf6CA85E8729b57Da624a1);
 
-  // https://mantlescan.xyz/address/0x4fDE7000ac23033B0FD420098B8a83A9Ff52c33C
+  // https://mantlescan.xyz/address/0x70120a23ac370c1F3E2a7cf57c6a025E0517f91B
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
-    IPoolConfigurator(0x4fDE7000ac23033B0FD420098B8a83A9Ff52c33C);
+    IPoolConfigurator(0x70120a23ac370c1F3E2a7cf57c6a025E0517f91B);
 
-  // https://mantlescan.xyz/address/0x6c23bAF050ec192afc0B967a93b83e6c5405df43
-  IAaveOracle internal constant ORACLE = IAaveOracle(0x6c23bAF050ec192afc0B967a93b83e6c5405df43);
+  // https://mantlescan.xyz/address/0xF6Dac650dA5616Bc3206e969D7868e7c25805171
+  IAaveOracle internal constant ORACLE = IAaveOracle(0xF6Dac650dA5616Bc3206e969D7868e7c25805171);
+
+  // https://mantlescan.xyz/address/0x8601E80972A2a89b78185fbacd560d2202202B26
+  address internal constant PRICE_ORACLE_SENTINEL = 0x8601E80972A2a89b78185fbacd560d2202202B26;
 
   // https://mantlescan.xyz/address/0x70884634D0098782592111A2A6B8d223be31CB7b
   address internal constant ACL_ADMIN = 0x70884634D0098782592111A2A6B8d223be31CB7b;
 
-  // https://mantlescan.xyz/address/0x3e652E97ff339B73421f824F5b03d75b62F1Fb51
+  // https://mantlescan.xyz/address/0x9409d61B55dECBaD51E3ae35ef56AaA5e6862c86
   IACLManager internal constant ACL_MANAGER =
-    IACLManager(0x3e652E97ff339B73421f824F5b03d75b62F1Fb51);
+    IACLManager(0x9409d61B55dECBaD51E3ae35ef56AaA5e6862c86);
 
-  // https://mantlescan.xyz/address/0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9
+  // https://mantlescan.xyz/address/0xcdc7A82AE227BA1659A2e8C3F7cae86Ca29717E0
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9);
+    IPoolDataProvider(0xcdc7A82AE227BA1659A2e8C3F7cae86Ca29717E0);
 
-  // https://mantlescan.xyz/address/0x589750BA8aF186cE5B55391B0b7148cAD43a1619
-  address internal constant POOL_IMPL = 0x589750BA8aF186cE5B55391B0b7148cAD43a1619;
+  // https://mantlescan.xyz/address/0x2eb21BCE2C5D59a67C648BfD2e700AdDB752DD7B
+  address internal constant POOL_IMPL = 0x2eb21BCE2C5D59a67C648BfD2e700AdDB752DD7B;
 
-  // https://mantlescan.xyz/address/0xBeC519531F0E78BcDdB295242fA4EC5251B38574
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xBeC519531F0E78BcDdB295242fA4EC5251B38574;
+  // https://mantlescan.xyz/address/0x9812b4F755E03168e1A4A2869A44f8D097040601
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x9812b4F755E03168e1A4A2869A44f8D097040601;
 
-  // https://mantlescan.xyz/address/0xe875feF12DF97D763038F0Eac53962Ca36249eA6
+  // https://mantlescan.xyz/address/0x635C036FC809e07BE808C4Ed28F34F78B284Ab72
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0xe875feF12DF97D763038F0Eac53962Ca36249eA6;
+    0x635C036FC809e07BE808C4Ed28F34F78B284Ab72;
 
-  // https://mantlescan.xyz/address/0x9D6aB154437A28CF202954e1176449c75e6D6c4B
-  address internal constant EMISSION_MANAGER = 0x9D6aB154437A28CF202954e1176449c75e6D6c4B;
+  // https://mantlescan.xyz/address/0x897865Dd823E84b5b3D79aD77B697dc34270Cf2E
+  address internal constant EMISSION_MANAGER = 0x897865Dd823E84b5b3D79aD77B697dc34270Cf2E;
 
-  // https://mantlescan.xyz/address/0x29B8Edc8a5158e8eBD7Dea3473517AB079260a0b
-  ICollector internal constant COLLECTOR = ICollector(0x29B8Edc8a5158e8eBD7Dea3473517AB079260a0b);
+  // https://mantlescan.xyz/address/0xe41236D02ECDb151A179Ca71C9b3C18E424E939a
+  ICollector internal constant COLLECTOR = ICollector(0xe41236D02ECDb151A179Ca71C9b3C18E424E939a);
 
-  // https://mantlescan.xyz/address/0xd8247C7926841337E8adf9fD9E87026992C45062
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xd8247C7926841337E8adf9fD9E87026992C45062;
+  // https://mantlescan.xyz/address/0xB91DA65093d54a1a7cb0fe684860F568A5E57123
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xB91DA65093d54a1a7cb0fe684860F568A5E57123;
 
-  // https://mantlescan.xyz/address/0x294daB91f3539f5a74Ed995a59235eE62A14A345
+  // https://mantlescan.xyz/address/0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x294daB91f3539f5a74Ed995a59235eE62A14A345;
+    0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099;
 
-  // https://mantlescan.xyz/address/0xea9989569Cf2D860597b4d649c9A963c15ab84fa
-  address internal constant CONFIG_ENGINE = 0xea9989569Cf2D860597b4d649c9A963c15ab84fa;
+  // https://mantlescan.xyz/address/0x44D38b18a99E50E51B99F05C1f418Db26Ded315f
+  address internal constant CONFIG_ENGINE = 0x44D38b18a99E50E51B99F05C1f418Db26Ded315f;
 
-  // https://mantlescan.xyz/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
+  // https://mantlescan.xyz/address/0x34f57d761b764A0A932320B970ccC00E83B07a18
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
-    0xe892E40C92c2E4D281Be59b2E6300F271d824E75;
+    0x34f57d761b764A0A932320B970ccC00E83B07a18;
 
-  // https://mantlescan.xyz/address/0x01d678F1bbE148C96e7501F1Ac41661904F84F61
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x01d678F1bbE148C96e7501F1Ac41661904F84F61;
+  // https://mantlescan.xyz/address/0xF9e48edc704BDF494309cA457BCea4c0696f591d
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xF9e48edc704BDF494309cA457BCea4c0696f591d;
 
-  // https://mantlescan.xyz/address/0x4F6f44325828D2A40724A0a966F33d75cD1DF7c1
-  address internal constant UI_POOL_DATA_PROVIDER = 0x4F6f44325828D2A40724A0a966F33d75cD1DF7c1;
+  // https://mantlescan.xyz/address/0xaE1d70F59e87Adf9Bd3CFdE8F4bB709F69368C6C
+  address internal constant UI_POOL_DATA_PROVIDER = 0xaE1d70F59e87Adf9Bd3CFdE8F4bB709F69368C6C;
 
-  // https://mantlescan.xyz/address/0x4758213271BFdC72224A7a8742dC865fC97756e1
-  address internal constant WALLET_BALANCE_PROVIDER = 0x4758213271BFdC72224A7a8742dC865fC97756e1;
+  // https://mantlescan.xyz/address/0x384c8C9e2A201975b2ef3415b96d2204826034ae
+  address internal constant WALLET_BALANCE_PROVIDER = 0x384c8C9e2A201975b2ef3415b96d2204826034ae;
 
-  // https://mantlescan.xyz/address/0xde35f7711295Dfd0CD8bd94d46f65b8Acb182520
-  address internal constant WETH_GATEWAY = 0xde35f7711295Dfd0CD8bd94d46f65b8Acb182520;
+  // https://mantlescan.xyz/address/0x90fb30D049569A3a9213F2707640748B344FbF84
+  address internal constant WETH_GATEWAY = 0x90fb30D049569A3a9213F2707640748B344FbF84;
 
-  // https://mantlescan.xyz/address/0x4A49351ED179b23af08523Af98a8ca95C712b9d9
-  address internal constant L2_ENCODER = 0x4A49351ED179b23af08523Af98a8ca95C712b9d9;
+  // https://mantlescan.xyz/address/0x3aA22f34590683F2B0b8b4e380A6c60e0130cA46
+  address internal constant L2_ENCODER = 0x3aA22f34590683F2B0b8b4e380A6c60e0130cA46;
 
-  // https://mantlescan.xyz/address/0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA
-  address internal constant STATA_FACTORY = 0x7cCC8a3DF66a2cDEa6c0629412378752Db5014EA;
+  // https://mantlescan.xyz/address/0x45665b1ce7F976F262774362152B4F585e3876D3
+  address internal constant STATA_FACTORY = 0x45665b1ce7F976F262774362152B4F585e3876D3;
 
-  // https://mantlescan.xyz/address/0x3238FC1d642b60F41a35f62570237656C85F4744
-  address internal constant RISK_STEWARD = 0x3238FC1d642b60F41a35f62570237656C85F4744;
-
-  // https://mantlescan.xyz/address/0x7485FB1552BB107fFc923f41E548e8e3FFea5E45
-  address internal constant DUST_BIN = 0x7485FB1552BB107fFc923f41E548e8e3FFea5E45;
+  // https://mantlescan.xyz/address/0x488ea4B8f6591185709DaFd2412050d3e6c3C7d4
+  address internal constant DUST_BIN = 0x488ea4B8f6591185709DaFd2412050d3e6c3C7d4;
 }
 library AaveV3MantleAssets {}
 library AaveV3MantleEModes {
   uint8 internal constant NONE = 0;
 }
 library AaveV3MantleExternalLibraries {
-  // https://mantlescan.xyz/address/0x34039100cc9584Ae5D741d322e16d0d18CEE8770
-  address internal constant FLASHLOAN_LOGIC = 0x34039100cc9584Ae5D741d322e16d0d18CEE8770;
+  // https://mantlescan.xyz/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
+  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
 
-  // https://mantlescan.xyz/address/0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36
-  address internal constant BORROW_LOGIC = 0x62325c94E1c49dcDb5937726aB5D8A4c37bCAd36;
+  // https://mantlescan.xyz/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
+  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
 
-  // https://mantlescan.xyz/address/0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74
-  address internal constant E_MODE_LOGIC = 0xC31d2362fAeD85dF79d0bec99693D0EB0Abd3f74;
+  // https://mantlescan.xyz/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
+  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
 
-  // https://mantlescan.xyz/address/0x4731bF01583F991278692E8727d0700a00A1fBBf
-  address internal constant LIQUIDATION_LOGIC = 0x4731bF01583F991278692E8727d0700a00A1fBBf;
+  // https://mantlescan.xyz/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
+  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
 
-  // https://mantlescan.xyz/address/0xf8C97539934ee66a67C26010e8e027D77E821B0C
-  address internal constant POOL_LOGIC = 0xf8C97539934ee66a67C26010e8e027D77E821B0C;
-
-  // https://mantlescan.xyz/address/0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3
-  address internal constant SUPPLY_LOGIC = 0x185477906B46D9b8DE0DEB73A1bBfb87b5b51BC3;
+  // https://mantlescan.xyz/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
+  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
 }
