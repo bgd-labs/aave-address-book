@@ -685,7 +685,7 @@ export const ASSETS = {
     A_TOKEN: '0xAa0200d169fF3ba9385c12E073c5d1d30434AE7b',
     V_TOKEN: '0xE35e6A0D3AbC28289f5d4C2d262a133Df936b98D',
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
-    ORACLE: '0xf22de319901C3b9BAEc7Fa14FdF013Ede40E7312',
+    ORACLE: '0x8adb5187695F773513dEC4b569d21db0341931dA',
   },
   syrupUSDT: {
     decimals: 6,
@@ -1113,7 +1113,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10380,
+    liquidationBonus: 10350,
   },
   '30': {
     label: 'PT_USDe_27NOV2025,PT_USDe_5FEB2026 / USDe',
@@ -1124,9 +1124,9 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9080,
-    liquidationThreshold: 9280,
-    liquidationBonus: 10280,
+    ltv: 9110,
+    liquidationThreshold: 9310,
+    liquidationBonus: 10250,
   },
   '31': {
     label: 'PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDC,USDT,USDe,USDtb',
@@ -1144,7 +1144,7 @@ export const E_MODES = {
     ],
     ltv: 8910,
     liquidationThreshold: 9110,
-    liquidationBonus: 10480,
+    liquidationBonus: 10450,
   },
   '32': {
     label: 'PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDe',
@@ -1157,7 +1157,7 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10380,
+    liquidationBonus: 10350,
   },
   '33': {
     label: 'syrupUSDT / USDT,GHO',

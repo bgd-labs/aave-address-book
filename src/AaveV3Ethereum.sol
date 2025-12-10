@@ -1292,8 +1292,8 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0xE35e6A0D3AbC28289f5d4C2d262a133Df936b98D
   address internal constant mUSD_V_TOKEN = 0xE35e6A0D3AbC28289f5d4C2d262a133Df936b98D;
 
-  // https://etherscan.io/address/0xf22de319901C3b9BAEc7Fa14FdF013Ede40E7312
-  address internal constant mUSD_ORACLE = 0xf22de319901C3b9BAEc7Fa14FdF013Ede40E7312;
+  // https://etherscan.io/address/0x8adb5187695F773513dEC4b569d21db0341931dA
+  address internal constant mUSD_ORACLE = 0x8adb5187695F773513dEC4b569d21db0341931dA;
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant mUSD_INTEREST_RATE_STRATEGY =

@@ -101,4 +101,7 @@ export const rsETH__ETH_Exchange_Rate = '0x7024c64Ad30Ebf224e417CfDE4438606d2b9B
 // https://era.zksync.network/address/0x498232F0a52D4e94A6e0Ea93D63C07Bc63133009
 export const SOL__USD = '0x498232F0a52D4e94A6e0Ea93D63C07Bc63133009';
 
+// https://era.zksync.network/address/0x1B242BEfc3008E8590Fc7aca27C74592CdEce6e3
+export const AAVE_Network_Emergency_Count_ZKSync = '0x1B242BEfc3008E8590Fc7aca27C74592CdEce6e3';
+
 export const CHAIN_ID = 324;
