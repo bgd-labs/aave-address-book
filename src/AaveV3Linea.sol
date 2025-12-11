@@ -257,8 +257,8 @@ library AaveV3LineaAssets {
   // https://lineascan.build/address/0x8619B395Fd96DCFe3f2711d8BF84b26338db0294
   address internal constant mUSD_V_TOKEN = 0x8619B395Fd96DCFe3f2711d8BF84b26338db0294;
 
-  // https://lineascan.build/address/0xB8454f3b48395103F23c88B699d4F6A81fD1DCff
-  address internal constant mUSD_ORACLE = 0xB8454f3b48395103F23c88B699d4F6A81fD1DCff;
+  // https://lineascan.build/address/0xA77b1C51a76bbB72D17BF467393a540868103097
+  address internal constant mUSD_ORACLE = 0xA77b1C51a76bbB72D17BF467393a540868103097;
 
   // https://lineascan.build/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
   address internal constant mUSD_INTEREST_RATE_STRATEGY =
