@@ -18,6 +18,10 @@ library ChainlinkLinea {
   // https://lineascan.build/address/0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544
   address internal constant weETH__ETH = 0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544;
 
+  // https://lineascan.build/address/0x8b65a2BA86D9aE89bFE4EA68e97B20e45ab05623
+  address internal constant savBTC__avBTC_Exchange_Rate =
+    0x8b65a2BA86D9aE89bFE4EA68e97B20e45ab05623;
+
   // https://lineascan.build/address/0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4
   address internal constant PCE_Price_Index_Level = 0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4;
 
@@ -56,6 +60,10 @@ library ChainlinkLinea {
   // https://lineascan.build/address/0x49768d7ebB7694b1e72546300cCCeD877084d72f
   address internal constant xSolvBTC_NAV = 0x49768d7ebB7694b1e72546300cCCeD877084d72f;
 
+  // https://lineascan.build/address/0x81F4d3052b034007cb5fA1D4CFb56D0732867f2a
+  address internal constant AAVE_Network_Emergency_Count_Linea =
+    0x81F4d3052b034007cb5fA1D4CFb56D0732867f2a;
+
   // https://lineascan.build/address/0xdAad34260E4105702278F225d3d20C453d12065e
   address internal constant Real_GDP_Percent_Change_Annual_Rate =
     0xdAad34260E4105702278F225d3d20C453d12065e;
@@ -90,6 +98,9 @@ library ChainlinkLinea {
   // https://lineascan.build/address/0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9
   address internal constant BTC__USD = 0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9;
 
+  // https://lineascan.build/address/0x9e6c73Ae2b419eb32D5D4380067D8E24785926d3
+  address internal constant YETH_ETH_Exchange_Rate = 0x9e6c73Ae2b419eb32D5D4380067D8E24785926d3;
+
   // https://lineascan.build/address/0x637cf12017219Dd3A758818eD63185f7acF7D935
   address internal constant EUR__USD = 0x637cf12017219Dd3A758818eD63185f7acF7D935;
 
@@ -104,6 +115,10 @@ library ChainlinkLinea {
 
   // https://lineascan.build/address/0x57011f81c93Da4dFb244c80667aAECf8cA9D53Bb
   address internal constant ynETH__ETH_Exchange_Rate = 0x57011f81c93Da4dFb244c80667aAECf8cA9D53Bb;
+
+  // https://lineascan.build/address/0x0AAC940015d333b8E4f93fcE9c0f6f365d252741
+  address internal constant SAVUSD__AVUSD_Exchange_Rate =
+    0x0AAC940015d333b8E4f93fcE9c0f6f365d252741;
 
   // https://lineascan.build/address/0xefCA2bbe0EdD0E22b2e0d2F8248E99F4bEf4A7dB
   address internal constant USDT__USD = 0xefCA2bbe0EdD0E22b2e0d2F8248E99F4bEf4A7dB;
@@ -123,6 +138,9 @@ library ChainlinkLinea {
 
   // https://lineascan.build/address/0x85342bC62aadef58f029ab6d17D643949e6F073e
   address internal constant RSETH__ETH = 0x85342bC62aadef58f029ab6d17D643949e6F073e;
+
+  // https://lineascan.build/address/0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C
+  address internal constant YBTC_BTC_Exchange_Rate = 0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C;
 
   // https://lineascan.build/address/0x9ce4473B42a639d010eD741df3CA829E6e480803
   address internal constant MATIC__USD = 0x9ce4473B42a639d010eD741df3CA829E6e480803;

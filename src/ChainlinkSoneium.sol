@@ -35,11 +35,18 @@ library ChainlinkSoneium {
   // https://soneium.blockscout.com/address/0x316DefA0f4BA9567aF55E66212e66b4fD6646eEE
   address internal constant USR__USD = 0x316DefA0f4BA9567aF55E66212e66b4fD6646eEE;
 
+  // https://soneium.blockscout.com/address/0x877654fE4da2FC54453a212aac601247b2A1B786
+  address internal constant USR_USD_Exchange_Rate = 0x877654fE4da2FC54453a212aac601247b2A1B786;
+
   // https://soneium.blockscout.com/address/0xF049354158e13F6794A3cCD236694E0e1BD9AF79
   address internal constant OUSDT__USD = 0xF049354158e13F6794A3cCD236694E0e1BD9AF79;
 
   // https://soneium.blockscout.com/address/0x4516fDa3259110EefAfC6fBcE266417B3F3b985a
   address internal constant wstETH__ETH = 0x4516fDa3259110EefAfC6fBcE266417B3F3b985a;
+
+  // https://soneium.blockscout.com/address/0x1A26E1197F86E8938FdFa11bA1597dE8e211a8B0
+  address internal constant AAVE_Network_Emergency_Count_Soneium =
+    0x1A26E1197F86E8938FdFa11bA1597dE8e211a8B0;
 
   // https://soneium.blockscout.com/address/0x4f80347FE3579859232e1e8E0735020C008408cB
   address internal constant RLP_USD_Exchange_Rate = 0x4f80347FE3579859232e1e8E0735020C008408cB;
