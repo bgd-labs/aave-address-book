@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 0
 
       - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@de808b1eea699e761c404bda44ba8f21aba30b2c # pin@v1
+        uses: foundry-rs/foundry-toolchain@8b0419c685ef46cb79ec93fbdc131174afceb730 # pin@v1
         with:
           version: nightly
 
