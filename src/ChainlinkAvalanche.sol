@@ -6,6 +6,9 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0xebEfEAA58636DF9B20a4fAd78Fad8759e6A20e87
   address internal constant WBTCe_Proof_of_Reserves = 0xebEfEAA58636DF9B20a4fAd78Fad8759e6A20e87;
 
+  // https://snowscan.xyz/address/0x735f816f63890c6E9FF28484E2d257e9c5dc4788
+  address internal constant YETH_ETH_Exchange_Rate = 0x735f816f63890c6E9FF28484E2d257e9c5dc4788;
+
   // https://snowscan.xyz/address/0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e
   address internal constant SAND__USD = 0x6f2A1D4014FED967172FC7caCf7a6e04Cf02752e;
 
@@ -97,6 +100,9 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0x4Cf57DC9028187b9DAaF773c8ecA941036989238
   address internal constant XAVA__USD = 0x4Cf57DC9028187b9DAaF773c8ecA941036989238;
 
+  // https://snowscan.xyz/address/0xf58B78581c480caFf667C63feDd564eCF01Ef86b
+  address internal constant USTC__USD = 0xf58B78581c480caFf667C63feDd564eCF01Ef86b;
+
   // https://snowscan.xyz/address/0x155835C5755205597d62703a5A0b37e57a26Ee5C
   address internal constant AXS__USD = 0x155835C5755205597d62703a5A0b37e57a26Ee5C;
 
@@ -112,15 +118,15 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a
   address internal constant JOE__USD = 0x02D35d3a8aC3e1626d3eE09A78Dd87286F5E8e3a;
 
+  // https://snowscan.xyz/address/0xd604e3c218d567b648Cd4B81cCd7Dddb56696331
+  address internal constant WSTLINK_LINK_Exchange_Rate = 0xd604e3c218d567b648Cd4B81cCd7Dddb56696331;
+
   // https://snowscan.xyz/address/0x943cEF1B112Ca9FD7EDaDC9A46477d3812a382b6
   address internal constant LINKe_Proof_of_Reserves = 0x943cEF1B112Ca9FD7EDaDC9A46477d3812a382b6;
 
   // https://snowscan.xyz/address/0x982057Fd0A53d52E558A722ba53Ad95E702Da0dF
   address internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
     0x982057Fd0A53d52E558A722ba53Ad95E702Da0dF;
-
-  // https://snowscan.xyz/address/0x2dD517B2f9ba49CedB0573131FD97a5AC19ff648
-  address internal constant FTM__USD = 0x2dD517B2f9ba49CedB0573131FD97a5AC19ff648;
 
   // https://snowscan.xyz/address/0xF096872672F44d6EBA71458D74fe67F9a77a23B9
   address internal constant USDC__USD = 0xF096872672F44d6EBA71458D74fe67F9a77a23B9;
@@ -152,6 +158,10 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0x84FF93CAD57DcD39b21895171D30A7A0e7851C75
   address internal constant wstETH_stETH_Exchange_Rate = 0x84FF93CAD57DcD39b21895171D30A7A0e7851C75;
 
+  // https://snowscan.xyz/address/0x908C8195E085b3290d335014B94E6F1C886a889F
+  address internal constant SYRUPUSDT__USD_Exchange_Rate =
+    0x908C8195E085b3290d335014B94E6F1C886a889F;
+
   // https://snowscan.xyz/address/0xfD2b540D6c147D0889A1F1B97a2A9aB694992677
   address internal constant fsBTC_Frictionless_Bitcoin_Treasury_Fund_Reserves =
     0xfD2b540D6c147D0889A1F1B97a2A9aB694992677;
@@ -168,6 +178,9 @@ library ChainlinkAvalanche {
 
   // https://snowscan.xyz/address/0x5ff6c083B7B2BD0D61beB7173B3757e1a1e6E1C6
   address internal constant solvBTC__BTC = 0x5ff6c083B7B2BD0D61beB7173B3757e1a1e6E1C6;
+
+  // https://snowscan.xyz/address/0xb7441BBD0298aaeF4f2BbD40E8025Cf59cA6E8D5
+  address internal constant SUSDE_USDE_Exchange_Rate = 0xb7441BBD0298aaeF4f2BbD40E8025Cf59cA6E8D5;
 
   // https://snowscan.xyz/address/0x3F968A21647d7ca81Fb8A5b69c0A452701d5DCe8
   address internal constant GMX__USD = 0x3F968A21647d7ca81Fb8A5b69c0A452701d5DCe8;
@@ -224,6 +237,9 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0x1db18D41E4AD2403d9f52b5624031a2D9932Fd73
   address internal constant MATIC__USD = 0x1db18D41E4AD2403d9f52b5624031a2D9932Fd73;
 
+  // https://snowscan.xyz/address/0xFbAc2cBC1c0083D4edC9ce47F72F3B0D9bc67F9C
+  address internal constant wstPOL_POL_Exchange_Rate = 0xFbAc2cBC1c0083D4edC9ce47F72F3B0D9bc67F9C;
+
   // https://snowscan.xyz/address/0xf8B283aD4d969ECFD70005714DD5910160565b94
   address internal constant JPY__USD = 0xf8B283aD4d969ECFD70005714DD5910160565b94;
 
@@ -242,11 +258,11 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0xBb92195Ec95DE626346eeC8282D53e261dF95241
   address internal constant BNB__USD = 0xBb92195Ec95DE626346eeC8282D53e261dF95241;
 
+  // https://snowscan.xyz/address/0x14488868FC8B1fFB381d6F49907EE75B3f0C2a0F
+  address internal constant SUSDE__USD = 0x14488868FC8B1fFB381d6F49907EE75B3f0C2a0F;
+
   // https://snowscan.xyz/address/0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743
   address internal constant BTC__USD = 0x2779D32d5166BAaa2B2b658333bA7e6Ec0C65743;
-
-  // https://snowscan.xyz/address/0xf58B78581c480caFf667C63feDd564eCF01Ef86b
-  address internal constant UST__USD = 0xf58B78581c480caFf667C63feDd564eCF01Ef86b;
 
   // https://snowscan.xyz/address/0x2854Ca10a54800e15A2a25cFa52567166434Ff0a
   address internal constant Calculated_SAVAX__USD = 0x2854Ca10a54800e15A2a25cFa52567166434Ff0a;
@@ -262,6 +278,9 @@ library ChainlinkAvalanche {
 
   // https://snowscan.xyz/address/0x28043B1Ebd41860B93EC1F1eC19560760B6dB556
   address internal constant YFI__USD = 0x28043B1Ebd41860B93EC1F1eC19560760B6dB556;
+
+  // https://snowscan.xyz/address/0xAba063634dA21488a0C8A4415cf7651a013B12B5
+  address internal constant YBTC_BTC_Exchange_Rate = 0xAba063634dA21488a0C8A4415cf7651a013B12B5;
 
   // https://snowscan.xyz/address/0x0A77230d17318075983913bC2145DB16C7366156
   address internal constant AVAX__USD = 0x0A77230d17318075983913bC2145DB16C7366156;

@@ -3356,7 +3356,8 @@
       "name": "PT Ethena sUSDE 27NOV2025",
       "decimals": 18,
       "symbol": "PT-sUSDE-27NOV2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
     },
     {
       "chainId": 1,
@@ -3365,6 +3366,7 @@
       "decimals": 18,
       "symbol": "aEthPT_sUSDe_27NOV2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xe6A934089BBEe34F832060CE98848359883749B3"
@@ -3376,7 +3378,8 @@
       "name": "PT Ethena USDe 27NOV2025",
       "decimals": 18,
       "symbol": "PT-USDe-27NOV2025",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3385,6 +3388,7 @@
       "decimals": 18,
       "symbol": "aEthPT_USDe_27NOV2025",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x62C6E813b9589C3631Ba0Cdb013acdB8544038B7"
@@ -3396,7 +3400,8 @@
       "name": "PT Ethena USDe 5FEB2026",
       "decimals": 18,
       "symbol": "PT-USDe-5FEB2026",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 1,
@@ -3405,6 +3410,7 @@
       "decimals": 18,
       "symbol": "aEthPT_USDE_5FEB_2026",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x1F84a51296691320478c98b8d77f2Bbd17D34350"
@@ -3416,7 +3422,8 @@
       "name": "PT Ethena sUSDE 5FEB2026",
       "decimals": 18,
       "symbol": "PT-sUSDE-5FEB2026",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
     },
     {
       "chainId": 1,
@@ -3425,6 +3432,7 @@
       "decimals": 18,
       "symbol": "aEthPT_sUSDe_5FEB_2026",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xE8483517077afa11A9B07f849cee2552f040d7b2"
@@ -3436,7 +3444,8 @@
       "name": "MetaMask USD",
       "decimals": 6,
       "symbol": "mUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/musd.svg"
     },
     {
       "chainId": 1,
@@ -3445,6 +3454,7 @@
       "decimals": 6,
       "symbol": "aEthmUSD",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/amusd.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA"
@@ -8616,7 +8626,8 @@
       "name": "MetaMask USD",
       "decimals": 6,
       "symbol": "mUSD",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/musd.svg"
     },
     {
       "chainId": 59144,
@@ -8625,6 +8636,7 @@
       "decimals": 6,
       "symbol": "aLinmUSD",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/amusd.svg",
       "extensions": {
         "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
         "underlying": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA"
@@ -9402,7 +9414,8 @@
       "name": "PT Ethena USDe 15JAN2026",
       "decimals": 18,
       "symbol": "PT-USDe-15JAN2026",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
     },
     {
       "chainId": 9745,
@@ -9411,6 +9424,7 @@
       "decimals": 18,
       "symbol": "aPlaPT_USDe_15JAN2026",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a"
@@ -9422,7 +9436,8 @@
       "name": "PT Ethena sUSDE 15JAN2026",
       "decimals": 18,
       "symbol": "PT-sUSDE-15JAN2026",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
     },
     {
       "chainId": 9745,
@@ -9431,6 +9446,7 @@
       "decimals": 18,
       "symbol": "aPlaPT_sUSDE_15JAN2026",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8"
@@ -9506,7 +9522,8 @@
       "name": "Wrapped XPL",
       "decimals": 18,
       "symbol": "WXPL",
-      "tags": ["underlying"]
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/xpl.svg"
     },
     {
       "chainId": 9745,
@@ -9515,6 +9532,7 @@
       "decimals": 18,
       "symbol": "aPlaWXPL",
       "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/axpl.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x6100E367285b01F48D07953803A2d8dCA5D19873"
@@ -9573,6 +9591,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 149 },
-  "timestamp": "2025-12-04T00:16:41.960Z"
+  "version": { "major": 3, "minor": 0, "patch": 150 },
+  "timestamp": "2025-12-10T23:28:11.285Z"
 }
