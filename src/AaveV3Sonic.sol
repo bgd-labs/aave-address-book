@@ -65,8 +65,8 @@ library AaveV3Sonic {
   // https://sonicscan.org/address/0xeC859AED64e87004FA724892D5aB474901825B2D
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xeC859AED64e87004FA724892D5aB474901825B2D;
 
-  // https://sonicscan.org/address/0x9005A69fE088680827f292e8aE885Be4BE1beb2f
-  address internal constant UI_POOL_DATA_PROVIDER = 0x9005A69fE088680827f292e8aE885Be4BE1beb2f;
+  // https://sonicscan.org/address/0x4F3F69979ED28c962028582B1760E98B1a117097
+  address internal constant UI_POOL_DATA_PROVIDER = 0x4F3F69979ED28c962028582B1760E98B1a117097;
 
   // https://sonicscan.org/address/0x6637Ef9c6b41Fa62d69b7E88C5Dd9eF30BbEE945
   address internal constant WALLET_BALANCE_PROVIDER = 0x6637Ef9c6b41Fa62d69b7E88C5Dd9eF30BbEE945;

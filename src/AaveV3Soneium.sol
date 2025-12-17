@@ -68,8 +68,8 @@ library AaveV3Soneium {
   // https://soneium.blockscout.com/address/0xCB5B3ca20603231945dC5731C33E7f7F7679Ea89
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xCB5B3ca20603231945dC5731C33E7f7F7679Ea89;
 
-  // https://soneium.blockscout.com/address/0xEf95A6B9e88Bd509Fd67BA741cf2b263DaC65c00
-  address internal constant UI_POOL_DATA_PROVIDER = 0xEf95A6B9e88Bd509Fd67BA741cf2b263DaC65c00;
+  // https://soneium.blockscout.com/address/0xc69299Ddd3a704F6954c8Ae1AD00e0892d77Aee4
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc69299Ddd3a704F6954c8Ae1AD00e0892d77Aee4;
 
   // https://soneium.blockscout.com/address/0xF4c6Af5A37c284d907c668EbF76FbD7C139d4c11
   address internal constant WALLET_BALANCE_PROVIDER = 0xF4c6Af5A37c284d907c668EbF76FbD7C139d4c11;

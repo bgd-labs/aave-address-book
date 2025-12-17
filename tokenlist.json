@@ -8720,8 +8720,7 @@
       "name": "Celo Euro",
       "decimals": 18,
       "symbol": "cEUR",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ceur.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 42220,
@@ -8730,7 +8729,6 @@
       "decimals": 18,
       "symbol": "aCelcEUR",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aceur.svg",
       "extensions": {
         "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
         "underlying": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73"
@@ -8742,8 +8740,7 @@
       "name": "Celo Dollar",
       "decimals": 18,
       "symbol": "cUSD",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/cusd.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 42220,
@@ -8752,7 +8749,6 @@
       "decimals": 18,
       "symbol": "aCelcUSD",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/acusd.svg",
       "extensions": {
         "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
         "underlying": "0x765DE816845861e75A25fCA122bb6898B8B1282a"
@@ -9591,6 +9587,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 150 },
-  "timestamp": "2025-12-10T23:28:11.285Z"
+  "version": { "major": 3, "minor": 0, "patch": 151 },
+  "timestamp": "2025-12-17T22:59:05.124Z"
 }

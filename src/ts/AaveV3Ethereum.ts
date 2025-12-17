@@ -68,8 +68,8 @@ export const SWAP_COLLATERAL_ADAPTER = '0xADC0A53095A0af87F3aa29FE0715B5c2801636
 // https://etherscan.io/address/0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047
 export const UI_INCENTIVE_DATA_PROVIDER = '0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047';
 
-// https://etherscan.io/address/0x3F78BBD206e4D3c504Eb854232EdA7e47E9Fd8FC
-export const UI_POOL_DATA_PROVIDER = '0x3F78BBD206e4D3c504Eb854232EdA7e47E9Fd8FC';
+// https://etherscan.io/address/0x56b7A1012765C285afAC8b8F25C69Bf10ccfE978
+export const UI_POOL_DATA_PROVIDER = '0x56b7A1012765C285afAC8b8F25C69Bf10ccfE978';
 
 // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
 export const WALLET_BALANCE_PROVIDER = '0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2';
@@ -1111,8 +1111,8 @@ export const E_MODES = {
       '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 9000,
-    liquidationThreshold: 9200,
+    ltv: 9100,
+    liquidationThreshold: 9300,
     liquidationBonus: 10350,
   },
   '30': {
@@ -1124,8 +1124,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9110,
-    liquidationThreshold: 9310,
+    ltv: 9190,
+    liquidationThreshold: 9390,
     liquidationBonus: 10250,
   },
   '31': {
@@ -1142,8 +1142,8 @@ export const E_MODES = {
       '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
       '0xC139190F447e929f090Edeb554D95AbB8b18aC1C',
     ],
-    ltv: 8910,
-    liquidationThreshold: 9110,
+    ltv: 9000,
+    liquidationThreshold: 9200,
     liquidationBonus: 10450,
   },
   '32': {
@@ -1155,8 +1155,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1073741824',
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
-    ltv: 9000,
-    liquidationThreshold: 9200,
+    ltv: 9100,
+    liquidationThreshold: 9300,
     liquidationBonus: 10350,
   },
   '33': {

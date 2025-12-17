@@ -75,8 +75,8 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x5c5228aC8BC1528482514aF3e27E692495148717
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x5c5228aC8BC1528482514aF3e27E692495148717;
 
-  // https://bscscan.com/address/0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3
-  address internal constant UI_POOL_DATA_PROVIDER = 0xc0179321f0825c3e0F59Fe7Ca4E40557b97797a3;
+  // https://bscscan.com/address/0x632b5Dfc315b228bfE779E6442322Ad8a110Ea13
+  address internal constant UI_POOL_DATA_PROVIDER = 0x632b5Dfc315b228bfE779E6442322Ad8a110Ea13;
 
   // https://bscscan.com/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
   address internal constant WALLET_BALANCE_PROVIDER = 0x36616cf17557639614c1cdDb356b1B83fc0B2132;
