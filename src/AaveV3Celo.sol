@@ -62,8 +62,8 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099;
 
-  // https://celoscan.io/address/0xf07fFd12b119b921C4a2ce8d4A13C5d1E3000d6e
-  address internal constant UI_POOL_DATA_PROVIDER = 0xf07fFd12b119b921C4a2ce8d4A13C5d1E3000d6e;
+  // https://celoscan.io/address/0xe48424542b30b0b8D1Dc09099aceE407f40b4491
+  address internal constant UI_POOL_DATA_PROVIDER = 0xe48424542b30b0b8D1Dc09099aceE407f40b4491;
 
   // https://celoscan.io/address/0xB91DA65093d54a1a7cb0fe684860F568A5E57123
   address internal constant WALLET_BALANCE_PROVIDER = 0xB91DA65093d54a1a7cb0fe684860F568A5E57123;
@@ -121,39 +121,39 @@ library AaveV3CeloAssets {
   address internal constant USDT_STATA_TOKEN = 0x5264B1F45616dB619Bb3c8DCeBD86fB33FA0e53F;
 
   // https://celoscan.io/address/0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73
-  address internal constant cEUR_UNDERLYING = 0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73;
+  address internal constant EURm_UNDERLYING = 0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73;
 
-  uint8 internal constant cEUR_DECIMALS = 18;
+  uint8 internal constant EURm_DECIMALS = 18;
 
   // https://celoscan.io/address/0x34c02571094e08E935B8cf8dC10F1Ad6795f1f81
-  address internal constant cEUR_A_TOKEN = 0x34c02571094e08E935B8cf8dC10F1Ad6795f1f81;
+  address internal constant EURm_A_TOKEN = 0x34c02571094e08E935B8cf8dC10F1Ad6795f1f81;
 
   // https://celoscan.io/address/0x5C2B7EB5886B3cEc5CCE1019E34493da33291aF5
-  address internal constant cEUR_V_TOKEN = 0x5C2B7EB5886B3cEc5CCE1019E34493da33291aF5;
+  address internal constant EURm_V_TOKEN = 0x5C2B7EB5886B3cEc5CCE1019E34493da33291aF5;
 
   // https://celoscan.io/address/0x3D207061Dbe8E2473527611BFecB87Ff12b28dDa
-  address internal constant cEUR_ORACLE = 0x3D207061Dbe8E2473527611BFecB87Ff12b28dDa;
+  address internal constant EURm_ORACLE = 0x3D207061Dbe8E2473527611BFecB87Ff12b28dDa;
 
   // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
-  address internal constant cEUR_INTEREST_RATE_STRATEGY =
+  address internal constant EURm_INTEREST_RATE_STRATEGY =
     0x8B62D241Bf59f40991DCd18531683156d7013355;
 
   // https://celoscan.io/address/0x765DE816845861e75A25fCA122bb6898B8B1282a
-  address internal constant cUSD_UNDERLYING = 0x765DE816845861e75A25fCA122bb6898B8B1282a;
+  address internal constant USDm_UNDERLYING = 0x765DE816845861e75A25fCA122bb6898B8B1282a;
 
-  uint8 internal constant cUSD_DECIMALS = 18;
+  uint8 internal constant USDm_DECIMALS = 18;
 
   // https://celoscan.io/address/0xBba98352628B0B0c4b40583F593fFCb630935a45
-  address internal constant cUSD_A_TOKEN = 0xBba98352628B0B0c4b40583F593fFCb630935a45;
+  address internal constant USDm_A_TOKEN = 0xBba98352628B0B0c4b40583F593fFCb630935a45;
 
   // https://celoscan.io/address/0x05Ee3d1fBACbDbA1259946033cd7A42FDFcCcF0d
-  address internal constant cUSD_V_TOKEN = 0x05Ee3d1fBACbDbA1259946033cd7A42FDFcCcF0d;
+  address internal constant USDm_V_TOKEN = 0x05Ee3d1fBACbDbA1259946033cd7A42FDFcCcF0d;
 
   // https://celoscan.io/address/0xdCdA3E7E90fe827776b8FDaEa3C5977F123354DA
-  address internal constant cUSD_ORACLE = 0xdCdA3E7E90fe827776b8FDaEa3C5977F123354DA;
+  address internal constant USDm_ORACLE = 0xdCdA3E7E90fe827776b8FDaEa3C5977F123354DA;
 
   // https://celoscan.io/address/0x8B62D241Bf59f40991DCd18531683156d7013355
-  address internal constant cUSD_INTEREST_RATE_STRATEGY =
+  address internal constant USDm_INTEREST_RATE_STRATEGY =
     0x8B62D241Bf59f40991DCd18531683156d7013355;
 
   // https://celoscan.io/address/0x471EcE3750Da237f93B8E339c536989b8978a438

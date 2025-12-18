@@ -53,8 +53,8 @@ export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0xeE8Ba3464abcEeA6E34554d174DCb
 // https://plasmascan.to/address/0xcb85C501B3A5e9851850d66648d69B26A4c90942
 export const UI_INCENTIVE_DATA_PROVIDER = '0xcb85C501B3A5e9851850d66648d69B26A4c90942';
 
-// https://plasmascan.to/address/0x7B9c12915c594a68dE96201Cbdc79147F09da278
-export const UI_POOL_DATA_PROVIDER = '0x7B9c12915c594a68dE96201Cbdc79147F09da278';
+// https://plasmascan.to/address/0xdA549478Fd5C2BdB9e5eB000D0ff2554771598C7
+export const UI_POOL_DATA_PROVIDER = '0xdA549478Fd5C2BdB9e5eB000D0ff2554771598C7';
 
 // https://plasmascan.to/address/0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6
 export const WALLET_BALANCE_PROVIDER = '0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6';
@@ -240,8 +240,8 @@ export const E_MODES = {
     collateralAssets: ['0xA3D68b74bF0528fdD07263c60d6488749044914b'],
     borrowableBitmap: '1',
     borrowableAssets: ['0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb'],
-    ltv: 7500,
-    liquidationThreshold: 7800,
+    ltv: 7750,
+    liquidationThreshold: 8000,
     liquidationBonus: 10750,
   },
   '5': {
@@ -263,8 +263,8 @@ export const E_MODES = {
     collateralAssets: ['0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a'],
     borrowableBitmap: '2',
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
-    ltv: 9250,
-    liquidationThreshold: 9450,
+    ltv: 9300,
+    liquidationThreshold: 9500,
     liquidationBonus: 10210,
   },
   '7': {
@@ -278,7 +278,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10440,
+    liquidationBonus: 10410,
   },
   '8': {
     label: 'PT_sUSDE_15JAN2026 / USDe',
@@ -286,9 +286,9 @@ export const E_MODES = {
     collateralAssets: ['0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8'],
     borrowableBitmap: '2',
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
-    ltv: 9120,
-    liquidationThreshold: 9320,
-    liquidationBonus: 10350,
+    ltv: 9160,
+    liquidationThreshold: 9360,
+    liquidationBonus: 10310,
   },
   '9': {
     label: 'wrsETH / WETH,wstETH',

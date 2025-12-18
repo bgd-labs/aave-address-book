@@ -101,8 +101,8 @@ library AaveV3Base {
   // https://basescan.org/address/0x91E04cf78e53aEBe609e8a7f2003e7EECD743F2B
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x91E04cf78e53aEBe609e8a7f2003e7EECD743F2B;
 
-  // https://basescan.org/address/0x68100bD5345eA474D93577127C11F39FF8463e93
-  address internal constant UI_POOL_DATA_PROVIDER = 0x68100bD5345eA474D93577127C11F39FF8463e93;
+  // https://basescan.org/address/0xb84A20e848baE3e13897934bB4e74E2225f4546B
+  address internal constant UI_POOL_DATA_PROVIDER = 0xb84A20e848baE3e13897934bB4e74E2225f4546B;
 
   // https://basescan.org/address/0x5779b29B0a34577d927E8D511B595ef9abbFAE82
   address internal constant WALLET_BALANCE_PROVIDER = 0x5779b29B0a34577d927E8D511B595ef9abbFAE82;
