@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.38.0](https://github.com/bgd-labs/aave-address-book/compare/v4.37.2...v4.38.0) (2025-12-18)
+
+
+### Features
+
+* upgrading the uipdp for the decentralized user interface ([#1168](https://github.com/bgd-labs/aave-address-book/issues/1168)) ([ec634ea](https://github.com/bgd-labs/aave-address-book/commit/ec634ea214c719934edafbbf4c07d15db0bf1642))
+
+
+### Bug Fixes
+
+* bump dependencies ([71d86ff](https://github.com/bgd-labs/aave-address-book/commit/71d86ff2999ccbb4f03a0bd2bacdf53cf8d96688))
+
 ## [4.37.2](https://github.com/bgd-labs/aave-address-book/compare/v4.37.1...v4.37.2) (2025-12-04)
 
 
