@@ -439,7 +439,7 @@ library AaveV3BaseEModes {
 
   uint8 internal constant LBTC__cbBTC = 4;
 
-  uint8 internal constant wrsETH__wstETH = 5;
+  uint8 internal constant wrsETH__WETH_wstETH = 5;
 
   uint8 internal constant wrsETH__USDC = 6;
 
