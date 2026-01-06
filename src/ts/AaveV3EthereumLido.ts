@@ -194,12 +194,11 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '2': {
-    label: 'ezETH / USDS,USDC,GHO',
+    label: 'ezETH / USDC,GHO',
     collateralBitmap: '16',
     collateralAssets: ['0xbf5495Efe5DB9ce00f80364C8B423567e58d2110'],
-    borrowableBitmap: '76',
+    borrowableBitmap: '72',
     borrowableAssets: [
-      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
       '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
     ],
@@ -241,12 +240,11 @@ export const E_MODES = {
     liquidationBonus: 10100,
   },
   '6': {
-    label: 'rsETH / USDS,USDC,GHO',
+    label: 'rsETH / USDC,GHO',
     collateralBitmap: '128',
     collateralAssets: ['0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7'],
-    borrowableBitmap: '76',
+    borrowableBitmap: '72',
     borrowableAssets: [
-      '0xdC035D45d973E3EC169d2276DDab16f1e407384F',
       '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
       '0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f',
     ],

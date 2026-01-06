@@ -284,7 +284,7 @@ library AaveV3EthereumLidoEModes {
 
   uint8 internal constant wstETH__WETH = 1;
 
-  uint8 internal constant ezETH__USDS_USDC_GHO = 2;
+  uint8 internal constant ezETH__USDC_GHO = 2;
 
   uint8 internal constant ezETH__wstETH = 3;
 
@@ -292,7 +292,7 @@ library AaveV3EthereumLidoEModes {
 
   uint8 internal constant rsETH__wstETH = 5;
 
-  uint8 internal constant rsETH__USDS_USDC_GHO = 6;
+  uint8 internal constant rsETH__USDC_GHO = 6;
 
   uint8 internal constant tETH__wstETH = 7;
 }

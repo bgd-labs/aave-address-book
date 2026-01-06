@@ -3481,6 +3481,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
+      "name": "Global Dollar",
+      "decimals": 6,
+      "symbol": "USDG",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x7c0477d085ECb607CF8429f3eC91Ae5E1e460F4F",
+      "name": "Aave Ethereum USDG",
+      "decimals": 6,
+      "symbol": "aEthUSDG",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -9587,6 +9607,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 151 },
-  "timestamp": "2025-12-17T22:59:05.124Z"
+  "version": { "major": 3, "minor": 0, "patch": 152 },
+  "timestamp": "2026-01-06T00:17:24.876Z"
 }

@@ -1316,13 +1316,31 @@ library AaveV3EthereumAssets {
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant syrupUSDT_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0xe343167631d89B6Ffc58B88d6b7fB0228795491D
+  address internal constant USDG_UNDERLYING = 0xe343167631d89B6Ffc58B88d6b7fB0228795491D;
+
+  uint8 internal constant USDG_DECIMALS = 6;
+
+  // https://etherscan.io/address/0x7c0477d085ECb607CF8429f3eC91Ae5E1e460F4F
+  address internal constant USDG_A_TOKEN = 0x7c0477d085ECb607CF8429f3eC91Ae5E1e460F4F;
+
+  // https://etherscan.io/address/0x4f97B950a30321c181E974971E156E19fAD184A3
+  address internal constant USDG_V_TOKEN = 0x4f97B950a30321c181E974971E156E19fAD184A3;
+
+  // https://etherscan.io/address/0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d
+  address internal constant USDG_ORACLE = 0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d;
+
+  // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
+  address internal constant USDG_INTEREST_RATE_STRATEGY =
+    0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 library AaveV3EthereumEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant WETH_wstETH_cbETH_rETH_weETH_osETH_ETHx__WETH = 1;
 
-  uint8 internal constant USDe_sUSDe__USDC_USDT_USDS = 2;
+  uint8 internal constant USDe_sUSDe__USDC_USDT = 2;
 
   uint8 internal constant rsETH__wstETH_ETHx = 3;
 
@@ -1334,31 +1352,30 @@ library AaveV3EthereumEModes {
 
   uint8 internal constant eBTC__WBTC = 7;
 
-  uint8 internal constant sUSDe_PT_sUSDE_31JUL2025__USDC_USDT_USDS = 8;
+  uint8 internal constant sUSDe_PT_sUSDE_31JUL2025__USDC_USDT = 8;
 
-  uint8 internal constant PT_eUSDE_29MAY2025_eUSDe__USDC_USDT_USDS = 9;
+  uint8 internal constant PT_eUSDE_29MAY2025_eUSDe__USDC_USDT = 9;
 
-  uint8 internal constant USDe_PT_USDe_31JUL2025__USDC_USDT_USDS = 10;
+  uint8 internal constant USDe_PT_USDe_31JUL2025__USDC_USDT = 10;
 
-  uint8 internal constant USDe__USDC_USDT_USDS = 11;
+  uint8 internal constant USDe__USDC_USDT = 11;
 
   uint8 internal constant USDe_PT_USDe_31JUL2025__USDe = 12;
 
-  uint8 internal constant PT_eUSDE_14AUG2025_eUSDe__USDC_USDT_USDS = 13;
+  uint8 internal constant PT_eUSDE_14AUG2025_eUSDe__USDC_USDT = 13;
 
   uint8 internal constant PT_eUSDE_14AUG2025_eUSDe__USDe = 14;
 
-  uint8 internal constant eUSDe__USDC_USDT_USDS = 15;
+  uint8 internal constant eUSDe__USDC_USDT = 15;
 
   uint8 internal constant FBTC__WBTC = 16;
 
-  uint8 internal constant sUSDe_PT_sUSDE_31JUL2025_PT_sUSDE_25SEP2025__USDC_USDT_USDe_USDS_USDtb =
-    17;
+  uint8 internal constant sUSDe_PT_sUSDE_31JUL2025_PT_sUSDE_25SEP2025__USDC_USDT_USDe_USDtb = 17;
 
   uint8 internal constant PT_sUSDE_25SEP2025__USDe = 18;
 
   uint8
-    internal constant USDe_PT_USDe_31JUL2025_PT_eUSDE_14AUG2025_PT_USDe_25SEP2025__USDC_USDT_USDe_USDS =
+    internal constant USDe_PT_USDe_31JUL2025_PT_eUSDE_14AUG2025_PT_USDe_25SEP2025__USDC_USDT_USDe =
     19;
 
   uint8 internal constant USDe_PT_USDe_31JUL2025_PT_eUSDE_14AUG2025_PT_USDe_25SEP2025__USDe = 20;
@@ -1369,24 +1386,23 @@ library AaveV3EthereumEModes {
 
   uint8 internal constant ezETH__USDC_USDT = 23;
 
-  uint8 internal constant sUSDe_PT_sUSDE_25SEP2025_PT_sUSDE_27NOV2025__USDC_USDT_USDe_USDS_USDtb =
-    24;
+  uint8 internal constant sUSDe_PT_sUSDE_25SEP2025_PT_sUSDE_27NOV2025__USDC_USDT_USDe_USDtb = 24;
 
   uint8 internal constant PT_sUSDE_25SEP2025_PT_sUSDE_27NOV2025__USDe = 25;
 
   uint8 internal constant weETH__WETH_wstETH = 26;
 
-  uint8 internal constant PT_USDe_25SEP2025_PT_USDe_27NOV2025__USDC_USDT_USDe_USDS_USDtb = 27;
+  uint8 internal constant PT_USDe_25SEP2025_PT_USDe_27NOV2025__USDC_USDT_USDe_USDtb = 27;
 
   uint8 internal constant PT_USDe_25SEP2025_PT_USDe_27NOV2025__USDe = 28;
 
-  uint8 internal constant PT_USDe_27NOV2025_PT_USDe_5FEB2026__USDC_USDT_USDe_USDtb = 29;
+  uint8 internal constant USDe_PT_USDe_27NOV2025_PT_USDe_5FEB2026__USDC_USDT_USDe_USDtb = 29;
 
-  uint8 internal constant PT_USDe_27NOV2025_PT_USDe_5FEB2026__USDe = 30;
+  uint8 internal constant USDe_PT_USDe_27NOV2025_PT_USDe_5FEB2026__USDe = 30;
 
-  uint8 internal constant PT_sUSDE_27NOV2025_PT_sUSDE_5FEB2026__USDC_USDT_USDe_USDtb = 31;
+  uint8 internal constant sUSDe_PT_sUSDE_27NOV2025_PT_sUSDE_5FEB2026__USDC_USDT_USDe_USDtb = 31;
 
-  uint8 internal constant PT_sUSDE_27NOV2025_PT_sUSDE_5FEB2026__USDe = 32;
+  uint8 internal constant sUSDe_PT_sUSDE_27NOV2025_PT_sUSDE_5FEB2026__USDe = 32;
 
   uint8 internal constant syrupUSDT__USDT_GHO = 33;
 }
