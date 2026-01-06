@@ -255,7 +255,7 @@ export const E_MODES = {
     ],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10310,
+    liquidationBonus: 10250,
   },
   '6': {
     label: 'PT_USDe_15JAN2026 / USDe',
@@ -263,9 +263,9 @@ export const E_MODES = {
     collateralAssets: ['0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a'],
     borrowableBitmap: '2',
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
-    ltv: 9300,
-    liquidationThreshold: 9500,
-    liquidationBonus: 10210,
+    ltv: 9400,
+    liquidationThreshold: 9600,
+    liquidationBonus: 10170,
   },
   '7': {
     label: 'PT_sUSDE_15JAN2026 / USDT0,USDe',
@@ -278,7 +278,7 @@ export const E_MODES = {
     ],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10410,
+    liquidationBonus: 10350,
   },
   '8': {
     label: 'PT_sUSDE_15JAN2026 / USDe',
@@ -286,9 +286,9 @@ export const E_MODES = {
     collateralAssets: ['0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8'],
     borrowableBitmap: '2',
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
-    ltv: 9160,
-    liquidationThreshold: 9360,
-    liquidationBonus: 10310,
+    ltv: 9200,
+    liquidationThreshold: 9400,
+    liquidationBonus: 10250,
   },
   '9': {
     label: 'wrsETH / WETH,wstETH',

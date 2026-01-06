@@ -301,11 +301,14 @@ export const E_MODES = {
     liquidationBonus: 10300,
   },
   '5': {
-    label: 'wrsETH / wstETH',
+    label: 'wrsETH / WETH,wstETH',
     collateralBitmap: '512',
     collateralAssets: ['0xEDfa23602D0EC14714057867A78d01e94176BEA0'],
-    borrowableBitmap: '8',
-    borrowableAssets: ['0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452'],
+    borrowableBitmap: '9',
+    borrowableAssets: [
+      '0x4200000000000000000000000000000000000006',
+      '0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452',
+    ],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
