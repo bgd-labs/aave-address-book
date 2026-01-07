@@ -9555,6 +9555,46 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0xab509448ad489e2E1341e25CC500f2596464Cc82",
+      "name": "PT Ethena sUSDE 9APR2026",
+      "decimals": 18,
+      "symbol": "PT-sUSDE-9APR2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x53349cBeD7A3F851f0722Bf3Fa8f1b93fA939BeF",
+      "name": "Aave Plasma PT_sUSDE_9APR2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_sUSDE_9APR2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xab509448ad489e2E1341e25CC500f2596464Cc82"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x54Dc267be2839303ff1e323584A16e86CeC4Aa44",
+      "name": "PT Ethena USDe 9APR2026",
+      "decimals": 18,
+      "symbol": "PT-USDe-9APR2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x9326fA5a71C93D5De313c91C3b80D74d0c3a0F5A",
+      "name": "Aave Plasma PT_USDe_9APR2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_USDe_9APR2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x54Dc267be2839303ff1e323584A16e86CeC4Aa44"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -9607,6 +9647,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 152 },
-  "timestamp": "2026-01-06T00:17:24.876Z"
+  "version": { "major": 3, "minor": 0, "patch": 153 },
+  "timestamp": "2026-01-07T12:08:30.614Z"
 }

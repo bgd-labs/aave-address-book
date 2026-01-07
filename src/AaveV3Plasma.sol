@@ -334,6 +334,44 @@ library AaveV3PlasmaAssets {
   // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
   address internal constant WXPL_INTEREST_RATE_STRATEGY =
     0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
+
+  // https://plasmascan.to/address/0xab509448ad489e2E1341e25CC500f2596464Cc82
+  address internal constant PT_sUSDE_9APR2026_UNDERLYING =
+    0xab509448ad489e2E1341e25CC500f2596464Cc82;
+
+  uint8 internal constant PT_sUSDE_9APR2026_DECIMALS = 18;
+
+  // https://plasmascan.to/address/0x53349cBeD7A3F851f0722Bf3Fa8f1b93fA939BeF
+  address internal constant PT_sUSDE_9APR2026_A_TOKEN = 0x53349cBeD7A3F851f0722Bf3Fa8f1b93fA939BeF;
+
+  // https://plasmascan.to/address/0xA4408E7C8b5D4481a2D8aD7Aa89f3576a6A4a5D6
+  address internal constant PT_sUSDE_9APR2026_V_TOKEN = 0xA4408E7C8b5D4481a2D8aD7Aa89f3576a6A4a5D6;
+
+  // https://plasmascan.to/address/0x13f2EA8dfa948c5247826283079615Ee4d0A1AA5
+  address internal constant PT_sUSDE_9APR2026_ORACLE = 0x13f2EA8dfa948c5247826283079615Ee4d0A1AA5;
+
+  // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
+  address internal constant PT_sUSDE_9APR2026_INTEREST_RATE_STRATEGY =
+    0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
+
+  // https://plasmascan.to/address/0x54Dc267be2839303ff1e323584A16e86CeC4Aa44
+  address internal constant PT_USDe_9APR2026_UNDERLYING =
+    0x54Dc267be2839303ff1e323584A16e86CeC4Aa44;
+
+  uint8 internal constant PT_USDe_9APR2026_DECIMALS = 18;
+
+  // https://plasmascan.to/address/0x9326fA5a71C93D5De313c91C3b80D74d0c3a0F5A
+  address internal constant PT_USDe_9APR2026_A_TOKEN = 0x9326fA5a71C93D5De313c91C3b80D74d0c3a0F5A;
+
+  // https://plasmascan.to/address/0xA746feD5635787e2d97da1979c714BfcDf60fa1A
+  address internal constant PT_USDe_9APR2026_V_TOKEN = 0xA746feD5635787e2d97da1979c714BfcDf60fa1A;
+
+  // https://plasmascan.to/address/0x37f3a8b02BAbe4dd71acb5f214F22C09AFf607f3
+  address internal constant PT_USDe_9APR2026_ORACLE = 0x37f3a8b02BAbe4dd71acb5f214F22C09AFf607f3;
+
+  // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
+  address internal constant PT_USDe_9APR2026_INTEREST_RATE_STRATEGY =
+    0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
 }
 library AaveV3PlasmaEModes {
   uint8 internal constant NONE = 0;
@@ -361,6 +399,14 @@ library AaveV3PlasmaEModes {
   uint8 internal constant syrupUSDT__USDT0 = 11;
 
   uint8 internal constant WXPL__USDT0 = 12;
+
+  uint8 internal constant USDe_PT_USDe_15JAN2026_PT_USDe_9APR2026__USDT0_USDe = 13;
+
+  uint8 internal constant USDe_PT_USDe_15JAN2026_PT_USDe_9APR2026__USDe = 14;
+
+  uint8 internal constant sUSDe_PT_sUSDE_15JAN2026_PT_sUSDE_9APR2026__USDT0_USDe = 15;
+
+  uint8 internal constant sUSDe_PT_sUSDE_15JAN2026_PT_sUSDE_9APR2026__USDe = 16;
 }
 library AaveV3PlasmaExternalLibraries {
   // https://plasmascan.to/address/0x50a4646D4f5Cc0e45051bF4f222D02fA39eC749D
