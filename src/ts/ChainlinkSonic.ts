@@ -2,6 +2,9 @@
 // https://sonicscan.org/address/0xb1061E9ab9fC2e9e2f7a036f8e3c287D7395d671
 export const GHO__USD = '0xb1061E9ab9fC2e9e2f7a036f8e3c287D7395d671';
 
+// https://sonicscan.org/address/0x4a61dB12d0Cb4293d799ecdD82e5994B5746f850
+export const Fraxtal_sdUSD_DUSD_Exchange_Rate = '0x4a61dB12d0Cb4293d799ecdD82e5994B5746f850';
+
 // https://sonicscan.org/address/0x1654Df3d2543717534eE1c38eb9aF5F0407Ec708
 export const DAI__USD = '0x1654Df3d2543717534eE1c38eb9aF5F0407Ec708';
 
@@ -51,6 +54,9 @@ export const wstkscBTC__stkscBTC_Exchange_Rate = '0xdA49fdf6a5606Ca7FF180a9B7192
 // https://sonicscan.org/address/0x21f037F67946A199b1DBF1Cb7DFa21bFde477196
 export const xSolvBTC__SolvBTC_Exchange_Rate = '0x21f037F67946A199b1DBF1Cb7DFa21bFde477196';
 
+// https://sonicscan.org/address/0xf0766006e9032295995D60254a5BB035aAF8b88C
+export const YETH_ETH_Exchange_Rate = '0xf0766006e9032295995D60254a5BB035aAF8b88C';
+
 // https://sonicscan.org/address/0x824364077993847f71293B24ccA8567c00c2de11
 export const ETH__USD = '0x824364077993847f71293B24ccA8567c00c2de11';
 
@@ -97,6 +103,12 @@ export const wstkscETH__stkscETH_Exchange_Rate = '0x356637474C2124cdD46d8c5fFA17
 
 // https://sonicscan.org/address/0xA1d23D3FE32Ef45774D0f2170a7BEf21da09566b
 export const Real_GDP_Level = '0xA1d23D3FE32Ef45774D0f2170a7BEf21da09566b';
+
+// https://sonicscan.org/address/0xA8bed2F8cddD243D894fa629bf1F845A7100ecc8
+export const YBTC_BTC_Exchange_Rate = '0xA8bed2F8cddD243D894fa629bf1F845A7100ecc8';
+
+// https://sonicscan.org/address/0x0002C2AFABde457C8CF3C4ECB79a49d26ce8Ecd5
+export const Sonic_sdUSD_DUSD_Exchange_Rate = '0x0002C2AFABde457C8CF3C4ECB79a49d26ce8Ecd5';
 
 // https://sonicscan.org/address/0xdB17996a889706Bd67771dEa59E0Bf9453aF0CE4
 export const stS__USD = '0xdB17996a889706Bd67771dEa59E0Bf9453aF0CE4';

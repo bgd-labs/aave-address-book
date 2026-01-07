@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bgd-labs/react-web3-icons": "^1.57.0",
-    "@bgd-labs/toolbox": "^0.0.55",
+    "@bgd-labs/react-web3-icons": "^1.58.0",
+    "@bgd-labs/toolbox": "^0.2.0",
     "@leeoniya/ufuzzy": "^1.0.18",
     "clsx": "^2.1.1",
     "next": "16.0.8",

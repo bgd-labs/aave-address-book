@@ -104,6 +104,9 @@ export const rswETH__ETH_Exchange_Rate = '0x97acBC804c5Cd994829Bdf89A2569575B159
 // https://scrollscan.com/address/0x43d12Fb3AfCAd5347fA764EeAB105478337b7200
 export const USDC__USD = '0x43d12Fb3AfCAd5347fA764EeAB105478337b7200';
 
+// https://scrollscan.com/address/0xf39adcF2e13D99818a3AE560F87Dd30c8326C278
+export const AAVE_Network_Emergency_Count_Scroll = '0xf39adcF2e13D99818a3AE560F87Dd30c8326C278';
+
 // https://scrollscan.com/address/0x7e73693088d88694146ab30f1dA5903a4489e992
 export const WBTC__BTC = '0x7e73693088d88694146ab30f1dA5903a4489e992';
 

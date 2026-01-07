@@ -21,9 +21,17 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0x05950959B6d876ae0fed1BBe5Caa2d74d8659D59
   address internal constant sUSDe__USD = 0x05950959B6d876ae0fed1BBe5Caa2d74d8659D59;
 
+  // https://optimistic.etherscan.io/address/0xa29660E9B69da3399141cBDDFb819451b1d530Ae
+  address internal constant Virtune_XRP_ETP__Proof_of_Reserves =
+    0xa29660E9B69da3399141cBDDFb819451b1d530Ae;
+
   // https://optimistic.etherscan.io/address/0x8158d24603296Ce54ba903c7D5299E3B6744b555
   address internal constant PCE_Price_Index_Percent_Change_Annual_Rate =
     0x8158d24603296Ce54ba903c7D5299E3B6744b555;
+
+  // https://optimistic.etherscan.io/address/0x895eAD698bc4C34ad2863a20932f0d5E7896F11c
+  address internal constant Virtune_Staked_Solana_ETP__Proof_of_Reserves =
+    0x895eAD698bc4C34ad2863a20932f0d5E7896F11c;
 
   // https://optimistic.etherscan.io/address/0xD702DD976Fb76Fffc2D3963D037dfDae5b04E593
   address internal constant BTC__USD = 0xD702DD976Fb76Fffc2D3963D037dfDae5b04E593;
@@ -123,9 +131,6 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0x48f2EcF0Bd180239AEF474a9da945F2e2d41daA3
   address internal constant APT__USD = 0x48f2EcF0Bd180239AEF474a9da945F2e2d41daA3;
 
-  // https://optimistic.etherscan.io/address/0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120
-  address internal constant VELO__USD = 0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120;
-
   // https://optimistic.etherscan.io/address/0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F
   address internal constant APE__USD = 0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F;
 
@@ -149,6 +154,9 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3
   address internal constant MKR__USD = 0x607b417DF51e0E1ed3A12fDb7FC0e8307ED250F3;
+
+  // https://optimistic.etherscan.io/address/0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120
+  address internal constant VELODROME__USD = 0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120;
 
   // https://optimistic.etherscan.io/address/0x30F6ffb911ac7B9aDF471f28366ce1826C05776e
   address internal constant USD1__USD = 0x30F6ffb911ac7B9aDF471f28366ce1826C05776e;
@@ -228,6 +236,9 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0x39be70E93D2D285C9E71be7f70FC5a45A7777B14
   address internal constant AUD__USD = 0x39be70E93D2D285C9E71be7f70FC5a45A7777B14;
 
+  // https://optimistic.etherscan.io/address/0xcFdb47A0c2CBF1eBED49b03BC6D15954C81004dB
+  address internal constant YETH_ETH_Exchange_Rate = 0xcFdb47A0c2CBF1eBED49b03BC6D15954C81004dB;
+
   // https://optimistic.etherscan.io/address/0x5cdC797acCBf57EE2363Fed9701262Abc87a232e
   address internal constant YFI__USD = 0x5cdC797acCBf57EE2363Fed9701262Abc87a232e;
 
@@ -296,6 +307,10 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0xC6066533917f034Cf610c08e1fe5e9c7eADe0f54
   address internal constant DOGE__USD = 0xC6066533917f034Cf610c08e1fe5e9c7eADe0f54;
+
+  // https://optimistic.etherscan.io/address/0xFCdb9EaD2F752AD002Cdf8FcB08Caac4A3402375
+  address internal constant AAVE_Network_Emergency_Count_Optimism =
+    0xFCdb9EaD2F752AD002Cdf8FcB08Caac4A3402375;
 
   // https://optimistic.etherscan.io/address/0x64Ecf089a6594Be781908D5a26FC8fA6CB08A2C7
   address internal constant PEPE__USD = 0x64Ecf089a6594Be781908D5a26FC8fA6CB08A2C7;
@@ -412,8 +427,15 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0x464A1515ADc20de946f8d0DEB99cead8CEAE310d
   address internal constant LINK__ETH = 0x464A1515ADc20de946f8d0DEB99cead8CEAE310d;
 
+  // https://optimistic.etherscan.io/address/0xa9d0B1F1D7b5C4129b27EcE9a4562B32dB33343C
+  address internal constant Virtune_Avalanche_ETP__Proof_of_Reserves =
+    0xa9d0B1F1D7b5C4129b27EcE9a4562B32dB33343C;
+
   // https://optimistic.etherscan.io/address/0x28e67BAeEB5dE7A788f3Dde6CF6ee491369Bb3Fa
   address internal constant DOT__USD = 0x28e67BAeEB5dE7A788f3Dde6CF6ee491369Bb3Fa;
+
+  // https://optimistic.etherscan.io/address/0x0C194aE5819c4631c58A2849051b269e57A3B657
+  address internal constant YBTC_BTC_Exchange_Rate = 0x0C194aE5819c4631c58A2849051b269e57A3B657;
 
   // https://optimistic.etherscan.io/address/0x6f6cED6B096708C1276056fdBdb7BbDe07Ca462C
   address internal constant SEI__USD = 0x6f6cED6B096708C1276056fdBdb7BbDe07Ca462C;
