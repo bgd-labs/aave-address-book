@@ -108,8 +108,4 @@ library ChainlinkZkSync {
 
   // https://era.zksync.network/address/0x498232F0a52D4e94A6e0Ea93D63C07Bc63133009
   address internal constant SOL__USD = 0x498232F0a52D4e94A6e0Ea93D63C07Bc63133009;
-
-  // https://era.zksync.network/address/0x1B242BEfc3008E8590Fc7aca27C74592CdEce6e3
-  address internal constant AAVE_Network_Emergency_Count_ZKSync =
-    0x1B242BEfc3008E8590Fc7aca27C74592CdEce6e3;
 }

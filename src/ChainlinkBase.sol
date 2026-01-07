@@ -15,12 +15,6 @@ library ChainlinkBase {
   // https://basescan.org/address/0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061
   address internal constant wstETH_stETH_Exchange_Rate = 0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061;
 
-  // https://basescan.org/address/0x8a55b7aB579321Eb1adb54Bc770308EA0378E287
-  address internal constant SVR_EURC__USD = 0x8a55b7aB579321Eb1adb54Bc770308EA0378E287;
-
-  // https://basescan.org/address/0x9867186e52d2F1C2c565CDA6E747101Fa56501e0
-  address internal constant SVR_EURC__USD_BASE = 0x9867186e52d2F1C2c565CDA6E747101Fa56501e0;
-
   // https://basescan.org/address/0xD89c7fFB39C44b17EAecd8717a75A36c19C07582
   address internal constant sUSDz__USDz_Exchange_Rate = 0xD89c7fFB39C44b17EAecd8717a75A36c19C07582;
 
@@ -48,12 +42,6 @@ library ChainlinkBase {
   // https://basescan.org/address/0x4a595E0a62E50A2E5eC95A70c8E612F9746af006
   address internal constant USR__USD = 0x4a595E0a62E50A2E5eC95A70c8E612F9746af006;
 
-  // https://basescan.org/address/0x1550207eAeB590D1557a6E6C066D3d57B5A4Dc65
-  address internal constant SVR_USDC__USD = 0x1550207eAeB590D1557a6E6C066D3d57B5A4Dc65;
-
-  // https://basescan.org/address/0x458138Fc0D67027E9A6778ef40a6ffC318c69061
-  address internal constant SVR_USDC__USD_BASE = 0x458138Fc0D67027E9A6778ef40a6ffC318c69061;
-
   // https://basescan.org/address/0x311D3A3faA1d5939c681E33C2CDAc041FF388EB2
   address internal constant syrupUSDC_USDC_Exchange_Rate =
     0x311D3A3faA1d5939c681E33C2CDAc041FF388EB2;
@@ -66,12 +54,6 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0x81575495532fB311Efc5C993B612564274F0949b
   address internal constant SGD__USD = 0x81575495532fB311Efc5C993B612564274F0949b;
-
-  // https://basescan.org/address/0x3A932b286715abc4A86a4ACAF68A6cdD89E0d446
-  address internal constant SVR_BTC__USD = 0x3A932b286715abc4A86a4ACAF68A6cdD89E0d446;
-
-  // https://basescan.org/address/0x32F587986D3fb47601157c19615d568BeD0BCabc
-  address internal constant SVR_BTC__USD_BASE = 0x32F587986D3fb47601157c19615d568BeD0BCabc;
 
   // https://basescan.org/address/0x8004571d9f54dE016fc3D448e7AEe2d70947727A
   address internal constant tETH__wstETH_Exchange_Rate = 0x8004571d9f54dE016fc3D448e7AEe2d70947727A;
@@ -108,9 +90,6 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0xc5E65227fe3385B88468F9A01600017cDC9F3A12
   address internal constant LINK__ETH = 0xc5E65227fe3385B88468F9A01600017cDC9F3A12;
-
-  // https://basescan.org/address/0x4aEE0164400FE35B6b400F2d767A618Bcb96a02D
-  address internal constant DOLA__USD = 0x4aEE0164400FE35B6b400F2d767A618Bcb96a02D;
 
   // https://basescan.org/address/0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B
   address internal constant USDe__USD = 0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B;
@@ -171,12 +150,6 @@ library ChainlinkBase {
   // https://basescan.org/address/0xc91D87E81faB8f93699ECf7Ee9B44D11e1D53F0F
   address internal constant EUR__USD = 0xc91D87E81faB8f93699ECf7Ee9B44D11e1D53F0F;
 
-  // https://basescan.org/address/0xAAEbc0287EC3BF3fe56fCA1E4bcC793b219De551
-  address internal constant SVR_AAVE__USD = 0xAAEbc0287EC3BF3fe56fCA1E4bcC793b219De551;
-
-  // https://basescan.org/address/0x65B5d02E1Fff839b8B67Fa26F8540e5f11454316
-  address internal constant SVR_AAVE__USD_BASE = 0x65B5d02E1Fff839b8B67Fa26F8540e5f11454316;
-
   // https://basescan.org/address/0x0594c1a01375c1151c2ca78BE4870836EbFA9846
   address internal constant wstUSR__stUSR_Exchange_Rate =
     0x0594c1a01375c1151c2ca78BE4870836EbFA9846;
@@ -231,12 +204,6 @@ library ChainlinkBase {
   // https://basescan.org/address/0x79cf4a31B29D69191f0b6E97916eB93FEB81E533
   address internal constant sUSDe__USD = 0x79cf4a31B29D69191f0b6E97916eB93FEB81E533;
 
-  // https://basescan.org/address/0xd8CA171B6f0F6B2a01B6B2dB7424dd72AA07a6F1
-  address internal constant SVR_GHO__USD = 0xd8CA171B6f0F6B2a01B6B2dB7424dd72AA07a6F1;
-
-  // https://basescan.org/address/0x1B5FEF61Ff9B690364359b03cC07E060b12Bd3C1
-  address internal constant SVR_GHO__USD_BASE = 0x1B5FEF61Ff9B690364359b03cC07E060b12Bd3C1;
-
   // https://basescan.org/address/0x46e51B8cA41d709928EdA9Ae43e42193E6CDf229
   address internal constant AUD__USD = 0x46e51B8cA41d709928EdA9Ae43e42193E6CDf229;
 
@@ -277,10 +244,6 @@ library ChainlinkBase {
   address internal constant ultraETHs__ETH_Exchange_Rate =
     0xbb9786e37D54251477EbC1325b04ACdCA18C2254;
 
-  // https://basescan.org/address/0xd9c5B59A913d75AC44EB51b7E0F3f5B58816ECAc
-  address internal constant AAVE_Network_Emergency_Count_Base =
-    0xd9c5B59A913d75AC44EB51b7E0F3f5B58816ECAc;
-
   // https://basescan.org/address/0xdEd37FC1400B8022968441356f771639ad1B23aA
   address internal constant sUSDe__USDe_Exchange_Rate = 0xdEd37FC1400B8022968441356f771639ad1B23aA;
 
@@ -316,9 +279,6 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0x9452Ca03474C6B704B4e102339B451D640f57f07
   address internal constant pufETH__ETH = 0x9452Ca03474C6B704B4e102339B451D640f57f07;
-
-  // https://basescan.org/address/0xaE95742Cf839529798Bcd1610c6E0AFEBA0cBC03
-  address internal constant YETH_ETH_Exchange_Rate = 0xaE95742Cf839529798Bcd1610c6E0AFEBA0cBC03;
 
   // https://basescan.org/address/0xC342785EE44b9F8a40a564200CDF14dFCefd36C3
   address internal constant USDX__USD = 0xC342785EE44b9F8a40a564200CDF14dFCefd36C3;
@@ -359,12 +319,6 @@ library ChainlinkBase {
   // https://basescan.org/address/0x39C6E14CdE46D4FFD9F04Ff159e7ce8eC20E10B4
   address internal constant SUPEROETHB__ETH = 0x39C6E14CdE46D4FFD9F04Ff159e7ce8eC20E10B4;
 
-  // https://basescan.org/address/0x203e994f3908cF886C6155c31742557D82c9B4a2
-  address internal constant SVR_USDT__USD = 0x203e994f3908cF886C6155c31742557D82c9B4a2;
-
-  // https://basescan.org/address/0xE5fa3A4e4208858ADdf2CDb4e12651E89f1f1A70
-  address internal constant SVR_USDT__USD_BASE = 0xE5fa3A4e4208858ADdf2CDb4e12651E89f1f1A70;
-
   // https://basescan.org/address/0xbC7c5023eE571e4D9C4890C90a16be05c1EEf410
   address internal constant uniBTC__BTC_Exchange_Rate = 0xbC7c5023eE571e4D9C4890C90a16be05c1EEf410;
 
@@ -382,7 +336,7 @@ library ChainlinkBase {
   address internal constant AERO__USD = 0x4EC5970fC728C5f65ba413992CD5fF6FD70fcfF0;
 
   // https://basescan.org/address/0x0b68ac37a1668DAaab1882543368E076C38C40e9
-  address internal constant TETH_Reserves = 0x0b68ac37a1668DAaab1882543368E076C38C40e9;
+  address internal constant CETH_Reserves = 0x0b68ac37a1668DAaab1882543368E076C38C40e9;
 
   // https://basescan.org/address/0x3A1d6444fb6a402470098E23DaD0B7E86E14252F
   address internal constant CHF__USD = 0x3A1d6444fb6a402470098E23DaD0B7E86E14252F;
@@ -401,9 +355,6 @@ library ChainlinkBase {
   address internal constant PCE_Price_Index_Percent_Change_Annual_Rate =
     0x2a18E2d46Cb067b69e0759dB39b16597fC42D962;
 
-  // https://basescan.org/address/0x1fC950BbC12E93c15A3eEb62db978eb3cC567943
-  address internal constant SYND__USD = 0x1fC950BbC12E93c15A3eEb62db978eb3cC567943;
-
   // https://basescan.org/address/0xeDC243c7E3c1A9dAf067C90641D2346d2694d2e5
   address internal constant LSETH__ETH = 0xeDC243c7E3c1A9dAf067C90641D2346d2694d2e5;
 
@@ -413,12 +364,6 @@ library ChainlinkBase {
   // https://basescan.org/address/0x5218Ebeb96bD2bAFe21F9b143f5672552629ba79
   address internal constant USDO_Reserves = 0x5218Ebeb96bD2bAFe21F9b143f5672552629ba79;
 
-  // https://basescan.org/address/0x9dA00D23465282005DB222a441a663eE7B9dfCc8
-  address internal constant SVR_ETH__USD = 0x9dA00D23465282005DB222a441a663eE7B9dfCc8;
-
-  // https://basescan.org/address/0xa4250cE1aA15Ff4cb5E5a8655293b65694e436Ed
-  address internal constant SVR_ETH__USD_BASE = 0xa4250cE1aA15Ff4cb5E5a8655293b65694e436Ed;
-
   // https://basescan.org/address/0xe95e258bb6615d47515Fc849f8542dA651f12bF6
   address internal constant MORPHO__USD = 0xe95e258bb6615d47515Fc849f8542dA651f12bF6;
 
@@ -427,9 +372,6 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0xCCADC697c55bbB68dc5bCdf8d3CBe83CdD4E071E
   address internal constant WBTC__USD = 0xCCADC697c55bbB68dc5bCdf8d3CBe83CdD4E071E;
-
-  // https://basescan.org/address/0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94
-  address internal constant MAMO__USD = 0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94;
 
   // https://basescan.org/address/0x975043adBb80fc32276CbF9Bbcfd4A601a12462D
   address internal constant SOL__USD = 0x975043adBb80fc32276CbF9Bbcfd4A601a12462D;
@@ -443,17 +385,11 @@ library ChainlinkBase {
   // https://basescan.org/address/0x721F1B4dc604AEA0661Aa9982AB624e5756B31f2
   address internal constant mooBIFI__USD = 0x721F1B4dc604AEA0661Aa9982AB624e5756B31f2;
 
-  // https://basescan.org/address/0x95Eba7bE2f755a298984bd714822994f1d4B6313
-  address internal constant YBTC_BTC_Exchange_Rate = 0x95Eba7bE2f755a298984bd714822994f1d4B6313;
-
   // https://basescan.org/address/0x8422f3d3CAFf15Ca682939310d6A5e619AE08e57
   address internal constant DOGE__USD = 0x8422f3d3CAFf15Ca682939310d6A5e619AE08e57;
 
   // https://basescan.org/address/0x674e028B95330E77F5cF89834254a6Bfa806f3a2
   address internal constant ANON__USD = 0x674e028B95330E77F5cF89834254a6Bfa806f3a2;
-
-  // https://basescan.org/address/0xf488FA1B4Ac8210bf0b2d212176ca28c48F86708
-  address internal constant GLDY_Reserves = 0xf488FA1B4Ac8210bf0b2d212176ca28c48F86708;
 
   // https://basescan.org/address/0xFAf372CaBc765b63f6fabD436c845D965eDA1CA5
   address internal constant MELANIA__USD = 0xFAf372CaBc765b63f6fabD436c845D965eDA1CA5;
@@ -498,9 +434,6 @@ library ChainlinkBase {
 
   // https://basescan.org/address/0x06bdFe07E71C476157FC025d3cCD4BBe08e83EF9
   address internal constant NZD__USD = 0x06bdFe07E71C476157FC025d3cCD4BBe08e83EF9;
-
-  // https://basescan.org/address/0x50997b806B574501cC34a2a6d845e4dc1Bd9Aa8c
-  address internal constant AVNT__USD = 0x50997b806B574501cC34a2a6d845e4dc1Bd9Aa8c;
 
   // https://basescan.org/address/0x4aeb6D15769EaD32D0c5Be2940F40c7CFf53801d
   address internal constant MOG__USD = 0x4aeb6D15769EaD32D0c5Be2940F40c7CFf53801d;

@@ -4034,6 +4034,18 @@
     },
     "0x56b7A1012765C285afAC8b8F25C69Bf10ccfE978": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xe343167631d89B6Ffc58B88d6b7fB0228795491D": {
+      "name": "ERC1967Proxy"
+    },
+    "0x7c0477d085ECb607CF8429f3eC91Ae5E1e460F4F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4f97B950a30321c181E974971E156E19fAD184A3": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d": {
+      "name": "FixedPriceAdapter"
     }
   },
   "10": {
@@ -11417,6 +11429,30 @@
     },
     "0xdA549478Fd5C2BdB9e5eB000D0ff2554771598C7": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xab509448ad489e2E1341e25CC500f2596464Cc82": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x53349cBeD7A3F851f0722Bf3Fa8f1b93fA939BeF": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA4408E7C8b5D4481a2D8aD7Aa89f3576a6A4a5D6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x13f2EA8dfa948c5247826283079615Ee4d0A1AA5": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x54Dc267be2839303ff1e323584A16e86CeC4Aa44": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x9326fA5a71C93D5De313c91C3b80D74d0c3a0F5A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA746feD5635787e2d97da1979c714BfcDf60fa1A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x37f3a8b02BAbe4dd71acb5f214F22C09AFf607f3": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "42161": {

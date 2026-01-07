@@ -3356,8 +3356,7 @@
       "name": "PT Ethena sUSDE 27NOV2025",
       "decimals": 18,
       "symbol": "PT-sUSDE-27NOV2025",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 1,
@@ -3366,7 +3365,6 @@
       "decimals": 18,
       "symbol": "aEthPT_sUSDe_27NOV2025",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xe6A934089BBEe34F832060CE98848359883749B3"
@@ -3378,8 +3376,7 @@
       "name": "PT Ethena USDe 27NOV2025",
       "decimals": 18,
       "symbol": "PT-USDe-27NOV2025",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 1,
@@ -3388,7 +3385,6 @@
       "decimals": 18,
       "symbol": "aEthPT_USDe_27NOV2025",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x62C6E813b9589C3631Ba0Cdb013acdB8544038B7"
@@ -3400,8 +3396,7 @@
       "name": "PT Ethena USDe 5FEB2026",
       "decimals": 18,
       "symbol": "PT-USDe-5FEB2026",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 1,
@@ -3410,7 +3405,6 @@
       "decimals": 18,
       "symbol": "aEthPT_USDE_5FEB_2026",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0x1F84a51296691320478c98b8d77f2Bbd17D34350"
@@ -3422,8 +3416,7 @@
       "name": "PT Ethena sUSDE 5FEB2026",
       "decimals": 18,
       "symbol": "PT-sUSDE-5FEB2026",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 1,
@@ -3432,7 +3425,6 @@
       "decimals": 18,
       "symbol": "aEthPT_sUSDe_5FEB_2026",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xE8483517077afa11A9B07f849cee2552f040d7b2"
@@ -3444,8 +3436,7 @@
       "name": "MetaMask USD",
       "decimals": 6,
       "symbol": "mUSD",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/musd.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 1,
@@ -3454,7 +3445,6 @@
       "decimals": 6,
       "symbol": "aEthmUSD",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/amusd.svg",
       "extensions": {
         "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
         "underlying": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA"
@@ -8646,8 +8636,7 @@
       "name": "MetaMask USD",
       "decimals": 6,
       "symbol": "mUSD",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/musd.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 59144,
@@ -8656,7 +8645,6 @@
       "decimals": 6,
       "symbol": "aLinmUSD",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/amusd.svg",
       "extensions": {
         "pool": "0xc47b8C00b0f69a36fa203Ffeac0334874574a8Ac",
         "underlying": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA"
@@ -9040,8 +9028,7 @@
       "name": "Kraken Wrapped Bitcoin",
       "decimals": 8,
       "symbol": "kBTC",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/kbtc.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 57073,
@@ -9050,7 +9037,6 @@
       "decimals": 8,
       "symbol": "aInkWlKBTC",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/akbtc.svg",
       "extensions": {
         "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
         "underlying": "0x73E0C0d45E048D25Fc26Fa3159b0aA04BfA4Db98"
@@ -9322,8 +9308,7 @@
       "name": "XAUt0",
       "decimals": 6,
       "symbol": "XAUt0",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/xaut0.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 9745,
@@ -9332,7 +9317,6 @@
       "decimals": 6,
       "symbol": "aPlaXAUt0",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/axaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193"
@@ -9345,7 +9329,6 @@
       "decimals": 6,
       "symbol": "waPlaXAUt0",
       "tags": ["aaveV3", "stataToken"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataxaut0.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193",
@@ -9430,8 +9413,7 @@
       "name": "PT Ethena USDe 15JAN2026",
       "decimals": 18,
       "symbol": "PT-USDe-15JAN2026",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/pteusde.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 9745,
@@ -9440,7 +9422,6 @@
       "decimals": 18,
       "symbol": "aPlaPT_USDe_15JAN2026",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/apteusde.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x93B544c330F60A2aa05ceD87aEEffB8D38FD8c9a"
@@ -9452,8 +9433,7 @@
       "name": "PT Ethena sUSDE 15JAN2026",
       "decimals": 18,
       "symbol": "PT-sUSDE-15JAN2026",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ptsusde.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 9745,
@@ -9462,7 +9442,6 @@
       "decimals": 18,
       "symbol": "aPlaPT_sUSDE_15JAN2026",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aptsusde.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x02FCC4989B4C9D435b7ceD3fE1Ba4CF77BBb5Dd8"
@@ -9538,8 +9517,7 @@
       "name": "Wrapped XPL",
       "decimals": 18,
       "symbol": "WXPL",
-      "tags": ["underlying"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/xpl.svg"
+      "tags": ["underlying"]
     },
     {
       "chainId": 9745,
@@ -9548,7 +9526,6 @@
       "decimals": 18,
       "symbol": "aPlaWXPL",
       "tags": ["aTokenV3", "aaveV3"],
-      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/axpl.svg",
       "extensions": {
         "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
         "underlying": "0x6100E367285b01F48D07953803A2d8dCA5D19873"
@@ -9647,6 +9624,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 153 },
-  "timestamp": "2026-01-07T12:08:30.614Z"
+  "version": { "major": 3, "minor": 0, "patch": 154 },
+  "timestamp": "2026-01-07T20:29:04.099Z"
 }

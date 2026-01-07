@@ -14,9 +14,6 @@ export const FOXY__USD = '0xdE14081b6bd39230EcA7Be1137413b7b87B07C07';
 // https://lineascan.build/address/0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544
 export const weETH__ETH = '0xC4bF21Ab46bd22Cf993c0AAa363577bD2Af83544';
 
-// https://lineascan.build/address/0x8b65a2BA86D9aE89bFE4EA68e97B20e45ab05623
-export const savBTC__avBTC_Exchange_Rate = '0x8b65a2BA86D9aE89bFE4EA68e97B20e45ab05623';
-
 // https://lineascan.build/address/0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4
 export const PCE_Price_Index_Level = '0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4';
 
@@ -29,9 +26,6 @@ export const agETH_ETH_Exchange_Rate = '0x5C5Ee01b351b7ef0b16Cfd59E93F743E0679d7
 // https://lineascan.build/address/0xe5aCa1a31aD6fC61E30Ab8E4a19a9445884A1EDE
 export const PCE_Price_Index_Percent_Change_Annual_Rate =
   '0xe5aCa1a31aD6fC61E30Ab8E4a19a9445884A1EDE';
-
-// https://lineascan.build/address/0x9ECEa805F9DbeeFE8EdB7e3ee08995fF65828d7a
-export const USD1__USD = '0x9ECEa805F9DbeeFE8EdB7e3ee08995fF65828d7a';
 
 // https://lineascan.build/address/0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156
 export const osETH__ETH_Exchange_Rate = '0x4C2f2CD982DD7fF2a607dcEB0B30fae8208D7156';
@@ -53,9 +47,6 @@ export const COMP__USD = '0xc0068A2F7e4847DF9C3A34B27CCc07b7e15e0458';
 
 // https://lineascan.build/address/0x49768d7ebB7694b1e72546300cCCeD877084d72f
 export const xSolvBTC_NAV = '0x49768d7ebB7694b1e72546300cCCeD877084d72f';
-
-// https://lineascan.build/address/0x81F4d3052b034007cb5fA1D4CFb56D0732867f2a
-export const AAVE_Network_Emergency_Count_Linea = '0x81F4d3052b034007cb5fA1D4CFb56D0732867f2a';
 
 // https://lineascan.build/address/0xdAad34260E4105702278F225d3d20C453d12065e
 export const Real_GDP_Percent_Change_Annual_Rate = '0xdAad34260E4105702278F225d3d20C453d12065e';
@@ -83,14 +74,8 @@ export const wrsETH_ETH_Exchange_Rate = '0xEEDF0B095B5dfe75F3881Cb26c19DA209A274
 // https://lineascan.build/address/0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5
 export const USDC__USD = '0xAADAa473C1bDF7317ec07c915680Af29DeBfdCb5';
 
-// https://lineascan.build/address/0x452b408b3e2805C109D52C80Bd54Deda239716d1
-export const LINEA__USD = '0x452b408b3e2805C109D52C80Bd54Deda239716d1';
-
 // https://lineascan.build/address/0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9
 export const BTC__USD = '0x7A99092816C8BD5ec8ba229e3a6E6Da1E628E1F9';
-
-// https://lineascan.build/address/0x9e6c73Ae2b419eb32D5D4380067D8E24785926d3
-export const YETH_ETH_Exchange_Rate = '0x9e6c73Ae2b419eb32D5D4380067D8E24785926d3';
 
 // https://lineascan.build/address/0x637cf12017219Dd3A758818eD63185f7acF7D935
 export const EUR__USD = '0x637cf12017219Dd3A758818eD63185f7acF7D935';
@@ -106,9 +91,6 @@ export const POL__USD = '0xEF77B4A7D92eBDC89025B8E11916A69BDA6d189c';
 
 // https://lineascan.build/address/0x57011f81c93Da4dFb244c80667aAECf8cA9D53Bb
 export const ynETH__ETH_Exchange_Rate = '0x57011f81c93Da4dFb244c80667aAECf8cA9D53Bb';
-
-// https://lineascan.build/address/0x0AAC940015d333b8E4f93fcE9c0f6f365d252741
-export const SAVUSD__AVUSD_Exchange_Rate = '0x0AAC940015d333b8E4f93fcE9c0f6f365d252741';
 
 // https://lineascan.build/address/0xefCA2bbe0EdD0E22b2e0d2F8248E99F4bEf4A7dB
 export const USDT__USD = '0xefCA2bbe0EdD0E22b2e0d2F8248E99F4bEf4A7dB';
@@ -127,9 +109,6 @@ export const wstETH__stETH_Exchange_Rate = '0x3C8A95F2264bB3b52156c766b738357008
 
 // https://lineascan.build/address/0x85342bC62aadef58f029ab6d17D643949e6F073e
 export const RSETH__ETH = '0x85342bC62aadef58f029ab6d17D643949e6F073e';
-
-// https://lineascan.build/address/0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C
-export const YBTC_BTC_Exchange_Rate = '0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C';
 
 // https://lineascan.build/address/0x9ce4473B42a639d010eD741df3CA829E6e480803
 export const MATIC__USD = '0x9ce4473B42a639d010eD741df3CA829E6e480803';

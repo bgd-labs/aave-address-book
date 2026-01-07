@@ -11,12 +11,6 @@ export const AXL__USD = '0x676C4C6C31D97A5581D3204C04A8125B350E2F9D';
 // https://basescan.org/address/0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061
 export const wstETH_stETH_Exchange_Rate = '0xB88BAc61a4Ca37C43a3725912B1f472c9A5bc061';
 
-// https://basescan.org/address/0x8a55b7aB579321Eb1adb54Bc770308EA0378E287
-export const SVR_EURC__USD = '0x8a55b7aB579321Eb1adb54Bc770308EA0378E287';
-
-// https://basescan.org/address/0x9867186e52d2F1C2c565CDA6E747101Fa56501e0
-export const SVR_EURC__USD_BASE = '0x9867186e52d2F1C2c565CDA6E747101Fa56501e0';
-
 // https://basescan.org/address/0xD89c7fFB39C44b17EAecd8717a75A36c19C07582
 export const sUSDz__USDz_Exchange_Rate = '0xD89c7fFB39C44b17EAecd8717a75A36c19C07582';
 
@@ -44,12 +38,6 @@ export const RDNT__USD = '0xEf2E24ba6def99B5e0b71F6CDeaF294b02163094';
 // https://basescan.org/address/0x4a595E0a62E50A2E5eC95A70c8E612F9746af006
 export const USR__USD = '0x4a595E0a62E50A2E5eC95A70c8E612F9746af006';
 
-// https://basescan.org/address/0x1550207eAeB590D1557a6E6C066D3d57B5A4Dc65
-export const SVR_USDC__USD = '0x1550207eAeB590D1557a6E6C066D3d57B5A4Dc65';
-
-// https://basescan.org/address/0x458138Fc0D67027E9A6778ef40a6ffC318c69061
-export const SVR_USDC__USD_BASE = '0x458138Fc0D67027E9A6778ef40a6ffC318c69061';
-
 // https://basescan.org/address/0x311D3A3faA1d5939c681E33C2CDAc041FF388EB2
 export const syrupUSDC_USDC_Exchange_Rate = '0x311D3A3faA1d5939c681E33C2CDAc041FF388EB2';
 
@@ -61,12 +49,6 @@ export const CBXRP__USD = '0xEEe1a9D5A0C36d99972C057Cb959267e88Ab9160';
 
 // https://basescan.org/address/0x81575495532fB311Efc5C993B612564274F0949b
 export const SGD__USD = '0x81575495532fB311Efc5C993B612564274F0949b';
-
-// https://basescan.org/address/0x3A932b286715abc4A86a4ACAF68A6cdD89E0d446
-export const SVR_BTC__USD = '0x3A932b286715abc4A86a4ACAF68A6cdD89E0d446';
-
-// https://basescan.org/address/0x32F587986D3fb47601157c19615d568BeD0BCabc
-export const SVR_BTC__USD_BASE = '0x32F587986D3fb47601157c19615d568BeD0BCabc';
 
 // https://basescan.org/address/0x8004571d9f54dE016fc3D448e7AEe2d70947727A
 export const tETH__wstETH_Exchange_Rate = '0x8004571d9f54dE016fc3D448e7AEe2d70947727A';
@@ -103,9 +85,6 @@ export const NGN__USD = '0xdfbb5Cbc88E382de007bfe6CE99C388176ED80aD';
 
 // https://basescan.org/address/0xc5E65227fe3385B88468F9A01600017cDC9F3A12
 export const LINK__ETH = '0xc5E65227fe3385B88468F9A01600017cDC9F3A12';
-
-// https://basescan.org/address/0x4aEE0164400FE35B6b400F2d767A618Bcb96a02D
-export const DOLA__USD = '0x4aEE0164400FE35B6b400F2d767A618Bcb96a02D';
 
 // https://basescan.org/address/0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B
 export const USDe__USD = '0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B';
@@ -165,12 +144,6 @@ export const RSETH__ETH = '0xd7221b10FBBC1e1ba95Fd0B4D031C15f7F365296';
 // https://basescan.org/address/0xc91D87E81faB8f93699ECf7Ee9B44D11e1D53F0F
 export const EUR__USD = '0xc91D87E81faB8f93699ECf7Ee9B44D11e1D53F0F';
 
-// https://basescan.org/address/0xAAEbc0287EC3BF3fe56fCA1E4bcC793b219De551
-export const SVR_AAVE__USD = '0xAAEbc0287EC3BF3fe56fCA1E4bcC793b219De551';
-
-// https://basescan.org/address/0x65B5d02E1Fff839b8B67Fa26F8540e5f11454316
-export const SVR_AAVE__USD_BASE = '0x65B5d02E1Fff839b8B67Fa26F8540e5f11454316';
-
 // https://basescan.org/address/0x0594c1a01375c1151c2ca78BE4870836EbFA9846
 export const wstUSR__stUSR_Exchange_Rate = '0x0594c1a01375c1151c2ca78BE4870836EbFA9846';
 
@@ -222,12 +195,6 @@ export const vyUSD_USD_Exchange_Rate = '0x99C098FA069B120dd81E56c0f2178093cc7a85
 // https://basescan.org/address/0x79cf4a31B29D69191f0b6E97916eB93FEB81E533
 export const sUSDe__USD = '0x79cf4a31B29D69191f0b6E97916eB93FEB81E533';
 
-// https://basescan.org/address/0xd8CA171B6f0F6B2a01B6B2dB7424dd72AA07a6F1
-export const SVR_GHO__USD = '0xd8CA171B6f0F6B2a01B6B2dB7424dd72AA07a6F1';
-
-// https://basescan.org/address/0x1B5FEF61Ff9B690364359b03cC07E060b12Bd3C1
-export const SVR_GHO__USD_BASE = '0x1B5FEF61Ff9B690364359b03cC07E060b12Bd3C1';
-
 // https://basescan.org/address/0x46e51B8cA41d709928EdA9Ae43e42193E6CDf229
 export const AUD__USD = '0x46e51B8cA41d709928EdA9Ae43e42193E6CDf229';
 
@@ -267,9 +234,6 @@ export const STETH__ETH = '0xf586d0728a47229e747d824a939000Cf21dEF5A0';
 // https://basescan.org/address/0xbb9786e37D54251477EbC1325b04ACdCA18C2254
 export const ultraETHs__ETH_Exchange_Rate = '0xbb9786e37D54251477EbC1325b04ACdCA18C2254';
 
-// https://basescan.org/address/0xd9c5B59A913d75AC44EB51b7E0F3f5B58816ECAc
-export const AAVE_Network_Emergency_Count_Base = '0xd9c5B59A913d75AC44EB51b7E0F3f5B58816ECAc';
-
 // https://basescan.org/address/0xdEd37FC1400B8022968441356f771639ad1B23aA
 export const sUSDe__USDe_Exchange_Rate = '0xdEd37FC1400B8022968441356f771639ad1B23aA';
 
@@ -305,9 +269,6 @@ export const LBTC__BTC = '0x1E6c22AAA11F507af12034A5Dc4126A6A25DC8d2';
 
 // https://basescan.org/address/0x9452Ca03474C6B704B4e102339B451D640f57f07
 export const pufETH__ETH = '0x9452Ca03474C6B704B4e102339B451D640f57f07';
-
-// https://basescan.org/address/0xaE95742Cf839529798Bcd1610c6E0AFEBA0cBC03
-export const YETH_ETH_Exchange_Rate = '0xaE95742Cf839529798Bcd1610c6E0AFEBA0cBC03';
 
 // https://basescan.org/address/0xC342785EE44b9F8a40a564200CDF14dFCefd36C3
 export const USDX__USD = '0xC342785EE44b9F8a40a564200CDF14dFCefd36C3';
@@ -348,12 +309,6 @@ export const WSTETH__ETH = '0x43a5C292A453A3bF3606fa856197f09D7B74251a';
 // https://basescan.org/address/0x39C6E14CdE46D4FFD9F04Ff159e7ce8eC20E10B4
 export const SUPEROETHB__ETH = '0x39C6E14CdE46D4FFD9F04Ff159e7ce8eC20E10B4';
 
-// https://basescan.org/address/0x203e994f3908cF886C6155c31742557D82c9B4a2
-export const SVR_USDT__USD = '0x203e994f3908cF886C6155c31742557D82c9B4a2';
-
-// https://basescan.org/address/0xE5fa3A4e4208858ADdf2CDb4e12651E89f1f1A70
-export const SVR_USDT__USD_BASE = '0xE5fa3A4e4208858ADdf2CDb4e12651E89f1f1A70';
-
 // https://basescan.org/address/0xbC7c5023eE571e4D9C4890C90a16be05c1EEf410
 export const uniBTC__BTC_Exchange_Rate = '0xbC7c5023eE571e4D9C4890C90a16be05c1EEf410';
 
@@ -370,7 +325,7 @@ export const MLN__USD = '0x122b5334A8b55861dBc6729c294451471FbF318D';
 export const AERO__USD = '0x4EC5970fC728C5f65ba413992CD5fF6FD70fcfF0';
 
 // https://basescan.org/address/0x0b68ac37a1668DAaab1882543368E076C38C40e9
-export const TETH_Reserves = '0x0b68ac37a1668DAaab1882543368E076C38C40e9';
+export const CETH_Reserves = '0x0b68ac37a1668DAaab1882543368E076C38C40e9';
 
 // https://basescan.org/address/0x3A1d6444fb6a402470098E23DaD0B7E86E14252F
 export const CHF__USD = '0x3A1d6444fb6a402470098E23DaD0B7E86E14252F';
@@ -388,9 +343,6 @@ export const Real_GDP_Level = '0x0df397aFE00085C138a99eFB39C498e08eB95aD1';
 export const PCE_Price_Index_Percent_Change_Annual_Rate =
   '0x2a18E2d46Cb067b69e0759dB39b16597fC42D962';
 
-// https://basescan.org/address/0x1fC950BbC12E93c15A3eEb62db978eb3cC567943
-export const SYND__USD = '0x1fC950BbC12E93c15A3eEb62db978eb3cC567943';
-
 // https://basescan.org/address/0xeDC243c7E3c1A9dAf067C90641D2346d2694d2e5
 export const LSETH__ETH = '0xeDC243c7E3c1A9dAf067C90641D2346d2694d2e5';
 
@@ -400,12 +352,6 @@ export const USDz__USD = '0xe25969e2Fa633a0C027fAB8F30Fc9C6A90D60B48';
 // https://basescan.org/address/0x5218Ebeb96bD2bAFe21F9b143f5672552629ba79
 export const USDO_Reserves = '0x5218Ebeb96bD2bAFe21F9b143f5672552629ba79';
 
-// https://basescan.org/address/0x9dA00D23465282005DB222a441a663eE7B9dfCc8
-export const SVR_ETH__USD = '0x9dA00D23465282005DB222a441a663eE7B9dfCc8';
-
-// https://basescan.org/address/0xa4250cE1aA15Ff4cb5E5a8655293b65694e436Ed
-export const SVR_ETH__USD_BASE = '0xa4250cE1aA15Ff4cb5E5a8655293b65694e436Ed';
-
 // https://basescan.org/address/0xe95e258bb6615d47515Fc849f8542dA651f12bF6
 export const MORPHO__USD = '0xe95e258bb6615d47515Fc849f8542dA651f12bF6';
 
@@ -414,9 +360,6 @@ export const USDT__USD = '0xf19d560eB8d2ADf07BD6D13ed03e1D11215721F9';
 
 // https://basescan.org/address/0xCCADC697c55bbB68dc5bCdf8d3CBe83CdD4E071E
 export const WBTC__USD = '0xCCADC697c55bbB68dc5bCdf8d3CBe83CdD4E071E';
-
-// https://basescan.org/address/0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94
-export const MAMO__USD = '0xeF7541b388a77C1709a3d44BfBfC5c1ED3F0Ac94';
 
 // https://basescan.org/address/0x975043adBb80fc32276CbF9Bbcfd4A601a12462D
 export const SOL__USD = '0x975043adBb80fc32276CbF9Bbcfd4A601a12462D';
@@ -430,17 +373,11 @@ export const TRUMP__USD = '0x7bAfa1Af54f17cC0775a1Cf813B9fF5dED2C51E5';
 // https://basescan.org/address/0x721F1B4dc604AEA0661Aa9982AB624e5756B31f2
 export const mooBIFI__USD = '0x721F1B4dc604AEA0661Aa9982AB624e5756B31f2';
 
-// https://basescan.org/address/0x95Eba7bE2f755a298984bd714822994f1d4B6313
-export const YBTC_BTC_Exchange_Rate = '0x95Eba7bE2f755a298984bd714822994f1d4B6313';
-
 // https://basescan.org/address/0x8422f3d3CAFf15Ca682939310d6A5e619AE08e57
 export const DOGE__USD = '0x8422f3d3CAFf15Ca682939310d6A5e619AE08e57';
 
 // https://basescan.org/address/0x674e028B95330E77F5cF89834254a6Bfa806f3a2
 export const ANON__USD = '0x674e028B95330E77F5cF89834254a6Bfa806f3a2';
-
-// https://basescan.org/address/0xf488FA1B4Ac8210bf0b2d212176ca28c48F86708
-export const GLDY_Reserves = '0xf488FA1B4Ac8210bf0b2d212176ca28c48F86708';
 
 // https://basescan.org/address/0xFAf372CaBc765b63f6fabD436c845D965eDA1CA5
 export const MELANIA__USD = '0xFAf372CaBc765b63f6fabD436c845D965eDA1CA5';
@@ -484,9 +421,6 @@ export const Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annu
 
 // https://basescan.org/address/0x06bdFe07E71C476157FC025d3cCD4BBe08e83EF9
 export const NZD__USD = '0x06bdFe07E71C476157FC025d3cCD4BBe08e83EF9';
-
-// https://basescan.org/address/0x50997b806B574501cC34a2a6d845e4dc1Bd9Aa8c
-export const AVNT__USD = '0x50997b806B574501cC34a2a6d845e4dc1Bd9Aa8c';
 
 // https://basescan.org/address/0x4aeb6D15769EaD32D0c5Be2940F40c7CFf53801d
 export const MOG__USD = '0x4aeb6D15769EaD32D0c5Be2940F40c7CFf53801d';

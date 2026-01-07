@@ -6,10 +6,6 @@ library ChainlinkMetis {
   // https://explorer.metis.io/address/0x51Ed8Fecf96813826F727CaBDF01b3cF6a61373e
   address internal constant BTC__USD = 0x51Ed8Fecf96813826F727CaBDF01b3cF6a61373e;
 
-  // https://explorer.metis.io/address/0x576855A9C189f42AcE61B784A9c049F51937f482
-  address internal constant AAVE_Network_Emergency_Count_Metis =
-    0x576855A9C189f42AcE61B784A9c049F51937f482;
-
   // https://explorer.metis.io/address/0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1
   address internal constant DAI__USD = 0xe0351cAAE70B5AdBD0107cD5331AD1D79c4c1CA1;
 
