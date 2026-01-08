@@ -25,6 +25,13 @@ jobs:
           token: ${{ secrets.PR_PAT }}
           release-type: node
 
+      - name: Enable Pull Request Automerge
+        if: ${{ steps.release.outputs.prs_created }}
+        run: gh pr merge --merge --auto "${{ fromJSON(steps.release.outputs.pr).number }}"
+        env:
+          GH_TOKEN: ${{ secrets.PR_PAT }}
+          GH_REPO: ${{ github.repository }}
+
   release-node:
     uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
     if: ${{ needs.release-please.outputs.releaseCreated }}
