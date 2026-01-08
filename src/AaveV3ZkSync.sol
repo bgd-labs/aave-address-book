@@ -52,8 +52,8 @@ library AaveV3ZkSync {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x96F33C08b4c48754C85868E5c237d21bf95999Ff;
 
-  // https://era.zksync.network/address/0x86bF538eBc264f09ce76f4610F80CC78FEE7CA3B
-  address internal constant CONFIG_ENGINE = 0x86bF538eBc264f09ce76f4610F80CC78FEE7CA3B;
+  // https://era.zksync.network/address/0x3f4f371496c77B86902966Fee1B989CC559A8e1A
+  address internal constant CONFIG_ENGINE = 0x3f4f371496c77B86902966Fee1B989CC559A8e1A;
 
   // https://era.zksync.network/address/0x0753E3637ddC6efc40759D9c347251046644F25F
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

@@ -52,8 +52,8 @@ library AaveV3Plasma {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x458d281bFFCE958E34571B33F1F26Bd42Aa27c44;
 
-  // https://plasmascan.to/address/0x8601E80972A2a89b78185fbacd560d2202202B26
-  address internal constant CONFIG_ENGINE = 0x8601E80972A2a89b78185fbacd560d2202202B26;
+  // https://plasmascan.to/address/0x6Cf806CF51749bE514B7055b6fDBe346aee47B7b
+  address internal constant CONFIG_ENGINE = 0x6Cf806CF51749bE514B7055b6fDBe346aee47B7b;
 
   // https://plasmascan.to/address/0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba
   address internal constant RISK_STEWARD = 0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba;
