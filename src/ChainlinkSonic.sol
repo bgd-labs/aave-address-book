@@ -23,9 +23,6 @@ library ChainlinkSonic {
   // https://sonicscan.org/address/0xc76dFb89fF298145b417d221B2c747d84952e01d
   address internal constant S__USD = 0xc76dFb89fF298145b417d221B2c747d84952e01d;
 
-  // https://sonicscan.org/address/0x19A95E6203A0611b6be322c25b63Ec989fFE15c1
-  address internal constant SCETH__USD = 0x19A95E6203A0611b6be322c25b63Ec989fFE15c1;
-
   // https://sonicscan.org/address/0xCC8DA199b159f25E7782494Df9140d2ce0Fe048B
   address internal constant sfrxUSD__USD = 0xCC8DA199b159f25E7782494Df9140d2ce0Fe048B;
 
@@ -46,12 +43,6 @@ library ChainlinkSonic {
   address internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
     0xD83083D9D899fB185CcaA8EC63F0582A2970373E;
 
-  // https://sonicscan.org/address/0x5e7B8000f967ada54eDb8696d21cCFEB7eC36EC6
-  address internal constant SWPX__USD = 0x5e7B8000f967ada54eDb8696d21cCFEB7eC36EC6;
-
-  // https://sonicscan.org/address/0x30FCcFde9857B94B647F9a344c5F4BaCEaB67d72
-  address internal constant ANON__USD = 0x30FCcFde9857B94B647F9a344c5F4BaCEaB67d72;
-
   // https://sonicscan.org/address/0x61140C09956495F1ce49D28E125Ed4035e1CAE95
   address internal constant WBTC__USD = 0x61140C09956495F1ce49D28E125Ed4035e1CAE95;
 
@@ -69,9 +60,6 @@ library ChainlinkSonic {
   // https://sonicscan.org/address/0x824364077993847f71293B24ccA8567c00c2de11
   address internal constant ETH__USD = 0x824364077993847f71293B24ccA8567c00c2de11;
 
-  // https://sonicscan.org/address/0x0afB9d28170cB7459AEC634a6dD96591315cA42a
-  address internal constant X33__USD = 0x0afB9d28170cB7459AEC634a6dD96591315cA42a;
-
   // https://sonicscan.org/address/0x55bCa887199d5520B3Ce285D41e6dC10C08716C9
   address internal constant USDC__USD = 0x55bCa887199d5520B3Ce285D41e6dC10C08716C9;
 
@@ -82,9 +70,6 @@ library ChainlinkSonic {
   address
     internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
     0xB8deBF17f62838F56e4abc923aef4ad4716C105B;
-
-  // https://sonicscan.org/address/0xACE5e348a341a740004304c2c228Af1A4581920F
-  address internal constant SCUSD__USD = 0xACE5e348a341a740004304c2c228Af1A4581920F;
 
   // https://sonicscan.org/address/0x0fceF1123FDBEdC89a0189B15D35B7A33B7694c0
   address internal constant EUR__USD = 0x0fceF1123FDBEdC89a0189B15D35B7A33B7694c0;
@@ -159,11 +144,11 @@ library ChainlinkSonic {
   // https://sonicscan.org/address/0x3cf9E4860bafe8e29eC8e1bC073436C5519684f4
   address internal constant scBTC__BTC = 0x3cf9E4860bafe8e29eC8e1bC073436C5519684f4;
 
+  // https://sonicscan.org/address/0xfdee80dec97AF9AddcDccD208eC09d7Ea5eEbB9a
+  address internal constant ZAR__USD = 0xfdee80dec97AF9AddcDccD208eC09d7Ea5eEbB9a;
+
   // https://sonicscan.org/address/0x76F4C040A792aFB7F6dBadC7e30ca3EEa140D216
   address internal constant USDT__USD = 0x76F4C040A792aFB7F6dBadC7e30ca3EEa140D216;
-
-  // https://sonicscan.org/address/0xc26dEEfBF72CFC862610Db23830970Fc6663CcC3
-  address internal constant SHADOW__USD = 0xc26dEEfBF72CFC862610Db23830970Fc6663CcC3;
 
   // https://sonicscan.org/address/0xEE04fA54F0aDFB6a0d7791EA8236F4BbC5d07E97
   address internal constant wOS__OS_Exchange_Rate = 0xEE04fA54F0aDFB6a0d7791EA8236F4BbC5d07E97;

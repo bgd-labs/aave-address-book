@@ -64,9 +64,6 @@ library ChainlinkGnosis {
   // https://gnosisscan.io/address/0x824b4A1A0443609A2ADd94a700b770FA5bE31287
   address internal constant DOGE__USD = 0x824b4A1A0443609A2ADd94a700b770FA5bE31287;
 
-  // https://gnosisscan.io/address/0x51e4024255d0cBd1F4C79AEe6BDB6565Df2C5d1b
-  address internal constant MKR__USD = 0x51e4024255d0cBd1F4C79AEe6BDB6565Df2C5d1b;
-
   // https://gnosisscan.io/address/0xC77B83ac3Dd2a761073bD0f281f7b880B2DDDe18
   address internal constant CRV__USD = 0xC77B83ac3Dd2a761073bD0f281f7b880B2DDDe18;
 

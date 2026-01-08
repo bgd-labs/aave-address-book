@@ -44,6 +44,14 @@ library ChainlinkMantle {
   // https://mantlescan.xyz/address/0x02959651ED50f9866BF39D29884dF245D03FdC51
   address internal constant Calculated_cmETH__ETH = 0x02959651ED50f9866BF39D29884dF245D03FdC51;
 
+  // https://mantlescan.xyz/address/0xdDEaeAdF319bd363120Af02fBdb1e2C5A3Ce172a
+  address internal constant SYRUPUSDT__USDT_Exchange_Rate =
+    0xdDEaeAdF319bd363120Af02fBdb1e2C5A3Ce172a;
+
+  // https://mantlescan.xyz/address/0xA6B6A4E844126b8a44Ab6564b3A65048217cB58C
+  address internal constant SYRUPUSDC__USDC_Exchange_Rate =
+    0xA6B6A4E844126b8a44Ab6564b3A65048217cB58C;
+
   // https://mantlescan.xyz/address/0x80C42686a5F953d3c629cb5a35BCC86B1Ddd21e3
   address internal constant Calculated_cmETH__USD = 0x80C42686a5F953d3c629cb5a35BCC86B1Ddd21e3;
 
@@ -53,6 +61,9 @@ library ChainlinkMantle {
   // https://mantlescan.xyz/address/0x4F923DaC0871d29E6147C27Fb7f53bEf13267E31
   address internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Level =
     0x4F923DaC0871d29E6147C27Fb7f53bEf13267E31;
+
+  // https://mantlescan.xyz/address/0x1D28137b7695d1Dcd122E5Bf0ce7eE92360e83b7
+  address internal constant SUSDE__USDE_Exchange_Rate = 0x1D28137b7695d1Dcd122E5Bf0ce7eE92360e83b7;
 
   // https://mantlescan.xyz/address/0x663Fa56307caa30f0C1a2d20D550E13ED85AE78d
   address

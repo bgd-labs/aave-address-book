@@ -25,6 +25,10 @@ library ChainlinkLinea {
   // https://lineascan.build/address/0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4
   address internal constant PCE_Price_Index_Level = 0x8b7fAC4A99daDa67C661D4854B2284c7A64722f4;
 
+  // https://lineascan.build/address/0xe3B01C1A61eF2F13a7a24F060a2d53006d91e38a
+  address internal constant savETH__avETH_Exchange_Rate =
+    0xe3B01C1A61eF2F13a7a24F060a2d53006d91e38a;
+
   // https://lineascan.build/address/0x1E2286815B3D628128fbaa0F213fD53Dea9E015E
   address internal constant Real_GDP_Level = 0x1E2286815B3D628128fbaa0F213fD53Dea9E015E;
 
@@ -103,6 +107,9 @@ library ChainlinkLinea {
 
   // https://lineascan.build/address/0x637cf12017219Dd3A758818eD63185f7acF7D935
   address internal constant EUR__USD = 0x637cf12017219Dd3A758818eD63185f7acF7D935;
+
+  // https://lineascan.build/address/0x5cC678be64bF599B97131092D7CEf6C30a5271aD
+  address internal constant M_NAV = 0x5cC678be64bF599B97131092D7CEf6C30a5271aD;
 
   // https://lineascan.build/address/0xB1d9A4Fe9331E28C5588B63343BF064A397aadB8
   address internal constant ezETH__ETH = 0xB1d9A4Fe9331E28C5588B63343BF064A397aadB8;
