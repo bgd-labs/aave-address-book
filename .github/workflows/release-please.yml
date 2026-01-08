@@ -19,10 +19,30 @@ jobs:
     outputs:
       releaseCreated: ${{ steps.release.outputs.release_created }}
     steps:
+      - uses: actions/create-github-app-token@v2
+        id: app-token
+        with:
+          app-id: ${{ secrets.AUTOMATION_APP_ID }}
+          private-key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
+
       - uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # pin@v4.4.0
         id: release
         with:
+          token: ${{ steps.app-token.outputs.token }}
           release-type: node
+
+      - name: Approve pr
+        if: ${{ steps.release.outputs.prs_created }}
+        run: gh pr review --approve "${{ fromJSON(steps.release.outputs.pr).number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Enable Pull Request Automerge
+        if: ${{ steps.release.outputs.prs_created }}
+        run: gh pr merge --squash --auto "${{ fromJSON(steps.release.outputs.pr).number }}"
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          GH_REPO: ${{ github.repository }}
 
   release-node:
     uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main

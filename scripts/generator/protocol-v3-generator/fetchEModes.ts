@@ -31,10 +31,19 @@ export async function fetchEModes(
         poolContract.read.getEModeCategoryCollateralBitmap([i]),
         poolContract.read.getEModeCategoryBorrowableBitmap([i]),
       ]);
+      let ltvzeroBitmap = 0n;
+      try {
+        ltvzeroBitmap = await poolContract.read.getEModeCategoryLtvzeroBitmap([i]);
+      } catch (e) {
+        console.log(`Error fetching ltvzeroBitmap for eMode ${i}, pool ${poolAddress}`);
+      }
       const collaterals = bitmapToIndexes(collateralBitmap).map(
         (id) => reserveData.find((r) => r.id === id)!,
       );
       const borrowables = bitmapToIndexes(borrowableBitmap).map(
+        (id) => reserveData.find((r) => r.id === id)!,
+      );
+      const ltvzeros = bitmapToIndexes(ltvzeroBitmap).map(
         (id) => reserveData.find((r) => r.id === id)!,
       );
       eModes.set(i, {
@@ -43,6 +52,8 @@ export async function fetchEModes(
         collateralAssets: collaterals.map((a) => a.UNDERLYING),
         borrowableBitmap,
         borrowableAssets: borrowables.map((a) => a.UNDERLYING),
+        ltvzeroBitmap,
+        ltvzeroAssets: ltvzeros.map((a) => a.UNDERLYING),
         ...eModeData,
       });
     }
