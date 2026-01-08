@@ -194,6 +194,24 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
+    name: 'configureEModeCategoryLtvzeroBitmap',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+      {
+        name: 'ltvzeroBitmap',
+        type: 'uint128',
+        internalType: 'uint128',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'deposit',
     inputs: [
       {
@@ -283,11 +301,6 @@ export const IPool_ABI = [
       },
       {
         name: 'scaledBalanceFromBefore',
-        type: 'uint256',
-        internalType: 'uint256',
-      },
-      {
-        name: 'scaledBalanceToBefore',
         type: 'uint256',
         internalType: 'uint256',
       },
@@ -551,13 +564,19 @@ export const IPool_ABI = [
   },
   {
     type: 'function',
-    name: 'getEModeLogic',
-    inputs: [],
+    name: 'getEModeCategoryLtvzeroBitmap',
+    inputs: [
+      {
+        name: 'id',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+    ],
     outputs: [
       {
         name: '',
-        type: 'address',
-        internalType: 'address',
+        type: 'uint128',
+        internalType: 'uint128',
       },
     ],
     stateMutability: 'view',
