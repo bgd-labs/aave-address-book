@@ -43,11 +43,17 @@ jobs:
       - name: Generate library
         run: npm run generate:addresses
 
+      - uses: actions/create-github-app-token@v2
+        id: app-token
+        with:
+          app-id: ${{ secrets.AUTOMATION_APP_ID }}
+          private-key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
+
       - name: Create Pull Request
         id: pr
         uses: peter-evans/create-pull-request@253935418100774e6d13aa1d877700be09f535f5 # pin@00897e0bc2ceba9f86c9b0fda8429107112e6fa5
         with:
-          token: ${{ secrets.PR_PAT }}
+          token: ${{ steps.app-token.outputs.token }}
           author: Cache-bot <noreply@github.com>
           committer: Cache-bot <noreply@github.com>
           commit-message: "fix(cache): automated cache update - updated addresses"
@@ -56,11 +62,13 @@ jobs:
 
       - name: Approve pr
         run: gh pr review --approve "${{ steps.pr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable Pull Request Automerge
         run: gh pr merge --squash --auto "${{ steps.pr.outputs.pull-request-number }}"
         env:
-          GH_TOKEN: ${{ secrets.PR_PAT }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
 
       - name: Post to a Slack channel
         id: slack
