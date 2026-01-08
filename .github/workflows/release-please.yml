@@ -26,6 +26,7 @@ jobs:
           release-type: node
 
       - name: Approve pr
+        if: ${{ steps.release.outputs.prs_created }}
         run: gh pr review --approve "${{ fromJSON(steps.release.outputs.pr).number }}"
 
       - name: Enable Pull Request Automerge
