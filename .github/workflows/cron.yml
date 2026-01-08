@@ -54,8 +54,11 @@ jobs:
           delete-branch: true
           title: "fix(cache): automated cache update - updated addresses"
 
+      - name: Approve pr
+        run: gh pr review --approve "${{ steps.pr.outputs.pull-request-number }}"
+
       - name: Enable Pull Request Automerge
-        run: gh pr merge --merge --auto "${{ steps.pr.outputs.pull-request-number }}"
+        run: gh pr merge --squash --auto "${{ steps.pr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ secrets.PR_PAT }}
 
