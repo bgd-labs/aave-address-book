@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.38.3](https://github.com/bgd-labs/aave-address-book/compare/v4.38.2...v4.38.3) (2026-01-08)
+
+
+### Bug Fixes
+
+* make tests run on ci prs ([#1173](https://github.com/bgd-labs/aave-address-book/issues/1173)) ([e988638](https://github.com/bgd-labs/aave-address-book/commit/e9886380f914180368b104b83310aa9644a9634f))
+
 ## [4.38.2](https://github.com/bgd-labs/aave-address-book/compare/v4.38.1...v4.38.2) (2026-01-07)
 
 
