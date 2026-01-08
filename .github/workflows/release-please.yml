@@ -22,7 +22,19 @@ jobs:
       - uses: googleapis/release-please-action@16a9c90856f42705d54a6fda1823352bdc62cf38 # pin@v4.4.0
         id: release
         with:
+          token: ${{ secrets.PR_PAT }}
           release-type: node
+
+      - name: Approve pr
+        if: ${{ steps.release.outputs.prs_created }}
+        run: gh pr review --approve "${{ fromJSON(steps.release.outputs.pr).number }}"
+
+      - name: Enable Pull Request Automerge
+        if: ${{ steps.release.outputs.prs_created }}
+        run: gh pr merge --squash --auto "${{ fromJSON(steps.release.outputs.pr).number }}"
+        env:
+          GH_TOKEN: ${{ secrets.PR_PAT }}
+          GH_REPO: ${{ github.repository }}
 
   release-node:
     uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main

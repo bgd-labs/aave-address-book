@@ -163,6 +163,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1',
     borrowableAssets: ['0x4200000000000000000000000000000000000006'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
