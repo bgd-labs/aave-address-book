@@ -207,6 +207,29 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
+    name: 'setAssetLtvzeroInEMode',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'categoryId',
+        type: 'uint8',
+        internalType: 'uint8',
+      },
+      {
+        name: 'ltvzero',
+        type: 'bool',
+        internalType: 'bool',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'setBorrowCap',
     inputs: [
       {
@@ -451,6 +474,24 @@ export const IPoolConfigurator_ABI = [
   },
   {
     type: 'function',
+    name: 'setReserveLtvzero',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        internalType: 'address',
+      },
+      {
+        name: 'ltvzero',
+        type: 'bool',
+        internalType: 'bool',
+      },
+    ],
+    outputs: [],
+    stateMutability: 'nonpayable',
+  },
+  {
+    type: 'function',
     name: 'setReservePause',
     inputs: [
       {
@@ -687,6 +728,31 @@ export const IPoolConfigurator_ABI = [
       },
       {
         name: 'collateral',
+        type: 'bool',
+        indexed: false,
+        internalType: 'bool',
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: 'event',
+    name: 'AssetLtvzeroInEModeChanged',
+    inputs: [
+      {
+        name: 'asset',
+        type: 'address',
+        indexed: true,
+        internalType: 'address',
+      },
+      {
+        name: 'categoryId',
+        type: 'uint8',
+        indexed: false,
+        internalType: 'uint8',
+      },
+      {
+        name: 'ltvzero',
         type: 'bool',
         indexed: false,
         internalType: 'bool',

@@ -9,15 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bgd-labs/react-web3-icons": "^1.57.0",
-    "@bgd-labs/toolbox": "^0.0.55",
+    "@bgd-labs/react-web3-icons": "^1.58.0",
+    "@bgd-labs/toolbox": "^0.2.1",
     "@leeoniya/ufuzzy": "^1.0.18",
     "clsx": "^2.1.1",
-    "next": "16.0.8",
+    "next": "16.1.1",
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "tailwind-merge": "^2.6.0",
-    "viem": "^2.41.2"
+    "viem": "^2.43.5"
   },
   "devDependencies": {
     "@types/node": "^25.0.0",

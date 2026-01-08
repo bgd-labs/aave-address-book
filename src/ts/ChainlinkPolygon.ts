@@ -62,9 +62,6 @@ export const KAVA__USD = '0x7899dd75C329eFe63e35b02bC7d60D3739FB23c5';
 // https://polygonscan.com/address/0x7C5D415B64312D38c56B54358449d0a4058339d2
 export const TUSD__USD = '0x7C5D415B64312D38c56B54358449d0a4058339d2';
 
-// https://polygonscan.com/address/0x67935f65D1577ced9f4929D3679A157E95C1c02c
-export const ETH_USD_Total_Marketcap = '0x67935f65D1577ced9f4929D3679A157E95C1c02c';
-
 // https://polygonscan.com/address/0xf9184b8E5da48C19fA4E06f83f77742e748cca96
 export const AMZN__USD = '0xf9184b8E5da48C19fA4E06f83f77742e748cca96';
 
@@ -161,6 +158,9 @@ export const GHST__USD = '0xDD229Ce42f11D8Ee7fFf29bDB71C7b81352e11be';
 // https://polygonscan.com/address/0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d
 export const SPYUS = '0x187c42f6C0e7395AeA00B1B30CB0fF807ef86d5d';
 
+// https://polygonscan.com/address/0x9199b9dF4519a435b4F515E8B43B5C2df4DD0b8c
+export const rcUSDPlus_NAV = '0x9199b9dF4519a435b4F515E8B43B5C2df4DD0b8c';
+
 // https://polygonscan.com/address/0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2
 export const KNC__USD = '0x10e5f3DFc81B3e5Ef4e648C4454D04e79E1E41E2';
 
@@ -239,9 +239,6 @@ export const INR__USD = '0xDA0F8Df6F5dB15b346f4B8D1156722027E194E60';
 // https://polygonscan.com/address/0x5164Ad28fb12a5e55946090Ec3eE1B748AFb3785
 export const THB__USD = '0x5164Ad28fb12a5e55946090Ec3eE1B748AFb3785';
 
-// https://polygonscan.com/address/0x58326c0F831b2Dbf7234A4204F28Bba79AA06d5f
-export const FTM__USD = '0x58326c0F831b2Dbf7234A4204F28Bba79AA06d5f';
-
 // https://polygonscan.com/address/0x0A6513e40db6EB1b165753AD52E80663aeA50545
 export const USDT__USD = '0x0A6513e40db6EB1b165753AD52E80663aeA50545';
 
@@ -272,12 +269,6 @@ export const RYT_Polygon_Proof_of_Reserves = '0x6b20c92A1D73A9232383DEcD698Ff559
 // https://polygonscan.com/address/0xe71A04ACe06e2667c7e1c802E998CBf44A6bf53C
 export const sUSDe__USD = '0xe71A04ACe06e2667c7e1c802E998CBf44A6bf53C';
 
-// https://polygonscan.com/address/0xbd238a35Fb47aE22F0cC551f14ffB8E8f04FCA21
-export const DOGE_USD_Total_Marketcap = '0xbd238a35Fb47aE22F0cC551f14ffB8E8f04FCA21';
-
-// https://polygonscan.com/address/0xa070427bF5bA5709f70e98b94Cb2F435a242C46C
-export const MKR__USD = '0xa070427bF5bA5709f70e98b94Cb2F435a242C46C';
-
 // https://polygonscan.com/address/0xACA44ABb8B04D07D883202F99FA5E3c53ed57Fb5
 export const CAD__USD = '0xACA44ABb8B04D07D883202F99FA5E3c53ed57Fb5';
 
@@ -286,9 +277,6 @@ export const BRL__USD = '0xB90DA3ff54C3ED09115abf6FbA0Ff4645586af2c';
 
 // https://polygonscan.com/address/0xdf0Fb4e4F928d2dCB76f438575fDD8682386e13C
 export const UNI__USD = '0xdf0Fb4e4F928d2dCB76f438575fDD8682386e13C';
-
-// https://polygonscan.com/address/0xd6285F06203D938ab713Fa6A315e7d23247DDE95
-export const EOS__USD = '0xd6285F06203D938ab713Fa6A315e7d23247DDE95';
 
 // https://polygonscan.com/address/0xd78325DcA0F90F0FFe53cCeA1B02Bb12E1bf8FdB
 export const TRY__USD = '0xd78325DcA0F90F0FFe53cCeA1B02Bb12E1bf8FdB';
@@ -304,9 +292,6 @@ export const FXS__USD = '0x6C0fe985D3cAcbCdE428b84fc9431792694d0f51';
 
 // https://polygonscan.com/address/0x2Ac3F3Bfac8fC9094BC3f0F9041a51375235B992
 export const APE__USD = '0x2Ac3F3Bfac8fC9094BC3f0F9041a51375235B992';
-
-// https://polygonscan.com/address/0x18E4058491C3F58bC2f747A9E64cA256Ed6B318d
-export const BTC_USD_Total_Marketcap = '0x18E4058491C3F58bC2f747A9E64cA256Ed6B318d';
 
 // https://polygonscan.com/address/0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d
 export const USDT__ETH = '0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d';
@@ -340,9 +325,6 @@ export const CRV__USD = '0x336584C8E6Dc19637A5b36206B1c79923111b405';
 
 // https://polygonscan.com/address/0x38611b09F8f2D520c14eA973765C225Bf57B9Eac
 export const THETA__USD = '0x38611b09F8f2D520c14eA973765C225Bf57B9Eac';
-
-// https://polygonscan.com/address/0x807b59d12520830D1864286FA0271c27baa94197
-export const MKR__ETH = '0x807b59d12520830D1864286FA0271c27baa94197';
 
 // https://polygonscan.com/address/0xefb7e6be8356cCc6827799B6A7348eE674A80EaE
 export const USDC__ETH = '0xefb7e6be8356cCc6827799B6A7348eE674A80EaE';

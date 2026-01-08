@@ -561,6 +561,11 @@ export const IAaveV3ConfigEngine_ABI = [
             type: 'uint256',
             internalType: 'uint256',
           },
+          {
+            name: 'ltvzero',
+            type: 'uint256',
+            internalType: 'uint256',
+          },
         ],
       },
     ],
