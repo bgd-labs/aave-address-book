@@ -29,11 +29,11 @@ library AaveV3Sonic {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xc0a344397cfa89dF1e1d3e4fb330834D789cF2CD);
 
-  // https://sonicscan.org/address/0x400081EB35244820e9923d7AA35c9bf2078dD054
-  address internal constant POOL_IMPL = 0x400081EB35244820e9923d7AA35c9bf2078dD054;
+  // https://sonicscan.org/address/0xF91D16F9b7Cd2488e699f95E8BcEc34E64283138
+  address internal constant POOL_IMPL = 0xF91D16F9b7Cd2488e699f95E8BcEc34E64283138;
 
-  // https://sonicscan.org/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
+  // https://sonicscan.org/address/0x6fDdde45f777a4E461B0721a578b169b44579623
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x6fDdde45f777a4E461B0721a578b169b44579623;
 
   // https://sonicscan.org/address/0x24bD6e9ca54F1737467DEf82dCA9702925B3Aa59
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,12 +45,12 @@ library AaveV3Sonic {
   // https://sonicscan.org/address/0x1aB55bBdD5DF0782BBCf73553Af93BC6B29A286B
   ICollector internal constant COLLECTOR = ICollector(0x1aB55bBdD5DF0782BBCf73553Af93BC6B29A286B);
 
-  // https://sonicscan.org/address/0xb754640eCa11e9F89022e755997F4DA9B3F18EC5
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0xb754640eCa11e9F89022e755997F4DA9B3F18EC5;
+  // https://sonicscan.org/address/0x9E7A2eD2da913Cf5608256Bd7114dF3fC3a24a78
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x9E7A2eD2da913Cf5608256Bd7114dF3fC3a24a78;
 
-  // https://sonicscan.org/address/0x03978bb90165B8F32De90E6435b32331537Ae946
+  // https://sonicscan.org/address/0x2022597abeE8007bbf4E72f51Fc1B5493363AcA6
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0x03978bb90165B8F32De90E6435b32331537Ae946;
+    0x2022597abeE8007bbf4E72f51Fc1B5493363AcA6;
 
   // https://sonicscan.org/address/0x2F9fDD0D80843b21A7e2c7bfe2A6278231A5683e
   address internal constant CONFIG_ENGINE = 0x2F9fDD0D80843b21A7e2c7bfe2A6278231A5683e;
@@ -182,18 +182,18 @@ library AaveV3SonicEModes {
   uint8 internal constant stS__wS = 1;
 }
 library AaveV3SonicExternalLibraries {
-  // https://sonicscan.org/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
-  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
+  // https://sonicscan.org/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
+  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
 
-  // https://sonicscan.org/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
-  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
+  // https://sonicscan.org/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
+  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
 
-  // https://sonicscan.org/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
-  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
+  // https://sonicscan.org/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
+  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
 
-  // https://sonicscan.org/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
-  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
+  // https://sonicscan.org/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
+  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
 
-  // https://sonicscan.org/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
-  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
+  // https://sonicscan.org/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
+  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
 }
