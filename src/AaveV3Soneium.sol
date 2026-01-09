@@ -32,11 +32,11 @@ library AaveV3Soneium {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x4a24b44b252db149B5B9BCec4dc3c2752807d626);
 
-  // https://soneium.blockscout.com/address/0x9be798ECa59aF018d8BfDA0C310DBe4Ddd5f2488
-  address internal constant POOL_IMPL = 0x9be798ECa59aF018d8BfDA0C310DBe4Ddd5f2488;
+  // https://soneium.blockscout.com/address/0xf2225A9099Ac572b65214Cb63Cd9482370B1f9F6
+  address internal constant POOL_IMPL = 0xf2225A9099Ac572b65214Cb63Cd9482370B1f9F6;
 
-  // https://soneium.blockscout.com/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
+  // https://soneium.blockscout.com/address/0x6fDdde45f777a4E461B0721a578b169b44579623
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x6fDdde45f777a4E461B0721a578b169b44579623;
 
   // https://soneium.blockscout.com/address/0xE9Dfe1cbD5F10C56c1466F6AC88e1Fb304Be3780
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -48,12 +48,12 @@ library AaveV3Soneium {
   // https://soneium.blockscout.com/address/0xc7B3cc5F5988613b0D620623C514EDFB32539720
   ICollector internal constant COLLECTOR = ICollector(0xc7B3cc5F5988613b0D620623C514EDFB32539720);
 
-  // https://soneium.blockscout.com/address/0xE0a3e914836Ac28D5c42d4a278A06047c0A10c2A
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0xE0a3e914836Ac28D5c42d4a278A06047c0A10c2A;
+  // https://soneium.blockscout.com/address/0x102EaA833530Eb822611adc19A9b9dc029eb570d
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x102EaA833530Eb822611adc19A9b9dc029eb570d;
 
-  // https://soneium.blockscout.com/address/0xB268b1db5CDDD1D995c7f4ed1aBA3B4Dcf05dA5C
+  // https://soneium.blockscout.com/address/0xdaE4c42F6d70a53D8b3689535556615C0483538a
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0xB268b1db5CDDD1D995c7f4ed1aBA3B4Dcf05dA5C;
+    0xdaE4c42F6d70a53D8b3689535556615C0483538a;
 
   // https://soneium.blockscout.com/address/0x745773bAE23fFf28A1fE3605807292480CcCeA67
   address internal constant CONFIG_ENGINE = 0x745773bAE23fFf28A1fE3605807292480CcCeA67;
@@ -142,18 +142,18 @@ library AaveV3SoneiumEModes {
   uint8 internal constant NONE = 0;
 }
 library AaveV3SoneiumExternalLibraries {
-  // https://soneium.blockscout.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
-  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
+  // https://soneium.blockscout.com/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
+  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
 
-  // https://soneium.blockscout.com/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
-  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
+  // https://soneium.blockscout.com/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
+  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
 
-  // https://soneium.blockscout.com/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
-  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
+  // https://soneium.blockscout.com/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
+  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
 
-  // https://soneium.blockscout.com/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
-  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
+  // https://soneium.blockscout.com/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
+  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
 
-  // https://soneium.blockscout.com/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
-  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
+  // https://soneium.blockscout.com/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
+  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
 }
