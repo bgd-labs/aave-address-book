@@ -52,8 +52,8 @@ library AaveV3Celo {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x63E00463fDD1f3308C452a38D21834c6cED83836;
 
-  // https://celoscan.io/address/0x6BC59F65bdA1bE5c2936cAA36081A652c01C7BFb
-  address internal constant CONFIG_ENGINE = 0x6BC59F65bdA1bE5c2936cAA36081A652c01C7BFb;
+  // https://celoscan.io/address/0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311
+  address internal constant CONFIG_ENGINE = 0xeFb0e084Ba4C1262D89D8d5C3Bb304c42A853311;
 
   // https://celoscan.io/address/0xB4B6939D0804DCE8d0Ac3e59b2eD5C072829d56b
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

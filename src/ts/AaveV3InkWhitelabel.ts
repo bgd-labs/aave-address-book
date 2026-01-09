@@ -44,8 +44,8 @@ export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0x294daB91f3539f5a74Ed995a59235
 // https://explorer.inkonchain.com/address/0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c
 export const L2_ENCODER = '0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c';
 
-// https://explorer.inkonchain.com/address/0xea9989569Cf2D860597b4d649c9A963c15ab84fa
-export const CONFIG_ENGINE = '0xea9989569Cf2D860597b4d649c9A963c15ab84fa';
+// https://explorer.inkonchain.com/address/0xdD20b904F231d741866C119fd8fF135120C21c35
+export const CONFIG_ENGINE = '0xdD20b904F231d741866C119fd8fF135120C21c35';
 
 // https://explorer.inkonchain.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741';

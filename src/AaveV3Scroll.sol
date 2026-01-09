@@ -61,8 +61,8 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x0451f67bA61966C346daBAbB50a30Cc6A9A67C69
   address internal constant RISK_STEWARD = 0x0451f67bA61966C346daBAbB50a30Cc6A9A67C69;
 
-  // https://scrollscan.com/address/0xB076204f0E181A224e6eC1eA61Cb5976CBCfFF05
-  address internal constant CONFIG_ENGINE = 0xB076204f0E181A224e6eC1eA61Cb5976CBCfFF05;
+  // https://scrollscan.com/address/0x861Be72d464b6F1C99880B9bE476D40e8F9b5Bce
+  address internal constant CONFIG_ENGINE = 0x861Be72d464b6F1C99880B9bE476D40e8F9b5Bce;
 
   // https://scrollscan.com/address/0xFBedc64AeE24921cb43004312B9eF367a4162b57
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

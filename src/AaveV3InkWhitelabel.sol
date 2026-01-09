@@ -55,8 +55,8 @@ library AaveV3InkWhitelabel {
   // https://explorer.inkonchain.com/address/0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c
   address internal constant L2_ENCODER = 0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c;
 
-  // https://explorer.inkonchain.com/address/0xea9989569Cf2D860597b4d649c9A963c15ab84fa
-  address internal constant CONFIG_ENGINE = 0xea9989569Cf2D860597b4d649c9A963c15ab84fa;
+  // https://explorer.inkonchain.com/address/0xdD20b904F231d741866C119fd8fF135120C21c35
+  address internal constant CONFIG_ENGINE = 0xdD20b904F231d741866C119fd8fF135120C21c35;
 
   // https://explorer.inkonchain.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

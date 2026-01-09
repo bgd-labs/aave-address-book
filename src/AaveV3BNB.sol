@@ -58,8 +58,8 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant DEBT_SWAP_ADAPTER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
-  // https://bscscan.com/address/0x6195a956dC026A949dE552F04a5803d3aa1fC408
-  address internal constant CONFIG_ENGINE = 0x6195a956dC026A949dE552F04a5803d3aa1fC408;
+  // https://bscscan.com/address/0xf75cBd975756C52aA7321d10E6aCA90e07835Dee
+  address internal constant CONFIG_ENGINE = 0xf75cBd975756C52aA7321d10E6aCA90e07835Dee;
 
   // https://bscscan.com/address/0x117684358D990E42Eb1649E7e8C4691951dc1E71
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
