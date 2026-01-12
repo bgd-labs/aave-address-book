@@ -406,8 +406,8 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8770,
-    liquidationThreshold: 8970,
+    ltv: 8820,
+    liquidationThreshold: 9020,
     liquidationBonus: 10330,
   },
   '15': {
@@ -425,8 +425,8 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8600,
-    liquidationThreshold: 8800,
+    ltv: 8650,
+    liquidationThreshold: 8850,
     liquidationBonus: 10530,
   },
   '16': {
