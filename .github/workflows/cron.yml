@@ -61,11 +61,13 @@ jobs:
           title: "fix(cache): automated cache update - updated addresses"
 
       - name: Approve pr
+        if: ${{ steps.pr.outputs.pull-request-number }}
         run: gh pr review --approve "${{ steps.pr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable Pull Request Automerge
+        if: ${{ steps.pr.outputs.pull-request-number }}
         run: gh pr merge --squash --auto "${{ steps.pr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
