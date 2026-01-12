@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.39.0](https://github.com/bgd-labs/aave-address-book/compare/v4.38.2...v4.39.0) (2026-01-12)
+
+
+### Features
+
+* ltvzero 3.6 ([#1176](https://github.com/bgd-labs/aave-address-book/issues/1176)) ([ebf6f45](https://github.com/bgd-labs/aave-address-book/commit/ebf6f4583bdda90aa2fa56d7a597f3c9e28a3a28))
+
+
+### Bug Fixes
+
+* adds new v3.6 config engine ([#1174](https://github.com/bgd-labs/aave-address-book/issues/1174)) ([6793cd1](https://github.com/bgd-labs/aave-address-book/commit/6793cd155fb15115ece8285685590d2c9f56968e))
+* **cache:** automated cache update - updated addresses ([#1179](https://github.com/bgd-labs/aave-address-book/issues/1179)) ([6784cd1](https://github.com/bgd-labs/aave-address-book/commit/6784cd15027790a9851c890a0aba6400fa1f8ca2))
+* **cache:** automated cache update - updated addresses ([#1181](https://github.com/bgd-labs/aave-address-book/issues/1181)) ([a546db4](https://github.com/bgd-labs/aave-address-book/commit/a546db48b90f090c0c6be9f42a82b34e9942440e))
+* **cache:** automated cache update - updated addresses ([#1182](https://github.com/bgd-labs/aave-address-book/issues/1182)) ([acb167b](https://github.com/bgd-labs/aave-address-book/commit/acb167b67d7e563034a4e2546b3184e7bf38d44a))
+* **cache:** automated cache update - updated addresses ([#1183](https://github.com/bgd-labs/aave-address-book/issues/1183)) ([3e4217e](https://github.com/bgd-labs/aave-address-book/commit/3e4217ee87042bd70e5cb25bd80681ba8ca75931))
+* **cache:** automated cache update - updated addresses ([#1184](https://github.com/bgd-labs/aave-address-book/issues/1184)) ([8655dac](https://github.com/bgd-labs/aave-address-book/commit/8655dacca0e68074ab207ed62302078b763f2496))
+* **cache:** automated cache update - updated addresses ([#1185](https://github.com/bgd-labs/aave-address-book/issues/1185)) ([e623015](https://github.com/bgd-labs/aave-address-book/commit/e6230156519584332311fb0f76f21b9591167329))
+* ci ([#1186](https://github.com/bgd-labs/aave-address-book/issues/1186)) ([f9902b0](https://github.com/bgd-labs/aave-address-book/commit/f9902b0b5aa01ae0e13cd0f41b2fcfe1d676d7cd))
+* make tests run on ci prs ([#1173](https://github.com/bgd-labs/aave-address-book/issues/1173)) ([e988638](https://github.com/bgd-labs/aave-address-book/commit/e9886380f914180368b104b83310aa9644a9634f))
+* use gh app ([dc0d3c6](https://github.com/bgd-labs/aave-address-book/commit/dc0d3c6b0af996b624bbcaf4a120dc5525dd4e7b))
+
 ## [4.38.2](https://github.com/bgd-labs/aave-address-book/compare/v4.38.1...v4.38.2) (2026-01-07)
 
 
