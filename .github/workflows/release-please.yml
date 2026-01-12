@@ -36,6 +36,7 @@ jobs:
         run: gh pr review --approve "${{ fromJSON(steps.release.outputs.pr).number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
 
       - name: Enable Pull Request Automerge
         if: ${{ steps.release.outputs.prs_created }}
