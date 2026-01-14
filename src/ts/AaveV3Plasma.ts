@@ -283,7 +283,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10220,
+    liquidationBonus: 10200,
   },
   '6': {
     label: 'PT_USDe_15JAN2026 / USDe',
@@ -310,7 +310,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10320,
+    liquidationBonus: 10300,
   },
   '8': {
     label: 'PT_sUSDE_15JAN2026 / USDe',
@@ -322,7 +322,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10220,
+    liquidationBonus: 10200,
   },
   '9': {
     label: 'wrsETH / WETH,wstETH',

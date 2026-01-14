@@ -70,6 +70,7 @@
     "generate:addresses": "tsx scripts/generateAddresses.ts && npm run generate:safe && npm run prettier",
     "start": "tsx scripts/generateABIs.ts && tsx scripts/generateAddresses.ts && npm run prettier",
     "build": "tsup",
+    "build:ui": "npm run build && cd ui && npm run build",
     "test": "vitest run tests",
     "prepublishOnly": "npm run build",
     "test:snapshot": "npx vitest -u"
