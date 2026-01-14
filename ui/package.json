@@ -24,6 +24,7 @@
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "autoprefixer": "^10.4.20",
+    "baseline-browser-mapping": "^2.9.14",
     "eslint": "^9.39.1",
     "eslint-config-next": "16.0.8",
     "postcss": "^8.5.2",
