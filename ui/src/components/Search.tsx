@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { usePathname, useSearchParams, useRouter } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { cn } from '@/utils/cn';
 import { type SearchItem } from '@/types';
 import { Box } from './Box';
@@ -88,18 +88,15 @@ export const Search = ({
 }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const router = useRouter();
 
-  const searchString = searchParams.get('q');
-
-  const [search, setSearch] = useState(searchString || '');
+  const [search, setSearch] = useState('');
   const [results, setResults] = useState<SearchItem[]>([]);
   const [activeIndex, setActiveIndex] = useState(-1);
 
   const refs = useRef<(HTMLAnchorElement | null)[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  const timeoutId = useRef<ReturnType<typeof setInterval> | null>(null);
+  const timeoutId = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isInitialized = useRef(false);
 
   const { uf, cleanedSearchPaths } = useMemo(() => {
     const opts = {
@@ -176,9 +173,15 @@ export const Search = ({
     }
   };
 
+  // Initialize search from URL params on mount
   useEffect(() => {
+    const searchString = searchParams.get('q');
+    if (searchString && !isInitialized.current) {
+      setSearch(searchString);
+      isInitialized.current = true;
+    }
     inputRef.current?.focus();
-  }, []);
+  }, [searchParams]);
 
   useEffect(() => {
     refs.current = refs.current.slice(0, results.length);
@@ -191,21 +194,27 @@ export const Search = ({
     }
   }, [activeIndex]);
 
+  // Debounce search input and update URL + perform search
   useEffect(() => {
     if (timeoutId.current) {
       clearTimeout(timeoutId.current);
     }
+
     timeoutId.current = setTimeout(() => {
-      const url = search ? `${pathname}?q=${search}` : pathname;
-      router.replace(url, { scroll: false });
+      // Update URL without causing navigation - use relative URL to work with basePath
+      const newUrl = search ? `?q=${encodeURIComponent(search)}` : './';
+      window.history.replaceState(null, '', newUrl);
+
+      // Perform the search
       performSearch(search);
     }, DEBOUNCE_TIME);
+
     return () => {
       if (timeoutId.current !== null) {
         clearTimeout(timeoutId.current);
       }
     };
-  }, [search, performSearch, pathname, router]);
+  }, [search, performSearch, pathname]);
 
   return (
     <div className="w-full max-w-2xl mb-10" onKeyDown={handleKeyDown}>
