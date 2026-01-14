@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.40.0](https://github.com/bgd-labs/aave-address-book/compare/v4.39.3...v4.40.0) (2026-01-14)
+
+
+### Features
+
+* ui is automatically deployed to github pages ([#1196](https://github.com/bgd-labs/aave-address-book/issues/1196)) ([ff78c90](https://github.com/bgd-labs/aave-address-book/commit/ff78c9063d1cb300557621bb251a6ff4af16ec1f))
+
 ## [4.39.3](https://github.com/bgd-labs/aave-address-book/compare/v4.39.2...v4.39.3) (2026-01-13)
 
 
