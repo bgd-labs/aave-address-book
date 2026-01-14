@@ -89,14 +89,13 @@ export const Search = ({
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(searchParams.get('q') || '');
   const [results, setResults] = useState<SearchItem[]>([]);
   const [activeIndex, setActiveIndex] = useState(-1);
 
   const refs = useRef<(HTMLAnchorElement | null)[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
   const timeoutId = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const isInitialized = useRef(false);
 
   const { uf, cleanedSearchPaths } = useMemo(() => {
     const opts = {
@@ -173,15 +172,10 @@ export const Search = ({
     }
   };
 
-  // Initialize search from URL params on mount
+  // Focus input on mount
   useEffect(() => {
-    const searchString = searchParams.get('q');
-    if (searchString && !isInitialized.current) {
-      setSearch(searchString);
-      isInitialized.current = true;
-    }
     inputRef.current?.focus();
-  }, [searchParams]);
+  }, []);
 
   useEffect(() => {
     refs.current = refs.current.slice(0, results.length);
