@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname, useSearchParams, useRouter } from 'next/navigation';
 import { cn } from '@/utils/cn';
 import { type SearchItem } from '@/types';
 import { Box } from './Box';
@@ -88,6 +88,7 @@ export const Search = ({
 }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const router = useRouter();
 
   const searchString = searchParams.get('q');
 
@@ -195,11 +196,8 @@ export const Search = ({
       clearTimeout(timeoutId.current);
     }
     timeoutId.current = setTimeout(() => {
-      if (search) {
-        window.history.replaceState(null, '', `${pathname}?q=${search}`);
-      } else {
-        window.history.replaceState(null, '', pathname);
-      }
+      const url = search ? `${pathname}?q=${search}` : pathname;
+      router.replace(url, { scroll: false });
       performSearch(search);
     }, DEBOUNCE_TIME);
     return () => {
@@ -207,7 +205,7 @@ export const Search = ({
         clearTimeout(timeoutId.current);
       }
     };
-  }, [search, performSearch, pathname]);
+  }, [search, performSearch, pathname, router]);
 
   return (
     <div className="w-full max-w-2xl mb-10" onKeyDown={handleKeyDown}>
