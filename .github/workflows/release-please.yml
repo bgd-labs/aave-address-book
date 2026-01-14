@@ -33,14 +33,18 @@ jobs:
 
       - name: Approve pr
         if: ${{ steps.release.outputs.prs_created }}
-        run: gh pr review --approve "${{ fromJSON(steps.release.outputs.pr).number }}"
+        run: |
+          PR_NUMBER=$(echo '${{ steps.release.outputs.pr }}' | jq -r '.number')
+          gh pr review --approve "$PR_NUMBER"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
 
       - name: Enable Pull Request Automerge
         if: ${{ steps.release.outputs.prs_created }}
-        run: gh pr merge --squash --auto "${{ fromJSON(steps.release.outputs.pr).number }}"
+        run: |
+          PR_NUMBER=$(echo '${{ steps.release.outputs.pr }}' | jq -r '.number')
+          gh pr merge --squash --auto "$PR_NUMBER"
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           GH_REPO: ${{ github.repository }}
