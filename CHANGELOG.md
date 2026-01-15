@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.41.0](https://github.com/bgd-labs/aave-address-book/compare/v4.40.2...v4.41.0) (2026-01-15)
+
+
+### Features
+
+* add mantle v3.6 addresses ([#1202](https://github.com/bgd-labs/aave-address-book/issues/1202)) ([04ee5b9](https://github.com/bgd-labs/aave-address-book/commit/04ee5b91ffeac4b7695babb59da3a9c426b8b35e))
+
 ## [4.40.2](https://github.com/bgd-labs/aave-address-book/compare/v4.40.1...v4.40.2) (2026-01-14)
 
 
