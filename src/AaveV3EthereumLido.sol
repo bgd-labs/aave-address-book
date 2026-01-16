@@ -29,11 +29,11 @@ library AaveV3EthereumLido {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xB85B2bFEbeC4F5f401dbf92ac147A3076391fCD5);
 
-  // https://etherscan.io/address/0xEf534b9Ad7F185aff4146750da6bf8Bb7f58020C
-  address internal constant POOL_IMPL = 0xEf534b9Ad7F185aff4146750da6bf8Bb7f58020C;
+  // https://etherscan.io/address/0xC313A383D1838dCDA96f4c97698238F0A5499eA4
+  address internal constant POOL_IMPL = 0xC313A383D1838dCDA96f4c97698238F0A5499eA4;
 
-  // https://etherscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
+  // https://etherscan.io/address/0x6fDdde45f777a4E461B0721a578b169b44579623
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x6fDdde45f777a4E461B0721a578b169b44579623;
 
   // https://etherscan.io/address/0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,12 +45,12 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
   ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
-  // https://etherscan.io/address/0xe7525bfE967412b6bAF2E2310cdeeaeFDD8f86Ed
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0xe7525bfE967412b6bAF2E2310cdeeaeFDD8f86Ed;
+  // https://etherscan.io/address/0x80D786DF608603cCDcC83F5712B97C185A6A948d
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x80D786DF608603cCDcC83F5712B97C185A6A948d;
 
-  // https://etherscan.io/address/0xF9c86ADF20b55b816aDc094bd9C0AeCe7D7E309c
+  // https://etherscan.io/address/0x79f5C4562EC3e85C3103Ce63Ab94E92EFfDd6197
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0xF9c86ADF20b55b816aDc094bd9C0AeCe7D7E309c;
+    0x79f5C4562EC3e85C3103Ce63Ab94E92EFfDd6197;
 
   // https://etherscan.io/address/0xC6cAB8D39D93DC0Bd5986E7Ce5Bb956E30103A43
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -297,18 +297,18 @@ library AaveV3EthereumLidoEModes {
   uint8 internal constant tETH__wstETH = 7;
 }
 library AaveV3EthereumLidoExternalLibraries {
-  // https://etherscan.io/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
-  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
+  // https://etherscan.io/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
+  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
 
-  // https://etherscan.io/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
-  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
+  // https://etherscan.io/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
+  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
 
-  // https://etherscan.io/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
-  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
+  // https://etherscan.io/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
+  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
 
-  // https://etherscan.io/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
-  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
+  // https://etherscan.io/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
+  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
 
-  // https://etherscan.io/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
-  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
+  // https://etherscan.io/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
+  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
 }
