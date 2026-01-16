@@ -31,6 +31,9 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           release-type: node
 
+      - uses: actions/checkout@v6
+        if: ${{ steps.release.outputs.prs_created }}
+
       - name: Approve pr
         if: ${{ steps.release.outputs.prs_created }}
         run: |
