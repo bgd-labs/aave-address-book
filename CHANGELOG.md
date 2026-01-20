@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.41.3](https://github.com/bgd-labs/aave-address-book/compare/v4.41.2...v4.41.3) (2026-01-20)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1212](https://github.com/bgd-labs/aave-address-book/issues/1212)) ([88dac05](https://github.com/bgd-labs/aave-address-book/commit/88dac0547dd12bc93dba1969a30ee8f55253cf9e))
+
+## [4.41.2](https://github.com/bgd-labs/aave-address-book/compare/v4.41.1...v4.41.2) (2026-01-16)
+
+
+### Bug Fixes
+
+* release ([#1208](https://github.com/bgd-labs/aave-address-book/issues/1208)) ([46cda96](https://github.com/bgd-labs/aave-address-book/commit/46cda9679a1cf88fee8cd20b003362611c773d57))
+
+## [4.41.1](https://github.com/bgd-labs/aave-address-book/compare/v4.41.0...v4.41.1) (2026-01-16)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1206](https://github.com/bgd-labs/aave-address-book/issues/1206)) ([2e2878b](https://github.com/bgd-labs/aave-address-book/commit/2e2878b2fafa6d0a02f54c3e54b5f19c898e00e9))
+* ci release fix ([#1205](https://github.com/bgd-labs/aave-address-book/issues/1205)) ([b30c8d0](https://github.com/bgd-labs/aave-address-book/commit/b30c8d0552dff5f190968e25094ac54fb3e8d32a))
+
+## [4.41.0](https://github.com/bgd-labs/aave-address-book/compare/v4.40.2...v4.41.0) (2026-01-15)
+
+
+### Features
+
+* add mantle v3.6 addresses ([#1202](https://github.com/bgd-labs/aave-address-book/issues/1202)) ([04ee5b9](https://github.com/bgd-labs/aave-address-book/commit/04ee5b91ffeac4b7695babb59da3a9c426b8b35e))
+
+## [4.40.2](https://github.com/bgd-labs/aave-address-book/compare/v4.40.1...v4.40.2) (2026-01-14)
+
+
+### Bug Fixes
+
+* ci ([#1200](https://github.com/bgd-labs/aave-address-book/issues/1200)) ([2c3a790](https://github.com/bgd-labs/aave-address-book/commit/2c3a79061a47642b717a8964082707077b7add91))
+
+## [4.40.1](https://github.com/bgd-labs/aave-address-book/compare/v4.40.0...v4.40.1) (2026-01-14)
+
+
+### Bug Fixes
+
+* remove basePath ([#1198](https://github.com/bgd-labs/aave-address-book/issues/1198)) ([0886aa7](https://github.com/bgd-labs/aave-address-book/commit/0886aa78e95ebbde9ca4c0a704abb88e9fb9ba4d))
+
+## [4.40.0](https://github.com/bgd-labs/aave-address-book/compare/v4.39.3...v4.40.0) (2026-01-14)
+
+
+### Features
+
+* ui is automatically deployed to github pages ([#1196](https://github.com/bgd-labs/aave-address-book/issues/1196)) ([ff78c90](https://github.com/bgd-labs/aave-address-book/commit/ff78c9063d1cb300557621bb251a6ff4af16ec1f))
+
 ## [4.39.3](https://github.com/bgd-labs/aave-address-book/compare/v4.39.2...v4.39.3) (2026-01-13)
 
 
