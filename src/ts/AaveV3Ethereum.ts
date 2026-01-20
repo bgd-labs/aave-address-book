@@ -20,11 +20,11 @@ export const ACL_MANAGER = '0xc2aaCf6553D20d1e9d78E365AAba8032af9c85b0';
 // IPoolDataProvider https://etherscan.io/address/0x0a16f2FCC0D44FaE41cc54e079281D84A363bECD
 export const AAVE_PROTOCOL_DATA_PROVIDER = '0x0a16f2FCC0D44FaE41cc54e079281D84A363bECD';
 
-// https://etherscan.io/address/0x97287a4F35E583D924f78AD88DB8AFcE1379189A
-export const POOL_IMPL = '0x97287a4F35E583D924f78AD88DB8AFcE1379189A';
+// https://etherscan.io/address/0x8147b99DF7672A21809c9093E6F6CE1a60F119Bd
+export const POOL_IMPL = '0x8147b99DF7672A21809c9093E6F6CE1a60F119Bd';
 
-// https://etherscan.io/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
-export const POOL_CONFIGURATOR_IMPL = '0x5793FE4de34532F162B4e207aF872729880ec2b6';
+// https://etherscan.io/address/0x6fDdde45f777a4E461B0721a578b169b44579623
+export const POOL_CONFIGURATOR_IMPL = '0x6fDdde45f777a4E461B0721a578b169b44579623';
 
 // https://etherscan.io/address/0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb
 export const DEFAULT_INCENTIVES_CONTROLLER = '0x8164Cc65827dcFe994AB23944CBC90e0aa80bFcb';
@@ -35,11 +35,11 @@ export const EMISSION_MANAGER = '0x223d844fc4B006D67c0cDbd39371A9F73f69d974';
 // ICollector https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
 export const COLLECTOR = '0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c';
 
-// https://etherscan.io/address/0xB76cf0f1d2e1a606c14044607c8c44878AAE7186
-export const DEFAULT_A_TOKEN_IMPL = '0xB76cf0f1d2e1a606c14044607c8c44878AAE7186';
+// https://etherscan.io/address/0xadC45Df3cf1584624C97338BEF33363BF5b97AdA
+export const DEFAULT_A_TOKEN_IMPL = '0xadC45Df3cf1584624C97338BEF33363BF5b97AdA';
 
-// https://etherscan.io/address/0x2b31CaA35900f4c8fe6151cCAF8d0Ea4A89743A1
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0x2b31CaA35900f4c8fe6151cCAF8d0Ea4A89743A1';
+// https://etherscan.io/address/0xb27C52c7f84819e3157993489741cB60786aE330
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xb27C52c7f84819e3157993489741cB60786aE330';
 
 // https://etherscan.io/address/0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E
 export const RISK_STEWARD = '0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E';
@@ -746,11 +746,12 @@ export const E_MODES = {
     liquidationBonus: 10400,
   },
   '3': {
-    label: 'rsETH / wstETH,ETHx',
+    label: 'rsETH / WETH,wstETH,ETHx',
     collateralBitmap: '68719476736',
     collateralAssets: ['0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7'],
-    borrowableBitmap: '2147483650',
+    borrowableBitmap: '2147483651',
     borrowableAssets: [
+      '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
       '0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0',
       '0xA35b1B31Ce002FBF2058D22F30f95D405200A15b',
     ],
@@ -1170,7 +1171,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10290,
+    liquidationBonus: 10260,
   },
   '30': {
     label: 'USDe,PT_USDe_27NOV2025,PT_USDe_5FEB2026 / USDe',
@@ -1186,7 +1187,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10190,
+    liquidationBonus: 10160,
   },
   '31': {
     label: 'sUSDe,PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDC,USDT,USDe,USDtb',
@@ -1207,7 +1208,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10390,
+    liquidationBonus: 10360,
   },
   '32': {
     label: 'sUSDe,PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDe',
@@ -1223,7 +1224,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10290,
+    liquidationBonus: 10260,
   },
   '33': {
     label: 'syrupUSDT / USDT,GHO',
@@ -1242,9 +1243,9 @@ export const E_MODES = {
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
-  FLASHLOAN_LOGIC: '0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB',
-  BORROW_LOGIC: '0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6',
-  LIQUIDATION_LOGIC: '0x36Ae486289bB807C3C79A1427b9c3D934294ef43',
-  POOL_LOGIC: '0xE51B69e5722Bf547866A4d7Bc190c6e81b626806',
-  SUPPLY_LOGIC: '0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168',
+  FLASHLOAN_LOGIC: '0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC',
+  BORROW_LOGIC: '0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635',
+  LIQUIDATION_LOGIC: '0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104',
+  POOL_LOGIC: '0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5',
+  SUPPLY_LOGIC: '0x33654b16A4De97bCE05d7dD06803Bf1066f3123C',
 } as const;

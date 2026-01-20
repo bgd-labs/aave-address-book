@@ -4124,6 +4124,24 @@
     },
     "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
       "name": "SupplyLogic"
+    },
+    "0x8147b99DF7672A21809c9093E6F6CE1a60F119Bd": {
+      "name": "PoolInstance"
+    },
+    "0xadC45Df3cf1584624C97338BEF33363BF5b97AdA": {
+      "name": "ATokenInstance"
+    },
+    "0xb27C52c7f84819e3157993489741cB60786aE330": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xC313A383D1838dCDA96f4c97698238F0A5499eA4": {
+      "name": "PoolInstance"
+    },
+    "0x80D786DF608603cCDcC83F5712B97C185A6A948d": {
+      "name": "ATokenInstance"
+    },
+    "0x79f5C4562EC3e85C3103Ce63Ab94E92EFfDd6197": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "10": {
@@ -10323,6 +10341,9 @@
       "name": "EACAggregatorProxy"
     },
     "0x1D28137b7695d1Dcd122E5Bf0ce7eE92360e83b7": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xAa7B3679db156d3773620eBce98E38Cd87544C0e": {
       "name": "EACAggregatorProxy"
     }
   },

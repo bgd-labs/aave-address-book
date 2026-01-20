@@ -283,7 +283,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10220,
+    liquidationBonus: 10200,
   },
   '6': {
     label: 'PT_USDe_15JAN2026 / USDe',
@@ -310,7 +310,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10320,
+    liquidationBonus: 10300,
   },
   '8': {
     label: 'PT_sUSDE_15JAN2026 / USDe',
@@ -322,7 +322,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10220,
+    liquidationBonus: 10200,
   },
   '9': {
     label: 'wrsETH / WETH,wstETH',
@@ -390,9 +390,9 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8740,
-    liquidationThreshold: 8940,
-    liquidationBonus: 10430,
+    ltv: 8840,
+    liquidationThreshold: 9040,
+    liquidationBonus: 10400,
   },
   '14': {
     label: 'USDe,PT_USDe_15JAN2026,PT_USDe_9APR2026 / USDe',
@@ -406,9 +406,9 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8820,
-    liquidationThreshold: 9020,
-    liquidationBonus: 10330,
+    ltv: 8920,
+    liquidationThreshold: 9120,
+    liquidationBonus: 10300,
   },
   '15': {
     label: 'sUSDe,PT_sUSDE_15JAN2026,PT_sUSDE_9APR2026 / USDT0,USDe',
@@ -425,9 +425,9 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8650,
-    liquidationThreshold: 8850,
-    liquidationBonus: 10530,
+    ltv: 8750,
+    liquidationThreshold: 8950,
+    liquidationBonus: 10500,
   },
   '16': {
     label: 'sUSDe,PT_sUSDE_15JAN2026,PT_sUSDE_9APR2026 / USDe',
@@ -441,9 +441,9 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8820,
-    liquidationThreshold: 9020,
-    liquidationBonus: 10330,
+    ltv: 8920,
+    liquidationThreshold: 9120,
+    liquidationBonus: 10300,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
