@@ -93,6 +93,8 @@ import { governanceConfigBob } from './configs/governance/bob';
 import { bobAddresses } from './configs/networks/bob';
 import { governanceConfigInk, governanceConfigInkWhiteLabel } from './configs/governance/ink';
 import { governanceConfigPlasma } from './configs/governance/plasma';
+import { governanceConfigMegaeth } from './configs/governance/megaeth';
+import { megaethAddresses } from './configs/networks/megaeth';
 
 async function main() {
   // cleanup ts artifacts
@@ -131,6 +133,7 @@ async function main() {
       governanceConfigInk,
       governanceConfigInkWhiteLabel,
       governanceConfigPlasma,
+      governanceConfigMegaeth
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -222,6 +225,7 @@ async function main() {
     inkAddresses,
     inkWhiteLabelAddresses,
     plasmaAddresses,
+    megaethAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
