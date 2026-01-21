@@ -746,11 +746,12 @@ export const E_MODES = {
     liquidationBonus: 10400,
   },
   '3': {
-    label: 'rsETH / wstETH,ETHx',
+    label: 'rsETH / WETH,wstETH,ETHx',
     collateralBitmap: '68719476736',
     collateralAssets: ['0xA1290d69c65A6Fe4DF752f95823fae25cB99e5A7'],
-    borrowableBitmap: '2147483650',
+    borrowableBitmap: '2147483651',
     borrowableAssets: [
+      '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
       '0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0',
       '0xA35b1B31Ce002FBF2058D22F30f95D405200A15b',
     ],
