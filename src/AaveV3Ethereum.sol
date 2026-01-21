@@ -1342,7 +1342,7 @@ library AaveV3EthereumEModes {
 
   uint8 internal constant USDe_sUSDe__USDC_USDT = 2;
 
-  uint8 internal constant rsETH__wstETH_ETHx = 3;
+  uint8 internal constant rsETH__WETH_wstETH_ETHx = 3;
 
   uint8 internal constant LBTC__WBTC = 4;
 
