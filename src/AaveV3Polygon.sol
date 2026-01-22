@@ -29,11 +29,11 @@ library AaveV3Polygon {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x243Aa95cAC2a25651eda86e80bEe66114413c43b);
 
-  // https://polygonscan.com/address/0xe4c734d520d4AD7BaD222098c03672da1b9e4C1d
-  address internal constant POOL_IMPL = 0xe4c734d520d4AD7BaD222098c03672da1b9e4C1d;
+  // https://polygonscan.com/address/0x9187A3DF029394A617f499E72728dA31Ba7891E5
+  address internal constant POOL_IMPL = 0x9187A3DF029394A617f499E72728dA31Ba7891E5;
 
-  // https://polygonscan.com/address/0x5793FE4de34532F162B4e207aF872729880ec2b6
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x5793FE4de34532F162B4e207aF872729880ec2b6;
+  // https://polygonscan.com/address/0x6fDdde45f777a4E461B0721a578b169b44579623
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x6fDdde45f777a4E461B0721a578b169b44579623;
 
   // https://polygonscan.com/address/0x929EC64c34a17401F460460D4B9390518E5B473e
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,12 +45,12 @@ library AaveV3Polygon {
   // https://polygonscan.com/address/0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383
   ICollector internal constant COLLECTOR = ICollector(0xe8599F3cc5D38a9aD6F3684cd5CEa72f10Dbc383);
 
-  // https://polygonscan.com/address/0x17eefF31047d88bC746fD2879Db24E35ECF26127
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0x17eefF31047d88bC746fD2879Db24E35ECF26127;
+  // https://polygonscan.com/address/0xE91da59375C7214cB880af71Ad50f195C33C5981
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xE91da59375C7214cB880af71Ad50f195C33C5981;
 
-  // https://polygonscan.com/address/0xAcD1A67Bd377c6A4397b486F8B9aFAbDe49B8933
+  // https://polygonscan.com/address/0xC0442C25FE517ac37D6a0D485446307D97d24712
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0xAcD1A67Bd377c6A4397b486F8B9aFAbDe49B8933;
+    0xC0442C25FE517ac37D6a0D485446307D97d24712;
 
   // https://polygonscan.com/address/0x1e0A5985D58B45C38598e293189aa5228054629b
   address internal constant RISK_STEWARD = 0x1e0A5985D58B45C38598e293189aa5228054629b;
@@ -563,18 +563,18 @@ library AaveV3PolygonEModes {
   uint8 internal constant WETH_wstETH__WETH = 3;
 }
 library AaveV3PolygonExternalLibraries {
-  // https://polygonscan.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
-  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
+  // https://polygonscan.com/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
+  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
 
-  // https://polygonscan.com/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
-  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
+  // https://polygonscan.com/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
+  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
 
-  // https://polygonscan.com/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
-  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
+  // https://polygonscan.com/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
+  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
 
-  // https://polygonscan.com/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
-  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
+  // https://polygonscan.com/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
+  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
 
-  // https://polygonscan.com/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
-  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
+  // https://polygonscan.com/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
+  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
 }
