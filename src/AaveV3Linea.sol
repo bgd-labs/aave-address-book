@@ -29,11 +29,11 @@ library AaveV3Linea {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x47cd4b507B81cB831669c71c7077f4daF6762FF4);
 
-  // https://lineascan.build/address/0xF1597757c7D88e72E3778606277aaB514166cf3d
-  address internal constant POOL_IMPL = 0xF1597757c7D88e72E3778606277aaB514166cf3d;
+  // https://lineascan.build/address/0xeEdB446124322fA833f9A57985E780494bbDe217
+  address internal constant POOL_IMPL = 0xeEdB446124322fA833f9A57985E780494bbDe217;
 
-  // https://lineascan.build/address/0x10efD3d5C0578c426D2960eeF0153C446Dd6C6FA
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x10efD3d5C0578c426D2960eeF0153C446Dd6C6FA;
+  // https://lineascan.build/address/0x6fDdde45f777a4E461B0721a578b169b44579623
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x6fDdde45f777a4E461B0721a578b169b44579623;
 
   // https://lineascan.build/address/0xc67bb8F2314fA0df50cBa314c6509A7bdAD500C0
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,12 +45,12 @@ library AaveV3Linea {
   // https://lineascan.build/address/0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809
   ICollector internal constant COLLECTOR = ICollector(0x86E2938daE289763D4e09a7e42c5cCcA62Cf9809);
 
-  // https://lineascan.build/address/0x45338b98572C67c28425bBa5Af6120719aAE8492
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0x45338b98572C67c28425bBa5Af6120719aAE8492;
+  // https://lineascan.build/address/0x7b03821ac93Ff55d029A543B86c723aa3Ccb4faC
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x7b03821ac93Ff55d029A543B86c723aa3Ccb4faC;
 
-  // https://lineascan.build/address/0x9B7f1be0bAAE6E9483dd15F37cC92cb769D12f1e
+  // https://lineascan.build/address/0xb5E324e16402deA38D8Aed61c472f414d21F2046
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0x9B7f1be0bAAE6E9483dd15F37cC92cb769D12f1e;
+    0xb5E324e16402deA38D8Aed61c472f414d21F2046;
 
   // https://lineascan.build/address/0x9EEa1Ba822d204077e9f90a92D30432417184587
   address internal constant CONFIG_ENGINE = 0x9EEa1Ba822d204077e9f90a92D30432417184587;
@@ -276,18 +276,18 @@ library AaveV3LineaEModes {
   uint8 internal constant wrsETH__WETH = 4;
 }
 library AaveV3LineaExternalLibraries {
-  // https://lineascan.build/address/0xb5656eCAE657A1bF5f7F5CD06363090A4D2c68e3
-  address internal constant FLASHLOAN_LOGIC = 0xb5656eCAE657A1bF5f7F5CD06363090A4D2c68e3;
+  // https://lineascan.build/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
+  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
 
-  // https://lineascan.build/address/0x46464bCF5BBa29834b57E6c7631fEfb966F427A2
-  address internal constant BORROW_LOGIC = 0x46464bCF5BBa29834b57E6c7631fEfb966F427A2;
+  // https://lineascan.build/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
+  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
 
-  // https://lineascan.build/address/0x22B38029a2B034340B695C6144B3AfD678e109E3
-  address internal constant LIQUIDATION_LOGIC = 0x22B38029a2B034340B695C6144B3AfD678e109E3;
+  // https://lineascan.build/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
+  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
 
-  // https://lineascan.build/address/0xbB6558a80Ed7811bd6d02bD26814e49c349b3acD
-  address internal constant POOL_LOGIC = 0xbB6558a80Ed7811bd6d02bD26814e49c349b3acD;
+  // https://lineascan.build/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
+  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
 
-  // https://lineascan.build/address/0x330a2C27fCE66685d87ebaE4cE9dA71D2F6D1141
-  address internal constant SUPPLY_LOGIC = 0x330a2C27fCE66685d87ebaE4cE9dA71D2F6D1141;
+  // https://lineascan.build/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
+  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
 }
