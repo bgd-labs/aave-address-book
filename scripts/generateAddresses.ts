@@ -33,6 +33,7 @@ import { sonicProtoV3 } from './configs/pools/sonic';
 import { soneiumProtoV3 } from './configs/pools/soneium';
 import { inkProtoV3 } from './configs/pools/ink';
 import { plasmaProtoV3 } from './configs/pools/plasma';
+import { megaEthProtoV3 } from './configs/pools/megaeth';
 import { generateGovernanceLibrary } from './generator/governanceV3Generator';
 import { generateProtocolV2Library } from './generator/protocolV2Generator';
 import { generateProtocolV3Library } from './generator/protocolV3Generator';
@@ -93,8 +94,8 @@ import { governanceConfigBob } from './configs/governance/bob';
 import { bobAddresses } from './configs/networks/bob';
 import { governanceConfigInk, governanceConfigInkWhiteLabel } from './configs/governance/ink';
 import { governanceConfigPlasma } from './configs/governance/plasma';
-import { governanceConfigMegaeth } from './configs/governance/megaeth';
-import { megaethAddresses } from './configs/networks/megaeth';
+import { governanceConfigMegaEth } from './configs/governance/megaeth';
+import { megaEthAddresses } from './configs/networks/megaeth';
 
 async function main() {
   // cleanup ts artifacts
@@ -133,7 +134,7 @@ async function main() {
       governanceConfigInk,
       governanceConfigInkWhiteLabel,
       governanceConfigPlasma,
-      governanceConfigMegaeth
+      governanceConfigMegaEth
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -181,6 +182,7 @@ async function main() {
       soneiumProtoV3,
       inkProtoV3,
       plasmaProtoV3,
+      megaEthProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma].map((config) =>
@@ -225,7 +227,7 @@ async function main() {
     inkAddresses,
     inkWhiteLabelAddresses,
     plasmaAddresses,
-    megaethAddresses,
+    megaEthAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

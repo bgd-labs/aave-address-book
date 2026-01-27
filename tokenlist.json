@@ -5401,6 +5401,26 @@
       }
     },
     {
+      "chainId": 8453,
+      "address": "0x660975730059246A68521a3e2FBD4740173100f5",
+      "name": "Syrup USDC",
+      "decimals": 6,
+      "symbol": "syrupUSDC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 8453,
+      "address": "0xD7424238CcbE7b7198Ab3cFE232e0271E22da7bd",
+      "name": "Aave Base syrupUSDC",
+      "decimals": 6,
+      "symbol": "aBassyrupUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x660975730059246A68521a3e2FBD4740173100f5"
+      }
+    },
+    {
       "chainId": 1088,
       "address": "0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0",
       "name": "DAI Token",
@@ -9647,6 +9667,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 156 },
-  "timestamp": "2026-01-09T10:35:31.553Z"
+  "version": { "major": 3, "minor": 0, "patch": 157 },
+  "timestamp": "2026-01-27T05:08:36.949Z"
 }

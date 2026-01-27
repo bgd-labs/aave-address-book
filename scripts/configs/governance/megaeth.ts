@@ -1,8 +1,8 @@
 import { ChainId } from '@bgd-labs/toolbox';
 import { GovernanceConfig } from '../types';
 
-export const governanceConfigMegaeth: GovernanceConfig = {
-  name: 'Megaeth',
+export const governanceConfigMegaEth: GovernanceConfig = {
+  name: 'MegaEth',
   CHAIN_ID: ChainId.megaeth,
   ADDRESSES: {
     CROSS_CHAIN_CONTROLLER: '0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe',

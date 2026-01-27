@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-library MiscMegaeth {
+library MiscMegaEth {
   // https://megaeth.blockscout.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 }
