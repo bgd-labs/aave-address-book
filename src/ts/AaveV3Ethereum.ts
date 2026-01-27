@@ -1171,7 +1171,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10260,
+    liquidationBonus: 10230,
   },
   '30': {
     label: 'USDe,PT_USDe_27NOV2025,PT_USDe_5FEB2026 / USDe',
@@ -1187,7 +1187,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10160,
+    liquidationBonus: 10130,
   },
   '31': {
     label: 'sUSDe,PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDC,USDT,USDe,USDtb',
@@ -1208,7 +1208,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10360,
+    liquidationBonus: 10330,
   },
   '32': {
     label: 'sUSDe,PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDe',
@@ -1224,7 +1224,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10260,
+    liquidationBonus: 10230,
   },
   '33': {
     label: 'syrupUSDT / USDT,GHO',

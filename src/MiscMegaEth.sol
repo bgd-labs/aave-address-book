@@ -5,4 +5,7 @@ pragma solidity >=0.6.0;
 library MiscMegaEth {
   // https://megaeth.blockscout.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
+
+  // https://megaeth.blockscout.com/address/0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef
+  address internal constant PROTOCOL_GUARDIAN = 0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef;
 }

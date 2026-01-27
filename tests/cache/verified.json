@@ -10297,6 +10297,9 @@
     },
     "0x8d1dac82259FdE48D8086CC42cAa98E825C5B643": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef": {
+      "name": "SafeProxy"
     }
   },
   "5000": {
