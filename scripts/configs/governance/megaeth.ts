@@ -1,0 +1,14 @@
+import { ChainId } from '@bgd-labs/toolbox';
+import { GovernanceConfig } from '../types';
+
+export const governanceConfigMegaEth: GovernanceConfig = {
+  name: 'MegaEth',
+  CHAIN_ID: ChainId.megaeth,
+  ADDRESSES: {
+    CROSS_CHAIN_CONTROLLER: '0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe',
+    PAYLOADS_CONTROLLER: '0x80e11cB895a23C901a990239E5534054C66476B5',
+    PC_DATA_HELPER: '0x9fE056F44510F970d724adA16903ba5D75CC4742',
+    GRANULAR_GUARDIAN: '0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A',
+    GOVERNANCE_GUARDIAN: '0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af',
+  },
+};

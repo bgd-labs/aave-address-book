@@ -55,6 +55,9 @@ library ChainlinkMantle {
   // https://mantlescan.xyz/address/0x80C42686a5F953d3c629cb5a35BCC86B1Ddd21e3
   address internal constant Calculated_cmETH__USD = 0x80C42686a5F953d3c629cb5a35BCC86B1Ddd21e3;
 
+  // https://mantlescan.xyz/address/0xAa7B3679db156d3773620eBce98E38Cd87544C0e
+  address internal constant RSETH__ETH_Exchange_Rate = 0xAa7B3679db156d3773620eBce98E38Cd87544C0e;
+
   // https://mantlescan.xyz/address/0x73b15e19b247263D03D7938f1356304b7B330Ff0
   address internal constant Calculated_FBTC__USD = 0x73b15e19b247263D03D7938f1356304b7B330Ff0;
 

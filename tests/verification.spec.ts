@@ -104,6 +104,13 @@ const knownErrors = {
   5000: {
     '0x14816fC7f443A9C834d30eeA64daD20C4f56fBCD': true, // gnosis safe, not sure why its not verified on etherscan (it is on routescan)
   },
+  4326: {
+    '0x8e7aadB7bBAb02Ad899A13FF9A75571A4866Bf04': true, // TODO: verification issue on blockscout megaETH for logic libs, fix before merging
+    '0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635': true,
+    '0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104': true,
+    '0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5': true,
+    '0x33654b16A4De97bCE05d7dD06803Bf1066f3123C': true,
+  }
 };
 
 describe('verification', {timeout: 500_000}, () => {

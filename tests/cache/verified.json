@@ -4124,6 +4124,24 @@
     },
     "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
       "name": "SupplyLogic"
+    },
+    "0x8147b99DF7672A21809c9093E6F6CE1a60F119Bd": {
+      "name": "PoolInstance"
+    },
+    "0xadC45Df3cf1584624C97338BEF33363BF5b97AdA": {
+      "name": "ATokenInstance"
+    },
+    "0xb27C52c7f84819e3157993489741cB60786aE330": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xC313A383D1838dCDA96f4c97698238F0A5499eA4": {
+      "name": "PoolInstance"
+    },
+    "0x80D786DF608603cCDcC83F5712B97C185A6A948d": {
+      "name": "ATokenInstance"
+    },
+    "0x79f5C4562EC3e85C3103Ce63Ab94E92EFfDd6197": {
+      "name": "VariableDebtTokenInstance"
     }
   },
   "10": {
@@ -6309,6 +6327,33 @@
     },
     "0x454d5D79D979D91FE3204b648E1E3Da8C1157A25": {
       "name": "EACAggregatorProxy"
+    },
+    "0x00d1397960aa97F694E41C3632b74c151a00c33B": {
+      "name": "PoolInstance"
+    },
+    "0x6fDdde45f777a4E461B0721a578b169b44579623": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x7e199Fc666368d95B9EaEfA7D2d8081AcAb74134": {
+      "name": "ATokenInstance"
+    },
+    "0x929CD8EE3d0b6e04324Ee1171D4f594a2c47166d": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC": {
+      "name": "FlashLoanLogic"
+    },
+    "0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635": {
+      "name": "BorrowLogic"
+    },
+    "0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104": {
+      "name": "LiquidationLogic"
+    },
+    "0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5": {
+      "name": "PoolLogic"
+    },
+    "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
+      "name": "SupplyLogic"
     }
   },
   "100": {
@@ -8449,6 +8494,33 @@
     },
     "0x9199b9dF4519a435b4F515E8B43B5C2df4DD0b8c": {
       "name": "EACAggregatorProxy"
+    },
+    "0x9187A3DF029394A617f499E72728dA31Ba7891E5": {
+      "name": "PoolInstance"
+    },
+    "0x6fDdde45f777a4E461B0721a578b169b44579623": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0xE91da59375C7214cB880af71Ad50f195C33C5981": {
+      "name": "ATokenInstance"
+    },
+    "0xC0442C25FE517ac37D6a0D485446307D97d24712": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC": {
+      "name": "FlashLoanLogic"
+    },
+    "0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635": {
+      "name": "BorrowLogic"
+    },
+    "0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104": {
+      "name": "LiquidationLogic"
+    },
+    "0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5": {
+      "name": "PoolLogic"
+    },
+    "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
+      "name": "SupplyLogic"
     }
   },
   "146": {
@@ -10135,6 +10207,101 @@
       "name": "SupplyLogic"
     }
   },
+  "4326": {
+    "0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x80e11cB895a23C901a990239E5534054C66476B5": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9fE056F44510F970d724adA16903ba5D75CC4742": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af": {
+      "name": "SafeProxy"
+    },
+    "0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19": {
+      "name": "Executor"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
+    },
+    "0x46Dcd5F4600319b02649Fd76B55aA6c1035CA478": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x7e324AbC5De01d112AfC03a584966ff199741C28": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xF15D31Bc839A853C9068686043cEc6EC5995DAbB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x421117D7319E96d831972b3F7e970bbfe29C4F21": {
+      "name": "AaveOracle"
+    },
+    "0x390D369C3878F2C5205CFb6Ec7154FfA65491c3D": {
+      "name": "ACLManager"
+    },
+    "0x9588b453A4EE24a420830CB3302195cA7aA3b403": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xdFf435BCcf782f11187D3a4454d96702eD78e092": {
+      "name": "L2PoolInstance"
+    },
+    "0x3eFfeBDD435217A8B485dfaEFDecf766F2a3c05B": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x3691FF69e22c1353df9F8b2c0B1B16aA5fEEc389": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xCfC61568b91414DBf7Bb1a4344C633E1aB214bC9": {
+      "name": "EmissionManager"
+    },
+    "0x7E195b3fc91fDd51A9CD5070cC044602212Ac983": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xdeB02056E277174566A1c425a8e60550142B70A2": {
+      "name": "ATokenInstance"
+    },
+    "0x52Cb5CDf732889be3fd5d5E3A5D589446e060C0D": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x085C658057bD4be6D09b8449e71d78601f9b2303": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0xD8994FE9B79f99CD0b13AE946F5cd866c6d12d00": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x1aB55bBdD5DF0782BBCf73553Af93BC6B29A286B": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0xD63f7658C66B2934Bd234D79D06aEF5290734B30": {
+      "name": "WalletBalanceProvider"
+    },
+    "0xa119F84bC1b8083F5061E4cf53705cBf1065bA27": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0x39bA8C26FC81e6A37a870115940AB32ed25c9ae7": {
+      "name": "L2Encoder"
+    },
+    "0x593B71Fb93CDAC960E093C59eDDE323BFc165A48": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xbcC2Cf1fA3bE94B16061d51970628a87c7Cd5160": {
+      "name": "RiskSteward"
+    },
+    "0x8d1dac82259FdE48D8086CC42cAa98E825C5B643": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef": {
+      "name": "SafeProxy"
+    }
+  },
   "5000": {
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
@@ -10411,6 +10578,9 @@
     },
     "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
       "name": "SupplyLogic"
+    },
+    "0xAa7B3679db156d3773620eBce98E38Cd87544C0e": {
+      "name": "EACAggregatorProxy"
     }
   },
   "8453": {
@@ -11571,6 +11741,45 @@
     },
     "0xF5f4A4de107a46f25CDf08529144B48448dc2f83": {
       "name": "EACAggregatorProxy"
+    },
+    "0xDb578D67A83E94DE73c9e0C14280f804F6C1c3e4": {
+      "name": "L2PoolInstance"
+    },
+    "0x6fDdde45f777a4E461B0721a578b169b44579623": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x273E4B97C3f5280AFf4949Aa19a27fF54968458D": {
+      "name": "ATokenInstance"
+    },
+    "0x7354Dc700A1A2ab9622f2292B60Ca1ceD5B204D0": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x660975730059246A68521a3e2FBD4740173100f5": {
+      "name": "BurnMintERC20"
+    },
+    "0xD7424238CcbE7b7198Ab3cFE232e0271E22da7bd": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x57B8C05ee2cD9d0143eBC21FBD9288C39B9F716c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xa61f10Bb2f05A94728734A8a95673ADbCA9B8397": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC": {
+      "name": "FlashLoanLogic"
+    },
+    "0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635": {
+      "name": "BorrowLogic"
+    },
+    "0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104": {
+      "name": "LiquidationLogic"
+    },
+    "0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5": {
+      "name": "PoolLogic"
+    },
+    "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
+      "name": "SupplyLogic"
     }
   },
   "9745": {
@@ -11918,6 +12127,33 @@
     },
     "0x37f3a8b02BAbe4dd71acb5f214F22C09AFf607f3": {
       "name": "PendlePriceCapAdapter"
+    },
+    "0x2F762D4b63bd3c0e4E13D716E8BC8a49F95dCf09": {
+      "name": "PoolInstance"
+    },
+    "0x6fDdde45f777a4E461B0721a578b169b44579623": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x2fFB265D591809FB1c4bAbA84996507E3C168406": {
+      "name": "ATokenInstance"
+    },
+    "0x179C65343d5d2e21DCB2b4818Ab4ad0c93Fe879a": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC": {
+      "name": "FlashLoanLogic"
+    },
+    "0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635": {
+      "name": "BorrowLogic"
+    },
+    "0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104": {
+      "name": "LiquidationLogic"
+    },
+    "0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5": {
+      "name": "PoolLogic"
+    },
+    "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
+      "name": "SupplyLogic"
     }
   },
   "42161": {
@@ -13495,6 +13731,33 @@
     },
     "0x7537F8c0f8F7E7def07BF9e91e636e55881C7A66": {
       "name": "EACAggregatorProxy"
+    },
+    "0xb76c1a8da369FC39AAdCF39D2446828BcDF6Ee56": {
+      "name": "L2PoolInstance"
+    },
+    "0x6fDdde45f777a4E461B0721a578b169b44579623": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0xadcb7e98A462AA2375D03145083eE68A2148F077": {
+      "name": "ATokenInstance"
+    },
+    "0xC0442C25FE517ac37D6a0D485446307D97d24712": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC": {
+      "name": "FlashLoanLogic"
+    },
+    "0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635": {
+      "name": "BorrowLogic"
+    },
+    "0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104": {
+      "name": "LiquidationLogic"
+    },
+    "0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5": {
+      "name": "PoolLogic"
+    },
+    "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
+      "name": "SupplyLogic"
     }
   },
   "42220": {
@@ -15178,6 +15441,33 @@
     },
     "0xd3ef925bB777ef444934bb1BF4B4ECF0D367bbe4": {
       "name": "AaveV3ConfigEngine"
+    },
+    "0x81af89Ff37bd5ece022139B833F4efabf62E8eEc": {
+      "name": "PoolInstance"
+    },
+    "0x6fDdde45f777a4E461B0721a578b169b44579623": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x88ee4632d8f7fAC47Ebbeb63c4C2875d0974B8B4": {
+      "name": "ATokenInstance"
+    },
+    "0xC0442C25FE517ac37D6a0D485446307D97d24712": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC": {
+      "name": "FlashLoanLogic"
+    },
+    "0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635": {
+      "name": "BorrowLogic"
+    },
+    "0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104": {
+      "name": "LiquidationLogic"
+    },
+    "0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5": {
+      "name": "PoolLogic"
+    },
+    "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
+      "name": "SupplyLogic"
     }
   },
   "57073": {
@@ -15899,6 +16189,33 @@
     },
     "0x5cC678be64bF599B97131092D7CEf6C30a5271aD": {
       "name": "EACAggregatorProxy"
+    },
+    "0xeEdB446124322fA833f9A57985E780494bbDe217": {
+      "name": "L2PoolInstance"
+    },
+    "0x6fDdde45f777a4E461B0721a578b169b44579623": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x7b03821ac93Ff55d029A543B86c723aa3Ccb4faC": {
+      "name": "ATokenInstance"
+    },
+    "0xb5E324e16402deA38D8Aed61c472f414d21F2046": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC": {
+      "name": "FlashLoanLogic"
+    },
+    "0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635": {
+      "name": "BorrowLogic"
+    },
+    "0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104": {
+      "name": "LiquidationLogic"
+    },
+    "0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5": {
+      "name": "PoolLogic"
+    },
+    "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
+      "name": "SupplyLogic"
     }
   },
   "60808": {
