@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.42.0](https://github.com/bgd-labs/aave-address-book/compare/v4.41.8...v4.42.0) (2026-01-28)
+
+
+### Features
+
+* Add MegaEth network ([#1195](https://github.com/bgd-labs/aave-address-book/issues/1195)) ([eb6cd70](https://github.com/bgd-labs/aave-address-book/commit/eb6cd708bed0033d60e2a7e2fca169bc7c5567a0))
+
 ## [4.41.8](https://github.com/bgd-labs/aave-address-book/compare/v4.41.7...v4.41.8) (2026-01-28)
 
 
