@@ -12,6 +12,9 @@ library GhoMantle {
   // https://mantlescan.xyz/address/0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12
   address internal constant GHO_ORACLE = 0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12;
 
+  // https://mantlescan.xyz/address/0xA5Ba213867E175A182a5dd6A9193C6158738105A
+  address internal constant GHO_AAVE_CORE_STEWARD = 0xA5Ba213867E175A182a5dd6A9193C6158738105A;
+
   // https://mantlescan.xyz/address/0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B
   address internal constant GHO_BUCKET_STEWARD = 0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B;
 
