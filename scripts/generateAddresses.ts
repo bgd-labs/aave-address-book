@@ -78,6 +78,7 @@ import { ghoEthereum } from './configs/gho/ethereum';
 import { ghoGnosis } from './configs/gho/gnosis';
 import { ghoInk } from './configs/gho/ink';
 import { ghoPlasma } from './configs/gho/plasma';
+import { ghoMantle } from './configs/gho/mantle';
 import { generateGho } from './generator/ghoGenerator';
 import { governanceConfigLinea } from './configs/governance/linea';
 import { mantleAddresses } from './configs/networks/mantle';
@@ -185,7 +186,7 @@ async function main() {
       megaEthProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma].map((config) =>
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle].map((config) =>
     generateGho(config),
   );
   const umbrellaAddresses = await Promise.all(
