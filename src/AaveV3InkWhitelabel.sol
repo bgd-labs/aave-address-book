@@ -29,11 +29,11 @@ library AaveV3InkWhitelabel {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x96086C25d13943C80Ff9a19791a40Df6aFC08328);
 
-  // https://explorer.inkonchain.com/address/0x2aB3580a805fB10CbAd567212C70e26C1B6769eC
-  address internal constant POOL_IMPL = 0x2aB3580a805fB10CbAd567212C70e26C1B6769eC;
+  // https://explorer.inkonchain.com/address/0x7F6036c2A9244E766F9CcD8dE78D8f79F80e5408
+  address internal constant POOL_IMPL = 0x7F6036c2A9244E766F9CcD8dE78D8f79F80e5408;
 
-  // https://explorer.inkonchain.com/address/0xe892E40C92c2E4D281Be59b2E6300F271d824E75
-  address internal constant POOL_CONFIGURATOR_IMPL = 0xe892E40C92c2E4D281Be59b2E6300F271d824E75;
+  // https://explorer.inkonchain.com/address/0x6fDdde45f777a4E461B0721a578b169b44579623
+  address internal constant POOL_CONFIGURATOR_IMPL = 0x6fDdde45f777a4E461B0721a578b169b44579623;
 
   // https://explorer.inkonchain.com/address/0xD93e3Ae8f69D04d484d1652Ca569d4b0522414DF
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -45,18 +45,18 @@ library AaveV3InkWhitelabel {
   // https://explorer.inkonchain.com/address/0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9
   ICollector internal constant COLLECTOR = ICollector(0x9138E2cAdFEB23AFFdc0419F2912CaB8F135dba9);
 
-  // https://explorer.inkonchain.com/address/0xd8247C7926841337E8adf9fD9E87026992C45062
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0xd8247C7926841337E8adf9fD9E87026992C45062;
+  // https://explorer.inkonchain.com/address/0xb322B2B3cDDEBA3c726A8d0306A86697DE3ECcFf
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xb322B2B3cDDEBA3c726A8d0306A86697DE3ECcFf;
 
-  // https://explorer.inkonchain.com/address/0x294daB91f3539f5a74Ed995a59235eE62A14A345
+  // https://explorer.inkonchain.com/address/0xED9ee9CEC2782a307E8F6ca6E10977B4Ad44358D
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
-    0x294daB91f3539f5a74Ed995a59235eE62A14A345;
+    0xED9ee9CEC2782a307E8F6ca6E10977B4Ad44358D;
 
   // https://explorer.inkonchain.com/address/0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c
   address internal constant L2_ENCODER = 0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c;
 
-  // https://explorer.inkonchain.com/address/0xdD20b904F231d741866C119fd8fF135120C21c35
-  address internal constant CONFIG_ENGINE = 0xdD20b904F231d741866C119fd8fF135120C21c35;
+  // https://explorer.inkonchain.com/address/0xb04280b09F47cFd81906817505F24ceFE1BA86D2
+  address internal constant CONFIG_ENGINE = 0xb04280b09F47cFd81906817505F24ceFE1BA86D2;
 
   // https://explorer.inkonchain.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -248,18 +248,18 @@ library AaveV3InkWhitelabelEModes {
   uint8 internal constant weETH_wrsETH_ezETH__WETH = 1;
 }
 library AaveV3InkWhitelabelExternalLibraries {
-  // https://explorer.inkonchain.com/address/0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB
-  address internal constant FLASHLOAN_LOGIC = 0x5e84CEe2afb7B37d2AB14722C39A7c1C26F5B0BB;
+  // https://explorer.inkonchain.com/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
+  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
 
-  // https://explorer.inkonchain.com/address/0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6
-  address internal constant BORROW_LOGIC = 0xFeD9871528E713B5038c4c44BbE7a315f56cAdc6;
+  // https://explorer.inkonchain.com/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
+  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
 
-  // https://explorer.inkonchain.com/address/0x36Ae486289bB807C3C79A1427b9c3D934294ef43
-  address internal constant LIQUIDATION_LOGIC = 0x36Ae486289bB807C3C79A1427b9c3D934294ef43;
+  // https://explorer.inkonchain.com/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
+  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
 
-  // https://explorer.inkonchain.com/address/0xE51B69e5722Bf547866A4d7Bc190c6e81b626806
-  address internal constant POOL_LOGIC = 0xE51B69e5722Bf547866A4d7Bc190c6e81b626806;
+  // https://explorer.inkonchain.com/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
+  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
 
-  // https://explorer.inkonchain.com/address/0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168
-  address internal constant SUPPLY_LOGIC = 0x034Fd14b9Ae6bB066a1F9f85A55e990b0b25c168;
+  // https://explorer.inkonchain.com/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
+  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
 }

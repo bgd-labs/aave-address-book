@@ -47,8 +47,8 @@ export const RISK_STEWARD = '0x1e0A5985D58B45C38598e293189aa5228054629b';
 // https://polygonscan.com/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
 export const DEBT_SWAP_ADAPTER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034';
 
-// https://polygonscan.com/address/0x16C5AED423C7e40F4EdEDf4023B23f5Ca366ec9f
-export const CONFIG_ENGINE = '0x16C5AED423C7e40F4EdEDf4023B23f5Ca366ec9f';
+// https://polygonscan.com/address/0xB2617F48dab4E5FCa387C6D7Ba69172c23A230Ba
+export const CONFIG_ENGINE = '0xB2617F48dab4E5FCa387C6D7Ba69172c23A230Ba';
 
 // https://polygonscan.com/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x770ef9f4fe897e59daCc474EF11238303F9552b6';

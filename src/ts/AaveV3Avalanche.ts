@@ -56,8 +56,8 @@ export const EDGE_RISK_ORACLE = '0x1273f29204fC102bD4620485B13cFE27a794fF32';
 // https://snowscan.xyz/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
 export const DEBT_SWAP_ADAPTER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034';
 
-// https://snowscan.xyz/address/0xd3ef925bB777ef444934bb1BF4B4ECF0D367bbe4
-export const CONFIG_ENGINE = '0xd3ef925bB777ef444934bb1BF4B4ECF0D367bbe4';
+// https://snowscan.xyz/address/0xaff73fD604d02b689989DfB5a2Da9d91E92B57D0
+export const CONFIG_ENGINE = '0xaff73fD604d02b689989DfB5a2Da9d91E92B57D0';
 
 // https://snowscan.xyz/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x770ef9f4fe897e59daCc474EF11238303F9552b6';
