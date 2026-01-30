@@ -10611,6 +10611,15 @@
     },
     "0xAa7B3679db156d3773620eBce98E38Cd87544C0e": {
       "name": "EACAggregatorProxy"
+    },
+    "0xD7ab0676222c0235e09a06640c422bf97CCC2Bc5": {
+      "name": "ATokenInstance"
+    },
+    "0x604174a3bA9228F3c7823d2E1aAA17A90E06C160": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x70Bf6EC6Fca41a7d08dCBB9909985AC0A4510B5E": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "8453": {
@@ -13794,6 +13803,9 @@
     },
     "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
       "name": "SupplyLogic"
+    },
+    "0x771051750e4de7f178370Bae3AaA58f90778c9B9": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "42220": {
@@ -15788,6 +15800,9 @@
     },
     "0x33654b16A4De97bCE05d7dD06803Bf1066f3123C": {
       "name": "SupplyLogic"
+    },
+    "0xb04280b09F47cFd81906817505F24ceFE1BA86D2": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "59144": {
