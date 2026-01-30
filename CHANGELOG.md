@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.44.0](https://github.com/bgd-labs/aave-address-book/compare/v4.43.0...v4.44.0) (2026-01-30)
+
+
+### Features
+
+* gho on mantle ([#1226](https://github.com/bgd-labs/aave-address-book/issues/1226)) ([#1229](https://github.com/bgd-labs/aave-address-book/issues/1229)) ([dfec96d](https://github.com/bgd-labs/aave-address-book/commit/dfec96df26da9539c5e86d102fef2ecff6e3dfd9))
+
 ## [4.43.0](https://github.com/bgd-labs/aave-address-book/compare/v4.42.0...v4.43.0) (2026-01-30)
 
 
