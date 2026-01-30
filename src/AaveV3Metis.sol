@@ -61,8 +61,8 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9
   address internal constant L2_ENCODER = 0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9;
 
-  // https://explorer.metis.io/address/0x87F4aDD5425f566F156af5074BaD2dFFCd20C594
-  address internal constant CONFIG_ENGINE = 0x87F4aDD5425f566F156af5074BaD2dFFCd20C594;
+  // https://explorer.metis.io/address/0x6A7192c55E9298874e49675A63D5ebb11eD99a66
+  address internal constant CONFIG_ENGINE = 0x6A7192c55E9298874e49675A63D5ebb11eD99a66;
 
   // https://explorer.metis.io/address/0x9E7B73ffD9D2026F3ff4212c29E209E09C8A91F5
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =

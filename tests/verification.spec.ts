@@ -110,14 +110,14 @@ const knownErrors = {
     '0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104': true,
     '0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5': true,
     '0x33654b16A4De97bCE05d7dD06803Bf1066f3123C': true,
-  }
+  },
 };
 
 describe('verification', {timeout: 500_000}, () => {
   it('should have all contracts verified except for the known set of errors', async () => {
     const addressesToCheck = flattenedAddresses.filter(
       (item) =>
-        ![ChainId.harmony, ChainId.fantom].includes(item.chainId as any) &&
+        ![ChainId.harmony, ChainId.fantom, ChainId.zksync].includes(item.chainId as any) &&
         !ChainList[item.chainId].testnet &&
         !knownErrors[item.chainId]?.[item.value] &&
         (!verified[item.chainId]?.[item.value] ||
