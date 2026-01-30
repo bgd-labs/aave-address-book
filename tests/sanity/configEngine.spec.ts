@@ -31,10 +31,9 @@ async function check(addresses: Record<string, any>) {
     engineContract.read.COLLECTOR(),
   ]);
 
-  // uncomment after v3.6 proposal is executed
-  // if (addresses.DEFAULT_A_TOKEN_IMPL) expect(ATOKEN_IMPL).toBe(addresses.DEFAULT_A_TOKEN_IMPL);
-  // if (addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL)
-  //   expect(VTOKEN_IMPL).toBe(addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL);
+  if (addresses.DEFAULT_A_TOKEN_IMPL) expect(ATOKEN_IMPL).toBe(addresses.DEFAULT_A_TOKEN_IMPL);
+  if (addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL)
+    expect(VTOKEN_IMPL).toBe(addresses.DEFAULT_VARIABLE_DEBT_TOKEN_IMPL);
 
   if (addresses.COLLECTOR) expect(COLLECTOR).toBe(addresses.COLLECTOR);
   expect(POOL).toBe(addresses.POOL);

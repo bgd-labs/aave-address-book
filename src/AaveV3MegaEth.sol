@@ -52,8 +52,8 @@ library AaveV3MegaEth {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
     0x52Cb5CDf732889be3fd5d5E3A5D589446e060C0D;
 
-  // https://megaeth.blockscout.com/address/0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0
-  address internal constant CONFIG_ENGINE = 0x54BDcc37c4143f944A3EE51C892a6cBDF305E7a0;
+  // https://megaeth.blockscout.com/address/0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3
+  address internal constant CONFIG_ENGINE = 0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3;
 
   // https://megaeth.blockscout.com/address/0x085C658057bD4be6D09b8449e71d78601f9b2303
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
