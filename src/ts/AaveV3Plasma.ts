@@ -390,9 +390,9 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8920,
-    liquidationThreshold: 9120,
-    liquidationBonus: 10400,
+    ltv: 8950,
+    liquidationThreshold: 9150,
+    liquidationBonus: 10370,
   },
   '14': {
     label: 'USDe,PT_USDe_15JAN2026,PT_USDe_9APR2026 / USDe',
@@ -406,9 +406,9 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9010,
-    liquidationThreshold: 9210,
-    liquidationBonus: 10300,
+    ltv: 9040,
+    liquidationThreshold: 9240,
+    liquidationBonus: 10270,
   },
   '15': {
     label: 'sUSDe,PT_sUSDE_15JAN2026,PT_sUSDE_9APR2026 / USDT0,USDe',
@@ -427,7 +427,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 8840,
     liquidationThreshold: 9040,
-    liquidationBonus: 10500,
+    liquidationBonus: 10470,
   },
   '16': {
     label: 'sUSDe,PT_sUSDE_15JAN2026,PT_sUSDE_9APR2026 / USDe',
@@ -441,9 +441,9 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9010,
-    liquidationThreshold: 9210,
-    liquidationBonus: 10300,
+    ltv: 9040,
+    liquidationThreshold: 9240,
+    liquidationBonus: 10270,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
