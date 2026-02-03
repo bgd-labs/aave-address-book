@@ -37,8 +37,8 @@ export function generateChainlink() {
           // the name is not unique as there are multiple feeds e.g. for USDC / USDC
           // therefore we prefix svr feeds with `SVR_` and suffix the underlying base feed with `_BASE`
           if ((feed as any).secondaryProxyAddress) {
-            acc[`SVR_` + feed.name] = (feed as any).secondaryProxyAddress;
-            acc[`SVR_` + feed.name + '_BASE'] = (feed as any).proxyAddress;
+            acc[feed.name] = (feed as any).secondaryProxyAddress;
+            acc[feed.name + '_BASE'] = (feed as any).proxyAddress;
           } else if (feed.proxyAddress) acc[feed.name] = feed.proxyAddress;
           return acc;
         },

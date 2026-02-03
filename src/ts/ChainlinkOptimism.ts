@@ -128,9 +128,6 @@ export const APE__USD = '0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F';
 // https://optimistic.etherscan.io/address/0x34E0E85CeEc6be6146c4f0115769a29a9539222e
 export const FLOKI__USD = '0x34E0E85CeEc6be6146c4f0115769a29a9539222e';
 
-// https://optimistic.etherscan.io/address/0x4Fe3caF5752AD3EEE3BfC0Bb4D07069E569bc66C
-export const ETHx__ETH = '0x4Fe3caF5752AD3EEE3BfC0Bb4D07069E569bc66C';
-
 // https://optimistic.etherscan.io/address/0x73b8BE3b653c5896BC34fC87cEBC8AcF4Fb7A545
 export const wrsETH_ETH_Exchange_Rate = '0x73b8BE3b653c5896BC34fC87cEBC8AcF4Fb7A545';
 
@@ -427,9 +424,6 @@ export const AVAX__USD = '0x5087Dc69Fd3907a016BD42B38022F7f024140727';
 // https://optimistic.etherscan.io/address/0xe1011160d78a80E2eEBD60C228EEf7af4Dfcd4d7
 export const COMP__USD = '0xe1011160d78a80E2eEBD60C228EEf7af4Dfcd4d7';
 
-// https://optimistic.etherscan.io/address/0xc7D132BeCAbE7Dcc4204841F33bae45841e41D9C
-export const FRAX__USD = '0xc7D132BeCAbE7Dcc4204841F33bae45841e41D9C';
-
 // https://optimistic.etherscan.io/address/0x536944c3A71FEb7c1E5C66Ee37d1a148d8D8f619
 export const JPY__USD = '0x536944c3A71FEb7c1E5C66Ee37d1a148d8D8f619';
 
@@ -456,9 +450,6 @@ export const STRK__USD = '0x8814dEC83E2862A3792A0D6aDFC48CF76Add1890';
 
 // https://optimistic.etherscan.io/address/0x5A9072a995E072fD06D8f1EB95933955FDa53C0a
 export const CELO__USD = '0x5A9072a995E072fD06D8f1EB95933955FDa53C0a';
-
-// https://optimistic.etherscan.io/address/0xB9B16330671067B1b062B9aC2eFd2dB75F03436E
-export const FXS__USD = '0xB9B16330671067B1b062B9aC2eFd2dB75F03436E';
 
 // https://optimistic.etherscan.io/address/0x955b05dD4573dDFAfB47cb78db16B1Fa127E6e71
 export const CVX__USD = '0x955b05dD4573dDFAfB47cb78db16B1Fa127E6e71';

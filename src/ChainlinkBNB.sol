@@ -27,6 +27,12 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x4e5a43A79f53c0a8e83489648Ea7e429278f8b2D
   address internal constant LTC__BNB = 0x4e5a43A79f53c0a8e83489648Ea7e429278f8b2D;
 
+  // https://bscscan.com/address/0x8ECF7dE377F788A813F5215668E282556b35f300
+  address internal constant SVR_BTC__USD = 0x8ECF7dE377F788A813F5215668E282556b35f300;
+
+  // https://bscscan.com/address/0x14Aed7178df8d33755b1c4b8f3CC3e0EAa2B203B
+  address internal constant SVR_BTC__USD_BASE = 0x14Aed7178df8d33755b1c4b8f3CC3e0EAa2B203B;
+
   // https://bscscan.com/address/0xedE67e8dda821090e019Be754A7F61b4129FbF17
   address internal constant USDf__USD = 0xedE67e8dda821090e019Be754A7F61b4129FbF17;
 
@@ -46,11 +52,23 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x1a269eA1b209DA2c12bDCDab22635C9e6C5028B2
   address internal constant SUSDE__USDE_Exchange_Rate = 0x1a269eA1b209DA2c12bDCDab22635C9e6C5028B2;
 
+  // https://bscscan.com/address/0x04C584Ce3EF042f32818ecFEEDC625A353a0960A
+  address internal constant SVR_XVS__USD = 0x04C584Ce3EF042f32818ecFEEDC625A353a0960A;
+
+  // https://bscscan.com/address/0x553a88F6887Bc69d4d8bF07dfcbcE1Bbe442a79a
+  address internal constant SVR_XVS__USD_BASE = 0x553a88F6887Bc69d4d8bF07dfcbcE1Bbe442a79a;
+
   // https://bscscan.com/address/0x2d1AB79D059e21aE519d88F978cAF39d74E31AEB
   address internal constant COIN__USD = 0x2d1AB79D059e21aE519d88F978cAF39d74E31AEB;
 
   // https://bscscan.com/address/0x83B8DF906c631dD7460Ac875Dc02A62db1dcD37A
   address internal constant YUSD_USD_Exchange_Rate = 0x83B8DF906c631dD7460Ac875Dc02A62db1dcD37A;
+
+  // https://bscscan.com/address/0x97E87D0c607Ca16E90073D723FEAd83d3882F4b7
+  address internal constant SVR_UNI__USD = 0x97E87D0c607Ca16E90073D723FEAd83d3882F4b7;
+
+  // https://bscscan.com/address/0xdaE1A1213F01aA158388BB4a37091FCa05D692d6
+  address internal constant SVR_UNI__USD_BASE = 0xdaE1A1213F01aA158388BB4a37091FCa05D692d6;
 
   // https://bscscan.com/address/0x2e1C3b6Fcae47b20Dd343D9354F7B1140a1E6B27
   address internal constant CRV__USD = 0x2e1C3b6Fcae47b20Dd343D9354F7B1140a1E6B27;
@@ -60,6 +78,12 @@ library ChainlinkBNB {
 
   // https://bscscan.com/address/0x25298F020c3CA1392da76Eb7Ac844813b218ccf7
   address internal constant UNI__BNB = 0x25298F020c3CA1392da76Eb7Ac844813b218ccf7;
+
+  // https://bscscan.com/address/0x428f1d3A31E2b648791b875c70A9Ab1aFda4d331
+  address internal constant SVR_SOL__USD = 0x428f1d3A31E2b648791b875c70A9Ab1aFda4d331;
+
+  // https://bscscan.com/address/0xCE3ed5b9AF3a0686EEa8c42dED1D62371d47597e
+  address internal constant SVR_SOL__USD_BASE = 0xCE3ed5b9AF3a0686EEa8c42dED1D62371d47597e;
 
   // https://bscscan.com/address/0xf93b9B23c46331704EC550c24CB4110975057863
   address internal constant solvBTC__BTC = 0xf93b9B23c46331704EC550c24CB4110975057863;
@@ -73,8 +97,20 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x41A292Dced910690b86b99A6cbC2e181dc56De57
   address internal constant LBTC__BTC = 0x41A292Dced910690b86b99A6cbC2e181dc56De57;
 
+  // https://bscscan.com/address/0xF884002406Ac6Fd93FF5C989506220f781A97eEA
+  address internal constant SVR_DOGE__USD = 0xF884002406Ac6Fd93FF5C989506220f781A97eEA;
+
+  // https://bscscan.com/address/0x1281B737f47076DD70a277775E3c17a5e44dcf87
+  address internal constant SVR_DOGE__USD_BASE = 0x1281B737f47076DD70a277775E3c17a5e44dcf87;
+
   // https://bscscan.com/address/0x9a177Bb9f5b6083E962f9e62bD21d4b5660Aeb03
   address internal constant _1INCH__USD = 0x9a177Bb9f5b6083E962f9e62bD21d4b5660Aeb03;
+
+  // https://bscscan.com/address/0xe48a5Fd74d4A5524D76960ef3B52204C0e11fCD1
+  address internal constant SVR_ETH__USD = 0xe48a5Fd74d4A5524D76960ef3B52204C0e11fCD1;
+
+  // https://bscscan.com/address/0x06159da512fBF70cb5562E79C28955cA159F0e3D
+  address internal constant SVR_ETH__USD_BASE = 0x06159da512fBF70cb5562E79C28955cA159F0e3D;
 
   // https://bscscan.com/address/0x1f771B2b1F3c3Db6C7A1d5F38961a49CEcD116dA
   address internal constant CHR__USD = 0x1f771B2b1F3c3Db6C7A1d5F38961a49CEcD116dA;
@@ -92,12 +128,30 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0xBA8683E9c3B1455bE6e18E7768e8cAD95Eb5eD49
   address internal constant DOT__BNB = 0xBA8683E9c3B1455bE6e18E7768e8cAD95Eb5eD49;
 
+  // https://bscscan.com/address/0x3E4E13C77d86d22D63c4062a70E7E89A854d5Ee4
+  address internal constant SVR_USDE__USD = 0x3E4E13C77d86d22D63c4062a70E7E89A854d5Ee4;
+
+  // https://bscscan.com/address/0xA4c286Ca58280B2d54a00f77eFA6F10a38dCbA8c
+  address internal constant SVR_USDE__USD_BASE = 0xA4c286Ca58280B2d54a00f77eFA6F10a38dCbA8c;
+
   // https://bscscan.com/address/0x801A72542E6F2c1A022eC6865600D6872b191308
   address internal constant LISTA__USD = 0x801A72542E6F2c1A022eC6865600D6872b191308;
+
+  // https://bscscan.com/address/0x933458F222023B7E9f0AB2194e30d7ACcfE3603D
+  address internal constant SVR_LINK__USD = 0x933458F222023B7E9f0AB2194e30d7ACcfE3603D;
+
+  // https://bscscan.com/address/0x5063761448577804901448773359da2fAF5d001e
+  address internal constant SVR_LINK__USD_BASE = 0x5063761448577804901448773359da2fAF5d001e;
 
   // https://bscscan.com/address/0xac9962aAb7b8fe63fA3A5065c22D4Dd700B1C658
   address internal constant SYRUPUSDT__USDT_Exchange_Rate =
     0xac9962aAb7b8fe63fA3A5065c22D4Dd700B1C658;
+
+  // https://bscscan.com/address/0xE23e7A572099172048F06298555e5405a36592ef
+  address internal constant SVR_TRX__USD = 0xE23e7A572099172048F06298555e5405a36592ef;
+
+  // https://bscscan.com/address/0xB678E64E287DB572aD35fA076cc450e8c0fA9eA9
+  address internal constant SVR_TRX__USD_BASE = 0xB678E64E287DB572aD35fA076cc450e8c0fA9eA9;
 
   // https://bscscan.com/address/0x817326922c909b16944817c207562B25C4dF16aD
   address internal constant XAG__USD = 0x817326922c909b16944817c207562B25C4dF16aD;
@@ -141,6 +195,12 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0xaD8b4e59A7f25B68945fAf0f3a3EAF027832FFB0
   address internal constant USD1__USD = 0xaD8b4e59A7f25B68945fAf0f3a3EAF027832FFB0;
 
+  // https://bscscan.com/address/0xA59395678BB6a010a7206f46b6dab8A1e7aC7221
+  address internal constant SVR_BNB__USD = 0xA59395678BB6a010a7206f46b6dab8A1e7aC7221;
+
+  // https://bscscan.com/address/0xd5D290Fe2ae6b55F385ab9C14d2CeB91DD3d9022
+  address internal constant SVR_BNB__USD_BASE = 0xd5D290Fe2ae6b55F385ab9C14d2CeB91DD3d9022;
+
   // https://bscscan.com/address/0xD5c40f5144848Bd4EF08a9605d860e727b991513
   address internal constant USDT__BNB = 0xD5c40f5144848Bd4EF08a9605d860e727b991513;
 
@@ -183,6 +243,26 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x47e01580C537Cd47dA339eA3a4aFb5998CCf037C
   address internal constant SPELL__USD = 0x47e01580C537Cd47dA339eA3a4aFb5998CCf037C;
 
+  // https://bscscan.com/address/0x654C08FE9E53A8eC90d8350fB4055D4877693622
+  address internal constant SVR_LTC__USD = 0x654C08FE9E53A8eC90d8350fB4055D4877693622;
+
+  // https://bscscan.com/address/0xbD4Bcf7DCFF34fd67525FceB3992cec53C23892A
+  address internal constant SVR_LTC__USD_BASE = 0xbD4Bcf7DCFF34fd67525FceB3992cec53C23892A;
+
+  // https://bscscan.com/address/0x5A626d35B0eFbb23d6790774f55740557DdDf82D
+  address internal constant AAVE_SVR_ETH__USD = 0x5A626d35B0eFbb23d6790774f55740557DdDf82D;
+
+  // https://bscscan.com/address/0x6E8Ce841A3234Ce137A667047d106080B56EFe6D
+  address internal constant AAVE_SVR_ETH__USD_BASE = 0x6E8Ce841A3234Ce137A667047d106080B56EFe6D;
+
+  // https://bscscan.com/address/0x1672BCA4f27dE77d735381C803c39a3547F56879
+  address internal constant AAVE_SVR_WSTETH__STETH_Exchange_Rate =
+    0x1672BCA4f27dE77d735381C803c39a3547F56879;
+
+  // https://bscscan.com/address/0x2D6Aae650054eA953CFb38CE55b6fD6c2B278B69
+  address internal constant AAVE_SVR_WSTETH__STETH_Exchange_Rate_BASE =
+    0x2D6Aae650054eA953CFb38CE55b6fD6c2B278B69;
+
   // https://bscscan.com/address/0x08CA3ac4dE41F2791e8A247859d637a8977473D7
   address internal constant SUSD1Plus_USD1_Exchange_Rate =
     0x08CA3ac4dE41F2791e8A247859d637a8977473D7;
@@ -211,6 +291,12 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0xD164a1559e78B9e6eacb12B2E627F31d2f603C0f
   address internal constant ezETH__ETH = 0xD164a1559e78B9e6eacb12B2E627F31d2f603C0f;
 
+  // https://bscscan.com/address/0x1A083354421Da4e26D78D55DAfaeBf4CFc541dAf
+  address internal constant SVR_TWT__BNB = 0x1A083354421Da4e26D78D55DAfaeBf4CFc541dAf;
+
+  // https://bscscan.com/address/0x6C28277b9a482F514964642C8E80EAb25D9B16e8
+  address internal constant SVR_TWT__BNB_BASE = 0x6C28277b9a482F514964642C8E80EAb25D9B16e8;
+
   // https://bscscan.com/address/0x337B4889fed5557595c37a45c1BB9b057cC670AE
   address internal constant YETH_ETH_Exchange_Rate = 0x337B4889fed5557595c37a45c1BB9b057cC670AE;
 
@@ -229,8 +315,20 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x06F34EdD61Be3b2Ff3F630B500dF81eeA8312350
   address internal constant ezETH__ETH_Exchange_Rate = 0x06F34EdD61Be3b2Ff3F630B500dF81eeA8312350;
 
+  // https://bscscan.com/address/0x1Fa0D75D5b90d230da2A610F2B1B2Eaf9a44Dd5f
+  address internal constant SVR_AAVE__USD = 0x1Fa0D75D5b90d230da2A610F2B1B2Eaf9a44Dd5f;
+
+  // https://bscscan.com/address/0x5B059cFFFfa80f882A4619d25A118F490D3031F9
+  address internal constant SVR_AAVE__USD_BASE = 0x5B059cFFFfa80f882A4619d25A118F490D3031F9;
+
   // https://bscscan.com/address/0x63A9133cd7c611d6049761038C16f238FddA71d7
   address internal constant INJ__USD = 0x63A9133cd7c611d6049761038C16f238FddA71d7;
+
+  // https://bscscan.com/address/0x9889f7726F0235c8e975BcD9F2256FdF90AfE515
+  address internal constant AAVE_SVR_BTC__USD = 0x9889f7726F0235c8e975BcD9F2256FdF90AfE515;
+
+  // https://bscscan.com/address/0xE0AA38B3655267a05465F2CBD668c924dEC60271
+  address internal constant AAVE_SVR_BTC__USD_BASE = 0xE0AA38B3655267a05465F2CBD668c924dEC60271;
 
   // https://bscscan.com/address/0xea93C82fa07773ed645d8A79eE27041eb867f221
   address internal constant slisBNB__BNB_Exchange_Rate = 0xea93C82fa07773ed645d8A79eE27041eb867f221;
@@ -260,8 +358,20 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0xcBb98864Ef56E9042e7d2efef76141f15731B82f
   address internal constant BUSD__USD = 0xcBb98864Ef56E9042e7d2efef76141f15731B82f;
 
+  // https://bscscan.com/address/0xB82310F6aE632C8c7016D3DbF2a997CA5039292A
+  address internal constant SVR_DAI__USD = 0xB82310F6aE632C8c7016D3DbF2a997CA5039292A;
+
+  // https://bscscan.com/address/0x2aD32213F242f34DbB6e1331CAB21174040060F0
+  address internal constant SVR_DAI__USD_BASE = 0x2aD32213F242f34DbB6e1331CAB21174040060F0;
+
   // https://bscscan.com/address/0x00EdEa5d03E6Cb155662dBF1B00dea5693Be874A
   address internal constant THB__USD = 0x00EdEa5d03E6Cb155662dBF1B00dea5693Be874A;
+
+  // https://bscscan.com/address/0x131AC00f2CFa72dc06fEdE8C594B3E842D0E864a
+  address internal constant SVR_ADA__USD = 0x131AC00f2CFa72dc06fEdE8C594B3E842D0E864a;
+
+  // https://bscscan.com/address/0x7cC357e6d5517b01195Bb341384840BE1685E396
+  address internal constant SVR_ADA__USD_BASE = 0x7cC357e6d5517b01195Bb341384840BE1685E396;
 
   // https://bscscan.com/address/0x8264d6983B219be65C4D62f1c82B3A2999944cF2
   address internal constant XTZ__BNB = 0x8264d6983B219be65C4D62f1c82B3A2999944cF2;
@@ -302,14 +412,34 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x8fCC2d2973e3740c40aF00d030725A429cd24b57
   address internal constant TREE__USD = 0x8fCC2d2973e3740c40aF00d030725A429cd24b57;
 
+  // https://bscscan.com/address/0xbA1b481dba75DA598fcD56668C241c86CfccAA72
+  address internal constant SVR_TUSD__USD = 0xbA1b481dba75DA598fcD56668C241c86CfccAA72;
+
+  // https://bscscan.com/address/0x6A241485a4CB366B23e2e22F0CbcE36D44Df7877
+  address internal constant SVR_TUSD__USD_BASE = 0x6A241485a4CB366B23e2e22F0CbcE36D44Df7877;
+
   // https://bscscan.com/address/0x058316f8Bb13aCD442ee7A216C7b60CFB4Ea1B53
   address internal constant VAI__USD = 0x058316f8Bb13aCD442ee7A216C7b60CFB4Ea1B53;
 
   // https://bscscan.com/address/0x81ca991cEf14e7bFB3fa8cc70303a2DEaEb09A42
   address internal constant Solv_Proof_of_Reserves = 0x81ca991cEf14e7bFB3fa8cc70303a2DEaEb09A42;
 
+  // https://bscscan.com/address/0x31d1b9c8aEAE40deb49320030d1253060d2410BE
+  address internal constant SVR_SUSDE__USDE_Exchange_Rate =
+    0x31d1b9c8aEAE40deb49320030d1253060d2410BE;
+
+  // https://bscscan.com/address/0x39BeCD409EE4283C1E04c61764825Bb465D45c7F
+  address internal constant SVR_SUSDE__USDE_Exchange_Rate_BASE =
+    0x39BeCD409EE4283C1E04c61764825Bb465D45c7F;
+
   // https://bscscan.com/address/0x657e700c66C48c135c4A29c4292908DbdA7aa280
   address internal constant FET__USD = 0x657e700c66C48c135c4A29c4292908DbdA7aa280;
+
+  // https://bscscan.com/address/0x4e3464353E99E7cFB0E53918222411C08ae3606a
+  address internal constant SVR_CAKE__USD = 0x4e3464353E99E7cFB0E53918222411C08ae3606a;
+
+  // https://bscscan.com/address/0x96125CCbE22291dFe02bFAF80b8f74d9f9c3E60A
+  address internal constant SVR_CAKE__USD_BASE = 0x96125CCbE22291dFe02bFAF80b8f74d9f9c3E60A;
 
   // https://bscscan.com/address/0x3f5fc2cb37dA3B351F7EF968d72bE2eC3e1da08e
   address internal constant LISUSD__USD = 0x3f5fc2cb37dA3B351F7EF968d72bE2eC3e1da08e;
@@ -319,6 +449,18 @@ library ChainlinkBNB {
 
   // https://bscscan.com/address/0x964261740356cB4aaD0C3D2003Ce808A4176a46d
   address internal constant CHF__USD = 0x964261740356cB4aaD0C3D2003Ce808A4176a46d;
+
+  // https://bscscan.com/address/0x4214a460F33767e9b5516B694f9948cdeF3EE927
+  address internal constant SVR_FDUSD__USD = 0x4214a460F33767e9b5516B694f9948cdeF3EE927;
+
+  // https://bscscan.com/address/0x3bB95dEA358F6790978931D1b6BE6f803Acc2AeD
+  address internal constant SVR_FDUSD__USD_BASE = 0x3bB95dEA358F6790978931D1b6BE6f803Acc2AeD;
+
+  // https://bscscan.com/address/0xb631F3Cb6B3a5EebF72C97e30c377de061C6a87c
+  address internal constant SVR_USDT__USD = 0xb631F3Cb6B3a5EebF72C97e30c377de061C6a87c;
+
+  // https://bscscan.com/address/0x501e21126486424567f40D490856094D72986E41
+  address internal constant SVR_USDT__USD_BASE = 0x501e21126486424567f40D490856094D72986E41;
 
   // https://bscscan.com/address/0x19995C3f82Ea476ae6c635BBbcb81c43030089eb
   address internal constant WSRUSD_RUSD_Exchange_Rate = 0x19995C3f82Ea476ae6c635BBbcb81c43030089eb;
@@ -335,6 +477,9 @@ library ChainlinkBNB {
 
   // https://bscscan.com/address/0x2d5Fc41d1365fFe13d03d91E82e04Ca878D69f4B
   address internal constant ADA__BNB = 0x2d5Fc41d1365fFe13d03d91E82e04Ca878D69f4B;
+
+  // https://bscscan.com/address/0x2Ab73dc1C8A23bcDDb4850Ff811850E0d2a0c72f
+  address internal constant U__USD = 0x2Ab73dc1C8A23bcDDb4850Ff811850E0d2a0c72f;
 
   // https://bscscan.com/address/0xa3334A9762090E827413A7495AfeCE76F41dFc06
   address internal constant TUSD__USD = 0xa3334A9762090E827413A7495AfeCE76F41dFc06;
@@ -375,6 +520,14 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x84210d9013A30C6ab169e28840A6CC54B60fa042
   address internal constant ICP__USD = 0x84210d9013A30C6ab169e28840A6CC54B60fa042;
 
+  // https://bscscan.com/address/0x71cdD4BD7C42C752325cC7208deC1b3B418F1706
+  address internal constant SVR_xSolvBTC__SolvBTC_Exchange_Rate =
+    0x71cdD4BD7C42C752325cC7208deC1b3B418F1706;
+
+  // https://bscscan.com/address/0x3d0eB83D2c7c944c0278A5240E520C1F472D7577
+  address internal constant SVR_xSolvBTC__SolvBTC_Exchange_Rate_BASE =
+    0x3d0eB83D2c7c944c0278A5240E520C1F472D7577;
+
   // https://bscscan.com/address/0x696B7eA5827548cd35C743A0a05c1f3130196e5e
   address internal constant stBTC_Proof_of_Reserves = 0x696B7eA5827548cd35C743A0a05c1f3130196e5e;
 
@@ -386,6 +539,18 @@ library ChainlinkBNB {
 
   // https://bscscan.com/address/0x3ae518be05e3F7faBf7e3Ace22Af795D7A09c2E5
   address internal constant ASTER__USD = 0x3ae518be05e3F7faBf7e3Ace22Af795D7A09c2E5;
+
+  // https://bscscan.com/address/0xB5543DA4D87D13b736c31b9C2c21F95667E20dF7
+  address internal constant SVR_XRP__USD = 0xB5543DA4D87D13b736c31b9C2c21F95667E20dF7;
+
+  // https://bscscan.com/address/0x3c5E1a4E6ABe23D8D56C7903e91e11af845b6432
+  address internal constant SVR_XRP__USD_BASE = 0x3c5E1a4E6ABe23D8D56C7903e91e11af845b6432;
+
+  // https://bscscan.com/address/0x26d77e724AE4394d7719a2CbF56008f0B3Ae6886
+  address internal constant SVR_FIL__USD = 0x26d77e724AE4394d7719a2CbF56008f0B3Ae6886;
+
+  // https://bscscan.com/address/0x448868F78f0Bab080fd31BdE838225d472378dbE
+  address internal constant SVR_FIL__USD_BASE = 0x448868F78f0Bab080fd31BdE838225d472378dbE;
 
   // https://bscscan.com/address/0xD3F669EF5C364C14d353F46b1D1a048A846e00f1
   address internal constant WLFI__USD = 0xD3F669EF5C364C14d353F46b1D1a048A846e00f1;
@@ -441,6 +606,12 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x0Db8945f9aEf5651fa5bd52314C5aAe78DfDe540
   address internal constant COMP__USD = 0x0Db8945f9aEf5651fa5bd52314C5aAe78DfDe540;
 
+  // https://bscscan.com/address/0x59CD46F53D66F51B2F58d134fB9c279b73668D60
+  address internal constant AAVE_SVR_BNB__USD = 0x59CD46F53D66F51B2F58d134fB9c279b73668D60;
+
+  // https://bscscan.com/address/0x8fd3E788A8cF55C62B5A731ADa7ad8B1d2BFf851
+  address internal constant AAVE_SVR_BNB__USD_BASE = 0x8fd3E788A8cF55C62B5A731ADa7ad8B1d2BFf851;
+
   // https://bscscan.com/address/0xC6A1314E89d01517a90AE4b0d9d5e499A324B283
   address internal constant STONE__ETH_Exchange_Rate = 0xC6A1314E89d01517a90AE4b0d9d5e499A324B283;
 
@@ -462,6 +633,12 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0xB97Ad0E74fa7d920791E90258A6E2085088b4320
   address internal constant USDT__USD = 0xB97Ad0E74fa7d920791E90258A6E2085088b4320;
 
+  // https://bscscan.com/address/0x472750d4112edBf65162F43B1c8F8e92486b6798
+  address internal constant SVR_BCH__USD = 0x472750d4112edBf65162F43B1c8F8e92486b6798;
+
+  // https://bscscan.com/address/0x222A1317cF61ABfA7A8b07DD2539672addEC5C2b
+  address internal constant SVR_BCH__USD_BASE = 0x222A1317cF61ABfA7A8b07DD2539672addEC5C2b;
+
   // https://bscscan.com/address/0xfc76E9445952A3C31369dFd26edfdfb9713DF5Bb
   address internal constant META__USD = 0xfc76E9445952A3C31369dFd26edfdfb9713DF5Bb;
 
@@ -470,6 +647,12 @@ library ChainlinkBNB {
 
   // https://bscscan.com/address/0xcB23da9EA243f53194CBc2380A6d4d9bC046161f
   address internal constant CAKE__BNB = 0xcB23da9EA243f53194CBc2380A6d4d9bC046161f;
+
+  // https://bscscan.com/address/0xEe7Fb910B9C5e80A40106C8f00aD26dE1C94A0c8
+  address internal constant SVR_USD1__USD = 0xEe7Fb910B9C5e80A40106C8f00aD26dE1C94A0c8;
+
+  // https://bscscan.com/address/0x2A89B6962b4Fb66243F9797F1F2d8d2aE1673Ef4
+  address internal constant SVR_USD1__USD_BASE = 0x2A89B6962b4Fb66243F9797F1F2d8d2aE1673Ef4;
 
   // https://bscscan.com/address/0x132d3C0B1D2cEa0BC552588063bdBb210FDeecfA
   address internal constant DAI__USD = 0x132d3C0B1D2cEa0BC552588063bdBb210FDeecfA;
@@ -483,6 +666,18 @@ library ChainlinkBNB {
   // https://bscscan.com/address/0x43d80f616DAf0b0B42a928EeD32147dC59027D41
   address internal constant BCH__USD = 0x43d80f616DAf0b0B42a928EeD32147dC59027D41;
 
+  // https://bscscan.com/address/0x70dFc219Fb289A20EC3431548b30dbE2c653AA9B
+  address internal constant AAVE_SVR_USDT__USD = 0x70dFc219Fb289A20EC3431548b30dbE2c653AA9B;
+
+  // https://bscscan.com/address/0x4C45cf184D62E5a225101F06E24255a62CF2b28F
+  address internal constant AAVE_SVR_USDT__USD_BASE = 0x4C45cf184D62E5a225101F06E24255a62CF2b28F;
+
+  // https://bscscan.com/address/0x7a6B6F81BeDBE9C25893455c985f356E2853C283
+  address internal constant AAVE_SVR_USDC__USD = 0x7a6B6F81BeDBE9C25893455c985f356E2853C283;
+
+  // https://bscscan.com/address/0x7c15aB340495a4D232553E1ebF78A9e6da66e834
+  address internal constant AAVE_SVR_USDC__USD_BASE = 0x7c15aB340495a4D232553E1ebF78A9e6da66e834;
+
   // https://bscscan.com/address/0xF841761481DF19831cCC851A54D8350aE6022583
   address internal constant YFI__BNB = 0xF841761481DF19831cCC851A54D8350aE6022583;
 
@@ -493,6 +688,12 @@ library ChainlinkBNB {
   address
     internal constant Real_Final_Sales_to_Private_Domestic_Purchasers_Percent_Change_Annual_Rate =
     0x266d063Bb9BD7f1CEA6F77573D01d0F9cEbBAB62;
+
+  // https://bscscan.com/address/0x4641327e9aD5df9568AF01363D9E7aEdDDEb33e9
+  address internal constant SVR_USDC__USD = 0x4641327e9aD5df9568AF01363D9E7aEdDDEb33e9;
+
+  // https://bscscan.com/address/0x8068600c8f6d2fB3d44F5B4cb7E7f4Ac47c2c742
+  address internal constant SVR_USDC__USD_BASE = 0x8068600c8f6d2fB3d44F5B4cb7E7f4Ac47c2c742;
 
   // https://bscscan.com/address/0x27Cc356A5891A3Fe6f84D0457dE4d108C6078888
   address internal constant XLM__USD = 0x27Cc356A5891A3Fe6f84D0457dE4d108C6078888;

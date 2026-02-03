@@ -15,6 +15,9 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299
   address internal constant SGD__USD = 0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299;
 
+  // https://polygonscan.com/address/0x5D16dE6F2b0346362186504645808C976158Bd22
+  address internal constant VanEck_SMH_EU_MarketStatus = 0x5D16dE6F2b0346362186504645808C976158Bd22;
+
   // https://polygonscan.com/address/0x218231089Bebb2A31970c3b77E96eCfb3BA006D1
   address internal constant PHP__USD = 0x218231089Bebb2A31970c3b77E96eCfb3BA006D1;
 

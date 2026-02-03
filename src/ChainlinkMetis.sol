@@ -43,9 +43,6 @@ library ChainlinkMetis {
   address internal constant frxETH__ETH_Exchange_Rate_Low =
     0x2aB80F9a26bc87c1359D86DDF89ce331648aE91E;
 
-  // https://explorer.metis.io/address/0x116542f62410Ac122C73ED3bC478937e781c5333
-  address internal constant MIMATIC__USD = 0x116542f62410Ac122C73ED3bC478937e781c5333;
-
   // https://explorer.metis.io/address/0xa7CBaB1722a6631665863d624A81ab4C4eD0e876
   address internal constant frxETH__ETH_Exchange_Rate_High =
     0xa7CBaB1722a6631665863d624A81ab4C4eD0e876;
