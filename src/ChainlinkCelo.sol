@@ -63,6 +63,9 @@ library ChainlinkCelo {
   // https://celoscan.io/address/0x11b7221a0DD025778A95e9E0B87b477522C32E02
   address internal constant ZAR__USD = 0x11b7221a0DD025778A95e9E0B87b477522C32E02;
 
+  // https://celoscan.io/address/0x17B1DD4888E8509C5404768E6004819c82916097
+  address internal constant STCELO__CELO_Exchange_Rate = 0x17B1DD4888E8509C5404768E6004819c82916097;
+
   // https://celoscan.io/address/0x85d4Ec34339478F73c153710B19f2D5C402dce6F
   address internal constant INR__USD = 0x85d4Ec34339478F73c153710B19f2D5C402dce6F;
 

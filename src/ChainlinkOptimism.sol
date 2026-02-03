@@ -138,9 +138,6 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0x34E0E85CeEc6be6146c4f0115769a29a9539222e
   address internal constant FLOKI__USD = 0x34E0E85CeEc6be6146c4f0115769a29a9539222e;
 
-  // https://optimistic.etherscan.io/address/0x4Fe3caF5752AD3EEE3BfC0Bb4D07069E569bc66C
-  address internal constant ETHx__ETH = 0x4Fe3caF5752AD3EEE3BfC0Bb4D07069E569bc66C;
-
   // https://optimistic.etherscan.io/address/0x73b8BE3b653c5896BC34fC87cEBC8AcF4Fb7A545
   address internal constant wrsETH_ETH_Exchange_Rate = 0x73b8BE3b653c5896BC34fC87cEBC8AcF4Fb7A545;
 
@@ -445,9 +442,6 @@ library ChainlinkOptimism {
   // https://optimistic.etherscan.io/address/0xe1011160d78a80E2eEBD60C228EEf7af4Dfcd4d7
   address internal constant COMP__USD = 0xe1011160d78a80E2eEBD60C228EEf7af4Dfcd4d7;
 
-  // https://optimistic.etherscan.io/address/0xc7D132BeCAbE7Dcc4204841F33bae45841e41D9C
-  address internal constant FRAX__USD = 0xc7D132BeCAbE7Dcc4204841F33bae45841e41D9C;
-
   // https://optimistic.etherscan.io/address/0x536944c3A71FEb7c1E5C66Ee37d1a148d8D8f619
   address internal constant JPY__USD = 0x536944c3A71FEb7c1E5C66Ee37d1a148d8D8f619;
 
@@ -474,9 +468,6 @@ library ChainlinkOptimism {
 
   // https://optimistic.etherscan.io/address/0x5A9072a995E072fD06D8f1EB95933955FDa53C0a
   address internal constant CELO__USD = 0x5A9072a995E072fD06D8f1EB95933955FDa53C0a;
-
-  // https://optimistic.etherscan.io/address/0xB9B16330671067B1b062B9aC2eFd2dB75F03436E
-  address internal constant FXS__USD = 0xB9B16330671067B1b062B9aC2eFd2dB75F03436E;
 
   // https://optimistic.etherscan.io/address/0x955b05dD4573dDFAfB47cb78db16B1Fa127E6e71
   address internal constant CVX__USD = 0x955b05dD4573dDFAfB47cb78db16B1Fa127E6e71;

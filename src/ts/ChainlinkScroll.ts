@@ -62,9 +62,6 @@ export const ynETH__ETH_Exchange_Rate = '0xE9C5bedC9dfA8d758a8C2e81482c2e0623301
 // https://scrollscan.com/address/0x3a44916dc37Bb7D73419Fc6492d6d9Dfd8e6ddf7
 export const rsETH__ETH_Exchange_Rate = '0x3a44916dc37Bb7D73419Fc6492d6d9Dfd8e6ddf7';
 
-// https://scrollscan.com/address/0x37f85bbB5366282F9C25e0bdCdbbF8243E594E52
-export const RSETH__ETH = '0x37f85bbB5366282F9C25e0bdCdbbF8243E594E52';
-
 // https://scrollscan.com/address/0x8658273E2f7bc06d3F8462703b8a733204312fF2
 export const CRV__USD = '0x8658273E2f7bc06d3F8462703b8a733204312fF2';
 

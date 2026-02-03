@@ -143,12 +143,6 @@ library ChainlinkLinea {
   address internal constant wstETH__stETH_Exchange_Rate =
     0x3C8A95F2264bB3b52156c766b738357008d87cB7;
 
-  // https://lineascan.build/address/0x85342bC62aadef58f029ab6d17D643949e6F073e
-  address internal constant RSETH__ETH = 0x85342bC62aadef58f029ab6d17D643949e6F073e;
-
   // https://lineascan.build/address/0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C
   address internal constant YBTC_BTC_Exchange_Rate = 0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C;
-
-  // https://lineascan.build/address/0x9ce4473B42a639d010eD741df3CA829E6e480803
-  address internal constant MATIC__USD = 0x9ce4473B42a639d010eD741df3CA829E6e480803;
 }

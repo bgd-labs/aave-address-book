@@ -68,9 +68,6 @@ library ChainlinkScroll {
   // https://scrollscan.com/address/0x3a44916dc37Bb7D73419Fc6492d6d9Dfd8e6ddf7
   address internal constant rsETH__ETH_Exchange_Rate = 0x3a44916dc37Bb7D73419Fc6492d6d9Dfd8e6ddf7;
 
-  // https://scrollscan.com/address/0x37f85bbB5366282F9C25e0bdCdbbF8243E594E52
-  address internal constant RSETH__ETH = 0x37f85bbB5366282F9C25e0bdCdbbF8243E594E52;
-
   // https://scrollscan.com/address/0x8658273E2f7bc06d3F8462703b8a733204312fF2
   address internal constant CRV__USD = 0x8658273E2f7bc06d3F8462703b8a733204312fF2;
 

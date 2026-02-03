@@ -131,13 +131,7 @@ export const rswETH__ETH_Exchange_Rate = '0xB21b5Abc612b8045A33fC421d611D55473E0
 // https://lineascan.build/address/0x3C8A95F2264bB3b52156c766b738357008d87cB7
 export const wstETH__stETH_Exchange_Rate = '0x3C8A95F2264bB3b52156c766b738357008d87cB7';
 
-// https://lineascan.build/address/0x85342bC62aadef58f029ab6d17D643949e6F073e
-export const RSETH__ETH = '0x85342bC62aadef58f029ab6d17D643949e6F073e';
-
 // https://lineascan.build/address/0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C
 export const YBTC_BTC_Exchange_Rate = '0x921000Dd4faA3Dc53F5Ee1c21Ab6e4211B191C5C';
-
-// https://lineascan.build/address/0x9ce4473B42a639d010eD741df3CA829E6e480803
-export const MATIC__USD = '0x9ce4473B42a639d010eD741df3CA829E6e480803';
 
 export const CHAIN_ID = 59144;

@@ -11,6 +11,9 @@ export const VanEck_SMH_MID_iNAV = '0xD2D1BdD220C35C27f70a2bE1eD6462cECAc76384';
 // https://polygonscan.com/address/0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299
 export const SGD__USD = '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299';
 
+// https://polygonscan.com/address/0x5D16dE6F2b0346362186504645808C976158Bd22
+export const VanEck_SMH_EU_MarketStatus = '0x5D16dE6F2b0346362186504645808C976158Bd22';
+
 // https://polygonscan.com/address/0x218231089Bebb2A31970c3b77E96eCfb3BA006D1
 export const PHP__USD = '0x218231089Bebb2A31970c3b77E96eCfb3BA006D1';
 
