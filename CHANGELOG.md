@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.44.2](https://github.com/bgd-labs/aave-address-book/compare/v4.44.1...v4.44.2) (2026-02-03)
+
+
+### Bug Fixes
+
+* aave svr addresses ([#1233](https://github.com/bgd-labs/aave-address-book/issues/1233)) ([6dad8d1](https://github.com/bgd-labs/aave-address-book/commit/6dad8d1717b6adf590395c2b2d2327fe281b2b5a))
+
 ## [4.44.1](https://github.com/bgd-labs/aave-address-book/compare/v4.44.0...v4.44.1) (2026-02-01)
 
 
