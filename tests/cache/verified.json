@@ -4199,6 +4199,12 @@
     },
     "0xC557dcbc32A01a4FBf7b9E3107BAF283f059EDc7": {
       "name": "EACAggregatorProxy"
+    },
+    "0x44Bb2a64bAf94210B583338D3D97b1e8288Bd478": {
+      "name": "DiscountedMKRSKYAdapter"
+    },
+    "0x88025072A7dB6Db5e54E46d43850bb44CA93D6C0": {
+      "name": "OneUSDFixedAdapter"
     }
   },
   "10": {

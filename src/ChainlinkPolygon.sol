@@ -21,9 +21,6 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0x218231089Bebb2A31970c3b77E96eCfb3BA006D1
   address internal constant PHP__USD = 0x218231089Bebb2A31970c3b77E96eCfb3BA006D1;
 
-  // https://polygonscan.com/address/0x2251169D32E7538652a9a8c86bf0c43bFcd956f1
-  address internal constant QUICK__USD = 0x2251169D32E7538652a9a8c86bf0c43bFcd956f1;
-
   // https://polygonscan.com/address/0x2A5e28b4F9Ecb01807CeEC25F7b0fcCafF3F6721
   address internal constant wstPOL_POL_Exchange_Rate = 0x2A5e28b4F9Ecb01807CeEC25F7b0fcCafF3F6721;
 
@@ -124,9 +121,6 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0xbE23a3AA13038CfC28aFd0ECe4FdE379fE7fBfc4
   address internal constant AAVE__ETH = 0xbE23a3AA13038CfC28aFd0ECe4FdE379fE7fBfc4;
 
-  // https://polygonscan.com/address/0x2e48b7924FBe04d575BA229A59b64547d9da16e9
-  address internal constant DPI__USD = 0x2e48b7924FBe04d575BA229A59b64547d9da16e9;
-
   // https://polygonscan.com/address/0x4517002fCD31062Ea38680dF9Ee37f29528C2707
   address internal constant bIBTA_Reserves = 0x4517002fCD31062Ea38680dF9Ee37f29528C2707;
 
@@ -135,9 +129,6 @@ library ChainlinkPolygon {
 
   // https://polygonscan.com/address/0x80a5cb83ce268Ed11a6EFC4bBF0beC39dF35Db21
   address internal constant IDR__USD = 0x80a5cb83ce268Ed11a6EFC4bBF0beC39dF35Db21;
-
-  // https://polygonscan.com/address/0x9cb43aa3D036Cb035a694Ba0AAa91f8875B16cE1
-  address internal constant GNS__USD = 0x9cb43aa3D036Cb035a694Ba0AAa91f8875B16cE1;
 
   // https://polygonscan.com/address/0x73366Fe0AA0Ded304479862808e02506FE556a98
   address internal constant EUR__USD = 0x73366Fe0AA0Ded304479862808e02506FE556a98;
@@ -220,9 +211,6 @@ library ChainlinkPolygon {
 
   // https://polygonscan.com/address/0x5787BefDc0ECd210Dfa948264631CD53E68F7802
   address internal constant LINK__MATIC = 0x5787BefDc0ECd210Dfa948264631CD53E68F7802;
-
-  // https://polygonscan.com/address/0x5b4586C911144A947D7814Fd71fe0872b8334748
-  address internal constant FB__USD = 0x5b4586C911144A947D7814Fd71fe0872b8334748;
 
   // https://polygonscan.com/address/0xA338e0492B2F944E9F8C0653D3AD1484f2657a37
   address internal constant WBTC__ETH = 0xA338e0492B2F944E9F8C0653D3AD1484f2657a37;
@@ -307,9 +295,6 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d
   address internal constant USDT__ETH = 0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d;
 
-  // https://polygonscan.com/address/0x82C9d4E88862f194C2bd874a106a90dDD0D35AAB
-  address internal constant BADGER__ETH = 0x82C9d4E88862f194C2bd874a106a90dDD0D35AAB;
-
   // https://polygonscan.com/address/0x9c371aE34509590E10aB98205d2dF5936A1aD875
   address internal constant AXS__USD = 0x9c371aE34509590E10aB98205d2dF5936A1aD875;
 
@@ -340,9 +325,6 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0xefb7e6be8356cCc6827799B6A7348eE674A80EaE
   address internal constant USDC__ETH = 0xefb7e6be8356cCc6827799B6A7348eE674A80EaE;
 
-  // https://polygonscan.com/address/0x8Ec0eC2e0F26D8253ABf39Db4B1793D76B49C6D5
-  address internal constant OGN__USD = 0x8Ec0eC2e0F26D8253ABf39Db4B1793D76B49C6D5;
-
   // https://polygonscan.com/address/0x327d9822e9932996f55b39F557AEC838313da8b7
   address internal constant BCH__USD = 0x327d9822e9932996f55b39F557AEC838313da8b7;
 
@@ -366,9 +348,6 @@ library ChainlinkPolygon {
 
   // https://polygonscan.com/address/0x3710abeb1A0Fc7C2EC59C26c8DAA7a448ff6125A
   address internal constant SHIB__USD = 0x3710abeb1A0Fc7C2EC59C26c8DAA7a448ff6125A;
-
-  // https://polygonscan.com/address/0x9b88d07B2354eF5f4579690356818e07371c7BeD
-  address internal constant EURA__USD = 0x9b88d07B2354eF5f4579690356818e07371c7BeD;
 
   // https://polygonscan.com/address/0x3D49406EDd4D52Fb7FFd25485f32E073b529C924
   address internal constant SAND__USD = 0x3D49406EDd4D52Fb7FFd25485f32E073b529C924;
@@ -403,9 +382,6 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0xDf3f72Be10d194b58B1BB56f2c4183e661cB2114
   address internal constant ETC__USD = 0xDf3f72Be10d194b58B1BB56f2c4183e661cB2114;
 
-  // https://polygonscan.com/address/0xC70aAF9092De3a4E5000956E672cDf5E996B4610
-  address internal constant DPI__ETH = 0xC70aAF9092De3a4E5000956E672cDf5E996B4610;
-
   // https://polygonscan.com/address/0x03Bc6D9EFed65708D35fDaEfb25E87631a0a3437
   address internal constant ALGO__USD = 0x03Bc6D9EFed65708D35fDaEfb25E87631a0a3437;
 
@@ -435,9 +411,6 @@ library ChainlinkPolygon {
 
   // https://polygonscan.com/address/0xb77fa460604b9C6435A235D057F7D319AC83cb53
   address internal constant LINK__ETH = 0xb77fa460604b9C6435A235D057F7D319AC83cb53;
-
-  // https://polygonscan.com/address/0x4205eC5fd179A843caa7B0860a8eC7D980013359
-  address internal constant DGB__USD = 0x4205eC5fd179A843caa7B0860a8eC7D980013359;
 
   // https://polygonscan.com/address/0xBC08c639e579a391C4228F20d0C29d0690092DF0
   address internal constant ZEC__USD = 0xBC08c639e579a391C4228F20d0C29d0690092DF0;
