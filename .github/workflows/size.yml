@@ -1,0 +1,27 @@
+name: Test
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+
+jobs:
+  pkg-size-report:
+    permissions:
+      pull-requests: write
+    name: Package Size Report
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # pin@v3
+
+      - uses: bgd-labs/github-workflows/.github/actions/setup-node@main
+
+      - name: Package size report
+        uses: bgd-labs/size-limit-action@ae1e75a19db162bbc72bc446f60c4dfd2f27583f # pin@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          min_delta: 2

@@ -258,7 +258,7 @@ export const ASSETS = {
     A_TOKEN: '0x8A458A9dc9048e005d22849F470891b840296619',
     V_TOKEN: '0x6Efc73E54E41b27d2134fF9f98F15550f30DF9B1',
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
-    ORACLE: '0xec1D1B3b0443256cc3860e24a46F108e699484Aa',
+    ORACLE: '0x44Bb2a64bAf94210B583338D3D97b1e8288Bd478',
   },
   SNX: {
     decimals: 18,
@@ -549,7 +549,7 @@ export const ASSETS = {
     A_TOKEN: '0xEc4ef66D4fCeEba34aBB4dE69dB391Bc5476ccc8',
     V_TOKEN: '0xeA85a065F87FE28Aa8Fbf0D6C7deC472b106252C',
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
-    ORACLE: '0x2FA6A78E3d617c1013a22938411602dc9Da98dBa',
+    ORACLE: '0x88025072A7dB6Db5e54E46d43850bb44CA93D6C0',
     STATA_TOKEN: '0x2FE4dC166ADbc0B39EdB47F4324F00A7374daBF7',
   },
   PT_USDe_31JUL2025: {
@@ -1171,7 +1171,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10230,
+    liquidationBonus: 10200,
   },
   '30': {
     label: 'USDe,PT_USDe_27NOV2025,PT_USDe_5FEB2026 / USDe',
@@ -1187,7 +1187,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9400,
     liquidationThreshold: 9600,
-    liquidationBonus: 10130,
+    liquidationBonus: 10100,
   },
   '31': {
     label: 'sUSDe,PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDC,USDT,USDe,USDtb',
@@ -1208,7 +1208,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10330,
+    liquidationBonus: 10300,
   },
   '32': {
     label: 'sUSDe,PT_sUSDE_27NOV2025,PT_sUSDE_5FEB2026 / USDe',
@@ -1224,7 +1224,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10230,
+    liquidationBonus: 10200,
   },
   '33': {
     label: 'syrupUSDT / USDT,GHO',

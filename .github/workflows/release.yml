@@ -2,20 +2,33 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 permissions:
-  contents: write
-  pull-requests: write
+  id-token: write # Required for OIDC trusted publishing
+  contents: write # Needed to create releases
+  pull-requests: write # Needed to create PRs
 
 name: release-please
 jobs:
+  test-solidity:
+    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
+    secrets:
+      ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
+    with:
+      compareLcov: false
+      compareGas: false
+
   test-node:
     uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
     secrets: inherit
 
   release-please:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
-    needs: test-node
+    needs:
+      - test-solidity
+      - test-node
     outputs:
       releaseCreated: ${{ steps.release.outputs.release_created }}
     steps:
@@ -53,8 +66,13 @@ jobs:
           GH_REPO: ${{ github.repository }}
 
   release-node:
-    uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
     if: ${{ needs.release-please.outputs.releaseCreated }}
+    uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
     needs: release-please
-    secrets:
-      NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
+  release-node-alpha:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
+    needs:
+      - test-solidity-pr
+      - test-node-pr
+    uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
