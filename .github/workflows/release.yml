@@ -73,6 +73,6 @@ jobs:
   release-node-alpha:
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
     needs:
-      - test-solidity-pr
-      - test-node-pr
+      - test-solidity
+      - test-node
     uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
