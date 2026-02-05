@@ -4,4 +4,5 @@ export type SearchItem = {
   chainId: number | null;
   link: string;
   searchPath: string;
+  testnet: boolean;
 };
