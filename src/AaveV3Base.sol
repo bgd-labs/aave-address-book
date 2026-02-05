@@ -350,6 +350,9 @@ library AaveV3BaseAssets {
   address internal constant wrsETH_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
 
+  // https://basescan.org/address/0xCa79190050739D27B61e24B085DD4Af990254Ec2
+  address internal constant wrsETH_STATA_TOKEN = 0xCa79190050739D27B61e24B085DD4Af990254Ec2;
+
   // https://basescan.org/address/0xecAc9C5F704e954931349Da37F60E39f515c11c1
   address internal constant LBTC_UNDERLYING = 0xecAc9C5F704e954931349Da37F60E39f515c11c1;
 
@@ -445,6 +448,9 @@ library AaveV3BaseAssets {
   // https://basescan.org/address/0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5
   address internal constant syrupUSDC_INTEREST_RATE_STRATEGY =
     0x86AB1C62A8bf868E1b3E1ab87d587Aba6fbCbDC5;
+
+  // https://basescan.org/address/0xaD785bd1666c582FcAb74088ce73BDF4c9da1f20
+  address internal constant syrupUSDC_STATA_TOKEN = 0xaD785bd1666c582FcAb74088ce73BDF4c9da1f20;
 }
 library AaveV3BaseEModes {
   uint8 internal constant NONE = 0;
