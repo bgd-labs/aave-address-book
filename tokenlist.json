@@ -3501,6 +3501,46 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xAeBf0Bb9f57E89260d57f31AF34eB58657d96Ce0",
+      "name": "PT Ethena USDe 7MAY2026",
+      "decimals": 18,
+      "symbol": "PT-USDe-7MAY2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xE036478Da9A7ed89b56FE39A06e1FC1a4b38D4Ea",
+      "name": "Aave Ethereum PT_USDe_7MAY2026",
+      "decimals": 18,
+      "symbol": "aEthPT_USDe_7MAY2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xAeBf0Bb9f57E89260d57f31AF34eB58657d96Ce0"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x3de0ff76E8b528C092d47b9DaC775931cef80F49",
+      "name": "PT Ethena sUSDE 7MAY2026",
+      "decimals": 18,
+      "symbol": "PT-sUSDE-7MAY2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x81b76ff3FeD28BA0B4a5D4c76Bd5C13Bd0641d86",
+      "name": "Aave Ethereum PT_sUSDe_7MAY2026",
+      "decimals": 18,
+      "symbol": "aEthPT_sUSDe_7MAY2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x3de0ff76E8b528C092d47b9DaC775931cef80F49"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -3574,6 +3614,20 @@
       "decimals": 6,
       "symbol": "stataPolUSDC",
       "tags": ["aaveV3", "staticAT"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+        "underlyingAToken": "0x625E7708f30cA75bfd92586e17077590C60eb4cD"
+      }
+    },
+    {
+      "chainId": 137,
+      "address": "0xE1a9178Ad1815099004145eC00Eb516B54c93CEB",
+      "name": "Wrapped Aave Polygon USDC",
+      "decimals": 6,
+      "symbol": "waPolUSDC",
+      "tags": ["aaveV3", "stataToken"],
       "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
       "extensions": {
         "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
@@ -5286,6 +5340,20 @@
     },
     {
       "chainId": 8453,
+      "address": "0xCa79190050739D27B61e24B085DD4Af990254Ec2",
+      "name": "Wrapped Aave Base wrsETH",
+      "decimals": 18,
+      "symbol": "waBaswrsETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statawrseth.svg",
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0xEDfa23602D0EC14714057867A78d01e94176BEA0",
+        "underlyingAToken": "0x80a94C36747CF51b2FbabDfF045f6D22c1930eD1"
+      }
+    },
+    {
+      "chainId": 8453,
       "address": "0xecAc9C5F704e954931349Da37F60E39f515c11c1",
       "name": "Lombard Staked Bitcoin",
       "decimals": 8,
@@ -5418,6 +5486,19 @@
       "extensions": {
         "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
         "underlying": "0x660975730059246A68521a3e2FBD4740173100f5"
+      }
+    },
+    {
+      "chainId": 8453,
+      "address": "0xaD785bd1666c582FcAb74088ce73BDF4c9da1f20",
+      "name": "Wrapped Aave Base syrupUSDC",
+      "decimals": 6,
+      "symbol": "waBassyrupUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "underlying": "0x660975730059246A68521a3e2FBD4740173100f5",
+        "underlyingAToken": "0xD7424238CcbE7b7198Ab3cFE232e0271E22da7bd"
       }
     },
     {
@@ -9667,6 +9748,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 157 },
-  "timestamp": "2026-01-27T05:08:36.949Z"
+  "version": { "major": 3, "minor": 0, "patch": 158 },
+  "timestamp": "2026-02-05T17:15:43.519Z"
 }
