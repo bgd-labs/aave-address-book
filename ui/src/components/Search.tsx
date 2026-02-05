@@ -7,7 +7,7 @@ import { type SearchItem } from '@/types';
 import { Box } from './Box';
 import { SearchResult } from './SearchResult';
 import uFuzzy from '@leeoniya/ufuzzy';
-import { ChainList } from '@bgd-labs/toolbox';
+import { ChainList } from '@bgd-labs/toolbox/browser';
 
 const SEARCH_LIMIT = 100;
 const DEBOUNCE_TIME = 100;
