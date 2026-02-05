@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.44.5](https://github.com/bgd-labs/aave-address-book/compare/v4.44.4...v4.44.5) (2026-02-05)
+
+
+### Bug Fixes
+
+* remove toolbox from client component ([#1239](https://github.com/bgd-labs/aave-address-book/issues/1239)) ([771513e](https://github.com/bgd-labs/aave-address-book/commit/771513e75c68a0a604fe9931fb1d36371bd78044))
+
 ## [4.44.4](https://github.com/bgd-labs/aave-address-book/compare/v4.44.3...v4.44.4) (2026-02-05)
 
 
