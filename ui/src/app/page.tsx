@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { flattenedAddresses } from '../utils/getAddresses';
 import Image from 'next/image';
 import { Search } from '@/components/Search';
-import { ChainList } from '@bgd-labs/toolbox';
+import { ChainList } from '@bgd-labs/toolbox/browser';
 import { SearchSkeleton } from '@/components/SearchSkeleton';
 import { Footer } from '@/components/Footer';
 import logo from '@/assets/logo.svg';
@@ -22,6 +22,7 @@ const addresses = flattenedAddresses.map((item) => ({
     item.value,
     ...(TAG_MAP[item.path[item.path.length - 1]] ?? []),
   ].join(' '),
+  testnet: !!ChainList[item.chainId as keyof typeof ChainList]?.testnet,
 }));
 
 const searchPaths = addresses.map((a) => a.searchPath);

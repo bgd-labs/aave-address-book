@@ -7,7 +7,6 @@ import { type SearchItem } from '@/types';
 import { Box } from './Box';
 import { SearchResult } from './SearchResult';
 import uFuzzy from '@leeoniya/ufuzzy';
-import { ChainList } from '@bgd-labs/toolbox';
 
 const SEARCH_LIMIT = 100;
 const DEBOUNCE_TIME = 100;
@@ -56,10 +55,8 @@ function createComparator(searchQuery: string, marketNames: Set<string>) {
       if (!aIsEthereum && bIsEthereum) return 1;
     }
 
-    const aInProduction =
-      !ChainList[a.chainId as keyof typeof ChainList]?.testnet;
-    const bInProduction =
-      !ChainList[b.chainId as keyof typeof ChainList]?.testnet;
+    const aInProduction = !a.testnet;
+    const bInProduction = !b.testnet;
 
     if (aInProduction && !bInProduction) return -1;
     if (!aInProduction && bInProduction) return 1;
