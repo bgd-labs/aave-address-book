@@ -22,7 +22,6 @@ const addresses = flattenedAddresses.map((item) => ({
     item.value,
     ...(TAG_MAP[item.path[item.path.length - 1]] ?? []),
   ].join(' '),
-  testnet: !!ChainList[item.chainId as keyof typeof ChainList]?.testnet,
 }));
 
 const searchPaths = addresses.map((a) => a.searchPath);
