@@ -10609,6 +10609,9 @@
     },
     "0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef": {
       "name": "SafeProxy"
+    },
+    "0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "5000": {
