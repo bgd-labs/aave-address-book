@@ -1,19 +1,19 @@
-// https://megaeth.blockscout.com/address/0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe
+// https://mega.etherscan.io/address/0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe
 export const CROSS_CHAIN_CONTROLLER = '0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe';
 
-// IPayloadsControllerCore https://megaeth.blockscout.com/address/0x80e11cB895a23C901a990239E5534054C66476B5
+// IPayloadsControllerCore https://mega.etherscan.io/address/0x80e11cB895a23C901a990239E5534054C66476B5
 export const PAYLOADS_CONTROLLER = '0x80e11cB895a23C901a990239E5534054C66476B5';
 
-// https://megaeth.blockscout.com/address/0x9fE056F44510F970d724adA16903ba5D75CC4742
+// https://mega.etherscan.io/address/0x9fE056F44510F970d724adA16903ba5D75CC4742
 export const PC_DATA_HELPER = '0x9fE056F44510F970d724adA16903ba5D75CC4742';
 
-// https://megaeth.blockscout.com/address/0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A
+// https://mega.etherscan.io/address/0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A
 export const GRANULAR_GUARDIAN = '0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A';
 
-// https://megaeth.blockscout.com/address/0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af
+// https://mega.etherscan.io/address/0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af
 export const GOVERNANCE_GUARDIAN = '0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af';
 
-// https://megaeth.blockscout.com/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
+// https://mega.etherscan.io/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
 export const EXECUTOR_LVL_1 = '0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19';
 
 export const CHAIN_ID = 4326;

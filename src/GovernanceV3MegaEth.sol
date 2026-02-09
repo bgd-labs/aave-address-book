@@ -5,22 +5,22 @@ pragma solidity >=0.6.0;
 import {IPayloadsControllerCore} from './GovernanceV3.sol';
 
 library GovernanceV3MegaEth {
-  // https://megaeth.blockscout.com/address/0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe
+  // https://mega.etherscan.io/address/0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe
   address internal constant CROSS_CHAIN_CONTROLLER = 0x5EE63ACb37AeCDc7e23ACA283098f8ffD9677BBe;
 
-  // https://megaeth.blockscout.com/address/0x80e11cB895a23C901a990239E5534054C66476B5
+  // https://mega.etherscan.io/address/0x80e11cB895a23C901a990239E5534054C66476B5
   IPayloadsControllerCore internal constant PAYLOADS_CONTROLLER =
     IPayloadsControllerCore(0x80e11cB895a23C901a990239E5534054C66476B5);
 
-  // https://megaeth.blockscout.com/address/0x9fE056F44510F970d724adA16903ba5D75CC4742
+  // https://mega.etherscan.io/address/0x9fE056F44510F970d724adA16903ba5D75CC4742
   address internal constant PC_DATA_HELPER = 0x9fE056F44510F970d724adA16903ba5D75CC4742;
 
-  // https://megaeth.blockscout.com/address/0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A
+  // https://mega.etherscan.io/address/0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A
   address internal constant GRANULAR_GUARDIAN = 0x8Fa22D09b13486A40cd6b04398b948AA8bD5853A;
 
-  // https://megaeth.blockscout.com/address/0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af
+  // https://mega.etherscan.io/address/0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af
   address internal constant GOVERNANCE_GUARDIAN = 0x5a578ee1dA2c798Be60036AdDD223Ac164d948Af;
 
-  // https://megaeth.blockscout.com/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
+  // https://mega.etherscan.io/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
   address internal constant EXECUTOR_LVL_1 = 0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19;
 }
