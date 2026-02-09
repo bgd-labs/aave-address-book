@@ -45,12 +45,12 @@ library AaveV3MegaEth {
   // https://mega.etherscan.io/address/0x7E195b3fc91fDd51A9CD5070cC044602212Ac983
   ICollector internal constant COLLECTOR = ICollector(0x7E195b3fc91fDd51A9CD5070cC044602212Ac983);
 
-  // https://mega.etherscan.io/address/0xdeB02056E277174566A1c425a8e60550142B70A2
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xdeB02056E277174566A1c425a8e60550142B70A2;
+  // https://mega.etherscan.io/address/0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05;
 
-  // https://mega.etherscan.io/address/0x52Cb5CDf732889be3fd5d5E3A5D589446e060C0D
+  // https://mega.etherscan.io/address/0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x52Cb5CDf732889be3fd5d5E3A5D589446e060C0D;
+    0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8;
 
   // https://mega.etherscan.io/address/0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3
   address internal constant CONFIG_ENGINE = 0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3;
