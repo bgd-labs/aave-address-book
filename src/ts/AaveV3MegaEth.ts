@@ -11,10 +11,10 @@ export const POOL_CONFIGURATOR = '0xF15D31Bc839A853C9068686043cEc6EC5995DAbB';
 // IAaveOracle https://mega.etherscan.io/address/0x421117D7319E96d831972b3F7e970bbfe29C4F21
 export const ORACLE = '0x421117D7319E96d831972b3F7e970bbfe29C4F21';
 
-// https://megaeth.blockscout.com/address/0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba
+// https://mega.etherscan.io/address/0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba
 export const PRICE_ORACLE_SENTINEL = '0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba';
 
-// https://megaeth.blockscout.com/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
+// https://mega.etherscan.io/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
 export const ACL_ADMIN = '0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19';
 
 // IACLManager https://mega.etherscan.io/address/0x390D369C3878F2C5205CFb6Ec7154FfA65491c3D
@@ -38,10 +38,10 @@ export const EMISSION_MANAGER = '0xCfC61568b91414DBf7Bb1a4344C633E1aB214bC9';
 // ICollector https://mega.etherscan.io/address/0x7E195b3fc91fDd51A9CD5070cC044602212Ac983
 export const COLLECTOR = '0x7E195b3fc91fDd51A9CD5070cC044602212Ac983';
 
-// https://megaeth.blockscout.com/address/0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05
+// https://mega.etherscan.io/address/0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05
 export const DEFAULT_A_TOKEN_IMPL = '0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05';
 
-// https://megaeth.blockscout.com/address/0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8
+// https://mega.etherscan.io/address/0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8
 export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8';
 
 // https://mega.etherscan.io/address/0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3
