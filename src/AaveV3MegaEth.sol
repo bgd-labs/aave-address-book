@@ -18,7 +18,10 @@ library AaveV3MegaEth {
   // https://mega.etherscan.io/address/0x421117D7319E96d831972b3F7e970bbfe29C4F21
   IAaveOracle internal constant ORACLE = IAaveOracle(0x421117D7319E96d831972b3F7e970bbfe29C4F21);
 
-  // https://mega.etherscan.io/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
+  // https://megaeth.blockscout.com/address/0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba
+  address internal constant PRICE_ORACLE_SENTINEL = 0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba;
+
+  // https://megaeth.blockscout.com/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
   address internal constant ACL_ADMIN = 0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19;
 
   // https://mega.etherscan.io/address/0x390D369C3878F2C5205CFb6Ec7154FfA65491c3D
@@ -45,11 +48,11 @@ library AaveV3MegaEth {
   // https://mega.etherscan.io/address/0x7E195b3fc91fDd51A9CD5070cC044602212Ac983
   ICollector internal constant COLLECTOR = ICollector(0x7E195b3fc91fDd51A9CD5070cC044602212Ac983);
 
-  // https://mega.etherscan.io/address/0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05;
+  // https://megaeth.blockscout.com/address/0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05;
 
-  // https://mega.etherscan.io/address/0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  // https://megaeth.blockscout.com/address/0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8;
 
   // https://mega.etherscan.io/address/0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3
@@ -83,9 +86,147 @@ library AaveV3MegaEth {
   // https://mega.etherscan.io/address/0x8d1dac82259FdE48D8086CC42cAa98E825C5B643
   address internal constant DUST_BIN = 0x8d1dac82259FdE48D8086CC42cAa98E825C5B643;
 }
-library AaveV3MegaEthAssets {}
+library AaveV3MegaEthAssets {
+  // https://megaeth.blockscout.com/address/0x4200000000000000000000000000000000000006
+  address internal constant WETH_UNDERLYING = 0x4200000000000000000000000000000000000006;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://megaeth.blockscout.com/address/0xa31E6b433382062e8A1dA41485f7b234D97c3f4d
+  address internal constant WETH_A_TOKEN = 0xa31E6b433382062e8A1dA41485f7b234D97c3f4d;
+
+  // https://megaeth.blockscout.com/address/0x09ADCCC7AF2aBD356c18A4CadF2e5cC250f300E9
+  address internal constant WETH_V_TOKEN = 0x09ADCCC7AF2aBD356c18A4CadF2e5cC250f300E9;
+
+  // https://megaeth.blockscout.com/address/0xcA4e254D95637DE95E2a2F79244b03380d697feD
+  address internal constant WETH_ORACLE = 0xcA4e254D95637DE95E2a2F79244b03380d697feD;
+
+  // https://megaeth.blockscout.com/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://megaeth.blockscout.com/address/0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072
+  address internal constant BTCb_UNDERLYING = 0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072;
+
+  uint8 internal constant BTCb_DECIMALS = 8;
+
+  // https://megaeth.blockscout.com/address/0x0889d59eA7178ee5B71DA01949a5cB42aaFBe337
+  address internal constant BTCb_A_TOKEN = 0x0889d59eA7178ee5B71DA01949a5cB42aaFBe337;
+
+  // https://megaeth.blockscout.com/address/0x15B550784928C5b1A93849CA5d6caA18B2545B6d
+  address internal constant BTCb_V_TOKEN = 0x15B550784928C5b1A93849CA5d6caA18B2545B6d;
+
+  // https://megaeth.blockscout.com/address/0xc6E3007B597f6F5a6330d43053D1EF73cCbbE721
+  address internal constant BTCb_ORACLE = 0xc6E3007B597f6F5a6330d43053D1EF73cCbbE721;
+
+  // https://megaeth.blockscout.com/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant BTCb_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://megaeth.blockscout.com/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb
+  address internal constant USDT0_UNDERLYING = 0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb;
+
+  uint8 internal constant USDT0_DECIMALS = 6;
+
+  // https://megaeth.blockscout.com/address/0xE2283E01a667b512c340f19B499d86fbc885D5Ef
+  address internal constant USDT0_A_TOKEN = 0xE2283E01a667b512c340f19B499d86fbc885D5Ef;
+
+  // https://megaeth.blockscout.com/address/0xB951225133b5eed3D88645E4Bb1360136FF70D9a
+  address internal constant USDT0_V_TOKEN = 0xB951225133b5eed3D88645E4Bb1360136FF70D9a;
+
+  // https://megaeth.blockscout.com/address/0xAe95ff42e16468AB1DfD405c9533C9b67d87d66A
+  address internal constant USDT0_ORACLE = 0xAe95ff42e16468AB1DfD405c9533C9b67d87d66A;
+
+  // https://megaeth.blockscout.com/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant USDT0_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://megaeth.blockscout.com/address/0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7
+  address internal constant USDm_UNDERLYING = 0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7;
+
+  uint8 internal constant USDm_DECIMALS = 18;
+
+  // https://megaeth.blockscout.com/address/0x5dF82810CB4B8f3e0Da3c031cCc9208ee9cF9500
+  address internal constant USDm_A_TOKEN = 0x5dF82810CB4B8f3e0Da3c031cCc9208ee9cF9500;
+
+  // https://megaeth.blockscout.com/address/0x6B408d6c479C304794abC60a4693A3AD2D3c2D0D
+  address internal constant USDm_V_TOKEN = 0x6B408d6c479C304794abC60a4693A3AD2D3c2D0D;
+
+  // https://megaeth.blockscout.com/address/0xe5448B8318493c6e3F72E21e8BDB8242d3299FB5
+  address internal constant USDm_ORACLE = 0xe5448B8318493c6e3F72E21e8BDB8242d3299FB5;
+
+  // https://megaeth.blockscout.com/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant USDm_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://megaeth.blockscout.com/address/0x601aC63637933D88285A025C685AC4e9a92a98dA
+  address internal constant wstETH_UNDERLYING = 0x601aC63637933D88285A025C685AC4e9a92a98dA;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://megaeth.blockscout.com/address/0xaD2de503b5c723371d6B38A5224A2E12E103DfB8
+  address internal constant wstETH_A_TOKEN = 0xaD2de503b5c723371d6B38A5224A2E12E103DfB8;
+
+  // https://megaeth.blockscout.com/address/0x259A9Cd7628f6D15ef384887dd90bb7A0283fEf9
+  address internal constant wstETH_V_TOKEN = 0x259A9Cd7628f6D15ef384887dd90bb7A0283fEf9;
+
+  // https://megaeth.blockscout.com/address/0x376397e34eA968e79DC6F629E6210ba25311a3ce
+  address internal constant wstETH_ORACLE = 0x376397e34eA968e79DC6F629E6210ba25311a3ce;
+
+  // https://megaeth.blockscout.com/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://megaeth.blockscout.com/address/0x4Fc44BE15e9B6E30C1E774E2C87A21D3E8b5403F
+  address internal constant wrsETH_UNDERLYING = 0x4Fc44BE15e9B6E30C1E774E2C87A21D3E8b5403F;
+
+  uint8 internal constant wrsETH_DECIMALS = 18;
+
+  // https://megaeth.blockscout.com/address/0xb8578af311353b44B14bb4480EBB4DE608EC7e1B
+  address internal constant wrsETH_A_TOKEN = 0xb8578af311353b44B14bb4480EBB4DE608EC7e1B;
+
+  // https://megaeth.blockscout.com/address/0xd7B71D855bBAcd3f11F623400bc870AB3448AfF7
+  address internal constant wrsETH_V_TOKEN = 0xd7B71D855bBAcd3f11F623400bc870AB3448AfF7;
+
+  // https://megaeth.blockscout.com/address/0x6356b92Bc636CCe722e0F53DDc24a86baE64216E
+  address internal constant wrsETH_ORACLE = 0x6356b92Bc636CCe722e0F53DDc24a86baE64216E;
+
+  // https://megaeth.blockscout.com/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant wrsETH_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://megaeth.blockscout.com/address/0x09601A65e7de7BC8A19813D263dD9E98bFdC3c57
+  address internal constant ezETH_UNDERLYING = 0x09601A65e7de7BC8A19813D263dD9E98bFdC3c57;
+
+  uint8 internal constant ezETH_DECIMALS = 18;
+
+  // https://megaeth.blockscout.com/address/0x03C99Cce547b1c2E74442b73E6f588A66D19597e
+  address internal constant ezETH_A_TOKEN = 0x03C99Cce547b1c2E74442b73E6f588A66D19597e;
+
+  // https://megaeth.blockscout.com/address/0x1505f48Bd4db0fF8B28817D2C0Fb95Abcb8eEbbc
+  address internal constant ezETH_V_TOKEN = 0x1505f48Bd4db0fF8B28817D2C0Fb95Abcb8eEbbc;
+
+  // https://megaeth.blockscout.com/address/0xd7Da71D3acf07C604A925799B0b48E2Ec607584D
+  address internal constant ezETH_ORACLE = 0xd7Da71D3acf07C604A925799B0b48E2Ec607584D;
+
+  // https://megaeth.blockscout.com/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant ezETH_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+}
 library AaveV3MegaEthEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant WETH__USDT0_USDm = 1;
+
+  uint8 internal constant BTCb__USDT0_USDm = 2;
+
+  uint8 internal constant wstETH__USDT0_USDm = 3;
+
+  uint8 internal constant wstETH__WETH = 4;
+
+  uint8 internal constant wrsETH__WETH = 5;
+
+  uint8 internal constant ezETH__WETH = 6;
 }
 library AaveV3MegaEthExternalLibraries {
   // https://mega.etherscan.io/address/0x8e7aadB7bBAb02Ad899A13FF9A75571A4866Bf04

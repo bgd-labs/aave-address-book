@@ -11,7 +11,10 @@ export const POOL_CONFIGURATOR = '0xF15D31Bc839A853C9068686043cEc6EC5995DAbB';
 // IAaveOracle https://mega.etherscan.io/address/0x421117D7319E96d831972b3F7e970bbfe29C4F21
 export const ORACLE = '0x421117D7319E96d831972b3F7e970bbfe29C4F21';
 
-// https://mega.etherscan.io/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
+// https://megaeth.blockscout.com/address/0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba
+export const PRICE_ORACLE_SENTINEL = '0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba';
+
+// https://megaeth.blockscout.com/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
 export const ACL_ADMIN = '0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19';
 
 // IACLManager https://mega.etherscan.io/address/0x390D369C3878F2C5205CFb6Ec7154FfA65491c3D
@@ -35,11 +38,11 @@ export const EMISSION_MANAGER = '0xCfC61568b91414DBf7Bb1a4344C633E1aB214bC9';
 // ICollector https://mega.etherscan.io/address/0x7E195b3fc91fDd51A9CD5070cC044602212Ac983
 export const COLLECTOR = '0x7E195b3fc91fDd51A9CD5070cC044602212Ac983';
 
-// https://mega.etherscan.io/address/0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05
-export const DEFAULT_A_TOKEN_IMPL_REV_1 = '0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05';
+// https://megaeth.blockscout.com/address/0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05
+export const DEFAULT_A_TOKEN_IMPL = '0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05';
 
-// https://mega.etherscan.io/address/0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8
-export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 = '0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8';
+// https://megaeth.blockscout.com/address/0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8
+export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8';
 
 // https://mega.etherscan.io/address/0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3
 export const CONFIG_ENGINE = '0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3';
@@ -72,8 +75,154 @@ export const RISK_STEWARD = '0xbcC2Cf1fA3bE94B16061d51970628a87c7Cd5160';
 export const DUST_BIN = '0x8d1dac82259FdE48D8086CC42cAa98E825C5B643';
 
 export const CHAIN_ID = 4326;
-export const ASSETS = {} as const;
-export const E_MODES = {} as const;
+export const ASSETS = {
+  WETH: {
+    decimals: 18,
+    id: 0,
+    UNDERLYING: '0x4200000000000000000000000000000000000006',
+    A_TOKEN: '0xa31E6b433382062e8A1dA41485f7b234D97c3f4d',
+    V_TOKEN: '0x09ADCCC7AF2aBD356c18A4CadF2e5cC250f300E9',
+    INTEREST_RATE_STRATEGY: '0x5cC4f782cFe249286476A7eFfD9D7bd215768194',
+    ORACLE: '0xcA4e254D95637DE95E2a2F79244b03380d697feD',
+  },
+  BTCb: {
+    decimals: 8,
+    id: 1,
+    UNDERLYING: '0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072',
+    A_TOKEN: '0x0889d59eA7178ee5B71DA01949a5cB42aaFBe337',
+    V_TOKEN: '0x15B550784928C5b1A93849CA5d6caA18B2545B6d',
+    INTEREST_RATE_STRATEGY: '0x5cC4f782cFe249286476A7eFfD9D7bd215768194',
+    ORACLE: '0xc6E3007B597f6F5a6330d43053D1EF73cCbbE721',
+  },
+  USDT0: {
+    decimals: 6,
+    id: 2,
+    UNDERLYING: '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
+    A_TOKEN: '0xE2283E01a667b512c340f19B499d86fbc885D5Ef',
+    V_TOKEN: '0xB951225133b5eed3D88645E4Bb1360136FF70D9a',
+    INTEREST_RATE_STRATEGY: '0x5cC4f782cFe249286476A7eFfD9D7bd215768194',
+    ORACLE: '0xAe95ff42e16468AB1DfD405c9533C9b67d87d66A',
+  },
+  USDm: {
+    decimals: 18,
+    id: 3,
+    UNDERLYING: '0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7',
+    A_TOKEN: '0x5dF82810CB4B8f3e0Da3c031cCc9208ee9cF9500',
+    V_TOKEN: '0x6B408d6c479C304794abC60a4693A3AD2D3c2D0D',
+    INTEREST_RATE_STRATEGY: '0x5cC4f782cFe249286476A7eFfD9D7bd215768194',
+    ORACLE: '0xe5448B8318493c6e3F72E21e8BDB8242d3299FB5',
+  },
+  wstETH: {
+    decimals: 18,
+    id: 4,
+    UNDERLYING: '0x601aC63637933D88285A025C685AC4e9a92a98dA',
+    A_TOKEN: '0xaD2de503b5c723371d6B38A5224A2E12E103DfB8',
+    V_TOKEN: '0x259A9Cd7628f6D15ef384887dd90bb7A0283fEf9',
+    INTEREST_RATE_STRATEGY: '0x5cC4f782cFe249286476A7eFfD9D7bd215768194',
+    ORACLE: '0x376397e34eA968e79DC6F629E6210ba25311a3ce',
+  },
+  wrsETH: {
+    decimals: 18,
+    id: 5,
+    UNDERLYING: '0x4Fc44BE15e9B6E30C1E774E2C87A21D3E8b5403F',
+    A_TOKEN: '0xb8578af311353b44B14bb4480EBB4DE608EC7e1B',
+    V_TOKEN: '0xd7B71D855bBAcd3f11F623400bc870AB3448AfF7',
+    INTEREST_RATE_STRATEGY: '0x5cC4f782cFe249286476A7eFfD9D7bd215768194',
+    ORACLE: '0x6356b92Bc636CCe722e0F53DDc24a86baE64216E',
+  },
+  ezETH: {
+    decimals: 18,
+    id: 6,
+    UNDERLYING: '0x09601A65e7de7BC8A19813D263dD9E98bFdC3c57',
+    A_TOKEN: '0x03C99Cce547b1c2E74442b73E6f588A66D19597e',
+    V_TOKEN: '0x1505f48Bd4db0fF8B28817D2C0Fb95Abcb8eEbbc',
+    INTEREST_RATE_STRATEGY: '0x5cC4f782cFe249286476A7eFfD9D7bd215768194',
+    ORACLE: '0xd7Da71D3acf07C604A925799B0b48E2Ec607584D',
+  },
+} as const;
+export const E_MODES = {
+  '1': {
+    label: 'WETH / USDT0,USDm',
+    collateralBitmap: '1',
+    collateralAssets: ['0x4200000000000000000000000000000000000006'],
+    borrowableBitmap: '12',
+    borrowableAssets: [
+      '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
+      '0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 8050,
+    liquidationThreshold: 8300,
+    liquidationBonus: 10550,
+  },
+  '2': {
+    label: 'BTCb / USDT0,USDm',
+    collateralBitmap: '2',
+    collateralAssets: ['0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072'],
+    borrowableBitmap: '12',
+    borrowableAssets: [
+      '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
+      '0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 7000,
+    liquidationThreshold: 7500,
+    liquidationBonus: 10650,
+  },
+  '3': {
+    label: 'wstETH / USDT0,USDm',
+    collateralBitmap: '16',
+    collateralAssets: ['0x601aC63637933D88285A025C685AC4e9a92a98dA'],
+    borrowableBitmap: '12',
+    borrowableAssets: [
+      '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
+      '0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 7500,
+    liquidationThreshold: 7900,
+    liquidationBonus: 10650,
+  },
+  '4': {
+    label: 'wstETH / WETH',
+    collateralBitmap: '16',
+    collateralAssets: ['0x601aC63637933D88285A025C685AC4e9a92a98dA'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0x4200000000000000000000000000000000000006'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 9400,
+    liquidationThreshold: 9600,
+    liquidationBonus: 10100,
+  },
+  '5': {
+    label: 'wrsETH / WETH',
+    collateralBitmap: '32',
+    collateralAssets: ['0x4Fc44BE15e9B6E30C1E774E2C87A21D3E8b5403F'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0x4200000000000000000000000000000000000006'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+  '6': {
+    label: 'ezETH / WETH',
+    collateralBitmap: '64',
+    collateralAssets: ['0x09601A65e7de7BC8A19813D263dD9E98bFdC3c57'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0x4200000000000000000000000000000000000006'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10100,
+  },
+} as const;
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x8e7aadB7bBAb02Ad899A13FF9A75571A4866Bf04',
   BORROW_LOGIC: '0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635',
