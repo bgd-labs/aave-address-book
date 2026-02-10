@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.44.11](https://github.com/bgd-labs/aave-address-book/compare/v4.44.10...v4.44.11) (2026-02-10)
+
+
+### Bug Fixes
+
+* MegaEth explorer to etherscan ([#1250](https://github.com/bgd-labs/aave-address-book/issues/1250)) ([80ce37c](https://github.com/bgd-labs/aave-address-book/commit/80ce37cb8b9944d72699af0ea18f817498e4c6cb))
+
 ## [4.44.10](https://github.com/bgd-labs/aave-address-book/compare/v4.44.9...v4.44.10) (2026-02-09)
 
 
