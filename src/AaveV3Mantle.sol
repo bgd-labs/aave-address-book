@@ -49,10 +49,10 @@ library AaveV3Mantle {
   ICollector internal constant COLLECTOR = ICollector(0x0cd2670339Cd520BF9428Ad881bE60A698aB9B32);
 
   // https://mantlescan.xyz/address/0xD7ab0676222c0235e09a06640c422bf97CCC2Bc5
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xD7ab0676222c0235e09a06640c422bf97CCC2Bc5;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xD7ab0676222c0235e09a06640c422bf97CCC2Bc5;
 
   // https://mantlescan.xyz/address/0x604174a3bA9228F3c7823d2E1aAA17A90E06C160
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x604174a3bA9228F3c7823d2E1aAA17A90E06C160;
 
   // https://mantlescan.xyz/address/0x70Bf6EC6Fca41a7d08dCBB9909985AC0A4510B5E
@@ -86,9 +86,198 @@ library AaveV3Mantle {
   // https://mantlescan.xyz/address/0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601
   address internal constant DUST_BIN = 0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601;
 }
-library AaveV3MantleAssets {}
+library AaveV3MantleAssets {
+  // https://mantlescan.xyz/address/0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111
+  address internal constant WETH_UNDERLYING = 0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://mantlescan.xyz/address/0xeAC30Ed8609F564aE65C809C4bf42dB2fF426D2C
+  address internal constant WETH_A_TOKEN = 0xeAC30Ed8609F564aE65C809C4bf42dB2fF426D2C;
+
+  // https://mantlescan.xyz/address/0x0baF5974838114e7001D02782e6B1D8aEE1fc626
+  address internal constant WETH_V_TOKEN = 0x0baF5974838114e7001D02782e6B1D8aEE1fc626;
+
+  // https://mantlescan.xyz/address/0x5bc7Cf88EB131DB18b5d7930e793095140799aD5
+  address internal constant WETH_ORACLE = 0x5bc7Cf88EB131DB18b5d7930e793095140799aD5;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8
+  address internal constant WMNT_UNDERLYING = 0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8;
+
+  uint8 internal constant WMNT_DECIMALS = 18;
+
+  // https://mantlescan.xyz/address/0x85d86061e94CE01D3DA0f9EFa289c86ff136125a
+  address internal constant WMNT_A_TOKEN = 0x85d86061e94CE01D3DA0f9EFa289c86ff136125a;
+
+  // https://mantlescan.xyz/address/0x9c27A8ffacAbdEE0Ac5c415E018D295BB6444F0E
+  address internal constant WMNT_V_TOKEN = 0x9c27A8ffacAbdEE0Ac5c415E018D295BB6444F0E;
+
+  // https://mantlescan.xyz/address/0xD97F20bEbeD74e8144134C4b148fE93417dd0F96
+  address internal constant WMNT_ORACLE = 0xD97F20bEbeD74e8144134C4b148fE93417dd0F96;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant WMNT_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0x779Ded0c9e1022225f8E0630b35a9b54bE713736
+  address internal constant USDT0_UNDERLYING = 0x779Ded0c9e1022225f8E0630b35a9b54bE713736;
+
+  uint8 internal constant USDT0_DECIMALS = 6;
+
+  // https://mantlescan.xyz/address/0x7053bAD224F0C021839f6AC645BdaE5F8b585b69
+  address internal constant USDT0_A_TOKEN = 0x7053bAD224F0C021839f6AC645BdaE5F8b585b69;
+
+  // https://mantlescan.xyz/address/0x5d9e4663d3d532179c404dBe9edF93045F89aDed
+  address internal constant USDT0_V_TOKEN = 0x5d9e4663d3d532179c404dBe9edF93045F89aDed;
+
+  // https://mantlescan.xyz/address/0xFA5dEcEd7cdCEAB065addd0E32D9527ABd1069Ee
+  address internal constant USDT0_ORACLE = 0xFA5dEcEd7cdCEAB065addd0E32D9527ABd1069Ee;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant USDT0_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9
+  address internal constant USDC_UNDERLYING = 0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://mantlescan.xyz/address/0xcb8164415274515867ec43CbD284ab5d6d2b304F
+  address internal constant USDC_A_TOKEN = 0xcb8164415274515867ec43CbD284ab5d6d2b304F;
+
+  // https://mantlescan.xyz/address/0xCea474BDa7Ad0a8F62e938a5563edfAEf7368Fc0
+  address internal constant USDC_V_TOKEN = 0xCea474BDa7Ad0a8F62e938a5563edfAEf7368Fc0;
+
+  // https://mantlescan.xyz/address/0x3876FB349c14613e0633b5cAe08C4E3B1d4904fB
+  address internal constant USDC_ORACLE = 0x3876FB349c14613e0633b5cAe08C4E3B1d4904fB;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34
+  address internal constant USDe_UNDERLYING = 0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34;
+
+  uint8 internal constant USDe_DECIMALS = 18;
+
+  // https://mantlescan.xyz/address/0xb9aCA933C9c0aa854a6DBb7b12f0CC3FdaC15ee7
+  address internal constant USDe_A_TOKEN = 0xb9aCA933C9c0aa854a6DBb7b12f0CC3FdaC15ee7;
+
+  // https://mantlescan.xyz/address/0x0169FD279c8c656037E5D199Cff8137f1e2d807c
+  address internal constant USDe_V_TOKEN = 0x0169FD279c8c656037E5D199Cff8137f1e2d807c;
+
+  // https://mantlescan.xyz/address/0xFA5dEcEd7cdCEAB065addd0E32D9527ABd1069Ee
+  address internal constant USDe_ORACLE = 0xFA5dEcEd7cdCEAB065addd0E32D9527ABd1069Ee;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant USDe_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2
+  address internal constant sUSDe_UNDERLYING = 0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2;
+
+  uint8 internal constant sUSDe_DECIMALS = 18;
+
+  // https://mantlescan.xyz/address/0xaf972F332FF79bd32A6CB6B54f903eA0F9b16C2a
+  address internal constant sUSDe_A_TOKEN = 0xaf972F332FF79bd32A6CB6B54f903eA0F9b16C2a;
+
+  // https://mantlescan.xyz/address/0xc42B44c65bBe7AA8E5b02416918688c244ec7847
+  address internal constant sUSDe_V_TOKEN = 0xc42B44c65bBe7AA8E5b02416918688c244ec7847;
+
+  // https://mantlescan.xyz/address/0x8b47EC48ac560793861D94A997d020872c1cE3f5
+  address internal constant sUSDe_ORACLE = 0x8b47EC48ac560793861D94A997d020872c1cE3f5;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant sUSDe_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0xC96dE26018A54D51c097160568752c4E3BD6C364
+  address internal constant FBTC_UNDERLYING = 0xC96dE26018A54D51c097160568752c4E3BD6C364;
+
+  uint8 internal constant FBTC_DECIMALS = 8;
+
+  // https://mantlescan.xyz/address/0xfa14c9DE267b59A586043372bd98Ed99e3Ee0533
+  address internal constant FBTC_A_TOKEN = 0xfa14c9DE267b59A586043372bd98Ed99e3Ee0533;
+
+  // https://mantlescan.xyz/address/0x691AbCD512C1Cfef99442b0ACD3eD98Ee7F4e64E
+  address internal constant FBTC_V_TOKEN = 0x691AbCD512C1Cfef99442b0ACD3eD98Ee7F4e64E;
+
+  // https://mantlescan.xyz/address/0x7db2275279F52D0914A481e14c4Ce5a59705A25b
+  address internal constant FBTC_ORACLE = 0x7db2275279F52D0914A481e14c4Ce5a59705A25b;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant FBTC_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0x051665f2455116e929b9972c36d23070F5054Ce0
+  address internal constant syrupUSDT_UNDERLYING = 0x051665f2455116e929b9972c36d23070F5054Ce0;
+
+  uint8 internal constant syrupUSDT_DECIMALS = 6;
+
+  // https://mantlescan.xyz/address/0xF8400F3FA9cD9F9E84e93cD9De9f14EB7B5b59b5
+  address internal constant syrupUSDT_A_TOKEN = 0xF8400F3FA9cD9F9E84e93cD9De9f14EB7B5b59b5;
+
+  // https://mantlescan.xyz/address/0x2E20c5291CD675bFe52a533a6208588f5484999e
+  address internal constant syrupUSDT_V_TOKEN = 0x2E20c5291CD675bFe52a533a6208588f5484999e;
+
+  // https://mantlescan.xyz/address/0xCF1700Ee060AB65fa16d5f44A6fBf16721EB0D9b
+  address internal constant syrupUSDT_ORACLE = 0xCF1700Ee060AB65fa16d5f44A6fBf16721EB0D9b;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant syrupUSDT_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0x93e855643e940D025bE2e529272e4Dbd15a2Cf74
+  address internal constant wrsETH_UNDERLYING = 0x93e855643e940D025bE2e529272e4Dbd15a2Cf74;
+
+  uint8 internal constant wrsETH_DECIMALS = 18;
+
+  // https://mantlescan.xyz/address/0x5cC6999aC46F4627309a7ce0F321a3f45D138ED5
+  address internal constant wrsETH_A_TOKEN = 0x5cC6999aC46F4627309a7ce0F321a3f45D138ED5;
+
+  // https://mantlescan.xyz/address/0x7C5549DE0dEb930bAb1e11B075151a19e400605c
+  address internal constant wrsETH_V_TOKEN = 0x7C5549DE0dEb930bAb1e11B075151a19e400605c;
+
+  // https://mantlescan.xyz/address/0xFED794060D37391d966F931B9509378063C5B0fB
+  address internal constant wrsETH_ORACLE = 0xFED794060D37391d966F931B9509378063C5B0fB;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant wrsETH_INTEREST_RATE_STRATEGY =
+    0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+
+  // https://mantlescan.xyz/address/0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73
+  address internal constant GHO_UNDERLYING = 0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://mantlescan.xyz/address/0x8917d4eE4609f991b559DAF8D0aD1b892c13B127
+  address internal constant GHO_A_TOKEN = 0x8917d4eE4609f991b559DAF8D0aD1b892c13B127;
+
+  // https://mantlescan.xyz/address/0xeE1eABe23fA42028809F587B8fE1936b154d2620
+  address internal constant GHO_V_TOKEN = 0xeE1eABe23fA42028809F587B8fE1936b154d2620;
+
+  // https://mantlescan.xyz/address/0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12
+  address internal constant GHO_ORACLE = 0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12;
+
+  // https://mantlescan.xyz/address/0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x0a215D8ba66387DCA84B284D18c3B4ec3de6E54a;
+}
 library AaveV3MantleEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant USDe_sUSDe__USDT0_USDC_GHO = 1;
+
+  uint8 internal constant USDe__USDT0_USDC_GHO = 2;
+
+  uint8 internal constant FBTC__USDT0_USDC_USDe = 3;
+
+  uint8 internal constant syrupUSDT__USDT0_USDC_GHO = 4;
+
+  uint8 internal constant wrsETH__WETH = 5;
 }
 library AaveV3MantleExternalLibraries {
   // https://mantlescan.xyz/address/0x8e7aadB7bBAb02Ad899A13FF9A75571A4866Bf04
