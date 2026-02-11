@@ -8938,6 +8938,222 @@
       }
     },
     {
+      "chainId": 5000,
+      "address": "0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111",
+      "name": "Ether",
+      "decimals": 18,
+      "symbol": "WETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/weth.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0xeAC30Ed8609F564aE65C809C4bf42dB2fF426D2C",
+      "name": "Aave Mantle WETH",
+      "decimals": 18,
+      "symbol": "aManWETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/aweth.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8",
+      "name": "Wrapped Mantle",
+      "decimals": 18,
+      "symbol": "WMNT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5000,
+      "address": "0x85d86061e94CE01D3DA0f9EFa289c86ff136125a",
+      "name": "Aave Mantle WMNT",
+      "decimals": 18,
+      "symbol": "aManWMNT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+      "name": "USDT0",
+      "decimals": 6,
+      "symbol": "USDT0",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0x7053bAD224F0C021839f6AC645BdaE5F8b585b69",
+      "name": "Aave Mantle USDT0",
+      "decimals": 6,
+      "symbol": "aManUSDT0",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0xcb8164415274515867ec43CbD284ab5d6d2b304F",
+      "name": "Aave Mantle USDC",
+      "decimals": 6,
+      "symbol": "aManUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usde.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0xb9aCA933C9c0aa854a6DBb7b12f0CC3FdaC15ee7",
+      "name": "Aave Mantle USDe",
+      "decimals": 18,
+      "symbol": "aManUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausde.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "Staked USDe",
+      "decimals": 18,
+      "symbol": "sUSDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/susde.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0xaf972F332FF79bd32A6CB6B54f903eA0F9b16C2a",
+      "name": "Aave Mantle sUSDe",
+      "decimals": 18,
+      "symbol": "aMansUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asusde.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0xC96dE26018A54D51c097160568752c4E3BD6C364",
+      "name": "Fire Bitcoin",
+      "decimals": 8,
+      "symbol": "FBTC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/fbtc.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0xfa14c9DE267b59A586043372bd98Ed99e3Ee0533",
+      "name": "Aave Mantle FBTC",
+      "decimals": 8,
+      "symbol": "aManFBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/afbtc.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0xC96dE26018A54D51c097160568752c4E3BD6C364"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0x051665f2455116e929b9972c36d23070F5054Ce0",
+      "name": "Syrup USDT",
+      "decimals": 6,
+      "symbol": "syrupUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 5000,
+      "address": "0xF8400F3FA9cD9F9E84e93cD9De9f14EB7B5b59b5",
+      "name": "Aave Mantle syrupUSDT",
+      "decimals": 6,
+      "symbol": "aMansyrupUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0x051665f2455116e929b9972c36d23070F5054Ce0"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0x93e855643e940D025bE2e529272e4Dbd15a2Cf74",
+      "name": "rsETHWrapper",
+      "decimals": 18,
+      "symbol": "wrsETH",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/wrseth.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0x5cC6999aC46F4627309a7ce0F321a3f45D138ED5",
+      "name": "Aave Mantle wrsETH",
+      "decimals": 18,
+      "symbol": "aManwrsETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/awrseth.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0x93e855643e940D025bE2e529272e4Dbd15a2Cf74"
+      }
+    },
+    {
+      "chainId": 5000,
+      "address": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 5000,
+      "address": "0x8917d4eE4609f991b559DAF8D0aD1b892c13B127",
+      "name": "Aave Mantle GHO",
+      "decimals": 18,
+      "symbol": "aManGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0x458F293454fE0d67EC0655f3672301301DD51422",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73"
+      }
+    },
+    {
       "chainId": 146,
       "address": "0x50c42dEAcD8Fc9773493ED674b675bE577f2634b",
       "name": "Wrapped Ether on Sonic",
@@ -9920,6 +10136,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 160 },
-  "timestamp": "2026-02-09T18:02:06.020Z"
+  "version": { "major": 3, "minor": 0, "patch": 161 },
+  "timestamp": "2026-02-11T10:13:22.444Z"
 }
