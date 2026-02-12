@@ -31,11 +31,11 @@ async function check(addresses: Record<string, any>) {
         `SANITY_RISK_STEWARDS: Skipped due to missing governance on ${client.chain?.name}`,
       );
     } else {
-      const l1Executor = (governance as any).EXECUTOR_LVL_1;
-      // prettier would be to check against executor lvl_1
-      if (OWNER !== l1Executor) {
+      const executor = isWhiteLabel ? (governance as any).PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR : (governance as any).EXECUTOR_LVL_1;
+      // prettier would be to check against executor
+      if (OWNER !== executor) {
         throw new Error(
-          `SANITY_RISK_STEWARDS: OWNER MISMATCH ${addresses.POOL}.${addresses.RISK_STEWARD}:${OWNER} != ${l1Executor} on ${client.chain?.name}`,
+          `SANITY_RISK_STEWARDS: OWNER MISMATCH ${addresses.POOL}.${addresses.RISK_STEWARD}:${OWNER} != ${executor} on ${client.chain?.name}`,
         );
       }
     }
