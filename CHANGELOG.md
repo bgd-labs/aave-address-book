@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.44.15](https://github.com/bgd-labs/aave-address-book/compare/v4.44.14...v4.44.15) (2026-02-12)
+
+
+### Bug Fixes
+
+* add risk steward on ink ([#1262](https://github.com/bgd-labs/aave-address-book/issues/1262)) ([fba9540](https://github.com/bgd-labs/aave-address-book/commit/fba9540f44d30cfe9069b0c389d3521fdc7e6170))
+
 ## [4.44.14](https://github.com/bgd-labs/aave-address-book/compare/v4.44.13...v4.44.14) (2026-02-12)
 
 
