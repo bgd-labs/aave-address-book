@@ -102,7 +102,7 @@
     "tsup": "^8.5.1",
     "tsx": "^4.19.2",
     "typescript": "^5.9.3",
-    "viem": "^2.45.2",
+    "viem": "^2.46.1",
     "vitest": "^4.0.15"
   },
   "peerDependencies": {
