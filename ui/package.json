@@ -17,7 +17,7 @@
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "tailwind-merge": "^2.6.0",
-    "viem": "^2.45.2"
+    "viem": "^2.46.1"
   },
   "devDependencies": {
     "@types/node": "^25.2.0",
