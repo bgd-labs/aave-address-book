@@ -73,7 +73,7 @@ export const IAToken_ABI = [
         internalType: 'address',
       },
       {
-        name: 'amount',
+        name: 'value',
         type: 'uint256',
         internalType: 'uint256',
       },
@@ -413,12 +413,12 @@ export const IAToken_ABI = [
     name: 'transfer',
     inputs: [
       {
-        name: 'recipient',
+        name: 'to',
         type: 'address',
         internalType: 'address',
       },
       {
-        name: 'amount',
+        name: 'value',
         type: 'uint256',
         internalType: 'uint256',
       },
@@ -437,17 +437,17 @@ export const IAToken_ABI = [
     name: 'transferFrom',
     inputs: [
       {
-        name: 'sender',
+        name: 'from',
         type: 'address',
         internalType: 'address',
       },
       {
-        name: 'recipient',
+        name: 'to',
         type: 'address',
         internalType: 'address',
       },
       {
-        name: 'amount',
+        name: 'value',
         type: 'uint256',
         internalType: 'uint256',
       },
