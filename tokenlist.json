@@ -8917,6 +8917,19 @@
     },
     {
       "chainId": 42220,
+      "address": "0xfdf1911C72760Cea0d06d368d44b38c61aCF1b50",
+      "name": "Wrapped Aave Celo CELO",
+      "decimals": 18,
+      "symbol": "waCelCELO",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0x3E59A31363E2ad014dcbc521c4a0d5757d9f3402",
+        "underlying": "0x471EcE3750Da237f93B8E339c536989b8978a438",
+        "underlyingAToken": "0xC3e77dC389537Db1EEc7C33B95Cf3beECA71A209"
+      }
+    },
+    {
+      "chainId": 42220,
       "address": "0xD221812de1BD094f35587EE8E174B07B6167D9Af",
       "name": "Wrapped Ether (Celo native bridge)",
       "decimals": 18,
@@ -10136,6 +10149,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 161 },
-  "timestamp": "2026-02-11T10:13:22.444Z"
+  "version": { "major": 3, "minor": 0, "patch": 162 },
+  "timestamp": "2026-02-18T00:22:30.647Z"
 }
