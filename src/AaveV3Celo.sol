@@ -174,6 +174,9 @@ library AaveV3CeloAssets {
   address internal constant CELO_INTEREST_RATE_STRATEGY =
     0x8B62D241Bf59f40991DCd18531683156d7013355;
 
+  // https://celoscan.io/address/0xfdf1911C72760Cea0d06d368d44b38c61aCF1b50
+  address internal constant CELO_STATA_TOKEN = 0xfdf1911C72760Cea0d06d368d44b38c61aCF1b50;
+
   // https://celoscan.io/address/0xD221812de1BD094f35587EE8E174B07B6167D9Af
   address internal constant WETH_UNDERLYING = 0xD221812de1BD094f35587EE8E174B07B6167D9Af;
 
