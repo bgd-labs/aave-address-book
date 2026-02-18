@@ -8,4 +8,13 @@ library MiscInkWhitelabel {
 
   // https://explorer.inkonchain.com/address/0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2
   address internal constant PROTOCOL_GUARDIAN = 0x00C2B13eF4F70Bf1827179Fe6d8facF7cFf6AcD2;
+
+  // https://explorer.inkonchain.com/address/0x17781Ba226b359e5C1E1ee5ac9E28Ec5b84fd039
+  address internal constant AGENT_HUB = 0x17781Ba226b359e5C1E1ee5ac9E28Ec5b84fd039;
+
+  // https://explorer.inkonchain.com/address/0x951C37a35cA9e61448B90B7AF5E371cFdA70326C
+  address internal constant AGENT_HUB_AUTOMATION = 0x951C37a35cA9e61448B90B7AF5E371cFdA70326C;
+
+  // https://explorer.inkonchain.com/address/0xd24790E75799968CE3feD6E27285baD0a26e7e36
+  address internal constant RANGE_VALIDATION_MODULE = 0xd24790E75799968CE3feD6E27285baD0a26e7e36;
 }

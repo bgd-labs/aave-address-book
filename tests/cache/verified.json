@@ -14660,6 +14660,9 @@
     },
     "0x17B1DD4888E8509C5404768E6004819c82916097": {
       "name": "EACAggregatorProxy"
+    },
+    "0xfdf1911C72760Cea0d06d368d44b38c61aCF1b50": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "43113": {
@@ -16307,6 +16310,15 @@
     },
     "0x2F9fDD0D80843b21A7e2c7bfe2A6278231A5683e": {
       "name": "RiskSteward"
+    },
+    "0x951C37a35cA9e61448B90B7AF5E371cFdA70326C": {
+      "name": "GelatoAgentHub"
+    },
+    "0xd24790E75799968CE3feD6E27285baD0a26e7e36": {
+      "name": "RangeValidationModule"
+    },
+    "0x17781Ba226b359e5C1E1ee5ac9E28Ec5b84fd039": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "59144": {
