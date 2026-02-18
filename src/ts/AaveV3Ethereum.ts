@@ -1322,8 +1322,8 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8790,
-    liquidationThreshold: 8990,
+    ltv: 8820,
+    liquidationThreshold: 9020,
     liquidationBonus: 10510,
   },
   '37': {
