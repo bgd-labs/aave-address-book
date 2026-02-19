@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.45.0](https://github.com/aave-dao/aave-address-book/compare/v4.44.22...v4.45.0) (2026-02-19)
+
+
+### Features
+
+* move to the DAO ([#1280](https://github.com/aave-dao/aave-address-book/issues/1280)) ([c7f0c97](https://github.com/aave-dao/aave-address-book/commit/c7f0c9728a439dd19233f6aebbecc3a8b81df18f))
+
+
+### Bug Fixes
+
+* use bot token for ci & setup provenance ([#1284](https://github.com/aave-dao/aave-address-book/issues/1284)) ([abaf6ad](https://github.com/aave-dao/aave-address-book/commit/abaf6ad1748c4d339290d9ac0163f245878bdc14))
+
 ## [4.44.22](https://github.com/bgd-labs/aave-address-book/compare/v4.44.21...v4.44.22) (2026-02-18)
 
 
