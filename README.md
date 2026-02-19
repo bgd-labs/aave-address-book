@@ -2,24 +2,24 @@
 
 # Aave Address Book
 
-[![npm version](https://img.shields.io/npm/v/@bgd-labs/aave-address-book)](https://www.npmjs.com/package/@bgd-labs/aave-address-book)
+[![npm version](https://img.shields.io/npm/v/@aave-dao/aave-address-book)](https://www.npmjs.com/package/@aave-dao/aave-address-book)
 
 An up-to-date registry of all Aave ecosystem smart contract addresses for use in Solidity and JavaScript/TypeScript projects.
 
-🔍 **[Search addresses online](https://search.onaave.com/)**
+🔍 **[Search addresses online](https://aave-dao.github.io/aave-address-book/)**
 
 ## Installation
 
 ### Foundry
 
 ```sh
-forge install bgd-labs/aave-address-book
+forge install aave-dao/aave-address-book
 ```
 
 ### Node.js
 
 ```sh
-npm install @bgd-labs/aave-address-book
+npm install @aave-dao/aave-address-book
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ contract Example {
 ### JavaScript/TypeScript
 
 ```typescript
-import { AaveV3Ethereum, AaveV2Avalanche } from "@bgd-labs/aave-address-book";
+import { AaveV3Ethereum, AaveV2Avalanche } from "@aave-dao/aave-address-book";
 
 console.log(AaveV3Ethereum.POOL); // "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
 console.log(AaveV3Ethereum.CHAIN_ID); // 1
