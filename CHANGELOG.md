@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.46.0](https://github.com/aave-dao/aave-address-book/compare/v4.45.0...v4.46.0) (2026-02-19)
+
+
+### Features
+
+* add risk agent contracts on ink ([#1277](https://github.com/aave-dao/aave-address-book/issues/1277)) ([8ddbfb1](https://github.com/aave-dao/aave-address-book/commit/8ddbfb167160f96a3314e6c36bf20385cd16e9cc))
+
 ## [4.45.0](https://github.com/aave-dao/aave-address-book/compare/v4.44.22...v4.45.0) (2026-02-19)
 
 
