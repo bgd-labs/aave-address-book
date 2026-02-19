@@ -21,7 +21,9 @@ jobs:
 
   test-node:
     uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
-    secrets: inherit
+    secrets:
+      ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
+      EXPLORER_PROXY: ${{ secrets.EXPLORER_PROXY }}
 
   release-please:
     if: github.event_name == 'push'
