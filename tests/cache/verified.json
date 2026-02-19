@@ -14660,6 +14660,9 @@
     },
     "0x17B1DD4888E8509C5404768E6004819c82916097": {
       "name": "EACAggregatorProxy"
+    },
+    "0xfdf1911C72760Cea0d06d368d44b38c61aCF1b50": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "43113": {
