@@ -28,7 +28,11 @@ export const Footer = () => {
                 alt="BGD Labs Website"
               />
             </a>
-            <a href="https://github.com/bgd-labs/aave-address-book" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/aave-dao/aave-address-book"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Image
                 src={githubIcon}
                 className="h-6 w-6"
