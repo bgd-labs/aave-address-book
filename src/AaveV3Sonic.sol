@@ -175,6 +175,9 @@ library AaveV3SonicAssets {
 
   // https://sonicscan.org/address/0xdFf435BCcf782f11187D3a4454d96702eD78e092
   address internal constant stS_INTEREST_RATE_STRATEGY = 0xdFf435BCcf782f11187D3a4454d96702eD78e092;
+
+  // https://sonicscan.org/address/0x68541C7f0CCd8cD7e91117Fe12E930144213a48d
+  address internal constant stS_STATA_TOKEN = 0x68541C7f0CCd8cD7e91117Fe12E930144213a48d;
 }
 library AaveV3SonicEModes {
   uint8 internal constant NONE = 0;

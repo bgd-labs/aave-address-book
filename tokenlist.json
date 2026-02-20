@@ -9297,6 +9297,20 @@
       }
     },
     {
+      "chainId": 146,
+      "address": "0x68541C7f0CCd8cD7e91117Fe12E930144213a48d",
+      "name": "Wrapped Aave Sonic stS",
+      "decimals": 18,
+      "symbol": "waSonstS",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statasts.svg",
+      "extensions": {
+        "pool": "0x5362dBb1e601abF3a4c14c22ffEdA64042E5eAA3",
+        "underlying": "0xE5DA20F15420aD15DE0fa650600aFc998bbE3955",
+        "underlyingAToken": "0xeAa74D7F42267eB907092AF4Bc700f667EeD0B8B"
+      }
+    },
+    {
       "chainId": 1868,
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -10149,6 +10163,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 162 },
-  "timestamp": "2026-02-18T00:22:30.647Z"
+  "version": { "major": 3, "minor": 0, "patch": 163 },
+  "timestamp": "2026-02-20T00:19:52.692Z"
 }
