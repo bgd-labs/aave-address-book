@@ -406,9 +406,9 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9250,
-    liquidationThreshold: 9450,
-    liquidationBonus: 10240,
+    ltv: 9300,
+    liquidationThreshold: 9500,
+    liquidationBonus: 10210,
   },
   '15': {
     label: 'sUSDe,PT_sUSDE_15JAN2026,PT_sUSDE_9APR2026 / USDT0,USDe',

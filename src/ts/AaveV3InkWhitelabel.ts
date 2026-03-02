@@ -154,6 +154,33 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9',
     ORACLE: '0x51e5242698Cf425A558BCe440357Fd20f00D9671',
   },
+  sUSDe: {
+    decimals: 18,
+    id: 9,
+    UNDERLYING: '0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2',
+    A_TOKEN: '0x24C1FaC3447C45137E5f1c2C54Fe9ed3F1EdeA61',
+    V_TOKEN: '0xD02245a1CD906AD9336600E037345a4C5242B141',
+    INTEREST_RATE_STRATEGY: '0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9',
+    ORACLE: '0xC170637d22Ac02bAC99ED794038d2676d712e704',
+  },
+  USDe: {
+    decimals: 18,
+    id: 10,
+    UNDERLYING: '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+    A_TOKEN: '0x726D965F0D759A0489d178365f00b4c3c3207BB7',
+    V_TOKEN: '0x52D5096a7df365C3870A7767a5024D59eD44d814',
+    INTEREST_RATE_STRATEGY: '0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9',
+    ORACLE: '0x24FdD142b34C6B5D55299709DB0966681933c9aF',
+  },
+  SolvBTC: {
+    decimals: 18,
+    id: 11,
+    UNDERLYING: '0xaE4EFbc7736f963982aACb17EFA37fCBAb924cB3',
+    A_TOKEN: '0x0373715A7e8f77354B4Af002C6f9F33C79f4F92a',
+    V_TOKEN: '0x986d7beE5Cc6eF52607eaD71fDD9B61Aa153271b',
+    INTEREST_RATE_STRATEGY: '0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9',
+    ORACLE: '0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -171,6 +198,41 @@ export const E_MODES = {
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
+  },
+  '2': {
+    label: 'sUSDe,USDe / USDT,USDG,USDC',
+    collateralBitmap: '1536',
+    collateralAssets: [
+      '0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2',
+      '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+    ],
+    borrowableBitmap: '44',
+    borrowableAssets: [
+      '0x0200C29006150606B650577BBE7B6248F58470c1',
+      '0xe343167631d89B6Ffc58B88d6b7fB0228795491D',
+      '0x2D270e6886d130D724215A266106e6832161EAEd',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 9000,
+    liquidationThreshold: 9200,
+    liquidationBonus: 10400,
+  },
+  '3': {
+    label: 'USDe / USDT,USDG,USDC',
+    collateralBitmap: '1024',
+    collateralAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
+    borrowableBitmap: '44',
+    borrowableAssets: [
+      '0x0200C29006150606B650577BBE7B6248F58470c1',
+      '0xe343167631d89B6Ffc58B88d6b7fB0228795491D',
+      '0x2D270e6886d130D724215A266106e6832161EAEd',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 9000,
+    liquidationThreshold: 9300,
+    liquidationBonus: 10200,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {

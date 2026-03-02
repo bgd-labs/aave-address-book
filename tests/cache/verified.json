@@ -9267,6 +9267,9 @@
     },
     "0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B": {
       "name": "AaveV3ConfigEngine"
+    },
+    "0x68541C7f0CCd8cD7e91117Fe12E930144213a48d": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "324": {
@@ -16319,6 +16322,36 @@
     },
     "0x17781Ba226b359e5C1E1ee5ac9E28Ec5b84fd039": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2": {
+      "name": "StakedUSDeOFT"
+    },
+    "0xC170637d22Ac02bAC99ED794038d2676d712e704": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34": {
+      "name": "USDeOFT"
+    },
+    "0xaE4EFbc7736f963982aACb17EFA37fCBAb924cB3": {
+      "name": "BeaconProxy"
+    },
+    "0x24C1FaC3447C45137E5f1c2C54Fe9ed3F1EdeA61": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xD02245a1CD906AD9336600E037345a4C5242B141": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x726D965F0D759A0489d178365f00b4c3c3207BB7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x52D5096a7df365C3870A7767a5024D59eD44d814": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0373715A7e8f77354B4Af002C6f9F33C79f4F92a": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x986d7beE5Cc6eF52607eaD71fDD9B61Aa153271b": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "59144": {
