@@ -9573,6 +9573,70 @@
       }
     },
     {
+      "chainId": 57073,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "name": "Staked USDe",
+      "decimals": 18,
+      "symbol": "sUSDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/susde.svg"
+    },
+    {
+      "chainId": 57073,
+      "address": "0x24C1FaC3447C45137E5f1c2C54Fe9ed3F1EdeA61",
+      "name": "Aave InkWhitelabel sUSDe",
+      "decimals": 18,
+      "symbol": "aInkWlsUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/asusde.svg",
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
+      }
+    },
+    {
+      "chainId": 57073,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usde.svg"
+    },
+    {
+      "chainId": 57073,
+      "address": "0x726D965F0D759A0489d178365f00b4c3c3207BB7",
+      "name": "Aave InkWhitelabel USDe",
+      "decimals": 18,
+      "symbol": "aInkWlUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausde.svg",
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+      }
+    },
+    {
+      "chainId": 57073,
+      "address": "0xaE4EFbc7736f963982aACb17EFA37fCBAb924cB3",
+      "name": "Solv BTC",
+      "decimals": 18,
+      "symbol": "SolvBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 57073,
+      "address": "0x0373715A7e8f77354B4Af002C6f9F33C79f4F92a",
+      "name": "Aave InkWhitelabel SolvBTC",
+      "decimals": 18,
+      "symbol": "aInkWlSolvBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0xaE4EFbc7736f963982aACb17EFA37fCBAb924cB3"
+      }
+    },
+    {
       "chainId": 9745,
       "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "name": "USDT0",
@@ -10163,6 +10227,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 163 },
-  "timestamp": "2026-02-20T00:19:52.692Z"
+  "version": { "major": 3, "minor": 0, "patch": 164 },
+  "timestamp": "2026-03-02T17:23:37.461Z"
 }
