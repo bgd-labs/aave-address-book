@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.46.5](https://github.com/aave-dao/aave-address-book/compare/v4.46.4...v4.46.5) (2026-03-03)
+
+
+### Bug Fixes
+
+* **deps:** bump foundry-rs/foundry-toolchain from 1.6.0 to 1.7.0 ([#1281](https://github.com/aave-dao/aave-address-book/issues/1281)) ([76fe892](https://github.com/aave-dao/aave-address-book/commit/76fe8924997efde6b4182d904e3b666dd2ce4c83))
+
 ## [4.46.4](https://github.com/aave-dao/aave-address-book/compare/v4.46.3...v4.46.4) (2026-02-25)
 
 
