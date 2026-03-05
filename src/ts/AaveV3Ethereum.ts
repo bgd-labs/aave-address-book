@@ -86,8 +86,8 @@ export const SAVINGS_DAI_TOKEN_WRAPPER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a05
 // https://etherscan.io/address/0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F
 export const STATA_FACTORY = '0xCb0b5cA20b6C5C02A9A3B2cE433650768eD2974F';
 
-// https://etherscan.io/address/0x5513224daaEABCa31af5280727878d52097afA05
-export const GHO_DIRECT_MINTER = '0x5513224daaEABCa31af5280727878d52097afA05';
+// https://etherscan.io/address/0xE9ac5231fAecb633dA0Fe85Fcb2785b8363427d2
+export const GHO_DIRECT_MINTER = '0xE9ac5231fAecb633dA0Fe85Fcb2785b8363427d2';
 
 // https://etherscan.io/address/0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b
 export const DUST_BIN = '0x31a0Ba3C2242a095dBF58A7C53751eCBd27dBA9b';
@@ -1287,7 +1287,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9010,
     liquidationThreshold: 9210,
-    liquidationBonus: 10380,
+    liquidationBonus: 10350,
   },
   '35': {
     label: 'USDe,PT_USDe_5FEB2026,PT_USDe_7MAY2026 / USDe',
@@ -1303,7 +1303,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10280,
+    liquidationBonus: 10250,
   },
   '36': {
     label: 'sUSDe,PT_sUSDE_5FEB2026,PT_sUSDE_7MAY2026 / USDC,USDT,USDe,USDtb',
@@ -1340,7 +1340,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9010,
     liquidationThreshold: 9210,
-    liquidationBonus: 10380,
+    liquidationBonus: 10350,
   },
   '38': {
     label: 'sUSDe,PT_srUSDe_2APR2026 / USDC,USDT,USDe',

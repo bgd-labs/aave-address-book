@@ -22,11 +22,11 @@ library GhoEthereum {
   // https://etherscan.io/address/0x167527DB01325408696326e3580cd8e55D99Dc1A
   address internal constant GSM_REGISTRY = 0x167527DB01325408696326e3580cd8e55D99Dc1A;
 
-  // https://etherscan.io/address/0xFeeb6FE430B7523fEF2a38327241eE7153779535
-  address internal constant GSM_USDC = 0xFeeb6FE430B7523fEF2a38327241eE7153779535;
+  // https://etherscan.io/address/0x3A3868898305f04beC7FEa77BecFf04C13444112
+  address internal constant GSM_USDC = 0x3A3868898305f04beC7FEa77BecFf04C13444112;
 
-  // https://etherscan.io/address/0x535b2f7C20B9C83d70e519cf9991578eF9816B7B
-  address internal constant GSM_USDT = 0x535b2f7C20B9C83d70e519cf9991578eF9816B7B;
+  // https://etherscan.io/address/0x882285E62656b9623AF136Ce3078c6BdCc33F5E3
+  address internal constant GSM_USDT = 0x882285E62656b9623AF136Ce3078c6BdCc33F5E3;
 
   // https://etherscan.io/address/0xE5025A7c15a44283A0616567181587eE6A646D64
   address internal constant GSM_USDC_FEE_STRATEGY = 0xE5025A7c15a44283A0616567181587eE6A646D64;
@@ -40,13 +40,19 @@ library GhoEthereum {
   // https://etherscan.io/address/0x20Be7090711995336A13e24B9EA9e05ac2cdd8C0
   address internal constant GSM_USDT_PRICE_STRATEGY = 0x20Be7090711995336A13e24B9EA9e05ac2cdd8C0;
 
-  // https://etherscan.io/address/0x29F8c924B7aB50649c9597B8811d08f9Ef0310c3
+  // https://etherscan.io/address/0x6e51936e0ED4256f9dA4794B536B619c88Ff0047
   address internal constant GSM_USDC_ORACLE_SWAP_FREEZER =
-    0x29F8c924B7aB50649c9597B8811d08f9Ef0310c3;
+    0x6e51936e0ED4256f9dA4794B536B619c88Ff0047;
 
-  // https://etherscan.io/address/0x6439DA186BD3d37fE7Fd36036543b403e9FAbaE7
+  // https://etherscan.io/address/0x733AB16005c39d07FD3D9d1A350AA6768D10125b
   address internal constant GSM_USDT_ORACLE_SWAP_FREEZER =
-    0x6439DA186BD3d37fE7Fd36036543b403e9FAbaE7;
+    0x733AB16005c39d07FD3D9d1A350AA6768D10125b;
+
+  // https://etherscan.io/address/0x54C58157DeF387A880AE62332D1445f03adbE7E9
+  address internal constant GHO_RESERVE = 0x54C58157DeF387A880AE62332D1445f03adbE7E9;
+
+  // https://etherscan.io/address/0x2bd010Ab5393AB51b601B99C4B33ba148d9466e9
+  address internal constant GHO_PLASMA_DIRECT_MINTER = 0x2bd010Ab5393AB51b601B99C4B33ba148d9466e9;
 
   // https://etherscan.io/address/0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34
   address internal constant GHO_AAVE_CORE_STEWARD = 0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34;
