@@ -372,13 +372,30 @@ library AaveV3PlasmaAssets {
   // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
   address internal constant PT_USDe_9APR2026_INTEREST_RATE_STRATEGY =
     0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
+
+  // https://plasmascan.to/address/0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3
+  address internal constant GHO_UNDERLYING = 0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://plasmascan.to/address/0xAd571979b4245E163A7E2119EB4dFd94AfDaebC5
+  address internal constant GHO_A_TOKEN = 0xAd571979b4245E163A7E2119EB4dFd94AfDaebC5;
+
+  // https://plasmascan.to/address/0xB8A2C006202071171582C53B95942d645eD10891
+  address internal constant GHO_V_TOKEN = 0xB8A2C006202071171582C53B95942d645eD10891;
+
+  // https://plasmascan.to/address/0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1
+  address internal constant GHO_ORACLE = 0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1;
+
+  // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
 }
 library AaveV3PlasmaEModes {
   uint8 internal constant NONE = 0;
 
   uint8 internal constant USDe__USDT0 = 1;
 
-  uint8 internal constant USDe_sUSDe__USDT0 = 2;
+  uint8 internal constant USDe_sUSDe__USDT0_GHO = 2;
 
   uint8 internal constant weETH__WETH = 3;
 
@@ -400,13 +417,19 @@ library AaveV3PlasmaEModes {
 
   uint8 internal constant WXPL__USDT0 = 12;
 
-  uint8 internal constant USDe_PT_USDe_15JAN2026_PT_USDe_9APR2026__USDT0_USDe = 13;
+  uint8 internal constant USDe_PT_USDe_15JAN2026_PT_USDe_9APR2026__USDT0_USDe_GHO = 13;
 
   uint8 internal constant USDe_PT_USDe_15JAN2026_PT_USDe_9APR2026__USDe = 14;
 
-  uint8 internal constant sUSDe_PT_sUSDE_15JAN2026_PT_sUSDE_9APR2026__USDT0_USDe = 15;
+  uint8 internal constant sUSDe_PT_sUSDE_15JAN2026_PT_sUSDE_9APR2026__USDT0_USDe_GHO = 15;
 
   uint8 internal constant sUSDe_PT_sUSDE_15JAN2026_PT_sUSDE_9APR2026__USDe = 16;
+
+  uint8 internal constant GHO__USDT0 = 17;
+
+  uint8 internal constant syrupUSDT__GHO = 18;
+
+  uint8 internal constant syrupUSDT_GHO__USDT0 = 19;
 }
 library AaveV3PlasmaExternalLibraries {
   // https://plasmascan.to/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
