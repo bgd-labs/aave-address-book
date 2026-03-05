@@ -51,6 +51,9 @@ library GhoEthereum {
   // https://etherscan.io/address/0x54C58157DeF387A880AE62332D1445f03adbE7E9
   address internal constant GHO_RESERVE = 0x54C58157DeF387A880AE62332D1445f03adbE7E9;
 
+  // https://etherscan.io/address/0xE9ac5231fAecb633dA0Fe85Fcb2785b8363427d2
+  address internal constant GHO_DIRECT_FACILITATOR = 0xE9ac5231fAecb633dA0Fe85Fcb2785b8363427d2;
+
   // https://etherscan.io/address/0x2bd010Ab5393AB51b601B99C4B33ba148d9466e9
   address internal constant GHO_PLASMA_DIRECT_MINTER = 0x2bd010Ab5393AB51b601B99C4B33ba148d9466e9;
 
