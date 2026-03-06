@@ -34,6 +34,7 @@ import { soneiumProtoV3 } from './configs/pools/soneium';
 import { inkProtoV3 } from './configs/pools/ink';
 import { plasmaProtoV3 } from './configs/pools/plasma';
 import { megaEthProtoV3 } from './configs/pools/megaeth';
+import { xLayerProtoV3 } from './configs/pools/xlayer';
 import { generateGovernanceLibrary } from './generator/governanceV3Generator';
 import { generateProtocolV2Library } from './generator/protocolV2Generator';
 import { generateProtocolV3Library } from './generator/protocolV3Generator';
@@ -97,6 +98,8 @@ import { governanceConfigInk, governanceConfigInkWhiteLabel } from './configs/go
 import { governanceConfigPlasma } from './configs/governance/plasma';
 import { governanceConfigMegaEth } from './configs/governance/megaeth';
 import { megaEthAddresses } from './configs/networks/megaeth';
+import { governanceConfigXLayer } from './configs/governance/xlayer';
+import { xLayerAddresses } from './configs/networks/xlayer';
 
 async function main() {
   // cleanup ts artifacts
@@ -135,7 +138,8 @@ async function main() {
       governanceConfigInk,
       governanceConfigInkWhiteLabel,
       governanceConfigPlasma,
-      governanceConfigMegaEth
+      governanceConfigMegaEth,
+      governanceConfigXLayer,
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();
@@ -184,6 +188,7 @@ async function main() {
       inkProtoV3,
       plasmaProtoV3,
       megaEthProtoV3,
+      xLayerProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle].map((config) =>
@@ -229,6 +234,7 @@ async function main() {
     inkWhiteLabelAddresses,
     plasmaAddresses,
     megaEthAddresses,
+    xLayerAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();
