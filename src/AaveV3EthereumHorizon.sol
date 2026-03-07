@@ -229,6 +229,24 @@ library AaveV3EthereumHorizonAssets {
   // https://etherscan.io/address/0x87593272C06f4FC49EC2942eBda0972d2F1Ab521
   address internal constant VBILL_INTEREST_RATE_STRATEGY =
     0x87593272C06f4FC49EC2942eBda0972d2F1Ab521;
+
+  // https://etherscan.io/address/0x17418038ecF73BA4026c4f428547BF099706F27B
+  address internal constant ACRED_UNDERLYING = 0x17418038ecF73BA4026c4f428547BF099706F27B;
+
+  uint8 internal constant ACRED_DECIMALS = 6;
+
+  // https://etherscan.io/address/0xc293744fFbcf46696D589f5C415e71BC491519cD
+  address internal constant ACRED_A_TOKEN = 0xc293744fFbcf46696D589f5C415e71BC491519cD;
+
+  // https://etherscan.io/address/0x1f30d2B155FcDA0F7551dc8BE5dE6a84977685D4
+  address internal constant ACRED_V_TOKEN = 0x1f30d2B155FcDA0F7551dc8BE5dE6a84977685D4;
+
+  // https://etherscan.io/address/0x60AEd7d20AC6328f7BA771aD58931c996aff30E8
+  address internal constant ACRED_ORACLE = 0x60AEd7d20AC6328f7BA771aD58931c996aff30E8;
+
+  // https://etherscan.io/address/0x87593272C06f4FC49EC2942eBda0972d2F1Ab521
+  address internal constant ACRED_INTEREST_RATE_STRATEGY =
+    0x87593272C06f4FC49EC2942eBda0972d2F1Ab521;
 }
 library AaveV3EthereumHorizonEModes {
   uint8 internal constant NONE = 0;
@@ -237,9 +255,11 @@ library AaveV3EthereumHorizonEModes {
 
   uint8 internal constant USTB__GHO = 2;
 
-  uint8 internal constant __ = 9;
+  uint8 internal constant ACRED__GHO = 3;
 
   uint8 internal constant USCC__GHO = 4;
+
+  uint8 internal constant __ = 9;
 
   uint8 internal constant USYC__GHO = 6;
 

@@ -8558,6 +8558,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x17418038ecF73BA4026c4f428547BF099706F27B",
+      "name": "Apollo Diversified Credit Securitize Fund",
+      "decimals": 6,
+      "symbol": "ACRED",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xc293744fFbcf46696D589f5C415e71BC491519cD",
+      "name": "Aave Horizon RWA ACRED",
+      "decimals": 6,
+      "symbol": "aHorRwaACRED",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xAe05Cd22df81871bc7cC2a04BeCfb516bFe332C8",
+        "underlying": "0x17418038ecF73BA4026c4f428547BF099706F27B"
+      }
+    },
+    {
       "chainId": 59144,
       "address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
       "name": "Wrapped Ether",
@@ -10249,6 +10269,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 165 },
-  "timestamp": "2026-03-05T01:48:02.556Z"
+  "version": { "major": 3, "minor": 0, "patch": 166 },
+  "timestamp": "2026-03-07T01:41:01.742Z"
 }
