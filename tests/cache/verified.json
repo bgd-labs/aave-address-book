@@ -4241,6 +4241,15 @@
     },
     "0xB539C6C0fc36ff1572B13ACec343B854937db576": {
       "name": "PendlePriceCapAdapter"
+    },
+    "0x17418038ecF73BA4026c4f428547BF099706F27B": {
+      "name": "ERC1967Proxy"
+    },
+    "0xc293744fFbcf46696D589f5C415e71BC491519cD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1f30d2B155FcDA0F7551dc8BE5dE6a84977685D4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "10": {
