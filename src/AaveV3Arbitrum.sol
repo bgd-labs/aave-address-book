@@ -585,6 +585,12 @@ library AaveV3ArbitrumEModes {
   uint8 internal constant rsETH__USDC_USDT = 6;
 
   uint8 internal constant wstETH__WETH = 7;
+
+  uint8 internal constant AAVE__USDT_USDCn = 8;
+
+  uint8 internal constant ARB__USDT_USDCn = 9;
+
+  uint8 internal constant tBTC__USDT_USDCn = 10;
 }
 library AaveV3ArbitrumExternalLibraries {
   // https://arbiscan.io/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC

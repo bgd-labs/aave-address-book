@@ -1474,6 +1474,14 @@ library AaveV3EthereumEModes {
   uint8 internal constant sUSDe_PT_srUSDe_2APR2026__USDC_USDT_USDe = 38;
 
   uint8 internal constant sUSDe_PT_srUSDe_2APR2026__USDe = 39;
+
+  uint8 internal constant LINK__USDC_USDT = 40;
+
+  uint8 internal constant EURC__USDC_USDT_GHO = 41;
+
+  uint8 internal constant rsETH__USDC_USDT = 42;
+
+  uint8 internal constant XAUt__USDC_USDT_GHO = 43;
 }
 library AaveV3EthereumExternalLibraries {
   // https://etherscan.io/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC

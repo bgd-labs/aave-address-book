@@ -526,6 +526,8 @@ library AaveV3AvalancheEModes {
   uint8 internal constant sUSDe__USDC_USDt_GHO_USDe = 4;
 
   uint8 internal constant wrsETH__WETHe = 5;
+
+  uint8 internal constant EURC__USDC_USDt = 6;
 }
 library AaveV3AvalancheExternalLibraries {
   // https://snowscan.xyz/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC

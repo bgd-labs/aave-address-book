@@ -430,6 +430,8 @@ library AaveV3PlasmaEModes {
   uint8 internal constant syrupUSDT__GHO = 18;
 
   uint8 internal constant syrupUSDT_GHO__USDT0 = 19;
+
+  uint8 internal constant XAUt0__USDT0 = 20;
 }
 library AaveV3PlasmaExternalLibraries {
   // https://plasmascan.to/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC

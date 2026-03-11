@@ -498,6 +498,18 @@ export const E_MODES = {
     liquidationThreshold: 9200,
     liquidationBonus: 10400,
   },
+  '20': {
+    label: 'XAUt0 / USDT0',
+    collateralBitmap: '8',
+    collateralAssets: ['0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 7000,
+    liquidationThreshold: 7500,
+    liquidationBonus: 10750,
+  },
 } as const;
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC',
