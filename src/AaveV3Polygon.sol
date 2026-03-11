@@ -564,6 +564,8 @@ library AaveV3PolygonEModes {
   uint8 internal constant WPOL_stMATIC_MaticX__WPOL = 2;
 
   uint8 internal constant WETH_wstETH__WETH = 3;
+
+  uint8 internal constant AAVE__USDT0_USDCn = 4;
 }
 library AaveV3PolygonExternalLibraries {
   // https://polygonscan.com/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
