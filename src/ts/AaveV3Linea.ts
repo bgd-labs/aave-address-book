@@ -218,6 +218,21 @@ export const E_MODES = {
     liquidationThreshold: 9300,
     liquidationBonus: 10100,
   },
+  '5': {
+    label: 'ezETH / USDC,USDT',
+    collateralBitmap: '32',
+    collateralAssets: ['0x2416092f143378750bb29b79eD961ab195CcEea5'],
+    borrowableBitmap: '12',
+    borrowableAssets: [
+      '0x176211869cA2b568f2A7D4EE941E073a821EE1ff',
+      '0xA219439258ca9da29E9Cc4cE5596924745e12B93',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 7250,
+    liquidationThreshold: 7500,
+    liquidationBonus: 10750,
+  },
 } as const;
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC',

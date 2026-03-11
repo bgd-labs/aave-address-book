@@ -274,6 +274,8 @@ library AaveV3LineaEModes {
   uint8 internal constant weETH__WETH = 3;
 
   uint8 internal constant wrsETH__WETH = 4;
+
+  uint8 internal constant ezETH__USDC_USDT = 5;
 }
 library AaveV3LineaExternalLibraries {
   // https://lineascan.build/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC

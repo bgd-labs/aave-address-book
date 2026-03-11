@@ -419,8 +419,8 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9350,
-    liquidationThreshold: 9550,
+    ltv: 9380,
+    liquidationThreshold: 9580,
     liquidationBonus: 10210,
   },
   '15': {
@@ -497,6 +497,18 @@ export const E_MODES = {
     ltv: 9000,
     liquidationThreshold: 9200,
     liquidationBonus: 10400,
+  },
+  '20': {
+    label: 'XAUt0 / USDT0',
+    collateralBitmap: '8',
+    collateralAssets: ['0x1B64B9025EEbb9A6239575dF9Ea4b9Ac46D4d193'],
+    borrowableBitmap: '1',
+    borrowableAssets: ['0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 7000,
+    liquidationThreshold: 7500,
+    liquidationBonus: 10750,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {

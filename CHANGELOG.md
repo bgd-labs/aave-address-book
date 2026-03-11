@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.47.5](https://github.com/aave-dao/aave-address-book/compare/v4.47.4...v4.47.5) (2026-03-11)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1315](https://github.com/aave-dao/aave-address-book/issues/1315)) ([999a285](https://github.com/aave-dao/aave-address-book/commit/999a28503aea80bb96717e90745025558ecff343))
+
+## [4.47.4](https://github.com/aave-dao/aave-address-book/compare/v4.47.3...v4.47.4) (2026-03-10)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1313](https://github.com/aave-dao/aave-address-book/issues/1313)) ([578f166](https://github.com/aave-dao/aave-address-book/commit/578f16665b813a6b70ce41ea21a4e73847e46a9a))
+
+## [4.47.3](https://github.com/aave-dao/aave-address-book/compare/v4.47.2...v4.47.3) (2026-03-09)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1310](https://github.com/aave-dao/aave-address-book/issues/1310)) ([c615318](https://github.com/aave-dao/aave-address-book/commit/c615318072e42aa12a02b35a417811db35c19ef0))
+
+## [4.47.2](https://github.com/aave-dao/aave-address-book/compare/v4.47.1...v4.47.2) (2026-03-07)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1307](https://github.com/aave-dao/aave-address-book/issues/1307)) ([a3f6c5b](https://github.com/aave-dao/aave-address-book/commit/a3f6c5b9d45264b824ba67ea9cce74c78701c7c0))
+
+## [4.47.1](https://github.com/aave-dao/aave-address-book/compare/v4.47.0...v4.47.1) (2026-03-07)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1305](https://github.com/aave-dao/aave-address-book/issues/1305)) ([57fb2af](https://github.com/aave-dao/aave-address-book/commit/57fb2af09c12f7cfa91fbb0fb38a6e28d05cf534))
+
+## [4.47.0](https://github.com/aave-dao/aave-address-book/compare/v4.46.5...v4.47.0) (2026-03-06)
+
+
+### Features
+
+* add xLayer v3.6 contracts ([#1302](https://github.com/aave-dao/aave-address-book/issues/1302)) ([8bdb6d4](https://github.com/aave-dao/aave-address-book/commit/8bdb6d4842e922fd5c8b66a849fd958dd3972e93))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1299](https://github.com/aave-dao/aave-address-book/issues/1299)) ([0ccaa1f](https://github.com/aave-dao/aave-address-book/commit/0ccaa1f2b572335109725c1b7c4addec88e5e139))
+* **cache:** automated cache update - updated addresses ([#1300](https://github.com/aave-dao/aave-address-book/issues/1300)) ([10553da](https://github.com/aave-dao/aave-address-book/commit/10553da732d1e8608d8251d8060573483dc1516f))
+
 ## [4.46.5](https://github.com/aave-dao/aave-address-book/compare/v4.46.4...v4.46.5) (2026-03-03)
 
 

@@ -476,6 +476,14 @@ library AaveV3BaseEModes {
   uint8 internal constant cbBTC__USDC_GHO = 10;
 
   uint8 internal constant syrupUSDC__USDC_GHO = 11;
+
+  uint8 internal constant AAVE__USDC_GHO = 12;
+
+  uint8 internal constant EURC__USDC_GHO = 13;
+
+  uint8 internal constant LBTC__USDC_GHO = 14;
+
+  uint8 internal constant tBTC__USDC_GHO = 15;
 }
 library AaveV3BaseExternalLibraries {
   // https://basescan.org/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
