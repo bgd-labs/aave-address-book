@@ -18,6 +18,25 @@ library GhoPlasma {
   // https://plasmascan.to/address/0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6
   address internal constant GHO_CCIP_STEWARD = 0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6;
 
+  // https://plasmascan.to/address/0x86992b2E2385E478dd2eeBfaE06369636e0a64E8
+  address internal constant GHO_GSM_STEWARD = 0x86992b2E2385E478dd2eeBfaE06369636e0a64E8;
+
+  // https://plasmascan.to/address/0xA5Ba213867E175A182a5dd6A9193C6158738105A
+  address internal constant GHO_AAVE_CORE_STEWARD = 0xA5Ba213867E175A182a5dd6A9193C6158738105A;
+
+  // https://plasmascan.to/address/0x6aC541605b0317dE076C9FeC2842902c844dEa74
+  address internal constant GHO_RESERVE = 0x6aC541605b0317dE076C9FeC2842902c844dEa74;
+
+  // https://plasmascan.to/address/0xd06114F714beCD6f373e5cE94E07278eF46eBF37
+  address internal constant GSM_USDT = 0xd06114F714beCD6f373e5cE94E07278eF46eBF37;
+
+  // https://plasmascan.to/address/0xD70BE7e6111EA563226cb8e53B1F195Da4E566E2
+  address internal constant GSM_USDT_FEE_STRATEGY = 0xD70BE7e6111EA563226cb8e53B1F195Da4E566E2;
+
+  // https://plasmascan.to/address/0xa9afaE6A53E90f9E4CE0717162DF5Bc3d9aBe7B2
+  address internal constant GSM_USDT_ORACLE_SWAP_FREEZER =
+    0xa9afaE6A53E90f9E4CE0717162DF5Bc3d9aBe7B2;
+
   // https://plasmascan.to/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
   address internal constant RISK_COUNCIL = 0x8513e6F37dBc52De87b166980Fa3F50639694B60;
 }
