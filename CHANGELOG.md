@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.47.6](https://github.com/aave-dao/aave-address-book/compare/v4.47.5...v4.47.6) (2026-03-11)
+
+
+### Bug Fixes
+
+* **deps:** bump peter-evans/create-pull-request ([#1317](https://github.com/aave-dao/aave-address-book/issues/1317)) ([94e2e15](https://github.com/aave-dao/aave-address-book/commit/94e2e156d9dca6cb8aba5cc5b7a6c3818d51a8b0))
+
 ## [4.47.5](https://github.com/aave-dao/aave-address-book/compare/v4.47.4...v4.47.5) (2026-03-11)
 
 
