@@ -389,6 +389,9 @@ library AaveV3PlasmaAssets {
 
   // https://plasmascan.to/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
   address internal constant GHO_INTEREST_RATE_STRATEGY = 0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
+
+  // https://plasmascan.to/address/0x28C48A7630A730F5f2297dA7A72b7F31d9E99e19
+  address internal constant GHO_STATA_TOKEN = 0x28C48A7630A730F5f2297dA7A72b7F31d9E99e19;
 }
 library AaveV3PlasmaEModes {
   uint8 internal constant NONE = 0;
