@@ -225,6 +225,7 @@ export const ASSETS = {
     V_TOKEN: '0xB8A2C006202071171582C53B95942d645eD10891',
     INTEREST_RATE_STRATEGY: '0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC',
     ORACLE: '0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1',
+    STATA_TOKEN: '0x28C48A7630A730F5f2297dA7A72b7F31d9E99e19',
   },
 } as const;
 export const E_MODES = {
@@ -419,8 +420,8 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9380,
-    liquidationThreshold: 9580,
+    ltv: 9400,
+    liquidationThreshold: 9600,
     liquidationBonus: 10210,
   },
   '15': {
