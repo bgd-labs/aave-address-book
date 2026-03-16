@@ -117,9 +117,7 @@ describe('verification', {timeout: 500_000}, () => {
   it('should have all contracts verified except for the known set of errors', async () => {
     const addressesToCheck = flattenedAddresses.filter(
       (item) =>
-        ![ChainId.harmony, ChainId.fantom, ChainId.zksync, ChainId.megaeth].includes(
-          item.chainId as any,
-        ) &&
+        ![ChainId.harmony, ChainId.fantom, ChainId.zksync].includes(item.chainId as any) &&
         !ChainList[item.chainId].testnet &&
         !knownErrors[item.chainId]?.[item.value] &&
         (!verified[item.chainId]?.[item.value] ||
