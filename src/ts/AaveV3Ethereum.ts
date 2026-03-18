@@ -1287,7 +1287,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9100,
     liquidationThreshold: 9300,
-    liquidationBonus: 10350,
+    liquidationBonus: 10320,
   },
   '35': {
     label: 'USDe,PT_USDe_5FEB2026,PT_USDe_7MAY2026 / USDe',
@@ -1324,7 +1324,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10450,
+    liquidationBonus: 10420,
   },
   '37': {
     label: 'sUSDe,PT_sUSDE_5FEB2026,PT_sUSDE_7MAY2026 / USDe',
