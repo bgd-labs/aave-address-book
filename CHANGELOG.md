@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.47.12](https://github.com/aave-dao/aave-address-book/compare/v4.47.11...v4.47.12) (2026-03-19)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1331](https://github.com/aave-dao/aave-address-book/issues/1331)) ([3d01e63](https://github.com/aave-dao/aave-address-book/commit/3d01e636c19917781cd4d6cb1856f219b0bf9507))
+
 ## [4.47.11](https://github.com/aave-dao/aave-address-book/compare/v4.47.10...v4.47.11) (2026-03-18)
 
 
