@@ -35,9 +35,11 @@ import { inkProtoV3 } from './configs/pools/ink';
 import { plasmaProtoV3 } from './configs/pools/plasma';
 import { megaEthProtoV3 } from './configs/pools/megaeth';
 import { xLayerProtoV3 } from './configs/pools/xlayer';
+import { ethereumDevnetV4Pool } from './configs/v4/ethereum';
 import { generateGovernanceLibrary } from './generator/governanceV3Generator';
 import { generateProtocolV2Library } from './generator/protocolV2Generator';
 import { generateProtocolV3Library } from './generator/protocolV3Generator';
+import { generateProtocolV4Library } from './generator/protocolV4Generator';
 import { generateUmbrellaLibrary } from './generator/umbrellaGenerator';
 import { generateGovV2 } from './generator/governanceV2Generator';
 import { prefixWithGeneratedWarning } from './generator/utils';
@@ -191,6 +193,10 @@ async function main() {
       xLayerProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
+  const v4LibraryNames = [
+    ethereumDevnetV4Pool,
+  ].map((config) => generateProtocolV4Library(config));
+
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle].map((config) =>
     generateGho(config),
   );
@@ -252,6 +258,7 @@ async function main() {
     v1Library,
     v2LibraryNames,
     v3LibraryNames,
+    v4LibraryNames,
     networkAddresses,
     govImports,
     smImports,

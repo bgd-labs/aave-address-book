@@ -1,4 +1,4 @@
-import { Hex } from 'viem';
+import {Hex} from 'viem';
 
 interface KnownInterfaces<T extends number | Hex = any> {
   value: T;
@@ -157,4 +157,11 @@ export interface UmbrellaConfig {
     PERMISSIONED_PAYLOADS_CONTROLLER?: Hex;
     DEFICIT_OFFSET_CLINIC_STEWARD?: Hex;
   };
+}
+
+export interface PoolV4Config {
+  name: string;
+  chainId: number;
+  deployJson: string;
+  additionalAddresses?: Record<string, Hex>;
 }
