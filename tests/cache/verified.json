@@ -1,4 +1,667 @@
 {
+  "1": {
+    "0xEd42a7D8559a463722Ca4beD50E0Cc05a386b0e1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9AEE0B04504CeF83A65AC3f0e838D0593BCb2BC7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xdAbad81aF85554E9ae636395611C58F7eC1aAEc5": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x06a1795a88b82700896583e123F46BE43877bFb6": {
+      "name": "VotingMachine"
+    },
+    "0x6ACe1Bf22D57a33863161bFDC851316Fb0442690": {
+      "name": "VotingPortal"
+    },
+    "0x9Ded9406f088C10621BE628EEFf40c1DF396c172": {
+      "name": "VotingPortal"
+    },
+    "0xFe4683C18aaad791B6AFDF0a8e1Ed5C6e2c9ecD6": {
+      "name": "VotingPortal"
+    },
+    "0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0x971c82c8316aD611904F95616c21ce90837f1856": {
+      "name": "GovernanceDataHelper"
+    },
+    "0x77976B51569896523EE215962Ee91ff236Fa50E8": {
+      "name": "VotingMachineDataHelper"
+    },
+    "0x94363B11b37BC3ffe43AB09cff5A010352FE85dC": {
+      "name": "MetaDelegateHelper"
+    },
+    "0x73C6Fb358dDA8e84D50e98A98F7c0dF32e15C7e9": {
+      "name": "EmergencyRegistry"
+    },
+    "0xa198Fac58E02A5C5F8F7e877895d50cFa9ad1E04": {
+      "name": "GovernancePowerStrategy"
+    },
+    "0x4457cA11E90f416Cc1D3a8E1cA41C0cdEcC251d4": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0xCe52ab41C40575B072A18C9700091Ccbe4A06710": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x5300A1a15135EA4dc7aD5a167152C01EFc9b192A": {
+      "name": "Executor"
+    },
+    "0x17Dd33Ed0e3dD2a80E37489B8A63063161BE6957": {
+      "name": "Executor"
+    },
+    "0xA16044F268d84599e58E851b25f4DBA061DC6088": {
+      "name": "VotingStrategy"
+    },
+    "0xa638c14525CAEE8e498A67b409CCb1B7b34c3981": {
+      "name": "DataWarehouse"
+    },
+    "0x24a42fD28C976A61Df5D00D0599C34c4f90748c8": {
+      "name": "LendingPoolAddressesProvider"
+    },
+    "0x3dfd23A6c5E8BbcFc9581d2E864a68feb6a076d3": {
+      "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0x398eC7346DcD622eDc5ae82352F02bE94C62d119": {
+      "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0xAcc030EF66f9dFEAE9CbB0cd1B25654b82cFA8d5": {
+      "name": "LendingPoolAddressesProvider"
+    },
+    "0x7937D4799803FbBe595ed57278Bc4cA21f3bFfCB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xb9184a4480830bf89B55b73631E287Df9079F466": {
+      "name": "LendingPool"
+    },
+    "0x23A875eDe3F1030138701683e42E9b16A7F87768": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9f3Cc7b6f5F75d97735763c22cb280dbF90f17a2": {
+      "name": "LendingPoolConfigurator"
+    },
+    "0xA50ba011c48153De246E5192C8f9258A2ba79Ca9": {
+      "name": "AaveOracle"
+    },
+    "0x8A32f49FFbA88aba6EFF96F45D8BD1D4b3f35c7D": {
+      "name": "LendingRateOracle"
+    },
+    "0xc443AD9DDE3cecfB9dfC5736578f447aFE3590ba": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xa5ea4371b3A8B18a7713193Cd3b2d7C1761901a4": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0x2CFe3ec4d5a6811f4B8067F0DE7e47DfA938Aa30": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c": {
+      "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0xcfC26009618ec2Ca8787180116a37Caa354a465C": {
+      "name": "AaveV2ConfigEngine"
+    },
+    "0x3cd1dFB81C50A5300C60a181ED145a7286d81e0a": {
+      "name": "MigrationHelperAmm"
+    },
+    "0x52D306e36E3B6B02c153d0266ff0f85d18BCD413": {
+      "name": "LendingPoolAddressesProviderRegistry"
+    },
+    "0x6e4D068105052C3877116DCF86f5FF36B7eCa2B8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x00e50FAB64eBB37b87df06Aa46b8B35d5f1A4e1A": {
+      "name": "UiPoolDataProviderV2V3"
+    },
+    "0x8E8dAd5409E0263a51C0aB5055dA66Be28cFF922": {
+      "name": "WalletBalanceProvider"
+    },
+    "0xbe9a7B3F2f54E18D7C0a17B03ad84Ac2D1D28eAC": {
+      "name": "WrappedTokenGatewayV2"
+    },
+    "0xE1e62c3ee0c581F715fBb0e23CDA536Fc29eeB2c": {
+      "name": "ClinicStewardV2"
+    },
+    "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": {
+      "name": "WETH9"
+    },
+    "0xf9Fb4AD91812b704Ba883B11d2B576E890a6730A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA4C273d9A0C1fe2674F0E845160d6232768a3064": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xdb838A27f91b112D722c854636F2c23720ea007E": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x6B175474E89094C44Da98b954EedeAC495271d0F": {
+      "name": "Dai"
+    },
+    "0x79bE75FFC64DD58e66787E4Eae470c8a1FD08ba4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3F4fA4937E72991367DC32687BC3278f095E7EAa": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xA57cDBfE9FA29Ad842f53100d68789999c04AA36": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x53a7856Cb3092E9c7C2c50e05E5b24462B7B9698": {
+      "name": "CLSynchronicityPriceAdapterBaseToPeg"
+    },
+    "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": {
+      "name": "FiatTokenProxy"
+    },
+    "0xd24946147829DEaA935bE2aD85A3291dbf109c80": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xCFDC74b97b69319683fec2A4Ef95c4Ab739F1B12": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0B9a09cc52afc0d38ACcbd649aca1Da299d34454": {
+      "name": "CLSynchronicityPriceAdapterBaseToPeg"
+    },
+    "0xdAC17F958D2ee523a2206206994597C13D831ec7": {
+      "name": "TetherToken"
+    },
+    "0x17a79792Fe6fE5C95dFE95Fe3fCEE3CAf4fE4Cb7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDcFE9BfC246b02Da384de757464a35eFCa402797": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2223cd25f60F3e4035fcEfE44612773AFEbFd8ab": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xCB45B5c861a6468145b1720A620C38f55f736B74": {
+      "name": "CLSynchronicityPriceAdapterBaseToPeg"
+    },
+    "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599": {
+      "name": "WBTC"
+    },
+    "0x13B2f6928D7204328b0E8E4BCd0379aA06EA21FA": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3b99fdaFdfE70d65101a4ba8cDC35dAFbD26375f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd102F58BF7B2509A2d8664be7C4A90102526B5c6": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xFD858c8bC5ac5e10f01018bC78471bb0DC392247": {
+      "name": "CLSynchronicityPriceAdapterPegToBase"
+    },
+    "0xA478c2975Ab1Ea89e8196811F51A7B7Ade33eB11": {
+      "name": "UniswapV2Pair"
+    },
+    "0x9303EabC860a743aABcc3A1629014CaBcc3F8D36": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x23bcc861b989762275165d08B127911F09c71628": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x52E39422cd86a12a13773D86af5FdBF5665989aD": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x66A6b87A18DB78086acda75b7720DC47CdABcC05": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xBb2b8038a1640196FbE3e38816F3e67Cba72D940": {
+      "name": "UniswapV2Pair"
+    },
+    "0xc58F53A8adff2fB4eb16ED56635772075E2EE123": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x02aAeB4C7736177242Ee0f71f6f6A0F057Aba87d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7004BB6F2013F13C54899309cCa029B49707E547": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xDFC14d2Af169B0D36C4EFF567Ada9b2E0CAE044f": {
+      "name": "UniswapV2Pair"
+    },
+    "0xe59d2FF6995a926A574390824a657eEd36801E55": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x859ED7D9E92d1fe42fF95C3BC3a62F7cB59C373E": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB525547968610395B60085bDc8033FFeaEaa5F64": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xB6909B960DbbE7392D405429eB2b3649752b4838": {
+      "name": "UniswapV2Pair"
+    },
+    "0xA1B0edF4460CC4d8bFAA18Ed871bFF15E5b57Eb4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3Fbef89A21Dc836275bC912849627b33c61b09b4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB394D8a1CE721630Cbea8Ec110DCEf0D283EDE3a": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xAE461cA67B15dc8dc81CE7615e0320dA1A9aB8D5": {
+      "name": "UniswapV2Pair"
+    },
+    "0xE340B25fE32B1011616bb8EC495A4d503e322177": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x925E3FDd927E20e33C3177C4ff6fb72aD1133C87": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3B148Fa5E8297DB64262442052b227328730EA81": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0x3dA1313aE46132A397D90d95B1424A9A7e3e0fCE": {
+      "name": "UniswapV2Pair"
+    },
+    "0x0ea20e7fFB006d4Cfe84df2F72d8c7bD89247DB0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xF3f1a76cA6356a908CdCdE6b2AC2eaace3739Cd0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x10F7078e2f29802D2AC78045F61A69aE0883535A": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xa2107FA5B38d9bbd2C461D6EDf11B11A50F6b974": {
+      "name": "UniswapV2Pair"
+    },
+    "0xb8db81B84d30E2387de0FF330420A4AAA6688134": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xeDe4052ed8e1F422F4E5062c679f6B18693fEcdc": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x30adCEfA5d483284FD79E1eFd54ED3e0A8eaA632": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xC2aDdA861F89bBB333c90c492cB837741916A225": {
+      "name": "UniswapV2Pair"
+    },
+    "0x370adc71f67f581158Dc56f539dF5F399128Ddf9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf36C394775285F89bBBDF09533421E3e81e8447c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xEBF4A448ff3D835F8FA883941a3E9D5E74B40B5E": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0x8Bd1661Da98EBDd3BD080F0bE4e6d9bE8cE9858c": {
+      "name": "UniswapV2Pair"
+    },
+    "0xA9e201A4e269d6cd5E9F0FcbcB78520cf815878B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2A8d5B1c1de15bfcd5EC41368C0295c60D8Da83c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe2f7C06906A9dB063C28EB5c71B6Ab454e5222dD": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0x43AE24960e5534731Fc831386c07755A2dc33D47": {
+      "name": "UniswapV2Pair"
+    },
+    "0x38E491A71291CD43E8DE63b7253E482622184894": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xfd15008efA339A2390B48d2E0Ca8Abd523b406d3": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x29bfee7E90572Abf1088a58a145a10D051b78E46": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xd3d2E2692501A5c9Ca623199D38826e513033a17": {
+      "name": "UniswapV2Pair"
+    },
+    "0x3D26dcd840fCC8e4B2193AcE8A092e4a65832F9f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0D878FbB01fbEEa7ddEFb896d56f1D3167af919F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xC2E93e8121237A885A00627975eB06C7BF9808d6": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc": {
+      "name": "UniswapV2Pair"
+    },
+    "0x391E86e2C002C70dEe155eAceB88F7A3c38f5976": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x26625d1dDf520fC8D975cc68eC6E0391D9d3Df61": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x71c4a2173CE3620982DC8A7D870297533360Da4E": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0x004375Dff511095CC5A197A54140a24eFEF3A416": {
+      "name": "UniswapV2Pair"
+    },
+    "0x2365a4890eD8965E564B7E2D27C38Ba67Fec4C6F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x36dA0C5dC23397CBf9D13BbD74E93C04f99633Af": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x11f4ba2227F21Dc2A9F0b0e6Ea740369d580a212": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0x2fDbAdf3C4D5A8666Bc06645B8358ab803996E28": {
+      "name": "UniswapV2Pair"
+    },
+    "0x5394794Be8b6eD5572FCd6b27103F46b5F390E8f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xDf70Bdf01a3eBcd0D918FF97390852A914a92Df7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x664223b8Bb0934aE0970e601F452f75AaCe9Aa2A": {
+      "name": "UniswapV2PriceProvider"
+    },
+    "0x1efF8aF5D577060BA4ac8A29A13525bb0Ee2A3D5": {
+      "name": "BPool"
+    },
+    "0x358bD0d980E031E23ebA9AA793926857703783BD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xF655DF3832859cfB0AcfD88eDff3452b9Aa6Db24": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4CA8D8fC2b4fCe8A2dcB71Da884bba042d48E067": {
+      "name": "BalancerSharedPoolPriceProvider"
+    },
+    "0x59A19D8c652FA0284f44113D0ff9aBa70bd46fB4": {
+      "name": "BPool"
+    },
+    "0xd109b2A304587569c84308c55465cd9fF0317bFB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xF41A5Cc7a61519B08056176d7B4b87AB34dF55AD": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2e4e78936b100be6Ef85BCEf7FB25bC770B02B85": {
+      "name": "BalancerSharedPoolPriceProvider"
+    },
+    "0x50379f632ca68D36E50cfBC8F78fe16bd1499d1e": {
+      "name": "EIP173Proxy"
+    },
+    "0xd145c6ae8931ed5Bca9b5f5B7dA5991F5aB63B5c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x40533CC601Ec5b79B00D76348ADc0c81d93d926D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7843eA2E3e60b24cc12B56C5627Adc7F9f0749D6": {
+      "name": "GUniOracle"
+    },
+    "0xD2eeC91055F07fE24C9cCB25828ecfEFd4be0c41": {
+      "name": "EIP173Proxy"
+    },
+    "0xCa5DFDABBfFD58cfD49A9f78Ca52eC8e0591a3C5": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0B7c7d9c5548A23D0455d1edeC541cc2AD955a9d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x399e3bb2BBd49c570aa6edc6ac390E0D0aCbbD5e": {
+      "name": "GUniOracle"
+    },
+    "0x6FdfafB66d39cD72CFE7984D3Bbcc76632faAb00": {
+      "name": "LendingPoolAddressesProvider"
+    },
+    "0x37D7306019a38Af123e4b245Eb6C28AF552e0bB0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xfbF029508c061B440D0cF7Fd639e77Fb2E196241": {
+      "name": "PermissionedLendingPool"
+    },
+    "0x4e1c7865e7BE78A7748724Fa0409e88dc14E67aA": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8e5E28f273E3a6612A9C5d6F16aa67DA156042F4": {
+      "name": "LendingPoolConfigurator"
+    },
+    "0xB8a7bc0d13B1f5460513040a97F404b4fea7D2f3": {
+      "name": "AaveOracle"
+    },
+    "0xfA3c34d734fe0106C87917683ca45dffBe3b3B00": {
+      "name": "LendingRateOracle"
+    },
+    "0x71B53fC437cCD988b1b89B1D4605c3c3d0C810ea": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x837696219C9a3775a856BEBC02DB1fA918C8a46e": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0xAce1d11d836cb3F51Ef658FD4D353fFb3c301218": {
+      "name": "ArcTimelock"
+    },
+    "0x33B09130b035d6D7e57d76fEa0873d9545FA7557": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xF4a1F5fEA79C3609514A417425971FadC10eCfBE": {
+      "name": "PermissionManager"
+    },
+    "0xd35f648C3C7f17cd1Ba92e5eac991E3EfcD4566d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe8D876034F96081063cD57Cd87b94a156b4E03E1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x81D7Bb11D682005B3Fca0Ef48381263BeC9b2d1C": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x986b5E1e1755e3C2440e960477f25201B0a8bbD4": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xe6d6E7dA65A2C18109Ff56B7CBBdc7B706Fc13F8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xc371FB4513c23Fc962fe23B12cFBD75E1D37ED91": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1205ACe6831E5518E00A16f1820cD73ce198bEF6": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xdeb288F737066589598e9214E782fa5A8eD689e8": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x319190E3Bbc595602A9E63B2bCfB61c6634355b1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x932167279A4ed3b879bA7eDdC85Aa83551f3989D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xC2B0945C6D0A842eC2a1345f08c4ef2060452B6A": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9": {
+      "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0x89eFaC495C65d43619c661df654ec64fc10C0A75": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0ac4c7790BC96923b71BfCee44a6923fd085E0c8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5E4b5f5eb05E244632e0eA584525F11Dd03f5B38": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x6Df09E975c830ECae5bd4eD9d90f3A95a4f88012": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5": {
+      "name": "LendingPoolAddressesProvider"
+    },
+    "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x02D84abD89Ee9DB409572f19B6e1596c301F3c81": {
+      "name": "LendingPool"
+    },
+    "0x311Bb771e4F8952E6Da169b425E7e92d6Ac45756": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x246ca67522dF5895cD6cf8807Ec161954ea1bA61": {
+      "name": "LendingPoolConfigurator"
+    },
+    "0x057835Ad21a177dbdd3090bB1CAE03EaCF78Fc6d": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0xcc9632725266473ab5d42320E8Ae00437A1df3bB": {
+      "name": "LendingPoolCollateralManager"
+    },
+    "0xd784927Ff2f95ba542BfC824c8a8a98F3495f6b5": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xEE56e2B3D491590B5b31738cC34d5232F378a8D5": {
+      "name": "Executor"
+    },
+    "0xAf5c88245CD02Ff3DF332EF1E1FfD5bc5D1d87cd": {
+      "name": "ParaSwapDebtSwapAdapterV2"
+    },
+    "0x9eCed0293e7B73CFf4a2b4F9C82aAc8346158bd9": {
+      "name": "AaveV2ConfigEngine"
+    },
+    "0xd417D34D7aAf70B24FbC6b36808E3396c991C5e4": {
+      "name": "MigrationHelperMainnet"
+    },
+    "0xbD37610BBB1ddc2a22797F7e3f531B59902b7bA7": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x80Aca0C645fEdABaa20fd2Bf0Daf57885A309FE6": {
+      "name": "ParaSwapRepayAdapter"
+    },
+    "0x135896DE8421be2ec868E0b811006171D9df802A": {
+      "name": "ParaSwapLiquiditySwapAdapter"
+    },
+    "0xa0d9C1E9E48Ca30c8d8C3B5D69FF5dc1f6DFfC24": {
+      "name": "WrappedTokenGatewayV2"
+    },
+    "0x6A14eBe9A934c8EFE15C3811a999149472876b56": {
+      "name": "ClinicStewardV2"
+    },
+    "0x3Ed3B47Dd13EC9a98b44e6204A523E766B225811": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x531842cEbbdD378f8ee36D171d6cC9C4fcf475Ec": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8A50d613d683c1c381aA027c4d922aE55Fd8A3B3": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x9ff58f4fFB29fA2266Ab25e75e2A8b3503311656": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9c39809Dec7F95F5e0713634a4D0701329B3b4d2": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xdbcea77E2C4A0e6158a7555C249f28A8Da449178": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x030bA81f1c18d280636F32af80b9AAd02Cf0854e": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xF63B34710400CAd3e044cFfDcAb00a0f32E33eCf": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2D8A2d50D3158085180D32A9C0655b13bce81f22": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e": {
+      "name": "YFI"
+    },
+    "0x5165d24277cD063F5ac44Efd447B27025e888f37": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7EbD09022Be45AD993BAA1CEc61166Fcc8644d97": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2c206fa2127aB7f1CE3dc987daf683Ed5B9CF069": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x7c5d4F8345e66f68099581Db340cd65B078C41f4": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xE41d2489571d322189246DaFA5ebDe1F4699F498": {
+      "name": "ZRXToken"
+    },
+    "0xDf7FF54aAcAcbFf42dfe29DD6144A69b629f8C9e": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x85791D117A392097590bDeD3bD5abB8d5A20491A": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x91773a61759398d33C252F25A38DA77a51e0c9Ff": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0x2Da4983a622a8498bb1a21FaE9D8F6C664939962": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984": {
+      "name": "Uni"
+    },
+    "0xB9D7CB55f463405CDfBe4E90a6D2Df01C2B92BF1": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5BdB050A92CADcCfCDcCCBFC17204a1C9cC0Ab73": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x87cCa171a2125efca9868F9Bc1FfD7B7c80dC5a3": {
+      "name": "DefaultReserveInterestRateStrategy"
+    },
+    "0xD6aA3D25116d8dA79Ea0246c4826EB951872e02e": {
+      "name": "EACAggregatorProxy"
+    }
+  },
+  "10": {
+    "0x48A9FE90bce5EEd790f3F4Ce192d1C0B351fd4Ca": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0E1a3Af1f9cC76A62eD31eDedca291E63632e7c4": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0x6c5264C380C7022e54f585c4E354ffb6f221a03b": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x360c0a69Ed2912351227a0b745f890CB2eBDbcFe": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x746c675dAB49Bcd5BB9Dc85161f2d7Eb435009bf": {
+      "name": "Executor"
+    }
+  },
+  "56": {
+    "0x9d33ee6543C9b2C8c183b8fb58fB089266cffA19": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xcabb46FfB38c93348Df16558DF156e9f68F9F7F1": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xE5EF2Dd06755A97e975f7E282f828224F2C3e627": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xE3B770Dc4ae3f8bECaB3Ed12dE692c741603e16A": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xe4FB5e3F506BE0095f38004f993D16fdA8224383": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x1A0581dd5C7C3DA4Ba1CDa7e0BcA7286afc4973b": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x9390B1735def18560c509E2d0bc090E9d6BA257a": {
+      "name": "Executor"
+    }
+  },
   "100": {
     "0xF4EbEEC27ef030A543Ae9b392d12fe63f87F6C4A": {
       "name": "AaveProtocolDataProvider"
