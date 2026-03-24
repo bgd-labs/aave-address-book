@@ -1301,8 +1301,8 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9210,
-    liquidationThreshold: 9410,
+    ltv: 9260,
+    liquidationThreshold: 9460,
     liquidationBonus: 10220,
   },
   '36': {
@@ -1338,8 +1338,8 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9120,
-    liquidationThreshold: 9320,
+    ltv: 9170,
+    liquidationThreshold: 9370,
     liquidationBonus: 10320,
   },
   '38': {
@@ -1359,7 +1359,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9000,
     liquidationThreshold: 9200,
-    liquidationBonus: 10360,
+    liquidationBonus: 10330,
   },
   '39': {
     label: 'sUSDe,PT_srUSDe_2APR2026 / USDe',
@@ -1374,7 +1374,7 @@ export const E_MODES = {
     ltvzeroAssets: [],
     ltv: 9200,
     liquidationThreshold: 9400,
-    liquidationBonus: 10160,
+    liquidationBonus: 10130,
   },
   '40': {
     label: 'LINK / USDC,USDT',
