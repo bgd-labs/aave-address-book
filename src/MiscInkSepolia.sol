@@ -3,6 +3,6 @@
 pragma solidity >=0.6.0;
 
 library MiscInkSepolia {
-  // https://explorer-sepolia.inkonchain.com/
+  // https://explorer-sepolia.inkonchain.com/address/0xd8247C7926841337E8adf9fD9E87026992C45062
   address internal constant TRANSPARENT_PROXY_FACTORY = 0xd8247C7926841337E8adf9fD9E87026992C45062;
 }
