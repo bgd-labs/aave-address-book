@@ -20,3 +20,11 @@ export const inkAddresses: NetworkAddresses = {
     TRANSPARENT_PROXY_FACTORY: '0xEB0682d148e874553008730f0686ea89db7DA412',
   },
 };
+
+export const inkSepoliaAddresses: NetworkAddresses = {
+  name: 'InkSepolia',
+  chainId: 763373, // TODO: replace from toolbox
+  addresses: {
+    TRANSPARENT_PROXY_FACTORY: '0xd8247C7926841337E8adf9fD9E87026992C45062'
+  },
+};

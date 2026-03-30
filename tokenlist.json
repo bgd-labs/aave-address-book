@@ -3561,6 +3561,28 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072",
+      "name": "Bitcoin",
+      "decimals": 8,
+      "symbol": "BTC.b",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/btc.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0x12b70410D60f926558245f769059eA3Fc7A7353E",
+      "name": "Aave Ethereum BTCb",
+      "decimals": 8,
+      "symbol": "aEthBTCb",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/abtc.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -9657,6 +9679,68 @@
       }
     },
     {
+      "chainId": 763373,
+      "address": "0x9eF9f9B22d3CA9769e28e769e2AAA3C2B0072D0e",
+      "name": "Wrapped SP500 xStock",
+      "decimals": 18,
+      "symbol": "wSPYx",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 763373,
+      "address": "0x4199CC1F5ed0d796563d7CcB2e036253E2C18281",
+      "name": "Aave Ink Sepolia wSPYx",
+      "decimals": 18,
+      "symbol": "aInkSepwSPYx",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
+        "underlying": "0x9eF9f9B22d3CA9769e28e769e2AAA3C2B0072D0e"
+      }
+    },
+    {
+      "chainId": 763373,
+      "address": "0x267ED9BC43B16D832cB9Aaf0e3445f0cC9f536d9",
+      "name": "Wrapped Nasdaq xStock",
+      "decimals": 18,
+      "symbol": "wQQQx",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 763373,
+      "address": "0xE20dBC7119c635B1B51462f844861258770e0699",
+      "name": "Aave Ink Sepolia wQQQx",
+      "decimals": 18,
+      "symbol": "aInkSepwQQQx",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
+        "underlying": "0x267ED9BC43B16D832cB9Aaf0e3445f0cC9f536d9"
+      }
+    },
+    {
+      "chainId": 763373,
+      "address": "0x6b57475467cd854d36Be7FB614caDa5207838943",
+      "name": "USD Coin",
+      "decimals": 6,
+      "symbol": "USDC",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdc.svg"
+    },
+    {
+      "chainId": 763373,
+      "address": "0x5cc46d2b1103aB23CFD63eF8631480bbf4eB40FE",
+      "name": "Aave Ink Sepolia USDC",
+      "decimals": 6,
+      "symbol": "aInkSepUSDC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdc.svg",
+      "extensions": {
+        "pool": "0x6807dc923806fE8Fd134338EABCA509979a7e0cB",
+        "underlying": "0x6b57475467cd854d36Be7FB614caDa5207838943"
+      }
+    },
+    {
       "chainId": 9745,
       "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "name": "USDT0",
@@ -10467,6 +10551,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 168 },
-  "timestamp": "2026-03-30T02:04:27.827Z"
+  "version": { "major": 3, "minor": 0, "patch": 169 },
+  "timestamp": "2026-03-30T19:42:41.132Z"
 }
