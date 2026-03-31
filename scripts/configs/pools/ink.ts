@@ -26,7 +26,7 @@ export const inkProtoV3: PoolConfig = {
 
 export const inkSepoliaProtoV3: PoolConfig = {
   name: 'InkSepolia',
-  chainId: 763373, // TODO: replace from toolbox
+  chainId: ChainId.ink_sepolia,
   POOL_ADDRESSES_PROVIDER: '0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D',
   additionalAddresses: {
     STATA_FACTORY: '0xCC29b02a414B6Bb66490edAa25d3e8E9471Fcb96',

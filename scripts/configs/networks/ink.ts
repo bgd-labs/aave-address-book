@@ -23,7 +23,7 @@ export const inkAddresses: NetworkAddresses = {
 
 export const inkSepoliaAddresses: NetworkAddresses = {
   name: 'InkSepolia',
-  chainId: 763373, // TODO: replace from toolbox
+  chainId: ChainId.ink_sepolia,
   addresses: {
     TRANSPARENT_PROXY_FACTORY: '0xd8247C7926841337E8adf9fD9E87026992C45062'
   },
