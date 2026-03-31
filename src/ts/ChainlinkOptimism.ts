@@ -11,9 +11,6 @@ export const WSTETH__ETH = '0x524299Ab0987a7c4B3c8022a35669DdcdC715a10';
 // https://optimistic.etherscan.io/address/0x7CFB4fac1a2FDB1267F8bc17FADc12804AC13CFE
 export const ONE__USD = '0x7CFB4fac1a2FDB1267F8bc17FADc12804AC13CFE';
 
-// https://optimistic.etherscan.io/address/0x2fF1EB7D0ceC35959F0248E9354c3248c6683D9b
-export const FLOW__USD = '0x2fF1EB7D0ceC35959F0248E9354c3248c6683D9b';
-
 // https://optimistic.etherscan.io/address/0x5a61374950D4BFa5a3D4f2CA36FC1d23A92b6f21
 export const TBTC__USD = '0x5a61374950D4BFa5a3D4f2CA36FC1d23A92b6f21';
 
@@ -77,9 +74,6 @@ export const STX__USD = '0x602eB777BE29Fbe63349A33306bD73Ff333D02bB';
 // https://optimistic.etherscan.io/address/0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0
 export const MIMATIC__USD = '0x73A3919a69eFCd5b19df8348c6740bB1446F5ed0';
 
-// https://optimistic.etherscan.io/address/0x0ded608AFc23724f614B76955bbd9dFe7dDdc828
-export const MATIC__USD = '0x0ded608AFc23724f614B76955bbd9dFe7dDdc828';
-
 // https://optimistic.etherscan.io/address/0x14d2d3a82AeD4019FddDfe07E8bdc485fb0d2249
 export const STETH__ETH = '0x14d2d3a82AeD4019FddDfe07E8bdc485fb0d2249';
 
@@ -122,6 +116,9 @@ export const rswETH__ETH_Exchange_Rate = '0x90da1D1DB26c0A84164Ff03090e0B31Ad08A
 // https://optimistic.etherscan.io/address/0x48f2EcF0Bd180239AEF474a9da945F2e2d41daA3
 export const APT__USD = '0x48f2EcF0Bd180239AEF474a9da945F2e2d41daA3';
 
+// https://optimistic.etherscan.io/address/0xAE33e077a02071E62d342E449Afd9895b016d541
+export const SAND__USD = '0xAE33e077a02071E62d342E449Afd9895b016d541';
+
 // https://optimistic.etherscan.io/address/0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F
 export const APE__USD = '0x89178957E9bD07934d7792fFc0CF39f11c8C2B1F';
 
@@ -133,9 +130,6 @@ export const wrsETH_ETH_Exchange_Rate = '0x73b8BE3b653c5896BC34fC87cEBC8AcF4Fb7A
 
 // https://optimistic.etherscan.io/address/0xfa042d5F474d7A39454C594CCfE014Ea011495f2
 export const GRT__USD = '0xfa042d5F474d7A39454C594CCfE014Ea011495f2';
-
-// https://optimistic.etherscan.io/address/0x30D9d31C1ac29Bc2c2c312c1bCa9F8b3D60e2376
-export const BAL__USD = '0x30D9d31C1ac29Bc2c2c312c1bCa9F8b3D60e2376';
 
 // https://optimistic.etherscan.io/address/0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120
 export const VELODROME__USD = '0x0f2Ed59657e391746C1a097BDa98F2aBb94b1120';
@@ -189,9 +183,6 @@ export const IMX__USD = '0x26Fce884555FAe5F0E4701cc976FE8D8bB111A38';
 
 // https://optimistic.etherscan.io/address/0xCc232dcFAAE6354cE191Bd574108c1aD03f86450
 export const LINK__USD = '0xCc232dcFAAE6354cE191Bd574108c1aD03f86450';
-
-// https://optimistic.etherscan.io/address/0xAE33e077a02071E62d342E449Afd9895b016d541
-export const SAND__USD = '0xAE33e077a02071E62d342E449Afd9895b016d541';
 
 // https://optimistic.etherscan.io/address/0xD7bC56BBF8D555936cb5121f38d1d362c586776A
 export const TIA__USD = '0xD7bC56BBF8D555936cb5121f38d1d362c586776A';
@@ -302,9 +293,6 @@ export const weETH__eETH_Exchange_Rate = '0x72EC6bF88effEd88290C66DCF1bE2321d805
 // https://optimistic.etherscan.io/address/0xC663315f7aF904fbbB0F785c32046dFA03e85270
 export const SOL__USD = '0xC663315f7aF904fbbB0F785c32046dFA03e85270';
 
-// https://optimistic.etherscan.io/address/0x60025324DAB37DB3A623ea59Cc567937821EeA12
-export const OUSDT__USD = '0x60025324DAB37DB3A623ea59Cc567937821EeA12';
-
 // https://optimistic.etherscan.io/address/0x4e8e8F5b3d0f49e00F3DFb9CF827d1A0FBe33B21
 export const tETH__wstETH_Exchange_Rate = '0x4e8e8F5b3d0f49e00F3DFb9CF827d1A0FBe33B21';
 
@@ -412,9 +400,6 @@ export const YBTC_BTC_Exchange_Rate = '0x0C194aE5819c4631c58A2849051b269e57A3B65
 // https://optimistic.etherscan.io/address/0x6f6cED6B096708C1276056fdBdb7BbDe07Ca462C
 export const SEI__USD = '0x6f6cED6B096708C1276056fdBdb7BbDe07Ca462C';
 
-// https://optimistic.etherscan.io/address/0x4244c9aE5B97269B7301B622E22932FA49fBb763
-export const mooBIFI__USD = '0x4244c9aE5B97269B7301B622E22932FA49fBb763';
-
 // https://optimistic.etherscan.io/address/0xFC3b7bd4368b2919f67E437f8c6Ca42C7FD55dd5
 export const JTO__USD = '0xFC3b7bd4368b2919f67E437f8c6Ca42C7FD55dd5';
 
@@ -432,9 +417,6 @@ export const XRP__USD = '0x8788F0DBDa7678244Ac7FF09d963d7696D56A8a0';
 
 // https://optimistic.etherscan.io/address/0x2FF8822F371b283604369700d6F06da3fBb31064
 export const ZEC__USD = '0x2FF8822F371b283604369700d6F06da3fBb31064';
-
-// https://optimistic.etherscan.io/address/0x7F102e5b4C32e0861293E97DE85e6E0dB3530605
-export const WELL__USD = '0x7F102e5b4C32e0861293E97DE85e6E0dB3530605';
 
 // https://optimistic.etherscan.io/address/0x517C2557c29F7c53Aa5F97a1DAE465E0d5C174AA
 export const BLUR__USD = '0x517C2557c29F7c53Aa5F97a1DAE465E0d5C174AA';

@@ -71,9 +71,6 @@ export const PCE_Price_Index_Level = '0xba7e8ea9B592c0E6731000b9a186581224a09f69
 export const PCE_Price_Index_Percent_Change_Annual_Rate =
   '0x852aE0B1Af1aAeDB0fC4428B4B24420780976ca8';
 
-// https://sonicscan.org/address/0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B
-export const OUSDT__USD = '0x790181e93e9F4Eedb5b864860C12e4d2CffFe73B';
-
 // https://sonicscan.org/address/0xCdF021EbD115b1B225801F4056c40F4Ff14A574d
 export const solvBTC__BTC = '0xCdF021EbD115b1B225801F4056c40F4Ff14A574d';
 
@@ -116,9 +113,6 @@ export const yUSD__USD_Exchange_Rate = '0xB5882f52428d10C99BbF56539C02820dda809C
 // https://sonicscan.org/address/0xd3b87e6F953B1126056b914A8CBE78035fB3E241
 export const PumpBTC__BTC_Exchange_Rate = '0xd3b87e6F953B1126056b914A8CBE78035fB3E241';
 
-// https://sonicscan.org/address/0x30caC44b395eB969C9CA0d44dF39e6E0aE8f8D94
-export const OS__S = '0x30caC44b395eB969C9CA0d44dF39e6E0aE8f8D94';
-
 // https://sonicscan.org/address/0x8f0240dc9C7644D121D370d8ee61FF9F2356521E
 export const EURC__USD = '0x8f0240dc9C7644D121D370d8ee61FF9F2356521E';
 
@@ -127,9 +121,6 @@ export const USD1__USD = '0xB6D739Ba498a0D8d1e92F81345B764C995Cc4882';
 
 // https://sonicscan.org/address/0x960BDD1dFD20d7c98fa482D793C3dedD73A113a3
 export const uniBTC__BTC_Exchange_Rate = '0x960BDD1dFD20d7c98fa482D793C3dedD73A113a3';
-
-// https://sonicscan.org/address/0x3cf9E4860bafe8e29eC8e1bC073436C5519684f4
-export const scBTC__BTC = '0x3cf9E4860bafe8e29eC8e1bC073436C5519684f4';
 
 // https://sonicscan.org/address/0xfdee80dec97AF9AddcDccD208eC09d7Ea5eEbB9a
 export const ZAR__USD = '0xfdee80dec97AF9AddcDccD208eC09d7Ea5eEbB9a';

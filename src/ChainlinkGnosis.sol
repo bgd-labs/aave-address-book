@@ -70,9 +70,6 @@ library ChainlinkGnosis {
   // https://gnosisscan.io/address/0x6D42cc26756C34F26BEcDD9b30a279cE9Ea8296E
   address internal constant BNB__USD = 0x6D42cc26756C34F26BEcDD9b30a279cE9Ea8296E;
 
-  // https://gnosisscan.io/address/0x27d4D36968a2BD1Cc3406D99cB1DF50561dBf2a4
-  address internal constant REN__USD = 0x27d4D36968a2BD1Cc3406D99cB1DF50561dBf2a4;
-
   // https://gnosisscan.io/address/0x2997eBa3d9c2447c36107bB0F082b8c33566b49c
   address internal constant ZIL__USD = 0x2997eBa3d9c2447c36107bB0F082b8c33566b49c;
 

@@ -3,9 +3,6 @@
 pragma solidity >=0.6.0;
 
 library ChainlinkSoneium {
-  // https://soneium.blockscout.com/address/0xEEDE303b8602Db7556eD57BDf7133A6bAADa294D
-  address internal constant pufETH__ETH = 0xEEDE303b8602Db7556eD57BDf7133A6bAADa294D;
-
   // https://soneium.blockscout.com/address/0x884E2819193d8c8993036290D5a8778Dbe3942f2
   address internal constant BTC__USD = 0x884E2819193d8c8993036290D5a8778Dbe3942f2;
 
@@ -37,9 +34,6 @@ library ChainlinkSoneium {
 
   // https://soneium.blockscout.com/address/0x877654fE4da2FC54453a212aac601247b2A1B786
   address internal constant USR_USD_Exchange_Rate = 0x877654fE4da2FC54453a212aac601247b2A1B786;
-
-  // https://soneium.blockscout.com/address/0xF049354158e13F6794A3cCD236694E0e1BD9AF79
-  address internal constant OUSDT__USD = 0xF049354158e13F6794A3cCD236694E0e1BD9AF79;
 
   // https://soneium.blockscout.com/address/0x4516fDa3259110EefAfC6fBcE266417B3F3b985a
   address internal constant wstETH__ETH = 0x4516fDa3259110EefAfC6fBcE266417B3F3b985a;
