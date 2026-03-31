@@ -65,6 +65,9 @@ library AaveV3InkSepolia {
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x2D97F8FA96886Fd923c065F5457F9DDd494e3877;
 
+  // https://explorer-sepolia.inkonchain.com/address/0xb5970A521073ADE4836dD4A24854Eb387a67c5C8
+  address internal constant UI_POOL_DATA_PROVIDER = 0xb5970A521073ADE4836dD4A24854Eb387a67c5C8;
+
   // https://explorer-sepolia.inkonchain.com/address/0x1236010CECea55998384e795B59815D871f5f94d
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x1236010CECea55998384e795B59815D871f5f94d;
 
