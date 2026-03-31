@@ -55,8 +55,8 @@ library AaveV3MegaEth {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8;
 
-  // https://mega.etherscan.io/address/0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3
-  address internal constant CONFIG_ENGINE = 0x0FC9eB644dF453B53C7d9A6892c878f14382ddc3;
+  // https://mega.etherscan.io/address/0xA25d9f14CFA40d3227ED9a48B124667dDFfCFdDD
+  address internal constant CONFIG_ENGINE = 0xA25d9f14CFA40d3227ED9a48B124667dDFfCFdDD;
 
   // https://mega.etherscan.io/address/0x085C658057bD4be6D09b8449e71d78601f9b2303
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -65,8 +65,8 @@ library AaveV3MegaEth {
   // https://mega.etherscan.io/address/0xD8994FE9B79f99CD0b13AE946F5cd866c6d12d00
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xD8994FE9B79f99CD0b13AE946F5cd866c6d12d00;
 
-  // https://mega.etherscan.io/address/0x1aB55bBdD5DF0782BBCf73553Af93BC6B29A286B
-  address internal constant UI_POOL_DATA_PROVIDER = 0x1aB55bBdD5DF0782BBCf73553Af93BC6B29A286B;
+  // https://mega.etherscan.io/address/0xfE76366A986B72c3f2923e05E6ba07b7de5401e4
+  address internal constant UI_POOL_DATA_PROVIDER = 0xfE76366A986B72c3f2923e05E6ba07b7de5401e4;
 
   // https://mega.etherscan.io/address/0xD63f7658C66B2934Bd234D79D06aEF5290734B30
   address internal constant WALLET_BALANCE_PROVIDER = 0xD63f7658C66B2934Bd234D79D06aEF5290734B30;

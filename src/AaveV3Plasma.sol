@@ -52,8 +52,8 @@ library AaveV3Plasma {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x179C65343d5d2e21DCB2b4818Ab4ad0c93Fe879a;
 
-  // https://plasmascan.to/address/0x235d5ed464B3D0a7a616305FF6E71a2A06F82283
-  address internal constant CONFIG_ENGINE = 0x235d5ed464B3D0a7a616305FF6E71a2A06F82283;
+  // https://plasmascan.to/address/0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F
+  address internal constant CONFIG_ENGINE = 0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F;
 
   // https://plasmascan.to/address/0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba
   address internal constant RISK_STEWARD = 0x98F756B77D6Fde14E08bb064b248ec7512F9f8ba;
@@ -65,8 +65,8 @@ library AaveV3Plasma {
   // https://plasmascan.to/address/0xcb85C501B3A5e9851850d66648d69B26A4c90942
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xcb85C501B3A5e9851850d66648d69B26A4c90942;
 
-  // https://plasmascan.to/address/0xdA549478Fd5C2BdB9e5eB000D0ff2554771598C7
-  address internal constant UI_POOL_DATA_PROVIDER = 0xdA549478Fd5C2BdB9e5eB000D0ff2554771598C7;
+  // https://plasmascan.to/address/0xe427FCbD54169136391cfEDf68E96abB13dA87A0
+  address internal constant UI_POOL_DATA_PROVIDER = 0xe427FCbD54169136391cfEDf68E96abB13dA87A0;
 
   // https://plasmascan.to/address/0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6
   address internal constant WALLET_BALANCE_PROVIDER = 0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6;

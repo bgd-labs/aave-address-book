@@ -62,8 +62,8 @@ library AaveV3Ethereum {
   address internal constant DELEGATION_AWARE_A_TOKEN_IMPL_REV_1 =
     0x21714092D90c7265F52fdfDae068EC11a23C6248;
 
-  // https://etherscan.io/address/0x19A109d0dCB1268729341732Ac146D4A74c7034f
-  address internal constant CONFIG_ENGINE = 0x19A109d0dCB1268729341732Ac146D4A74c7034f;
+  // https://etherscan.io/address/0xEaFAeFa93c6aaBd5ab7E76F4c37Aebe9da1e8318
+  address internal constant CONFIG_ENGINE = 0xEaFAeFa93c6aaBd5ab7E76F4c37Aebe9da1e8318;
 
   // https://etherscan.io/address/0xbaA999AC55EAce41CcAE355c77809e68Bb345170
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -83,8 +83,8 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xe3dFf4052F0bF6134ACb73bEaE8fe2317d71F047;
 
-  // https://etherscan.io/address/0x56b7A1012765C285afAC8b8F25C69Bf10ccfE978
-  address internal constant UI_POOL_DATA_PROVIDER = 0x56b7A1012765C285afAC8b8F25C69Bf10ccfE978;
+  // https://etherscan.io/address/0x08356Eb708294d9Fd349CAafC0B1baedc86dd8C7
+  address internal constant UI_POOL_DATA_PROVIDER = 0x08356Eb708294d9Fd349CAafC0B1baedc86dd8C7;
 
   // https://etherscan.io/address/0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2
   address internal constant WALLET_BALANCE_PROVIDER = 0xC7be5307ba715ce89b152f3Df0658295b3dbA8E2;
@@ -1390,6 +1390,24 @@ library AaveV3EthereumAssets {
 
   // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
   address internal constant PT_srUSDe_2APR2026_INTEREST_RATE_STRATEGY =
+    0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
+
+  // https://etherscan.io/address/0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072
+  address internal constant BTCb_UNDERLYING = 0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072;
+
+  uint8 internal constant BTCb_DECIMALS = 8;
+
+  // https://etherscan.io/address/0x12b70410D60f926558245f769059eA3Fc7A7353E
+  address internal constant BTCb_A_TOKEN = 0x12b70410D60f926558245f769059eA3Fc7A7353E;
+
+  // https://etherscan.io/address/0x6C67e666BB954d4bE23e9F1cE20e7E8699d29339
+  address internal constant BTCb_V_TOKEN = 0x6C67e666BB954d4bE23e9F1cE20e7E8699d29339;
+
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
+  address internal constant BTCb_ORACLE = 0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
+
+  // https://etherscan.io/address/0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB
+  address internal constant BTCb_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 }
 library AaveV3EthereumEModes {
