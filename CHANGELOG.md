@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.48.0](https://github.com/aave-dao/aave-address-book/compare/v4.47.14...v4.48.0) (2026-03-31)
+
+
+### Features
+
+* aave v3.6 ink sepolia testnet deployment ([#1343](https://github.com/aave-dao/aave-address-book/issues/1343)) ([1afa669](https://github.com/aave-dao/aave-address-book/commit/1afa66914c6574448ca4ead37ba697ab0a56cfab))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1342](https://github.com/aave-dao/aave-address-book/issues/1342)) ([3c84537](https://github.com/aave-dao/aave-address-book/commit/3c845370f1c547ca64c02c918ad4e664aef10c22))
+* **cache:** automated cache update - updated addresses ([#1344](https://github.com/aave-dao/aave-address-book/issues/1344)) ([223566a](https://github.com/aave-dao/aave-address-book/commit/223566a9b62cca12763b6aa0046937b34f3ea5cf))
+* **cache:** automated cache update - updated addresses ([#1346](https://github.com/aave-dao/aave-address-book/issues/1346)) ([172aaae](https://github.com/aave-dao/aave-address-book/commit/172aaaed1ca90336d396a907608125cef5bc4dbf))
+
 ## [4.47.14](https://github.com/aave-dao/aave-address-book/compare/v4.47.13...v4.47.14) (2026-03-27)
 
 
