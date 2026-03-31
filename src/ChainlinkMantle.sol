@@ -9,9 +9,6 @@ library ChainlinkMantle {
   // https://mantlescan.xyz/address/0x5166FC3adff16E99bb099834a1315e57C5444394
   address internal constant USDe__USD = 0x5166FC3adff16E99bb099834a1315e57C5444394;
 
-  // https://mantlescan.xyz/address/0xC5fD97adABf827e9FCC4ed936360f47080F35868
-  address internal constant OUSDT__USD = 0xC5fD97adABf827e9FCC4ed936360f47080F35868;
-
   // https://mantlescan.xyz/address/0xaDE1b9AbB98c6A542E4B49db2588a3Ec4bF7Cdf0
   address internal constant L2_Sequencer_Uptime_Status_Feed =
     0xaDE1b9AbB98c6A542E4B49db2588a3Ec4bF7Cdf0;
