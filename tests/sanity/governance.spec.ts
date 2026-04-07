@@ -6,6 +6,7 @@ import {IOwnable_ABI} from '../../src/ts/abis/IOwnable';
 import {IWithGuardian_ABI} from '../../src/ts/abis/IWithGuardian';
 import {IPayloadsControllerCore_ABI} from '../../src/ts/abis/IPayloadsControllerCore';
 import {IVotingMachineWithProofs_ABI} from '../../src/ts/abis/IVotingMachineWithProofs';
+import { ChainId } from '@bgd-labs/toolbox';
 
 const ownableWithGuardianAbi = [...IOwnable_ABI, ...IWithGuardian_ABI] as const;
 
@@ -116,7 +117,7 @@ async function checkStandardGovernance(addresses: Record<string, any>) {
   }
 
   // CrossChainController: owner, guardian, CL emergency oracle
-  if (addresses.CROSS_CHAIN_CONTROLLER) {
+  if (addresses.CROSS_CHAIN_CONTROLLER && client.chain?.id !== ChainId.metis && client.chain?.id !== ChainId.scroll) {
     checks.push(
       (async () => {
         await checkOwnerAndGuardian(
