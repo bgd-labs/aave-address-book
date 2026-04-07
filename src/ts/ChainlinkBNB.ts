@@ -41,9 +41,6 @@ export const FIL__USD = '0xE5dbFD9003bFf9dF5feB2f4F445Ca00fb121fb83';
 // https://bscscan.com/address/0x14Ae6B76cd940Fa449381cdC9f3a098A3D39A730
 export const savBTC__avBTC_Exchange_Rate = '0x14Ae6B76cd940Fa449381cdC9f3a098A3D39A730';
 
-// https://bscscan.com/address/0xf7E7c0ffCB11dAC6eCA1434C67faB9aE000e10a7
-export const WING__USD = '0xf7E7c0ffCB11dAC6eCA1434C67faB9aE000e10a7';
-
 // https://bscscan.com/address/0x1a269eA1b209DA2c12bDCDab22635C9e6C5028B2
 export const SUSDE__USDE_Exchange_Rate = '0x1a269eA1b209DA2c12bDCDab22635C9e6C5028B2';
 
@@ -167,9 +164,6 @@ export const USDC__USD = '0x51597f405303C4377E36123cBc172b13269EA163';
 // https://bscscan.com/address/0xdC156E0Ec3C166cdE3d4Ab9912B79e1b916E3CB7
 export const sUSDX__USDX_Exchange_Rate = '0xdC156E0Ec3C166cdE3d4Ab9912B79e1b916E3CB7';
 
-// https://bscscan.com/address/0x9e7377E194E41d63795907c92c3EB351a2eb0233
-export const WIN__USD = '0x9e7377E194E41d63795907c92c3EB351a2eb0233';
-
 // https://bscscan.com/address/0xd97aB9e5bD461eBcD55009791C410294f7B42Cdb
 export const WSTETH__USD = '0xd97aB9e5bD461eBcD55009791C410294f7B42Cdb';
 
@@ -233,9 +227,6 @@ export const SPY__USD = '0xb24D1DeE5F9a3f761D286B56d2bC44CE1D02DF7e';
 // https://bscscan.com/address/0xb056B7C804297279A9a673289264c17E6Dc6055d
 export const ATOM__USD = '0xb056B7C804297279A9a673289264c17E6Dc6055d';
 
-// https://bscscan.com/address/0x47e01580C537Cd47dA339eA3a4aFb5998CCf037C
-export const SPELL__USD = '0x47e01580C537Cd47dA339eA3a4aFb5998CCf037C';
-
 // https://bscscan.com/address/0x654C08FE9E53A8eC90d8350fB4055D4877693622
 export const SVR_LTC__USD = '0x654C08FE9E53A8eC90d8350fB4055D4877693622';
 
@@ -287,6 +278,9 @@ export const SVR_TWT__BNB = '0x1A083354421Da4e26D78D55DAfaeBf4CFc541dAf';
 
 // https://bscscan.com/address/0x6C28277b9a482F514964642C8E80EAb25D9B16e8
 export const SVR_TWT__BNB_BASE = '0x6C28277b9a482F514964642C8E80EAb25D9B16e8';
+
+// https://bscscan.com/address/0xfa54C1c5F62ea3a5653a0b1b7148E26008eA1501
+export const XAUM_Reference_Rate = '0xfa54C1c5F62ea3a5653a0b1b7148E26008eA1501';
 
 // https://bscscan.com/address/0x337B4889fed5557595c37a45c1BB9b057cC670AE
 export const YETH_ETH_Exchange_Rate = '0x337B4889fed5557595c37a45c1BB9b057cC670AE';
@@ -433,9 +427,6 @@ export const SVR_CAKE__USD_BASE = '0x96125CCbE22291dFe02bFAF80b8f74d9f9c3E60A';
 // https://bscscan.com/address/0x3f5fc2cb37dA3B351F7EF968d72bE2eC3e1da08e
 export const LISUSD__USD = '0x3f5fc2cb37dA3B351F7EF968d72bE2eC3e1da08e';
 
-// https://bscscan.com/address/0x9f1fD2cEf7b226D555A747DA0411F93c5fe74e13
-export const VET__USD = '0x9f1fD2cEf7b226D555A747DA0411F93c5fe74e13';
-
 // https://bscscan.com/address/0x964261740356cB4aaD0C3D2003Ce808A4176a46d
 export const CHF__USD = '0x964261740356cB4aaD0C3D2003Ce808A4176a46d';
 
@@ -472,9 +463,6 @@ export const U__USD = '0x2Ab73dc1C8A23bcDDb4850Ff811850E0d2a0c72f';
 // https://bscscan.com/address/0xa3334A9762090E827413A7495AfeCE76F41dFc06
 export const TUSD__USD = '0xa3334A9762090E827413A7495AfeCE76F41dFc06';
 
-// https://bscscan.com/address/0x0E9D55932893Fb1308882C7857285B2B0bcc4f4a
-export const FXS__USD = '0x0E9D55932893Fb1308882C7857285B2B0bcc4f4a';
-
 // https://bscscan.com/address/0x4c75d01cfa4D998770b399246400a6dc40FB9645
 export const wstETH__stETH_Exchange_Rate = '0x4c75d01cfa4D998770b399246400a6dc40FB9645';
 
@@ -499,9 +487,6 @@ export const MASK__USD = '0x4978c0abE6899178c1A74838Ee0062280888E2Cf';
 
 // https://bscscan.com/address/0xBF63F430A79D4036A5900C19818aFf1fa710f206
 export const XVS__USD = '0xBF63F430A79D4036A5900C19818aFf1fa710f206';
-
-// https://bscscan.com/address/0xcF95796f3016801A1dA5C518Fc7A59C51dcEf793
-export const ONG__USD = '0xcF95796f3016801A1dA5C518Fc7A59C51dcEf793';
 
 // https://bscscan.com/address/0x84210d9013A30C6ab169e28840A6CC54B60fa042
 export const ICP__USD = '0x84210d9013A30C6ab169e28840A6CC54B60fa042';
@@ -546,6 +531,9 @@ export const MUSD__USD = '0xE9736eB458b0741e781E460228b9e5291488F7cE';
 // https://bscscan.com/address/0x20123C6ebd45c6496102BeEA86e1a6616Ca547c6
 export const RDNT__USD = '0x20123C6ebd45c6496102BeEA86e1a6616Ca547c6';
 
+// https://bscscan.com/address/0x86b3897a1c755ac8f0e12263242141cdecF71CC2
+export const RLP__USD_Exchange_Rate = '0x86b3897a1c755ac8f0e12263242141cdecF71CC2';
+
 // https://bscscan.com/address/0xeDA73F8acb669274B15A977Cb0cdA57a84F18c2a
 export const GOOGL__USD = '0xeDA73F8acb669274B15A977Cb0cdA57a84F18c2a';
 
@@ -560,9 +548,6 @@ export const JTRSY_NAV = '0xfD5D618c3Ee64c6716876B02e26690811DF86508';
 
 // https://bscscan.com/address/0x2a548935a323Bb7329a5E3F1667B979f16Bc890b
 export const BCH__BNB = '0x2a548935a323Bb7329a5E3F1667B979f16Bc890b';
-
-// https://bscscan.com/address/0x7CA57b0cA6367191c94C8914d7Df09A57655905f
-export const MATIC__USD = '0x7CA57b0cA6367191c94C8914d7Df09A57655905f';
 
 // https://bscscan.com/address/0x08E70777b982a58D23D05E3D7714f44837c06A21
 export const BSW__USD = '0x08E70777b982a58D23D05E3D7714f44837c06A21';
@@ -584,9 +569,6 @@ export const AVAX__USD = '0x5974855ce31EE8E1fff2e76591CbF83D7110F151';
 
 // https://bscscan.com/address/0xb7Ed5bE7977d61E83534230f3256C021e0fae0B6
 export const AAPL__USD = '0xb7Ed5bE7977d61E83534230f3256C021e0fae0B6';
-
-// https://bscscan.com/address/0x13A9c98b07F098c5319f4FF786eB16E22DC738e1
-export const FRAX__USD = '0x13A9c98b07F098c5319f4FF786eB16E22DC738e1';
 
 // https://bscscan.com/address/0x0Db8945f9aEf5651fa5bd52314C5aAe78DfDe540
 export const COMP__USD = '0x0Db8945f9aEf5651fa5bd52314C5aAe78DfDe540';

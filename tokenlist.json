@@ -3561,6 +3561,48 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072",
+      "name": "Bitcoin",
+      "decimals": 8,
+      "symbol": "BTC.b",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/btc.svg"
+    },
+    {
+      "chainId": 1,
+      "address": "0x12b70410D60f926558245f769059eA3Fc7A7353E",
+      "name": "Aave Ethereum BTCb",
+      "decimals": 8,
+      "symbol": "aEthBTCb",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/abtc.svg",
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x619D75E3b790eBC21c289f2805Bb7177A7D732E2",
+      "name": "PT Strata Senior USDe 25JUN2026",
+      "decimals": 18,
+      "symbol": "PT-srUSDe-25JUN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xA78Eba24D89e70A03ddB7AC195A15E53315aA5b4",
+      "name": "Aave Ethereum PT_srUSDe_25JUN2026",
+      "decimals": 18,
+      "symbol": "aEthPT_srUSDe_25JUN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x619D75E3b790eBC21c289f2805Bb7177A7D732E2"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -10065,6 +10107,60 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0x28C48A7630A730F5f2297dA7A72b7F31d9E99e19",
+      "name": "Wrapped Aave Plasma GHO",
+      "decimals": 18,
+      "symbol": "waPlaGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3",
+        "underlyingAToken": "0xAd571979b4245E163A7E2119EB4dFd94AfDaebC5"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2",
+      "name": "PT Ethena USDe 18JUN2026",
+      "decimals": 18,
+      "symbol": "PT-USDe-18JUN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0xDEdFF537fCBa1169E673F78EE23D109885741016",
+      "name": "Aave Plasma PT_USDe_18JUN2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_USDe_18JUN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x30559E3d35e33AB69399a3fe9F383d32bd3c016E",
+      "name": "PT Ethena sUSDE 18JUN2026",
+      "decimals": 18,
+      "symbol": "PT-sUSDE-18JUN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x68ab954Dc705c66506d499963dD1fbB8aFa23d7d",
+      "name": "Aave Plasma PT_sUSDE_18JUN2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_sUSDE_18JUN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x30559E3d35e33AB69399a3fe9F383d32bd3c016E"
+      }
+    },
+    {
       "chainId": 4326,
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -10217,6 +10313,190 @@
       }
     },
     {
+      "chainId": 196,
+      "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
+      "name": "USD₮0",
+      "decimals": 6,
+      "symbol": "USD₮0",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usdt0.svg"
+    },
+    {
+      "chainId": 196,
+      "address": "0xF356ae412dB5df43BD3a10746f7ad4e1C4De4297",
+      "name": "Aave XLayer USDT0",
+      "decimals": 6,
+      "symbol": "aXlrUSDT0",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausdt0.svg",
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0x4ae46a509F6b1D9056937BA4500cb143933D2dc8",
+      "name": "Global Dollar",
+      "decimals": 6,
+      "symbol": "USDG",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 196,
+      "address": "0x228765a3C18065C923F23a0CCb6c7cEFB3eA2223",
+      "name": "Aave XLayer USDG",
+      "decimals": 6,
+      "symbol": "aXlrUSDG",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0x4ae46a509F6b1D9056937BA4500cb143933D2dc8"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f",
+      "name": "OKX Wrapped BTC",
+      "decimals": 8,
+      "symbol": "xBTC",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 196,
+      "address": "0xF5F9d4e9e2AFe7E0b193d291Befb41d61930464e",
+      "name": "Aave XLayer xBTC",
+      "decimals": 8,
+      "symbol": "aXlrxBTC",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0xe538905cf8410324e03A5A23C1c177a474D59b2b",
+      "name": "Wrapped OKB",
+      "decimals": 18,
+      "symbol": "WOKB",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 196,
+      "address": "0x3ea3A4038FbA5757A9A68de920b44698d7326A59",
+      "name": "Aave XLayer WOKB",
+      "decimals": 18,
+      "symbol": "aXlrWOKB",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0xe538905cf8410324e03A5A23C1c177a474D59b2b"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0xE7B000003A45145decf8a28FC755aD5eC5EA025A",
+      "name": "OKX Wrapped ETH",
+      "decimals": 18,
+      "symbol": "xETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 196,
+      "address": "0xe6639ba6c1d79Be6d4c776E4c17504538d1719cD",
+      "name": "Aave XLayer xETH",
+      "decimals": 18,
+      "symbol": "aXlrxETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0xE7B000003A45145decf8a28FC755aD5eC5EA025A"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0x505000008DE8748DBd4422ff4687a4FC9bEba15b",
+      "name": "OKX Wrapped SOL",
+      "decimals": 9,
+      "symbol": "xSOL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 196,
+      "address": "0x523dCe1b164327818fc5B41278fAe41f6B5753FE",
+      "name": "Aave XLayer xSOL",
+      "decimals": 9,
+      "symbol": "aXlrxSOL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0x505000008DE8748DBd4422ff4687a4FC9bEba15b"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0xAFeab3B85B6A56cF5F02317F0f7A23340eb983D7",
+      "name": "OKX Wrapped Staked ETH",
+      "decimals": 18,
+      "symbol": "xBETH",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 196,
+      "address": "0xe9e78053f1Ef084f8cD01dBE8ccE95c6b0944d32",
+      "name": "Aave XLayer xBETH",
+      "decimals": 18,
+      "symbol": "aXlrxBETH",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0xAFeab3B85B6A56cF5F02317F0f7A23340eb983D7"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0x14a686103854DAB7b8801E31979CAA595835B25d",
+      "name": "OKX Wrapped Staked SOL",
+      "decimals": 9,
+      "symbol": "xOKSOL",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 196,
+      "address": "0x38811564090aAb7bB455c5b771e26201a3535a01",
+      "name": "Aave XLayer xOKSOL",
+      "decimals": 9,
+      "symbol": "aXlrxOKSOL",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0x14a686103854DAB7b8801E31979CAA595835B25d"
+      }
+    },
+    {
+      "chainId": 196,
+      "address": "0xDe6539018B095353A40753Dc54C91C68c9487D4E",
+      "name": "Gho Token",
+      "decimals": 18,
+      "symbol": "GHO",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/gho.svg"
+    },
+    {
+      "chainId": 196,
+      "address": "0x77188335A21f4C409d2CfeDe3195A7B5f28651b0",
+      "name": "Aave XLayer GHO",
+      "decimals": 18,
+      "symbol": "aXlrGHO",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/agho.svg",
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0xDe6539018B095353A40753Dc54C91C68c9487D4E"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -10269,6 +10549,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 166 },
-  "timestamp": "2026-03-07T01:41:01.742Z"
+  "version": { "major": 3, "minor": 0, "patch": 169 },
+  "timestamp": "2026-04-07T10:04:43.915Z"
 }

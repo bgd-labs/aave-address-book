@@ -1,0 +1,15 @@
+import {ChainId} from '@bgd-labs/toolbox';
+import {GhoAddresses} from '../types';
+
+export const ghoXLayer: GhoAddresses = {
+  name: 'XLayer',
+  chainId: ChainId.xLayer,
+  addresses: {
+    GHO_TOKEN: '0xDe6539018B095353A40753Dc54C91C68c9487D4E',
+    GHO_CCIP_TOKEN_POOL: '0xA5Ba213867E175A182a5dd6A9193C6158738105A',
+    GHO_BUCKET_STEWARD: '0x20fd5f3FCac8883a3A0A2bBcD658A2d2c6EFa6B6',
+    GHO_AAVE_CORE_STEWARD: '0x6e637e1E48025E51315d50ab96d5b3be1971A715',
+    GHO_CCIP_STEWARD: '0xFAdC082665577b533e62A7B0E067f884cA5C5E8F',
+    RISK_COUNCIL: '0x8513e6F37dBc52De87b166980Fa3F50639694B60',
+  },
+};

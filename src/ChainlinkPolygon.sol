@@ -370,9 +370,6 @@ library ChainlinkPolygon {
   // https://polygonscan.com/address/0x5c3890e86f3E7Ed7F5390532De147953580f1605
   address internal constant USDe__USD = 0x5c3890e86f3E7Ed7F5390532De147953580f1605;
 
-  // https://polygonscan.com/address/0xF626964Ba5e81405f47e8004F0b276Bb974742B5
-  address internal constant BADGER__USD = 0xF626964Ba5e81405f47e8004F0b276Bb974742B5;
-
   // https://polygonscan.com/address/0x692AE5510cA9070095A496dbcFBCDA99D4024Cd9
   address internal constant XLM__USD = 0x692AE5510cA9070095A496dbcFBCDA99D4024Cd9;
 

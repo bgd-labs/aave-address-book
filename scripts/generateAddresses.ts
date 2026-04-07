@@ -31,7 +31,7 @@ import { celoProtoV3 } from './configs/pools/celo';
 import { mantleProtoV3 } from './configs/pools/mantle';
 import { sonicProtoV3 } from './configs/pools/sonic';
 import { soneiumProtoV3 } from './configs/pools/soneium';
-import { inkProtoV3 } from './configs/pools/ink';
+import { inkProtoV3, inkSepoliaProtoV3 } from './configs/pools/ink';
 import { plasmaProtoV3 } from './configs/pools/plasma';
 import { megaEthProtoV3 } from './configs/pools/megaeth';
 import { xLayerProtoV3 } from './configs/pools/xlayer';
@@ -65,7 +65,7 @@ import { gnosisAddresses } from './configs/networks/gnosis';
 import { bnbAddresses } from './configs/networks/bnb';
 import { celoAddresses } from './configs/networks/celo';
 import { scrollAddresses } from './configs/networks/scroll';
-import { inkAddresses, inkWhiteLabelAddresses } from './configs/networks/ink';
+import { inkAddresses, inkWhiteLabelAddresses, inkSepoliaAddresses } from './configs/networks/ink';
 import { governanceConfigScroll } from './configs/governance/scroll';
 import { generateTokenList } from './generator/generateTokenList';
 import { generateAaveV1 } from './generator/protocolV1Generator';
@@ -80,6 +80,7 @@ import { ghoGnosis } from './configs/gho/gnosis';
 import { ghoInk } from './configs/gho/ink';
 import { ghoPlasma } from './configs/gho/plasma';
 import { ghoMantle } from './configs/gho/mantle';
+import { ghoXLayer } from './configs/gho/xlayer';
 import { generateGho } from './generator/ghoGenerator';
 import { governanceConfigLinea } from './configs/governance/linea';
 import { mantleAddresses } from './configs/networks/mantle';
@@ -186,12 +187,13 @@ async function main() {
       sonicProtoV3,
       soneiumProtoV3,
       inkProtoV3,
+      inkSepoliaProtoV3,
       plasmaProtoV3,
       megaEthProtoV3,
       xLayerProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle].map((config) =>
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle, ghoXLayer].map((config) =>
     generateGho(config),
   );
   const umbrellaAddresses = await Promise.all(
@@ -232,6 +234,7 @@ async function main() {
     bobAddresses,
     inkAddresses,
     inkWhiteLabelAddresses,
+    inkSepoliaAddresses,
     plasmaAddresses,
     megaEthAddresses,
     xLayerAddresses,
