@@ -4331,6 +4331,15 @@
     },
     "0x42fC9d7c315Cf64Edc39ec984Bf89Bc34BbE9FD5": {
       "name": "EACAggregatorProxy"
+    },
+    "0x619D75E3b790eBC21c289f2805Bb7177A7D732E2": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xA78Eba24D89e70A03ddB7AC195A15E53315aA5b4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9Ba896531F878Ed5f0A4F73E82d63bA7b424F910": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "10": {
@@ -9554,6 +9563,57 @@
     },
     "0x6a82EFFC620ec646429e8A1aE0E5DcC6C6ba30aA": {
       "name": "VariableDebtTokenInstance"
+    },
+    "0xF356ae412dB5df43BD3a10746f7ad4e1C4De4297": {
+      "name": "ATokenInstance"
+    },
+    "0x04837866D0cb0cd2D8F60fBCa83B4a24b3a7c8ac": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x228765a3C18065C923F23a0CCb6c7cEFB3eA2223": {
+      "name": "ATokenInstance"
+    },
+    "0xE6FC328D4DECB2Ae00E711743C04612ec963be46": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xF5F9d4e9e2AFe7E0b193d291Befb41d61930464e": {
+      "name": "ATokenInstance"
+    },
+    "0x5F874396f28dfdBd6bA2be80F52FD013Ce388C75": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x3ea3A4038FbA5757A9A68de920b44698d7326A59": {
+      "name": "ATokenInstance"
+    },
+    "0xb20752a1D7D16E54cBaad5137ba6C0a087752803": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xe6639ba6c1d79Be6d4c776E4c17504538d1719cD": {
+      "name": "ATokenInstance"
+    },
+    "0xB756Fc7065369602f2cCb8356283E8b997fDfe2a": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x523dCe1b164327818fc5B41278fAe41f6B5753FE": {
+      "name": "ATokenInstance"
+    },
+    "0x4aF568Cb78Ade0e45E42f9B6d3deC0ff81E788af": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xe9e78053f1Ef084f8cD01dBE8ccE95c6b0944d32": {
+      "name": "ATokenInstance"
+    },
+    "0xe98AB0041B3BC09981D75A46aa78CC5e647a3906": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x38811564090aAb7bB455c5b771e26201a3535a01": {
+      "name": "ATokenInstance"
+    },
+    "0x3bEB61760eC29C2031843811dd5D51Bcbdb73B5e": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0x77188335A21f4C409d2CfeDe3195A7B5f28651b0": {
+      "name": "ATokenInstance"
     }
   },
   "324": {
@@ -12978,6 +13038,24 @@
     },
     "0x28C48A7630A730F5f2297dA7A72b7F31d9E99e19": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0xDEdFF537fCBa1169E673F78EE23D109885741016": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xf49f425D575f1505430BeEa036e0a318B08EB03c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x0521d52A7eA98A8B737D367F81975019360e444f": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x68ab954Dc705c66506d499963dD1fbB8aFa23d7d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xD51aDd2Ca67b8b4541EB4c1a5EaFbAEB3d3b2dF7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x02d8BF797271E6e0AB65A6D235B93d6e673C055B": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "42161": {
