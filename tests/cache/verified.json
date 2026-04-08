@@ -4559,6 +4559,9 @@
     },
     "0x5C1771583dbbAE5AFEd71ACD2BfC0eA4029EBB04": {
       "name": "LBTCPriceCapAdapter"
+    },
+    "0x943827DCA022D0F354a8a8c332dA1e5Eb9f9F931": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
