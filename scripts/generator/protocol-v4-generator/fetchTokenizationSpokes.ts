@@ -58,7 +58,7 @@ export async function fetchTokenizationSpokes(
         if (result.status !== 'fulfilled') continue;
         const {candidate, hub, hubResult, nameResult} = result.value;
 
-        // Using TokenizationSpoke name agaisnt Hub label and asset symbol for verification, can be replaced by
+        // Using TokenizationSpoke name against Hub label and asset symbol for verification, can be replaced by
         // a more robust method in the future.
         if (
           hub.toLowerCase() === hubAddress.toLowerCase() &&
