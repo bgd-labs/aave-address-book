@@ -1,3 +1,5 @@
 aave-v3-origin/=lib/aave-v3-origin/src/
+aave-v4/=lib/aave-v4/src/
+lib/aave-v4/:src=lib/aave-v4/src/
 forge-std/=lib/aave-v3-origin/lib/forge-std/src/
 solidity-utils/=lib/aave-v3-origin/lib/solidity-utils/src/
