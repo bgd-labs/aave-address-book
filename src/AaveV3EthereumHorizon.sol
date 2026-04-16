@@ -42,11 +42,11 @@ library AaveV3EthereumHorizon {
   // https://etherscan.io/address/0xC2201708289b2C6A1d461A227A7E5ee3e7fE9A2F
   address internal constant EMISSION_MANAGER = 0xC2201708289b2C6A1d461A227A7E5ee3e7fE9A2F;
 
-  // https://etherscan.io/address/0x70CC725B8f05e0f230B05C4e91ABc651E121354f
-  ICollector internal constant COLLECTOR = ICollector(0x70CC725B8f05e0f230B05C4e91ABc651E121354f);
+  // https://etherscan.io/address/0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c
+  ICollector internal constant COLLECTOR = ICollector(0x464C71f6c2F760DdA6093dCB91C24c39e5d6e18c);
 
-  // https://etherscan.io/address/0xB2668573828029917ffbD1e76270373511818498
-  address internal constant DEFAULT_A_TOKEN_IMPL = 0xB2668573828029917ffbD1e76270373511818498;
+  // https://etherscan.io/address/0x9EB507147b99D3Cde32A53Bd5cd12bDEEaC26E5c
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0x9EB507147b99D3Cde32A53Bd5cd12bDEEaC26E5c;
 
   // https://etherscan.io/address/0x15F03E5dE87c12cb2e2b8e5d6ECEf0a9E21ab269
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
