@@ -1,0 +1,23 @@
+tests/cache/verified.json
+  0bb93149198feed9 4565-4567,18274
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.0",
+  "base_commit_sha": "fbb7700185aa7c46674f042d1f6ea8fd530573ca",
+  "prompts": {
+    "0bb93149198feed9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "72b4d938-03a2-40eb-88be-1b98a98429ce",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "DhairyaSethi",
+      "messages": [],
+      "total_additions": 6938,
+      "total_deletions": 7256,
+      "accepted_lines": 90,
+      "overriden_lines": 0
+    }
+  }
+}
