@@ -3603,6 +3603,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x9db38D74a0D29380899aD354121DfB521aDb0548",
+      "name": "PT Global Dollar 28MAY2026",
+      "decimals": 6,
+      "symbol": "PT-USDG-28MAY2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xA9ecb0503075124cc0B786096849A331FBe9EE6D",
+      "name": "Aave Ethereum PT_USDG_28MAY2026",
+      "decimals": 6,
+      "symbol": "aEthPT_USDG_28MAY2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x9db38D74a0D29380899aD354121DfB521aDb0548"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -10549,6 +10569,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 169 },
-  "timestamp": "2026-04-07T10:04:43.915Z"
+  "version": { "major": 3, "minor": 0, "patch": 170 },
+  "timestamp": "2026-04-21T02:09:12.071Z"
 }
