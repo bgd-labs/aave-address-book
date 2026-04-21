@@ -18,9 +18,6 @@ library AaveV3Scroll {
   // https://scrollscan.com/address/0x04421D8C506E2fA2371a08EfAaBf791F624054F3
   IAaveOracle internal constant ORACLE = IAaveOracle(0x04421D8C506E2fA2371a08EfAaBf791F624054F3);
 
-  // https://scrollscan.com/address/0xfD0Ba55775C1e53f50736FA5528d8aa45FBcA391
-  address internal constant PRICE_ORACLE_SENTINEL = 0xfD0Ba55775C1e53f50736FA5528d8aa45FBcA391;
-
   // https://scrollscan.com/address/0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24
   address internal constant ACL_ADMIN = 0xc1ABF87FfAdf4908f4eC8dc54A25DCFEabAE4A24;
 
@@ -32,11 +29,11 @@ library AaveV3Scroll {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0xBEa2B648f05887eCbF1d115da8b7E4A317975A51);
 
-  // https://scrollscan.com/address/0x354d1BA411708BC19Fc24DDAc98500B527048DEB
-  address internal constant POOL_IMPL = 0x354d1BA411708BC19Fc24DDAc98500B527048DEB;
+  // https://scrollscan.com/address/0x7c9d9B3bDC3ba2E43FE2fb26B713aBDc946DB01C
+  address internal constant POOL_IMPL = 0x7c9d9B3bDC3ba2E43FE2fb26B713aBDc946DB01C;
 
-  // https://scrollscan.com/address/0x6fDdde45f777a4E461B0721a578b169b44579623
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x6fDdde45f777a4E461B0721a578b169b44579623;
+  // https://scrollscan.com/address/0xFF42Ce30054dcE7dc7C1282a9a497aa58eaBCe99
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xFF42Ce30054dcE7dc7C1282a9a497aa58eaBCe99;
 
   // https://scrollscan.com/address/0xa3f3100C4f1D0624DB9DB97b40C13885Ce297799
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -188,18 +185,18 @@ library AaveV3ScrollEModes {
   uint8 internal constant WETH_wstETH_weETH__WETH = 1;
 }
 library AaveV3ScrollExternalLibraries {
-  // https://scrollscan.com/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC
-  address internal constant FLASHLOAN_LOGIC = 0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC;
+  // https://scrollscan.com/address/0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6
+  address internal constant FLASHLOAN_LOGIC = 0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6;
 
-  // https://scrollscan.com/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
-  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
+  // https://scrollscan.com/address/0x52Da0ce88202D1542543598D1e1e27F0d344726A
+  address internal constant BORROW_LOGIC = 0x52Da0ce88202D1542543598D1e1e27F0d344726A;
 
-  // https://scrollscan.com/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
-  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
+  // https://scrollscan.com/address/0x96D5686812e33Ab509ECCDb38C89d15607B2a413
+  address internal constant LIQUIDATION_LOGIC = 0x96D5686812e33Ab509ECCDb38C89d15607B2a413;
 
-  // https://scrollscan.com/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
-  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
+  // https://scrollscan.com/address/0xD70593841C57cbaA04957cc3EAcE95708e48853b
+  address internal constant POOL_LOGIC = 0xD70593841C57cbaA04957cc3EAcE95708e48853b;
 
-  // https://scrollscan.com/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
-  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
+  // https://scrollscan.com/address/0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564
+  address internal constant SUPPLY_LOGIC = 0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564;
 }
