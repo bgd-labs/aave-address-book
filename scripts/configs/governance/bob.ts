@@ -1,5 +1,5 @@
 import { ChainId } from '@bgd-labs/toolbox';
-import { GovernanceConfig } from '../types';
+import { GovernanceConfig } from 'scripts/configs/types';
 
 export const governanceConfigBob: GovernanceConfig = {
   name: 'Bob',

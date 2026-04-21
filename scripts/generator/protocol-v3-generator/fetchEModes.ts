@@ -1,9 +1,9 @@
 import {Address, Client, getContract} from 'viem';
-import {IPool_ABI} from '../../../src/ts/abis/IPool';
-import {Addresses, EMode, ReserveData} from '../../configs/types';
-import {generateSolidityConstants, wrapIntoSolidityLibrary} from '../utils';
+import {IPool_ABI} from 'src/ts/abis/IPool';
+import {Addresses, EMode, ReserveData} from 'scripts/configs/types';
+import {generateSolidityConstants, wrapIntoSolidityLibrary} from 'scripts/generator/utils';
 import {bitmapToIndexes} from '@bgd-labs/toolbox';
-import {fixSymbol} from '../assetsLibraryGenerator';
+import {fixSymbol} from 'scripts/generator/assetsLibraryGenerator';
 
 /**
  * As eModes are stores in a mapping there is no easy way to fetch "all eModes"

@@ -2,9 +2,9 @@
 pragma solidity >=0.6.0;
 
 import 'forge-std/Test.sol';
-import {AaveV2Avalanche} from '../AaveV2Avalanche.sol';
-import {AaveV2Polygon} from '../AaveV2Polygon.sol';
-import {AaveV2EthereumArc} from '../AaveV2EthereumArc.sol';
+import {AaveV2Avalanche} from 'aave-address-book/AaveV2Avalanche.sol';
+import {AaveV2Polygon} from 'aave-address-book/AaveV2Polygon.sol';
+import {AaveV2EthereumArc} from 'aave-address-book/AaveV2EthereumArc.sol';
 
 /**
  * @dev This test contains regression tests for markets that are slightly different then the default.

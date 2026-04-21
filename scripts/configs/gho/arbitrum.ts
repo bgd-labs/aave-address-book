@@ -1,5 +1,5 @@
 import {ChainId} from '@bgd-labs/toolbox';
-import {GhoAddresses} from '../types';
+import {GhoAddresses} from 'scripts/configs/types';
 
 export const ghoArbitrum: GhoAddresses = {
   name: 'Arbitrum',

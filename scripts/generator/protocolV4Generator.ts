@@ -1,6 +1,6 @@
 import {appendFileSync, writeFileSync} from 'fs';
 import {Hex} from 'viem';
-import {Addresses, V4Config} from '../configs/types';
+import {Addresses, V4Config} from 'scripts/configs/types';
 import {
   generateJsConstants,
   generateJsObject,
@@ -8,11 +8,11 @@ import {
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
-import {getClient} from '../clients';
-import {fetchHubAssets, FetchedHubAsset} from './protocol-v4-generator/fetchHubAssets';
-import {fetchTokenizationSpokes} from './protocol-v4-generator/fetchTokenizationSpokes';
-import {fetchPriceFeeds, FetchedPriceFeed} from './protocol-v4-generator/fetchPriceFeeds';
+} from 'scripts/generator/utils';
+import {getClient} from 'scripts/clients';
+import {fetchHubAssets, FetchedHubAsset} from 'scripts/generator/protocol-v4-generator/fetchHubAssets';
+import {fetchTokenizationSpokes} from 'scripts/generator/protocol-v4-generator/fetchTokenizationSpokes';
+import {fetchPriceFeeds, FetchedPriceFeed} from 'scripts/generator/protocol-v4-generator/fetchPriceFeeds';
 
 const V4_INTERFACE_REGISTRY: Record<string, string> = {
   ACCESS_MANAGER: 'IAccessManagerEnumerable',
@@ -51,27 +51,33 @@ function buildHubsAddresses(
   return addresses;
 }
 
+function buildSpokesByBaseKey(config: V4Config): Record<string, Hex> {
+  return {
+    ...Object.fromEntries(
+      Object.entries(config.spokes).map(([name, addr]) => [`${name}_SPOKE`, addr]),
+    ),
+    ...Object.fromEntries(
+      Object.entries(config.eSpokes ?? {}).map(([name, addr]) => [`${name}_ESPOKE`, addr]),
+    ),
+  };
+}
+
 function buildSpokesAddresses(
-  config: V4Config,
-  oraclesBySpoke: Map<string, Hex>,
+  spokesByBaseKey: Record<string, Hex>,
+  treasurySpoke: Hex | undefined,
+  oraclesByBaseKey: Map<string, Hex>,
 ): Addresses {
   const addresses: Addresses = {};
 
-  // Treasury spoke
-  const treasurySpoke = config.admin.TREASURY_SPOKE;
   if (treasurySpoke) {
     addresses['TREASURY_SPOKE'] = {value: treasurySpoke, type: 'ITreasurySpoke'};
   }
 
-  // Lending spokes + oracles
-  for (const [spokeName, spokeAddress] of Object.entries(config.spokes)) {
-    addresses[`${spokeName}_SPOKE`] = {value: spokeAddress, type: 'ISpoke'};
-    const oracle = oraclesBySpoke.get(spokeName);
+  for (const [baseKey, spokeAddress] of Object.entries(spokesByBaseKey)) {
+    addresses[baseKey] = {value: spokeAddress, type: 'ISpoke'};
+    const oracle = oraclesByBaseKey.get(baseKey);
     if (oracle) {
-      addresses[`${spokeName}_SPOKE_ORACLE`] = {
-        value: oracle,
-        type: 'IAaveOracle',
-      };
+      addresses[`${baseKey}_ORACLE`] = {value: oracle, type: 'IAaveOracle'};
     }
   }
 
@@ -79,13 +85,13 @@ function buildSpokesAddresses(
 }
 
 function buildSpokePriceFeedsAddresses(
-  config: V4Config,
+  spokesByBaseKey: Record<string, Hex>,
   priceFeedData: FetchedPriceFeed[],
 ): Addresses {
   const addresses: Addresses = {};
 
-  for (const [spokeName] of Object.entries(config.spokes)) {
-    const spokePriceFeeds = priceFeedData.filter((pf) => pf.spokeName === spokeName);
+  for (const baseKey of Object.keys(spokesByBaseKey)) {
+    const spokePriceFeeds = priceFeedData.filter((pf) => pf.spokeBaseKey === baseKey);
     const symbolCount = new Map<string, number>();
     for (const pf of spokePriceFeeds) {
       symbolCount.set(pf.symbol, (symbolCount.get(pf.symbol) || 0) + 1);
@@ -93,8 +99,8 @@ function buildSpokePriceFeedsAddresses(
     for (const pf of spokePriceFeeds) {
       const needsDisambiguation = symbolCount.get(pf.symbol)! > 1;
       const key = needsDisambiguation
-        ? `${pf.spokeName}_${pf.hubName}_${pf.symbol}_PRICE_FEED`
-        : `${pf.spokeName}_${pf.symbol}_PRICE_FEED`;
+        ? `${pf.spokeBaseKey}_${pf.hubName}_${pf.symbol}_PRICE_FEED`
+        : `${pf.spokeBaseKey}_${pf.symbol}_PRICE_FEED`;
       addresses[key] = pf.priceFeed;
     }
   }
@@ -166,9 +172,10 @@ export async function generateProtocolV4Library(config: V4Config) {
     throw new Error(`client for chain not found for chainId: ${config.chainId}`);
   }
 
-  // Build set of known non-tokenization spokes for filtering
+  const spokesByBaseKey = buildSpokesByBaseKey(config);
+
   const knownNonTokenizationSpokes = new Set<string>(
-    Object.values(config.spokes).map((s) => s.toLowerCase()),
+    Object.values(spokesByBaseKey).map((s) => s.toLowerCase()),
   );
   const treasurySpoke = config.admin.TREASURY_SPOKE;
   if (treasurySpoke) {
@@ -203,10 +210,9 @@ export async function generateProtocolV4Library(config: V4Config) {
     }
   }
 
-  // Fetch price feeds from spoke oracles
-  const {priceFeeds: priceFeedData, oraclesBySpoke} = await fetchPriceFeeds(
+  const {priceFeeds: priceFeedData, oraclesByBaseKey} = await fetchPriceFeeds(
     client,
-    config.spokes,
+    spokesByBaseKey,
     hubNameByAddress,
     symbolByHubAsset,
   );
@@ -261,7 +267,7 @@ export async function generateProtocolV4Library(config: V4Config) {
   }
 
   // Spokes library (treasury spoke + lending spokes + oracles)
-  const spokesAddresses = buildSpokesAddresses(config, oraclesBySpoke);
+  const spokesAddresses = buildSpokesAddresses(spokesByBaseKey, treasurySpoke, oraclesByBaseKey);
   if (Object.keys(spokesAddresses).length > 0) {
     const spokesLibraryName = `${name}Spokes`;
     appendFileSync(
@@ -278,7 +284,7 @@ export async function generateProtocolV4Library(config: V4Config) {
   }
 
   // Spoke Price Feeds library
-  const spokePriceFeedsAddresses = buildSpokePriceFeedsAddresses(config, priceFeedData);
+  const spokePriceFeedsAddresses = buildSpokePriceFeedsAddresses(spokesByBaseKey, priceFeedData);
   if (Object.keys(spokePriceFeedsAddresses).length > 0) {
     const spokePriceFeedsLibraryName = `${name}SpokePriceFeeds`;
     appendFileSync(

@@ -1,9 +1,9 @@
 import {Client, Hex, getAddress, getContract} from 'viem';
-import {ISpokeV4_ABI} from '../../../src/ts/abis/ISpokeV4';
-import {IAaveOracleV4_ABI} from '../../../src/ts/abis/IAaveOracleV4';
+import {ISpokeV4_ABI} from 'src/ts/abis/ISpokeV4';
+import {IAaveOracleV4_ABI} from 'src/ts/abis/IAaveOracleV4';
 
 export interface FetchedPriceFeed {
-  spokeName: string;
+  spokeBaseKey: string;
   hubName: string;
   symbol: string;
   priceFeed: Hex;
@@ -11,24 +11,23 @@ export interface FetchedPriceFeed {
 
 export interface FetchPriceFeedsResult {
   priceFeeds: FetchedPriceFeed[];
-  oraclesBySpoke: Map<string, Hex>;
+  oraclesByBaseKey: Map<string, Hex>;
 }
 
 export async function fetchPriceFeeds(
   client: Client,
-  spokes: Record<string, Hex>,
+  spokesByBaseKey: Record<string, Hex>,
   hubNameByAddress: Map<string, string>,
   symbolByHubAsset: Map<string, string>,
 ): Promise<FetchPriceFeedsResult> {
   const priceFeeds: FetchedPriceFeed[] = [];
-  const oraclesBySpoke = new Map<string, Hex>();
+  const oraclesByBaseKey = new Map<string, Hex>();
 
-  for (const [spokeName, spokeAddress] of Object.entries(spokes)) {
+  for (const [spokeBaseKey, spokeAddress] of Object.entries(spokesByBaseKey)) {
     const spokeContract = getContract({address: getAddress(spokeAddress), abi: ISpokeV4_ABI, client});
 
-    // Fetch oracle address from spoke contract
     const oracleAddress = getAddress(await spokeContract.read.ORACLE());
-    oraclesBySpoke.set(spokeName, oracleAddress);
+    oraclesByBaseKey.set(spokeBaseKey, oracleAddress);
 
     const oracleContract = getContract({
       address: oracleAddress,
@@ -48,7 +47,7 @@ export async function fetchPriceFeeds(
         const key = `${reserve.hub.toLowerCase()}-${reserve.assetId}`;
         const symbol = symbolByHubAsset.get(key);
         if (hubName && symbol) {
-          return {spokeName, hubName, symbol, priceFeed};
+          return {spokeBaseKey, hubName, symbol, priceFeed};
         }
         return null;
       }),
@@ -57,5 +56,5 @@ export async function fetchPriceFeeds(
     priceFeeds.push(...(reserveData.filter(Boolean) as FetchedPriceFeed[]));
   }
 
-  return {priceFeeds, oraclesBySpoke};
+  return {priceFeeds, oraclesByBaseKey};
 }
