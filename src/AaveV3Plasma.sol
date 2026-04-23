@@ -474,11 +474,11 @@ library AaveV3PlasmaEModes {
 
   uint8 internal constant XAUt0__USDT0 = 20;
 
-  uint8 internal constant USDe_PT_USDe_9APR2026_PT_USDe_18JUN2026__USDT0_USDe = 21;
+  uint8 internal constant USDe_PT_USDe_9APR2026_PT_USDe_18JUN2026__USDT0_USDe_GHO = 21;
 
   uint8 internal constant USDe_PT_USDe_9APR2026_PT_USDe_18JUN2026__USDe = 22;
 
-  uint8 internal constant sUSDe_PT_sUSDE_9APR2026_PT_sUSDE_18JUN2026__USDT0_USDe = 23;
+  uint8 internal constant sUSDe_PT_sUSDE_9APR2026_PT_sUSDE_18JUN2026__USDT0_USDe_GHO = 23;
 
   uint8 internal constant sUSDe_PT_sUSDE_9APR2026_PT_sUSDE_18JUN2026__USDe = 24;
 }
