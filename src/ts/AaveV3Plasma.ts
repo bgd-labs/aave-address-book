@@ -530,17 +530,18 @@ export const E_MODES = {
     liquidationBonus: 10750,
   },
   '21': {
-    label: 'USDe,PT_USDe_9APR2026,PT_USDe_18JUN2026 / USDT0,USDe',
+    label: 'USDe,PT_USDe_9APR2026,PT_USDe_18JUN2026 / USDT0,USDe,GHO',
     collateralBitmap: '40962',
     collateralAssets: [
       '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
       '0x54Dc267be2839303ff1e323584A16e86CeC4Aa44',
       '0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2',
     ],
-    borrowableBitmap: '3',
+    borrowableBitmap: '16387',
     borrowableAssets: [
       '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
       '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+      '0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3',
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
@@ -565,17 +566,18 @@ export const E_MODES = {
     liquidationBonus: 10210,
   },
   '23': {
-    label: 'sUSDe,PT_sUSDE_9APR2026,PT_sUSDE_18JUN2026 / USDT0,USDe',
+    label: 'sUSDe,PT_sUSDE_9APR2026,PT_sUSDE_18JUN2026 / USDT0,USDe,GHO',
     collateralBitmap: '69636',
     collateralAssets: [
       '0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2',
       '0xab509448ad489e2E1341e25CC500f2596464Cc82',
       '0x30559E3d35e33AB69399a3fe9F383d32bd3c016E',
     ],
-    borrowableBitmap: '3',
+    borrowableBitmap: '16387',
     borrowableAssets: [
       '0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb',
       '0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34',
+      '0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3',
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],

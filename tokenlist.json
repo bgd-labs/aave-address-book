@@ -9719,6 +9719,26 @@
       }
     },
     {
+      "chainId": 57073,
+      "address": "0x8A76fe7fA6da27f85a626c5C53730B38D13603d7",
+      "name": "Syrup USDT",
+      "decimals": 6,
+      "symbol": "syrupUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 57073,
+      "address": "0x9d97196e7e6652e82C2F0FE93a9B3876E3d8528e",
+      "name": "Aave InkWhitelabel syrupUSDT",
+      "decimals": 6,
+      "symbol": "aInkWlsyrupUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x8A76fe7fA6da27f85a626c5C53730B38D13603d7"
+      }
+    },
+    {
       "chainId": 9745,
       "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "name": "USDT0",
@@ -10569,6 +10589,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 170 },
-  "timestamp": "2026-04-21T02:09:12.071Z"
+  "version": { "major": 3, "minor": 0, "patch": 171 },
+  "timestamp": "2026-04-23T02:11:23.367Z"
 }
