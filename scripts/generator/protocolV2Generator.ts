@@ -1,5 +1,5 @@
 import {Hex, Client, getContract} from 'viem';
-import {AddressInfo, PoolConfig, ReserveData} from '../configs/types';
+import {AddressInfo, PoolConfig, ReserveData} from 'scripts/configs/types';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
   generateJsConstants,
@@ -7,11 +7,11 @@ import {
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
-import {generateAssetsLibrary} from './assetsLibraryGenerator';
-import {fetchPoolAddresses} from './protocol-v2-generator/fetchPoolAddresses';
-import {getClient} from '../clients';
-import {fetchTokens, inferAdditionalTokenInfo} from './protocol-v2-generator/fetchTokens';
+} from 'scripts/generator/utils';
+import {generateAssetsLibrary} from 'scripts/generator/assetsLibraryGenerator';
+import {fetchPoolAddresses} from 'scripts/generator/protocol-v2-generator/fetchPoolAddresses';
+import {getClient} from 'scripts/clients';
+import {fetchTokens, inferAdditionalTokenInfo} from 'scripts/generator/protocol-v2-generator/fetchTokens';
 
 export interface PoolV2Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;

@@ -152,6 +152,7 @@ export interface V4Config {
   admin: Record<string, Hex>;
   hubs: Record<string, Hex>;
   spokes: Record<string, Hex>;
+  eSpokes?: Record<string, Hex>;
   positionManagers?: Record<string, Hex>;
   externalLibraries: Record<string, Hex>;
   additionalAddresses?: Record<string, Hex>;

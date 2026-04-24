@@ -1,8 +1,8 @@
 import util from 'node:util';
 import {exec} from 'node:child_process';
 import {existsSync, mkdirSync, rmSync, writeFileSync} from 'node:fs';
-import {prefixWithGeneratedWarning} from './generator/utils';
-import {ABI_INTERFACES, DOWNLOAD_ABI_INTERFACES} from './configs/abis';
+import {prefixWithGeneratedWarning} from 'scripts/generator/utils';
+import {ABI_INTERFACES, DOWNLOAD_ABI_INTERFACES} from 'scripts/configs/abis';
 
 const awaitableExec = util.promisify(exec);
 

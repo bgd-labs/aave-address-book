@@ -1,4 +1,4 @@
-import {AddressInfo, Addresses, EMode, PoolConfig, ReserveData} from '../configs/types';
+import {AddressInfo, Addresses, EMode, PoolConfig, ReserveData} from 'scripts/configs/types';
 import {appendFileSync, writeFileSync} from 'fs';
 import {
   generateJsConstants,
@@ -7,13 +7,13 @@ import {
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
-import {generateAssetsLibrary} from './assetsLibraryGenerator';
-import {fetchPoolAddresses} from './protocol-v3-generator/fetchPoolAddresses';
-import {getClient} from '../clients';
-import {fetchExternalPoolLibraries} from './protocol-v3-generator/fetchExternalPoolLibraries';
-import {fetchEModes, generateEmodeLibrary} from './protocol-v3-generator/fetchEModes';
-import {fetchTokens, inferAdditionalTokenInfo} from './protocol-v3-generator/fetchTokens';
+} from 'scripts/generator/utils';
+import {generateAssetsLibrary} from 'scripts/generator/assetsLibraryGenerator';
+import {fetchPoolAddresses} from 'scripts/generator/protocol-v3-generator/fetchPoolAddresses';
+import {getClient} from 'scripts/clients';
+import {fetchExternalPoolLibraries} from 'scripts/generator/protocol-v3-generator/fetchExternalPoolLibraries';
+import {fetchEModes, generateEmodeLibrary} from 'scripts/generator/protocol-v3-generator/fetchEModes';
+import {fetchTokens, inferAdditionalTokenInfo} from 'scripts/generator/protocol-v3-generator/fetchTokens';
 
 export interface PoolV3Addresses {
   POOL_ADDRESSES_PROVIDER: AddressInfo;

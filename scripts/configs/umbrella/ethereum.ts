@@ -1,5 +1,5 @@
 import {ChainId} from '@bgd-labs/toolbox';
-import {UmbrellaConfig} from '../types';
+import {UmbrellaConfig} from 'scripts/configs/types';
 
 export const umbrellaMainnetConfig: UmbrellaConfig = {
   name: 'Ethereum',

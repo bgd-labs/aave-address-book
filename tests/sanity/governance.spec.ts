@@ -1,11 +1,11 @@
 import {describe, it} from 'vitest';
-import * as addressBook from '../../src/ts/AaveAddressBook';
+import * as addressBook from 'src/ts/AaveAddressBook';
 import {Address, Client, getContract} from 'viem';
-import {getClient} from '../../scripts/clients';
-import {IOwnable_ABI} from '../../src/ts/abis/IOwnable';
-import {IWithGuardian_ABI} from '../../src/ts/abis/IWithGuardian';
-import {IPayloadsControllerCore_ABI} from '../../src/ts/abis/IPayloadsControllerCore';
-import {IVotingMachineWithProofs_ABI} from '../../src/ts/abis/IVotingMachineWithProofs';
+import {getClient} from 'scripts/clients';
+import {IOwnable_ABI} from 'src/ts/abis/IOwnable';
+import {IWithGuardian_ABI} from 'src/ts/abis/IWithGuardian';
+import {IPayloadsControllerCore_ABI} from 'src/ts/abis/IPayloadsControllerCore';
+import {IVotingMachineWithProofs_ABI} from 'src/ts/abis/IVotingMachineWithProofs';
 import { ChainId } from '@bgd-labs/toolbox';
 
 const ownableWithGuardianAbi = [...IOwnable_ABI, ...IWithGuardian_ABI] as const;

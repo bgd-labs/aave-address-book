@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IPool as IV3Pool} from '../AaveV3.sol';
-import {ILendingPool as IV2Pool} from '../AaveV2.sol';
+import {IPool as IV3Pool} from 'aave-address-book/AaveV3.sol';
+import {ILendingPool as IV2Pool} from 'aave-address-book/AaveV2.sol';
 import {ICreditDelegationToken} from 'aave-v3-origin/contracts/interfaces/ICreditDelegationToken.sol';
 import {IERC20WithPermit} from 'aave-v3-origin/contracts/interfaces/IERC20WithPermit.sol';
 

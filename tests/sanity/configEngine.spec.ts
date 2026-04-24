@@ -1,8 +1,8 @@
 import {describe, expect, it} from 'vitest';
-import * as addressBook from '../../src/ts/AaveAddressBook';
-import {IAaveV3ConfigEngine_ABI} from '../../src/ts/abis/IAaveV3ConfigEngine';
+import * as addressBook from 'src/ts/AaveAddressBook';
+import {IAaveV3ConfigEngine_ABI} from 'src/ts/abis/IAaveV3ConfigEngine';
 import {getContract} from 'viem';
-import {getClient} from '../../scripts/clients';
+import {getClient} from 'scripts/clients';
 
 async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);

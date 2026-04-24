@@ -1,19 +1,19 @@
 import {schema, TokenInfo, TokenList} from '@uniswap/token-lists';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import {ReserveData, UmbrellaStakeData} from '../configs/types';
+import {ReserveData, UmbrellaStakeData} from 'scripts/configs/types';
 import {readFileSync, existsSync, writeFileSync} from 'fs';
 import {cwd} from 'process';
 import {join} from 'path';
 import prettier from 'prettier';
 import {Address, getContract, Hex, zeroAddress} from 'viem';
-import {IERC20Detailed_ABI} from '../../src/ts/abis/IERC20Detailed';
-import {IStataTokenV2_ABI} from './../../src/ts/abis/IStataTokenV2';
-import {fixSymbol} from './assetsLibraryGenerator';
-import {getSymbolUri, getUmbrellaStkVariant, VARIANT} from './svgUtils';
-import {getClient} from '../clients';
+import {IERC20Detailed_ABI} from 'src/ts/abis/IERC20Detailed';
+import {IStataTokenV2_ABI} from 'src/ts/abis/IStataTokenV2';
+import {fixSymbol} from 'scripts/generator/assetsLibraryGenerator';
+import {getSymbolUri, getUmbrellaStkVariant, VARIANT} from 'scripts/generator/svgUtils';
+import {getClient} from 'scripts/clients';
 import {ChainList} from '@bgd-labs/toolbox';
-import {getTokenSymbol} from './utils';
+import {getTokenSymbol} from 'scripts/generator/utils';
 
 const TAGS = {
   underlying: 'underlying',

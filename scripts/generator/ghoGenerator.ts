@@ -1,12 +1,12 @@
 import * as fs from 'fs';
-import {GhoAddresses, NetworkAddresses} from '../configs/types';
+import {GhoAddresses, NetworkAddresses} from 'scripts/configs/types';
 import {
   generateJsConstants,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
+} from 'scripts/generator/utils';
 
 export function generateGho(config: GhoAddresses) {
   const name = `Gho${config.name}`;

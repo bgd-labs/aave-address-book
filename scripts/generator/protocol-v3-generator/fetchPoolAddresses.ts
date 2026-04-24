@@ -1,8 +1,8 @@
 import {Address, Client, getContract, zeroAddress} from 'viem';
-import {PoolConfig} from '../../configs/types';
-import {IPoolAddressesProvider_ABI} from '../../../src/ts/abis/IPoolAddressesProvider';
-import {IRewardsController_ABI} from '../../../src/ts/abis/IRewardsController';
-import {bytes32toAddress, getImplementationStorageSlot} from '../utils';
+import {PoolConfig} from 'scripts/configs/types';
+import {IPoolAddressesProvider_ABI} from 'src/ts/abis/IPoolAddressesProvider';
+import {IRewardsController_ABI} from 'src/ts/abis/IRewardsController';
+import {bytes32toAddress, getImplementationStorageSlot} from 'scripts/generator/utils';
 
 export async function fetchPoolAddresses(client: Client, poolConfig: PoolConfig) {
   const addressProviderContract = getContract({
