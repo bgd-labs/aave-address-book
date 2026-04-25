@@ -31,10 +31,12 @@ import { celoProtoV3 } from './configs/pools/celo';
 import { mantleProtoV3 } from './configs/pools/mantle';
 import { sonicProtoV3 } from './configs/pools/sonic';
 import { soneiumProtoV3 } from './configs/pools/soneium';
-import { inkProtoV3 } from './configs/pools/ink';
+import { inkProtoV3, inkSepoliaProtoV3 } from './configs/pools/ink';
 import { plasmaProtoV3 } from './configs/pools/plasma';
 import { megaEthProtoV3 } from './configs/pools/megaeth';
 import { xLayerProtoV3 } from './configs/pools/xlayer';
+import { mainnetV4Config } from './configs/v4/ethereum';
+import { generateProtocolV4Library } from './generator/protocolV4Generator';
 import { generateGovernanceLibrary } from './generator/governanceV3Generator';
 import { generateProtocolV2Library } from './generator/protocolV2Generator';
 import { generateProtocolV3Library } from './generator/protocolV3Generator';
@@ -65,7 +67,7 @@ import { gnosisAddresses } from './configs/networks/gnosis';
 import { bnbAddresses } from './configs/networks/bnb';
 import { celoAddresses } from './configs/networks/celo';
 import { scrollAddresses } from './configs/networks/scroll';
-import { inkAddresses, inkWhiteLabelAddresses } from './configs/networks/ink';
+import { inkAddresses, inkWhiteLabelAddresses, inkSepoliaAddresses } from './configs/networks/ink';
 import { governanceConfigScroll } from './configs/governance/scroll';
 import { generateTokenList } from './generator/generateTokenList';
 import { generateAaveV1 } from './generator/protocolV1Generator';
@@ -187,11 +189,16 @@ async function main() {
       sonicProtoV3,
       soneiumProtoV3,
       inkProtoV3,
+      inkSepoliaProtoV3,
       plasmaProtoV3,
       megaEthProtoV3,
       xLayerProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
+  const v4LibraryNames = await Promise.all(
+    [mainnetV4Config].map((config) => generateProtocolV4Library(config)),
+  );
+
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle, ghoXLayer].map((config) =>
     generateGho(config),
   );
@@ -233,6 +240,7 @@ async function main() {
     bobAddresses,
     inkAddresses,
     inkWhiteLabelAddresses,
+    inkSepoliaAddresses,
     plasmaAddresses,
     megaEthAddresses,
     xLayerAddresses,
@@ -253,6 +261,7 @@ async function main() {
     v1Library,
     v2LibraryNames,
     v3LibraryNames,
+    v4LibraryNames,
     networkAddresses,
     govImports,
     smImports,

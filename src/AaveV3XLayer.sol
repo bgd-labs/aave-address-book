@@ -18,9 +18,6 @@ library AaveV3XLayer {
   // https://www.oklink.com/xlayer/address/0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6
   IAaveOracle internal constant ORACLE = IAaveOracle(0x91FC11136d5615575a0fC5981Ab5C0C54418E2C6);
 
-  // https://www.oklink.com/xlayer/address/0xa119F84bC1b8083F5061E4cf53705cBf1065bA27
-  address internal constant PRICE_ORACLE_SENTINEL = 0xa119F84bC1b8083F5061E4cf53705cBf1065bA27;
-
   // https://www.oklink.com/xlayer/address/0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19
   address internal constant ACL_ADMIN = 0xE2E8Badc5d50f8a6188577B89f50701cDE2D4e19;
 
@@ -32,11 +29,11 @@ library AaveV3XLayer {
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
     IPoolDataProvider(0x6C505C31714f14e8af2A03633EB2Cdfb4959138F);
 
-  // https://www.oklink.com/xlayer/address/0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9
-  address internal constant POOL_IMPL = 0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9;
+  // https://www.oklink.com/xlayer/address/0x5Bc7204274230a8F4778a35A58B776D16CF104b4
+  address internal constant POOL_IMPL = 0x5Bc7204274230a8F4778a35A58B776D16CF104b4;
 
-  // https://www.oklink.com/xlayer/address/0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x2B16E93bdB1897f517881B3c388bABD0C62C6cdC;
+  // https://www.oklink.com/xlayer/address/0xFF42Ce30054dcE7dc7C1282a9a497aa58eaBCe99
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xFF42Ce30054dcE7dc7C1282a9a497aa58eaBCe99;
 
   // https://www.oklink.com/xlayer/address/0x5404934c8F472818135176C80095283d78EB32D6
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
@@ -261,18 +258,18 @@ library AaveV3XLayerEModes {
   uint8 internal constant xOKSOL__xSOL = 6;
 }
 library AaveV3XLayerExternalLibraries {
-  // https://www.oklink.com/xlayer/address/0x8e7aadB7bBAb02Ad899A13FF9A75571A4866Bf04
-  address internal constant FLASHLOAN_LOGIC = 0x8e7aadB7bBAb02Ad899A13FF9A75571A4866Bf04;
+  // https://www.oklink.com/xlayer/address/0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6
+  address internal constant FLASHLOAN_LOGIC = 0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6;
 
-  // https://www.oklink.com/xlayer/address/0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635
-  address internal constant BORROW_LOGIC = 0x1Fb8f7C906cddD28B42ae6Eb76abC04A91188635;
+  // https://www.oklink.com/xlayer/address/0x52Da0ce88202D1542543598D1e1e27F0d344726A
+  address internal constant BORROW_LOGIC = 0x52Da0ce88202D1542543598D1e1e27F0d344726A;
 
-  // https://www.oklink.com/xlayer/address/0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104
-  address internal constant LIQUIDATION_LOGIC = 0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104;
+  // https://www.oklink.com/xlayer/address/0x96D5686812e33Ab509ECCDb38C89d15607B2a413
+  address internal constant LIQUIDATION_LOGIC = 0x96D5686812e33Ab509ECCDb38C89d15607B2a413;
 
-  // https://www.oklink.com/xlayer/address/0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5
-  address internal constant POOL_LOGIC = 0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5;
+  // https://www.oklink.com/xlayer/address/0xD70593841C57cbaA04957cc3EAcE95708e48853b
+  address internal constant POOL_LOGIC = 0xD70593841C57cbaA04957cc3EAcE95708e48853b;
 
-  // https://www.oklink.com/xlayer/address/0x33654b16A4De97bCE05d7dD06803Bf1066f3123C
-  address internal constant SUPPLY_LOGIC = 0x33654b16A4De97bCE05d7dD06803Bf1066f3123C;
+  // https://www.oklink.com/xlayer/address/0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564
+  address internal constant SUPPLY_LOGIC = 0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564;
 }

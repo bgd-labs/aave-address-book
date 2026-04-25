@@ -65,7 +65,7 @@ async function checkVerified(item: ListItem) {
       chainId: item.chainId,
       apiKey: process.env.ETHERSCAN_API_KEY,
       address: item.value as Address,
-      apiUrl: process.env.EXPLORER_PROXY,
+      apiUrl: getApiUrl(item.chainId),
     });
     if (!source.ContractName) {
       // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
@@ -85,12 +85,14 @@ function getApiUrl(chainId: number) {
   if (chainId === ChainId.soneium) return `https://soneium.blockscout.com/api`;
   if (chainId === ChainId.bob) return `https://explorer.gobob.xyz/api`;
   if (chainId === ChainId.ink) return `https://explorer.inkonchain.com/api/`;
+  if (chainId === ChainId.scroll) return `https://scroll.blockscout.com/api`;
   return getExplorer(chainId).api;
 }
 
 const knownErrors = {
   1: {
     '0xD01ab9a6577E1D84F142e44D49380e23A340387d': true, // very old contracts we know will never be verified
+    '0x9f336eB940730596548C342A8BF1fC530B10cc96': true, // PT_srUSDe_25JUN2026 oracle verified but not detecting
   },
   1101: {
     '0xF1c11BE0b4466728DDb7991A0Ac5265646ec9672': true, // very old contracts we know will never be verified
@@ -110,6 +112,10 @@ const knownErrors = {
     '0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104': true,
     '0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5': true,
     '0x33654b16A4De97bCE05d7dD06803Bf1066f3123C': true,
+  },
+  9745: {
+    '0x30559E3d35e33AB69399a3fe9F383d32bd3c016E': true, // PT_sUSDE_18JUN2026 verified but not detecting
+    '0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2': true, // PT_USDe_18JUN2026 verified but not detecting
   },
 };
 

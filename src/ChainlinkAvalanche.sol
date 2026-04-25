@@ -27,9 +27,6 @@ library ChainlinkAvalanche {
   // https://snowscan.xyz/address/0xCF60B4E089eA1ABA29C01b017b38c2f7D69Eb36B
   address internal constant WSTETH__ETH = 0xCF60B4E089eA1ABA29C01b017b38c2f7D69Eb36B;
 
-  // https://snowscan.xyz/address/0x7B0ca9A6D03FE0467A31Ca850f5bcA51e027B3aF
-  address internal constant ALPHA__USD = 0x7B0ca9A6D03FE0467A31Ca850f5bcA51e027B3aF;
-
   // https://snowscan.xyz/address/0x7Ee401373A92f885a7C3A53CF46dbe661eaFb1C0
   address internal constant SHIB__USD = 0x7Ee401373A92f885a7C3A53CF46dbe661eaFb1C0;
 
@@ -88,9 +85,6 @@ library ChainlinkAvalanche {
 
   // https://snowscan.xyz/address/0x69C2703b8F1A85a2EF6aBDd085699a9F909BE053
   address internal constant ADA__USD = 0x69C2703b8F1A85a2EF6aBDd085699a9F909BE053;
-
-  // https://snowscan.xyz/address/0x99311B4bf6D8E3D3B4b9fbdD09a1B0F4Ad8e06E9
-  address internal constant BTCb_Proof_of_Reserves = 0x99311B4bf6D8E3D3B4b9fbdD09a1B0F4Ad8e06E9;
 
   // https://snowscan.xyz/address/0x5C2d58627Fbe746f5ea24Ef6D618f09f8e3f0122
   address internal constant AUSD__USD = 0x5C2d58627Fbe746f5ea24Ef6D618f09f8e3f0122;

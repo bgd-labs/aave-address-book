@@ -146,6 +146,17 @@ export interface GhoAddresses<T extends Record<string, AddressInfo> = {}> {
   addresses: T;
 }
 
+export interface V4Config {
+  name: string;
+  chainId: number;
+  admin: Record<string, Hex>;
+  hubs: Record<string, Hex>;
+  spokes: Record<string, Hex>;
+  positionManagers?: Record<string, Hex>;
+  externalLibraries: Record<string, Hex>;
+  additionalAddresses?: Record<string, Hex>;
+}
+
 export interface UmbrellaConfig {
   name: string;
   chainId: number;

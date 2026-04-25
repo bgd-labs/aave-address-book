@@ -1,0 +1,57 @@
+export const IHubV4_ABI = [
+  {
+    type: 'function',
+    name: 'getAssetCount',
+    inputs: [],
+    outputs: [{name: '', type: 'uint256'}],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getAsset',
+    inputs: [{name: 'assetId', type: 'uint256'}],
+    outputs: [
+      {
+        name: '',
+        type: 'tuple',
+        components: [
+          {name: 'liquidity', type: 'uint120'},
+          {name: 'realizedFees', type: 'uint120'},
+          {name: 'decimals', type: 'uint8'},
+          {name: 'addedShares', type: 'uint120'},
+          {name: 'swept', type: 'uint120'},
+          {name: 'premiumOffsetRay', type: 'int200'},
+          {name: 'drawnShares', type: 'uint120'},
+          {name: 'premiumShares', type: 'uint120'},
+          {name: 'liquidityFee', type: 'uint16'},
+          {name: 'drawnIndex', type: 'uint120'},
+          {name: 'drawnRate', type: 'uint96'},
+          {name: 'lastUpdateTimestamp', type: 'uint40'},
+          {name: 'underlying', type: 'address'},
+          {name: 'irStrategy', type: 'address'},
+          {name: 'reinvestmentController', type: 'address'},
+          {name: 'feeReceiver', type: 'address'},
+          {name: 'deficitRay', type: 'uint200'},
+        ],
+      },
+    ],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getSpokeCount',
+    inputs: [{name: 'assetId', type: 'uint256'}],
+    outputs: [{name: '', type: 'uint256'}],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    name: 'getSpokeAddress',
+    inputs: [
+      {name: 'assetId', type: 'uint256'},
+      {name: 'index', type: 'uint256'},
+    ],
+    outputs: [{name: '', type: 'address'}],
+    stateMutability: 'view',
+  },
+] as const;
