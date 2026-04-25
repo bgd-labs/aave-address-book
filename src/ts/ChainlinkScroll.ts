@@ -86,9 +86,6 @@ export const BTC__USD = '0xCaca6BFdeDA537236Ee406437D2F8a400026C589';
 // https://scrollscan.com/address/0xE61Da4C909F7d86797a0D06Db63c34f76c9bCBDC
 export const wstETH_stETH_Exchange_Rate = '0xE61Da4C909F7d86797a0D06Db63c34f76c9bCBDC';
 
-// https://scrollscan.com/address/0x3fBB86e564fC1303625BA88EaE55740f3A649d36
-export const RETH__ETH = '0x3fBB86e564fC1303625BA88EaE55740f3A649d36';
-
 // https://scrollscan.com/address/0x538E0fC727ce4604e25354D082890cdb5553d33B
 export const AAVE__USD = '0x538E0fC727ce4604e25354D082890cdb5553d33B';
 
@@ -106,6 +103,9 @@ export const AAVE_Network_Emergency_Count_Scroll = '0xf39adcF2e13D99818a3AE560F8
 
 // https://scrollscan.com/address/0x7e73693088d88694146ab30f1dA5903a4489e992
 export const WBTC__BTC = '0x7e73693088d88694146ab30f1dA5903a4489e992';
+
+// https://scrollscan.com/address/0x5df16dE72003c33dE38f8620BF91f0e7c4eE7300
+export const EURC__USD = '0x5df16dE72003c33dE38f8620BF91f0e7c4eE7300';
 
 // https://scrollscan.com/address/0xd63624330Ed4e50dD65FeA45c08558F78a3d8abd
 export const ezETH__ETH = '0xd63624330Ed4e50dD65FeA45c08558F78a3d8abd';

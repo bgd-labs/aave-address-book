@@ -3583,6 +3583,46 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x619D75E3b790eBC21c289f2805Bb7177A7D732E2",
+      "name": "PT Strata Senior USDe 25JUN2026",
+      "decimals": 18,
+      "symbol": "PT-srUSDe-25JUN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xA78Eba24D89e70A03ddB7AC195A15E53315aA5b4",
+      "name": "Aave Ethereum PT_srUSDe_25JUN2026",
+      "decimals": 18,
+      "symbol": "aEthPT_srUSDe_25JUN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x619D75E3b790eBC21c289f2805Bb7177A7D732E2"
+      }
+    },
+    {
+      "chainId": 1,
+      "address": "0x9db38D74a0D29380899aD354121DfB521aDb0548",
+      "name": "PT Global Dollar 28MAY2026",
+      "decimals": 6,
+      "symbol": "PT-USDG-28MAY2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0xA9ecb0503075124cc0B786096849A331FBe9EE6D",
+      "name": "Aave Ethereum PT_USDG_28MAY2026",
+      "decimals": 6,
+      "symbol": "aEthPT_USDG_28MAY2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x9db38D74a0D29380899aD354121DfB521aDb0548"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -9679,6 +9719,26 @@
       }
     },
     {
+      "chainId": 57073,
+      "address": "0x8A76fe7fA6da27f85a626c5C53730B38D13603d7",
+      "name": "Syrup USDT",
+      "decimals": 6,
+      "symbol": "syrupUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 57073,
+      "address": "0x9d97196e7e6652e82C2F0FE93a9B3876E3d8528e",
+      "name": "Aave InkWhitelabel syrupUSDT",
+      "decimals": 6,
+      "symbol": "aInkWlsyrupUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x8A76fe7fA6da27f85a626c5C53730B38D13603d7"
+      }
+    },
+    {
       "chainId": 9745,
       "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "name": "USDT0",
@@ -10101,6 +10161,46 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2",
+      "name": "PT Ethena USDe 18JUN2026",
+      "decimals": 18,
+      "symbol": "PT-USDe-18JUN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0xDEdFF537fCBa1169E673F78EE23D109885741016",
+      "name": "Aave Plasma PT_USDe_18JUN2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_USDe_18JUN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2"
+      }
+    },
+    {
+      "chainId": 9745,
+      "address": "0x30559E3d35e33AB69399a3fe9F383d32bd3c016E",
+      "name": "PT Ethena sUSDE 18JUN2026",
+      "decimals": 18,
+      "symbol": "PT-sUSDE-18JUN2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x68ab954Dc705c66506d499963dD1fbB8aFa23d7d",
+      "name": "Aave Plasma PT_sUSDE_18JUN2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_sUSDE_18JUN2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0x30559E3d35e33AB69399a3fe9F383d32bd3c016E"
+      }
+    },
+    {
       "chainId": 4326,
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -10489,6 +10589,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 169 },
-  "timestamp": "2026-03-31T09:38:29.258Z"
+  "version": { "major": 3, "minor": 0, "patch": 171 },
+  "timestamp": "2026-04-23T02:11:23.367Z"
 }
