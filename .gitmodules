@@ -1,6 +1,7 @@
-[submodule "lib/aave-v3-origin"]
-	path = lib/aave-v3-origin
-	url = https://github.com/aave-dao/aave-v3-origin
 [submodule "lib/aave-v4"]
 	path = lib/aave-v4
 	url = https://github.com/aave/aave-v4
+[submodule "lib/aave-v3-origin"]
+	path = lib/aave-v3-origin
+	url = https://github.com/aave-dao/aave-v3-origin
+	branch = v3.7

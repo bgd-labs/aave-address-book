@@ -1,8 +1,8 @@
 {
   "lib/aave-v3-origin": {
     "branch": {
-      "name": "main",
-      "rev": "1e3d70c4151a94166ebc59e2eaa4aff6e6ba6978"
+      "name": "v3.7",
+      "rev": "20d0984727536e77801798fd5f3f7b519485f4d1"
     }
   },
   "lib/aave-v4": {
