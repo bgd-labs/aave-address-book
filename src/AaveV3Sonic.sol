@@ -52,8 +52,8 @@ library AaveV3Sonic {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0x2022597abeE8007bbf4E72f51Fc1B5493363AcA6;
 
-  // https://sonicscan.org/address/0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B
-  address internal constant CONFIG_ENGINE = 0x29081f7aB5a644716EfcDC10D5c926c5fEe9F72B;
+  // https://sonicscan.org/address/0x04a8D477eE202aDCE1682F5902e1160455205b12
+  address internal constant CONFIG_ENGINE = 0x04a8D477eE202aDCE1682F5902e1160455205b12;
 
   // https://sonicscan.org/address/0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c
   address internal constant RISK_STEWARD = 0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c;
@@ -65,8 +65,8 @@ library AaveV3Sonic {
   // https://sonicscan.org/address/0xeC859AED64e87004FA724892D5aB474901825B2D
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xeC859AED64e87004FA724892D5aB474901825B2D;
 
-  // https://sonicscan.org/address/0x4F3F69979ED28c962028582B1760E98B1a117097
-  address internal constant UI_POOL_DATA_PROVIDER = 0x4F3F69979ED28c962028582B1760E98B1a117097;
+  // https://sonicscan.org/address/0x134189412686aC8789014796Ba8F727574B2785E
+  address internal constant UI_POOL_DATA_PROVIDER = 0x134189412686aC8789014796Ba8F727574B2785E;
 
   // https://sonicscan.org/address/0x6637Ef9c6b41Fa62d69b7E88C5Dd9eF30BbEE945
   address internal constant WALLET_BALANCE_PROVIDER = 0x6637Ef9c6b41Fa62d69b7E88C5Dd9eF30BbEE945;

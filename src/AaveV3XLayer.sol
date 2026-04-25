@@ -65,8 +65,8 @@ library AaveV3XLayer {
   // https://www.oklink.com/xlayer/address/0xd50437FDC430FDA64f1f4C87181995ad6CA2eaA3
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xd50437FDC430FDA64f1f4C87181995ad6CA2eaA3;
 
-  // https://www.oklink.com/xlayer/address/0x7E195b3fc91fDd51A9CD5070cC044602212Ac983
-  address internal constant UI_POOL_DATA_PROVIDER = 0x7E195b3fc91fDd51A9CD5070cC044602212Ac983;
+  // https://www.oklink.com/xlayer/address/0x70Bf6EC6Fca41a7d08dCBB9909985AC0A4510B5E
+  address internal constant UI_POOL_DATA_PROVIDER = 0x70Bf6EC6Fca41a7d08dCBB9909985AC0A4510B5E;
 
   // https://www.oklink.com/xlayer/address/0x421117D7319E96d831972b3F7e970bbfe29C4F21
   address internal constant WALLET_BALANCE_PROVIDER = 0x421117D7319E96d831972b3F7e970bbfe29C4F21;

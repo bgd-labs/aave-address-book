@@ -58,8 +58,8 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant DEBT_SWAP_ADAPTER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 
-  // https://bscscan.com/address/0x69A45013F047A65422deFdD0C43f09530D7025c0
-  address internal constant CONFIG_ENGINE = 0x69A45013F047A65422deFdD0C43f09530D7025c0;
+  // https://bscscan.com/address/0xAdDb96Fb6A795faf042DD25BD4710267C41D1F74
+  address internal constant CONFIG_ENGINE = 0xAdDb96Fb6A795faf042DD25BD4710267C41D1F74;
 
   // https://bscscan.com/address/0x117684358D990E42Eb1649E7e8C4691951dc1E71
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -75,8 +75,8 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x5c5228aC8BC1528482514aF3e27E692495148717
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x5c5228aC8BC1528482514aF3e27E692495148717;
 
-  // https://bscscan.com/address/0x632b5Dfc315b228bfE779E6442322Ad8a110Ea13
-  address internal constant UI_POOL_DATA_PROVIDER = 0x632b5Dfc315b228bfE779E6442322Ad8a110Ea13;
+  // https://bscscan.com/address/0x2cC18D5Be60bFE2D7F3016524d2E4F1653Afeb60
+  address internal constant UI_POOL_DATA_PROVIDER = 0x2cC18D5Be60bFE2D7F3016524d2E4F1653Afeb60;
 
   // https://bscscan.com/address/0x36616cf17557639614c1cdDb356b1B83fc0B2132
   address internal constant WALLET_BALANCE_PROVIDER = 0x36616cf17557639614c1cdDb356b1B83fc0B2132;
