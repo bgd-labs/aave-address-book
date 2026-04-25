@@ -65,7 +65,7 @@ async function checkVerified(item: ListItem) {
       chainId: item.chainId,
       apiKey: process.env.ETHERSCAN_API_KEY,
       address: item.value as Address,
-      apiUrl: process.env.EXPLORER_PROXY,
+      apiUrl: getApiUrl(item.chainId),
     });
     if (!source.ContractName) {
       // etherscan returns proxy contracts as non verified if the proxy is not manually assigned
@@ -85,6 +85,7 @@ function getApiUrl(chainId: number) {
   if (chainId === ChainId.soneium) return `https://soneium.blockscout.com/api`;
   if (chainId === ChainId.bob) return `https://explorer.gobob.xyz/api`;
   if (chainId === ChainId.ink) return `https://explorer.inkonchain.com/api/`;
+  if (chainId === ChainId.scroll) return `https://scroll.blockscout.com/api`;
   return getExplorer(chainId).api;
 }
 
@@ -115,7 +116,7 @@ const knownErrors = {
   9745: {
     '0x30559E3d35e33AB69399a3fe9F383d32bd3c016E': true, // PT_sUSDE_18JUN2026 verified but not detecting
     '0x23B17d3944742ACe3d0C71586FcB320d1e4a1Ed2': true, // PT_USDe_18JUN2026 verified but not detecting
-  }
+  },
 };
 
 describe('verification', {timeout: 500_000}, () => {
