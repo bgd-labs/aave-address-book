@@ -181,6 +181,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9',
     ORACLE: '0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb',
   },
+  syrupUSDT: {
+    decimals: 6,
+    id: 12,
+    UNDERLYING: '0x8A76fe7fA6da27f85a626c5C53730B38D13603d7',
+    A_TOKEN: '0x9d97196e7e6652e82C2F0FE93a9B3876E3d8528e',
+    V_TOKEN: '0x58514b6c52a3515cCBBF459BFdb4fC2Aba8462b2',
+    INTEREST_RATE_STRATEGY: '0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9',
+    ORACLE: '0x7791e46f5588aCd48EE31494877dD9F182f7f566',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -193,8 +202,8 @@ export const E_MODES = {
     ],
     borrowableBitmap: '1',
     borrowableAssets: ['0x4200000000000000000000000000000000000006'],
-    ltvzeroBitmap: '0',
-    ltvzeroAssets: [],
+    ltvzeroBitmap: '128',
+    ltvzeroAssets: ['0x9f0a74A92287E323Eb95c1cd9eCdBEb0e397cAe4'],
     ltv: 9300,
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
@@ -233,6 +242,18 @@ export const E_MODES = {
     ltv: 9000,
     liquidationThreshold: 9300,
     liquidationBonus: 10200,
+  },
+  '4': {
+    label: 'syrupUSDT / USDT',
+    collateralBitmap: '4096',
+    collateralAssets: ['0x8A76fe7fA6da27f85a626c5C53730B38D13603d7'],
+    borrowableBitmap: '4',
+    borrowableAssets: ['0x0200C29006150606B650577BBE7B6248F58470c1'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 9000,
+    liquidationThreshold: 9200,
+    liquidationBonus: 10400,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
