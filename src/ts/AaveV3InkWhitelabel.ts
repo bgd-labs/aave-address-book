@@ -44,8 +44,8 @@ export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xED9ee9CEC2782a307E8F6ca6E1097
 // https://explorer.inkonchain.com/address/0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c
 export const L2_ENCODER = '0x988B5d3863bdEE83339Be41cD31344Dfd9FD197c';
 
-// https://explorer.inkonchain.com/address/0xb04280b09F47cFd81906817505F24ceFE1BA86D2
-export const CONFIG_ENGINE = '0xb04280b09F47cFd81906817505F24ceFE1BA86D2';
+// https://explorer.inkonchain.com/address/0xF1Cd4193bbc1aD4a23E833170f49d60f3D35a621
+export const CONFIG_ENGINE = '0xF1Cd4193bbc1aD4a23E833170f49d60f3D35a621';
 
 // https://explorer.inkonchain.com/address/0x2F9fDD0D80843b21A7e2c7bfe2A6278231A5683e
 export const RISK_STEWARD = '0x2F9fDD0D80843b21A7e2c7bfe2A6278231A5683e';
@@ -56,8 +56,8 @@ export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x501B4c19dd9C2e06E94dA7b6D5Ed4
 // https://explorer.inkonchain.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
 export const UI_INCENTIVE_DATA_PROVIDER = '0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C';
 
-// https://explorer.inkonchain.com/address/0xF1485fb7DBFa5db0B368FeA808FD6ff945c36064
-export const UI_POOL_DATA_PROVIDER = '0xF1485fb7DBFa5db0B368FeA808FD6ff945c36064';
+// https://explorer.inkonchain.com/address/0xe88fb4EAf67Ea87BB458e24C94BEf0EB02b5F449
+export const UI_POOL_DATA_PROVIDER = '0xe88fb4EAf67Ea87BB458e24C94BEf0EB02b5F449';
 
 // https://explorer.inkonchain.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
 export const WALLET_BALANCE_PROVIDER = '0xB1532b76D054c9F9E61b25c4d91f69B4133E4671';

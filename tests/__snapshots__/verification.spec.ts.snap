@@ -1,3 +1,66 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`verification > should have all contracts verified except for the known set of errors 1`] = `[]`;
+exports[`verification > should have all contracts verified except for the known set of errors 1`] = `
+[
+  {
+    "item": {
+      "chainId": 59144,
+      "path": [
+        "AaveV3Linea",
+        "CONFIG_ENGINE",
+      ],
+      "value": "0x4ad4a620EEaE490d5872F69845104fAeFB67EFc4",
+    },
+  },
+  {
+    "item": {
+      "chainId": 59144,
+      "path": [
+        "AaveV3Linea",
+        "UI_POOL_DATA_PROVIDER",
+      ],
+      "value": "0x070B4C70797456cF97B6958863c894E38df4f345",
+    },
+  },
+  {
+    "item": {
+      "chainId": 42220,
+      "path": [
+        "AaveV3Celo",
+        "UI_POOL_DATA_PROVIDER",
+      ],
+      "value": "0x04a8D477eE202aDCE1682F5902e1160455205b12",
+    },
+  },
+  {
+    "item": {
+      "chainId": 146,
+      "path": [
+        "AaveV3Sonic",
+        "UI_POOL_DATA_PROVIDER",
+      ],
+      "value": "0x134189412686aC8789014796Ba8F727574B2785E",
+    },
+  },
+  {
+    "item": {
+      "chainId": 9745,
+      "path": [
+        "AaveV3Plasma",
+        "UI_POOL_DATA_PROVIDER",
+      ],
+      "value": "0xe427FCbD54169136391cfEDf68E96abB13dA87A0",
+    },
+  },
+  {
+    "item": {
+      "chainId": 196,
+      "path": [
+        "AaveV3XLayer",
+        "CONFIG_ENGINE",
+      ],
+      "value": "0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F",
+    },
+  },
+]
+`;

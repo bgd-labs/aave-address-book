@@ -73,8 +73,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC
   address internal constant L2_ENCODER = 0x9abADECD08572e0eA5aF4d47A9C7984a5AA503dC;
 
-  // https://arbiscan.io/address/0x771051750e4de7f178370Bae3AaA58f90778c9B9
-  address internal constant CONFIG_ENGINE = 0x771051750e4de7f178370Bae3AaA58f90778c9B9;
+  // https://arbiscan.io/address/0xFaEe011b679330A42fFc33c6444800F78b69Dc58
+  address internal constant CONFIG_ENGINE = 0xFaEe011b679330A42fFc33c6444800F78b69Dc58;
 
   // https://arbiscan.io/address/0x770ef9f4fe897e59daCc474EF11238303F9552b6
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
@@ -101,8 +101,8 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0x68100bD5345eA474D93577127C11F39FF8463e93
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x68100bD5345eA474D93577127C11F39FF8463e93;
 
-  // https://arbiscan.io/address/0x13c833256BD767da2320d727a3691BAff3770E39
-  address internal constant UI_POOL_DATA_PROVIDER = 0x13c833256BD767da2320d727a3691BAff3770E39;
+  // https://arbiscan.io/address/0x9A8d4D93dEB59e0457F179e6B69A9073D7e2E5Db
+  address internal constant UI_POOL_DATA_PROVIDER = 0x9A8d4D93dEB59e0457F179e6B69A9073D7e2E5Db;
 
   // https://arbiscan.io/address/0xBc790382B3686abffE4be14A030A96aC6154023a
   address internal constant WALLET_BALANCE_PROVIDER = 0xBc790382B3686abffE4be14A030A96aC6154023a;
