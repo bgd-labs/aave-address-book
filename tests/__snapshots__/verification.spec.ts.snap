@@ -52,5 +52,15 @@ exports[`verification > should have all contracts verified except for the known 
       "value": "0xe427FCbD54169136391cfEDf68E96abB13dA87A0",
     },
   },
+  {
+    "item": {
+      "chainId": 196,
+      "path": [
+        "AaveV3XLayer",
+        "CONFIG_ENGINE",
+      ],
+      "value": "0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F",
+    },
+  },
 ]
 `;

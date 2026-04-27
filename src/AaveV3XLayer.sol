@@ -52,8 +52,8 @@ library AaveV3XLayer {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xF9e48edc704BDF494309cA457BCea4c0696f591d;
 
-  // https://www.oklink.com/xlayer/address/0x2eb21BCE2C5D59a67C648BfD2e700AdDB752DD7B
-  address internal constant CONFIG_ENGINE = 0x2eb21BCE2C5D59a67C648BfD2e700AdDB752DD7B;
+  // https://www.oklink.com/xlayer/address/0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F
+  address internal constant CONFIG_ENGINE = 0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F;
 
   // https://www.oklink.com/xlayer/address/0xb5970A521073ADE4836dD4A24854Eb387a67c5C8
   address internal constant RISK_STEWARD = 0xb5970A521073ADE4836dD4A24854Eb387a67c5C8;
