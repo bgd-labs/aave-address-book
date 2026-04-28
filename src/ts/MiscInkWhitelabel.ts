@@ -14,4 +14,10 @@ export const AGENT_HUB_AUTOMATION = '0x951C37a35cA9e61448B90B7AF5E371cFdA70326C'
 // https://explorer.inkonchain.com/address/0xd24790E75799968CE3feD6E27285baD0a26e7e36
 export const RANGE_VALIDATION_MODULE = '0xd24790E75799968CE3feD6E27285baD0a26e7e36';
 
+// https://explorer.inkonchain.com/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
+
+// https://explorer.inkonchain.com/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
+export const ROBOT_GUARDIAN = '0x441E4053fDDF1e1a77a39d00309Af389096d4124';
+
 export const CHAIN_ID = 57073;

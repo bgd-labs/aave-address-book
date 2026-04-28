@@ -8,4 +8,10 @@ library MiscMantle {
 
   // https://mantlescan.xyz/address/0x172867391d690Eb53896623DaD22208624230686
   address internal constant PROTOCOL_GUARDIAN = 0x172867391d690Eb53896623DaD22208624230686;
+
+  // https://mantlescan.xyz/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+  address internal constant AFC_SAFE = 0x22740deBa78d5a0c24C58C740e3715ec29de1bFa;
+
+  // https://mantlescan.xyz/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
+  address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 }
