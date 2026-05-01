@@ -10353,6 +10353,28 @@
       }
     },
     {
+      "chainId": 4326,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usde.svg"
+    },
+    {
+      "chainId": 4326,
+      "address": "0x78f2cB75D664d6f71433174056c25A5958B4016F",
+      "name": "Aave MegaEth USDe",
+      "decimals": 18,
+      "symbol": "aMegUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausde.svg",
+      "extensions": {
+        "pool": "0x7e324AbC5De01d112AfC03a584966ff199741C28",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+      }
+    },
+    {
       "chainId": 196,
       "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
       "name": "USD₮0",
@@ -10589,6 +10611,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 171 },
-  "timestamp": "2026-04-23T02:11:23.367Z"
+  "version": { "major": 3, "minor": 0, "patch": 172 },
+  "timestamp": "2026-05-01T02:40:19.495Z"
 }
