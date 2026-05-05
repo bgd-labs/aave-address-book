@@ -133,6 +133,8 @@ export interface NetworkAddresses<T extends Record<string, AddressInfo> = {}> {
     PROTOCOL_GUARDIAN?: Hex;
     AAVE_MERKLE_DISTRIBUTOR?: Hex;
     AAVE_CL_ROBOT_OPERATOR?: Hex;
+    ROBOT_GUARDIAN?: Hex;
+    AFC_SAFE?: Hex;
     AGENT_HUB?: Hex;
     AGENT_HUB_AUTOMATION?: Hex;
     RANGE_VALIDATION_MODULE?: Hex;
