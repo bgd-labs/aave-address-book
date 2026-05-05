@@ -16,6 +16,12 @@ library GhoEthereum {
   // https://etherscan.io/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
   address internal constant GHO_LIQUIDITY_COMMITTEE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
 
+  // https://etherscan.io/address/0xE1753F2e00940cC31213dd92013cF019DFE4ca1d
+  address internal constant SGHO = 0xE1753F2e00940cC31213dd92013cF019DFE4ca1d;
+
+  // https://etherscan.io/address/0x60Bf2DF49F17529Cf956D57848ebEB8a0d0a2757
+  address internal constant SGHO_STEWARD = 0x60Bf2DF49F17529Cf956D57848ebEB8a0d0a2757;
+
   // https://etherscan.io/address/0xD1E856a947CdF56b4f000ee29d34F5808E0A6848
   address internal constant GHO_GSM_STEWARD = 0xD1E856a947CdF56b4f000ee29d34F5808E0A6848;
 
