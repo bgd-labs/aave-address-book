@@ -29,4 +29,7 @@ library MiscScroll {
 
   // https://scrollscan.com/address/0xc50C0D9C4E5df6f2F244a72FD4DA562877CD16EE
   address internal constant REWARD_STEWARD = 0xc50C0D9C4E5df6f2F244a72FD4DA562877CD16EE;
+
+  // https://scrollscan.com/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
+  address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 }

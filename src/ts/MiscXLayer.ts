@@ -5,4 +5,7 @@ export const TRANSPARENT_PROXY_FACTORY = '0xF6Dac650dA5616Bc3206e969D7868e7c2580
 // https://www.oklink.com/xlayer/address/0xD0D1CcB0391aADF1EaD96814ce7ab4008Ebdb336
 export const PROTOCOL_GUARDIAN = '0xD0D1CcB0391aADF1EaD96814ce7ab4008Ebdb336';
 
+// https://www.oklink.com/xlayer/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
+export const ROBOT_GUARDIAN = '0x441E4053fDDF1e1a77a39d00309Af389096d4124';
+
 export const CHAIN_ID = 196;

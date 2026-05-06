@@ -8,4 +8,7 @@ library MiscXLayer {
 
   // https://www.oklink.com/xlayer/address/0xD0D1CcB0391aADF1EaD96814ce7ab4008Ebdb336
   address internal constant PROTOCOL_GUARDIAN = 0xD0D1CcB0391aADF1EaD96814ce7ab4008Ebdb336;
+
+  // https://www.oklink.com/xlayer/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
+  address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 }

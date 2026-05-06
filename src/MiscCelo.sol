@@ -17,4 +17,7 @@ library MiscCelo {
 
   // https://celoscan.io/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
   address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
+
+  // https://celoscan.io/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
+  address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 }
