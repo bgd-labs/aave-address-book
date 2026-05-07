@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.49.9](https://github.com/aave-dao/aave-address-book/compare/v4.49.8...v4.49.9) (2026-05-07)
+
+
+### Bug Fixes
+
+* rename eSpokes & small fixes ([#1368](https://github.com/aave-dao/aave-address-book/issues/1368)) ([4ee7b50](https://github.com/aave-dao/aave-address-book/commit/4ee7b505d40760f48bcfdc4edd5fe3d532ec88d2))
+
 ## [4.49.8](https://github.com/aave-dao/aave-address-book/compare/v4.49.7...v4.49.8) (2026-05-01)
 
 
