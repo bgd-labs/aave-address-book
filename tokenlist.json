@@ -9719,6 +9719,26 @@
       }
     },
     {
+      "chainId": 57073,
+      "address": "0x8A76fe7fA6da27f85a626c5C53730B38D13603d7",
+      "name": "Syrup USDT",
+      "decimals": 6,
+      "symbol": "syrupUSDT",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 57073,
+      "address": "0x9d97196e7e6652e82C2F0FE93a9B3876E3d8528e",
+      "name": "Aave InkWhitelabel syrupUSDT",
+      "decimals": 6,
+      "symbol": "aInkWlsyrupUSDT",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x2816cf15F6d2A220E789aA011D5EE4eB6c47FEbA",
+        "underlying": "0x8A76fe7fA6da27f85a626c5C53730B38D13603d7"
+      }
+    },
+    {
       "chainId": 9745,
       "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "name": "USDT0",
@@ -10333,6 +10353,28 @@
       }
     },
     {
+      "chainId": 4326,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "name": "USDe",
+      "decimals": 18,
+      "symbol": "USDe",
+      "tags": ["underlying"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/usde.svg"
+    },
+    {
+      "chainId": 4326,
+      "address": "0x78f2cB75D664d6f71433174056c25A5958B4016F",
+      "name": "Aave MegaEth USDe",
+      "decimals": 18,
+      "symbol": "aMegUSDe",
+      "tags": ["aTokenV3", "aaveV3"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/ausde.svg",
+      "extensions": {
+        "pool": "0x7e324AbC5De01d112AfC03a584966ff199741C28",
+        "underlying": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34"
+      }
+    },
+    {
       "chainId": 196,
       "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
       "name": "USD₮0",
@@ -10569,6 +10611,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 170 },
-  "timestamp": "2026-04-21T02:09:12.071Z"
+  "version": { "major": 3, "minor": 0, "patch": 172 },
+  "timestamp": "2026-05-01T02:40:19.495Z"
 }

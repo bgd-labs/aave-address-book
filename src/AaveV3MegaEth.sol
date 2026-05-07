@@ -209,6 +209,24 @@ library AaveV3MegaEthAssets {
   // https://mega.etherscan.io/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
   address internal constant ezETH_INTEREST_RATE_STRATEGY =
     0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://mega.etherscan.io/address/0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34
+  address internal constant USDe_UNDERLYING = 0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34;
+
+  uint8 internal constant USDe_DECIMALS = 18;
+
+  // https://mega.etherscan.io/address/0x78f2cB75D664d6f71433174056c25A5958B4016F
+  address internal constant USDe_A_TOKEN = 0x78f2cB75D664d6f71433174056c25A5958B4016F;
+
+  // https://mega.etherscan.io/address/0x7dD785D88A64dd7db6b46DaD4d2e0728CC65e009
+  address internal constant USDe_V_TOKEN = 0x7dD785D88A64dd7db6b46DaD4d2e0728CC65e009;
+
+  // https://mega.etherscan.io/address/0x6B00ffb3852E87c13b7f56660a7dfF64191180B3
+  address internal constant USDe_ORACLE = 0x6B00ffb3852E87c13b7f56660a7dfF64191180B3;
+
+  // https://mega.etherscan.io/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
+  address internal constant USDe_INTEREST_RATE_STRATEGY =
+    0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
 }
 library AaveV3MegaEthEModes {
   uint8 internal constant NONE = 0;
@@ -224,6 +242,8 @@ library AaveV3MegaEthEModes {
   uint8 internal constant wrsETH__WETH = 5;
 
   uint8 internal constant ezETH__WETH = 6;
+
+  uint8 internal constant USDe__USDT0_USDm = 7;
 }
 library AaveV3MegaEthExternalLibraries {
   // https://mega.etherscan.io/address/0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6

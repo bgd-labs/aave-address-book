@@ -298,6 +298,24 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant SolvBTC_INTEREST_RATE_STRATEGY =
     0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
+
+  // https://explorer.inkonchain.com/address/0x8A76fe7fA6da27f85a626c5C53730B38D13603d7
+  address internal constant syrupUSDT_UNDERLYING = 0x8A76fe7fA6da27f85a626c5C53730B38D13603d7;
+
+  uint8 internal constant syrupUSDT_DECIMALS = 6;
+
+  // https://explorer.inkonchain.com/address/0x9d97196e7e6652e82C2F0FE93a9B3876E3d8528e
+  address internal constant syrupUSDT_A_TOKEN = 0x9d97196e7e6652e82C2F0FE93a9B3876E3d8528e;
+
+  // https://explorer.inkonchain.com/address/0x58514b6c52a3515cCBBF459BFdb4fC2Aba8462b2
+  address internal constant syrupUSDT_V_TOKEN = 0x58514b6c52a3515cCBBF459BFdb4fC2Aba8462b2;
+
+  // https://explorer.inkonchain.com/address/0x7791e46f5588aCd48EE31494877dD9F182f7f566
+  address internal constant syrupUSDT_ORACLE = 0x7791e46f5588aCd48EE31494877dD9F182f7f566;
+
+  // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
+  address internal constant syrupUSDT_INTEREST_RATE_STRATEGY =
+    0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9;
 }
 library AaveV3InkWhitelabelEModes {
   uint8 internal constant NONE = 0;
@@ -307,6 +325,8 @@ library AaveV3InkWhitelabelEModes {
   uint8 internal constant sUSDe_USDe__USDT_USDG_USDC = 2;
 
   uint8 internal constant USDe__USDT_USDG_USDC = 3;
+
+  uint8 internal constant syrupUSDT__USDT = 4;
 }
 library AaveV3InkWhitelabelExternalLibraries {
   // https://explorer.inkonchain.com/address/0xE66AdcF153d0bD67a74e5d23e23F90b4011024EC

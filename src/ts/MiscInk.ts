@@ -2,4 +2,10 @@
 // https://explorer.inkonchain.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
 export const TRANSPARENT_PROXY_FACTORY = '0xEB0682d148e874553008730f0686ea89db7DA412';
 
+// https://explorer.inkonchain.com/address/0x22740deBa78d5a0c24C58C740e3715ec29de1bFa
+export const AFC_SAFE = '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa';
+
+// https://explorer.inkonchain.com/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
+export const ROBOT_GUARDIAN = '0x441E4053fDDF1e1a77a39d00309Af389096d4124';
+
 export const CHAIN_ID = 57073;
