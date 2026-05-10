@@ -95,8 +95,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0xc1457AcfBaD2332b07B7651A4Da3176E8F3Bc9E4
   address internal constant WETH_V_TOKEN = 0xc1457AcfBaD2332b07B7651A4Da3176E8F3Bc9E4;
 
-  // https://explorer.inkonchain.com/address/0x163131609562E578754aF12E998635BfCa56712C
-  address internal constant WETH_ORACLE = 0x163131609562E578754aF12E998635BfCa56712C;
+  // https://explorer.inkonchain.com/address/0xcc2cBeC935a472B01c9d791c22056C2D6E7E86ef
+  address internal constant WETH_ORACLE = 0xcc2cBeC935a472B01c9d791c22056C2D6E7E86ef;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant WETH_INTEREST_RATE_STRATEGY =
@@ -113,8 +113,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x47D9b89775958F0b5c7734C5570565Ce575e7e94
   address internal constant kBTC_V_TOKEN = 0x47D9b89775958F0b5c7734C5570565Ce575e7e94;
 
-  // https://explorer.inkonchain.com/address/0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb
-  address internal constant kBTC_ORACLE = 0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb;
+  // https://explorer.inkonchain.com/address/0xCD4D9b45bEe25e429Ed010DfA8397E221f2D7Fce
+  address internal constant kBTC_ORACLE = 0xCD4D9b45bEe25e429Ed010DfA8397E221f2D7Fce;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant kBTC_INTEREST_RATE_STRATEGY =
@@ -131,8 +131,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0xA5d61eF3D06234371507e54FB709F401E590719a
   address internal constant USDT_V_TOKEN = 0xA5d61eF3D06234371507e54FB709F401E590719a;
 
-  // https://explorer.inkonchain.com/address/0x24FdD142b34C6B5D55299709DB0966681933c9aF
-  address internal constant USDT_ORACLE = 0x24FdD142b34C6B5D55299709DB0966681933c9aF;
+  // https://explorer.inkonchain.com/address/0x00F5c1A7470b0aF87ca03F9633E5b54b20B9e244
+  address internal constant USDT_ORACLE = 0x00F5c1A7470b0aF87ca03F9633E5b54b20B9e244;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant USDT_INTEREST_RATE_STRATEGY =
@@ -149,8 +149,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x08443163427BaE789774f45198315f6EAefe566C
   address internal constant USDG_V_TOKEN = 0x08443163427BaE789774f45198315f6EAefe566C;
 
-  // https://explorer.inkonchain.com/address/0x38758C93672A9F3F4297016BE4Ac1aCA70DcE82A
-  address internal constant USDG_ORACLE = 0x38758C93672A9F3F4297016BE4Ac1aCA70DcE82A;
+  // https://explorer.inkonchain.com/address/0xdb3B1fa77CF2c9597f9d4871Bed1Df03D096fdf3
+  address internal constant USDG_ORACLE = 0xdb3B1fa77CF2c9597f9d4871Bed1Df03D096fdf3;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant USDG_INTEREST_RATE_STRATEGY =
@@ -184,8 +184,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x305c03f74DBb8C6052b7667AaBEE21dC7c1f0B29
   address internal constant USDC_V_TOKEN = 0x305c03f74DBb8C6052b7667AaBEE21dC7c1f0B29;
 
-  // https://explorer.inkonchain.com/address/0xd910061259A256B99654Cff414c3bfD503E7F6ea
-  address internal constant USDC_ORACLE = 0xd910061259A256B99654Cff414c3bfD503E7F6ea;
+  // https://explorer.inkonchain.com/address/0x89991637dbaCd0999dE1bc8e86330302EAd2CD89
+  address internal constant USDC_ORACLE = 0x89991637dbaCd0999dE1bc8e86330302EAd2CD89;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant USDC_INTEREST_RATE_STRATEGY =
@@ -202,8 +202,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0xF498bfc4439e91042EeDB9736767F770F48Da474
   address internal constant weETH_V_TOKEN = 0xF498bfc4439e91042EeDB9736767F770F48Da474;
 
-  // https://explorer.inkonchain.com/address/0x68B7Ed7Df658Ed065BcaA415f0Ce0b057Dfcf318
-  address internal constant weETH_ORACLE = 0x68B7Ed7Df658Ed065BcaA415f0Ce0b057Dfcf318;
+  // https://explorer.inkonchain.com/address/0xE477d41e4ABA3821F2dDDb00A5a5D7B3Ce96dAd7
+  address internal constant weETH_ORACLE = 0xE477d41e4ABA3821F2dDDb00A5a5D7B3Ce96dAd7;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant weETH_INTEREST_RATE_STRATEGY =
@@ -238,8 +238,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x522e93245C2df28904B86103af69bC27ae80FA46
   address internal constant ezETH_V_TOKEN = 0x522e93245C2df28904B86103af69bC27ae80FA46;
 
-  // https://explorer.inkonchain.com/address/0x51e5242698Cf425A558BCe440357Fd20f00D9671
-  address internal constant ezETH_ORACLE = 0x51e5242698Cf425A558BCe440357Fd20f00D9671;
+  // https://explorer.inkonchain.com/address/0x6AC731aDA855ecaa8492526d4D7f03F9140dd1f0
+  address internal constant ezETH_ORACLE = 0x6AC731aDA855ecaa8492526d4D7f03F9140dd1f0;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant ezETH_INTEREST_RATE_STRATEGY =
@@ -256,8 +256,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0xD02245a1CD906AD9336600E037345a4C5242B141
   address internal constant sUSDe_V_TOKEN = 0xD02245a1CD906AD9336600E037345a4C5242B141;
 
-  // https://explorer.inkonchain.com/address/0xC170637d22Ac02bAC99ED794038d2676d712e704
-  address internal constant sUSDe_ORACLE = 0xC170637d22Ac02bAC99ED794038d2676d712e704;
+  // https://explorer.inkonchain.com/address/0xDef9E73435806aF8f90b78179bb1Cb07A670C58D
+  address internal constant sUSDe_ORACLE = 0xDef9E73435806aF8f90b78179bb1Cb07A670C58D;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant sUSDe_INTEREST_RATE_STRATEGY =
@@ -274,8 +274,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x52D5096a7df365C3870A7767a5024D59eD44d814
   address internal constant USDe_V_TOKEN = 0x52D5096a7df365C3870A7767a5024D59eD44d814;
 
-  // https://explorer.inkonchain.com/address/0x24FdD142b34C6B5D55299709DB0966681933c9aF
-  address internal constant USDe_ORACLE = 0x24FdD142b34C6B5D55299709DB0966681933c9aF;
+  // https://explorer.inkonchain.com/address/0x00F5c1A7470b0aF87ca03F9633E5b54b20B9e244
+  address internal constant USDe_ORACLE = 0x00F5c1A7470b0aF87ca03F9633E5b54b20B9e244;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant USDe_INTEREST_RATE_STRATEGY =
@@ -292,8 +292,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x986d7beE5Cc6eF52607eaD71fDD9B61Aa153271b
   address internal constant SolvBTC_V_TOKEN = 0x986d7beE5Cc6eF52607eaD71fDD9B61Aa153271b;
 
-  // https://explorer.inkonchain.com/address/0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb
-  address internal constant SolvBTC_ORACLE = 0xAe48F22903d43f13f66Cc650F57Bd4654ac222cb;
+  // https://explorer.inkonchain.com/address/0xCD4D9b45bEe25e429Ed010DfA8397E221f2D7Fce
+  address internal constant SolvBTC_ORACLE = 0xCD4D9b45bEe25e429Ed010DfA8397E221f2D7Fce;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant SolvBTC_INTEREST_RATE_STRATEGY =
@@ -310,8 +310,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x58514b6c52a3515cCBBF459BFdb4fC2Aba8462b2
   address internal constant syrupUSDT_V_TOKEN = 0x58514b6c52a3515cCBBF459BFdb4fC2Aba8462b2;
 
-  // https://explorer.inkonchain.com/address/0x7791e46f5588aCd48EE31494877dD9F182f7f566
-  address internal constant syrupUSDT_ORACLE = 0x7791e46f5588aCd48EE31494877dD9F182f7f566;
+  // https://explorer.inkonchain.com/address/0xafE9bbd9F16Db469536D09Dd6678C10514134cB7
+  address internal constant syrupUSDT_ORACLE = 0xafE9bbd9F16Db469536D09Dd6678C10514134cB7;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant syrupUSDT_INTEREST_RATE_STRATEGY =
