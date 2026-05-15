@@ -606,3 +606,64 @@ library AaveV4EthereumAssets {
 
   uint8 internal constant USDe_DECIMALS = 18;
 }
+library AaveV4EthereumGetters {
+  function getAllHubs() internal pure returns (IHub[] memory) {
+    IHub[] memory hubs = new IHub[](3);
+    hubs[0] = AaveV4EthereumHubs.CORE_HUB;
+    hubs[1] = AaveV4EthereumHubs.PLUS_HUB;
+    hubs[2] = AaveV4EthereumHubs.PRIME_HUB;
+    return hubs;
+  }
+
+  function getAllSpokes() internal pure returns (ISpoke[] memory) {
+    ISpoke[] memory spokes = new ISpoke[](10);
+    spokes[0] = AaveV4EthereumSpokes.BLUECHIP_SPOKE;
+    spokes[1] = AaveV4EthereumSpokes.ETHENA_CORRELATED_SPOKE;
+    spokes[2] = AaveV4EthereumSpokes.ETHENA_ECOSYSTEM_SPOKE;
+    spokes[3] = AaveV4EthereumSpokes.FOREX_SPOKE;
+    spokes[4] = AaveV4EthereumSpokes.GOLD_SPOKE;
+    spokes[5] = AaveV4EthereumSpokes.LOMBARD_BTC_SPOKE;
+    spokes[6] = AaveV4EthereumSpokes.MAIN_SPOKE;
+    spokes[7] = AaveV4EthereumSpokes.ETHERFI_ESPOKE;
+    spokes[8] = AaveV4EthereumSpokes.KELP_ESPOKE;
+    spokes[9] = AaveV4EthereumSpokes.LIDO_ESPOKE;
+    return spokes;
+  }
+
+  function getAllTokenizedSpokes() internal pure returns (ITokenizationSpoke[] memory) {
+    ITokenizationSpoke[] memory tokenizedSpokes = new ITokenizationSpoke[](31);
+    tokenizedSpokes[0] = AaveV4EthereumTokenizationSpokes.CORE_WETH_TOKENIZATION_SPOKE;
+    tokenizedSpokes[1] = AaveV4EthereumTokenizationSpokes.CORE_wstETH_TOKENIZATION_SPOKE;
+    tokenizedSpokes[2] = AaveV4EthereumTokenizationSpokes.CORE_weETH_TOKENIZATION_SPOKE;
+    tokenizedSpokes[3] = AaveV4EthereumTokenizationSpokes.CORE_rsETH_TOKENIZATION_SPOKE;
+    tokenizedSpokes[4] = AaveV4EthereumTokenizationSpokes.CORE_USDT_TOKENIZATION_SPOKE;
+    tokenizedSpokes[5] = AaveV4EthereumTokenizationSpokes.CORE_USDC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[6] = AaveV4EthereumTokenizationSpokes.CORE_GHO_TOKENIZATION_SPOKE;
+    tokenizedSpokes[7] = AaveV4EthereumTokenizationSpokes.CORE_RLUSD_TOKENIZATION_SPOKE;
+    tokenizedSpokes[8] = AaveV4EthereumTokenizationSpokes.CORE_USDG_TOKENIZATION_SPOKE;
+    tokenizedSpokes[9] = AaveV4EthereumTokenizationSpokes.CORE_frxUSD_TOKENIZATION_SPOKE;
+    tokenizedSpokes[10] = AaveV4EthereumTokenizationSpokes.CORE_EURC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[11] = AaveV4EthereumTokenizationSpokes.CORE_WBTC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[12] = AaveV4EthereumTokenizationSpokes.CORE_cbBTC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[13] = AaveV4EthereumTokenizationSpokes.CORE_LBTC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[14] = AaveV4EthereumTokenizationSpokes.CORE_XAUt_TOKENIZATION_SPOKE;
+    tokenizedSpokes[15] = AaveV4EthereumTokenizationSpokes.CORE_AAVE_TOKENIZATION_SPOKE;
+    tokenizedSpokes[16] = AaveV4EthereumTokenizationSpokes.CORE_LINK_TOKENIZATION_SPOKE;
+    tokenizedSpokes[17] = AaveV4EthereumTokenizationSpokes
+      .PLUS_PT_sUSDE_7MAY2026_TOKENIZATION_SPOKE;
+    tokenizedSpokes[18] = AaveV4EthereumTokenizationSpokes.PLUS_PT_USDe_7MAY2026_TOKENIZATION_SPOKE;
+    tokenizedSpokes[19] = AaveV4EthereumTokenizationSpokes.PLUS_sUSDe_TOKENIZATION_SPOKE;
+    tokenizedSpokes[20] = AaveV4EthereumTokenizationSpokes.PLUS_USDe_TOKENIZATION_SPOKE;
+    tokenizedSpokes[21] = AaveV4EthereumTokenizationSpokes.PLUS_USDC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[22] = AaveV4EthereumTokenizationSpokes.PLUS_GHO_TOKENIZATION_SPOKE;
+    tokenizedSpokes[23] = AaveV4EthereumTokenizationSpokes.PLUS_USDT_TOKENIZATION_SPOKE;
+    tokenizedSpokes[24] = AaveV4EthereumTokenizationSpokes.PRIME_WETH_TOKENIZATION_SPOKE;
+    tokenizedSpokes[25] = AaveV4EthereumTokenizationSpokes.PRIME_WBTC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[26] = AaveV4EthereumTokenizationSpokes.PRIME_cbBTC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[27] = AaveV4EthereumTokenizationSpokes.PRIME_wstETH_TOKENIZATION_SPOKE;
+    tokenizedSpokes[28] = AaveV4EthereumTokenizationSpokes.PRIME_USDC_TOKENIZATION_SPOKE;
+    tokenizedSpokes[29] = AaveV4EthereumTokenizationSpokes.PRIME_USDT_TOKENIZATION_SPOKE;
+    tokenizedSpokes[30] = AaveV4EthereumTokenizationSpokes.PRIME_GHO_TOKENIZATION_SPOKE;
+    return tokenizedSpokes;
+  }
+}

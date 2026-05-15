@@ -17248,6 +17248,33 @@
     },
     "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
       "name": "GnosisSafeProxy"
+    },
+    "0xcc2cBeC935a472B01c9d791c22056C2D6E7E86ef": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xCD4D9b45bEe25e429Ed010DfA8397E221f2D7Fce": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x00F5c1A7470b0aF87ca03F9633E5b54b20B9e244": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xdb3B1fa77CF2c9597f9d4871Bed1Df03D096fdf3": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x89991637dbaCd0999dE1bc8e86330302EAd2CD89": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xE477d41e4ABA3821F2dDDb00A5a5D7B3Ce96dAd7": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x6AC731aDA855ecaa8492526d4D7f03F9140dd1f0": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xDef9E73435806aF8f90b78179bb1Cb07A670C58D": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xafE9bbd9F16Db469536D09Dd6678C10514134cB7": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "59144": {

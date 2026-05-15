@@ -1,10 +1,11 @@
 import {appendFileSync, writeFileSync} from 'fs';
-import {Hex} from 'viem';
+import {Hex, zeroAddress} from 'viem';
 import {Addresses, V4Config} from 'scripts/configs/types';
 import {
   generateJsConstants,
   generateJsObject,
   generateSolidityConstants,
+  keyToVar,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
@@ -164,6 +165,26 @@ function buildAssetsAddresses(resolvedHubs: Record<string, ResolvedHub>): {
   }
 
   return {solAddresses, jsObject};
+}
+
+function buildSolidityGetter(
+  fnName: string,
+  iface: string,
+  varName: string,
+  sibLibraryName: string,
+  keys: string[],
+): string {
+  const body = [
+    `    ${iface}[] memory ${varName} = new ${iface}[](${keys.length});`,
+    ...keys.map((key, i) => `    ${varName}[${i}] = ${sibLibraryName}.${keyToVar(key)};`),
+    `    return ${varName};`,
+  ].join('\n');
+  return `  function ${fnName}() internal pure returns (${iface}[] memory) {\n${body}\n  }`;
+}
+
+function buildTsGetter(exportName: string, sourceObjectName: string, keys: string[]): string {
+  const items = keys.map((key) => `${sourceObjectName}.${keyToVar(key)}`).join(', ');
+  return `export const ${exportName} = [${items}] as const;`;
 }
 
 export async function generateProtocolV4Library(config: V4Config) {
@@ -369,6 +390,55 @@ export async function generateProtocolV4Library(config: V4Config) {
       `./src/ts/${name}.ts`,
       `\nexport const ASSETS = ${JSON.stringify(assetsJsObject, null, 2)} as const;\n`,
     );
+  }
+
+  // Getters library: aggregated lookups that reuse the constants defined above
+  const hubGetterKeys = Object.keys(hubsAddresses).filter(
+    (key) => (hubsAddresses[key] as {value: Hex}).value !== zeroAddress,
+  );
+  const spokeGetterKeys = Object.keys(spokesByBaseKey).filter(
+    (key) => spokesByBaseKey[key] !== zeroAddress,
+  );
+  const tokSpokeGetterKeys = Object.keys(tokenSpokesAddresses).filter(
+    (key) => (tokenSpokesAddresses[key] as {value: Hex}).value !== zeroAddress,
+  );
+
+  const solGetterFns: string[] = [];
+  const tsGetterLines: string[] = [];
+
+  if (hubGetterKeys.length > 0) {
+    solGetterFns.push(
+      buildSolidityGetter('getAllHubs', 'IHub', 'hubs', `${name}Hubs`, hubGetterKeys),
+    );
+    tsGetterLines.push(buildTsGetter('ALL_HUBS', 'HUBS', hubGetterKeys));
+  }
+  if (spokeGetterKeys.length > 0) {
+    solGetterFns.push(
+      buildSolidityGetter('getAllSpokes', 'ISpoke', 'spokes', `${name}Spokes`, spokeGetterKeys),
+    );
+    tsGetterLines.push(buildTsGetter('ALL_SPOKES', 'SPOKES', spokeGetterKeys));
+  }
+  if (tokSpokeGetterKeys.length > 0) {
+    solGetterFns.push(
+      buildSolidityGetter(
+        'getAllTokenizedSpokes',
+        'ITokenizationSpoke',
+        'tokenizedSpokes',
+        `${name}TokenizationSpokes`,
+        tokSpokeGetterKeys,
+      ),
+    );
+    tsGetterLines.push(
+      buildTsGetter('ALL_TOKENIZED_SPOKES', 'TOKENIZATION_SPOKES', tokSpokeGetterKeys),
+    );
+  }
+
+  if (solGetterFns.length > 0) {
+    appendFileSync(
+      `./src/${name}.sol`,
+      `\nlibrary ${name}Getters {\n${solGetterFns.join('\n\n')}\n}\n`,
+    );
+    appendFileSync(`./src/ts/${name}.ts`, `\n${tsGetterLines.join('\n')}\n`);
   }
 
   return {
