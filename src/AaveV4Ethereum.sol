@@ -630,7 +630,7 @@ library AaveV4EthereumGetters {
     return spokes;
   }
 
-  function getAllTokenizedSpokes() internal pure returns (ITokenizationSpoke[] memory) {
+  function getAllTokenizationSpokes() internal pure returns (ITokenizationSpoke[] memory) {
     ITokenizationSpoke[] memory tokenizedSpokes = new ITokenizationSpoke[](31);
     tokenizedSpokes[0] = AaveV4EthereumTokenizationSpokes.CORE_WETH_TOKENIZATION_SPOKE;
     tokenizedSpokes[1] = AaveV4EthereumTokenizationSpokes.CORE_wstETH_TOKENIZATION_SPOKE;

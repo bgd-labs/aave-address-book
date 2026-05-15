@@ -421,7 +421,7 @@ export async function generateProtocolV4Library(config: V4Config) {
   if (tokSpokeGetterKeys.length > 0) {
     solGetterFns.push(
       buildSolidityGetter(
-        'getAllTokenizedSpokes',
+        'getAllTokenizationSpokes',
         'ITokenizationSpoke',
         'tokenizedSpokes',
         `${name}TokenizationSpokes`,
