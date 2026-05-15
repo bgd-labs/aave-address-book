@@ -1498,8 +1498,8 @@ export const E_MODES = {
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
     ltv: 9150,
-    liquidationThreshold: 9330,
-    liquidationBonus: 10280,
+    liquidationThreshold: 9340,
+    liquidationBonus: 10230,
   },
   '46': {
     label: 'PT_USDG_28MAY2026 / USDC,USDT,USDe,USDG',
@@ -1514,9 +1514,9 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9360,
-    liquidationThreshold: 9560,
-    liquidationBonus: 10200,
+    ltv: 9370,
+    liquidationThreshold: 9570,
+    liquidationBonus: 10150,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
