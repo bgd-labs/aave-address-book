@@ -112,25 +112,25 @@ library AaveV4EthereumSpokes {
     IAaveOracle(0x664D73b6C3591333Fd79510f7ce9ef81228824F5);
 }
 library AaveV4EthereumSpokePriceFeeds {
-  // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
+  // https://etherscan.io/address/0x5424384B256154046E9667dDFaaa5e550145215e
   address internal constant BLUECHIP_SPOKE_WETH_PRICE_FEED =
-    0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
+    0x5424384B256154046E9667dDFaaa5e550145215e;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  // https://etherscan.io/address/0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc
   address internal constant BLUECHIP_SPOKE_WBTC_PRICE_FEED =
-    0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+    0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
   address internal constant BLUECHIP_SPOKE_cbBTC_PRICE_FEED =
-    0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+    0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
 
-  // https://etherscan.io/address/0x869C9Ae2C8fbe82a8b0F768b9F791f89E083222C
+  // https://etherscan.io/address/0xe1D97bF61901B075E9626c8A2340a7De385861Ef
   address internal constant BLUECHIP_SPOKE_wstETH_PRICE_FEED =
-    0x869C9Ae2C8fbe82a8b0F768b9F791f89E083222C;
+    0xe1D97bF61901B075E9626c8A2340a7De385861Ef;
 
-  // https://etherscan.io/address/0x581b8Bc9d6104F71ad6da1f483B67500968C5994
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
   address internal constant BLUECHIP_SPOKE_PRIME_USDC_PRICE_FEED =
-    0x581b8Bc9d6104F71ad6da1f483B67500968C5994;
+    0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
 
   // https://etherscan.io/address/0x260326c220E469358846b187eE53328303Efe19C
   address internal constant BLUECHIP_SPOKE_PRIME_USDT_PRICE_FEED =
@@ -140,9 +140,9 @@ library AaveV4EthereumSpokePriceFeeds {
   address internal constant BLUECHIP_SPOKE_GHO_PRICE_FEED =
     0xD110cac5d8682A3b045D5524a9903E031d70FCCd;
 
-  // https://etherscan.io/address/0x581b8Bc9d6104F71ad6da1f483B67500968C5994
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
   address internal constant BLUECHIP_SPOKE_CORE_USDC_PRICE_FEED =
-    0x581b8Bc9d6104F71ad6da1f483B67500968C5994;
+    0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
 
   // https://etherscan.io/address/0x25DEd2f9aE6ae9416693AB63Abe3aB25493861FD
   address internal constant BLUECHIP_SPOKE_frxUSD_PRICE_FEED =
@@ -188,9 +188,9 @@ library AaveV4EthereumSpokePriceFeeds {
   address internal constant ETHENA_ECOSYSTEM_SPOKE_USDe_PRICE_FEED =
     0xC26D4a1c46d884cfF6dE9800B6aE7A8Cf48B4Ff8;
 
-  // https://etherscan.io/address/0x581b8Bc9d6104F71ad6da1f483B67500968C5994
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
   address internal constant ETHENA_ECOSYSTEM_SPOKE_PLUS_USDC_PRICE_FEED =
-    0x581b8Bc9d6104F71ad6da1f483B67500968C5994;
+    0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
 
   // https://etherscan.io/address/0x260326c220E469358846b187eE53328303Efe19C
   address internal constant ETHENA_ECOSYSTEM_SPOKE_PLUS_USDT_PRICE_FEED =
@@ -200,9 +200,9 @@ library AaveV4EthereumSpokePriceFeeds {
   address internal constant ETHENA_ECOSYSTEM_SPOKE_GHO_PRICE_FEED =
     0xD110cac5d8682A3b045D5524a9903E031d70FCCd;
 
-  // https://etherscan.io/address/0x581b8Bc9d6104F71ad6da1f483B67500968C5994
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
   address internal constant ETHENA_ECOSYSTEM_SPOKE_CORE_USDC_PRICE_FEED =
-    0x581b8Bc9d6104F71ad6da1f483B67500968C5994;
+    0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
 
   // https://etherscan.io/address/0x25DEd2f9aE6ae9416693AB63Abe3aB25493861FD
   address internal constant ETHENA_ECOSYSTEM_SPOKE_frxUSD_PRICE_FEED =
@@ -216,9 +216,9 @@ library AaveV4EthereumSpokePriceFeeds {
   address internal constant FOREX_SPOKE_EURC_PRICE_FEED =
     0xa6aB031A4d189B24628EC9Eb155F0a0f1A0E55a3;
 
-  // https://etherscan.io/address/0x581b8Bc9d6104F71ad6da1f483B67500968C5994
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
   address internal constant FOREX_SPOKE_USDC_PRICE_FEED =
-    0x581b8Bc9d6104F71ad6da1f483B67500968C5994;
+    0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
 
   // https://etherscan.io/address/0x260326c220E469358846b187eE53328303Efe19C
   address internal constant FOREX_SPOKE_USDT_PRICE_FEED =
@@ -242,8 +242,8 @@ library AaveV4EthereumSpokePriceFeeds {
   // https://etherscan.io/address/0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6
   address internal constant GOLD_SPOKE_XAUt_PRICE_FEED = 0x214eD9Da11D2fbe465a6fc601a91E62EbEc1a0D6;
 
-  // https://etherscan.io/address/0x581b8Bc9d6104F71ad6da1f483B67500968C5994
-  address internal constant GOLD_SPOKE_USDC_PRICE_FEED = 0x581b8Bc9d6104F71ad6da1f483B67500968C5994;
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
+  address internal constant GOLD_SPOKE_USDC_PRICE_FEED = 0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
 
   // https://etherscan.io/address/0xf0eaC18E908B34770FDEe46d069c846bDa866759
   address internal constant GOLD_SPOKE_RLUSD_PRICE_FEED =
@@ -265,44 +265,44 @@ library AaveV4EthereumSpokePriceFeeds {
   // https://etherscan.io/address/0x260326c220E469358846b187eE53328303Efe19C
   address internal constant GOLD_SPOKE_USDT_PRICE_FEED = 0x260326c220E469358846b187eE53328303Efe19C;
 
-  // https://etherscan.io/address/0x5C1771583dbbAE5AFEd71ACD2BfC0eA4029EBB04
+  // https://etherscan.io/address/0xf8c04B50499872A5B5137219DEc0F791f7f620D0
   address internal constant LOMBARD_BTC_SPOKE_LBTC_PRICE_FEED =
-    0x5C1771583dbbAE5AFEd71ACD2BfC0eA4029EBB04;
+    0xf8c04B50499872A5B5137219DEc0F791f7f620D0;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  // https://etherscan.io/address/0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc
   address internal constant LOMBARD_BTC_SPOKE_WBTC_PRICE_FEED =
-    0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+    0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
   address internal constant LOMBARD_BTC_SPOKE_cbBTC_PRICE_FEED =
-    0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+    0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
 
-  // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
-  address internal constant MAIN_SPOKE_WETH_PRICE_FEED = 0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
+  // https://etherscan.io/address/0x5424384B256154046E9667dDFaaa5e550145215e
+  address internal constant MAIN_SPOKE_WETH_PRICE_FEED = 0x5424384B256154046E9667dDFaaa5e550145215e;
 
-  // https://etherscan.io/address/0x869C9Ae2C8fbe82a8b0F768b9F791f89E083222C
+  // https://etherscan.io/address/0xe1D97bF61901B075E9626c8A2340a7De385861Ef
   address internal constant MAIN_SPOKE_wstETH_PRICE_FEED =
-    0x869C9Ae2C8fbe82a8b0F768b9F791f89E083222C;
+    0xe1D97bF61901B075E9626c8A2340a7De385861Ef;
 
-  // https://etherscan.io/address/0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3
+  // https://etherscan.io/address/0x87625393534d5C102cADB66D37201dF24cc26d4C
   address internal constant MAIN_SPOKE_weETH_PRICE_FEED =
-    0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3;
+    0x87625393534d5C102cADB66D37201dF24cc26d4C;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
-  address internal constant MAIN_SPOKE_WBTC_PRICE_FEED = 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+  // https://etherscan.io/address/0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc
+  address internal constant MAIN_SPOKE_WBTC_PRICE_FEED = 0xDaa4B74C6bAc4e25188e64ebc68DB5050b690cAc;
 
-  // https://etherscan.io/address/0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c
+  // https://etherscan.io/address/0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A
   address internal constant MAIN_SPOKE_cbBTC_PRICE_FEED =
-    0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c;
+    0xb41E773f507F7a7EA890b1afB7d2b660c30C8B0A;
 
-  // https://etherscan.io/address/0x547a514d5e3769680Ce22B2361c10Ea13619e8a9
-  address internal constant MAIN_SPOKE_AAVE_PRICE_FEED = 0x547a514d5e3769680Ce22B2361c10Ea13619e8a9;
+  // https://etherscan.io/address/0xF02C1e2A3B77c1cacC72f72B44f7d0a4c62e4a85
+  address internal constant MAIN_SPOKE_AAVE_PRICE_FEED = 0xF02C1e2A3B77c1cacC72f72B44f7d0a4c62e4a85;
 
-  // https://etherscan.io/address/0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c
-  address internal constant MAIN_SPOKE_LINK_PRICE_FEED = 0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c;
+  // https://etherscan.io/address/0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183
+  address internal constant MAIN_SPOKE_LINK_PRICE_FEED = 0xC7e9b623ed51F033b32AE7f1282b1AD62C28C183;
 
-  // https://etherscan.io/address/0x581b8Bc9d6104F71ad6da1f483B67500968C5994
-  address internal constant MAIN_SPOKE_USDC_PRICE_FEED = 0x581b8Bc9d6104F71ad6da1f483B67500968C5994;
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
+  address internal constant MAIN_SPOKE_USDC_PRICE_FEED = 0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
 
   // https://etherscan.io/address/0x260326c220E469358846b187eE53328303Efe19C
   address internal constant MAIN_SPOKE_USDT_PRICE_FEED = 0x260326c220E469358846b187eE53328303Efe19C;
@@ -324,29 +324,29 @@ library AaveV4EthereumSpokePriceFeeds {
   // https://etherscan.io/address/0xD110cac5d8682A3b045D5524a9903E031d70FCCd
   address internal constant MAIN_SPOKE_GHO_PRICE_FEED = 0xD110cac5d8682A3b045D5524a9903E031d70FCCd;
 
-  // https://etherscan.io/address/0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3
+  // https://etherscan.io/address/0x87625393534d5C102cADB66D37201dF24cc26d4C
   address internal constant ETHERFI_ESPOKE_weETH_PRICE_FEED =
-    0xf112aF6F0A332B815fbEf3Ff932c057E570b62d3;
+    0x87625393534d5C102cADB66D37201dF24cc26d4C;
 
-  // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
+  // https://etherscan.io/address/0x5424384B256154046E9667dDFaaa5e550145215e
   address internal constant ETHERFI_ESPOKE_WETH_PRICE_FEED =
-    0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
+    0x5424384B256154046E9667dDFaaa5e550145215e;
 
-  // https://etherscan.io/address/0x47F52B2e43D0386cF161e001835b03Ad49889e3b
+  // https://etherscan.io/address/0x7292C95A5f6A501a9c4B34f6393e221F2A0139c3
   address internal constant KELP_ESPOKE_rsETH_PRICE_FEED =
-    0x47F52B2e43D0386cF161e001835b03Ad49889e3b;
+    0x7292C95A5f6A501a9c4B34f6393e221F2A0139c3;
 
-  // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
+  // https://etherscan.io/address/0x5424384B256154046E9667dDFaaa5e550145215e
   address internal constant KELP_ESPOKE_WETH_PRICE_FEED =
-    0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
+    0x5424384B256154046E9667dDFaaa5e550145215e;
 
-  // https://etherscan.io/address/0x869C9Ae2C8fbe82a8b0F768b9F791f89E083222C
+  // https://etherscan.io/address/0xe1D97bF61901B075E9626c8A2340a7De385861Ef
   address internal constant LIDO_ESPOKE_wstETH_PRICE_FEED =
-    0x869C9Ae2C8fbe82a8b0F768b9F791f89E083222C;
+    0xe1D97bF61901B075E9626c8A2340a7De385861Ef;
 
-  // https://etherscan.io/address/0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419
+  // https://etherscan.io/address/0x5424384B256154046E9667dDFaaa5e550145215e
   address internal constant LIDO_ESPOKE_WETH_PRICE_FEED =
-    0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419;
+    0x5424384B256154046E9667dDFaaa5e550145215e;
 }
 library AaveV4EthereumTokenizationSpokes {
   // https://etherscan.io/address/0x7320CF22Ac095bA2a2e0a652F77efB836c2E751b
