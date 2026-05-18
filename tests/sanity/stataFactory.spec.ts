@@ -1,8 +1,8 @@
 import {describe, expect, it} from 'vitest';
-import * as addressBook from '../../src/ts/AaveAddressBook';
+import * as addressBook from 'src/ts/AaveAddressBook';
 import {getContract} from 'viem';
-import {getClient} from '../../scripts/clients';
-import {IStataTokenFactory_ABI} from '../../src/ts/abis/IStataTokenFactory';
+import {getClient} from 'scripts/clients';
+import {IStataTokenFactory_ABI} from 'src/ts/abis/IStataTokenFactory';
 
 async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);

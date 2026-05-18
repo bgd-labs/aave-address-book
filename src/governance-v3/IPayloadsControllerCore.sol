@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {PayloadsControllerUtils} from './PayloadsControllerUtils.sol';
+import {PayloadsControllerUtils} from 'aave-address-book/governance-v3/PayloadsControllerUtils.sol';
 
 interface IPayloadsControllerCore {
   /// @notice Enum indicating the possible payload states

@@ -5,7 +5,7 @@ import {
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
+} from 'scripts/generator/utils';
 import {ChainId} from '@bgd-labs/toolbox';
 
 export const SAFETY_MODULE = {

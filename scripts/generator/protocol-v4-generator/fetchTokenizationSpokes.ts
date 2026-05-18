@@ -1,7 +1,7 @@
 import {Client, Hex, getAddress, getContract} from 'viem';
-import {IHubV4_ABI} from '../../../src/ts/abis/IHubV4';
-import {ITokenizationSpokeV4_ABI} from '../../../src/ts/abis/ITokenizationSpokeV4';
-import {FetchedHubAsset} from './fetchHubAssets';
+import {IHubV4_ABI} from 'src/ts/abis/IHubV4';
+import {ITokenizationSpokeV4_ABI} from 'src/ts/abis/ITokenizationSpokeV4';
+import {FetchedHubAsset} from 'scripts/generator/protocol-v4-generator/fetchHubAssets';
 
 function toTitleCase(str: string): string {
   return str

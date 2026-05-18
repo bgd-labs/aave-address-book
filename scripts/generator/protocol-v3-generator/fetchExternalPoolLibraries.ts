@@ -1,5 +1,5 @@
 import {Address, Client, getContract} from 'viem';
-import {IPool_ABI} from '../../../src/ts/abis/IPool';
+import {IPool_ABI} from 'src/ts/abis/IPool';
 
 export async function fetchExternalPoolLibraries(client: Client, poolAddress: Address) {
   const poolContract = getContract({address: poolAddress, abi: IPool_ABI, client});

@@ -5,7 +5,7 @@ import {
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
+} from 'scripts/generator/utils';
 import {ChainId, chainlinkFeeds} from '@bgd-labs/toolbox';
 
 const CHAIN_ID_TO_NAME = {

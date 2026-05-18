@@ -1,6 +1,6 @@
 import {Client, Hex, getAddress, getContract} from 'viem';
-import {IHubV4_ABI} from '../../../src/ts/abis/IHubV4';
-import {IERC20Detailed_ABI} from '../../../src/ts/abis/IERC20Detailed';
+import {IHubV4_ABI} from 'src/ts/abis/IHubV4';
+import {IERC20Detailed_ABI} from 'src/ts/abis/IERC20Detailed';
 
 export interface FetchedHubAsset {
   symbol: string;

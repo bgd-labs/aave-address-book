@@ -1,5 +1,5 @@
 import {ChainId} from '@bgd-labs/toolbox';
-import {NetworkAddresses} from '../types';
+import {NetworkAddresses} from 'scripts/configs/types';
 import {Hex} from 'viem';
 
 export const metisAddresses: NetworkAddresses<{

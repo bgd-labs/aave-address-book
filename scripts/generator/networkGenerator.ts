@@ -1,12 +1,12 @@
 import * as fs from 'fs';
-import {NetworkAddresses} from '../configs/types';
+import {NetworkAddresses} from 'scripts/configs/types';
 import {
   generateJsConstants,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
+} from 'scripts/generator/utils';
 
 export function generateNetworkAddresses(config: NetworkAddresses<any>) {
   const name = `Misc${config.name}`;

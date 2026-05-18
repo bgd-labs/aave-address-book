@@ -1,12 +1,12 @@
 import * as fs from 'fs';
-import {Addresses} from '../configs/types';
+import {Addresses} from 'scripts/configs/types';
 import {
   generateJsConstants,
   generateSolidityConstants,
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
+} from 'scripts/generator/utils';
 import {ChainId} from '@bgd-labs/toolbox';
 
 const govV2Addresses: Addresses = {

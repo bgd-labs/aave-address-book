@@ -1,11 +1,11 @@
 import {Address, Client, getContract, zeroAddress} from 'viem';
-import {fetchPoolAddresses} from './fetchPoolAddresses';
-import {ILendingPool_ABI} from '../../../src/ts/abis/ILendingPool';
-import {ReserveData} from '../../configs/types';
-import {IERC20Detailed_ABI} from '../../../src/ts/abis/IERC20Detailed';
-import {IAaveOracle_ABI} from '../../../src/ts/abis/IAaveOracle';
-import {A_TOKEN_V2_ABI} from '../../abi/aToken_v2_abi';
-import {INCENTIVES_CONTROLLER_ABI} from '../../abi/incentivesController_abi';
+import {fetchPoolAddresses} from 'scripts/generator/protocol-v2-generator/fetchPoolAddresses';
+import {ILendingPool_ABI} from 'src/ts/abis/ILendingPool';
+import {ReserveData} from 'scripts/configs/types';
+import {IERC20Detailed_ABI} from 'src/ts/abis/IERC20Detailed';
+import {IAaveOracle_ABI} from 'src/ts/abis/IAaveOracle';
+import {A_TOKEN_V2_ABI} from 'scripts/abi/aToken_v2_abi';
+import {INCENTIVES_CONTROLLER_ABI} from 'scripts/abi/incentivesController_abi';
 
 export async function fetchTokens(
   client: Client,

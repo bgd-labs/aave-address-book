@@ -1,5 +1,5 @@
 import {writeFileSync} from 'fs';
-import {flattenedAddresses} from '../ui/src/utils/getAddresses';
+import {flattenedAddresses} from 'ui/src/utils/getAddresses';
 import {ChainList} from '@bgd-labs/toolbox';
 
 const addresses = flattenedAddresses.filter((item) => !ChainList[item.chainId].testnet);

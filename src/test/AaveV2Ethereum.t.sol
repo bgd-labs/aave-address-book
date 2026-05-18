@@ -2,7 +2,7 @@
 pragma solidity >=0.6.0;
 
 import 'forge-std/Test.sol';
-import {AaveV2Ethereum} from '../AaveV2Ethereum.sol';
+import {AaveV2Ethereum} from 'aave-address-book/AaveV2Ethereum.sol';
 // imports are unused but required so forge inspect can find the source code
 import {IWithGuardian} from 'solidity-utils/contracts/access-control/interfaces/IWithGuardian.sol';
 import {IStataTokenFactory} from 'aave-v3-origin/contracts/extensions/stata-token/interfaces/IStataTokenFactory.sol';

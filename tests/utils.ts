@@ -1,6 +1,6 @@
 import { Address, Client, getContract } from 'viem';
-import * as addressBook from '../src/ts/AaveAddressBook';
-import { IPoolAddressesProvider_ABI } from '../src/ts/abis/IPoolAddressesProvider';
+import * as addressBook from 'src/ts/AaveAddressBook';
+import { IPoolAddressesProvider_ABI } from 'src/ts/abis/IPoolAddressesProvider';
 
 export function getGovernance(chainId: number) {
   for (const [name, lib] of Object.entries(addressBook)) {

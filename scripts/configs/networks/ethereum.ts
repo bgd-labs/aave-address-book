@@ -1,6 +1,6 @@
 import {Hex} from 'viem';
 import {ChainId} from '@bgd-labs/toolbox';
-import {AddressInfo, NetworkAddresses} from '../types';
+import {AddressInfo, NetworkAddresses} from 'scripts/configs/types';
 
 export const ethereumAddresses: NetworkAddresses<{
   ECOSYSTEM_RESERVE: Hex;
