@@ -4599,6 +4599,12 @@
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
     },
+    "0xE1753F2e00940cC31213dd92013cF019DFE4ca1d": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x60Bf2DF49F17529Cf956D57848ebEB8a0d0a2757": {
+      "name": "sGhoSteward"
+    },
     "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
       "name": "GnosisSafeProxy"
     }

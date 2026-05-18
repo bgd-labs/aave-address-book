@@ -18,7 +18,7 @@ export const ABI_INTERFACES = [
   'IExecutor',
   'ICrossChainController',
   'IWithGuardian',
-  'IRescuable',
+  'lib/aave-v3-origin/lib/solidity-utils/src/contracts/utils/interfaces/IRescuable.sol',
   'ILendingPool',
   'ILendingPoolAddressesProvider',
   'ILendingPoolConfigurator',
