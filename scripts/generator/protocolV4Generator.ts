@@ -187,6 +187,29 @@ function buildTsGetter(exportName: string, sourceObjectName: string, keys: strin
   return `export const ${exportName} = [${items}] as const;`;
 }
 
+function buildSolidityRawGetter(
+  fnName: string,
+  varName: string,
+  entries: {libraryName: string; key: string}[],
+): string {
+  const body = [
+    `    address[] memory ${varName} = new address[](${entries.length});`,
+    ...entries.map(
+      (e, i) => `    ${varName}[${i}] = address(${e.libraryName}.${keyToVar(e.key)});`,
+    ),
+    `    return ${varName};`,
+  ].join('\n');
+  return `  function ${fnName}() internal pure returns (address[] memory) {\n${body}\n  }`;
+}
+
+function buildTsRawGetter(
+  exportName: string,
+  entries: {sourceObjectName: string; key: string}[],
+): string {
+  const items = entries.map((e) => `${e.sourceObjectName}.${keyToVar(e.key)}`).join(', ');
+  return `export const ${exportName} = [${items}] as const;`;
+}
+
 export async function generateProtocolV4Library(config: V4Config) {
   const client = getClient(config.chainId);
   if (!client) {
@@ -431,6 +454,27 @@ export async function generateProtocolV4Library(config: V4Config) {
     tsGetterLines.push(
       buildTsGetter('ALL_TOKENIZED_SPOKES', 'TOKENIZATION_SPOKES', tokSpokeGetterKeys),
     );
+  }
+
+  const rawSpokeEntries: {libraryName: string; key: string}[] = [];
+  const rawSpokeTsEntries: {sourceObjectName: string; key: string}[] = [];
+
+  if (treasurySpoke && treasurySpoke !== zeroAddress) {
+    rawSpokeEntries.push({libraryName: `${name}Spokes`, key: 'TREASURY_SPOKE'});
+    rawSpokeTsEntries.push({sourceObjectName: 'SPOKES', key: 'TREASURY_SPOKE'});
+  }
+  for (const key of spokeGetterKeys) {
+    rawSpokeEntries.push({libraryName: `${name}Spokes`, key});
+    rawSpokeTsEntries.push({sourceObjectName: 'SPOKES', key});
+  }
+  for (const key of tokSpokeGetterKeys) {
+    rawSpokeEntries.push({libraryName: `${name}TokenizationSpokes`, key});
+    rawSpokeTsEntries.push({sourceObjectName: 'TOKENIZATION_SPOKES', key});
+  }
+
+  if (rawSpokeEntries.length > 0) {
+    solGetterFns.push(buildSolidityRawGetter('getAllSpokesRaw', 'spokes', rawSpokeEntries));
+    tsGetterLines.push(buildTsRawGetter('ALL_SPOKES_RAW', rawSpokeTsEntries));
   }
 
   if (solGetterFns.length > 0) {
