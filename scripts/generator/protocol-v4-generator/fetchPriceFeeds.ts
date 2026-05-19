@@ -1,4 +1,5 @@
-import {Client, Hex, getAddress, getContract} from 'viem';
+import {Client, Hex, getAddress} from 'viem';
+import {multicall} from 'viem/actions';
 import {ISpokeV4_ABI} from 'src/ts/abis/ISpokeV4';
 import {IAaveOracleV4_ABI} from 'src/ts/abis/IAaveOracleV4';
 
@@ -23,37 +24,72 @@ export async function fetchPriceFeeds(
   const priceFeeds: FetchedPriceFeed[] = [];
   const oraclesByBaseKey = new Map<string, Hex>();
 
-  for (const [spokeBaseKey, spokeAddress] of Object.entries(spokesByBaseKey)) {
-    const spokeContract = getContract({address: getAddress(spokeAddress), abi: ISpokeV4_ABI, client});
+  const entries = Object.entries(spokesByBaseKey).map(
+    ([key, addr]) => [key, getAddress(addr)] as const,
+  );
 
-    const oracleAddress = getAddress(await spokeContract.read.ORACLE());
-    oraclesByBaseKey.set(spokeBaseKey, oracleAddress);
+  // Stage 1: one multicall fetches ORACLE() + getReserveCount() for every spoke.
+  const headContracts = entries.flatMap(([, addr]) => [
+    {address: addr, abi: ISpokeV4_ABI, functionName: 'ORACLE'} as const,
+    {address: addr, abi: ISpokeV4_ABI, functionName: 'getReserveCount'} as const,
+  ]);
+  const headResults = await multicall(client, {
+    allowFailure: false,
+    contracts: headContracts,
+  });
 
-    const oracleContract = getContract({
-      address: oracleAddress,
+  const spokeHeads = entries.map(([key, addr], i) => {
+    const oracle = getAddress(headResults[i * 2] as Hex);
+    const count = headResults[i * 2 + 1] as bigint;
+    oraclesByBaseKey.set(key, oracle);
+    return {spokeBaseKey: key, spokeAddr: addr, oracle, count: Number(count)};
+  });
+
+  // Stage 2: one multicall fetches getReserve(id) + getReserveSource(id) for every (spoke, reserveId).
+  type ReserveTask = {
+    spokeBaseKey: string;
+    spokeAddr: Hex;
+    oracle: Hex;
+    reserveId: number;
+  };
+  const tasks: ReserveTask[] = spokeHeads.flatMap((h) =>
+    Array.from({length: h.count}, (_, reserveId) => ({
+      spokeBaseKey: h.spokeBaseKey,
+      spokeAddr: h.spokeAddr,
+      oracle: h.oracle,
+      reserveId,
+    })),
+  );
+
+  const reserveContracts = tasks.flatMap((t) => [
+    {
+      address: t.spokeAddr,
+      abi: ISpokeV4_ABI,
+      functionName: 'getReserve',
+      args: [BigInt(t.reserveId)],
+    } as const,
+    {
+      address: t.oracle,
       abi: IAaveOracleV4_ABI,
-      client,
-    });
+      functionName: 'getReserveSource',
+      args: [BigInt(t.reserveId)],
+    } as const,
+  ]);
+  const reserveResults = await multicall(client, {
+    allowFailure: false,
+    contracts: reserveContracts,
+  });
 
-    const reserveCount = await spokeContract.read.getReserveCount();
-
-    const reserveData = await Promise.all(
-      Array.from({length: Number(reserveCount)}, (_, i) => i).map(async (reserveId) => {
-        const [reserve, priceFeed] = await Promise.all([
-          spokeContract.read.getReserve([BigInt(reserveId)]),
-          oracleContract.read.getReserveSource([BigInt(reserveId)]),
-        ]);
-        const hubName = hubNameByAddress.get(reserve.hub.toLowerCase());
-        const key = `${reserve.hub.toLowerCase()}-${reserve.assetId}`;
-        const symbol = symbolByHubAsset.get(key);
-        if (hubName && symbol) {
-          return {spokeBaseKey, hubName, symbol, priceFeed};
-        }
-        return null;
-      }),
-    );
-
-    priceFeeds.push(...(reserveData.filter(Boolean) as FetchedPriceFeed[]));
+  for (let i = 0; i < tasks.length; i++) {
+    const t = tasks[i];
+    const reserve = reserveResults[i * 2] as {hub: Hex; assetId: number};
+    const priceFeed = reserveResults[i * 2 + 1] as Hex;
+    const hubName = hubNameByAddress.get(reserve.hub.toLowerCase());
+    const key = `${reserve.hub.toLowerCase()}-${reserve.assetId}`;
+    const symbol = symbolByHubAsset.get(key);
+    if (hubName && symbol) {
+      priceFeeds.push({spokeBaseKey: t.spokeBaseKey, hubName, symbol, priceFeed});
+    }
   }
 
   return {priceFeeds, oraclesByBaseKey};
