@@ -13,6 +13,7 @@ import {
 import {getClient} from 'scripts/clients';
 import {fetchHubAssets, FetchedHubAsset} from 'scripts/generator/protocol-v4-generator/fetchHubAssets';
 import {fetchTokenizationSpokes} from 'scripts/generator/protocol-v4-generator/fetchTokenizationSpokes';
+import {fetchAllSpokes} from 'scripts/generator/protocol-v4-generator/fetchAllSpokes';
 import {fetchPriceFeeds, FetchedPriceFeed} from 'scripts/generator/protocol-v4-generator/fetchPriceFeeds';
 
 const V4_INTERFACE_REGISTRY: Record<string, string> = {
@@ -191,12 +192,15 @@ function buildSolidityRawGetter(
   fnName: string,
   varName: string,
   entries: {libraryName: string; key: string}[],
+  trailing: Hex[] = [],
 ): string {
+  const total = entries.length + trailing.length;
   const body = [
-    `    address[] memory ${varName} = new address[](${entries.length});`,
+    `    address[] memory ${varName} = new address[](${total});`,
     ...entries.map(
       (e, i) => `    ${varName}[${i}] = address(${e.libraryName}.${keyToVar(e.key)});`,
     ),
+    ...trailing.map((addr, i) => `    ${varName}[${entries.length + i}] = ${addr};`),
     `    return ${varName};`,
   ].join('\n');
   return `  function ${fnName}() internal pure returns (address[] memory) {\n${body}\n  }`;
@@ -205,8 +209,12 @@ function buildSolidityRawGetter(
 function buildTsRawGetter(
   exportName: string,
   entries: {sourceObjectName: string; key: string}[],
+  trailing: Hex[] = [],
 ): string {
-  const items = entries.map((e) => `${e.sourceObjectName}.${keyToVar(e.key)}`).join(', ');
+  const items = [
+    ...entries.map((e) => `${e.sourceObjectName}.${keyToVar(e.key)}`),
+    ...trailing.map((addr) => `'${addr}'`),
+  ].join(', ');
   return `export const ${exportName} = [${items}] as const;`;
 }
 
@@ -226,8 +234,9 @@ export async function generateProtocolV4Library(config: V4Config) {
     knownNonTokenizationSpokes.add(treasurySpoke.toLowerCase());
   }
 
-  // Fetch assets + tokenization spokes for each hub
+  // Fetch assets + tokenization spokes + all on-chain spokes for each hub
   const resolvedHubs: Record<string, ResolvedHub> = {};
+  const allOnChainSpokes: Hex[] = [];
   for (const [hubName, hubAddress] of Object.entries(config.hubs)) {
     const assets = await fetchHubAssets(client, hubAddress);
     const tokSpokes = await fetchTokenizationSpokes(
@@ -237,6 +246,8 @@ export async function generateProtocolV4Library(config: V4Config) {
       assets,
       knownNonTokenizationSpokes,
     );
+    const hubSpokes = await fetchAllSpokes(client, hubAddress, assets);
+    allOnChainSpokes.push(...hubSpokes);
     resolvedHubs[hubName] = {
       hub: hubAddress,
       assets: assets.map((a) => ({...a, tokenizationSpoke: tokSpokes.get(a.assetId)!})),
@@ -472,9 +483,27 @@ export async function generateProtocolV4Library(config: V4Config) {
     rawSpokeTsEntries.push({sourceObjectName: 'TOKENIZATION_SPOKES', key});
   }
 
-  if (rawSpokeEntries.length > 0) {
-    solGetterFns.push(buildSolidityRawGetter('getAllSpokesRaw', 'spokes', rawSpokeEntries));
-    tsGetterLines.push(buildTsRawGetter('ALL_SPOKES_RAW', rawSpokeTsEntries));
+  const knownSpokes = new Set<string>();
+  if (treasurySpoke) knownSpokes.add(treasurySpoke.toLowerCase());
+  for (const addr of Object.values(spokesByBaseKey)) knownSpokes.add(addr.toLowerCase());
+  for (const hubData of Object.values(resolvedHubs)) {
+    for (const asset of hubData.assets) knownSpokes.add(asset.tokenizationSpoke.toLowerCase());
+  }
+
+  const unknownSpokes: Hex[] = [];
+  const seenUnknown = new Set<string>();
+  for (const addr of allOnChainSpokes) {
+    const lower = addr.toLowerCase();
+    if (knownSpokes.has(lower) || seenUnknown.has(lower)) continue;
+    seenUnknown.add(lower);
+    unknownSpokes.push(addr);
+  }
+
+  if (rawSpokeEntries.length > 0 || unknownSpokes.length > 0) {
+    solGetterFns.push(
+      buildSolidityRawGetter('getAllSpokesRaw', 'spokes', rawSpokeEntries, unknownSpokes),
+    );
+    tsGetterLines.push(buildTsRawGetter('ALL_SPOKES_RAW', rawSpokeTsEntries, unknownSpokes));
   }
 
   if (solGetterFns.length > 0) {
