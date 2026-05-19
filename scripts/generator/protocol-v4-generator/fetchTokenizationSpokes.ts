@@ -43,9 +43,6 @@ export async function fetchTokenizationSpokes(
   }
 
   if (pendingCandidates.length > 0) {
-    // Validate each candidate with hub() + assetId() + name() in a single multicall.
-    // allowFailure: true — a candidate that is not a TokenizationSpoke will revert,
-    // and we just skip it (equivalent to the previous Promise.allSettled behavior).
     const validationContracts = pendingCandidates.flatMap(({candidate}) => [
       {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'hub'} as const,
       {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'assetId'} as const,

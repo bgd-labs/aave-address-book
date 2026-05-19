@@ -28,7 +28,6 @@ export async function fetchPriceFeeds(
     ([key, addr]) => [key, getAddress(addr)] as const,
   );
 
-  // Stage 1: one multicall fetches ORACLE() + getReserveCount() for every spoke.
   const headContracts = entries.flatMap(([, addr]) => [
     {address: addr, abi: ISpokeV4_ABI, functionName: 'ORACLE'} as const,
     {address: addr, abi: ISpokeV4_ABI, functionName: 'getReserveCount'} as const,
@@ -45,7 +44,6 @@ export async function fetchPriceFeeds(
     return {spokeBaseKey: key, spokeAddr: addr, oracle, count: Number(count)};
   });
 
-  // Stage 2: one multicall fetches getReserve(id) + getReserveSource(id) for every (spoke, reserveId).
   type ReserveTask = {
     spokeBaseKey: string;
     spokeAddr: Hex;
@@ -61,29 +59,35 @@ export async function fetchPriceFeeds(
     })),
   );
 
-  const reserveContracts = tasks.flatMap((t) => [
-    {
-      address: t.spokeAddr,
-      abi: ISpokeV4_ABI,
-      functionName: 'getReserve',
-      args: [BigInt(t.reserveId)],
-    } as const,
-    {
-      address: t.oracle,
-      abi: IAaveOracleV4_ABI,
-      functionName: 'getReserveSource',
-      args: [BigInt(t.reserveId)],
-    } as const,
-  ]);
   const reserveResults = await multicall(client, {
     allowFailure: false,
-    contracts: reserveContracts,
+    contracts: tasks.map(
+      (t) =>
+        ({
+          address: t.spokeAddr,
+          abi: ISpokeV4_ABI,
+          functionName: 'getReserve',
+          args: [BigInt(t.reserveId)],
+        }) as const,
+    ),
+  });
+  const priceFeedResults = await multicall(client, {
+    allowFailure: false,
+    contracts: tasks.map(
+      (t) =>
+        ({
+          address: t.oracle,
+          abi: IAaveOracleV4_ABI,
+          functionName: 'getReserveSource',
+          args: [BigInt(t.reserveId)],
+        }) as const,
+    ),
   });
 
   for (let i = 0; i < tasks.length; i++) {
     const t = tasks[i];
-    const reserve = reserveResults[i * 2] as {hub: Hex; assetId: number};
-    const priceFeed = reserveResults[i * 2 + 1] as Hex;
+    const reserve = reserveResults[i] as {hub: Hex; assetId: number};
+    const priceFeed = priceFeedResults[i] as Hex;
     const hubName = hubNameByAddress.get(reserve.hub.toLowerCase());
     const key = `${reserve.hub.toLowerCase()}-${reserve.assetId}`;
     const symbol = symbolByHubAsset.get(key);
