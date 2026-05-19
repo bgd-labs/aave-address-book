@@ -1,6 +1,5 @@
 import {Client, Hex, getAddress} from 'viem';
 import {multicall} from 'viem/actions';
-import {IHubV4_ABI} from 'src/ts/abis/IHubV4';
 import {ITokenizationSpokeV4_ABI} from 'src/ts/abis/ITokenizationSpokeV4';
 import {FetchedHubAsset} from 'scripts/generator/protocol-v4-generator/fetchHubAssets';
 
@@ -16,44 +15,18 @@ export async function fetchTokenizationSpokes(
   hubAddress: Hex,
   hubName: string,
   assets: FetchedHubAsset[],
+  spokesByAssetId: Map<number, Hex[]>,
   knownNonTokenizationSpokes: Set<string>,
 ): Promise<Map<number, Hex>> {
   const hub = getAddress(hubAddress);
   const results = new Map<number, Hex>();
   const hubLabel = toTitleCase(hubName);
 
-  const counts = await multicall(client, {
-    allowFailure: false,
-    contracts: assets.map((asset) => ({
-      address: hub,
-      abi: IHubV4_ABI,
-      functionName: 'getSpokeCount',
-      args: [BigInt(asset.assetId)],
-    })),
-  });
-
-  const enumTasks = assets.flatMap((asset, i) =>
-    Array.from({length: Number(counts[i])}, (_, idx) => ({asset, idx})),
-  );
-  const enumAddresses = await multicall(client, {
-    allowFailure: false,
-    contracts: enumTasks.map((t) => ({
-      address: hub,
-      abi: IHubV4_ABI,
-      functionName: 'getSpokeAddress',
-      args: [BigInt(t.asset.assetId), BigInt(t.idx)],
-    })),
-  });
-
-  const spokesByAsset = new Map<number, Hex[]>();
-  for (const asset of assets) spokesByAsset.set(asset.assetId, []);
-  enumTasks.forEach((t, i) => spokesByAsset.get(t.asset.assetId)!.push(enumAddresses[i]));
-
   type CandidateTask = {asset: FetchedHubAsset; candidate: Hex};
   const pendingCandidates: CandidateTask[] = [];
 
   for (const asset of assets) {
-    const spokeAddresses = spokesByAsset.get(asset.assetId)!;
+    const spokeAddresses = spokesByAssetId.get(asset.assetId)!;
     const candidates = spokeAddresses.filter(
       (addr) =>
         !knownNonTokenizationSpokes.has(addr.toLowerCase()) &&
@@ -69,41 +42,47 @@ export async function fetchTokenizationSpokes(
     }
   }
 
-  // Validate each candidate with hub() + assetId() + name() in a single multicall.
-  // allowFailure: true — a candidate that is not a TokenizationSpoke will revert,
-  // and we just skip it (equivalent to the previous Promise.allSettled behavior).
-  const validationContracts = pendingCandidates.flatMap(({candidate}) => [
-    {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'hub'} as const,
-    {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'assetId'} as const,
-    {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'name'} as const,
-  ]);
+  if (pendingCandidates.length > 0) {
+    // Validate each candidate with hub() + assetId() + name() in a single multicall.
+    // allowFailure: true — a candidate that is not a TokenizationSpoke will revert,
+    // and we just skip it (equivalent to the previous Promise.allSettled behavior).
+    const validationContracts = pendingCandidates.flatMap(({candidate}) => [
+      {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'hub'} as const,
+      {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'assetId'} as const,
+      {address: candidate, abi: ITokenizationSpokeV4_ABI, functionName: 'name'} as const,
+    ]);
 
-  const validationResults = await multicall(client, {
-    allowFailure: true,
-    contracts: validationContracts,
-  });
+    const validationResults = await multicall(client, {
+      allowFailure: true,
+      contracts: validationContracts,
+    });
 
-  // Using TokenizationSpoke name against Hub label and asset symbol for verification, can be replaced by
-  // a more robust method in the future.
-  for (let i = 0; i < pendingCandidates.length; i++) {
-    const {asset, candidate} = pendingCandidates[i];
-    if (results.has(asset.assetId)) continue;
-    const hubRes = validationResults[i * 3];
-    const assetIdRes = validationResults[i * 3 + 1];
-    const nameRes = validationResults[i * 3 + 2];
-    if (hubRes.status !== 'success' || assetIdRes.status !== 'success' || nameRes.status !== 'success') {
-      continue;
-    }
-    const hubAddr = hubRes.result as Hex;
-    const assetIdVal = assetIdRes.result as bigint;
-    const nameVal = nameRes.result as string;
-    if (
-      hubAddr.toLowerCase() === hubAddress.toLowerCase() &&
-      Number(assetIdVal) === asset.assetId &&
-      nameVal.includes(asset.symbol) &&
-      nameVal.includes(hubLabel)
-    ) {
-      results.set(asset.assetId, getAddress(candidate));
+    // Using TokenizationSpoke name against Hub label and asset symbol for verification, can be replaced by
+    // a more robust method in the future.
+    for (let i = 0; i < pendingCandidates.length; i++) {
+      const {asset, candidate} = pendingCandidates[i];
+      if (results.has(asset.assetId)) continue;
+      const hubRes = validationResults[i * 3];
+      const assetIdRes = validationResults[i * 3 + 1];
+      const nameRes = validationResults[i * 3 + 2];
+      if (
+        hubRes.status !== 'success' ||
+        assetIdRes.status !== 'success' ||
+        nameRes.status !== 'success'
+      ) {
+        continue;
+      }
+      const hubAddr = hubRes.result as Hex;
+      const assetIdVal = assetIdRes.result as bigint;
+      const nameVal = nameRes.result as string;
+      if (
+        hubAddr.toLowerCase() === hub.toLowerCase() &&
+        Number(assetIdVal) === asset.assetId &&
+        nameVal.includes(asset.symbol) &&
+        nameVal.includes(hubLabel)
+      ) {
+        results.set(asset.assetId, getAddress(candidate));
+      }
     }
   }
 

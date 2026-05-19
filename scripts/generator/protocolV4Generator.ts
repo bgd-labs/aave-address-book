@@ -239,15 +239,16 @@ export async function generateProtocolV4Library(config: V4Config) {
   const allOnChainSpokes: Hex[] = [];
   for (const [hubName, hubAddress] of Object.entries(config.hubs)) {
     const assets = await fetchHubAssets(client, hubAddress);
+    const hubSpokes = await fetchAllSpokes(client, hubAddress, assets);
     const tokSpokes = await fetchTokenizationSpokes(
       client,
       hubAddress,
       hubName,
       assets,
+      hubSpokes.spokesByAssetId,
       knownNonTokenizationSpokes,
     );
-    const hubSpokes = await fetchAllSpokes(client, hubAddress, assets);
-    allOnChainSpokes.push(...hubSpokes);
+    allOnChainSpokes.push(...hubSpokes.allSpokes);
     resolvedHubs[hubName] = {
       hub: hubAddress,
       assets: assets.map((a) => ({...a, tokenizationSpoke: tokSpokes.get(a.assetId)!})),

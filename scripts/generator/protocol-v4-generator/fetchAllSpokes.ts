@@ -3,11 +3,16 @@ import {multicall} from 'viem/actions';
 import {IHubV4_ABI} from 'src/ts/abis/IHubV4';
 import {FetchedHubAsset} from 'scripts/generator/protocol-v4-generator/fetchHubAssets';
 
+export interface FetchedAllSpokes {
+  allSpokes: Hex[];
+  spokesByAssetId: Map<number, Hex[]>;
+}
+
 export async function fetchAllSpokes(
   client: Client,
   hubAddress: Hex,
   assets: FetchedHubAsset[],
-): Promise<Hex[]> {
+): Promise<FetchedAllSpokes> {
   const hub = getAddress(hubAddress);
 
   const counts = await multicall(client, {
@@ -34,5 +39,10 @@ export async function fetchAllSpokes(
     })),
   });
 
-  return addresses.map(getAddress);
+  const allSpokes = addresses.map(getAddress);
+  const spokesByAssetId = new Map<number, Hex[]>();
+  for (const asset of assets) spokesByAssetId.set(asset.assetId, []);
+  tasks.forEach((task, i) => spokesByAssetId.get(task.assetId)!.push(allSpokes[i]));
+
+  return {allSpokes, spokesByAssetId};
 }
