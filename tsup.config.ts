@@ -10,8 +10,9 @@ export default defineConfig([
     bundle: true,
     sourcemap: true,
     // clean: true,
-    splitting: false,
+    splitting: true,
     dts: true,
+    treeshake: true,
     esbuildPlugins: [esbuildPluginFilePathExtensions({cjsExtension: 'js'})],
   },
   {

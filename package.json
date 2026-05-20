@@ -25,7 +25,7 @@
         "default": "./dist/AaveAddressBook.js"
       },
       "import": {
-        "types": "./dist/AaveAddressBook.mts",
+        "types": "./dist/AaveAddressBook.d.mts",
         "default": "./dist/AaveAddressBook.mjs"
       }
     },
@@ -35,7 +35,7 @@
         "default": "./dist/abis/index.js"
       },
       "import": {
-        "types": "./dist/abis/index.mts",
+        "types": "./dist/abis/index.d.mts",
         "default": "./dist/abis/index.mjs"
       }
     },
@@ -45,7 +45,7 @@
         "default": "./dist/utils.js"
       },
       "import": {
-        "types": "./dist/utils.mts",
+        "types": "./dist/utils.d.mts",
         "default": "./dist/utils.mjs"
       }
     },
@@ -55,8 +55,18 @@
         "default": "./dist/tokenlist.js"
       },
       "import": {
-        "types": "./dist/tokenlist.mts",
+        "types": "./dist/tokenlist.d.mts",
         "default": "./dist/tokenlist.mjs"
+      }
+    },
+    "./*": {
+      "require": {
+        "types": "./dist/*.d.ts",
+        "default": "./dist/*.js"
+      },
+      "import": {
+        "types": "./dist/*.d.mts",
+        "default": "./dist/*.mjs"
       }
     }
   },
