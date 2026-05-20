@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.52.0](https://github.com/aave-dao/aave-address-book/compare/v4.51.0...v4.52.0) (2026-05-19)
+
+
+### Features
+
+* allSpokesRaw getter for v4 ([#1392](https://github.com/aave-dao/aave-address-book/issues/1392)) ([ac6a932](https://github.com/aave-dao/aave-address-book/commit/ac6a9326bdd7d2e19240bf574fb5c758a37833eb))
+
 ## [4.51.0](https://github.com/aave-dao/aave-address-book/compare/v4.50.0...v4.51.0) (2026-05-18)
 
 
