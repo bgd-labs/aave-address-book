@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.52.2](https://github.com/aave-dao/aave-address-book/compare/v4.52.1...v4.52.2) (2026-05-21)
+
+
+### Bug Fixes
+
+* add better config for treeshaking with modern bundlers ([#1394](https://github.com/aave-dao/aave-address-book/issues/1394)) ([0a61c1f](https://github.com/aave-dao/aave-address-book/commit/0a61c1f17d7b8d08d859be788ff0152a70edd43f))
+
 ## [4.52.1](https://github.com/aave-dao/aave-address-book/compare/v4.52.0...v4.52.1) (2026-05-20)
 
 
