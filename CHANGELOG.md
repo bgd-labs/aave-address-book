@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.52.1](https://github.com/aave-dao/aave-address-book/compare/v4.52.0...v4.52.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* **deps:** bump lib/aave-v3-origin from `1e3d70c` to `f6f9cfc` ([#1395](https://github.com/aave-dao/aave-address-book/issues/1395)) ([0181771](https://github.com/aave-dao/aave-address-book/commit/0181771ce9e3ad0422e11dbf81e684345d6b3daf))
+
 ## [4.52.0](https://github.com/aave-dao/aave-address-book/compare/v4.51.0...v4.52.0) (2026-05-19)
 
 
