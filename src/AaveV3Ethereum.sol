@@ -1335,6 +1335,9 @@ library AaveV3EthereumAssets {
   address internal constant USDG_INTEREST_RATE_STRATEGY =
     0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB;
 
+  // https://etherscan.io/address/0x2DF6DfbD281F127a3690c87E4572076778a9EDa5
+  address internal constant USDG_STATA_TOKEN = 0x2DF6DfbD281F127a3690c87E4572076778a9EDa5;
+
   // https://etherscan.io/address/0xAeBf0Bb9f57E89260d57f31AF34eB58657d96Ce0
   address internal constant PT_USDe_7MAY2026_UNDERLYING =
     0xAeBf0Bb9f57E89260d57f31AF34eB58657d96Ce0;

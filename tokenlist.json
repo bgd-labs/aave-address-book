@@ -3502,6 +3502,19 @@
     },
     {
       "chainId": 1,
+      "address": "0x2DF6DfbD281F127a3690c87E4572076778a9EDa5",
+      "name": "Wrapped Aave Ethereum USDG",
+      "decimals": 6,
+      "symbol": "waEthUSDG",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0xe343167631d89B6Ffc58B88d6b7fB0228795491D",
+        "underlyingAToken": "0x7c0477d085ECb607CF8429f3eC91Ae5E1e460F4F"
+      }
+    },
+    {
+      "chainId": 1,
       "address": "0xAeBf0Bb9f57E89260d57f31AF34eB58657d96Ce0",
       "name": "PT Ethena USDe 7MAY2026",
       "decimals": 18,
@@ -10611,6 +10624,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 172 },
-  "timestamp": "2026-05-01T02:40:19.495Z"
+  "version": { "major": 3, "minor": 0, "patch": 173 },
+  "timestamp": "2026-05-22T00:40:33.580Z"
 }
