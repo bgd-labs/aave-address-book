@@ -4607,6 +4607,9 @@
     },
     "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
       "name": "GnosisSafeProxy"
+    },
+    "0x2DF6DfbD281F127a3690c87E4572076778a9EDa5": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
