@@ -1,0 +1,14 @@
+tests/verification.spec.ts
+  h_739c25e72c37fb 3-4,8,64,80-88,99,162-164
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "47fda465b2738802df08c95be570304f34882aac",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
