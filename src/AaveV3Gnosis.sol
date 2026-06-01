@@ -71,8 +71,8 @@ library AaveV3Gnosis {
   // https://gnosisscan.io/address/0x721B9abAb6511b46b9ee83A1aba23BDAcB004149
   address internal constant WETH_GATEWAY = 0x721B9abAb6511b46b9ee83A1aba23BDAcB004149;
 
-  // https://gnosisscan.io/address/0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55
-  address internal constant RISK_STEWARD = 0x1AA25FdD7d55FA8a401D6EFba8e48874Ef730E55;
+  // https://gnosisscan.io/address/0xd7f6CbA78FcE1799C29460765c97D7792eeD0756
+  address internal constant RISK_STEWARD = 0xd7f6CbA78FcE1799C29460765c97D7792eeD0756;
 
   // https://gnosisscan.io/address/0x02e9b27599C4Bf8f789d34b6E65C51092c3d9FA6
   address internal constant LEGACY_STATIC_A_TOKEN_FACTORY =

@@ -11,6 +11,7 @@ export {IExecutor_ABI} from './IExecutor';
 export {ICrossChainController_ABI} from './ICrossChainController';
 export {IWithGuardian_ABI} from './IWithGuardian';
 export {IRescuable_ABI} from './IRescuable';
+export {IACLManager_ABI} from './IACLManager';
 export {ILendingPool_ABI} from './ILendingPool';
 export {ILendingPoolAddressesProvider_ABI} from './ILendingPoolAddressesProvider';
 export {ILendingPoolConfigurator_ABI} from './ILendingPoolConfigurator';

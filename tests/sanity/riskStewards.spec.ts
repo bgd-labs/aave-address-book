@@ -4,6 +4,7 @@ import {getContract} from 'viem';
 import {getClient} from 'scripts/clients';
 import {getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel} from 'tests/utils';
 import {IRiskSteward_ABI} from 'src/ts/abis/IRiskSteward';
+import {IACLManager_ABI} from 'src/ts/abis/IACLManager';
 
 async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
@@ -31,7 +32,9 @@ async function check(addresses: Record<string, any>) {
         `SANITY_RISK_STEWARDS: Skipped due to missing governance on ${client.chain?.name}`,
       );
     } else {
-      const executor = isWhiteLabel ? (governance as any).PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR : (governance as any).EXECUTOR_LVL_1;
+      const executor = isWhiteLabel
+        ? (governance as any).PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR
+        : (governance as any).EXECUTOR_LVL_1;
       // prettier would be to check against executor
       if (OWNER !== executor) {
         throw new Error(
@@ -87,6 +90,39 @@ describe('risk stewards', () => {
         `should reference correct contracts on all getters: ${client.chain!.name}`,
         async () => {
           return check(addresses);
+        },
+      );
+    }
+  });
+});
+
+async function checkAclRiskAdmin(addresses: Record<string, any>) {
+  const client = getClient(addresses.CHAIN_ID);
+  const isWhiteLabel = await isPoolWhiteLabel(addresses.POOL_ADDRESSES_PROVIDER, client);
+  if (!client.chain?.testnet && !isWhiteLabel) {
+    const aclManager = getContract({
+      abi: IACLManager_ABI,
+      address: addresses.ACL_MANAGER,
+      client,
+    });
+    const isRiskAdmin = await aclManager.read.isRiskAdmin([addresses.RISK_STEWARD]);
+    if (!isRiskAdmin) {
+      throw new Error(
+        `SANITY_ACL_RISK_ADMIN: RISK_STEWARD ${addresses.RISK_STEWARD} is NOT RISK_ADMIN on ACL_MANAGER ${addresses.ACL_MANAGER} for ${addresses.POOL} on ${client.chain?.name}`,
+      );
+    }
+  }
+}
+
+describe('acl manager roles', () => {
+  Object.keys(addressBook).forEach((library) => {
+    const addresses = addressBook[library];
+    if (addresses.RISK_STEWARD) {
+      const client = getClient(addresses.CHAIN_ID);
+      it.concurrent(
+        `RISK_STEWARD should hold RISK_ADMIN_ROLE on ACL_MANAGER: ${client.chain!.name}`,
+        async () => {
+          return checkAclRiskAdmin(addresses);
         },
       );
     }

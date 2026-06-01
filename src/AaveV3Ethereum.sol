@@ -52,8 +52,8 @@ library AaveV3Ethereum {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xb27C52c7f84819e3157993489741cB60786aE330;
 
-  // https://etherscan.io/address/0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E
-  address internal constant RISK_STEWARD = 0xFCE597866Ffaf617EFdcA1C1Ad50eBCB16B5171E;
+  // https://etherscan.io/address/0x13a9CC64344b02bACC5AD9Cf38B5711F1B9ec3d4
+  address internal constant RISK_STEWARD = 0x13a9CC64344b02bACC5AD9Cf38B5711F1B9ec3d4;
 
   // https://etherscan.io/address/0xd7852E139a7097E119623de0751AE53a61efb442
   address internal constant DEBT_SWAP_ADAPTER = 0xd7852E139a7097E119623de0751AE53a61efb442;

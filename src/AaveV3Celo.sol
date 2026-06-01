@@ -71,8 +71,8 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x2b33073B94243304bCb4dfFA6b624afA5BAA414D
   address internal constant STATA_FACTORY = 0x2b33073B94243304bCb4dfFA6b624afA5BAA414D;
 
-  // https://celoscan.io/address/0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c
-  address internal constant RISK_STEWARD = 0xdb93e2712a8B36835078f8D28c70fCC95FD6d37c;
+  // https://celoscan.io/address/0xF73F2634b43344d86921DA3391d4EF0d5675Dd63
+  address internal constant RISK_STEWARD = 0xF73F2634b43344d86921DA3391d4EF0d5675Dd63;
 
   // https://celoscan.io/address/0x886b90e5d7DA22000f1652740D3EC51566AAbe40
   address internal constant DUST_BIN = 0x886b90e5d7DA22000f1652740D3EC51566AAbe40;

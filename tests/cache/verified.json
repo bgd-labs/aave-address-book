@@ -4634,6 +4634,15 @@
     },
     "0x78680A9AC74B093571e7a5b76636248F031D9bC2": {
       "name": "PoolInstance"
+    },
+    "0x13a9CC64344b02bACC5AD9Cf38B5711F1B9ec3d4": {
+      "name": "RiskSteward"
+    },
+    "0x5BA8d98feE911C2422EbEBFB6b774128924CcD68": {
+      "name": "RiskSteward"
+    },
+    "0x9Db34dC89D9BC56A5E2899c328D959eF9E072645": {
+      "name": "RiskSteward"
     }
   },
   "10": {
@@ -5851,6 +5860,9 @@
     },
     "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
       "name": "GnosisSafeProxy"
+    },
+    "0x33df99d9d6F69fbe2722920883609532EFc2541d": {
+      "name": "RiskSteward"
     }
   },
   "56": {
@@ -7113,6 +7125,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x42ca9E62C9B61d01Bb222d6E69f095eE98e61cE8": {
+      "name": "RiskSteward"
     }
   },
   "100": {
@@ -7784,6 +7799,9 @@
     },
     "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
       "name": "GnosisSafeProxy"
+    },
+    "0xd7f6CbA78FcE1799C29460765c97D7792eeD0756": {
+      "name": "RiskSteward"
     }
   },
   "137": {
@@ -9355,6 +9373,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x8F3537814430829Ca6760C92859F1A3cE235049A": {
+      "name": "RiskSteward"
     }
   },
   "146": {
@@ -9822,6 +9843,9 @@
     },
     "0x134189412686aC8789014796Ba8F727574B2785E": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xb9898C9F4711cBCaD882863302EF8300bFc9d6Dc": {
+      "name": "RiskSteward"
     }
   },
   "196": {
@@ -10094,6 +10118,9 @@
     },
     "0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F": {
       "name": "AaveV3ConfigEngine"
+    },
+    "0x7D0219C7037819B3F5d73E235C595189C3F8c224": {
+      "name": "RiskSteward"
     }
   },
   "324": {
@@ -11897,6 +11924,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442": {
+      "name": "RiskSteward"
     }
   },
   "8453": {
@@ -13177,6 +13207,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x494bcfd3937aBdebEF3D2c2eae1CE8A2Fb629032": {
+      "name": "RiskSteward"
     }
   },
   "9745": {
@@ -13632,6 +13665,9 @@
     },
     "0xe427FCbD54169136391cfEDf68E96abB13dA87A0": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D": {
+      "name": "RiskSteward"
     }
   },
   "42161": {
@@ -15377,6 +15413,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0xC5762E5A5c12886D4F6768549A9C605823d029E9": {
+      "name": "RiskSteward"
     }
   },
   "42220": {
@@ -15772,6 +15811,9 @@
     },
     "0x04a8D477eE202aDCE1682F5902e1160455205b12": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xF73F2634b43344d86921DA3391d4EF0d5675Dd63": {
+      "name": "RiskSteward"
     }
   },
   "43113": {
@@ -17165,6 +17207,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729": {
+      "name": "RiskSteward"
     }
   },
   "57073": {
@@ -17539,6 +17584,9 @@
     },
     "0xe88fb4EAf67Ea87BB458e24C94BEf0EB02b5F449": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xC1d38a1cdfb53Fce012A3A8CB42B64ddF60d4332": {
+      "name": "RiskSteward"
     }
   },
   "59144": {
@@ -18069,6 +18117,9 @@
     },
     "0x070B4C70797456cF97B6958863c894E38df4f345": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xE77aF99210AC55939e1ba0bFC6A9a20E1Da73b25": {
+      "name": "RiskSteward"
     }
   },
   "60808": {
@@ -18821,6 +18872,9 @@
     },
     "0xb65308a8F4cE57a72F13312CeCBaAf47601A574A": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0xc524A770ae73e57F0295aA48fd7605927a628B3b": {
+      "name": "RiskSteward"
     }
   }
 }

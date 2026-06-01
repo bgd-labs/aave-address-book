@@ -52,8 +52,8 @@ library AaveV3Arbitrum {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xC0442C25FE517ac37D6a0D485446307D97d24712;
 
-  // https://arbiscan.io/address/0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8
-  address internal constant RISK_STEWARD = 0x365d47ceD3D7Eb6a9bdB3814aA23cc06B2D33Ef8;
+  // https://arbiscan.io/address/0xC5762E5A5c12886D4F6768549A9C605823d029E9
+  address internal constant RISK_STEWARD = 0xC5762E5A5c12886D4F6768549A9C605823d029E9;
 
   // https://arbiscan.io/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;

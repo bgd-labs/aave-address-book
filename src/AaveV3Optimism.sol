@@ -52,8 +52,8 @@ library AaveV3Optimism {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xC0442C25FE517ac37D6a0D485446307D97d24712;
 
-  // https://optimistic.etherscan.io/address/0xa59262276dB8F997948fdc4a10cBc1448A375636
-  address internal constant RISK_STEWARD = 0xa59262276dB8F997948fdc4a10cBc1448A375636;
+  // https://optimistic.etherscan.io/address/0x33df99d9d6F69fbe2722920883609532EFc2541d
+  address internal constant RISK_STEWARD = 0x33df99d9d6F69fbe2722920883609532EFc2541d;
 
   // https://optimistic.etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;
