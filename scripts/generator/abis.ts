@@ -1,4 +1,4 @@
-import {ABI_INTERFACES, DOWNLOAD_ABI_INTERFACES} from '../configs/abis';
+import {ABI_INTERFACES, DOWNLOAD_ABI_INTERFACES} from 'scripts/configs/abis';
 
 export function generateABIImports() {
   const jsExports: string[] = [];

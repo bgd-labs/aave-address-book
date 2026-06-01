@@ -8,7 +8,7 @@
   "lib/aave-v4": {
     "branch": {
       "name": "main",
-      "rev": "af1f0f2ba323ac6fbaaee3abf6be060c78e22d35"
+      "rev": "e2fb6320d28ed9c6bba66d47f70fed59aef2f64c"
     }
   }
 }

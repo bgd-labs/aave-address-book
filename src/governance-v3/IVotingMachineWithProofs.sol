@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IDataWarehouse} from './IDataWarehouse.sol';
-import {IVotingStrategy} from './IVotingStrategy.sol';
+import {IDataWarehouse} from 'aave-address-book/governance-v3/IDataWarehouse.sol';
+import {IVotingStrategy} from 'aave-address-book/governance-v3/IVotingStrategy.sol';
 
 interface IVotingMachineWithProofs {
   /**

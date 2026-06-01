@@ -1,5 +1,5 @@
 import {ChainId} from '@bgd-labs/toolbox';
-import {PoolConfig} from '../types';
+import {PoolConfig} from 'scripts/configs/types';
 
 export const sonicProtoV3: PoolConfig = {
   name: 'Sonic',

@@ -1,8 +1,8 @@
 import {Address, Client, getContract, zeroAddress} from 'viem';
-import {PoolConfig} from '../../configs/types';
-import {bytes32toAddress, getImplementationStorageSlot} from '../utils';
-import {ILendingPoolAddressesProvider_ABI} from '../../../src/ts/abis/ILendingPoolAddressesProvider';
-import {mainnetAmmV2Pool} from '../../configs/pools/ethereum';
+import {PoolConfig} from 'scripts/configs/types';
+import {bytes32toAddress, getImplementationStorageSlot} from 'scripts/generator/utils';
+import {ILendingPoolAddressesProvider_ABI} from 'src/ts/abis/ILendingPoolAddressesProvider';
+import {mainnetAmmV2Pool} from 'scripts/configs/pools/ethereum';
 
 export async function fetchPoolAddresses(client: Client, poolConfig: PoolConfig) {
   const addressProviderContract = getContract({

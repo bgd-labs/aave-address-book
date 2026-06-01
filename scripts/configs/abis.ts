@@ -1,5 +1,5 @@
-import {governanceConfigMainnet} from './governance/ethereum';
-import {mainnetProtoV3Pool} from './pools/ethereum';
+import {governanceConfigMainnet} from 'scripts/configs/governance/ethereum';
+import {mainnetProtoV3Pool} from 'scripts/configs/pools/ethereum';
 
 /**
  * @dev These abis can be inferred directly from code as they exist as a dependency
@@ -18,7 +18,7 @@ export const ABI_INTERFACES = [
   'IExecutor',
   'ICrossChainController',
   'IWithGuardian',
-  'IRescuable',
+  'lib/aave-v3-origin/lib/solidity-utils/src/contracts/utils/interfaces/IRescuable.sol',
   'ILendingPool',
   'ILendingPoolAddressesProvider',
   'ILendingPoolConfigurator',

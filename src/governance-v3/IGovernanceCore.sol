@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {PayloadsControllerUtils} from './PayloadsControllerUtils.sol';
-import {IVotingMachineWithProofs} from './IVotingMachineWithProofs.sol';
-import {IGovernancePowerStrategy} from './IGovernancePowerStrategy.sol';
+import {PayloadsControllerUtils} from 'aave-address-book/governance-v3/PayloadsControllerUtils.sol';
+import {IVotingMachineWithProofs} from 'aave-address-book/governance-v3/IVotingMachineWithProofs.sol';
+import {IGovernancePowerStrategy} from 'aave-address-book/governance-v3/IGovernancePowerStrategy.sol';
 
 interface IGovernanceCore {
   /**

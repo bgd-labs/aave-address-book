@@ -1,6 +1,6 @@
 import {writeFileSync} from 'fs';
 import {Hex, getContract, Address, Client} from 'viem';
-import {Addresses, GovernanceConfig} from '../configs/types';
+import {Addresses, GovernanceConfig} from 'scripts/configs/types';
 import {
   extractTypes,
   generateJsConstants,
@@ -8,12 +8,12 @@ import {
   prefixWithGeneratedWarning,
   prefixWithPragma,
   wrapIntoSolidityLibrary,
-} from './utils';
-import {IGovernanceCore_ABI} from '../../src/ts/abis/IGovernanceCore';
-import {IPayloadsControllerCore_ABI} from '../../src/ts/abis/IPayloadsControllerCore';
-import {IVotingStrategy_ABI} from '../../src/ts/abis/IVotingStrategy';
-import {IVotingMachineWithProofs_ABI} from '../../src/ts/abis/IVotingMachineWithProofs';
-import {getClient} from '../clients';
+} from 'scripts/generator/utils';
+import {IGovernanceCore_ABI} from 'src/ts/abis/IGovernanceCore';
+import {IPayloadsControllerCore_ABI} from 'src/ts/abis/IPayloadsControllerCore';
+import {IVotingStrategy_ABI} from 'src/ts/abis/IVotingStrategy';
+import {IVotingMachineWithProofs_ABI} from 'src/ts/abis/IVotingMachineWithProofs';
+import {getClient} from 'scripts/clients';
 
 type ExecutorsV3 = {
   EXECUTOR_LVL_1: Hex;

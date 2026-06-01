@@ -1,13 +1,13 @@
 import {Client, getContract} from 'viem';
-import {IAaveOracle_ABI} from '../../../src/ts/abis/IAaveOracle';
-import {IPool_ABI} from '../../../src/ts/abis/IPool';
-import {IStaticATokenFactory_ABI} from '../../../src/ts/abis/IStaticATokenFactory';
-import {IStataTokenFactory_ABI} from '../../../src/ts/abis/IStataTokenFactory';
-import {PoolConfig, ReserveData} from '../../configs/types';
-import {IERC20Detailed_ABI} from '../../../src/ts/abis/IERC20Detailed';
-import {fetchPoolAddresses} from './fetchPoolAddresses';
-import {bytes32toAddress, getImplementationStorageSlot, addressOrZero} from '../utils';
-import {IAToken_ABI} from '../../../src/ts/abis/IAToken';
+import {IAaveOracle_ABI} from 'src/ts/abis/IAaveOracle';
+import {IPool_ABI} from 'src/ts/abis/IPool';
+import {IStaticATokenFactory_ABI} from 'src/ts/abis/IStaticATokenFactory';
+import {IStataTokenFactory_ABI} from 'src/ts/abis/IStataTokenFactory';
+import {PoolConfig, ReserveData} from 'scripts/configs/types';
+import {IERC20Detailed_ABI} from 'src/ts/abis/IERC20Detailed';
+import {fetchPoolAddresses} from 'scripts/generator/protocol-v3-generator/fetchPoolAddresses';
+import {bytes32toAddress, getImplementationStorageSlot, addressOrZero} from 'scripts/generator/utils';
+import {IAToken_ABI} from 'src/ts/abis/IAToken';
 
 export async function fetchTokens(
   client: Client,

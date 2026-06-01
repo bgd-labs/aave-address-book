@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {ICrossChainController} from './ICrossChainController.sol';
+import {ICrossChainController} from 'aave-address-book/common/ICrossChainController.sol';
 
 /**
  * @title IBaseAdapter

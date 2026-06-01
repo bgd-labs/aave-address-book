@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IBaseReceiverPortal} from './IBaseReceiverPortal.sol';
-import {IVotingMachineWithProofs} from './IVotingMachineWithProofs.sol';
+import {IBaseReceiverPortal} from 'aave-address-book/governance-v3/IBaseReceiverPortal.sol';
+import {IVotingMachineWithProofs} from 'aave-address-book/governance-v3/IVotingMachineWithProofs.sol';
 
 /**
  * @title IVotingPortal

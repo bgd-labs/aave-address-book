@@ -1,6 +1,6 @@
 import {Hex, zeroAddress} from 'viem';
-import {ReserveData, UmbrellaStakeData} from '../configs/types';
-import {generateSolidityConstants, wrapIntoSolidityLibrary, removeNetworkAbbreviation} from './utils';
+import {ReserveData, UmbrellaStakeData} from 'scripts/configs/types';
+import {generateSolidityConstants, wrapIntoSolidityLibrary, removeNetworkAbbreviation} from 'scripts/generator/utils';
 
 /**
  * As symbols are used as variable name in Solidity and Javascript there are certain characters that are not allowed and should be replaced.

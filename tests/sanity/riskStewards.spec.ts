@@ -1,9 +1,9 @@
 import {describe, it} from 'vitest';
-import * as addressBook from '../../src/ts/AaveAddressBook';
+import * as addressBook from 'src/ts/AaveAddressBook';
 import {getContract} from 'viem';
-import {getClient} from '../../scripts/clients';
-import {getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel} from '../utils';
-import {IRiskSteward_ABI} from '../../src/ts/abis/IRiskSteward';
+import {getClient} from 'scripts/clients';
+import {getGovernance, getWhiteLabelGovernance, isPoolWhiteLabel} from 'tests/utils';
+import {IRiskSteward_ABI} from 'src/ts/abis/IRiskSteward';
 
 async function check(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);

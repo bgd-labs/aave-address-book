@@ -1,5 +1,5 @@
 import {ChainId} from '@bgd-labs/toolbox';
-import {NetworkAddresses} from '../types';
+import {NetworkAddresses} from 'scripts/configs/types';
 
 export const celoAddresses: NetworkAddresses = {
   name: 'Celo',
@@ -10,5 +10,6 @@ export const celoAddresses: NetworkAddresses = {
     PROTOCOL_GUARDIAN: '0x88E7aB6ee481Cf92e548c0e1169F824F99142c85',
     AFC_SAFE: '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa',
     MASIV_SAFE: '0xdef1FA4CEfe67365ba046a7C630D6B885298E210',
+    ROBOT_GUARDIAN: '0x441E4053fDDF1e1a77a39d00309Af389096d4124',
   },
 };
