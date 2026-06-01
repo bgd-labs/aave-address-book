@@ -4303,6 +4303,20 @@
       }
     },
     {
+      "chainId": 137,
+      "address": "0x79261231698B26Ed9085b59ae89d59843Ae925a8",
+      "name": "Wrapped Aave Polygon USDCn",
+      "decimals": 6,
+      "symbol": "waPolUSDCn",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+        "underlyingAToken": "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD"
+      }
+    },
+    {
       "chainId": 43114,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Avalanche DAI",
@@ -10624,6 +10638,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 173 },
-  "timestamp": "2026-05-22T00:40:33.580Z"
+  "version": { "major": 3, "minor": 0, "patch": 174 },
+  "timestamp": "2026-06-01T00:45:42.099Z"
 }
