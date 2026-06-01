@@ -1,0 +1,66 @@
+src/ts/abis/IACLManager.ts
+  s_af9282658e5467::t_ee0e44aec71725 1-382
+src/ts/abis/IDataWarehouse.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IExecutorWithTimelock.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IGovernancePowerStrategy.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IVotingStrategy.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IWithGuardian.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/index.ts
+  s_af9282658e5467::t_5868fdaab635cb 14
+src/ts/abis/ILendingPoolAddressesProvider.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IVotingMachineWithProofs.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IVotingPortal.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/ICrossChainController.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IAaveV3ConfigEngine.ts
+  s_af9282658e5467::t_ee0e44aec71725 1,146-150,598-601
+src/ts/abis/IStakeToken.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/ILendingPool.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+tests/sanity/riskStewards.spec.ts
+  s_af9282658e5467::t_9e9af255263d02 98-100,103-130
+  s_af9282658e5467::t_4d6ec9b3e5f6e0 7
+  h_739c25e72c37fb 101-102
+scripts/configs/abis.ts
+  s_af9282658e5467::t_2b03b604f23028 22
+src/ts/abis/IExecutor.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IRescuable.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/ILendingPoolConfigurator.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/IAToken.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+src/ts/abis/ICollector.ts
+  s_af9282658e5467::t_ee0e44aec71725 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "c722cc72991e4a9c54278711bd8294ce044ac831",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_af9282658e5467": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c0f263e8-42b3-40e4-ba72-b6663d5fc58b",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
