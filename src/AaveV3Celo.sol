@@ -62,8 +62,8 @@ library AaveV3Celo {
   // https://celoscan.io/address/0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x3A1Ea5fB3098b9767E0e85D63E28A5c0EAa44099;
 
-  // https://celoscan.io/address/0x04a8D477eE202aDCE1682F5902e1160455205b12
-  address internal constant UI_POOL_DATA_PROVIDER = 0x04a8D477eE202aDCE1682F5902e1160455205b12;
+  // https://celoscan.io/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
 
   // https://celoscan.io/address/0xB91DA65093d54a1a7cb0fe684860F568A5E57123
   address internal constant WALLET_BALANCE_PROVIDER = 0xB91DA65093d54a1a7cb0fe684860F568A5E57123;

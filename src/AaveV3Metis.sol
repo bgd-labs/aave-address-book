@@ -71,8 +71,8 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xE92cd6164CE7DC68e740765BC1f2a091B6CBc3e4;
 
-  // https://explorer.metis.io/address/0xE970Db949A75702bB5A280125742078cF39CE568
-  address internal constant UI_POOL_DATA_PROVIDER = 0xE970Db949A75702bB5A280125742078cF39CE568;
+  // https://explorer.metis.io/address/0x5c5228aC8BC1528482514aF3e27E692495148717
+  address internal constant UI_POOL_DATA_PROVIDER = 0x5c5228aC8BC1528482514aF3e27E692495148717;
 
   // https://explorer.metis.io/address/0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b
   address internal constant WALLET_BALANCE_PROVIDER = 0x1df710eb1E2FD9C21494aF2BFb1F210a4185885b;

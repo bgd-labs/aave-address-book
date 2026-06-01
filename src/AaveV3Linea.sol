@@ -65,8 +65,8 @@ library AaveV3Linea {
   // https://lineascan.build/address/0x117684358D990E42Eb1649E7e8C4691951dc1E71
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x117684358D990E42Eb1649E7e8C4691951dc1E71;
 
-  // https://lineascan.build/address/0x070B4C70797456cF97B6958863c894E38df4f345
-  address internal constant UI_POOL_DATA_PROVIDER = 0x070B4C70797456cF97B6958863c894E38df4f345;
+  // https://lineascan.build/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
 
   // https://lineascan.build/address/0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D
   address internal constant WALLET_BALANCE_PROVIDER = 0xff75B6da14FfbbfD355Daf7a2731456b3562Ba6D;

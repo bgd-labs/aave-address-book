@@ -62,8 +62,8 @@ library AaveV3Mantle {
   // https://mantlescan.xyz/address/0x04EEC4892Ec41A056C66787211aE81A24460fF02
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x04EEC4892Ec41A056C66787211aE81A24460fF02;
 
-  // https://mantlescan.xyz/address/0x15196D30Bc37d2fc5C718ffCd9d7687D76f3Ad1f
-  address internal constant UI_POOL_DATA_PROVIDER = 0x15196D30Bc37d2fc5C718ffCd9d7687D76f3Ad1f;
+  // https://mantlescan.xyz/address/0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763
+  address internal constant UI_POOL_DATA_PROVIDER = 0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763;
 
   // https://mantlescan.xyz/address/0x91855bbfE5F19c245C3dA9B9fC954394a6f9da8f
   address internal constant WALLET_BALANCE_PROVIDER = 0x91855bbfE5F19c245C3dA9B9fC954394a6f9da8f;
