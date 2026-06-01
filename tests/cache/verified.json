@@ -4643,6 +4643,9 @@
     },
     "0x9Db34dC89D9BC56A5E2899c328D959eF9E072645": {
       "name": "RiskSteward"
+    },
+    "0x2dAd8162A989cd99D673dE4425Bb2298Db1E1aA2": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "10": {
@@ -5863,6 +5866,9 @@
     },
     "0x33df99d9d6F69fbe2722920883609532EFc2541d": {
       "name": "RiskSteward"
+    },
+    "0x68100bD5345eA474D93577127C11F39FF8463e93": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "56": {
@@ -7128,6 +7134,9 @@
     },
     "0x42ca9E62C9B61d01Bb222d6E69f095eE98e61cE8": {
       "name": "RiskSteward"
+    },
+    "0x68100bD5345eA474D93577127C11F39FF8463e93": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "100": {
@@ -7802,6 +7811,9 @@
     },
     "0xd7f6CbA78FcE1799C29460765c97D7792eeD0756": {
       "name": "RiskSteward"
+    },
+    "0x0C6BC4a12039788be08F87e87Cff87FEDbd1D386": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "137": {
@@ -9376,6 +9388,9 @@
     },
     "0x8F3537814430829Ca6760C92859F1A3cE235049A": {
       "name": "RiskSteward"
+    },
+    "0x66E1aBdb06e7363a618D65a910c540dfED23754f": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "146": {
@@ -9846,6 +9861,9 @@
     },
     "0xb9898C9F4711cBCaD882863302EF8300bFc9d6Dc": {
       "name": "RiskSteward"
+    },
+    "0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "196": {
@@ -10121,6 +10139,9 @@
     },
     "0x7D0219C7037819B3F5d73E235C595189C3F8c224": {
       "name": "RiskSteward"
+    },
+    "0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "324": {
@@ -10965,6 +10986,9 @@
     },
     "0x6A7192c55E9298874e49675A63D5ebb11eD99a66": {
       "name": "AaveV3ConfigEngine"
+    },
+    "0x5c5228aC8BC1528482514aF3e27E692495148717": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "1101": {
@@ -11380,6 +11404,9 @@
     },
     "0x7CB7fdeEB5E71f322F8E39Be67959C32a6A3aAA3": {
       "name": "AaveV3ConfigEngine"
+    },
+    "0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "4326": {
@@ -11927,6 +11954,9 @@
     },
     "0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442": {
       "name": "RiskSteward"
+    },
+    "0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "8453": {
@@ -13210,6 +13240,9 @@
     },
     "0x494bcfd3937aBdebEF3D2c2eae1CE8A2Fb629032": {
       "name": "RiskSteward"
+    },
+    "0x0C6BC4a12039788be08F87e87Cff87FEDbd1D386": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "9745": {
@@ -13668,6 +13701,9 @@
     },
     "0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D": {
       "name": "RiskSteward"
+    },
+    "0x2E549104c516b8657A7D888494DfbAbD7C70b464": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "42161": {
@@ -15416,6 +15452,9 @@
     },
     "0xC5762E5A5c12886D4F6768549A9C605823d029E9": {
       "name": "RiskSteward"
+    },
+    "0x91E04cf78e53aEBe609e8a7f2003e7EECD743F2B": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "42220": {
@@ -15814,6 +15853,9 @@
     },
     "0xF73F2634b43344d86921DA3391d4EF0d5675Dd63": {
       "name": "RiskSteward"
+    },
+    "0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "43113": {
@@ -17210,6 +17252,9 @@
     },
     "0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729": {
       "name": "RiskSteward"
+    },
+    "0xFBa4Df643205c5400BC3e05a1E67E0dFaEeeb41F": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "57073": {
@@ -17587,6 +17632,9 @@
     },
     "0xC1d38a1cdfb53Fce012A3A8CB42B64ddF60d4332": {
       "name": "RiskSteward"
+    },
+    "0x2E549104c516b8657A7D888494DfbAbD7C70b464": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "59144": {
@@ -18120,6 +18168,9 @@
     },
     "0xE77aF99210AC55939e1ba0bFC6A9a20E1Da73b25": {
       "name": "RiskSteward"
+    },
+    "0xc851e6147dcE6A469CC33BE3121b6B2D4CaD2763": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "60808": {
@@ -18875,6 +18926,9 @@
     },
     "0xc524A770ae73e57F0295aA48fd7605927a628B3b": {
       "name": "RiskSteward"
+    },
+    "0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034": {
+      "name": "UiPoolDataProviderV3"
     }
   }
 }

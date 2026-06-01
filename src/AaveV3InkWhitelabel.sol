@@ -68,8 +68,8 @@ library AaveV3InkWhitelabel {
   // https://explorer.inkonchain.com/address/0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x25Ec457d1778b0E5316e7f38f3c22baF413F1A8C;
 
-  // https://explorer.inkonchain.com/address/0xe88fb4EAf67Ea87BB458e24C94BEf0EB02b5F449
-  address internal constant UI_POOL_DATA_PROVIDER = 0xe88fb4EAf67Ea87BB458e24C94BEf0EB02b5F449;
+  // https://explorer.inkonchain.com/address/0x2E549104c516b8657A7D888494DfbAbD7C70b464
+  address internal constant UI_POOL_DATA_PROVIDER = 0x2E549104c516b8657A7D888494DfbAbD7C70b464;
 
   // https://explorer.inkonchain.com/address/0xB1532b76D054c9F9E61b25c4d91f69B4133E4671
   address internal constant WALLET_BALANCE_PROVIDER = 0xB1532b76D054c9F9E61b25c4d91f69B4133E4671;

@@ -68,8 +68,8 @@ library AaveV3BaseSepolia {
   // https://sepolia.basescan.org/address/0xDB1412acf288D5bE057f8e90fd7b1BF4f84bB3B1
   address internal constant UI_INCENTIVE_DATA_PROVIDER = 0xDB1412acf288D5bE057f8e90fd7b1BF4f84bB3B1;
 
-  // https://sepolia.basescan.org/address/0x6a9D64f93DB660EaCB2b6E9424792c630CdA87d8
-  address internal constant UI_POOL_DATA_PROVIDER = 0x6a9D64f93DB660EaCB2b6E9424792c630CdA87d8;
+  // https://sepolia.basescan.org/address/0x3cB7B00B6C09B71998124196691e8bF2694De863
+  address internal constant UI_POOL_DATA_PROVIDER = 0x3cB7B00B6C09B71998124196691e8bF2694De863;
 
   // https://sepolia.basescan.org/address/0x2c4D1F4EC7F4FfA09a5E1C9e74fD3A10f21Bd811
   address internal constant WALLET_BALANCE_PROVIDER = 0x2c4D1F4EC7F4FfA09a5E1C9e74fD3A10f21Bd811;
