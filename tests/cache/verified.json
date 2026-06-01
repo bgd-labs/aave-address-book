@@ -9819,6 +9819,9 @@
     },
     "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
       "name": "GnosisSafeProxy"
+    },
+    "0x134189412686aC8789014796Ba8F727574B2785E": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "196": {
@@ -13626,6 +13629,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0xe427FCbD54169136391cfEDf68E96abB13dA87A0": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "42161": {
@@ -15763,6 +15769,9 @@
     },
     "0x441E4053fDDF1e1a77a39d00309Af389096d4124": {
       "name": "GnosisSafeProxy"
+    },
+    "0x04a8D477eE202aDCE1682F5902e1160455205b12": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "43113": {
@@ -18054,6 +18063,12 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x4ad4a620EEaE490d5872F69845104fAeFB67EFc4": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0x070B4C70797456cF97B6958863c894E38df4f345": {
+      "name": "UiPoolDataProviderV3"
     }
   },
   "60808": {
