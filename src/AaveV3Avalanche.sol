@@ -52,8 +52,8 @@ library AaveV3Avalanche {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xC0442C25FE517ac37D6a0D485446307D97d24712;
 
-  // https://snowscan.xyz/address/0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2
-  address internal constant RISK_STEWARD = 0x23AceD103f5E22bD22B9272c82f29C0E51abC5c2;
+  // https://snowscan.xyz/address/0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729
+  address internal constant RISK_STEWARD = 0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729;
 
   // https://snowscan.xyz/address/0x57218F3aB422A39115951c3Eb06881a7A719DfdD
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x57218F3aB422A39115951c3Eb06881a7A719DfdD;

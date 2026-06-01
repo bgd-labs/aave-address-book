@@ -77,8 +77,8 @@ library AaveV3Mantle {
   // https://mantlescan.xyz/address/0xfd4Eb6c531A34EC3A74C99892C5511fe6d126F91
   address internal constant STATA_FACTORY = 0xfd4Eb6c531A34EC3A74C99892C5511fe6d126F91;
 
-  // https://mantlescan.xyz/address/0xa35358159F42E11C5689C68f181a71d51BB22de3
-  address internal constant RISK_STEWARD = 0xa35358159F42E11C5689C68f181a71d51BB22de3;
+  // https://mantlescan.xyz/address/0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442
+  address internal constant RISK_STEWARD = 0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442;
 
   // https://mantlescan.xyz/address/0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601
   address internal constant DUST_BIN = 0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601;

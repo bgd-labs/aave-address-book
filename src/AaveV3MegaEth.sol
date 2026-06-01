@@ -77,8 +77,8 @@ library AaveV3MegaEth {
   // https://mega.etherscan.io/address/0x593B71Fb93CDAC960E093C59eDDE323BFc165A48
   address internal constant STATA_FACTORY = 0x593B71Fb93CDAC960E093C59eDDE323BFc165A48;
 
-  // https://mega.etherscan.io/address/0xbcC2Cf1fA3bE94B16061d51970628a87c7Cd5160
-  address internal constant RISK_STEWARD = 0xbcC2Cf1fA3bE94B16061d51970628a87c7Cd5160;
+  // https://mega.etherscan.io/address/0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442
+  address internal constant RISK_STEWARD = 0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442;
 
   // https://mega.etherscan.io/address/0x8d1dac82259FdE48D8086CC42cAa98E825C5B643
   address internal constant DUST_BIN = 0x8d1dac82259FdE48D8086CC42cAa98E825C5B643;

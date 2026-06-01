@@ -52,8 +52,8 @@ library AaveV3Polygon {
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xC0442C25FE517ac37D6a0D485446307D97d24712;
 
-  // https://polygonscan.com/address/0x1e0A5985D58B45C38598e293189aa5228054629b
-  address internal constant RISK_STEWARD = 0x1e0A5985D58B45C38598e293189aa5228054629b;
+  // https://polygonscan.com/address/0x8F3537814430829Ca6760C92859F1A3cE235049A
+  address internal constant RISK_STEWARD = 0x8F3537814430829Ca6760C92859F1A3cE235049A;
 
   // https://polygonscan.com/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
   address internal constant DEBT_SWAP_ADAPTER = 0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034;

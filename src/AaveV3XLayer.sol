@@ -55,8 +55,8 @@ library AaveV3XLayer {
   // https://www.oklink.com/xlayer/address/0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F
   address internal constant CONFIG_ENGINE = 0x29A9b0a13c81d59f13BA0f39DBDCAA1AB2adc95F;
 
-  // https://www.oklink.com/xlayer/address/0xb5970A521073ADE4836dD4A24854Eb387a67c5C8
-  address internal constant RISK_STEWARD = 0xb5970A521073ADE4836dD4A24854Eb387a67c5C8;
+  // https://www.oklink.com/xlayer/address/0x7D0219C7037819B3F5d73E235C595189C3F8c224
+  address internal constant RISK_STEWARD = 0x7D0219C7037819B3F5d73E235C595189C3F8c224;
 
   // https://www.oklink.com/xlayer/address/0x0f2b21fd713379bb406bE2eA956EaFe55197DE9C
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
