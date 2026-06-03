@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.52.7](https://github.com/aave-dao/aave-address-book/compare/v4.52.6...v4.52.7) (2026-06-03)
+
+
+### Bug Fixes
+
+* **deps:** bump lib/aave-v3-origin from `4fbd744` to `d7919c0` ([#1412](https://github.com/aave-dao/aave-address-book/issues/1412)) ([f8bc52e](https://github.com/aave-dao/aave-address-book/commit/f8bc52ee0fd86a74fe32eebf383b801dc986931b))
+* **deps:** bump lib/aave-v4 from `e2fb632` to `1e8de86` ([#1413](https://github.com/aave-dao/aave-address-book/issues/1413)) ([06ac9ac](https://github.com/aave-dao/aave-address-book/commit/06ac9ac07148877ade39c6301e4a0c37dbb78454))
+
 ## [4.52.6](https://github.com/aave-dao/aave-address-book/compare/v4.52.5...v4.52.6) (2026-06-03)
 
 
