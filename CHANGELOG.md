@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.52.9](https://github.com/aave-dao/aave-address-book/compare/v4.52.8...v4.52.9) (2026-06-09)
+
+
+### Bug Fixes
+
+* reenable megaeth on verification ([#1417](https://github.com/aave-dao/aave-address-book/issues/1417)) ([182bb0b](https://github.com/aave-dao/aave-address-book/commit/182bb0bea42f0682bc3018d0acf1b42af7caa9d0))
+
 ## [4.52.8](https://github.com/aave-dao/aave-address-book/compare/v4.52.7...v4.52.8) (2026-06-06)
 
 
