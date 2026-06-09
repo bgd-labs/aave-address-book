@@ -11502,6 +11502,141 @@
     },
     "0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef": {
       "name": "SafeProxy"
+    },
+    "0xc74c6a98593214934e6F9C88C43c3A696C44da4D": {
+      "name": "L2PoolInstance"
+    },
+    "0xFF42Ce30054dcE7dc7C1282a9a497aa58eaBCe99": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x34CA0A24E0b7cbCEB77088AE539f57BA0650fC05": {
+      "name": "ATokenInstance"
+    },
+    "0xfF01493C22208de3A89FE9CaFBDAE103acc72AF8": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442": {
+      "name": "RiskSteward"
+    },
+    "0x4200000000000000000000000000000000000006": {
+      "name": "WETH"
+    },
+    "0xa31E6b433382062e8A1dA41485f7b234D97c3f4d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x09ADCCC7AF2aBD356c18A4CadF2e5cC250f300E9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x5cC4f782cFe249286476A7eFfD9D7bd215768194": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0xcA4e254D95637DE95E2a2F79244b03380d697feD": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0889d59eA7178ee5B71DA01949a5cB42aaFBe337": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x15B550784928C5b1A93849CA5d6caA18B2545B6d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xc6E3007B597f6F5a6330d43053D1EF73cCbbE721": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xE2283E01a667b512c340f19B499d86fbc885D5Ef": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB951225133b5eed3D88645E4Bb1360136FF70D9a": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xAe95ff42e16468AB1DfD405c9533C9b67d87d66A": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7": {
+      "name": "ERC1967Proxy"
+    },
+    "0x5dF82810CB4B8f3e0Da3c031cCc9208ee9cF9500": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6B408d6c479C304794abC60a4693A3AD2D3c2D0D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xe5448B8318493c6e3F72E21e8BDB8242d3299FB5": {
+      "name": "OneUSDFixedAdapter"
+    },
+    "0x601aC63637933D88285A025C685AC4e9a92a98dA": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xaD2de503b5c723371d6B38A5224A2E12E103DfB8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x259A9Cd7628f6D15ef384887dd90bb7A0283fEf9": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x376397e34eA968e79DC6F629E6210ba25311a3ce": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x4Fc44BE15e9B6E30C1E774E2C87A21D3E8b5403F": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xb8578af311353b44B14bb4480EBB4DE608EC7e1B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd7B71D855bBAcd3f11F623400bc870AB3448AfF7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6356b92Bc636CCe722e0F53DDc24a86baE64216E": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x09601A65e7de7BC8A19813D263dD9E98bFdC3c57": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x03C99Cce547b1c2E74442b73E6f588A66D19597e": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1505f48Bd4db0fF8B28817D2C0Fb95Abcb8eEbbc": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd7Da71D3acf07C604A925799B0b48E2Ec607584D": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34": {
+      "name": "USDeOFT"
+    },
+    "0x78f2cB75D664d6f71433174056c25A5958B4016F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7dD785D88A64dd7db6b46DaD4d2e0728CC65e009": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6B00ffb3852E87c13b7f56660a7dfF64191180B3": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6": {
+      "name": "FlashLoanLogic"
+    },
+    "0x52Da0ce88202D1542543598D1e1e27F0d344726A": {
+      "name": "BorrowLogic"
+    },
+    "0x96D5686812e33Ab509ECCDb38C89d15607B2a413": {
+      "name": "LiquidationLogic"
+    },
+    "0xD70593841C57cbaA04957cc3EAcE95708e48853b": {
+      "name": "PoolLogic"
+    },
+    "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
+      "name": "SupplyLogic"
+    },
+    "0xA25d9f14CFA40d3227ED9a48B124667dDFfCFdDD": {
+      "name": "AaveV3ConfigEngine"
     }
   },
   "5000": {
@@ -17635,6 +17770,27 @@
     },
     "0x2E549104c516b8657A7D888494DfbAbD7C70b464": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0x6a056dA055C616cd89dBcd0dC4b3f4E0F6162eb6": {
+      "name": "L2PoolInstance"
+    },
+    "0xFF42Ce30054dcE7dc7C1282a9a497aa58eaBCe99": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6": {
+      "name": "FlashLoanLogic"
+    },
+    "0x52Da0ce88202D1542543598D1e1e27F0d344726A": {
+      "name": "BorrowLogic"
+    },
+    "0x96D5686812e33Ab509ECCDb38C89d15607B2a413": {
+      "name": "LiquidationLogic"
+    },
+    "0xD70593841C57cbaA04957cc3EAcE95708e48853b": {
+      "name": "PoolLogic"
+    },
+    "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
+      "name": "SupplyLogic"
     }
   },
   "59144": {
