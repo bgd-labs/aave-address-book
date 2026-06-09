@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.53.0](https://github.com/aave-dao/aave-address-book/compare/v4.52.9...v4.53.0) (2026-06-09)
+
+
+### Features
+
+* add budget incentive and Merkl distribution safes ([#1409](https://github.com/aave-dao/aave-address-book/issues/1409)) ([abec305](https://github.com/aave-dao/aave-address-book/commit/abec3058b81ff38e1796bd395b40a5ace6dc697f))
+
 ## [4.52.9](https://github.com/aave-dao/aave-address-book/compare/v4.52.8...v4.52.9) (2026-06-09)
 
 
