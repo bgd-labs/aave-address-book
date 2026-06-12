@@ -1,5 +1,5 @@
-import { ChainId } from '@bgd-labs/toolbox';
-import { NetworkAddresses } from 'scripts/configs/types';
+import {ChainId} from '@aave-dao/toolbox';
+import {NetworkAddresses} from 'scripts/configs/types';
 
 export const inkWhiteLabelAddresses: NetworkAddresses = {
   name: 'InkWhitelabel',
@@ -31,6 +31,6 @@ export const inkSepoliaAddresses: NetworkAddresses = {
   name: 'InkSepolia',
   chainId: ChainId.ink_sepolia,
   addresses: {
-    TRANSPARENT_PROXY_FACTORY: '0xd8247C7926841337E8adf9fD9E87026992C45062'
+    TRANSPARENT_PROXY_FACTORY: '0xd8247C7926841337E8adf9fD9E87026992C45062',
   },
 };

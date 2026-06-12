@@ -1,5 +1,5 @@
-import { ChainId } from '@bgd-labs/toolbox';
-import { UmbrellaConfig } from 'scripts/configs/types';
+import {ChainId} from '@aave-dao/toolbox';
+import {UmbrellaConfig} from 'scripts/configs/types';
 
 export const umbrellaBaseSepoliaConfig: UmbrellaConfig = {
   name: 'BaseSepolia',
@@ -9,5 +9,5 @@ export const umbrellaBaseSepoliaConfig: UmbrellaConfig = {
     UMBRELLA_BATCH_HELPER: '0xcDfb3f2d924b02A78a51F43BC34610dC62ADCEC3',
     DATA_AGGREGATION_HELPER: '0x139FAF11d09605d840cBd1b1FBE4Adf5FEac70a2',
     PERMISSIONED_PAYLOADS_CONTROLLER: '0x9F9c7F84C043Fe3366E8567352FB6ab352222b7d',
-  }
+  },
 };

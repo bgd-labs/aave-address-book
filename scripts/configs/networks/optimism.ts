@@ -1,5 +1,5 @@
 import {Hex} from 'viem';
-import {ChainId} from '@bgd-labs/toolbox';
+import {ChainId} from '@aave-dao/toolbox';
 import {NetworkAddresses} from 'scripts/configs/types';
 
 export const optimismAddresses: NetworkAddresses<{

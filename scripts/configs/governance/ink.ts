@@ -1,5 +1,5 @@
-import { GovernanceConfig } from "scripts/configs/types";
-import { ChainId } from '@bgd-labs/toolbox';
+import {GovernanceConfig} from 'scripts/configs/types';
+import {ChainId} from '@aave-dao/toolbox';
 
 export const governanceConfigInkWhiteLabel: GovernanceConfig = {
   name: 'InkWhitelabel',

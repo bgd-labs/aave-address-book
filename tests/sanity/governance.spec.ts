@@ -6,7 +6,7 @@ import {IOwnable_ABI} from 'src/ts/abis/IOwnable';
 import {IWithGuardian_ABI} from 'src/ts/abis/IWithGuardian';
 import {IPayloadsControllerCore_ABI} from 'src/ts/abis/IPayloadsControllerCore';
 import {IVotingMachineWithProofs_ABI} from 'src/ts/abis/IVotingMachineWithProofs';
-import { ChainId } from '@bgd-labs/toolbox';
+import {ChainId} from '@aave-dao/toolbox';
 
 const ownableWithGuardianAbi = [...IOwnable_ABI, ...IWithGuardian_ABI] as const;
 
@@ -31,7 +31,8 @@ const clEmergencyOracleGetterAbi = [
 ] as const;
 
 function assertEq(actual: string, expected: string, context: string) {
-  if (actual !== expected) throw new Error(`SANITY_GOVERNANCE: ${context}: ${actual} != ${expected}`);
+  if (actual !== expected)
+    throw new Error(`SANITY_GOVERNANCE: ${context}: ${actual} != ${expected}`);
 }
 
 async function checkOwner(address: Address, expected: Address, label: string, client: Client) {
@@ -60,7 +61,8 @@ async function checkOwnerAndGuardian(
 ) {
   const contract = getContract({abi: ownableWithGuardianAbi, address, client});
   const [owner, guardian] = await Promise.all([contract.read.owner(), contract.read.guardian()]);
-  if (expectedOwner) assertEq(owner, expectedOwner, `${label} owner mismatch on ${client.chain?.name}`);
+  if (expectedOwner)
+    assertEq(owner, expectedOwner, `${label} owner mismatch on ${client.chain?.name}`);
   if (expectedGuardian)
     assertEq(guardian, expectedGuardian, `${label} guardian mismatch on ${client.chain?.name}`);
 }
@@ -82,7 +84,12 @@ async function checkStandardGovernance(addresses: Record<string, any>) {
           'PAYLOADS_CONTROLLER',
           client,
         );
-        await checkCrossChainController(addresses.PAYLOADS_CONTROLLER, addresses.CROSS_CHAIN_CONTROLLER, 'PAYLOADS_CONTROLLER', client);
+        await checkCrossChainController(
+          addresses.PAYLOADS_CONTROLLER,
+          addresses.CROSS_CHAIN_CONTROLLER,
+          'PAYLOADS_CONTROLLER',
+          client,
+        );
 
         const pc = getContract({
           abi: IPayloadsControllerCore_ABI,
@@ -112,12 +119,18 @@ async function checkStandardGovernance(addresses: Record<string, any>) {
   // Executors: owner should be PayloadsController
   for (const executorKey of ['EXECUTOR_LVL_1', 'EXECUTOR_LVL_2'] as const) {
     if (addresses[executorKey] && addresses.PAYLOADS_CONTROLLER) {
-      checks.push(checkOwner(addresses[executorKey], addresses.PAYLOADS_CONTROLLER, executorKey, client));
+      checks.push(
+        checkOwner(addresses[executorKey], addresses.PAYLOADS_CONTROLLER, executorKey, client),
+      );
     }
   }
 
   // CrossChainController: owner, guardian, CL emergency oracle
-  if (addresses.CROSS_CHAIN_CONTROLLER && client.chain?.id !== ChainId.metis && client.chain?.id !== ChainId.scroll) {
+  if (
+    addresses.CROSS_CHAIN_CONTROLLER &&
+    client.chain?.id !== ChainId.metis &&
+    client.chain?.id !== ChainId.scroll
+  ) {
     checks.push(
       (async () => {
         await checkOwnerAndGuardian(
@@ -135,7 +148,11 @@ async function checkStandardGovernance(addresses: Record<string, any>) {
         });
         try {
           const oracle = await ccc.read.getChainlinkEmergencyOracle();
-          assertEq(oracle, addresses.CL_EMERGENCY_ORACLE, `CROSS_CHAIN_CONTROLLER CL_EMERGENCY_ORACLE mismatch on ${client.chain?.name}`);
+          assertEq(
+            oracle,
+            addresses.CL_EMERGENCY_ORACLE,
+            `CROSS_CHAIN_CONTROLLER CL_EMERGENCY_ORACLE mismatch on ${client.chain?.name}`,
+          );
         } catch {
           // CCC does not have getChainlinkEmergencyOracle on this chain
         }
@@ -154,7 +171,12 @@ async function checkStandardGovernance(addresses: Record<string, any>) {
           'GOVERNANCE',
           client,
         );
-        await checkCrossChainController(addresses.GOVERNANCE, addresses.CROSS_CHAIN_CONTROLLER, 'GOVERNANCE', client);
+        await checkCrossChainController(
+          addresses.GOVERNANCE,
+          addresses.CROSS_CHAIN_CONTROLLER,
+          'GOVERNANCE',
+          client,
+        );
       })(),
     );
   }
@@ -163,8 +185,18 @@ async function checkStandardGovernance(addresses: Record<string, any>) {
   if (addresses.VOTING_MACHINE) {
     checks.push(
       (async () => {
-        await checkOwner(addresses.VOTING_MACHINE, addresses.EXECUTOR_LVL_1, 'VOTING_MACHINE', client);
-        await checkCrossChainController(addresses.VOTING_MACHINE, addresses.CROSS_CHAIN_CONTROLLER, 'VOTING_MACHINE', client);
+        await checkOwner(
+          addresses.VOTING_MACHINE,
+          addresses.EXECUTOR_LVL_1,
+          'VOTING_MACHINE',
+          client,
+        );
+        await checkCrossChainController(
+          addresses.VOTING_MACHINE,
+          addresses.CROSS_CHAIN_CONTROLLER,
+          'VOTING_MACHINE',
+          client,
+        );
 
         const vm = getContract({
           abi: IVotingMachineWithProofs_ABI,
@@ -175,8 +207,16 @@ async function checkStandardGovernance(addresses: Record<string, any>) {
           vm.read.VOTING_STRATEGY(),
           vm.read.DATA_WAREHOUSE(),
         ]);
-        assertEq(votingStrategy, addresses.VOTING_STRATEGY, `VOTING_MACHINE VOTING_STRATEGY mismatch on ${client.chain?.name}`);
-        assertEq(dataWarehouse, addresses.DATA_WAREHOUSE, `VOTING_MACHINE DATA_WAREHOUSE mismatch on ${client.chain?.name}`);
+        assertEq(
+          votingStrategy,
+          addresses.VOTING_STRATEGY,
+          `VOTING_MACHINE VOTING_STRATEGY mismatch on ${client.chain?.name}`,
+        );
+        assertEq(
+          dataWarehouse,
+          addresses.DATA_WAREHOUSE,
+          `VOTING_MACHINE DATA_WAREHOUSE mismatch on ${client.chain?.name}`,
+        );
       })(),
     );
   }
@@ -188,7 +228,11 @@ async function checkWhitelabelGovernance(addresses: Record<string, any>) {
   const client = getClient(addresses.CHAIN_ID);
   if (client.chain?.testnet) return;
 
-  if (!addresses.PERMISSIONED_PAYLOADS_CONTROLLER || !addresses.PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR) return;
+  if (
+    !addresses.PERMISSIONED_PAYLOADS_CONTROLLER ||
+    !addresses.PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR
+  )
+    return;
 
   const pc = getContract({
     abi: [...ownableWithGuardianAbi, ...IPayloadsControllerCore_ABI] as const,
@@ -202,7 +246,11 @@ async function checkWhitelabelGovernance(addresses: Record<string, any>) {
   ]);
 
   const executor = addresses.PERMISSIONED_PAYLOADS_CONTROLLER_EXECUTOR;
-  assertEq(owner, executor, `PERMISSIONED_PAYLOADS_CONTROLLER owner mismatch on ${client.chain?.name}`);
+  assertEq(
+    owner,
+    executor,
+    `PERMISSIONED_PAYLOADS_CONTROLLER owner mismatch on ${client.chain?.name}`,
+  );
   assertEq(
     executorConfigLvl1.executor,
     executor,
@@ -231,7 +279,9 @@ describe('governance', () => {
         ? `should have correct whitelabel governance config: ${client.chain!.name} (${library})`
         : `should have correct governance config: ${client.chain!.name}`,
       async () => {
-        return isWhitelabel ? checkWhitelabelGovernance(addresses) : checkStandardGovernance(addresses);
+        return isWhitelabel
+          ? checkWhitelabelGovernance(addresses)
+          : checkStandardGovernance(addresses);
       },
     );
   });

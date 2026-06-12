@@ -12,7 +12,7 @@ import {IStataTokenV2_ABI} from 'src/ts/abis/IStataTokenV2';
 import {fixSymbol} from 'scripts/generator/assetsLibraryGenerator';
 import {getSymbolUri, getUmbrellaStkVariant, VARIANT} from 'scripts/generator/svgUtils';
 import {getClient} from 'scripts/clients';
-import {ChainList} from '@bgd-labs/toolbox';
+import {ChainList} from '@aave-dao/toolbox';
 import {getTokenSymbol} from 'scripts/generator/utils';
 
 const TAGS = {

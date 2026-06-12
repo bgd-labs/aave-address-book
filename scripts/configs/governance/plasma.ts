@@ -1,5 +1,5 @@
-import { ChainId } from '@bgd-labs/toolbox';
-import { GovernanceConfig } from 'scripts/configs/types';
+import {ChainId} from '@aave-dao/toolbox';
+import {GovernanceConfig} from 'scripts/configs/types';
 
 export const governanceConfigPlasma: GovernanceConfig = {
   name: 'Plasma',

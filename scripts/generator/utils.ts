@@ -2,7 +2,7 @@ import {Client, Hex, getAddress, getContract, zeroAddress} from 'viem';
 import {IERC20Detailed_ABI} from 'src/ts/abis/IERC20Detailed';
 import {AddressInfo, Addresses} from 'scripts/configs/types';
 import {getStorageAt} from 'viem/actions';
-import {ChainList} from '@bgd-labs/toolbox';
+import {ChainList} from '@aave-dao/toolbox';
 
 function getExplorerLink(chainId: number, address: Hex) {
   const chain = ChainList[chainId];
