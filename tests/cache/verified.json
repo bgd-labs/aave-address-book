@@ -9417,6 +9417,32 @@
       "name": "SafeProxy"
     }
   },
+  "143": {
+    "0x8dd5b84b26ae3916A5Fb34C8968F93d206216b63": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x442CA936e5E6Db875357d0A16481145c96dd9a82": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xFBEa38C851B7B5A4626b0348aa2Db70921Cd3f92": {
+      "name": "PayloadsControllerDataHelper"
+    },
+    "0xD3DD0bE957fcE2dCd359e09374Cbc99f60337D42": {
+      "name": "GranularGuardianAccessControl"
+    },
+    "0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E": {
+      "name": "SafeProxy"
+    },
+    "0xa9d0EAFF48cE1DF468f9eAeb7e628c413343F6A2": {
+      "name": "Executor"
+    },
+    "0xEB0682d148e874553008730f0686ea89db7DA412": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xc887455536CBD4e615B745e70CaCde15B3117e74": {
+      "name": "SafeProxy"
+    }
+  },
   "146": {
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"

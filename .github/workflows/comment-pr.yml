@@ -8,5 +8,5 @@ on:
 
 jobs:
   test:
-    uses: bgd-labs/github-workflows/.github/workflows/comment.yml@ea41920d7c7c656823137da415d1e3f59bf064bf # pin@main
+    uses: aave-dao/github-workflows/.github/workflows/comment.yml@main
     secrets: inherit

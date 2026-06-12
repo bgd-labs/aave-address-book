@@ -1,0 +1,14 @@
+import {ChainId} from '@aave-dao/toolbox';
+import {GovernanceConfig} from 'scripts/configs/types';
+
+export const governanceConfigMonad: GovernanceConfig = {
+  name: 'Monad',
+  CHAIN_ID: ChainId.monad,
+  ADDRESSES: {
+    CROSS_CHAIN_CONTROLLER: '0x8dd5b84b26ae3916A5Fb34C8968F93d206216b63',
+    PAYLOADS_CONTROLLER: '0x442CA936e5E6Db875357d0A16481145c96dd9a82',
+    PC_DATA_HELPER: '0xFBEa38C851B7B5A4626b0348aa2Db70921Cd3f92',
+    GRANULAR_GUARDIAN: '0xD3DD0bE957fcE2dCd359e09374Cbc99f60337D42',
+    GOVERNANCE_GUARDIAN: '0x056E4C4E80D1D14a637ccbD0412CDAAEc5B51F4E',
+  },
+};
