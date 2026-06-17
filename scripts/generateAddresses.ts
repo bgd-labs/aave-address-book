@@ -35,6 +35,7 @@ import { inkProtoV3, inkSepoliaProtoV3 } from 'scripts/configs/pools/ink';
 import { plasmaProtoV3 } from 'scripts/configs/pools/plasma';
 import { megaEthProtoV3 } from 'scripts/configs/pools/megaeth';
 import { xLayerProtoV3 } from 'scripts/configs/pools/xlayer';
+import { monadProtoV3 } from 'scripts/configs/pools/monad';
 import { mainnetV4Config } from 'scripts/configs/v4/ethereum';
 import { generateProtocolV4Library } from 'scripts/generator/protocolV4Generator';
 import { generateGovernanceLibrary } from 'scripts/generator/governanceV3Generator';
@@ -103,6 +104,7 @@ import { governanceConfigMegaEth } from 'scripts/configs/governance/megaeth';
 import { megaEthAddresses } from 'scripts/configs/networks/megaeth';
 import { governanceConfigXLayer } from 'scripts/configs/governance/xlayer';
 import { xLayerAddresses } from 'scripts/configs/networks/xlayer';
+import { monadAddresses } from 'scripts/configs/networks/monad';
 
 async function main() {
   // cleanup ts artifacts
@@ -193,6 +195,7 @@ async function main() {
       plasmaProtoV3,
       megaEthProtoV3,
       xLayerProtoV3,
+      monadProtoV3,
     ].map((config) => generateProtocolV3Library(config)),
   );
   const v4LibraryNames = await Promise.all(
@@ -244,6 +247,7 @@ async function main() {
     plasmaAddresses,
     megaEthAddresses,
     xLayerAddresses,
+    monadAddresses,
   ].map((addresses) => generateNetworkAddresses(addresses));
 
   const govImports = generateGovV2();

@@ -1,4 +1,4 @@
-import {ChainId} from '@bgd-labs/toolbox';
+import {ChainId} from '@aave-dao/toolbox';
 import {GhoAddresses} from 'scripts/configs/types';
 
 export const ghoAvalanche: GhoAddresses = {

@@ -6,7 +6,7 @@ import {IOwnable_ABI} from 'src/ts/abis/IOwnable';
 import {IWithGuardian_ABI} from 'src/ts/abis/IWithGuardian';
 import {IPayloadsControllerCore_ABI} from 'src/ts/abis/IPayloadsControllerCore';
 import {IVotingMachineWithProofs_ABI} from 'src/ts/abis/IVotingMachineWithProofs';
-import { ChainId } from '@bgd-labs/toolbox';
+import { ChainId } from '@aave-dao/toolbox';
 
 const ownableWithGuardianAbi = [...IOwnable_ABI, ...IWithGuardian_ABI] as const;
 

@@ -9393,6 +9393,95 @@
       "name": "UiPoolDataProviderV3"
     }
   },
+  "143": {
+    "0x410615f2889b803587449408CbdC23C8dB963c02": {
+      "name": "PoolAddressesProvider"
+    },
+    "0x49aeE79cD1A8ba6a9C361B282745Bb25d382B9Dd": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x2DB370660C798CE2Df992A9A8badDa222861c30D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd2Cd4Ec2565c333Ba259313cfB2D00a45C3c2917": {
+      "name": "AaveOracle"
+    },
+    "0xa9d0EAFF48cE1DF468f9eAeb7e628c413343F6A2": {
+      "name": "Executor"
+    },
+    "0x27d0C7b08eEC49dD23D641154b618479b88A4620": {
+      "name": "ACLManager"
+    },
+    "0xc498567206789B63A3Fb7bb802eFaF884D87A1a6": {
+      "name": "AaveProtocolDataProvider"
+    },
+    "0x01E34395e24230201c8ce94e5846d5ed96315586": {
+      "name": "PoolInstance"
+    },
+    "0x114cdeD7419664A1a92D34cfbd41dCd14c21BA8c": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0xA8CA5C4f866914E0139C5897031309a3ae25a51f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xeF362DE821b48a808a3EA616e768fFF54e63914D": {
+      "name": "EmissionManager"
+    },
+    "0x18BF42a971f2862071A4B45DA27E0Cd37e38Cccb": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x46A3D00e9e3F60095dbD6D5BB57ac3ec9E6e2054": {
+      "name": "ATokenInstance"
+    },
+    "0x8D4cb916A14658C29B86605C4f02d5d83030a616": {
+      "name": "VariableDebtTokenInstance"
+    },
+    "0xC0B51eF6E39CB92f412C89e87ABC9506b4FA15da": {
+      "name": "AaveV3ConfigEngine"
+    },
+    "0xb473972e0fF670C1D20A7F0594d9a1A89850D3a1": {
+      "name": "PoolAddressesProviderRegistry"
+    },
+    "0x62067e729344Cf93237f050d3B3BA1A691EdD699": {
+      "name": "UiPoolDataProviderV3"
+    },
+    "0x4127fCA3eBE5415f2cf6b6D836344293eCeE8463": {
+      "name": "UiIncentiveDataProviderV3"
+    },
+    "0x89B1Ccd593bBfcfC648860fBb71a36488c67C419": {
+      "name": "WalletBalanceProvider"
+    },
+    "0x676d1cb1cC9637Ff0C2F83D29947b36a420aDCdf": {
+      "name": "WrappedTokenGatewayV3"
+    },
+    "0xCB74fF1FBDf7356bD0f5E7FcC9A216e07A9b62b0": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x12f8c4477b9422c1dA41c643aD93AB2199454D0e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6": {
+      "name": "FlashLoanLogic"
+    },
+    "0x52Da0ce88202D1542543598D1e1e27F0d344726A": {
+      "name": "BorrowLogic"
+    },
+    "0x96D5686812e33Ab509ECCDb38C89d15607B2a413": {
+      "name": "LiquidationLogic"
+    },
+    "0xD70593841C57cbaA04957cc3EAcE95708e48853b": {
+      "name": "PoolLogic"
+    },
+    "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
+      "name": "SupplyLogic"
+    },
+    "0x7447Ce5fC2454Cfd94E236a99178AdB2cD87aB87": {
+      "name": "TransparentProxyFactory"
+    },
+    "0xc887455536CBD4e615B745e70CaCde15B3117e74": {
+      "name": "SafeProxy"
+    }
+  },
   "146": {
     "0xEB0682d148e874553008730f0686ea89db7DA412": {
       "name": "TransparentProxyFactory"
@@ -17635,6 +17724,27 @@
     },
     "0x2E549104c516b8657A7D888494DfbAbD7C70b464": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0x6a056dA055C616cd89dBcd0dC4b3f4E0F6162eb6": {
+      "name": "L2PoolInstance"
+    },
+    "0xFF42Ce30054dcE7dc7C1282a9a497aa58eaBCe99": {
+      "name": "PoolConfiguratorInstance"
+    },
+    "0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6": {
+      "name": "FlashLoanLogic"
+    },
+    "0x52Da0ce88202D1542543598D1e1e27F0d344726A": {
+      "name": "BorrowLogic"
+    },
+    "0x96D5686812e33Ab509ECCDb38C89d15607B2a413": {
+      "name": "LiquidationLogic"
+    },
+    "0xD70593841C57cbaA04957cc3EAcE95708e48853b": {
+      "name": "PoolLogic"
+    },
+    "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
+      "name": "SupplyLogic"
     }
   },
   "59144": {

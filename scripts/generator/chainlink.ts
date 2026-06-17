@@ -6,7 +6,7 @@ import {
   prefixWithPragma,
   wrapIntoSolidityLibrary,
 } from 'scripts/generator/utils';
-import {ChainId, chainlinkFeeds} from '@bgd-labs/toolbox';
+import {ChainId, chainlinkFeeds} from '@aave-dao/toolbox';
 
 const CHAIN_ID_TO_NAME = {
   [ChainId.mainnet]: 'Ethereum',

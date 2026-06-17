@@ -1,4 +1,4 @@
-import {ChainId, ChainList, getExplorer, getSourceCode} from '@bgd-labs/toolbox';
+import {ChainId, ChainList, getExplorer, getSourceCode} from '@aave-dao/toolbox';
 import {describe, expect, it} from 'vitest';
 import {flattenedAddresses, ListItem} from 'ui/src/utils/getAddresses';
 import verified from 'tests/cache/verified.json';

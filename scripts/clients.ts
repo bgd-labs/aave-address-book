@@ -1,5 +1,5 @@
 import {HttpTransportConfig} from 'viem';
-import {getClient as rpcEnvGetClient} from '@bgd-labs/toolbox';
+import {getClient as rpcEnvGetClient} from '@aave-dao/toolbox';
 
 const commonConfig: HttpTransportConfig = {timeout: 30_000, batch: true};
 const batchConfig = {batch: {multicall: true}};

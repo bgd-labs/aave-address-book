@@ -2,7 +2,7 @@ import {Address, Client, getContract} from 'viem';
 import {IPool_ABI} from 'src/ts/abis/IPool';
 import {Addresses, EMode, ReserveData} from 'scripts/configs/types';
 import {generateSolidityConstants, wrapIntoSolidityLibrary} from 'scripts/generator/utils';
-import {bitmapToIndexes} from '@bgd-labs/toolbox';
+import {bitmapToIndexes} from '@aave-dao/toolbox';
 import {fixSymbol} from 'scripts/generator/assetsLibraryGenerator';
 
 /**
