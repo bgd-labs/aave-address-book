@@ -4,78 +4,78 @@ pragma solidity >=0.6.0;
 
 import {IPoolAddressesProvider, IPool, IPoolConfigurator, IAaveOracle, IPoolDataProvider, IACLManager, ICollector} from './AaveV3.sol';
 library AaveV3Monad {
-  // https://monadscan.com/address/0x410615f2889b803587449408CbdC23C8dB963c02
+  // https://monadscan.com/address/0x34793Fb9935F7bB5E5aE920fb963F39063E7A615
   IPoolAddressesProvider internal constant POOL_ADDRESSES_PROVIDER =
-    IPoolAddressesProvider(0x410615f2889b803587449408CbdC23C8dB963c02);
+    IPoolAddressesProvider(0x34793Fb9935F7bB5E5aE920fb963F39063E7A615);
 
-  // https://monadscan.com/address/0x49aeE79cD1A8ba6a9C361B282745Bb25d382B9Dd
-  IPool internal constant POOL = IPool(0x49aeE79cD1A8ba6a9C361B282745Bb25d382B9Dd);
+  // https://monadscan.com/address/0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef
+  IPool internal constant POOL = IPool(0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef);
 
-  // https://monadscan.com/address/0x2DB370660C798CE2Df992A9A8badDa222861c30D
+  // https://monadscan.com/address/0xC7A386Da9cB528aa86feD862a7bf33d10AA8455B
   IPoolConfigurator internal constant POOL_CONFIGURATOR =
-    IPoolConfigurator(0x2DB370660C798CE2Df992A9A8badDa222861c30D);
+    IPoolConfigurator(0xC7A386Da9cB528aa86feD862a7bf33d10AA8455B);
 
-  // https://monadscan.com/address/0xd2Cd4Ec2565c333Ba259313cfB2D00a45C3c2917
-  IAaveOracle internal constant ORACLE = IAaveOracle(0xd2Cd4Ec2565c333Ba259313cfB2D00a45C3c2917);
+  // https://monadscan.com/address/0x0c02b2c2038066C10Eab8fe1D5Cdb73d5a78A1Bf
+  IAaveOracle internal constant ORACLE = IAaveOracle(0x0c02b2c2038066C10Eab8fe1D5Cdb73d5a78A1Bf);
 
   // https://monadscan.com/address/0xa9d0EAFF48cE1DF468f9eAeb7e628c413343F6A2
   address internal constant ACL_ADMIN = 0xa9d0EAFF48cE1DF468f9eAeb7e628c413343F6A2;
 
-  // https://monadscan.com/address/0x27d0C7b08eEC49dD23D641154b618479b88A4620
+  // https://monadscan.com/address/0xa9fEe192a76B8f5e5f3d310AB6C526cB11F3d95B
   IACLManager internal constant ACL_MANAGER =
-    IACLManager(0x27d0C7b08eEC49dD23D641154b618479b88A4620);
+    IACLManager(0xa9fEe192a76B8f5e5f3d310AB6C526cB11F3d95B);
 
-  // https://monadscan.com/address/0xc498567206789B63A3Fb7bb802eFaF884D87A1a6
+  // https://monadscan.com/address/0xB65A68B98274ef7D9a60E0C0747dD1BEc3D32fad
   IPoolDataProvider internal constant AAVE_PROTOCOL_DATA_PROVIDER =
-    IPoolDataProvider(0xc498567206789B63A3Fb7bb802eFaF884D87A1a6);
+    IPoolDataProvider(0xB65A68B98274ef7D9a60E0C0747dD1BEc3D32fad);
 
-  // https://monadscan.com/address/0x01E34395e24230201c8ce94e5846d5ed96315586
-  address internal constant POOL_IMPL = 0x01E34395e24230201c8ce94e5846d5ed96315586;
+  // https://monadscan.com/address/0x9539531EA4f6563A66421a7449506152609985be
+  address internal constant POOL_IMPL = 0x9539531EA4f6563A66421a7449506152609985be;
 
-  // https://monadscan.com/address/0x114cdeD7419664A1a92D34cfbd41dCd14c21BA8c
-  address internal constant POOL_CONFIGURATOR_IMPL = 0x114cdeD7419664A1a92D34cfbd41dCd14c21BA8c;
+  // https://monadscan.com/address/0xCCFCA00657f9c7e062E0512c8535a5B93D5Ff254
+  address internal constant POOL_CONFIGURATOR_IMPL = 0xCCFCA00657f9c7e062E0512c8535a5B93D5Ff254;
 
-  // https://monadscan.com/address/0xA8CA5C4f866914E0139C5897031309a3ae25a51f
+  // https://monadscan.com/address/0x6f275486dC3EF07691B846E500556774B2D98F59
   address internal constant DEFAULT_INCENTIVES_CONTROLLER =
-    0xA8CA5C4f866914E0139C5897031309a3ae25a51f;
+    0x6f275486dC3EF07691B846E500556774B2D98F59;
 
-  // https://monadscan.com/address/0xeF362DE821b48a808a3EA616e768fFF54e63914D
-  address internal constant EMISSION_MANAGER = 0xeF362DE821b48a808a3EA616e768fFF54e63914D;
+  // https://monadscan.com/address/0x2da993D6c83408039b6842Aa56A9dE8044Dc7311
+  address internal constant EMISSION_MANAGER = 0x2da993D6c83408039b6842Aa56A9dE8044Dc7311;
 
-  // https://monadscan.com/address/0x18BF42a971f2862071A4B45DA27E0Cd37e38Cccb
-  ICollector internal constant COLLECTOR = ICollector(0x18BF42a971f2862071A4B45DA27E0Cd37e38Cccb);
+  // https://monadscan.com/address/0x22A14267f9F8bA21D11898F0772e652B09e6A8A1
+  ICollector internal constant COLLECTOR = ICollector(0x22A14267f9F8bA21D11898F0772e652B09e6A8A1);
 
-  // https://monadscan.com/address/0x46A3D00e9e3F60095dbD6D5BB57ac3ec9E6e2054
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0x46A3D00e9e3F60095dbD6D5BB57ac3ec9E6e2054;
+  // https://monadscan.com/address/0xdB1E821a05E6028c6CD440FFE94F6bfCb3B3028d
+  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xdB1E821a05E6028c6CD440FFE94F6bfCb3B3028d;
 
-  // https://monadscan.com/address/0x8D4cb916A14658C29B86605C4f02d5d83030a616
+  // https://monadscan.com/address/0xCCDA7A6386fb2fBE4B22a5485A599F6d68d95d78
   address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
-    0x8D4cb916A14658C29B86605C4f02d5d83030a616;
+    0xCCDA7A6386fb2fBE4B22a5485A599F6d68d95d78;
 
-  // https://monadscan.com/address/0xC0B51eF6E39CB92f412C89e87ABC9506b4FA15da
-  address internal constant CONFIG_ENGINE = 0xC0B51eF6E39CB92f412C89e87ABC9506b4FA15da;
+  // https://monadscan.com/address/0x25cA98Ab620Af65E8A9FB0F30989b9FFfb8e3163
+  address internal constant CONFIG_ENGINE = 0x25cA98Ab620Af65E8A9FB0F30989b9FFfb8e3163;
 
-  // https://monadscan.com/address/0xb473972e0fF670C1D20A7F0594d9a1A89850D3a1
+  // https://monadscan.com/address/0xa7790F5EDE1f1A57e7122e869eF6095c07C7E01d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
-    0xb473972e0fF670C1D20A7F0594d9a1A89850D3a1;
+    0xa7790F5EDE1f1A57e7122e869eF6095c07C7E01d;
 
-  // https://monadscan.com/address/0x62067e729344Cf93237f050d3B3BA1A691EdD699
-  address internal constant UI_POOL_DATA_PROVIDER = 0x62067e729344Cf93237f050d3B3BA1A691EdD699;
+  // https://monadscan.com/address/0xa7D38785be3422c25677A8aa4a44D3a0853A3a17
+  address internal constant UI_POOL_DATA_PROVIDER = 0xa7D38785be3422c25677A8aa4a44D3a0853A3a17;
 
-  // https://monadscan.com/address/0x4127fCA3eBE5415f2cf6b6D836344293eCeE8463
-  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x4127fCA3eBE5415f2cf6b6D836344293eCeE8463;
+  // https://monadscan.com/address/0x9d8678556BCF7240bE12982430C281Db76E26eA2
+  address internal constant UI_INCENTIVE_DATA_PROVIDER = 0x9d8678556BCF7240bE12982430C281Db76E26eA2;
 
-  // https://monadscan.com/address/0x89B1Ccd593bBfcfC648860fBb71a36488c67C419
-  address internal constant WALLET_BALANCE_PROVIDER = 0x89B1Ccd593bBfcfC648860fBb71a36488c67C419;
+  // https://monadscan.com/address/0x1CC19583933Af0B70103797236267a9E049806F9
+  address internal constant WALLET_BALANCE_PROVIDER = 0x1CC19583933Af0B70103797236267a9E049806F9;
 
-  // https://monadscan.com/address/0x676d1cb1cC9637Ff0C2F83D29947b36a420aDCdf
-  address internal constant WETH_GATEWAY = 0x676d1cb1cC9637Ff0C2F83D29947b36a420aDCdf;
+  // https://monadscan.com/address/0x5bB847f1E529df8819038BA6d34a95c9C2FB6813
+  address internal constant WETH_GATEWAY = 0x5bB847f1E529df8819038BA6d34a95c9C2FB6813;
 
-  // https://monadscan.com/address/0xCB74fF1FBDf7356bD0f5E7FcC9A216e07A9b62b0
-  address internal constant STATA_FACTORY = 0xCB74fF1FBDf7356bD0f5E7FcC9A216e07A9b62b0;
+  // https://monadscan.com/address/0x9ce311E3Ea6e781DC9a3a7F61ef24250E2B8cDF8
+  address internal constant STATA_FACTORY = 0x9ce311E3Ea6e781DC9a3a7F61ef24250E2B8cDF8;
 
-  // https://monadscan.com/address/0x12f8c4477b9422c1dA41c643aD93AB2199454D0e
-  address internal constant DUST_BIN = 0x12f8c4477b9422c1dA41c643aD93AB2199454D0e;
+  // https://monadscan.com/address/0xf23C65c8C92E42e990786523744Db9d5cdcF6cbE
+  address internal constant DUST_BIN = 0xf23C65c8C92E42e990786523744Db9d5cdcF6cbE;
 }
 library AaveV3MonadAssets {}
 library AaveV3MonadEModes {
