@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.54.0](https://github.com/aave-dao/aave-address-book/compare/v4.53.1...v4.54.0) (2026-06-17)
+
+
+### Features
+
+* add monad ([#1422](https://github.com/aave-dao/aave-address-book/issues/1422)) ([fa2578e](https://github.com/aave-dao/aave-address-book/commit/fa2578e1cb17dc32561775c3ccc7e46da9bf24cc))
+
 ## [4.53.1](https://github.com/aave-dao/aave-address-book/compare/v4.53.0...v4.53.1) (2026-06-13)
 
 
