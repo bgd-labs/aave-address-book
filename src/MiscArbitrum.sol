@@ -69,6 +69,12 @@ library MiscArbitrum {
   // https://arbiscan.io/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
   address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 
+  // https://arbiscan.io/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
+  address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
+
+  // https://arbiscan.io/address/0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D
+  address internal constant MERKL_DISTRIBUTION_SAFE = 0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D;
+
   // https://arbiscan.io/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 }

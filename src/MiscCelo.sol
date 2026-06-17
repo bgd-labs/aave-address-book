@@ -18,6 +18,12 @@ library MiscCelo {
   // https://celoscan.io/address/0xdef1FA4CEfe67365ba046a7C630D6B885298E210
   address internal constant MASIV_SAFE = 0xdef1FA4CEfe67365ba046a7C630D6B885298E210;
 
+  // https://celoscan.io/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
+  address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
+
+  // https://celoscan.io/address/0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D
+  address internal constant MERKL_DISTRIBUTION_SAFE = 0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D;
+
   // https://celoscan.io/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 }

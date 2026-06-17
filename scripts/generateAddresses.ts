@@ -104,6 +104,7 @@ import { governanceConfigMegaEth } from 'scripts/configs/governance/megaeth';
 import { megaEthAddresses } from 'scripts/configs/networks/megaeth';
 import { governanceConfigXLayer } from 'scripts/configs/governance/xlayer';
 import { xLayerAddresses } from 'scripts/configs/networks/xlayer';
+import { governanceConfigMonad } from 'scripts/configs/governance/monad';
 import { monadAddresses } from 'scripts/configs/networks/monad';
 
 async function main() {
@@ -145,6 +146,7 @@ async function main() {
       governanceConfigPlasma,
       governanceConfigMegaEth,
       governanceConfigXLayer,
+      governanceConfigMonad
     ].map((config) => generateGovernanceLibrary(config)),
   );
   const v1Library = generateAaveV1();

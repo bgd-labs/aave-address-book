@@ -12,7 +12,7 @@ permissions:
 name: release-please
 jobs:
   test-solidity:
-    uses: bgd-labs/github-workflows/.github/workflows/foundry-test.yml@main
+    uses: aave-dao/github-workflows/.github/workflows/foundry-test.yml@main
     secrets:
       ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
     with:
@@ -20,7 +20,7 @@ jobs:
       compareGas: false
 
   test-node:
-    uses: bgd-labs/github-workflows/.github/workflows/test-node.yml@main
+    uses: aave-dao/github-workflows/.github/workflows/test-node.yml@main
     secrets:
       ALCHEMY_API_KEY: ${{ secrets.ALCHEMY_API_KEY }}
       EXPLORER_PROXY: ${{ secrets.EXPLORER_PROXY }}
@@ -69,7 +69,7 @@ jobs:
 
   release-node:
     if: ${{ needs.release-please.outputs.releaseCreated }}
-    uses: bgd-labs/github-workflows/.github/workflows/release-node.yml@main
+    uses: aave-dao/github-workflows/.github/workflows/release-node.yml@main
     needs: release-please
 
   release-node-alpha:
@@ -77,4 +77,4 @@ jobs:
     needs:
       - test-solidity
       - test-node
-    uses: bgd-labs/github-workflows/.github/workflows/release-node-alpha.yml@main
+    uses: aave-dao/github-workflows/.github/workflows/release-node-alpha.yml@main

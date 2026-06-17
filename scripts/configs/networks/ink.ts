@@ -1,5 +1,5 @@
-import { ChainId } from '@aave-dao/toolbox';
-import { NetworkAddresses } from 'scripts/configs/types';
+import {ChainId} from '@aave-dao/toolbox';
+import {NetworkAddresses} from 'scripts/configs/types';
 
 export const inkWhiteLabelAddresses: NetworkAddresses = {
   name: 'InkWhitelabel',
@@ -21,6 +21,8 @@ export const inkAddresses: NetworkAddresses = {
   addresses: {
     TRANSPARENT_PROXY_FACTORY: '0xEB0682d148e874553008730f0686ea89db7DA412',
     AFC_SAFE: '0x22740deBa78d5a0c24C58C740e3715ec29de1bFa',
+    BUDGET_INCENTIVE_SAFE: '0x66Ac7223048037826e12cef9a848199e31AEFabE',
+    MERKL_DISTRIBUTION_SAFE: '0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D',
     ROBOT_GUARDIAN: '0x441E4053fDDF1e1a77a39d00309Af389096d4124',
   },
 };
@@ -29,6 +31,6 @@ export const inkSepoliaAddresses: NetworkAddresses = {
   name: 'InkSepolia',
   chainId: ChainId.ink_sepolia,
   addresses: {
-    TRANSPARENT_PROXY_FACTORY: '0xd8247C7926841337E8adf9fD9E87026992C45062'
+    TRANSPARENT_PROXY_FACTORY: '0xd8247C7926841337E8adf9fD9E87026992C45062',
   },
 };

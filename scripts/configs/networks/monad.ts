@@ -5,7 +5,7 @@ export const monadAddresses: NetworkAddresses = {
   name: 'Monad',
   chainId: ChainId.monad,
   addresses: {
-    TRANSPARENT_PROXY_FACTORY: '0x7447Ce5fC2454Cfd94E236a99178AdB2cD87aB87',
+    TRANSPARENT_PROXY_FACTORY: '0xEB0682d148e874553008730f0686ea89db7DA412',
     PROTOCOL_GUARDIAN: '0xc887455536CBD4e615B745e70CaCde15B3117e74',
   },
 };

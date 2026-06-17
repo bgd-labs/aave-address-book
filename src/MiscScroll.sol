@@ -30,6 +30,12 @@ library MiscScroll {
   // https://scrollscan.com/address/0xc50C0D9C4E5df6f2F244a72FD4DA562877CD16EE
   address internal constant REWARD_STEWARD = 0xc50C0D9C4E5df6f2F244a72FD4DA562877CD16EE;
 
+  // https://scrollscan.com/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
+  address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
+
+  // https://scrollscan.com/address/0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D
+  address internal constant MERKL_DISTRIBUTION_SAFE = 0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D;
+
   // https://scrollscan.com/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 }

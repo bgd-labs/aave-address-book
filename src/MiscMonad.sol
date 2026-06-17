@@ -3,8 +3,8 @@
 pragma solidity >=0.6.0;
 
 library MiscMonad {
-  // https://monadscan.com/address/0x7447Ce5fC2454Cfd94E236a99178AdB2cD87aB87
-  address internal constant TRANSPARENT_PROXY_FACTORY = 0x7447Ce5fC2454Cfd94E236a99178AdB2cD87aB87;
+  // https://monadscan.com/address/0xEB0682d148e874553008730f0686ea89db7DA412
+  address internal constant TRANSPARENT_PROXY_FACTORY = 0xEB0682d148e874553008730f0686ea89db7DA412;
 
   // https://monadscan.com/address/0xc887455536CBD4e615B745e70CaCde15B3117e74
   address internal constant PROTOCOL_GUARDIAN = 0xc887455536CBD4e615B745e70CaCde15B3117e74;

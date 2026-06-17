@@ -17,6 +17,8 @@ export const arbitrumAddresses: NetworkAddresses<{
   MERIT_INCENTIVE_SAFE: Hex;
   AHAB_SAFE: Hex;
   REWARD_STEWARD: Hex;
+  BUDGET_INCENTIVE_SAFE: Hex;
+  MERKL_DISTRIBUTION_SAFE: Hex;
 }> = {
   name: 'Arbitrum',
   chainId: ChainId.arbitrum,
@@ -43,6 +45,8 @@ export const arbitrumAddresses: NetworkAddresses<{
     AGENT_HUB: '0xf4F2bc657abe96863dC1Ae17C9e9fFfc2B420e7B',
     AGENT_HUB_AUTOMATION: '0xff822f7e2178176bb650df82427a42ca0c04ccab',
     RANGE_VALIDATION_MODULE: '0x9240a6669cc4782fc98620212862df5cb2e0df10',
+    BUDGET_INCENTIVE_SAFE: '0x66Ac7223048037826e12cef9a848199e31AEFabE',
+    MERKL_DISTRIBUTION_SAFE: '0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D',
     ROBOT_GUARDIAN: '0x441E4053fDDF1e1a77a39d00309Af389096d4124',
   },
 };
