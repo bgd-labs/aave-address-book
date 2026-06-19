@@ -1,0 +1,192 @@
+scripts/configs/pools/megaeth.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/metis.ts
+  h_739c25e72c37fb 2
+scripts/configs/networks/zksync.ts
+  h_739c25e72c37fb 2
+scripts/configs/pools/fantom.ts
+  h_739c25e72c37fb 1
+scripts/configs/umbrella/ethereum.ts
+  h_739c25e72c37fb 1,13-14
+scripts/configs/pools/plasma.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/sonic.ts
+  h_739c25e72c37fb 1
+scripts/generator/protocol-v3-generator/fetchEModes.ts
+  h_739c25e72c37fb 5
+scripts/configs/gho/mantle.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/mantle.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/mantle.ts
+  h_739c25e72c37fb 1
+ui/src/app/page.tsx
+  h_739c25e72c37fb 5
+scripts/configs/gho/plasma.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/arbitrum.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/gnosis.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/scroll.ts
+  h_739c25e72c37fb 2
+scripts/configs/v4/ethereum.ts
+  h_739c25e72c37fb 1
+scripts/generator/protocolV1Generator.ts
+  h_739c25e72c37fb 10
+scripts/configs/networks/gnosis.ts
+  h_739c25e72c37fb 2
+scripts/configs/pools/optimism.ts
+  h_739c25e72c37fb 1
+scripts/generator/utils.ts
+  h_739c25e72c37fb 5
+scripts/configs/gho/gnosis.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/ink.ts
+  h_739c25e72c37fb 1
+scripts/configs/gho/base.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/metis.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/gnosis.ts
+  h_739c25e72c37fb 2
+scripts/configs/networks/bob.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/xlayer.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/bnb.ts
+  h_739c25e72c37fb 2
+scripts/configs/governance/linea.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/base.ts
+  h_739c25e72c37fb 1
+scripts/generator/governanceV2Generator.ts
+  h_739c25e72c37fb 10
+scripts/configs/pools/bnb.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/bnb.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/fantom.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/megaeth.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/avalanche.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/optimism.ts
+  h_739c25e72c37fb 1
+scripts/generator/safetyModuleGenerator.ts
+  h_739c25e72c37fb 9
+tests/sanity/governance.spec.ts
+  h_739c25e72c37fb 9,91,123,154,174-176,192,198,213,218,252
+scripts/configs/governance/base.ts
+  h_739c25e72c37fb 2
+scripts/configs/networks/sonic.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/sonic.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/xlayer.ts
+  h_739c25e72c37fb 1
+scripts/generator/generateTokenList.ts
+  h_739c25e72c37fb 15
+ui/src/components/Search.tsx
+  h_739c25e72c37fb 10
+scripts/configs/governance/ethereum.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/zksync.ts
+  h_739c25e72c37fb 1
+scripts/configs/gho/ethereum.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/soneium.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/soneium.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/avalanche.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/megaeth.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/ethereum.ts
+  h_739c25e72c37fb 2
+scripts/configs/networks/optimism.ts
+  h_739c25e72c37fb 2
+scripts/configs/networks/metis.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/base.ts
+  h_739c25e72c37fb 2
+scripts/configs/umbrella/base.ts
+  h_739c25e72c37fb 1,12
+scripts/configs/pools/zksync.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/linea.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/polygon.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/xlayer.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/arbitrum.ts
+  h_739c25e72c37fb 2
+scripts/configs/gho/ink.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/avalanche.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/polygon.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/plasma.ts
+  h_739c25e72c37fb 1
+tests/verification.spec.ts
+  h_739c25e72c37fb 1
+scripts/clients.ts
+  h_739c25e72c37fb 2
+scripts/configs/networks/celo.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/harmony.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/celo.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/plasma.ts
+  h_739c25e72c37fb 1
+scripts/generateSafeCSV.ts
+  h_739c25e72c37fb 3
+scripts/configs/governance/celo.ts
+  h_739c25e72c37fb 2
+scripts/configs/gho/xlayer.ts
+  h_739c25e72c37fb 1
+scripts/configs/gho/arbitrum.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/bob.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/arbitrum.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/ethereum.ts
+  h_739c25e72c37fb 1
+scripts/configs/pools/scroll.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/scroll.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/ink.ts
+  h_739c25e72c37fb 1,34
+scripts/configs/pools/soneium.ts
+  h_739c25e72c37fb 1
+scripts/configs/networks/polygon.ts
+  h_739c25e72c37fb 2
+scripts/configs/networks/mantle.ts
+  h_739c25e72c37fb 1
+scripts/configs/gho/avalanche.ts
+  h_739c25e72c37fb 1
+scripts/configs/governance/ink.ts
+  h_739c25e72c37fb 1-2
+scripts/configs/pools/linea.ts
+  h_739c25e72c37fb 1
+scripts/generator/chainlink.ts
+  h_739c25e72c37fb 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "4209b97fd0d85167a2dfcfde0e552459bdba07bf",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}

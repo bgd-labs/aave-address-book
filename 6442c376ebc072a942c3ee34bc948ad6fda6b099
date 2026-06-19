@@ -1,0 +1,18 @@
+scripts/configs/networks/monad.ts
+  h_739c25e72c37fb 1-11
+scripts/configs/governance/monad.ts
+  h_739c25e72c37fb 1-14
+scripts/generateAddresses.ts
+  h_739c25e72c37fb 106-107,148,250
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "6442c376ebc072a942c3ee34bc948ad6fda6b099",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}

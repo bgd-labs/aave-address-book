@@ -1,0 +1,14 @@
+tests/cache/verified.json
+  h_e42aa0fb58e660 4607-4609,5818-5820,7053-7055,7718-7720,9259-9261,9720-9722,9983-9985,11756-11761,13012-13014,13437-13442,15158-15160,15547-15549,16913-16915,17251-17256,17757-17759,18503-18505
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "eee4c1d895e4937ea65f06ced2250a00c42f8cbb",
+  "prompts": {},
+  "humans": {
+    "h_e42aa0fb58e660": {
+      "author": "Alexandru Niculae"
+    }
+  }
+}

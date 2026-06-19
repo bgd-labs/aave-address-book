@@ -1,0 +1,32 @@
+src/GhoEthereum.sol
+  h_e42aa0fb58e660 19-24
+scripts/configs/abis.ts
+  9ded291d3d8c872a 21
+scripts/configs/gho/ethereum.ts
+  h_e42aa0fb58e660 12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "6ba98a43c1568827839cc837eb24071569a5f125",
+  "prompts": {
+    "9ded291d3d8c872a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8ded7c7c-a383-417b-bb0a-f934e037209f",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "Alexandru Niculae",
+      "messages": [],
+      "total_additions": 44217,
+      "total_deletions": 3571,
+      "accepted_lines": 44217,
+      "overriden_lines": 0
+    }
+  },
+  "humans": {
+    "h_e42aa0fb58e660": {
+      "author": "Alexandru Niculae"
+    }
+  }
+}

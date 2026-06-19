@@ -1,0 +1,28 @@
+scripts/generateAddresses.ts
+  h_739c25e72c37fb 106-107,148,250
+.github/workflows/size.yml
+  h_739c25e72c37fb 21
+scripts/configs/networks/monad.ts
+  h_739c25e72c37fb 1-11
+.github/workflows/release.yml
+  h_739c25e72c37fb 15,23,72,80
+scripts/configs/governance/monad.ts
+  h_739c25e72c37fb 1-14
+.github/workflows/deploy-ui.yml
+  h_739c25e72c37fb 35
+.github/workflows/comment-pr.yml
+  h_739c25e72c37fb 11
+.github/workflows/cron.yml
+  h_739c25e72c37fb 37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "cccf27e4dc7af6e4ca32725eb136cbd182b1affe",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
