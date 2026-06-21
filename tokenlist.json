@@ -10228,6 +10228,26 @@
       }
     },
     {
+      "chainId": 9745,
+      "address": "0xf7fB83435F455Bd970F2D9f943f4eECE1941b3e9",
+      "name": "PT Ethena sUSDE 22OCT2026",
+      "decimals": 18,
+      "symbol": "PT-sUSDE-22OCT2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 9745,
+      "address": "0x34D33fCaCC36b9A16CE1Cab8d7FB1CAF8B7C2d00",
+      "name": "Aave Plasma PT_sUSDE_22OCT2026",
+      "decimals": 18,
+      "symbol": "aPlaPT_sUSDE_22OCT2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x925a2A7214Ed92428B5b1B090F80b25700095e12",
+        "underlying": "0xf7fB83435F455Bd970F2D9f943f4eECE1941b3e9"
+      }
+    },
+    {
       "chainId": 4326,
       "address": "0x4200000000000000000000000000000000000006",
       "name": "Wrapped Ether",
@@ -10638,6 +10658,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 174 },
-  "timestamp": "2026-06-01T00:45:42.099Z"
+  "version": { "major": 3, "minor": 0, "patch": 175 },
+  "timestamp": "2026-06-21T00:48:00.603Z"
 }
