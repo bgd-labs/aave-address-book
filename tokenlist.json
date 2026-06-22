@@ -3636,6 +3636,26 @@
       }
     },
     {
+      "chainId": 1,
+      "address": "0x59bC9FaE5D62B19d4f8d07D758047aCb9EE19d34",
+      "name": "PT Strata Senior USDe 22OCT2026",
+      "decimals": 18,
+      "symbol": "PT-srUSDe-22OCT2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 1,
+      "address": "0x01E69a58ca3ddc695820ce6f66FBdf3fA55D0545",
+      "name": "Aave Ethereum PT_srUSDe_22OCT2026",
+      "decimals": 18,
+      "symbol": "aEthPT_srUSDe_22OCT2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+        "underlying": "0x59bC9FaE5D62B19d4f8d07D758047aCb9EE19d34"
+      }
+    },
+    {
       "chainId": 137,
       "address": "0x82E64f49Ed5EC1bC6e43DAD4FC8Af9bb3A2312EE",
       "name": "Aave Polygon DAI",
@@ -10658,6 +10678,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 175 },
-  "timestamp": "2026-06-21T00:48:00.603Z"
+  "version": { "major": 3, "minor": 0, "patch": 176 },
+  "timestamp": "2026-06-22T20:29:23.426Z"
 }

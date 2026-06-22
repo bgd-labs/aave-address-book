@@ -760,6 +760,15 @@ export const ASSETS = {
     INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
     ORACLE: '0x90498d4334259FA769830ccA9114D8bcF3745F6c',
   },
+  PT_srUSDe_22OCT2026: {
+    decimals: 18,
+    id: 66,
+    UNDERLYING: '0x59bC9FaE5D62B19d4f8d07D758047aCb9EE19d34',
+    A_TOKEN: '0x01E69a58ca3ddc695820ce6f66FBdf3fA55D0545',
+    V_TOKEN: '0x4Af166c6F2CF882f7B196E3625c3E8f2Fe2a8083',
+    INTEREST_RATE_STRATEGY: '0x9ec6F08190DeA04A54f8Afc53Db96134e5E3FdFB',
+    ORACLE: '0xBD1bc41479D0b58167584980fE57fDA913d4fB73',
+  },
 } as const;
 export const E_MODES = {
   '1': {
@@ -1518,6 +1527,40 @@ export const E_MODES = {
     ltv: 9380,
     liquidationThreshold: 9580,
     liquidationBonus: 10150,
+  },
+  '47': {
+    label: 'sUSDe,PT_srUSDe_22OCT2026 / USDC,USDT,USDe',
+    collateralBitmap: '73786976299133173760',
+    collateralAssets: [
+      '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+      '0x59bC9FaE5D62B19d4f8d07D758047aCb9EE19d34',
+    ],
+    borrowableBitmap: '1073742088',
+    borrowableAssets: [
+      '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+      '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+      '0x4c9EDD5852cd905f086C759E8383e09bff1E68B3',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 8842,
+    liquidationThreshold: 9042,
+    liquidationBonus: 10568,
+  },
+  '48': {
+    label: 'sUSDe,PT_srUSDe_22OCT2026 / USDe',
+    collateralBitmap: '73786976299133173760',
+    collateralAssets: [
+      '0x9D39A5DE30e57443BfF2A8307A4256c8797A3497',
+      '0x59bC9FaE5D62B19d4f8d07D758047aCb9EE19d34',
+    ],
+    borrowableBitmap: '1073741824',
+    borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 9106,
+    liquidationThreshold: 9306,
+    liquidationBonus: 10268,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {
