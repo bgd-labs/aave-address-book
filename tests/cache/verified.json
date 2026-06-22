@@ -14063,6 +14063,18 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xf7fB83435F455Bd970F2D9f943f4eECE1941b3e9": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x34D33fCaCC36b9A16CE1Cab8d7FB1CAF8B7C2d00": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8e1D74cf7bdD9F0339f807156F557536dF32a050": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9c823f4e19Ef68347810a9C139619273b8282b7e": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "42161": {
