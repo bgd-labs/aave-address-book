@@ -4652,6 +4652,12 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0x59bC9FaE5D62B19d4f8d07D758047aCb9EE19d34": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xBD1bc41479D0b58167584980fE57fDA913d4fB73": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "10": {
