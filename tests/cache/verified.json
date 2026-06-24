@@ -4664,6 +4664,18 @@
     },
     "0x4Af166c6F2CF882f7B196E3625c3E8f2Fe2a8083": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7433806912Eae67919e66aea853d46Fa0aef98A8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x49d3cdE03813eE32DFD47F6aA3957d5F9CbAB985": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x40606ce958e14AD6BA575B00402d07438c3d58aC": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB92A68763b2F83e094595c7B41a7FB9D0f8Da193": {
+      "name": "EACAggregatorProxy"
     }
   },
   "10": {
