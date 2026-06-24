@@ -43,7 +43,7 @@ jobs:
       - name: Generate library
         run: npm run generate:addresses
 
-      - uses: actions/create-github-app-token@v2
+      - uses: actions/create-github-app-token@v3
         id: app-token
         with:
           app-id: ${{ secrets.UPDATE_BOT_APP_ID }}
