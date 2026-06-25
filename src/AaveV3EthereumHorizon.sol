@@ -259,8 +259,8 @@ library AaveV3EthereumHorizonAssets {
   // https://etherscan.io/address/0x40606ce958e14AD6BA575B00402d07438c3d58aC
   address internal constant mGLOBAL_V_TOKEN = 0x40606ce958e14AD6BA575B00402d07438c3d58aC;
 
-  // https://etherscan.io/address/0xB92A68763b2F83e094595c7B41a7FB9D0f8Da193
-  address internal constant mGLOBAL_ORACLE = 0xB92A68763b2F83e094595c7B41a7FB9D0f8Da193;
+  // https://etherscan.io/address/0xe034De753a3d855B6daD1A4984de75a5c443E939
+  address internal constant mGLOBAL_ORACLE = 0xe034De753a3d855B6daD1A4984de75a5c443E939;
 
   // https://etherscan.io/address/0x87593272C06f4FC49EC2942eBda0972d2F1Ab521
   address internal constant mGLOBAL_INTEREST_RATE_STRATEGY =
