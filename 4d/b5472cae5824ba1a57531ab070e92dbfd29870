@@ -1,0 +1,30 @@
+scripts/generator/svgUtils.ts
+  h_739c25e72c37fb 5
+ui/src/components/ChainIcon.tsx
+  h_739c25e72c37fb 3
+ui/package.json
+  s_6442584d1f1cf2::t_37bcef27616ae9 13
+package-lock.json
+  s_6442584d1f1cf2::t_434c8cabec5c5f 15,38-55,1530-1550,2150,6901,6917,7233,8809,9444,9466
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "4db5472cae5824ba1a57531ab070e92dbfd29870",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_6442584d1f1cf2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b9eca354-402c-4f07-9c11-0c6e04aa488e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
