@@ -43,6 +43,12 @@ jobs:
       - name: Generate library
         run: npm run generate:addresses
 
+      - name: Update verified.json cache
+        continue-on-error: true
+        run: npx vitest run tests/verification.spec.ts
+        env:
+          ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+
       - uses: actions/create-github-app-token@v2
         id: app-token
         with:
