@@ -6816,6 +6816,20 @@
     },
     {
       "chainId": 42161,
+      "address": "0xd3642A6e9fa95961130497727DC3aE6c38D625E7",
+      "name": "Wrapped Aave Arbitrum AAVE",
+      "decimals": 18,
+      "symbol": "waArbAAVE",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/bgd-labs/web3-icons/main/icons/full/stataaave.svg",
+      "extensions": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "underlying": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196",
+        "underlyingAToken": "0xf329e36C7bF6E5E86ce2150875a84Ce77f477375"
+      }
+    },
+    {
+      "chainId": 42161,
       "address": "0xD22a58f79e9481D1a88e00c343885A588b34b68B",
       "name": "STASIS EURS Token",
       "decimals": 2,
@@ -10698,6 +10712,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 177 },
-  "timestamp": "2026-06-24T00:38:32.478Z"
+  "version": { "major": 3, "minor": 0, "patch": 178 },
+  "timestamp": "2026-06-26T15:58:53.204Z"
 }

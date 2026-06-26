@@ -4679,6 +4679,12 @@
     },
     "0xe034De753a3d855B6daD1A4984de75a5c443E939": {
       "name": "EACAggregatorProxy"
+    },
+    "0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x956d8e0A89cfa3744428C4641b5a53B56167a7f9": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
@@ -15859,6 +15865,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xd3642A6e9fa95961130497727DC3aE6c38D625E7": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42220": {
