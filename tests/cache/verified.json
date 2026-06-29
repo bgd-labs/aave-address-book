@@ -18087,6 +18087,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x3F727547A7F6af12156573253D91e44aC64845a3": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "59144": {
