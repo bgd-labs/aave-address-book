@@ -10381,6 +10381,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xe00B2732396a1f047d4A00e0165025A9cF400245": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "324": {

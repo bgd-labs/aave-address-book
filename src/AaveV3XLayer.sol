@@ -110,8 +110,8 @@ library AaveV3XLayerAssets {
   // https://www.oklink.com/xlayer/address/0xE6FC328D4DECB2Ae00E711743C04612ec963be46
   address internal constant USDG_V_TOKEN = 0xE6FC328D4DECB2Ae00E711743C04612ec963be46;
 
-  // https://www.oklink.com/xlayer/address/0xcFcBBF3E0C27b936Cf673c4FC8BcC68f721af475
-  address internal constant USDG_ORACLE = 0xcFcBBF3E0C27b936Cf673c4FC8BcC68f721af475;
+  // https://www.oklink.com/xlayer/address/0xe00B2732396a1f047d4A00e0165025A9cF400245
+  address internal constant USDG_ORACLE = 0xe00B2732396a1f047d4A00e0165025A9cF400245;
 
   // https://www.oklink.com/xlayer/address/0x3eFfeBDD435217A8B485dfaEFDecf766F2a3c05B
   address internal constant USDG_INTEREST_RATE_STRATEGY =
