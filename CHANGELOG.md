@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.56.0](https://github.com/aave-dao/aave-address-book/compare/v4.55.8...v4.56.0) (2026-06-29)
+
+
+### Features
+
+* label v4 paxos hub/spoke ([#1449](https://github.com/aave-dao/aave-address-book/issues/1449)) ([b36d9c9](https://github.com/aave-dao/aave-address-book/commit/b36d9c90c5a48b7d3eb0c9d8677f07dcabbb524f))
+
 ## [4.55.8](https://github.com/aave-dao/aave-address-book/compare/v4.55.7...v4.55.8) (2026-06-29)
 
 
