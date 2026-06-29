@@ -220,8 +220,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x33d3F390F266A21b0467efD559DC5fecD17Db52C
   address internal constant wrsETH_V_TOKEN = 0x33d3F390F266A21b0467efD559DC5fecD17Db52C;
 
-  // https://explorer.inkonchain.com/address/0x771a1668f973f2485D32580aB53F5C4934e81531
-  address internal constant wrsETH_ORACLE = 0x771a1668f973f2485D32580aB53F5C4934e81531;
+  // https://explorer.inkonchain.com/address/0x3F727547A7F6af12156573253D91e44aC64845a3
+  address internal constant wrsETH_ORACLE = 0x3F727547A7F6af12156573253D91e44aC64845a3;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant wrsETH_INTEREST_RATE_STRATEGY =

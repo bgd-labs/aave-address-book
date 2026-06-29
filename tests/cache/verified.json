@@ -10402,6 +10402,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xe00B2732396a1f047d4A00e0165025A9cF400245": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "324": {
@@ -18108,6 +18111,9 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x3F727547A7F6af12156573253D91e44aC64845a3": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "59144": {
