@@ -1,0 +1,19 @@
+package-lock.json
+  s_c06ce1f8132f2e::t_635110386f978c 2219-2221,2225,2228-2234
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "5d6d0309a55944fd7212f7790dca0996661ac7de",
+  "prompts": {},
+  "sessions": {
+    "s_c06ce1f8132f2e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "c5a5a42a-5023-4eb4-a7e9-6c5b60552b20",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
