@@ -1,0 +1,14 @@
+README.md
+  h_739c25e72c37fb 119
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "b0c58b7b16bffa2d9e7e47bf119a68cf6db91bff",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
