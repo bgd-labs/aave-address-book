@@ -11900,6 +11900,24 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x72E831E28Ba5A6d55Eb752981D0426b411E4dbbF": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3FBe2d59F93AD0e54077861E810B2868c544C333": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x31552822e76a991CEB44dE047A26441E530D6510": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0a21f20c528B54Ab54573A21f948B242d19E3ef1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x03A53f1FABC40D548198ECd79997600982B0a36E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xB955033Afc19816e83655C28461574D77b3097bb": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "5000": {
