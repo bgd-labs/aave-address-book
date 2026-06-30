@@ -102,6 +102,9 @@ library AaveV3MegaEthAssets {
   address internal constant WETH_INTEREST_RATE_STRATEGY =
     0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
 
+  // https://mega.etherscan.io/address/0x72E831E28Ba5A6d55Eb752981D0426b411E4dbbF
+  address internal constant WETH_STATA_TOKEN = 0x72E831E28Ba5A6d55Eb752981D0426b411E4dbbF;
+
   // https://mega.etherscan.io/address/0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072
   address internal constant BTCb_UNDERLYING = 0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072;
 
@@ -119,6 +122,9 @@ library AaveV3MegaEthAssets {
   // https://mega.etherscan.io/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
   address internal constant BTCb_INTEREST_RATE_STRATEGY =
     0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://mega.etherscan.io/address/0x3FBe2d59F93AD0e54077861E810B2868c544C333
+  address internal constant BTCb_STATA_TOKEN = 0x3FBe2d59F93AD0e54077861E810B2868c544C333;
 
   // https://mega.etherscan.io/address/0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb
   address internal constant USDT0_UNDERLYING = 0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb;
@@ -138,6 +144,9 @@ library AaveV3MegaEthAssets {
   address internal constant USDT0_INTEREST_RATE_STRATEGY =
     0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
 
+  // https://mega.etherscan.io/address/0x31552822e76a991CEB44dE047A26441E530D6510
+  address internal constant USDT0_STATA_TOKEN = 0x31552822e76a991CEB44dE047A26441E530D6510;
+
   // https://mega.etherscan.io/address/0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7
   address internal constant USDm_UNDERLYING = 0xFAfDdbb3FC7688494971a79cc65DCa3EF82079E7;
 
@@ -156,6 +165,9 @@ library AaveV3MegaEthAssets {
   address internal constant USDm_INTEREST_RATE_STRATEGY =
     0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
 
+  // https://mega.etherscan.io/address/0x0a21f20c528B54Ab54573A21f948B242d19E3ef1
+  address internal constant USDm_STATA_TOKEN = 0x0a21f20c528B54Ab54573A21f948B242d19E3ef1;
+
   // https://mega.etherscan.io/address/0x601aC63637933D88285A025C685AC4e9a92a98dA
   address internal constant wstETH_UNDERLYING = 0x601aC63637933D88285A025C685AC4e9a92a98dA;
 
@@ -173,6 +185,9 @@ library AaveV3MegaEthAssets {
   // https://mega.etherscan.io/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
   address internal constant wstETH_INTEREST_RATE_STRATEGY =
     0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://mega.etherscan.io/address/0x03A53f1FABC40D548198ECd79997600982B0a36E
+  address internal constant wstETH_STATA_TOKEN = 0x03A53f1FABC40D548198ECd79997600982B0a36E;
 
   // https://mega.etherscan.io/address/0x4Fc44BE15e9B6E30C1E774E2C87A21D3E8b5403F
   address internal constant wrsETH_UNDERLYING = 0x4Fc44BE15e9B6E30C1E774E2C87A21D3E8b5403F;
@@ -227,6 +242,9 @@ library AaveV3MegaEthAssets {
   // https://mega.etherscan.io/address/0x5cC4f782cFe249286476A7eFfD9D7bd215768194
   address internal constant USDe_INTEREST_RATE_STRATEGY =
     0x5cC4f782cFe249286476A7eFfD9D7bd215768194;
+
+  // https://mega.etherscan.io/address/0xB955033Afc19816e83655C28461574D77b3097bb
+  address internal constant USDe_STATA_TOKEN = 0xB955033Afc19816e83655C28461574D77b3097bb;
 }
 library AaveV3MegaEthEModes {
   uint8 internal constant NONE = 0;
