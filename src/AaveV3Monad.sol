@@ -46,10 +46,10 @@ library AaveV3Monad {
   ICollector internal constant COLLECTOR = ICollector(0x22A14267f9F8bA21D11898F0772e652B09e6A8A1);
 
   // https://monadscan.com/address/0xdB1E821a05E6028c6CD440FFE94F6bfCb3B3028d
-  address internal constant DEFAULT_A_TOKEN_IMPL_REV_1 = 0xdB1E821a05E6028c6CD440FFE94F6bfCb3B3028d;
+  address internal constant DEFAULT_A_TOKEN_IMPL = 0xdB1E821a05E6028c6CD440FFE94F6bfCb3B3028d;
 
   // https://monadscan.com/address/0xCCDA7A6386fb2fBE4B22a5485A599F6d68d95d78
-  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL_REV_1 =
+  address internal constant DEFAULT_VARIABLE_DEBT_TOKEN_IMPL =
     0xCCDA7A6386fb2fBE4B22a5485A599F6d68d95d78;
 
   // https://monadscan.com/address/0x25cA98Ab620Af65E8A9FB0F30989b9FFfb8e3163
@@ -77,9 +77,232 @@ library AaveV3Monad {
   // https://monadscan.com/address/0xf23C65c8C92E42e990786523744Db9d5cdcF6cbE
   address internal constant DUST_BIN = 0xf23C65c8C92E42e990786523744Db9d5cdcF6cbE;
 }
-library AaveV3MonadAssets {}
+library AaveV3MonadAssets {
+  // https://monadscan.com/address/0xe7cd86e13AC4309349F30B3435a9d337750fC82D
+  address internal constant USDT0_UNDERLYING = 0xe7cd86e13AC4309349F30B3435a9d337750fC82D;
+
+  uint8 internal constant USDT0_DECIMALS = 6;
+
+  // https://monadscan.com/address/0x9531E6bC99D7F7f0596ed7bA5b846Ba9Eb60468c
+  address internal constant USDT0_A_TOKEN = 0x9531E6bC99D7F7f0596ed7bA5b846Ba9Eb60468c;
+
+  // https://monadscan.com/address/0x85812C8eEeB8723e3C60d0Dc78e697b4E7e5a35D
+  address internal constant USDT0_V_TOKEN = 0x85812C8eEeB8723e3C60d0Dc78e697b4E7e5a35D;
+
+  // https://monadscan.com/address/0x3c187a25f0f05E009DA794069682653e40062730
+  address internal constant USDT0_ORACLE = 0x3c187a25f0f05E009DA794069682653e40062730;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant USDT0_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0x754704Bc059F8C67012fEd69BC8A327a5aafb603
+  address internal constant USDC_UNDERLYING = 0x754704Bc059F8C67012fEd69BC8A327a5aafb603;
+
+  uint8 internal constant USDC_DECIMALS = 6;
+
+  // https://monadscan.com/address/0x35a73BAcb179d3740395A3ceCc87FF2e581d6042
+  address internal constant USDC_A_TOKEN = 0x35a73BAcb179d3740395A3ceCc87FF2e581d6042;
+
+  // https://monadscan.com/address/0x9F555aB84C4e0a531B50283f09Dba7A97134c4e4
+  address internal constant USDC_V_TOKEN = 0x9F555aB84C4e0a531B50283f09Dba7A97134c4e4;
+
+  // https://monadscan.com/address/0x787962943811D279d01eC973Bd3A15f1b3e1F0D9
+  address internal constant USDC_ORACLE = 0x787962943811D279d01eC973Bd3A15f1b3e1F0D9;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant USDC_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34
+  address internal constant USDe_UNDERLYING = 0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34;
+
+  uint8 internal constant USDe_DECIMALS = 18;
+
+  // https://monadscan.com/address/0x37cAbe3eDD86165886877Cc8b6Be10269f21893d
+  address internal constant USDe_A_TOKEN = 0x37cAbe3eDD86165886877Cc8b6Be10269f21893d;
+
+  // https://monadscan.com/address/0x3BE6c069b81423BccF758eb95004E0324Af2cDD8
+  address internal constant USDe_V_TOKEN = 0x3BE6c069b81423BccF758eb95004E0324Af2cDD8;
+
+  // https://monadscan.com/address/0x3abA25B23378A84FD7638E20F9Af86A66000f090
+  address internal constant USDe_ORACLE = 0x3abA25B23378A84FD7638E20F9Af86A66000f090;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant USDe_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0xacA92E438df0B2401fF60dA7E4337B687a2435DA
+  address internal constant mUSD_UNDERLYING = 0xacA92E438df0B2401fF60dA7E4337B687a2435DA;
+
+  uint8 internal constant mUSD_DECIMALS = 6;
+
+  // https://monadscan.com/address/0xDBb2e1b6BC94328Df2662A1796AB6A23fCde3199
+  address internal constant mUSD_A_TOKEN = 0xDBb2e1b6BC94328Df2662A1796AB6A23fCde3199;
+
+  // https://monadscan.com/address/0x9837392b2b5b2Ce7C39A357E0eB6E07d9fFb76Cd
+  address internal constant mUSD_V_TOKEN = 0x9837392b2b5b2Ce7C39A357E0eB6E07d9fFb76Cd;
+
+  // https://monadscan.com/address/0xbbb58AA3a251c9f19653771c44481c39500b71A3
+  address internal constant mUSD_ORACLE = 0xbbb58AA3a251c9f19653771c44481c39500b71A3;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant mUSD_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a
+  address internal constant AUSD_UNDERLYING = 0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a;
+
+  uint8 internal constant AUSD_DECIMALS = 6;
+
+  // https://monadscan.com/address/0xdeBFeDF35faEd5d1664E553545e144C02227A2Ec
+  address internal constant AUSD_A_TOKEN = 0xdeBFeDF35faEd5d1664E553545e144C02227A2Ec;
+
+  // https://monadscan.com/address/0x8F4c10B392ef10c811E4d4BAFC74Bfc1A2671C75
+  address internal constant AUSD_V_TOKEN = 0x8F4c10B392ef10c811E4d4BAFC74Bfc1A2671C75;
+
+  // https://monadscan.com/address/0x6b7c151653c35845a5826b15435fc055A9Db1D0C
+  address internal constant AUSD_ORACLE = 0x6b7c151653c35845a5826b15435fc055A9Db1D0C;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant AUSD_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0xEE8c0E9f1BFFb4Eb878d8f15f368A02a35481242
+  address internal constant WETH_UNDERLYING = 0xEE8c0E9f1BFFb4Eb878d8f15f368A02a35481242;
+
+  uint8 internal constant WETH_DECIMALS = 18;
+
+  // https://monadscan.com/address/0x4377b53aAA8b8e3fF7AA2843832CAF004f5Cb8b6
+  address internal constant WETH_A_TOKEN = 0x4377b53aAA8b8e3fF7AA2843832CAF004f5Cb8b6;
+
+  // https://monadscan.com/address/0xd1f352c326731027f0d9a7f62a4742eBdf1EFc8c
+  address internal constant WETH_V_TOKEN = 0xd1f352c326731027f0d9a7f62a4742eBdf1EFc8c;
+
+  // https://monadscan.com/address/0x47F1D18329Ae59341617B7a5BE59605B63f0e373
+  address internal constant WETH_ORACLE = 0x47F1D18329Ae59341617B7a5BE59605B63f0e373;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant WETH_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0xd18B7EC58Cdf4876f6AFebd3Ed1730e4Ce10414b
+  address internal constant cbBTC_UNDERLYING = 0xd18B7EC58Cdf4876f6AFebd3Ed1730e4Ce10414b;
+
+  uint8 internal constant cbBTC_DECIMALS = 8;
+
+  // https://monadscan.com/address/0x1F5e388861A32226c716e922CE748a6FEE5e8e57
+  address internal constant cbBTC_A_TOKEN = 0x1F5e388861A32226c716e922CE748a6FEE5e8e57;
+
+  // https://monadscan.com/address/0x551a5fc4a05efFC8F9A026F4DC28634D4693Af1F
+  address internal constant cbBTC_V_TOKEN = 0x551a5fc4a05efFC8F9A026F4DC28634D4693Af1F;
+
+  // https://monadscan.com/address/0x48692d15DA2636E1b0335344104Ce9d92f231DdA
+  address internal constant cbBTC_ORACLE = 0x48692d15DA2636E1b0335344104Ce9d92f231DdA;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant cbBTC_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0x10Aeaf63194db8d453d4D85a06E5eFE1dd0b5417
+  address internal constant wstETH_UNDERLYING = 0x10Aeaf63194db8d453d4D85a06E5eFE1dd0b5417;
+
+  uint8 internal constant wstETH_DECIMALS = 18;
+
+  // https://monadscan.com/address/0xc31E3A273A93D238Ce49B053f801E8f385375df7
+  address internal constant wstETH_A_TOKEN = 0xc31E3A273A93D238Ce49B053f801E8f385375df7;
+
+  // https://monadscan.com/address/0xC4B1064b7377eF541d59B7e21C0B3F812C50d4Ec
+  address internal constant wstETH_V_TOKEN = 0xC4B1064b7377eF541d59B7e21C0B3F812C50d4Ec;
+
+  // https://monadscan.com/address/0x7c1DbD7879C421ebd1A2dE397Ea6Bedb5D3795A5
+  address internal constant wstETH_ORACLE = 0x7c1DbD7879C421ebd1A2dE397Ea6Bedb5D3795A5;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant wstETH_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0xA3D68b74bF0528fdD07263c60d6488749044914b
+  address internal constant weETH_UNDERLYING = 0xA3D68b74bF0528fdD07263c60d6488749044914b;
+
+  uint8 internal constant weETH_DECIMALS = 18;
+
+  // https://monadscan.com/address/0x4FAe5e2d191e012f503dE53023B0710f554FcFF0
+  address internal constant weETH_A_TOKEN = 0x4FAe5e2d191e012f503dE53023B0710f554FcFF0;
+
+  // https://monadscan.com/address/0x78540eD62E3F6081c906F7841A7e1A6201cb898E
+  address internal constant weETH_V_TOKEN = 0x78540eD62E3F6081c906F7841A7e1A6201cb898E;
+
+  // https://monadscan.com/address/0x53E2d62Cd8c36104DEC69bA0CB3Bb599d6D42FE1
+  address internal constant weETH_ORACLE = 0x53E2d62Cd8c36104DEC69bA0CB3Bb599d6D42FE1;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant weETH_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0xaB6e5a0C3799d020c790D34F7B2C02639e238AF7
+  address internal constant syrupUSDC_UNDERLYING = 0xaB6e5a0C3799d020c790D34F7B2C02639e238AF7;
+
+  uint8 internal constant syrupUSDC_DECIMALS = 6;
+
+  // https://monadscan.com/address/0xbc2A1FA0069e59e2552Ab40889520c7b0D413D9B
+  address internal constant syrupUSDC_A_TOKEN = 0xbc2A1FA0069e59e2552Ab40889520c7b0D413D9B;
+
+  // https://monadscan.com/address/0xE84F9B29568747Cb58B2969071e38093A384E26f
+  address internal constant syrupUSDC_V_TOKEN = 0xE84F9B29568747Cb58B2969071e38093A384E26f;
+
+  // https://monadscan.com/address/0xB1f36c815761a3F77CE26c013F646cdCdCd06384
+  address internal constant syrupUSDC_ORACLE = 0xB1f36c815761a3F77CE26c013F646cdCdCd06384;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant syrupUSDC_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2
+  address internal constant sUSDe_UNDERLYING = 0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2;
+
+  uint8 internal constant sUSDe_DECIMALS = 18;
+
+  // https://monadscan.com/address/0xCD11405D4a15a825B46254c42F5b5Cd8c2EDAe09
+  address internal constant sUSDe_A_TOKEN = 0xCD11405D4a15a825B46254c42F5b5Cd8c2EDAe09;
+
+  // https://monadscan.com/address/0x4cc35bFad4713705295Fd71DAE11CD57cc366Ca8
+  address internal constant sUSDe_V_TOKEN = 0x4cc35bFad4713705295Fd71DAE11CD57cc366Ca8;
+
+  // https://monadscan.com/address/0x99946Fe1a49D8650a31eFE0fcFee0508892742f0
+  address internal constant sUSDe_ORACLE = 0x99946Fe1a49D8650a31eFE0fcFee0508892742f0;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant sUSDe_INTEREST_RATE_STRATEGY =
+    0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+
+  // https://monadscan.com/address/0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73
+  address internal constant GHO_UNDERLYING = 0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73;
+
+  uint8 internal constant GHO_DECIMALS = 18;
+
+  // https://monadscan.com/address/0x4586face17B0e3D4d51EcABb4B4EBC2354b61b0D
+  address internal constant GHO_A_TOKEN = 0x4586face17B0e3D4d51EcABb4B4EBC2354b61b0D;
+
+  // https://monadscan.com/address/0x1dd98eDe37480c2E0827a107c68f442aA516E7fc
+  address internal constant GHO_V_TOKEN = 0x1dd98eDe37480c2E0827a107c68f442aA516E7fc;
+
+  // https://monadscan.com/address/0x26cBccD96502D2EfDb612737bD6aECe19f65109c
+  address internal constant GHO_ORACLE = 0x26cBccD96502D2EfDb612737bD6aECe19f65109c;
+
+  // https://monadscan.com/address/0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211
+  address internal constant GHO_INTEREST_RATE_STRATEGY = 0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211;
+}
 library AaveV3MonadEModes {
   uint8 internal constant NONE = 0;
+
+  uint8 internal constant syrupUSDC__USDT0_USDC_mUSD_AUSD_GHO = 1;
+
+  uint8 internal constant USDe_sUSDe__USDT0_USDC_AUSD_GHO = 2;
+
+  uint8 internal constant wstETH__WETH = 3;
+
+  uint8 internal constant weETH__WETH = 4;
 }
 library AaveV3MonadExternalLibraries {
   // https://monadscan.com/address/0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6
