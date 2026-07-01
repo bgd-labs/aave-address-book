@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.57.0](https://github.com/aave-dao/aave-address-book/compare/v4.56.2...v4.57.0) (2026-07-01)
+
+
+### Features
+
+* GHO monad ([#1463](https://github.com/aave-dao/aave-address-book/issues/1463)) ([5817dec](https://github.com/aave-dao/aave-address-book/commit/5817dec4e37764862492884c106f1b5e1a0d3ece))
+
 ## [4.56.2](https://github.com/aave-dao/aave-address-book/compare/v4.56.1...v4.56.2) (2026-07-01)
 
 
