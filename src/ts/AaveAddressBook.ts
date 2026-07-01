@@ -103,6 +103,7 @@ export * as GhoGnosis from './GhoGnosis';
 export * as GhoInk from './GhoInk';
 export * as GhoPlasma from './GhoPlasma';
 export * as GhoMantle from './GhoMantle';
+export * as GhoMonad from './GhoMonad';
 export * as GhoXLayer from './GhoXLayer';
 export * as UmbrellaEthereum from './UmbrellaEthereum';
 export * as UmbrellaBaseSepolia from './UmbrellaBaseSepolia';
