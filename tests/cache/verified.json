@@ -18294,6 +18294,9 @@
     },
     "0x3F727547A7F6af12156573253D91e44aC64845a3": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x32b1f1A1D3423dE69cf1f75092eCfDc5090d6624": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "59144": {
