@@ -149,8 +149,8 @@ library AaveV3InkWhitelabelAssets {
   // https://explorer.inkonchain.com/address/0x08443163427BaE789774f45198315f6EAefe566C
   address internal constant USDG_V_TOKEN = 0x08443163427BaE789774f45198315f6EAefe566C;
 
-  // https://explorer.inkonchain.com/address/0xdb3B1fa77CF2c9597f9d4871Bed1Df03D096fdf3
-  address internal constant USDG_ORACLE = 0xdb3B1fa77CF2c9597f9d4871Bed1Df03D096fdf3;
+  // https://explorer.inkonchain.com/address/0x32b1f1A1D3423dE69cf1f75092eCfDc5090d6624
+  address internal constant USDG_ORACLE = 0x32b1f1A1D3423dE69cf1f75092eCfDc5090d6624;
 
   // https://explorer.inkonchain.com/address/0xCFDAdA7DCd2e785cF706BaDBC2B8Af5084d595e9
   address internal constant USDG_INTEREST_RATE_STRATEGY =
