@@ -9801,6 +9801,24 @@
     },
     "0x26cBccD96502D2EfDb612737bD6aECe19f65109c": {
       "name": "OneUSDFixedAdapter"
+    },
+    "0x5E7109A755fD2b86361F95065cDE07FbAb50CA1D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xC554aFfE2f581F5E0811e0D42D484ECaC5c6B8e2": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6A7C826974994c4CE012B2fb32FE9D30d6366380": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9e1AcC5BFbf34e2E579763cE14042d957719fE76": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x967d427eF0Eb4AEB7a1B523A98B04061F094276B": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7c9e74e6C6E5DafAf9b44F60bf8eBbe81CA70d4F": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
