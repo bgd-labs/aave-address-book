@@ -12098,6 +12098,18 @@
     },
     "0xB955033Afc19816e83655C28461574D77b3097bb": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x88887bE419578051FF9F4eb6C858A951921D8888": {
+      "name": "ERC1967Proxy"
+    },
+    "0xB1B4B54780fDf4FFa82c9C1e83BEc12c63BC8eBB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9c9a07734F7a2A1467C4eE577E652F9a14E2bB72": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xBBC579Ee0A3fD6E9240965C5f57b7e5b3e3809A8": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "5000": {

@@ -10552,6 +10552,26 @@
       }
     },
     {
+      "chainId": 4326,
+      "address": "0x88887bE419578051FF9F4eb6C858A951921D8888",
+      "name": "Staked Cap USD",
+      "decimals": 18,
+      "symbol": "stcUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4326,
+      "address": "0xB1B4B54780fDf4FFa82c9C1e83BEc12c63BC8eBB",
+      "name": "Aave MegaEth stcUSD",
+      "decimals": 18,
+      "symbol": "aMegstcUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x7e324AbC5De01d112AfC03a584966ff199741C28",
+        "underlying": "0x88887bE419578051FF9F4eb6C858A951921D8888"
+      }
+    },
+    {
       "chainId": 196,
       "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
       "name": "USD₮0",
@@ -11146,6 +11166,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 182 },
-  "timestamp": "2026-07-04T02:29:42.845Z"
+  "version": { "major": 3, "minor": 0, "patch": 183 },
+  "timestamp": "2026-07-05T02:39:55.206Z"
 }
