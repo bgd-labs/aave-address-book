@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.57.3](https://github.com/aave-dao/aave-address-book/compare/v4.57.2...v4.57.3) (2026-07-05)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1471](https://github.com/aave-dao/aave-address-book/issues/1471)) ([a7be166](https://github.com/aave-dao/aave-address-book/commit/a7be166ebcc34e04435eb3e6993a83b0eaf19b55))
+
+## [4.57.2](https://github.com/aave-dao/aave-address-book/compare/v4.57.1...v4.57.2) (2026-07-04)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1469](https://github.com/aave-dao/aave-address-book/issues/1469)) ([0cf21c8](https://github.com/aave-dao/aave-address-book/commit/0cf21c8bd579aa21dbde12db218fb4d712bf98f6))
+
+## [4.57.1](https://github.com/aave-dao/aave-address-book/compare/v4.57.0...v4.57.1) (2026-07-03)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1467](https://github.com/aave-dao/aave-address-book/issues/1467)) ([c980abc](https://github.com/aave-dao/aave-address-book/commit/c980abc7242db9ec965cf126360247d6d0c8ccac))
+
+## [4.57.0](https://github.com/aave-dao/aave-address-book/compare/v4.56.2...v4.57.0) (2026-07-01)
+
+
+### Features
+
+* GHO monad ([#1463](https://github.com/aave-dao/aave-address-book/issues/1463)) ([5817dec](https://github.com/aave-dao/aave-address-book/commit/5817dec4e37764862492884c106f1b5e1a0d3ece))
+
+## [4.56.2](https://github.com/aave-dao/aave-address-book/compare/v4.56.1...v4.56.2) (2026-07-01)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1464](https://github.com/aave-dao/aave-address-book/issues/1464)) ([5c96c15](https://github.com/aave-dao/aave-address-book/commit/5c96c156852eb2f3fefc5f2a3d53098cea3d90be))
+
 ## [4.56.1](https://github.com/aave-dao/aave-address-book/compare/v4.56.0...v4.56.1) (2026-06-30)
 
 

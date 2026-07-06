@@ -83,6 +83,7 @@ import { ghoGnosis } from 'scripts/configs/gho/gnosis';
 import { ghoInk } from 'scripts/configs/gho/ink';
 import { ghoPlasma } from 'scripts/configs/gho/plasma';
 import { ghoMantle } from 'scripts/configs/gho/mantle';
+import { ghoMonad } from 'scripts/configs/gho/monad';
 import { ghoXLayer } from 'scripts/configs/gho/xlayer';
 import { generateGho } from 'scripts/generator/ghoGenerator';
 import { governanceConfigLinea } from 'scripts/configs/governance/linea';
@@ -204,7 +205,7 @@ async function main() {
     [mainnetV4Config].map((config) => generateProtocolV4Library(config)),
   );
 
-  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle, ghoXLayer].map((config) =>
+  const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle, ghoMonad, ghoXLayer].map((config) =>
     generateGho(config),
   );
   const umbrellaAddresses = await Promise.all(
