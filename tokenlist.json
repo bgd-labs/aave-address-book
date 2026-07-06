@@ -10552,6 +10552,26 @@
       }
     },
     {
+      "chainId": 4326,
+      "address": "0x88887bE419578051FF9F4eb6C858A951921D8888",
+      "name": "Staked Cap USD",
+      "decimals": 18,
+      "symbol": "stcUSD",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 4326,
+      "address": "0xB1B4B54780fDf4FFa82c9C1e83BEc12c63BC8eBB",
+      "name": "Aave MegaEth stcUSD",
+      "decimals": 18,
+      "symbol": "aMegstcUSD",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x7e324AbC5De01d112AfC03a584966ff199741C28",
+        "underlying": "0x88887bE419578051FF9F4eb6C858A951921D8888"
+      }
+    },
+    {
       "chainId": 196,
       "address": "0x779Ded0c9e1022225f8E0630b35a9b54bE713736",
       "name": "USD₮0",
@@ -10771,6 +10791,20 @@
     },
     {
       "chainId": 143,
+      "address": "0x5E7109A755fD2b86361F95065cDE07FbAb50CA1D",
+      "name": "Wrapped Aave Monad USDT0",
+      "decimals": 6,
+      "symbol": "waMonUSDT0",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/aave-dao/web3-icons/main/icons/full/statausdt0.svg",
+      "extensions": {
+        "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+        "underlying": "0xe7cd86e13AC4309349F30B3435a9d337750fC82D",
+        "underlyingAToken": "0x9531E6bC99D7F7f0596ed7bA5b846Ba9Eb60468c"
+      }
+    },
+    {
+      "chainId": 143,
       "address": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
       "name": "USDC",
       "decimals": 6,
@@ -10789,6 +10823,20 @@
       "extensions": {
         "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
         "underlying": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603"
+      }
+    },
+    {
+      "chainId": 143,
+      "address": "0xC554aFfE2f581F5E0811e0D42D484ECaC5c6B8e2",
+      "name": "Wrapped Aave Monad USDC",
+      "decimals": 6,
+      "symbol": "waMonUSDC",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/aave-dao/web3-icons/main/icons/full/statausdc.svg",
+      "extensions": {
+        "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+        "underlying": "0x754704Bc059F8C67012fEd69BC8A327a5aafb603",
+        "underlyingAToken": "0x35a73BAcb179d3740395A3ceCc87FF2e581d6042"
       }
     },
     {
@@ -10837,6 +10885,20 @@
     },
     {
       "chainId": 143,
+      "address": "0x6A7C826974994c4CE012B2fb32FE9D30d6366380",
+      "name": "Wrapped Aave Monad mUSD",
+      "decimals": 6,
+      "symbol": "waMonmUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/aave-dao/web3-icons/main/icons/full/statamusd.svg",
+      "extensions": {
+        "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+        "underlying": "0xacA92E438df0B2401fF60dA7E4337B687a2435DA",
+        "underlyingAToken": "0xDBb2e1b6BC94328Df2662A1796AB6A23fCde3199"
+      }
+    },
+    {
+      "chainId": 143,
       "address": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
       "name": "AUSD",
       "decimals": 6,
@@ -10859,6 +10921,20 @@
     },
     {
       "chainId": 143,
+      "address": "0x9e1AcC5BFbf34e2E579763cE14042d957719fE76",
+      "name": "Wrapped Aave Monad AUSD",
+      "decimals": 6,
+      "symbol": "waMonAUSD",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/aave-dao/web3-icons/main/icons/full/stataausd.svg",
+      "extensions": {
+        "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+        "underlying": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+        "underlyingAToken": "0xdeBFeDF35faEd5d1664E553545e144C02227A2Ec"
+      }
+    },
+    {
+      "chainId": 143,
       "address": "0xEE8c0E9f1BFFb4Eb878d8f15f368A02a35481242",
       "name": "Wrapped Ether",
       "decimals": 18,
@@ -10877,6 +10953,20 @@
       "extensions": {
         "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
         "underlying": "0xEE8c0E9f1BFFb4Eb878d8f15f368A02a35481242"
+      }
+    },
+    {
+      "chainId": 143,
+      "address": "0x967d427eF0Eb4AEB7a1B523A98B04061F094276B",
+      "name": "Wrapped Aave Monad WETH",
+      "decimals": 18,
+      "symbol": "waMonWETH",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/aave-dao/web3-icons/main/icons/full/stataweth.svg",
+      "extensions": {
+        "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+        "underlying": "0xEE8c0E9f1BFFb4Eb878d8f15f368A02a35481242",
+        "underlyingAToken": "0x4377b53aAA8b8e3fF7AA2843832CAF004f5Cb8b6"
       }
     },
     {
@@ -11010,6 +11100,20 @@
       }
     },
     {
+      "chainId": 143,
+      "address": "0x7c9e74e6C6E5DafAf9b44F60bf8eBbe81CA70d4F",
+      "name": "Wrapped Aave Monad GHO",
+      "decimals": 18,
+      "symbol": "waMonGHO",
+      "tags": ["aaveV3", "stataToken"],
+      "logoURI": "https://raw.githubusercontent.com/aave-dao/web3-icons/main/icons/full/statagho.svg",
+      "extensions": {
+        "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+        "underlying": "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73",
+        "underlyingAToken": "0x4586face17B0e3D4d51EcABb4B4EBC2354b61b0D"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -11062,6 +11166,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 181 },
-  "timestamp": "2026-07-02T18:17:46.515Z"
+  "version": { "major": 3, "minor": 0, "patch": 183 },
+  "timestamp": "2026-07-05T02:39:55.206Z"
 }

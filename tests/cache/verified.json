@@ -9667,6 +9667,21 @@
     "0x2f09b9D890535c2b5c81b1b95F7f92eeed5B9d5D": {
       "name": "TransparentProxyFactory"
     },
+    "0xA5AE05b71c3F170E12E7620Fdf7679721aec1EC8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDe6539018B095353A40753Dc54C91C68c9487D4E": {
+      "name": "GhoBucketSteward"
+    },
+    "0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12": {
+      "name": "GhoCcipSteward"
+    },
+    "0xA5Ba213867E175A182a5dd6A9193C6158738105A": {
+      "name": "GhoAaveSteward"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
+    },
     "0xe7cd86e13AC4309349F30B3435a9d337750fC82D": {
       "name": "TransparentUpgradeableProxy"
     },
@@ -9813,6 +9828,24 @@
     },
     "0x26cBccD96502D2EfDb612737bD6aECe19f65109c": {
       "name": "OneUSDFixedAdapter"
+    },
+    "0x5E7109A755fD2b86361F95065cDE07FbAb50CA1D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xC554aFfE2f581F5E0811e0D42D484ECaC5c6B8e2": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6A7C826974994c4CE012B2fb32FE9D30d6366380": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9e1AcC5BFbf34e2E579763cE14042d957719fE76": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x967d427eF0Eb4AEB7a1B523A98B04061F094276B": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7c9e74e6C6E5DafAf9b44F60bf8eBbe81CA70d4F": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
@@ -12092,6 +12125,18 @@
     },
     "0xB955033Afc19816e83655C28461574D77b3097bb": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x88887bE419578051FF9F4eb6C858A951921D8888": {
+      "name": "ERC1967Proxy"
+    },
+    "0xB1B4B54780fDf4FFa82c9C1e83BEc12c63BC8eBB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9c9a07734F7a2A1467C4eE577E652F9a14E2bB72": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xBBC579Ee0A3fD6E9240965C5f57b7e5b3e3809A8": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "5000": {
@@ -18306,6 +18351,9 @@
     },
     "0x3F727547A7F6af12156573253D91e44aC64845a3": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x32b1f1A1D3423dE69cf1f75092eCfDc5090d6624": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "59144": {
