@@ -1,0 +1,92 @@
+scripts/configs/v4/avalanche.ts
+  s_ba687835aa411c::t_d297f14b862e09 18-20
+  h_739c25e72c37fb 1-17,21-32
+scripts/generator/protocol-v4-generator/fetchTokenizationSpokes.ts
+  s_ba687835aa411c::t_2fd9663681c09b 13-16
+  s_ba687835aa411c::t_b89561f88a068d 78,82-83
+safe.csv
+  s_ba687835aa411c::t_8156b9a6ef19c8 5032-5093
+src/AaveV4Avalanche.sol
+  s_ba687835aa411c::t_282d92b20c9b74 167
+  s_ba687835aa411c::t_9b812a3090a6e5 174-175
+  s_ba687835aa411c::t_96aa10e44c33bc 182
+  s_ba687835aa411c::t_08b1d24fc91c91 184-185
+  s_ba687835aa411c::t_18587e8d13d719 164-165
+  s_ba687835aa411c::t_ef9d5d9bd4b261 120-122
+  s_ba687835aa411c::t_2ebb8d9020f252 112-114
+  s_ba687835aa411c::t_6edeb58e5acbed 7-9,187-188
+  s_ba687835aa411c::t_b873d0e715aee6 1-6,26,30,57,98,111,115,119,123,132,136,140,144,156,158,161,163,166,168,171,173,176,178,181,183,186,189-231
+  s_ba687835aa411c::t_1ab7b3b59898a2 10-25
+  s_ba687835aa411c::t_90e58fe546cc66 58-97
+  s_ba687835aa411c::t_1a875b3de48161 177
+  s_ba687835aa411c::t_4c104dae576631 179-180
+  s_ba687835aa411c::t_4feff0adb59db7 172
+  s_ba687835aa411c::t_dcb60e8bb2ced9 27-29
+  s_ba687835aa411c::t_c7d6dcd131238a 169-170
+  s_ba687835aa411c::t_9936bb2237457d 133-135
+  s_ba687835aa411c::t_f50e2f7203b337 116-118
+  s_ba687835aa411c::t_9dbee5c181b0c1 159-160
+  s_ba687835aa411c::t_f26b3469f55f90 137-139
+  s_ba687835aa411c::t_ed46a4b8359c38 141-143
+  s_ba687835aa411c::t_ad19baa44cbbc5 157
+  s_ba687835aa411c::t_febce66d955369 31-56
+  s_ba687835aa411c::t_bfe1cbfd55b8e8 124-131
+  s_ba687835aa411c::t_56aca4d348b7d4 145-155
+  s_ba687835aa411c::t_5a24d4afd46368 162
+  s_ba687835aa411c::t_35c348b74ce7c1 99-110
+scripts/generateAddresses.ts
+  h_739c25e72c37fb 40,206
+src/ts/AaveAddressBook.ts
+  s_ba687835aa411c::t_b873d0e715aee6 66
+tests/cache/verified.json
+  s_ba687835aa411c::t_7658c50120eaf0 17975-17976
+  s_ba687835aa411c::t_76937603f761e3 17978-17979
+  s_ba687835aa411c::t_30335c0aa214ad 17971-17973
+  s_ba687835aa411c::t_8156b9a6ef19c8 17917-17970,17990
+  s_ba687835aa411c::t_26bea856154666 17981-17982
+  s_ba687835aa411c::t_09628743b0dbf6 17983-17985,17991
+  s_ba687835aa411c::t_1f2fdca61b8d98 17974,17977,17980
+  s_ba687835aa411c::t_8ccd83b9a57064 17986-17989
+scripts/generator/utils.ts
+  s_ba687835aa411c::t_3f889eadb676e3 117-120,122
+src/ts/AaveV4Avalanche.ts
+  s_ba687835aa411c::t_9ddfb26238dc11 24-30
+  s_ba687835aa411c::t_6edeb58e5acbed 3,6,9,12,15,101-103,105-112,114-125,127
+  s_ba687835aa411c::t_cef7a00859c80d 104
+  s_ba687835aa411c::t_a3adf4f0316f68 78-80
+  s_ba687835aa411c::t_edaf404ebca0ff 86-88
+  s_ba687835aa411c::t_bcd6685c8084e9 113
+  s_ba687835aa411c::t_f7f2b5b0bbe0a2 66
+  s_ba687835aa411c::t_1cbbb040eb1a9b 70-72
+  s_ba687835aa411c::t_01ab82707a53d6 90-92
+  s_ba687835aa411c::t_fae75c0d0078f9 82-84
+  s_ba687835aa411c::t_b30f569b390ac4 74-76
+  s_ba687835aa411c::t_941cf9026b0d4a 20
+  s_ba687835aa411c::t_b873d0e715aee6 1-2,4-5,7-8,10-11,13-14,16-19,21-23,31-33,45-47,55-57,63-65,67-69,73,77,81,85,89,93,98-100
+  s_ba687835aa411c::t_4f284b55ed943c 34-44
+  s_ba687835aa411c::t_25717f3321afc9 94-97
+  s_ba687835aa411c::t_861707d864b1f5 48-54
+  s_ba687835aa411c::t_fb4056d84b7793 58-62
+  s_ba687835aa411c::t_a5e0851b76c1c4 126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "a3dc58f9d09ecdf8e7fb07ab8aa50564e506d5bb",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_ba687835aa411c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "64907ff3-38e2-4e0d-81b1-8a6d0569fe8e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
