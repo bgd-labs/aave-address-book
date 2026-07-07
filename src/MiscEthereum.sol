@@ -134,7 +134,7 @@ library MiscEthereum {
     0x1BDecEAE83c6Ca0f4D78Ee46D40881FAb26b10b1;
 
   // https://etherscan.io/address/0xCD18eAa163733Da39c232722cBC4E8940b1D8888
-  address internal constant SABLIER_DAO_WALLET_VESTING = 0xCD18eAa163733Da39c232722cBC4E8940b1D8888;
+  address internal constant SABLIER = 0xCD18eAa163733Da39c232722cBC4E8940b1D8888;
 
   // https://etherscan.io/address/0xbC540e0729B732fb14afA240aA5A047aE9ba7dF0
   address internal constant CHAOS_LABS = 0xbC540e0729B732fb14afA240aA5A047aE9ba7dF0;
