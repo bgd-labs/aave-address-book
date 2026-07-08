@@ -1,6 +1,6 @@
 'use client';
 
-import { Web3Icon } from '@bgd-labs/react-web3-icons';
+import { Web3Icon } from '@aave-dao/react-web3-icons';
 
 type Props = {
   chainId?: number | null;
