@@ -218,6 +218,31 @@ function buildTsRawGetter(
   return `export const ${exportName} = [${items}] as const;`;
 }
 
+const POSITION_MANAGER_STRUCT_FIELDS: {field: string; key: string; iface: string}[] = [
+  {field: 'giver', key: 'GIVER_POSITION_MANAGER', iface: 'IGiverPositionManager'},
+  {field: 'taker', key: 'TAKER_POSITION_MANAGER', iface: 'ITakerPositionManager'},
+  {field: 'config', key: 'CONFIG_POSITION_MANAGER', iface: 'IConfigPositionManager'},
+  {field: 'nativeGateway', key: 'NATIVE_TOKEN_GATEWAY', iface: 'INativeTokenGateway'},
+  {field: 'signatureGateway', key: 'SIGNATURE_GATEWAY', iface: 'ISignatureGateway'},
+];
+
+function buildPositionManagersGetter(libraryName: string, pmAddresses: Addresses): string {
+  const fields = POSITION_MANAGER_STRUCT_FIELDS.map(({field, key, iface}) => {
+    const entry = pmAddresses[key];
+    const value = typeof entry === 'object' ? entry.value : entry;
+    const assigned =
+      value && value !== zeroAddress ? `${libraryName}.${keyToVar(key)}` : `${iface}(address(0))`;
+    return `      ${field}: ${assigned}`;
+  }).join(',\n');
+  return [
+    '  function getPositionManagers() internal pure returns (PositionManagers memory) {',
+    '    return PositionManagers({',
+    fields,
+    '    });',
+    '  }',
+  ].join('\n');
+}
+
 export async function generateProtocolV4Library(config: V4Config) {
   const client = getClient(config.chainId);
   if (!client) {
@@ -276,7 +301,7 @@ export async function generateProtocolV4Library(config: V4Config) {
   const name = `AaveV4${config.name}`;
   const chainId = config.chainId;
 
-  const imports = `import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable} from './AaveV4.sol';\n`;
+  const imports = `import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, PositionManagers} from './AaveV4.sol';\n`;
 
   // Main library (core addresses)
   const mainAddresses = buildMainLibraryAddresses(config);
@@ -505,6 +530,10 @@ export async function generateProtocolV4Library(config: V4Config) {
       buildSolidityRawGetter('getAllSpokesRaw', 'spokes', rawSpokeEntries, unknownSpokes),
     );
     tsGetterLines.push(buildTsRawGetter('ALL_SPOKES_RAW', rawSpokeTsEntries, unknownSpokes));
+  }
+
+  if (Object.keys(pmAddresses).length > 0) {
+    solGetterFns.push(buildPositionManagersGetter(`${name}PositionManagers`, pmAddresses));
   }
 
   if (solGetterFns.length > 0) {
