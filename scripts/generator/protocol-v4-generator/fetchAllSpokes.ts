@@ -39,7 +39,7 @@ export async function fetchAllSpokes(
     })),
   });
 
-  const allSpokes = addresses.map(getAddress);
+  const allSpokes = addresses.map((a) => getAddress(a));
   const spokesByAssetId = new Map<number, Hex[]>();
   for (const asset of assets) spokesByAssetId.set(asset.assetId, []);
   tasks.forEach((task, i) => spokesByAssetId.get(task.assetId)!.push(allSpokes[i]));

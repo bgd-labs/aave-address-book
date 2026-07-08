@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable} from './AaveV4.sol';
+import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, PositionManagers} from './AaveV4.sol';
 library AaveV4Ethereum {
   // https://etherscan.io/address/0x08aE3BE30958cDd1847ec58fFfd4C451a87fDF01
   IAccessManagerEnumerable internal constant ACCESS_MANAGER =
@@ -228,9 +228,9 @@ library AaveV4EthereumSpokePriceFeeds {
   address internal constant FOREX_SPOKE_RLUSD_PRICE_FEED =
     0xf0eaC18E908B34770FDEe46d069c846bDa866759;
 
-  // https://etherscan.io/address/0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d
+  // https://etherscan.io/address/0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4
   address internal constant FOREX_SPOKE_USDG_PRICE_FEED =
-    0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d;
+    0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4;
 
   // https://etherscan.io/address/0x25DEd2f9aE6ae9416693AB63Abe3aB25493861FD
   address internal constant FOREX_SPOKE_frxUSD_PRICE_FEED =
@@ -249,8 +249,8 @@ library AaveV4EthereumSpokePriceFeeds {
   address internal constant GOLD_SPOKE_RLUSD_PRICE_FEED =
     0xf0eaC18E908B34770FDEe46d069c846bDa866759;
 
-  // https://etherscan.io/address/0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d
-  address internal constant GOLD_SPOKE_USDG_PRICE_FEED = 0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d;
+  // https://etherscan.io/address/0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4
+  address internal constant GOLD_SPOKE_USDG_PRICE_FEED = 0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4;
 
   // https://etherscan.io/address/0x25DEd2f9aE6ae9416693AB63Abe3aB25493861FD
   address internal constant GOLD_SPOKE_frxUSD_PRICE_FEED =
@@ -314,8 +314,8 @@ library AaveV4EthereumSpokePriceFeeds {
   address internal constant MAIN_SPOKE_RLUSD_PRICE_FEED =
     0xf0eaC18E908B34770FDEe46d069c846bDa866759;
 
-  // https://etherscan.io/address/0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d
-  address internal constant MAIN_SPOKE_USDG_PRICE_FEED = 0xF29b1e3b68Fd59DD0a413811fD5d0AbaE653216d;
+  // https://etherscan.io/address/0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4
+  address internal constant MAIN_SPOKE_USDG_PRICE_FEED = 0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4;
 
   // https://etherscan.io/address/0x25DEd2f9aE6ae9416693AB63Abe3aB25493861FD
   address internal constant MAIN_SPOKE_frxUSD_PRICE_FEED =
@@ -668,7 +668,7 @@ library AaveV4EthereumGetters {
   }
 
   function getAllSpokesRaw() internal pure returns (address[] memory) {
-    address[] memory spokes = new address[](42);
+    address[] memory spokes = new address[](43);
     spokes[0] = address(AaveV4EthereumSpokes.TREASURY_SPOKE);
     spokes[1] = address(AaveV4EthereumSpokes.BLUECHIP_SPOKE);
     spokes[2] = address(AaveV4EthereumSpokes.ETHENA_CORRELATED_SPOKE);
@@ -713,6 +713,18 @@ library AaveV4EthereumGetters {
     spokes[39] = address(AaveV4EthereumTokenizationSpokes.PRIME_USDC_TOKENIZATION_SPOKE);
     spokes[40] = address(AaveV4EthereumTokenizationSpokes.PRIME_USDT_TOKENIZATION_SPOKE);
     spokes[41] = address(AaveV4EthereumTokenizationSpokes.PRIME_GHO_TOKENIZATION_SPOKE);
+    spokes[42] = 0x956d8e0A89cfa3744428C4641b5a53B56167a7f9;
     return spokes;
+  }
+
+  function getPositionManagers() internal pure returns (PositionManagers memory) {
+    return
+      PositionManagers({
+        giver: AaveV4EthereumPositionManagers.GIVER_POSITION_MANAGER,
+        taker: AaveV4EthereumPositionManagers.TAKER_POSITION_MANAGER,
+        config: AaveV4EthereumPositionManagers.CONFIG_POSITION_MANAGER,
+        nativeGateway: AaveV4EthereumPositionManagers.NATIVE_TOKEN_GATEWAY,
+        signatureGateway: AaveV4EthereumPositionManagers.SIGNATURE_GATEWAY
+      });
   }
 }
