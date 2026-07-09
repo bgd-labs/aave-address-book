@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable} from './AaveV4.sol';
+import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, PositionManagers} from './AaveV4.sol';
 library AaveV4Ethereum {
   // https://etherscan.io/address/0x08aE3BE30958cDd1847ec58fFfd4C451a87fDF01
   IAccessManagerEnumerable internal constant ACCESS_MANAGER =
@@ -770,5 +770,16 @@ library AaveV4EthereumGetters {
     spokes[44] = address(AaveV4EthereumTokenizationSpokes.PAXOS_USDC_TOKENIZATION_SPOKE);
     spokes[45] = address(AaveV4EthereumTokenizationSpokes.PAXOS_USDT_TOKENIZATION_SPOKE);
     return spokes;
+  }
+
+  function getPositionManagers() internal pure returns (PositionManagers memory) {
+    return
+      PositionManagers({
+        giver: AaveV4EthereumPositionManagers.GIVER_POSITION_MANAGER,
+        taker: AaveV4EthereumPositionManagers.TAKER_POSITION_MANAGER,
+        config: AaveV4EthereumPositionManagers.CONFIG_POSITION_MANAGER,
+        nativeGateway: AaveV4EthereumPositionManagers.NATIVE_TOKEN_GATEWAY,
+        signatureGateway: AaveV4EthereumPositionManagers.SIGNATURE_GATEWAY
+      });
   }
 }
