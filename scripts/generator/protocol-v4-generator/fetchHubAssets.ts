@@ -9,6 +9,7 @@ export interface FetchedHubAsset {
   decimals: number;
   assetId: number;
   feeReceiver: Hex;
+  irStrategy: Hex;
 }
 
 export async function fetchHubAssets(client: Client, hubAddress: Hex): Promise<FetchedHubAsset[]> {
@@ -49,5 +50,6 @@ export async function fetchHubAssets(client: Client, hubAddress: Hex): Promise<F
     decimals: asset.decimals,
     assetId: assetIds[i],
     feeReceiver: asset.feeReceiver,
+    irStrategy: asset.irStrategy,
   }));
 }

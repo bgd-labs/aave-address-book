@@ -123,6 +123,19 @@ function buildTokenizationSpokesAddresses(resolvedHubs: Record<string, ResolvedH
   return addresses;
 }
 
+function buildIRStrategiesAddresses(resolvedHubs: Record<string, ResolvedHub>): Addresses {
+  const addresses: Addresses = {};
+  for (const [hubName, hubData] of Object.entries(resolvedHubs)) {
+    for (const asset of hubData.assets) {
+      addresses[`${hubName}_${asset.symbol}_IR_STRATEGY`] = {
+        value: asset.irStrategy,
+        type: 'IBasicInterestRateStrategy',
+      };
+    }
+  }
+  return addresses;
+}
+
 function buildPositionManagersAddresses(config: V4Config): Addresses {
   const addresses: Addresses = {};
   for (const [key, value] of Object.entries(config.positionManagers ?? {})) {
@@ -301,7 +314,7 @@ export async function generateProtocolV4Library(config: V4Config) {
   const name = `AaveV4${config.name}`;
   const chainId = config.chainId;
 
-  const imports = `import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, PositionManagers} from './AaveV4.sol';\n`;
+  const imports = `import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, IBasicInterestRateStrategy, PositionManagers} from './AaveV4.sol';\n`;
 
   // Main library (core addresses)
   const mainAddresses = buildMainLibraryAddresses(config);
@@ -395,6 +408,23 @@ export async function generateProtocolV4Library(config: V4Config) {
     appendFileSync(
       `./src/ts/${name}.ts`,
       `\nexport const TOKENIZATION_SPOKES = ${generateJsObject(tokenSpokesAddresses)} as const;\n`,
+    );
+  }
+
+  // IR Strategies library (per-hub, per-asset interest rate strategies)
+  const irStrategiesAddresses = buildIRStrategiesAddresses(resolvedHubs);
+  if (Object.keys(irStrategiesAddresses).length > 0) {
+    const irStrategiesLibraryName = `${name}IRStrategies`;
+    appendFileSync(
+      `./src/${name}.sol`,
+      wrapIntoSolidityLibrary(
+        generateSolidityConstants({chainId, addresses: irStrategiesAddresses}),
+        irStrategiesLibraryName,
+      ),
+    );
+    appendFileSync(
+      `./src/ts/${name}.ts`,
+      `\nexport const IR_STRATEGIES = ${generateJsObject(irStrategiesAddresses)} as const;\n`,
     );
   }
 

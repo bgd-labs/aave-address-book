@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, PositionManagers} from './AaveV4.sol';
+import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, IBasicInterestRateStrategy, PositionManagers} from './AaveV4.sol';
 library AaveV4Avalanche {
   // https://snowscan.xyz/address/0xe069096bDAfF9bAD15b2f1079EaF0f1685a24522
   IAccessManagerEnumerable internal constant ACCESS_MANAGER =
@@ -124,6 +124,35 @@ library AaveV4AvalancheTokenizationSpokes {
   // https://snowscan.xyz/address/0x6c27A7435040B7cC512319d5690BeEF234dfE76e
   ITokenizationSpoke internal constant CORE_sAVAX_TOKENIZATION_SPOKE =
     ITokenizationSpoke(0x6c27A7435040B7cC512319d5690BeEF234dfE76e);
+}
+library AaveV4AvalancheIRStrategies {
+  // https://snowscan.xyz/address/0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4
+  IBasicInterestRateStrategy internal constant CORE_WAVAX_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4);
+
+  // https://snowscan.xyz/address/0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4
+  IBasicInterestRateStrategy internal constant CORE_BTCb_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4);
+
+  // https://snowscan.xyz/address/0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4
+  IBasicInterestRateStrategy internal constant CORE_USDC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4);
+
+  // https://snowscan.xyz/address/0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4
+  IBasicInterestRateStrategy internal constant CORE_USDt_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4);
+
+  // https://snowscan.xyz/address/0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4
+  IBasicInterestRateStrategy internal constant CORE_WETHe_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4);
+
+  // https://snowscan.xyz/address/0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4
+  IBasicInterestRateStrategy internal constant CORE_EURC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4);
+
+  // https://snowscan.xyz/address/0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4
+  IBasicInterestRateStrategy internal constant CORE_sAVAX_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4);
 }
 library AaveV4AvalanchePositionManagers {
   // https://snowscan.xyz/address/0x50c4C40aB6BaE46B372a251BEacE388439aa96b4

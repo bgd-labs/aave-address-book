@@ -4706,6 +4706,9 @@
     },
     "0xc1906aeCf868749a2DeE203F59b904c0cf212140": {
       "name": "PendlePrincipalToken"
+    },
+    "0xD7eC225DC053151100A0ef47b94a77AAD9C413b7": {
+      "name": "AssetInterestRateStrategy"
     }
   },
   "10": {
@@ -17989,6 +17992,9 @@
     },
     "0x88dF535473C5adf1f57789734A05E555F7Deb8DB": {
       "name": "LiquidationLogic"
+    },
+    "0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4": {
+      "name": "AssetInterestRateStrategy"
     }
   },
   "57073": {
