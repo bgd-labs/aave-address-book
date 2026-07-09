@@ -15,6 +15,7 @@ import {INativeTokenGateway} from 'aave-v4/position-manager/interfaces/INativeTo
 import {ISignatureGateway} from 'aave-v4/position-manager/interfaces/ISignatureGateway.sol';
 import {IAaveV4ConfigEngine} from 'aave-v4/config-engine/interfaces/IAaveV4ConfigEngine.sol';
 import {IAccessManagerEnumerable} from 'aave-v4/access/interfaces/IAccessManagerEnumerable.sol';
+import {IBasicInterestRateStrategy} from 'aave-v4/hub/interfaces/IBasicInterestRateStrategy.sol';
 
 struct PositionManagers {
   IGiverPositionManager giver;
