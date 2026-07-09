@@ -1,0 +1,21 @@
+tests/cache/verified.json
+  s_a51def0a789bc4::t_a0c05409c916ef 9825-9827
+scripts/configs/pools/monad.ts
+  s_a51def0a789bc4::t_13c02278784b26 10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "5df58f8d9e02a7069bd2f327963667d782427e83",
+  "prompts": {},
+  "sessions": {
+    "s_a51def0a789bc4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4730-772d-7971-8a94-2896c105e19e",
+        "model": "gpt-5.5"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
