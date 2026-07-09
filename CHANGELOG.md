@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.60.0](https://github.com/aave-dao/aave-address-book/compare/v4.59.0...v4.60.0) (2026-07-09)
+
+
+### Features
+
+* add monad risk steward ([#1481](https://github.com/aave-dao/aave-address-book/issues/1481)) ([3a8be60](https://github.com/aave-dao/aave-address-book/commit/3a8be6043d8d8dd7f13978524ce7289892b1bdbf))
+
 ## [4.59.0](https://github.com/aave-dao/aave-address-book/compare/v4.58.0...v4.59.0) (2026-07-09)
 
 
