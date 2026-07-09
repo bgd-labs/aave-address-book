@@ -37,6 +37,7 @@ import { megaEthProtoV3 } from 'scripts/configs/pools/megaeth';
 import { xLayerProtoV3 } from 'scripts/configs/pools/xlayer';
 import { monadProtoV3 } from 'scripts/configs/pools/monad';
 import { mainnetV4Config } from 'scripts/configs/v4/ethereum';
+import { avalancheV4Config } from 'scripts/configs/v4/avalanche';
 import { generateProtocolV4Library } from 'scripts/generator/protocolV4Generator';
 import { generateGovernanceLibrary } from 'scripts/generator/governanceV3Generator';
 import { generateProtocolV2Library } from 'scripts/generator/protocolV2Generator';
@@ -202,7 +203,7 @@ async function main() {
     ].map((config) => generateProtocolV3Library(config)),
   );
   const v4LibraryNames = await Promise.all(
-    [mainnetV4Config].map((config) => generateProtocolV4Library(config)),
+    [mainnetV4Config, avalancheV4Config].map((config) => generateProtocolV4Library(config)),
   );
 
   const ghoAddresses = [ghoEthereum, ghoArbitrum, ghoBase, ghoAvalanche, ghoGnosis, ghoInk, ghoPlasma, ghoMantle, ghoMonad, ghoXLayer].map((config) =>

@@ -10,6 +10,10 @@ function toTitleCase(str: string): string {
     .join(' ');
 }
 
+function normalizeForMatch(str: string): string {
+  return str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+}
+
 export async function fetchTokenizationSpokes(
   client: Client,
   hubAddress: Hex,
@@ -71,12 +75,12 @@ export async function fetchTokenizationSpokes(
       }
       const hubAddr = hubRes.result as Hex;
       const assetIdVal = assetIdRes.result as bigint;
-      const nameVal = nameRes.result as string;
+      const normalizedName = normalizeForMatch(nameRes.result as string);
       if (
         hubAddr.toLowerCase() === hub.toLowerCase() &&
         Number(assetIdVal) === asset.assetId &&
-        nameVal.includes(asset.symbol) &&
-        nameVal.includes(hubLabel)
+        normalizedName.includes(normalizeForMatch(asset.symbol)) &&
+        normalizedName.includes(normalizeForMatch(hubLabel))
       ) {
         results.set(asset.assetId, getAddress(candidate));
       }
