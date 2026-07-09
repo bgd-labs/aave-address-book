@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.58.0](https://github.com/aave-dao/aave-address-book/compare/v4.57.4...v4.58.0) (2026-07-09)
+
+
+### Features
+
+* v4 avalanche deployment ([#1473](https://github.com/aave-dao/aave-address-book/issues/1473)) ([902d4d6](https://github.com/aave-dao/aave-address-book/commit/902d4d636bfd430dd1b54eada075d4728739af72))
+
 ## [4.57.4](https://github.com/aave-dao/aave-address-book/compare/v4.57.3...v4.57.4) (2026-07-09)
 
 
