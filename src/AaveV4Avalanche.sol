@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable} from './AaveV4.sol';
+import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, PositionManagers} from './AaveV4.sol';
 library AaveV4Avalanche {
   // https://snowscan.xyz/address/0xe069096bDAfF9bAD15b2f1079EaF0f1685a24522
   IAccessManagerEnumerable internal constant ACCESS_MANAGER =
@@ -227,5 +227,16 @@ library AaveV4AvalancheGetters {
     spokes[9] = address(AaveV4AvalancheTokenizationSpokes.CORE_EURC_TOKENIZATION_SPOKE);
     spokes[10] = address(AaveV4AvalancheTokenizationSpokes.CORE_sAVAX_TOKENIZATION_SPOKE);
     return spokes;
+  }
+
+  function getPositionManagers() internal pure returns (PositionManagers memory) {
+    return
+      PositionManagers({
+        giver: AaveV4AvalanchePositionManagers.GIVER_POSITION_MANAGER,
+        taker: AaveV4AvalanchePositionManagers.TAKER_POSITION_MANAGER,
+        config: AaveV4AvalanchePositionManagers.CONFIG_POSITION_MANAGER,
+        nativeGateway: AaveV4AvalanchePositionManagers.NATIVE_TOKEN_GATEWAY,
+        signatureGateway: AaveV4AvalanchePositionManagers.SIGNATURE_GATEWAY
+      });
   }
 }
