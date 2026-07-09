@@ -9822,6 +9822,9 @@
     },
     "0x7c9e74e6C6E5DafAf9b44F60bf8eBbe81CA70d4F": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34": {
+      "name": "RiskSteward"
     }
   },
   "146": {
