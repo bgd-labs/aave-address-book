@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0;
 
-import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable} from './AaveV4.sol';
+import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, IBasicInterestRateStrategy, PositionManagers} from './AaveV4.sol';
 library AaveV4Ethereum {
   // https://etherscan.io/address/0x08aE3BE30958cDd1847ec58fFfd4C451a87fDF01
   IAccessManagerEnumerable internal constant ACCESS_MANAGER =
@@ -511,6 +511,143 @@ library AaveV4EthereumTokenizationSpokes {
   ITokenizationSpoke internal constant PAXOS_USDT_TOKENIZATION_SPOKE =
     ITokenizationSpoke(0x8Dabe53E8cB991c57f0307F6f419E6D469b0deAA);
 }
+library AaveV4EthereumIRStrategies {
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_WETH_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_wstETH_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_weETH_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_rsETH_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_USDT_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_USDC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_GHO_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_RLUSD_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_USDG_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_frxUSD_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_EURC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_WBTC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_cbBTC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_LBTC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_XAUt_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_AAVE_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f
+  IBasicInterestRateStrategy internal constant CORE_LINK_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xAD88791B0F81D1FA242f637eB05bee0cbc53fe2f);
+
+  // https://etherscan.io/address/0x31280650661b8443723fa9739b3A164E3696af48
+  IBasicInterestRateStrategy internal constant PLUS_PT_sUSDE_7MAY2026_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x31280650661b8443723fa9739b3A164E3696af48);
+
+  // https://etherscan.io/address/0x31280650661b8443723fa9739b3A164E3696af48
+  IBasicInterestRateStrategy internal constant PLUS_PT_USDe_7MAY2026_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x31280650661b8443723fa9739b3A164E3696af48);
+
+  // https://etherscan.io/address/0x31280650661b8443723fa9739b3A164E3696af48
+  IBasicInterestRateStrategy internal constant PLUS_sUSDe_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x31280650661b8443723fa9739b3A164E3696af48);
+
+  // https://etherscan.io/address/0x31280650661b8443723fa9739b3A164E3696af48
+  IBasicInterestRateStrategy internal constant PLUS_USDe_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x31280650661b8443723fa9739b3A164E3696af48);
+
+  // https://etherscan.io/address/0x31280650661b8443723fa9739b3A164E3696af48
+  IBasicInterestRateStrategy internal constant PLUS_USDC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x31280650661b8443723fa9739b3A164E3696af48);
+
+  // https://etherscan.io/address/0x31280650661b8443723fa9739b3A164E3696af48
+  IBasicInterestRateStrategy internal constant PLUS_GHO_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x31280650661b8443723fa9739b3A164E3696af48);
+
+  // https://etherscan.io/address/0x31280650661b8443723fa9739b3A164E3696af48
+  IBasicInterestRateStrategy internal constant PLUS_USDT_IR_STRATEGY =
+    IBasicInterestRateStrategy(0x31280650661b8443723fa9739b3A164E3696af48);
+
+  // https://etherscan.io/address/0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D
+  IBasicInterestRateStrategy internal constant PRIME_WETH_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D);
+
+  // https://etherscan.io/address/0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D
+  IBasicInterestRateStrategy internal constant PRIME_WBTC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D);
+
+  // https://etherscan.io/address/0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D
+  IBasicInterestRateStrategy internal constant PRIME_cbBTC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D);
+
+  // https://etherscan.io/address/0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D
+  IBasicInterestRateStrategy internal constant PRIME_wstETH_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D);
+
+  // https://etherscan.io/address/0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D
+  IBasicInterestRateStrategy internal constant PRIME_USDC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D);
+
+  // https://etherscan.io/address/0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D
+  IBasicInterestRateStrategy internal constant PRIME_USDT_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D);
+
+  // https://etherscan.io/address/0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D
+  IBasicInterestRateStrategy internal constant PRIME_GHO_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xDCd924047a4bDBFef9CCDDe845E5D45373Ad276D);
+
+  // https://etherscan.io/address/0xD7eC225DC053151100A0ef47b94a77AAD9C413b7
+  IBasicInterestRateStrategy internal constant PAXOS_PT_USDG_24SEP2026_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xD7eC225DC053151100A0ef47b94a77AAD9C413b7);
+
+  // https://etherscan.io/address/0xD7eC225DC053151100A0ef47b94a77AAD9C413b7
+  IBasicInterestRateStrategy internal constant PAXOS_USDC_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xD7eC225DC053151100A0ef47b94a77AAD9C413b7);
+
+  // https://etherscan.io/address/0xD7eC225DC053151100A0ef47b94a77AAD9C413b7
+  IBasicInterestRateStrategy internal constant PAXOS_USDT_IR_STRATEGY =
+    IBasicInterestRateStrategy(0xD7eC225DC053151100A0ef47b94a77AAD9C413b7);
+}
 library AaveV4EthereumPositionManagers {
   // https://etherscan.io/address/0x17A54b8d6D9C68e7fa1C7112AC998EA1BA51d11e
   IGiverPositionManager internal constant GIVER_POSITION_MANAGER =
@@ -770,5 +907,16 @@ library AaveV4EthereumGetters {
     spokes[44] = address(AaveV4EthereumTokenizationSpokes.PAXOS_USDC_TOKENIZATION_SPOKE);
     spokes[45] = address(AaveV4EthereumTokenizationSpokes.PAXOS_USDT_TOKENIZATION_SPOKE);
     return spokes;
+  }
+
+  function getPositionManagers() internal pure returns (PositionManagers memory) {
+    return
+      PositionManagers({
+        giver: AaveV4EthereumPositionManagers.GIVER_POSITION_MANAGER,
+        taker: AaveV4EthereumPositionManagers.TAKER_POSITION_MANAGER,
+        config: AaveV4EthereumPositionManagers.CONFIG_POSITION_MANAGER,
+        nativeGateway: AaveV4EthereumPositionManagers.NATIVE_TOKEN_GATEWAY,
+        signatureGateway: AaveV4EthereumPositionManagers.SIGNATURE_GATEWAY
+      });
   }
 }

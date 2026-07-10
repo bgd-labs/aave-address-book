@@ -114,8 +114,12 @@ export function generateJsConstants({chainId, addresses}: {chainId: number; addr
 }
 
 export function generateJsObject(object: any) {
+  const remapped: Record<string, any> = {};
+  for (const [key, value] of Object.entries(object)) {
+    remapped[keyToVar(key)] = value;
+  }
   return JSON.stringify(
-    object,
+    remapped,
     function (key, value) {
       if (!key) return value;
       return typeof value === 'object' ? value.value : value;
