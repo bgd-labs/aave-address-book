@@ -67,6 +67,6 @@ library MiscPolygon {
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 
   // https://polygonscan.com/address/0x7734280A4337F37Fbf4651073Db7c28C80B339e9
-  address internal constant V2_TREASURY_DAO_WALLET_TREASURY =
+  address internal constant V2_COLLECTOR_DAO_WALLET_TREASURY =
     0x7734280A4337F37Fbf4651073Db7c28C80B339e9;
 }

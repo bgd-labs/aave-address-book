@@ -123,7 +123,7 @@ library MiscEthereum {
     0xAAA973Fe8A6202947e21D0a3a43d8E83ABE35C23;
 
   // https://etherscan.io/address/0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307
-  address internal constant V4_SECURITY_AUDIT_DAO_WALLET_SECURITY =
+  address internal constant V4_AUDIT_DAO_WALLET_SECURITY =
     0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307;
 
   // https://etherscan.io/address/0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8
