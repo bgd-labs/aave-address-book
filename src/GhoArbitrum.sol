@@ -9,14 +9,30 @@ library GhoArbitrum {
   // https://arbiscan.io/address/0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB
   address internal constant GHO_CCIP_TOKEN_POOL = 0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB;
 
-  // https://arbiscan.io/address/0xd2D586f849620ef042FE3aF52eAa10e9b78bf7De
-  address internal constant GHO_AAVE_CORE_STEWARD = 0xd2D586f849620ef042FE3aF52eAa10e9b78bf7De;
-
   // https://arbiscan.io/address/0xa9afaE6A53E90f9E4CE0717162DF5Bc3d9aBe7B2
   address internal constant GHO_BUCKET_STEWARD = 0xa9afaE6A53E90f9E4CE0717162DF5Bc3d9aBe7B2;
 
   // https://arbiscan.io/address/0xCd5ab470AaC5c13e1063ee700503f3346b7C90Db
   address internal constant GHO_CCIP_STEWARD = 0xCd5ab470AaC5c13e1063ee700503f3346b7C90Db;
+
+  // https://arbiscan.io/address/0x4DFfA29C526b5CFB419e14E3111516Fbf929797D
+  address internal constant GHO_GSM_STEWARD = 0x4DFfA29C526b5CFB419e14E3111516Fbf929797D;
+
+  // https://arbiscan.io/address/0xd2D586f849620ef042FE3aF52eAa10e9b78bf7De
+  address internal constant GHO_AAVE_CORE_STEWARD = 0xd2D586f849620ef042FE3aF52eAa10e9b78bf7De;
+
+  // https://arbiscan.io/address/0xC912D64F9F649897dC0244da3835869d410d053e
+  address internal constant GHO_RESERVE = 0xC912D64F9F649897dC0244da3835869d410d053e;
+
+  // https://arbiscan.io/address/0x53E0cE250d06043414070100458546AaF4e284eD
+  address internal constant GSM_USDC = 0x53E0cE250d06043414070100458546AaF4e284eD;
+
+  // https://arbiscan.io/address/0x2169Bf2084bDb881587b3Cf6B24011E6AA091FdE
+  address internal constant GSM_USDC_FEE_STRATEGY = 0x2169Bf2084bDb881587b3Cf6B24011E6AA091FdE;
+
+  // https://arbiscan.io/address/0xC5aF63c233eA19cB191b36D16C1e25cDA08409E7
+  address internal constant GSM_USDC_ORACLE_SWAP_FREEZER =
+    0xC5aF63c233eA19cB191b36D16C1e25cDA08409E7;
 
   // https://arbiscan.io/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
   address internal constant RISK_COUNCIL = 0x8513e6F37dBc52De87b166980Fa3F50639694B60;
