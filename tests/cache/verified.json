@@ -16108,6 +16108,21 @@
     },
     "0xd3642A6e9fa95961130497727DC3aE6c38D625E7": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x4DFfA29C526b5CFB419e14E3111516Fbf929797D": {
+      "name": "GhoGsmSteward"
+    },
+    "0xC912D64F9F649897dC0244da3835869d410d053e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x53E0cE250d06043414070100458546AaF4e284eD": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2169Bf2084bDb881587b3Cf6B24011E6AA091FdE": {
+      "name": "FixedFeeStrategy"
+    },
+    "0xC5aF63c233eA19cB191b36D16C1e25cDA08409E7": {
+      "name": "ChainlinkOracleSwapFreezer"
     }
   },
   "42220": {
