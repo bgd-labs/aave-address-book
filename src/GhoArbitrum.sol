@@ -9,6 +9,9 @@ library GhoArbitrum {
   // https://arbiscan.io/address/0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB
   address internal constant GHO_CCIP_TOKEN_POOL = 0xB94Ab28c6869466a46a42abA834ca2B3cECCA5eB;
 
+  // https://arbiscan.io/address/0x812fBcd390A3C6c01C65B767413Dea6f6e24FDD0
+  address internal constant GHO_CCIP_BRIDGE = 0x812fBcd390A3C6c01C65B767413Dea6f6e24FDD0;
+
   // https://arbiscan.io/address/0xa9afaE6A53E90f9E4CE0717162DF5Bc3d9aBe7B2
   address internal constant GHO_BUCKET_STEWARD = 0xa9afaE6A53E90f9E4CE0717162DF5Bc3d9aBe7B2;
 

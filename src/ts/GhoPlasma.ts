@@ -5,6 +5,9 @@ export const GHO_TOKEN = '0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3';
 // https://plasmascan.to/address/0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12
 export const GHO_CCIP_TOKEN_POOL = '0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12';
 
+// https://plasmascan.to/address/0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243
+export const GHO_CCIP_BRIDGE = '0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243';
+
 // https://plasmascan.to/address/0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1
 export const GHO_ORACLE = '0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1';
 
