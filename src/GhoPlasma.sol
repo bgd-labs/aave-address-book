@@ -12,9 +12,6 @@ library GhoPlasma {
   // https://plasmascan.to/address/0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243
   address internal constant GHO_CCIP_BRIDGE = 0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243;
 
-  // https://plasmascan.to/address/0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1
-  address internal constant GHO_ORACLE = 0xb0e1c7830aA781362f79225559Aa068E6bDaF1d1;
-
   // https://plasmascan.to/address/0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B
   address internal constant GHO_BUCKET_STEWARD = 0x2Ce400703dAcc37b7edFA99D228b8E70a4d3831B;
 
