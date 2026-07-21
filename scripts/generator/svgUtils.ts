@@ -2,7 +2,7 @@ import {
   AssetTag,
   getAssetIconNameAndPath,
   getAssetName,
-} from '@bgd-labs/react-web3-icons/dist/utils';
+} from '@aave-dao/react-web3-icons/dist/utils';
 
 export enum VARIANT {
   UNDERLYING,
@@ -37,6 +37,7 @@ export async function getSymbolUri(symbol: string, variant: VARIANT): Promise<st
 }
 
 export function getUmbrellaStkVariant(symbol: string): VARIANT {
-  return symbol.slice(3).startsWith('wa') ?
-    VARIANT.UMBRELLA_STAKE_STATA_TOKEN : VARIANT.UMBRELLA_STAKE_TOKEN;
+  return symbol.slice(3).startsWith('wa')
+    ? VARIANT.UMBRELLA_STAKE_STATA_TOKEN
+    : VARIANT.UMBRELLA_STAKE_TOKEN;
 }

@@ -4664,6 +4664,51 @@
     },
     "0x4Af166c6F2CF882f7B196E3625c3E8f2Fe2a8083": {
       "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7433806912Eae67919e66aea853d46Fa0aef98A8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x49d3cdE03813eE32DFD47F6aA3957d5F9CbAB985": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x40606ce958e14AD6BA575B00402d07438c3d58aC": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB92A68763b2F83e094595c7B41a7FB9D0f8Da193": {
+      "name": "EACAggregatorProxy"
+    },
+    "0xe034De753a3d855B6daD1A4984de75a5c443E939": {
+      "name": "EACAggregatorProxy"
+    },
+    "0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x956d8e0A89cfa3744428C4641b5a53B56167a7f9": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x62d63197660c080236193CA60b70E49A08E90368": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x692cD2F7653680aFf316Ac309ce825FCF573B7Ee": {
+      "name": "AaveOracle"
+    },
+    "0x89F6Eb404AbF19FE817426dD2E2E0F14D1a5712e": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x27eF1140364948A0E30E248297FfDFE5a4091ec4": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4131E0B2E7AFeCEAf3d3b4225aA61a3B2B7535b8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x8Dabe53E8cB991c57f0307F6f419E6D469b0deAA": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xc1906aeCf868749a2DeE203F59b904c0cf212140": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xD7eC225DC053151100A0ef47b94a77AAD9C413b7": {
+      "name": "AssetInterestRateStrategy"
     }
   },
   "10": {
@@ -9600,6 +9645,207 @@
     },
     "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
       "name": "GnosisSafeProxy"
+    },
+    "0xA5AE05b71c3F170E12E7620Fdf7679721aec1EC8": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDe6539018B095353A40753Dc54C91C68c9487D4E": {
+      "name": "GhoBucketSteward"
+    },
+    "0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12": {
+      "name": "GhoCcipSteward"
+    },
+    "0xA5Ba213867E175A182a5dd6A9193C6158738105A": {
+      "name": "GhoAaveSteward"
+    },
+    "0x8513e6F37dBc52De87b166980Fa3F50639694B60": {
+      "name": "GnosisSafeProxy"
+    },
+    "0xe7cd86e13AC4309349F30B3435a9d337750fC82D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9531E6bC99D7F7f0596ed7bA5b846Ba9Eb60468c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x85812C8eEeB8723e3C60d0Dc78e697b4E7e5a35D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1f6F08BC1Da8B311bf6D87b829AD2FFAA8fB8211": {
+      "name": "DefaultReserveInterestRateStrategyV2"
+    },
+    "0x3c187a25f0f05E009DA794069682653e40062730": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x754704Bc059F8C67012fEd69BC8A327a5aafb603": {
+      "name": "FiatTokenProxy"
+    },
+    "0x35a73BAcb179d3740395A3ceCc87FF2e581d6042": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9F555aB84C4e0a531B50283f09Dba7A97134c4e4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x787962943811D279d01eC973Bd3A15f1b3e1F0D9": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34": {
+      "name": "USDeOFT"
+    },
+    "0x37cAbe3eDD86165886877Cc8b6Be10269f21893d": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3BE6c069b81423BccF758eb95004E0324Af2cDD8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x3abA25B23378A84FD7638E20F9Af86A66000f090": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xacA92E438df0B2401fF60dA7E4337B687a2435DA": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xDBb2e1b6BC94328Df2662A1796AB6A23fCde3199": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9837392b2b5b2Ce7C39A357E0eB6E07d9fFb76Cd": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xbbb58AA3a251c9f19653771c44481c39500b71A3": {
+      "name": "FixedPriceAdapter"
+    },
+    "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a": {
+      "name": "AgoraDollarErc1967Proxy"
+    },
+    "0xdeBFeDF35faEd5d1664E553545e144C02227A2Ec": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x8F4c10B392ef10c811E4d4BAFC74Bfc1A2671C75": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6b7c151653c35845a5826b15435fc055A9Db1D0C": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0xEE8c0E9f1BFFb4Eb878d8f15f368A02a35481242": {
+      "name": "ERC1967Proxy"
+    },
+    "0x4377b53aAA8b8e3fF7AA2843832CAF004f5Cb8b6": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xd1f352c326731027f0d9a7f62a4742eBdf1EFc8c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x47F1D18329Ae59341617B7a5BE59605B63f0e373": {
+      "name": "ScaledPriceAdapter"
+    },
+    "0xd18B7EC58Cdf4876f6AFebd3Ed1730e4Ce10414b": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x1F5e388861A32226c716e922CE748a6FEE5e8e57": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x551a5fc4a05efFC8F9A026F4DC28634D4693Af1F": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x48692d15DA2636E1b0335344104Ce9d92f231DdA": {
+      "name": "ScaledPriceAdapter"
+    },
+    "0x10Aeaf63194db8d453d4D85a06E5eFE1dd0b5417": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xc31E3A273A93D238Ce49B053f801E8f385375df7": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xC4B1064b7377eF541d59B7e21C0B3F812C50d4Ec": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x7c1DbD7879C421ebd1A2dE397Ea6Bedb5D3795A5": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xA3D68b74bF0528fdD07263c60d6488749044914b": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4FAe5e2d191e012f503dE53023B0710f554FcFF0": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x78540eD62E3F6081c906F7841A7e1A6201cb898E": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x53E2d62Cd8c36104DEC69bA0CB3Bb599d6D42FE1": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xaB6e5a0C3799d020c790D34F7B2C02639e238AF7": {
+      "name": "BurnMintERC20"
+    },
+    "0xbc2A1FA0069e59e2552Ab40889520c7b0D413D9B": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xE84F9B29568747Cb58B2969071e38093A384E26f": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xB1f36c815761a3F77CE26c013F646cdCdCd06384": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2": {
+      "name": "StakedUSDeOFT"
+    },
+    "0xCD11405D4a15a825B46254c42F5b5Cd8c2EDAe09": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4cc35bFad4713705295Fd71DAE11CD57cc366Ca8": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x99946Fe1a49D8650a31eFE0fcFee0508892742f0": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4586face17B0e3D4d51EcABb4B4EBC2354b61b0D": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x1dd98eDe37480c2E0827a107c68f442aA516E7fc": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x26cBccD96502D2EfDb612737bD6aECe19f65109c": {
+      "name": "OneUSDFixedAdapter"
+    },
+    "0x5E7109A755fD2b86361F95065cDE07FbAb50CA1D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xC554aFfE2f581F5E0811e0D42D484ECaC5c6B8e2": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6A7C826974994c4CE012B2fb32FE9D30d6366380": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x9e1AcC5BFbf34e2E579763cE14042d957719fE76": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x967d427eF0Eb4AEB7a1B523A98B04061F094276B": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7c9e74e6C6E5DafAf9b44F60bf8eBbe81CA70d4F": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34": {
+      "name": "RiskSteward"
+    },
+    "0xDc00342D80de85a8b843Dab1f29bb407B3abeB64": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd46d988C0055eff66eEaad582E985d3805aD6d2b": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x50591A9F86972C591b6FE858b465f5B65d5c24ee": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xcdc050015042701f6B3af3b87990945d415FA657": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6f2cdF03c8343E1eA608668812Fb094E46C41C80": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4eC854a6fDF52Eb64F8CabF87FafD3B1f1743a00": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
@@ -10363,6 +10609,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xe00B2732396a1f047d4A00e0165025A9cF400245": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "324": {
@@ -11858,6 +12107,36 @@
     },
     "0x584C7d8c4cb05304FE5Ac7fbc97f20A10Fb07564": {
       "name": "SupplyLogic"
+    },
+    "0x72E831E28Ba5A6d55Eb752981D0426b411E4dbbF": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3FBe2d59F93AD0e54077861E810B2868c544C333": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x31552822e76a991CEB44dE047A26441E530D6510": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x0a21f20c528B54Ab54573A21f948B242d19E3ef1": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x03A53f1FABC40D548198ECd79997600982B0a36E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xB955033Afc19816e83655C28461574D77b3097bb": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x88887bE419578051FF9F4eb6C858A951921D8888": {
+      "name": "ERC1967Proxy"
+    },
+    "0xB1B4B54780fDf4FFa82c9C1e83BEc12c63BC8eBB": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x9c9a07734F7a2A1467C4eE577E652F9a14E2bB72": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0xBBC579Ee0A3fD6E9240965C5f57b7e5b3e3809A8": {
+      "name": "CLRatePriceCapAdapter"
     }
   },
   "5000": {
@@ -15850,6 +16129,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xd3642A6e9fa95961130497727DC3aE6c38D625E7": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "42220": {
@@ -17662,6 +17944,84 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0xe069096bDAfF9bAD15b2f1079EaF0f1685a24522": {
+      "name": "AccessManagerEnumerable"
+    },
+    "0xbdf92ed96FF6D678469aFAFFa1e7d37B25beaa33": {
+      "name": "HubConfigurator"
+    },
+    "0x8F72573F1Aa0A1e39fFD2a2A69e9EDAa8B982642": {
+      "name": "SpokeConfigurator"
+    },
+    "0x2C4Aea1A5F000889c6DfFE8f52377aFc2CB113a6": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd07369fAE4A5BB13c9Ce446B052c7867B1AbDf6e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x435272CefF93a1E657E8ABfdf0A13e95900A3a56": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x84B50B131a82dA689C0205C00d603c1c92A5f8a4": {
+      "name": "AaveOracle"
+    },
+    "0x6a37776B5E026dBdF043b4F933c323C84DD1B514": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xECA623E8c923A103Eef75cd127Cc8Bf8fF886cf5": {
+      "name": "AaveOracle"
+    },
+    "0x3b517594277c67307CF2d7CBE6FE1D4399B68c41": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xB2216B2B2DC77e027AfEaaAf965E323012757fA0": {
+      "name": "AaveOracle"
+    },
+    "0x1604D602f8A05CBA2d8Ff5d14DE4C3498f15B6B4": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7cd3Ccc737f442050a861EC6b00768AE96B2F58E": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x01D7f7B7CE2123192fECC20bd1caF3e4d9e4C10D": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2E4BA06fF97E10D09FA4F5a270e97301eae729A9": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xF5c849468318c8D5670020fdb96ae135FED37070": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x7b538a1840EAf2Ed92EEB67eE744AE627335e201": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6c27A7435040B7cC512319d5690BeEF234dfE76e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x50c4C40aB6BaE46B372a251BEacE388439aa96b4": {
+      "name": "GiverPositionManager"
+    },
+    "0x5A5A711560eb9293Ef6F4bc33CD8589b4A603D10": {
+      "name": "TakerPositionManager"
+    },
+    "0x50BE00C5EbF6CC230B8970f4205Cd0B5A70EaEB1": {
+      "name": "ConfigPositionManager"
+    },
+    "0xE4C7183A5f22c365140F41d733d8A8baD5A1a6bA": {
+      "name": "NativeTokenGateway"
+    },
+    "0x6E3B91A951DA9b515a5E98F0c7D210a697382e7F": {
+      "name": "SignatureGateway"
+    },
+    "0xe03C9eb1880c61F0688940E133004c7CcE1e2827": {
+      "name": "AaveV4ConfigEngine"
+    },
+    "0x88dF535473C5adf1f57789734A05E555F7Deb8DB": {
+      "name": "LiquidationLogic"
+    },
+    "0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4": {
+      "name": "AssetInterestRateStrategy"
     }
   },
   "57073": {
@@ -18072,6 +18432,12 @@
     },
     "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
       "name": "GnosisSafeProxy"
+    },
+    "0x3F727547A7F6af12156573253D91e44aC64845a3": {
+      "name": "CLRatePriceCapAdapter"
+    },
+    "0x32b1f1A1D3423dE69cf1f75092eCfDc5090d6624": {
+      "name": "PriceCapAdapterStable"
     }
   },
   "59144": {

@@ -116,4 +116,4 @@ MIT
 
 ---
 
-Maintained by [BGD Labs](https://bgdlabs.com/)
+Maintained by [Aave Labs](https://aave.com/)
