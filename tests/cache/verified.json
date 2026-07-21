@@ -9825,6 +9825,24 @@
     },
     "0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34": {
       "name": "RiskSteward"
+    },
+    "0xDc00342D80de85a8b843Dab1f29bb407B3abeB64": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd46d988C0055eff66eEaad582E985d3805aD6d2b": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x50591A9F86972C591b6FE858b465f5B65d5c24ee": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xcdc050015042701f6B3af3b87990945d415FA657": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6f2cdF03c8343E1eA608668812Fb094E46C41C80": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4eC854a6fDF52Eb64F8CabF87FafD3B1f1743a00": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
