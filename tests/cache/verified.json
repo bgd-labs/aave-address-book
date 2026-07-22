@@ -9826,6 +9826,9 @@
     "0x7c9e74e6C6E5DafAf9b44F60bf8eBbe81CA70d4F": {
       "name": "TransparentUpgradeableProxy"
     },
+    "0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34": {
+      "name": "RiskSteward"
+    },
     "0xDc00342D80de85a8b843Dab1f29bb407B3abeB64": {
       "name": "TransparentUpgradeableProxy"
     },
@@ -16126,6 +16129,24 @@
     },
     "0xd3642A6e9fa95961130497727DC3aE6c38D625E7": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x4DFfA29C526b5CFB419e14E3111516Fbf929797D": {
+      "name": "GhoGsmSteward"
+    },
+    "0xC912D64F9F649897dC0244da3835869d410d053e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x53E0cE250d06043414070100458546AaF4e284eD": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2169Bf2084bDb881587b3Cf6B24011E6AA091FdE": {
+      "name": "FixedFeeStrategy"
+    },
+    "0xC5aF63c233eA19cB191b36D16C1e25cDA08409E7": {
+      "name": "ChainlinkOracleSwapFreezer"
+    },
+    "0x812fBcd390A3C6c01C65B767413Dea6f6e24FDD0": {
+      "name": "AaveGhoCcipBridge"
     }
   },
   "42220": {
