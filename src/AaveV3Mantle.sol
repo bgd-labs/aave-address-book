@@ -275,6 +275,8 @@ library AaveV3MantleEModes {
   uint8 internal constant syrupUSDT__USDT0_USDC_GHO = 4;
 
   uint8 internal constant wrsETH__WETH = 5;
+
+  uint8 internal constant WMNT__USDT0_USDC_GHO = 6;
 }
 library AaveV3MantleExternalLibraries {
   // https://mantlescan.xyz/address/0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6
