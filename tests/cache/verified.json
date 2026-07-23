@@ -4712,6 +4712,12 @@
     },
     "0xa1673fbD457747A05e91D9ef904Cb12827916B1E": {
       "name": "AaveV4ConfigEngine"
+    },
+    "0x774b9655413c34809c1f1b16b654465A89EBE989": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A": {
+      "name": "AaveOracle"
     }
   },
   "10": {
