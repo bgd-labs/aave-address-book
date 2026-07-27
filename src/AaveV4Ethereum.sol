@@ -93,13 +93,6 @@ library AaveV4EthereumSpokes {
   IAaveOracle internal constant MAIN_SPOKE_ORACLE =
     IAaveOracle(0x99B2B6CEa9C3D2fd8F4d90f86741C44B212a6127);
 
-  // https://etherscan.io/address/0x774b9655413c34809c1f1b16b654465A89EBE989
-  ISpoke internal constant USDG_MAPLE_SPOKE = ISpoke(0x774b9655413c34809c1f1b16b654465A89EBE989);
-
-  // https://etherscan.io/address/0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A
-  IAaveOracle internal constant USDG_MAPLE_SPOKE_ORACLE =
-    IAaveOracle(0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A);
-
   // https://etherscan.io/address/0x956d8e0A89cfa3744428C4641b5a53B56167a7f9
   ISpoke internal constant USDG_PENDLE_SPOKE = ISpoke(0x956d8e0A89cfa3744428C4641b5a53B56167a7f9);
 
@@ -127,6 +120,13 @@ library AaveV4EthereumSpokes {
   // https://etherscan.io/address/0x664D73b6C3591333Fd79510f7ce9ef81228824F5
   IAaveOracle internal constant LIDO_ESPOKE_ORACLE =
     IAaveOracle(0x664D73b6C3591333Fd79510f7ce9ef81228824F5);
+
+  // https://etherscan.io/address/0x774b9655413c34809c1f1b16b654465A89EBE989
+  ISpoke internal constant USDG_MAPLE_ESPOKE = ISpoke(0x774b9655413c34809c1f1b16b654465A89EBE989);
+
+  // https://etherscan.io/address/0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A
+  IAaveOracle internal constant USDG_MAPLE_ESPOKE_ORACLE =
+    IAaveOracle(0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A);
 }
 library AaveV4EthereumSpokePriceFeeds {
   // https://etherscan.io/address/0x5424384B256154046E9667dDFaaa5e550145215e
@@ -813,11 +813,11 @@ library AaveV4EthereumGetters {
     spokes[4] = AaveV4EthereumSpokes.GOLD_SPOKE;
     spokes[5] = AaveV4EthereumSpokes.LOMBARD_BTC_SPOKE;
     spokes[6] = AaveV4EthereumSpokes.MAIN_SPOKE;
-    spokes[7] = AaveV4EthereumSpokes.USDG_MAPLE_SPOKE;
-    spokes[8] = AaveV4EthereumSpokes.USDG_PENDLE_SPOKE;
-    spokes[9] = AaveV4EthereumSpokes.ETHERFI_ESPOKE;
-    spokes[10] = AaveV4EthereumSpokes.KELP_ESPOKE;
-    spokes[11] = AaveV4EthereumSpokes.LIDO_ESPOKE;
+    spokes[7] = AaveV4EthereumSpokes.USDG_PENDLE_SPOKE;
+    spokes[8] = AaveV4EthereumSpokes.ETHERFI_ESPOKE;
+    spokes[9] = AaveV4EthereumSpokes.KELP_ESPOKE;
+    spokes[10] = AaveV4EthereumSpokes.LIDO_ESPOKE;
+    spokes[11] = AaveV4EthereumSpokes.USDG_MAPLE_ESPOKE;
     return spokes;
   }
 
@@ -872,11 +872,11 @@ library AaveV4EthereumGetters {
     spokes[5] = address(AaveV4EthereumSpokes.GOLD_SPOKE);
     spokes[6] = address(AaveV4EthereumSpokes.LOMBARD_BTC_SPOKE);
     spokes[7] = address(AaveV4EthereumSpokes.MAIN_SPOKE);
-    spokes[8] = address(AaveV4EthereumSpokes.USDG_MAPLE_SPOKE);
-    spokes[9] = address(AaveV4EthereumSpokes.USDG_PENDLE_SPOKE);
-    spokes[10] = address(AaveV4EthereumSpokes.ETHERFI_ESPOKE);
-    spokes[11] = address(AaveV4EthereumSpokes.KELP_ESPOKE);
-    spokes[12] = address(AaveV4EthereumSpokes.LIDO_ESPOKE);
+    spokes[8] = address(AaveV4EthereumSpokes.USDG_PENDLE_SPOKE);
+    spokes[9] = address(AaveV4EthereumSpokes.ETHERFI_ESPOKE);
+    spokes[10] = address(AaveV4EthereumSpokes.KELP_ESPOKE);
+    spokes[11] = address(AaveV4EthereumSpokes.LIDO_ESPOKE);
+    spokes[12] = address(AaveV4EthereumSpokes.USDG_MAPLE_ESPOKE);
     spokes[13] = address(AaveV4EthereumTokenizationSpokes.CORE_WETH_TOKENIZATION_SPOKE);
     spokes[14] = address(AaveV4EthereumTokenizationSpokes.CORE_wstETH_TOKENIZATION_SPOKE);
     spokes[15] = address(AaveV4EthereumTokenizationSpokes.CORE_weETH_TOKENIZATION_SPOKE);
