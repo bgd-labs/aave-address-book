@@ -94,10 +94,10 @@ library AaveV4EthereumSpokes {
     IAaveOracle(0x99B2B6CEa9C3D2fd8F4d90f86741C44B212a6127);
 
   // https://etherscan.io/address/0x774b9655413c34809c1f1b16b654465A89EBE989
-  ISpoke internal constant MAPLE_SPOKE = ISpoke(0x774b9655413c34809c1f1b16b654465A89EBE989);
+  ISpoke internal constant USDG_MAPLE_SPOKE = ISpoke(0x774b9655413c34809c1f1b16b654465A89EBE989);
 
   // https://etherscan.io/address/0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A
-  IAaveOracle internal constant MAPLE_SPOKE_ORACLE =
+  IAaveOracle internal constant USDG_MAPLE_SPOKE_ORACLE =
     IAaveOracle(0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A);
 
   // https://etherscan.io/address/0x956d8e0A89cfa3744428C4641b5a53B56167a7f9
@@ -813,7 +813,7 @@ library AaveV4EthereumGetters {
     spokes[4] = AaveV4EthereumSpokes.GOLD_SPOKE;
     spokes[5] = AaveV4EthereumSpokes.LOMBARD_BTC_SPOKE;
     spokes[6] = AaveV4EthereumSpokes.MAIN_SPOKE;
-    spokes[7] = AaveV4EthereumSpokes.MAPLE_SPOKE;
+    spokes[7] = AaveV4EthereumSpokes.USDG_MAPLE_SPOKE;
     spokes[8] = AaveV4EthereumSpokes.USDG_PENDLE_SPOKE;
     spokes[9] = AaveV4EthereumSpokes.ETHERFI_ESPOKE;
     spokes[10] = AaveV4EthereumSpokes.KELP_ESPOKE;
@@ -872,7 +872,7 @@ library AaveV4EthereumGetters {
     spokes[5] = address(AaveV4EthereumSpokes.GOLD_SPOKE);
     spokes[6] = address(AaveV4EthereumSpokes.LOMBARD_BTC_SPOKE);
     spokes[7] = address(AaveV4EthereumSpokes.MAIN_SPOKE);
-    spokes[8] = address(AaveV4EthereumSpokes.MAPLE_SPOKE);
+    spokes[8] = address(AaveV4EthereumSpokes.USDG_MAPLE_SPOKE);
     spokes[9] = address(AaveV4EthereumSpokes.USDG_PENDLE_SPOKE);
     spokes[10] = address(AaveV4EthereumSpokes.ETHERFI_ESPOKE);
     spokes[11] = address(AaveV4EthereumSpokes.KELP_ESPOKE);
