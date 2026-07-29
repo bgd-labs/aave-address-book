@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.61.2](https://github.com/aave-dao/aave-address-book/compare/v4.61.1...v4.61.2) (2026-07-25)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1494](https://github.com/aave-dao/aave-address-book/issues/1494)) ([c3270e5](https://github.com/aave-dao/aave-address-book/commit/c3270e5aac80c3779b7b1cd40dabcff60d414c78))
+
+## [4.61.1](https://github.com/aave-dao/aave-address-book/compare/v4.61.0...v4.61.1) (2026-07-23)
+
+
+### Bug Fixes
+
+* V4 ABI generator & export ([#1492](https://github.com/aave-dao/aave-address-book/issues/1492)) ([41d68bf](https://github.com/aave-dao/aave-address-book/commit/41d68bf58998f36f959bb81ac6d75b787320122c))
+
+## [4.61.0](https://github.com/aave-dao/aave-address-book/compare/v4.60.1...v4.61.0) (2026-07-22)
+
+
+### Features
+
+* replace V4 Config Engines ([#1487](https://github.com/aave-dao/aave-address-book/issues/1487)) ([5017db7](https://github.com/aave-dao/aave-address-book/commit/5017db7e40ba290be681b3f51da59befda3f0688))
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1489](https://github.com/aave-dao/aave-address-book/issues/1489)) ([e8058f7](https://github.com/aave-dao/aave-address-book/commit/e8058f721d195d119198a95dd08a1928c0951a86))
+
 ## [4.60.1](https://github.com/aave-dao/aave-address-book/compare/v4.60.0...v4.60.1) (2026-07-21)
 
 

@@ -20,9 +20,9 @@ library AaveV4Avalanche {
   ITreasurySpoke internal constant TREASURY_SPOKE =
     ITreasurySpoke(0x2C4Aea1A5F000889c6DfFE8f52377aFc2CB113a6);
 
-  // https://snowscan.xyz/address/0xe03C9eb1880c61F0688940E133004c7CcE1e2827
+  // https://snowscan.xyz/address/0x1F0C67Fde7FcaF7eCEA43b76A23461803972c45c
   IAaveV4ConfigEngine internal constant CONFIG_ENGINE =
-    IAaveV4ConfigEngine(0xe03C9eb1880c61F0688940E133004c7CcE1e2827);
+    IAaveV4ConfigEngine(0x1F0C67Fde7FcaF7eCEA43b76A23461803972c45c);
 }
 library AaveV4AvalancheHubs {
   // https://snowscan.xyz/address/0xd07369fAE4A5BB13c9Ce446B052c7867B1AbDf6e

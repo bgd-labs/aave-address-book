@@ -4709,6 +4709,9 @@
     },
     "0xD7eC225DC053151100A0ef47b94a77AAD9C413b7": {
       "name": "AssetInterestRateStrategy"
+    },
+    "0xa1673fbD457747A05e91D9ef904Cb12827916B1E": {
+      "name": "AaveV4ConfigEngine"
     }
   },
   "10": {
@@ -18055,6 +18058,9 @@
     },
     "0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4": {
       "name": "AssetInterestRateStrategy"
+    },
+    "0x1F0C67Fde7FcaF7eCEA43b76A23461803972c45c": {
+      "name": "AaveV4ConfigEngine"
     }
   },
   "57073": {
