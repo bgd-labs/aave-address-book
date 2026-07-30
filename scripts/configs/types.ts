@@ -153,6 +153,9 @@ export interface V4Config {
   chainId: number;
   admin: Record<string, Hex>;
   hubs: Record<string, Hex>;
+  // hub key -> key prefix for that hub's tokenization spokes, for spokes whose immutable
+  // on-chain name and symbol don't match the hub label
+  tokenizationSpokePrefixes?: Record<string, string>;
   spokes: Record<string, Hex>;
   eSpokes?: Record<string, Hex>;
   positionManagers?: Record<string, Hex>;

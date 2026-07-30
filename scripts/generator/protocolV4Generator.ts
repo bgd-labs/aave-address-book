@@ -110,11 +110,15 @@ function buildSpokePriceFeedsAddresses(
   return addresses;
 }
 
-function buildTokenizationSpokesAddresses(resolvedHubs: Record<string, ResolvedHub>): Addresses {
+function buildTokenizationSpokesAddresses(
+  resolvedHubs: Record<string, ResolvedHub>,
+  prefixes: Record<string, string> = {},
+): Addresses {
   const addresses: Addresses = {};
   for (const [hubName, hubData] of Object.entries(resolvedHubs)) {
+    const prefix = prefixes[hubName] ?? hubName;
     for (const asset of hubData.assets) {
-      addresses[`${hubName}_${asset.symbol}_TOKENIZATION_SPOKE`] = {
+      addresses[`${prefix}_${asset.symbol}_TOKENIZATION_SPOKE`] = {
         value: asset.tokenizationSpoke,
         type: 'ITokenizationSpoke',
       };
@@ -395,7 +399,10 @@ export async function generateProtocolV4Library(config: V4Config) {
   }
 
   // Tokenization Spokes library
-  const tokenSpokesAddresses = buildTokenizationSpokesAddresses(resolvedHubs);
+  const tokenSpokesAddresses = buildTokenizationSpokesAddresses(
+    resolvedHubs,
+    config.tokenizationSpokePrefixes,
+  );
   if (Object.keys(tokenSpokesAddresses).length > 0) {
     const tokenSpokesLibraryName = `${name}TokenizationSpokes`;
     appendFileSync(
