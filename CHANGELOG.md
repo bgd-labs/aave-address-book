@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.62.0](https://github.com/aave-dao/aave-address-book/compare/v4.61.2...v4.62.0) (2026-07-31)
+
+
+### Features
+
+* USDG Maple Spoke ([#1491](https://github.com/aave-dao/aave-address-book/issues/1491)) ([be170c1](https://github.com/aave-dao/aave-address-book/commit/be170c1a694018ca44b489696e9444074d900d07))
+
 ## [4.61.2](https://github.com/aave-dao/aave-address-book/compare/v4.61.1...v4.61.2) (2026-07-25)
 
 
