@@ -863,7 +863,7 @@ library AaveV4EthereumGetters {
   }
 
   function getAllSpokesRaw() internal pure returns (address[] memory) {
-    address[] memory spokes = new address[](47);
+    address[] memory spokes = new address[](50);
     spokes[0] = address(AaveV4EthereumSpokes.TREASURY_SPOKE);
     spokes[1] = address(AaveV4EthereumSpokes.BLUECHIP_SPOKE);
     spokes[2] = address(AaveV4EthereumSpokes.ETHENA_CORRELATED_SPOKE);
@@ -915,6 +915,9 @@ library AaveV4EthereumGetters {
     );
     spokes[45] = address(AaveV4EthereumTokenizationSpokes.PAXOS_USDC_TOKENIZATION_SPOKE);
     spokes[46] = address(AaveV4EthereumTokenizationSpokes.PAXOS_USDT_TOKENIZATION_SPOKE);
+    spokes[47] = 0x7Df10B4A01350D2A1d95cFbE7c9207d7210A2663;
+    spokes[48] = 0xaed7c529bD2878170B61C758DfAa215AC7a4FD07;
+    spokes[49] = 0xa0e97e45C2f89003730E467Bd484fA3eEcE5B4Cf;
     return spokes;
   }
 
