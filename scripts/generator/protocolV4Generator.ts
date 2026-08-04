@@ -31,7 +31,7 @@ const V4_INTERFACE_REGISTRY: Record<string, string> = {
 
 interface ResolvedHub {
   hub: Hex;
-  assets: (FetchedHubAsset & {tokenizationSpoke: Hex})[];
+  assets: (FetchedHubAsset & {tokenizationSpoke?: Hex})[];
 }
 
 function buildMainLibraryAddresses(config: V4Config): Addresses {
@@ -110,15 +110,12 @@ function buildSpokePriceFeedsAddresses(
   return addresses;
 }
 
-function buildTokenizationSpokesAddresses(
-  resolvedHubs: Record<string, ResolvedHub>,
-  prefixes: Record<string, string> = {},
-): Addresses {
+function buildTokenizationSpokesAddresses(resolvedHubs: Record<string, ResolvedHub>): Addresses {
   const addresses: Addresses = {};
   for (const [hubName, hubData] of Object.entries(resolvedHubs)) {
-    const prefix = prefixes[hubName] ?? hubName;
     for (const asset of hubData.assets) {
-      addresses[`${prefix}_${asset.symbol}_TOKENIZATION_SPOKE`] = {
+      if (!asset.tokenizationSpoke) continue;
+      addresses[`${hubName}_${asset.symbol}_TOKENIZATION_SPOKE`] = {
         value: asset.tokenizationSpoke,
         type: 'ITokenizationSpoke',
       };
@@ -275,6 +272,9 @@ export async function generateProtocolV4Library(config: V4Config) {
   if (treasurySpoke) {
     knownNonTokenizationSpokes.add(treasurySpoke.toLowerCase());
   }
+  for (const spoke of config.deprecatedTokenizationSpokes ?? []) {
+    knownNonTokenizationSpokes.add(spoke.toLowerCase());
+  }
 
   // Fetch assets + tokenization spokes + all on-chain spokes for each hub
   const resolvedHubs: Record<string, ResolvedHub> = {};
@@ -293,7 +293,7 @@ export async function generateProtocolV4Library(config: V4Config) {
     allOnChainSpokes.push(...hubSpokes.allSpokes);
     resolvedHubs[hubName] = {
       hub: hubAddress,
-      assets: assets.map((a) => ({...a, tokenizationSpoke: tokSpokes.get(a.assetId)!})),
+      assets: assets.map((a) => ({...a, tokenizationSpoke: tokSpokes.get(a.assetId)})),
     };
   }
 
@@ -399,10 +399,7 @@ export async function generateProtocolV4Library(config: V4Config) {
   }
 
   // Tokenization Spokes library
-  const tokenSpokesAddresses = buildTokenizationSpokesAddresses(
-    resolvedHubs,
-    config.tokenizationSpokePrefixes,
-  );
+  const tokenSpokesAddresses = buildTokenizationSpokesAddresses(resolvedHubs);
   if (Object.keys(tokenSpokesAddresses).length > 0) {
     const tokenSpokesLibraryName = `${name}TokenizationSpokes`;
     appendFileSync(
@@ -546,11 +543,11 @@ export async function generateProtocolV4Library(config: V4Config) {
     rawSpokeTsEntries.push({sourceObjectName: 'TOKENIZATION_SPOKES', key});
   }
 
-  const knownSpokes = new Set<string>();
-  if (treasurySpoke) knownSpokes.add(treasurySpoke.toLowerCase());
-  for (const addr of Object.values(spokesByBaseKey)) knownSpokes.add(addr.toLowerCase());
+  const knownSpokes = new Set<string>(knownNonTokenizationSpokes);
   for (const hubData of Object.values(resolvedHubs)) {
-    for (const asset of hubData.assets) knownSpokes.add(asset.tokenizationSpoke.toLowerCase());
+    for (const asset of hubData.assets) {
+      if (asset.tokenizationSpoke) knownSpokes.add(asset.tokenizationSpoke.toLowerCase());
+    }
   }
 
   const unknownSpokes: Hex[] = [];

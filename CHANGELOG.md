@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.62.2](https://github.com/aave-dao/aave-address-book/compare/v4.62.1...v4.62.2) (2026-08-04)
+
+
+### Bug Fixes
+
+* add exception for deprecated spokes & fix generation ([#1501](https://github.com/aave-dao/aave-address-book/issues/1501)) ([a9e755c](https://github.com/aave-dao/aave-address-book/commit/a9e755c049951798203c75f0f64c4b1c57d2ab2a))
+
+## [4.62.1](https://github.com/aave-dao/aave-address-book/compare/v4.62.0...v4.62.1) (2026-08-01)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1499](https://github.com/aave-dao/aave-address-book/issues/1499)) ([65425c3](https://github.com/aave-dao/aave-address-book/commit/65425c34a0ea8724dcbb51a8a1abb69baf8ef93a))
+
+## [4.62.0](https://github.com/aave-dao/aave-address-book/compare/v4.61.2...v4.62.0) (2026-07-31)
+
+
+### Features
+
+* USDG Maple Spoke ([#1491](https://github.com/aave-dao/aave-address-book/issues/1491)) ([be170c1](https://github.com/aave-dao/aave-address-book/commit/be170c1a694018ca44b489696e9444074d900d07))
+
 ## [4.61.2](https://github.com/aave-dao/aave-address-book/compare/v4.61.1...v4.61.2) (2026-07-25)
 
 
