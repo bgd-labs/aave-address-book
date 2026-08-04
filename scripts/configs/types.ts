@@ -155,6 +155,7 @@ export interface V4Config {
   hubs: Record<string, Hex>;
   spokes: Record<string, Hex>;
   eSpokes?: Record<string, Hex>;
+  deprecatedTokenizationSpokes?: Hex[];
   positionManagers?: Record<string, Hex>;
   externalLibraries: Record<string, Hex>;
   additionalAddresses?: Record<string, Hex>;

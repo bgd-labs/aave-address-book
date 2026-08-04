@@ -33,6 +33,12 @@ export const mainnetV4Config: V4Config = {
     LIDO: '0xe1900480ac69f0B296841Cd01cC37546d92F35Cd',
     USDG_MAPLE: '0x774b9655413c34809c1f1b16b654465A89EBE989',
   },
+  // Superseded by the Global Dollar tokenization spokes on the PAXOS hub, but still listed on-chain
+  deprecatedTokenizationSpokes: [
+    '0x27eF1140364948A0E30E248297FfDFE5a4091ec4', // waPaxosPT_USDG_24SEP2026
+    '0x4131E0B2E7AFeCEAf3d3b4225aA61a3B2B7535b8', // waPaxosUSDC
+    '0x8Dabe53E8cB991c57f0307F6f419E6D469b0deAA', // waPaxosUSDT
+  ],
   positionManagers: {
     GIVER_POSITION_MANAGER: '0x17A54b8d6D9C68e7fa1C7112AC998EA1BA51d11e',
     TAKER_POSITION_MANAGER: '0x6c044c0D3801499bCAbfAd458B70880bc518e9F7',
