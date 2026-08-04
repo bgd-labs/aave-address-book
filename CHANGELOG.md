@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.62.4](https://github.com/aave-dao/aave-address-book/compare/v4.62.3...v4.62.4) (2026-08-04)
+
+
+### Bug Fixes
+
+* add network safes ([#1462](https://github.com/aave-dao/aave-address-book/issues/1462)) ([6965d4e](https://github.com/aave-dao/aave-address-book/commit/6965d4ec8e6c6dfc30c50f301dc83c58698e56e6))
+
 ## [4.62.3](https://github.com/aave-dao/aave-address-book/compare/v4.62.2...v4.62.3) (2026-08-04)
 
 
