@@ -4736,6 +4736,39 @@
     },
     "0xD7eC225DC053151100A0ef47b94a77AAD9C413b7": {
       "name": "AssetInterestRateStrategy"
+    },
+    "0xa1673fbD457747A05e91D9ef904Cb12827916B1E": {
+      "name": "AaveV4ConfigEngine"
+    },
+    "0x774b9655413c34809c1f1b16b654465A89EBE989": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x47a7cC7Fd47aCed15087a8b6e0ACFddCD63C811A": {
+      "name": "AaveOracle"
+    },
+    "0x46f94aff8cF7DdC8557eF69f7276087b01C8f363": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x9E7c31e9b3C76Ea759D9f7464210353862F0c957": {
+      "name": "PriceCapAdapterStable"
+    },
+    "0x7Df10B4A01350D2A1d95cFbE7c9207d7210A2663": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xaed7c529bD2878170B61C758DfAa215AC7a4FD07": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xa0e97e45C2f89003730E467Bd484fA3eEcE5B4Cf": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x5A6FcB0ebc018b6FD94Fc5f5A9F0948d0D40f040": {
+      "name": "SyrupUSDGPriceCapAdapter"
+    },
+    "0x378B4a7c394E22bd562F66eB612165893533c124": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x87b65C4aAFFA76881f9E96F3e7ED945ddFC3Cd7A": {
+      "name": "MaplePool"
     }
   },
   "10": {
@@ -9852,6 +9885,24 @@
     },
     "0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34": {
       "name": "RiskSteward"
+    },
+    "0xDc00342D80de85a8b843Dab1f29bb407B3abeB64": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xd46d988C0055eff66eEaad582E985d3805aD6d2b": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x50591A9F86972C591b6FE858b465f5B65d5c24ee": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xcdc050015042701f6B3af3b87990945d415FA657": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x6f2cdF03c8343E1eA608668812Fb094E46C41C80": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x4eC854a6fDF52Eb64F8CabF87FafD3B1f1743a00": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "146": {
@@ -16135,6 +16186,24 @@
     },
     "0xd3642A6e9fa95961130497727DC3aE6c38D625E7": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x4DFfA29C526b5CFB419e14E3111516Fbf929797D": {
+      "name": "GhoGsmSteward"
+    },
+    "0xC912D64F9F649897dC0244da3835869d410d053e": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x53E0cE250d06043414070100458546AaF4e284eD": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x2169Bf2084bDb881587b3Cf6B24011E6AA091FdE": {
+      "name": "FixedFeeStrategy"
+    },
+    "0xC5aF63c233eA19cB191b36D16C1e25cDA08409E7": {
+      "name": "ChainlinkOracleSwapFreezer"
+    },
+    "0x812fBcd390A3C6c01C65B767413Dea6f6e24FDD0": {
+      "name": "AaveGhoCcipBridge"
     }
   },
   "42220": {
@@ -18025,6 +18094,9 @@
     },
     "0x446eb3913b3fd3a9219A07B0f6AbE98BD0fAeed4": {
       "name": "AssetInterestRateStrategy"
+    },
+    "0x1F0C67Fde7FcaF7eCEA43b76A23461803972c45c": {
+      "name": "AaveV4ConfigEngine"
     }
   },
   "57073": {

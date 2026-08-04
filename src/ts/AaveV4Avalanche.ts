@@ -11,8 +11,8 @@ export const SPOKE_CONFIGURATOR = '0x8F72573F1Aa0A1e39fFD2a2A69e9EDAa8B982642';
 // ITreasurySpoke https://snowscan.xyz/address/0x2C4Aea1A5F000889c6DfFE8f52377aFc2CB113a6
 export const TREASURY_SPOKE = '0x2C4Aea1A5F000889c6DfFE8f52377aFc2CB113a6';
 
-// IAaveV4ConfigEngine https://snowscan.xyz/address/0xe03C9eb1880c61F0688940E133004c7CcE1e2827
-export const CONFIG_ENGINE = '0xe03C9eb1880c61F0688940E133004c7CcE1e2827';
+// IAaveV4ConfigEngine https://snowscan.xyz/address/0x1F0C67Fde7FcaF7eCEA43b76A23461803972c45c
+export const CONFIG_ENGINE = '0x1F0C67Fde7FcaF7eCEA43b76A23461803972c45c';
 
 export const CHAIN_ID = 43114;
 
