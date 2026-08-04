@@ -244,6 +244,22 @@ export const E_MODES = {
     liquidationThreshold: 9500,
     liquidationBonus: 10100,
   },
+  '6': {
+    label: 'WMNT / USDT0,USDC,GHO',
+    collateralBitmap: '2',
+    collateralAssets: ['0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8'],
+    borrowableBitmap: '524',
+    borrowableAssets: [
+      '0x779Ded0c9e1022225f8E0630b35a9b54bE713736',
+      '0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9',
+      '0xfc421aD3C883Bf9E7C4f42dE845C4e4405799e73',
+    ],
+    ltvzeroBitmap: '0',
+    ltvzeroAssets: [],
+    ltv: 4000,
+    liquidationThreshold: 4500,
+    liquidationBonus: 11000,
+  },
 } as const;
 export const EXTERNAL_LIBRARIES = {
   FLASHLOAN_LOGIC: '0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6',
