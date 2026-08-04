@@ -127,5 +127,5 @@ library MiscEthereum {
     0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307;
 
   // https://etherscan.io/address/0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8
-  address internal constant CERTORA = 0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8;
+  address internal constant CERTORA_FUNDING_RECEIVER = 0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8;
 }
