@@ -117,4 +117,15 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
+
+  // https://etherscan.io/address/0xAAA973Fe8A6202947e21D0a3a43d8E83ABE35C23
+  address internal constant BALANCER_RECLAMM_SAFE_DAO_WALLET_TREASURY =
+    0xAAA973Fe8A6202947e21D0a3a43d8E83ABE35C23;
+
+  // https://etherscan.io/address/0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307
+  address internal constant V4_AUDIT_DAO_WALLET_SECURITY =
+    0xAAf400e4Bbc38B5E2136C1a36946Bf841A357307;
+
+  // https://etherscan.io/address/0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8
+  address internal constant CERTORA_FUNDING_RECEIVER = 0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8;
 }
