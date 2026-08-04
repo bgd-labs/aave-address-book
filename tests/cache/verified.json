@@ -10663,6 +10663,9 @@
     },
     "0xe00B2732396a1f047d4A00e0165025A9cF400245": {
       "name": "PriceCapAdapterStable"
+    },
+    "0x97e7620A3229b3daC7049C537B0E29DA2D1021E1": {
+      "name": "StataTokenV2"
     }
   },
   "324": {
