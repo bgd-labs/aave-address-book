@@ -31,7 +31,7 @@ const V4_INTERFACE_REGISTRY: Record<string, string> = {
 
 interface ResolvedHub {
   hub: Hex;
-  assets: (FetchedHubAsset & {tokenizationSpoke: Hex})[];
+  assets: (FetchedHubAsset & {tokenizationSpoke?: Hex})[];
 }
 
 function buildMainLibraryAddresses(config: V4Config): Addresses {
@@ -114,9 +114,23 @@ function buildTokenizationSpokesAddresses(resolvedHubs: Record<string, ResolvedH
   const addresses: Addresses = {};
   for (const [hubName, hubData] of Object.entries(resolvedHubs)) {
     for (const asset of hubData.assets) {
+      if (!asset.tokenizationSpoke) continue;
       addresses[`${hubName}_${asset.symbol}_TOKENIZATION_SPOKE`] = {
         value: asset.tokenizationSpoke,
         type: 'ITokenizationSpoke',
+      };
+    }
+  }
+  return addresses;
+}
+
+function buildIRStrategiesAddresses(resolvedHubs: Record<string, ResolvedHub>): Addresses {
+  const addresses: Addresses = {};
+  for (const [hubName, hubData] of Object.entries(resolvedHubs)) {
+    for (const asset of hubData.assets) {
+      addresses[`${hubName}_${asset.symbol}_IR_STRATEGY`] = {
+        value: asset.irStrategy,
+        type: 'IBasicInterestRateStrategy',
       };
     }
   }
@@ -218,6 +232,31 @@ function buildTsRawGetter(
   return `export const ${exportName} = [${items}] as const;`;
 }
 
+const POSITION_MANAGER_STRUCT_FIELDS: {field: string; key: string; iface: string}[] = [
+  {field: 'giver', key: 'GIVER_POSITION_MANAGER', iface: 'IGiverPositionManager'},
+  {field: 'taker', key: 'TAKER_POSITION_MANAGER', iface: 'ITakerPositionManager'},
+  {field: 'config', key: 'CONFIG_POSITION_MANAGER', iface: 'IConfigPositionManager'},
+  {field: 'nativeGateway', key: 'NATIVE_TOKEN_GATEWAY', iface: 'INativeTokenGateway'},
+  {field: 'signatureGateway', key: 'SIGNATURE_GATEWAY', iface: 'ISignatureGateway'},
+];
+
+function buildPositionManagersGetter(libraryName: string, pmAddresses: Addresses): string {
+  const fields = POSITION_MANAGER_STRUCT_FIELDS.map(({field, key, iface}) => {
+    const entry = pmAddresses[key];
+    const value = typeof entry === 'object' ? entry.value : entry;
+    const assigned =
+      value && value !== zeroAddress ? `${libraryName}.${keyToVar(key)}` : `${iface}(address(0))`;
+    return `      ${field}: ${assigned}`;
+  }).join(',\n');
+  return [
+    '  function getPositionManagers() internal pure returns (PositionManagers memory) {',
+    '    return PositionManagers({',
+    fields,
+    '    });',
+    '  }',
+  ].join('\n');
+}
+
 export async function generateProtocolV4Library(config: V4Config) {
   const client = getClient(config.chainId);
   if (!client) {
@@ -232,6 +271,9 @@ export async function generateProtocolV4Library(config: V4Config) {
   const treasurySpoke = config.admin.TREASURY_SPOKE;
   if (treasurySpoke) {
     knownNonTokenizationSpokes.add(treasurySpoke.toLowerCase());
+  }
+  for (const spoke of config.deprecatedTokenizationSpokes ?? []) {
+    knownNonTokenizationSpokes.add(spoke.toLowerCase());
   }
 
   // Fetch assets + tokenization spokes + all on-chain spokes for each hub
@@ -251,7 +293,7 @@ export async function generateProtocolV4Library(config: V4Config) {
     allOnChainSpokes.push(...hubSpokes.allSpokes);
     resolvedHubs[hubName] = {
       hub: hubAddress,
-      assets: assets.map((a) => ({...a, tokenizationSpoke: tokSpokes.get(a.assetId)!})),
+      assets: assets.map((a) => ({...a, tokenizationSpoke: tokSpokes.get(a.assetId)})),
     };
   }
 
@@ -276,7 +318,7 @@ export async function generateProtocolV4Library(config: V4Config) {
   const name = `AaveV4${config.name}`;
   const chainId = config.chainId;
 
-  const imports = `import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable} from './AaveV4.sol';\n`;
+  const imports = `import {IHub, IHubConfigurator, ISpoke, ISpokeConfigurator, ITokenizationSpoke, ITreasurySpoke, IAaveOracle, IConfigPositionManager, IGiverPositionManager, ITakerPositionManager, INativeTokenGateway, ISignatureGateway, IAaveV4ConfigEngine, IAccessManagerEnumerable, IBasicInterestRateStrategy, PositionManagers} from './AaveV4.sol';\n`;
 
   // Main library (core addresses)
   const mainAddresses = buildMainLibraryAddresses(config);
@@ -370,6 +412,23 @@ export async function generateProtocolV4Library(config: V4Config) {
     appendFileSync(
       `./src/ts/${name}.ts`,
       `\nexport const TOKENIZATION_SPOKES = ${generateJsObject(tokenSpokesAddresses)} as const;\n`,
+    );
+  }
+
+  // IR Strategies library (per-hub, per-asset interest rate strategies)
+  const irStrategiesAddresses = buildIRStrategiesAddresses(resolvedHubs);
+  if (Object.keys(irStrategiesAddresses).length > 0) {
+    const irStrategiesLibraryName = `${name}IRStrategies`;
+    appendFileSync(
+      `./src/${name}.sol`,
+      wrapIntoSolidityLibrary(
+        generateSolidityConstants({chainId, addresses: irStrategiesAddresses}),
+        irStrategiesLibraryName,
+      ),
+    );
+    appendFileSync(
+      `./src/ts/${name}.ts`,
+      `\nexport const IR_STRATEGIES = ${generateJsObject(irStrategiesAddresses)} as const;\n`,
     );
   }
 
@@ -484,11 +543,11 @@ export async function generateProtocolV4Library(config: V4Config) {
     rawSpokeTsEntries.push({sourceObjectName: 'TOKENIZATION_SPOKES', key});
   }
 
-  const knownSpokes = new Set<string>();
-  if (treasurySpoke) knownSpokes.add(treasurySpoke.toLowerCase());
-  for (const addr of Object.values(spokesByBaseKey)) knownSpokes.add(addr.toLowerCase());
+  const knownSpokes = new Set<string>(knownNonTokenizationSpokes);
   for (const hubData of Object.values(resolvedHubs)) {
-    for (const asset of hubData.assets) knownSpokes.add(asset.tokenizationSpoke.toLowerCase());
+    for (const asset of hubData.assets) {
+      if (asset.tokenizationSpoke) knownSpokes.add(asset.tokenizationSpoke.toLowerCase());
+    }
   }
 
   const unknownSpokes: Hex[] = [];
@@ -505,6 +564,10 @@ export async function generateProtocolV4Library(config: V4Config) {
       buildSolidityRawGetter('getAllSpokesRaw', 'spokes', rawSpokeEntries, unknownSpokes),
     );
     tsGetterLines.push(buildTsRawGetter('ALL_SPOKES_RAW', rawSpokeTsEntries, unknownSpokes));
+  }
+
+  if (Object.keys(pmAddresses).length > 0) {
+    solGetterFns.push(buildPositionManagersGetter(`${name}PositionManagers`, pmAddresses));
   }
 
   if (solGetterFns.length > 0) {

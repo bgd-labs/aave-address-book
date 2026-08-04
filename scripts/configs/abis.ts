@@ -2,10 +2,29 @@ import {governanceConfigMainnet} from 'scripts/configs/governance/ethereum';
 import {mainnetProtoV3Pool} from 'scripts/configs/pools/ethereum';
 
 /**
+ * @dev An abi interface is either a forge identifier (the file name / path is used as the export name)
+ * or an explicit `{path, name}` pair when the export name must differ from the interface name to avoid
+ * collisions (e.g. the V4 `IAaveOracle` interface is exported as `IAaveOracleV4`).
+ */
+export type AbiInterface = string | {path: string; name: string};
+
+/**
+ * @dev Resolves an abi interface entry to the forge path passed to `forge inspect` and the name used
+ * for the generated file and its `_ABI` export.
+ */
+export function resolveAbiInterface(entry: AbiInterface): {path: string; name: string} {
+  if (typeof entry === 'string') {
+    const match = entry.match(/\/([^/]+)\.sol$/);
+    return {path: entry, name: match ? match[1] : entry};
+  }
+  return entry;
+}
+
+/**
  * @dev These abis can be inferred directly from code as they exist as a dependency
  * For contracts that are not unique, the path needs to be prefixed
  */
-export const ABI_INTERFACES = [
+export const ABI_INTERFACES: AbiInterface[] = [
   'ICollector',
   'lib/aave-v3-origin/src/contracts/extensions/v3-config-engine/IAaveV3ConfigEngine.sol',
   'IVotingMachineWithProofs',
@@ -24,6 +43,19 @@ export const ABI_INTERFACES = [
   'ILendingPoolAddressesProvider',
   'ILendingPoolConfigurator',
   'IStakeToken',
+  {path: 'lib/aave-v4/src/hub/interfaces/IHub.sol', name: 'IHubV4'},
+  {path: 'lib/aave-v4/src/spoke/interfaces/ISpoke.sol', name: 'ISpokeV4'},
+  {path: 'lib/aave-v4/src/spoke/interfaces/ITokenizationSpoke.sol', name: 'ITokenizationSpokeV4'},
+  {path: 'lib/aave-v4/src/spoke/interfaces/IAaveOracle.sol', name: 'IAaveOracleV4'},
+  'lib/aave-v4/src/hub/interfaces/IHubConfigurator.sol',
+  'lib/aave-v4/src/spoke/interfaces/ISpokeConfigurator.sol',
+  'lib/aave-v4/src/config-engine/interfaces/IAaveV4ConfigEngine.sol',
+  'lib/aave-v4/src/position-manager/interfaces/IGiverPositionManager.sol',
+  'lib/aave-v4/src/position-manager/interfaces/ITakerPositionManager.sol',
+  'lib/aave-v4/src/position-manager/interfaces/IConfigPositionManager.sol',
+  'lib/aave-v4/src/position-manager/interfaces/INativeTokenGateway.sol',
+  'lib/aave-v4/src/position-manager/interfaces/ISignatureGateway.sol',
+  'lib/aave-v4/src/access/interfaces/IAccessManagerEnumerable.sol',
 ];
 
 /**
