@@ -29,4 +29,10 @@ library MiscPlasma {
 
   // https://plasmascan.to/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
+
+  // https://plasmascan.to/address/0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871
+  address internal constant ALC_INCENTIVE_SAFE = 0xAAB6f926DCDaE536F54ce58478Dbc1a0d0f98871;
+
+  // https://plasmascan.to/address/0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243
+  address internal constant CCIP_BRIDGE_DESTINATION = 0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243;
 }

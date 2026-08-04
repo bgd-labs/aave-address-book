@@ -8,4 +8,7 @@ library MiscMegaEth {
 
   // https://mega.etherscan.io/address/0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef
   address internal constant PROTOCOL_GUARDIAN = 0x8126eAd44383cb52Cf6A1bb70F1b4d7399DE34ef;
+
+  // https://mega.etherscan.io/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
+  address internal constant ALC_SAFE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
 }
