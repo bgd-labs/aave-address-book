@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.62.3](https://github.com/aave-dao/aave-address-book/compare/v4.62.2...v4.62.3) (2026-08-04)
+
+
+### Bug Fixes
+
+* retire scroll sepolia ([#1503](https://github.com/aave-dao/aave-address-book/issues/1503)) ([0f7e4a2](https://github.com/aave-dao/aave-address-book/commit/0f7e4a2d8900b9a21048c5a550bf37e04ecdc304))
+
 ## [4.62.2](https://github.com/aave-dao/aave-address-book/compare/v4.62.1...v4.62.2) (2026-08-04)
 
 
