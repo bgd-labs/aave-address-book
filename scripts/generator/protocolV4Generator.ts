@@ -543,9 +543,7 @@ export async function generateProtocolV4Library(config: V4Config) {
     rawSpokeTsEntries.push({sourceObjectName: 'TOKENIZATION_SPOKES', key});
   }
 
-  const knownSpokes = new Set<string>();
-  if (treasurySpoke) knownSpokes.add(treasurySpoke.toLowerCase());
-  for (const addr of Object.values(spokesByBaseKey)) knownSpokes.add(addr.toLowerCase());
+  const knownSpokes = new Set<string>(knownNonTokenizationSpokes);
   for (const hubData of Object.values(resolvedHubs)) {
     for (const asset of hubData.assets) {
       if (asset.tokenizationSpoke) knownSpokes.add(asset.tokenizationSpoke.toLowerCase());

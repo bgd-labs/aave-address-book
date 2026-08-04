@@ -87,8 +87,6 @@ export async function fetchTokenizationSpokes(
     }
   }
 
-  // Assets with no candidate are not tokenized (e.g. only reachable through an eSpoke), so only
-  // candidates that could not be disambiguated are an error.
   for (const {asset} of pendingCandidates) {
     if (!results.has(asset.assetId)) {
       throw new Error(
