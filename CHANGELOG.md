@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.62.2](https://github.com/aave-dao/aave-address-book/compare/v4.62.1...v4.62.2) (2026-08-04)
+
+
+### Bug Fixes
+
+* add exception for deprecated spokes & fix generation ([#1501](https://github.com/aave-dao/aave-address-book/issues/1501)) ([a9e755c](https://github.com/aave-dao/aave-address-book/commit/a9e755c049951798203c75f0f64c4b1c57d2ab2a))
+
 ## [4.62.1](https://github.com/aave-dao/aave-address-book/compare/v4.62.0...v4.62.1) (2026-08-01)
 
 
