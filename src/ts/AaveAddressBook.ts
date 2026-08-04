@@ -46,7 +46,6 @@ export * as AaveV3ArbitrumSepolia from './AaveV3ArbitrumSepolia';
 export * as AaveV3Optimism from './AaveV3Optimism';
 export * as AaveV3OptimismSepolia from './AaveV3OptimismSepolia';
 export * as AaveV3Scroll from './AaveV3Scroll';
-export * as AaveV3ScrollSepolia from './AaveV3ScrollSepolia';
 export * as AaveV3ZkSync from './AaveV3ZkSync';
 export * as AaveV3EthereumLido from './AaveV3EthereumLido';
 export * as AaveV3EthereumEtherFi from './AaveV3EthereumEtherFi';
