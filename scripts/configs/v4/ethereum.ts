@@ -15,7 +15,7 @@ export const mainnetV4Config: V4Config = {
     CORE: '0xCca852Bc40e560adC3b1Cc58CA5b55638ce826c9',
     PLUS: '0x06002e9c4412CB7814a791eA3666D905871E536A',
     PRIME: '0x943827DCA022D0F354a8a8c332dA1e5Eb9f9F931',
-    PAXOS: '0x62d63197660c080236193CA60b70E49A08E90368',
+    GLOBAL_DOLLAR: '0x62d63197660c080236193CA60b70E49A08E90368',
   },
   spokes: {
     BLUECHIP: '0x973a023A77420ba610f06b3858aD991Df6d85A08',
@@ -33,7 +33,7 @@ export const mainnetV4Config: V4Config = {
     LIDO: '0xe1900480ac69f0B296841Cd01cC37546d92F35Cd',
     USDG_MAPLE: '0x774b9655413c34809c1f1b16b654465A89EBE989',
   },
-  // Superseded by the Global Dollar tokenization spokes on the PAXOS hub, but still listed on-chain
+  // Superseded by the new Global Dollar tokenization spokes, but still listed on-chain
   deprecatedTokenizationSpokes: [
     '0x27eF1140364948A0E30E248297FfDFE5a4091ec4', // waPaxosPT_USDG_24SEP2026
     '0x4131E0B2E7AFeCEAf3d3b4225aA61a3B2B7535b8', // waPaxosUSDC
