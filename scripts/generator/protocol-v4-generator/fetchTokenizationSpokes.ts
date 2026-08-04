@@ -87,7 +87,7 @@ export async function fetchTokenizationSpokes(
     }
   }
 
-  for (const asset of assets) {
+  for (const {asset} of pendingCandidates) {
     if (!results.has(asset.assetId)) {
       throw new Error(
         `Could not identify tokenization spoke for asset ${asset.symbol} (id=${asset.assetId}) on hub ${hubAddress}`,

@@ -4733,6 +4733,15 @@
     },
     "0xa0e97e45C2f89003730E467Bd484fA3eEcE5B4Cf": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x5A6FcB0ebc018b6FD94Fc5f5A9F0948d0D40f040": {
+      "name": "SyrupUSDGPriceCapAdapter"
+    },
+    "0x378B4a7c394E22bd562F66eB612165893533c124": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x87b65C4aAFFA76881f9E96F3e7ED945ddFC3Cd7A": {
+      "name": "MaplePool"
     }
   },
   "10": {
