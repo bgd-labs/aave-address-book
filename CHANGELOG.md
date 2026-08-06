@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.63.0](https://github.com/aave-dao/aave-address-book/compare/v4.62.6...v4.63.0) (2026-08-06)
+
+
+### Features
+
+* GHO GSM addresses (Monad) ([#1483](https://github.com/aave-dao/aave-address-book/issues/1483)) ([39aa509](https://github.com/aave-dao/aave-address-book/commit/39aa50989a68be6336dadc457b96b57fcd59f110))
+
 ## [4.62.6](https://github.com/aave-dao/aave-address-book/compare/v4.62.5...v4.62.6) (2026-08-06)
 
 
