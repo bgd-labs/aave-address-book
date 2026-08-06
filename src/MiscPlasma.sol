@@ -35,4 +35,7 @@ library MiscPlasma {
 
   // https://plasmascan.to/address/0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243
   address internal constant CCIP_BRIDGE_DESTINATION = 0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243;
+
+  // https://plasmascan.to/address/0x9DE1d45e2786b03498289959203F25b29B4D1193
+  address internal constant TOKENLOGIC_EXECUTION_SAFE = 0x9DE1d45e2786b03498289959203F25b29B4D1193;
 }
