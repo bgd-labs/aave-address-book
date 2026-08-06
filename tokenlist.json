@@ -10615,6 +10615,19 @@
     },
     {
       "chainId": 196,
+      "address": "0x97e7620A3229b3daC7049C537B0E29DA2D1021E1",
+      "name": "Wrapped Aave XLayer USDG",
+      "decimals": 6,
+      "symbol": "waXlrUSDG",
+      "tags": ["aaveV3", "stataToken"],
+      "extensions": {
+        "pool": "0xE3F3Caefdd7180F884c01E57f65Df979Af84f116",
+        "underlying": "0x4ae46a509F6b1D9056937BA4500cb143933D2dc8",
+        "underlyingAToken": "0x228765a3C18065C923F23a0CCb6c7cEFB3eA2223"
+      }
+    },
+    {
+      "chainId": 196,
       "address": "0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f",
       "name": "OKX Wrapped BTC",
       "decimals": 8,
@@ -11249,6 +11262,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 184 },
-  "timestamp": "2026-07-21T00:31:07.220Z"
+  "version": { "major": 3, "minor": 0, "patch": 185 },
+  "timestamp": "2026-08-05T00:30:52.311Z"
 }

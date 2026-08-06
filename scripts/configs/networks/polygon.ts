@@ -14,6 +14,7 @@ export const polygonAddresses: NetworkAddresses<{
   REWARD_STEWARD: Hex;
   BUDGET_INCENTIVE_SAFE: Hex;
   MERKL_DISTRIBUTION_SAFE: Hex;
+  V2_COLLECTOR_DAO_WALLET_TREASURY: Hex;
 }> = {
   name: 'Polygon',
   chainId: ChainId.polygon,
@@ -39,5 +40,6 @@ export const polygonAddresses: NetworkAddresses<{
     BUDGET_INCENTIVE_SAFE: '0x66Ac7223048037826e12cef9a848199e31AEFabE',
     MERKL_DISTRIBUTION_SAFE: '0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D',
     ROBOT_GUARDIAN: '0x441E4053fDDF1e1a77a39d00309Af389096d4124',
+    V2_COLLECTOR_DAO_WALLET_TREASURY: '0x7734280a4337f37fbf4651073db7c28c80b339e9',
   },
 };
