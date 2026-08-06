@@ -1,0 +1,25 @@
+.github/workflows/release.yml
+  s_8b979fe433df4a::t_4f8c422b478072 75-121
+README.md
+  s_8b979fe433df4a::t_ed1570a9ca74b9 108-120
+scripts/generateAddressBookApi.ts
+  s_8b979fe433df4a::t_9a84704b955c2c 1-88
+tests/addressBookApi.spec.ts
+  s_8b979fe433df4a::t_1a32e1bb7ddfbf 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4bb82d2d33cae79c8b922cf34f8c25e5d66aadb9",
+  "prompts": {},
+  "sessions": {
+    "s_8b979fe433df4a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd7f1-0848-7f80-a1a2-a14b4adc30d0",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Sam Skynner <skynnes@gmail.com>"
+    }
+  }
+}
