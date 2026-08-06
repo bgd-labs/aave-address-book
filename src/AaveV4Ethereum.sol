@@ -382,12 +382,20 @@ library AaveV4EthereumSpokePriceFeeds {
     0x5424384B256154046E9667dDFaaa5e550145215e;
 
   // https://etherscan.io/address/0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4
-  address internal constant USDG_MAPLE_ESPOKE_USDG_PRICE_FEED =
+  address internal constant USDG_MAPLE_ESPOKE_GLOBAL_DOLLAR_USDG_PRICE_FEED =
     0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4;
 
   // https://etherscan.io/address/0x5A6FcB0ebc018b6FD94Fc5f5A9F0948d0D40f040
   address internal constant USDG_MAPLE_ESPOKE_syrupUSDG_PRICE_FEED =
     0x5A6FcB0ebc018b6FD94Fc5f5A9F0948d0D40f040;
+
+  // https://etherscan.io/address/0x3f73F03aa83B2A48ed27E964eD0fDb590332095B
+  address internal constant USDG_MAPLE_ESPOKE_USDC_PRICE_FEED =
+    0x3f73F03aa83B2A48ed27E964eD0fDb590332095B;
+
+  // https://etherscan.io/address/0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4
+  address internal constant USDG_MAPLE_ESPOKE_CORE_USDG_PRICE_FEED =
+    0x83D20dEEdcd4aC1313496c8CBcAad0fa298c0CE4;
 }
 library AaveV4EthereumTokenizationSpokes {
   // https://etherscan.io/address/0x7320CF22Ac095bA2a2e0a652F77efB836c2E751b
