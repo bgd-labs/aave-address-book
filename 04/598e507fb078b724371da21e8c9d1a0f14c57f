@@ -1,0 +1,29 @@
+tests/jsonApi.spec.ts
+  s_61e5b13946af2d::t_d0541cccd992c9 1,5,25,50,59,65,69,74,90
+  s_61e5b13946af2d::t_60814874d20caf 2-4,6-24,26-49,51-58,60-64,66-68,70-73,75-89,91-93
+scripts/generateJsonApi.ts
+  s_61e5b13946af2d::t_d0541cccd992c9 3,7,36,40,103-105,127-129,146,157-158,178,183,186,189,197-198
+  s_61e5b13946af2d::t_60814874d20caf 1-2,4-6,8-35,37-39,41-102,106-126,130-145,147-156,159-177,179-182,184-185,187-188,190-196,199
+ui/package.json
+  s_61e5b13946af2d::t_60814874d20caf 9
+  s_61e5b13946af2d::t_1e5256f634ea6d 10
+README.md
+  s_61e5b13946af2d::t_d0541cccd992c9 63,66
+  s_61e5b13946af2d::t_60814874d20caf 51-62,64-65,67-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "04598e507fb078b724371da21e8c9d1a0f14c57f",
+  "prompts": {},
+  "sessions": {
+    "s_61e5b13946af2d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd834-fa1c-7151-bcfa-a9472cdf2d31",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
