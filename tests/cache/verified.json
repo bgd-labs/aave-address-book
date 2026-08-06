@@ -9874,6 +9874,24 @@
     "0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34": {
       "name": "RiskSteward"
     },
+    "0x16A6D0fD02D4DAB40Fee3014faa05b39d083F4ee": {
+      "name": "AaveGhoCcipBridge"
+    },
+    "0x6C4b8AC66a3C879129282C137fc038519b883AE6": {
+      "name": "GhoGsmSteward"
+    },
+    "0x307707A53Cb51670a8bcC8a2808A349C65E1Fb92": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x3Cf3779EEf770931543ACd2C7f6ECd1b37E35caB": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0xAcB3d2f60CAA4966dE003E22936033FFBE7f6787": {
+      "name": "FixedFeeStrategy"
+    },
+    "0xC26bF89C90cd9cE12360D08bB494695206189159": {
+      "name": "ChainlinkOracleSwapFreezer"
+    },
     "0xDc00342D80de85a8b843Dab1f29bb407B3abeB64": {
       "name": "TransparentUpgradeableProxy"
     },
