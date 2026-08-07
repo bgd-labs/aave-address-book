@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.0](https://github.com/aave-dao/aave-address-book/compare/v4.64.0...v4.65.0) (2026-08-07)
+
+
+### Features
+
+* publish JSON API releases to S3 ([#1511](https://github.com/aave-dao/aave-address-book/issues/1511)) ([b4aa2a3](https://github.com/aave-dao/aave-address-book/commit/b4aa2a3de01a3f38fa4d5ab18c275023f2f4ac71))
+
 ## [4.64.0](https://github.com/aave-dao/aave-address-book/compare/v4.63.0...v4.64.0) (2026-08-07)
 
 
