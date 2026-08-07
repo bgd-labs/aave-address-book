@@ -129,6 +129,22 @@ QUICKNODE_TOKEN=your_quicknode_token
 The interactive UI can be found in [ui](./ui) package. The UI is a React application that is compiled as static build, so it can be hosted on github pages.
 You can fine an instance of the UI at [search.onaave.com](https://search.onaave.com/)
 
+## Address book API
+
+Each release is published as a static JSON document for programmatic consumption:
+
+```text
+https://assets.aave.com/address-book/releases/latest/manifest.json
+https://assets.aave.com/address-book/releases/latest/address-book.json
+https://assets.aave.com/address-book/releases/latest/modules/AaveV3Ethereum.json
+https://assets.aave.com/address-book/releases/v<version>/modules/AaveV3Ethereum.json
+```
+
+The API contains an aggregate address book, one file per package module, and a manifest containing
+the package version, commit, byte sizes, and SHA-256 hashes. The `latest` files have a short cache
+lifetime, while versioned files are immutable. The deployment bucket is configured through the
+`STATICS_BUCKET` GitHub Actions secret.
+
 ## Resources
 
 - **[Raycast Extension](https://www.raycast.com/smbdy/aave-search)** - Quick address lookup
