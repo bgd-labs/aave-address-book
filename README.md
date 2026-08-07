@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@aave-dao/aave-address-book)](https://www.npmjs.com/package/@aave-dao/aave-address-book)
 
-An up-to-date registry of all Aave ecosystem smart contract addresses for use in Solidity and JavaScript/TypeScript projects.
+An up-to-date registry of all Aave ecosystem smart contract addresses for use in Solidity and JavaScript/TypeScript projects or usage via JSON API.
 
 🔍 **[Search addresses online](https://aave-dao.github.io/aave-address-book/)**
 
@@ -47,6 +47,30 @@ import { AaveV3Ethereum, AaveV2Avalanche } from "@aave-dao/aave-address-book";
 console.log(AaveV3Ethereum.POOL); // "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
 console.log(AaveV3Ethereum.CHAIN_ID); // 1
 ```
+
+### JSON API
+
+The latest address book is also published as static JSON alongside the search UI:
+
+- [`manifest.json`](https://aave-dao.github.io/aave-address-book/api/v1/manifest.json) describes the deployed package version, source commit, aggregate, and available modules.
+- [`address-book.json`](https://aave-dao.github.io/aave-address-book/api/v1/address-book.json) contains every exported address-book module.
+- `modules/<name>.json` contains one module, for example [`modules/AaveV3Ethereum.json`](https://aave-dao.github.io/aave-address-book/api/v1/modules/AaveV3Ethereum.json).
+
+Manifest paths are relative to the manifest URL and module names are case-sensitive:
+
+```typescript
+const manifestUrl =
+  "https://aave-dao.github.io/aave-address-book/api/v1/manifest.json";
+const manifest = await fetch(manifestUrl).then((response) => response.json());
+const ethereum = manifest.modules.find(
+  (module: { name: string }) => module.name === "AaveV3Ethereum",
+);
+const addresses = await fetch(new URL(ethereum.path, manifestUrl)).then(
+  (response) => response.json(),
+);
+```
+
+The `/api/v1` URLs always represent the latest deployment from `main`. Use the manifest's `commit` and SHA-256 fields to identify and verify the exact content. A future breaking change to the JSON structure or paths will use a new API version.
 
 ## Development
 
@@ -104,6 +128,22 @@ QUICKNODE_TOKEN=your_quicknode_token
 
 The interactive UI can be found in [ui](./ui) package. The UI is a React application that is compiled as static build, so it can be hosted on github pages.
 You can fine an instance of the UI at [search.onaave.com](https://search.onaave.com/)
+
+## Address book API
+
+Each release is published as a static JSON document for programmatic consumption:
+
+```text
+https://assets.aave.com/address-book/releases/latest/manifest.json
+https://assets.aave.com/address-book/releases/latest/address-book.json
+https://assets.aave.com/address-book/releases/latest/modules/AaveV3Ethereum.json
+https://assets.aave.com/address-book/releases/v<version>/modules/AaveV3Ethereum.json
+```
+
+The API contains an aggregate address book, one file per package module, and a manifest containing
+the package version, commit, byte sizes, and SHA-256 hashes. The `latest` files have a short cache
+lifetime, while versioned files are immutable. The deployment bucket is configured through the
+`STATICS_BUCKET` GitHub Actions secret.
 
 ## Resources
 

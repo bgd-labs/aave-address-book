@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.1](https://github.com/aave-dao/aave-address-book/compare/v4.65.0...v4.65.1) (2026-08-07)
+
+
+### Bug Fixes
+
+* read API release version in workflow ([#1515](https://github.com/aave-dao/aave-address-book/issues/1515)) ([ffd0c5b](https://github.com/aave-dao/aave-address-book/commit/ffd0c5b753bb6a09201a3a4829b1c62e9f0ee246))
+
+## [4.65.0](https://github.com/aave-dao/aave-address-book/compare/v4.64.0...v4.65.0) (2026-08-07)
+
+
+### Features
+
+* publish JSON API releases to S3 ([#1511](https://github.com/aave-dao/aave-address-book/issues/1511)) ([b4aa2a3](https://github.com/aave-dao/aave-address-book/commit/b4aa2a3de01a3f38fa4d5ab18c275023f2f4ac71))
+
+## [4.64.0](https://github.com/aave-dao/aave-address-book/compare/v4.63.0...v4.64.0) (2026-08-07)
+
+
+### Features
+
+* add static JSON address book API ([#1512](https://github.com/aave-dao/aave-address-book/issues/1512)) ([f423299](https://github.com/aave-dao/aave-address-book/commit/f423299bc1d25439595355020edc7b580bab3f18))
+
 ## [4.63.0](https://github.com/aave-dao/aave-address-book/compare/v4.62.6...v4.63.0) (2026-08-06)
 
 
