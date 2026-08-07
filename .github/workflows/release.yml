@@ -72,6 +72,55 @@ jobs:
     uses: aave-dao/github-workflows/.github/workflows/release-node.yml@main
     needs: release-please
 
+  release-address-book-api:
+    if: ${{ needs.release-please.outputs.releaseCreated == 'true' }}
+    runs-on: ubuntu-latest
+    env:
+      STATICS_BUCKET: ${{ secrets.STATICS_BUCKET }}
+    needs:
+      - release-please
+      - release-node
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: aave-dao/github-workflows/.github/actions/setup-node@main
+
+      - name: Generate address book API
+        run: npm --workspace ui run generate:api
+
+      - name: Read release version
+        id: version
+        run: echo "value=$(node -p \"require('./package.json').version\")" >> "$GITHUB_OUTPUT"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@61815dcd50bd041e203e49132bacad1fd04d2708 # pin@v5.1.1
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Publish versioned address book API
+        run: |
+          : "${STATICS_BUCKET:?STATICS_BUCKET must be configured}"
+          aws s3 sync ui/out/api/v1/ \
+            "s3://${STATICS_BUCKET}/address-book/releases/v${{ steps.version.outputs.value }}/" \
+            --delete \
+            --content-type "application/json" \
+            --cache-control "public,max-age=31536000,immutable" \
+            --only-show-errors
+
+      - name: Publish latest address book API
+        run: |
+          : "${STATICS_BUCKET:?STATICS_BUCKET must be configured}"
+          aws s3 sync ui/out/api/v1/ \
+            "s3://${STATICS_BUCKET}/address-book/releases/latest/" \
+            --delete \
+            --content-type "application/json" \
+            --cache-control "public,max-age=60,must-revalidate" \
+            --only-show-errors
+
   release-node-alpha:
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]'
     needs:
