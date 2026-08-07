@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@aave-dao/aave-address-book)](https://www.npmjs.com/package/@aave-dao/aave-address-book)
 
-An up-to-date registry of all Aave ecosystem smart contract addresses for use in Solidity and JavaScript/TypeScript projects.
+An up-to-date registry of all Aave ecosystem smart contract addresses for use in Solidity and JavaScript/TypeScript projects or usage via JSON API.
 
 🔍 **[Search addresses online](https://aave-dao.github.io/aave-address-book/)**
 
