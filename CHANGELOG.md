@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.2](https://github.com/aave-dao/aave-address-book/compare/v4.65.1...v4.65.2) (2026-08-07)
+
+
+### Bug Fixes
+
+* add TokenLogic Execution and Stable Vault safes ([#1497](https://github.com/aave-dao/aave-address-book/issues/1497)) ([984c700](https://github.com/aave-dao/aave-address-book/commit/984c700df4400bf06a81da2ab7c4d810e538e0fd))
+
 ## [4.65.1](https://github.com/aave-dao/aave-address-book/compare/v4.65.0...v4.65.1) (2026-08-07)
 
 
