@@ -128,4 +128,8 @@ library MiscEthereum {
 
   // https://etherscan.io/address/0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8
   address internal constant CERTORA_FUNDING_RECEIVER = 0x0F11640BF66e2D9352d9c41434A5C6E597c5e4c8;
+
+  // https://etherscan.io/address/0x3F68D194852Fb0e6F121D0703d2E3f78931D92FB
+  address internal constant FRONTIER_STADER_DAO_WALLET_STEWARD =
+    0x3F68D194852Fb0e6F121D0703d2E3f78931D92FB;
 }
