@@ -9,14 +9,33 @@ library GhoMonad {
   // https://monadscan.com/address/0xA5AE05b71c3F170E12E7620Fdf7679721aec1EC8
   address internal constant GHO_CCIP_TOKEN_POOL = 0xA5AE05b71c3F170E12E7620Fdf7679721aec1EC8;
 
-  // https://monadscan.com/address/0xA5Ba213867E175A182a5dd6A9193C6158738105A
-  address internal constant GHO_AAVE_CORE_STEWARD = 0xA5Ba213867E175A182a5dd6A9193C6158738105A;
+  // https://monadscan.com/address/0x16A6D0fD02D4DAB40Fee3014faa05b39d083F4ee
+  address internal constant GHO_CCIP_BRIDGE = 0x16A6D0fD02D4DAB40Fee3014faa05b39d083F4ee;
 
   // https://monadscan.com/address/0xDe6539018B095353A40753Dc54C91C68c9487D4E
   address internal constant GHO_BUCKET_STEWARD = 0xDe6539018B095353A40753Dc54C91C68c9487D4E;
 
   // https://monadscan.com/address/0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12
   address internal constant GHO_CCIP_STEWARD = 0x360d8aa8F6b09B7BC57aF34db2Eb84dD87bf4d12;
+
+  // https://monadscan.com/address/0x6C4b8AC66a3C879129282C137fc038519b883AE6
+  address internal constant GHO_GSM_STEWARD = 0x6C4b8AC66a3C879129282C137fc038519b883AE6;
+
+  // https://monadscan.com/address/0xA5Ba213867E175A182a5dd6A9193C6158738105A
+  address internal constant GHO_AAVE_CORE_STEWARD = 0xA5Ba213867E175A182a5dd6A9193C6158738105A;
+
+  // https://monadscan.com/address/0x307707A53Cb51670a8bcC8a2808A349C65E1Fb92
+  address internal constant GHO_RESERVE = 0x307707A53Cb51670a8bcC8a2808A349C65E1Fb92;
+
+  // https://monadscan.com/address/0x3Cf3779EEf770931543ACd2C7f6ECd1b37E35caB
+  address internal constant GSM_USDC = 0x3Cf3779EEf770931543ACd2C7f6ECd1b37E35caB;
+
+  // https://monadscan.com/address/0xAcB3d2f60CAA4966dE003E22936033FFBE7f6787
+  address internal constant GSM_USDC_FEE_STRATEGY = 0xAcB3d2f60CAA4966dE003E22936033FFBE7f6787;
+
+  // https://monadscan.com/address/0xC26bF89C90cd9cE12360D08bB494695206189159
+  address internal constant GSM_USDC_ORACLE_SWAP_FREEZER =
+    0xC26bF89C90cd9cE12360D08bB494695206189159;
 
   // https://monadscan.com/address/0x8513e6F37dBc52De87b166980Fa3F50639694B60
   address internal constant RISK_COUNCIL = 0x8513e6F37dBc52De87b166980Fa3F50639694B60;
