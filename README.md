@@ -4,7 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@aave-dao/aave-address-book)](https://www.npmjs.com/package/@aave-dao/aave-address-book)
 
-An up-to-date registry of all Aave ecosystem smart contract addresses for use in Solidity and JavaScript/TypeScript projects.
+An up-to-date registry of all Aave ecosystem smart contract addresses for use in Solidity and JavaScript/TypeScript projects or usage via JSON API.
 
 🔍 **[Search addresses online](https://aave-dao.github.io/aave-address-book/)**
 
@@ -47,6 +47,30 @@ import { AaveV3Ethereum, AaveV2Avalanche } from "@aave-dao/aave-address-book";
 console.log(AaveV3Ethereum.POOL); // "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
 console.log(AaveV3Ethereum.CHAIN_ID); // 1
 ```
+
+### JSON API
+
+The latest address book is also published as static JSON alongside the search UI:
+
+- [`manifest.json`](https://aave-dao.github.io/aave-address-book/api/v1/manifest.json) describes the deployed package version, source commit, aggregate, and available modules.
+- [`address-book.json`](https://aave-dao.github.io/aave-address-book/api/v1/address-book.json) contains every exported address-book module.
+- `modules/<name>.json` contains one module, for example [`modules/AaveV3Ethereum.json`](https://aave-dao.github.io/aave-address-book/api/v1/modules/AaveV3Ethereum.json).
+
+Manifest paths are relative to the manifest URL and module names are case-sensitive:
+
+```typescript
+const manifestUrl =
+  "https://aave-dao.github.io/aave-address-book/api/v1/manifest.json";
+const manifest = await fetch(manifestUrl).then((response) => response.json());
+const ethereum = manifest.modules.find(
+  (module: { name: string }) => module.name === "AaveV3Ethereum",
+);
+const addresses = await fetch(new URL(ethereum.path, manifestUrl)).then(
+  (response) => response.json(),
+);
+```
+
+The `/api/v1` URLs always represent the latest deployment from `main`. Use the manifest's `commit` and SHA-256 fields to identify and verify the exact content. A future breaking change to the JSON structure or paths will use a new API version.
 
 ## Development
 
