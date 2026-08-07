@@ -1,0 +1,17 @@
+.github/workflows/release.yml
+  h_df11fdcb6af10a 75-123
+README.md
+  h_df11fdcb6af10a 132-146
+  h_df11fdcb6af10a 147
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "26d377c77cbf887265b3f3d9112425f20a872668",
+  "prompts": {},
+  "humans": {
+    "h_df11fdcb6af10a": {
+      "author": "Sam Skynner <skynnes@gmail.com>"
+    }
+  }
+}
