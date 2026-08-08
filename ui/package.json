@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "npm run generate:api",
+    "generate:api": "node --import tsx ../scripts/generateJsonApi.ts",
     "start": "next start",
     "lint": "next lint"
   },
