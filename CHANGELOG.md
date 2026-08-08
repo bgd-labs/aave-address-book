@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.5](https://github.com/aave-dao/aave-address-book/compare/v4.65.4...v4.65.5) (2026-08-08)
+
+
+### Bug Fixes
+
+* add FRONTIER_STADER wallet ([#1435](https://github.com/aave-dao/aave-address-book/issues/1435)) ([a2059ad](https://github.com/aave-dao/aave-address-book/commit/a2059ad937310dfebb7e03a355cdd5f9cea23ecb))
+
 ## [4.65.4](https://github.com/aave-dao/aave-address-book/compare/v4.65.3...v4.65.4) (2026-08-08)
 
 
