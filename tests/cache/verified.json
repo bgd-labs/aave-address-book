@@ -4713,6 +4713,33 @@
     "0xc1906aeCf868749a2DeE203F59b904c0cf212140": {
       "name": "PendlePrincipalToken"
     },
+    "0x9bdbB2997D3Aa0bECc56DFC960e0e17d7E9AbAE1": {
+      "name": "Simple Vesting Escrow"
+    },
+    "0x1aF449783d8EE434a54bA9B1db9186a15B141a2A": {
+      "name": "Simple Vesting Escrow"
+    },
+    "0x831e9e6D5150c912D0f896142243FF7bC7255D62": {
+      "name": "Simple Vesting Escrow"
+    },
+    "0x1BDecEAE83c6Ca0f4D78Ee46D40881FAb26b10b1": {
+      "name": "Simple Vesting Escrow"
+    },
+    "0xbC540e0729B732fb14afA240aA5A047aE9ba7dF0": {
+      "name": "GnosisSafeProxy"
+    },
+    "0x9eE16dBDE572886342fc1e2Db8525DEFB007b27c": {
+      "name": "SafeProxy"
+    },
+    "0x55Ac902cb75cC15288D473ed8E3E185a75b3f330": {
+      "name": "SafeProxy"
+    },
+    "0xCD18eAa163733Da39c232722cBC4E8940b1D8888": {
+      "name": "Sablier"
+    },
+    "0xAA088dfF3dcF619664094945028d44E779F19894": {
+      "name": "GnosisSafeProxy"
+    },
     "0xD7eC225DC053151100A0ef47b94a77AAD9C413b7": {
       "name": "AssetInterestRateStrategy"
     },
