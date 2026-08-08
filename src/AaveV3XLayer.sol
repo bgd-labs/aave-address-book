@@ -117,6 +117,9 @@ library AaveV3XLayerAssets {
   address internal constant USDG_INTEREST_RATE_STRATEGY =
     0x3eFfeBDD435217A8B485dfaEFDecf766F2a3c05B;
 
+  // https://www.oklink.com/xlayer/address/0x97e7620A3229b3daC7049C537B0E29DA2D1021E1
+  address internal constant USDG_STATA_TOKEN = 0x97e7620A3229b3daC7049C537B0E29DA2D1021E1;
+
   // https://www.oklink.com/xlayer/address/0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f
   address internal constant xBTC_UNDERLYING = 0xb7C00000bcDEeF966b20B3D884B98E64d2b06b4f;
 
