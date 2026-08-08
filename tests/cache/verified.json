@@ -9930,6 +9930,9 @@
     },
     "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
       "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "SafeProxy"
     }
   },
   "146": {
@@ -14489,6 +14492,9 @@
     },
     "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
       "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "SafeProxy"
     }
   },
   "42161": {
@@ -18590,6 +18596,9 @@
       "name": "PriceCapAdapterStable"
     },
     "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
       "name": "SafeProxy"
     }
   },

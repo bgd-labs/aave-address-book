@@ -18,6 +18,9 @@ library MiscInk {
   // https://explorer.inkonchain.com/address/0x441E4053fDDF1e1a77a39d00309Af389096d4124
   address internal constant ROBOT_GUARDIAN = 0x441E4053fDDF1e1a77a39d00309Af389096d4124;
 
+  // https://explorer.inkonchain.com/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
+  address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
+
   // https://explorer.inkonchain.com/address/0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b
   address internal constant ALC_SAFE = 0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b;
 
