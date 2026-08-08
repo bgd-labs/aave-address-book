@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.3](https://github.com/aave-dao/aave-address-book/compare/v4.65.2...v4.65.3) (2026-08-08)
+
+
+### Bug Fixes
+
+* Ahab safe Ink Plasma and Monad ([#1436](https://github.com/aave-dao/aave-address-book/issues/1436)) ([17a38cb](https://github.com/aave-dao/aave-address-book/commit/17a38cb480eae2ce3d6dbf2c47485cc22baeeeee))
+
 ## [4.65.2](https://github.com/aave-dao/aave-address-book/compare/v4.65.1...v4.65.2) (2026-08-07)
 
 
