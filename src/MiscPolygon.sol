@@ -69,4 +69,7 @@ library MiscPolygon {
   // https://polygonscan.com/address/0x7734280A4337F37Fbf4651073Db7c28C80B339e9
   address internal constant V2_COLLECTOR_DAO_WALLET_TREASURY =
     0x7734280A4337F37Fbf4651073Db7c28C80B339e9;
+
+  // https://polygonscan.com/address/0x9DE1d45e2786b03498289959203F25b29B4D1193
+  address internal constant TOKENLOGIC_EXECUTION_SAFE = 0x9DE1d45e2786b03498289959203F25b29B4D1193;
 }

@@ -4748,6 +4748,12 @@
     },
     "0x87b65C4aAFFA76881f9E96F3e7ED945ddFC3Cd7A": {
       "name": "MaplePool"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
+    },
+    "0x4cc755fBFAE135933b64865E7D7Ea6ae778A4D43": {
+      "name": "SafeProxy"
     }
   },
   "10": {
@@ -5976,6 +5982,9 @@
       "name": "SafeProxy"
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
+      "name": "SafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
       "name": "SafeProxy"
     }
   },
@@ -7245,6 +7254,9 @@
     },
     "0x68100bD5345eA474D93577127C11F39FF8463e93": {
       "name": "UiPoolDataProviderV3"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "100": {
@@ -7931,6 +7943,9 @@
     },
     "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
       "name": "GnosisSafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "137": {
@@ -9517,6 +9532,9 @@
     },
     "0x7734280A4337F37Fbf4651073Db7c28C80B339e9": {
       "name": "InitializableAdminUpgradeabilityProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "143": {
@@ -9909,6 +9927,12 @@
     },
     "0x4eC854a6fDF52Eb64F8CabF87FafD3B1f1743a00": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "SafeProxy"
     }
   },
   "146": {
@@ -10388,6 +10412,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "GnosisSafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "196": {
@@ -10681,6 +10708,9 @@
     },
     "0x97e7620A3229b3daC7049C537B0E29DA2D1021E1": {
       "name": "TransparentUpgradeableProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "324": {
@@ -12209,6 +12239,9 @@
     },
     "0xBBC579Ee0A3fD6E9240965C5f57b7e5b3e3809A8": {
       "name": "CLRatePriceCapAdapter"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "5000": {
@@ -12673,6 +12706,9 @@
     },
     "0xA1c93D2687f7014Aaf588c764E3Ce80aF016229b": {
       "name": "GnosisSafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "8453": {
@@ -13965,6 +14001,9 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "9745": {
@@ -14450,6 +14489,12 @@
     },
     "0x035Dec9dBE6DC0230ac05A760D9B6A70E7514243": {
       "name": "AaveGhoCcipBridge"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "SafeProxy"
     }
   },
   "42161": {
@@ -16228,6 +16273,12 @@
     },
     "0x812fBcd390A3C6c01C65B767413Dea6f6e24FDD0": {
       "name": "AaveGhoCcipBridge"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
+    },
+    "0x4cc755fBFAE135933b64865E7D7Ea6ae778A4D43": {
+      "name": "SafeProxy"
     }
   },
   "42220": {
@@ -16634,6 +16685,9 @@
       "name": "SafeProxy"
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
+      "name": "SafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
       "name": "SafeProxy"
     }
   },
@@ -18121,6 +18175,9 @@
     },
     "0x1F0C67Fde7FcaF7eCEA43b76A23461803972c45c": {
       "name": "AaveV4ConfigEngine"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
     }
   },
   "57073": {
@@ -18537,6 +18594,12 @@
     },
     "0x32b1f1A1D3423dE69cf1f75092eCfDc5090d6624": {
       "name": "PriceCapAdapterStable"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
+      "name": "SafeProxy"
+    },
+    "0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e": {
+      "name": "SafeProxy"
     }
   },
   "59144": {
@@ -19078,6 +19141,9 @@
       "name": "SafeProxy"
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
+      "name": "SafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
       "name": "SafeProxy"
     }
   },
@@ -19842,6 +19908,9 @@
       "name": "SafeProxy"
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
+      "name": "SafeProxy"
+    },
+    "0x9DE1d45e2786b03498289959203F25b29B4D1193": {
       "name": "SafeProxy"
     }
   }

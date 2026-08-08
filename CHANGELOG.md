@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.3](https://github.com/aave-dao/aave-address-book/compare/v4.65.2...v4.65.3) (2026-08-08)
+
+
+### Bug Fixes
+
+* Ahab safe Ink Plasma and Monad ([#1436](https://github.com/aave-dao/aave-address-book/issues/1436)) ([17a38cb](https://github.com/aave-dao/aave-address-book/commit/17a38cb480eae2ce3d6dbf2c47485cc22baeeeee))
+
+## [4.65.2](https://github.com/aave-dao/aave-address-book/compare/v4.65.1...v4.65.2) (2026-08-07)
+
+
+### Bug Fixes
+
+* add TokenLogic Execution and Stable Vault safes ([#1497](https://github.com/aave-dao/aave-address-book/issues/1497)) ([984c700](https://github.com/aave-dao/aave-address-book/commit/984c700df4400bf06a81da2ab7c4d810e538e0fd))
+
+## [4.65.1](https://github.com/aave-dao/aave-address-book/compare/v4.65.0...v4.65.1) (2026-08-07)
+
+
+### Bug Fixes
+
+* read API release version in workflow ([#1515](https://github.com/aave-dao/aave-address-book/issues/1515)) ([ffd0c5b](https://github.com/aave-dao/aave-address-book/commit/ffd0c5b753bb6a09201a3a4829b1c62e9f0ee246))
+
+## [4.65.0](https://github.com/aave-dao/aave-address-book/compare/v4.64.0...v4.65.0) (2026-08-07)
+
+
+### Features
+
+* publish JSON API releases to S3 ([#1511](https://github.com/aave-dao/aave-address-book/issues/1511)) ([b4aa2a3](https://github.com/aave-dao/aave-address-book/commit/b4aa2a3de01a3f38fa4d5ab18c275023f2f4ac71))
+
 ## [4.64.0](https://github.com/aave-dao/aave-address-book/compare/v4.63.0...v4.64.0) (2026-08-07)
 
 
