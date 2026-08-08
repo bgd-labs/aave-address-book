@@ -123,6 +123,12 @@ const knownErrors = {
     '0x8dc095F287dBEBD9e15f75BB3DfBF18389BB8104': true,
     '0x25Ed699a052B820d772765E26Ed4dD9f0A26F3E5': true,
     '0x33654b16A4De97bCE05d7dD06803Bf1066f3123C': true,
+    '0x72E831E28Ba5A6d55Eb752981D0426b411E4dbbF': true, // STATA_TOKEN WETH, not yet verified on explorer
+    '0x3FBe2d59F93AD0e54077861E810B2868c544C333': true, // STATA_TOKEN BTCb, not yet verified on explorer
+    '0x31552822e76a991CEB44dE047A26441E530D6510': true, // STATA_TOKEN USDT0, not yet verified on explorer
+    '0x0a21f20c528B54Ab54573A21f948B242d19E3ef1': true, // STATA_TOKEN USDm, not yet verified on explorer
+    '0x03A53f1FABC40D548198ECd79997600982B0a36E': true, // STATA_TOKEN wstETH, not yet verified on explorer
+    '0xB955033Afc19816e83655C28461574D77b3097bb': true, // STATA_TOKEN USDe, not yet verified on explorer
   },
   9745: {
     '0x30559E3d35e33AB69399a3fe9F383d32bd3c016E': true, // PT_sUSDE_18JUN2026 verified but not detecting

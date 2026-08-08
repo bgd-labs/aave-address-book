@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.4](https://github.com/aave-dao/aave-address-book/compare/v4.65.3...v4.65.4) (2026-08-08)
+
+
+### Bug Fixes
+
+* Add service provider addresses ([#1461](https://github.com/aave-dao/aave-address-book/issues/1461)) ([6212836](https://github.com/aave-dao/aave-address-book/commit/6212836c50116e282b0a9a98846c4e12e319e2dd))
+
 ## [4.65.3](https://github.com/aave-dao/aave-address-book/compare/v4.65.2...v4.65.3) (2026-08-08)
 
 
