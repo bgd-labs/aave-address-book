@@ -1,0 +1,19 @@
+tests/cache/verified.json
+  s_af213f7ba59b70::t_fad765cfb00bcc 10663-10665
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "8f3009f1be854a1314fa09e46d8407c9ff6a2322",
+  "prompts": {},
+  "sessions": {
+    "s_af213f7ba59b70": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd1eb-e5bb-78e2-ad4d-9b61e75c4e3f",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}

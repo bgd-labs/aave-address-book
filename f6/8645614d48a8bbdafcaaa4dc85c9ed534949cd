@@ -1,0 +1,20 @@
+.github/workflows/release.yml
+  h_df11fdcb6af10a 107-109,117-119
+README.md
+  h_df11fdcb6af10a 113-115,118-121
+scripts/generateAddressBookApi.ts
+  h_df11fdcb6af10a 1-2,6,8,10,13-18,21,25-29,31-33,35-36,39,42,45-50,54-72
+tests/addressBookApi.spec.ts
+  h_df11fdcb6af10a 4,7,9-11,14-18,21-26,29-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f68645614d48a8bbdafcaaa4dc85c9ed534949cd",
+  "prompts": {},
+  "humans": {
+    "h_df11fdcb6af10a": {
+      "author": "Sam Skynner <skynnes@gmail.com>"
+    }
+  }
+}
