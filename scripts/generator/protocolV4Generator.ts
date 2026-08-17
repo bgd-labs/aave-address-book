@@ -272,9 +272,6 @@ export async function generateProtocolV4Library(config: V4Config) {
   if (treasurySpoke) {
     knownNonTokenizationSpokes.add(treasurySpoke.toLowerCase());
   }
-  for (const spoke of config.deprecatedTokenizationSpokes ?? []) {
-    knownNonTokenizationSpokes.add(spoke.toLowerCase());
-  }
 
   // Fetch assets + tokenization spokes + all on-chain spokes for each hub
   const resolvedHubs: Record<string, ResolvedHub> = {};

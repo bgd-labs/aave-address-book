@@ -74,6 +74,9 @@ library AaveV3ZkSync {
   // https://explorer.zksync.io/address/0x528a1036C8450464f8a00A0A8c2f517595E44169
   address internal constant RISK_STEWARD = 0x528a1036C8450464f8a00A0A8c2f517595E44169;
 
+  // https://explorer.zksync.io/address/0x5BF14aeaFe54A9dE94D0C4CeA73A9B4C46F94F2D
+  address internal constant RISK_COUNCIL = 0x5BF14aeaFe54A9dE94D0C4CeA73A9B4C46F94F2D;
+
   // https://explorer.zksync.io/address/0x452E8E84bF852513585f893931CBD9A409Cd3459
   address internal constant DUST_BIN = 0x452E8E84bF852513585f893931CBD9A409Cd3459;
 

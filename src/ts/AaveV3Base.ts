@@ -44,6 +44,9 @@ export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0x7354Dc700A1A2ab9622f2292B60Ca
 // https://basescan.org/address/0x494bcfd3937aBdebEF3D2c2eae1CE8A2Fb629032
 export const RISK_STEWARD = '0x494bcfd3937aBdebEF3D2c2eae1CE8A2Fb629032';
 
+// https://basescan.org/address/0xfbeB4AcB31340bA4de9C87B11dfBf7e2bc8C0bF1
+export const RISK_COUNCIL = '0xfbeB4AcB31340bA4de9C87B11dfBf7e2bc8C0bF1';
+
 // https://basescan.org/address/0xB892202d9Ce2C16C565A492a5168689b215Eb269
 export const EDGE_RISK_STEWARD_CAPS = '0xB892202d9Ce2C16C565A492a5168689b215Eb269';
 

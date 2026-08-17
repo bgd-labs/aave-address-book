@@ -68,6 +68,9 @@ export const STATA_FACTORY = '0xfd4Eb6c531A34EC3A74C99892C5511fe6d126F91';
 // https://mantlescan.xyz/address/0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442
 export const RISK_STEWARD = '0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442';
 
+// https://mantlescan.xyz/address/0xfF0ACe5060bd25f6900eb4bD91a868213C5346B5
+export const RISK_COUNCIL = '0xfF0ACe5060bd25f6900eb4bD91a868213C5346B5';
+
 // https://mantlescan.xyz/address/0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601
 export const DUST_BIN = '0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601';
 

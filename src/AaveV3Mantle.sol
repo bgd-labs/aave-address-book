@@ -80,6 +80,9 @@ library AaveV3Mantle {
   // https://mantlescan.xyz/address/0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442
   address internal constant RISK_STEWARD = 0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442;
 
+  // https://mantlescan.xyz/address/0xfF0ACe5060bd25f6900eb4bD91a868213C5346B5
+  address internal constant RISK_COUNCIL = 0xfF0ACe5060bd25f6900eb4bD91a868213C5346B5;
+
   // https://mantlescan.xyz/address/0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601
   address internal constant DUST_BIN = 0xB238ce4d8EA3D99b0d90Fe7DA3F17149F88a2601;
 }

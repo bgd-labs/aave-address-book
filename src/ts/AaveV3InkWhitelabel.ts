@@ -50,6 +50,9 @@ export const CONFIG_ENGINE = '0xF1Cd4193bbc1aD4a23E833170f49d60f3D35a621';
 // https://explorer.inkonchain.com/address/0xC1d38a1cdfb53Fce012A3A8CB42B64ddF60d4332
 export const RISK_STEWARD = '0xC1d38a1cdfb53Fce012A3A8CB42B64ddF60d4332';
 
+// https://explorer.inkonchain.com/address/0xEcD37F855bB9814D75A83F0021815dc5cd6fd889
+export const RISK_COUNCIL = '0xEcD37F855bB9814D75A83F0021815dc5cd6fd889';
+
 // https://explorer.inkonchain.com/address/0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0x501B4c19dd9C2e06E94dA7b6D5Ed4ddA013EC741';
 
