@@ -14,10 +14,15 @@ async function check(addresses: Record<string, any>) {
       address: addresses.RISK_STEWARD,
       client,
     });
-    const [CONFIG_ENGINE, OWNER] = await Promise.all([
+    const [CONFIG_ENGINE, OWNER, RISK_COUNCIL] = await Promise.all([
       riskStewardContract.read.CONFIG_ENGINE(),
       riskStewardContract.read.owner(),
+      riskStewardContract.read.RISK_COUNCIL(),
     ]);
+    if (RISK_COUNCIL !== addresses.RISK_COUNCIL)
+      throw new Error(
+        `SANITY_RISK_STEWARDS: RISK_COUNCIL MISMATCH ${addresses.POOL}:${RISK_COUNCIL} != ${addresses.RISK_COUNCIL} on ${client.chain?.name}`,
+      );
     // if (CONFIG_ENGINE !== addresses.CONFIG_ENGINE)
     //   throw new Error(`SANITY_RISK_STEWARDS: wrong CONFIG_ENGINE on ${client.chain?.name}`);
     // if (POOL_DATA_PROVIDER !== addresses.AAVE_PROTOCOL_DATA_PROVIDER)

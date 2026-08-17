@@ -39,10 +39,28 @@ export async function fetchAllSpokes(
     })),
   });
 
-  const allSpokes = addresses.map((address) => getAddress(address));
+  const listedSpokes = addresses.map((address) => getAddress(address));
+
+  // Deactivating a spoke leaves it in the hub's spoke list, so the active flag is
+  // what separates a live spoke from a superseded one.
+  const configs = await multicall(client, {
+    allowFailure: false,
+    contracts: tasks.map((t, i) => ({
+      address: hub,
+      abi: IHubV4_ABI,
+      functionName: 'getSpokeConfig',
+      args: [BigInt(t.assetId), listedSpokes[i]],
+    })),
+  });
+
+  const allSpokes: Hex[] = [];
   const spokesByAssetId = new Map<number, Hex[]>();
   for (const asset of assets) spokesByAssetId.set(asset.assetId, []);
-  tasks.forEach((task, i) => spokesByAssetId.get(task.assetId)!.push(allSpokes[i]));
+  tasks.forEach((task, i) => {
+    if (!configs[i].active) return;
+    allSpokes.push(listedSpokes[i]);
+    spokesByAssetId.get(task.assetId)!.push(listedSpokes[i]);
+  });
 
   return {allSpokes, spokesByAssetId};
 }

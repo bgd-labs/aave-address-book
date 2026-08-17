@@ -61,6 +61,9 @@ library AaveV3Soneium {
   // https://soneium.blockscout.com/address/0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc
   address internal constant RISK_STEWARD = 0xD9145b5F45Ad4519c7ACcD6E0A4A82e83bB8A6Dc;
 
+  // https://soneium.blockscout.com/address/0x45cCB319C57A6Ae0d53C4dB1a151dF75015103b1
+  address internal constant RISK_COUNCIL = 0x45cCB319C57A6Ae0d53C4dB1a151dF75015103b1;
+
   // https://soneium.blockscout.com/address/0x629A5a607aC4901252e4C48a0Fde156785598F5b
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0x629A5a607aC4901252e4C48a0Fde156785598F5b;

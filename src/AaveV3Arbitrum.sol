@@ -55,6 +55,9 @@ library AaveV3Arbitrum {
   // https://arbiscan.io/address/0xC5762E5A5c12886D4F6768549A9C605823d029E9
   address internal constant RISK_STEWARD = 0xC5762E5A5c12886D4F6768549A9C605823d029E9;
 
+  // https://arbiscan.io/address/0x3Be327F22eB4BD8042e6944073b8826dCf357Aa2
+  address internal constant RISK_COUNCIL = 0x3Be327F22eB4BD8042e6944073b8826dCf357Aa2;
+
   // https://arbiscan.io/address/0x085E34722e04567Df9E6d2c32e82fd74f3342e79
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x085E34722e04567Df9E6d2c32e82fd74f3342e79;
 

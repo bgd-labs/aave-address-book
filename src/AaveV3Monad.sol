@@ -58,6 +58,9 @@ library AaveV3Monad {
   // https://monadscan.com/address/0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34
   address internal constant RISK_STEWARD = 0x98217A06721Ebf727f2C8d9aD7718ec28b7aAe34;
 
+  // https://monadscan.com/address/0x1c930A46f01542882Fb43031DeD31f06C8cF278d
+  address internal constant RISK_COUNCIL = 0x1c930A46f01542882Fb43031DeD31f06C8cF278d;
+
   // https://monadscan.com/address/0xa7790F5EDE1f1A57e7122e869eF6095c07C7E01d
   address internal constant POOL_ADDRESSES_PROVIDER_REGISTRY =
     0xa7790F5EDE1f1A57e7122e869eF6095c07C7E01d;

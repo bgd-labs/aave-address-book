@@ -55,6 +55,9 @@ library AaveV3Avalanche {
   // https://snowscan.xyz/address/0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729
   address internal constant RISK_STEWARD = 0x43632469e02CDAaEB4dE3DcBfCAaBEf310975729;
 
+  // https://snowscan.xyz/address/0xCa66149425E7DC8f81276F6D80C4b486B9503D1a
+  address internal constant RISK_COUNCIL = 0xCa66149425E7DC8f81276F6D80C4b486B9503D1a;
+
   // https://snowscan.xyz/address/0x57218F3aB422A39115951c3Eb06881a7A719DfdD
   address internal constant EDGE_RISK_STEWARD_CAPS = 0x57218F3aB422A39115951c3Eb06881a7A719DfdD;
 

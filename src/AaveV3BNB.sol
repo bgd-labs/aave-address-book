@@ -55,6 +55,9 @@ library AaveV3BNB {
   // https://bscscan.com/address/0x42ca9E62C9B61d01Bb222d6E69f095eE98e61cE8
   address internal constant RISK_STEWARD = 0x42ca9E62C9B61d01Bb222d6E69f095eE98e61cE8;
 
+  // https://bscscan.com/address/0x126dc589cc75f17385dD95516F3F1788d862E7bc
+  address internal constant RISK_COUNCIL = 0x126dc589cc75f17385dD95516F3F1788d862E7bc;
+
   // https://bscscan.com/address/0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16
   address internal constant DEBT_SWAP_ADAPTER = 0x5d4D4007A4c6336550DdAa2a7c0d5e7972eebd16;
 

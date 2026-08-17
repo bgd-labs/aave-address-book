@@ -80,6 +80,9 @@ library AaveV3MegaEth {
   // https://mega.etherscan.io/address/0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442
   address internal constant RISK_STEWARD = 0xb5a1Fe36dcf5Ba149Cb8d90A03f4709141eE5442;
 
+  // https://mega.etherscan.io/address/0x36CF7a4377aAf1988E01a4b38224FC8D583E50A9
+  address internal constant RISK_COUNCIL = 0x36CF7a4377aAf1988E01a4b38224FC8D583E50A9;
+
   // https://mega.etherscan.io/address/0x8d1dac82259FdE48D8086CC42cAa98E825C5B643
   address internal constant DUST_BIN = 0x8d1dac82259FdE48D8086CC42cAa98E825C5B643;
 }
