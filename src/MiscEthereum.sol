@@ -109,6 +109,9 @@ library MiscEthereum {
   // https://etherscan.io/address/0x9240a6669CC4782FC98620212862DF5CB2e0Df10
   address internal constant RANGE_VALIDATION_MODULE = 0x9240a6669CC4782FC98620212862DF5CB2e0Df10;
 
+  // https://etherscan.io/address/0x8346170dcE5455A1205f55A0b5448E67e42CD270
+  address internal constant LLAMARISK_RISK_ORACLE = 0x8346170dcE5455A1205f55A0b5448E67e42CD270;
+
   // https://etherscan.io/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
   address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
 
