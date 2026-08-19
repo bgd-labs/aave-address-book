@@ -44,6 +44,9 @@ export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xC0442C25FE517ac37D6a0D4854463
 // https://optimistic.etherscan.io/address/0x33df99d9d6F69fbe2722920883609532EFc2541d
 export const RISK_STEWARD = '0x33df99d9d6F69fbe2722920883609532EFc2541d';
 
+// https://optimistic.etherscan.io/address/0xCb86256A994f0c505c5e15c75BF85fdFEa0F2a56
+export const RISK_COUNCIL = '0xCb86256A994f0c505c5e15c75BF85fdFEa0F2a56';
+
 // https://optimistic.etherscan.io/address/0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034
 export const DEBT_SWAP_ADAPTER = '0xE28E2c8d240dd5eBd0adcab86fbD79df7a052034';
 

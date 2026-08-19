@@ -47,6 +47,9 @@ export const CONFIG_ENGINE = '0x31A239f3e39c5D8BA6B201bA81ed584492Ae960F';
 // https://plasmascan.to/address/0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D
 export const RISK_STEWARD = '0xdDE20B20E21a6F3b7080e740b684CDf5b764B80D';
 
+// https://plasmascan.to/address/0xE71C189C7D8862EfDa0D9E031157199D2F3B4893
+export const RISK_COUNCIL = '0xE71C189C7D8862EfDa0D9E031157199D2F3B4893';
+
 // https://plasmascan.to/address/0xeE8Ba3464abcEeA6E34554d174DCbdd66083641b
 export const POOL_ADDRESSES_PROVIDER_REGISTRY = '0xeE8Ba3464abcEeA6E34554d174DCbdd66083641b';
 
@@ -625,9 +628,9 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8791,
-    liquidationThreshold: 8991,
-    liquidationBonus: 10453,
+    ltv: 8801,
+    liquidationThreshold: 9001,
+    liquidationBonus: 10440,
   },
   '26': {
     label: 'sUSDe,PT_sUSDE_22OCT2026 / USDe',
@@ -640,9 +643,9 @@ export const E_MODES = {
     borrowableAssets: ['0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9055,
-    liquidationThreshold: 9255,
-    liquidationBonus: 10153,
+    ltv: 9065,
+    liquidationThreshold: 9265,
+    liquidationBonus: 10140,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {

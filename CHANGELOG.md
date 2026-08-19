@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.7](https://github.com/aave-dao/aave-address-book/compare/v4.65.6...v4.65.7) (2026-08-18)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1525](https://github.com/aave-dao/aave-address-book/issues/1525)) ([3313ebd](https://github.com/aave-dao/aave-address-book/commit/3313ebdafaf17ad80a7463f437ee9fa60b11b73d))
+
+## [4.65.6](https://github.com/aave-dao/aave-address-book/compare/v4.65.5...v4.65.6) (2026-08-17)
+
+
+### Bug Fixes
+
+* remove Paxos exception & skip deactivated Spokes & add missing Risk Council address ([#1522](https://github.com/aave-dao/aave-address-book/issues/1522)) ([81de698](https://github.com/aave-dao/aave-address-book/commit/81de698ada0c07410ebd920183da65740aa12a7d))
+
 ## [4.65.5](https://github.com/aave-dao/aave-address-book/compare/v4.65.4...v4.65.5) (2026-08-08)
 
 

@@ -55,6 +55,9 @@ library AaveV3Ethereum {
   // https://etherscan.io/address/0x13a9CC64344b02bACC5AD9Cf38B5711F1B9ec3d4
   address internal constant RISK_STEWARD = 0x13a9CC64344b02bACC5AD9Cf38B5711F1B9ec3d4;
 
+  // https://etherscan.io/address/0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8
+  address internal constant RISK_COUNCIL = 0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8;
+
   // https://etherscan.io/address/0xd7852E139a7097E119623de0751AE53a61efb442
   address internal constant DEBT_SWAP_ADAPTER = 0xd7852E139a7097E119623de0751AE53a61efb442;
 

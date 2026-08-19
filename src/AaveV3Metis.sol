@@ -58,6 +58,9 @@ library AaveV3Metis {
   // https://explorer.metis.io/address/0x97CB9e81d480A2AB03299760654C1DDC0C16bE07
   address internal constant RISK_STEWARD = 0x97CB9e81d480A2AB03299760654C1DDC0C16bE07;
 
+  // https://explorer.metis.io/address/0x0f547846920C34E70FBE4F3d87E46452a3FeAFfa
+  address internal constant RISK_COUNCIL = 0x0f547846920C34E70FBE4F3d87E46452a3FeAFfa;
+
   // https://explorer.metis.io/address/0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9
   address internal constant L2_ENCODER = 0x9f3A1B399A9074eBA63Dc4fc274bE2A2b2d80cB9;
 

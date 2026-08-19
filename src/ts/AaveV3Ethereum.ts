@@ -44,6 +44,9 @@ export const DEFAULT_VARIABLE_DEBT_TOKEN_IMPL = '0xb27C52c7f84819e3157993489741c
 // https://etherscan.io/address/0x13a9CC64344b02bACC5AD9Cf38B5711F1B9ec3d4
 export const RISK_STEWARD = '0x13a9CC64344b02bACC5AD9Cf38B5711F1B9ec3d4';
 
+// https://etherscan.io/address/0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8
+export const RISK_COUNCIL = '0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8';
+
 // https://etherscan.io/address/0xd7852E139a7097E119623de0751AE53a61efb442
 export const DEBT_SWAP_ADAPTER = '0xd7852E139a7097E119623de0751AE53a61efb442';
 
@@ -1543,9 +1546,9 @@ export const E_MODES = {
     ],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 8862,
-    liquidationThreshold: 9062,
-    liquidationBonus: 10518,
+    ltv: 8872,
+    liquidationThreshold: 9072,
+    liquidationBonus: 10470,
   },
   '48': {
     label: 'sUSDe,PT_srUSDe_22OCT2026 / USDe',
@@ -1558,9 +1561,9 @@ export const E_MODES = {
     borrowableAssets: ['0x4c9EDD5852cd905f086C759E8383e09bff1E68B3'],
     ltvzeroBitmap: '0',
     ltvzeroAssets: [],
-    ltv: 9126,
-    liquidationThreshold: 9326,
-    liquidationBonus: 10218,
+    ltv: 9136,
+    liquidationThreshold: 9336,
+    liquidationBonus: 10170,
   },
 } as const;
 export const EXTERNAL_LIBRARIES = {

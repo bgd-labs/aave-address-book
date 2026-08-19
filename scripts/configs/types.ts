@@ -62,6 +62,7 @@ export interface PoolConfig {
     LEGACY_STATIC_A_TOKEN_ORACLE?: Hex; // deprecated
     STATA_FACTORY?: Hex;
     RISK_STEWARD?: Hex;
+    RISK_COUNCIL?: Hex;
     EDGE_RISK_ORACLE?: Hex;
     EDGE_RISK_STEWARD_RATES?: Hex;
     EDGE_RISK_STEWARD_CAPS?: Hex;
@@ -155,7 +156,6 @@ export interface V4Config {
   hubs: Record<string, Hex>;
   spokes: Record<string, Hex>;
   eSpokes?: Record<string, Hex>;
-  deprecatedTokenizationSpokes?: Hex[];
   positionManagers?: Record<string, Hex>;
   externalLibraries: Record<string, Hex>;
   additionalAddresses?: Record<string, Hex>;

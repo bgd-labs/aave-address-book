@@ -84,6 +84,9 @@ library AaveV3EthereumLido {
   // https://etherscan.io/address/0x5BA8d98feE911C2422EbEBFB6b774128924CcD68
   address internal constant RISK_STEWARD = 0x5BA8d98feE911C2422EbEBFB6b774128924CcD68;
 
+  // https://etherscan.io/address/0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8
+  address internal constant RISK_COUNCIL = 0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8;
+
   // https://etherscan.io/address/0xd1B2dec98A95B773C4909B5CD8FB455F467A527f
   address internal constant DEBT_SWAP_ADAPTER = 0xd1B2dec98A95B773C4909B5CD8FB455F467A527f;
 
