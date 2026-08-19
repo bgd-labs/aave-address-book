@@ -2,17 +2,24 @@
 pragma solidity ^0.8.4;
 
 interface IUmbrella {
+  error AccessControlBadConfirmation();
+  error AccessControlUnauthorizedAccount(address account, bytes32 neededRole);
   error CannotSlash();
   error ConfigurationHasNotBeenSet();
   error ConfigurationNotExist();
+  error EthTransferFailed();
+  error InvalidInitialization();
   error InvalidLiquidationFee();
   error InvalidNumberOfDecimals();
   error InvalidOraclePrice();
   error InvalidReserve();
   error InvalidStakeToken();
   error NotImplemented();
+  error NotInitializing();
+  error OnlyRescueGuardian();
   error ReserveCoverageNotSetup();
   error ReserveIsConfigured();
+  error SafeERC20FailedOperation(address token);
   error TooMuchDeficitOffsetReduction();
   error UmbrellaStakeAlreadySetForAnotherReserve();
   error ZeroAddress();
@@ -20,9 +27,24 @@ interface IUmbrella {
 
   event DeficitOffsetChanged(address indexed reserve, uint256 newDeficitOffset);
   event DeficitOffsetCovered(address indexed reserve, uint256 amount);
+  event ERC20Rescued(
+    address indexed caller,
+    address indexed token,
+    address indexed to,
+    uint256 amount
+  );
+  event Initialized(uint64 version);
+  event NativeTokensRescued(address indexed caller, address indexed to, uint256 amount);
   event PendingDeficitChanged(address indexed reserve, uint256 newPendingDeficit);
   event PendingDeficitCovered(address indexed reserve, uint256 amount);
   event ReserveDeficitCovered(address indexed reserve, uint256 amount);
+  event RoleAdminChanged(
+    bytes32 indexed role,
+    bytes32 indexed previousAdminRole,
+    bytes32 indexed newAdminRole
+  );
+  event RoleGranted(bytes32 indexed role, address indexed account, address indexed sender);
+  event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender);
   event SlashingConfigurationChanged(
     address indexed reserve,
     address indexed umbrellaStake,
@@ -43,9 +65,17 @@ interface IUmbrella {
     string symbol
   );
 
+  function COVERAGE_MANAGER_ROLE() external view returns (bytes32);
+
+  function DEFAULT_ADMIN_ROLE() external view returns (bytes32);
+
+  function PAUSE_GUARDIAN_ROLE() external view returns (bytes32);
+
   function POOL() external view returns (address);
 
   function POOL_ADDRESSES_PROVIDER() external view returns (address);
+
+  function RESCUE_GUARDIAN_ROLE() external view returns (bytes32);
 
   function SLASHED_FUNDS_RECIPIENT() external view returns (address);
 
@@ -65,7 +95,11 @@ interface IUmbrella {
     IUmbrellaStkManager.StakeTokenSetup[] memory stakeTokenSetups
   ) external returns (address[] memory stakeTokens);
 
+  function emergencyEtherTransfer(address to, uint256 amount) external;
+
   function emergencyEtherTransferStk(address stk, address to, uint256 amount) external;
+
+  function emergencyTokenTransfer(address erc20Token, address to, uint256 amount) external;
 
   function emergencyTokenTransferStk(
     address stk,
@@ -87,11 +121,25 @@ interface IUmbrella {
     address reserve
   ) external view returns (IUmbrellaConfiguration.SlashingConfig[] memory);
 
+  function getRoleAdmin(bytes32 role) external view returns (bytes32);
+
   function getStakeTokenData(
     address umbrellaStake
   ) external view returns (IUmbrellaConfiguration.StakeTokenData memory stakeTokenData);
 
   function getStkTokens() external view returns (address[] memory);
+
+  function grantRole(bytes32 role, address account) external;
+
+  function hasRole(bytes32 role, address account) external view returns (bool);
+
+  function initialize(
+    address pool,
+    address governance,
+    address slashedFundsRecipient,
+    address umbrellaStakeTokenImpl,
+    address transparentProxyFactory
+  ) external;
 
   function isReserveSlashable(address reserve) external view returns (bool flag, uint256 amount);
 
@@ -100,6 +148,8 @@ interface IUmbrella {
   function latestUnderlyingAnswer(
     address umbrellaStake
   ) external view returns (int256 latestAnswer);
+
+  function maxRescue(address) external pure returns (uint256);
 
   function pauseStk(address stk) external;
 
@@ -111,6 +161,10 @@ interface IUmbrella {
     IUmbrellaConfiguration.SlashingConfigRemoval[] memory removalPairs
   ) external;
 
+  function renounceRole(bytes32 role, address callerConfirmation) external;
+
+  function revokeRole(bytes32 role, address account) external;
+
   function setCooldownStk(IUmbrellaStkManager.CooldownConfig[] memory cooldownConfigs) external;
 
   function setDeficitOffset(address reserve, uint256 newDeficitOffset) external;
@@ -120,6 +174,8 @@ interface IUmbrella {
   ) external;
 
   function slash(address reserve) external returns (uint256);
+
+  function supportsInterface(bytes4 interfaceId) external view returns (bool);
 
   function tokenForDeficitCoverage(address reserve) external view returns (address);
 
