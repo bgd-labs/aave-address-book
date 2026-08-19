@@ -1,0 +1,20 @@
+scripts/generator/protocol-v2-generator/fetchTokens.ts
+  s_7ef067cf08d7d9::t_6db6ef41efb7a0 1,7-11
+  s_7ef067cf08d7d9::t_41a961cdc5a161 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7b4b2c5560062ffcf5b329f39b51f1618198b815",
+  "prompts": {},
+  "sessions": {
+    "s_7ef067cf08d7d9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a01af2-c280-74b3-b2c1-620abdae63ac",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
