@@ -67,6 +67,9 @@ library AaveV3EthereumHorizon {
 
   // https://etherscan.io/address/0xe10C78A3AC7f016eD2DE1A89c5479b1039EAB9eA
   address internal constant GHO_DIRECT_MINTER = 0xe10C78A3AC7f016eD2DE1A89c5479b1039EAB9eA;
+
+  // https://etherscan.io/address/0x803e5Db3E26e88AD0a682A46c3E04cdd053D0EB9
+  address internal constant RWA_A_TOKEN_MANAGER = 0x803e5Db3E26e88AD0a682A46c3E04cdd053D0EB9;
 }
 library AaveV3EthereumHorizonAssets {
   // https://etherscan.io/address/0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f
