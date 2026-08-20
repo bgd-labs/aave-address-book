@@ -4784,6 +4784,9 @@
     },
     "0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8": {
       "name": "GnosisSafeProxy"
+    },
+    "0x803e5Db3E26e88AD0a682A46c3E04cdd053D0EB9": {
+      "name": "RwaATokenManager"
     }
   },
   "10": {
