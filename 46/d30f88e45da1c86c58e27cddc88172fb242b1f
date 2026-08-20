@@ -1,0 +1,14 @@
+scripts/configs/v4/ethereum.ts
+  h_739c25e72c37fb 18,28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "46d30f88e45da1c86c58e27cddc88172fb242b1f",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}

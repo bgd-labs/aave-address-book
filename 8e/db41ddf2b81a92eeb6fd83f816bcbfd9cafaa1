@@ -1,0 +1,19 @@
+scripts/generator/protocol-v4-generator/fetchAllSpokes.ts
+  s_93bdd3782950f9::t_66924c0e7eae6b 42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "8edb41ddf2b81a92eeb6fd83f816bcbfd9cafaa1",
+  "prompts": {},
+  "sessions": {
+    "s_93bdd3782950f9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "32b10bac-eac1-4d2d-8267-659faa80ab6e",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}

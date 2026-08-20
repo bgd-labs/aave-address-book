@@ -1,0 +1,22 @@
+src/common/IUmbrella.sol
+  s_414f33a2306428::t_fc4a3e70e04a40 72-73,132-134
+  s_414f33a2306428::t_f4232c2612f662 5-6,10-11,18-19,22,30-37,41-47,68-71,78-79,98-99,102-103,124,135-143,152-153,164-167,178
+  s_414f33a2306428::t_39a3f7ffc974e5 125
+  s_414f33a2306428::t_649d13de4fd639 179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "26fd866e04310cb97de7caf38607f8b8261e87f8",
+  "prompts": {},
+  "sessions": {
+    "s_414f33a2306428": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a01a89-ab9d-74f3-90b9-8412875db068",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.github/workflows/cron.yml
+  s_7630dcf1b548b5::t_412dfacdf00e98 49
+  h_739c25e72c37fb 46,50-51
+  s_7630dcf1b548b5::t_75bb8f540d357d 47-48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "fec53b1de942eb9a2a02eeeb0dce726ea88c050b",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_7630dcf1b548b5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "622d3330-93af-408d-9612-7de5d644f068",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+src/AaveV3Monad.sol
+  s_a51def0a789bc4::t_3b0bceb22a1977 58-60
+safe.csv
+  s_a51def0a789bc4::t_8a2c2ed3025d44 3045
+scripts/configs/pools/monad.ts
+  s_a51def0a789bc4::t_1d1b5b6234076e 10
+  s_a51def0a789bc4::t_13c02278784b26 10
+src/ts/AaveV3Monad.ts
+  s_a51def0a789bc4::t_8a2c2ed3025d44 47-49
+tests/cache/verified.json
+  s_a51def0a789bc4::t_40b89aa76931e5 9825-9827
+  s_a51def0a789bc4::t_a0c05409c916ef 9825-9827
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "d0e99b31a6272210de7c304b0205b467465c851c",
+  "prompts": {},
+  "sessions": {
+    "s_a51def0a789bc4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4730-772d-7971-8a94-2896c105e19e",
+        "model": "gpt-5.5"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
