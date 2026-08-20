@@ -4787,6 +4787,9 @@
     },
     "0x803e5Db3E26e88AD0a682A46c3E04cdd053D0EB9": {
       "name": "RwaATokenManager"
+    },
+    "0x69D55D504BC9556E377b340D19818E736bbB318b": {
+      "name": "ParameterRegistry"
     }
   },
   "10": {

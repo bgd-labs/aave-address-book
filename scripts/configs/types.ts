@@ -78,6 +78,7 @@ export interface PoolConfig {
     WALLET_BALANCE_PROVIDER?: Hex;
     GHO_DIRECT_MINTER?: Hex;
     RWA_A_TOKEN_MANAGER?: Hex;
+    RWA_ORACLE_PARAMS_REGISTRY?: Hex;
     DUST_BIN?: Hex;
     CLINIC_STEWARD?: Hex;
     SVR_STEWARD?: Hex;

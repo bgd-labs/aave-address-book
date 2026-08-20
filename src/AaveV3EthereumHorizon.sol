@@ -70,6 +70,9 @@ library AaveV3EthereumHorizon {
 
   // https://etherscan.io/address/0x803e5Db3E26e88AD0a682A46c3E04cdd053D0EB9
   address internal constant RWA_A_TOKEN_MANAGER = 0x803e5Db3E26e88AD0a682A46c3E04cdd053D0EB9;
+
+  // https://etherscan.io/address/0x69D55D504BC9556E377b340D19818E736bbB318b
+  address internal constant RWA_ORACLE_PARAMS_REGISTRY = 0x69D55D504BC9556E377b340D19818E736bbB318b;
 }
 library AaveV3EthereumHorizonAssets {
   // https://etherscan.io/address/0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f
