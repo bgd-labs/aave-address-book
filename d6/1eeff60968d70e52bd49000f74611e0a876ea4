@@ -1,0 +1,35 @@
+scripts/configs/types.ts
+  s_75748762d2aa02::t_79ec72878c3739 80
+safe.csv
+  s_bc3c841b7a34ce::t_bb218710850743 947
+scripts/configs/pools/ethereum.ts
+  s_75748762d2aa02::t_63460203b7e7d8 160
+src/AaveV3EthereumHorizon.sol
+  s_bc3c841b7a34ce::t_9f23bd330afa67 70-72
+src/ts/AaveV3EthereumHorizon.ts
+  s_bc3c841b7a34ce::t_fafa0b1ccac199 59-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d61eeff60968d70e52bd49000f74611e0a876ea4",
+  "prompts": {},
+  "sessions": {
+    "s_75748762d2aa02": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7d6f9e55-978b-4bdd-b2be-375e2e9ccfdc",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Alexandru Niculae <43644109+avniculae@users.noreply.github.com>"
+    },
+    "s_bc3c841b7a34ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0514111b-8ab4-46dd-8a07-0ae18f0410ad",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Alexandru Niculae <43644109+avniculae@users.noreply.github.com>"
+    }
+  }
+}
