@@ -132,7 +132,7 @@ export function generateUmbrellaStakeAssetsLibrary(
   const formattedStakeData = umbrellaStakeData.map(({symbol: _symbol, ...rest}) => {
     const symbol = fixUmbrellaStakeSymbol(_symbol, rest.UNDERLYING);
     const addresses = {
-      [`${symbol}`]: rest.STAKE_TOKEN,
+      [`${symbol}`]: {value: rest.STAKE_TOKEN, type: 'IUmbrellaStakeToken'},
       [`${symbol}_DECIMALS`]: {value: rest.decimals, type: 'uint8'},
     };
     return addresses;

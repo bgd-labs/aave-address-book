@@ -3,6 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {IUmbrella} from './common/IUmbrella.sol';
+import {IUmbrellaStakeToken} from './common/IUmbrellaStakeToken.sol';
 
 library UmbrellaBaseSepolia {
   // https://sepolia.basescan.org/address/0x5AC6C5C70934939d7Ad4aAB253aFD760Ad5E5313
@@ -38,32 +39,38 @@ library UmbrellaBaseSepolia {
 }
 library UmbrellaBaseSepoliaAssets {
   // https://sepolia.basescan.org/address/0xD15e98f7AD53954fc96A7904738Eb1Ed1f6F0422
-  address internal constant STK_WA_USDC_V1 = 0xD15e98f7AD53954fc96A7904738Eb1Ed1f6F0422;
+  IUmbrellaStakeToken internal constant STK_WA_USDC_V1 =
+    IUmbrellaStakeToken(0xD15e98f7AD53954fc96A7904738Eb1Ed1f6F0422);
 
   uint8 internal constant STK_WA_USDC_V1_DECIMALS = 6;
 
   // https://sepolia.basescan.org/address/0x9287a4e4DDb8715862D5c94E6f3108E1E9A83321
-  address internal constant STK_WA_USDT_V1 = 0x9287a4e4DDb8715862D5c94E6f3108E1E9A83321;
+  IUmbrellaStakeToken internal constant STK_WA_USDT_V1 =
+    IUmbrellaStakeToken(0x9287a4e4DDb8715862D5c94E6f3108E1E9A83321);
 
   uint8 internal constant STK_WA_USDT_V1_DECIMALS = 6;
 
   // https://sepolia.basescan.org/address/0xf9a03b111e22180172F5DF879ac3c5d19BA75975
-  address internal constant STK_WA_WBTC_V1 = 0xf9a03b111e22180172F5DF879ac3c5d19BA75975;
+  IUmbrellaStakeToken internal constant STK_WA_WBTC_V1 =
+    IUmbrellaStakeToken(0xf9a03b111e22180172F5DF879ac3c5d19BA75975);
 
   uint8 internal constant STK_WA_WBTC_V1_DECIMALS = 8;
 
   // https://sepolia.basescan.org/address/0x36edA587e02e897Db071000ac37606B2767d68aa
-  address internal constant STK_WA_cbETH_V1 = 0x36edA587e02e897Db071000ac37606B2767d68aa;
+  IUmbrellaStakeToken internal constant STK_WA_cbETH_V1 =
+    IUmbrellaStakeToken(0x36edA587e02e897Db071000ac37606B2767d68aa);
 
   uint8 internal constant STK_WA_cbETH_V1_DECIMALS = 18;
 
   // https://sepolia.basescan.org/address/0x16C2230c3B1116Acdf3dE7202893cb5f0fBde6E6
-  address internal constant STK_WA_LINK_V1 = 0x16C2230c3B1116Acdf3dE7202893cb5f0fBde6E6;
+  IUmbrellaStakeToken internal constant STK_WA_LINK_V1 =
+    IUmbrellaStakeToken(0x16C2230c3B1116Acdf3dE7202893cb5f0fBde6E6);
 
   uint8 internal constant STK_WA_LINK_V1_DECIMALS = 18;
 
   // https://sepolia.basescan.org/address/0xfD055B11563b80648091d0F69704dD647714e134
-  address internal constant STK_WETH_V1 = 0xfD055B11563b80648091d0F69704dD647714e134;
+  IUmbrellaStakeToken internal constant STK_WETH_V1 =
+    IUmbrellaStakeToken(0xfD055B11563b80648091d0F69704dD647714e134);
 
   uint8 internal constant STK_WETH_V1_DECIMALS = 18;
 }

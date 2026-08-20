@@ -120,7 +120,8 @@ export async function generateUmbrellaLibrary(umbrellaConfig: UmbrellaConfig) {
     `./src/${name}.sol`,
     prefixWithGeneratedWarning(
       prefixWithPragma(
-        `import {IUmbrella} from './common/IUmbrella.sol';\n\n` +
+        `import {IUmbrella} from './common/IUmbrella.sol';\n` +
+          `import {IUmbrellaStakeToken} from './common/IUmbrellaStakeToken.sol';\n\n` +
           wrapIntoSolidityLibrary(
             generateSolidityConstants({
               chainId: umbrellaConfig.chainId,

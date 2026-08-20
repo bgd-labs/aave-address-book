@@ -3,6 +3,7 @@
 pragma solidity >=0.6.0;
 
 import {IUmbrella} from './common/IUmbrella.sol';
+import {IUmbrellaStakeToken} from './common/IUmbrellaStakeToken.sol';
 
 library UmbrellaEthereum {
   // https://etherscan.io/address/0xD400fc38ED4732893174325693a63C30ee3881a8
@@ -45,22 +46,26 @@ library UmbrellaEthereum {
 }
 library UmbrellaEthereumAssets {
   // https://etherscan.io/address/0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6
-  address internal constant STK_WA_USDC_V1 = 0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6;
+  IUmbrellaStakeToken internal constant STK_WA_USDC_V1 =
+    IUmbrellaStakeToken(0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6);
 
   uint8 internal constant STK_WA_USDC_V1_DECIMALS = 6;
 
   // https://etherscan.io/address/0xA484Ab92fe32B143AEE7019fC1502b1dAA522D31
-  address internal constant STK_WA_USDT_V1 = 0xA484Ab92fe32B143AEE7019fC1502b1dAA522D31;
+  IUmbrellaStakeToken internal constant STK_WA_USDT_V1 =
+    IUmbrellaStakeToken(0xA484Ab92fe32B143AEE7019fC1502b1dAA522D31);
 
   uint8 internal constant STK_WA_USDT_V1_DECIMALS = 6;
 
   // https://etherscan.io/address/0xaAFD07D53A7365D3e9fb6F3a3B09EC19676B73Ce
-  address internal constant STK_WA_WETH_V1 = 0xaAFD07D53A7365D3e9fb6F3a3B09EC19676B73Ce;
+  IUmbrellaStakeToken internal constant STK_WA_WETH_V1 =
+    IUmbrellaStakeToken(0xaAFD07D53A7365D3e9fb6F3a3B09EC19676B73Ce);
 
   uint8 internal constant STK_WA_WETH_V1_DECIMALS = 18;
 
   // https://etherscan.io/address/0x4f827A63755855cDf3e8f3bcD20265C833f15033
-  address internal constant STK_GHO_V1 = 0x4f827A63755855cDf3e8f3bcD20265C833f15033;
+  IUmbrellaStakeToken internal constant STK_GHO_V1 =
+    IUmbrellaStakeToken(0x4f827A63755855cDf3e8f3bcD20265C833f15033);
 
   uint8 internal constant STK_GHO_V1_DECIMALS = 18;
 }
