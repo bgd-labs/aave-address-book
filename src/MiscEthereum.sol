@@ -121,7 +121,7 @@ library MiscEthereum {
     0x37370932045d20C01A62b3e7c21134A1C6365D38;
 
   // https://etherscan.io/address/0x1D85000D54ea1185C43E4f2b32833524d3cF3507
-  address internal constant LLAMARISK_LLAMAGUARD_RISK_ORACLE_ROUTER =
+  address internal constant LLAMARISK_RISK_ORACLE_ROUTER =
     0x1D85000D54ea1185C43E4f2b32833524d3cF3507;
 
   // https://etherscan.io/address/0xA142d56B1b77CAfdf3A6cCA885B471483A56551e
