@@ -4799,6 +4799,9 @@
     },
     "0x5100392FCDB4515F53AF2056bDf3887A85b7a8d9": {
       "name": "AaveEModeAgent"
+    },
+    "0x1a0267E9E5929a5914Ae9DbBf23Bc07B14365471": {
+      "name": "SafeProxy"
     }
   },
   "10": {
