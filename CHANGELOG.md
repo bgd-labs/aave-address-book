@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.65.9](https://github.com/aave-dao/aave-address-book/compare/v4.65.8...v4.65.9) (2026-08-20)
+
+
+### Bug Fixes
+
+* type umbrella stake tokens ([#1529](https://github.com/aave-dao/aave-address-book/issues/1529)) ([600aa9d](https://github.com/aave-dao/aave-address-book/commit/600aa9d1c85b80b05cdc19aafda93fcf0a1ec03c))
+
+## [4.65.8](https://github.com/aave-dao/aave-address-book/compare/v4.65.7...v4.65.8) (2026-08-20)
+
+
+### Bug Fixes
+
+* complete Umbrella interface ([#1528](https://github.com/aave-dao/aave-address-book/issues/1528)) ([ffa72a9](https://github.com/aave-dao/aave-address-book/commit/ffa72a90a4e1a0a3865b206b68d02677e05dbe68))
+
 ## [4.65.7](https://github.com/aave-dao/aave-address-book/compare/v4.65.6...v4.65.7) (2026-08-18)
 
 
