@@ -1,0 +1,19 @@
+tests/sanity/rwaATokenManager.spec.ts
+  s_75748762d2aa02::t_b6dc222a753e5c 1-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "f6796ecf83b635fca273378862239ce1c1bd22af",
+  "prompts": {},
+  "sessions": {
+    "s_75748762d2aa02": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7d6f9e55-978b-4bdd-b2be-375e2e9ccfdc",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Alexandru Niculae <43644109+avniculae@users.noreply.github.com>"
+    }
+  }
+}
