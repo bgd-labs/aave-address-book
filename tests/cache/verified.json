@@ -4802,6 +4802,12 @@
     },
     "0x1a0267E9E5929a5914Ae9DbBf23Bc07B14365471": {
       "name": "SafeProxy"
+    },
+    "0x529e2374afB38AC465D71979E7540ad93C05F6c5": {
+      "name": "AaveDiscountRateAgent"
+    },
+    "0xbe2840440d4f77CD98CEC2de09913e6851907744": {
+      "name": "AaveEModeAgent"
     }
   },
   "10": {

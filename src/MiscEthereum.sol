@@ -124,12 +124,12 @@ library MiscEthereum {
   address internal constant LLAMARISK_RISK_ORACLE_ROUTER =
     0x1D85000D54ea1185C43E4f2b32833524d3cF3507;
 
-  // https://etherscan.io/address/0xA142d56B1b77CAfdf3A6cCA885B471483A56551e
+  // https://etherscan.io/address/0x529e2374afB38AC465D71979E7540ad93C05F6c5
   address internal constant LLAMARISK_PT_DISCOUNT_RATE_AGENT =
-    0xA142d56B1b77CAfdf3A6cCA885B471483A56551e;
+    0x529e2374afB38AC465D71979E7540ad93C05F6c5;
 
-  // https://etherscan.io/address/0x5100392FCDB4515F53AF2056bDf3887A85b7a8d9
-  address internal constant LLAMARISK_PT_EMODE_AGENT = 0x5100392FCDB4515F53AF2056bDf3887A85b7a8d9;
+  // https://etherscan.io/address/0xbe2840440d4f77CD98CEC2de09913e6851907744
+  address internal constant LLAMARISK_PT_EMODE_AGENT = 0xbe2840440d4f77CD98CEC2de09913e6851907744;
 
   // https://etherscan.io/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
   address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
