@@ -4784,6 +4784,21 @@
     },
     "0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8": {
       "name": "GnosisSafeProxy"
+    },
+    "0x683d1A91599F971252Ef171eF1F987172be8369A": {
+      "name": "RiskOracle"
+    },
+    "0x37370932045d20C01A62b3e7c21134A1C6365D38": {
+      "name": "PTParameterRegistry"
+    },
+    "0x1D85000D54ea1185C43E4f2b32833524d3cF3507": {
+      "name": "LlamaguardRiskOracleRouter"
+    },
+    "0xA142d56B1b77CAfdf3A6cCA885B471483A56551e": {
+      "name": "AaveDiscountRateAgent"
+    },
+    "0x5100392FCDB4515F53AF2056bDf3887A85b7a8d9": {
+      "name": "AaveEModeAgent"
     }
   },
   "10": {
