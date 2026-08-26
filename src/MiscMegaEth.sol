@@ -14,4 +14,13 @@ library MiscMegaEth {
 
   // https://mega.etherscan.io/address/0x9DE1d45e2786b03498289959203F25b29B4D1193
   address internal constant TOKENLOGIC_EXECUTION_SAFE = 0x9DE1d45e2786b03498289959203F25b29B4D1193;
+
+  // https://mega.etherscan.io/address/0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e
+  address internal constant AHAB_SAFE = 0xAA2461f0f0A3dE5fEAF3273eAe16DEF861cf594e;
+
+  // https://mega.etherscan.io/address/0x66Ac7223048037826e12cef9a848199e31AEFabE
+  address internal constant BUDGET_INCENTIVE_SAFE = 0x66Ac7223048037826e12cef9a848199e31AEFabE;
+
+  // https://mega.etherscan.io/address/0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D
+  address internal constant MERKL_DISTRIBUTION_SAFE = 0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D;
 }

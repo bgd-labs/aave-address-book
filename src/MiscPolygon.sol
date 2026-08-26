@@ -72,4 +72,7 @@ library MiscPolygon {
 
   // https://polygonscan.com/address/0x9DE1d45e2786b03498289959203F25b29B4D1193
   address internal constant TOKENLOGIC_EXECUTION_SAFE = 0x9DE1d45e2786b03498289959203F25b29B4D1193;
+
+  // https://polygonscan.com/address/0xdeadD8aB03075b7FBA81864202a2f59EE25B312b
+  address internal constant MERIT_AHAB_SAFE = 0xdeadD8aB03075b7FBA81864202a2f59EE25B312b;
 }
