@@ -330,6 +330,10 @@ library AaveV3InkWhitelabelEModes {
   uint8 internal constant USDe__USDT_USDG_USDC = 3;
 
   uint8 internal constant syrupUSDT__USDT = 4;
+
+  uint8 internal constant sUSDe_USDe__USDT_USDG = 5;
+
+  uint8 internal constant SolvBTC__GHO = 6;
 }
 library AaveV3InkWhitelabelExternalLibraries {
   // https://explorer.inkonchain.com/address/0x6D414cd0d5eAf8C43200ac0c325A7E2Ad83B8be6
