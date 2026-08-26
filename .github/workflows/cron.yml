@@ -31,8 +31,6 @@ jobs:
 
       - name: Install Foundry
         uses: aave-dao/github-workflows/.github/actions/foundry-setup@main
-        with:
-          FOUNDRY_VERSION: nightly
 
       - uses: aave-dao/github-workflows/.github/actions/setup-node@main
 
