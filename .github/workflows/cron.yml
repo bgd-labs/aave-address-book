@@ -30,9 +30,9 @@ jobs:
           fetch-depth: 0
 
       - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@master
+        uses: aave-dao/github-workflows/.github/actions/foundry-setup@main
         with:
-          version: nightly
+          FOUNDRY_VERSION: nightly
 
       - uses: aave-dao/github-workflows/.github/actions/setup-node@main
 
