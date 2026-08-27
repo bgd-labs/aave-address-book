@@ -11210,6 +11210,26 @@
       }
     },
     {
+      "chainId": 143,
+      "address": "0x9FC74f8Ed616B5BaF52a170caa97d6d3898602d1",
+      "name": "PT AUSD 8OCT2026",
+      "decimals": 6,
+      "symbol": "PT-AUSD-8OCT2026",
+      "tags": ["underlying"]
+    },
+    {
+      "chainId": 143,
+      "address": "0xb93Ce4EB85eBA317f954Dadcbe112Ce6c3af9ae4",
+      "name": "Aave Monad PT_AUSD_8OCT2026",
+      "decimals": 6,
+      "symbol": "aMonPT_AUSD_8OCT2026",
+      "tags": ["aTokenV3", "aaveV3"],
+      "extensions": {
+        "pool": "0x69a5F9AD4f96ebf0a0C792dD42a01cC5C0102fef",
+        "underlying": "0x9FC74f8Ed616B5BaF52a170caa97d6d3898602d1"
+      }
+    },
+    {
       "chainId": 1,
       "address": "0x6bf183243FdD1e306ad2C4450BC7dcf6f0bf8Aa6",
       "name": "Umbrella Stake Wrapped Aave Ethereum USDC v1",
@@ -11262,6 +11282,6 @@
       }
     }
   ],
-  "version": { "major": 3, "minor": 0, "patch": 185 },
-  "timestamp": "2026-08-05T00:30:52.311Z"
+  "version": { "major": 3, "minor": 0, "patch": 186 },
+  "timestamp": "2026-08-27T01:28:01.294Z"
 }
