@@ -10017,6 +10017,18 @@
     },
     "0x89587ebe7cFF64c6527fE2Deccc3521D75763E8D": {
       "name": "SafeProxy"
+    },
+    "0x9FC74f8Ed616B5BaF52a170caa97d6d3898602d1": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xb93Ce4EB85eBA317f954Dadcbe112Ce6c3af9ae4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4d2D334Ff7b0A82394bc95668d99369e9EE06748": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6D8f31268E94Bec0b0E07bc06b561b8B749F3127": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "146": {
