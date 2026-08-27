@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.66.3](https://github.com/aave-dao/aave-address-book/compare/v4.66.2...v4.66.3) (2026-08-27)
+
+
+### Bug Fixes
+
+* add horizon RwaATokenManager and RWA oracle params registry ([#1532](https://github.com/aave-dao/aave-address-book/issues/1532)) ([723eda0](https://github.com/aave-dao/aave-address-book/commit/723eda0fb7079426934529cd77e1857b94351b77))
+
 ## [4.66.2](https://github.com/aave-dao/aave-address-book/compare/v4.66.1...v4.66.2) (2026-08-27)
 
 
