@@ -4785,6 +4785,12 @@
     "0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8": {
       "name": "GnosisSafeProxy"
     },
+    "0x803e5Db3E26e88AD0a682A46c3E04cdd053D0EB9": {
+      "name": "RwaATokenManager"
+    },
+    "0x69D55D504BC9556E377b340D19818E736bbB318b": {
+      "name": "ParameterRegistry"
+    },
     "0x683d1A91599F971252Ef171eF1F987172be8369A": {
       "name": "RiskOracle"
     },
