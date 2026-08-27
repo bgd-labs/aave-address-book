@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.66.2](https://github.com/aave-dao/aave-address-book/compare/v4.66.1...v4.66.2) (2026-08-27)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1540](https://github.com/aave-dao/aave-address-book/issues/1540)) ([c69d6ca](https://github.com/aave-dao/aave-address-book/commit/c69d6ca77fc42bbfbb1555b3a6b5501497b91f0f))
+
+## [4.66.1](https://github.com/aave-dao/aave-address-book/compare/v4.66.0...v4.66.1) (2026-08-26)
+
+
+### Bug Fixes
+
+* **cache:** automated cache update - updated addresses ([#1538](https://github.com/aave-dao/aave-address-book/issues/1538)) ([e54254d](https://github.com/aave-dao/aave-address-book/commit/e54254dfd643e0c2db5bd60fa4f35579c66be255))
+* use aave-dao foundry-setup action, stale foundry-toolchain pin breaks foundryup ([#1537](https://github.com/aave-dao/aave-address-book/issues/1537)) ([37e5c5d](https://github.com/aave-dao/aave-address-book/commit/37e5c5dbc670ffc23450e43fdbda209020234ae6))
+
+## [4.66.0](https://github.com/aave-dao/aave-address-book/compare/v4.65.9...v4.66.0) (2026-08-21)
+
+
+### Features
+
+* add LlamaRisk contracts on Ethereum ([#1527](https://github.com/aave-dao/aave-address-book/issues/1527)) ([ef9acb1](https://github.com/aave-dao/aave-address-book/commit/ef9acb153bbfda5258c77dd25d57537343bcaab9))
+
 ## [4.65.9](https://github.com/aave-dao/aave-address-book/compare/v4.65.8...v4.65.9) (2026-08-20)
 
 
