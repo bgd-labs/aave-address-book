@@ -1,0 +1,107 @@
+src/ts/MiscBNB.ts
+  s_ac3133d0cde107::t_139509a05d7d02 47-49
+scripts/configs/networks/monad.ts
+  s_ac3133d0cde107::t_139509a05d7d02 13-15
+src/MiscMegaEth.sol
+  s_ac3133d0cde107::t_139509a05d7d02 17-25
+src/UmbrellaBaseSepolia.sol
+  s_ac3133d0cde107::t_139509a05d7d02 6,42-43,48-49,54-55,60-61,66-67,72-73
+tests/sanity/rwaATokenManager.spec.ts
+  s_ac3133d0cde107::t_139509a05d7d02 1-65
+scripts/configs/networks/megaeth.ts
+  s_ac3133d0cde107::t_139509a05d7d02 12-14
+scripts/generator/umbrellaGenerator.ts
+  s_ac3133d0cde107::t_139509a05d7d02 123-124
+src/ts/MiscMantle.ts
+  s_ac3133d0cde107::t_139509a05d7d02 26-31
+src/AaveV3InkWhitelabel.sol
+  s_ac3133d0cde107::t_139509a05d7d02 333-336
+src/MiscEthereum.sol
+  s_ac3133d0cde107::t_139509a05d7d02 112-133
+src/ts/AaveV3InkWhitelabel.ts
+  s_ac3133d0cde107::t_139509a05d7d02 227-231,246-247,264-293
+scripts/configs/networks/xlayer.ts
+  s_ac3133d0cde107::t_139509a05d7d02 15
+src/MiscBNB.sol
+  s_ac3133d0cde107::t_139509a05d7d02 50-52
+scripts/configs/pools/ethereum.ts
+  s_ac3133d0cde107::t_139509a05d7d02 160-161
+scripts/configs/networks/mantle.ts
+  s_ac3133d0cde107::t_139509a05d7d02 16-17
+src/UmbrellaEthereum.sol
+  s_ac3133d0cde107::t_139509a05d7d02 6,49-50,55-56,61-62,67-68
+scripts/generator/assetsLibraryGenerator.ts
+  s_ac3133d0cde107::t_139509a05d7d02 135
+src/ts/MiscMonad.ts
+  s_ac3133d0cde107::t_139509a05d7d02 17-25
+src/MiscMantle.sol
+  s_ac3133d0cde107::t_139509a05d7d02 29-34
+safe.csv
+  s_ac3133d0cde107::t_139509a05d7d02 947-948,1698-1703,2388,2996,3084-3088,3133,3136-3137,3347,3713,3715-3716,3840,3842,4355
+package.json
+  s_ac3133d0cde107::t_139509a05d7d02 3
+src/ts/AaveV3Monad.ts
+  s_ac3133d0cde107::t_139509a05d7d02 196-204,269-285
+src/ts/MiscPolygon.ts
+  s_ac3133d0cde107::t_139509a05d7d02 71-73
+src/ts/MiscXLayer.ts
+  s_ac3133d0cde107::t_139509a05d7d02 23-25
+scripts/configs/networks/ethereum.ts
+  s_ac3133d0cde107::t_139509a05d7d02 31-36,95-100
+src/MiscMonad.sol
+  s_ac3133d0cde107::t_139509a05d7d02 20-28
+src/ts/MiscPlasma.ts
+  s_ac3133d0cde107::t_139509a05d7d02 41-43
+scripts/configs/networks/bnb.ts
+  s_ac3133d0cde107::t_139509a05d7d02 23
+src/AaveV3Monad.sol
+  s_ac3133d0cde107::t_139509a05d7d02 337-355,367-368
+CHANGELOG.md
+  s_ac3133d0cde107::t_139509a05d7d02 5-47
+src/MiscPlasma.sol
+  s_ac3133d0cde107::t_139509a05d7d02 44-46
+src/MiscXLayer.sol
+  s_ac3133d0cde107::t_139509a05d7d02 26-28
+src/ts/AaveV3EthereumHorizon.ts
+  s_ac3133d0cde107::t_139509a05d7d02 59-64
+src/ts/MiscEthereum.ts
+  s_ac3133d0cde107::t_139509a05d7d02 104-121
+scripts/configs/types.ts
+  s_ac3133d0cde107::t_139509a05d7d02 80-81
+tests/cache/verified.json
+  s_ac3133d0cde107::t_139509a05d7d02 4787-4816,7326-7328,9613-9615,10017-10037,10822-10824,12365-12373,12844-12849,14642-14644
+src/AaveV3EthereumHorizon.sol
+  s_ac3133d0cde107::t_139509a05d7d02 70-75
+scripts/configs/networks/plasma.ts
+  s_ac3133d0cde107::t_139509a05d7d02 21
+src/MiscPolygon.sol
+  s_ac3133d0cde107::t_139509a05d7d02 75-77
+.github/workflows/cron.yml
+  s_ac3133d0cde107::t_139509a05d7d02 33
+src/common/IUmbrellaStakeToken.sol
+  s_ac3133d0cde107::t_139509a05d7d02 1-171
+src/ts/MiscMegaEth.ts
+  s_ac3133d0cde107::t_139509a05d7d02 14-22
+scripts/configs/networks/polygon.ts
+  s_ac3133d0cde107::t_139509a05d7d02 19,47
+tokenlist.json
+  s_ac3133d0cde107::t_139509a05d7d02 11212-11231,11285-11286
+package-lock.json
+  s_ac3133d0cde107::t_2de66409ec1436 3,9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "d94daa4239875403e47a3bb379d084c17c707836",
+  "prompts": {},
+  "sessions": {
+    "s_ac3133d0cde107": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a058ce-8ea6-7a53-ac34-2540c5ac1254",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
