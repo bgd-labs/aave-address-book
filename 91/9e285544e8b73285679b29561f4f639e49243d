@@ -1,0 +1,19 @@
+.github/workflows/cron.yml
+  s_41234c170281a9::t_aecac8389378e9 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "919e285544e8b73285679b29561f4f639e49243d",
+  "prompts": {},
+  "sessions": {
+    "s_41234c170281a9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "bf3de52d-06a8-4a67-a7f1-4b8d3370e1ef",
+        "model": "claude-fable-5"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}

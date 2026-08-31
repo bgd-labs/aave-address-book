@@ -1,0 +1,23 @@
+scripts/configs/pools/ethereum.ts
+  s_75748762d2aa02::t_d0c6d55ef2863b 161
+scripts/configs/types.ts
+  s_75748762d2aa02::t_a0522ef4be0ee2 81
+tests/cache/verified.json
+  s_75748762d2aa02::t_921f75e5153e28 4790-4792
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "afe223c67132340551910310fa22705f5fc897cf",
+  "prompts": {},
+  "sessions": {
+    "s_75748762d2aa02": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7d6f9e55-978b-4bdd-b2be-375e2e9ccfdc",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Alexandru Niculae <43644109+avniculae@users.noreply.github.com>"
+    }
+  }
+}

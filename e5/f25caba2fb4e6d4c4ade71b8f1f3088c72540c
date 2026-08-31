@@ -1,0 +1,67 @@
+tests/cache/verified.json
+  s_a3cd3cc44a6cd5::t_8fb9d2d3899854 4793,4796,4799,4802,4805,4808,4811,4814,7326,9613,10017,10020,10023,10026,10029,10032,10035,10822,12365,12368,12371,12844,12847,14642
+  s_a3cd3cc44a6cd5::t_f26c7b9eee1db8 4794-4795
+  s_a3cd3cc44a6cd5::t_b20ab313d9b2b0 4797-4798
+  s_a3cd3cc44a6cd5::t_d8613f8185710b 4800-4801
+  s_a3cd3cc44a6cd5::t_5b482eee743c55 4803-4804
+  s_a3cd3cc44a6cd5::t_bbccfd0db46b7d 4806-4807
+  s_a3cd3cc44a6cd5::t_0608051244a1ed 4809-4810
+  s_a3cd3cc44a6cd5::t_91a4945598b5c6 4812-4813
+  s_a3cd3cc44a6cd5::t_8a6ce90c903a95 4815-4816
+  s_a3cd3cc44a6cd5::t_059de22676557b 7327-7328
+  s_a3cd3cc44a6cd5::t_4d631d93700486 9614-9615
+  s_a3cd3cc44a6cd5::t_58eb87e9904a9c 10018-10019
+  s_a3cd3cc44a6cd5::t_d2ecd77b00333b 10021-10022
+  s_a3cd3cc44a6cd5::t_420bd2334d807a 10024-10025
+  s_a3cd3cc44a6cd5::t_def8744bc94dab 10027-10028
+  s_a3cd3cc44a6cd5::t_9f74b4ef0234c3 10030-10031
+  s_a3cd3cc44a6cd5::t_18bca860586198 10033-10034
+  s_a3cd3cc44a6cd5::t_4db8fa644608a8 10036-10037
+  s_a3cd3cc44a6cd5::t_710934c82eba95 10823-10824
+  s_a3cd3cc44a6cd5::t_79e997d90a271f 12366-12367
+  s_a3cd3cc44a6cd5::t_61e69a8c64f2a5 12369-12370
+  s_a3cd3cc44a6cd5::t_ef3fbc5ad9aed9 12372-12373
+  s_a3cd3cc44a6cd5::t_978818896f4220 12845-12846
+  s_a3cd3cc44a6cd5::t_72d7c2fe379a2c 12848-12849
+  s_a3cd3cc44a6cd5::t_dd93c530278eaf 14643-14644
+.github/workflows/cron.yml
+  s_a3cd3cc44a6cd5::t_7afdfe2d4af579 33
+CHANGELOG.md
+  s_a3cd3cc44a6cd5::t_1ece1047cb916c 5-26
+package-lock.json
+  s_a3cd3cc44a6cd5::t_6b3d216de1c162 3,9
+package.json
+  s_a3cd3cc44a6cd5::t_9c360e6cfe7e2e 3
+scripts/configs/networks/bnb.ts
+  s_a3cd3cc44a6cd5::t_2c217530762f04 23
+scripts/configs/networks/ethereum.ts
+  s_a3cd3cc44a6cd5::t_37af23d4487105 31-36,95-100
+scripts/configs/networks/mantle.ts
+  s_a3cd3cc44a6cd5::t_3b8de46d42154b 16-17
+scripts/configs/networks/megaeth.ts
+  s_a3cd3cc44a6cd5::t_53b756032f04e7 12-14
+scripts/configs/networks/monad.ts
+  s_a3cd3cc44a6cd5::t_dc1033b53f772e 13-15
+scripts/configs/networks/plasma.ts
+  s_a3cd3cc44a6cd5::t_463116e9075112 21
+scripts/configs/networks/polygon.ts
+  s_a3cd3cc44a6cd5::t_c32de0916bd951 19,47
+scripts/configs/networks/xlayer.ts
+  s_a3cd3cc44a6cd5::t_65ee87f0d358dc 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "e5f25caba2fb4e6d4c4ade71b8f1f3088c72540c",
+  "prompts": {},
+  "sessions": {
+    "s_a3cd3cc44a6cd5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d20794cb-dbc6-41b3-89bf-cb0b7a11dd70",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Alexandru Niculae <43644109+avniculae@users.noreply.github.com>"
+    }
+  }
+}
