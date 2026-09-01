@@ -1,0 +1,22 @@
+package.json
+  s_ac3133d0cde107::t_ba051910862381 78
+scripts/generateABIs.ts
+  s_ac3133d0cde107::t_ba051910862381 1,11-12,14,17-21,25,28,34,36,41,50-51,54-73
+  s_ac3133d0cde107::t_d120396720e65c 2-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "fbcbca2d724312148149ccc7ccf4ec2dccb27503",
+  "prompts": {},
+  "sessions": {
+    "s_ac3133d0cde107": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a058ce-8ea6-7a53-ac34-2540c5ac1254",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
