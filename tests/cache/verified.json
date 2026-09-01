@@ -4814,6 +4814,12 @@
     },
     "0xbe2840440d4f77CD98CEC2de09913e6851907744": {
       "name": "AaveEModeAgent"
+    },
+    "0xAD75cE6354f87F3135cE10621d385d8D1e2562C2": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x8CEcC12b23ED45EC2A9b9EB57EA6974c0cae850B": {
+      "name": "AaveOracle"
     }
   },
   "10": {
