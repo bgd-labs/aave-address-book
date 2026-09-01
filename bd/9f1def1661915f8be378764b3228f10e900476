@@ -1,0 +1,23 @@
+scripts/checkGeneratedABIs.ts
+  s_ac3133d0cde107::t_f2959ec380dc39 1-42
+.github/workflows/release.yml
+  s_ac3133d0cde107::t_f2959ec380dc39 14-26,45,141
+package.json
+  s_ac3133d0cde107::t_f2959ec380dc39 79
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "bd9f1def1661915f8be378764b3228f10e900476",
+  "prompts": {},
+  "sessions": {
+    "s_ac3133d0cde107": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a058ce-8ea6-7a53-ac34-2540c5ac1254",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
