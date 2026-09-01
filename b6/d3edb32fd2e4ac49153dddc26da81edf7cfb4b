@@ -1,0 +1,115 @@
+src/common/IUmbrella.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 95-96,100,105,128,144,146,148,152,180
+src/ts/abis/IERC20Detailed.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IPayloadsControllerCore.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IPayloadsControllerDataHelper.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,10,15,27,58,90,95,150
+src/ts/abis/IMetaDelegateHelper.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,15,20
+src/ts/abis/IWrappedTokenGatewayV3.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IAaveToken.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-93
+src/interfaces/IStaticATokenLM.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-77
+src/ts/abis/IRiskSteward.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,11,24
+src/ts/abis/AggregatorInterface.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IPool.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-273
+src/ts/abis/IPool.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,11,1556,1655
+src/ts/abis/IUmbrella.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,50,63,115,565
+src/interfaces/IUmbrellaStakeToken.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-178
+src/ts/abis/IUmbrellaRewardsController.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IMetaDelegateHelper.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-19
+src/ts/abis/IStaticATokenFactory.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IRewardsController.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IStkAaveToken.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-191
+src/interfaces/IStaticATokenFactory.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-8
+src/ts/abis/IERC20.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IVotingMachineDataHelper.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-35
+src/ts/abis/index.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 32-39,42-48,50-53,55,57,59-60
+src/interfaces/IATokenWithDelegation.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-152
+src/interfaces/IPayloadsControllerDataHelper.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-59
+src/ts/abis/IATokenWithDelegation.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,89,290,351,395,412,545,560,641,856,1095
+src/ts/abis/IDefaultInterestRateStrategy.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IPoolConfigurator.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-149
+src/ts/abis/IGovernanceDataHelper.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,10,15,32,100,142,147,222,250
+src/ts/abis/IUiPoolDataProvider.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,55,373,392,459,472
+src/ts/abis/IGovernanceCore.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IUmbrellaStakeToken.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,37,493
+src/interfaces/IUmbrellaRewardsController.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-263
+src/ts/abis/IStaticATokenLM.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,11
+src/ts/abis/IStataTokenFactory.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IVotingMachineDataHelper.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IStataTokenV2.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IERC20.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-14
+src/interfaces/IGovernanceDataHelper.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-90
+src/interfaces/IRiskSteward.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-118
+src/ts/abis/IOwnable.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/interfaces/IUiPoolDataProvider.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-100
+src/interfaces/AggregatorInterface.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-37
+src/ts/abis/IAaveToken.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,229,290,338,460,666
+src/interfaces/IERC20Detailed.sol
+  s_ac3133d0cde107::t_f4e6af23262fbb 1-17
+src/ts/abis/IAaveOracle.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IPoolAddressesProvider.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IPoolConfigurator.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1
+src/ts/abis/IStkAaveToken.ts
+  s_ac3133d0cde107::t_f4e6af23262fbb 1,232,258,667,760,853,940,1044,1581
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "b6d3edb32fd2e4ac49153dddc26da81edf7cfb4b",
+  "prompts": {},
+  "sessions": {
+    "s_ac3133d0cde107": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a058ce-8ea6-7a53-ac34-2540c5ac1254",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
