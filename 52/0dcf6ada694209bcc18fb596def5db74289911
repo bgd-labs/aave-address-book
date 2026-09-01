@@ -1,0 +1,27 @@
+scripts/configs/v4/ethereum.ts
+  s_cec81b7cbe2326::t_5384dfdbedf266 28
+safe.csv
+  s_cec81b7cbe2326::t_742b2d442e1077 1050-1055,1064-1104,1226-1227,5780
+src/AaveV4Ethereum.sol
+  s_cec81b7cbe2326::t_ba9bb56d2746bc 96-102,848,856-861,908,917-940,943-956,959-961
+src/ts/AaveV4Ethereum.ts
+  s_cec81b7cbe2326::t_0d5a43c863a8cf 42-43,329,382
+tests/cache/verified.json
+  s_cec81b7cbe2326::t_ea1807c47398af 4817-4822
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "520dcf6ada694209bcc18fb596def5db74289911",
+  "prompts": {},
+  "sessions": {
+    "s_cec81b7cbe2326": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0346d-9c2e-72a0-b9d0-971362724afc",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "AlbertoCentonze <11707683+AlbertoCentonze@users.noreply.github.com>"
+    }
+  }
+}
