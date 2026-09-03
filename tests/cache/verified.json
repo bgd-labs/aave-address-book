@@ -4784,6 +4784,18 @@
     },
     "0x47c71dFEB55Ebaa431Ae3fbF99Ea50e0D3d30fA8": {
       "name": "GnosisSafeProxy"
+    },
+    "0x2A5D51e22A8010701674E0c3D45E9aCf7b9C8a62": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x476a2D04AB8A7fb93E13aC14f2c077866ff13500": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x187AAE17d4931310B3fc75743e7F16Bdc9eD77e9": {
+      "name": "SafeProxy"
+    },
+    "0x14339e2178A954d5FB839D5Ff31644fE0F25F517": {
+      "name": "Executor"
     }
   },
   "10": {
@@ -9978,6 +9990,18 @@
     },
     "0x1c930A46f01542882Fb43031DeD31f06C8cF278d": {
       "name": "SafeProxy"
+    },
+    "0x9FC74f8Ed616B5BaF52a170caa97d6d3898602d1": {
+      "name": "PendlePrincipalToken"
+    },
+    "0xb93Ce4EB85eBA317f954Dadcbe112Ce6c3af9ae4": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x4d2D334Ff7b0A82394bc95668d99369e9EE06748": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x6D8f31268E94Bec0b0E07bc06b561b8B749F3127": {
+      "name": "PendlePriceCapAdapter"
     }
   },
   "146": {
@@ -10762,6 +10786,9 @@
     },
     "0xa43F8eDf0a0aE07e951bca11162625e77e7609A1": {
       "name": "SafeProxy"
+    },
+    "0x9a09a9E491DB3dd8Ada5B1B889991AC9Ad5fd362": {
+      "name": "PendlePrincipalToken"
     }
   },
   "324": {
@@ -18256,6 +18283,12 @@
     },
     "0xCa66149425E7DC8f81276F6D80C4b486B9503D1a": {
       "name": "GnosisSafeProxy"
+    },
+    "0x187AAE17d4931310B3fc75743e7F16Bdc9eD77e9": {
+      "name": "SafeProxy"
+    },
+    "0xb619fA61e795D47f517702e63ce50292370561F1": {
+      "name": "Executor"
     }
   },
   "57073": {
