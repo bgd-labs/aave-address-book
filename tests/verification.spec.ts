@@ -140,7 +140,11 @@ describe('verification', {timeout: 500_000}, () => {
   it('should have all contracts verified except for the known set of errors', async () => {
     const addressesToCheck = flattenedAddresses.filter(
       (item) =>
-        ![ChainId.harmony, ChainId.fantom, ChainId.zksync].includes(item.chainId as any) &&
+        // arc has no reachable explorer: 5042 is absent from etherscan v2 and explorer.arc.io sits
+        // behind cloudflare access, so its addresses cannot be checked at all
+        ![ChainId.harmony, ChainId.fantom, ChainId.zksync, ChainId.arc].includes(
+          item.chainId as any,
+        ) &&
         !ChainList[item.chainId].testnet &&
         !knownErrors[item.chainId]?.[item.value] &&
         (!verified[item.chainId]?.[item.value] ||
