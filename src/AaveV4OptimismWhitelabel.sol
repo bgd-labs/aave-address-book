@@ -19,6 +19,10 @@ library AaveV4OptimismWhitelabel {
   // https://optimistic.etherscan.io/address/0x7EB4d25F137868662350603A2863F682287b0768
   ITreasurySpoke internal constant TREASURY_SPOKE =
     ITreasurySpoke(0x7EB4d25F137868662350603A2863F682287b0768);
+
+  // https://optimistic.etherscan.io/address/0x84210b3087E952Be0f3610fD75f0f045995eAF22
+  IAaveV4ConfigEngine internal constant CONFIG_ENGINE =
+    IAaveV4ConfigEngine(0x84210b3087E952Be0f3610fD75f0f045995eAF22);
 }
 library AaveV4OptimismWhitelabelHubs {
   // https://optimistic.etherscan.io/address/0x66753c4e3fC84f1eD0e3C267C927284E9d90C572

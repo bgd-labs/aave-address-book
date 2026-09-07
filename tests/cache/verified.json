@@ -6208,6 +6208,9 @@
     },
     "0x5F8b2D2b97aD4d63188f44965778F6004D5bc387": {
       "name": "BeaconProxy"
+    },
+    "0x84210b3087E952Be0f3610fD75f0f045995eAF22": {
+      "name": "AaveV4ConfigEngine"
     }
   },
   "56": {
