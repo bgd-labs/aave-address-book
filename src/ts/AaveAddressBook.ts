@@ -117,6 +117,7 @@ export * as ChainlinkZkSync from './ChainlinkZkSync';
 export * as ChainlinkMetis from './ChainlinkMetis';
 export * as ChainlinkSoneium from './ChainlinkSoneium';
 export * as ChainlinkMantle from './ChainlinkMantle';
+export * as ChainlinkArc from './ChainlinkArc';
 export * as ChainlinkBase from './ChainlinkBase';
 export * as ChainlinkArbitrum from './ChainlinkArbitrum';
 export * as ChainlinkCelo from './ChainlinkCelo';

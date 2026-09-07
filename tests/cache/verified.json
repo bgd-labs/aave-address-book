@@ -10831,6 +10831,15 @@
     },
     "0x9a09a9E491DB3dd8Ada5B1B889991AC9Ad5fd362": {
       "name": "PendlePrincipalToken"
+    },
+    "0x6052839E52ab454F164ee5668e5B523cF5A389Fc": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x64768bE1b925Eb04a2Caa2E1F9ffEC2f959cAC9c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x11f847ED85657cd066bfC3e9a5b29737aFb85c1E": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "324": {
