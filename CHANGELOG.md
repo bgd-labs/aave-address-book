@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.67.0](https://github.com/aave-dao/aave-address-book/compare/v4.66.4...v4.67.0) (2026-09-09)
+
+
+### Features
+
+* Aave V4 on Arc mainnet ([#1550](https://github.com/aave-dao/aave-address-book/issues/1550)) ([dd8bd67](https://github.com/aave-dao/aave-address-book/commit/dd8bd67401e9c656061c0ac4dff777da25bca884))
+
 ## [4.66.4](https://github.com/aave-dao/aave-address-book/compare/v4.66.3...v4.66.4) (2026-09-07)
 
 
