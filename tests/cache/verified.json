@@ -4826,6 +4826,12 @@
     },
     "0xbe2840440d4f77CD98CEC2de09913e6851907744": {
       "name": "AaveEModeAgent"
+    },
+    "0x2A5D51e22A8010701674E0c3D45E9aCf7b9C8a62": {
+      "name": "TransparentUpgradeableProxy"
+    },
+    "0x476a2D04AB8A7fb93E13aC14f2c077866ff13500": {
+      "name": "TransparentUpgradeableProxy"
     }
   },
   "10": {
@@ -10837,6 +10843,18 @@
     },
     "0xAA12BAd4a501d45A5b771e49C2Fd415BA8BFc79d": {
       "name": "SafeProxy"
+    },
+    "0x9a09a9E491DB3dd8Ada5B1B889991AC9Ad5fd362": {
+      "name": "PendlePrincipalToken"
+    },
+    "0x6052839E52ab454F164ee5668e5B523cF5A389Fc": {
+      "name": "PendlePriceCapAdapter"
+    },
+    "0x64768bE1b925Eb04a2Caa2E1F9ffEC2f959cAC9c": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
+    },
+    "0x11f847ED85657cd066bfC3e9a5b29737aFb85c1E": {
+      "name": "InitializableImmutableAdminUpgradeabilityProxy"
     }
   },
   "324": {
