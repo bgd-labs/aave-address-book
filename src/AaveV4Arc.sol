@@ -51,8 +51,8 @@ library AaveV4ArcSpokePriceFeeds {
   // https://explorer.arc.io/address/0x729cFd10FC10A908aE9F9b35245cB6Ee14D44D6B
   address internal constant MAIN_SPOKE_USDC_PRICE_FEED = 0x729cFd10FC10A908aE9F9b35245cB6Ee14D44D6B;
 
-  // https://explorer.arc.io/address/0x1aBa23B4733aa96919C4434c1b9AC25bE9550d58
-  address internal constant MAIN_SPOKE_EURC_PRICE_FEED = 0x1aBa23B4733aa96919C4434c1b9AC25bE9550d58;
+  // https://explorer.arc.io/address/0x3b381530cF032F1B2dc1974D228c8BD70bF41914
+  address internal constant MAIN_SPOKE_EURC_PRICE_FEED = 0x3b381530cF032F1B2dc1974D228c8BD70bF41914;
 
   // https://explorer.arc.io/address/0x7777547914e03BCbB04Ae034942765a0dbb26aE3
   address internal constant MAIN_SPOKE_cirBTC_PRICE_FEED =
@@ -65,9 +65,9 @@ library AaveV4ArcSpokePriceFeeds {
   address internal constant FOREX_SPOKE_USDC_PRICE_FEED =
     0x729cFd10FC10A908aE9F9b35245cB6Ee14D44D6B;
 
-  // https://explorer.arc.io/address/0x1aBa23B4733aa96919C4434c1b9AC25bE9550d58
+  // https://explorer.arc.io/address/0x3b381530cF032F1B2dc1974D228c8BD70bF41914
   address internal constant FOREX_SPOKE_EURC_PRICE_FEED =
-    0x1aBa23B4733aa96919C4434c1b9AC25bE9550d58;
+    0x3b381530cF032F1B2dc1974D228c8BD70bF41914;
 }
 library AaveV4ArcTokenizationSpokes {
   // https://explorer.arc.io/address/0x42EAB64310E1D1c66b4d8aF7C9C4ce253885eB83
